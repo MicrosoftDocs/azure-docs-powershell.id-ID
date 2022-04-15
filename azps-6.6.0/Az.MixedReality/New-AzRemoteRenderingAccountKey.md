@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccountKey.md
 ms.openlocfilehash: 248b712193163c436925fb973c90a3332ffb8e73
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139937455"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303261"
 ---
 # New-AzRemoteRenderingAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci Akun Penyajian Jarak Jauh
+Meregenerasi kunci Akun Remote Rendering
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/new-azremoterenderingaccountkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azremoterenderingaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,38 +28,38 @@ New-AzRemoteRenderingAccountKey -ResourceGroupName <String> -Name <String> [-Pri
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RegenerateSecparameterryKeyParameterSet
+### RegenerateSecondaryKeyParameterSet
 ```
 New-AzRemoteRenderingAccountKey -ResourceGroupName <String> -Name <String> [-Secondary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ResourceIdRegatePrimaryKeyParameterSet
+### ResourceIdRegeneratePrimaryKeyParameterSet
 ```
 New-AzRemoteRenderingAccountKey -ResourceId <String> [-Primary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ResourceIdRegulasiateSecparameterryKeyParameterSet
+### ResourceIdRegenerateSecondaryKeyParameterSet
 ```
 New-AzRemoteRenderingAccountKey -ResourceId <String> [-Secondary] [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PipelineRegulasiatePrimaryKeyParameterSet
+### PipelineRegeneratePrimaryKeyParameterSet
 ```
 New-AzRemoteRenderingAccountKey -InputObject <PSRemoteRenderingAccount> -Primary [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PipelineRegulasiateSecparameterSetKey
+### PipelineRegenerateSecondaryKeyParameterSet
 ```
 New-AzRemoteRenderingAccountKey -InputObject <PSRemoteRenderingAccount> -Secondary [-Force]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci primer atau kunci sekunder dari Akun Penyajian Jarak Jauh.
+Regenerasi kunci utama atau kunci sekunder akun Remote Rendering.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= mF8lsBeEbs51H/jLe4COW4zUiEyg9lDM1XHQ03jtxZU=
 ```
 
-Kunci sekunder regenerasi Akun Penyajian Jarak Jauh "contoh" dalam Grup Sumber Daya "rg1". 
+Regenerasi kunci sekunder Remote Rendering Akun "contoh" dalam Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -83,7 +83,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Meregenerasi kunci sekunder Akun Penyajian Jarak Jauh "contoh" dari Langganan dan Grup Sumber Daya saat ini "rg1" dengan pemipaan.
+Regenerasi kunci sekunder Remote Rendering Akun "contoh" dari Grup Sumber Daya dan Langganan saat ini "rg1" dengan pipa.
 
 ## PARAMETERS
 
@@ -102,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun penyajian jarak jauh.
+Remote Rendering Nama Akun.
 
 ```yaml
 Type: String
@@ -147,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Utama
-Meregenerasi kunci utama Akun Penyajian Jarak Jauh.
+### -Primer
+Regenerasi kunci utama Akun Remote Rendering.
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Akun Penyajian Jarak Jauh.
+ID sumber daya akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sekunder
-Meregenerasi kunci utama Akun Penyajian Jarak Jauh.
+Regenerasi kunci utama Akun Remote Rendering.
 
 ```yaml
 Type: SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServer.md
-ms.openlocfilehash: b9c4576e48088c5a18eceb1986a5fc0353985340
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0466d1d7e738d5868fc05ba3a017a75b8b6a9ac1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372486"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142290859"
 ---
 # New-AzMySqlFlexibleServer
 
 ## SYNOPSIS
 Membuat server fleksibel MySQL baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/new-azmysqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,12 +72,12 @@ mysql-test   West US 2 Standard_B1ms    Burstable      admin              5.7   
 ```
 
 Cmdlet ini membuat server fleksibel MySql dengan nilai parameter default dan menyediakan server di dalam jaringan virtual baru dan memiliki subnet yang didelegasikan ke server.
-Nilai default lokasi adalah West US 2, Sku adalah Standard_B1ms, Sku tier adalah Rentetan, dan ukuran penyimpanan adalah 10GiB.
+Nilai default lokasi adalah West US 2, Sku Standard_B1ms, Sku tier is Burstable, and storage size is 10GiB.
 
 
-Jika Anda ingin menemukan kata sandi yang dibuat secara otomatis untuk server Anda, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
+Jika Anda ingin menemukan kata sandi yang dihasilkan otomatis untuk server Anda, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
 
-(Misalnya $server. SecuredPassword | ConvertFrom-SecureString -AsPlainText)
+(Misalnya, $server. SecuredPassword | ConvertFrom-SecureString -AsPlainText)
 
 ### Contoh 3: Membuat server fleksibel MySql baru dengan Subnet yang sudah ada
 ```powershell
@@ -96,9 +99,9 @@ mysql-test   West US 2 Standard_B1ms    Burstable      admin              5.7   
 
 Cmdlet ini membuat server fleksibel PostgreSql dengan Id Subnet yang sudah ada yang disediakan oleh pengguna.
 Subnet akan didelegasikan ke server fleksibel PostgreSQL jika belum didelegasikan.
-Anda tidak dapat menggunakan subnet yang didelegasikan ke layanan berbeda.
+Anda tidak dapat menggunakan subnet yang didelegasikan ke layanan yang berbeda.
 
-### Contoh 4: Membuat server fleksibel MySql baru dengan nama jaringan virtual dan subnet
+### Contoh 4: Membuat server fleksibel MySql baru dengan jaringan virtual dan nama subnet
 ```powershell
 PS C:\> $DnsZone = '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/postgresqltest/providers/Microsoft.Network/privateDnsZones/testserver.private.mysql.database.azure.com'
 PS C:\> New-AzMySqlFlexibleServer -Name mysql-test -ResourceGroupName PowershellMySqlTest -Vnet mysql-vnet -Subnet mysql-subnet -VnetPrefix 10.0.0.0/16 -SubnetPrefix 10.0.0.0/24 -PrivateDnsZone $DnsZone
@@ -144,8 +147,8 @@ mysql-test   West US 2 Standard_B1ms    Burstable      admin              5.7   
 
 ```
 
-Cmdlet ini membuat server fleksibel MySql dengan vnet id atau nama vnet yang disediakan oleh pengguna.
-Jika jaringan virtual tidak ada, cmdlet akan membuat.
+Cmdlet ini membuat server fleksibel MySql dengan id vnet atau nama vnet yang disediakan oleh pengguna.
+Jika jaringan virtual tidak ada, cmdlet akan membuatnya.
 
 ### Contoh 6: Membuat server fleksibel MySql baru dengan akses publik ke semua IP
 ```powershell
@@ -162,7 +165,7 @@ Name         Location  SkuName          SkuTier        AdministratorLogin Versio
 mysql-test   West US 2 Standard_B1ms    Burstable      admin              5.7     32
 ```
 
-Cmdlet ini membuat server fleksibel MySql terbuka ke semua alamat IP.
+Cmdlet ini membuat server fleksibel MySql terbuka untuk semua alamat IP.
 
 ### Contoh 7: Membuat server fleksibel MySql baru dengan firewall
 ```powershell
@@ -180,14 +183,14 @@ mysql-test   West US 2 Standard_B1ms    Burstable      admin              5.7   
 
 ```
 
-Cmdlet ini membuat server fleksibel MySql yang terbuka untuk alamat IP tertentu.
+Cmdlet ini membuat server fleksibel MySql terbuka untuk alamat IP tertentu.
 
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
 Kata sandi administrator.
 Minimal 8 karakter dan maksimal 128 karakter.
-Kata sandi harus berisi karakter dari tiga kategori berikut: huruf besar Bahasa Inggris, huruf kecil Bahasa Inggris, angka, dan karakter non-alfanumerik.
+Kata sandi harus berisi karakter dari tiga kategori berikut: Huruf besar bahasa Inggris, huruf kecil bahasa Inggris, angka, dan karakter non-alfanumerik.
 
 ```yaml
 Type: System.Security.SecureString
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 
 ### -AdministratorUserName
 Nama pengguna administrator untuk server.
-Setelah ditetapkan, pengaturan tidak dapat diubah.
+Setelah diatur, tidak dapat diubah.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan.
+Jalankan perintah sebagai pekerjaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Pencadangan hari penyimpanan untuk server.
+Mencadangkan hari penyimpanan untuk server.
 Hitungan hari adalah antara 1 dan 35.
 
 ```yaml
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ### -HighAvailability
 Mengaktifkan atau menonaktifkan fitur ketersediaan tinggi.
 Nilai yang diperbolehkan adalah 'ZoneRedundant', 'SameZone', dan 'Disabled'.
-Nilai default adalah Dinonaktifkan.
+Nilai defaultnya adalah Nonaktif.
 
 ```yaml
 Type: System.String
@@ -281,8 +284,8 @@ Accept wildcard characters: False
 ```
 
 ### -Iops
-Jumlah IOPS yang dialokasikan untuk server ini.
-Anda akan mendapatkan IOPS gratis dalam jumlah tertentu berdasarkan perhitungan dan penyimpanan yang disediakan.
+Jumlah IOPS yang akan dialokasikan untuk server ini.
+Anda akan mendapatkan IOPS gratis dalam jumlah tertentu berdasarkan komputasi dan penyimpanan yang disediakan.
 Nilai default untuk IOPS adalah IOPS gratis.
 
 ```yaml
@@ -343,8 +346,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateDnsZone
-Id zona dns privat yang sudah ada.
-Akhiran zona dns harus sama dengan akhiran domain server yang sepenuhnya memenuhi syarat.
+Id zona dns pribadi yang sudah ada.
+Akhiran zona dns harus sama dengan domain server yang sepenuhnya memenuhi syarat.
 
 ```yaml
 Type: System.String
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 
 ### -PublicAccess
 Menentukan akses publik.
-Nilai yang diperbolehkan: Semua, Tidak Ada, rentang alamat IP (misalnya 1.1.1.1-1.1.1.5, 1.1.1.1) Menentukan 0.0.0.0 memungkinkan akses publik dari sumber daya apa pun yang ditempatkan di dalam Azure untuk mengakses server Anda.
+Nilai yang diperbolehkan: Semua, Tidak Ada, rentang alamat IP (misalnya, 1.1.1.1-1.1.5, 1.1.1.1) Menentukan 0.0.0.0 memungkinkan akses publik dari sumber daya apa pun yang digunakan dalam Azure untuk mengakses server Anda.
 Menentukan tidak ada alamat IP yang mengatur server dalam mode akses publik tetapi tidak membuat aturan firewall.
 
 ```yaml
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
 
 ```yaml
 Type: System.String
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya Standard_B1ms, Standard_D2ds_v4.
+Nama sku, biasanya, tingkat + family + core, misalnya Standard_B1ms, Standard_D2ds_v4.
 
 ```yaml
 Type: System.String
@@ -406,9 +409,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Menghitung tingkatan server.
-Nilai yang diterima: Rentetan, GeneralPurpose, Memory Optimized.
-Default: Rentetan.
+Menghitung tingkat server.
+Nilai yang diterima: Burstable, GeneralPurpose, Memory Optimized.
+Default: Burstable.
 
 ```yaml
 Type: System.String
@@ -423,8 +426,8 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan atau nonaktifkan Storage Auto Grow.
-Nilai default Dinonaktifkan
+Mengaktifkan atau menonaktifkan Storage Pertumbuhan Otomatis.
+Nilai defaultnya adalah Nonaktif
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.StorageAutogrow
@@ -439,7 +442,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks diperbolehkan untuk server.
+Penyimpanan maks yang diperbolehkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Nama atau Id Subnet atau nama Subnet yang sudah ada untuk dibuat.
+Nama atau Id subnet atau nama baru yang sudah ada untuk dibuat.
 Gunakan ID sumber daya jika Anda ingin menggunakan subnet dari grup sumber daya yang berbeda.
 Harap diperhatikan bahwa subnet akan didelegasikan ke Microsoft.DBforMySQL/flexibleServers.
 Setelah delegasi, subnet ini tidak dapat digunakan untuk tipe sumber daya Azure lainnya.
@@ -472,8 +475,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetPrefix
-Prefiks alamat IP subnet untuk digunakan ketika membuat vnet baru dalam format CIDR.
-Nilai default adalah 10.0.0.0/24.
+Prefiks alamat IP subnet untuk digunakan saat membuat vnet baru dalam format CIDR.
+Nilai defaultnya adalah 10.0.0.0/24.
 
 ```yaml
 Type: System.String
@@ -533,7 +536,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vnet
-Nama atau Id jaringan virtual yang sudah ada atau nama jaringan virtual yang baru untuk dibuat.
+Nama atau Id jaringan virtual atau nama jaringan virtual yang sudah ada untuk dibuat.
 Nama harus antara 2 hingga 64 karakter.
 Nama harus diawali dengan huruf atau angka, diakhiri dengan huruf, angka atau garis bawah, dan mungkin hanya berisi huruf, angka, garis bawah, titik, atau tanda hubung.
 
@@ -550,8 +553,8 @@ Accept wildcard characters: False
 ```
 
 ### -VnetPrefix
-Prefiks alamat IP yang digunakan ketika membuat vnet baru dalam format CIDR.
-Nilai default adalah 10.0.0.0/16.
+Prefiks alamat IP yang digunakan saat membuat vnet baru dalam format CIDR.
+Nilai defaultnya adalah 10.0.0.0/16.
 
 ```yaml
 Type: System.String
@@ -565,8 +568,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Zona ketersediaan untuk menyediakan sumber daya.
+### -Zona
+Zona ketersediaan tempat penyediaan sumber daya.
 
 ```yaml
 Type: System.String
@@ -581,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -597,7 +600,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -612,7 +615,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: B7E71C5C-6329-475B-993C-A839FFEF8F98
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 60dc1b7b4af509b96ff19f409538a6f00d29f37e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427492"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313233"
 ---
 # New-AzureAutomationConnection
 
@@ -52,8 +52,8 @@ Accept wildcard characters: False
 
 ### -ConnectionFieldValues
 Menentukan tabel hash yang berisi pasangan kunci/nilai.
-Tombol mewakili bidang koneksi pada tipe koneksi yang ditentukan.
-Nilai mewakili nilai tertentu yang disimpan untuk setiap bidang koneksi untuk contoh koneksi.
+Kunci mewakili bidang koneksi pada tipe koneksi yang ditentukan.
+Nilai mewakili nilai tertentu untuk disimpan untuk setiap bidang koneksi untuk instans koneksi.
 
 ```yaml
 Type: IDictionary
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk koneksi.
+Menentukan nama untuk sambungan tersebut.
 
 ```yaml
 Type: String
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationConnection](./Get-AzureAutomationConnection.md)
 
-[Remove-AzureAutomationConnection](./Remove-AzureAutomationConnection.md)
+[Hapus-AzureAutomationConnection](./Remove-AzureAutomationConnection.md)
 
 [Set-AzureAutomationConnectionFieldValue](./Set-AzureAutomationConnectionFieldValue.md)
 

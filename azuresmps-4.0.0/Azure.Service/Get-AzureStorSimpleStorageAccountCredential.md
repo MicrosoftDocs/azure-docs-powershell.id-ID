@@ -4,11 +4,11 @@ ms.assetid: BF054CA4-B0A4-4BFC-A657-92A0D3ABBCB5
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 85daf6ef4ab9bd1c0a8b22db2ce54af2f31a6159
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422116"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313413"
 ---
 # Get-AzureStorSimpleStorageAccountCredential
 
@@ -26,11 +26,11 @@ Get-AzureStorSimpleStorageAccountCredential [-StorageAccountName <String>] [-Pro
 
 ## DESCRIPTION
 Cmdlet **Get-AzureStorSimpleStorageAccountCredential** mendapatkan kredensial untuk akun penyimpanan.
-Cmdlet ini mengonfigurasi **semua objek StorageAccountCredential** dalam layanan atau **storageAccountCredential** bernama.
+Cmdlet ini mendapatkan semua objek **StorageAccountCredential yang** dikonfigurasi dalam layanan atau yang bernama **StorageAccountCredential**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kredensial untuk sumber daya
+### Contoh 1: Mendapatkan semua kredensial untuk sumber daya
 ```
 PS C:\>Get-AzureStorSimpleStorageAccountCredential
 InstanceId                           Login           Name            UseSSL VolumeCount     CloudType    Location
@@ -38,9 +38,9 @@ InstanceId                           Login           Name            UseSSL Volu
 b5e0857f-82ef-4426-883b-a612889ebee4 qwertyuiopa     AdminAccount    True   24              Azure
 ```
 
-Perintah ini mendapatkan semua kredensial yang tersedia untuk akun penyimpanan bagi sumber daya saat ini.
+Perintah ini mendapatkan semua kredensial yang tersedia untuk akun penyimpanan untuk sumber daya saat ini.
 
-### Contoh 2: Mendapatkan kredensial untuk akun penyimpanan tertentu
+### Contoh 2: Dapatkan kredensial untuk akun penyimpanan tertentu
 ```
 PS C:\>Get-AzureStorSimpleStorageAccountCredential -StorageAccountName "ContosoCloudStorage"
 VERBOSE: ClientRequestId: 16551af6-3398-4d30-a389-1b8eb01ce92c_PS
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan yang akan mendapatkan kredensial.
+Menentukan nama akun penyimpanan untuk mendapatkan kredensial.
 
 ```yaml
 Type: String
@@ -97,16 +97,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### StorageAccountCredential, IList\<StorageAccountCredential\>
-Cmdlet ini mengembalikan **objek StorageAccountCredential,** jika Anda menentukan parameter *StorageAccountName,* atau jika Anda tidak menentukan parameter tersebut, parameter tersebut akan mengembalikan **objek IList. \<StorageAccountCredential\>**
+Cmdlet ini mengembalikan objek **StorageAccountCredential** , jika Anda menentukan parameter *StorageAccountName* , atau jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **IList\<StorageAccountCredential\>** .
 
 ## CATATAN
 

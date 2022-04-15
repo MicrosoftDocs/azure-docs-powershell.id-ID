@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzScheduledQueryRule.md
 ms.openlocfilehash: 8ea817791e688fbf37ca614f510a4b823ae009e3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140332529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303135"
 ---
 # Get-AzScheduledQueryRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140332529"
 Mendapatkan Sumber Daya Kueri Terjadwal
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azscheduledqueryrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azscheduledqueryrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Mendapatkan Sumber Daya Kueri Terjadwal
 
 ## EXAMPLES
 
-### Contoh 1: Grup daftar menurut langganan atau sumber daya
+### Contoh 1: Daftar menurut langganan atau grup sumber daya
 ```powershell
 PS C:\> Get-AzScheduledQueryRule -ResourceGroupName "MyResourceGroup"
 
@@ -93,7 +93,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 3: Dapatkan dengan Id sumber daya
+### Contoh 3: Get by resource Id
 ```powershell
 PS C:\> Get-AzScheduledQueryRule -ResourceId "/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/microsoft.insights/scheduledqueryrules/LogAlertRule1"
 
@@ -186,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

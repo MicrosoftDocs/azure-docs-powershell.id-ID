@@ -4,11 +4,11 @@ ms.assetid: FDA8BAAA-7C37-4BCB-9C02-EB6296C09C2B
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 662f7af0e3bc9b191bb4c44b4dffde4ba561168e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427494"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313269"
 ---
 # New-AzureAutomationCertificate
 
@@ -29,7 +29,7 @@ New-AzureAutomationCertificate -Name <String> [-Description <String>] [-Password
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **New-AzureAutomationCertificate** membuat sertifikat di Microsoft Azure Automation.
+Cmdlet **AzureAutomationCertificate Baru** membuat sertifikat dalam Otomatisasi Microsoft Azure.
 Anda menyediakan jalur ke file sertifikat untuk diunggah.
 
 ## EXAMPLES
@@ -40,13 +40,13 @@ PS C:\> $password = ConvertTo-SecureString "PassWord!" -AsPlainText -Force
 PS C:\> New-AzureAutomationCertificate -AutomationAccountName "Contoso17" -Name "MyCertificate" -Path "./cert.pfx" -Password $password
 ```
 
-Perintah ini membuat sertifikat dalam Otomatisasi Azure bernama MyCertificate.
-Perintah pertama membuat kata sandi untuk file sertifikat yang digunakan di perintah kedua yang membuat sertifikat.
+Perintah ini membuat sertifikat di Azure Automation bernama MyCertificate.
+Perintah pertama membuat kata sandi untuk file sertifikat yang digunakan dalam perintah kedua yang membuat sertifikat.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang akan menyimpan sertifikat.
+Menentukan nama akun Otomatisasi tempat sertifikat akan disimpan.
 
 ```yaml
 Type: String
@@ -75,8 +75,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Exportable
-Menunjukkan bahwa sertifikat dapat diekspor.
+### -Dapat diekspor
+Menunjukkan sertifikat dapat diekspor.
 
 ```yaml
 Type: SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi untuk file sertifikat.
+Menentukan kata sandi untuk berkas sertifikat.
 
 ```yaml
 Type: SecureString
@@ -120,9 +120,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur ke file skrip untuk diunggah.
-File bisa adalah .cer atau .pfx.
+File dapat berupa .cer atau .pfx.
 
 ```yaml
 Type: String
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -167,7 +167,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationCertificate](./Get-AzureAutomationCertificate.md)
 
-[Remove-AzureAutomationCertificate](./Remove-AzureAutomationCertificate.md)
+[Hapus-AzureAutomationCertificate](./Remove-AzureAutomationCertificate.md)
 
 [Set-AzureAutomationCertificate](./Set-AzureAutomationCertificate.md)
 

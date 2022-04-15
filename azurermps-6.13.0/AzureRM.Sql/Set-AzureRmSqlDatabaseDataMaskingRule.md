@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseDataMaskingRule.md
 ms.openlocfilehash: 4e5f2578d0e9dbb2139b330ec0a7c2fe81b3124e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426296"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314574"
 ---
 # Set-AzureRmSqlDatabaseDataMaskingRule
 
 ## SYNOPSIS
-Mengatur properti aturan masker data untuk database.
+Mengatur properti aturan masking data untuk database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,31 +31,31 @@ Set-AzureRmSqlDatabaseDataMaskingRule [-MaskingFunction <String>] [-PrefixSize <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseDataMaskingRule** mengatur aturan masker data untuk database Azure SQL Anda.
-Untuk menggunakan cmdlet, sediakan parameter *ResourceGroupName*, *ServerName*, *DatabaseName*, *dan RuleId* untuk mengidentifikasi aturan.
-Anda dapat menyediakan parameter dari *SchemaName,* *TableName,* dan *ColumnName* untuk menargetkan ulang aturan.
-Tentukan parameter *MaskingFunction* untuk mengubah cara data disinggutkan.
-Jika Anda menentukan nilai dari Angka atau Teks untuk FungsiPengindiran *,* Anda bisa menentukan parameter *NumberFrom* dan *NumberTo* untuk penyemmpan angka atau parameter *PrefixSize*, *ReplacementString*, dan *SuffixSize* untuk penyempengan teks.
-Jika perintah berhasil, dan jika Anda menentukan parameter *PassThru,* cmdlet akan mengembalikan objek yang menguraikan properti aturan masker data dan pengidentifikasi aturan.
-Pengidentifikasi aturan menyertakan, tetapi tidak terbatas pada, **ResourceGroupName,** **ServerName**, **DatabaseName**, dan **RuleId**.
+Cmdlet **Set-AzureRmSqlDatabaseDataMaskingRule** mengatur aturan masking data untuk database Azure SQL.
+Untuk menggunakan cmdlet, sediakan parameter *ResourceGroupName*, *ServerName*, *DatabaseName*, dan *RuleId* untuk mengidentifikasi aturan.
+Anda dapat menyediakan parameter *SchemaName*, *TableName*, dan *ColumnName* untuk menargetkan ulang aturan.
+Tentukan parameter *MaskingFunction* untuk mengubah cara data disematkan.
+Jika Menentukan nilai Angka atau Teks untuk *MaskerFungsi*, Anda dapat menentukan parameter *NumberFrom* dan *NumberTo* untuk masking angka atau parameter *PrefixSize*, *ReplacementString*, dan *SuffixSize* untuk masking teks.
+Jika perintah berhasil, dan jika Anda menentukan parameter *PassThru* , cmdlet mengembalikan objek yang menjelaskan properti aturan masking data dan pengidentifikasi aturan.
+Pengidentifikasi aturan mencakup, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, **DatabaseName**, dan **RuleId**.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah rentang aturan masker data dalam database
+### Contoh 1: Mengubah rentang aturan masking data dalam database
 ```
 PS C:\>Set-AzureRmSqlDatabaseDataMaskingRule -ResourceGroupName $params.rgname -ServerName $params.serverName  -DatabaseName $params.databaseName -SchemaName "dbo" -TableName  "table1" -ColumnName "column1" -MaskingFunction "Default"
 ```
 
-Perintah ini memodifikasi aturan masker data yang memiliki Aturan ID17.
-Aturan tersebut beroperasi di database bernama Database01 di server Server01.
-Perintah ini mengubah batas untuk interval di mana angka acak dihasilkan sebagai nilai masker.
+Perintah ini mengubah aturan masking data yang memiliki ID Rule17.
+Aturan tersebut beroperasi dalam database bernama Database01 di server Server01.
+Perintah ini mengubah batas interval di mana angka acak dihasilkan sebagai nilai bertopeng.
 Rentang baru adalah antara 23 dan 42.
 
 ## PARAMETERS
 
 ### -ColumnName
-Menentukan nama kolom yang ditargetkan oleh aturan masker.
+Menentukan nama kolom yang ditargetkan oleh aturan masking.
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -99,13 +99,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MaskingFunction
-Menentukan fungsi masker yang digunakan aturan.
+### -MaskingFungsi
+Menentukan fungsi masking yang digunakan aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Default
 - NoMasking
 - Teks
-- Angka
+- Nomor
 - SocialSecurityNumber
 - CreditCardNumber
 - Email Nilai defaultnya adalah Default.
@@ -124,9 +124,9 @@ Accept wildcard characters: False
 ```
 
 ### -NumberFrom
-Menentukan jumlah batas bawah interval yang darinya nilai acak dipilih.
-Tentukan parameter ini hanya jika Anda menentukan nilai Number untuk parameter *MaskingFunction.*
-Nilai default adalah 0.
+Menentukan jumlah batas bawah interval tempat nilai acak dipilih.
+Tentukan parameter ini hanya jika Anda menentukan nilai Angka untuk parameter *MaskingFunction* .
+Nilai defaultnya adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -141,9 +141,9 @@ Accept wildcard characters: False
 ```
 
 ### -NumberTo
-Menentukan angka batas atas interval yang darinya nilai acak dipilih.
-Tentukan parameter ini hanya jika Anda menentukan nilai Number untuk parameter *MaskingFunction.*
-Nilai default adalah 0.
+Menentukan nomor terikat atas interval tempat nilai acak dipilih.
+Tentukan parameter ini hanya jika Anda menentukan nilai Angka untuk parameter *MaskingFunction* .
+Nilai defaultnya adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -174,9 +174,9 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixSize
-Menentukan jumlah karakter di awal teks yang tidak disingg masker.
-Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction.*
-Nilai default adalah 0.
+Menentukan jumlah karakter di awal teks yang tidak disematkan.
+Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
+Nilai defaultnya adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -191,9 +191,9 @@ Accept wildcard characters: False
 ```
 
 ### -ReplacementString
-Menentukan jumlah karakter di akhir teks yang tidak disinggakhirkan.
-Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction.*
-Nilai default adalah 0.
+Menentukan jumlah karakter di akhir teks yang tidak disematkan.
+Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
+Nilai defaultnya adalah 0.
 
 ```yaml
 Type: System.String
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -253,9 +253,9 @@ Accept wildcard characters: False
 ```
 
 ### -SuffixSize
-Menentukan jumlah karakter di akhir teks yang tidak disinggakhirkan.
-Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction.*
-Nilai default adalah 0.
+Menentukan jumlah karakter di akhir teks yang tidak disematkan.
+Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
+Nilai defaultnya adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -316,15 +316,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Double, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -338,8 +338,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabaseDataMaskingRule](./New-AzureRmSqlDatabaseDataMaskingRule.md)
 
-[Remove-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
+[Hapus-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

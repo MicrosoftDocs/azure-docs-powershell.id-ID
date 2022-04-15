@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseTransparentDataEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseTransparentDataEncryption.md
 ms.openlocfilehash: ec35e0ebd0f674c66b7708289c33253b28219433
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420627"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314571"
 ---
 # Set-AzureRmSqlDatabaseTransparentDataEncryption
 
@@ -29,8 +29,8 @@ Set-AzureRmSqlDatabaseTransparentDataEncryption [-State] <TransparentDataEncrypt
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseTransparentDataEncryption** memodifikasi properti Transparent Data Encryption (TDE) dari database Azure SQL.
-Untuk informasi selengkapnya, lihat Enkripsi Data Transparan dengan Azure SQL Database https://msdn.microsoft.com/library/dn948096 ( di Pustaka Jaringan Pengembang https://msdn.microsoft.com/library/dn948096) Microsoft.
+Cmdlet **Set-AzureRmSqlDatabaseTransparentDataEncryption** mengubah properti Transparent Data Encryption (TDE) database Azure SQL.
+Untuk informasi selengkapnya, lihat Enkripsi Data Transparan dengan Azure SQL Databasehttps://msdn.microsoft.com/library/dn948096 (https://msdn.microsoft.com/library/dn948096) di Pustaka Jaringan Pengembang Microsoft.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -43,12 +43,12 @@ ResourceGroupName             ServerName                    DatabaseName        
 ResourceGroup01               Server01                      Database01                                            Enabled
 ```
 
-Perintah ini mengaktifkan TDE untuk database yang bernama Database01 di server yang bernama Server01.
+Perintah ini mengaktifkan TDE untuk database bernama Database01 di server bernama Server01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database yang akan dimodifikasi cmdlet ini.
+Menentukan nama database yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Menentukan nilai properti TDE.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diaktifkan 
-- Dinonaktifkan
+- Tamu penyandang cacat
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.TransparentDataEncryptionStateType
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,17 +158,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.sql.TransparentDataEncryption.Model.TransparentDataEncryptionStateType
+### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.TransparentDataEncryptionStateType
 
 ### System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.TransparentDataEncryption.Model.AzureSqlDatabaseTransparentDataEncryptionModel
+### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureSqlDatabaseTransparentDataEncryptionModel
 
 ## CATATAN
 
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlDatabaseTransparentDataEncryptionActivity](./Get-AzureRmSqlDatabaseTransparentDataEncryptionActivity.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

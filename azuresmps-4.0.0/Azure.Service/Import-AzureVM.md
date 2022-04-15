@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 7180CAC6-BFC1-4A18-A754-83D5F05C5BEF
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 59ce7748bcaf74eb7552a8a5c80fec4dacc5cc51250ffbf0d9baa0ca6df88112
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 01957d4c7dfc31cb48f6f84ec9756fa4eb793f4a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418855"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313294"
 ---
 # Import-AzureVM
 
@@ -25,10 +25,10 @@ Import-AzureVM [-Path] <String> [-InformationAction <ActionPreference>] [-Inform
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureVM** mengimpor status mesin virtual yang disimpan sebelumnya dari file XML.
-Cmdlet ini berguna saat Anda ingin membuat mesin virtual dari data yang diimpor.
+Cmdlet **Impor-AzureVM** mengimpor status mesin virtual yang sebelumnya disimpan dari file XML.
+Cmdlet ini berguna ketika Anda ingin membuat mesin virtual dari data yang diimpor.
 
-Menjalankan **Export-AzureVM,** diikuti oleh **Remove-AzureVM** lalu **Import-AzureVM** untuk membuat ulang mesin virtual dapat menyebabkan mesin virtual yang dihasilkan memiliki alamat IP berbeda dari aslinya.
+Menjalankan **Ekspor-AzureVM**, diikuti dengan **Remove-AzureVM** lalu **Impor-AzureVM** untuk membuat ulang mesin virtual dapat menyebabkan mesin virtual yang dihasilkan memiliki alamat IP yang berbeda dari aslinya.
 
 ## EXAMPLES
 
@@ -42,16 +42,16 @@ Perintah ini mengimpor status mesin virtual dari file VMstate.xml, lalu membuat 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur file dengan status mesin virtual yang disimpan sebelumnya.
+### -Jalur
+Menentukan jalur file dengan status mesin virtual yang sebelumnya disimpan.
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -106,8 +106,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureVM](./Export-AzureVM.md)
+[Ekspor-AzureVM](./Export-AzureVM.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
 

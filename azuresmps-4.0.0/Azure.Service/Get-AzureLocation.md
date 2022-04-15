@@ -4,16 +4,16 @@ ms.assetid: CCA6334F-A193-4506-B873-76F29980C68D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 996341643ed83b6b40a643844669cb49e978a61d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313554"
 ---
 # Get-AzureLocation
 
 ## SYNOPSIS
-Dapatkan lokasi pusat data yang tersedia untuk langganan Azure saat ini.
+Mendapatkan lokasi pusat data yang tersedia untuk langganan Azure saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,8 +25,8 @@ Get-AzureLocation [-Profile <AzureSMProfile>] [-InformationAction <ActionPrefere
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureLocation** mendapatkan daftar pusat data Azure yang tersedia berikut propertinya untuk langganan Azure saat ini.
-Sebelum menjalankan cmdlet ini, Anda harus mengatur langganan saat ini menggunakan cmdlet Select-AzureSubscription Set-AzureSubscription.
+Cmdlet **Get-AzureLocation** mendapatkan daftar pusat data Azure yang tersedia dan propertinya untuk langganan Azure saat ini.
+Sebelum menjalankan cmdlet ini, Anda harus mengatur langganan saat ini menggunakan cmdlet Select-AzureSubscription dan Set-AzureSubscription.
 
 ## EXAMPLES
 
@@ -35,21 +35,21 @@ Sebelum menjalankan cmdlet ini, Anda harus mengatur langganan saat ini menggunak
 PS C:\> Get-AzureLocation
 ```
 
-Perintah ini berisi daftar pusat data yang tersedia serta propertinya untuk langganan saat ini.
+Perintah ini mendapatkan daftar pusat data yang tersedia, dan propertinya, untuk langganan saat ini.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

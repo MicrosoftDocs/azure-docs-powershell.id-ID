@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Set-AzureRmWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Set-AzureRmWebAppSlotConfigName.md
-ms.openlocfilehash: ec7e0f3fcb56c5ae8b0a79d7ffb1ad209d1ae522816796d2daf48e07c7248349
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 75c134b162636f94b00cf6692f4e9df120930dcb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857739"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142314205"
 ---
 # Set-AzureRmWebAppSlotConfigName
 
 ## SYNOPSIS
-Menyetel nama Slot Config Web App
+Mengatur nama Web App Slot Config
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,7 +37,7 @@ Set-AzureRmWebAppSlotConfigName [[-AppSettingNames] <String[]>] [[-ConnectionStr
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmWebAppSlotConfigName** menandai App Pengaturan dan String Koneksi sebagai pengaturan slot
+Cmdlet **Set-AzureRmWebAppSlotConfigName** menandai Pengaturan Aplikasi dan String Koneksi sebagai pengaturan slot
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Perintah ini menghapus semua pengaturan aplikasi dan string koneksi untuk Web Ap
 ## PARAMETERS
 
 ### -AppSettingNames
-App Pengaturan Array String Nama
+Array String Nama Pengaturan Aplikasi
 
 ```yaml
 Type: System.String[]
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionStringNames
-Array String Nama String
+Array String Nama String Koneksi
 
 ```yaml
 Type: System.String[]
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
