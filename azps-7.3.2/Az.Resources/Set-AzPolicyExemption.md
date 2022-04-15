@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyExemption.md
-ms.openlocfilehash: beb1dbbc7beca157dd33c20ff95b97c7b28a9d57
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 05c8626830290165a9390aadb50ca7368e14ed39
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998813"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142463831"
 ---
 # Set-AzPolicyExemption
 
 ## SYNOPSIS
-Mengubah pengecualian kebijakan.
+Mengubah pembebasan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azpolicyexemption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,23 +47,23 @@ Set-AzPolicyExemption [-DisplayName <String>] [-Description <String>] [-Exemptio
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzPolicyExemption** mengubah pengecualian kebijakan.
+Cmdlet **Set-AzPolicyExemption** mengubah pembebasan kebijakan.
 Tentukan pengecualian menurut ID atau menurut nama dan lingkup.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui nama tampilan
+### Contoh 1: Memperbarui nama tampilan
 ```
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07' -Scope $ResourceGroup.ResourceId
 PS C:\> Set-AzPolicyExemption -Id $PolicyExemption.ResourceId -DisplayName 'Exempt VM creation limit'
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
-Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 menggunakan cmdlet Get-AzPolicyExemption cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyExemption variabel.
-Perintah terakhir memperbarui nama tampilan pada pengecualian kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup.
+Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan pembebasan kebijakan bernama PolicyExemption07 dengan menggunakan cmdlet Get-AzPolicyExemption.
+Perintah menyimpan objek tersebut dalam variabel $PolicyExemption.
+Perintah akhir memperbarui nama tampilan pada pembebasan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
 ### Contoh 2: Memperbarui waktu tanggal kedaluwarsa
 ```
@@ -69,37 +72,37 @@ PS C:\> $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07'
 PS C:\> Set-AzPolicyExemption -Id $PolicyExemption.ResourceId -ExpiresOn $NextMonth
 ```
 
-Perintah pertama mendapatkan waktu tanggal saat ini menggunakan cmdlet Get-Date dan menambahkan 1 bulan ke waktu tanggal saat ini Perintah menyimpan objek tersebut dalam variabel $NextMonth baru.
-Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 menggunakan cmdlet Get-AzPolicyExemption cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyExemption variabel.
-Perintah terakhir memperbarui tanggal kedaluwarsa untuk pengecualian kebijakan pada langganan default.
+Perintah pertama mendapatkan waktu tanggal saat ini dengan menggunakan cmdlet Get-Date dan menambahkan 1 bulan ke waktu tanggal saat ini Perintah menyimpan objek tersebut dalam variabel $NextMonth.
+Perintah kedua mendapatkan pembebasan kebijakan bernama PolicyExemption07 dengan menggunakan cmdlet Get-AzPolicyExemption.
+Perintah menyimpan objek tersebut dalam variabel $PolicyExemption.
+Perintah terakhir memperbarui waktu tanggal kedaluwarsa untuk pembebasan kebijakan pada langganan default.
 
-### Contoh 3: Hapus waktu tanggal kedaluwarsa
+### Contoh 3: Hapus tanggal kedaluwarsa
 ```
 PS C:\> $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07'
 PS C:\> Set-AzPolicyExemption -Id $PolicyExemption.ResourceId -ClearExpiration
 ```
 
-Perintah pertama mendapatkan pengecualian kebijakan bernama PolicyExemption07 menggunakan cmdlet Get-AzPolicyExemption cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyExemption variabel.
-Perintah kedua menghapus tanggal kedaluwarsa untuk pengecualian kebijakan pada langganan default.
+Perintah pertama mendapatkan pembebasan kebijakan bernama PolicyExemption07 dengan menggunakan cmdlet Get-AzPolicyExemption.
+Perintah menyimpan objek tersebut dalam variabel $PolicyExemption.
+Perintah kedua menghapus tanggal kedaluwarsa untuk pembebasan kebijakan pada langganan default.
 Pengecualian yang diperbarui tidak akan pernah kedaluwarsa.
 
-### Contoh 4: Perbarui kategori kedaluwarsa
+### Contoh 4: Memperbarui kategori kedaluwarsa
 ```
 PS C:\> $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07'
 PS C:\> Set-AzPolicyExemption -Id $PolicyExemption.ResourceId -ExemptionCategory Mitigated
 ```
 
-Perintah pertama mendapatkan pengecualian kebijakan bernama PolicyExemption07 menggunakan cmdlet Get-AzPolicyExemption cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyExemption variabel.
-Perintah kedua memperbarui kategori kedaluwarsa untuk pengecualian kebijakan pada langganan default.
+Perintah pertama mendapatkan pembebasan kebijakan bernama PolicyExemption07 dengan menggunakan cmdlet Get-AzPolicyExemption.
+Perintah menyimpan objek tersebut dalam variabel $PolicyExemption.
+Perintah kedua memperbarui kategori kedaluwarsa untuk pembebasan kebijakan pada langganan default.
 Pengecualian yang diperbarui tidak akan pernah kedaluwarsa.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClearExpiration
-Jika diatur, sakelar ini mengosongkan tanggal dan waktu kedaluwarsa pengecualian kebijakan yang diperbarui.
+Jika diatur, sakelar ini menghapus tanggal dan waktu kedaluwarsa pada pembebasan kebijakan yang diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi untuk pengecualian kebijakan yang diperbarui.
+Deskripsi untuk pembebasan kebijakan yang diperbarui.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan untuk pengecualian kebijakan yang diperbarui.
+Nama tampilan untuk pembebasan kebijakan yang diperbarui.
 
 ```yaml
 Type: System.String
@@ -175,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExemptionCategory
-Kategori pengecualian kebijakan dari pengecualian kebijakan yang diperbarui.
-Nilai yang mungkin adalah Pelepasan dan Mitigasi.
+Kategori pembebasan kebijakan dari pembebasan kebijakan yang diperbarui.
+Nilai yang memungkinkan adalah Pengabaian dan Dimitigasi.
 
 ```yaml
 Type: System.String
@@ -191,8 +194,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kedaluwarsa Pada
-Tanggal dan waktu kedaluwarsa (dalam format UTC ISO 8601 yyyy-MM-ddTHH:mm:ssZ) dari pengecualian kebijakan yang diperbarui.
+### -KedaluwarsaOn
+Tanggal dan waktu kedaluwarsa (dalam format UTC ISO 8601 yyyy-MM-ddTHH:mm:ssZ) dari pembebasan kebijakan yang diperbarui.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id pengecualian kebijakan yang sepenuhnya memenuhi syarat untuk diperbarui, termasuk lingkup, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
+Id pembebasan kebijakan yang sepenuhnya memenuhi syarat untuk diperbarui, termasuk lingkup, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pengecualian kebijakan untuk pembaruan yang merupakan output dari cmdlet lainnya.
+Objek pembebasan kebijakan untuk memperbarui yang merupakan output dari cmdlet lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyExemption
@@ -237,8 +240,8 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata untuk pengecualian kebijakan yang diperbarui.
-Ini bisa berupa jalur ke file yang berisi JSON metadata, atau metadata sebagai string JSON.
+Metadata untuk pembebasan kebijakan yang diperbarui.
+Ini bisa berupa jalur ke file yang berisi metadata JSON, atau metadata sebagai string JSON.
 
 ```yaml
 Type: System.String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengecualian kebijakan untuk pembaruan.
+Nama pembebasan kebijakan untuk diperbarui.
 
 ```yaml
 Type: System.String
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionReferenceId
-Daftar ID referensi definisi kebijakan saat penetapan kebijakan terkait adalah untuk satu set (inisiatif) kebijakan.
+Daftar ID referensi definisi kebijakan ketika penetapan kebijakan terkait adalah untuk kumpulan kebijakan (inisiatif).
 
 ```yaml
 Type: System.String[]
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup pengecualian kebijakan yang diperbarui, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
+Lingkup pembebasan kebijakan yang diperbarui, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -351,7 +354,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String[]
 
-### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Management.Automation.SwitchParameter
 

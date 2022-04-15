@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeUser.md
 ms.openlocfilehash: 0ab290934a956282a16d9e2321b2c5ed948f33af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414326"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490237"
 ---
 # Get-AzDataBoxEdgeUser
 
 ## SYNOPSIS
-Mendapatkan pengguna yang dikonfigurasi untuk satu perangkat.
+Mendapatkan pengguna yang dikonfigurasi untuk perangkat.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Get-AzDataBoxEdgeUser [[-Name] <String>] [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeUser** mencantumkan pengguna yang dikonfigurasi untuk perangkat Data Box Edge. Anda dapat menyebutkan Nama dalam parameter untuk mendapatkan detail tentang pengguna tertentu.
+Cmdlet **Get-AzDataBoxEdgeUser** mencantumkan pengguna yang dikonfigurasi untuk perangkat Box Edge Data. Anda dapat menyebutkan Nama dalam parameter untuk mendapatkan detail tentang pengguna tertentu.
 
 ## EXAMPLES
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengguna
+Username
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkUsageList.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkUsageList.md
-ms.openlocfilehash: f18d9b6bb615b87eb562bcc869fd4d395b7de474
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6d80293315c2fd33652e7e430a1a1a88fd72fa88
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392758"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494602"
 ---
 # Get-AzVirtualNetworkUsageList
 
 ## SYNOPSIS
 Mendapatkan penggunaan jaringan virtual saat ini.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkusagelist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzVirtualNetworkUsageList -ResourceGroupName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualNetworkUsageList** mendapatkan penggunaan per subnet untuk jaringan virtual tertentu.
+Cmdlet **Get-AzVirtualNetworkUsageList** mendapatkan penggunaan per subnet untuk jaringan virtual yang ditentukan.
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ Limit        : 251
 Unit         : Count
 ```
 
-Mendapatkan per nilai subnet saat ini dari penggunaan untuk jaringan virtual uji penggunaan.
+Mendapatkan nilai penggunaan saat ini per subnet untuk jaringan virtual tergunakan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama jaringan virtual untuk menampilkan penggunaan.
+Menentukan nama jaringan maya untuk memperlihatkan penggunaan.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi bagian dari jaringan virtual.
+Menentukan nama grup sumber daya tempat jaringan maya berada.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

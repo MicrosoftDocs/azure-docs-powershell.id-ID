@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
-ms.openlocfilehash: fd726df568280df65c3166b660ced054b0786b05
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 47983730da2fe75d369604158fbabdb6f8c8cbee
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185620"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142491065"
 ---
 # New-AzIpsecPolicy
 
 ## SYNOPSIS
 Membuat Kebijakan IPSec.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipsecpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ PS C:\> $ipsecPolicy = New-AzIpsecPolicy -SALifeTimeSeconds 1000 -SADataSizeKilo
 PS C:\> New-AzVirtualNetworkGatewayConnection -ResourceGroupName $rgname -name $vnetConnectionName -location $location -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localnetGateway -ConnectionType IPsec -RoutingWeight 3 -SharedKey $sharedKey -UsePolicyBasedTrafficSelectors $true -IpsecPolicies $ipsecPolicy
 ```
 
-Membuat kebijakan IPSec untuk digunakan untuk koneksi gateway jaringan virtual baru.
+Membuat kebijakan IPSec yang akan digunakan untuk koneksi gateway jaringan virtual baru.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-Grup DH digunakan di IKE Phase 1 untuk awal SA
+Grup DH yang digunakan dalam IKE Fase 1 untuk awal SA
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeEncryption
-Algoritma enkripsi IKE (Fase 1 IKE)
+Algoritma enkripsi IKE (Tahap 1 IKE)
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecEncryption
-Algoritma enkripsi IPSec (IKE Phase 2)
+Algoritma enkripsi IPSec (IKE Fase 2)
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup DH digunakan di IKE Fase 2 untuk anak baru SA
+Grup DH yang digunakan dalam IKE Fase 2 untuk anak baru SA
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSizeKilobytes
-Ukuran muat IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+Ukuran muatan Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: System.Int32
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTimeSeconds
-Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam detik
+Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: System.Int32
@@ -182,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

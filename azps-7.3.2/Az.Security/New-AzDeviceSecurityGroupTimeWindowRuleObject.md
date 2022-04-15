@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/New-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupTimeWindowRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupTimeWindowRuleObject.md
-ms.openlocfilehash: 8fdc022c471f74632f6d2ae541644b7ffa66d090
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e81dc9fc827a9e08c899735c817f064a7f673fd8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549052"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142483631"
 ---
 # New-AzDeviceSecurityGroupTimeWindowRuleObject
 
 ## SYNOPSIS
 Membuat aturan jendela waktu baru untuk grup keamanan perangkat (Keamanan IoT)
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azdevicesecuritygrouptimewindowruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDeviceSecurityGroupTimeWindowRuleObject -TimeWindowSize <TimeSpan> -MinThr
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDeviceSecurityGroupTimeWindowRuleObject membuat daftar aturan pemberitahuan jendela waktu baru untuk grup keamanan perangkat dalam solusi keamanan IoT.
+Cmdlet New-AzDeviceSecurityGroupTimeWindowRuleObject membuat daftar aturan peringatan jendela waktu baru untuk grup keamanan perangkat dalam solusi keamanan IoT.
 
 ## EXAMPLES
 
@@ -63,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Apakah aturan diaktifkan.
+### -Difungsikan
+Aturan diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Jenis aturan.
+Tipe aturan.
 
 ```yaml
 Type: System.String
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

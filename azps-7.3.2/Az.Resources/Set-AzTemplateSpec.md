@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzTemplateSpec.md
-ms.openlocfilehash: 6fbc158ec051ed0527826bee721fed3302722080
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1a02f460bfbcd115c6191ab07426f1a6f8ee0e50
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549172"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142463687"
 ---
 # Set-AzTemplateSpec
 
 ## SYNOPSIS
 Mengubah Spesifikasi Templat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,9 +77,9 @@ Set-AzTemplateSpec [-ResourceGroupName] <String> [-Name] <String> [-Version] <St
 ```
 
 ## DESCRIPTION
-Mengubah Templace Spec. Jika Spesifikasi Templat dengan nama dan/atau versi tertentu belum ada, spesifikasi akan dibuat.
+Mengubah Spesifikasi Templace. Jika Spesifikasi Templat dengan nama tertentu dan/atau versi tertentu belum ada, templat akan dibuat.
 
-Saat memodifikasi konten Templat Template Spec versi ARM, konten bisa berasal dari string JSON mentah (menggunakan kumpulan parameter **UpdateVersionByNameFromJsonParameterSet** ) atau dari file parameter JSON/Bicep yang ditentukan (menggunakan kumpulan parameter **UpdateVersionByNameFromJsonFileParameterSet** ).
+Saat memodifikasi konten Templat Templat Versi Spesifikasi Templat, konten dapat berasal dari string JSON mentah (menggunakan rangkaian parameter **UpdateVersionByNameFromJsonParameterSet** ) atau dari file JSON/Bicep tertentu (menggunakan rangkaian parameter **UpdateVersionByNameFromJsonFileParameterSet** ).
 
 ## EXAMPLES
 
@@ -93,31 +96,31 @@ PS C:\> $templateJson = @"
 PS C:\> Set-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'myTemplateSpec' -Version 'v1.0' -Location 'West US' -TemplateJson $templateJson
 ```
 
-Mengubah versi "v1.0" dari Spesifikasi Templat bernama "myTemplateSpec". Versi yang ditentukan akan $templateJson sebagai konten Templat ARM versi. Jika Spesifikasi Templat akar dan/atau versinya belum ada, spesifikasi akan dibuat.
+Mengubah versi "v1.0" dari Spesifikasi Templat bernama "myTemplateSpec". Versi yang ditentukan akan memiliki $templateJson sebagai konten Templat ARM versi. Jika Spesifikasi Templat akar dan/atau versi belum ada, mereka akan dibuat.
 
 
 **Catatan:** 
 
-* Templat ARM dalam contoh ini tidak tersedia karena tidak berisi sumber daya aktual.
-* Lokasi hanya diperlukan saat Spesifikasi Templat belum ada
+* Templat ARM dalam contoh adalah no-op karena tidak berisi sumber daya aktual.
+* Lokasi hanya diperlukan ketika Spesifikasi Templat belum ada
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'myTemplateSpec' -Version 'v2.0' -Location 'West US' -TemplateFile 'myTemplateContent.json'
 ```
 
-Mengubah versi "v2.0" dari Spesifikasi Templat bernama "myTemplateSpec". Versi tertentu akan memiliki konten dari file lokal "myTemplateContent.json" sebagai konten Templat ARM versi. Jika Spesifikasi Templat akar dan/atau versinya belum ada, spesifikasi akan dibuat.
+Mengubah versi "v2.0" dari Spesifikasi Templat bernama "myTemplateSpec". Versi yang ditentukan akan memiliki konten dari file lokal "myTemplateContent.json" sebagai konten Templat ARM versi. Jika Spesifikasi Templat akar dan/atau versi belum ada, mereka akan dibuat.
 
-**Catatan:** Lokasi hanya diperlukan saat Spesifikasi Templat belum ada
+**Catatan:** Lokasi hanya diperlukan ketika Spesifikasi Templat belum ada
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'myTemplateSpec'  -Location 'West US' -Description 'My updated Template Spec'
 ```
 
-Mengubah deskripsi Spesifikasi Templat bernama "myTemplateSpec" dalam grup sumber daya "myRG". Jika Spesifikasi Templat belum ada, spesifikasi akan dibuat.
+Mengubah deskripsi Spesifikasi Templat bernama "myTemplateSpec" dalam grup sumber daya "myRG". Jika Spesifikasi Templat belum ada, Spesifikasi Templat akan dibuat.
 
-**Catatan:** Lokasi hanya diperlukan saat Spesifikasi Templat belum ada
+**Catatan:** Lokasi hanya diperlukan ketika Spesifikasi Templat belum ada
 
 ## PARAMETERS
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi spesifikasi templat.
+Penjabaran dari spesifikasi templat.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable tag untuk spesifikasi dan/atau versi templat
+Hashtable tag untuk spesifikasi templat dan/atau versi
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateJson
-JSON templat Azure Resource Manager.
+Templat Azure Resource Manager JSON.
 
 ```yaml
 Type: System.String
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -UIFormDefinitionFile
-UIForm untuk sumber daya spesifik templat
+UIForm untuk sumber daya templatspec
 
 ```yaml
 Type: System.String
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -UIFormDefinitionString
-UIForm untuk sumber daya spesifik templat
+UIForm untuk sumber daya templatspec
 
 ```yaml
 Type: System.String
@@ -332,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

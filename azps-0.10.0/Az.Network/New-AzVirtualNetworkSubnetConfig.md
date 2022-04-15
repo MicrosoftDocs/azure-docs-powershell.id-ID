@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: 16f73c81c13740037131e47d03945d475db12ee9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420571"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497149"
 ---
 # New-AzVirtualNetworkSubnetConfig
 
@@ -36,11 +36,11 @@ New-AzVirtualNetworkSubnetConfig -Name <String> -AddressPrefix <String> [-Networ
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzVirtualNetworkSubnetConfig** membuat konfigurasi subnet jaringan virtual.
+Cmdlet **New-AzVirtualNetworkSubnetConfig** membuat konfigurasi subnet jaringan virtual.
 
 ## EXAMPLES
 
-### 1: Buat jaringan virtual dengan dua subnet dan grup keamanan jaringan
+### 1: Membuat jaringan virtual dengan dua subnet dan grup keamanan jaringan
 ```
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
 
@@ -62,7 +62,7 @@ New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup
     -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferesi grup keamanan jaringan yang mengizinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan merujuk grup keamanan jaringan yang sama.
+Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan grup keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan grup keamanan jaringan yang sama.
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,8 +203,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVirtualNetworkSubnetConfig](./Get-AzVirtualNetworkSubnetConfig.md)
 
-[Remove-AzVirtualNetworksubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
+[Remove-AzVirtualNetworkSubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
 
-[Set-azVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)
+[Set-AzVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
-ms.openlocfilehash: ce8799e9c7ad2b51de64edd77552c3ca8d462bab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a0dd20bb24c96d721ad631416eed4684f4eb15ae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142483307"
 ---
 # Get-AzServiceBusTopic
 
 ## SYNOPSIS
-Mengembalikan deskripsi untuk topik Bus Layanan tertentu.
+Mengembalikan deskripsi untuk topik Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebustopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzServiceBusTopic [-ResourceGroupName <String>] [-Namespace <String>] [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzServiceBusTopic** mengembalikan deskripsi topik untuk kumpulan nama Bus Layanan yang ditentukan.
+Cmdlet **Get-AzServiceBusTopic** mengembalikan deskripsi topik untuk ruang nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -54,21 +57,21 @@ SupportOrdering                     : True
 UpdatedAt                           : 10/11/2018 11:51:24 PM
 ```
 
-Mengembalikan deskripsi dari topik yang ditentukan untuk ruang nama Bus Layanan tertentu.
+Mengembalikan deskripsi topik tertentu untuk ruang nama Bus Layanan tertentu.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 ```
 
-Mengembalikan daftar topik untuk ruang nama Bus Layanan tertentu. Secara default, 100 topik akan dikembalikan, jika ada lebih dari 100 topik yang dikembalikan, silakan gunakan Parameter -MaxCount.
+Mengembalikan daftar topik untuk ruang nama Bus Layanan tertentu. Secara default 100 topik akan dikembalikan, jika lebih dari 100 topik dikembalikan, silakan gunakan -MaxCount Parameter.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -MaxCount 150
 ```
 
-Mengembalikan daftar 150 topik pertama untuk ruang Bus Layanan namanya.
+Mengembalikan daftar 150 topik pertama untuk ruang nama Bus Layanan tertentu.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum Topik yang akan dikembalikan.
+Tentukan jumlah maksimum Topik yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

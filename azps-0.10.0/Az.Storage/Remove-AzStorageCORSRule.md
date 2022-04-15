@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Remove-AzStorageCORSRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Remove-AzStorageCORSRule.md
-ms.openlocfilehash: fccdbd9b6045734398e41509e0dd504a291ba8fa7dd59e0fda2cb91ff09af5f0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f134d554e02c2067f51107faf0f5001bb133eb88
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419478"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142496627"
 ---
 # Remove-AzStorageCORSRule
 
 ## SYNOPSIS
-Menghapus CORS untuk layanan Storage baru.
+Menghapus CORS untuk layanan Storage.
 
 ## SYNTAX
 
@@ -27,13 +27,13 @@ Remove-AzStorageCORSRule [-ServiceType] <StorageServiceType> [-Context <IStorage
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageCORSRule** menghapus Berbagi Sumber Daya Lintas Asal (CORS) untuk layanan Azure Storage.
-Cmdlet ini menghapus semua aturan CORS dalam suatu Storage layanan baru.
+Cmdlet **Remove-AzStorageCORSRule** menghapus Cross-Origin Resource Sharing (CORS) untuk layanan Azure Storage.
+Cmdlet ini menghapus semua aturan CORS dalam tipe layanan Storage.
 Tipe layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus aturan CORS untuk layanan blob
+### Contoh 1: Menghapus aturan CORS untuk layanan blob
 ```
 PS C:\>Remove-AzStorageCORSRule -ServiceType Blob
 ```
@@ -43,9 +43,9 @@ Perintah ini menghapus aturan CORS untuk tipe layanan Blob.
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -60,11 +60,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, cmdlet New-AzStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -125,11 +125,11 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan jenis Azure Storage layanan baru yang telah dihapus cmdlet ini.
+Menentukan tipe layanan Azure Storage yang mana cmdlet ini menghapus aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel 
-- Antrean 
+- Gumpalan 
+- Meja 
+- Antrian 
 - File
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

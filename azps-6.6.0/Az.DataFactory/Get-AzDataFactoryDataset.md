@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryDataset.md
 ms.openlocfilehash: 7b69cbfeb40c5501b28336b9e1ee69281640d90b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077967"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477277"
 ---
 # Get-AzDataFactoryDataset
 
 ## SYNOPSIS
-Mendapatkan informasi tentang set data di Azure Data Factory.
+Mendapatkan informasi tentang kumpulan data di Azure Data Factory.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactorydataset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactorydataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +36,13 @@ Get-AzDataFactoryDataset [-DataFactory] <PSDataFactory> [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryDataset** mendapatkan informasi tentang set data di Azure Data Factory.
-Jika Anda menentukan nama sebuah set data, cmdlet ini mendapatkan informasi tentang set data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua set data di pabrik data.
+Cmdlet **Get-AzDataFactoryDataset** mendapatkan informasi tentang kumpulan data di Azure Data Factory.
+Jika Anda menentukan nama kumpulan data, cmdlet ini akan mendapatkan informasi tentang kumpulan data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua kumpulan data di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang semua set data
+### Contoh 1: Dapatkan informasi tentang semua kumpulan data
 ```
 PS C:\>Get-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" 
 DatasetName       : DACuratedWikiData
@@ -70,9 +70,9 @@ Policy            :
 Structure         : {}
 ```
 
-Perintah ini mendapatkan informasi tentang semua set data di pabrik data yang bernama WikiADF.
+Perintah ini mendapatkan informasi tentang semua kumpulan data di pabrik data bernama WikiADF.
 
-### Contoh 2: Mendapatkan informasi tentang set data tertentu
+### Contoh 2: Mendapatkan informasi tentang kumpulan data tertentu
 ```
 PS C:\>Get-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" 
 DatasetName       : DAWikipediaClickEvents
@@ -84,9 +84,9 @@ Policy            : Microsoft.DataFactories.Policy
 Structure         : {}
 ```
 
-Perintah ini mendapatkan informasi tentang set data yang bernama DAWikipediaClickEvents di pabrik data yang bernama WikiADF.
+Perintah ini mendapatkan informasi tentang kumpulan data bernama DAWikipediaClickEvents di pabrik data bernama WikiADF.
 
-### Contoh 3: Mendapatkan lokasi untuk set data tertentu
+### Contoh 3: Mendapatkan lokasi untuk kumpulan data tertentu
 ```
 PS C:\>(Get-AzDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents").Location
 BlobPath          : wikidatagateway/wikisampledatain/
@@ -96,14 +96,14 @@ LinkedServiceName : LinkedServiceWikipediaClickEvents
 PartitionBy       : {}
 ```
 
-Perintah ini mendapatkan informasi untuk set data bernama DAWikipediaClickEvents di pabrik data yang bernama WikiADF, lalu menggunakan titik notasi standar untuk menampilkan Lokasi yang terkait  dengan set data tersebut.
-Alternatifnya, tetapkan output cmdlet **Get-AzDataFactoryDataset** ke variabel, lalu gunakan titik notasi untuk menampilkan properti Lokasi yang terkait dengan objek set data yang disimpan dalam variabel tersebut.
+Perintah ini mendapatkan informasi untuk kumpulan data bernama DAWikipediaClickEvents di pabrik data bernama WikiADF, lalu menggunakan notasi titik standar untuk menampilkan **Lokasi** yang terkait dengan kumpulan data tersebut.
+Atau, tetapkan output cmdlet **Get-AzDataFactoryDataset** ke variabel, lalu gunakan notasi titik untuk menampilkan properti Lokasi yang terkait dengan objek kumpulan data yang disimpan dalam variabel tersebut.
 
 ## PARAMETERS
 
 ### -DataFactory
 Menentukan objek **PSDataFactory** .
-Cmdlet ini mendapatkan set data yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan kumpulan data yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini mendapatkan set data yang termasuk dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini mendapatkan kumpulan data yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama set data tentang cmdlet ini yang mendapatkan informasi.
+Menentukan nama kumpulan data tempat cmdlet ini mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataset
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

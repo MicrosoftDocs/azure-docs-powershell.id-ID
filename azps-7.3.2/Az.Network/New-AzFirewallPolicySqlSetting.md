@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicySqlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicySqlSetting.md
-ms.openlocfilehash: 20f21bbf195d19acdd54ede7965cc71082c13aa8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8180208501512fd4bf97dd7276d6f1cfc7075ab6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142491101"
 ---
 # New-AzFirewallPolicySqlSetting
 
 ## SYNOPSIS
-Membuat pengaturan SQL baru untuk Kebijakan Azure Firewall
+Membuat Pengaturan SQL baru untuk Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicysqlsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,22 +28,22 @@ New-AzFirewallPolicySqlSetting [-AllowSqlRedirect] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicySqlSetting** membuat SQL Pengaturan Objek untuk Kebijakan Azure Firewall
+Cmdlet **New-AzFirewallPolicySqlSetting** membuat SQL Mengatur Objek untuk Kebijakan Azure Firewall
 
 ## EXAMPLES
 
-### 1. Membuat SQL pengalihan server yang memungkinkan lalu lintas mode pengalihan server SQL
+### 1. Buat pengaturan SQL yang memungkinkan lalu lintas mode pengalihan server SQL
 ```powershell
 PS C:\> New-AzFirewallPolicySqlSetting -AllowSqlRedirect
 ```
 
-Contoh ini membuat objek SQL pengaturan dengan pengaturan perbolehkan pengalihan sql.
+Contoh ini membuat objek pengaturan SQL dengan pengaturan izinkan pengalihan sql.
 
 ## PARAMETERS
 
 ### -AllowSqlRedirect
-Perbolehkan SQL mode pengalihan server.
-Secara default tipe lalu lintas ini tidak diperbolehkan.
+Izinkan lalu lintas mode pengalihan server SQL.
+Secara default, jenis lalu lintas ini tidak diperbolehkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
