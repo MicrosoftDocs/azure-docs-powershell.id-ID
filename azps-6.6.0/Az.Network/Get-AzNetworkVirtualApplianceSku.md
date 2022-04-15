@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualApplianceSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualApplianceSku.md
 ms.openlocfilehash: 46d9590306f3d8f313197b4551a04e1b98aeafd8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140075879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142269097"
 ---
 # Get-AzNetworkVirtualApplianceSku
 
 ## SYNOPSIS
-Dapatkan atau  List available Network Virtual Appliance Skus dalam inventaris.
+Dapatkan atau Cantumkan Sku Alat Virtual Jaringan yang tersedia di inventori.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkvirtualappliancesku) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkvirtualappliancesku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzNetworkVirtualApplianceSku [-SkuName <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Daftar Get-AzNetworkVirtualApplianceSku menyediakan Sku Perlengkapan Virtual Jaringan dalam Microsoft Azure inventaris.
+Get-AzNetworkVirtualApplianceSku mendapatkan atau mencantumkan Sku Alat Virtual Jaringan yang tersedia di inventarsi Microsoft Azure.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ Etag                : 00000000-0000-0000-0000-000000000000
 Id                  :
 ```
 
-Daftar semua Skus Alat Virtual Jaringan yang tersedia.
+Cantumkan semua Sku yang tersedia dari Network Virtual Appliance.
 
 ## PARAMETERS
 
@@ -107,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

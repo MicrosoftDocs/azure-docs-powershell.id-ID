@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesDefinition.md
-ms.openlocfilehash: b489d6f8d3e45078dee7d09a528f7942f19d80c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4e49872e3ed4d7dbd5357aec8c96e5c8d7400149
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214785"
 ---
 # Get-AzManagedServicesDefinition
 
 ## SYNOPSIS
-Mendapatkan detail definisi registrasi.
+Mendapatkan detail definisi pendaftaran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan detail definisi registrasi.
 Get-AzManagedServicesDefinition [-Scope <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzManagedServicesDefinition -Name <String> [-Scope <String>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
@@ -37,11 +40,11 @@ Get-AzManagedServicesDefinition -InputObject <IManagedServicesIdentity> [-Defaul
 ```
 
 ## DESCRIPTION
-Mendapatkan detail definisi registrasi.
+Mendapatkan detail definisi pendaftaran.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua definisi pendaftaran Mercusuar Azure dalam langganan
+### Contoh 1: Mencantumkan semua definisi pendaftaran Azure Lighthouse dalam langganan
 ```powershell
 PS C:\> Get-AzManagedServicesDefinition
 
@@ -53,7 +56,7 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationDefin
 
 Mencantumkan semua definisi pendaftaran Azure Lighthouse dalam langganan tertentu dalam konteks.
 
-### Contoh 2: Dapatkan definisi pendaftaran Azure Lighthouse menurut nama dengan properti yang dipilih
+### Contoh 2: Dapatkan definisi registrasi Azure Lighthouse menurut nama dengan properti yang dipilih
 ```powershell
 PS C:\>  Get-AzManagedServicesDefinition -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |Format-List -Property Id, Name, Type, ManagedByTenantId, Authorization, EligibleAuthorization
 
@@ -65,9 +68,9 @@ Authorization         : {Test user}
 EligibleAuthorization : {Test user}
 ```
 
-Dapatkan definisi pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih.
+Mendapatkan definisi registrasi Azure Lighthouse berdasarkan nama dengan properti yang dipilih.
 
-### Contoh 3: Mencantumkan semua definisi pendaftaran Mercusuar Azure menurut lingkup
+### Contoh 3: Cantumkan semua definisi pendaftaran Azure Lighthouse menurut lingkup
 ```powershell
 PS C:\> Get-AzManagedServicesDefinition -Scope /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx | Format-List -Property Id, Name, Type, ManagedByTenantId, Authorization, EligibleAuthorization
 
@@ -86,7 +89,7 @@ Authorization         : {}
 EligibleAuthorization :
 ```
 
-Mencantumkan semua definisi pendaftaran Azure Lighthouse dengan lingkup langganan tertentu.
+Mencantumkan semua definisi pendaftaran Azure Lighthouse berdasarkan lingkup langganan tertentu.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.IManagedServicesIdentity
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-GUID definisi registrasi.
+GUID definisi pendaftaran.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,9 +175,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IManagedServicesIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Azure Marketplace. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
-  - `[RegistrationAssignmentId <String>]`: GUID penetapan pendaftaran.
-  - `[RegistrationDefinitionId <String>]`: GUID definisi registrasi.
+  - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Marketplace Azure. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
+  - `[RegistrationAssignmentId <String>]`: GUID penugasan pendaftaran.
+  - `[RegistrationDefinitionId <String>]`: GUID definisi pendaftaran.
   - `[Scope <String>]`: Lingkup sumber daya.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerThroughput.md
-ms.openlocfilehash: a7ddfdfee2b30cea8001141a9651abe1744c504a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1997d2cd4442f3b12eb950cf11974ba08484545c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557129"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142217017"
 ---
 # Get-AzCosmosDBSqlContainerThroughput
 
 ## SYNOPSIS
-Mendapatkan pengaturan throughput yang sesuai dengan CosmosDB Sql Container.
+Mendapatkan pengaturan throughput yang terkait dengan Kontainer CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlcontainerthroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Tags                :
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -143,11 +146,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

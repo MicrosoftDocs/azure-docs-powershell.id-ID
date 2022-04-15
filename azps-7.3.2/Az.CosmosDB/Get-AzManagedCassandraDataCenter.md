@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: ce424468d981bb1f6541ac95e517db294c6a6dd5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a294a0eff357bac5090a10d294b551b22ac9f4e2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140544962"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142216819"
 ---
 # Get-AzManagedCassandraDataCenter
 
 ## SYNOPSIS
-Mendapatkan Azure Managed Instances untuk Apache Sandbox data center.
+Mendapatkan Instans Terkelola Azure untuk pusat data Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzManagedCassandraDataCenter -ParentObject <PSClusterResource>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzManagedCass cmdletDataCenter** mengambil properti dari pusat data Seluler Yang dikelola yang sudah ada.
+**Cmdlet Get-AzManagedCassandraDataCenter** mengambil properti pusat data Cassandra yang dikelola yang sudah ada.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ PS C:\> $clusterResource | Get-AzManagedCassandraDataCenter
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataCenterName
-Nama pusat data Seluler yang dikelola.
+Nama pusat data Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek kluster Kluster Kelola
+Objek kluster Cassandra terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kluster Failover yang dikelola.
+Id sumber daya dari kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

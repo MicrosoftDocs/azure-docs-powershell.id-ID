@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVHubRouteTable.md
 ms.openlocfilehash: e37fdb7d699a7e9f7216fb2eb7b7bf4c651fa0d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140102015"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142227475"
 ---
 # Remove-AzVHubRouteTable
 
 ## SYNOPSIS
-Menghapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
+Hapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azvhubroutetable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Remove-AzVHubRouteTable -ResourceGroupName <String> -ParentResourceName <String>
 Remove-AzVHubRouteTable -Name <String> -VirtualHub <PSVirtualHub> [-AsJob] [-Force] [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByvHubRouteTableObject
+### ByVHubRouteTableObject
 ```powershell
 Remove-AzVHubRouteTable [-InputObject <PSVHubRouteTable>] [-AsJob] [-Force] [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Remove-AzVHubRouteTable -ResourceId <String> [-AsJob] [-Force] [-PassThru] [-Def
 ```
 
 ## DESCRIPTION
-Menghapus tabel rute hub tertentu yang terkait dengan hub virtual yang ditentukan.
+Menghapus tabel rute hub tertentu yang terkait dengan hub virtual tertentu.
 
 ## EXAMPLES
 
@@ -53,12 +53,12 @@ PS C:\> $testRouteTable = Get-AzVHubRouteTable -ResourceGroupName "testRg" -Virt
 PS C:\> Remove-AzVHubRouteTable -ResourceGroupName "testRg" -VirtualHubName "testHub" -Name "testRouteTable"
 ```
 
-Perintah ini menghapus tabel rute hub dari hub virtual.
+Perintah ini menghapus tabel rute hub hub hub virtual.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya vhubroutetable yang akan dihapus.
+Sumber daya vhubroutetable untuk dihapus.
 
 ```yaml
 Type: PSVHubRouteTable
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek hub virtual induk dari sumber daya ini.
+Objek hub maya induk sumber daya ini.
 
 ```yaml
 Type: PSVirtualHub
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item di mana operasi ini dijalankan.
+Mengembalikan objek yang mewakili item tempat operasi ini dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari sumber daya vhubroutetable yang akan dihapus.
+Id sumber daya sumber daya vhubroutetable untuk dihapus.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -257,10 +257,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvHubRouteTable](./Get-AzVHubRouteTable.md)
+[Get-AzVHubRouteTable](./Get-AzVHubRouteTable.md)
 
-[New-AzvHubRoute](./New-AzVHubRoute.md)
+[New-AzVHubRoute](./New-AzVHubRoute.md)
 
-[New-AzvHubRouteTable](./New-AzVHubRouteTable.md)
+[New-AzVHubRouteTable](./New-AzVHubRouteTable.md)
 
-[Update-azvHubRouteTable](./Update-AzVHubRouteTable.md)
+[Update-AzVHubRouteTable](./Update-AzVHubRouteTable.md)

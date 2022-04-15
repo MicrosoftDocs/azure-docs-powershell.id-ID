@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchTask.md
-ms.openlocfilehash: 77071d8a8a21042c19229f6a915aeba9ba7a7155
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 362efc78f6c84c0dd09f564fb3ac7428a321090e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550549"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142260367"
 ---
 # New-AzBatchTask
 
 ## SYNOPSIS
 Membuat tugas Kumpulan di bawah pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ New-AzBatchTask [-Job <PSCloudJob>] -Id <String> [-DisplayName <String>] -Comman
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchTask** membuat tugas Kumpulan Azure di bawah pekerjaan yang ditentukan oleh parameter *JobId* atau *parameter Job* .
+Cmdlet **New-AzBatchTask** membuat tugas Azure Batch di bawah pekerjaan yang ditentukan oleh parameter *JobId* atau parameter *Job*.
 
 ## EXAMPLES
 
@@ -66,9 +69,9 @@ Cmdlet **New-AzBatchTask** membuat tugas Kumpulan Azure di bawah pekerjaan yang 
 New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -BatchContext $Context
 ```
 
-Perintah ini membuat tugas yang memiliki ID Tugas23 di bawah pekerjaan yang memiliki ID Pekerjaan-000001.
+Perintah ini membuat tugas yang memiliki ID Task23 di bawah pekerjaan yang memiliki ID Job-000001.
 Tugas menjalankan perintah yang ditentukan.
-Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke $Context variabel.
+Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke variabel $Context.
 
 ### Contoh 2: Membuat tugas Kumpulan
 ```powershell
@@ -77,12 +80,12 @@ $userIdentity = New-Object Microsoft.Azure.Commands.Batch.Models.PSUserIdentity 
 Get-AzBatchJob -Id "Job-000001" -BatchContext $Context | New-AzBatchTask -Id "Task26" -CommandLine "cmd /c echo hello > newFile.txt" -UserIdentity $userIdentity -BatchContext $Context
 ```
 
-Perintah ini mendapatkan pekerjaan Kumpulan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchJob** .
-Perintah itu melewati pekerjaan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah akan membuat tugas dengan ID Task26 di bawah pekerjaan tersebut.
+Perintah ini mendapatkan pekerjaan Batch yang memiliki id Job-000001 dengan menggunakan cmdlet **Get-AzBatchJob** .
+Perintah melewati pekerjaan tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Perintah membuat tugas yang memiliki ID Task26 di bawah pekerjaan tersebut.
 Tugas menjalankan perintah yang ditentukan dengan menggunakan izin yang ditingkatkan.
 
-### Contoh 3: Menambahkan kumpulan tugas ke pekerjaan tertentu dengan menggunakan saluran
+### Contoh 3: Menambahkan kumpulan tugas ke pekerjaan yang ditentukan menggunakan pipeline
 ```powershell
 $Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
 $Task01 = New-Object Microsoft.Azure.Commands.Batch.Models.PSCloudTask("Task23", "cmd /c dir /s")
@@ -90,16 +93,16 @@ $Task02 = New-Object Microsoft.Azure.Commands.Batch.Models.PSCloudTask("Task24",
 Get-AzBatchJob -Id "Job-000001" -BatchContext $Context | New-AzBatchTask -Tasks @($Task01, $Task02) -BatchContext $Context
 ```
 
-Perintah pertama membuat referensi objek ke tombol akun untuk akun kumpulan bernama ContosoBatchAccount dengan menggunakan **Get-AzBatchAccountKey**.
-Perintah menyimpan referensi objek ini di $Context variabel.
-Dua perintah berikutnya membuat **objek PSCloudTask** dengan menggunakan cmdlet New-Object cmdlet.
-Perintah menyimpan tugas di $Task 01 dan $Task 02.
-Perintah terakhir mendapatkan pekerjaan Kumpulan yang memiliki ID Job-000001 dengan menggunakan **Get-AzBatchJob**.
-Lalu perintah itu meneruskan pekerjaan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah menambahkan kumpulan tugas di bawah pekerjaan itu.
-Perintah tersebut menggunakan konteks yang disimpan di $Context.
+Perintah pertama membuat referensi objek ke kunci akun untuk akun batch bernama ContosoBatchAccount menggunakan **Get-AzBatchAccountKey**.
+Perintah menyimpan referensi objek ini dalam variabel $Context.
+Dua perintah berikutnya membuat objek **PSCloudTask** menggunakan cmdlet New-Object.
+Perintah menyimpan tugas dalam variabel $Task 01 dan $Task 02.
+Perintah terakhir mendapatkan pekerjaan Batch yang memiliki ID Job-000001 dengan menggunakan **Get-AzBatchJob**.
+Lalu perintah melewati pekerjaan tersebut ke cmdlet saat ini dengan menggunakan operator pipeline.
+Perintah menambahkan kumpulan tugas di bawah pekerjaan tersebut.
+Perintah menggunakan konteks yang disimpan di $Context.
 
-### Contoh 4: Menambahkan kumpulan tugas ke pekerjaan tertentu
+### Contoh 4: Menambahkan kumpulan tugas ke pekerjaan yang ditentukan
 ```powershell
 $Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
 $Task01 = New-Object Microsoft.Azure.Commands.Batch.Models.PSCloudTask("Task23", "cmd /c dir /s")
@@ -107,10 +110,10 @@ $Task02 = New-Object Microsoft.Azure.Commands.Batch.Models.PSCloudTask("Task24",
 New-AzBatchTask -JobId "Job-000001" -Tasks @($Task01, $Task02) -BatchContext $Context
 ```
 
-Perintah pertama membuat referensi objek ke tombol akun untuk akun kumpulan bernama ContosoBatchAccount dengan menggunakan **Get-AzBatchAccountKey**.
-Perintah menyimpan referensi objek ini di $Context variabel.
-Dua perintah berikutnya membuat **objek PSCloudTask** dengan menggunakan cmdlet New-Object cmdlet.
-Perintah menyimpan tugas di $Task 01 dan $Task 02.
+Perintah pertama membuat referensi objek ke kunci akun untuk akun batch bernama ContosoBatchAccount menggunakan **Get-AzBatchAccountKey**.
+Perintah menyimpan referensi objek ini dalam variabel $Context.
+Dua perintah berikutnya membuat objek **PSCloudTask** menggunakan cmdlet New-Object.
+Perintah menyimpan tugas dalam variabel $Task 01 dan $Task 02.
 Perintah terakhir menambahkan tugas yang disimpan di $Task 01 dan $Task 02 di bawah pekerjaan yang memiliki ID Job-000001.
 
 ### Contoh 5: Menambahkan tugas dengan file output
@@ -124,14 +127,14 @@ $outputFile = New-Object Microsoft.Azure.Commands.Batch.Models.PSOutputFile "*.t
 New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -OutputFile $outputFile -BatchContext $Context
 ```
 
-### Contoh 6: Tambahkan tugas dengan pengaturan token autentikasi
+### Contoh 6: Menambahkan tugas dengan pengaturan token autentikasi
 ```powershell
 $authSettings = New-Object Microsoft.Azure.Commands.Batch.Models.PSAuthenticationTokenSettings
 $authSettings.Access = "Job"
 New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -AuthenticationTokenSettings $authSettings -BatchContext $Context
 ```
 
-### Contoh 7: Tambahkan tugas yang berjalan dalam wadah
+### Contoh 7: Menambahkan tugas yang berjalan dalam wadah
 ```powershell
 New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ContainerSettings New-Object Microsoft.Azure.Commands.Batch.Models.PSTaskContainerSettings "containerImageName"
 ```
@@ -139,7 +142,7 @@ New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -C
 ## PARAMETERS
 
 ### -AffinityInformation
-Menentukan petunjuk lokalitas yang digunakan layanan Batch untuk memilih simpul yang akan menjalankan tugas.
+Menentukan petunjuk lokalitas yang digunakan layanan Batch untuk memilih simpul untuk menjalankan tugas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSAffinityInformation
@@ -167,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -AuthenticationTokenSettings
-Pengaturan untuk token autentikasi yang dapat digunakan tugas untuk melakukan operasi layanan Batch.
-Jika ini diatur, layanan Kumpulan menyediakan tugas dengan token autentikasi yang dapat digunakan untuk mengautentikasi operasi layanan Batch tanpa memerlukan kunci akses akun. Token disediakan melalui variabel lingkungan AZ_BATCH_AUTHENTICATION_TOKEN gratis. Operasi yang dapat dilakukan tugas menggunakan token bergantung pada pengaturan. Misalnya, tugas bisa meminta izin pekerjaan untuk menambahkan tugas lain ke pekerjaan itu, atau memeriksa status pekerjaan atau tugas lain.
+Pengaturan untuk token autentikasi yang bisa digunakan tugas untuk melakukan operasi layanan batch.
+Jika ini diatur, layanan Batch menyediakan tugas dengan token autentikasi yang dapat digunakan untuk mengautentikasi operasi layanan Batch tanpa memerlukan kunci akses akun. Token disediakan melalui variabel lingkungan AZ_BATCH_AUTHENTICATION_TOKEN. Operasi yang dapat dilakukan tugas menggunakan token bergantung pada pengaturan. Misalnya, tugas bisa meminta izin pekerjaan untuk menambahkan tugas lain ke pekerjaan, atau memeriksa status pekerjaan atau tugas lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSAuthenticationTokenSettings
@@ -183,8 +186,8 @@ Accept wildcard characters: False
 ```
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -213,7 +216,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Constraints
+### -Batasan
 Menentukan batasan eksekusi yang berlaku untuk tugas ini.
 
 ```yaml
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 
 ### -ContainerSettings
 Pengaturan untuk wadah tempat tugas dijalankan.
-Jika kumpulan yang akan menjalankan tugas ini memiliki containerConfiguration set, ini harus disetel juga. Jika kumpulan yang akan menjalankan tugas ini tidak memiliki containerConfiguration yang diatur, ini tidak boleh disetel. Bila ini ditentukan, semua direktori secara rekursif di bawah AZ_BATCH_NODE_ROOT_DIR (akar direktori Azure Batch di node) dipetakan ke wadah, semua variabel lingkungan tugas dipetakan ke wadah, dan baris perintah tugas dijalankan dalam wadah.
+Jika kumpulan yang akan menjalankan tugas ini memiliki kontainerKonfigurasi yang diatur, ini harus diatur juga. Jika kumpulan yang akan menjalankan tugas ini tidak memiliki kontainerKonfigurasi yang diatur, ini tidak boleh diatur. Ketika ini ditentukan, semua direktori secara rekurtif di bawah AZ_BATCH_NODE_ROOT_DIR (akar direktori Azure Batch pada simpul) dipetakan ke dalam wadah, semua variabel lingkungan tugas dipetakan ke dalam wadah, dan baris perintah tugas dijalankan dalam wadah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSTaskContainerSettings
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 
 ### -DependsOn
 Menentukan bahwa tugas bergantung pada tugas lain.
-Tugas tidak akan dijadwalkan hingga semua tugas yang bergantung pada telah berhasil diselesaikan.
+Tugas tidak akan dijadwalkan hingga semua tugas depended-on berhasil diselesaikan.
 
 ```yaml
 Type: Microsoft.Azure.Batch.TaskDependencies
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentSettings
-Menentukan pengaturan lingkungan, sebagai pasangan kunci/nilai, yang cmdlet tambahkan pada tugas tersebut.
+Menentukan pengaturan lingkungan, sebagai pasangan kunci/nilai, yang ditambahkan cmdlet ini ke tugas.
 Kuncinya adalah nama pengaturan lingkungan.
 Nilainya adalah pengaturan lingkungan.
 
@@ -336,8 +339,8 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan cmdlet ini yang membuat tugas.
-Untuk mendapatkan objek **PSCloudJob** , gunakan Get-AzBatchJob cmdlet.
+Menentukan pekerjaan di mana cmdlet ini membuat tugas.
+Untuk mendapatkan objek **PSCloudJob** , gunakan cmdlet Get-AzBatchJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJob
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan cmdlet ini yang membuat tugas.
+Menentukan ID pekerjaan di mana cmdlet ini membuat tugas.
 
 ```yaml
 Type: System.String
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiInstanceSettings
-Menentukan informasi tentang cara menjalankan tugas multi-contoh.
+Menentukan informasi tentang cara menjalankan tugas multi-instans.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSMultiInstanceSettings
@@ -382,8 +385,8 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFile
-Mendapatkan atau mengatur daftar file yang akan diunggah oleh layanan Batch dari simpul perhitungan setelah menjalankan baris perintah.
-Untuk tugas multi-contoh, file hanya akan diunggah dari node perhitungan tempat tugas utama dijalankan.
+Mendapatkan atau mengatur daftar file yang akan diunggah layanan Batch dari simpul komputasi setelah menjalankan baris perintah.
+Untuk tugas multi-instans, file hanya akan diunggah dari simpul komputasi tempat tugas utama dijalankan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSOutputFile[]
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceFiles
-Menentukan file sumber daya, sebagai pasangan kunci/nilai, yang diperlukan tugas tersebut.
+Menentukan file sumber daya, sebagai pasangan kunci/nilai, yang diperlukan tugas.
 Kuncinya adalah jalur file sumber daya.
 Nilainya adalah sumber blob file sumber daya.
 
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 
 ### -Tugas
 Menentukan kumpulan tugas yang akan ditambahkan.
-Setiap tugas harus mempunyai ID yang unik.
+Setiap tugas harus memiliki ID unik.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudTask[]
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserIdentity
-Identitas pengguna di bawah mana tugas dijalankan.
+Identitas pengguna di mana tugas berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSUserIdentity
@@ -446,7 +449,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -470,8 +473,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchTask](./New-AzBatchTask.md)
 
-[Remove-AzBatchTask](./Remove-AzBatchTask.md)
+[Hapus-AzBatchTask](./Remove-AzBatchTask.md)
 
 [Stop-AzBatchTask](./Stop-AzBatchTask.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

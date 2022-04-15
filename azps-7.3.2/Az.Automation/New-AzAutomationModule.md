@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationModule.md
-ms.openlocfilehash: b5042fedc412314f9cdfd2012b52f9f175c03c08
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b3c16544454edfa569d037e945ae39ec19fcce31
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557869"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142260835"
 ---
 # New-AzAutomationModule
 
 ## SYNOPSIS
-Mengimpor modul ke dalam Otomatisasi.
+Mengimpor modul ke Dalam Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ New-AzAutomationModule [-Name] <String> [-ContentLinkUri] <Uri> [-ResourceGroupN
 
 ## DESCRIPTION
 Cmdlet **New-AzAutomationModule** mengimpor modul ke Azure Automation.
-Perintah ini menerima file terkompresi yang memiliki .zip nama file.
+Perintah ini menerima file terkompresi yang memiliki ekstensi nama file .zip.
 File berisi folder yang menyertakan file yang merupakan salah satu tipe berikut ini: 
-- Windows PowerShell ini, yang memiliki ekstensi nama file .psm1 .dll 
+- Windows PowerShell modul, yang memiliki ekstensi nama file .psm1 atau .dll 
 - Windows PowerShell manifes modul, yang memiliki ekstensi nama file .psd1 Nama file .zip, nama folder, dan nama file dalam folder harus sama.
-Tentukan file .zip sebagai URL yang bisa diakses oleh layanan Otomatisasi.
-Jika Anda mengimpor modul Windows PowerShell ke otomatisasi dengan menggunakan cmdlet ini atau cmdlet Set-AzAutomationModule, operasinya adalah asinkron.
-Perintah menyelesaikan apakah impor berhasil atau gagal.
-Untuk memeriksa apakah properti berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name `ModuleName Periksa properti **ProvisioningState** untuk nilai Berhasil.
+Tentukan file .zip sebagai URL yang dapat diakses oleh layanan Otomatisasi.
+Jika Anda mengimpor modul Windows PowerShell ke Dalam Otomatisasi dengan menggunakan cmdlet ini atau cmdlet Set-AzAutomationModule, operasinya tidak sinkron.
+Perintah selesai apakah impor berhasil atau gagal.
+Untuk memeriksa apakah berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name `ModuleName Periksa properti **ProvisioningState** untuk nilai Berhasil.
 
 ## EXAMPLES
 
@@ -43,13 +46,13 @@ Untuk memeriksa apakah properti berhasil, jalankan perintah berikut: `PS C:\\\> 
 PS C:\>New-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ContentLink "http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mengimpor modul yang bernama ContosoModule ke akun Otomatisasi yang bernama Contoso17.
-Modul ini disimpan di Azure blob dalam akun penyimpanan yang bernama contosostorage dan wadah yang bernama modul.
+Perintah ini mengimpor modul bernama ContosoModule ke akun Otomatisasi bernama Contoso17.
+Modul disimpan dalam blob Azure di akun penyimpanan bernama contosostorage dan kontainer bernama modul.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang akan diimpor cmdlet ini modul.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mengimpor modul.
 
 ```yaml
 Type: System.String
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLinkUri
-Url ke paket zip modul
+Url untuk paket zip modul
 
 ```yaml
 Type: System.Uri
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang akan diimpor cmdlet ini.
+Menentukan nama grup sumber daya tempat cmdlet ini mengimpor modul.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

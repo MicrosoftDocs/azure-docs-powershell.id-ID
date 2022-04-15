@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelBookmark.md
-ms.openlocfilehash: 8e5e270d7323e8bca0a754730c2c48acb2f9b6fc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1a9a0517b489085f0f4e58da4dc617ba3086f3bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380592"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142253383"
 ---
 # Remove-AzSentinelBookmark
 
 ## SYNOPSIS
 Menghapus Bookmark.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelbookmark) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Remove-AzSentinelBookmark -InputObject <PSSentinelBookmark> [-PassThru]
 
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelBookmark** menghapus Bookmark secara permanen dari ruang kerja tertentu.
-Anda bisa melewati objek Bookmark dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat melewati objek Bookmark menggunakan operator pipeline, atau menentukan parameter yang diperlukan.
+Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerS
 PS C:\> Remove-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -BookmarkId "MyBookmarkId"
 ```
 
-Perintah ini akan menghapus Bookmark dari ruang kerja.
+Perintah ini menghapus Bookmark dari ruang kerja.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ $Bookmark = Get-AzSentinelBookmark @SentinelConnection | Where-Object {$_.Displa
 Remove-AzSentinelBookmark @SentinelConnection -BookmarkId $Bookmark.Name
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati sumber dayaGroupName dan workspaceName untuk mendapatkan Bookmark dengan nama tertentu. BookmarkId kemudian digunakan untuk menghapusnya.
+Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName untuk mendapatkan Bookmark dengan nama tertentu. Lalu menggunakan BookmarkId untuk menghapusnya.
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

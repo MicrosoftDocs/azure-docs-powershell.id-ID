@@ -4,16 +4,16 @@ ms.assetid: CEFFEF9F-4500-447E-99F1-FE053AED880A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c4b2a382a6be1ed2ba0348983f69ab53c20118c3
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415668"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245673"
 ---
 # Get-AzureServiceProjectRoleRuntime
 
 ## SYNOPSIS
-Dapatkan runtime yang tersedia untuk diinstal dalam sebuah peran.
+Dapatkan runtime yang tersedia untuk diinstal dalam peran.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,18 +24,18 @@ Get-AzureServiceProjectRoleRuntime [-Runtime <String>] [-Profile <AzureSMProfile
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
-Mendapatkan runtime tersedia untuk diinstal dalam sebuah peran.
+Mendapatkan runtime yang tersedia untuk diinstal dalam peran.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -Runtime
 Nama runtime.
-Jika runtime ditentukan, hanya versi runtime tertentu yang tersedia untuk diinstal dalam peran di Windows Azure akan dikembalikan.
+Jika runtime yang ditentukan, hanya versi runtime tertentu yang tersedia untuk diinstal dalam peran Anda di Windows Azure yang akan dikembalikan.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

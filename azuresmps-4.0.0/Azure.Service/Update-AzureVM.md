@@ -4,16 +4,16 @@ ms.assetid: 8DC10708-09CE-449C-BE20-1E9E49CCE08A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4ea8faac7e6de70b7536c0721f5c40ce261a4f73
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419890"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243103"
 ---
 # Update-AzureVM
 
 ## SYNOPSIS
-Mengubah konfigurasi komputer virtual Azure.
+Mengubah konfigurasi mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,38 +25,38 @@ Update-AzureVM [-Name] <String> -VM <PersistentVM> [-ServiceName] <String> [-Pro
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureVM** menerima informasi pembaruan untuk komputer virtual yang ditentukan dan memulai pembaruan.
-Anda dapat menambahkan atau menghapus disk data, mengubah mode cache data atau disk sistem operasi, mengubah titik akhir jaringan, atau mengubah ukuran komputer virtual.
+Cmdlet **Update-AzureVM** menerima informasi pembaruan untuk mesin virtual tertentu dan memulai pembaruan.
+Anda dapat menambahkan atau menghapus disk data, mengubah mode cache data atau disk sistem operasi, mengubah titik akhir jaringan, atau mengubah ukuran mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui ukuran komputer virtual
+### Contoh 1: Memperbarui ukuran mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService03" -Name "VirtualMachine04" | Set-AzureVMSize -InstanceSize "Medium" | Update-AzureVM
 ```
 
-Perintah ini mengubah ukuran komputer virtual yang bernama VirtualMachine04, yang berjalan di layanan bernama ContosoService03, ke Sedang.
+Perintah ini mengubah ukuran mesin virtual bernama VirtualMachine04, yang berjalan di layanan bernama ContosoService03, menjadi Medium.
 
 ### Contoh 2: Menambahkan disk data ke mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService03" -Name "VirtualMachine05" | Add-AzureDataDisk -CreateNew -MediaLocation "https://ContosoStore1.blob.core.azure.com/vhds/Disk22.vhd" -DiskSizeInGB 128 -DiskLabel "Data-128" -LUN 0 | Update-AzureVM
 ```
 
-Perintah ini menambahkan disk data baru ke mesin virtual bernama VirtualMachine05, yang berjalan di layanan yang bernama ContosoService03.
+Perintah ini menambahkan disk data baru ke mesin virtual bernama VirtualMachine05, yang berjalan di layanan bernama ContosoService03.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang menyertakan pengaturan yang diperbarui.
+Menentukan objek mesin maya yang menyertakan pengaturan yang diperbarui.
 
 ```yaml
 Type: PersistentVM
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,15 +159,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[New-AzureVMConfig](./New-AzureVMConfig.md)
+[AzureVMConfig baru](./New-AzureVMConfig.md)
 
-[Remove-AzureVM](./Remove-AzureVM.md)
+[Hapus-AzureVM](./Remove-AzureVM.md)
 
-[Mulai Ulang-AzureVM](./Restart-AzureVM.md)
+[Mulai ulang-AzureVM](./Restart-AzureVM.md)
 
-[Set-AzureVMSize](./Set-AzureVMSize.md)
+[Atur-AzureVMSize](./Set-AzureVMSize.md)
 
 [Start-AzureVM](./Start-AzureVM.md)
 

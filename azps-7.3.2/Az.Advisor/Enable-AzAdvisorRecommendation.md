@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Enable-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Enable-AzAdvisorRecommendation.md
-ms.openlocfilehash: 7e04b0d13487ac5268a14c4a94bd710f3af919cb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7c93866d21db7885d8e55ceb2ab2f0b213cab600
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140374130"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142262041"
 ---
 # Enable-AzAdvisorRecommendation
 
 ## SYNOPSIS
-Memungkinkan rekomendasi Penasihat Azure.
+Mengaktifkan rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.advisor/enable-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Enable-AzAdvisorRecommendation [-InputObject] <PsAzureAdvisorResourceRecommendat
 ```
 
 ## DESCRIPTION
-Cmdlet ini mengaktifkan rekomendasi yang sebelumnya tidak diperlukan. Anda juga bisa menghapus semua penekanan yang terkait dengan rekomendasi.
+Cmdlet ini memungkinkan rekomendasi yang sebelumnya ditekan. Anda dapat menghapus semua penindasan yang terkait dengan rekomendasi juga.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ Name                 : c3621337-f131-4bf4-92f2-3fb9c8cfa0d8
 Type                 : Microsoft.Advisor/recommendations
 ```
 
-Menghapus semua penekanan untuk rekomendasi tertentu dengan nama "recommendation_id".
+Menghapus semua peredaman untuk rekomendasi yang diberikan dengan nama "recommendation_id".
 
 ### Contoh 2
 ```powershell
@@ -93,12 +96,12 @@ Name                 : {recommendation_id}
 Type                 : Microsoft.Advisor/recommendations
 ```
 
-Menghapus semua penekanan untuk rekomendasi tertentu yang diberikan dari saluran.
+Menghapus semua penindasan untuk rekomendasi yang diberikan dari saluran.
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Tipe objek powershell PsAzureAdvisorResourceRecommendationBase dikembalikan oleh Get-AzAdvisorRecommendation panggilan.
+Objek powershell tipe PsAzureAdvisorResourceRecommendationBase dikembalikan oleh panggilan Get-AzAdvisorRecommendation.
 
 ```yaml
 Type: PsAzureAdvisorResourceRecommendationBase
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id rekomendasi untuk disimpan.
+Id dari rekomendasi yang akan ditekan.
 
 ```yaml
 Type: String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

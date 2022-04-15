@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsInstance.md
 ms.openlocfilehash: b34b542cc840ae4e792595364005b9c6cc586bab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939903"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142270483"
 ---
 # New-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Membuat atau memperbarui metadata DigitalTwinsInstance.
-Pola biasa untuk mengubah properti adalah mengambil metadata DigitalTwinsInstance dan keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui DigitalTwinsInstance.
+Pola yang biasa untuk mengubah properti adalah mengambil metadata DigitalTwinsInstance dan keamanan, lalu menggabungkannya dengan nilai yang diubah dalam isi baru untuk memperbarui DigitalTwinsInstance.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsinstance) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String> -L
  [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
  -DigitalTwinsCreate <IDigitalTwinsDescription> [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
@@ -39,7 +39,7 @@ New-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
 
 ## DESCRIPTION
 Membuat atau memperbarui metadata DigitalTwinsInstance.
-Pola biasa untuk mengubah properti adalah mengambil metadata DigitalTwinsInstance dan keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui DigitalTwinsInstance.
+Pola yang biasa untuk mengubah properti adalah mengambil metadata DigitalTwinsInstance dan keamanan, lalu menggabungkannya dengan nilai yang diubah dalam isi baru untuk memperbarui DigitalTwinsInstance.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ eastus   youriDigitalTwin S1      Microsoft.DigitalTwins/digitalTwinsInstances
 
 Membuat AzDigitalTwinsInstance secara default
 
-### Contoh 2: Buat AzDigitalTwinsInstance oleh AzDigitalTwins Object.
+### Contoh 2: Create an AzDigitalTwinsInstance by AzDigitalTwins Object.
 ```powershell
 PS C:\> $GetAzDigTwin = Get-AzDigitalTwinsInstance -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 New-AzDigitalTwinsInstance -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest01 -DigitalTwinsCreate $getAzdigitalTwins
@@ -98,9 +98,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DigitalTwinsCreate
-Deskripsi layanan DigitalTwins.
-Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSCREATE dan membuat tabel hash.
+### -DigitalTwinsMekreasikan
+Penjabaran dari layanan DigitalTwins.
+Untuk membangun, lihat bagian CATATAN untuk properti DIGITALTWINSCREATE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsDescription
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

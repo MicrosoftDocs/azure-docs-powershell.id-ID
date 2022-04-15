@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmResourceProvider.md
 ms.openlocfilehash: 8b7b4109441b10da0bf5c7f572c90f25a17293a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421211"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142248268"
 ---
 # Get-AzureRmResourceProvider
 
@@ -43,7 +43,7 @@ Cmdlet **Get-AzureRmResourceProvider** mendapatkan penyedia sumber daya Azure.
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,8 +143,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Register-AzureRmResourceProvider](./Register-AzureRmResourceProvider.md)
+[Daftarkan-AzureRmResourceProvider](./Register-AzureRmResourceProvider.md)
 
-[Unregister-AzureRmResourceProvider](./Unregister-AzureRmResourceProvider.md)
+[Batalkan pendaftaran-AzureRmResourceProvider](./Unregister-AzureRmResourceProvider.md)
 
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/regist
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzResourceProvider.md
-ms.openlocfilehash: e23f4426b1bfdf4fc1c859002802b992e35bbdae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5c1b78485eab593f71fd35a7a5ad87dae1cc771c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554612"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142253869"
 ---
 # Register-AzResourceProvider
 
 ## SYNOPSIS
 Mendaftarkan penyedia sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/register-azresourceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Cmdlet **Register-AzResourceProvider** mendaftarkan penyedia sumber daya Azure.
 PS C:\>Register-AzResourceProvider -ProviderNamespace Microsoft.Network
 ```
 
-Ini akan mendaftarkan penyedia Microsoft.Network untuk akun Anda.
+Tindakan ini mendaftarkan penyedia Microsoft.Network untuk akun Anda.
 
 ## PARAMETERS
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsentToPermissions
-Nilai yang menunjukkan apakah izin telah persetujuan atau tidak.
+Nilai yang mengindikasikan apakah izin disetujui atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,6 +167,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzResourceProvider](./Get-AzResourceProvider.md)
 
-[Pisahkan-AzResourceProvider](./Unregister-AzResourceProvider.md)
+[Unregister-AzResourceProvider](./Unregister-AzResourceProvider.md)
 
 

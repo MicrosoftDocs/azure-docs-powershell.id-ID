@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVM.md
-ms.openlocfilehash: 23f12900c6afd17a42d97da9bb383a9ac9f0a074
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7c64b10e2dda7cde54eac62adf0f7fdf18fe3139
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400407"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207081"
 ---
 # Update-AzSqlVM
 
 ## SYNOPSIS
 Memperbarui mesin virtual sql.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azsqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Memperbarui tag mesin virtual sql.
 
 ### Contoh 2
 
-Memperbarui mesin virtual sql. (otomatisgenerated)
+Memperbarui mesin virtual sql. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-SQL lisensi mesin virtual.
+SQL tipe lisensi mesin virtual.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-SQL mesin virtual.
+SQL nama mesin virtual.
 
 ```yaml
 Type: System.String
@@ -148,8 +151,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Offer
-SQL mesin virtual.
+### -Penawaran
+SQL penawaran mesin virtual.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-SQL sumber daya mesin virtual.
+SQL id sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL edisi mesin virtual.
+SQL tipe edisi mesin virtual.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlManagementType
-SQL manajemen mesin virtual.
+SQL tipe manajemen mesin virtual.
 
 ```yaml
 Type: System.String
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan SQL virtual
+Tag yang akan dikaitkan dengan mesin virtual SQL
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVolume.md
 ms.openlocfilehash: ee8e4a61eb1a2f09fe82ddcd42da61294f44bded
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139936969"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142269799"
 ---
 # Get-AzNetAppFilesVolume
 
 ## SYNOPSIS
-Mendapatkan detail volume File Azure NetApp (ANF).
+Mendapatkan detail volume Azure NetApp Files (ANF).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolume) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolume) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzNetAppFilesVolume** mendapatkan detail volume ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan volume ANF
+### Contoh 1: Dapatkan volume ANF
 ```
 PS C:\>Get-AzNetAppFilesVolume -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -PoolName "MyAnfPool" -Name "MyAnfVolume"
 
@@ -64,11 +64,11 @@ ProvisioningState : Succeeded
 SubnetId          : /subscriptions/subsId/resourceGroups/MyRG/providers/Microsoft.Network/virtualNetworks/MyRG-vnet/subnets/default
 ```
 
-Perintah ini mendapatkan volume bernama MyAnfVolume dari pool "MyAnfPool". 
+Perintah ini mendapatkan volume bernama MyanfVolume dari pool "MyAnfPool". 
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool berisi volume untuk dikembalikan
+Objek pool yang berisi volume yang akan dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

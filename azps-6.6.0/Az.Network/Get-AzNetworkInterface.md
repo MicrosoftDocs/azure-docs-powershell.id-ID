@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterface.md
 ms.openlocfilehash: 48ef90b0325d28556c1a098f858748780cbec26b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140251783"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142269205"
 ---
 # Get-AzNetworkInterface
 
@@ -19,7 +19,7 @@ ms.locfileid: "140251783"
 Mendapatkan antarmuka jaringan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkinterface) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -124,7 +124,7 @@ Primary                     : True
 MacAddress                  :
 ```
 
-Perintah ini akan mendapatkan semua antarmuka jaringan untuk langganan saat ini.
+Perintah ini mendapatkan semua antarmuka jaringan untuk langganan saat ini.
 
 ### Contoh 2: Dapatkan semua antarmuka jaringan dengan status penyediaan tertentu
 ```
@@ -188,7 +188,7 @@ MacAddress                  :
 
 Perintah ini mendapatkan semua antarmuka jaringan dalam grup sumber daya bernama ResourceGroup1 yang memiliki status penyediaan berhasil.
 
-### Contoh 3: Dapatkan antarmuka jaringan menggunakan pemfilteran
+### Contoh 3: Mendapatkan antarmuka jaringan menggunakan pemfilteran
 ```
 PS C:\> Get-AzNetworkInterface -Name test*
 
@@ -253,7 +253,7 @@ Perintah ini mendapatkan semua antarmuka jaringan untuk langganan saat ini yang 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama antarmuka jaringan yang akan didaurkan cmdlet ini.
+Menentukan nama antarmuka jaringan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -308,7 +308,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya asal cmdlet ini mendapatkan antarmuka jaringan.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -335,7 +335,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure antarmuka jaringan.
+Id manajer sumber daya Azure dari antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -376,8 +376,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetName
-Menentukan nama kumpulan skala mesin virtual yang mendapatkan antarmuka jaringan dari cmdlet ini.
+### -VirtualMachineScaleSetName
+Menentukan nama kumpulan skala mesin virtual tempat cmdlet ini mendapatkan antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -404,7 +404,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

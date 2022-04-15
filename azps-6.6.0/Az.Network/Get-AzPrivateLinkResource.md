@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateLinkResource.md
 ms.openlocfilehash: 2f30318214fafefb88bcd335cc9b2782b5871158
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140282389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142268971"
 ---
 # Get-AzPrivateLinkResource
 
 ## SYNOPSIS
-Mendapatkan sumber daya tautan privat.
+Mendapatkan sumber daya tautan pribadi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azprivatelinkresource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azprivatelinkresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzPrivateLinkResource** mengambil semua sumber daya tautan milik Pr
 Get-AzPrivateLinkResource -PrivateLinkResourceId '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/TestResourceGroup/providers/Microsoft.Sql/servers/mySql'
 ```
 
-Contoh ini mencantumkan semua sumber daya tautan pribadi ke server sql bernama mySql.
+Contoh ini mencantumkan semua sumber daya link pribadi nbelong ke sql server bernama mySql.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya tautan pribadi.
+Nama sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Id manajer sumber daya Azure dari sumber daya tautan pribadi.
+Id manajer sumber daya Azure dari sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceType
-Tipe sumber daya tautan pribadi.
+Tipe sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama layanan tautan pribadi.
+Nama layanan tautan privat.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

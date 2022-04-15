@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdncus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnCustomDomain.md
-ms.openlocfilehash: 82ab7d49c3f01c4cabde4cd0b5332bfadc44d04c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 21565d6669e247ce60a310e98cd7d9a8b4106a35
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550469"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142259755"
 ---
 # Get-AzCdnCustomDomain
 
 ## SYNOPSIS
-Mendapatkan domain CDN kustom.
+Mendapatkan domain kustom CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdncustomdomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzCdnCustomDomain [-CustomDomainName <String>] -CdnEndpoint <PSEndpoint>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnCustomDomain** mendapatkan domain kustom Azure Content Delivery Network (CDN) dan pengaturan terkait.
+**Cmdlet Get-AzCdnCustomDomain** mendapatkan domain kustom Azure Content Delivery Network (CDN) dan pengaturan terkaitnya.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ ProvisioningState               : Succeeded
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan CDN titik akhir yang menjadi anggota domain kustom.
+Menentukan objek titik akhir CDN yang menjadi anggota domain kustom.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Menentukan nama titik akhir tempat domain kustom tersebut berada.
+Menentukan nama titik akhir tempat domain kustom berada.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama Profil tempat domain kustom dimiliki.
+Menentukan nama Profil tempat domain kustom berada.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat domain kustom tersebut berada.
+Menentukan nama grup sumber daya tempat domain kustom berada.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
