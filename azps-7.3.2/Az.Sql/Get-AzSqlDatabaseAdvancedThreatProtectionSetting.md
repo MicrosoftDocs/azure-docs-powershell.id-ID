@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: e8e0ef353dc0c044cee68f3db234cc2264d25e56
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c2631066d12e2074ba4b26b14d99db5785599542
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548802"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142367099"
 ---
 # Get-AzSqlDatabaseAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Dapatkan pengaturan perlindungan ancaman tingkat lanjut untuk database.
+Mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseadvancedthreatprotectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Get-AzSqlDatabaseAdvancedThreatProtectionSetting [-ServerName] <String> [-Databa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseAdvancedThreatProtectionSetting** mendapatkan pengaturan perlindungan ancaman tingkat lanjut dari database SQL Azure.
-Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* guna mengidentifikasi database di mana cmdlet ini mendapatkan pengaturan.
+Cmdlet **Get-AzSqlDatabaseAdvancedThreatProtectionSetting** mendapatkan pengaturan perlindungan ancaman tingkat lanjut dari database Azure SQL.
+Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database tempat cmdlet ini mendapatkan pengaturan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan perlindungan ancaman tingkat lanjut untuk database
+### Contoh 1: Mendapatkan pengaturan proteksi ancaman tingkat lanjut untuk database
 ```
 PS C:\>Get-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGroup11" -ServerName "Server01" -DatabaseName "Database01"
 DatabaseName                 : Database01
@@ -46,8 +49,8 @@ ExcludedDetectionTypes       : {}
 RetentionInDays              : 0
 ```
 
-Perintah ini mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk database bernama Database01.
-Database berada di server bernama Server01, yang ditetapkan untuk grup sumber daya ResourceGroup11.
+Perintah ini mendapatkan pengaturan proteksi ancaman tingkat lanjut untuk database bernama Database01.
+Database terletak di server bernama Server01, yang ditetapkan ke grup sumber daya ResourceGroup11.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,4 +160,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[cmdlet Azure SQL Database baru](/powershell/module/az.sql/)
+[cmdlet Azure SQL Database](/powershell/module/az.sql/)

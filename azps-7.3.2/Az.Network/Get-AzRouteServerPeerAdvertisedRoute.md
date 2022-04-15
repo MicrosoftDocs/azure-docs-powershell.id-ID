@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerAdvertisedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerAdvertisedRoute.md
-ms.openlocfilehash: 3c50ff2b459544203c8f80437134630f2822864d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 145dc03177062cc520aaf4cb8a589b4da44f1ed2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392806"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142372229"
 ---
 # Get-AzRouteServerPeerAdvertisedRoute
 
 ## SYNOPSIS
-Daftar rute yang disampaikan oleh rekan server rute tertentu
+Daftar rute yang diiklankan oleh peer server rute tertentu
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azrouteserverpeeradvertisedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRouteServerPeerAdvertisedRoute -InputObject <PSRouteServerPeer> [-AsJob]
 ```
 
 ## DESCRIPTION
-Jika diberi server rute peer baik menurut nama atau menurut objek, menghitung rute yang diiklankan ke rekan tersebut oleh server rute tertentu.
+Mengingat peer server rute baik berdasarkan nama atau objek, menghitung rute yang diiklankan ke peer tersebut oleh server rute tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Get-AzRouteServerPeerAdvertisedRouter -InputObject $routeServerPeer
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerName
-Merutekan nama rekan server
+Nama peer server rute
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteServerName
-Nama Rute Server
+Nama Route Server
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,17 +3,17 @@ external help file: Azs.Compute.Admin-help.xml
 Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: fd09a687a2ae4d89ec171acd53d178db7627acb8c97ce609709424ebde882432
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ffd2667f8c07c5b0594abe38f6cee5d40ce91a49
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417001"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381337"
 ---
 # New-AzsComputeQuota
 
 ## SYNOPSIS
-Buat kuota perhitungan baru yang digunakan untuk membatasi sumber daya perhitungan.
+Buat kuota komputasi baru yang digunakan untuk membatasi sumber daya komputasi.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzsComputeQuota [-Name] <String> [[-AvailabilitySetCount] <Int32>] [[-CoresC
 ```
 
 ## DESCRIPTION
-Buat kuota perhitungan baru.
+Buat kuota komputasi baru.
 
 ## EXAMPLES
 
@@ -34,12 +34,12 @@ Buat kuota perhitungan baru.
 New-AzsComputeQuota -Name testQuota5 -AvailabilitySetCount 1000 -CoresCount 1000 -VmScaleSetCount 1000 -VirtualMachineCount 1000 -StandardManagedDiskAndSnapshotSize 1024 -PremiumManagedDiskAndSnapshotSize 1024
 ```
 
-Buat kuota perhitungan baru.
+Buat kuota komputasi baru.
 
 ## PARAMETERS
 
 ### -AvailabilitySetCount
-Jumlah kumpulan ketersediaan yang diizinkan.
+Jumlah kumpulan ketersediaan yang diperbolehkan.
 
 ```yaml
 Type: Int32
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineCount
-Jumlah mesin virtual yang diizinkan.
+Jumlah mesin virtual yang diperbolehkan.
 
 ```yaml
 Type: Int32
@@ -143,7 +143,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VmscaleSetCount
+### -VmScaleSetCount
 Jumlah kumpulan skala yang diperbolehkan.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

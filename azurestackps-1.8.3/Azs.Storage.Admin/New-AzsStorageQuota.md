@@ -4,16 +4,16 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4cc08220a92dce5a49544cf958db79d7243b9ebb
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580451"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142380545"
 ---
 # New-AzsStorageQuota
 
 ## SYNOPSIS
-Membuat kuota penyimpanan baru.
+Buat kuota penyimpanan baru.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ New-AzsStorageQuota [-Name] <String> [[-CapacityInGb] <Int32>] [[-NumberOfStorag
 ```
 
 ## DESCRIPTION
-Membuat kuota penyimpanan baru.
+Buat kuota penyimpanan baru.
 
 ## EXAMPLES
 
@@ -32,7 +32,7 @@ Membuat kuota penyimpanan baru.
 New-AzsStorageQuota -CapacityInGb 1000 -NumberOfStorageAccounts 100 -Name 'TestCreateStorageQuota'
 ```
 
-Buat kuota penyimpanan baru dengan nilai tertentu.
+Buat kuota penyimpanan baru dengan nilai yang ditentukan.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfStorageAccounts
-Total jumlah akun penyimpanan.
+Jumlah total akun penyimpanan.
 
 ```yaml
 Type: Int32
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

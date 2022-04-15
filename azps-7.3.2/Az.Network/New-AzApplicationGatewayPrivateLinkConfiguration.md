@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 7fbac45523ae83d8282f3c8c10d4adb33e0f63d6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 782f3a9a2bc7cf8a33e6fc8b0abbe4327149722b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007661"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142371887"
 ---
 # New-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi link privat untuk gateway aplikasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,24 +30,24 @@ New-AzApplicationGatewayPrivateLinkConfiguration -Name <String>
 
 ## DESCRIPTION
 Cmdlet **New-AzApplicationGatewayPrivateLinkConfiguration** membuat Konfigurasi PrivateLink untuk gateway aplikasi Azure.
-The private link configuration must be associated to a frontend ip configuration to enable the private link functionality.
-Satu konfigurasi link privat paling ujungnya bisa dikaitkan ke satu frontend ip configuration on application gateway.
+Konfigurasi tautan privat harus dikaitkan ke konfigurasi ip frontend untuk mengaktifkan fungsionalitas tautan privat.
+Satu konfigurasi link privat paling bisa diasosiasikan ke hanya satu konfigurasi ip frontend pada gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Konfigurasi Link Privat dengan satu Konfigurasi Ip
+### Contoh 1: Membuat Konfigurasi Private Link dengan satu Konfigurasi Ip
 ```powershell
 PS C:\> $PrivateLinkConfiguration = New-AzApplicationGatewayPrivateLinkConfiguration -Name "privateLinkConfig01" -IpConfiguration $privateLinkIpConfiguration1
 ```
 
-Perintah ini akan membuat konfigurasi PrivateLink bernama 'privateLinkConfig01' dan menyimpan hasilnya di variabel yang bernama $PrivateLinkConfiguration.
+Perintah ini membuat konfigurasi PrivateLink bernama 'privateLinkConfig01' dan menyimpan hasilnya dalam variabel bernama $PrivateLinkConfiguration.
 
-### Contoh 2: Buat Konfigurasi Tautan Privat dengan beberapa Konfigurasi Ip
+### Contoh 2: Membuat Konfigurasi Private Link dengan beberapa Konfigurasi Ip
 ```powershell
 PS C:\> $PrivateLinkConfiguration = New-AzApplicationGatewayPrivateLinkConfiguration -Name "privateLinkConfig01" -IpConfiguration $privateLinkIpConfiguration1, $privateLinkIpConfiguration2
 ```
 
-Perintah ini membuat konfigurasi PrivateLink bernama 'privateLinkConfig01' dengan dua ipConfigurations dan menyimpan hasilnya di variabel yang bernama $PrivateLinkConfiguration. 
+Perintah ini membuat konfigurasi PrivateLink bernama 'privateLinkConfig01' dengan dua ipConfigurations dan menyimpan hasilnya dalam variabel bernama $PrivateLinkConfiguration. 
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

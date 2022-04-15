@@ -4,11 +4,11 @@ ms.assetid: 9D821623-DEF9-49E4-9C44-10643A92A2E7
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 21f6d881067176292356975962871b2b308e80bd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381679"
 ---
 # Set-AzureWebsite
 
@@ -35,8 +35,8 @@ Set-AzureWebsite [-NumberOfWorkers <Int32>] [-DefaultDocuments <String[]>] [-Net
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Set-AzureWebsite** mengonfigurasi situs web yang berjalan di Azure.
 
@@ -47,14 +47,14 @@ Cmdlet **Set-AzureWebsite** mengonfigurasi situs web yang berjalan di Azure.
 PS C:\> Set-AzureWebsite -HttpLoggingEnabled 1
 ```
 
-Contoh ini memungkinkan pembuatan log HTTP.
+Contoh ini mengaktifkan pembuatan log HTTP.
 
 ### Contoh 2: Mengatur kredensial penyimpanan untuk situs web
 ```
 PS C:\> $settings = New-Object Hashtable$settings["AZURE_STORAGE_ACCOUNT"= myaccountname$settings["AZURE_STORAGE_ACCESS_KEY"] = myaccesskeySet-AzureWebsite -AppSettings $settings myWebsite
 ```
 
-Contoh ini mengatur kredensial penyimpanan di situs web bernama situs websaya dengan variabel lingkungan AZURE_STORAGE_ACCOUNT dan AZURE_STORAGE_ACCESS_KEY.
+Contoh ini mengatur kredensial penyimpanan di situs web bernama situs web sayasitus dengan variabel lingkungan untuk AZURE_STORAGE_ACCOUNT dan AZURE_STORAGE_ACCESS_KEY.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -String Koneksi
+### -ConnectionStrings
 Menentukan string koneksi yang digunakan oleh situs web.
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandlerMappings
-Menentukan pemetaan penanganan yang digunakan oleh situs web.
+Menentukan pemetaan handler yang digunakan oleh situs web.
 
 ```yaml
 Type: HandlerMapping[]
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan **nilai Boolean.**
+Menunjukkan bahwa cmdlet ini mengembalikan nilai **Boolean** .
 
 ```yaml
 Type: SwitchParameter
@@ -282,8 +282,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -383,7 +383,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Use32BitWorkerProcess
+### -Use32BitWorkerProcesss
 Menentukan apakah akan mengaktifkan mode 32-bit.
 
 ```yaml
@@ -414,7 +414,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -424,10 +424,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
 

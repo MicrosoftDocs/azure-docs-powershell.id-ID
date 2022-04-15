@@ -4,11 +4,11 @@ ms.assetid: 5CAF2D29-F4AE-4322-AA4F-61267723B955
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 76be37c4dc08f3aa3d5f0681e28ff957e0313994
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423185"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381877"
 ---
 # Remove-AzureVMImageDataDiskConfig
 
@@ -32,7 +32,7 @@ Remove-AzureVMImageDataDiskConfig [-DiskConfig] <VirtualMachineImageDiskConfigSe
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMImageDataDiskConfig** menghapus konfigurasi disk data dari objek **DiskConfigSet.**
+Cmdlet **Remove-AzureVMImageDataDiskConfig** menghapus konfigurasi disk data dari objek **DiskConfigSet** .
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskConfig
-Menentukan objek konfigurasi disk yang encapsulates disk sistem operasi dan objek disk data.
+Menentukan objek konfigurasi disk yang merangkum disk sistem operasi dan objek disk data.
 
 ```yaml
 Type: VirtualMachineImageDiskConfigSet
@@ -78,16 +78,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan slot tempat drive data terpasang di mesin virtual.
+Menentukan slot tempat drive data dipasang di mesin virtual.
 
 ```yaml
 Type: Int32
@@ -132,13 +132,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
+### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
 
 ## CATATAN
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspacePackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspacePackage.md
-ms.openlocfilehash: 5f9999c8aa36d5909a2c9e01eedf69902e73d507
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ab53734a24c479ea2577a510a9d755bbe6be8d7a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998032"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364255"
 ---
 # Get-AzSynapseWorkspacePackage
 
 ## SYNOPSIS
 Mendapatkan paket ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspacepackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini mendapatkan informasi tentang semua paket ruang kerja di ruang kerj
 PS C:\> Get-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace -Name ContosoWorkspacePackage
 ```
 
-Perintah ini mendapatkan informasi tentang paket ruang kerja bernama ContosoWorkspacePackage di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang paket ruang kerja bernama ContosoWorkspacePackage di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseWorkspacePackage -Name ContosoWorkspacePackage
 ```
 
-Perintah ini mendapatkan informasi tentang paket ruang kerja bernama ContosoWorkspacePackage di ruang kerja yang bernama ContosoWorkspace melalui saluran.
+Perintah ini mendapatkan informasi tentang paket ruang kerja bernama ContosoWorkspacePackage di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

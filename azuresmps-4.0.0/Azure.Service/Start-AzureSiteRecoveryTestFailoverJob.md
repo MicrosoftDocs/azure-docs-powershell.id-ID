@@ -4,16 +4,16 @@ ms.assetid: 9AE41884-C39F-4AEB-8030-96167F98C8DD
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ee6e19e8a19beeea11661b4c925d29e918f3c4e9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422045"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381715"
 ---
 # Start-AzureSiteRecoveryTestFailoverJob
 
 ## SYNOPSIS
-Memulai failover uji untuk entitas perlindungan Pemulihan Situs.
+Memulai failover pengujian untuk entitas perlindungan Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -128,8 +128,8 @@ Start-AzureSiteRecoveryTestFailoverJob [-Network <ASRNetwork>] [-NetworkType <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSiteRecoveryTestFailoverJob** memulai uji failover dari entitas proteksi Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet **Get-AzureRMSiteRecoveryJob.**
+Cmdlet **Start-AzureSiteRecoveryTestFailoverJob** mulai menguji failover entitas perlindungan azure Site Recovery atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet **Get-AzureRMSiteRecoveryJob** .
 
 ## EXAMPLES
 
@@ -150,12 +150,12 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** untuk mendapatkan wadah yang diproteksi, lalu menyimpannya di variabel $ProtectionContainer baru.
+Perintah pertama menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** untuk mendapatkan wadah yang dilindungi, lalu menyimpannya dalam variabel $ProtectionContainer.
 
-Perintah kedua mendapatkan entitas terproteksi yang termasuk dalam wadah terproteksi yang disimpan di $ProtectionContainer menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
-Perintah menyimpan hasil dalam $ProtectionEntity variabel.
+Perintah kedua mendapatkan entitas yang dilindungi yang termasuk dalam wadah terproteksi yang disimpan di $ProtectionContainer menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
+Perintah menyimpan hasil dalam variabel $ProtectionEntity.
 
-Perintah terakhir memulai operasi uji failover untuk entitas terproteksi yang disimpan di $ProtectionEntity dan menentukan arah failover.
+Perintah akhir memulai operasi failover uji untuk entitas terproteksi yang disimpan di $ProtectionEntity dan menentukan arah failover.
 
 ### Contoh 2: Memulai uji failover menggunakan paket pemulihan
 ```
@@ -163,10 +163,10 @@ PS C:\> $RecoveryPlan = Get-AzureSiteRecoveryRecoveryPlan -Name "RecoveryPlan01"
 Start-AzureSiteRecoveryTestFailoverJob -Direction PrimaryToRecovery -RecoveryPlan $RecoveryPlan
 ```
 
-Perintah ini mendapatkan rencana pemulihan bernama RecoveryPlan01 untuk vault Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryRecoveryPlan.**
-Perintah menyimpan paket dalam variabel $RecoveryPlan baru.
+Perintah ini mendapatkan paket pemulihan bernama RecoveryPlan01 untuk brankas Azure Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryRecoveryPlan**.
+Perintah menyimpan rencana dalam variabel $RecoveryPlan.
 
-Perintah kedua memulai operasi uji failover untuk paket pemulihan yang disimpan $RecoveryPlan dan menentukan arah failover.
+Perintah kedua memulai operasi failover uji untuk rencana pemulihan yang disimpan di $RecoveryPlan dan menentukan arah failover.
 
 ## PARAMETERS
 
@@ -204,9 +204,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Network
-Menentukan objek jaringan yang akan digunakan untuk menguji failover.
-Untuk mendapatkan jaringan, gunakan cmdlet **Get-AzureSiteRecoveryNetwork.**
+### -Jaringan
+Menentukan objek jaringan yang akan digunakan untuk uji failover.
+Untuk mendapatkan jaringan, gunakan cmdlet **Get-AzureSiteRecoveryNetwork** .
 
 ```yaml
 Type: ASRNetwork
@@ -233,12 +233,12 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkType
-Menentukan tipe jaringan yang akan digunakan untuk menguji failover.
+Menentukan tipe jaringan yang akan digunakan untuk uji failover.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Tidak ada
+- Tidak
 - Baru
-- Sudah ada
+- Yang Sudah Ada
 
 ```yaml
 Type: String
@@ -253,8 +253,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -269,8 +269,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID dari wadah yang diproteksi.
-Cmdlet ini memulai pekerjaan untuk mesin virtual terlindungi yang termasuk dalam wadah yang ditentukan cmdlet ini.
+Menentukan ID wadah yang diproteksi.
+Cmdlet ini memulai pekerjaan untuk mesin virtual terproteksi milik wadah yang ditentukan cmdlet ini.
 
 ```yaml
 Type: String
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntity
-Menentukan objek entitas proteksi Pemulihan Situs.
+Menentukan objek entitas perlindungan Site Recovery.
 
 ```yaml
 Type: ASRProtectionEntity
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntityId
-Menentukan ID mesin virtual yang diproteksi untuk memulai pekerjaan.
+Menentukan ID mesin virtual yang dilindungi untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan paket pemulihan untuk memulai pekerjaan.
+Menentukan rencana pemulihan untuk memulai pekerjaan.
 
 ```yaml
 Type: ASRRecoveryPlan
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -RpId
-Menentukan ID paket pemulihan yang akan digunakan untuk memulai pekerjaan.
+Menentukan ID rencana pemulihan untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmNetworkId
-Menentukan ID jaringan mesin virtual.
+Menentukan ID jaringan mesin maya.
 
 ```yaml
 Type: String
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

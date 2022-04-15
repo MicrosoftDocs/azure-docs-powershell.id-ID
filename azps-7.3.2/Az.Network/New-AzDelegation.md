@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDelegation.md
-ms.openlocfilehash: 89ee12144d684a3be2d051ee66c9eb1f5ac0e127
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a811444a15e805d1249631d80f4c7825527d6fba
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999822"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142371689"
 ---
 # New-AzDelegation
 
 ## SYNOPSIS
 Membuat delegasi layanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDelegation -Name <String> -ServiceName <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDelegation** membuat delegasi layanan yang bisa ditambahkan ke subnet.
+Cmdlet **New-AzDelegation** membuat delegasi layanan yang dapat ditambahkan ke subnet.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ PS C:\> $subnet.Delegations.Add($delegation)
 PS C:\> Set-AzVirtualNetwork $vnet
 ```
 
-Cmdlet pertama membuat delegasi yang bisa ditambahkan ke subnet, dan menyimpannya dalam variabel $delegation. Cmdlet kedua dan ketiga mengambil subnet untuk didelegasikan. Cmdlet keempat menambahkan delegasi yang dibuat ke subnet yang menarik, dan cmdlet terakhir mengirim konfigurasi yang diperbarui ke server.
+Cmdlet pertama membuat delegasi yang dapat ditambahkan ke subnet, dan menyimpannya dalam variabel $delegation. Cmdlet kedua dan ketiga mengambil subnet untuk didelegasikan. Cmdlet keempat menambahkan delegasi yang dibuat ke subnet minat, dan cmdlet akhir mengirimkan konfigurasi yang diperbarui ke server.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,7 +107,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzDelegation](./Add-AzDelegation.md)
  [Get-AzDelegation](./Get-AzDelegation.md)
- [Remove-AzDelegation](./Remove-AzDelegation.md)
+ [Hapus-AzDelegation](./Remove-AzDelegation.md)
  [Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
  [Get-AzVirtualNetworkSubnetConfig](./Get-AzVirtualNetworkSubnetConfig.md)
  [Set-AzVirtualNetwork](./Set-AzVirtualNetwork.md)

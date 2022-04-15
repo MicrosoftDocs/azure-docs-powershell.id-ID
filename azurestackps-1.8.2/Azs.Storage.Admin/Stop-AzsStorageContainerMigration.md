@@ -3,17 +3,17 @@ external help file: Azs.Storage.Admin-help.xml
 Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 476190ff2ba290ac25040e9e5fee544d96becbedb59a3e1bbc3c85c825081055
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8c9a27b1722c1c7f08d9daeab0205dd20d9ba8b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416942"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381193"
 ---
 # Stop-AzsStorageContainerMigration
 
 ## SYNOPSIS
-Membatalkan pekerjaan migrasi wadah.
+Membatalkan pekerjaan migrasi kontainer.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Stop-AzsStorageContainerMigration [-JobId] <String> [[-ResourceGroupName] <Strin
 ```
 
 ## DESCRIPTION
-Membatalkan pekerjaan migrasi wadah.
+Membatalkan pekerjaan migrasi kontainer.
 
 ## EXAMPLES
 
@@ -32,7 +32,7 @@ Membatalkan pekerjaan migrasi wadah.
 Stop-AzsStorageContainerMigration -FarmName "342fccbe-e8c0-468d-a90e-cfca5fa8877c" -JobId "ac8cde1b-804f-4ace-b39b-5322106703bf"
 ```
 
-Batalkan migrasi wadah.
+Batalkan migrasi kontainer.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -96,8 +96,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

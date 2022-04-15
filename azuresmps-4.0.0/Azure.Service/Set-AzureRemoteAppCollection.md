@@ -4,11 +4,11 @@ ms.assetid: 14B4050D-3597-4760-A152-82617B88078D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9c7704a7718bf142fdaf614efb5e8c90b06422b6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427436"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381618"
 ---
 # Set-AzureRemoteAppCollection
 
@@ -19,7 +19,7 @@ Mengatur properti koleksi RemoteApp.
 
 ## SYNTAX
 
-### DeskripsiSonly (Default)
+### DescriptionOnly (Default)
 ```
 Set-AzureRemoteAppCollection [-CollectionName] <String> -Description <String> [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -31,7 +31,7 @@ Set-AzureRemoteAppCollection [-CollectionName] <String> -Plan <String> [-Profile
  [<CommonParameters>]
 ```
 
-### DomainJoined
+### Domain Bergabung
 ```
 Set-AzureRemoteAppCollection [-CollectionName] <String> -Credential <PSCredential> [-Profile <AzureSMProfile>]
  [<CommonParameters>]
@@ -50,15 +50,15 @@ Set-AzureRemoteAppCollection [-CollectionName] <String> -AclLevel <CollectionAcl
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRemoteAppCollection** mengatur properti kumpulan Azure RemoteApp.
+Cmdlet **Set-AzureRemoteAppCollection** mengatur properti koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -AclLevel
-Menentukan tingkat daftar kontrol akses (ACL, Access Control List) untuk kumpulan.
-Nilai yang dapat diterima untuk parameter ini adalah: Kumpulan dan Aplikasi.
+Menentukan tingkat daftar kontrol akses (ACL) untuk kumpulan.
+Nilai yang dapat diterima untuk parameter ini adalah: Koleksi dan Aplikasi.
 
 ```yaml
 Type: CollectionAclLevel
@@ -87,9 +87,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Menentukan kredensial akun layanan yang memiliki izin untuk bergabung dengan server Azure RemoteApp ke domain Anda.
-Untuk mendapatkan objek **PSCredential,** gunakan cmdlet **Get-Credential.**
+Untuk mendapatkan objek **PSCredential** , gunakan cmdlet **Get-Credential** .
 
 ```yaml
 Type: PSCredential
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomRdpProperty
-Menentukan properti custom Remote Desktop Protocol (RDP) yang bisa digunakan untuk mengonfigurasi pengalihan drive dan pengaturan lain. Lihat [RdP Pengaturan untuk Layanan Desktop Jarak Jauh di Windows Server](https://technet.microsoft.com/library/ff393699(v=ws.10).aspx) untuk `(https://technet.microsoft.com/library/ff393699(v=ws.10).aspx)` detailnya.  
+Menentukan properti Remote Desktop Protocol (RDP) kustom yang dapat digunakan untuk mengonfigurasi pengalihan drive dan pengaturan lainnya. Lihat [Pengaturan RDP untuk Layanan Desktop Jarak Jauh di Server](https://technet.microsoft.com/library/ff393699(v=ws.10).aspx)`(https://technet.microsoft.com/library/ff393699(v=ws.10).aspx)` Windows untuk detailnya.  
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menentukan paket untuk koleksi Azure RemoteApp, yang menentukan batas penggunaan.
+Menentukan rencana untuk kumpulan Azure RemoteApp, yang menentukan batas penggunaan.
 Gunakan **Get-AzureRemoteAppPlan** untuk melihat paket yang tersedia.
 
 ```yaml
@@ -150,8 +150,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRemoteAppCollection](./Get-AzureRemoteAppCollection.md)
 
-[New-AzureRemoteAppCollection](./New-AzureRemoteAppCollection.md)
+[AzureRemoteAppCollection baru](./New-AzureRemoteAppCollection.md)
 
 [Update-AzureRemoteAppCollection](./Update-AzureRemoteAppCollection.md)
 

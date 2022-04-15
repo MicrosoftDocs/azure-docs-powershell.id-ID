@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Remove-AzureRmServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Remove-AzureRmServiceBusNamespace.md
 ms.openlocfilehash: c56637b8470e40e6b46984117a764da248684005
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140852937"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142382522"
 ---
 # Remove-AzureRmServiceBusNamespace
 
@@ -40,7 +40,7 @@ Remove-AzureRmServiceBusNamespace [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmServiceBusNamespace** menghapus ruang nama dari grup sumber daya yang ditentukan.
+Cmdlet **Remove-AzureRmServiceBusSpace** menghapus ruang nama dari grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet **Remove-AzureRmServiceBusNamespace** menghapus ruang nama dari grup sumb
 PS C:\> Remove-AzureRmServiceBusNamespace -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 ```
 
-Menghapus ruang nama Bus Layanan dari `SB-Example1` grup sumber daya yang ditentukan`Default-ServiceBus-WestUS`.
+Menghapus ruang `SB-Example1` nama Bus Layanan dari grup `Default-ServiceBus-WestUS`sumber daya tertentu.
 
 ### Contoh 2.1 - InputObject - Menggunakan variabel:
 ```
@@ -57,7 +57,7 @@ PS C:\> $inputobject = Get-AzureRmServiceBusNamespace <params>
 PS C:\> Remove-AzureRmServiceBusNamespace -InputObject $inputobject
 ```
 
-Menghapus Bus Layanan nama yang disediakan melalui $inputobject.
+Menghapus ruang nama Bus Layanan yang disediakan melalui $inputobject.
 
 ### Contoh 2.2 - InputObject - Menggunakan Piping:
 ```
@@ -72,12 +72,12 @@ PS c:\> $ResourceId = (Get-AzureRmResource -ResourceType Microsoft.ServiceBus/na
 PS C:\> Remove-AzureRmServiceBusNamespace -ResourceId $resourceid
 ```
 
-Menghapus ruang nama Bus Layanan yang disediakan melalui id ARM dalam $resourceid untuk parameter -ResourceId atau melalui pemipaan.
+Menghapus ruang nama Bus Layanan yang disediakan melalui ID ARM di $resourceid untuk parameter -ResourceId atau melalui pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Nama Objek
+Objek Ruang Nama Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Bus Layanan Ruang Nama
+Id Sumber Daya Ruang Nama Bus Layanan
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

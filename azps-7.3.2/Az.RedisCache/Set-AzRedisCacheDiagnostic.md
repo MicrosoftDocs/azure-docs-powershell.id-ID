@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCacheDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCacheDiagnostic.md
-ms.openlocfilehash: 7355686caedf02443f33ddbbba3894ee5f435801
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f76a8c5257ecfaf5af50426f1b000f8c55c89eb8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142369313"
 ---
 # Set-AzRedisCacheDiagnostic
 
 ## SYNOPSIS
-Mengaktifkan diagnostik di Singgahan Azure Redis.
+Mengaktifkan diagnostik di Cache Azure Redis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/set-azrediscachediagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,22 +29,22 @@ Set-AzRedisCacheDiagnostic [-ResourceGroupName <String>] -Name <String> -Storage
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRedisCacheDiagnostic** mengaktifkan diagnostik untuk Singgahan Azure Redis.
+Cmdlet **Set-AzRedisCacheDiagnostic** memungkinkan diagnostik untuk Cache Azure Redis.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan diagnostik
+### Contoh 1: Aktifkan diagnostik
 ```
 PS C:\>Set-AzRedisCacheDiagnostic -ResourceGroupName "ContosoResourceGroup" -Name "PeakCache" -StorageAccountId "/subscriptions/fffff139-aaaa-bbbb-cccc-21f21f35806e/resourcegroups/myresourcegroup/providers/Microsoft.Storage/storageAccounts/mystorageaccount"
 ```
 
-Perintah ini mengaktifkan diagnostik untuk cache Azure Redis.
-Perintah ini akan mengaktifkan diagnostik atau memperbarui akun penyimpanan untuk semua Singgahan Azure Redis di kawasan yang sama untuk langganan tersebut.
+Perintah ini memungkinkan diagnostik untuk cache Azure Redis.
+Perintah ini akan mengaktifkan diagnostik atau memperbarui akun penyimpanan untuk semua Cache Azure Redis di kawasan yang sama untuk langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi cache.
+Menentukan nama grup sumber daya yang berisi singgahan.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -142,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Void
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, redis, cache, web, webapp, website
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 
