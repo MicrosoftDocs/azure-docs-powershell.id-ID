@@ -4,16 +4,16 @@ ms.assetid: E4660D0A-26CB-488C-9A29-3ED94A0DCDA2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e19b9b068742dae3d9da30fa30edd573c2f42749
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426530"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244251"
 ---
 # Save-AzureVhd
 
 ## SYNOPSIS
-Memungkinkan pengunduhan gambar .vhd.
+Mengaktifkan unduhan gambar .vhd.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,19 +26,19 @@ Save-AzureVhd [-Source] <Uri> [-LocalFilePath] <FileInfo> [[-NumberOfThreads] <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Save-AzureVhd** memungkinkan pengunduhan gambar .vhd dari blob tempat gambar disimpan ke file.
-Alur kerja ini memiliki parameter untuk mengonfigurasi proses pengunduhan dengan menentukan jumlah utas belanda yang digunakan atau menimpa file yang sudah ada di jalur file yang ditentukan.
+**Cmdlet Save-AzureVhd** memungkinkan pengunduhan gambar .vhd dari blob tempat gambar disimpan ke file.
+Ini memiliki parameter untuk mengonfigurasi proses pengunduhan dengan menentukan jumlah utas pengunduh yang digunakan atau menimpa file yang sudah ada di jalur file yang ditentukan.
 
 **Save-AzureVhd** tidak melakukan konversi format VHD apa pun dan blob diunduh sebagaimana adanya.
 
 ## EXAMPLES
 
-### Contoh 1: Unduh file VHD
+### Contoh 1: Mengunduh file VHD
 ```
 PS C:\> Save-AzureVhd -Source "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd"
 ```
 
-Perintah ini akan mengunduh file .vhd.
+Perintah ini mengunduh file .vhd.
 
 ### Contoh 2: Unduh file VHD dan timpa file lokal
 ```
@@ -59,21 +59,21 @@ Perintah ini mengunduh file .vhd dan menentukan jumlah utas.
 PS C:\> Save-AzureVhd -Source "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -StorageKey "zNvcH0r5vAGmC5AbwEtpcyWCMyBd3eMDbdaa4ua6kwxq6vTZH3Y+sw=="
 ```
 
-Perintah ini akan mengunduh file .vhd dan menentukan kunci penyimpanan.
+Perintah ini mengunduh file .vhd dan menentukan kunci penyimpanan.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -132,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OverWrite
-Tentukan bahwa cmdlet ini menghapus file yang ditentukan oleh file *LocalFilePath* jika ada.
+### -Timpa
+Menentukan bahwa cmdlet ini menghapus file yang ditentukan oleh file *LocalFilePath* jika ada.
 
 ```yaml
 Type: SwitchParameter
@@ -148,8 +148,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Source
-Menentukan Uniform Resource Identifier (URI) ke blob di `Azure` .
+Menentukan Uniform Resource Identifier (URI) ke blob di `Azure`.
 
 ```yaml
 Type: Uri
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -StorageKey
 Menentukan kunci penyimpanan akun penyimpanan blob.
-Jika tidak tersedia, **Simpan-AzureVhd berusaha** menentukan kunci penyimpanan akun di *SourceUri* dari Azure.
+Jika tidak disediakan, **Save-AzureVhd** akan mencoba menentukan kunci penyimpanan akun di *SourceUri* dari Azure.
 
 ```yaml
 Type: String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

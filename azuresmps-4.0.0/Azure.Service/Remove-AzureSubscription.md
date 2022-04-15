@@ -4,11 +4,11 @@ ms.assetid: ABC303ED-8712-4958-B871-E95357012277
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 76dae8383323e132110ff8e71af446e0d102cd7a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425831"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244386"
 ---
 # Remove-AzureSubscription
 
@@ -32,11 +32,11 @@ Remove-AzureSubscription -SubscriptionId <String> [-Force] [-PassThru] [-Profile
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureSubscription** menghapus langganan Azure dari file data langganan Windows PowerShell tidak dapat menemukannya.
-Cmdlet ini tidak menghapus langganan dari Microsoft Azure, atau mengubah langganan sebenarnya dengan cara apa pun.
+Cmdlet **Remove-AzureSubscription** menghapus langganan Azure dari file data langganan Anda sehingga Windows PowerShell tidak dapat menemukannya.
+Cmdlet ini tidak menghapus langganan dari Microsoft Azure, atau mengubah langganan aktual dengan cara apa pun.
 
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 ## EXAMPLES
 
@@ -49,14 +49,14 @@ Are you sure you want to perform this action?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
 ```
 
-Perintah ini akan menghapus langganan "Uji" dari file data langganan default.
+Perintah ini menghapus langganan "Uji" dari file data langganan default.
 
 ### Contoh 2: Hapus dari file data langganan alternatif
 ```
 C:\PS> Remove-AzureSubscription -SubscriptionName Test -SubscriptionDataFile C:\Subs\MySubscriptions.xml -Force
 ```
 
-Perintah ini akan menghapus langganan Uji dari MySubscriptions.xml file data langganan.
+Perintah ini menghapus Uji langganan dari file data langganan MySubscriptions.xml.
 Perintah menggunakan parameter *Paksa* untuk menyembunyikan perintah konfirmasi.
 
 ### Contoh 3: Menghapus langganan dalam skrip
@@ -64,12 +64,12 @@ Perintah menggunakan parameter *Paksa* untuk menyembunyikan perintah konfirmasi.
 C:\PS> ...if (Remove-AzureSubscription -SubscriptionName Test -PassThru) {...}
 ```
 
-Perintah ini menggunakan **perintah Remove-AzureSubscription** dalam **pernyataan If.**
-Skrip ini menggunakan parameter *PassThru,* yang mengembalikan nilai Boolean, untuk menentukan apakah blok skrip **dalam pernyataan If** dijalankan.
+Perintah ini menggunakan perintah **Hapus-AzureSubscription** dalam pernyataan **If** .
+Ini menggunakan parameter *PassThru* , yang mengembalikan nilai Boolean, untuk menentukan apakah blok skrip dalam pernyataan **If** dijalankan.
 
 ## PARAMETERS
 
-### -Force
+### -Paksa
 Menyembunyikan perintah konfirmasi.
 
 ```yaml
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan $True jika perintah berhasil $False jika gagal.
+Mengembalikan $True jika perintah berhasil dan $False jika gagal.
 Secara default, cmdlet ini tidak mengembalikan output apa pun.
 
 ```yaml
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -173,18 +173,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
-Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menurut nilai.
+### Tidak
+Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak menurut nilai.
 
 ## OUTPUTS
 
-### Tidak Ada atau System.Boolean
-Jika Anda menggunakan parameter *PassThru,* cmdlet ini mengembalikan nilai Boolean.
-Jika tidak, output tidak akan dikembalikan.
+### Tidak ada atau System.Boolean
+Jika Anda menggunakan parameter *PassThru* , cmdlet ini mengembalikan nilai Boolean.
+Jika tidak, tidak mengembalikan output apa pun.
 
 ## CATATAN
 

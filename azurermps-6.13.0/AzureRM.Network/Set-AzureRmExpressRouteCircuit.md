@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmExpressRouteCircuit.md
 ms.openlocfilehash: 8ef7121e057759a6fbdb341d9d6bc137692a36cc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421620"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142137116"
 ---
 # Set-AzureRmExpressRouteCircuit
 
@@ -42,7 +42,7 @@ Set-AzureRmExpressRouteCircuit -ExpressRouteCircuit $ckt
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuit
-Menentukan objek **ExpressRouteCircuit** yang dimodifikasi cmdlet ini.
+Menentukan objek **ExpressRouteCircuit** yang diubah cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,8 +104,8 @@ Parameter: ExpressRouteCircuit (ByValue)
 
 [Get-AzureRmExpressRouteCircuit](./Get-AzureRmExpressRouteCircuit.md)
 
-[Move-AzureRmExpressRouteCircuit](./Move-AzureRmExpressRouteCircuit.md)
+[Pindahkan-AzureRmExpressRouteCircuit](./Move-AzureRmExpressRouteCircuit.md)
 
-[New-AzureRmExpressRouteCircuit](./New-AzureRmExpressRouteCircuit.md)
+[Baru-AzureRmExpressRouteCircuit](./New-AzureRmExpressRouteCircuit.md)
 
-[Remove-AzureRmExpressRouteCircuit](./Remove-AzureRmExpressRouteCircuit.md)
+[Hapus-AzureRmExpressRouteCircuit](./Remove-AzureRmExpressRouteCircuit.md)

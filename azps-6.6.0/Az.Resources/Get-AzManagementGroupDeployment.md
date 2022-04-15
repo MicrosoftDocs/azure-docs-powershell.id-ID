@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeployment.md
 ms.openlocfilehash: 69018c715cfc1183f811fd4e41b94f77c2cf6b78
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140460227"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224649"
 ---
 # Get-AzManagementGroupDeployment
 
 ## SYNOPSIS
-Mendapatkan penyebaran di grup manajemen
+Dapatkan penggunaan di grup manajemen
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeployment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-AzManagementGroupDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureCont
 
 ## DESCRIPTION
 Cmdlet **Get-AzManagementGroupDeployment** mendapatkan penyebaran di grup manajemen.
-Tentukan parameter *Nama* *atau Id* untuk memfilter hasilnya.
+Tentukan parameter *Nama* atau *Id* untuk memfilter hasil.
 Secara default, **Get-AzManagementGroupDeployment** mendapatkan semua penyebaran di grup manajemen.
 
 ## EXAMPLES
@@ -46,18 +46,18 @@ Secara default, **Get-AzManagementGroupDeployment** mendapatkan semua penyebaran
 PS C:\>Get-AzManagementGroupDeployment -ManagementGroupId "myMG"
 ```
 
-Perintah ini akan mendapatkan semua penyebaran di grup manajemen "myMG".
+Perintah ini mendapatkan semua penyebaran di grup manajemen "myMG".
 
-### Contoh 2: Mendapatkan penyebaran menurut nama
+### Contoh 2: Mendapatkan penyebaran berdasarkan nama
 ```
 PS C:\>Get-AzDeployment -ManagementGroupId "myMG" -Name "Deploy01"
 ```
 
 Perintah ini mendapatkan penyebaran "Deploy01" di grup manajemen "myMG".
-Anda bisa menetapkan nama untuk penggunaan saat Anda membuatnya dengan menggunakan cmdlet **New-AzManagementGroupDeployment** .
-Jika Anda tidak memberi nama, cmdlet memberikan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
+Anda dapat menetapkan nama ke penyebaran saat membuatnya menggunakan cmdlet **New-AzManagementGroupDeployment** .
+Jika Anda tidak menetapkan nama, cmdlet menyediakan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
 
-### Contoh 3: Mendapatkan penyebaran menurut ID
+### Contoh 3: Dapatkan penyebaran menurut ID
 ```
 PS C:\>Get-AzDeployment -Id "/providers/Microsoft.Management/managementGroups/myMG/providers/Microsoft.Resources/deployments/Deploy01"
 ```
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
+Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
 contoh: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,11 +143,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

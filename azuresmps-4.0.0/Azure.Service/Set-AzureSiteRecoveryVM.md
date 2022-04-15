@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: 30D56D40-2EA0-48D1-846A-AFB4A987E08F
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 21726f366a954955f9ddefbebe084b2e1779510ca50ef581ec63f2cdcd5fe5f7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 79c9000ea32f580d64197efd507d923d896952ee
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417705"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244017"
 ---
 # Set-AzureSiteRecoveryVM
 
 ## SYNOPSIS
-Mengatur opsi sisi pemulihan untuk entitas perlindungan Pemulihan Situs.
+Mengatur opsi sisi pemulihan untuk entitas perlindungan Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,11 +25,11 @@ Set-AzureSiteRecoveryVM -VirtualMachine <ASRVirtualMachine> [-Name <String>] [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureSiteRecoveryVM** mengatur opsi proteksi sisi pemulihan, seperti ukuran mesin virtual pemulihan dan jaringan mesin virtual pemulihan, untuk entitas proteksi Pemulihan Situs Azure.
+Cmdlet **Set-AzureSiteRecoveryVM** mengatur opsi proteksi sisi pemulihan, seperti ukuran mesin virtual pemulihan dan jaringan mesin virtual pemulihan, untuk entitas perlindungan Azure Site Recovery.
 
 ## EXAMPLES
 
-### Contoh 1: Perbolehkan pembaruan pada komputer virtual yang diproteksi
+### Contoh 1: Izinkan pembaruan pada mesin virtual yang dilindungi
 ```
 PS C:\> $ProtectionContainer = Get-AzureSiteRecoveryProtectionContainer
 PS C:\> $VirtualMachines = Get-AzureSiteRecoveryVM -ProtectionContainer $ProtectionContainer 
@@ -46,11 +46,11 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** untuk mendapatkan wadah yang diproteksi, lalu menyimpannya di variabel $ProtectionContainer diproteksi.
+Perintah pertama menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** untuk mendapatkan wadah yang dilindungi, lalu menyimpannya dalam variabel $ProtectionContainer.
 
-Perintah kedua mendapatkan mesin virtual di $ProtectionContainer, dengan menggunakan cmdlet **Get-AzureSiteRecoveryVM,** lalu menyimpannya dalam variabel $VitrualMachines baru.
+Perintah kedua mendapatkan mesin virtual dalam $ProtectionContainer, dengan menggunakan cmdlet **Get-AzureSiteRecoveryVM** , lalu menyimpannya dalam variabel $VitrualMachines.
 
-Perintah terakhir memungkinkan pembaruan untuk mesin virtual pertama di larik $VitrualMachines, bernama NewVirtualMachine05.
+Perintah terakhir memungkinkan pembaruan untuk mesin virtual pertama dalam array $VitrualMachines, bernama NewVirtualMachine05.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryNic
-Menentukan kartu adaptor jaringan utama.
+Menentukan kartu adapter jaringan utama.
 
 ```yaml
 Type: String
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachine
-Menentukan objek mesin virtual Pemulihan Situs.
+Menentukan objek mesin virtual Site Recovery.
 
 ```yaml
 Type: ASRVirtualMachine
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

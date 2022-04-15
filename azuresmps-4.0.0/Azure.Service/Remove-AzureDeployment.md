@@ -4,11 +4,11 @@ ms.assetid: D6D54096-670D-43E4-93EB-24C8FBA199A4
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 08beb113cb4a5a805a64acde330c033a485fac32
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423194"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244611"
 ---
 # Remove-AzureDeployment
 
@@ -28,7 +28,7 @@ Remove-AzureDeployment [-ServiceName] <String> [-Slot] <String> [-DeleteVHD] [-F
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureDeployment** menghapus penyebaran layanan awan Azure.
+Cmdlet **Remove-AzureDeployment** menghapus penyebaran layanan cloud Azure.
 Untuk menghapus penyebaran, tangguhkan terlebih dahulu.
 
 ## EXAMPLES
@@ -39,15 +39,15 @@ PS C:\> Remove-AzureDeployment -ServiceName "ContosoService"
 ```
 
 Perintah ini menghapus penyebaran layanan Azure bernama ContosoService.
-Karena perintah ini tidak menentukan slot, perintah ini akan menghapus layanan dari lingkungan produksi.
+Karena perintah ini tidak menentukan slot, perintah ini menghapus layanan dari lingkungan produksi.
 
-### Contoh 2: Menghapus hard disk virtual dan penyebaran
+### Contoh 2: Menghapus penyebaran dan hard disk virtual
 ```
 PS C:\> Remove-AzureDeployment -ServiceName "ContosoService" -DeleteVHD
 ```
 
 Perintah ini menghapus penyebaran layanan bernama ContosoService dari lingkungan produksi.
-Perintah juga menghapus hard disk virtual yang mendasarinya.
+Perintah ini juga menghapus hard disk virtual yang mendasar.
 
 ## PARAMETERS
 
@@ -66,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -82,16 +82,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -121,8 +121,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan di mana cmdlet ini menghapus penyebaran.
+Menentukan nama layanan yang cmdletnya menghapus penyebaran.
 
 ```yaml
 Type: String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan penyebaran tempat cmdlet ini menghapus penyebaran.
-Nilai yang valid adalah: Rusa dan Produksi.
+Nilai yang valid adalah: Pementasan dan Produksi.
 Nilai defaultnya adalah Produksi.
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -185,9 +185,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDeploymentEvent](./Get-AzureDeploymentEvent.md)
 
-[Move-AzureDeployment](./Move-AzureDeployment.md)
+[Pindahkan-AzureDeployment](./Move-AzureDeployment.md)
 
-[New-AzureDeployment](./New-AzureDeployment.md)
+[AzureDeployment baru](./New-AzureDeployment.md)
 
 [Set-AzureDeployment](./Set-AzureDeployment.md)
 

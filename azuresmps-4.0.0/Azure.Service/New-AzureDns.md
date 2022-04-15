@@ -4,16 +4,16 @@ ms.assetid: 1085388B-0855-4E29-9043-3FE2C638F58D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c596ba93034ecbc50da4c9f38c9aaa16f3cf45bb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422902"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245354"
 ---
 # New-AzureDns
 
 ## SYNOPSIS
-Membuat objek Pengaturan DNS Azure.
+Membuat objek pengaturan DNS Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,8 +25,8 @@ New-AzureDns [-Name] <String> [-IPAddress] <String> [-InformationAction <ActionP
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureDns** membuat objek pengaturan DNS Azure.
-Anda dapat menggunakan objek pengaturan DNS saat membuat mesin virtual menggunakan cmdlet **New-AzureVM.**
+Cmdlet **AzureDns Baru** membuat objek pengaturan DNS Azure.
+Anda dapat menggunakan objek pengaturan DNS saat membuat mesin virtual menggunakan cmdlet **New-AzureVM** .
 
 ## EXAMPLES
 
@@ -35,23 +35,23 @@ Anda dapat menggunakan objek pengaturan DNS saat membuat mesin virtual menggunak
 PS C:\> $Dns = New-AzureDns -Name "Dns01" -IPAddress "10.1.2.4"
 ```
 
-Perintah ini akan membuat objek pengaturan DNS Azure.
-Server DNS memiliki alamat tertentu dan nama dns01 yang mudah bersahabat.
-Perintah menyimpan objek dalam variabel $Dns digunakan oleh cmdlet **New-AzureVM.**
+Perintah ini membuat objek pengaturan DNS Azure.
+Server DNS memiliki alamat yang ditentukan dan nama dns01 yang mudah dikenali.
+Perintah menyimpan objek dalam variabel $Dns untuk digunakan oleh cmdlet **New-AzureVM** .
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk server DNS.
-Nama ini bukanlah nama domain yang sepenuhnya memenuhi syarat.
+Menentukan nama yang mudah dikenali untuk server DNS.
+Nama ini belum tentu nama domain yang sepenuhnya memenuhi syarat.
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,9 +126,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDns](./Get-AzureDns.md)
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[Remove-AzureDns](./Remove-AzureDns.md)
+[Hapus AzureDns](./Remove-AzureDns.md)
 
 [Set-AzureDns](./Set-AzureDns.md)
 

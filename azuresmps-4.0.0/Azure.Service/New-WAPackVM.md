@@ -4,11 +4,11 @@ ms.assetid: AA7BD103-5C91-4E3B-9E46-2CAEDA5BA615
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0104aed9567bef851c8fa1c770f6798dddf58a5c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424115"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245220"
 ---
 # New-WAPackVM
 
@@ -25,7 +25,7 @@ New-WAPackVM -Name <String> -Template <VMTemplate> -VMCredential <PSCredential> 
  [-ProductKey <String>] [-Windows] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### CreateLinuxvMFromTemplate
+### CreateLinuxVMFromTemplate
 ```
 New-WAPackVM -Name <String> -Template <VMTemplate> -VMCredential <PSCredential> [-VNet <VMNetwork>] [-Linux]
  [-AdministratorSSHKey <String>] [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -38,41 +38,41 @@ New-WAPackVM -Name <String> [-VNet <VMNetwork>] -OSDisk <VirtualHardDisk> -VMSiz
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell ini.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketikkan `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **New-WAPackvM** membuat mesin virtual.
+Cmdlet **New-WAPackVM** menciptakan mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat mesin virtual untuk Windows sistem operasi menggunakan templat
+### Contoh 1: Membuat mesin virtual untuk sistem operasi Windows menggunakan templat
 ```
 PS C:\> $Credentials = Get-Credential PS C:\> $Template = Get-WAPackVMTemplate -Name "ContosoTemplate04"PS C:\> New-WAPackVM -Name "ContosoV023" -Template $Template -VMCredential $Credentials -Windows
 ```
 
-Perintah pertama membuat objek **PSCredential,** lalu menyimpannya dalam $Credentials variabel.
-Cmdlet meminta akun dan kata sandi Anda.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Perintah pertama membuat objek **PSCredential** , lalu menyimpannya dalam variabel $Credentials.
+Cmdlet meminta anda untuk akun dan kata sandi.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
-Perintah kedua mendapatkan templat mesin virtual bernama ContosoTemplate04 dengan menggunakan cmdlet **Get-WAPackVMTemplate,** lalu menyimpannya dalam variabel $Template baru.
+Perintah kedua mendapatkan templat mesin virtual bernama ContosoTemplate04 dengan menggunakan cmdlet **Get-WAPackVMTemplate** , lalu menyimpannya dalam variabel $Template.
 
-Perintah terakhir membuat mesin virtual bernama ContosoV023, berdasarkan templat yang disimpan di variabel $Template disimpan.
-Perintah menentukan parameter *Windows,* dan, oleh karena itu, mesin virtual harus menjalankan versi sistem Windows operasi.
+Perintah akhir membuat mesin virtual bernama ContosoV023, berdasarkan templat yang disimpan dalam variabel $Template.
+Perintah menentukan parameter *Windows*, dan oleh karena itu, mesin virtual harus menjalankan versi sistem operasi Windows.
 
-### Contoh 2: Buat mesin virtual untuk sistem operasi Linux menggunakan templat
+### Contoh 2: Membuat mesin virtual untuk sistem operasi Linux dengan menggunakan templat
 ```
 PS C:\> $Credentials = Get-Credential
 PS C:\> $Template = Get-WAPackVMTemplate -Name "ContosoTemplate19"
 PS C:\> New-WAPackVM -Linux -Name "ContosoV028" -Template $Template -VMCredential $Credentials
 ```
 
-Perintah pertama membuat objek **PSCredential,** lalu menyimpannya dalam $Credentials variabel.
+Perintah pertama membuat objek **PSCredential** , lalu menyimpannya dalam variabel $Credentials.
 
-Perintah kedua mendapatkan templat mesin virtual bernama ContosoTemplate19 dengan menggunakan cmdlet **Get-WAPackVMTemplate,** lalu menyimpannya dalam variabel $Template baru.
+Perintah kedua mendapatkan templat mesin virtual bernama ContosoTemplate19 dengan menggunakan cmdlet **Get-WAPackVMTemplate** , lalu menyimpannya dalam variabel $Template.
 
-Perintah terakhir membuat mesin virtual bernama ContosoV028, berdasarkan templat yang disimpan di $Template variabel.
-Perintah menentukan parameter *Linux,* dan oleh karena itu, mesin virtual harus menjalankan versi sistem operasi Linux.
+Perintah akhir membuat mesin virtual bernama ContosoV028, berdasarkan templat yang disimpan dalam variabel $Template.
+Perintah menentukan parameter *Linux* , dan, oleh karena itu, mesin virtual harus menjalankan versi sistem operasi Linux.
 
 ### Contoh 3: Membuat mesin virtual dari disk sistem operasi dan profil ukuran
 ```
@@ -81,16 +81,16 @@ PS C:\> $SizeProfile = Get-WAPackVMSizeProfile -Name "MediumSizeVM"
 PS C:\> New-WAPackVM -Name "ContosoV073" -OSDisk $OSDisk -VMSizeProfile $SizeProfile
 ```
 
-Perintah pertama mendapatkan disk sistem operasi bernama ContosoDiskOS dengan menggunakan cmdlet **Get-WAPackVMOSDisk,** lalu menyimpannya di $OSDisk lokal.
+Perintah pertama mendapatkan disk sistem operasi bernama ContosoDiskOS dengan menggunakan cmdlet **Get-WAPackVMOSDisk** , lalu menyimpannya dalam variabel $OSDisk.
 
-Perintah kedua mendapatkan profil ukuran bernama MediumSizeVM dengan menggunakan cmdlet **Get-WAPackVMSizeProfile,** lalu menyimpannya dalam variabel $SizeProfile baru.
+Perintah kedua mendapatkan profil ukuran bernama MediumSizeVM menggunakan cmdlet **Get-WAPackVMSizeProfile** , lalu menyimpannya dalam variabel $SizeProfile.
 
-Perintah terakhir membuat mesin virtual bernama ContosoV073 dari disk sistem operasi yang disimpan di $OSDisk dan profil ukuran yang disimpan di $SizeProfile.
+Perintah akhir membuat mesin virtual bernama ContosoV073 dari disk sistem operasi yang disimpan di $OSDisk dan profil ukuran yang disimpan di $SizeProfile.
 
 ## PARAMETERS
 
 ### -AdministratorSSHKey
-Menentukan kunci Secure Shell (SHELL) untuk akun Administrator.
+Menentukan kunci Secure Shell (SSH) untuk akun Administrator.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk mesin virtual.
+Menentukan nama untuk mesin maya.
 
 ```yaml
 Type: String
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -OSDisk
-Menentukan disk sistem operasi sebagai objek **Virtual DriveDisk.**
-Untuk mendapatkan disk sistem operasi, gunakan cmdlet **Get-WAPackVMOSDisk.**
+Menentukan disk sistem operasi sebagai objek **VirtualHardDisk** .
+Untuk mendapatkan disk sistem operasi, gunakan cmdlet **Get-WAPackVMOSDisk** .
 
 ```yaml
 Type: VirtualHardDisk
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ### -ProductKey
 Menentukan kunci produk.
 Kunci produk adalah angka 25 digit yang mengidentifikasi lisensi produk.
-Gunakan kunci produk untuk sistem operasi yang Anda rencanakan untuk diinstal di mesin virtual atau host.
+Gunakan kunci produk untuk sistem operasi yang anda rencanakan untuk diinstal di mesin virtual atau host.
 
 ```yaml
 Type: String
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -183,7 +183,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Template
+### -Templat
 Menentukan templat.
 Cmdlet membuat mesin virtual berdasarkan templat yang Anda tentukan.
 Untuk mendapatkan objek templat, gunakan cmdlet Get-WAPackVMTemplate.
@@ -202,8 +202,8 @@ Accept wildcard characters: False
 
 ### -VMCredential
 Menentukan kredensial untuk akun Administrator lokal.
-Untuk mendapatkan objek **PSCredential,** gunakan cmdlet **Get-Credential.**
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk mendapatkan objek **PSCredential** , gunakan cmdlet **Get-Credential** .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 
 ```yaml
 Type: PSCredential
@@ -218,8 +218,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMSizeProfile
-Menentukan profil ukuran untuk komputer virtual sebagai objek **HardwareProfile.**
-Untuk mendapatkan profil ukuran, gunakan cmdlet **Get-WAPackVMSizeProfile.**
+Menentukan profil ukuran untuk mesin virtual sebagai objek **HardwareProfile** .
+Untuk mendapatkan profil ukuran, gunakan cmdlet **Get-WAPackVMSizeProfile** .
 
 ```yaml
 Type: HardwareProfile
@@ -235,8 +235,8 @@ Accept wildcard characters: False
 
 ### -VNet
 Menentukan jaringan virtual.
-Cmdlet menyambungkan mesin virtual ke jaringan virtual yang Anda tentukan.
-Untuk mendapatkan jaringan virtual, gunakan cmdlet **Get-WAPackVNet.**
+Cmdlet menghubungkan mesin virtual ke jaringan virtual yang Anda tentukan.
+Untuk mendapatkan jaringan virtual, gunakan cmdlet **Get-WAPackVNet** .
 
 ```yaml
 Type: VMNetwork
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa cmdlet membuat mesin virtual untuk menjalankan sistem Windows operasi.
+Menunjukkan bahwa cmdlet membuat mesin virtual untuk menjalankan sistem operasi Windows.
 
 ```yaml
 Type: SwitchParameter
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -276,26 +276,26 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvm](./Get-WAPackVM.md)
+[Get-WAPackVM](./Get-WAPackVM.md)
 
-[Remove-WAPackvm](./Remove-WAPackVM.md)
+[Hapus-WAPackVM](./Remove-WAPackVM.md)
 
-[Restart-WAPackvm](./Restart-WAPackVM.md)
+[Mulai ulang-WAPackVM](./Restart-WAPackVM.md)
 
-[Resume-WAPackvm](./Resume-WAPackVM.md)
+[Resume-WAPackVM](./Resume-WAPackVM.md)
 
-[Set-WAPackvm](./Set-WAPackVM.md)
+[Set-WAPackVM](./Set-WAPackVM.md)
 
-[Start-WAPackvm](./Start-WAPackVM.md)
+[Start-WAPackVM](./Start-WAPackVM.md)
 
-[Stop-WAPackvm](./Stop-WAPackVM.md)
+[Stop-WAPackVM](./Stop-WAPackVM.md)
 
-[Suspend-WAPackvm](./Suspend-WAPackVM.md)
+[Suspensi-WAPackVM](./Suspend-WAPackVM.md)
 
-[Get-WAPackvMSizeProfile](./Get-WAPackVMSizeProfile.md)
+[Get-WAPackVMSizeProfile](./Get-WAPackVMSizeProfile.md)
 
-[Get-WAPackvMTemplate](./Get-WAPackVMTemplate.md)
+[Get-WAPackVMTemplate](./Get-WAPackVMTemplate.md)
 
-[Get-WAPackvMOSDisk](./Get-WAPackVMOSDisk.md)
+[Get-WAPackVMOSDisk](./Get-WAPackVMOSDisk.md)
 
 

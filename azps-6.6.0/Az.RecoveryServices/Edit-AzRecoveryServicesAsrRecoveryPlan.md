@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Edit-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Edit-AzRecoveryServicesAsrRecoveryPlan.md
 ms.openlocfilehash: 26aa619c16ef534dc590a0f449318582c832fe7e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140481621"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225261"
 ---
 # Edit-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
-Mengedit paket Pemulihan Situs.
+Mengedit paket Site Recovery.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/edit-azrecoveryservicesasrrecoveryplan) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/edit-azrecoveryservicesasrrecoveryplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Edit-AzRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> [-AppendGr
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveGroup
+### Hapus Grup
 ```
 Edit-AzRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> -RemoveGroup <ASRRecoveryPlanGroup>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -49,7 +49,7 @@ Edit-AzRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> -Group <AS
 ```
 
 ## DESCRIPTION
-Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Pemulihan Situs Azure.
+Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Site Recovery Azure.
 
 ## EXAMPLES
 
@@ -58,11 +58,11 @@ Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Pemulihan Situs
 PS C:\> $RP = Edit-AzRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP -AppendGroup
 ```
 
-Menambahkan grup ke paket Pemulihan Situs Azure yang sudah ada dan mengembalikan paket pemulihan dalam memori yang diperbarui. 
+Menambahkan grup ke paket Site Recovery Azure yang sudah ada dan mengembalikan paket pemulihan dalam memori yang diperbarui. 
 
 ### Contoh 2
 
-Mengedit paket Pemulihan Situs. (otomatisgenerated)
+Mengedit paket Site Recovery. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Edit-AzRecoveryServicesAsrRecoveryPlan -AddProtectedItem <ASRReplicationProtectedItem[]> -Group <ASRRecoveryPlanGroup> -InputObject $RP
@@ -71,7 +71,7 @@ Edit-AzRecoveryServicesAsrRecoveryPlan -AddProtectedItem <ASRReplicationProtecte
 ## PARAMETERS
 
 ### -AddProtectedItem
-Daftar item replikasi ASR yang diproteksi untuk ditambahkan ke grup rencana pemulihan dalam objek rencana pemulihan.
+Daftar item yang dilindungi replikasi ASR untuk ditambahkan ke grup rencana pemulihan dalam objek rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppendGroup
-Alihkan parameter untuk menambahkan grup rencana pemulihan ke objek paket pemulihan.
+Alihkan parameter untuk menambahkan grup paket pemulihan ke objek rencana pemulihan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Grup
-Menentukan grup paket pemulihan.
+Menentukan grup rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlanGroup
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek rencana pemulihan ASR yang akan diedit (Dalam operasi memori. Untuk memperbarui paket pemulihan, jalankan Update-AzASRRecoveryPlan dengan objek rencana pemulihan yang diedit.)
+Objek rencana pemulihan ASR yang akan diedit (Dalam operasi memori. Untuk memperbarui rencana pemulihan berjalan Update-AzASRRecoveryPlan dengan objek rencana pemulihan yang diedit.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveProtectedItem
-Daftar item replikasi ASR yang diproteksi akan dihapus dari grup rencana pemulihan dalam objek rencana pemulihan.
+Daftar item yang dilindungi replikasi ASR untuk dihapus dari grup rencana pemulihan dalam objek rencana pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

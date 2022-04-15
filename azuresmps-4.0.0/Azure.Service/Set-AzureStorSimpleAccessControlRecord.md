@@ -4,16 +4,16 @@ ms.assetid: 71CFCA9D-198E-481A-BB85-159477F25322
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 39fd44c3a57d704402eebdcc3e4ce35a28519d3a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423188"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243820"
 ---
 # Set-AzureStorSimpleAccessControlRecord
 
 ## SYNOPSIS
-Memperbarui IQN dari catatan kontrol akses.
+Memperbarui IQN catatan kontrol akses.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,11 +25,11 @@ Set-AzureStorSimpleAccessControlRecord -ACRName <String> -IQNInitiatorName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorSimpleAccessControlRecord** memperbarui nama yang memenuhi syarat iSCSI (IQN) dari catatan kontrol akses yang sudah ada.
+Cmdlet **Set-AzureStorSimpleAccessControlRecord** memperbarui nama iSCSI yang memenuhi syarat (IQN) dari catatan kontrol akses yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui rekaman kontrol akses
+### Contoh 1: Memperbarui catatan kontrol akses
 ```
 PS C:\>Set-AzureStorSimpleAccessControlRecord -ACRName "Acr10" -IQNInitiatorName "IqnUpdated" -WaitForComplete
 VERBOSE: ClientRequestId: e4766335-f302-40e0-93bf-fad7aa488ae6_PS
@@ -55,13 +55,13 @@ OperationInProgress : None
 VolumeCount         : 0
 ```
 
-Perintah ini memperbarui catatan kontrol akses yang bernama Acr10 untuk inisiator iSCSI bernama IqnUpdated.
-Perintah ini menentukan parameter *WaitForComplete,* dan oleh karena itu, perintah akan menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo.**
+Perintah ini memperbarui catatan kontrol akses bernama Acr10 untuk inisiator iSCSI bernama IqnUpdated.
+Perintah ini menentukan parameter *WaitForComplete* , dan oleh karena itu, perintah menunggu hingga operasi selesai, lalu mengembalikan objek **TaskStatusInfo** .
 
 ## PARAMETERS
 
 ### -ACRName
-Menentukan nama rekaman kontrol akses untuk diubah.
+Menentukan nama catatan kontrol akses untuk diubah.
 
 ```yaml
 Type: String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -IQNInitiatorName
-Menentukan IQN dari inisiator iSCSI yang menyediakan akses untuk volume cmdlet ini.
+Menentukan IQN inisiator iSCSI tempat cmdlet ini menyediakan akses untuk volume.
 
 ```yaml
 Type: String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -136,17 +136,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 
@@ -154,8 +154,8 @@ Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek Ta
 
 [Get-AzureStorSimpleAccessControlRecord](./Get-AzureStorSimpleAccessControlRecord.md)
 
-[New-AzureStorSimpleAccessControlRecord](./New-AzureStorSimpleAccessControlRecord.md)
+[Baru-AzureStorSimpleAccessControlRecord](./New-AzureStorSimpleAccessControlRecord.md)
 
-[Remove-AzureStorSimpleAccessControlRecord](./Remove-AzureStorSimpleAccessControlRecord.md)
+[Hapus-AzureStorSimpleAccessControlRecord](./Remove-AzureStorSimpleAccessControlRecord.md)
 
 

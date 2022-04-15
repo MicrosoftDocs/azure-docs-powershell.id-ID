@@ -4,16 +4,16 @@ ms.assetid: 437889D1-F24F-4BBE-8C56-7C3E48CEA517
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 22dce62d40bf06efebf3e407130e0f1f30ce3e73
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422445"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243737"
 ---
 # Set-AzureVMSize
 
 ## SYNOPSIS
-Mengatur ukuran komputer virtual Azure.
+Mengatur ukuran mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,16 +25,16 @@ Set-AzureVMSize [-InstanceSize] <String> -VM <IPersistentVM> [-Profile <AzureSMP
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMSize** memperbarui ukuran komputer virtual.
-Alat ini memiliki dua parameter: *InstanceSize,* yang merupakan ukuran baru mesin virtual, dan *VM,* yaitu objek mesin virtual yang diambil menggunakan cmdlet **Get-AzureVM.**
-Hasil **Set-AzureVMSize** dapat disambungkan ke cmdlet **Update-AzureVM** atau disimpan dalam variabel untuk penggunaan selanjutnya.
-Tidak ada perubahan aktual yang **dilakukan hingga Update-AzureVM** dijalankan.
+Cmdlet **Set-AzureVMSize memperbarui** ukuran mesin virtual.
+Ini memiliki dua parameter: *InstanceSize*, yang merupakan ukuran baru mesin virtual, dan *VM*, yang merupakan objek mesin virtual yang diambil dengan menggunakan cmdlet **Get-AzureVM** .
+Hasil **Dari Set-AzureVMSize dapat disalurkan** ke cmdlet **Update-AzureVM** atau disimpan dalam variabel untuk digunakan nanti.
+Tidak ada perubahan aktual yang dilakukan hingga **Pembaruan-AzureVM** dijalankan.
 
-Catatan: Cmdlet ini akan meminta mesin virtual untuk penyediaan ulang dan mungkin akan mendapatkan alamat IP baru.
+Catatan: Cmdlet ini akan mengharuskan mesin virtual untuk disediakan ulang dan mungkin mendapatkan alamat IP baru.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur ukuran komputer virtual
+### Contoh 1: Mengatur ukuran mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "MySvc1" -Name "MyVM3" | Set-AzureVMSize "Small" | Update-AzureVM
 ```
@@ -44,16 +44,16 @@ Perintah ini memperbarui mesin virtual untuk ukuran "Kecil".
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -82,12 +82,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InstanceSize
+### -Instancesize
 Menentukan ukuran mesin virtual.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
---Extrasmall --Small --Medium --Large --ExtraLarge --A5 --A6 --A7
+--Extrasmall --small --medium --large --extralarge --A5 --A6 --A7
 
 ```yaml
 Type: String
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual persisten yang telah ditetapkan cmdlet ini ukurannya.
+Menentukan objek mesin virtual persisten yang cmdlet ini atur ukurannya.
 
 ```yaml
 Type: IPersistentVM
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -145,6 +145,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

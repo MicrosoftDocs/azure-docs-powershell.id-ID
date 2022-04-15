@@ -4,16 +4,16 @@ ms.assetid: 9A1CE31E-0158-441E-BC2D-B5D21C9D9421
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4d86a9b50b787a8db233f6b002540f6b88e9b735
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426523"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244172"
 ---
 # Save-AzureVMImage
 
 ## SYNOPSIS
-Mengambil dan menyimpan gambar mesin virtual Azure yang dihentikan.
+Merekam dan menyimpan gambar mesin virtual Azure yang dihentikan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,23 +26,23 @@ Save-AzureVMImage [-ServiceName] <String> [-Name] <String> [-ImageName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Save-AzureVMImage** merekam dan menyimpan gambar mesin virtual Azure yang telah dihentikan.
-Untuk Windows mesin virtual, jalankan alat Sysprep untuk menyiapkan gambar sebelum diambil.
-Setelah gambar diambil, mesin virtual dihapus.
+Cmdlet **Save-AzureVMImage** mengambil gambar dan menyimpan gambar mesin virtual Azure yang dihentikan.
+Untuk mesin virtual Windows, jalankan alat Sysprep untuk menyiapkan gambar sebelum diambil.
+Setelah gambar diambil, mesin virtual akan dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Simpan mesin virtual yang sudah ada, lalu hapus dari penyebaran
+### Contoh 1: Simpan mesin virtual yang sudah ada lalu hapus dari penyebaran
 ```
 PS C:\> Save-AzureVMImage -ServiceName "MyService" -Name "MyVM" -NewImageName "MyBaseImage" -NewImageLabel "MyBaseVM"
 ```
 
-Perintah ini mengambil gambar mesin virtual yang sudah ada dan menghapusnya dari penyebaran.
+Perintah ini menangkap mesin virtual yang sudah ada dan menghapusnya dari penyebaran.
 
 ## PARAMETERS
 
 ### -ImageLabel
-Menentukan label gambar mesin virtual.
+Menentukan label citra mesin virtual.
 
 ```yaml
 Type: String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageName
-Menentukan nama gambar mesin virtual.
+Menentukan nama citra mesin virtual.
 
 ```yaml
 Type: String
@@ -72,16 +72,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama mesin virtual sumber.
+Menentukan nama mesin maya sumber.
 
 ```yaml
 Type: String
@@ -126,10 +126,10 @@ Accept wildcard characters: False
 ```
 
 ### -OSState
-Menentukan status sistem operasi untuk gambar mesin virtual.
+Menentukan status sistem operasi untuk citra mesin virtual.
 Gunakan parameter ini jika Anda ingin mengambil gambar mesin virtual ke Azure.
 
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - Generalized
 - Khusus
@@ -147,8 +147,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,8 +192,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVMImage](./Get-AzureVMImage.md)
 
-[Remove-AzureVMImage](./Remove-AzureVMImage.md)
+[Hapus-AzureVMImage](./Remove-AzureVMImage.md)
 
-[Update-AzureVMImage](./Update-AzureVMImage.md)
+[Pembaruan-AzureVMImage](./Update-AzureVMImage.md)
 
 

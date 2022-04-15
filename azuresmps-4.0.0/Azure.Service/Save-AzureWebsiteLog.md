@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 4696BB05-F507-4FFB-8D96-6BAA2EBB0F0A
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 0fd65685009d69e8af8f9bee8fa5f3fe725f2e4f07df38abe50c88b93c23b5f7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fa6c418e6bdb4ca9eefd314271a92aad3d74408c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417718"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142244145"
 ---
 # Save-AzureWebsiteLog
 
@@ -25,19 +25,19 @@ Save-AzureWebsiteLog [-Output <String>] [-PassThru] [-Name <String>] [-Slot <Str
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Save-AzureWebsiteLog** mengunduh log untuk situs web tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mengunduh dan menyimpan log untuk sebuah situs web
+### Contoh 1: Mengunduh dan menyimpan log untuk situs web
 ```
 PS C:\> Save-AzureWebsiteLogs -Name mySite -Output .\logs.zip
 ```
 
-Contoh ini mengunduh log runtime dan penyebaran situs web Situs saya ke file logs.zip di direktori saat ini.
+Contoh ini mengunduh log runtime dan deployment untuk situs web situs saya ke file logs.zip di direktori saat ini.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

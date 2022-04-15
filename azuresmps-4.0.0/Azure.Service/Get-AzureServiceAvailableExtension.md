@@ -4,11 +4,11 @@ ms.assetid: BFB0000C-2EFF-4216-923B-55B0B07BFE60
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b7abe177d3eb85d2671530608b3f93c0601be815
-ms.sourcegitcommit: eee5eb6b2ada4199d09ad670bcb86b942b48df40
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "132419486"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245619"
 ---
 # Get-AzureServiceAvailableExtension
 
@@ -70,9 +70,9 @@ PS C:\> Get-AzureServiceAvailableExtension
           OperationStatus            : Succeeded
 ```
 
-Perintah ini akan mendapatkan semua ekstensi yang tersedia.
+Perintah ini mendapatkan semua ekstensi yang tersedia.
 
-### Contoh 2: Dapatkan ekstensi dalam ruang nama yang ditentukan
+### Contoh 2: Mendapatkan ekstensi dalam ruang nama tertentu
 ```
 PS C:\> Get-AzureServiceAvailableExtension -ProviderNamespace Microsoft.Windows.Azure.Extensions -ExtensionName "RDP" -AllVersions
 
@@ -95,7 +95,7 @@ PS C:\> Get-AzureServiceAvailableExtension -ProviderNamespace Microsoft.Windows.
           OperationStatus            : Succeeded
 ```
 
-Perintah ini mendapatkan ekstensi dengan nama yang ditentukan dalam ruang nama yang ditentukan.
+Perintah ini mendapatkan ekstensi dengan nama tertentu dalam ruang nama tertentu.
 
 ### Contoh 3: Mendapatkan versi ekstensi tertentu
 ```
@@ -125,7 +125,7 @@ Perintah ini mendapatkan informasi tentang versi ekstensi tertentu.
 ## PARAMETERS
 
 ### -AllVersions
-Mengindikasikan bahwa cmdlet ini mendapatkan semua versi ekstensi.
+Menunjukkan bahwa cmdlet ini mendapatkan semua versi ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -167,16 +167,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -206,8 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

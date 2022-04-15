@@ -4,11 +4,11 @@ ms.assetid: 1254A28B-F670-44B2-BB0E-BD41B9483E3A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: fd256fb6bd177cda19607a7fc24a3a11d0fd352b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422905"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245157"
 ---
 # New-AzureWebsiteJob
 
@@ -34,7 +34,7 @@ Cmdlet **New-AzureWebsiteJob** membuat pekerjaan web untuk situs web.
 PS C:\> New-AzureWebsiteJob -Name MyWebsite -JobName MyWebJob -JobType Continuous -JobFile job.bat
 ```
 
-Membuat pekerjaan berkelanjutan untuk menghubungi situs job.bat situs web MyWebsite.
+Membuat pekerjaan berkelanjutan untuk memanggil job.bat di situs web Situs Saya.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Tipe pekerjaan web.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Dipicu 
-- Berkelanjutan
+- Terus menerus
 
 ```yaml
 Type: WebJobType
@@ -103,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -144,11 +144,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
 [Get-AzureWebsiteJob](./Get-AzureWebsiteJob.md)
 
-[Remove-AzureWebsiteJob](./Remove-AzureWebsiteJob.md)
+[Hapus-AzureWebsiteJob](./Remove-AzureWebsiteJob.md)
 
 [Start-AzureWebsiteJob](./Start-AzureWebsiteJob.md)
 
