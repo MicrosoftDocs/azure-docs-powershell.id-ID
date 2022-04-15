@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccount.md
 ms.openlocfilehash: 6b5a78741feaeb08f5a3b3c588a42e7fe1c2b8e9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139937690"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303801"
 ---
 # New-AzMapsAccount
 
 ## SYNOPSIS
-Buat atau perbarui Akun Peta Anda.
-Akun Peta menyimpan kunci yang mengizinkan akses ke rest Peta REST.
+Membuat atau memperbarui Akun Peta.
+Akun Peta memegang kunci yang memungkinkan akses ke PETA API REST.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/new-azmapsaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maps/new-azmapsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +30,12 @@ New-AzMapsAccount -Name <String> -ResourceGroupName <String> -Location <String> 
 ```
 
 ## DESCRIPTION
-Buat atau perbarui Akun Peta Anda.
-Akun Peta menyimpan kunci yang mengizinkan akses ke rest Peta REST.
+Membuat atau memperbarui Akun Peta.
+Akun Peta memegang kunci yang memungkinkan akses ke PETA API REST.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Peta Baru.
+### Contoh 1: Buat Akun Peta.
 ```powershell
 PS C:\> New-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -SkuName S0 -Location eastus
 
@@ -44,7 +44,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini akan membuat Peta Akun.A Peta akun menahan tombol yang memungkinkan akses ke Peta REST API.
+Perintah ini membuat Akun Peta.Akun Peta memiliki kunci yang memungkinkan akses ke API REST Peta.
 
 ## PARAMETERS
 
@@ -64,8 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-Memungkinkan fungsi pengalih pada Kebijakan Azure untuk menonaktifkan Azure Peta dukungan autentikasi lokal.
-Ini akan menonaktifkan autentikasi Kunci Bersama dari setiap penggunaan.
+Memungkinkan pengalihkan fungsionalitas pada Azure Policy untuk menonaktifkan dukungan autentikasi lokal Azure Maps.
+Tindakan ini akan menonaktifkan autentikasi Kunci Bersama dari penggunaan apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
-Properti Get atau Set Kind.
+### -Jenis
+Dapatkan atau Atur properti Kind.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Support.Kind
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun Peta Anda.
+Nama Akun Peta.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

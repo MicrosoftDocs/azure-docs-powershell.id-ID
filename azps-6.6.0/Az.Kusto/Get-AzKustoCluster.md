@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoCluster.md
 ms.openlocfilehash: 8dbf4ebbdc1db4de4e554bdd8c390cc28caa11b1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140333357"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304395"
 ---
 # Get-AzKustoCluster
 
@@ -18,16 +18,16 @@ ms.locfileid: "140333357"
 Mendapatkan kluster Kusto.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kusto/get-azkustocluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustocluster) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzKustoCluster [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzKustoCluster -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -49,7 +49,7 @@ Mendapatkan kluster Kusto.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua kluster Kusto dalam grup sumber daya
+### Contoh 1: Mencantumkan semua kluster Kusto dalam grup sumber daya
 ```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg
 
@@ -61,7 +61,7 @@ East US  testnewkustocluster2 Microsoft.Kusto/Clusters
 
 Perintah di atas mencantumkan semua kluster Kusto dalam grup sumber daya "testrg".
 
-### Contoh 2: Dapatkan kluster Kusto spesifik menurut nama
+### Contoh 2: Dapatkan kluster Kusto tertentu menurut nama
 ```powershell
 PS C:\>  Get-AzKustoCluster -ResourceGroupName testrg -Name testnewkustocluster
 
@@ -70,7 +70,7 @@ Location Name                Type                     Zone
 East US  testnewkustocluster Microsoft.Kusto/Clusters
 ```
 
-Perintah di atas mengembalikan kluster Kusto yang bernama "testnewkustocluster" dalam grup sumber daya "testrg".
+Perintah di atas mengembalikan kluster Kusto bernama "testnewkustocluster" dalam grup sumber daya "testrg".
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -177,11 +177,11 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid ID operasi
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
+  - `[OperationId <String>]`: Guid of the operation ID
+  - `[PrincipalAssignmentName <String>]`: Nama kusto principalAssignment.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

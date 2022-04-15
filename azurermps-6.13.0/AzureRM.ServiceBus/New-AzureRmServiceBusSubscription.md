@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusSubscription.md
 ms.openlocfilehash: b780af95efcb73d922e326550afd234a50d37929
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140861852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281141"
 ---
 # New-AzureRmServiceBusSubscription
 
 ## SYNOPSIS
-Membuat langganan ke topik Bus Layanan tertentu.
+Membuat langganan ke topik Bus Layanan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,7 +31,7 @@ New-AzureRmServiceBusSubscription [-ResourceGroupName] <String> [-Namespace] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmServiceBusSubscription** membuat langganan baru ke topik Bus Layanan tertentu.
+Cmdlet **New-AzureRmServiceBusSubscription** membuat langganan baru untuk topik Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -55,12 +55,12 @@ Status                                    : Active
 UpdatedAt                                 : 1/20/2017 3:18:54 AM
 ```
 
-Membuat langganan untuk `SB-TopicSubscription-Example1` topik Bus Layanan tertentu `SB-Topic_exampl1`.
+Membuat langganan `SB-TopicSubscription-Example1` untuk topik `SB-Topic_exampl1`Bus Layanan yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [diam jangka waktu](https://msdn.microsoft.com/library/system.timespan.aspx) , setelah itu langganan dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) diam, setelah itu langganan dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetteringOnFilterEvaluationExceptions
-Nilai yang menunjukkan apakah langganan memiliki dukungan dead letter pada pengecualian evaluasi filter.
+Nilai yang menunjukkan apakah langganan memiliki dukungan surat mati pada pengecualian evaluasi filter.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetteringOnMessageExpiration
-Huruf mati pada kedaluwarsa pesan
+Surat Mati Pada Pesan Kedaluwarsa
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -106,10 +106,10 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMessageTimeToLive
-Rentang waktu menjadi nilai langsung.
-Ini adalah durasi setelah pesan kedaluwarsa, dimulai dari saat pesan dikirimkan ke Bus Layanan.
-Ini adalah nilai default yang digunakan saat TimeToLive tidak disetel pada pesan itu sendiri.
-Untuk Standar = Timespan.Max dan Dasar = 14 dya
+Jangka waktu untuk nilai langsung.
+Ini adalah durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirim ke Bus Layanan.
+Ini adalah nilai default yang digunakan ketika TimeToLive tidak diatur pada pesan itu sendiri.
+Untuk Standar = Timespan.Max dan Basic = 14 dyas
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBatchedOperations
-Aktifkan Operasi Batched - nilai yang menunjukkan apakah operasi batch sisi server telah diaktifkan
+Aktifkan Operasi Batched - nilai yang menunjukkan apakah operasi batch sisi server diaktifkan
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardDeadLetteredMessagesTo
-Antrean/Nama Topik untuk meneruskan pesan Dead Letter
+Nama Antrean/Topik untuk meneruskan pesan Surat Mati
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardTo
-Antrean/Nama topik untuk meneruskan pesan
+Nama Antrean/Topik untuk meneruskan pesan
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -MaxDeliveryCount
 MaxDeliveryCount - jumlah pengiriman maksimum.
-Pesan secara otomatis akan disususkan setelah jumlah pengiriman ini.
+Pesan akan tenggat waktu otomatis setelah jumlah pengiriman ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresSession
-RequiresSession - nilai yang mengindikasikan jika antrean ini memerlukan deteksi duplikat.
+MemerlukanSession - nilai yang mengindikasikan jika antrean ini memerlukan deteksi duplikat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -276,7 +276,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,15 +323,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

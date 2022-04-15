@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsAccount.md
 ms.openlocfilehash: 9ff1c394bf9d4977b42535bf1e11b88f70ab6ffe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140283163"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303783"
 ---
 # Remove-AzMapsAccount
 
 ## SYNOPSIS
-Menghapus akun Peta.
+Hapus Akun Peta.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/remove-azmapsaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maps/remove-azmapsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,25 +35,25 @@ Remove-AzMapsAccount -InputObject <IMapsIdentity> [-DefaultProfile <PSObject>] [
 ```
 
 ## DESCRIPTION
-Menghapus akun Peta.
+Hapus Akun Peta.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Peta Anda
+### Contoh 1: Hapus Akun Peta
 ```powershell
 PS C:\> Remove-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01
 
 ```
 
-Perintah ini akan menghapus Peta Tersebut.
+Perintah ini menghapus Akun Peta.
 
-### Contoh 2: Menghapus Peta saluran
+### Contoh 2: Hapus Akun Peta menurut saluran
 ```powershell
 PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount02 | Remove-AzMapsAccount
 
 ```
 
-Perintah ini akan menghapus Peta tersebut menurut saluran.
+Perintah ini menghapus Akun Peta menurut saluran.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun Peta Anda.
+Nama Akun Peta.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.IMapsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
 
 ## OUTPUTS
 
@@ -200,10 +200,10 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
-  - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama instans Peta Creator.
+  - `[AccountName <String>]`: Nama Akun Peta.
+  - `[CreatorName <String>]`: Nama instans Pembuat Peta.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices/help/Set-AzureRmRecoveryServicesBackupProperties.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices/help/Set-AzureRmRecoveryServicesBackupProperties.md
-ms.openlocfilehash: 9480ddf88330194caaecaa3759dcc6635b67bcda1c67d0027629284810980cb4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5d5654dd79e06ae32000c7fd079407d98275ba49
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417300"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281638"
 ---
 # Set-AzureRmRecoveryServicesBackupProperties
 
 ## SYNOPSIS
-Mengatur properti untuk manajemen pencadangan.
+Mengatur properti untuk manajemen cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,23 +29,23 @@ Set-AzureRmRecoveryServicesBackupProperties -Vault <ARSVault>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmRecoveryServicesBackupProperties** mengatur properti penyimpanan cadangan untuk vault Layanan Pemulihan.
+Cmdlet **Set-AzureRmRecoveryServicesBackupProperties** mengatur properti penyimpanan cadangan untuk kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur penyimpanan GeoRedundant untuk vault
+### Contoh 1: Mengatur penyimpanan GeoRedundant untuk kubah
 ```
 PS C:\> $Vault01 = Get-AzureRmRecoveryServicesVault -Name "TestVault"
 PS C:\> Set-AzureRmRecoveryServicesBackupProperties -Vault $Vault01 -BackupStorageRedundancy GeoRedundant
 ```
 
-Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam $Vault 01.
-Perintah kedua mengatur kelebihan penyimpanan cadangan untuk $Vault 01 ke GeoRedundant.
+Perintah pertama mendapatkan kubah bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
+Perintah kedua mengatur redundansi penyimpanan cadangan untuk $Vault 01 ke GeoRedundant.
 
 ## PARAMETERS
 
 ### -BackupStorageRedundancy
-Menentukan tipe kelebihan penyimpanan cadangan.
+Menentukan tipe redundansi penyimpanan cadangan.
 
 ```yaml
 Type: AzureRmRecoveryServicesBackupStorageRedundancyType
@@ -61,8 +61,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan nama vault.
-Vault harus merupakan objek **AzureRmRecoveryServicesVault.**
+Menentukan nama kubah.
+Kubah harus berupa objek **AzureRmRecoveryServicesVault** .
 
 ```yaml
 Type: ARSVault
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -122,11 +122,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 Parameter: Vault (ByValue)
 
 ## OUTPUTS

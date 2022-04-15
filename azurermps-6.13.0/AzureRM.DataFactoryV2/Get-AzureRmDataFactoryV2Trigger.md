@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.dataf
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2Trigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2Trigger.md
-ms.openlocfilehash: 3b8c4b99f3016741dc9ee0f41341e22c71f59988469de613b0eefd7c5900b807
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7c14b5c53cdffa51671a64ad40fe18a400ae6803
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281610"
 ---
 # Get-AzureRmDataFactoryV2Trigger
 
@@ -63,7 +63,7 @@ PS C:\> Get-AzureRmDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryNam
 
 Mendapatkan daftar semua pemicu yang telah dibuat di pabrik data "WikiADF".
 
-### Contoh 2: Mendapatkan informasi tentang semua pemicu
+### Contoh 2: Dapatkan informasi tentang semua pemicu
 ```
 Get-AzureRmDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "ScheduledTrigger"
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,4 +192,4 @@ Parameter: DataFactory (ByValue)
 
 [Stop-AzureRmDataFactoryV2Trigger]()
 
-[Remove-AzureRmDataFactoryV2Trigger]()
+[Hapus-AzureRmDataFactoryV2Trigger]()

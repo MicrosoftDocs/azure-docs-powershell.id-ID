@@ -5,12 +5,12 @@ online version: https://github.com/Azure/azure-powershell/blob/preview/src/Resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmExternalSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmExternalSecuritySolution.md
-ms.openlocfilehash: 69698ce675efe27e3d0df49316cc62a2b751650335d735bcb084151fbd5d3617
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4ef54651b5490161d7fc28c4a0c068f7b4a1ed76
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281159"
 ---
 # Get-AzureRmExternalSecuritySolution
 
@@ -111,7 +111,7 @@ Name              : aad_testservicews
 Kind              : AAD
 ```
 
-Mendapatkan solusi keamanan eksternal tertentu
+Dapatkan solusi keamanan eksternal tertentu
 
 ## PARAMETERS
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

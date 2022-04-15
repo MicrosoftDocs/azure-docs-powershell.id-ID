@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzLogicApp.md
 ms.openlocfilehash: 6eec812449dfde55042617c6eb790e5e1dcab909
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076761"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304269"
 ---
 # Remove-AzLogicApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "140076761"
 Menghapus aplikasi logika dari grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/remove-azlogicapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Tentukan aplikasi logika dan grup sumber daya.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ PS C:\>Remove-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp03"
 ```
 
 Perintah ini menghapus aplikasi logika dari grup sumber daya.
-Perintah menyertakan parameter *Paksa* , yang mencegah perintah meminta konfirmasi kepada Anda.
+Perintah ini menyertakan parameter *Paksa* , yang mencegah perintah meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -63,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

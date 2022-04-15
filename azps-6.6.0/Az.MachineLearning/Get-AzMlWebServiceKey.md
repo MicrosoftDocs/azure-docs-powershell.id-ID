@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebServiceKey.md
 ms.openlocfilehash: ad66a6de6bcf940269bd55f814d2ab8ffedae5da
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076635"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304017"
 ---
 # Get-AzMlWebServiceKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "140076635"
 Mengambil kunci layanan web.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/get-azmlwebservicekey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlwebservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Get-AzMlWebServiceKey -MlWebService <WebService> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Mendapatkan tombol akses untuk API runtime Azure Machine Learning web service.
+Mendapatkan kunci akses untuk API runtime layanan web Azure Machine Learning.
 
 ## EXAMPLES
 
-### Contoh 1 - Mendapatkan kunci untuk layanan web yang ditentukan oleh grup dan nama sumber daya
+### Contoh 1 - Dapatkan kunci untuk layanan web yang ditentukan oleh grup sumber daya dan nama
 ```
 Get-AzMlWebServiceKey -ResourceGroupName "myresourcegroup" -Name "mywebservicename"
 ```
@@ -49,12 +49,12 @@ Get-AzMlWebServiceKey -ResourceGroupName "myresourcegroup" -Name "mywebservicena
 Get-AzMlWebServiceKey -MlWebService $mlService
 ```
 
-$mlService merupakan objek tipe Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
+$mlService adalah objek tipe Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebServiceKeys
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

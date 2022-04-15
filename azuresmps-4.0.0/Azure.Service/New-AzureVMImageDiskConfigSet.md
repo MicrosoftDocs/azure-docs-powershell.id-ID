@@ -4,11 +4,11 @@ ms.assetid: F420A47F-D036-4B31-AA59-97CFC9C79E75
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e3bf4a0b0bd1afcf9eb2d3b7d05a7a9cde818474
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423204"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312585"
 ---
 # New-AzureVMImageDiskConfigSet
 
@@ -25,8 +25,8 @@ New-AzureVMImageDiskConfigSet [-InformationAction <ActionPreference>] [-Informat
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureVMImageDiskConfigSet** membuat objek kumpulan konfigurasi disk yang disampaikan ke cmdlet pembaruan gambar.
-Proses ini encapsulates the OSDiskConfig dan objek DataDiskConfig.
+Cmdlet **New-AzureVMImageDiskConfigSet** membuat objek kumpulan konfigurasi disk yang diteruskan ke cmdlet pembaruan gambar.
+Ini merangkum OSDiskConfig dan objek DataDiskConfig.
 Gunakan cmdlet **Set-AzureVMImageOSDiskConfig** dan **Set-AzureVMImageDataDiskConfig** untuk mengatur properti Disk OS dan Disk Data untuk gambar mesin virtual.
 
 ## EXAMPLES
@@ -39,23 +39,23 @@ PS C:\> $Disk = Set-AzureDataDiskConfig -DiskConfig $Disk -Name "Test" -HostCach
 PS C:\> Update-AzureVMImage -ImageName "Image2" -Label "Test1" -Description "Test1" -DiskConfigSet $Disk;
 ```
 
-Perintah ini membuat objek kumpulan konfigurasi disk dan menyimpan hasilnya dalam variabel yang bernama $Disk.
-Setelah konfigurasi disk dibuat, disk digunakan untuk mengatur OSDiskConfig dan DataDiskConfig.
+Perintah ini membuat objek kumpulan konfigurasi disk dan menyimpan hasil dalam variabel bernama $Disk.
+Setelah konfigurasi disk dibuat, konfigurasi ini digunakan untuk mengatur OSDiskConfig dan DataDiskConfig.
 Lalu mesin virtual diperbarui dengan konfigurasi.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -85,13 +85,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
+### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
 
 ## CATATAN
 

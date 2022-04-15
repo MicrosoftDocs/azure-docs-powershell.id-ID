@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConfiguration.md
 ms.openlocfilehash: 771aa570b821444954f70458e542467be3cd84e3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140501925"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303711"
 ---
 # Get-AzMariaDbConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140501925"
 Mendapatkan informasi tentang konfigurasi server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/get-azmariadbconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzMariaDbConfiguration -ResourceGroupName <String> -ServerName <String> [-Su
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMariaDbConfiguration -Name <String> -ResourceGroupName <String> -ServerName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,7 +44,7 @@ Mendapatkan informasi tentang konfigurasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua konfigurasi di bawah MariaDB
+### Contoh 1: Mencantumkan semua konfigurasi di bawah MariaDB
 ```powershell
 PS C:\> Get-AzMariaDbConfiguration -ServerName mariadb-asd-01 -ResourceGroupName mariadb-test-qu5ov0
 
@@ -209,7 +209,7 @@ wait_timeout                             Microsoft.DBforMariaDB/servers/configur
 
 Perintah ini mencantumkan semua konfigurasi di bawah MariaDB.
 
-### Contoh 2: Mendapatkan konfigurasi MariaDB
+### Contoh 2: Dapatkan konfigurasi MariaDB
 ```powershell
 PS C:\> Get-AzMariaDbConfiguration -ServerName mariadb-asd-01 -ResourceGroupName mariadb-test-qu5ov0 -Name max_connections
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
@@ -268,8 +268,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -314,11 +314,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.I CmdletDbIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
 
 ## OUTPUTS
 
@@ -339,7 +339,7 @@ INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.

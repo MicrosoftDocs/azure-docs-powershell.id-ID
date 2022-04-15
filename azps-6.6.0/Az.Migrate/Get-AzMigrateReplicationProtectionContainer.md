@@ -6,29 +6,29 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionContainer.md
 ms.openlocfilehash: a1a03f6ec247f0b6b0e24dc4ced52f43fe3b6760
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308939"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303441"
 ---
 # Get-AzMigrateReplicationProtectionContainer
 
 ## SYNOPSIS
-Mendapatkan detail wadah proteksi.
+Mendapatkan detail wadah perlindungan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationprotectioncontainer) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationprotectioncontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzMigrateReplicationProtectionContainer -ResourceGroupName <String> -ResourceName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMigrateReplicationProtectionContainer -FabricName <String> -ProtectionContainerName <String>
  -ResourceGroupName <String> -ResourceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
@@ -42,11 +42,11 @@ Get-AzMigrateReplicationProtectionContainer -FabricName <String> -ResourceGroupN
 ```
 
 ## DESCRIPTION
-Mendapatkan detail wadah proteksi.
+Mendapatkan detail wadah perlindungan.
 
 ## EXAMPLES
 
-### Contoh 1: List all protection containers in vault and fabric
+### Contoh 1: Mencantumkan semua wadah proteksi dalam kubah dan kain
 ```powershell
 PS C:\> PS /src/Migrate [Az.Migrate]> Get-AzMigrateReplicationProtectionContainer -ResourceGroupName azmigratepwshtestasr13072020  -ResourceName AzMigrateTestProjectPWSH02aarsvault -FabricName AzMigratePWSHTc8d1replicationfabric
 
@@ -66,7 +66,7 @@ Location Name                                   Type
          AzMigratePWSHTc8d1replicationcontainer Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers
 ```
 
-Dapatkan nomor khusus.
+Dapatkan yang spesifik.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Fabric name.
+Nama kain.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault layanan pemulihan ada.
+Nama grup sumber daya tempat kubah layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama vault layanan pemulihan.
+Nama kubah layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

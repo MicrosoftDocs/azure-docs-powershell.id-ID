@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlInstanceDatabase.md
 ms.openlocfilehash: fe6779c64a3cbc5a484dd4a3ee3662bcdaf59059
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140859920"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280926"
 ---
 # Get-AzureRmSqlInstanceDatabase
 
 ## SYNOPSIS
-Mengembalikan informasi tentang database Azure SQL Instans Terkelola.
+Mengembalikan informasi tentang database Azure SQL Managed Instance.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Get-AzureRmSqlInstanceDatabase [[-Name] <String>] [-InstanceObject] <AzureSqlMan
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlInstanceDatabase** mendapatkan satu atau beberapa database Azure SQL dari Azure SQL Database Terkelola.
+Cmdlet **Get-AzureRmSqlInstanceDatabase** mendapatkan satu atau beberapa database Azure SQL dari Instans terkelola Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua database pada sebuah contoh
+### Contoh 1: Dapatkan semua database pada instans
 ```
 PS C:\>Get-AzureRmSqlInstanceDatabase -InstanceName "managedInstance1" -ResourceGroupName "resourcegroup01"
 ResourceGroupName        : resourcegroup01
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceObject
-Objek contoh yang digunakan untuk mendapatkan database contoh
+Objek instans yang akan digunakan untuk mendapatkan database instans
 
 ```yaml
 Type: AzureSqlManagedInstanceModel
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya dari objek contoh yang akan
+Id sumber daya objek instans untuk mendapatkan
 
 ```yaml
 Type: String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Database Contoh SQL Azure untuk diambil.
+Nama Database Instans Azure SQL untuk diambil.
 
 ```yaml
 Type: String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

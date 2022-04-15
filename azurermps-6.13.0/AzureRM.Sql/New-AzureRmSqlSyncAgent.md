@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncAgent.md
 ms.openlocfilehash: 51c3807a6c1e93118eaf84dd51fb62cfe30c1a8b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424162"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280983"
 ---
 # New-AzureRmSqlSyncAgent
 
 ## SYNOPSIS
-Membuat Agen Sinkronisasi Azure SQL Anda.
+Membuat Agen Sinkronisasi Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Cmdlet **New-AzureRmSqlSyncAgent** membuat Agen Sinkronisasi Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Buat agen sinkronisasi untuk server Azure SQL.
+### Contoh 1: Membuat agen sinkronisasi untuk server Azure SQL.
 ```
 PS C:\> New-AzureRmSqlSyncAgent -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -Name "SyncAgent01" -SyncDatabaseServerName "syncDatabaseServer01" 
 -SyncDatabaseName "syncDatabaseName01" -SyncDatabaseResourceGroupName "syncDatabaseResourceGroup01" | Format-List
@@ -57,12 +57,12 @@ ExpiryTime                  : 12/31/9999 11:59:59 PM
 State                       : NeverConnected
 ```
 
-Perintah ini akan membuat agen sinkronisasi untuk server Azure SQL sama.
+Perintah ini membuat agen sinkronisasi untuk server Azure SQL.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server tempat agen sinkronisasi berada.
+Nama Server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncDatabaseResourceGroupName
-Grup sumber daya tempat database metadata sinkronisasi dimiliki.
+Grup sumber daya tempat database metadata sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

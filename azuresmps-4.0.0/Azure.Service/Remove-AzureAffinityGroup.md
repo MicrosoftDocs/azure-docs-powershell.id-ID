@@ -4,16 +4,16 @@ ms.assetid: 29602F63-A05B-45AF-8DD8-5EBBF4C33FCE
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 22c0abb5afdb09ba1b799a28e642d4730efc134f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427474"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312483"
 ---
 # Remove-AzureAffinityGroup
 
 ## SYNOPSIS
-Menghapus grup afiliasi dalam langganan.
+Menghapus grup affinity dalam langganan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,13 +25,13 @@ Remove-AzureAffinityGroup [-Name] <String> [-Profile <AzureSMProfile>] [-Informa
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureAffinityGroup** menghapus grup Azure affinity dalam langganan saat ini.
-Anda tidak bisa menghapus grup afiliasi yang memiliki semua anggota.
-Anda harus terlebih dahulu menghapus semua anggota grup afiliasi.
+Cmdlet **Remove-AzureAffinityGroup** menghapus grup afinitas Azure dalam langganan saat ini.
+Anda tidak dapat menghapus grup affinity yang memiliki anggota apa pun.
+Anda harus menghapus semua anggota grup affinity terlebih dahulu.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus grup afiliasi
+### Contoh 1: Menghapus grup affinity
 ```
 PS C:\> Remove-AzureAffinityGroup -Name "South01"
 ```
@@ -41,16 +41,16 @@ Perintah ini menghapus grup affinity South01 dalam langganan saat ini.
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama grup afiliasi yang dihapus cmdlet ini.
+Menentukan nama grup affinity yang dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAffinityGroup](./Get-AzureAffinityGroup.md)
 
-[New-AzureAffinityGroup](./New-AzureAffinityGroup.md)
+[Baru-AzureAffinityGroup](./New-AzureAffinityGroup.md)
 
 [Set-AzureAffinityGroup](./Set-AzureAffinityGroup.md)
 

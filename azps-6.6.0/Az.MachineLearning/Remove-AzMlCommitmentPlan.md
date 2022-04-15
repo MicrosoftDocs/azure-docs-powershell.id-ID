@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Remove-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Remove-AzMlCommitmentPlan.md
 ms.openlocfilehash: 479c44570959a67333a5ae8516ef49cfddca6840
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140502105"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303945"
 ---
 # Remove-AzMlCommitmentPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "140502105"
 Menghapus rencana komitmen.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/remove-azmlcommitmentplan) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/remove-azmlcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Remove-AzMlCommitmentPlan -MlCommitmentPlan <CommitmentPlan> [-Force]
 ```
 
 ## DESCRIPTION
-Menghapus Azure Machine Learning komitmen bisnis. Perhatikan bahwa paket komitmen yang memiliki asosiasi komitmen tidak bisa dihapus. Asosiasi komitmen hanya bisa dihapus oleh sumber daya target mereka. Misalnya, jika Anda menghapus Azure Machine Learning web perusahaan, asosiasi komitmen yang mengaitkan layanan web dengan rencana komitmen juga akan dihapus.
+Menghapus rencana komitmen Azure Machine Learning. Perhatikan bahwa rencana komitmen yang memiliki asosiasi komitmen tidak dapat dihapus. Asosiasi komitmen hanya dapat dihapus oleh sumber daya target mereka. Misalnya, jika Anda menghapus layanan web Azure Machine Learning, komitmen yang mengaitkan layanan web dengan rencana komitmen juga akan dihapus.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Remove-AzMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommitme
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -61,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama paket komitmen ML Azure.
+Nama rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk Rencana ML Azure.
+Nama grup sumber daya untuk rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,6 +163,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Void
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

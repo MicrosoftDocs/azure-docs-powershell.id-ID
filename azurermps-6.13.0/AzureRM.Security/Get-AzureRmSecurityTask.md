@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmSecurityTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmSecurityTask.md
 ms.openlocfilehash: 51c2772a891cf39ba780c6ff3da0af40170f477e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140865827"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281156"
 ---
 # Get-AzureRmSecurityTask
 
 ## SYNOPSIS
-Mendapatkan tugas keamanan yang disarankan Pusat Keamanan Azure untuk Anda lakukan guna memperkuat pos keamanan Anda.
+Mendapatkan tugas keamanan yang Azure Security Center sarankan Anda lakukan untuk memperkuat postur keamanan Anda.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -49,8 +49,8 @@ Get-AzureRmSecurityTask -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Pusat Keamanan Azure memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
-Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang harus dilakukan Pusat Keamanan Azure.
+Azure Security Center memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
+Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang Azure Security Center rekomendasikan untuk Anda lakukan.
 
 ## EXAMPLES
 
@@ -65,7 +65,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/locations/centralus/tasks/11ff8541-820e-cecc-75de-91be7c0d8419 11ff8541-820e-cecc-75de-91be7c0d8419 Subscription has machines with failed baseline rule /subscriptions/48...
 ```
 
-Mendapatkan semua tugas keamanan yang ditemukan pada sumber daya dalam langganan.
+Mendapatkan semua tugas keamanan yang ditemukan pada sumber daya di dalam langganan.
 
 ### Contoh 2
 ```powershell
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: 455DB2C0-08A0-4D62-B8EE-7C3DB9AD8A8C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 42461da436436f331de372e1da5a04a4aa74d3f2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423588"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312400"
 ---
 # Remove-AzureVM
 
@@ -26,8 +26,8 @@ Remove-AzureVM [-Name] <String> [-DeleteVHD] [-ServiceName] <String> [-Profile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVM** menghapus komputer virtual Azure.
-Proses ini tidak menghapus file .vhd yang mendasari disk yang terpasang pada komputer virtual tersebut.
+Cmdlet **Remove-AzureVM** menghapus mesin virtual Azure.
+Proses ini tidak menghapus file .vhd yang mendasar dari disk yang dipasang pada mesin virtual tersebut.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Perintah ini menghapus mesin virtual bernama VirtualMachine03 yang berjalan di l
 PS C:\> Remove-AzureVM -ServiceName "ContosoService03" -Name "VirtualMachine04" -DeleteVHD
 ```
 
-Perintah ini menghapus mesin virtual VirtualMachine04 yang berjalan di layanan ContosoService03, dan menentukan untuk menghapus file .vhd menggunakan parameter *DeleteVHD.*
+Perintah ini menghapus mesin virtual VirtualMachine04 yang berjalan di layanan ContosoService03, dan menentukan untuk menghapus file .vhd menggunakan parameter *DeleteVHD* .
 
 ## PARAMETERS
 
 ### -DeleteVHD
-Menentukan apakah cmdlet ini menghapus komputer virtual dan disk blob yang mendasari.
+Menentukan apakah cmdlet ini menghapus mesin virtual dan blob disk yang mendasar.
 
 ```yaml
 Type: SwitchParameter
@@ -63,16 +63,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama mesin virtual yang dihapus.
+Menentukan nama mesin maya yang sedang dihapus.
 
 ```yaml
 Type: String
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,16 +189,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureVM](./New-AzureVM.md)
+[AzureVM baru](./New-AzureVM.md)
 
-[New-AzureVMConfig](./New-AzureVMConfig.md)
+[AzureVMConfig baru](./New-AzureVMConfig.md)
 
-[Mulai Ulang-AzureVM](./Restart-AzureVM.md)
+[Mulai ulang-AzureVM](./Restart-AzureVM.md)
 
 [Start-AzureVM](./Start-AzureVM.md)
 
 [Stop-AzureVM](./Stop-AzureVM.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

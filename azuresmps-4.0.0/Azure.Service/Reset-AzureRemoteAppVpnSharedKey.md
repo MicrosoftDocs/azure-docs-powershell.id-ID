@@ -4,16 +4,16 @@ ms.assetid: 4522E93F-6AC9-4A37-88B8-CCCCE15A5879
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e17ff14bdbb9127db3af5e58ea8cf2ad0bab1eaa
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415355"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312230"
 ---
 # Reset-AzureRemoteAppVpnSharedKey
 
 ## SYNOPSIS
-Mereset kunci bersama Azure RemoteApp VPN.
+Mengatur ulang kunci bersama Azure RemoteApp VPN.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Reset-AzureRemoteAppVpnSharedKey [-VNetName] <String> [-Profile <AzureSMProfile>
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzureRemoteAppVpnSharedKey** mengatur ulang kunci bersama jaringan privat virtual (VPN) Azure RemoteApp.
+Cmdlet **Reset-AzureRemoteAppVpnSharedKey** mengatur ulang kunci bersama jaringan privat virtual Azure RemoteApp (VPN).
 
 ## EXAMPLES
 
@@ -35,14 +35,14 @@ PS C:\> Reset-AzureRemoteAppVpnSharedKey -VNetName "ContosoVNet"
 ```
 
 Perintah ini mereset kunci bersama pada jaringan virtual bernama ContosoVNet.
-Koneksi VPN ke jaringan lokal tetap offline hingga kunci bersama yang baru dikonfigurasi di perangkat VPN.
-Untuk mengonfigurasi perangkat VPN, gunakan cmdlet **Get-AzureRemoteAppVpnDeviceConfigScript** untuk mengambil skrip atau file konfigurasi yang benar untuk perangkat VPN Anda, lalu muat skrip atau file konfigurasi itu ke perangkat VPN.
+Koneksi VPN ke jaringan lokal tetap offline hingga kunci bersama yang baru dikonfigurasi pada perangkat VPN.
+Untuk mengonfigurasi perangkat VPN, gunakan cmdlet **Get-AzureRemoteAppVpnDeviceConfigScript** untuk mengambil skrip atau file konfigurasi yang benar untuk perangkat VPN Anda, lalu muat file konfigurasi atau skrip tersebut ke perangkat VPN.
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: 3CD1A989-902C-48B3-81E9-7B78EDA5F880
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: f230139e201528eb1307ba852c2587a1d312ab67
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424109"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312531"
 ---
 # Remove-AzureAccount
 
@@ -25,36 +25,36 @@ Remove-AzureAccount -Name <String> [-Force] [-PassThru] [-Profile <AzureSMProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureAccount** menghapus akun Azure dan langganannya dari file data langganan di profil pengguna roaming.
-Tindakan ini tidak menghapus akun dari Microsoft Azure, atau mengubah akun sebenarnya dengan cara apa pun.
+Cmdlet **Hapus-AzureAccount** menghapus akun Azure dan langganannya dari file data langganan di profil pengguna jelajah Anda.
+Akun tersebut tidak menghapus akun dari Microsoft Azure, atau mengubah akun aktual dengan cara apa pun.
 
 Menggunakan cmdlet ini sangat mirip dengan keluar dari akun Azure Anda.
-Dan, jika Anda ingin masuk lagi ke akun tersebut, gunakan **Add-AzureAccount** atau **Import-AzurePublishSettingsFile** untuk menambahkan akun Windows PowerShell lagi.
+Dan, jika Anda ingin masuk kembali ke akun tersebut, gunakan **Add-AzureAccount** atau **Impor-AzurePublishSettingsFile** untuk menambahkan akun ke Windows PowerShell lagi.
 
-Anda juga dapat **menggunakan cmdlet Remove-AzureAccount** untuk mengubah cara cmdlet Azure PowerShell masuk ke akun Azure.
-Jika akun Anda memiliki sertifikat manajemen dari **Import-AzurePublishSettingsFile** dan token akses dari **Add-AzureAccount,** cmdlet Azure PowerShell hanya menggunakan token akses; mereka mengabaikan sertifikat manajemen.
-Untuk menggunakan sertifikat manajemen, jalankan **Remove-AzureAccount**.
-Ketika **Remove-AzureAccount** menemukan sertifikat manajemen dan token akses, ia hanya akan menghapus token akses, bukan menghapus akun.
+Anda juga bisa menggunakan cmdlet **Remove-AzureAccount** untuk mengubah cara cmdlet Azure PowerShell masuk ke akun Azure Anda.
+Jika akun Anda memiliki sertifikat manajemen dari **Import-AzurePublishSettingsFile** dan token akses dari **Add-AzureAccount**, cmdlet Azure PowerShell hanya menggunakan token akses; mereka mengabaikan sertifikat manajemen.
+Untuk menggunakan sertifikat manajemen, **jalankan Hapus-AzureAccount**.
+Saat **Remove-AzureAccount** menemukan sertifikat manajemen dan token akses, token hanya akan menghapus token akses, bukan menghapus akun.
 Sertifikat manajemen masih ada, sehingga akun masih tersedia untuk Windows PowerShell.
 
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 ## EXAMPLES
 
-### Contoh 1: Hapus akun
+### Contoh 1: Menghapus akun
 ```
 PS C:\> Remove-AzureAccount -Name admin@contoso.com
 ```
 
-Perintah ini akan menghapus admin@contoso.com file data langganan Anda.
-Ketika perintah selesai, akun tidak lagi tersedia untuk Windows PowerShell.
+Perintah ini menghapus admin@contoso.com file data langganan Anda.
+Setelah perintah selesai, akun tidak lagi tersedia untuk Windows PowerShell.
 
 ## PARAMETERS
 
-### -Force
+### -Paksa
 Menyembunyikan perintah konfirmasi.
-Secara default, **Hapus-AzureAccount** akan meminta Anda sebelum menghapus akun dari Windows PowerShell.
+Secara default, **Remove-AzureAccount** meminta Anda sebelum menghapus akun dari Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama akun yang akan dihapus.
-Nilai parameter peka huruf besar/kecil.
+Nilai parameter peka huruf besar kecil.
 Karakter wildcard tidak didukung.
 
 ```yaml
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan $True jika perintah berhasil $False jika gagal.
+Mengembalikan $True jika perintah berhasil dan $False jika gagal.
 Secara default, cmdlet ini tidak mengembalikan output apa pun.
 
 ```yaml
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -148,18 +148,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
-Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menurut nilai.
+### Tidak
+Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak menurut nilai.
 
 ## OUTPUTS
 
-### Tidak Ada atau System.Boolean
-Jika Anda menggunakan parameter *PassThru,* cmdlet ini mengembalikan nilai Boolean.
-Jika tidak, output tidak akan dikembalikan.
+### Tidak ada atau System.Boolean
+Jika Anda menggunakan parameter *PassThru* , cmdlet ini mengembalikan nilai Boolean.
+Jika tidak, tidak mengembalikan output apa pun.
 
 ## CATATAN
 
@@ -167,6 +167,6 @@ Jika tidak, output tidak akan dikembalikan.
 
 [Add-AzureAccount](./Add-AzureAccount.md)
 
-[Get-AzureAccount](./Get-AzureAccount.md)
+[Dapatkan-AzureAccount](./Get-AzureAccount.md)
 
 

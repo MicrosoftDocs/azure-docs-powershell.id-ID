@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbReplica.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbReplica.md
 ms.openlocfilehash: 7b45378ed3de11c5e5d795a43f480fc53f098584
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076491"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303639"
 ---
 # New-AzMariaDbReplica
 
@@ -18,7 +18,7 @@ ms.locfileid: "140076491"
 Membuat replika server MariaDB.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/new-azmariadbreplica) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/new-azmariadbreplica) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +73,7 @@ Name                      Location AdministratorLogin Version StorageProfileStor
 mariadb-test-9pebvn-rep03 eastus   xpwjyfdgui         10.2    7168                    GP_Gen5_4 GeneralPurpose Enabled
 ```
 
-Perintah dengan parameter inputobject membuat replika db dengan parameter inputobject untuk MariaDB.
+Perintah ini dengan inputobject parameter membuat replika db dengan inputobject parameter untuk MariaDB.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-DefaultParameters Kawasan Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+kawasan DefaultParameters Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -Master
 Objek server sumber untuk dipulihkan.
-Untuk membuat, lihat bagian CATATAN untuk properti MASTER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti MASTER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.Api20180601Preview.IServer
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
+Nama sku, biasanya, tingkat + family + core, misalnya B_Gen4_1, GP_Gen5_8.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -298,23 +298,23 @@ MASTER <IServer>: Objek server sumber untuk dipulihkan.
   - `Location <String>`: Lokasi tempat sumber daya berada.
   - `[Tag <ITrackedResourceTags>]`: Metadata khusus aplikasi dalam bentuk pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[AdministratorLogin <String>]`: Nama masuk administrator server. Hanya dapat ditentukan saat server sedang dibuat (dan diperlukan untuk pembuatan).
+  - `[AdministratorLogin <String>]`: Nama masuk administrator server. Hanya dapat ditentukan ketika server sedang dibuat (dan diperlukan untuk pembuatan).
   - `[EarliestRestoreDate <DateTime?>]`: Waktu pembuatan titik pemulihan paling awal (format ISO8601)
-  - `[FullyQualifiedDomainName <String>]`: Nama domain yang sepenuhnya memenuhi syarat dari server.
-  - `[IdentityType <IdentityType?>]`: Tipe identitas. Setel ini ke 'SystemAssigned' agar secara otomatis membuat dan menetapkan Azure Active Directory utama untuk sumber daya.
+  - `[FullyQualifiedDomainName <String>]`: Nama domain server yang sepenuhnya memenuhi syarat.
+  - `[IdentityType <IdentityType?>]`: Tipe identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory untuk sumber daya secara otomatis.
   - `[MasterServerId <String>]`: Id server master dari server replika.
-  - `[ReplicaCapacity <Int32?>]`: Jumlah maksimum replika yang bisa ada di server master.
-  - `[ReplicationRole <String>]`: Replikasi peran server.
-  - `[SkuCapacity <Int32?>]`: Skalakan kapasitas, mewakili unit perhitungan server.
-  - `[SkuFamily <String>]`:  Keluarga perangkat keras.
-  - `[SkuName <String>]`: Nama sku, biasanya, tier + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
-  - `[SkuSize <String>]`: Kode ukuran, akan diinterpretasikan menurut sumber daya yang tepat.
-  - `[SkuTier <SkuTier?>]`: Tingkatan SKU tertentu, misalnya Dasar.
-  - `[SslEnforcement <SslEnforcementEnum?>]`: Mengaktifkan penerapan ssl atau tidak saat tersambung ke server.
-  - `[StorageProfileBackupRetentionDay <Int32?>]`: Waktu penyimpanan cadangan untuk server.
-  - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Mengaktifkan geo-redundan atau tidak untuk pencadangan server.
-  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Mengaktifkan Storage Auto Grow.
-  - `[StorageProfileStorageMb <Int32?>]`: Maksimum penyimpanan yang diperbolehkan untuk server.
+  - `[ReplicaCapacity <Int32?>]`: Jumlah maksimum replika yang dapat dimiliki server master.
+  - `[ReplicationRole <String>]`: Peran replikasi server.
+  - `[SkuCapacity <Int32?>]`: Kapasitas peningkatan/keluar skala, mewakili unit komputasi server.
+  - `[SkuFamily <String>]`: Keluarga perangkat keras.
+  - `[SkuName <String>]`: Nama sku, biasanya, tier + family + cores, misalnya B_Gen4_1, GP_Gen5_8.
+  - `[SkuSize <String>]`: Kode ukuran, yang akan diinterpretasikan oleh sumber daya yang sesuai.
+  - `[SkuTier <SkuTier?>]`: Tingkat SKU tertentu, misalnya Dasar.
+  - `[SslEnforcement <SslEnforcementEnum?>]`: Aktifkan penerapan ssl atau tidak saat tersambung ke server.
+  - `[StorageProfileBackupRetentionDay <Int32?>]`: Mencadangkan hari penyimpanan untuk server.
+  - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Aktifkan Geo-redundant atau tidak untuk cadangan server.
+  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Storage Pertumbuhan Otomatis.
+  - `[StorageProfileStorageMb <Int32?>]`: Penyimpanan maksimal yang diperbolehkan untuk server.
   - `[UserVisibleState <ServerState?>]`: Status server yang terlihat oleh pengguna.
   - `[Version <ServerVersion?>]`: Versi server.
 

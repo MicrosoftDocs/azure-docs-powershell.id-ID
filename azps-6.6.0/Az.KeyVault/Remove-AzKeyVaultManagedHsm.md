@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedHsm.md
 ms.openlocfilehash: 14bbe4b8099230b5ef4eb1cb92d2a2576b7328c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140137023"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304593"
 ---
 # Remove-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
-Menghapus HSM yang dikelola.
+Menghapus HSM terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedhsm) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,12 +45,12 @@ Remove-AzKeyVaultManagedHsm [-ResourceId] <String> [-Force] [-AsJob] [-PassThru]
 
 ## DESCRIPTION
 Cmdlet **Remove-AzKeyVaultManagedHsm** menghapus HSM terkelola yang ditentukan.
-Ia juga menghapus semua tombol yang terdapat dalam contoh tersebut.
+Tindakan ini juga menghapus semua kunci yang terdapat dalam contoh tersebut.
 Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini, Anda harus melakukannya untuk kinerja yang lebih baik.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus HSM yang dikelola
+### Contoh 1: Menghapus HSM terkelola
 ```powershell
 PS C:\> Remove-AzKeyVaultManagedHsm -HsmName 'myhsm' -Force
 
@@ -59,20 +59,20 @@ True
 
 Perintah ini menghapus hsm terkelola bernama myhsm dari langganan Anda saat ini.
 
-### Contoh 2: Menghapus hsm terkelola dari grup sumber daya tertentu
+### Contoh 2: Menghapus hsm yang dikelola dari grup sumber daya tertentu
 ```powershell
 PS C:\> Remove-AzKeyVaultManagedHsm -HsmName 'myhsm' -ResourceGroupName "myrg1" -PassThru
 
 True
 ```
 
-Perintah ini menghapus hsm terkelola yang bernama myhsm dari grup sumber daya yang bernama myrg1.
-Jika Anda tidak menentukan nama grup sumber daya, cmdlet akan mencari HSM terkelola bernama untuk dihapus dalam langganan Anda saat ini.
+Perintah ini menghapus hsm terkelola bernama myhsm dari grup sumber daya bernama myrg1.
+Jika Anda tidak menentukan nama grup sumber daya, cmdlet mencari HSM terkelola bernama untuk dihapus dalam langganan Anda saat ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,9 +101,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa cmdlet tidak meminta konfirmasi Anda.
-Secara default, cmdlet ini meminta Anda mengonfirmasi bahwa Anda ingin menghapus HSM yang dikelola.
+### -Paksa
+Menunjukkan bahwa cmdlet tidak meminta konfirmasi kepada Anda.
+Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin menghapus HSM yang dikelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek HSM yang dikelola akan dihapus.
+Objek HSM yang dikelola untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama HSM terkelola untuk dihapus.
+Menentukan nama HSM yang dikelola untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk Azure yang dikelola HSM untuk dihapus.
+Menentukan nama grup sumber daya untuk HSM yang dikelola Azure untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ManagedHsm Resource Id.
+Id Sumber Daya ManagedHsm.
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

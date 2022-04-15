@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentAssociation.md
 ms.openlocfilehash: c7fe3616a2c17e50ff60d1f750595788e8d329c3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076653"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304053"
 ---
 # Get-AzMlCommitmentAssociation
 
@@ -18,7 +18,7 @@ ms.locfileid: "140076653"
 Mengambil informasi ringkasan untuk satu atau beberapa asosiasi komitmen.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/get-azmlcommitmentassociation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlcommitmentassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,16 +29,16 @@ Get-AzMlCommitmentAssociation -ResourceGroupName <String> -CommitmentPlanName <S
 
 ## DESCRIPTION
 Mengambil informasi asosiasi komitmen.
-Bergantung pada parameter yang lolos, cmdlet mengembalikan asosiasi komitmen tertentu atau kumpulan asosiasi komitmen untuk rencana komitmen yang ditentukan.
+Tergantung pada parameter yang dilewati, cmdlet mengembalikan asosiasi komitmen tertentu atau kumpulan asosiasi komitmen untuk rencana komitmen yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan asosiasi komitmen tertentu
+### Contoh 1: Dapatkan asosiasi komitmen tertentu
 ```
 Get-AzMlCommitmentAssociation -ResourceGroupName "MyResourceGroup" -CommitmentPlanName "MyCommitmentPlanName" -Name "MyCommitmentAssociationName"
 ```
 
-### Contoh 2: Mendapatkan semua asosiasi komitmen untuk rencana komitmen yang ditentukan
+### Contoh 2: Dapatkan semua asosiasi komitmen untuk rencana komitmen yang ditentukan
 ```
 Get-AzMlCommitmentAssociation -ResourceGroupName "MyResourceGroup" -CommitmentPlanName "MyCommitmentPlanName"
 ```
@@ -46,7 +46,7 @@ Get-AzMlCommitmentAssociation -ResourceGroupName "MyResourceGroup" -CommitmentPl
 ## PARAMETERS
 
 ### -CommitmentPlanName
-Nama paket komitmen ML Azure yang memiliki satu atau beberapa asosiasi komitmen.
+Nama rencana komitmen Azure ML yang memiliki satu atau beberapa asosiasi komitmen.
 
 ```yaml
 Type: System.String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama asosiasi komitmen ML Azure.
+Nama asosiasi komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk asosiasi ML Azure.
+Nama grup sumber daya untuk asosiasi komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -106,17 +106,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.CommitmentPlan
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

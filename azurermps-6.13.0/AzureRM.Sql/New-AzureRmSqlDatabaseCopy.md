@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseCopy.md
 ms.openlocfilehash: 7019fc7345b4296d9c35f11c6acec5bf5a42d966
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280918"
 ---
 # New-AzureRmSqlDatabaseCopy
 
 ## SYNOPSIS
-Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini.
+Membuat salinan SQL Database yang menggunakan snapshot pada saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,8 +40,8 @@ New-AzureRmSqlDatabaseCopy [-DatabaseName] <String> [-Tags <Hashtable>] [-CopyRe
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlDatabaseCopy** membuat salinan salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzureSqlDatabaseCopy cmdlet untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
-Catatan: Gunakan cmdlet New-AzureRmSqlDatabaseSecondary cmdlet untuk mengonfigurasi geo-replication untuk database.
+Cmdlet **New-AzureRmSqlDatabaseCopy** membuat salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, bukan cmdlet Start-AzureSqlDatabaseCopy untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** dari salinan.
+Catatan: Gunakan cmdlet New-AzureRmSqlDatabaseSecondary untuk mengonfigurasi geo-replikasi untuk database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -49,7 +49,7 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan ke salinan baru.
+Pembuatan komputasi untuk ditetapkan ke salinan baru.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyDatabaseName
-Menentukan nama SQL Database salin.
+Menentukan nama salinan SQL Database.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyResourceGroupName
-Menentukan nama Grup Sumber Daya Azure untuk menetapkan salinan tersebut.
+Menentukan nama Grup Sumber Daya Azure tempat untuk menetapkan salinan.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyServerName
-Menentukan nama grup yang SQL Server menjadi host salinan tersebut.
+Menentukan nama SQL Server yang menjadi host salinan.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama dokumen SQL Database disalin.
+Menentukan nama SQL Database untuk disalin.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -153,8 +153,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama pool elastis di mana untuk menetapkan salinan.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis untuk menetapkan salinan.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama dokumen SQL Server berisi database untuk disalin.
+Menentukan nama SQL Server yang berisi database untuk disalin.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama layanan yang ditetapkan untuk salinan tersebut.
+Menentukan nama tujuan layanan untuk ditetapkan ke salinan.
 
 ```yaml
 Type: System.String
@@ -228,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan pasangan Nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan Azure SQL Database nilai. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan pasangan Nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan salinan Azure SQL Database. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Angka Vcore dari salinan Database Azure Sql.
+Nomor Vcore dari salinan Database Azure Sql.
 
 ```yaml
 Type: System.Int32
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -304,6 +304,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmSqlDatabaseSecbasery](./New-AzureRmSqlDatabaseSecondary.md)
+[New-AzureRmSqlDatabaseSecondary](./New-AzureRmSqlDatabaseSecondary.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

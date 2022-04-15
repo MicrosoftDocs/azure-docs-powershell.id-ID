@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Set-AzureRmSecurityWorkspaceSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Set-AzureRmSecurityWorkspaceSetting.md
 ms.openlocfilehash: 3d2fdd8b6a1763aea97da3967fb2696857e7fd75
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860144"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281177"
 ---
 # Set-AzureRmSecurityWorkspaceSetting
 
@@ -28,7 +28,7 @@ Set-AzureRmSecurityWorkspaceSetting -Name <String> -Scope <String> -WorkspaceId 
 
 ## DESCRIPTION
 Memperbarui pengaturan ruang kerja untuk langganan.
-Ruang kerja yang dikonfigurasi akan menampung data keamanan yang dikumpulkan oleh agen keamanan yang diinstal dalam VM di dalam langganan ini.
+Ruang kerja yang dikonfigurasi akan menyimpan data keamanan yang dikumpulkan oleh agen keamanan yang diinstal di VM di dalam langganan ini.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/workspaceSettings/default default /...
 ```
 
-Mengatur ruang kerja "myWorkspace" untuk menampung semua data keamanan yang dikumpulkan oleh agen keamanan.
+Mengatur ruang kerja "myWorkspace" untuk menyimpan semua data keamanan yang dikumpulkan oleh agen keamanan.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

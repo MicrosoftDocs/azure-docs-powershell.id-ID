@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2.md
 ms.openlocfilehash: be781e1679a5338cbc80312bbcfed01aa087a1b0
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140867630"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281655"
 ---
 # Get-AzureRmDataFactoryV2
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Data Factory.
+Mendapatkan informasi tentang Pabrik Data.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,13 +33,13 @@ Get-AzureRmDataFactoryV2 [-ResourceGroupName] <String> [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmDataFactoryV2 mendapatkan informasi tentang faktor data dalam grup sumber daya Azure.
-Jika Anda menentukan nama pabrik data, cmdlet ini mendapatkan informasi tentang pabrik data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua faktor data dalam grup sumber daya Azure.
+Cmdlet Get-AzureRmDataFactoryV2 mendapatkan informasi tentang pabrik data dalam grup sumber daya Azure.
+Jika Anda menentukan nama pabrik data, cmdlet ini akan mendapatkan informasi tentang pabrik data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua pabrik data dalam grup sumber daya Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua faktor data
+### Contoh 1: Dapatkan semua pabrik data
 ```
 PS C:\> Get-AzureRmDataFactoryV2 -ResourceGroupName "ADF"
 
@@ -60,9 +60,9 @@ PS C:\> Get-AzureRmDataFactoryV2 -ResourceGroupName "ADF"
     ProvisioningState : Succeeded
 ```
 
-Menampilkan informasi tentang semua faktor data dalam langganan Azure.
+Menampilkan informasi tentang semua pabrik data dalam langganan Azure.
 
-### Contoh 2: Dapatkan pabrik data tertentu
+### Contoh 2: Mendapatkan pabrik data tertentu
 ```
 PS C:\> $DataFactory = Get-AzureRmDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF"
 
@@ -76,13 +76,13 @@ PS C:\> $DataFactory = Get-AzureRmDataFactoryV2 -ResourceGroupName "ADF" -Name "
     ProvisioningState : Succeeded
 ```
 
-Perintah ini menampilkan informasi tentang pabrik data yang bernama WikiADF dalam langganan untuk grup sumber daya yang bernama ADF, lalu menyimpannya di $DataFactory sumber daya tersebut.
+Perintah ini menampilkan informasi tentang pabrik data bernama WikiADF dalam langganan untuk grup sumber daya bernama ADF, lalu menyimpannya dalam variabel $DataFactory.
 Tentukan parameter DataFactory dalam cmdlet berikutnya untuk menggunakan pabrik data yang disimpan di $DataFactory.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pabrik data tempat data akan mendapatkan informasi.
+Menentukan nama pabrik data untuk mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mendapatkan informasi tentang faktor data yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini mendapatkan informasi tentang pabrik data yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -139,11 +139,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Set-AzureRmDataFactoryV2]()
 
-[Remove-AzureRmDataFactoryV2]()
+[Hapus-AzureRmDataFactoryV2]()
 

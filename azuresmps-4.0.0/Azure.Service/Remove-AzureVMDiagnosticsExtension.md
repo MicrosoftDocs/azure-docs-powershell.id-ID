@@ -4,16 +4,16 @@ ms.assetid: A513B7CA-182E-46A2-8181-020C5DFC7DE9
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 758025d6f452f1578cf0c3a9bd0bb9e479002446
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414773"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312327"
 ---
 # Remove-AzureVMDiagnosticsExtension
 
 ## SYNOPSIS
-Menghapus ekstensi Azure Diagnostics dari komputer virtual.
+Menghapus ekstensi Diagnostik Azure dari mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,31 +25,31 @@ Remove-AzureVMDiagnosticsExtension -VM <IPersistentVM> [-Profile <AzureSMProfile
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMDiagnosticsExtension** menghapus Microsoft Azure Diagnostik dari komputer virtual.
-Anda harus menyampaikan output cmdlet ini ke cmdlet **Update-AzureVM** .
+Cmdlet **Remove-AzureVMDiagnosticsExtension** menghapus ekstensi Diagnostik Microsoft Azure dari mesin virtual.
+Anda harus meneruskan output cmdlet ini ke cmdlet **Update-AzureVM** .
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi Azure Diagnostics dari komputer virtual
+### Contoh 1: Hapus ekstensi Diagnostik Azure dari mesin virtual
 ```
 PS C:\> Remove-AzureVMDiagnosticsExtension -VM $VM | Update-AzureVM
 ```
 
-Perintah ini akan menghapus ekstensi Azure Diagnostics dari komputer virtual.
+Perintah ini menghapus ekstensi Diagnostik Azure dari mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -124,6 +124,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureVMDiagnosticsExtension](./Set-AzureVMDiagnosticsExtension.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

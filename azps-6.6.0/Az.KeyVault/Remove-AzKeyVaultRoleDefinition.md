@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
 ms.openlocfilehash: dd48bf401328b08bc5e5b620717920c9ae3c403b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140284837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304509"
 ---
 # Remove-AzKeyVaultRoleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "140284837"
 Menghapus definisi peran kustom dari HSM.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroledefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,9 +35,9 @@ Remove-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] -InputObje
 ```
 
 ## DESCRIPTION
-Cmdlet `Remove-AzKeyVaultRoleDefinition` menghapus peran kustom dalam Azure Role-Based Access Access dari Azure KeyVault yang dikelola HSM.
-`-RoleName` Menyediakan parameter dari peran kustom atau objek peran yang sudah ada untuk menghapus peran kustom itu.
-Secara default, `Remove-AzKeyVaultRoleDefinition` meminta konfirmasi Anda.
+`Remove-AzKeyVaultRoleDefinition` Cmdlet menghapus peran kustom di Azure Role-Based Access Control Azure KeyVault yang dikelola HSM.
+`-RoleName` Berikan parameter peran kustom atau objek peran yang sudah ada untuk menghapus peran kustom tersebut.
+Secara default, `Remove-AzKeyVaultRoleDefinition` meminta konfirmasi kepada Anda.
 Untuk menyembunyikan perintah, gunakan `-Force` parameter.
 
 ## EXAMPLES
@@ -57,7 +57,7 @@ $role = Get-AzKeyVaultRoleDefinition -HsmName myHsm -RoleName "my role"
 $role | Remove-AzKeyVaultRoleDefinition -HsmName myHsm -Force
 ```
 
-Contoh ini menghapus peran kustom yang bernama "peran saya" dengan pemipaan objek peran. Perintah juga menyembunyikan perintah oleh `-Force`.
+Contoh ini menghapus peran kustom bernama "peran saya" dengan mempipa objek peran. Ini juga menekan prompt dengan `-Force`.
 
 ## PARAMETERS
 
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-Nama definisi peran untuk mendapatkan.
+Nama definisi peran yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup di mana penetapan peran atau definisi berlaku, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
+Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationFabric.md
 ms.openlocfilehash: 8a03011e8852a0be41ed8f22e5a1daa697a5e444
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308975"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303549"
 ---
 # Get-AzMigrateReplicationFabric
 
 ## SYNOPSIS
-Gets the details of an Azure Site Recovery fabric.
+Mendapatkan detail kain Site Recovery Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationfabric) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationfabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,18 +28,18 @@ Get-AzMigrateReplicationFabric -ResourceGroupName <String> -ResourceName <String
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMigrateReplicationFabric -FabricName <String> -ResourceGroupName <String> -ResourceName <String>
  [-SubscriptionId <String[]>] [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Gets the details of an Azure Site Recovery fabric.
+Mendapatkan detail kain Site Recovery Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Get all fabrics by resource group and vault name
+### Contoh 1: Dapatkan semua kain menurut grup sumber daya dan nama kubah
 ```powershell
 PS C:\> PS Get-AzMigrateReplicationFabric -ResourceGroupName azmigratepwshtestasr13072020 -ResourceName AzMigrateTestProjectPWSH02aarsvault -FabricName AzMigratePWSHTc8d1replicationfabric
 
@@ -63,9 +63,9 @@ RolloverEncryptionDetailKekState          : None
 Type                                      : Microsoft.RecoveryServices/vaults/replicationFabrics
 ```
 
-Get all fabrics in resource group and vault
+Dapatkan semua kain dalam grup sumber daya dan kubah
 
-### Contoh 2: Get fabric by resource group, vault name and fabric name
+### Contoh 2: Dapatkan fabric by resource group, vault name and fabric name
 ```powershell
 PS C:\> Get-AzMigrateReplicationFabric -ResourceGroupName azmigratepwshtestasr13072020 -ResourceName AzMigrateTestProjectPWSH02aarsvault
 
@@ -89,7 +89,7 @@ RolloverEncryptionDetailKekState          : None
 Type                                      : Microsoft.RecoveryServices/vaults/replicationFabrics
 ```
 
-Mendapatkan kain tertentu
+Dapatkan kain tertentu
 
 ## PARAMETERS
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Fabric name.
+Nama kain.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault layanan pemulihan ada.
+Nama grup sumber daya tempat kubah layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama vault layanan pemulihan.
+Nama kubah layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

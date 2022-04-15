@@ -4,11 +4,11 @@ ms.assetid: F83D698B-DC48-4ACD-AD2E-4AAECBDA196B
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4f5035b19f790cdfc39edcbaad33d1e96fe3dbb4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420243"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142312320"
 ---
 # Restart-AzureRemoteAppVM
 
@@ -25,11 +25,11 @@ Restart-AzureRemoteAppVM -CollectionName <String> -UserUpn <String> [-LogoffMess
 ```
 
 ## DESCRIPTION
-Cmdlet **Mulai Ulang-AzureRemoteAppVM** memulai ulang komputer virtual dalam kumpulan Azure RemoteApp tempat pengguna tertentu tersambung.
+Cmdlet **Restart-AzureRemoteAppVM** memulai ulang mesin virtual dalam koleksi Azure RemoteApp tempat pengguna yang ditentukan tersambung.
 
 ## EXAMPLES
 
-### Contoh 1: Hidupkan ulang mesin virtual
+### Contoh 1: Memulai ulang mesin virtual
 ```
 PS C:\> Restart-AzureRemoteAppVM -CollectionName "ContosoVNet" -UserUPN "PattiFuller@contoso.com"
 ```
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogoffMessage
-Menentukan pesan peringatan yang ditampilkan kepada pengguna yang tersambung ke komputer virtual sebelum cmdlet ini mengeluarkannya.
+Menentukan pesan peringatan yang diperlihatkan kepada pengguna yang tersambung ke mesin virtual sebelum cmdlet ini mengeluarkannya.
 
 ```yaml
 Type: String
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -LogoffWaitSeconds
-Menentukan berapa lama cmdlet ini menunggu sebelum cmdlet itu mencatat pengguna.
-Nilai default adalah 60 detik.
+Menentukan berapa lama cmdlet ini menunggu sebelum log pengguna nonaktif.
+Nilai defaultnya adalah 60 detik.
 
 ```yaml
 Type: Int32
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserUpn
-Menentukan nama prinsipal pengguna (UPN, User Principal Name) pengguna yang memulai ulang mesin virtual ini.
-Untuk mendapatkan mesin virtual dalam kumpulan dan UPN tersambung, gunakan cmdlet **Get-AzureRemoteAppVM.**
+Menentukan nama pokok pengguna (UPN) pengguna yang cmdlet ini memulai ulang mesin virtual.
+Untuk mendapatkan mesin virtual dalam pengumpulan dan UPN yang tersambung, gunakan cmdlet **Get-AzureRemoteAppVM** .
 
 ```yaml
 Type: String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

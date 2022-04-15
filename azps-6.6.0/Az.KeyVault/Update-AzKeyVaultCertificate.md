@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
 ms.openlocfilehash: 755b554c1af26020afb8ea743c6d8b2076d28782
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140284621"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142304431"
 ---
 # Update-AzKeyVaultCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "140284621"
 Mengubah atribut sertifikat yang dapat diedit.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +37,11 @@ Update-AzKeyVaultCertificate [-InputObject] <PSKeyVaultCertificateIdentityItem> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzKeyVaultCertificate** mengubah atribut sertifikat yang bisa diedit.
+Cmdlet **Update-AzKeyVaultCertificate** mengubah atribut sertifikat yang dapat diedit.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah tag yang terkait dengan sertifikat
+### Contoh 1: Memodifikasi tag yang terkait dengan sertifikat
 ```powershell
 PS C:\> $Tags = @{ "Team" = "Azure" ; "Role" = "Engg" }
 PS C:\> Update-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01" -Tag $Tags -PassThru
@@ -75,12 +75,12 @@ Created     : 7/28/2016 2:00:01 AM
 Updated     : 8/1/2016 5:37:48 PM
 ```
 
-Perintah pertama menetapkan pasangan kunci/nilai array ke $Tags nilai.
-Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang $Tags.
+Perintah pertama menetapkan array pasangan kunci/nilai ke variabel $Tags.
+Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 agar $Tags.
 
 ### Contoh 2
 
-Mengubah atribut sertifikat yang dapat diedit. (otomatisgenerated)
+Mengubah atribut sertifikat yang dapat diedit. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ### -Aktifkan
 Jika ada, aktifkan sertifikat jika nilai benar.
 Menonaktifkan sertifikat jika nilai salah.
-Jika tidak ditentukan, nilai status sertifikat yang diaktifkan/dinonaktifkan yang sudah ada tetap tidak berubah.
+Jika tidak ditentukan, nilai status sertifikat aktif/nonaktif yang sudah ada tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Certificate
+Objek sertifikat
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIdentityItem
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama sertifikat.
-Cmdlet menyusun FQDN rahasia dari nama vault, lingkungan yang saat ini dipilih dan nama rahasia.
+Cmdlet menyusun FQDN rahasia dari nama kubah, lingkungan yang saat ini dipilih dan nama rahasia.
 
 ```yaml
 Type: System.String
@@ -169,9 +169,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tabel hash yang mewakili tag sertifikat.
+Sebuah hashtable yang mewakili tag sertifikat.
 Jika tidak ditentukan, tag sertificate yang sudah ada tetap tidak berubah.
-Menghapus tag dengan menentukan Hashtable kosong.
+Hapus tag dengan menentukan Hashtable kosong.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -186,8 +186,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Versi sertifikat.
-Cmdlet menyusun FQDN sertifikat dari nama vault, lingkungan yang saat ini dipilih, nama sertifikat, dan versi sertifikat.
+Cmdlet menyusun FQDN sertifikat dari nama kubah, lingkungan yang saat ini dipilih, nama sertifikat, dan versi sertifikat.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
