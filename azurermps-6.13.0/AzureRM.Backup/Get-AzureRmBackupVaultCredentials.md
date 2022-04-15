@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupVaultCredentials.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupVaultCredentials.md
 ms.openlocfilehash: 6ee9e3062108049e517dbea09573af7905dd54d1
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415423"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359515"
 ---
 # Get-AzureRmBackupVaultCredentials
 
 ## SYNOPSIS
-Mengunduh file kredensial vault untuk Vault cadangan.
+Mengunduh file kredensial kubah untuk kubah Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,16 +28,16 @@ Get-AzureRmBackupVaultCredentials [-TargetLocation] <String> [-Vault] <AzureRMBa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBackupVaultCredentials** mengunduh file kredensial vault untuk penyimpanan Azure Backup.
-Pencadangan menggunakan file kredensial vault untuk menyambungkan server ke penyimpanan Cadangan Azure dan mendaftarkannya.
-Anda harus mendaftarkan server sebelum Pencadangan dapat mengirim data cadangan ke vault.
+Cmdlet **Get-AzureRmBackupVaultCredentials** mengunduh file kredensial kubah untuk kubah Azure Backup.
+Cadangan menggunakan file kredensial kubah untuk menyambungkan server ke kubah Azure Backup dan mendaftarkannya.
+Anda harus mendaftarkan server sebelum Cadangan bisa mengirim data cadangan ke kubah.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetLocation
-Menentukan jalur tujuan tempat cmdlet ini menyimpan file kredensial penyimpanan.
+Menentukan jalur tujuan tempat cmdlet ini menyimpan file kredensial kubah.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan vault Cadangan tempat cmdlet ini mendapatkan file kredensial penyimpanan.
+Menentukan kubah Cadangan tempat cmdlet ini mendapatkan file kredensial kubah.
 Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -93,7 +93,7 @@ Parameter: Vault (ByValue)
 ## OUTPUTS
 
 ### System.String
-Cmdlet ini mengembalikan nama file kredensial vault.
+Cmdlet ini mengembalikan nama file kredensial kubah.
 
 ## CATATAN
 

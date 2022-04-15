@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
-ms.openlocfilehash: cf50e0564c6dc88934c3498f04389cb166d853f3
-ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
+ms.openlocfilehash: 80925815613d878b557108169ee1d762d737f0a9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140664615"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142368827"
 ---
 # Get-AzADGroup
 
 ## SYNOPSIS
-Lists entities from groups or get entity from groups by key
+Mencantumkan entitas dari grup atau mendapatkan entitas dari grup menurut kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,35 +51,35 @@ Get-AzADGroup [-Expand <String[]>] [-Select <String[]>] [-ConsistencyLevel <Stri
 ```
 
 ## DESCRIPTION
-Lists entities from groups or get entity from groups by key
+Mencantumkan entitas dari grup atau mendapatkan entitas dari grup menurut kunci
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan grup berdasarkan nama tampilan
+### Contoh 1: Dapatkan grup menurut nama tampilan
 ```powershell
 PS C:\> Get-AzADGroup -DisplayName $gname
 ```
 
-Dapatkan grup menurut nama tampilan
+Mendapatkan grup menurut nama tampilan
 
-### Contoh 2: Grup daftar
+### Contoh 2: Daftar grup
 ```powershell
 PS C:\> Get-AzADGroup -First 10
 ```
 
-Membuat daftar 10 grup pertama
+Mencantumkan 10 grup pertama
 
-### Contoh 3: Get group by object id
+### Contoh 3: Dapatkan grup menurut id objek
 ```powershell
 PS C:\> Get-AzADGroup -ObjectId $id -Select groupTypes -AppendSelected
 ```
 
-Dapatkan grup dengan id objek dan properti tambahkan 'groupTypes' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'SecurityEnabled', 'MailEnabled', 'MailNickname', 'Deskripsi'
+Dapatkan grup menurut id objek dan tambahkan properti 'groupTypes' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'SecurityEnabled', 'MailEnabled', 'MailNickname', 'Description'
 
 ## PARAMETERS
 
 ### -AppendSelected
-Tambahkan properti yang dipilih dengan properti default saat sakelar ini diaktifkan, hanya bekerja dengan parameter '-Pilih'.
+Tambahkan properti yang dipilih dengan properti default saat sakelar ini aktif, hanya berfungsi dengan parameter '-Select'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,9 +93,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
+### -KonsistensiLevel
 Menunjukkan tingkat konsistensi yang diminta.
-URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+URL dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: System.String
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek 'n' pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek 'n' pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -256,7 +259,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
+### -Pertama
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

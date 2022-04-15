@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: cf21e1f3f565744614fa07f36400f226358275a6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 17e720bffb7e42fb20b4702db19f857c0ef61f64
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548029"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364057"
 ---
 # Remove-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
-Menghapus Analitik Synapse SQL titik pemulihan.
+Menghapus Analitik Synapse SQL titik pemulihan kumpulan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Remove-AzSynapseSqlPoolRestorePoint -ResourceId <String> [-PassThru] [-AsJob] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** secara permanen menghapus titik pemulihan SQL Azure Synapse.
+Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** secara permanen menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** secara permanen menghapus titik p
 PS C:\> Remove-AzSynapseSqlPoolRestorePoint -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -Name ContosoSqlPoolRestorePointCreationDate
 ```
 
-Perintah ini menghapus Analitik Azure Synapse SQL titik pemulihan.
+Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan.
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ PS C:\> $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name Conto
 PS C:\> $pool | Remove-AzSynapseSqlPoolRestorePoint -Name ContosoSqlPoolRestorePointCreationDate
 ```
 
-Perintah ini menghapus Analitik Azure Synapse SQL titik pemulihan dalam saluran.
+Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -71,19 +74,19 @@ PS C:\> $points = Get-AzSynapseSqlPoolRestorePoint -WorkspaceName ContosoWorkspa
 PS C:\> $points[index] | Remove-AzSynapseSqlPoolRestorePoint
 ```
 
-Perintah ini menghapus Analitik Azure Synapse SQL titik pemulihan dalam saluran.
+Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Remove-AzSynapseSqlPoolRestorePoint -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlPools/ContosoSqlPool/SqlPoolRestorePoints/RestorePointCreationDate
 ```
 
-Perintah ini menghapus Analitik Azure Synapse yang SQL pool dengan ID sumber daya yang ditentukan.
+Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,8 +115,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL objek input waktu pembuatan titik pemulihan kolam renang, biasanya melewati saluran.
+SQL objek input waktu pembuatan titik pemulihan kumpulan, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSRestorePoint
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointCreationDate
-Nama Sinonim SQL Tanggal Pembuatan Titik Pemulihan.
+Nama Synapse SQL Restore Point Creation Date .
 
 ```yaml
 Type: System.DateTime
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-Objek input Sql Pool, biasanya melewati saluran.
+Objek input Sql Pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -232,7 +235,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

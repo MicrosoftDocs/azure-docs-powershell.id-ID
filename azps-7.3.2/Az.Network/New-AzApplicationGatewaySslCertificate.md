@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 108a29d9b6fa33bf1e8700929a91cf636b3d4118
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0fa2ee9902e154f862d97dddae9071d5096a533f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142345535"
 ---
 # New-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Membuat sertifikat SSL untuk gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,33 +33,33 @@ Cmdlet **New-AzApplicationGatewaySslCertificate** membuat sertifikat SSL untuk g
 
 ## EXAMPLES
 
-### Contoh 1: Buat sertifikat SSL untuk gateway aplikasi Azure.
+### Contoh 1: Membuat sertifikat SSL untuk gateway aplikasi Azure.
 ```
 PS C:\> $password = ConvertTo-SecureString $passwordPlainString -AsPlainText -Force
 PS C:\> $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -CertificateFile "D:\cert01.pfx" -Password $password
 ```
 
-Perintah ini membuat sertifikat SSL yang bernama Cert01 untuk gateway aplikasi default dan menyimpan hasilnya dalam variabel yang bernama $Cert.
+Perintah ini membuat sertifikat SSL bernama Cert01 untuk gateway aplikasi default dan menyimpan hasilnya dalam variabel bernama $Cert.
 
-### Contoh 2: Buat sertifikat SSL menggunakan KeyVault Secret (versi-kurang rahasia) dan tambahkan ke gateway aplikasi.
+### Contoh 2: Buat sertifikat SSL menggunakan KeyVault Secret (version-less secretId) dan tambahkan ke gateway aplikasi.
 ```
 PS C:\> $secret = Get-AzKeyVaultSecret -VaultName "keyvault01" -Name "sslCert01"
 PS C:\> $secretId = $secret.Id.Replace($secret.Version, "") # https://<keyvaultname>.vault.azure.net/secrets/
 PS C:\> $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Rahasiakan dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
-Catatan: Saat secretId versi tidak tersedia di sini, Gateway Aplikasi akan menyinkronkan sertifikat dalam interval reguler dengan KeyVault.
+Dapatkan rahasia dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
+Catatan: Karena secretId tanpa versi disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval rutin dengan KeyVault.
 
-### Contoh 3: Buat sertifikat SSL menggunakan KeyVault Secret dan tambahkan ke Gateway Aplikasi.
+### Contoh 3: Buat sertifikat SSL menggunakan KeyVault Secret dan tambahkan ke Application Gateway.
 ```
 PS C:\> $secret = Get-AzKeyVaultSecret -VaultName "keyvault01" -Name "sslCert01"
 PS C:\> $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/<hash>
 PS C:\> $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Rahasiakan dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
-Catatan: Jika diperlukan agar Gateway Aplikasi menyinkronkan sertifikat dengan KeyVault, harap sediakanid rahasia versinya.
+Dapatkan rahasia dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
+Catatan: Jika diperlukan agar Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan secretId tanpa versi.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

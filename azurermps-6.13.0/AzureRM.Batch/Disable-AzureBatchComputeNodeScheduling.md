@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Disable-AzureBatchComputeNodeScheduling.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Disable-AzureBatchComputeNodeScheduling.md
 ms.openlocfilehash: 281e8a883474b3cb0f42b22de1bb00ef2f6e7249
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359629"
 ---
 # Disable-AzureBatchComputeNodeScheduling
 
 ## SYNOPSIS
-Menonaktifkan penjadwalan tugas pada node perhitungan tertentu.
+Menonaktifkan penjadwalan tugas pada simpul komputasi yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,49 +37,49 @@ Disable-AzureBatchComputeNodeScheduling [[-ComputeNode] <PSComputeNode>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzureBatchComputeNodeScheduling** menonaktifkan penjadwalan tugas pada node perhitungan yang ditentukan.
-Node perhitungan adalah mesin virtual Azure yang dikhususkan untuk beban kerja aplikasi tertentu.
-Ketika Anda menonaktifkan penjadwalan tugas pada simpul perhitungan, Anda juga akan memiliki opsi untuk menentukan apa yang harus dilakukan tentang pekerjaan saat ini dalam antrean tugas simpul.
+Cmdlet **Disable-AzureBatchComputeNodeScheduling** menonaktifkan penjadwalan tugas pada simpul komputasi yang ditentukan.
+Simpul komputasi adalah mesin virtual Azure yang didedikasikan untuk beban kerja aplikasi tertentu.
+Saat Anda menonaktifkan penjadwalan tugas pada simpul komputasi, Anda juga akan memiliki opsi untuk menentukan apa yang harus dilakukan tentang pekerjaan yang saat ini berada dalam antrean tugas simpul.
 **Disable-AzureBatchComputeNodeScheduling** memungkinkan Anda melakukan hal berikut: 
-- Akhiri tugas dan letakkan kembali dalam antrean pekerjaan.
-Ini memungkinkan tugas tersebut untuk dijadwalkan kembali di node perhitungan lain. 
-- Akhiri tugas dan hapus tugas dari antrean pekerjaan.
-Tugas yang dihentikan dengan cara ini tidak akan dijadwal ulang. 
-- Tunggu hingga semua tugas yang saat ini sedang dijalankan selesai lalu nonaktifkan penjadwalan tugas pada simpul perhitungan. 
-- Tunggu hingga semua tugas yang berjalan selesai dan semua periode penyimpanan data kedaluwarsa, lalu nonaktifkan penjadwalan tugas pada simpul perhitungan.
+- Hentikan tugas dan letakkan kembali dalam antrean pekerjaan.
+Ini memungkinkan tugas tersebut dijadwalkan ulang pada simpul komputasi lain. 
+- Hentikan tugas dan hapus tugas dari antrean pekerjaan.
+Tugas dihentikan dengan cara ini tidak akan dijadwalkan ulang. 
+- Tunggu hingga semua tugas yang sedang dijalankan selesai lalu nonaktifkan penjadwalan tugas pada simpul komputasi. 
+- Tunggu hingga semua tugas yang berjalan selesai dan semua periode penyimpanan data kedaluwarsa, lalu nonaktifkan penjadwalan tugas pada simpul komputasi.
 
 ## EXAMPLES
 
-### Contoh 1: Nonaktifkan penjadwalan tugas pada simpul perhitungan
+### Contoh 1: Menonaktifkan penjadwalan tugas pada simpul komputasi
 ```
 PS C:\>$Context = Get-AzureRmBatchAccountKeys -AccountName "contosobatchaccount"
 PS C:\> Disable-AzureBatchComputeNodeScheduling -PoolId "myPool" -Id "tvm-1783593343_34-20151117t222514z" -BatchContext $Context
 ```
 
-Perintah ini menonaktifkan jadwal tugas pada node tvm-1783593343_34-20151117t222514z.
-Untuk melakukannya, perintah pertama dalam contoh membuat referensi objek ke tombol akun untuk akun batch contosobatchaccount.
-Referensi objek ini disimpan dalam variabel yang bernama $context.
-Perintah kedua lalu menggunakan referensi objek ini dan cmdlet **Disable-AzureBatchComputeNodeScheduling** untuk menyambungkan ke myPool pool dan menonaktifkan penjadwalan tugas pada node tvm-1783593343_34-20151117t222514z.
-Karena parameter *DisableComputeNodeSchedulingOptions* tidak menyertakan tugas apa pun yang saat ini berjalan di node perhitungan yang akan dikuhkan kembali.
+Perintah ini menonaktifkan jadwal tugas pada node komputasi tvm-1783593343_34-20151117t222514z.
+Untuk melakukan ini, perintah pertama dalam contoh membuat referensi objek ke kunci akun untuk akun batch contosobatchaccount.
+Referensi objek ini disimpan dalam variabel bernama $context.
+Perintah kedua kemudian menggunakan referensi objek ini dan cmdlet **Disable-AzureBatchComputeNodeScheduling** untuk menyambungkan ke kumpulan myPool dan menonaktifkan penjadwalan tugas di node tvm-1783593343_34-20151117t222514z.
+Karena parameter *DisableComputeNodeSchedulingOptions tidak disertakan* tugas apa pun yang saat ini berjalan pada simpul komputasi akan diantrikan kembali.
 
-### Contoh 2: Nonaktifkan penjadwalan tugas di semua node perhitungan dalam satu pool
+### Contoh 2: Menonaktifkan penjadwalan tugas di semua node komputasi dalam kumpulan
 ```
 PS C:\>$Context = Get-AzureRmBatchAccountKeys -AccountName "contosobatchaccount"
 PS C:\> Get-AzureBatchComputeNode -PoolId "Pool06"  -BatchContext $Context | Disable-AzureBatchComputeNodeScheduling -BatchContext $Context
 ```
 
-Perintah ini menonaktifkan penjadwalan tugas di semua node komputer dalam pool Pool06 kumpulan.
-Untuk menjalankan tugas ini, perintah pertama dalam contoh membuat referensi objek ke tombol akun untuk akun batch contosobatchaccount.
-Referensi objek ini disimpan dalam variabel yang bernama $context.
-Perintah kedua dalam contoh lalu menggunakan referensi objek ini dan **Get-AzureBatchComputeNode** untuk mengembalikan kumpulan semua node hitung yang ditemukan di Pool06.
-Kumpulan itu lalu disambungkan ke cmdlet **Disable-AzureBatchComputeNodeScheduling** untuk menonaktifkan penjadwalan tugas pada setiap node perhitungan dalam koleksi.
-Karena parameter *DisableComputeNodeSchedulingOptions* tidak disertakan tugas apa pun yang saat ini berjalan di node perhitungan akan dikukukuhkan kembali.
+Perintah ini menonaktifkan penjadwalan tugas di semua simpul komputer dalam kumpulan Pool06.
+Untuk melakukan tugas ini, perintah pertama dalam contoh membuat referensi objek ke kunci akun untuk akun batch contosobatchaccount.
+Referensi objek ini disimpan dalam variabel bernama $context.
+Perintah kedua dalam contoh lalu menggunakan referensi objek ini dan **Get-AzureBatchComputeNode** untuk mengembalikan kumpulan semua node komputasi yang ditemukan di Pool06.
+Kumpulan tersebut kemudian disalurkan ke cmdlet **Disable-AzureBatchComputeNodeScheduling** untuk menonaktifkan penjadwalan tugas pada setiap simpul komputasi dalam koleksi.
+Karena parameter *DisableComputeNodeSchedulingOptions tidak disertakan* tugas apa pun yang saat ini berjalan pada node komputasi akan diantrikan ulang.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan referensi objek ke node hitung tempat penjadwalan tugas dinonaktifkan.
-Referensi objek ini dibuat dengan menggunakan cmdlet Get-AzureBatchComputeNode dan menyimpan objek node perhitungan yang dikembalikan dalam variabel.
+Menentukan referensi objek ke simpul komputasi tempat penjadwalan tugas dinonaktifkan.
+Referensi objek ini dibuat dengan menggunakan cmdlet Get-AzureBatchComputeNode dan menyimpan objek node komputasi yang dikembalikan dalam variabel.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -125,20 +125,20 @@ Accept wildcard characters: False
 ```
 
 ### -DisableSchedulingOption
-Menentukan bagaimana cmdlet ini berhubungan dengan tugas apa pun yang saat ini berjalan pada node komputer tempat penjadwalan sedang dinonaktifkan.
+Menentukan bagaimana cmdlet ini menangani tugas apa pun yang sedang berjalan pada simpul komputer tempat penjadwalan dinonaktifkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Requeue.
-Tugas dihentikan dengan segera dan kembali ke antrean pekerjaan.
-Ini memungkinkan tugas untuk dijadwalkan kembali di node perhitungan lain.
+- Antrean ulang.
+Tugas segera dihentikan dan dikembalikan ke antrean pekerjaan.
+Ini memungkinkan tugas untuk dijadwal ulang pada simpul komputasi lain.
 Ini adalah nilai default. 
-- Hentikan.
-Tugas dihentikan secara langsung dan dihapus dari antrean pekerjaan.
-Tugas ini tidak akan dijadwal ulang. 
-- TaskCompletion.
-Tugas yang saat ini sedang berjalan akan dapat diselesaikan sebelum penjadwalan tugas dinonaktifkan pada node perhitungan.
+- Mengakhiri.
+Tugas segera dihentikan dan dihapus dari antrean pekerjaan.
+Tugas ini tidak akan dijadwalkan ulang. 
+- Penyelesaian Tugas.
+Tugas yang sedang berjalan saat ini akan bisa diselesaikan sebelum penjadwalan tugas dinonaktifkan pada simpul komputasi.
 Tidak ada tugas baru yang akan dijadwalkan pada simpul ini. 
 - RetainedData.
-Tugas yang saat ini berjalan dapat selesai dan periode penyimpanan data dapat kedaluwarsa sebelum penjadwalan tugas dinonaktifkan pada node perhitungan.
+Tugas yang sedang berjalan saat ini akan bisa diselesaikan dan periode penyimpanan data akan bisa kedaluwarsa sebelum penjadwalan tugas dinonaktifkan pada simpul komputasi.
 Tidak ada tugas baru yang akan dijadwalkan pada simpul ini.
 
 ```yaml
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID node perhitungan tempat penjadwalan tugas dinonaktifkan.
+Menentukan ID simpul komputasi tempat penjadwalan tugas dinonaktifkan.
 
 ```yaml
 Type: System.String
@@ -170,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID kumpulan kumpulan yang berisi node perhitungan tempat penjadwalan tugas dinonaktifkan.
-Jika Anda menggunakan parameter *PoolId,* jangan gunakan parameter *ComputeNode* di perintah yang sama.
+Menentukan ID kumpulan kumpulan yang berisi simpul komputasi tempat penjadwalan tugas dinonaktifkan.
+Jika Anda menggunakan parameter *PoolId* , jangan gunakan parameter *ComputeNode* dalam perintah yang sama.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Resume-AzureRMAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Resume-AzureRMAutomationJob.md
 ms.openlocfilehash: 8e84f2f66703410b626769be8c2c2d5a57e531e9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423362"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359725"
 ---
 # Resume-AzureRmAutomationJob
 
 ## SYNOPSIS
-Melanjutkan pekerjaan Otomatisasi yang ditangguhkan.
+Melanjutkan tugas Otomatisasi yang ditangguhkan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,8 +29,8 @@ Resume-AzureRmAutomationJob [-Id] <Guid> [-ResourceGroupName] <String> [-Automat
 
 ## DESCRIPTION
 Cmdlet **Resume-AzureRmAutomationJob** melanjutkan pekerjaan Azure Automation yang ditangguhkan.
-Tentukan pekerjaan yang ditangguhkan.
-Untuk menangguhkan pekerjaan, gunakan cmdlet Suspend-AzureRmAutomationJob baru.
+Tentukan tugas yang ditangguhkan.
+Untuk menangguhkan pekerjaan, gunakan cmdlet Suspend-AzureRmAutomationJob.
 
 ## EXAMPLES
 
@@ -39,12 +39,12 @@ Untuk menangguhkan pekerjaan, gunakan cmdlet Suspend-AzureRmAutomationJob baru.
 PS C:\>Resume-AzureRmAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini melanjutkan pekerjaan dengan ID yang ditentukan.
+Perintah ini melanjutkan pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini lanjutkan pekerjaan.
+Menentukan nama akun Otomatisasi tempat cmdlet ini melanjutkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan yang resume cmdlet ini.
+Menentukan ID pekerjaan yang dilanjutkan cmdlet ini.
 
 ```yaml
 Type: System.Guid
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini melanjutkan pekerjaan.
+Menentukan nama grup sumber daya tempat cmdlet ini melanjutkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

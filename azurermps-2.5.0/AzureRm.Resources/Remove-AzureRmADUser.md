@@ -5,11 +5,11 @@ ms.assetid: 9F9B2691-BB3F-4644-BD95-6D74777D1E99
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/remove-azurermaduser
 schema: 2.0.0
 ms.openlocfilehash: 51758c5b51c358a60be310405a89666cc56bac2e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424898"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361284"
 ---
 # Remove-AzureRmADUser
 
@@ -61,9 +61,9 @@ Menghapus pengguna direktori aktif (akun kerja/sekolah juga dikenal sebagai org-
 PS C:\> Remove-AzureRmADUser -UserPrincipalName foo@domain.com
 ```
 
-Menghapus pengguna dengan nama prinsipal pengguna " foo@domain.com " dari penyewa.
+Menghapus pengguna dengan nama prinsipal pengguna "foo@domain.com" dari penyewa.
 
-### Contoh 2 - Menghapus pengguna berdasarkan id objek
+### Contoh 2 - Menghapus pengguna menurut id objek
 
 ```
 PS C:\> Remove-AzureRmADUser -ObjectId 7a9582cf-88c4-4319-842b-7a5d60967a69
@@ -71,18 +71,18 @@ PS C:\> Remove-AzureRmADUser -ObjectId 7a9582cf-88c4-4319-842b-7a5d60967a69
 
 Menghapus pengguna dengan id objek '7a9582cf-88c4-4319-842b-7a5d60967a69' dari penyewa.
 
-### Contoh 3 - Hapus pengguna dengan pemipaan
+### Contoh 3 - Menghapus pengguna dengan pipa
 
 ```
 PS C:\> Get-AzureRmADUser -ObjectId 7a9582cf-88c4-4319-842b-7a5d60967a69 | Remove-AzureRmADUser
 ```
 
-Dapatkan pengguna dengan id objek '7a9582cf-88c4-4319-842b-7a5d60967a69' dan pipes bahwa ke cmdlet Remove-AzureRmADUser untuk menghapus pengguna dari penyewa.
+Mendapatkan pengguna dengan id objek '7a9582cf-88c4-4319-842b-7a5d60967a69' dan pipa yang ke cmdlet Remove-AzureRmADUser untuk menghapus pengguna dari penyewa.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -111,8 +111,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jika ditentukan, tidak akan meminta konfirmasi untuk menghapus pengguna.
+### -Paksa
+Jika ditentukan, tidak meminta konfirmasi untuk menghapus pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -UPNOrObjectId
-Nama prinsipal pengguna atau objectId pengguna yang akan dihapus.
+Nama utama pengguna atau objekId pengguna yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDUser
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 Parameter: InputObject (ByValue)
 
 ## OUTPUTS
@@ -252,7 +252,7 @@ Parameter: InputObject (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmADUser](./New-AzureRmADUser.md)
+[AzureRmADUser Baru](./New-AzureRmADUser.md)
 
 [Get-AzureRmADUser](./Get-AzureRmADUser.md)
 

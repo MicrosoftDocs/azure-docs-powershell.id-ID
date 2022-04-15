@@ -3,12 +3,12 @@ external help file: Azs.Subscriptions-help.xml
 Module Name: Azs.Subscriptions
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 7e1de66e4b91dd4db1d6473f5303d380e303df64553c1219b5ea5cb5926e59f1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 88ba307bb9232176d4900b80856e0e08b3dc445b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417496"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142353761"
 ---
 # Get-AzsSubscription
 
@@ -22,7 +22,7 @@ Dapatkan daftar langganan.
 Get-AzsSubscription [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsSubscription [-SubscriptionId] <String> [<CommonParameters>]
 ```
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

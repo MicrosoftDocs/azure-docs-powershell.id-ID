@@ -5,11 +5,11 @@ ms.assetid: 443F6492-EFA7-4417-943A-3A8D47F8C83C
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/reset-azurermvirtualnetworkgateway
 schema: 2.0.0
 ms.openlocfilehash: f4039fb8a616a474a858728b6e222537c2d75c66
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420177"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361709"
 ---
 # Reset-AzureRmVirtualNetworkGateway
 
@@ -36,7 +36,7 @@ Reset-AzureRmVirtualNetworkGateway -VirtualNetworkGateway <PSVirtualNetworkGatew
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayVip
-Gateway vip untuk mengatur ulang gateway tertentu (misalnya untuk contoh gateway yang diaktifkan Active-Active oleh fitur.) Secara default, gateway primary instance akan diatur ulang jika tidak ada nilai yang diteruskan.
+Gateway vip untuk mengatur ulang contoh gateway tertentu (misalnya jika ada gateway Active-Active yang diaktifkan fitur.) Secara default, instans utama gateway akan direset jika tidak ada nilai yang lolos.
 
 ```yaml
 Type: String
@@ -94,15 +94,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### String
-Parameter 'GatewayVip' menerima nilai tipe 'String' dari saluran
+Parameter 'GatewayVip' menerima nilai tipe 'String' dari pipeline
 
 ### PSVirtualNetworkGateway
-Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' dari saluran
+Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' dari pipeline
 
 ## OUTPUTS
 
@@ -116,9 +116,9 @@ Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' 
 
 [New-AzureRmVirtualNetworkGateway](./New-AzureRmVirtualNetworkGateway.md)
 
-[Remove-AzureRmVirtualNetworkGateway](./Remove-AzureRmVirtualNetworkGateway.md)
+[Hapus-AzureRmVirtualNetworkGateway](./Remove-AzureRmVirtualNetworkGateway.md)
 
-[Resize-AzureRmVirtualNetworkGateway](./Resize-AzureRmVirtualNetworkGateway.md)
+[Mengubah ukuran AzureRmVirtualNetworkGateway](./Resize-AzureRmVirtualNetworkGateway.md)
 
 [Set-AzureRmVirtualNetworkGateway](./Set-AzureRmVirtualNetworkGateway.md)
 
