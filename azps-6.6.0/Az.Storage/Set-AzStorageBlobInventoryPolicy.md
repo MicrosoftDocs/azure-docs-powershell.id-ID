@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobInventoryPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobInventoryPolicy.md
 ms.openlocfilehash: 773e274454d685faf70592ac2c67cea146955cb2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139930687"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118527"
 ---
 # Set-AzStorageBlobInventoryPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui kebijakan inventaris blob di Storage tersebut.
+Membuat atau memperbarui kebijakan persediaan blob dalam akun Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageblobinventorypolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageblobinventorypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +61,7 @@ Set-AzStorageBlobInventoryPolicy [-StorageAccountResourceId] <String> -Policy <P
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageBlobInventoryPolicy** membuat atau memperbarui kebijakan inventaris blob dalam Storage Anda.
+Cmdlet **Set-AzStorageBlobInventoryPolicy** membuat atau memperbarui kebijakan inventori blob dalam akun Storage.
 
 ## EXAMPLES
 
@@ -94,9 +94,9 @@ Test2 True    containername Blob       Parquet Weekly   True             True   
 ```
 
 2 perintah pertama ini membuat 2 objek aturan BlobInventoryPolicy: aturan "Test1" untuk inventaris contaienr; aturan "Test2" untuk inventaris blob.
-Perintah berikut mengatur kebijakan inventaris blob ke akun Storage dengan 2 objek aturan, lalu memperlihatkan kebijakan dan properti aturan yang diperbarui.
+Perintah berikut ini mengatur kebijakan inventaris blob ke akun Storage dengan 2 objek aturan, lalu memperlihatkan properti kebijakan dan aturan yang diperbarui.
 
-### Contoh 2: Buat atau perbarui kebijakan inventaris blob dari akun Storage dengan kebijakan format Json.
+### Contoh 2: Membuat atau memperbarui kebijakan inventori blob akun Storage dengan kebijakan format Json.
 ```
 PS C:\> $policy = Set-AzStorageBlobInventoryPolicy -ResourceGroupName $resourceGroupName  -StorageAccountName $accountName -Policy (@{
                 Enabled=$true;
@@ -153,22 +153,22 @@ Test1 True    containername Blob       Csv     Weekly   True             True   
 Test2 False   containername Container  Parquet Daily                                                                 {conpre1, conpre2} {name, Metadata, PublicAccess}                                                                                       {name, Metadata, PublicAccess}
 ```
 
-Perintah ini membuat atau memperbarui kebijakan inventaris blob dari akun Storage dengan kebijakan format json.
+Perintah ini membuat atau memperbarui kebijakan persediaan blob akun Storage dengan kebijakan format json.
 
-### Contoh 3: Dapatkan kebijakan inventaris blob dari akun Storage, lalu atur ke akun Storage lain.
+### Contoh 3: Dapatkan kebijakan inventori blob dari akun Storage, lalu atur ke akun Storage lain.
 ```
 PS C:\>$policy = Get-AzStorageBlobInventoryPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" | Set-AzStorageBlobInventoryPolicy -ResourceGroupName "myresourcegroup2" -AccountName "mystorageaccount2"
 ```
 
-Perintah ini terlebih dahulu mendapatkan kebijakan inventaris blob dari Storage, lalu mengaturnya ke akun Storage lain.
-Ketentuan: Tujuan, Diaktifkan, dan Aturan kebijakan akan diatur ke akun tujuan.
+Perintah ini terlebih dahulu mendapatkan kebijakan persediaan blob dari akun Storage, lalu mengaturnya ke akun Storage lain.
+Proeprties: Destination, Enabled, and Rules of the policy akan diatur ke akun tujuan.
 
-### Contoh 4: Dapatkan aturan kebijakan inventaris blob dari akun Storage, lalu atur ke akun Storage lain.
+### Contoh 4: Dapatkan aturan kebijakan inventori blob dari akun Storage, lalu atur ke akun Storage lain.
 ```
 PS C:\>$policy = ,((Get-AzStorageBlobInventoryPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount").Rules) | Set-AzStorageBlobInventoryPolicy -ResourceGroupName "myresourcegroup2" -AccountName "mystorageaccount2" -Disabled
 ```
 
-Perintah ini terlebih dahulu mendapatkan kebijakan inventaris blob dari Storage, lalu menetapkan aturan ke akun Storage lain.
+Perintah ini terlebih dahulu mendapatkan kebijakan inventori blob dari akun Storage, lalu menetapkan aturan ke akun Storage lain.
 
 ## PARAMETERS
 
@@ -187,8 +187,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dinonaktifkan
-Kebijakan Inventaris Blob diaktifkan secara default, tentukan parameter ini untuk menonaktifkannya.
+### -Nonaktif
+Kebijakan Inventori Blob diaktifkan secara default, tentukan parameter ini untuk menonaktifkannya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek Kebijakan Inventaris Blob diatur
+Objek Kebijakan Persediaan Blob untuk Diatur
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSBlobInventoryPolicy
@@ -232,9 +232,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
-Aturan Kebijakan Inventaris Blob.
-Dapatkan objek menggunakan cmdlet New-AzStorageBlobInventoryPolicyRule baru.
+### -Aturan
+Aturan Kebijakan Inventori Blob.
+Dapatkan objek dengan cmdlet New-AzStorageBlobInventoryPolicyRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSBlobInventoryPolicyRule[]
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Storage Sumber Daya Akun.
+id sumber daya akun Storage.
 
 ```yaml
 Type: System.String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

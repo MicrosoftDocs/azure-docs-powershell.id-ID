@@ -1,61 +1,74 @@
 ---
 external help file: ''
-Module Name: Az.ProviderHub
-online version: https://docs.microsoft.com/powershell/module/az.providerhub/remove-azproviderhubdefaultrollout
+Module Name: Az.PostgreSql
+online version: https://docs.microsoft.com/powershell/module/az.postgresql/remove-azpostgresqlflexibleserverdatabase
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubDefaultRollout.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: 1cc5a54238bee9a39f071694719a8dcf836eca48
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerDatabase.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerDatabase.md
+ms.openlocfilehash: 1c06e1ea526a21f1395e4cfa53099b0f225a6f66
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142123109"
+ms.locfileid: "142001534"
 ---
-# Remove-AzProviderHubDefaultRollout
+# Remove-AzPostgreSqlFlexibleServerDatabase
 
 ## SYNOPSIS
-Menghapus sumber daya peluncuran.
-Peluncuran harus dalam status terminal.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/remove-azproviderhubdefaultrollout) untuk informasi terbaru.
+Menghapus database.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzProviderHubDefaultRollout -ProviderNamespace <String> -RolloutName <String>
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzPostgreSqlFlexibleServerDatabase -Name <String> -ResourceGroupName <String> -ServerName <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzProviderHubDefaultRollout -InputObject <IProviderHubIdentity> [-DefaultProfile <PSObject>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzPostgreSqlFlexibleServerDatabase -InputObject <IPostgreSqlIdentity> [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus sumber daya peluncuran.
-Peluncuran harus dalam status terminal.
+Menghapus database.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus peluncuran default menurut nama.
+### Contoh 1: Menghapus database menurut nama
 ```powershell
-PS C:\> Remove-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso" -RolloutName "defaultRollout2021w10"
+Remove-AzPostgreSqlFlexibleServerDatabase -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql -Name testdb
+
 ```
 
-Menghapus peluncuran default menurut nama.
+Menghapus database menurut nama
 
-### Contoh 2: Menghapus peluncuran default menurut nama.
+### Contoh 2: Menghapus database menurut Id
 ```powershell
-PS C:\> Remove-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso" -RolloutName "defaultRollout2021w10"
+ Remove-AzPostgreSqlFlexibleServerDatabase-InputObject /subscriptions/0000000000-0000-0000-0000-000000000000/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgresql-test/databases/flexibleserverdb
+
 ```
 
-Menghapus peluncuran default menurut nama.
+Menghapus database menurut Id
 
 ## PARAMETERS
+
+### -AsJob
+Menjalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -DefaultProfile
 Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
@@ -76,7 +89,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -84,6 +97,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama database.
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases: DatabaseName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Jalankan perintah secara asinkron
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -102,8 +145,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProviderNamespace
-Nama penyedia sumber daya yang dihosting dalam ProviderHub.
+### -ResourceGroupName
+Nama grup sumber daya.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -117,8 +161,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RolloutName
-Nama peluncuran.
+### -ServerName
+Nama server.
 
 ```yaml
 Type: System.String
@@ -183,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
 
 ## OUTPUTS
 
@@ -198,17 +242,17 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
+INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+  - `[ConfigurationName <String>]`: Nama konfigurasi server.
+  - `[DatabaseName <String>]`: Nama database.
+  - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
-  - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
-  - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
-  - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
-  - `[ResourceType <String>]`: Tipe sumber daya.
-  - `[RolloutName <String>]`: Nama peluncuran.
-  - `[Sku <String>]`: SKU.
+  - `[LocationName <String>]`: Nama lokasi.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
+  - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.
+  - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
 ## RELATED LINKS
 

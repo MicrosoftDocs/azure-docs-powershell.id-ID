@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlScript.md
 ms.openlocfilehash: ca0059754544467c7d9428c2c0f81868edda4619
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140064953"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118087"
 ---
 # Get-AzSynapseSqlScript
 
 ## SYNOPSIS
-Mendapatkan informasi tentang skrip sql di ruang kerja Synapse.
+Mendapatkan informasi tentang skrip sql dalam ruang kerja Synapse.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlscript) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzSynapseSqlScript -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlScript** mendapatkan informasi tentang skrip sql dalam ruang kerja. Jika Anda menentukan nama skrip sql, cmdlet mendapatkan informasi tentang skrip sql tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua skrip sql dalam ruang kerja.
+Cmdlet **Get-AzSynapseSqlScript** mendapatkan informasi tentang skrip sql di ruang kerja. Jika Anda menentukan nama skrip sql, cmdlet mendapatkan informasi tentang skrip sql tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua skrip sql di ruang kerja.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseSqlScript -Name ContosoSqlScript
 ```
 
-Mendapatkan satu skrip sql yang disebut ContosoSqlScript dalam ruang kerja ContosoWorkspace melalui pipeline.
+Mendapatkan satu skrip sql yang disebut ContosoSqlScript di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

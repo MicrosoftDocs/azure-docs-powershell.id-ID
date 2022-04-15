@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackend.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackend.md
 ms.openlocfilehash: 22b7d2f9e0045e833ab15e5064d42e2171ffc268
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139945753"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141961899"
 ---
 # New-AzApiManagementBackend
 
@@ -18,7 +18,7 @@ ms.locfileid: "139945753"
 Membuat entitas backend baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackend) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackend) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Membuat entitas backend baru dalam Manajemen Api.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Backend 123 dengan Skema Otorisasi Dasar
+### Contoh 1: Buat Backend 123 dengan Skema Otorisasi Dasar
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$credential = New-AzApiManagementBackendCredential -AuthorizationHeaderScheme basic -AuthorizationHeaderParameter opensesame -Query @{"sv" = @('xx', 'bb'); "sr" = @('cc')} -Header @{"x-my-1" = @('val1', 'val2')}
@@ -81,7 +81,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Detail kredensial yang harus digunakan saat berbicara dengan Backend.
 Parameter ini bersifat opsional.
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -128,10 +128,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Protokol Komunikasi Backend.
 Parameter ini diperlukan.
-Nilai yang valid adalah 'http' dan 'sabun'.
+Nilai yang valid adalah 'http' dan 'soap'.
 
 ```yaml
 Type: System.String
@@ -146,8 +146,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Proxy
-Detail Server Proksi untuk digunakan saat mengirim permintaan ke Backend.
+### -Proksi
+Detail Server Proksi yang akan digunakan saat mengirim permintaan ke Backend.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -163,9 +163,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Uri Manajemen Sumber Daya dalam Sistem Eksternal.
+Uri Manajemen Sumber Daya di Sistem Eksternal.
 Parameter ini bersifat opsional.
-URL ini bisa adalah Arm Resource Id of Logic Apps, Function Apps atau Api Apps.
+URL ini dapat berupa Id Sumber Daya Arm dari Aplikasi Logika, Aplikasi Fungsi, atau Aplikasi Api.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceFabricCluster
-Service Fabric Backend Kluster. Parameter ini bersifat opsional.
+Service Fabric cluster Backend detail. Parameter ini bersifat opsional.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementServiceFabric
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipCertificateChainValidation
-Apakah akan Melewatkan Validasi Rantai Sertifikat saat berbicara dengan Backend.
+Apakah akan Melewati Validasi Rantai Sertifikat saat berbicara dengan Backend.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipCertificateNameValidation
-Apakah akan melewatkan Validasi Nama Sertifikat saat berbicara dengan Backend.
+Apakah akan melewati Validasi Nama Sertifikat ketika berbicara dengan Backend.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -297,7 +297,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementBackendCredential
 

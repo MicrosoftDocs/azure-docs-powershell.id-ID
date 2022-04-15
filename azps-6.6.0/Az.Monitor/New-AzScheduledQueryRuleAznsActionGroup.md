@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAznsActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAznsActionGroup.md
 ms.openlocfilehash: b459bf22622c35f0ae0a8ab1d164d854ad912063
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308489"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142126097"
 ---
 # New-AzScheduledQueryRuleAznsActionGroup
 
 ## SYNOPSIS
-Membuat objek tipe Grup Tindakan Azns
+Membuat objek dari tipe Grup Tindakan Azns
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruleaznsactiongroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruleaznsactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzScheduledQueryRuleAznsActionGroup [-ActionGroup <String[]>] [-EmailSubject
 
 ## DESCRIPTION
 Membuat objek tipe Grup Tindakan Azns.
-Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log.
+Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ PS C:\> $aznsActionGroup = New-AzScheduledQueryRuleAznsActionGroup -ActionGroup 
 ## PARAMETERS
 
 ### -ActionGroup
-Daftar grup tindakan untuk dikirimi pemberitahuan
+Daftar grup tindakan untuk mengirim pemberitahuan ke
 
 ```yaml
 Type: System.String[]
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomWebhookPayload
-The customized webhook payload
+Muatan webhook yang dikustomisasi
 
 ```yaml
 Type: System.String
@@ -101,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

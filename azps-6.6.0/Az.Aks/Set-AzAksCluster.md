@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
 ms.openlocfilehash: bde9daaa6613c5ee7e33c0f9302665ab86ec2d9f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140314639"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962241"
 ---
 # Set-AzAksCluster
 
 ## SYNOPSIS
-Memperbarui atau membuat kluster Grup Terkelola.
+Memperbarui atau membuat kluster Kubernetes terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/set-azakscluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/set-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ Set-AzAksCluster [-NodePoolMode <String>] [-AcrNameToDetach <String>] [-Id] <Str
 ```
 
 ## DESCRIPTION
-Memperbarui atau membuat kluster Grup Terkelola.
+Memperbarui atau membuat kluster Kubernetes terkelola.
 
 ## EXAMPLES
 
@@ -64,12 +64,12 @@ Memperbarui atau membuat kluster Grup Terkelola.
 PS C:\> Get-AzAks -ResourceGroupName group -Name myCluster | Set-AzAks -NodeCount 5
 ```
 
-Atur jumlah node dalam kluster Kjadwal ke 5.
+Atur jumlah node dalam kluster Kubernetes menjadi 5.
 
 ## PARAMETERS
 
 ### -AcrNameToAttach
-Berikan peran 'acrpull' dari ACR tertentu menjadi Prinsipal Layanan AKS, misalnya myacr
+Berikan peran 'acrpull' dari ACR yang ditentukan untuk AKS Service Principal, misalnya myacr
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AcrNameToDetach
-Menonaktifkan penetapan peran 'acrpull' ke ACR yang ditentukan berdasarkan nama atau ID sumber daya, misalnya myacr
+Menonaktifkan penetapan peran 'acrpull' ke ACR yang ditentukan menurut nama atau ID sumber daya, misalnya myacr
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableNodeAutoScaling
-Apakah akan mengaktifkan penskala otomatis
+Apakah mengaktifkan penskalakan otomatis
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -188,8 +188,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Kversion
-Versi File yang digunakan untuk membuat kluster.
+### -KubernetesVersion
+Versi Kubernetes yang digunakan untuk membuat kluster.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxProfileAdminUserName
-Nama pengguna untuk Komputer Virtual Linux.
+Nama pengguna untuk Virtual Machines Linux.
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk kluster tersebut.
+Lokasi Azure untuk kluster.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-K nodes managed cluster Name.
+Nama kluster terkelola Kubernetes.
 
 ```yaml
 Type: System.String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMaxCount
-Jumlah maksimum node untuk penskalaan otomatis
+Jumlah node maksimum untuk penskalaan otomatis
 
 ```yaml
 Type: System.Int32
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeMinCount
-Jumlah minimum node untuk penskalaan otomatis.
+Jumlah node minimum untuk penskalaan otomatis.
 
 ```yaml
 Type: System.Int32
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeName
-Nama unik profil kelompok agen sesuai konteks langganan dan grup sumber daya.
+Nama unik profil kumpulan agen dalam konteks langganan dan grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeOsDiskSize
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodePoolMode
-NodePoolMode mewakili mode node pool.
+NodePoolMode mewakili mode kumpulan simpul.
 
 ```yaml
 Type: System.String
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeVmSize
-Ukuran Komputer Virtual.
+Ukuran Mesin Virtual.
 
 ```yaml
 Type: System.String
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalIdAndSecret
-Id klien dan rahasia klien terkait dengan AAD / prinsipal layanan.
+Id klien dan rahasia klien yang terkait dengan aplikasi AAD / prinsipal layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -384,9 +384,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ValueKeyValue
-Nilai file kunci DEFAULT atau jalur file kunci.
-Default untuk {HOME}/.comments/id_rsa.pub.
+### -SshKeyValue
+Nilai file kunci SSH atau jalur file kunci.
+Default ke {HOME}/.ssh/id_rsa.pub.
 
 ```yaml
 Type: System.String
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -433,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -449,7 +449,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -464,17 +464,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ### System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ## CATATAN
 

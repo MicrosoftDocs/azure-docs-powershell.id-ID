@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsWorkspace.md
 ms.openlocfilehash: 28f1d22f96ed16038cbbb3ccea991ea007a61556
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140100899"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123469"
 ---
 # Set-AzOperationalInsightsWorkspace
 
@@ -19,7 +19,7 @@ ms.locfileid: "140100899"
 Memperbarui ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsworkspace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,19 +47,19 @@ Cmdlet **Set-AzOperationalInsightsWorkspace** mengubah konfigurasi ruang kerja.
 PS C:\>Set-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" -Sku Standard -Tags @{ "Department" = "IT" }
 ```
 
-Perintah ini mengubah SKU dan tag ruang kerja yang bernama MyWorkspace dalam grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mengubah SKU dan tag ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Memperbarui ruang kerja dengan menggunakan saluran
+### Contoh 2: Memperbarui ruang kerja menggunakan saluran
 ```
 PS C:\>Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Set-AzOperationalInsightsWorkspace -Sku "Premium"
 ```
 
-Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkSpace, lalu meneruskannya ke cmdlet **Set-AzOperationalInsightsWorkspace** menggunakan operator pipeline untuk mengatur SKU menjadi Premium.
+Perintah ini menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkSpace, lalu mengirimkannya ke cmdlet **Set-AzOperationalInsightsWorkspace** menggunakan operator pipeline untuk mengatur SKU ke Premium.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForIngestion
-Tipe akses jaringan untuk mengakses ruang kerja dalam aplikasi. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Tipe akses jaringan untuk mengakses penyerapan ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -150,12 +150,12 @@ Accept wildcard characters: False
 
 ### -Sku
 Menentukan tingkat layanan ruang kerja.
-Nilai valid adalah: 
-- gratis
-- standar
-- premium
+Nilai yang valid adalah: 
+- Gratis
+- Standar
+- Premium
 - pernode
-- mandiri
+- Mandiri
 - pergb2018
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

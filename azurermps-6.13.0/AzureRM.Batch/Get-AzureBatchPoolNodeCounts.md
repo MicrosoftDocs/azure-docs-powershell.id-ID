@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchPoolNodeCounts.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Get-AzureBatchPoolNodeCounts.md
 ms.openlocfilehash: 6cd15b6a8ee59982bf328f751a20807835f54513
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140854506"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142143345"
 ---
 # Get-AzureBatchPoolNodeCounts
 
 ## SYNOPSIS
-Mendapatkan hitungan node Kumpulan per status node yang dikelompokkan menurut id kumpulan.
+Mendapatkan jumlah simpul batch per status simpul yang dikelompokkan menurut id pool.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ Get-AzureBatchPoolNodeCounts [-MaxCount <Int32>] -BatchContext <BatchAccountCont
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureBatchPoolNodeCounts memungkinkan pelanggan untuk mendapatkan kembali jumlah node per negara bagian node yang dikelompokkan menurut kumpulan. Kemungkinan status node adalah membuat, diam, meninggalkanPool, offline, disediakan, memulai ulang, menghidupkan ulang, menjalankan, memulai, startTask Gagal, tidak diketahui, tidak dapat digunakan dan menungguForStartTask. Cmdlet memerlukan parameter PoolId atau Pool untuk memfilter hanya pool dengan id pool yang ditentukan. 
+Cmdlet Get-AzureBatchPoolNodeCounts memungkinkan pelanggan untuk mendapatkan jumlah node kembali per status simpul yang dikelompokkan menurut kumpulan. Status node yang mungkin dibuat, diam, meninggalkanPool, offline, didahului, memulai ulang, mengganti, menjalankan, memulai, mulaiTaskFailed, tidak diketahui, tidak dapat digunakan dan menungguForStartTask. Cmdlet mengambil parameter PoolId atau Pool untuk memfilter hanya pool dengan pool id yang ditentukan. 
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ contosopool1                   Creating: 1, Idle: 1, Rebooting: 1, Running: 5, T
 contosopool2                   Idle: 1, Rebooting: 1, Total: 2                              Total: 0
 ```
 
-Jumlah node daftar per status node untuk kolam renang di bawah konteks akun kumpulan saat ini.
+Jumlah node daftar per status simpul untuk kumpulan di bawah konteks akun batch saat ini.
 
 ### Contoh 2
 
@@ -98,15 +98,15 @@ PoolId                         Dedicated                                        
 contosopool1                   Creating: 1, Idle: 1, Rebooting: 1, Running: 5, Total: 8     Total: 0
 ```
 
-Perlihatkan jumlah node per status node untuk id pool tertentu.
+Tampilkan jumlah node per status simpul untuk kumpulan id pool yang diberikan.
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan ketika berinteraksi dengan layanan Batch.
+Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
 Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
-Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi.
-Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
+Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
+Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
 Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimal kolam renang untuk dikembalikan.
-Nilai default adalah 10.
+Menentukan jumlah maksimum kumpulan yang akan dikembalikan.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Int32
@@ -152,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pool
-Menentukan **PSCloudPool** untuk mendapatkan hitungan node.
+### -Kolam Renang
+Menentukan **PSCloudPool** untuk mendapatkan jumlah node.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudPool
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Id dari pool yang akan digunakan untuk mendapatkan jumlah simpul.
+Id kolam yang untuk mendapatkan node dihitung.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,5 +207,5 @@ Parameter: BatchContext (ByValue)
 
 [Get-AzureBatchJob]()
 
-[Cmdlet Kumpulan Azure]()
+[Cmdlet Azure Batch]()
 

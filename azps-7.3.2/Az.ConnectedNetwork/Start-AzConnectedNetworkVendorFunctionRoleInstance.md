@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Start-AzConnectedNetworkVendorFunctionRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Start-AzConnectedNetworkVendorFunctionRoleInstance.md
-ms.openlocfilehash: a36711c3ac4a451fab40ee33f6cdf18e78263078
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cada751c5e1797c03fdba0e730c6676050f62cfb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201846"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142114523"
 ---
 # Start-AzConnectedNetworkVendorFunctionRoleInstance
 
 ## SYNOPSIS
-Memulai contoh peran dari fungsi jaringan vendor.
+Memulai contoh peran fungsi jaringan vendor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/start-azconnectednetworkvendorfunctionroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,17 +36,17 @@ Start-AzConnectedNetworkVendorFunctionRoleInstance -InputObject <IConnectedNetwo
 ```
 
 ## DESCRIPTION
-Memulai contoh peran dari fungsi jaringan vendor.
+Memulai contoh peran fungsi jaringan vendor.
 
 ## EXAMPLES
 
-### Contoh 1: Start-AzConnectedNetworkVendorFunctionRoleInstance via lokasi, serviceKey, nama vendor dan nama contoh peran
+### Contoh 1: Start-AzConnectedNetworkVendorFunctionRoleInstance melalui lokasi, serviceKey, nama vendor dan nama contoh peran
 ```powershell
 PS C:\> Start-AzConnectedNetworkVendorFunctionRoleInstance -LocationName centraluseuap -ServiceKey 1234-abcd-4321-dcba -SubscriptionId xxxx-3333-xxxx-3333 -VendorName myVendor -Name role1
 
 ```
 
-Memulai contoh peran fungsi jaringan vendor dengan serviceKey yang ditentukan, centraluseuap lokasi, nama vendor myVendor dan peran nama peran peran1.
+Memulai contoh peran fungsi jaringan vendor dengan serviceKey, location centraluseuap, nama vendor myVendor, dan peran nama contoh peran1.
 
 ### Contoh 2: Start-AzConnectedNetworkVendorFunctionRoleInstance melalui Identitas
 ```powershell
@@ -52,7 +55,7 @@ PS C:\> Start-AzConnectedNetworkVendorFunctionRoleInstance -InputObject $role
 
 ```
 
-Creating an identity with role instance name role1, location centraluseuap, vendor name myVendor specified subscription, serviceKey.
+Membuat identitas dengan peran nama contoh peran1, lokasi centraluseuap, nama vendor myVendor langganan tertentu, serviceKey.
 Memulai contoh peran dengan identitas tertentu.
 
 ## PARAMETERS
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.IConnectedNetworkIdentity
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama contoh peran dari fungsi jaringan vendor.
+Nama contoh peran fungsi jaringan vendor.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -263,9 +266,9 @@ INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
-  - `[PreviewSubscription <String>]`: Mempratinjau ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[RoleInstanceName <String>]`: Nama contoh peran dari fungsi jaringan vendor.
+  - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[RoleInstanceName <String>]`: Nama contoh peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.
   - `[SubscriptionId <String>]`: ID langganan target.

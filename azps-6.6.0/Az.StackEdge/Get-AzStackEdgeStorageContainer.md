@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageContainer.md
 ms.openlocfilehash: 9c15170a89b0bf014ae7cd54ca1bae3459eaf1c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140244529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947559"
 ---
 # Get-AzStackEdgeStorageContainer
 
 ## SYNOPSIS
-Dapatkan wadah untuk akun Edge Storage Anda pada perangkat.
+Mendapatkan wadah untuk akun Storage Edge di perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/get-azstackedgestoragecontainer) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Get-AzStackEdgeStorageContainer [[-Name] <String>] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeStorageContainer** mendapatkan wadah penyimpanan untuk akun Storage Edge pada perangkat Stack Edge. Anda dapat menentukan nama sebagai parameter dalam cmdlet untuk mengambil detail wadah penyimpanan tertentu. 
+Cmdlet **Get-AzStackEdgeStorageContainer** mendapatkan wadah penyimpanan untuk akun Storage Edge di perangkat Stack Edge. Anda dapat menentukan nama sebagai parameter dalam cmdlet untuk mengambil detail wadah penyimpanan tertentu. 
 
 ## EXAMPLES
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeStorageAccountName
-Menyediakan Nama EdgeStorageAccount yang sudah ada
+Sediakan Nama EdgeStorageAccount yang sudah ada
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeStorageAccountObject
-Sediakan Objek EdgeStorageAccount yang sudah ada
+Menyediakan EdgeStorageAccount Object yang sudah ada
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageAccount
@@ -200,17 +200,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeStorageAccount
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageAccount
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeStorageContainer
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageContainer
 
 ## CATATAN
 

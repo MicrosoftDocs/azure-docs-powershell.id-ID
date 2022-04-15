@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelDataConnector.md
 ms.openlocfilehash: 5f9d9115335114f67a505b62611036e58b5ed59c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140277097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142077385"
 ---
 # Update-AzSentinelDataConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "140277097"
 Memperbarui Konektor Data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentineldataconnector) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentineldataconnector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,9 +47,9 @@ Update-AzSentinelDataConnector -ResourceId <String> [-Alerts <String>] [-Subscri
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSentinelDataConnector** memperbarui Konektor Data di ruang kerja yang ditentukan.
-Anda bisa meneruskan objek **DataConnector** sebagai parameter atau dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **Update-AzSentinelDataConnector** memperbarui Konektor Data dalam ruang kerja yang ditentukan.
+Anda bisa melewati objek **DataConnector** sebagai parameter atau dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -58,12 +58,12 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\> Update-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -DataConnectorId "MyDataConnectorId" -Alerts Disabled
 ```
 
-Contoh ini mendapatkan Konektor Data dengan *DataConnectorId* dan mengatur *status Pemberitahuan* menjadi *Dinonaktifkan*.  Semua properti lainnya tetap sama.
+Contoh ini mendapatkan Konektor Data menurut *DataConnectorId* dan mengatur status *Pemberitahuan* ke *Dinonaktifkan*.  Semua properti lainnya tetap sama.
 
 ## PARAMETERS
 
-### -Pemberitahuan
-Pemberitahuan Konektor Data
+### -Peringatan
+Peringatan Konektor Data
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AwsRoleArn
-Data Connector AWS Role Smtp
+Arn Konektor Data Aws Role
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Data Connector Exchange
+Exchange Konektor Data
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharePoint
-Data Connector SharePoint
+SharePoint Konektor Data
 
 ```yaml
 Type: System.String
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan Konektor Data
+Id Langganan konektor data
 
 ```yaml
 Type: System.String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Teams
-Data Connector Teams
+Teams Konektor Data
 
 ```yaml
 Type: System.String
@@ -279,7 +279,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
