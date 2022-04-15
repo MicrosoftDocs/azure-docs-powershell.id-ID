@@ -4,11 +4,11 @@ ms.assetid: F619B52A-6BFD-43E4-B313-F4C8D95EA966
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a46d85ab819ac575b891169d6eeaf50ac2a54975
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428035"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311743"
 ---
 # Set-AzureStorSimpleDeviceBackupPolicy
 
@@ -27,8 +27,8 @@ Set-AzureStorSimpleDeviceBackupPolicy -DeviceName <String> -BackupPolicyId <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorSimpleDeviceBackupPolicy** memperbarui kebijakan pencadangan yang sudah ada.
-Anda bisa mengganti nama kebijakan, menambahkan, memperbarui atau menghapus jadwal, dan memperbarui volume yang terkait dengan kebijakan tersebut.
+Cmdlet **Set-AzureStorSimpleDeviceBackupPolicy** memperbarui kebijakan cadangan yang sudah ada.
+Anda dapat mengganti nama kebijakan, menambahkan, memperbarui, atau menghapus jadwal, dan memperbarui volume yang terkait dengan kebijakan.
 
 ## EXAMPLES
 
@@ -64,9 +64,9 @@ OperationInProgress      : None
 ```
 
 Perintah ini mengubah nama kebijakan cadangan yang memiliki ID tertentu menjadi UpdatedGeneralPolicy07.
-Perintah ini menentukan parameter *WaitForComplete,* sehingga perintah menyelesaikan tugas, lalu mengembalikan objek **TaskStatusInfo** untuk tugas tersebut.
+Perintah ini menentukan parameter *WaitForComplete* , sehingga perintah menyelesaikan tugas, lalu mengembalikan objek **TaskStatusInfo** untuk tugas tersebut.
 
-### Contoh 2: Memperbarui jadwal untuk kebijakan pencadangan
+### Contoh 2: Memperbarui jadwal untuk kebijakan cadangan
 ```
 PS C:\>$UpdateConfig = New-AzureStorSimpleDeviceBackupScheduleUpdateConfig -Id "3a6c6247-6b4d-42e2-aa87-16f4f21476ea" -BackupType CloudSnapshot -RecurrenceType Daily -RecurrenceValue 3 -RetentionCount 2 -Enabled $True
 PS C:\> $UpdateArray = @()
@@ -85,19 +85,19 @@ StatusCode : OK
 RequestId  : d2e10d44e699b371a84db44d19daf1c3
 ```
 
-Perintah pertama membuat objek konfigurasi pembaruan menggunakan cmdlet **New-AzureStorSimpleDeviceBackupScheduleUpdateConfig,** lalu menyimpannya dalam $UpdateConfig lain.
+Perintah pertama membuat objek konfigurasi pembaruan menggunakan cmdlet **New-AzureStorSimpleDeviceBackupScheduleUpdateConfig** , lalu menyimpannya dalam variabel $UpdateConfig.
 
 Perintah kedua membuat variabel array baru, bernama $UpdateArray.
-Perintah berikutnya menambahkan pembaruan yang disimpan di $UpdateConfig array itu.
+Perintah berikutnya menambahkan pembaruan yang disimpan di $UpdateConfig ke array tersebut.
 Anda bisa menambahkan lebih dari satu pembaruan ke array.
 
-Perintah terakhir memperbarui kebijakan cadangan yang memiliki ID tertentu di perangkat bernama Contoso63-AppVm.
-Kebijakan sekarang memiliki jadwal pembaruan yang disimpan di $UpdateArray.
+Perintah akhir memperbarui kebijakan cadangan yang memiliki ID tertentu pada perangkat bernama Contoso63-AppVm.
+Kebijakan sekarang memiliki jadwal yang diperbarui yang disimpan di $UpdateArray.
 
 ## PARAMETERS
 
 ### -BackupPolicyId
-Menentukan ID contoh objek **BackupPolicy** untuk diperbarui.
+Menentukan ID instans objek **BackupPolicy** untuk diperbarui.
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupPolicyName
-Menentukan nama baru untuk kebijakan pencadangan.
+Menentukan nama baru untuk kebijakan cadangan.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupScheduleIdsToDelete
-Menentukan array ID contoh objek **BackupSchedule** yang akan dihapus.
+Menentukan array ID instans objek **BackupSchedule** untuk dihapus.
 
 ```yaml
 Type: PSObject[]
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -BackupSchedulesToAdd
 Menentukan array objek **BackupScheduleBase** untuk ditambahkan ke kebijakan.
-Untuk mendapatkan objek **BackupScheduleBase,** gunakan cmdlet **New-AzureStorSimpleDeviceBackupScheduleAddConfig.**
+Untuk mendapatkan objek **BackupScheduleBase** , gunakan cmdlet **New-AzureStorSimpleDeviceBackupScheduleAddConfig** .
 
 ```yaml
 Type: PSObject[]
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupSchedulesToUpdate
-Menentukan array objek **BackupScheduleUpdateRequest untuk** diperbarui.
-Untuk mendapatkan objek **BackupScheduleUpdateRequest,** gunakan cmdlet **New-AzureStorSimpleDeviceBackupScheduleUpdateConfig.**
+Menentukan array objek **BackupScheduleUpdateRequest** untuk diperbarui.
+Untuk mendapatkan objek **BackupScheduleUpdateRequest** , gunakan cmdlet **New-AzureStorSimpleDeviceBackupScheduleUpdateConfig** .
 
 ```yaml
 Type: PSObject[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Tentukan nama perangkat StorSimple yang akan memperbarui kebijakan pencadangan.
+Menentukan nama perangkat StorSimple untuk memperbarui kebijakan cadangan.
 
 ```yaml
 Type: String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeIdsToUpdate
-Menentukan array ID volume untuk memperbarui kebijakan pencadangan.
+Menentukan array ID volume untuk memperbarui kebijakan cadangan.
 
 ```yaml
 Type: PSObject[]
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -249,17 +249,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 
@@ -267,9 +267,9 @@ Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek Ta
 
 [Get-AzureStorSimpleDeviceBackupPolicy](./Get-AzureStorSimpleDeviceBackupPolicy.md)
 
-[New-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
+[Baru-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
 
-[Remove-AzureStorSimpleDeviceBackupPolicy](./Remove-AzureStorSimpleDeviceBackupPolicy.md)
+[Hapus-AzureStorSimpleDeviceBackupPolicy](./Remove-AzureStorSimpleDeviceBackupPolicy.md)
 
 [New-AzureStorSimpleDeviceBackupScheduleUpdateConfig](./New-AzureStorSimpleDeviceBackupScheduleUpdateConfig.md)
 

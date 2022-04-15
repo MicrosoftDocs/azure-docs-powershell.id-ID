@@ -5,16 +5,16 @@ ms.assetid: EC8C915A-A0BC-41DE-9DBF-3617536E3D1A
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/new-azurermcontainerserviceconfig
 schema: 2.0.0
 ms.openlocfilehash: 4a6f30d1f958094267b4ba8ddf09eb2e342ee889
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142336481"
 ---
 # New-AzureRmContainerServiceConfig
 
 ## SYNOPSIS
-Membuat objek konfigurasi lokal untuk layanan wadah.
+Membuat objek konfigurasi lokal untuk layanan kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,8 +32,8 @@ New-AzureRmContainerServiceConfig [[-Location] <String>] [[-Tag] <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmContainerServiceConfig** membuat objek konfigurasi lokal untuk layanan wadah.
-Berikan objek ini ke New-AzureRmContainerService cmdlet untuk membuat layanan wadah.
+Cmdlet **New-AzureRmContainerServiceConfig** membuat objek konfigurasi lokal untuk layanan kontainer.
+Sediakan objek ini ke cmdlet New-AzureRmContainerService untuk membuat layanan kontainer.
 
 ## EXAMPLES
 
@@ -43,11 +43,11 @@ PS C:\> $Container = New-AzureRmContainerServiceConfig -Location "Australia Sout
 PS C:\> $Container | Add-AzureRmContainerServiceAgentPoolProfile -Name "AgentPool01" -VmSize "Standard_A1" -DnsPrefix "APResourceGroup17"
 ```
 
-Perintah ini akan membuat wadah, lalu menyimpannya dalam $Container variabel.
+Perintah ini membuat wadah, lalu menyimpannya dalam variabel $Container.
 
-Perintah menentukan berbagai pengaturan untuk konfigurasi layanan kontainer. Perintah tersebut meneruskan objek konfigurasi ke cmdlet Add-AzureRmContainerServiceAgentPoolProfile dengan menggunakan operator pipeline. Cmdlet tersebut menambahkan profil agen pool.
+Perintah menentukan berbagai pengaturan untuk konfigurasi layanan kontainer. Perintah melewati objek konfigurasi ke cmdlet Add-AzureRmContainerServiceAgentPoolProfile menggunakan operator pipeline. Cmdlet itu menambahkan profil kumpulan agen.
 
-Tentukan objek di $Container parameter *ContainerService* dari **New-AzureRmContainerService.**
+Tentukan objek dalam $Container untuk parameter *ContainerService* **new-AzureRmContainerService**.
 
 ## PARAMETERS
 
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -AgentPoolProfile
-Menentukan array objek profil kolam renang agen untuk layanan kontainer.
-Menambahkan profil menggunakan cmdlet Add-AzureRmContainerServiceAgentPoolProfile baru.
+Menentukan array objek profil kumpulan agen untuk layanan kontainer.
+Tambahkan profil menggunakan cmdlet Add-AzureRmContainerServiceAgentPoolProfile.
 
 ```yaml
 Type: ContainerServiceAgentPoolProfile[]
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomProfileOrchestrator
-Menentukan grup profil kustom.
+Menentukan orkestrator profil kustom.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -OrchestratorType
-Menentukan tipe pengelola untuk layanan kontainer.
-Nilai yang dapat diterima untuk parameter ini adalah: DCOS dan Swarm.
+Menentukan tipe orkestrator untuk layanan kontainer.
+Nilai yang dapat diterima untuk parameter ini adalah: DCOS dan Kawanan.
 
 ```yaml
 Type: ContainerServiceOrchestratorTypes
@@ -204,8 +204,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -KlikPublicKey
-Menentukan kunci publik LINUX untuk layanan wadah berbasis Linux.
+### -SshPublicKey
+Menentukan kunci publik SSH untuk layanan kontainer berbasis Linux.
 
 ```yaml
 Type: String[]
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmDiagnosticsEnabled
-Menunjukkan apakah konfigurasi ini mengaktifkan diagnostik untuk mesin virtual layanan wadah.
+Menunjukkan apakah konfigurasi ini mengaktifkan diagnostik untuk mesin virtual layanan kontainer.
 
 ```yaml
 Type: Boolean
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsProfileAdminPassword
-Menentukan kata sandi administrator untuk layanan kontainer yang menggunakan Windows operasi.
+Menentukan kata sandi administrator untuk layanan kontainer yang menggunakan sistem operasi Windows.
 
 ```yaml
 Type: String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsProfileAdminUsername
-Menentukan nama pengguna administrator untuk layanan kontainer yang menggunakan Windows operasi.
+Menentukan nama pengguna administrator untuk layanan kontainer yang menggunakan sistem operasi Windows.
 
 ```yaml
 Type: String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -312,11 +312,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -329,4 +329,4 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Add-AzureRmContainerServiceAgentPoolProfile](./Add-AzureRmContainerServiceAgentPoolProfile.md)
 
-[New-AzureRmContainerService](./New-AzureRmContainerService.md)
+[Baru-AzureRmContainerService](./New-AzureRmContainerService.md)

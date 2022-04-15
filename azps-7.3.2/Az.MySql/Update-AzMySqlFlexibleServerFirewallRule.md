@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 526f9dd30d05cb71c0d196329509418632a9d4aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b86e77d8cb0bc88ba5ebf26dfc9fa5fc5f1151c2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555952"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319081"
 ---
 # Update-AzMySqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
 Memperbarui aturan firewall yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Memperbarui aturan firewall yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui MySql Firewall Rule menurut nama
+### Contoh 1: Perbarui Aturan MySql Firewall menurut nama
 ```powershell
 PS C:\> Update-AzMySqlFlexibleServerFirewallRule -Name rule -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
 
@@ -62,7 +65,7 @@ rule 0.0.0.2        0.0.0.3
 
 Cmdlet ini memperbarui Aturan Firewall MySql menurut nama.
 
-### Contoh 2: Perbarui MySql Firewall Rule menurut identitas.
+### Contoh 2: Update MySql Firewall Rule by identity.
 ```powershell
 PS C:\> $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBForMySql/flexibleServers/mysql-test/firewallRules/rule"
 PS C:\> Update-AzMySqlFlexibleServerFirewallRule -InputObject $ID -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
@@ -72,7 +75,7 @@ Name StartIPAddress EndIPAddress
 rule 0.0.0.2        0.0.0.3
 ```
 
-Cmdlets ini memperbarui MySql Firewall Rule menurut identitas.
+Cmdlet ini memperbarui Aturan MySql Firewall menurut identitas.
 
 ## PARAMETERS
 
@@ -92,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien ip tunggal aturan firewall server yang ditentukan.
-Harus menggunakan format IPv4.
+Klien menentukan IP tunggal aturan firewall server.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 
 ### -StartIPAddress
 Alamat IP mulai aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -303,7 +306,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetric.md
-ms.openlocfilehash: 67180cfbd9d9ded07eb40731e3839bf73e6ebfec
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3d271d2613d6be9e7edba15ce94328047661df77
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008211"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319135"
 ---
 # Get-AzMetric
 
 ## SYNOPSIS
-Mendapatkan nilai metrik dari sumber daya.
+Mendapatkan nilai metrik sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azmetric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Get-AzMetric [-ResourceId] <String> [-TimeGrain <TimeSpan>] [-AggregationType <A
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzMetric** mendapatkan nilai metrik untuk sumber daya yang ditentukan.
+Cmdlet **Get-AzMetric** mendapatkan nilai metrik untuk sumber daya tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan metrik dengan output ringkasan
+### Contoh 1: Dapatkan metrik dengan output ringkasan
 ```
 PS C:\>Get-AzMetric -ResourceId "/subscriptions/e3f5b07d-3c39-4b0f-bf3b-40fdeba10f2a/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website3" -TimeGrain 00:01:00
 DimensionName  :
@@ -66,9 +69,9 @@ TimeGrain      : 00:01:00
 Unit           : Bytes
 ```
 
-Perintah ini menghasilkan nilai metrik untuk situs web3 dengan tinggi waktu 1 menit.
+Perintah ini mendapatkan nilai metrik untuk situs web3 dengan butir waktu 1 menit.
 
-### Contoh 2: Mendapatkan metrik dengan output mendetail
+### Contoh 2: Dapatkan metrik dengan output mendetail
 ```
 PS C:\>Get-AzMetric -ResourceId "/subscriptions/e3f5b07d-3c39-4b0f-bf3b-40fdeba10f2a/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website3" -TimeGrain 00:01:00 -DetailedOutput
 MetricValues   :
@@ -107,10 +110,10 @@ TimeGrain      : 00:01:00
 Unit           : Seconds
 ```
 
-Perintah ini menghasilkan nilai metrik untuk situs web3 dengan tinggi waktu 1 menit.
+Perintah ini mendapatkan nilai metrik untuk situs web3 dengan butir waktu 1 menit.
 Outputnya mendetail.
 
-### Contoh 3: Mendapatkan output mendetail untuk metrik yang ditentukan
+### Contoh 3: Dapatkan output mendetail untuk metrik tertentu
 ```
 PS C:\>Get-AzMetric -ResourceId "/subscriptions/e3f5b07d-3c39-4b0f-bf3b-40fdeba10f2a/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website3" -MetricName "Requests" -TimeGrain 00:01:00 -DetailedOutput
 MetricValues   :
@@ -167,7 +170,7 @@ Unit           : Count
 
 Perintah ini mendapatkan output mendetail untuk metrik Permintaan.
 
-### Contoh 4: Mendapatkan output yang diringkas untuk metrik tertentu dengan filter dimensi tertentu
+### Contoh 4: Dapatkan output ringkasan untuk metrik tertentu dengan filter dimensi tertentu
 ```
 PS C:\> $dimFilter = @((New-AzMetricFilter -Dimension City -Operator eq -Value "Seattle","Toronto"), (New-AzMetricFilter -Dimension AuthenticationType -Operator eq -Value User))
 
@@ -198,7 +201,7 @@ Timeseries  :
                     Average     : 967
 ```
 
-Perintah ini mendapatkan output yang diringkas untuk metrik Tampilan Halaman dengan filter dimensi dan tipe agregasi yang ditentukan.
+Perintah ini mendapatkan output ringkasan untuk metrik PageViews dengan filter dimensi dan tipe agregasi tertentu.
 
 ## PARAMETERS
 
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -233,8 +236,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
-Mengindikasikan bahwa cmdlet ini menampilkan output mendetail.
+### -DetailedOutput
+Menunjukkan bahwa cmdlet ini menampilkan output mendetail.
 Secara default, output diringkas.
 
 ```yaml
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrderBy
-Menentukan agregasi yang akan digunakan untuk mengurutkan hasil dan arah pengurutan (Contoh: jumlah sebagaic).
+Menentukan agregasi yang digunakan untuk mengurutkan hasil dan arah pengurutan (Contoh: jumlahkan asc).
 
 ```yaml
 Type: System.String
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya dari metrik.
+Menentukan ID sumber daya metrik.
 
 ```yaml
 Type: System.String
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeGrain
-Menentukan tinggi waktu dari metrik sebagai objek **TimeSpan** dalam format hh:mm:ss.
+Menentukan butir waktu metrik sebagai objek **Rentang Waktu** dalam format hh:mm:ss.
 
 ```yaml
 Type: System.TimeSpan
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Menentukan jumlah maksimum data untuk diambil (default:10), yang akan ditentukan dengan $filter.
+Menentukan jumlah maksimum rekaman untuk diambil (default:10), yang akan ditentukan dengan $filter.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -423,13 +426,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.TimeSpan
 
-### System.Nullable'1[[Microsoft.Azure.Management.Monitor.Models.AggregationType, Microsoft.Azure.Management.Monitor, Version=0.21.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Monitor.Models.AggregationType, Microsoft.Azure.Management.Monitor, Version=0.21.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.DateTime
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Monitor.Models.ResultType, Microsoft.Azure.Management.Monitor, Version=0.21.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Monitor.Models.ResultType, Microsoft.Azure.Management.Monitor, Version=0.21.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String[]
 
@@ -446,6 +449,6 @@ Informasi selengkapnya tentang metrik yang didukung dapat ditemukan di: https://
 ## RELATED LINKS
 
 [Get-AzMetricDefinition](./Get-AzMetricDefinition.md)
- [New-AzMetricFilter](./New-AzMetricFilter.md)
+ [Filter AzMetric Baru](./New-AzMetricFilter.md)
 
 

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: 91346996fac4c61d176f3804619703e42b897741
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3f25a6ec2477edd5119e8a9da38f04b627622043
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006871"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142342925"
 ---
 # Get-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
-Mendapatkan item dari wadah dalam Cadangkan.
+Mendapatkan item dari wadah di Cadangan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,9 +51,9 @@ Get-AzRecoveryServicesBackupItem [-Policy] <PolicyBase> [[-Name] <String>]
 ## DESCRIPTION
 
 Cmdlet **Get-AzRecoveryServicesBackupItem** mendapatkan daftar item yang diproteksi dalam wadah dan status proteksi item.
-Wadah yang terdaftar di vault Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat diproteksi.
+Wadah yang terdaftar pada kubah Layanan Pemulihan Azure dapat memiliki satu atau beberapa item yang dapat dilindungi.
 Untuk mesin virtual Azure, hanya ada satu item cadangan dalam wadah mesin virtual.
-Mengatur konteks vault menggunakan parameter -VaultId.
+Mengatur konteks kubah menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
@@ -62,10 +65,10 @@ PS C:\> $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureV
 PS C:\> $BackupItem = Get-AzRecoveryServicesBackupItem -Container $Container -WorkloadType AzureVM -VaultId $vault.ID
 ```
 
-Perintah pertama mendapatkan wadah tipe AzureVM, lalu menyimpannya dalam $Container variabel.
-Perintah kedua mendapatkan item Cadangan bernama V2VM dalam $Container, lalu menyimpannya di $BackupItem cadangan.
+Perintah pertama mendapatkan wadah tipe AzureVM, lalu menyimpannya dalam variabel $Container.
+Perintah kedua mendapatkan item Cadangan bernama V2VM dalam $Container, lalu menyimpannya dalam variabel $BackupItem.
 
-### Contoh 2: Mendapatkan Item Berbagi File Azure dari FriendlyName
+### Contoh 2: Dapatkan Item Berbagi File Azure dari FriendlyName
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -73,9 +76,9 @@ PS C:\> $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureS
 PS C:\> $BackupItem = Get-AzRecoveryServicesBackupItem -Container $Container -WorkloadType AzureFiles -VaultId $vault.ID -FriendlyName "FileShareName"
 ```
 
-Perintah pertama mendapatkan wadah tipe AzureStorage, lalu menyimpannya dalam $Container tertentu.
-Perintah kedua mendapatkan item Cadangan dengan friendlyName sesuai dengan nilai yang diberikan dalam Parameter FriendlyName, lalu menyimpannya di $BackupItem ini.
-Menggunakan parameter FriendlyName dapat menghasilkan pengembalian lebih dari satu File Azure Bersama. Dalam kasus tersebut, jalankan cmdlet dengan memberikan nilai untuk parameter -Name sebagai properti Name yang dikembalikan dalam kumpulan hasil dari $BackupItem.
+Perintah pertama mendapatkan wadah tipe AzureStorage, lalu menyimpannya dalam variabel $Container.
+Perintah kedua mendapatkan item Cadangan yang friendlyName-nya cocok dengan nilai yang dilewati dalam Parameter FriendlyName, lalu menyimpannya dalam variabel $BackupItem.
+Menggunakan parameter FriendlyName dapat menghasilkan lebih dari satu Azure File Share. Dalam kasus tersebut, jalankan cmdlet dengan meneruskan nilai untuk parameter -Name sebagai properti Name yang dikembalikan dalam rangkaian hasil $BackupItem.
 
 ## PARAMETERS
 
@@ -101,9 +104,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 
-Menentukan objek wadah tempat cmdlet ini mendapatkan item cadangan.
+Menentukan objek kontainer tempat cmdlet ini mendapatkan item cadangan.
 Untuk mendapatkan cmdlet **AzureRmRecoveryServicesBackupContainer**, gunakan cmdlet **Get-AzRecoveryServicesBackupContainer** .
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteState
-Menentukan pernyataan penghapusan item Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan deletestate item Nilai yang dapat diterima untuk parameter ini adalah:
 
 - ToBeDeleted
 - NotDeleted
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-FriendlyName dari item yang dicadangkan
+FriendlyName item yang dicadangkan
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 
-Objek kebijakan proteksi.
+Objek kebijakan perlindungan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -202,17 +205,17 @@ Accept wildcard characters: False
 
 ### -ProtectionState
 
-Menentukan status proteksi.
+Menentukan status perlindungan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - IRPending.
 Sinkronisasi awal belum dimulai dan belum ada titik pemulihan.
-- Diproteksi.
-Proteksi sedang berlangsung.
+- Dilindungi.
+Perlindungan sedang berlangsung.
 - ProtectionError.
 Terdapat kesalahan proteksi.
-- ProtectionStopped.
-Proteksi dinonaktifkan.
+- Perlindungan dihentikan.
+Perlindungan dinonaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemProtectionState
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UseSecirisanryRegion
-Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
+### -UseSecondaryRegion
+Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

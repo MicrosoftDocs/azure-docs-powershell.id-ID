@@ -4,16 +4,16 @@ ms.assetid: 649D0A6C-77CE-4E49-AFF8-DF70ABE9FA13
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d1f186a2799cad592eabb88a94d39fcacead94f3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423178"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311705"
 ---
 # Set-AzureVMDscExtension
 
 ## SYNOPSIS
-Mengonfigurasi ekstensi DSC di komputer virtual.
+Mengonfigurasi ekstensi DSC pada mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -29,11 +29,11 @@ Set-AzureVMDscExtension [-ReferenceName <String>] [-ConfigurationArgument <Hasht
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMDscExtension** mengonfigurasi ekstensi Desired State Configuration (DSC) pada komputer virtual.
+Cmdlet **Set-AzureVMDscExtension** mengonfigurasi ekstensi Desired State Configuration (DSC) pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Konfigurasi ekstensi DSC di komputer virtual
+### Contoh 1: Mengonfigurasi ekstensi DSC pada mesin virtual
 ```
 PS C:\> Set-AzureVMDscExtension -VM $VM -ConfigurationArchive MyConfiguration.ps1.zip  -ConfigurationName MyConfiguration -ConfigurationArgument @{ Path = 'C:\MyDirectory' }
 DeploymentName              : my-vm-svc
@@ -62,14 +62,14 @@ OperationId                 : a0217a7af900c1f8a212299a3333cdbd6
 OperationStatus             : OK
 ```
 
-Perintah ini mengonfigurasi ekstensi DSC di komputer virtual.
+Perintah ini mengonfigurasi ekstensi DSC pada mesin virtual.
 
-Paket MyConfiguration.ps1.zip tersebut harus telah diunggah sebelumnya ke penyimpanan Azure menggunakan perintah **Publish-AzureVMDscConfiguration** dan menyertakan skrip MyConfiguration.ps1 dan modul yang bergantung padanya.
+Paket MyConfiguration.ps1.zip harus telah diunggah ke penyimpanan Azure sebelumnya menggunakan perintah **Konfigurasi Publish-AzureVMDsc** dan menyertakan skrip MyConfiguration.ps1 dan modul yang bergantung pada paket tersebut.
 
 Argumen MyConfiguration menunjukkan konfigurasi DSC tertentu dalam skrip untuk dijalankan.
-Parameter *- KonfigurasiParameter* menentukan hashtable dengan argumen yang disampaikan ke fungsi konfigurasi.
+Parameter -*ConfigurationArgument* menentukan hashtable dengan argumen yang dikirimkan ke fungsi konfigurasi.
 
-### Contoh 2: Mengonfigurasi ekstensi DSC di komputer virtual menggunakan jalur ke data konfigurasi
+### Contoh 2: Mengonfigurasi ekstensi DSC pada mesin virtual menggunakan jalur ke data konfigurasi
 ```
 PS C:\> $VM | Set-AzureVMDscExtension -ConfigurationArchive MyConfiguration.ps1.zip  -ConfigurationName MyConfiguration -ConfigurationArgument @{ Credential = Get-Credential } -ConfigurationDataPath MyConfigurationData.psd1
 DeploymentName              : my-vm-svc
@@ -98,13 +98,13 @@ OperationId                 : a0217a7af900c1f8a212299a3333cdbd7
 OperationStatus             : OK
 ```
 
-Perintah ini mengonfigurasi ekstensi DSC di komputer virtual menggunakan jalur ke data konfigurasi.
+Perintah ini mengonfigurasi ekstensi DSC pada mesin virtual menggunakan jalur ke data konfigurasi.
 
 ## PARAMETERS
 
 ### -ConfigurationArchive
 Menentukan nama paket konfigurasi (file .zip) yang sebelumnya diunggah oleh Publish-AzureVMDscConfiguration.
-Parameter ini harus menentukan nama file saja, tanpa jalur apa pun.
+Parameter ini hanya harus menentukan nama file, tanpa jalur apa pun.
 
 ```yaml
 Type: String
@@ -118,15 +118,15 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ConfigurationA argumentment
-Menentukan tabel hash yang menentukan argumen untuk fungsi konfigurasi.
-Kunci terkait dengan nama parameter dan nilai untuk nilai parameter.
+### -ConfigurationArgument
+Menentukan hashtable yang menentukan argumen untuk fungsi konfigurasi.
+Kunci terkait dengan nama parameter dan nilai dengan nilai parameter.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - tipe primitif
-- string
-- larik
+- String
+- Array
 - PSCredential
 
 ```yaml
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationDataPath
 Menentukan jalur file .psd1 yang menentukan data untuk fungsi konfigurasi.
-File ini harus berisi hashtable seperti yang diuraikan dalam Memisahkan Konfigurasi dan Data https://msdn.microsoft.com/en-us/PowerShell/DSC/configData Lingkungan.
+File ini harus berisi hashtable seperti yang dijelaskan dalam Memisahkan Datahttps://msdn.microsoft.com/en-us/PowerShell/DSC/configData Konfigurasi dan Lingkungan.
 
 ```yaml
 Type: String
@@ -158,12 +158,12 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama skrip konfigurasi atau modul yang diminta oleh ekstensi DSC.
+Menentukan nama skrip atau modul konfigurasi yang diminta oleh ekstensi DSC.
 
-Nilai parameter ini harus nama salah satu fungsi konfigurasi yang terdapat dalam skrip atau modul yang di packaged in *ConfigurationArchive*.
+Nilai parameter ini harus berupa nama salah satu fungsi konfigurasi yang terdapat dalam skrip atau modul yang dipaketkan dalam *ConfigurationArchive*.
 
-Cmdlet ini akan menggunakan nama file yang diberikan oleh parameter *ConfigurationArchive* jika Anda menghilangkan parameter ini, tidak termasuk ekstensi apa pun.
-Misalnya, jika *ConfigurationArchive adalah* "SalesWebSite.ps1.zip", nilai default untuk *ConfigurationName adalah* "SalesWebSite".
+Cmdlet ini default ke nama file yang diberikan oleh parameter *ConfigurationArchive* jika Anda menghilangkan parameter ini, tidak termasuk ekstensi apa pun.
+Misalnya, jika *ConfigurationArchive* adalah "SalesWebSite.ps1.zip", nilai default untuk *ConfigurationName* adalah "SalesWebSite".
 
 ```yaml
 Type: String
@@ -205,8 +205,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menimpa blob yang sudah ada.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menimpa blob yang ada.
 
 ```yaml
 Type: SwitchParameter
@@ -221,16 +221,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -260,8 +260,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -276,10 +276,10 @@ Accept wildcard characters: False
 ```
 
 ### -ReferenceName
-Menentukan string yang ditentukan pengguna yang bisa digunakan untuk merujuk ke ekstensi.
-Parameter ini ditentukan saat ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
-Untuk pembaruan berikutnya, Anda harus menentukan nama referensi yang digunakan sebelumnya saat memperbarui ekstensi.
-*NamaReferensi* yang ditetapkan untuk ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM.**
+Menentukan string yang ditentukan pengguna yang dapat digunakan untuk merujuk ke ekstensi.
+Parameter ini ditentukan ketika ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
+Untuk pembaruan berikutnya, Anda harus menentukan nama referensi yang sebelumnya digunakan saat memperbarui ekstensi.
+*ReferenceName* yang ditetapkan ke ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM**.
 
 ```yaml
 Type: String
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 
 ### -StorageContext
 Menentukan konteks penyimpanan Azure yang menyediakan pengaturan keamanan yang digunakan untuk mengakses skrip konfigurasi.
-Konteks ini menyediakan akses baca ke wadah yang ditentukan oleh parameter *ContainerName.*
+Konteks ini menyediakan akses baca ke wadah yang ditentukan oleh parameter *ContainerName* .
 
 ```yaml
 Type: AzureStorageContext
@@ -309,7 +309,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -StorageEndpointFix
+### -StorageEndpointSuffix
 Menentukan akhiran titik akhir DNS untuk semua layanan penyimpanan, misalnya, "core.contoso.net".
 
 ```yaml
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi ekstensi DSC tertentu yang akan digunakan.
+Menentukan versi ekstensi DSC tertentu untuk digunakan.
 Nilai default diatur ke "1.*" jika parameter ini tidak ditentukan.
 
 ```yaml
@@ -356,19 +356,19 @@ Accept wildcard characters: False
 ```
 
 ### -WmfVersion
-Menentukan versi instalan Windows Management Framework (WMF) di komputer virtual.
-Ekstensi DSC bergantung pada fitur DSC yang hanya tersedia di pembaruan WMF.
-Parameter ini menentukan versi pembaruan untuk diinstal di komputer virtual.
+Menentukan versi Windows Management Framework (WMF) untuk diinstal pada mesin virtual.
+Ekstensi DSC bergantung pada fitur DSC yang hanya tersedia dalam pembaruan WMF.
+Parameter ini menentukan versi pembaruan mana yang akan diinstal pada mesin virtual.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - 4.0.
-Menginstal WMF 4.0 kecuali versi yang lebih baru telah diinstal.
+Menginstal WMF 4.0 kecuali versi yang lebih baru sudah diinstal.
 - 5.0.
 Menginstal rilis terbaru WMF 5.0.
-- terbaru.
+- Terbaru.
 Menginstal WMF terbaru, saat ini WMF 5.0.
 
-Nilai default adalah yang terbaru.
+Nilai default terbaru.
 
 ```yaml
 Type: String
@@ -383,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -414,7 +414,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

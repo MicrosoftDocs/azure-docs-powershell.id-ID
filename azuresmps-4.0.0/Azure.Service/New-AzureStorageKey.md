@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 09ABE9E2-1080-4DEF-92DD-B8FF4C8B308C
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 141308e5b0c4ba309fd2bee93cc155394a45e0f8b2bf0a5aba823e7988867820
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e65514fa66bbc1c442dc60755c342dd7d29ce3b7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417724"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313126"
 ---
 # New-AzureStorageKey
 
@@ -25,12 +25,12 @@ New-AzureStorageKey [-KeyType] <String> [-StorageAccountName] <String> [-Profile
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorageKey** meregenerasi kunci primer atau sekunder untuk Azure Storage mereka.
-Fungsi ini mengembalikan objek yang berisi nama akun penyimpanan, kunci primer, dan kunci sekunder sebagai properti.
+Cmdlet **New-AzureStorageKey** meregenerasi kunci utama atau sekunder untuk akun Azure Storage.
+Ini mengembalikan objek yang berisi nama akun penyimpanan, kunci utama, dan kunci sekunder sebagai properti.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci penyimpanan utama
+### Contoh 1: Meregenerasi kunci penyimpanan utama
 ```
 PS C:\> New-AzureStorageKey -KeyType "Primary" -StorageAccountName "ContosoStore01"
 ```
@@ -47,16 +47,16 @@ Perintah ini meregenerasi kunci penyimpanan sekunder untuk akun penyimpanan Cont
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan kunci mana yang harus digenerasi.
-Nilai valid adalah: Utama dan Sekunder.
+Menentukan kunci mana yang akan diregenerasi.
+Nilai yang valid adalah: Utama dan Sekunder.
 
 ```yaml
 Type: String
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

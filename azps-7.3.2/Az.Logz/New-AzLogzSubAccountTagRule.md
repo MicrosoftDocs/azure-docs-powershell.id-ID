@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/new-azlogzs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzSubAccountTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzSubAccountTagRule.md
-ms.openlocfilehash: 9b3b687dc48adabca28b18a377b4c74c646ae787
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9a016ff199562efb14e30d83d43b5045689f25a8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549449"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319549"
 ---
 # New-AzLogzSubAccountTagRule
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan aturan tag untuk sub sumber daya akun tertentu.
+Membuat atau memperbarui kumpulan aturan tag untuk sumber daya sub akun tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzsubaccounttagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzLogzSubAccountTagRule -MonitorName <String> -ResourceGroupName <String> -S
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan aturan tag untuk sub sumber daya akun tertentu.
+Membuat atau memperbarui kumpulan aturan tag untuk sumber daya sub akun tertentu.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini membuat atau memperbarui kumpulan aturan tag untuk sub sumber daya sub akun tertentu.
+Perintah ini membuat atau memperbarui kumpulan aturan tag untuk sumber daya sub akun tertentu.
 
 ## PARAMETERS
 
@@ -60,12 +63,12 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleFilteringTag
-Daftar tag pemfilteran yang akan digunakan untuk merekam log.
-Hal ini hanya berlaku jika bendera SendActivityLogs diaktifkan.
-Jika kosong, semua sumber daya akan diambil.
-Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
+Daftar pemfilteran tag yang akan digunakan untuk mengambil log.
+Ini hanya berlaku jika bendera SendActivityLogs diaktifkan.
+Jika kosong, semua sumber daya akan direkam.
+Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
 Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-Untuk membuat, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IFilteringTag[]
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleSendAadLog
-Bendera menentukan apakah AAD log harus dikirim untuk sumber daya Monitor.
+Bendera yang menentukan apakah log AAD harus dikirim untuk sumber daya Monitor.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleSendActivityLog
-Bendera yang menentukan apakah log aktivitas dari Sumber Daya Azure harus dikirim untuk sumber daya Monitor.
+Bendera yang menentukan apakah log aktivitas dari sumber daya Azure harus dikirim untuk sumber daya Monitor.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleSendSubscriptionLog
-Bendera menentukan apakah log langganan harus dikirim untuk sumber daya Monitor.
+Bendera yang menentukan apakah log langganan harus dikirim untuk sumber daya Monitor.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,8 +237,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk merekam log. Hal ini hanya berlaku jika bendera SendActivityLogs diaktifkan. Jika kosong, semua sumber daya akan diambil. Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-  - `[Action <TagAction?>]`: Tindakan yang valid untuk tag pemfilteran. Pengecualian akan diprioritaskan atas pencakusan.
+LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk mengambil log. Ini hanya berlaku jika bendera SendActivityLogs diaktifkan. Jika kosong, semua sumber daya akan direkam. Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+  - `[Action <TagAction?>]`: Tindakan valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
   - `[Name <String>]`: Nama (juga dikenal sebagai kunci) tag.
   - `[Value <String>]`: Nilai tag.
 

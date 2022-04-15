@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Test-AzureRmContainerRegistryNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Test-AzureRmContainerRegistryNameAvailability.md
 ms.openlocfilehash: 996dfdb0c534369aed47787601f8a2883e2af788
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140862704"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281789"
 ---
 # Test-AzureRmContainerRegistryNameAvailability
 
 ## SYNOPSIS
-Memeriksa ketersediaan nama registri wadah.
+Memeriksa ketersediaan nama registri kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ Test-AzureRmContainerRegistryNameAvailability [-Name] <String> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzureRmContainerRegistryNameAvailability akan memeriksa apakah nama registri kontainer valid dan tersedia untuk digunakan.
+Cmdlet Test-AzureRmContainerRegistryNameAvailability memeriksa apakah nama registri kontainer valid dan tersedia untuk digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Memeriksa ketersediaan wadah nama registri
+### Contoh 1: Memeriksa ketersediaan nama registri kontainer
 ```powershell
 PS C:\>Test-AzureRmContainerRegistryNameAvailability -Name 'SomeRegistryName'
 
@@ -40,12 +40,12 @@ NameAvailable Reason Message
          True
 ```
 
-Perintah ini memeriksa ketersediaan wadah nama registri \`SomeRegistryName\`.
+Perintah ini memeriksa ketersediaan nama \`registri kontainer SomeRegistryName\`.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -89,5 +89,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmContainerRegistry]()
+[AzureRmContainerRegistry baru]()
 

@@ -3,17 +3,17 @@ external help file: Azs.Compute.Admin-help.xml
 Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: d544ccf0a3ef80767ad3015de93e0dc11f368a72f11891470b6e739a33acc1e1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 06f2d231754fc422115cf800ef66189378e0cd4d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417008"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142310857"
 ---
 # Get-AzsDiskMigrationJob
 
 ## SYNOPSIS
-Mengembalikan daftar pekerjaan migrasi disk yang dikelola.
+Mengembalikan daftar pekerjaan migrasi disk terkelola.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-AzsDiskMigrationJob [-Status <String>] [-Location <String>] [<CommonParamete
 Get-AzsDiskMigrationJob -ResourceId <String> [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsDiskMigrationJob [-Location <String>] -Name <String> [<CommonParameters>]
 ```
@@ -42,14 +42,14 @@ Mengembalikan daftar pekerjaan migrasi disk.
 $migration = Get-AzsDiskMigrationJob -location local -Name "mymigrationName"
 ```
 
-Mendapatkan pekerjaan migrasi disk terkelola tertentu.
+Dapatkan pekerjaan migrasi disk terkelola tertentu.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 $migration = Get-AzsDiskMigrationJob -location local
 ```
 
-Mengembalikan daftar pekerjaan migrasi disk yang dikelola di lokasi lokal.
+Mengembalikan daftar pekerjaan migrasi disk terkelola di lokasi lokal.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama guid pekerjaan migrasi.
+Nama panduan pekerjaan migrasi.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

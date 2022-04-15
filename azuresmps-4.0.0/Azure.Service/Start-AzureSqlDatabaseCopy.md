@@ -4,16 +4,16 @@ ms.assetid: B7F07494-FBCA-4A77-92BF-E0A2D7ACCD21
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 01b9e3689a8dc72871795da559dd71a24c1e1814
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426511"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311739"
 ---
 # Start-AzureSqlDatabaseCopy
 
 ## SYNOPSIS
-Memulai operasi penyalinan Azure SQL Database.
+Memulai operasi salinan Azure SQL Database.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -46,24 +46,24 @@ Start-AzureSqlDatabaseCopy -ServerName <String> -DatabaseName <String> -PartnerS
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSqlDatabaseCopy** memulai operasi penyalinan satu kali atau operasi penyalinan berkelanjutan dari tim Azure SQL Database.
-Cmdlet ini tidak bertransaksi.
+Cmdlet **Start-AzureSqlDatabaseCopy** memulai operasi salinan satu kali atau operasi salinan berkelanjutan dari Azure SQL Database tertentu.
+Cmdlet ini tidak transaksi.
 
 Database asli adalah database sumber.
-Salinannya adalah database sekunder atau target.
-Untuk salinan berkelanjutan, database sumber dan target tidak bisa berada di server yang sama, dan server yang menghosting database sumber dan target harus merupakan bagian dari langganan yang sama.
+Salinan adalah database sekunder atau target.
+Untuk salinan berkelanjutan, database sumber dan target tidak bisa berada di server yang sama, dan server yang menghosting database sumber dan target harus menjadi bagian dari langganan yang sama.
 
-Jika Anda tidak menentukan parameter *ContinuousCopy,* cmdlet ini akan membuat salinan database sumber satu kali.
-Saat respons diterima, operasi masih bisa berlangsung.
-Anda dapat memantau operasi menggunakan cmdlet Get-AzureSqlDatabaseCopy Get-AzureSqlDatabaseOperation cmdlet.
+Jika Anda tidak menentukan parameter *ContinuousCopy* , cmdlet ini membuat salinan satu kali database sumber.
+Ketika respons diterima, operasi masih dapat berlangsung.
+Anda dapat memantau operasi dengan menggunakan cmdlet Get-AzureSqlDatabaseCopy atau Get-AzureSqlDatabaseOperation.
 
-Jika Anda menentukan *ContinuousCopy*, cmdlet ini akan membuat salinan berkelanjutan database sumber tersebut.
-Saat respons diterima, operasi akan berlangsung.
-Anda bisa memantau operasi dengan menggunakan **Get-AzureSqlDatabaseCopy** atau **Get-AzureSqlDatabaseOperation**.
+Jika Anda menentukan *ContinuousCopy*, cmdlet ini akan membuat salinan database sumber berkelanjutan.
+Ketika respons diterima, operasi akan berlangsung.
+Anda dapat memantau operasi menggunakan **Get-AzureSqlDatabaseCopy** atau **Get-AzureSqlDatabaseOperation**.
 
 Anda bisa membuat salinan berkelanjutan sebagai database online atau offline.
-Salinan berkelanjutan online digunakan untuk mengonfigurasi Kode Geo-Replication untuk Azure SQL Database https://azure.microsoft.com/en-us/documentation/articles/sql-database-geo-replication-overview/ .
-Salinan berkelanjutan offline digunakan untuk mengonfigurasi standar Geo-Replication untuk Azure SQL Database https://azure.microsoft.com/en-us/documentation/articles/sql-database-business-continuity-scenarios/ .
+Salinan berkelanjutan online digunakan untuk mengonfigurasi Geo-Replication Aktif untuk Azure SQL Databasehttps://azure.microsoft.com/en-us/documentation/articles/sql-database-geo-replication-overview/.
+Salinan berkelanjutan offline digunakan untuk mengonfigurasi Geo-Replication Standar untuk Azure SQL Databasehttps://azure.microsoft.com/en-us/documentation/articles/sql-database-business-continuity-scenarios/.
 
 ## EXAMPLES
 
@@ -72,15 +72,15 @@ Salinan berkelanjutan offline digunakan untuk mengonfigurasi standar Geo-Replica
 PS C:\> Start-AzureSqlDatabaseCopy -ServerName "lpqd0zbr8y" -DatabaseName "Orders" -PartnerServer "bk0b8kf65" -ContinuousCopy
 ```
 
-Perintah ini menjadwalkan salinan berkelanjutan database bernama Pesanan di server yang bernama lpqd0zbr8y.
-Perintah membuat database target di server yang bernama bk0b8kf658.
+Perintah ini menjadwalkan salinan database berkelanjutan bernama Pesanan di server bernama lpqd0zbr8y.
+Perintah membuat database target di server bernama bk0b8kf658.
 
 ### Contoh 2: Membuat salinan satu kali di server yang sama
 ```
 PS C:\> Start-AzureSqlDatabaseCopy -ServerName "lpqd0zbr8y" -DatabaseName "Orders" -PartnerDatabase "OrdersCopy"
 ```
 
-Perintah ini membuat salinan satu kali database bernama Pesanan di server yang bernama lpqd0zbr8y.
+Perintah ini membuat salinan database satu kali bernama Pesanan di server bernama lpqd0zbr8y.
 Perintah membuat salinan bernama OrdersCopy di server yang sama.
 
 ### Contoh 3: Menjadwalkan salinan database offline berkelanjutan
@@ -88,15 +88,15 @@ Perintah membuat salinan bernama OrdersCopy di server yang sama.
 PS C:\> Start-AzureSqlDatabaseCopy -ServerName "lpqd0zbr8y" -DatabaseName "Orders" -PartnerServer "bk0b8kf65" -ContinuousCopy -OfflineSecondary
 ```
 
-Perintah ini menjadwalkan salinan berkelanjutan database bernama Pesanan di server yang bernama lpqd0zbr8y.
-Perintah ini membuat database target offline di server yang bernama bk0b8kf658.
+Perintah ini menjadwalkan salinan database berkelanjutan bernama Pesanan di server bernama lpqd0zbr8y.
+Perintah ini membuat database target offline di server bernama bk0b8kf658.
 
 ## PARAMETERS
 
 ### -ContinuousCopy
-Menunjukkan bahwa salinan database akan menjadi salinan berkelanjutan (database replika).
+Menunjukkan bahwa salinan database akan berupa salinan berkelanjutan (database replika).
 Salinan berkelanjutan tidak didukung di dalam server yang sama.
-Jika parameter ini tidak ditentukan, maka salinan satu kali dijalankan.
+Jika parameter ini tidak ditentukan, maka salinan satu kali dilakukan.
 Untuk salinan satu kali, database sumber dan mitra harus berada di server yang sama.
 
 ```yaml
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -Database
 Menentukan objek yang mewakili sumber Azure SQL Database.
-Parameter ini menerima input saluran.
+Parameter ini menerima input pipeline.
 
 ```yaml
 Type: Database
@@ -142,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -157,10 +157,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OfflineSecsecry
-Menentukan bahwa salinan berkelanjutan adalah salinan pasif, bukan salinan aktif.
+### -OfflineSecondary
+Menentukan bahwa salinan berkelanjutan adalah salinan pasif daripada salinan aktif.
 Jika database sumber adalah database edisi Standar, maka parameter ini diperlukan.
-Jika parameter ini ditentukan, *ContinuousCopy* juga harus ditentukan.
+Jika parameter ini ditentukan, *maka ContinuousCopy* juga harus ditentukan.
 
 ```yaml
 Type: SwitchParameter
@@ -176,8 +176,8 @@ Accept wildcard characters: False
 
 ### -PartnerDatabase
 Menentukan nama database target.
-Jika Anda menentukan parameter *ContinuousCopy,* nilai untuk *PartnerDatabase* harus cocok dengan nama database sumber.
-Jika tidak menentukan *ContinuousCopy*, Anda harus menentukan nama untuk database target, yang dapat berbeda dari nama database sumber.
+Jika Anda menentukan parameter *ContinuousCopy* , nilai untuk *PartnerDatabase* harus cocok dengan nama database sumber.
+Jika Anda tidak menentukan *ContinuousCopy*, Anda harus menentukan nama untuk database target, yang bisa berbeda dari nama database sumber.
 
 ```yaml
 Type: String
@@ -232,8 +232,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server di mana database sumber berada.
+Menentukan nama server tempat database sumber berada.
 
 ```yaml
 Type: String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -305,8 +305,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Model.DatabaseCopy
 
 ## CATATAN
-* Autentikasi: Cmdlet ini memerlukan autentikasi berbasis sertifikat. Untuk contoh cara menggunakan autentikasi berbasis sertifikat untuk mengatur langganan saat ini, lihat New-AzureSqlDatabaseServerContext cmdlet.
-* Pemantauan: Untuk memeriksa status satu atau beberapa hubungan salinan berkelanjutan yang aktif di server, gunakan cmdlet **Get-AzureSqlDatabaseCopy.** Untuk memverifikasi status operasi di sumber dan target hubungan salinan berkelanjutan, gunakan cmdlet **Get-AzureSqlDatabaseOperation.**
+* Autentikasi: Cmdlet ini memerlukan autentikasi berbasis sertifikat. Untuk contoh cara menggunakan autentikasi berbasis sertifikat untuk mengatur langganan saat ini, lihat cmdlet New-AzureSqlDatabaseServerContext.
+* Pemantauan: Untuk memeriksa status satu atau beberapa hubungan salinan berkelanjutan yang aktif di server, gunakan cmdlet **Get-AzureSqlDatabaseCopy** . Untuk memverifikasi status operasi pada sumber dan target hubungan salinan berkelanjutan, gunakan cmdlet **Get-AzureSqlDatabaseOperation** .
 
 ## RELATED LINKS
 

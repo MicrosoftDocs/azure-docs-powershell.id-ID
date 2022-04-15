@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroup.md
-ms.openlocfilehash: 1e81f1bd447b6e2f0fe029f0b1f5e2bff400c115
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ce42cda10efc05b1296f48a7498e204769fcf98a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319117"
 ---
 # New-AzActionGroup
 
 ## SYNOPSIS
 Membuat objek referensi ActionGroup di memori.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzActionGroup -ActionGroupId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzActionGroup** membuat objek referensi grup tindakan di memori.
+Cmdlet **New-AzActionGroup** membuat objek referensi grup tindakan dalam memori.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,13 +89,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.Generic.Dictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.Dictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
@@ -110,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzActivityLogAlert](./Get-AzActivityLogAlert.md)
 
-[Remove-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
+[Hapus-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
 
 [New-AzActivityLogAlertCondition](./New-AzActivityLogAlertCondition.md)
 
