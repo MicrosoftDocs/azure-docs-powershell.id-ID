@@ -4,20 +4,20 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 04b011279d88f294e1caf95519e29a8368b08546
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580580"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142333151"
 ---
 # Suspend-AzsInfrastructureRoleInstance
 
 ## SYNOPSIS
-Mematikan instans peran infrastruktur.
+Mematikan contoh peran infrastruktur.
 
 ## SYNTAX
 
-### Penutupan (Default)
+### Matikan (Default)
 ```
 Suspend-AzsInfrastructureRoleInstance -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-AsJob] [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,7 +30,7 @@ Suspend-AzsInfrastructureRoleInstance -ResourceId <String> [-AsJob] [-Force] [-W
 ```
 
 ## DESCRIPTION
-Mematikan instans peran infrastruktur.
+Mematikan contoh peran infrastruktur.
 
 ## EXAMPLES
 
@@ -39,13 +39,13 @@ Mematikan instans peran infrastruktur.
 Suspend-AzsInfrastructureRoleInstance -Name "AzS-ACS01"
 ```
 
-Mematikan instans peran infrastruktur.
-On failure an exception is thrown.
+Mematikan contoh peran infrastruktur.
+Pada kegagalan pengecualian dilemparkan.
 
 ## PARAMETERS
 
 ### -Nama
-Nama instans peran infrastruktur.
+Nama contoh peran infrastruktur.
 
 ```yaml
 Type: String
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Jangan minta konfirmasi
 
 ```yaml
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

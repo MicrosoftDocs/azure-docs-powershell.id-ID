@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementApiToProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementApiToProduct.md
 ms.openlocfilehash: c8e67ba73d17bb4b5816a7f34e3625779bbb36be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140144979"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326887"
 ---
 # Add-AzApiManagementApiToProduct
 
@@ -19,7 +19,7 @@ ms.locfileid: "140144979"
 Menambahkan API ke produk.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementapitoproduct) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementapitoproduct) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Defa
 PS C:\>Add-AzApiManagementApiToProduct -Context $ApiMgmtContext -ProductId "0123456789" -ApiId "0001"
 ```
 
-Perintah ini menambahkan API tertentu ke produk tertentu.
+Perintah ini menambahkan API tertentu ke produk yang ditentukan.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan ID produk untuk menambahkan API.
+Menentukan ID produk yang akan ditambahkan API.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

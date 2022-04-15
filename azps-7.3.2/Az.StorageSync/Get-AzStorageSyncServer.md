@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncServer.md
-ms.openlocfilehash: ba513abf392286c841698f6e3202a4d0739f2ba0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8fada0f0a458f47cbea7a871b3f9a6f9800185ea
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553709"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142337813"
 ---
 # Get-AzStorageSyncServer
 
 ## SYNOPSIS
-Perintah ini mencantumkan semua server yang terdaftar ke layanan sinkronisasi penyimpanan tertentu.
+Perintah ini mencantumkan semua server yang terdaftar pada layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzStorageSyncServer [-ParentResourceId] <String> [-ServerId <Guid>]
 ```
 
 ## DESCRIPTION
-Perintah ini mencantumkan semua server yang terdaftar ke layanan sinkronisasi penyimpanan tertentu. Nama server juga dapat digunakan untuk mencantumkan atribut setiap server yang terdaftar.
+Perintah ini mencantumkan semua server yang terdaftar pada layanan sinkronisasi penyimpanan tertentu. Ini dapat digunakan untuk juga mencantumkan atribut setiap server terdaftar.
 
 ## EXAMPLES
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

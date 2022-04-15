@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
 ms.openlocfilehash: b212750278917a89f69608bc5697c11a7ec8e977
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139944637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325951"
 ---
 # Get-AzBatchAccountKey
 
 ## SYNOPSIS
-Dapatkan kunci akun Kumpulan.
+Mendapatkan kunci akun Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchaccountkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,18 +29,18 @@ Get-AzBatchAccountKey [-AccountName] <String> [-ResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchAccountKey** mendapatkan kunci akun Azure Batch di langganan saat ini.
+Cmdlet **Get-AzBatchAccountKey** mendapatkan kunci akun Azure Batch dalam langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akun kumpulan dan simpan di $Context baru untuk digunakan nanti
+### Contoh 1: Dapatkan kunci akun kumpulan dan simpan dalam variabel $Context untuk digunakan nanti
 ```
 PS C:\>$Context = Get-AzBatchAccountKey -AccountName myaccount
 ```
 
-Perintah ini akan mendapatkan detail akun dan menyimpannya dalam objek `$Context` untuk digunakan nanti.
+Perintah ini mendapatkan detail akun dan menyimpannya dalam `$Context` objek untuk digunakan nanti.
 
-### Contoh 2: Dapatkan kunci akun kumpulan dan tampilkan kunci
+### Contoh 2: Dapatkan kunci akun kumpulan dan tampilkan kunci akun tersebut
 ```
 PS C:\>$Context = Get-AzBatchAccountKey -AccountName myaccount
 PS C:\>$Context.PrimaryAccountKey
@@ -53,8 +53,8 @@ Perintah ini akan mendapatkan kunci akun dan mencetaknya ke konsol.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun yang mendapatkan kunci cmdlet ini.
+### -AccountName
+Menentukan nama akun di mana cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun yang mendapatkan kunci cmdlet ini.
+Menentukan nama grup sumber daya yang berisi akun di mana cmdlet ini mendapatkan kunci.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -115,4 +115,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchAccountKey](./New-AzBatchAccountKey.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseRestorePoint.md
-ms.openlocfilehash: eea6a80440d1e699a5f2f9e8d33a94564017498d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e815aa53615a06acd5d8bed0a96f2e329afe9cd2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339739"
 ---
 # New-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
-Membuat titik pemulihan baru yang bisa SQL Database dipulihkan.
+Membuat titik pemulihan baru tempat SQL Database dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaserestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ New-AzSqlDatabaseRestorePoint -RestorePointLabel <String> [-ServerName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabaseRestorePoint** membuat titik pemulihan baru yang SQL Gudang Data Azure bisa dipulihkan.
-Cmdlet ini saat ini didukung untuk Azure SQL Gudang Data.
+Cmdlet **New-AzSqlDatabaseRestorePoint** membuat titik pemulihan baru tempat Gudang Data Azure SQL dapat dipulihkan.
+Cmdlet ini saat ini didukung untuk Azure SQL Data Warehouse.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ EarliestRestoreDate      :
 RestorePointLabel        : RestorePoint01
 ```
 
-Perintah ini akan membuat titik pemulihan untuk Azure SQL Data Warehouse dan mengembalikan detail titik pemulihan.
+Perintah ini membuat titik pemulihan untuk Azure SQL Gudang Data dan mengembalikan detail titik pemulihan.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointLabel
-Menentukan label titik pemulihan untuk identifikasi yang mudah.
+Menentukan label titik pemulihan untuk memudahkan identifikasi.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama AzureSQL Server yang menjadi host database.
+Menentukan nama AzureSQL Server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricAlertRuleV2.md
 ms.openlocfilehash: 9725c19bc74f50fa4bdb6f88ecd0fa91ce9bf21e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076167"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142303171"
 ---
 # Get-AzMetricAlertRuleV2
 
 ## SYNOPSIS
-Mendapatkan aturan pemberitahuan metrik V2 (non-klasik)
+Mendapatkan aturan peringatan metrik V2 (non-klasik)
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azmetricalertrulev2) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azmetricalertrulev2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,11 +40,11 @@ Get-AzMetricAlertRuleV2 -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzMetricAlertRuleV2** mendapatkan aturan pemberitahuan metrik berdasarkan nama atau URInya, atau semua aturan pemberitahuan metrik dari grup atau langganan sumber daya yang ditentukan.
+Cmdlet **Get-AzMetricAlertRuleV2** mendapatkan aturan peringatan metrik menurut namanya atau URI, atau semua aturan pemberitahuan metrik dari grup sumber daya atau langganan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua aturan peringatan metrik dalam langganan saat ini
+### Contoh 1: Dapatkan semua aturan pemberitahuan metrik dalam langganan saat ini
 ```powershell
 PS C:\>Get-AzMetricAlertRuleV2
 TargetResourceId     : /subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/metricResourceGroup/providers/Microsoft.KeyVault/vaults/GenevaRPKeyVault
@@ -87,9 +87,9 @@ Location             : global
 Tags                 : {}
 ```
 
-Perintah ini mendapatkan semua aturan pemberitahuan metrik di langganan saat ini.
+Perintah ini mendapatkan semua aturan pemberitahuan metrik dalam langganan saat ini.
 
-### Contoh 2: Mendapatkan semua aturan peringatan metrik dalam grup sumber daya
+### Contoh 2: Mendapatkan semua aturan pemberitahuan metrik dalam grup sumber daya
 
 ```powershell
 PS C:\>Get-AzMetricAlertRuleV2 -ResourceGroupName metricAlertsRG
@@ -116,7 +116,7 @@ Location             : global
 Tags                 : {}
 ```
 
-Perintah ini mendapatkan semua aturan pemberitahuan metrik dalam grup sumber daya yang bernama metrikAlertsRG.
+Perintah ini mendapatkan semua aturan pemberitahuan metrik dalam grup sumber daya bernama metricAlertsRG.
 
 ### Contoh 3: Dapatkan aturan pemberitahuan metrik menurut nama
 
@@ -144,9 +144,9 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini mendapatkan aturan pemberitahuan metrik yang bernama PS3182019 dalam grup sumber daya yang bernama metricAlertsRG.
+Perintah ini mendapatkan aturan pemberitahuan metrik bernama PS3182019 dalam grup sumber daya bernama metricAlertsRG.
 
-### Contoh 4: Dapatkan aturan pemberitahuan metrik menurut RULEID
+### Contoh 4: Mendapatkan aturan pemberitahuan metrik menurut ATURAN
 
 ```powershell
 PS C:\>Get-AzMetricAlertRuleV2 -ResourceId /subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/SampleResourceGroup/providers/microsoft.insights/metricAlerts/MyMetricAlertRule
@@ -171,7 +171,7 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini akan mendapatkan aturan pemberitahuan metrik dengan ID sumber daya yang diberikan.
+Perintah ini mendapatkan aturan pemberitahuan metrik dengan ID sumber daya tertentu.
 
 ## PARAMETERS
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aturan Nama pemberitahuan metrik
+Nama aturan pemberitahuan metrik
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Aturan dari aturan pemberitahuan metrik
+Aturan Id aturan pemberitahuan metrik
 
 ```yaml
 Type: System.String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

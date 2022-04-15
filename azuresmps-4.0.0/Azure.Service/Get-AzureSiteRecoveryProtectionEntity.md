@@ -4,16 +4,16 @@ ms.assetid: CB1A36E9-75BE-43CF-9092-9713DFEB96F8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b34fdf422b97b979bcd6da3933d8321e78070e0e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428103"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142313449"
 ---
 # Get-AzureSiteRecoveryProtectionEntity
 
 ## SYNOPSIS
-Mendapatkan entitas yang dapat diproteksi atau dapat diproteksi di vault Pemulihan Situs.
+Mendapatkan entitas yang dapat dilindungi atau dilindungi dalam lemari besi Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -56,11 +56,11 @@ Get-AzureSiteRecoveryProtectionEntity -ProtectionContainerId <String> [-Profile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSiteRecoveryProtectionEntity** mendapatkan entitas yang diproteksi atau yang diproteksi, seperti mesin virtual, di vault Pemulihan Situs Azure saat ini.
+Cmdlet **Get-AzureSiteRecoveryProtectionEntity** mendapatkan entitas yang dapat dilindungi atau dilindungi, seperti mesin virtual, di Azure Site Recovery kubah saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Menampilkan mesin virtual yang diproteksi dalam wadah
+### Contoh 1: Menampilkan mesin virtual yang dilindungi dalam wadah
 ```
 PS C:\> $Container = Get-AzureSiteRecoveryProtectionContainer
 PS C:\> Get-AzureSiteRecoveryProtectionEntity -ProtectionContainer $Container 
@@ -81,14 +81,14 @@ TestFailoverStateDescription : Nonev
 ReplicationProvider          : HyperVReplica
 ```
 
-Perintah pertama mendapatkan wadah yang diproteksi dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpan objek tersebut di $Container pencarian.
+Perintah pertama mendapatkan wadah yang dilindungi dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** , lalu menyimpan objek tersebut dalam variabel $Container.
 
-Perintah kedua mendapatkan mesin virtual yang diproteksi milik wadah dalam $Container lalu menampilkannya.
+Perintah kedua mendapatkan mesin virtual terproteksi yang termasuk dalam wadah dalam $Container, lalu menampilkannya.
 
 ## PARAMETERS
 
 ### -Id
-Menentukan ID entitas proteksi untuk mendapatkan.
+Menentukan ID entitas perlindungan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama entitas proteksi yang akan dapatkan.
+Menentukan nama entitas perlindungan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID dari wadah yang diproteksi.
+Menentukan ID wadah yang diproteksi.
 
 ```yaml
 Type: String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

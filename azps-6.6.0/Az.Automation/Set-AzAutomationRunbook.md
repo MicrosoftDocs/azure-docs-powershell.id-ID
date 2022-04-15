@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationRunbook.md
 ms.openlocfilehash: 48cb7fcbbd06d8beb0ad743e18d54cdfd3aa3346
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313199"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326131"
 ---
 # Set-AzAutomationRunbook
 
 ## SYNOPSIS
-Memodifikasi buku runbook.
+Mengubah runbook.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationrunbook) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Set-AzAutomationRunbook [-Name] <String> [-Description <String>] [-Tag <IDiction
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationRunbook** memodifikasi konfigurasi runbook Azure Automation di APS.
+Cmdlet **Set-AzAutomationRunbook** mengubah konfigurasi runbook Azure Automation di APS.
 
 ## EXAMPLES
 
@@ -39,12 +39,12 @@ Cmdlet **Set-AzAutomationRunbook** memodifikasi konfigurasi runbook Azure Automa
 PS C:\>Set-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbook02" -LogVerbose $True -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan dari runbook yang ditentukan dalam akun Azure Automation bernama Contoso17.
+Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan runbook tertentu di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini memodifikasi runbook.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah runbook.
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah pembuatan log menyertakan informasi detail.
+Menentukan apakah pembuatan log menyertakan informasi mendetail.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama runbook yang akan dimodifikasi cmdlet ini.
+Menentukan nama runbook yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi runbook.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah runbook.
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.IDictionary
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

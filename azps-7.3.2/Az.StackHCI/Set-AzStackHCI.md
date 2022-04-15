@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/set-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Set-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Set-AzStackHCI.md
-ms.openlocfilehash: 57265ba0811fa46e9f585994d5f7ead65232f8f1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cbb7a07fc140e5ae7097f6d8916b4dbbbee342a7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553902"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339001"
 ---
 # Set-AzStackHCI
 
 ## SYNOPSIS
-Set-AzStackHCI memodifikasi properti sumber daya dari sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal untuk mengaktifkan atau menonaktifkan fitur.
+Set-AzStackHCI memodifikasi properti sumber daya sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal untuk mengaktifkan atau menonaktifkan fitur.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/set-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzStackHCI [[-ComputerName] <String>] [-Credential <PSCredential>] [-Resourc
 ```
 
 ## DESCRIPTION
-Set-AzStackHCI memodifikasi properti sumber daya dari sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal untuk mengaktifkan atau menonaktifkan fitur.
+Set-AzStackHCI memodifikasi properti sumber daya sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal untuk mengaktifkan atau menonaktifkan fitur.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ PS C:\> Set-AzStackHCI -EnableWSSubscription $true
 Result: Success
 ```
 
-Faktur pada salah satu node kluster untuk mengaktifkan Windows Langganan Server
+Memanggil di salah satu simpul kluster untuk mengaktifkan fitur Langganan Server Windows
 
 ### CONTOH 2
 ```powershell
@@ -45,13 +48,13 @@ PS C:\> Set-AzStackHCI -ComputerName ClusterNode1 -DiagnosticLevel Basic
 Result: Success
 ```
 
-Faktur dari simpul manajemen untuk mengatur tingkat diagnostik ke Dasar
+Memanggil dari simpul manajemen untuk mengatur tingkat diagnostik ke Dasar
 
 ## PARAMETERS
 
 ### -AccountId
 Menentukan token akses ARM.
-Menentukan hal ini bersama dengan ArmAccessToken dan GraphAccessToken akan menghindari masuk interaktif Azure.
+Menentukan ini bersama dengan ArmAccessToken dan GraphAccessToken akan menghindari masuk interaktif Azure.
 
 ```yaml
 Type: System.String
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 
 ### -ArmAccessToken
 Menentukan token akses ARM.
-Menentukan hal ini bersama dengan GraphAccessToken dan AccountId akan menghindari masuk interaktif Azure.
+Menentukan ini bersama dengan GraphAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerName
-Menentukan salah satu node kluster dalam kluster lokal yang terdaftar di Azure.
+Menentukan salah satu simpul kluster di kluster lokal yang didaftarkan ke Azure.
 
 ```yaml
 Type: System.String
@@ -96,9 +99,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Menentukan kredensial untuk ComputerName.
-Default adalah pengguna saat ini yang menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -129,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableWSSubscription
-Menentukan apakah Windows Server Langganan harus diaktifkan atau dinonaktifkan.
-Mengaktifkan fitur ini akan memulai tagihan melalui langganan Azure untuk Windows lisensi tamu Server.
+Menentukan apakah Langganan Server Windows harus diaktifkan atau dinonaktifkan.
+Mengaktifkan fitur ini memulai tagihan melalui langganan Azure Anda untuk lisensi tamu Windows Server.
 
 ```yaml
 Type: System.Boolean
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Menentukan Azure Environment.
+Menentukan Lingkungan Azure.
 Defaultnya adalah AzureCloud.
 Nilai yang valid adalah AzureCloud, AzureChinaCloud, AzurePPE, AzureCanary, AzureUSGovernment
 
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAccessToken
-Menentukan token Graph akses.
+Menentukan token akses Graph.
 Menentukan hal ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat, termasuk langganan, seperti dalam contoh berikut ini: \`/Subscriptions/\`subscription ID\`/providers/Microsoft.AzureStackHCI/clusters/MyCluster\`
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat, termasuk langganan, seperti dalam contoh berikut: \`/Subscriptions/\`subscription ID\`/providers/Microsoft.AzureStackHCI/clusters/MyCluster\`
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

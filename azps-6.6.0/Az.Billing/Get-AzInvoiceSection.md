@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzInvoiceSection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzInvoiceSection.md
 ms.openlocfilehash: eaa98289b337630095b5e8499d0ca51dcd33ac4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979763"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325249"
 ---
 # Get-AzInvoiceSection
 
@@ -18,7 +18,7 @@ ms.locfileid: "139979763"
 Dapatkan bagian faktur.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azinvoicesection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azinvoicesection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,14 +28,14 @@ Get-AzInvoiceSection -BillingAccountName <String> -BillingProfileName <String> [
  [<CommonParameters>]
 ```
 
-### Tunggal
+### Satu
 ```
 Get-AzInvoiceSection -BillingAccountName <String> -BillingProfileName <String> -Name <System.Collections.Generic.List`1[System.String]>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzInvoiceSection** mendapatkan bagian faktur di bawah profil tagihan yang ditentukan. 
+Cmdlet **Get-AzInvoiceSection** mendapatkan bagian faktur di bawah profil tagihan tertentu. 
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzInvoiceSection** mendapatkan bagian faktur di bawah profil tagiha
 PS C:\> Get-AzInvoiceSection -BillingAccountName 00000000-0000-0000-0000-000000000000 -BillingProfileName AAAA-0A00-AAA-ZZZ
 ```
 
-Dapatkan semua bagian faktur di bawah profil tagihan yang ditentukan.
+Dapatkan semua bagian faktur di bawah profil tagihan tertentu.
 
 ### Contoh 2
 ```
@@ -56,7 +56,7 @@ Dapatkan bagian faktur dengan nama yang ditentukan.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -116,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

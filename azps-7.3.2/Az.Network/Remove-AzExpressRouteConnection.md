@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteConnection.md
-ms.openlocfilehash: c3c4bcaea4c2c25ad3a3add8319f4b162aa24365
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f35af53089fe69add833f2efee9e384b2b49f4c3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142344833"
 ---
 # Remove-AzExpressRouteConnection
 
 ## SYNOPSIS
 Menghapus ExpressRouteConnection.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azexpressrouteconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,11 +60,11 @@ PS C:\> New-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.Res
 PS C:\> Remove-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.ResourceGroupName -ParentResourceName $ExpressRouteGateway.Name -Name "testConnection"
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs ExpressRoute menggunakan New-AzExpressRouteConnection waktu.
+Setelah gateway dibuat, gateway tersambung ke ExpressRouteSite menggunakan perintah New-AzExpressRouteConnection.
 
-Lalu menghapus koneksi menggunakan nama koneksi.
+Lalu koneksi akan menghapus koneksi menggunakan nama koneksi.
 
 ### Contoh 2
 
@@ -79,7 +82,7 @@ PS C:\> New-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.Res
 PS C:\> Get-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.ResourceGroupName -ParentResourceName $ExpressRouteGateway.Name -Name "testConnection" | Remove-AzExpressRouteConnection
 ```
 
-Sama seperti contoh 1, tetapi sekarang menghapus koneksi menggunakan objek pipa dari Get-AzExpressRouteConnection.
+Sama seperti contoh 1, tetapi sekarang menghapus koneksi menggunakan objek piped dari Get-AzExpressRouteConnection.
 
 ## PARAMETERS
 
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek ExpressRouteConnection yang akan diperbarui.
+Objek ExpressRouteConnection untuk diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteConnection
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari objek ExpressRouteConnection yang akan dihapus.
+Id sumber daya objek ExpressRouteConnection untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

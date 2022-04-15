@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationUpdateManagementAzureQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationUpdateManagementAzureQuery.md
 ms.openlocfilehash: 2b3cdc4dac539bcf7c20b938e1132a7b49e83f0d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288401"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326301"
 ---
 # New-AzAutomationUpdateManagementAzureQuery
 
 ## SYNOPSIS
-Membuat objek kueri azure automation software update configuration.
+Membuat perangkat lunak otomatisasi azure memperbarui konfigurasi objek kueri azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzAutomationUpdateManagementAzureQuery -Scope <String[]> [-Location <String[
 ```
 
 ## DESCRIPTION
-Membuat objek kueri azure konfigurasi pembaruan perangkat lunak yang akan digunakan untuk membuat konfigurasi pembaruan perangkat lunak yang akan berjalan sesuai jadwal untuk memperbarui daftar komputer virtual Azure yang ditemukan secara dinamis.
+Membuat konfigurasi pembaruan perangkat lunak objek kueri azure yang akan digunakan untuk membuat konfigurasi pembaruan perangkat lunak yang akan berjalan sesuai jadwal untuk memperbarui daftar mesin virtual azure yang diatasi secara dinamis.
 
 ## EXAMPLES
 
@@ -113,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -FilterOperator
+### -Filteroperator
 Operator filter tag.
 
 ```yaml
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Daftar lokasi untuk mesin virtual Azure.
+Daftar lokasi untuk mesin virtual azure.
 
 ```yaml
 Type: String[]
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Id Sumber Daya untuk komputer virtual Azure.
+Id Sumber Daya untuk mesin virtual azure.
 
 ```yaml
 Type: String[]
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk komputer virtual Azure.
+Tag untuk mesin virtual azure.
 
 ```yaml
 Type: Hashtable
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

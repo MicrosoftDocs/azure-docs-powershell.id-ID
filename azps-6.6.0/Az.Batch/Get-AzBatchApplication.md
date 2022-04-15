@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplication.md
 ms.openlocfilehash: f2eabccba14c692834fc3ad741f551b37acb809a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313091"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325933"
 ---
 # Get-AzBatchApplication
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aplikasi tertentu.
+Mendapatkan informasi tentang aplikasi yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchapplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Get-AzBatchApplication [-AccountName] <String> [-ResourceGroupName] <String> [[-
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchApplication** mendapatkan informasi tentang sebuah aplikasi dalam akun Azure Batch.
+Cmdlet **Get-AzBatchApplication** mendapatkan informasi tentang aplikasi dalam akun Azure Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Menampilkan aplikasi dalam akun Kumpulan
+### Contoh 1: Menampilkan aplikasi dalam akun Batch
 ```
 PS C:\>Get-AzBatchApplication -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup"
 ApplicationName AllowUpdates DisplayName
@@ -43,12 +43,12 @@ ApplicationName AllowUpdates DisplayName
 litware       False        Litware Advanced Reticulator
 ```
 
-Perintah ini menampilkan semua aplikasi di akun ContosoBatch.
+Perintah ini menampilkan semua aplikasi dalam akun ContosoBatch.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan yang berisi aplikasi.
+### -AccountName
+Menentukan nama akun Batch yang berisi aplikasi.
 
 ```yaml
 Type: System.String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Batch.Models.PSApplication
+### Microsoft.Azure.Commands.Batch.Models.PSAplikasi
 
 ## CATATAN
 
@@ -124,14 +124,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchApplication](./New-AzBatchApplication.md)
+[New-AzBatchAplikasi](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
+[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 
-[Set-AzBatchApplication](./Set-AzBatchApplication.md)
+[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
 
 

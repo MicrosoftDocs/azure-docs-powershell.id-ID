@@ -3,12 +3,12 @@ external help file: Azs.Fabric.Admin-help.xml
 Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: ec09df1712626e9d6f183de5f13aabc95e9324deaaf1d5059afe669546f1876b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 47e4c38d3ccd98350721d358cb98eec55341ba97
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418615"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142310755"
 ---
 # Stop-AzsInfrastructureRoleInstance
 
@@ -44,7 +44,7 @@ Mematikan instans peran infrastruktur.
 ## PARAMETERS
 
 ### -Nama
-Nama instans peran infrastruktur.
+Nama contoh peran infrastruktur.
 
 ```yaml
 Type: String
@@ -118,8 +118,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

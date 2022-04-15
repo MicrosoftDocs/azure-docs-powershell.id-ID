@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPool.md
-ms.openlocfilehash: 96b1d6610d7d6f0c422a721e02dd5c44db7f6fe9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0b1fd38e375f4b09bb178725fec8ddba714d9772
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570850"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142344815"
 ---
 # Remove-AzLoadBalancerBackendAddressPool
 
 ## SYNOPSIS
-Menghapus pool backend dari penyeimbang muat
+Menghapus kumpulan backend dari penyeimbang muatan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerbackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzLoadBalancerBackendAddressPool [-LoadBalancerName <String>] -ResourceId
 ```
 
 ## DESCRIPTION
-Menghapus pool backend dari penyeimbang muat
+Menghapus kumpulan backend dari penyeimbang muatan
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-The backend address pool to remove
+Kumpulan alamat backend untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Sumber daya penyeimbang muat.
+Sumber daya penyeimbang beban.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerName
-Nama penyeimbang muat.
+Nama penyeimbang beban.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama penyeimbang muat.
+Nama penyeimbang beban.
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

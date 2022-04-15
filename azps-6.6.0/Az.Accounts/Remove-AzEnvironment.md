@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Remove-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Remove-AzEnvironment.md
 ms.openlocfilehash: f5941937180cfc2d21e96ee665a1830ef1c29179
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140145357"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142327247"
 ---
 # Remove-AzEnvironment
 
 ## SYNOPSIS
-Menghapus titik akhir dan metadata untuk terhubung ke instans Azure tertentu.
+Menghapus titik akhir dan metadata untuk menyambungkan ke instans Azure tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/remove-azenvironment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/remove-azenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Remove-AzEnvironment [-Name] <String> [-Scope <ContextModificationScope>]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEnvironment menghapus titik akhir dan informasi metadata untuk terhubung ke contoh Azure tertentu.
+Cmdlet Remove-AzEnvironment menghapus titik akhir dan informasi metadata untuk menyambungkan ke instans Azure tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan menghapus lingkungan uji
+### Contoh 1: Membuat dan menghapus lingkungan pengujian
 ```
 PS C:\> Add-AzEnvironment -Name TestEnvironment `
         -ActiveDirectoryEndpoint TestADEndpoint `
@@ -52,12 +52,12 @@ Name            Resource Manager Url ActiveDirectory Authority
 TestEnvironment TestRMEndpoint       TestADEndpoint/
 ```
 
-Contoh ini menunjukkan cara membuat lingkungan menggunakan Add-AzEnvironment, lalu cara menghapus lingkungan menggunakan Remove-AzEnvironment.
+Contoh ini memperlihatkan cara membuat lingkungan menggunakan Add-AzEnvironment, lalu cara menghapus lingkungan menggunakan Remove-AzEnvironment.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

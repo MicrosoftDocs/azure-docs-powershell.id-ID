@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchResourceFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchResourceFile.md
 ms.openlocfilehash: 53bcd51ac960143dc8a3ecba0e6a5aed4cae9199
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140080127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325627"
 ---
 # New-AzBatchResourceFile
 
 ## SYNOPSIS
-Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask`.
+Membuat File Sumber Daya untuk digunakan oleh `New-AzBatchTask`.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchresourcefile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchresourcefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,33 +41,33 @@ New-AzBatchResourceFile [-FilePath <String>] [-FileMode <String>] -AutoStorageCo
 ```
 
 ## DESCRIPTION
-Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask`.
+Membuat File Sumber Daya untuk digunakan oleh `New-AzBatchTask`.
 
 ## EXAMPLES
 
-### Contoh 1: Buat file sumber daya dari URL HTTP yang menunjuk pada satu file
+### Contoh 1: Membuat file sumber daya dari URL HTTP yang menunjuk pada satu file
 ```
 PS C:\> $file = New-AzBatchResourceFile -HttpUrl "https://testacct.blob.core.windows.net/" -FilePath "file1"
 PS C:\> New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ResourceFiles $file -BatchContext $Context
 ```
 
-Membuat referensi `PSResourceFile` url HTTP.
+`PSResourceFile` Membuat referensi url HTTP.
 
-### Contoh 2: Membuat file sumber daya dari URL Azure Storage wadah data
+### Contoh 2: Membuat file sumber daya dari URL kontainer Azure Storage
 ```
 PS C:\> $file = New-AzBatchResourceFile -StorageContainerUrl "https://testacct.blob.core.windows.net/mycontainer" -FilePath "myfolder"
 PS C:\> New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ResourceFiles $file -BatchContext $Context
 ```
 
-Membuat referensi `PSResourceFile` URL Azure Storage wadah. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
+`PSResourceFile` Membuat URL kontainer Azure Storage yang merujuk. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
 
-### Contoh 3: Buat file sumber daya dari nama wadah Storage otomatis
+### Contoh 3: Membuat file sumber daya dari nama kontainer Storage Otomatis
 ```
 PS C:\> $file = New-AzBatchResourceFile -AutoStorageContainerName "mycontainer" -FilePath "myfolder"
 PS C:\> New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ResourceFiles $file -BatchContext $Context
 ```
 
-Membuat referensi `PSResourceFile` untuk nama wadah Storage Otomatis. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
+`PSResourceFile` Membuat referensi nama kontainer Storage Otomatis. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
 
 ## PARAMETERS
 
@@ -87,9 +87,9 @@ Accept wildcard characters: False
 ```
 
 ### -BlobPrefix
-Mendapatkan prefiks blob yang digunakan ketika mengunduh blob dari Azure Storage penampung.
-Hanya blob yang namanya dimulai dengan prefiks tertentu yang akan diunduh.
-Prefiks ini dapat merupakan nama file parsial atau subarah.
+Mendapatkan prefiks blob untuk digunakan saat mengunduh blob dari wadah Azure Storage.
+Hanya blob yang namanya dimulai dengan prefiks yang ditentukan yang akan diunduh.
+Prefiks ini dapat berupa sebagian nama file atau subdirektori.
 Jika prefiks tidak ditentukan, semua file dalam wadah akan diunduh.
 
 ```yaml
@@ -121,8 +121,8 @@ Accept wildcard characters: False
 
 ### -FileMode
 Mendapatkan atribut mode izin file dalam format oktal.
-Properti ini berlaku hanya jika file sumber daya diunduh ke simpul Linux.
-Jika properti ini tidak ditentukan untuk simpul Linux, nilai defaultnya adalah 0770.
+Properti ini hanya berlaku jika file sumber daya diunduh ke simpul Linux.
+Jika properti ini tidak ditentukan untuk simpul Linux, maka nilai defaultnya adalah 0770.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-Lokasi pada node perhitungan untuk mengunduh file, relatif terhadap direktori kerja tugas. Jika parameter HttpUrl ditentukan, FilePath diperlukan dan menjelaskan jalur tujuan pengunduhan file, termasuk nama file. Jika tidak, jika parameter AutoStorageContainerName atau StorageContainerUrl ditentukan, FilePath bersifat opsional dan merupakan direktori untuk mengunduh file. Dalam kasus di mana FilePath digunakan sebagai direktori, struktur direktori apa pun yang sudah terkait dengan data input akan dipertahankan secara penuh dan ditambahkan ke direktori FilePath yang ditentukan. Jalur relatif tertentu tidak bisa keluar dari direktori kerja tugas (misalnya dengan menggunakan '.').
+Lokasi pada simpul komputasi tempat untuk mengunduh file, relatif terhadap direktori kerja tugas. Jika parameter HttpUrl ditentukan, FilePath diperlukan dan menjelaskan jalur tempat file akan diunduh, termasuk nama file. Jika tidak, jika parameter AutoStorageContainerName atau StorageContainerUrl ditentukan, FilePath bersifat opsional dan merupakan direktori untuk mengunduh file. Dalam kasus di mana FilePath digunakan sebagai direktori, struktur direktori apa pun yang sudah terkait dengan data input akan dipertahankan secara penuh dan ditambahkan ke direktori FilePath yang ditentukan. Jalur relatif yang ditentukan tidak dapat keluar dari direktori kerja tugas (misalnya dengan menggunakan '..').
 
 ```yaml
 Type: System.String
@@ -163,10 +163,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpUrl
+### -HttpUrl
 URL file yang akan diunduh.
-Jika URL-nya adalah Azure Blob Storage, URL tersebut harus dapat dibaca menggunakan akses anonim; artinya, layanan Batch tidak menyajikan kredensial apa pun saat mengunduh blob.
-Ada dua cara untuk mendapatkan URL untuk blob di penyimpanan Azure: menyertakan izin baca pada Shared Access Signature (SAS) di blob, atau mengatur ACL untuk blob atau wadahnya untuk mengizinkan akses publik.
+Jika URL Azure Blob Storage, URL harus dapat dibaca menggunakan akses anonim; yaitu, layanan Batch tidak menyajikan kredensial apa pun saat mengunduh blob.
+Ada dua cara untuk mendapatkan URL seperti itu untuk blob di penyimpanan Azure: termasuk Tanda Tangan Akses Bersama (SAS) yang memberikan izin baca di blob, atau mengatur ACL untuk blob atau wadahnya untuk memungkinkan akses publik.
 
 ```yaml
 Type: System.String
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 
 ### -StorageContainerUrl
 URL wadah blob dalam Azure Blob Storage.
-URL ini harus dapat dibaca dan dapat di listable menggunakan akses anonim; artinya, layanan Batch tidak menyajikan kredensial apa pun saat mengunduh blob dari wadah.
-Ada dua cara untuk mendapatkan URL untuk wadah di penyimpanan Azure: menyertakan izin baca pada wadah Tanda Tangan Akses Bersama (SAS, Shared Access Signature) pada wadah, atau mengatur ACL untuk wadah untuk memungkinkan akses publik.
+URL ini harus dapat dibaca dan dapat dicantumkan menggunakan akses anonim; yaitu, layanan Batch tidak menyajikan kredensial apa pun saat mengunduh blob dari wadah.
+Ada dua cara untuk mendapatkan URL seperti itu untuk kontainer di penyimpanan Azure: menyertakan Tanda Tangan Akses Bersama (SAS) yang memberikan izin baca pada wadah, atau mengatur ACL untuk kontainer untuk mengizinkan akses publik.
 
 ```yaml
 Type: System.String
@@ -198,11 +198,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

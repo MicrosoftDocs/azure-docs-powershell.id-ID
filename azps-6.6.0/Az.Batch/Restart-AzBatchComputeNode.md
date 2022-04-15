@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Restart-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Restart-AzBatchComputeNode.md
 ms.openlocfilehash: c66c1ac0507c0ee010fd67adbc93dec52286204e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258713"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325573"
 ---
 # Restart-AzBatchComputeNode
 
 ## SYNOPSIS
-Me-reboot node perhitungan tertentu.
+Boot ulang simpul komputasi yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/restart-azbatchcomputenode) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/restart-azbatchcomputenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,29 +36,29 @@ Restart-AzBatchComputeNode [[-ComputeNode] <PSComputeNode>] [[-RebootOption] <Co
 ```
 
 ## DESCRIPTION
-Cmdlet **Restart-AzBatchComputeNode** memulai ulang node perhitungan yang ditentukan.
+Cmdlet **Restart-AzBatchComputeNode** melakukan boot ulang simpul komputasi yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai ulang node perhitungan
+### Contoh 1: Memulai ulang simpul komputasi
 ```
 PS C:\>Restart-AzBatchComputeNode -PoolId "MyPool" -Id "tvm-3257026573_2-20150813t200938z" -BatchContext $Context
 ```
 
-Perintah ini me-reboot node perhitungan dengan ID "tvm-3257026573_2-20150813t200938z" di MyPool pool.
+Perintah ini me-reboot simpul komputasi dengan ID "tvm-3257026573_2-20150813t200938z" di pool MyPool.
 
-### Contoh 2: Mulai ulang setiap node perhitungan dalam satu pool
+### Contoh 2: Hidupkan ulang setiap simpul komputasi dalam kumpulan
 ```
 PS C:\>Get-AzBatchComputeNode -PoolId "MyPool" -BatchContext $Context | Restart-AzBatchComputeNode -BatchContext $Context
 ```
 
-Perintah ini me-reboot setiap node perhitungan di MyPool pool.
+Perintah ini me-reboot setiap simpul komputasi di kolam MyPool.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan objek **PSComputeNode** yang mewakili node perhitungan untuk memulai ulang.
+Menentukan objek **PSComputeNode** yang mewakili simpul komputasi untuk melakukan boot ulang.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID node hitung untuk memulai ulang.
+Menentukan ID simpul komputasi untuk boot ulang.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan.
+Menentukan ID kumpulan yang berisi simpul komputasi.
 
 ```yaml
 Type: System.String
@@ -133,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -RebootOption
-Menentukan kapan harus memulai ulang simpul dan apa yang harus dilakukan dengan tugas yang saat ini berjalan.
-Defaultnya adalah Requeue.
+Menentukan kapan melakukan boot ulang simpul dan apa yang harus dilakukan dengan tugas yang sedang berjalan.
+Defaultnya adalah Antrean Ulang.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Batch.Common.ComputeNodeRebootOption]
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -168,6 +168,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchComputeNode](./Get-AzBatchComputeNode.md)
 
-[Reset-AzBatchComputeNode](./Reset-AzBatchComputeNode.md)
+[Atur Ulang-AzBatchComputeNode](./Reset-AzBatchComputeNode.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

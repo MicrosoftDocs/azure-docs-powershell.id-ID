@@ -4,11 +4,11 @@ Module Name: Azs.Subscriptions.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a04836e2d361f4c9686fa5dfe62babfa57ade189
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577581"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142332837"
 ---
 # Test-AzsMoveSubscription
 
@@ -32,14 +32,14 @@ Validasi bahwa langganan pengguna dapat dipindahkan antar penawaran penyedia yan
 Test that user subscriptions can be moved to a delegated provider offer.
 ```
 
-Test-MoveSubscription \` -DestinationDelegatedProviderOffer "/subscriptions/45ec4d39-8dea-4d26-a373-c176ec53717a/providers/Microsoft.Subscriptions.Admin/delegatedProviders/798568b7-c6f1-4bf7-bb8f-2c8bebc7c777/offers/ro1" -ResourceId "/subscriptions/45ec4d39-8dea-4d26-a373-c176ec53717a/providers/Microsoft.Subscriptions.Admin/subscriptions/ce4c7fdb-5a38-46f5-8bbc-b8b328a87ab6","/subscriptions/45ec4d39-8dea-4d26-a373-c176ec53717a/providers/Microsoft.Subscriptions. Admin/langganan/a0d1a71c-0b27-4e73-abfc-169512576f7d"
+\` Test-MoveSubscription -DestinationDelegatedProviderOffer "/subscriptions/45ec4d39-8dea-4d26-a373-c176ec53717a/providers/Microsoft.Subscriptions.Admin/Admin didelegasikanProviders/798568b7-c6f1-4bf7-bb8f-2c8bebc7c777/offer/ro1" -ResourceId "/subscriptions/45ec4d39-8dea-4d26-a373-c176ec53717a/providers/Microsoft.Subscriptions.Admin/subscriptions/ce4c7fdb-5a38-46f5-8bbc-b8b328a87ab6","/subscriptions/45ec4d39-8dea-4d26-a373-c176ec53717a/providers/Microsoft.Subscriptions. Admin/subscriptions/a0d1a71c-0b27-4e73-abfc-169512576f7d"
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Test that user subscriptions can be moved from a delegated provider to the Default Provider.
 ```
 
-$resourceIds = Get-AzsUserSubscription -Filter "offerName eq 'o1'" | Pilih -ExpandProperty Id Test-MoveSubscription -PropuceId $resourceIds
+$resourceIds = Get-AzsUserSubscription -Filter "offerName eq 'o1'" | Pilih -ExpandProperty Id Test-MoveSubscription -ResoruceId $resourceIds
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationDelegatedProviderOffer
-Menentukan penawaran penyedia terdelegasi yang sepenuhnya memenuhi syarat untuk memindahkan langganan cmdlet ini.
+Menentukan penawaran penyedia yang didelegasikan sepenuhnya yang memenuhi syarat di mana cmdlet ini memindahkan langganan.
 NULL jika langganan akan dipindahkan kembali ke Penyedia Default.
 
 ```yaml
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan array pengidentifikasi sumber daya langganan yang sepenuhnya memenuhi syarat yang di pindahkan cmdlet ini.
+Menentukan array pengidentifikasi sumber daya langganan yang sepenuhnya memenuhi syarat yang dipindahkan cmdlet ini.
 
 ```yaml
 Type: String[]
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
