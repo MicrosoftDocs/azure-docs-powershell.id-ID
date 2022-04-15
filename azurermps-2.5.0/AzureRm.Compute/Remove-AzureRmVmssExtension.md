@@ -5,11 +5,11 @@ ms.assetid: 8C1C12AD-5130-42E7-99BB-B13900D7A712
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/remove-azurermvmssextension
 schema: 2.0.0
 ms.openlocfilehash: 224b0302da76fd1c748cd77a183aa9a302dd3c9b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428721"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393735"
 ---
 # Remove-AzureRmVmssExtension
 
@@ -33,14 +33,14 @@ Remove-AzureRmVmssExtension [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVmssExtension** menghapus ekstensi dari Virtual Machine Scale Set (VMSS).
+Cmdlet **Remove-AzureRmVmssExtension** menghapus ekstensi dari Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -84,8 +84,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
-Menentukan VMSS yang akan menjadi tempat untuk menghapus ekstensi.
+### -VirtualMachineScaleSet
+Menentukan VMSS tempat untuk menghapus ekstensi.
 
 ```yaml
 Type: PSVirtualMachineScaleSet
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -130,12 +130,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### VirtualMachinescaleSet
-Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari saluran
+### VirtualMachineScaleSet
+Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari pipeline
 
 ## OUTPUTS
 

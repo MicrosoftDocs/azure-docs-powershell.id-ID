@@ -5,11 +5,11 @@ ms.assetid: 7B3259CD-079D-4E07-8608-F818522EE7CF
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/start-azurermvm
 schema: 2.0.0
 ms.openlocfilehash: 04110cb46d3f0ed0e5e09e6b12544b927cf6ae25
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423960"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142393676"
 ---
 # Start-AzureRmVM
 
@@ -33,21 +33,21 @@ Start-AzureRmVM [-Name] <String> [-Id] <String> [-AsJob] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmVM** memulai komputer virtual Azure.
+Cmdlet **Start-AzureRmVM** memulai mesin virtual Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai mesin virtual
+### Contoh 1: Memulai mesin virtual
 ```
 PS C:\> Start-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 ```
 
-Perintah ini memulai mesin virtual bernama VirtualMachine07 dalam ResourceGroup11.
+Perintah ini memulai mesin virtual bernama VirtualMachine07 di ResourceGroup11.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -152,11 +152,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -169,14 +169,14 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[New-AzureRmVM](./New-AzureRmVM.md)
+[AzureRmVM Baru](./New-AzureRmVM.md)
 
-[Remove-AzureRmVM](./Remove-AzureRmVM.md)
+[Hapus-AzureRmVM](./Remove-AzureRmVM.md)
 
 [Mulai ulang-AzureRmVM](./Restart-AzureRmVM.md)
 
 [Stop-AzureRmVM](./Stop-AzureRmVM.md)
 
-[Update-AzureRmVM](./Update-AzureRmVM.md)
+[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
 
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: a4d5cc4748e10faddfa999d425bf119c2513fce3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 013c9d81a20e386f86d8daece52a343525e34252
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998605"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142400453"
 ---
 # Get-AzSqlInstanceDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
-Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom di database Azure SQL Managed Instance.
+Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzSqlInstanceDatabaseSensitivityRecommendation [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlInstanceDatabaseSensitivityRecommendation mengembalikan tipe informasi yang direkomendasikan dan label sensitivitas kolom di database Azure SQL Instans Terkelola.
+Cmdlet Get-AzSqlInstanceDatabaseSensitivityRecommendation mengembalikan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas database Azure SQL Instans Terkelola.
+### Contoh 1: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database
 
@@ -96,7 +99,7 @@ SensitivityLabels : {{
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database Azure SQL Instans Terkelola.
+Nama database Azure SQL Managed Instance.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Azure SQL Instans Terkelola.
+Azure SQL Managed Instance nama.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -200,4 +203,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang Azure SQL Database klasifikasi dan penemuan data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

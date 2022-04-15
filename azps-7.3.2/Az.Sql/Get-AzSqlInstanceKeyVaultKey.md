@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Get-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: 96cf21ef9555d85f2972839bec41f3eb2f592dde
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a1f4140cc2dd009f4dcccead2fd35c7973b0ed7b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006011"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142400309"
 ---
 # Get-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
-Mendapatkan SQL Kunci Vault terkelola.
+Mendapatkan kunci Key Vault instans terkelola SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancekeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSqlInstanceKeyVaultKey [[-KeyId] <String>] [-ResourceGroupName] <String> [
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlManagedInstanceKeyVaultInputObjectParameterSet
+### AddAzureRmSqlManagedInstanceKeyVaultKeyInputObjectParameterSet
 ```
 Get-AzSqlInstanceKeyVaultKey [[-KeyId] <String>] [-Instance] <AzureSqlManagedInstanceModel>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzSqlInstanceKeyVaultKey [[-KeyId] <String>] [-InstanceResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlInstanceKeyVaultKey ini mendapatkan informasi tentang tombol Key Vault pada SQL terkelola. You can view all keys on a managed instance or view a specific key by providing the KeyId.
+Cmdlet Get-AzSqlInstanceKeyVaultKey mendapatkan informasi tentang kunci Key Vault pada instans yang dikelola SQL. Anda dapat melihat semua kunci pada instans terkelola atau melihat kunci tertentu dengan menyediakan KeyId.
 
 ## EXAMPLES
 
-### Contoh 1: Get all Key Vault keys
+### Contoh 1: Dapatkan semua kunci Key Vault
 ```powershell
 PS C:\> Get-AzSqlInstanceKeyVaultKey -ResourceGroupName 'ContosoResourceGroup' -InstanceName 'ContosoManagedInstanceName'
 
@@ -55,7 +58,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini memasukkan semua tombol Key Vault pada SQL terkelola.
+Perintah ini mendapatkan semua tombol Key Vault pada instans terkelola SQL.
 
 ### Contoh 2: Dapatkan kunci Key Vault tertentu
 ```powershell
@@ -70,9 +73,9 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini akan mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
+Perintah ini mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
 
-### Contoh 3: Menggunakan objek instance
+### Contoh 3: Menggunakan objek instans
 ```powershell
 PS C:\> $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 PS C:\> Get-AzSqlInstanceKeyVaultKey -ManagedInstance $managedInstance -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -86,9 +89,9 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini akan mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
+Perintah ini mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
 
-### Contoh 4: Menggunakan id sumber daya contoh
+### Contoh 4: Menggunakan id sumber daya instans
 ```powershell
 PS C:\> $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 PS C:\> Get-AzSqlInstanceKeyVaultKey -InstanceResourceId $managedInstance.ResourceId -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -102,7 +105,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini akan mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
+Perintah ini mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
 
 ### Contoh 5: Menggunakan piping
 ```powershell
@@ -118,7 +121,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini akan mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
+Perintah ini mendapatkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Instance
-Objek input contoh
+Objek input instans
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama contoh
+Nama instans
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya contoh
+Id sumber daya instans
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
