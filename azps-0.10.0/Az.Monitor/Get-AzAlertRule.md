@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Get-AzAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Get-AzAlertRule.md
 ms.openlocfilehash: c48a3fcf2441c7818d087e42b1271939963936ce
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426488"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142495421"
 ---
 # Get-AzAlertRule
 
 ## SYNOPSIS
-Mendapatkan aturan pemberitahuan.
+Mendapatkan aturan peringatan.
 
 ## SYNTAX
 
@@ -39,38 +39,38 @@ Get-AzAlertRule -ResourceGroupName <String> -TargetResourceId <String> [-Detaile
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAlertRule** mendapatkan aturan pemberitahuan berdasarkan namanya atau URI, atau semua aturan pemberitahuan dari grup sumber daya tertentu.
+Cmdlet **Get-AzAlertRule** mendapatkan aturan peringatan berdasarkan namanya atau URI, atau semua aturan peringatan dari grup sumber daya tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan pemberitahuan untuk grup sumber daya
+### Contoh 1: Mendapatkan aturan peringatan untuk grup sumber daya
 ```
 PS C:\>Get-AzAlertRule -ResourceGroup "Default-Web-CentralUS"
 ```
 
-Perintah ini mendapatkan semua aturan pemberitahuan untuk grup sumber daya bernama Default-Web-CentralUS.
+Perintah ini mendapatkan semua aturan peringatan untuk grup sumber daya bernama Default-Web-CentralUS.
 Output tidak berisi detail tentang aturan karena parameter *DetailOutput* tidak ditentukan.
 
-### Contoh 2: Mendapatkan aturan pemberitahuan menurut nama
+### Contoh 2: Dapatkan aturan pemberitahuan berdasarkan nama
 ```
 PS C:\>Get-AzAlertRule -ResourceGroup "Default-Web-CentralUS" -Name "myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8"
 ```
 
-Perintah ini mendapatkan aturan pemberitahuan bernama myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8.
-Karena parameter *DetailOutput* tidak ditentukan, output hanya berisi informasi dasar tentang aturan pemberitahuan.
+Perintah ini mendapatkan aturan peringatan bernama myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8.
+Karena parameter *DetailOutput* tidak ditentukan, output hanya berisi informasi dasar tentang aturan peringatan.
 
-### Contoh 3: Mendapatkan aturan pemberitahuan menurut nama dengan output mendetail
+### Contoh 3: Dapatkan aturan peringatan berdasarkan nama dengan output mendetail
 ```
 PS C:\>Get-AzAlertRule -ResourceGroup "Default-Web-CentralUS" -Name "myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8" -DetailedOutput
 ```
 
-Perintah ini mendapatkan aturan pemberitahuan bernama myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8.
-Parameter *DetailOutput* ditentukan, sehingga output mendetail.
+Perintah ini mendapatkan aturan peringatan bernama myalert-7da64548-214d-42ca-b12b-b245bb8f0ac8.
+Parameter *DetailedOutput* ditentukan, sehingga output mendetail.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
+### -DetailedOutput
 Menampilkan detail lengkap dalam output.
 
 ```yaml
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aturan pemberitahuan untuk mendapatkan.
+Menentukan nama aturan pemberitahuan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -168,6 +168,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzAlertHistory](./Get-AzAlertHistory.md)
 
-[Remove-AzAlertRule](./Remove-AzAlertRule.md)
+[Hapus-AzAlertRule](./Remove-AzAlertRule.md)
 
 

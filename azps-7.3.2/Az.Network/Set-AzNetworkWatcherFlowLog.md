@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: c829a85245f0487df6befe337f9bc31e18bf625b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4b6d2da74e365aa4e451ab21b27b4fd91048e1a2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142467431"
 ---
 # Set-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
-Pembaruan sumber daya log alur.
+Memperbarui sumber daya log alur.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkwatcherflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Set-AzNetworkWatcherFlowLog -InputObject <PSFlowLogResource> [-Force]
 ```
 
 ## DESCRIPTION
-Pembaruan sumber daya log alur.
+Memperbarui sumber daya log alur.
 
 ## EXAMPLES
 
@@ -106,11 +109,11 @@ PS C:\> $flowLog.Format.Version = 2
 PS C:\> $flowLog | Set-AzNetworkWatcherFlowLog -Force
 ```
 
-Nama : Id pstest : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/NetworkWatcherRG/provid ers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus/FlowLogs/pstest Etag : W/"e939e1e6-1509-4d7a-9e89-1ea532f6f222" ProvisioningState : Lokasi Berhasil: eastus TargetResourceId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/MyFlowLog/provide  rs/Microsoft.Network/networkSecurityGroups/MyNSG StorageId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/FlowLogsV2Demo/provider s/Microsoft. Storage/storageAccounts/MyStorage Diaktifkan : True RetentionPolicy : { "Days": 0, "Enabled": false } Format : { "Type": "JSON", "Version": 2 } FlowAnalyticsConfiguration :{}
+Nama : pstest Id : /subscriptions/bbbbbb-bb-bb-bb-bbbbbb/resourceGroups/NetworkWatcherRG/provid ers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus/FlowLogs/pstest Etag : W/"e939e1e6--1509-4d7a-9e89-1ea532f6f222" ProvisioningState : Lokasi Berhasil : eastus TargetResourceId : /subscriptions/bbbbbbbb-bbbb-bb-bbbb-bbbb/resourceGroups/MyFlowLog/provide  rs/Microsoft.Network/networkSecurityGroups/MyNSG StorageId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbb/resourceGroups/FlowLogsV2Demo/provider s/Microsoft. Storage/storageAccounts/MyStorage Enabled : True RetentionPolicy : { "Days": 0, "Enabled": false } Format : { "Type": "JSON", "Version": 2 } FlowAnalyticsConfiguration :{}
 
 ### Contoh 2
 
-Pembaruan sumber daya log alur. (otomatisgenerated)
+Memperbarui sumber daya log alur. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -134,8 +137,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Bendera untuk mengaktifkan/menonaktifkan pembuatan log alur.
+### -Difungsikan
+Tandai untuk mengaktifkan/menonaktifkan pembuatan log alur.
 
 ```yaml
 Type: Boolean
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRetention
-Bendera untuk mengaktifkan/menonaktifkan penyimpanan.
+Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
 
 ```yaml
 Type: Boolean
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTrafficAnalytics
-Menandai dengan bendera untuk mengaktifkan/menonaktifkan TrafficAnalytics
+Bendera untuk mengaktifkan/menonaktifkan TrafficAnalytics
 
 ```yaml
 Type: SwitchParameter
@@ -179,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficAnalyticsInterval
-Interval dalam menit yang akan menentukan seberapa sering layanan TA harus melakukan analitik alur.
+Interval dalam menit yang akan memutuskan seberapa sering layanan TA harus melakukan analitik alur.
 
 ```yaml
 Type: Int32
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -437,7 +440,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -474,7 +477,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -514,9 +517,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

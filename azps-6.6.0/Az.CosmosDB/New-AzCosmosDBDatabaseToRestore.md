@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBDatabaseToRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBDatabaseToRestore.md
 ms.openlocfilehash: b64d49abfafeb2ce2de9819c2e31ce40ffdbe937
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140141073"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477669"
 ---
 # New-AzCosmosDBDatabaseToRestore
 
@@ -18,7 +18,7 @@ ms.locfileid: "140141073"
 Membuat Database CosmosDB baru untuk Memulihkan objek(PSDatabaseToRestore)
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbdatabasetorestore) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbdatabasetorestore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzCosmosDBDatabaseToRestore -DatabaseName <String> [-CollectionName <String[
 ```
 
 ## DESCRIPTION
-Membuat objek CosmosDB DatabaseToRestore baru(PSDatabaseToRestore). Objek yang dikembalikan ini dapat digunakan untuk meminta subkumpulan database dan koleksi untuk dipulihkan.
+Membuat objek CosmosDB DatabaseToRestore baru(PSDatabaseToRestore). Objek yang dikembalikan ini dapat digunakan untuk menyempurnakan subset database dan kumpulan untuk dipulihkan.
 
 ## EXAMPLES
 
@@ -41,13 +41,13 @@ DatabaseName CollectionNames
 database1    {collection1, collection2, collection3}
 ```
 
-Membuat objek DatabaseToRestore baru dengan nama database1 dan koleksi dengan nama koleksi1, koleksi2 dan koleksi3.
+Membuat objek DatabaseToRestore baru dengan database nama1 dan koleksi dengan koleksi nama1, koleksi2, dan koleksi3.
 
 ## PARAMETERS
 
 ### -CollectionName
 Nama koleksi yang akan dipulihkan.
-(Jika tidak diberikan, semua koleksi akan dipulihkan)
+(Jika tidak disediakan, semua koleksi akan dipulihkan)
 
 ```yaml
 Type: System.String[]
@@ -92,11 +92,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

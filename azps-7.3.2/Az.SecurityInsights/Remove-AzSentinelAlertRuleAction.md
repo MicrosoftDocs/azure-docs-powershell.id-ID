@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: 1de3b1a3e25902966f98bf26e877f90a2752c53b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e86f3d20437b1e9761f12c9c4982d256917bfc8a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385611"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142483415"
 ---
 # Remove-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
 Menghapus Respons Otomatis dari Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelalertruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,9 +36,9 @@ Remove-AzSentinelAlertRuleAction -InputObject <PSSentinelActionResponse> [-PassT
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSentinelAlertRuleAction** secara permanen menghapus Respons Otomatis dari Aturan Pemberitahuan di ruang kerja yang ditentukan.
-Anda dapat melewati **objek AlertRuleAction** menggunakan operator pipeline, atau dengan cara lain Anda dapat menentukan parameter yang diperlukan.
-Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **Remove-AzSentinelAlertRuleAction** menghapus secara permanen Respons Otomatis dari Aturan Peringatan dalam ruang kerja tertentu.
+Anda dapat melewati objek **AlertRuleAction** menggunakan operator pipeline, atau menentukan parameter yang diperlukan.
+Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerS
 PS C:\> Remove-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -ActionId "MyActionId"
 ```
 
-Perintah ini akan menghapus Aturan Pemberitahuan dari ruang kerja.
+Perintah ini menghapus Aturan Pemberitahuan dari ruang kerja.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +61,7 @@ $AlertRuleAction = Get-AzSentinelAlertRuleAction @SentinelConnection -AlertRuleI
 Remove-AzSentinelAlertRuleAction @SentinelConnection -AlertRuleId $AlertRule.Name -ActionId $AlertRuleAction.Name
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati *resourceGroupName* dan *workspaceName*. Pertama mendapatkan *AlertRule* dengan *DisplayName* tertentu, lalu mendapatkan *tindakan AlertRuleAction* dan akhirnya menghapusnya dari AlertRule.
+Contoh ini menggunakan objek koneksi untuk melewati *resourceGroupName* dan *workspaceName*. Ini pertama mendapatkan *AlertRule* dengan *DisplayName* tertentu, lalu mendapatkan *AlertRuleAction* dan akhirnya menghapusnya dari AlertRule.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleId
-Id Aturan Pemberitahuan.
+Id Aturan Peringatan.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

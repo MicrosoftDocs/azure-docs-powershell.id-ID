@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 ms.openlocfilehash: 77a87d80e656098eeb9450b0ed612d82a8b9e7fa
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424976"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497790"
 ---
 # Get-AzApplicationGatewayWebApplicationFirewallConfiguration
 
@@ -26,17 +26,17 @@ Get-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayWebApplicationFirewallConfiguration** mendapatkan konfigurasi firewall aplikasi web (WAF) dari gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayWebApplicationFirewallConfiguration** mendapatkan konfigurasi firewall aplikasi web (WAF) gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi firewall aplikasi web gateway aplikasi
+### Contoh 1: Dapatkan konfigurasi firewall aplikasi gateway web
 ```
 PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $FirewallConfig = Get-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01, lalu menyimpannya dalam $AppGW variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01, lalu menyimpannya dalam variabel $AppGW.
 
 Perintah kedua mendapatkan konfigurasi firewall gateway aplikasi di $AppGW, lalu menyimpannya di $FirewallConfig.
 
@@ -44,7 +44,7 @@ Perintah kedua mendapatkan konfigurasi firewall gateway aplikasi di $AppGW, lalu
 
 ### -ApplicationGateway
 Menentukan objek gateway aplikasi.
-Anda bisa menggunakan cmdlet Get-AzApplicationGateway cmdlet untuk mendapatkan objek gateway aplikasi.
+Anda bisa menggunakan cmdlet Get-AzApplicationGateway untuk mendapatkan objek gateway aplikasi.
 
 ```yaml
 Type: PSApplicationGateway
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -74,12 +74,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSApplicationGateway
-Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari saluran
+Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari pipeline
 
 ## OUTPUTS
 

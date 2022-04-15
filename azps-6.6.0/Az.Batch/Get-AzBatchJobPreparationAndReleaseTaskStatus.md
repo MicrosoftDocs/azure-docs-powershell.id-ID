@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
 ms.openlocfilehash: cfbd9155f02a9d1e2c1b28535ec7b5985817b08a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139980141"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142479545"
 ---
 # Get-AzBatchJobPreparationAndReleaseTaskStatus
 
 ## SYNOPSIS
-Dapatkan persiapan pekerjaan Kumpulan dan lepaskan status tugas.
+Mendapatkan persiapan pekerjaan batch dan melepaskan status tugas.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchjobpreparationandreleasetaskstatus) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchjobpreparationandreleasetaskstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,12 +37,12 @@ Get-AzBatchJobPreparationAndReleaseTaskStatus [-InputObject] <PSCloudJob> [-Filt
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchJobPreparationAndReleaseTaskStatus** menyiapkan dan merilis status tugas Azure Batch untuk pekerjaan Kumpulan.
-Anda harus menyediakan *parameter Id* atau instans **PSCloudJob** ke cmdlet ini.
+**Cmdlet Get-AzBatchJobPreparationAndReleaseTaskStatus** mendapatkan Azure Batch persiapan pekerjaan dan melepaskan status tugas untuk pekerjaan Batch.
+Anda harus memasukkan parameter *Id* atau **instans PSCloudJob** ke cmdlet ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status persiapan pekerjaan dan rilis pekerjaan
+### Contoh 1: Dapatkan status persiapan pekerjaan dan rilis pekerjaan
 ```
 PS C:\> Get-AzBatchJobPreparationAndReleaseTaskStatus -BatchContext $Context -Id Test
 
@@ -53,8 +53,8 @@ JobReleaseTaskExecutionInformation     :
 PoolId                                 : test
 ```
 
-Perintah ini mendapatkan status persiapan pekerjaan dan rilis tugas untuk "Tes" pekerjaan.
-Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
+Perintah ini mendapatkan status tugas persiapan pekerjaan dan pelepasan untuk pekerjaan "Uji".
+Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
 ### Contoh 2: Dapatkan status persiapan pekerjaan dan rilis pekerjaan dengan Filter dan Pilih yang ditentukan
 ```
@@ -67,13 +67,13 @@ JobReleaseTaskExecutionInformation     :
 PoolId                                 :
 ```
 
-Perintah ini mendapatkan status tugas persiapan dan rilis pekerjaan untuk "Tes" pekerjaan di node "tvm-2316545714_1-20170613t201733z" dan menggunakan klausul Select untuk menentukan untuk hanya mengembalikan informasi JobPreparationTaskExecutionInformation
+Perintah ini mendapatkan status tugas persiapan pekerjaan dan rilis untuk pekerjaan "Uji" pada simpul "tvm-2316545714_1-20170613t201733z" dan menggunakan klausul Select untuk menentukan untuk hanya mengembalikan informasi JobPreparationTaskExecutionInformation
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan ketika berinteraksi dengan layanan Batch.
-Gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi.
+Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
+Gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluas Open Data Protocol (OData).
+Menentukan klausul perluasan Open Data Protocol (OData).
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang Anda dapatkan.
 
 ```yaml
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -Filter
 Menentukan klausul filter OData.
-Jika Anda tidak menentukan filter, cmdlet ini akan mengembalikan semua status persiapan dan rilis tugas pekerjaan untuk pekerjaan tersebut.
+Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua persiapan pekerjaan dan melepaskan status tugas ' untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek **PSCloudJob** yang mewakili pekerjaan untuk mendapatkan status tugas persiapan dan rilis.
-Untuk mendapatkan objek **PSCloudJob** , gunakan Get-AzBatchJob cmdlet.
+Menentukan objek **PSCloudJob** yang mewakili pekerjaan untuk mendapatkan persiapan dan melepaskan status tugas.
+Untuk mendapatkan objek **PSCloudJob** , gunakan cmdlet Get-AzBatchJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJob
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum dari persiapan pekerjaan dan status tugas rilis yang akan dikembalikan.
+Menentukan jumlah maksimum persiapan pekerjaan dan status tugas rilis' untuk dikembalikan.
 Jika Anda menentukan nilai nol (0) atau kurang, cmdlet tidak menggunakan batas atas.
 Nilai defaultnya adalah 1000.
 
@@ -184,8 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pilih OData.
-Tentukan nilai untuk parameter ini agar mendapatkan properti tertentu dan bukan semua properti objek.
+Menentukan klausul pemilihan OData.
+Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,4 +218,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchJob](./Get-AzBatchJob.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

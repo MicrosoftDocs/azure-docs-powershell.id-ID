@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
-ms.openlocfilehash: 60c287de2a13df639c613c766bdc9777b8e5f490
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 73dd33e5e592fabf390525780396c517d987aa5f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385635"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142484567"
 ---
 # Start-AzRecoveryServicesAsrCancelFailoverJob
 
 ## SYNOPSIS
-Memulai tindakan membatalkan failover untuk objek Pemulihan Situs.
+Memulai tindakan cancel failover untuk objek Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrcancelfailoverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Start-AzRecoveryServicesAsrCancelFailoverJob -RecoveryPlan <ASRRecoveryPlan>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrCancelFailoverJob** memulai proses pembatalan failover untuk objek Pemulihan Situs Azure.
+Cmdlet **Start-AzRecoveryServicesAsrCancelFailoverJob** memulai proses failover pembatalan untuk objek azure Site Recovery.
 
 ## EXAMPLES
 
@@ -41,11 +44,11 @@ Cmdlet **Start-AzRecoveryServicesAsrCancelFailoverJob** memulai proses pembatala
 PS C:\> $currentJob = Start-AzRecoveryServicesAsrCancelFailoverJob -RecoveryPlan $RP
 ```
 
-Memulai failover pembatalan untuk paket pemulihan tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai failover pembatalan untuk rencana pemulihan yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 2
 
-Memulai tindakan membatalkan failover untuk objek Pemulihan Situs. (otomatisgenerated)
+Memulai tindakan cancel failover untuk objek Site Recovery. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Menentukan objek paket pemulihan ASR yang terkait dengan paket pemulihan akan failover.
+Menentukan objek rencana pemulihan ASR yang terkait dengan rencana pemulihan yang akan gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek item dilindungi replikasi ASR yang terkait dengan replikasi item yang diproteksi untuk failover.
+Menentukan objek item terproteksi replikasi ASR yang terkait dengan item yang diproteksi replikasi agar gagal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

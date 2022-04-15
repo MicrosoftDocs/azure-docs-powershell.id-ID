@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Stop-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Stop-AzHDInsightJob.md
-ms.openlocfilehash: ec9906aaf7a7f98aa2559b561d772c606f43d19e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 89cfab42e775ed3089425b48586c3aeee1b9697a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186824"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470870"
 ---
 # Stop-AzHDInsightJob
 
 ## SYNOPSIS
-Menghentikan pekerjaan berjalan tertentu pada kluster.
+Menghentikan pekerjaan yang berjalan tertentu pada kluster.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/stop-azhdinsightjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Stop-AzHDInsightJob [-ClusterName] <String> [-JobId] <String> [-HttpCredential] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzHDInsightJob** menghentikan pekerjaan sementara yang ditentukan di kluster Azure HDInsight.
+Cmdlet **Stop-AzHDInsightJob** menghentikan pekerjaan yang berjalan tertentu pada kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan pekerjaan pada kluster tertentu
+### Contoh 1: Menghentikan pekerjaan pada kluster yang ditentukan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -41,7 +44,7 @@ PS C:\> Stop-AzHDInsightJob `
             -JobId $jobId
 ```
 
-Perintah ini menghentikan pekerjaan pada kluster yang bernama up-hadoop-001.
+Perintah ini menghentikan pekerjaan di kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

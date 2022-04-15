@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
 ms.openlocfilehash: c5fb336d7ba105469506bb0a80a5b69036e5474b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414588"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497785"
 ---
 # New-AzScheduledQueryRuleLogMetricTrigger
 
 ## SYNOPSIS
-Membuat objek tipe Pemicu Metrik Log
+Membuat objek dari tipe Pemicu Metrik Log
 
 ## SYNTAX
 
@@ -26,8 +26,8 @@ New-AzScheduledQueryRuleLogMetricTrigger -ThresholdOperator <String> -Threshold 
 ```
 
 ## DESCRIPTION
-Membuat objek dari Pemicu Metrik Log tipe dan bersifat opsional.
-Ini adalah kondisi pemicu untuk aturan kueri metrik, untuk digunakan ketika Anda perlu mengatur ukuran metrik pemberitahuan.
+Membuat objek dari tipe Pemicu Metrik Log dan bersifat opsional.
+Ini adalah kondisi pemicu untuk aturan kueri metrik, yang akan digunakan saat Anda perlu menyatakan tipe pengukuran metrik pemberitahuan.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricColumn
-Kolom di mana nilai metrik sedang diagregat
+Kolom tempat nilai metrik diagregat
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang Batas
+### -Ambang batas
 Nilai ambang batas metrik
 
 ```yaml
@@ -98,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ThresholdOperator
-Operator ambang batas metrik : GreaterTerterka, LessTerka, Sama
+### -Ambang BatasOperator
+Operator ambang batas metrik : GreaterThan, LessThan, Equal
 
 ```yaml
 Type: System.String
@@ -114,11 +114,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

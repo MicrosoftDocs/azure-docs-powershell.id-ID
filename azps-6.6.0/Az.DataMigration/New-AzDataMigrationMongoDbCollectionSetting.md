@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbCollectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbCollectionSetting.md
 ms.openlocfilehash: 1979a079b37b96735661720bc4c2107fd6cc964d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142476539"
 ---
 # New-AzDataMigrationMongoDbCollectionSetting
 
 ## SYNOPSIS
-Membuat pengaturan kumpulan untuk migrasi sesuai dengan migrasi dbdb
+Membuat pengaturan pengumpulan untuk migrasi sesuai dengan migrasi mongoDb
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbcollectionsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbcollectionsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +27,8 @@ New-AzDataMigrationMongoDbCollectionSetting -Name <Name> [-TargetRequestUnit <Ta
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationMongoDbCollectionSetting membuat objek pengaturan migrasi yang menentukan perilaku throughput dan penghapusan.
-Output cmdlet adalah key value pair dengan nama kumpulan, dan nilai pengaturan. Output digunakan dalam merangkai pengaturan tingkat database untuk migrasi.
+Cmdlet New-AzDataMigrationMongoDbCollectionSetting membuat objek pengaturan migrasi yang menentukan throughput dan menghapus perilaku.
+Output cmdlet adalah pasangan nilai kunci dengan nama koleksi, dan nilai pengaturan. Output digunakan dalam menyusun pengaturan tingkat database untuk migrasi.
 
 ## EXAMPLES
 
@@ -66,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skey
-Daftar tombol sah yang dipisahkan koma. Untuk target hashoDb, Anda dapat menentukan urutan kunci s key "S altkeyName:Order", dengan urutan 1, -1 atau kosong untuk disederhan, misalnya "_id,email:-1".
+### -ShardKey
+Daftar tanda koma yang dipisahkan dari tombol shard. Untuk target mongoDb, Anda dapat menentukan urutan kunci shard "ShardKeyName:Order", dengan urutan 1, -1 atau kosong untuk hash, misalnya "_id,email:-1".
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetRequestUnit
-Nilai unit permintaan kumpulan khusus. Jika belum ditetapkan, kumpulan itu menggunakan database bersama RU.
+Nilai unit permintaan pengumpulan khusus. Jika tidak diatur, kumpulan tersebut menggunakan database bersama RU.
 
 ```yaml
 Type: System.Int32
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -CanDelete
-Apakah data target seharusnya dihapus, jika sakelar diatur, sakelar akan dibersihkan pada saat migrasi
+Apakah data target seharusnya dihapus, jika sakelar diatur, data tersebut akan dibersihkan saat migrasi
 
 ```yaml
 Type: System.Boolean
@@ -113,15 +113,15 @@ Accept wildcard characters: False
 
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataMigration.Models.DatabaseoDbCollectionSetting>
+### Microsoft.Azure.Commands.DataMigration.Models.MongoDbCollectionSetting>
 
 ## CATATAN
 

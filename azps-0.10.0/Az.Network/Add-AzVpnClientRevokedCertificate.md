@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzVpnClientRevokedCertificate.md
 ms.openlocfilehash: 384d5b88ce9a52ad5f68c009c7b610610c695ce2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425403"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493100"
 ---
 # Add-AzVpnClientRevokedCertificate
 
@@ -27,24 +27,24 @@ Add-AzVpnClientRevokedCertificate -VpnClientRevokedCertificateName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVpnClientRevokedCertificate** menetapkan sertifikat pencabutan klien ke gateway jaringan virtual.
-Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
-Anda perlu menentukan nama sertifikat dan thumbprint sertifikat untuk menggunakan cmdlet ini.
+Cmdlet **Add-AzVpnClientRevokedCertificate** menetapkan sertifikat pembatalan klien ke gateway jaringan virtual.
+Sertifikat pembatalan klien mencegah komputer klien menggunakan sertifikat tertentu untuk autentikasi.
+Anda perlu menentukan nama sertifikat dan sidik jari sertifikat untuk menggunakan cmdlet ini.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan sertifikat pencabutan klien baru ke gateway jaringan virtual
+### Contoh 1: Menambahkan sertifikat pembatalan klien baru ke gateway jaringan virtual
 ```
 PS C:\>Add-AzVpnClientRevokedCertificate -VirtualNetworkGatewayName "ContosoVirtualNetwork" -ResourceGroupName "ContosoResourceGroup" -VpnClientRevokedCertificateName "ContosoRevokedClientCertificate"-Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
 
-Perintah ini menambahkan sertifikat pencabutan klien baru ke gateway jaringan virtual yang bernama ContosoVirtualNetwork.
-Untuk menambahkan sertifikat, Anda harus menentukan nama sertifikat dan thumbprint sertifikat.
+Perintah ini menambahkan sertifikat pembatalan klien baru ke gateway jaringan virtual bernama ContosoVirtualNetwork.
+Untuk menambahkan sertifikat, Anda harus menentukan nama sertifikat dan sidik jari sertifikat.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -59,9 +59,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
 
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: String
@@ -75,13 +75,13 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
+### -Sidik jari
 Menentukan pengidentifikasi unik sertifikat yang ditambahkan.
 Misalnya:
 
--Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
+-Sidik jari "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 
-Anda bisa mendapatkan informasi yang dapat dicetak dengan jempol untuk sertifikat Anda menggunakan Windows PowerShell seperti ini: `Get-ChildItem -Path Cert:\LocalMachine\Root` .
+Anda bisa mendapatkan informasi sidik jari untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell seperti ini: `Get-ChildItem -Path Cert:\LocalMachine\Root`.
 
 Perintah sebelumnya mendapatkan informasi untuk semua sertifikat komputer lokal yang ditemukan di penyimpanan sertifikat akar.
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHub.md
-ms.openlocfilehash: debf3006b530db585c7acc33fdf26fdfc6c81863
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3330090cd8743b87770cc591e0d53a66bcef7524
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549759"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470652"
 ---
 # Get-AzIotHub
 
 ## SYNOPSIS
 Mendapatkan informasi tentang IotHubs dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Mendapatkan semua IotHubs dalam langganan.
 PS C:\> Get-AzIotHub -ResourceGroupName "myresourcegroup"
 ```
 
-Mendapatkan semua IotHubs dalam langganan yang dimiliki oleh grup sumber daya bernama "myresourcegroup".
+Mendapatkan semua IotHubs dalam langganan milik grup sumber daya bernama "myresourcegroup".
 
 ### Contoh 3
 ```
@@ -60,7 +63,7 @@ Mendapatkan informasi tentang IotHub bernama "myiothub".
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya
+Nama Grup-Sumber Daya
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHub.md
-ms.openlocfilehash: ef635f8761c83d0a1ab670d305326a995284cf7e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: eafff33984c6a9c20b5d5dc702eaa61ca3f91ee5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999565"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468313"
 ---
 # Remove-AzVirtualHub
 
 ## SYNOPSIS
 Menghapus sumber daya Azure VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ PS C:\> New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "testRG" -Na
 PS C:\> Remove-AzVirtualHub -ResourceGroupName "testRG" -Name "westushub"
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
 Lalu menghapus hub virtual menggunakan ResourceGroupName dan ResourceName.
 
@@ -64,9 +67,9 @@ PS C:\> $virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupNam
 PS C:\> Remove-AzVirtualHub -InputObject $virtualHub
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
-Lalu menghapus hub virtual menggunakan objek input. Objek input merupakan tipe PSVirtualHub.
+Lalu menghapus hub virtual menggunakan objek input. Objek input adalah tipe PSVirtualHub.
 
 ### Contoh 3
 
@@ -77,14 +80,14 @@ PS C:\> New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "testRG" -Na
 PS C:\> Get-AzVirtualHub -ResourceGroupName "testRG" -Name "westushub" | Remove-AzVirtualHub
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
-Lalu menghapus hub virtual menggunakan pemipaan powershell menggunakan output dari Get-AzVirtualHub.
+Lalu menghapus hub virtual menggunakan perpipaan powershell menggunakan output dari Get-AzVirtualHub.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Hub virtual yang akan dimodifikasi.
+Objek hub virtual yang akan diubah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -256,4 +259,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVirtualHub](./New-AzVirtualHub.md)
 
-[Update-AzVirtualHub](./Update-AzVirtualHub.md)
+[Perbarui-AzVirtualHub](./Update-AzVirtualHub.md)

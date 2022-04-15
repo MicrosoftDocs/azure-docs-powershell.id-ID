@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: 871f9646659c2cd87e459e9d5c5cd44b9a76ff62
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9ce729a1a8287636d212878d4568bc7bad570f91
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555739"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142491371"
 ---
 # Get-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Mendapatkan informasi dan properti serta status sumber daya penangkapan paket.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzNetworkWatcherPacketCapture -Location <String> [-PacketCaptureName <String
 ```
 
 ## DESCRIPTION
-Sumber Get-AzNetworkWatcherPacketCapture mendapatkan properti dan status sumber daya penangkapan paket.
+Get-AzNetworkWatcherPacketCapture mendapatkan properti dan status sumber daya penangkapan paket.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Penangkapan Paket dengan beberapa filter dan mengambil statusnya
+### Contoh 1: Buat Tangkapan Paket dengan beberapa filter dan ambil statusnya
 ```
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -56,22 +59,22 @@ New-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -TargetVirtual
 Get-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -PacketCaptureName "PacketCaptureTest"
 ```
 
-Dalam contoh ini, kami membuat penyimpanan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan tertentu. Lalu kami Get-AzNetworkWatcherPacketCapture untuk mengambil status sesi ambil. Catatan: Ekstensi Azure Network Watcher harus diinstal di komputer virtual target untuk membuat pengambilan paket.
+Dalam contoh ini, kami membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Kami kemudian memanggil Get-AzNetworkWatcherPacketCapture untuk mengambil status sesi penangkapan. Catatan: Ekstensi Azure Network Watcher harus diinstal di mesin virtual target untuk membuat tangkapan paket.
 
 >[!NOTE]
->Jika Anda membuat referensi ke paket menangkap secara langsung dari New-AzNetworkWatcherPacketCapture, paket itu tidak akan memiliki semua properti. Anda bisa mendapatkan semua properti penangkapan paket dengan melakukan panggilan ke Get-AzNetworkWatcherPacketCapture jaringan.
+>Jika Anda membuat referensi ke pengambilan paket secara langsung dari perintah New-AzNetworkWatcherPacketCapture, maka tidak akan memiliki semua properti. Anda bisa mendapatkan semua properti penangkapan paket dengan melakukan panggilan ke perintah Get-AzNetworkWatcherPacketCapture.
 
-### Contoh 2: Membuat Penangkapan Paket dengan beberapa filter dan mengambil statusnya
+### Contoh 2: Buat Tangkapan Paket dengan beberapa filter dan ambil statusnya
 ```
 Get-AzNetworkWatcherPacketCapture -ResourceGroupName rg1 -NetworkWatcherName nw1 -PacketCaptureName PacketCapture*
 ```
 
-Cmdlet ini mengembalikan semua PacketCapture yang dimulai dengan "PacketCapture" di Dalam Nw1 Network Watcher.
+Cmdlet ini mengembalikan semua PacketCapture yang dimulai dengan "PacketCapture" dalam Network Watcher nw1.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PacketCaptureName
-Nama pengambilan paket.
+Nama penangkapan paket.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSGetPacketCaptureResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, packet, capture, traffic
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, paket, penangkapan, lalu lintas
 
 ## RELATED LINKS
 
@@ -197,7 +200,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -237,9 +240,9 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

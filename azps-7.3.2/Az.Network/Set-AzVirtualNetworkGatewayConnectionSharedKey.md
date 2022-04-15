@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnectionSharedKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnectionSharedKey.md
-ms.openlocfilehash: 5b6e5cf14c2e70d944ce6e6bd1d81b732d4ba9c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8c1d2fe1f78e950c8998dacc79c43923561f8be4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007374"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142467359"
 ---
 # Set-AzVirtualNetworkGatewayConnectionSharedKey
 
 ## SYNOPSIS
-Mengonfigurasi kunci bersama dari koneksi gateway jaringan virtual.
+Mengonfigurasi kunci bersama koneksi gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewayconnectionsharedkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzVirtualNetworkGatewayConnectionSharedKey -Name <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVirtualNetworkGatewayConnectionSharedKey** mengonfigurasi kunci bersama dari koneksi gateway jaringan virtual.
+Cmdlet **Set-AzVirtualNetworkGatewayConnectionSharedKey** mengonfigurasi kunci bersama koneksi gateway jaringan virtual.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ abcd1234
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang dimiliki gateway jaringan virtual
+Menentukan nama grup sumber daya tempat gateway jaringan virtual berada
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai dari kunci bersama.
+Menentukan nilai kunci bersama.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

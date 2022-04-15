@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsAvailableServiceTier.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsAvailableServiceTier.md
-ms.openlocfilehash: bfe1fca692734c0a60810fa1095bab5bd3779972
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 362e87db229d50a33418ba34a5b28130d748c0c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555192"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142466747"
 ---
 # Get-AzOperationalInsightsAvailableServiceTier
 
 ## SYNOPSIS
-Perintah ini memperoleh semua tingkatan layanan yang tersedia untuk worksapce tertentu.
+Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk hasil kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsavailableservicetier) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzOperationalInsightsAvailableServiceTier [-ResourceGroupName] <String> [-Wo
 ```
 
 ## DESCRIPTION
-Perintah ini memperoleh semua tingkatan layanan yang tersedia untuk worksapce tertentu.
+Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk hasil kerja tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ CapacityReservationLevel :
 LastSkuUpdate            : Tue, 16 Nov 2021 13:20:32 GMT
 ```
 
-Perintah ini memperoleh semua tingkatan layanan yang tersedia untuk worksapce tertentu.
+Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk hasil kerja tertentu.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja yang berisi tabel.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

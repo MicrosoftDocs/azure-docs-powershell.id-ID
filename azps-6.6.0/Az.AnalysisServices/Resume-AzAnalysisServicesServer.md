@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Resume-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Resume-AzAnalysisServicesServer.md
 ms.openlocfilehash: 98d52db73dcd94f31f32b9a603af21911fad83d0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139981257"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142480715"
 ---
 # Resume-AzAnalysisServicesServer
 
@@ -18,7 +18,7 @@ ms.locfileid: "139981257"
 Melanjutkan contoh server Analysis Services
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/resume-azanalysisservicesserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/resume-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Resume-AzAnalysisServicesServer [[-ResourceGroupName] <String>] [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Resume-AzAnalysisServicesServer cmdlet melanjutkan contoh server Analysis Services
+Cmdlet Resume-AzAnalysisServicesServer melanjutkan contoh server Analysis Services
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Perintah ini akan melanjutkan server yang dijeda bernama testserver dalam grup u
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat server dimiliki
+Nama grup sumber daya Azure tempat server berada
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzCapacityReservation.md
 ms.openlocfilehash: 54bfc82db0a54738915a4092ac137f31fdf25c70
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336093"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142478897"
 ---
 # Get-AzCapacityReservation
 
 ## SYNOPSIS
-Mendapatkan properti sumber daya Reservasi Kapasitas dari Grup Reservasi Kapasitas
+Mendapatkan properti sumber daya Cadangan Kapasitas dari Grup Reservasi Kapasitas
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azcapacityreservation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azcapacityreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzCapacityReservation -ResourceGroupName <String> -ReservationGroupName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCapacityReservation** mendapatkan properti sumber daya Reservasi Kapasitas dari Grup Reservasi Kapasitas
+Cmdlet **Get-AzCapacityReservation** mendapatkan properti sumber daya Cadangan Kapasitas dari Kelompok Reservasi Kapasitas
 
 ## EXAMPLES
 
@@ -37,14 +37,14 @@ Cmdlet **Get-AzCapacityReservation** mendapatkan properti sumber daya Reservasi 
 PS C:\> Get-AzCapacityReservation -ResourceGroupName $rgname -ReservationGroupName "CRGroup1"
 ```
 
-Ini akan mengambil semua sumber daya Reservasi Kapasitas dari Grup Reservasi Kapasitas bernama "CRGroup1".
+Tindakan ini akan mengambil semua sumber daya Cadangan Kapasitas dari Grup Reservasi Kapasitas bernama "CRGroup1".
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzCapacityReservation -ResourceGroupName $rgname -ReservationGroupName "CRGroup1" -Name "resource1" -InstanceView
 ```
 
-Ini akan mengambil sumber daya Reservasi Kapasitas yang dinamai "resource1" dengan informasi tampilan contoh dari Grup Reservasi Kapasitas bernama "CRGroup1".
+Ini akan mengambil sumber daya Cadangan Kapasitas bernama "resource1" dengan informasi tampilan instansnya dari Grup Reservasi Kapasitas bernama "CRGroup1".
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceView
-Dapatkan Tampilan Contoh Reservasi Kapasitas.
+Dapatkan Tampilan Instans Reservasi Kapasitas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

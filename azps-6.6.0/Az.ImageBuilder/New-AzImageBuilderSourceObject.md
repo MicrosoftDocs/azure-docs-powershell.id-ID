@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
 ms.openlocfilehash: 382a2991989ef3cd178bb12205faeed0b5b06587
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474127"
 ---
 # New-AzImageBuilderSourceObject
 
 ## SYNOPSIS
-Menjelaskan sumber gambar mesin virtual untuk membuat, mengkustomisasi, dan mendistribusikan.
+Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ New-AzImageBuilderSourceObject -SourceTypeSharedImageVersion [-ImageVersionId <S
 ```
 
 ## DESCRIPTION
-Menjelaskan sumber gambar mesin virtual untuk membuat, mengkustomisasi, dan mendistribusikan.
+Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ Type         ImageId
 ManagedImage /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/wyunchi-imagebuilder/providers/Microsoft.Compute/images/test-linux-image
 ```
 
-Perintah ini membuat sumber gambar yang dikelola.
+Perintah ini membuat sumber gambar terkelola.
 
 ### Contoh 2: Membuat sumber gambar bersama
 ```powershell
@@ -71,9 +71,9 @@ Type               ImageVersionId
 SharedImageVersion /subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/wyunchi-imagebuilder/providers/Microsoft.Compute/galleries/lucasimagegallery/images/myimagedefinition/versions/1.0.0
 ```
 
-Perintah ini akan membuat sumber gambar bersama.
+Perintah ini membuat sumber gambar bersama.
 
-### Contoh 3: Membuat sebuah platfrom sumber gambar
+### Contoh 3: Membuat sumber gambar platfrom
 ```powershell
 PS C:\> New-AzImageBuilderSourceObject -SourceTypePlatformImage -Publisher 'Canonical' -Offer 'UbuntuServer' -Sku '18.04-LTS' -Version 'latest'
 
@@ -82,12 +82,12 @@ Type          Offer        Publisher Sku       Version
 PlatformImage UbuntuServer Canonical 18.04-LTS latest
 ```
 
-Perintah ini membuat platfrom sumber gambar.
+Perintah ini membuat sumber gambar platfrom.
 
 ## PARAMETERS
 
 ### -ImageId
-ARM resource id dari gambar yang dikelola dalam langganan pelanggan.
+ID sumber daya ARM dari gambar terkelola dalam langganan pelanggan.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 Penawaran gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-Publisher pembelian tersebut.
+Publisher paket pembelian.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Gambar Publisher gambar [di Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
+Gambar Publisher di [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sku gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
+Gambar sku dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

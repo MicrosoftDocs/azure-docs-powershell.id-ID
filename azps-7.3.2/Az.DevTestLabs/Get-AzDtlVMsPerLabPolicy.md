@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerLabPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerLabPolicy.md
-ms.openlocfilehash: 0c09e0385fce3071b361eafb54fdbb55964975db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 67809bb38fb4642ed1744bb8ea06a67eb495257d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550059"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471625"
 ---
 # Get-AzDtlVMsPerLabPolicy
 
 ## SYNOPSIS
-Dapatkan mesin virtual per kebijakan lab sebuah lab di DevTest Labs.
+Mendapatkan mesin virtual per kebijakan lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlvmsperlabpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzDtlVMsPerLabPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDtlVMsPerLabPolicy** mendapatkan kebijakan mesin virtual per lab dari sebuah lab, yang memungkinkan Anda mengatur jumlah total mesin virtual yang diperbolehkan di lab.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan, dan jumlah total mesin virtual yang diperbolehkan di lab yang Telah Anda tetapkan dalam kebijakan.
+Cmdlet **Get-AzDtlVMsPerLabPolicy** mendapatkan mesin virtual per kebijakan lab laboratorium, yang memungkinkan Anda mengatur jumlah total mesin virtual yang diperbolehkan di laboratorium.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan, dan jumlah total mesin virtual yang diperbolehkan di laboratorium yang telah Anda tetapkan dalam kebijakan.
 
 ## EXAMPLES
 
@@ -48,13 +51,13 @@ Description        :
 Status             : Enabled
 Provisioning State : 
 ```
-Dapatkan mesin virtual per kebijakan lab sebuah lab di DevTest Labs.
+Mendapatkan mesin virtual per kebijakan lab di DevTest Labs.
 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-azdtlvMsPerLabPolicy](./Set-AzDtlVMsPerLabPolicy.md)
+[Set-AzDtlVMsPerLabPolicy](./Set-AzDtlVMsPerLabPolicy.md)
 
 

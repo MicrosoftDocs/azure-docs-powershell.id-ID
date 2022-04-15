@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRootCertificate.md
-ms.openlocfilehash: f4f10f3f4405c1d8dea563e933cc6a213d3c062e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 05b647373afe60515e98044d4e75edfa218591cc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007714"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470059"
 ---
 # Get-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Mendapatkan informasi tentang sertifikat akar VPN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientrootcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,10 +29,10 @@ Get-AzVpnClientRootCertificate [-VpnClientRootCertificateName <String>] -Virtual
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVpnClientRootCertificate** mengembalikan informasi tentang sertifikat akar yang ditetapkan untuk gateway jaringan virtual.
+Cmdlet **Get-AzVpnClientRootCertificate** mengembalikan informasi tentang sertifikat akar yang ditetapkan ke gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
-Secara default, **Get-AzVpnClientRootCertificate** mengembalikan informasi tentang semua sertifikat akar yang ditetapkan untuk gateway.
-(Gateway bisa memiliki lebih dari satu sertifikat akar.) Namun, dengan menyertakan parameter **VpnClientRootCertificateName** Anda bisa membatasi data yang dikembalikan menjadi sertifikat tertentu.
+Secara default, **Get-AzVpnClientRootCertificate** mengembalikan informasi tentang semua sertifikat akar yang ditetapkan ke gateway.
+(Gateway bisa memiliki lebih dari satu sertifikat akar.) Namun, dengan menyertakan parameter **VpnClientRootCertificateName** , Anda dapat membatasi data yang dikembalikan ke sertifikat tertentu.
 
 ## EXAMPLES
 
@@ -46,12 +49,12 @@ PS C:\>Get-AzVpnClientRootCertificate -VirtualNetworkGatewayName "ContosoVirtual
 ```
 
 Perintah ini adalah variasi perintah yang diperlihatkan dalam Contoh 1.
-Namun, dalam kasus ini, parameter *VpnClientRootCertificateName* disertakan untuk membatasi data yang dikembalikan ke sertifikat akar tertentu: ContosoRootClientCertificate.
+Namun, dalam hal ini, parameter *VpnClientRootCertificateName* disertakan untuk membatasi data yang dikembalikan ke sertifikat akar tertentu: ContosoRootClientCertificate.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -66,8 +69,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGatewayName
-Menentukan nama gateway jaringan virtual tempat sertifikat akar ditetapkan.
+Menentukan nama gateway jaringan maya tempat sertifikat akar ditetapkan.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRootCertificateName
-Menentukan nama sertifikat akar klien yang didaurkan cmdlet ini.
+Menentukan nama sertifikat akar klien yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

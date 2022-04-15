@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableResource.md
 ms.openlocfilehash: 31ef871f80170c7348f95dd914c98d8f726a9d2d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078381"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477901"
 ---
 # Get-AzCosmosDBMongoDBRestorableResource
 
 ## SYNOPSIS
-Mencantumkan semua sumber daya Azure Cosmos DB Database yang dapat dikembalikan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
+Mencantumkan semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorableresource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorableresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +38,8 @@ Get-AzCosmosDBMongoDBRestorableResource -Location <String> -DatabaseAccountInsta
 ```
 
 ## DESCRIPTION
-Mencantumkan semua sumber daya Azure Cosmos DB Database yang dapat dikembalikan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
-Daftar ini berguna untuk mengetahui sumber daya apa yang ada di akun sumber pada waktu tertentu. Ini akan menyediakan petunjuk kepada pengguna tentang apa yang akan terjadi jika akun dipulihkan ke waktu tertentu.
+Mencantumkan semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
+Daftar ini berguna untuk mengetahui sumber daya apa yang ada di akun sumber pada waktu tertentu. Ini akan memberi pengguna indikasi tentang apa yang diharapkan jika akun dipulihkan ke waktu tertentu.
 Pengguna juga dapat menggunakan daftar ini dan menyediakan subset sumber daya yang dapat dipulihkan jika pengguna hanya ingin memulihkan database/kumpulan tertentu.
 
 ## EXAMPLES
@@ -53,12 +53,12 @@ DatabaseName CollectionNames
 {DBName}     {Collection names}
 ```
 
-Mengembalikan daftar semua sumber daya Azure Cosmos DB Database yang dapat dikembalikan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
+Mengembalikan daftar semua sumber daya Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia untuk akun database tertentu pada waktu dan lokasi tertentu.
 
 ## PARAMETERS
 
 ### -DatabaseAccountInstanceId
-Contoh Id dari akun database CosmosDB.
+Id instans akun database CosmosDB.
 (Ini dikembalikan sebagai bagian dari properti akun database).
 
 ```yaml
@@ -89,8 +89,8 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreLocation
-Lokasi akun sumber asal pemulihan dipicu.
-Ini juga akan menjadi kawasan penulisan dari akun yang dipulihkan
+Lokasi akun sumber tempat pemulihan dipicu.
+Ini juga akan menjadi wilayah tulis dari akun yang dipulihkan
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreTimestampInUtc
-Timestamp tempat akun sumber harus dipulihkan.
+Cap waktu tempat akun sumber harus dipulihkan.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Akun Database Yang Dapat Dikembalikan CosmosDB
+Objek Akun Database CosmosDB yang Dapat Disempurnakan
 
 ```yaml
 Type: Microsoft.Azure.Management.CosmosDB.Models.PSRestorableDatabaseAccountGetResult
@@ -150,11 +150,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

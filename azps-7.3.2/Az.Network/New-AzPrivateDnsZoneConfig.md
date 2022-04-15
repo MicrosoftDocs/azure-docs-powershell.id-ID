@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateDnsZoneConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateDnsZoneConfig.md
-ms.openlocfilehash: 4a24a03f2235bb0a675d464459ec82da701458e5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 69ff3fa168852409f9670458aec4b9d210b8362c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555452"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490849"
 ---
 # New-AzPrivateDnsZoneConfig
 
 ## SYNOPSIS
-Membuat konfigurasi zona DNS grup zona dns privat.
+Membuat konfigurasi zona DNS grup zona dns pribadi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivatednszoneconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzPrivateDnsZoneConfig -Name <String> [-PrivateDnsZoneId <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateDnsZoneConfig** memungkinkan Anda membuat objek konfigurasi zona DNS baru yang akan diatur di grup zona DNS.
+Cmdlet **New-AzPrivateDnsZoneConfig** memungkinkan Anda membuat objek konfigurasi zona DNS baru yang akan diatur pada grup zona DNS.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ PS C:\> $dnsZone = New-AzPrivateDnsZone -ResourceGroupName "rg" -Name "test.vaul
 PS C:\> $config = New-AzPrivateDnsZoneConfig -Name "test-vault-azure-com" -PrivateDnsZoneId $dnsZone.ResourceId
 ```
 
-Contoh di atas membuat zona DNS lalu membuat konfigurasi zona DNS. `New-AzPrivateDnsZone` cmdlet dibuktikan oleh modul Az.PrivateDns.
+Contoh di atas membuat zona DNS lalu membuat konfigurasi zona DNS. `New-AzPrivateDnsZone` cmdlet dibuktikan dengan modul Az.PrivateDns.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateDnsZoneId
-Id sumber daya dari zona dns privat.
+Id sumber daya zona dns pribadi.
 
 ```yaml
 Type: System.String
@@ -86,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

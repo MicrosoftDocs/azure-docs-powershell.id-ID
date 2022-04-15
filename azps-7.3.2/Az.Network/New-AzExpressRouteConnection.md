@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteConnection.md
-ms.openlocfilehash: a570472d5acf764dbdf8d05ee621179edfd872d1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9dd2eafcf19e008c624adc681c52fd70b5c445ed
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007594"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142491173"
 ---
 # New-AzExpressRouteConnection
 
 ## SYNOPSIS
 Membuat koneksi ExpressRoute yang menghubungkan gateway ExpressRoute ke sirkuit ExpressRoute lokal
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azexpressrouteconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzExpressRouteConnection -ParentResourceId <String> -Name <String> -ExpressR
 ```
 
 ## DESCRIPTION
-Membuat koneksi ExpressRoute antara sirkuit ExpressRoute lokal BGP peering ke gateway ExpressRoute di dalam hub Virtual.
+Membuat koneksi ExpressRoute antara peering BGP sirkuit ExpressRoute lokal ke gateway ExpressRoute di dalam hub Virtual.
 
 ## EXAMPLES
 
@@ -82,12 +85,12 @@ RoutingConfiguration               : {
                                      }
 ```
 
-Cara di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, gateway Express Route, dan sirkuit ExpressRoute dengan peering privat di AS Pusat Barat dalam grup sumber daya "testRG" di Azure. Setelah gateway dibuat, gateway tersambung ke Peering Sirkuit ExpressRoute menggunakan New-AzExpressRouteConnection koneksi.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, gateway Rute Ekspres, dan sirkuit ExpressRoute dengan peering privat di AS Tengah Barat dalam grup sumber daya "testRG" di Azure. Setelah gateway dibuat, gateway tersambung ke Peering Sirkuit ExpressRoute menggunakan perintah New-AzExpressRouteConnection.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationKey
-Kunci yang diperoleh dari pemilik sirkuit ExpressRoute untuk dapat membuat koneksi dengan gateway dalam langganan berbeda.
+Kunci yang diperoleh dari pemilik sirkuit ExpressRoute agar dapat membuat koneksi dengan gateway dalam langganan lain.
 
 ```yaml
 Type: String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurity
-Mengaktifkan keamanan internet untuk koneksi Gateway ExpressRoute ini
+Aktifkan keamanan internet untuk koneksi Gateway ExpressRoute ini
 
 ```yaml
 Type: SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitPeeringId
-Id sumber daya dari Peering Sirkuit Rute Ekspres yang menjadi tempat dibuatnya koneksi gateway Express Route ini.
+Id sumber daya dari Express Route Circuit Peering tempat koneksi gateway Rute Ekspres ini akan dibuat.
 
 ```yaml
 Type: String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari expressRouteGateway induk untuk koneksi ini.
+Id sumber daya dari induk ExpressRouteGateway untuk koneksi ini.
 
 ```yaml
 Type: String
@@ -251,8 +254,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RoutingWeight
-Bobot untuk perutean paket yang perlu ditetapkan ke koneksi ini.
+### -PeruteanWeight
+Berat perutean paket yang perlu ditetapkan ke koneksi ini.
 
 ```yaml
 Type: UInt32
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -314,4 +317,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)
+[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)

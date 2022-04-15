@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTagCriteriaClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTagCriteriaClientObject.md
 ms.openlocfilehash: f619c281caa8a46aa68776af977622b29508f29b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139977549"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142476161"
 ---
 # New-AzDataProtectionPolicyTagCriteriaClientObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "139977549"
 Membuat objek kriteria baru
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytagcriteriaclientobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytagcriteriaclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ New-AzDataProtectionPolicyTagCriteriaClientObject [-DaysOfWeek <DaysOfWeek[]>]
 New-AzDataProtectionPolicyTagCriteriaClientObject -AbsoluteCriteria <AbsoluteTagCriteria> [<CommonParameters>]
 ```
 
-### Kriteria Bulanan
+### BulananKriteria
 ```
 New-AzDataProtectionPolicyTagCriteriaClientObject -DaysOfMonth <String[]> [-MonthsOfYear <MonthsOfYear[]>]
  [-ScheduleTimes <DateTime[]>] [<CommonParameters>]
@@ -45,7 +45,7 @@ Membuat objek kriteria baru
 
 ## EXAMPLES
 
-### Contoh 1: Buat tag dengan kriteria absolut 
+### Contoh 1: Membuat tag dengan kriteria absolut 
 ```powershell
 PS C:\> New-AzDataProtectionPolicyTagCriteriaClientObject -AbsoluteCriteria FirstOfDay
 
@@ -65,12 +65,12 @@ ObjectType                  AbsoluteCriterion DaysOfTheWeek    MonthsOfYear Sche
 ScheduleBasedBackupCriteria                   {Sunday, Monday}
 ```
 
-Perintah ini membuat objek kriteria dengan kriteria mingguan
+Perintah ini membuat objek critetia dengan kriteria mingguan
 
 ## PARAMETERS
 
 ### -AbsoluteCriteria
-Kriteria absolut
+Kriteria mutlak
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.AbsoluteTagCriteria
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 
 ### -DaysOfMonth
 Hari dalam sebulan.
-Nilai yang diperbolehkan adalah dari 1 sampai 28 dan Terakhir
+Nilai yang diperbolehkan adalah 1 hingga 28 dan Terakhir
 
 ```yaml
 Type: System.String[]
@@ -115,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MonthsOfYear
+### -BulanOfYear
 Bulan dalam setahun.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleTimes
-Waktu jadwal.
+Jadwalkan waktu.
 
 ```yaml
 Type: System.DateTime[]
@@ -145,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WeeksOfMonth
+### -MingguOfMonth
 Minggu dalam sebulan.
 
 ```yaml
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
