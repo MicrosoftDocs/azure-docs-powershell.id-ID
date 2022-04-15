@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterClientCertificate.md
 ms.openlocfilehash: d21cb673b8da366347081caf9114173dba77ea57
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968585"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142120913"
 ---
 # Remove-AzServiceFabricManagedClusterClientCertificate
 
 ## SYNOPSIS
-Sertifikat klien remvoe berdasarkan thumbprint atau nama umum.
+Cabut sertifikat klien dengan sidik jari atau nama umum.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterclientcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Remove-AzServiceFabricManagedClusterClientCertificate [-InputObject] <PSManagedC
 ```
 
 ## DESCRIPTION
-Sertifikat klien remvoe berdasarkan thumbprint atau nama umum.
+Cabut sertifikat klien dengan sidik jari atau nama umum.
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ $clusterName = "testCluster"
 Remove-AzServiceFabricManagedClusterClientCertificate -ResourceGroupName $rgName -Name $clusterName -CommonName 'Contoso.com'
 ```
 
-Hapus sertifikat klien dengan nama umum.
+Hapus sertifikat klien menurut nama umum.
 
 ### Contoh 2
 ```powershell
@@ -69,7 +69,7 @@ $clusterName = "testCluster"
 Remove-AzServiceFabricManagedClusterClientCertificate -ResourceGroupName $rgName -Name $clusterName -Thumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A
 ```
 
-Menghapus sertifikat klien berdasarkan thumbprint.
+Hapus sertifikat klien menurut sidik jari.
 
 ### Contoh 3
 ```powershell
@@ -80,12 +80,12 @@ $cluster = Get-AzServiceFabricManagedCluster -ResourceGroupName $rgName -Name $c
 $cluster | Remove-AzServiceFabricManagedClusterClientCertificate -Thumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A
 ```
 
-Hapus sertifikat klien dengan thumbprint, dengan pemipaan.
+Hapus sertifikat klien menurut sidik jari, dengan pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya kluster yang dikelola
+Sumber daya kluster terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedCluster
@@ -189,8 +189,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
-Thumbprint sertifikat klien.
+### -Sidik jari
+Sidik jari sertifikat klien.
 
 ```yaml
 Type: System.String
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

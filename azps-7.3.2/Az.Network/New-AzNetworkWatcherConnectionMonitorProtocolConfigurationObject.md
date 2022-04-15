@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject.md
-ms.openlocfilehash: 2d7f232efff33f26802dcb512dd180b943338a74
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 90ff2730234b43874f07dbfd8a1ee3843948d439
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385966"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032167"
 ---
 # New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject
 
 ## SYNOPSIS
-Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi uji melalui TCP, HTTP, atau ICMP.
+Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP atau ICMP.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitorprotocolconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject [-IcmpProtocol]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject membuat konfigurasi protokol yang digunakan untuk melakukan evaluasi uji melalui TCP, HTTP atau ICMP.
+Cmdlet New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject membuat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP atau ICMP.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Port : 80 DisableTraceRoute : False
 
 ### Contoh 2
 
-Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi uji melalui TCP, HTTP, atau ICMP. (otomatisgenerated)
+Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP atau ICMP. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -77,9 +80,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DestinationPortBeportior
+### -DestinationPortBehavior
 Perilaku port tujuan.
-Nilai yang didukung adalah Tidak Ada, ListenIfAvailable.
+Nilai yang didukung tidak ada, ListenIfAvailable.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableTraceRoute
-Nilai yang menunjukkan apakah evaluasi jalur dengan rute penelusuran harus dinonaktifkan.
+Nilai yang menunjukkan apakah evaluasi jalur dengan rute jejak harus dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Komponen jalur URI.
 Misalnya, "/dir1/dir2".
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port untuk disambungkan.
+Port yang akan disambungkan.
 
 ```yaml
 Type: System.Nullable`1[System.UInt16]
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferHTTPS
-Nilai yang menunjukkan apakah HTTPS lebih disukai melalui HTTP dalam kasus di mana pilihan tidak eksplisit.
+Nilai yang menunjukkan apakah HTTPS lebih disukai daripada HTTP jika pilihannya tidak eksplisit.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestHeader
-Header HTTP untuk bertransmisikan dengan permintaan.
+Header HTTP untuk ditransmisikan dengan permintaan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ValidStatusCodeRange
-Kode status HTTP untuk dianggap berhasil.
+Kode status HTTP untuk mempertimbangkan keberhasilan.
 Misalnya, "2xx,301-304,418".
 
 ```yaml
@@ -258,11 +261,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

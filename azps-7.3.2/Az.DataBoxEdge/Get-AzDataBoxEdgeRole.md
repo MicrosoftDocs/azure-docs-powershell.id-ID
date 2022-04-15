@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeRole.md
-ms.openlocfilehash: 9e54077adab41a010675b44ad2a5e7472bfdacc2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bb80500a10e5018befb65f44d6167f4aa344fc63
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373251"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141941289"
 ---
 # Get-AzDataBoxEdgeRole
 
 ## SYNOPSIS
 Mengambil peran yang tersedia untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzDataBoxEdgeRole [[-Name] <String>] [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeRole** mengambil peran IoT yang tersedia untuk perangkat Data Box Edge. Anda bisa menyebutkan parameter Nama untuk mendapatkan detail peran IoT tertentu.
+Cmdlet **Get-AzDataBoxEdgeRole** mengambil peran IoT yang tersedia untuk perangkat Data Box Edge. Anda dapat menyebutkan parameter Nama untuk mendapatkan detail peran IoT tertentu.
 
 ## EXAMPLES
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

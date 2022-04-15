@@ -2,17 +2,17 @@
 external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/export-azurermloganalyticthrottledrequests
 schema: 2.0.0
-ms.openlocfilehash: 3e9f53159fcf37028e03814032dcaa32cf20e39b07788207174a7b40d59424b1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e98819ab7de961dacefea673ac43690ad260ac3b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140861165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930289"
 ---
 # Export-AzureRmLogAnalyticThrottledRequests
 
 ## SYNOPSIS
-Ekspor log yang memperlihatkan permintaan Api total yang dilindungi untuk langganan ini dalam jendela waktu tertentu.
+Ekspor log yang memperlihatkan total permintaan Api yang dibatasi untuk langganan ini di jendela waktu tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,8 +27,8 @@ Export-AzureRmLogAnalyticThrottledRequests [-Location] <String> [-FromTime] <Dat
 ```
 
 ## DESCRIPTION
-Ini akan mengekspor jumlah total panggilan MICROSOFT.Compute API yang dilindungi.
-Log bisa diagregasi lebih lanjut dengan tiga opsi: GroupByOperationName, GroupByThrottlePolicy, atau GroupByResourceName.
+Tindakan ini akan mengekspor jumlah total panggilan API Microsoft.Compute yang dibatasi.
+Log dapat diagregat lebih lanjut dengan tiga opsi: GroupByOperationName, GroupByThrottlePolicy, atau GroupByResourceName.
 Perhatikan bahwa cmdlet ini hanya mengumpulkan log CRP.
 
 ## EXAMPLES
@@ -38,12 +38,12 @@ Perhatikan bahwa cmdlet ini hanya mengumpulkan log CRP.
 PS C:\> Export-AzureRmLogAnalyticThrottledRequests -Location 'West Central US' -FromTime '2018-02-20T17:54:14.8806951-08:00' -ToTime '2018-02-22T17:54:17.5832413-08:00' -BlobContainerSasUri 'https://wkuotest1.blob.core.windows.net/mylogs?someSasUri' -GroupByOperationName
 ```
 
-Perintah ini menyimpan total panggilan MICROSOFT.Compute API antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam SAS URI yang diberikan, diagregasi menurut nama operasi.
+Perintah ini menyimpan total panggilan API Microsoft.Compute yang dibatasi antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, diagregasi menurut nama operasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlobContainerSasUri
-SAS Uri dari wadah pembuatan log blob tempat Api LogAnalytics menulis log output.
+SAS Uri dari kontainer logging blob tempat LogAnalytics Api menulis log output.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupByOperationName
+### -GroupByoperationName
 Hasil kueri grup menurut Nama Operasi.
 
 ```yaml
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupByThrottlePolicy
-Kueri grup dihasilkan oleh KebijakanThrottle yang diterapkan.
+Hasil kueri grup menurut Kebijakan Throttle diterapkan.
 
 ```yaml
 Type: SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi di mana analitik log akan dikunyapkan.
+Lokasi di mana analitik log dikueri.
 
 ```yaml
 Type: String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAEMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAEMExtension.md
-ms.openlocfilehash: 5e714f98a863da70d7fccf27e01fd4e3cb6d293e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 960ff51f0742733b2c534e04bc9e9b914fd6142a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141854402"
 ---
 # Get-AzVMAEMExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi AEM.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmaemextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet **Get-AzVMAEMExtension** mendapatkan informasi tentang ekstensi Azure Enh
 Get-AzVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "contoso-server"
 ```
 
-Perintah ini mendapatkan informasi ekstensi AEM untuk komputer virtual bernama contoso-server.
+Perintah ini mendapatkan informasi untuk ekstensi AEM untuk mesin virtual bernama contoso-server.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama mesin virtual.
-Cmdlet ini mendapatkan informasi ekstensi AEM pada komputer virtual yang ditentukan cmdlet ini.
+Cmdlet ini mendapatkan informasi untuk ekstensi AEM pada mesin virtual yang ditentukan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Menentukan tipe sistem operasi dari disk sistem operasi.
+Menentukan tipe sistem operasi disk sistem operasi.
 Jika disk sistem operasi tidak memiliki tipe, Anda harus menentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Windows dan Linux.
 
@@ -88,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
-Cmdlet ini mendapatkan informasi ekstensi AEM di komputer virtual tersebut.
+Menentukan nama grup sumber daya mesin virtual.
+Cmdlet ini mendapatkan informasi untuk ekstensi AEM pada mesin virtual tersebut.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan contoh ekstensi AEM.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans ekstensi AEM.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

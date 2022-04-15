@@ -5,11 +5,11 @@ ms.assetid: 356764CF-A860-432A-907A-9058CEB2BF8E
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermrouteconfig
 schema: 2.0.0
 ms.openlocfilehash: ab528e837f6f2e45db5e68430d973e0d8f019850
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428692"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970996"
 ---
 # New-AzureRmRouteConfig
 
@@ -43,7 +43,7 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah pertama membuat rute yang bernama Route07, lalu menyimpannya dalam $Route variabel.
+Perintah pertama membuat rute bernama Route07, lalu menyimpannya dalam variabel $Route.
 Rute ini meneruskan paket ke jaringan virtual lokal.
 
 Perintah kedua menampilkan properti rute.
@@ -51,7 +51,7 @@ Perintah kedua menampilkan properti rute.
 ## PARAMETERS
 
 ### -AddressPrefix
-Menentukan tujuan, dalam format Classless Interdomain Routing (CIDR), ke mana rute tersebut diterapkan.
+Menentukan tujuan, dalam format Classless Interdomain Routing (CIDR), tempat rute diterapkan.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 
 ### -NextHopIpAddress
 Menentukan alamat IP alat virtual yang Anda tambahkan ke jaringan Azurevirtual Anda.
-Ini merutekan paket ke alamat itu.
-Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType.*
+Rute ini meneruskan paket ke alamat tersebut.
+Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType* .
 
 ```yaml
 Type: String
@@ -117,16 +117,16 @@ Menentukan cara rute ini meneruskan paket.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Internet.
-Gateway internet default yang disediakan oleh Azure. 
-- Tidak ada.
+Gateway Internet default yang disediakan oleh Azure. 
+- Tidak.
 Jika Anda menentukan nilai ini, rute tidak meneruskan paket. 
 - VirtualAppliance.
-Sebuah alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda. 
+Alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda. 
 - VirtualNetworkGateway.
-Gateway jaringan privat virtual Azure server-ke-server. 
+Gateway jaringan privat virtual server-ke-server Azure. 
 - VnetLocal.
 Jaringan virtual lokal.
-Jika Anda memiliki dua subnet, 10.1.0.0/16 dan 10.2.0.0/16 di jaringan virtual yang sama, pilih nilai VnetLocal untuk setiap subnet untuk diteruskan ke subnet lain.
+Jika Anda memiliki dua subnet, 10.1.0.0/16 dan 10.2.0.0/16 di jaringan virtual yang sama, pilih nilai VnetLocal untuk setiap subnet untuk meneruskan ke subnet lainnya.
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRouteConfig](./Get-AzureRmRouteConfig.md)
 
-[Remove-AzureRmRouteConfig](./Remove-AzureRmRouteConfig.md)
+[Hapus-AzureRmRouteConfig](./Remove-AzureRmRouteConfig.md)
 
 [Set-AzureRmRouteConfig](./Set-AzureRmRouteConfig.md)
 

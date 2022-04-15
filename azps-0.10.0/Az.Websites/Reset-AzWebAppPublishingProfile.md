@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Reset-AzWebAppPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Reset-AzWebAppPublishingProfile.md
 ms.openlocfilehash: 519a072a0c51f489a78992e483dec8aa9cd1fab5
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414833"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962726"
 ---
 # Reset-AzWebAppPublishingProfile
 
@@ -32,7 +32,7 @@ Reset-AzWebAppPublishingProfile [-WebApp] <Site> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzWebAppBlishingProfile** mereset profil penerbitan untuk Aplikasi Web tertentu.
+Cmdlet **Reset-AzWebAppPublishingProfile** mengatur ulang profil penerbitan untuk Aplikasi Web yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Cmdlet **Reset-AzWebAppBlishingProfile** mereset profil penerbitan untuk Aplikas
 PS C:\> Reset-AzWebAppSlotPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 
-Perintah ini mereset profil penerbitan untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS.
+Perintah ini mengatur ulang profil penerbitan untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

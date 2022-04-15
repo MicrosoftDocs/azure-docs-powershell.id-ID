@@ -5,11 +5,11 @@ ms.assetid: F01CB88A-49E7-41D8-B4E7-F1A4DCDC6B84
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationgatewaysku
 schema: 2.0.0
 ms.openlocfilehash: 2359459688dbae2c718e4a5d5f65bf68b2c8c5ea
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429168"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141971331"
 ---
 # Get-AzureRmApplicationGatewaySku
 
@@ -26,7 +26,7 @@ Get-AzureRmApplicationGatewaySku -ApplicationGateway <PSApplicationGateway>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewaySku** mendapatkan unit penyimpanan saham (SKU) dari gateway aplikasi.
+Cmdlet **Get-AzureRmApplicationGatewaySku** mendapatkan stock keeping unit (SKU) gateway aplikasi.
 
 ## EXAMPLES
 
@@ -36,8 +36,8 @@ PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $SKU = Get-AzureRmApplicationGatewaySku -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
-Perintah kedua mendapatkan SKU gateway aplikasi yang bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $SKU.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan SKU gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $SKU.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -86,8 +86,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmApplicationGatewaySku](./New-AzureRmApplicationGatewaySku.md)
+[New-AzureRmApplicationGatewaysku](./New-AzureRmApplicationGatewaySku.md)
 
-[Set-AzureRmApplicationGatewaySku](./Set-AzureRmApplicationGatewaySku.md)
+[Set-AzureRmApplicationGatewaysku](./Set-AzureRmApplicationGatewaySku.md)
 
 

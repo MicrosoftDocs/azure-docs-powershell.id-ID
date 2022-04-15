@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationTask.md
-ms.openlocfilehash: f758038a6de8e0ca16fa447f96180f8d1b50142a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a1f50626f27a4d2f8db43077810b9f6b47d58adc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187524"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141940047"
 ---
 # Get-AzDataMigrationTask
 
 ## SYNOPSIS
-Mengambil objek PSProjectTask yang terkait dengan tugas migrasi Layanan Migrasi Database Azure.
+Mengambil objek PSProjectTask yang terkait dengan tugas migrasi Azure Database Migration Service.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Get-AzDataMigrationTask -ResourceGroupName <String> -ServiceName <String> -Proje
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataMigrationTask ini mengambil properti yang terkait dengan tugas migrasi Layanan Migrasi Database Azure.
+Cmdlet Get-AzDataMigrationTask mengambil properti yang terkait dengan tugas migrasi Azure Database Migration Service.
 
 ## EXAMPLES
 
@@ -83,19 +86,19 @@ Cmdlet Get-AzDataMigrationTask ini mengambil properti yang terkait dengan tugas 
 PS C:\> Get -AzDataMigrationTask -TaskName myTestTask -ServiceName myTestService -ProjectName MyTestProject -ResourceGroupName MyResourceGroup -Expand
 ```
 
-Contoh di atas menggambarkan penggunaan cmdlet Get-AzDataMigrationTask untuk mengambil properti yang terkait dengan tugas migrasi Layanan Migrasi Database Azure berdasarkan nama tugas yang dimasukkan sebagai parameter input
+Contoh di atas menggambarkan penggunaan cmdlet Get-AzDataMigrationTask untuk mengambil properti yang terkait dengan tugas migrasi Azure Database Migration Service berdasarkan nama tugas yang diteruskan sebagai parameter input
 
 ### Contoh 2
 ```
 PS C:\> Get -AzDataMigrationTask -Project $myProject
 ```
 
-Contoh di atas menggambarkan penggunaan cmdlet Get-AzDataMigrationTask untuk mengambil semua tugas migrasi yang terkait dengan objek PSProject yang disampaikan sebagai parameter input
+Contoh di atas menggambarkan penggunaan cmdlet Get-AzDataMigrationTask untuk mengambil semua tugas migrasi yang terkait dengan objek PSProject yang diteruskan sebagai parameter input
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Project Sumber Daya.
+Project Id Sumber Daya.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResultType
-Memperluas output tipe hasil tertentu.
+Memperluas output dari tipe hasil tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.ResultTypeEnum
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskType
-Filter menurut Tipe Tugas.
+Filter menurut TipeTugas.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.DataMigration.Models.TaskTypeEnum]
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

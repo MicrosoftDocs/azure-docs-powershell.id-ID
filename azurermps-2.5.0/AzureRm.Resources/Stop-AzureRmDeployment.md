@@ -4,16 +4,16 @@ Module Name: AzureRM.Resources
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/stop-azurermdeployment
 schema: 2.0.0
 ms.openlocfilehash: 49ea711740eff624a9560b6d70239edb476dc989
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140857583"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141970524"
 ---
 # Stop-AzureRmDeployment
 
 ## SYNOPSIS
-Menskalakan penyebaran yang berjalan
+Cancal a running deployment
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,11 +39,11 @@ Stop-AzureRmDeployment -InputObject <PSDeployment> [-PassThru] [-ApiVersion <Str
 
 ## DESCRIPTION
 Cmdlet **Stop-AzureRmDeployment** membatalkan penyebaran pada lingkup langganan yang telah dimulai tetapi belum selesai.
-Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status selesai, seperti Diprovisikan atau Gagal.
+Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status yang diselesaikan, seperti Provisioned atau Failed.
 
-Untuk membuat penyebaran pada lingkup langganan, gunakan cmdlet New-AzureRmDeployment cmdlet.
+Untuk membuat penyebaran pada lingkup langganan, gunakan cmdlet New-AzureRmDeployment.
 
-Cmdlet ini hanya berhenti satu kali menjalankan penyebaran. Gunakan parameter *Name* untuk menghentikan penyebaran tertentu.
+Cmdlet ini hanya menghentikan satu penyebaran yang berjalan. Gunakan parameter *Nama* untuk menghentikan penyebaran tertentu.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Cmdlet ini hanya berhenti satu kali menjalankan penyebaran. Gunakan parameter *N
 PS C:\>Stop-AzureRmDeployment -Name "deployment01"
 ```
 
-Perintah ini membatalkan penerapan "deployment01" yang berjalan pada lingkup langganan saat ini.
+Perintah ini membatalkan penyebaran yang berjalan "deployment01" pada lingkup langganan saat ini.
 
 ### Contoh 2
 ```
@@ -64,7 +64,7 @@ Perintah ini mendapatkan penyebaran "deployment01" pada lingkup langganan saat i
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
+Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
 contoh: /subscriptions/{subId}/providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

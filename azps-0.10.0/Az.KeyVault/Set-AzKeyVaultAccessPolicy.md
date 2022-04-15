@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
 ms.openlocfilehash: a774c438f9be25dc55f48c5121031956374a2cb7
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415453"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141917445"
 ---
 # Set-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
-Memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan kunci vault.
+Memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan kubah kunci.
 
 ## SYNTAX
 
@@ -60,74 +60,74 @@ Set-AzKeyVaultAccessPolicy [-VaultName] <String> [[-ResourceGroupName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzKeyVaultAccessPolicy** memberi atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk menjalankan operasi tertentu dengan kunci vault. Itu tidak mengubah izin yang ada pada pengguna lain, aplikasi, atau grup keamanan di vault utama.
+Cmdlet **Set-AzKeyVaultAccessPolicy** memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi tertentu dengan kubah kunci. Ini tidak mengubah izin yang dimiliki pengguna, aplikasi, atau grup keamanan lain pada kubah kunci.
 
 Jika Anda mengatur izin untuk grup keamanan, operasi ini hanya memengaruhi pengguna dalam grup keamanan tersebut.
 
-Direktori berikut semuanya harus sama dengan Azure directory:
-- Direktori default langganan Azure tempat penyimpanan kunci berada.
-- Direktori Azure yang berisi pengguna atau grup aplikasi yang Anda berikan izinnya.
+Semua direktori berikut harus sama seperti Azure directory:
+- Direktori default langganan Azure tempat kubah kunci berada.
+- Direktori Azure yang berisi grup pengguna atau aplikasi yang Anda beri izin.
 
-Contoh skenario saat kondisi ini tidak terpenuhi dan cmdlet ini tidak akan berfungsi adalah:
+Contoh skenario ketika kondisi ini tidak terpenuhi dan cmdlet ini tidak akan berfungsi adalah:
 
-- Mengomuritaskan pengguna dari organisasi lain untuk mengelola kunci vault.
+- Mengotorisasi pengguna dari organisasi lain untuk mengelola kubah kunci Anda.
 Setiap organisasi memiliki direktorinya sendiri.
 - Akun Azure Anda memiliki beberapa direktori.
-Jika Anda mendaftarkan aplikasi di direktori selain direktori default, Anda tidak dapat mengotorisasi aplikasi tersebut untuk menggunakan kunci vault.
+Jika Anda mendaftarkan aplikasi di direktori selain direktori default, Anda tidak dapat mengotorisasi aplikasi tersebut untuk menggunakan kubah kunci Anda.
 Aplikasi harus berada dalam direktori default.
 
 Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini, Anda harus melakukannya untuk kinerja yang lebih baik.
 
 ## EXAMPLES
 
-### Contoh 1: Memberikan izin kepada pengguna untuk penyimpanan kunci dan mengubah izin
+### Contoh 1: Memberikan izin kepada pengguna untuk kubah kunci dan mengubah izin
 ```
 PS C:\>Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -UserPrincipalName 'PattiFuller@contoso.com' -PermissionsToKeys create,import,delete,list -PermissionsToSecrets set,delete
 PS C:\> Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -UserPrincipalName 'PattiFuller@contoso.com' -PermissionsToSecrets set,delete,get -PassThru
 PS C:\> Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -UserPrincipalName 'PattiFuller@contoso.com' -PermissionsToKeys @() -PassThru
 ```
 
-Perintah pertama memberikan izin bagi pengguna dalam Azure Active Directory Anda, PattiFuller@contoso.comuntuk menjalankan operasi kunci dan rahasia dengan kunci vault yang bernama Contoso03Vault.
+Perintah pertama memberikan izin bagi pengguna di Azure Active Directory Anda, PattiFuller@contoso.com, untuk melakukan operasi pada kunci dan rahasia dengan kubah kunci bernama Contoso03Vault.
 
-Perintah kedua mengubah izin PattiFuller@contoso.com yang diberikan pada perintah pertama, untuk sekarang memungkinkan mendapatkan rahasia selain mengatur dan menghapusnya. Izin operasi utama tetap tidak berubah setelah perintah ini. Parameter *PassThru* menghasilkan objek yang diperbarui yang dikembalikan oleh cmdlet.
+Perintah kedua mengubah izin yang diberikan ke PattiFuller@contoso.com dalam perintah pertama, untuk sekarang memungkinkan mendapatkan rahasia selain mengatur dan menghapusnya. Izin untuk operasi kunci tetap tidak berubah setelah perintah ini. Parameter *PassThru* menghasilkan objek yang diperbarui yang dikembalikan oleh cmdlet.
 
-Perintah terakhir selanjutnya mengubah izin yang sudah ada untuk menghapus PattiFuller@contoso.com semua izin ke operasi utama. Izin operasi rahasia tidak berubah setelah perintah ini. Parameter *PassThru* menghasilkan objek yang diperbarui yang dikembalikan oleh cmdlet.
+Perintah terakhir selanjutnya mengubah izin yang sudah ada untuk PattiFuller@contoso.com menghapus semua izin untuk operasi utama. Izin untuk operasi rahasia tetap tidak berubah setelah perintah ini. Parameter *PassThru* menghasilkan objek yang diperbarui yang dikembalikan oleh cmdlet.
 
-### Contoh 2: Memberikan izin untuk prinsipal layanan aplikasi untuk rahasia baca dan tulis
+### Contoh 2: Memberikan izin untuk prinsipal layanan aplikasi untuk membaca dan menulis rahasia
 ```
 PS C:\>Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ServicePrincipalName 'http://payroll.contoso.com' -PermissionsToSecrets Get,Set
 ```
 
-Perintah ini memberikan izin untuk aplikasi untuk penyimpanan kunci yang bernama Contoso03Vault.
+Perintah ini memberikan izin untuk aplikasi untuk kubah kunci bernama Contoso03Vault.
 
-Parameter *ServicePrincipalName* menentukan aplikasi. Aplikasi harus terdaftar di komputer Azure Active Directory. Nilai parameter *ServicePrincipalName* harus merupakan nama prinsipal layanan aplikasi atau GUID ID aplikasi.
+Parameter *ServicePrincipalName* menentukan aplikasi. Aplikasi harus terdaftar di Azure Active Directory Anda. Nilai parameter *ServicePrincipalName* harus berupa nama prinsipal layanan aplikasi atau ID APLIKASI GUID.
 
-Contoh ini menentukan nama prinsipal layanan `http://payroll.contoso.com`, dan perintah memberikan izin aplikasi untuk membaca dan menulis rahasia.
+Contoh ini menentukan nama `http://payroll.contoso.com`pokok layanan , dan perintah memberikan izin aplikasi untuk membaca dan menulis rahasia.
 
-### Contoh 3: Berikan izin untuk aplikasi menggunakan ID objeknya
+### Contoh 3: Memberikan izin untuk aplikasi menggunakan ID objeknya
 ```
 PS C:\>Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ObjectId 34595082-9346-41b6-8d6b-295a2808b8db -PermissionsToSecrets Get,Set
 ```
 
 Perintah ini memberikan izin aplikasi untuk membaca dan menulis rahasia.
 
-Contoh ini menentukan aplikasi menggunakan ID objek prinsipal layanan aplikasi.
+Contoh ini menentukan aplikasi menggunakan ID objek dari prinsipal layanan aplikasi.
 
 ### Contoh 4: Memberikan izin untuk nama prinsipal pengguna
 ```
 PS C:\>Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -UserPrincipalName 'PattiFuller@contoso.com' -PermissionsToSecrets Get,List,Set
 ```
 
-Perintah ini memberikan izin get, list, dan mengatur izin untuk nama prinsipal pengguna tertentu untuk akses menuju rahasia.
+Perintah ini memberikan izin mendapatkan, mencantumkan, dan mengatur izin untuk nama prinsipal pengguna tertentu untuk akses ke rahasia.
 
-### Contoh 5: Mengaktifkan rahasia yang diambil dari vault vault kunci oleh penyedia sumber daya Microsoft.Compute
+### Contoh 5: Aktifkan rahasia untuk diambil dari kubah kunci oleh penyedia sumber daya Microsoft.Compute
 ```
 PS C:\>Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -EnabledForDeployment
 ```
 
-Perintah ini memberikan izin rahasia agar diambil dari penyimpanan kunci Contoso03Vault oleh penyedia sumber daya Microsoft.Compute.
+Perintah ini memberikan izin bagi rahasia untuk diambil dari kubah kunci Contoso03Vault oleh penyedia sumber daya Microsoft.Compute.
 
-### Contoh 6: Berikan izin ke grup keamanan
+### Contoh 6: Memberikan izin ke grup keamanan
 ```
 PS C:\>Get-AzADGroup
 PS C:\> Set-AzKeyVaultAccessPolicy -VaultName 'myownvault' -ObjectId (Get-AzADGroup -SearchString 'group2')[0].Id -PermissionsToKeys All -PermissionsToSecrets All
@@ -138,21 +138,21 @@ group2                                                        b8a401eb-63ad-4a30
 group3                                                        da07a6be-2c1e-4e42-934d-ceb57cf652b4
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzADGroup untuk mendapatkan semua grup Direktori Aktif. Dari output, Anda melihat 3 grup yang dikembalikan, bernama **grup1**, **grup2**, dan **grup3**. Beberapa grup dapat memiliki nama yang sama tetapi selalu mempunyai ObjectId yang unik. Ketika lebih dari satu grup dengan nama yang sama dikembalikan, gunakan ObjectId dalam output untuk mengidentifikasi yang ingin Anda gunakan.
+Perintah pertama menggunakan cmdlet Get-AzADGroup untuk mendapatkan semua grup Direktori Aktif. Dari output, Anda melihat 3 grup yang dikembalikan, bernama **grup1**, **grup2**, dan **grup3**. Beberapa grup bisa memiliki nama yang sama tapi selalu memiliki ObjectId yang unik. Ketika lebih dari satu grup yang memiliki nama yang sama dikembalikan, gunakan ObjectId dalam output untuk mengidentifikasi grup yang ingin Anda gunakan.
 
-Anda lalu menggunakan output perintah ini dengan Set-AzKeyVaultAccessPolicy untuk memberikan izin ke grup2 untuk penyimpanan kunci Anda, bernama **myownvault**. Contoh ini menghitung grup yang bernama sebaris 'grup2' dalam baris perintah yang sama.
+Anda kemudian menggunakan output perintah ini dengan Set-AzKeyVaultAccessPolicy untuk memberikan izin ke grup2 untuk kubah kunci Anda, bernama **myownvault**. Contoh ini menghitung grup bernama 'group2' sebaris dalam baris perintah yang sama.
 
-Mungkin terdapat beberapa grup dalam daftar yang dikembalikan yang bernama 'grup2'.
-Contoh ini memilih yang pertama, yang ditunjukkan dengan indeks \[0\] dalam daftar yang dikembalikan.
+Mungkin ada beberapa grup dalam daftar yang dikembalikan yang bernama 'group2'.
+Contoh ini memilih yang pertama, yang ditunjukkan oleh indeks \[0\] dalam daftar yang dikembalikan.
 
-### Contoh 7: Berikan akses Perlindungan Informasi Azure ke kunci penyewa yang dikelola pelanggan (BYOK)
+### Contoh 7: Memberikan azure Information Protection akses ke kunci penyewa yang dikelola pelanggan (BYOK)
 ```
 PS C:\>Set-AzKeyVaultAccessPolicy -VaultName 'Contoso04Vault' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 ```
 
-Perintah ini mengotorisasi Perlindungan Informasi Azure untuk menggunakan kunci yang dikelola pelanggan (yang menghadirkan kunci Anda sendiri, atau skenario "BYOK" sebagai kunci penyewa Perlindungan Informasi Azure.
+Perintah ini mengotorisasi Azure Information Protection untuk menggunakan kunci yang dikelola pelanggan (kunci Anda sendiri, atau skenario "BYOK") sebagai kunci penyewa Azure Information Protection.
 
-Ketika menjalankan perintah ini, tentukan nama kunci vault Anda sendiri, tetapi parameter *ServicePrincipalName* harus ditentukan dengan GUID **00000012-0000-0000-c000-00000000000 dan** tentukan izin dalam contoh.
+Ketika menjalankan perintah ini, tentukan nama kubah kunci Anda sendiri, tetapi Anda harus menentukan parameter *ServicePrincipalName* dengan GUID **00000012-0000-0000-c000-000000000000000** dan tentukan izin dalam contoh.
 
 ## PARAMETERS
 
@@ -172,9 +172,9 @@ Accept wildcard characters: False
 ```
 
 ### -BypassObjectIdValidation
-Memungkinkan Anda menentukan ID objek tanpa memvalidasi bahwa objek ada di dalam Azure Active Directory.
+Memungkinkan Anda menentukan ID objek tanpa memvalidasi bahwa objek ada dalam Azure Active Directory.
 
-Gunakan parameter ini hanya jika Anda ingin memberikan akses ke kunci vault ke ID objek yang merujuk ke grup keamanan terdelegasi dari penyewa Azure lain.
+Gunakan parameter ini hanya jika Anda ingin memberikan akses ke kubah kunci ke ID objek yang merujuk ke grup keamanan yang didelegasikan dari penyewa Azure lain.
 
 ```yaml
 Type: SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -204,9 +204,9 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Menentukan alamat email pengguna dari pengguna yang akan diberi izin.
+Menentukan alamat email pengguna pengguna yang akan memberikan izin.
 
-Alamat email harus ada dalam direktori yang terkait dengan langganan saat ini dan unik.
+Alamat email ini harus ada dalam direktori yang terkait dengan langganan saat ini dan bersifat unik.
 
 ```yaml
 Type: String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDeployment
-Memungkinkan penyedia sumber daya Microsoft.Compute untuk mendapatkan rahasia dari key vault ini saat key vault ini direferensikan dalam pembuatan sumber daya, misalnya saat membuat mesin virtual.
+Memungkinkan penyedia sumber daya Microsoft.Compute untuk mengambil rahasia dari kubah kunci ini ketika kubah kunci ini dirujuk dalam pembuatan sumber daya, misalnya saat membuat mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDiskEncryption
-Memungkinkan layanan enkripsi disk Azure untuk mendapatkan kunci rahasia dan unwrap dari kunci vault ini.
+Memungkinkan layanan enkripsi disk Azure untuk mendapatkan rahasia dan menghapus kunci dari kubah kunci ini.
 
 ```yaml
 Type: SwitchParameter
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForTemplateDeployment
-Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari key vault ini ketika key vault ini direferensikan dalam penyebaran templat.
+Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari kubah kunci ini ketika kubah kunci ini dirujuk dalam penyebaran templat.
 
 ```yaml
 Type: SwitchParameter
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau prinsipal layanan dalam Azure Active Directory yang akan diberi izin.
+Menentukan ID objek dari pengguna atau prinsipal layanan dalam Azure Active Directory untuk memberikan izin.
 
 ```yaml
 Type: String
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
@@ -298,22 +298,22 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsToCertificates
-Menentukan array izin sertifikat yang akan diberikan kepada pengguna atau prinsipal layanan.
+Menentukan array izin sertifikat untuk diberikan kepada pengguna atau prinsipal layanan.
 
 Nilai yang dapat diterima untuk parameter ini:
 
-- Dapatkan
+- Mendapatkan
 - Daftar
-- Hapus
-- Buat
+- Menghapus
+- Membuat
 - Impor
-- Perbarui
+- Update
 - Managecontacts
 - Getissuers
 - Listissuers
-- Setissuers
+- Pengatur
 - Deleteissuers
-- Manageissuers
+- Pengelola
 
 ```yaml
 Type: String[]
@@ -329,26 +329,26 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsToKeys
-Menentukan array izin operasi utama yang diberikan kepada pengguna atau prinsipal layanan.
+Menentukan array izin operasi utama untuk diberikan kepada pengguna atau prinsipal layanan.
 
 Nilai yang dapat diterima untuk parameter ini:
 
-- Dekripsi
-- Encrypt
-- UnwrapKey
+- Mendekripsi
+- Mengenkripsi
+- Batalkan Tombol
 - WrapKey
-- Verifikasi
-- Tanda tangani
-- Dapatkan
+- Memverifikasi
+- Tanda
+- Mendapatkan
 - Daftar
-- Perbarui
-- Buat
+- Update
+- Membuat
 - Impor
-- Hapus
-- Pencadangan
-- Pulihkan
-- Pulihkan
-- Purge
+- Menghapus
+- Cadangan
+- Mengembalikan
+- Memulihkan
+- Membersihkan
 
 ```yaml
 Type: String[]
@@ -364,18 +364,18 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsToSecrets
-Menentukan array izin operasi rahasia yang diberikan kepada pengguna atau prinsipal layanan.
+Menentukan array izin operasi rahasia untuk diberikan kepada pengguna atau prinsipal layanan.
 
 Nilai yang dapat diterima untuk parameter ini:
 
-- Dapatkan
+- Mendapatkan
 - Daftar
 - Set
-- Hapus
-- Pencadangan
-- Pulihkan
-- Pulihkan
-- Purge
+- Menghapus
+- Cadangan
+- Mengembalikan
+- Memulihkan
+- Membersihkan
 
 ```yaml
 Type: String[]
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionsToStorage
-Menentukan izin operasi definisi SaS dan akun penyimpanan terkelola yang diberikan kepada pengguna atau prinsipal layanan.
+Menentukan akun penyimpanan terkelola dan izin operasi definisi SaS untuk diberikan kepada pengguna atau prinsipal layanan.
 
 ```yaml
 Type: String[]
@@ -422,9 +422,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Menentukan nama prinsipal layanan aplikasi untuk memberikan izin.
+Menentukan nama pokok layanan aplikasi untuk memberikan izin.
 
-Tentukan ID aplikasi, dikenal juga sebagai ID klien, yang terdaftar untuk aplikasi di AzureActive Directory. Aplikasi dengan nama prinsipal layanan yang ditentukan parameter ini harus terdaftar dalam direktori Azure yang berisi langganan Anda saat ini.
+Tentukan ID aplikasi, juga dikenal sebagai ID klien, terdaftar untuk aplikasi di AzureActive Directory. Aplikasi dengan nama prinsipal layanan yang ditentukan parameter ini harus didaftarkan di direktori Azure yang berisi langganan Anda saat ini.
 
 ```yaml
 Type: String
@@ -439,9 +439,9 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Menentukan nama utama pengguna bagi pengguna yang akan diberi izin.
+Menentukan nama utama pengguna pengguna yang akan memberikan izin.
 
-Nama prinsipal pengguna ini harus ada dalam direktori yang terkait dengan langganan saat ini.
+Nama utama pengguna ini harus ada di direktori yang terkait dengan langganan saat ini.
 
 ```yaml
 Type: String
@@ -456,9 +456,9 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
-Cmdlet ini mengubah kebijakan akses untuk key vault yang ditentukan oleh parameter ini.
+Cmdlet ini mengubah kebijakan akses untuk kubah kunci yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -488,7 +488,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -503,7 +503,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

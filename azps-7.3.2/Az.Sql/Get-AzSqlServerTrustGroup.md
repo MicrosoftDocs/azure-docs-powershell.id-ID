@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerTrustGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerTrustGroup.md
-ms.openlocfilehash: dd44e84652191c4c06ac60f67d31d49bfbfe7810
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9e2c78e9e3b805372356d67998acc0690b4d2093
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142026479"
 ---
 # Get-AzSqlServerTrustGroup
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Grup Kepercayaan Server.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservertrustgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSqlServerTrustGroup [-ResourceId] <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerTrustGroup** mendapatkan informasi tentang Grup Kepercayaan Server dan anggotanya untuk langganan saat ini. Berdasarkan parameter yang ditetapkan, cmdlet ini dapat mengambil Grup Kepercayaan Server yang ditentukan, semua Grup Kepercayaan Server dalam lokasi yang ditentukan atau Grup Kepercayaan Server yang telah menetapkan AzureSQL Managed Instance sebagai anggota.
+Cmdlet **Get-AzSqlServerTrustGroup** mendapatkan informasi tentang Server Trust Group dan anggotanya untuk langganan saat ini. Berdasarkan kumpulan parameter cmdlet ini dapat mengambil Grup Kepercayaan Server tertentu, semua Grup Kepercayaan Server di lokasi tertentu atau Grup Kepercayaan Server yang telah menentukan Instans Terkelola AzureSQL sebagai anggota.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Mendapatkan informasi tentang Grup Kepercayaan Server bernama ServerTrustGroup01
 PS C:\> Get-AzSqlServerTrustGroup -ResourceGroupName "ResourceGroup01" -Location "West Europe"
 ```
 
-Mendapatkan informasi tentang semua Grup Kepercayaan Server di lokasi Eropa Barat di grup sumber daya ResourceGroup01.
+Mendapatkan informasi tentang semua Grup Kepercayaan Server di lokasi Eropa Barat dalam grup sumber daya ResourceGroup01.
 
 ### Contoh 3
 ```powershell
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama instans terkelola yang merupakan anggota Grup Kepercayaan Server yang akan diambil.
+Nama instans terkelola yang merupakan anggota Grup Kepercayaan Server untuk diambil.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya contoh yang digunakan
+Id sumber daya instans yang akan digunakan
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

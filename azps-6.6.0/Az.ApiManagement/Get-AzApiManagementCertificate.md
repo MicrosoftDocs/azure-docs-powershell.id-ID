@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCertificate.md
 ms.openlocfilehash: e7688a234a2914c282d30e8bc8752fa0c9e904c5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140259991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142055333"
 ---
 # Get-AzApiManagementCertificate
 
 ## SYNOPSIS
-Mendapatkan sertifikat Manajemen API yang dikonfigurasi untuk Autentikasi Bersama dengan Backend dalam layanan.
+Mendapatkan sertifikat API Management yang dikonfigurasi untuk Autentikasi Timah dengan Backend dalam layanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,30 +36,30 @@ Get-AzApiManagementCertificate [-CertificateId <String>] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementCertificate** mendapatkan semua sertifikat atau sertifikat Manajemen AZURE API yang Anda tentukan.
+Cmdlet **Get-AzApiManagementCertificate** mendapatkan semua sertifikat atau sertifikat Azure API Management yang Anda tentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua sertifikat
+### Contoh 1: Dapatkan semua sertifikat
 ```
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementCertificate -Context $ApiMgmtContext
 ```
 
-Perintah ini akan mendapatkan semua sertifikat Manajemen API.
+Perintah ini mendapatkan semua sertifikat API Management.
 
-### Contoh 2: Mendapatkan sertifikat berdasarkan ID-nya
+### Contoh 2: Mendapatkan sertifikat dengan ID-nya
 ```
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementCertificate -Context $ApiMgmtContext -CertificateId "0123456789"
 ```
 
-Perintah ini mendapatkan sertifikat Manajemen API dengan ID yang ditentukan.
+Perintah ini mendapatkan sertifikat API Management dengan ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -CertificateId
-Menentukan ID sertifikat untuk mendapatkannya.
+Menentukan ID sertifikat yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier of the Certificate. Jika ditentukan akan mencoba menemukan sertifikat berdasarkan pengidentifikasi. Parameter ini diperlukan.
+Arm Resource Identifier sertifikat. Jika ditentukan akan mencoba menemukan sertifikat oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

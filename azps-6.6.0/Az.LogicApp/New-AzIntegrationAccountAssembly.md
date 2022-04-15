@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAssembly.md
 ms.openlocfilehash: bccfb298da52201664303f3f0f11b07c17fe377f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140333249"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142048853"
 ---
 # New-AzIntegrationAccountAssembly
 
@@ -18,7 +18,7 @@ ms.locfileid: "140333249"
 Membuat perakitan akun integrasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountassembly) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +80,7 @@ New-AzIntegrationAccountAssembly -ParentResourceId <String> -Name <String> -Asse
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountAssembly** membuat perakitan baru di akun integrasi.
+Cmdlet **Get-AzIntegrationAccountAssembly** membuat perakitan baru dalam akun integrasi.
 
 ## EXAMPLES
 
@@ -97,7 +97,7 @@ Tags       :
 
 ```
 
-Membuat perakitan baru menggunakan file lokal yang terletak di jalur file yang dimuat dalam "$localAssemblyFilePath".
+Membuat perakitan baru menggunakan file lokal yang terletak di jalur file yang terdapat dalam "$localAssemblyFilePath".
 
 ### Contoh 2: Membuat perakitan baru menggunakan data byte
 ```powershell
@@ -112,9 +112,9 @@ Tags       :
 
 ```
 
-Membuat perakitan baru menggunakan array byte yang dimuat dalam "$assemblyContent".
+Membuat perakitan baru menggunakan array byte yang terdapat dalam "$assemblyContent".
 
-### Contoh 3: Membuat perakitan baru menggunakan link konten
+### Contoh 3: Membuat perakitan baru menggunakan tautan konten
 ```powershell
 PS C:\> New-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly" -ContentLink $assemblyUrl
 
@@ -127,12 +127,12 @@ Tags       :
 
 ```
 
-Membuat perakitan baru menggunakan data byte yang terletak di URL "$assemblyUrl". Berikut adalah metode yang disarankan untuk membuat assemblies berukuran besar.
+Membuat perakitan baru menggunakan data byte yang terletak di URL "$assemblyUrl". Ini adalah metode yang disarankan untuk membuat rakitan berukuran besar.
 
 ## PARAMETERS
 
 ### -AssemblyData
-Akun integrasi perakitan data byte.
+Data byte perakitan akun integrasi.
 
 ```yaml
 Type: System.Byte[]
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLink
-Link yang dapat diakses secara publik ke akun integrasi perakitan data.
+Tautan yang dapat diakses secara publik ke data perakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Akun integrasi perakitan metadata.
+Metadata perakitan akun integrasi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

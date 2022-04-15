@@ -7,21 +7,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsIntelligencePack.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsIntelligencePack.md
 ms.openlocfilehash: f367a5b7ae0dc72ea7e306920fe5c8ee809e152c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140279797"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141950793"
 ---
 # Set-AzOperationalInsightsIntelligencePack
 
 ## SYNOPSIS
-Mengaktifkan atau menonaktifkan Paket Kecerdasan tertentu.
+Mengaktifkan atau menonaktifkan Paket Kecerdasan yang ditentukan.
 > [!NOTE]
-> Solusinya sudah tidak berlaku, silakan gunakan solusi [log-analytics az monitor](https://docs.microsoft.com/en-us/cli/azure/monitor/log-analytics/solution?view=azure-cli-latest) dan [Get-AzMonitorLogAnalyticsSolution](https://docs.microsoft.com/en-us/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution?view=azps-5.9.0) sebagai gantinya jika perintah ini.
+> Solusi ditolak, silakan gunakan [solusi log-analitik monitor az](https://docs.microsoft.com/en-us/cli/azure/monitor/log-analytics/solution?view=azure-cli-latest) dan [Get-AzMonitorLogAnalyticsSolution sebagai gantinya](https://docs.microsoft.com/en-us/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution?view=azps-5.9.0) jika perintah ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsintelligencepack) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsintelligencepack) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,21 +32,21 @@ Set-AzOperationalInsightsIntelligencePack [-ResourceGroupName] <String> [-Worksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzOperationalInsightsIntelligencePack** mengaktifkan Paket Kecerdasan tertentu jika *Diaktifkan* diatur ke $True dan menonaktifkannya jika *Diaktifkan* diatur ke $False.
+Cmdlet **Set-AzOperationalInsightsIntelligencePack** memungkinkan Paket *Kecerdasan* tertentu jika Diaktifkan diatur ke $True dan menonaktifkannya jika *Diaktifkan* diatur ke $False.
 
 ## EXAMPLES
 
-### Contoh 1: Set Intelligence Packs
+### Contoh 1: Atur Paket Kecerdasan
 ```
 PS C:\>Set-AzOperationalInsightsIntelligencePack -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -IntelligencePackName "ContosoWorkspace" -Enabled $True
 ```
 
-Perintah ini mengaktifkan Paket Kecerdasan tertentu.
+Perintah ini mengaktifkan Paket Kecerdasan yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 ```yaml
 Type: System.Boolean
 Parameter Sets: (All)
@@ -103,7 +103,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

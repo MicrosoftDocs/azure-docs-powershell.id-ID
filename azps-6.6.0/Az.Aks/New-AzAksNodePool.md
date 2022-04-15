@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksNodePool.md
 ms.openlocfilehash: 808635c6022c1f452eb60ac93023614d3a21e8e2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140145123"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962259"
 ---
 # New-AzAksNodePool
 
 ## SYNOPSIS
-Membuat kelompok node baru di kluster tertentu.
+Buat kumpulan node baru di kluster yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/new-azaksnodepool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/new-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,16 +43,16 @@ New-AzAksNodePool -Name <String> -ClusterObject <PSKubernetesCluster> [-Count <I
 ```
 
 ## DESCRIPTION
-Membuat kelompok node baru di kluster tertentu.
+Buat kumpulan node baru di kluster yang ditentukan.
 
 ## EXAMPLES
 
-### Membuat node pool dengan parameter default
+### Membuat kumpulan simpul dengan parameter default
 ```powershell
 PS C:\> New-AzAksNodePool -ResourceGroupName myResouceGroup -ClusterName myCluster -Name mydefault
 ```
 
-### Membuat Windows Server Di AKS
+### Membuat wadah Server Windows di AKS
 ```powershell
 PS C:\> $cred = ConvertTo-SecureString -AsPlainText "Password!!123" -Force
 PS C:\> New-AzAks -ResourceGroupName myResourceGroup -Name myCluster -WindowsProfileAdminUserName azureuser -WindowsProfileAdminUserPassword $cred -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets
@@ -61,7 +61,7 @@ PS C:\> New-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myClus
 
 ## PARAMETERS
 
-### -KetersediaanZone
+### -AvailabilityZone
 Zona ketersediaan untuk simpul. Harus menggunakan VirtualMachineScaleSets AgentPoolType.
 
 ```yaml
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama sumber daya kluster yang dikelola.
+Nama sumber daya kluster terkelola.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterObject
-Tentukan objek kluster untuk membuat node pool.
+Tentukan objek kluster tempat untuk membuat kumpulan simpul.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutoScaling
-Apakah akan mengaktifkan penskala otomatis
+Apakah mengaktifkan penskalakan otomatis
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,8 +151,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Buat node pool meskipun sudah ada
+### -Paksa
+Buat kumpulan simpul bahkan jika sudah ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kversion
-Versi File yang digunakan untuk membuat kluster.
+### -KubernetesVersion
+Versi Kubernetes yang digunakan untuk membuat kluster.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Jumlah maksimum node untuk penskalaan otomatis
+Jumlah node maksimum untuk penskalaan otomatis
 
 ```yaml
 Type: System.Int32
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPodCount
-Jumlah maksimum pod yang dapat dijalankan pada simpul.
+Jumlah maksimum pod yang dapat dijalankan pada node.
 
 ```yaml
 Type: System.Int32
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinCount
-Jumlah minimum node untuk penskalaan otomatis.
+Jumlah node minimum untuk penskalaan otomatis.
 
 ```yaml
 Type: System.Int32
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama node pool.
+Nama kolam simpul.
 
 ```yaml
 Type: System.String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskSize
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -257,9 +257,9 @@ Accept wildcard characters: False
 ```
 
 ### -OsType
-OsType yang akan digunakan untuk menentukan jenis os.
-Pilih dari Linux, Windows.
-Default untuk Linux.
+OsType yang akan digunakan untuk menentukan tipe os.
+Pilih dari Linux dan Windows.
+Default ke Linux.
 
 ```yaml
 Type: System.String
@@ -289,8 +289,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleSetEvictionPolicy
-ScaleSetEvictionPolicy akan digunakan untuk menentukan kebijakan pembatasan untuk kumpulan skala mesin virtual berprioritas rendah.
-Default untuk Hapus.
+ScaleSetEvictionPolicy yang akan digunakan untuk menentukan kebijakan penggusuran untuk kumpulan skala mesin virtual prioritas rendah.
+Default ke Hapus.
 
 ```yaml
 Type: System.String
@@ -305,8 +305,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleSetPriority
-ScaleSetPriority untuk digunakan untuk menentukan prioritas set skala mesin virtual.
-Default menjadi reguler.
+ScaleSetPriority yang akan digunakan untuk menentukan prioritas rangkaian skala mesin virtual.
+Default ke reguler.
 
 ```yaml
 Type: System.String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -338,8 +338,8 @@ Accept wildcard characters: False
 ```
 
 ### -VmSetType
-Mewakili tipe node pool.
-Nilai yang memungkinkan meliputi: 'VirtualMachineScaleSets', 'AvailabilitySet'
+Mewakili tipe kumpulan simpul.
+Nilai yang memungkinkan termasuk: 'VirtualMachineScaleSets', 'AvailabilitySet'
 
 ```yaml
 Type: System.String
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmSize
-Ukuran Komputer Virtual. Nilai default adalah Standard_D2_v2.
+Ukuran Mesin Virtual. Nilai default adalah Standard_D2_v2.
 
 ```yaml
 Type: System.String
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,11 +415,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ## OUTPUTS
 

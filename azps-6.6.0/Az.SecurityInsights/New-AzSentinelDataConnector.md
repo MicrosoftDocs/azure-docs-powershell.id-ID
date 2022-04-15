@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
 ms.openlocfilehash: 3d8e3239314179cefa349b80d2cdac1fd7739f9a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246671"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949047"
 ---
 # New-AzSentinelDataConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "140246671"
 Membuat Konektor Data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentineldataconnector) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentineldataconnector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,15 +80,15 @@ New-AzSentinelDataConnector -ResourceGroupName <String> -WorkspaceName <String> 
 
 ## DESCRIPTION
 Cmdlet **New-AzSentinelDataConnector** mengonfigurasi dan mengaktifkan konektor data di ruang kerja yang ditentukan.
-Anda harus menentukan salah satu parameter, misalnya -AzureActiveDirectory, untuk menentukan jenis Aturan pemberitahuan yang akan dibuat.  Setiap Kind memiliki parameter yang diperlukan berbeda.<br/><br/>
-Harap diperhatikan bahwa hanya konektor data berikut ini yang memiliki dukungan otomatisasi melalui PowerShell atau *Security.Insights* API:
-* **AADDataConnector** - Mewakili AAD konektor data (Azure Active Directory Identity Protection)
+Anda harus menentukan salah satu parameter, misalnya -AzureActiveDirectory, untuk menentukan jenis aturan Peringatan yang akan dibuat.  Setiap Jenis memiliki parameter yang diperlukan berbeda.<br/><br/>
+Harap diperhatikan bahwa hanya konektor data berikut yang memiliki dukungan otomatisasi melalui PowerShell atau *Security.Insights* API:
+* **AADDataConnector** - Mewakili AAD (Azure Active Directory Identity Protection) konektor data
 * **AATPDataConnector** - Mewakili konektor data AATP (Azure Advanced Threat Protection)
 * **ASCDataConnector** - Mewakili konektor data ASC (Azure Security Center)
-* **AwsCloudTrailDataConnector** - Mewakili konektor data Amazon Web Services CloudTrail
+* **AwsCloudTrailDataConnector** - Mewakili konektor data CloudTrail Amazon Web Services
 * **MCASDataConnector** - Mewakili konektor data MCAS (Microsoft Cloud App Security)
-* **Konektor data MDATPDataConnector** - Represents MDATP (Microsoft Defender Advanced Threat Protection)
-* **OfficeDataConnector** - Mewakili konektor data Office
+* **MDATPDataConnector** - Mewakili konektor data MDATP (Microsoft Defender Advanced Threat Protection)
+* **OfficeDataConnector** - Mewakili konektor data office
 * **TIDataConnector** - Mewakili konektor data kecerdasan ancaman
 
 ## EXAMPLES
@@ -98,14 +98,14 @@ Harap diperhatikan bahwa hanya konektor data berikut ini yang memiliki dukungan 
 PS C:\> $DataConnector = New-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AzureSecurityCenter -Alerts Enabled -SubscriptionId ((Get-AzContext).Subscription.Id)
 ```
 
-Contoh ini membuat **DataConnector** untuk *Pusat Keamanan Azure* di ruang kerja tertentu, lalu menyimpannya di $DataConnector lain.
+Contoh ini membuat **DataConnector** untuk *Azure Security Center* di ruang kerja tertentu, lalu menyimpannya dalam variabel $DataConnector.
 
 ### Contoh 2
 ```powershell
 PS C:\> $DataConnector = New-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -MicrosoftCloudAppSecurity -Alerts Enabled -DiscoveryLogs Disabled
 ```
 
-Contoh ini membuat **DataConnector untuk** *Microsoft Cloud App Security* kerja tertentu, lalu menyimpannya di $DataConnector lain.
+Contoh ini membuat **DataConnector** untuk *Microsoft Cloud App Security* di ruang kerja tertentu, lalu menyimpannya dalam variabel $DataConnector.
 
 ### Contoh 3
 ```powershell
@@ -116,12 +116,12 @@ $SentinelConnection = @{
 New-AzSentinelDataConnector @SentinelConnection -Office365 -Exchange Enabled -SharePoint Enabled -Teams Enabled
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mengonfigurasi konektor *data Office 365* untuk mengumpulkan Exchange, SharePoint, Teams log.
+Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mengonfigurasi konektor data *Office 365* untuk mengumpulkan log Exchange, SharePoint, dan Teams.
 
 ## PARAMETERS
 
-### -Pemberitahuan
-Pemberitahuan Konektor Data
+### -Peringatan
+Peringatan Konektor Data
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -AmazonWebServicesCloudTrail
-Data Connector Amazon Web Services Cloud Trail
+Konektor Data Amazon Web Services Cloud Trail
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -AwsRoleArn
-Data Connector AWS Role Smtp
+Arn Konektor Data Aws Role
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureActiveDirectory
-Data Connector Azure Active Directory
+Azure Active Directory Konektor Data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAdvancedThreatProtection
-Data Connector Azure Advanced Threat Protection
+Konektor Data Azure Advanced Threat Protection
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureSecurityCenter
-Pusat Keamanan Azure Konektor Data
+Azure Security Center Konektor Data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataConnectorId
-Data Connector Azure Active Directory
+Azure Active Directory Konektor Data
 
 ```yaml
 Type: System.String
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Data Connector Exchange
+Exchange Konektor Data
 
 ```yaml
 Type: System.String
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftCloudAppSecurity
-Data Connector Microsoft Cloud App Security
+Microsoft Cloud App Security Konektor Data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftDefenderAdvancedThreatProtection
-Advanced Threat Protection Pertahanan Microsoft Konektor Data
+Perlindungan Ancaman Tingkat Lanjut Pertahanan Microsoft Konektor Data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -Office365
-Data Connector Office 365
+Office 365 Konektor Data
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Data Connector Azure Active Directory
+Azure Active Directory Konektor Data
 
 ```yaml
 Type: System.String
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharePoint
-Data Connector SharePoint
+SharePoint Konektor Data
 
 ```yaml
 Type: System.String
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan Konektor Data
+Id Langganan konektor data
 
 ```yaml
 Type: System.String
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -Teams
-Data Connector Teams
+Teams Konektor Data
 
 ```yaml
 Type: System.String
@@ -427,8 +427,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
-Data Connector Azure Active Directory
+### -Nama Ruang Kerja
+Azure Active Directory Konektor Data
 
 ```yaml
 Type: System.String
@@ -443,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -458,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -473,11 +473,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.DataConnectors.PSSentinelDataConnector

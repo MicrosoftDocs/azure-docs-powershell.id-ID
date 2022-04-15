@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseManagedPrivateEndpoint.md
-ms.openlocfilehash: 3690cbdc78340d7ec43a99181113bbe0e8036e16
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d7d5615023052313a32cf8903dcdeedc88345af2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142023941"
 ---
 # Get-AzSynapseManagedPrivateEndpoint
 
 ## SYNOPSIS
-Mendapatkan informasi tentang titik akhir privat manang dalam ruang kerja
+Mendapatkan informasi tentang titik akhir privat yang dimanangi dalam ruang kerja
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsemanagedprivateendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseManagedPrivateEndpoint -WorkspaceObject <PSSynapseWorkspace> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseManagedPrivateEndpoint** mendapatkan informasi tentang titik akhir privat manang dalam ruang kerja. Jika Anda menentukan nama titik akhir privat mananged, cmdlet akan mendapatkan informasi tentang titik akhir privat mananged tersebut. Jika Anda tidak menentukan nama, cmdlet akan mendapatkan informasi tentang semua titik akhir privat manang dalam ruang kerja.
+Cmdlet **Get-AzSynapseManagedPrivateEndpoint** mendapatkan informasi tentang titik akhir pribadi yang dimanang di ruang kerja. Jika Anda menentukan nama titik akhir pribadi yang dimanang, cmdlet mendapatkan informasi tentang titik akhir pribadi yang dimanang. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua titik akhir privat yang dimanang di ruang kerja.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzSynapseManagedPrivateEndpoint** mendapatkan informasi tentang tit
 PS C:\> Get-AzSynapseManagedPrivateEndpoint -WorkspaceName ContosoWorkspace -Name ContosoManagedPrivateEndpoint
 ```
 
-Mendapatkan titik akhir privat tunggal yang disebut ContosoManagedPrivateEndpoint di ruang kerja ContosoWorkspace.
+Mendapatkan satu titik akhir pribadi yang dimanang yang disebut ContosoManagedPrivateEndpoint di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseManagedPrivateEndpoint -WorkspaceName ContosoWorkspace
 ```
 
-Mendapatkan daftar semua titik akhir privat manang di ruang kerja ContosoWorkspace.
+Mendapatkan daftar semua titik akhir privat yang dimanang di ruang kerja ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseManagedPrivateEndpoint -Name ContosoManagedPrivateEndpoint
 ```
 
-Mendapatkan titik akhir privat tunggal yang disebut ContosoManagedPrivateEndpoint di ruang kerja ContosoWorkspace melalui pipeline.
+Mendapatkan satu titik akhir privat yang dimanang yang disebut ContosoManagedPrivateEndpoint di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama titik akhir privat yang dikelola Synapse.
+Nama Titik Akhir Pribadi yang Dikelola Synapse.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Managed Virtual Network Name is default.
+Nama Virtual Network terkelola adalah default.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

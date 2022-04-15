@@ -5,11 +5,11 @@ ms.assetid: A4C605DD-9B2E-4EE9-BD1F-1352D605C33F
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/new-azurermactiongroup
 schema: 2.0.0
 ms.openlocfilehash: cce5798869701e372783610e3533cc76ee18528e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929088"
 ---
 # New-AzureRmActionGroup
 
@@ -27,7 +27,7 @@ New-AzureRmActionGroup -ActionGroupId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmActionGroup** membuat objek referensi grup tindakan dalam memori.
+Cmdlet **AzureRmActionGroup Baru** membuat objek referensi grup tindakan dalam memori.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,13 +86,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.Generic.Dictionary'2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.Dictionary'2[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -106,11 +106,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Enable-AzureRmActivityLogAlert](./Enable-AzureRmActivityLogAlert.md)
 
-[Disable-AzureRmActivityLogAlert](./Disable-AzureRmActivityLogAlert.md)
+[Menonaktifkan-AzureRmActivityLogAlert](./Disable-AzureRmActivityLogAlert.md)
 
 [Get-AzureRmActivityLogAlert](./Get-AzureRmActivityLogAlert.md)
 
-[Remove-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
+[Hapus-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
 
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountBatchConfiguration.md
 ms.openlocfilehash: f44529bfafcd67b9d4d353551845e72205460747
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140284153"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142048835"
 ---
 # New-AzIntegrationAccountBatchConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140284153"
 Membuat konfigurasi kumpulan akun integrasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountbatchconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountbatchconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,11 +89,11 @@ New-AzIntegrationAccountBatchConfiguration -ParentResourceId <String> -Name <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountBatchConfiguration** membuat konfigurasi kumpulan baru dalam akun integrasi.
+Cmdlet **Get-AzIntegrationAccountBatchConfiguration** membuat konfigurasi batch baru dalam akun integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Buat konfigurasi kumpulan baru menggunakan file lokal
+### Contoh 1: Membuat konfigurasi kumpulan baru menggunakan file lokal
 ```powershell
 PS C:\> New-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -BatchConfigurationName "sampleBatchConfig" -BatchConfigurationFilePath $batchConfigurationFilePath
 
@@ -106,9 +106,9 @@ Tags       :
 
 ```
 
-Membuat konfigurasi kumpulan baru menggunakan file lokal yang berada di jalur file yang terdapat dalam "$batchConfigurationFilePath".
+Membuat konfigurasi kumpulan baru menggunakan file lokal yang terletak di jalur file yang terdapat dalam "$batchConfigurationFilePath".
 
-### Contoh 2: Buat konfigurasi kumpulan baru menggunakan string JSON
+### Contoh 2: Membuat konfigurasi kumpulan baru menggunakan string JSON
 ```powershell
 PS C:\> New-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -BatchConfigurationName "sampleBatchConfig" -BatchConfigurationDefinition $batchConfigurationContent
 
@@ -121,9 +121,9 @@ Tags       :
 
 ```
 
-Membuat konfigurasi kumpulan baru menggunakan string JSON yang dimuat dalam "$batchConfigurationContent".
+Membuat konfigurasi kumpulan baru menggunakan string JSON yang terdapat dalam "$batchConfigurationContent".
 
-### Contoh 3: Buat konfigurasi kumpulan baru menggunakan parameter
+### Contoh 3: Membuat konfigurasi kumpulan baru menggunakan parameter
 ```powershell
 PS C:\> New-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -BatchConfigurationName "sampleBatchConfig" -MessageCount 199 -BatchSize 5 -ScheduleInterval 1 -ScheduleFrequency "Month"
 
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -BatchSize
-Ukuran kumpulan konfigurasi akun integrasi.
+Ukuran kumpulan konfigurasi kumpulan akun integrasi.
 
 ```yaml
 Type: System.Int32
@@ -320,7 +320,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -JadwalFrequency
+### -ScheduleFrequency
 Frekuensi jadwal konfigurasi kumpulan akun integrasi.
 
 ```yaml
@@ -352,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleStartTime
-Waktu mulai konfigurasi kumpulan akun integrasi.
+Waktu mulai jadwal konfigurasi kumpulan akun integrasi.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
-ms.openlocfilehash: 5b84c0e168a297aacaac43a8878ef48e958ed840
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ea63fe114a1c4afa17b9dcc2b92ebbaf98062a1a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140197463"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032095"
 ---
 # New-AzVHubRoute
 
 ## SYNOPSIS
-Membuat objek VHubRoute yang dapat dialihkan sebagai parameter ke New-AzVHubRouteTable parameter.
+Membuat objek VHubRoute yang dapat diteruskan sebagai parameter ke perintah New-AzVHubRouteTable.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvhubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ NextHopType     : ResourceId
 NextHop         : /subscriptions/testSub/resourceGroups/testRg/providers/Microsoft.Network/azureFirewalls/testFirewall
 ```
 
-Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai Firewall yang ditentukan, yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
+Perintah di atas akan membuat objek VHubRoute dengan nextHop sebagai Firewall tertentu yang kemudian dapat ditambahkan ke sumber daya VHubRouteTable.
 
 ### Contoh 2
 
@@ -126,7 +129,7 @@ VnetRoutes            : {
 
 PS C:\> Update-AzVirtualHubVnetConnection -InputObject $hubVnetConn -RoutingConfiguration $routingConfig
 ```
-Perintah di atas akan mendapatkan RoutingConfiguration dari AzVHubRoute yang sudah ada lalu menambahkan rute statis pada koneksi. Atau, jika Anda ingin membuat koneksi baru dengan rute statis di dalamnya, silakan lihat Contoh 1 di [sini.](New-AzRoutingConfiguration.md)
+Perintah di atas akan mendapatkan Konfigurasi Perutean dari AzVHubRoute yang sudah ada lalu menambahkan rute statis pada koneksi. Atau, jika Anda ingin membuat koneksi baru dengan rute statis di dalamnya, silakan lihat Contoh 1 [di sini.](New-AzRoutingConfiguration.md)
 ## PARAMETERS
 
 ### -DefaultProfile
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextHop
-Lompatan berikutnya.
+Lompat berikutnya.
 
 ```yaml
 Type: String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,10 +237,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzvHubRouteTable](./Get-AzVHubRouteTable.md)
+[Get-AzVHubRouteTable](./Get-AzVHubRouteTable.md)
 
-[New-AzvHubRouteTable](./New-AzVHubRouteTable.md)
+[New-AzVHubRouteTable](./New-AzVHubRouteTable.md)
 
-[Remove-AzvHubRouteTable](./Remove-AzVHubRouteTable.md)
+[Remove-AzVHubRouteTable](./Remove-AzVHubRouteTable.md)
 
-[Update-azvHubRouteTable](./Update-AzVHubRouteTable.md)
+[Update-AzVHubRouteTable](./Update-AzVHubRouteTable.md)

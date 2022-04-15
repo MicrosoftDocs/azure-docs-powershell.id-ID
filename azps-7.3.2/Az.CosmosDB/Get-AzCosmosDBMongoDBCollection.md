@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollection.md
-ms.openlocfilehash: 92f4918312bf2b10f4a15858604ec22cbd4b9e4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 29514701fb0c40907f79d825e2d55931a5749cc7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141853862"
 ---
 # Get-AzCosmosDBMongoDBCollection
 
 ## SYNOPSIS
-Dapatkan Collection CosmosDBDb.
+Dapatkan Koleksi CosmosDB MongoDB.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbcollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBMongoDBCollection [-Name <String>] -ParentObject <PSMongoDBDatabas
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBMongoDBCollection** gets the CosmosDBDbDb Collection.
+Cmdlet **Get-AzCosmosDBMongoDBCollection** mendapatkan Koleksi CosmosDB MongoDB.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Name    Id   Resource
 {name}  {id} Microsoft.Azure.Commands.CosmosDB.Models.PSMongoDBCollectionGetPropertiesResource
 ```
 
-Resource Object berisi KodeOIndexes, _rid, _ts, _etag properti.
+Objek Sumber Daya berisi properti MongoIndexes, _rid, _ts, _etag.
 
 ### Contoh 2
 ```powershell
@@ -55,11 +58,11 @@ Key           Value
 <ShardKey>    <Value>
 ```
 
-Contoh ini mendapatkan Skey dari kumpulan yang diambil
+Contoh ini mendapatkan ShardKey dari koleksi yang diambil
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database.
+Objek Mongo Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSMongoDBDatabaseGetResults
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

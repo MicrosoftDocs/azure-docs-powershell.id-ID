@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSparkJobDefinition.md
-ms.openlocfilehash: 1a9677d085081ca00d02471f54a36cbca91a5f11
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 219a8ccc9efd71f2327924d49a1eb29bb6046049
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390070"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141932235"
 ---
 # Set-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
-Membuat definisi pekerjaan Grafik Spark di ruang kerja.
+Membuat definisi pekerjaan Spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesparkjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Set-AzSynapseSparkJobDefinition -WorkspaceObject <PSSynapseWorkspace> -Name <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSparkJobDefinition** membuat definisi pekerjaan Spark di ruang kerja.
+Cmdlet **Set-AzSynapseSparkJobDefinition** menciptakan definisi pekerjaan Spark di ruang kerja.
 
 ## EXAMPLES
 
@@ -43,24 +46,24 @@ Cmdlet **Set-AzSynapseSparkJobDefinition** membuat definisi pekerjaan Spark di r
 PS C:\> Set-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSparkJobDefinition -DefinitionFile "C:\sparkJobDefinition.json"
 ```
 
-Perintah ini membuat definisi pekerjaan Spark yang bernama ContosoSparkJobDefinition di ruang kerja yang bernama ContosoWorkspace.
-Perintah mendasarkan definisi pekerjaan Grafik Spark pada informasi di file sparkJobDefinition.json.
+Perintah ini membuat definisi pekerjaan Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace.
+Perintah mendasarkan definisi pekerjaan Spark pada informasi dalam file sparkJobDefinition.json.
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSparkJobDefinition -DefinitionFile "C:\sparkJobDefinition.json" -FolderPath ContosoFolder
 ```
 
-Perintah ini membuat definisi pekerjaan Spark bernama ContosoSparkJobDefinition dan menentukan jalur folder ContosoFolder di mana definisi pekerjaan grafik grafik akan diletakkan di ruang kerja bernama ContosoWorkspace.
-Perintah mendasarkan definisi pekerjaan Grafik Spark pada informasi di file sparkJobDefinition.json.
+Perintah ini membuat definisi pekerjaan Spark bernama ContosoSparkJobDefinition dan menentukan jalur folder ContosoFolder di mana definisi pekerjaan spark akan ditempatkan di ruang kerja bernama ContosoWorkspace.
+Perintah mendasarkan definisi pekerjaan Spark pada informasi dalam file sparkJobDefinition.json.
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSparkJobDefinition -DefinitionFile "C:\sparkJobDefinition.json" -FolderPath ContosoFolder/SubFolder
 ```
 
-Perintah ini membuat definisi pekerjaan Spark bernama ContosoSparkJobDefinition dan menentukan jalur folder multi-tingkat ContosoFolder/SubFolder tempat definisi pekerjaan grafik akan diletakkan di ruang kerja yang bernama ContosoWorkspace.
-Perintah mendasarkan definisi pekerjaan Grafik Spark pada informasi di file sparkJobDefinition.json.
+Perintah ini membuat definisi pekerjaan Spark bernama ContosoSparkJobDefinition dan menentukan jalur folder multi-level ContosoFolder/SubFolder di mana definisi pekerjaan spark akan ditempatkan di ruang kerja bernama ContosoWorkspace.
+Perintah mendasarkan definisi pekerjaan Spark pada informasi dalam file sparkJobDefinition.json.
 
 ### Contoh 4
 ```powershell
@@ -68,13 +71,13 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapseSparkJobDefinition -Name ContosoSparkJobDefinition -DefinitionFile "C:\sparkJobDefinition.json"
 ```
 
-Perintah ini membuat definisi pekerjaan Spark yang bernama ContosoSparkJobDefinition dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
-Perintah mendasarkan definisi pekerjaan Grafik Spark pada informasi di file sparkJobDefinition.json.
+Perintah ini membuat definisi pekerjaan Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah mendasarkan definisi pekerjaan Spark pada informasi dalam file sparkJobDefinition.json.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -FolderPath
-Folder tempat definisi pekerjaan Grafik Spark ini berada. Jika menentukan jalur multi-tingkat seperti [rootFolder/subFolder], definisi pekerjaan Grafik Spark akan muncul di tingkat bawah. Jika tidak ditentukan, definisi pekerjaan Grafik Spark ini akan muncul di tingkat akar.
+Folder tempat definisi pekerjaan Spark ini berada. Jika menentukan jalur multi-level seperti [rootFolder/subFolder], definisi pekerjaan Spark akan muncul di tingkat bawah. Jika tidak ditentukan, definisi pekerjaan Spark ini akan muncul di tingkat akar.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama definisi pekerjaan Grafik Apik.
+Nama definisi pekerjaan Spark.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

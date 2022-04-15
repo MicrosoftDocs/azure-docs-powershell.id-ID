@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzLoadBalancer.md
 ms.openlocfilehash: 1602c9e5fb0244239eea4eec53661c3392ac0354
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426973"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916401"
 ---
 # Remove-AzLoadBalancer
 
 ## SYNOPSIS
-Menghapus penyeimbang muat.
+Menghapus penyeimbang beban.
 
 ## SYNTAX
 
@@ -26,21 +26,21 @@ Remove-AzLoadBalancer -Name <String> -ResourceGroupName <String> [-Force] [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancer** menghapus penyeimbang muat Azure.
+Cmdlet **Remove-AzLoadBalancer** menghapus penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus penyeimbang muat
+### Contoh 1: Menghapus load balancer
 ```
 PS C:\>Remove-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini menghapus penyeimbang muat yang bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup.
+Perintah ini menghapus load balancer bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -69,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menghapus penyeimbang muat terlepas dari apakah sumber daya ditetapkan untuknya.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menghapus penyeimbang beban terlepas dari apakah sumber daya ditetapkan padanya.
 
 ```yaml
 Type: SwitchParameter
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat untuk dihapus.
+Menentukan nama penyeimbang muatan untuk dihapus.
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi penyeimbang muat yang akan dihapus.
+Menentukan nama grup sumber daya yang berisi load balancer untuk dihapus.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

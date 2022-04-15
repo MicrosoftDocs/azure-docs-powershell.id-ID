@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageBlobSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/New-AzStorageBlobSASToken.md
 ms.openlocfilehash: 2d2094c22b2aa3b1ca1bb2107af8cd5f434f0eba
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424920"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142055441"
 ---
 # New-AzStorageBlobSASToken
 
@@ -55,21 +55,21 @@ Cmdlet **New-AzStorageBlobSASToken** menghasilkan token Shared Access Signature 
 
 ## EXAMPLES
 
-### Contoh 1: Menghasilkan token SAS blob dengan izin blob penuh
+### Contoh 1: Menghasilkan token BLOB SAS dengan izin blob penuh
 ```
 PS C:\>New-AzStorageBlobSASToken -Container "ContainerName" -Blob "BlobName" -Permission rwd
 ```
 
-Contoh ini menghasilkan token blob SAS dengan izin blob penuh.
+Contoh ini menghasilkan token SAS blob dengan izin blob penuh.
 
-### Contoh 2: Menghasilkan token blob SAS dengan life time
+### Contoh 2: Menghasilkan token SAS blob dengan masa pakai
 ```
 PS C:\> $StartTime = Get-Date
 PS C:\> $EndTime = $startTime.AddHours(2.0)
 PS C:\> New-AzStorageBlobSASToken -Container "ContainerName" -Blob "BlobName" -Permission rwd -StartTime $StartTime -ExpiryTime $EndTime
 ```
 
-Contoh ini menghasilkan token blob SAS dengan masa pakai.
+Contoh ini menghasilkan token SAS blob dengan masa pakai.
 
 ## PARAMETERS
 
@@ -89,8 +89,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob.**
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet [Get-AzStorageBlob.](./Get-AzStorageBlob.md)
+Menentukan objek **CloudBlob** .
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet [Get-AzStorageBlob](./Get-AzStorageBlob.md) .
 
 ```yaml
 Type: Microsoft.WindowsAz.Storage.Blob.CloudBlob
@@ -104,7 +104,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Menentukan nama wadah penyimpanan.
 
 ```yaml
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,8 +180,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -195,8 +195,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Menentukan izin untuk blob penyimpanan. Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus). 
+### -Izin
+Menentukan izin untuk blob penyimpanan. Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus). 
 
 ```yaml
 Type: System.String
@@ -225,11 +225,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+* HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.WindowsAz.Storage.SharedAccessProtocol]
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu validnya tanda tangan akses bersama.
+Menentukan waktu ketika tanda tangan akses bersama menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

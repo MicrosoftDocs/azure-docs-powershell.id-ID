@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/get-azurermdeploymentmanagerservice
 schema: 2.0.0
 ms.openlocfilehash: 4a91c2f8fdda1d2cda7c75f0cf7cfab165701f3d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429290"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930867"
 ---
 # Get-AzureRmDeploymentManagerService
 
@@ -49,9 +49,9 @@ Get-AzureRmDeploymentManagerService [-Service] <PSServiceResource> [-DefaultProf
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmDeploymentManagerService** mendapatkan layanan di bawah topologi layanan, dan mengembalikan objek yang mewakili layanan tersebut.
-Tentukan layanan berdasarkan namanya, topologi layanan yang ada di dalamnya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek Layanan atau ResourceId.
+Tentukan layanan berdasarkan namanya, topologi layanan di dalamnya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Layanan atau ResourceId.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzureRmDeploymentManagerService cmdlet.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzureRmDeploymentManagerService.
 
 ## EXAMPLES
 
@@ -60,21 +60,21 @@ Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layan
 PS C:\> Get-AzureRmDeploymentManagerService -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -Name ContosoService1
 ```
 
-Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
 ### Contoh 2: Dapatkan layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerService -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology/services/ContosoService1"
 ```
 
-Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan layanan bernama ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 3: Get a service using the service object.
+### Contoh 3: Dapatkan layanan menggunakan objek layanan.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerService -Service $serviceObject
 ```
 
-Perintah ini akan mendapatkan layanan dengan nama, nama topologi layanan, dan ResourceGroup yang sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName dari $serviceObject, masing-masing.
+Perintah ini mendapatkan layanan yang namanya, nama topologi layanan dan ResourceGroup masing-masing cocok dengan properti Name, ServiceTopologyName dan ResourceGroupName $serviceObject.
 
 ## PARAMETERS
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopology
-Objek topologi layanan tempat layanan akan dibuat.
+Objek topologi layanan tempat layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
@@ -199,11 +199,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmDeploymentManagerService](./New-AzureRmDeploymentManagerService.md)
 
-[Remove-AzureRmDeploymentManagerService](./Remove-AzureRmDeploymentManagerService.md)
+[Hapus-AzureRmDeploymentManagerService](./Remove-AzureRmDeploymentManagerService.md)
 
 [Set-AzureRmDeploymentManagerService](./Set-AzureRmDeploymentManagerService.md)

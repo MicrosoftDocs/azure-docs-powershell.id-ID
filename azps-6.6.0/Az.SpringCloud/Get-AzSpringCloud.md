@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloud.md
 ms.openlocfilehash: 144595c5035f27a0f151f4d267712b155f181041
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968225"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142120643"
 ---
 # Get-AzSpringCloud
 
@@ -18,7 +18,7 @@ ms.locfileid: "139968225"
 Dapatkan Layanan dan propertinya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.springcloud/get-azspringcloud) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/get-azspringcloud) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Dapatkan Layanan dan propertinya.
 Get-AzSpringCloud [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzSpringCloud -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -49,7 +49,7 @@ Dapatkan Layanan dan propertinya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Musim Semi Cloud Service menurut nama
+### Contoh 1: Dapatkan Spring Cloud Service menurut nama
 ```powershell
 PS C:\> Get-AzSpringCloud -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service
 ConfigServerPropertiesErrorCode                  :
@@ -97,9 +97,9 @@ Trace                                            : Microsoft.Azure.PowerShell.Cm
 TraceError                                       : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.Error
 ```
 
-Dapatkan Layanan Musim Semi Cloud menurut nama
+Dapatkan Spring Cloud Service berdasarkan nama
 
-### Contoh 2: Daftar semua layanan musim semi awan di bawah grup sumber daya.
+### Contoh 2: Cantumkan semua layanan cloud musim semi di bawah grup sumber daya.
 ```powershell
 PS C:\> Get-AzSpringCloud -ResourceGroupName spring-cloud-rg
 Location Name                Type
@@ -107,7 +107,7 @@ Location Name                Type
 eastus   spring-cloud-rg Microsoft.AppPlatform/Spring
 ```
 
-List all the spring cloud service under the resource group.
+Cantumkan semua layanan awan musim semi di bawah grup sumber daya.
 
 ## PARAMETERS
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Sumber daya layanan.
+Nama sumber daya Layanan.
 
 ```yaml
 Type: System.String
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -189,11 +189,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ICloudCloudIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
 
 ## OUTPUTS
 
@@ -210,15 +210,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
-  - `[BindingName <String>]`: Nama sumber daya pengikatan.
+  - `[BindingName <String>]`: Nama sumber daya Pengikat.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.
   - `[DeploymentName <String>]`: Nama sumber daya Penyebaran.
   - `[DomainName <String>]`: Nama sumber daya domain kustom.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: kawasan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[ServiceName <String>]`: Nama Sumber daya Layanan.
-  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[ServiceName <String>]`: Nama sumber daya Layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

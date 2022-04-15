@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccount.md
 ms.openlocfilehash: 66c6104548cdc54f19b30598b264ae9d9659bbcd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336327"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960999"
 ---
 # New-AzCognitiveServicesAccount
 
 ## SYNOPSIS
-Membuat akun Layanan Kognitif.
+Membuat akun Cognitive Services.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-AzCognitiveServicesAccount [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCognitiveServicesAccount** membuat akun Layanan Kognitif dengan tipe dan SKU yang ditentukan.
+Cmdlet **New-AzCognitiveServicesAccount** membuat akun Cognitive Services dengan tipe dan SKU yang ditentukan.
 
 ## EXAMPLES
 
@@ -74,7 +74,7 @@ Tags              :
 ## PARAMETERS
 
 ### -AllowedFqdnList
-Daftar FQDN yang Diperbolehkan.
+Daftar FQDN yang Diizinkan.
 
 ```yaml
 Type: System.String[]
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiProperty
-ApiProperties dari Akun Layanan Kognitif. Diperlukan oleh tipe akun tertentu.
+ApiProperties dari Akun Layanan Kognitif. Diperlukan berdasarkan tipe akun tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Management.CognitiveServices.Models.CognitiveServicesAccountApiProperties
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas Akun Layanan Kognitif baru untuk akun penyimpanan ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan Identitas Akun Layanan Kognitif baru untuk akun penyimpanan ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -CognitiveServicesEncryption
-Apakah akan menetapkan Kunci Enkripsi Akun Layanan Kognitif ke Microsoft.CognitiveServices atau tidak.
+Apakah mengatur Kunci Enkripsi Akun Layanan KognitifSource ke Microsoft.CognitiveServices atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -178,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Atur tipe Identitas Akun Layanan Kognitif yang baru, idenetity digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Atur tipe Identitas Akun Layanan Kognitif yang baru, idenetitas digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.CognitiveServices.Models.IdentityType]
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Kunci enkripsi Akun Layanan KognitifSource KeyVault KeyName
+Kunci enkripsi Akun Cognitive ServicesSource KeyVault KeyName
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultEncryption
-Apakah akan mengatur kunci enkripsi Akun Layanan KognitifSource ke Microsoft.KeyVault atau tidak. Jika Anda menentukan KeyName, KeyVersion dan KeyVaultUri, Cognitive Services Account Encryption KeySource juga akan diatur ke Microsoft.KeyVault parameter ini diatur atau tidak.
+Apakah mengatur kunci enkripsi Akun Layanan KognitifSource ke Microsoft.KeyVault atau tidak. Jika Anda menentukan KeyName, KeyVersion dan KeyVaultUri, Cognitive Services Account Encryption KeySource juga akan diatur ke Microsoft.KeyVault cuaca parameter ini diatur atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultIdentityClientId
-Set IdentityClientId untuk mengakses Azure KeyVault dari Enkripsi Akun Layanan Kognitif.
+Atur IdentityClientId untuk mengakses Azure KeyVault dari Enkripsi Akun Layanan Kognitif.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Kunci enkripsi Akun Layanan KognitifSource KeyVaultVaultUri
+Kunci enkripsi Akun Cognitive ServicesSource KeyVault KeyVaultUri
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Kunci enkripsi Akun Layanan KognitifSource KeyVaultVersion
+Kunci enkripsi Akun Cognitive ServicesSource KeyVault KeyVersion
 
 ```yaml
 Type: System.String
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun.
+Menentukan nama untuk akun tersebut.
 
 ```yaml
 Type: System.String
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-NetworkRuleSet digunakan untuk menetapkan serangkaian aturan konfigurasi untuk firewall dan jaringan virtual, serta untuk mengatur nilai untuk properti jaringan seperti cara menangani permintaan yang tidak cocok dengan aturan yang ditentukan
+NetworkRuleSet digunakan untuk menentukan sekumpulan aturan konfigurasi untuk firewall dan jaringan virtual, serta untuk mengatur nilai untuk properti jaringan seperti cara menangani permintaan yang tidak cocok dengan aturan yang ditentukan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSNetworkRuleSet
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk menetapkan akun.
+Menentukan nama grup sumber daya tempat untuk menetapkan akun.
 Grup sumber daya harus sudah ada.
 
 ```yaml
@@ -384,7 +384,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - S1
 - S2
 - S3
-- S4 Untuk informasi selengkapnya, [lihat API Layanan Kognitif](https://www.microsoft.com/cognitive-services/en-us/apis).
+- S4 Untuk informasi selengkapnya, lihat [API Cognitive Service](https://www.microsoft.com/cognitive-services/en-us/apis).
 
 ```yaml
 Type: System.String
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Daftar Akun Storage Pengguna.
+Daftar Akun Storage yang Dimiliki Pengguna.
 
 ```yaml
 Type: System.String[]
@@ -444,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-Atur id sumber daya untuk Identitas yang ditetapkan pengguna Akun Layanan Kognitif yang baru, identitas akan digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Atur id sumber daya untuk pengguna Akun Layanan Kognitif baru yang ditetapkan Identitas, identitas akan digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.String[]
@@ -459,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -490,7 +490,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -506,6 +506,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzCognitiveServicesAccount](./Get-AzCognitiveServicesAccount.md)
 
-[Remove-AzCognitiveServicesAccount](./Remove-AzCognitiveServicesAccount.md)
+[Hapus-AzCognitiveServicesAccount](./Remove-AzCognitiveServicesAccount.md)
 
 [Set-AzCognitiveServicesAccount](./Set-AzCognitiveServicesAccount.md)

@@ -5,11 +5,11 @@ ms.assetid: 25E0F0E9-BF8C-49DF-87BA-31E2103A29A9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/new-azurekeyvaultcertificatepolicy
 schema: 2.0.0
 ms.openlocfilehash: b10dd0e034db53af35c930ce1c4588dee2576c75
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421986"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141972011"
 ---
 # New-AzureKeyVaultCertificatePolicy
 
@@ -40,12 +40,12 @@ Cmdlet **New-AzureKeyVaultCertificatePolicy** membuat objek kebijakan sertifikat
 PS C:\>New-AzureKeyVaultCertificatePolicy -SecretContentType "application/x-pkcs12" -SubjectName "CN=contoso.com" -IssuerName "Self" -ValidityInMonths 6 -ReuseKeyOnRenewal
 ```
 
-Perintah ini membuat kebijakan sertifikat yang valid selama enam bulan dan menggunakan kembali kunci untuk memperbarui sertifikat.
+Perintah ini membuat kebijakan sertifikat yang berlaku selama enam bulan dan menggunakan kembali kunci untuk memperpanjang sertifikat.
 
 ## PARAMETERS
 
 ### -CertificateType
-Menentukan tipe sertifikat untuk penerbit.
+Menentukan tipe sertifikat kepada penerbit.
 
 ```yaml
 Type: String
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dinonaktifkan
+### -Nonaktif
 Menunjukkan bahwa kebijakan sertifikat dinonaktifkan.
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ekus
-Menentukan penggunaan tombol (EKU) yang disempurnakan dalam sertifikat.
+Menentukan penggunaan kunci yang disempurnakan (EKUs) dalam sertifikat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAtNumberOfDaysBeforeExpiry
-Menentukan berapa hari sebelum proses pemberitahuan otomatis dimulai.
+Menentukan berapa hari sebelum proses pemberitahuan otomatis kedaluwarsa dimulai.
 
 ```yaml
 Type: Int32
@@ -149,7 +149,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -IssuerName
+### -NamaPengguna
 Menentukan nama penerbit untuk sertifikat.
 
 ```yaml
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyNotExportable
-Menunjukkan bahwa kunci tersebut tidak dapat diekspor.
+Menunjukkan bahwa kunci tidak dapat diekspor.
 
 ```yaml
 Type: SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci dari kunci yang mengembalikan sertifikat.
+Menentukan tipe kunci kunci yang mengembalikan sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - RSA
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReuseKeyOnRenewal
-Menunjukkan bahwa sertifikat menggunakan kembali kunci tersebut selama perpanjangan.
+Menunjukkan bahwa sertifikat menggunakan kembali kunci selama perpanjangan.
 
 ```yaml
 Type: SwitchParameter
@@ -260,10 +260,10 @@ Accept wildcard characters: False
 ```
 
 ### -SecretContentType
-Menentukan tipe konten rahasia vault kunci yang baru.
+Menentukan tipe konten rahasia kubah kunci baru.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- application/x-pkcs12
+- aplikasi/x-pkcs12
 - application/x-pem-file
 
 ```yaml
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

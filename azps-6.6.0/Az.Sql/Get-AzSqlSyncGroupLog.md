@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroupLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroupLog.md
 ms.openlocfilehash: be78c8e55bd2114012c90e7bbf70a04f77593843
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139967865"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141858380"
 ---
 # Get-AzSqlSyncGroupLog
 
 ## SYNOPSIS
-Mengembalikan log grup Azure SQL Database Disinkronkan.
+Mengembalikan log grup sinkronisasi Azure SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlsyncgrouplog) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncgrouplog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Get-AzSqlSyncGroupLog [-SyncGroupName] <String> -StartTime <DateTime> [-EndTime 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlSyncGroupLog** mengembalikan log grup Azure SQL Database Sinkronisasi.
+Cmdlet **Get-AzSqlSyncGroupLog** mengembalikan log grup sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan log Grup Sinkronisasi Azure SQL
+### Contoh 1: Mendapatkan log grup sinkronisasi Azure SQL
 ```
 PS C:\>Get-AzSqlSyncGroupLog -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -StartTime "9/16/2016 11:31:12" -EndTime "9/16/2016 12:31:00" -LogLevel "All"
 TimeStamp            LogLevel Details                                   Source
@@ -42,12 +42,12 @@ TimeStamp            LogLevel Details                                   Source
 6/13/2017 7:11:59 AM Success  Schema information obtained successfully. fangltest2.database.windows.net/fangltest
 ```
 
-Perintah ini mendapatkan log Grup Sinkronisasi Azure SQL otomatis.
+Perintah ini mendapatkan log Grup Sinkronisasi Azure SQL.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -LogLevel
-Tipe log ke kueri.
-Nilai valid adalah: 'Kesalahan', 'Peringatan', 'Keberhasilan' dan 'Semua'.
+Tipe log yang akan dikueri.
+Nilai yang valid adalah: 'Kesalahan', 'Peringatan', 'Sukses' dan 'Semua'.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

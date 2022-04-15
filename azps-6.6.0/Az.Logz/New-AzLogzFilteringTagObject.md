@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzFilteringTagObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzFilteringTagObject.md
 ms.openlocfilehash: 037f10b70bdd89f293df374e471a3b214d1aca9a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076689"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142048511"
 ---
 # New-AzLogzFilteringTagObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140076689"
 Membuat objek dalam memori untuk FilteringTag
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/new-azlogzfilteringtagobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzfilteringtagobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Membuat objek dalam memori untuk FilteringTag
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek dalam memori untuk FilteringTag masuk ke parameter LogRuleFilteringTag saat membuat aturan tag untuk sumber daya monitor
+### Contoh 1: Membuat objek dalam memori untuk FilteringTag masuk ke parameter LogRuleFilteringTag saat membuat aturan tage untuk sumber daya monitor
 ```powershell
 PS C:\> $filter = New-AzLogzFilteringTagObject -Action 'Include' -Name 'Env' -Value "Prod"
 PS C:\> New-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -LogRuleFilteringTag $filter
@@ -41,13 +41,13 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini membuat objek dalam memori untuk pass FilteringTag ke parameter LogRuleFilteringTag saat membuat aturan tag untuk sumber daya monitor.
+Perintah ini membuat objek dalam memori untuk filteringTag masuk ke parameter LogRuleFilteringTag saat membuat aturan tage untuk sumber daya monitor.
 
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan yang valid untuk tag pemfilteran.
-Pengecualian akan diprioritaskan atas pencakusan.
+Tindakan valid untuk tag pemfilteran.
+Pengecualian lebih diprioritaskan daripada penyertaan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Support.TagAction
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

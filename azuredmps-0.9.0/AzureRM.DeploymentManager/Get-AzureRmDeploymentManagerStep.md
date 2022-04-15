@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.DeploymentManager.dll-Help.xml
 Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/get-azurermdeploymentmanagerstep
 schema: 2.0.0
-ms.openlocfilehash: 2d1e10c8a54e0ee9da0aaec03833becdd6478c48da9ca802b65d8d1447903f1b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bd17ee5dd653ee66daf014c57661b3787c04b06f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416154"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930921"
 ---
 # Get-AzureRmDeploymentManagerStep
 
 ## SYNOPSIS
-Mendapatkan langkah penggunaan.
+Mendapatkan langkah penyebaran.
 
 ## SYNTAX
 
@@ -37,9 +37,9 @@ Get-AzureRmDeploymentManagerStep [-Step] <PSStepResource> [-DefaultProfile <IAzu
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmDeploymentManagerStep** mendapatkan langkah, dan mengembalikan objek yang mewakili langkah tersebut.
-Tentukan langkah berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Langkah atau ResourceId.
+Tentukan langkah menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda bisa menyediakan objek Langkah atau ResourceId.
 
-Anda bisa mengubah objek ini secara lokal, lalu menerapkan perubahan ke sumber artifak dengan menggunakan cmdlet Set-AzureRmDeploymentManagerStep.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke sumber artefak menggunakan cmdlet Set-AzureRmDeploymentManagerStep.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Perintah ini mendapatkan langkah bernama ContosoService1WaitStep di ContosoResou
 PS C:\> Get-AzureRmDeploymentManagerStep -Step $stepObject
 ```
 
- Perintah ini mendapatkan langkah yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $stepObject, secara berurutan.
+ Perintah ini mendapatkan langkah yang namanya dan ResourceGroup masing-masing cocok dengan properti Name and ResourceGroupName dari $stepObject.
 
 
 ## PARAMETERS
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

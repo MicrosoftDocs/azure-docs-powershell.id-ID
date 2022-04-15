@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/remove-azurermdeploymentmanagerrollout
 schema: 2.0.0
 ms.openlocfilehash: f329468dce9c520eb647bb0d927ba91de64a5c33
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429018"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930770"
 ---
 # Remove-AzureRmDeploymentManagerRollout
 
@@ -36,8 +36,8 @@ Remove-AzureRmDeploymentManagerRollout [-Rollout] <PSRollout> [-Force] [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmDeploymentManagerRollout** menghapus peluncuran di status terminal.
-Tentukan peluncuran berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Rollout atau ResourceId.
+Cmdlet **Remove-AzureRmDeploymentManagerRollout** menghapus peluncuran dalam status terminal.
+Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
 
 ## EXAMPLES
 
@@ -55,12 +55,12 @@ PS C:\> Remove-AzureRmDeploymentManagerRollout -ResourceId "/subscriptions/subsc
 
 Perintah ini menghapus peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Menghapus peluncuran menggunakan objek rollout.
+### Contoh 3: Menghapus peluncuran menggunakan objek peluncuran.
 ```powershell
 PS C:\> Remove-AzureRmDeploymentManagerRollout -Rollout $rolloutObject
 ```
 
-Perintah ini menghapus peluncuran yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $rolloutObject grup.
+Perintah ini menghapus peluncuran yang nama dan ResourceGroupnya masing-masing cocok dengan properti Name dan ResourceGroupName $rolloutObject.
 
 ## PARAMETERS
 
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rollout
+### -Peluncuran
 Sumber daya yang akan dihapus.
 
 ```yaml
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,4 +219,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmDeploymentManagerRollout](./Stop-AzureRmDeploymentManagerRollout.md)
 
-[Restart-AzureRmDeploymentManagerRollout](./Restart-AzureRmDeploymentManagerRollout.md)
+[Mulai ulang-AzureRmDeploymentManagerRollout](./Restart-AzureRmDeploymentManagerRollout.md)

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerTrustGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerTrustGroup.md
 ms.openlocfilehash: dec4fab4762da44d5b56319419591c4c463991c4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142119869"
 ---
 # New-AzSqlServerTrustGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "140245303"
 Membuat atau memperbarui Grup Kepercayaan Server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlservertrustgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlservertrustgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-AzSqlServerTrustGroup [-ResourceGroupName] <String> [-Location] <String> [-N
 ```
 
 ## DESCRIPTION
-Membuat Grup Kepercayaan Server baru dengan lokasi, anggota, lingkup kepercayaan, nama dan grup sumber daya tertentu.
+Membuat Grup Kepercayaan Server baru dengan lokasi, anggota, lingkup kepercayaan, nama, dan grup sumber daya tertentu.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ PS C:\> $managedInstanceList += $mi
 PS C:\> New-AzSqlServerTrustGroup -ResourceGroupName "ResourceGroup03" -Location "West Europe" -Name "ServerTrustGroup01" -GroupMember $managedInstanceList -TrustScope "GlobalTransactions"
 ```
 
-Membuat Grup Kepercayaan Server di lokasi Eropa Barat dengan nama ServerTrustGroup01. Anggotanya adalah Managed Instances ManagedInstance01 dan ManagedInstance02 AzureSQL. Lingkup kepercayaannya adalah Transaksi Global dan grup sumber dayanya adalah ResourceGroup03.
+Membuat Grup Kepercayaan Server baru di lokasi Eropa Barat dengan nama ServerTrustGroup01. Anggotanya adalah AzureSQL Managed Instances ManagedInstance01 dan ManagedInstance02. Lingkup kepercayaannya adalah GlobalTransactions dan grup sumber dayanya adalah ResourceGroup03.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +62,7 @@ PS C:\> $mi2 = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGrou
 PS C:\> New-AzSqlServerTrustGroup -ResourceGroupName "ResourceGroup03" -Location "West Europe" -Name "ServerTrustGroup01" -GroupMemberResourceId $mi1,$mi2 -TrustScope "GlobalTransactions"
 ```
 
-Membuat Grup Kepercayaan Server di lokasi Eropa Barat dengan nama ServerTrustGroup01. Anggotanya adalah Managed Instances ManagedInstance01 dan ManagedInstance02 AzureSQL, yang diberikan oleh id Sumber Dayanya. Lingkup kepercayaannya adalah Transaksi Global dan grup sumber dayanya adalah ResourceGroup03.
+Membuat Grup Kepercayaan Server baru di lokasi Eropa Barat dengan nama ServerTrustGroup01. Anggotanya adalah AzureSQL Managed Instances ManagedInstance01 dan ManagedInstance02, yang diberikan oleh id Sumber Dayanya. Lingkup kepercayaannya adalah GlobalTransactions dan grup sumber dayanya adalah ResourceGroup03.
 
 ## PARAMETERS
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustScope
-Lingkup kepercayaan Dari Grup Kepercayaan Server untuk dibuat.
+Lingkup kepercayaan Grup Kepercayaan Server untuk dibuat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,11 +202,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

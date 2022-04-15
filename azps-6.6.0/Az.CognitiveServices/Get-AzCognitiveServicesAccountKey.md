@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountKey.md
 ms.openlocfilehash: 5642cc1fd7d510dbdf164812b8d3bb5d526e8d41
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079659"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142129247"
 ---
 # Get-AzCognitiveServicesAccountKey
 
@@ -19,7 +19,7 @@ ms.locfileid: "140079659"
 Mendapatkan kunci API untuk akun.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,9 +29,9 @@ Get-AzCognitiveServicesAccountKey [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCognitiveServicesAccountKey** mendapatkan kunci API untuk akun Layanan Kognitif yang disediakan.
-Akun Layanan Kognitif memiliki dua kunci API: Key1 dan Key2.
-Tombol mengaktifkan interaksi dengan titik akhir akun Layanan Kognitif.
+Cmdlet **Get-AzCognitiveServicesAccountKey** mendapatkan kunci API untuk akun Cognitive Services yang disediakan.
+Akun Cognitive Services memiliki dua kunci API: Key1 dan Key2.
+Kunci memungkinkan interaksi dengan titik akhir akun Cognitive Services.
 Gunakan New-AzCognitiveServicesAccountKey untuk meregenerasi kunci.
 
 ## EXAMPLES
@@ -48,7 +48,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama akun.
-Cmdlet ini akan mendapatkan kunci untuk akun ini.
+Cmdlet ini mendapatkan kunci untuk akun ini.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi tempat akun ditetapkan.
+Menentukan nama grup sumber daya tempat akun ditetapkan.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

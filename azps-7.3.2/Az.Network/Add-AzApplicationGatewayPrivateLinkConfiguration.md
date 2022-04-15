@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 6fa896e3855d9058b1f92834f6764d5c06e850b1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8c43b11d97f102e6f773611054861914d36c043c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008041"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032689"
 ---
 # Add-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Menambahkan konfigurasi link privat ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Add-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayPrivateLinkConfiguration** menambahkan konfigurasi link privat ke gateway aplikasi.
+Cmdlet **Add-AzApplicationGatewayPrivateLinkConfiguration** menambahkan konfigurasi tautan pribadi ke gateway aplikasi.
 
 ## EXAMPLES
 
@@ -37,9 +40,9 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> $AppGw = Add-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway $AppGw -Name "privateLinkConfig01" -IpConfiguration $PrivateLinkIpConfiguration
 ```
 
-Perintah pertama membuat privateLinkIpConfiguration dan menyimpannya di $PrivateLinkIpConfiguration variabel.
-Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw lokal.
-Perintah ketiga menambahkan konfigurasi link privat bernama privateLinkConfig01, untuk gateway $AppGw
+Perintah pertama membuat privateLinkIpConfiguration dan menyimpannya dalam variabel $PrivateLinkIpConfiguration.
+Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah ketiga menambahkan konfigurasi link privat bernama privateLinkConfig01, untuk gateway di $AppGw
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

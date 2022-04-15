@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainMember.md
 ms.openlocfilehash: ba0d280a7be09e9cde40c0069d42ae7d2d37b1fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140486643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142090419"
 ---
 # New-AzBlockchainMember
 
 ## SYNOPSIS
-Buat anggota templat.
+Buat anggota blockchain.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/new-azblockchainmember) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/new-azblockchainmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ New-AzBlockchainMember -Name <String> -ResourceGroupName <String> [-Subscription
 ```
 
 ## DESCRIPTION
-Buat anggota templat.
+Buat anggota blockchain.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat anggota terbaru
+### Contoh 1: Buat anggota blockchain baru
 ```powershell
 PS C:\> $passwd = 'strongMemberAccountPassword@1' | ConvertTo-SecureString -AsPlainText -Force
 PS C:\> $csPasswd = 'strongConsortiumManagementPassword@1' | ConvertTo-SecureString -AsPlainText -Force
@@ -47,7 +47,7 @@ Location Name       Type
 eastus   dolauli002 Microsoft.Blockchain/blockchainMembers
 ```
 
-Perintah ini membuat anggota grup baru.
+Perintah ini menciptakan anggota blockchain baru.
 
 ## PARAMETERS
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Consortium
-Mendapatkan atau mengatur consortium untuk anggota premium.
+Mendapatkan atau mengatur konsorsium untuk anggota blockchain.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsortiumManagementAccountPassword
-Mengatur kata sandi akun manajemen consortium terkelola.
+Mengatur kata sandi akun manajemen konsorsium terkelola.
 
 ```yaml
 Type: System.Security.SecureString
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsortiumMemberDisplayName
-Mendapatkan nama tampilan anggota di consortium.
+Mendapatkan nama tampilan anggota dalam konsorsium.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsortiumRole
-Mendapatkan peran anggota di consortium.
+Mendapatkan peran anggota dalam konsorsium.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallRule
-Mendapatkan atau mengatur aturan firewall Untuk membuatnya, lihat bagian CATATAN untuk properti FIREWALLRULE dan membuat tabel hash.
+Mendapatkan atau mengatur aturan firewall Untuk membangun, lihat bagian CATATAN untuk properti FIREWALLRULE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IFirewallRule[]
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi GEO layanan premium.
+Lokasi GEO dari layanan blockchain.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama anggota Blokir.
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Mengatur kata sandi auth dasar anggota pengguna utama.
+Mengatur kata sandi auth dasar anggota blockchain.
 
 ```yaml
 Type: System.Security.SecureString
@@ -216,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Mendapatkan atau mengatur protokol protocol.
+### -Protokol
+Mendapatkan atau mengatur protokol blockchain.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Support.BlockchainProtocol
@@ -232,8 +232,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Mendapatkan atau mengatur tingkatan Sku
+Mendapatkan atau mengatur tingkat Sku
 
 ```yaml
 Type: System.String
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag layanan yang merupakan daftar pasangan nilai kunci yang menjelaskan sumber daya tersebut.
+Tag layanan yang merupakan daftar pasangan nilai kunci yang menjelaskan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -355,13 +355,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.IBlockchainMember
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IBlockchainMember
 
 ## CATATAN
 
@@ -373,9 +373,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 FIREWALLRULE <IFirewallRule[]>: Mendapatkan atau mengatur aturan firewall
-  - `[EndIPAddress <String>]`: Mendapatkan atau mengatur alamat IP akhir dari rentang aturan firewall.
+  - `[EndIPAddress <String>]`: Mendapatkan atau mengatur alamat IP akhir rentang aturan firewall.
   - `[RuleName <String>]`: Mendapatkan atau mengatur nama aturan firewall.
-  - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP awal dari rentang aturan firewall.
+  - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP mulai rentang aturan firewall.
 
 ## RELATED LINKS
 

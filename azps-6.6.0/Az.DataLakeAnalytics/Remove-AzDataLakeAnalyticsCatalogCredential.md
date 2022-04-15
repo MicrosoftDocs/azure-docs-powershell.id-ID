@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogCredential.md
 ms.openlocfilehash: 1fc2690bd9e2fad467ae21e7f484c6a0e8bd6f28
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077589"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142052705"
 ---
 # Remove-AzDataLakeAnalyticsCatalogCredential
 
@@ -19,7 +19,7 @@ ms.locfileid: "140077589"
 Menghapus kredensial Azure Data Lake Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscatalogcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscatalogcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,23 +30,23 @@ Remove-AzDataLakeAnalyticsCatalogCredential [-Account] <String> [-DatabaseName] 
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzDataLakeAnalyticsCatalogCredential baru menghapus kredensial katalog Azure Data Lake Analytics.
+Cmdlet Remove-AzDataLakeAnalyticsCatalogCredential menghapus kredensial katalog Azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kredensial
+### Contoh 1: Menghapus kredensial
 ```
 PS C:\> Remove-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdla" `
                       -DatabaseName "DatabaseName" `
                       -Name "CredName"
 ```
 
-Perintah ini menghapus kredensial katalog Analitik Danau Data tertentu.
+Perintah ini menghapus kredensial katalog Data Lake Analytics yang ditentukan.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -90,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,8 +121,8 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini tidak menunggu operasi selesai.
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Menunjukkan bahwa cmdlet ini tidak menunggu operasi selesai.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 
 ### -Password
 Kata sandi untuk kredensial.
-Ini diperlukan jika penelepon bukan pemilik akun.
+Hal ini diperlukan jika penelepon bukan pemilik akun.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -153,8 +153,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
-Menunjukkan bahwa operasi penghapusan ini harus masuk dan juga menghapus dan menghapus semua sumber daya yang bergantung pada kredensial ini.
+### -Berulang
+Menunjukkan bahwa operasi penghapusan ini harus melalui dan juga menghapus dan menjatuhkan semua sumber daya bergantung pada kredensial ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

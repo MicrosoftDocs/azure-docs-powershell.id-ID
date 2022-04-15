@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareAddon.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareAddon.md
 ms.openlocfilehash: 7bc2a8a5d7e3774ce017c6c515e9e970406d079e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140497983"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141944961"
 ---
 # Get-AzVMwareAddon
 
 ## SYNOPSIS
-Mendapatkan add-on berdasarkan nama di awan pribadi
+Mendapatkan add-on menurut nama di awan pribadi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/get-azvmwareaddon) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/get-azvmwareaddon) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzVMwareAddon -PrivateCloudName <String> -ResourceGroupName <String> [-Subsc
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzVMwareAddon -AddonType <String> -PrivateCloudName <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -40,11 +40,11 @@ Get-AzVMwareAddon -InputObject <IVMwareIdentity> [-DefaultProfile <PSObject>] [<
 ```
 
 ## DESCRIPTION
-Mendapatkan add-on berdasarkan nama di awan pribadi
+Mendapatkan add-on menurut nama di awan pribadi
 
 ## EXAMPLES
 
-### Contoh 1: Addon daftar di bawah grup sumber daya
+### Contoh 1: Add-on daftar di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzVMwareAddon -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -54,9 +54,9 @@ srm  Microsoft.AVS/privateClouds/addons azps_test_group
 vr   Microsoft.AVS/privateClouds/addons azps_test_group
 ```
 
-Add-in daftar di bawah grup sumber daya
+Add-on daftar di bawah grup sumber daya
 
-### Contoh 2: Dapatkan addon berdasarkan nama di awan privat
+### Contoh 2: Dapatkan add-on menurut nama di awan pribadi
 ```powershell
 PS C:\> Get-AzVMwareAddon -AddonType vr -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -65,12 +65,12 @@ Name Type                               ResourceGroupName
 vr   Microsoft.AVS/privateClouds/addons azps_test_group
 ```
 
-Mendapatkan add-on berdasarkan nama di awan pribadi
+Mendapatkan add-on menurut nama di awan pribadi
 
 ## PARAMETERS
 
 ### -AddonType
-Nama add-on untuk awan privat
+Nama add-on untuk awan pribadi
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan privat
+Nama awan pribadi
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -181,29 +181,29 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
-  - `[AddonName <String>]`: Nama add-on untuk awan privat
+  - `[AddonName <String>]`: Nama add-on untuk awan pribadi
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
   - `[CloudLinkName <String>]`: Nama sumber daya tautan awan
-  - `[ClusterName <String>]`: Nama kluster di awan privat
-  - `[DatastoreName <String>]`: Nama datastore dalam kluster awan privat
-  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Secara umum sama seperti nama tampilan DHCP
-  - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Secara umum sama seperti nama tampilan Layanan DNS
-  - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Secara umum sama seperti nama tampilan Zona DNS
-  - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Secara umum sama seperti nama tampilan Gateway
-  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan privat
-  - `[HcxEnterpriseSiteName <String>]`: Nama Situs ENTERPRISE PORTALX di awan pribadi
+  - `[ClusterName <String>]`: Nama kluster di cloud pribadi
+  - `[DatastoreName <String>]`: Nama datastore di kluster cloud privat
+  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Umumnya sama dengan nama tampilan DHCP
+  - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Umumnya sama dengan nama tampilan Layanan DNS
+  - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Umumnya sama dengan nama tampilan Zona DNS
+  - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Umumnya sama dengan nama tampilan Gateway
+  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan pribadi
+  - `[HcxEnterpriseSiteName <String>]`: Nama Situs HCX Enterprise di awan pribadi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Azure kawasan
-  - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Biasanya sama seperti nama tampilan Pencerminan Port
-  - `[PrivateCloudName <String>]`: Nama awan privat
-  - `[PublicIPId <String>]`: Pengidentifikasi Blokir IP Publik NSX. Secara umum sama seperti nama tampilan Blok IP Publik
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan privat
-  - `[ScriptExecutionName <String>]`: Nama sumber daya eksekusi skrip yang diminta pengguna
-  - `[ScriptPackageName <String>]`: Nama paket skrip di awan privat
-  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Biasanya sama seperti nama tampilan Segmen
+  - `[Location <String>]`: Kawasan Azure
+  - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
+  - `[PrivateCloudName <String>]`: Nama awan pribadi
+  - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan pribadi
+  - `[ScriptExecutionName <String>]`: Nama sumber eksekusi skrip yang diminta pengguna
+  - `[ScriptPackageName <String>]`: Nama paket skrip di awan pribadi
+  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segmen
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VMGroupId <String>]`: Pengidentifikasi NSX VM Group. Biasanya sama seperti nama tampilan VM Group
+  - `[VMGroupId <String>]`: Pengidentifikasi Grup VM NSX. Umumnya sama dengan nama tampilan Grup VM
   - `[VirtualMachineId <String>]`: Pengidentifikasi Mesin Virtual
 
 ## RELATED LINKS

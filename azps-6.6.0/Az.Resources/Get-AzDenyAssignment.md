@@ -6,21 +6,21 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
 ms.openlocfilehash: 2ba3a917686ad7666c6b8729201cbcc50c4f5300
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140460443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141949208"
 ---
 # Get-AzDenyAssignment
 
 ## SYNOPSIS
 Mencantumkan Azure RBAC menolak penetapan pada lingkup yang ditentukan.
-Secara default, daftar tersebut mencantumkan semua penugasan dalam langganan Azure yang dipilih.
-Gunakan parameter terkait untuk mencantumkan tolak penetapan kepada pengguna tertentu, atau untuk mencantumkan tolak penetapan pada grup atau sumber daya sumber daya tertentu.
+Secara default mencantumkan semua penolakan tugas dalam langganan Azure yang dipilih.
+Gunakan parameter masing-masing untuk mencantumkan penolakan tugas kepada pengguna tertentu, atau untuk mencantumkan penolakan tugas pada grup sumber daya atau sumber daya tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdenyassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdenyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzDenyAssignment -ObjectId <Guid> -ResourceGroupName <String> -ResourceName 
  [-ParentResource <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ScopeWithObjectIdParameterSet
+### LingkupWithObjectIdParameterSet
 ```
 Get-AzDenyAssignment -ObjectId <Guid> -Scope <String> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -66,7 +66,7 @@ Get-AzDenyAssignment -SignInName <String> -ResourceGroupName <String> -ResourceN
  [<CommonParameters>]
 ```
 
-### ScopeWithSignInNameParameterSet
+### LingkupWithSignInNameParameterSet
 ```
 Get-AzDenyAssignment -SignInName <String> -Scope <String> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -91,7 +91,7 @@ Get-AzDenyAssignment -ServicePrincipalName <String> -ResourceGroupName <String> 
  [<CommonParameters>]
 ```
 
-### ScopeWithSPNParameterSet
+### LingkupWithSPNParameterSet
 ```
 Get-AzDenyAssignment -ServicePrincipalName <String> -Scope <String> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -115,7 +115,7 @@ Get-AzDenyAssignment -ResourceGroupName <String> -ResourceName <String> -Resourc
  [-ParentResource <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ScopeParameterSet
+### LingkupParameterSet
 ```
 Get-AzDenyAssignment -Scope <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
@@ -133,30 +133,30 @@ Get-AzDenyAssignment [-Scope <String>] -DenyAssignmentName <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Gunakan perintah Get-AzDenyAssignment untuk mencantumkan semua penugasan yang efektif pada lingkup.
-Tanpa parameter apa pun, perintah ini mengembalikan semua penetapan penolakan yang dibuat di bawah langganan.
-Daftar ini bisa difilter menggunakan parameter pemfilteran untuk pokoknya, menolak nama dan lingkup penetapan.
-Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.
-Untuk menentukan grup keamanan, gunakan parameter Azure AD ObjectId.
+Gunakan perintah Get-AzDenyAssignment untuk mencantumkan semua penolakan tugas yang efektif pada lingkup.
+Tanpa parameter apa pun, perintah ini mengembalikan semua penolakan tugas yang dibuat di bawah langganan.
+Daftar ini dapat difilter menggunakan parameter pemfilteran untuk lingkup dan nama penetapan pokok.
+Untuk menentukan pengguna, gunakan SignInName atau parameter ObjectId Azure AD.
+Untuk menentukan grup keamanan, gunakan parameter ObjectId Azure AD.
 Dan untuk menentukan aplikasi Azure AD, gunakan parameter ServicePrincipalName atau ObjectId.
-Lingkup di mana akses sedang ditolak mungkin ditentukan.
-Pengaturan defaultnya adalah langganan yang dipilih.
-Lingkup penetapan tolak bisa ditentukan menggunakan salah satu kombinasi parameter berikut ini.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/\<subscriptionId\>.
-Ini akan memfilter untuk menolak penetapan yang efektif pada lingkup tertentu itu misalnya, semua menolak penetapan dalam lingkup tersebut dan di atasnya.
-b.
+Lingkup di mana akses ditolak mungkin ditentukan.
+Ini secara default ke langganan yang dipilih.
+Lingkup penolakan penetapan dapat ditentukan menggunakan salah satu kombinasi parameter berikut ini a.
+Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\>.
+Ini akan memfilter penolakan tugas yang efektif pada lingkup tersebut, yaitu semua menolak tugas pada lingkup tersebut ke atas.
+B.
 ResourceGroupName - Nama grup sumber daya apa pun di bawah langganan.
-Ini akan memfilter penetapan yang efektif pada grup sumber daya yang ditentukan misalnya, semua menolak penetapan pada lingkup dan yang lebih tinggi.
-c.
-ResourceName, ResourceType, ResourceGroupName, dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu di bawah langganan dan akan memfilter tolak penetapan yang efektif pada lingkup sumber daya tersebut.
-Untuk menentukan akses yang ditolak bagi pengguna tertentu dalam langganan, gunakan tombol ExpandPrincipalGroups.
-Ini akan mencantumkan semua penugasan yang ditetapkan kepada pengguna, dan ke grup di bawah pengguna menjadi anggotanya.
+Tindakan ini akan memfilter penetapan yang efektif pada grup sumber daya yang ditentukan, misalnya semua menolak tugas pada lingkup tersebut ke atas.
+C.
+ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu dalam langganan dan akan memfilter penolakan tugas yang efektif pada lingkup sumber daya tersebut.
+Untuk menentukan akses apa yang ditolak untuk pengguna tertentu dalam langganan, gunakan sakelar ExpandPrincipalGroups.
+Ini akan mencantumkan semua penolakan tugas yang ditetapkan kepada pengguna, dan ke grup tempat pengguna menjadi anggotanya.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Daftar semua menolak penetapan dalam langganan
+Mencantumkan semua penolakan tugas dalam langganan
 
 ```
 PS C:\> Get-AzDenyAssignment
@@ -205,7 +205,7 @@ IsSystemProtected       : True
 
 ### Contoh 2
 
-Mendapatkan semua tolak penetapan yang dibuat kepada pengguna john.doe@contoso.com pada lingkupRG dan di atasnya.
+Mendapatkan semua penolakan tugas yang dibuat untuk pengguna john.doe@contoso.com di testRG lingkup ke atas.
 
 ```
 PS C:\> Get-AzDenyAssignment -ResourceGroupName testRG -SignInName john.doe@contoso.com
@@ -251,7 +251,7 @@ IsSystemProtected       : True
 
 ### Contoh 3
 
-Mendapatkan semua penugasan dari prinsipal layanan yang ditentukan
+Mendapatkan semua penugasan pokok layanan yang ditentukan
 
 ```
 PS C:\> Get-AzDenyAssignment -ServicePrincipalName 'http://testapp1.com'
@@ -297,7 +297,7 @@ IsSystemProtected       : True
 
 ### Contoh 4
 
-Mendapatkan penolakan penetapan di lingkup situs web 'situs1'.
+Mendapatkan penolakan tugas di lingkup situs web 'site1'.
 
 ```
 PS C:\> Get-AzDenyAssignment -Scope '/subscriptions/96231a05-34ce-4eb4-aa6a-70759cbb5e83/resourcegroups/testRG/providers/Microsoft.Web/sites/site1'
@@ -344,7 +344,7 @@ IsSystemProtected       : True
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -DenyAssignmentName
-Nama penetapan tolak.
+Nama penolakan tugas.
 
 ```yaml
 Type: System.String
@@ -374,8 +374,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandPrincipalGroups
-Jika ditentukan, kembali tolak penetapan yang ditetapkan secara langsung kepada pengguna dan ke grup di mana pengguna adalah anggota (transitifly).
-Hanya didukung untuk prinsipal pengguna.
+Jika ditentukan, mengembalikan penolakan tugas yang ditetapkan secara langsung kepada pengguna dan ke grup di mana pengguna merupakan anggota (secara transitif).
+Didukung hanya untuk prinsipal pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Tolak id tugas.
+Tolak id penugasan.
 
 ```yaml
 Type: System.Guid
@@ -405,8 +405,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ObjectId Azure AD dari Prinsipal Pengguna, Grup atau Layanan.
-Filter semua menolak penetapan yang dilakukan pada pokok tertentu.
+ObjectId Azure AD Dari Prinsipal Pengguna, Grup, atau Layanan.
+Memfilter semua penolakan tugas yang dibuat untuk pokok yang ditentukan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -422,7 +422,7 @@ Accept wildcard characters: False
 
 ### -ParentResource
 Sumber daya induk dalam hierarki sumber daya yang ditentukan menggunakan parameter ResourceName.
-Harus digunakan bersama-sama dengan parameter ResourceGroupName, ResourceType, dan ResourceName.
+Harus digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName.
 
 ```yaml
 Type: System.String
@@ -438,8 +438,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Daftar menolak penetapan yang efektif pada grup sumber daya yang ditentukan.
-Saat digunakan dalam hubungannya dengan parameter ResourceName, ResourceType, dan ParentResource, daftar perintah menolak penetapan yang efektif pada sumber daya di dalam grup sumber daya.
+Daftar menolak penetapan yang efektif pada grup sumber daya tertentu.
+Ketika digunakan bersama dengan parameter ResourceName, ResourceType, dan ParentResource, daftar perintah menolak penetapan yang efektif pada sumber daya dalam grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -456,7 +456,7 @@ Accept wildcard characters: False
 ### -ResourceName
 Nama sumber daya.
 Misalnya storageaccountprod.
-Harus digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan (opsional)Tanda Kurung.
+Harus digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan (opsional)ParentResource.
 
 ```yaml
 Type: System.String
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ### -ResourceType
 Tipe sumber daya.
 Misalnya Microsoft.Network/virtualNetworks.
-Harus digunakan bersama-sama dengan ResourceGroupName, ResourceName, dan (opsional)Parameter ParentResource.
+Harus digunakan bersamaan dengan parameter ResourceGroupName, ResourceName, dan (opsional)ParentResource.
 
 ```yaml
 Type: System.String
@@ -491,8 +491,8 @@ Accept wildcard characters: False
 Lingkup penetapan peran.
 Dalam format URI relatif.
 Misalnya /subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG.
-Langganan harus dimulai dengan "/subscriptions/{id}".
-Perintah memfilter semua penetapan yang efektif pada lingkup tersebut.
+Ini harus dimulai dengan "/subscriptions/{id}".
+Perintah memfilter semua penolakan tugas yang efektif pada lingkup tersebut.
 
 ```yaml
 Type: System.String
@@ -519,8 +519,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-ServicePrincipalName prinsipal layanan.
-Filter semua menolak penetapan yang dilakukan pada aplikasi Azure AD yang ditentukan.
+ServicePrincipalName dari prinsipal layanan.
+Memfilter semua penolakan tugas yang dibuat pada aplikasi Azure AD yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -536,7 +536,7 @@ Accept wildcard characters: False
 
 ### -SignInName
 Alamat email atau nama utama pengguna pengguna.
-Filter semua menolak penetapan yang dibuat untuk pengguna tertentu.
+Memfilter semua penolakan tugas yang dibuat untuk pengguna tertentu.
 
 ```yaml
 Type: System.String
@@ -551,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -564,6 +564,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSDenyAssignment
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

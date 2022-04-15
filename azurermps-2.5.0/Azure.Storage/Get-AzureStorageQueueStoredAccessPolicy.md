@@ -5,16 +5,16 @@ ms.assetid: F1EC601C-3ADD-402A-A5F7-84A95D312187
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/get-azurestoragequeuestoredaccesspolicy
 schema: 2.0.0
 ms.openlocfilehash: 9ef4be8331c1de38789d25903db9e98f4e2d8cd1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930714"
 ---
 # Get-AzureStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan atau kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,23 +26,23 @@ Get-AzureStorageQueueStoredAccessPolicy [-Queue] <String> [[-Policy] <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorageQueueStoredAccessPolicy** mencantumkan kebijakan akses tersimpan atau kebijakan untuk antrean penyimpanan Azure.
+Cmdlet **Get-AzureStorageQueueStoredAccessPolicy** mencantumkan kebijakan atau kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan akses yang disimpan dalam antrean
+### Contoh 1: Dapatkan kebijakan akses yang disimpan dalam antrean
 ```
 PS C:\>Get-AzureStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy12"
 ```
 
-Perintah ini mendapatkan kebijakan akses yang bernama Policy12 dalam antrean penyimpanan yang bernama MyQueue.
+Perintah ini mendapatkan kebijakan akses bernama Policy12 dalam antrean penyimpanan bernama Antrean Saya.
 
-### Contoh 2: Mendapatkan semua kebijakan akses yang disimpan dalam antrean
+### Contoh 2: Dapatkan semua kebijakan akses yang disimpan dalam antrean
 ```
 PS C:\>Get-AzureStorageQueueStoredAccessPolicy -Queue "MyQueue"
 ```
 
-Perintah ini akan membuat semua kebijakan akses tersimpan dalam antrean yang bernama MyQueue.
+Perintah ini mendapatkan semua kebijakan akses yang disimpan dalam antrean bernama Antrean Saya.
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token Shared Access Signature (SAS) ini.
+Menentukan kebijakan akses yang disimpan, yang menyertakan izin untuk token Tanda Tangan Akses Bersama (SAS) ini.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -130,6 +130,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureStorageQueueStoredAccessPolicy](./Set-AzureStorageQueueStoredAccessPolicy.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 

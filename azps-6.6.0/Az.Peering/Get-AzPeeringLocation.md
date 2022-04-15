@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringLocation.md
 ms.openlocfilehash: 8457694fb703b348beb20209bddc60e3da3a1a4d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140306671"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141950685"
 ---
 # Get-AzPeeringLocation
 
@@ -18,7 +18,7 @@ ms.locfileid: "140306671"
 Dapatkan lokasi Peering yang ditawarkan oleh Microsoft
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeeringlocation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringlocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzPeeringLocation [-Kind] <String> [-PeeringLocation <String>] [-DirectPeeri
 ```
 
 ## DESCRIPTION
-Mendapatkan Fasilitas Peering di mana pengguna bisa terhubung dengan ARM.
+Mendapatkan Fasilitas Peering di mana pengguna dapat terhubung dengan ARM.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ BandwidthOffers       : {10Gbps, 100Gbps}
 #...More below
 ```
 
-Daftar lokasinya panjang. Mendapatkan semua Fasilitas Peering Langsung.
+Daftar lokasinya yang panjang. Mendapatkan semua Fasilitas Peering Langsung.
 
 ### Contoh 2
 ```powershell
@@ -83,7 +83,7 @@ FacilityIPv4Prefix    : 206.197.210.0/24
 FacilityIPv6Prefix    : 2606:7c80:3375:50::/64
 ```
 
-Dapatkan lokasi peering exchange untuk Bannerlu. 
+Mendapatkan lokasi peering exchange untuk Honolulu. 
 
 ### Contoh 3
 ```powershell
@@ -100,7 +100,7 @@ FacilityIPv4Prefix    : 91.210.16.0/22
 FacilityIPv6Prefix    : 2001:7f8:14::/64
 ```
 
-Mendapatkan lokasi peering penukaran untuk id peering memfasilitasi 71. 
+Mendapatkan lokasi peering exchange untuk fasilitas peering id 71. 
 
 ## PARAMETERS
 
@@ -134,8 +134,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
-Memperlihatkan semua sumber daya Peering berdasarkan Jenis.
+### -Jenis
+Memperlihatkan semua sumber daya Peering menurut Jenis.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringDbFacilityId
-ID PeeringDB.com Memfasilitasi
+ID Fasilitas PeeringDB.com
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -180,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

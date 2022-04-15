@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraCluster.md
-ms.openlocfilehash: e341e553f52ca541b06bc1438084717ad5e66454
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0d49ffebb1420e94a7a12f31d32fd1ad738cb41f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394906"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141941487"
 ---
 # Update-AzManagedCassandraCluster
 
 ## SYNOPSIS
-Memperbarui Azure Managed Instances yang sudah ada untuk kluster Apache Apache Apache.
+Perbarui Instans Terkelola Azure yang sudah ada untuk klaster Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Update-AzManagedCassandraCluster
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzManagedCass clusterCluster** mengubah kluster Cmdlet Cmdlet Kelola Kelola yang sudah ada.
+Cmdlet **Update-AzManagedCassandraCluster** mengubah kluster Cassandra terkelola yang sudah ada.
 
 ## EXAMPLES
 
@@ -99,7 +102,7 @@ PS C:\> $clusterResource | Update-AzManagedCassandraCluster `
 ## PARAMETERS
 
 ### -AuthenticationMethod
-Cara mengautentikasi klien, salah satu dari `Cassandra` (untuk autentikasi kata sandi), `Ldap` (untuk autentikasi LDAP/AD), `None` atau (untuk tidak memerlukan autentikasi).
+Cara mengautentikasi klien, salah satu dari `Cassandra` (untuk autentikasi kata sandi), `Ldap` (untuk autentikasi LDAP/AD), atau `None` (tanpa memerlukan autentikasi).
 
 ```yaml
 Type: System.String
@@ -112,8 +115,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -B arc arcVersion
-Versi Desktop mana yang akan dijalankan. Saat ini hanya 3,11 yang didukung.
+### -CassandraVersion
+Versi Cassandra mana yang akan dijalankan. Saat ini hanya 3.11 yang didukung.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificate
-Daftar sertifikat TLS untuk digunakan untuk mengautentikasi klien. Jika dihilangkan, semua koneksi klien masih tersambung dengan TLS, tetapi tidak diperlukan untuk menyediakan sertifikat klien yang valid. Jika ini disediakan, klien sebagian besar menyediakan sertifikat klien TLS yang valid untuk tersambung ke kluster.
+Daftar sertifikat TLS untuk digunakan untuk mengautentikasi klien. Jika ini dihilangkan, semua koneksi klien masih terhubung dengan TLS, tetapi tidak diharuskan untuk menyediakan sertifikat klien yang valid. Jika ini disediakan, klien paling banyak menyediakan sertifikat klien TLS yang valid untuk menyambungkan ke kluster.
 
 ```yaml
 Type: System.String[]
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalGossipCertificate
-Daftar sertifikat TLS tambahan yang dikelola kluster Tls akan digunakan untuk mengautentikasi gossip.
+Daftar sertifikat TLS tambahan yang akan digunakan kluster Cassandra yang dikelola untuk mengautentikasi gosip.
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalSeedNode
-Daftar alamat IP node awal eksternal untuk menjembatani kluster ini.
+Daftar alamat IP dari node benih eksternal untuk menjemput kluster ini.
 
 ```yaml
 Type: System.String[]
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk membuat kluster Premium yang dikelola di.
+Lokasi untuk membuat kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepairEnabled
-Jika true, managed Hosting akan menjalankan reaper untuk memperbaiki database secara teratur. Hal ini hanya akan dinonaktifkan untuk kluster hibrid yang menjalankan proses perbaikan mereka sendiri di luar Azure.
+Jika benar, Cassandra yang dikelola akan menjalankan reaper untuk memperbaiki database secara rutin. Ini seharusnya hanya dinonaktifkan untuk kluster hibrid yang menjalankan proses perbaikan mereka sendiri di luar Azure.
 
 ```yaml
 Type: System.Boolean
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtaf tag yang diatur pada sumber daya pusat data.
+Hashtable tag untuk diatur pada sumber daya pusat data.
 
 ```yaml
 Type: System.Hashtable
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeBetweenBackupInHours
-Jam antara membuat cadangan penuh kluster.
+Jam antara mengambil cadangan penuh dari kluster.
 
 ```yaml
 Type: System.Integer
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

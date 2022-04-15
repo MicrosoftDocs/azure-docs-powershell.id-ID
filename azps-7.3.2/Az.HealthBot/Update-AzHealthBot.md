@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Update-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Update-AzHealthBot.md
-ms.openlocfilehash: 8e122f1865a93f278a9ebffe11fbe66ac394bc6c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 745d879bdc70942fc2e442da386f57439dc910f0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372750"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141938175"
 ---
 # Update-AzHealthBot
 
 ## SYNOPSIS
 Patch a HealthBot.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.healthbot/update-azhealthbot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Patch a HealthBot.
 
 ## EXAMPLES
 
-### Contoh 1: perbarui HealthBot menurut Nama grup sumber daya dan Nama
+### Contoh 1: memperbarui HealthBot menurut Nama dan Nama Grup Sumber Daya
 ```powershell
 PS C:\> update-AzHealthBot -ResourceGroupName youriTest -Name yourihealthbot -Sku S1
 
@@ -45,9 +48,9 @@ Location Name           SystemDataCreatedAt SystemDataCreatedBy   SystemDataCrea
 eastus   yourihealthbot 2020/12/29 8:19:10  test@microsoft.com User                    2020/12/30 6:12:33       test@microsoft.com    User                         Microsoft.HealthBot/health…
 ```
 
-perbarui HealthBot menurut Nama grup sumber daya dan Nama
+perbarui HealthBot menurut Nama dan Nama Grup Sumber Daya
 
-### Contoh 2: perbarui HealthBot by InputObject
+### Contoh 2: memperbarui HealthBot dengan InputObject
 ```powershell
 PS C:\> $getHealth = Get-AzHealthBot -ResourceGroupName youriTest -Name yourihealthbot
 Update-AzHealthBot -InputObject $getHealth -Sku F0
@@ -57,7 +60,7 @@ Location Name           SystemDataCreatedAt SystemDataCreatedBy   SystemDataCrea
 eastus   yourihealthbot 2020/12/29 8:19:10  test@microsoft.com User                    2020/12/30 6:12:33       test@microsoft.com    User                         Microsoft.HealthBot/health…
 ```
 
-perbarui HealthBot by InputObject
+perbarui HealthBot dengan InputObject
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HealthBot.Models.IHealthBotIdentity
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -220,7 +223,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IHealthBotIdentity>: Parameter Identitas
   - `[BotName <String>]`: Nama sumber daya Bot.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup Sumber daya Bot dalam langganan pengguna.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya Bot dalam langganan pengguna.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 
 ## RELATED LINKS

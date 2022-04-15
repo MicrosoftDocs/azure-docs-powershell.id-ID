@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2DataFlowDebugSessionPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2DataFlowDebugSessionPackage.md
-ms.openlocfilehash: 896905d71046c2d2332bfbeb439b83a70c2201cf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e729b7018de63a3547101eda6ce273123c6af2ec
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386734"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141940919"
 ---
 # Add-AzDataFactoryV2DataFlowDebugSessionPackage
 
 ## SYNOPSIS
-Tambahkan sumber daya alur data dan dependensinya ke sesi debug aliran data tertentu.
+Tambahkan sumber daya alur data dan dependensinya ke dalam sesi debug alur data tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/add-azdatafactoryv2dataflowdebugsessionpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzDataFactoryV2DataFlowDebugSessionPackage [-PackageFile] <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Perintah ini melampirkan sumber daya aliran data dan dependensinya pada sesi debug tertentu Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
+Perintah ini melampirkan sumber daya alur data dan dependensinya ke sesi debug tertentu Urutan perintah PowerShell untuk alur kerja debug alur data harus:
 1. Start-AzDataFactoryV2DataFlowDebugSession
 1. Add-AzDataFactoryV2DataFlowDebugSessionPackage
 1. Invoke-AzDataFactoryV2DataFlowDebugSessionCommand (ulangi langkah ini untuk perintah/target yang berbeda, atau ulangi langkah 2-3 untuk mengubah file paket)
@@ -53,10 +56,10 @@ Perintah ini melampirkan sumber daya aliran data dan dependensinya pada sesi deb
 PS C:\WINDOWS\system32> Add-AzDataFactoryV2DataFlowDebugSessionPackage -ResourceGroupName adf -DataFactoryName WikiADF -PackageFile "D:\dataflowps\addpackage.json" -SessionId 550effe4-93a3-485c-8525-eaf25259efbd
 ```
 
-Tambahkan paket aliran data ke sesi debug "550effe4-93a3-485c-8525-eaf25259efbd" dari pabrik data "WikiADF".
-File Pakcage berisi sumber daya debug aliran data, daftar sumber daya debug set data, daftar sumber daya debug layanan tertaut, pengaturan debug, dan ID sesi. Misalnya:
+Tambahkan paket alur data ke sesi debug "550effe4-93a3-485c-8525-eaf25259efbd" pabrik data "WikiADF".
+File Pakcage berisi sumber daya debug aliran data, daftar dataset debug resouce, daftar sumber daya debug layanan tertaut, pengaturan debug dan ID sesi. Misalnya:
 
-{ "dataFlow": { "name": "dataflow5", "properties": { "type": "MappingDataFlow", "typeProperties": { "sources": [ { "dataset": { "referenceName": "DelimitedTextInput", "type": "DatasetReference" }, "name": "source1", "typeProperties": {} } ], "sinks": [], "transformations": [], "script": "\n\nsource(output(\n\t\t\tResourceAgencyNum sebagai string,\n\t\tPublicName sebagai string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1" } } }, "datasets": [ { "name":  "DelimitedTextInput", "properti": { "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" }, "annotations": [], "type": "DelimitedText", "typeProperties": { "location": { "type": "AzureBlobStorageLocation", "container": "20192019" }, "columnDelimiter": ",", "escapeChar": "\\", "firstRowAsHeader": true, "quoteChar": "\" " }, "schema": [ { "name": "ResourceAgencyNum", "type": "String" }, { "name": "PublicName", "type": "String" } ] }, "type": "Microsoft.DataFactory/factories/datasets" } ], "linkedServices": [ { "name": "AzureBlobStorage1", "type": "Microsoft.DataFactory/factories/linkedservices", "properties": { "annotations": [], "type": "AzureBlobStorage", "typeProperties": { "connectionString": "DefaultEndpointsProtocol=https; AccountName=name; AccountKey=key; Endpoint Halfix=core.windows.net" } } } ], "debugSettings": { "sourceSettings": [ { "sourceName": "source1", "rowLimit": 1000 } ] }, "sessionId": "4f988caf-e765-47d2-82cd-430334a6b135" }
+{ "dataFlow": { "name": "dataflow5", "properties": { "type": "MappingDataFlow", "typeProperties": { "sources": [ { "dataset": { "referenceName": "DelimitedTextInput", "type": "DatasetReference" }, "name": "source1", "typeProperties": {} } ], "sinks": [], "transformations": [], "script": "\n\nsource(output(\n\t\tResourceAgencyNum sebagai string,\n\t\tPublicName sebagai string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1" } } }, "data set": [ { "name":  "DipisahkanTextInput", "properti": { "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" }, "anotasi": [], "type": "DelimitedText", "typeProperties": { "location": { "type": "AzureBlobStorageLocation", "container": "20192019" }, "columnDelimiter": ",", "escapeChar": "\\", "firstRowAsHeader": true, "quoteChar": "\" " }, "skema": [ { "name": "ResourceAgencyNum", "type": "String" }, { "name": "PublicName", "type": "String" } ] }, "type": "Microsoft.DataFactory/factories/datasets" } ], "linkedServices": [ { "name": "AzureBlobStorage1", "type": "Microsoft.DataFactory/factories/linkedservices", "properties": { "annotations": [], "type": "AzureBlobStorage", "typeProperties": { "connectionString": "DefaultEndpointsProtocol=https; AccountName=name; AccountKey=key; EndpointSuffix=core.windows.net" } } }], "debugSettings": { "sourceSettings": [ { "sourceName": "source1", "rowLimit": 1000 } ] }, "sessionId": "4f988caf-e765-47d2-82cd-430334a6b135" }
 
 Parameter SessionID digunakan untuk mengganti properti sessionId yang sudah ada dalam file paket.
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil. Parameter ini bersifat opsional.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,14 +217,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
-[Start-AzDataFactoryV2DataFlowDeflowSession](./Start-AzDataFactoryV2DataFlowDebugSession.md)
+[Start-AzDataFactoryV2DataFlowDebugSession](./Start-AzDataFactoryV2DataFlowDebugSession.md)
 
-[Get-AzDataFactoryV2DataFlowDeflowSession](./Get-AzDataFactoryV2DataFlowDebugSession.md)
+[Get-AzDataFactoryV2DataFlowDebugSession](./Get-AzDataFactoryV2DataFlowDebugSession.md)
 
-[Invoke-AzDataFactoryV2DataFlowDeflowSessionCommand](./Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md)
+[Invoke-AzDataFactoryV2DataFlowDebugSessionCommand](./Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md)
 
-[Stop-AzDataFactoryV2DataFlowDeflowSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)
+[Stop-AzDataFactoryV2DataFlowDebugSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)

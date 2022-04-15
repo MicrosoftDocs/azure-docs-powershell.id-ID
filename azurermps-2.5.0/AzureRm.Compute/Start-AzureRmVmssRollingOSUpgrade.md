@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/start-azurermvmssrollingosupgrade
 schema: 2.0.0
-ms.openlocfilehash: d896bfa0e6c33abdb5494ea4b5a3d7082db2ee082a4865f6567bb7afb4019aa5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7f1cd0680d42ab83ec797b675e4505515a90548e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853484"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929444"
 ---
 # Start-AzureRmVmssRollingOSUpgrade
 
 ## SYNOPSIS
-Memulai pemutakhiran berputar untuk memindahkan semua contoh kumpulan skala mesin virtual ke versi Terbaru Platform Image OS.
+Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,7 +25,7 @@ Start-AzureRmVmssRollingOSUpgrade [-ResourceGroupName] <String> [-VMScaleSetName
 ```
 
 ## DESCRIPTION
-Memulai pemutakhiran berputar untuk memindahkan semua contoh kumpulan skala mesin virtual ke versi Terbaru Platform Image OS.
+Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
 Instans yang sudah menjalankan versi OS terbaru yang tersedia tidak terpengaruh.
 
 ## EXAMPLES
@@ -35,12 +35,12 @@ Instans yang sudah menjalankan versi OS terbaru yang tersedia tidak terpengaruh.
 PS C:\> Start-AzureRmVmssRollingOSUpgrade -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Perintah ini memulai pemutakhiran rolling semua vm dengan skala VM yang diatur "VMSS001" dalam grup sumber daya "Group001".
+Perintah ini memulai pemutakhiran bergulir semua contoh vm dari kumpulan skala VM "VMSS001" dalam grup sumber daya "Group001".
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

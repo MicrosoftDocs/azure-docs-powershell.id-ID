@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 3b92451a1dcd5387d89b952149a5fe283775e583730e20612a1b9eb35c92b852
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 320588b81791c033b94a07261f769fa0886d2f2c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418413"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916437"
 ---
 # Remove-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Menghapus properti kesehatan dari gateway aplikasi yang sudah ada.
+Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada.
 
 ## SYNTAX
 
@@ -25,21 +25,21 @@ Remove-AzApplicationGatewayProbeConfig -Name <String> -ApplicationGateway <PSApp
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzApplicationGatewayProbeConfig menghapus cmdlet heath cmdlet dari gateway aplikasi yang sudah ada.
+Cmdlet Remove-AzApplicationGatewayProbeConfig menghapus penyelidikan heath dari gateway aplikasi yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus health gateway dari gateway aplikasi yang sudah ada
+### Contoh 1: Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada
 ```
 PS C:\>$Gateway = Remove-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "Probe04"
 ```
 
-Perintah ini menghapus perintah kesehatan yang bernama Default04 dari gateway aplikasi yang bernama Gateway.
+Perintah ini menghapus pemeriksaan kesehatan bernama Probe04 dari gateway aplikasi bernama Gateway.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menghapus cmdlet.
+Menentukan gateway aplikasi tempat cmdlet ini menghapus probe.
 
 ```yaml
 Type: PSApplicationGateway
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama cmdlet ini.
+Menentukan nama probe yang akan dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -84,12 +84,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSApplicationGateway
-Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari saluran
+Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari pipeline
 
 ## OUTPUTS
 
@@ -99,7 +99,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari s
 
 ## RELATED LINKS
 
-[Menghapus default dari gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#remove-a-probe-from-an-existing-application-gateway)
+[Menghapus probe dari gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#remove-a-probe-from-an-existing-application-gateway)
 
 [Add-AzApplicationGatewayProbeConfig]()
 

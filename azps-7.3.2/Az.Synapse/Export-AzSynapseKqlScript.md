@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseKqlScript.md
-ms.openlocfilehash: 477e684ba647f74f322e804a975d7441cf18d875
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 17f1596dbf2a91426e36fe9c8d6b0141038b6203
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195222"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142024139"
 ---
 # Export-AzSynapseKqlScript
 
 ## SYNOPSIS
 Mengekspor skrip KQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/export-azsynapsekqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Export-AzSynapseKqlScript -InputObject <PSKqlScriptResource> -OutputFolder <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzSynapseKqlScript** mengekspor skrip Azure Synapse KQL ke file kueri kusto (.kql). Nama skrip KQL menjadi nama file yang diekspor. Jika Anda menentukan nama skrip KQL, cmdlet akan mengekspor skrip KQL tersebut. Jika Anda tidak menentukan nama, ekspor semua skrip KQL di ruang kerja.
+Cmdlet **Export-AzSynapseKqlScript** mengekspor skrip Azure Synapse KQL ke file kueri kusto (.kql). Nama skrip KQL menjadi nama file yang diekspor. Jika Anda menentukan nama skrip KQL, cmdlet akan mengekspor skrip KQL. Jika Anda tidak menentukan nama, cmdlet mengekspor semua skrip KQL dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Mengekspor semua skrip KQL di ruang kerja ContosoWorkspace ke folder "C:\KqlScir
 PS C:\> Export-AzSynapseKqlScript -WorkspaceName ContosoWorkspace -Name ContosoKqlScript -OutputFolder "C:\KqlScript"
 ```
 
-Mengekspor skrip KQL tunggal yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript".
+Mengekspor satu skrip KQL yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript".
 
 ### Contoh 3
 ```powershell
@@ -62,7 +65,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Export-AzSynapseKqlScript -Name ContosoKqlScript -OutputFolder "C:\KqlScript"
 ```
 
-Mengekspor skrip KQL tunggal yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript" melalui pipeline.
+Mengekspor satu skrip KQL yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript" melalui pipeline.
 
 ### Contoh 4
 ```powershell
@@ -70,12 +73,12 @@ PS C:\> $KqlScript = Get-AzSynapseKqlScript -WorkspaceName ContosoWorkspace -Nam
 PS C:\> $KqlScript | Export-AzSynapseKqlScript -OutputFolder "C:\KqlScript"
 ```
 
-Mengekspor skrip KQL tunggal yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript" melalui pipeline.
+Mengekspor satu skrip KQL yang disebut ContosoKqlScript di ruang kerja ContosoWorkspace ke folder "C:\KqlScript" melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek skrip KQL.
+KQL objek skrip.
 
 ```yaml
 Type: PSKqlScriptResource
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama skrip KQL.
+KQL nama skrip.
 
 ```yaml
 Type: String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Folder tempat skrip KQL harus diletakkan.
+Folder tempat skrip KQL harus ditempatkan.
 
 ```yaml
 Type: String
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

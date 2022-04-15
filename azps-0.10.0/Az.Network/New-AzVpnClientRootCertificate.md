@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzVpnClientRootCertificate.md
 ms.openlocfilehash: bd260deb8e43450b2feacb3c60f34ed6cc4003be
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424956"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916545"
 ---
 # New-AzVpnClientRootCertificate
 
 ## SYNOPSIS
-Membuat sertifikat akar klien VPN yang baru.
+Membuat sertifikat akar klien VPN baru.
 
 ## SYNTAX
 
@@ -30,37 +30,37 @@ Cmdlet **New-AzVpnClientRootCertificate** membuat sertifikat akar VPN baru untuk
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
 
 Cmdlet ini membuat sertifikat mandiri yang tidak ditetapkan ke gateway virtual.
-Sebaliknya, sertifikat yang dibuat **oleh New-AzVpnClientRootCertificate** digunakan bersama-sama dengan cmdlet New-AzVirtualNetworkGateway saat membuat gateway baru.
-Misalnya, anggaplah Anda membuat sertifikat baru dan menyimpannya di variabel yang bernama $Certificate.
-Anda lalu bisa menggunakan objek sertifikat tersebut saat membuat gateway virtual baru.
-Sebagai contoh,
+Sebagai gantinya, sertifikat yang dibuat oleh **New-AzVpnClientRootCertificate** digunakan bersama dengan cmdlet New-AzVirtualNetworkGateway saat membuat gateway baru.
+Misalnya, Anda membuat sertifikat baru dan menyimpannya dalam variabel bernama $Certificate.
+Anda kemudian bisa menggunakan objek sertifikat itu saat membuat gateway virtual baru.
+Misalnya,
 
 `New-AzVirtualNetworkGateway -Name "ContosoVirtualGateway" -ResourceGroupName "ContosoResourceGroup" -Location "West US" -GatewayType "VPN" -IpConfigurations $Ipconfig  -VPNType "RouteBased" -VpnClientRootCertificates $Certificate`
 
-Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzVirtualNetworkGateway baru.
+Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzVirtualNetworkGateway.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sertifikat akar aclient
+### Contoh 1: Membuat sertifikat akar akpit
 ```
 PS C:\> $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer"
 PS C:\> $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text[$i]}
 PS C:\> $Certificate = New-AzVpnClientRootCertificate -PublicCertData $CertificateText -Name "ContosoClientRootCertificate"
 ```
 
-Contoh ini membuat sertifikat akar klien dan menyimpan objek sertifikat dalam variabel yang bernama $Certificate.
-Variabel ini lalu bisa digunakan oleh cmdlet **New-AzVirtualNetworkGateway** untuk menambahkan sertifikat akar ke gateway jaringan virtual yang baru.
+Contoh ini membuat sertifikat akar klien dan menyimpan objek sertifikat dalam variabel bernama $Certificate.
+Variabel ini kemudian dapat digunakan oleh cmdlet **New-AzVirtualNetworkGateway** untuk menambahkan sertifikat akar ke gateway jaringan virtual baru.
 
-Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks akar yang diekspor sebelumnya; bahwa data teks disimpan dalam variabel yang bernama $Text.
+Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks yang sebelumnya diekspor dari sertifikat akar; data teks tersebut disimpan dalam variabel bernama $Text.
 
-Lalu perintah kedua menggunakan pengulangan untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir, menyimpan teks yang diekstrak dalam variabel yang bernama $CertificateText.
+Perintah kedua kemudian menggunakan pengulangan untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir, menyimpan teks yang diekstrak dalam variabel bernama $CertificateText.
 
-Perintah ketiga menggunakan cmdlet **New-AzVpnClientRootCertificate** untuk membuat sertifikat, menyimpan objek yang dibuat di variabel yang bernama $Certificate.
+Perintah ketiga menggunakan cmdlet **New-AzVpnClientRootCertificate** untuk membuat sertifikat, menyimpan objek yang dibuat dalam variabel bernama $Certificate.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -90,16 +90,16 @@ Accept wildcard characters: False
 ```
 
 ### -PublicCertData
-Menentukan representasi teks dari sertifikat akar yang akan ditambahkan.
-Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Anda akan melihat output yang mirip dengan ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel yang disingkat diperlihatkan di sini):
+Menentukan representasi teks sertifikat akar yang akan ditambahkan.
+Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan dalam editor teks.
+Anda akan melihat output yang mirip dengan ini (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel singkatan yang diperlihatkan di sini):
 
------ BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE -----
+----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HHgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE -----
 
-PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
-Anda bisa mengambil PublicCertData dengan menggunakan Windows PowerShell yang mirip dengan ini:
+PublicCertData terdiri dari semua baris antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini:
 
-$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text \[ $i \] }
+$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
 Type: String
@@ -114,17 +114,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ###  
-Cmdlet ini tidak menerima input saluran.
+Cmdlet ini tidak menerima input pipelined.
 
 ## OUTPUTS
 
 ###  
-Cmdlet ini membuat contoh baru objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate.**
+Cmdlet ini membuat instans baru objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate** .
 
 ## CATATAN
 
