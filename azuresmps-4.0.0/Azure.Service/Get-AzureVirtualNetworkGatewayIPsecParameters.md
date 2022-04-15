@@ -4,11 +4,11 @@ ms.assetid: 425008DB-9761-42F1-8D6D-F35757A3CA6C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: db1ea8da44112360c1bbcdb9d47884d66162475e
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415659"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278439"
 ---
 # Get-AzureVirtualNetworkGatewayIPsecParameters
 
@@ -32,7 +32,7 @@ Cmdlet **Get-AzureVirtualNetworkGatewayIPsecParameters** mendapatkan parameter I
 ## PARAMETERS
 
 ### -ConnectedEntityId
-Menentukan ID entitas tersambung.
+Menentukan ID entitiy yang tersambung.
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

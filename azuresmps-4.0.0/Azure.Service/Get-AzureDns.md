@@ -4,16 +4,16 @@ ms.assetid: 184FB33A-C866-4AF0-BA31-8ADCFC6EE8E2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 367585753575ed07c2a12345ab80fd30c3f558b2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424128"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142279177"
 ---
 # Get-AzureDns
 
 ## SYNOPSIS
-Dapatkan pengaturan DNS untuk penyebaran Azure.
+Mendapatkan pengaturan DNS untuk penyebaran Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureDns [-DnsSettings <DnsSettings>] [-InformationAction <ActionPreference>
 
 ## DESCRIPTION
 Cmdlet **Get-AzureDns** mendapatkan pengaturan DNS untuk penyebaran Azure.
-Cmdlet mengembalikan nama yang mudah di mudah dituangkan dan alamat IP server DNS dalam objek pengaturan DNS.
+Cmdlet mengembalikan nama yang mudah dikenali dan alamat IP server DNS dalam objek pengaturan DNS.
 
 ## EXAMPLES
 
@@ -36,13 +36,13 @@ PS C:\> Get-AzureDeployment -ServiceName "ContosoService" -Slot "Production" | G
 ```
 
 Perintah ini menggunakan cmdlet **Get-AzureDeployment** untuk mendapatkan penyebaran produksi layanan bernama ContosoService.
-Perintah melewati objek itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan pengaturan DNS.
+Perintah melewati objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini akan mendapatkan pengaturan DNS.
 
 ## PARAMETERS
 
 ### -DnsSettings
-Menentukan objek **DnsSettings.**
+Menentukan objek **DnsSettings** .
 
 ```yaml
 Type: DnsSettings
@@ -57,16 +57,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -110,9 +110,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDeployment](./Get-AzureDeployment.md)
 
-[AzureDn baru](./New-AzureDns.md)
+[AzureDns baru](./New-AzureDns.md)
 
-[Remove-AzureDns](./Remove-AzureDns.md)
+[Hapus AzureDns](./Remove-AzureDns.md)
 
 [Set-AzureDns](./Set-AzureDns.md)
 

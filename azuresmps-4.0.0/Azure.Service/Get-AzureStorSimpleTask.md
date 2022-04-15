@@ -4,16 +4,16 @@ ms.assetid: CF3548F6-03FE-44D6-AA2C-1015611C657A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a7be848e7806e77e8d720542b037c5bb0dabe933
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415215"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142278664"
 ---
 # Get-AzureStorSimpleTask
 
 ## SYNOPSIS
-Mendapatkan status tugas pada perangkat StorSimple.
+Mendapatkan status tugas di perangkat StorSimple.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureStorSimpleTask -InstanceId <String> [-Profile <AzureSMProfile>] [<Commo
 ## DESCRIPTION
 Cmdlet **Get-AzureStorSimpleTask** mengambil status tugas yang berjalan secara asinkron pada perangkat Azure StorSimple.
 
-Ketika mengelola perangkat StorSimple, sebagian besar tindakan membuat, membaca, memperbarui, dan menghapus dapat berjalan secara asinkron.
+Saat Anda mengelola perangkat StorSimple, sebagian besar tindakan membuat, membaca, memperbarui, dan menghapus dapat berjalan secara asinkron.
 Windows PowerShell mengembalikan **TaskId**.
 Gunakan ID untuk mendapatkan status tugas saat ini.
 
@@ -49,13 +49,13 @@ StatusCode                : OK
 RequestId                 : e9174990825750bba69383748f23019c
 ```
 
-Perintah ini mendapatkan status tugas yang memiliki ID tertentu.
-Hasilnya memperlihatkan bahwa tugas tersebut memiliki status selesai dan hasil berhasil.
+Perintah ini mendapatkan status tugas yang memiliki ID yang ditentukan.
+Hasilnya menunjukkan bahwa tugas memiliki status selesai dan hasil dari keberhasilan.
 
 ## PARAMETERS
 
 ### -InstanceId
-Menentukan ID tugas yang melacak status cmdlet ini.
+Menentukan ID tugas yang statusnya dilacak cmdlet ini.
 
 ```yaml
 Type: String
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -86,34 +86,34 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### JobStatusInfo
-Cmdlet ini mengembalikan objek **TaskStatusInfo** yang berisi bidang berikut ini: 
+Cmdlet ini mengembalikan objek **TaskStatusInfo** yang berisi bidang berikut: 
 
 - **Kesalahan**.
 **ErrorDetails**, yang berisi **Kode** dan **Pesan**.
 - **TaskId**.
 **String**.
-ID tugas yang statusnya dikembalikan.
-- **Langkah Tugas**.
+ID tugas yang dikembalikan statusnya.
+- **TaskSteps**.
 **IList\<TaskStep\>**.
-Setiap **objek TaskStep** berisi **Detail**, **KesalahanKode**, **Pesan**, **Hasil**, dan **Status**.
-- **Hasil**.
-**TaskResult**, yang berisi hasil keseluruhan tugas.
-Nilai yang valid adalah: Gagal, Berhasil, PartialSuccess, Cancelled, dan Invalid.
+Setiap objek **TaskStep** berisi **Detail**, **Kode Kesalahan**, **Pesan**, **Hasil**, dan **Status**.
+- **Hasil.**
+**TaskResult**, yang berisi keseluruhan hasil tugas.
+Nilai yang valid adalah: Gagal, Berhasil, PartialSuccess, Cancelled, dan Tidak Valid.
 - **Status**.
-**TaskStatus**, berisi status menjalankan tugas secara keseluruhan.
-Nilai valid adalah: Inprogress, Invalid, dan Completed.
+**TaskStatus**, yang berisi keseluruhan status tugas yang berjalan.
+Nilai yang valid adalah: Inprogress, Invalid, dan Completed.
 - **TaskResult**.
-**TaskResult**, sebuah nilai dihitung berdasarkan **Hasil** dan **Status**.
-Nilai valid adalah: Gagal, Berhasil, InProgress, PartialSuccess, Cancelled, dan Invalid.
+**TaskResult**, nilai yang dihitung berdasarkan **Hasil** dan **Status**.
+Nilai yang valid adalah: Gagal, Berhasil, InProgress, PartialSuccess, Cancelled, dan Invalid.
 
 ## CATATAN
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/Get-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/Get-AzUserAssignedIdentity.md
-ms.openlocfilehash: 404f2f79aa25bf2b3ef7676d22270c10e0682359
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 93dc14e1c6678f54e7ed9504dc6a0139b15c54e4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179376"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214857"
 ---
 # Get-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Mendapatkan Identitas/Identitas yang Ditetapkan Pengguna.
+Mendapatkan Identitas/identitas yang Ditetapkan Pengguna.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/get-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzUserAssignedIdentity -ResourceGroupName <String> [-Name <String>]
 ## EXAMPLES
 
 ### Contoh 1
-Cmdlet contoh ini mendapatkan Identitas Ditetapkan Pengguna dengan ID nama1 **di** bawah grup sumber daya **PSRG**
+Cmdlet contoh ini mendapatkan Identitas yang Ditetapkan Pengguna dengan nama **ID1** di bawah grup sumber daya **PSRG**
 
 ```powershell
 PS C:\> Get-AzUserAssignedIdentity -ResourceGroupName PSRG -Name ID1
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama identitas.
+Nama Identitas.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyEvent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyEvent.md
 ms.openlocfilehash: 67672c4205431de850d9a6859f2a8700bb00e84b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248381"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142226251"
 ---
 # Get-AzPolicyEvent
 
 ## SYNOPSIS
-Gets policy evaluation events generated as resources are created or updated.
+Mendapatkan kejadian evaluasi kebijakan yang dihasilkan saat sumber daya dibuat atau diperbarui.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.policyinsights/get-azpolicyevent) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicyevent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ Get-AzPolicyEvent [-SubscriptionId <String>] -ResourceGroupName <String> -Policy
  [-Apply <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ResourceScope
+### Cakupan Sumber Daya
 ```
 Get-AzPolicyEvent -ResourceId <String> [-Top <Int32>] [-OrderBy <String>] [-Select <String>] [-From <DateTime>]
  [-To <DateTime>] [-Filter <String>] [-Apply <String>] [-DefaultProfile <IAzureContextContainer>]
@@ -79,7 +79,7 @@ Get-AzPolicyEvent -ResourceId <String> [-Top <Int32>] [-OrderBy <String>] [-Sele
 ```
 
 ## DESCRIPTION
-Gets policy evaluation events generated as resources are created or updated. Rekaman kejadian kebijakan dapat dikuerifikasi pada berbagai lingkup berdasarkan interval waktu yang ditentukan (default ke hari terakhir). Hasil bisa difilter, dikelompokkan, dan agregasi grup bisa dihitung.
+Mendapatkan kejadian evaluasi kebijakan yang dihasilkan saat sumber daya dibuat atau diperbarui. Rekaman kejadian kebijakan dapat dikueri pada berbagai lingkup berdasarkan interval waktu yang ditentukan (default ke hari terakhir). Hasil dapat difilter, dikelompokkan, dan agregasi grup dapat dihitung.
 
 ## EXAMPLES
 
@@ -88,154 +88,154 @@ Gets policy evaluation events generated as resources are created or updated. Rek
 PS C:\> Get-AzPolicyEvent
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
 ### Contoh 2: Dapatkan kejadian kebijakan dalam lingkup langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyEvent -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya di dalam langganan yang ditentukan.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan tertentu.
 
 ### Contoh 3: Dapatkan kejadian kebijakan dalam lingkup grup manajemen
 ```powershell
 PS C:\> Get-AzPolicyEvent -ManagementGroupName "myManagementGroup"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup manajemen yang ditentukan.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup manajemen yang ditentukan.
 
 ### Contoh 4: Dapatkan kejadian kebijakan dalam lingkup grup sumber daya dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyEvent -ResourceGroupName "myResourceGroup"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup sumber daya yang ditentukan (dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup sumber daya tertentu (dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 5: Dapatkan kejadian kebijakan dalam lingkup grup sumber daya dalam langganan yang ditentukan
+### Contoh 5: Dapatkan kejadian kebijakan dalam lingkup grup sumber daya dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyEvent -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -ResourceGroupName "myResourceGroup"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya di dalam grup sumber daya yang ditentukan (dalam langganan yang ditentukan).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam grup sumber daya tertentu (dalam langganan yang ditentukan).
 
 ### Contoh 6: Dapatkan kejadian kebijakan untuk sumber daya
 ```powershell
 PS C:\> Get-AzPolicyEvent -ResourceId "/subscriptions/fff10b27-fff3-fff5-fff8-fffbe01e86a5/resourceGroups/myResourceGroup/providers/Microsoft.EventHub/namespaces/myns1/eventhubs/eh1/consumergroups/cg1"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk sumber daya yang ditentukan.
 
 ### Contoh 7: Dapatkan kejadian kebijakan untuk definisi kumpulan kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyEvent -PolicySetDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kumpulan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kumpulan kebijakan tertentu (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 8: Dapatkan kejadian kebijakan untuk definisi kumpulan kebijakan dalam langganan tertentu
+### Contoh 8: Dapatkan kejadian kebijakan untuk definisi kumpulan kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyEvent -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicySetDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kumpulan kebijakan yang ditentukan (yang ada di dalam langganan yang ditentukan).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kumpulan kebijakan tertentu (yang ada dalam langganan yang ditentukan).
 
 ### Contoh 9: Dapatkan kejadian kebijakan untuk definisi kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyEvent -PolicyDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 10: Dapatkan kejadian kebijakan untuk definisi kebijakan dalam langganan tertentu
+### Contoh 10: Dapatkan kejadian kebijakan untuk definisi kebijakan dalam langganan yang ditentukan
 ```powershell
 PS C:\> Get-AzPolicyEvent -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicyDefinitionName "fff58873-fff8-fff5-fffc-fffbe7c9d697"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang diberlakukan oleh definisi kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
-### Contoh 11: Mendapatkan kejadian kebijakan untuk penetapan kebijakan dalam langganan saat ini
+### Contoh 11: Dapatkan kejadian kebijakan untuk penetapan kebijakan dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyEvent -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dipenrpengaruh oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan dalam konteks sesi saat ini).
 
 ### Contoh 12: Dapatkan kejadian kebijakan untuk penetapan kebijakan dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzPolicyEvent -SubscriptionId "fff10b27-fff3-fff5-fff8-fffbe01e86a5" -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang disebabkan oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dipenrpengaruh oleh penetapan kebijakan yang ditentukan (yang ada dalam langganan yang ditentukan).
 
-### Contoh 13: Dapatkan kejadian kebijakan untuk penetapan kebijakan di grup sumber daya tertentu dalam langganan saat ini
+### Contoh 13: Dapatkan kejadian kebijakan untuk penetapan kebijakan dalam grup sumber daya tertentu dalam langganan saat ini
 ```powershell
 PS C:\> Get-AzPolicyEvent -ResourceGroupName "myResourceGroup" -PolicyAssignmentName "ddd8ef92e3714a5ea3d208c1"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (di dalam penyewa dalam konteks sesi saat ini) yang dihasilkan oleh penetapan kebijakan yang ditentukan (yang ada di grup sumber daya dalam langganan dalam konteks sesi saat ini).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya (dalam penyewa dalam konteks sesi saat ini) yang dipengadikan oleh penetapan kebijakan yang ditentukan (yang ada dalam grup sumber daya dalam langganan dalam konteks sesi saat ini).
 
-### Contoh 14: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan OrderBy, Top, dan Pilih opsi kueri
+### Contoh 14: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan opsi OrderBy, Atas, dan Pilih kueri
 ```powershell
 PS C:\> Get-AzPolicyEvent -OrderBy "Timestamp desc, PolicyAssignmentName asc" -Top 5 -Select "Timestamp, ResourceId, PolicyAssignmentId, PolicySetDefinitionId, PolicyDefinitionId"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah memesan hasil menurut timestamp dan properti nama penetapan kebijakan, dan hanya akan mengambil 5 teratas dari properti yang tercantum dalam urutan tersebut.
-Opsi ini juga memilih untuk mencantumkan hanya subset kolom untuk setiap rekaman.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah mengurutkan hasil menurut stempel waktu dan properti nama penetapan kebijakan, dan hanya mengambil 5 teratas dari yang tercantum dalam urutan tersebut.
+Ini juga memilih untuk mencantumkan hanya subset kolom untuk setiap catatan.
 
 ### Contoh 15: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan opsi kueri Dari dan Ke
 ```powershell
 PS C:\> Get-AzPolicyEvent -From "2018-03-08 00:00:00Z" -To "2018-03-15 00:00:00Z"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan dalam rentang tanggal yang ditentukan untuk semua sumber daya di dalam langganan dalam konteks sesi saat ini.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan dalam rentang tanggal yang ditentukan untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
 
 ### Contoh 16: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan opsi Filter kueri
 ```powershell
 PS C:\> Get-AzPolicyEvent -Filter "(PolicyDefinitionAction eq 'deny' or PolicyDefinitionAction eq 'audit') and ResourceLocation ne 'eastus'"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
-Perintah tersebut membatasi hasil yang dikembalikan oleh pemfilteran berdasarkan tindakan definisi kebijakan (termasuk tindakan tolak atau audit) dan lokasi sumber daya (tidak termasuk lokasi eastus).
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (termasuk tindakan penolakan atau audit) dan lokasi sumber daya (tidak termasuk lokasi eastus).
 
-### Contoh 17: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Menerapkan agregasi menentukan agregasi jumlah baris
+### Contoh 17: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Terapkan menentukan agregasi hitungan baris
 ```powershell
 PS C:\> Get-AzPolicyEvent -Apply "aggregate(`$count as NumberOfRecords)"
 ```
 
-Dapatkan jumlah catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
-Perintah mengembalikan hitungan data kejadian kebijakan saja, yang dikembalikan di dalam properti AdditionalProperties.
+Mendapatkan jumlah rekaman acara kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini.
+Perintah mengembalikan hitungan rekaman kejadian kebijakan saja, yang dikembalikan di dalam properti AdditionalProperties.
 
-### Contoh 18: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Terapkan tentukan grup dengan agregasi
+### Contoh 18: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Terapkan menentukan pengelompokan dengan agregasi
 ```powershell
 PS C:\> Get-AzPolicyEvent -Filter "PolicyDefinitionAction eq 'audit' or PolicyDefinitionAction eq 'deny'" -Apply "groupby((PolicyAssignmentId, PolicyDefinitionId, PolicyDefinitionAction, ResourceId), aggregate(`$count as NumEvents))" -OrderBy "NumEvents desc" -Top 5
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah tersebut membatasi hasil yang dikembalikan oleh pemfilteran berdasarkan tindakan definisi kebijakan (hanya menyertakan audit dan tolak kejadian).
-Fungsi ini mengelompokkan hasil berdasarkan penetapan kebijakan, definisi kebijakan, tindakan definisi kebijakan, dan id sumber daya, serta menghitung jumlah data di setiap grup, yang dikembalikan di dalam properti AdditionalProperties.
-It orders the results by the count aggregation in descending order, and takes only top 5 of those listed in that order.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (hanya mencakup audit dan tolak kejadian).
+Ini mengelompokkan hasil berdasarkan penetapan kebijakan, definisi kebijakan, tindakan definisi kebijakan, dan id sumber daya, dan menghitung jumlah rekaman di setiap grup, yang dikembalikan di dalam properti AdditionalProperties.
+Ini mengurutkan hasil menurut agregasi hitungan dalam urutan menurun, dan hanya mengambil 5 teratas dari yang tercantum dalam urutan tersebut.
 
-### Contoh 19: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Terapkan tentukan grup tanpa agregasi
+### Contoh 19: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Terapkan menentukan pengelompokan tanpa agregasi
 ```powershell
 PS C:\> Get-AzPolicyEvent -Filter "PolicyDefinitionAction eq 'audit' or PolicyDefinitionAction eq 'deny'" -Apply "groupby((ResourceId))"
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah tersebut membatasi hasil yang dikembalikan oleh pemfilteran berdasarkan tindakan definisi kebijakan (hanya menyertakan audit dan tolak kejadian).
-It groups the results based on resource id. Ini menghasilkan daftar semua sumber daya di dalam langganan yang menghasilkan kejadian kebijakan untuk setidaknya satu audit atau tolak kebijakan.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (hanya mencakup audit dan tolak kejadian).
+Ini mengelompokkan hasil berdasarkan id sumber daya. Ini menghasilkan daftar semua sumber daya dalam langganan yang menghasilkan kejadian kebijakan untuk setidaknya satu kebijakan audit atau penolakan.
 
-### Contoh 20: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Menerapkan menentukan beberapa grup
+### Contoh 20: Dapatkan kejadian kebijakan dalam lingkup langganan saat ini, dengan Terapkan yang menentukan beberapa pengelompokan
 ```powershell
 PS C:\> Get-AzPolicyEvent -Filter "PolicyDefinitionAction eq 'deny'" -Apply "groupby((PolicyAssignmentId, PolicyDefinitionId, ResourceId))/groupby((PolicyAssignmentId, PolicyDefinitionId), aggregate(`$count as NumDeniedResources))" -OrderBy "NumDeniedResources desc" -Top 5
 ```
 
-Mendapatkan catatan kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah tersebut membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (termasuk hanya tolak kejadian).
-It groups the results first based on policy assignment, policy definition, and resource id. Lalu, selanjutnya mengelompokkan hasil dari grup ini dengan properti yang sama kecuali untuk id sumber daya, dan menghitung jumlah data di setiap grup ini, yang dikembalikan di dalam properti AdditionalProperties.
-It orders the results by the count aggregation in descending order, and takes only top 5 of those listed in that order.
-Ini menghasilkan 5 kebijakan penolakan teratas dengan sebagian besar sumber daya yang ditolak.
+Mendapatkan rekaman kejadian kebijakan yang dihasilkan di hari terakhir untuk semua sumber daya dalam langganan dalam konteks sesi saat ini. Perintah membatasi hasil yang dikembalikan dengan pemfilteran berdasarkan tindakan definisi kebijakan (termasuk hanya tolak kejadian).
+Ini mengelompokkan hasil terlebih dahulu berdasarkan penetapan kebijakan, definisi kebijakan, dan id sumber daya. Kemudian, grup selanjutnya mengelompokkan hasil pengelompokan ini dengan properti yang sama kecuali untuk id sumber daya, dan menghitung jumlah rekaman di setiap grup ini, yang dikembalikan di dalam properti AdditionalProperties.
+Ini mengurutkan hasil menurut agregasi hitungan dalam urutan menurun, dan hanya mengambil 5 teratas dari yang tercantum dalam urutan tersebut.
+Ini menghasilkan 5 kebijakan tolak teratas dengan jumlah sumber daya yang ditolak paling banyak.
 
 ## PARAMETERS
 
-### -Apply
-Menerapkan ekspresi untuk agregasi menggunakan notasi OData.
+### -Terapkan
+Terapkan ekspresi untuk agregasi menggunakan notasi OData.
 
 ```yaml
 Type: System.String
@@ -280,8 +280,8 @@ Accept wildcard characters: False
 ```
 
 ### -Dari
-Timestamp yang diformat ISO 8601 yang menentukan waktu mulai interval ke kueri.
-Ketika tidak ditentukan, default nilai parameter 'To' dikurangi 1 hari.
+Stempel waktu yang diformat ISO 8601 menentukan waktu mulai interval ke kueri.
+Ketika tidak ditentukan, default ke nilai parameter 'Kepada' dikurangi 1 hari.
 
 ```yaml
 Type: System.DateTime
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrderBy
-Memesan ekspresi menggunakan notasi OData.
+Pengurutan ekspresi menggunakan notasi OData.
 Satu atau beberapa nama kolom yang dipisahkan koma dengan 'desc' opsional (default) atau 'asc'.
 
 ```yaml
@@ -404,7 +404,7 @@ Accept wildcard characters: False
 ### -Pilih
 Pilih ekspresi menggunakan notasi OData.
 Satu atau beberapa nama kolom yang dipisahkan koma.
-Membatasi kolom di setiap rekaman hanya untuk yang diminta.
+Membatasi kolom pada setiap catatan hanya pada yang diminta.
 
 ```yaml
 Type: System.String
@@ -433,9 +433,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ke
-Timestamp yang diformat ISO 8601 yang menentukan waktu akhir interval ke kueri.
-Bila tidak ditentukan, defaultnya adalah waktu permintaan.
+### -Kepada
+Stempel waktu yang diformat ISO 8601 menentukan waktu akhir interval ke kueri.
+Ketika tidak ditentukan, default ke waktu permintaan.
 
 ```yaml
 Type: System.DateTime
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah rekaman maksimum yang dikembalikan.
+Jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -465,7 +465,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
