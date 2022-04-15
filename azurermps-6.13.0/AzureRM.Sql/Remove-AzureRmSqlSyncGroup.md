@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlSyncGroup.md
 ms.openlocfilehash: 62f3c74f94ac0e775adc70f4eef9c4250e041145
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420297"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280543"
 ---
 # Remove-AzureRmSqlSyncGroup
 
 ## SYNOPSIS
-Menghapus Azure SQL Database Sinkronisasi Otomatis.
+Menghapus Grup Sinkronisasi Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Remove-AzureRmSqlSyncGroup [-Name] <String> [-Force] [-PassThru] [-ServerName] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmSqlSyncGroup** menghapus Azure SQL Database Sinkronisasi Grup.
+Cmdlet **Remove-AzureRmSqlSyncGroup** menghapus Grup Sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Cmdlet **Remove-AzureRmSqlSyncGroup** menghapus Azure SQL Database Sinkronisasi 
 PS C:\>Remove-AzureRmSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -Name "syncGroup01"
 ```
 
-Perintah ini menghapus grup Azure SQL Database bernama syncGroup01.
+Perintah ini menghapus Grup Sinkronisasi Azure SQL Database bernama syncGroup01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -71,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,9 +192,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmSqlSyncGroup](./New-AzureRmSqlSyncGroup.md)
+[Baru-AzureRmSqlSyncGroup](./New-AzureRmSqlSyncGroup.md)
 
-[Update-AzureRmSqlSyncGroup](./Update-AzureRmSqlSyncGroup.md)
+[Pembaruan-AzureRmSqlSyncGroup](./Update-AzureRmSqlSyncGroup.md)
 
 [Get-AzureRmSqlSyncGroup](./Get-AzureRmSqlSyncGroup.md)
 

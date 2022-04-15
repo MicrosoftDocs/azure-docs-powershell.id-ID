@@ -4,11 +4,11 @@ ms.assetid: A14F9105-1422-4073-96CF-E75CFC039E05
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2b80951f62757178f231b779d80f74265f88d8ff
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427443"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142276888"
 ---
 # Set-AzureNetworkSecurityGroupToSubnet
 
@@ -31,8 +31,8 @@ Cmdlet **Set-AzureNetworkSecurityGroupToSubnet** mengaitkan grup keamanan jaring
 
 ## PARAMETERS
 
-### -Force
-Menunjukkan bahwa cmdlet ini tidak meminta Anda mengonfirmasi penghapusan grup keamanan jaringan sebelumnya dari subnet.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta Anda untuk mengonfirmasi penghapusan grup keamanan jaringan sebelumnya dari subnet.
 
 ```yaml
 Type: SwitchParameter
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama grup keamanan jaringan yang terkait cmdlet ini ke subnet.
+Menentukan nama grup keamanan jaringan yang terkait dengan cmdlet ini ke subnet.
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Mengembalikan objek yang mewakili item tempat Anda bekerja. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: SwitchParameter
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -VirtualNetworkName
 Menentukan nama jaringan virtual.
-Cmdlet ini menghubungkan grup keamanan jaringan ke subnet dalam jaringan virtual yang ditentukan parameter ini.
+Cmdlet ini mengaitkan grup keamanan jaringan ke subnet di jaringan virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

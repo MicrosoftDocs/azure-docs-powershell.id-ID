@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncGroup.md
 ms.openlocfilehash: 777148c9f8033876fded26ee9ca531e21fa5cb44
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140130219"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142297285"
 ---
 # Get-AzStorageSyncGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "140130219"
 Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzStorageSyncGroup [-ParentResourceId] <String> [-Name <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu. Nama ini juga dapat digunakan untuk mencantumkan atribut setiap grup sinkronisasi.
+Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu. Opsi ini juga dapat digunakan untuk mencantumkan atribut setiap grup sinkronisasi.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi pen
 PS C:\> Get-AzStorageSyncGroup New-AzStorageSyncCloudEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName"
 ```
 
-Perintah ini membuat semua grup sinkronisasi dimuat dalam layanan sinkronisasi penyimpanan tertentu. Tentukan -Nama untuk mengembalikan nama spesifik.
+Perintah ini mendapatkan semua grup sinkronisasi yang terdapat dalam layanan sinkronisasi penyimpanan tertentu. Tentukan -Name untuk mengembalikan nama tertentu.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama GrupSinkronisasi.
+Nama GrupSinkronkan.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

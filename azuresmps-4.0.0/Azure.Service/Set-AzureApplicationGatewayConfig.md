@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: D7D99AFA-A85E-43DA-9F2F-8FFD34048E00
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 7d6224fcb961b0ac60829ab067574f09e1199fb24da306907ae715da8e43f0e9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a9b1ccdf65731d47486953b3f1f40e0e21e54a31
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417714"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277621"
 ---
 # Set-AzureApplicationGatewayConfig
 
@@ -36,16 +36,16 @@ Cmdlet **Set-AzureApplicationGatewayConfig** mengonfigurasi gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mengonfigurasi gateway aplikasi dengan menggunakan objek konfigurasi
+### Contoh 1: Mengonfigurasi gateway aplikasi menggunakan objek konfigurasi
 ```
 PS C:\> $ConfigReturnObject = Get-AzureApplicationGatewayConfig -Name "ApplicationGateway02"
 PS C:\> Set-AzureApplicationGatewayConfig -Name "ApplicationGateway06" -Config $ConfigReturnObject
 ```
 
-Perintah pertama mendapatkan objek konfigurasi untuk gateway aplikasi yang bernama ApplicationGateway02 dengan menggunakan cmdlet **Get-AzureApplicationGatewayConfig.**
-Perintah menyimpannya di $ConfigReturnObject variabel.
+Perintah pertama mendapatkan objek konfigurasi untuk gateway aplikasi bernama ApplicationGateway02 menggunakan cmdlet **Get-AzureApplicationGatewayConfig** .
+Perintah menyimpannya dalam variabel $ConfigReturnObject.
 
-Perintah kedua mengatur konfigurasi untuk aplikasi bernama ApplicationGateway06 dengan menggunakan objek konfigurasi gateway aplikasi yang disimpan di $ConfigReturnObject lain.
+Perintah kedua mengatur konfigurasi untuk aplikasi bernama ApplicationGateway06 menggunakan objek konfigurasi gateway aplikasi yang disimpan dalam variabel $ConfigReturnObject.
 
 ### Contoh 2: Mengonfigurasi gateway aplikasi dengan menggunakan file konfigurasi
 ```
@@ -61,12 +61,12 @@ PS C:\> $ConfigReturnObject.Config.FrontendPorts[0].Port = 443
 PS C:\> $ConfigReturnObject | Set-AzureApplicationGatewayConfig -Name "ApplicationGateway06"
 ```
 
-Perintah pertama mendapatkan objek konfigurasi untuk gateway aplikasi yang bernama ApplicationGateway06 dengan menggunakan cmdlet **Get-AzureApplicationGatewayConfig.**
-Perintah menyimpannya di $ConfigReturnObject variabel.
+Perintah pertama mendapatkan objek konfigurasi untuk gateway aplikasi bernama ApplicationGateway06 menggunakan cmdlet **Get-AzureApplicationGatewayConfig** .
+Perintah menyimpannya dalam variabel $ConfigReturnObject.
 
 Perintah kedua menetapkan nilai port ke properti **Port** dalam objek yang disimpan di $ConfigReturnObject.
 
-Perintah terakhir melewati pembaruan $ConfigReturnObject cmdlet saat ini.
+Perintah akhir melewati $ConfigReturnObject yang diperbarui ke cmdlet saat ini.
 
 ## PARAMETERS
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

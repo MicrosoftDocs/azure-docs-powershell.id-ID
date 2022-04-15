@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpTagConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpTagConfig.md
 ms.openlocfilehash: 9e8d7ac5a24baee7cc9b927f630972b946ee3ebf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140335607"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272247"
 ---
 # New-AzVmssIpTagConfig
 
 ## SYNOPSIS
-Membuat objek TAG IP untuk antarmuka jaringan VMSS.
+Membuat objek Tag IP untuk antarmuka jaringan VMSS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmssiptagconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssiptagconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +28,8 @@ New-AzVmssIpTagConfig [-IpTagType] <String> [-Tag <String>] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVmssIpTagConfig** membuat objek konfigurasi TAG IP untuk antarmuka jaringan Virtual Machine Scale Set (VMSS).
-Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPTag* cmdlet New-AzVmssIpConfig cmdlet.
+Cmdlet **New-AzVmsIpTagConfig** membuat objek konfigurasi Tag IP untuk antarmuka jaringan Kumpulan Skala Mesin Virtual (VMSS).
+Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPTag* cmdlet New-AzVmssIpConfig.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ PS C:\> $iptag = New-AzVmssIpTagConfig -IpTagType 'FirstPartyUsage' -Tag 'Sql'
 PS C:\> $ipCfg = New-AzVmssIPConfig -Name 'test' -SubnetId $subnetId -IpTag $ipTag;
 ```
 
-Perintah ini membuat objek lokal Tag IP dengan tipe 'FirstPartyUsage' dan tag 'Sql', lalu membuat konfigurasi IP dengan tag IP ini.
+Perintah ini membuat objek lokal TAG IP dengan tipe 'FirstPartyUsage' dan tag 'Sql', lalu membuat konfigurasi IP dengan tag IP ini.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

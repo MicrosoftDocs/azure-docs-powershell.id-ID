@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionJobInAzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionJobInAzGraph.md
 ms.openlocfilehash: ad2dc8017fe9896915b342ce6e9d13189faeba22
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139940884"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142271005"
 ---
 # Search-AzDataProtectionJobInAzGraph
 
 ## SYNOPSIS
-Mencari Pekerjaan Cadangan di Sumber Daya Azure Graph dan mengambil entri yang diharapkan
+Mencari Pekerjaan Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionjobinazgraph) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionjobinazgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Search-AzDataProtectionJobInAzGraph -DatasourceType <DatasourceTypes> -Subscript
 ```
 
 ## DESCRIPTION
-Mencari Pekerjaan Cadangan di Sumber Daya Azure Graph dan mengambil entri yang diharapkan
+Mencari Pekerjaan Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua pekerjaan dalam rentang waktu tertentu
+### Contoh 1: Dapatkan semua pekerjaan dalam rentang waktu tertentu
 ```powershell
 PS C:\> $endtime = get-date
 PS C:\> $starttime = $endtime.AddHours(-5)
@@ -46,9 +46,9 @@ Name                                 Type
 96238abd-6ff3-48e0-8c07-0eabd6928a17 microsoft.dataprotection/backupvaults/backupjobs
 ```
 
-Perintah ini mendapatkan semua pekerjaan di vault dalam 5 jam terakhir.
+Perintah ini mendapatkan semua pekerjaan dalam kubah dalam 5 jam terakhir.
 
-### Contoh 2: Mendapatkan semua pekerjaan tipe operasi tertentu
+### Contoh 2: Dapatkan semua pekerjaan dari tipe operasi tertentu
 ```powershell
 PS C:\> Search-AzDataProtectionJobInAzGraph -Subscription "xxxx-xxx-xxx" -ResourceGroup sarath-rg -Vault sarath-vault -DatasourceType AzureDisk -Operation OnDemandBackup
 
@@ -59,12 +59,12 @@ Name                                 Type
 1b0b17e3-398f-4265-9d03-ffc1e21fa73a microsoft.dataprotection/backupvaults/backupjobs
 ```
 
-Perintah ini mendapatkan semua pekerjaan cadangan yang harus dilakukan dalam vault.
+Perintah ini mendapatkan semua pekerjaan cadangan yang tidak ditugaskan dalam lemari besi.
 
 ## PARAMETERS
 
 ### -DatasourceType
-Tipe SumberData
+Tipe Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Filter Waktu Selesai untuk Pekerjaan Cadangan
+Filter Waktu Akhir untuk Tugas Pencadangan
 
 ```yaml
 Type: System.DateTime
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operasi
-Filter operasi untuk pekerjaan pencadangan
+Filter operasi untuk tugas pencadangan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.JobOperation[]
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Filter Waktu Mulai untuk cadangan Pekerjaan
+Filter Waktu Mulai untuk pencadangan Job
 
 ```yaml
 Type: System.DateTime
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Nama vault
+Nama kubah
 
 ```yaml
 Type: System.String[]
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Stop-AzureRmSqlDatabaseActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Stop-AzureRmSqlDatabaseActivity.md
-ms.openlocfilehash: 2da0d4ac0028643725e4eacbedc3319198a12d6eaf555aa17d1e2b84a6a9258b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: af2f10b371eb21558a4b675331ec97f797611d26
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857880"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280386"
 ---
 # Stop-AzureRmSqlDatabaseActivity
 
 ## SYNOPSIS
-Membatalkan operasi pembaruan asinkron di database.
+Membatalkan operasi pembaruan asinkron pada database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ Cmdlet **Stop-AzureRmSqlDatabaseActivity** membatalkan operasi pembaruan asinkro
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan operasi pembaruan asinkron di database
+### Contoh 1: Batalkan operasi pembaruan asinkron pada database
 ```
 PS C:\>Stop-AzureRmSqlDatabaseActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -OperationId af97005d-9243-4f8a-844e-402d1cc855f5
 
@@ -51,12 +51,12 @@ PercentComplete :
 Properties      : Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseActivityModel+DatabaseState
 ```
 
-Perintah ini membatalkan operasi pembaruan asinkron di database.
+Perintah ini membatalkan operasi pembaruan asinkron pada database.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mendapatkan status.
+Menentukan nama database tempat cmdlet ini mendapatkan status.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -85,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Nama Azure SQL Elastis Pool.
+### -ElasticPoolName
+Nama Azure SQL Elastic Pool.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-Menentukan ID operasi yang akan didaurkan cmdlet ini.
+Menentukan ID operasi yang didapat cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama database Microsoft SQL Server meng host database.
+Menentukan nama Microsoft SQL Server yang menjadi host database.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,13 +177,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

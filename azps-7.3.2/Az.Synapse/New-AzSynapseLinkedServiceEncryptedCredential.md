@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseLinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseLinkedServiceEncryptedCredential.md
-ms.openlocfilehash: 8de58838d722949d3d75fde9ba49ae9c07d13876
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6f081074220500e1016ca935160c996d484be896
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998022"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142287961"
 ---
 # New-AzSynapseLinkedServiceEncryptedCredential
 
 ## SYNOPSIS
-Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi tertentu.
+Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapselinkedserviceencryptedcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ New-AzSynapseLinkedServiceEncryptedCredential -WorkspaceObject <PSSynapseWorkspa
 ```
 
 ## DESCRIPTION
-Kredensial enkripsi cmdlet New-AzSynapseLinkedServiceEncryptedCredential dalam layanan tertaut dengan runtime integrasi tertentu.
+Cmdlet New-AzSynapseLinkedServiceEncryptedCredential mengenkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
 
-Harap pastikan persyaratan berikut ini terpenuhi:
-* **Opsi akses** jarak jauh diaktifkan pada runtime integrasi yang dihosting sendiri.
-* Powershell 7.0 atau lebih tinggi digunakan untuk menjalankan cmdlet.
+Pastikan prasyarat berikut terpenuhi:
+* Opsi **akses jarak jauh** diaktifkan pada runtime integrasi yang dihosting sendiri.
+* Powershell 7.0 atau yang lebih tinggi digunakan untuk menjalankan cmdlet.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Harap pastikan persyaratan berikut ini terpenuhi:
 PS C:\> New-AzSynapseLinkedServiceEncryptedCredential -WorkspaceName ContosoWorkspace -ResourceGroupName ContosoRG -IntegrationRuntimeName "IR-LSEncryptedCredential" -DefinitionFile "D:\sqlLinkService.json" > "D:\SynapseEncryptedSQLServerLinkedService.json"
 ```
 
-Perintah ini mengenkripsi kredensial di file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi yang bernama IR-LSEncryptedCredential.
+Perintah ini mengenkripsi kredensial dalam file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi bernama IR-LSEncryptedCredential.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseLinkedServiceEncryptedCredential -IntegrationRuntimeName "IR-LSEncryptedCredential" -DefinitionFile "D:\sqlLinkService.json" > "D:\SynapseEncryptedSQLServerLinkedService.json"
 ```
 
-Perintah ini mengenkripsi kredensial di file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi IR-LSEncryptedCredential melalui saluran.
+Perintah ini mengenkripsi kredensial dalam file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi bernama IR-LSEncryptedCredential melalui pipeline.
 
 ## PARAMETERS
 
@@ -89,8 +92,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

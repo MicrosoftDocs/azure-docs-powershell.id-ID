@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppBackupConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppBackupConfiguration.md
 ms.openlocfilehash: 4c6dc810d35feedd0d0d43e0bd3b3efb7c9b6641
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422402"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142275919"
 ---
 # Get-AzWebAppBackupConfiguration
 
@@ -32,7 +32,7 @@ Get-AzWebAppBackupConfiguration [-WebApp] <Site> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppBackupConfiguration** mendapatkan konfigurasi cadangan aplikasi Azure Web.
+Cmdlet **Get-AzWebAppBackupConfiguration** mendapatkan konfigurasi cadangan Azure Web App.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Cmdlet **Get-AzWebAppBackupConfiguration** mendapatkan konfigurasi cadangan apli
 PS C:\>Get-AzWebAppBackupConfiguration -ResourceGroupName "Default-Web-WestUS" -Name "WebAppStandard"
 ```
 
-Perintah ini mendapatkan konfigurasi cadangan dari Web App bernama WebAppStandard yang dimiliki oleh grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan konfigurasi cadangan dari Web App bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

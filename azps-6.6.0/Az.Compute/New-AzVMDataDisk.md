@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
 ms.openlocfilehash: bff91b5565f1115b051e291e011e6dbfbef61f67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142531"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272292"
 ---
 # New-AzVMDataDisk
 
 ## SYNOPSIS
-Membuat objek disk data lokal untuk mesin virtual atau VM Vmss.
+Membuat objek disk data lokal untuk mesin virtual atau VM VM.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmdatadisk) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Cmdlet **New-AzVMDataDisk** membuat objek disk data lokal untuk mesin virtual at
 
 ## EXAMPLES
 
-### Contoh 1: Add a managed data disk to a Vmss VM.
+### Contoh 1: Menambahkan disk data terkelola ke VM VM.
 ```powershell
 PS C:\> $disk = Get-AzDisk -ResourceGroupName $rgname -DiskName $diskname0
 PS C:\> $datadisk = New-AzVMDataDisk -Caching 'ReadOnly' -Lun 2 -CreateOption Attach -StorageAccountType Standard_LRS -ManagedDiskId $disk.Id
@@ -50,14 +50,14 @@ PS C:\> $VmssVM = Get-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss
 PS C:\> Update-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0 -DataDisk $datadisk
 ```
 
-Perintah pertama mendapatkan disk terkelola yang sudah ada.
-Perintah berikutnya membuat objek disk data dengan disk terkelola.
-Perintah berikutnya akan memiliki Vmss VM yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
+Perintah pertama akan mendapatkan disk terkelola yang sudah ada.
+Perintah berikutnya membuat objek disk data dengan disk yang dikelola.
+Perintah berikutnya mendapatkan VM Vmss yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
 Perintah terakhir memperbarui VM VM dengan menambahkan disk data baru.
 
 ### Contoh 2
 
-Membuat objek disk data lokal untuk mesin virtual atau VM Vmss. (otomatisgenerated)
+Membuat objek disk data lokal untuk mesin virtual atau VM VM. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzVMDataDisk -Caching None -CreateOption Attach -DiskSizeInGB 1 -Lun 2 -Name 'AgentPool01'
@@ -66,7 +66,7 @@ New-AzVMDataDisk -Caching None -CreateOption Attach -DiskSizeInGB 1 -Lun 2 -Name
 ## PARAMETERS
 
 ### -Caching
-Penyimpanan cache disk data mesin virtual.
+Cache disk data mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.CachingTypes
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Id kumpulan enkripsi disk yang dikelola mesin virtual.
+Id rangkaian enkripsi disk yang dikelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Lun disk data mesin virtual.
+Disk data mesin virtual Lun.
 
 ```yaml
 Type: System.Int32
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskId
-ID disk yang dikelola mesin virtual.
+Id disk terkelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceImageUri
-Uri gambar sumber disk OS mesin virtual.
+Sumber gambar sumber disk OS mesin virtual Uri.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun disk terkelola mesin virtual.
+Tipe akun disk yang dikelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdUri
-Vhd Uri disk data mesin virtual.
+Disk data mesin virtual Vhd Uri.
 
 ```yaml
 Type: System.String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk data yang dikelola.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk data yang dikelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -257,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.CachingTypes
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

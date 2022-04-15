@@ -4,16 +4,16 @@ ms.assetid: 40AE50AA-6807-4481-8B77-A038914D462E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4bdd84240120ee23991374f88986f24a51bec82b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425066"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142277623"
 ---
 # Remove-AzureVMDscExtension
 
 ## SYNOPSIS
-Menghapus ekstensi Azure DSC dari komputer virtual.
+Menghapus ekstensi DSC Azure dari mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,31 +26,31 @@ Remove-AzureVMDscExtension -VM <IPersistentVM> [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMDscExtension** menghapus ekstensi Azure DSC dari komputer virtual.
-Output cmdlet ini perlu disambungkan ke cmdlet **Update-AzureVM.**
+Cmdlet **Remove-AzureVMDscExtension** menghapus ekstensi DSC Azure dari mesin virtual.
+Output cmdlet ini perlu disalurkan ke cmdlet **Update-AzureVM** .
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus ekstensi DSC dari komputer virtual
+### Contoh 1: Menghapus ekstensi DSC dari mesin virtual
 ```
 PS C:\> Remove-AzureVMDscExtension -VM $VM | Update-AzureVM
 ```
 
-Perintah ini akan menghapus ekstensi Azure DSC dari komputer virtual.
+Perintah ini menghapus ekstensi DSC Azure dari mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -156,6 +156,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureVMDscExtension](./Set-AzureVMDscExtension.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

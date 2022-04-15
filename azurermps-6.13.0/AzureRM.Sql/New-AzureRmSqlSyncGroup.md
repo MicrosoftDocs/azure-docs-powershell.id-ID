@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlSyncGroup.md
-ms.openlocfilehash: afc75a6341cb92bab763a82e6f2a99f1b73c77bccf7a95adfc0bbc6d69dd0ab8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 93a71b040dc55b8d0a9b94aa9ff498f130928361
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416482"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142281044"
 ---
 # New-AzureRmSqlSyncGroup
 
 ## SYNOPSIS
-Membuat grup Azure SQL Database Sinkronisasi.
+Membuat Grup Sinkronisasi Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,11 +30,11 @@ New-AzureRmSqlSyncGroup [-Name] <String> -SyncDatabaseName <String> -SyncDatabas
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlSyncGroup** membuat grup Azure SQL Database Sinkronisasi.
+Cmdlet **New-AzureRmSqlSyncGroup** membuat Grup Sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Buat grup sinkronisasi untuk suatu Azure SQL Database.
+### Contoh 1: Membuat grup sinkronisasi untuk Azure SQL Database.
 ```
 PS C:\> $credential = Get-Credential
 PS C:\> New-AzureRmSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -Name "SyncGroup01" -ConflictResolutionPolicy "HubWin"
@@ -55,12 +55,12 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini akan membuat grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. File itu berisi shema payload dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
+Perintah ini membuat grup sinkronisasi untuk Azure SQL Database. "schema.json" adalah file di disk lokal. Ini berisi muatan shema dalam format json. Contoh json skema adalah: {"Tables": [{"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable1"}, {"Columns": [{"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column1"}, {"QuotedName": "b3ee3a7f-7614-4644-ad07-afa832620b4bManualTestsm4column2"}], "QuotedName": "MayQuotedTable2"}], "MasterSyncMemberName":  null }
 
 ## PARAMETERS
 
 ### -ConflictResolutionPolicy
-Kebijakan mengatasi konflik antara database hub dan anggota dalam grup sinkronisasi.
+Kebijakan untuk mengatasi konflik antara hub dan database anggota dalam grup sinkronisasi.
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseCredential
-Kredensial SQL autentikasi database hub.
+Kredensial autentikasi SQL database hub.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncDatabaseResourceGroupName
-Grup sumber daya tempat database metadata sinkronisasi dimiliki.
+Grup sumber daya tempat database metadata sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -288,7 +288,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## RELATED LINKS
 
 
-[Remove-AzureRmSqlSyncGroup](./Remove-AzureRmSqlSyncGroup.md)
+[Hapus-AzureRmSqlSyncGroup](./Remove-AzureRmSqlSyncGroup.md)
 
 [Get-AzureRmSqlSyncGroup](./Get-AzureRmSqlSyncGroup.md)
 

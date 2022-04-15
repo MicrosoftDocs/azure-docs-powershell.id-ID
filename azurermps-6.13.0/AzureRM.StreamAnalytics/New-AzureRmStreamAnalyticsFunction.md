@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/New-AzureRmStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StreamAnalytics/Commands.StreamAnalytics/help/New-AzureRmStreamAnalyticsFunction.md
 ms.openlocfilehash: cb92753e151aa274c17c678a1d4316260242f32c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423620"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142280374"
 ---
 # New-AzureRmStreamAnalyticsFunction
 
 ## SYNOPSIS
-Membuat atau mengganti fungsi dalam pekerjaan Analitik Stream.
+Membuat atau mengganti fungsi dalam pekerjaan Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,40 +29,40 @@ New-AzureRmStreamAnalyticsFunction [-JobName] <String> [[-Name] <String>] [-File
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmStreamAnalyticsFunction** membuat fungsi dalam pekerjaan Analitik Azure Stream atau mengganti fungsi yang sudah ada.
+Cmdlet **New-AzureRmStreamAnalyticsFunction** membuat fungsi dalam pekerjaan Azure Stream Analytics atau menggantikan fungsi yang sudah ada.
 Tentukan fungsi dalam file JavaScript Object Notation (JSON).
 Anda dapat menentukan nama fungsi menggunakan parameter *Nama* atau dalam file .json.
-Jika Anda menentukan nama dengan kedua cara tersebut, nama tersebut harus cocok.
+Jika Anda menentukan nama dalam kedua cara tersebut, nama harus cocok.
 Untuk mengganti fungsi yang sudah ada, tentukan nama fungsi yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat fungsi Analitik Streaming
+### Contoh 1: Membuat fungsi Stream Analytics
 ```
 PS C:\>New-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob07" -File "C:\Function07.json"
 ```
 
-Perintah ini akan membuat fungsi dari file Function07.json.
+Perintah ini membuat fungsi dari file Function07.json.
 Nama fungsi disimpan dalam file .json.
 
-### Contoh 2: Membuat fungsi Analitik Streaming bernama ScoreTweet
+### Contoh 2: Membuat fungsi Stream Analytics bernama ScoreTweet
 ```
 PS C:\>New-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -File "C:\Function22.json" -Name "ScoreTweet"
 ```
 
-Perintah ini akan membuat fungsi pada pekerjaan bernama ScoreTweet.
+Perintah ini membuat fungsi pada pekerjaan bernama ScoreTweet.
 
-### Contoh 3: Mengganti fungsi Analitik Streaming
+### Contoh 3: Mengganti fungsi Stream Analytics
 ```
 PS C:\>New-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -File "C:\Function22.json" -Name "ScoreTweet" -Force
 ```
 
-Perintah ini menggantikan definisi fungsi yang sudah ada yang bernama ScoreTweet dengan definisi dalam Function22.json.
+Perintah ini menggantikan definisi fungsi yang sudah ada bernama ScoreTweet dengan definisi di Function22.json.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur file .json yang berisi representasi JSON dari fungsi Analitik Stream.
+Menentukan jalur file .json yang berisi representasi JSON dari fungsi Stream Analytics.
 
 ```yaml
 Type: System.String
@@ -91,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menggantikan fungsi Analitik Stream yang sudah ada tanpa meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menggantikan fungsi Stream Analytics yang sudah ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Analitik Stream yang akan dibuat cmdlet ini sebagai fungsi Analitik Stream.
+Menentukan nama pekerjaan Stream Analytics di mana cmdlet ini membuat fungsi Stream Analytics.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama fungsi Analitik Stream yang dibuat cmdlet ini.
+Menentukan nama fungsi Stream Analytics yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat fungsi Analitik Stream.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat fungsi Stream Analytics.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,16 +191,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.StreamAnalytics.Models.PSFunction
+### Microsoft.Azure.Commands.StreamAnalytics.Models.PSFungsi
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzureRmStreamAnalyticsFunction](./Get-AzureRmStreamAnalyticsFunction.md)
+[Get-AzureRmStreamAnalyticsFungsi](./Get-AzureRmStreamAnalyticsFunction.md)
 
-[Remove-AzureRmStreamAnalyticsFunction](./Remove-AzureRmStreamAnalyticsFunction.md)
+[Remove-AzureRmStreamAnalyticsFungsi](./Remove-AzureRmStreamAnalyticsFunction.md)
 
-[Test-AzureRmStreamAnalyticsFunction](./Test-AzureRmStreamAnalyticsFunction.md)
+[Uji-AzureRmStreamAnalyticsFungsi](./Test-AzureRmStreamAnalyticsFunction.md)
 
 
