@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmssrollingupgrade
 schema: 2.0.0
-ms.openlocfilehash: 8a9d36c45ccfa04d7bc5bb15edc3b0c6c73a9eec62c518e7484e66c068117c6c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4c9281bc7eea4f8bf3b60d458f662ada19d97807
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858639"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142336574"
 ---
 # Get-AzureRmVmssRollingUpgrade
 
 ## SYNOPSIS
-Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar.
+Memperlihatkan status pemutakhiran rolling set skala mesin virtual terbaru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,7 +25,7 @@ Get-AzureRmVmssRollingUpgrade [-ResourceGroupName] <String> [-VMScaleSetName] <S
 ```
 
 ## DESCRIPTION
-Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar.
+Memperlihatkan status pemutakhiran rolling set skala mesin virtual terbaru.
 
 ## EXAMPLES
 
@@ -34,12 +34,12 @@ Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar
 PS C:\> Get-AzureRmVmssRollingUpgrade -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Perintah ini memperlihatkan status pemutakhiran diluncurkan terbaru VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya bernama Group001.
+Perintah ini memperlihatkan status pemutakhiran VMSS terbaru yang bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

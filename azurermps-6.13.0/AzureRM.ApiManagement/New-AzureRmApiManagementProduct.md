@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementProduct.md
 ms.openlocfilehash: 636a969f6aef013ee947afbb43d398871848818a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428485"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142360176"
 ---
 # New-AzureRmApiManagementProduct
 
 ## SYNOPSIS
-Membuat produk Manajemen API.
+Membuat produk API Management.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ New-AzureRmApiManagementProduct -Context <PsApiManagementContext> [-ProductId <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementProduct** membuat produk Manajemen API.
+Cmdlet **New-AzureRmApiManagementProduct** membuat produk API Management.
 
 ## EXAMPLES
 
@@ -40,25 +40,25 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>New-AzureRmApiManagementProduct -Context $apimContext -ProductId "0123456789" -Title "Starter" -Description "Starter Product" -LegalTerms "Free for all" -SubscriptionRequired $False -State "Published"
 ```
 
-Perintah ini akan membuat produk Manajemen API.
-Anda tidak perlu berlangganan.
+Perintah ini membuat produk API Management.
+Tidak diperlukan langganan.
 
-### Contoh 2: Buat produk yang memerlukan langganan dan persetujuan
+### Contoh 2: Membuat produk yang memerlukan langganan dan persetujuan
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>New-AzureRmApiManagementProduct -Context $apimContext -ProductId "9876543210" -Title "Unlimited" -Description "Subscribers have completely unlimited access to the API. Administrator approval is required." -LegalTerms "Free for all" -ApprovalRequired $True -State "Published" -NotificationPeriod "D10" -SubscriptionPeriod "Y1"
 ```
 
-Perintah ini akan membuat produk.
+Perintah ini membuat produk.
 Langganan dan persetujuan diperlukan.
-Perintah ini mengatur periode pemberitahuan ke 10 hari.
+Perintah ini mengatur periode pemberitahuan menjadi 10 hari.
 Durasi langganan diatur ke satu tahun.
 
 ## PARAMETERS
 
-### -ApprovalRequired
-Menunjukkan apakah langganan untuk produk tersebut memerlukan persetujuan atau tidak.
-Secara default, parameter ini adalah **$False**.
+### -PersetujuanDiperlukan
+Menunjukkan apakah langganan produk memerlukan persetujuan atau tidak.
+Secara default, parameter ini **$False**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan contoh objek **PsApiManagementContext.**
+Menentukan contoh objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Menunjukkan apakah produk tersebut memerlukan langganan.
-Nilai defaultnya adalah **$True**.
+Menunjukkan apakah produk memerlukan langganan.
+Nilai defaultnya **adalah $True**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -183,9 +183,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -LanggananLimit
-Menentukan jumlah maksimum langganan secara bersamaan.
-Nilai default adalah 1.
+### -SubscriptionsLimit
+Menentukan jumlah maksimum langganan bersamaan.
+Nilai defaultnya adalah 1.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -223,9 +223,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProductState, Microsoft.Azure.Commands.ApiManagement.ServiceManagement, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null]]
 
@@ -239,7 +239,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementProduct](./Get-AzureRmApiManagementProduct.md)
 
-[Remove-AzureRmApiManagementProduct](./Remove-AzureRmApiManagementProduct.md)
+[Hapus-AzureRmApiManagementProduct](./Remove-AzureRmApiManagementProduct.md)
 
 [Set-AzureRmApiManagementProduct](./Set-AzureRmApiManagementProduct.md)
 

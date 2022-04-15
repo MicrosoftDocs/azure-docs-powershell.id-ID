@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Set-AzureRMAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Set-AzureRMAutomationWebhook.md
 ms.openlocfilehash: 47d384c6ca55fb428922dc3d9e59de84aa0db166
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420729"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359724"
 ---
 # Set-AzureRmAutomationWebhook
 
 ## SYNOPSIS
-Mengubah webhook untuk buku jalankan Otomatisasi.
+Mengubah webhook untuk runbook Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,21 +29,21 @@ Set-AzureRmAutomationWebhook [-Name] <String> [-IsEnabled] <Boolean> [[-Paramete
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmAutomationWebhook** mengubah webhook untuk runbook Otomatisasi Azure.
+Cmdlet **Set-AzureRmAutomationWebhook** mengubah webhook untuk runbook Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Disable a webhook
+### Contoh 1: Menonaktifkan webhook
 ```
 PS C:\>Set-AzureAutomationWebhook -Name "Webhook01" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -IsEnabled $False
 ```
 
-Perintah ini menonaktifkan webhook yang bernama Webhook01 dalam akun Otomatisasi yang bernama AutomationAccount01.
+Perintah ini menonaktifkan webhook bernama Webhook01 di akun Otomatisasi bernama AutomationAccount01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini memodifikasi webhook.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah webhook.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama webhook yang dimodifikasi cmdlet ini.
+Menentukan nama webhook yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -102,11 +102,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan kamus pasangan kunci/nilai.
-Kunci tersebut adalah nama parameter runbook.
-Nilai tersebut adalah nilai parameter runbook.
-Saat runbook mulai merespons webhook, parameter ini akan disampaikan ke runbook.
+Kuncinya adalah nama parameter runbook.
+Nilainya adalah nilai parameter runbook.
+Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini dikirimkan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi webhook.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah webhook.
 
 ```yaml
 Type: System.String
@@ -136,13 +136,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Collections.IDictionary
 
@@ -156,8 +156,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationWebhook](./Get-AzureRMAutomationWebhook.md)
 
-[New-AzureRmAutomationWebhook](./New-AzureRMAutomationWebhook.md)
+[Baru-AzureRmAutomationWebhook](./New-AzureRMAutomationWebhook.md)
 
-[Remove-AzureRmAutomationWebhook](./Remove-AzureRMAutomationWebhook.md)
+[Hapus-AzureRmAutomationWebhook](./Remove-AzureRMAutomationWebhook.md)
 
 

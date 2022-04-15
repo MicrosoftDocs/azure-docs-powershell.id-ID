@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorVMHost.md
-ms.openlocfilehash: b35a0e29f3f572d47931997e8ff445205a059151
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bb4bd83b5e1c581bae2548ed94219b2ce41f1e94
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319603"
 ---
 # Get-AzLogzMonitorVMHost
 
 ## SYNOPSIS
-List the compute resources currently being monitored by the Logz main account resource.
+Cantumkan sumber daya komputasi yang saat ini sedang dipantau oleh sumber daya akun utama Logz.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitorvmhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzLogzMonitorVMHost -Name <String> -ResourceGroupName <String> [-Subscriptio
 ```
 
 ## DESCRIPTION
-List the compute resources currently being monitored by the Logz main account resource.
+Cantumkan sumber daya komputasi yang saat ini sedang dipantau oleh sumber daya akun utama Logz.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan sumber daya perhitungan yang saat ini sedang dipantau oleh sumber daya monitor
+### Contoh 1: Cantumkan sumber daya komputasi yang sedang dipantau oleh sumber daya monitor
 ```powershell
 PS C:\> Get-AzLogzMonitorVMHost -ResourceGroupName logz-rg-test -Name pwsh-logz04
 
@@ -38,7 +41,7 @@ AgentVersion Id
 1.0          /SUBSCRIPTIONS/xxxx-xxxxxx-xx-xxxxxx/RESOURCEGROUPS/KOYTEST/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/TEST-VM-1
 ```
 
-Perintah ini mencantumkan sumber daya perhitungan yang saat ini sedang dipantau oleh sumber daya monitor.
+Perintah ini mencantumkan sumber daya komputasi yang saat ini sedang dipantau oleh sumber daya monitor.
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

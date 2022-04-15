@@ -4,11 +4,11 @@ ms.assetid: B5A2F2A8-5D20-47E4-AFC5-44F687142A08
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 7b3cd85e7f5057f0a31b3edce6e12c074069aa8e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422053"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311888"
 ---
 # Set-AzureSqlDatabaseServer
 
@@ -25,8 +25,8 @@ Set-AzureSqlDatabaseServer -ServerName <String> -AdminPassword <String> [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureSqlDatabaseServer** mengubah properti instans server Azure SQL Database tertentu.
-Dalam rilis saat ini, Anda hanya dapat memperbarui kata sandi akun administrator untuk server.
+Cmdlet **Set-AzureSqlDatabaseServer** mengubah properti contoh server Azure SQL Database yang ditentukan.
+Dalam rilis saat ini, Anda hanya bisa memperbarui kata sandi akun administrator untuk server.
 
 ## EXAMPLES
 
@@ -40,9 +40,9 @@ Perintah ini mengubah kata sandi akun administrator untuk server Azure SQL Datab
 ## PARAMETERS
 
 ### -AdminPassword
-Menentukan kata sandi akun administrator untuk Azure SQL Database server.
+Menentukan kata sandi akun administrator untuk server Azure SQL Database.
 Anda harus menentukan kata sandi yang kuat.
-Untuk informasi selengkapnya, lihat [Kata Sandi Yang](https://go.microsoft.com/fwlink/p/?LinkId=154152) Kuat ( di Microsoft Developer https://go.microsoft.com/fwlink/p/?LinkId=154152) Network.
+Untuk informasi selengkapnya, lihat [Kata Sandi Kuat](https://go.microsoft.com/fwlink/p/?LinkId=154152) (https://go.microsoft.com/fwlink/p/?LinkId=154152) di Jaringan Pengembang Microsoft.
 
 ```yaml
 Type: String
@@ -56,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -72,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang akan dimodifikasi cmdlet ini.
+Menentukan nama server yang diubah cmdlet ini.
 Tentukan nama server, bukan nama DNS yang sepenuhnya memenuhi syarat.
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,8 +153,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSqlDatabaseServer](./Get-AzureSqlDatabaseServer.md)
 
-[New-AzureSqlDatabaseServer](./New-AzureSqlDatabaseServer.md)
+[Azure BaruSqlDatabaseServer](./New-AzureSqlDatabaseServer.md)
 
-[Remove-AzureSqlDatabaseServer](./Remove-AzureSqlDatabaseServer.md)
+[Hapus-AzureSqlDatabaseServer](./Remove-AzureSqlDatabaseServer.md)
 
 

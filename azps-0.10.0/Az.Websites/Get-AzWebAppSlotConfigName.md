@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
 ms.openlocfilehash: 414e25840b03127bbe94586248641e103c1f7d88
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414845"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142350179"
 ---
 # Get-AzWebAppSlotConfigName
 
 ## SYNOPSIS
-Mendapatkan daftar nama Konfigurasi Slot Web App
+Dapatkan daftar nama Web App Slot Config
 
 ## SYNTAX
 
@@ -42,12 +42,12 @@ Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar nama Pengaturan Aplikasi 
 PS C:\>Get-AzWebAppSlotConfigName -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini memungkinkan App Pengaturan string koneksi terkait dengan Web App bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mendapatkan string Aplikasi Pengaturan dan Koneksi yang berkaitan dengan Aplikasi Web bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

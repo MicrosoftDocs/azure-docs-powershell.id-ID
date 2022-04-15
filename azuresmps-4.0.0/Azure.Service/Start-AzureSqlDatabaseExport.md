@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.SqlDatabase.dll-Help.xml
 ms.assetid: 3005E411-9466-4602-8E07-F4EF8804AB2A
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 910132196d72e1b48d6d6d307924ae8366a35d8caa83a0b6a526ae1720a57a83
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a66d85b8586693a416c8e522c046c1ce8f2ce894
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417684"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311812"
 ---
 # Start-AzureSqlDatabaseExport
 
@@ -35,8 +35,8 @@ Start-AzureSqlDatabaseExport -SqlConnectionContext <ISqlServerConnectionInformat
 
 ## DESCRIPTION
 Cmdlet **Start-AzureSqlDatabaseExport** memulai operasi ekspor dari Azure SQL Database ke penyimpanan Blob.
-Operasi memerlukan konteks koneksi server database.
-Gunakan cmdlet Get-AzureSqlDatabaseImportExportStatus cmdlet untuk mendapatkan status operasi ekspor.
+Operasi ini memerlukan konteks koneksi server database.
+Gunakan cmdlet Get-AzureSqlDatabaseImportExportStatus untuk mendapatkan status operasi ekspor.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ PS C:\> $Container = Get-AzureStorageContainer -Name $ContainerName -Context $St
 PS C:\> $exportRequest = Start-AzureSqlDatabaseExport -SqlConnectionContext $SqlContext -StorageContainer $Container -DatabaseName $DatabaseName -BlobName $BlobName
 ```
 
-Contoh ini memulai proses ekspor dari Azure SQL Database yang memiliki nama yang disimpan di variabel $DatabaseName ke penyimpanan Blob yang disimpan di variabel $BlobName tersebut.
+Contoh ini memulai proses ekspor dari Azure SQL Database yang memiliki nama yang disimpan dalam variabel $DatabaseName ke penyimpanan Blob yang disimpan dalam variabel $BlobName.
 
 ## PARAMETERS
 
 ### -BlobName
-Menentukan nama penyimpanan Blob Azure tempat cmdlet ini mengekspor database.
+Menentukan nama penyimpanan Azure Blob tempat cmdlet ini mengekspor database.
 
 ```yaml
 Type: String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet mengekspor data.
+Menentukan nama database tempat cmdlet ini mengekspor data.
 
 ```yaml
 Type: String
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlConnectionContext
-Menentukan konteks koneksi dari server yang berisi database.
+Menentukan konteks koneksi server yang berisi database.
 
 ```yaml
 Type: ISqlServerConnectionInformation
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -174,9 +174,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)
 
-[Ekspor Database](https://msdn.microsoft.com/en-us/library/azure/dn781282.aspx)
+[Mengekspor Database](https://msdn.microsoft.com/en-us/library/azure/dn781282.aspx)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Get-AzureSqlDatabaseImportExportStatus](./Get-AzureSqlDatabaseImportExportStatus.md)
 

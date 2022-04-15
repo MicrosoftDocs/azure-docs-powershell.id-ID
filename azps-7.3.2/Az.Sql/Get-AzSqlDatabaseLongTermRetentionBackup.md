@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 6597191d427a9ed87b74625fdf2a8edf563445d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0ab98480d33ba4cc209e492426dc931ac213357f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390934"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142366883"
 ---
 # Get-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa cadangan penyimpanan jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaselongtermretentionbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,11 +68,11 @@ Get-AzSqlDatabaseLongTermRetentionBackup [-InputObject] <AzureSqlDatabaseModel> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseLongTermRetentionBackup** mendapatkan semua pencadangan penyimpanan jangka panjang untuk lokasi, server, atau database atau mendapatkan pencadangan penyimpanan jangka panjang tertentu.
+Cmdlet **Get-AzSqlDatabaseLongTermRetentionBackup** mendapatkan semua cadangan penyimpanan jangka panjang untuk lokasi, server, atau database atau mendapatkan cadangan penyimpanan jangka panjang tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua cadangan untuk lokasi
+### Contoh 1: Dapatkan semua cadangan untuk lokasi
 ```powershell
 PS C:\> Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope
 
@@ -101,7 +104,7 @@ BackupStorageRedundancy          : Geo
 
 Perintah ini mendapatkan semua cadangan penyimpanan jangka panjang untuk semua database (yang mungkin hidup atau dihapus) di southeastasia, grup sumber daya hanya akan diatur jika server aktif.
 
-### Contoh 2: Mendapatkan semua cadangan untuk lokasi di bawah grup sumber daya
+### Contoh 2: Dapatkan semua cadangan untuk lokasi di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope -ResourceGroup resourceGroup01
 
@@ -121,7 +124,7 @@ BackupStorageRedundancy      : Geo
 
 Perintah ini mendapatkan semua cadangan penyimpanan jangka panjang untuk semua database (yang mungkin hidup atau dihapus) di bawah grup sumber daya di northeurope.
 
-### Contoh 3: Mendapatkan cadangan penyimpanan jangka panjang tertentu
+### Contoh 3: Dapatkan cadangan penyimpanan jangka panjang tertentu
 ```powershell
 PS C:\> Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope -ServerName server01 -DatabaseName database01 -BackupName "601061b7-d10b-46e0-bf77-a2bfb16a6add;131655666550000000"
 
@@ -159,9 +162,9 @@ ResourceGroupName          :
 BackupStorageRedundancy      : Geo
 ```
 
-Perintah ini akan mendapatkan semua pencadangan penyimpanan jangka panjang untuk database01
+Perintah ini mendapatkan semua cadangan penyimpanan jangka panjang untuk database01
 
-### Contoh 5: Mendapatkan cadangan penyimpanan jangka panjang menggunakan pemfilteran
+### Contoh 5: Dapatkan cadangan penyimpanan jangka panjang menggunakan pemfilteran
 ```powershell
 PS C:\> Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope -ServerName server01 -DatabaseName database01 -BackupName "601061b7*"
 
@@ -190,7 +193,7 @@ ResourceGroupName          :
 BackupStorageRedundancy      : Geo
 ```
 
-Perintah ini akan mendapatkan semua cadangan dengan nama yang dimulai dengan "601061b7"
+Perintah ini mendapatkan semua cadangan dengan nama yang dimulai dengan "601061b7"
 
 ## PARAMETERS
 
@@ -210,7 +213,7 @@ Accept wildcard characters: True
 ```
 
 ### -DatabaseName
-Nama akun Azure SQL Database dari cadangan berasal.
+Nama Azure SQL Database cadangan berasal.
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -DatabaseState
 Status database yang cadangannya ingin Anda temukan, Hidup, Dihapus, atau Semua.
-Default untuk Semua
+Default ke Semua
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database yang akan mendapatkan cadangan.
+Objek database untuk mendapatkan cadangan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server pencadangan berada di bawah.
+Nama server Azure SQL cadangan berada di bawah.
 
 ```yaml
 Type: System.String
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -417,4 +420,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlDatabaseBackupLongTermRetentionPolicy](./Set-AzSqlDatabaseBackupLongTermRetentionPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

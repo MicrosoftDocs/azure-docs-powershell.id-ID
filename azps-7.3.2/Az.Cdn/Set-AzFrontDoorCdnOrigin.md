@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: 4220551c55ee0576d53c460e984a60f6020df947
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4d76cd07fe8f3f746cb6d109b63b182e41eda590
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572080"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321115"
 ---
 # Set-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
-Memperbarui origin.
+Memperbarui asal.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Set-AzFrontDoorCdnOrigin -Origin <PSAfdOrigin> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Memperbarui origin.
+Memperbarui asal.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Memperbarui origin.
 Set-AzFrontDoorCdnOrigin -Origin $originObject
 ```
 
-Memperbarui origin.
+Memperbarui asal.
 
 ## PARAMETERS
 
@@ -64,8 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Alamat origin.
-Nama domain, alamat IPv4, dan alamat IPv6 didukung. Ini harus unik di seluruh origin di titik akhir.
+Alamat asal.
+Nama domain, alamat IPv4, dan alamat IPv6 didukung. Ini harus unik di seluruh asal usul di titik akhir.
 
 ```yaml
 Type: String
@@ -79,9 +82,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpPort
+### -HttpPort
 Nilai port HTTP.
-Harus berada antara 1 sampai 65535.
+Harus antara 1 dan 65535.
 
 ```yaml
 Type: Int32
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 
 ### -HttpsPort
 Nilai port HTTPS.
-Harus berada antara 1 sampai 65535.
+Harus antara 1 dan 65535.
 
 ```yaml
 Type: Int32
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Origin
-Objek origin Azure Front Pintu.
+Objek asal Pintu Depan Azure.
 
 ```yaml
 Type: PSAfdOrigin
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup origin Pintu Depan Azure.
+Nama grup asal Pintu Depan Azure.
 
 ```yaml
 Type: String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostHeader
-Nilai header host dikirim ke asal dengan setiap permintaan.
+Nilai header host yang dikirim ke asal dengan setiap permintaan.
 Jika Anda membiarkan ini kosong, nama host permintaan menentukan nilai ini.
 
 ```yaml
@@ -173,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas origin dalam grup origin tertentu untuk memuat keseimbangan.
-Prioritas yang lebih tinggi tidak akan digunakan untuk keseimbangan muat jika asal prioritas rendah sehat.
+Prioritas asal dalam grup asal yang diberikan untuk keseimbangan muat.
+Prioritas yang lebih tinggi tidak akan digunakan untuk keseimbangan beban jika asal prioritas yang lebih rendah sehat.
 
 ```yaml
 Type: Int32
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkRequestMessage
-Pesan permintaan untuk meminta persetujuan atas sumber daya tautan pribadi bersama.
+Pesan permintaan untuk meminta persetujuan sumber daya tautan pribadi bersama.
 
 ```yaml
 Type: String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Nama profil Pintu Depan Azure.
+Nama profil Azure Front Door.
 
 ```yaml
 Type: String
@@ -263,8 +266,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Bobot origin dalam grup origin tertentu untuk memuat keseimbangan.
+### -Berat
+Berat asal dalam grup asal tertentu untuk keseimbangan beban.
 
 ```yaml
 Type: Int32
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -310,11 +313,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceKey.md
-ms.openlocfilehash: 1e92ffa4015256f4af26189b4192bca289596541
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6bb898c8d115e32747e12388611a2619ccf8a2df
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556139"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319369"
 ---
 # Get-AzMediaServiceKey
 
 ## SYNOPSIS
-Mendapatkan informasi penting untuk mengakses titik akhir REST yang terkait dengan layanan media.
+Mendapatkan informasi utama untuk mengakses titik akhir REST yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Get-AzMediaServiceKey [-ResourceGroupName] <String> [-AccountName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzMediaServiceKey** mendapatkan informasi kunci untuk mengakses titik akhir Representational State Transfer (REST) yang terkait dengan layanan media Azure.
+Cmdlet **Get-AzMediaServiceKey** mendapatkan informasi penting untuk mengakses titik akhir Representational State Transfer (REST) yang terkait dengan layanan media Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi penting untuk mengakses layanan media
+### Contoh 1: Dapatkan informasi utama untuk mengakses layanan media
 ```
 PS C:\>Get-AzMediaServiceKey -ResourceGroupName "ResourceGroup001" -AccountName "MediaService001"
 ```
 
-Perintah ini mendapatkan informasi utama untuk mengakses layanan media bernama MediaService001 yang dimiliki oleh grup sumber daya bernama ResourceGroup001.
+Perintah ini mendapatkan informasi kunci untuk mengakses layanan media bernama MediaService001 milik grup sumber daya bernama ResourceGroup001.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama layanan media yang mendapatkan kunci layanan media dari cmdlet ini.
+### -AccountName
+Menentukan nama layanan media tempat cmdlet ini mendapatkan kunci layanan media.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

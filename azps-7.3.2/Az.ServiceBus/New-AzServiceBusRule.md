@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusRule.md
-ms.openlocfilehash: e0106a098430f3bf11e7c33d97eeb534dc465731
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ad14a51aa5f8ba7a16e6464e8cb5e69fb321b504
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142367603"
 ---
 # New-AzServiceBusRule
 
 ## SYNOPSIS
-Membuat aturan baru untuk Langganan Topik yang diberikan. 
+Membuat aturan baru untuk Langganan Topik tertentu. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,12 +53,12 @@ Cmdlet New-AzServiceBusRule membuat aturan baru untuk Langganan yang ditentukan.
 PS C:\> New-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -Name SBRule -SqlExpression "mysqlexpression='test'" -ActionSqlExpression "SET myAction='test'" -RequiresPreprocessing
 ```
 
-Cmdlet New-AzServiceBusRule membuat aturan baru untuk Langganan dengan ActionFilter yang ditentukan.
+Cmdlet New-AzServiceBusRule membuat aturan baru untuk Langganan dengan Filter Tindakan yang ditentukan.
 
 ## PARAMETERS
 
 ### -ActionSqlExpression
-Ekspresi Tindakan SqlFilter
+Ekspresi SqlFilter Tindakan
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresPreprocessing
-Tindakan Memerlukan Praproses
+Tindakan Memerlukan Pra-pemrosesan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

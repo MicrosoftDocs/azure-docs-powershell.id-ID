@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountDeployment.md
-ms.openlocfilehash: 56049a43de0061f073dab0a872898e668dcf9baa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 966e24b2d7d608c1caeba129ca511dc70e1cea56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386926"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142320971"
 ---
 # Get-AzCognitiveServicesAccountDeployment
 
 ## SYNOPSIS
-Mendapatkan Penyebaran akun Layanan Kognitif
+Dapatkan Penggunaan akun Cognitive Services
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCognitiveServicesAccountDeployment [-ResourceId] <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Mendapatkan Penyebaran akun Layanan Kognitif
+Dapatkan Penggunaan akun Cognitive Services
 
 ## EXAMPLES
 
@@ -41,11 +44,11 @@ Mendapatkan Penyebaran akun Layanan Kognitif
 Get-AzCognitiveServicesAccountDeployment -ResourceGroupName cognitive-services-resource-group -AccountName resource-name
 ```
 
-Mendapatkan Penyebaran akun Layanan Kognitif
+Dapatkan Penggunaan akun Cognitive Services
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama Akun Layanan Kognitif.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

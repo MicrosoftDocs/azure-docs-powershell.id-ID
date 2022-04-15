@@ -6,22 +6,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSoftwareUpdateMachineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSoftwareUpdateMachineRun.md
 ms.openlocfilehash: f583ccfbfd0ef7178500d74f120f3907d083b8ef
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140863796"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359753"
 ---
 # Get-AzureRmAutomationSoftwareUpdateMachineRun
 
 ## SYNOPSIS
-Mendapatkan daftar mesin konfigurasi pembaruan perangkat lunak otomatisasi Azure yang dijalankan.
+Mendapatkan daftar mesin konfigurasi pembaruan perangkat lunak otomatisasi Azure yang berjalan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationSoftwareUpdateMachineRun [-Status <SoftwareUpdateMachineRunStatus>]
  [-TargetComputer <String>] [-ResourceGroupName] <String> [-AutomationAccountName] <String>
@@ -49,12 +49,12 @@ Get-AzureRmAutomationSoftwareUpdateMachineRun [-SoftwareUpdateRun <SoftwareUpdat
 ```
 
 ## DESCRIPTION
-Cmdlet ini mengembalikan daftar mesin yang berjalan. Setiap proses pembaruan perangkat lunak akan memicu mesin yang dijalankan untuk setiap komputer target konfigurasi pembaruan perangkat lunak. Untuk menjalankan mesin tertentu, lewati parameter Id. Anda dapat mencantumkan semua mesin yang berjalan, semua berjalan untuk komputer tertentu, semua berjalan dengan status khusus dengan memberikan parameter terkait.
+Cmdlet ini mengembalikan daftar mesin yang dijalankan. Setiap pembaruan perangkat lunak yang dijalankan akan memicu mesin berjalan untuk setiap mesin target konfigurasi pembaruan perangkat lunak. Untuk menjalankan mesin tertentu, berikan parameter Id. Anda bisa mencantumkan semua mesin yang berjalan, semua berjalan untuk komputer tertentu, semua berjalan dengan status tertentu dengan melewati parameter yang terkait.
 
 ## EXAMPLES
 
 ### Contoh 1
-Contoh ini mengembalikan semua mesin yang gagal dijalankan untuk komputer virtual Azure yang ditentukan.
+Contoh ini mengembalikan semua mesin yang gagal dijalankan untuk mesin virtual azure yang ditentukan.
 
 
 ```powershell
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id proses mesin pembaruan perangkat lunak.
+Id mesin pembaruan perangkat lunak yang dijalankan.
 
 ```yaml
 Type: System.Guid
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateRunId
-Id proses pembaruan perangkat lunak.
+Id dari menjalankan pembaruan perangkat lunak.
 
 ```yaml
 Type: System.Guid
@@ -186,8 +186,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetComputer
-komputer target untuk menjalankan komputer.
-Dapat berupa nama komputer non-azure atau id sumber daya Azure VM.
+target komputer untuk mesin berjalan.
+Dapat berupa nama komputer non-azure atau id sumber daya VM azure.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
 ms.openlocfilehash: 7e4d36e5a6e966760953d1130f2077522810fc9b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140314765"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142350089"
 ---
 # Update-AzADDomainService
 
 ## SYNOPSIS
-Operasi Perbarui Layanan Domain bisa digunakan untuk memperbarui penyebaran yang sudah ada.
-Panggilan pembaruan hanya mendukung properti yang tercantum dalam badan PATCH.
+Operasi Perbarui Layanan Domain dapat digunakan untuk memperbarui penyebaran yang sudah ada.
+Panggilan pembaruan hanya mendukung properti yang tercantum dalam isi PATCH.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.addomainservices/update-azaddomainservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/update-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,12 +51,12 @@ Update-AzADDomainService -InputObject <IAdDomainServicesIdentity> [-DomainConfig
 ```
 
 ## DESCRIPTION
-Operasi Perbarui Layanan Domain bisa digunakan untuk memperbarui penyebaran yang sudah ada.
-Panggilan pembaruan hanya mendukung properti yang tercantum dalam badan PATCH.
+Operasi Perbarui Layanan Domain dapat digunakan untuk memperbarui penyebaran yang sudah ada.
+Panggilan pembaruan hanya mendukung properti yang tercantum dalam isi PATCH.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui AzADDomainService Menurut ResourceGroupName dan Nama
+### Contoh 1: Update AzADDomainService By ResourceGroupName and Name
 ```powershell
 PS C:\> $ADDomainSetting = New-AzADDomainServiceDomainSecuritySettingObject -TlsV1 Disabled
 Update-AzADDomainService -Name youriADdomain -ResourceGroupName youriADdomain -DomainSecuritySetting $ADDomainSetting
@@ -66,9 +66,9 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Perbarui AzADDomainService Menurut ResourceGroupName dan Nama
+Perbarui AzADDomainService Menurut ResourceGroupName dan Name
 
-### Contoh 2: Perbarui AzADDomainService By Inputobject
+### Contoh 2: Update AzADDomainService By Inputobject
 ```powershell
 PS C:\> $getAzAddomain = Get-AzADDomainService -Name youriADdomain -ResourceGroupName youriADdomain
 $ADDomainSetting = New-AzADDomainServiceDomainSecuritySettingObject -TlsV1 Disabled
@@ -79,7 +79,7 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Perbarui AzADDomainService menurut Inputobject
+Perbarui AzADDomainService Dengan Inputobject
 
 ## PARAMETERS
 
@@ -128,7 +128,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DomainSecuritySettingNtlmv1
+### -DomainSecuritySettingNtlmV1
 Bendera untuk menentukan apakah NtlmV1 diaktifkan atau tidak dinonaktifkan.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingSyncNtlmPassword
-Bendera untuk menentukan apakah SyncNtlmPasswords diaktifkan atau dinonaktifkan.
+Bendera untuk menentukan apakah SyncNtlmPasswords diaktifkan atau tidak.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainSecuritySettingTlsV1
-Bendera untuk menentukan apakah TlsV1 diaktifkan atau dinonaktifkan.
+Bendera untuk menentukan apakah TlsV1 diaktifkan atau tidak dinonaktifkan.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilteredSync
-Bendera diaktifkan atau Dinonaktifkan untuk mengaktifkan Sinkronisasi berfilter berbasis grup
+Bendera Diaktifkan atau Dinonaktifkan untuk mengaktifkan sinkronisasi terfilter berbasis grup
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForestTrust
-Daftar pengaturan untuk konstruksi Resource Forest To, lihat bagian CATATAN untuk properti FORESTTRUST dan membuat tabel hash.
+Daftar pengaturan untuk Hutan Sumber Daya Untuk membangun, lihat bagian CATATAN untuk properti FORESTTRUST dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IForestTrust[]
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.IAdDomainServicesIdentity
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingExternalAccess
-Bendera untuk menentukan apakah akses LDAP Aman melalui internet diaktifkan atau dinonaktifkan.
+Bendera untuk menentukan apakah akses LDAP Aman atau tidak melalui internet diaktifkan atau dinonaktifkan.
 
 ```yaml
 Type: System.String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingLdaps
-Bendera untuk menentukan apakah LDAP Aman diaktifkan atau tidak.
+Bendera untuk menentukan apakah LDAP Aman diaktifkan atau tidak dinonaktifkan.
 
 ```yaml
 Type: System.String
@@ -279,8 +279,8 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingPfxCertificate
-Sertifikat diperlukan untuk mengonfigurasi LDAP Aman.
-Parameter yang disampaikan di sini harus mewakili base64encoded dari file pfx sertifikat.
+Sertifikat yang diperlukan untuk mengonfigurasi LDAP Aman.
+Parameter yang lolos di sini harus berupa representasi base64encoded dari file pfx sertifikat.
 
 ```yaml
 Type: System.String
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaSet
-Daftar ReplikaSet Untuk dibuat, lihat bagian CATATAN untuk properti REPLIKASET dan membuat tabel hash.
+Daftar ReplicaSet Untuk dibangun, lihat bagian CATATAN untuk properti REPLICASET dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IReplicaSet[]
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya dalam langganan pengguna.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -446,8 +446,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -477,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -493,7 +493,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -508,7 +508,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -528,19 +528,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 FORESTTRUST <IForestTrust[]>: Daftar pengaturan untuk Hutan Sumber Daya
-  - `[FriendlyName <String>]`: Nama yang Mudah Digunakan
-  - `[RemoteDnsIP <String>]`: Ips Dns Jarak Jauh
+  - `[FriendlyName <String>]`: Nama bersahabat
+  - `[RemoteDnsIP <String>]`: Ip Dns Jarak Jauh
   - `[TrustDirection <String>]`: Arah Kepercayaan
-  - `[TrustPassword <String>]`: Percayai Kata Sandi
+  - `[TrustPassword <String>]`: Kata Sandi Kepercayaan
   - `[TrustedDomainFqdn <String>]`: FQDN Domain Tepercaya
 
 INPUTOBJECT <IAdDomainServicesIdentity>: Parameter Identitas
   - `[DomainServiceName <String>]`: Nama layanan domain.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Namanya peka huruf besar/huruf.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Nama ini tidak peka huruf besar kecil.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
-REPLICASET <IReplicaSet[]>: Daftar ReplikaSet
+REPLICASET <IReplicaSet[]>: Daftar ReplicaSet
   - `[Location <String>]`: Lokasi jaringan virtual
   - `[SubnetId <String>]`: Nama jaringan virtual tempat Layanan Domain akan digunakan. Id subnet tempat Layanan Domain akan digunakan. /virtualNetwork/vnetName/subnets/subnetName.
 

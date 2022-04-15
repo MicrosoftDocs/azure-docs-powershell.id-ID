@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementCache.md
 ms.openlocfilehash: 911c1e8b0cc010541d5acb55ca4d0526b5728bfc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140144367"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142349639"
 ---
 # Remove-AzApiManagementCache
 
@@ -18,7 +18,7 @@ ms.locfileid: "140144367"
 Menghapus entitas singgahan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementcache) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +41,11 @@ Remove-AzApiManagementCache -ResourceId <String> [-PassThru] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementCache** menghapus entitas singgahan.
+Cmdlet **Remove-AzApiManagementCache** menghapus entitas cache.
 
 ## EXAMPLES
 
-### Contoh 1 : Hapus entitas Singgahan
+### Contoh 1 : Hapus entitas Cache
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Remove-AzApiManagementCache -Context $apimContext -CacheId "centralus"
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil.
 Parameter ini bersifat opsional.
 Nilai default adalah false.
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId of Cache. Parameter ini diperlukan.
+Arm ResourceId dari Cache. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

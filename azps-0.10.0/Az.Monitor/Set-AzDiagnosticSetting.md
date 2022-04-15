@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
 ms.openlocfilehash: 5a9594c4261e3de99090d875e07997668fadea57
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422850"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142350631"
 ---
 # Set-AzDiagnosticSetting
 
@@ -38,9 +38,9 @@ Set-AzDiagnosticSetting -InputObject <PSServiceDiagnosticSettings> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDiagnosticSetting** mengaktifkan atau menonaktifkan setiap kali kategori grain dan log untuk sumber daya tertentu.
-Log dan metrik disimpan di akun penyimpanan tertentu.
-Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Set-AzDiagnosticSetting** mengaktifkan atau menonaktifkan setiap kali grain dan kategori log untuk sumber daya tertentu.
+Log dan metrik disimpan dalam akun penyimpanan tertentu.
+Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Perintah ini memungkinkan semua metrik dan log yang tersedia untuk Resource01.
 PS C:\>Set-AzDiagnosticSetting -ResourceId "Resource01" -Enabled $False
 ```
 
-Perintah ini menonaktifkan semua metrik dan log yang tersedia untuk Sumber Daya sumber daya01.
+Perintah ini menonaktifkan semua metrik dan log yang tersedia untuk sumber daya Resource01.
 
 ### Contoh 3: Mengaktifkan/menonaktifkan beberapa kategori metrik
 ```
@@ -87,7 +87,7 @@ Logs
 Perintah ini menonaktifkan kategori metrik yang disebut Kategori1 dan Kategori2.
 Semua kategori lainnya tetap sama.
 
-### Contoh 4: Aktifkan/nonaktifkan beberapa kategori log
+### Contoh 4: Mengaktifkan/menonaktifkan beberapa kategori log
 ```
 PS C:\>Set-AzDiagnosticSetting -ResourceId "Resource01" -Enabled $True -Category Category1,Category2
 StorageAccountId   : <storageAccountId>
@@ -114,28 +114,28 @@ Logs
 ```
 
 Perintah ini mengaktifkan Kategori1 dan Kategori2.
-Semua metrik dan kategori log lainnya tetap sama.
+Semua kategori metrik dan log lainnya tetap sama.
 
-### Contoh 4: Mengaktifkan time grain dan beberapa kategori
+### Contoh 4: Mengaktifkan butir waktu dan beberapa kategori
 ```
 PS C:\>Set-AzDiagnosticSetting -ResourceId "Resource01" -Enabled $True -Category Category1,Category2 -Timegrain PT1M
 ```
 
-Perintah ini hanya mengaktifkan Category1, Category2, dan time grain PT1M.
-Semua grain dan kategori waktu lain tidak berubah.
+Perintah ini hanya memungkinkan Kategori1, Kategori2, dan biji-bijian waktu PT1M.
+Semua biji-bijian dan kategori lain tidak berubah.
 
 ### Contoh 5: Menggunakan pipeline
 ```
 PS C:\>Get-AzDiagnosticSetting -ResourceId "Resource01" | Set-AzDiagnosticSetting -Enabled $True -Category Category1,Category2
 ```
 
-Perintah ini menggunakan saluran PowerShell untuk mengatur pengaturan diagnostik (tidak ada perubahan dibuat).
+Perintah ini menggunakan saluran PowerShell untuk mengatur (tidak ada perubahan yang dibuat) pengaturan diagnostik.
 
 ## PARAMETERS
 
 ### -Kategori
-Menentukan daftar kategori log untuk diaktifkan atau dinonaktifkan, menurut nilai *Diaktifkan*.
-Jika tidak ada kategori yang ditentukan, perintah ini beroperasi di semua kategori yang didukung.
+Menentukan daftar kategori log untuk diaktifkan atau dinonaktifkan, sesuai dengan nilai *Diaktifkan*.
+Jika tidak ada kategori yang ditentukan, perintah ini beroperasi pada semua kategori yang didukung.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -164,9 +164,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 Menunjukkan apakah akan mengaktifkan diagnostik.
-Tentukan $True mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
+Tentukan $True untuk mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
 
 ```yaml
 Type: System.Boolean
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubAuthorizationRuleId
-Id aturan otorisasi hub kejadian
+Id aturan otorisasi hub acara
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportToResourceSpecific
-Flag mengindikasikan bahwa ekspor ke LA harus dilakukan ke tabel sumber daya tertentu, alias tabel skema khusus atau tetap, dibandingkan dengan tabel **skema dinamis default** yang disebut **AzureDiagnostics**.
+Bendera yang mengindikasikan bahwa ekspor ke LA harus dilakukan ke tabel sumber daya tertentu, alias. tabel skema khusus atau tetap, dibandingkan dengan tabel skema dinamis **default** yang disebut **AzureDiagnostics**.
 
 Argumen ini hanya efektif ketika argumen **-workspaceId** juga diberikan.
 
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input (mungkin dari saluran.) Nama dan resourceId akan diekstrak dari objek ini.
+Objek input (dimungkinkan dari pipeline.) Nama dan resourceId akan diekstrak dari objek ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 
 ### -MetricCategory
 Daftar kategori metrik.
-Jika tidak ada kategori yang ditentukan, perintah ini beroperasi di semua kategori yang didukung.
+Jika tidak ada kategori yang ditentukan, perintah ini beroperasi pada semua kategori yang didukung.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengaturan diagnostik. Nilai defaultnya adalah **layanan.**
+Nama pengaturan diagnostik. Nilai defaultnya adalah **layanan**.
 
 ```yaml
 Type: System.String
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceBusRuleId
-Aturan Bus Layanan id.
+Id Aturan Bus Layanan.
 
 ```yaml
 Type: System.String
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Menentukan ID akun Storage untuk menyimpan data.
+Menentukan ID akun Storage tempat menyimpan data.
 
 ```yaml
 Type: System.String
@@ -349,8 +349,8 @@ Accept wildcard characters: False
 ```
 
 ### -Timegrain
-Menentukan grains waktu untuk diaktifkan atau dinonaktifkan untuk metrik, menurut nilai *Enabled*.
-Jika Anda tidak menentukan tinggi waktu, perintah ini beroperasi pada grain-grain waktu yang tersedia.
+Menentukan butir waktu untuk mengaktifkan atau menonaktifkan metrik, sesuai dengan nilai *Diaktifkan*.
+Jika Anda tidak menentukan butir waktu, perintah ini beroperasi pada semua biji-bijian waktu yang tersedia.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -365,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceId
-Id sumber daya dari ruang kerja Analitik Log untuk mengirim log/metrik ke
+Id sumber daya ruang kerja Analitik Log untuk mengirim log/metrik ke
 
 ```yaml
 Type: System.String
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -395,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -410,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -420,11 +420,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
@@ -434,5 +434,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzDiagnosticSetting](./Get-AzDiagnosticSetting.md) 
+[Get-AzDiagnosticSetting](./Get-AzDiagnosticSetting.md)
  [Remove-AzDiagnosticSetting](./Remove-AzDiagnosticSetting.md)

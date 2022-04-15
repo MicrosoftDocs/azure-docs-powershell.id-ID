@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.cogni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccountSkus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/CognitiveServices/Commands.Management.CognitiveServices/help/Get-AzureRmCognitiveServicesAccountSkus.md
-ms.openlocfilehash: 0a3809cf3753dd8e0032df67a75712d72b0a3adfb77b0ccdfb53d6603382724a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e1bacc62ca7efc3bd453be93196e83b0b6d67853
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859356"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359513"
 ---
 # Get-AzureRmCognitiveServicesAccountSkus
 
 ## SYNOPSIS
-Dapatkan SKU yang tersedia untuk akun.
+Mendapatkan SKU yang tersedia untuk akun.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,10 +36,10 @@ Get-AzureRmCognitiveServicesAccountSkus [-Type <String>] [-Location <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmCognitiveServicesAccountSkus** mendapatkan SKU yang tersedia untuk akun Layanan Kognitif.
-SKU adalah rencana tingkat untuk akun.
+SKU adalah paket tingkat untuk sebuah akun.
 Ini menentukan harga, batas panggilan, dan tarif untuk akun tersebut.
 F0 SKU adalah tingkat gratis.
-Tingkatan berbayar meliputi S0, S1, S2, dan lain-lain.
+Tingkat berbayar mencakup S0, S1, S2, dan seterusnya.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ S0   Standard
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi tempat akun ditetapkan.
+Menentukan nama grup sumber daya tempat akun ditetapkan.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

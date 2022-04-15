@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteFilterRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteFilterRuleConfig.md
-ms.openlocfilehash: 68ed44fea9ace54e963e9bcb53ebb9c71e6b16c0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c29748d5ba79d050d7d27845532edb9b830cd035
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999477"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142344023"
 ---
 # Set-AzRouteFilterRuleConfig
 
 ## SYNOPSIS
-Mengubah aturan filter rute dari filter rute.
+Mengubah aturan filter rute filter rute.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutefilterruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzRouteFilterRuleConfig -RouteFilter <PSRouteFilter> [-Force] -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRouteFilterRuleConfig** mengubah aturan filter rute dari filter rute.
+**Cmdlet Set-AzRouteFilterRuleConfig** mengubah aturan filter rute filter rute.
 
 ## EXAMPLES
 
@@ -37,15 +40,15 @@ PS C:\> $rf = Set-AzRouteFilterRuleConfig -RouteFilter $rf -Name "Rule01" -Acces
 PS C:\> Set-AzRouteFilter -RouteFilter $rf
 ```
 
-Perintah pertama mendapatkan filter rute bernama RouteFilter01 dan menyimpannya dalam $rf variabel.
-Perintah kedua mengubah aturan filter rute bernama Rule01 dan menyimpan filter rute yang diperbarui dalam $rf variabel.
+Perintah pertama mendapatkan filter rute bernama RouteFilter01 dan menyimpannya dalam variabel $rf.
+Perintah kedua mengubah aturan filter rute bernama Rule01 dan menyimpan filter rute yang diperbarui dalam variabel $rf.
 Perintah ketiga menyimpan filter rute yang diperbarui.
 
 ## PARAMETERS
 
 ### -Access
 Tipe akses aturan.
-Nilai yang mungkin adalah: 'Perbolehkan', 'Tolak'
+Nilai yang memungkinkan adalah: 'Izinkan', 'Tolak'
 
 ```yaml
 Type: System.String
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommunityList
-Daftar nilai komunitas yang filter rute akan difilter
+Daftar nilai komunitas yang akan difilter filter rute
 
 ```yaml
 Type: System.String[]
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -RouteFilterRuleType
 Tipe aturan filter rute aturan.
-Nilai yang mungkin adalah: 'Komunitas'
+Nilai yang memungkinkan adalah: 'Komunitas'
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,8 +210,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRouteFilter](./Get-AzRouteFilter.md)
 
-[New-AzRouteFilter](./New-AzRouteFilter.md)
+[Filter AzRoute Baru](./New-AzRouteFilter.md)
 
-[Remove-AzRouteFilter](./Remove-AzRouteFilter.md)
+[Hapus-AzRouteFilter](./Remove-AzRouteFilter.md)
 
 [Set-AzRouteFilter](./Set-AzRouteFilter.md)

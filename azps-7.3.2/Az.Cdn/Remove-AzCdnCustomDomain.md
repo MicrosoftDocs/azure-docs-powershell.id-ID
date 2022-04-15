@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnCustomDomain.md
-ms.openlocfilehash: ad1c09a92769e6134258fd62400d032753139dc7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5f71febdbbaf379ce8dc4632dcdd4415655f5e18
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010614"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321367"
 ---
 # Remove-AzCdnCustomDomain
 
 ## SYNOPSIS
 Menghapus domain kustom.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azcdncustomdomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzCdnCustomDomain -CdnCustomDomain <PSCustomDomain> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCdnCustomDomain** menghapus domain kustom dari titik akhir Azure Content Delivery Network (CDN).
+**Cmdlet Remove-AzCdnCustomDomain** menghapus domain kustom dari titik akhir Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Menentukan nama titik akhir yang cmdlet ini hapus domain kustomnya.
+Menentukan nama titik akhir dari mana cmdlet ini menghapus domain kustom.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil asal cmdlet ini menghapus domain kustom.
+Menentukan nama profil tempat cmdlet ini menghapus domain kustom.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

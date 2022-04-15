@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnRoute.md
-ms.openlocfilehash: c63bffc2353e478703116b4a2c12df564f4c5fec
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 204375ad00823effc991a485703c24af260e47a6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001757"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321133"
 ---
 # Set-AzFrontDoorCdnRoute
 
 ## SYNOPSIS
 Memperbarui rute.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Memperbarui rute.
 ## PARAMETERS
 
 ### -CustomDomainId
-Id sumber daya dari domain kustom Azure Front Pintu.
+Id sumber daya domain kustom Azure Front Door.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Nama titik akhir Azure Front Pintu.
+Nama titik akhir Pintu Depan Azure.
 
 ```yaml
 Type: String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardingProtocol
-Protokol aturan ini akan digunakan ketika meneruskan lalu lintas ke backend.
+Protokol aturan ini akan digunakan saat meneruskan lalu lintas ke backend.
 
 ```yaml
 Type: String
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpsRedirect
+### -HttpsRedirect
 Apakah akan mengalihkan lalu lintas HTTP ke lalu lintas HTTPS secara otomatis.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupId
-Id sumber daya dari grup asal Pintu Depan Azure.
+Id sumber daya grup asal Pintu Depan Azure.
 
 ```yaml
 Type: String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginPath
-Jalur direktori pada asal yang dapat digunakan Pintu Depan Azure untuk mengambil konten dari, misalnya contoso.cloudapp.net/originpath.
+Jalur direktori di asal yang dapat digunakan Azure Front Door untuk mengambil konten, misalnya contoso.cloudapp.net/originpath.
 
 ```yaml
 Type: String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Nama profil Pintu Depan Azure.
+Nama profil Azure Front Door.
 
 ```yaml
 Type: String
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -QueryStringCachingBestringior
-Menentukan cara permintaan cache Azure Front Pintu yang menyertakan string kueri.
+### -QueryStringCachingBehavior
+Menentukan cara Azure Front Door melakukan cache permintaan yang menyertakan string kueri.
 
 ```yaml
 Type: String
@@ -200,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Route
-Objek rute Azure Front Pintu.
+### -Rute
+Objek rute Pintu Depan Azure.
 
 ```yaml
 Type: PSAfdRoute
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetId
-Id sumber daya dari kumpulan aturan Pintu Depan Azure.
+Id sumber daya dari aturan Azure Front Door diatur.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -245,7 +248,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SupportedProtocol
+### -DidukungProtocol
 Daftar protokol yang didukung untuk rute ini.
 
 ```yaml
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

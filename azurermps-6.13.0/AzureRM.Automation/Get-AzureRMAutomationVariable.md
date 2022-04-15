@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRMAutomationVariable.md
 ms.openlocfilehash: 7bd28149de46faa06420e87be8b83e7749ea248e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426665"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142360207"
 ---
 # Get-AzureRmAutomationVariable
 
@@ -22,7 +22,7 @@ Mendapatkan variabel Otomatisasi.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationVariable [-ResourceGroupName] <String> [-AutomationAccountName] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -46,15 +46,15 @@ PS C:\>$Variable = Get-AzureRmAutomationVariable -AutomationAccountName "Contoso
 PS C:\> $Value = $Variable.value
 ```
 
-Perintah pertama mendapatkan variabel Otomatisasi yang bernama Variable06 dalam akun bernama Contoso17.
-Perintah menyimpan objek tersebut dalam $Variable variabel.
-Perintah kedua menggunakan notasi titik standar untuk merujuk ke **properti** nilai $Variable.
-Perintah menyimpan nilai dalam $value variabel.
+Perintah pertama mendapatkan variabel Otomatisasi bernama Variable06 dalam akun bernama Contoso17.
+Perintah menyimpan objek tersebut dalam variabel $Variable.
+Perintah kedua menggunakan notasi titik standar untuk merujuk ke properti **nilai** $Variable.
+Perintah menyimpan nilai dalam variabel $value.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi variabel yang akan dapatkan cmdlet ini.
+Menentukan nama akun Otomatisasi yang berisi variabel yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama variabel yang akan didaangkan cmdlet ini.
+Menentukan nama variabel yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,9 +128,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmAutomationVariable](./New-AzureRMAutomationVariable.md)
+[AzureRmAutomation BaruVariable](./New-AzureRMAutomationVariable.md)
 
-[Remove-AzureRmAutomationVariable](./Remove-AzureRMAutomationVariable.md)
+[Hapus-AzureRmAutomationVariable](./Remove-AzureRMAutomationVariable.md)
 
 [Set-AzureRmAutomationVariable](./Set-AzureRMAutomationVariable.md)
 

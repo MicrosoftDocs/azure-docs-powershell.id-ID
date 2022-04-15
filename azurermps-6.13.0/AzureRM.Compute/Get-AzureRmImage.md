@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Get-AzureRmImage.md
 ms.openlocfilehash: 761a80feb7cf60479fdaba12605be6d670428641
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140867747"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359182"
 ---
 # Get-AzureRmImage
 
@@ -36,7 +36,7 @@ Cmdlet **Get-AzureRmImage** mendapatkan properti gambar.
 PS C:\> Get-AzureRmImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
 ```
 
-Perintah ini mendapatkan properti gambar yang bernama 'Image01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini mendapatkan properti gambar bernama 'Image01' dalam grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```
@@ -50,12 +50,12 @@ Perintah ini mendapatkan properti semua gambar dalam grup sumber daya 'ResourceG
 PS C:\> Get-AzureRmImage
 ```
 
-Perintah ini mendapatkan properti semua gambar dalam langganan.
+Perintah ini mendapatkan properti semua gambar di bawah langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan kueri ekspresi perluas.
+Menentukan kueri perluas ekspresi.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionMarketplace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionMarketplace.md
-ms.openlocfilehash: 6f133eb9fda2e01927d31ef4fa63b5f04929e3c0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5ee30fb285164582940769de0a898b7868f0ee24
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321493"
 ---
 # Get-AzConsumptionMarketplace
 
 ## SYNOPSIS
 Dapatkan marketplace langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionmarketplace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzConsumptionMarketplace [-BillingPeriodName <String>] [-EndDate <DateTime>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzConsumptionMarketplace** mendapatkan marketplace langganan.
+Cmdlet **Get-AzConsumptionMarketplace** mendapatkan pasar langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penggunaan marketplace
+### Contoh 1: Dapatkan penggunaan marketplaces
 ```powershell
 Get-AzConsumptionMarketplace -Top 10
 ```
@@ -125,7 +128,7 @@ UsageStart:  2018-04-28T00:00:00Z
 ## PARAMETERS
 
 ### -BillingPeriodName
-Nama periode tagihan tertentu untuk mendapatkan marketplace yang bhubungkan dengan Anda.
+Nama periode tagihan tertentu untuk mendapatkan marketplace yang terkait dengannya.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir (dalam UTC) marketplace untuk memfilter.
+Tanggal akhir (di UTC) pasar yang akan difilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Id marketplace yang akan difilter.
+Id instans pasar untuk difilter.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama marketplace untuk difilter.
+Nama instans pasar untuk difilter.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Grup sumber daya marketplace untuk memfilter.
+Grup sumber daya pasar untuk difilter.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Tanggal mulai (dalam UTC) marketplace untuk memfilter.
+Tanggal mulai (di UTC) pasar untuk memfilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Menentukan jumlah maksimum rekaman untuk dikembalikan.
+Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -245,11 +248,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

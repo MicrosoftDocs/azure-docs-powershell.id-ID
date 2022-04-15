@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
 ms.openlocfilehash: 4fa6792795c3eb821f6f6bacc1b38987de2a0dd0
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132414910"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142329137"
 ---
 # Set-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
-Memperbarui aturan otorisasi tertentu pada Hub Acara.
+Memperbarui aturan otorisasi yang ditentukan di Hub Acara.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Set-AzEventHubAuthorizationRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentukan di Hub Kejadian yang diberikan.
+Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentukan pada Hub Kejadian tertentu.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentu
 PS C:\> Set-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName -Rights @("Manage")
 ```
 
-Memperbarui aturan otorisasi \`MyAuthRuleName\` untuk memberikan hak Kelola ke Hub \`Kejadian MyEventHubName\`, yang lingkupnya ruang nama \`MyNamespaceName\`.
+Memperbarui aturan \`otorisasi MyAuthRuleName\` untuk memberikan hak Kelola ke Hub \`Kejadian MyEventHubName\`, yang dilingkup oleh ruang \`nama MyNamespaceName\`.
 
 ## PARAMETERS
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

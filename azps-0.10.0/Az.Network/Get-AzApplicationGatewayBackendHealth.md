@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayBackendHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewayBackendHealth.md
-ms.openlocfilehash: 9fbcf4364fd5da6195397d08d544abf1ea5c8440403f6a460892b62ec49f5810
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f9d3dbb0b06c4d8ee7c57a5b2e738b3b4a4014b8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416631"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142328382"
 ---
 # Get-AzApplicationGatewayBackendHealth
 
@@ -35,19 +35,19 @@ Cmdlet Get-AzApplicationGatewayBackendHealth mendapatkan kesehatan backend gatew
 PS C:\>$BackendHealth = Get-AzApplicationGatewayBackendHealth -Name ApplicationGateway01 -ResourceGroupName ResourceGroup01
 ```
 
-Perintah ini memberikan kesehatan backend gateway aplikasi yang bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $BackendHealth sumber daya.
+Perintah ini mendapatkan kesehatan backend gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $BackendHealth.
 
 ### -------------------------- Contoh 1: Mendapatkan kesehatan backend dengan sumber daya yang diperluas.  --------------------------
 ```
 PS C:\>$BackendHealth = Get-AzApplicationGatewayBackendHealth -Name ApplicationGateway01 -ResourceGroupName ResourceGroup01 -ExpandResource "backendhealth/applicationgatewayresource"
 ```
 
-Perintah ini akan mendapatkan kesehatan backend (dengan sumber daya yang diperluas) dari gateway aplikasi yang bernama ApplicationGateway01 yang termasuk dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam variabel $BackendHealth tersebut.
+Perintah ini mendapatkan kesehatan backend (dengan sumber daya yang diperluas) gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $BackendHealth.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway aplikasi yang akan dapatkan cmdlet ini.
+Menentukan nama gateway aplikasi yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHealth
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

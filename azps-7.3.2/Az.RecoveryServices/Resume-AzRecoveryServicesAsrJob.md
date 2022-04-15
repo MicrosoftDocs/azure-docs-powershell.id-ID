@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Resume-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Resume-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 307da599799f0a9613d7df50641600bce26e8d7f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d0ebdcb63c9cc545720bb375a8731b5398ef3a24
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570477"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142317889"
 ---
 # Resume-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
-Melanjutkan pekerjaan Pemulihan Situs Azure yang ditangguhkan.
+Melanjutkan pekerjaan Azure Site Recovery yang ditangguhkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/resume-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Resume-AzRecoveryServicesAsrJob -Name <String> [-Comment <String>] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Resume-AzRecoveryServicesAsrJob** melanjutkan pekerjaan Pemulihan Situs Azure yang ditangguhkan.
+Cmdlet **Resume-AzRecoveryServicesAsrJob** melanjutkan pekerjaan Azure Site Recovery yang ditangguhkan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Resume-AzRecoveryServicesAsrJob** melanjutkan pekerjaan Pemulihan Situs
 PS C:\> $currentJob = Resume-AzRecoveryServicesAsrJob -Job $Job
 ```
 
-Lanjutkan pekerjaan tertentu jika berada dalam status menunggu atau ditangguhkan dan kembalikan objek pekerjaan ASR yang diperbarui terkait dengan pekerjaan ASR.
+Lanjutkan pekerjaan yang ditentukan jika berada dalam status menunggu atau ditangguhkan dan mengembalikan objek pekerjaan ASR yang diperbarui yang terkait dengan pekerjaan ASR.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan pekerjaan ASR berdasarkan nama.
+Tentukan tugas ASR menurut nama.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,6 +156,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzRecoveryServicesAsrJob](./Get-AzRecoveryServicesAsrJob.md)
 
-[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Stop-AzRecoveryServicesAsrJob](./Stop-AzRecoveryServicesAsrJob.md)

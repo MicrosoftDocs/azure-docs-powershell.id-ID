@@ -6,22 +6,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSourceControl.md
 ms.openlocfilehash: 3e7affd09e8c24c1d3c1759e78ea09a0c849ff32
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140852580"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359730"
 ---
 # Get-AzureRmAutomationSourceControl
 
 ## SYNOPSIS
-Mendapatkan daftar kontrol sumber Otomatisasi Azure.
+Mendapatkan daftar kontrol sumber Azure Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationSourceControl [-SourceType <String>] [-ResourceGroupName] <String>
  [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -40,7 +40,7 @@ Untuk mendapatkan kontrol sumber tertentu, tentukan namanya.
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mendapatkan kontrol sumber Otomatisasi yang bernama VSTSNative dalam akun yang bernama devAccount.
+Perintah ini mendapatkan kontrol sumber Otomatisasi bernama VSTSNative dalam akun bernama devAccount.
 
 
 ```powershell
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

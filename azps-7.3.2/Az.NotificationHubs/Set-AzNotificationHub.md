@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHub.md
-ms.openlocfilehash: 0552c1fb90cb4a697e5240d2951bebb94aa7c3d5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: aa49bdc4e5567ffeeb4e4d521d1f60c24a2f21c7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185032"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343825"
 ---
 # Set-AzNotificationHub
 
 ## SYNOPSIS
 Mengatur nilai properti untuk hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,30 +38,30 @@ Set-AzNotificationHub [-ResourceGroup] <String> [-Namespace] <String>
 
 ## DESCRIPTION
 Cmdlet **Set-AzNotificationHub** mengubah nilai properti hub pemberitahuan.
-Anda dapat mengubah nilai properti hub pemberitahuan dalam dua cara.
-Untuk satu, Anda dapat membuat contoh objek **NotificationHubAttributes** , lalu mengonfigurasi objek tersebut dengan nilai properti yang dimiliki hub baru.
-Ini bisa dilakukan melalui .NET Framework.
+Anda dapat mengubah nilai properti hub pemberitahuan dengan dua cara.
+Untuk satu, Anda dapat membuat contoh objek **NotificationHubAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang anda inginkan untuk dimiliki hub baru.
+Hal ini dapat dilakukan melalui .NET Framework.
 Anda kemudian dapat menyalin nilai properti tersebut ke hub melalui parameter *NotificationHubObj* .
-Atau, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut melalui parameter *InputFile* .
-File JSON adalah file teks yang menggunakan sintaks yang sama seperti berikut: {  
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai tersebut melalui parameter *InputFile* .
+File JSON adalah file teks yang menggunakan sintaks seperti berikut: {  
     "Nama": "ContosoNotificationHub",  
-    "Lokasi": "West US",  
-} Ketika digunakan bersama dengan cmdlet **Set-AzNotificationHub** , sampel JSON sebelumnya mengatur nilai Lokasi dari hub pemberitahuan bernama ContosoNotificationHub ke AS Barat.
+    "Lokasi": "AS Barat",  
+} Ketika digunakan bersama dengan cmdlet **Set-AzNotificationHub** , sampel JSON sebelumnya mengatur nilai Lokasi hub pemberitahuan bernama ContosoNotificationHub ke AS Barat.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah nilai properti untuk hub pemberitahuan
+### Contoh 1: Memodifikasi nilai properti untuk hub pemberitahuan
 ```powershell
 PS C:\>Set-AzNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -InputFile "C:\Configuration\Hubs.json"
 ```
 
-Perintah ini mengubah nilai properti untuk hub pemberitahuan yang ditemukan dalam ruang nama ContosoNamespace dan menetapkannya ke grup sumber daya ContosoNotificationsGroup.
-Nilai properti, serta nama hub yang akan diubah, tidak ditentukan dalam perintah.
-Sebagai gantinya, informasi tersebut terdapat di file input C:\Configuration\Hubs.json.
+Perintah ini mengubah nilai properti untuk hub pemberitahuan yang ditemukan di ruang nama ContosoNamespace dan menetapkannya ke grup sumber daya ContosoNotificationsGroup.
+Nilai properti, serta nama hub yang akan dimodifikasi, tidak ditentukan dalam perintah.
+Sebagai gantinya, informasi tersebut dimuat dalam file input C:\Configuration\Hubs.json.
 
 ### Contoh 2
 
-Mengatur nilai properti untuk hub pemberitahuan. (otomatisgenerated)
+Mengatur nilai properti untuk hub pemberitahuan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -68,7 +71,7 @@ Set-AzNotificationHub -Namespace 'ContosoNamespace' -NotificationHubObj <Notific
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationHubObj
-Menentukan objek **NotificationHubAttributes** yang berisi informasi konfigurasi untuk hub yang dimodifikasi cmdlet ini.
+Menentukan objek **NotificationHubAttributes** yang berisi informasi konfigurasi untuk hub yang diubah cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.NotificationHubs.Models.NotificationHubAttributes
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

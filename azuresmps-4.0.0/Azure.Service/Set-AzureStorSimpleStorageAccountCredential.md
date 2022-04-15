@@ -4,11 +4,11 @@ ms.assetid: 74088389-A003-4746-8A57-2146BBA7535C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9f6295b57245241fb238429865f1afd091866d07
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424107"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142311751"
 ---
 # Set-AzureStorSimpleStorageAccountCredential
 
@@ -25,12 +25,12 @@ Set-AzureStorSimpleStorageAccountCredential -StorageAccountName <String> [-Stora
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorSimpleStorageAccountCredential** memperbarui kredensial akses penyimpanan Azure yang sudah ada untuk digunakan oleh cmdlet OneSDK StorSimple.
-Untuk informasi selengkapnya tentang cara cmdlet StorSimple berfungsi dengan akun penyimpanan, lihat topik bantuan untuk cmdlet New-AzureStorSimpleStorageAccountCredential cmdlet.
+Cmdlet **Set-AzureStorSimpleStorageAccountCredential** memperbarui kredensial akses penyimpanan Azure yang sudah ada untuk digunakan oleh cmdlet StorSimple OneSDK.
+Untuk informasi selengkapnya tentang cara cmdlet StorSimple bekerja dengan akun penyimpanan, lihat topik bantuan untuk cmdlet New-AzureStorSimpleStorageAccountCredential.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah kredensial
+### Contoh 1: Memodifikasi kredensial
 ```
 PS C:\>Set-AzureStorSimpleStorageAccountCredential -StorageAccountName "ContosoStorage01" -UseSSL $False -StorageAccountKey "h9ldH4LlHJB3GujcNwgdxJACy1DaQ1Hak1bfoUBzrDqZ5DPK8+0XGbsgD+jrKfQy5PBepKpYobMViLaOC2XMdg==" -Force -WaitForComplete
 VERBOSE: ClientRequestId: 20cd2b17-9cff-4ab4-a034-96d60d946295_PS
@@ -69,7 +69,7 @@ UseSSL                           : False
 VolumeCount                      : 0
 ```
 
-Perintah ini mengubah kredensial akun penyimpanan bernama ContosoStorage01 menjadi tidak lagi memerlukan SSL.
+Perintah ini mengubah kredensial akun penyimpanan bernama ContosoStorage01 agar tidak lagi memerlukan SSL.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Menentukan kunci akses dari akun penyimpanan dalam teks biasa.
+Menentukan kunci akses akun penyimpanan dalam teks biasa.
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -149,28 +149,28 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### StorageAccountCredentialResponse, TaskResponse
-Cmdlet ini mengembalikan objek **StorageAccountCredentialResponse,** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, cmdlet mengembalikan objek **TaskResponse.**
-**StorageAccountCredentialResponse** berisi properti berikut ini: 
+Cmdlet ini mengembalikan objek **StorageAccountCredentialResponse** , jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, cmdlet mengembalikan objek **TaskResponse** .
+**StorageAccountCredentialResponse** berisi properti berikut: 
 
 - **CloudType** (**CloudType**)
 - **Nama host** (**String**)
 - **InstanceId** (**String**)
 - **IsDefault** (**Boolean**)
 - **Lokasi** (**String**)
-- **Masuk** (**String**)
+- **Login** (**String**)
 - **Nama** (**String**)
 - **OperationInProgress** (**OperationInProgress**)
-- **Kata** Sandi (**String**)
+- **Kata sandi** (**String**)
 - **PasswordEncryptionCertThumbprint** (**String**)
 - **UseSSL** (**Boolean**)
 - **VolumeCount** (**int**)

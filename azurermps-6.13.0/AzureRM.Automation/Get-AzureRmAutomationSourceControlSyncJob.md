@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSourceControlSyncJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSourceControlSyncJob.md
-ms.openlocfilehash: 39225707c3400054d4df77d46b6a4c8024c88dc697972fb1c371b3585725e72d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 213df264e4ecd458c8505d521556f49265577333
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865206"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142359728"
 ---
 # Get-AzureRmAutomationSourceControlSyncJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+Mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Get-AzureRmAutomationSourceControlSyncJob -SourceControlName <String> [-JobId <G
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmAutomationSourceControlSyncJob mendapatkan pekerjaan sinkronisasi kontrol sumber Azure Automation. Untuk mendapatkan pekerjaan sinkronisasi kontrol sumber tertentu, tentukan id-nya.
+Cmdlet Get-AzureRmAutomationSourceControlSyncJob mendapatkan Azure Automation pekerjaan sinkronisasi kontrol sumber. Untuk mendapatkan pekerjaan sinkronisasi kontrol sumber tertentu, tentukan idnya.
 
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mendapatkan semua pekerjaan sinkronisasi kontrol sumber Otomatisasi untuk VSTSNative kontrol sumber.
+Perintah ini mendapatkan semua pekerjaan sinkronisasi kontrol sumber otomatisasi untuk kontrol sumber VSTSNative.
 
 
 ```powershell
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceControlName
-Nama kontrol sumber pekerjaan.
+Nama kontrol sumber dari pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

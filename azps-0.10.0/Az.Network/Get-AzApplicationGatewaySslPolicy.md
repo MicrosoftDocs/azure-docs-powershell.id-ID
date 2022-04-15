@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewaySslPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGatewaySslPolicy.md
 ms.openlocfilehash: 98f824ec0d874f8977c6e29f51358856cb5d1ca1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424980"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142350641"
 ---
 # Get-AzApplicationGatewaySslPolicy
 
@@ -36,13 +36,13 @@ PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $sslpolicy = Get-AzApplicationGatewaySslPolicy -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
-Perintah kedua mendapatkan kebijakan ssl dari Gateway Aplikasi yang disimpan di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan kebijakan ssl dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi dari kebijakan SSL yang akan dapatkan cmdlet ini.
+Menentukan gateway aplikasi dari kebijakan SSL yang didapatkan cmdlet ini.
 
 ```yaml
 Type: PSApplicationGateway
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPolicy
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 
