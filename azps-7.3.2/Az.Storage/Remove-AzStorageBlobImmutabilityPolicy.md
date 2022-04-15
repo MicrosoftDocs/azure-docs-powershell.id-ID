@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlobImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlobImmutabilityPolicy.md
-ms.openlocfilehash: 60598ab090785576264972febfff155428ad0d9e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 91d17d26f6553b0957573226020c68e23499319f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548319"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142250659"
 ---
 # Remove-AzStorageBlobImmutabilityPolicy
 
 ## SYNOPSIS
-Menghapus ImmutabilityPolicy of a Storage blob.
+Menghapus ImmutabilityPolicy dari blob Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageblobimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ Remove-AzStorageBlobImmutabilityPolicy -BlobBaseClient <BlobBaseClient> [-TagCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageBlobImmutabilityPolicy** menghapus kebijakan immutability suatu Storage blob.
+Cmdlet **Remove-AzStorageBlobImmutabilityPolicy** menghapus kebijakan kekebalan Storage blob.
 
 ## EXAMPLES
 
-### Contoh 1: Removes immutability policy of a Storage blob.
+### Contoh 1: Menghapus kebijakan keabadian blob Storage.
 ```
 PS C:\> $blob = Remove-AzStorageBlobImmutabilityPolicy -Container $containerName -Blob $blobname  
 
@@ -58,12 +61,12 @@ ExpiresOn PolicyMode
 --------- ----------
 ```
 
-Perintah ini menghapus ImmutabilityPolicy Storage blob, lalu memperlihatkan hasilnya.
+Perintah ini menghapus ImmutabilityPolicy dari blob Storage, lalu memperlihatkan hasilnya.
 
 ## PARAMETERS
 
 ### -Blob
-Nama Blob
+Nama blob
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimal sisi klien untuk setiap permintaan dalam detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -123,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Nama kontainer
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Waktu server habis untuk setiap permintaan dalam hitungan detik.
+Waktu server habis untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag opsional untuk memeriksa kecocokan kondisi. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -240,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## CATATAN
 

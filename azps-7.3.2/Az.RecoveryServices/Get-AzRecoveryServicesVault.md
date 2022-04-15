@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVault.md
-ms.openlocfilehash: d4da8228f38dc82ff18f37f0e23a814d86ba4f57
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8b16002d13a26f4dead5c78805d3f967a6daf702
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391779"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142254577"
 ---
 # Get-AzRecoveryServicesVault
 
 ## SYNOPSIS
 
-Mendapatkan daftar vault Layanan Pemulihan.
+Mendapatkan daftar kubah Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Get-AzRecoveryServicesVault [[-ResourceGroupName] <String>] [[-Name] <String>] -
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzRecoveryServicesVault** mendapatkan daftar vault Layanan Pemulihan dalam langganan saat ini.
+Cmdlet **Get-AzRecoveryServicesVault** mendapatkan daftar kubah Layanan Pemulihan dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Cmdlet **Get-AzRecoveryServicesVault** mendapatkan daftar vault Layanan Pemuliha
 PS C:\> Get-AzRecoveryServicesVault
 ```
 
-Dapatkan daftar vault dalam langganan yang dipilih.
+Dapatkan daftar kubah dalam langganan yang dipilih.
 
 ### Contoh 2
 
@@ -53,7 +56,7 @@ Dapatkan daftar vault dalam langganan yang dipilih.
 PS C:\> Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup"
 ```
 
-Dapatkan daftar vault dalam grup sumber daya dalam langganan yang dipilih.
+Dapatkan daftar kubah dalam grup sumber daya dalam langganan yang dipilih.
 
 ### Contoh 3
 
@@ -66,13 +69,13 @@ TenantId    : XXXXXXXX-XXXX-XXXX
 Type        : SystemAssigned
 ```
 
-Cmdlet pertama mendapatkan vault dalam grup sumber daya dengan nama tertentu. Lalu kami mengakses informasi MSI dari vault.
+Cmdlet pertama mendapatkan kubah dalam grup sumber daya dengan nama tertentu. Lalu kami mengakses informasi MSI dari kubah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 
 ### -Nama
 
-Menentukan nama vault untuk kueri.
+Menentukan nama kubah untuk kueri.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -Tag
 
-Menentukan kueri Tag untuk
+Menentukan Tag yang akan dikueri
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 
 ### -TagName
 
-Menentukan Kunci Dari Tag untuk kueri
+Menentukan Kunci Tag yang akan dikueri
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -TagValue
 
-Menentukan Nilai Tag untuk kueri
+Menentukan Nilai Tag yang akan dikueri
 
 ```yaml
 Type: System.String
@@ -167,18 +170,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
 ## CATATAN
-Get-AzRecoveryServicesVault versi lama Az.RecoveryServices(<=2.10.0) tidak bisa bekerja dengan Az.Accounts(>=1.8.1) karena referensi perakitan yang tidak tepat. Modul Az.RecoveryServices perlu dimutakhirkan ke 2.11.0 atau lebih baru jika Anda menggunakan Az atau Az.Accounts terbaru.
+Get-AzRecoveryServicesVault dalam versi lama Az.RecoveryServices(<=2.10.0) tidak dapat berfungsi dengan Az.Accounts(>=1.8.1) karena referensi perakitan yang salah. Modul Az.RecoveryServices perlu dimutakhirkan ke 2.11.0 atau yang lebih baru jika Anda menggunakan Az atau Az.Accounts terbaru.
 
 ## RELATED LINKS
 

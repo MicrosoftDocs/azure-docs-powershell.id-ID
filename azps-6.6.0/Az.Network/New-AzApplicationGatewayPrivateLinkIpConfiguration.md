@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkIpConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkIpConfiguration.md
 ms.openlocfilehash: 4972ccd969ae851fe41530904ef06dffe7694c9e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140465201"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142228681"
 ---
 # New-AzApplicationGatewayPrivateLinkIpConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140465201"
 Membuat Konfigurasi Ip yang akan dikaitkan dengan Konfigurasi PrivateLink
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprivatelinkipconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprivatelinkipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +33,12 @@ Cmdlet **New-AzApplicationGatewayPrivateLinkIpConfiguration** membuat Konfiguras
 
 ## EXAMPLES
 
-### Contoh 1: Konfigurasi Ip PrivateLink
+### Contoh 1: PrivateLink Ip Configuration
 ```powershell
 PS C:\> $PrivateLinkIpConfiguration = New-AzApplicationGatewayPrivateLinkIpConfiguration -Name "ipConfig01" -Subnet $subnet -Primary
 ```
 
-Perintah ini membuat Konfigurasi IP PrivateLink yang bernama 'ipConfig01' menyimpan hasilnya di variabel yang bernama $PrivateLinkIpConfiguration. 
+Perintah ini membuat Konfigurasi IP PrivateLink bernama 'ipConfig01' menyimpan hasil dalam variabel bernama $PrivateLinkIpConfiguration. 
 
 ## PARAMETERS
 
@@ -72,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Utama
-Menunjukkan bahwa konfigurasi ip adalah konfigurasi utama.
+### -Primer
+Menunjukkan bahwa konfigurasi ip adalah yang utama.
 
 ```yaml
 Type: SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Alamat ip privat ipConfiguration jika alokasi statis diinginkan.
+Alamat ip pribadi ipConfiguration jika alokasi statis diinginkan.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddressVersion
-Versi ip konfigurasi ip
+Versi ip dari konfigurasi ip
 
 ```yaml
 Type: String
@@ -134,11 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

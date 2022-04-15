@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Update-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Update-AzReservation.md
-ms.openlocfilehash: b2bf745839473128ce309c4a0cde1413f84bfe4e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e57c479269c4d0c6aa8d749d7d30204c8da10ce0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998982"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142254121"
 ---
 # Update-AzReservation
 
 ## SYNOPSIS
-`Reservation`Memperbarui .
+Memperbarui .`Reservation`
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.reservations/update-azreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Update-AzReservation -AppliedScopeType <String> [-AppliedScope <String>] [-Insta
 ```
 
 ## DESCRIPTION
-Memperbarui lingkup .`Reservation`
+Memperbarui lingkup yang diterapkan dari `Reservation`.
 
 ## EXAMPLES
 
@@ -43,19 +46,19 @@ Memperbarui lingkup .`Reservation`
 PS C:\> Update-AzReservation -ReservationOrderId "11111111-1111-1111-1111-1111111111" -ReservationId "00000000-1111-1111-1111-0000000000" -appliedScopeType "Single" -appliedscope "/subscriptions/1111aaaa-b1b2-c0c2-d0d2-00000fffff" -InstanceFlexibility "On"
 ```
 
-Memperbarui AppliedScopeType dari file yang ditentukan `Reservation` ke Single dan InstanceFlexibility ke On.
+Memperbarui AppliedScopeType dari yang ditentukan `Reservation` ke Single dan InstanceFlexibility menjadi On.
 
 ### Contoh 2
 ```
 PS C:\> Update-AzReservation -ReservationOrderId "11111111-1111-1111-1111-1111111111" -ReservationId "00000000-1111-1111-1111-0000000000" -appliedscopetype "Shared" -InstanceFlexibility "Off"
 ```
 
-Memperbarui AppliedScopeType dari file yang ditentukan `Reservation` menjadi Bersama dan InstanceFlexibility ke Nonaktif.
+Memperbarui AppliedScopeType dari yang ditentukan `Reservation` untuk Dibagikan dan InstanceFlexibility ke Nonaktif.
 
 ## PARAMETERS
 
 ### -AppliedScope
-SubscriptionId agar `Reservation` ini diterapkan
+SubscriptionId agar hal ini `Reservation` diterapkan
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceFlexibility
-Jika ada, memperbarui nilai InstanceFlexibility dari `Reservation`. Jika tidak ditentukan, nilai yang sudah ada tetap tidak berubah.
+Jika ada, perbarui nilai InstanceFlexibility dari `Reservation`. Jika tidak ditentukan, nilai yang sudah ada tetap tidak berubah.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Reservation
+### -Reservasi
 Parameter objek pipa untuk `Reservation`
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-`Reservation` Id pembaruan
+Id dari pembaruan `Reservation`
 
 ```yaml
 Type: System.Guid
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-`ReservationOrder` Id pembaruan
+Id dari pembaruan `ReservationOrder`
 
 ```yaml
 Type: System.Guid
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

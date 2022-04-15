@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsEnvironment.md
-ms.openlocfilehash: 92acbc95ac3b273ef7385a42a7a4c7382a2e6624
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ba77df1f251b3a2a4f49bb1a19514cb5ed1a871a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005077"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249165"
 ---
 # New-AzTimeSeriesInsightsEnvironment
 
 ## SYNOPSIS
-Membuat lingkungan di grup langganan dan sumber daya yang ditentukan.
+Buat lingkungan dalam grup sumber daya dan langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightsenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzTimeSeriesInsightsEnvironment -Name <String> -ResourceGroupName <String> -
 ```
 
 ## DESCRIPTION
-Membuat lingkungan di grup langganan dan sumber daya yang ditentukan.
+Buat lingkungan dalam grup sumber daya dan langganan tertentu.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Kind     Location Name       SkuCapacity SkuName Type
 Gen1 eastus   tsitest001 2           S1      Microsoft.TimeSeriesInsights/Environments
 ```
 
-Perintah ini menciptakan lingkungan wawasan rangkaian waktu Gen1.
+Perintah ini membuat lingkungan wawasan rangkaian waktu Gen1.
 
 ### Contoh 2: Membuat lingkungan wawasan rangkaian waktu Gen2
 ```powershell
@@ -64,7 +67,7 @@ Kind     Location Name       SkuCapacity SkuName Type
 Gen2 eastus   tsitest002 1           L1      Microsoft.TimeSeriesInsights/Environments
 ```
 
-Perintah ini menciptakan lingkungan wawasan rangkaian waktu Gen2.
+Perintah ini membuat lingkungan wawasan rangkaian waktu Gen2.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 
 ### -Kapasitas
 Kapasitas sku.
-Untuk lingkungan Gen1, nilai ini dapat diubah untuk mendukung skala di luar lingkungan setelah dibuat.
+Untuk lingkungan Gen1, nilai ini dapat diubah untuk mendukung skala lingkungan setelah dibuat.
 
 ```yaml
 Type: System.Int32
@@ -129,7 +132,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis lingkungan.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyProperty
-Daftar properti kejadian yang akan digunakan untuk mempartisi data dalam lingkungan.
+Daftar properti kejadian yang akan digunakan untuk mempartisi data di lingkungan.
 Untuk membangun, lihat bagian CATATAN untuk properti PARTITIONKEYPROPERTY dan membuat tabel hash.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Nilai kunci manajemen yang memberikan layanan Time Series Insights menulis akses ke akun penyimpanan.
+Nilai kunci manajemen yang memberikan akses penulisan layanan Insights Time Series ke akun penyimpanan.
 
 ```yaml
 Type: System.Security.SecureString
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Nama akun penyimpanan yang akan menyimpan data jangka panjang lingkungan tersebut.
+Nama akun penyimpanan yang akan menyimpan data jangka panjang lingkungan.
 
 ```yaml
 Type: System.String
@@ -265,8 +268,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -StorageLimitExceededBeaviior
-Perilaku perilaku layanan Insights waktu yang akan berlaku ketika kapasitas lingkungan telah melebihi
+### -StorageLimitExceededBehavior
+Perilaku yang harus dilakukan layanan Insights Time Series ketika kapasitas lingkungan telah terlampaui
 
 ```yaml
 Type: System.String
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dari properti tambahan untuk sumber daya.
+Pasangan nilai kunci properti tambahan untuk sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeSeriesIdProperty
-Daftar properti kejadian yang akan digunakan untuk menentukan id rangkaian waktu lingkungan. Untuk membuat, lihat bagian CATATAN untuk properti TIMESPROPPERTY DAN membuat tabel hash.
+Daftar properti kejadian yang akan digunakan untuk menentukan id rangkaian waktu lingkungan. Untuk membangun, lihat bagian CATATAN untuk properti TIMESERIESIDPROPERTY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.ITimeSeriesIdProperty[]
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -WarmStoreDataRetentionTime
-Rentang waktu ISO8601 menentukan jumlah hari acara lingkungan akan tersedia untuk kueri dari toko yang hangat.
+Jangka waktu ISO8601 yang menentukan jumlah hari acara lingkungan akan tersedia untuk kueri dari bursa hangat.
 
 ```yaml
 Type: System.TimeSpan
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -389,13 +392,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARTITIONKEYPROPERTY <ITimeSeriesIdProperty[]>: Daftar properti kejadian yang akan digunakan untuk mempartisi data di lingkungan.
+PARTITIONKEYPROPERTY <ITimeSeriesIdProperty[]>: Daftar properti kejadian yang akan digunakan untuk mempartisi data dalam lingkungan.
   - `[Name <String>]`: Nama properti.
-  - `[Type <PropertyType?>]`: Tipe properti.
+  - `[Type <PropertyType?>]`: Jenis properti.
 
-TIMESUNTSIDPROPERTY <ITimeSeriesIdProperty[]>: Daftar properti kejadian yang akan digunakan untuk menentukan id rangkaian waktu lingkungan.
+TIMESERIESIDPROPERTY <ITimeSeriesIdProperty[]>: Daftar properti kejadian yang akan digunakan untuk menentukan id rangkaian waktu lingkungan.
   - `[Name <String>]`: Nama properti.
-  - `[Type <PropertyType?>]`: Tipe properti.
+  - `[Type <PropertyType?>]`: Jenis properti.
 
 ## RELATED LINKS
 

@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: AC73119B-BB76-425B-AA44-44502028ECC4
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: e4accbcc9585cc998d64dc6336d17ef5cf80e2a7f97f0786aeb24df4507a6c30
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1b7c870bc80a689e47f9b4693828c2cb5a2586b7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417686"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243693"
 ---
 # Start-AzureSiteRecoveryUnplannedFailoverJob
 
 ## SYNOPSIS
-Memulai failover yang tidak terencana untuk entitas proteksi Pemulihan Situs atau rencana pemulihan.
+Memulai failover yang tidak terencana untuk entitas perlindungan Site Recovery atau rencana pemulihan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -47,12 +47,12 @@ Start-AzureSiteRecoveryUnplannedFailoverJob -ProtectionEntity <ASRProtectionEnti
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSiteRecoveryUnplannedFailoverJob** memulai failover yang tidak terencana dari entitas proteksi Pemulihan Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet **Get-AzureSiteRecoveryJob.**
+Cmdlet **Start-AzureSiteRecoveryUnplannedFailoverJob** memulai kegagalan terencana entitas perlindungan atau paket pemulihan Azure Site Recovery.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet **Get-AzureSiteRecoveryJob** .
 
 ## EXAMPLES
 
-### Contoh 1: Memulai pekerjaan failover yang tidak terencana
+### Contoh 1: Memulai pekerjaan failover yang tidak dienkripsi
 ```
 PS C:\> $ProtectionContainer = Get-AzureSiteRecoveryProtectionContainer
 PS C:\> $ProtectionEntity = Get-AzureSiteRecoveryProtectionEntity -ProtectionContainer $ProtectionContainer 
@@ -69,12 +69,12 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan wadah yang diproteksi dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpannya di $ProtectionContainer baru.
+Perintah pertama mendapatkan wadah yang dilindungi dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** , lalu menyimpannya dalam variabel $ProtectionContainer.
 
-Perintah kedua mendapatkan entitas terproteksi yang termasuk dalam wadah terproteksi yang disimpan di $ProtectionContainer menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
-Perintah menyimpan hasil dalam $ProtectionEntity variabel.
+Perintah kedua mendapatkan entitas yang dilindungi yang termasuk dalam wadah terproteksi yang disimpan di $ProtectionContainer menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
+Perintah menyimpan hasil dalam variabel $ProtectionEntity.
 
-Perintah terakhir memulai failover untuk entitas terproteksi yang disimpan di $ProtectionEntity dan menentukan arah failover.
+Perintah akhir memulai failover untuk entitas yang diproteksi yang disimpan di $ProtectionEntity dan menentukan arah failover.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformSourceSideActions
-Menunjukkan bahwa tindakan tersebut dapat melakukan tindakan sisi sumber.
+Menunjukkan bahwa tindakan dapat melakukan tindakan sisi sumber.
 
 ```yaml
 Type: SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformSourceSiteOperations
-Mengindikasikan bahwa operasi situs sumber dapat dilakukan.
+Menunjukkan bahwa operasi situs sumber dapat dilakukan.
 
 ```yaml
 Type: Boolean
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID dari wadah yang diproteksi.
-Cmdlet ini memulai pekerjaan untuk mesin virtual terlindungi yang termasuk dalam wadah yang ditentukan cmdlet ini.
+Menentukan ID wadah yang diproteksi.
+Cmdlet ini memulai pekerjaan untuk mesin virtual terproteksi milik wadah yang ditentukan cmdlet ini.
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntity
-Menentukan objek entitas proteksi Pemulihan Situs.
+Menentukan objek entitas perlindungan Site Recovery.
 
 ```yaml
 Type: ASRProtectionEntity
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntityId
-Menentukan ID mesin virtual yang diproteksi untuk memulai pekerjaan.
+Menentukan ID mesin virtual yang dilindungi untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPId
-Menentukan ID paket pemulihan yang akan digunakan untuk memulai pekerjaan.
+Menentukan ID rencana pemulihan untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

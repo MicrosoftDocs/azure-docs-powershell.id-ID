@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.servi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/Remove-AzureRmServiceFabricSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/Remove-AzureRmServiceFabricSetting.md
-ms.openlocfilehash: cbfbfe5fda35c8bf55bdc3803fbaa1047e7d9b3322fc4e44dd425c57cbf106ff
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4643ab29be9c93f58895048317edc2b1db6115e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853642"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142248093"
 ---
 # Remove-AzureRmServiceFabricSetting
 
 ## SYNOPSIS
-Menghapus satu atau Service Fabric kluster dari kluster.
+Hapus satu atau beberapa pengaturan Service Fabric dari kluster.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Remove-AzureRmServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String
  -Parameter <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BatchSettings
+### KumpulanSettings
 ```
 Remove-AzureRmServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String>
  -SettingsSectionDescription <PSSettingsSectionDescription[]> [-DefaultProfile <IAzureContextContainer>]
@@ -35,7 +35,7 @@ Remove-AzureRmServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzureRmServiceFabricSetting** untuk Service Fabric pengaturan terbaru dari kluster.
+Gunakan **Remove-AzureRmServiceFabricSetting** untuk menghapus pengaturan Service Fabric dari kluster.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ Gunakan **Remove-AzureRmServiceFabricSetting** untuk Service Fabric pengaturan t
 PS c:> Remove-AzureRmServiceFabricSetting -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -Section 'EseStore' -Parameter 'MaxCursors'
 ```
 
-Perintah ini akan menghapus pengaturan 'MaxCursors' di bawah bagian 'EseStore'.
+Perintah ini akan menghapus pengaturan 'MaxCursors' di bagian 'EseStore'.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,12 +169,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-Parameter: Parameter (ByValue), Bagian (ByValue)
+Parameter: Parameter (ByValue), Section (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSSettingsSectionDescription[]
 Parameter: SettingsSectionDescription (ByValue)

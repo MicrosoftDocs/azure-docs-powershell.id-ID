@@ -5,27 +5,30 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEnvironment.md
-ms.openlocfilehash: c80241beba3207f94b1ede2b5ab202dec58ac84a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3161381f135a13e2a29ecf6de00530d5a98cdaeb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182639"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249219"
 ---
 # Get-AzTimeSeriesInsightsEnvironment
 
 ## SYNOPSIS
-Mendapatkan lingkungan dengan nama yang ditentukan dalam grup langganan dan sumber daya yang ditentukan.
+Mendapatkan lingkungan dengan nama yang ditentukan dalam grup sumber daya dan langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightsenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzTimeSeriesInsightsEnvironment [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzTimeSeriesInsightsEnvironment -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-Expand <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,11 +47,11 @@ Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName <String> [-SubscriptionId
 ```
 
 ## DESCRIPTION
-Mendapatkan lingkungan dengan nama yang ditentukan dalam grup langganan dan sumber daya yang ditentukan.
+Mendapatkan lingkungan dengan nama yang ditentukan dalam grup sumber daya dan langganan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan lingkungan wawasan rangkaian waktu
+### Contoh 1: Mendapatkan lingkungan wawasan rangkaian waktu
 ```powershell
 PS C:\> Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName testgroup -Name tsitest001
 
@@ -77,7 +80,7 @@ Type                         : Microsoft.TimeSeriesInsights/Environments
 
 Perintah ini mendapatkan lingkungan wawasan rangkaian waktu.
 
-### Contoh 2: Lingkungan wawasan daftar semua rangkaian waktu
+### Contoh 2: Mencantumkan semua lingkungan wawasan rangkaian waktu
 ```powershell
 PS C:\> Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName testgroup
 
@@ -126,9 +129,9 @@ Tag                          : Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsi
 Type                         : Microsoft.TimeSeriesInsights/Environments
 ```
 
-Perintah ini mencantumkan lingkungan wawasan semua rangkaian waktu dalam grup sumber daya.
+Perintah ini mencantumkan semua lingkungan wawasan rangkaian waktu dalam grup sumber daya.
 
-### Contoh 3: Dapatkan lingkungan wawasan rangkaian waktu menurut objek
+### Contoh 3: Mendapatkan lingkungan wawasan rangkaian waktu menurut objek
 ```powershell
 PS C:\> $env = Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName tsi-test-i01k5l -Name tsi-envv8u56x 
 PS C:\> Get-AzTimeSeriesInsightsEnvironment -InputObject $env
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Pengaturan $expand=status akan menyertakan status layanan internal lingkungan dalam layanan Rangkaian Waktu Insights ini.
+Pengaturan $expand=status akan menyertakan status layanan internal lingkungan dalam layanan Insights Time Series.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -272,7 +275,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama Sumber waktu yang Insights terkait dengan lingkungan tertentu.
+  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
