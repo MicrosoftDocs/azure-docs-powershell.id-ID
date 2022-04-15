@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionPriceSheet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionPriceSheet.md
 ms.openlocfilehash: 0340573347a27ea3977a89f179643eccee309884
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258576"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325321"
 ---
 # Get-AzConsumptionPriceSheet
 
@@ -18,7 +18,7 @@ ms.locfileid: "140258576"
 Dapatkan lembar harga langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azconsumptionpricesheet) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionpricesheet) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
               UnitPrice:  1.33
 ```
 
-### Contoh 2: Dapatkan lembar harga dengan perluas MeterDetails
+### Contoh 2: Dapatkan lembar harga dengan perluasan MeterDetails
 ```powershell
 PS C:\> Get-AzConsumptionPriceSheet -ExpandMeterDetail
 Id:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c5d/providers/Microsoft.Billing/billingPeriods/20180601/providers/Microsoft.Consumption/pricesheets/default
@@ -67,7 +67,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
               UnitPrice:  1.33
 ```
 
-### Contoh 3: Dapatkan lembar harga dari BillingPeriodName
+### Contoh 3: Dapatkan lembar harga BillingPeriodName
 ```powershell
 PS C:\> Get-AzConsumptionPriceSheet -BillingPeriodName 201712
 Id:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c5d/providers/Microsoft.Billing/billingPeriods/20180601/providers/Microsoft.Consumption/pricesheets/default
@@ -82,7 +82,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
               UnitPrice:  1.37
 ```
 
-### Contoh 4: Mendapatkan 5 rekaman teratas lembar harga
+### Contoh 4: Dapatkan 5 rekaman teratas lembar harga
 ```powershell
 PS C:\> Get-AzConsumptionPriceSheet -Top 5
 Id:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c5d/providers/Microsoft.Billing/billingPeriods/20180601/providers/Microsoft.Consumption/pricesheets/default
@@ -100,7 +100,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
 ## PARAMETERS
 
 ### -BillingPeriodName
-Nama periode tagihan tertentu untuk mendapatkan lembar harga yang terkait.
+Nama periode tagihan tertentu untuk mendapatkan lembar harga yang terkait dengannya.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Menentukan jumlah maksimum rekaman untuk dikembalikan.
+Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -160,11 +160,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

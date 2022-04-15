@@ -7,23 +7,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJob.md
 ms.openlocfilehash: f6ee58e78f27f26a485cdf77e3ae8f811b312db9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110223"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326455"
 ---
 # Get-AzAutomationJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan runbook Otomatisasi.
+Mendapatkan pekerjaan runbook otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationjob) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzAutomationJob [-Status <String>] [-StartTime <DateTimeOffset>] [-EndTime <DateTimeOffset>]
  [-ResourceGroupName] <String> [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>]
@@ -48,31 +48,31 @@ Cmdlet **Get-AzAutomationJob** mendapatkan pekerjaan runbook di Azure Automation
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pekerjaan runbook tertentu
+### Contoh 1: Dapatkan pekerjaan runbook tertentu
 ```
 PS C:\>Get-AzAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b647
 ```
 
-Perintah ini mendapatkan pekerjaan dengan GUID tertentu.
+Perintah ini mendapatkan pekerjaan yang memiliki GUID yang ditentukan.
 
-### Contoh 2: Mendapatkan semua pekerjaan untuk runbook
+### Contoh 2: Dapatkan semua pekerjaan untuk runbook
 ```
 PS C:\>Get-AzAutomationJob -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -RunbookName "Runbook02"
 ```
 
 Perintah ini mendapatkan semua pekerjaan yang terkait dengan runbook bernama Runbook02.
 
-### Contoh 3: Mendapatkan semua pekerjaan berjalan
+### Contoh 3: Dapatkan semua pekerjaan yang berjalan
 ```
 PS C:\>Get-AzAutomationJob -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -Status "Running"
 ```
 
-Perintah ini akan menjalankan semua pekerjaan dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua pekerjaan yang berjalan di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang mendapatkan pekerjaan cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 
 ### -EndTime
 Menentukan waktu akhir untuk pekerjaan sebagai objek **DateTimeOffset** .
-Anda bisa menentukan string yang bisa dikonversi menjadi **DateTimeOffset** yang valid.
+Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
 Cmdlet ini mendapatkan pekerjaan yang memiliki waktu akhir pada atau sebelum nilai yang ditentukan parameter ini.
 
 ```yaml
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan yang akan dapatkan cmdlet ini.
+Menentukan ID pekerjaan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.Guid
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan pekerjaan.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang mendapatkan pekerjaan cmdlet ini.
+Menentukan nama runbook tempat cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -181,16 +181,16 @@ Accept wildcard characters: False
 
 ### -Status
 Menentukan status pekerjaan.
-Cmdlet ini mendapatkan pekerjaan dengan status yang cocok dengan parameter ini.
-Nilai valid adalah: 
+Cmdlet ini mendapatkan pekerjaan yang memiliki status yang cocok dengan parameter ini.
+Nilai yang valid adalah: 
 - Mengaktifkan
 - Selesai
 - Gagal
-- Diantrekan
+- Antri
 - Melanjutkan
-- Berjalan
-- Memulai
-- Dihentikan
+- Menjalankan
+- Mulai
+- Berhenti
 - Menghentikan
 - Ditangguhkan
 - Menangguhkan
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

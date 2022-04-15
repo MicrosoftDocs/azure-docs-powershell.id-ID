@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkInterfaceTapConfig.md
 ms.openlocfilehash: 2f6c4f410c7d4f92c8dcd911e0c113f2a91b304c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140855939"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142355340"
 ---
 # Get-AzureRmNetworkInterfaceTapConfig
 
@@ -34,23 +34,23 @@ Get-AzureRmNetworkInterfaceTapConfig -ResourceId <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmNetworkInterfaceTapConfig** mendapatkan Konfigurasi Ketuk Azure untuk grup sumber daya, antarmuka jaringan dan ketuk nama konfigurasi atau daftar ketuk konfigurasi di grup sumber daya dan antarmuka jaringan.
+Cmdlet **Get-AzureRmNetworkInterfaceTapConfig** mendapatkan Azure Tap Configuration untuk grup sumber daya tertentu, antarmuka jaringan dan ketuk nama konfigurasi atau daftar konfigurasi ketukan dalam grup sumber daya dan antarmuka jaringan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua konfigurasi ketuk untuk antarmuka jaringan tertentu
+### Contoh 1: Dapatkan semua konfigurasi ketuk untuk antarmuka jaringan tertentu
 ```
 PS C:\>Get-AzureRmNetworkInterfaceTapConfig -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName"
 ```
 
-Perintah ini akan ditambahkan konfigurasi ketuk untuk antarmuka jaringan tertentu.
+Perintah ini akan menambahkan konfigurasi ketukan untuk antarmuka jaringan tertentu.
 
-### Contoh 2: Mendapatkan konfigurasi ketuk tertentu
+### Contoh 2: Mendapatkan konfigurasi ketukan tertentu
 ```
 PS C:\>Get-AzureRmNetworkInterface -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName" -Name "tapconfigName"
 ```
 
-Perintah ini menambahkan konfigurasi ketuk tertentu untuk antarmuka jaringan tertentu.
+Perintah ini akan menambahkan konfigurasi ketukan tertentu untuk antarmuka jaringan tertentu.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama konfigurasi ketuk tertentu.
+Nama konfigurasi ketukan tertentu.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId dari sumber daya TapConfiguration
+ResourceId sumber daya TapConfiguration
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

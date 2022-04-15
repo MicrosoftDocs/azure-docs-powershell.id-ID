@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementPolicy.md
 ms.openlocfilehash: 5385bc20e70dc4c7b9aeb8e6c1de4ef51999ee72
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139945465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142326833"
 ---
 # Remove-AzApiManagementPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan Manajemen API dari lingkup tertentu.
+Menghapus kebijakan Manajemen API dari lingkup yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ProductId <Strin
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveApiLevel
+### HapusApiLevel
 ```
 Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ApiId <String> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,11 +48,11 @@ Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ApiId <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementPolicy** menghapus kebijakan Manajemen API dari lingkup tertentu.
+Cmdlet **Remove-AzApiManagementPolicy** menghapus kebijakan Manajemen API dari lingkup yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kebijakan tingkat penyewa
+### Contoh 1: Menghapus kebijakan tingkat penyewa
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Remove-AzApiManagementPolicy -Context $apimContext
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai nilai $False, jika tidak.
+Menunjukkan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai $False, jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ### -ProductId
 Menentukan pengidentifikasi produk yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan menghapus kebijakan cakupan produk.
+Jika Anda menentukan parameter ini, cmdlet akan menghapus kebijakan lingkup produk.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

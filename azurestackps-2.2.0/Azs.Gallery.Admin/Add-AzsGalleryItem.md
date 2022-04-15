@@ -4,11 +4,11 @@ Module Name: Azs.Gallery.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.gallery.admin/add-azsgalleryitem
 schema: 2.0.0
 ms.openlocfilehash: 13829c0ce9e38c26e7eecf237c527b925b6db00f
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579054"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142330451"
 ---
 # Add-AzsGalleryItem
 
@@ -23,7 +23,7 @@ Add-AzsGalleryItem [-SubscriptionId <String>] [-GalleryItemUri <String>] [-Defau
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 Add-AzsGalleryItem -GalleryItemUriPayload \<IGalleryItemUriPayload> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryItemUri
-URI untuk paket galeri Anda yang sudah diunggah secara online.
+URI untuk paket galeri Anda yang telah diunggah secara online.
 
 ```yaml
 Type: System.String
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryItemUriPayload
-Lokasi muat muat item galeri.
-Untuk membuat, lihat bagian CATATAN untuk properti GALLERYITEMURIPAYLOAD dan membuat tabel hash.
+Lokasi muatan item galeri.
+Untuk membangun, lihat bagian CATATAN untuk properti GALLERYITEMURIPAYLOAD dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Gallery.Models.Api20150401.IGalleryItemUriPayload
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -162,9 +162,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-GALLERYITEMURIPAYLOAD \<IGalleryItemUriPayload> : Lokasi item galeri payload.
+GALLERYITEMURIPAYLOAD \<IGalleryItemUriPayload>: Lokasi muatan item galeri.
   - `[GalleryItemUri <String>]`: URI untuk paket galeri Anda yang telah diunggah secara online.
 
 ## RELATED LINKS

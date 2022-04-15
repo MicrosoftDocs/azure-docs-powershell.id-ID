@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
 ms.openlocfilehash: 4e5f879f7e7703f3556d9491ef461d0667f8ce67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140302755"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142322159"
 ---
 # Get-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
-Mendapatkan definisi pekerjaan Grafik Spark di ruang kerja.
+Mendapatkan definisi pekerjaan Spark di ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkjobdefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzSynapseSparkJobDefinition -WorkspaceObject <PSSynapseWorkspace> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definisi pekerjaan Grafik Spark di ruang kerja. Jika Anda menentukan nama definisi pekerjaan Grafik Apik, cmdlet ini mendapatkan informasi tentang definisi pekerjaan Spark tersebut. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua definisi Pekerjaan grafik apik di dalam ruang kerja.
+Cmdlet **Get-AzSynapseSparkJobDefinition** mendapatkan informasi tentang definisi pekerjaan Spark di ruang kerja. Jika Anda menentukan nama definisi pekerjaan Spark, cmdlet ini mendapatkan informasi tentang definisi pekerjaan Spark tersebut. Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua definisi pekerjaan Spark di ruang kerja.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Perintah ini mendapatkan informasi tentang semua definisi pekerjaan Spark di rua
 PS C:\> Get-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoJobDefinition
 ```
 
-Perintah ini mendapatkan informasi tentang definisi pekerjaan Grafik Apik yang bernama ContosoSparkJobDefinition di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mendapatkan informasi tentang definisi pekerjaan Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -59,7 +59,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Get-AzSynapseSparkJobDefinition -Name ContosoSparkJobDefinition
 ```
 
-Perintah ini mendapatkan informasi tentang definisi pekerjaan Grafik Apik yang bernama ContosoSparkJobDefinition di ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan informasi tentang definisi pekerjaan Spark bernama ContosoSparkJobDefinition di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama definisi pekerjaan Grafik Apik.
+Nama definisi pekerjaan Spark.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

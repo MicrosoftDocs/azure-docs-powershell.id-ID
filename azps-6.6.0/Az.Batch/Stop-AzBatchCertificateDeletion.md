@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchCertificateDeletion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchCertificateDeletion.md
 ms.openlocfilehash: fe16f9fe07c0ab7aec8d4db7b723e18d4093bfbb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258677"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325483"
 ---
 # Stop-AzBatchCertificateDeletion
 
@@ -19,7 +19,7 @@ ms.locfileid: "140258677"
 Membatalkan penghapusan sertifikat yang gagal.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/stop-azbatchcertificatedeletion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/stop-azbatchcertificatedeletion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,8 +30,8 @@ Stop-AzBatchCertificateDeletion [-ThumbprintAlgorithm] <String> [-Thumbprint] <S
 
 ## DESCRIPTION
 Cmdlet **Stop-AzBatchCertificateDeletion** membatalkan penghapusan sertifikat yang gagal dalam layanan Azure Batch.
-Anda dapat menghentikan penghapusan hanya jika sertifikat berada dalam **status Gagal** Dihapus.
-Cmdlet ini memulihkan sertifikat ke **status** Aktif.
+Anda dapat menghentikan penghapusan hanya jika sertifikat berada dalam status **DeleteFailed** .
+Cmdlet ini memulihkan sertifikat ke status **Aktif** .
 
 ## EXAMPLES
 
@@ -40,13 +40,13 @@ Cmdlet ini memulihkan sertifikat ke **status** Aktif.
 PS C:\>Stop-AzBatchCertificateDeletion -ThumbprintAlgorithm "sha1" -Thumbprint "c1e494a415149c5f211c4778b52f2e834a07247c" -BatchContext $Context
 ```
 
-Perintah ini membatalkan penghapusan sertifikat yang memiliki thumbprint yang ditentukan.
+Perintah ini membatalkan penghapusan sertifikat yang memiliki sidik jari yang ditentukan.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
-Menentukan thumbprint sertifikat yang dipulihkan cmdlet ini ke **status** Aktif.
+### -Sidik jari
+Menentukan sidik jari sertifikat yang dipulihkan cmdlet ini ke status **Aktif** .
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -ThumbprintAlgorithm
 Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint* .
-Saat ini, satu-satunya nilai valid adalah bayangan1.
+Saat ini, satu-satunya nilai yang valid adalah sha1.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccountKey](./Get-AzBatchAccountKey.md)
 
-[Remove-AzBatchCertificate](./Remove-AzBatchCertificate.md)
+[Hapus-AzBatchCertificate](./Remove-AzBatchCertificate.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

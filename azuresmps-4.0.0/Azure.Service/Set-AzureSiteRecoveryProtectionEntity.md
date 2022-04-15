@@ -4,16 +4,16 @@ ms.assetid: 1415BBA3-3F55-46A9-B20B-DFA72342BDF4
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1603378ee4d2b51b61601d3047b6f1efa8e8142b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426256"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354041"
 ---
 # Set-AzureSiteRecoveryProtectionEntity
 
 ## SYNOPSIS
-Mengatur status untuk entitas perlindungan Pemulihan Situs.
+Mengatur negara bagian untuk entitas perlindungan Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -34,7 +34,7 @@ Set-AzureSiteRecoveryProtectionEntity -Id <String> -ProtectionContainerId <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureSiteRecoveryProtectionEntity** mengaktifkan atau menonaktifkan proteksi pada entitas proteksi Pemulihan Situs Azure.
+Cmdlet **Set-AzureSiteRecoveryProtectionEntity** mengaktifkan atau menonaktifkan perlindungan pada entitas perlindungan azure Site Recovery.
 
 ## EXAMPLES
 
@@ -45,17 +45,17 @@ PS C:\> $ProtectionEntity = Get-AzureSiteRecoveryProtectionEntity -ProtectionCon
 PS C:\> Set-AzureSiteRecoveryProtectionEntity -ProtectionEntity $ ProtectionEntity -Protection Enable -ProtectionProfile $ProtectionContainer.AvailableProtectionProfiles[0] -OS Windows
 ```
 
-Perintah pertama mendapatkan wadah untuk vault Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpannya dalam variabel $ProtectionContainer baru.
+Perintah pertama mendapatkan kontainer untuk kubah Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer** , lalu menyimpannya dalam variabel $ProtectionContainer.
 
-Perintah kedua mendapatkan mesin virtual terlindungi yang termasuk dalam wadah yang disimpan di $ProtectionContainer dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
-Perintah menyimpan hasil dalam variabel $ProtectionEntity baru.
+Perintah kedua mendapatkan mesin virtual yang dilindungi milik wadah yang disimpan di $ProtectionContainer menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
+Perintah menyimpan hasil dalam variabel $ProtectionEntity.
 
-Perintah terakhir memungkinkan proteksi untuk entitas yang disimpan di $ProtectionEntity.
+Perintah terakhir memungkinkan perlindungan untuk entitas yang disimpan di $ProtectionEntity.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID mesin virtual yang diproteksi yang akan mengaktifkan atau menonaktifkan proteksi.
+Menentukan ID mesin maya yang dilindungi untuk mengaktifkan atau menonaktifkan proteksi.
 
 ```yaml
 Type: String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSDiskName
-Menentukan nama disk yang berisi sistem operasi.
+Menentukan nama diska yang memuat sistem operasi.
 
 ```yaml
 Type: String
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -134,12 +134,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protection
+### -Perlindungan
 Menentukan apakah proteksi harus diaktifkan atau dinonaktifkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Aktifkan
-- Disable
+- Mengaktifkan
+- Menonaktifkan
 
 ```yaml
 Type: String
@@ -154,8 +154,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID dari wadah yang diproteksi.
-Cmdlet ini mengaktifkan atau menonaktifkan proteksi untuk mesin virtual milik wadah yang ditentukan oleh parameter ini.
+Menentukan ID wadah yang diproteksi.
+Cmdlet ini mengaktifkan atau menonaktifkan proteksi untuk mesin virtual milik wadah yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntity
-Menentukan objek entitas proteksi.
+Menentukan objek entitas perlindungan.
 
 ```yaml
 Type: ASRProtectionEntity
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -ProtectionProfile
 Menentukan profil proteksi untuk mengaktifkan proteksi.
-Menentukan objek **ASRProtectionProfile** yang merupakan salah satu profil proteksi yang tersedia dalam wadah proteksi terkait.
+Tentukan objek **ASRProtectionProfile** yang merupakan salah satu profil proteksi yang tersedia dalam wadah perlindungan terkait.
 
 ```yaml
 Type: ASRProtectionProfile
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

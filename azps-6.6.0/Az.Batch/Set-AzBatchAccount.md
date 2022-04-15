@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchAccount.md
 ms.openlocfilehash: 805982b6970a09672f8b3b4423f7c6d61640ba3e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142981"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325519"
 ---
 # Set-AzBatchAccount
 
 ## SYNOPSIS
-Memperbarui akun Kumpulan.
+Memperbarui akun Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/set-azbatchaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Set-AzBatchAccount [-AccountName] <String> [-Tag] <Hashtable> [-ResourceGroupNam
 
 ## DESCRIPTION
 Cmdlet **Set-AzBatchAccount** memperbarui akun Azure Batch.
-Saat ini, cmdlet ini hanya bisa memperbarui tag.
+Saat ini, cmdlet ini hanya dapat memperbarui tag.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tag pada akun Kumpulan
+### Contoh 1: Memperbarui tag pada akun Batch
 ```
 PS C:\>Set-AzBatchAccount -AccountName "cmdletexample" -Tag @{key0="value0";key1=$null;key2="value2"}
 AccountName                  : cmdletexample
@@ -57,8 +57,8 @@ Perintah ini memperbarui tag pada akun bernama pfuller.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan yang diperbarui cmdlet ini.
+### -AccountName
+Menentukan nama akun Batch yang diperbarui cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,6 +153,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchAccount](./New-AzBatchAccount.md)
 
-[Remove-AzBatchAccount](./Remove-AzBatchAccount.md)
+[Hapus-AzBatchAccount](./Remove-AzBatchAccount.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

@@ -4,16 +4,16 @@ ms.assetid: A723D12D-DCF5-4F0C-AAC2-8BADFBAC3328
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a8fa871d068f801e4fb97a34a22d1acbfca8d2e8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428055"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354183"
 ---
 # New-AzureSqlDatabaseServerFirewallRule
 
 ## SYNOPSIS
-Membuat aturan firewall di Azure SQL Database Server.
+Membuat aturan firewall di server Azure SQL Database.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -32,12 +32,12 @@ New-AzureSqlDatabaseServerFirewallRule -ServerName <String> [-RuleName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSqlDatabaseServerFirewallRule** membuat aturan firewall dalam contoh server Azure SQL Database tertentu dalam langganan saat ini.
+Cmdlet **New-AzureSqlDatabaseServerFirewallRule** membuat aturan firewall dalam contoh server Azure SQL Database yang ditentukan dalam langganan saat ini.
 
-Gunakan parameter *StartIpAddress* dan *EndIpAddress* untuk menentukan rentang alamat IP yang memungkinkan aturan ini tersambung ke server Azure SQL Database.
+Gunakan parameter *StartIpAddress* dan *EndIpAddress* untuk menentukan rentang alamat IP yang diperbolehkan oleh aturan ini untuk menyambungkan ke server Azure SQL Database.
 
-Tentukan parameter *AllowAllAzureServices* untuk membuat aturan yang mengizinkan koneksi Azure ke server.
-Aturan ini memiliki nilai alamat IP awal dan akhir, dari 0.0.0.0.
+Tentukan parameter *AllowAllAzureServices* untuk membuat aturan yang memungkinkan koneksi Azure ke server.
+Aturan ini memiliki nilai alamat IP awal dan akhir 0.0.0.0.
 Jika Anda tidak menentukan nama aturan firewall, cmdlet ini menetapkan nama default AllowAllAzureServices.
 
 ## EXAMPLES
@@ -48,21 +48,21 @@ PS C:\>New-AzureSqlDatabaseServerFirewallRule -ServerName "lpqd0zbr8y" -RuleName
 ```
 
 Perintah ini membuat aturan firewall FirewallRule24 di server Azure SQL Database bernama lpqd0zbr8y.
-Perintah menentukan sebuah rentang alamat IP.
+Perintah menentukan rentang alamat IP.
 
-### Contoh 2: Buat aturan yang mengizinkan semua layanan Azure
+### Contoh 2: Membuat aturan yang memungkinkan semua layanan Azure
 ```
 PS C:\>New-AzureSqlDatabaseServerFirewallRule -ServerName "lpqd0zbr8y" -AllowAllAzureServices -RuleName "AzureConnections"
 ```
 
-Perintah ini membuat aturan firewall bernama AzureConnections di server yang bernama lpqd0zbr8y yang mengizinkan koneksi Azure.
+Perintah ini membuat aturan firewall bernama AzureConnections di server bernama lpqd0zbr8y yang memungkinkan koneksi Azure.
 
-### Contoh 3: Buat aturan yang mengizinkan semua layanan Azure yang menggunakan nama default Buat aturan yang mengizinkan semua layanan Azure yang menggunakan nama default
+### Contoh 3: Buat aturan yang memungkinkan semua layanan Azure yang menggunakan nama default Buat aturan yang memungkinkan semua layanan Azure yang menggunakan nama default
 ```
 PS C:\>New-AzureSqlDatabaseServerFirewallRule -ServerName "lpqd0zbr8y" -AllowAllAzureServices
 ```
 
-Perintah ini membuat aturan firewall di server tertentu bernama lpqd0zbr8y yang mengizinkan koneksi Azure.
+Perintah ini membuat aturan firewall di server tertentu bernama lpqd0zbr8y yang memungkinkan koneksi Azure.
 Perintah menetapkan nama aturan default AllowAllAzureServices.
 
 ## PARAMETERS
@@ -97,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleName
-Menentukan nama aturan firewall yang baru.
+Menentukan nama aturan firewall baru.
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -ServerName
 Menentukan nama server.
-Cmdlet ini membuat aturan firewall pada server yang ditentukan cmdlet ini.
+Cmdlet ini membuat aturan firewall di server yang ditentukan cmdlet ini.
 Tentukan nama server, bukan nama DNS yang sepenuhnya memenuhi syarat.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartIpAddress
-Menentukan nilai awal rentang alamat IP untuk aturan firewall.
+Menentukan nilai mulai rentang alamat IP untuk aturan firewall.
 
 ```yaml
 Type: String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,11 +235,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Membuat Aturan Firewall](https://msdn.microsoft.com/en-us/library/azure/dn505712.aspx)
 
-[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Get-AzureSqlDatabaseServerFirewallRule](./Get-AzureSqlDatabaseServerFirewallRule.md)
 
-[Remove-AzureSqlDatabaseServerFirewallRule](./Remove-AzureSqlDatabaseServerFirewallRule.md)
+[Hapus-AzureSqlDatabaseServerFirewallRule](./Remove-AzureSqlDatabaseServerFirewallRule.md)
 
 [Set-AzureSqlDatabaseServerFirewallRule](./Set-AzureSqlDatabaseServerFirewallRule.md)
 
