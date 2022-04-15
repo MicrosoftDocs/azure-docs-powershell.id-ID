@@ -4,11 +4,11 @@ Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3e7eac7b9d23914aa909a111958d64cc9d4247d3
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578410"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142353509"
 ---
 # Get-AzsVMExtension
 
@@ -22,7 +22,7 @@ Mengembalikan ekstensi gambar mesin virtual yang saat ini tersedia.
 Get-AzsVMExtension [-Publisher <String>] [-Type <String>] [-Location <String>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsVMExtension -Publisher <String> -Type <String> -Version <String> [-Location <String>]
  [<CommonParameters>]
@@ -43,7 +43,7 @@ Mengembalikan ekstensi gambar mesin virtual.
 Get-AzsVMExtension
 ```
 
-Dapatkan semua ekstensi VM pada satu lokasi.
+Dapatkan semua ekstensi VM di suatu lokasi.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe ekstensi.
+Jenis ekstensi.
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

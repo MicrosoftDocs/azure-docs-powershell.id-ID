@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Publish-AzCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Publish-AzCdnEndpointContent.md
 ms.openlocfilehash: 37011d5403498dfc9e59a30d5fa71bc862e9eba1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140287537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142324619"
 ---
 # Publish-AzCdnEndpointContent
 
@@ -19,7 +19,7 @@ ms.locfileid: "140287537"
 Memuat konten ke titik akhir.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/publish-azcdnendpointcontent) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/publish-azcdnendpointcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,14 +36,14 @@ Publish-AzCdnEndpointContent -CdnEndpoint <PSEndpoint> -LoadContent <String[]> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzCdnEndpointContent** memuat konten dari server origin untuk titik akhir Azure Content Delivery Network (CDN).
+**Cmdlet Publish-AzCdnEndpointContent** memuat konten dari server asal untuk titik akhir Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan titik akhir CDN akhir.
+Menentukan titik akhir CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadContent
-Menentukan array jalur relatif untuk konten di server origin yang diterbitkan cmdlet ini.
+Menentukan array jalur relatif untuk konten di server asal yang diterbitkan cmdlet ini.
 
 ```yaml
 Type: System.String[]
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil asal server.
+Menentukan nama profil tempat server asal berada.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Unpublish-AzCdnEndpointContent](./Unpublish-AzCdnEndpointContent.md)
+[Batal terbitkan-AzCdnEndpointContent](./Unpublish-AzCdnEndpointContent.md)
 
 

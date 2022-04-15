@@ -3,17 +3,17 @@ external help file: Azs.AzureBridge.Admin-help.xml
 Module Name: Azs.AzureBridge.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 2b88e2dc541d0e49756717a5cb16f98e9632b3d88a46c7ce26be8dc5ad5455cb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: edcc9bea35e1675b42a04c2b4e804c48ba052742
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419371"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142332269"
 ---
 # Get-AzsAzureBridgeProduct
 
 ## SYNOPSIS
-Mengembalikan daftar produk yang tersedia untuk diunduh dari Azure Marketplace.
+Mengembalikan daftar produk yang tersedia untuk diunduh dari Marketplace Azure.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsAzureBridgeProduct -ActivationName <String> -ResourceGroupName <String> [
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsAzureBridgeProduct -Name <String> -ActivationName <String> -ResourceGroupName <String>
  [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsAzureBridgeProduct -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar produk yang tersedia untuk diunduh dari Azure Marketplace.
+Mengembalikan daftar produk yang tersedia untuk diunduh dari Marketplace Azure.
 
 ## EXAMPLES
 
@@ -44,14 +44,14 @@ Mengembalikan daftar produk yang tersedia untuk diunduh dari Azure Marketplace.
 Get-AzsAzureBridgeProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan daftar Produk yang tersedia untuk diunduh dari Azure Marketplace.
+Dapatkan daftar Produk yang tersedia untuk diunduh dari Marketplace Azure.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Get-AzsAzureBridgeProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG' -Name 'microsoft.docker-arm.1.1.0'
 ```
 
-Dapatkan info produk yang tersedia untuk diunduh dari Azure Marketplace menurut Nama.
+Dapatkan info produk yang tersedia untuk diunduh dari Marketplace Azure menurut Nama.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

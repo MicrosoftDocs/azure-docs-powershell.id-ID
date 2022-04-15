@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup.md
-ms.openlocfilehash: ad66f3af00e5589d276cf53361bd241d17f65b53
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e0d7ee692be6358b718adf0d7a9063e89d38d370
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185732"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142345571"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup
 
 ## SYNOPSIS
-Membuat entri ExclusionManagedRuleGroup dalam ExclusionManagedRuleSets untuk pengecualian kebijakan firewall.
+Membuat entri ExclusionManagedRuleGroup di ExclusionManagedRuleSets untuk pengecualian kebijakan firewall.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusionmanagedrulegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,14 +38,14 @@ New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup -RuleGroupName <
 PS C:\> $ruleGroupEntry = New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup -RuleGroupName $ruleName -Rules $rule1,$rule2
 ```
 
-Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName dan Aturan sebagai $rule 1, $rule 2. Menetapkan tugas yang sama $ruleGroupEntry
+Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName dan Aturan sebagai $rule 1, $rule 2. Menetapkan hal yang sama ke $ruleGroupEntry
 
 ### Contoh 2
 ```powershell
 PS C:\> $ruleGroupEntry = New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup -RuleGroupName $ruleName
 ```
 
-Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName. Menetapkan tugas yang sama $ruleGroupEntry
+Membuat entri ExclusionManagedRuleGroup dengan nama grup sebagai $ruleName. Menetapkan hal yang sama ke $ruleGroupEntry
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
+### -Aturan
 Daftar Aturan.
 
 ```yaml
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupName
-Tentukan aturanGroupName dalam entri pengecualian Grup Aturan.
+Tentukan ruleGroupName dalam entri pengecualian RuleGroup.
 
 ```yaml
 Type: System.String
@@ -92,11 +95,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageShare.md
 ms.openlocfilehash: 31a8d6cbb205b451233bdc72793fb45443350fdd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424592"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142360846"
 ---
 # Get-AzureStorageShare
 
 ## SYNOPSIS
-Mendapatkan daftar file yang akan bagikan.
+Mendapatkan daftar berbagi file.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Get-AzureStorageShare [[-Prefix] <String>] [-Context <IStorageContext>] [-Server
  [<CommonParameters>]
 ```
 
-### Spesifik
+### Tertentu
 ```
 Get-AzureStorageShare [-Name] <String> [[-SnapshotTime] <DateTimeOffset>] [-Context <IStorageContext>]
  [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -41,42 +41,42 @@ Cmdlet **Get-AzureStorageShare** mendapatkan daftar berbagi file untuk akun peny
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan berbagi file
+### Contoh 1: Dapatkan berbagi file
 ```
 PS C:\>Get-AzureStorageShare -Name "ContosoShare06"
 ```
 
 Perintah ini mendapatkan berbagi file bernama ContosoShare06.
 
-### Contoh 2: Mendapatkan semua berbagi file yang dimulai dengan string
+### Contoh 2: Dapatkan semua berbagi file yang dimulai dengan string
 ```
 PS C:\>Get-AzureStorageShare -Prefix "Contoso"
 ```
 
-Perintah ini akan membagikan semua file yang memiliki nama yang dimulai dengan Contoso.
+Perintah ini mendapatkan semua berbagi file yang memiliki nama yang dimulai dengan Contoso.
 
-### Contoh 3: Mendapatkan semua berbagi file dalam konteks yang ditentukan
+### Contoh 3: Mendapatkan semua berbagi file dalam konteks tertentu
 ```
 PS C:\>$Context = New-AzureStorageContext -Local
 PS C:\> Get-AzureStorageShare -Context $Context
 ```
 
-Perintah pertama menggunakan cmdlet **New-AzureStorageContext** untuk membuat konteks menggunakan parameter *Local,* lalu menyimpan objek konteks tersebut dalam $Context konteks.
+Perintah pertama menggunakan cmdlet **New-AzureStorageContext** untuk membuat konteks menggunakan parameter *Lokal* , lalu menyimpan objek konteks tersebut dalam variabel $Context.
 Perintah kedua akan membagikan file untuk objek konteks yang disimpan di $Context.
 
-### Contoh 4: Mendapatkan file berbagi snapshot dengan nama berbagi tertentu dan SnapshotTime
+### Contoh 4: Dapatkan snapshot berbagi file dengan nama berbagi tertentu dan SnapshotTime
 ```
 PS C:\>Get-AzureStorageShare -Name "ContosoShare06" -SnapshotTime "6/16/2017 9:48:41 AM +00:00"
 ```
 
-Perintah ini mengambil file berbagi snapshot dengan nama berbagi tertentu dan SnapshotTime.
+Perintah ini mendapatkan snapshot berbagi file dengan nama berbagi tertentu dan SnapshotTime.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -91,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet [New-AzureStorageContext.](./New-AzureStorageContext.md)
+Menentukan konteks Azure Storage.
+Untuk mendapatkan konteks, gunakan cmdlet [New-AzureStorageContext](./New-AzureStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama berbagi file.
-Cmdlet ini mendapatkan berbagi file yang ditentukan oleh parameter ini, atau tidak ada jika Anda menentukan nama berbagi file yang tidak ada.
+Menentukan nama file yang dibagikan.
+Cmdlet ini mendapatkan berbagi file yang ditentukan parameter ini, atau tidak ada apa-apa jika Anda menentukan nama berbagi file yang tidak ada.
 
 ```yaml
 Type: System.String
@@ -156,9 +156,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Menentukan prefiks untuk berbagi file.
-Cmdlet ini akan membagikan file yang cocok dengan prefiks yang ditentukan parameter ini, atau tidak ada berbagi file jika tidak ada file yang cocok dengan prefiks tertentu.
+Cmdlet ini mendapatkan berbagi file yang cocok dengan prefiks yang ditentukan parameter ini, atau tidak ada file yang dibagikan jika tidak ada file yang sama dengan prefiks yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotTime
-SnapshotTime dari file berbagi snapshot yang akan diterima.
+SnapshotTime dari snapshot berbagi file yang akan diterima.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -217,6 +217,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureStorageShare](./New-AzureStorageShare.md)
+[AzureStorageShare baru](./New-AzureStorageShare.md)
 
-[Remove-AzureStorageShare](./Remove-AzureStorageShare.md)
+[Hapus-AzureStorageShare](./Remove-AzureStorageShare.md)

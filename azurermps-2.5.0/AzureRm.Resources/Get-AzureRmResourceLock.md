@@ -5,16 +5,16 @@ ms.assetid: 3FBF91B8-8EF9-4E05-AD7E-AEFC6EBBFB8E
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermresourcelock
 schema: 2.0.0
 ms.openlocfilehash: 81e7ab170dc43af0cf712fd9be3e831f33f7fd97
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421045"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361520"
 ---
 # Get-AzureRmResourceLock
 
 ## SYNOPSIS
-Dapatkan kunci sumber daya.
+Mendapatkan kunci sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -AtScope
 Menunjukkan bahwa cmdlet ini mengembalikan semua kunci pada atau di atas lingkup yang ditentukan.
-Jika Anda tidak menentukan parameter ini, cmdlet akan mengembalikan semua kunci, di atas, atau di bawah lingkup.
+Jika Anda tidak menentukan parameter ini, cmdlet mengembalikan semua kunci pada, di atas, atau di bawah lingkup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -131,14 +131,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockId
-Menentukan ID kunci yang akan dapatkan cmdlet ini.
+Menentukan ID kunci yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockName
-Menentukan nama kunci yang akan dapatkan cmdlet ini.
+Menentukan nama kunci yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,8 +229,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya untuk menerapkan kunci ini.
-Cmdlet ini terkunci untuk sumber daya ini.
+Menentukan nama sumber daya yang berlaku untuk kunci ini.
+Cmdlet ini akan mengunci sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -245,8 +245,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Menentukan tipe sumber daya dari sumber daya yang diterapkan oleh kunci ini.
-Cmdlet ini terkunci untuk sumber daya ini.
+Menentukan tipe sumber daya tempat kunci ini diterapkan.
+Cmdlet ini akan mengunci sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -261,8 +261,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup berlakunya kunci.
-Cmdlet akan terkunci untuk lingkup ini.
+Menentukan lingkup yang diterapkan kunci.
+Cmdlet mendapatkan kunci untuk lingkup ini.
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Mengindikasikan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -304,7 +304,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmResourceLock](./New-AzureRmResourceLock.md)
 
-[Remove-AzureRmResourceLock](./Remove-AzureRmResourceLock.md)
+[Hapus-AzureRmResourceLock](./Remove-AzureRmResourceLock.md)
 
 [Set-AzureRmResourceLock](./Set-AzureRmResourceLock.md)
 

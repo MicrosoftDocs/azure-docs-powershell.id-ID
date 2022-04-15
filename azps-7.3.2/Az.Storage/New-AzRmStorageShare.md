@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageShare.md
-ms.openlocfilehash: aaed6cb235a35d301f24e9432add072f368c0910
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c47bcfff2e435258ca989f91e46a27111fffda68
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548372"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338515"
 ---
 # New-AzRmStorageShare
 
 ## SYNOPSIS
-Membuat file Storage bersama.
+Membuat file Storage berbagi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 New-AzRmStorageShare [-ResourceGroupName] <String> [-StorageAccountName] <String> -Name <String>
  [-QuotaGiB <Int32>] [-Metadata <Hashtable>] [-AccessTier <String>] [-Snapshot] [-EnabledProtocol <String>]
@@ -34,11 +37,11 @@ New-AzRmStorageShare -StorageAccount <PSStorageAccount> -Name <String> [-QuotaGi
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageShare** membuat Storage file baru.
+Cmdlet **New-AzRmStorageShare** membuat berbagi file Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Storage berbagi file dengan nama akun Storage dan nama berbagi, dengan metadata dan kuota berbagi sebagai 100 GiB.
+### Contoh 1: Buat file Storage berbagi dengan nama akun Storage dan bagikan nama, dengan metadata dan bagikan kuota sebagai 100 GiB.
 ```
 PS C:\>New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -QuotaGiB 100 -Metadata @{"tag1" = "value1"; "tag2" = "value2" } 
 
@@ -49,9 +52,9 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 myshare
 ```
 
-Perintah ini membuat Storage berbagi file dengan metadata dan membagikan kuota sebagai 100 GiB.
+Perintah ini membuat file Storage dibagikan dengan metadata dan berbagi kuota sebagai 100 GiB.
 
-### Contoh 2: Buat file Storage anda bagikan dengan Storage objek akun
+### Contoh 2: Membuat file Storage berbagi dengan objek akun Storage
 ```
 Get-AzStorageAccount -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" | New-AzRmStorageShare -Name "myshare"
 
@@ -62,9 +65,9 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 myshare
 ```
 
-Perintah ini membuat file Storage anda bagikan dengan Storage objek dan nama berbagi mereka.
+Perintah ini membuat file Storage dibagikan dengan objek akun Storage dan berbagi nama.
 
-### Contoh 3: Create a Storage file share with accesstier as Hot
+### Contoh 3: Membuat file Storage berbagi dengan aksesier sebagai Hot
 ```
 PS C:\>$share = New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -AccessTier Hot
 
@@ -75,9 +78,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare                            Hot
 ```
 
-Perintah ini akan membuat Storage berbagi file dengan accesstier sebagai Hot.
+Perintah ini membuat file Storage dibagikan dengan aksestier sebagai Hot.
 
-### Contoh 4: Membuat Storage berbagi file baru dari berbagi yang sudah ada
+### Contoh 4: Membuat file Storage berbagi snapshot dari berbagi yang sudah ada
 ```
 PS C:\>$shareSnapshot = New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -Snapshot
 
@@ -88,9 +91,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes sn
 myshare                                                                       2021-05-10T08:04:08
 ```
 
-Perintah ini akan membuat Storage file baru dari berbagi file dasar yang sudah ada.
+Perintah ini membuat snapshot berbagi file Storage dari berbagi file dasar yang sudah ada.
 
-### Contoh 5: Buat file Storage berbagi dengan EnabledProtocol proeprty sebagai NFS, dan properti RootSquash sebagai NoRootSquash
+### Contoh 5: Membuat file Storage berbagi dengan properti EnabledProtocol proeprty sebagai NFS, dan RootSquash sebagai NoRootSquash
 ```
 PS C:\>$share = New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -EnabledProtocol NFS -RootSquash NoRootSquash 
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledProtocol
-Mengatur protokol untuk berbagi file. File tidak dapat diubah setelah pembuatan berbagi file. Kemungkinan nilai termasuk: 'SMB', 'NFS'
+Mengatur protokol untuk berbagi file. File tidak dapat diubah setelah pembuatan berbagi file. Nilai yang memungkinkan termasuk: 'SMB', 'NFS'
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Berbagi Metadata
+Bagi Metadata
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -QuotaGiB
-Bagikan Kuota di Gibibyte.
+Bagi Quota in Gibibyte.
 
 ```yaml
 Type: System.Int32
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootSquash
-Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan meliputi: 'NoRootSquash', 'RootSquash', 'AllSquash'
+Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

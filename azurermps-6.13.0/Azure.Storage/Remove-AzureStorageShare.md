@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Remove-AzureStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Remove-AzureStorageShare.md
 ms.openlocfilehash: 43a1a18675a662e30e88dd2d96f2fc901ffab8dd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427080"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142360935"
 ---
 # Remove-AzureStorageShare
 
@@ -30,7 +30,7 @@ Remove-AzureStorageShare [-Name] <String> [-IncludeAllSnapshot] [-Force] [-PassT
  [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Remove-AzureStorageShare [-Share] <CloudFileShare> [-IncludeAllSnapshot] [-Force] [-PassThru]
  [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -43,14 +43,14 @@ Cmdlet **Remove-AzureStorageShare** menghapus berbagi file.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus berbagi file
+### Contoh 1: Menghapus berbagi file
 ```
 PS C:\>Remove-AzureStorageShare -Name "ContosoShare06"
 ```
 
-Perintah ini akan menghapus berbagi file bernama ContosoShare06.
+Perintah ini menghapus berbagi file bernama ContosoShare06.
 
-### Contoh 2: Hapus berbagi file dan semua jepretan layarnya
+### Contoh 2: Menghapus berbagi file dan semua snapshotnya
 ```
 PS C:\>Remove-AzureStorageShare -Name "ContosoShare06" -IncludeAllSnapshot
 ```
@@ -60,9 +60,9 @@ Perintah ini menghapus berbagi file bernama ContosoShare06 dan semua snapshotnya
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -77,11 +77,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzureStorageContext.](./New-AzureStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzureStorageContext](./New-AzureStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -126,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Paksa untuk menghapus berbagi dengan semua snapshotnya, dan semua konten.
+### -Paksa
+Paksa untuk menghapus berbagi dengan semua snapshotnya, dan semua kontennya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama berbagi file.
+Menentukan nama file yang dibagikan.
 Cmdlet ini menghapus berbagi file yang ditentukan parameter ini.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini **mengembalikan Boolean** yang mencerminkan keberhasilan operasi.
+Menunjukkan bahwa cmdlet ini mengembalikan **Boolean** yang mencerminkan keberhasilan operasi.
 Secara default, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -204,11 +204,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
+Menentukan objek **CloudFileShare** .
 Cmdlet ini menghapus objek yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzureStorageShare.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzureStorageShare.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,14 +254,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileShare
-Parameter: Berbagi (ByValue)
+Parameter: Bagikan (ByValue)
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
@@ -275,6 +275,6 @@ Parameter: Berbagi (ByValue)
 
 [Get-AzureStorageShare](./Get-AzureStorageShare.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
-[New-AzureStorageShare](./New-AzureStorageShare.md)
+[AzureStorageShare baru](./New-AzureStorageShare.md)

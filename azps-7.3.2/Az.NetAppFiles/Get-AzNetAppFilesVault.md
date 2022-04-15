@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVault.md
-ms.openlocfilehash: cc637b2013b4d73263ecd5f6e75ba7ce560f7c0d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e7c5037d290dabf3690c67abb9f7ef9ee8a7dd5e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000110"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319027"
 ---
 # Get-AzNetAppFilesVault
 
 ## SYNOPSIS
-Mendapatkan daftar penyimpanan cadangan Akun Azure NetApp Files (ANF).
+Mendapatkan daftar kubah cadangan Akun Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzNetAppFilesVault -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesVault** mendapatkan daftar vault cadangan akun ANF.
+Cmdlet **Get-AzNetAppFilesVault** mendapatkan daftar kubah cadangan akun ANF.
 
 ## EXAMPLES
 
@@ -46,11 +49,11 @@ Cmdlet **Get-AzNetAppFilesVault** mendapatkan daftar vault cadangan akun ANF.
 PS C:\> Get-AzNetAppFilesVault -ResourceGroupName "MyRG" -AccountName "MyAnfAccount"
 ```
 
-Perintah ini berisi daftar vault cadangan untuk akun Azure NetappFiles (ANF) "MyAnfAccount".
+Perintah ini mendapatkan daftar kubah cadangan untuk akun Azure NetappFiles (ANF) "MyAnfAccount".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari pool ANF
+Id sumber daya kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueSASToken.md
-ms.openlocfilehash: 2d29ee55fe1c77cba7e077ca89db359ec8cf892f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 61e55518f6939df0b587920e43ba2b1bd4761207
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338390"
 ---
 # New-AzStorageQueueSASToken
 
 ## SYNOPSIS
 Menghasilkan token tanda tangan akses bersama untuk antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragequeuesastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Contoh ini menghasilkan token SAS antrean dengan izin penuh.
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya dengan New-AzStorageContext cmdlet.
+Anda dapat membuatnya dengan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullUri
-Mengindikasikan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
+Menunjukkan bahwa cmdlet ini mengembalikan URI blob penuh dan token tanda tangan akses bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
-Rentang bersifat inklusif.
+Menentukan alamat IP atau rentang alamat IP yang menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentangnya inklusif.
 
 ```yaml
 Type: System.String
@@ -140,9 +143,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Menentukan izin untuk antrean penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
+Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses Azure yang disimpan.
+Menentukan kebijakan akses azure yang disimpan.
 
 ```yaml
 Type: System.String
@@ -171,11 +174,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang diizinkan untuk permintaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 * HttpsOnly
-* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+* HttpsOrHttp The default value is HttpsOrHttp.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Storage.SharedAccessProtocol]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

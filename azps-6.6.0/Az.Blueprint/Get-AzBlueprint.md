@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprint.md
 ms.openlocfilehash: 67efc396d65c5a64f654d63091fcf1e25003431b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979457"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325051"
 ---
 # Get-AzBlueprint
 
@@ -18,7 +18,7 @@ ms.locfileid: "139979457"
 Dapatkan satu atau beberapa definisi cetak biru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/get-azblueprint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/get-azblueprint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ Get-AzBlueprint -ManagementGroupId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Dapatkan satu atau beberapa definisi cetak biru. Definisi cetak biru ada di grup manajemen atau lingkup langganan.
+Dapatkan satu atau beberapa definisi cetak biru. Definisi cetak biru ada di lingkup grup manajemen atau langganan.
 
 ## EXAMPLES
 
@@ -143,7 +143,7 @@ Dapatkan definisi cetak biru dengan nama dan versi tertentu dalam grup manajemen
 PS> Get-AzBlueprint -ManagementGroupId "myManagementGroupId" -Name "myBlueprintName" -LatestPublished
 ```
 
-Dapatkan definisi cetak biru terbaru yang diterbitkan dengan nama yang diberikan di dalam grup manajemen yang ditentukan.
+Dapatkan definisi cetak biru terbaru yang diterbitkan dengan nama tertentu dalam grup manajemen yang ditentukan.
 
 ## PARAMETERS
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -LatestPublished
 Bendera definisi cetak biru terbaru yang diterbitkan.
-Saat diatur, eksekusi mengembalikan versi definisi cetak biru terbaru yang diterbitkan.
+Ketika diatur, eksekusi mengembalikan versi terbaru definisi cetak biru.
 Default ke false.
 
 ```yaml
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

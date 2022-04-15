@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingAccount.md
 ms.openlocfilehash: 48516a2c485ef7a9941f83d327c817b7e93d6571
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288005"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325393"
 ---
 # Get-AzBillingAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "140288005"
 Dapatkan akun tagihan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azbillingaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,14 +28,14 @@ Get-AzBillingAccount [-IncludeAddress] [-ExpandBillingProfile] [-ExpandInvoiceSe
  [<CommonParameters>]
 ```
 
-### Tunggal
+### Satu
 ```
 Get-AzBillingAccount -Name <System.Collections.Generic.List`1[System.String]> [-IncludeAddress] [-ExpandBillingProfile] [-ExpandInvoiceSection] [-ListEntitiesToCreateSubscription]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBillingAccount** mendapatkan akun tagihan, yang dapat diakses pengguna. 
+Cmdlet **Get-AzBillingAccount** mendapatkan akun tagihan, pengguna memiliki akses ke akun tersebut. 
 
 ## EXAMPLES
 
@@ -58,33 +58,33 @@ Dapatkan akun tagihan dengan nama yang ditentukan.
 PS C:\> Get-AzBillingAccount -IncludeAddress
 ```
 
-Dapatkan semua akun tagihan yang bisa diakses pengguna, dan sertakan alamat dalam hasil.
+Dapatkan semua akun tagihan yang dapat diakses pengguna, dan sertakan alamat dalam hasilnya.
 
 ### Contoh 4
 ```
 PS C:\> Get-AzBillingAccount -ExpandBillingProfile
 ```
 
-Dapatkan semua akun tagihan yang bisa diakses pengguna, dan sertakan profil tagihan dalam hasilnya.
+Dapatkan semua akun tagihan yang dapat diakses pengguna, dan sertakan profil tagihan dalam hasilnya.
 
 ### Contoh 5
 ```
 PS C:\> Get-AzBillingAccount -ExpandInvoiceSection
 ```
 
-Dapatkan semua akun tagihan yang bisa diakses pengguna, dan sertakan bagian profil tagihan dan faktur di bawahnya dalam hasil.
+Dapatkan semua akun tagihan yang dapat diakses pengguna, serta sertakan profil tagihan dan bagian faktur di bawahnya dalam hasilnya.
 
 ### Contoh 6
 ```
 PS C:\> Get-AzBillingAccount -ExpandInvoiceSection -ExpandAddress -Name 00000000-0000-0000-0000-000000000000
 ```
 
-Dapatkan akun tagihan dengan nama yang ditentukan, dan sertakan bagian alamat, profil tagihan dan faktur di bawahnya dalam hasil.
+Dapatkan akun tagihan dengan nama tertentu, sertakan alamat, profil tagihan, dan bagian faktur di bawahnya dalam hasilnya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListEntitiesToCreateSubscription
-Daftar entitas tagihan di bawah akun tagihan yang dapat digunakan sebagai input untuk membuat langganan.
+Cantumkan entitas tagihan di bawah akun tagihan yang dapat digunakan sebagai input untuk membuat langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

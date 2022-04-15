@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
-ms.openlocfilehash: dd1dd7aca9682842c77be025cc0208021c02beca
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 704a513a7a8fdd940f45e2060f3ff9843ad0caac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142338533"
 ---
 # New-AzRmStorageContainer
 
 ## SYNOPSIS
-Membuat wadah Storage blob
+Membuat wadah blob Storage
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 New-AzRmStorageContainer [-ResourceGroupName] <String> [-StorageAccountName] <String> -Name <String>
  [-PublicAccess <PSPublicAccess>] [-Metadata <Hashtable>] [-EnableImmutableStorageWithVersioning]
@@ -50,26 +53,26 @@ New-AzRmStorageContainer -StorageAccount <PSStorageAccount> -Name <String> -Defa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageContainer** membuat Storage wadah blob
+Cmdlet **New-AzRmStorageContainer** membuat wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Membuat wadah Storage blob dengan Storage wadah dan nama akun, dengan metadata
+### Contoh 1: Membuat wadah blob Storage dengan nama akun dan nama kontainer Storage, dengan metadata
 ```
 PS C:\>New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Metadata @{tag0="value0";tag1="value1";tag2="value2"}
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage wadah dan nama akun, dengan metadata.
+Perintah ini membuat wadah blob Storage dengan nama akun Storage dan nama kontainer, dengan metadata.
 
-### Contoh 2: Membuat wadah Storage blob dengan Storage wadah dan objek akun, dengan akses publik sebagai Blob
+### Contoh 2: Membuat wadah blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>New-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess Blob
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage objek akun dan nama wadah pengguna, dengan akses publik sebagai Blob.
+Perintah ini membuat wadah blob Storage dengan objek akun Storage dan nama kontainer, dengan akses publik sebagai Blob.
 
-### Contoh 3: Membuat wadah penyimpanan dengan pengaturan EnkripsiScope
+### Contoh 3: Membuat wadah penyimpanan dengan pengaturan EncryptionScope
 ```
 PS C:\> $c = New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Name testcontainer -DefaultEncryptionScope "testscope" -PreventEncryptionScopeOverride $true
 
@@ -88,7 +91,7 @@ PS C:\> $c.DenyEncryptionScopeOverride
 True
 ```
 
-Perintah ini akan membuat wadah penyimpanan dengan enkripsi defaltScope, dan memblokir penimpaan lingkup enkripsi dari default wadah.
+Perintah ini membuat kontainer penyimpanan dengan enkripsiScope tangguh, dan memblokir pengesampingan lingkup enkripsi dari kontainer default.
 Lalu perlihatkan properti wadah terkait.
 
 ### Contoh 4: Membuat wadah penyimpanan Azure dengan RootSquash
@@ -102,9 +105,9 @@ PS C:\> $container.EnableNfsV3RootSquash
 False
 ```
 
-Perintah ini akan membuat wadah penyimpanan, dengan properti RootSquash yang diatur sebagai AllSquash.  RootSquash hanya berfungsi pada akun penyimpanan yang mengaktifkan NfsV3.
+Perintah ini membuat wadah penyimpanan, dengan properti RootSquash diatur sebagai AllSquash.  RootSquash hanya berfungsi pada akun penyimpanan yang mengaktifkan NfsV3.
 
-### Contoh 5: Membuat tempat penyimpanan dan mengaktifkan informasi yang dapat Storage dengan pembuatan versi
+### Contoh 5: Membuat wadah penyimpanan dan mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi
 ```
 PS C:\> $c = New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Name testcontainer -EnableImmutableStorageWithVersioning
 
@@ -117,13 +120,13 @@ Name          PublicAccess LastModified         HasLegalHold HasImmutabilityPoli
 testcontainer None         2021-07-19 08:26:19Z False        False                 False             True
 ```
 
-Perintah ini akan membuat wadah penyimpanan dan mengaktifkan fitur yang dapat Storage dengan versi.
-Perintah hanya berfungsi ketika akun Storage telah mengaktifkan versi blob.
+Perintah ini membuat wadah penyimpanan dan mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Perintah hanya berfungsi ketika akun Storage telah mengaktifkan penerapan versi blob.
 
 ## PARAMETERS
 
 ### -DefaultEncryptionScope
-Default wadah untuk menggunakan lingkup enkripsi tertentu untuk semua tulisan.
+Default wadah untuk menggunakan lingkup enkripsi yang ditentukan untuk semua tulisan.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableImmutableStorageWithVersioning
-Aktifkan fitur tetap Storage dengan versioning pada tingkat wadah.
+Aktifkan Storage yang tidak dapat diubah dengan penerapan versi pada tingkat kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata Wadah
+Metadata Kontainer
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreventEncryptionScopeOverride
-Blokir menimpa lingkup enkripsi dari wadah default.
+Blokir pengesampingan lingkup enkripsi dari kontainer default.
 
 ```yaml
 Type: System.Boolean
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicAccess
-Container PublicAccess
+Wadah PublicAccess
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSPublicAccess
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootSquash
-Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan meliputi: 'NoRootSquash', 'RootSquash', 'AllSquash'
+Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

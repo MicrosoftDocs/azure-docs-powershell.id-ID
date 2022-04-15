@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceProvider.md
-ms.openlocfilehash: 489cf4484966903e200a37bec75d53bf56c70080
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f366872aa59ed61bbcd3cceef51a567f37bd8ca2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142368647"
 ---
 # Get-AzResourceProvider
 
 ## SYNOPSIS
 Mendapatkan penyedia sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Get-AzResourceProvider** mendapatkan penyedia sumber daya Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendaftarkan semua penyedia sumber daya dengan langganan saat ini
+### Contoh 1: Dapatkan semua penyedia sumber daya yang terdaftar dengan langganan saat ini
 
 ```powershell
 PS C:\>Get-AzResourceProvider
@@ -101,7 +104,7 @@ Locations         : {}
 
 Perintah ini mendapatkan semua penyedia sumber daya dari langganan.
 
-### Contoh 2: Dapatkan semua detail penyedia sumber daya dari ProviderNamespace
+### Contoh 2: Dapatkan semua detail penyedia sumber daya dari ProviderNamespace yang diberikan
 
 ```powershell
 PS C:\>Get-AzResourceProvider -ProviderNamespace Microsoft.Compute
@@ -144,7 +147,7 @@ Locations         : {East US, East US 2, West US, Central US…}
 
 Perintah ini Mendapatkan semua penyedia sumber daya di bawah "Microsoft.Compute".
 
-### Contoh 3: Dapatkan semua detail penyedia sumber daya dari array ProviderNamespace
+### Contoh 3: Dapatkan semua detail penyedia sumber daya dari array ProviderNamespace yang diberikan
 
 ```powershell
 PS C:\>Get-AzResourceProvider -ProviderNamespace Microsoft.Compute,Microsoft.Network
@@ -217,7 +220,7 @@ Perintah ini Mendapatkan semua penyedia sumber daya di bawah "Microsoft.Compute"
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -323,6 +326,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Register-AzResourceProvider](./Register-AzResourceProvider.md)
 
-[Pisahkan-AzResourceProvider](./Unregister-AzResourceProvider.md)
+[Unregister-AzResourceProvider](./Unregister-AzResourceProvider.md)
 
 

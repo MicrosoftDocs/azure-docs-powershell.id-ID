@@ -5,11 +5,11 @@ ms.assetid: 6396AEC3-DFE6-45DA-BCF4-69C55C5D051B
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermpolicydefinition
 schema: 2.0.0
 ms.openlocfilehash: 5bd650583a933ba8d7ea56762c918d386b630c6c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428250"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361546"
 ---
 # Get-AzureRmPolicyDefinition
 
@@ -72,21 +72,21 @@ Cmdlet **Get-AzureRmPolicyDefinition** mendapatkan kumpulan definisi kebijakan a
 PS C:\> Get-AzureRmPolicyDefinition
 ```
 
-Perintah ini akan mendapatkan semua definisi kebijakan.
+Perintah ini mendapatkan semua definisi kebijakan.
 
 ### Contoh 2: Dapatkan definisi kebijakan dari langganan saat ini menurut nama
 ```
 PS C:\> Get-AzureRmPolicyDefinition -Name 'VMPolicyDefinition'
 ```
 
-Perintah ini mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dari langganan default saat ini.
+Perintah ini mendapatkan definisi kebijakan bernama VMPolicyDefinition dari langganan default saat ini.
 
 ### Contoh 3: Dapatkan definisi kebijakan dari grup manajemen menurut nama
 ```
 PS C:\> Get-AzureRmPolicyDefinition -Name 'VMPolicyDefinition' -ManagementGroupName 'Dept42'
 ```
 
-Perintah ini mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dari grup manajemen yang bernama Dept42.
+Perintah ini mendapatkan definisi kebijakan bernama VMPolicyDefinition dari grup manajemen bernama Dept42.
 
 ### Contoh 4: Dapatkan semua definisi kebijakan bawaan dari langganan
 ```
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Builtin
-Daftar batas hasil hanya untuk definisi kebijakan bawaan.
+Membatasi daftar hasil hanya untuk definisi kebijakan bawaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kustom
-Daftar hasil batasan untuk definisi kebijakan kustom saja.
+Membatasi daftar hasil hanya untuk definisi kebijakan kustom.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang akan dapatkan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -174,14 +174,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen definisi kebijakan yang akan mendapatkan.
+Nama grup manajemen definisi kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama definisi kebijakan yang akan dapatkan cmdlet ini.
+Menentukan nama definisi kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan definisi kebijakan untuk mendapatkan.
+ID langganan definisi kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -305,9 +305,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmPolicyDefinition](./New-AzureRmPolicyDefinition.md)
+[AzureRmPolicyDefinition Baru](./New-AzureRmPolicyDefinition.md)
 
-[Remove-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
+[Hapus-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
 
 [Set-AzureRmPolicyDefinition](./Set-AzureRmPolicyDefinition.md)
 
