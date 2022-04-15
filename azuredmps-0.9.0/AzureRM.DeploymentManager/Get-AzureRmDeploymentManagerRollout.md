@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/get-azurermdeploymentmanagerrollout
 schema: 2.0.0
 ms.openlocfilehash: 21d0b4f7feec5b32ff732f880924becddd84db73
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429215"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363377"
 ---
 # Get-AzureRmDeploymentManagerRollout
 
@@ -37,7 +37,7 @@ Get-AzureRmDeploymentManagerRollout [-Rollout] <PSRollout> [-DefaultProfile <IAz
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmDeploymentManagerRollout** mendapatkan peluncuran, dan mengembalikan objek yang mewakili peluncuran tersebut dengan semua informasi mendetail tentang kemajuan peluncuran.
-Tentukan peluncuran berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Rollout atau ResourceId.
+Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
 
 ## EXAMPLES
 
@@ -48,19 +48,19 @@ PS C:\> Get-AzureRmDeploymentManagerRollout -ResourceGroupName ContosoResourceGr
 
 Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 2: Mendapatkan peluncuran menggunakan pengidentifikasi sumber daya
+### Contoh 2: Dapatkan peluncuran menggunakan pengidentifikasi sumber daya
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerRollout -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/rollouts/ContosoRollout"
 ```
 
 Perintah ini mendapatkan peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Mendapatkan peluncuran menggunakan objek rollout.
+### Contoh 3: Dapatkan peluncuran menggunakan objek peluncuran.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerRollout -Rollout $rolloutObject
 ```
 
-Perintah ini akan mendapatkan peluncuran dengan nama dan Grup Sumber Daya yang sesuai dengan properti Nama dan ResourceGroupName $rolloutObject grup.
+Perintah ini mendapatkan peluncuran yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $rolloutObject.
 
 ## PARAMETERS
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryAttempt
-Percobaan percobaan peluncuran kembali.
+Upaya coba kembali peluncuran.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -139,8 +139,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rollout
-Menggulung objek.
+### -Peluncuran
+Objek peluncuran.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSRollout
@@ -155,11 +155,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -171,6 +171,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmDeploymentManagerRollout](./Stop-AzureRmDeploymentManagerRollout.md)
 
-[Restart-AzureRmDeploymentManagerRollout](./Restart-AzureRmDeploymentManagerRollout.md)
+[Mulai ulang-AzureRmDeploymentManagerRollout](./Restart-AzureRmDeploymentManagerRollout.md)
 
-[Remove-AzureRmDeploymentManagerRollout](./Remove-AzureRmDeploymentManagerRollout.md)
+[Hapus-AzureRmDeploymentManagerRollout](./Remove-AzureRmDeploymentManagerRollout.md)

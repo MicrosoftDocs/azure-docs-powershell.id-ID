@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Update-AzureRmADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Update-AzureRmADUser.md
-ms.openlocfilehash: 69cd257bba711c263b05e0912078fc85bd140f1188a8b6c60c3ed6602f4e80a3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a07d9119d5e83c92d96ab22e98125459945f786b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866872"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142383119"
 ---
 # Update-AzureRmADUser
 
@@ -50,7 +50,7 @@ Update-AzureRmADUser -InputObject <PSADUser> [-DisplayName <String>] [-EnableAcc
 ```
 
 ## DESCRIPTION
-Memperbarui pengguna direktori aktif yang sudah ada (akun kantor/sekolah juga dikenal sebagai org-id).
+Memperbarui pengguna direktori aktif yang sudah ada (akun kerja/sekolah juga dikenal sebagai org-id).
 Untuk informasi selengkapnya: https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#UpdateUser
 
 ## EXAMPLES
@@ -71,13 +71,13 @@ PS C:\> Update-AzureRmADUser -UserPrincipalName foo@domain.com -DisplayName MyNe
 
 Memperbarui nama tampilan pengguna dengan nama prinsipal pengguna 'foo@domain.com' menjadi 'MyNewDisplayName'.
 
-### Contoh 3 - Memperbarui nama tampilan pengguna menggunakan pemipaan
+### Contoh 3 - Memperbarui nama tampilan pengguna menggunakan piping
 
 ```
 PS C:\> Get-AzureRmADUser -ObjectId 155a5c10-93a9-4941-a0df-96d83ab5ab24 | Update-AzureRmADUser -DisplayName MyNewDisplayName
 ```
 
-Dapatkan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' dan pipa yang berada di cmdlet Update-AzureRmADUser untuk memperbarui nama tampilan pengguna tersebut ke 'MyNewDisplayName'.
+Mendapatkan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' dan pipa yang ke cmdlet Update-AzureRmADUser untuk memperbarui nama tampilan pengguna tersebut menjadi 'MyNewDisplayName'.
 
 ## PARAMETERS
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Ini harus ditentukan jika pengguna harus mengubah kata sandi di saat berikutnya berhasil masuk.
+Harus ditentukan jika pengguna harus mengubah kata sandi pada proses masuk yang berhasil berikutnya.
 Hanya valid jika kata sandi diperbarui jika tidak, kata sandi akan diabaikan.
 
 ```yaml
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -UPNOrObjectId
-Nama prinsipal pengguna atau id objek pengguna yang akan diperbarui.
+Nama utama pengguna atau id objek pengguna yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Nama utama pengguna dari pengguna yang akan diperbarui.
+Nama utama pengguna pengguna yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -293,16 +293,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.ACTIVEDUser
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 Parameter: InputObject (ByValue)
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Security.SecureString
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.ACTIVEDUser
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 
 ## CATATAN
 

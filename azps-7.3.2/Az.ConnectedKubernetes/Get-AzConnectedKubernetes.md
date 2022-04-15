@@ -5,26 +5,29 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetes.md
-ms.openlocfilehash: f0d514318e3fcf874c8bde0d991e70495bd16096
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8890545d5dbf054fc74f70014b22abfb2f8f0f95
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001470"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142376891"
 ---
 # Get-AzConnectedKubernetes
 
 ## SYNOPSIS
 Mengembalikan properti kluster tersambung yang ditentukan, termasuk nama, identitas, properti, dan detail kluster tambahan.
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/get-azconnectedkubernetes) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzConnectedKubernetes [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzConnectedKubernetes -ClusterName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,7 +50,7 @@ Mengembalikan properti kluster tersambung yang ditentukan, termasuk nama, identi
 
 ## EXAMPLES
 
-### Contoh 1: Get all connected k msdns under a subscription
+### Contoh 1: Dapatkan semua kubernetes yang terhubung di bawah langganan
 ```powershell
 Get-AzConnectedKubernetes
 ```
@@ -60,9 +63,9 @@ eastus   azps_test_cluster1 azps_test_group
 eastus   azps_test_cluster2 azps_test_group
 ```
 
-Perintah ini akan menghubungkan semua grup di bawah langganan.
+Perintah ini mendapatkan semua kubernetes yang terhubung di bawah langganan.
 
-### Contoh 2: Get all connected ks under the resource group
+### Contoh 2: Dapatkan semua kubernetes yang terhubung di bawah grup sumber daya
 ```powershell
 Get-AzConnectedKubernetes -ResourceGroupName azps_test_group
 ```
@@ -75,9 +78,9 @@ eastus   azps_test_cluster1 azps_test_group
 eastus   azps_test_cluster2 azps_test_group
 ```
 
-Perintah ini menghubungkan semua kontak yang terhubung di bawah grup sumber daya.
+Perintah ini mendapatkan semua kubernetes yang terhubung di bawah grup sumber daya.
 
-### Contoh 3: Get a connected kjadwals
+### Contoh 3: Get a connected kubernetes
 ```powershell
 Get-AzConnectedKubernetes -ResourceGroupName azps_test_group -Name azps_test_cluster
 ```
@@ -88,9 +91,9 @@ Location Name              ResourceGroupName
 eastus   azps_test_cluster azps_test_group
 ```
 
-Perintah ini memiliki hubungan yang terkoneksi.
+Perintah ini mendapatkan kubernetes yang terhubung.
 
-### Contoh 4: Get a connected ks by object
+### Contoh 4: Get a connected kubernetes by object
 ```powershell
 $conAks = Get-AzConnectedKubernetes -ClusterName azps_test_cluster -ResourceGroupName azps_test_group -Location eastus
 Get-AzConnectedKubernetes -InputObject $conAks
@@ -102,12 +105,12 @@ Location Name              ResourceGroupName
 eastus   azps_test_cluster azps_test_group
 ```
 
-Perintah ini terhubung dengan objek.
+Perintah ini mendapatkan kubernetes yang terhubung dengan objek.
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kluster tempat get disebut.
+Nama kluster Kubernetes yang dinamai get.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.IConnectedKubernetesIdentity
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -183,15 +186,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ConnectedK cmdlets.Models.IConnectedK cmdletsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.IConnectedKubernetesIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ConnectedK cmdlets.Models.Api20211001.IConnectedCluster
+### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.Api20211001.IConnectedCluster
 
 ## CATATAN
 
@@ -203,9 +206,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama kluster Kluster Kedaering yang disebut dengan get.
+  - `[ClusterName <String>]`: Nama kluster Kubernetes yang dinamai get.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

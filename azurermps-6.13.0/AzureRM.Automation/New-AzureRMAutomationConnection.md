@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationConnection.md
 ms.openlocfilehash: e86e25cb4752bf6899e1a00fcbccb596b64f8482
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427632"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390612"
 ---
 # New-AzureRmAutomationConnection
 
@@ -39,14 +39,14 @@ PS C:\>$FieldValues = @{"AutomationCertificateName"="ContosoCertificate";"Subscr
 PS C:\> New-AzureRmAutomationConnection -Name "Connection12" -ConnectionTypeName Azure -ConnectionFieldValues $FieldValues -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah pertama menetapkan tabel hash nilai bidang ke $FieldValue bidang.
-Perintah kedua membuat koneksi Azure yang bernama Connection12 dalam akun Otomatisasi yang bernama AutomationAccount01.
-Perintah menggunakan nilai bidang koneksi di $FieldValues.
+Perintah pertama menetapkan tabel hash nilai bidang ke variabel $FieldValue.
+Perintah kedua membuat koneksi Azure bernama Connection12 di akun Otomatisasi bernama AutomationAccount01.
+Perintah menggunakan nilai bidang koneksi dalam $FieldValues.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang membuat koneksi oleh cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini membuat koneksi.
 
 ```yaml
 Type: System.String
@@ -62,8 +62,8 @@ Accept wildcard characters: False
 
 ### -ConnectionFieldValues
 Menentukan tabel hash yang berisi pasangan kunci/nilai.
-Tombol mewakili bidang koneksi untuk tipe koneksi yang ditentukan.
-Nilai mewakili nilai tertentu dari setiap bidang koneksi untuk contoh koneksi.
+Kunci mewakili bidang koneksi untuk tipe koneksi yang ditentukan.
+Nilai mewakili nilai tertentu dari setiap bidang koneksi untuk instans koneksi.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk koneksi.
+Menentukan nama untuk sambungan tersebut.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat koneksi.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat koneksi.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -171,6 +171,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationConnection](./Get-AzureRMAutomationConnection.md)
 
-[Remove-AzureRmAutomationConnection](./Remove-AzureRMAutomationConnection.md)
+[Hapus-AzureRmAutomationConnection](./Remove-AzureRMAutomationConnection.md)
 
 

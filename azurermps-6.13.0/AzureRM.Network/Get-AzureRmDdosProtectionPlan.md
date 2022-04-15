@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmDdosProtectionPlan.md
 ms.openlocfilehash: 2d1942dd5c069660d062922a069cc88b505748fa
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419950"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142355533"
 ---
 # Get-AzureRmDdosProtectionPlan
 
 ## SYNOPSIS
-Mendapatkan paket proteksi DDoS.
+Mendapatkan paket perlindungan DDoS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,11 +34,11 @@ Get-AzureRmDdosProtectionPlan [-ResourceGroupName <String>] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmDdosProtectionPlan mendapatkan paket proteksi DDoS.
+Cmdlet Get-AzureRmDdosProtectionPlan mendapatkan paket perlindungan DDoS.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan paket proteksi DDoS tertentu
+### Contoh 1: Dapatkan paket proteksi DDoS tertentu
 ```
 D:\> Get-AzureRmDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName
 
@@ -54,9 +54,9 @@ VirtualNetworks   : [
                     ]
 ```
 
-Dalam hal ini, kita perlu menentukan atribut **ResourceGroupName** dan **Name** yang terkait dengan grup sumber daya dan nama rencana proteksi DDoS.
+Dalam hal ini, kita perlu menentukan atribut **ResourceGroupName** dan **Name** , yang terkait dengan grup sumber daya dan nama paket proteksi DDoS.
 
-### Contoh 2: Dapatkan semua rencana proteksi DDoS dalam grup sumber daya
+### Contoh 2: Dapatkan semua paket proteksi DDoS dalam grup sumber daya
 ```
 D:\> Get-AzureRmDdosProtectionPlan -ResourceGroupName ResourceGroupName
 
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmDdosProtectionPlan](./New-AzureRmDdosProtectionPlan.md)
+[AzureRmDdosProtectionPlan baru](./New-AzureRmDdosProtectionPlan.md)
 
 [Remove-AzureRmDdosProtectionPlan](./Remove-AzureRmDdosProtectionPlan.md)
 

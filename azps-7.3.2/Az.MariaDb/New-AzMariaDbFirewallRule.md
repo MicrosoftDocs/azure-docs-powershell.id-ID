@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/new-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbFirewallRule.md
-ms.openlocfilehash: 1025eab99d4d60a5ed0e920e7d66e519297b90cd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 12dc38ebda50632a6a68b36592e4b4a4f0e5bc2a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571217"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142372733"
 ---
 # New-AzMariaDbFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/new-azmariadbfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,12 +79,12 @@ Name                         StartIPAddress EndIPAddress
 AllowAll_2020-08-11_18-19-27 0.0.0.0        255.255.255.255
 ```
 
-Cmdlets ini membuat Aturan Firewall MariaDB baru untuk memperbolehkan semua IP.
+Cmdlet ini membuat Aturan Firewall MariaDB baru untuk mengizinkan semua IP.
 
 ## PARAMETERS
 
 ### -AllowAll
-Sajikan untuk memperbolehkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
+Sajikan untuk mengizinkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien ip tunggal aturan firewall server yang ditentukan.
-Harus menggunakan format IPv4.
+Klien menentukan IP tunggal aturan firewall server.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -159,8 +162,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama aturan firewall server.
-Jika tidak ditentukan, defaultnya tidak didefinisikan.
-Jika AllowAll ada, nama default adalah AllowAll_yyyy-MM-dd_HH-mm-ss.
+Jika tidak ditentukan, defaultnya tidak ditentukan.
+Jika AllowAll ada, nama defaultnya AllowAll_yyyy-MM-dd_HH-mm-ss.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,8 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 
 ### -StartIPAddress
 Alamat IP mulai aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

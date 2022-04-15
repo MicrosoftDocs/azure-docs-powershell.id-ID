@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmDdosProtectionPlan.md
 ms.openlocfilehash: 87110fe779e128e8ef5d5d6de0504ec9fdca1b25
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421238"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354425"
 ---
 # Remove-AzureRmDdosProtectionPlan
 
@@ -27,7 +27,7 @@ Remove-AzureRmDdosProtectionPlan -ResourceGroupName <String> -Name <String> [-Pa
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmDdosProtectionPlan menghapus rencana proteksi DDoS.
+Cmdlet Remove-AzureRmDdosProtectionPlan menghapus paket proteksi DDoS.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ D:\> Remove-AzureRmDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name
 
 Dalam hal ini, kami menghapus paket proteksi DDoS seperti yang ditentukan.
 
-### Contoh 2: Menghapus paket proteksi DDoS yang terkait dengan jaringan virtual
+### Contoh 2: Hapus paket proteksi DDoS yang terkait dengan jaringan virtual
 ```
 D:\> $vnet = Get-AzureRmVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName
 D:\> $vnet.DdosProtectionPlan = $null
@@ -85,9 +85,9 @@ EnableVmProtection     : false
 D:\> Remove-AzureRmDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlan
 ```
 
-Paket proteksi DDoS tidak dapat dihapus jika terkait dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan paket, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak boleh benar tanpa rencana).
-Lalu, kami tetap pada status baru dengan pemipaan variabel lokal ke **Set-AzureRmVirtualNetwork.** Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
-Jika ini adalah yang terakhir terkait dengan paket, kami dapat menghapus paket proteksi DDoS menggunakan perintah Remove-AzureRmDdosProtectionPlan.
+Paket proteksi DDoS tidak dapat dihapus jika dikaitkan dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan rencana, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak dapat berlaku tanpa rencana).
+Lalu, kami tetap menggunakan status baru dengan memipakan variabel lokal ke **Set-AzureRmVirtualNetwork**. Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
+Jika paket ini adalah yang terakhir terkait dengan paket, kami dapat menghapus paket proteksi DDoS menggunakan perintah Remove-AzureRmDdosProtectionPlan.
 
 ## PARAMETERS
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmDdosProtectionPlan](./New-AzureRmDdosProtectionPlan.md)
+[AzureRmDdosProtectionPlan baru](./New-AzureRmDdosProtectionPlan.md)
 
 [Get-AzureRmDdosProtectionPlan](./Get-AzureRmDdosProtectionPlan.md)
 

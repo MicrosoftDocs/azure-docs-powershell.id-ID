@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewall.md
 ms.openlocfilehash: 6486c7db87e8c71b0703b90a765fa30287b82769
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423326"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354874"
 ---
 # New-AzureRmFirewall
 
@@ -37,31 +37,31 @@ Cmdlet **New-AzureRmFirewall** membuat Azure Firewall.
 
 ## EXAMPLES
 
-### 1: Membuat Firewall yang dilampirkan ke jaringan virtual
+### 1: Membuat Firewall yang terlampir ke jaringan virtual
 ```
 New-AzureRmFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -VirtualNetworkName "vnet" -PublicIpName "pip-name"
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama seperti firewall.
+Contoh ini membuat Firewall yang dilampirkan ke "vnet" jaringan virtual dalam grup sumber daya yang sama dengan firewall.
 Karena tidak ada aturan yang ditentukan, firewall akan memblokir semua lalu lintas (perilaku default).
 
-### 2: Membuat Firewall yang mengizinkan semua lalu lintas HTTPS
+### 2: Membuat Firewall yang memungkinkan semua lalu lintas HTTPS
 ```
 $rule = New-AzureRmFirewallApplicationRule -Name R1 -Protocol "https:443" -TargetFqdn "*" 
 $ruleCollection = New-AzureRmFirewallApplicationRuleCollection -Name RC1 -Priority 100 -Rule $rule -ActionType "Allow"
 New-AzureRmFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -VirtualNetworkName "vnet" -PublicIpName "pip-name" -ApplicationRuleCollection $ruleCollection
 ```
 
-Contoh ini membuat Firewall yang mengizinkan semua lalu lintas HTTPS pada port 443.
+Contoh ini membuat Firewall yang memungkinkan semua lalu lintas HTTPS di port 443.
 
-### 3: URLT - pengalihan lalu lintas ditentukan menjadi 10.1.2.3:80 hingga 10.2.3.4:8080
+### 3: DNAT - mengalihkan lalu lintas yang ditujukan ke 10.1.2.3:80 hingga 10.2.3.4:8080
 ```
 $rule = New-AzureRmFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddress "*" -DestinationAddress "10.1.2.3" -DestinationPort "80" -TranslatedAddress "10.2.3.4" -TranslatedPort "8080"
 $ruleCollection = New-AzureRmFirewallNatRuleCollection -Name "NatRuleCollection" -Priority 1000 -Rule $rule
 New-AzureRmFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -NatRuleCollection $ruleCollection
 ```
 
-Contoh ini membuat Firewall yang menerjemahkan IP tujuan dan port dari semua paket ditentukan menjadi 10.1.2.3:80 hingga 10.2.3.4:8080
+Contoh ini membuat Firewall yang menerjemahkan IP tujuan dan port semua paket yang ditakdirkan menjadi 10.1.2.3:80 hingga 10.2.3.4:8080
 
 ## PARAMETERS
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -110,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpName
-Nama Ip Publik. IP Publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama seperti Firewall.
+Nama IP Publik. IP Publik harus menggunakan SKU Standar dan harus tergabung dalam grup sumber daya yang sama dengan Firewall.
 
 ```yaml
 Type: String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Menentukan nama jaringan virtual tempat Firewall akan digunakan. Jaringan virtual dan Firewall harus tergabung dalam grup sumber daya yang sama.
+Menentukan nama jaringan maya tempat Firewall akan digunakan. Jaringan virtual dan Firewall harus tergabung dalam grup sumber daya yang sama.
 
 ```yaml
 Type: String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -279,11 +279,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -296,7 +296,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Get-AzureRmFirewall](./Get-AzureRmFirewall.md)
 
-[Remove-AzureRmFirewall](./Remove-AzureRmFirewall.md)
+[Hapus-AzureRmFirewall](./Remove-AzureRmFirewall.md)
 
 [Set-AzureRmFirewall](./Set-AzureRmFirewall.md)
 

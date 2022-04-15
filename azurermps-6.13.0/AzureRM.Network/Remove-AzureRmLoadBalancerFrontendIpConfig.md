@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmLoadBalancerFrontendIpConfig.md
 ms.openlocfilehash: 1a71b48387948d65ba0db24fdb2c236a11a9a44d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421231"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354367"
 ---
 # Remove-AzureRmLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi IP front-end dari penyeimbang muat.
+Menghapus konfigurasi IP ujung depan dari penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,23 +28,23 @@ Remove-AzureRmLoadBalancerFrontendIpConfig -LoadBalancer <PSLoadBalancer> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmLoadBalancerFrontendIpConfig** menghapus konfigurasi IP front-end dari penyeimbang muat Azure.
+Cmdlet **Remove-AzureRmLoadBalancerFrontendIpConfig** menghapus konfigurasi IP front-end dari load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi IP front-end dari penyeimbang muat
+### Contoh 1: Menghapus konfigurasi IP ujung depan dari load balancer
 ```
 PS C:\>$loadbalancer = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:> Remove-AzureRmLoadBalancerFrontendIpConfig -Name "frontendName" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang terkait dengan konfigurasi IP front-end yang ingin Anda hapus, lalu menyimpannya di $loadbalancer lain.
-Perintah kedua menghapus konfigurasi IP frontend yang terkait dari penyeimbang muat dalam $loadbalancer.
+Perintah pertama mendapatkan penyeimbang muatan yang terkait dengan konfigurasi IP ujung depan yang ingin Anda hapus, lalu menyimpannya dalam variabel $loadbalancer.
+Perintah kedua menghapus konfigurasi IP frontend terkait dari load balancer di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang berisi konfigurasi IP ujung-depan yang akan dihapus.
+Menentukan penyeimbang muatan yang berisi konfigurasi IP ujung depan untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi alamat IP ujung-depan untuk dihapus.
+Menentukan nama konfigurasi alamat IP ujung depan yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

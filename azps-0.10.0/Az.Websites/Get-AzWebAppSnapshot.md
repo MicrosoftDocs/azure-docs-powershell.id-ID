@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSnapshot.md
 ms.openlocfilehash: 1374bfb67b3150b2c65841d91fd440a83f791b95
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414840"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142377845"
 ---
 # Get-AzWebAppSnapshot
 
 ## SYNOPSIS
-Dapatkan snapshot yang tersedia untuk aplikasi web.
+Mendapatkan snapshot yang tersedia untuk aplikasi web.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-AzWebAppSnapshot [-WebApp] <Site> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzWebAppSnapshot** .
+Cmdlet **Get-AzWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Jepretan layar dapat dipulihkan dengan cmdlet **Restore-AzWebAppSnapshot** .
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ Cmdlet **Get-AzWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web.
 PS C:\> Get-AzWebAppSnapshot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoApp" -Slot "Staging"
 ```
 
-Dapatkan snapshot untuk aplikasi web bernama "ConstosoApp" dengan slot bernama "Pengembangan" di grup sumber daya "Default-Web-WestUS"
+Dapatkan snapshot untuk aplikasi web bernama "ConstosoApp" dengan slot bernama "Staging" dalam grup sumber daya "Default-Web-WestUS"
 
 ## PARAMETERS
 

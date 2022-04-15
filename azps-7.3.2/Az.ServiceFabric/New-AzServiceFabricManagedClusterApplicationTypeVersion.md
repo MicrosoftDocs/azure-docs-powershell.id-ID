@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: ffb8acc9e5a10d1acad567a3d3bcec277222b07f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e2a08996fe61ea233ba85f45bbd8ad8efe2cec4b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385539"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142340603"
 ---
 # New-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
-Buat versi tipe aplikasi terkelola baru di bawah grup dan kluster sumber daya yang ditentukan.
+Buat versi tipe aplikasi terkelola baru di bawah grup sumber daya dan kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzServiceFabricManagedClusterApplicationTypeVersion [-ResourceGroupName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet ini membuat versi tipe aplikasi terkelola baru menggunakan paket yang ditentukan di -PackageUrl, hal ini seharusnya dapat diakses melalui titik akhir REST untuk Azure Resource Manager untuk menggunakan selama penggunaan dan paket aplikasi yang berisi zip dengan ekstensi .sfpkg. Perintah ini akan membuat tipe aplikasi jika belum ada.
+Cmdlet ini membuat versi tipe aplikasi terkelola baru menggunakan paket yang ditentukan dalam -PackageUrl, ini harus dapat diakses melalui titik akhir REST untuk azure Resource Manager untuk digunakan selama penyebaran dan aplikasi yang dikemas dalam zip dengan ekstensi .sfpkg. Perintah ini akan membuat tipe aplikasi jika belum ada.
 
 ## EXAMPLES
 
@@ -40,12 +43,12 @@ PS C:\> $packageUrl = "https://sftestapp.blob.core.windows.net/sftestapp/testApp
 PS C:\> New-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Version $version -PackageUrl $packageUrl -Verbose
 ```
 
-This example will create an managed application type version "v1" under type "testAppType". Versi di manifes aplikasi yang terdapat di paket harus memiliki versi yang sama seperti yang ditentukan dalam -Versi.
+Contoh ini akan membuat tipe aplikasi terkelola versi "v1" di bawah tipe "testAppType". Versi dalam manifes aplikasi yang terdapat dalam paket harus memiliki versi yang sama seperti yang ditentukan dalam -Version.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lanjutkan tanpa perintah
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageUrl
-Menentukan url file paket aplikasi
+Tentukan url file sfpkg paket aplikasi
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Tentukan versi tipe aplikasi yang dikelola
+Menentukan versi tipe aplikasi yang dikelola
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

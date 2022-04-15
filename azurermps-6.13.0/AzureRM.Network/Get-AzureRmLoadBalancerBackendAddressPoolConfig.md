@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancerBackendAddressPoolConfig.md
 ms.openlocfilehash: 2a9fca5faf7ba024a5d5c891aa1c74ba002ac053
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420688"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142355430"
 ---
 # Get-AzureRmLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi pool alamat backend untuk penyeimbang muat.
+Mendapatkan konfigurasi kumpulan alamat backend untuk penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,23 +28,23 @@ Get-AzureRmLoadBalancerBackendAddressPoolConfig -LoadBalancer <PSLoadBalancer> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLoadBalancerBackendAddressPoolConfig** mendapatkan satu pool alamat backend atau daftar kolam renang alamat backend dalam penyeimbang muat.
+Cmdlet **Get-AzureRmLoadBalancerBackendAddressPoolConfig** mendapatkan satu kumpulan alamat backend atau daftar kumpulan alamat backend dalam load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pool alamat backend
+### Contoh 1: Dapatkan kumpulan alamat backend
 ```
 PS C:\>$loadbalancer = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzureRmLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang sudah ada bernama MyLoadBalancer dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $loadbalancer lokal.
-Perintah kedua mendapatkan konfigurasi pool alamat backend terkait yang bernama BackendAddressPool02 untuk penyeimbang muat dalam $loadbalancer.
+Perintah pertama mendapatkan load balancer yang sudah ada bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup, lalu menyimpannya dalam variabel $loadbalancer.
+Perintah kedua mendapatkan konfigurasi kumpulan alamat backend terkait bernama BackendAddressPool02 untuk penyeimbang muatan di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan pool alamat backend untuk mendapatkan.
+Menentukan penyeimbang muatan yang terkait dengan kumpulan alamat backend yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat yang berisi pool alamat backend untuk mendapatkan.
+Menentukan nama penyeimbang muatan yang berisi kumpulan alamat backend untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

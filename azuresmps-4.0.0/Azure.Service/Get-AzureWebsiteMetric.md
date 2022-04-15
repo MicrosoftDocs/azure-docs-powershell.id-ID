@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 717023DA-AA2D-4F1B-AE46-67ED75AA0D15
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f189fa92f3d3c8a9b56ed068a7c409a16db9a34e472086261baa3fd3b19a9352
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 03a5a2ee26823b5e1feffca0e0831a8a7d885baf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335612"
 ---
 # Get-AzureWebsiteMetric
 
 ## SYNOPSIS
-Mendapatkan metrik untuk situs web Azure di langganan saat ini.
+Mendapatkan metrik untuk situs web Azure dalam langganan saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,14 +26,14 @@ Get-AzureWebsiteMetric [-MetricNames <String[]>] [-StartDate <DateTime>] [-EndDa
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
-Cmdlet **Get-AzureWebsiteMetric** mendapatkan metrik untuk situs web Azure di langganan saat ini.
+Cmdlet **Get-AzureWebsiteMetric** mendapatkan metrik untuk situs web Azure dalam langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan metrik untuk tiga jam terakhir pada tingkat per-contoh untuk situs web
+### Contoh 1: Dapatkan metrik selama tiga jam terakhir pada tingkat per instans untuk situs web
 ```
 PS C:\> Get-AzureWebsiteMetric -Name "ContosoWebSite" -StartDate (get-date).AddHours(-3) -MetricNames "Requests" -InstanceDetails -SlotView -TimeGrain "PT1M" 
 PS C:\> $metrics[1].Data Name : Requests 
@@ -59,14 +59,14 @@ TimeCreated Total Minimum Maximum Count InstanceName
 8/11/2014 7:10:00 AM 9 1 RD00155DC24599
 ```
 
-Perintah ini mendapatkan metrik untuk tiga jam terakhir pada tingkat per instans untuk situs web.
+Perintah ini mendapatkan metrik selama tiga jam terakhir pada tingkat per instans untuk situs web.
 
 ## PARAMETERS
 
 ### -EndDate
-Menentukan waktu, sebagai objek **DateTime,** untuk berhenti mendapatkan metrik.
-Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.**
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Menentukan waktu, sebagai objek **DateTime** , untuk berhenti mendapatkan metrik.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 
 ```yaml
 Type: DateTime
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceDetails
-Mengindikasikan bahwa cmdlet ini menyertakan detail mengenai tingkat per-instans.
+Menunjukkan bahwa cmdlet ini menyertakan detail pada tingkat per instans.
 Jika paket hosting web berjalan di dua komputer atau lebih, cmdlet ini mengembalikan metrik untuk setiap komputer.
 
 ```yaml
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -MetricNames
-Menentukan array metrik untuk mendapatkan.
-Jika Anda tidak menentukan parameter ini, cmdlet akan mendapatkan semua metrik.
+Menentukan array metrik untuk didapatkan.
+Jika Anda tidak menentukan parameter ini, cmdlet mendapatkan semua metrik.
 
 ```yaml
 Type: String[]
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -SlotView
-Mengindikasikan bahwa cmdlet ini mendapatkan metrik untuk nama host yang menerima lalu lintas di slot saat ini.
-Jika tukar terjadi selama periode waktu, metrik digabungkan.
+Menunjukkan bahwa cmdlet ini mendapatkan metrik untuk nama host yang menerima lalu lintas di slot saat ini.
+Jika swap terjadi selama periode waktu, metrik akan digabungkan.
 
 ```yaml
 Type: SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Menentukan waktu, sebagai objek **DateTime,** untuk mulai mendapatkan metrik.
+Menentukan waktu, sebagai objek **DateTime** , untuk mulai mendapatkan metrik.
 
 ```yaml
 Type: DateTime
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -TimeGrain
 Menentukan unit waktu untuk metrik.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - PT1M (Menit) 
 - PT1H (Hour) 
@@ -214,22 +214,22 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ###  
-Anda dapat menyampaikan input ke cmdlet ini berdasarkan nama properti, tetapi tidak menurut nilai.
+Anda dapat meneruskan input ke cmdlet ini menurut nama properti, tetapi tidak menurut nilai.
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.Utilities.Websites.Services.WebEntities.MetricResponse
-Secara default, **Get-AzureWebsiteMetric** mengembalikan array **objek MetricResponse.**
+### Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.WebEntities.MetricResponse
+Secara default, **Get-AzureWebsiteMetric** mengembalikan array objek **MetricResponse** .
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Export-AzureRmAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Export-AzureRmAutomationDscConfiguration.md
 ms.openlocfilehash: f690e5d7e35b819b727e2ea3f12c8f5e0b2a375f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425487"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142390656"
 ---
 # Export-AzureRmAutomationDscConfiguration
 
@@ -29,8 +29,8 @@ Export-AzureRmAutomationDscConfiguration -Name <String> [-Slot <String>] [-Outpu
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzureRmAutomationDscConfiguration** mengekspor konfigurasi APS Desired State Configuration (DSC) dari Azure Automation ke file lokal.
-File yang diekspor memiliki .ps1 nama file.
+Cmdlet **Ekspor-AzureRmAutomationDscConfiguration mengekspor** konfigurasi APS Desired State Configuration (DSC) dari Azure Automation ke file lokal.
+File yang diekspor memiliki ekstensi nama file .ps1.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ File yang diekspor memiliki .ps1 nama file.
 PS C:\>Export-AzureRmAutomationDscConfiguration -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -Name "Configuration01" -Slot Published -OutputFolder "C:\Users\PattiFuller\Desktop"
 ```
 
-Perintah ini mengekspor versi konfigurasi DSC yang diterbitkan dalam Otomatisasi ke folder yang ditentukan, yaitu desktop.
+Perintah ini mengekspor versi konfigurasi DSC yang diterbitkan dalam Otomatisasi ke folder tertentu, yaitu desktop.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Cmdlet ini menggantikan file lokal yang sudah ada dengan file baru dengan nama yang sama.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menggantikan file lokal yang sudah ada dengan file baru yang memiliki nama yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,9 +134,9 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Menentukan versi konfigurasi DSC mana yang diekspor cmdlet ini.
-Nilai valid adalah: 
-- Draf
+Menentukan versi konfigurasi DSC yang diekspor cmdlet ini.
+Nilai yang valid adalah: 
+- Draft
 - Diterbitkan Nilai default diterbitkan.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServiceEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServiceEnvironment.md
-ms.openlocfilehash: c2cca37507fa04016ebc3f3416025fd45e40febf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e08050d3ec96655c91817248c097910664dec6af
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140194839"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363929"
 ---
 # Get-AzAppServiceEnvironment
 
 ## SYNOPSIS
-Mendapatkan lingkungan layanan aplikasi. Jika hanya Grup Sumber Daya yang ditentukan, grup sumber daya akan mengembalikan daftar ASE dalam Grup Sumber Daya.
+Mendapatkan Lingkungan App Service. Jika hanya Grup Sumber Daya yang ditentukan, Grup Sumber Daya akan mengembalikan daftar ASE dalam Grup Sumber Daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azappserviceenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzAppServiceEnvironment [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAppServiceEnvironment** mengembalikan ASE(s) yang cocok dengan kueri.
+Cmdlet **Get-AzAppServiceEnvironment** mengembalikan ASE yang cocok dengan kueri.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Get-AzAppServiceEnvironment** mengembalikan ASE(s) yang cocok dengan ku
 PS C:\> Get-AzAppServiceEnvironment -ResourceGroupName MyResourceGroup -Name MyAseName
 ```
 
-Mengembalikan Lingkungan Layanan Aplikasi tertentu yang bernama <MyAseName> dalam <MyResourceGroup>
+Mengembalikan Lingkungan App Service tertentu yang dinamai <MyAseName> di<MyResourceGroup>
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,11 +118,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

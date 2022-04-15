@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKqlScript.md
-ms.openlocfilehash: 388e2bdbe2a57f09ae8316c020ad9ff273846c83
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 87bf41221d7d8924ae2bcc5cd186d51dce9fe8b1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005317"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142396493"
 ---
 # New-AzSynapseKqlScript
 
 ## SYNOPSIS
-Membuat atau memperbarui skrip KQL di dalam ruang kerja.
+Membuat atau memperbarui skrip KQL dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzSynapseKqlScript -WorkspaceObject <PSSynapseWorkspace> [-Name <String>] -K
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseKqlScript** membuat atau memperbarui skrip KQL di dalam ruang kerja.
+Cmdlet **New-AzSynapseKqlScript** membuat atau memperbarui skrip KQL dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Cmdlet **New-AzSynapseKqlScript** membuat atau memperbarui skrip KQL di dalam ru
 PS C:\> New-AzSynapseKqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\samples\KqlScript.kql"
 ```
 
-Perintah ini membuat atau memperbarui skrip KQL dari file kueri Kusto KqlScript.kql di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip KQL dari file kueri Kusto KqlScript.kql di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -63,19 +66,19 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseKqlScript -DefinitionFile "C:\samples\KqlScript.kql"
 ```
 
-Perintah ini membuat atau memperbarui skrip KQL dari file kueri Kusto KqlScript.kql dalam ruang kerja yang bernama ContosoWorkspace melalui pipeline.
+Perintah ini membuat atau memperbarui skrip KQL dari file kueri Kusto KqlScript.kql di ruang kerja bernama ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
 PS C:\> New-AzSynapseKqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\samples\KqlScript.kql" -KustoPoolName ContosoKustoPool -KustoPoolDatabaseName ContosoKustoPoolDatabase
 ```
 
-Perintah ini membuat atau memperbarui KqlScript dari file kueri Kusto KqlScript.kql yang terhubung ke ContosoKustoPoolDatabase di ruang kerja bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui KqlScript dari file kueri Kusto KqlScript.kql yang dilampirkan ke ContosoKustoPoolDatabase di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolDatabaseName
-Nama database Synapse Kusto.
+Nama database Kusto Synapse.
 
 ```yaml
 Type: String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama pool Synapse Kusto.
+Nama kolam Kusto Synapse.
 
 ```yaml
 Type: String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama skrip KQL.
+KQL nama skrip.
 
 ```yaml
 Type: String
@@ -164,7 +167,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,34 +5,34 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.machi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Import-AzureRmMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Import-AzureRmMlWebService.md
-ms.openlocfilehash: cdc2598150e5a8b570d7253a1e1d26e14eb304ba5cc32af95c16768055d9d96a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b54e7cf5af7eadd0ea56687a336175650b55daa6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860670"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356041"
 ---
 # Import-AzureRmMlWebService
 
 ## SYNOPSIS
-Mengimpor objek JSON ke definisi layanan web.
+Mengimpor objek JSON ke dalam definisi layanan web.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### ImportFromJSONFile
+### ImporFromJSONFile
 ```
 Import-AzureRmMlWebService -InputFile <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### ImportFromJSONString.
+### ImporFromJSONString.
 ```
 Import-AzureRmMlWebService -JsonString <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet import Import-AzureRmMlWebService, yang ditentukan secara langsung atau dalam file yang direferensikan, dan membuat objek definisi layanan web yang dapat disampaikan ke cmdlet New-AzureRmMlWebService.
+Cmdlet Import-AzureRmMlWebService mengimpor , ditentukan baik secara langsung atau dalam file yang dirujuk, dan membuat objek definisi layanan web yang bisa diteruskan ke cmdlet New-AzureRmMlWebService.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Cmdlet import Import-AzureRmMlWebService, yang ditentukan secara langsung atau d
 Import-AzureRmMlWebService -JsonString $jsonDefinition
 ```
 
-### Contoh 2: Impor dari jalur file
+### Contoh 2: Mengimpor dari jalur file
 ```
 Import-AzureRmMlWebService -InputFile "C:\mlservice.json"
 ```
@@ -49,7 +49,7 @@ Import-AzureRmMlWebService -InputFile "C:\mlservice.json"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -94,17 +94,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS
