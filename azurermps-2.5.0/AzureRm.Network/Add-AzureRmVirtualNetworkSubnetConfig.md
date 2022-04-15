@@ -5,11 +5,11 @@ ms.assetid: B8B632B5-9D3B-4352-B4C8-49C00472B3A7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermvirtualnetworksubnetconfig
 schema: 2.0.0
 ms.openlocfilehash: 9f1f4f916ea0756ebf034c12e1e9f92f3cd3c865
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426460"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362312"
 ---
 # Add-AzureRmVirtualNetworkSubnetConfig
 
@@ -50,7 +50,7 @@ New-AzureRmResourceGroup -Name TestResourceGroup -Location centralus
     $virtualNetwork | Set-AzureRmVirtualNetwork
 ```
 
-  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Fungsi Add-AzureRmVirtualNetworkSubnetConfig digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzureRmVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
+  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Add-AzureRmVirtualNetworkSubnetConfig kemudian digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzureRmVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
+Menentukan objek **NetworkSecurityGroup** .
 Cmdlet ini menambahkan konfigurasi subnet jaringan virtual ke objek yang ditentukan parameter ini.
 
 ```yaml
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

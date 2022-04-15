@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeShare.md
-ms.openlocfilehash: fa3c3ed0e0583ebdf6d472cd79a1b8bcfc309d02
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3273ddd7f8679c33bb2e9635a24b408fcc03992e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553972"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339110"
 ---
 # New-AzStackEdgeShare
 
 ## SYNOPSIS
-Membuat berbagi baru pada perangkat.
+Membuat berbagi baru di perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/new-azstackedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ New-AzStackEdgeShare [-ResourceGroupName] <String> [-DeviceName] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStackEdgeShare** membuat berbagi baru pada perangkat Stack Edge.
+Cmdlet **New-AzStackEdgeShare** membuat berbagi baru di perangkat Stack Edge.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ share-1    SMB        Cloud            PageBlob         resourceGroupName     st
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientAccessRight
-Akses Baca/Tulis untuk clientIds, Untuk misalnya:@(@{"ClientId"="192.168.10.10";" AccessRight"="NoAccess"}, @{"ClientId"="192.168.10.11";" AccessRight"="ReadOnly"})
+Akses Baca/Tulis untuk clientIds, Untuk ex:@(@{"ClientId"="192.168.10.10";" AccessRight"="NoAccess"}, @{"ClientId"="192.168.10.11";" AccessRight"="ReadOnly"})
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudShare
-Sediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
+Menyediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerName
-Container name (Based on the data format specified, this represents the name of Azure Files/Pageblob/Block blob)
+Nama kontainer (Berdasarkan format data yang ditentukan, ini menunjukkan nama Azure Files/Pageblob/Block blob)
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataFormat
-Atur Format Data ex: PageBlob, BlobBlob
+Mengatur Format Data ex: PageBlob, BlobBlob
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -NFS
-AccessProtocol dalam hal pembuatan Bagikan
+AccessProtocol dalam kasus pembuatan Berbagi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -SMB
-AccessProtocol dalam hal pembuatan Bagikan
+AccessProtocol dalam kasus pembuatan Berbagi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountCredentialName
-Sediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
+Menyediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAccessRight
-sediakan akses langsung beserta nama pengguna yang sudah ada untuk mengakses tipe Berbagi SMB, Untuk misalnya: @(@{"Namapengguna"="nama-pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Custom"})
+menyediakan akses langsung bersama dengan nama pengguna yang sudah ada untuk mengakses tipe Berbagi SMB, Misalnya: @(@{"Namapengguna"="nama-pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Custom"})
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -299,7 +302,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeShare
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeShare
 
 ## CATATAN
 

@@ -4,11 +4,11 @@ Module Name: Azs.Update.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5d94fdb44a5e37988853c95de794d67fcb26a515
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579695"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142332953"
 ---
 # Get-AzsUpdateLocation
 
@@ -22,7 +22,7 @@ Dapatkan daftar lokasi pembaruan.
 Get-AzsUpdateLocation [-ResourceGroupName <String>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsUpdateLocation [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsUpdateLocation -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan daftar lokasi pembaruan. Lokasi yang dikembalikan bisa digunakan untuk mendapatkan pembaruan yang tersedia di lokasi tertentu menggunakan Get-AzsUpdate.
+Dapatkan daftar lokasi pembaruan. Lokasi yang dikembalikan dapat digunakan untuk mendapatkan pembaruan yang tersedia di lokasi tertentu menggunakan Get-AzsUpdate.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya sumber daya yang berada di bawahnya.
+Grup sumber daya tempat sumber daya berada di bawah.
 
 ```yaml
 Type: String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

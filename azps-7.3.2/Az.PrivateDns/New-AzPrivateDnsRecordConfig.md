@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordConfig.md
-ms.openlocfilehash: ec2c1a34e70e358267b289ac88511fdbb4e84357
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c91228a67a50a18329d30c64463d8a190273af6b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178732"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343303"
 ---
 # New-AzPrivateDnsRecordConfig
 
 ## SYNOPSIS
-Membuat objek lokal catatan DNS Privat baru.
+Membuat objek lokal catatan DNS Pribadi baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,11 +62,11 @@ New-AzPrivateDnsRecordConfig -Cname <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzPrivateDnsRecordConfig membuat objek PSPrivateDnsRecord lokal. Array objek ini akan diteruskan ke cmdlet New-AzPrivateDnsRecordSet menggunakan parameter PrivateDnsRecord untuk menentukan rekaman untuk dibuat dalam kumpulan rekaman.
+Cmdlet New-AzPrivateDnsRecordConfig membuat objek PSPrivateDnsRecord lokal. Array objek ini diteruskan ke cmdlet New-AzPrivateDnsRecordSet menggunakan parameter PrivateDnsRecord untuk menentukan rekaman yang akan dibuat dalam kumpulan rekaman.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Set Rekaman tipe A
+### Contoh 1: Membuat Kumpulan Rekaman tipe A
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -IPv4Address 1.2.3.4
@@ -107,9 +110,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat.
+Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe A dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi.
 
-### Contoh 2: Membuat RecordSet tipe AAAA
+### Contoh 2: Membuat Kumpulan Rekaman dari tipe AAAA
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -Ipv6Address 2001:db8::1
@@ -128,9 +131,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan merupakan tipe AAAA dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe AAAA dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 3: Membuat RecordSet tipe CNAME
+### Contoh 3: Membuat Kumpulan Rekaman tipe CNAME
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -Cname www.contoso.com
@@ -149,9 +152,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan merupakan tipe CNAME dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe CNAME dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 4: Membuat Set Rekaman tipe MX
+### Contoh 4: Membuat RecordSet tipe MX
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -Exchange "mail.microsoft.com" -Preference 5
@@ -170,9 +173,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan berjenis MX dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe MX dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 5: Membuat Set Rekaman tipe PTR
+### Contoh 5: Membuat RecordSet tipe PTR
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -Ptrdname www.contoso.com
@@ -191,9 +194,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini akan membuat RecordSet bernama 4 dalam zona 3.2.1.in-addr.arpa. Kumpulan catatan merupakan tipe PTR dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama 4 di zona privat 3.2.1.in-addr.arpa. Kumpulan rekor adalah tipe PTR dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 6: Membuat RecordSet tipe SRV
+### Contoh 6: Membuat Kumpulan Data tipe SRV
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -Priority 0 -Weight 5 -Port 8080 -Target sipservice.contoso.com
@@ -212,9 +215,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama _sip._tcp dalam zona myzone.com. Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat, yang mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama _sip._tcp di zona privat myzone.com. Kumpulan catatan adalah tipe SRV dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi, mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
-### Contoh 7: Buat RecordSet tipe TXT
+### Contoh 7: Membuat Kumpulan Data tipe TXT
 ```powershell
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzPrivateDnsRecordConfig -Value "This is a TXT Record"
@@ -233,14 +236,14 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini akan membuat teks bernama RecordSet dalam zona myzone.com. Kumpulan catatan merupakan tipe TXT dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini membuat teks RecordSet bernama di zona privat myzone.com. Kumpulan catatan adalah tipe TXT dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
 
 ## PARAMETERS
 
 ### -Cname
 Nama kanonis untuk catatan CNAME untuk ditambahkan.
-Tidak boleh terkait dengan nama zona.
-Titik harus tidak mempunyai titik yang berakhiran
+Tidak boleh relatif terhadap nama zona.
+Tidak boleh memiliki titik penghentian
 
 ```yaml
 Type: System.String
@@ -270,9 +273,9 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Host pertukaran email untuk catatan MX yang akan ditambahkan.
-Tidak boleh terkait dengan nama zona.
-Titik harus tidak mempunyai titik yang berakhiran
+Host pertukaran email untuk catatan MX ditambahkan.
+Tidak boleh relatif terhadap nama zona.
+Tidak boleh memiliki titik penghentian
 
 ```yaml
 Type: System.String
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Nomor port untuk catatan SRV yang akan ditambahkan.
+Nomor port untuk catatan SRV yang ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -332,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -Preferensi
-Nilai preferensi untuk catatan MX yang akan ditambahkan.
+Nilai preferensi untuk catatan MX untuk ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Catatan nilai prioritas SRV untuk ditambahkan.
+Catatan SRV nilai prioritas untuk ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -362,9 +365,9 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Host target untuk catatan PTR yang akan ditambahkan.
-Tidak boleh terkait dengan nama zona.
-Titik harus tidak mempunyai titik yang berakhiran
+Host target untuk catatan PTR untuk ditambahkan.
+Tidak boleh relatif terhadap nama zona.
+Tidak boleh memiliki titik penghentian
 
 ```yaml
 Type: System.String
@@ -379,9 +382,9 @@ Accept wildcard characters: False
 ```
 
 ### -Target
-Host target untuk catatan SRV yang akan ditambahkan.
-Tidak boleh terkait dengan nama zona.
-Titik harus tidak mempunyai titik yang berakhiran
+Host target untuk catatan SRV untuk ditambahkan.
+Tidak boleh relatif terhadap nama zona.
+Tidak boleh memiliki titik penghentian
 
 ```yaml
 Type: System.String
@@ -396,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Nilai teks untuk catatan TXT yang akan ditambahkan.
+Nilai teks untuk catatan TXT untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -410,8 +413,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Nilai bobot untuk catatan SRV yang akan ditambahkan.
+### -Berat
+Nilai bobot catatan SRV untuk ditambahkan.
 
 ```yaml
 Type: System.UInt16
@@ -426,11 +429,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

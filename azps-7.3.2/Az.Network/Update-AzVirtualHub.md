@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHub.md
-ms.openlocfilehash: 1560b0cbb301e54dee3b6de924f6eb301ee7a4a3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 255add04abcb86493203b73d7e92149584db0c6c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343933"
 ---
 # Update-AzVirtualHub
 
 ## SYNOPSIS
 Memperbarui hub virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
 ### Contoh 2
 
@@ -95,7 +98,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 Contoh ini mirip dengan Contoh 1, tetapi juga melampirkan tabel rute ke hub virtual.
 
 ### Contoh 3
@@ -121,7 +124,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan lebih memilih gateway perutean sebagai ExpressRoute awalnya dan kemudian akan diperbarui ke VpnGateway.
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki gateway perutean yang lebih disukai sebagai ExpressRoute pada awalnya dan kemudian akan diperbarui ke VpnGateway.
 
 ## PARAMETERS
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -HubVnetConnection
-Koneksi jaringan virtual hub terkait dengan Virtual Hub ini.
+Koneksi jaringan virtual hub yang terkait dengan Hub Virtual ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection[]
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Hub virtual yang akan dimodifikasi.
+Objek hub virtual yang akan diubah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredRoutingGateway
-Memilih Gateway Perutean untuk merutekan lalu lintas On-Prem dari VNET
+Gateway Perutean Pilihan untuk Rute lalu lintas Lokal dari VNET
 
 ```yaml
 Type: System.String
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Tabel rute yang berkaitan dengan Virtual Hub ini.
+Tabel rute yang terkait dengan Hub Virtual ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHubRouteTable
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The sku of the Virtual Hub.
+Sku Hub Virtual.
 
 ```yaml
 Type: System.String
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

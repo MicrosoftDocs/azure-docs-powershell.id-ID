@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceConfiguration.md
-ms.openlocfilehash: 4ced21213eb3a919ff83fbf40724f90f1e795ec2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 147e1d0e42e45685cc27f881e2f6fdef3e82ec6d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386410"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346417"
 ---
 # Get-AzMaintenanceConfiguration
 
 ## SYNOPSIS
-Mendapatkan rekaman konfigurasi Pemeliharaan
+Dapatkan catatan konfigurasi Pemeliharaan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMaintenanceConfiguration [[-ResourceGroupName] <String>] [[-Name] <String>
 ```
 
 ## DESCRIPTION
-Mendapatkan rekaman konfigurasi Pemeliharaan
+Dapatkan catatan konfigurasi Pemeliharaan
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Name                : workervmscentralus
 Type                : Microsoft.Maintenance/maintenanceConfigurations
 ```
 
-Mendapatkan rekaman konfigurasi Pemeliharaan
+Dapatkan catatan konfigurasi Pemeliharaan
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

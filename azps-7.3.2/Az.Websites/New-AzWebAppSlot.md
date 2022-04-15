@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
-ms.openlocfilehash: fc24ae4a079dfb2f3b0fb320623aba2caa4c7506
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b42c65160ca012959bfb9987ee4c624eeab38acb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140399850"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363733"
 ---
 # New-AzWebAppSlot
 
 ## SYNOPSIS
 Membuat slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzWebAppSlot [-ResourceGroupName] <String> [-Name] <String> [[-Slot] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppSlot** membuat Slot Azure Web App dalam grup sumber daya tertentu yang menggunakan paket dan pusat data Layanan Aplikasi yang ditentukan.
+Cmdlet **New-AzWebAppSlot** membuat Azure Web App Slot dalam grup sumber daya tertentu yang menggunakan paket App Service dan pusat data yang ditentukan.
 
 ## EXAMPLES
 
@@ -39,13 +42,13 @@ Cmdlet **New-AzWebAppSlot** membuat Slot Azure Web App dalam grup sumber daya te
 PS C:\> New-AzWebAppSlot -ResourceGroupName Default-Web-WestUS -Name "ContosoSite" -AppServicePlan "ContosoServicePlan" -Slot "Slot001"
 ```
 
-Perintah ini membuat Slot bernama Slot001 di bawah nama Web App ContosoSite yang sudah ada di grup sumber daya yang ada bernama Default-Web-WestUS di pusat data AS Barat.
-Perintah tersebut menggunakan paket Layanan Aplikasi yang sudah ada bernama ContosoServicePlan.
+Perintah ini membuat Slot bernama Slot001 di bawah nama Aplikasi Web yang sudah ada ContosoSite dalam grup sumber daya yang sudah ada bernama Default-Web-WestUS di pusat data AS Barat.
+Perintah menggunakan rencana App Service yang sudah ada bernama ContosoServicePlan.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi atau ID Paket Layanan Aplikasi. Jika Slot dan Paket Layanan Aplikasi berada dalam Grup Sumber Daya yang berbeda, gunakan ID dan bukan namanya. Id Paket Layanan Aplikasi dapat diambil menggunakan: $asp = Get-AzAppServicePlan -ResourceGroup myRG -Name MyWebapp $asp.id mengembalikan Id Paket Layanan Aplikasi.
+App Service Nama Rencana atau Id Paket App Service. Jika Slot dan Paket App Service berada dalam Grup Sumber Daya yang berbeda, gunakan ID, bukan nama. Id Paket App Service dapat diambil menggunakan: $asp = Get-AzAppServicePlan -ResourceGroup myRG -Name MyWebapp $asp.id mengembalikan Id Paket App Service.
 
 ```yaml
 Type: System.String
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettingsOverrides
-Aplikasi Pengaturan Hashtable
+Aplikasi Pengaturan Menimpa Hashtable
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan Layanan Aplikasi
+Nama Lingkungan App Service
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
+Nama Grup Sumber Daya Lingkungan App Service
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerImageName
-Container Image Name dan tag opsional, misalnya (image:tag)
+Nama Gambar Kontainer dan tag opsional, misalnya (image:tag)
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryPassword
-Kata Sandi Registri Wadah Privat
+Kata Sandi Registri Kontainer Privat
 
 ```yaml
 Type: System.Security.SecureString
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUrl
-Url Server Registri Wadah Privat
+Url Server Registri Kontainer Pribadi
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Registri Wadah Privat
+Nama Pengguna Private Container Registry
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableContainerContinuousDeployment
-Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan wadah
+Webhook penyebaran berkelanjutan kontainer Enables/Disables
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreCustomHostNames
-Abaikan Opsi Nama Host Kustom
+Opsi Abaikan Nama Host Kustom
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceWebApp
-Objek Source WebApp
+Objek WebApp Sumber
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite
@@ -300,33 +303,33 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
-[Remove-AzWebAppslot](./Remove-AzWebAppSlot.md)
+[Hapus-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
-[Restart-AzWebAppslot](./Restart-AzWebAppSlot.md)
+[Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 
-[Set-AzWebAppslot](./Set-AzWebAppSlot.md)
+[Set-AzWebAppSlot](./Set-AzWebAppSlot.md)
 
-[Start-AzWebAppslot](./Start-AzWebAppSlot.md)
+[Start-AzWebAppSlot](./Start-AzWebAppSlot.md)
 
-[Stop-AzWebAppslot](./Stop-AzWebAppSlot.md)
+[Stop-AzWebAppSlot](./Stop-AzWebAppSlot.md)
 
 [Get-AzAppServicePlan](./Get-AzAppServicePlan.md)
 

@@ -5,16 +5,16 @@ ms.assetid: 674A11E4-36B9-4075-9F4E-952BD9FF07A7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/new-azurermautoscalewebhook
 schema: 2.0.0
 ms.openlocfilehash: fe6170842bcacf4d7fb0c8e442dc988c03c67e35
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423946"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362435"
 ---
 # New-AzureRmAutoscaleWebhook
 
 ## SYNOPSIS
-Membuat webhook SkalaOtomatis.
+Membuat webhook Skala Otomatis.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,14 +26,14 @@ New-AzureRmAutoscaleWebhook [-ServiceUri] <String> [[-Property] <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmAutoscaleWebhook** membuat web skala otomatis.
+Cmdlet **New-AzureRmAutoscaleWebhook** membuat webhook Skala Otomatis.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Properti
-Menentukan daftar properti dalam format @(properti1 = 'nilai1',....).
+Menentukan daftar properti dalam format @(property1 = 'value1',....).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

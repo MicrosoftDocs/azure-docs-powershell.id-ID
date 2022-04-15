@@ -5,11 +5,11 @@ ms.assetid: 8D8FE2FE-03E7-453E-B968-E28B07E42EF2
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/remove-azurermactiongroup
 schema: 2.0.0
 ms.openlocfilehash: 9956e9436b7a52ffe3efdbece0d3715fb02264cf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421987"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362455"
 ---
 # Remove-AzureRmActionGroup
 
@@ -39,7 +39,7 @@ Remove-AzureRmActionGroup -InputObject <PSActionGroupResource> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmActionGroup** menghapus grup tindakan.
+Cmdlet **Hapus-AzureRmActionGroup** menghapus grup tindakan.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ RequestId                                                                       
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Grup tindakan yang anda ingka
+Resourc grup tindakan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,6 +176,6 @@ Parameter: InputObject (ByValue)
 
 ## RELATED LINKS
 
-[Set-AzureRmActionGroup](./Set-AzureRmActionGroup.md) 
- [Get-AzureRmActionGroup](./Get-AzureRmActionGroup.md) 
- [New-AzureRmActionGroupReceiver](./New-AzureRmActionGroupReceiver.md)
+[Set-AzureRmActionGroup](./Set-AzureRmActionGroup.md)
+ [Get-AzureRmActionGroup](./Get-AzureRmActionGroup.md)
+ [Baru-AzureRmActionGroupReceiver](./New-AzureRmActionGroupReceiver.md)

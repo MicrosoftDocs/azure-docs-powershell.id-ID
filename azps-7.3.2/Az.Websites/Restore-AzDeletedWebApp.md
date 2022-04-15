@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzDeletedWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzDeletedWebApp.md
-ms.openlocfilehash: 5883fbb54beea30bf327061317251841989ea68c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ed26de816351043b254204eed53ff261a7958408
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182401"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142363607"
 ---
 # Restore-AzDeletedWebApp
 
 ## SYNOPSIS
 Memulihkan aplikasi web yang dihapus ke aplikasi web baru atau yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azdeletedwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Restore-AzDeletedWebApp [-TargetResourceGroupName <String>] [-DeletedId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikasi web yang ditentukan oleh TargetResourceGroupName, TargetName, dan TargetSlot akan ditimpa dengan konten dan pengaturan aplikasi web yang dihapus. Jika parameter target tidak ditentukan, parameter target akan secara otomatis diisi dengan grup sumber daya, nama, dan slot aplikasi web yang dihapus. Jika aplikasi web target tidak ada, aplikasi akan otomatis dibuat di paket layanan aplikasi yang ditentukan oleh TargetAppServicePlanName. Parameter sakelar RestoreContentOnly bisa digunakan untuk memulihkan hanya file aplikasi yang dihapus tanpa pengaturan aplikasi.
+**Cmdlet Restore-AzDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikasi web yang ditentukan oleh TargetResourceGroupName, TargetName, dan TargetSlot akan ditimpa dengan konten dan pengaturan aplikasi web yang dihapus. Jika parameter target tidak ditentukan, parameter tersebut akan otomatis diisi dengan grup sumber daya, nama, dan slot aplikasi web yang dihapus. Jika aplikasi web target tidak ada, aplikasi akan otomatis dibuat dalam paket layanan aplikasi yang ditentukan oleh TargetAppServicePlanName. Parameter switch RestoreContentOnly dapat digunakan untuk memulihkan file aplikasi yang dihapus saja tanpa pengaturan aplikasi.
 
 ## EXAMPLES
 
@@ -46,21 +49,21 @@ Cmdlet **Restore-AzDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikas
 PS C:\> Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -TargetAppServicePlanName ContosoPlan
 ```
 
-Memulihkan aplikasi yang dihapus yang bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi baru dengan nama dan grup sumber daya yang sama akan dibuat dalam Paket Layanan Aplikasi bernama ContosoPlan, dan file serta pengaturan aplikasi yang dihapus akan dipulihkan ke dalamnya.
+Memulihkan aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi baru dengan nama dan grup sumber daya yang sama akan dibuat di Paket App Service bernama ContosoPlan, dan file dan pengaturan aplikasi yang dihapus akan dipulihkan ke dalamnya.
 
 ### Contoh 2
 ```powershell
 PS C:\> Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -Slot Staging -TargetResourceGroupName Default-Web-EastUS -TargetName ContosoRestore -RestoreContentOnly
 ```
 
-Memulihkan slot Pengaturan dari aplikasi yang dihapus yang bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi web yang bernama ContosoRestore milik grup sumber daya Default-Web-EastUS akan ditimpa. Pengaturan aplikasi web yang dihapus tidak akan dipulihkan.
+Memulihkan slot Staging dari aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi web bernama ContosoRestore milik grup sumber daya Default-Web-EastUS akan ditimpa. Pengaturan aplikasi web yang dihapus tidak akan dipulihkan.
 
 ###Contoh 3
 ```powershell
 PS C:\> Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -DeletedId /subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Web/locations/location/deletedSites/1234 -TargetAppServicePlanName ContosoPlan
 ```
 
-Jika ada 2 aplikasi yang dihapus dengan nama yang sama(ContosoApp), kemudian kami akan mendapatkan detail tentang situs dan memulihkan aplikasi bernama ContosoRestore menggunakan aplikasi pilihan kami dengan meminta pemulihan menggunakan Id.
+Jika ada 2 aplikasi yang dihapus dengan nama yang sama(ContosoApp), maka kami mendapatkan detail situs dan memulihkan aplikasi bernama ContosoRestore dengan aplikasi pilihan kami dengan menghubungi pemulihan dengan Id.
 
 ###Contoh 4
 ```powershell
@@ -68,12 +71,12 @@ PS C:\> $deletedSite = Get-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS
 PS C:\> Restore-AzDeletedWebApp -TargetResourceGroupName Default-Web-EastUS -TargetName ContosoRestore -TargetAppServicePlanName ContosoPlan -InputObject $deletedSite[0]
 ```
 
-Jika ada 2 aplikasi yang dihapus dengan nama yang sama(ContosoApp), maka kami mendapatkan detail kedua situs tersebut dan memulihkan aplikasi bernama ContosoRestore dengan aplikasi pilihan kami dengan menghubungi pemulihan dengan detail InputObject(Deletedsite) 
+Jika ada 2 aplikasi yang dihapus dengan nama yang sama(ContosoApp), maka kami mendapatkan detail situs dan memulihkan aplikasi bernama ContosoRestore dengan aplikasi pilihan kami dengan menghubungi pemulihan dengan detail InputObject(Deletedsite) 
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lakukan pemulihan tanpa meminta konfirmasi.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreContentOnly
-Pulihkan file aplikasi web, tetapi jangan pulihkan pengaturannya.
+Pulihkan file aplikasi web, tetapi jangan pulihkan pengaturan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAppServicePlanName
-Paket Layanan Aplikasi untuk Azure Web App baru.
+Paket App Service untuk Azure Web App yang baru.
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetName
-Nama Azure Web App baru.
+Nama Azure Web App yang baru.
 
 ```yaml
 Type: System.String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroupName
-Grup sumber daya yang berisi Azure Web App baru.
+Grup sumber daya yang berisi Azure Web App yang baru.
 
 ```yaml
 Type: System.String
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetSlot
-Nama slot Azure Web App baru.
+Nama slot Azure Web App yang baru.
 
 ```yaml
 Type: System.String
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -336,7 +339,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricClientCertificate.md
-ms.openlocfilehash: abd5e4808a1e831992ebec7e727d60bf3e656a84
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e273b471856b454043a13e0bd4426d40faa0bc21
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006184"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142340513"
 ---
 # Remove-AzServiceFabricClientCertificate
 
 ## SYNOPSIS
-Hapus nama subjek sertifikat atau sertifikat klien agar tidak digunakan untuk autentikasi klien ke kluster.
+Hapus sertifikat klien atau nama subjek sertifikat agar tidak digunakan untuk autentikasi klien ke kluster.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <S
  [<CommonParameters>]
 ```
 
-### SingleUpdateWithThumbprint
+### SingleUpdateWithUmbprint
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String> -Thumbprint <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,7 +42,7 @@ Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <S
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MultipleUpdatesWithThumbprint
+### MultipleUpdatesWithumbprint
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-AdminClientThumbprint <String[]>] [-ReadonlyClientThumbprint <String[]>]
@@ -47,7 +50,7 @@ Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <S
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzServiceFabricClientCertificate** untuk menghapus nama sertifikat klien atau subjek sertifikat agar tidak digunakan untuk autentikasi klien ke kluster.
+Gunakan **Remove-AzServiceFabricClientCertificate** untuk menghapus sertifikat klien atau nama subjek sertifikat agar tidak digunakan untuk autentikasi klien ke kluster.
 
 ## EXAMPLES
 
@@ -56,12 +59,12 @@ Gunakan **Remove-AzServiceFabricClientCertificate** untuk menghapus nama sertifi
 PS c:> Remove-AzServiceFabricClientCertificate -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -Thumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A
 ```
 
-Perintah ini akan menghapus sertifikat klien dengan thumbprint '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' dari kluster.
+Perintah ini akan menghapus sertifikat klien dengan sidik jari '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' dari kluster.
 
 ## PARAMETERS
 
 ### -AdminClientThumbprint
-Menentukan pencetakan sertifikat klien yang hanya memiliki izin admin
+Menentukan sidik jari sertifikat klien yang hanya memiliki izin admin
 
 ```yaml
 Type: System.String[]
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificateCommonName
-Menentukan nama umum klien, tipe autentikasi dan thumbprint penerbit
+Tentukan nama umum klien , tipe sidik jari dan autentikasi penerbit
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSClientCertificateCommonName[]
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommonName
-Menentukan nama umum sertifikat klien
+Tentukan nama umum sertifikat klien
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerThumbprint
-Menentukan thumbprint penerbit sertifikat klien
+Tentukan sidik jari penerbit sertifikat klien
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kluster
+Tentukan nama kluster
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyClientThumbprint
-Menentukan thumbprint sertifikat klien yang hanya memiliki izin baca saja
+Menentukan sidik jari sertifikat klien yang hanya memiliki izin baca-saja
 
 ```yaml
 Type: System.String[]
@@ -180,8 +183,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Thumbprint
-Menentukan thumbprint sertifikat klien
+### -Sidik jari
+Tentukan sidik jari sertifikat klien
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
