@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNetworkRule.md
 ms.openlocfilehash: 63e7e9b8b7783c52d40044ccdd59cfe0d0fe9de9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140281903"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142268323"
 ---
 # New-AzFirewallNetworkRule
 
@@ -19,7 +19,7 @@ ms.locfileid: "140281903"
 Membuat Aturan Jaringan Firewall.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallnetworkrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,12 +54,12 @@ Contoh ini membuat aturan untuk semua lalu lintas TCP dari 10.0.0.0 hingga 60.1.
 $rule = New-AzFirewallNetworkRule -Name "tcp-and-icmp-rule" -Description "Rule for all TCP and ICMP traffic from any source to 10.0.0.0/16" -Protocol TCP,ICMP -SourceAddress * -DestinationAddress "10.0.0.0/16" -DestinationPort *
 ```
 
-Contoh ini membuat aturan untuk semua lalu lintas TCP dari sumber mana saja ke 10.0.0.0/16. Pengguna memberlakukan apakah lalu lintas akan diizinkan atau ditolak untuk aturan berdasarkan kumpulan aturan yang terkait dengannya.
+Contoh ini membuat aturan untuk semua lalu lintas TCP dari sumber mana pun ke 10.0.0.0/16. Pengguna memberlakukan apakah lalu lintas akan diizinkan atau ditolak untuk aturan berdasarkan kumpulan aturan yang terkait dengannya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional dari aturan ini.
+Menentukan deskripsi opsional aturan ini.
 
 ```yaml
 Type: System.String
@@ -163,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan tipe lalu lintas yang akan difilter menurut aturan ini. Kemungkinan nilai adalah TCP, UDP, ICMP, dan Apa Pun.
+### -Protokol
+Menentukan tipe lalu lintas yang akan difilter menurut aturan ini. Nilai yang mungkin adalah TCP, UDP, ICMP dan Any.
 
 ```yaml
 Type: System.String[]
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Grup ip sumber aturan
+Ipgroup sumber aturan
 
 ```yaml
 Type: System.String[]
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,11 +241,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

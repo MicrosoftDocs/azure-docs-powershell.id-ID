@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLocalNetworkGateway.md
 ms.openlocfilehash: 74c3efab65c4e4f84d732e4f245d3fe36527bf27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139972131"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142267513"
 ---
 # Remove-AzLocalNetworkGateway
 
@@ -19,7 +19,7 @@ ms.locfileid: "139972131"
 Menghapus Gateway Jaringan Lokal
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azlocalnetworkgateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,22 +29,22 @@ Remove-AzLocalNetworkGateway -Name <String> -ResourceGroupName <String> [-Force]
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Lokal Anda.
+Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Di Tempat.
 Cmdlet **Remove-AzLocalNetworkGateway** menghapus objek yang mewakili gateway lokal Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Gateway Jaringan Lokal
+### Contoh 1: Hapus Gateway Jaringan Lokal
 ```powershell
 Remove-AzLocalNetworkGateway -Name myLocalGW -ResourceGroupName myRG
 ```
 
-Menghapus objek Gateway Jaringan Lokal dengan nama "myLocalGW" di dalam grup sumber daya "myRG" Catatan: Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Jaringan Lokal menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
+Menghapus objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" Catatan: Anda harus menghapus semua koneksi ke Gateway Jaringan Lokal terlebih dahulu menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

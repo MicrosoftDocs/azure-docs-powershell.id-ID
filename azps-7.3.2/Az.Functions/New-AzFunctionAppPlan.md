@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
-ms.openlocfilehash: 06067ff863e200dd9e7076855c1b8a4adc55a4ab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 788e428f8a2992db26e4c9af81bdd06263eb6e82
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008964"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257307"
 ---
 # New-AzFunctionAppPlan
 
 ## SYNOPSIS
 Membuat paket layanan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.functions/new-azfunctionappplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Membuat paket layanan aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Windows aplikasi premium di Eropa Barat dengan semburan kapabilitas hingga 10 contoh.
+### Contoh 1: Buat paket aplikasi premium Windows di Eropa Barat dengan kemampuan ledakan hingga 10 instans.
 ```powershell
 PS C:\> New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                               -Name MyPremiumPlan `
@@ -42,12 +45,12 @@ PS C:\> New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
 
 ```
 
-Perintah ini membuat Windows aplikasi premium di Eropa Barat dengan semburan kapabilitas hingga 10 contoh.
+Perintah ini membuat paket aplikasi premium Windows di Eropa Barat dengan kemampuan ledakan hingga 10 instans.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan.
+Jalankan perintah sebagai pekerjaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk paket konsumsi.
+Lokasi untuk paket pemakaian.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama paket Layanan Aplikasi.
+Nama paket App Service.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sku rencana.
+Rencana sku.
 Input yang valid adalah: EP1, EP2, EP3
 
 ```yaml
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

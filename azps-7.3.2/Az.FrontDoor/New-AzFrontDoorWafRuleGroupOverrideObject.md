@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafRuleGroupOverrideObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafRuleGroupOverrideObject.md
-ms.openlocfilehash: 117962175fa3109b99979137a282e3d2fe4e7cf1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ecc5e705035ac023179ee1bfec0f26f388d4f40a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200070"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257351"
 ---
 # New-AzFrontDoorWafRuleGroupOverrideObject
 
 ## SYNOPSIS
-Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+Buat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafrulegroupoverrideobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorWafRuleGroupOverrideObject -RuleGroupName <String>
 ```
 
 ## DESCRIPTION
-Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+Buat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ RuleGroupName ManagedRuleOverrides
 SQLI          {942250, 942251}
 ```
 
-Membuat objek RuleGroupOverride
+Membuat Objek RuleGroupOverride
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Exclusion
+### -Pengecualian
 Pengecualian
 
 ```yaml
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedRuleOverride
-Daftar pengabaian aturan
+Daftar ganti aturan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSAzureManagedRuleOverride[]
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupName
-Nama Grup Aturan di mana penggantian ini diterapkan
+Nama Grup Aturan yang menerapkan penimpaan ini
 
 ```yaml
 Type: System.String
@@ -107,11 +110,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

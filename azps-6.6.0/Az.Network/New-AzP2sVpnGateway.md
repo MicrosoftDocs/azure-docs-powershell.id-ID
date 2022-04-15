@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzP2sVpnGateway.md
 ms.openlocfilehash: 83a3c96ee030f19f89e1d5ca9f498abd40e47060
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140307229"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142268035"
 ---
 # New-AzP2sVpnGateway
 
@@ -18,11 +18,11 @@ ms.locfileid: "140307229"
 Buat P2SVpnGateway baru di bawah VirtualHub untuk mengarahkan ke konektivitas situs.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azp2svpngateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ByVirtualHubNameByServerConfigurationObject (Default)
+### ByVirtualHubNameByVpnServerConfigurationObject (Default)
 ```
 New-AzP2sVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleUnit <UInt32>
  -VirtualHubName <String> [-VpnServerConfiguration <PSVpnServerConfiguration>] -VpnClientAddressPool <String[]>
@@ -31,7 +31,7 @@ New-AzP2sVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleU
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByVirtualHubNameByServerConfigurationResourceId
+### ByVirtualHubNameByVpnServerConfigurationResourceId
 ```
 New-AzP2sVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleUnit <UInt32>
  -VirtualHubName <String> -VpnServerConfigurationId <String> -VpnClientAddressPool <String[]>
@@ -40,7 +40,7 @@ New-AzP2sVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleU
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByVirtualHubObjectByServerConfigurationObject
+### ByVirtualHubObjectByVpnServerConfigurationObject
 ```
 New-AzP2sVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleUnit <UInt32>
  -VirtualHub <PSVirtualHub> [-VpnServerConfiguration <PSVpnServerConfiguration>]
@@ -78,7 +78,7 @@ New-AzP2sVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleU
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzP2sVpnGateway memungkinkan Anda membuat P2SVpnGateway baru di bawah VirtualHub for Point ke konektivitas situs dari Point ke klien situs ke Azure VirtualWan.
+Cmdlet New-AzP2sVpnGateway memungkinkan Anda membuat P2SVpnGateway baru di bawah VirtualHub untuk konektivitas situs Point ke dari Klien situs ke Azure VirtualWan.
 
 ## EXAMPLES
 
@@ -135,12 +135,12 @@ P2SConnectionConfigurations    : [
                                  ]
 ```
 
-Cmdlet New-AzP2sVpnGateway memungkinkan Anda membuat P2SVpnGateway baru di bawah VirtualHub for Point ke konektivitas situs.
+Cmdlet New-AzP2sVpnGateway memungkinkan Anda membuat P2SVpnGateway baru di bawah VirtualHub untuk konektivitas situs Point ke.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableInternetSecurityFlag
-Bendera untuk menonaktifkan fitur keamanan internet di P2SVpnGateway P2SConnectionConfiguration ini.
+Tandai untuk menonaktifkan fitur keamanan internet di P2SVpnGateway P2SConnectionConfiguration ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurityFlag
-Mengaktifkan bendera keamanan internet untuk koneksi P2SVpnGateway ini
+Aktifkan bendera keamanan internet untuk koneksi P2SVpnGateway ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRoutingPreferenceInternetFlag
-Bendera untuk mengaktifkan Internet Preferensi Perutean di P2SVpnGateway ini.
+Benderai untuk mengaktifkan Perutean Preferensi Internet di P2SVpnGateway ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHub
-VirtualHub, P2SVpnGateway ini harus dikaitkan.
+VirtualHub P2SVpnGateway ini perlu dikaitkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubId
-Id VirtualHub P2SVpnGateway ini harus dikaitkan.
+Id VirtualHub P2SVpnGateway ini perlu dikaitkan.
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHubName
-Id VirtualHub P2SVpnGateway ini harus dikaitkan.
+Id VirtualHub P2SVpnGateway ini perlu dikaitkan.
 
 ```yaml
 Type: System.String
@@ -365,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfiguration
-VpnServerConfiguration yang akan dilampirkan ke P2SVpnGateway ini.
+VpnServerConfiguration untuk dilampirkan ke P2SVpnGateway ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfigurationId
-Id objek konfigurasi server Vpn yang terhubung dengan P2SVpnGateway ini.
+Id objek konfigurasi server Vpn tempat P2SVpnGateway ini akan dilampirkan.
 
 ```yaml
 Type: System.String
@@ -395,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -426,7 +426,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -440,5 +440,5 @@ System.String Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
 
 ## RELATED LINKS
 
-[New-AzRoutingConfiguration]()
+[Konfigurasi AzRouting Baru]()
 

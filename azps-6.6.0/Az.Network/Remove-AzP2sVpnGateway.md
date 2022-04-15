@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzP2sVpnGateway.md
 ms.openlocfilehash: 433ee258277fb56d36762ee3d5802957e1839b63
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140250135"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142267441"
 ---
 # Remove-AzP2sVpnGateway
 
@@ -18,7 +18,7 @@ ms.locfileid: "140250135"
 Menghapus P2SVpnGateway yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azp2svpngateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzP2sVpnGateway -ResourceId <String> [-PassThru] [-Force] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzP2sVpnGateway** memungkinkan Anda menghapus P2SVpnGateway yang sudah ada di bawah VirtualHub. Semua titik ke konektivitas klien situs akan gagal setelah P2SVpnGateway dihapus.
+Cmdlet **Remove-AzP2sVpnGateway** memungkinkan Anda menghapus P2SVpnGateway yang sudah ada di bawah VirtualHub. Semua titik konektivitas klien situs akan gagal setelah P2SVpnGateway dihapus.
 
 ## EXAMPLES
 
@@ -69,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item di mana operasi ini dijalankan.
+Mengembalikan objek yang mewakili item tempat operasi ini dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk p2sVpnGateway akan dihapus.
+ID sumber daya Azure untuk p2sVpnGateway dihapus.
 
 ```yaml
 Type: String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
