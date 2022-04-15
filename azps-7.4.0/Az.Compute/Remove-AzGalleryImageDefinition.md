@@ -1,43 +1,53 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
-Module Name: Az.Network
-online version: https://docs.microsoft.com/powershell/module/az.network/remove-azprivatelinkservice
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
+Module Name: Az.Compute
+online version: https://docs.microsoft.com/powershell/module/az.compute/remove-azgalleryimagedefinition
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPrivateLinkService.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPrivateLinkService.md
-ms.openlocfilehash: 41944764a4ab358a5dbefaf28f35cab73b8b9926
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryImageDefinition.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryImageDefinition.md
+ms.openlocfilehash: 111734c3af991383ca787c00afd965cc73bcb196
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142227511"
+ms.locfileid: "142173494"
 ---
-# Remove-AzPrivateLinkService
+# Remove-AzGalleryImageDefinition
 
 ## SYNOPSIS
-Menghapus layanan tautan privat
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azprivatelinkservice) untuk informasi terbaru.
+Menghapus definisi gambar galeri.
 
 ## SYNTAX
 
+### DefaultParameter (Default)
 ```
-Remove-AzPrivateLinkService -ResourceGroupName <String> -Name <String> [-Force] [-AsJob] [-PassThru]
+Remove-AzGalleryImageDefinition [-ResourceGroupName] <String> [-GalleryName] <String> [-Name] <String> [-Force]
+ [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ResourceIdParameter
+```
+Remove-AzGalleryImageDefinition [-Force] [-ResourceId] <String> [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ObjectParameter
+```
+Remove-AzGalleryImageDefinition [-Force] [-InputObject] <PSGalleryImage> [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzPrivateLinkService** menghapus layanan tautan pribadi
+Menghapus definisi gambar galeri.
 
 ## EXAMPLES
 
 ### Contoh 1
-```
-Remove-AzPrivateLinkService -ResourceGroupName TestResourceGroup -Name TestPrivateLinkService
+```powershell
+Remove-AzGalleryImageDefinition -ResourceGroupName $rgname -GalleryName $gallery -GalleryImageDefinitionName $galleryImage
 ```
 
-Contoh ini menghapus layanan tautan privat bernama TestPrivateLinkService.
+Hapus definisi gambar galeri.
 
 ## PARAMETERS
 
@@ -72,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Paksa
-Jangan meminta konfirmasi jika Anda ingin menghapus sumber daya
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,47 +96,76 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama layanan.
+### -GalleryName
+Nama galeri.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
-Aliases: ServiceName
+Parameter Sets: DefaultParameter
+Aliases:
 
 Required: True
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
-Secara default, cmdlet ini tidak menghasilkan output apa pun.
+### -InputObject
+Objek Definisi Gambar Galeri PS
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSGalleryImage
+Parameter Sets: ObjectParameter
+Aliases: GalleryImageDefinition
 
-Required: False
-Position: Named
+Required: True
+Position: 0
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama definisi gambar galeri.
+
+```yaml
+Type: System.String
+Parameter Sets: DefaultParameter
+Aliases: GalleryImageDefinitionName
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya layanan tautan privat.
+Nama grup sumber daya.
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: DefaultParameter
 Aliases:
 
 Required: True
-Position: Named
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceId
+ID sumber daya untuk definisi gambar galeri
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceIdParameter
+Aliases:
+
+Required: True
+Position: 0
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
@@ -170,14 +209,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
+### Microsoft.Azure.Commands.Compute.Automation.Models.PSGalleryImage
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
 ## CATATAN
 
 ## RELATED LINKS
-
-[Get-AzPrivateLinkService](./Get-AzPrivateLinkService.md)
-
-[New-AzPrivateLinkService](./New-AzPrivateLinkService.md)

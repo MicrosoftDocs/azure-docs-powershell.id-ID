@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSynchronizationSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSynchronizationSetting.md
 ms.openlocfilehash: ce649f6701c50871ee8158403751fe5f591aa2a2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139977477"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142270735"
 ---
 # Remove-AzDataShareSynchronizationSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "139977477"
 menghapus pengaturan sinkronisasi
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/remove-azdatasharesynchronizationsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/remove-azdatasharesynchronizationsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Remove-AzDataShareSynchronizationSetting -InputObject <PSDataShareSynchronizatio
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataShareSynchronizationSetting** menghapus pengaturan sinkronisasi berbagi data
+Cmdlet **Remove-AzDataShareSynchronizationSetting** menghapus pengaturan sinkronisasi datashare
 
 ## EXAMPLES
 
@@ -54,12 +54,12 @@ Are you sure you want to remove synchronization-setting "AdsShareSynchronization
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 ```
 
-Perintah ini menghapus pengaturan sinkronisasi bernama AdsShareSynchronizationSetting dari berbagi AdsShare. 
+Perintah ini menghapus pengaturan sinkronisasi bernama AdsShareSynchronizationSetting dari share AdsShare. 
 
 ## PARAMETERS
 
-### -Nama Akun
-Nama Akun Berbagi Data Azure
+### -AccountName
+Nama Akun Azure Data Share
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Pengaturan Sinkronisasi Berbagi Data Azure.
+Pengaturan Sinkronisasi Azure Data Share.
 
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan (jika ditentukan).
+Mengembalikan objek (jika ditentukan).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

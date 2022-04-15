@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationDscNodeConfigurationDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationDscNodeConfigurationDeployment.md
-ms.openlocfilehash: be775df28ef7ca1cb2ecc18f9f7ff7d228f72b3a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 569d6f50811c6219436f70e50ac91578fd9bccd6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202726"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142260583"
 ---
 # Start-AzAutomationDscNodeConfigurationDeployment
 
 ## SYNOPSIS
-Menyebarkan konfigurasi Node DSC dalam Otomatisasi.
+Menyebarkan konfigurasi Simpul DSC dalam Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/start-azautomationdscnodeconfigurationdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Start-AzAutomationDscNodeConfigurationDeployment [-NodeConfigurationName] <String> [-NodeName] <String[][]>
  [-Schedule <Schedule>] [-Force] [-ResourceGroupName] <String> [-AutomationAccountName] <String>
@@ -35,11 +38,11 @@ Start-AzAutomationDscNodeConfigurationDeployment [-NodeConfigurationName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzAutomationDscNodeConfigurationDeployment** menempatkan konfigurasi node Desired State Configuration (DSC) dalam Azure Automation.
+Cmdlet **Start-AzAutomationDscNodeConfigurationDeployment** menyebarkan konfigurasi node Konfigurasi Status Yang Diinginkan (DSC) dalam Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Sebarkan konfigurasi node Azure DSC dalam Otomatisasi
+### Contoh 1: Menyebarkan konfigurasi simpul DSC Azure dalam Otomatisasi
 ```
 PS C:\> $pilot = @("WebServerPilot1", "WebServerPilot2")
 PS C:\> $prod = @("WebServerProd1", "WebServerProd2")
@@ -65,9 +68,9 @@ JobSchedule           :
 JobScheduleId         : 00000000-0000-0000-0000-000000000000
 ```
 
-Perintah di atas akan menggunakan konfigurasi node DSC yang bernama "Config01.Node1" ke array dua dimensi nama Node yang diberikan. Penyebaran dilakukan secara tahapan.
+Perintah di atas menyebarkan konfigurasi node DSC bernama "Config01.Node1" ke array dua dimensi Nama Node tertentu. Penyebaran terjadi secara bertahap.
 
-### Contoh 2: Jadwalkan penyebaran konfigurasi node Azure DSC dalam Otomatisasi
+### Contoh 2: Menjadwalkan penyebaran konfigurasi node DSC Azure dalam Otomatisasi
 ```
 PS C:\> $sched = New-AzAutomationSchedule -AutomationAccountName "Contoso01" `
             -ResourceGroupName "ResourceGroup01" `
@@ -99,12 +102,12 @@ JobSchedule           : Microsoft.Azure.Commands.Automation.Model.JobSchedule
 JobScheduleId         : 2b1d7738-093d-4ff7-b87b-e4b2321319e5
 ```
 
-Perintah di atas menjadwalkan penyebaran konfigurasi node DSC bernama "Config01.Node1" ke array nama Node dua dimensi yang diberikan. Penyebaran terjadi dengan cara staged dan akan dijalankan berdasarkan jadwal.
+Perintah di atas menjadwalkan penyebaran konfigurasi simpul DSC bernama "Config01.Node1" ke array dua dimensi Nama Node tertentu. Penyebaran terjadi secara bertahap dan akan dijalankan berdasarkan jadwal.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang disusun cmdlet ini.
+Menentukan nama akun Otomatisasi yang berisi konfigurasi DSC yang dikompilasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -133,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeConfigurationName
-Menentukan nama konfigurasi node DSC yang disebarkan cmdlet ini.
+Menentukan nama konfigurasi simpul DSC yang digunakan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeName
-Menentukan nama node tempat Konfigurasi Node akan disebarkan.
+Menentukan nama node tempat Konfigurasi Node akan digunakan.
 
 ```yaml
 Type: System.String[][]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menyusun konfigurasi.
+Menentukan nama grup sumber daya tempat cmdlet ini menyusun konfigurasi.
 
 ```yaml
 Type: System.String
@@ -220,8 +223,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Schedule
-Objek Otomatisasi Jadwal untuk menjadwalkan pekerjaan penggunaan.
+### -Jadwal
+Otomatisasi Jadwalkan objek untuk menjadwalkan pekerjaan penyebaran.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.Schedule
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

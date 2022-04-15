@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceOperation.md
-ms.openlocfilehash: 5e0e70ace9c1d1486210ba7d75dfb7bf2b4d5fa0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 93db7371b1a5786471ddfb12630607d8ade8942b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178438"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142251595"
 ---
 # Stop-AzSqlInstanceOperation
 
 ## SYNOPSIS
-Menghentikan SQL operasi instans terkelola.
+Menghentikan operasi instans terkelola SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqlinstanceoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Stop-AzSqlInstanceOperation [-InputObject] <AzureSqlManagedInstanceOperationMode
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzSqlInstanceOperation menghentikan operasi dengan nama operasi yang disediakan pada SQL yang dikelola.
+Cmdlet Stop-AzSqlInstanceOperation menghentikan operasi dengan nama operasi yang disediakan pada instans yang dikelola SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan operasi tertentu
+### Contoh 1: Dapatkan operasi tertentu
 ```powershell
 PS C:\> Stop-AzSqlInstanceOperation -ResourceGroupName ps3753 -ManagedInstanceName ps3698 -Name d0f5bef5-e2b1-4ef8-bb42-2e54073874f9
 
@@ -64,7 +67,7 @@ Description             :
 IsCancellable           : True
 ```
 
-Perintah ini menghentikan operasi dengan nama 'd0f5bef5-e2b1-4ef8-bb42-2e54073874f9' pada SQL terkelola.
+Perintah ini menghentikan operasi dengan nama 'd0f5bef5-e2b1-4ef8-bb42-2e54073874f9' pada instans yang dikelola SQL.
 
 ### Contoh 2: Menggunakan id sumber daya operasi
 ```powershell
@@ -133,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Operasi yang dibatalkan
+Operasi untuk membatalkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstanceOperation.Model.AzureSqlManagedInstanceOperationModel
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek operasi untuk berhenti
+Id sumber daya dari objek operasi untuk dihentikan
 
 ```yaml
 Type: System.String
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

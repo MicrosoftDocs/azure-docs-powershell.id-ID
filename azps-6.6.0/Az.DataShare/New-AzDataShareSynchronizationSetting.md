@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareSynchronizationSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareSynchronizationSetting.md
 ms.openlocfilehash: 342a2515b5f5b1c5104feaf30e33e0208e5a574c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286781"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142270861"
 ---
 # New-AzDataShareSynchronizationSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "140286781"
 Membuat pengaturan Sinkronisasi untuk berbagi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/new-azdatasharesynchronizationsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatasharesynchronizationsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzDataShareSynchronizationSetting -ResourceGroupName <String> -AccountName <
 ```
 
 ## DESCRIPTION
-The **New-AzDataShareSynchronizationSetting** creates a synchronization setting for share in share account for a recurrence interval of daily or hourly at a particular time.
+**The New-AzDataShareSynchronizationSetting** creates a synchronization setting for share in share account for a recurrence interval of either daily or hourly at a particular time.
 
 ## EXAMPLES
 
@@ -46,11 +46,11 @@ Name                : ShareSynchronization
 Type                : Microsoft.DataShare/SynchronizationSettings
 ```
 
-Perintah ini membuat pengaturan sinkronisasi pada interval pengulangan harian pada pukul 9.00 untuk berbagi IklanBerbagi di akun berbagi data WikiAds.
+Perintah ini membuat pengaturan sinkronisasi pada Interval pengulangan harian pada pukul 09.00 untuk berbagi AdsShare di akun berbagi data WikiAds.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SynchronizationTime
-Waktu mulai dari pengaturan sinkronisasi terjadwal
+Waktu mulai pengaturan sinkronisasi terjadwal
 
 ```yaml
 Type: System.DateTime
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

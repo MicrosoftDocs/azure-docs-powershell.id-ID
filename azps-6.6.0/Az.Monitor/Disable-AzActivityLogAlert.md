@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Disable-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Disable-AzActivityLogAlert.md
 ms.openlocfilehash: 8a2c5010cccdc792cf24986e0f1f2eaa18e66105
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139974273"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142270051"
 ---
 # Disable-AzActivityLogAlert
 
@@ -19,7 +19,7 @@ ms.locfileid: "139974273"
 Menonaktifkan pemberitahuan log aktivitas dan mengatur tagnya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/disable-azactivitylogalert) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/disable-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,8 +42,8 @@ Disable-AzActivityLogAlert -ResourceId <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzActivityLogAlert** menonaktifkan dan pemberitahuan log aktivitas serta memungkinkan pengaturan tagnya.
-Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar melakukan patching sumber daya.
+Cmdlet **Disable-AzActivityLogAlert** menonaktifkan dan pemberitahuan log aktivitas dan memungkinkan pengaturan tag.
+Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar menambal sumber daya.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengg
 PS C:\>Disable-AzActivityLogAlert -Name "alert1" -ResourceGroupName "Default-ActivityLogsAlerts"
 ```
 
-Perintah ini akan menonaktifkan pemberitahuan log aktivitas yang disebut pemberitahuan1 dalam grup sumber daya Default-ActivityLogsAlerts.
+Perintah ini menonaktifkan pemberitahuan log aktivitas yang disebut peringatan1 dalam grup sumber daya Default-ActivityLogsAlerts.
 Perintah ini mengubah properti tag pemberitahuan log aktivitas yang disebut peringatan1 dan menonaktifkannya.
 
 ### Contoh 2: Menonaktifkan pemberitahuan log aktivitas menggunakan objek PSActivityLogAlertResource sebagai input
@@ -61,19 +61,19 @@ PS C:\>$obj = Get-AzActivityLogAlert -ResourceGroup "Default-activityLogAlerts" 
 PS C:\>Disable-AzActivityLogAlert -InputObject $obj
 ```
 
-Perintah ini akan menonaktifkan pemberitahuan log aktivitas yang disebut peringatan1. Untuk fungsi ini, fungsi ini menggunakan objek PSActivityLogAlertResource sebagai argumen input.
+Perintah ini menonaktifkan pemberitahuan log aktivitas yang disebut peringatan1. Untuk ini, objek PSActivityLogAlertResource digunakan sebagai argumen input.
 
 ### Contoh 3: Menonaktifkan ActivityLogAlert menggunakan parameter ResourceId
 ```
 PS C:\>Get-AzResource -ResourceGroupName "myResourceGroup" -Name "myLogAlert" | Disable-AzActivityLogAlert
 ```
 
-Perintah ini menonaktifkan ActivityLogAlert menggunakan parameter ResourceId dari pipa.
+Perintah ini menonaktifkan ActivityLogAlert menggunakan parameter ResourceId dari pipe.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Mengatur properti tag InputObject panggilan untuk mengekstrak nama yang diperlukan, nama grup sumber daya, dan properti tag opsional.
+Mengatur properti tag InputObject dari panggilan untuk mengekstrak nama yang diperlukan, nama grup sumber daya, dan properti tag opsional.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya pemberitahuan akan ada.
+Nama grup sumber daya tempat sumber daya peringatan akan ada.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -198,9 +198,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzActivityLogAlert](./Get-AzActivityLogAlert.md)
 
-[Remove-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
+[Hapus-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
 
-[New-AzActionGroup](./New-AzActionGroup.md)
+[Grup Baru-AzAction](./New-AzActionGroup.md)
 
 [New-AzActivityLogAlertCondition](./New-AzActivityLogAlertCondition.md)
 

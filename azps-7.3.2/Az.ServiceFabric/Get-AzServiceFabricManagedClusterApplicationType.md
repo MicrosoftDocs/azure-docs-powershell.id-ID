@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: f06ed5115e0b56c973ce34c2859a35805ab0eb1a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ffa7eb7b24cec6b6d3dd128a1b963571f5825c0d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554449"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142252964"
 ---
 # Get-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
-Dapatkan Service Fabric jenis aplikasi yang dikelola. Hanya mendukung tipe aplikasi yang disebarkan ARM.
+Dapatkan detail tipe aplikasi terkelola Service Fabric. Hanya mendukung ARM tipe aplikasi yang digunakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ PS C:\> $appTypeName = "testAppType"
 PS C:\> Get-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName
 ```
 
-This example will get the managed application type details with the parameters specified, if it doesn't find the resource it will throw an exception.
+Contoh ini akan mendapatkan detail tipe aplikasi terkelola dengan parameter yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
 
 ### Contoh 2
 ```powershell
@@ -59,7 +62,7 @@ PS C:\> $clusterName = "testCluster"
 PS C:\> Get-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-Contoh ini akan mendapatkan daftar tipe aplikasi terkelola yang ditentukan berdasarkan kluster yang ditentukan.
+Contoh ini akan mendapatkan daftar tipe aplikasi yang dikelola yang ditentukan di bawah kluster yang ditentukan.
 
 ### Contoh 3
 ```powershell
@@ -67,7 +70,7 @@ PS C:\> $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resou
 PS C:\> Get-AzServiceFabricManagedClusterApplicationType -ResourceId $resourceId
 ```
 
-Contoh ini akan mendapatkan detail tipe aplikasi yang dikelola dengan ID Sumber Daya ARM yang ditentukan, jika ID sumber daya tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini akan mendapatkan detail tipe aplikasi yang dikelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
 
 ## PARAMETERS
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

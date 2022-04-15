@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseSecondary.md
-ms.openlocfilehash: 65acad45f1f8355723122c578b9285c3986bf3d5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 62259c627cf1bf0173aabea4023d9db90abf18f8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005974"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142252171"
 ---
 # New-AzSqlDatabaseSecondary
 
 ## SYNOPSIS
 Membuat database sekunder untuk database yang sudah ada dan memulai replikasi data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabasesecondary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,17 +44,17 @@ New-AzSqlDatabaseSecondary [-DatabaseName] <String> [-Tags <Hashtable>] -Partner
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabaseSec cmdlet menggantikan** cmdlet Start-AzSqlDatabaseCopy saat digunakan untuk menyiapkan replikasi geo untuk database. Area ini mengembalikan objek link replikasi geo dari database utama ke sekunder.
+Cmdlet **New-AzSqlDatabaseSecondary** menggantikan cmdlet Start-AzSqlDatabaseCopy ketika digunakan untuk menyiapkan geo-replikasi untuk database. Ini mengembalikan objek tautan geo-replikasi dari database utama ke sekunder.
 
 ## EXAMPLES
 
-### Contoh 1: Tetapkan Lokasi Geo-Replication
+### Contoh 1: Menetapkan Geo-Replication Aktif
 ```powershell
 $database = Get-AzSqlDatabase -DatabaseName $databasename -ResourceGroupName $primaryresourcegroupname -ServerName $primaryservername
 $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername -AllowConnections "All"
 ```
 
-### Contoh 2: Tetapkan nama Geo-Replication dan tentukan nama database mitra berbeda dari nama database sumber
+### Contoh 2: Menetapkan Geo-Replication Aktif dan menentukan nama database mitra agar berbeda dari nama database sumber
 ```powershell
 $database = Get-AzSqlDatabase -DatabaseName $databasename -ResourceGroupName $primaryresourcegroupname -ServerName $primaryservername
 $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername -PartnerDatabaseName $secondarydatabasename -AllowConnections "All"
@@ -60,7 +63,7 @@ $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresou
 ## PARAMETERS
 
 ### -AllowConnections
-Menentukan tujuan baca opsi tambahan Azure SQL Database.
+Menentukan tujuan baca Azure SQL Database sekunder.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak
 - Semua
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Kelebihan penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
+Redundansi penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -HighAvailabilityReplicaCount
-Jumlah replika sekunder baca saja yang terkait dengan database yang koneksi tujuan aplikasinya baca-saja mungkin dirutekan. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
+Jumlah replika sekunder baca-saja yang terkait dengan database yang koneksi niat aplikasi baca-saja mungkin dirutekan. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
 
 ```yaml
 Type: System.Int32
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerResourceGroupName
-Tentukan nama Grup Sumber Daya Azure yang akan ditetapkan cmdlet ini pada database sekunder.
+Menentukan nama Azure Resource Group tempat cmdlet ini menetapkan database sekunder.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Menentukan nama server database Azure SQL bertindak sebagai sekunder.
+Menentukan nama server database Azure SQL untuk bertindak sebagai sekunder.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Grup Sumber Daya Azure yang akan ditetapkan cmdlet ini sebagai database utama.
+Menentukan nama Azure Resource Group tempat cmdlet ini menetapkan database utama.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryComputeGeneration
-Generasi perhitungan dari Azure Sql Database sekunder.
+Pembuatan komputasi sekunder Azure Sql Database.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryElasticPoolName
-Menentukan nama pool elastis di mana untuk meletakkan database sekunder.
+Menentukan nama kumpulan elastis untuk meletakkan database sekunder.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryServiceObjectiveName
-Menentukan nama layanan yang ditetapkan untuk database sekunder.
+Menentukan nama tujuan layanan untuk ditetapkan ke database sekunder.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryType
-Tipe database sekunder jika database sekunder.  Nilai yang valid adalah Geo dan Bernama.
+Tipe database sekunder jika merupakan tipe sekunder.  Nilai yang valid adalah Geo dan Bernama.
 
 ```yaml
 Type: System.String
@@ -290,8 +293,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecondaryvCore
-Angka Vcore dari Database Azure Sql sekunder.
+### -SecondaryVCore
+Nomor Vcore dari sekunder Azure Sql Database.
 
 ```yaml
 Type: System.Int32
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama bidang SQL Server bidang SQL Database.
+Menentukan nama SQL Server SQL Database utama.
 
 ```yaml
 Type: System.String
@@ -320,8 +323,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan pasangan Nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan tautan SQL Database replikasi. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan pasangan nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan tautan replikasi SQL Database. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Database Azure Sql. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
+Redundansi zona untuk dikaitkan dengan Database Azure Sql. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -396,8 +399,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzSqlDatabaseSecbasery](./Remove-AzSqlDatabaseSecondary.md)
+[Remove-AzSqlDatabaseSecondary](./Remove-AzSqlDatabaseSecondary.md)
 
-[Set-AzSqlDatabaseSecbasery](./Set-AzSqlDatabaseSecondary.md)
+[Set-AzSqlDatabaseSecondary](./Set-AzSqlDatabaseSecondary.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
