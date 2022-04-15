@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageDeleteRetentionPolicy.md
 ms.openlocfilehash: 47e30b24f988b997908aaefa32e31cf576dc9e32
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140244259"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947121"
 ---
 # Disable-AzStorageDeleteRetentionPolicy
 
 ## SYNOPSIS
-Menonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob Anda.
+Nonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/disable-azstoragedeleteretentionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragedeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Disable-AzStorageDeleteRetentionPolicy [-PassThru] [-Context <IStorageContext>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Azure Storage Blob.
+Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Blob.
 ## PARAMETERS
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menampilkan DeleteRetentionPolicyProperties
+Tampilkan DeleteRetentionPolicyProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,11 +5,11 @@ ms.assetid: F46041A3-355F-4449-B582-4D2F7314CA05
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmextensionimage
 schema: 2.0.0
 ms.openlocfilehash: ccb48064bb2d6b91801a58ecfa9d229a748889a8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428907"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929995"
 ---
 # Get-AzureRmVMExtensionImage
 
@@ -36,12 +36,12 @@ Cmdlet **Get-AzureRmVMExtensionImage** mendapatkan semua versi untuk ekstensi Az
 PS C:\> Get-AzureRmVMExtensionImage -Location "Central US" -PublisherName "Fabrikam" -Type "FabrikamEndpointProtection"
 ```
 
-Perintah ini akan mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, dan tipe tertentu.
+Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, dan tipe yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi ekstensi yang akan dapatkan cmdlet ini.
+Menentukan versi ekstensi yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -133,11 +133,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

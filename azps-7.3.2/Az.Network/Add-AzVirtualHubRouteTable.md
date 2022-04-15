@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualHubRouteTable.md
-ms.openlocfilehash: 89790792c0f35275e6999c02620fe7b6e1bf060e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 43dbee66d748bc1a8e9dfb7309432ebfc7bd210c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142032617"
 ---
 # Add-AzVirtualHubRouteTable
 
 ## SYNOPSIS
-Membuat sumber daya Tabel Rute Virtual Hub yang merupakan anak dari VirtualHub.
+Membuat sumber daya Tabel Rute Hub Virtual yang merupakan anak dari VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azvirtualhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Add-AzVirtualHubRouteTable -Name <String> -Route <PSVirtualHubRoute[]> -Connecti
 ```
 
 ## DESCRIPTION
-Sumber daya tabel rute hub virtual berisi daftar rute dan daftar koneksi yang dapat dilampirkan dan digunakan untuk merutekan lalu lintas di Virtual Hub.
+Sumber daya tabel rute hub virtual berisi daftar rute dan daftar koneksi yang dapat dilampirkan dan digunakan untuk merutekan lalu lintas di Hub Virtual.
 
 ## EXAMPLES
 
@@ -41,12 +44,12 @@ Connections : {All_Vnets}
 ProvisioningState   :
 ```
 
-Perintah di atas akan membuat sumber daya Tabel Rute Virtual Hub dari rute yang dilewatinya dan objek ini bisa digunakan untuk merutekan lalu lintas di Virtual Hub.
+Perintah di atas akan membuat sumber daya Tabel Rute Hub Virtual dari rute yang dilewati dan objek ini dapat digunakan untuk merutekan lalu lintas di Hub Virtual.
 
 ## PARAMETERS
 
 ### -Connection
-Daftar koneksi yang dilampirkan tabel rute ini.
+Daftar koneksi tempat tabel rute ini dilampirkan.
 
 ```yaml
 Type: String[]
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Route
+### -Rute
 Daftar rute hub virtual.
 
 ```yaml
@@ -106,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

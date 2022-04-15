@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRmVMAdditionalUnattendContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Add-AzureRmVMAdditionalUnattendContent.md
 ms.openlocfilehash: 564f0df5ac5382cdd30b1fcc6d90e713b4bdef91
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426329"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142344"
 ---
 # Add-AzureRmVMAdditionalUnattendContent
 
 ## SYNOPSIS
-Menambahkan informasi ke file jawaban Windows Setup tanpa Windows.
+Menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Add-AzureRmVMAdditionalUnattendContent [-VM] <PSVirtualMachine> [[-Content] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVMAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Tanpa Pengawasan.
-Tentukan informasi berformat .xml yang dikodekan basis 64 tambahan yang ditambahkan cmdlet unattend.xml file.
+**Cmdlet Add-AzureRmVMAdditionalUnattendContent** menambahkan informasi ke file jawaban penyiapan Windows tanpa pengawasan.
+Tentukan informasi .xml berkode dasar tambahan 64 yang ditambahkan cmdlet ini ke file unattend.xml.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan konten ke unattend.xml
+### Contoh 1: Menambahkan konten ke unattend.xml
 ```
 PS C:\> $AvailabilitySet = Get-AzureRmAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 PS C:\> $VirtualMachine = New-AzureRmVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id 
@@ -43,23 +43,23 @@ PS C:\> $AucContent = "<UserAccounts><AdministratorPassword><Value>" + "Password
 PS C:\> $VirtualMachine = Add-AzureRmVMAdditionalUnattendContent -VM $VirtualMachine -Content $AucContent -SettingName "AutoLogon"
 ```
 
-Perintah pertama mendapatkan kumpulan ketersediaan bernamaAblityAblitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
-Perintah ketiga membuat objek kredensial dengan menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam $Credential penerima.
-Perintah akan meminta nama pengguna dan kata sandi Anda.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailablitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah ketiga membuat objek kredensial menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam variabel $Credential.
+Perintah meminta nama pengguna dan kata sandi Anda.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
 Perintah keempat menggunakan cmdlet **Set-AzureRmVMOperatingSystem** untuk mengonfigurasi mesin virtual yang disimpan di $VirtualMachine.
-Perintah kelima menetapkan konten ke $AucContent variabel.
-Konten menyertakan kata sandi.
-Perintah terakhir menambahkan konten yang disimpan di $AucContent ke unattend.xml file.
+Perintah kelima menetapkan konten ke variabel $AucContent.
+Konten tersebut menyertakan kata sandi.
+Perintah akhir menambahkan konten yang disimpan di $AucContent ke file unattend.xml.
 
 ## PARAMETERS
 
-### -Content
-Menentukan konten yang diformat XML berkode 64.
-Cmdlet ini menambahkan konten ke unattend.xml file.
+### -Konten
+Menentukan konten berformat XML dasar 64 yang dikodekan.
+Cmdlet ini menambahkan konten ke file unattend.xml.
 Konten XML harus kurang dari 4 KB dan harus menyertakan elemen akar untuk pengaturan atau fitur yang disisipkan cmdlet ini.
 
 ```yaml
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingName
-Menentukan nama pengaturan untuk menerapkan konten.
+Menentukan nama pengaturan tempat konten diterapkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - FirstLogonCommands
 - AutoLogon
@@ -109,9 +109,9 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzureRmVM.](./Get-AzureRmVM.md)
-Buat objek mesin virtual menggunakan cmdlet [New-AzureRmVMConfig.](./New-AzureRmVMConfig.md)
+Menentukan objek mesin virtual yang diubah cmdlet ini.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzureRmVM](./Get-AzureRmVM.md) .
+Buat objek mesin virtual menggunakan cmdlet [New-AzureRmVMConfig](./New-AzureRmVMConfig.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.SettingNames, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.SettingNames, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 
@@ -148,4 +148,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmVMOperatingSystem](./Set-AzureRmVMOperatingSystem.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)

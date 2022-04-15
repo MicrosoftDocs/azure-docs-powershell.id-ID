@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstancePool.md
-ms.openlocfilehash: 0b32cfe0cbc16be0cea82c524d06e05538f06638
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: be019c304423d3a75d578bccaa98b188179c3695
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554169"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142026191"
 ---
 # New-AzSqlInstancePool
 
 ## SYNOPSIS
-Membuat pool Azure SQL Instance.
+Membuat kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlinstancepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzSqlInstancePool [-ResourceGroupName] <String> [-Name] <String> -Location <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstancePool** membuat cmdlet Azure SQL Instance.
+Cmdlet **New-AzSqlInstancePool** membuat kumpulan Instans Azure SQL.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ Location          : canadacentral
 LicenseType       : LicenseIncluded
 ```
 
-Perintah ini akan membuat pool Azure SQL Instance baru.
+Perintah ini membuat kumpulan Instans Azure SQL baru.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk instance pool.
+Pembuatan komputasi untuk kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -96,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Edisi untuk instance pool.
+### -Edisi
+Edisi untuk kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -112,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan Tipe Lisensi mana yang digunakan.
-Kemungkinan nilai adalah BasePrice (dengan diskon AHB) dan LicenseIncluded (tanpa diskon AHB).
+Menentukan Tipe Lisensi mana yang akan digunakan.
+Nilai yang memungkinkan adalah BasePrice (dengan diskon AHB) dan LicenseIncluded (tanpa diskon AHB).
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk membuat instance pool.
+Lokasi untuk membuat kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instance pool.
+Nama kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Id subnet untuk digunakan untuk pembuatan pool contoh.
+Id subnet yang digunakan untuk pembuatan kumpulan contoh.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan contoh
+Tag yang akan dikaitkan dengan instans
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Menentukan seberapa banyak VCore dikaitkan dengan contoh.
+Menentukan berapa banyak VCore untuk dikaitkan dengan instance.
 
 ```yaml
 Type: System.Int32
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,11 +252,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Update-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Update-AzPeering.md
 ms.openlocfilehash: bcf54135ebf4179d636b3037c43cea9af439f3dd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068877"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141950415"
 ---
 # Update-AzPeering
 
 ## SYNOPSIS
-Mengatur Peering. Gunakan Perintah ini dalam hubungannya dengan `Set-AzDirectPeeringConnectionObject` atau `Set-AzExchangePeeringConnectionObject`.
+Mengatur Peering. Gunakan Perintah ini bersama dengan `Set-AzDirectPeeringConnectionObject` atau `Set-AzExchangePeeringConnectionObject`.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/update-azpeering) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/update-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,16 +63,16 @@ Mengatur Objek PSPeering
 
 ## EXAMPLES
 
-### Perbarui tombol Autentikasi Md5
+### Perbarui Kunci Autentikasi Md5
 ```powershell
 PS C:> $peering = Get-AzPeering -ResourceGroupName rg1 -PeerName "ContosoPeering"  
 PS C:> $peering.Connections[0] = $peering.Connections[0] | Set-AzPeeringDirectConnectionObject -MD5AuthenticationKey $hash
 PS C:> $peering | Update-AzPeering
 ```
 
-Mengatur Tombol Autentikasi Md5
+Mengatur Kunci Autentikasi Md5
 
-### Perbarui UseForPeeringService
+### Memperbarui UseForPeeringService
 ```powershell
 PS C:> Update-AzPeering -ResourceGroupName rg1 -Name ContosoPeering -UseForPeeringService $true
 
@@ -92,7 +92,7 @@ Tags                 : {[tag2, value2], [tag1, value1]}
 
 Mengatur Bendera Penggunaan untuk Layanan Peering
 
-### Perbarui Alamat IPv4 untuk Exchange Peering
+### Memperbarui Alamat IPv4 untuk Exchange Peering
 ```powershell
 PS C:> $peering = Get-AzPeering -ResourceGroupName rg1  -PeerName "ContosoExchangePeering" 
 PS C:> $peering.Connections[0] = $peering.Connections[0] | Set-AzPeeringExchangeConnectionObject -PeerSessionIPv4Address $ipv4Address
@@ -111,7 +111,7 @@ Type              : Microsoft.Peering/peerings
 Tags              : {}
 ```
 
-Mengatur Alamat Ipv4 untuk suatu Exchange Peering menggunakan ResourceId
+Mengatur Alamat Ipv4 untuk Peering Exchange menggunakan ResourceId
 
 ## PARAMETERS
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectConnection
-Membuat koneksi Langsung yang baru menggunakan New-AzDirectPeeringConnectionObject dan  pipet ke perintah ini.
+Buat koneksi Langsung baru menggunakan New-AzDirectPeeringConnectionObject dan pipa ke perintah ini.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSDirectConnection[]
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExchangeConnection
-Buat koneksi Exchange baru menggunakan New-AzExchangePeeringConnectionObject dan  pipet ke perintah ini.
+Buat koneksi Exchange baru menggunakan New-AzExchangePeeringConnectionObject dan pipa ke perintah ini.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSExchangeConnection[]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

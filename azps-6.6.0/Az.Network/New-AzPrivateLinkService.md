@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkService.md
 ms.openlocfilehash: 972723c4f1e74ef823a3da943e2e8d55203b79fe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330495"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141952971"
 ---
 # New-AzPrivateLinkService
 
 ## SYNOPSIS
-Membuat layanan tautan pribadi
+Membuat layanan tautan privat
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azprivatelinkservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivatelinkservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Cmdlet **New-AzPrivateLinkService** membuat layanan tautan pribadi
 
 ### Contoh 1
 
-Contoh berikut membuat layanan tautan pribadi.
+Contoh berikut membuat layanan tautan privat.
 
 ```powershell
 $vnet = Get-AzVirtualNetwork -ResourceName 'myvnet' -ResourceGroupName 'myresourcegroup'
@@ -53,7 +53,7 @@ New-AzPrivateLinkService -Name 'mypls' -ResourceGroupName myresourcegroup -Locat
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoApproval
-Langganan persetujuan otomatis dari layanan tautan pribadi
+Langganan persetujuan otomatis layanan tautan privat
 
 ```yaml
 Type: System.String[]
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Zona tepi layanan tautan pribadi
+Zona tepi layanan tautan privat
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableProxyProtocol
-Mengaktifkan protokol proksi untuk layanan tautan privat.
+Aktifkan protokol proksi untuk layanan tautan privat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,8 +127,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerFrontendIpConfiguration
-The front end ip configurations
+Konfigurasi ip ujung depan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration[]
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-lokasi.
+Lokasi.
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Visibilitas
-Langganan visibilitas layanan tautan pribadi
+Langganan visibilitas layanan tautan privat
 
 ```yaml
 Type: System.String[]
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

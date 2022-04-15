@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzDeploymentOperation.md
 ms.openlocfilehash: 1eafc934777809d7fd4041496b004ea682e97910
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413830"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142130635"
 ---
 # Get-AzDeploymentOperation
 
 ## SYNOPSIS
-Operasi Dapatkan penggunaan
+Dapatkan operasi penyebaran
 
 ## SYNTAX
 
@@ -32,34 +32,34 @@ Get-AzDeploymentOperation -DeploymentObject <PSDeployment> [-ApiVersion <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentOperation** mencantumkan semua operasi yang menjadi bagian dari penyebaran untuk membantu Anda mengidentifikasi dan memberi informasi selengkapnya tentang operasi persis yang gagal untuk penggunaan tertentu.
-Konten juga dapat memperlihatkan respons dan permintaan konten untuk setiap operasi penyebaran.
-Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal.
+Cmdlet **Get-AzDeploymentOperation** mencantumkan semua operasi yang merupakan bagian dari penyebaran untuk membantu Anda mengidentifikasi dan memberikan informasi selengkapnya tentang operasi yang persis gagal untuk penyebaran tertentu.
+Ini juga dapat memperlihatkan respons dan konten permintaan untuk setiap operasi penyebaran.
+Ini adalah informasi yang sama yang disediakan dalam detail penyebaran di portal.
 
 Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan saat mengirimkan penyebaran melalui **New-AzDeployment**.
-Ini bisa berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **ListKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
-Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzDeployment Dan Debug penyebaran templat ARM
+Ini dapat berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **listKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
+Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat penyebaran templat New-AzDeployment dan Debugging ARM
 
 ## EXAMPLES
 
-### Mendapatkan operasi penyebaran dengan nama penyebaran
+### Dapatkan operasi penyebaran dengan nama penyebaran
 ```
 PS C:\>Get-AzDeploymentOperation -DeploymentName test
 ```
 
 Mendapatkan operasi penyebaran dengan nama "uji" pada lingkup langganan saat ini.
 
-### Mendapatkan penyebaran dan mendapatkan operasi penyebarannya
+### Dapatkan penyebaran dan dapatkan operasi penyebarannya
 ```
 PS C:\>Get-AzDeployment -Name "test" | Get-AzDeploymentOperation
 ```
 
-Perintah ini mendapatkan "uji" penyebaran di lingkup langganan saat ini dan mendapatkan operasi penyebarannya.
+Perintah ini mendapatkan "uji" penyebaran pada lingkup langganan saat ini dan mendapatkan operasi penyebarannya.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -150,12 +150,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

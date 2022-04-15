@@ -4,16 +4,16 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermnetworkwatcher
 schema: 2.0.0
 ms.openlocfilehash: de20fd44b506d2717df1a4f22950c0786ede2288
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423120"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141928875"
 ---
 # Get-AzureRmNetworkWatcherConnectionMonitorReport
 
 ## SYNOPSIS
-Membuat kueri snapshot dari status koneksi terbaru.
+Membuat kueri snapshot status koneksi terbaru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -50,11 +50,11 @@ Get-AzureRmNetworkWatcherConnectionMonitorReport -InputObject <PSConnectionMonit
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmNetworkWatcherConnectionMonitorReport mengembalikan laporan di status koneksi terbaru.
+Cmdlet Get-AzureRmNetworkWatcherConnectionMonitorReport mengembalikan laporan pada status koneksi terbaru.
 
 ## EXAMPLES
 
-### --------------- Contoh 1: Mendapatkan snapshot koneksi terbaru dari monitor koneksi berdasarkan nama di lokasi yang ---------------
+### --------------- Contoh 1: Dapatkan snapshot koneksi terbaru dari monitor koneksi menurut nama di lokasi yang ditentukan ---------------
 ```
 PS C:\> Get-AzureRmNetworkWatcherConnectionMonitorReport -Location centraluseuap -Name cm
 
@@ -218,12 +218,12 @@ States : [
 
 ```
 
-Dalam contoh ini, kami meminta status koneksi terbaru dari monitor koneksi yang ditentukan.
+Dalam contoh ini, kami membuat kueri status koneksi terbaru dari monitor koneksi yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya monitor koneksi.
+ID sumber daya monitor koneksi.
 
 ```yaml
 Type: String
@@ -369,24 +369,24 @@ System.String Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorResult
 
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher, connection monitor
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS
-[New-AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md) 
- [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md) 
- [Remove-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
+[AzureRmNetworkWatcher](./New-AzureRmNetworkWatcher.md)
+ baru [Get-AzureRmNetworkWatcher](./Get-AzureRmNetworkWatcher.md)
+ [Hapus-AzureRmNetworkWatcher](./Remove-AzureRmNetworkWatcher.md)
 
-[Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md) 
- [Get-AzureRmNetworkWatcherSecurityGroupView](./Get-AzureRmNetworkWatcherSecurityGroupView.md) 
- [Get-AzureRmNetworkWatcherTopology](./Get-AzureRmNetworkWatcherTopology.md) 
+[Get-AzureRmNetworkWatcherNextHop](./Get-AzureRmNetworkWatcherNextHop.md)
+ [Get-AzureRmNetworkWatcherSecurityGroupView](./Get-AzureRmNetworkWatcherSecurityGroupView.md)
+ [Get-AzureRmNetworkWatcherTopology](./Get-AzureRmNetworkWatcherTopology.md)
  [Get-AzureRmNetworkWatcherTroubleshootingResult](./Get-AzureRmNetworkWatcherTroubleshootingResult.md)
 
-[New-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md) 
- [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md) 
- [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md) 
- [Remove-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md) 
+[Baru-AzureRmNetworkWatcherPacketCapture](./New-AzureRmNetworkWatcherPacketCapture.md)
+ [New-AzureRmPacketCaptureFilterConfig](./New-AzureRmPacketCaptureFilterConfig.md)
+ [Get-AzureRmNetworkWatcherPacketCapture](./Get-AzureRmNetworkWatcherPacketCapture.md)
+ [Hapus-AzureRmNetworkWatcherPacketCapture](./Remove-AzureRmNetworkWatcherPacketCapture.md)
  [Stop-AzureRmNetworkWatcherPacketCapture](./Stop-AzureRmNetworkWatcherPacketCapture.md)
 
-[New-AzureRmNetworkWatcherConnectionMonitor](./New-AzureRmNetworkWatcherConnectionMonitor.md) 
+[New-AzureRmNetworkWatcherConnectionMonitor](./New-AzureRmNetworkWatcherConnectionMonitor.md)
  [Get-AzureRmNetworkWatcherConnectionMonitor](./Get-AzureRmNetworkWatcherConnectionMonitor.md)
 

@@ -1,56 +1,63 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
-Module Name: Az.Sql
-online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsqlserverdnsalias
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+online version: https://docs.microsoft.com/powershell/module/az.network/remove-azvirtualrouterpeer
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerDnsAlias.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerDnsAlias.md
-ms.openlocfilehash: 2ed8363163050c7c60a623d74a54a2396c6e0c62
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualRouterPeer.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualRouterPeer.md
+ms.openlocfilehash: 5e67cb1f0de699debaabe2f546d0b63eb77baf94
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142026119"
+ms.locfileid: "142167319"
 ---
-# Remove-AzSqlServerDnsAlias
+# Remove-AzVirtualRouterPeer
 
 ## SYNOPSIS
-Menghapus Alias DNS Server Azure SQL.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlserverdnsalias) untuk informasi terbaru.
+Menghapus Rekan dari Azure VirtualRouter
 
 ## SYNTAX
 
-### Menghapus Alias Dns Server dari parameter input cmdlet
+### VirtualRouterPeerNameParameterSet (Default)
 ```
-Remove-AzSqlServerDnsAlias -Name <String> -ServerName <String> [-ResourceGroupName] <String> [-Force] [-AsJob]
+Remove-AzVirtualRouterPeer -ResourceGroupName <String> -PeerName <String> -VirtualRouterName <String> [-Force]
+ [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### VirtualRouterPeerObjectParameterSet
+```
+Remove-AzVirtualRouterPeer -InputObject <PSVirtualRouterPeer> [-Force] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Menghapus Alias Dns Server dari definisi instans AzureSqlServerDnsAliasModel
+### VirtualRouterPeerResourceIdParameterSet
 ```
-Remove-AzSqlServerDnsAlias -InputObject <AzureSqlServerDnsAliasModel> [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Menghapus Alias Dns Server dari id sumber daya Azure
-```
-Remove-AzSqlServerDnsAlias -ResourceId <String> [-Force] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+Remove-AzVirtualRouterPeer -ResourceId <String> [-Force] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Perintah ini menghapus Alias DNS Server Azure SQL dari server yang membiarkan server tetap utuh.
+Cmdlet **Remove-AzVirtualRouterPeer** menghapus Peer VirtualRouter dari Azure VirtualRouter
 
 ## EXAMPLES
 
 ### Contoh 1
-```
-PS C:\> Remove-AzSqlServerDnsAlias -DnsAliasName aliasName -ServerName serverName -ResourceGroupName rg
+```powershell
+Remove-AzVirtualRouterPeer -PeerName csr -VirtualRouterName virtualRouter -ResourceGroupName virtualRouterRG
 ```
 
-Menghapus Alias DNS Server Azure SQL dengan nama aliasName dari server dengan nama serverName
+### Contoh 2
+```powershell
+$virtualRouterPeerId = '/subscriptions/8c992d64-fce9-426d-b278-85642dfeab03/resourceGroups/virtualRouterRG/providers/Microsoft.Network/virtualRouters/virtualRouter/peerings/csr'
+Remove-AzVirtualRouterPeer -ResourceId $virtualRouterPeerId
+```
+
+### Contoh 3
+```powershell
+$virtualRouterPeer = Get-AzVirtualRouterPeer -ResourceGroupName virtualRouter -RouterName virtualRouter -PeerName csr
+Remove-AzVirtualRouterPeer -InputObject $virtualRouterPeer
+```
 
 ## PARAMETERS
 
@@ -70,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Paksa
-Lewati pesan konfirmasi untuk melakukan tindakan
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Alias Dns Server untuk dihapus
+Objek input rekan perute virtual.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
-Parameter Sets: Remove a Server Dns Alias from AzureSqlServerDnsAliasModel instance definition
+Type: Microsoft.Azure.Commands.Network.Models.PSVirtualRouterPeer
+Parameter Sets: VirtualRouterPeerObjectParameterSet
 Aliases:
 
 Required: True
@@ -114,42 +121,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Alias Dns Azure Sql Server
+### -PeerName
+Nama router virtual Peer.
 
 ```yaml
 Type: System.String
-Parameter Sets: Remove a Server Dns Alias from cmdlet input parameters
-Aliases: DnsAliasName
+Parameter Sets: VirtualRouterPeerNameParameterSet
+Aliases: ResourceName
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya.
+Nama grup sumber daya perute/peer virtual.
 
 ```yaml
 Type: System.String
-Parameter Sets: Remove a Server Dns Alias from cmdlet input parameters
-Aliases:
-
-Required: True
-Position: 0
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ResourceId
-Id sumber daya objek Alias Dns Server untuk dihapus
-
-```yaml
-Type: System.String
-Parameter Sets: Remove a Server Dns Alias from an Azure resource id
+Parameter Sets: VirtualRouterPeerNameParameterSet
 Aliases:
 
 Required: True
@@ -159,18 +151,33 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ServerName
-Nama Azure Sql Server.
+### -ResourceId
+Id sumber daya rekan perute virtual.
 
 ```yaml
 Type: System.String
-Parameter Sets: Remove a Server Dns Alias from cmdlet input parameters
+Parameter Sets: VirtualRouterPeerResourceIdParameterSet
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -VirtualRouterName
+Router virtual tempat rekan ada.
+
+```yaml
+Type: System.String
+Parameter Sets: VirtualRouterPeerNameParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -210,13 +217,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
-
 ### System.String
+
+### Microsoft.Azure.Commands.Network.Models.PSVirtualRouterPeer
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
+### Microsoft.Azure.Commands.Network.Models.PSVirtualRouter
 
 ## CATATAN
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssRunCommand.md
-ms.openlocfilehash: 59724c8f0dfa4cd0e36258f987397ae11b0398c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 020899c19ed375bcf4c41f3fbc74537432528efd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188728"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142036667"
 ---
 # Add-AzVmssRunCommand
 
 ## SYNOPSIS
 Menambahkan Perintah Jalankan ke instans VMSS
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzVmssRunCommand [-CommandId <String>] -Name <String> [-ScriptPath <String>]
 ```
 
 ## DESCRIPTION
-Menambahkan Perintah Jalankan ke Semua VmSS Instances
+Menambahkan Perintah Jalankan ke Semua Instans VMSS
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ Menambahkan Perintah Jalankan ke Semua VmSS Instances
 Add-AzVmssRunCommand -ResourceGroupName $rgname -VMScaleSetName $vmssname -Location eastus -Name myruncommand -Script "Write-Host Hello World" -TimeOutInSeconds 3600 -RunAsUser "admin01" 
 ```
 
-Menambahkan 'myruncommand' pada VMSS
+Menambahkan 'myruncommand' ke VMSS
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorBlobUri
-Menentukan blob penyimpanan Azure tempat aliran kesalahan skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat streaming kesalahan skrip akan diunggah.
 
 ```yaml
 Type: String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobUri
-Menentukan blob penyimpanan Azure tempat aliran output skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat streaming output skrip akan diunggah.
 
 ```yaml
 Type: String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsUser
-Menentukan akun pengguna pada VM saat menjalankan perintah jalankan.
+Menentukan akun pengguna pada VM ketika menjalankan perintah jalankan.
 
 ```yaml
 Type: String
@@ -308,7 +311,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetvm
+### -VirtualMachineScaleSetVM
 The VirtualMachineScaleSetVM
 
 ```yaml
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -370,13 +373,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachinescaleSetVM
+### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
 
 ## OUTPUTS
 

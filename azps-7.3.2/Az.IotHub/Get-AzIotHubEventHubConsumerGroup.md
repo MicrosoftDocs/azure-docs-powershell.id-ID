@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: f90f6f38ec028a9866a010210c8a5ebc7fa2b09b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2afb7a2686da4fb288ec1910c30e8a4f0f905606
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394035"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142033679"
 ---
 # Get-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
-Mendapatkan semua grup konsumen eventhub.
+Mendapatkan semua grup pelanggan eventhub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,21 +28,21 @@ Get-AzIotHubEventHubConsumerGroup [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Mendapatkan semua grup konsumen eventhub untuk EventHubs lain yang digunakan oleh IotHub.
+Mendapatkan semua grup pelanggan eventhub untuk Berbagai EventHubs yang digunakan oleh IotHub.
 
 ## EXAMPLES
 
-### Contoh 1 Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri
+### Contoh 1 Mendapatkan semua grup pelanggan genap untuk eventhub telemetri
 ```
 PS C:\> Get-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Mendapatkan semua grup konsumen eventhub untuk eventhub telemetri untuk iothub yang bernama myiothub
+Mendapatkan semua grup pelanggan eventhub untuk eventhub telemetri untuk iothub bernama myiothub
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

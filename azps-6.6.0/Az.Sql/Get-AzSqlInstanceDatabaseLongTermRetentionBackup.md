@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseLongTermRetentionBackup.md
 ms.openlocfilehash: 32e9dde15426aeb43812ccddde43cdb8a4de0aae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097785"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141948291"
 ---
 # Get-AzSqlInstanceDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
-Mendapatkan pencadangan penyimpanan jangka panjang.
+Mendapatkan cadangan penyimpanan jangka panjang.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabaselongtermretentionbackup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabaselongtermretentionbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,14 +29,14 @@ Get-AzSqlInstanceDatabaseLongTermRetentionBackup [-Location] <String> [-Resource
  [-Confirm] [<CommonParameters>]
 ```
 
-### InstanceName
+### NamaPengguna Instans
 ```
 Get-AzSqlInstanceDatabaseLongTermRetentionBackup [-Location] <String> [-InstanceName] <String>
  [-ResourceGroupName <String>] [-OnlyLatestPerDatabase] [-DatabaseState <String>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DatabaseName
+### NamaDataData
 ```
 Get-AzSqlInstanceDatabaseLongTermRetentionBackup [-Location] <String> [-InstanceName] <String>
  [-DatabaseName] <String> [-ResourceGroupName <String>] [-OnlyLatestPerDatabase]
@@ -112,7 +112,7 @@ Accept wildcard characters: True
 ```
 
 ### -DatabaseName
-Nama Database Terkelola tempat cadangan berada.
+Nama Database Terkelola tempat cadangan berada di bawah.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -DatabaseState
 Status database yang cadangannya ingin Anda temukan, Hidup, Dihapus, atau Semua.
-Default untuk Semua
+Default ke Semua
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database yang akan mendapatkan cadangan.
+Objek database untuk mendapatkan cadangan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans Terkelola tempat cadangan berada.
+Nama Instans Terkelola tempat cadangan berada di bawah.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Instans Terkelola sumber cadangan.
+Lokasi Sumber Instans Terkelola cadangan.
 
 ```yaml
 Type: System.String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -303,4 +303,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy](./Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

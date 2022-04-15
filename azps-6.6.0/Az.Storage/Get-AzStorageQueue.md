@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageQueue.md
 ms.openlocfilehash: 8012df8a4b2252fc5db6defcfc8d769e5a785298
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966281"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141946977"
 ---
 # Get-AzStorageQueue
 
@@ -19,7 +19,7 @@ ms.locfileid: "139966281"
 Mencantumkan antrean penyimpanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragequeue) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragequeue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,37 +29,37 @@ Get-AzStorageQueue [[-Name] <String>] [-Context <IStorageContext>] [-DefaultProf
  [<CommonParameters>]
 ```
 
-### QueuePrefix
+### AntreanPrefix
 ```
 Get-AzStorageQueue -Prefix <String> [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageQueue** mencantumkan antrean penyimpanan yang terkait dengan Azure Storage Anda.
+Cmdlet **Get-AzStorageQueue** mencantumkan antrean penyimpanan yang terkait dengan akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1:  List all Azure Storage queues
+### Contoh 1: Mencantumkan semua antrean Azure Storage
 ```
 PS C:\>Get-AzStorageQueue
 ```
 
 Perintah ini mendapatkan daftar semua antrean penyimpanan untuk akun Storage saat ini.
 
-### Contoh 2: Daftar Azure Storage antre menggunakan karakter wildcard
+### Contoh 2: Daftar antrean Azure Storage menggunakan karakter wildcard
 ```
 PS C:\>Get-AzStorageQueue -Name queue*
 ```
 
 Perintah ini menggunakan karakter wildcard untuk mendapatkan daftar antrean penyimpanan yang namanya dimulai dengan antrean.
 
-### Contoh 3: Daftar Azure Storage antre menggunakan prefiks nama antrean
+### Contoh 3: Daftar antrean Azure Storage menggunakan prefiks nama antrean
 ```
 PS C:\>Get-AzStorageQueue -Prefix "queue"
 ```
 
-Contoh ini menggunakan parameter *Prefix* untuk mendapatkan daftar antrean penyimpanan yang namanya dimulai dengan antrean.
+Contoh ini menggunakan parameter *Prefiks* untuk mendapatkan daftar antrean penyimpanan yang namanya dimulai dengan antrean.
 
 ## PARAMETERS
 
@@ -111,7 +111,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Menentukan prefiks yang digunakan dalam nama antrean yang ingin Anda dapatkan.
 
 ```yaml
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,14 +137,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageQueue
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageQueue
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[New-AzStorageQueue](./New-AzStorageQueue.md)
+[Antrean AzStorage Baru](./New-AzStorageQueue.md)
 
-[Remove-AzStorageQueue](./Remove-AzStorageQueue.md)
+[Antrean Remove-AzStorage](./Remove-AzStorageQueue.md)
 
 

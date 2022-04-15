@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceTransparentDataEncryptionProtector.md
 ms.openlocfilehash: d494c0eef5dee8537866ae870664058d77911f2d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140326535"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142075585"
 ---
 # Set-AzSqlInstanceTransparentDataEncryptionProtector
 
 ## SYNOPSIS
-Mengatur enkripsi data transparan (TDE) untuk instans SQL terkelola.
+Mengatur pelindung Enkripsi Data Transparan (TDE, Transparent Data Encryption) untuk instans yang dikelola SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlinstancetransparentdataencryptionprotector) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancetransparentdataencryptionprotector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Set-AzSqlInstanceTransparentDataEncryptionProtector [-Type] <EncryptionProtector
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlInstanceTransparentDataEncryptionProtector menetapkan file TDE untuk instans SQL terkelola. Mengubah tipe tripoin TDE akan memutar tripoin tersebut.
+Cmdlet Set-AzSqlInstanceTransparentDataEncryptionProtector mengatur pelindung TDE untuk instans yang dikelola SQL. Mengubah tipe pelindung TDE akan memutar pelindung.
 
 ## EXAMPLES
 
-### Contoh 1: Atur tipe data Transparan Enkripsi (TDE) ke ServiceManaged
+### Contoh 1: Mengatur tipe pelindung Enkripsi Data Transparan (TDE) ke ServiceManaged
 ```powershell
 PS C:\> Set-AzSqlInstanceTransparentDataEncryptionProtector -ResourceGroupName 'ContosoResourceGroup' -InstanceName 'ContosoManagedInstanceName' -Type ServiceManaged
 
@@ -59,9 +59,9 @@ ManagedInstanceKeyVaultKeyName : ServiceManaged
 KeyId                          :
 ```
 
-Perintah ini memperbarui tipe instans terkelola TDE luar biasa menjadi Service Managed.
+Perintah ini memperbarui tipe pelindung TDE instans terkelola ke Service Managed.
 
-### Contoh 2: Mengatur tipe enkripsi data transparan ke Azure Key Vault
+### Contoh 2: Atur tipe pelindung Enkripsi Data Transparan ke Azure Key Vault
 ```powershell
 PS C:\> Set-AzSqlInstanceTransparentDataEncryptionProtector -ResourceGroupName 'ContosoResourceGroup' -InstanceName 'ContosoManagedInstanceName' -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
 
@@ -72,9 +72,9 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan instans Terkelola Key Vault Kunci dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pelindung TDE.
 
-### Contoh 3: Mengatur tipe enkripsi data transparan ke Azure Key Vault menggunakan objek instans terkelola
+### Contoh 3: Mengatur tipe pelindung Enkripsi Data Transparan ke Azure Key Vault menggunakan objek instans terkelola
 ```powershell
 PS C:\> $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 PS C:\> Set-AzSqlInstanceTransparentDataEncryptionProtector -Instance $managedInstance -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -86,9 +86,9 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan instans Terkelola Key Vault Kunci dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pelindung TDE.
 
-### Contoh 4: Mengatur tipe enkripsi data transparan ke Azure Key Vault menggunakan id sumber daya
+### Contoh 4: Mengatur tipe pelindung Enkripsi Data Transparan ke Azure Key Vault menggunakan id sumber daya
 ```powershell
 PS C:\> $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 PS C:\> Set-AzSqlInstanceTransparentDataEncryptionProtector -InstanceResourceId $managedInstance.ResourceId -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -100,9 +100,9 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan instans Terkelola Key Vault Kunci dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pelindung TDE.
 
-### Contoh 5: Mengatur tipe enkripsi data transparan ke Azure Key Vault menggunakan pemipaan
+### Contoh 5: Mengatur tipe pelindung Enkripsi Data Transparan ke Azure Key Vault menggunakan perpipaan
 ```powershell
 PS C:\> $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 PS C:\> $managedInstance | Set-AzSqlInstanceTransparentDataEncryptionProtector -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -114,7 +114,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan instans Terkelola Key Vault Kunci dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pelindung TDE.
 
 ## PARAMETERS
 
@@ -133,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Instance
-Objek input contoh
+Objek input instans
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama contoh
+Nama instans
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya contoh
+Id sumber daya instans
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-KeyId Azure Key Vault.
+Azure Key Vault KeyId.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe enkripsi data transparan Database Azure Sql yang luar biasa.
+Tipe Pelindung Enkripsi Data Transparan Database Azure Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.EncryptionProtectorType
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoRotationEnabled
-Status keikutsertaan rotasi otomatis utama.
+Status opt-in rotasi otomatis utama.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

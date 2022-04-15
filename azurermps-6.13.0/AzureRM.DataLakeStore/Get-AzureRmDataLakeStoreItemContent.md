@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreItemContent.md
 ms.openlocfilehash: 7a757ca4b310176a71a7b2fe7e5c301137998ff9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427061"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142142204"
 ---
 # Get-AzureRmDataLakeStoreItemContent
 
@@ -53,19 +53,19 @@ Cmdlet **Get-AzureRmDataLakeStoreItemContent** mendapatkan konten file di Data L
 PS C:\>Get-AzureRmDataLakeStoreItemContent -AccountName "ContosoADL" -Path "/MyFile.txt"
 ```
 
-Perintah ini berisi konten file yang MyFile.txt akun ContosoADL.
+Perintah ini mendapatkan konten file MyFile.txt di akun ContosoADL.
 
 ### Contoh 2: Mendapatkan dua baris pertama file
 ```
 PS C:\>Get-AzureRmDataLakeStoreItemContent -AccountName "ContosoADL" -Path "/MyFile.txt" -Head 2
 ```
 
-Perintah ini mendapatkan dua baris pertama yang dipisahkan baris baru dalam file MyFile.txt akun ContosoADL.
+Perintah ini mendapatkan dua baris baru pertama yang dipisahkan dalam file MyFile.txt di akun ContosoADL.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -94,20 +94,20 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Encoding
+### -Pengodean
 Menentukan pengodean untuk item yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak Diketahui
+- Diketahui
 - String
 - Unicode
 - Byte
-- BigEnndiUnicode
+- BigEndianUnicode
 - UTF8
 - UTF7
 - Ascii
 - Default
 - Oem
-- BigEnlupaUTF32
+- BigEndianUTF32
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.FileSystemCmdletProviderEncoding
@@ -122,8 +122,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,8 +137,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Head
-Jumlah baris (dibatasi baris baru) dari awal file untuk ditinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data tersebut yang akan dikembalikan.
+### -Kepala
+Jumlah baris (baris baru dibatasi) dari awal file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Length
-Menentukan panjang, dalam byte, dari konten yang akan dapatkan.
+Menentukan panjang, dalam byte, konten yang akan didapatkan.
 
 ```yaml
 Type: System.Int64
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Offset
-Menentukan jumlah byte untuk melompati dalam file sebelum mendapatkan konten.
+Menentukan jumlah byte yang akan dilewati dalam file sebelum mendapatkan konten.
 
 ```yaml
 Type: System.Int64
@@ -182,8 +182,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari sebuah file, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake dari sebuah file, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tail
-Jumlah baris (dibatasi baris baru) dari akhir file untuk ditinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data tersebut yang akan dikembalikan.
+Jumlah baris (baris baru dibatasi) dari akhir file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -263,10 +263,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Byte
-Representasi streaming byte dari konten file yang diambil.
+Representasi byte stream dari konten file yang diambil.
 
 ### System.String
-Representasi string (dalam pengodean tertentu) dari konten file yang diambil.
+Representasi string (dalam pengodean yang ditentukan) dari konten file yang diambil.
 
 ## CATATAN
 

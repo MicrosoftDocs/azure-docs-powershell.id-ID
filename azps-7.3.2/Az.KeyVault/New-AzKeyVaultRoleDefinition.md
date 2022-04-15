@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: 9edb8d250d1bd2c48790127638da2795ae77ebd8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 70b484affbcf22a8be2ed6a48f4ffd2971359d9e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402382"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142033409"
 ---
 # New-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
-Membuat definisi peran kustom di HSM.
+Membuat definisi peran kustom pada HSM.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ New-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] [-InputFile] 
 ```
 
 ## DESCRIPTION
-Cmdlet `New-AzKeyVaultRoleDefinition` membuat peran kustom dalam Azure Role-Based Access Control dari HSM yang dikelola Azure KeyVault.
+`New-AzKeyVaultRoleDefinition` Cmdlet membuat peran kustom di Azure Role-Based Access Control dari HSM yang dikelola Azure KeyVault.
 
-Sediakan file definisi peran JSON atau objek `PSKeyVaultRoleDefinition` sebagai input.
-Pertama, gunakan perintah `Get-AzKeyVaultRoleDefinition` untuk menghasilkan objek definisi peran garis dasar.
-Lalu, modifikasi propertinya sebagaimana diperlukan.
+Menyediakan file definisi peran JSON atau `PSKeyVaultRoleDefinition` objek sebagai input.
+Pertama, gunakan `Get-AzKeyVaultRoleDefinition` perintah untuk menghasilkan objek definisi peran garis dasar.
+Lalu, ubah propertinya sesuai kebutuhan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
 
 ## EXAMPLES
@@ -51,7 +54,7 @@ $role.Permissions[0].DataActions = @("Microsoft.KeyVault/managedHsm/roleAssignme
 New-AzKeyVaultRoleDefinition -HsmName myHsm -Role $role
 ```
 
-Contoh ini menggunakan peran "Pengguna Crypto HSM Terkelola" yang telah ditentukan sebelumnya sebagai templat untuk membuat peran kustom.
+Contoh ini menggunakan peran "Pengguna Kripto HSM Terkelola" yang sudah ditentukan sebelumnya sebagai templat untuk membuat peran kustom.
 
 ### Contoh 2
 ```powershell
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Nama file berisi definisi peran tunggal.
+Nama file yang berisi definisi peran tunggal.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Lingkup di mana penetapan peran atau definisi berlaku, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
+Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
 '/' digunakan ketika dihilangkan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

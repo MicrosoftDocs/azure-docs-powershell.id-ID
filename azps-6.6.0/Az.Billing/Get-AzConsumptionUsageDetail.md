@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionUsageDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionUsageDetail.md
 ms.openlocfilehash: 096ee731802bd48dbe742032dad8aebf17a809bb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140337029"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142129949"
 ---
 # Get-AzConsumptionUsageDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "140337029"
 Dapatkan detail penggunaan langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azconsumptionusagedetail) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionusagedetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Cmdlet **Get-AzConsumptionUsageDetail** mendapatkan detail penggunaan langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail penggunaan dengan perluas MeterDetails
+### Contoh 1: Dapatkan detail penggunaan dengan perluasan MeterDetails
 ```powershell
 PS C:\> Get-AzConsumptionUsageDetail -Expand MeterDetails -Top 10
 AccountName:  AAAA
@@ -120,7 +120,7 @@ UsageStart:  10/1/2017 12:00:00 AM
 ## PARAMETERS
 
 ### -BillingPeriodName
-Nama periode tagihan tertentu untuk mendapatkan detail penggunaan yang bhubungkan dengannya.
+Nama periode tagihan tertentu untuk mendapatkan detail penggunaan yang terkait.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal berakhir (dalam UTC) penggunaan untuk memfilter.
+Tanggal akhir (dalam UTC) dari penggunaan untuk memfilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Id contoh penggunaan untuk memfilter.
+Id instans dari penggunaan yang akan difilter.
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Contoh nama penggunaan untuk memfilter.
+Nama instans penggunaan yang akan difilter.
 
 ```yaml
 Type: System.String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimum rekaman untuk dikembalikan.
+Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Grup sumber daya penggunaan untuk memfilter.
+Grup sumber daya dari penggunaan untuk memfilter.
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Tanggal mulai (dalam UTC) penggunaan untuk memfilter.
+Tanggal mulai (di UTC) penggunaan untuk memfilter.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag penggunaan untuk memfilter.
+Tag penggunaan yang akan difilter.
 
 ```yaml
 Type: System.String
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Menentukan jumlah maksimum rekaman untuk dikembalikan.
+Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -315,11 +315,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

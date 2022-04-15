@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOriginGroup.md
 ms.openlocfilehash: 380f9fd71d72c78fdd800f507f6c341cdbde790c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979133"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142129553"
 ---
 # New-AzCdnOriginGroup
 
 ## SYNOPSIS
-Membuat grup origin CDN baru
+Membuat grup asal CDN baru
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnorigingroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ New-AzCdnOriginGroup -CdnOriginGroup <PSOriginGroup> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Kumpulan New-AzCdnOriginGroup akan membuat grup origin baru dalam titik akhir yang ditentukan. Jika ini adalah grup origin pertama untuk titik akhir, properti DefaultOriginGroup juga harus diatur.
+New-AzCdnOriginGroup akan membuat grup asal baru dalam titik akhir yang ditentukan. Jika ini adalah grup asal pertama untuk titik akhir, properti DefaultOriginGroup juga harus diatur.
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ Kumpulan New-AzCdnOriginGroup akan membuat grup origin baru dalam titik akhir ya
 PS C:\> New-AzCdnOriginGroup -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -OriginGroupName $originGroupName -OriginId $originId
 ```
 
-Cmdlet ini akan membuat grup origin baru dalam titik akhir yang ditentukan. Id origin akan memanfaatkan id origin tersebut sebagai kumpulan origin.
+Cmdlet ini akan membuat grup asal baru dalam titik akhir yang ditentukan. Ini akan menggunakan id asal yang diberikan sebagai kumpulan asal.
 
 ## PARAMETERS
 
 ### -CdnOriginGroup
-Objek CDN grup origin.
+Objek grup asal CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.OriginGroup.PSOriginGroup
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Azure CDN titik akhir.
+Azure CDN nama titik akhir.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Azure CDN grup origin.
+Azure CDN nama grup asal.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginId
-Azure CDN id grup origin.
+Azure CDN id grup asal.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -126,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AllahIntervalInSeconds
-Jumlah detik antara health transit.
+### -ProbeIntervalInSeconds
+Jumlah detik antara pemeriksaan kesehatan.
 
 ```yaml
 Type: System.Int32
@@ -141,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur relatif terhadap origin yang digunakan untuk menentukan kesehatan origin.
+### -ProbePath
+Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
 
 ```yaml
 Type: System.String
@@ -156,8 +156,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Yamaprotocol
-Protokol untuk digunakan dalam protokol kesehatan.
+### -ProbeProtocol
+Protokol untuk digunakan untuk pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -171,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RequestRequestType
-Tipe permintaan kesehatan yang dibuat.
+### -ProbeRequestType
+Jenis permintaan pemeriksaan kesehatan yang dibuat.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Azure CDN profil.
+Azure CDN nama profil.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya profil Azure CDN sumber daya.
+Grup sumber daya profil Azure CDN.
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

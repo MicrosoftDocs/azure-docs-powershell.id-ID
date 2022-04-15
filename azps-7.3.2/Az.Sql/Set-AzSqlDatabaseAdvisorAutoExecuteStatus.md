@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: 7197482fa530660fe115002195e37c75435beb44
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 34e00fc3d6900863596bb2b739176d8475b3747e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140370782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142025957"
 ---
 # Set-AzSqlDatabaseAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
-Mengubah status jalankan otomatis penasihat Azure SQL Database.
+Mengubah status eksekusi otomatis Azure SQL Database Advisor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaseadvisorautoexecutestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Set-AzSqlDatabaseAdvisorAutoExecuteStatus -AdvisorName <String> -AutoExecuteStat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseAdvisorAutoExecuteStatus** mengubah properti jalankan otomatis untuk Azure SQL Database Advisor.
-Saat ini, cmdlet ini mendukung nilai Enabled, Disabled, dan Default.
+Cmdlet **Set-AzSqlDatabaseAdvisorAutoExecuteStatus** mengubah properti auto execute untuk Azure SQL Database Advisor.
+Saat ini, cmdlet ini mendukung nilai Diaktifkan, Dinonaktifkan, dan Default.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan jalankan otomatis untuk penasihat
+### Contoh 1: Aktifkan eksekusi otomatis untuk penasihat
 ```
 PS C:\>Set-AzSqlDatabaseAdvisorAutoExecuteStatus -ResourceGroupName "ContosoRunnersProd" -ServerName "runner-australia-east" -DatabaseName "ContosoRunner" -AdvisorName "CreateIndex" -AutoExecuteStatus Enabled
 DatabaseName                   : ContosoRunner
@@ -47,7 +50,7 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mengubah status jalankan otomatis penasihat bernama CreateIndex menjadi Diaktifkan.
+Perintah ini mengubah status eksekusi otomatis penasihat bernama CreateIndex menjadi Enabled.
 
 ## PARAMETERS
 
@@ -67,10 +70,10 @@ Accept wildcard characters: False
 ```
 
 ### -AutoExecuteStatus
-Menentukan nilai untuk status.
+Menentukan nilai untuk status tersebut.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Diaktifkan 
-- Dinonaktifkan 
+- Tamu penyandang cacat 
 - Default
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database yang akan mengubah status cmdlet ini.
+Menentukan nama database yang mengubah status cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,13 +180,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.sql.Advisor.Cmdlet.AdvisorAutoExecuteStatus
+### Microsoft.Azure.Commands.Sql.Advisor.Cmdlet.AdvisorAutoExecuteStatus
 
 ## OUTPUTS
 
@@ -195,5 +198,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzSqlDatabaseAdvisor](./Get-AzSqlDatabaseAdvisor.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

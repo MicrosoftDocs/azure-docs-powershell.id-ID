@@ -1,54 +1,59 @@
 ---
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
 Module Name: Az.Network
-online version: https://docs.microsoft.com/powershell/module/az.network/remove-azsecuritypartnerprovider
+online version: https://docs.microsoft.com/powershell/module/az.network/remove-azvirtualhubroutetable
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzSecurityPartnerProvider.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzSecurityPartnerProvider.md
-ms.openlocfilehash: 495dca6b56416548afe3467bcf1858ff6571b0f0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubRouteTable.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubRouteTable.md
+ms.openlocfilehash: 0ec29fe92bfd2c08d6a3fa9f0c3bbc8f015f7f10
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "141952251"
+ms.locfileid: "142167364"
 ---
-# Remove-AzSecurityPartnerProvider
+# Remove-AzVirtualHubRouteTable
 
 ## SYNOPSIS
-Menghapus Azure SecurityPartnerProvider.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azsecuritypartnerprovider) untuk informasi terbaru.
+Hapus sumber daya tabel rute hub virtual yang terkait dengan hub virtual.
 
 ## SYNTAX
 
-### SecurityPartnerProviderNameParameterSet
+### ByVirtualHubRouteTableName (Default)
 ```
-Remove-AzSecurityPartnerProvider -Name <String> -ResourceGroupName <String> [-Force] [-PassThru] [-AsJob]
+Remove-AzVirtualHubRouteTable -ResourceGroupName <String> -HubName <String> -Name <String> [-AsJob] [-Force]
+ [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByVirtualHubObject
+```
+Remove-AzVirtualHubRouteTable -Name <String> -VirtualHub <PSVirtualHub> [-AsJob] [-Force] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SecurityPartnerProviderInputObjectParameterSet
+### ByVirtualHubRouteTableObject
 ```
-Remove-AzSecurityPartnerProvider -SecurityPartnerProvider <PSSecurityPartnerProvider> [-Force] [-PassThru]
- [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzVirtualHubRouteTable [-InputObject <PSVirtualHubRouteTable>] [-AsJob] [-Force] [-PassThru]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SecurityPartnerProviderResourceIdParameterSet
+### ByVirtualHubRouteTableResourceId
 ```
-Remove-AzSecurityPartnerProvider -ResourceId <String> [-Force] [-PassThru] [-AsJob]
+Remove-AzVirtualHubRouteTable -ResourceId <String> [-AsJob] [-Force] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSecurityPartnerProvider** menghapus Azure SecurityPartnerProvider
+Menghapus tabel rute tertentu yang terkait dengan hub virtual tertentu.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-Remove-AzSecurityPartnerProvider -ResourceGroupName securityPartnerProviderRG -Name securityPartnerProvider
+Remove-AzVirtualHubRouteTable -ResourceGroupName "testRg" -HubName "westushub" -Name "routeTable1"
 ```
+
+Perintah ini menghapus routeTable1 dari hub virtual westushub.
 
 ## PARAMETERS
 
@@ -83,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Paksa
-Jangan meminta konfirmasi.
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: SwitchParameter
@@ -97,18 +102,48 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya.
+### -HubName
+Nama sumber daya induk.
 
 ```yaml
-Type: System.String
-Parameter Sets: SecurityPartnerProviderNameParameterSet
-Aliases: ResourceName
+Type: String
+Parameter Sets: ByVirtualHubRouteTableName
+Aliases: VirtualHubName, ParentVirtualHubName, ParentResourceName
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Sumber daya virtualhubroutetable untuk dihapus.
+
+```yaml
+Type: PSVirtualHubRouteTable
+Parameter Sets: ByVirtualHubRouteTableObject
+Aliases: VirtualHubRouteTable
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama sumber daya.
+
+```yaml
+Type: String
+Parameter Sets: ByVirtualHubRouteTableName, ByVirtualHubObject
+Aliases: ResourceName, VirtualHubRouteTableName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -132,23 +167,23 @@ Nama grup sumber daya.
 
 ```yaml
 Type: String
-Parameter Sets: SecurityPartnerProviderNameParameterSet
+Parameter Sets: ByVirtualHubRouteTableName
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya securityPartnerProvider.
+Id sumber daya dari sumber daya virtualhubroutetable untuk dihapus.
 
 ```yaml
 Type: String
-Parameter Sets: SecurityPartnerProviderResourceIdParameterSet
-Aliases:
+Parameter Sets: ByVirtualHubRouteTableResourceId
+Aliases: VirtualHubRouteTableId
 
 Required: True
 Position: Named
@@ -157,13 +192,13 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SecurityPartnerProvider
-Objek input securityPartnerProvider.
+### -VirtualHub
+{{ Fill VirtualHub Description }}
 
 ```yaml
-Type: PSSecurityPartnerProvider
-Parameter Sets: SecurityPartnerProviderInputObjectParameterSet
-Aliases:
+Type: PSVirtualHub
+Parameter Sets: ByVirtualHubObject
+Aliases: ParentVirtualHub, ParentObject
 
 Required: True
 Position: Named
@@ -208,9 +243,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### System.String
+### Microsoft.Azure.Commands.Network.Models.PSVirtualHub
 
-### Microsoft.Azure.Commands.Network.Models.PSSecurityPartnerProvider
+### Microsoft.Azure.Commands.Network.Models.PSVirtualHubRouteTable
+
+### System.String
 
 ## OUTPUTS
 
