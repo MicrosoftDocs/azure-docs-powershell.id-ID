@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/start-Azsqle
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlElasticJob.md
-ms.openlocfilehash: f8b53f2d9a94ac202b93aaa92317774f4d08f956
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 940b5e7596575d7faafe9d29527fa5dacc4a4091
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400455"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339253"
 ---
 # Start-AzSqlElasticJob
 
 ## SYNOPSIS
-Memulai pekerjaan, mengembalikan id eksekusi pekerjaan yang bisa di polling untuk melihat statusnya
+Memulai pekerjaan, mengembalikan id eksekusi pekerjaan yang dapat dipolisikan untuk melihat statusnya
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/start-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Start-AzSqlElasticJob [-ParentResourceId] <String> [-Wait] [-AsJob] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzSqlElasticJob memulai pekerjaan untuk mengembalikan eksekusi pekerjaan baru
+Cmdlet Start-AzSqlElasticJob memulai pekerjaan mengembalikan eksekusi pekerjaan baru
 
 ## EXAMPLES
 
-### Contoh 1 - Memulai pekerjaan untuk mengembalikan eksekusi pekerjaan baru
+### Contoh 1 - Memulai pekerjaan mengembalikan eksekusi pekerjaan baru
 ```
 PS C:\> $job = Get-AzSqlElasticJob -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -Name job1
 $job | Start-AzSqlElasticJob
@@ -53,7 +56,7 @@ JobName JobExecutionId                       Lifecycle StartTime EndTime
 job1    b93b3a90-987b-4565-b3d3-5fa1751fa9bc Created
 ```
 
-Memulai pekerjaan untuk mengembalikan eksekusi pekerjaan baru
+Memulai pekerjaan mengembalikan eksekusi pekerjaan baru
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Bendera menunggu untuk mengindikasikan untuk menunggu hingga eksekusi pekerjaan selesai
+Bendera tunggu untuk menunjukkan menunggu hingga eksekusi pekerjaan selesai
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,15 +227,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobExecutionModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
 ## CATATAN
 

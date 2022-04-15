@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
 Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermipsecpolicy
 schema: 2.0.0
-ms.openlocfilehash: 6ebdcf88d1299014cfd56972bf85972262c1f9d7265f71b85a26c4217f98a872
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 642284e7e1aa732983ee660ea323707be030b640
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856281"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362147"
 ---
 # New-AzureRmIpsecPolicy
 
@@ -36,12 +36,12 @@ PS C:\> $ipsecPolicy = New-AzureRmIpsecPolicy -SALifeTimeSeconds 1000 -SADataSiz
 PS C:\> New-AzureRmVirtualNetworkGatewayConnection -ResourceGroupName $rgname -name $vnetConnectionName -location $location -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localnetGateway -ConnectionType IPsec -RoutingWeight 3 -SharedKey $sharedKey -UsePolicyBasedTrafficSelectors $true -IpsecPolicies $ipsecPolicy
 ```
 
-Membuat kebijakan IPSec untuk digunakan untuk koneksi gateway jaringan virtual baru.
+Membuat kebijakan IPSec yang akan digunakan untuk koneksi gateway jaringan virtual baru.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-Grup DH digunakan di IKE Phase 1 untuk awal SA
+Grup DH yang digunakan dalam IKE Fase 1 untuk awal SA
 
 ```yaml
 Type: String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeEncryption
-Algoritma enkripsi IKE (Fase 2 IKE)
+Algoritma enkripsi IKE (IKE Fase 2)
 
 ```yaml
 Type: String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecEncryption
-Algoritma enkripsi IPSec (IKE Phase 1)
+Algoritma enkripsi IPSec (Tahap 1 IKE)
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas IPSec (Fase 1 IKE)
+Algoritma integritas IPSec (Tahap 1 IKE)
 
 ```yaml
 Type: String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup DH digunakan di IKE Fase 2 untuk anak baru SA
+Grup DH yang digunakan dalam IKE Fase 2 untuk anak baru SA
 
 ```yaml
 Type: String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSizeKilobytes
-Ukuran muat IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+Ukuran muatan Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: Int32
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTimeSeconds
-Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam detik
+Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: Int32
@@ -182,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

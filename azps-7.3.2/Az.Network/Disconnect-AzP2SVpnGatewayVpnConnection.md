@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/disconne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Disconnect-AzP2SVpnGatewayVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Disconnect-AzP2SVpnGatewayVpnConnection.md
-ms.openlocfilehash: d86950b63542a68abdc479593605e817a21cccae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c51454bdff80208293d7c1bc9b24c576d7ba19d6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000006"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142318811"
 ---
 # Disconnect-AzP2sVpnGatewayVpnConnection
 
 ## SYNOPSIS
-Memutuskan koneksi koneksi klien vpn tersambung dengan gateway p2s vpn yang diberikan
+Putuskan sambungan sambungan klien vpn tersambung dengan gateway vpn p2s yang diberikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/disconnect-azp2svpngatewayvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Disconnect-AzP2sVpnGatewayVpnConnection -ResourceId <String> -VpnConnectionId <V
 ```
 
 ## DESCRIPTION
-Cmdlet **Disconnect-AzP2sVpnGatewayVpnConnection** memungkinkan Anda untuk memutuskan sambungan titik situs saat ini ke koneksi situs dari P2SVpnGateway.
+Cmdlet **Disconnect-AzP2sVpnGatewayVpnConnection** memungkinkan Anda memutuskan sambungan yang diberikan saat ini ke koneksi situs dari P2SVpnGateway.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ P2SConnectionConfigurations    : [
 ## PARAMETERS
 
 ### -InputObject
-Objek gateway p2s vpn yang akan dimodifikasi
+Objek gateway vpn p2s yang akan diubah
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

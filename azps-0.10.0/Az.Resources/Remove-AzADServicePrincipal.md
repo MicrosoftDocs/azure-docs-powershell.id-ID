@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Remove-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Remove-AzADServicePrincipal.md
 ms.openlocfilehash: bd58a044db49cdd0cedf2872e97e64662a49372c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427378"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142328065"
 ---
 # Remove-AzADServicePrincipal
 
@@ -77,29 +77,29 @@ PS C:\> Remove-AzADServicePrincipal -ApplicationId 9263469e-d328-4321-8646-3e3e7
 
 Menghapus prinsipal layanan dengan id aplikasi '9263469e-d328-4321-8646-3e3e75d20e76'.
 
-### Contoh 3 - Menghapus prinsipal layanan oleh SPN
+### Contoh 3 - Menghapus prinsipal layanan dengan SPN
 
 ```
 PS C:\> Remove-AzADServicePrincipal -ServicePrincipalName MyServicePrincipal
 ```
 
-Hapus prinsipal layanan dengan nama prinsipal layanan "MyServicePrincipal"
+Hapus prinsipal layanan dengan nama pokok layanan "MyServicePrincipal"
 
-### Contoh 4 - Hapus prinsipal layanan dengan pemipaan
+### Contoh 4 - Menghapus prinsipal layanan dengan pipa
 
 ```
 PS C:\> Get-AzADServicePrincipal -ObjectId 61b5d8ea-fdc6-40a2-8d5b-ad447c678d45 | Remove-AzADServicePrincipal
 ```
 
-Dapatkan prinsipal layanan dengan id objek '61b5d8ea-fdc6-40a2-8d5b-ad447c678d45' dan pipa yang berada di cmdlet Remove-AzADServicePrincipal untuk menghapus prinsipal layanan tersebut.
+Mendapatkan prinsipal layanan dengan id objek '61b5d8ea-fdc6-40a2-8d5b-ad447c678d45' dan pipa yang ke cmdlet Remove-AzADServicePrincipal untuk menghapus prinsipal layanan tersebut.
 
-### Contoh 5 - Hapus prinsipal layanan dengan pemipaan aplikasi
+### Contoh 5 - Menghapus prinsipal layanan dengan memipakan aplikasi
 
 ```
 PS C:\> Get-AzApplication -ApplicationId 9263469e-d328-4321-8646-3e3e75d20e76 | Remove-AzADServicePrincipal
 ```
 
-Dapatkan aplikasi dengan id aplikasi '9263469e-d328-4321-8646-3e3e75d20e76' dan hubungkan ke cmdlet Remove-AzADServicePrincipal untuk menghapus prinsipal layanan yang terkait dengan aplikasi tersebut.
+Mendapatkan aplikasi dengan id aplikasi '9263469e-d328-4321-8646-3e3e75d20e76' dan pipa yang ke cmdlet Remove-AzADServicePrincipal untuk menghapus prinsipal layanan yang terkait dengan aplikasi tersebut.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationObject
-Objek aplikasi yang prinsipal layanannya akan dihapus.
+Objek aplikasi yang pokok layanannya sedang dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADApplication
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -163,8 +163,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Beralih ke menghapus prinsipal layanan tanpa konfirmasi.
+### -Paksa
+Beralihlah untuk menghapus pokok layanan tanpa konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek prinsipal layanan.
+Objek pokok layanan.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan yang akan dihapus.
+Id objek dari prinsipal layanan untuk dihapus.
 
 ```yaml
 Type: System.Guid
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, mengembalikan pokok layanan yang dihapus.
+Jika ditentukan, mengembalikan prinsipal layanan yang dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Nama prinsipal layanan.
+Nama pokok layanan.
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -278,18 +278,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 Parameter: InputObject (ByValue)
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 
 ## CATATAN
-Kata kunci: azure, Az, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, Az, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Template, penyebaran
 
 ## RELATED LINKS
 
@@ -298,6 +298,6 @@ Kata kunci: azure, Az, arm, resource, management, manager, resource, group, temp
 [Get-AzADServicePrincipal](./Get-AzADServicePrincipal.md)
 
 
-[Remove-AzADApplication](./Remove-AzADApplication.md)
+[Remove-AzADAplikasi](./Remove-AzADApplication.md)
 
 [Remove-AzADAppCredential](./Remove-AzADAppCredential.md)

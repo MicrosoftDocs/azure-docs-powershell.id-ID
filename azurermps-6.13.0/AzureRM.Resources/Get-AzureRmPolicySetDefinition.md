@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmPolicySetDefinition.md
-ms.openlocfilehash: ea6a0a438ea874649403e6c77a898f185ec72d3182b657205602301983f37530
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d0a1097407c9941b5be49b19ea7ba99e75b3fce2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858126"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384180"
 ---
 # Get-AzureRmPolicySetDefinition
 
@@ -74,9 +74,9 @@ Perintah ini mendapatkan semua definisi kumpulan kebijakan.
 PS C:\> Get-AzureRmPolicySetDefinition -Name 'VMPolicySetDefinition'
 ```
 
-Perintah ini mendapatkan definisi kumpulan kebijakan yang bernama VMPolicySetDefinition dari langganan default saat ini.
+Perintah ini mendapatkan definisi kumpulan kebijakan bernama VMPolicySetDefinition dari langganan default saat ini.
 
-### Contoh 3: Dapatkan definisi menetapkan kebijakan dari langganan menurut nama
+### Contoh 3: Dapatkan definisi kumpulan kebijakan dari langganan menurut nama
 ```
 PS C:\> Get-AzureRmPolicySetDefinition -Name 'VMPolicySetDefinition' -subscriptionId '3bf44b72-c631-427a-b8c8-53e2595398ca'
 ```
@@ -93,7 +93,7 @@ Perintah ini mendapatkan semua definisi kumpulan kebijakan kustom dari grup mana
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Builtin
-Batasan daftar hasil hanya untuk definisi kumpulan kebijakan bawaan.
+Membatasi daftar hasil hanya untuk definisi kumpulan kebijakan bawaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kustom
-Limits list of results to only custom policy set definitions.
+Membatasi daftar hasil hanya untuk definisi kumpulan kebijakan kustom.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID definisi kumpulan kebijakan yang sepenuhnya memenuhi syarat, termasuk langganan.
+Id definisi kumpulan kebijakan yang sepenuhnya memenuhi syarat, termasuk langganan.
 misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
 
 ```yaml
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupName
-Nama grup manajemen dari definisi set kebijakan untuk mendapatkan.
+Nama grup manajemen definisi kumpulan kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-The policy set definition name.
+Nama definisi kumpulan kebijakan.
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan dari definisi kumpulan kebijakan untuk mendapatkan.
+ID langganan definisi kumpulan kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -254,13 +254,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

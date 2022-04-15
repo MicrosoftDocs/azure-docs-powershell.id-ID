@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesMarketplaceDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesMarketplaceDefinition.md
-ms.openlocfilehash: 5669dabe493aa93f6a0f3a723fbeb8c80bf9f5c4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: de6ccfe908998efaf1c105f6883efab5c2c405b5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346273"
 ---
 # Get-AzManagedServicesMarketplaceDefinition
 
 ## SYNOPSIS
 Dapatkan definisi registrasi marketplace untuk pengidentifikasi marketplace.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesmarketplacedefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Dapatkan definisi registrasi marketplace untuk pengidentifikasi marketplace.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan definisi pendaftaran Azure Lighthouse Marketplace yang menawarkan detail
+### Contoh 1: Dapatkan detail penawaran definisi registrasi Azure Lighthouse Marketplace
 ```powershell
 PS C:\> Get-AzManagedServicesMarketplaceDefinition -MarketplaceIdentifier marketplace_test.managed_offer.managed_plan1.1.0.1 | Format-List Id, PlanProduct, PlanPublisher, PlanName, PlanVersion
 
@@ -65,7 +68,7 @@ PlanName      : managed_plan1
 PlanVersion   : 1.0.1
 ```
 
-Dapatkan detail penawaran definisi pendaftaran Azure Lighthouse Marketplace.
+Dapatkan detail penawaran definisi registrasi Azure Lighthouse Marketplace.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter parameter kueri untuk memfilter definisi registrasi marketplace menurut pengidentifikasi rencana, publisher, versi dll.
+Parameter kueri filter untuk memfilter definisi pendaftaran marketplace menurut pengidentifikasi rencana, penerbit, versi dll.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.IManagedServicesIdentity
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -MarketplaceIdentifier
-Pengidentifikasi Azure Marketplace.
+Pengidentifikasi Marketplace Azure.
 Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penyewa
-Filter parameter kueri untuk memfilter definisi registrasi marketplace menurut pengidentifikasi rencana, publisher, versi dll.
+Parameter kueri filter untuk memfilter definisi pendaftaran marketplace menurut pengidentifikasi rencana, penerbit, versi dll.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -182,9 +185,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IManagedServicesIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Azure Marketplace. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
-  - `[RegistrationAssignmentId <String>]`: GUID penetapan pendaftaran.
-  - `[RegistrationDefinitionId <String>]`: GUID definisi registrasi.
+  - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Marketplace Azure. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
+  - `[RegistrationAssignmentId <String>]`: GUID penugasan pendaftaran.
+  - `[RegistrationDefinitionId <String>]`: GUID definisi pendaftaran.
   - `[Scope <String>]`: Lingkup sumber daya.
 
 ## RELATED LINKS

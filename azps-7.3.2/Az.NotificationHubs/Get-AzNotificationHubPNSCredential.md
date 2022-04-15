@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubPNSCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubPNSCredential.md
-ms.openlocfilehash: 2aba4ab4b3c15f55ea9ba22916ba36d0e7ac790b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 98fb3db7060af4cdf85e27de5f2c37af65893fa6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392163"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142370465"
 ---
 # Get-AzNotificationHubPNSCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial PNS untuk hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubpnscredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzNotificationHubPNSCredential [-ResourceGroup] <String> [-Namespace] <Strin
 ## DESCRIPTION
 Cmdlet **Get-AzNotificationHubPNSCredential** mendapatkan kredensial layanan pemberitahuan platform (PNS) untuk hub pemberitahuan.
 Setiap hub pemberitahuan memiliki satu set kredensial PNS.
-Kredensial ini diterapkan pada layanan pemberitahuan push individual seperti, tapi tidak terbatas pada; layanan dorong pemberitahuan iOS, layanan dorong pemberitahuan Android, dan Windows Phone 8.
+Kredensial ini diterapkan pada layanan pemberitahuan push individual seperti, tetapi tidak terbatas pada; layanan pemberitahuan push iOS, layanan pemberitahuan push Android, dan Windows Phone 8.
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ Kredensial ini diterapkan pada layanan pemberitahuan push individual seperti, ta
 PS C:\>Get-AzNotificationHubPNSCredential -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -NotificationHub "ContosoInternalHub"
 ```
 
-Perintah ini mendapatkan kredensial PNS untuk hub pemberitahuan bernama ContosoInternalHub yang dimiliki oleh grup sumber daya yang bernama ContosoNotificationsGroup.
+Perintah ini mendapatkan kredensial PNS untuk hub pemberitahuan bernama ContosoInternalHub yang termasuk dalam grup sumber daya bernama ContosoNotificationsGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

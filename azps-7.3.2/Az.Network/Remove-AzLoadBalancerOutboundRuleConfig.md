@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerOutboundRuleConfig.md
-ms.openlocfilehash: e6456531218c040c1acdc7081d69878794ca90eb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: edb3e2978db6592206bff4ab58ef88c859d88951
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140197286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142370897"
 ---
 # Remove-AzLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi aturan keluar dari penyeimbang muat.
+Menghapus konfigurasi aturan keluar dari penyeimbang muatan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalanceroutboundruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzLoadBalancerOutboundRuleConfig -LoadBalancer <PSLoadBalancer> -Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerOutboundRuleConfig** menghapus konfigurasi aturan keluar dari penyeimbang muat Azure.
+Cmdlet **Remove-AzLoadBalancerOutboundRuleConfig** menghapus konfigurasi aturan keluar dari penyeimbang muatan Azure.
 
 ## EXAMPLES
 
@@ -36,8 +39,8 @@ PS C:\>Remove-AzLoadBalancerOutboundRuleConfig -Name "RuleName" -LoadBalancer $s
 PS C:\>Set-AzLoadBalancer -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang terkait dengan konfigurasi aturan keluar yang ingin Anda hapus, lalu menyimpannya di $slb keluar.
-Perintah kedua menghapus konfigurasi aturan keluar terkait dari penyeimbang muat.
+Perintah pertama mendapatkan penyeimbang muatan yang terkait dengan konfigurasi aturan keluar yang ingin Anda hapus, lalu menyimpannya dalam variabel $slb.
+Perintah kedua menghapus konfigurasi aturan keluar yang terkait dari penyeimbang muatan.
 Perintah ketiga memperbarui penyeimbang muat.
 
 ## PARAMETERS
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Referensi dari sumber daya penyeimbang muat.
+Referensi sumber daya load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

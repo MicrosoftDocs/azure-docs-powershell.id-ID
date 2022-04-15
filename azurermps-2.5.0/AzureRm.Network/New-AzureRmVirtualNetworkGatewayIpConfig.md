@@ -5,16 +5,16 @@ ms.assetid: C6E65138-CD14-4A54-A901-8E944201F2AE
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermvirtualnetworkgatewayipconfig
 schema: 2.0.0
 ms.openlocfilehash: 1a043b14ef957eed6ac4983c4a30edf6fc72521f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421534"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142362074"
 ---
 # New-AzureRmVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
-Membuat Konfigurasi IP untuk Gateway Jaringan Virtual
+Membuat Konfigurasi IP untuk Gateway Virtual Network
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,21 +33,21 @@ New-AzureRmVirtualNetworkGatewayIpConfig -Name <String> [-PrivateIpAddress <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmVirtualNetworkGatewayIpConfig** membuat konfigurasi yang ditetapkan ke Gateway Jaringan Virtual dengan Alamat IP Publik (yang sebelumnya dibuat) berdasarkan SUBNET ID.
+Cmdlet **New-AzureRmVirtualNetworkGatewayIpConfig** membuat konfigurasi yang ditetapkan ke Gateway Virtual Network dengan Alamat IP Publik (yang sebelumnya dibuat) berdasarkan ID Subnet.
 
 ## EXAMPLES
 
-### 1: Membuat Konfigurasi IP untuk Gateway Jaringan Virtual
+### 1: Membuat Konfigurasi IP untuk Gateway Virtual Network
 ```
 $gwIpConfig = New-AzureRmVirtualNetworkGatewayIpConfig -Name myGWIpConfig -SubnetId $myGWsubnet.Id -PublicIpAddressId $myGWpip.Id
 ```
 
-Mengonfigurasi Gateway Jaringan Virtual dengan Alamat IP Publik. Variabel yang $myGWsubnet diperoleh menggunakan cmdlet **Get-AzureRmVirtualNetworkSubnetConfig** di "GatewaySubnet" di dalam Jaringan Virtual yang Anda maksudkan untuk membuat Gateway Jaringan Virtual. Biaya variabel $myGWpip diperoleh menggunakan cmdlet **New-AzureRmPublicIpAddress.**
+Mengonfigurasi Gateway Virtual Network dengan Alamat IP Publik. Variabel $myGWsubnet diperoleh menggunakan cmdlet **Get-AzureRmVirtualNetworkSubnetConfig** pada "GatewaySubnet" dalam Virtual Network yang ingin Anda buat gateway Virtual Network. Variabel $myGWpip diperoleh menggunakan cmdlet **New-AzureRmPublicIpAddress** .
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

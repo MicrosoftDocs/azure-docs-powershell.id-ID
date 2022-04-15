@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Restore-AzureRmRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Restore-AzureRmRecoveryServicesBackupItem.md
 ms.openlocfilehash: b454f77bc3ad00ddf604e13672d61a7445c44fed
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424180"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384406"
 ---
 # Restore-AzureRmRecoveryServicesBackupItem
 
@@ -40,12 +40,12 @@ Restore-AzureRmRecoveryServicesBackupItem [-VaultLocation <String>] [-RecoveryPo
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzureRmRecoveryServicesBackupItem** memulihkan data dan konfigurasi untuk item Azure Backup ke titik pemulihan yang ditentukan.
-Cmdlet ini memulai pemulihan dari vault Layanan Pemulihan ke akun penyimpanan pelanggan.
-Operasi pemulihan tidak memulihkan mesin virtual penuh.
-Alat ini memulihkan data disk dan informasi konfigurasi.
+Cmdlet **Restore-AzureRmRecoveryServicesBackupItem** memulihkan data dan konfigurasi untuk item Azure Backup ke titik pemulihan tertentu.
+Cmdlet ini memulai pemulihan dari kubah Layanan Pemulihan ke akun penyimpanan pelanggan.
+Operasi pemulihan tidak memulihkan mesin maya penuh.
+Ini memulihkan data disk dan informasi konfigurasi.
 Setelah operasi pemulihan selesai, Anda harus membuat mesin virtual dan memulainya.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -62,18 +62,18 @@ PS C:\> $RestoreJob = Restore-AzureRmRecoveryServicesBackupItem -RecoveryPoint $
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan wadah Cadangan tipe AzureVM, lalu menyimpannya dalam $Container baru.
-Perintah kedua mendapatkan item Cadangan bernama V2VM dari $Container, lalu menyimpannya di $BackupItem cadangan.
-Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
-Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
-Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter menurut tim $StartDate dan $EndDate.
+Perintah pertama mendapatkan wadah Cadangan dari tipe AzureVM, lalu menyimpannya dalam variabel $Container.
+Perintah kedua mendapatkan item Cadangan bernama V2VM dari $Container, lalu menyimpannya dalam variabel $BackupItem.
+Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam variabel $StartDate.
+Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah kelima mendapatkan daftar titik pemulihan untuk item cadangan tertentu yang difilter menurut $StartDate dan $EndDate.
 Rentang tanggal yang ditentukan adalah 7 hari terakhir.
-Perintah terakhir memulihkan disk ke akun penyimpanan target DestAccount di grup sumber daya DestRG.
+Perintah terakhir memulihkan disk ke akun penyimpanan target DestAccount dalam grup sumber daya DestRG.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 
 ### -RecoveryPoint
 Menentukan titik pemulihan untuk memulihkan mesin virtual.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupRecoveryPoint,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupRecoveryPoint cmdlet.
+Untuk mendapatkan objek **AzureRmRecoveryServicesBackupRecoveryPoint** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupRecoveryPoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolveConflict
-Dalam kasus item yang dipulihkan juga ada di tujuan, gunakan ini untuk menunjukkan apakah akan menimpa atau tidak.
+Jika item yang dipulihkan juga ada di tujuan, gunakan ini untuk menunjukkan apakah akan menimpa atau tidak.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RestoreFSResolveConfictOption
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama target akun Storage langganan Anda.
-Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi di akun Storage ini.
+Menentukan nama akun Storage target dalam langganan Anda.
+Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi dalam akun Storage ini.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -StorageAccountResourceGroupName
 Menentukan nama grup sumber daya yang berisi akun Storage target dalam langganan Anda.
-Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi di akun Storage ini.
+Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi dalam akun Storage ini.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetFileShareName
-Berbagi File tempat file bersama harus dipulihkan.
+Berbagi File tempat berbagi file harus dipulihkan.
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetStorageAccountName
-Akun penyimpanan tempat file bersama harus dipulihkan.
+Akun penyimpanan tempat berbagi file harus dipulihkan.
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseOriginalStorageAccount
-Gunakan sakelar ini jika disk dari titik pemulihan harus dipulihkan ke akun penyimpanan aslinya.
+Gunakan sakelar ini jika disk dari titik pemulihan akan dipulihkan ke akun penyimpanan aslinya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

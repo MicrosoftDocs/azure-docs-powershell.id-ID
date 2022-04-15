@@ -2,17 +2,17 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 37bbd8c92377158bbd124cd20d9eb09d75848c9e2a828aeead4b5294e7ba9427
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 47523664195913a7a3d24a21a9804b035b88acf5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417641"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354058"
 ---
 # Get-AzureRmContext
 
 ## SYNOPSIS
-Dapatkan metadata yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -23,7 +23,7 @@ Get-AzureRmContext [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+Cmdlet Get-AzureRmContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
 
 Cmdlet ini mendapatkan akun Direktori Aktif, penyewa Direktori Aktif, langganan Azure, dan lingkungan Azure yang ditargetkan.
 Cmdlet Azure Resource Manager menggunakan pengaturan ini secara default saat membuat permintaan Azure Resource Manager.
@@ -43,19 +43,19 @@ SubscriptionName      : Test Subscription
 CurrentStorageAccount :
 ```
 
-Dalam contoh ini, kami masuk ke akun dengan langganan Azure menggunakan Add-AzureRmAccount, lalu mendapatkan konteks sesi saat ini dengan menghubungi Get-AzureRmContext.
+Dalam contoh ini, kami masuk ke akun kami dengan langganan Azure menggunakan Add-AzureRmAccount, lalu kami mendapatkan konteks sesi saat ini dengan menghubungi Get-AzureRmContext.
 
 ## PARAMETERS
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### PSAzureContext
-Cmdlet ini mengembalikan akun, penyewa, dan langganan yang digunakan oleh cmdlet Azure Resource Manager.
+Cmdlet ini mengembalikan cmdlet akun, penyewa, dan langganan yang digunakan oleh Cmdlet Azure Resource Manager.
 
 ## CATATAN
 

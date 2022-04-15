@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
-ms.openlocfilehash: ab1c3a9d3820a601d6868f5473e42feb718790d9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 37e0c8877b7e323605d64d7b1a98a2ed63c00aa7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178522"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142340135"
 ---
 # Enable-AzSqlServerAdvancedDataSecurity
 
 ## SYNOPSIS
-Mengaktifkan Keamanan Data Tingkat Lanjut pada server.
+Mengaktifkan Keamanan Data Tingkat Lanjut di server.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlserveradvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Enable-AzSqlServerAdvancedDataSecurity [-DoNotConfigureVulnerabilityAssessment] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzSqlServerAdvancedDataSecurity** mengaktifkan Keamanan Data Tingkat Lanjut di server. Advanced Data Security adalah paket keamanan terpadu yang mencakup Klasifikasi Data, Penilaian Kerentanan, dan Perlindungan Ancaman Tingkat Lanjut untuk server Anda. (Akun penyimpanan baru akan otomatis dibuat untuk menyimpan penilaian kerentanan. Jika akun penyimpanan sebelumnya dibuat untuk tujuan ini, akun akan digunakan sebagai gantinya)
+Cmdlet **Enable-AzSqlServerAdvancedDataSecurity** memungkinkan Keamanan Data Tingkat Lanjut di server. Keamanan Data Tingkat Lanjut adalah paket keamanan terpadu yang menyertakan Klasifikasi Data, Penilaian Kerentanan, dan Perlindungan Ancaman Tingkat Lanjut untuk server Anda. (Akun penyimpanan baru akan dibuat secara otomatis untuk menghemat penilaian kerentanan. Jika akun penyimpanan sebelumnya dibuat untuk tujuan ini, akun tersebut akan digunakan sebagai gantinya)
 
 ## EXAMPLES
 
-### Contoh 1: Enable server Advanced Data Security
+### Contoh 1: Mengaktifkan Keamanan Data Tingkat Lanjut server
 ```powershell
 PS C:\>  Enable-AzSqlServerAdvancedDataSecurity `
             -ResourceGroupName "ResourceGroup01" `
@@ -42,7 +45,7 @@ ServerName                   : Server01
 IsEnabled                    : True
 ```
 
-### Contoh 2: Mengaktifkan server Keamanan Data Tingkat Lanjut dari sumber daya server
+### Contoh 2: Mengaktifkan Keamanan Data Tingkat Lanjut server dari sumber daya server
 ```powershell
 PS C:\>  Get-AzSqlServer `
            -ResourceGroupName "ResourceGroup01" `
@@ -56,7 +59,7 @@ IsEnabled                    : True
 
 ### Contoh 3
 
-Mengaktifkan Keamanan Data Tingkat Lanjut pada server. (otomatisgenerated)
+Mengaktifkan Keamanan Data Tingkat Lanjut di server. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -66,7 +69,7 @@ Enable-AzSqlServerAdvancedDataSecurity -DoNotConfigureVulnerabilityAssessment -R
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL Database server baru.
+SQL Database nama server.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

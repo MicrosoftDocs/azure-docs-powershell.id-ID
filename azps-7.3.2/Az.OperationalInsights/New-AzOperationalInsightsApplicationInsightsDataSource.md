@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsApplicationInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsApplicationInsightsDataSource.md
-ms.openlocfilehash: 61964b399ff56be726d330ce40465e9dc229d9fe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 851d572db4b4a98ca464a63743dbe89884b2aa6b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142370339"
 ---
 # New-AzOperationalInsightsApplicationInsightsDataSource
 
 ## SYNOPSIS
-Kumpulkan log dari aplikasi Application-Insights tertentu.
+Kumpulkan log dari aplikasi Application-Insights yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsapplicationinsightsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,11 +58,11 @@ New-AzOperationalInsightsApplicationInsightsDataSource [-ResourceGroupName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsApplicationInsightsDataSource** mengaktifkan kumpulan log dari aplikasi Application-Insights tertentu.
+Cmdlet **New-AzOperationalInsightsApplicationInsightsDataSource** memungkinkan pengumpulan log dari aplikasi Application-Insights tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sumber data application-insights di ruang kerja
+### Contoh 1: Membuat sumber data wawasan aplikasi di ruang kerja
 ```
 PS C:\> New-AzOperationalInsightsApplicationInsightsDataSource -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -ApplicationSubscriptionId "e791a474-ee54-46a2-bb06-5e058302d234" -ApplicationResourceGroupName "ContosoResourceGroup" -ApplicationName "MyAIApplication"
 
@@ -71,9 +74,9 @@ Kind              : ApplicationInsights
 Properties        : {"linkedResourceId":"subscriptions/e791a474-ee54-46a2-bb06-5e058302d234/resourceGroups/ContosoResourceGroup/providers/microsoft.insights/components/MyAIApplication","status":"Succeeded"}
 ```
 
-Perintah ini membuat sumber data wawasan aplikasi dari aplikasi tertentu dalam ruang kerja analitik log tertentu. Ini memungkinkan kumpulan log dari aplikasi tertentu ke ruang kerja analitik log.
+Perintah ini membuat sumber data wawasan aplikasi dari aplikasi tertentu dalam ruang kerja analitik log tertentu. Ini memungkinkan pengumpulan log dari aplikasi tertentu ke ruang kerja analitik log.
 
-### Contoh 2: Dapatkan objek ruang kerja dan buat sumber data wawasan aplikasi dengan id sumber daya aplikasi
+### Contoh 2: Dapatkan objek ruang kerja dan buat sumber data wawasan aplikasi menurut id sumber daya aplikasi
 ```
 PS C:\> Get-AzureRmOperationalInsightsWorkspace -Name "MyWorkspace" -ResourceGroupName "ContosoResourceGroup" | New-AzOperationalInsightsApplicationInsightsDataSource -ApplicationResourceId "/subscriptions/e791a474-ee54-46a2-bb06-5e058302d234/resourceGroups/ContosoResourceGroup/providers/microsoft.insights/components/MyAIApplication"
 
@@ -85,7 +88,7 @@ Kind              : ApplicationInsights
 Properties        : {"linkedResourceId":"subscriptions/e791a474-ee54-46a2-bb06-5e058302d234/resourceGroups/ContosoResourceGroup/providers/microsoft.insights/components/MyAIApplication","status":"Succeeded"}
 ```
 
-Perintah ini menunjukkan cara mendapatkan objek ruang kerja analitik log lalu memberikan output untuk membuat sumber data wawasan aplikasi terkait dengan id sumber daya aplikasi. 
+Perintah ini menunjukkan mendapatkan objek ruang kerja analitik log lalu mengirimkan output untuk membuat sumber data wawasan aplikasi terkait oleh id sumber daya aplikasi. 
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationResourceGroupName
-Nama grup sumber daya dari aplikasi yang ditautkan.
+Nama grup sumber daya aplikasi yang ditautkan.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSubscriptionId
-Id langganan dari aplikasi yang ditautkan.
+Id langganan aplikasi yang ditautkan.
 
 ```yaml
 Type: System.String
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja yang akan berisi sumber data.
 
 ```yaml
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

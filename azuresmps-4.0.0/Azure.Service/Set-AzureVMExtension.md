@@ -4,11 +4,11 @@ ms.assetid: 97E9FB22-43A8-4D07-AF48-5884E4593CA9
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 33f80b5446b78a3fe96ad30c98e6bae999779884
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421111"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142354013"
 ---
 # Set-AzureVMExtension
 
@@ -58,17 +58,17 @@ Cmdlet **Set-AzureVMExtension** mengatur ekstensi sumber daya untuk mesin virtua
 
 ## EXAMPLES
 
-### Contoh 1: Buat mesin virtual dengan ekstensi sumber daya yang diterapkan
+### Contoh 1: Membuat mesin virtual dengan ekstensi sumber daya yang diterapkan
 ```
 PS C:\> $X = New-AzureVMConfig -Name $VM -InstanceSize Small -ImageName $IMG;$X = Add-AzureProvisioningConfig -VM $X -Password $PWD -AdminUsername $USR -Windows;$X = Set-AzureVMExtension -VM $X -ExtensionName $Ext1 -Publisher $Publisher -Version $VER -PublicConfiguration $P1 -PrivateConfiguration $P2;$X = Set-AzureVMExtension -VM $X -ExtensionName $Ext2 -Publisher $Publisher -Version $VER -PublicConfiguration $P3 -PrivateConfiguration $P4;New-AzureVM -Location $LOC -ServiceName $SVC -VM $X;
 ```
 
-Perintah ini akan membuat mesin virtual dengan ekstensi sumber daya yang diterapkan.
+Perintah ini membuat mesin virtual dengan ekstensi sumber daya yang diterapkan.
 
 ## PARAMETERS
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan status ekstensi.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan status ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionName
-Menentukan nama ekstensi komputer virtual.
+Menentukan nama ekstensi mesin virtual.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdate
-Mengindikasikan bahwa cmdlet ini menerapkan ulang konfigurasi pada ekstensi bila konfigurasi belum diperbarui.
+Menunjukkan bahwa cmdlet ini menerapkan ulang konfigurasi ke ekstensi ketika konfigurasi belum diperbarui.
 
 ```yaml
 Type: SwitchParameter
@@ -113,16 +113,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -197,8 +197,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -275,10 +275,10 @@ Accept wildcard characters: False
 ### -ReferenceName
 Menentukan nama referensi ekstensi.
 
-Ini adalah string yang ditetapkan pengguna yang bisa digunakan untuk merujuk ke ekstensi.
-Anda perlu menentukannya saat ekstensi ditambahkan ke komputer virtual untuk pertama kalinya.
-Untuk pembaruan berikutnya, Anda perlu menentukan nama referensi yang digunakan sebelumnya saat memperbarui ekstensi.
-NamaReferensi yang ditetapkan untuk ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM.**
+Ini adalah string yang ditentukan pengguna yang dapat digunakan untuk merujuk ke ekstensi.
+Anda perlu menentukannya ketika ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
+Untuk pembaruan berikutnya, Anda perlu menentukan nama referensi yang sebelumnya digunakan saat memperbarui ekstensi.
+ReferenceName yang ditetapkan ke ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM** .
 
 ```yaml
 Type: String
@@ -304,8 +304,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Uninstall
-Mengindikasikan bahwa cmdlet ini menghapus instalasi ekstensi sumber daya dari komputer virtual.
+### -Hapus instalan
+Menunjukkan bahwa cmdlet ini menghapus instalan ekstensi sumber daya dari mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

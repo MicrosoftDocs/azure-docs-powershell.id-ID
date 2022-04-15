@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzSpatialAnchorsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzSpatialAnchorsAccount.md
-ms.openlocfilehash: 2c51585e1afb5d532f2c619d67492b01a0beb014
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3f16ec750f46e028484bc5a66ffa3582104f039c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000222"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142345823"
 ---
 # Get-AzSpatialAnchorsAccount
 
 ## SYNOPSIS
 Dapatkan Akun Jangkar Spasial
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/get-azspatialanchorsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSpatialAnchorsAccount -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau  list Akun Jangkar Spasial di Grup Langganan dan Sumber Daya tertentu.
+Dapatkan atau cantumkan Akun Jangkar Spasial dalam Grup Langganan dan Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Name                : foobar
 Type                : Microsoft.MixedReality/SpatialAnchorsAccounts
 ```
 
-List all Spatial Anchors Account in Resource Group "rg1". 
+Daftar semua Akun Jangkar Spasial di Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -94,7 +97,7 @@ Name                : example
 Type                : Microsoft.MixedReality/SpatialAnchorsAccounts
 ```
 
-Dapatkan Akun Jangkar Spasial "contoh" di Grup Sumber Daya "rg1". 
+Dapatkan "contoh" Akun Jangkar Spasial di Grup Sumber Daya "rg1". 
 
 ## PARAMETERS
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Akun Jangkar Spasial.
+ID Sumber Daya Akun Jangkar Spasial.
 
 ```yaml
 Type: String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

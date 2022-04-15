@@ -4,17 +4,17 @@ Module Name: AzureRM.Resources
 ms.assetid: 427F7300-0FEB-4F28-9C1D-27592AEBF6A0
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/invoke-azurermresourceaction
 schema: 2.0.0
-ms.openlocfilehash: 63b480f506f26da627b3e8d87f515abfb580787f22230d5430636aca7864a1c3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e29dda3fc5d2b62196d0cc5897ba7a7c9b047a8c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851608"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361544"
 ---
 # Invoke-AzureRmResourceAction
 
 ## SYNOPSIS
-Menjalankan tindakan pada sumber daya.
+Memanggil tindakan pada sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -47,7 +47,7 @@ Invoke-AzureRmResourceAction [-Parameters <Hashtable>] -Action <String> -Resourc
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzureRmResourceAction** menjalankan tindakan pada sumber daya Azure yang ditentukan.
+Cmdlet **Invoke-AzureRmResourceAction** menerapkan tindakan pada sumber daya Azure yang ditentukan.
 Untuk mendapatkan daftar tindakan yang didukung, gunakan alat Azure Resource Explorer.
 
 ## EXAMPLES
@@ -55,7 +55,7 @@ Untuk mendapatkan daftar tindakan yang didukung, gunakan alat Azure Resource Exp
 ## PARAMETERS
 
 ### -Tindakan
-Menentukan nama tindakan untuk diminta.
+Menentukan nama tindakan yang akan dijalankan.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionResourceName
-Menentukan nama sumber daya ekstensi untuk sumber daya di mana cmdlet ini akan menjalankan tindakan.
-Misalnya, untuk menentukan database, gunakan format berikut: namadatabase`/` server
+Menentukan nama sumber daya ekstensi untuk sumber daya di mana cmdlet ini memanggil tindakan.
+Misalnya, untuk menentukan database, gunakan format berikut: nama namadatabase`/` server
 
 ```yaml
 Type: System.String
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,14 +148,14 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: System.Management.Automation.ActionPreference
@@ -200,8 +200,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
-Menentukan parameter, sebagai tabel hash, untuk tindakan yang diminta cmdlet ini.
+### -Parameters
+Menentukan parameter, sebagai tabel hash, untuk tindakan yang dijalankan cmdlet ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini akan menjalankan tindakan.
+Menentukan nama grup sumber daya tempat cmdlet ini memanggil tindakan.
 
 ```yaml
 Type: System.String
@@ -246,8 +246,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya di mana cmdlet ini akan menjalankan tindakan.
-ID mencakup langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya tempat cmdlet ini memanggil tindakan.
+ID menyertakan langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -262,8 +262,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya sumber daya di mana cmdlet ini akan menjalankan tindakan.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
+Menentukan nama sumber daya tempat cmdlet ini memanggil tindakan.
+Misalnya, untuk menentukan database, gunakan format berikut: `ContosoServer/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 
 ### -ResourceType
 Menentukan tipe sumber daya.
-Sebagai contoh, untuk database, tipe sumber dayanya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
+Misalnya, untuk database, tipe sumber daya adalah sebagai berikut: `Microsoft.Sql/Servers/Databases`
 
 ```yaml
 Type: System.String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantLevel
-Mengindikasikan bahwa cmdlet ini beroperasi pada tingkat penyewa.
+Menunjukkan bahwa cmdlet ini beroperasi pada tingkat penyewa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

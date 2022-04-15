@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrAlertSetting.md
 ms.openlocfilehash: 7fb55457f62ceb03cc33b70fa6a8699abe0f6f04
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140865980"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142384326"
 ---
 # Get-AzureRmRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
-Dapatkan pengaturan pemberitahuan Pemulihan Situs Azure yang dikonfigurasi untuk vault.
+Mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk kubah.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmRecoveryServicesAsrAlertSetting [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesAsrAlertSetting** mendapatkan pengaturan pemberitahuan Pemulihan Situs Azure yang dikonfigurasi untuk vault.
+Cmdlet **Get-AzureRmRecoveryServicesAsrAlertSetting** mendapatkan pengaturan pemberitahuan Azure Site Recovery yang dikonfigurasi untuk kubah.
 
 ## EXAMPLES
 
@@ -39,12 +39,12 @@ CustomEmailAddress     EmailSubscriptionOwner Locale
 {abcxxxx@xxxx.com} On                     en-US
 ```
 
-Dapatkan Pengaturan Peringatan/Pemberitahuan untuk Pemulihan Situs Azure.
+Dapatkan Pengaturan Pemberitahuan / Pemberitahuan untuk Azure Site Recovery.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,15 +59,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAlertSetting, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAlertSetting, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

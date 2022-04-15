@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSkuProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSkuProperty.md
-ms.openlocfilehash: 3ded5db5cd738b54e4c2b98b3cdcd4e5afe6d0fa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 03824b1df3bf179dd23791daf8c04106c5f57075
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999709"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142345175"
 ---
 # New-AzVirtualApplianceSkuProperty
 
 ## SYNOPSIS
-Define a Network Virtual Appliance sku for the resource.
+Tentukan sku Network Virtual Appliance untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualapplianceskuproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzVirtualApplianceSkuProperty -VendorName <String> -BundledScaleUnit <String
 ```
 
 ## DESCRIPTION
-The New-AzVirtualApplianceSkuProperties command defines a Sku for Network Virtual Appliance resource.
+Perintah New-AzVirtualApplianceSkuProperties menentukan sumber daya Sku untuk Peralatan Virtual Jaringan.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ The New-AzVirtualApplianceSkuProperties command defines a Sku for Network Virtua
 PS C:\> $var=New-AzVirtualApplianceSkuProperty -VendorName "barracudasdwanrelease" -BundledScaleUnit 1 -MarketPlaceVersion 'latest'
 ```
 
-Membuat objek Properti Sku Perlengkapan Virtual untuk digunakan dengan New-AzNetworkVirtualAppliance baru. 
+Buat objek Properti Sku Alat Virtual untuk digunakan dengan perintah New-AzNetworkVirtualAppliance. 
 
 ## PARAMETERS
 
@@ -99,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

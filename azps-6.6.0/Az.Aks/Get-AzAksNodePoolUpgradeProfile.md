@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePoolUpgradeProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePoolUpgradeProfile.md
 ms.openlocfilehash: 9f4de92b49e80ee1b4c64f57f134f934571bd4c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140289399"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142377665"
 ---
 # Get-AzAksNodePoolUpgradeProfile
 
 ## SYNOPSIS
-Mendapatkan detail profil pemutakhiran untuk kelompok agen dengan grup sumber daya tertentu dan nama kluster yang dikelola.
+Mendapatkan detail profil pemutakhiran untuk kumpulan agen dengan grup sumber daya tertentu dan nama kluster terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/get-azaksnodepoolupgradeprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksnodepoolupgradeprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-AzAksNodePoolUpgradeProfile -InputObject <IAksIdentity> [-DefaultProfile <PS
 ```
 
 ## DESCRIPTION
-Mendapatkan detail profil pemutakhiran untuk kelompok agen dengan grup sumber daya tertentu dan nama kluster yang dikelola.
+Mendapatkan detail profil pemutakhiran untuk kumpulan agen dengan grup sumber daya tertentu dan nama kluster terkelola.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Dapatkan profil pemutakhiran kumpulan node Aks dengan nama grup sumber daya dan 
 ## PARAMETERS
 
 ### -AgentPoolName
-Nama agen kolam renang.
+Nama kumpulan agen.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama sumber daya kluster yang dikelola.
+Nama sumber daya kluster terkelola.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Aks.Models.IAksIdentity
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,13 +163,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IAksIdentity>: Parameter Identitas
-  - `[AgentPoolName <String>]`: Nama agen kolam renang.
+  - `[AgentPoolName <String>]`: Nama pool agen.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[ResourceName <String>]`: Nama sumber daya kluster terkelola.
-  - `[RoleName <String>]`: Nama peran untuk sumber daya accessProfile kluster terkelola.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceName <String>]`: Nama sumber daya kluster yang dikelola.
+  - `[RoleName <String>]`: Nama peran untuk sumber daya cluster accessProfile yang dikelola.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

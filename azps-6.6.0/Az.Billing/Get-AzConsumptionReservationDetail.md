@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationDetail.md
 ms.openlocfilehash: c5f5d7ec323eed81e955fd36c34ff887bf56f9db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979781"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325285"
 ---
 # Get-AzConsumptionReservationDetail
 
 ## SYNOPSIS
-Dapatkan detail pemesanan untuk rentang tanggal yang disediakan.
+Dapatkan detail reservasi untuk rentang tanggal yang disediakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azconsumptionreservationdetail) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionreservationdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzConsumptionReservationDetail -StartDate <DateTime> -EndDate <DateTime> -Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzConsumptionReservationDetail** mendapatkan detail pemesanan untuk rentang tanggal yang disediakan.
+Cmdlet **Get-AzConsumptionReservationDetail** mendapatkan detail reservasi untuk rentang tanggal yang disediakan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail reservasi dengan ID pesanan reservasi untuk rentang tanggal yang diberikan
+### Contoh 1: Dapatkan detail reservasi dengan ID pesanan reservasi untuk rentang tanggal yang disediakan
 ```powershell
 PS C:\> Get-AzConsumptionReservationDetail -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -StartDate 2017-10-01 -EndDate 2017-12-07
 Id:  providers/Microsoft.Capacity/reservationOrders/ca69259e-bd4f-45c3-bf28-3f353f9cce9b/reservations/f37f4b70-52ba-4344-a8bd-28abfd21d640providers/Microsoft.Consumption/reservationDetails/20171007
@@ -48,7 +48,7 @@ UsageDate:  10/7/2017 12:00:00 AM
 UsedHour:  24
 ```
 
-### Contoh 2: Dapatkan detail reservasi dengan ID pesanan pemesanan dan ID pemesanan untuk rentang tanggal yang disediakan
+### Contoh 2: Dapatkan detail reservasi dengan Id pesanan reservasi dan Id reservasi untuk rentang tanggal yang disediakan
 ```powershell
 PS C:\> Get-AzConsumptionReservationDetail -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -ReservationId f37f4b70-52ba-4344-a8bd-28abfd21d640 -StartDate 2017-10-01 -EndDate 2017-12-07
 Id:  providers/Microsoft.Capacity/reservationOrders/ca69259e-bd4f-45c3-bf28-3f353f9cce9b/reservations/f37f4b70-52ba-4344-a8bd-28abfd21d640providers/Microsoft.Consumption/reservationDetails/20171007
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Data akhir (DD-MM-YYY-MM dalam UTC) dari detail reservasi.
+Data akhir (YYYY-MM-DD dalam UTC) dari detail pemesanan.
 
 ```yaml
 Type: System.DateTime
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Pengidentifikasi reservasi dalam pesanan reservasi.
+Pengidentifikasi reservasi dalam pesanan pemesanan.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Data mulai (DD-MM-YYY-YYY dalam UTC) dari detail reservasi.
+Data awal (YYYY-MM-DD dalam UTC) dari detail pemesanan.
 
 ```yaml
 Type: System.DateTime
@@ -142,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

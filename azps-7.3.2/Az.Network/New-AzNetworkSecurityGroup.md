@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
-ms.openlocfilehash: 57edd81ccf6b673299842162299afe0ce7be5c3d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 264d4ffb7c12effc562eeaddd5c3ea92af7554eb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392638"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142371509"
 ---
 # New-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworksecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **New-AzNetworkSecurityGroup** membuat grup keamanan jaringan Azure.
 New-AzNetworkSecurityGroup -Name "nsg1" -ResourceGroupName "rg1"  -Location  "westus"
 ```
 
-Perintah ini membuat grup keamanan jaringan Azure baru bernama "nsg1" di grup sumber daya "rg1" di lokasi "westus".
+Perintah ini membuat grup keamanan jaringan Azure baru bernama "nsg1" dalam grup sumber daya "rg1" di lokasi "westus".
 
 ### Contoh 2: Membuat grup keamanan jaringan mendetail
 ```powershell
@@ -52,14 +55,14 @@ $nsg = New-AzNetworkSecurityGroup -ResourceGroupName TestRG -Location westus -Na
     "NSG-FrontEnd" -SecurityRules $rule1,$rule2
 ```
 
-Langkah:1 Buat aturan keamanan yang memungkinkan akses dari Internet untuk port 3389.<br>
-Langkah:2 Buat aturan keamanan yang memungkinkan akses dari Internet untuk port 80.<br>
+Langkah:1 Buat aturan keamanan yang memungkinkan akses dari Internet ke port 3389.<br>
+Langkah:2 Buat aturan keamanan yang memungkinkan akses dari Internet ke port 80.<br>
 Langkah:3 Tambahkan aturan yang dibuat di atas ke NSG baru bernama NSG-FrontEnd.<br>
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan untuk membuat grup keamanan jaringan.
+Menentukan kawasan tempat untuk membuat grup keamanan jaringan.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

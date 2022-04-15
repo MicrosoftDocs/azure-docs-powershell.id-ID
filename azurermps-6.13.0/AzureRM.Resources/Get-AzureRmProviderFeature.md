@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmProviderFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmProviderFeature.md
 ms.openlocfilehash: 5969a8c5d817f206d45dcbe67d438db3fba955ca
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428160"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142383758"
 ---
 # Get-AzureRmProviderFeature
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzureRmProviderFeature** mendapatkan nama fitur, nama penyedia, dan
 PS C:\>Get-AzureRmProviderFeature -ListAvailable
 ```
 
-Perintah ini akan menyediakan semua fitur yang tersedia.
+Perintah ini mendapatkan semua fitur yang tersedia.
 
 ### Contoh 2: Mendapatkan informasi tentang fitur tertentu
 ```
@@ -56,7 +56,7 @@ Perintah ini mendapatkan informasi untuk fitur bernama AllowPreReleaseRegions un
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -FeatureName
-Menentukan nama fitur yang akan dapatkan.
+Menentukan nama fitur yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListAvailable
-Cmdlet ini menunjukkan bahwa cmdlet ini memiliki semua fitur.
+Menunjukkan bahwa cmdlet ini mendapatkan semua fitur.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderNamespace
-Menentukan ruang nama cmdlet ini mendapatkan fitur penyedia.
+Menentukan ruang nama tempat cmdlet ini mendapatkan fitur penyedia.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

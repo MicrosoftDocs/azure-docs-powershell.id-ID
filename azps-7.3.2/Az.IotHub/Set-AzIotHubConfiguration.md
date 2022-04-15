@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubConfiguration.md
-ms.openlocfilehash: 897128d3f0259f90789ab154c7347eafdff82750
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e36d06a808a7112eaaa8574e2f899b9a91aa2362
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402435"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142346975"
 ---
 # Set-AzIotHubConfiguration
 
 ## SYNOPSIS
-Perbarui bidang yang dapat dimatikan dari pendaftaran konfigurasi.
+Perbarui bidang mutable dari registrasi konfigurasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Set-AzIotHubConfiguration [-ResourceId] <String> [-Name] <String> [-Priority <In
 
 ## DESCRIPTION
 Memperbarui properti tertentu dari konfigurasi manajemen perangkat otomatis IoT.
-Catatan: Konten konfigurasi dapat tetap tersedia. Properti konfigurasi yang bisa diperbarui adalah 'label', 'metrik', 'prioritas' dan 'targetCondition'.
+Catatan: Konten konfigurasi tidak dapat berubah. Properti konfigurasi yang dapat diperbarui adalah 'label', 'metrik', 'prioritas' dan 'targetCondition'.
 Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi selengkapnya.
 
 ## EXAMPLES
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Memungkinkan objek konfigurasi diganti meskipun telah diperbarui sejak diambil terakhir kali.
 
 ```yaml
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metric
+### -Metrik
 Kumpulan kueri untuk definisi metrik konfigurasi.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Bobot konfigurasi perangkat jika ada aturan yang bersaing (kemenangan tertinggi).
+Berat konfigurasi perangkat jika ada aturan bersaing (kemenangan tertinggi).
 
 ```yaml
 Type: System.Int32
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCondition
-Kondisi target di mana konfigurasi perangkat diterapkan.
+Kondisi target tempat konfigurasi perangkat diterapkan.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerServiceObjective.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerServiceObjective.md
-ms.openlocfilehash: 894445df4d3cfa775aada50c5f63acc2daf9b016
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 700a33e88f7139bbb538c00d7fc0cc09f4b2aea2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142339811"
 ---
 # Get-AzSqlServerServiceObjective
 
 ## SYNOPSIS
-Dapatkan tujuan layanan untuk Azure SQL Database server.
+Mendapatkan tujuan layanan untuk server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverserviceobjective) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzSqlServerServiceObjective [[-ServiceObjectiveName] <String>] [-ResourceGro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerServiceObjective** mendapatkan tujuan layanan yang tersedia untuk Azure SQL Database server.
+Cmdlet **Get-AzSqlServerServiceObjective** mendapatkan tujuan layanan yang tersedia untuk server Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tujuan layanan
+### Contoh 1: Mendapatkan tujuan layanan
 ```
 PS C:\>Get-AzSqlServerServiceObjective -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 serviceObjectiveName SkuName       Edition          Family Capacity CapacityUnit Enabled
@@ -58,7 +61,7 @@ BC_Gen5_4            BC_Gen5       BusinessCritical Gen5   4        VCores      
 
 Perintah ini mendapatkan tujuan layanan untuk server bernama Server01.
 
-### Contoh 2: Dapatkan tujuan layanan menggunakan pemfilteran
+### Contoh 2: Mendapatkan tujuan layanan menggunakan pemfilteran
 ```
 PS C:\>Get-AzSqlServerServiceObjective -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ServiceObjectiveName "P*"
 ServiceObjectiveName SkuName       Edition          Family Capacity CapacityUnit Enabled
@@ -67,9 +70,9 @@ P1                   Premium       Premium                 125      DTU         
 P2                   Premium       Premium                 250      DTU          True
 ```
 
-Perintah ini mendapatkan tujuan layanan untuk server bernama Server01 yang dimulai dengan "System".
+Perintah ini mendapatkan tujuan layanan untuk server bernama Server01 yang dimulai dengan "Sistem".
 
-### Contoh 3: Dapatkan tujuan layanan untuk lokasi
+### Contoh 3: Mendapatkan tujuan layanan untuk lokasi
 ```
 PS C:\>Get-AzSqlServerServiceObjective -Location "west us"
 serviceObjectiveName SkuName       Edition          Family Capacity CapacityUnit Enabled
@@ -88,12 +91,12 @@ BC_Gen4_1            BC_Gen4       BusinessCritical Gen4   1        VCores      
 BC_Gen5_4            BC_Gen5       BusinessCritical Gen5   4        VCores       True
 ```
 
-Perintah ini sesuai dengan tujuan layanan untuk kawasan Azure yang ditentukan.
+Perintah ini mendapatkan tujuan layanan untuk kawasan Azure tertentu.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mendapatkan tujuan layanan untuk server SQL Database ditetapkan ke sumber daya ini.
+Cmdlet ini mendapatkan tujuan layanan untuk server SQL Database yang ditetapkan ke sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -154,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama tujuan layanan untuk suatu Azure SQL Database server.
-Nilai yang dapat diterima untuk parameter ini adalah: Basic, S0, S1, S2, P1, P2, dan P3.
+Menentukan nama tujuan layanan untuk server Azure SQL Database.
+Nilai yang dapat diterima untuk parameter ini adalah: Dasar, S0, S1, S2, P1, P2, dan P3.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: True
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,6 +218,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

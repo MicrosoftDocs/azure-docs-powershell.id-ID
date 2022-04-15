@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Remove-AzureRmADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Remove-AzureRmADAppCredential.md
 ms.openlocfilehash: 6c076258acd19714f30976fd353d7cbbacdf1d94
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420316"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142383443"
 ---
 # Remove-AzureRmADAppCredential
 
@@ -47,9 +47,9 @@ Remove-AzureRmADAppCredential [-KeyId <Guid>] -ApplicationObject <PSADApplicatio
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmADAppCredential cmdlet bisa digunakan untuk menghapus kunci kredensial dari aplikasi dalam kasus kedaluwarsa kunci kredensial rol atau sebagai bagian dari kredensial.
+Cmdlet Remove-AzureRmADAppCredential dapat digunakan untuk menghapus kunci kredensial dari aplikasi dalam kasus kompromi atau sebagai bagian dari kedaluwarsa rollover kunci kredensial.
 Aplikasi diidentifikasi dengan menyediakan ID objek atau AppId.
-Kredensial yang akan dihapus diidentifikasi dengan ID kuncinya.
+Kredensial yang akan dihapus diidentifikasi oleh ID kuncinya.
 
 ## EXAMPLES
 
@@ -69,13 +69,13 @@ PS C:\> Remove-AzureRmADAppCredential -ApplicationId 4589cd6b-3d79-4bb4-93b8-a0b
 
 Menghapus semua kredensial dari aplikasi dengan id aplikasi '4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58'.
 
-### Contoh 3 - Hapus semua kredensial menggunakan pemipaan
+### Contoh 3 - Menghapus semua kredensial menggunakan perpipaan
 
 ```
 PS C:\> Get-AzureRmADApplication -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 | Remove-AzureRmADAppCredential
 ```
 
-Dapatkan aplikasi dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzureRmADAppCredential dan menghapus semua kredensial dari aplikasi itu.
+Mendapatkan aplikasi dengan id objek '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' dan pipa yang ke cmdlet Remove-AzureRmADAppCredential dan menghapus semua kredensial dari aplikasi itu.
 
 ## PARAMETERS
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -139,8 +139,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Beralihlah ke hapus kredensial tanpa konfirmasi.
+### -Paksa
+Beralih untuk menghapus kredensial tanpa konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -252,7 +252,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
@@ -265,6 +265,6 @@ Parameter: ApplicationObject (ByValue)
 
 [Get-AzureRmADAppCredential](./Get-AzureRmADAppCredential.md)
 
-[New-AzureRmADAppCredential](./New-AzureRmADAppCredential.md)
+[AzureRmADAppCredential baru](./New-AzureRmADAppCredential.md)
 
-[Get-AzureRmADApplication](./Get-AzureRmADApplication.md)
+[Get-AzureRmADAplikasi](./Get-AzureRmADApplication.md)
