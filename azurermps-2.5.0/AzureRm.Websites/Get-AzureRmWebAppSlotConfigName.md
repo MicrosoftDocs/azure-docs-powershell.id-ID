@@ -4,17 +4,17 @@ Module Name: AzureRM.WebSites
 ms.assetid: EF2D377C-C000-4BCA-8EB9-58C805FA5C31
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/get-azurermwebappslotconfigname
 schema: 2.0.0
-ms.openlocfilehash: b3905037941932b3af95d5ca6b3ead7f8debd09089bf5027d0e255f701dbbc1e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ff05a30c495475b63b0385f3398c78e0b018a4bc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868353"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142391855"
 ---
 # Get-AzureRmWebAppSlotConfigName
 
 ## SYNOPSIS
-Mendapatkan daftar nama Konfigurasi Slot Web App
+Dapatkan daftar nama Web App Slot Config
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,12 +42,12 @@ Cmdlet **Get-AzureRmWebAppSlotConfigName** mengambil daftar nama Pengaturan Apli
 PS C:\>Get-AzureRmWebAppSlotConfigName -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini memungkinkan App Pengaturan string koneksi terkait dengan Web App bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mendapatkan string Aplikasi Pengaturan dan Koneksi yang berkaitan dengan Aplikasi Web bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

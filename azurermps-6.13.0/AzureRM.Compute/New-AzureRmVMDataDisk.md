@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVMDataDisk.md
 ms.openlocfilehash: 6eb86e0c2ddb8c5e3a46cf10f98bcea52ba03dd4
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140865050"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389275"
 ---
 # New-AzureRmVMDataDisk
 
 ## SYNOPSIS
-Membuat objek disk data lokal untuk mesin virtual atau VM Vmss.
+Membuat objek disk data lokal untuk mesin virtual atau VM VM.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Cmdlet **New-AzureRmVMDataDisk** membuat objek disk data lokal untuk mesin virtu
 
 ## EXAMPLES
 
-### Contoh 1: Add a managed data disk to a Vmss VM.
+### Contoh 1: Menambahkan disk data terkelola ke VM VM.
 ```
 PS C:\> $disk = Get-AzureRmDisk -ResourceGroupName $rgname -DiskName $diskname0
 PS C:\> $datadisk = New-AzureRmVMDataDisk -Caching 'ReadOnly' -Lun 2 -CreateOption Attach -StorageAccountType Standard_LRS -ManagedDiskId $disk.Id
@@ -48,15 +48,15 @@ PS C:\> $VmssVM = Get-AzureRmVmssVM -ResourceGroupName "myrg" -VMScaleSetName "m
 PS C:\> Update-AzureRmVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0 -DataDisk $datadisk
 ```
 
-Perintah pertama mendapatkan disk terkelola yang sudah ada.
-Perintah berikutnya membuat objek disk data dengan disk terkelola.
-Perintah berikutnya akan memiliki Vmss VM yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
+Perintah pertama akan mendapatkan disk terkelola yang sudah ada.
+Perintah berikutnya membuat objek disk data dengan disk yang dikelola.
+Perintah berikutnya mendapatkan VM Vmss yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
 Perintah terakhir memperbarui VM VM dengan menambahkan disk data baru.
 
 ## PARAMETERS
 
 ### -Caching
-Penyimpanan cache disk data mesin virtual.
+Cache disk data mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.CachingTypes
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Lun disk data mesin virtual.
+Disk data mesin virtual Lun.
 
 ```yaml
 Type: System.Int32
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskId
-ID disk yang dikelola mesin virtual.
+Id disk terkelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceImageUri
-Uri gambar sumber disk OS mesin virtual.
+Sumber gambar sumber disk OS mesin virtual Uri.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun disk terkelola mesin virtual.
+Tipe akun disk yang dikelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdUri
-Vhd Uri disk data mesin virtual.
+Disk data mesin virtual Vhd Uri.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk data yang dikelola.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk data yang dikelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -232,7 +232,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.CachingTypes
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

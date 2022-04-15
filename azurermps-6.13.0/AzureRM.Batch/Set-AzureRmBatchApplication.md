@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureRmBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Set-AzureRmBatchApplication.md
 ms.openlocfilehash: 8ede896e6a49cee5305e7f9fd42f6dab130e7986
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142389698"
 ---
 # Set-AzureRmBatchApplication
 
 ## SYNOPSIS
-Pembaruan pengaturan untuk aplikasi tertentu.
+Pengaturan pembaruan untuk aplikasi yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,18 +33,18 @@ Cmdlet **Set-AzureRmBatchApplication** mengubah pengaturan untuk aplikasi Azure 
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui aplikasi dalam akun Kumpulan
+### Contoh 1: Memperbarui aplikasi dalam akun Batch
 ```
 PS C:\>Set-AzureRmBatchApplication -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationId "Litware" -AllowUpdates $False
 ```
 
 Perintah ini mengubah apakah aplikasi Llitware di akun ContosoBatch memungkinkan pembaruan.
-Perintah tidak mengubah nama tampilan atau versi default aplikasi.
+Perintah tidak mengubah versi default atau nama tampilan aplikasi.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Batch yang digunakan cmdlet untuk memodifikasi aplikasi.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini mengubah aplikasi.
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowUpdates
-Menentukan apakah paket dalam aplikasi bisa ditimpa menggunakan string versi yang sama.
+Menentukan apakah paket dalam aplikasi dapat ditimpa menggunakan string versi yang sama.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultVersion
-Menentukan paket mana yang digunakan jika klien meminta aplikasi tapi tidak menentukan versi.
+Menentukan paket mana yang akan digunakan jika klien meminta aplikasi tetapi tidak menentukan versi.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -149,13 +149,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -169,11 +169,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmBatchApplicationPackage](./Get-AzureRmBatchApplicationPackage.md)
 
-[New-AzureRmBatchApplication](./New-AzureRmBatchApplication.md)
+[AzureRmBatchApplication baru](./New-AzureRmBatchApplication.md)
 
 [New-AzureRmBatchApplicationPackage](./New-AzureRmBatchApplicationPackage.md)
 
-[Remove-AzureRmBatchApplication](./Remove-AzureRmBatchApplication.md)
+[Hapus-AzureRmBatchAplikasi](./Remove-AzureRmBatchApplication.md)
 
 [Remove-AzureRmBatchApplicationPackage](./Remove-AzureRmBatchApplicationPackage.md)
 

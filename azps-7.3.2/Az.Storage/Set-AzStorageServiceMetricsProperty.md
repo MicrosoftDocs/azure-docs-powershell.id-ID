@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceMetricsProperty.md
-ms.openlocfilehash: 0850661f8aa125ca8921c9621c74d310dcafb458
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6d019da032bd3995ad986b0ff0beaf70fe60afe3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142397681"
 ---
 # Set-AzStorageServiceMetricsProperty
 
 ## SYNOPSIS
 Mengubah properti metrik untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageservicemetricsproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzStorageServiceMetricsProperty [-ServiceType] <StorageServiceType> [-Metric
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageServiceMetricsProperty** memodifikasi properti metrik untuk layanan Azure Storage.
+Cmdlet **Set-AzStorageServiceMetricsProperty** mengubah properti metrik untuk layanan Azure Storage.
 
 ## EXAMPLES
 
@@ -36,8 +39,8 @@ Cmdlet **Set-AzStorageServiceMetricsProperty** memodifikasi properti metrik untu
 C:\PS>Set-AzStorageServiceMetricsProperty -ServiceType Blob -MetricsType Hour -MetricsLevel Service -PassThru -RetentionDays 10 -Version 1.0
 ```
 
-Perintah ini memodifikasi metrik versi 1.0 untuk penyimpanan blob ke tingkat Layanan.
-Azure Storage layanan kami mempertahankan entri selama 10 hari.
+Perintah ini mengubah metrik versi 1.0 untuk penyimpanan blob ke tingkat Layanan.
+Azure Storage metrik layanan mempertahankan entri selama 10 hari.
 Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti metrik yang diubah.
 
 ## PARAMETERS
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ### -MetricsLevel
 Menentukan tingkat metrik yang Azure Storage gunakan untuk layanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Layanan
 - ServiceAndApi
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 
 ### -MetricsType
 Menentukan tipe metrik.
-Cmdlet ini mengatur Azure Storage metrik layanan sesuai nilai yang ditentukan parameter ini.
+Cmdlet ini mengatur tipe metrik layanan Azure Storage ke nilai yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Jam dan Menit.
 
 ```yaml
@@ -144,11 +147,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mengubah properti metrik untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mengubah properti metrik untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi metrik Azure Storage.
-Nilai default adalah 1,0.
+Nilai defaultnya adalah 1,0.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

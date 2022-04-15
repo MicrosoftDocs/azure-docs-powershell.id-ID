@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVmssDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVmssDiskEncryptionExtension.md
-ms.openlocfilehash: 5daa6a0c528f83486bb1e2042913eb4df1c54d95900458d04d09120759634da9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: aeac00806ef77d756dc8060b06f7baa995568fbd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867690"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388953"
 ---
 # Set-AzureRmVmssDiskEncryptionExtension
 
@@ -31,9 +31,9 @@ Set-AzureRmVmssDiskEncryptionExtension [-ResourceGroupName] <String> [-VMScaleSe
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVmssDiskEncryptionExtension** mengaktifkan enkripsi pada kumpulan skala VM.
-Cmdlet ini mengaktifkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
-Jika tidak *ada* parameter Nama yang ditentukan, ekstensi dengan nama default AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk komputer virtual Linux diinstal.
+Cmdlet **Set-AzureRmVmssDiskEncryptionExtension** memungkinkan enkripsi pada kumpulan skala VM.
+Cmdlet ini memungkinkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
+Jika tidak ada parameter *Nama* yang ditentukan, ekstensi dengan nama default AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows atau AzureDiskEncryptionForLinux untuk mesin virtual Linux diinstal.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ $KeyVaultResourceId = $KeyVault.ResourceId
 PS C:\> Set-AzureRmVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSetName $VmssName -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId
 ```
 
-Perintah ini mengaktifkan enkripsi pada semua disk VM dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada semua disk dari semua VM dalam kumpulan skala VM.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultId
-RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan
+RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultUrl
-URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan
+URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ExtensionName
 Nama ekstensi.
-Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk WINDOWS VM dan AzureDiskEncryptionForLinux untuk Linux VM
+Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk windows VM dan AzureDiskEncryptionForLinux untuk VM Linux
 
 ```yaml
 Type: System.String
@@ -128,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Untuk memaksa mengaktifkan enkripsi pada kumpulan skala mesin virtual.
+### -Paksa
+Untuk mengaktifkan enkripsi pada kumpulan skala mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdate
-Buat tag untuk pembaruan paksa.  Hal ini harus dilakukan untuk melakukan operasi enkripsi berulang pada VM yang sama.
+Buat tag untuk pembaruan paksa.  Ini harus diberikan untuk melakukan operasi enkripsi berulang pada VM yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyUrl
-URL KeyVault Versi dari KeyEncryptionKey digunakan untuk mengenkripsi kunci enkripsi disk
+URL KeyVault versi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-ResourceID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
+RESOURCEID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: System.String
@@ -204,9 +204,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Passphrase
-Kata sandi yang ditentukan dalam parameter.
-Parameter ini hanya berfungsi untuk Vm Linux.
+### -Frasa sandi
+Frasa sandi yang ditentukan dalam parameter.
+Parameter ini hanya berfungsi untuk Linux VM.
 
 ```yaml
 Type: System.String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat VM Scale Set ditetapkan
+Nama grup sumber daya tempat Kumpulan Skala VM berada
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Versi penanganan tipe.
+Versi pengatur tipe.
 
 ```yaml
 Type: System.String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

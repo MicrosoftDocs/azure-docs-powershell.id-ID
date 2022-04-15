@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
-ms.openlocfilehash: 4251964a09e151d35c3c99bd6900563ba89fe115
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 77be2fb29f6832719308fb015c405f0aa130e235
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142397033"
 ---
 # Get-AzSynapseIntegrationRuntimeNode
 
 ## SYNOPSIS
-Mendapatkan informasi node runtime integrasi.
+Mendapatkan informasi simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Get-AzSynapseIntegrationRuntimeNode -InputObject <PSIntegrationRuntime> -Name <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseIntegrationRuntimeNode** mendapatkan informasi detail tentang node runtime integrasi.
+Cmdlet **Get-AzSynapseIntegrationRuntimeNode** mendapatkan informasi detail dari simpul runtime integrasi.
 
 ## EXAMPLES
 
@@ -54,14 +57,14 @@ Cmdlet **Get-AzSynapseIntegrationRuntimeNode** mendapatkan informasi detail tent
 PS C:\> Get-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1'
 ```
 
-Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di ruang kerja ContosoWorkspace.
+Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -IpAddress
 ```
 
-Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di ruang kerja 'test-df-eu2', termasuk alamat IP.
+Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di ruang kerja 'test-df-eu2', termasuk alamat IP.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat IP node runtime integrasi.
+Alamat IP simpul runtime integrasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama node runtime integrasi.
+Nama simpul runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari runtime integrasi Synapse.
+Pengidentifikasi sumber daya runtime integrasi Synapse.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

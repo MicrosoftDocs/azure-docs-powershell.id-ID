@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: a326478a29000a038ea64f4f5fb08c42b8b8c24a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5803f3328e49126ba0c5e51c3701fab703cac7d6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178564"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142400975"
 ---
 # Enable-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
-Memungkinkan pengunggahan ringkasan Ledger ke akun Azure Storage atau ke Azure Confidential Ledger.
+Memungkinkan pengunggahan pencernaan buku besar ke akun Azure Storage atau ke Azure Confidential Ledger.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Enable-AzSqlDatabaseLedgerDigestUpload [-Endpoint] <String> [-ResourceId] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet Enable-AzSqlDatabaseLedgerDigestUpload memungkinkan pengunggahan ringkasan ledger ke penyimpanan Blob Azure atau Azure Confidential Ledger. Untuk menggunakan cmdlet, tentukan titik akhir akun penyimpanan Blob Azure atau ledger di Ledger Rahasia Azure, lalu identifikasi database. Jika mengunggah ringkasan Ledger telah diaktifkan, cmdlet akan mengatur ulang titik akhir penyimpanan digest ke nilai baru.
+Cmdlet Enable-AzSqlDatabaseLedgerDigestUpload memungkinkan pengunggahan pencernaan buku besar ke penyimpanan Azure Blob atau Azure Confidential Ledger. Untuk menggunakan cmdlet, tentukan titik akhir akun penyimpanan Blob Azure atau buku besar di Azure Confidential Ledger, dan identifikasi database. Jika pengunggahan pencernaan ledger sudah diaktifkan, cmdlet akan mengatur ulang titik akhir penyimpanan digest ke nilai baru.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet Enable-AzSqlDatabaseLedgerDigestUpload memungkinkan pengunggahan ringkasa
 PS C:\> Enable-AzSqlDatabaseLedgerDigestUpload -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -Endpoint "https://mystorage.blob.core.windows.net" 
 ```
 
-Titik akhir Status ServerName ServerName ResourceGroupName
+Titik Akhir Status NamaData Database ResourceGroupName ServerName
 ----------------- ---------- ------------ -----   --------
 ResourceGroup01 Server01 Database01 Diaktifkan https://mystorage.blob.core.windows.net 
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Titik akhir Azure Sql Database Ledger Digest Uploads.
+Titik akhir Unggahan Azure Sql Database Ledger Digest.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database untuk menonaktifkan unggahan ringkasan untuk.
+Objek database untuk menonaktifkan unggahan digest.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya database untuk menonaktifkan unggahan ringkasan.
+Id sumber daya database untuk menonaktifkan unggahan digest.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

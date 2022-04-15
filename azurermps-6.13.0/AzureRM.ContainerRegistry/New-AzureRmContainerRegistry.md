@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/New-AzureRmContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/New-AzureRmContainerRegistry.md
 ms.openlocfilehash: b70e4b4c184cfb6ebc5473cb0f49dec712bc62fd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421711"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142388652"
 ---
 # New-AzureRmContainerRegistry
 
 ## SYNOPSIS
-Membuat registri wadah.
+Membuat registri kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,7 +32,7 @@ Cmdlet New-AzureRmContainerRegistry membuat registri wadah.
 
 ## EXAMPLES
 
-### Contoh 1: Buat registri wadah dengan akun penyimpanan baru.
+### Contoh 1: Buat registri kontainer dengan akun penyimpanan baru.
 ```powershell
 PS C:\>New-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -Sku "Basic"
 
@@ -44,9 +44,9 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini membuat registri wadah dengan akun penyimpanan baru dalam grup sumber daya \` MyResourceGroup \` .
+Perintah ini membuat registri kontainer dengan akun penyimpanan baru dalam grup \`sumber daya MyResourceGroup\`.
 
-### Contoh 2: Buat registri wadah dengan pengguna admin diaktifkan.
+### Contoh 2: Membuat registri kontainer dengan pengguna admin diaktifkan.
 ```powershell
 PS C:\>New-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -Sku "Basic" -EnableAdminUser
 
@@ -58,9 +58,9 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini membuat registri wadah dengan pengguna admin diaktifkan.
+Perintah ini membuat registri kontainer dengan pengguna admin diaktifkan.
 
-### Contoh 3: Buat registri wadah dengan akun penyimpanan yang sudah ada.
+### Contoh 3: Buat registri kontainer dengan akun penyimpanan yang sudah ada.
 ```powershell
 PS C:\>New-AzureRmContainerRegistry -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -Sku "Basic" -StorageAccountName "mystorageaccount"
 
@@ -72,12 +72,12 @@ Registry Name     Sku        LoginServer               CreationDate             
 myregistry        Premium    myregistry.azurecr.io     10/31/2017 6:49:31 PM      Succeeded  True
 ```
 
-Perintah ini membuat registri wadah dengan akun penyimpanan \` mystorageaccount yang sudah ada \` dalam langganan yang sama.
+Perintah ini membuat registri kontainer dengan akun \`penyimpanan mystorageaccount\` yang sudah ada dalam langganan yang sama.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAdminUser
-Aktifkan pengguna admin untuk registri wadah.
+Aktifkan pengguna admin untuk registri kontainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Container Registry Location.
+Lokasi Registri Kontainer.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Container Registry SKU.
-Nilai yang diperbolehkan: Dasar.
+Kontainer Registri SKU.
+Nilai yang diizinkan: Dasar.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container Registry Tags.Key-value pairs dalam bentuk tabel hash.
+Container Registry Tags.Key-value pairs in the form of a hash table.
 Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -248,7 +248,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmContainerRegistry](Get-AzureRmContainerRegistry.md)
 
-[Update-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
+[Pembaruan-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
 
-[Remove-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
+[Hapus-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
 
