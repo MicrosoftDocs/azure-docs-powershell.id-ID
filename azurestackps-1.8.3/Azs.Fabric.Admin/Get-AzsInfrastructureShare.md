@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4e39a2d9e314a29eaf273e4ef20e71d96293f1f7
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577822"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142333241"
 ---
 # Get-AzsInfrastructureShare
 
 ## SYNOPSIS
-Mengembalikan daftar dari semua file kain yang bagikan di lokasi tertentu.
+Mengembalikan daftar semua file kain yang dibagikan di lokasi tertentu.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsInfrastructureShare [-Location <String>] [-ResourceGroupName <String>] [-
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsInfrastructureShare [-Name] <String> [-Location <String>] [-ResourceGroupName <String>]
  [<CommonParameters>]
@@ -35,7 +35,7 @@ Get-AzsInfrastructureShare -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar dari semua file kain yang bagikan di lokasi tertentu.
+Mengembalikan daftar semua file kain yang dibagikan di lokasi tertentu.
 
 ## EXAMPLES
 
@@ -44,19 +44,19 @@ Mengembalikan daftar dari semua file kain yang bagikan di lokasi tertentu.
 Get-AzsInfrastructureShare
 ```
 
-Mengembalikan daftar semua file yang bagikan.
+Mengembalikan daftar semua berbagi file.
 
 ### CONTOH 2
 ```
 Get-AzsInfrastructureShare -Name Microsoft.AzureStack.Management.Fabric.Admin.Models.FileShare.Name
 ```
 
-Mengembalikan file yang dibagikan berdasarkan nama.
+Mengembalikan berbagi file berdasarkan nama.
 
 ## PARAMETERS
 
 ### -Nama
-Fabric file share name.
+Nama berbagi file fabric.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

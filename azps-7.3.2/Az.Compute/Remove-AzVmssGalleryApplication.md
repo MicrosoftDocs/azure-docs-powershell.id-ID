@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssGalleryApplication.md
-ms.openlocfilehash: bf399891f10e5726a606143fa41d62c02528c958
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ef7278d32a26e72fb75b6a37bd59933c93e556e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140545242"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142347281"
 ---
 # Remove-AzVmssGalleryApplication
 
 ## SYNOPSIS
 Hapus objek VMGalleryApplication dari objek PSVirtualMachineScaleSetVMProfile.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmssgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryApplicationsReferenceId
-Id Referensi Paket dari Aplikasi Galeri untuk menghapus.
+Id Referensi Paket dari Aplikasi Galeri untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -67,7 +70,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetvm
+### -VirtualMachineScaleSetVM
 Objek PSVirtualMachineScaleSetVMProfile untuk menghapus ID Referensi Aplikasi Galeri dari.
 
 ```yaml
@@ -83,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

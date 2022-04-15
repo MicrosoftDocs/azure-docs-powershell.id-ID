@@ -6,29 +6,29 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/Add-AzureRmServiceFabricClusterCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/Add-AzureRmServiceFabricClusterCertificate.md
 ms.openlocfilehash: fa357a4f5b8e599858ce5aff3e0aa11121833ba1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425106"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142336172"
 ---
 # Add-AzureRmServiceFabricClusterCertificate
 
 ## SYNOPSIS
-Menambahkan sertifikat kluster sekunder ke kluster.
+Tambahkan sertifikat kluster sekunder ke kluster.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### MenurutExistingKeyVault
+### ByExistingKeyVault
 ```
 Add-AzureRmServiceFabricClusterCertificate [-ResourceGroupName] <String> [-Name] <String>
  -SecretIdentifier <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ByNewVaultxAndVaultName
+### ByNewPfxAndVaultName
 ```
 Add-AzureRmServiceFabricClusterCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-KeyVaultResouceGroupName <String>] [-KeyVaultName <String>] [-CertificateOutputFolder <String>]
@@ -36,7 +36,7 @@ Add-AzureRmServiceFabricClusterCertificate [-ResourceGroupName] <String> [-Name]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MenurutExistingVaultxAndVaultName
+### ByExistingPfxAndVaultName
 ```
 Add-AzureRmServiceFabricClusterCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-KeyVaultResouceGroupName <String>] [-KeyVaultName <String>] -CertificateFile <String>
@@ -45,7 +45,7 @@ Add-AzureRmServiceFabricClusterCertificate [-ResourceGroupName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Gunakan **Add-AzureRmServiceFabricClusterCertificate** untuk menambahkan sertifikat kluster sekunder, baik dari kunci vault Azure yang sudah ada atau membuat kunci vault Azure baru menggunakan sertifikat yang sudah ada yang disediakan atau dari sertifikat baru yang ditandatangani sendiri yang dibuat. Kluster ini akan menimpa kluster sekunder jika ada.
+Gunakan **Add-AzureRmServiceFabricClusterCertificate** untuk menambahkan sertifikat kluster sekunder, baik dari kubah kunci Azure yang sudah ada atau membuat kubah kunci Azure baru menggunakan sertifikat yang sudah ada yang disediakan atau dari sertifikat yang ditandatangani sendiri yang dibuat. Ini akan menimpa kluster sekunder jika ada.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Add-AzureRmServiceFabricClusterCertificate -ResourceGroupName 'Group1' -Name 'Co
 -SecretIdentifier 'https://contoso03vault.vault.azure.net/secrets/contoso03vaultrg/7f7de9131c034172b9df37ccc549524f'
 ```
 
-Perintah ini akan menambahkan sertifikat dalam kunci vault Azure yang sudah ada sebagai sertifikat kluster sekunder.
+Perintah ini akan menambahkan sertifikat di kubah kunci Azure yang sudah ada sebagai sertifikat kluster sekunder.
 
 ### Contoh 2
 ```
@@ -64,7 +64,7 @@ PS c:\> add-AzureRmServiceFabricClusterCertificate -ResourceGroupName 'Group2' -
 -CertificateOutputFolder 'c:\test' -CertificatePassword $pwd
 ```
 
-Perintah ini akan membuat sertifikat yang ditandatangani sendiri dalam kunci vault Azure dan memutakhirkan kluster untuk menggunakannya sebagai sertifikat kluster sekunder.
+Perintah ini akan membuat sertifikat yang ditandatangani sendiri di kubah kunci Azure dan memutakhirkan kluster untuk menggunakannya sebagai sertifikat kluster sekunder.
 
 ## PARAMETERS
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultName
-Nama key vault Azure.
+Nama kubah tombol Azure.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultResouceGroupName
-Nama grup sumber daya penyimpanan tombol Azure.
+Nama grup sumber daya kubah kunci Azure.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretIdentifier
-Url rahasia penyimpanan kunci Azure yang sudah ada.
+Url rahasia kubah kunci Azure yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -267,7 +267,7 @@ Parameter: CertificatePassword (ByValue)
 
 ## RELATED LINKS
 
-[Remove-AzureRmServiceFabricClusterCertificate](./Remove-AzureRmServiceFabricClusterCertificate.md)
+[Hapus-AzureRmServiceFabricClusterCertificate](./Remove-AzureRmServiceFabricClusterCertificate.md)
 
 [New-AzureRmServiceFabricCluster](./New-AzureRmServiceFabricCluster.md)
 

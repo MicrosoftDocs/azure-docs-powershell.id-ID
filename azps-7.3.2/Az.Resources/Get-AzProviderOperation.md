@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderOperation.md
-ms.openlocfilehash: 85127a29b151ba41f9a0077b0b815d69a9b5f0b2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e37b50b03f525dcc30e911a2f7ba601514083462
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006634"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142341953"
 ---
 # Get-AzProviderOperation
 
 ## SYNOPSIS
-Dapatkan operasi untuk penyedia sumber daya Azure yang dapat mengamankan menggunakan Azure RBAC.
+Mendapatkan operasi untuk penyedia sumber daya Azure yang dapat disempurnakan menggunakan Azure RBAC.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azprovideroperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,13 +29,13 @@ Get-AzProviderOperation [[-OperationSearchString] <String>] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Sumber Get-AzProviderOperation operasi yang diekspos oleh penyedia sumber daya Azure.
-Operasi bisa dibuat untuk membuat peran kustom di Azure RBAC.
-Perintah akan mengambil sebagai input string pencarian operasi (dengan karakter wildcard(-karakter) yang menentukan *detail operasi untuk ditampilkan. Gunakan Get-AzProviderOperation * untuk mendapatkan semua operasi bagi semua penyedia sumber daya Azure. Gunakan Get-AzProviderOperation Microsoft.Compute/* untuk mendapatkan semua operasi penyedia sumber daya Microsoft.Compute.
+Get-AzProviderOperation mendapatkan operasi yang diekspos oleh penyedia sumber daya Azure.
+Operasi dapat dibuat untuk membuat peran kustom di Azure RBAC.
+Perintah diambil sebagai input string pencarian operasi (dengan karakter wildcard(*) yang mungkin, yang menentukan detail operasi untuk ditampilkan. Gunakan Get-AzProviderOperation * untuk mendapatkan semua operasi untuk semua penyedia sumber daya Azure. Gunakan Get-AzProviderOperation Microsoft.Compute/* untuk mendapatkan semua operasi penyedia sumber daya Microsoft.Compute.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua tindakan untuk semua penyedia
+### Contoh 1: Dapatkan semua tindakan untuk semua penyedia
 ```powershell
 PS C:\> Get-AzProviderOperation *
 ```
@@ -42,7 +45,7 @@ PS C:\> Get-AzProviderOperation *
 PS C:\> Get-AzProviderOperation Microsoft.Insights/*
 ```
 
-### Contoh 3: Mendapatkan semua tindakan yang bisa dilakukan pada mesin virtual
+### Contoh 3: Dapatkan semua tindakan yang dapat dilakukan di mesin virtual
 ```powershell
 PS C:\> Get-AzProviderOperation */virtualMachines/*
 ```
@@ -50,7 +53,7 @@ PS C:\> Get-AzProviderOperation */virtualMachines/*
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationSearchString
-String pencarian operasi (dengan kemungkinan karakter wildcard (*))
+String pencarian operasi (dengan karakter wildcard (*) yang memungkinkan)
 
 ```yaml
 Type: System.String
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -91,6 +94,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.PSResourceProviderOperation
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

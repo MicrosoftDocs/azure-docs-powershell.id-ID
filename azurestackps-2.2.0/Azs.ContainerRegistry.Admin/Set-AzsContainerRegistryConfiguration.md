@@ -4,16 +4,16 @@ Module Name: Azs.ContainerRegistry.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.containerregistry.admin/set-azscontainerregistryconfiguration
 schema: 2.0.0
 ms.openlocfilehash: ef2b172ffb5fe5f6ff5219151060c60a83864d43
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577469"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142330703"
 ---
 # Set-AzsContainerRegistryConfiguration
 
 ## SYNOPSIS
-Mengonfigurasi properti konfigurasi keseluruhan registri wadah.
+Mengonfigurasi registri kontainer keseluruhan properti konfigurasi.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Set-AzsContainerRegistryConfiguration -ConfigurationName <String> [-Location <St
  [<CommonParameters>]
 ```
 
-### Put
+### Menempatkan
 ```
 Set-AzsContainerRegistryConfiguration -ConfigurationName <String>
  -CONFIGURATIONOBJECT \<IContainerRegistryConfiguration> [-Location <String>] [-SubscriptionId <String>]
@@ -32,11 +32,11 @@ Set-AzsContainerRegistryConfiguration -ConfigurationName <String>
 ```
 
 ## DESCRIPTION
-Mengonfigurasi properti konfigurasi keseluruhan registri wadah.
+Mengonfigurasi registri kontainer keseluruhan properti konfigurasi.
 
 ## EXAMPLES
 
-### Contoh 1: Set azs ContainerRegistry Configuration
+### Contoh 1: Atur Azs ContainerRegistry Configuration
 ```powershell
 PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 -ConfigurationName default | ConvertTo-Json
 
@@ -48,7 +48,7 @@ PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 -Configur
 }
 ```
 
-Mengonfigurasi properti konfigurasi keseluruhan registri wadah.
+Mengonfigurasi registri kontainer keseluruhan properti konfigurasi.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationObject
-Properti konfigurasi registri wadah.
+Properti konfigurasi registri kontainer.
 Untuk membuat, lihat bagian CATATAN untuk properti CONFIGURATIONOBJECT dan membuat tabel hash.
 
 ```yaml
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,7 +194,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONFIGURATIONOBJECT \<IContainerRegistryConfiguration> : Properti konfigurasi registri wadah.
+CONFIGURATIONOBJECT \<IContainerRegistryConfiguration>: Properti konfigurasi registri kontainer.
   - `[MaximumCapacityInGiB <Int32?>]`: Total kapasitas penyimpanan (GiB) yang dapat digunakan oleh registri.
 
 ## RELATED LINKS

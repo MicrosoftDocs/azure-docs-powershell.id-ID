@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
-ms.openlocfilehash: 9739e39f54528fb7aaf291426b91fedf95be881b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9b5b052e146b62c4e3c25697c244dcef42b87ccf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572150"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142348829"
 ---
 # New-AzCdnEndpoint
 
 ## SYNOPSIS
-Membuat titik CDN akhir.
+Membuat titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdnendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ ProvisioningState          : Succeeded
 ## PARAMETERS
 
 ### -CdnProfile
-Menentukan CDN profil pengguna tempat titik akhir ditambahkan.
+Menentukan objek profil CDN tempat titik akhir ditambahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentTypesToCompress
-Menentukan array tipe konten untuk dikompresi dari simpul tepi ke klien.
+Menentukan array tipe konten untuk dipadatkan dari simpul tepi ke klien.
 
 ```yaml
 Type: System.String[]
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultOriginGroup
-Grup origin default.
+Grup asal default.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoFilters
-Daftar filter geo yang berlaku pada titik akhir ini.
+Daftar filter geografis yang berlaku untuk titik akhir ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSGeoFilter[]
@@ -198,7 +201,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpPort
+### -HttpPort
 Menentukan nomor port HTTP pada server asal.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpsPort
-Menentukan nomor port HTTPS pada server origin.
+Menentukan nomor port HTTPS pada server asal.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -243,7 +246,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IshttpAllowed
+### -IsHttpAllowed
 Menunjukkan apakah titik akhir mengaktifkan lalu lintas HTTP.
 
 ```yaml
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -OptimizationType
-Menentukan optimisasi apa pun yang memiliki titik akhir ini.
+Menentukan optimasi apa pun yang dimiliki titik akhir ini.
 
 ```yaml
 Type: System.String
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup origin.
+Nama grup asal.
 
 ```yaml
 Type: System.String
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupProbeIntervalInSeconds
-Jumlah detik antara health transit.
+Jumlah detik antara pemeriksaan kesehatan.
 
 ```yaml
 Type: System.Int32
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupProbePath
-Jalur relatif terhadap origin yang digunakan untuk menentukan kesehatan origin.
+Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
 
 ```yaml
 Type: System.String
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupProbeProtocol
-Protokol untuk digunakan dalam protokol kesehatan.
+Protokol untuk digunakan untuk pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupProbeRequestType
-Tipe permintaan kesehatan yang dibuat.
+Jenis permintaan pemeriksaan kesehatan yang dibuat.
 
 ```yaml
 Type: System.String
@@ -379,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostHeader
-Menentukan kepala host origin titik akhir.
+Menentukan kepala host asal titik akhir.
 
 ```yaml
 Type: System.String
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostName
-Menentukan nama host server origin.
+Menentukan nama host server asal.
 
 ```yaml
 Type: System.String
@@ -409,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginId
-Azure CDN id grup origin.
+Azure CDN id grup asal.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Menentukan nama sumber daya server origin.
+Menentukan nama sumber daya server asal.
 
 ```yaml
 Type: System.String
@@ -439,7 +442,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginPath
-Menentukan jalur server origin.
+Menentukan jalur server asal.
 
 ```yaml
 Type: System.String
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Azure CDN origin baru.
+Azure CDN prioritas asal.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -469,7 +472,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkApprovalMessage
-Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk menyambungkan ke Tautan Pribadi.
+Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk menyambungkan ke Private Link.
 
 ```yaml
 Type: System.String
@@ -484,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkLocation
-Azure CDN link privat origin.
+Azure CDN lokasi tautan pribadi origin.
 
 ```yaml
 Type: System.String
@@ -499,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Azure CDN sumber daya tautan privat origin.
+Azure CDN origin private link resource id.
 
 ```yaml
 Type: System.String
@@ -513,8 +516,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur grafis untuk Akselerasi Situs Dinamis
+### -ProbePath
+Menentukan jalur probe untuk Akselerasi Situs Dinamis
 
 ```yaml
 Type: System.String
@@ -543,8 +546,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -QueryStringCachingBestringior
-Menentukan perilaku titik akhir CDN ketika string kueri ada dalam URL permintaan.
+### -QueryStringCachingBehavior
+Menentukan perilaku titik akhir CDN saat string kueri berada di URL permintaan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSQueryStringCachingBehavior]
@@ -575,7 +578,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan Azure CDN titik akhir.
+Tag yang akan dikaitkan dengan titik akhir Azure CDN.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -589,8 +592,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Azure CDN origin.
+### -Berat
+Azure CDN berat asal.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -605,7 +608,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -621,7 +624,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -636,7 +639,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

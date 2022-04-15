@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/stop-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Stop-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Stop-AzServiceBusMigration.md
-ms.openlocfilehash: 5668112aedb495578bc4fe1806cb013d7e3d8265
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fb451a1384af020f4844c4ebdfa49cedafecb810
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195607"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142340765"
 ---
 # Stop-AzServiceBusMigration
 
 ## SYNOPSIS
 {{Fill in the Synopsis}}
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/stop-azservicebusmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzServiceBusMigration [-ResourceId] <String> [-PassThru] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzServiceBusMigration** mengakhiri Migrasi antara kumpulan nama Standar ke premium
+Cmdlet **Stop-AzServiceBusMigration** mengakhiri Migrasi antar ruang nama Standar ke premium
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Stop-AzServiceBusMigration** mengakhiri Migrasi antara kumpulan nama St
 PS C:\> Stop-AzServiceBusMigration -ResourceGroupName ResourceGroup -Name TestingNamespaceStandardMigration
 ```
 
-Cmdlet mengakhiri migrasi antara ruang nama Standar dan Premium nama yang disediakan saat membuat konfigurasi migrasi.
+Cmdlet mengakhiri migrasi antara ruang nama Standar dan ruang nama Premium yang disediakan saat membuat konfigurasi migrasi.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Objek Kumpulan Nama Konfigurasi Migrasi Standar
+Objek Ruang Nama Standar Konfigurasi Migrasi Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Migrasi Configuration Standard Namespace Resource Id
+Id Sumber Daya Ruang Nama Standar Konfigurasi Migrasi Bus Layanan
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

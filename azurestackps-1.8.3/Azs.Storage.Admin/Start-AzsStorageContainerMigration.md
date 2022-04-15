@@ -4,16 +4,16 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: af9c5d2c5ebb547a6e09d2e4f4302ed2da470a39
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142332890"
 ---
 # Start-AzsStorageContainerMigration
 
 ## SYNOPSIS
-Memulai pekerjaan migrasi wadah untuk melakukan migrasi wadah ke berbagi tujuan tertentu.
+Memulai pekerjaan migrasi kontainer untuk melakukan migrasi kontainer ke berbagi tujuan yang ditentukan.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Start-AzsStorageContainerMigration [-StorageAccountName] <String> [-ContainerNam
 ```
 
 ## DESCRIPTION
-Memulai pekerjaan migrasi wadah untuk melakukan migrasi wadah ke berbagi tujuan tertentu.
+Memulai pekerjaan migrasi kontainer untuk melakukan migrasi kontainer ke berbagi tujuan yang ditentukan.
 
 ## EXAMPLES
 
@@ -33,12 +33,12 @@ Memulai pekerjaan migrasi wadah untuk melakukan migrasi wadah ke berbagi tujuan 
 Start-AzsStorageContainerMigration -StorageAccountName "accountTest" -ContainerName "containerTest" -ShareName "shareTest" -FarmName "10e8d576-d73c-454c-a40a-aee31a77a5f0" -DestinationShareUncPath "\\***.**_._*_._**\C$\Test"
 ```
 
-Memulai migrasi wadah.
+Memulai migrasi kontainer.
 
 ## PARAMETERS
 
 ### -StorageAccountName
-Nama akun penyimpanan tempat wadah berada.
+Nama akun penyimpanan tempat kontainer berada.
 
 ```yaml
 Type: String
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Nama berbagi berisi wadah yang ditentukan untuk migrasi.
+Nama berbagi yang berisi wadah yang ditentukan untuk migrasi.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -FarmName
-Id Farm.
+Id Pertanian.
 
 ```yaml
 Type: String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationShareUncPath
-Jalur UNC tujuan berbagi untuk migrasi.
+Jalur UNC dari berbagi tujuan untuk migrasi.
 
 ```yaml
 Type: String
@@ -142,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

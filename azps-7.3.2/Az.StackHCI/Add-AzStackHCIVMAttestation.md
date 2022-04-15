@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/add-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Add-AzStackHCIVMAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Add-AzStackHCIVMAttestation.md
-ms.openlocfilehash: b7822bced8ef06011a31c94a0a45e67b303f4ddc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d02df2ad1d3bb8e7e9b5a5ea0eb9b865922a05e8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140370722"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142365965"
 ---
 # Add-AzStackHCIVMAttestation
 
 ## SYNOPSIS
 Add-AzStackHCIVMAttestation mengonfigurasi tamu untuk AzureStack HCI IMDS Attestation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/add-azstackhcivmattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Add-AzStackHCIVMAttestation [-VMName] <String[]> [-Force] [-WhatIf] [-Confirm] [
 Add-AzStackHCIVMAttestation [-VM] <Object[]> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TambahkanSemua
+### AddAll
 ```
 Add-AzStackHCIVMAttestation [-AddAll] [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,19 +47,19 @@ Add-AzStackHCIVMAttestation mengonfigurasi tamu untuk AzureStack HCI IMDS Attest
 C:\PS\>Add-AzStackHCIVMAttestation -AddAll
 ```
 
-Menambahkan semua tamu pada simpul saat ini
+Menambahkan semua tamu di simpul saat ini
 
 ### CONTOH 2
 ```powershell
 C:\PS\>Invoke-Command -ScriptBlock {Add-AzStackHCIVMAttestation -VMName "guest1", "guest2"} -ComputerName "node1"
 ```
 
-Melakukan invoking dari node manajemen/WAC
+Memanggil dari simpul manajemen/WAC
 
 ## PARAMETERS
 
 ### -AddAll
-Menentukan sakelar yang akan menambahkan semua VM tamu saat ini di host ke Attestation IMDS di simpul saat ini.
+Menentukan sakelar yang akan menambahkan semua VM tamu saat ini pada host ke Pengesahan IMDS pada simpul saat ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Konfirmasi Tidak Ada
+### -Paksa
+Tidak Ada Konfirmasi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan larik objek VM dari Get-VM.
+Menentukan array objek VM dari Get-VM.
 
 ```yaml
 Type: System.Object[]
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.logic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppTriggerHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppTriggerHistory.md
-ms.openlocfilehash: 6718dc9827ee484fadd146ad1586b92ef22f31786b7624df905a831aba82c9ce
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9c27fd1e46d17722f843a09babab31338e88e2ed
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418567"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142356284"
 ---
 # Get-AzureRmLogicAppTriggerHistory
 
 ## SYNOPSIS
-Dapatkan riwayat pemicu dalam aplikasi logika.
+Mendapatkan riwayat pemicu dalam aplikasi logika.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,12 +29,12 @@ Get-AzureRmLogicAppTriggerHistory -ResourceGroupName <String> -Name <String> -Tr
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmLogicAppTriggerHistory** mendapatkan riwayat pemicu dalam aplikasi logika di fitur Aplikasi Logika.
-Cmdlet ini mengembalikan objek **WorkflowTriggerHistory.**
+Cmdlet ini mengembalikan objek **WorkflowTriggerHistory** .
 Tentukan aplikasi logika, grup sumber daya, dan pemicu.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Type        : Microsoft.Logic/workflows/triggers/histories
 
 Perintah ini mendapatkan riwayat pemicu aplikasi logika tertentu untuk pemicu dalam aplikasi logika bernama LogicApp03.
 
-### Contoh 2: Dapatkan riwayat pemicu aplikasi logika
+### Contoh 2: Dapatkan riwayat pemicu dari aplikasi logika
 ```
 PS C:\>Get-AzureRmLogicAppTriggerHistory -ResourceGroupName "ResourceGroup11" -Name "LogicApp07" -TriggerName "Trigger01"
 Code        : BadRequest
@@ -90,12 +90,12 @@ TrackingId  : f88a499b-f80f-4a28-9bbf-c4cc0d129700
 Type        : Microsoft.Logic/workflows/triggers/histories
 ```
 
-Perintah ini memperoleh riwayat pemicu alur kerja untuk pemicu dalam aplikasi logika bernama LogicApp07.
+Perintah ini mendapatkan riwayat pemicu alur kerja untuk pemicu dalam aplikasi logika bernama LogicApp07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -HistoryName
-Menentukan nama riwayat yang akan dapatkan cmdlet ini.
+Menentukan nama riwayat yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aplikasi logika yang mendapatkan riwayat pemicu cmdlet ini.
+Menentukan nama aplikasi logika di mana cmdlet ini mendapatkan riwayat pemicu.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan riwayat.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan riwayat.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

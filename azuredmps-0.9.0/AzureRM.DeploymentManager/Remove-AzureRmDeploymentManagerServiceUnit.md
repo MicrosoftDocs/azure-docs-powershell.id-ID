@@ -4,16 +4,16 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/remove-azurermdeploymentmanagerserviceunit
 schema: 2.0.0
 ms.openlocfilehash: 993b250b0c49efc448c0198c4e9a3aea29f77714
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421084"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142336769"
 ---
 # Remove-AzureRmDeploymentManagerServiceUnit
 
 ## SYNOPSIS
-Menghapus unit layanan dari suatu layanan dalam topologi layanan.
+Menghapus unit layanan layanan dalam topologi layanan.
 
 ## SYNTAX
 
@@ -65,7 +65,7 @@ Remove-AzureRmDeploymentManagerServiceUnit [-ServiceUnit] <PSServiceUnitResource
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmDeploymentManagerServiceUnit** menghapus unit layanan dalam layanan.
 
-Tentukan unit layanan menurut namanya, layanan yang ditentukan, nama topologi layanan dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceUnit atau ResourceId.
+Tentukan unit layanan menurut namanya, layanan di mana layanan ditetapkan, nama topologi layanan dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceUnit atau ResourceId.
 
 ## EXAMPLES
 
@@ -74,21 +74,21 @@ Tentukan unit layanan menurut namanya, layanan yang ditentukan, nama topologi la
 PS C:\> Remove-AzureRmDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -ServiceName ContosoService1  -Name ContosoService1Storage
 ```
 
-Perintah ini menghapus unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini menghapus unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
 
 ### Contoh 2: Hapus unit layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Remove-AzureRmDeploymentManagerServiceUnit -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology/services/ContosoService1/serviceUnits/ContosoService1Storage"
 ```
 
-Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
-### Contoh 3: Menghapus unit layanan menggunakan objek unit layanan.
+### Contoh 3: Hapus unit layanan menggunakan objek unit layanan.
 ```powershell
 PS C:\> Remove-AzureRmDeploymentManagerServiceUnit -ServiceUnit $serviceUnitObject
 ```
 
-Perintah ini menghapus unit layanan yang namanya, nama layanan, nama topologi layanan, dan ResourceGroup cocok dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
+Perintah ini menghapus unit layanan dengan nama, nama layanan, nama topologi layanan, dan ResourceGroup yang sesuai dengan properti Name, ServiceName, ServiceTopologyName, dan ResourceGroupName dari $serviceUnitObject.
 
 ## PARAMETERS
 
@@ -107,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Layanan
-Objek layanan tempat unit layanan akan dibuat.
+Objek layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceResource
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama layanan yang menjadi bagian dari unit layanan.
+Nama layanan tempat unit layanan berada.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopology
-Objek topologi layanan tempat unit layanan akan dibuat.
+Objek topologi layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyName
-Nama topologi layanan tempat unit layanan dimiliki.
+Nama topologi layanan tempat unit layanan berada.
 
 ```yaml
 Type: System.String
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyResourceId
-Pengidentifikasi sumber daya topologi layanan tempat unit layanan akan dibuat.
+Pengidentifikasi sumber daya topologi layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: System.String
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

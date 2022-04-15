@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicket.md
 ms.openlocfilehash: 657f87f792c741e1b446bf94a624dcec1f764754
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140302855"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142322249"
 ---
 # Get-AzSupportTicket
 
@@ -18,7 +18,7 @@ ms.locfileid: "140302855"
 Dapatkan tiket dukungan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/get-azsupportticket) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportticket) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,24 +35,24 @@ Get-AzSupportTicket -Name <String> [-DefaultProfile <IAzureContextContainer>] [-
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar tiket dukungan. Ia akan mengambil semua tiket dukungan jika Anda tidak menentukan parameter apa pun. Anda juga bisa memfilter tiket dukungan menurut Status atau CreatedDate menggunakan parameter Filter. Berikut ini beberapa contoh nilai filter yang dapat Anda tentukan.
+Mendapatkan daftar tiket dukungan. Ini akan mengambil semua tiket dukungan jika Anda tidak menentukan parameter apa pun. Anda juga dapat memfilter tiket dukungan menurut Status atau TanggalDijadikan menggunakan parameter Filter. Berikut adalah beberapa contoh nilai filter yang bisa Anda tentukan.
 
 | Skenario                                                         | Filter                                           |
 |------------------------------------------------------------------|--------------------------------------------------|
-| Mendapatkan tiket yang dalam keadaan terbuka                               | "Status eq 'Buka'"                               |
-| Dapatkan tiket yang dalam keadaan tertutup                             | "Status eq 'Ditutup'"                             |
+| Dapatkan tiket yang dalam status terbuka                               | "Status eq 'Buka'"                               |
+| Dapatkan tiket yang dalam keadaan tertutup                             | "Status eq 'Tertutup'"                             |
 | Dapatkan tiket yang dibuat pada atau setelah 20 Des 2019         | "CreatedDate ge 2019-12-20"                      |
 | Dapatkan tiket yang dibuat setelah 20 Des 2019               | "CreatedDate gt 2019-12-20"                      |
-| Mendapatkan tiket yang dibuat setelah 20 Des 2019 yang dibuka | "Tanggal Dibuat gt 2019-12-20 dan Status eq 'Buka'" |
+| Dapatkan tiket yang dibuat setelah 20 Des 2019 yang dalam status terbuka | "CreatedDate gt 2019-12-20 dan Status eq 'Buka'" |
 
 
-Cmdlet ini mendukung membuat halaman melalui parameter Pertama dan Lewati.
+Cmdlet ini mendukung paging melalui parameter Pertama dan Lewati.
 
-Anda juga dapat mengambil satu tiket dukungan dengan menentukan nama tiket. 
+Anda juga dapat mengambil tiket dukungan tunggal dengan menentukan nama tiket. 
 
 ## EXAMPLES
 
-### Contoh 1: Get first 2 tickets
+### Contoh 1: Dapatkan 2 tiket pertama
 ```powershell
 PS C:\> Get-AzSupportTicket -First 2
 
@@ -62,7 +62,7 @@ test1 test title1                  150010521000317 Minimal  Virtual Machine runn
 test2 test title2                  150010521000318 Minimal  Billing                       Closed 2/5/2020 1:33:53 AM
 ```
 
-### Contoh 2: Mendapatkan 2 tiket pertama setelah melewati 2 tiket pertama
+### Contoh 2: Dapatkan 2 tiket pertama setelah melewati 2 tiket pertama
 ```powershell
 PS C:\> Get-AzSupportTicket -Skip 2 -First 2
 
@@ -81,7 +81,7 @@ Name  Title                        SupportTicketId Severity ServiceDisplayName  
 test1 test title1                  150010521000317 Minimal  Virtual Machine running Linux Closed 2/5/2020 1:33:53 AM
 ```
 
-### Contoh 4: Dapatkan 2 tiket dukungan pertama difilter menurut status
+### Contoh 4: Dapatkan 2 tiket dukungan pertama yang difilter menurut status
 ```powershell
 PS C:\> Get-AzSupportTicket -Filter "Status eq 'Closed'" -First 2
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter yang akan diterapkan ke hasil cmdlet ini.
+Filter untuk diterapkan ke hasil cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama tiket dukungan yang didaangkan cmdlet ini.
+Nama tiket dukungan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -149,9 +149,9 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah total objek dalam rangkaian data (bilangan bulat) diikuti dengan objek yang dipilih.
-Jika cmdlet tidak dapat menentukan hitungan total, cmdlet menampilkan "Penghitungan total tidak diketahui." Bilangan bulat memiliki properti Accuracy yang menunjukkan keandalan nilai perhitungan total.
-Nilai Akurasi berkisar dari 0,0 hingga 1,0 di mana 0,0 berarti bahwa cmdlet tidak bisa menghitung objek, 1,0 berarti bahwa hitungan tepat, dan nilai antara 0,0 dan 1,0 menunjukkan perkiraan yang semakin andal.
+Melaporkan jumlah total objek dalam kumpulan data (bilangan bulat) diikuti dengan objek yang dipilih.
+Jika cmdlet tidak dapat menentukan jumlah total, cmdlet akan menampilkan "Jumlah total tidak diketahui." Bilangan bulat memiliki properti Akurasi yang menunjukkan keandalan nilai total hitungan.
+Nilai Akurasi berkisar dari 0,0 hingga 1,0 di mana 0,0 berarti bahwa cmdlet tidak dapat menghitung objek, 1,0 berarti bahwa hitungan tepat, dan nilai antara 0,0 dan 1,0 menunjukkan perkiraan yang semakin andal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan jumlah objek tertentu lalu mendapatkan objek yang tersisa.
+Mengabaikan jumlah objek yang ditentukan lalu mendapatkan objek yang tersisa.
 Masukkan jumlah objek yang akan dilewati.
 
 ```yaml
@@ -181,9 +181,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
+### -Pertama
 Hanya mendapatkan jumlah objek yang ditentukan.
-Masukkan jumlah objek yang akan dapatkan.
+Masukkan jumlah objek yang akan didapatkan.
 
 ```yaml
 Type: System.UInt64
@@ -198,11 +198,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

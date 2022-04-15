@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 75ba2aa6f943eb80684b5d38e17a76e1b8d6332b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 686bb78222e0086af4b0b8c902682720d7bbd7e5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400990"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142340495"
 ---
 # Set-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
-Mengatur properti sumber daya tipe node atau menjalankan tindakanimasi ulang pada ndes tipe node tertentu dengan parameter -Reimage.
+Mengatur properti sumber daya tipe node atau menjalankan tindakan reimage pada ndes tertentu dari tipe node dengan parameter -Reimage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzServiceFabricManagedNodeType [-InputObject] <PSManagedNodeType> [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WithParamsByName
+### DenganParamsByName
 ```
 Set-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] <String> [-Name] <String>
  [-AsJob] [-InstanceCount <Int32>] [-ApplicationStartPort <Int32>] [-ApplicationEndPort <Int32>]
@@ -34,26 +37,26 @@ Set-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] 
  [<CommonParameters>]
 ```
 
-### Mengganti NamaBy
+### ReimageByName
 ```
 Set-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] <String> [-Name] <String>
  -NodeName <String[]> [-Reimage] [-ForceReimage] [-PassThru] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WithParamsById
+### DenganParamsById
 ```
 Set-AzServiceFabricManagedNodeType [-ResourceId] <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mengganti DenganId
+### ReimageById
 ```
 Set-AzServiceFabricManagedNodeType [-ResourceId] <String> -NodeName <String[]> [-Reimage] [-ForceReimage]
  [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mengganti umurByObj
+### ReimageByObj
 ```
 Set-AzServiceFabricManagedNodeType [-InputObject] <PSManagedNodeType> -NodeName <String[]> [-Reimage]
  [-ForceReimage] [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -61,7 +64,7 @@ Set-AzServiceFabricManagedNodeType [-InputObject] <PSManagedNodeType> -NodeName 
 ```
 
 ## DESCRIPTION
-Mengatur properti sumber daya tipe node atau menjalankan tindakanimasi ulang pada ndes tipe node tertentu dengan parameter -Reimage. On reimgae operation the service fabric nodes will be disabled before reimaging the vms and enabled them back again once they come back. Jika ini dilakukan pada tipe node utama, proses ini mungkin memakan waktu beberapa saat karena node mungkin tidak diambil kembali pada saat yang sama. Use -ForceReimage force the operation even if service fabric is unable to disable the node but use with caution as this might cause data loss if stateful workloads are running on the node.
+Mengatur properti sumber daya tipe node atau menjalankan tindakan reimage pada ndes tertentu dari tipe node dengan parameter -Reimage. Pada operasi reimgae, node kain layanan akan dinonaktifkan sebelum mengembalikan vm dan mengaktifkannya kembali setelah mereka kembali. Jika ini dilakukan pada tipe simpul primer, mungkin akan memakan waktu cukup lama karena mungkin tidak mereimage semua node pada saat yang sama. Gunakan -ForceReimage memaksa operasi meskipun kain servis tidak dapat menonaktifkan simpul tetapi gunakan dengan hati-hati karena hal ini dapat menyebabkan hilangnya data jika beban kerja yang dinyatakan berjalan pada simpul.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ $NodeTypeName = "nt1"
 Set-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -name $NodeTypeName -InstanceCount 6 -Verbose
 ```
 
-Perbarui hitungan contoh tipe node.
+Perbarui hitungan instans tipe simpul.
 
 ### Contoh 2
 ```powershell
@@ -83,7 +86,7 @@ $NodeTypeName = "nt1"
 Set-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -name $NodeTypeName -PlacementProperty @{NodeColor="Red";SomeProperty="6";} -Verbose
 ```
 
-Perbarui properites penempatan tipe node. Ini akan menimpa penempatan lama yang tepat bila ada.
+Memperbarui properites penempatan tipe simpul. Ini akan menimpa properites penempatan lama jika ada.
 
 ### Contoh 3
 ```powershell
@@ -93,7 +96,7 @@ $NodeTypeName = "nt1"
 Set-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName  -Name $NodeTypeName -Reimage -NodeName nt1_0, nt1_3
 ```
 
-Mengganti node 0 dan 3 pada tipe node.
+Reimage node 0 dan 3 pada tipe node.
 
 ### Contoh 4
 ```powershell
@@ -106,12 +109,12 @@ $nodeType.VmInstanceCount = 6
 $nodeType | Set-AzServiceFabricManagedNodeType
 ```
 
-Perbarui hitungan contoh tipe node, dengan pemipaan.
+Perbarui hitungan instans tipe simpul, dengan pipa.
 
 ## PARAMETERS
 
 ### -ApplicationEndPort
-Port Akhir Aplikasi dari rentang port.
+Port Application End dari rentang port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Tag kapasitas yang diterapkan ke node dalam tipe node sebagai pasangan kunci/nilai, manajer sumber daya kluster menggunakan tag ini untuk memahami seberapa besar sumber daya yang memiliki simpul. Memperbarui ini akan menimpa nilai saat ini.
+Tag kapasitas diterapkan ke simpul dalam tipe simpul sebagai pasangan kunci/nilai, manajer sumber daya kluster menggunakan tag ini untuk memahami berapa banyak sumber daya yang dimiliki simpul. Memperbarui ini akan menimpa nilai saat ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -EphemeralEndPort
-Port akhir Ephemeral dari rentang port.
+Port akhir yang bersifat ephemeral dari berbagai port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -EphemeralStartPort
-Port mulai Ephemeral dari rentang port.
+Port mulai Ephemeral dari berbagai port.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -231,8 +234,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceReimage
-Using this flag will force the removal even if service fabric is unable to disable the node.
-Berhati-hatilah karena ini dapat menyebabkan hilangnya data jika beban kerja yang berat dijalankan pada simpul.
+Menggunakan bendera ini akan memaksa penghapusan meskipun kain servis tidak dapat menonaktifkan simpul.
+Gunakan dengan hati-hati karena hal ini dapat menyebabkan hilangnya data jika beban kerja yang dinyatakan berjalan di simpul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe node
+Sumber daya tipe simpul
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Jumlah node dalam tipe node.
+Jumlah node dalam tipe simpul.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama tipe node.
+Tentukan nama tipe simpul.
 
 ```yaml
 Type: System.String
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeName
-Daftar nama node untuk operasi.
+Daftar nama simpul untuk operasi tersebut.
 
 ```yaml
 Type: System.String[]
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlacementProperty
-Tag penempatan yang diterapkan ke node dalam tipe node sebagai pasangan kunci/nilai, yang dapat digunakan untuk menunjukkan di mana layanan (beban kerja) tertentu harus dijalankan. Memperbarui ini akan menimpa nilai saat ini.
+Tag penempatan diterapkan ke node dalam tipe simpul sebagai pasangan kunci/nilai, yang dapat digunakan untuk menunjukkan tempat layanan tertentu (beban kerja) harus berjalan. Memperbarui ini akan menimpa nilai saat ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reimage
-Tentukan untuk mengganti node pada tipe node.
+Tentukan untuk mereimage node pada tipe node.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya tipe node
+Id sumber daya tipe simpul
 
 ```yaml
 Type: System.String
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -413,7 +416,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
