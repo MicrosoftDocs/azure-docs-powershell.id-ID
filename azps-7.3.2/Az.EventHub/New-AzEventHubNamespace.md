@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
-ms.openlocfilehash: 812918a2aefcb87bd7ae2e5716347f3268d8ebc1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 06d45cbde22940ac580a061e0b3f2b9f39abfcbd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000845"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142034165"
 ---
 # New-AzEventHubNamespace
 
 ## SYNOPSIS
-Membuat ruang nama Hub Acara.
+Membuat ruang nama Hub Kejadian.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Locatio
  [-Confirm] [<CommonParameters>]
 ```
 
-### AutoInparameterSet
+### AutoInflateParameterSet
 ```
 New-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Location] <String>
  [[-SkuName] <String>] [[-SkuCapacity] <Int32>] [[-Tag] <Hashtable>] [-EnableAutoInflate]
@@ -72,7 +75,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName di\` lokasi geografis \`tertentu MyLocation\`, di grup sumber daya \`MyResourceGroupName\`.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
@@ -103,9 +106,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` dan AutoInsourcee diaktifkan dengan MaximumThroughputUnits 10.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis myLocation\` tertentu, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
 
-### Contoh 3: Ruang nama Junii yang diaktifkan
+### Contoh 3: Kafka enabled namespace
 ```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -EnableKafka
 
@@ -134,9 +137,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
-### Contoh 4: Ruang nama yang diaktifkan ZonaRedundant
+### Contoh 4: ZoneRedundant enabled namespace
 ```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -ZoneRedundant
 
@@ -165,9 +168,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
-### Contoh 5: Membuat Ruang Nama dengan Kelola Identitas di kluster 
+### Contoh 5: Membuat Ruang Nama dengan Kelola Identitas dalam kluster 
 ```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation --EnableAutoInflate -MaximumThroughputUnits 12 -EnableKafka -ZoneRedundant -IdentityType SystemAssigned
 
@@ -195,7 +198,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-### Contoh 6: Membuat Namespace dengan UserAssigned identity encryption diaktifkan
+### Contoh 6: Membuat Ruang Nama dengan enkripsi identitas userAssigned diaktifkan
 
 
 ```
@@ -256,7 +259,7 @@ EncryptionConfig              : {{ KeyName: key1,
 ## PARAMETERS
 
 ### -ClusterARMId
-ID ARM dari Kluster tempat ruang nama akan dibuat
+ARM ID dari Kluster tempat ruang nama akan dibuat
 
 ```yaml
 Type: System.String
@@ -300,8 +303,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableAutoInotomatise
-Menunjukkan apakah PengaturanOtomatis diaktifkan
+### -EnableAutoInflate
+Menunjukkan apakah AutoInflate diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableKafka
-mengaktifkan atau menonaktifkan NamespaceKa untuk
+mengaktifkan atau menonaktifkan Kafka untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -345,7 +348,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Identity
+### -Identitas
 mengaktifkan atau menonaktifkan Identitas untuk ruang nama
 
 ```yaml
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Daftar ID Identitas yang ditetapkan pengguna
+Daftar Id Identitas yang ditetapkan pengguna
 
 ```yaml
 Type: System.String[]
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas satuan throughput ketika FileOtomatis diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -467,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Ruang Nama Sku.
+Nama Sku Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -498,7 +501,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-mengaktifkan atau menonaktifkan Kelebihan Zona untuk ruang nama
+mengaktifkan atau menonaktifkan Zona Berlebihan untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -513,7 +516,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -529,7 +532,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -544,13 +547,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Collections.Hashtable
 

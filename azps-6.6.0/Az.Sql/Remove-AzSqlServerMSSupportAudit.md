@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerMSSupportAudit.md
 ms.openlocfilehash: 7e1feacc8810f01465307c1e4bc22233705b967e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140500755"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141947913"
 ---
 # Remove-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
-Menghapus pengaturan audit operasi dukungan Microsoft untuk server azure SQL.
+Menghapus pengaturan pengaudungan operasi dukungan Microsoft dari server Azure SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlservermssupportaudit) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlservermssupportaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,17 +36,17 @@ Remove-AzSqlServerMSSupportAudit -ServerObject <AzureSqlServerModel> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlServerMSSupportAudit** menghapus pengaturan audit operasi dukungan Microsoft dari server SQL Azure.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi server.
+Cmdlet **Remove-AzSqlServerMSupportAudit** menghapus pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
+Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pengaturan audit operasi dukungan Microsoft untuk server SQL Azure
+### Contoh 1: Hapus pengaturan pengaudungan operasi dukungan Microsoft dari server Azure SQL
 ```powershell
 PS C:\>Remove-AzSqlServerMSSupportAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
 
-### Contoh 2: Hapus, melalui saluran, pengaturan pengauditan dukungan Microsoft untuk server SQL Azure
+### Contoh 2: Hapus, melalui saluran, Microsoft mendukung pengaturan pengauditan server Azure SQL
 ```
 PS C:\> Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Remove-AzSqlServerMSSupportAudit
 ```
@@ -54,7 +54,7 @@ PS C:\> Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

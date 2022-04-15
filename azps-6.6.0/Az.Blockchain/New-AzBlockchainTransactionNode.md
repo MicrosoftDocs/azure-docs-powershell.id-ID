@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainTransactionNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainTransactionNode.md
 ms.openlocfilehash: 95ff3bec0cbdf262c468db4b01587df7c219abd6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336921"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142129913"
 ---
 # New-AzBlockchainTransactionNode
 
 ## SYNOPSIS
-Buat atau perbarui node transaksi.
+Membuat atau memperbarui simpul transaksi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/new-azblockchaintransactionnode) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/new-azblockchaintransactionnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ New-AzBlockchainTransactionNode -BlockchainMemberName <String> -Name <String> -R
 ```
 
 ## DESCRIPTION
-Buat atau perbarui node transaksi.
+Membuat atau memperbarui simpul transaksi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat node transaksi pembayaran
+### Contoh 1: Buat simpul transaksi blockchain
 ```powershell
 PS C:\> $passwd = 'strongMemberAccountPassword@1' | ConvertTo-SecureString -AsPlainText -Force
 PS C:\> New-AzBlockchainTransactionNode -BlockchainMemberName dolauli001 -Name tranctionnode001 -ResourceGroupName testgroup -Location eastus -Password $passwd
@@ -43,7 +43,7 @@ Name             Type                                                    Locatio
 tranctionnode001 Microsoft.Blockchain/blockchainMembers/transactionNodes eastus
 ```
 
-Perintah ini membuat node transaksi node node transaksi node.
+Perintah ini membuat simpul transaksi blockchain.
 
 ## PARAMETERS
 
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TemplatMemberName
-Nama anggota Blokir.
+### -BlockchainMemberName
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -FirewallRule
 Mendapatkan atau mengatur aturan firewall.
-Untuk membuat, lihat bagian CATATAN untuk properti FIREWALLRULE dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti FIREWALLRULE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IFirewallRule[]
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Mendapatkan atau mengatur lokasi node transaksi.
+Mendapatkan atau mengatur lokasi simpul transaksi.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama node transaksi.
+Nama simpul transaksi.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Mengatur kata sandi auth titik akhir dns transaksi.
+Mengatur kata sandi auth dasar titik akhir titik akhir node transaksi.
 
 ```yaml
 Type: System.Security.SecureString
@@ -169,8 +169,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,13 +232,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.ITransactionNode
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.ITransactionNode
 
 ## CATATAN
 
@@ -250,9 +250,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 FIREWALLRULE <IFirewallRule[]>: Mendapatkan atau mengatur aturan firewall.
-  - `[EndIPAddress <String>]`: Mendapatkan atau mengatur alamat IP akhir dari rentang aturan firewall.
+  - `[EndIPAddress <String>]`: Mendapatkan atau mengatur alamat IP akhir rentang aturan firewall.
   - `[RuleName <String>]`: Mendapatkan atau mengatur nama aturan firewall.
-  - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP awal dari rentang aturan firewall.
+  - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP mulai rentang aturan firewall.
 
 ## RELATED LINKS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: a85c31e02d9b0c0e037f8c6979f84bdd4c788cf11a2383e5d89c72a8c794863e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 168223e9e442b7aa37da11f3a1e0a092c3cb3efc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418421"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142056485"
 ---
 # Remove-AzApplicationGatewayBackendHttpSetting
 
@@ -25,7 +25,7 @@ Remove-AzApplicationGatewayBackendHttpSetting -Name <String> -ApplicationGateway
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzApplicationGatewayBackendHttpSetting menghapus pengaturan Back-end Hypertext Transfer Protocol (HTTP) dari gateway aplikasi Azure.
+Cmdlet Remove-AzApplicationGatewayBackendHttpSetting menghapus pengaturan Hypertext Transfer Protocol (HTTP) ujung-belakang dari gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -35,14 +35,14 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> Remove-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw -Name "BackEndSetting02"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua menghapus pengaturan HTTP ujung-belakang yang bernama BackEndSetting02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus pengaturan HTTP back-end bernama BackEndSetting02 dari gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menghapus pengaturan HTTP ujung-belakang.
+Menentukan gateway aplikasi dari mana cmdlet ini menghapus pengaturan HTTP ujung-belakang.
 
 ```yaml
 Type: PSApplicationGateway
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pengaturan HTTP ujung belakang yang dihapus cmdlet ini.
+Menentukan nama pengaturan HTTP ujung-belakang yang dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2TriggerRun.md
 ms.openlocfilehash: c7305e03159ea17c0a3464430e27bab93dac8b96
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139941487"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141958823"
 ---
 # Invoke-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
- Menjalankan contoh pemicu lain.
+ Memanggil contoh lain dari pemicu yang dijalankan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2triggerrun) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Invoke-AzDataFactoryV2TriggerRun [-TriggerName] <String> [-TriggerRunId] <String
 ```
 
 ## DESCRIPTION
-Perintah **Invoke-AzDataFactoryV2TriggerRun** memulai contoh lain dari pemicu yang dijalankan dengan id jalankan pemicu baru.
+Perintah **Invoke-AzDataFactoryV2TriggerRun** memulai contoh lain dari pemicu yang dijalankan dengan id run pemicu baru.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ Perintah **Invoke-AzDataFactoryV2TriggerRun** memulai contoh lain dari pemicu ya
 ```powershell
 PS C:\> Invoke-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "testTumblingWindowTrigger" -TriggerRunId 08586002468005888497807248799CU16
 ```
-Memulai contoh lain dari pemicu yang dijalankan dengan id jalankan pemicu baru, mempertahankan jendela yang samaStartTime dan windowEndTime sebagai pemicu asli dijalankan.
+Memulai contoh lain dari pemicu yang dijalankan dengan id run pemicu baru, mempertahankan jendela yang samaStartTime dan windowEndTime sebagai pemicu asli berjalan.
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi mengenai pemicu berjalan.
+Informasi tentang pemicu berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika cmdlet menulis true jika operasi berhasil.
+Jika ditentukan cmdlet menulis true dalam hal operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunId
-Id Jalankan dari pemicu.
+ID Jalankan pemicu.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

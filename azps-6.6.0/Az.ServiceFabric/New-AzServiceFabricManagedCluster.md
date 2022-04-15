@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedCluster.md
 ms.openlocfilehash: 249e38438a111219b56be4e5df9d60d947d2f0be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098541"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141948867"
 ---
 # New-AzServiceFabricManagedCluster
 
 ## SYNOPSIS
-Membuat kluster terkelola baru.
+Buat kluster terkelola baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedcluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ New-AzServiceFabricManagedCluster [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan membuat sumber daya kluster terkelola tanpa tipe node. Untuk bootstrap tipe node utama A harus ditambahkan menggunakan [New-AzServiceFabricManagedNodeType](./New-AzServiceFabricManagedNodeType.md).
+Cmdlet ini akan membuat sumber daya kluster terkelola tanpa tipe node. Untuk bootstrap kluster Tipe node utama perlu ditambahkan gunakan [New-AzServiceFabricManagedNodeType](./New-AzServiceFabricManagedNodeType.md).
 
 ## EXAMPLES
 
@@ -76,7 +76,7 @@ $password = ConvertTo-SecureString -AsPlainText -Force "testpass1234!@#$"
 New-AzServiceFabricManagedCluster -ResourceGroupName $rgName -Location centraluseuap -ClusterName $clusterName -AdminPassword $password -Sku Standard -UpgradeMode Automatic -UpgradeCadence Wave1 -ZonalResiliency -Verbose
 ```
 
-Perintah ini membuat kluster dengan irama pemutakhiran dalam gelombang1 dan ketahanan zonal yang diaktifkan.
+Perintah ini membuat kluster dengan cadence pemutakhiran dalam wave1 dan ketahanan zona diaktifkan.
 
 ### Contoh 4
 ```powershell
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertIsAdmin
-Gunakan untuk menentukan jika sertifikat klien memiliki tingkat administrator.
+Gunakan untuk menentukan apakah sertifikat klien memiliki tingkat administrator.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertIssuerThumbprint
-Daftar thumbprint Penerbit untuk sertifikat klien.
+Daftar sidik jari Penerbit untuk sertifikat klien.
 Hanya gunakan dalam kombinasi dengan ClientCertCommonName.
 
 ```yaml
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertThumbprint
-Thumbprint sertifikat klien.
+Sidik jari sertifikat klien.
 
 ```yaml
 Type: System.String
@@ -214,8 +214,8 @@ Accept wildcard characters: False
 ```
 
 ### -CodeVersion
-Cluster service fabric code version.
-Hanya gunakan jika mode pemutakhiran manual.
+Versi kode kain servis kluster.
+Hanya gunakan jika mode pemutakhiran adalah Manual.
 
 ```yaml
 Type: System.String
@@ -259,8 +259,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpGatewayConnectionPort
-Port digunakan untuk koneksi http ke kluster.
+### -HttpGatewayConnectionPort
+Port yang digunakan untuk koneksi http ke kluster.
 Default: 19080.
 
 ```yaml
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Kluster Sku, opsinya adalah Dasar: layanan akan memiliki minimal 3 node awal dan hanya mengizinkan 1 tipe node dan Standar: layanan akan memiliki minimal 5 node awal dan mengizinkan beberapa tipe node.
+Cluster's Sku, opsinya adalah Basic: akan memiliki minimal 3 seed node dan hanya memungkinkan 1 tipe node dan Standard: akan memiliki minimal 5 seed node dan memungkinkan beberapa tipe node.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ManagedClusterSku
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeMode
-Cluster service fabric code version upgrade mode.
+Mode pemutakhiran versi kode kain servis kluster.
 Otomatis atau Manual.
 
 ```yaml
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseTestExtension
-Jika Tentukan Kluster akan dikurasi dengan ekstensi vmss uji layanan.
+Jika Tentukan Kluster akan dikripsi dengan ekstensi service test vmss.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZonalResiliency
-Menunjukkan jika kluster memiliki resiliensi zona.
+Menunjukkan apakah kluster memiliki ketahanan zona.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

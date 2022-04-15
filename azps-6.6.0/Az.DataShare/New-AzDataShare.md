@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShare.md
 ms.openlocfilehash: 16938e4b8816b8bcb3d946a090553842d06fbf60
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483565"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141957945"
 ---
 # New-AzDataShare
 
 ## SYNOPSIS
-Membuat berbagi data Azure.
+Membuat berbagi data azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/new-azdatashare) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatashare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzDataShare -ResourceGroupName <String> -AccountName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShare** membuat berbagi data di dalam akun berbagi data Azure tertentu dengan menyediakan nama grup sumber daya, nama akun, nama berbagi dan jenis berbagi. Deskripsi dan ketentuan penggunaan adalah parameter opsional yang dapat diatur saat membuat berbagi data.
+Cmdlet **New-AzDataShare** membuat berbagi data dalam akun berbagi data azure tertentu dengan menyediakan nama grup sumber daya, nama akun, nama berbagi, dan jenis berbagi. Deskripsi dan ketentuan penggunaan adalah parameter opsional yang dapat diatur saat membuat berbagi data.
 
 ## EXAMPLES
 
@@ -46,11 +46,11 @@ ProvisioningState   : Succeeded
 Terms               : This should not be shared
 ```
 
-Perintah ini membuat berbagi data bernama AdsShare of kind CopyBased di akun berbagi data WikiAdsAccount di bawah grup sumber daya ADS dengan deskripsi dan ketentuan penggunaan.
+Perintah ini membuat berbagi data bernama AdsShare jenis CopyBased dalam akun berbagi data WikiAdsAccount di bawah grup sumber daya ADS dengan deskripsi dan ketentuan penggunaan.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi berbagi data Azure
+Deskripsi berbagi data azure
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -TermsOfUse
-Ketentuan penggunaan untuk berbagi data Azure
+Ketentuan penggunaan untuk berbagi data azure
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,11 +172,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

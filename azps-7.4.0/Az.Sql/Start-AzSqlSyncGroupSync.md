@@ -1,54 +1,66 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
-Module Name: Az.Compute
-online version: https://docs.microsoft.com/powershell/module/az.compute/start-azvmssrollingosupgrade
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
+Module Name: Az.Sql
+online version: https://docs.microsoft.com/powershell/module/az.sql/start-azsqlsyncgroupsync
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingOSUpgrade.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingOSUpgrade.md
-ms.openlocfilehash: dcaf3eea35f4df6266b55126f3481845c167bdd7
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlSyncGroupSync.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlSyncGroupSync.md
+ms.openlocfilehash: d8e9a80d2e6da9e5aa4ee5e781972be6d6993655
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142054017"
+ms.locfileid: "142001184"
 ---
-# Start-AzVmssRollingOSUpgrade
+# Start-AzSqlSyncGroupSync
 
 ## SYNOPSIS
-Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvmssrollingosupgrade) untuk informasi terbaru.
+Memulai sinkronisasi grup sinkronisasi.
 
 ## SYNTAX
 
 ```
-Start-AzVmssRollingOSUpgrade [-ResourceGroupName] <String> [-VMScaleSetName] <String> [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Start-AzSqlSyncGroupSync [-SyncGroupName] <String> [-PassThru] [-ServerName] <String> [-DatabaseName] <String>
+ [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Memulai pemutakhiran bergulir untuk memindahkan semua mesin virtual skala set instance ke versi Platform Image OS terbaru yang tersedia.
-Instans yang sudah menjalankan versi OS terbaru yang tersedia tidak terpengaruh.
+Cmdlet **Start-AzSqlSyncGroupSync** memulai sinkronisasi grup sinkronisasi.
 
 ## EXAMPLES
 
 ### Contoh 1
-```
-PS C:\> Start-AzVmssRollingOSUpgrade -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
+```powershell
+Start-AzSqlSyncGroupSync -SyncGroupName mysg [-ServerName] mysrv [-DatabaseName] mydb [-ResourceGroupName] myrg
 ```
 
-Perintah ini memulai pemutakhiran bergulir semua contoh vm dari kumpulan skala VM "VMSS001" dalam grup sumber daya "Group001".
+Perintah ini memulai putaran sinkronisasi untuk mysg grup sinkronisasi.
 
 ## PARAMETERS
 
-### -AsJob
-Menjalankan cmdlet di latar belakang
+### -DatabaseName
+Nama Azure SQL Database.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 Parameter Sets: (All)
 Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
 
 Required: False
 Position: Named
@@ -57,13 +69,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+### -PassThru
+Menentukan Apakah mengembalikan grup sinkronisasi
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
-Aliases: AzContext, AzureRmContext, AzureCredential
+Aliases:
 
 Required: False
 Position: Named
@@ -87,8 +99,23 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VMScaleSetName
-Nama kumpulan skala VM.
+### -ServerName
+Nama Server Azure SQL.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SyncGroupName
+Nama grup sinkronisasi.
 
 ```yaml
 Type: System.String
@@ -96,7 +123,7 @@ Parameter Sets: (All)
 Aliases: Name
 
 Required: True
-Position: 1
+Position: 3
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
@@ -142,8 +169,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
+### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncGroupModel
 
 ## CATATAN
 
 ## RELATED LINKS
+
+[Stop-AzSqlSyncGroupSync](./Stop-AzSqlSyncGroupSync.md)
+

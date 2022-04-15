@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTriggerScheduleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTriggerScheduleClientObject.md
 ms.openlocfilehash: e580059cc59243af39f4b1e0995bec1044366999
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139940947"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141958011"
 ---
 # New-AzDataProtectionPolicyTriggerScheduleClientObject
 
 ## SYNOPSIS
-Membuat objek Jadwal yang baru
+Membuat objek Jadwal baru
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytriggerscheduleclientobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytriggerscheduleclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzDataProtectionPolicyTriggerScheduleClientObject -IntervalCount <Int32> -In
 ```
 
 ## DESCRIPTION
-Membuat objek Jadwal yang baru
+Membuat objek Jadwal baru
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ PS C:\> New-AzDataProtectionPolicyTriggerScheduleClientObject -ScheduleDays $dat
 R/2021-03-03T12:49:55+05:30/P1D
 ```
 
-Perintah ini membuat jadwal harian untuk Aturan Cadangan Azure
+Perintah ini membuat jadwal harian untuk Aturan Azure Backup
 
 ### Contoh 2: Membuat objek jadwal per jam
 ```powershell
@@ -50,12 +50,12 @@ PS C:\> New-AzDataProtectionPolicyTriggerScheduleClientObject -ScheduleDays $dat
 R/2021-03-03T12:49:55+05:30/PT4H
 ```
 
-Perintah ini membuat jadwal per jam untuk Aturan Cadangan Azure.
+Perintah ini membuat scheudle per jam untuk Aturan Azure Backup.
 
 ## PARAMETERS
 
 ### -IntervalCount
-Frekuensi pencadangan.
+Frekuensi cadangan.
 
 ```yaml
 Type: System.Int32
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalType
-Freuquency of the backup.
+Freuquency cadangan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.BackupFrequency
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleDays
-Hari dengan cadangan yang akan dijadwalkan.
+Hari-hari di mana pencadangan akan dijadwalkan.
 
 ```yaml
 Type: System.DateTime[]
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
