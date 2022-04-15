@@ -4,17 +4,17 @@ Module Name: AzureRM.Compute
 ms.assetid: 695F224D-DA25-49F2-916E-25DA2A48A4A7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmdscextensionstatus
 schema: 2.0.0
-ms.openlocfilehash: aec0d4355448f5781b1effba111fd712821cf47de9fcd79dfcab2e16b9fdd331
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b6ec9918657c191e31e10c04b799603654d39d56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418588"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930075"
 ---
 # Get-AzureRmVMDscExtensionStatus
 
 ## SYNOPSIS
-Mendapatkan status penanganan ekstensi DSC untuk komputer virtual.
+Mendapatkan status pengatur ekstensi DSC untuk mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,8 +26,8 @@ Get-AzureRmVMDscExtensionStatus [-ResourceGroupName] <String> [-VMName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMDscExtensionStatus** mendapatkan status penanganan ekstensi Desired State Configuration (DSC) untuk mesin virtual dalam grup sumber daya.
-Jika konfigurasi diterapkan, cmdlet ini akan menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration cmdlet.
+Cmdlet **Get-AzureRmVMDscExtensionStatus** mendapatkan status pengatur ekstensi Konfigurasi Status Yang Diinginkan (DSC) untuk mesin virtual dalam grup sumber daya.
+Ketika konfigurasi diterapkan cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Jika konfigurasi diterapkan, cmdlet ini akan menghasilkan output yang konsisten 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,8 +55,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
-Cmdlet Set-AzureRmVMDscExtension mengatur nama ini menjadi Microsoft.Powershell.DSC, yang merupakan nilai yang sama dengan yang digunakan oleh **Get-AzureRmVMDscExtensionStatus.**
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet Set atau menggunakan nama sumber daya lain di templat Manajer Sumber Daya.
+Cmdlet Set-AzureRmVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama dengan yang digunakan oleh **Get-AzureRmVMDscExtensionStatus**.
+Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet Atur atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual di mana cmdlet ini mendapatkan status ekstensi DSC.
+Menentukan nama mesin virtual tempat cmdlet ini mendapatkan status ekstensi DSC.
 
 ```yaml
 Type: String
@@ -101,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

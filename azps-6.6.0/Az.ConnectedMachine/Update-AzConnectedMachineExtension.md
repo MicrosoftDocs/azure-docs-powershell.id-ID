@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
 ms.openlocfilehash: deb3f3baeb5435edf6058304877223fc804e923b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078525"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960189"
 ---
 # Update-AzConnectedMachineExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "140078525"
 Operasi untuk membuat atau memperbarui ekstensi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedmachineextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedmachineextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Update-AzConnectedMachineExtension -MachineName <String> -Name <String> -Resourc
  [<CommonParameters>]
 ```
 
-### Perbarui
+### Update
 ```
 Update-AzConnectedMachineExtension -MachineName <String> -Name <String> -ResourceGroupName <String>
  -ExtensionParameter <IMachineExtensionUpdate> [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
@@ -77,9 +77,9 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi pada komputer tertentu.
+Memperbarui ekstensi pada mesin tertentu.
 
-### Contoh 2: Memperbarui ekstensi dengan lokasi yang ditentukan melalui saluran
+### Contoh 2: Memperbarui ekstensi dengan lokasi yang ditentukan melalui pipeline
 ```powershell
 PS C:\> $extToUpdate = Get-AzConnectedMachineExtension -ResourceGroupName connectedMachines -MachineName linux-eastus1_1 -Name customScript
 PS C:\> $extToUpdate | Update-AzConnectedMachineExtension -Settings @{
@@ -91,10 +91,10 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi tertentu yang diberikan melalui saluran.
-Di sini kami menggunakan ekstensi yang akan digunakan melalui saluran untuk membantu kami mengidentifikasi ekstensi yang akan beroperasi dan menentukan apa yang ingin kami ubah melalui parameter normal (seperti `-Settings`)
+Memperbarui ekstensi tertentu yang diteruskan melalui saluran.
+Di sini kami menggunakan ekstensi yang dikirim melalui pipeline untuk membantu kami mengidentifikasi ekstensi mana yang ingin kami operasikan dan menentukan apa yang ingin kami ubah melalui parameter normal (seperti `-Settings`)
 
-### Contoh 3: Memperbarui ekstensi dengan parameter ekstensi yang ditentukan melalui saluran
+### Contoh 3: Memperbarui ekstensi dengan parameter ekstensi yang ditentukan melalui pipeline
 ```powershell
 PS C:\> $extToUpdate = Get-AzConnectedMachineExtension -ResourceGroupName connectedMachines -MachineName linux-eastus1_1 -Name customScript
 PS C:\> # Update the settings on the object that will be used via the pipeline
@@ -111,9 +111,9 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi tertentu yang diberikan melalui saluran.
-Di sini, kami menggunakan ekstensi yang disediakan melalui saluran untuk menyediakan perubahan yang akan dibuat pada ekstensi tersebut.
-Lokasi ekstensi tidak diambil melalui saluran tetapi melalui parameter yang ditentukan biasanya (oleh parameter splat).
+Memperbarui ekstensi tertentu yang diteruskan melalui saluran.
+Di sini kami menggunakan ekstensi yang diserahkan melalui pipeline untuk memberikan perubahan yang ingin kami buat pada ekstensi.
+Lokasi ekstensi tidak diambil melalui pipeline tetapi melalui parameter yang ditentukan secara normal (oleh parameter splat).
 
 ### Contoh 4: Menggunakan objek ekstensi sebagai lokasi dan parameter untuk memperbarui
 ```powershell
@@ -127,9 +127,9 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi tertentu yang diberikan melalui saluran.
-Di sini, kami menggunakan ekstensi yang disediakan melalui saluran untuk membantu kami mengidentifikasi ekstensi mana yang akan beroperasi.
-Selain itu, kami menggunakan parameter dari objek ekstensi untuk menentukan apa yang harus diperbarui.
+Memperbarui ekstensi tertentu yang diteruskan melalui saluran.
+Di sini kami menggunakan ekstensi yang dikirim melalui saluran untuk membantu kami mengidentifikasi ekstensi mana yang ingin kami operasikan.
+Selain itu, kami menggunakan parameter objek ekstensi untuk menentukan apa yang harus diperbarui.
 
 ## PARAMETERS
 
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -AutoUpgradeMinorVersion
-Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika ekstensi tersedia pada saat penggunaan.
-Namun, setelah digunakan, ekstensi tidak akan memutakhirkan versi minor kecuali redeployed, bahkan dengan properti yang diatur ke true.
+Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada waktu penyebaran.
+Namun, setelah disebarkan, ekstensi tidak akan memutakhirkan versi minor kecuali jika dieploy ulang, bahkan dengan properti ini diatur ke true.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -ExtensionParameter
 Menjelaskan Pembaruan Ekstensi Mesin.
-Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPARAMETER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti EXTENSIONPARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20200802.IMachineExtensionUpdate
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Bagaimana penanganan ekstensi menjadi paksa diperbarui meskipun konfigurasi ekstensi tidak berubah.
+Bagaimana pengatur ekstensi harus dipaksa untuk memperbarui meskipun konfigurasi ekstensi belum berubah.
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -MachineName
-Nama komputer tempat ekstensi harus dibuat atau diperbarui.
+Nama mesin tempat ekstensi harus dibuat atau diperbarui.
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectedSetting
-Ekstensi bisa berisi pengaturan yang diproteksiSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang diproteksi sama sekali.
+Ekstensi dapat berisi baik ProtectedSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang diproteksi sama sekali.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20200802.IMachineExtensionUpdatePropertiesProtectedSettings
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengaturan
-Json yang diformat pengaturan publik untuk ekstensi.
+Json memformat pengaturan publik untuk ekstensi tersebut.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20200802.IMachineExtensionUpdatePropertiesSettings
@@ -331,8 +331,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -392,7 +392,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -408,7 +408,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -423,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -447,20 +447,20 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 EXTENSIONPARAMETER <IMachineExtensionUpdate>: Menjelaskan Pembaruan Ekstensi Mesin.
   - `[Tag <IUpdateResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[AutoUpgradeMinorVersion <Boolean?>]`: Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada saat penggunaan. Namun, setelah digunakan, ekstensi tidak akan memutakhirkan versi minor kecuali redeployed, bahkan dengan properti yang diatur ke true.
-  - `[ForceUpdateTag <String>]`: Bagaimana penanganan ekstensi dipaksa diperbarui meskipun konfigurasi ekstensi tidak berubah.
-  - `[ProtectedSetting <IMachineExtensionUpdatePropertiesProtectedSettings>]`: Ekstensi bisa berisi pengaturan yang diproteksiSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang diproteksi sama sekali.
-  - `[Publisher <String>]`: Nama penerbit penanganan ekstensi.
+  - `[AutoUpgradeMinorVersion <Boolean?>]`: Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada waktu penggunaan. Namun, setelah disebarkan, ekstensi tidak akan memutakhirkan versi minor kecuali jika dieploy ulang, bahkan dengan properti ini diatur ke true.
+  - `[ForceUpdateTag <String>]`: Bagaimana penanganan ekstensi harus dipaksa untuk memperbarui meskipun konfigurasi ekstensi belum berubah.
+  - `[ProtectedSetting <IMachineExtensionUpdatePropertiesProtectedSettings>]`: Ekstensi dapat berisi baik ProtectedSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang diproteksi sama sekali.
+  - `[Publisher <String>]`: Nama penerbit pengatur ekstensi.
   - `[Setting <IMachineExtensionUpdatePropertiesSettings>]`: Json memformat pengaturan publik untuk ekstensi.
   - `[Type <String>]`: Menentukan tipe ekstensi; contohnya adalah "CustomScriptExtension".
-  - `[TypeHandlerVersion <String>]`: Menentukan versi penanganan skrip.
+  - `[TypeHandlerVersion <String>]`: Menentukan versi pengatur skrip.
 
 INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
-  - `[ExtensionName <String>]`: Nama ekstensi komputer.
+  - `[ExtensionName <String>]`: Nama ekstensi mesin.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama mesin hibrid.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

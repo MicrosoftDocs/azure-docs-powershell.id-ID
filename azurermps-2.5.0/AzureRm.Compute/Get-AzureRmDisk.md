@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
 Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermdisk
 schema: 2.0.0
-ms.openlocfilehash: c2bcb2f85212de2701dd9992620f642f98c635c4b949db75bbc83dafdd7160ae
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5bf1e7cb5a043afaaa4b6fd4d5e8f6820c14fbb1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930201"
 ---
 # Get-AzureRmDisk
 
 ## SYNOPSIS
-Mendapatkan properti disk Yang Dikelola.
+Mendapatkan properti disk terkelola.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,7 +25,7 @@ Get-AzureRmDisk [[-ResourceGroupName] <String>] [[-DiskName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDisk** mendapatkan properti disk Yang Dikelola.
+Cmdlet **Get-AzureRmDisk** mendapatkan properti disk terkelola.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ Perintah ini mendapatkan properti semua disk dalam grup sumber daya 'ResourceGro
 PS C:\> Get-AzureRmDisk
 ```
 
-Perintah ini mendapatkan properti semua disk dalam langganan.
+Perintah ini mendapatkan properti semua disk di bawah langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskName
-Menentukan nama disk.
+Menentukan nama diska.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

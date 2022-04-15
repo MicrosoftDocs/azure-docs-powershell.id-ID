@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disconnect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disconnect-AzAccount.md
 ms.openlocfilehash: be804058b178fdf2852a087ac39c485d44eb4e01
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140289481"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141962617"
 ---
 # Disconnect-AzAccount
 
@@ -18,17 +18,17 @@ ms.locfileid: "140289481"
 Memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks yang terkait dengan akun tersebut.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/disconnect-azaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disconnect-azaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ContextName (Default)
+### Nama Konteks (Default)
 ```
 Disconnect-AzAccount [-ContextName <String>] [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UserId
+### Userid
 ```
 Disconnect-AzAccount [-Username] <String> [-Scope <ContextModificationScope>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -53,7 +53,7 @@ Disconnect-AzAccount [-AzureContext] <PSAzureContext> [-Scope <ContextModificati
 ```
 
 ## DESCRIPTION
-Cmdlet Disconnect-AzAccount jaringan memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks (informasi langganan dan penyewa) yang terkait dengan akun tersebut.
+Cmdlet Disconnect-AzAccount memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks (informasi langganan dan penyewa) yang terkait dengan akun tersebut.
 Setelah menjalankan cmdlet ini, Anda perlu masuk lagi menggunakan Koneksi-AzAccount.
 
 ## EXAMPLES
@@ -70,19 +70,19 @@ Keluar dari akun Azure yang terkait dengan konteks saat ini.
 PS C:\> Get-AzContext "Work" | Disconnect-AzAccount -Scope CurrentUser
 ```
 
-Mengeluarkan akun yang terkait dengan konteks yang diberikan (bernama 'Pekerjaan'). Karena ini menggunakan lingkup 'Pengguna Saat Ini', semua kredensial dan konteks akan dihapus secara permanen.
+Keluar dari akun yang terkait dengan konteks tertentu (bernama 'Kerja'). Karena ini menggunakan lingkup 'CurrentUser', semua kredensial dan konteks akan dihapus secara permanen.
 
-### Contoh 3: Mengeluarkan pengguna tertentu
+### Contoh 3: Keluar dari pengguna tertentu
 ```powershell
 PS C:\> Disconnect-AzAccount -Username 'user1@contoso.org'
 ```
 
-Mengeluarkan pengguna 'user1@contoso.org', semua kredensial dan semua konteks yang terkait dengan pengguna ini akan dihapus.
+Keluar dari 'user1@contoso.org' pengguna - semua kredensial dan semua konteks yang terkait dengan pengguna ini akan dihapus.
 
 ## PARAMETERS
 
 ### -ApplicationId
-Id ServicePrincipal (id unik secara global)
+Id ServicePrincipal (id unik global)
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContextName
-Nama konteks untuk keluar
+Nama konteks untuk keluar dari
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek akun yang akan dihapus
+Objek akun untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Models.PSAzureRmAccount
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id penyewa (id unik secara global)
+Id penyewa (id unik global)
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

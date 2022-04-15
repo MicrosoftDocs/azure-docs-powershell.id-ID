@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMConfig.md
 ms.openlocfilehash: cde28960c995c640212436b3c5f29cc7073f3a6f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258425"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141960585"
 ---
 # New-AzVMConfig
 
@@ -19,7 +19,7 @@ ms.locfileid: "140258425"
 Membuat objek mesin virtual yang dapat dikonfigurasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,10 +53,10 @@ PS C:\> $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGro
 PS C:\> $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
 ```
 
-Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
-Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Perintah pertama mendapatkan kumpulan ketersediaan bernama AvailabilitySet03 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $AvailabilitySet.
+Perintah kedua membuat objek mesin virtual, lalu menyimpannya dalam variabel $VirtualMachine.
+Perintah menetapkan nama dan ukuran ke mesin virtual.
+Mesin virtual termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 
 ## PARAMETERS
 
@@ -64,11 +64,11 @@ Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan
 Menentukan ID kumpulan ketersediaan.
 Untuk mendapatkan objek kumpulan ketersediaan, gunakan cmdlet Get-AzAvailabilitySet.
 Objek set ketersediaan berisi properti ID. <br>
-Mesin virtual yang ditentukan dalam kumpulan ketersediaan yang sama dialokasikan ke simpul yang berbeda untuk memaksimalkan ketersediaan. <br>
-Untuk informasi selengkapnya tentang kumpulan ketersediaan, [lihat Mengelola ketersediaan mesin virtual](/azure/virtual-machines/availability). <br>
-Untuk informasi selengkapnya tentang pemeliharaan Azure yang direncanakan, [lihat Pemeliharaan yang direncanakan untuk mesin virtual di Azure](/azure/virtual-machines/maintenance-and-updates?toc=/azure/virtual-machines/windows/toc.json&bc=/azure/virtual-machines/windows/breadcrumb/toc.json) <br>
-Saat ini, VM hanya dapat ditambahkan ke kumpulan ketersediaan pada waktu pembuatan. Ketersediaan yang diatur dengan VM yang ditambahkan harus berada di bawah grup sumber daya yang sama dengan sumber daya kumpulan ketersediaan. VM yang sudah ada tidak dapat ditambahkan ke kumpulan ketersediaan. <br>
-Properti ini tidak dapat ditemukan bersama dengan referensi properti non-null.virtualMachineScaleSet.
+Mesin virtual yang ditentukan dalam kumpulan ketersediaan yang sama dialokasikan ke node yang berbeda untuk memaksimalkan ketersediaan. <br>
+Untuk informasi selengkapnya tentang kumpulan ketersediaan, lihat [Mengelola ketersediaan mesin virtual](/azure/virtual-machines/availability). <br>
+Untuk informasi selengkapnya tentang pemeliharaan terencana Azure, lihat [Pemeliharaan terencana untuk mesin virtual di Azure](/azure/virtual-machines/maintenance-and-updates?toc=/azure/virtual-machines/windows/toc.json&bc=/azure/virtual-machines/windows/breadcrumb/toc.json) <br>
+Saat ini, VM hanya dapat ditambahkan ke ketersediaan yang diatur pada waktu pembuatan. Ketersediaan yang diatur untuk tempat VM ditambahkan harus berada di bawah grup sumber daya yang sama dengan sumber daya kumpulan ketersediaan. VM yang sudah ada tidak bisa ditambahkan ke kumpulan ketersediaan. <br>
+Properti ini tidak dapat ada bersama dengan referensi non-null properties.virtualMachineScaleSet.
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -CapacityReservationGroupId
-Id Grup reservasi kapasitas yang digunakan untuk mengalokasikan.
+Id grup reservasi kapasitas yang digunakan untuk mengalokasikan.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,9 +112,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableUltraSSD
-Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan UltraSSD_LRS akun penyimpanan vm.
-Disk terkelola dengan tipe akun UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
+### -EnableUltrassd
+Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun penyimpanan UltraSSD_LRS pada VM.
+Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
 
 
 ```yaml
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 
 ### -EncryptionAtHost
 Properti EncryptionAtHost dapat digunakan oleh pengguna dalam permintaan untuk mengaktifkan atau menonaktifkan Enkripsi Host untuk mesin virtual atau kumpulan skala mesin virtual.
-Cara ini akan mengaktifkan enkripsi untuk semua disk, termasuk disk Resource/Temp di host itu sendiri.
-Default: Enkripsi pada host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
+Ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Sumber Daya/Temp di host itu sendiri.
+Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,8 +146,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CtionPolicy
-Kebijakan perlindungan untuk mesin virtual Azure Spot.  Nilai yang didukung adalah 'Deallocate' dan 'Delete'.
+### -EvictionPolicy
+Kebijakan penggalian untuk mesin virtual Azure Spot.  Nilai yang didukung adalah 'Deallocate' dan 'Delete'.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostId
-The Id of Host
+Id dari Host
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### -IdentityId
 Menentukan daftar identitas pengguna yang terkait dengan kumpulan skala mesin virtual.
-Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+Referensi identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
 
 ```yaml
 Type: System.String[]
@@ -209,12 +209,12 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan tipe lisensi, yang menunjukkan bahwa gambar atau disk untuk komputer virtual tersebut berlisensi secara lokal.
-Nilai yang mungkin untuk server Windows adalah:
+Menentukan tipe lisensi, yang menunjukkan bahwa gambar atau disk untuk mesin virtual telah dilisensikan di tempat.
+Nilai yang memungkinkan untuk Windows Server adalah:
 - Windows_Client
 - Windows_Server
 
-Kemungkinan nilai untuk sistem operasi Linux Server adalah:
+Nilai yang memungkinkan untuk sistem operasi Linux Server adalah:
 - RHEL_BYOS (untuk RHEL)
 - SLES_BYOS (untuk SUSE)
 
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Menentukan harga maksimum yang Anda bersedia untuk membayar VM/VMSS berprioritas rendah. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga berprioritas rendah saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat pembuatan/pembaruan VM/VMSS berprioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk membatalkan vm/VMSS prioritas rendah jika harga berprioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa VM/VMSS berprioritas rendah tidak boleh disederhkan untuk alasan harga. Selain itu, harga maks default adalah -1 jika tidak diberikan oleh Anda.
+Menentukan harga maksimum yang ingin Anda bayar untuk VM/VMSS berprioritas rendah. Harga ini adalah dalam Dolar AS. Harga ini akan dibandingkan dengan harga prioritas rendah saat ini untuk ukuran VM. Juga, harga dibandingkan pada saat membuat / memperbarui VM / VMSS prioritas rendah dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga prioritas rendah saat ini. MaxPrice juga akan digunakan untuk mengusir VM/VMSS berprioritas rendah jika harga prioritas rendah saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang memungkinkan adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0.01538.  -1 menunjukkan bahwa VM/VMSs prioritas rendah tidak boleh diusir karena alasan harga. Selain itu, harga maks default adalah -1 jika tidak disediakan oleh Anda.
 
 ```yaml
 Type: System.Double
@@ -247,9 +247,9 @@ Accept wildcard characters: False
 
 ### -Prioritas
 Prioritas untuk mesin virtual.  Hanya nilai yang didukung adalah 'Reguler', 'Titik' dan 'Rendah'.
-'Reguler' adalah untuk mesin virtual biasa.
-'Titik' adalah untuk menemukan mesin virtual.
-'Rendah' juga untuk mesin virtual titik tetapi diganti dengan 'Titik'. Harap gunakan 'Titik' dan bukan 'Rendah'.
+'Reguler' adalah untuk mesin virtual reguler.
+'Spot' adalah untuk mesin virtual spot.
+'Rendah' juga untuk mesin virtual spot tetapi digantikan dengan 'Spot'. Silakan gunakan 'Spot' dan bukan 'Rendah'.
 
 ```yaml
 Type: System.String
@@ -278,7 +278,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Tag yang dilampirkan ke sumber daya.
 
 ```yaml
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama untuk mesin virtual.
+Menentukan nama untuk mesin maya.
 
 ```yaml
 Type: System.String
@@ -338,8 +338,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan daftar zona ketersediaan untuk komputer virtual. Nilai yang diperbolehkan bergantung pada kapabilitas kawasan. Nilai yang diperbolehkan biasanya adalah 1,2,3.
+### -Zona
+Menentukan daftar zona ketersediaan untuk mesin maya. Nilai yang diperbolehkan bergantung pada kapabilitas kawasan. Nilai yang diizinkan biasanya adalah 1,2,3.
 
 ```yaml
 Type: System.String[]
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -374,11 +374,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Update-azvm](./Update-AzVM.md)
+[Perbarui-AzVM](./Update-AzVM.md)
 
-[Set-AzvMOperatingSystem](./Set-AzVMOperatingSystem.md)
+[Set-AzVMOperatingSystem](./Set-AzVMOperatingSystem.md)
 
-[Set-azvmSourceImage](./Set-AzVMSourceImage.md)
+[Set-AzVMSourceImage](./Set-AzVMSourceImage.md)
 
 [Get-AzAvailabilitySet](./Get-AzAvailabilitySet.md)
 

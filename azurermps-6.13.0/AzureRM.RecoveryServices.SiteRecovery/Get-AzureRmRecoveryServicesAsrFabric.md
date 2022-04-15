@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrFabric.md
 ms.openlocfilehash: db93d022d2abd6d3c6cecfe32b1f82be4483e850
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421601"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142136082"
 ---
 # Get-AzureRmRecoveryServicesAsrFabric
 
 ## SYNOPSIS
-Get the details of an Azure Site Recovery Fabric.
+Dapatkan detail Azure Site Recovery Fabric.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,7 +39,7 @@ Get-AzureRmRecoveryServicesAsrFabric -FriendlyName <String> [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-The **Get-AzureRmRecoveryServicesAsrFabric** cmdlet gets the properties of a specified Azure Site Recovery Fabric or all Azure Site Recovery Fabrics in a Recovery Service vault.
+Cmdlet **Get-AzureRmRecoveryServicesAsrFabric** mendapatkan properti Azure Site Recovery Fabric tertentu atau semua Azure Site Recovery Fabrics dalam kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ The **Get-AzureRmRecoveryServicesAsrFabric** cmdlet gets the properties of a spe
 PS C:\> $fabrics = Get-AzureRmRecoveryServicesAsrFabric
 ```
 
-Mengembalikan semua kain Pemulihan Situs Azure di vault.
+Mengembalikan semua kain Site Recovery Azure dalam kubah.
 
 ### Contoh 2
 ```
@@ -62,7 +62,7 @@ SiteIdentifier        : XXXXXXXXxxxxxxxxxxx
 FabricSpecificDetails : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVMWareSpecificDetails
 ```
 
-Return azure site recovery fabric with name xxxx.
+Mengembalikan kain pemulihan situs azure dengan nama xxxx.
 
 ### Contoh 3
 ```
@@ -76,7 +76,7 @@ SiteIdentifier        : XXXXXXXXxxxxxxxxxxx
 FabricSpecificDetails : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVMWareSpecificDetails
 ```
 
-Return azure site recovery fabric with friendly name xxxx.
+Mengembalikan kain pemulihan situs azure dengan nama xxxx yang mudah dikenali.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Search for the ASR fabric by the friendly name of the fabric.
+Cari kain ASR dengan nama kain yang ramah.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Search for the ASR fabric by the name of the fabric.
+Cari kain ASR dengan nama kain.
 
 ```yaml
 Type: System.String
@@ -126,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmRecoveryServicesAsrFabric](./New-AzureRmRecoveryServicesAsrFabric.md)
+[Baru-AzureRmRecoveryServicesAsrFabric](./New-AzureRmRecoveryServicesAsrFabric.md)
 
 [Remove-AzureRmRecoveryServicesAsrFabric](./Remove-AzureRmRecoveryServicesAsrFabric.md)
