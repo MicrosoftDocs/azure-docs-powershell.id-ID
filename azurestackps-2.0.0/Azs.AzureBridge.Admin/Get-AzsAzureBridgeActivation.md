@@ -3,17 +3,17 @@ external help file: Azs.AzureBridge.Admin-help.xml
 Module Name: Azs.AzureBridge.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 8ac44f38f827ee89b6a796ab71dcf6a2542364df0dd695a981ca8589b0ac26ac
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 83d47f93addf05af19b523db6ba454443af2c34f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419042"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142134518"
 ---
 # Get-AzsAzureBridgeActivation
 
 ## SYNOPSIS
-Mengembalikan Azure Bridge Activation.
+Mengembalikan Aktivasi Azure Bridge.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Mengembalikan Azure Bridge Activation.
 Get-AzsAzureBridgeActivation -ResourceGroupName <String> [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsAzureBridgeActivation -Name <String> -ResourceGroupName <String> [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ Get-AzsAzureBridgeActivation -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Setelah Azure Stack didaftarkan, objek aktivasi berisi informasi yang menautkan penyebaran Azure Stack ke pendaftarannya di Azure, misalnya, tanggal kedaluwarsa pendaftaran, nama, dll.
+Setelah Azure Stack terdaftar, objek aktivasi berisi informasi yang menautkan penyebaran Azure Stack ke pendaftarannya di Azure, misalnya, tanggal kedaluwarsa pendaftaran, nama, dll.
 
 ## EXAMPLES
 
@@ -42,14 +42,14 @@ Setelah Azure Stack didaftarkan, objek aktivasi berisi informasi yang menautkan 
 Get-AzsAzureBridgeActivation -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan daftar Aktivasi Azure Bridge di bawah grup sumber daya "activationRG"
+Dapatkan daftar Aktivasi Bridge Azure di bawah grup sumber daya "activationRG"
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Get-AzsAzureBridgeActivation -Name 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan Aktivasi Bridge Azure dengan nama 'myActivation' terletak di bawah 'activationRG'
+Dapatkan Aktivasi Bridge Azure berdasarkan nama 'myActivation' yang terletak di bawah 'activationRG'
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup Sumber Daya yang digunakan selama pendaftaran Tumpukan Azure; Anda juga bisa menampilkan nama Grup Sumber Daya di portal.
+Grup Sumber Daya yang digunakan selama pendaftaran Azure Stack; Anda juga bisa menampilkan nama Grup Sumber Daya di portal.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
