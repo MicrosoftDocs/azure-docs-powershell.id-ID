@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Set-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Set-AzResourceGroup.md
 ms.openlocfilehash: d645f430c21a1e9675a0f356cffacbad6a7b5740
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419844"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142481399"
 ---
 # Set-AzResourceGroup
 
@@ -35,7 +35,7 @@ Set-AzResourceGroup [-Tag] <Hashtable> [-Id] <String> [-ApiVersion <String>] [-P
 ## DESCRIPTION
 Cmdlet **Set-AzResourceGroup** mengubah properti grup sumber daya.
 Anda dapat menggunakan cmdlet ini untuk menambahkan, mengubah, atau menghapus tag Azure yang diterapkan ke grup sumber daya.
-Tentukan parameter *Nama* untuk mengidentifikasi grup sumber daya *dan parameter* Tag untuk mengubah tag.
+Tentukan parameter *Nama* untuk mengidentifikasi grup sumber daya dan parameter *Tag* untuk mengubah tag.
 Anda tidak dapat menggunakan cmdlet ini untuk mengubah nama grup sumber daya.
 
 ## EXAMPLES
@@ -45,7 +45,7 @@ Anda tidak dapat menggunakan cmdlet ini untuk mengubah nama grup sumber daya.
 PS C:\>Set-AzResourceGroup -Name "ContosoRG" -Tag @{Department="IT"}
 ```
 
-Perintah ini menerapkan tag Departemen dengan nilai IT ke grup sumber daya yang tidak memiliki tag yang sudah ada.
+Perintah ini menerapkan tag Departemen dengan nilai TI ke grup sumber daya yang tidak memiliki tag yang sudah ada.
 
 ### Contoh 2: Menambahkan tag ke grup sumber daya
 ```
@@ -56,25 +56,25 @@ PS C:\> Set-AzResourceGroup -Name "ContosoRG" -Tag $Tags
 PS C:> (Get-AzResourceGroup -Name "ContosoRG").Tags
 ```
 
-Contoh ini menambahkan tag Status dengan nilai Disetujui dan tag FY2016 ke grup sumber daya yang memiliki tag yang sudah ada. Karena tag yang ditentukan akan menggantikan tag yang sudah ada, Anda harus menyertakan tag yang sudah ada dalam kumpulan tag baru atau kehilangan tag tersebut.
-Perintah pertama mendapatkan grup sumber daya ContosoRG dan menggunakan metode titik untuk mendapatkan nilai properti Tag. Perintah menyimpan tag di $Tags variabel.
-Perintah kedua mendapatkan tag di $Tags variabel.
-Perintah ketiga menggunakan operator penetapan += untuk menambahkan tag Status dan FY2016 ke larik tag dalam $Tags variabel.
-Perintah keempat menggunakan parameter *Tag* **Set-AzResourceGroup** untuk menerapkan tag di variabel $Tags ke grup sumber daya ContosoRG.
-Perintah kelima adalah semua tag yang diterapkan ke grup sumber daya ContosoRG. Output memperlihatkan bahwa grup sumber daya memiliki tag Departemen dan dua tag baru, Status dan FY2015.
+Contoh ini menambahkan tag Status dengan nilai Disetujui dan tag FY2016 ke grup sumber daya yang memiliki tag yang sudah ada. Karena tag yang Anda tentukan mengganti tag yang sudah ada, Anda harus menyertakan tag yang sudah ada dalam kumpulan tag baru atau Anda akan kehilangan tag tersebut.
+Perintah pertama mendapatkan grup sumber daya ContosoRG dan menggunakan metode titik untuk mendapatkan nilai properti Tag-nya. Perintah menyimpan tag dalam variabel $Tags.
+Perintah kedua akan mendapatkan tag dalam variabel $Tags.
+Perintah ketiga menggunakan operator penugasan += untuk menambahkan tag Status dan FY2016 ke array tag dalam variabel $Tags.
+Perintah keempat menggunakan parameter *Tag* **Set-AzResourceGroup** untuk menerapkan tag dalam variabel $Tags ke grup sumber daya ContosoRG.
+Perintah kelima mendapatkan semua tag yang diterapkan ke grup sumber daya ContosoRG. Output menunjukkan bahwa grup sumber daya memiliki tag Departemen dan dua tag baru, Status dan FY2015.
 
-### Contoh 3: Hapus semua tag untuk grup sumber daya
+### Contoh 3: Menghapus semua tag untuk grup sumber daya
 ```
 PS C:\>Set-AzResourceGroup -Name "ContosoRG" -Tag @{}
 ```
 
-Perintah ini menentukan *parameter Tag* dengan nilai tabel hash kosong untuk menghapus semua tag dari grup sumber daya ContosoRG.
+Perintah ini menentukan parameter *Tag* dengan nilai tabel hash kosong untuk menghapus semua tag dari grup sumber daya ContosoRG.
 
 ## PARAMETERS
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Tag adalah pasangan nilai nama yang dapat dibuat dan diterapkan ke sumber daya dan grup sumber daya. Setelah menetapkan tag untuk sumber daya dan grup, Anda bisa menggunakan parameter *Tag* dari Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup dengan nama atau nama tag dan nilai. Anda bisa menggunakan tag untuk mengkategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya tersebut.
-Untuk menambahkan atau mengubah tag, Anda harus mengganti kumpulan tag untuk grup sumber daya tersebut. Untuk menghapus tag, masukkan tabel hash dengan semua tag yang saat ini diterapkan ke grup sumber daya, dari **Get-AzResourceGroup,** kecuali untuk tag yang ingin Anda hapus. Untuk menghapus semua tag dari grup sumber daya, tentukan tabel hash kosong: `@{}` .
+Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Tag adalah pasangan nilai nama yang dapat Anda buat dan terapkan ke sumber daya dan grup sumber daya. Setelah menetapkan tag ke sumber daya dan grup, Anda bisa menggunakan parameter *Tag* Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup menurut nama tag atau nama dan nilai. Anda bisa menggunakan tag untuk mengkategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya.
+Untuk menambahkan atau mengubah tag, Anda harus mengganti kumpulan tag untuk grup sumber daya. Untuk menghapus tag, masukkan tabel hash dengan semua tag yang saat ini diterapkan ke grup sumber daya, dari **Get-AzResourceGroup**, kecuali tag yang ingin Anda hapus. Untuk menghapus semua tag dari grup sumber daya, tentukan tabel hash kosong: `@{}`.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -183,6 +183,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzResourceGroup](./Get-AzResourceGroup.md)
 
-[New-AzResourceGroup](./New-AzResourceGroup.md)
+[AzResourceGroup baru](./New-AzResourceGroup.md)
 
-[Remove-AzResourceGroup](./Remove-AzResourceGroup.md)
+[Hapus-AzResourceGroup](./Remove-AzResourceGroup.md)

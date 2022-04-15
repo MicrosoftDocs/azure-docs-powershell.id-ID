@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeRole.md
-ms.openlocfilehash: 7bb07e2a1a70d7bb5a017c6ec5957a7681bec2ef
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c5368ee583203b1a27e5bcd13b534560b57e1a9a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142481741"
 ---
 # Get-AzStackEdgeRole
 
 ## SYNOPSIS
 Mengambil peran yang tersedia untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzStackEdgeRole [[-Name] <String>] [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeRole** mengambil peran IoT yang tersedia untuk perangkat Stack Edge. Anda bisa menyebutkan parameter Nama untuk mendapatkan detail peran IoT tertentu.
+Cmdlet **Get-AzStackEdgeRole** mengambil peran IoT yang tersedia untuk perangkat Stack Edge. Anda dapat menyebutkan parameter Nama untuk mendapatkan detail peran IoT tertentu.
 
 ## EXAMPLES
 
@@ -161,15 +164,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeDevice
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeDevice
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeRole
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeRole
 
 ## CATATAN
 

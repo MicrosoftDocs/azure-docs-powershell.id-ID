@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzVmssNetworkInterfaceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzVmssNetworkInterfaceConfiguration.md
 ms.openlocfilehash: f99f5742e9719ca9761313cd40d2c996d4e23be9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414122"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142481489"
 ---
 # Remove-AzVmssNetworkInterfaceConfiguration
 
@@ -33,7 +33,7 @@ Remove-AzVmssNetworkInterfaceConfiguration [-VirtualMachineScaleSet] <PSVirtualM
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVmssNetworkInterfaceConfiguration** menghapus konfigurasi antarmuka jaringan dari Kumpulan Skala Komputer Virtual (VMSS).
+Cmdlet **Remove-AzVmssNetworkInterfaceConfiguration** menghapus konfigurasi antarmuka jaringan dari Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
@@ -43,14 +43,14 @@ PS C:\> $VMSS = Get-AzVmss -ResourceGroupName "ResourceGroup11" -VMScaleSetName 
 PS C:\> Remove-AzVmssNetworkInterfaceConfiguration -VirtualMachineScaleSet $VMSS -Name "ContosoVmssInterface02"
 ```
 
-Perintah pertama memiliki VMSS menggunakan cmdlet Get-AzVmss, lalu menyimpannya dalam $VMSS variabel.
+Perintah pertama mendapatkan VMSS dengan menggunakan cmdlet Get-AzVmss, lalu menyimpannya dalam variabel $VMSS.
 
-Perintah kedua menghapus konfigurasi antarmuka jaringan yang bernama ContosoVmssInterface02 dari kumpulan dalam $VMSS.
+Perintah kedua menghapus konfigurasi antarmuka jaringan bernama ContosoVmssInterface02 dari set di $VMSS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -94,7 +94,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
 
 ```yaml
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -140,12 +140,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### VirtualMachinescaleSet
-Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari saluran
+### VirtualMachineScaleSet
+Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari pipeline
 
 ## OUTPUTS
 

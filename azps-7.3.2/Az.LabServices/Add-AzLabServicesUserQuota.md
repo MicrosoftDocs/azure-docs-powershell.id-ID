@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Add-AzLabServicesUserQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Add-AzLabServicesUserQuota.md
-ms.openlocfilehash: 650adc4587662b268f60ba0386811eeaac52ebb1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0db3dfd6cd64148dc1009d4a3af1cbe4f4fcfd08
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402243"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489409"
 ---
 # Add-AzLabServicesUserQuota
 
 ## SYNOPSIS
 API untuk menambahkan kuota pengguna tambahan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/add-azlabservicesuserquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ API untuk menambahkan kuota pengguna tambahan.
 
 ## EXAMPLES
 
-### Contoh 1: Tambah kuota penggunaan pelajar.
+### Contoh 1: Tambah kuota penggunaan siswa.
 ```powershell
 PS C:\> Add-AzLabUserQuota -ResourceGroupName "group name" -LabName "lab name" -Email 'student@contoso.com' -UsageQuotaToAddToExisting $(New-Timespan -Hours 4)
 
@@ -46,9 +49,9 @@ Name           Type
 testuser       Microsoft.LabServices/labs/users
 ```
 
-Perintah ini akan menambah kuota siswa selama 4 jam.
+Perintah ini menambah kuota siswa hingga 4 jam.
 
-### Contoh 2: Tambah kuota penggunaan pelajar dengan objek Pengguna.
+### Contoh 2: Tambah kuota penggunaan siswa dengan objek Pengguna.
 ```powershell
 PS C:\> $user = Get-AzLabUser -ResourceGroupName "group name" -LabName "lab name" -UserName 'ContosoUser12345'
 PS C:\> $user | Add-AzLabUserQuota -UsageQuotaToAddToExisting $(New-Timespan -Hours 5)
@@ -58,7 +61,7 @@ Name                 Type
 ContosoUser12345     Microsoft.LabServices/labs/users
 ```
 
-Menambah kuota siswa sebesar 5 jam.
+Tambah kuota siswa 5 jam.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-Nama pengguna yang secara tidak pasti mengidentifikasinya di dalam berisi lab.
+Nama pengguna yang secara uniqely mengidentifikasinya di dalamnya yang berisi lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsageQuotaToAddToExisting
-Jumlah waktu kuota penggunaan yang akan diberikan pengguna selain kuota pengguna saat ini.
+Jumlah waktu kuota penggunaan yang didapatkan pengguna selain kuota pengguna saat ini.
 
 ```yaml
 Type: System.TimeSpan
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengguna
-Untuk membuat, lihat bagian CATATAN untuk properti USER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PENGGUNA dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.User
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -236,13 +239,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PENGGUNA <User>: 
   - `Email <String>`: Alamat email pengguna.
-  - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang akan diberikan pengguna selain kuota penggunaan lab.
-  - `[SystemDataCreatedAt <DateTime?>]`: Timestamp pembuatan sumber daya (UTC).
+  - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang didapatkan pengguna selain kuota penggunaan lab.
+  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Timestamp sumber daya modifikasi terakhir (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir diubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir diubah sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
 
 ## RELATED LINKS
 

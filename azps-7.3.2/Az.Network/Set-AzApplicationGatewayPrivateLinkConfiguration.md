@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: dab15ccf61952a20f85c8d7118be49228248e208
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: da372e05ee4a51629861d39e0ee9571bbb42b581
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007464"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468007"
 ---
 # Set-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Mengubah Konfigurasi PrivateLink untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayPrivateLinkConfiguration** memodifikasi konfigurasi privateLink untuk gateway aplikasi Azure.
+Cmdlet **Set-AzApplicationGatewayPrivateLinkConfiguration** mengubah konfigurasi privateLink untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $AppGw = Set-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway $AppGw -Name "privateLinkConfig01" -IpConfiguration $privateLinkIpConfiguration01
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 Perintah kedua mengatur konfigurasi privateLink dengan nama privateLinkConfig01 untuk menggunakan konfigurasi ip yang disimpan di $privateLinkIpConfiguration 01
 
 ## PARAMETERS
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

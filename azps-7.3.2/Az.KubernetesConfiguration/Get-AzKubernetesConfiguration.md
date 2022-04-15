@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Get-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Get-AzKubernetesConfiguration.md
-ms.openlocfilehash: 7972be48b6ae2bf526d024733b3d030c7fcfdc3e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a2e5e0450d8a0bb48ea292840e94215c681a03be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008664"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489643"
 ---
 # Get-AzKubernetesConfiguration
 
 ## SYNOPSIS
 Mendapatkan detail Konfigurasi Kontrol Sumber.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/get-azkubernetesconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzKubernetesConfiguration -ClusterName <String> -ClusterType <String> -Resou
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzKubernetesConfiguration -ClusterName <String> -ClusterType <String> -Name <String>
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan detail Konfigurasi Kontrol Sumber.
 
 ## EXAMPLES
 
-### Contoh 1: Detail daftar Konfigurasi Kontrol Sumber.
+### Contoh 1: Mencantumkan detail Konfigurasi Kontrol Sumber.
 ```powershell
 PS C:\> Get-AzKubernetesConfiguration -ResourceGroupName azps_test_group -ClusterName azps_test_cluster -ClusterType ConnectedClusters
 
@@ -68,7 +71,7 @@ Mendapatkan detail Konfigurasi Kontrol Sumber.
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster k ada.
+Nama kluster kubernetes.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterType
-Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) maupun connectedClusters (untuk kluster OnPrem K8S).
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -174,15 +177,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.K cmdletsConfiguration.Models.IKconfigurationIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.K cmdletsConfiguration.Models.Api20210301.ISourceControlConfiguration
+### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.Api20210301.ISourceControlConfiguration
 
 ## CATATAN
 
@@ -196,15 +199,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama kluster kjadwal.
-  - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
-  - `[ClusterRp <String>]`: Kluster Kmicrosoft RP - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kmicrosoft (untuk kluster OnPrem K8S).
+  - `[ClusterName <String>]`: Nama kluster kubernetes.
+  - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
+  - `[ClusterRp <String>]`: RP kluster Kubernetes - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kubernetes (untuk kluster OnPrem K8S).
   - `[ExtensionName <String>]`: Nama Ekstensi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OperationId <String>]`: id operasi
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[SourceControlConfigurationName <String>]`: Nama Konfigurasi Kontrol Sumber.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

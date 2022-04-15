@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvisor.md
-ms.openlocfilehash: 6085fde7dab886d4b1e38956bb9c1a847567f6a6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: abedfde36ab98ecf6da210c200f43e5b2064461b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006084"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142482065"
 ---
 # Get-AzSqlDatabaseAdvisor
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa Penasihat untuk Azure SQL Database.
+Mendapatkan satu atau beberapa Penasihat untuk Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseadvisor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlDatabaseAdvisor [-AdvisorName <String>] [-ExpandRecommendedActions] -Se
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseAdvisor** mendapatkan satu atau beberapa Azure SQL Database penasihat untuk mendapatkan Azure SQL Database.
+Cmdlet **Get-AzSqlDatabaseAdvisor** mendapatkan satu atau beberapa Azure SQL Database Penasihat untuk Azure SQL Database.
 
 ## EXAMPLES
 
@@ -79,9 +82,9 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah ini akan mencantumkan semua penasihat database bernama WIRunner yang dimiliki oleh server bernama wi-runner-australia-east.
+Perintah ini mencantumkan semua penasihat untuk database bernama WIRunner yang dimiliki server bernama wi-runner-australia-east.
 
-### Contoh 2: Mendapatkan satu penasihat untuk database tertentu
+### Contoh 2: Dapatkan penasihat tunggal untuk database tertentu
 ```
 PS C:\>Get-AzSqlDatabaseAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -AdvisorName "CreateIndex"
 DatabaseName                   : WIRunner
@@ -98,7 +101,7 @@ RecommendedActions             : {}
 
 Perintah ini mendapatkan Penasihat bernama CreateIndex untuk database bernama WIRunner.
 
-### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang disarankan yang disertakan dalam respons
+### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
 PS C:\>Get-AzSqlDatabaseAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -ExpandRecommendedActions
 DatabaseName                   : WIRunner
@@ -152,10 +155,10 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah ini akan memberikan semua penasihat database yang bernama 'WIRunner' dengan tindakan yang disarankan yang disertakan dalam respons.
-Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet akan mendapatkan tindakan yang disarankan dengan respons.
+Perintah ini mendapatkan semua penasihat untuk database bernama 'WIRunner' dengan tindakan yang direkomendasikan yang disertakan dalam respons.
+Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet mendapatkan tindakan yang direkomendasikan dengan respons.
 
-### Contoh 4: Dapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
+### Contoh 4: Dapatkan penasihat tunggal dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
 PS C:\>Get-AzSqlDatabaseAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -DatabaseName "WIRunner" -AdvisorName "CreateIndex" -ExpandRecommendedActions
 DatabaseName                   : WIRunner
@@ -173,8 +176,8 @@ RecommendedActions             : {IR_[test_schema]_[test_table_0.0361551]_6C7AE8
                                  IR_[test_schema]_[test_table_0.437714]_6C7AE8CC9C87E7FD5893...}
 ```
 
-Perintah ini mendapatkan Penasihat bernama CreateIndex dari database yang bernama WIRunner dengan tindakan yang direkomendasikannya disertakan dalam respons.
-Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet akan mendapatkan tindakan yang disarankan dengan respons.
+Perintah ini mendapatkan Penasihat bernama CreateIndex dari database bernama WIRunner dengan tindakan yang direkomendasikan yang disertakan dalam respons.
+Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet mendapatkan tindakan yang direkomendasikan dengan respons.
 
 ### Contoh 5: Mencantumkan semua penasihat untuk database tertentu menggunakan pemfilteran
 ```
@@ -202,12 +205,12 @@ RecommendationsStatus          : NoDbParameterizationIssue
 RecommendedActions             : {}
 ```
 
-Perintah ini akan mencantumkan semua penasihat database bernama WIRunner yang dimiliki oleh server bernama wi-runner-australia-east dan dimulai dengan huruf "d".
+Perintah ini akan mencantumkan semua penasihat untuk database bernama WIRunner yang dimiliki server bernama wi-runner-australia-east dan dimulai dengan huruf "d".
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang akan mendapatkan cmdlet ini.
+Menentukan nama penasihat yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: True
 ```
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet ini meminta Penasihat.
+Menentukan nama database yang meminta cmdlet ini untuk Penasihat.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandRecommendedActions
-Mengindikasikan bahwa cmdlet ini mendapatkan tindakan yang disarankan dengan respons tersebut.
+Menunjukkan bahwa cmdlet ini mendapatkan tindakan yang direkomendasikan dengan respons.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -310,7 +313,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlDatabaseAdvisorModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, database, mssql, advisor
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, penasihat
 
 ## RELATED LINKS
 
@@ -322,4 +325,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlDatabaseAdvisorAutoExecuteStatus](./Set-AzSqlDatabaseAdvisorAutoExecuteStatus.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

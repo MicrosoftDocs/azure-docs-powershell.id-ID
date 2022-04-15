@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbServer.md
-ms.openlocfilehash: d2f1f72b9d5e08a257c9e2ad28fc32fed5248035
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 48f2e6c954401731d2df94f991f952ea2a4fe8c1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142488761"
 ---
 # Update-AzMariaDbServer
 
 ## SYNOPSIS
 Memperbarui server yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzMariaDbConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzMariaDbConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/update-azmariadbserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ Update-AzMariaDbServer -InputObject <IMariaDbIdentity> [-AdministratorLoginPassw
 ## DESCRIPTION
 Memperbarui server yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzMariaDbConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzMariaDbConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui MariaDB
+### Contoh 1: Memperbarui MariaDB
 ```powershell
 PS C:\> Update-AzMariaDbServer -Name mariadb-test-4rmtig -ResourceGroupName mariadb-test-qu5ov0 -StorageInMb 8192
 
@@ -57,7 +60,7 @@ mariadb-test-4rmtig eastus   xofavpndqj         10.2    8192                    
 
 Perintah ini memperbarui MariaDB.
 
-### Contoh 2: Memperbarui MariaDB
+### Contoh 2: Perbarui MariaDB
 ```powershell
 PS C:\> Get-AzMariaDbServer -Name mariadb-test-4rmtig -ResourceGroupName mariadb-test-qu5ov0 | Update-AzMariaDbServer -StorageInMb (8192+1024)
 
@@ -71,7 +74,7 @@ Perintah ini memperbarui MariaDB.
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
-Kata sandi administrator masuk.
+Kata sandi log masuk administrator.
 
 ```yaml
 Type: System.Security.SecureString
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Pencadangan hari penyimpanan untuk server.
+Mencadangkan hari penyimpanan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-DefaultParameters Kawasan Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+kawasan DefaultParameters Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoRedundantBackup
-Aktifkan Geo-redundan atau bukan untuk pencadangan server.
+Aktifkan Geo-redundant atau tidak untuk cadangan server.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.GeoRedundantBackup
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationRole
-Replikasi peran server.
+Peran replikasi server.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
+Nama grup sumber daya yang berisi sumber daya.
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
+Nama sku, biasanya, tingkat + family + core, misalnya B_Gen4_1, GP_Gen5_8.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslEnforcement
-Aktifkan penerapan ssl atau jangan saat tersambung ke server.
+Aktifkan penerapan ssl atau tidak saat tersambung ke server.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.SslEnforcementEnum
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Auto Grow.
+Aktifkan Storage Pertumbuhan Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.StorageAutogrow
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks diperbolehkan untuk server.
+Penyimpanan maks yang diperbolehkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan
 
 ```yaml
 Type: System.String
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,11 +345,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.I CmdletDbIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
 
 ## OUTPUTS
 
@@ -367,7 +370,7 @@ INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.

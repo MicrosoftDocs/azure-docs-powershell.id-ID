@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
 ms.openlocfilehash: be32e761fc854c6ad4a270f36e4c9b6328e00ba1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426971"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142481327"
 ---
 # Get-AzStorageAccount
 
 ## SYNOPSIS
-Mendapatkan akun Storage Anda.
+Mendapatkan akun Storage.
 
 ## SYNTAX
 
@@ -37,26 +37,26 @@ Cmdlet **Get-AzStorageAccount** mendapatkan akun Storage tertentu atau semua aku
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan akun Storage tertentu
+### Contoh 1: Dapatkan akun Storage yang ditentukan
 ```
 PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini mendapatkan akun Storage tertentu.
+Perintah ini mendapatkan akun Storage yang ditentukan.
 
-### Contoh 2: Dapatkan semua Storage grup sumber daya dalam grup sumber daya
+### Contoh 2: Dapatkan semua akun Storage dalam grup sumber daya
 ```
 PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01"
 ```
 
-Perintah ini akan mendapatkan semua Storage sumber daya dalam grup sumber daya.
+Perintah ini mendapatkan semua akun Storage dalam grup sumber daya.
 
-### Contoh 3: Mendapatkan Storage akun dalam langganan
+### Contoh 3: Dapatkan semua akun Storage dalam langganan
 ```
 PS C:\>Get-AzStorageAccount
 ```
 
-Perintah ini akan mendapatkan semua Storage baru dalam langganan.
+Perintah ini mendapatkan semua akun Storage dalam langganan.
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Storage yang akan dapatkan.
+Menentukan nama akun Storage yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage yang akan dapatkan.
+Menentukan nama grup sumber daya yang berisi akun Storage untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzStorageAccount](./New-AzStorageAccount.md)
 
-[Remove-AzStorageAccount](./Remove-AzStorageAccount.md)
+[Hapus-AzStorageAccount](./Remove-AzStorageAccount.md)
 
 [Set-AzStorageAccount](./Set-AzStorageAccount.md)
 

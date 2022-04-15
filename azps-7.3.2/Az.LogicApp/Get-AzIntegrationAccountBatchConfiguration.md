@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountBatchConfiguration.md
-ms.openlocfilehash: c3353ac1f371e29b2c21743572eb5d2bf6847871
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ffd5f5b2da9bfa9eebcbebaa23e70f6afa0ef5d8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186320"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489229"
 ---
 # Get-AzIntegrationAccountBatchConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi kumpulan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountbatchconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzIntegrationAccountBatchConfiguration** mendapatkan konfigurasi ku
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi kumpulan menurut parameter
+### Contoh 1: Dapatkan konfigurasi kumpulan menurut parameter
 ```powershell
 PS C:\> Get-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -BatchConfigurationName "sampleBatchConfig"
 
@@ -55,9 +58,9 @@ Tags       :
 
 ```
 
-Dapatkan konfigurasi kumpulan bernama "sampleBatchConfig" yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat di grup sumber daya "sampleResourceGroup".
+Dapatkan konfigurasi kumpulan bernama "sampleBatchConfig" yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat dalam grup sumber daya "sampleResourceGroup".
 
-### Contoh 2:  List all batch configurations in an integration account by parameters
+### Contoh 2: Mencantumkan semua konfigurasi kumpulan dalam akun integrasi menurut parameter
 ```powershell
 PS C:\> Get-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount"
 
@@ -77,7 +80,7 @@ Tags       :
 
 ```
 
-Dapatkan semua konfigurasi kumpulan yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat di grup sumber daya "sampleResourceGroup".
+Dapatkan semua konfigurasi kumpulan yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat dalam grup sumber daya "sampleResourceGroup".
 
 ## PARAMETERS
 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

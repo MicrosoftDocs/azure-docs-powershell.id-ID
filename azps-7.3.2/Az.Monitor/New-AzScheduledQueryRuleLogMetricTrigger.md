@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
-ms.openlocfilehash: 129562d96e25f7d015553658e7cef9273867d744
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 980032e97891455c54de6eb1d05f2653c52e6839
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386338"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142488419"
 ---
 # New-AzScheduledQueryRuleLogMetricTrigger
 
 ## SYNOPSIS
-Membuat objek tipe Pemicu Metrik Log.
+Membuat objek dari tipe Pemicu Metrik Log.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulelogmetrictrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ New-AzScheduledQueryRuleLogMetricTrigger -ThresholdOperator <String> -Threshold 
 ```
 
 ## DESCRIPTION
-Membuat objek dari Pemicu Metrik Log tipe dan bersifat opsional.
-Ini adalah kondisi pemicu untuk aturan kueri metrik, untuk digunakan ketika Anda perlu mengatur ukuran metrik pemberitahuan.
+Membuat objek dari tipe Pemicu Metrik Log dan bersifat opsional.
+Ini adalah kondisi pemicu untuk aturan kueri metrik, yang akan digunakan saat Anda perlu menyatakan tipe pengukuran metrik pemberitahuan.
 
 ## EXAMPLES
 
@@ -54,8 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -MetricColumn
-Kolom di mana nilai metrik sedang diagregatkan.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
+Kolom yang nilai metriknya akan diagregasikan.
+Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 
 ### -MetricTriggerType
 Tipe pemicu metrik.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
+Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.String
@@ -85,9 +88,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang Batas
-Nilai ambang batas metrik: Berurutan, Total.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
+### -Ambang batas
+Nilai ambang batas metrik: Berturut-turut, Total.
+Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.Double
@@ -101,9 +104,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ThresholdOperator
-Operator ambang batas metrik : GreaterTerterka, LessTer pada, Sama dengan.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
+### -Ambang BatasOperator
+Operator ambang batas metrik : GreaterThan, LessThan, Equal.
+Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.String
@@ -118,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

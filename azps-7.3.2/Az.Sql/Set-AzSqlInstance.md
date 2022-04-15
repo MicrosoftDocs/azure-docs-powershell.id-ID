@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstance.md
-ms.openlocfilehash: 9e5fe7782b7de8834349a8419a7966ef3bd61eff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b0575417aeaf62340a7f537089d5dae6d4eb3245
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183325"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142481957"
 ---
 # Set-AzSqlInstance
 
 ## SYNOPSIS
-Mengatur properti untuk Instans Azure SQL Database Terkelola.
+Mengatur properti untuk Instans terkelola Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,11 +56,11 @@ Set-AzSqlInstance [-ResourceId] <String> [-AdministratorPassword <SecureString>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlInstance** mengubah properti instans Azure SQL Database Terkelola.
+Cmdlet **Set-AzSqlInstance** mengubah properti instans Azure SQL Database Dikelola.
 
 ## EXAMPLES
 
-### Contoh 1: Atur contoh yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB, -VCore dan -Edition
+### Contoh 1: Atur instans yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB, -VCore dan -Edition
 ```powershell
 PS C:\>$InstancePassword = "Newpassword1234"
 PS C:\> $SecureString = ConvertTo-SecureString $InstancePassword -AsPlainText -Force
@@ -79,7 +82,7 @@ StorageSizeInGB          : 1024
 InstancePoolName         :
 ```
 
-### Contoh 2: Mengubah generasi perangkat keras instans yang sudah ada menggunakan nilai baru untuk -ComputeGeneration
+### Contoh 2: Mengubah pembuatan perangkat keras instans yang sudah ada menggunakan nilai baru untuk -ComputeGeneration
 ```powershell
 PS C:\> Set-AzSqlInstance -Name "managedinstance1" -ResourceGroupName "ResourceGroup01" -ComputeGeneration Gen5
 Location                 : westcentralus
@@ -99,9 +102,9 @@ StorageSizeInGB          : 1024
 InstancePoolName         :
 ```
 
-Perintah ini mengatur contoh yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore
+Perintah ini mengatur instans yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore
 
-### Contoh 3: Setel contoh yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore untuk sebuah instance di dalam instance pool
+### Contoh 3: Mengatur instans yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore untuk instans dalam kumpulan instans
 ```powershell
 PS C:\>$InstancePassword = "Newpassword1234"
 PS C:\> $SecureString = ConvertTo-SecureString $InstancePassword -AsPlainText -Force
@@ -123,9 +126,9 @@ StorageSizeInGB          : 1024
 InstancePoolName         : instancePool0
 ```
 
-Perintah ini mengatur contoh yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore untuk sebuah instans dalam kumpulan contoh
+Perintah ini mengatur instans yang sudah ada menggunakan nilai baru untuk -AdministratorPassword, -LicenseType, -StorageSizeInGB dan -VCore untuk instans dalam kumpulan instans
 
-### Contoh 4: Memperbarui konfigurasi pemeliharaan untuk contoh yang sudah ada
+### Contoh 4: Memperbarui konfigurasi pemeliharaan untuk instans yang sudah ada
 ```powershell
 PS C:\> Set-AzSqlInstance -Name "managedInstance1" -ResourceGroupName "resourcegroup01" -MaintenanceConfigurationId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_WestUS_MI_2"
 Location                   : westus
@@ -154,9 +157,9 @@ BackupStorageRedundancy    : Geo
 MaintenanceConfigurationId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_WestUS_MI_2
 ```
 
-Perintah ini memperbarui contoh yang sudah ada dengan konfigurasi pemeliharaan MI_2
+Perintah ini memperbarui instans yang sudah ada dengan MI_2 konfigurasi pemeliharaan
 
-### Contoh 5: Menghapus konfigurasi pemeliharaan dari contoh yang sudah ada
+### Contoh 5: Hapus konfigurasi pemeliharaan dari instans yang sudah ada
 ```powershell
 PS C:\> Set-AzSqlInstance -Name "managediInstance1" -ResourceGroupName "Resourcegroup01" -MaintenanceConfigurationId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default"
 Location                   : westus
@@ -185,9 +188,9 @@ BackupStorageRedundancy    : Geo
 MaintenanceConfigurationId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default
 ```
 
-Perintah ini mengatur ulang konfigurasi pemeliharaan ke default untuk contoh yang sudah ada
+Perintah ini mengatur ulang konfigurasi pemeliharaan ke default untuk instans yang sudah ada
 
-### Contoh 6: Memindahkan contoh terkelola ke subnet lain
+### Contoh 6: Memindahkan instans terkelola ke subnet lain
 ```powershell
 PS C:\> Set-AzSqlInstance -Name "managediInstance1" -ResourceGroupName "Resourcegroup01" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/target_subnet_name"
 Location                   : westus
@@ -216,9 +219,9 @@ BackupStorageRedundancy    : Geo
 MaintenanceConfigurationId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default
 ```
 
-Perintah ini memperbarui instans yang sudah ada menjadi zona - tidak perlu
+Perintah ini memperbarui instans yang sudah ada menjadi zona - berlebihan
 
-### Contoh 7: Memperbarui instans yang sudah ada menjadi zona - tidak perlu
+### Contoh 7: Memperbarui instans yang sudah ada menjadi zona - berlebihan
 ```powershell
 PS C:\> Set-AzSqlInstance -Name "managediInstance1" -ResourceGroupName "Resourcegroup01" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/target_subnet_name" -ZoneRedundant
 Location                   : westus
@@ -248,12 +251,12 @@ MaintenanceConfigurationId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ZoneRedundant              : true
 ```
 
-Perintah ini memindahkan contoh terkelola ke subnet lain
+Perintah ini memindahkan instans terkelola ke subnet lain
 
 ## PARAMETERS
 
 ### -AdministratorPassword
-Kata sandi SQL administrator baru untuk contohnya.
+Kata sandi administrator SQL baru untuk contoh tersebut.
 
 ```yaml
 Type: System.Security.SecureString
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Azure Active Directory Identity untuk instans ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk instans ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk contoh.
+Pembuatan komputasi untuk instans.
 
 ```yaml
 Type: System.String
@@ -327,8 +330,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Edisi yang ditetapkan ke instans.
+### -Edisi
+Edisi untuk ditetapkan ke instans.
 
 ```yaml
 Type: System.String
@@ -342,7 +345,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+Tipe identitas yang akan ditetapkan ke server. Nilai yang memungkinkan adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
 
 ```yaml
 Type: System.String
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek AzureSqlManagedInstanceModel yang akan dihapus
+Objek AzureSqlManagedInstanceModel untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePoolName
-Nama pool instance.
+Nama kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-URI Azure Key Vault yang digunakan untuk enkripsi.
+Azure Key Vault URI yang digunakan untuk enkripsi.
 
 ```yaml
 Type: System.String
@@ -418,9 +421,9 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan Tipe Lisensi mana yang digunakan. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
-- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga layanan Instans Terkelola akan menyertakan biaya SQL Server lisensi baru.
+Menentukan Tipe Lisensi mana yang akan digunakan. Nilai yang memungkinkan adalah:
+- Harga diskon BasePrice - Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik lisensi SQL Server yang sudah ada.
+- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada tidak diterapkan. Harga layanan Instans Terkelola akan menyertakan biaya lisensi SQL Server baru.
 
 ```yaml
 Type: System.String
@@ -435,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceConfigurationId
-Id konfigurasi Pemeliharaan untuk Contoh Terkelola Sql Azure.
+Id konfigurasi Pemeliharaan untuk Instans Terkelola Azure Sql.
 
 ```yaml
 Type: System.String
@@ -450,7 +453,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal untuk diterapkan untuk Instans terkelola 
+Versi TLS minimal yang diterapkan untuk instans Terkelola 
 
 ```yaml
 Type: System.String
@@ -466,7 +469,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: System.String
@@ -481,7 +484,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryUserAssignedIdentityId
-Id utama User Managed Identity(UMI).
+Id Identitas Terkelola Pengguna (UMI) utama.
 
 ```yaml
 Type: System.String
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProxyOverride
-Tipe koneksi yang digunakan untuk menghubungkan ke instans.
+Tipe koneksi yang digunakan untuk menyambungkan ke instans.
 
 ```yaml
 Type: System.String
@@ -511,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicDataEndpointEnabled
-Apakah titik akhir data publik diaktifkan atau tidak.
+Apakah titik akhir data publik diaktifkan atau tidak untuk instans.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -541,7 +544,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya contoh yang dihapus
+Id sumber daya instans untuk dihapus
 
 ```yaml
 Type: System.String
@@ -556,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSizeInGB
-Menentukan seberapa Storage besar untuk dikaitkan dengan instans
+Menentukan berapa banyak ukuran Storage untuk dikaitkan dengan instans
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -571,7 +574,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Subnet Id untuk digunakan sebagai pembaruan contoh.
+Id Subnet yang digunakan untuk pembaruan contoh.
 
 ```yaml
 Type: System.String
@@ -616,7 +619,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Menentukan seberapa banyak VCore dikaitkan dengan contoh
+Menentukan berapa banyak VCore untuk dikaitkan dengan instance
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -631,7 +634,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Menggunakan penyimpanan berlebih zona
+Menggunakan penyimpanan zona berlebihan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -646,7 +649,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -662,7 +665,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -677,7 +680,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/send
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
-ms.openlocfilehash: 10893c4e3f69b9e1dd4a1ef8201dc424126fda38
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1b1382beb097e4049cd1977f6fc1b9d283fe6ac9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142489337"
 ---
 # Send-AzLabServicesUserInvite
 
 ## SYNOPSIS
-Operasi untuk mengundang pengguna ke lab.
+Operasi untuk mengundang pengguna ke laboratorium.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/send-azlabservicesuserinvite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,17 +42,17 @@ Send-AzLabServicesUserInvite -User <User> [-SubscriptionId <String>] [-Text <Str
 ```
 
 ## DESCRIPTION
-Operasi untuk mengundang pengguna ke lab.
+Operasi untuk mengundang pengguna ke laboratorium.
 
 ## EXAMPLES
 
-### Contoh 1: Send lab invite to the user.
+### Contoh 1: Kirim undangan lab kepada pengguna.
 ```powershell
 PS C:\> Send-AzLabServicesUserInvite -ResourceGroupName "Group Name" -LabName "Lab Name" -Name "User Name" -Text "Welcome to the lab."
 
 ```
 
-Ini akan mengirimkan undangan email kepada pengguna dengan teks kustom "Selamat datang di lab" dalam badan email.
+Tindakan ini mengirimkan undangan email kepada pengguna dengan teks kustom "Selamat datang di lab" dalam isi email.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang secara unik mengidentifikasinya di dalam berisi akun lab.
+Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Text
+### -Teks
 Teks kustom untuk email undangan.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengguna
-Untuk membuat, lihat bagian CATATAN untuk properti USER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PENGGUNA dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.User
@@ -205,8 +208,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -UserName
-Nama pengguna yang secara unik mengidentifikasinya di dalam berisi lab.
+### -NamaPengguna
+Nama pengguna yang mengidentifikasinya secara unik di dalam lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -276,13 +279,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PENGGUNA <User>: 
   - `Email <String>`: Alamat email pengguna.
-  - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang akan diberikan pengguna selain kuota penggunaan lab.
-  - `[SystemDataCreatedAt <DateTime?>]`: Timestamp pembuatan sumber daya (UTC).
+  - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang didapatkan pengguna selain kuota penggunaan lab.
+  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Timestamp sumber daya modifikasi terakhir (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir diubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir diubah sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
 
 ## RELATED LINKS
 
