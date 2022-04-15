@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricFilter.md
-ms.openlocfilehash: 0b9b950a929f99d5836cbc2241c33a7b372240cb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d8d4d0cedf80308f1369050570f999b64d2a6e21
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142213993"
 ---
 # New-AzMetricFilter
 
 ## SYNOPSIS
-Membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
+Membuat filter dimensi metrik yang bisa digunakan untuk metrik kueri.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azmetricfilter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzMetricFilter [-Dimension] <String> [-Operator] <String> [-Value] <String[]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricFilter** membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
+Cmdlet **New-AzMetricFilter** membuat filter dimensi metrik yang bisa digunakan untuk metrik kueri.
 
 ## EXAMPLES
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

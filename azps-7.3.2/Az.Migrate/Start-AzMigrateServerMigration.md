@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateServerMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateServerMigration.md
-ms.openlocfilehash: 880932f7645804db112c3f75a8d8ec26ed3d3594
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: edda5c0901223f04f5a615278e4c35c954b379b6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142214389"
 ---
 # Start-AzMigrateServerMigration
 
 ## SYNOPSIS
-Memulai migrasi untuk server yang replikasi.
+Memulai migrasi untuk server replikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/start-azmigrateservermigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Start-AzMigrateServerMigration -InputObject <IMigrationItem> [-SubscriptionId <S
 ```
 
 ## DESCRIPTION
-Memulai migrasi untuk server yang replikasi.
+Memulai migrasi untuk server replikasi.
 
 ## EXAMPLES
 
@@ -82,9 +85,9 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan server replikasi tempat migrasi perlu dimulai.
+Menentukan server replikasi yang perlu dimulai migrasinya.
 Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectID
-Menentukan server berulang di mana migrasi perlu dimulai.
+Menentukan server replcating yang migrasinya perlu dimulai.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -129,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TurnOffSourceServer
-Menentukan apakah server sumber harus dinonaktifkan setelah migrasi.
+### -TurnoffSourceServer
+Menentukan apakah server sumber harus dinonaktifkan pasca migrasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -162,7 +165,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi tempat migrasi perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang perlu dimulai migrasinya. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 
