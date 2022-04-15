@@ -5,11 +5,11 @@ ms.assetid: E54BFD3A-CD54-4E6B-9574-92B8D3E88FF3
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/get-azurestorageblob
 schema: 2.0.0
 ms.openlocfilehash: f3a88aa20c424549f074415615efe7f8190782a2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422006"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142336787"
 ---
 # Get-AzureStorageBlob
 
@@ -41,14 +41,14 @@ Cmdlet **Get-AzureStorageBlob** mencantumkan blob dalam wadah tertentu dalam aku
 
 ## EXAMPLES
 
-### Contoh 1: Get a blob by blob name
+### Contoh 1: Dapatkan blob menurut nama blob
 ```
 PS C:\>Get-AzureStorageBlob -Container "ContainerName" -Blob blob*
 ```
 
 Perintah ini menggunakan nama blob dan wildcard untuk mendapatkan blob.
 
-### Contoh 2: Get blobs in a container by using the pipeline
+### Contoh 2: Dapatkan blob dalam wadah menggunakan pipeline
 ```
 PS C:\>Get-AzureStorageContainer -Name container* | Get-AzureStorageBlob -IncludeDeleted
 
@@ -63,14 +63,14 @@ test2                BlockBlob 403116          application/octet-stream       20
 
 Perintah ini menggunakan pipeline untuk mendapatkan semua blob (termasuk blob dalam status Dihapus) dalam wadah.
 
-### Contoh 3: Mendapatkan prefiks blob menurut nama
+### Contoh 3: Dapatkan blob menurut prefiks nama
 ```
 PS C:\>Get-AzureStorageBlob -Container "ContainerName" -Prefix "blob"
 ```
 
 Perintah ini menggunakan prefiks nama untuk mendapatkan blob.
 
-### Contoh 4: List blobs in multiple batches
+### Contoh 4: Daftar blob dalam beberapa kumpulan
 ```
 PS C:\>$MaxReturn = 10000
 PS C:\> $ContainerName = "abc"
@@ -87,20 +87,20 @@ PS C:\> do
 PS C:\> Echo "Total $Total blobs in container $ContainerName"
 ```
 
-Contoh ini menggunakan *parameter MaxCount* *dan ContinuationToken* untuk Azure Storage blob dalam beberapa kumpulan.
+Contoh ini menggunakan parameter *MaxCount* dan *ContinuationToken* untuk mencantumkan Azure Storage blob dalam beberapa kumpulan.
 Empat perintah pertama menetapkan nilai ke variabel untuk digunakan dalam contoh.
 Perintah kelima menentukan pernyataan **Do-While** yang menggunakan cmdlet **Get-AzureStorageBlob** untuk mendapatkan blob.
-Pernyataan menyertakan token lanjutan yang disimpan dalam variabel $Token jaringan.
-$Token perubahan saat pengulangan berjalan.
-Untuk informasi selengkapnya, ketik `Get-Help About_Do` .
-Perintah final menggunakan perintah **Echo** untuk menampilkan total.
+Pernyataan ini mencakup token kelanjutan yang disimpan dalam variabel $Token.
+$Token mengubah nilai saat pengulangan berjalan.
+Untuk informasi selengkapnya, ketik .`Get-Help About_Do`
+Perintah terakhir menggunakan perintah **Gema** untuk menampilkan total.
 
 ## PARAMETERS
 
 ### -Blob
-Menentukan pola nama atau nama, yang dapat digunakan untuk pencarian wildcard.
-Jika tidak ada nama blob yang ditentukan, cmdlet akan mencantumkan semua blob dalam wadah yang ditentukan.
-Jika nilai ditentukan untuk parameter ini, cmdlet akan mencantumkan semua blob dengan nama yang cocok dengan parameter ini.
+Menentukan pola nama atau nama, yang bisa digunakan untuk pencarian wildcard.
+Jika tidak ada nama blob yang ditentukan, cmdlet mencantumkan semua blob dalam wadah yang ditentukan.
+Jika nilai ditentukan untuk parameter ini, cmdlet mencantumkan semua blob dengan nama yang cocok dengan parameter ini.
 
 ```yaml
 Type: System.String
@@ -115,9 +115,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -132,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -150,7 +150,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Menentukan nama wadah.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan akun penyimpanan Azure yang ingin Anda dapatkan daftar blobnya.
+Menentukan akun penyimpanan Azure tempat Anda ingin mendapatkan daftar blob.
 Anda dapat menggunakan cmdlet New-AzureStorageContext untuk membuat konteks penyimpanan.
 
 ```yaml
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContinuationToken
-Menentukan token lanjutan untuk daftar blob.
+Menentukan token kelanjutan untuk daftar blob.
 Gunakan parameter ini dan parameter *MaxCount* untuk mencantumkan blob dalam beberapa kumpulan.
 
 ```yaml
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDeleted
-Sertakan Blob Dihapus, secara default get blob tidak akan menyertakan blob terhapus.
+Sertakan Deleted Blob, secara default dapatkan blob tidak akan menyertakan blob yang dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,11 +242,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefix
+### -Prefiks
 Menentukan prefiks untuk nama blob yang ingin Anda dapatkan.
-Parameter ini tidak mendukung penggunaan ekspresi reguler atau karakter wildcard untuk pencarian.
-Artinya, jika wadah hanya memiliki blob bernama "My", "MyBlob1", dan "MyBlob2" dan Anda menentukan "-Prefix My*", cmdlet tidak akan mengembalikan blob.
-Namun, jika Anda menentukan "-Prefiks Saya", cmdlet akan mengembalikan "My", "MyBlob1", dan "MyBlob2".
+Parameter ini tidak mendukung penggunaan ekspresi reguler atau karakter wildcard untuk dicari.
+Ini berarti bahwa jika wadah hanya memiliki blob bernama "My", "MyBlob1", dan "MyBlob2" dan Anda menentukan "-Prefix My*", cmdlet tidak mengembalikan blob.
+Namun, jika Anda menentukan "-Prefix My", cmdlet mengembalikan "My", "MyBlob1", dan "MyBlob2".
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval waktu habis di sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -287,7 +287,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
 ## CATATAN
 
@@ -295,7 +295,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageBlobContent](./Get-AzureStorageBlobContent.md)
 
-[Remove-AzureStorageBlob](./Remove-AzureStorageBlob.md)
+[Hapus-AzureStorageBlob](./Remove-AzureStorageBlob.md)
 
 [Set-AzureStorageBlobContent](./Set-AzureStorageBlobContent.md)
 

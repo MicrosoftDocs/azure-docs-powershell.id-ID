@@ -4,17 +4,17 @@ Module Name: AzureRM.Compute
 ms.assetid: 15CAC050-F2E9-4872-88E7-516A6D194FAB
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmbootdiagnosticsdata
 schema: 2.0.0
-ms.openlocfilehash: 30f023728a770ee3d58706f7f09ce1a8535bd7d4ed5b56600a9988221e022dfe
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 867f2c14e90eddd9649e0720d41f56aa896c61ff
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418589"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142336586"
 ---
 # Get-AzureRmVMBootDiagnosticsData
 
 ## SYNOPSIS
-Mendapatkan data diagnostik boot untuk komputer virtual.
+Mendapatkan data diagnostik boot untuk mesin virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,23 +33,23 @@ Get-AzureRmVMBootDiagnosticsData [-ResourceGroupName] <String> [-Name] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMBootDiagnosticsData** mendapatkan data diagnostik boot untuk komputer virtual.
+Cmdlet **Get-AzureRmVMBootDiagnosticsData** mendapatkan data diagnostik boot untuk mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan data diagnostik boot
+### Contoh 1: Dapatkan data diagnostik boot
 ```
 PS C:\> Get-AzureRmVMBootDiagnosticsData -ResourceGroupName "ResourceGroup11" -Name "ContosoVM07" -Windows -LocalPath "C:\Contoso\BootDiagnostics"
 ```
 
-Perintah ini mendapatkan data diagnostik untuk komputer virtual bernama ContosoVM07.
-Mesin virtual ini menjalankan Windows sistem operasi.
-Perintah menyimpan data di jalur lokal tertentu.
+Perintah ini mendapatkan data diagnostik boot untuk mesin virtual bernama ContosoVM07.
+Mesin virtual ini menjalankan sistem operasi Windows.
+Perintah menyimpan data dalam jalur lokal tertentu.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa mesin virtual menjalankan sistem Windows operasi.
+Menunjukkan bahwa mesin virtual menjalankan sistem operasi Windows.
 
 ```yaml
 Type: SwitchParameter
@@ -151,11 +151,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzRemoteRenderingAccount.md
-ms.openlocfilehash: 616b827f62a52cb50e733b18b9170fc59720001b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e3768b74ac1274f8d859bbe92d6428bfb52a5b2f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000205"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319225"
 ---
 # Remove-AzRemoteRenderingAccount
 
 ## SYNOPSIS
-Hapus Akun Penyajian Jarak Jauh
+Hapus Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/remove-azremoterenderingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzRemoteRenderingAccount -InputObject <PSRemoteRenderingAccount> [-PassTh
 ```
 
 ## DESCRIPTION
-Hapus Akun Penyajian Jarak Jauh tertentu dari Langganan dan Grup Sumber Daya tertentu.
+Hapus Akun Remote Rendering tertentu dari Grup Langganan dan Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ Hapus Akun Penyajian Jarak Jauh tertentu dari Langganan dan Grup Sumber Daya ter
 PS C:\> Remove-AzRemoteRenderingAccount -ResourceGroup rg1 -Name example
 ```
 
-Hapus Akun Penyajian Jarak Jauh "contoh" dari Langganan dan Grup Sumber Daya saat ini "rg1".
+Hapus "contoh" Akun Remote Rendering dari Langganan dan Grup Sumber Daya saat ini "rg1".
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun penyajian jarak jauh.
+Remote Rendering Nama Akun.
 
 ```yaml
 Type: String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan jika ditentukan.
+Mengembalikan objek jika ditentukan.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Akun Penyajian Jarak Jauh.
+ID sumber daya akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

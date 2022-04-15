@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
 ms.openlocfilehash: 85a0bc0f552688d036dc76ebbc6d15c608ade433
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413630"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351061"
 ---
 # Add-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Menambahkan Akun Azure Storage yang sudah ada ke key vault tertentu agar kunci-kuncinya dikelola oleh layanan Key Vault.
+Menambahkan Akun Azure Storage yang sudah ada ke kubah kunci yang ditentukan agar kuncinya dikelola oleh layanan Key Vault.
 
 ## SYNTAX
 
@@ -27,31 +27,31 @@ Add-AzKeyVaultManagedStorageAccount [-VaultName] <String> [-AccountName] <String
 ```
 
 ## DESCRIPTION
-Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault Storage kunci Akun yang akan dikelola oleh Key Vault. Akun Storage harus sudah ada. Tombol Storage tidak pernah diekspos ke penelepon.
-Kunci Vault otomatis meregenerasi dan beralih kunci aktif berdasarkan periode regenerasi.
+Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault agar kunci Akun Storage dikelola oleh Key Vault. Akun Storage harus sudah ada. Kunci Storage tidak pernah diekspos ke penelepon.
+Key Vault otomatis meregenerasi dan mengalihkan kunci aktif berdasarkan periode regenerasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur Azure Storage Akun dengan Key Vault untuk mengelola kuncinya
+### Contoh 1: Atur Akun Azure Storage dengan Key Vault untuk mengelola kuncinya
 ```
 PS C:\> $regenerationPeriod = [System.Timespan]::FromDays(90)
 PS C:\> Add-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -ResourceId '/subscriptions/<subscription id>/resourceGroups/myresourcegroup/providers/Microsoft.Storage/storageAccounts/mystorageaccount' -ActiveKeyName 'key1' -RegenerationPeriod $regenerationPeriod
 ```
 
-Mengatur akun Storage Anda dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jeda 90 hari.
+Mengatur Akun Storage dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jarak 90 hari.
 
-### Contoh 2: Mengatur Akun Azure Storage Klasik dengan Key Vault untuk mengelola tombolnya
+### Contoh 2: Atur Akun Azure Storage Klasik dengan Key Vault untuk mengelola kuncinya
 ```
 PS C:\> $regenerationPeriod = [System.Timespan]::FromDays(90)
 PS C:\> Add-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -ResourceId '/subscriptions/<subscription id>/resourceGroups/myresourcegroup/providers/Microsoft.ClassicStorage/storageAccounts/mystorageaccount' -ActiveKeyName 'Primary' -RegenerationPeriod $regenerationPeriod
 ```
 
-Mengatur Akun Storage Klasik dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'Utama'. Kunci ini akan digunakan untuk menghasilkan token sas. Kunci Vault akan meregenerasi kunci 'Sekunder' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'Primer' dan 'Sekunder' dengan kesenjangan 90 hari.
+Mengatur Akun Storage Klasik dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'Utama'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'Sekunder' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'Primer' dan 'Sekunder' dengan jarak 90 hari.
 
 ## PARAMETERS
 
-### -Nama Akun
-Nama akun penyimpanan terkelola Key Vault. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan tertentu.
+### -AccountName
+Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -110,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Menonaktifkan penggunaan kunci akun penyimpanan terkelola untuk generasi token sas.
+### -Non-fungsikan
+Menonaktifkan penggunaan kunci akun penyimpanan terkelola untuk pembuatan token sas.
 
 ```yaml
 Type: SwitchParameter
@@ -125,8 +125,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisableAutoRegateKey
-Kunci regenerasi otomatis. Jika true, maka kunci tidak aktif akun penyimpanan terkelola akan digenerasi otomatis dan menjadi kunci aktif baru setelah periode regenerasi. Jika false, maka kunci akun penyimpanan yang dikelola tidak digenerasi secara otomatis.
+### -DisableAutoRegenerateKey
+Kunci regenerasi otomatis. Jika true, kunci tidak aktif akun penyimpanan terkelola akan otomatis diregenerasi dan menjadi kunci aktif baru setelah periode regenerasi. Jika false, kunci akun penyimpanan terkelola tidak diregenerasi secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerationPeriod
-Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan rentang waktu di mana tombol tidak aktif pada akun penyimpanan terkelola mendapatkan regenerasi otomatis dan menjadi kunci aktif baru.
+Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan jangka waktu setelah keygets akun penyimpanan terkelola tidak aktif secara otomatis diregenerasi dan menjadi kunci aktif baru.
 
 ```yaml
 Type: TimeSpan
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -220,11 +220,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

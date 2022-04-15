@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJobSchedule.md
-ms.openlocfilehash: b713103221aaf8651e60f9f138af927913db96af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 10a2d29aed39f51c35ff15603f1fc87ccbc00c1e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140572257"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142321547"
 ---
 # Set-AzBatchJobSchedule
 
 ## SYNOPSIS
 Mengatur jadwal pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/set-azbatchjobschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,26 +29,26 @@ Set-AzBatchJobSchedule [-JobSchedule] <PSCloudJobSchedule> -BatchContext <BatchA
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzBatchJobSchedule** menetapkan jadwal pekerjaan dalam layanan Azure Batch.
+Cmdlet **Set-AzBatchJobSchedule** mengatur jadwal pekerjaan dalam layanan Azure Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui jadwal kerja
+### Contoh 1: Memperbarui jadwal pekerjaan
 ```powershell
 $JobSchedule = Get-AzBatchJobSchedule -Id "MyJobSchedule" -BatchContext $Context
 $JobSchedule.Schedule.RecurrenceInterval = New-TimeSpan -Days 2
 Set-AzBatchJobSchedule -JobSchedule $Job -BatchContext $Context
 ```
 
-Perintah pertama mendapatkan pekerjaan menggunakan **Get-AzBatchJobSchedule**, lalu menyimpannya dalam $JobSchedule baru.
+Perintah pertama mendapatkan pekerjaan dengan menggunakan **Get-AzBatchJobSchedule**, lalu menyimpannya dalam variabel $JobSchedule.
 Perintah kedua mengubah interval pengulangan pada `$JobSchedule.Schedule` objek.
-Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $JobSchedule.
+Perintah akhir memperbarui layanan Batch agar sesuai dengan objek lokal di $JobSchedule.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 
 ### -JobSchedule
 Menentukan objek **PSCloudJobSchedule** yang mewakili jadwal pekerjaan.
-Untuk mendapatkan objek **PSCloudJobSchedule** , gunakan Get-AzBatchJobSchedule cmdlet.
+Untuk mendapatkan objek **PSCloudJobSchedule** , gunakan cmdlet Get-AzBatchJobSchedule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJobSchedule
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -115,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchJobSchedule](./New-AzBatchJobSchedule.md)
 
-[Remove-AzBatchJobSchedule](./Remove-AzBatchJobSchedule.md)
+[Hapus-AzBatchJobSchedule](./Remove-AzBatchJobSchedule.md)
 
 [Stop-AzBatchJobSchedule](./Stop-AzBatchJobSchedule.md)
 

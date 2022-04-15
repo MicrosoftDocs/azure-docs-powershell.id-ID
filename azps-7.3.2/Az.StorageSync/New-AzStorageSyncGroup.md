@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncGroup.md
-ms.openlocfilehash: 1d71b2049e532bce316bd722c96bd95a3e11919c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 20f174086b98d21ba17a68206072ed89a8097802
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400083"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142337759"
 ---
 # New-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzStorageSyncGroup [-ParentResourceId] <String> -Name <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu. Grup sinkronisasi digunakan untuk menjelaskan topologi lokasi, yang disebut sebagai titik akhir, yang akan menyinkronkan semua file yang disimpan di dalam salah satu titik akhir. Grup sinkronisasi berisi titik akhir awan, yang menjadi referensi bersama file Azure, dan juga berisi titik akhir server yang mereferensikan jalur lokal tertentu pada server yang terdaftar.
+Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu. Grup sinkronisasi digunakan untuk menjelaskan topologi lokasi, yang disebut sebagai titik akhir, yang akan menyinkronkan file apa pun yang disimpan dalam salah satu titik akhir. Grup sinkronisasi berisi titik akhir awan, yang mereferensikan berbagi file Azure, dan juga berisi titik akhir server yang mereferensikan jalur lokal tertentu di server terdaftar.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama GrupSinkronisasi.
+Nama GrupSinkronkan.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id Sumber Daya Orang Tua StorageSyncService
+StorageSyncService Parent Resource Id
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

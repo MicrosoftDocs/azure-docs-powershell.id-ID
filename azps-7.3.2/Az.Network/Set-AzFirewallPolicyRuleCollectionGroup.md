@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: f8b81ca78e21c2a44d5f6e83dd0344b42c84edff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 74f9db77f9501c91862b5f189236165d47dcccfb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392302"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142344167"
 ---
 # Set-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
-menyimpan grup kumpulan aturan kebijakan firewall Azure yang diubah
+menyimpan grup kumpulan aturan kebijakan firewall azure yang dimodifikasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Set-AzFirewallPolicyRuleCollectionGroup -ResourceId <String> -Priority <UInt32>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzFirewallPolicyRuleCollectionGroup** memperbarui grup kumpulan aturan dalam Azure Firewall Policy.
+Cmdlet **Set-AzFirewallPolicyRuleCollectionGroup** memperbarui grup kumpulan aturan dalam Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Contoh ini memperbarui grup kumpulan aturan dalam kebijakan firewall $fp
 
 ### Contoh 2
 
-menyimpan grup kumpulan aturan kebijakan firewall Azure yang diubah. (otomatisgenerated)
+menyimpan grup kumpulan aturan kebijakan firewall azure yang dimodifikasi. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kumpulan Aturan grup
+Id sumber daya grup kumpulan Aturan
 
 ```yaml
 Type: System.String
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

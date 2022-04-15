@@ -5,11 +5,11 @@ ms.assetid: EAAF615B-6139-438B-A2FD-6966E72B3AA9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/get-azurermwebappbackup
 schema: 2.0.0
 ms.openlocfilehash: c6d5809211910987e06cff024d7510a70ad71a4e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140865326"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361061"
 ---
 # Get-AzureRmWebAppBackup
 
@@ -32,7 +32,7 @@ Get-AzureRmWebAppBackup [-BackupId] <String> [-WebApp] <Site> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmWebAppBackup** mendapatkan cadangan tertentu dari Azure Web App.
+Cmdlet **Get-AzureRmWebAppBackup** mendapatkan cadangan Azure Web App yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Cmdlet **Get-AzureRmWebAppBackup** mendapatkan cadangan tertentu dari Azure Web 
 PS C:\>Get-AzureRmWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "WebAppStandard" -BackupId "12345"
 ```
 
-Perintah ini mendapatkan cadangan dengan ID "12345" dari Web App bernama WebAppStandard yang dimiliki oleh grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan cadangan dengan ID "12345" dari Web App bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -BackupId
-ID Cadangan
+Id Cadangan
 
 ```yaml
 Type: String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebApp
-WebApp Dibingkas
+Piped WebApp
 
 ```yaml
 Type: Site
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

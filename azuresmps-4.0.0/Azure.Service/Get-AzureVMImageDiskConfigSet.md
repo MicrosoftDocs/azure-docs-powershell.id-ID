@@ -4,11 +4,11 @@ ms.assetid: ACBE32E5-AA8C-43CA-9FF4-4B59906C6B85
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: bbfb7dbfb2b09245a6f6985960d99f183f92a946
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422106"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142335693"
 ---
 # Get-AzureVMImageDiskConfigSet
 
@@ -29,12 +29,12 @@ Cmdlet **Get-AzureVMImageDiskConfigSet** mendapatkan objek kumpulan konfigurasi 
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan objek set konfigurasi disk dari komputer virtual
+### Contoh 1: Dapatkan objek kumpulan konfigurasi disk dari mesin virtual
 ```
 PS C:\> Get-AzureVMImage -ImageName $Img | Get-AzureVMImageDiskConfigSet
 ```
 
-Perintah ini mendapatkan objek kumpulan konfigurasi disk dari komputer virtual.
+Perintah ini mendapatkan objek kumpulan konfigurasi disk dari mesin virtual.
 
 ## PARAMETERS
 
@@ -54,16 +54,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -93,13 +93,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
+### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
 
 ## CATATAN
 

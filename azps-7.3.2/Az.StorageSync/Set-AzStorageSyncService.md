@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncService.md
-ms.openlocfilehash: fdee83fcb946a456d75f00316aef0b6f1fc80bd7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 82df6f064ef99682c8ba538bd7063d18e624482a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998215"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142337723"
 ---
 # Set-AzStorageSyncService
 
 ## SYNOPSIS
 Perintah ini mengatur layanan sinkronisasi penyimpanan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/set-azstoragesyncservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzStorageSyncService [-ResourceId] <String> [-AsJob] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Layanan sinkronisasi penyimpanan adalah sumber daya tingkat teratas untuk Sinkronisasi File Azure. Perintah ini mengatur layanan sinkronisasi penyimpanan dalam grup sumber daya. Kami menyarankan untuk membuat layanan sinkronisasi penyimpanan sesingkas mungkin yang benar-benar diperlukan untuk membedakan grup server berbeda di organisasi Anda. Layanan sinkronisasi penyimpanan berisi grup sinkronisasi dan juga berfungsi sebagai target untuk mendaftarkan server Anda. Server hanya dapat didaftarkan ke satu layanan sinkronisasi penyimpanan. Jika server perlu berpartisipasi dalam menyinkronkan kumpulan file yang sama, daftarkan file ke layanan sinkronisasi penyimpanan yang sama.
+Layanan sinkronisasi penyimpanan adalah sumber daya tingkat teratas untuk Sinkronisasi File Azure. Perintah ini mengatur layanan sinkronisasi penyimpanan dalam grup sumber daya. Kami merekomendasikan untuk membuat layanan sinkronisasi penyimpanan sesedikat yang benar-benar diperlukan untuk membedakan grup server yang berbeda di organisasi Anda. Layanan sinkronisasi penyimpanan berisi grup sinkronisasi dan juga berfungsi sebagai target untuk mendaftarkan server Anda. Server hanya dapat didaftarkan ke layanan sinkronisasi penyimpanan tunggal. Jika server perlu berpartisipasi dalam menyinkronkan kumpulan file yang sama, daftarkan ke layanan sinkronisasi penyimpanan yang sama.
 
 ## EXAMPLES
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input StorageSyncService, biasanya melewati saluran.
+StorageSyncService Input Object, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSStorageSyncService
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya StorageSyncService.
+StorageSyncService Resource Id.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Storage Tag Layanan Sinkronisasi.
+Storage Sinkronkan Tag Layanan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

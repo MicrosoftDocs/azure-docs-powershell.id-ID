@@ -4,16 +4,16 @@ Module Name: AzureRM.Resources
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/remove-azurermmanagedapplication
 schema: 2.0.0
 ms.openlocfilehash: 3897282708c310d59dffba52b3f5abfdf78d5f77
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140851566"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361279"
 ---
 # Remove-AzureRmManagedApplication
 
 ## SYNOPSIS
-Menghapus aplikasi yang dikelola
+Menghapus aplikasi terkelola
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,25 +32,25 @@ Remove-AzureRmManagedApplication -Id <String> [-Force] [-ApiVersion <String>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmManagedApplication** menghapus aplikasi yang dikelola
+Cmdlet **Remove-AzureRmManagedApplication** menghapus aplikasi terkelola
 
 ## EXAMPLES
 
-### Contoh 1: Hapus aplikasi yang dikelola oleh ID sumber daya
+### Contoh 1: Hapus aplikasi terkelola menurut ID sumber daya
 ```
 PS C:\>$Application = Get-AzureRmManagedApplication -Name "myApp" -ResourceGroupName "myRG"
 PS C:\>Remove-AzureRmManagedApplication -Id $Application.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan aplikasi terkelola bernama myApp dengan menggunakan cmdlet Get-AzureRmManagedApplication baru.
-Perintah menyimpannya di $Application variabel.
+Perintah pertama mendapatkan aplikasi terkelola bernama myApp dengan menggunakan cmdlet Get-AzureRmManagedApplication.
+Perintah menyimpannya dalam variabel $Application.
 
 Perintah kedua menghapus aplikasi terkelola yang diidentifikasi oleh properti **ResourceId** $Application.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

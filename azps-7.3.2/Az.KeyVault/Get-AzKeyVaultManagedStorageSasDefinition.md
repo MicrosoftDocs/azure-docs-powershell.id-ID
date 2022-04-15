@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: c8b9fe1c06b16e4ed369776c64859c714052ac06
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6623ed1dbe1d6eaa79032857720ab422479525db
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186573"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142319873"
 ---
 # Get-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Mendapatkan Key Vault yang Storage Sas Definitions.
+Dapatkan Key Vault dikelola Storage Definisi SAS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Mendapatkan Kunci Vault yang Storage sas Definition jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault tertentu dikelola Storage Akun di vault dicantumkan.
+Mendapatkan Key Vault dikelola Storage Definisi SAS jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault akun Storage dikelola yang ditentukan dalam kubah dicantumkan.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua Kunci Vault Storage Sas Definitions
+### Contoh 1: Mencantumkan semua definisi Key Vault dikelola Storage SAS
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount'
 
@@ -50,9 +53,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Kunci Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh vault 'myvault'
+Mencantumkan semua definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh kubah 'myvault'
 
-### Contoh 2: Get a Key Vault managed Storage Account
+### Contoh 2: Dapatkan akun Storage terkelola Key Vault
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'accountsas'
 
@@ -68,9 +71,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Dapatkan detail 'accountsas' Sas Definition terkait dengan Key Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh vault 'myvault'.
+Mendapatkan detail 'accountsas' Definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh vault 'myvault'.
 
-### Contoh 3: Daftar semua Key Vault Storage Sas Definitions menggunakan pemfilteran
+### Contoh 3: Mencantumkan semua Key Vault dikelola Storage Definisi SAS menggunakan pemfilteran
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name "account*"
 
@@ -93,13 +96,13 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Key Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh Vault 'myvault' yang dimulai dengan "account".
+Mencantumkan semua definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh 'myvault' kubah yang dimulai dengan "akun".
 
 ## PARAMETERS
 
-### -Nama Akun
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+### -AccountName
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan menampilkan definisi sas penyimpanan yang dihapus sebelumnya dalam output.
+Menentukan apakah akan memperlihatkan definisi sas penyimpanan yang dihapus sebelumnya dalam output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,8 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Storage sas definition name.
-Cmdlet membangun FQDN dari definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
+Storage nama definisi sas.
+Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
 
 ```yaml
 Type: System.String
@@ -175,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -211,5 +214,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Azure PowerShell cmdlet Key Vault](/powershell/module/az.keyvault/)
+[cmdlet Azure PowerShell Key Vault](/powershell/module/az.keyvault/)
 

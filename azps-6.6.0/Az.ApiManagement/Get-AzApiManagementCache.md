@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCache.md
 ms.openlocfilehash: 4fbaec68340933663aeb3f55f4761e8e0614aa92
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140289193"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142349909"
 ---
 # Get-AzApiManagementCache
 
@@ -18,7 +18,7 @@ ms.locfileid: "140289193"
 Dapatkan detail Cache.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementcache) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-AzApiManagementCache -ResourceId <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Dapatkan detail Tentang Singgahan yang dikonfigurasi di layanan Manajemen Api.
+Dapatkan detail Cache yang dikonfigurasi dalam layanan Manajemen Api.
 
 ## EXAMPLES
 
@@ -54,9 +54,9 @@ ResourceGroupName : Api-Default-West-US
 ServiceName       : contoso
 ```
 
-Mendapatkan daftar semua Singgahan yang dikonfigurasi di layanan Manajemen Api.
+Mendapatkan daftar semua Cache yang dikonfigurasi dalam layanan Manajemen Api.
 
-### Contoh 2: Dapatkan Cache ditentukan oleh Pengidentifikasi westus
+### Contoh 2: Dapatkan Singgahan yang ditentukan oleh Pengidentifikasi westus
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementCache -Context $apimContext -cacheId westus
@@ -77,8 +77,8 @@ Dapatkan detail Cache tertentu yang dikonfigurasi untuk westus
 ## PARAMETERS
 
 ### -CacheId
-Pengidentifikasi cache.
-Jika ditentukan akan mencoba menemukan cache berdasarkan pengidentifikasi.
+Pengidentifikasi singgahan.
+Jika ditentukan akan mencoba menemukan singgahan oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier of a cache. Jika ditentukan akan mencoba menemukan cache berdasarkan pengidentifikasi. Parameter ini diperlukan.
+Arm Resource Identifier dari singgahan. Jika ditentukan akan mencoba menemukan singgahan oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

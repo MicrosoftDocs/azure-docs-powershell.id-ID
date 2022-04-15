@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspace.md
-ms.openlocfilehash: ee6473277e933e47c5f6d091757677699017b47f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 991ba697e93d12e8ff58d8db2a6660a7a0cc4465
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007034"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343285"
 ---
 # Get-AzPowerBIWorkspace
 
 ## SYNOPSIS
-Dapatkan ruang kerja dalam Power BI ruang kerja Anda.
+Mendapatkan ruang kerja dalam kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzPowerBIWorkspace [-ResourceGroupName] <String> [-WorkspaceCollectionName] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPowerBIWorkspace** mendapatkan ruang kerja dalam kumpulan Power BI ruang kerja Anda.
+Cmdlet **Get-AzPowerBIWorkspace** mendapatkan ruang kerja dalam koleksi ruang kerja Power BI.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ruang kerja koleksi ruang kerja
+### Contoh 1: Mendapatkan ruang kerja kumpulan ruang kerja
 ```
 PS C:\>Get-AzPowerBIWorkspace -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11"
 ```
@@ -40,7 +43,7 @@ Perintah ini mendapatkan ruang kerja yang termasuk dalam kumpulan ruang kerja be
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat kumpulan ruang kerja tersebut berada.
+Menentukan nama grup sumber daya tempat kumpulan ruang kerja berada.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang kerja di mana cmdlet ini mendapatkan ruang kerja.
+Menentukan nama kumpulan ruang kerja tempat cmdlet ini mendapatkan ruang kerja.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

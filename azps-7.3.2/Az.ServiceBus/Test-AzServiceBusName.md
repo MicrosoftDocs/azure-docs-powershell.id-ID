@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusName.md
-ms.openlocfilehash: 5ce3aa7939546f151d7c349557edfed32cbbaeac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: df7485ecefac5cdb69e7e401f4231e11cc471a59
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142367531"
 ---
 # Test-AzServiceBusName
 
 ## SYNOPSIS
-Memeriksa Ketersediaan nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan 
+Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/test-azservicebusname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Test-AzServiceBusName [-Namespace] <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzServiceBusName** Memeriksa Ketersediaan NameSpace Name atau Alias (Nama Konfigurasi DR)
+Cmdlet **Test-AzServiceBusName** Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR)
 
 ## EXAMPLES
 
@@ -40,14 +43,14 @@ Cmdlet **Test-AzServiceBusName** Memeriksa Ketersediaan NameSpace Name atau Alia
 PS C:\> Test-AzServiceBusName -Namespace MyNameSpaceName
 ```
 
-Mengembalikan status pada ketersediaan nama ruang nama 'MyNameSpaceName' sebagai True
+Mengembalikan status ketersediaan nama ruang nama 'MyNameSpaceName' sebagai True
 
 ### Contoh 2
 ```
 PS C:\> Test-AzServiceBusName -Namespace MyNameSpaceName
 ```
 
-Mengembalikan status pada ketersediaan nama ruang nama 'MyNameSpaceName' sebagai False dengan Alasan
+Mengembalikan status ketersediaan nama ruang nama 'MyNameSpaceName' sebagai False dengan Alasan
 
 ### Contoh 3
 ```
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

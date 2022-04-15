@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Get-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Get-AzIotHubMessageEnrichment.md
 ms.openlocfilehash: a90af494f305dd22c010e18f54ed89744170ce1d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414871"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142328906"
 ---
 # Get-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
-Mencantumkan semua pengayaan pesan atau pengayaan pesan tertentu untuk Hub IoT Anda.
+Mencantumkan semua pengayaan pesan atau pengayaan pesan tertentu untuk IoT Hub Anda.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzIotHubMessageEnrichment [-ResourceId] <String> [-Key <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Untuk penjelasan mendetail tentang pengayaan pesan di Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-message-enrichments-overview
+Untuk penjelasan mendetail tentang pengayaan pesan dalam Azure IoT Hub, lihathttps://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-message-enrichments-overview
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ key1 value1  {endpoint1, endpoint2}
 key2 value2  {endpoint3, endpoint4}
 ```
 
-Membuat daftar semua pengayaan pesan di MyIotHub
+Daftar semua pengayaan pesan di MyIotHub
 
 ### Contoh 2
 ```powershell
@@ -63,7 +63,7 @@ Value       : value1
 Endpoint(s) : {endpoint1, endpoint2}
 ```
 
-Perlihatkan detail tentang pengayaan pesan "newKey".
+Tampilkan detail tentang pengayaan pesan "newKey".
 
 ## PARAMETERS
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
