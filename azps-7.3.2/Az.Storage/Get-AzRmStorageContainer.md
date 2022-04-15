@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
-ms.openlocfilehash: b38f046655fbc0f2714ac25ca0dc94c87cf09a6a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6625511ad1ed64b709ffba6239de61fe5402e832
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380345"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142398491"
 ---
 # Get-AzRmStorageContainer
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Storage wadah blob
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainer) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Get-AzRmStorageContainer [-ResourceGroupName] <String> [-StorageAccountName] <String> [-Name <String>]
  [-IncludeDeleted] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -32,33 +35,33 @@ Get-AzRmStorageContainer -StorageAccount <PSStorageAccount> [-Name <String>] [-I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRmStorageContainer** gets or lists Storage blob containers
+Cmdlet **Get-AzRmStorageContainer** mendapatkan atau mencantumkan Storage wadah blob
 
 ## EXAMPLES
 
-### Contoh 1: Get a Storage blob container with Storage account name and container name
+### Contoh 1: Dapatkan wadah blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini akan mendapatkan Storage blob dengan Storage penampung dan nama wadah akun.
+Perintah ini mendapatkan wadah blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Daftar Storage wadah blob dari akun Storage
+### Contoh 2: Mencantumkan semua wadah blob Storage dari akun Storage
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 ```
 
-Perintah ini mencantumkan Storage wadah blob dari akun Storage dengan Storage akun.
+Perintah ini mencantumkan semua wadah blob Storage akun Storage dengan nama akun Storage.
 
-### Contoh 3: Get a Storage blob container with Storage account object and container name.
+### Contoh 3: Dapatkan wadah blob Storage dengan objek akun Storage dan nama kontainer.
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Get-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah.
+Perintah ini mendapatkan wadah blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 4: Wadah blob Storage daftar akun Storage, termasuk wadah yang dihapus.
+### Contoh 4: Daftar Storage wadah blob dari akun Storage, menyertakan wadah yang dihapus.
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -IncludeDeleted
 
@@ -71,12 +74,12 @@ testcon2     None         2020-09-04 12:52:37Z False        False               
 ```
 
 Contoh ini mencantumkan semua wadah akun penyimpanan, termasuk wadah yang dihapus.
-Container yang dihapus hanya akan ada setelah container diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
+Kontainer yang dihapus hanya akan ada setelah softdelete Container yang diaktifkan dengan Enable-AzStorageBlobDeleteRetentionPolicy.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDeleted
-Sertakan penampung yang dihapus, menurut default wadah daftar tidak akan menyertakan wadah yang dihapus
+Sertakan wadah yang dihapus, secara default wadah daftar tidak akan menyertakan kontainer yang dihapus
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

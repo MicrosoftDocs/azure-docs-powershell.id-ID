@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Set-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Set-AzIotHub.md
 ms.openlocfilehash: d6aa49cce1a97d0177c66dd735180df2fa46c97d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413641"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351093"
 ---
 # Set-AzIotHub
 
@@ -74,14 +74,14 @@ Memperbarui properti IotHub.
 PS C:\> Set-AzIotHub -ResourceGroupName "myresourcegroup" -Name "myiothub" -SkuName S1 -Units 5
 ```
 
-Memperbarui sku ke S1 dan unit ke 5 untuk IotHub bernama "myiothub"
+Perbarui sku ke S1 dan unit ke 5 untuk IotHub bernama "myiothub"
 
 ### Contoh 2 Memperbarui properti eventhub
 ```
 PS C:\> Set-AzIotHub -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubRetentionTimeInDays 4
 ```
 
-Memperbarui waktu penyimpanan telemetri dalam hari ke 4 untuk IotHub bernama "myiothub"
+Perbarui waktu penyimpanan telemetri dalam hari ke 4 untuk IotHub bernama "myiothub"
 
 ## PARAMETERS
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFileUploadNotifications
-Bendera yang menentukan apakah pemberitahuan harus diaktifkan untuk pengunggahan file. 
+Bendera yang menentukan apakah pemberitahuan harus diaktifkan untuk unggahan file. 
 
 ```yaml
 Type: System.Boolean
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -FallbackRoute
-Fallback Route untuk Routing
+Rute Fallback untuk Perutean
 
 ```yaml
 Type: Microsoft.Azure.Management.IotHub.Models.PSFallbackRouteMetadata
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadContainerName
-Nama wadah untuk mengunggah file.
+Nama wadah tempat mengunggah file.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadNotificationMaxDeliveryCount
-Jumlah pengiriman maksimal untuk pemberitahuan unggahan file.  
+Jumlah pengiriman maksimum untuk pemberitahuan unggahan file.  
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadSasUriTtl
-Waktunya untuk mendapatkan SAS Uri yang dihasilkan untuk unggahan file. 
+Waktu untuk hidup untuk SAS Uri yang dihasilkan untuk unggahan file. 
 
 ```yaml
 Type: System.TimeSpan
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

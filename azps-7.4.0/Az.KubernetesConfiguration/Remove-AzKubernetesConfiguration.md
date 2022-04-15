@@ -1,51 +1,56 @@
 ---
 external help file: ''
-Module Name: Az.Synapse
-online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-azsynapsekustopoolattacheddatabaseconfiguration
+Module Name: Az.KubernetesConfiguration
+online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfiguration/remove-azkubernetesconfiguration
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 6b6244f74d9084e24e2905734fb7b8ab9bfaa4a1
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
+ms.openlocfilehash: 53fa1a6afdb9f26e9d786a1662b430c05500ca68
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142364129"
+ms.locfileid: "142424976"
 ---
-# Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration
+# Remove-AzKubernetesConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi database lampiran dengan nama tertentu.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopoolattacheddatabaseconfiguration) untuk informasi terbaru.
+Tindakan ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi kontrol Sumber, sehingga menghentikan sinkronisasi mendatang dari repo sumber.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration -AttachedDatabaseConfigurationName <String>
- -KustoPoolName <String> -ResourceGroupName <String> -WorkspaceName <String> [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzKubernetesConfiguration -ClusterName <String> -ClusterType <String> -Name <String>
+ -ResourceGroupName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration -InputObject <ISynapseIdentity>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzKubernetesConfiguration -InputObject <IKubernetesConfigurationIdentity> [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus konfigurasi database lampiran dengan nama tertentu.
+Tindakan ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi kontrol Sumber, sehingga menghentikan sinkronisasi mendatang dari repo sumber.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus AttachedDatabaseConfiguration menurut nama yang sudah ada
+### Contoh 1: Remove a configuation of kubernetes cluster by name
 ```powershell
-PS C:\> Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration -ResourceGroupName "testrg" -WorkspaceName "testws" -KustoPoolName "testkustopool" -AttachedDatabaseConfigurationName "myfollowerconfiguration"
+Remove-AzKubernetesConfiguration -ResourceGroupName azps_test_group -ClusterName azps_test_cluster -Name  azpstestk8s01 -ClusterType ConnectedClusters
 ```
 
-Perintah di atas menghapus konfigurasi database yang dilampirkan dengan nama tertentu "myfollowerconfiguration" dari "testws" ruang kerja.
+Perintah ini menghapus konfigurasi kluster kubernetes berdasarkan nama.
+
+### Contoh 2: Remove a configuation of kubernetes cluster by object
+```powershell
+$kubConf = Get-AzKubernetesConfiguration -ClusterName azps_test_cluster -ClusterType ConnectedClusters -ResourceGroupName azps_test_group -Name azpstestk8s02
+Remove-AzKubernetesConfiguration -InputObject $kubConf
+```
+
+Perintah ini menghapus konfigurasi kluster kubernetes berdasarkan objek.
 
 ## PARAMETERS
 
@@ -64,13 +69,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttachedDatabaseConfigurationName
-Nama konfigurasi database yang dilampirkan.
+### -ClusterName
+Nama kluster kubernetes.
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases: Name
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClusterType
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
 
 Required: True
 Position: Named
@@ -98,7 +118,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -109,13 +129,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -KustoPoolName
-Nama kumpulan Kusto.
+### -Nama
+Nama Konfigurasi Kontrol Sumber.
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases:
+Aliases: SourceControlConfigurationName
 
 Required: True
 Position: Named
@@ -156,7 +176,6 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -171,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan target.
+ID langganan Azure.
 
 ```yaml
 Type: System.String
@@ -181,21 +200,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Nama Ruang Kerja
-Nama ruang kerja
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -236,7 +240,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
 
 ## OUTPUTS
 
@@ -246,22 +250,23 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ALIAS
 
+Remove-AzK8sConfiguration
+
 PROPERTI PARAMETER KOMPLEKS
 
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
+  - `[ClusterName <String>]`: Nama kluster kubernetes.
+  - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
+  - `[ClusterRp <String>]`: RP kluster Kubernetes - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kubernetes (untuk kluster OnPrem K8S).
+  - `[ExtensionName <String>]`: Nama Ekstensi.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
-  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[SubscriptionId <String>]`: ID langganan target.
-  - `[WorkspaceName <String>]`: Nama ruang kerja
+  - `[OperationId <String>]`: id operasi
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya.
+  - `[SourceControlConfigurationName <String>]`: Nama Konfigurasi Kontrol Sumber.
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

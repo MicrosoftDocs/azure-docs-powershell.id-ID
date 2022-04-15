@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleScheduleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterAutoscaleScheduleCondition.md
-ms.openlocfilehash: 2f73aa39a23a39c07042c312e202c1f036de707a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a2c49481287d595b8b3e9038b6e1488cdeba24c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199862"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142374011"
 ---
 # New-AzHDInsightClusterAutoscaleScheduleCondition
 
 ## SYNOPSIS
-Membuat kondisi skala otomatis berbasis Jadwal.
+Membuat kondisi skala otomatis berbasis jadwal.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightclusterautoscaleschedulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzHDInsightClusterAutoscaleScheduleCondition -Time <DateTime> -WorkerNodeCou
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightClusterAutoscaleScheduleCondition** membuat kondisi skala otomatis berbasis jadwal.
+**Cmdlet New-AzHDInsightClusterAutoscaleScheduleCondition** menciptakan kondisi skala otomatis berbasis jadwal.
 
 ## EXAMPLES
 
@@ -35,9 +38,9 @@ Cmdlet **New-AzHDInsightClusterAutoscaleScheduleCondition** membuat kondisi skal
 PS C:\> New-AzHDInsightClusterAutoscaleScheduleCondition -Time 09:00 -WorkerNodeCount 5 -Day Monday,Wednesday
 ```
 
-Perintah ini membuat kondisi ketika skala otomatis kluster ke 5 node pekerja pada pukul 09.00 setiap Senin, Rabu.
+Perintah ini menciptakan kondisi di mana skala otomatis kluster menjadi 5 node pekerja pada pukul 09:00 setiap Senin, Rabu.
 
-### Contoh 2: Aktifkan Skala otomatis berbasis jadwal kluster dengan kondisi skala otomatis.
+### Contoh 2: Aktifkan skala otomatis berbasis jadwal kluster dengan kondisi skala otomatis.
 ```powershell
 # create a autoscale condition
 PS C:\> $condition=New-AzHDInsightClusterAutoscaleScheduleCondition -Time 09:00 -WorkerNodeCount 5 -Day Monday,Wednesday
@@ -48,12 +51,12 @@ PS C:\> $clusterName="MyCluster"
 PS C:\> Set-AzHDInsightClusterAutoscaleConfiguration -ResourceGroupName $clusterResourceGroup -ClusterName $clusterName -Schedule -TimeZone "Pacific Standard Time" -Condition $condition
 ```
 
-Perintah ini membuat kondisi ketika skala otomatis kluster ke 5 node pekerja pada pukul 09.00 setiap Senin, Rabu.
+Perintah ini menciptakan kondisi di mana skala otomatis kluster menjadi 5 node pekerja pada pukul 09:00 setiap Senin, Rabu.
 
 ## PARAMETERS
 
 ### -Hari
-Mendapatkan atau mengatur hari kondisi jadwal Skala Otomatis.
+Mendapatkan atau mengatur hari-hari kondisi jadwal Skala Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightDaysOfWeek[]
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkerNodeCount
-Mendapatkan atau mengatur jadwal pekerja tidak akan menghitung kondisi jadwal Skala Otomatis.
+Mendapatkan atau mengatur jumlah jadwal workernode dari kondisi jadwal Autoscale.
 
 ```yaml
 Type: System.Int32
@@ -114,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

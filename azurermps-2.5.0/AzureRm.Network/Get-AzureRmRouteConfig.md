@@ -5,16 +5,16 @@ ms.assetid: DBD40431-DD7A-42CB-83AA-568B1065A468
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermrouteconfig
 schema: 2.0.0
 ms.openlocfilehash: 907ca017518304a38340e9539aa4e8faf4216d59
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428835"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392714"
 ---
 # Get-AzureRmRouteConfig
 
 ## SYNOPSIS
-Mendapatkan rute dari tabel rute.
+Mendapatkan rute dari meja rute.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmRouteConfig -RouteTable <PSRouteTable> [-Name <String>] [-DefaultProf
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmRouteConfig** mendapatkan rute dari tabel rute Azure.
-Anda bisa menentukan rute menurut nama.
+Anda dapat menentukan rute menurut nama.
 
 ## EXAMPLES
 
@@ -43,14 +43,14 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah ini akan mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet **Get-AzureRmRouteTable.**
-Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan rute yang bernama Route07 dalam tabel rute yang bernama RouteTable01.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet **Get-AzureRmRouteTable** .
+Perintah melewati tabel tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini mendapatkan rute bernama Route07 di tabel rute bernama RouteTable01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama rute yang akan didaangkan cmdlet ini.
+Menentukan nama rute yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan tabel rute asal cmdlet mendapatkan rute.
+Menentukan tabel rute tempat cmdlet ini mendapatkan rute.
 
 ```yaml
 Type: PSRouteTable
@@ -95,12 +95,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSRouteTable
-Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
+Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari pipeline
 
 ## OUTPUTS
 
@@ -114,9 +114,9 @@ Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
 
 [Get-AzureRmRouteTable](./Get-AzureRmRouteTable.md)
 
-[New-AzureRmRouteConfig](./New-AzureRmRouteConfig.md)
+[AzureRmRouteConfig Baru](./New-AzureRmRouteConfig.md)
 
-[Remove-AzureRmRouteConfig](./Remove-AzureRmRouteConfig.md)
+[Hapus-AzureRmRouteConfig](./Remove-AzureRmRouteConfig.md)
 
 [Set-AzureRmRouteConfig](./Set-AzureRmRouteConfig.md)
 

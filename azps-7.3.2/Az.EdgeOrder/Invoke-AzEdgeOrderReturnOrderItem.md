@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
-ms.openlocfilehash: 13653b6179546f3aba932b773fdd71d514d02bde
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8c8c388b7cedd11be4b51954b460d50840ef4cc1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186964"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142374875"
 ---
 # Invoke-AzEdgeOrderReturnOrderItem
 
 ## SYNOPSIS
 Mengembalikan item pesanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/invoke-azedgeorderreturnorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,12 +43,12 @@ Mengembalikan item pesanan.
 
 ## EXAMPLES
 
-### Contoh 1: Command untuk memulai pengembalian orderItem
+### Contoh 1: Command untuk memulai orderItem return
 ```powershell
 PS C:\>Invoke-AzEdgeOrderReturnOrderItem -OrderItemName "OrderItem-211115074927900249117427" -ResourceGroupName "resourceGroupName" -ReturnReason "Test Order Return" -SubscriptionId "SubscriptionId"
 ```
 
-Invoke orderItem dikembalikan
+Memanggil pengembalian orderItem
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.IEdgeOrderIdentity
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressContactDetail
-Detail kontak untuk konstruksi Alamat kepada, lihat bagian CATATAN untuk properti RETURNADDRESSCONTACTDETAIL dan membuat tabel hash.
+Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti RETURNADDRESSCONTACTDETAIL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IContactDetails
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnAddressShippingAddress
-Detail pengiriman untuk alamat Untuk dibuat, lihat bagian CATATAN untuk properti RETURNADDRESSSHIPPINGADDRESS dan buat tabel hash.
+Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti RETURNADDRESSSHIPPINGADDRESS dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReturnReason
-Alasan Pengembalian.
+Kembalikan Alasan.
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -297,32 +300,32 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
-  - `[AddressName <String>]`: Nama Sumber Daya alamat dalam grup sumber daya yang ditentukan. nama alamat harus panjang antara 3 dan 24 karakter dan gunakan alfanumerik dan garis bawah saja
+  - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan Azure.
   - `[OrderItemName <String>]`: Nama item pesanan
   - `[OrderName <String>]`: Nama pesanan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 RETURNADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
-  - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
+  - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
-  - `[Mobile <String>]`: Nomor ponsel orang yang dapat dihubungi.
-  - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang kontak.
+  - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
+  - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
-RETURNADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman alamat
+RETURNADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
-  - `StreetAddress1 <String>`: Alamat Jalan baris 1.
-  - `[AddressType <AddressType?>]`: Tipe alamat.
+  - `StreetAddress1 <String>`: Baris Alamat Jalan 1.
+  - `[AddressType <AddressType?>]`: Jenis alamat.
   - `[City <String>]`: Nama Kota.
   - `[CompanyName <String>]`: Nama perusahaan.
   - `[PostalCode <String>]`: Kode pos.
   - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
-  - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+  - `[StreetAddress2 <String>]`: Baris Alamat Jalan 2.
   - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
-  - `[ZipExtendedCode <String>]`: Kode pos diperluas.
+  - `[ZipExtendedCode <String>]`: Kode Pos Diperpanjang.
 
 ## RELATED LINKS
 

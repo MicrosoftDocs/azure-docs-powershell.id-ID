@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
-ms.openlocfilehash: 4ec05e091acf6cd031be8ea13e8b13008b7746bf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a29cb0b4db21fa7eff3777f2906a2c5473eb02f1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554282"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142366793"
 ---
 # Get-AzSqlElasticJobExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobexecution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Cmdlet Get-AzSqlElasticJobExecution mendapatkan satu atau beberapa eksekusi peke
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan satu atau beberapa eksekusi pekerjaan di seluruh pekerjaan
+### Contoh 1: Mendapatkan satu atau beberapa eksekusi pekerjaan di semua pekerjaan
 ```powershell
 PS C:\> $agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent
 $agent | Get-AzSqlElasticJobExecution -Count 3
@@ -76,7 +79,7 @@ job1    3bcfc912-20b2-411d-a2b7-6265d13fe272 Succeeded 6/1/2018 10:11:43 PM 6/1/
 job2    433f798e-f35c-41de-a23c-f2b43801d7b4 Succeeded 6/1/2018 10:11:36 PM 6/1/2018 10:11:41 PM
 ```
 
-### Contoh 2: Mendapatkan satu atau beberapa eksekusi pekerjaan untuk sebuah pekerjaan
+### Contoh 2: Mendapatkan satu atau beberapa eksekusi pekerjaan untuk pekerjaan
 ```powershell
 PS C:\> $agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent
 $agent | Get-AzSqlElasticJobExecution -Count 3 -JobName job2
@@ -90,7 +93,7 @@ Mendapatkan satu atau beberapa eksekusi pekerjaan
 
 ### Contoh 3
 
-Mendapatkan satu atau beberapa eksekusi pekerjaan. (otomatisgenerated)
+Mendapatkan satu atau beberapa eksekusi pekerjaan. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -100,7 +103,7 @@ Get-AzSqlElasticJobExecution -JobExecutionId 00000000-0000-0000-0000-00000000000
 ## PARAMETERS
 
 ### -Aktif
-Memfilter dengan membuat min waktu
+Memfilter menurut waktu min
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMax
-Memfilter dengan membuat min waktu
+Memfilter menurut waktu min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMin
-Memfilter dengan membuat min waktu
+Memfilter menurut waktu min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMax
-Memfilter dengan membuat min waktu
+Memfilter menurut waktu min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMin
-Memfilter dengan membuat min waktu
+Memfilter menurut waktu min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -322,15 +325,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobAgentModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobAgentModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobExecutionModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
 ## CATATAN
 

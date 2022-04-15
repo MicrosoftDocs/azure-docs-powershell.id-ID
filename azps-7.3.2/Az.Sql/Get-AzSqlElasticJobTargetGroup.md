@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetGroup.md
-ms.openlocfilehash: 8cb6b9fbe2fb2b1449f8135789ea132bc4ca1ff4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 734e50258c257d904b46f743a521fef594bf747e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380508"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142366829"
 ---
 # Get-AzSqlElasticJobTargetGroup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa grup target pekerjaan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlElasticJobTargetGroup [-ParentResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlElasticJobTargetGroup cmdlet mendapatkan grup target dan grup tersebut adalah target
+Cmdlet Get-AzSqlElasticJobTargetGroup mendapatkan grup target dan itu adalah target
 
 ## EXAMPLES
 
@@ -52,11 +55,11 @@ TargetGroupName Targets
 tg1             (s1,db1)
 ```
 
-Mendapatkan grup target dan targetnya
+Mendapatkan grup target dan itu adalah target
 
 ### Contoh 2
 
-Mendapatkan satu atau beberapa grup target pekerjaan. (otomatisgenerated)
+Mendapatkan satu atau beberapa grup target pekerjaan. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -171,15 +174,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobAgentModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobAgentModel
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobTargetGroupModel
+### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobTargetGroupModel
 
 ## CATATAN
 

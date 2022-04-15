@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Consumption/Commands.Consumption/help/Get-AzureRmConsumptionReservationDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Consumption/Commands.Consumption/help/Get-AzureRmConsumptionReservationDetail.md
 ms.openlocfilehash: a7a4b50198a63329b0d45986f2bce60edb927777
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140862080"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142358371"
 ---
 # Get-AzureRmConsumptionReservationDetail
 
 ## SYNOPSIS
-Dapatkan detail pemesanan untuk rentang tanggal yang disediakan.
+Dapatkan detail reservasi untuk rentang tanggal yang disediakan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ Get-AzureRmConsumptionReservationDetail -StartDate <DateTime> -EndDate <DateTime
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmConsumptionReservationDetail** mendapatkan detail pemesanan untuk rentang tanggal yang disediakan.
+Cmdlet **Get-AzureRmConsumptionReservationDetail** mendapatkan detail reservasi untuk rentang tanggal yang disediakan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail reservasi dengan ID pesanan reservasi untuk rentang tanggal yang diberikan
+### Contoh 1: Dapatkan detail reservasi dengan ID pesanan reservasi untuk rentang tanggal yang disediakan
 ```powershell
 PS C:\> Get-AzureRmConsumptionReservationDetail -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -StartDate 2017-10-01 -EndDate 2017-12-07
 Id:  providers/Microsoft.Capacity/reservationOrders/ca69259e-bd4f-45c3-bf28-3f353f9cce9b/reservations/f37f4b70-52ba-4344-a8bd-28abfd21d640providers/Microsoft.Consumption/reservationDetails/20171007
@@ -47,7 +47,7 @@ UsageDate:  10/7/2017 12:00:00 AM
 UsedHour:  24
 ```
 
-### Contoh 2: Dapatkan detail reservasi dengan ID pesanan pemesanan dan ID pemesanan untuk rentang tanggal yang disediakan
+### Contoh 2: Dapatkan detail reservasi dengan Id pesanan reservasi dan Id reservasi untuk rentang tanggal yang disediakan
 ```powershell
 PS C:\> Get-AzureRmConsumptionReservationDetail -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -ReservationId f37f4b70-52ba-4344-a8bd-28abfd21d640 -StartDate 2017-10-01 -EndDate 2017-12-07
 Id:  providers/Microsoft.Capacity/reservationOrders/ca69259e-bd4f-45c3-bf28-3f353f9cce9b/reservations/f37f4b70-52ba-4344-a8bd-28abfd21d640providers/Microsoft.Consumption/reservationDetails/20171007
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Data akhir (DD-MM-YYY-MM dalam UTC) dari detail reservasi.
+Data akhir (YYYY-MM-DD dalam UTC) dari detail pemesanan.
 
 ```yaml
 Type: System.DateTime
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Pengidentifikasi reservasi dalam pesanan reservasi.
+Pengidentifikasi reservasi dalam pesanan pemesanan.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Data mulai (DD-MM-YYY-YYY dalam UTC) dari detail reservasi.
+Data awal (YYYY-MM-DD dalam UTC) dari detail pemesanan.
 
 ```yaml
 Type: System.DateTime
@@ -141,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

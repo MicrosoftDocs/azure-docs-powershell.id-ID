@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmDelegation.md
 ms.openlocfilehash: 0306d327bf7e93eedd040979912622b2dcbc09d5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425138"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386464"
 ---
 # Add-AzureRmDelegation
 
@@ -39,7 +39,7 @@ PS C:\> $subnet = Add-AzureRmDelegation -Name "myDelegation" -ServiceName "Micro
 PS C:\> Set-AzureRmVirtualNetwork $vnet
 ```
 
-Perintah pertama mengambil jaringan virtual tempat subnet berada. Perintah kedua memisahkan subnet yang menarik, yaitu subnet yang ingin Anda delegasikan. Perintah ketiga menambahkan delegasi ke subnet. Contoh khusus ini akan berguna ketika Anda ingin mengaktifkan SQL untuk membuat titik akhir antarmuka dalam subnet ini. Perintah akhir mengirimkan subnet yang diperbarui ke server untuk benar-benar memperbarui subnet Anda.
+Perintah pertama mengambil jaringan virtual tempat subnet berada. Perintah kedua mengisolasi subnet minat - yang ingin Anda delegasikan. Perintah ketiga menambahkan delegasi ke subnet. Contoh ini akan berguna ketika Anda ingin mengaktifkan SQL untuk membuat titik akhir antarmuka dalam subnet ini. Perintah terakhir mengirim subnet yang diperbarui ke server untuk benar-benar memperbarui subnet Anda.
 
 ## PARAMETERS
 
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -120,6 +120,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsof
 ## CATATAN
 
 ## RELATED LINKS
-[Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md) 
- [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md) 
+[Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md)
+ [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md)
  [Set-AzureRmVirtualNetwork](./Set-AzureRmVirtualNetwork.md)

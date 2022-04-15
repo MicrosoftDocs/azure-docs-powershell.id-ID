@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azle
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzLegacyPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzLegacyPeering.md
-ms.openlocfilehash: cf1fcbbaa25b54e0553cfcde6168065bd4c8c1bc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a3941b371ad82367b485fa51e7699f1a67e88cc0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371571"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142370105"
 ---
 # Get-AzLegacyPeering
 
 ## SYNOPSIS
 Digunakan untuk Mengonversi sumber daya Peering Warisan ke Sumber Daya Azure Resource Management (ARM). 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azlegacypeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
-Memperlihatkan semua sumber daya Peering berdasarkan Jenis.
+### -Jenis
+Memperlihatkan semua sumber daya Peering menurut Jenis.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Memperlihatkan semua sumber daya Peering berdasarkan Jenis.
+Memperlihatkan semua sumber daya Peering menurut Jenis.
 
 ```yaml
 Type: System.String
@@ -107,11 +110,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayUrlPathMapConfig.md
 ms.openlocfilehash: bcd1ec3e1f4dfdd62b8b22b798bad491c359a410
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142386449"
 ---
 # Get-AzureRmApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
-Mendapatkan array pemetaan jalur URL ke pool server backend.
+Mendapatkan array pemetaan jalur URL ke kumpulan server backend.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureRmApplicationGatewayUrlPathMapConfig [-Name <String>] -ApplicationGatew
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewayURLPathMapConfig** mendapatkan array pemetaan jalur URL ke pool server backend.
+Cmdlet **Get-AzureRmApplicationGatewayURLPathMapConfig** mendapatkan array pemetaan jalur URL ke kumpulan server backend.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi peta jalur URL
+### Contoh 1: Dapatkan konfigurasi peta jalur URL
 ```
 PS C:\>Get-AzureRmApplicationGatewayUrlPathMapConfig -ApplicationGateway Gateway
 ```
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama peta jalur URL tempat cmdlet ini mendapatkan konfigurasi peta jalur.
+Menentukan nama peta jalur URL di mana cmdlet ini mendapatkan konfigurasi peta jalur.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

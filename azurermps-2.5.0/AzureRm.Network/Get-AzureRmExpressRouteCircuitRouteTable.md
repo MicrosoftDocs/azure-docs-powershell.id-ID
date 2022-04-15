@@ -5,11 +5,11 @@ ms.assetid: BA7F6BAC-6047-42B0-B8CA-0B36302951B0
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermexpressroutecircuitroutetable
 schema: 2.0.0
 ms.openlocfilehash: 883d2ae51046f3dc1ee6c8350d996fedbfff083e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421536"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142392757"
 ---
 # Get-AzureRmExpressRouteCircuitRouteTable
 
@@ -27,7 +27,7 @@ Get-AzureRmExpressRouteCircuitRouteTable -ResourceGroupName <String> -ExpressRou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmExpressRouteCircuitRouteTable** mengambil tabel rute mendetail dari sirkuit ExpressRoute. Tabel rute akan memperlihatkan semua rute atau dapat difilter untuk memperlihatkan rute bagi tipe peering tertentu. Anda bisa menggunakan tabel rute untuk memvalidasi konfigurasi peering dan konektivitas Anda.
+Cmdlet **Get-AzureRmExpressRouteCircuitRouteTable** mengambil tabel rute mendetail dari sirkuit ExpressRoute. Tabel rute akan memperlihatkan semua rute atau dapat difilter untuk memperlihatkan rute untuk tipe peering tertentu. Anda dapat menggunakan tabel rute untuk memvalidasi konfigurasi peering dan konektivitas Anda.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Get-AzureRmExpressRouteCircuitRouteTable -ResourceGroupName $RG -ExpressRouteCir
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuitName
-Nama sirkuit ExpressRoute yang akan diperiksa.
+Nama sirkuit ExpressRoute sedang diperiksa.
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering` , `AzurePublicPeering` , dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, , `AzurePublicPeering`dan `MicrosoftPeering`
 
 ```yaml
 Type: String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -1,59 +1,59 @@
 ---
 external help file: ''
-Module Name: Az.MariaDb
-online version: https://docs.microsoft.com/powershell/module/az.mariadb/remove-azmariadbserver
+Module Name: Az.ImageBuilder
+online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/stop-azimagebuildertemplate
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbServer.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbServer.md
-ms.openlocfilehash: f9f94687c3340588c4a814cfc701444a711c692a
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
+ms.openlocfilehash: 83f5b06f4a69ee3b97d49de34e4902b21dece191
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142372661"
+ms.locfileid: "142425129"
 ---
-# Remove-AzMariaDbServer
+# Stop-AzImageBuilderTemplate
 
 ## SYNOPSIS
-Menghapus server.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/remove-azmariadbserver) untuk informasi terbaru.
+Membatalkan build gambar yang berjalan panjang berdasarkan templat gambar
 
 ## SYNTAX
 
-### Hapus (Default)
+### Batalkan (Default)
 ```
-Remove-AzMariaDbServer -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Stop-AzImageBuilderTemplate -ImageTemplateName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### CancelViaIdentity
 ```
-Remove-AzMariaDbServer -InputObject <IMariaDbIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Stop-AzImageBuilderTemplate -InputObject <IImageBuilderIdentity> [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus server.
+Membatalkan build gambar yang berjalan panjang berdasarkan templat gambar
 
 ## EXAMPLES
 
-### Contoh 1: Hapus MariaDB
+### Contoh 1: Menghentikan pembuatan templat gambar
 ```powershell
-PS C:\> Remove-AzMariaDbServer -Name mariadb-asd-01 -ResourceGroupName mariadb-test-qu5ov0
+Start-AzImageBuilderTemplate -ImageTemplateName template-name-sn78hg -ResourceGroupName wyunchi-imagebuilder -AsJob 
 
+Stop-AzImageBuilderTemplate -ImageTemplateName template-name-sn78hg -ResourceGroupName wyunchi-imagebuilder
 ```
 
-Perintah ini menghapus MariaDB.
+Perintah ini menghentikan pembuatan templat gambar.
 
-### Contoh 2: Hapus MariaDB
+### Contoh 2: Menghentikan pembuatan templat gambar
 ```powershell
-PS C:\> Get-AzMariaDbServer -Name mariadb-bc-t01 -ResourceGroupName mariadb-test-qu5ov0 | Remove-AzMariaDbServer
+Start-AzImageBuilderTemplate -ImageTemplateName template-name-sn78hg -ResourceGroupName wyunchi-imagebuilder -AsJob 
 
+$template = Get-AzImageBuilderTemplate -ResourceGroupName wyunchi-imagebuilder -Name template-name-sn78hg
+Stop-AzImageBuilderTemplate -InputObject $template 
 ```
 
-Perintah ini menghapus MariaDB.
+Perintah ini menghentikan pembuatan templat gambar.
 
 ## PARAMETERS
 
@@ -87,33 +87,33 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ImageTemplateName
+Nama Templat gambar
+
+```yaml
+Type: System.String
+Parameter Sets: Cancel
+Aliases: Name
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
-Parameter Sets: DeleteViaIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.IImageBuilderIdentity
+Parameter Sets: CancelViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Nama
-Nama server.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases: ServerName
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -148,12 +148,11 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Nama grup sumber daya.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Cancel
 Aliases:
 
 Required: True
@@ -164,11 +163,12 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan yang mengidentifikasi langganan Azure.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Cancel
 Aliases:
 
 Required: False
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.IImageBuilderIdentity
 
 ## OUTPUTS
 
@@ -229,17 +229,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
-  - `[ConfigurationName <String>]`: Nama konfigurasi server.
-  - `[DatabaseName <String>]`: Nama database.
-  - `[FirewallRuleName <String>]`: Nama aturan firewall server.
+INPUTOBJECT <IImageBuilderIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
-  - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
-  - `[ServerName <String>]`: Nama server.
-  - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.
-  - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
+  - `[ImageTemplateName <String>]`: Nama Templat gambar
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya.
+  - `[RunOutputName <String>]`: Nama output jalankan
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

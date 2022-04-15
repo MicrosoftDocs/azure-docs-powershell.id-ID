@@ -5,11 +5,11 @@ ms.assetid: 1CE2A30A-6DF8-4C4C-8348-C3C1CD4D0146
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermroutetable
 schema: 2.0.0
 ms.openlocfilehash: 198b14e4aab131b3d6044c793c5f3a4ea030b322
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421938"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142361708"
 ---
 # Set-AzureRmRouteTable
 
@@ -30,7 +30,7 @@ Cmdlet **Set-AzureRmRouteTable** menetapkan status tujuan untuk tabel rute Azure
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan rute lalu tetapkan status tujuan tabel rute
+### Contoh 1: Tambahkan rute lalu atur status tujuan tabel rute
 ```
 PS C:\>Get-AzureRmRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Add-AzureRmRouteConfig -Name "Route07" -AddressPrefix 10.2.0.0/16 -NextHopType "VnetLocal" | Set-AzureRmRouteTable
 Name              : RouteTable01
@@ -75,14 +75,14 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute yang bernama RouteTable01 dengan Get-AzureRmRouteTable cmdlet.
-Perintah itu meneruskan tabel itu ke Add-AzureRmRouteConfig cmdlet dengan menggunakan operator pipeline.
-**Add-AzureRmRouteConfig** menambahkan rute yang bernama Route07, lalu memberikan hasilnya ke cmdlet saat ini, yang akan memperbarui tabel agar mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzureRmRouteTable.
+Perintah melewati tabel tersebut ke cmdlet Add-AzureRmRouteConfig menggunakan operator pipeline.
+**Add-AzureRmRouteConfig** menambahkan rute bernama Route07, lalu mengirimkan hasil ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan objek tabel rute yang menyatakan status tujuan cmdlet mengatur tabel rute.
+Menentukan objek tabel rute yang mewakili status tujuan cmdlet ini mengatur tabel rute.
 
 ```yaml
 Type: PSRouteTable
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -157,12 +157,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSRouteTable
-Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
+Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari pipeline
 
 ## OUTPUTS
 
@@ -178,6 +178,6 @@ Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari saluran
 
 [New-AzureRmRouteTable](./New-AzureRmRouteTable.md)
 
-[Remove-AzureRmRouteTable](./Remove-AzureRmRouteTable.md)
+[Hapus-AzureRmRouteTable](./Remove-AzureRmRouteTable.md)
 
 

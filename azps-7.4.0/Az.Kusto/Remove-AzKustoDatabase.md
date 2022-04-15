@@ -1,51 +1,48 @@
 ---
 external help file: ''
-Module Name: Az.Synapse
-online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-azsynapsekustopoolattacheddatabaseconfiguration
+Module Name: Az.Kusto
+online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azkustodatabase
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 6b6244f74d9084e24e2905734fb7b8ab9bfaa4a1
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabase.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabase.md
+ms.openlocfilehash: 33ea99febab6f5997523acaea486b29de7114463
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "142364129"
+ms.locfileid: "142424919"
 ---
-# Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration
+# Remove-AzKustoDatabase
 
 ## SYNOPSIS
-Menghapus konfigurasi database lampiran dengan nama tertentu.
-
-> [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopoolattacheddatabaseconfiguration) untuk informasi terbaru.
+Menghapus database dengan nama tertentu.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration -AttachedDatabaseConfigurationName <String>
- -KustoPoolName <String> -ResourceGroupName <String> -WorkspaceName <String> [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzKustoDatabase -ClusterName <String> -Name <String> -ResourceGroupName <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration -InputObject <ISynapseIdentity>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzKustoDatabase -InputObject <IKustoIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus konfigurasi database lampiran dengan nama tertentu.
+Menghapus database dengan nama tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus AttachedDatabaseConfiguration menurut nama yang sudah ada
+### Contoh 1: Menghapus database Kusto yang sudah ada menurut nama
 ```powershell
-PS C:\> Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration -ResourceGroupName "testrg" -WorkspaceName "testws" -KustoPoolName "testkustopool" -AttachedDatabaseConfigurationName "myfollowerconfiguration"
+Remove-AzKustoDatabase -ResourceGroupName testrg -ClusterName testnewkustocluster -Name mykustodatabase
 ```
 
-Perintah di atas menghapus konfigurasi database yang dilampirkan dengan nama tertentu "myfollowerconfiguration" dari "testws" ruang kerja.
+Perintah di atas menghapus database Kusto bernama "mykustodatabase" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
 
 ## PARAMETERS
 
@@ -64,13 +61,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttachedDatabaseConfigurationName
-Nama konfigurasi database yang dilampirkan.
+### -ClusterName
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases: Name
+Aliases:
 
 Required: True
 Position: Named
@@ -98,7 +95,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -109,13 +106,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -KustoPoolName
-Nama kumpulan Kusto.
+### -Nama
+Nama database dalam klaster Kusto.
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases:
+Aliases: DatabaseName
 
 Required: True
 Position: Named
@@ -155,8 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -171,7 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan target.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -181,21 +178,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Nama Ruang Kerja
-Nama ruang kerja
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -236,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.IKustoIdentity
 
 ## OUTPUTS
 
@@ -251,17 +233,18 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama lokasi Azure (kawasan).
+  - `[OperationId <String>]`: Guid of the operation ID
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[SubscriptionId <String>]`: ID langganan target.
-  - `[WorkspaceName <String>]`: Nama ruang kerja
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
+  - `[ScriptName <String>]`: Nama skrip database Kusto.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

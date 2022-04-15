@@ -4,11 +4,11 @@ Module Name: Azs.Storage.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.storage.admin/get-azsstoragequota
 schema: 2.0.0
 ms.openlocfilehash: 1d8f4a3b91262f1a2ab5d2ffac0864ec5b6bb8fd
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136579978"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142351925"
 ---
 # Get-AzsStorageQuota
 
@@ -23,7 +23,7 @@ Get-AzsStorageQuota [-Location <String>] [-SubscriptionId <String[]>] [-DefaultP
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStorageQuota -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -150,16 +150,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IStorageAdminIdentity> : 
+INPUTOBJECT \<IStorageAdminIdentity>: 
   - `[AccountId <String>]`: ID akun penyimpanan internal, yang tidak terlihat oleh penyewa.
-  - `[AsyncOperationId <String>]`: Async Operation Id.
+  - `[AsyncOperationId <String>]`: Id Operasi Asinkron.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
   - `[QuotaName <String>]`: Nama kuota penyimpanan.
   - `[ResourceGroup <String>]`: Nama grup sumber daya.
-  - `[ServiceName <String>]`: Storage layanan baru.
+  - `[ServiceName <String>]`: Storage nama layanan.
   - `[SubscriptionId <String>]`: Id Langganan.
 
 ## RELATED LINKS

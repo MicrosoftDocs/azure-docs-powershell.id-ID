@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Remove-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Remove-AzAvailabilityGroupListener.md
-ms.openlocfilehash: d8760298724ef4d40000ed41f39a03d72daa994a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: efb9ce429b2b7fbfe94a62bcdabf592e6357dd51
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183283"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142399049"
 ---
 # Remove-AzAvailabilityGroupListener
 
 ## SYNOPSIS
 Menghapus Pendengar Grup Ketersediaan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/remove-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,11 +57,11 @@ Cmdlet Remove-AzAvailabilityGroupListener menghapus Pendengar Grup Ketersediaan.
 PS C:\> Remove-AzAvailabilityGroupListener -ResourceGroupName ResourceGroup01 -SqlVMGroupName SqlVmGroup01 -Name AgListener01
 ```
 
-Name ResourceGroupName GroupName AvailabilityGroupName
+Nama ResourceGroupName GroupName AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01
 
-Menghapus Pendengar Grup Ketersediaan Pendengar AgListener01 dalam Grup Ketersediaan Grup KetersediaanGrup01.
+Menghapus Availability Group Listener AgListener01 di Availability Group AvailabilityGroup01.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menentukan apakah akan membuat output sumber daya yang dihapus di akhir eksekusi cmdlet.
+Menentukan apakah akan mengeluarkan sumber daya yang dihapus pada akhir eksekusi cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,8 +170,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SqlvMGroupName
-SQL grup mesin virtual.
+### -SqlVMGroupName
+SQL nama grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL grup mesin virtual.
+SQL objek Grup mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
