@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.CostManagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryComparisonExpressionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryComparisonExpressionObject.md
-ms.openlocfilehash: be0fa1af1d598a88fe2a113180111e8956f764f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e6e62423369e1b7b29ab6aa40e5ae20ba8c7f82f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381913"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473353"
 ---
 # New-AzCostManagementQueryComparisonExpressionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk QueryComparisonExpression
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementquerycomparisonexpressionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Perintah ini membuat objek ekspresi perbandingan kueri untuk ekspor manajemen bi
 ## PARAMETERS
 
 ### -Nama
-Nama kolom yang akan digunakan dalam perbandingan.
+Nama kolom yang akan digunakan sebagai perbandingan.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

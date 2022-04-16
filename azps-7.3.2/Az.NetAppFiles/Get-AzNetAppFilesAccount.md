@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesAccount.md
-ms.openlocfilehash: c1e474ae58b80e0a7f55be29506d77de204cb289
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5486d7d6af019d7a774dd6f84fc5e4561d58b273
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571077"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142487861"
 ---
 # Get-AzNetAppFilesAccount
 
 ## SYNOPSIS
-Dapatkan detail akun File Azure NetApp (ANF).
+Mendapatkan detail akun Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Get-AzNetAppFilesAccount** mendapatkan detail akun ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan akun ANF
+### Contoh 1: Dapatkan akun ANF
 ```
 PS C:\>Get-AzNetAppFilesAccount -ResourceGroupName "MyRG" -Name "MyAnfAccount"
 
@@ -49,7 +52,7 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Perintah ini mendapatkan akun bernama MyAnfAccount.
+Perintah ini mendapatkan akun bernama MyanfAccount.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

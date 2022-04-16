@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzAutoscaleRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzAutoscaleRule.md
 ms.openlocfilehash: ac588fe9a82209cfd56c08f750fcd35945bc8af1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422874"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142498895"
 ---
 # New-AzAutoscaleRule
 
@@ -41,7 +41,7 @@ MetricTrigger                                               ScaleAction
 Microsoft.Azure.Management.Insights.Models.MetricTrigger    Microsoft.Azure.Management.Insights.Models.ScaleAction
 ```
 
-Perintah ini akan membuat aturan.
+Perintah ini membuat aturan.
 
 ### Contoh 2: Membuat dua aturan
 ```
@@ -54,13 +54,13 @@ Microsoft.Azure.Management.Insights.Models.MetricTrigger    Microsoft.Azure.Mana
 Microsoft.Azure.Management.Insights.Models.MetricTrigger    Microsoft.Azure.Management.Insights.Models.ScaleAction
 ```
 
-Perintah pertama membuat aturan untuk metrik Permintaan, lalu menyimpannya di $Rule 1.
-Perintah kedua membuat aturan kedua untuk metrik Permintaan, lalu menyimpannya dalam $Rule 2 variabel.
+Perintah pertama membuat aturan untuk metrik Permintaan, lalu menyimpannya dalam variabel $Rule 1.
+Perintah kedua membuat aturan kedua untuk metrik Permintaan, lalu menyimpannya dalam variabel $Rule 2.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -107,10 +107,10 @@ Accept wildcard characters: False
 ### -MetricStatistic
 Menentukan statistik metrik.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Average
+- Rata-rata
 - Min
-- Max
-- Sum
+- Maks
+- Jumlah
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType
@@ -128,11 +128,11 @@ Accept wildcard characters: False
 ### -Operator
 Menentukan operator.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Sama dengan
-- NotEquals
-- GreaterTerka
+- Sama
+- Notequals
+- GreaterThan
 - GreaterThanOrEqual
-- LessTer pada
+- LessThan
 - LessThanOrEqual
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleActionCooldown
-Menentukan waktu dingin tindakan Skala Otomatis.
+Menentukan waktu pendinginan tindakan Skala Otomatis.
 
 ```yaml
 Type: System.TimeSpan
@@ -166,9 +166,9 @@ Accept wildcard characters: False
 ### -ScaleActionDirection
 Menentukan arah tindakan skala.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
-- Tambah
-- Kurangi
+- Tidak
+- Meningkatkan
+- Mengurangi
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection
@@ -186,9 +186,9 @@ Accept wildcard characters: False
 ### -ScaleActionScaleType
 Menentukan tipe skala.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- ChangeSize
+- Ubah Ukuran
 - ChangeCount
-- PercentChangeCount
+- PersenChangeCount
 - ExactCount
 
 ```yaml
@@ -219,7 +219,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ambang Batas
+### -Ambang batas
 Menentukan ambang batas nilai metrik.
 
 ```yaml
@@ -237,11 +237,11 @@ Accept wildcard characters: False
 ### -TimeAggregationOperator
 Menentukan operator agregasi waktu.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Average
+- Rata-rata
 - Minimum
-- Maximum
+- Maksimum
 - Terakhir
-- Total, Hitung
+- Total, Hitungan
 
 ```yaml
 Type: Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeGrain
-Menentukan grain waktu.
+Menentukan butir waktu.
 
 ```yaml
 Type: System.TimeSpan
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

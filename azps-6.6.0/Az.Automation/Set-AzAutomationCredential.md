@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCredential.md
 ms.openlocfilehash: f009a46ef660ff300cc4ee182facde7878a2cdfc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142479869"
 ---
 # Set-AzAutomationCredential
 
@@ -19,7 +19,7 @@ ms.locfileid: "140110097"
 Mengubah kredensial Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,16 +42,16 @@ PS C:\> $Credential = New-Object -TypeName System.Management.Automation.PSCreden
 PS C:\> Set-AzAutomationCredential -AutomationAccountName "Contoso17" -Name "ContosoCredential" -ResourceGroupName "ResourceGroup01" -Value $Credential
 ```
 
-Perintah pertama menetapkan nama pengguna ke $User pengguna.
+Perintah pertama menetapkan nama pengguna ke variabel $User.
 Perintah kedua mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
-Perintah menyimpan objek tersebut dalam $Password variabel.
-Perintah ketiga membuat kredensial berdasarkan $User dan $Password, lalu menyimpannya di $Credential lain.
+Perintah menyimpan objek tersebut dalam variabel $Password.
+Perintah ketiga membuat kredensial berdasarkan $User dan $Password, lalu menyimpannya dalam variabel $Credential.
 Perintah terakhir mengubah kredensial Otomatisasi bernama ContosoCredential untuk menggunakan kredensial dalam $Credential.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini akan memodifikasi kredensial.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah kredensial.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk kredensial yang dimodifikasi cmdlet ini.
+Menentukan deskripsi untuk kredensial yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kredensial yang dimodifikasi cmdlet ini.
+Menentukan nama kredensial yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi kredensial.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah kredensial.
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

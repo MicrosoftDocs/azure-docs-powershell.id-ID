@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzSshKey.md
-ms.openlocfilehash: 84d67d32f6345baf792c3ab3fb0f94f64666b4e8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 30ec46c7696d8d366f3be0e6710e3112e536a710
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395271"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473533"
 ---
 # Update-AzSshKey
 
 ## SYNOPSIS
-Memperbarui sumber daya Kunci Publik LINUX.
+Memperbarui sumber daya Kunci Publik SSH.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Update-AzSshKey[-InputObject] <PSSshPublicKeyResource> -PublicKey <String> [-AsJ
 ```
 
 ## DESCRIPTION
-Memperbarui sumber daya Kunci Publik LINUX.
+Memperbarui sumber daya Kunci Publik SSH.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Update-AzSshKey -ResourceGroupName "testRG" -Name "sshKey2" -PublicKey $SshKey1.
 
 ```
 
-Memperbarui nilai kunci publik 'key2' dengan nilai kunci publik dari 'key1'
+Memperbarui nilai kunci publik 'sshKey2' dengan nilai kunci publik dari 'sshKey1'
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Kunci Publik PowerShellSHELLSHELL
+Objek Kunci Publik PowerShell SSH
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSSshPublicKeyResource
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Sumber Daya Kunci Publik Filem yang akan dapatkan.
+Menentukan nama sumber daya Kunci Publik Ssh untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID Sumber Daya untuk Sumber Daya Kunci Publik BISNIS ANDA.
+ID Sumber Daya untuk Sumber Daya Kunci Publik SSH Anda.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

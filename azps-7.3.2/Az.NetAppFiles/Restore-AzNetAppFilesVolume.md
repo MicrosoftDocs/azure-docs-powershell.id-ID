@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/rest
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Restore-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Restore-AzNetAppFilesVolume.md
-ms.openlocfilehash: 6965b4cf91aee95b4542ed9f1a7609aeda18f7dd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: aa4685087df9d05d61bf4048a97ce9f67e42576f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186180"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142487717"
 ---
 # Restore-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Memulihkan/Mengembalikan volume ke salah satu snapshotnya
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/restore-aznetappfilesvolume) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Perintah ini Memulihkan/Mengembalikan volume MyVolume ke salah satu snapshotnya 
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume yang akan dihapus
+Objek volume untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan apakah volume tertentu berhasil dipulihkan/dikembalikan
+Mengembalikan apakah volume yang ditentukan berhasil dipulihkan/dikembalikan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool berisi volume untuk dihapus
+Objek pool yang berisi volume untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotId
-SnapshotId snapshot.
+SnapshotId dari snapshot.
 UUID v4 digunakan untuk mengidentifikasi Snapshot
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

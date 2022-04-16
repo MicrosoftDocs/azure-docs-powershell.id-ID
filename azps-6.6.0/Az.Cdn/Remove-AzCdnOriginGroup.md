@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOriginGroup.md
 ms.openlocfilehash: 51c5b9c0d5215ef160c82e7874531b0a799e41e4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142479329"
 ---
 # Remove-AzCdnOriginGroup
 
 ## SYNOPSIS
-Menghapus grup CDN origin
+Menghapus grup asal CDN
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azcdnorigingroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Remove-AzCdnOriginGroup [-PassThru] -CdnOriginGroup <PSOriginGroup> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Remove-AzCdnOriginGroup akan menghapus CDN origin tersebut dari titik akhir yang ditentukan. 
+Remove-AzCdnOriginGroup akan menghapus grup asal CDN dari titik akhir yang ditentukan. 
 
 ## EXAMPLES
 
@@ -51,12 +51,12 @@ Remove-AzCdnOriginGroup akan menghapus CDN origin tersebut dari titik akhir yang
 PS C:\> Remove-AzCdnOriginGroup -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -OriginGroupName $originGroupName
 ```
 
-Cmdlet ini akan menghapus grup origin tertentu dari titik akhir yang diberikan. 
+Cmdlet ini akan menghapus grup asal yang ditentukan dari titik akhir tertentu. 
 
 ## PARAMETERS
 
 ### -CdnOriginGroup
-Objek CDN grup origin.
+Objek grup asal CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.OriginGroup.PSOriginGroup
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Azure CDN titik akhir.
+Azure CDN nama titik akhir.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Azure CDN grup origin.
+Azure CDN nama grup asal.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan jika ditentukan.
+Mengembalikan objek jika ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Azure CDN profil.
+Azure CDN nama profil.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya profil Azure CDN sumber daya.
+Grup sumber daya profil Azure CDN.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya grup Azure CDN origin baru.
+Id sumber daya grup asal Azure CDN.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,11 +207,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

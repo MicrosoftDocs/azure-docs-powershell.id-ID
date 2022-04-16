@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzActionGroupReceiver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzActionGroupReceiver.md
 ms.openlocfilehash: e795f54fbcd31a8035e892a545b4afa1c2283366
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424057"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142498913"
 ---
 # New-AzActionGroupReceiver
 
@@ -89,26 +89,26 @@ Cmdlet **New-AzActionGroupReceiver** membuat penerima grup tindakan baru dalam m
 
 ## EXAMPLES
 
-### Contoh 1: Buat penerima Email baru dalam memori.
+### Contoh 1: Membuat penerima Email baru dalam memori.
 ```
 PS C:\>$emailReceiver = New-AzActionGroupReceiver -Name 'emailReceiver1' -EmailReceiver -EmailAddress 'user1@example.com'
 ```
 
-Perintah ini akan membuat penerima Email baru dalam memori.
+Perintah ini membuat penerima Email baru dalam memori.
 
 ### Contoh 2: Buat penerima SMS baru dalam memori.
 ```
 PS C:\>$smsReceiver = New-AzActionGroupReceiver -Name 'smsReceiver1' -SmsReceiver -CountryCode '1' -PhoneNumber '5555555555'
 ```
 
-Perintah ini akan membuat penerima SMS baru dalam memori.
+Perintah ini membuat penerima SMS baru dalam memori.
 
 ### Contoh 3: Membuat penerima webhook baru dalam memori.
 ```
 PS C:\>$webhookReceiver = New-AzActionGroupReceiver -Name 'webhookReceiver1' -WebhookReceiver -ServiceUri 'http://test.com'
 ```
 
-Perintah ini akan membuat penerima webhook baru dalam memori.
+Perintah ini membuat penerima webhook baru dalam memori.
 
 ## PARAMETERS
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomationRunbookServiceUri
-URI tempat web sebaiknya dikirim
+URI tempat webhook harus dikirim
 
 ```yaml
 Type: System.String
@@ -217,8 +217,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Url
-TheUrl
+### -CallbackUrl
+CallbackUrl
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionId
-id koneksi itsm dari penerima ini
+id koneksi itsm penerima ini
 
 ```yaml
 Type: System.String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionName
-functionName
+namafungsi
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -httpTriggerUrl
+### -HttpTriggerUrl
 httpTriggerUrl
 
 ```yaml
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUri
-Uri pengidentifikasi untuk auth aad
+uri Pengidentifikasi untuk aad auth
 
 ```yaml
 Type: System.String
@@ -368,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsGlobalRunbook
-mengindikasikan apakah contoh ini adalah buku jalankan global
+mengindikasikan apakah instans ini adalah runbook global
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -398,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogicAppReceiver
-Membuat LogikaAppReceiver
+Membuat LogicAppReceiver
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -428,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi webhook untuk aad auth
+objek aplikasi webhook Id untuk aad auth
 
 ```yaml
 Type: System.String
@@ -458,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kawasan
-Kawasan itsm penerima ini
+wilayah itsm penerima ini
 
 ```yaml
 Type: System.String
@@ -488,7 +488,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-Id peran tangan penerima
+Id peran lengan penerima
 
 ```yaml
 Type: System.String
@@ -548,7 +548,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-id penyewa untuk auth aad
+id penyewa untuk aad auth
 
 ```yaml
 Type: System.String
@@ -563,7 +563,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketConfiguration
-Itsm TicketConfiguration dari penerima ini
+itsm TicketConfiguration of this receiver
 
 ```yaml
 Type: System.String
@@ -593,7 +593,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseCommonAlertSchema
-Bendera apakah akan menggunakan skema pemberitahuan umum . Nilai ini tidak akan digunakan untuk pelanggan SMS, Azure App push, ITSM, dan Voice.
+Bendera apakah akan menggunakan skema pemberitahuan umum . Nilai ini akan diabaikanuntuk SMS, push Aplikasi Azure, ITSM dan Voice recievers.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -608,7 +608,7 @@ Accept wildcard characters: False
 ```
 
 ### -VoiceCountryCode
-Kode negara dari penerima suara
+Kode negara penerima suara
 
 ```yaml
 Type: System.String
@@ -698,7 +698,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -714,6 +714,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-AzActionGroup](./Set-AzActionGroup.md) 
- [Get-AzActionGroup](./Get-AzActionGroup.md) 
+[Set-AzActionGroup](./Set-AzActionGroup.md)
+ [Get-AzActionGroup](./Get-AzActionGroup.md)
  [Remove-AzActionGroup](./Remove-AzActionGroup.md)
