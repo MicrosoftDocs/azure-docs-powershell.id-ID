@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerUserPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerUserPolicy.md
-ms.openlocfilehash: b63f5c4389fe31e77143763a68ae7402f0cd24f3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4cf24224fe90de47aa9ae73c8e7df538371af6dc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200455"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471607"
 ---
 # Get-AzDtlVMsPerUserPolicy
 
 ## SYNOPSIS
-Dapatkan mesin virtual per kebijakan pengguna sebuah lab di DevTest Labs.
+Mendapatkan mesin virtual per kebijakan pengguna lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlvmsperuserpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzDtlVMsPerUserPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDtlVMsPerUserPolicy** mendapatkan kebijakan mesin virtual per pengguna lab, yang memungkinkan Anda untuk mengatur jumlah maksimum mesin virtual yang diperbolehkan per pengguna.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan jumlah maksimum mesin virtual yang diperbolehkan per pengguna yang Telah Anda tetapkan dalam kebijakan.
+Cmdlet **Get-AzDtlVMsPererPolicy** mendapatkan mesin virtual per kebijakan pengguna lab, yang memungkinkan Anda untuk mengatur jumlah maksimum mesin virtual yang diperbolehkan per pengguna.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan jumlah maksimum mesin virtual yang diperbolehkan per pengguna yang telah Anda tetapkan dalam kebijakan.
 
 ## EXAMPLES
 
@@ -48,13 +51,13 @@ Description        :
 Status             : Enabled
 Provisioning State : 
 ```
-Dapatkan mesin virtual per kebijakan pengguna sebuah lab di DevTest Labs.
+Mendapatkan mesin virtual per kebijakan pengguna lab di DevTest Labs.
 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mendapatkan komputer virtual per kebijakan pengguna.
+Menentukan nama lab tempat cmdlet ini mendapatkan mesin virtual per kebijakan pengguna.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-azdtlvMsPerUserPolicy](./Set-AzDtlVMsPerUserPolicy.md)
+[Set-AzDtlVMsPerUserPolicy](./Set-AzDtlVMsPerUserPolicy.md)
 
 

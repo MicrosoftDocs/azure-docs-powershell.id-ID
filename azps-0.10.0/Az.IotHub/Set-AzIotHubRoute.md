@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Set-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Set-AzIotHubRoute.md
 ms.openlocfilehash: 4df4b5415a0fffc2f2482540088b36964cfa89ea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142498139"
 ---
 # Set-AzIotHubRoute
 
 ## SYNOPSIS
-Memperbarui rute dalam IoT Hub
+Memperbarui rute di IoT Hub
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Set-AzIotHubRoute [-ResourceId] <String> [-RouteName] <String> [-Source <PSRouti
 ```
 
 ## DESCRIPTION
-Mengedit rute. Anda bisa memperbarui semua bidang dalam rute termasuk sumber data, titik akhir, kueri perutean dan juga mengaktifkan atau menonaktifkan rute.
+Edit rute. Anda bisa memperbarui semua bidang dalam rute termasuk sumber data, titik akhir, kueri perutean dan juga mengaktifkan atau menonaktifkan rute.
 
 ## EXAMPLES
 
@@ -116,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 Aktifkan rute
 
 ```yaml
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

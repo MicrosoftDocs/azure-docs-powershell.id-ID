@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewaySku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewaySku.md
 ms.openlocfilehash: 0b87119ccec521b85a210dc8685874bd4ba4b9ab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424045"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142492271"
 ---
 # New-AzApplicationGatewaySku
 
@@ -26,7 +26,7 @@ New-AzApplicationGatewaySku -Name <String> -Tier <String> -Capacity <Int32>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewaySku** membuat unit penyimpanan saham (SKU) untuk gateway aplikasi Azure.
+Cmdlet **New-AzApplicationGatewaySku** membuat unit penyimpanan stok (SKU) untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Cmdlet **New-AzApplicationGatewaySku** membuat unit penyimpanan saham (SKU) untu
 PS C:\>$SKU = New-AzApplicationGatewaySku -Name "Standard_Small" -Tier "Standard" -Capacity 2
 ```
 
-Perintah ini membuat SKU yang bernama Standard_Small untuk gateway aplikasi Azure dan menyimpan hasilnya di variabel yang bernama $SKU.
+Perintah ini membuat SKU bernama Standard_Small untuk gateway aplikasi Azure dan menyimpan hasilnya dalam variabel bernama $SKU.
 
 ## PARAMETERS
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
-Menentukan tingkatan SKU.
+### -Tingkat
+Menentukan tingkat SKU.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Standar
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

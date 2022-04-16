@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBCassandraKeyspaceThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBCassandraKeyspaceThroughputMigration.md
 ms.openlocfilehash: 907d928dd73b3cdf53325e7494307b5f91676576
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477835"
 ---
 # Invoke-AzCosmosDBCassandraKeyspaceThroughputMigration
 
 ## SYNOPSIS
-Gunakan opsi ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+Gunakan ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbcassandrakeyspacethroughputmigration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbcassandrakeyspacethroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Invoke-AzCosmosDBCassandraKeyspaceThroughputMigration [-Name <String>]
 ```
 
 ## DESCRIPTION
-ThroughpyteType paramter menentukan throughput ke mana Anda ingin melakukan migrasi.
+Paramter ThroughpyteType menentukan throughput yang ingin Anda migrasi.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ $AutoscaleThroughput = Invoke-AzCosmosDBCassandraKeyspaceThroughputMigration -In
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Keyspace Space.
+Objek Keyspace Cassandra.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ThroughputType
 Tipe throughput untuk dimigrasikan.
-Nilai yang mungkin adalah: SkalaOtomatis, Manual.
+Nilai yang memungkinkan adalah: Skala Otomatis, Manual.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,13 +194,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSDatabaseAccountGetResults
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftKeyspaceGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
 
 ## OUTPUTS
 
