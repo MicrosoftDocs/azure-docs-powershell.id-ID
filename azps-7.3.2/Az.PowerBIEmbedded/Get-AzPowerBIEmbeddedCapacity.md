@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: d5efc6edce94db286e9679929a137ea37864502c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ed1b11cc84eeaa43e7789bdcd014574f30d2509c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196550"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142465847"
 ---
 # Get-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
-Mendapatkan detail Kapasitas yang Disematkan PowerBI.
+Mendapatkan detail Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzPowerBIEmbeddedCapacity -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzPowerBIEmbeddedCapacity mendapatkan detail Kapasitas Yang Disematkan PowerBI.
+Cmdlet Get-AzPowerBIEmbeddedCapacity mendapatkan detail Kapasitas Tersemat PowerBI.
 
 ## EXAMPLES
 
@@ -63,9 +66,9 @@ Tier                   : PBIE_Azure
 Tag                    : {}
 ```
 
-Perintah ini mendapatkan semua Kapasitas Azure PowerBI yang Disematkan dalam grup sumber daya bernama testRG
+Perintah ini mendapatkan semua Kapasitas Tersemat Azure PowerBI dalam grup sumber daya bernama testRG
 
-### Contoh 2: Mendapatkan kapasitas
+### Contoh 2: Dapatkan kapasitas
 ```
 PS C:\>Get-AzPowerBIEmbeddedCapacity -ResourceGroupName "testRG" -Name "testcapacity"
 Type                   : Microsoft.PowerBIDedicated/capacities
@@ -80,7 +83,7 @@ Tier                   : PBIE_Azure
 Tag                    : {}
 ```
 
-Perintah ini mendapatkan Kapasitas Tersemat Azure PowerBI yang disebut kemampuan uji dalam grup sumber daya bernama testRG.
+Perintah ini mendapatkan Kapasitas Tersemat Azure PowerBI bernama testcapacity dalam grup sumber daya yang bernama testRG.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kapasitas yang Disematkan PowerBI
+Nama Kapasitas Tersemat PowerBI
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat kapasitas dimiliki
+Nama grup sumber daya Azure tempat kapasitas berada
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

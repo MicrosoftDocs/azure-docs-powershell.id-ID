@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzApplicationGatewayFrontendIPConfig.md
 ms.openlocfilehash: 500d53810050dd539b57d2182a3b1aae9b4f358a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426193"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142496897"
 ---
 # Remove-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi IP ujung-depan dari gateway aplikasi.
+Menghapus konfigurasi IP ujung depan dari gateway aplikasi.
 
 ## SYNTAX
 
@@ -26,24 +26,24 @@ Remove-AzApplicationGatewayFrontendIPConfig -Name <String> -ApplicationGateway <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayFrontendIPConfig** menghapus FRONTEND IP dari gateway aplikasi Azure.
+Cmdlet **Remove-AzApplicationGatewayFrontendIPConfig** menghapus IP frontend dari gateway aplikasi Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi IP front-end
+### Contoh 1: Menghapus konfigurasi IP ujung depan
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> Remove-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Name "FrontEndIP02"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam $AppGw variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua menghapus konfigurasi IP ujung-depan yang bernama FrontEndIP02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah kedua menghapus konfigurasi IP ujung depan bernama FrontEndIP02 dari gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi untuk menghapus konfigurasi IP front-end.
+Menentukan gateway aplikasi untuk menghapus konfigurasi IP ujung depan.
 
 ```yaml
 Type: PSApplicationGateway
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi IP ujung-depan untuk dihapus.
+Menentukan nama konfigurasi IP ujung-depan yang akan dihapus.
 
 ```yaml
 Type: String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

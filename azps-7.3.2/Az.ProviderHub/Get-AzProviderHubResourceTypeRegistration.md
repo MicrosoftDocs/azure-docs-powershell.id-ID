@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubResourceTypeRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubResourceTypeRegistration.md
-ms.openlocfilehash: 01e65732307c8b31435f66936475835c5d4a24d0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a8c21ae2341a4b49909cf049cd8882c6f9c8fcdc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999222"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142465613"
 ---
 # Get-AzProviderHubResourceTypeRegistration
 
 ## SYNOPSIS
 Mendapatkan detail tipe sumber daya dalam langganan dan penyedia tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubresourcetyperegistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzProviderHubResourceTypeRegistration -ProviderNamespace <String> [-Subscrip
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzProviderHubResourceTypeRegistration -ProviderNamespace <String> -ResourceType <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan detail tipe sumber daya dalam langganan dan penyedia tertentu.
 
 ## EXAMPLES
 
-### Contoh 1:  List all resource types under the resource provider namespace.
+### Contoh 1: Cantumkan semua tipe sumber daya di bawah ruang nama penyedia sumber daya.
 ```powershell
 PS C:\> Get-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso"
 
@@ -52,7 +55,7 @@ testResourceType1           Microsoft.ProviderHub/providerRegistrations/resource
 testResourceType2           Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Daftar semua tipe sumber daya di bawah ruang nama penyedia sumber daya.
+Cantumkan semua tipe sumber daya di bawah ruang nama penyedia sumber daya.
 
 ### Contoh 2: Mendapatkan tipe sumber daya menurut nama.
 ```powershell
@@ -63,7 +66,7 @@ Name                        Type
 testResourceType1           Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Mendapatkan tipe sumber daya menurut nama.
+Mendapatkan tipe sumber daya berdasarkan nama.
 
 ### Contoh 3: Mendapatkan tipe sumber daya bertumpuk menurut nama.
 ```powershell
@@ -74,7 +77,7 @@ Name                                      Type
 testResourceType1/nestedResourceType      Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Mendapatkan tipe sumber daya menurut nama.
+Mendapatkan tipe sumber daya berdasarkan nama.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +181,7 @@ INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
   - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
+  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
   - `[ResourceType <String>]`: Tipe sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.

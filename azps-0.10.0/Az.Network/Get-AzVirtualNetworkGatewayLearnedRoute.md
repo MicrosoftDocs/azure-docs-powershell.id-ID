@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVirtualNetworkGatewayLearnedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVirtualNetworkGatewayLearnedRoute.md
 ms.openlocfilehash: d235a43e4b5f2bcec2e93a9dfda4860588647179
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415442"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497185"
 ---
 # Get-AzVirtualNetworkGatewayLearnedRoute
 
@@ -58,14 +58,14 @@ SourcePeer   : 10.0.0.254
 Weight       : 32768
 ```
 
-Untuk gateway jaringan virtual Azure yang bernama nama gateway dalam grup sumber daya Grup Sumber Daya, mengambil rute yang diketahui gateway Azure. 
+Untuk gateway jaringan virtual Azure bernama gatewayname dalam sumber daya grup sumber dayaGroup, mengambil rute yang diketahui gateway Azure. 
 
-Gateway jaringan virtual Azure dalam kasus ini memiliki dua rute statis (10.1.0.0/16 dan 10.0.0.254/32), serta satu rute yang dipelajari melalui BGP (10.0.0.0/16).
+Gateway jaringan virtual Azure dalam hal ini memiliki dua rute statis (10.1.0.0/16 dan 10.0.0.254/32), serta satu rute yang dipelajari melalui BGP (10.0.0.0/16).
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

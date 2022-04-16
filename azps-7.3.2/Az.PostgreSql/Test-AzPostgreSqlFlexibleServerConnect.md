@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Test-AzPostgreSqlFlexibleServerConnect.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Test-AzPostgreSqlFlexibleServerConnect.md
-ms.openlocfilehash: 6e5b79ee8ae9bdcc2b098ecc276068cb32b2a4ba
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 19e43b237a59bc1ed230d3f85a270697484b8b19
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142465955"
 ---
 # Test-AzPostgreSqlFlexibleServerConnect
 
 ## SYNOPSIS
-Uji koneksi ke server database
+Menguji koneksi ke server database
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/test-azpostgresqlflexibleserverconnect) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Test-AzPostgreSqlFlexibleServerConnect -Name <String> -QueryText <String> -Resou
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### TestViaIdentity
+### TestViaIdentitas
 ```
 Test-AzPostgreSqlFlexibleServerConnect -AdministratorLoginPassword <SecureString>
  -InputObject <IPostgreSqlIdentity> [-DatabaseName <String>] [-AdministratorUserName <String>]
@@ -48,11 +51,11 @@ Test-AzPostgreSqlFlexibleServerConnect -QueryText <String> -AdministratorLoginPa
 ```
 
 ## DESCRIPTION
-Uji koneksi ke server database
+Menguji koneksi ke server database
 
 ## EXAMPLES
 
-### Contoh 1: Test connection by name
+### Contoh 1: Uji koneksi menurut nama
 ```powershell
 PS C:\> $password = ConvertTo-SecureString <YourPassword> -AsPlainText
 PS C:\> Get-AzPostgreSqlFlexibleServerConnect -ResourceGroupName PowershellPostgreSqlTest -Name postgresql-test -AdministratorLoginPassword $password
@@ -60,7 +63,7 @@ PS C:\> Get-AzPostgreSqlFlexibleServerConnect -ResourceGroupName PowershellPostg
 The connection testing to postgresql-test.database.azure.com was successful!
 ```
 
-Menguji koneksi menurut grup sumber daya dan nama server
+Uji koneksi menurut grup sumber daya dan nama server
 
 ### Contoh 2: Uji koneksi menurut identitas
 ```powershell
@@ -70,9 +73,9 @@ PS C:\> Get-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTe
 The connection testing to postgresql-test.database.azure.com was successful!
 ```
 
-Uji koneksi dengan identitas
+Uji koneksi menurut identitas
 
-### Contoh 3: Test query by name
+### Contoh 3: Uji kueri menurut nama
 ```powershell
 PS C:\> $password = ConvertTo-SecureString <YourPassword> -AsPlainText
 PS C:\> Test-AzPostgreSqlFlexibleServerConnect -ResourceGroupName PowershellPostgreSqlTest -Name postgresql-test -AdministratorLoginPassword $password -Query "SELECT * FROM test"
@@ -97,14 +100,14 @@ col
 3
 ```
 
-Menguji kueri berdasarkan identitas
+Menguji kueri menurut identitas
 
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
 Kata sandi administrator.
 Minimal 8 karakter dan maksimal 128 karakter.
-Kata sandi harus berisi karakter dari tiga kategori berikut: huruf besar Bahasa Inggris, huruf kecil Bahasa Inggris, angka, dan karakter non-alfanumerik.
+Kata sandi harus berisi karakter dari tiga kategori berikut: Huruf besar bahasa Inggris, huruf kecil bahasa Inggris, angka, dan karakter non-alfanumerik.
 
 ```yaml
 Type: System.Security.SecureString
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -AdministratorUserName
 Nama pengguna administrator untuk server.
-Setelah ditetapkan, pengaturan tidak dapat diubah.
+Setelah diatur, tidak dapat diubah.
 
 ```yaml
 Type: System.String
@@ -165,8 +168,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Server untuk disambungkan.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Server yang akan disambungkan.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama server untuk tersambung.
+Nama server yang akan disambungkan.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryText
-Kueri untuk database untuk diuji
+Kueri untuk diuji database
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -245,13 +248,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Server untuk menyambungkan.
+INPUTOBJECT <IPostgreSqlIdentity>: Server yang akan disambungkan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

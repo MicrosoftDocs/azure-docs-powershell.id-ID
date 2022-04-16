@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteTable.md
-ms.openlocfilehash: eda8b881a9ebbc893e72c753153873deb4d14403
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e22af9d0f3d91537e2e49444e9a7f0f4b68a0440
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555712"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470221"
 ---
 # Get-AzRouteTable
 
 ## SYNOPSIS
 Mendapatkan tabel rute.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzRouteTable [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile
  [<CommonParameters>]
 ```
 
-### Perluas
+### Memperluas
 ```
 Get-AzRouteTable -ResourceGroupName <String> -Name <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -65,9 +68,9 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute yang bernama RouteTable01 dalam grup sumber daya yang bernama ResourceGroup11.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dalam grup sumber daya bernama ResourceGroup11.
 
-### Contoh 2: Tabel rute daftar menggunakan pemfilteran
+### Contoh 2: Daftar tabel rute menggunakan pemfilteran
 ```
 PS C:\> Get-AzRouteTable -Name RouteTable*
 
@@ -116,12 +119,12 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini akan mendapatkan semua tabel rute yang namanya dimulai dengan "RouteTable"
+Perintah ini mendapatkan semua tabel rute yang namanya dimulai dengan "RouteTable"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama tabel rute yang akan didaangkan cmdlet ini.
+Menentukan nama tabel rute yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi tabel rute yang akan didaangkan cmdlet ini.
+Menentukan nama grup sumber daya yang berisi tabel rute yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/test-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Test-AzPurviewAccountNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Test-AzPurviewAccountNameAvailability.md
-ms.openlocfilehash: 91659cb82c99aead8ab0e41955cdd62e876ac35b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 75d359f9bda75f6bb81cd47e8243b7040cfd7078
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570557"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142465487"
 ---
 # Test-AzPurviewAccountNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama akun tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/test-azpurviewaccountnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Message                                                 NameAvailable Reason
 The name test-pa is invalid, please use another name. False         Invalid
 ```
 
-Periksa apakah nama akun 'uji-pa' tersedia.
+Periksa apakah nama akun 'test-pa' tersedia.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe sumber daya yang sepenuhnya memenuhi syarat yang menyertakan ruang nama penyedia
+Tipe sumber daya yang sepenuhnya memenuhi syarat yang mencakup ruang nama penyedia
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

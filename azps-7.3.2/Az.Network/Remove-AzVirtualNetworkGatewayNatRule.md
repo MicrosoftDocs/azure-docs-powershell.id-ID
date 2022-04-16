@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGatewayNatRule.md
-ms.openlocfilehash: c1ccca26bf084332e43d505a458ae9a0ccedb5f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7757ec09ccf42803c256c4f74e993583ca0708db
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392379"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468277"
 ---
 # Remove-AzVirtualNetworkGatewayNatRule
 
 ## SYNOPSIS
-Menghapus atau Menghapus Gateway Jaringan Virtual NatRule.
+Menghapus atau Menghapus Virtual Network Gateway NatRule.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzVirtualNetworkGatewayNatRule -InputObject <PSVirtualNetworkGatewayNatRu
 ```
 
 ## DESCRIPTION
-**Cmdlet Remove-AzVirtualNetworkGatewayNatRule** menghapus aturan gateway jaringan virtual nat dari gateway jaringan virtual Anda.
+Cmdlet **Remove-AzVirtualNetworkGatewayNatRule** menghapus aturan nat gateway jaringan virtual dari gateway jaringan virtual Anda.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Are you sure you want to remove resource 'natRule3'
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -83,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menghapus sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menghapus sumber daya
 
 ```yaml
 Type: SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item di mana operasi ini dijalankan.
+Mengembalikan objek yang mewakili item tempat operasi ini dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek VirtualNetworkGatewayNatRule yang akan dihapus.
+Id sumber daya objek VirtualNetworkGatewayNatRule untuk dihapus.
 
 ```yaml
 Type: String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

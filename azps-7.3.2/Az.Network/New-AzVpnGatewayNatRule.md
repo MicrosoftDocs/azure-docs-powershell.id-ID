@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGatewayNatRule.md
-ms.openlocfilehash: d7d604a09840f3b9dca6dc190145ba652ce396d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fbc21b48556ee74c2a70fc83e03e2131d50c7de2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185509"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142490687"
 ---
 # New-AzVpnGatewayNatRule
 
 ## SYNOPSIS
-Membuat aturan NAT pada VpnGateway yang bisa dikaitkan dengan VpnSiteLinkConnection.
+Membuat aturan NAT di VpnGateway yang dapat dikaitkan dengan VpnSiteLinkConnection.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzVpnGatewayNatRule -ParentResourceId <String> -Name <String> [-Type <String
 ```
 
 ## DESCRIPTION
-Membuat aturan NAT pada VpnGateway yang bisa dikaitkan dengan VpnGateway.
+Membuat aturan NAT di VpnGateway yang dapat dikaitkan dengan VpnGateway.
 
 ## EXAMPLES
 
@@ -75,12 +78,12 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/testRg/providers/Microsoft.Network/vpnGateways/testvpngw/natRules/testNatRule
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub. Lalu, kami akan membuat VpnGateway di bawah Virtual Hub tersebut. Lalu, menggunakan perintah ini: New-AzVpnGatewayNatRule, aturan NAT bisa dibuat dan dikaitkan dengan VpnGateway yang dibuat.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual. Kemudian, kami akan membuat VpnGateway di bawah Hub Virtual tersebut. Lalu, menggunakan perintah ini: New-AzVpnGatewayNatRule, aturan NAT dapat dibuatdan dikaitkan dengan VpnGateway yang dibuat.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalMapping
-Daftar pemetaan eksternal subnet alamat IP privat untuk NAT
+Daftar pemetaan eksternal subnet alamat IP pribadi untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalMapping
-Daftar pemetaan internal subnet alamat IP privat untuk NAT
+Daftar pemetaan internal subnet alamat IP pribadi untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Orang tua VpnGateway untuk Aturan NAT ini.
+VpnGateway induk untuk Aturan NAT ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGateway
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

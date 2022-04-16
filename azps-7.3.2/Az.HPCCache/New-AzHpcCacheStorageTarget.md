@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/new-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/New-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/New-AzHpcCacheStorageTarget.md
-ms.openlocfilehash: 96dc2d39eeed13688d612602650cc10625ba0f22
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6314d7386c3302b39a5e15c7d649874374411305
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394102"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142470797"
 ---
 # New-AzHpcCacheStorageTarget
 
 ## SYNOPSIS
-Membuat Storage Target.
+Membuat Target Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/new-azhpccachestoragetarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzHpcCacheStorageTarget -ResourceGroupName <String> -CacheName <String> -Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHpcCacheStorageTarget** menambahkan target Storage Target ke Singgahan HPC Azure.
+Cmdlet **New-AzHpcCacheStorageTarget** menambahkan target Storage ke Azure HPC Cache.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ PS C:\> New-AzHpcCacheStorageTarget -ResourceGroupName testRG -CacheName testCac
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -CLFS
-Perbarui CLFS Storage Tipe Target.
+Perbarui tipe Target Storage CLFS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa cmdlet tidak meminta konfirmasi Anda. Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin membilas cache.
+### -Paksa
+Menunjukkan bahwa cmdlet tidak meminta konfirmasi kepada Anda. Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin menyiram singgahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Junction
-Sambungan.
+### -Persimpangan
+Junction.
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-"Nama grup sumber daya tempat Anda ingin membuat target penyimpanan untuk cache tertentu.
+"Nama grup sumber daya di mana Anda ingin membuat target penyimpanan untuk singgahan tertentu.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: 28540c6ecd587718bda6d36817da7598cee3c001
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6211a0645ad05019e1330db0eec91d4bb6ef9879
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140197318"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142468619"
 ---
 # Remove-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
 Menghapus Grup Kumpulan Aturan Kebijakan Azure Firewall dalam kebijakan firewall Azure
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Remove-AzFirewallPolicyRuleCollectionGroup -ResourceId <String> [-Force] [-PassT
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzFirewallPolicyRuleCollectionGroup** menghapus grup kumpulan aturan dari Azure Firewall Policy.
+Cmdlet **Remove-AzFirewallPolicyRuleCollectionGroup** menghapus grup kumpulan aturan dari Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -56,19 +59,19 @@ Cmdlet **Remove-AzFirewallPolicyRuleCollectionGroup** menghapus grup kumpulan at
 PS C:\> Remove-AzFirewallPolicyRuleCollectionGroup -Name testRcGroup -FirewallPolicyObject $fp
 ```
 
-Contoh ini menghapus grup colelction aturan kebijakan firewall yang bernama "testRcGroup" dalam objek kebijakan firewall $fp
+Contoh ini menghapus grup kolelksi aturan kebijakan firewall bernama "testRcGroup" dalam objek kebijakan firewall $fp
 
 ### Contoh 2
 ```powershell
 PS C:\> Remove-AzFirewallPolicyRuleCollectionGroup -Name testRcGroup -ResourceGroupName testRg -AzureFirewallPolicyName fpName 
 ```
 
-Contoh ini menghapus grup colelction aturan kebijakan firewall yang bernama "testRcGroup" di firewall yang bernama "fpName" frpm nama grup sumber daya "testRg"
+Contoh ini menghapus grup kolelksi aturan kebijakan firewall bernama "testRcGroup" di firewall bernama "fpName" frpm nama grup sumber daya "testRg"
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -127,8 +130,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari kumpulan Aturan grup
+Id sumber daya grup kumpulan Aturan
 
 ```yaml
 Type: String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -270,7 +273,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicy
 
-### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyRuleCollectionGroupWrawall
+### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyRuleCollectionGroupWrapper
 
 ## OUTPUTS
 

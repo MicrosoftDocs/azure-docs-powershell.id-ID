@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessmentMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAssessmentMetadata.md
-ms.openlocfilehash: 8d96301d0e5af69f3eb774404772613b2f0fe440
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e65b7ec2a1832da1ec45ef7ff1f6dd081da1cf86
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006424"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142483937"
 ---
 # Get-AzSecurityAssessmentMetadata
 
 ## SYNOPSIS
-Mendapatkan penilaian keamanan tentang tipe dan metadta dalam langganan.
+Mendapatkan tipe penilaian keamanan dan metadta dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityassessmentmetadata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzSecurityAssessmentMetadata -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Mendapatkan penilaian keamanan tentang tipe dan metadta dalam langganan. Metadata penilaian keamanan Built-In penilaian serta tipe penilaian kustom yang dapat ditentukan oleh pengguna.
+Mendapatkan tipe penilaian keamanan dan metadta dalam langganan. Metadata Penilaian Keamanan mencakup penilaian Built-In dan tipe penilaian kustom yang dapat ditentukan pengguna.
 
 ## EXAMPLES
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

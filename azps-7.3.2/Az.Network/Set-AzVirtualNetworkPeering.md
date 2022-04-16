@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkPeering.md
-ms.openlocfilehash: b9284c4ee4cd5ccd5a753aef57a8ccdff7b9500a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e0aed0d86d119eedbb51d307e8cc08ef53733557
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999430"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142467323"
 ---
 # Set-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Mengonfigurasi peering jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ $myVnet1ToMyVnet2.AllowForwardedTraffic = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1ToMyVnet2
 ```
 
-### Contoh 2: Mengubah akses jaringan virtual peering jaringan virtual
+### Contoh 2: Mengubah akses jaringan virtual dari peering jaringan virtual
 ```
 # Get the virtual network peering
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "myResourceGroup" -Name "myVnet1TomyVnet2"
@@ -54,7 +57,7 @@ $myVnet1TomyVnet2.AllowVirtualNetworkAccess = $False
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 3: Mengubah konfigurasi properti transit gateway peering jaringan virtual
+### Contoh 3: Mengubah konfigurasi properti transit gateway dari peering jaringan virtual
 ```
 # Get the virtual network peering
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "myResourceGroup" -Name "myVnet1TomyVnet2"
@@ -66,7 +69,7 @@ $myVnet1TomyVnet2.AllowGatewayTransit = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 4: Gunakan gateway jarak jauh di peering jaringan virtual
+### Contoh 4: Menggunakan gateway jarak jauh dalam peering jaringan virtual
 ```
 # Get the virtual network peering 
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "ResourceGroup001" -Name "myVnet1TomyVnet2"
@@ -78,14 +81,14 @@ $myVnet1TomyVnet2.UseRemoteGateways = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-Dengan mengubah properti ini $True, gateway VNet peer Anda bisa digunakan.
-Namun, peer VNet harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
+Dengan mengubah properti ini ke $True, gateway VNet rekan Anda bisa digunakan.
+Namun, rekan VNet harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
 Properti ini tidak bisa digunakan jika gateway telah dikonfigurasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/New-AzSapMonitor.md
 ms.openlocfilehash: 4e4fdeb80e690009a5d881cafd3b7f93533f3760
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140503617"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474253"
 ---
 # New-AzSapMonitor
 
@@ -18,7 +18,7 @@ ms.locfileid: "140503617"
 Membuat monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hanaonazure/new-azsapmonitor) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hanaonazure/new-azsapmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Location Name              Type
 westus2  ps-sapmonitor-t01 Microsoft.HanaOnAzure/sapMonitors
 ```
 
-Perintah ini akan membuat monitor SAP.
+Perintah ini membuat monitor SAP.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCustomerAnalytic
-Nilai yang menunjukkan apakah akan mengirim analitik ke Microsoft
+Nilai yang mengindikasikan apakah akan mengirim analitik ke Microsoft
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogAnalyticsWorkspaceId
-ID ruang kerja dari ruang kerja analitik log yang digunakan untuk pemantauan
+ID ruang kerja ruang kerja analitik log yang akan digunakan untuk pemantauan
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogAnalyticsWorkspaceSharedKey
-Kunci bersama dari ruang kerja analitik log yang digunakan untuk pemantauan
+Kunci bersama ruang kerja analitik log yang digunakan untuk pemantauan
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -MonitorSubnetResourceId
 Subnet tempat monitor SAP akan digunakan.
-Subnet ini harus sama dengan subnet database HANA.
+Ini harus menjadi subnet yang sama dari database HANA.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,8 +216,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+ID Langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
