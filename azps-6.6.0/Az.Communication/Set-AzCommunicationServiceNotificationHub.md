@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
 ms.openlocfilehash: d493f8989b54475c1dcddb45ed54766ea1ec9431
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079605"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142478933"
 ---
 # Set-AzCommunicationServiceNotificationHub
 
@@ -18,7 +18,7 @@ ms.locfileid: "140079605"
 Menautkan Hub Pemberitahuan Azure ke layanan komunikasi ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/set-azcommunicationservicenotificationhub) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.communication/set-azcommunicationservicenotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -Re
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Tautan
+### Link
 ```
 Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -ResourceGroupName <String>
  -LinkNotificationHubParameter <ILinkNotificationHubParameters> [-SubscriptionId <String>]
@@ -41,7 +41,7 @@ Menautkan Hub Pemberitahuan Azure ke layanan komunikasi ini.
 
 ## EXAMPLES
 
-### Contoh 1: Berikan detail Hub Pemberitahuan secara interaktif
+### Contoh 1: Menyediakan detail Hub Pemberitahuan secara interaktif
 ```powershell
 PS C:\> Set-AzCommunicationServiceNotificationHub -CommunicationServiceName ContosoAcsResource2 -ResourceGroupName ContosoResourceProvider1 -ConnectionString "<notificationhub-connectionstring>" -NotificationHubResourceId "<notificationhub-resourceid>"
 ```
@@ -51,7 +51,7 @@ Hub pemberitahuan tertaut memungkinkan sumber daya ACS untuk mengirim pemberitah
 ## PARAMETERS
 
 ### -CommunicationServiceName
-Nama sumber daya Layanan Komunikasi.
+Nama sumber daya CommunicationService.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationHubResourceId
-ID sumber daya dari hub pemberitahuan
+ID sumber daya hub pemberitahuan
 
 ```yaml
 Type: System.String
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

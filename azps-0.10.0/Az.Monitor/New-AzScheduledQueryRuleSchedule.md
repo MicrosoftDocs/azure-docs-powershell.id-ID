@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSchedule.md
 ms.openlocfilehash: e62c8861f370f9e7e7c5b31fea629f3f8e11aa32
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493377"
 ---
 # New-AzScheduledQueryRuleSchedule
 
 ## SYNOPSIS
-Membuat objek tipe Jadwal
+Membuat objek dengan tipe Jadwal
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-AzScheduledQueryRuleSchedule -FrequencyInMinutes <Int32> -TimeWindowInMinute
 
 ## DESCRIPTION
 Membuat objek dengan tipe Jadwal.
-Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log.
+Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrequencyInMinutes
-Frekuensi pemberitahuan
+Frekuensi peringatan
 
 ```yaml
 Type: System.Int32
@@ -83,11 +83,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

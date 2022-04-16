@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
-ms.openlocfilehash: 60a7275928e01605e0a29439b9cb1ed726625988
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a447e26ae4d6d16fc7b2d3132b388ef722142324
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550149"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471985"
 ---
 # New-AzDatabricksWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Name            ResourceGroupName    Location Managed Resource Group ID
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
 ```
 
-Perintah ini akan membuat ruang kerja Databricks.
+Perintah ini membuat ruang kerja Databricks.
 
 ### Contoh 2: Membuat ruang kerja Databricks dengan jaringan virtual yang dikustomisasi
 ```powershell
@@ -63,9 +66,9 @@ Name            ResourceGroupName    Location Managed Resource Group ID
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
 ```
 
-Perintah ini membuat ruang kerja Berbrick data dengan jaringan virtual yang dikustomisasi dalam grup sumber daya.
+Perintah ini membuat ruang kerja Databricks dengan jaringan virtual yang dikustomisasi dalam grup sumber daya.
 
-### Contoh 3: Membuat ruang kerja Berbricks Data dengan aktifkan enkripsi
+### Contoh 3: Membuat ruang kerja Databricks dengan mengaktifkan enkripsi
 ```powershell
 PS C:\> New-AzDatabricksWorkspace -Name workspace3miaeb -ResourceGroupName databricks-rg-rqb2yo -PrepareEncryption -Location "East US 2 EUAP" -Sku premium
 
@@ -74,8 +77,8 @@ Name            ResourceGroupName    Location Managed Resource Group ID
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
 ```
 
-Perintah ini membuat ruang kerja Databricks dan mengaturnya untuk menyiapkan enkripsi.
-Silakan merujuk pada contoh enkripsi Update-AzDatabricksWorkspace pengaturan lainnya.
+Perintah ini membuat ruang kerja Databricks dan mengaturnya untuk mempersiapkan enkripsi.
+Silakan lihat contoh Update-AzDatabricksWorkspace untuk pengaturan lainnya ke enkripsi.
 
 ## PARAMETERS
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -EncryptionKeySource
 Kunci enkripsiSource (penyedia).
-Nilai yang mungkin (insensitif kasus): Default, Microsoft.Keyvault
+Kemungkinan nilai (tidak peka huruf besar kecil): Default, Microsoft.Keyvault
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Support.KeySource
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedResourceGroupName
-Id grup sumber daya yang dikelola.
+Id grup sumber daya terkelola.
 
 ```yaml
 Type: System.String
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 
 ### -PublicNetworkAccess
 Tipe akses jaringan untuk mengakses ruang kerja.
-Mengatur nilai untuk dinonaktifkan agar dapat mengakses ruang kerja hanya melalui tautan pribadi.
+Atur nilai ke dinonaktifkan untuk mengakses ruang kerja hanya melalui tautan privat.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Support.PublicNetworkAccess
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiredNsgRule
-Mendapatkan atau mengatur nilai yang mengindikasikan apakah pesawat data (kluster) untuk mengontrol komunikasi pesawat terjadi melalui titik akhir privat.
+Mendapatkan atau mengatur nilai yang mengindikasikan apakah bidang data (kluster) untuk mengontrol komunikasi pesawat terjadi melalui titik akhir privat.
 Nilai yang didukung adalah 'AllRules' dan 'NoAzureDatabricksRules'.
 Nilai 'NoAzureServiceRules' hanya untuk penggunaan internal.
 
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan SKU.
+Tingkat SKU.
 
 ```yaml
 Type: System.String
@@ -550,7 +553,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -566,7 +569,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -581,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

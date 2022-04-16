@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraKeyspaceThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraKeyspaceThroughput.md
 ms.openlocfilehash: 6b5654fbd424e3703596be05b48f13eb1cdf6521
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140334671"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477961"
 ---
 # Get-AzCosmosDBCassandraKeyspaceThroughput
 
 ## SYNOPSIS
-Mendapatkan nilai throughput Keyspace Throughput.
+Mendapatkan nilai throughput dari Keyspace Cassandra.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandrakeyspacethroughput) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandrakeyspacethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzCosmosDBCassandraKeyspaceThroughput -Name <String> -InputObject <PSDatabas
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBCass cmdletKeyspaceThroughput** mendapatkan objek throughput yang terkait dengan Keyspace tertentu.
+**Cmdlet Get-AzCosmosDBCassandraKeyspaceThroughput** mendapatkan objek throughput yang terkait dengan Keyspace tertentu.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ PS C:\> Get-AzCosmosDBCassandraKeyspaceThroughput -ResourceGroupName {resourceGr
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

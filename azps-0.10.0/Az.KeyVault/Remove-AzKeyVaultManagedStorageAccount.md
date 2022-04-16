@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageAccount.md
 ms.openlocfilehash: bfecf2e20848b1cea6038660c94939d0ffd4939e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414592"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142499309"
 ---
 # Remove-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Menghapus kunci vault yang dikelola Azure Storage Dan semua definisi SAS terkait.
+Menghapus akun Azure Storage yang dikelola Key Vault dan semua definisi SAS terkait.
 
 ## SYNTAX
 
@@ -25,28 +25,28 @@ Remove-AzKeyVaultManagedStorageAccount [-VaultName] <String> [-AccountName] <Str
 ```
 
 ## DESCRIPTION
-Memisahkan akun Azure Storage dari Key Vault. Ini tidak akan menghapus Azure Storage Anda, tetapi menghapus kunci akun agar tidak dikelola oleh Azure Key Vault. Semua kunci vault yang terkait Storage definisi SAS juga dihapus.
+Memisahkan Akun Azure Storage dari Key Vault. Tindakan ini tidak menghapus Akun Azure Storage tetapi menghapus kunci akun agar tidak dikelola oleh Azure Key Vault. Semua definisi Key Vault dikelola Storage SAS yang terkait juga dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Kunci Vault yang Azure Storage akun dan semua definisi SAS terkait.
+### Contoh 1: Hapus akun Azure Storage terkelola Key Vault dan semua definisi SAS terkait.
 ```
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount'
 ```
 
-Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua definisi Key Vault Storage SAS yang terkait dengan akun ini akan dihapus.
+Memisahkan Azure Storage Akun 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua Key Vault dikelola Storage definisi SAS yang terkait dengan akun ini akan dihapus.
 
-### Contoh 2: Hapus Kunci Vault yang Azure Storage akun dan semua definisi SAS terkait tanpa konfirmasi pengguna.
+### Contoh 2: Hapus akun Azure Storage yang dikelola Key Vault dan semua definisi SAS terkait tanpa konfirmasi pengguna.
 ```
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -Force -Confirm:$False
 ```
 
-Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua definisi Key Vault Storage SAS yang terkait dengan akun ini akan dihapus.
+Memisahkan Azure Storage Akun 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua Key Vault dikelola Storage definisi SAS yang terkait dengan akun ini akan dihapus.
 
 ## PARAMETERS
 
-### -Nama Akun
-Nama akun penyimpanan terkelola Key Vault. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan tertentu.
+### -AccountName
+Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
 
 ```yaml
 Type: String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -75,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, cmdlet akan mengembalikan akun penyimpanan terkelola yang dihapus.
+Jika sakelar ini ditentukan, cmdlet mengembalikan akun penyimpanan terkelola yang dihapus.
 
 ```yaml
 Type: SwitchParameter
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -168,5 +168,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Azure PowerShell cmdlet Key Vault](/powershell/module/az.keyvault/)
+[cmdlet Azure PowerShell Key Vault](/powershell/module/az.keyvault/)
 

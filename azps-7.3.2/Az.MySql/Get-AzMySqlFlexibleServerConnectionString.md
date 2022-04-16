@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerConnectionString.md
-ms.openlocfilehash: 71843ffd0956f2cae133de89f1633d464ef59d69
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1567e3b69f74a769c3187a391f1c9a169dc2c113
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198423"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142488077"
 ---
 # Get-AzMySqlFlexibleServerConnectionString
 
 ## SYNOPSIS
-Dapatkan string koneksi menurut penyedia koneksi klien.
+Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzMySqlFlexibleServerConnectionString -Client <String> -InputObject <IMySqlI
 ```
 
 ## DESCRIPTION
-Dapatkan string koneksi menurut penyedia koneksi klien.
+Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ PS C:\> Get-AzMySqlFlexibleServerConnectionString -Client Python -ResourceGroupN
 cnx = mysql.connector.connect(user=mysql_user, password="{your_password}", host="mysql-test.mysql.database.azure.com", port=3306, database="{your_database}", ssl_ca="{ca-cert filename}", ssl_disabled=False)
 ```
 
-Cmdlet ini memperlihatkan string koneksi klien berdasarkan nama server.
+Cmdlet ini memperlihatkan string koneksi klien menurut nama server.
 
 ### Contoh 2: Dapatkan string koneksi server MySql menurut identitas
 ```powershell
@@ -52,11 +55,11 @@ PS C:\> Get-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -Server
 $con=mysqli_init(); mysqli_real_connect($con, "mysql-test.mysql.database.azure.com", "mysql_test", {your_password}, {your_database}, 3306);
 ```
 
-Cmdlet ini mendapatkan string koneksi server MySql menurut identitas.
+Cmdlet ini mendapatkan string koneksi server MySql berdasarkan identitas.
 
 ## PARAMETERS
 
-### -Client
+### -Klien
 Penyedia koneksi klien.
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Server untuk string koneksi.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -174,7 +177,7 @@ INPUTOBJECT <IMySqlIdentity>: Server untuk string koneksi.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

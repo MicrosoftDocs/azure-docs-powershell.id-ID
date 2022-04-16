@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Add-AzApplicationGatewayRequestRoutingRule.md
 ms.openlocfilehash: 32695204a153d04643063f4d991b577e619edcea
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427012"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493128"
 ---
 # Add-AzApplicationGatewayRequestRoutingRule
 
@@ -49,7 +49,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $Appgw = Add-AzureApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw -Name "Rule01" -RuleType Basic -BackendHttpSettings $Setting -HttpListener $Listener -BackendAddressPool $Pool
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw tertentu.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 Perintah kedua menambahkan aturan perutean permintaan ke gateway aplikasi.
 
 ## PARAMETERS
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPool
-Menentukan objek gabungan alamat ujung belakang gateway aplikasi.
+Menentukan objek kumpulan alamat ujung belakang gateway aplikasi.
 
 ```yaml
 Type: PSApplicationGatewayBackendAddressPool
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Menentukan ID gabungan alamat ujung belakang gateway aplikasi.
+Menentukan ID kumpulan alamat back-end gateway aplikasi.
 
 ```yaml
 Type: String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -144,7 +144,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListener
+### -HttpListener
 Menentukan objek pendengar HTTP gateway aplikasi.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpListenerId
+### -HttpListenerId
 Menentukan ID pendengar HTTP gateway aplikasi.
 
 ```yaml
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aturan perutean permintaan yang menambahkan cmdlet ini.
+Menentukan nama aturan perutean permintaan yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -189,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RedirectConfiguration
-Application gateway RedirectConfiguration
+### -Konfigurasi Ulang
+Konfigurasi Ulang gateway aplikasi
 
 ```yaml
 Type: PSApplicationGatewayRedirectConfiguration
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID gateway aplikasi RedirectConfiguration
+ID konfigurasi ulang gateway aplikasi
 
 ```yaml
 Type: String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

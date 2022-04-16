@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlVirtualNetworkRule.md
-ms.openlocfilehash: f0f6e086986747919f2d902a254c6d85fb8103f7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 872582f0d3d9080b4cc3a9808aa9a2468208f9c1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007064"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142485467"
 ---
 # Get-AzPostgreSqlVirtualNetworkRule
 
 ## SYNOPSIS
 Mendapatkan aturan jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzPostgreSqlVirtualNetworkRule -ResourceGroupName <String> -ServerName <Stri
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzPostgreSqlVirtualNetworkRule -Name <String> -ResourceGroupName <String> -ServerName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
@@ -42,7 +45,7 @@ Mendapatkan aturan jaringan virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua Aturan Jaringan Virtual di server PostgreSql yang ditentukan
+### Contoh 1: Mencantumkan semua Aturan Virtual Network di server PostgreSql tertentu
 ```powershell
 PS C:\> Get-AzPostgreSqlVirtualNetworkRule -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer 
 
@@ -51,9 +54,9 @@ Name Type
 vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini mencantumkan semua Aturan Jaringan Virtual di server PostgreSql yang ditentukan.
+Cmdlet ini mencantumkan semua Aturan Virtual Network di server PostgreSql tertentu.
 
-### Contoh 2: Dapatkan Aturan Jaringan Virtual menurut nama
+### Contoh 2: Dapatkan Aturan Virtual Network menurut nama
 ```powershell
 PS C:\> Get-AzPostgreSqlVirtualNetworkRule -Name vnet -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer
 
@@ -62,9 +65,9 @@ Name Type
 vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini mendapatkan Aturan Jaringan Virtual menurut nama.
+Cmdlet ini mendapatkan Virtual Network Aturan berdasarkan nama.
 
-### Contoh 3: Dapatkan Aturan Jaringan Virtual menurut identitas
+### Contoh 3: Dapatkan Aturan Virtual Network menurut identitas
 ```powershell
 PS C:\> $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PostgreSqlTestRG/providers/Microsoft.DBforPostgreSQL/servers/PostgreSqlTestServer/virtualNetworkRules/vnet"
 PS C:\> Get-AzPostgreSqlVirtualNetworkRule -InputObject $ID
@@ -74,7 +77,7 @@ Name Type
 vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini mendapatkan Aturan Jaringan Virtual berdasarkan identitas.
+Cmdlet ini mendapatkan Virtual Network Aturan berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -210,7 +213,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

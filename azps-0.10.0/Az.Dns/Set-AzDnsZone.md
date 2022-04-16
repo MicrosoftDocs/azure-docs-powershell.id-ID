@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Set-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Set-AzDnsZone.md
 ms.openlocfilehash: 9b6d84f9007a872db0e41efa78d8e16d7269eb02
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414294"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142499435"
 ---
 # Set-AzDnsZone
 
@@ -26,20 +26,20 @@ Set-AzDnsZone -Name <String> -ResourceGroupName <String> [-Tag <Hashtable>] [-Wh
  [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Set-AzDnsZone -Zone <DnsZone> [-Overwrite] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Cmdlet **Set-AzDnsZone** memperbarui zona DNS tertentu di layanan DNS Azure.
-Cmdlet ini tidak memperbarui kumpulan data dalam zona.
+Cmdlet ini tidak memperbarui kumpulan catatan dalam zona.
 
-Anda dapat melewati **objek DnsZone** sebagai parameter atau dengan menggunakan operator saluran, atau Anda juga dapat menentukan parameter *ZoneName* *dan ResourceGroupName* .
+Anda bisa melewati objek **DnsZone** sebagai parameter atau dengan menggunakan operator pipeline, atau anda bisa menentukan parameter *ZoneName* dan *ResourceGroupName* .
 
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
-Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan serentak.
+Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui pipeline), zona DNS tidak diperbarui jika telah diubah di AZURE DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -50,23 +50,23 @@ PS C:\> $Zone.Tags = @(@{"Name"="Dept"; "Value"="Electrical"})
 PS C:\> Set-AzDnsZone -Zone $Zone
 ```
 
-Perintah pertama mendapatkan zona bernama myzone.com grup sumber daya yang ditentukan, lalu menyimpannya dalam $Zone sumber daya.
+Perintah pertama mendapatkan zona bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone.
 
 Perintah kedua memperbarui tag untuk $Zone.
 
-Perintah akhir akan melakukan perubahan.
+Perintah terakhir melakukan perubahan.
 
 ### Contoh 2: Memperbarui tag untuk zona
 ```
 PS C:\>Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myzone.com" -Tag @(@{"Name"="Dept"; "Value"="Electrical"})
 ```
 
-Perintah ini memperbarui tag untuk zona bernama myzone.com tanpa terlebih dahulu mendapatkan zona tersebut secara eksplisit.
+Perintah ini memperbarui tag untuk zona bernama myzone.com tanpa terlebih dahulu secara eksplisit mendapatkan zona.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama zona DNS untuk diperbarui.
+Menentukan nama zona DNS yang akan diperbarui.
 
 ```yaml
 Type: String
@@ -80,8 +80,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan serentak.
+### -Timpa
+Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui pipeline), zona DNS tidak diperbarui jika telah diubah di AZURE DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Menentukan nama grup sumber daya yang berisi zona untuk diperbarui.
 Anda juga harus menentukan parameter ZoneName.
 
-Alternatifnya, Anda dapat menentukan zona menggunakan objek DnsZone dengan *parameter Zona* atau saluran.
+Atau, Anda dapat menentukan zona menggunakan objek DnsZone dengan parameter *Zona* atau pipeline.
 
 ```yaml
 Type: String
@@ -130,10 +130,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan zona DNS yang akan diperbarui.
+### -Zona
+Menentukan zona DNS untuk diperbarui.
 
-Alternatifnya, Anda bisa menentukan zona menggunakan parameter *ZoneName* *dan ResourceGroupName* .
+Atau, Anda dapat menentukan zona menggunakan parameter *ZoneName* dan *ResourceGroupName* .
 
 ```yaml
 Type: DnsZone
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -178,12 +178,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsZone
-Anda dapat pipa objek DnsZone ke cmdlet ini.
+Anda dapat menyalurkan objek DnsZone ke cmdlet ini.
 
 ## OUTPUTS
 
@@ -192,10 +192,10 @@ Cmdlet ini mengembalikan objek DnsZone yang mewakili zona DNS yang diperbarui de
 
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
+Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 
-Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
-Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
+Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## RELATED LINKS
 
@@ -203,4 +203,4 @@ Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda
 
 [New-AzDnsZone](./New-AzDnsZone.md)
 
-[Remove-AzDnsZone](./Remove-AzDnsZone.md)
+[Hapus-AzDnsZone](./Remove-AzDnsZone.md)

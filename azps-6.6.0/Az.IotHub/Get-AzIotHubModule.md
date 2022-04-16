@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModule.md
 ms.openlocfilehash: 0a8f19efda0d5ef74dc4da6fecf075e83b9a3779
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139975587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473659"
 ---
 # Get-AzIotHubModule
 
 ## SYNOPSIS
-Dapatkan detail modul perangkat IoT atau modul daftar yang ada pada perangkat IoT dalam Hub IoT.
+Dapatkan detail modul perangkat IoT atau modul daftar yang terletak di perangkat IoT dalam IoT Hub.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubmodule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzIotHubModule [-ResourceId] <String> [-DeviceId] <String> [-ModuleId <Strin
 ```
 
 ## DESCRIPTION
-Dapatkan detail modul perangkat IoT atau modul daftar yang ada pada perangkat IoT dalam Hub IoT.
+Dapatkan detail modul perangkat IoT atau modul daftar yang terletak di perangkat IoT dalam IoT Hub.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Authentication             : Sas
 ManagedBy                  :
 ```
 
-Dapatkan detail modul perangkat IoT dalam Hub IoT.
+Dapatkan detail modul perangkat IoT dalam IoT Hub.
 
 ### Contoh 2
 ```powershell
@@ -73,7 +73,7 @@ module1   myDevice1 Disconnected     Sas            1/1/0001 12:00:00 AM
 module2   myDevice1 Disconnected     Sas            1/1/0001 12:00:00 AM
 ```
 
-Memperlihatkan semua modul yang berada pada perangkat IoT dalam Hub IoT.
+Tampilkan semua modul yang terletak di perangkat IoT dalam IoT Hub.
 
 ## PARAMETERS
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

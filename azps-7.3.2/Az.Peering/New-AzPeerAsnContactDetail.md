@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeerAsnContactDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeerAsnContactDetail.md
-ms.openlocfilehash: 8eaaa897cc38b1d51f0548b0ecaf43ac6ee64af7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 568a2fd7f64b2e5e0896c419b7f58d601b622cf0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371562"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142485881"
 ---
 # New-AzPeerAsnContactDetail
 
 ## SYNOPSIS
-Membuat detail kontak dalam memori untuk PeerAsn. 
+Membuat detail kontak memori untuk PeerAsn. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.peering/new-azpeerasncontactdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzPeerAsnContactDetail -Role <String> -Email <String> [-Phone <String>]
 ```
 
 ## DESCRIPTION
-Membuat detail kontak PeerAsn dalam memori.
+Buat detail kontak PeerAsn dalam memori.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ PS C:\> $customerContact = New-AzPeerAsnContactDetail -Role Noc -Email "noc@cont
 PS C:\> New-AzPeerAsn -Name $name -PeerName "Contoso Networks Limited" -PeerAsn 65000 -ContactDetail $nocContact,$customerContact
 ```
 
-Diperlukan peran dan email. Telepon ini opsional. Telepon mendukung +-() atau spasi. PeerAsn harus menyertakan setidaknya satu detail kontak dari tipe "Noc"
+Peran dan email diperlukan. Telepon bersifat opsional. Telepon mendukung +-() atau spasi. PeerAsn harus menyertakan setidaknya satu detail kontak dari tipe "Noc"
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-Alamat Email yang digunakan untuk menghubungi jika masalah biasanya terjadi di Pusat Operasi Jaringan
+Alamat Email yang digunakan untuk menghubungi jika masalah muncul biasanya pusat operasi jaringan
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Telepon
-Telepon digunakan untuk menghubungi jika masalah biasanya terjadi di Pusat Operasi Jaringan
+Telepon digunakan untuk menghubungi jika masalah muncul biasanya pusat operasi jaringan
 
 ```yaml
 Type: System.String
@@ -102,11 +105,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

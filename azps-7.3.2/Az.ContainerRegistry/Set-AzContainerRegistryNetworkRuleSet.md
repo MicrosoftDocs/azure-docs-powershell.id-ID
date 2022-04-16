@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Set-AzContainerRegistryNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Set-AzContainerRegistryNetworkRuleSet.md
-ms.openlocfilehash: 7ba03faae89f264053c17f4334f884c792b1e27b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c4e4cf368f82bdc6ea1ba9de5ae1ef70ecd1f8f5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557172"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473461"
 ---
 # Set-AzContainerRegistryNetworkRuleSet
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan aturan jaringan. Kumpulan aturan hanya bisa diterapkan ke registri "Premium".
+Membuat atau memperbarui rangkaian aturan jaringan. Kumpulan aturan hanya dapat diterapkan ke registri "Premium".
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/set-azcontainerregistrynetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzContainerRegistryNetworkRuleSet [-DefaultAction <String>] [-NetworkRule <I
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan aturan jaringan
+Membuat atau memperbarui rangkaian aturan jaringan
 
 ## EXAMPLES
 
@@ -44,12 +47,12 @@ PS C:\> $rule = New-AzContainerRegistryNetworkRule -VirtualNetworkRule -VirtualN
 PS C:\> $set = Set-AzContainerRegistryNetworkRuleSet -DefaultAction "Allow" -NetworkRule $rule
 ```
 
-Membuat kumpulan aturan jaringan baru.
+Buat kumpulan aturan jaringan baru.
 
 ## PARAMETERS
 
 ### -DefaultAction
-Tindakan default, mungkin 'Perbolehkan' atau 'Tolak'
+Tindakan default, bisa berupa 'Izinkan' atau 'Tolak'
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

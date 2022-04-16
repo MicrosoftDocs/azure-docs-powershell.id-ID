@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultManagedStorageSasDefinition.md
 ms.openlocfilehash: 48b5182efd368b0950313ac4d2c7b2e23f2948fd
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415448"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493567"
 ---
 # Set-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Mengatur definisi Shared Access Signature (SAS) dengan Key Vault untuk Key Vault tertentu yang dikelola Azure Storage Tersebut.
+Mengatur definisi Tanda Tangan Akses Bersama (SAS) dengan Key Vault untuk akun Azure Storage yang dikelola Key Vault tertentu.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ Set-AzKeyVaultManagedStorageSasDefinition [-VaultName] <String> [-AccountName] <
  [-Confirm] [<CommonParameters>]
 ```
 
-### AdhocServiceQueueSas
+### Antrean AdhocServiceSas
 ```
 Set-AzKeyVaultManagedStorageSasDefinition [-VaultName] <String> [-AccountName] <String> [-Name] <String>
  [-Disable] [-Tag <Hashtable>] [-TargetStorageVersion <String>] [-Protocol <String>]
@@ -139,24 +139,24 @@ Set-AzKeyVaultManagedStorageSasDefinition [-VaultName] <String> [-AccountName] <
 ```
 
 ## DESCRIPTION
-Mengatur definisi Shared Access Signature (SAS) dengan Key Vault tertentu yang dikelola Azure Storage Anda. Fungsi ini juga menetapkan rahasia yang dapat digunakan untuk mendapatkan token SAS per definisi SAS ini.
-Token SAS dihasilkan menggunakan parameter ini dan kunci aktif Key Vault yang dikelola Azure Storage Mereka.
+Mengatur definisi Tanda Tangan Akses Bersama (SAS) dengan Key Vault akun Azure Storage yang dikelola. Ini juga mengatur rahasia yang dapat digunakan untuk mendapatkan token SAS per definisi SAS ini.
+Token SAS dibuat menggunakan parameter ini dan kunci aktif akun Azure Storage yang dikelola Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1 : Mengatur layanan ad hoc definisi Blob sas
+### Contoh 1 : Mengatur layanan ad hoc Definisi blob sas
 ```
 PS C:\> Set-AzKeyVaultManagedStorageSasDefinition -Blob 'blob1' -Container 'container1' -VaultName 'vault1' -AccountName 'account1' -Name 'sas1' -ValidityPeriod ([System.Timespan]::FromDays(30)) -Permission Read,Add -SharedAccessHeader CacheControl,ContentDisposition -Protocol HttpsOnly -IPAddressOrRange '168.1.5.60-168.1.5.70'
 ```
 
-Mengatur definisi blob definisi blob layanan ad hoc 'sas1' dengan akun penyimpanan terkelola key vault 'account1' di vault 'vault1'.
+Mengatur layanan ad hoc blob sas definition 'sas1' dengan kunci vault managed storage account 'account1' di vault 'vault1'.
 
-### Contoh 2 : Mengatur definisi akun ad hoc
+### Contoh 2 : Mengatur definisi sas akun ad hoc
 ```
 PS C:\> Set-AzKeyVaultManagedStorageSasDefinition -Service Blob,File -ResourceType Container,Service -VaultName 'vault1' -AccountName 'account1' -Name 'sas1' -Protocol HttpsOrHttp -IPAddressOrRange '168.1.5.60' -ValidityPeriod ([System.Timespan]::FromDays(30)) -Permission Read,Add
 ```
 
-Mengatur definisi blob ad hoc 'sas1' dengan akun penyimpanan terkelola key vault 'account1' di vault 'vault1'.
+Mengatur definisi ad hoc blob sas 'sas1' dengan akun penyimpanan terkelola kunci 'account1' di vault 'vault1'.
 
 ### Contoh 3 : Mengatur definisi sas menggunakan hashtable
 ```
@@ -164,12 +164,12 @@ PS C:\> $parameters = @{"sasType"="blob";"signedVersion"="2016-05-31";"signedPro
 PS C:\> Set-AzKeyVaultManagedStorageSasDefinition -VaultName vault1 -AccountName account1 -Name sas1 -Parameter $parameters
 ```
 
-Mengatur definisi blob ad hoc 'sas1' dengan akun penyimpanan terkelola key vault 'account1' di vault 'vault1' menggunakan hashtable.
+Mengatur definisi ad hoc blob sas 'sas1' dengan akun penyimpanan terkelola kunci 'account1' dalam vault 'vault1' menggunakan hashtable.
 
 ## PARAMETERS
 
-### -Nama Akun
-Nama akun penyimpanan terkelola Key Vault. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih dan nama akun penyimpanan tertentu.
+### -AccountName
+Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
 
 ```yaml
 Type: String
@@ -213,7 +213,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
+### -Kontainer
 Nama Kontainer
 
 ```yaml
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -243,7 +243,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
+### -Non-fungsikan
 Menonaktifkan penggunaan definisi sas untuk generasi token sas.
 
 ```yaml
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndPartitionKey
-Kunci Partisi Akhir
+Tombol Akhiri Partisi
 
 ```yaml
 Type: String
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddressOrRange
-IP, atau ACL rentang IP (daftar kontrol akses) dari permintaan yang akan diterima oleh Azure Storage.
+IP, atau IP range ACL (daftar kontrol akses) permintaan yang akan diterima oleh Azure Storage.
 
 ```yaml
 Type: String
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Storage sas definition name. Cmdlet membangun FQDN dari definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
+Storage nama definisi sas. Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
 
 ```yaml
 Type: String
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter definisi sas yang akan digunakan untuk membuat token sas.
+Parameter definisi Sas yang akan digunakan untuk membuat token sas.
 
 ```yaml
 Type: Hashtable
@@ -333,8 +333,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur ke file awan untuk membuat token sas terhadap.
+### -Jalur
+Jalur ke file cloud untuk menghasilkan token sas.
 
 ```yaml
 Type: String
@@ -348,8 +348,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
-Izin. Nilai menyertakan 'Kueri','Tambahkan','Perbarui','Proses'
+### -Izin
+Izin. Nilai menyertakan 'Kueri','Tambahkan','Pembaruan','Proses'
 
 ```yaml
 Type: String[]
@@ -379,7 +379,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Protokol dapat digunakan dalam permintaan dengan token SAS.
 
 ```yaml
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya yang berlaku untuk token SAS ini. Nilai meliputi 'Layanan','Wadah','Objek'
+Tipe sumber daya yang berlaku untuk token SAS ini. Nilai mencakup 'Layanan','Kontainer','Objek'
 
 ```yaml
 Type: String[]
@@ -427,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -Layanan
-Tipe layanan dengan token SAS ini berlaku. Nilai meliputi 'Blob','File','Antrean','Tabel'
+Jenis layanan yang berlaku untuk token SAS ini. Nilai mencakup 'Blob','File','Antrean','Tabel'
 
 ```yaml
 Type: String[]
@@ -536,7 +536,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetStorageVersion
-Menentukan versi layanan penyimpanan bertanda tangan untuk digunakan pada permintaan autentikasi yang dibuat dengan token SAS.
+Menentukan versi layanan penyimpanan yang ditandatangani untuk digunakan untuk mengautentikasi permintaan yang dibuat dengan token SAS.
 
 ```yaml
 Type: String
@@ -551,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### -ValidityPeriod
-Periode validitas yang akan digunakan untuk mengatur waktu kedaluwarsa token sas mulai saat token tersebut dibuat
+Periode validitas yang akan terbiasa untuk mengatur waktu kedaluwarsa token sas dari waktu yang dihasilkan
 
 ```yaml
 Type: TimeSpan
@@ -566,8 +566,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: String
@@ -582,7 +582,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -598,7 +598,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -613,11 +613,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -628,4 +628,4 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Azure...RM.â€€Key...Vault](/powershell/module/Az.keyvault/)
+[Azureâ€‹RM.â€‹Keyâ€‹Vault](/powershell/module/Az.keyvault/)

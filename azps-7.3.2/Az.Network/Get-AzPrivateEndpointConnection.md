@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 549bae0145149ddfc6e3d70ca437968862575803
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0b6aa610abfc3976f0c40ead7b8014473b666ba8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386079"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142487393"
 ---
 # Get-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 Mendapatkan sumber daya koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzPrivateEndpointConnection [-Description <String>] [-Name <String>] -Resour
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPrivateEndpointConnection** akan mengambil sumber daya koneksi titik akhir privat.
+Cmdlet **Get-AzPrivateEndpointConnection** mengambil sumber daya koneksi titik akhir pribadi.
 
 ## EXAMPLES
 
@@ -48,14 +51,14 @@ Cmdlet **Get-AzPrivateEndpointConnection** akan mengambil sumber daya koneksi ti
 Get-AzPrivateEndpointConnection -PrivateLinkResourceId '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/TestResourceGroup/providers/Microsoft.Sql/servers/mySql'
 ```
 
-Contoh ini mengembalikan daftar semua koneksi titik akhir privat milik sql server yang bernama Mysql.
+Contoh ini mengembalikan daftar semua koneksi titik akhir privat milik server sql bernama Mysql.
 
 ### Contoh 2
 ```
 Get-AzPrivateEndpointConnection -Name MyPrivateEndpointConnection1 -ResourceGroupName TestResourceGroup -ServiceName MyPrivateLinkService -PrivateLinkResourceType 'Microsoft.Network/privateLinkServices'
 ```
 
-Contoh ini mendapatkan koneksi titik akhir privat bernama MyPrivateEndpointConnection1 milik layanan tautan pribadi yang bernama MyPrivateLinkService
+Contoh ini mendapatkan koneksi titik akhir pribadi bernama MyPrivateEndpointConnection1 milik layanan tautan privat bernama MyPrivateLinkService
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Id manajer sumber daya Azure dari sumber daya tautan privat yang terkait dengan koneksi titik akhir privat.
+Id manajer sumber daya Azure dari sumber daya tautan privat yang menjadi milik koneksi titik akhir privat.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceType
-Tipe sumber daya tautan pribadi.
+Tipe sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari koneksi titik akhir privat.
+Nama grup sumber daya koneksi titik akhir privat.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama layanan tempat koneksi titik akhir privat dimiliki.
+Nama layanan tempat koneksi titik akhir privat berada.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,9 +198,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Approve-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
+[Setujui-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
 
-[Deny-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
+[Tolak-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
 
 [Remove-AzPrivateEndpointConnection](./Remove-AzPrivateEndpointConnection.md)
 

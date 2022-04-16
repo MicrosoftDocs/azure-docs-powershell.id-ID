@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzDelegation.md
-ms.openlocfilehash: 0f75366ae13ab3065e0473acc1f8b8b434263c6d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 888f620d24fb458e6808ed40a6ede1849a32704c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179208"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142487699"
 ---
 # Add-AzDelegation
 
 ## SYNOPSIS
 Menambahkan delegasi ke subnet.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> $subnet = Add-AzDelegation -Name "myDelegation" -ServiceName "Microsoft.
 PS C:\> Set-AzVirtualNetwork $vnet
 ```
 
-Perintah pertama mengambil jaringan virtual tempat subnet berada. Perintah kedua memisahkan subnet yang menarik, yaitu subnet yang ingin Anda delegasikan. Perintah ketiga menambahkan delegasi ke subnet. Contoh khusus ini akan berguna ketika Anda ingin mengaktifkan SQL untuk membuat titik akhir antarmuka dalam subnet ini. Perintah akhir mengirimkan subnet yang diperbarui ke server untuk benar-benar memperbarui subnet Anda.
+Perintah pertama mengambil jaringan virtual tempat subnet berada. Perintah kedua mengisolasi subnet minat - yang ingin Anda delegasikan. Perintah ketiga menambahkan delegasi ke subnet. Contoh ini akan berguna ketika Anda ingin mengaktifkan SQL untuk membuat titik akhir antarmuka dalam subnet ini. Perintah terakhir mengirim subnet yang diperbarui ke server untuk benar-benar memperbarui subnet Anda.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

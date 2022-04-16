@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerService.md
-ms.openlocfilehash: 24b9092fc892b6c724a863549f34b8256da6ae9d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 35e9871474ac3cd31a8941c6aa81883bc88e0c67
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394498"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142471715"
 ---
 # Remove-AzDeploymentManagerService
 
 ## SYNOPSIS
-Menghapus layanan. Semua unit layanan yang dibuat di bawah layanan harus dihapus sebelum menghapus layanan.
+Menghapus layanan.. Semua unit layanan yang dibuat di bawah layanan perlu dihapus sebelum menghapus layanan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Remove-AzDeploymentManagerService [-InputObject] <PSServiceResource> [-PassThru]
 
 ## DESCRIPTION
 Cmdlet **Remove-AzDeploymentManagerService** menghapus layanan di bawah topologi layanan.
-Tentukan layanan berdasarkan namanya, topologi layanan yang ada di dalamnya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek Layanan atau ResourceId.
+Tentukan layanan berdasarkan namanya, topologi layanan di dalamnya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Layanan atau ResourceId.
 
 ## EXAMPLES
 
@@ -61,21 +64,21 @@ Tentukan layanan berdasarkan namanya, topologi layanan yang ada di dalamnya dan 
 PS C:\> Remove-AzDeploymentManagerService -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -Name ContosoService1
 ```
 
-Perintah ini menghapus layanan yang bernama ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini menghapus layanan bernama ContosoService1 dalam topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
 
 ### Contoh 2: Hapus layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Remove-AzDeploymentManagerService -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology/services/ContosoService1"
 ```
 
-Perintah ini menghapus layanan yang bernama ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini menghapus layanan bernama ContosoService1 dalam topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
 
-### Contoh 3: Hapus layanan menggunakan objek layanan.
+### Contoh 3: Menghapus layanan menggunakan objek layanan.
 ```powershell
 PS C:\> Remove-AzDeploymentManagerService -InputObject $serviceObject
 ```
 
-Perintah ini menghapus layanan yang namanya, nama topologi layanan, dan ResourceGroup sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName dari $serviceObject, secara berurutan.
+Perintah ini menghapus layanan yang namanya, nama topologi layanan dan ResourceGroup masing-masing cocok dengan properti Name, ServiceTopologyName dan ResourceGroupName $serviceObject.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyObject
-Objek topologi layanan tempat layanan akan dibuat.
+Objek topologi layanan tempat layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

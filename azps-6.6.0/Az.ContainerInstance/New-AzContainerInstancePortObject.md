@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstancePortObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstancePortObject.md
 ms.openlocfilehash: b3af6d94b5b712d5a76cc43ebc72fc01531a30cd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140109305"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142478159"
 ---
 # New-AzContainerInstancePortObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140109305"
 Membuat objek dalam memori untuk ContainerPort
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceportobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceportobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Membuat objek dalam memori untuk ContainerPort
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan port 8000 yang diekspos pada wadah dengan protokol TCP
+### Contoh 1: Tentukan port 8000 yang diekspos pada instance kontainer dengan protokol TCP
 ```powershell
 PS C:\> New-AzContainerInstancePortObject -Port 8000 -Protocol TCP
 
@@ -40,12 +40,12 @@ Port Protocol
 8000  TCP
 ```
 
-Perintah ini menentukan port 8000 yang diekspos pada wadah dengan protokol TCP.
+Perintah ini menentukan port 8000 yang diekspos pada instance container dengan protokol TCP.
 
 ## PARAMETERS
 
 ### -Port
-Nomor port yang diekspos dalam grup wadah.
+Nomor port yang diekspos dalam grup kontainer.
 
 ```yaml
 Type: System.Int32
@@ -59,8 +59,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Protokol yang berkaitan dengan port.
+### -Protokol
+Protokol yang terkait dengan porta.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
