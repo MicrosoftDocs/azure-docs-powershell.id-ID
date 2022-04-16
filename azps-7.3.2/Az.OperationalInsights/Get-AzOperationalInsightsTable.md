@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsTable.md
-ms.openlocfilehash: da99c6bded806f3de1deb9566207e7b1286e93b8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3d24e2d56b4eccc4260548ab9e33ad9360c8108e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371643"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486529"
 ---
 # Get-AzOperationalInsightsTable
 
 ## SYNOPSIS
-Dapatkan atau buat daftar tabel untuk ruang kerja.
+Dapatkan atau cantumkan tabel untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightstable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzOperationalInsightsTable [-ResourceGroupName] <String> [-WorkspaceName] <S
 ```
 
 ## DESCRIPTION
-Dapatkan atau  list tables for a workspace, list tables under workspace when "-TableName" was not provided.
+Dapatkan atau cantumkan tabel untuk ruang kerja, daftar tabel di bawah ruang kerja saat "-TableName" tidak disediakan.
 
 ## EXAMPLES
 
@@ -34,14 +37,14 @@ Dapatkan atau  list tables for a workspace, list tables under workspace when "-T
 PS C:\>Get-AzOperationalInsightsTable -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini akan mendapatkan semua tabel yang terkait dengan ruang kerja.
+Perintah ini mendapatkan semua tabel yang terkait dengan ruang kerja.
 
-### Contoh 2: Mendapatkan tabel tertentu berdasarkan nama
+### Contoh 2: Mendapatkan tabel tertentu menurut nama
 ```
 PS C:\>Get-AzOperationalInsightsTable -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -tableName "ContosoSavedTableName"
 ```
 
-Perintah ini mendapatkan tabel tertentu berdasarkan namanya.
+Perintah ini mendapatkan tabel tertentu menurut namanya.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja yang berisi tabel.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

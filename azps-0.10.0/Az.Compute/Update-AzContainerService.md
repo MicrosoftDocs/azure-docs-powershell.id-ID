@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Update-AzContainerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Update-AzContainerService.md
 ms.openlocfilehash: 1a15486b3e24dec3af66cb98391bd8322c28d2e6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414344"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142498643"
 ---
 # Update-AzContainerService
 
 ## SYNOPSIS
-Memperbarui status layanan wadah.
+Memperbarui status layanan kontainer.
 
 ## SYNTAX
 
@@ -36,21 +36,21 @@ Cmdlet **Update-AzContainerService** memperbarui status layanan kontainer agar s
 PS C:\> Get-AzContainerService -ResourceGroupName "ResourceGroup17" -Name "CSResourceGroup17" | Remove-AzContainerServiceAgentPoolProfile -Name "AgentPool01" | Add-AzContainerServiceAgentPoolProfile -Name "AgentPool01" -VmSize "Standard_A1" -DnsPrefix "APResourceGroup17" -Count 2 | Update-AzContainerService -ResourceGroupName "ResourceGroup17" -Name "CSResourceGroup17"
 ```
 
-Perintah ini mendapatkan layanan kontainer bernama CSResourceGroup17 menggunakan cmdlet Get-AzContainerService cmdlet.
-Perintah melewati objek itu ke Remove-AzContainerServiceAgentPoolProfile cmdlet dengan menggunakan operator pipeline.
+Perintah ini mendapatkan layanan kontainer bernama CSResourceGroup17 menggunakan cmdlet Get-AzContainerService.
+Perintah melewati objek tersebut ke cmdlet Remove-AzContainerServiceAgentPoolProfile menggunakan operator pipeline.
 
-**Remove-AzContainerServiceAgentPoolProfile** menghapus profil yang bernama AgentPool01.
-Perintah melewati hasil ke cmdlet Add-AzContainerServiceAgentPoolProfile cmdlet.
+**Remove-AzContainerServiceAgentPoolProfile** menghapus profil bernama AgentPool01.
+Perintah melewati hasil ke cmdlet Add-AzContainerServiceAgentPoolProfile.
 
 **Add-AzContainerServiceAgentPoolProfile** menambahkan profil yang memiliki nama AgentPool01, dan memiliki properti yang ditentukan.
-Perintah itu menyampaikan hasilnya ke cmdlet saat ini.
+Perintah melewati hasil ke cmdlet saat ini.
 
-Cmdlet saat ini memperbarui layanan wadah untuk mencerminkan perubahan yang dibuat dalam perintah ini.
+Cmdlet saat ini memperbarui layanan kontainer untuk mencerminkan perubahan yang dibuat dalam perintah ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerService
-Menentukan objek **ContainerService lokal** yang berisi perubahan.
+Menentukan objek **ContainerService** lokal yang berisi perubahan.
 
 ```yaml
 Type: PSContainerService
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
 
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -157,12 +157,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### ContainerService
-Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari saluran
+Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari pipeline
 
 ## OUTPUTS
 
@@ -178,7 +178,7 @@ Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari saluran
 
 [New-AzContainerService](./New-AzContainerService.md)
 
-[Remove-AzContainerService](./Remove-AzContainerService.md)
+[Hapus-AzContainerService](./Remove-AzContainerService.md)
 
 [Remove-AzContainerServiceAgentPoolProfile](./Remove-AzContainerServiceAgentPoolProfile.md)
 

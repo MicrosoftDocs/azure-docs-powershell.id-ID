@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/resta
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restart-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restart-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 014ca05da5e3242a8f3222a08bd6f5fce3352183
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 171b512a8517b313081007c845440200561536d9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371430"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142485377"
 ---
 # Restart-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
 Memulai ulang server.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/restart-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Restart-AzPostgreSqlFlexibleServer -Name <String> -ResourceGroupName <String> [-
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Mulai ulang
+### Restart
 ```
 Restart-AzPostgreSqlFlexibleServer -Name <String> -ResourceGroupName <String> -Parameter <IRestartParameter>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### RestartViaIdentity
+### Mulai UlangIdentitas
 ```
 Restart-AzPostgreSqlFlexibleServer -InputObject <IPostgreSqlIdentity> -Parameter <IRestartParameter>
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -51,14 +54,14 @@ Memulai ulang server.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai ulang server dengan nama sumber daya
+### Contoh 1: Hidupkan ulang server menurut nama sumber daya
 ```powershell
 PS C:\> Restart-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTest -Name postgresql-test
 ```
 
 Mulai ulang server menurut nama
 
-### Contoh 2: Mulai ulang server dengan identitas
+### Contoh 2: Hidupkan ulang server menurut identitas
 ```powershell
 PS C:\> $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.DBForPostgreSql/flexibleServers/postgresql-test/restart"
 PS C:\> Restart-AzPostgreSqlFlexibleServer -InputObject $ID
@@ -66,14 +69,14 @@ PS C:\> Restart-AzPostgreSqlFlexibleServer -InputObject $ID
 
 Mulai ulang server menurut identitas
 
-### Contoh 3: Mulai ulang server dengan failover yang direncanakan
+### Contoh 3: Hidupkan ulang server dengan failover yang direncanakan
 ```powershell
 PS C:\> Restart-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTest -Name postgresql-test -RestartWithFailover -FailoverMode PlannedFailover
 ```
 
 Mulai ulang server berdasarkan nama dengan failover yang direncanakan
 
-### Contoh 4: Mulai ulang server dengan failover paksa
+### Contoh 4: Hidupkan ulang server dengan failover paksa
 ```powershell
 PS C:\> Restart-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTest -Name postgresql-test -RestartWithFailover -FailoverMode ForcedFailover
 ```
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverMode
-Mode Failover.
+Mode failover.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### -Parameter
 Mewakili parameter mulai ulang server.
-Untuk membuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20210601.IRestartParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -308,14 +311,14 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
-PARAMETER <IRestartParameter>: Mewakili parameter mulai ulang server.
-  - `[FailoverMode <String>]`: Mode Failover.
+PARAMETER <IRestartParameter>: Mewakili parameter restart server.
+  - `[FailoverMode <String>]`: Mode failover.
   - `[RestartWithFailover <Boolean?>]`: Menunjukkan apakah akan memulai ulang server dengan failover.
 
 ## RELATED LINKS

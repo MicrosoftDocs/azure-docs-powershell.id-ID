@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksVersion.md
 ms.openlocfilehash: 5f114be087096232eae76fc6c60739d450efa2fc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140145141"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142480913"
 ---
 # Get-AzAksVersion
 
 ## SYNOPSIS
-Daftar versi yang tersedia untuk membuat kluster Ruang Kerja terkelola.
+Daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/get-azaksversion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzAksVersion -Location <String> [-DefaultProfile <IAzureContextContainer>] [
 ```
 
 ## DESCRIPTION
-Daftar versi yang tersedia untuk membuat kluster Ruang Kerja terkelola.
+Daftar versi yang tersedia untuk membuat kluster Kubernetes terkelola.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk kluster tersebut.
+Lokasi Azure untuk kluster.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -87,11 +87,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

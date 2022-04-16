@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraTable.md
 ms.openlocfilehash: b0fd521130e7b179de0a03a895e07af24a978636
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311171"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477691"
 ---
 # New-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
-Membuat Tabel CosmosDB CosmosDB baru.
+Membuat Tabel CosmosDB Cassandra baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandratable) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-AzCosmosDBCassandraTable -Name <String> [-Throughput <Int32>] [-AutoscaleMax
 ```
 
 ## DESCRIPTION
-Membuat Tabel CosmosDB CosmosDB baru.
+Membuat Tabel CosmosDB Cassandra baru.
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ PS C:\>
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticalStorageTtl
-Analytical Storage TTL.
+TTL Storage analitik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoscaleMaxThroughput
-Nilai Throughput Maksimum jika skala otomatis diaktifkan.
+Nilai Throughput maksimum jika skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyspaceName
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Tabel Excel.
+Nama Tabel Cassandra.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Keyspace Space.
+Objek Keyspace Cassandra.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
@@ -187,8 +187,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Schema
-objek PSCassschema.
+### -Skema
+Objek PSCassandraSchema.
 Gunakan New-AzCosmosDBCassandraSchema untuk membuat objek ini.
 
 ```yaml
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput dari Throughput Keyspace (RU/s).
-Nilai default adalah 400.
+Throughput Cassandra Keyspace (RU/s).
+Nilai defaultnya adalah 400.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -220,9 +220,9 @@ Accept wildcard characters: False
 ```
 
 ### -TtlInSeconds
-Default Ttl dalam hitungan detik.
+Ttl default dalam detik.
 Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
-Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu modifikasi terakhir.
+Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,17 +268,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassschema
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraSchema
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftKeyspaceGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftTableGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraTableGetResults
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ConflictingResourceException
 

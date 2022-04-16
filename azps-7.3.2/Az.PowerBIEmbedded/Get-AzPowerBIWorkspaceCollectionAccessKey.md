@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
-ms.openlocfilehash: 13f990e64991302ac7a31764d12560d01d01fad7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 568afc1b0e344b35bd603f28c1795a83738073c1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142485143"
 ---
 # Get-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
-Dapatkan kunci akses saat ini yang terkait dengan kumpulan Power BI kerja Anda.
+Mendapatkan kunci akses saat ini yang terkait dengan kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspacecollectionaccesskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzPowerBIWorkspaceCollectionAccessKey [-ResourceGroupName] <String> [-Worksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan kunci akses saat ini yang terkait dengan Power BI ruang kerja.
+Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan kunci akses saat ini yang terkait dengan koleksi ruang kerja Power BI.
 
 ## EXAMPLES
 
-### Contoh 1: Get access keys
+### Contoh 1: Dapatkan kunci akses
 ```
 PS C:\>Get-AzPowerBIWorkspaceCollectionAccessKey -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11"
 ```
@@ -40,7 +43,7 @@ Perintah ini mendapatkan kunci akses untuk kumpulan ruang kerja bernama WCN11 da
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang Power BI tempat cmdlet ini beroperasi.
+Menentukan nama kumpulan ruang kerja Power BI tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

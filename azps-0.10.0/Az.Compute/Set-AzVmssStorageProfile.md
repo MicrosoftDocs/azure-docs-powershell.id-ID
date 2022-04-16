@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 ms.openlocfilehash: d19c039a5038c9327ea35a4f0b385e5472b748a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424074"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142498769"
 ---
 # Set-AzVmssStorageProfile
 
 ## SYNOPSIS
-Mengatur properti profil penyimpanan VMSS.
+Mengatur properti profil penyimpanan untuk VMSS.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Set-AzVmssStorageProfile [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssStorageProfile** mengatur properti profil penyimpanan untuk Virtual Machine Scale Set (VMSS).
+Cmdlet **Set-AzVmssStorageProfile** mengatur properti profil penyimpanan untuk Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ PS C:\> Set-AzVmssStorageProfile -VirtualMachineScaleSet "ContosoVMSS" -Name "Te
             -ImageReferencePublisher $ImgRef.PublisherName -VhdContainer $VhdContainer
 ```
 
-Perintah ini mengatur properti profil penyimpanan VMSS bernama ContosoVMSS.
+Perintah ini mengatur properti profil penyimpanan untuk VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -76,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Image
+### -Gambar
 Menentukan URI blob untuk gambar pengguna.
 VMSS membuat disk sistem operasi dalam wadah gambar pengguna yang sama.
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceOffer
-Menentukan tipe penawaran gambar mesin virtual (VMImage).
+Menentukan tipe penawaran virtual machine image (VMImage).
 Untuk mendapatkan penawaran gambar, gunakan cmdlet Get-AzVMImageOffer.
 
 ```yaml
@@ -139,9 +139,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ImageReferenceSku
+### -ImageReferencesku
 Menentukan VMImage SKU.
-Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku baru.
+Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku.
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -ImageReferenceVersion
 Menentukan versi VMImage.
-Untuk menggunakan versi terbaru, tentukan nilai terbaru dan bukan versi tertentu.
+Untuk menggunakan versi terbaru, tentukan nilai terbaru, bukan versi tertentu.
 
 ```yaml
 Type: String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDisk
-Menentukan disk yang dikelola.
+Menentukan diska terkelola.
 
 ```yaml
 Type: StorageAccountTypes
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskCaching
-Menentukan mode cache dari disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan mode cache disk sistem operasi. Nilai yang dapat diterima untuk parameter ini adalah:
 
 - ReadOnly
 - ReadWrite
@@ -216,9 +216,9 @@ Menentukan cara cmdlet ini membuat mesin virtual VMSS.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Lampirkan: Nilai ini digunakan ketika Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
-- FromImage : Nilai ini digunakan ketika Anda menggunakan gambar untuk membuat mesin virtual VMSS.
-Jika Anda menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference.*
+- Lampirkan : Nilai ini digunakan saat Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
+- FromImage : Nilai ini digunakan saat Anda menggunakan gambar untuk membuat mesin virtual VMSS.
+Jika menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
 
 ```yaml
 Type: DiskCreateOptionTypes
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskOsType
-Menentukan tipe sistem operasi pada disk.
+Menentukan tipe sistem operasi pada diska.
 Ini hanya diperlukan untuk skenario gambar pengguna dan bukan untuk gambar platform.
 
 ```yaml
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -OsDiskWriteAccelerator
-Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan di disk OS.
+Menentukan apakah WriteAccelerator harus diaktifkan atau dinonaktifkan pada disk OS.
 
 ```yaml
 Type: SwitchParameter
@@ -295,9 +295,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
-Untuk mendapatkan objek, gunakan New-AzVmssConfig objek.
+Untuk mendapatkan objek, gunakan objek New-AzVmssConfig.
 
 ```yaml
 Type: PSVirtualMachineScaleSet
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -357,11 +357,11 @@ Cmdlet ini tidak menghasilkan output apa pun.
 
 ## RELATED LINKS
 
-[Get-AzvMImageOffer](./Get-AzVMImageOffer.md)
+[Get-AzVMImageOffer](./Get-AzVMImageOffer.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
 [New-AzVmssConfig](./New-AzVmssConfig.md)
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Remove-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Remove-AzScheduledQueryRule.md
 ms.openlocfilehash: 689588e8b92b4b76c97f3972aa63c2f8cdc16535
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415777"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497858"
 ---
 # Remove-AzScheduledQueryRule
 
 ## SYNOPSIS
-Menghapus Aturan Pemberitahuan Log
+Menghapus Aturan Peringatan Log
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Remove-AzScheduledQueryRule -ResourceId <String> [-PassThru] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Menghapus Aturan Pemberitahuan Log
+Menghapus Aturan Peringatan Log
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ PS C:\> Remove-AzScheduledQueryRule -ResourceGroupName "MyResourceGroup" -Name "
 PS C:\> Remove-AzScheduledQueryRule -InputObject $PSScheduledQueryRuleResource
 ```
 
-### Contoh 3 - Hapus menurut Id sumber daya
+### Contoh 3 - Hapus menurut ID sumber daya
 ```powershell
 PS C:\> Remove-AzScheduledQueryRule -ResourceId "/subscriptions/b67f7fec-69fc-4974-9099-a26bd6ffeda3/resourceGroups/MyResourceGroup/providers/microsoft.insights/scheduledQueryRules/LogAlertRule1"
 ```
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai yang menunjukkan keberhasilan atau kegagalan.
+Mengembalikan nilai yang mengindikasikan keberhasilan atau kegagalan.
 Cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

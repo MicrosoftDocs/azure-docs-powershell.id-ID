@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: 8cf36d9b56eac8dd7ddb1f8ea496505fa50a42ad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 95655ca635c7c1c9e3cddb804628e1f285d68e8d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999509"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142467467"
 ---
 # Set-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
 Memperbarui sumber daya monitor koneksi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconnectionmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Set-AzNetworkWatcherConnectionMonitor -NetworkWatcher <PSNetworkWatcher> -Name <
  [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetByNamev2
+### SetByNameV2
 ```
 Set-AzNetworkWatcherConnectionMonitor -NetworkWatcherName <String> -ResourceGroupName <String> -Name <String>
  [-TestGroup <PSNetworkWatcherConnectionMonitorTestGroupObject[]>]
@@ -61,7 +64,7 @@ Set-AzNetworkWatcherConnectionMonitor -Location <String> -Name <String> -SourceR
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetByLocationv2
+### SetByLocationV2
 ```
 Set-AzNetworkWatcherConnectionMonitor -Location <String> -Name <String>
  [-TestGroup <PSNetworkWatcherConnectionMonitorTestGroupObject[]>]
@@ -128,12 +131,12 @@ Tags                        : {
                               }
 ```
 
-Dalam contoh ini kami memperbarui monitor koneksi yang sudah ada dengan mengubah tujuanAlamat dan menambahkan tag.
+Dalam contoh ini, kami memperbarui monitor koneksi yang sudah ada dengan mengubah tujuanAddress dan menambahkan tag.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigureOnly
-Mengonfigurasi monitor koneksi, tapi tidak memulainya
+Mengonfigurasi monitor koneksi, tetapi jangan memulainya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAddress
-Alamat tujuan monitor koneksi (nama IP atau domain).
+Alamat tujuan monitor koneksi (IP atau nama domain).
 
 ```yaml
 Type: System.String
@@ -270,8 +273,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -387,7 +390,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Note
+### -Catatan
 Catatan yang terkait dengan monitor koneksi.
 
 ```yaml
@@ -457,7 +460,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ConnectionMonitor resource ID.
+ID sumber daya ConnectionMonitor.
 
 ```yaml
 Type: System.String
@@ -499,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceResourceId
-ID sumber daya yang digunakan sebagai sumber dengan monitor koneksi.
+ID sumber daya yang digunakan sebagai sumber menurut monitor koneksi.
 
 ```yaml
 Type: System.String
@@ -526,7 +529,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -580,7 +583,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -596,7 +599,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -611,7 +614,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

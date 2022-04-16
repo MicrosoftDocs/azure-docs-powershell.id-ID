@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVmssOsProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVmssOsProfile.md
 ms.openlocfilehash: 98ebce4e139d230607da77536492d0ba40d0760f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425405"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494197"
 ---
 # Set-AzVmssOsProfile
 
@@ -31,7 +31,7 @@ Set-AzVmssOsProfile [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-Comp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssOsProfile** mengatur properti profil sistem operasi Atur Skala Komputer Virtual.
+Cmdlet **Set-AzVmssOsProfile** mengatur properti profil sistem operasi Set Skala Mesin Virtual.
 
 ## EXAMPLES
 
@@ -40,13 +40,13 @@ Cmdlet **Set-AzVmssOsProfile** mengatur properti profil sistem operasi Atur Skal
 PS C:\> Set-AzVmssOSProfile -VirtualMachineScaleSet "ContosoVMSS" -ComputerNamePrefix "Test" -AdminUsername $AdminUsername -AdminPassword $AdminPassword
 ```
 
-Perintah ini mengatur properti profil sistem operasi untuk mesin virtual yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini mengatur properti profil sistem operasi untuk mesin virtual milik VMSS bernama ContosoVMSS.
 Perintah mengatur prefiks nama komputer untuk semua instans mesin virtual dalam VMSS untuk Menguji dan menyediakan nama pengguna dan kata sandi administrator.
 
 ## PARAMETERS
 
 ### -AdditionalUnattendContent
-Menentukan objek konten tanpa pengawasan.
+Menentukan objek konten tanpa pengawas.
 Anda dapat menggunakan Add-AzVMAdditionalUnattendContent untuk membuat objek.
 
 ```yaml
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminPassword
-Menentukan kata sandi administrator yang akan digunakan untuk semua instans mesin virtual dalam VMSS.
+Menentukan kata sandi administrator untuk digunakan untuk semua instans mesin virtual dalam VMSS.
 
 ```yaml
 Type: String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUsername
-Menentukan nama akun administrator yang akan digunakan untuk semua instans mesin virtual dalam VMSS.
+Menentukan nama akun administrator untuk digunakan untuk semua instans mesin virtual dalam VMSS.
 
 ```yaml
 Type: String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -ComputerNamePrefix
 Menentukan prefiks nama komputer untuk semua instans mesin virtual dalam VMSS.
-Nama komputer harus panjangnya 1 sampai 15 karakter.
+Nama komputer harus panjangnya 1 hingga 15 karakter.
 
 ```yaml
 Type: String
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -CustomData
-Menentukan string berkode basis 64 dari data kustom.
-Ini dikodekan ke array biner yang disimpan sebagai file pada mesin virtual.
+Menentukan string data kustom berkode basis 64.
+Ini didekodekan ke array biner yang disimpan sebagai file di mesin virtual.
 Panjang maksimum array biner adalah 65535 byte.
 
 ```yaml
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxConfigurationDisablePasswordAuthentication
-Mengindikasikan bahwa cmdlet ini menonaktifkan autentikasi kata sandi.
+Menunjukkan bahwa cmdlet ini menonaktifkan autentikasi kata sandi.
 
 ```yaml
 Type: Boolean
@@ -154,10 +154,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Listener
-Menentukan Windows Manajemen Jarak Jauh (WinRM, Remote Management).
-Ini memungkinkan pengguna jarak Windows PowerShell.
-Anda dapat menggunakan cmdlet Add-AzVmssWinRMListener tersebut untuk membuat pendengar.
+### -Pendengar
+Menentukan pendengar Windows Remote Management (WinRM).
+Ini memungkinkan Windows PowerShell jarak jauh.
+Anda dapat menggunakan cmdlet Add-AzVmssWinRMListener untuk membuat pendengar.
 
 ```yaml
 Type: WinRMListener[]
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicKey
-Menentukan objek kunci publik Secure Shell (SHELL).
+Menentukan objek kunci publik Secure Shell (SSH).
 Anda dapat menggunakan cmdlet Add-AzVMSshPublicKey untuk membuat objek.
 
 ```yaml
@@ -188,8 +188,8 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menentukan objek rahasia yang berisi referensi sertifikat untuk menempatkan di komputer virtual.
-Anda bisa menggunakan cmdlet Add-AzVmssSecret rahasia untuk membuat objek rahasia.
+Menentukan objek rahasia yang berisi referensi sertifikat untuk diletakkan di mesin virtual.
+Anda dapat menggunakan cmdlet Add-AzVmssSecret untuk membuat objek rahasia.
 
 ```yaml
 Type: VaultSecretGroup[]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu untuk komputer virtual.
+Menentukan zona waktu untuk mesin maya.
 
 ```yaml
 Type: String
@@ -218,7 +218,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
 Anda dapat menggunakan cmdlet New-AzVmssConfig untuk membuat objek.
 
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsConfigurationEnableAutomaticUpdate
-Menunjukkan apakah mesin virtual pada VMSS diaktifkan untuk pembaruan otomatis.
+Menunjukkan apakah mesin virtual dalam VMSS diaktifkan untuk pembaruan otomatis.
 
 ```yaml
 Type: Boolean
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsConfigurationProvisionVMAgent
-Menunjukkan apakah agen mesin virtual harus disediakan pada komputer virtual dalam VMSS.
+Menunjukkan apakah agen mesin virtual harus disediakan pada mesin virtual dalam VMSS.
 
 ```yaml
 Type: Boolean
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -295,12 +295,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### VirtualMachinescaleSet
-Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari saluran
+### VirtualMachineScaleSet
+Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' dari pipeline
 
 ## OUTPUTS
 
@@ -314,7 +314,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 [Add-AzVmssWinRMListener](./Add-AzVmssWinRMListener.md)
 
-[Add-AzvMSshPublicKey](./Add-AzVMSshPublicKey.md)
+[Add-AzVMSshPublicKey](./Add-AzVMSshPublicKey.md)
 
 [Add-AzVmssSecret](./Add-AzVmssSecret.md)
 

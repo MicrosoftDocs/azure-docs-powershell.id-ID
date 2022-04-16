@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.websites/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
-ms.openlocfilehash: cb2150b036f08651a25ee1308ab57911421684b7519c3b3f1b2c2c0a6e690cbe
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ab00a1fbafc446affd30d7ae06dd0d48f0f0d04d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418698"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142481129"
 ---
 # Set-AzWebAppSlotConfigName
 
 ## SYNOPSIS
-Menyetel nama Slot Config Web App
+Mengatur nama Web App Slot Config
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Set-AzWebAppSlotConfigName [[-AppSettingNames] <String[]>] [[-ConnectionStringNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzWebAppSlotConfigName** menandai Aplikasi Pengaturan dan String Koneksi sebagai pengaturan slot
+Cmdlet **Set-AzWebAppSlotConfigName** menandai Pengaturan Aplikasi dan String Koneksi sebagai pengaturan slot
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Perintah ini menghapus semua pengaturan aplikasi dan string koneksi untuk Web Ap
 ## PARAMETERS
 
 ### -AppSettingNames
-App Pengaturan Names String Array
+Array String Nama Pengaturan Aplikasi
 
 ```yaml
 Type: String[]
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionStringNames
-Array String Nama String
+Array String Nama String Koneksi
 
 ```yaml
 Type: String[]
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

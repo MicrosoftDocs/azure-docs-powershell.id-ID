@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
 ms.openlocfilehash: 5d090bae05e3d931fbf41b656ea66409d1297e8f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426209"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142499206"
 ---
 # Restore-AzKeyVaultKey
 
 ## SYNOPSIS
-Membuat kunci di kunci vault dari tombol yang sudah dicadangkan.
+Membuat kunci dalam kubah kunci dari tombol yang dicadangkan.
 
 ## SYNTAX
 
@@ -26,28 +26,28 @@ Restore-AzKeyVaultKey [-VaultName] <String> [-InputFile] <String> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzKeyVaultKey** membuat kunci di vault kunci tertentu.
-Kunci ini adalah replika kunci yang dicadangkan dalam file input dan memiliki nama yang sama seperti kunci aslinya.
-Jika kunci vault telah memiliki kunci dengan nama yang sama, cmdlet ini akan gagal, bukan menimpa kunci aslinya.
+Cmdlet **Restore-AzKeyVaultKey** membuat kunci dalam kubah kunci yang ditentukan.
+Kunci ini adalah replika kunci yang dicadangkan dalam file input dan memiliki nama yang sama dengan kunci aslinya.
+Jika kubah kunci sudah memiliki kunci dengan nama yang sama, cmdlet ini gagal, bukan menimpa kunci asli.
 Jika cadangan berisi beberapa versi kunci, semua versi akan dipulihkan.
 
-Kunci vault tempat Anda memulihkan kunci mungkin berbeda dari key vault yang Anda cadangkan kuncinya.
-Namun, kunci vault harus menggunakan langganan yang sama dan berada di kawasan Azure di geografi yang sama (misalnya, Amerika Utara).
-Lihat Microsoft Azure Kepercayaan Lokal ( https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
+Kubah kunci yang Anda pulihkan kuncinya bisa berbeda dari kubah kunci yang Anda cadangkan dari kunci.
+Namun, kubah kunci harus menggunakan langganan yang sama dan berada di kawasan Azure dalam geografi yang sama (misalnya, Amerika Utara).
+Lihat Pusat Kepercayaan Microsoft Azure (https://azure.microsoft.com/support/trust-center/) untuk pemetaan kawasan Azure ke geografis.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan kunci yang dicadangkan
+### Contoh 1: Memulihkan kunci cadangan
 ```
 PS C:\>Restore-AzKeyVaultKey -VaultName 'MyKeyVault' -InputFile "C:\Backup.blob"
 ```
 
-Perintah ini memulihkan kunci, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kunci vault yang bernama MyKeyVault.
+Perintah ini memulihkan kunci, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kubah kunci bernama MyKeyVault.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Menentukan file input yang berisi cadangan kunci untuk dipulihkan.
+Menentukan berkas input yang berisi cadangan kunci untuk dipulihkan.
 
 ```yaml
 Type: String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault untuk memulihkan kunci.
+Menentukan nama kubah kunci untuk memulihkan kunci.
 
 ```yaml
 Type: String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -123,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -144,5 +144,5 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Get-AzKeyVaultKey](./Get-AzKeyVaultKey.md)
 
-[Remove-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
+[Hapus-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
 

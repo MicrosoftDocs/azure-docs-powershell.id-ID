@@ -5,26 +5,29 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksWorkspace.md
-ms.openlocfilehash: f3dcea3eeebf56bd4edce888c373dbc585177212
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a270c46e00af731ad9b7916a09cef327875047eb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140403083"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142472003"
 ---
 # Get-AzDatabricksWorkspace
 
 ## SYNOPSIS
-Dapatkan ruang kerja.
+Mendapatkan ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databricks/get-azdatabricksworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzDatabricksWorkspace [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDatabricksWorkspace -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,11 +45,11 @@ Get-AzDatabricksWorkspace -ResourceGroupName <String> [-SubscriptionId <String[]
 ```
 
 ## DESCRIPTION
-Dapatkan ruang kerja.
+Mendapatkan ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Get a Databricks workspace with name
+### Contoh 1: Mendapatkan ruang kerja Databricks dengan nama
 ```powershell
 PS C:\> Get-AzDatabricksWorkspace -Name databricks-test -ResourceGroupName databricks-rg-rqb2yo
 
@@ -55,9 +58,9 @@ Name            ResourceGroupName    Location Managed Resource Group ID
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
 ```
 
-Perintah ini mendapatkan ruang kerja Berdata dalam grup sumber daya.
+Perintah ini mendapatkan ruang kerja Databricks dalam grup sumber daya.
 
-### Contoh 2:  List all Databricks workspaces in a subscription
+### Contoh 2: Mencantumkan semua ruang kerja Databricks dalam langganan
 ```powershell
 PS C:\> Get-AzDatabricksWorkspace
 
@@ -72,7 +75,7 @@ workspace2rzshd     databricks-rg-1jxsia eastus         /subscriptions/00000000-
 
 Perintah ini mencantumkan semua ruang kerja Databricks dalam langganan.
 
-### Contoh 3:  List all Databricks workspaces in a resource group
+### Contoh 3: Mencantumkan semua ruang kerja Databricks dalam grup sumber daya
 ```powershell
 PS C:\> Get-AzDatabricksWorkspace -ResourceGroupName databricks-rg-rqb2yo
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.IDatabricksIdentity
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,7 +191,7 @@ INPUTOBJECT <IDatabricksIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama ruang kerja vNet peering.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja.
 

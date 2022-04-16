@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
-ms.openlocfilehash: 42324f7112d8aaa7f6301cc20ca8be31ce987aae5d63bb6d479c0423c8c60771
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 33e1b8fe5ae88666ffacf8849b9e2700f7066151
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415898"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493585"
 ---
 # New-AzMetricAlertRuleV2DimensionSelection
 
 ## SYNOPSIS
-Membuat objek pilihan dimensi lokal yang bisa digunakan untuk menyusun kriteria pemberitahuan metrik.
+Membuat objek pemilihan dimensi lokal yang dapat digunakan untuk menyusun kriteria peringatan metrik.
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ New-AzMetricAlertRuleV2DimensionSelection -DimensionName <String> -ValuesToInclu
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricAlertRuleV2DimensionSelection** membuat objek pilihan dimensi lokal untuk membantu pembuatan kriteria peringatan metrik menggunakan cmdlet **New-AzMetricAlertRuleV2Criteria.**
+Cmdlet **New-AzMetricAlertRuleV2DimensionSelection membuat objek pemilihan** dimensi lokal untuk membantu pembangunan kriteria peringatan metrik menggunakan cmdlet **New-AzMetricAlertRuleV2Criteria** .
 
 ## EXAMPLES
 
-### Contoh 1 : Membuat objek pilihan dimensi
+### Contoh 1 : Membuat objek pemilihan dimensi
 
 ```powershell
 PS C:\> New-AzMetricAlertRuleV2DimensionSelection -DimensionName LUN -ValuesToInclude 1,3,4
@@ -39,7 +39,7 @@ Dimension IncludeValues ExcludeValues
 LUN       {1, 3, 4}
 ```
 
-Perintah ini akan membuat objek pilihan dimensi yang menentukan bahwa nilai {1,3,4} perlu dipilih untuk Dimensi "LUN"
+Perintah ini membuat objek pemilihan dimensi yang menentukan bahwa nilai {1,3,4} harus dipilih untuk Dimensi "LUN"
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DimensionName
-Nama dimensi
+Nama Dimensi
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

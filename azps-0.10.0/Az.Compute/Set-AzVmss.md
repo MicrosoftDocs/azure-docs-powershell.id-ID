@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVmss.md
 ms.openlocfilehash: 5ceb420f30525817ebccd6d3f38a53e6c1cad66e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427013"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142498787"
 ---
 # Set-AzVmss
 
@@ -34,21 +34,21 @@ Set-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-InstanceI
 
 ## DESCRIPTION
 Cmdlet **Set-AzVmss** mengatur tindakan tertentu pada Kumpulan Skala Mesin Virtual (VMSS).
-Satu-satunya tindakan yang didukung cmdlet ini adalah Mengganti.
+Satu-satunya tindakan yang didukung cmdlet ini adalah Reimage.
 
 ## EXAMPLES
 
-### Contoh 1: Reimage a VMSS
+### Contoh 1: Menginisiasi ulang VMSS
 ```
 PS C:\> Set-AzVmss -Reimage -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini akan mengulangi VMSS bernama ContosoVMSS yang dimiliki oleh grup sumber daya yang bernama ContosoGroup.
+Perintah ini mengoptimalkan VMSS bernama ContosoVMSS yang termasuk dalam grup sumber daya bernama ContosoGroup.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-ID contoh mesin virtual.
+ID instans mesin virtual.
 
 ```yaml
 Type: String[]
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reimage
-Menunjukkan bahwa cmdlet penggantian VMSS.
+Menunjukkan bahwa cmdlet mereimageS VMSS.
 
 ```yaml
 Type: SwitchParameter
@@ -107,8 +107,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReimageAll
-Menunjukkan bahwa cmdlet penggantian semua disk dalam VMSS.
+### -ReimageSemua
+Menunjukkan bahwa cmdlet mereimage semua disk dalam VMSS.
 
 ```yaml
 Type: SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Spesies nama VMSS yang mengatur tindakan cmdlet ini.
+Spesies nama VMSS tempat cmdlet ini mengatur tindakan.
 
 ```yaml
 Type: String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -183,11 +183,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -202,14 +202,14 @@ Cmdlet ini tidak menerima input apa pun.
 
 [New-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVms](./Remove-AzVmss.md)
 
-[Mulai Ulang AzVmss](./Restart-AzVmss.md)
+[Mulai ulang-AzVms](./Restart-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

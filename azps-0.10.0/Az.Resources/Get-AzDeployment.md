@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzDeployment.md
 ms.openlocfilehash: d47660d5867c1d7f9fad04884ba66c9e2c996900
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413831"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142491731"
 ---
 # Get-AzDeployment
 
 ## SYNOPSIS
-Mendapatkan penggunaan
+Dapatkan penyebaran
 
 ## SYNTAX
 
@@ -32,32 +32,32 @@ Get-AzDeployment [-Id <String>] [-ApiVersion <String>] [-Pre] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeployment** mendapatkan penyebaran di lingkup langganan saat ini.
-Tentukan parameter *Nama* *atau Id* untuk memfilter hasilnya.
-Secara default, **Get-AzDeployment** mendapatkan semua penyebaran di lingkup langganan saat ini.
+Cmdlet **Get-AzDeployment** mendapatkan penyebaran pada lingkup langganan saat ini.
+Tentukan parameter *Nama* atau *Id* untuk memfilter hasil.
+Secara default, **Get-AzDeployment** mendapatkan semua penyebaran pada lingkup langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua penyebaran di lingkup langganan
+### Contoh 1: Dapatkan semua penyebaran di lingkup langganan
 ```
 PS C:\>Get-AzDeployment
 ```
 
 Perintah ini mendapatkan semua penyebaran pada lingkup langganan saat ini.
 
-### Contoh 2: Mendapatkan penyebaran menurut nama
+### Contoh 2: Mendapatkan penyebaran berdasarkan nama
 ```
 PS C:\>Get-AzDeployment -Name "DeployRoles01"
 ```
 
-Perintah ini menerapkan DeployRoles01 pada lingkup langganan saat ini.
-Anda bisa menetapkan nama untuk penyebaran saat Anda membuatnya dengan menggunakan cmdlet **New-AzDeployment** .
-Jika Anda tidak memberi nama, cmdlet memberikan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
+Perintah ini mendapatkan penyebaran DeployRoles01 pada lingkup langganan saat ini.
+Anda dapat menetapkan nama untuk penyebaran saat membuatnya menggunakan cmdlet **New-AzDeployment** .
+Jika Anda tidak menetapkan nama, cmdlet menyediakan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
 Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 
 ```yaml
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
+Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
 contoh: /subscriptions/{subId}/providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

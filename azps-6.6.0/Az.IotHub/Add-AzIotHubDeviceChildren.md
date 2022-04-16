@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeviceChildren.md
 ms.openlocfilehash: 2b015496b23d4cd667fbc2bcee2b4bb7ca7c3c87
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140310451"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473767"
 ---
 # Add-AzIotHubDeviceChildren
 
 ## SYNOPSIS
-Tambahkan perangkat non-tepi saat anak-anak ke perangkat tepi.
+Tambahkan perangkat non-edge sebagai anak-anak ke perangkat edge.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/add-aziothubdevicechildren) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Add-AzIotHubDeviceChildren [-ResourceId] <String> [-DeviceId] <String> [-Childre
 ```
 
 ## DESCRIPTION
-Tambahkan daftar id perangkat non edge yang dipisahkan koma yang ditentukan sebagai anak dari perangkat tepi yang ditentukan.
+Tambahkan daftar id perangkat non-edge yang dipisahkan koma yang ditentukan sebagai anak dari perangkat edge tertentu.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ DeviceId  ChildrenDeviceId
 myDevice1 {device1, device2}
 ```
 
-Tambahkan perangkat non-tepi saat anak-anak ke perangkat tepi.
+Tambahkan perangkat non-edge sebagai anak-anak ke perangkat edge.
 
 ### Contoh 2
 ```powershell
@@ -66,12 +66,12 @@ DeviceId  ChildrenDeviceId
 myDevice2 {device1, device2}
 ```
 
-Tambahkan perangkat non-tepi sebagai anak-anak ke perangkat tepi tanpa melihat perangkat non-tepi sudah menjadi anak dari perangkat tepi lainnya.
+Tambahkan perangkat non-edge sebagai anak-anak ke perangkat edge terlepas dari perangkat non-edge sudah menjadi anak dari perangkat edge lainnya.
 
 ## PARAMETERS
 
 ### -Anak-anak
-Daftar perangkat anak (dipisahkan koma) hanya mencakup perangkat non-tepi.
+Daftar perangkat anak (dipisahkan koma) hanya menyertakan perangkat non-edge.
 
 ```yaml
 Type: System.String[]
@@ -115,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menimpa perangkat induk perangkat non-edge.
 
 ```yaml
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

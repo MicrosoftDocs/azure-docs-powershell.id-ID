@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultKey.md
 ms.openlocfilehash: b01ed80385726660198d3f6fbb20ab1e5ec57dfe
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420226"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142493602"
 ---
 # Add-AzKeyVaultKey
 
 ## SYNOPSIS
-Membuat kunci di kunci vault atau mengimpor kunci ke kunci vault.
+Membuat kunci dalam kubah kunci atau mengimpor kunci ke dalam kubah kunci.
 
 ## SYNTAX
 
@@ -35,38 +35,38 @@ Add-AzKeyVaultKey [-VaultName] <String> [-Name] <String> -KeyFilePath <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzKeyVaultKey** membuat kunci di kunci vault di Azure Key Vault, atau mengimpor kunci ke kunci vault.
-Gunakan cmdlet ini untuk menambahkan tombol menggunakan salah satu metode berikut:
+Cmdlet **Add-AzKeyVaultKey** membuat kunci dalam kubah kunci di Azure Key Vault, atau mengimpor kunci ke dalam kubah kunci.
+Gunakan cmdlet ini untuk menambahkan kunci menggunakan salah satu metode berikut:
 
-- Buat kunci di modul keamanan perangkat keras (HSM) di layanan Key Vault.
-- Buat kunci di perangkat lunak dalam layanan Key Vault.
-- Mengimpor kunci dari modul keamanan perangkat keras (HSM) Anda sendiri ke HSM di layanan Key Vault.
-- Mengimpor kunci dari file .pfx di komputer Anda.
-- Mengimpor kunci dari file .pfx di komputer Anda ke modul keamanan perangkat keras (HSMS) di layanan Key Vault.
+- Buat kunci dalam modul keamanan perangkat keras (HSM) di layanan Key Vault.
+- Buat kunci dalam perangkat lunak di layanan Key Vault.
+- Impor kunci dari modul keamanan perangkat keras (HSM) Anda sendiri ke HSM dalam layanan Key Vault.
+- Impor kunci dari file .pfx di komputer Anda.
+- Impor kunci dari file .pfx di komputer Anda ke modul keamanan perangkat keras (HSM) di layanan Key Vault.
 
-Untuk setiap operasi ini, Anda dapat menyediakan atribut kunci atau menerima pengaturan default.
+Untuk salah satu operasi ini, Anda dapat menyediakan atribut utama atau menerima pengaturan default.
 
-Jika Anda membuat atau mengimpor kunci yang memiliki nama yang sama dengan kunci yang sudah ada di kunci vault, kunci asli diperbarui dengan nilai yang Anda tentukan untuk kunci baru. Anda bisa mengakses nilai sebelumnya dengan menggunakan URI khusus versi untuk versi kunci tersebut. Untuk mempelajari tentang versi utama dan struktur URI, lihat [Tentang Keys danSecrets](http://go.microsoft.com/fwlink/?linkid=518560) dalam dokumentasi API REST Key Vault.
+Jika Anda membuat atau mengimpor kunci yang memiliki nama yang sama dengan kunci yang sudah ada di kubah kunci, kunci asli diperbarui dengan nilai yang Anda tentukan untuk kunci baru. Anda dapat mengakses nilai sebelumnya menggunakan URI khusus versi untuk versi kunci tersebut. Untuk mempelajari tentang versi utama dan struktur URI, lihat [Tentang Keys andSecrets](http://go.microsoft.com/fwlink/?linkid=518560) dalam dokumentasi KEY VAULT REST API.
 
-Catatan: Untuk mengimpor kunci dari modul keamanan perangkat keras milik sendiri, Anda harus membuat paket BYOK terlebih dahulu (file dengan ekstensi nama file .byok) menggunakan perangkat keras Azure Key Vault BYOK. Untuk informasi selengkapnya, [lihat Cara Membuat dan Mentransfer HSM-Protected Kunci untuk Azure Key Vault](http://go.microsoft.com/fwlink/?LinkId=522252).
+Catatan: Untuk mengimpor kunci dari modul keamanan perangkat keras Anda sendiri, Anda harus terlebih dahulu membuat paket BYOK (file dengan ekstensi nama file .byok) menggunakan toolset Azure Key Vault BYOK. Untuk informasi selengkapnya, lihat [Cara Menghasilkan dan Mentransfer Kunci HSM-Protected untuk Azure Key Vault](http://go.microsoft.com/fwlink/?LinkId=522252).
 
-Sebagai praktik terbaik, cadangankan kunci Anda setelah dibuat atau diperbarui, dengan menggunakan cmdlet Backup-AzKeyVaultKey. Tidak ada fungsionalitas yang dibatalkan, jadi jika Anda secara tidak sengaja menghapus kunci atau menghapusnya lalu berubah pikiran, kunci tersebut tidak dapat dipulihkan kecuali Anda memiliki cadangannya yang bisa dipulihkan.
+Sebagai praktik terbaik, cadangkan kunci Anda setelah dibuat atau diperbarui, dengan menggunakan cmdlet Backup-AzKeyVaultKey. Tidak ada fungsionalitas yang belum dihapus, jadi jika Anda secara tidak sengaja menghapus kunci atau menghapusnya lalu berubah pikiran, kunci tidak dapat dipulihkan kecuali Anda memiliki cadangannya yang dapat Anda pulihkan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat kunci
+### Contoh 1: Membuat kunci
 ```
 PS C:\>Add-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -Destination 'Software'
 ```
 
-Perintah ini akan membuat kunci yang dilindungi perangkat lunak bernama ITSoftware dalam kunci vault bernama Contoso.
+Perintah ini membuat kunci yang dilindungi perangkat lunak bernama ITSoftware dalam kubah kunci bernama Contoso.
 
 ### Contoh 2: Membuat kunci yang dilindungi HSM
 ```
 PS C:\>Add-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITHsm' -Destination 'HSM'
 ```
 
-Perintah ini akan membuat kunci yang dilindungi HSM dalam kunci vault bernama Contoso.
+Perintah ini membuat kunci yang dilindungi HSM di kubah kunci bernama Contoso.
 
 ### Contoh 3: Membuat kunci dengan nilai non-default
 ```
@@ -77,24 +77,24 @@ PS C:\> $Tags = @{'Severity' = 'high'; 'Accounting' = null}
 PS C:\> Add-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITHsmNonDefault' -Destination 'HSM' -Expires $Expires -NotBefore $NotBefore -KeyOps $KeyOperations -Disable -Tag $Tags
 ```
 
-Perintah pertama menyimpan nilai yang didekripsi dan diverifikasi dalam $KeyOperations nilai.
+Perintah pertama menyimpan nilai yang didekripsi dan diverifikasi dalam variabel $KeyOperations.
 
-Perintah kedua membuat objek **DateTime,** yang ditentukan dalam UTC, dengan menggunakan cmdlet **Get-Date.**
-Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam variabel $Expires baru. Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Perintah kedua membuat objek **DateTime** , yang ditentukan dalam UTC, menggunakan cmdlet **Get-Date** .
+Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal tersebut dalam variabel $Expires. Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 
-Perintah ketiga membuat objek **DateTime** menggunakan cmdlet **Get-Date.** Objek tersebut menentukan waktu UTC saat ini. Perintah menyimpan tanggal itu dalam $NotBefore variabel.
+Perintah ketiga membuat objek **DateTime** menggunakan cmdlet **Get-Date** . Objek tersebut menentukan waktu UTC saat ini. Perintah menyimpan tanggal tersebut dalam variabel $NotBefore.
 
-Perintah terakhir membuat kunci bernama ITHsmNonDefault yang merupakan kunci yang dilindungi HSM. Perintah menentukan nilai untuk operasi tombol diperbolehkan yang disimpan $KeyOperations. Perintah menentukan waktu untuk  parameter Kedaluwarsa dan *NotBefore* yang dibuat di perintah sebelumnya, dan tag untuk tingkat keparahan tinggi dan IT. Kunci baru dinonaktifkan. Anda dapat mengaktifkannya menggunakan cmdlet **Set-AzKeyVaultKey.**
+Perintah akhir membuat kunci bernama ITHsmNonDefault yang merupakan kunci yang dilindungi HSM. Perintah menentukan nilai untuk operasi kunci yang diperbolehkan yang disimpan $KeyOperations. Perintah menentukan waktu untuk parameter *Kedaluwarsa* dan *NotBefore* yang dibuat dalam perintah sebelumnya, dan tag untuk tingkat keparahan tinggi dan TI. Kunci baru dinonaktifkan. Anda dapat mengaktifkannya menggunakan cmdlet **Set-AzKeyVaultKey** .
 
-### Contoh 4: Mengimpor kunci yang diproteksi HSM
+### Contoh 4: Mengimpor kunci yang dilindungi HSM
 ```
 PS C:\>Add-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITByok' -KeyFilePath 'C:\Contoso\ITByok.byok' -Destination 'HSM'
 ```
 
-Perintah ini mengimpor kunci bernama ITByok dari lokasi yang ditentukan oleh parameter *KeyFilePath.* Kunci yang diimpor adalah kunci yang diproteksi HSM.
+Perintah ini mengimpor kunci bernama ITByok dari lokasi yang ditentukan parameter *KeyFilePath* . Kunci yang diimpor adalah kunci yang dilindungi HSM.
 
-Untuk mengimpor kunci dari modul keamanan perangkat keras milik sendiri, Anda harus terlebih dahulu membuat paket BYOK (file dengan ekstensi nama file .byok) menggunakan peralatan BYOK Azure Key Vault.
-Untuk informasi selengkapnya, [lihat Cara Membuat dan Mentransfer HSM-Protected Kunci untuk Azure Key Vault](http://go.microsoft.com/fwlink/?LinkId=522252).
+Untuk mengimpor kunci dari modul keamanan perangkat keras Anda sendiri, Anda harus terlebih dahulu membuat paket BYOK (file dengan ekstensi nama file .byok) menggunakan toolset Azure Key Vault BYOK.
+Untuk informasi selengkapnya, lihat [Cara Menghasilkan dan Mentransfer Kunci HSM-Protected untuk Azure Key Vault](http://go.microsoft.com/fwlink/?LinkId=522252).
 
 ### Contoh 5: Mengimpor kunci yang dilindungi perangkat lunak
 ```
@@ -102,10 +102,10 @@ PS C:\>$Password = ConvertTo-SecureString -String 'Password' -AsPlainText -Force
 PS C:\> Add-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITPfx' -KeyFilePath 'C:\Contoso\ITPfx.pfx' -KeyFilePassword $Password
 ```
 
-Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString,** lalu menyimpan string itu di $Password variabel. Untuk informasi selengkapnya, ketik `Get-Help
-ConvertTo-SecureString` .
+Perintah pertama mengonversi string menjadi string aman menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string tersebut dalam variabel $Password. Untuk informasi selengkapnya, ketik .`Get-Help
+ConvertTo-SecureString`
 
-Perintah kedua membuat kata sandi perangkat lunak dalam kunci vault Contoso. Perintah menentukan lokasi untuk kunci dan kata sandi yang disimpan di $Password.
+Perintah kedua membuat kata sandi perangkat lunak di kubah kunci Contoso. Perintah menentukan lokasi untuk kunci dan kata sandi yang disimpan di $Password.
 
 ### Contoh 6: Mengimpor kunci dan menetapkan atribut
 ```
@@ -115,18 +115,18 @@ PS C:\> $Tags = @{ 'Severity' = 'high'; 'Accounting' = null }
 PS C:\> Add-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITPfxToHSM' -Destination 'HSM' -KeyFilePath 'C:\Contoso\ITPfx.pfx' -KeyFilePassword $Password -Expires $Expires -Tag $Tags
 ```
 
-Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString,** lalu menyimpan string itu di $Password variabel.
+Perintah pertama mengonversi string menjadi string aman menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string tersebut dalam variabel $Password.
 
-Perintah kedua membuat objek **DateTime** menggunakan cmdlet **Get-Date,** lalu menyimpan objek tersebut dalam $Expires variabel.
+Perintah kedua membuat objek **DateTime** menggunakan cmdlet **Get-Date** , lalu menyimpan objek tersebut dalam variabel $Expires.
 
-Perintah ketiga membuat $tags variabel untuk mengatur tag tingkat keparahan tinggi dan TI.
+Perintah ketiga membuat variabel $tags untuk mengatur tag untuk tingkat keparahan tinggi dan TI.
 
-Perintah terakhir mengimpor kunci sebagai tombol HSM dari lokasi tertentu. Perintah menentukan waktu kedaluwarsa yang disimpan di $Expires kata sandi dan disimpan di $Password, dan menerapkan tag yang disimpan di $tags.
+Perintah akhir mengimpor kunci sebagai kunci HSM dari lokasi yang ditentukan. Perintah menentukan waktu kedaluwarsa yang disimpan dalam $Expires dan kata sandi yang disimpan di $Password, dan menerapkan tag yang disimpan di $tags.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -141,16 +141,16 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan apakah akan menambahkan kunci sebagai kunci yang diproteksi perangkat lunak atau kunci yang diproteksi HSM di layanan Key Vault.
-Nilai valid adalah: HSM dan Perangkat Lunak.
+Menentukan apakah akan menambahkan kunci sebagai kunci yang dilindungi perangkat lunak atau kunci yang dilindungi HSM dalam layanan Key Vault.
+Nilai yang valid adalah: HSM dan Perangkat Lunak.
 
-Catatan: Untuk menggunakan HSM sebagai tujuan, Anda harus memiliki kunci vault yang mendukung HSM. Untuk informasi selengkapnya tentang tingkat layanan dan kemampuan Key Vault Azure, lihat situs web [Harga Azure Key Vault](http://go.microsoft.com/fwlink/?linkid=512521).
+Catatan: Untuk menggunakan HSM sebagai tujuan, Anda harus memiliki kubah kunci yang mendukung HSM. Untuk informasi selengkapnya tentang tingkat layanan dan kapabilitas untuk Azure Key Vault, lihat [situs web Harga Azure Key Vault](http://go.microsoft.com/fwlink/?linkid=512521).
 
-Parameter ini diperlukan ketika Anda membuat kunci baru. Jika Anda mengimpor kunci menggunakan parameter *KeyFilePath,* parameter ini bersifat opsional:
+Parameter ini diperlukan saat Anda membuat kunci baru. Jika Anda mengimpor kunci menggunakan parameter *KeyFilePath* , parameter ini opsional:
 
-- Jika Anda tidak menentukan parameter ini, dan cmdlet ini mengimpor kunci yang memiliki ekstensi nama file .byok, cmdlet tersebut akan mengimpor kunci tersebut sebagai tombol yang diproteksi HSM. Cmdlet tidak dapat mengimpor kunci tersebut sebagai kunci yang dilindungi perangkat lunak.
+- Jika Anda tidak menentukan parameter ini, dan cmdlet ini mengimpor kunci yang memiliki ekstensi nama file .byok, cmdlet ini akan mengimpor kunci tersebut sebagai kunci yang dilindungi HSM. Cmdlet tidak bisa mengimpor kunci tersebut sebagai kunci yang dilindungi perangkat lunak.
 
-- Jika Anda tidak menentukan parameter ini, dan cmdlet ini mengimpor kunci yang memiliki ekstensi nama file .pfx, cmdlet akan mengimpor kunci tersebut sebagai kunci yang diproteksi perangkat lunak.
+- Jika Anda tidak menentukan parameter ini, dan cmdlet ini mengimpor kunci yang memiliki ekstensi nama file .pfx, cmdlet ini mengimpor kunci sebagai kunci yang dilindungi perangkat lunak.
 
 ```yaml
 Type: String
@@ -178,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Menunjukkan bahwa kunci yang Anda tambahkan diatur ke status awal nonaktif. Setiap percobaan untuk menggunakan kunci akan gagal. Gunakan parameter ini jika Tombol pra-muat yang ingin diaktifkan nanti.
+### -Non-fungsikan
+Menunjukkan bahwa kunci yang Anda tambahkan diatur ke status awal nonaktif. Setiap upaya untuk menggunakan kunci akan gagal. Gunakan parameter ini jika Anda melakukan pramuat kunci yang ingin anda aktifkan nanti.
 
 ```yaml
 Type: SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Menentukan waktu kedaluwarsa, sebagai objek **DateTime,** untuk kunci yang tambahkan cmdlet ini. Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.** Untuk informasi selengkapnya, ketik `Get-Help Get-Date` . Jika Anda tidak menentukan parameter ini, kunci tidak kedaluwarsa.
+Menentukan waktu kedaluwarsa, sebagai objek **DateTime** , untuk kunci yang ditambahkan cmdlet ini. Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** . Untuk informasi selengkapnya, ketik .`Get-Help Get-Date` Jika Anda tidak menentukan parameter ini, kunci tidak akan kedaluwarsa.
 
 ```yaml
 Type: DateTime
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyFilePassword
-Menentukan kata sandi untuk file yang diimpor sebagai objek **SecureString.** Untuk mendapatkan objek **SecureString,** gunakan cmdlet **ConvertTo-SecureString.** Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` . Anda harus menentukan kata sandi ini untuk mengimpor file dengan ekstensi nama file .pfx.
+Menentukan kata sandi untuk file yang diimpor sebagai objek **SecureString** . Untuk mendapatkan objek **SecureString** , gunakan cmdlet **ConvertTo-SecureString** . Untuk informasi selengkapnya, ketik .`Get-Help ConvertTo-SecureString` Anda harus menentukan kata sandi ini untuk mengimpor file dengan ekstensi nama file .pfx.
 
 ```yaml
 Type: SecureString
@@ -224,14 +224,14 @@ Accept wildcard characters: False
 ```
 
 ### -KeyFilePath
-Menentukan jalur file lokal yang berisi materi utama yang diimpor cmdlet ini.
+Menentukan jalur file lokal yang berisi materi kunci yang diimpor cmdlet ini.
 Ekstensi nama file yang valid adalah .byok dan .pfx.
 
-- Jika file tersebut adalah file .byok, kunci secara otomatis diproteksi oleh HSMS setelah impor dan Anda tidak bisa mengesampingkan default ini.
+- Jika file adalah file .byok, kunci secara otomatis diproteksi oleh HSM setelah impor dan Anda tidak dapat menimpa default ini.
 
-- Jika file adalah file .pfx, kunci secara otomatis dilindungi oleh perangkat lunak setelah impor. Untuk menimpa default ini, atur parameter *Tujuan* ke HSM sehingga kunci terproteksi HSM.
+- Jika file adalah file .pfx, kunci secara otomatis dilindungi oleh perangkat lunak setelah pengimporan. Untuk menimpa default ini, atur parameter *Tujuan* ke HSM sehingga kunci dilindungi HSM.
 
-Ketika Anda menentukan parameter ini, *parameter Destination* bersifat opsional.
+Saat Anda menentukan parameter ini, parameter *Tujuan* bersifat opsional.
 
 ```yaml
 Type: String
@@ -246,17 +246,17 @@ Accept wildcard characters: False
 ```
 
 ### -KeyOps
-Menentukan larik operasi yang dapat dijalankan menggunakan kunci yang penambahan cmdlet ini.
-Jika Anda tidak menentukan parameter ini, semua operasi dapat dijalankan.
+Menentukan array operasi yang dapat dilakukan dengan menggunakan kunci yang ditambahkan cmdlet ini.
+Jika Anda tidak menentukan parameter ini, semua operasi dapat dilakukan.
 
-Nilai yang dapat diterima untuk parameter ini adalah daftar operasi kunci yang dipisahkan koma seperti yang ditetapkan oleh [spesifikasi JSON Web Key (JWK):](http://go.microsoft.com/fwlink/?LinkID=613300)
+Nilai yang dapat diterima untuk parameter ini adalah daftar operasi kunci yang dipisahkan koma seperti yang ditentukan oleh [spesifikasi JSON Web Key (JWK):](http://go.microsoft.com/fwlink/?LinkID=613300)
 
-- Encrypt
-- Dekripsi
+- Mengenkripsi
+- Mendekripsi
 - Bungkus
-- Membatalkan rap
-- Tanda tangani
-- Verifikasi
+- Membuka
+- Tanda
+- Memverifikasi
 
 ```yaml
 Type: String[]
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kunci untuk ditambahkan ke kunci vault. Cmdlet ini menyusun nama domain (FQDN) yang sepenuhnya memenuhi syarat dari kunci berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini. Nama harus memiliki panjang string dari 1 sampai 63 karakter yang hanya berisi 0-9, a-z, A-Z, dan - (simbol garis putus-putus).
+Menentukan nama kunci untuk ditambahkan ke kubah kunci. Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) kunci berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini. Nama harus berupa string yang panjangnya 1 sampai 63 karakter yang hanya berisi 0-9, a-z, A-Z, dan - (simbol garis putus-putus).
 
 ```yaml
 Type: String
@@ -285,8 +285,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NotBefore
-Menentukan waktu, sebagai objek **DateTime,** sebelum tombol tidak dapat digunakan. Parameter ini menggunakan UTC. Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.** Jika Anda tidak menentukan parameter ini, kunci dapat langsung digunakan.
+### -TidakBefore
+Menentukan waktu, sebagai objek **DateTime** , sebelum kunci tidak dapat digunakan. Parameter ini menggunakan UTC. Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** . Jika Anda tidak menentukan parameter ini, kunci dapat segera digunakan.
 
 ```yaml
 Type: DateTime
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama key vault tempat cmdlet menambahkan kunci tersebut. Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci tempat cmdlet ini menambahkan kunci. Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: String
@@ -333,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -364,11 +364,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -383,6 +383,6 @@ Cmdlet ini tidak menerima input apa pun.
 
 [Get-AzKeyVaultKey](./Get-AzKeyVaultKey.md)
 
-[Remove-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
+[Hapus-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
 
 [Set-AzKeyVaultKeyAttribute](./Set-AzKeyVaultKeyAttribute.md)

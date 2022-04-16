@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestation.md
 ms.openlocfilehash: e800fb8aa5c4987da84022b5ba78c28676da9695
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142480283"
 ---
 # Remove-AzAttestation
 
 ## SYNOPSIS
-Menghapusstation.
+Menghapus penetapan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/remove-azattestation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/remove-azattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzAttestation [-InputObject] <PSAttestation> [-PassThru] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzAttestation menghapus attestation yang ditentukan.
+Cmdlet Remove-AzAttestation menghapus penetapan yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet Remove-AzAttestation menghapus attestation yang ditentukan.
 PS C:\> Remove-AzAttestation -Name pshtest3 -ResourceGroupName psh-test-rg
 ```
 
-Hapus Penyedia Attestation yang *bernama pshtest3* dalam grup sumber daya yang bernama *psh-test-rg* dari langganan saat ini.
+Hapus Penyedia Pengesahan bernama *pshtest3* dalam grup sumber daya bernama *psh-test-rg* dari langganan saat ini.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek attestation akan dihapus.
+Objek attesasi yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Attestation.Models.PSAttestation
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama stasiun untuk dihapus.
+Menentukan nama dari atestation yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Tentukan nama grup sumber daya untuk Azure attestation yang akan dihapus.
+Menentukan nama grup sumber daya untuk pengesahan Azure untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Attestation.
+Id Sumber Daya Pengesahan.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

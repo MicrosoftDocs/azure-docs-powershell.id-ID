@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportLocation.md
 ms.openlocfilehash: fa8edeb54fbf732ab5c68253aabcea0524a35244
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140254069"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142473983"
 ---
 # Get-AzImportExportLocation
 
@@ -19,7 +19,7 @@ Mengembalikan detail tentang lokasi tempat Anda dapat mengirimkan disk yang terk
 Lokasi adalah kawasan Azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/get-azimportexportlocation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.importexport/get-azimportexportlocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Lokasi adalah kawasan Azure.
 Get-AzImportExportLocation [-AcceptLanguage <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzImportExportLocation -Name <String> [-AcceptLanguage <String>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
@@ -66,7 +66,7 @@ West US 2            Microsoft.ImportExport/locations
 
 Cmdlet ini mendapatkan semua detail lokasi kawasan Azure dengan konteks default.
 
-### Contoh 2: Dapatkan detail lokasi kawasan Azure berdasarkan nama lokasi
+### Contoh 2: Dapatkan detail lokasi kawasan Azure menurut nama lokasi
 ```powershell
 PS C:\> Get-AzImportExportLocation -Name eastus
 Name    Type
@@ -74,9 +74,9 @@ Name    Type
 East US Microsoft.ImportExport/locations
 ```
 
-Cmdlet ini mendapatkan detail lokasi kawasan Azure berdasarkan nama lokasi.
+Cmdlet ini mendapatkan detail lokasi kawasan Azure menurut nama lokasi.
 
-### Contoh 3: Dapatkan detail lokasi kawasan Azure berdasarkan identitas
+### Contoh 3: Dapatkan detail lokasi kawasan Azure menurut identitas
 ```powershell
 PS C:\> $Id = "/providers/Microsoft.ImportExport/locations/eastus"
 PS C:\> Get-AzImportExportLocation -InputObject $Id
@@ -85,12 +85,12 @@ Name    Type
 East US Microsoft.ImportExport/locations
 ```
 
-Daftar cmdlet ini mendapatkan detail lokasi kawasan Azure berdasarkan identitas.
+Daftar cmdlet ini mendapatkan detail lokasi kawasan Azure menurut identitas.
 
 ## PARAMETERS
 
 ### -AcceptLanguage
-Menentukan bahasa pilihan untuk respons tersebut.
+Menentukan bahasa pilihan untuk respons.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.IImportExportIdentity
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

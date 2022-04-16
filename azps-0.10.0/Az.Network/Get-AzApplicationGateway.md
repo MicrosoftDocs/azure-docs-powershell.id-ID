@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzApplicationGateway.md
 ms.openlocfilehash: 61547a4ee5f60fccc371ca7b2c426ca1a4bbb005
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425000"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142497761"
 ---
 # Get-AzApplicationGateway
 
@@ -35,26 +35,26 @@ Cmdlet **Get-AzApplicationGateway** mendapatkan gateway aplikasi.
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw sumber daya.
+Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 
-### Contoh 2: Dapatkan daftar gateway aplikasi dalam grup sumber daya
+### Contoh 2: Mendapatkan daftar gateway aplikasi dalam grup sumber daya
 ```
 PS C:\>$AppGwList = Get-AzApplicationGateway -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mendapatkan daftar semua gateway aplikasi di grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGwList sumber daya.
+Perintah ini mendapatkan daftar semua gateway aplikasi dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGwList.
 
-### Contoh 3: Dapatkan daftar gateway aplikasi dalam langganan
+### Contoh 3: Mendapatkan daftar gateway aplikasi dalam langganan
 ```
 PS C:\>$AppGwList = Get-AzApplicationGateway
 ```
 
-Perintah ini mendapatkan daftar semua gateway aplikasi dalam langganan dan menyimpannya di $AppGwList variabel.
+Perintah ini mendapatkan daftar semua gateway aplikasi dalam langganan dan menyimpannya dalam variabel $AppGwList.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway aplikasi yang akan dapatkan cmdlet ini.
+Menentukan nama gateway aplikasi yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

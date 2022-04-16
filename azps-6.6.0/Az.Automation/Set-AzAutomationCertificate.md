@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
 ms.openlocfilehash: 05a544efbbca4d64e2dbc8235d393721ea292710
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139944853"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142479887"
 ---
 # Set-AzAutomationCertificate
 
@@ -19,7 +19,7 @@ ms.locfileid: "139944853"
 Mengubah konfigurasi sertifikat Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Set-AzAutomationCertificate [-Name] <String> [-Description <String>] [-Password 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationCertificate** mengubah konfigurasi sertifikat dalam Otomatisasi Azure.
+Cmdlet **Set-AzAutomationCertificate** mengubah konfigurasi sertifikat dalam Azure Automation.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ PS C:\> Set-AzAutomationCertificate -AutomationAccountName "Contos17" -Name "Con
 ```
 
 Perintah pertama mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
-Perintah menyimpan objek tersebut dalam $Password variabel.
+Perintah menyimpan objek tersebut dalam variabel $Password.
 Perintah kedua mengubah sertifikat bernama ContosoCertificate.
 Perintah menggunakan kata sandi yang disimpan di $Password.
 Perintah menentukan nama akun dan jalur file yang diunggahnya.
@@ -49,7 +49,7 @@ Perintah menentukan nama akun dan jalur file yang diunggahnya.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini memodifikasi sertifikat.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah sertifikat.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk sertifikat yang dimodifikasi cmdlet ini.
+Menentukan deskripsi untuk sertifikat yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Exportable
+### -Dapat diekspor
 Menentukan apakah sertifikat bisa diekspor.
 
 ```yaml
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat yang dimodifikasi cmdlet ini.
+Menentukan nama sertifikat yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi untuk file sertifikat.
+Menentukan kata sandi untuk berkas sertifikat.
 
 ```yaml
 Type: System.Security.SecureString
@@ -138,9 +138,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur ke file skrip untuk diunggah.
-File bisa merupakan file .cer atau file .pfx.
+File dapat berupa file .cer atau file .pfx.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi sertifikat.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah sertifikat.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Security.SecureString
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

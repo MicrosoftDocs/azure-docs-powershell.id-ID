@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsIISLogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsIISLogCollection.md
-ms.openlocfilehash: b2aa373de41721bb063cef082e6b61051fb294a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 41c683e3c25f74c7a27c5cf5fd1c8abc831f1d60
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196791"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486709"
 ---
 # Disable-AzOperationalInsightsIISLogCollection
 
 ## SYNOPSIS
-Menghentikan kumpulan log IIS dari komputer.
+Menghentikan pengumpulan log IIS dari komputer.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/disable-azoperationalinsightsiislogcollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Disable-AzOperationalInsightsIISLogCollection [-Workspace] <PSWorkspace>
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzOperationalInsightsIISLogCollection** menghentikan kumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung dalam ruang kerja.
+Cmdlet **Disable-AzOperationalInsightsIISLogCollection** menghentikan pengumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ ResourceId        : /subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resource
 Kind              : IISLogs
 Properties        : {"state":"OnPremiseDisabled"}
 ```
- Menghentikan kumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung di ruang kerja.
+ Menghentikan pengumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung dalam ruang kerja.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ruang Kerja
-Menentukan ruang kerja tempat cmdlet beroperasi.
+Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, operational, insights
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationRunbook.md
 ms.openlocfilehash: 1b4e5515c8fabac4a2b4c80b22909c1376e520aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313181"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142479759"
 ---
 # Start-AzAutomationRunbook
 
@@ -19,7 +19,7 @@ ms.locfileid: "140313181"
 Memulai pekerjaan runbook.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/start-azautomationrunbook) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/start-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,24 +48,24 @@ Tentukan ID atau nama runbook.
 PS C:\>Start-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini memulai pekerjaan runbook untuk runbook yang bernama Runbk01 dalam akun Otomatisasi Azure yang bernama Contoso17.
+Perintah ini memulai pekerjaan runbook untuk runbook bernama Runbk01 di akun Azure Automation bernama Contoso17.
 
 ### Contoh 2: Memulai pekerjaan runbook Python 2 dengan parameter
 ```
 PS C:\>Start-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "RunbkPy01" -ResourceGroupName "ResourceGroup01" -Parameters @{"Key1"="ValueForPosition1";"Key2"="ValueForPosition2"}
 ```
 
-Perintah ini memulai pekerjaan runbook untuk runbook Python 2 yang bernama RunbkPy01 dalam akun Otomatisasi Azure yang bernama Contoso17 dengan "ValueForPosition1" sebagai parameter posisi pertama dan "ValueForPosition2" untuk yang kedua.
+Perintah ini memulai pekerjaan runbook untuk runbook Python 2 bernama RunbkPy01 di akun Azure Automation bernama Contoso17 dengan "ValueForPosition1" sebagai parameter posisi pertama dan "ValueForPosition2" untuk yang kedua.
 
-### Contoh 3: Mulai pekerjaan runbook dan tunggu hasil
+### Contoh 3: Memulai pekerjaan runbook dan menunggu hasil
 ```
 Start-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ResourceGroupName "ResourceGroup01" -MaxWaitSeconds 1000 -Wait
 ```
 
-Perintah ini memulai pekerjaan runbook untuk runbook yang bernama Runbk01 dalam akun Otomatisasi Azure yang bernama Contoso17.
-Perintah ini menentukan _parameter_ Tunggu.
-Oleh karena itu, fungsi ini mengembalikan hasil setelah pekerjaan selesai.
-Cmdlet menunggu hingga 1000 detik untuk hasil.
+Perintah ini memulai pekerjaan runbook untuk runbook bernama Runbk01 di akun Azure Automation bernama Contoso17.
+Perintah ini menentukan parameter _Tunggu_ .
+Oleh karena itu, mengembalikan hasil setelah pekerjaan selesai.
+Cmdlet menunggu hingga 1000 detik untuk hasilnya.
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWaitSeconds
-Menentukan jumlah detik cmdlet ini menunggu pekerjaan selesai sebelum mengabaikan pekerjaan.
-Nilai default adalah 10800, atau tiga jam.
+Menentukan jumlah detik cmdlet ini menunggu pekerjaan selesai sebelum meninggalkan pekerjaan.
+Nilai defaultnya adalah 10800, atau tiga jam.
 
 ```yaml
 Type: System.Int32
@@ -126,7 +126,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 ```yaml
 Type: System.Collections.IDictionary
 Parameter Sets: (All)
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunOn
-Menentukan Grup Pekerja Hibrid mana yang akan menjalankan buku runbook.
+Menentukan Grup Pekerja Hibrid mana yang menjalankan runbook.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Menunjukkan bahwa cmdlet ini menunggu pekerjaan selesai, ditangguhkan, atau gagal, lalu mengembalikan kontrol untuk Azure PowerShell.
+Menunjukkan bahwa cmdlet ini menunggu pekerjaan selesai, ditangguhkan, atau gagal, lalu mengembalikan kontrol ke Azure PowerShell.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

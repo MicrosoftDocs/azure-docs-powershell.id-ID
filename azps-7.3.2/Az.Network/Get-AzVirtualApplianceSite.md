@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualApplianceSite.md
-ms.openlocfilehash: d614098dcbe8308581d3bf5c5a93c02d670d38fd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d99f71f735160d8617e0215b3e5fc9f779517b0d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392775"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142487321"
 ---
 # Get-AzVirtualApplianceSite
 
 ## SYNOPSIS
-Dapatkan atau  List situs tersambung ke sumber daya Alat Virtual Jaringan.
+Dapatkan atau Daftar situs yang tersambung ke sumber daya Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualappliancesite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzVirtualApplianceSite -ResourceId <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Sumber Get-AzVirtualApplianceSite menghubungkan atau mencantumkan situs yang tersambung ke satu atau beberapa sumber daya Alat Virtual Jaringan.
+Get-AzVirtualApplianceSite mendapatkan atau mencantumkan situs yang tersambung ke satu atau beberapa sumber daya Peralatan Virtual Jaringan.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Etag              : 00000000-0000-0000-0000-000000000000
 Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.Network/networkVirtualAppliances/nva/virtualApplianceSites/testsite
 ```
 
-Dapatkan sumber daya situs Peralatan Virtual.
+Dapatkan sumber daya situs Alat Virtual.
 
 ### Contoh 2
 ```powershell
@@ -70,7 +73,7 @@ Etag              : 00000000-0000-0000-0000-000000000000
 Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testrg/providers/Microsoft.Network/networkVirtualAppliances/nva/virtualApplianceSites/testsite2
 ```
 
-Daftar sumber daya situs Alat Virtual dalam Alat Virtual Jaringan.
+Daftar sumber daya situs Peralatan Virtual di Peralatan Virtual Jaringan.
 
 
 ## PARAMETERS
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkVirtualApplianceId
-Alat Virtual Jaringan yang terhubung dengan situs.
+Network Virtual Appliance yang dilampirkan oleh situs.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari Situs Alat Virtual.
+Id sumber daya dari Situs Peralatan Virtual.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
+### Situs Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
 
 ## CATATAN
 

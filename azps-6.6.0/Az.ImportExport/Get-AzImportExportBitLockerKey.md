@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportBitLockerKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportBitLockerKey.md
 ms.openlocfilehash: bc857c7e05aa90c8a7d38e9413a2f3944ae2437f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140137275"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142474001"
 ---
 # Get-AzImportExportBitLockerKey
 
 ## SYNOPSIS
-Mengembalikan BitLocker Keys untuk semua drive dalam pekerjaan tertentu.
+Mengembalikan Tombol BitLocker untuk semua drive dalam pekerjaan yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/get-azimportexportbitlockerkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.importexport/get-azimportexportbitlockerkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzImportExportBitLockerKey -JobName <String> -ResourceGroupName <String> [-S
 ```
 
 ## DESCRIPTION
-Mengembalikan BitLocker Keys untuk semua drive dalam pekerjaan tertentu.
+Mengembalikan Tombol BitLocker untuk semua drive dalam pekerjaan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua Kunci BitLocker dalam pekerjaan ImportExport tertentu
+### Contoh 1: Mencantumkan semua Kunci BitLocker dalam pekerjaan ImportExport tertentu
 ```powershell
 PS C:\> Get-AzImportExportBitLockerKey -JobName test-job -ResourceGroupName ImportTestRG 
 BitLockerKey                                            DriveId
@@ -45,7 +45,7 @@ Cmdlet ini mencantumkan semua Kunci BitLocker dalam pekerjaan ImportExport terte
 ## PARAMETERS
 
 ### -AcceptLanguage
-Menentukan bahasa pilihan untuk respons tersebut.
+Menentukan bahasa pilihan untuk respons.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

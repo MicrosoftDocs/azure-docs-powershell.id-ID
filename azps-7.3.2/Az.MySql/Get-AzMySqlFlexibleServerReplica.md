@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerReplica.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerReplica.md
-ms.openlocfilehash: 459dc0b06cb0ec82fc5be84428cbb2f14b0c9c32
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5e7416c0a3dedd7f3dfa1ba847c8a8725f6eae08
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401751"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142488005"
 ---
 # Get-AzMySqlFlexibleServerReplica
 
 ## SYNOPSIS
-Daftar semua replika untuk server tertentu.
+Cantumkan semua replika untuk server tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverreplica) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMySqlFlexibleServerReplica -ResourceGroupName <String> -ServerName <String
 ```
 
 ## DESCRIPTION
-Daftar semua replika untuk server tertentu.
+Cantumkan semua replika untuk server tertentu.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

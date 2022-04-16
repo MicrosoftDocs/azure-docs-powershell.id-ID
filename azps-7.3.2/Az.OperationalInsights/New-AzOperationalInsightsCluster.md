@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsCluster.md
-ms.openlocfilehash: 27165790fa36dad72c645ae85bca916255a80db1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6321c8a012f279e4eb99673319b9aa1489372334
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392127"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142486457"
 ---
 # New-AzOperationalInsightsCluster
 
 ## SYNOPSIS
 Buat kluster
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Buat kluster
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-tipe identitas, nilai bisa menjadi 'SystemAssigned', 'Tidak ada'.
+tipe identitas, nilai dapat berupa 'SystemAssigned', 'None'.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAvailabilityZonesEnabled
-Bendera untuk Zona ketersediaan, dapat diatur ke benar hanya di kawasan yang didukung
+Bendera untuk zona ketersediaan,dapat diatur ke true hanya di wilayah yang didukung
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDoubleEncryptionEnabled
-Bendera untuk Enkripsi Ganda, bisa diatur ke true hanya di kawasan yang didukung
+Bendera untuk Enkripsi Ganda, dapat diatur ke true hanya di kawasan yang didukung
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Uri Kunci Vault
+Key Vault Uri
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Versi Utama
+Versi Kunci
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan geografis yang akan digunakan oleh kluster tersebut.
+Wilayah geografis yang akan digunakan kluster.
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas Sku, nilai harus kelipatan 100 dan dalam rentang 1000-2000.
+Kapasitas Sku, nilai perlu kelipatan 100 dan dalam rentang 1000-2000.
 
 ```yaml
 Type: System.Int64
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Sku Nama, sekarang bisa menjadi 'CapacityReservation' saja
+Nama Sku, kini hanya dapat berupa 'CapacityReservation'
 
 ```yaml
 Type: System.String
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,11 +323,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

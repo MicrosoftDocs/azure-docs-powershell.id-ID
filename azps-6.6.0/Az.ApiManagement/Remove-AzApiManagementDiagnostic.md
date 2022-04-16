@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
 ms.openlocfilehash: c693ce15413455b36590e3fe6e7c587ebe599f76
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140288923"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142480563"
 ---
 # Remove-AzApiManagementDiagnostic
 
@@ -18,7 +18,7 @@ ms.locfileid: "140288923"
 Hapus entitas Diagnostik dari lingkup tingkat Global atau API.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementdiagnostic) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-AzApiManagementDiagnostic -InputObject <PsApiManagementDiagnostic> [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementDiagnostic** menghapus entitas diagnostik yang ditentukan dari `DiagnosticId` lingkup global atau lingkup `ApiId`
+Cmdlet **Remove-AzApiManagementDiagnostic menghapus entitas diagnostik** yang ditentukan oleh `DiagnosticId` dari lingkup global atau `ApiId` lingkup
 
 ## EXAMPLES
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId of Diagnostic. Parameter ini diperlukan.
+Arm ResourceId dari Diagnostik. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

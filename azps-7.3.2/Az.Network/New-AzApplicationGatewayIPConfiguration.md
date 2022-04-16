@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIPConfiguration.md
-ms.openlocfilehash: 9b53d207ff0defb24b510028485b1b158a17b2aa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 76a61b25817a010ab9ad9bbad5685b95b5a60798
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372126"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142494377"
 ---
 # New-AzApplicationGatewayIPConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi IP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,25 +37,25 @@ New-AzApplicationGatewayIPConfiguration -Name <String> [-Subnet <PSSubnet>]
 
 ## DESCRIPTION
 Cmdlet **New-AzApplicationGatewayIPConfiguration** membuat konfigurasi IP untuk gateway aplikasi.
-Konfigurasi IP berisi subnet di mana gateway aplikasi digunakan.
+Konfigurasi IP berisi subnet tempat gateway aplikasi digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat konfigurasi IP untuk gateway aplikasi.
+### Contoh 1: Membuat konfigurasi IP untuk gateway aplikasi.
 ```
 PS C:\>$VNet = Get-AzVirtualNetwork -Name "VNet01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Subnet = Get-AzVirtualNetworkSubnetConfig -Name "Subnet01" -VirtualNetwork $VNet 
 PS C:\ $GatewayIpConfig = New-AzApplicationGatewayIPConfiguration -Name "AppGwSubnet01" -Subnet $Subnet
 ```
 
-Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01.
-Perintah kedua mendapatkan konfigurasi subnet untuk subnet yang dimiliki jaringan virtual pada perintah sebelumnya, dan menyimpannya dalam $Subnet baru.
-Perintah ketiga akan membuat konfigurasi IP menggunakan $Subnet.
+Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
+Perintah kedua mendapatkan konfigurasi subnet untuk subnet yang dimiliki jaringan virtual di perintah sebelumnya, dan menyimpannya dalam variabel $Subnet.
+Perintah ketiga membuat konfigurasi IP menggunakan $Subnet.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi IP untuk dibuat.
+Menentukan nama konfigurasi IP yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -114,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

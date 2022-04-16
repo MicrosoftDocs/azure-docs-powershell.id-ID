@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
 ms.openlocfilehash: 4be10e490fea936973f36c467be2c7acb28a690f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140467397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142478051"
 ---
 # Import-AzContainerRegistryImage
 
 ## SYNOPSIS
-Impor gambar dari registri publik/azure ke registri azure wadah.
+Impor gambar dari registri publik/azure ke registri kontainer azure.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/import-azcontainerregistryimage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/import-azcontainerregistryimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +54,7 @@ Import-AzContainerRegistryImage -ResourceGroupName <String> -RegistryName <Strin
 ```
 
 ## DESCRIPTION
-Impor gambar dari registri publik/azure ke registri azure wadah.
+Impor gambar dari registri publik/azure ke registri kontainer azure.
 
 ## EXAMPLES
 
@@ -63,16 +63,16 @@ Impor gambar dari registri publik/azure ke registri azure wadah.
 PS C:\> Import-AzContainerRegistryImage -SourceImage library/busybox:latest -ResourceGroupName $resourceGroupName -RegistryName $RegistryName -SourceRegistryUri docker.io -TargetTag busybox:latest
 ```
 
-Impor busybox ke ACR. Catatan: 
-* "library/" perlu ditambahkan sebelum gambar sumber. "busybox:latest" => "library/busybox:latest"
-* Kredensial diperlukan jika registri sumber tidak tersedia untuk publik
+Impor kotak sibuk ke ACR. Catatan: 
+* "pustaka/" perlu ditambahkan sebelum gambar sumber. "busybox:latest" => "library/busybox:latest"
+* Kredensial diperlukan jika registri sumber tidak tersedia untuk umum
 
 ### Contoh 2
 ```powershell
 PS C:\> Import-AzContainerRegistryImage -SourceImage $SourceRegistry.azurecr.io/busybox:latest -ResourceGroupName $resourceGroupName -RegistryName $RegistryName -SourceRegistryResourceId $SourceACRID -TargetTag busybox:latest
 ```
 
-Impor kotak sibuk dari ACR sumber untuk menargetkan ACR. Catatan: 
+Impor kotak sibuk dari ACR sumber ke ACR target. Catatan: 
 * Kredensial diperlukan jika pengguna admin untuk registri sumber dinonaktifkan.
 
 ## PARAMETERS
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Ketika Paksa, setiap tag target yang sudah ada akan ditimpa.
-Saat NoForce, tag target apa pun yang sudah ada akan gagal operasi sebelum penyalinan apa pun dimulai.
+Ketika Paksa, semua tag target yang sudah ada akan ditimpa.
+Ketika NoForce, semua tag target yang sudah ada akan gagal dalam operasi sebelum penyalinan dimulai.
 
 ```yaml
 Type: System.String
@@ -157,12 +157,12 @@ Accept wildcard characters: False
 ### -SourceImage
 Nama penyimpanan gambar sumber.
 
-Tentukan gambar berdasarkan tempat penyimpanan ('halo dunia').
+Tentukan gambar menurut repository ('hello-world').
 Ini akan menggunakan tag 'terbaru'.
 
-Tentukan gambar menurut tag ('halo dunia:terbaru').
+Tentukan gambar menurut tag ('hello-world:latest').
 
-Tentukan gambar dengan ringkasan manifes berbasis sha256 ('hello-world@sha256:abc123).
+Tentukan gambar menurut pencernaan manifes berbasis sha256 ('hello-world@sha256:abc123').
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceRegistryResourceId
-Pengidentifikasi sumber daya dari Azure Container Registry sumber.
+Pengidentifikasi sumber daya sumber Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -207,8 +207,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetTag
-Daftar string dari repo\[:tag formulir\].
-When tag is omitted the source will be used (or 'latest' if source tag is also omitted).
+Daftar string formulir repo\[:tag\].
+Ketika tag dihilangkan, sumber akan digunakan (atau 'terbaru' jika tag sumber juga dihilangkan).
 
 ```yaml
 Type: System.String[]
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

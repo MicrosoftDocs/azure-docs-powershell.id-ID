@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeDevice.md
 ms.openlocfilehash: ba8e7530a233516fef6f8c4cfd3d870c7e70ddf1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078075"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142477468"
 ---
 # Remove-AzDataBoxEdgeDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "140078075"
 Menghapus perangkat Data Box Edge.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgedevice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Remove-AzDataBoxEdgeDevice -InputObject <PSDataBoxEdgeDevice> [-AsJob]
 Cmdlet **Remove-AzDataBoxEdgeDevice** menghapus konfigurasi untuk perangkat Data Box Edge.
 Perhatikan bahwa perangkat hanya dapat dihapus setelah Anda membuat pesanan dan sebelum perangkat disiapkan oleh Microsoft untuk pengiriman.
 
-Lihat dokumentasi tentang Menghapus sumber daya sebelum menggunakan [cmdlet ini](https://docs.microsoft.com/azure/databox-online/data-box-edge-return-device#delete-the-resource)
+Rujuk dokumentasi tentang Menghapus sumber daya sebelum menggunakan [cmdlet](https://docs.microsoft.com/azure/databox-online/data-box-edge-return-device#delete-the-resource) ini
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ PS C:\> Remove-AzDataBoxEdgeDevice ResourceGroupName resourceGroupName -Name dev
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
