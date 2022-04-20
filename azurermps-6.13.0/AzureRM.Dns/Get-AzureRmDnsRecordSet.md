@@ -10,8 +10,8 @@ ms.openlocfilehash: c45fc33ec45ce0843fe7ef832a70ec622b14af8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968315"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661851"
 ---
 # Get-AzureRmDnsRecordSet
 
@@ -210,7 +210,7 @@ Parameter: Zona (ByValue)
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

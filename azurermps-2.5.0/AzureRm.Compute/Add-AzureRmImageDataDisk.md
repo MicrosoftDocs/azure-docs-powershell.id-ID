@@ -7,8 +7,8 @@ ms.openlocfilehash: b4412cb85534d1aae780b16450726920921d811e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142394104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668366"
 ---
 # Add-AzureRmImageDataDisk
 
@@ -234,7 +234,7 @@ System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, Publi
 
 ### Microsoft.Azure.Management.Compute.Models.Image
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

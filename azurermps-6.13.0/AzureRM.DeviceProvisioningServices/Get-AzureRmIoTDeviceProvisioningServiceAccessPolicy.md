@@ -9,13 +9,13 @@ ms.openlocfilehash: e0685e82a4db2c786d4bb578544f6cbbd5dbadc7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142388156"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661914"
 ---
 # Get-AzureRmIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
-Cantumkan semua atau perlihatkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+Cantumkan semua atau tampilkan detail kebijakan akses bersama di layanan penyediaan perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-Key
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Layanan Penyediaan Perangkat Hub Azure IoT, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -176,6 +176,6 @@ Parameter: DpsObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSSharedAccessSignatureAuthorizationRuleAccessRightsDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

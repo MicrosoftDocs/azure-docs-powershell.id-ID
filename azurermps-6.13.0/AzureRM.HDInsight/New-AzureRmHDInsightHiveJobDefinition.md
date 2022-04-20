@@ -10,8 +10,8 @@ ms.openlocfilehash: 99ed451e43062cd5411a7a8bc1577646226aa8b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097818"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661529"
 ---
 # New-AzureRmHDInsightHiveJobDefinition
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightHiveJobDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

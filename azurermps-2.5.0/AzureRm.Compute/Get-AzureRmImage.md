@@ -7,8 +7,8 @@ ms.openlocfilehash: 8508a7353924342449324588e90abf3807d7f7ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141889395"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668250"
 ---
 # Get-AzureRmImage
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

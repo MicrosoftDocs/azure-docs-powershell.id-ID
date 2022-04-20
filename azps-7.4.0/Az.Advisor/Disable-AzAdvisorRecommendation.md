@@ -9,8 +9,8 @@ ms.openlocfilehash: 03971a72c7097aa79163203d35daea4d7f167bc1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142688770"
 ---
 # Disable-AzAdvisorRecommendation
 
@@ -212,6 +212,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorSuppressionContract
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

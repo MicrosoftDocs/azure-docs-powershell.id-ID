@@ -7,8 +7,8 @@ ms.openlocfilehash: a5807f3501155b771a586d8a96689325689cf4c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142312229"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654606"
 ---
 # Set-AzureRoute
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

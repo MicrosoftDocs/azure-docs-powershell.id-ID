@@ -7,8 +7,8 @@ ms.openlocfilehash: 655679da8cf8f63f23c010f13e1cc2293d5e5baf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920138"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142655272"
 ---
 # Remove-AzurePublicIP
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.IPersistentVM
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

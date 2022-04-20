@@ -7,8 +7,8 @@ ms.openlocfilehash: 32ed03788f14eac65fdee9f3284f10dc4e9daab6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142334990"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142655290"
 ---
 # Remove-AzureNetworkSecurityGroupAssociation
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: e09cd6b67b7894d4f4e9d00caddaa8ef48a82d58
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996407"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142681426"
 ---
 # Get-AzMarketplaceTerms
 
@@ -118,6 +118,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

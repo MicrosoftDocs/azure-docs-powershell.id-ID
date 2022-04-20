@@ -9,8 +9,8 @@ ms.openlocfilehash: 218fd58571ba3f00da35cdc4011244f85f55f81e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994266"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142674568"
 ---
 # Remove-AzRelayHybridConnection
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 77bc606b1ee022aeac83cb74c139e68a968b2966
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421356"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142675054"
 ---
 # New-AzPrivateDnsZone
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsZone
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

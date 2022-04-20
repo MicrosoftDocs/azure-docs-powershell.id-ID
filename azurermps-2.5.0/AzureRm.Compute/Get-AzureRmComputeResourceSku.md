@@ -7,8 +7,8 @@ ms.openlocfilehash: e7ebc6a8e6b59679757f559ff2d09ebaa8c5475f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286304"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668272"
 ---
 # Get-AzureRmComputeResourceSku
 
@@ -63,7 +63,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: 2b0179006f64f94d94d11c2a1fd8159d1cbeefde
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104455"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668394"
 ---
 # Remove-AzureStorageBlob
 
@@ -311,7 +311,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

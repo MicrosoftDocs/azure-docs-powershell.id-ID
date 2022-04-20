@@ -9,8 +9,8 @@ ms.openlocfilehash: 46557426268a34f4f85a8d811eba3ee9b82a4b28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432115"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142681336"
 ---
 # Get-AzMigrateReplicationFabric
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IFabric
 
-## CATATAN
+## NOTES
 
 ALIAS
 

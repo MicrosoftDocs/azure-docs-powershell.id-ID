@@ -7,8 +7,8 @@ ms.openlocfilehash: d899b34e2f880a0351ce4d10f360f7bc29011b0c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668700"
 ---
 # Disable-AzureStorageDeleteRetentionPolicy
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands. Storage. Model.ResourceModel.PSDeleteRetentionPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

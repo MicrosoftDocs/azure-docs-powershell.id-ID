@@ -9,8 +9,8 @@ ms.openlocfilehash: d154cf275e0f613a5b982e6a5d618e9d36f787d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142681534"
 ---
 # Get-AzMariaDbServer
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.Api20180601Preview.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 

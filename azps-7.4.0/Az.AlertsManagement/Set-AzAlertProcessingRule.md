@@ -9,8 +9,8 @@ ms.openlocfilehash: 4e469a570915550c8d7409e11ecea24e3630b8ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142004782"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142688608"
 ---
 # Set-AzAlertProcessingRule
 
@@ -650,6 +650,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSActionRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

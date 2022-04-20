@@ -9,8 +9,8 @@ ms.openlocfilehash: 59e7652d8ca3b2e26246ba4f8924f6a6b9d48f96
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140650"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661279"
 ---
 # Remove-AzureRmIotHubEventHubConsumerGroup
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

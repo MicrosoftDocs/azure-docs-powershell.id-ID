@@ -9,8 +9,8 @@ ms.openlocfilehash: cf9c7e515e3eb68044f92c8269c2d383a15b8dc4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427264"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142688500"
 ---
 # Remove-AzAnalysisServicesServer
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: Remove-AzAs
 
 ## RELATED LINKS

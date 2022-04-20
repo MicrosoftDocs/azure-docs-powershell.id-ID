@@ -9,8 +9,8 @@ ms.openlocfilehash: 0711bd1d6290191c2d5311a7375e6f81c4ecd573
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823190"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661341"
 ---
 # Get-AzureRmIotHubRoute
 
@@ -174,6 +174,6 @@ System.String
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteMetadata
 System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

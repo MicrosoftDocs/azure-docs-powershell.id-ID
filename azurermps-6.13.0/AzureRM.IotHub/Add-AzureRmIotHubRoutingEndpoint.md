@@ -9,8 +9,8 @@ ms.openlocfilehash: d251d3159111437cd06880a49069aee7aca6d80f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884614"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661283"
 ---
 # Add-AzureRmIotHubRoutingEndpoint
 
@@ -276,6 +276,6 @@ System.String
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingEventHubEndpoint
 Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingServiceBusQueueEndpoint Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingServiceBusTopicEndpoint Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingStorageContainerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

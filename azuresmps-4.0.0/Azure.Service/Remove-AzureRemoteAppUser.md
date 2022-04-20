@@ -7,8 +7,8 @@ ms.openlocfilehash: 384f221dab9bb348e63e2e750f32bc7173666edd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142655254"
 ---
 # Remove-AzureRemoteAppUser
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
