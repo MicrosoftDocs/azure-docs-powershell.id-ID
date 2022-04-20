@@ -9,8 +9,8 @@ ms.openlocfilehash: e7261f307aeb31a183f713f72b6f7c1d3a49ee8c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142685080"
 ---
 # New-AzDataMigrationConnectionInfo
 
@@ -80,6 +80,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataMigration.Models.ConnectionInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

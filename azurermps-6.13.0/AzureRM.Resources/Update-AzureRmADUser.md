@@ -9,8 +9,8 @@ ms.openlocfilehash: a07d9119d5e83c92d96ab22e98125459945f786b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658933"
 ---
 # Update-AzureRmADUser
 
@@ -304,6 +304,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

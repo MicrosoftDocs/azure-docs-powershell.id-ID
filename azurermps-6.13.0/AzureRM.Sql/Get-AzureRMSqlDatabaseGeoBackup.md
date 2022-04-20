@@ -10,8 +10,8 @@ ms.openlocfilehash: f22730e39a1b53cfea8181163dd770c67dc598a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141880808"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658552"
 ---
 # Get-AzureRmSqlDatabaseGeoBackup
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

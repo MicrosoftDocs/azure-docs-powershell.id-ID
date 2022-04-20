@@ -9,8 +9,8 @@ ms.openlocfilehash: 333a56a59c28482c2da228e3e9c0f8c2f1c21f06
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924856"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659499"
 ---
 # Add-AzureRmADGroupMember
 
@@ -228,6 +228,6 @@ Parameter: TargetGroupObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: a3bccd635c5bb2a91cb0b8ea9bc09f93070d447d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142388564"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142662656"
 ---
 # New-AzureRmDataFactoryV2IntegrationRuntimeKey
 
@@ -223,7 +223,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

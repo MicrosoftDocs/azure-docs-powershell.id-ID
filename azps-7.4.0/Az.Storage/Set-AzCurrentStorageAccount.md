@@ -10,8 +10,8 @@ ms.openlocfilehash: 7273e19ba982ce90078905234d1c866f713c55e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428184"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142670590"
 ---
 # Set-AzCurrentStorageAccount
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

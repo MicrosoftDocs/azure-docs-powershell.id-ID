@@ -7,8 +7,8 @@ ms.openlocfilehash: 045a244f8925ae2c6457cb8c00b83a97a3aa3960
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141919425"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142650082"
 ---
 # Get-AzsContainerService
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerServiceAdmin.Models.Api20191101.IContainerServicesListValueItem
 
-## CATATAN
+## NOTES
 
 ALIAS
 

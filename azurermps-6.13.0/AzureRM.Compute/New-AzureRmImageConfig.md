@@ -9,8 +9,8 @@ ms.openlocfilehash: f2d5903de64655b79765774f7232790f8a00ffc1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663868"
 ---
 # New-AzureRmImageConfig
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 83f697733d56ae7d99bc0b2660b5abbaca15a71f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663606"
 ---
 # Remove-AzureRmVMSqlServerExtension
 
@@ -112,7 +112,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

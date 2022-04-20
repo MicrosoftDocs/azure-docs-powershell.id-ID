@@ -10,8 +10,8 @@ ms.openlocfilehash: 7307d27eaf463b8e1eb3e1eee3b8c3e2eea31333
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434831"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142669294"
 ---
 # Remove-AzTrafficManagerProfile
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 22f77bfc5802527103dd0e391a11e16833696abd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358963"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663881"
 ---
 # Get-AzureRmVMUsage
 
@@ -81,7 +81,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

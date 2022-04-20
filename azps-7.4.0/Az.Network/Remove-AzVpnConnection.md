@@ -9,8 +9,8 @@ ms.openlocfilehash: d5e6d6e6a3625a05ba4064f840284e2e16a36aa9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995058"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142677178"
 ---
 # Remove-AzVpnConnection
 
@@ -254,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

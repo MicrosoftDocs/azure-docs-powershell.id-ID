@@ -7,8 +7,8 @@ ms.openlocfilehash: 1de012c80c2c7df68474b56678abfe7f73e44d42
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141880637"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656136"
 ---
 # Get-WAPackVMOSDisk
 
@@ -119,7 +119,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

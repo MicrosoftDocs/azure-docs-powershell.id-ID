@@ -9,8 +9,8 @@ ms.openlocfilehash: a9358b90cf87f38b097ddd0514843c902e71885f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988914"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142669852"
 ---
 # Get-AzSynapseTriggerSubscriptionStatus
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSTriggerSubscriptionOperationStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
