@@ -8,8 +8,8 @@ ms.openlocfilehash: f7f19a46a8a7f0bfd0e9ec20fe40201e4bea668a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929849"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668130"
 ---
 # New-AzureRmVM
 
@@ -579,7 +579,7 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

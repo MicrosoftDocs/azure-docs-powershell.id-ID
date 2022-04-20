@@ -10,8 +10,8 @@ ms.openlocfilehash: a1e259a72492d89ba9f48d58a19ad56a3cae4fe4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995634"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142679518"
 ---
 # Get-AzExpressRouteCircuitARPTable
 
@@ -126,7 +126,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitArpTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

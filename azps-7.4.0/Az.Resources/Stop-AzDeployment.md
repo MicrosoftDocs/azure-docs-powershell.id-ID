@@ -9,8 +9,8 @@ ms.openlocfilehash: 8ef7274b4f00c7d4bfeef9ad130bab03c78ffb8e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420719"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673272"
 ---
 # Stop-AzDeployment
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

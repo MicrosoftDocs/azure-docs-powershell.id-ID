@@ -9,8 +9,8 @@ ms.openlocfilehash: 629adfe46e781b35e07a7a3e21746f111b922d47
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421446"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142675324"
 ---
 # Remove-AzPostgreSqlFlexibleServerFirewallRule
 
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

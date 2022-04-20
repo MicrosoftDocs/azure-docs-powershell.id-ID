@@ -9,8 +9,8 @@ ms.openlocfilehash: 7f75f07ee8f53a57cdb2e359fb4addb51b1d7f76
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661280"
 ---
 # Backup-AzureKeyVaultCertificate
 
@@ -213,6 +213,6 @@ Parameter: InputObject (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

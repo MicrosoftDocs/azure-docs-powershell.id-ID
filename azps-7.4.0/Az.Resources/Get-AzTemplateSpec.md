@@ -9,8 +9,8 @@ ms.openlocfilehash: 11733e128be5802d73b3da03359f55e7d9e05925
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420869"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673866"
 ---
 # Get-AzTemplateSpec
 
@@ -194,6 +194,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpec
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

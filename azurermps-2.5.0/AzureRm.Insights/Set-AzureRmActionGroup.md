@@ -8,8 +8,8 @@ ms.openlocfilehash: 25fe8b74c48bd86092ce2ef87b967234eae9a74c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929184"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142667648"
 ---
 # Set-AzureRmActionGroup
 
@@ -282,7 +282,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

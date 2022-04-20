@@ -9,8 +9,8 @@ ms.openlocfilehash: 0bfc3d974d4f5576f1f7a4ee932aac784a07ba3c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420889"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142674064"
 ---
 # Get-AzRoleEligibilitySchedule
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.Api20201001Preview.IRoleEligibilitySchedule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

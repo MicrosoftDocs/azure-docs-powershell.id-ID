@@ -9,5 +9,5 @@ ms.lasthandoff: 01/13/2022
 ms.locfileid: "137778684"
 ---
 > [!WARNING]
-> Terdapat perubahan **yang tidak dapat dilakukan dalam cmdlet ini** dari versi 6.6.0. Cmdlet dalam modul Az PowerShell yang mengandalkan Azure AD Graph dimigrasikan ke Microsoft Graph. Perubahan ini terjadi karena pengumuman [pensiun Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
-> Untuk informasi selengkapnya, lihat [Azure AD ke Microsoft Graph perubahan migrasi di Azure PowerShell](/powershell/azure/azps-msgraph-migration-changes).
+> Ada **perubahan yang merusak dalam cmdlet ini** dari versi 6.6.0. Cmdlet dalam modul Az PowerShell yang mengandalkan Azure AD Graph telah bermigrasi ke Microsoft Graph. Perubahan ini terjadi karena [pengumuman penghentian Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
+> Untuk informasi selengkapnya, lihat [Azure AD ke Microsoft Graph perubahan migrasi dalam Azure PowerShell](/powershell/azure/azps-msgraph-migration-changes).

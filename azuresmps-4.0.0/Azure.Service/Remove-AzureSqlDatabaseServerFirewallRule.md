@@ -7,8 +7,8 @@ ms.openlocfilehash: 98cbe46b8081ae34837704729e29e142c2c48c33
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244413"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142655092"
 ---
 # Remove-AzureSqlDatabaseServerFirewallRule
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

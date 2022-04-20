@@ -7,8 +7,8 @@ ms.openlocfilehash: 92455aba5160be2f59fd6828e5080fadc4a2576a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142277592"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654966"
 ---
 # Remove-AzureVirtualIP
 
@@ -148,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Utilities.Common.ManagementOperationContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 5e32976155b1b6971fe9709d2a34bf8eff8dafee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244114"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654930"
 ---
 # Remove-WAPackCloudService
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

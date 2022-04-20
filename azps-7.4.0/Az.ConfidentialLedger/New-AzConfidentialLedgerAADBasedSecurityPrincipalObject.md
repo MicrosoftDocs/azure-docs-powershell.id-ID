@@ -9,8 +9,8 @@ ms.openlocfilehash: b1bb2cfe4d98687d797f11349dd3e25b352b988d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179967"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142686574"
 ---
 # New-AzConfidentialLedgerAADBasedSecurityPrincipalObject
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.Api20210513Preview.AadBasedSecurityPrincipal
 
-## CATATAN
+## NOTES
 
 ALIAS
 

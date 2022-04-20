@@ -9,8 +9,8 @@ ms.openlocfilehash: ca1a6101d674b31c88f94242a425ba435c705cfc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142251811"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142692856"
 ---
 # Set-AzSqlInstanceActiveDirectoryAdministrator
 
@@ -238,7 +238,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.InstanceActiveDirectoryAdministrator.Model.AzureSqlInstanceActiveDirectoryAdministratorModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

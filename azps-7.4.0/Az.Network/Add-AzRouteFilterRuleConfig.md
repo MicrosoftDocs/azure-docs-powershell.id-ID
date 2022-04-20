@@ -9,8 +9,8 @@ ms.openlocfilehash: 5517cce7d74f340dd57240e9b7fbb7f43d16b0d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172762"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142679860"
 ---
 # Add-AzRouteFilterRuleConfig
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteFilter
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

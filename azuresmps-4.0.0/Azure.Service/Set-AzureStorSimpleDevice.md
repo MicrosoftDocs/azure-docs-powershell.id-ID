@@ -7,8 +7,8 @@ ms.openlocfilehash: 6ac594d89a6b4de30234d6ee6b3ee66e8a9b8285
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141880214"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654452"
 ---
 # Set-AzureStorSimpleDevice
 
@@ -238,7 +238,7 @@ Anda dapat menyalurkan objek **NetworkConfig** atau **TimeZoneInfo** ke cmdlet i
 ### DeviceDetails
 Cmdlet ini mengembalikan detail perangkat yang diperbarui untuk perangkat virtual.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 8a7ad4662e63d5785bfbbbc80998285c5a4cc156
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815751"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653976"
 ---
 # Stop-AzureSqlDatabaseCopy
 
@@ -263,7 +263,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Tidak
 
-## CATATAN
+## NOTES
 * Autentikasi: Cmdlet ini memerlukan autentikasi berbasis sertifikat. Untuk contoh cara menggunakan autentikasi berbasis sertifikat untuk mengatur langganan saat ini, lihat cmdlet **New-AzureSqlDatabaseServerContext** .
 * Pembatasan: Di server yang menjadi host database sekunder, hanya penghentian paksa yang didukung.
 * Dampak penghentian pada database sekunder sebelumnya: Setelah penghentian, database sekunder menjadi database independen. Jika penyemaian sudah selesai di database sekunder, setelah penghentian database ini terbuka untuk akses penuh. Jika database sumber adalah database baca-tulis, database sekunder sebelumnya juga menjadi database baca-tulis.

@@ -9,8 +9,8 @@ ms.openlocfilehash: d5aa0cdda9b194c4167aef1c04c2d01605e8c894
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995903"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142680076"
 ---
 # Set-AzNetAppFilesPool
 
@@ -279,6 +279,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

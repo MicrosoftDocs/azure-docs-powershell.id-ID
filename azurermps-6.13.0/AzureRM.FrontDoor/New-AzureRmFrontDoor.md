@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### <a name="microsoftazurecommandsfrontdoormodelspsfrontdoor"></a>Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor
 
-## <a name="notes"></a>CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 674105b31c06d3def687bfc58f8b16be1c6b86f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778892"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661281"
 ---
 # Remove-AzureRmIotHub
 
@@ -127,6 +127,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

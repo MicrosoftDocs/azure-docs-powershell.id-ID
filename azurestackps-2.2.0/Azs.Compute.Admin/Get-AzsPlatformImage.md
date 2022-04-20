@@ -7,8 +7,8 @@ ms.openlocfilehash: bcb407a1715a83d7e415c87839633c833101cb4a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141812246"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142650293"
 ---
 # Get-AzsPlatformImage
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20151201Preview.IPlatformImage
 
-## CATATAN
+## NOTES
 
 ALIAS
 

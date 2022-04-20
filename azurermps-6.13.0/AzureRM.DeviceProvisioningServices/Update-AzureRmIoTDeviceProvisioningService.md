@@ -9,8 +9,8 @@ ms.openlocfilehash: 80032ab2a677683ff876aca499f7e0ee682e6fd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064559"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142661850"
 ---
 # Update-AzureRmIoTDeviceProvisioningService
 
@@ -289,6 +289,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

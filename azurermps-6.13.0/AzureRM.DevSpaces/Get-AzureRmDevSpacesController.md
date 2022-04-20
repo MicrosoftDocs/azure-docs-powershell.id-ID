@@ -9,8 +9,8 @@ ms.openlocfilehash: d0140af9d5345e9f3f68c212ae43403fc0f64280
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142141971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142662084"
 ---
 # Get-AzureRmDevSpacesController
 
@@ -130,6 +130,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DevSpaces.Models.PSController
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

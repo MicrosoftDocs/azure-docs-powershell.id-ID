@@ -9,13 +9,13 @@ ms.openlocfilehash: 758b080b777ae70df14a6f5319f80af7b780c7bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063697"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660950"
 ---
 # Get-AzureKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Dapatkan Key Vault dikelola Storage Definisi SAS.
+Dapatkan Key Vault yang dikelola Storage SAS Definitions.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,11 +34,11 @@ Get-AzureKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedSt
 ```
 
 ## DESCRIPTION
-Mendapatkan Key Vault dikelola Storage Definisi SAS jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault akun Storage dikelola yang ditentukan dalam kubah dicantumkan.
+Mendapatkan Key Vault managed Storage SAS Definition jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault yang ditentukan mengelola Akun Penyimpanan dalam kubah dicantumkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua definisi Key Vault dikelola Storage SAS
+### Contoh 1: Cantumkan semua Key Vault yang dikelola Storage SAS Definitions
 ```powershell
 PS C:\> Get-AzureKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount'
 
@@ -52,9 +52,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh kubah 'myvault'
+Mencantumkan semua definisi SAS yang terkait dengan Key Vault managed Storage Account 'mystorageaccount' yang dikelola oleh vault 'myvault'
 
-### Contoh 2: Dapatkan akun Storage terkelola Key Vault
+### Contoh 2: Dapatkan Akun Penyimpanan terkelola Key Vault
 ```powershell
 PS C:\> Get-AzureKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'accountsas'
 
@@ -70,7 +70,7 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mendapatkan detail 'accountsas' Definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh vault 'myvault'.
+Mendapatkan detail 'accountsas' Definisi SAS yang terkait dengan Key Vault managed Storage Account 'mystorageaccount' yang dikelola oleh vault 'myvault'.
 
 ## PARAMETERS
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Storage nama definisi sas.
+Nama definisi sas penyimpanan.
 Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
 
 ```yaml
@@ -185,7 +185,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultManagedStorageSasDefinitionIdentityItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

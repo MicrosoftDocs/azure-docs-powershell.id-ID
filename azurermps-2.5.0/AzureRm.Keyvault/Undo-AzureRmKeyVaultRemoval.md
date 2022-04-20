@@ -7,8 +7,8 @@ ms.openlocfilehash: a557676d35eb167438f29c36a729ee652a45d591
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104031"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142667188"
 ---
 # Undo-AzureRmKeyVaultRemoval
 
@@ -158,7 +158,7 @@ System.Collections.Hashtable
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

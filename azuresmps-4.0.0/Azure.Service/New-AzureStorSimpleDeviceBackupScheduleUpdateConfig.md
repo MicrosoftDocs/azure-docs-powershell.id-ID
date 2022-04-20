@@ -7,8 +7,8 @@ ms.openlocfilehash: 6a3c2bcfe13108842ffa83b2daf44a9c05b5bbf6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142655758"
 ---
 # New-AzureStorSimpleDeviceBackupScheduleUpdateConfig
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### BackupScheduleUpdateRequest
 Cmdlet ini mengembalikan objek **BackupScheduleUpdateRequest** yang berisi informasi tentang jadwal cadangan yang diperbarui.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: 76bdebc68f1fafef127863ef753c28fce7034fe0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104240"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142667908"
 ---
 # Set-AzureRmVMDiskEncryptionExtension
 
@@ -583,7 +583,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

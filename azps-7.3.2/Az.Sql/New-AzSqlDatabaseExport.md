@@ -10,8 +10,8 @@ ms.openlocfilehash: a6b3efe20584593ac7be3a9256ea1e8a19f2d5eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142339775"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142693504"
 ---
 # New-AzSqlDatabaseExport
 
@@ -317,7 +317,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ImportExport.Model.AzureSqlDatabaseImportExportBaseModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS

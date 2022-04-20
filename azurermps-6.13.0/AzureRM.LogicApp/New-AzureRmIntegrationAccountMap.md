@@ -10,8 +10,8 @@ ms.openlocfilehash: 1b4f46832b08928fe64b080f10331441248065d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140146"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660742"
 ---
 # New-AzureRmIntegrationAccountMap
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.IntegrationAccountMap
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

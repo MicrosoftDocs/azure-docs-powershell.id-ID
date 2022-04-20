@@ -9,8 +9,8 @@ ms.openlocfilehash: 9f0155bc7b9a4cc8d4958b3192c145d6c6e77a68
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432074"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142681174"
 ---
 # Register-AzMigrateProjectTool
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

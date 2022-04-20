@@ -7,8 +7,8 @@ ms.openlocfilehash: e55dc41175fb2104c48ab40eab1c07342a4a34cf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093425"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654804"
 ---
 # Select-AzureProfile
 
@@ -72,7 +72,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

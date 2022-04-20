@@ -9,8 +9,8 @@ ms.openlocfilehash: 69984df29292af3459f676ddf069aab16e503f9c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999174"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142686430"
 ---
 # New-AzContainerRegistryNetworkRule
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.Models.IPSNetworkRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
