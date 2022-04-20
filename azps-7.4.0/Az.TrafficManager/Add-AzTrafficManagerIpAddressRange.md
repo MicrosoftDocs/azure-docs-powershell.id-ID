@@ -10,8 +10,8 @@ ms.openlocfilehash: d37f664602102d9087feb4df53255e86a225030b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434848"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142669402"
 ---
 # Add-AzTrafficManagerIpAddressRange
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

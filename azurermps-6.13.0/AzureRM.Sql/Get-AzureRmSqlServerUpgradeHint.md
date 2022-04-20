@@ -10,8 +10,8 @@ ms.openlocfilehash: 597156e101a9d16eff36d05fae71b32e0033ad6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247985"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658170"
 ---
 # Get-AzureRmSqlServerUpgradeHint
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServiceTierAdvisor.Model.UpgradeServerHint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

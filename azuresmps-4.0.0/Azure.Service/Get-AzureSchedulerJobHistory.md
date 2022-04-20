@@ -7,8 +7,8 @@ ms.openlocfilehash: 2839752bc84bd763bc996b4b17aeb262b7227472
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335805"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656490"
 ---
 # Get-AzureSchedulerJobHistory
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

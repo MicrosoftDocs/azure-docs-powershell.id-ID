@@ -7,8 +7,8 @@ ms.openlocfilehash: c73a4c4bcc482b7e6e1281d0bc4ee6c29921b745
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142237321"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142650250"
 ---
 # Get-AzsAcquiredPlan
 
@@ -152,7 +152,7 @@ ALIAS
 
 Get-AzsSubscriptionPlan
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

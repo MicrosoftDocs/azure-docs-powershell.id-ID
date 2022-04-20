@@ -9,8 +9,8 @@ ms.openlocfilehash: aa521ea180b4b2a5bca44f38b92d4d18c0a38b3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141783590"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142690390"
 ---
 # Set-AzSynapseSqlAuditSetting
 
@@ -468,6 +468,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.WorkspaceAuditModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

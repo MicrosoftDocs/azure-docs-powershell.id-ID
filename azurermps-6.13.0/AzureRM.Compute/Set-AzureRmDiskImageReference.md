@@ -9,8 +9,8 @@ ms.openlocfilehash: e544007d8e23e20ed311f07eb33f98a5e2d6a409
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663370"
 ---
 # Set-AzureRmDiskImageReference
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

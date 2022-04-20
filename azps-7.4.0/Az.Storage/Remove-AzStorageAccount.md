@@ -10,13 +10,13 @@ ms.openlocfilehash: 34b2d710ad160f790fc1afca2d79876ab748f683
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164684"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142670770"
 ---
 # Remove-AzStorageAccount
 
 ## SYNOPSIS
-Menghapus akun Storage dari Azure.
+Menghapus akun Penyimpanan dari Azure.
 
 ## SYNTAX
 
@@ -26,16 +26,16 @@ Remove-AzStorageAccount [-ResourceGroupName] <String> [-Name] <String> [-Force] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageAccount** menghapus akun Storage dari Azure.
+Cmdlet **Remove-AzStorageAccount** menghapus akun Penyimpanan dari Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus akun Storage
+### Contoh 1: Menghapus akun Penyimpanan
 ```
 PS C:\>Remove-AzStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini menghapus akun Storage yang ditentukan.
+Perintah ini menghapus akun Penyimpanan yang ditentukan.
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage untuk dihapus.
+Menentukan nama akun Penyimpanan untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage untuk dihapus.
+Menentukan nama grup sumber daya yang berisi akun Penyimpanan untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

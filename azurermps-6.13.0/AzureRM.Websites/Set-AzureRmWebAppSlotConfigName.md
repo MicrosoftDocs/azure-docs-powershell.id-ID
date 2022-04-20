@@ -10,8 +10,8 @@ ms.openlocfilehash: 75c134b162636f94b00cf6692f4e9df120930dcb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314205"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657205"
 ---
 # Set-AzureRmWebAppSlotConfigName
 
@@ -186,6 +186,6 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.Management.WebSites.Models.SlotConfigNamesResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

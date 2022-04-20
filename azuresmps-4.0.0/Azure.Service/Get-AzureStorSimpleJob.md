@@ -7,8 +7,8 @@ ms.openlocfilehash: 5f11e9fb786afdae848dde2c1567e17a4f66cfee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772304"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656352"
 ---
 # Get-AzureStorSimpleJob
 
@@ -276,7 +276,7 @@ Anda tidak dapat menyalurkan input ke cmdlet ini.
 ### IList\<DeviceJobDetails\>, DeviceJobDetails
 Cmdlet ini mengembalikan daftar objek detail pekerjaan, atau, jika Anda menentukan parameter *InstanceID* , cmdlet ini mengembalikan objek detail pekerjaan tunggal.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

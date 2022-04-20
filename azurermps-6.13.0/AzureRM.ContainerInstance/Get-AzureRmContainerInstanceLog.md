@@ -9,8 +9,8 @@ ms.openlocfilehash: 08a4ab0f0d937f06ee0ac958aa57a2f0eed5e4a3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281855"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663030"
 ---
 # Get-AzureRmContainerInstanceLog
 
@@ -213,6 +213,6 @@ Parameter: InputContainerGroup (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 369c642485e3c83f4eaf6dee986beca676ea5051
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248094"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658553"
 ---
 # Remove-AzureRmServiceFabricClientCertificate
 
@@ -245,7 +245,7 @@ Parameter: ClientCertificateCommonName (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 32a00a6dce3d6a370f7b7f79f05794a312277a09
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280221"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657432"
 ---
 # Add-AzureRmTrafficManagerExpectedStatusCodeRange
 
@@ -156,7 +156,7 @@ Cmdlet ini menerima objek **TrafficManagerProfile** untuk cmdlet ini.
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
 Cmdlet ini mengembalikan objek **TrafficManagerProfile** yang dimodifikasi.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

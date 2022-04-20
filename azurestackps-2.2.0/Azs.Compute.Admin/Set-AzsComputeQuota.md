@@ -7,8 +7,8 @@ ms.openlocfilehash: ceb478270e1d60a2bf045e8f3430eef7b953b2dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142378781"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142650142"
 ---
 # Set-AzsComputeQuota
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
 
-## CATATAN
+## NOTES
 
 ALIAS
 

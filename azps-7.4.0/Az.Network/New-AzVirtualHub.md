@@ -9,8 +9,8 @@ ms.openlocfilehash: 3394910b1a07697d44a23f58f1d365de68b46ad4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431287"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142677970"
 ---
 # New-AzVirtualHub
 
@@ -64,7 +64,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", WAN Virtual, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
 ### Contoh 2
 
@@ -90,7 +90,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24". 
+Hal di atas akan membuat grup sumber daya "testRG", WAN Virtual, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24". 
 
 Contoh ini mirip dengan Contoh 1, tetapi menggunakan Id sumber daya untuk mereferensikan Virtual WAN yang diperlukan untuk membuat Hub virtual.
 
@@ -121,7 +121,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24" dan tabel rute yang terpasang.
+Hal di atas akan membuat grup sumber daya "testRG", WAN Virtual, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24" dan tabel rute yang terpasang.
 
 Contoh ini mirip dengan Contoh 2, tetapi juga melampirkan tabel rute ke hub virtual.
 
@@ -149,7 +149,7 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki gateway perutean yang lebih disukai sebagai VPNGateway.
+Hal di atas akan membuat grup sumber daya "testRG", WAN Virtual, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki gateway perutean yang lebih disukai sebagai VPNGateway.
 
 ## PARAMETERS
 
@@ -393,7 +393,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualHub
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d2cac696382f807a1fc4afe94f9d2d61ea65cece
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065436"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663066"
 ---
 # Get-AzureRmContainerRegistryReplication
 
@@ -187,7 +187,7 @@ Parameter: Registri (ByValue)
 
 ### Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryReplication
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

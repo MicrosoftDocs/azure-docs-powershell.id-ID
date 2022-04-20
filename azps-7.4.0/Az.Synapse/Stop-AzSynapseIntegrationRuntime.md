@@ -9,8 +9,8 @@ ms.openlocfilehash: be33c3dce91b86b912f9c9796e0cd3f77c6050d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427834"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142669546"
 ---
 # Stop-AzSynapseIntegrationRuntime
 
@@ -244,6 +244,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

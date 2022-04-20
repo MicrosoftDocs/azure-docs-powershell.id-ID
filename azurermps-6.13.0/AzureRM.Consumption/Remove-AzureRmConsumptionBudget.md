@@ -9,8 +9,8 @@ ms.openlocfilehash: b14afecc7f31f878b4ce1598f8b135265ff72249
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141824942"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663136"
 ---
 # Remove-AzureRmConsumptionBudget
 
@@ -176,6 +176,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

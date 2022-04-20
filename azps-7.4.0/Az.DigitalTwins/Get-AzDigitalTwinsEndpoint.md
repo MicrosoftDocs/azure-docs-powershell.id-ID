@@ -9,8 +9,8 @@ ms.openlocfilehash: 01dd488ae22a97426e8278aa4afec8675a1c2c88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992423"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142684289"
 ---
 # Get-AzDigitalTwinsEndpoint
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsEndpointResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

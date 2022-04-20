@@ -10,8 +10,8 @@ ms.openlocfilehash: 9c49fd381e1f63d60332eb42759cfb9dd187fbf5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142282502"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663880"
 ---
 # New-AzureRmVmssIpConfig
 
@@ -323,7 +323,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

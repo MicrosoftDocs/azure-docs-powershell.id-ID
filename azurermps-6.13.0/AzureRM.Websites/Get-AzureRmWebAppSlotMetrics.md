@@ -10,8 +10,8 @@ ms.openlocfilehash: 9c336c1bb2c2485c5bef691a5d5560a1b8795360
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657164"
 ---
 # Get-AzureRmWebAppSlotMetrics
 
@@ -214,7 +214,7 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.Management.WebSites.Models.ResourceMetric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

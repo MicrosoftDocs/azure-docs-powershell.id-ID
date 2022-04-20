@@ -9,8 +9,8 @@ ms.openlocfilehash: 4cd2193c127781e73ce892ffda3c749bc02927a8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002646"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142685134"
 ---
 # Invoke-AzDataMigrationCommand
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataMigration.Models.CommandProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

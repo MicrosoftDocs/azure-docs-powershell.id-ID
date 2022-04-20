@@ -10,8 +10,8 @@ ms.openlocfilehash: 958b8eb85084514817e36c5b61d1cd8bd567dbcc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923261"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657215"
 ---
 # New-AzureRmWebAppDatabaseBackupSetting
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

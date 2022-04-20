@@ -9,8 +9,8 @@ ms.openlocfilehash: 687be1ddd20c431e5226fe7f0516cc480e79fce8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060373"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658551"
 ---
 # Add-AzureRmServiceFabricNode
 
@@ -160,7 +160,7 @@ Parameter: NodeType (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 4f88a2038bdec6e844933ee938c5696f4df293f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142289977"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142697824"
 ---
 # Remove-AzVirtualRouterPeer
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualRouter
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

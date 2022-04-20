@@ -9,8 +9,8 @@ ms.openlocfilehash: 203058b2785e2d6c36d9f310caebfd5123a6585d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003035"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142685710"
 ---
 # New-AzDataBoxStorageAccountDetailsObject
 
@@ -105,7 +105,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.StorageAccountDetails
 
-## CATATAN
+## NOTES
 
 ALIAS
 

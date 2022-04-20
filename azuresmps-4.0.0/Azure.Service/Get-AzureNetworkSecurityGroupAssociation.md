@@ -7,8 +7,8 @@ ms.openlocfilehash: a93ffdc2d8a3e524d289b065f6710557f00c66a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142313539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656784"
 ---
 # Get-AzureNetworkSecurityGroupAssociation
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.ServiceManagement.Network.NetworkSecurityGroup.Model.INetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 96b95a4a6641e3bcfc2c1a18653da4231bee5c42
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248254"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658795"
 ---
 # Get-AzureRmServiceBusKey
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSListKeysAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
