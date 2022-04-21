@@ -7,8 +7,8 @@ ms.openlocfilehash: c6c6ba205c44fe5f70b0bb4d9324ddb7796bd4ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772334"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656388"
 ---
 # Get-AzureSqlDatabaseUsages
 
@@ -91,7 +91,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

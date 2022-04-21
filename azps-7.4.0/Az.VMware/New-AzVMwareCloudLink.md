@@ -9,8 +9,8 @@ ms.openlocfilehash: 1932fc76ca0d1d90982157d11233a78fe7307e7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142669186"
 ---
 # New-AzVMwareCloudLink
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.ICloudLink
 
-## CATATAN
+## NOTES
 
 ALIAS
 

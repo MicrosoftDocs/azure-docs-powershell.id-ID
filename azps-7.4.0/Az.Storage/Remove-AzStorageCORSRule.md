@@ -10,8 +10,8 @@ ms.openlocfilehash: d89e24d175742d0a3712c0119e5d731842b111c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142670698"
 ---
 # Remove-AzStorageCORSRule
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

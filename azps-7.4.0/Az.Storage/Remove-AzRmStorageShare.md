@@ -9,8 +9,8 @@ ms.openlocfilehash: 602ed6ce4092ed0c9c7e94ebc04ed683775b95b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419836"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142670806"
 ---
 # Remove-AzRmStorageShare
 
@@ -323,6 +323,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

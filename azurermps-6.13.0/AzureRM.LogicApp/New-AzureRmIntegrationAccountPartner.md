@@ -10,8 +10,8 @@ ms.openlocfilehash: f59c3e1896fd60dd70c1708a66ca8bbf360342ad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140143"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660720"
 ---
 # New-AzureRmIntegrationAccountPartner
 
@@ -207,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.IntegrationAccountPartner
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

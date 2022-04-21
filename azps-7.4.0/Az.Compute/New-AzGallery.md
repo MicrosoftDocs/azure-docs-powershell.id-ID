@@ -9,8 +9,8 @@ ms.openlocfilehash: 5ba5a6a515b702da69be1adc8e8a39cc31933cc3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141840400"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142686951"
 ---
 # New-AzGallery
 
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSGallery
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: a3af7189543f01ea1580dffdb403ddea7d9ed0a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142117817"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142705889"
 ---
 # Remove-AzSynapseSparkPool
 
@@ -277,6 +277,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

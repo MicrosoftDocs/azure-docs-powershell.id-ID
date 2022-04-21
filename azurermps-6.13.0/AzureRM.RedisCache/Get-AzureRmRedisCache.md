@@ -10,8 +10,8 @@ ms.openlocfilehash: ee4d5980743e5a78205c6e1f78cb55fa9b2f6496
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775733"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659513"
 ---
 # Get-AzureRmRedisCache
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RedisCache.Models.RedisCacheAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

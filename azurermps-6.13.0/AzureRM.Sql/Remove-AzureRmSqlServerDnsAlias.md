@@ -9,8 +9,8 @@ ms.openlocfilehash: 5afd12ac027b19f888eb6a5110db2179dd6df24d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247959"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657943"
 ---
 # Remove-AzureRmSqlServerDnsAlias
 
@@ -218,6 +218,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: c864db4ff437d34265edebc4f35eed36b0e667d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178957"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142684487"
 ---
 # Get-AzWvdHostPoolRegistrationToken
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IRegistrationInfo
 
-## CATATAN
+## NOTES
 
 ALIAS
 

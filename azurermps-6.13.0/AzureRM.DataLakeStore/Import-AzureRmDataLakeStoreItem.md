@@ -10,8 +10,8 @@ ms.openlocfilehash: 91e7969600f387a95f46cad02f87cf6466f2c642
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142085"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142662274"
 ---
 # Import-AzureRmDataLakeStoreItem
 
@@ -268,7 +268,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.String
 Jalur lengkap di akun Data Lake Store ke file atau folder yang diunggah.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

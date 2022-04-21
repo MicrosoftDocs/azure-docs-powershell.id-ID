@@ -9,8 +9,8 @@ ms.openlocfilehash: 53b89e8d9c6120e6356a44da5ca9dfbf8299deb0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142081345"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142712026"
 ---
 # Get-AzNetworkWatcherSecurityGroupView
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityGroupViewResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS

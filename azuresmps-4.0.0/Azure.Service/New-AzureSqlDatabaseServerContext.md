@@ -7,8 +7,8 @@ ms.openlocfilehash: e7517016f06c4e1a5fdfb9a4ed3a4ca9feabab64
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142655794"
 ---
 # New-AzureSqlDatabaseServerContext
 
@@ -229,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.IServerDataServiceContext
 
-## CATATAN
+## NOTES
 * Jika Anda mengautentikasi tanpa menentukan domain, dan jika Anda menggunakan Windows PowerShell 2.0, cmdlet Get-Credential mengembalikan garis miring terbalik (\\) yang sebelumnya ditambahkan ke nama pengguna, misalnya, \user. Windows PowerShell 3.0 tidak menambahkan garis miring terbelakang. Garis miring terbalik ini tidak dikenali oleh parameter *Kredensial* cmdlet **New-AzureSqlDatabaseServerContext** . Untuk menghapusnya, gunakan perintah yang sama seperti berikut ini:
 
   `PS C:\\\> $Credential = Get-Credential`

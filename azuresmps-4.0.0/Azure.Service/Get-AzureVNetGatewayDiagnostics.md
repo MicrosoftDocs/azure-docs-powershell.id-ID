@@ -7,8 +7,8 @@ ms.openlocfilehash: e8aabca6760c02b5f9ae2aae6a155fe812f88e32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656244"
 ---
 # Get-AzureVNetGatewayDiagnostics
 
@@ -68,7 +68,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

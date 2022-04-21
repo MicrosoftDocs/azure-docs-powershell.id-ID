@@ -10,8 +10,8 @@ ms.openlocfilehash: 1cada55b8db886d85f88d34254c8814cdfc44665
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141824643"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142662373"
 ---
 # Test-AzureRmDataLakeAnalyticsCatalogItem
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

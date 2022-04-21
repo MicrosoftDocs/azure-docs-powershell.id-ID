@@ -10,8 +10,8 @@ ms.openlocfilehash: 540ea984d165a841288d1928192ad0ce035f7eb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657548"
 ---
 # New-AzureRmStreamAnalyticsJob
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StreamAnalytics.Models.PSJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
