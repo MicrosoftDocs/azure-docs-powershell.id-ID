@@ -9,8 +9,8 @@ ms.openlocfilehash: f8ae03ddb20026a9ccab9c76d284fdd496d5d2ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141872528"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142779166"
 ---
 # Remove-AzBlockchainMember
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

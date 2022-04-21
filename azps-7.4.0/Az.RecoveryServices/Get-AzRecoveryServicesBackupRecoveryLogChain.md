@@ -9,8 +9,8 @@ ms.openlocfilehash: faea62b3dbd7bdb1ee477955203e1375804cb627
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430224"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802602"
 ---
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
@@ -165,6 +165,6 @@ System.String
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

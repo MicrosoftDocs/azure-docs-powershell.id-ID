@@ -9,16 +9,16 @@ ms.openlocfilehash: 4e64c9ed824cc22005a373e329d3d9e82288215e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142257613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142824346"
 ---
 # Get-AzFrontDoorRulesEngine
 
 ## SYNOPSIS
-Dapatkan konfigurasi Rules Engine.
+Mendapatkan konfigurasi Mesin Aturan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorrulesengine) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorrulesengine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzFrontDoorRulesEngine -ResourceGroupName <String> -FrontDoorName <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFrontDoorRulesEngine** mendapatkan konfigurasi mesin aturan tertentu atau mendapatkan semua konfigurasi mesin aturan yang terkait dengan Pintu Depan. 
+Cmdlet **Get-AzFrontDoorRulesEngine** mendapatkan konfigurasi mesin aturan tertentu atau mendapatkan semua konfigurasi mesin aturan yang terkait dengan Front Door. 
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Name         RulesEngineRules
 rulesEngine3 {rules1}
 ```
 
-Dapatkan konfigurasi mesin aturan tertentu.
+Mendapatkan konfigurasi mesin aturan tertentu.
 
 ### Contoh 2
 
@@ -69,7 +69,7 @@ At line:1 char:1
 + FullyQualifiedErrorId : Microsoft.Azure.Commands.FrontDoor.Cmdlets.GetFrontDoorRulesEngine
 ```
 
-Output yang diharapkan ketika mendapatkan mesin aturan yang tidak ada. 
+Output yang diharapkan saat mendapatkan mesin aturan yang tidak ada. 
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontDoorName
-Nama Pintu Depan.
+Nama Front Door.
 
 ```yaml
 Type: System.String
@@ -103,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Aturan nama mesin.
+### -Name
+Nama mesin aturan.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat Pintu Depan akan dibuat.
+Nama grup sumber daya tempat Front Door akan dibuat.
 
 ```yaml
 Type: System.String
@@ -134,16 +134,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

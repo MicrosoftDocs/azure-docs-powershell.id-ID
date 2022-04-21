@@ -9,8 +9,8 @@ ms.openlocfilehash: 7793dfe2f5d83e0975a5a8c200d19b48d8c4d9f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358557"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794020"
 ---
 # Get-AzureRmConsumptionBudget
 
@@ -145,6 +145,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: ecf35b53bd82466c3a0c4094c9e67d40743a436a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421209"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142803070"
 ---
 # New-AzPurviewAzureStorageMsiScanObject
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureStorageMsiScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

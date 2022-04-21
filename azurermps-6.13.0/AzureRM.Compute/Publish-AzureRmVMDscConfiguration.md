@@ -10,8 +10,8 @@ ms.openlocfilehash: 49dc91288c955de10c3dbcb84da74ffd3d71f140
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142282327"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794549"
 ---
 # Publish-AzureRmVMDscConfiguration
 
@@ -293,7 +293,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

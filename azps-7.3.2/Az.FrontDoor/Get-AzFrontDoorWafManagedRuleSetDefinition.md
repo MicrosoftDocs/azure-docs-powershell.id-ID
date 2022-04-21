@@ -9,16 +9,16 @@ ms.openlocfilehash: 45d62231928442141a44b597fbdd0cf47a939639
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938913"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142824274"
 ---
 # Get-AzFrontDoorWafManagedRuleSetDefinition
 
 ## SYNOPSIS
-Dapatkan definisi kumpulan aturan terkelola WAF
+Mendapatkan definisi seperangkat aturan terkelola WAF
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorwafmanagedrulesetdefinition) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorwafmanagedrulesetdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-AzFrontDoorWafManagedRuleSetDefinition [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar definisi kumpulan aturan terkelola WAF untuk digunakan sebagai referensi
+Mendapatkan daftar definisi seperangkat aturan terkelola WAF untuk digunakan sebagai referensi
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Succeeded         DefaultRuleSet              preview-0.1    {LFI, RFI, RCE, PHP
 Succeeded         BotProtection               preview-0.1    {KnownBadBots}
 ```
 
-Dapatkan definisi kumpulan aturan terkelola WAF.
+Mendapatkan definisi seperangkat aturan terkelola WAF.
 
 ## PARAMETERS
 
@@ -63,17 +63,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSManagedRuleSetDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

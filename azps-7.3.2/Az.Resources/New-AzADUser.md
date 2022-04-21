@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
-ms.openlocfilehash: ce6d278a48fb3f5c4b5d0807cb7260c73ad83c2f
-ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
+ms.openlocfilehash: 46123d970a5272ab60a2a34df572aac1f60d6de1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140663913"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142817272"
 ---
 # New-AzADUser
 
@@ -18,6 +18,9 @@ ms.locfileid: "140663913"
 Menambahkan entitas baru ke pengguna
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azaduser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,18 +45,18 @@ Menambahkan entitas baru ke pengguna
 
 ## EXAMPLES
 
-### Contoh 1: Buat pengguna
+### Contoh 1: Membuat pengguna
 ```powershell
 PS C:\> $pp=New-Object -TypeName "Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordProfile" -Property @{Password=$password}
 PS C:\> New-MgUser -DisplayName $uname -PasswordProfile $pp -AccountEnabled -MailNickname $nickname -UserPrincipalName $upn
 ```
 
-Buat pengguna
+Membuat pengguna
 
 ## PARAMETERS
 
 ### -AboutMe
-Bidang entri teks bentuk bebas bagi pengguna untuk menjelaskan diri mereka sendiri.
+Bidang entri teks bentuk bebas untuk dijelaskan sendiri oleh pengguna.
 Dikembalikan hanya pada $select.
 
 ```yaml
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountEnabled
-true untuk mengaktifkan akun; jika tidak, false.
+true untuk mengaktifkan akun; jika tidak, salah.
 
 ```yaml
 Type: System.Boolean
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 
 ### -AgeGroup
 Mengatur grup usia pengguna.
-Nilai yang diperbolehkan: null, minor, notAdult dan dewasa.
-Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut.
+Nilai yang diizinkan: null, minor, notAdult dan adult.
+Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut.
 Mendukung $filter (eq, ne, NOT, dan in).
 
 ```yaml
@@ -101,10 +104,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Birthday
+### -Ulang Tahun
 Ulang tahun pengguna.
-Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
-Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z yang hanya dikembalikan pada $select.
+Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
+Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.DateTime
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kota
-Kota di mana pengguna berada.
+Kota tempat pengguna berada.
 Panjang maksimum adalah 128 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -137,8 +140,8 @@ Accept wildcard characters: False
 
 ### -CompanyName
 Nama perusahaan yang dikaitkan dengan pengguna.
-Properti ini dapat berguna untuk menjelaskan perusahaan dari mana pengguna eksternal berasal.
-Panjang maksimal nama perusahaan adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
+Properti ini dapat berguna untuk menjelaskan perusahaan asal pengguna eksternal.
+Panjang maksimum nama perusahaan adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
 ```yaml
 Type: System.String
@@ -153,9 +156,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConsentProvidedForMinor
-Mengatur apakah persetujuan telah diperoleh untuk pengguna di bawah umur.
-Nilai yang diperbolehkan: null, granted, denied, dan notRequired.
-Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut.
+Mengatur apakah persetujuan telah diperoleh untuk anak di bawah umur.
+Nilai yang diizinkan: null, granted, denied, dan notRequired.
+Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut.
 Mendukung $filter (eq, ne, NOT, dan in).
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara
-Negara/kawasan tempat pengguna berada; misalnya, AS atau UK.
+Negara/wilayah tempat pengguna berada; misalnya, AS atau Inggris.
 Panjang maksimum adalah 128 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -218,8 +221,8 @@ Accept wildcard characters: False
 ```
 
 ### -Departemen
-Nama untuk departemen tempat pengguna bekerja.
-Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT , ge, le, dan in operators).
+Nama departemen tempat pengguna bekerja.
+Panjang maksimum adalah 64 karakter. Mendukung $filter (operator eq, ne, NOT , ge, le, dan in).
 
 ```yaml
 Type: System.String
@@ -234,8 +237,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceEnrollmentLimit
-Batas pada jumlah maksimum perangkat yang diizinkan pengguna untuk mendaftar.
-Nilai yang diperbolehkan adalah 5 atau 1000.
+Batas jumlah maksimum perangkat yang diizinkan untuk didaftarkan pengguna.
+Nilai yang diizinkan adalah 5 atau 1000.
 
 ```yaml
 Type: System.Int32
@@ -250,9 +253,9 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama ditampilkan di buku alamat untuk pengguna.
-Nilai ini biasanya adalah kombinasi nama depan, inisial tengah, dan nama belakang pengguna.
-Properti ini diperlukan saat pengguna dibuat dan tidak bisa dibersihkan selama pembaruan.
+Nama yang ditampilkan dalam buku alamat untuk pengguna.
+Nilai ini biasanya merupakan kombinasi dari nama depan pengguna, inisial tengah, dan nama belakang pengguna.
+Properti ini diperlukan ketika pengguna dibuat dan tidak dapat dibersihkan selama pembaruan.
 Panjang maksimum adalah 256 karakter.
 Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith), $orderBy, dan $search.
 
@@ -268,8 +271,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EmployeeDate
-Tanggal dan waktu saat pengguna dipekerjakan atau akan mulai bekerja dalam kasus karyawan mendatang.
+### -EmployeeHireDate
+Tanggal dan waktu saat pengguna dipekerjakan atau akan mulai bekerja jika terjadi persewaan di masa mendatang.
 Mendukung $filter (eq, ne, NOT , ge, le, in).
 
 ```yaml
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmployeeId
-Pengidentifikasi karyawan yang ditetapkan kepada pengguna oleh organisasi.
+Pengidentifikasi karyawan yang ditetapkan untuk pengguna oleh organisasi.
 Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
 
 ```yaml
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmployeeType
-Merekam tipe pekerja perusahaan.
+Menangkap jenis pekerja perusahaan.
 Misalnya, Karyawan, Kontraktor, Konsultan, atau Vendor.
 Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
 
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 
 ### -ExternalUserState
 Untuk pengguna eksternal yang diundang ke penyewa menggunakan API undangan, properti ini mewakili status undangan pengguna yang diundang.
-Untuk pengguna yang diundang, status bisa menjadi PendingAcceptance atau Accepted, atau null untuk semua pengguna lain.
+Untuk pengguna yang diundang, statusnya dapat Berupa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain.
 Mendukung $filter (eq, ne, NOT , in).
 
 ```yaml
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalUserStateChangeDateTime
-Memperlihatkan tanda waktu untuk perubahan terakhir pada properti externalUserState.
+Memperlihatkan tanda waktu untuk perubahan terbaru pada properti externalUserState.
 Mendukung $filter (eq, ne, NOT , in).
 
 ```yaml
@@ -367,8 +370,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceChangePasswordNextLogin
-Ini harus ditentukan jika pengguna harus mengubah kata sandi di login berikutnya yang berhasil (true).
-Perilaku default adalah (false) agar tidak mengubah kata sandi di saat berikutnya berhasil masuk.
+Ini harus ditentukan jika pengguna harus mengubah kata sandi pada login berhasil berikutnya (benar).
+Perilaku default adalah (false) untuk tidak mengubah kata sandi pada login berikutnya yang berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -400,12 +403,12 @@ Accept wildcard characters: False
 ```
 
 ### -HireDate
-Tanggal mulai karyawan pengguna.
-Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
-Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z.
+Tanggal sewa pengguna.
+Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
+Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z.
 Dikembalikan hanya pada $select.
 Catatan: Properti ini khusus untuk SharePoint Online.
-Kami menyarankan agar menggunakan properti native employee Salah SatuDate untuk mengatur dan memperbarui nilai tanggal karyawan menggunakan API Graph Microsoft.
+Sebaiknya gunakan properti employeeHireDate asli untuk mengatur dan memperbarui nilai tanggal sewa menggunakan Microsoft Graph API.
 
 ```yaml
 Type: System.DateTime
@@ -420,8 +423,8 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutableId
-Properti ini digunakan untuk mengaitkan akun pengguna Direktori Aktif lokal ke objek pengguna Azure AD mereka.
-Properti ini harus ditentukan saat membuat akun pengguna baru di Graph jika Anda menggunakan domain gabungan untuk properti userPrincipalName (UPN).
+Properti ini digunakan untuk mengaitkan akun pengguna Active Directory lokal ke objek pengguna Azure AD mereka.
+Properti ini harus ditentukan saat membuat akun pengguna baru di Graph jika Anda menggunakan domain federasi untuk properti userPrincipalName (UPN) pengguna.
 CATATAN: Karakter $ dan _ tidak dapat digunakan saat menentukan properti ini.
 Dikembalikan hanya pada $select.
 Mendukung $filter (eq, ne, NOT, ge, le, in)..
@@ -438,7 +441,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Interest
+### -Bunga
 Daftar bagi pengguna untuk menjelaskan minat mereka.
 Dikembalikan hanya pada $select.
 
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsResourceAccount
-Jangan gunakan - dicadangkan untuk penggunaan di masa mendatang.
+Jangan gunakan - dicadangkan untuk digunakan di masa mendatang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -470,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobTitle
-Jabatan pekerjaan pengguna.
+Jabatan pengguna.
 Panjang maksimum adalah 128 karakter.
 Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
 
@@ -488,8 +491,8 @@ Accept wildcard characters: False
 
 ### -Mail
 Alamat SMTP untuk pengguna, misalnya, admin@contoso.com.
-Perubahan pada properti ini juga akan memperbarui kumpulan proxyAddresses pengguna agar menyertakan nilai sebagai alamat SMTP.
-Meskipun properti ini dapat berisi karakter aksen, menggunakannya dapat menyebabkan masalah akses dengan aplikasi Microsoft lainnya untuk pengguna tersebut.
+Perubahan pada properti ini juga akan memperbarui koleksi proxyAddresses pengguna untuk menyertakan nilai sebagai alamat SMTP.
+Meskipun properti ini dapat berisi karakter aksen, menggunakannya dapat menyebabkan masalah akses dengan aplikasi Microsoft lainnya untuk pengguna.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
 
 ```yaml
@@ -506,7 +509,7 @@ Accept wildcard characters: False
 
 ### -MailNickname
 Alias email untuk pengguna.
-Properti ini harus ditentukan saat pengguna dibuat.
+Properti ini harus ditentukan ketika pengguna dibuat.
 Panjang maksimum adalah 64 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -573,7 +576,7 @@ Accept wildcard characters: False
 ```
 
 ### -OtherMail
-Daftar alamat email tambahan untuk pengguna; misalnya: ['bob@contoso.com', 'Robert@fabrikam.com']. CATATAN: Meskipun dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, NOT, ge, le, in, startsWith).
+Daftar alamat email tambahan untuk pengguna; misalnya: ['bob@contoso.com', 'Robert@fabrikam.com']. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, NOT, ge, le, in, startsWith).
 
 ```yaml
 Type: System.String[]
@@ -587,9 +590,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Kata sandi untuk pengguna.
-Kata sandi harus memenuhi persyaratan kompleksitas kata sandi penyewa.
+Ini harus memenuhi persyaratan kompleksitas kata sandi penyewa.
 Disarankan untuk mengatur kata sandi yang kuat.
 
 ```yaml
@@ -606,9 +609,9 @@ Accept wildcard characters: False
 
 ### -PasswordPolicy
 Menentukan kebijakan kata sandi untuk pengguna.
-Nilai ini adalah enumerasi dengan satu nilai yang memungkinkan adalah DisableStrongPassword, yang memungkinkan kata sandi yang lebih lemah daripada kebijakan default yang ditentukan.
-DisablePasswordExpiration juga bisa ditentukan.
-Keduanya mungkin ditentukan bersama; misalnya: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (ne, NOT).
+Nilai ini adalah enumerasi dengan satu nilai yang mungkin adalah DisableStrongPassword, yang memungkinkan kata sandi yang lebih lemah daripada kebijakan default yang ditentukan.
+DisablePasswordExpiration juga dapat ditentukan.
+Keduanya dapat ditentukan bersama-sama; misalnya: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (ne, NOT).
 
 ```yaml
 Type: System.String
@@ -623,7 +626,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordProfile
-passwordProfile Untuk membangun, lihat bagian CATATAN untuk properti PASSWORDPROFILE dan membuat tabel hash.
+passwordProfile Untuk membangun, lihat bagian CATATAN untuk properti PASSWORDPROFILE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordProfile
@@ -639,7 +642,7 @@ Accept wildcard characters: False
 
 ### -PostalCode
 Kode pos untuk alamat pos pengguna.
-Kode pos khusus untuk negara/kawasan pengguna.
+Kode pos khusus untuk negara/wilayah pengguna.
 Di Amerika Serikat, atribut ini berisi kode pos.
 Panjang maksimum adalah 40 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
@@ -674,7 +677,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredName
-Nama pilihan untuk pengguna.
+Nama yang disukai untuk pengguna.
 Dikembalikan hanya pada $select.
 
 ```yaml
@@ -690,7 +693,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tanggung Jawab
-Sebuah daftar agar pengguna menghitung tanggung jawab mereka.
+Daftar bagi pengguna untuk menghitung tanggung jawab mereka.
 Dikembalikan hanya pada $select.
 
 ```yaml
@@ -706,7 +709,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sekolah
-Daftar bagi pengguna untuk menghitung sekolah yang telah mereka hadiri.
+Daftar bagi pengguna untuk menghitung sekolah yang telah mereka ikuti.
 Dikembalikan hanya pada $select.
 
 ```yaml
@@ -722,8 +725,8 @@ Accept wildcard characters: False
 ```
 
 ### -ShowInAddressList
-true jika daftar Outlook global harus berisi pengguna ini, jika tidak salah.
-Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar.
+true jika daftar alamat global Outlook harus berisi pengguna ini, jika tidak salah.
+Jika tidak diatur, ini akan diperlakukan sebagai benar.
 Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false.
 Mendukung $filter (eq, ne, NOT, in).
 
@@ -739,8 +742,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skill
-Daftar bagi pengguna untuk menghitung keahlian mereka.
+### -Keterampilan
+Daftar bagi pengguna untuk menghitung keterampilan mereka.
 Dikembalikan hanya pada $select.
 
 ```yaml
@@ -755,7 +758,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Negara bagian atau provinsi di alamat pengguna.
 Panjang maksimum adalah 128 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
@@ -789,8 +792,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Surname
-Nama keluarga pengguna (nama keluarga atau nama belakang).
+### -Nama Keluarga
+Nama depan pengguna (nama keluarga atau nama belakang).
 Panjang maksimum adalah 64 karakter.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -808,9 +811,9 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Kode negara dua huruf (standar ISO 3166).
-Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara-negara.
-Contohnya antara lain: US, JP, dan GB.
-Not nullable.
+Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
+Contohnya meliputi: US, JP, dan GB.
+Tidak dapat diubah ke null.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
 ```yaml
@@ -826,12 +829,12 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Nama prinsipal pengguna (UPN, User Principal Name) pengguna.
-UPN adalah nama masuk gaya internet untuk pengguna berdasarkan RFC 822 standar internet.
-Menurut konvensi, ini harus di petakan ke nama email pengguna.
-Format umumnya alias@domainadalah, di mana domain harus ada dalam kumpulan penyewa domain terverifikasi.
+Nama prinsipal pengguna (UPN) dari pengguna.
+UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar Internet RFC 822.
+Menurut konvensi, ini harus dipetakan ke nama email pengguna.
+Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa.
 Properti ini diperlukan saat pengguna dibuat.
-Domain terverifikasi untuk penyewa bisa diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
+Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
 
 ```yaml
@@ -847,7 +850,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserType
-Nilai string yang bisa digunakan untuk mengklasifikasikan tipe pengguna di direktori Anda, seperti Anggota dan Tamu.
+Nilai string yang dapat digunakan untuk mengklasifikasikan jenis pengguna di direktori Anda, seperti Anggota dan Tamu.
 Mendukung $filter (eq, ne, NOT, in,).
 
 ```yaml
@@ -862,8 +865,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -878,8 +881,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -894,7 +897,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -904,7 +907,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -915,8 +918,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[ForceChangePasswordNextSignIn <Boolean?>]`: true jika pengguna harus mengubah kata sandinya di login berikutnya; jika tidak false. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false, tetapi gunakan kebijakan kustom dan aliran pengguna untuk memaksa pengaturan ulang kata sandi pada kali pertama masuk. Lihat Mengatur ulang kata sandi saat masuk pertama kali.
-  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika benar, pada saat masuk berikutnya, pengguna harus melakukan multi-factor authentication (MFA) sebelum dipaksa mengubah kata sandinya. Perilaku ini identik dengan forceChangePasswordNextSignIn, kecuali bahwa pengguna diperlukan untuk melakukan multi-factor authentication terlebih dahulu sebelum kata sandi berubah. Setelah perubahan kata sandi, properti ini akan diatur ulang secara otomatis ke false. Jika tidak diatur, defaultnya adalah false.
-  - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Kode ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimal seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
+  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada saat pertama kali masuk.
+  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna harus terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis direset ke false. Jika tidak diatur, defaultnya adalah false.
+  - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimum seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
 
 ## RELATED LINKS

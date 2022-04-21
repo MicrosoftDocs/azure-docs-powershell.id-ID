@@ -9,8 +9,8 @@ ms.openlocfilehash: 0a82dc95bc9515c1da8078e23c70ccdbb0b9db21
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142257271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142824058"
 ---
 # Get-AzFunctionAppAvailableLocation
 
@@ -223,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.IGeoRegion
 
-## CATATAN
+## NOTES
 
 ALIAS
 

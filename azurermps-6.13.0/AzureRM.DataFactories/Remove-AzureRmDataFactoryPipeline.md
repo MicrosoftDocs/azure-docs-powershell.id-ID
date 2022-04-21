@@ -10,13 +10,13 @@ ms.openlocfilehash: aede985cfac5b8ab25c4056eb44e54ea7c6b1c2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141885505"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793835"
 ---
 # Remove-AzureRmDataFactoryPipeline
 
 ## SYNOPSIS
-Menghapus saluran dari Azure Data Factory.
+Menghapus alur dari Azure Data Factory.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

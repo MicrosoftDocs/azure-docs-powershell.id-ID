@@ -9,8 +9,8 @@ ms.openlocfilehash: cb77f225bfa2088ad5678b2d5b58bc2e534cd359
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141945285"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142831348"
 ---
 # Set-AzSynapseNotebook
 
@@ -259,6 +259,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSNotebookResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 958a1600234b94e4403311a92bbcb6799bee3cdc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142069969"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142824005"
 ---
 # New-AzFunctionApp
 
@@ -483,7 +483,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.ISite
 
-## CATATAN
+## NOTES
 
 ALIAS
 

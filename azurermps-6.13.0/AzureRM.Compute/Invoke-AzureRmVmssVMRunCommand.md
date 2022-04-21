@@ -9,8 +9,8 @@ ms.openlocfilehash: 1c1cdeff1e1a73de6947855922a4fed45fe387e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389277"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794652"
 ---
 # Invoke-AzureRmVmssVMRunCommand
 
@@ -258,6 +258,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRunCommandResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

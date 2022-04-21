@@ -9,8 +9,8 @@ ms.openlocfilehash: 0d427a7cd902e957a28b80789a3259ceedc1080a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141840512"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142810162"
 ---
 # Get-AzCapacityReservationGroup
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSCapacityReservationGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: eee907eb6a23ec67bc2eab768206a4572a1a92af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142215253"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142824112"
 ---
 # New-AzFrontDoorWafPolicy
 
@@ -272,7 +272,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

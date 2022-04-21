@@ -9,13 +9,13 @@ ms.openlocfilehash: 87c0e7cc1982d09e5d70ac0021fe5b202fd28ea5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142220167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142830970"
 ---
 # New-AzAppServiceEnvironmentInboundServices
 
 ## SYNOPSIS
-Membuat layanan masuk untuk Lingkungan Layanan Aplikasi. Untuk ASEv2 ILB, tindakan ini akan membuat Azure Private DNS Zone dan rekaman untuk dipetakan ke IP internal. Untuk ASEv3, subnet akan dinonaktifkan dan akan membuat titik akhir privat.
+Membuat layanan masuk untuk Lingkungan App Service. Untuk ASEv2 ILB, tindakan ini akan membuat Azure Private DNS Zone dan rekaman untuk dipetakan ke IP internal. Untuk ASEv3, subnet akan dinonaktifkan dan akan membuat titik akhir privat.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceenvironmentinboundservices) untuk informasi terbaru.
@@ -36,7 +36,7 @@ New-AzAppServiceEnvironmentInboundServices [-ResourceGroupName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAppServiceEnvironmentInboundServices** menciptakan layanan masuk untuk Lingkungan Layanan Aplikasi.
+Cmdlet **New-AzAppServiceEnvironmentInboundServices** menciptakan layanan masuk untuk Lingkungan App Service.
 
 ## EXAMPLES
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

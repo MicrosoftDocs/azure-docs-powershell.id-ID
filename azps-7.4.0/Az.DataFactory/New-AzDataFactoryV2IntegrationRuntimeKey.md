@@ -9,8 +9,8 @@ ms.openlocfilehash: 22593f38825d24c4950a870cdadf139e4cde38ad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002850"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142749484"
 ---
 # New-AzDataFactoryV2IntegrationRuntimeKey
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

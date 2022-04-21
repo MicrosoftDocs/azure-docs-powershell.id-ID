@@ -9,8 +9,8 @@ ms.openlocfilehash: 4dc325d39b08ce7b107e1d45ad3332e95f078131
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434348"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142809989"
 ---
 # Get-AzHostGroup
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSHostGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
