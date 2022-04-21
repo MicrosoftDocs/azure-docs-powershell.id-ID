@@ -9,8 +9,8 @@ ms.openlocfilehash: 7dfb080ae20c583467add8ce298b03199a4f89dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142099315"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733436"
 ---
 # Remove-AzureRmContainerRegistryReplication
 
@@ -205,7 +205,7 @@ Parameter: Replicatoin (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

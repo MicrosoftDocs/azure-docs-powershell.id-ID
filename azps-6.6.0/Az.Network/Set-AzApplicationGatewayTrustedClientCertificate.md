@@ -9,8 +9,8 @@ ms.openlocfilehash: 9470dceb0395c97f0a6ed62ba2b555b9f7205c6b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141798674"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142710280"
 ---
 # Set-AzApplicationGatewayTrustedClientCertificate
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 679c02edde85b9f64eb037d6d30be1e7c36cdeb9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733048"
 ---
 # New-AzureRmDataLakeAnalyticsComputePolicy
 
@@ -28,7 +28,7 @@ New-AzureRmDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Accoun
 ```
 
 ## DESCRIPTION
-**New-AzureRmDataLakeAnalyticsComputePolicy** membuat aturan kebijakan komputasi tertentu untuk entitas AAD tertentu dalam akun Data Lake Analytics Azure.
+**New-AzureRmDataLakeAnalyticsComputePolicy** membuat aturan kebijakan komputasi tertentu untuk entitas AAD tertentu dalam akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek Azure Active Directory bagi pengguna atau grup untuk menerapkan kebijakan.
+Id objek Azure Active Directory untuk pengguna atau grup untuk menerapkan kebijakan.
 
 ```yaml
 Type: System.Guid
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectType
-Tipe objek Azure Active Directory untuk ID objek yang dilewati.
+Tipe objek Azure Active Directory untuk ID objek yang dimasukkan.
 
 ```yaml
 Type: System.String
@@ -217,6 +217,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSDataLakeAnalyticsComputePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 7ec08296fe88b7d5b7d7825c3a3078b1e85ce81c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141875426"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721440"
 ---
 # Set-AzEnvironment
 
@@ -595,7 +595,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureEnvironment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

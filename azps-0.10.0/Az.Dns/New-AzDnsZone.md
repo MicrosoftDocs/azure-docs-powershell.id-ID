@@ -10,8 +10,8 @@ ms.openlocfilehash: 0b41ff25823e44b31c7ff7677678a332782e7615
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142351223"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142720648"
 ---
 # New-AzDnsZone
 
@@ -133,7 +133,7 @@ Anda tidak dapat menyalurkan input ke cmdlet ini.
 
 Cmdlet ini mengembalikan objek Microsoft.Azure.Commands.Dns.DnsZone yang mewakili zona DNS baru.
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 

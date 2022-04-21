@@ -10,8 +10,8 @@ ms.openlocfilehash: 0769824bc0b50641f7b73cb530dde0a5f30bf7ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923928"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658195"
 ---
 # Get-AzureRmSqlElasticPoolRecommendation
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Sql.LegacySdk.Models.UpgradeRecommendedElasticPoolProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

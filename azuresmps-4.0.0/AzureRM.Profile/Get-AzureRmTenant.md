@@ -6,8 +6,8 @@ ms.openlocfilehash: b2da68229b50d97a735b457aa0e33cb3dd8b9262
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815054"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653461"
 ---
 # Get-AzureRmTenant
 
@@ -79,7 +79,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSAzureTenant
 Cmdlet ini mengembalikan ID penyewa dan informasi domain terkait untuk penyewa yang diotorisasi untuk akun saat ini.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

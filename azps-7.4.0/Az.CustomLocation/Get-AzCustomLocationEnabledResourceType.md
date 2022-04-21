@@ -9,8 +9,8 @@ ms.openlocfilehash: bdb1f83a48c06f69dba504349401069e879767ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142685814"
 ---
 # Get-AzCustomLocationEnabledResourceType
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CustomLocation.Models.Api20210815.IEnabledResourceType
 
-## CATATAN
+## NOTES
 
 ALIAS
 

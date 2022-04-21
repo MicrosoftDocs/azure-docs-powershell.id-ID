@@ -10,8 +10,8 @@ ms.openlocfilehash: 0197ad85cb825994d6d6131beb48e3f30e5a7579
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142204291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142689274"
 ---
 # Remove-AzWebAppSSLBinding
 
@@ -244,7 +244,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

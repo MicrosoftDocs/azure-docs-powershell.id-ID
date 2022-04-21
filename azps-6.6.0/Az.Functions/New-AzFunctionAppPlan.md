@@ -9,8 +9,8 @@ ms.openlocfilehash: 788e428f8a2992db26e4c9af81bdd06263eb6e82
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232209"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142715140"
 ---
 # New-AzFunctionAppPlan
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama paket Layanan Aplikasi.
+Nama paket App Service.
 
 ```yaml
 Type: System.String
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.IAppServicePlan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

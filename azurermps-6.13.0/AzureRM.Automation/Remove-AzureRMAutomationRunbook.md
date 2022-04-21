@@ -10,8 +10,8 @@ ms.openlocfilehash: b84daa4041b8e27351d3b3b63eae4c7599881eae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283057"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734231"
 ---
 # Remove-AzureRmAutomationRunbook
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

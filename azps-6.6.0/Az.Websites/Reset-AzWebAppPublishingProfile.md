@@ -10,8 +10,8 @@ ms.openlocfilehash: 2cf4374367c4ded3b2aba894c5223487dbbf09e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141900423"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142705446"
 ---
 # Reset-AzWebAppPublishingProfile
 
@@ -122,6 +122,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

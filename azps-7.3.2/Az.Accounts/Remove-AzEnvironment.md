@@ -9,8 +9,8 @@ ms.openlocfilehash: b795c751be67794c2a2a0fea1721ee6fd3f78eab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142262185"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142705294"
 ---
 # Remove-AzEnvironment
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureEnvironment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

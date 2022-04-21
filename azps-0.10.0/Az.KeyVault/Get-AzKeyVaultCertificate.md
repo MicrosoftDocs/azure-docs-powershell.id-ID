@@ -10,8 +10,8 @@ ms.openlocfilehash: babd3d8a42ddbd740c8189a41de76c78170ecae5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142057817"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142720468"
 ---
 # Get-AzKeyVaultCertificate
 
@@ -213,7 +213,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.KeyVault.Models.KeyVaultCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

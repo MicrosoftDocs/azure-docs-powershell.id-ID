@@ -10,8 +10,8 @@ ms.openlocfilehash: 551cee0e4494cfd42847c2dc030841ad203d48d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995454"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142678438"
 ---
 # New-AzFirewallApplicationRuleCollection
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallApplicationRuleCollection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

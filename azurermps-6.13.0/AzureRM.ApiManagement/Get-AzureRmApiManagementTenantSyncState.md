@@ -10,8 +10,8 @@ ms.openlocfilehash: c75660c60788d5b2a099be97c927328464f34dba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846248"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734662"
 ---
 # Get-AzureRmApiManagementTenantSyncState
 
@@ -83,6 +83,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementTenantConfigurationSyncState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

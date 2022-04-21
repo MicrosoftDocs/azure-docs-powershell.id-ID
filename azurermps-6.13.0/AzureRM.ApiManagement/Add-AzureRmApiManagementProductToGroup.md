@@ -10,8 +10,8 @@ ms.openlocfilehash: 1bd1027c0d58f1ee38ca23c28b3021bdc2b95d19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103168"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734757"
 ---
 # Add-AzureRmApiManagementProductToGroup
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

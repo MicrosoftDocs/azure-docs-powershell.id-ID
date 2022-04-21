@@ -10,8 +10,8 @@ ms.openlocfilehash: 5bf5745270db8cea076ccac9cff2d4e9b7a4bc06
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096809"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658936"
 ---
 # Get-AzureRmSchedulerJobHistory
 
@@ -126,7 +126,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Scheduler.Models.PSJobHistory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

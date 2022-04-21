@@ -10,8 +10,8 @@ ms.openlocfilehash: f84d9f823d97872d8ad2491a2ab45ef3bb5a22a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141875354"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721346"
 ---
 # Add-AzVmssDiagnosticsExtension
 
@@ -207,7 +207,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 ###  
 Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

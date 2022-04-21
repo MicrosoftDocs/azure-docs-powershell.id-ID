@@ -10,8 +10,8 @@ ms.openlocfilehash: ab7bae5430bf2b588997d57e92a18a4408ca4334
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811526"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721080"
 ---
 # Get-AzVMBootDiagnosticsData
 
@@ -164,7 +164,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineInstanceView
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

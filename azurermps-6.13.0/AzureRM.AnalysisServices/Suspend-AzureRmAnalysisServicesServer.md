@@ -9,8 +9,8 @@ ms.openlocfilehash: 0fc666ef1b747c7c114de560d241bcc2ac7be1f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734762"
 ---
 # Suspend-AzureRmAnalysisServicesServer
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: Suspend-AzureAs
 
 ## RELATED LINKS

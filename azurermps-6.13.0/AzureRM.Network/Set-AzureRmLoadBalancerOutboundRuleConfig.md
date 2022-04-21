@@ -9,8 +9,8 @@ ms.openlocfilehash: 1c813a7ac23ae8bc161f10df02ac618d5f6a7a81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141776998"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142726866"
 ---
 # Set-AzureRmLoadBalancerOutboundRuleConfig
 
@@ -253,6 +253,6 @@ System.Int32 System.String System.Collections.Generic.List1\`[[Microsoft.Azure.C
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

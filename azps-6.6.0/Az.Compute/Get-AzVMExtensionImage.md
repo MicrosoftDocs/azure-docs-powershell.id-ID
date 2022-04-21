@@ -10,8 +10,8 @@ ms.openlocfilehash: 2eb62c6d9dd8ae22135a1ae4e0dd5935f5eccd6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142128869"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142717552"
 ---
 # Get-AzVMExtensionImage
 
@@ -218,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineExtensionImageDetails
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

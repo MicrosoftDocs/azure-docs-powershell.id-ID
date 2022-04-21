@@ -9,8 +9,8 @@ ms.openlocfilehash: a2d528da646c3a59077e193331f47b74e56076eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166214"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142739998"
 ---
 # Get-AzADGroup
 
@@ -280,7 +280,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup
 
-## CATATAN
+## NOTES
 
 ALIAS
 

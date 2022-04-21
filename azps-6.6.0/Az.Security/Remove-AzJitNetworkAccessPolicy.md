@@ -9,8 +9,8 @@ ms.openlocfilehash: c9d72bb35e3a4604b8c477f1ca28d4bfe1aaa670
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142041545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142707904"
 ---
 # Remove-AzJitNetworkAccessPolicy
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

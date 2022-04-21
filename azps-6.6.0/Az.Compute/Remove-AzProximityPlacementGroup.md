@@ -9,8 +9,8 @@ ms.openlocfilehash: 3764bb4c85c79fcd9c4b832de540465ebc8fe87d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142717318"
 ---
 # Remove-AzProximityPlacementGroup
 
@@ -211,6 +211,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
