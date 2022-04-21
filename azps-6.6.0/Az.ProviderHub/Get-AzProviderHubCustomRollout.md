@@ -9,8 +9,8 @@ ms.openlocfilehash: 3cf8e19b6a9845c6f1aa85e40e64c9bc2214b85d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142044425"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142771804"
 ---
 # Get-AzProviderHubCustomRollout
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ICustomRollout
 
-## CATATAN
+## NOTES
 
 ALIAS
 

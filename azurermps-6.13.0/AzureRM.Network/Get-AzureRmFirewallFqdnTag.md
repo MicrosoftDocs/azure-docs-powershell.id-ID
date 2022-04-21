@@ -10,8 +10,8 @@ ms.openlocfilehash: 33482ff6686409c62a2aeffbf616f62074b1984e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138951"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791803"
 ---
 # Get-AzureRmFirewallFqdnTag
 
@@ -75,7 +75,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallFqdnTag
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

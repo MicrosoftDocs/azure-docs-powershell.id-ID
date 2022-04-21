@@ -10,8 +10,8 @@ ms.openlocfilehash: 3e2921484874626dc567889477b477e48065905a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420239"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799038"
 ---
 # Set-AzSqlDatabaseSecondary
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama Azure SQL Database Sekunder.
+Menentukan nama Azure SQL Database Secondary.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat Azure SQL Database Sekunder ditetapkan.
+Menentukan nama grup sumber daya tempat Azure SQL Database Secondary ditetapkan.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server yang menjadi host Azure SQL Database Sekunder.
+Menentukan nama SQL Server yang menjadi host Azure SQL Database Secondary.
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -227,4 +227,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzSqlDatabaseSecondary](./Remove-AzSqlDatabaseSecondary.md)
 
-[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)

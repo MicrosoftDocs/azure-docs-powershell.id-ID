@@ -10,8 +10,8 @@ ms.openlocfilehash: 5c1545b7fd9057f9398bbf6247457c7f515fb19e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142435181"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811998"
 ---
 # Remove-AzAutomationModule
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

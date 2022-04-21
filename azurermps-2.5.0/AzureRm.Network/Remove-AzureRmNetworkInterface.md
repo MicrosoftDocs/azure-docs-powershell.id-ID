@@ -8,8 +8,8 @@ ms.openlocfilehash: 955c5200b7c7b9716e096f1157f7179619ae4f5c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797562"
 ---
 # Remove-AzureRmNetworkInterface
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

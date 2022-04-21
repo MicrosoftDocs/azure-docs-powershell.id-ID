@@ -9,8 +9,8 @@ ms.openlocfilehash: f619c281caa8a46aa68776af977622b29508f29b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142071121"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142765450"
 ---
 # New-AzDataProtectionPolicyTagCriteriaClientObject
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IScheduleBasedBackupCriteria
 
-## CATATAN
+## NOTES
 
 ALIAS
 

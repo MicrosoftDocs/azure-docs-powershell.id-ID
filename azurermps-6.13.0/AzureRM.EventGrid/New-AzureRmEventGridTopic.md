@@ -9,8 +9,8 @@ ms.openlocfilehash: a20262e1414b8f747e638f22283aed26b5483896
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064400"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792986"
 ---
 # New-AzureRmEventGridTopic
 
@@ -166,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSTopic
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

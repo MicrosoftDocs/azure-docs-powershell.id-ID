@@ -9,8 +9,8 @@ ms.openlocfilehash: cb30b4a158b8b94e1b81a88eb4ad790e38cdd14a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419846"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797809"
 ---
 # Remove-AzStorageAccountManagementPolicy
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

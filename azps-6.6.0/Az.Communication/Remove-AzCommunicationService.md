@@ -9,8 +9,8 @@ ms.openlocfilehash: e0ce10a9e20258be0963e3e32b44c5612665f246
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142129193"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142778464"
 ---
 # Remove-AzCommunicationService
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

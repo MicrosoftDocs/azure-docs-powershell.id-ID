@@ -8,8 +8,8 @@ ms.openlocfilehash: dcdba23de872ed0f1518188387c6f7e2d357c909
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888853"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797012"
 ---
 # Get-AzureRmWebAppCertificate
 
@@ -102,7 +102,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

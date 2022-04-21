@@ -9,8 +9,8 @@ ms.openlocfilehash: 2006ad01e25bd802033422f78b52ca6baed38df7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142249111"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142813078"
 ---
 # Get-AzVMwareGlobalReachConnection
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.IGlobalReachConnection
 
-## CATATAN
+## NOTES
 
 ALIAS
 

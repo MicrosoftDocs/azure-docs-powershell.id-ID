@@ -9,8 +9,8 @@ ms.openlocfilehash: e8acc8d07f0ccd92016804480d78ce1a05e4b919
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142466261"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142818856"
 ---
 # Remove-AzPolicyRemediation
 
@@ -266,6 +266,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

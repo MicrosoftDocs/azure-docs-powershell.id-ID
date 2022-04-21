@@ -9,8 +9,8 @@ ms.openlocfilehash: a8103f69d8ac6ac78911e5efafc0af4eda910f16
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067359"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142763452"
 ---
 # Get-AzExpressRouteConnection
 
@@ -86,7 +86,7 @@ RoutingConfiguration               : {
                                      }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub dan ExpressRouteSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan ExpressRouteSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 Setelah gateway dibuat, gateway tersambung ke sirkuit ExpressRoute lokal menggunakan perintah New-AzExpressRouteConnection.
 
@@ -253,6 +253,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

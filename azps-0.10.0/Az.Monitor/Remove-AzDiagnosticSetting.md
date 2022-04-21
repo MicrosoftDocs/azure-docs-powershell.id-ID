@@ -10,8 +10,8 @@ ms.openlocfilehash: 951cb486495a56eb6d1d74c159df20ac6da8c324
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141917517"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142781974"
 ---
 # Remove-AzDiagnosticSetting
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

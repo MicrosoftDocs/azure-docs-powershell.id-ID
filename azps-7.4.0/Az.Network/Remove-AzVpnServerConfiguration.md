@@ -9,8 +9,8 @@ ms.openlocfilehash: cadfeef13ee7354716105842cbd6c4cfd36aa195
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176127"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142804708"
 ---
 # Remove-AzVpnServerConfiguration
 
@@ -199,6 +199,6 @@ System.String
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,13 +10,13 @@ ms.openlocfilehash: f832fbed15a96f09093de654281681dafa52c4a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142211329"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142818586"
 ---
 # Get-AzPowerBIWorkspaceCollection
 
 ## SYNOPSIS
-Mendapatkan kumpulan ruang kerja Power BI.
+Mendapatkan Power BI koleksi ruang kerja.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspacecollection) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Get-AzPowerBIWorkspaceCollection [-ResourceGroupName] <String> [-WorkspaceCollec
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPowerBIWorkspaceCollection** mendapatkan kumpulan ruang kerja Power BI dalam grup sumber daya dan langganan Azure Anda, atau menurut nama koleksi.
+Cmdlet **Get-AzPowerBIWorkspaceCollection** mendapatkan Power BI koleksi ruang kerja dalam grup sumber daya dan langganan Azure Anda, atau menurut nama koleksi.
 
 ## EXAMPLES
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang kerja Power BI yang didapatkan cmdlet ini.
+Menentukan nama kumpulan ruang kerja Power BI yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.PowerBIEmbedded.Models.PSWorkspaceCollection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 991d417427c8cd9f6c96c6b3e1502f21cd321c60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142378853"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142783936"
 ---
 # Remove-AzsVMExtension
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

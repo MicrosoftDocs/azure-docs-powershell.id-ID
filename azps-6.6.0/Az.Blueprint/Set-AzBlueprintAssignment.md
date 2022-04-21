@@ -9,8 +9,8 @@ ms.openlocfilehash: 560a9a921b79e7ace778c64fa811c97fcd13c3d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142129679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142779148"
 ---
 # Set-AzBlueprintAssignment
 
@@ -383,6 +383,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
