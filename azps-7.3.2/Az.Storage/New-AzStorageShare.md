@@ -10,8 +10,8 @@ ms.openlocfilehash: 2da3f78209eea079d421f0df5a23b6c01e8124e7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142398149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142691943"
 ---
 # New-AzStorageShare
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageFileShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

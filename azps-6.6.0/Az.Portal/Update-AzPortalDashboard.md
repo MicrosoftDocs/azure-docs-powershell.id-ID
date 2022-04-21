@@ -9,8 +9,8 @@ ms.openlocfilehash: d2249508e895b150839792eee875167527de4684
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141862052"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142708876"
 ---
 # Update-AzPortalDashboard
 
@@ -229,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Portal.Models.Api201901Preview.IDashboard
 
-## CATATAN
+## NOTES
 
 ALIAS
 

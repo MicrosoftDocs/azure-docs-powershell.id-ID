@@ -9,8 +9,8 @@ ms.openlocfilehash: 4a7d8fb739a7769c226be27920d67132b989be8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142682326"
 ---
 # Update-AzLabServicesLabPlan
 
@@ -537,7 +537,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.ILabPlan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

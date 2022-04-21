@@ -10,8 +10,8 @@ ms.openlocfilehash: 21e1af2a36478f2e0b8e470660d0fbe2539a396e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142130615"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142719946"
 ---
 # Get-AzProviderOperation
 
@@ -91,7 +91,7 @@ Parameter: OperationSearchString (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.PSResourceProviderOperation
 
-## CATATAN
+## NOTES
 Kata kunci: azure, Az, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Template, penyebaran
 
 ## RELATED LINKS

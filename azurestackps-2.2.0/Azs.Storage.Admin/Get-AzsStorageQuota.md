@@ -7,8 +7,8 @@ ms.openlocfilehash: 1d8f4a3b91262f1a2ab5d2ffac0864ec5b6bb8fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142351925"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721836"
 ---
 # Get-AzsStorageQuota
 
@@ -148,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
@@ -159,7 +159,7 @@ INPUTOBJECT \<IStorageAdminIdentity>:
   - `[Location <String>]`: Lokasi sumber daya.
   - `[QuotaName <String>]`: Nama kuota penyimpanan.
   - `[ResourceGroup <String>]`: Nama grup sumber daya.
-  - `[ServiceName <String>]`: Storage nama layanan.
+  - `[ServiceName <String>]`: Nama layanan penyimpanan.
   - `[SubscriptionId <String>]`: Id Langganan.
 
 ## RELATED LINKS

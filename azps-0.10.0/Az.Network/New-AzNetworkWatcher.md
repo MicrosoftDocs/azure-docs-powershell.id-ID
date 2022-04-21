@@ -9,13 +9,13 @@ ms.openlocfilehash: cace33dd9831dcfcc01f2a57eefb5f28367966d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142131407"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142720288"
 ---
 # New-AzNetworkWatcher
 
 ## SYNOPSIS
-Membuat sumber daya Network Watcher baru.
+Membuat sumber daya Pengawas Jaringan baru.
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ New-AzNetworkWatcher -Name <String> -ResourceGroupName <String> -Location <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcher membuat sumber daya Network Watcher baru.
+Cmdlet New-AzNetworkWatcher membuat sumber daya Pengawas Jaringan baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Network Watcher
+### Contoh 1: Membuat Pengawas Jaringan
 ```
 New-AzResourceGroup -Name NetworkWatcherRG -Location westcentralus
 New-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG
@@ -42,7 +42,7 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Contoh ini membuat Network Watcher baru di dalam Grup Sumber Daya yang baru dibuat. Perhatikan bahwa hanya satu Network Watcher yang dapat dibuat per kawasan per langganan.
+Contoh ini membuat Pengawas Jaringan baru di dalam Grup Sumber Daya yang baru dibuat. Perhatikan bahwa hanya satu Pengawas Jaringan yang dapat dibuat per kawasan per langganan.
 
 ## PARAMETERS
 
@@ -166,7 +166,7 @@ System.Collections.Hashtable
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS

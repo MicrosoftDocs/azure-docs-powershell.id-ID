@@ -9,8 +9,8 @@ ms.openlocfilehash: 8196f80b7bdeb3a7b1ec3fa2af13b09761a16543
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419649"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142670068"
 ---
 # Get-AzSupportService
 
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Support.Models.PSSupportService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

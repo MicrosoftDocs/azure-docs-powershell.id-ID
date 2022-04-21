@@ -9,8 +9,8 @@ ms.openlocfilehash: 34dc4fa0d293b3b913b038c29f28e121073f45b2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420549"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142671652"
 ---
 # Get-AzWebPubSubUsage
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.ISignalRServiceUsage
 
-## CATATAN
+## NOTES
 
 ALIAS
 

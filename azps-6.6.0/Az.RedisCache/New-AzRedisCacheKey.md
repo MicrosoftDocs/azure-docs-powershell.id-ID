@@ -10,8 +10,8 @@ ms.openlocfilehash: 50cc29d73284e911c4a55555b4bb6896c3accf2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142043399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142708282"
 ---
 # New-AzRedisCacheKey
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Redis.Models.RedisAccessKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

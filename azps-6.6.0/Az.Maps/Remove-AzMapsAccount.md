@@ -9,13 +9,13 @@ ms.openlocfilehash: 9ff1c394bf9d4977b42535bf1e11b88f70ab6ffe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303783"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142713538"
 ---
 # Remove-AzMapsAccount
 
 ## SYNOPSIS
-Hapus Akun Peta.
+Menghapus Akun Peta.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maps/remove-azmapsaccount) untuk informasi terbaru.
@@ -35,11 +35,11 @@ Remove-AzMapsAccount -InputObject <IMapsIdentity> [-DefaultProfile <PSObject>] [
 ```
 
 ## DESCRIPTION
-Hapus Akun Peta.
+Menghapus Akun Peta.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Akun Peta
+### Contoh 1: Menghapus Akun Peta
 ```powershell
 PS C:\> Remove-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01
 
@@ -53,7 +53,7 @@ PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccoun
 
 ```
 
-Perintah ini menghapus Akun Peta menurut saluran.
+Perintah ini menghapus akun Peta menurut saluran.
 
 ## PARAMETERS
 
@@ -184,13 +184,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.IMapsIdentity
 
 ## OUTPUTS
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -201,7 +201,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
-  - `[CreatorName <String>]`: Nama instans Pembuat Peta.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -9,13 +9,13 @@ ms.openlocfilehash: 2ed61b770dbd1bf5233de435630f9e835305abff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141799142"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142710568"
 ---
 # Remove-AzNetworkWatcher
 
 ## SYNOPSIS
-Menghapus Pengawas Jaringan.
+Menghapus Network Watcher.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkwatcher) untuk informasi terbaru.
@@ -41,18 +41,18 @@ Remove-AzNetworkWatcher -Location <String> [-PassThru] [-AsJob] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzNetworkWatcher menghapus sumber daya Pengawas Jaringan.
+Cmdlet Remove-AzNetworkWatcher menghapus sumber daya Network Watcher.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan menghapus Pengawas Jaringan
+### Contoh 1: Membuat dan menghapus Network Watcher
 ```
 New-AzResourceGroup -Name NetworkWatcherRG -Location westcentralus
 New-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG -Location westcentralus
 Remove-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG
 ```
 
-Contoh ini membuat Pengawas Jaringan dalam grup sumber daya lalu langsung menghapusnya. Perhatikan bahwa hanya satu Pengawas Jaringan yang dapat dibuat per kawasan per langganan.
+Contoh ini membuat Network Watcher dalam grup sumber daya lalu langsung menghapusnya. Perhatikan bahwa hanya satu Network Watcher yang dapat dibuat per kawasan per langganan.
 Untuk menyembunyikan perintah saat menghapus jaringan virtual, gunakan bendera -Force.
 
 ## PARAMETERS
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS

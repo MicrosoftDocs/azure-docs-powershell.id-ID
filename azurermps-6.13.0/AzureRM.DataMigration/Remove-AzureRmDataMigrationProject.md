@@ -9,8 +9,8 @@ ms.openlocfilehash: 5aada0f82b8d2a11486e3dde2f4b806f735979e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142388280"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142662164"
 ---
 # Remove-AzureRmDataMigrationProject
 
@@ -242,6 +242,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7d8552ccc2c293f33c71402043a28bfad32ceeeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887219"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142664288"
 ---
 # Remove-AzureRmBatchApplicationPackage
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

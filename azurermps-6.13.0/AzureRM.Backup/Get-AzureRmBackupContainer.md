@@ -10,8 +10,8 @@ ms.openlocfilehash: e20276d8a2dfec8ffb39665e5122cfe4be74dc42
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142282651"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142664740"
 ---
 # Get-AzureRmBackupContainer
 
@@ -187,7 +187,7 @@ Parameter: Vault (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainer
 
-## CATATAN
+## NOTES
 * Tidak
 
 ## RELATED LINKS

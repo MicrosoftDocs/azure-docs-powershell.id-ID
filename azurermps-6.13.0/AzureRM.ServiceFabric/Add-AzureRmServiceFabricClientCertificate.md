@@ -9,8 +9,8 @@ ms.openlocfilehash: d1bd4dc4a3fd47d19d76568e9c60a51f09d739c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658554"
 ---
 # Add-AzureRmServiceFabricClientCertificate
 
@@ -270,7 +270,7 @@ Parameter: ClientCertificateCommonName (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

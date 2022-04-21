@@ -9,8 +9,8 @@ ms.openlocfilehash: 7dc2be914fcaf8c267970c750b5af37214f1c80d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432963"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142685440"
 ---
 # Remove-AzDataFactoryV2IntegrationRuntime
 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

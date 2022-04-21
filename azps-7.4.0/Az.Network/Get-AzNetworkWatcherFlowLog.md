@@ -9,8 +9,8 @@ ms.openlocfilehash: 08b5bb2b78aa527a130a14316229729b303fbbaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167749"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142679338"
 ---
 # Get-AzNetworkWatcherFlowLog
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLogResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

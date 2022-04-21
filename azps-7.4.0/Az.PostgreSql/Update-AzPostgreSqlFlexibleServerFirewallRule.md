@@ -9,8 +9,8 @@ ms.openlocfilehash: a583a548a9d5a947bd6268fd3633f75eaa60a2fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421426"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142675234"
 ---
 # Update-AzPostgreSqlFlexibleServerFirewallRule
 
@@ -291,7 +291,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IFirewallRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

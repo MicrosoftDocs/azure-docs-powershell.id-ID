@@ -7,8 +7,8 @@ ms.openlocfilehash: 00ce7cd468b8325cf51327ded69fcd13b4d49378
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311701"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654156"
 ---
 # Start-AzureSqlDatabaseRecovery
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Management.Sql.Models.RecoverDatabaseOperation
 
-## CATATAN
+## NOTES
 * Anda harus menggunakan autentikasi berbasis sertifikat untuk menjalankan cmdlet ini. Jalankan perintah berikut ini di komputer tempat Anda menjalankan cmdlet ini: 
 
 `PS C:\\\> $subId = \<Subscription ID\>`
