@@ -9,8 +9,8 @@ ms.openlocfilehash: f857d81713e444e3b29d97f9735164cca23612e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248985"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142689544"
 ---
 # Get-AzStaticWebAppConfiguredRole
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20201201.IStringList
 
-## CATATAN
+## NOTES
 
 ALIAS
 

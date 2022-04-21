@@ -9,8 +9,8 @@ ms.openlocfilehash: 2c57200b3e5d1b2f8832fca93209a699e89e335c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233415"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142715771"
 ---
 # Get-AzDeploymentManagerServiceTopology
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

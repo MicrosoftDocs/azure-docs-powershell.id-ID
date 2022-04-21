@@ -9,8 +9,8 @@ ms.openlocfilehash: 8f171b42e3f1e1f087890ec451d5a3ff13cb8c57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389650"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142664236"
 ---
 # Start-AzureBatchComputeNodeServiceLogUpload
 
@@ -266,6 +266,6 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSStartComputeNodeServiceLogUploadResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

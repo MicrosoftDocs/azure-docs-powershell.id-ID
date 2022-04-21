@@ -7,8 +7,8 @@ ms.openlocfilehash: 7d3042df6340f2a0ee53d91e7748c79c7571a8ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966237"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656568"
 ---
 # Get-AzureSBLocation
 
@@ -65,7 +65,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,13 +10,13 @@ ms.openlocfilehash: be4a4f418268d1e2523e13d5a779f911381c7309
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059508"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657946"
 ---
 # Remove-AzureRmSqlDatabaseRestorePoint
 
 ## SYNOPSIS
-Menghapus titik pemulihan tertentu dari Database SQL.
+Menghapus titik pemulihan yang diberikan dari SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ Remove-AzureRmSqlDatabaseRestorePoint -RestorePointCreationDate <DateTime> [-Pas
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmSqlDatabaseRestorePoint** menghapus titik pemulihan tertentu dari Azure SQL Database.
-Cmdlet ini saat ini didukung oleh layanan Gudang Data SQL Server di Database Azure SQL.
+Cmdlet ini saat ini didukung oleh layanan SQL Server Datawarehouse di Azure SQL Database.
 
 ## EXAMPLES
 
@@ -40,12 +40,12 @@ PS C:\>$RestorePointCreationDate = Get-Date "3/11/2017 1:50:00 AM"
 PS C:\>Remove-AzureRmSqlDatabaseRestorePoint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -RestorePointCreationDate $RestorePointCreationDate
 ```
 
-Perintah ini menghapus titik pemulihan untuk tanggal pembuatan Database Azure SQL yang diberikan.
+Perintah ini menghapus titik pemulihan untuk Azure SQL Database tanggal pembuatan tertentu.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama Database SQL.
+Menentukan nama SQL Database.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat Database SQL ditetapkan.
+Menentukan nama grup sumber daya tempat SQL Database ditetapkan.
 
 ```yaml
 Type: System.String
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseRestorePointModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

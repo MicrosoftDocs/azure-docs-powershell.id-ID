@@ -10,8 +10,8 @@ ms.openlocfilehash: 4becdedaf9db853dae73ac449e77ff8f47ad243f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142473011"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142702360"
 ---
 # New-AzDataFactoryDataset
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataset
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

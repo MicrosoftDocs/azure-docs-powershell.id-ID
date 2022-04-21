@@ -10,8 +10,8 @@ ms.openlocfilehash: 75bb963195244a5a1a27ca004eb2795b6b5bb556
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888017"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142665368"
 ---
 # Set-AzureRmApiManagementPolicy
 
@@ -278,7 +278,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

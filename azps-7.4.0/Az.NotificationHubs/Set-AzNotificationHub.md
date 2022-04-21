@@ -10,8 +10,8 @@ ms.openlocfilehash: c5a9034da10e29ad3b0476d07de6d98b39e6ea1b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421739"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142676350"
 ---
 # Set-AzNotificationHub
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NotificationHubs.Models.NotificationHubAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

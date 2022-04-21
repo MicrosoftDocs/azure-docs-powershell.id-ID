@@ -9,8 +9,8 @@ ms.openlocfilehash: b6057129f2a6f7cd26d7f73b3f9bd497691e6552
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673038"
 ---
 # Get-AzExternalSecuritySolution
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.ExternalSecuritySolutions.PSSecurityExternalSecuritySolution
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

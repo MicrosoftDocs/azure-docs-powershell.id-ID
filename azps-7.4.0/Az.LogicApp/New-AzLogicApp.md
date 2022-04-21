@@ -10,8 +10,8 @@ ms.openlocfilehash: 5806e7e886445e3fed07b80eef4d2f109e1083e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177807"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142682218"
 ---
 # New-AzLogicApp
 
@@ -372,7 +372,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,13 +9,13 @@ ms.openlocfilehash: 16835759c09bff8f15281ede225ce594bf2e03ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141829665"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673128"
 ---
 # Get-AzSearchPrivateLinkResource
 
 ## SYNOPSIS
-Mendapatkan detail sumber daya tautan pribadi untuk layanan Azure Cognitive Search.
+Mendapatkan detail sumber daya tautan pribadi untuk layanan Pencarian Kognitif Azure.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzSearchPrivateLinkResource [-InputObject] <PSSearchService> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSearchPrivateLinkResource** mendapatkan detail sumber daya tautan pribadi untuk layanan Azure Cognitive Search.
+Cmdlet **Get-AzSearchPrivateLinkResource** mendapatkan detail sumber daya tautan pribadi untuk layanan Pencarian Kognitif Azure.
 
 ## EXAMPLES
 
@@ -91,7 +91,7 @@ Get-AzSearchPrivateLinkResource -ResourceGroupName arjagann -Name arjagann-test-
 }
 ```
 
-Contoh memperlihatkan cara mendapatkan detail sumber daya tautan pribadi (dalam formulir JSON untuk kenyamanan) untuk layanan Azure Cognitive Search.
+Contoh memperlihatkan cara mendapatkan detail sumber daya tautan pribadi (dalam formulir JSON untuk kenyamanan) untuk layanan Pencarian Kognitif Azure.
 
 ## PARAMETERS
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Azure Cognitive Search Objek Input Layanan.
+Objek Input Layanan Pencarian Kognitif Azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Azure Cognitive Search Nama layanan.
+Nama Azure Cognitive Search Service.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Azure Cognitive Search Id Sumber Daya Layanan.
+Id Sumber Daya Layanan Pencarian Kognitif Azure.
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSharedPrivateLinkResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

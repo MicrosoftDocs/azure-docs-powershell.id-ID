@@ -10,8 +10,8 @@ ms.openlocfilehash: 37011d5403498dfc9e59a30d5fa71bc862e9eba1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142324619"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142718110"
 ---
 # Publish-AzCdnEndpointContent
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

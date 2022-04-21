@@ -9,8 +9,8 @@ ms.openlocfilehash: 564b1d0c55db66dbf15b7d2a47d75cc831cde3af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422306"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142679824"
 ---
 # Disconnect-AzVirtualNetworkGatewayVpnConnection
 
@@ -145,6 +145,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

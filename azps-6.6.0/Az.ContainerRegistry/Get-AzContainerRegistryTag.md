@@ -9,8 +9,8 @@ ms.openlocfilehash: fdbd2bfc2cbdf9529811160d770a5d793b3f2195
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141869630"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142716760"
 ---
 # Get-AzContainerRegistryTag
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-nama Azure Container Registry.
+Nama Registri Kontainer Azure.
 
 ```yaml
 Type: System.String
@@ -138,6 +138,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.Models.PSTagList
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: a578cfe1d44c572dbef57407c3f54bba55b82af9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142236601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721926"
 ---
 # Remove-AzsContainerRegistryConfiguration
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

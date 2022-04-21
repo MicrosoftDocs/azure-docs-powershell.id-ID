@@ -9,8 +9,8 @@ ms.openlocfilehash: 380c7898f82a984ef9310af784db9efe4319f818
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142028909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142695862"
 ---
 # Update-AzResourceGraphQuery
 
@@ -242,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ResourceGraph.Models.Api20180901Preview.IGraphQueryResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

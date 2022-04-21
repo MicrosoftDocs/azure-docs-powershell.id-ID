@@ -8,8 +8,8 @@ ms.openlocfilehash: 348732794a0cf16233f9a139e86ed89658fc5ac2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142145579"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142666465"
 ---
 # Set-AzureRmNetworkSecurityGroup
 
@@ -97,7 +97,7 @@ Parameter 'NetworkSecurityGroup' menerima nilai tipe 'PSNetworkSecurityGroup' da
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

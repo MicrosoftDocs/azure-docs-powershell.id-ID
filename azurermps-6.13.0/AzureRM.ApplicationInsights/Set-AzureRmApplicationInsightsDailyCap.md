@@ -9,8 +9,8 @@ ms.openlocfilehash: 7b47576c0fd506831d8e48201d39bd66fec72032
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141969902"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142665370"
 ---
 # Set-AzureRmApplicationInsightsDailyCap
 
@@ -210,6 +210,6 @@ Parameter: ApplicationInsightsComponent (ByValue)
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSPricingPlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 7017b7fece2ef7682a194c5f59887cc3f1770dac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142398455"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142692316"
 ---
 # Get-AzRmStorageShare
 
@@ -315,6 +315,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

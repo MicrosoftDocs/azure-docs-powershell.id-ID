@@ -10,8 +10,8 @@ ms.openlocfilehash: de1cee534afa765c84cd20f4932b859cca8a71a6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968804"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142663915"
 ---
 # Add-AzureRmVmssSshPublicKey
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

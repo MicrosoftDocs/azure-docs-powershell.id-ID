@@ -9,8 +9,8 @@ ms.openlocfilehash: 7b7f0055646b24d5eb48c3dd9b5558cfb9797412
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165669"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142672192"
 ---
 # New-AzServiceBusAuthorizationRuleSASToken
 
@@ -170,6 +170,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSSharedAccessSignatureAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

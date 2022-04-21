@@ -9,8 +9,8 @@ ms.openlocfilehash: 60109ae8135a2b363b3b2a8e2b681f3010f8cc69
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142319477"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142701334"
 ---
 # Get-AzMlWebService
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: f4a17b352a92d1b4511aca3e4b7ac4bbd9d878a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993762"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142672912"
 ---
 # Get-AzSecurityAssessment
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Assessments.PSSecurityAssessment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

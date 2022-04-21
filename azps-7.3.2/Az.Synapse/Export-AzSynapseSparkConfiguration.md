@@ -9,8 +9,8 @@ ms.openlocfilehash: 8bd1985281b268639e9c329a1ddd65eebe4a8a75
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142250047"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142691236"
 ---
 # Export-AzSynapseSparkConfiguration
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.IO.FileInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: ed3b8f56a7b6cc80161eba2cd2fa0e55fb766081
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243306"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654084"
 ---
 # Start-AzureStorSimpleLegacyVolumeContainerMigrationPlan
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### String
 Cmdlet ini mengembalikan status pekerjaan rencana migrasi jika telah berhasil dimulai di peralatan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
