@@ -10,8 +10,8 @@ ms.openlocfilehash: ddb871c77f55ea901394f5884102c8fc91b24f0b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142291903"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822816"
 ---
 # Get-AzMediaServiceNameAvailability
 
@@ -20,7 +20,7 @@ Memeriksa apakah nama layanan media tersedia.
 Nama layanan media unik secara global.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicenameavailability) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Nama layanan media unik secara global.
 
 ## EXAMPLES
 
-### Contoh 1: Periksa apakah nama Layanan Media tersedia
+### Contoh 1: Periksa apakah nama Media Service tersedia
 ```
 PS C:\>Get-AzMediaServiceNameAvailability -AccountName "MediaService1"
 ```
@@ -75,17 +75,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Media.Models.PSCheckNameAvailabilityOutput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -93,7 +93,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzMediaService](./New-AzMediaService.md)
 
-[Hapus-AzMediaService](./Remove-AzMediaService.md)
+[Remove-AzMediaService](./Remove-AzMediaService.md)
 
 [Set-AzMediaService](./Set-AzMediaService.md)
 

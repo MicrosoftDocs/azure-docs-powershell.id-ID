@@ -10,8 +10,8 @@ ms.openlocfilehash: 03a60616f51224cd5b72c70e2f95136232a5d36d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142048709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142840222"
 ---
 # Stop-AzLogicAppRun
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

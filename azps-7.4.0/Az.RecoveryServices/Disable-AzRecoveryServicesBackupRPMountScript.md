@@ -9,8 +9,8 @@ ms.openlocfilehash: f32320653ab9f745bf6a5fd2535959f71014c0c2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990935"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802692"
 ---
 # Disable-AzRecoveryServicesBackupRPMountScript
 
@@ -25,7 +25,7 @@ Disable-AzRecoveryServicesBackupRPMountScript [-RecoveryPoint] <RecoveryPointBas
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzRecoveryServicesBackupRPMountScript menghilangkan file titik pemulihan yang dipasang sebelumnya menggunakan cmdlet Get-AzRecoveryServicesBackupRPMountScript.
+Cmdlet Disable-AzRecoveryServicesBackupRPMountScript melepas file titik pemulihan yang dipasang sebelumnya menggunakan cmdlet Get-AzRecoveryServicesBackupRPMountScript.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Disable-AzRecoveryServicesBackupRPMountScript -RecoveryPoint $rp[0]
 
 ### Contoh 2
 
-Melepas semua file titik pemulihan. (autogenerasi)
+Melepas semua file titik pemulihan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -123,8 +123,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -167,6 +167,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

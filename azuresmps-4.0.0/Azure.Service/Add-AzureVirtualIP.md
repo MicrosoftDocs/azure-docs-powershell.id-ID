@@ -7,8 +7,8 @@ ms.openlocfilehash: 2046b466ae9a045d0241fd20f8590fb617afcb67
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095401"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142788726"
 ---
 # Add-AzureVirtualIP
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Utilities.Common.ManagementOperationContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: ed9e3782740c9470f8a6279079d364b68e11c007
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173687"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811368"
 ---
 # Set-AzBatchPool
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

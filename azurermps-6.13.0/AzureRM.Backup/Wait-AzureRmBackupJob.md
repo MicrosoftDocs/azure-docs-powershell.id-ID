@@ -10,8 +10,8 @@ ms.openlocfilehash: a5de80561ee0b80c2ce825db26e1de5c6f46b80b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142359520"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795546"
 ---
 # Wait-AzureRmBackupJob
 
@@ -96,7 +96,7 @@ Parameter: Job (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 26c286816310cfec94bd0c54b4eb56784a862277
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434311"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142809910"
 ---
 # Get-AzVMImageOffer
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImageOffer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

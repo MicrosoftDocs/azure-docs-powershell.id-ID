@@ -9,8 +9,8 @@ ms.openlocfilehash: dcfbfe698889b4e918fddb54bfdce41e73cd5e5a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100710"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795492"
 ---
 # Get-AzureBatchJobPreparationAndReleaseTaskStatus
 
@@ -213,7 +213,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSJobPreparationAndReleaseTaskExecutionInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 109f55c1afc1c00d26c47d0131d098158010bd70
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780186"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794806"
 ---
 # Get-AzureRmVMImagePublisher
 
@@ -81,7 +81,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImagePublisher
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 568afc1b0e344b35bd603f28c1795a83738073c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142225873"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142771912"
 ---
 # Get-AzPowerBIWorkspaceCollectionAccessKey
 
@@ -29,7 +29,7 @@ Get-AzPowerBIWorkspaceCollectionAccessKey [-ResourceGroupName] <String> [-Worksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan kunci akses saat ini yang terkait dengan koleksi ruang kerja Power BI.
+Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan tombol akses saat ini yang terkait dengan kumpulan ruang kerja Power BI.
 
 ## EXAMPLES
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.PowerBIEmbedded.Models.PSWorkspaceCollectionAccessKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

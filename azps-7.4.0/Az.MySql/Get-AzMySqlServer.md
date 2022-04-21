@@ -9,8 +9,8 @@ ms.openlocfilehash: 97ebc8bf819d10a390158f79b3d151212fd0c9d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172858"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142806832"
 ---
 # Get-AzMySqlServer
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 

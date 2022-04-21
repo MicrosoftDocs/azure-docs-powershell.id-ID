@@ -10,8 +10,8 @@ ms.openlocfilehash: 79ac0191f7fe381be4985d53ed719fdeff9d0b88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142099263"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793890"
 ---
 # Get-AzureRmDataFactoryActivityWindow
 
@@ -393,7 +393,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSActivityWindow
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

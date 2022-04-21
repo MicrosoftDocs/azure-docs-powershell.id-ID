@@ -10,8 +10,8 @@ ms.openlocfilehash: ab55201ab2566c814455b6b0f6fe3c2ddf6b3a57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390281"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795744"
 ---
 # Unregister-AzureRmAutomationScheduledRunbook
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

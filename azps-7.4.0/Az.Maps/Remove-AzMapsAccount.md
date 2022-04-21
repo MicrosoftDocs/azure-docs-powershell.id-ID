@@ -9,8 +9,8 @@ ms.openlocfilehash: 36e00c2e31b0df9ab462c13ccc53de1fa30e9cf1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996479"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142807354"
 ---
 # Remove-AzMapsAccount
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e2c78e9e3b805372356d67998acc0690b4d2093
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142026479"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142815328"
 ---
 # Get-AzSqlServerTrustGroup
 
@@ -182,6 +182,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerTrustGroup.Model.AzureSqlServerTrustGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

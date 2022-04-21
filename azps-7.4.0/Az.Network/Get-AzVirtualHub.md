@@ -9,8 +9,8 @@ ms.openlocfilehash: 2b4c33061847e7bd7d8ac3ce8432d495afc44ff0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142805698"
 ---
 # Get-AzVirtualHub
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualHub
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

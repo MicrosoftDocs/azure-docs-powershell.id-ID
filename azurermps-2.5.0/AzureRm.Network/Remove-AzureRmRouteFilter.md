@@ -7,8 +7,8 @@ ms.openlocfilehash: 3622b7ad87658091d4b54af62678d12a324ef56a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141847583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797472"
 ---
 # Remove-AzureRmRouteFilter
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
