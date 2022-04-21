@@ -9,8 +9,8 @@ ms.openlocfilehash: 7addc71275cbe4e6a48708dc2cedef24266cab11
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142211635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142760680"
 ---
 # Update-AzOperationalInsightsCluster
 
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Key Vault Uri, "Purge Protection" dan "Soft Delete" harus diaktifkan untuk keyvault ini
+Key Vault Uri, "Perlindungan Pembersihan" dan "Penghapusan Lunak" harus diaktifkan untuk keyvault ini
 
 ```yaml
 Type: System.String
@@ -391,6 +391,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

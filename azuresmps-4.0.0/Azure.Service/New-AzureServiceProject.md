@@ -7,8 +7,8 @@ ms.openlocfilehash: 7aa78e2a39a624424a61f6160ecd650496b92f6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920577"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787994"
 ---
 # New-AzureServiceProject
 
@@ -80,7 +80,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

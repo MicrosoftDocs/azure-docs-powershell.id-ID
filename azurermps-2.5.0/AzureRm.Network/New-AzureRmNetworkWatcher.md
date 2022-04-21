@@ -7,8 +7,8 @@ ms.openlocfilehash: b096c87e588c48b609fe0a55be7344b39df98c87
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781201"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735530"
 ---
 # New-AzureRmNetworkWatcher
 
@@ -166,7 +166,7 @@ System.Collections.Hashtable
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS

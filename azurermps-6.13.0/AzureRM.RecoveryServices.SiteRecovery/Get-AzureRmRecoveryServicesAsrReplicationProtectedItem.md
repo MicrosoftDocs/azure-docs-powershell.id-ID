@@ -9,8 +9,8 @@ ms.openlocfilehash: 5ccc65973d3dd6f86d3a2e88ba2494fd75df6e06
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818597"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725500"
 ---
 # Get-AzureRmRecoveryServicesAsrReplicationProtectedItem
 
@@ -147,7 +147,7 @@ Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectableItem
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

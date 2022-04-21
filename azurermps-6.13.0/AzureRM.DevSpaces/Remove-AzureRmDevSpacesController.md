@@ -9,8 +9,8 @@ ms.openlocfilehash: e242ba95330ac102fbfbcecf6f28326adb29a057
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779270"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793272"
 ---
 # Remove-AzureRmDevSpacesController
 
@@ -203,6 +203,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

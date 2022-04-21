@@ -10,8 +10,8 @@ ms.openlocfilehash: b52df307cdc867026a733007edd8e6b943866d34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142472723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142765972"
 ---
 # New-AzDataLakeAnalyticsAccount
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSDataLakeAnalyticsAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

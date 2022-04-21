@@ -7,8 +7,8 @@ ms.openlocfilehash: 0c969dd4a8cf5e7a48907c5c75031c85a42898a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141880312"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787176"
 ---
 # Set-AzureNetworkSecurityRule
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

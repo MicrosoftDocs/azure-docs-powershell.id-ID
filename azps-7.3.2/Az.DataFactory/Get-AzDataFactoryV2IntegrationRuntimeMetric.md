@@ -9,8 +9,8 @@ ms.openlocfilehash: fc599a7f189dde7371b56b37f3e3dd7777f8574b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141789188"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142766152"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeMetric
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeMetrics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

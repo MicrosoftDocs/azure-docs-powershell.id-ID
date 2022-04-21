@@ -9,8 +9,8 @@ ms.openlocfilehash: daf7b543a655e6cae50b2cdd5a80d3cd070b5d6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141852530"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142766422"
 ---
 # Get-AzDataBoxEdgeBandwidthSchedule
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeBandWidthSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

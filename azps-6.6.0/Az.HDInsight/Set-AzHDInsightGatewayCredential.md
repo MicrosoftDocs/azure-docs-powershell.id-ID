@@ -9,8 +9,8 @@ ms.openlocfilehash: 94d33835b44923010222d280b75aa672d547e072
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142231921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142776142"
 ---
 # Set-AzHDInsightGatewayCredential
 
@@ -229,6 +229,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.Management.AzureHDInsightGatewaySettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

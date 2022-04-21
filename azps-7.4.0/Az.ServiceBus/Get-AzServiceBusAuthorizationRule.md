@@ -9,8 +9,8 @@ ms.openlocfilehash: c9540aba45c461a163ebb4b1d2a134468f760888
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165684"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800820"
 ---
 # Get-AzServiceBusAuthorizationRule
 
@@ -194,6 +194,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSSharedAccessAuthorizationRuleAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

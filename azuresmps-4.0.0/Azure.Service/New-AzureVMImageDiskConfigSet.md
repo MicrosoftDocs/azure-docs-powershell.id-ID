@@ -7,8 +7,8 @@ ms.openlocfilehash: e3bf4a0b0bd1afcf9eb2d3b7d05a7a9cde818474
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142312585"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787950"
 ---
 # New-AzureVMImageDiskConfigSet
 
@@ -93,7 +93,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.VirtualMachineImageDiskConfigSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

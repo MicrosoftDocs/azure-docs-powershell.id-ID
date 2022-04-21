@@ -9,8 +9,8 @@ ms.openlocfilehash: c04a79a54e42c64fe897a419565e4816964879b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142098789"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793332"
 ---
 # New-AzureRmDataMigrationDatabaseInfo
 
@@ -82,6 +82,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

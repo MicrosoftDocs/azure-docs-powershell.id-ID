@@ -9,8 +9,8 @@ ms.openlocfilehash: 7679d930f852377fa911c2d89664669c899537c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142347748"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142767016"
 ---
 # Remove-AzCapacityReservationGroup
 
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

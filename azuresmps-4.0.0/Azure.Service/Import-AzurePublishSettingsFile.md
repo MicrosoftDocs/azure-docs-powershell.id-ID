@@ -7,8 +7,8 @@ ms.openlocfilehash: f71a9972dca0fcb0c6d2b364a0687ca2d35da9d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094571"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142788246"
 ---
 # Import-AzurePublishSettingsFile
 
@@ -111,7 +111,7 @@ Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak m
 ### Tidak
 Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 * "menerbitkan file pengaturan" adalah file XML dengan ekstensi nama file .publishsettings. File berisi sertifikat berkode yang menyediakan kredensial manajemen untuk langganan Azure Anda. Setelah mengimpor file ini, hapus file tersebut untuk menghindari risiko keamanan.
 * "File data langganan" adalah file XML yang dapat disimpan di komputer Anda dengan aman. Secara default, file disimpan di profil pengguna jelajah Anda ($home/AppData/Roaming).
 

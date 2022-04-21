@@ -10,8 +10,8 @@ ms.openlocfilehash: a7fc6d3e8a4cd7a216f58201af93a1f657193d52
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841488"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142751374"
 ---
 # Get-AzAutomationDscNodeConfiguration
 
@@ -40,7 +40,7 @@ Get-AzAutomationDscNodeConfiguration -ConfigurationName <String> [-RollupStatus 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
+Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
 Otomatisasi menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CompilationJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

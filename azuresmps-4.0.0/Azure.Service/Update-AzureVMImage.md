@@ -7,8 +7,8 @@ ms.openlocfilehash: 497c7ef1d55d34f5ba4e1d749ab2829d303396c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243081"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142786780"
 ---
 # Update-AzureVMImage
 
@@ -318,7 +318,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### OSImageContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

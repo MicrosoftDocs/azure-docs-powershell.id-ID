@@ -8,8 +8,8 @@ ms.openlocfilehash: 99ac8e367c42cd59b3f055aa4a86a3efd4f297a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141928300"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735489"
 ---
 # Remove-AzureRmApplicationGateway
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

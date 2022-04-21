@@ -9,8 +9,8 @@ ms.openlocfilehash: 6743329d9f77c8f197c0c3448f899742d018dab1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165529"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800082"
 ---
 # Update-AzServiceFabricVmImage
 
@@ -153,6 +153,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSDeploymentResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

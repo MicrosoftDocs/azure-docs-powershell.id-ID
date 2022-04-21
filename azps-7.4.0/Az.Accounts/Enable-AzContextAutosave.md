@@ -9,13 +9,13 @@ ms.openlocfilehash: d42707f94f4c18ea4fa2b7008aeeee560212a5ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170463"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142752796"
 ---
 # Enable-AzContextAutosave
 
 ## SYNOPSIS
-Konteks Azure adalah objek PowerShell yang mewakili langganan aktif Anda untuk menjalankan perintah, dan informasi autentikasi yang diperlukan untuk menyambungkan ke awan Azure. Dengan konteks Azure, Azure PowerShell tidak perlu menulis ulang akun setiap kali Anda beralih langganan. Untuk informasi selengkapnya, lihat [Azure PowerShell objek konteks](https://docs.microsoft.com/powershell/azure/context-persistence).
+Konteks Azure adalah objek PowerShell yang mewakili langganan aktif Anda untuk menjalankan perintah, dan informasi autentikasi yang diperlukan untuk menyambungkan ke awan Azure. Dengan konteks Azure, Azure PowerShell tidak perlu mengotentikasi ulang akun Setiap kali Anda beralih langganan. Untuk informasi selengkapnya, lihat [Objek konteks Azure PowerShell](https://docs.microsoft.com/powershell/azure/context-persistence).
 
 Cmdlet ini memungkinkan informasi konteks Azure disimpan dan dimuat secara otomatis saat Anda memulai proses PowerShell. Misalnya, saat membuka jendela baru.
 
@@ -127,6 +127,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Common.Authentication.ContextAutosaveSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

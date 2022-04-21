@@ -7,8 +7,8 @@ ms.openlocfilehash: 2c3b5cea703d8962068f344f22af6a68d68655ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381931"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787490"
 ---
 # Remove-AzureStorSimpleDeviceVolume
 
@@ -184,7 +184,7 @@ Cmdlet ini menerima objek **VirtualDisk** untuk dihapus atau nama volume **Virtu
 ### TaskStatusInfo
 Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

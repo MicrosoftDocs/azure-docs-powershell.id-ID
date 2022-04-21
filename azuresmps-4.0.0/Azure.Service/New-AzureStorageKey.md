@@ -7,8 +7,8 @@ ms.openlocfilehash: e65514fa66bbc1c442dc60755c342dd7d29ce3b7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142313126"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787995"
 ---
 # New-AzureStorageKey
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### StorageServiceKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

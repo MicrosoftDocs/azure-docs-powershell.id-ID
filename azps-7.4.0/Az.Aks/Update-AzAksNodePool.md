@@ -9,8 +9,8 @@ ms.openlocfilehash: d3267d391d62edf4b2901ad99a617abc662b8ca9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142004818"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142752544"
 ---
 # Update-AzAksNodePool
 
@@ -333,6 +333,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Aks.Models.PSNodePool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
