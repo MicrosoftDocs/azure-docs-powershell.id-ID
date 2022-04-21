@@ -9,8 +9,8 @@ ms.openlocfilehash: b50447f616c033b037f48d8b027d4f3321a8d2fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993839"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673074"
 ---
 # New-AzSearchService
 
@@ -260,7 +260,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

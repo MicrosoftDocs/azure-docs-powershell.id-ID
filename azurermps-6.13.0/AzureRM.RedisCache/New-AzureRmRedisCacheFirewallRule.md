@@ -9,8 +9,8 @@ ms.openlocfilehash: e5e909107d740f67e3407347625270226c87839d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248345"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725140"
 ---
 # New-AzureRmRedisCacheFirewallRule
 
@@ -227,7 +227,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.RedisCache.Models.PSRedisFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

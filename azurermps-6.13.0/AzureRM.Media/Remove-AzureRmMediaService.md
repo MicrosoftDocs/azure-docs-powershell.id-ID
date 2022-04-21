@@ -10,8 +10,8 @@ ms.openlocfilehash: 9ddf8291d5f6276126cea82305bbc554d05ca006
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778565"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731361"
 ---
 # Remove-AzureRmMediaService
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

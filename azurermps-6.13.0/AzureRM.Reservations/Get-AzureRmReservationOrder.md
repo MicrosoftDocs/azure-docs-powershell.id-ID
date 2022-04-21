@@ -9,8 +9,8 @@ ms.openlocfilehash: 12e76c3412f54ba840528f9ff1a40acd388cd109
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818022"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724976"
 ---
 # Get-AzureRmReservationOrder
 
@@ -90,6 +90,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservationOrder
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

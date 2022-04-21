@@ -9,13 +9,13 @@ ms.openlocfilehash: bc479972ecb4c7b53a5d6f3c604b1099066d1404
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142108655"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142698850"
 ---
 # New-AzApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
-Membuat Konfigurasi Skala Otomatis untuk Gateway Aplikasi.
+Membuat Konfigurasi Skala Otomatis untuk Application Gateway.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayautoscaleconfiguration) untuk informasi terbaru.
@@ -50,10 +50,10 @@ PS C:\> $gw.AutoscaleConfiguration = New-AzApplicationGatewayAutoscaleConfigurat
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama akan memasukkan konfigurasi Gateway Aplikasi ke dalam variabel.
+Perintah pertama akan memasukkan konfigurasi Application Gateway ke dalam variabel.
 Perintah kedua menghapus variabel Kapasitas SKU untuk memungkinkan Konfigurasi Skala Otomatis diatur.
-Perintah ketiga menentukan Konfigurasi Skala Otomatis baru untuk Gateway Aplikasi.
-Perintah keempat menerapkan konfigurasi baru ke Gateway Aplikasi.
+Perintah ketiga menentukan Konfigurasi SkalaOtomatis baru untuk Application Gateway.
+Perintah keempat menerapkan konfigurasi baru ke Application Gateway.
 
 ## PARAMETERS
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAutoscaleConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

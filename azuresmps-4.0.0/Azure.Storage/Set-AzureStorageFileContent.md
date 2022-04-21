@@ -7,8 +7,8 @@ ms.openlocfilehash: 9bf6987ced18bb8d844d33615ba5585121cbbe54
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311260"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653544"
 ---
 # Set-AzureStorageFileContent
 
@@ -304,7 +304,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

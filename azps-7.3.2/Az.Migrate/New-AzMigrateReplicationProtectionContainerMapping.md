@@ -9,8 +9,8 @@ ms.openlocfilehash: 817f553d5622a5b1c9690afaa32510273099c6f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142291597"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142700830"
 ---
 # New-AzMigrateReplicationProtectionContainerMapping
 
@@ -279,7 +279,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IProtectionContainerMapping
 
-## CATATAN
+## NOTES
 
 ALIAS
 

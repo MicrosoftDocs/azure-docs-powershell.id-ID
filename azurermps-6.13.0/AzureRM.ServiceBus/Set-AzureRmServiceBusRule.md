@@ -9,8 +9,8 @@ ms.openlocfilehash: cb6200156b68524119df86e24d812b97bcd250e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314892"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724194"
 ---
 # Set-AzureRmServiceBusRule
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSRulesAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

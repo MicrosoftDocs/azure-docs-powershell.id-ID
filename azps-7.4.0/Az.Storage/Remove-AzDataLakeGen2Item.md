@@ -9,8 +9,8 @@ ms.openlocfilehash: 7b601a97d12a363201f330206953b730ad5c6a01
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164699"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142670842"
 ---
 # Remove-AzDataLakeGen2Item
 
@@ -229,6 +229,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

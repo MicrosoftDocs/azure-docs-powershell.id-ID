@@ -9,8 +9,8 @@ ms.openlocfilehash: 9832faaaaf1097f53aff841f8a455680b2a40a2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778722"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731565"
 ---
 # Test-AzureRmMlOpClusterSystemServicesUpdateAvailability
 
@@ -150,6 +150,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.MachineLearningCompute.Models.PSCheckSystemServicesUpdatesAvailableResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

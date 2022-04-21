@@ -10,8 +10,8 @@ ms.openlocfilehash: 8385fd3ec1fa09246ea88f29055f968059651613
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045181"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142709326"
 ---
 # Get-AzOperationalInsightsSavedSearch
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSSearchGetSavedSearchResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

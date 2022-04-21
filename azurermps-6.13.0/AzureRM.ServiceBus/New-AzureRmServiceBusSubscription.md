@@ -9,8 +9,8 @@ ms.openlocfilehash: b780af95efcb73d922e326550afd234a50d37929
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281141"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724230"
 ---
 # New-AzureRmServiceBusSubscription
 
@@ -337,6 +337,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

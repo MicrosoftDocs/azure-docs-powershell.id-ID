@@ -9,8 +9,8 @@ ms.openlocfilehash: 07c5b03b3d5717115238e3cd66b9f80925b51537
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065003"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142662766"
 ---
 # Get-AzureRmDataFactoryV2IntegrationRuntimeMetric
 
@@ -161,7 +161,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeMetrics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

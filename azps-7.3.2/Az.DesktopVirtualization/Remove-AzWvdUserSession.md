@@ -9,8 +9,8 @@ ms.openlocfilehash: f898f03e6694e34b38d3f929f3129767064eb175
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142111464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142702090"
 ---
 # Remove-AzWvdUserSession
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

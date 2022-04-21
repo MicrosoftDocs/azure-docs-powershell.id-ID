@@ -10,8 +10,8 @@ ms.openlocfilehash: 070680c1dc1c9fd091b311888867cda3f844ce4a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138872"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731024"
 ---
 # Get-AzureRmLoadBalancerFrontendIpConfig
 
@@ -100,7 +100,7 @@ Parameter: LoadBalancer (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 8c578e2e7847223dfbcbf719859b59333d951e45
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141960909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142717840"
 ---
 # Remove-AzCognitiveServicesAccountNetworkRule
 
@@ -237,6 +237,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSIpRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: e7f45be6a39cdd2b7f2d11736d2a5f62831244c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725076"
 ---
 # Get-AzureRmRelayOperation
 
@@ -91,6 +91,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Relay.Models.PSOperationAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 0277e61a6b1b180691908b2e86c0050eb8d62b1d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141883436"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730824"
 ---
 # Get-AzureRmVpnSite
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Situs Microsoft.Azure.Commands.Network.Models.PSVpnSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

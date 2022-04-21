@@ -9,8 +9,8 @@ ms.openlocfilehash: a44c799eec3083fb14683e7d8c4df2268e7a6858
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142217197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142702702"
 ---
 # Update-AzContainerRegistryManifest
 
@@ -244,6 +244,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttribute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -6,8 +6,8 @@ ms.openlocfilehash: 6ea791c1bdfe6764dea46c764e1ac7255dec7604
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311289"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653364"
 ---
 # Save-AzureRmContext
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 89fe796d13115c34a969302d8ea60a83e68ffd03
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141913863"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142717480"
 ---
 # New-AzAvailabilitySet
 
@@ -210,7 +210,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAvailabilitySet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

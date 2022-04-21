@@ -9,8 +9,8 @@ ms.openlocfilehash: 257e0e69f746926f9c2d1aed838e0fbf07c033d6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427064"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142687978"
 ---
 # Set-AzApiManagementIdentityProvider
 
@@ -325,7 +325,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementIdentityProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

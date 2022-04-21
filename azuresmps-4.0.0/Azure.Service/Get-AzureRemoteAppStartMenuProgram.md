@@ -7,8 +7,8 @@ ms.openlocfilehash: 0a78d2407865b8944e85f34b20580a82d0c83c6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966309"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656755"
 ---
 # Get-AzureRemoteAppStartMenuProgram
 
@@ -91,7 +91,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

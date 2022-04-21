@@ -10,8 +10,8 @@ ms.openlocfilehash: 62ed11a2819a2b0c31756c90ce4ab623a1feae91
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822108"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731232"
 ---
 # Add-AzureRmLoadBalancerProbeConfig
 
@@ -206,7 +206,7 @@ Parameter: LoadBalancer (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

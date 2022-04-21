@@ -9,8 +9,8 @@ ms.openlocfilehash: 3aa57c1ec70d560a0fee395b27d79372bdf4fd61
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096965"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725040"
 ---
 # New-AzureRmWcfRelay
 
@@ -269,6 +269,6 @@ Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes System.Nullable'1[[Sy
 ### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

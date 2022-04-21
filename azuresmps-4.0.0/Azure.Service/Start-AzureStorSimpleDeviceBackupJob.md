@@ -7,8 +7,8 @@ ms.openlocfilehash: 8600d9f8da026f403b9ad366ea0d40dab4bb08ff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815974"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654120"
 ---
 # Start-AzureStorSimpleDeviceBackupJob
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
 Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

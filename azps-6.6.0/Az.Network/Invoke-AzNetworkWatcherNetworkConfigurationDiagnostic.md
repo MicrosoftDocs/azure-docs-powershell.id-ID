@@ -9,8 +9,8 @@ ms.openlocfilehash: 325798f7e0a71d0a7790c51850c5bc7001c6e1ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142268701"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142711702"
 ---
 # Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic
 
@@ -261,7 +261,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkConfigurationDiagnosticResponse
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, diagnostik, profil
 
 ## RELATED LINKS

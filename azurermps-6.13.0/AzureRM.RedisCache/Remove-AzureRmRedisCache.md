@@ -10,8 +10,8 @@ ms.openlocfilehash: 35b7d3e05cced593da748f430cb121da43cd0380
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384053"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659501"
 ---
 # Remove-AzureRmRedisCache
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
