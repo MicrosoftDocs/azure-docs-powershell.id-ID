@@ -9,8 +9,8 @@ ms.openlocfilehash: 7d6e717130d9e4d98e3771bbc159bb9b2d7c9a59
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141890576"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142698148"
 ---
 # Remove-AzApplicationGatewayAutoscaleConfiguration
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

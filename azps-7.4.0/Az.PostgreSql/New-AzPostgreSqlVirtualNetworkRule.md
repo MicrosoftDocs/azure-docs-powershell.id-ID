@@ -9,8 +9,8 @@ ms.openlocfilehash: 74a161a5c3485ca0b548f88945c42b446f3fd752
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175637"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142675378"
 ---
 # New-AzPostgreSqlVirtualNetworkRule
 
@@ -30,7 +30,7 @@ Membuat atau memperbarui aturan jaringan virtual yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Aturan Jaringan Virtual server PostgreSql baru
+### Contoh 1: Membuat Aturan Virtual Network server PostgreSql baru
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PostgreSqlTestRG/providers/Microsoft.Network/virtualNetworks/PostgreSqlVNet/subnets/default"
  New-AzPostgreSqlVirtualNetworkRule -Name vnet -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer -SubnetId $ID
@@ -42,7 +42,7 @@ Name Type
 vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini membuat Aturan Jaringan Virtual server PostgreSql.
+Cmdlet ini membuat aturan Virtual Network server PostgreSql.
 
 ## PARAMETERS
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IVirtualNetworkRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

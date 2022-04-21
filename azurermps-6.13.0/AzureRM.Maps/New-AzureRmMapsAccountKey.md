@@ -9,8 +9,8 @@ ms.openlocfilehash: 13364cde6799a6d99bcdba1d5cd2078c3392a2cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063220"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660409"
 ---
 # New-AzureRmMapsAccountKey
 
@@ -214,6 +214,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Management. Peta. Models.MapsAccountKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

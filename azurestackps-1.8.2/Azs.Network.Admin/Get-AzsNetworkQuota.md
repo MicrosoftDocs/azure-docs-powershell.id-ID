@@ -7,8 +7,8 @@ ms.openlocfilehash: 3def97a3e02e77efd6ec21768b30c855f1ceb34e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142353923"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653066"
 ---
 # Get-AzsNetworkQuota
 
@@ -123,6 +123,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Network.Admin.Models.Quota
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

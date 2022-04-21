@@ -9,8 +9,8 @@ ms.openlocfilehash: 5619b9ca4e7f5593a20baf04951d0d5594b31215
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142139777"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660412"
 ---
 # Remove-AzureRmMlOpCluster
 
@@ -191,6 +191,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

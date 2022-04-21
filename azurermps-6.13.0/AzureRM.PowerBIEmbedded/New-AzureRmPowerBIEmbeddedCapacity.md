@@ -10,8 +10,8 @@ ms.openlocfilehash: 8546dbfbe8da12cd61c8b03d8aca64772d032b60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659876"
 ---
 # New-AzureRmPowerBIEmbeddedCapacity
 
@@ -203,7 +203,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PowerBI.Models.PSPowerBIEmbeddedCapacity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

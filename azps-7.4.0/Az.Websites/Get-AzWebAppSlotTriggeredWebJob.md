@@ -9,8 +9,8 @@ ms.openlocfilehash: 52f369445a85e5a0f5fff6dd2e36a4061dc157a4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170530"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142668988"
 ---
 # Get-AzWebAppSlotTriggeredWebJob
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20210201.ITriggeredWebJob
 
-## CATATAN
+## NOTES
 
 ALIAS
 

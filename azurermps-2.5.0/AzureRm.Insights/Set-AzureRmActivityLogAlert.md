@@ -8,8 +8,8 @@ ms.openlocfilehash: a8ba70b8994fb9d4a7bc9a3eff0607c76ecd2114
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142146962"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142667639"
 ---
 # Set-AzureRmActivityLogAlert
 
@@ -452,7 +452,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActivityLogAlertResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

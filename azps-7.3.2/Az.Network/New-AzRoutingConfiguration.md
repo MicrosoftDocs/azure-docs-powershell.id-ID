@@ -9,8 +9,8 @@ ms.openlocfilehash: a3f761833b73d08b4d39fccd6cc1c12bb3ed35bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142468979"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142698256"
 ---
 # New-AzRoutingConfiguration
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRoutingConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

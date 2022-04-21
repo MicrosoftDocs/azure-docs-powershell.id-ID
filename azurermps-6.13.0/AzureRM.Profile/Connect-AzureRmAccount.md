@@ -9,8 +9,8 @@ ms.openlocfilehash: a0f29e666a289faddbfce848b97cb0272ce67d0d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141776192"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659881"
 ---
 # Connect-AzureRmAccount
 
@@ -568,6 +568,6 @@ Parameter: Langganan (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 2600928a21548a4af49d3d7453b04cc2c505feb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142356262"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660643"
 ---
 # Remove-AzureRmIntegrationAccountSchema
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

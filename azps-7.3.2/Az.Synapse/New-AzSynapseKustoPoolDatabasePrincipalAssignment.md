@@ -9,8 +9,8 @@ ms.openlocfilehash: 3ed6bcc0da90e9e76b5ae6dc9073e7c779d591a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142364201"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142690894"
 ---
 # New-AzSynapseKustoPoolDatabasePrincipalAssignment
 
@@ -285,7 +285,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.IDatabasePrincipalAssignment
 
-## CATATAN
+## NOTES
 
 ALIAS
 

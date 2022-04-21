@@ -7,8 +7,8 @@ ms.openlocfilehash: 0a75fafa646839375bf9dc7f1a64b3084fd31ee4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142240057"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142652068"
 ---
 # Get-AzsStorageDestinationShare
 
@@ -88,6 +88,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

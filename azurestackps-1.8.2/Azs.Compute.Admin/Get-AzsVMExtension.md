@@ -7,8 +7,8 @@ ms.openlocfilehash: 3e7eac7b9d23914aa909a111958d64cc9d4247d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141770854"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653202"
 ---
 # Get-AzsVMExtension
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### VmExtensionObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

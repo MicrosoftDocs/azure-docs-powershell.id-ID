@@ -7,8 +7,8 @@ ms.openlocfilehash: a04836e2d361f4c9686fa5dfe62babfa57ade189
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142333403"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142652716"
 ---
 # Test-AzsMoveSubscription
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

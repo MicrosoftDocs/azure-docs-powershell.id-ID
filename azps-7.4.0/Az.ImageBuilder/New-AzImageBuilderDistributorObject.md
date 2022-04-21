@@ -9,8 +9,8 @@ ms.openlocfilehash: ebc4917c95d846f8f6a1eafb216c4d1132728379
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178334"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142683334"
 ---
 # New-AzImageBuilderDistributorObject
 
@@ -261,7 +261,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateDistributor
 
-## CATATAN
+## NOTES
 
 ALIAS
 

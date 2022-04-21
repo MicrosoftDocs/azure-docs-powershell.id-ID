@@ -7,8 +7,8 @@ ms.openlocfilehash: ff1034cfbcead2e17e89b73622243c86207b9abc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147551"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142667835"
 ---
 # Set-AzureRmVmssDiskEncryptionExtension
 
@@ -322,7 +322,7 @@ System.Management.Automation.SwitchParameter
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineScaleSetExtension
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

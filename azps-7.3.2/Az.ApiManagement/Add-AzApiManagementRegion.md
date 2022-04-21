@@ -10,8 +10,8 @@ ms.openlocfilehash: e431bb313ce3343fa169e69ee589dbceab529684
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141793220"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142704844"
 ---
 # Add-AzApiManagementRegion
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 * Cmdlet menulis **instans PsApiManagement** yang diperbarui ke pipeline.
 
 ## RELATED LINKS

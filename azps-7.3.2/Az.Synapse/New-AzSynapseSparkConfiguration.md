@@ -9,8 +9,8 @@ ms.openlocfilehash: 1dab382b8aace84cd17844707acc1babc32ca7bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142396511"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142690750"
 ---
 # New-AzSynapseSparkConfiguration
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSparkConfigurationResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

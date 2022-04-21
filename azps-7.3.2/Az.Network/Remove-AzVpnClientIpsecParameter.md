@@ -9,8 +9,8 @@ ms.openlocfilehash: 81100b23ab51e6904a803e4544bc0a4beefa04ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142468241"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142697788"
 ---
 # Remove-AzVpnClientIpsecParameter
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

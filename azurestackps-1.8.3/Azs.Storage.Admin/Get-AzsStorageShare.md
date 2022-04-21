@@ -7,8 +7,8 @@ ms.openlocfilehash: 0f8c9192100536a04b664f981a9df9e1508a1f87
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142134755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142651978"
 ---
 # Get-AzsStorageShare
 
@@ -115,6 +115,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.Share
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

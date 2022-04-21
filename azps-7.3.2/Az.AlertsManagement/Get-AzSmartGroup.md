@@ -9,8 +9,8 @@ ms.openlocfilehash: f864a01765cf286c0a8e1ba5285f8f2228ef2684
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261969"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142705024"
 ---
 # Get-AzSmartGroup
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSSmartGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

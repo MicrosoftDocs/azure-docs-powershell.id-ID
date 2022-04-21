@@ -8,8 +8,8 @@ ms.openlocfilehash: ec11ab37bc3fcb787de2b97f46941f23ede1b45a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141847856"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142666918"
 ---
 # Get-AzureRmExpressRouteCircuitAuthorization
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSExpressRouteCircuitAuthorization
 **Get-AzureRmExpressRouteCircuitAuthorization** mengembalikan instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
