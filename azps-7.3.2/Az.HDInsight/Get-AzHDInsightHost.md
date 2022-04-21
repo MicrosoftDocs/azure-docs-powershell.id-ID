@@ -9,8 +9,8 @@ ms.openlocfilehash: 4968deeee39cbf2c6b676ffffb485498ccc4aba8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938733"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823716"
 ---
 # Get-AzHDInsightHost
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.Management.AzureHDInsightHostInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

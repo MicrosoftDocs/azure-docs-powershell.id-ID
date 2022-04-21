@@ -10,8 +10,8 @@ ms.openlocfilehash: 085aa91321f9e263e4fa5620f982beb01eab2b16
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789705"
 ---
 # Disable-AzureRmOperationalInsightsIISLogCollection
 
@@ -146,7 +146,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS

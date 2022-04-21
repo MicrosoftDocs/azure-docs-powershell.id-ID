@@ -9,8 +9,8 @@ ms.openlocfilehash: 81dc608d5785130c8d6f6d3de05cd7a6037f107b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142737874"
 ---
 # Remove-AzSqlInstancePool
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

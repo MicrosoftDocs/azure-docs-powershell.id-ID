@@ -10,8 +10,8 @@ ms.openlocfilehash: 6161ae90e45a3b8079e76035544b572f22d9031a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304791"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142775710"
 ---
 # Get-AzKeyVaultSecret
 
@@ -451,7 +451,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

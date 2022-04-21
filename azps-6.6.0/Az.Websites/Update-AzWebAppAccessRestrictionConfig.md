@@ -8,8 +8,8 @@ ms.openlocfilehash: e7b51aae6f71759a5280b87467a0ebe65ff79af6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141944583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142830826"
 ---
 # Update-AzWebAppAccessRestrictionConfig
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.PSAccessRestrictionConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

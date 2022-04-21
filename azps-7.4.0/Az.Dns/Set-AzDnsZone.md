@@ -10,8 +10,8 @@ ms.openlocfilehash: 4145d505d12a9529025c0ebd9f0ff5c8e021a8c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173206"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142809100"
 ---
 # Set-AzDnsZone
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Dns.DnsZone
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.

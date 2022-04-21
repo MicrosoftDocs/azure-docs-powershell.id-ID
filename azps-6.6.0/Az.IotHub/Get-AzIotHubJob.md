@@ -9,8 +9,8 @@ ms.openlocfilehash: da03fda0e9638a09b522d73210767a5d07b1830b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142050149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142776106"
 ---
 # Get-AzIotHubJob
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubJobResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

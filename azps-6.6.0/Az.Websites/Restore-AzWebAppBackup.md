@@ -10,8 +10,8 @@ ms.openlocfilehash: 8d99297b2a53ba6e4969cc3a30c31ccea433014f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142219807"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142830898"
 ---
 # Restore-AzWebAppBackup
 
@@ -60,7 +60,7 @@ Restore-AzWebAppBackup -BlobName 'myBlob' -Name 'ContosoWebApp' -Overwrite -Reso
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket Layanan Aplikasi aplikasi saat ini digunakan.
+Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini digunakan.
 
 ```yaml
 Type: System.String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Url Akun Penyimpanan
+URL Akun Storage
 
 ```yaml
 Type: System.String
@@ -241,6 +241,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: a964b5605f7b39764790f7cd290e1f1a1c2b1c69
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171591"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142737676"
 ---
 # Set-AzSqlDatabaseGeoBackupPolicy
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

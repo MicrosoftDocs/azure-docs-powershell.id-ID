@@ -10,8 +10,8 @@ ms.openlocfilehash: 8faa411e1fbc8e6923f9a3bc02b0e477877d8e2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142470886"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823626"
 ---
 # New-AzHDInsightMapReduceJobDefinition
 
@@ -19,7 +19,7 @@ ms.locfileid: "142470886"
 Membuat objek pekerjaan MapReduce.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightmapreducejobdefinition) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightmapreducejobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ New-AzHDInsightMapReduceJobDefinition [-Arguments <String[]>] [-Files <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzHDInsightMapReduceJobDefinition** menentukan pekerjaan MapReduce baru untuk digunakan dengan cluster Azure HDInsight.
+Cmdlet **New-AzHDInsightMapReduceJobDefinition** menentukan pekerjaan MapReduce baru untuk digunakan dengan kluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat definisi pekerjaan MapReduce
+### Contoh 1: Membuat definisi kerja MapReduce
 ```
 PS C:\># Cluster info
 PS C:\>$clusterName = "your-hadoop-001"
@@ -48,13 +48,13 @@ PS C:\>New-AzHDInsightMapReduceJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini membuat definisi pekerjaan MapReduce.
+Perintah ini membuat definisi kerja MapReduce.
 
 ## PARAMETERS
 
 ### -Argumen
 Menentukan array argumen untuk pekerjaan tersebut.
-Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
+Argumen diteruskan sebagai argumen baris-perintah untuk tiap pekerjaan.
 
 ```yaml
 Type: System.String[]
@@ -98,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Defines
-Menentukan nilai konfigurasi Hadoop untuk diatur saat pekerjaan berjalan.
+### -Definisi
+Menentukan nilai konfigurasi Hadoop yang akan diatur saat pekerjaan berjalan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -113,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Files
-Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
+### -File
+Menentukan kumpulan file yang terkait dengan pekerjaan Apache Hive.
 
 ```yaml
 Type: System.String[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
 
 ```yaml
 Type: System.String
@@ -189,17 +189,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightMapReduceJobDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

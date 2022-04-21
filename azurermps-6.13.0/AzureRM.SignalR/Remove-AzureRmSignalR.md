@@ -9,8 +9,8 @@ ms.openlocfilehash: 5fcf62e592ed1e842c3dc6f4be21462170c4f83b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789675"
 ---
 # Remove-AzureRmSignalR
 
@@ -209,6 +209,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

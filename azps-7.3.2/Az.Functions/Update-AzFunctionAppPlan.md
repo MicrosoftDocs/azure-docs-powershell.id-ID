@@ -9,8 +9,8 @@ ms.openlocfilehash: 8574d704f2c04389041656f3cbab0fcc1d84de5f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787982"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823788"
 ---
 # Update-AzFunctionAppPlan
 
@@ -278,7 +278,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.IAppServicePlan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

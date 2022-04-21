@@ -9,8 +9,8 @@ ms.openlocfilehash: 7ad72d92b3ad5edd6010ec20a3bc4b0e582b773c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261159"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142830556"
 ---
 # Update-AzApplicationInsightsLinkedStorageAccount
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSComponentLinkedStorageAccounts
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

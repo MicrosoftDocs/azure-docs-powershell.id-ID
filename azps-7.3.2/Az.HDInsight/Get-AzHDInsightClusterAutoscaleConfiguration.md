@@ -10,8 +10,8 @@ ms.openlocfilehash: 01760b6935b3b3dd26feaff5b07e044ad26fdc6e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938751"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823752"
 ---
 # Get-AzHDInsightClusterAutoscaleConfiguration
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightAutoscale
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

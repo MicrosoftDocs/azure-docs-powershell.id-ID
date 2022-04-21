@@ -10,8 +10,8 @@ ms.openlocfilehash: 058afd276a0ec0140b5c810f01ce5d7c7a8e9c47
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142349207"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142830340"
 ---
 # New-AzBatchCertificate
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

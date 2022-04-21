@@ -10,8 +10,8 @@ ms.openlocfilehash: b51c7300296644ffeda75d1fb9e4cf695ff61def
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354357"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790398"
 ---
 # Remove-AzureRmLoadBalancerRuleConfig
 
@@ -130,7 +130,7 @@ Parameter: LoadBalancer (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

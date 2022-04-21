@@ -10,8 +10,8 @@ ms.openlocfilehash: 3083b6bbd510b387e9a8e405243e4387a8d2ec3b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938481"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823608"
 ---
 # Remove-AzHDInsightCluster
 
@@ -19,7 +19,7 @@ ms.locfileid: "141938481"
 Menghapus kluster HDInsight yang ditentukan dari langganan saat ini.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/remove-azhdinsightcluster) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/remove-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,9 +30,9 @@ Remove-AzHDInsightCluster [-ClusterName] <String> [-ResourceGroupName <String>] 
 
 ## DESCRIPTION
 Cmdlet **Remove-AzHDInsightCluster** menghapus kluster layanan HDInsight yang ditentukan dari langganan.
-Operasi ini juga menghapus semua data yang disimpan dalam Hadoop Distributed File System (HDFS) di kluster.
+Operasi ini juga menghapus data apa pun yang disimpan dalam Sistem File Terdistribusi Hadoop (HDFS) pada kluster.
 Data yang disimpan di akun Azure Storage terkait tidak dihapus.
-Data yang disimpan dalam metastore eksternal tidak dihapus.
+Data yang disimpan dalam metore eksternal tidak dihapus.
 
 ## EXAMPLES
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika PassThru ada, hasilnya akan dihasilkan
+Jika PassThru ada, keluarkan hasilnya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,15 +106,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### System.Boolean
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

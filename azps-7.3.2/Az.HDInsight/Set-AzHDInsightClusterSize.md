@@ -10,8 +10,8 @@ ms.openlocfilehash: c9ce9b5861776152da2af34f558e92f82d31dffa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142110347"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823590"
 ---
 # Set-AzHDInsightClusterSize
 
@@ -113,6 +113,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.HDInsight.Models.Cluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

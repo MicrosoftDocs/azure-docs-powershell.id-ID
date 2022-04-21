@@ -1,62 +1,122 @@
 ---
 external help file: ''
 Module Name: Az.Functions
-online version: https://docs.microsoft.com/powershell/module/az.functions/stop-azfunctionapp
+online version: https://docs.microsoft.com/powershell/module/az.functions/update-azfunctionapp
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Stop-AzFunctionApp.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Stop-AzFunctionApp.md
-ms.openlocfilehash: adfe94fe8d975515d85707b7c66e3f435462e15a
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
+ms.openlocfilehash: 1a35275eec981355a067c536f8163159171673f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142823878"
+ms.locfileid: "142747882"
 ---
-# Stop-AzFunctionApp
+# Update-AzFunctionApp
 
 ## SYNOPSIS
-Menghentikan aplikasi fungsi.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/stop-azfunctionapp) untuk informasi terbaru.
+Memperbarui aplikasi fungsi.
 
 ## SYNTAX
 
-### StopByName (Default)
+### ByName (Default)
 ```
-Stop-AzFunctionApp -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>] [-Force]
- [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-AzFunctionApp -Name <String> -ResourceGroupName <String> [-ApplicationInsightsKey <String>]
+ [-ApplicationInsightsName <String>] [-Force] [-IdentityID <String[]>]
+ [-IdentityType <ManagedServiceIdentityType>] [-PlanName <String>] [-SubscriptionId <String>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ByObjectInput
 ```
-Stop-AzFunctionApp -InputObject <ISite> [-Force] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Update-AzFunctionApp -InputObject <ISite> [-ApplicationInsightsKey <String>]
+ [-ApplicationInsightsName <String>] [-Force] [-IdentityID <String[]>]
+ [-IdentityType <ManagedServiceIdentityType>] [-PlanName <String>] [-Tag <Hashtable>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghentikan aplikasi fungsi.
+Memperbarui aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aplikasi fungsi berdasarkan nama dan hentikan.
+### Contoh 1: Memperbarui paket hosting aplikasi fungsi.
 ```powershell
-PS C:\> Get-AzFunctionApp -Name MyAppName -ResourceGroupName MyResourceGroupName | Stop-AzFunctionApp -Force
+Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResourceGroupName -PlanName NewPlanName -Force
 ```
 
-Perintah ini mendapatkan aplikasi fungsi berdasarkan nama dan menghentikannya.
+Perintah ini memperbarui paket hosting aplikasi fungsi.
 
-### Contoh 2: Hentikan aplikasi fungsi berdasarkan nama.
+### Contoh 2: Atur identitas terkelola SystemAssigned untuk aplikasi fungsi.
 ```powershell
-PS C:\> Stop-AzFunctionApp -Name MyAppName -ResourceGroupName MyResourceGroupName -Force
+Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResourceGroupName -IdentityType SystemAssigned -Force
 ```
 
-Perintah ini menghentikan aplikasi fungsi berdasarkan nama.
+Perintah ini menetapkan identitas terkelola SystemAssigned untuk aplikasi fungsi.
+
+### Contoh 3: Memperbarui aplikasi fungsi Insights Aplikasi.
+```powershell
+Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResourceGroupName -ApplicationInsightsName ApplicationInsightsProjectName -Force
+```
+
+Perintah ini memperbarui aplikasi fungsi Insights Aplikasi.
+
+### Contoh 3: Menghapus identitas terkelola dari aplikasi fungsi.
+```powershell
+Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResourceGroupName -IdentityType None -Force
+```
+
+Perintah ini menghapus identitas terkelola dari aplikasi fungsi.
 
 ## PARAMETERS
 
+### -ApplicationInsightsKey
+Kunci instrumentasi Insights Aplikasi yang akan ditambahkan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: AppInsightsKey
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ApplicationInsightsName
+Nama proyek App Insights yang ada untuk ditambahkan ke aplikasi fungsi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: AppInsightsName
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AsJob
+Menjalankan cmdlet sebagai pekerjaan latar belakang.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -71,10 +131,43 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Memaksa cmdlet untuk menghentikan aplikasi fungsi tanpa meminta konfirmasi.
+Memaksa cmdlet untuk memperbarui aplikasi fungsi tanpa meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityID
+Menentukan daftar identitas pengguna yang terkait dengan aplikasi fungsi.
+Referensi identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityType
+Menentukan jenis identitas yang digunakan untuk aplikasi fungsi.
+Jenis 'None' akan menghapus identitas apa pun dari aplikasi fungsi.
+Nilai yang dapat diterima untuk parameter ini adalah: - SystemAssigned - UserAssigned - None
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Functions.Support.ManagedServiceIdentityType
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +198,7 @@ Nama aplikasi fungsi.
 
 ```yaml
 Type: System.String
-Parameter Sets: StopByName
+Parameter Sets: ByName
 Aliases:
 
 Required: True
@@ -115,8 +208,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Mengembalikan true saat perintah berhasil.
+### -NoWait
+Memulai operasi dan segera kembali, sebelum operasi selesai.
+Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,12 +224,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceGroupName
-
+### -PlanName
+Nama paket layanan.
 
 ```yaml
 Type: System.String
-Parameter Sets: StopByName
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
 Aliases:
 
 Required: True
@@ -150,12 +259,27 @@ Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String
-Parameter Sets: StopByName
+Parameter Sets: ByName
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+Tag sumber daya.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -200,7 +324,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.ISite
 
 ## NOTES
 
@@ -259,12 +383,12 @@ INPUTOBJECT <ISite>:
       - `[ActionHostName <String>]`: Nama host slot tempat lalu lintas akan dialihkan jika diputuskan. Mis. myapp-stage.azurewebsites.net.
       - `[ChangeDecisionCallbackUrl <String>]`: Algoritma keputusan kustom dapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan. Lihat Ekstensi situs TiPCallback untuk perancah dan kontrak.         https://www.siteextensions.net/packages/TiPCallback/
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
-      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan .\nKustom dapat disediakan di ekstensi situs TiPCallback yang URLnya dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
-      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah reroutePercentage yang akan tetap ada.
-      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas reroutePercentage mana yang akan tetap ada.
+      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan kustom .\ndapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
+      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah tempat ReroutePercentage akan tetap ada.
+      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas mana ReroutePercentage akan tetap ada.
       - `[Name <String>]`: Nama aturan perutean. Nama yang direkomendasikan adalah menunjuk ke slot yang akan menerima lalu lintas dalam eksperimen.
       - `[ReroutePercentage <Double?>]`: Persentase lalu lintas yang akan dialihkan ke <code>ActionHostName</code>.
-    - `[FtpsState <FtpsState?>]`: Status layanan FTP / FTPS
+    - `[FtpsState <FtpsState?>]`: Status layanan FTP/FTPS
     - `[HandlerMapping <IHandlerMapping[]>]`: Pemetaan handler.
       - `[Argument <String>]`: Argumen baris perintah yang akan diteruskan ke prosesor skrip.
       - `[Extension <String>]`: Permintaan dengan ekstensi ini akan ditangani menggunakan aplikasi FastCGI yang ditentukan.
@@ -275,15 +399,15 @@ INPUTOBJECT <ISite>:
     - `[IPSecurityRestriction <IIPSecurityRestriction[]>]`: Pembatasan keamanan IP untuk utama.
       - `[Action <String>]`: Izinkan atau Tolak akses untuk rentang IP ini.
       - `[Description <String>]`: Deskripsi aturan pembatasan IP.
-      - `[IPAddress <String>]`: Alamat IP yang berlaku untuk pembatasan keamanan.         Ini bisa dalam bentuk alamat ipv4 murni (properti SubnetMask yang diperlukan) atau notasi CIDR seperti ipv4/mask (kecocokan bit terkemuka). Untuk CIDR, properti SubnetMask tidak boleh ditentukan.
+      - `[IPAddress <String>]`: Alamat IP yang berlaku untuk pembatasan keamanan.         Ini bisa dalam bentuk alamat ipv4 murni (properti SubnetMask yang diperlukan) atau notasi CIDR seperti ipv4/mask (kecocokan bit terdepan). Untuk CIDR, properti SubnetMask tidak boleh ditentukan.
       - `[Name <String>]`: Nama aturan pembatasan IP.
       - `[Priority <Int32?>]`: Prioritas aturan pembatasan IP.
       - `[SubnetMask <String>]`: Subnet mask untuk rentang alamat IP yang berlaku untuk pembatasan.
       - `[SubnetTrafficTag <Int32?>]`: (internal) Tag lalu lintas subnet
       - `[Tag <IPFilterTag?>]`: Menentukan untuk apa filter IP ini akan digunakan. Ini untuk mendukung pemfilteran IP pada proksi.
       - `[VnetSubnetResourceId <String>]`: Id sumber daya jaringan virtual
-      - `[VnetTrafficTag <Int32?>]`: (internal) Tag lalu lintas Vnet
-    - `[IsPushEnabled <Boolean?>]`: Mendapatkan atau menetapkan bendera yang menunjukkan apakah titik akhir Push diaktifkan.
+      - `[VnetTrafficTag <Int32?>]`: (internal) tag lalu lintas Vnet
+    - `[IsPushEnabled <Boolean?>]`: Mendapatkan atau mengatur bendera yang menunjukkan apakah titik akhir Push diaktifkan.
     - `[JavaContainer <String>]`: Kontainer Java.
     - `[JavaContainerVersion <String>]`: Versi kontainer Java.
     - `[JavaVersion <String>]`: Versi Java.
@@ -322,8 +446,8 @@ INPUTOBJECT <ISite>:
     - `[SlowRequestCount <Int32?>]`: Jumlah Permintaan.
     - `[SlowRequestTimeInterval <String>]`: Interval waktu.
     - `[SlowRequestTimeTaken <String>]`: Waktu yang dibutuhkan.
-    - `[TagWhitelistJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag yang diizinkan untuk digunakan oleh titik akhir pendaftaran pendorongan.
-    - `[TagsRequiringAuth <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang mengharuskan autentikasi pengguna digunakan dalam titik akhir pendaftaran pendorongan.         Tag dapat terdiri dari karakter alfanumerik dan berikut ini: '_', '@', '#', '.', ':', '-'.         Validasi harus dilakukan di PushRequestHandler.
+    - `[TagWhitelistJson <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang diizinkan untuk digunakan oleh titik akhir pendaftaran push.
+    - `[TagsRequiringAuth <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang mengharuskan autentikasi pengguna digunakan di titik akhir pendaftaran push.         Tag dapat terdiri dari karakter alfanumerik dan berikut ini: '_', '@', '#', '.', ':', '-'.         Validasi harus dilakukan di PushRequestHandler.
     - `[TracingOption <String>]`: Opsi pelacakan.
     - `[TriggerPrivateBytesInKb <Int32?>]`: Aturan berdasarkan byte privat.
     - `[TriggerStatusCode <IStatusCodesBasedTrigger[]>]`: Aturan berdasarkan kode status.
