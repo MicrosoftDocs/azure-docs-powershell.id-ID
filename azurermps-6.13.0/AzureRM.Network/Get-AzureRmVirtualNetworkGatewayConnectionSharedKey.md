@@ -10,8 +10,8 @@ ms.openlocfilehash: c2a1a63abb18f5f47ed155f24e8ac73a7bae83ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141883552"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791409"
 ---
 # Get-AzureRmVirtualNetworkGatewayConnectionSharedKey
 
@@ -92,6 +92,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

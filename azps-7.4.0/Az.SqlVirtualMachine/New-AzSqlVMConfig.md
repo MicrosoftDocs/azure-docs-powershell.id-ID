@@ -9,8 +9,8 @@ ms.openlocfilehash: c95423c3c9ebc6931a2880c91c64f524be508dc4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173847"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142798876"
 ---
 # New-AzSqlVMConfig
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

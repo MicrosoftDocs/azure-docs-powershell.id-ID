@@ -9,8 +9,8 @@ ms.openlocfilehash: 4764a342ff755c825c740e2184228365c856c41c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164884"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142737262"
 ---
 # Remove-AzStackEdgeTrigger
 
@@ -212,6 +212,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

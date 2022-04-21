@@ -9,8 +9,8 @@ ms.openlocfilehash: 70704905063f120edd9f15bcda300707167c5d80
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822353"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792252"
 ---
 # New-AzureRmMlWebService
 
@@ -218,7 +218,7 @@ Parameter: NewWebServiceDefinition (ByValue)
 
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

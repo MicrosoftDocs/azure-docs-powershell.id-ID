@@ -9,8 +9,8 @@ ms.openlocfilehash: 41e4e7db0fc796407cfa47e66274eae2857c3a9e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799236"
 ---
 # Remove-AzSqlInstance
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

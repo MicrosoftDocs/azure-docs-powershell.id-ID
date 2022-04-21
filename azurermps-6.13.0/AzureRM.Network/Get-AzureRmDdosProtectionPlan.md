@@ -9,8 +9,8 @@ ms.openlocfilehash: 2d1942dd5c069660d062922a069cc88b505748fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142355533"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791937"
 ---
 # Get-AzureRmDdosProtectionPlan
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSDdosProtectionPlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

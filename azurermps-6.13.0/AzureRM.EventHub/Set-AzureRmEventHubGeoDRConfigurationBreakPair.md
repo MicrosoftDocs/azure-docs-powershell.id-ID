@@ -9,8 +9,8 @@ ms.openlocfilehash: 3ee0e251f4dd92b087343edc03e829e8032ee5c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792892"
 ---
 # Set-AzureRmEventHubGeoDRConfigurationBreakPair
 
@@ -205,6 +205,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,18 +9,18 @@ ms.openlocfilehash: 27be4da63d952a525656500a9e987d591918ad11
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142028837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142759402"
 ---
 # Get-AzADApplication
 
 ## SYNOPSIS
-Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi menurut kunci
+Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi berdasarkan kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapplication) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,32 +62,32 @@ Get-AzADApplication [-Select <String[]>] -IdentifierUri <String> [-First <UInt64
 ```
 
 ## DESCRIPTION
-Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi menurut kunci
+Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi berdasarkan kunci
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aplikasi menurut nama tampilan
+### Contoh 1: Dapatkan aplikasi berdasarkan nama tampilan
 ```powershell
 PS C:\> Get-AzADApplication -DisplayName $appname
 ```
 
-Dapatkan aplikasi berdasarkan nama tampilan
+Dapatkan aplikasi menurut nama tampilan
 
-### Contoh 2: Daftar aplikasi
+### Contoh 2: Mencantumkan aplikasi
 ```powershell
 PS C:\> Get-AzADApplication -First 10
 ```
 
-Daftar 10 aplikasi pertama
+Mencantumkan 10 aplikasi pertama
 
 ### Contoh 3: Mencari nama tampilan aplikasi dimulai dengan
 ```powershell
 PS C:\> Get-AzADApplication -DisplayNameStartsWith $prefix
 ```
 
-Mencari nama tampilan aplikasi dimulai dengan
+Cari nama tampilan aplikasi dimulai dengan
 
-### Contoh 4: Dapatkan aplikasi menurut id objek
+### Contoh 4: Dapatkan aplikasi menurut ID objek
 ```powershell
 PS C:\> Get-AzADapplication -ObjectId $id -Select Tags -AppendSelected
 ```
@@ -126,9 +126,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KonsistensiLevel
+### -ConsistencyLevel
 Menunjukkan tingkat konsistensi yang diminta.
-URL dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-kunci: id aplikasi
+key: id aplikasi
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Orderby
-Item pesanan menurut nilai properti
+Mengurutkan item menurut nilai properti
 
 ```yaml
 Type: System.String[]
@@ -247,8 +247,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pencarian
-Mencari item menurut frasa pencarian
+### -Cari
+Cari item menurut frasa pencarian
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -316,7 +316,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication
 
-## CATATAN
+## NOTES
 
 ALIAS
 

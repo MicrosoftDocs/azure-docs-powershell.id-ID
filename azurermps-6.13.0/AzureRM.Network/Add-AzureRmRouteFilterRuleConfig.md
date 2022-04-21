@@ -9,8 +9,8 @@ ms.openlocfilehash: 8a4cd69e7cbd285c6475c899bf8a2200418c6718
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063266"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792025"
 ---
 # Add-AzureRmRouteFilterRuleConfig
 
@@ -193,7 +193,7 @@ Parameter: RouteFilter (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteFilter
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

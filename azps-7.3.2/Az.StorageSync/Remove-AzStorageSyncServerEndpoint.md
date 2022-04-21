@@ -9,8 +9,8 @@ ms.openlocfilehash: 1d4630e070036f24728d18f1e1d2e971e31a504a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142397537"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142813906"
 ---
 # Remove-AzStorageSyncServerEndpoint
 
@@ -247,6 +247,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

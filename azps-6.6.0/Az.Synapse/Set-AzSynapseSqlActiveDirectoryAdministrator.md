@@ -9,13 +9,13 @@ ms.openlocfilehash: 24a3895af88916f980407a7ac23b17c9c07c1596
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142220384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142768834"
 ---
 # Set-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
-Menyediakan administrator Azure AD untuk kumpulan SQL Synapse Analytics.
+Menyediakan administrator Azure AD untuk kumpulan SQL Analitik Synapse.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlactivedirectoryadministrator) untuk informasi terbaru.
@@ -60,13 +60,13 @@ Set-AzSynapseSqlActiveDirectoryAdministrator -ResourceId <String> -ObjectId <Gui
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk Ruang Kerja Analitik Azure Synapse dalam langganan saat ini.
+Cmdlet **Set-AzSynapseSqlActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk ruang kerja analitik Azure Synapse dalam langganan saat ini.
 Anda hanya bisa menyediakan satu administrator dalam satu waktu.
-Anggota Azure AD berikut ini dapat disediakan sebagai administrator Ruang Kerja Analitik Sinapsis:
+Anggota Azure AD berikut dapat ditetapkan sebagai administrator Ruang Kerja Analitik Sinapsis:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
 - Anggota yang diimpor dari AZURE AD lain yang merupakan anggota asli atau gabungan 
-- Grup Azure AD yang dibuat sebagai grup keamanan akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
+- Azure AD grup yang dibuat sebagai grup keamanan akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
 Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
 Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.
 
@@ -251,6 +251,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSWorkspaceAadAdminInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: fc2183c4aed1547b53a9feb3c04426e8b5303029
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429387"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799884"
 ---
 # Remove-AzSignalR
 
 ## SYNOPSIS
-Hapus layanan SignalR.
+Menghapus layanan SignalR.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Remove-AzSignalR -InputObject <PSSignalRResource> [-AsJob] [-PassThru]
 ```
 
 ## DESCRIPTION
-Hapus layanan SignalR.
+Menghapus layanan SignalR.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Remove-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1 -PassThru
 True
 ```
 
-### Hapus semua layanan SignalR dari pipa
+### Menghapus semua layanan SignalR dari pipa
 ```powershell
 Get-AzSignalR -ResourceGroupName myResourceGroup | Remove-AzSignalR
 ```
@@ -59,7 +59,7 @@ Get-AzSignalR -ResourceGroupName myResourceGroup | Remove-AzSignalR
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan SignalR.
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan Signalr.
+ID sumber daya layanan SignalR.
 
 ```yaml
 Type: System.String
@@ -163,8 +163,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Boolean
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: e1a273da71bc64dc60b99a9a41b38dcf38e9b3d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141797126"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142771121"
 ---
 # Get-AzRelayAuthorizationRule
 
@@ -199,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

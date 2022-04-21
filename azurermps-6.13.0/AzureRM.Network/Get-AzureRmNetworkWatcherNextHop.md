@@ -9,8 +9,8 @@ ms.openlocfilehash: 7ce2d61bb0a4ecefaf0705e3ba8eabab3066dd36
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926313"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791586"
 ---
 # Get-AzureRmNetworkWatcherNextHop
 
@@ -230,7 +230,7 @@ Parameter: NetworkWatcherName (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSNextHopResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
 
 ## RELATED LINKS

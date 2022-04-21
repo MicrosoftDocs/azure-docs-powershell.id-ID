@@ -10,8 +10,8 @@ ms.openlocfilehash: d1762a9b4461de989f39bf2ac0b4f91636d57daf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797976"
 ---
 # New-AzStorageContext
 
@@ -477,7 +477,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands. Storage. AzureStorageContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

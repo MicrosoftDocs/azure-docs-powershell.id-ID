@@ -8,8 +8,8 @@ ms.openlocfilehash: 5e4a6c5ad69ae8f31564335a410a67ec58181f3d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336738"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142736506"
 ---
 # Get-AzureStorageShareStoredAccessPolicy
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure. Storage. File.SharedAccessFilePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

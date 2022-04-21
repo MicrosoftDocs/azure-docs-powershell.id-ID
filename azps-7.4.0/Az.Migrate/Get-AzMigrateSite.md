@@ -9,8 +9,8 @@ ms.openlocfilehash: 37849ad902c37b2d01a0fa66540e2942258119a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177444"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142807210"
 ---
 # Get-AzMigrateSite
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api202001.IVMwareSite
 
-## CATATAN
+## NOTES
 
 ALIAS
 

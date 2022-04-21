@@ -8,8 +8,8 @@ ms.openlocfilehash: c390a51997e175efb834366a65e10d671f384fa8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147697"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142736578"
 ---
 # Get-AzureStorageFileContent
 
@@ -373,7 +373,7 @@ Parameter: File (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

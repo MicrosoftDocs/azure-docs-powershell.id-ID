@@ -10,8 +10,8 @@ ms.openlocfilehash: dbd49a948108d23c0f824adaea2e06105152a36b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142355421"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791712"
 ---
 # Get-AzureRmLoadBalancerInboundNatPoolConfig
 
@@ -91,6 +91,6 @@ Parameter: LoadBalancer (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSInboundNatPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

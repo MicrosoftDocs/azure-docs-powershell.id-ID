@@ -9,8 +9,8 @@ ms.openlocfilehash: a426ce93bd61f9b0566369d5dedfe2f2d2502c58
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141933369"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142758556"
 ---
 # Get-AzServiceBusQueue
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSQueueAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

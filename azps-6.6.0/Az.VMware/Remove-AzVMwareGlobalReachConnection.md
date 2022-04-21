@@ -9,8 +9,8 @@ ms.openlocfilehash: f04b4fdbbdeb434548ea3d86d54a8c1e144b1b45
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141900866"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142768583"
 ---
 # Remove-AzVMwareGlobalReachConnection
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

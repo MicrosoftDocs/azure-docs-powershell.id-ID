@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Start-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Start-AzFunctionApp.md
 ms.openlocfilehash: 1f72479874ac6d4bd92ede52ce0ae4e59f625e03
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140285971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142715032"
 ---
 # Start-AzFunctionApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "140285971"
 Memulai aplikasi fungsi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/start-azfunctionapp) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/start-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,19 +39,19 @@ Memulai aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aplikasi fungsi berdasarkan nama dan mulai aplikasi.
+### Contoh 1: Dapatkan aplikasi fungsi berdasarkan nama dan mulai.
 ```powershell
 PS C:\> Get-AzFunctionApp -Name MyAppName -ResourceGroupName MyResourceGroupName | Start-AzFunctionApp
 ```
 
-Perintah ini akan mendapatkan aplikasi fungsi berdasarkan nama dan memulainya.
+Perintah ini mendapatkan aplikasi fungsi berdasarkan nama dan memulainya.
 
-### Contoh 2: Mulai aplikasi fungsi menurut nama.
+### Contoh 2: Mulai aplikasi fungsi berdasarkan nama.
 ```powershell
 PS C:\> Start-AzFunctionApp -Name MyAppName -ResourceGroupName MyResourceGroupName
 ```
 
-Perintah ini memulai aplikasi fungsi menurut nama.
+Perintah ini memulai aplikasi fungsi berdasarkan nama.
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.ISite
@@ -85,7 +85,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aplikasi fungsi.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -145,8 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -201,156 +201,156 @@ INPUTOBJECT <ISite>:
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[ClientAffinityEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan afiliasi klien; <code>false</code> untuk menghentikan pengiriman cookie afiliasi sesi, yang merutekan permintaan klien dalam sesi yang sama ke contoh yang sama. Defaultnya adalah <code>true</code>.
-  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi bersama TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
-  - `[ClientCertExclusionPath <String>]`: jalur pengecualian yang dipisahkan oleh sertifikat klien
-  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Pengaturan aplikasi menjadi kesampingkan untuk aplikasi kloning. Jika ditentukan, pengaturan ini menimpa pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber akan dipertahankan.
+  - `[ClientAffinityEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan afinitas klien; <code>false</code> untuk berhenti mengirim cookie afinitas sesi, yang merutekan permintaan klien dalam sesi yang sama ke instans yang sama. Defaultnya adalah <code>true</code>.
+  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi timbal balik TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
+  - `[ClientCertExclusionPath <String>]`: jalur pengecualian yang dipisahkan koma autentikasi sertifikat klien
+  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[CloningInfoCloneCustomHostName <Boolean?>]`: <code>true</code> untuk kloning nama host kustom dari aplikasi sumber; jika tidak, <code>false</code>.
-  - `[CloningInfoCloneSourceControl <Boolean?>]`: <code>true</code> untuk kloning kontrol sumber dari aplikasi sumber; jika tidak, <code>false</code>.
-  - `[CloningInfoConfigureLoadBalancing <Boolean?>]`: <code>true</code> untuk mengonfigurasi keseimbangan muat untuk aplikasi sumber dan tujuan.
-  - `[CloningInfoCorrelationId <String>]`: ID korelasi operasi mengkenggasi. ID ini ties beberapa operasi mengkliping bersamaan untuk menggunakan snapshot yang sama.
-  - `[CloningInfoHostingEnvironment <String>]`: Lingkungan Layanan Aplikasi.
+  - `[CloningInfoCloneCustomHostName <Boolean?>]`: <code>true</code> untuk mengkloning nama host kustom dari aplikasi sumber; jika tidak, <code>false</code>.
+  - `[CloningInfoCloneSourceControl <Boolean?>]`: <code>true</code> untuk mengkloning kontrol sumber dari aplikasi sumber; jika tidak, <code>false</code>.
+  - `[CloningInfoConfigureLoadBalancing <Boolean?>]`: <code>true</code> untuk mengonfigurasi penyeimbangan beban untuk aplikasi sumber dan tujuan.
+  - `[CloningInfoCorrelationId <String>]`: ID korelasi operasi kloning. ID ini mengikat beberapa operasi kloning bersama-sama untuk menggunakan rekam jepret yang sama.
+  - `[CloningInfoHostingEnvironment <String>]`: lingkungan App Service.
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
-  - `[CloningInfoSourceWebAppId <String>]`: ARM resource ID dari aplikasi sumber. ID sumber daya aplikasi merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slot/{slotName} untuk slot lainnya.
-  - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber, mis: As Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil untuk digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
-  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama Traffic Manager profil untuk dibuat. Hal ini hanya diperlukan Traffic Manager profil pengguna belum ada.
+  - `[CloningInfoSourceWebAppId <String>]`: ID sumber daya ARM dari aplikasi sumber. ID sumber daya aplikasi adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slots/{slotName} untuk slot lain.
+  - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber misalnya: US Barat atau Eropa Utara
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager yang akan digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager yang akan dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
-    - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum melakukan tindakan
-    - `[ActionType <AutoHealActionType?>]`: Tindakan yang sudah ditentukan sebelumnya akan diambil.
-    - `[AlwaysOn <Boolean?>]`: <code>true</code> jika Selalu Aktif diaktifkan; jika tidak, <code>false</code>.
+    - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum mengambil tindakan
+    - `[ActionType <AutoHealActionType?>]`: Tindakan yang telah ditentukan sebelumnya yang akan diambil.
+    - `[AlwaysOn <Boolean?>]`: <code>true</code> jika Always On diaktifkan; jika tidak, <code>false</code>.
     - `[ApiDefinitionUrl <String>]`: URL definisi API.
-    - `[ApiManagementConfigId <String>]`: APIM-Api Pengidentifikasi.
-    - `[AppCommandLine <String>]`: Baris perintah aplikasi untuk meluncurkan.
+    - `[ApiManagementConfigId <String>]`: pengidentifikasi APIM-Api.
+    - `[AppCommandLine <String>]`: Baris perintah aplikasi untuk diluncurkan.
     - `[AppSetting <INameValuePair[]>]`: Pengaturan aplikasi.
-      - `[Name <String>]`: Pasangkan nama.
-      - `[Value <String>]`: Pasangkan nilai.
-    - `[AutoHealEnabled <Boolean?>]`: <code>true</code> jika Deteksi Otomatis Diaktifkan; jika tidak, <code>false</code>.
-    - `[AutoSwapSlotName <String>]`: Tukar nama slot otomatis.
+      - `[Name <String>]`: Nama pasangan.
+      - `[Value <String>]`: Nilai pasangan.
+    - `[AutoHealEnabled <Boolean?>]`: <code>true</code> jika Auto Heal diaktifkan; jika tidak, <code>false</code>.
+    - `[AutoSwapSlotName <String>]`: Nama slot pertukaran otomatis.
     - `[ConnectionString <IConnStringInfo[]>]`: String koneksi.
       - `[ConnectionString <String>]`: Nilai string koneksi.
       - `[Name <String>]`: Nama string koneksi.
-      - `[Type <ConnectionStringType?>]`: Tipe database.
-    - `[CorAllowedOrigin <String[]>]`: Mendapatkan atau mengatur daftar asal yang seharusnya diperbolehkan melakukan panggilan lintas negara (misalnya: http://example.com:12345). Gunakan "*" untuk mengizinkan semua.
-    - `[CorSupportCredentials <Boolean?>]`: Mendapatkan atau mengatur apakah permintaan CORS dengan kredensial diizinkan. Lihat         https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials         detail selengkapnya.
-    - `[CustomActionExe <String>]`: Dapat dijalankan untuk dijalankan.
-    - `[CustomActionParameter <String>]`: Parameter untuk file yang dapat dijalankan.
+      - `[Type <ConnectionStringType?>]`: Jenis database.
+    - `[CorAllowedOrigin <String[]>]`: Mendapatkan atau mengatur daftar asal yang harus diizinkan untuk melakukan panggilan lintas asal (misalnya: http://example.com:12345). Gunakan "*" untuk mengizinkan semua.
+    - `[CorSupportCredentials <Boolean?>]`: Mendapatkan atau menetapkan apakah permintaan CORS dengan kredensial diizinkan. Lihat         https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials         untuk detail selengkapnya.
+    - `[CustomActionExe <String>]`: Dapat dieksekusi untuk dijalankan.
+    - `[CustomActionParameter <String>]`: Parameter untuk executable.
     - `[DefaultDocument <String[]>]`: Dokumen default.
-    - `[DetailedErrorLoggingEnabled <Boolean?>]`: <code>true</code> jika pembuatan log kesalahan mendetail diaktifkan; jika tidak, <code>false</code>.
+    - `[DetailedErrorLoggingEnabled <Boolean?>]`: <code>true</code> jika pencatatan kesalahan terperinci diaktifkan; jika tidak, <code>false</code>.
     - `[DocumentRoot <String>]`: Akar dokumen.
-    - `[DynamicTagsJson <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag dinamis yang akan dievaluasi dari klaim pengguna dalam titik akhir pendaftaran push.
-    - `[ExperimentRampUpRule <IRampUpRule[]>]`: Daftar aturan yang harus ditindaklanjuti.
-      - `[ActionHostName <String>]`: Nama host slot yang akan dialihkan lalu lintas jika ditentukan. Misalnya myapp-stage.azurewebsites.net.
-      - `[ChangeDecisionCallbackUrl <String>]`: Custom decision algorithm can be provided in TiPCallback site extension which URL can be specified. See TiPCallback site extension for the scaffold and contracts.         https://www.siteextensions.net/packages/TiPCallback/
+    - `[DynamicTagsJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag dinamis yang akan dievaluasi dari klaim pengguna di titik akhir pendaftaran push.
+    - `[ExperimentRampUpRule <IRampUpRule[]>]`: Daftar aturan ramp-up.
+      - `[ActionHostName <String>]`: Nama host slot tempat lalu lintas akan dialihkan jika diputuskan. Mis. myapp-stage.azurewebsites.net.
+      - `[ChangeDecisionCallbackUrl <String>]`: Algoritma keputusan kustom dapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan. Lihat Ekstensi situs TiPCallback untuk perancah dan kontrak.         https://www.siteextensions.net/packages/TiPCallback/
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
-      - `[ChangeStep <Double?>]`: Dalam skenario naik secara otomatis ini adalah langkah untuk menambahkan/menghapus <code>ReroutePercentage</code> dari sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs dicentang setiap N menit yang ditentukan <code>ChangeIntervalInMinutes</code>dalam .\nCustom decision algorithm can be provided in TiPCallback site extension which URL can be specified in <code>ChangeDecisionCallbackUrl</code>.
-      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah di mana Perekanan Ulang akan tetap ada.
-      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas di mana Perekanan Ulang akan tetap ada.
-      - `[Name <String>]`: Nama aturan perutean. Nama yang disarankan harus mengarah ke slot yang akan menerima lalu lintas dalam eksperimen.
+      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan kustom .\ndapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
+      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah tempat ReroutePercentage akan tetap ada.
+      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas reroutePercentage mana yang akan tetap ada.
+      - `[Name <String>]`: Nama aturan perutean. Nama yang direkomendasikan adalah menunjuk ke slot yang akan menerima lalu lintas dalam eksperimen.
       - `[ReroutePercentage <Double?>]`: Persentase lalu lintas yang akan dialihkan ke <code>ActionHostName</code>.
     - `[FtpsState <FtpsState?>]`: Status layanan FTP / FTPS
-    - `[HandlerMapping <IHandlerMapping[]>]`: Pemetaan penanganan.
-      - `[Argument <String>]`: Argumen baris perintah untuk diteruskan ke prosesor skrip.
+    - `[HandlerMapping <IHandlerMapping[]>]`: Pemetaan handler.
+      - `[Argument <String>]`: Argumen baris perintah yang akan diteruskan ke prosesor skrip.
       - `[Extension <String>]`: Permintaan dengan ekstensi ini akan ditangani menggunakan aplikasi FastCGI yang ditentukan.
       - `[ScriptProcessor <String>]`: Jalur absolut ke aplikasi FastCGI.
     - `[HealthCheckPath <String>]`: Jalur pemeriksaan kesehatan
-    - `[Http20Enabled <Boolean?>]`: Http20Enabled: mengonfigurasi situs web untuk memungkinkan klien tersambung melalui http2.0
-    - `[HttpLoggingEnabled <Boolean?>]`: <code>true</code> jika pembuatan log HTTP diaktifkan; jika tidak, <code>false</code>.
+    - `[Http20Enabled <Boolean?>]`: Http20Enabled: mengonfigurasi situs web untuk memungkinkan klien terhubung melalui http2.0
+    - `[HttpLoggingEnabled <Boolean?>]`: <code>true</code> jika pengelogan HTTP diaktifkan; jika tidak, <code>false</code>.
     - `[IPSecurityRestriction <IIPSecurityRestriction[]>]`: Pembatasan keamanan IP untuk utama.
-      - `[Action <String>]`: Memperbolehkan atau Menolak akses untuk rentang IP ini.
+      - `[Action <String>]`: Izinkan atau Tolak akses untuk rentang IP ini.
       - `[Description <String>]`: Deskripsi aturan pembatasan IP.
-      - `[IPAddress <String>]`: Alamat IP pembatasan keamanan berlaku untuk.         Alamat dapat berupa alamat ipv4 murni (properti SubnetMask yang diperlukan) atau notasi CIDR seperti ipv4/mask (kecocokan bit awal). Untuk properti CIDR, properti SubnetMask tidak harus ditentukan.
+      - `[IPAddress <String>]`: Alamat IP yang berlaku untuk pembatasan keamanan.         Ini bisa dalam bentuk alamat ipv4 murni (properti SubnetMask yang diperlukan) atau notasi CIDR seperti ipv4/mask (kecocokan bit terkemuka). Untuk CIDR, properti SubnetMask tidak boleh ditentukan.
       - `[Name <String>]`: Nama aturan pembatasan IP.
       - `[Priority <Int32?>]`: Prioritas aturan pembatasan IP.
-      - `[SubnetMask <String>]`: Masker subnet untuk rentang alamat IP yang memiliki batasan berlaku untuk.
-      - `[SubnetTrafficTag <Int32?>]`: tag lalu lintas subnet (internal)
-      - `[Tag <IPFilterTag?>]`: Menentukan untuk apa filter IP ini akan digunakan. Ini untuk mendukung pemfilteran IP di proksi.
+      - `[SubnetMask <String>]`: Subnet mask untuk rentang alamat IP yang berlaku untuk pembatasan.
+      - `[SubnetTrafficTag <Int32?>]`: (internal) Tag lalu lintas subnet
+      - `[Tag <IPFilterTag?>]`: Menentukan untuk apa filter IP ini akan digunakan. Ini untuk mendukung pemfilteran IP pada proksi.
       - `[VnetSubnetResourceId <String>]`: Id sumber daya jaringan virtual
-      - `[VnetTrafficTag <Int32?>]`: tag lalu lintas Vnet (internal)
-    - `[IsPushEnabled <Boolean?>]`: Mendapatkan atau mengatur bendera yang mengindikasikan apakah titik akhir Push diaktifkan.
-    - `[JavaContainer <String>]`: Java container.
+      - `[VnetTrafficTag <Int32?>]`: (internal) Tag lalu lintas Vnet
+    - `[IsPushEnabled <Boolean?>]`: Mendapatkan atau menetapkan bendera yang menunjukkan apakah titik akhir Push diaktifkan.
+    - `[JavaContainer <String>]`: Kontainer Java.
     - `[JavaContainerVersion <String>]`: Versi kontainer Java.
     - `[JavaVersion <String>]`: Versi Java.
-    - `[LimitMaxDiskSizeInMb <Int64?>]`: Penggunaan ukuran disk maksimal yang diperbolehkan dalam MB.
-    - `[LimitMaxMemoryInMb <Int64?>]`: Penggunaan maksimum memori yang diperbolehkan dalam MB.
-    - `[LimitMaxPercentageCpu <Double?>]`: Maksimum persentase penggunaan CPU yang diperbolehkan.
+    - `[LimitMaxDiskSizeInMb <Int64?>]`: Penggunaan ukuran disk maksimum yang diizinkan dalam MB.
+    - `[LimitMaxMemoryInMb <Int64?>]`: Penggunaan memori maksimum yang diizinkan dalam MB.
+    - `[LimitMaxPercentageCpu <Double?>]`: Persentase penggunaan CPU maksimum yang diizinkan.
     - `[LinuxFxVersion <String>]`: Linux App Framework dan versi
-    - `[LoadBalancing <SiteLoadBalancing?>]`: Penyeimbangan muat situs.
+    - `[LoadBalancing <SiteLoadBalancing?>]`: Penyeimbangan beban situs.
     - `[LocalMySqlEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan MySQL lokal; jika tidak, <code>false</code>.
-    - `[LogsDirectorySizeLimit <Int32?>]`: Log HTTP batas ukuran direktori.
+    - `[LogsDirectorySizeLimit <Int32?>]`: Batas ukuran direktori log HTTP.
     - `[MachineKeyDecryption <String>]`: Algoritma yang digunakan untuk dekripsi.
     - `[MachineKeyDecryptionKey <String>]`: Kunci dekripsi.
     - `[MachineKeyValidation <String>]`: Validasi MachineKey.
     - `[MachineKeyValidationKey <String>]`: Kunci validasi.
-    - `[ManagedPipelineMode <ManagedPipelineMode?>]`: Mode saluran terkelola.
-    - `[ManagedServiceIdentityId <Int32?>]`: ID Identitas Layanan Terkelola
+    - `[ManagedPipelineMode <ManagedPipelineMode?>]`: Mode alur terkelola.
+    - `[ManagedServiceIdentityId <Int32?>]`: Id Identitas Layanan Terkelola
     - `[MinTlsVersion <SupportedTlsVersions?>]`: MinTlsVersion: mengonfigurasi versi minimum TLS yang diperlukan untuk permintaan SSL
-    - `[NetFrameworkVersion <String>]`: .NET Framework ini.
+    - `[NetFrameworkVersion <String>]`: versi .NET Framework.
     - `[NodeVersion <String>]`: Versi Node.js.
     - `[NumberOfWorker <Int32?>]`: Jumlah pekerja.
     - `[PhpVersion <String>]`: Versi PHP.
     - `[PowerShellVersion <String>]`: Versi PowerShell.
-    - `[PreWarmedInstanceCount <Int32?>]`: Jumlah instans yang ada di tempat ini.         Pengaturan ini hanya berlaku untuk Paket Konsumsi dan Elastis
-    - `[PublishingUsername <String>]`: Nama pengguna penerbitan.
+    - `[PreWarmedInstanceCount <Int32?>]`: Jumlah instans preWarmed.         Pengaturan ini hanya berlaku untuk Paket Konsumsi dan Elastis
+    - `[PublishingUsername <String>]`: Menerbitkan nama pengguna.
     - `[PushKind <String>]`: Jenis sumber daya.
     - `[PythonVersion <String>]`: Versi Python.
     - `[RemoteDebuggingEnabled <Boolean?>]`: <code>true</code> jika penelusuran kesalahan jarak jauh diaktifkan; jika tidak, <code>false</code>.
     - `[RemoteDebuggingVersion <String>]`: Versi penelusuran kesalahan jarak jauh.
     - `[RequestCount <Int32?>]`: Jumlah Permintaan.
     - `[RequestTimeInterval <String>]`: Interval waktu.
-    - `[RequestTracingEnabled <Boolean?>]`: <code>true</code> jika penelusuran permintaan diaktifkan; jika tidak, <code>false</code>.
-    - `[RequestTracingExpirationTime <DateTime?>]`: Meminta waktu kedaluwarsa.
+    - `[RequestTracingEnabled <Boolean?>]`: <code>true</code> jika pelacakan permintaan diaktifkan; jika tidak, <code>false</code>.
+    - `[RequestTracingExpirationTime <DateTime?>]`: Meminta waktu kedaluwarsa pelacakan.
     - `[ScmIPSecurityRestriction <IIPSecurityRestriction[]>]`: Pembatasan keamanan IP untuk scm.
-    - `[ScmIPSecurityRestrictionsUseMain <Boolean?>]`: Pembatasan keamanan IP agar scm digunakan utama.
-    - `[ScmType <ScmType?>]`: Tipe SCM.
+    - `[ScmIPSecurityRestrictionsUseMain <Boolean?>]`: Pembatasan keamanan IP untuk scm untuk menggunakan utama.
+    - `[ScmType <ScmType?>]`: Jenis SCM.
     - `[SlowRequestCount <Int32?>]`: Jumlah Permintaan.
     - `[SlowRequestTimeInterval <String>]`: Interval waktu.
-    - `[SlowRequestTimeTaken <String>]`: Waktu yang diambil.
-    - `[TagWhitelistJson <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang diizinkan untuk digunakan oleh titik akhir pendaftaran push.
-    - `[TagsRequiringAuth <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang memerlukan autentikasi pengguna untuk digunakan dalam titik akhir pendaftaran push.         Tag dapat terdiri dari karakter alfanumerik dan yang berikut ini: '_', '@', '#', '.', ':', '-'.         Validasi harus dilakukan di PushRequestHandler.
-    - `[TracingOption <String>]`: Opsi penelusuran.
+    - `[SlowRequestTimeTaken <String>]`: Waktu yang dibutuhkan.
+    - `[TagWhitelistJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag yang diizinkan untuk digunakan oleh titik akhir pendaftaran pendorongan.
+    - `[TagsRequiringAuth <String>]`: Mendapatkan atau mengatur string JSON yang berisi daftar tag yang mengharuskan autentikasi pengguna digunakan dalam titik akhir pendaftaran pendorongan.         Tag dapat terdiri dari karakter alfanumerik dan berikut ini: '_', '@', '#', '.', ':', '-'.         Validasi harus dilakukan di PushRequestHandler.
+    - `[TracingOption <String>]`: Opsi pelacakan.
     - `[TriggerPrivateBytesInKb <Int32?>]`: Aturan berdasarkan byte privat.
     - `[TriggerStatusCode <IStatusCodesBasedTrigger[]>]`: Aturan berdasarkan kode status.
       - `[Count <Int32?>]`: Jumlah Permintaan.
       - `[Status <Int32?>]`: Kode status HTTP.
-      - `[SubStatus <Int32?>]`: Meminta Sub Status.
+      - `[SubStatus <Int32?>]`: Minta Sub Status.
       - `[TimeInterval <String>]`: Interval waktu.
       - `[Win32Status <Int32?>]`: Kode kesalahan Win32.
     - `[Use32BitWorkerProcess <Boolean?>]`: <code>true</code> untuk menggunakan proses pekerja 32-bit; jika tidak, <code>false</code>.
     - `[VirtualApplication <IVirtualApplication[]>]`: Aplikasi virtual.
       - `[PhysicalPath <String>]`: Jalur fisik.
-      - `[PreloadEnabled <Boolean?>]`: <code>true</code> jika pra-muat diaktifkan; jika tidak, <code>false</code>.
+      - `[PreloadEnabled <Boolean?>]`: <code>true</code> jika pramuat diaktifkan; jika tidak, <code>false</code>.
       - `[VirtualDirectory <IVirtualDirectory[]>]`: Direktori virtual untuk aplikasi virtual.
         - `[PhysicalPath <String>]`: Jalur fisik.
         - `[VirtualPath <String>]`: Jalur ke aplikasi virtual.
       - `[VirtualPath <String>]`: Jalur virtual.
-    - `[VnetName <String>]`: Nama Jaringan Virtual.
+    - `[VnetName <String>]`: nama Virtual Network.
     - `[WebSocketsEnabled <Boolean?>]`: <code>true</code> jika WebSocket diaktifkan; jika tidak, <code>false</code>.
-    - `[WindowsFxVersion <String>]`: Dashboard App Framework dan versi
-    - `[XManagedServiceIdentityId <Int32?>]`: Id Identitas Layanan terkelola eksplisit
-  - `[ContainerSize <Int32?>]`: Ukuran wadah fungsi.
-  - `[DailyMemoryTimeQuota <Int32?>]`: Maksimum kuota waktu memori harian yang diperbolehkan (hanya berlaku di aplikasi dinamis).
-  - `[Enabled <Boolean?>]`: <code>true</code> jika aplikasi diaktifkan; jika tidak, <code>false</code>. Mengatur nilai ini ke false akan menonaktifkan aplikasi (membuat aplikasi offline).
-  - `[HostNameSslState <IHostNameSslState[]>]`: Negara bagian SSL nama host digunakan untuk mengelola pengikatan SSL untuk nama host aplikasi.
-    - `[HostType <HostType?>]`: Menunjukkan apakah nama host adalah nama host standar atau tempat penyimpanan.
+    - `[WindowsFxVersion <String>]`: Xenon App Framework dan versi
+    - `[XManagedServiceIdentityId <Int32?>]`: Id Identitas Layanan Terkelola Eksplisit
+  - `[ContainerSize <Int32?>]`: Ukuran kontainer fungsi.
+  - `[DailyMemoryTimeQuota <Int32?>]`: Kuota waktu memori harian maksimum yang diizinkan (hanya berlaku pada aplikasi dinamis).
+  - `[Enabled <Boolean?>]`: <code>true</code> jika aplikasi diaktifkan; jika tidak, <code>false</code>. Mengatur nilai ini ke false menonaktifkan aplikasi (membuat aplikasi offline).
+  - `[HostNameSslState <IHostNameSslState[]>]`: Status SSL nama host digunakan untuk mengelola pengikatan SSL untuk nama host aplikasi.
+    - `[HostType <HostType?>]`: Menunjukkan apakah nama host adalah nama host standar atau repositori.
     - `[Name <String>]`: Nama host.
-    - `[SslState <SslState?>]`: Tipe SSL.
+    - `[SslState <SslState?>]`: Jenis SSL.
     - `[Thumbprint <String>]`: Thumbprint sertifikat SSL.
-    - `[ToUpdate <Boolean?>]`: Atur untuk memperbarui <code>true</code> nama host yang sudah ada.
-    - `[VirtualIP <String>]`: Alamat IP virtual ditetapkan ke nama host jika SSL berbasis IP diaktifkan.
+    - `[ToUpdate <Boolean?>]`: Atur ke <code>true</code> untuk memperbarui nama host yang ada.
+    - `[VirtualIP <String>]`: Alamat IP virtual yang ditetapkan ke nama host jika SSL berbasis IP diaktifkan.
   - `[HostNamesDisabled <Boolean?>]`: <code>true</code> untuk menonaktifkan nama host publik aplikasi; jika tidak, <code>false</code>.          Jika <code>true</code>, aplikasi hanya dapat diakses melalui proses manajemen API.
-  - `[HostingEnvironmentProfileId <String>]`: ID Sumber Daya Dari Lingkungan Layanan Aplikasi.
-  - `[HttpsOnly <Boolean?>]`: HttpsOnly: mengonfigurasi situs web untuk menerima permintaan https saja. Masalah pengalihan untuk permintaan http
-  - `[HyperV <Boolean?>]`: Sandbox Hyper-V.
-  - `[IdentityType <ManagedServiceIdentityType?>]`: Tipe identitas layanan terkelola.
-  - `[IdentityUserAssignedIdentity <IManagedServiceIdentityUserAssignedIdentities>]`: Daftar identitas yang ditetapkan pengguna yang terkait dengan sumber daya. Referensi kunci kamus identitas pengguna akan menjadi ID sumber daya ARM di formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
+  - `[HostingEnvironmentProfileId <String>]`: ID sumber daya lingkungan App Service.
+  - `[HttpsOnly <Boolean?>]`: HttpsOnly: mengonfigurasi situs web untuk hanya menerima permintaan https. Masalah pengalihan untuk permintaan http
+  - `[HyperV <Boolean?>]`: Kotak pasir Hyper-V.
+  - `[IdentityType <ManagedServiceIdentityType?>]`: Jenis identitas layanan terkelola.
+  - `[IdentityUserAssignedIdentity <IManagedServiceIdentityUserAssignedIdentities>]`: Daftar identitas yang ditetapkan pengguna yang terkait dengan sumber daya. Referensi kunci kamus identitas pengguna akan menjadi id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
     - `[(Any) <IComponents1Jq1T4ISchemasManagedserviceidentityPropertiesUserassignedidentitiesAdditionalproperties>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[IsXenon <Boolean?>]`: Usang: sandbox Hyper-V.
-  - `[RedundancyMode <RedundancyMode?>]`: Mode kelebihan situs
-  - `[Reserved <Boolean?>]`: <code>true</code> jika dilindungi undang-undang; jika tidak, <code>false</code>.
+  - `[IsXenon <Boolean?>]`: Usang: Kotak pasir Hyper-V.
+  - `[RedundancyMode <RedundancyMode?>]`: Mode redundansi situs
+  - `[Reserved <Boolean?>]`: <code>true</code> jika dicadangkan; jika tidak, <code>false</code>.
   - `[ScmSiteAlsoStopped <Boolean?>]`: <code>true</code> untuk menghentikan situs SCM (KUDU) ketika aplikasi dihentikan; jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
-  - `[ServerFarmId <String>]`: ID Sumber Daya dari paket Layanan Aplikasi terkait, diformat sebagai: "/subscriptions/{subscriptionID}/resourceGroups/{groupName}/providers/Microsoft.Web/serverfarms/{appServicePlanName}".
+  - `[ServerFarmId <String>]`: ID sumber daya dari paket App Service terkait, diformat sebagai: "/subscriptions/{subscriptionID}/resourceGroups/{groupName}/providers/Microsoft.Web/serverfarms/{appServicePlanName}".
 
 ## RELATED LINKS
 
