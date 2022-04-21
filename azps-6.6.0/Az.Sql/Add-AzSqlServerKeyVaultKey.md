@@ -9,8 +9,8 @@ ms.openlocfilehash: 0154e8bc33a910b6fb97ccd96ae0b6c1f7524c2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142040879"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142770922"
 ---
 # Add-AzSqlServerKeyVaultKey
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerKeyVaultKey.Model.AzureSqlServerKeyVaultKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

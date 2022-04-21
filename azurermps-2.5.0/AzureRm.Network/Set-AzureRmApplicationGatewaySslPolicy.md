@@ -8,8 +8,8 @@ ms.openlocfilehash: 1e0d5de8013bbb6fd5104c3af5bdb555b0317e75
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780548"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797322"
 ---
 # Set-AzureRmApplicationGatewaySslPolicy
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

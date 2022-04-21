@@ -9,8 +9,8 @@ ms.openlocfilehash: 65d319749424697c882012d23bf12f87f92adbc0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790269"
 ---
 # Remove-AzureRmVirtualHub
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

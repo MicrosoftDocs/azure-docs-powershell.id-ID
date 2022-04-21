@@ -10,8 +10,8 @@ ms.openlocfilehash: d725735caf7806233688e6f0bcdddb4edb0f62b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141820200"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790508"
 ---
 # Remove-AzureRmLoadBalancer
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 09b729a1a30d1a7c927ad761b2b6b98623b315f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164774"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142798138"
 ---
 # Invoke-AzStorageAccountHierarchicalNamespaceUpgrade
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

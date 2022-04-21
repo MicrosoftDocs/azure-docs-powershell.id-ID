@@ -10,8 +10,8 @@ ms.openlocfilehash: 7be45d8fb9b931b4349024f7bda4431f496750ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428577"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142812142"
 ---
 # Export-AzAutomationDscNodeReportContent
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.IO.DirectoryInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

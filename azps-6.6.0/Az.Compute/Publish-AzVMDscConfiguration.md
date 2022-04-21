@@ -10,8 +10,8 @@ ms.openlocfilehash: 996b1696fe2709dd94c1142d37f55e808d8a6c60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142128545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142777978"
 ---
 # Publish-AzVMDscConfiguration
 
@@ -294,7 +294,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

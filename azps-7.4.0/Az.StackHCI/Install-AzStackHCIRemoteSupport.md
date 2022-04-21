@@ -9,8 +9,8 @@ ms.openlocfilehash: e75cb3b26b3012c4599d0bc1b2c4a22f10611e5a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142435058"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142798498"
 ---
 # Install-AzStackHCIRemoteSupport
 
@@ -72,6 +72,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: 696ee3658de7a228b3ebe0b6b65516d18b1050bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142222579"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142770688"
 ---
 # New-AzSqlSyncAgentKey
 
 ## SYNOPSIS
-Membuat Azure SQL Sync Agent Key.
+Membuat Kunci Agen Sinkronisasi Azure SQL.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlsyncagentkey) untuk informasi terbaru.
@@ -32,7 +32,7 @@ Cmdlet **New-AzSqlSyncAgentKey** membuat kunci Agen Sinkronisasi Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Buat kunci agen sinkronisasi untuk agen sinkronisasi Azure SQL.
+### Contoh 1: Membuat kunci agen sinkronisasi untuk agen sinkronisasi Azure SQL.
 ```
 PS C:\> New-AzSqlSyncAgentKey -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -SyncAgentName "SyncAgent01"
 SyncAgentKey                  : Key
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server tempat agen sinkronisasi berada.
+Nama Server Azure SQL tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String
@@ -144,6 +144,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncAgentKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

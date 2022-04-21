@@ -9,8 +9,8 @@ ms.openlocfilehash: 506e908720130d5bce80e6c8b29531f130647717
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141777647"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790967"
 ---
 # New-AzureRmPacketCaptureFilterConfig
 
@@ -162,7 +162,7 @@ Parameter: Protokol (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSPacketCaptureFilter
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, paket, tangkapan, lalu lintas, filter 
 
 ## RELATED LINKS

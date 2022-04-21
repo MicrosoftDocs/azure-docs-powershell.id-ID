@@ -10,8 +10,8 @@ ms.openlocfilehash: 5ceb420f30525817ebccd6d3f38a53e6c1cad66e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142782586"
 ---
 # Set-AzVmss
 
@@ -194,7 +194,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

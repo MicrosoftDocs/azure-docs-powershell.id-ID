@@ -9,8 +9,8 @@ ms.openlocfilehash: c3c3099d102c6a185d0e23ff40af6c2e49369f30
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141860936"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142771156"
 ---
 # Test-AzRecoveryServicesDSMove
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

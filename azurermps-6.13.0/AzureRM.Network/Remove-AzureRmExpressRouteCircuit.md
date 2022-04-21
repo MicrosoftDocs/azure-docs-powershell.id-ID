@@ -10,8 +10,8 @@ ms.openlocfilehash: e38cdc9a7f0b34fa5e7769192fa5fcb0ad342de1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142137678"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790702"
 ---
 # Remove-AzureRmExpressRouteCircuit
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

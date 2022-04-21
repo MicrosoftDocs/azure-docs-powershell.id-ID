@@ -10,8 +10,8 @@ ms.openlocfilehash: afa4f8e7710dda16c8d8a1a9819e00a981b5bb8e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141870386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142777690"
 ---
 # Set-AzVMADDomainExtension
 
@@ -303,7 +303,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

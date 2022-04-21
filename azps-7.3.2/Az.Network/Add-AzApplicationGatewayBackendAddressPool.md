@@ -10,8 +10,8 @@ ms.openlocfilehash: 55081532bf30fdcc5be05e81cc81648b00a0eca9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787262"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142764010"
 ---
 # Add-AzApplicationGatewayBackendAddressPool
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

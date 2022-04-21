@@ -10,8 +10,8 @@ ms.openlocfilehash: dc59e22788f81c4362dc5fd67f5e695cf85333f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434998"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797706"
 ---
 # Remove-AzStorageShare
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageFileShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

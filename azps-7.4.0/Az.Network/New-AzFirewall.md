@@ -10,8 +10,8 @@ ms.openlocfilehash: e764a2741430ff690815ef20b981005ddc5eeec7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167594"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142805356"
 ---
 # New-AzFirewall
 
@@ -639,7 +639,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Virtual Network
+Jaringan Virtual
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -739,7 +739,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewall
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

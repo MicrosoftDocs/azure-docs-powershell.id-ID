@@ -10,8 +10,8 @@ ms.openlocfilehash: 6752526e5c6f035d6446c4e6e3ed31724bdbd337
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385912"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791262"
 ---
 # New-AzureRmApplicationGatewayUrlPathMapConfig
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayUrlPathMap
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

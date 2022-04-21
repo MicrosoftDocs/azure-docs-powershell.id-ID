@@ -10,8 +10,8 @@ ms.openlocfilehash: 168c6447dc0a14770981395306bfa07ddb10a97c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169906"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142812016"
 ---
 # Remove-AzAutomationConnectionType
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

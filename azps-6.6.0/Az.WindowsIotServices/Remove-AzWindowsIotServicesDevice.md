@@ -9,8 +9,8 @@ ms.openlocfilehash: a63f144d1fe143aa55332cae39c41cafc9d9e95e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142116449"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142768438"
 ---
 # Remove-AzWindowsIotServicesDevice
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.Api20190601.IDeviceService
 
-## CATATAN
+## NOTES
 
 ALIAS
 

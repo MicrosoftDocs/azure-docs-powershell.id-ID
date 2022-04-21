@@ -10,8 +10,8 @@ ms.openlocfilehash: eb56542d02498a0d4b8aa4176c77d75ab6ad4da6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142782964"
 ---
 # Get-AzVMImageOffer
 
@@ -97,7 +97,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImageOffer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

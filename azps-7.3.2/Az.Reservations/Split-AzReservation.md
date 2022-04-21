@@ -9,8 +9,8 @@ ms.openlocfilehash: 23b3e5c39f65e5a1da4aad45fec946509a53202a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142342169"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142817650"
 ---
 # Split-AzReservation
 
@@ -164,6 +164,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

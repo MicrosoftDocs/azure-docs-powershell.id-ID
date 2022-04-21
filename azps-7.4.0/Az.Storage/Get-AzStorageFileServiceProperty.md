@@ -9,8 +9,8 @@ ms.openlocfilehash: 2ba4c9d4d627d50276e70c00170310e1f60e6cce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419946"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142798264"
 ---
 # Get-AzStorageFileServiceProperty
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSFileServiceProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
