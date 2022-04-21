@@ -9,16 +9,16 @@ ms.openlocfilehash: 95e254f3dd792c6394e969b54ea4317fbbef5f6d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141850298"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142701514"
 ---
 # Get-AzLogzSubAccountTagRule
 
 ## SYNOPSIS
-Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzsubaccounttagrule) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzsubaccounttagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +34,11 @@ Get-AzLogzSubAccountTagRule -InputObject <ILogzIdentity> [-DefaultProfile <PSObj
 ```
 
 ## DESCRIPTION
-Dapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+Dapatkan seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kumpulan aturan tag default untuk sumber daya sub akun logz tertentu
+### Contoh 1: Dapatkan seperangkat aturan tag default untuk sumber daya sub akun logz tertentu
 ```powershell
 PS C:\> Get-AzLogzSubAccountTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -SubAccountName logz-pwshsub01
 
@@ -47,9 +47,9 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini mendapatkan kumpulan aturan tag default untuk sumber daya sub akun logz tertentu.
+Perintah ini mendapatkan seperangkat aturan tag default untuk sumber daya sub akun logz tertentu.
 
-### Contoh 2: Dapatkan kumpulan aturan tag default untuk sub-akun logz yang diberikan pipeline resourceby
+### Contoh 2: Dapatkan seperangkat aturan tag default untuk alur resourceby sub akun logz tertentu
 ```powershell
 PS C:\> New-AzLogzSubAccountTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -SubAccountName logz-pwshsub01 | Get-AzLogzSubAccountTagRule
 
@@ -58,7 +58,7 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini mendapatkan kumpulan aturan tag default untuk sumber daya sub akun logz tertentu menurut pipeline.
+Perintah ini mendapatkan seperangkat aturan tag default untuk sumber daya sub akun logz tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IMonitoringTagRules
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -177,7 +177,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

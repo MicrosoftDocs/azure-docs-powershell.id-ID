@@ -9,8 +9,8 @@ ms.openlocfilehash: 02253a59a7f05bfdecd8147325575605334f13ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097997"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792846"
 ---
 # New-AzureRmFrontDoorRuleGroupOverrideObject
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSAzureRuleGroupOverride
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

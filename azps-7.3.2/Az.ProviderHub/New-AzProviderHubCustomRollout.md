@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubCustomRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubCustomRollout.md
-ms.openlocfilehash: 4b76ac908c82cc70d26fa45836631a9fcff308f9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4f40b657e7154f5e629ed61f5f62dba6b6925399
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999198"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142760194"
 ---
 # New-AzProviderHubCustomRollout
 
 ## SYNOPSIS
 Membuat atau memperbarui detail peluncuran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubcustomrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Membuat atau memperbarui detail peluncuran.
 
 ## EXAMPLES
 
-### Contoh 1: Buat/Perbarui peluncuran kustom penyedia sumber daya.
+### Contoh 1: Membuat/Memperbarui peluncuran kustom penyedia sumber daya.
 ```powershell
 PS C:\> New-AzProviderHubCustomRollout -ProviderNamespace "Microsoft.Contoso" -RolloutName "customRollout1" -CanaryRegion "Eastus2EUAP"
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -SpecificationProviderRegistration
 .
-Untuk membuat, lihat bagian CATATAN untuk SPESIFIKASI PROPERTIPROVIDERREGISTRATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SPECIFICATIONPROVIDERREGISTRATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IProviderRegistration
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -SpecificationResourceTypeRegistration
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SPECIFICATIONRESOURCETYPEREGISTRATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SPECIFICATIONRESOURCETYPEREGISTRATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeRegistration[]
@@ -198,8 +201,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,8 +217,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -238,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ICustomRollout
 
-## CATATAN
+## NOTES
 
 ALIAS
 

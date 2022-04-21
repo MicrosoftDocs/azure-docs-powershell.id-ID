@@ -9,13 +9,13 @@ ms.openlocfilehash: b285297109e596f0e8a02ae26f22dc19dbacc42b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176577"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142805320"
 ---
 # New-AzFirewallPolicySqlSetting
 
 ## SYNOPSIS
-Membuat Pengaturan SQL baru untuk Kebijakan Azure Firewall
+Membuat Pengaturan SQL baru untuk Kebijakan Firewall Azure
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzFirewallPolicySqlSetting [-AllowSqlRedirect] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicySqlSetting** membuat SQL Mengatur Objek untuk Kebijakan Azure Firewall
+Cmdlet **New-AzFirewallPolicySqlSetting** membuat Objek Pengaturan SQL untuk Kebijakan Firewall Azure
 
 ## EXAMPLES
 
@@ -111,6 +111,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicySqlSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 20719ff7aaf79654489b3075d1c0548d755ad5c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142032257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142821304"
 ---
 # New-AzExpressRouteCircuitAuthorization
 
@@ -86,7 +86,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

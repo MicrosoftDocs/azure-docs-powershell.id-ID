@@ -9,8 +9,8 @@ ms.openlocfilehash: caa3cd25db706a3d025ee439aebb6dbb5491f7d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357906"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793793"
 ---
 # Get-AzureRmDataFactoryV2TriggerRun
 
@@ -176,7 +176,7 @@ Parameter: DataFactory (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

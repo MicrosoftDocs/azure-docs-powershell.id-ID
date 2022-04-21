@@ -10,8 +10,8 @@ ms.openlocfilehash: 9a6a4a5a88cebd35993f464a74828115e8a34bdb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794214"
 ---
 # Set-AzureRmVMPlan
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

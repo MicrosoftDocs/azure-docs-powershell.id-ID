@@ -9,8 +9,8 @@ ms.openlocfilehash: 433ee258277fb56d36762ee3d5802957e1839b63
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142468439"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142820602"
 ---
 # Remove-AzP2sVpnGateway
 
@@ -202,6 +202,6 @@ System.String
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

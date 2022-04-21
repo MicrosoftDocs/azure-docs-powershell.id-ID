@@ -9,8 +9,8 @@ ms.openlocfilehash: 445029c41e27cce14bff2ac14d826adf28f3c9ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358608"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794089"
 ---
 # Update-AzureRmGalleryImageDefinition
 
@@ -432,6 +432,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSGalleryImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

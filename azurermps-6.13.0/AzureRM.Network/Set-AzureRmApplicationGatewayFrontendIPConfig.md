@@ -10,8 +10,8 @@ ms.openlocfilehash: e5bbe82276cb356da1e5a66c45145c7daa1d8769
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141777083"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790271"
 ---
 # Set-AzureRmApplicationGatewayFrontendIPConfig
 
@@ -223,7 +223,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

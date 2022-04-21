@@ -9,8 +9,8 @@ ms.openlocfilehash: edf464886b1fc5aeb2100502a02dd801eff4618e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992322"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142808866"
 ---
 # New-AzEventHubNamespace
 
@@ -574,6 +574,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

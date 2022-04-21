@@ -9,13 +9,13 @@ ms.openlocfilehash: a3e10e8c135130fcc8d592c4664380aabafc4e0a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166024"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142801414"
 ---
 # Remove-AzTenantDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran pada lingkup penyewa dan semua operasi terkait
+Menghapus penyebaran di cakupan penyewa dan operasi terkait
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Remove-AzTenantDeployment -InputObject <PSDeployment> [-AsJob] [-PassThru] [-Pre
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzTenantDeployment** menghapus penyebaran Azure di lingkup penyewa saat ini dan semua operasi terkait.
+Cmdlet **Remove-AzTenantDeployment** menghapus penyebaran Azure di cakupan penyewa saat ini dan operasi terkait.
 
 ## EXAMPLES
 
@@ -47,19 +47,19 @@ Cmdlet **Remove-AzTenantDeployment** menghapus penyebaran Azure di lingkup penye
 Remove-AzTenantDeployment -Name "RolesDeployment"
 ```
 
-Perintah ini menghapus penyebaran "RolesDeployment" pada lingkup penyewa saat ini.
+Perintah ini menghapus penyebaran "RolesDeployment" pada cakupan penyewa saat ini.
 
-### Contoh 2: Dapatkan penyebaran dan hapus
+### Contoh 2: Mendapatkan penyebaran dan menghapusnya
 ```powershell
 Get-AzTenantDeployment -Name "RolesDeployment" | Remove-AzTenantDeployment
 ```
 
-Perintah ini mendapatkan penyebaran "RolesDeployment" pada lingkup penyewa saat ini dan menghapusnya.
+Perintah ini mendapatkan penyebaran "RolesDeployment" pada cakupan penyewa saat ini dan menghapusnya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
 contoh: /providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -119,7 +119,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

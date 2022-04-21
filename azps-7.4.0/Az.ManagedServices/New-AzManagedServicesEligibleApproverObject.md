@@ -9,8 +9,8 @@ ms.openlocfilehash: fbda106471f0302e2de5bfe4ccdb57ebf84b26dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001819"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142807480"
 ---
 # New-AzManagedServicesEligibleApproverObject
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.Api20200201Preview.EligibleApprover
 
-## CATATAN
+## NOTES
 
 ALIAS
 

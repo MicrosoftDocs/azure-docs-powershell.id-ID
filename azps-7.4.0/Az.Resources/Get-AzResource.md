@@ -10,8 +10,8 @@ ms.openlocfilehash: 6787b3b0eb9af3b81fe34d99cb5a61450a9a07bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994110"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142801828"
 ---
 # Get-AzResource
 
@@ -47,7 +47,7 @@ Cmdlet **Get-AzResource** mendapatkan sumber daya Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua sumber daya dalam langganan saat ini
+### Contoh 1: Mendapatkan semua sumber daya dalam langganan saat ini
 
 ```powershell
 Get-AzResource | ft
@@ -69,7 +69,7 @@ testVM2 otherResourceGroup Microsoft.Compute/virtualMachines       eastus
 
 Perintah ini mendapatkan semua sumber daya dalam langganan saat ini.
 
-### Contoh 2: Dapatkan semua sumber daya dalam grup sumber daya
+### Contoh 2: Mendapatkan semua sumber daya dalam grup sumber daya
 
 ```powershell
 Get-AzResource -ResourceGroupName testRG | ft
@@ -102,9 +102,9 @@ storage otherResourceGroup Microsoft.Storage/storageAccounts eastus
 testVM2 otherResourceGroup Microsoft.Compute/virtualMachines eastus
 ```
 
-Perintah ini mendapatkan semua sumber daya yang grup sumber daya mereka termasuk dalam makhluk dengan "lainnya".
+Perintah ini mendapatkan semua sumber daya yang grup sumber dayanya termasuk dalam makhluk dengan "lainnya".
 
-### Contoh 4: Dapatkan semua sumber daya dengan nama tertentu
+### Contoh 4: Mendapatkan semua sumber daya dengan nama tertentu
 
 ```powershell
 Get-AzResource -Name testVM | fl
@@ -140,9 +140,9 @@ testKV  otherRG            Microsoft.KeyVault/vaults         eastus
 testVM2 otherResourceGroup Microsoft.Compute/virtualMachines eastus
 ```
 
-Perintah ini mendapatkan semua sumber daya yang nama sumber dayanya dimulai dengan "uji".
+Perintah ini mendapatkan semua sumber daya yang nama sumber dayanya dimulai dengan "pengujian".
 
-### Contoh 6: Mendapatkan semua sumber daya dari tipe sumber daya tertentu
+### Contoh 6: Mendapatkan semua sumber daya dari jenis sumber daya tertentu
 
 ```powershell
 Get-AzResource -ResourceType Microsoft.Compute/virtualMachines | ft
@@ -155,9 +155,9 @@ testVM  testRG             Microsoft.Compute/virtualMachines westus
 testVM2 otherResourceGroup Microsoft.Compute/virtualMachines eastus
 ```
 
-Perintah ini mendapatkan semua sumber daya dalam langganan saat ini yang merupakan mesin virtual.
+Perintah ini mendapatkan semua sumber daya dalam langganan saat ini yang merupakan komputer virtual.
 
-### Contoh 7: Dapatkan sumber daya menurut id sumber daya
+### Contoh 7: Mendapatkan sumber daya menurut id sumber daya
 
 ```powershell
 Get-AzResource -ResourceId /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM
@@ -177,7 +177,7 @@ Tags              :
                     Status  Approved
 ```
 
-Perintah ini mendapatkan sumber daya dengan id sumber daya yang disediakan, yang merupakan mesin virtual yang disebut "testVM" dalam grup sumber daya "testRG".
+Perintah ini mendapatkan sumber daya dengan id sumber daya yang disediakan, yang merupakan komputer virtual yang disebut "testVM" di grup sumber daya "testRG".
 
 ## PARAMETERS
 
@@ -225,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya yang akan diambil. Parameter ini mendukung wildcard di awal dan/atau akhir string.
+### -Name
+Nama sumber daya yang akan diambil. Parameter ini mendukung kartubebas di awal dan/atau akhir string.
 
 ```yaml
 Type: System.String
@@ -254,7 +254,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
+### -Pre
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat sumber daya yang diambil berada. Parameter ini mendukung wildcard di awal dan/atau akhir string.
+Grup sumber daya tempat sumber daya yang diambil berada. Parameter ini mendukung kartubebas di awal dan/atau akhir string.
 
 ```yaml
 Type: System.String
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya sumber daya yang akan diambil. Misalnya, Microsoft.Compute/virtualMachines
+Jenis sumber daya sumber daya yang akan diambil. Misalnya, Microsoft.Compute/virtualMachines
 
 ```yaml
 Type: System.String
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 
 ### -Tag
 
-Mendapatkan sumber daya yang memiliki tag Azure yang ditentukan. Masukkan tabel hash dengan kunci Nama atau tombol Nama dan Nilai. Karakter wildcard tidak didukung. "Tag" adalah pasangan nilai nama yang bisa Anda terapkan ke sumber daya dan grup sumber daya. Gunakan tag untuk mengkategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya. Untuk menambahkan tag ke sumber daya, gunakan parameter Tag cmdlet New-AzResource atau Set-AzResource. Untuk membuat tag yang sudah ditentukan sebelumnya, gunakan cmdlet New-AzTag. Untuk bantuan terkait tabel hash di Windows PowerShell, jalankan 'about_Hashtables Dapatkan Bantuan'.
+Mendapatkan sumber daya yang memiliki tag Azure yang ditentukan. Masukkan tabel hash dengan kunci Nama atau kunci Nama dan Nilai. Karakter kartubebas tidak didukung. "Tag" adalah pasangan nilai nama yang dapat Anda terapkan ke sumber daya dan grup sumber daya. Gunakan tag untuk mengategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya. Untuk menambahkan tag ke sumber daya, gunakan parameter Tag cmdlet New-AzResource atau Set-AzResource. Untuk membuat tag yang telah ditentukan sebelumnya, gunakan cmdlet New-AzTag. Untuk bantuan tentang tabel hash di Windows PowerShell, jalankan 'Get-Help about_Hashtables'.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -370,14 +370,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Move-AzResource](./Move-AzResource.md)
 
-[New-AzResource](./New-AzResource.md)
+[Baru-AzResource](./New-AzResource.md)
 
-[Hapus-AzResource](./Remove-AzResource.md)
+[Remove-AzResource](./Remove-AzResource.md)
 
 [Set-AzResource](./Set-AzResource.md)

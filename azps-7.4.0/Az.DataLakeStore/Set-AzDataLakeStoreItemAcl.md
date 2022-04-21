@@ -10,8 +10,8 @@ ms.openlocfilehash: cf15a72d9d4d3e4900eecc7934d91b99c1500b60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142809550"
 ---
 # Set-AzDataLakeStoreItemAcl
 
@@ -221,6 +221,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreItemAce
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

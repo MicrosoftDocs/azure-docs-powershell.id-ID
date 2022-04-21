@@ -9,8 +9,8 @@ ms.openlocfilehash: 104a39b60765f3c0493906f98301857eea1e36f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166664"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142803178"
 ---
 # New-AzPurviewAzureMySqlDataSourceObject
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureMySqlDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: a4446fb64ed8d279e24b3cf3d6c82701b48ab754
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357910"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793728"
 ---
 # Remove-AzureRmDataFactoryV2
 
@@ -193,7 +193,7 @@ Parameter: InputObject (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

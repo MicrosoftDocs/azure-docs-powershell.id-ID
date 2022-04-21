@@ -9,8 +9,8 @@ ms.openlocfilehash: f5b988bf99a038ac4933d0d9c7028403b315f78b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430777"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142803772"
 ---
 # Get-AzPeeringServiceProvider
 
@@ -24,7 +24,7 @@ Get-AzPeeringServiceProvider [-DefaultProfile <IAzureContextContainer>] [<Common
 ```
 
 ## DESCRIPTION
-Daftar penyedia layanan peering
+Mencantumkan penyedia layanan peering
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ ServiceProviderName Name      Id Type
 TestPeer1           TestPeer1    Microsoft.Peering/peeringServiceProviders
 ```
 
-Dapatkan penyedia layanan peering yang tersedia
+Mendapatkan penyedia layanan peering yang tersedia
 
 ## PARAMETERS
 
@@ -59,16 +59,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeeringServiceProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

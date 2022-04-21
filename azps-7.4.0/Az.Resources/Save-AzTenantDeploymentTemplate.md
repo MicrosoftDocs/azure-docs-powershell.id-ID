@@ -9,8 +9,8 @@ ms.openlocfilehash: 60d4624ec5e37b6fc632a967651f03962cae02e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172047"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142801342"
 ---
 # Save-AzTenantDeploymentTemplate
 
@@ -32,7 +32,7 @@ Save-AzTenantDeploymentTemplate -DeploymentObject <PSDeployment> [-Path <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Save-AzTenantDeploymentTemplate**  menyimpan templat penyebaran ke file JSON untuk penyebaran di lingkup penyewa.
+Cmdlet **Save-AzTenantDeploymentTemplate**  menyimpan templat penyebaran ke file JSON untuk penyebaran di cakupan penyewa.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Save-AzTenantDeploymentTemplate -DeploymentName "TestDeployment"
 
 Perintah ini mendapatkan templat penyebaran dari TestDeployment dan menyimpannya sebagai file JSON di direktori saat ini.
 
-### Contoh 2: Dapatkan penyebaran dan simpan templatnya
+### Contoh 2: Mendapatkan penyebaran dan menyimpan templatnya
 ```powershell
 Get-AzTenantDeploymentTemplate -Name "RolesDeployment" | Save-AzTenantDeploymentTemplate
 ```
 
-Perintah ini mendapatkan penyebaran "RolesDeployment" di lingkup penyewa saat ini dan menyimpan templatnya.
+Perintah ini mendapatkan penyebaran "RolesDeployment" di cakupan penyewa saat ini dan menyimpan templatnya.
 
 ## PARAMETERS
 
@@ -97,7 +97,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -127,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,8 +142,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,6 +184,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplatePath
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

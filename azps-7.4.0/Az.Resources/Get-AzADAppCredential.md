@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppCredential.md
-ms.openlocfilehash: 034ed1e1e70f5e5279f05ba732c5f6b5c3c9d58d
+ms.openlocfilehash: 43e09951c9997e32793351d364b4e3c9715b6367
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142759456"
+ms.locfileid: "142801936"
 ---
 # Get-AzADAppCredential
 
@@ -18,9 +18,6 @@ ms.locfileid: "142759456"
 Mencantumkan kredensial kunci dan kredensial kata sandi untuk aplikasi.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadappcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +51,7 @@ Mencantumkan kredensial kunci dan kredensial kata sandi untuk aplikasi.
 
 ### Contoh 1: Mencantumkan kredensial dari aplikasi menurut nama tampilan
 ```powershell
-PS C:\> Get-AzADAppCredential -DisplayName $name
+Get-AzADAppCredential -DisplayName $name
 ```
 
 Mencantumkan kredensial dari aplikasi menurut nama tampilan

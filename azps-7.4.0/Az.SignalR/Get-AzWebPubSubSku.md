@@ -9,13 +9,13 @@ ms.openlocfilehash: 5eb7fa602c013fcaf5380d458d266925e0b28a4c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990078"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799992"
 ---
 # Get-AzWebPubSubSku
 
 ## SYNOPSIS
-Cantumkan semua sku yang tersedia dari sumber daya.
+Cantumkan semua sku sumber daya yang tersedia.
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ Get-AzWebPubSubSku -ResourceGroupName <String> -ResourceName <String> [-Subscrip
 ```
 
 ## DESCRIPTION
-Cantumkan semua sku yang tersedia dari sumber daya.
+Cantumkan semua sku sumber daya yang tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua SKU yang tersedia dari sumber daya PubSub Web
+### Contoh 1: Mencantumkan semua SKU yang tersedia dari sumber daya Web PubSub
 ```powershell
 Get-AzWebPubSubSku -ResourceGroupName psdemo -ResourceName psdemo-wps | Format-List
 ```
@@ -60,8 +60,8 @@ SkuCapacity          :
 Tier                 : Standard
 ```
 
-Contoh ini mencantumkan SKU sumber daya PubSub Web lalu menyalurkan hasil untuk `Format-List` melihat semua nilai properti hasil.
-Kita dapat melihat dari hasil bahwa ada dua SKU, Satu Tingkat adalah "Gratis", dan yang lainnya adalah "Standar".
+Contohnya mencantumkan SKU sumber daya Web PubSub lalu menyalurkan hasilnya untuk `Format-List` melihat semua nilai properti hasilnya.
+Kita dapat melihat dari hasil bahwa ada dua SKU, Tingkat seseorang adalah "Gratis", dan yang lainnya adalah "Standar".
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.ISkuList
 
-## CATATAN
+## NOTES
 
 ALIAS
 

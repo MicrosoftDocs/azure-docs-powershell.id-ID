@@ -9,8 +9,8 @@ ms.openlocfilehash: 476728b1411da1a03a6f83466f0817083708b0bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142035299"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142765540"
 ---
 # Get-AzDataProtectionOperation
 
@@ -119,7 +119,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IClientDiscoveryValueForSingleApi
 
-## CATATAN
+## NOTES
 
 ALIAS
 

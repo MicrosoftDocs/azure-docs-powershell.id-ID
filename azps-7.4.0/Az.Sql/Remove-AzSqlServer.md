@@ -10,8 +10,8 @@ ms.openlocfilehash: 062e84f46a87f09feacc20b99bf0d50f01acd494
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174064"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799128"
 ---
 # Remove-AzSqlServer
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

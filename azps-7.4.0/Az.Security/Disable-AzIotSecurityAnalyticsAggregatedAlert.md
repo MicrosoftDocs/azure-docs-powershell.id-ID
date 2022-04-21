@@ -9,13 +9,13 @@ ms.openlocfilehash: 71f39b124a0dd70d8b991a59d840df61acb27725
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990366"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142801144"
 ---
 # Disable-AzIotSecurityAnalyticsAggregatedAlert
 
 ## SYNOPSIS
-Mengabaikan pemberitahuan agregat Iot
+Mematikan pemberitahuan agregat Iot
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceId <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menghilangkan peringatan agregat tertentu pada perangkat hub iot. Nama pemberitahuan agregat adalah kombinasi dari tipe pemberitahuan dan tanggal peringatan yang memalukan, dipisahkan oleh '/'.
+Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menutup pemberitahuan agregat tertentu pada perangkat iot hub. Nama pemberitahuan agregat adalah kombinasi dari jenis pemberitahuan dan tanggal peringatan yang diperjelas, dipisahkan oleh '/'.
 
 ## EXAMPLES
 
@@ -47,14 +47,14 @@ Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menghilangkan peringatan ag
 Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceGroupName "MyResourceGroup" -SolutionName "MySolutionName" -Name "IoT_SucessfulLocalLogin/2020-03-15"
 ```
 
-Menghilangkan pemberitahuan agregat "IoT_SucessfulLocalLogin/2020-03-15" (nama digabungkan dari tipe peringatan dan tanggal agregatnya) dari solusi keamanan IoT "MySolutionName" dalam grup sumber daya "MyResourceGroup"
+Mengabaikan pemberitahuan agregat "IoT_SucessfulLocalLogin/2020-03-15" (nama yang digabungkan dari jenis pemberitahuan dan tanggal agregatnya) dari solusi keamanan IoT "MySolutionName" dalam grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
 Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceId "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Security/iotSecuritySolutions/MySolutionName/analyticsModels/default/aggregatedAlerts/IoT_SucessfulLocalLogin/2020-03-15"
 ```
 
-Menghilangkan pemberitahuan agregat dengan Id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Security/iotSecuritySolutions/MySolutionName/analyticsModels/default/aggregatedAlerts/IoT_SucessfulLocalLogin/2020-03-15"
+Menutup pemberitahuan agregat dengan Id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Security/iotSecuritySolutions/MySolutionName/analyticsModels/default/aggregatedAlerts/IoT_SucessfulLocalLogin/2020-03-15"
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -163,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -207,6 +207,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

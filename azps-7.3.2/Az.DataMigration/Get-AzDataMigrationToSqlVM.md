@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlVM.md
-ms.openlocfilehash: 57289914f6fa9349eaea5b67e5f3b7d42b271f51
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0f579cf6464004abbc436580b79681e26aedff7c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142765756"
 ---
 # Get-AzDataMigrationToSqlVM
 
 ## SYNOPSIS
-Ambil migrasi database tertentu untuk pelanggan SQL VM.
+Ambil migrasi database yang ditentukan untuk VM SQL tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtosqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzDataMigrationToSqlVM -InputObject <IDataMigrationIdentity> [-Expand <Strin
 ```
 
 ## DESCRIPTION
-Ambil migrasi database tertentu untuk pelanggan SQL VM.
+Ambil migrasi database yang ditentukan untuk VM SQL tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail migrasi Database tertentu ke komputer SQL Virtual
+### Contoh 1: Mendapatkan detail Migrasi Database tertentu ke komputer virtual SQL
 ```powershell
 PS C:\> Get-AzDataMigrationToSqlVM -ResourceGroupName "MyResourceGroup" -SqlVirtualMachineName "MySqlVM" -TargetDbName "MyDatabase"
 
@@ -46,9 +49,9 @@ Name                 Type                                       Kind  Provisioni
 MyDatabase           Microsoft.DataMigration/databaseMigrations SqlVm Succeeded         Succeeded
 ```
 
-Perintah ini memberikan detail tentang Migrasi Database tertentu ke SQL Virtual.
+Perintah ini mendapatkan detail Migrasi Database tertentu ke komputer virtual SQL.
 
-### Contoh 2: Mendapatkan detail yang lebih luas dari Migrasi Database tertentu ke SQL Virtual
+### Contoh 2: Dapatkan detail yang diperluas dari Migrasi Database tertentu ke komputer virtual SQL
 ```powershell
 PS C:\> $vmMigration = Get-AzDataMigrationToSqlVM -ResourceGroupName "MyResouceGroup" -SqlVirtualMachineName "MySqlVM" -TargetDbName "MyDatabase" -Expand MigrationStatusDetails
 PS C:\> $vmMigration.MigrationStatusDetail
@@ -58,7 +61,7 @@ BlobContainerName                    CompleteRestoreErrorMessage CurrentRestorin
 2673894b-451c-41cv-ae2b-58a8eefe3546                             AdventureWorks.bak
 ```
 
-Perintah ini memberikan detail yang lebih luas tentang Migrasi Database ke SQL Virtual.
+Perintah ini mendapatkan detail yang diperluas dari Migrasi Database tertentu ke komputer virtual SQL.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Sumber daya anak untuk disertakan dalam respons.
+Sumber daya anak yang akan disertakan dalam respons.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -109,8 +112,8 @@ Accept wildcard characters: False
 
 ### -MigrationOperationId
 ID operasi migrasi opsional.
-Jika ini disediakan, detail operasi migrasi untuk ID tersebut akan diambil.
-Jika tidak tersedia (default), detail yang terkait dengan operasi terbaru atau saat ini akan diambil.
+Jika ini disediakan, maka detail operasi migrasi untuk ID tersebut diambil.
+Jika tidak disediakan (default), maka detail yang terkait dengan operasi terbaru atau saat ini diambil.
 
 ```yaml
 Type: System.String
@@ -140,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String[]
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -211,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.IDatabaseMigrationSqlVM
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -223,10 +226,10 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagedInstanceName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SqlMigrationServiceName <String>]`: Nama SQL Migrasi.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
+  - `[SqlMigrationServiceName <String>]`: Nama SQL Migration Service.
   - `[SqlVirtualMachineName <String>]`: 
-  - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.
+  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Azure.
   - `[TargetDbName <String>]`: Nama database target.
 
 ## RELATED LINKS
