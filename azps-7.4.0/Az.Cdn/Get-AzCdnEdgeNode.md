@@ -9,8 +9,8 @@ ms.openlocfilehash: 927095427e4c02f505a751008776db66348e9bee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142750078"
 ---
 # Get-AzCdnEdgeNode
 
@@ -79,6 +79,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.EdgeNodes.PSEdgeNode
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 4a5864e9572a21442a5333232fe5f705fb1b5687
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390466"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795834"
 ---
 # Start-AzureRmAutomationSourceControlSyncJob
 
@@ -162,6 +162,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.SourceControlSyncJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

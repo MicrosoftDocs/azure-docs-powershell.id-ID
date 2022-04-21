@@ -9,8 +9,8 @@ ms.openlocfilehash: a020003297e75d332742896f9d49be4bbe6a4453
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141797630"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142836622"
 ---
 # New-AzRecoveryServicesAsrNetworkMapping
 
@@ -242,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

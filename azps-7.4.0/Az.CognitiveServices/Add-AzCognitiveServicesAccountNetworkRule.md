@@ -9,8 +9,8 @@ ms.openlocfilehash: 0601dbe5c55240fbda93b1f985f197e945cfc7fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999743"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142810324"
 ---
 # Add-AzCognitiveServicesAccountNetworkRule
 
@@ -236,6 +236,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSIpRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

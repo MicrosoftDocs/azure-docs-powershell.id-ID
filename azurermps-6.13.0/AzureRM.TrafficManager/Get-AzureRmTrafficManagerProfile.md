@@ -10,8 +10,8 @@ ms.openlocfilehash: 239e0147b1955c59dbe34591f85273f05aa12c08
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059028"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789107"
 ---
 # Get-AzureRmTrafficManagerProfile
 
@@ -120,9 +120,9 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
 Cmdlet ini mengembalikan objek **TrafficManagerProfile** .
-Anda dapat mengubah objek ini, lalu menerapkan perubahan pada Traffic Manager menggunakan **Set-AzureRmTrafficManagerProfile**.
+Anda dapat mengubah objek ini, lalu menerapkan perubahan ke Traffic Manager menggunakan **Set-AzureRmTrafficManagerProfile**.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

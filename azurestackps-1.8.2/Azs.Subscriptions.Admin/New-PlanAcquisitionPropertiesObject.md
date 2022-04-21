@@ -7,8 +7,8 @@ ms.openlocfilehash: 199d9fb2ce88c149965d488b55bce669f364a615
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141878342"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142785952"
 ---
 # New-PlanAcquisitionPropertiesObject
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

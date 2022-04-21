@@ -9,8 +9,8 @@ ms.openlocfilehash: 05dafecd0c76fa3901180401330695c77b12857f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429964"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802080"
 ---
 # Get-AzReservationOrderId
 
@@ -25,7 +25,7 @@ Get-AzReservationOrderId [-SubscriptionId <Guid>] [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Dapatkan Id dari s yang dapat `ReservationOrder`diterapkan ke langganan ini.
+Dapatkan Id yang berlaku `ReservationOrder`yang dapat diterapkan ke langganan ini.
 
 ## EXAMPLES
 
@@ -34,14 +34,14 @@ Dapatkan Id dari s yang dapat `ReservationOrder`diterapkan ke langganan ini.
 Get-AzReservationOrderId
 ```
 
-Dapatkan aplikasi `ReservationOrder` untuk langganan default
+Diterapkan `ReservationOrder` untuk langganan default
 
 ### Contoh 2
 ```powershell
 Get-AzReservationOrderId -SubscriptionId "1111aaaa-b1b2-c0c2-d0d2-00000fffff"
 ```
 
-Dapatkan aplikasi `ReservationOrder` untuk langganan tertentu
+Diterapkan `ReservationOrder` untuk langganan tertentu
 
 ## PARAMETERS
 
@@ -76,16 +76,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.Reservations.Models.AppliedReservations
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

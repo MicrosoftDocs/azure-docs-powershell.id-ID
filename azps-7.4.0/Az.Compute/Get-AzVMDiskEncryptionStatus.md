@@ -10,8 +10,8 @@ ms.openlocfilehash: 76f8695a027bd77a6d7e85b422d23ba28965e1fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142180257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142809892"
 ---
 # Get-AzVMDiskEncryptionStatus
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Extension.AzureDiskEncryption.AzureDiskEncryptionExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

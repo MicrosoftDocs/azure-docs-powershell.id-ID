@@ -10,8 +10,8 @@ ms.openlocfilehash: f6c22da119de2536f2144d8606902d59854ef0e7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142072867"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829836"
 ---
 # Get-AzRemoteDesktopFile
 
@@ -148,6 +148,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

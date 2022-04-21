@@ -10,8 +10,8 @@ ms.openlocfilehash: 69feb861d91ffa7d7d7e5e5c12e6ac3e9610a1a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142219051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142830250"
 ---
 # Set-AzBatchPool
 
@@ -29,7 +29,7 @@ Set-AzBatchPool [-Pool] <PSCloudPool> -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzBatchPool** memperbarui properti kolam dalam layanan Azure Batch.
+Cmdlet **Set-AzBatchPool** memperbarui properti kolam renang di layanan Azure Batch.
 Gunakan cmdlet Get-AzBatchPool untuk mendapatkan objek **PSCloudPool** .
 Ubah properti objek tersebut, lalu gunakan cmdlet saat ini untuk melakukan perubahan Pada layanan Batch.
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: e815aa53615a06acd5d8bed0a96f2e329afe9cd2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142339739"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142815184"
 ---
 # New-AzSqlDatabaseRestorePoint
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseRestorePointModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

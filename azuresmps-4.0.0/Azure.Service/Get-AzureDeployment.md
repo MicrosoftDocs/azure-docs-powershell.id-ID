@@ -7,8 +7,8 @@ ms.openlocfilehash: 9f135c05e16bc523d03894ffe689b5863e641009
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966525"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142788472"
 ---
 # Get-AzureDeployment
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

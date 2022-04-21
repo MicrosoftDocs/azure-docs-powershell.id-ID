@@ -9,8 +9,8 @@ ms.openlocfilehash: 688e1b0c0adccb94c4a2f05cd1475ba643119fed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142346057"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142764694"
 ---
 # Get-AzMigrateReplicationVaultSetting
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVaultSetting
 
-## CATATAN
+## NOTES
 
 ALIAS
 

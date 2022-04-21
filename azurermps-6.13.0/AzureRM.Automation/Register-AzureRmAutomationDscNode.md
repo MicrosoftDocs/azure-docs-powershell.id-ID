@@ -10,8 +10,8 @@ ms.openlocfilehash: 567ac6012465508fbaf03d603a79d2abb04ed6c4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390465"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795903"
 ---
 # Register-AzureRmAutomationDscNode
 
@@ -265,7 +265,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 026d7c5610caa0461d403cc263d08211e6880d3c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067845"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823050"
 ---
 # New-AzLogzSubAccount
 
@@ -19,7 +19,7 @@ Buat sub akun di bawah sumber daya monitor tertentu.
 Operasi pembuatan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzsubaccount) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +54,7 @@ Perintah ini membuat sub akun di bawah sumber daya monitor tertentu.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnterpriseAppId
-Id Aplikasi Perusahaan yang digunakan untuk Masuk tunggal.
+Id Aplikasi Perusahaan yang digunakan untuk Akses menyeluruh.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -MarketplaceSubscriptionStatus
 Bendera yang menentukan Status Langganan Marketplace sumber daya.
-Jika pembayaran tidak dilakukan tepat waktu, sumber daya akan masuk dalam Status ditangguhkan.
+Jika pembayaran tidak dilakukan pada waktunya, sumber daya akan masuk dalam status Ditangguhkan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Support.MarketplaceSubscriptionStatus
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Sub Akun
 
 ```yaml
@@ -220,8 +220,8 @@ Accept wildcard characters: False
 ```
 
 ### -PlanBillingCycle
-siklus tagihan yang berbeda seperti BULANAN/MINGGUAN.
-ini mungkin enum
+siklus penagihan yang berbeda seperti BULANAN/MINGGUAN.
+ini bisa berupa enum
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanDetail
-id rencana sebagaimana diterbitkan oleh Logz
+id paket seperti yang diterbitkan oleh Logz
 
 ```yaml
 Type: System.String
@@ -266,8 +266,8 @@ Accept wildcard characters: False
 ```
 
 ### -PlanUsageType
-tipe penggunaan yang berbeda seperti PAYG/COMMITTED.
-ini mungkin enum
+jenis penggunaan yang berbeda seperti PAYG/COMMITTED.
+ini bisa berupa enum
 
 ```yaml
 Type: System.String
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserInfoPhoneNumber
-Nomor telepon pengguna yang digunakan oleh Logz untuk menghubungi mereka jika diperlukan
+Telepon jumlah pengguna yang digunakan oleh Logz untuk menghubungi mereka jika diperlukan
 
 ```yaml
 Type: System.String
@@ -402,8 +402,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -418,7 +418,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -442,7 +442,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.ILogzMonitorResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,13 +10,13 @@ ms.openlocfilehash: 75cfed38948ee5355be8e456852d9782f0b1077c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175127"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802242"
 ---
 # Remove-AzRedisCache
 
 ## SYNOPSIS
-Menghapus Singgahan Redis.
+Menghapus Redis Cache.
 
 ## SYNTAX
 
@@ -26,11 +26,11 @@ Remove-AzRedisCache [-ResourceGroupName <String>] -Name <String> [-Force] [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRedisCache** menghapus Cache Azure Redis.
+Cmdlet **Remove-AzRedisCache** menghapus Azure Redis Cache.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Singgahan Redis dan mengembalikan hasilnya
+### Contoh 1: Hapus Cache Redis dan kembalikan hasilnya
 ```powershell
 Remove-AzRedisCache -ResourceGroupName "ResourceGroup03" -Name "myCache" -Force -PassThru
 ```
@@ -39,14 +39,14 @@ Remove-AzRedisCache -ResourceGroupName "ResourceGroup03" -Name "myCache" -Force 
 True
 ```
 
-Perintah ini menghapus Singgahan Redis dan menampilkan apakah operasi berhasil.
+Perintah ini menghapus Redis Cache dan menampilkan apakah operasi berhasil.
 
-### Contoh 2: Hapus Singgahan Redis dan jangan tampilkan hasilnya
+### Contoh 2: Hapus Cache Redis dan jangan tampilkan hasilnya
 ```powershell
 Remove-AzRedisCache -ResourceGroupName "ResourceGroup03" -Name "myCache" -Force
 ```
 
-Perintah ini menghapus Singgahan Redis.
+Perintah ini menghapus Redis Cache.
 Karena parameter *PassThru* tidak ditentukan, hasil operasi tidak ditampilkan.
 
 ## PARAMETERS
@@ -66,7 +66,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama Singgahan Redis untuk dihapus.
+### -Name
+Menentukan nama Redis Cache yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi Singgahan Redis untuk dihapus.
+Menentukan nama grup sumber daya yang berisi Redis Cache untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -127,8 +127,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

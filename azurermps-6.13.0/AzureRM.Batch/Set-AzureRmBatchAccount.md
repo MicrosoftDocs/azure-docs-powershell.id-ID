@@ -10,8 +10,8 @@ ms.openlocfilehash: d67c6b32f26b1addc1cc4ae165f572a3286440cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141969016"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795321"
 ---
 # Set-AzureRmBatchAccount
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.BatchAccountContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

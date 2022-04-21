@@ -9,8 +9,8 @@ ms.openlocfilehash: b2db6ef3be919ddd5c87d6c8a6d5214b3e079417
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142399535"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142814950"
 ---
 # Remove-AzSqlSyncMember
 
@@ -204,7 +204,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncMemberModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

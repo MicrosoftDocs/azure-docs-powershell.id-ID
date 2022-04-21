@@ -9,8 +9,8 @@ ms.openlocfilehash: d493f8989b54475c1dcddb45ed54766ea1ec9431
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142478933"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142778392"
 ---
 # Set-AzCommunicationServiceNotificationHub
 
@@ -199,7 +199,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

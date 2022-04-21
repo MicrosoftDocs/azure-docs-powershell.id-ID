@@ -10,8 +10,8 @@ ms.openlocfilehash: 66c0355af202c5900fddc60c81e92f2851ddc1ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141886865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794844"
 ---
 # Get-AzureRmVMImageOffer
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImageOffer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

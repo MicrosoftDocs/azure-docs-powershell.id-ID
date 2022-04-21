@@ -10,8 +10,8 @@ ms.openlocfilehash: ab10ac7b48eac782657af6212e178afbd7b710c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142282558"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794639"
 ---
 # New-AzureRmVMSqlServerAutoPatchingConfig
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.AutoPatchingSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: de3c236f265e03e3e61e8fff86542d2517787744
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142253107"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142816156"
 ---
 # Test-AzServiceBusNameAvailability
 
@@ -159,6 +159,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

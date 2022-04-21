@@ -10,13 +10,13 @@ ms.openlocfilehash: 5b1901ef5d06d24e6561861dca3c8e1d89185d14
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059509"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789399"
 ---
 # New-AzureRmSqlElasticPool
 
 ## SYNOPSIS
-Membuat kumpulan database elastis untuk Database SQL.
+Membuat kumpulan database elastis untuk SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,7 +39,7 @@ New-AzureRmSqlElasticPool [-ElasticPoolName] <String> -Edition <String> [-Storag
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlElasticPool** membuat kumpulan database elastis untuk Database Azure SQL.
+Cmdlet **New-AzureRmSqlElasticPool** membuat kumpulan database elastis untuk Azure SQL Database.
 Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang diatur adalah dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran tertentu dalam [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
 ## EXAMPLES
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Edisi
-Menentukan edisi Database Azure SQL yang digunakan untuk kumpulan elastis.
+Menentukan edisi Azure SQL Database yang digunakan untuk kumpulan elastis.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak
 - Dasar
@@ -399,7 +399,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -413,4 +413,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlElasticPool](./Set-AzureRmSqlElasticPool.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

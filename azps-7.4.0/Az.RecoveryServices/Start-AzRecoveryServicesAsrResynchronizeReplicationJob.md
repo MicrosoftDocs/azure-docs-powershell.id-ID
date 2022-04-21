@@ -9,8 +9,8 @@ ms.openlocfilehash: 2537c3de043efbeca7e64c6677ccfba69a25e4b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421046"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802440"
 ---
 # Start-AzRecoveryServicesAsrResynchronizeReplicationJob
 
@@ -134,6 +134,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3ce18369645705f78722f7505c8dd1e46f2514b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314655"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789354"
 ---
 # New-AzureRmSqlServerDnsAlias
 
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

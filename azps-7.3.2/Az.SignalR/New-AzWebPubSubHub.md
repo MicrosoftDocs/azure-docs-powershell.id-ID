@@ -9,8 +9,8 @@ ms.openlocfilehash: 2a17cc61c2b4691ea7c298312aec1e4d2d0eef07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142401569"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142815832"
 ---
 # New-AzWebPubSubHub
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.Api20211001.IWebPubSubHub
 
-## CATATAN
+## NOTES
 
 ALIAS
 

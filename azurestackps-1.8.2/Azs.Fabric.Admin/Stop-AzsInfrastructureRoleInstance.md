@@ -7,8 +7,8 @@ ms.openlocfilehash: 47e4c38d3ccd98350721d358cb98eec55341ba97
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142310755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142786312"
 ---
 # Stop-AzsInfrastructureRoleInstance
 
@@ -171,6 +171,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

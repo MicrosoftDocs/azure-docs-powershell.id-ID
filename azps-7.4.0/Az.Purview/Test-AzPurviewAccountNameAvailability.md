@@ -9,8 +9,8 @@ ms.openlocfilehash: 0947733be224b262b39a0f7127b8c29679a891bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175307"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802890"
 ---
 # Test-AzPurviewAccountNameAvailability
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.Api20210701.ICheckNameAvailabilityResult
 
-## CATATAN
+## NOTES
 
 ALIAS
 

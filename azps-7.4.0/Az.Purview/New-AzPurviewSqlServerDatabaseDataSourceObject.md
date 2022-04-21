@@ -9,8 +9,8 @@ ms.openlocfilehash: 52ec18724a47c36a579a9006d1d25fbc9113fab6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994626"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802944"
 ---
 # New-AzPurviewSqlServerDatabaseDataSourceObject
 
@@ -30,7 +30,7 @@ Buat objek dalam memori untuk SqlServerDatabaseDataSource.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek sumber data Database SQL Server
+### Contoh 1: Membuat objek sumber data database SQL Server
 ```powershell
 PS C:\> New-AzPurviewSqlServerDatabaseDataSourceObject -Kind 'SqlServerDatabase' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ServerEndpoint '12.13.14.12'
 
@@ -50,7 +50,7 @@ ServerEndpoint           : 12.13.14.12
 SubscriptionId           :
 ```
 
-Membuat objek sumber data Database SQL Server
+Membuat objek sumber data database SQL Server
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.SqlServerDatabaseDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

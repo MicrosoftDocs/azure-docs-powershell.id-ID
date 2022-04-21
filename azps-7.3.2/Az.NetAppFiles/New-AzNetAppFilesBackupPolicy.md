@@ -9,8 +9,8 @@ ms.openlocfilehash: 8bb8cd2bea2ce94fcb0ddd325b9389e51176ee3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141849632"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822204"
 ---
 # New-AzNetAppFilesBackupPolicy
 
@@ -274,6 +274,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: ff5490eb8d9ba3ff1df3be724854e49de8ff539e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142488509"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822690"
 ---
 # Add-AzAutoscaleSetting
 
@@ -270,7 +270,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSAddAutoscaleSettingOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
