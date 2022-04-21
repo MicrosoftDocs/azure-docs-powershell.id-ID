@@ -9,8 +9,8 @@ ms.openlocfilehash: 46f73d2a58fe5f1109de6a15a5cb39e3b568a4b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141820002"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142856116"
 ---
 # Set-AzureRmExpressRoutePort
 
@@ -136,6 +136,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRoutePort
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

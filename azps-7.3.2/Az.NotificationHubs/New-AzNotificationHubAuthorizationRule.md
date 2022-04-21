@@ -10,8 +10,8 @@ ms.openlocfilehash: 3d07cb9d70d903a0e9427380d3f212261af5aef5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142255057"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142819252"
 ---
 # New-AzNotificationHubAuthorizationRule
 
@@ -19,7 +19,7 @@ ms.locfileid: "142255057"
 Membuat aturan otorisasi dan menetapkan aturan ke hub pemberitahuan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubauthorizationrule) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,9 +38,9 @@ New-AzNotificationHubAuthorizationRule [-ResourceGroup] <String> [-Namespace] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNotificationHubAuthorizationRule** membuat hub pemberitahuan aturan otorisasi Tanda Tangan Akses Bersama (SAS).
+Cmdlet **New-AzNotificationHubAuthorizationRule** membuat aturan otorisasi Shared Access Signature (SAS) hub pemberitahuan.
 Aturan otorisasi digunakan untuk mengelola akses ke hub pemberitahuan Anda.
-Hal ini dilakukan dengan pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
+Ini dilakukan dengan pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
 
@@ -52,7 +52,7 @@ PS C:\>New-AzNotificationHubAuthorizationRule -Namespace "ContosoNamespace" -Not
 ```
 
 Perintah ini membuat aturan otorisasi baru dan menetapkannya ke hub pemberitahuan bernama ContosoInternalHub.
-Hub ini terletak di ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Hub ini terletak di namespace Layanan ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 Perhatikan bahwa semua informasi konfigurasi untuk aturan, termasuk nama aturan, akan diambil dari file input C:\Configuration\ExternalAccessRule.json.
 
 ## PARAMETERS
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat aturan otorisasi ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat aturan otorisasi ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ### -NotificationHub
 Menentukan hub pemberitahuan tempat aturan otorisasi akan ditetapkan.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
-Perhatikan bahwa Anda harus menentukan nama hub pemberitahuan yang sudah ada.
+Perhatikan bahwa Anda harus menentukan nama hub pemberitahuan yang ada.
 Cmdlet **New-AzNotificationHubAuthorizationRule** tidak dapat membuat hub pemberitahuan baru.
 
 ```yaml
@@ -151,8 +151,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,13 +192,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NotificationHubs.Models.SharedAccessAuthorizationRuleAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzNotificationHubAuthorizationRule](./Get-AzNotificationHubAuthorizationRule.md)
 
-[Hapus-AzNotificationHubAuthorizationRule](./Remove-AzNotificationHubAuthorizationRule.md)
+[Remove-AzNotificationHubAuthorizationRule](./Remove-AzNotificationHubAuthorizationRule.md)
 
 [Set-AzNotificationHubAuthorizationRule](./Set-AzNotificationHubAuthorizationRule.md)
 

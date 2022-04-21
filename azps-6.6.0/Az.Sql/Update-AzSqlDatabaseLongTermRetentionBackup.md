@@ -9,8 +9,8 @@ ms.openlocfilehash: 9003d9094be8761db6e1e57f83597ac5e91ab15f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141903501"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142832896"
 ---
 # Update-AzSqlDatabaseLongTermRetentionBackup
 
@@ -285,7 +285,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseLongTermRetentionBackupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

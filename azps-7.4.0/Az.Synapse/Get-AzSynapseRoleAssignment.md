@@ -9,8 +9,8 @@ ms.openlocfilehash: 08aa73f69becb9bcaa21d67e4c1c0e24f81320be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164364"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863280"
 ---
 # Get-AzSynapseRoleAssignment
 
@@ -344,6 +344,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSRoleAssignmentDetails
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

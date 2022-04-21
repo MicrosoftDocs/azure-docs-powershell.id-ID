@@ -9,8 +9,8 @@ ms.openlocfilehash: fd833e6a3aad5e49af02dd8b67fd8386a2921159
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141829502"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142862578"
 ---
 # Start-AzWebAppContinuousWebJob
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

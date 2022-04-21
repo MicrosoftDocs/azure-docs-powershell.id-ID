@@ -10,8 +10,8 @@ ms.openlocfilehash: 9cc542ad0d8644fc542206d8f2b6adbab20abccc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871628"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843498"
 ---
 # Add-AzVmssAdditionalUnattendContent
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

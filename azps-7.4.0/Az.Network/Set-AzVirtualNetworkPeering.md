@@ -10,8 +10,8 @@ ms.openlocfilehash: cda14c12b7e7df2310a40a2afb030a9676f8ccf8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424576"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142804078"
 ---
 # Set-AzVirtualNetworkPeering
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 60dca4cc16bee2a6f72501de5e0eaf4a9ba6e8ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841296"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811746"
 ---
 # Get-AzBatchComputeNode
 
@@ -304,7 +304,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSComputeNode
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

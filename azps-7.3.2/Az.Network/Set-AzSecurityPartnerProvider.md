@@ -9,8 +9,8 @@ ms.openlocfilehash: 8d682a073c855aba59789f7d83f56b0057c76d59
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142487051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142819684"
 ---
 # Set-AzSecurityPartnerProvider
 
@@ -128,6 +128,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityPartnerProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

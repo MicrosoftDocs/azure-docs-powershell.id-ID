@@ -9,8 +9,8 @@ ms.openlocfilehash: ad585e5c515da0eb3b36ac39c51aeca59e2482f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173677"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811296"
 ---
 # Set-AzConsumptionBudget
 
@@ -440,7 +440,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
-## CATATAN
+## NOTES
 - Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia untuk pelanggan Perjanjian Enterprise.
 - SDK PowerShell untuk Pemakaian menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 

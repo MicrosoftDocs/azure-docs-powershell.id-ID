@@ -10,8 +10,8 @@ ms.openlocfilehash: c3d7012feae659ee8ea32cceb53b95ee360e5c9c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142370645"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142820224"
 ---
 # Reset-AzVirtualNetworkGateway
 
@@ -19,7 +19,7 @@ ms.locfileid: "142370645"
 Mereset Gateway Virtual Network
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvirtualnetworkgateway) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Reset-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayVip
-Gateway vip untuk mengatur ulang contoh gateway tertentu (misalnya jika ada gateway Active-Active yang diaktifkan fitur.) Secara default, instans utama gateway akan direset jika tidak ada nilai yang lolos.
+Gateway vip untuk mengatur ulang instans gateway tertentu (misalnya jika fitur Active-Active mengaktifkan gateway.) Secara default, instans utama gateway akan diatur ulang jika tidak ada nilai yang diteruskan.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -112,13 +112,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Get-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
+[Dapatkan-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
 
-[New-AzVirtualNetworkGateway](./New-AzVirtualNetworkGateway.md)
+[Baru-GatewayJaringanVirtualAz](./New-AzVirtualNetworkGateway.md)
 
 [Remove-AzVirtualNetworkGateway](./Remove-AzVirtualNetworkGateway.md)
 

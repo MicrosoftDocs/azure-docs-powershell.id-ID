@@ -9,8 +9,8 @@ ms.openlocfilehash: 5c5014dd10fa9f8bc73658604840b2e425bf5432
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142128221"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843156"
 ---
 # Remove-AzVmssVMDataDisk
 
@@ -100,6 +100,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: e0aed0d86d119eedbb51d307e8cc08ef53733557
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142467323"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142819720"
 ---
 # Set-AzVirtualNetworkPeering
 
@@ -19,7 +19,7 @@ ms.locfileid: "142467323"
 Mengonfigurasi peering jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkpeering) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ $myVnet1TomyVnet2.AllowGatewayTransit = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-### Contoh 4: Menggunakan gateway jarak jauh dalam peering jaringan virtual
+### Contoh 4: Menggunakan gateway jarak jauh di peering jaringan virtual
 ```
 # Get the virtual network peering 
 $myVnet1TomyVnet2 = Get-AzVirtualNetworkPeering -VirtualNetworkName "myVnet1" -ResourceGroupName "ResourceGroup001" -Name "myVnet1TomyVnet2"
@@ -81,14 +81,14 @@ $myVnet1TomyVnet2.UseRemoteGateways = $True
 Set-AzVirtualNetworkPeering -VirtualNetworkPeering $myVnet1TomyVnet2
 ```
 
-Dengan mengubah properti ini ke $True, gateway VNet rekan Anda bisa digunakan.
-Namun, rekan VNet harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
-Properti ini tidak bisa digunakan jika gateway telah dikonfigurasi.
+Dengan mengubah properti ini menjadi $True, gateway VNet serekan Anda dapat digunakan.
+Namun, VNet serekan harus memiliki gateway yang dikonfigurasi dan **AllowGatewayTransit** harus memiliki nilai $True.
+Properti ini tidak dapat digunakan jika gateway telah dikonfigurasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

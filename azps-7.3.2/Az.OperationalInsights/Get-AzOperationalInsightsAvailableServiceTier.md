@@ -9,16 +9,16 @@ ms.openlocfilehash: 362e87db229d50a33418ba34a5b28130d748c0c4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142466747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142819198"
 ---
 # Get-AzOperationalInsightsAvailableServiceTier
 
 ## SYNOPSIS
-Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk hasil kerja tertentu.
+Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk worksapce tertentu.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsavailableservicetier) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsavailableservicetier) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzOperationalInsightsAvailableServiceTier [-ResourceGroupName] <String> [-Wo
 ```
 
 ## DESCRIPTION
-Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk hasil kerja tertentu.
+Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk worksapce tertentu.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ CapacityReservationLevel :
 LastSkuUpdate            : Tue, 16 Nov 2021 13:20:32 GMT
 ```
 
-Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk hasil kerja tertentu.
+Perintah ini mendapatkan semua tingkat layanan yang tersedia untuk worksapce tertentu.
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja yang berisi tabel.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -113,6 +113,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSAvailableServiceTier
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

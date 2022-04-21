@@ -8,8 +8,8 @@ ms.openlocfilehash: f3a88aa20c424549f074415615efe7f8190782a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142862249"
 ---
 # Get-AzureStorageBlob
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

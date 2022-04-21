@@ -9,8 +9,8 @@ ms.openlocfilehash: 23623c039056217df59ca29cac32d2dbf6a12043
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141914277"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843948"
 ---
 # Get-AzCloudServiceInstanceView
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudServiceInstanceView
 
-## CATATAN
+## NOTES
 
 ALIAS
 
