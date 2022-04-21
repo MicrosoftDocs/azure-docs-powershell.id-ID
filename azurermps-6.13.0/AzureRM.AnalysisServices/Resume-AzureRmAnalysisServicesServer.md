@@ -9,8 +9,8 @@ ms.openlocfilehash: 28a89c40fcfd470d20d9b4423d40c38b43624edd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283473"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734787"
 ---
 # Resume-AzureRmAnalysisServicesServer
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: Resume-AzureAs
 
 ## RELATED LINKS

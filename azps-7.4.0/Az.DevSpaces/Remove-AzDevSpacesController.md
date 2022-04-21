@@ -9,8 +9,8 @@ ms.openlocfilehash: c49e05b15e26317ad45b721272dad245753ec64f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997979"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748711"
 ---
 # Remove-AzDevSpacesController
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

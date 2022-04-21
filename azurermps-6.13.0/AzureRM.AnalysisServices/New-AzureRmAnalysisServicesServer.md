@@ -9,8 +9,8 @@ ms.openlocfilehash: d8a795cc27a09fe7b23ac2156115d7a52212e3ff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142144386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734886"
 ---
 # New-AzureRmAnalysisServicesServer
 
@@ -272,7 +272,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: New-AzureAs
 
 ## RELATED LINKS

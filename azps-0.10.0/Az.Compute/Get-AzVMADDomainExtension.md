@@ -10,8 +10,8 @@ ms.openlocfilehash: 809246520c4e6b07a1aca406ef3ec17eb9df31f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142236079"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721316"
 ---
 # Get-AzVMADDomainExtension
 
@@ -124,7 +124,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.VirtualMachineADDomainExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

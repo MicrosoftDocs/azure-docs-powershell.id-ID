@@ -10,8 +10,8 @@ ms.openlocfilehash: a0be9621c0b4d7f7583879b1b95eba7496120bed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142302991"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142712746"
 ---
 # New-AzAlertRuleEmail
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.RuleEmailAction
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

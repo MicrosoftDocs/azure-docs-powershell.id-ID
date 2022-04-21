@@ -9,8 +9,8 @@ ms.openlocfilehash: 2642bd55a203182fc415c1ccbfc5dd0e7a5cc9c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423269"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748764"
 ---
 # Update-AzWvdScalingPlan
 
@@ -335,7 +335,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IScalingPlan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 6a79e15ddb9cf0f9e95362f0f102941b25356515
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173199"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748494"
 ---
 # New-AzDnsResolverInboundEndpoint
 
@@ -286,7 +286,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.IInboundEndpoint
 
-## CATATAN
+## NOTES
 
 ALIAS
 

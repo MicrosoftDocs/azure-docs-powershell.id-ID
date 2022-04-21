@@ -10,8 +10,8 @@ ms.openlocfilehash: 3910946fdb401652064b3147a236c5ee6f875f15
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142229527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142713232"
 ---
 # New-AzMediaServiceStorageConfig
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Media.Models.PSStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

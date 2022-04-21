@@ -9,8 +9,8 @@ ms.openlocfilehash: a02c36e0d29081279559489522892923d6a41828
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995471"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742824"
 ---
 # New-AzExpressRoutePortLOA
 
@@ -207,6 +207,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

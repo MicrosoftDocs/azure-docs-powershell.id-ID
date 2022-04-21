@@ -10,8 +10,8 @@ ms.openlocfilehash: 8ffa3574c064eb01a2d40bc9a86ed0186ee1c7b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167424"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742536"
 ---
 # Remove-AzExpressRouteCrossConnectionPeering
 
@@ -158,7 +158,7 @@ Parameter 'ExpressRouteCrossConnection' menerima nilai tipe 'PSExpressRouteCross
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

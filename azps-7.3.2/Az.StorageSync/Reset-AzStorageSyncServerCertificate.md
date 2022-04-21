@@ -9,8 +9,8 @@ ms.openlocfilehash: dbced77a46fa783390c00a65805b95722a5b5077
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142250263"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142754830"
 ---
 # Reset-AzStorageSyncServerCertificate
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

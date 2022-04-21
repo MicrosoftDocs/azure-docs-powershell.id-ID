@@ -9,8 +9,8 @@ ms.openlocfilehash: 8510c05ee68dacdf6881f4f5d5f3078a3b83de27
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142250443"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142754920"
 ---
 # Update-AzRmStorageContainer
 
@@ -266,6 +266,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

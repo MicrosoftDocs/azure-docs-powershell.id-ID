@@ -9,8 +9,8 @@ ms.openlocfilehash: 709fa45a8b7bfdb7a3ccc3475146ff1da12a212c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142397790"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142755082"
 ---
 # Set-AzStorageBlobTag
 
@@ -291,6 +291,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
