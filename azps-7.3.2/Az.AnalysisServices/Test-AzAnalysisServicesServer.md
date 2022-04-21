@@ -9,8 +9,8 @@ ms.openlocfilehash: 6c385df68ba15230047069482827019810dc2a28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142115837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142768294"
 ---
 # Test-AzAnalysisServicesServer
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Alias: Test-AzAs
 
 ## RELATED LINKS

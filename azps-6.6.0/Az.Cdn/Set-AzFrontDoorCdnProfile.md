@@ -9,8 +9,8 @@ ms.openlocfilehash: 59e38c64e94963cbe375c29d6fa1b61302b2d5a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871988"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142718020"
 ---
 # Set-AzFrontDoorCdnProfile
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

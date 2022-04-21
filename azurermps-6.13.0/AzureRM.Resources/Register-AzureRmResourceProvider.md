@@ -10,8 +10,8 @@ ms.openlocfilehash: 691378cac3ac721084315a1708bf8d4d0a24dc92
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383496"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724824"
 ---
 # Register-AzureRmResourceProvider
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

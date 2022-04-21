@@ -9,8 +9,8 @@ ms.openlocfilehash: e58a554337bc79d6d0729ca18cbbe51a8a4e1e12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141786866"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142699192"
 ---
 # Get-AzVHubRouteTable
 
@@ -258,7 +258,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVHubRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

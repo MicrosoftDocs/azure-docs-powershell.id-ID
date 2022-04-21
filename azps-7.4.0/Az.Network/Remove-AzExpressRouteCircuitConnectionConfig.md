@@ -10,8 +10,8 @@ ms.openlocfilehash: 4f23df773c7b9226d0a5dc282624129e7da32c38
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834299"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742572"
 ---
 # Remove-AzExpressRouteCircuitConnectionConfig
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

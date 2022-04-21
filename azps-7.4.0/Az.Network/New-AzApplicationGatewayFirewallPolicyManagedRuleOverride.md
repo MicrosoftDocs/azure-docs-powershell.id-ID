@@ -9,8 +9,8 @@ ms.openlocfilehash: c536a021c341d4b7920393f09cb6c44aa11645b2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167669"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142743202"
 ---
 # New-AzApplicationGatewayFirewallPolicyManagedRuleOverride
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyManagedRuleOverride
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

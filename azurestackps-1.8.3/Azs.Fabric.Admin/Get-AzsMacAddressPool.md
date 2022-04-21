@@ -7,8 +7,8 @@ ms.openlocfilehash: 9e22024b1b246a60104db0832860ed0aff699ff5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142333187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142722484"
 ---
 # Get-AzsMacAddressPool
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Fabric.Admin.Models.MacAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

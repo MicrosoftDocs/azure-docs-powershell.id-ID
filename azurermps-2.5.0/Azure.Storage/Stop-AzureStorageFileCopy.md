@@ -8,8 +8,8 @@ ms.openlocfilehash: c0db10c24f019a9f91efd4ad9ec6805ffc3b0208
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141930290"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142736418"
 ---
 # Stop-AzureStorageFileCopy
 
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.WindowsAzure. Storage. File.CloudFile
+### Microsoft.WindowsAzure.Storage.File.CloudFile
 Parameter: File (ByValue)
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -252,7 +252,7 @@ Parameter: File (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

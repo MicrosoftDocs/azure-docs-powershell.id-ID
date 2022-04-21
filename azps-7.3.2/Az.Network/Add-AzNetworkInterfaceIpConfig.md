@@ -10,8 +10,8 @@ ms.openlocfilehash: 8bd831ed3f6cf6db15fb7e427fa2d602dddc3782
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787226"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142763722"
 ---
 # Add-AzNetworkInterfaceIpConfig
 
@@ -362,7 +362,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

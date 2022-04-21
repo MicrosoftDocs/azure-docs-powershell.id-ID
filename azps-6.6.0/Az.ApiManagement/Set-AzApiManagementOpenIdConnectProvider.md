@@ -10,13 +10,13 @@ ms.openlocfilehash: e2e8b9f92642d7f8541b2c527cb348c0c6c3eaf9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142718830"
 ---
 # Set-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
-Mengubah penyedia OpenID Connect.
+Mengubah penyedia Koneksi OpenID.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementopenidconnectprovider) untuk informasi terbaru.
@@ -31,7 +31,7 @@ Set-AzApiManagementOpenIdConnectProvider -Context <PsApiManagementContext> -Open
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementOpenIdConnectProvider** memodifikasi penyedia OpenID Connect di Azure API Management.
+Cmdlet **Set-AzApiManagementOpenIdConnectProvider** mengubah penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ Perintah menentukan rahasia klien untuk penyedia.
 
 ### Contoh 2
 
-Mengubah penyedia OpenID Connect. (autogenerasi)
+Mengubah penyedia Koneksi OpenID. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOpenIdConnectProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

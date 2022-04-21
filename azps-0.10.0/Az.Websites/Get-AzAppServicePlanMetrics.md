@@ -10,8 +10,8 @@ ms.openlocfilehash: c08ae63999582fd220005dde84316a2f4421d7b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142308877"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142719550"
 ---
 # Get-AzAppServicePlanMetrics
 
@@ -35,7 +35,7 @@ Get-AzAppServicePlanMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [[-End
 ```
 
 ## DESCRIPTION
-**Get-AzAppServicePlanMetrics** mendapatkan metrik Rencana App Service.
+**Get-AzAppServicePlanMetrics** mendapatkan metrik Paket Layanan Aplikasi.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ Get-AzAppServicePlanMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [[-End
 PS C:\>Get-AzAppServicePlanMetrics -ResourceGroupName "Default-Web-WestUS" -Name "ContosoAppServPlan" -StartTime 2016-11-30T22:00:00Z -EndTime 2016-11-30T22:30:00Z -Granularity PT1M -Metrics ["CPU Percentage"]
 ```
 
-Perintah ini mendapatkan persentase CPU dari App Service Paket per menit(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
+Perintah ini mendapatkan persentase CPU dari Paket Layanan Aplikasi per menit(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Objek Rencana App Service
+Objek Paket Layanan Aplikasi
 
 ```yaml
 Type: AppServicePlan
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Rencana App Service
+Nama Paket Layanan Aplikasi
 
 ```yaml
 Type: String
@@ -194,7 +194,7 @@ Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipe
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

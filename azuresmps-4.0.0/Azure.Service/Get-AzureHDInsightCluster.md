@@ -7,8 +7,8 @@ ms.openlocfilehash: 6d9f99e88b8f8b7651e967c3cda48c0b087b41ae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095165"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724068"
 ---
 # Get-AzureHDInsightCluster
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

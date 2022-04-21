@@ -9,8 +9,8 @@ ms.openlocfilehash: ed30e5d18521e2529a24c4ec64c09835e1b849d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748008"
 ---
 # New-AzEventHubGeoDRConfiguration
 
@@ -242,6 +242,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

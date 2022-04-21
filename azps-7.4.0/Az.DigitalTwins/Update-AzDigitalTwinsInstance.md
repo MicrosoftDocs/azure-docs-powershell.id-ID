@@ -9,8 +9,8 @@ ms.openlocfilehash: 8c617d566f25daab83b7c18f170f636fdf6cc8a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837760"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748584"
 ---
 # Update-AzDigitalTwinsInstance
 
@@ -229,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsDescription
 
-## CATATAN
+## NOTES
 
 ALIAS
 

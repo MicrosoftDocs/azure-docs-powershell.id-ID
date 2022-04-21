@@ -8,8 +8,8 @@ ms.openlocfilehash: cf70191c47f3778268b0087ea542a6812155ebbb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336237"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142736200"
 ---
 # Remove-AzureRmVMAEMExtension
 
@@ -130,7 +130,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

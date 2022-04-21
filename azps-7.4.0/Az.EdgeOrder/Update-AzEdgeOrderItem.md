@@ -9,8 +9,8 @@ ms.openlocfilehash: 1db6df607f231c9ff823aa9f8842fbb6bc075947
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837504"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748314"
 ---
 # Update-AzEdgeOrderItem
 
@@ -297,7 +297,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IOrderItemResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -309,9 +309,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 FORWARDADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
-  - `Phone <String>`: Nomor telepon orang yang dihubungi.
+  - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
-  - `[PhoneExtension <String>]`: Nomor ekstensi telepon orang yang dihubungi.
+  - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
 FORWARDADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.

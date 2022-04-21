@@ -10,8 +10,8 @@ ms.openlocfilehash: 5640bba06bde12882da995bae8e2703481fb3517
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142743346"
 ---
 # Get-AzVpnClientPackage
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

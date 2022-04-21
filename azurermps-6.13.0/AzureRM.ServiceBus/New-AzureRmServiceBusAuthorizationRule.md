@@ -9,8 +9,8 @@ ms.openlocfilehash: ca9fc6d86617d5d4bc8af8a5b02b059178073e5d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060429"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724270"
 ---
 # New-AzureRmServiceBusAuthorizationRule
 
@@ -219,6 +219,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSSharedAccessAuthorizationRuleAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

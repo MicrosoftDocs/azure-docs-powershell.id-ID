@@ -10,8 +10,8 @@ ms.openlocfilehash: 8ffb4410d37f18aac7a101c65f80c6e84ba2cde8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841459"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142751248"
 ---
 # Import-AzAutomationDscConfiguration
 
@@ -27,7 +27,7 @@ Import-AzAutomationDscConfiguration -SourcePath <String> [-Tags <IDictionary>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzAutomationDscConfiguration** mengimpor konfigurasi APS Desired State Configuration (DSC) ke Azure Automation.
+Cmdlet **Import-AzAutomationDscConfiguration** mengimpor konfigurasi APS Desired State Configuration (DSC) ke dalam Azure Automation.
 Tentukan jalur skrip APS yang berisi konfigurasi DSC tunggal.
 
 ## EXAMPLES
@@ -231,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.DscConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

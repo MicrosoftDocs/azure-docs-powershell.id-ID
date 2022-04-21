@@ -9,8 +9,8 @@ ms.openlocfilehash: 2531b18e39ce687651c730f2a96d6b993d5b1bb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176847"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142743796"
 ---
 # Get-AzNetworkServiceTag
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkServiceTag
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

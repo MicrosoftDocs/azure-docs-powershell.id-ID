@@ -9,8 +9,8 @@ ms.openlocfilehash: aa7d5115578ac3ad18a7685e788ac9657097a8f7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174494"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142739044"
 ---
 # Update-AzServiceFabricReliability
 
@@ -187,6 +187,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 0d8a7de96169bc9a3ed2343dc31533d1b8b87e13
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142206829"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142755586"
 ---
 # Get-AzStorageBlobTag
 
@@ -276,6 +276,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 47dcfa27e1708d0375d2925f89a69c519092571b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428557"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142751266"
 ---
 # Get-AzAutomationRegistrationInfo
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.AgentRegistration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

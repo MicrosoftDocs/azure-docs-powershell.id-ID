@@ -9,8 +9,8 @@ ms.openlocfilehash: 71311a733ee39f87c542d18a2c52d8905bd09365
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997638"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747952"
 ---
 # New-AzFrontDoorWafManagedRuleExclusionObject
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSManagedRuleExclusion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
