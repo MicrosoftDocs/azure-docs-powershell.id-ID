@@ -9,8 +9,8 @@ ms.openlocfilehash: 5322573d32f411dc3ff6674e342db6ef5f1d9e81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142682488"
 ---
 # Update-AzKustoDataConnection
 
@@ -554,7 +554,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDataConnection
 
-## CATATAN
+## NOTES
 
 ALIAS
 

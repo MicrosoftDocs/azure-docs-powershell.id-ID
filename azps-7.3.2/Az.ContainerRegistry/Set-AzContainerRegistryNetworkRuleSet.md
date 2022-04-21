@@ -9,8 +9,8 @@ ms.openlocfilehash: c4e4cf368f82bdc6ea1ba9de5ae1ef70ecd1f8f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142473461"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142702774"
 ---
 # Set-AzContainerRegistryNetworkRuleSet
 
@@ -138,6 +138,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.Models.PSNetworkRuleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

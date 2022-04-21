@@ -9,8 +9,8 @@ ms.openlocfilehash: 28d3a10a26328745387a5e0be3b2df82abb8534e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989298"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142671058"
 ---
 # New-AzStorageBlobQueryConfig
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.PSBlobQueryTextConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 317d25a4c278bc3c5a19d1b9f481cf8960590d0b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420789"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673416"
 ---
 # Remove-AzPrivateLinkAssociation
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

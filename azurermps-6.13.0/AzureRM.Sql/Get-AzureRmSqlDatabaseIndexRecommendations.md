@@ -10,8 +10,8 @@ ms.openlocfilehash: 9180b89e54f84d2b457de79c400b7d6aa8259d28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774864"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142658557"
 ---
 # Get-AzureRmSqlDatabaseIndexRecommendations
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Model.IndexRecommendation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

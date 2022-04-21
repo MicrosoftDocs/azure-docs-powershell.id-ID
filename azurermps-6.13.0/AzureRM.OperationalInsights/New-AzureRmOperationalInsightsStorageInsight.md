@@ -10,8 +10,8 @@ ms.openlocfilehash: 1bea5ce9eda22996eb65b6e5d26fb3af19cd1c88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136876"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142660031"
 ---
 # New-AzureRmOperationalInsightsStorageInsight
 
@@ -274,7 +274,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSStorageInsight
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

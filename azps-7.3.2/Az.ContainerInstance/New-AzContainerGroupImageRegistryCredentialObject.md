@@ -9,8 +9,8 @@ ms.openlocfilehash: c3362fe6956ae2e553269a1a46fb3d81e800b98a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142114343"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142703026"
 ---
 # New-AzContainerGroupImageRegistryCredentialObject
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.ImageRegistryCredential
 
-## CATATAN
+## NOTES
 
 ALIAS
 

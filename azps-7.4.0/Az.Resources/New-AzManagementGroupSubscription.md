@@ -9,8 +9,8 @@ ms.openlocfilehash: d5cc6a93621cb19068ca533d15f440154889d815
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174944"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142673758"
 ---
 # New-AzManagementGroupSubscription
 
@@ -138,6 +138,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1bf30f5cc75266958c455cce921ca90fde42cbb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142035999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142702972"
 ---
 # New-AzContainerInstanceInitDefinitionObject
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.InitContainerDefinition
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a6749f322d51acab1e3af4b819eb7d073638a00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286719"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142689742"
 ---
 # New-AzVMwarePrivateCloudNsxtPassword
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

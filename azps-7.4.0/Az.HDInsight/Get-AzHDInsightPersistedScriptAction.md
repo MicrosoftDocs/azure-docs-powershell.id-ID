@@ -10,8 +10,8 @@ ms.openlocfilehash: c082402c3fb4f9decf17f87f196989f46c8523bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836992"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142683532"
 ---
 # Get-AzHDInsightPersistedScriptAction
 
@@ -110,7 +110,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.Management.AzureHDInsightRuntimeScriptAction
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

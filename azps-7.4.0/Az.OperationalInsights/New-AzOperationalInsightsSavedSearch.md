@@ -10,8 +10,8 @@ ms.openlocfilehash: 2dc2ceeb8e9be427e2c4bac8525aa2a6f39fbaa2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424326"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142675874"
 ---
 # New-AzOperationalInsightsSavedSearch
 
@@ -267,7 +267,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSSavedSearchValue
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

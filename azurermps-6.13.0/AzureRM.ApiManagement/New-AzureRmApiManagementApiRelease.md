@@ -9,8 +9,8 @@ ms.openlocfilehash: 366a49a0360d3f089ae89c04d9611d864daa1688
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888233"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142666055"
 ---
 # New-AzureRmApiManagementApiRelease
 
@@ -192,7 +192,7 @@ Parameter: Konteks (ByValue)
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiRelease
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

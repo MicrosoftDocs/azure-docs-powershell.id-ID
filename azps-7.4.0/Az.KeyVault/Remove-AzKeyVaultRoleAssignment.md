@@ -9,8 +9,8 @@ ms.openlocfilehash: 0f6c727552ab8a124968b1b865e28ccadb30ec80
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836419"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142682740"
 ---
 # Remove-AzKeyVaultRoleAssignment
 
@@ -307,6 +307,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultRoleAssignment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

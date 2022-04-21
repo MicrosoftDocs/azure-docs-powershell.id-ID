@@ -9,8 +9,8 @@ ms.openlocfilehash: a757b2cd93b551c63c7fe72efc8b4abe9e27e037
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001014"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142671076"
 ---
 # New-AzStorageBlobInventoryPolicyRule
 
@@ -272,6 +272,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSBlobInventoryPolicyRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

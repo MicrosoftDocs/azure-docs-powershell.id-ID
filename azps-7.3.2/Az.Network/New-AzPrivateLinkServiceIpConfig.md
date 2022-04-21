@@ -9,8 +9,8 @@ ms.openlocfilehash: 605dfdf7915166c7386ca119bc98eb0189dcf776
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142212931"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142698274"
 ---
 # New-AzPrivateLinkServiceIpConfig
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPrivateLinkServiceIpConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

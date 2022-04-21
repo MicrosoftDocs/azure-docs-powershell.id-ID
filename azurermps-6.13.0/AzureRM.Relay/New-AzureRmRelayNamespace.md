@@ -9,8 +9,8 @@ ms.openlocfilehash: a809d563c4fe633669e9b1cf9d3bbb39770bfd85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141817982"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659509"
 ---
 # New-AzureRmRelayNamespace
 
@@ -172,6 +172,6 @@ System.Collections.Hashtable
 ### Microsoft.Azure.Commands.Relay.Models.PSRelayNamespaceAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

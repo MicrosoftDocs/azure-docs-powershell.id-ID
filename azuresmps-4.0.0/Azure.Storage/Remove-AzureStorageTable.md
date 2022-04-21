@@ -7,8 +7,8 @@ ms.openlocfilehash: 56ec82e6c08dfedef6d8b44ccd12675c500b98bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242688"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653610"
 ---
 # Remove-AzureStorageTable
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

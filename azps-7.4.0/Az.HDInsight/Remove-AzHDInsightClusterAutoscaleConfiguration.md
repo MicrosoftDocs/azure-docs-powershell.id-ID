@@ -10,8 +10,8 @@ ms.openlocfilehash: c5e4f7c9578272ce3d3956ef663c07867f273288
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002174"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142683424"
 ---
 # Remove-AzHDInsightClusterAutoscaleConfiguration
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 2a135c4f80861f5c6f04ddb27113a8572900b8ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166894"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142675306"
 ---
 # Remove-AzPostgreSqlVirtualNetworkRule
 
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 107709fa7431e8c37f156f1304f560e42c08ed60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242379"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142653292"
 ---
 # Invoke-AzsAzureBridgeProductDownload
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
