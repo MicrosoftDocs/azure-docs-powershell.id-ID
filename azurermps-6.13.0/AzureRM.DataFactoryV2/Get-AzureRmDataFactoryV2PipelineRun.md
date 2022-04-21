@@ -9,8 +9,8 @@ ms.openlocfilehash: ac5735d66a7b44c7183a9af3a32c01445f2b3486
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281594"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733157"
 ---
 # Get-AzureRmDataFactoryV2PipelineRun
 
@@ -207,7 +207,7 @@ Parameter: DataFactory (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

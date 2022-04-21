@@ -9,8 +9,8 @@ ms.openlocfilehash: f97797a400dc18770b93a3b008d363ddfe647089
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142746370"
 ---
 # Get-AzMlCommitmentAssociation
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.CommitmentPlan
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7a757ca4b310176a71a7b2fe7e5c301137998ff9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142204"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142732942"
 ---
 # Get-AzureRmDataLakeStoreItemContent
 
@@ -268,6 +268,6 @@ Representasi byte stream dari konten file yang diambil.
 ### System.String
 Representasi string (dalam pengodean yang ditentukan) dari konten file yang diambil.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

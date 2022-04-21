@@ -10,8 +10,8 @@ ms.openlocfilehash: cd3adf30a193c72cc72e32293639ea9f25855922
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915573"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142719208"
 ---
 # Get-AzApiManagementSubscription
 
@@ -285,7 +285,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

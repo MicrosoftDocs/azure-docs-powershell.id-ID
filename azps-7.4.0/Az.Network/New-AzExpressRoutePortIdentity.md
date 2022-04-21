@@ -9,8 +9,8 @@ ms.openlocfilehash: 4f1b6b72575ac6ecc99ee46a8a1f96db5479894a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167609"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742860"
 ---
 # New-AzExpressRoutePortIdentity
 
@@ -110,7 +110,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSManagedServiceIdentity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Get-AzExpressRoutePortIdentity](./Get-AzExpressRoutePortIdentity.md)

@@ -9,8 +9,8 @@ ms.openlocfilehash: 844808f541c5ac04d7c27a140da1aa1d39fe439d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142058051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142720936"
 ---
 # Get-AzVmssDiskEncryption
 
@@ -110,7 +110,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVmssDiskEncryptionStatusContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

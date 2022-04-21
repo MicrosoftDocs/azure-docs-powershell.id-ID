@@ -9,8 +9,8 @@ ms.openlocfilehash: 9100ddc710e19c88b4a575da33a5e84b54ab1a05
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431447"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142678510"
 ---
 # New-AzApplicationGatewayRewriteRuleUrlConfiguration
 
@@ -107,7 +107,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayUrlConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

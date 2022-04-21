@@ -9,8 +9,8 @@ ms.openlocfilehash: 48bcbd2482f95d3bd34244b4fe75d6aa96792c12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177424"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142745649"
 ---
 # Remove-AzSpatialAnchorsAccount
 
@@ -188,6 +188,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

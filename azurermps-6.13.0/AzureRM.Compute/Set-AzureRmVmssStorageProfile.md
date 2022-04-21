@@ -10,8 +10,8 @@ ms.openlocfilehash: dc2f8633b303d15f3fe53bfc0be7eda3420e611f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141886091"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733519"
 ---
 # Set-AzureRmVmssStorageProfile
 
@@ -371,7 +371,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

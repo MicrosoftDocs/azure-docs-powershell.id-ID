@@ -10,8 +10,8 @@ ms.openlocfilehash: 76705a699b814bf52d7c874ec86e067735764936
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822244"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731432"
 ---
 # Get-AzureRmMediaService
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Media.Models.PSMediaService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

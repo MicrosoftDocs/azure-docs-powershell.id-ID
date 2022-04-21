@@ -9,8 +9,8 @@ ms.openlocfilehash: 31901b703dd8908b588fde3067da9fcd62bc62f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141932073"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142753516"
 ---
 # Remove-AzVMwareCloudLink
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

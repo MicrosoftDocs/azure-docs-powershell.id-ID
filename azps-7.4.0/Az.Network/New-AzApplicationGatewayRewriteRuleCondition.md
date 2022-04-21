@@ -9,8 +9,8 @@ ms.openlocfilehash: 6d08e7b1337868f3d3e241af2d1665e03a68c06a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991662"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142678546"
 ---
 # New-AzApplicationGatewayRewriteRuleCondition
 
@@ -136,7 +136,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleCondition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Add-AzApplicationGatewayRewriteRuleSet](./Add-AzApplicationGatewayRewriteRuleSet.md)

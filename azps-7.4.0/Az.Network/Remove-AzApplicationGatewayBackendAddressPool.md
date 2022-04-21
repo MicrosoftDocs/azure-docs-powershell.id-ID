@@ -10,8 +10,8 @@ ms.openlocfilehash: 1f6aefde669aaad82f8a6a876d09286743c6266e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834422"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742626"
 ---
 # Remove-AzApplicationGatewayBackendAddressPool
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

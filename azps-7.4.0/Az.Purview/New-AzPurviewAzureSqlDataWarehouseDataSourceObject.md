@@ -9,8 +9,8 @@ ms.openlocfilehash: fb8d4bfe25ec476b52f1f9c4ca87888321a7a702
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421219"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142740844"
 ---
 # New-AzPurviewAzureSqlDataWarehouseDataSourceObject
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureSqlDataWarehouseDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

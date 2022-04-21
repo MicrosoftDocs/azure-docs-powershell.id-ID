@@ -9,8 +9,8 @@ ms.openlocfilehash: fc759064fc6c07835054fc193d781e8c39f0f38c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142275613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142719280"
 ---
 # Restart-AzAnalysisServicesInstance
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Alias: Restart-AzAsInstance
 
 ## RELATED LINKS

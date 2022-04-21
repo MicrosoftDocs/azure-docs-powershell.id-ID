@@ -9,8 +9,8 @@ ms.openlocfilehash: 30a717d24145364f2850a381382e8d7d35303172
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142137185"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142726989"
 ---
 # Set-AzureRmApplicationGatewayProbeConfig
 
@@ -248,7 +248,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

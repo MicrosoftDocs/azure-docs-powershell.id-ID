@@ -9,8 +9,8 @@ ms.openlocfilehash: 1317bc0635630efad29ef9214af5c041d9bf7f2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432034"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142745596"
 ---
 # Get-AzActivityLog
 
@@ -386,6 +386,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSEventData
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

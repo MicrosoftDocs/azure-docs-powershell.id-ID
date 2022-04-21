@@ -9,8 +9,8 @@ ms.openlocfilehash: 481d1e26ad769101f06acda5573175bd06331fac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822372"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731629"
 ---
 # Get-AzureRmMlCommitmentPlanUsageHistory
 
@@ -94,7 +94,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.PlanUsageHistory
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

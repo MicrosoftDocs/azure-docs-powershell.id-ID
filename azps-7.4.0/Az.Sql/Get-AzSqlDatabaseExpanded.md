@@ -10,8 +10,8 @@ ms.openlocfilehash: da60ea53e39e21759a53674f9236d61fefbf2045
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174314"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142738684"
 ---
 # Get-AzSqlDatabaseExpanded
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModelExpanded
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

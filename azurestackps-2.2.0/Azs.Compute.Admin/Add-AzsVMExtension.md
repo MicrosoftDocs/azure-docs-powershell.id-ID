@@ -7,8 +7,8 @@ ms.openlocfilehash: c98cc728a5c0164fb60162bf7ae898de51b12f5f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141876037"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721998"
 ---
 # Add-AzsVMExtension
 
@@ -347,7 +347,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20151201Preview.IVMExtension
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 9db41620491dd8312b043cbad332ac7b9b2b36f9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363841"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142753282"
 ---
 # Get-AzWebAppSSLBinding
 
@@ -167,7 +167,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.HostNameSslState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
