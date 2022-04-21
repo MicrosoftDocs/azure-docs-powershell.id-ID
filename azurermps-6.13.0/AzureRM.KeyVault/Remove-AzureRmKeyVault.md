@@ -10,8 +10,8 @@ ms.openlocfilehash: c91bc951ef06f2e591893f0959120cac3700b070
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823019"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731932"
 ---
 # Remove-AzureRmKeyVault
 
@@ -295,7 +295,7 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

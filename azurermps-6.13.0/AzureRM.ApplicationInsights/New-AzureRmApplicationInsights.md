@@ -9,8 +9,8 @@ ms.openlocfilehash: 48922d3e0cbf8cf322d25657c76ee01e0ee238b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142143387"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142665338"
 ---
 # New-AzureRmApplicationInsights
 
@@ -191,6 +191,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

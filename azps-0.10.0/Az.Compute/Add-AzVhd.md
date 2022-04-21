@@ -10,8 +10,8 @@ ms.openlocfilehash: 28d38fd88bada5b1c73557ea0d85bacf8ab2b6c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141875390"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721386"
 ---
 # Add-AzVhd
 
@@ -201,7 +201,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.VhdUploadContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

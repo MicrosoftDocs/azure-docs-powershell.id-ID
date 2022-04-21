@@ -9,8 +9,8 @@ ms.openlocfilehash: c0175c63a9e7a7d5df448d644783ac4b7a003e27
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063356"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731543"
 ---
 # New-AzureRmUserAssignedIdentity
 
@@ -218,6 +218,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

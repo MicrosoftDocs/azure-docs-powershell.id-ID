@@ -9,8 +9,8 @@ ms.openlocfilehash: c1ba245f83db386e39f9fecf22f95d3681452d7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733385"
 ---
 # Remove-AzureRmContainerRegistryWebhook
 
@@ -203,7 +203,7 @@ Parameter: Webhook (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

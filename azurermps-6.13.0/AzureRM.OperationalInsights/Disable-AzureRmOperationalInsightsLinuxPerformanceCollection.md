@@ -10,8 +10,8 @@ ms.openlocfilehash: e6a77e8e89f710e1f8f827a27b1e1709ca8e3f1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142726485"
 ---
 # Disable-AzureRmOperationalInsightsLinuxPerformanceCollection
 
@@ -146,7 +146,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: df2d5dcd32ebc4ded27d4a0d1d44c9c455198e6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142288195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142693396"
 ---
 # New-AzSqlServerFirewallRule
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.FirewallRule.Model.AzureSqlServerFirewallRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

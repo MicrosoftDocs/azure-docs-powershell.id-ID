@@ -9,8 +9,8 @@ ms.openlocfilehash: e115c5cd0d93cc46fb38dcd68191eec698f3c378
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142689796"
 ---
 # New-AzVMwarePrivateCloud
 
@@ -314,7 +314,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.IPrivateCloud
 
-## CATATAN
+## NOTES
 
 ALIAS
 

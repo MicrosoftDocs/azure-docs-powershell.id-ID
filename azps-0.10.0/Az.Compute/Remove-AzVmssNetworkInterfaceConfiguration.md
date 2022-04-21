@@ -10,8 +10,8 @@ ms.openlocfilehash: f99f5742e9719ca9761313cd40d2c996d4e23be9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142481489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142720775"
 ---
 # Remove-AzVmssNetworkInterfaceConfiguration
 
@@ -151,7 +151,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,13 +7,13 @@ ms.openlocfilehash: edcc9bea35e1675b42a04c2b4e804c48ba052742
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141769264"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142722250"
 ---
 # Get-AzsAzureBridgeProduct
 
 ## SYNOPSIS
-Mengembalikan daftar produk yang tersedia untuk diunduh dari Marketplace Azure.
+Mengembalikan daftar produk yang tersedia untuk diunduh dari Azure Marketplace.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzsAzureBridgeProduct -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar produk yang tersedia untuk diunduh dari Marketplace Azure.
+Mengembalikan daftar produk yang tersedia untuk diunduh dari Azure Marketplace.
 
 ## EXAMPLES
 
@@ -44,14 +44,14 @@ Mengembalikan daftar produk yang tersedia untuk diunduh dari Marketplace Azure.
 Get-AzsAzureBridgeProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
-Dapatkan daftar Produk yang tersedia untuk diunduh dari Marketplace Azure.
+Dapatkan daftar Produk yang tersedia untuk diunduh dari Azure Marketplace.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
 Get-AzsAzureBridgeProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG' -Name 'microsoft.docker-arm.1.1.0'
 ```
 
-Dapatkan info produk yang tersedia untuk diunduh dari Marketplace Azure menurut Nama.
+Dapatkan info produk yang tersedia untuk diunduh dari Azure Marketplace menurut Nama.
 
 ## PARAMETERS
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.AzureBridge.Admin.Models.ProductResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

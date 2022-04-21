@@ -9,8 +9,8 @@ ms.openlocfilehash: 8a563f6cbb7faeb124fb0b93ed468a368c2556eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281596"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733124"
 ---
 # Get-AzureRmDataLakeAnalyticsComputePolicy
 
@@ -119,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSDataLakeAnalyticsComputePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: e550341d0bd5a5d2f4e26e4ac736fab9831b67c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823367"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142732211"
 ---
 # New-AzureRmAutoscaleNotification
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

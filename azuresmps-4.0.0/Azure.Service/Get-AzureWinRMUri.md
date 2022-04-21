@@ -7,8 +7,8 @@ ms.openlocfilehash: bd661bdcc3fcfbf485e12f4cf588f7db20dc7e41
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278344"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656190"
 ---
 # Get-AzureWinRMUri
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

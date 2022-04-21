@@ -9,8 +9,8 @@ ms.openlocfilehash: 3c23ed08804875cc267ddd553a17d13195c165ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996054"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142745272"
 ---
 # Remove-AzMonitorLogAnalyticsSolution
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

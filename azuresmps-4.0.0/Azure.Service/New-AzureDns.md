@@ -7,8 +7,8 @@ ms.openlocfilehash: c596ba93034ecbc50da4c9f38c9aaa16f3cf45bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245354"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656010"
 ---
 # New-AzureDns
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 4c7e59b847ec1ae1d95c5a884c8979d12d193084
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142236125"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142721345"
 ---
 # Add-AzVMDataDisk
 
@@ -324,7 +324,7 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 358629e53fc81fba1ba6f179252aa8d3761dab77
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142226503"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142709146"
 ---
 # New-AzOperationalInsightsWorkspace
 
@@ -263,7 +263,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
 
-## CATATAN
+## NOTES
 
 Model harga baru telah dirilis. Jika Anda adalah CSP yang berarti bahwa Anda harus menggunakan "mandiri" untuk sku. Di balik layar, sku akan diubah menjadi pergb2018. Untuk informasi selengkapnya, silakan lihat yang berikut ini: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs#new-pricing-model
 

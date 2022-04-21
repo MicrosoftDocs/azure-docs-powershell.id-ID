@@ -10,8 +10,8 @@ ms.openlocfilehash: f29c4f5587b79fdc2c6eb03907ed5c1327406e8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845648"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142665319"
 ---
 # Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.NodeConfigurationDeploymentSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d6253356e8f7af9519c083062325250af91fc1ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142478285"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142716886"
 ---
 # Connect-AzConnectedMachine
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ALIAS
 

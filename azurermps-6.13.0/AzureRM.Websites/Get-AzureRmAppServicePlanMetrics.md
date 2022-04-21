@@ -10,8 +10,8 @@ ms.openlocfilehash: a8bb330315cfdd43e30ab790afcdeba0b09cef08
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246640"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657342"
 ---
 # Get-AzureRmAppServicePlanMetrics
 
@@ -197,6 +197,6 @@ Parameter: AppServicePlan (ByValue)
 
 ### Microsoft.Azure.Management.WebSites.Models.ResourceMetric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

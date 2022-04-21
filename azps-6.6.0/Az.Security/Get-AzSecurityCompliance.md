@@ -9,8 +9,8 @@ ms.openlocfilehash: 18c2b6d1beac3829f26923e977ea099171683b7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142121601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142708030"
 ---
 # Get-AzSecurityCompliance
 
@@ -207,6 +207,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Compliances.PSSecurityCompliance
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
