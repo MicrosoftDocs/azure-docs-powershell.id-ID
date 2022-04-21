@@ -9,13 +9,13 @@ ms.openlocfilehash: 4eac63104f9e75643119c371d2a4d0e882945966
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061457"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725562"
 ---
 # Get-AzureRmRecoveryServicesAsrNetwork
 
 ## SYNOPSIS
-Mendapatkan informasi tentang jaringan yang dikelola oleh Pemulihan Situs untuk kubah saat ini.
+Mendapatkan informasi tentang jaringan yang dikelola oleh Site Recovery untuk kubah saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmRecoveryServicesAsrNetwork -Fabric <ASRFabric> -FriendlyName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesAsrNetwork** mendapatkan informasi tentang jaringan Pemulihan Situs Azure untuk kubah Pemulihan Situs Azure saat ini.
+Cmdlet **Get-AzureRmRecoveryServicesAsrNetwork** mendapatkan informasi tentang jaringan Azure Site Recovery untuk kubah Site Recovery Azure saat ini.
 
 ## EXAMPLES
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRNetwork, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: ed50d8e25dca0998e7e3e026783fe4ec78e6ce7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142726120"
 ---
 # Add-AzureRmEnvironment
 
 ## SYNOPSIS
-Menambahkan titik akhir dan metadata untuk contoh Azure Resource Manager.
+Menambahkan titik akhir dan metadata untuk instans Azure Resource Manager.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 
 ### -AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix
-Akhiran Dns dari layanan katalog dan pekerjaan Azure Data Lake Analytics
+Akhiran Dns azure Data Lake Analytics pekerjaan dan layanan katalog
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureOperationalInsightsEndpoint
-Menentukan titik akhir untuk akses kueri Wawasan Operasional. 
+Menentukan titik akhir untuk akses kueri Insights Operasional. 
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureOperationalInsightsEndpointResourceId
-Menentukan audiens untuk token akses yang mengotorisasi permintaan untuk layanan Wawasan Operasional.
+Menentukan audiens untuk token akses yang mengotorisasi permintaan layanan Insights Operasional.
 
 ```yaml
 Type: System.String
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -BatchEndpointResourceId
-Pengidentifikasi sumber daya layanan Azure Batch yang merupakan penerima token yang diminta
+Pengidentifikasi sumber daya layanan Azure Batch penerima token yang diminta
 
 ```yaml
 Type: System.String
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryEndpoint
-Menentukan titik akhir untuk galeri templat penyebaran Azure Resource Manager.
+Menentukan titik akhir untuk galeri azure Resource Manager templat penyebaran.
 
 ```yaml
 Type: System.String
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAudience
-Audiens untuk token yang mengautentikasi dengan Titik Akhir AD Graph.
+Audiens untuk token yang diautentikasi dengan Titik Akhir ad Graph.
 
 ```yaml
 Type: System.String
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphEndpoint
-Menentukan permintaan URL untuk Graph (active Directory metadata).
+Menentukan URL untuk permintaan Graph (metadata Direktori Aktif).
 
 ```yaml
 Type: System.String
@@ -421,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceManagerEndpoint
-Menentukan URL untuk permintaan Azure Resource Manager.
+Menentukan URL untuk permintaan Resource Manager Azure.
 
 ```yaml
 Type: System.String
@@ -467,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlDatabaseDnsSuffix
-Menentukan akhiran nama domain untuk server Azure SQL Database.
+Menentukan akhiran nama-domain untuk server Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -497,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerDnsSuffix
-Menentukan akhiran nama domain untuk layanan Azure Traffic Manager.
+Menentukan akhiran nama-domain untuk layanan Azure Traffic Manager.
 
 ```yaml
 Type: System.String
@@ -554,7 +554,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureEnvironment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

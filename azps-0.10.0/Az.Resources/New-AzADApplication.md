@@ -10,8 +10,8 @@ ms.openlocfilehash: 3850e5f142e7ec1496ace1225ab53c160794775a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915825"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780966"
 ---
 # New-AzADApplication
 
@@ -317,7 +317,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 
-## CATATAN
+## NOTES
 Kata kunci: azure, Az, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Template, penyebaran
 
 ## RELATED LINKS

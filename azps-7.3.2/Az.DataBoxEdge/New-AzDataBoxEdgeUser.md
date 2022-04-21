@@ -9,8 +9,8 @@ ms.openlocfilehash: 0113b3aa9f9082b087b6239b3fa2bdeee4973f54
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142113461"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142766350"
 ---
 # New-AzDataBoxEdgeUser
 
@@ -213,6 +213,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeDevice
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

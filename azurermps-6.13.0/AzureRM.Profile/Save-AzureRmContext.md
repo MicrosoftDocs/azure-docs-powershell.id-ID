@@ -9,8 +9,8 @@ ms.openlocfilehash: 451498760d85cc018b8fbade625625ec6ecc1910
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968019"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725958"
 ---
 # Save-AzureRmContext
 
@@ -152,6 +152,6 @@ Parameter: Profil (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

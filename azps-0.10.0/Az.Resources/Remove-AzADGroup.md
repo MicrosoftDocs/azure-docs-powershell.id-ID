@@ -9,8 +9,8 @@ ms.openlocfilehash: 4d285471632c9c4bc952b2dcdc0e4ce5147fac12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142056213"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780786"
 ---
 # Remove-AzADGroup
 
@@ -195,6 +195,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 1296e1e135acce9d4840e625d96931f6ecc11625
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915933"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142781038"
 ---
 # Get-AzProviderFeature
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

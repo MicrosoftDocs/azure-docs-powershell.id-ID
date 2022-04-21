@@ -9,8 +9,8 @@ ms.openlocfilehash: 134ec8fc872aa52cbb1e7af6c8c13120d5117aba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142752670"
 ---
 # Resolve-AzError
 
@@ -236,6 +236,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Errors.AzureRestExceptionRecord
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

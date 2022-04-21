@@ -10,8 +10,8 @@ ms.openlocfilehash: 22438110dd66fbbb89e992d79f37b1e8e2e325d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142491570"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780984"
 ---
 # Get-AzResourceGroupDeploymentOperation
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

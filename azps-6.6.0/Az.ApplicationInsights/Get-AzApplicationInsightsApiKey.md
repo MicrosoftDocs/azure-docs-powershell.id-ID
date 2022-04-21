@@ -9,8 +9,8 @@ ms.openlocfilehash: 7cce77e9029438964ac2e63ef085d5d682addc8a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326725"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142779702"
 ---
 # Get-AzApplicationInsightsApiKey
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSApiKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 6844db506ee8a55c7d0c16f54946e35349059ae4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092753"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142781632"
 ---
 # New-AzNetworkWatcherPacketCapture
 
@@ -60,7 +60,7 @@ New-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -TargetVirtual
 
 Dalam contoh ini, kami membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. 
 
-Catatan: Ekstensi Pengawas Jaringan Azure harus diinstal di mesin virtual target untuk membuat tangkapan paket.
+Catatan: Ekstensi Azure Network Watcher harus diinstal di mesin virtual target untuk membuat tangkapan paket.
 
 ## PARAMETERS
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Id akun penyimpanan.
+id akun Storage.
 
 ```yaml
 Type: String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -StoragePath
-Jalur penyimpanan.
+Storage jalur.
 
 ```yaml
 Type: String
@@ -317,7 +317,7 @@ System.String System.Nullable1System.Int32\`\[\[, mscorlib, Version=4.0.0.0, Cul
 
 ### Microsoft.Azure.Commands.Network.Models.PSPacketCapture
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, paket, penangkapan, lalu lintas 
 
 ## RELATED LINKS

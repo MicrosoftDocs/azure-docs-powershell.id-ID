@@ -9,8 +9,8 @@ ms.openlocfilehash: 0031d207ad339f8fdcbfc9d3db57a72f9aefc644
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428827"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142752274"
 ---
 # Get-AzApiManagementGatewayKey
 
@@ -99,6 +99,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementGatewayKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

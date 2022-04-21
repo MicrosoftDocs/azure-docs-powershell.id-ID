@@ -9,8 +9,8 @@ ms.openlocfilehash: 0a72ba722b6a952b0d92fa7d9a530b09feb1ff3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141809411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780052"
 ---
 # Get-AzAnalysisServicesServer
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: Get-AzAs
 
 ## RELATED LINKS

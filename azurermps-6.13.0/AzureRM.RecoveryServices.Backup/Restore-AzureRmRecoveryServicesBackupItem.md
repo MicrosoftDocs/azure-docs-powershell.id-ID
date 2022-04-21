@@ -10,8 +10,8 @@ ms.openlocfilehash: b454f77bc3ad00ddf604e13672d61a7445c44fed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384406"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725715"
 ---
 # Restore-AzureRmRecoveryServicesBackupItem
 
@@ -330,7 +330,7 @@ Parameter: RecoveryPoint (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

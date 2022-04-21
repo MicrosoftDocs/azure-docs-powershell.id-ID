@@ -9,8 +9,8 @@ ms.openlocfilehash: de949e9c915a03556f6c6239e65ba09c8e0ef787
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141873257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142779634"
 ---
 # Set-AzApplicationInsightsDailyCap
 
@@ -210,6 +210,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSPricingPlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

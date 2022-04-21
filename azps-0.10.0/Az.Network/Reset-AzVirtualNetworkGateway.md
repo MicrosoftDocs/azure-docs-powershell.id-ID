@@ -10,8 +10,8 @@ ms.openlocfilehash: 53a4eb40d82a721c93102067c8c7e9fe0cbd86be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142491947"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142781398"
 ---
 # Reset-AzVirtualNetworkGateway
 
@@ -108,7 +108,7 @@ Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' 
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

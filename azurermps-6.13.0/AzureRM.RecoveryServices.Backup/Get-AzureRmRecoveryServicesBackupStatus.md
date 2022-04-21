@@ -9,8 +9,8 @@ ms.openlocfilehash: 00d7bb2c58abfa466b0c4843eb480b43b08b3d90
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818717"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725714"
 ---
 # Get-AzureRmRecoveryServicesBackupStatus
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ResourceBackupStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

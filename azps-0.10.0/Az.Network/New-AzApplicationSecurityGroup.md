@@ -9,8 +9,8 @@ ms.openlocfilehash: 81eaa1f5c6e44586ae6ac9e5b6838f00063a9211
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142056665"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142781650"
 ---
 # New-AzApplicationSecurityGroup
 
@@ -187,7 +187,7 @@ System.Collections.Hashtable
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

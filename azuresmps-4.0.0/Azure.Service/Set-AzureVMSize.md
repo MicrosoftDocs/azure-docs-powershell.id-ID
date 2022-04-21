@@ -7,8 +7,8 @@ ms.openlocfilehash: 22dce62d40bf06efebf3e407130e0f1f30ce3e73
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787145"
 ---
 # Set-AzureVMSize
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
