@@ -7,8 +7,8 @@ ms.openlocfilehash: 1c29a3f8da13fc27916347aad621400d1ac00d8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787536"
 ---
 # Remove-AzureStorSimpleDeviceBackupPolicy
 
@@ -208,7 +208,7 @@ Cmdlet ini menerima objek **BackupPolicyDetails** untuk dihapus.
 Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
 Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

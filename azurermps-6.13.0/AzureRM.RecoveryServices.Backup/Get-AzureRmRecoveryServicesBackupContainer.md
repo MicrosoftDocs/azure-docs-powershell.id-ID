@@ -10,8 +10,8 @@ ms.openlocfilehash: c47c3e51d970302281af5a7ae3a6175f4af79739
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775998"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725816"
 ---
 # Get-AzureRmRecoveryServicesBackupContainer
 
@@ -203,7 +203,7 @@ Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

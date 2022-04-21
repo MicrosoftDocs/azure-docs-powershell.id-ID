@@ -9,8 +9,8 @@ ms.openlocfilehash: 345387052acf72e9a9d0c009b2b96f97a457a702
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424929"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142746964"
 ---
 # New-AzKustoScript
 
@@ -293,7 +293,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IScript
 
-## CATATAN
+## NOTES
 
 ALIAS
 

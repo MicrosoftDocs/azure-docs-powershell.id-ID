@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a2f9e0ddb5966dc67662f7470d19ea4375b5f6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142296215"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142768672"
 ---
 # Update-AzSynapseManagedVirtualNetworkConfig
 
@@ -115,6 +115,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

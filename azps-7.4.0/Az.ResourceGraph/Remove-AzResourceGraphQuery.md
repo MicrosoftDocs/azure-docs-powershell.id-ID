@@ -9,8 +9,8 @@ ms.openlocfilehash: 07457d283aba9ace567b427f61d7c5fa3417b95b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166239"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802044"
 ---
 # Remove-AzResourceGraphQuery
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

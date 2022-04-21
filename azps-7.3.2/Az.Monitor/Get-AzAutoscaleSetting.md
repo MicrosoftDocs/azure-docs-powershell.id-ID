@@ -10,8 +10,8 @@ ms.openlocfilehash: 6d57d4f39e74d29c0a395a09de5e400aba2d1288
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142214191"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142764496"
 ---
 # Get-AzAutoscaleSetting
 
@@ -285,7 +285,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSAutoscaleSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

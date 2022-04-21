@@ -9,13 +9,13 @@ ms.openlocfilehash: 3d9126884df6f69e323d080416b2e5003f7fe6d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142221427"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142769590"
 ---
 # Remove-AzStorageAccountNetworkRule
 
 ## SYNOPSIS
-Hapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Penyimpanan
+Hapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageaccountnetworkrule) untuk informasi terbaru.
@@ -63,7 +63,7 @@ Remove-AzStorageAccountNetworkRule [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageAccountNetworkRule** menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Penyimpanan
+Cmdlet **Remove-AzStorageAccountNetworkRule** menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
 
 ## EXAMPLES
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Penyimpanan.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceAccessRule
-Penyimpanan Account NetworkRule ResourceAccessRules.
+Storage Account NetworkRule ResourceAccessRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSResourceAccessRule[]
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya berisi akun Penyimpanan.
+Menentukan nama grup sumber daya berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceAccessRule ResourceId Akun Penyimpanan dalam string.
+Storage Account ResourceAccessRule ResourceId dalam string.
 
 ```yaml
 Type: System.String
@@ -314,16 +314,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule[]
+### Microsoft.Azure.Commands.Management. Storage. Models.PSIpRule[]
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule[]
+### Microsoft.Azure.Commands.Management. Storage. Models.PSVirtualNetworkRule[]
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule
+### Microsoft.Azure.Commands.Management. Storage. Models.PSVirtualNetworkRule
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule
+### Microsoft.Azure.Commands.Management. Storage. Models.PSIpRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

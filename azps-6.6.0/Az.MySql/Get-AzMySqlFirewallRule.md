@@ -9,8 +9,8 @@ ms.openlocfilehash: a4efe599181fdb2243577faae1d1a17f76e823e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141800636"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142774756"
 ---
 # Get-AzMySqlFirewallRule
 
@@ -182,7 +182,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IFirewallRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 076d8a9a6947a1901c1bb5f5b482eb550336f413
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141898875"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142767754"
 ---
 # Remove-AzCdnEndpoint
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

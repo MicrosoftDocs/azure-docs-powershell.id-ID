@@ -7,8 +7,8 @@ ms.openlocfilehash: e19b9b068742dae3d9da30fa30edd573c2f42749
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787410"
 ---
 # Save-AzureVhd
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: b10b9e429bafdafe6c50262a80321af5eff4d1b2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142775602"
 ---
 # New-AzKeyVault
 
@@ -107,7 +107,7 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah ini membuat kubah kunci, sama seperti contoh sebelumnya. Namun, ini menentukan nilai Premium untuk parameter *SKU* untuk membuat kubah kunci Premium.
+Perintah ini membuat kubah kunci, sama seperti contoh sebelumnya. Namun, parameter ini menentukan nilai Premium untuk parameter *SKU* untuk membuat kubah kunci Premium.
 
 ### Contoh 3
 ```powershell
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForTemplateDeployment
-Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari kubah kunci ini saat kubah kunci ini dirujuk dalam penyebaran templat.
+Memungkinkan Azure Resource Manager untuk mendapatkan rahasia dari kubah kunci ini ketika kubah kunci ini dirujuk dalam penyebaran templat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRbacAuthorization
-Jika ditentukan, memungkinkan untuk mengotorisasi tindakan data menurut Kontrol Akses Berbasis Peran (RBAC), lalu kebijakan akses yang ditentukan dalam properti kubah akan diabaikan. Perhatikan bahwa tindakan manajemen selalu diotorisasi dengan RBAC.
+Jika ditentukan, memungkinkan untuk mengotorisasi tindakan data menurut Access Control Berbasis Peran (RBAC), lalu kebijakan akses yang ditentukan dalam properti kubah akan diabaikan. Perhatikan bahwa tindakan manajemen selalu diotorisasi dengan RBAC.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan SKU instans kubah kunci. Untuk informasi tentang fitur mana yang tersedia untuk setiap SKU, lihat situs web Harga Azure Key Vault (https://go.microsoft.com/fwlink/?linkid=512521).
+Menentukan SKU instans kubah kunci. Untuk informasi tentang fitur mana yang tersedia untuk setiap SKU, lihat situs web Azure Key Vault Harga (https://go.microsoft.com/fwlink/?linkid=512521).
 
 ```yaml
 Type: System.String
@@ -382,7 +382,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

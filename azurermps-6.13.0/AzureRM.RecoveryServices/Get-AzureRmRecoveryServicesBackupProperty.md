@@ -9,8 +9,8 @@ ms.openlocfilehash: d900da862572c0e3a51f288a7e6bec948f7aeba4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725346"
 ---
 # Get-AzureRmRecoveryServicesBackupProperty
 
@@ -83,6 +83,6 @@ Parameter: Vault (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.ASRVaultBackupProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 433dab74993ef900766568989ff39acfd5447a7f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232101"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142776214"
 ---
 # Invoke-AzHDInsightHiveJob
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur ke file di Penyimpanan Azure yang berisi kueri untuk dijalankan.
+Menentukan jalur ke file di Azure Storage yang berisi kueri untuk dijalankan.
 Anda bisa menggunakan parameter ini dan bukan parameter *Kueri* .
 
 ```yaml
@@ -265,7 +265,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

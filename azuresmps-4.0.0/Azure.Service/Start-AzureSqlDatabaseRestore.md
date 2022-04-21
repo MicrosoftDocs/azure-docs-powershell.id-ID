@@ -7,8 +7,8 @@ ms.openlocfilehash: c2e2fe901ee407af174f68f79cf6fdb73ca93d9d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141965796"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787032"
 ---
 # Start-AzureSqlDatabaseRestore
 
@@ -276,7 +276,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.RestoreDatabaseOperation
 
-## CATATAN
+## NOTES
 * Anda harus menggunakan autentikasi berbasis sertifikat untuk menjalankan cmdlet ini. Jalankan perintah berikut ini di komputer tempat menjalankan cmdlet ini: 
 
 `PS C:\\\> $subId = \<Subscription ID\>`

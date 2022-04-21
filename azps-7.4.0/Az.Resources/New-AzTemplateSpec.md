@@ -9,8 +9,8 @@ ms.openlocfilehash: cf5f7d4d598ac007f7869da25703d8fe1472d088
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420816"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142801486"
 ---
 # New-AzTemplateSpec
 
@@ -319,6 +319,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplateSpec
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

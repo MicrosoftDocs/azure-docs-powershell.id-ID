@@ -9,13 +9,13 @@ ms.openlocfilehash: 47517c5898aaad4839219ac3f1724ce02735d3b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142213633"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142763578"
 ---
 # Get-AzApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
-Mendapatkan Konfigurasi Skala Otomatis Gateway Aplikasi.
+Mendapatkan Konfigurasi Skala Otomatis Application Gateway.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayautoscaleconfiguration) untuk informasi terbaru.
@@ -28,7 +28,7 @@ Get-AzApplicationGatewayAutoscaleConfiguration -ApplicationGateway <PSApplicatio
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayAutoscaleConfiguration** mendapatkan Konfigurasi Skala Otomatis Gateway Aplikasi.
+Cmdlet **Get-AzApplicationGatewayAutoscaleConfiguration** mendapatkan Konfigurasi Skala Otomatis Application Gateway.
 
 ## EXAMPLES
 
@@ -85,7 +85,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAutoscaleConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

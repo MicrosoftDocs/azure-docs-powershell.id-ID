@@ -9,8 +9,8 @@ ms.openlocfilehash: 820925cc19d1472dba31022561a71ae12844b324
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433771"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142749538"
 ---
 # Stop-AzDataBoxJob
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

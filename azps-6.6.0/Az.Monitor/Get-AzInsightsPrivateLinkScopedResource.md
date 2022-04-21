@@ -9,8 +9,8 @@ ms.openlocfilehash: fafd1883de9c7b53949b1f80486c3bb11e2e1ac2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142083289"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142774990"
 ---
 # Get-AzInsightsPrivateLinkScopedResource
 
@@ -162,6 +162,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### icrosoft. Azure.Commands. Insights. OutputClasses.PSMonitorPrivateLinkScopedResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

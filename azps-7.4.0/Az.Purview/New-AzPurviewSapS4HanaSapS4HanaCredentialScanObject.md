@@ -9,8 +9,8 @@ ms.openlocfilehash: 3eb906994c8059667144e41854d4c8bdd00c92d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166584"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802962"
 ---
 # New-AzPurviewSapS4HanaSapS4HanaCredentialScanObject
 
@@ -252,7 +252,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.SapS4HanaSapS4HanaCredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

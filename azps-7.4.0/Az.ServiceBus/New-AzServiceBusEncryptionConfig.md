@@ -9,8 +9,8 @@ ms.openlocfilehash: fe0a71c32328e87078ddecaae3f418b6b14ab2a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165654"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800730"
 ---
 # New-AzServiceBusEncryptionConfig
 
@@ -124,6 +124,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSEncryptionConfigAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
