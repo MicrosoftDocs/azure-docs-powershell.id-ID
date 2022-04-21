@@ -9,8 +9,8 @@ ms.openlocfilehash: cbb7a07fc140e5ae7097f6d8916b4dbbbee342a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142339001"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142692388"
 ---
 # Set-AzStackHCI
 
@@ -280,6 +280,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
 ### Hasil: Berhasil atau Gagal atau Dibatalkan.
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

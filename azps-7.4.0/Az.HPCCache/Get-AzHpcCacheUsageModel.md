@@ -9,8 +9,8 @@ ms.openlocfilehash: 1822902f2f619b7458bf471962b73b4eba69a6ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747702"
 ---
 # Get-AzHpcCacheUsageModel
 
@@ -62,6 +62,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.PowerShell.Cmdlets.HPCCache.Models.PSHpcUsageModels
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

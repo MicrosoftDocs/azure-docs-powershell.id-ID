@@ -9,8 +9,8 @@ ms.openlocfilehash: 79f7cb1e0273c0126d4452f38e24795bac82a091
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142028154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142695088"
 ---
 # Get-AzSearchAdminKeyPair
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchAdminKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

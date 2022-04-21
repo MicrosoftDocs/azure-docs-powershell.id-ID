@@ -8,8 +8,8 @@ ms.openlocfilehash: 7bad1311d463b8372d07a33c549682a2cade4041
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141972017"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735876"
 ---
 # Restore-AzureKeyVaultKey
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.KeyBundle
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

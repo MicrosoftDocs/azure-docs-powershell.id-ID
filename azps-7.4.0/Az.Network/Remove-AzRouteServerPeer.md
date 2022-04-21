@@ -9,8 +9,8 @@ ms.openlocfilehash: 0a4e764fbe542de161f0841b59383da08b521b01
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742284"
 ---
 # Remove-AzRouteServerPeer
 
@@ -224,6 +224,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteServer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

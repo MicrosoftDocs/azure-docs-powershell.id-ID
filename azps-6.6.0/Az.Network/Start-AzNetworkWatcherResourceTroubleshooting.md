@@ -9,8 +9,8 @@ ms.openlocfilehash: f27b4ce3400c3050fa520bbf4eaee513da381264
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142079113"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142710028"
 ---
 # Start-AzNetworkWatcherResourceTroubleshooting
 
@@ -195,7 +195,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSTroubleshootingResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, pemecahan masalah, VPN, koneksi
 
 ## RELATED LINKS

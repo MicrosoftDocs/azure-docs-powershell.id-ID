@@ -9,8 +9,8 @@ ms.openlocfilehash: 9acb6b26465bd23da71a073089fdf11e89345b8a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142365605"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142692262"
 ---
 # Get-AzStorageBlobQueryResult
 
@@ -411,6 +411,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

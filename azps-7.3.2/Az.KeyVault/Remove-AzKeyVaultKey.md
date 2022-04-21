@@ -10,8 +10,8 @@ ms.openlocfilehash: 5e4687a8be061336d8cc9b9f6ccb192f309b78ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142068961"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142701838"
 ---
 # Remove-AzKeyVaultKey
 
@@ -261,7 +261,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

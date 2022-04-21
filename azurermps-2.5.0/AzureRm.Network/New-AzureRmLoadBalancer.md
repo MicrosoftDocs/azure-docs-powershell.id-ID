@@ -8,8 +8,8 @@ ms.openlocfilehash: 7abc575915eb65bf6c14994833bad64e6c7cd561
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103845"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735670"
 ---
 # New-AzureRmLoadBalancer
 
@@ -311,7 +311,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

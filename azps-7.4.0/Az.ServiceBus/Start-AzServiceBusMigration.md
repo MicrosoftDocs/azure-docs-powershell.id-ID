@@ -9,8 +9,8 @@ ms.openlocfilehash: 949a9bb89de5023eaad828cd15a3863b7c8b7743
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174637"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142672066"
 ---
 # Start-AzServiceBusMigration
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

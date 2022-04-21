@@ -7,8 +7,8 @@ ms.openlocfilehash: 789f1f0f122d52e64004de56565c5edd4b7ac559
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816366"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723204"
 ---
 # Reset-AzureVirtualNetworkGatewayKey
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

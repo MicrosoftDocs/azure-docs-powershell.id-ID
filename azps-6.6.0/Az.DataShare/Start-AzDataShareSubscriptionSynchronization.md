@@ -9,8 +9,8 @@ ms.openlocfilehash: 6b874664e5c0c3e06efcd2534aa258de071a1c23
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142715968"
 ---
 # Start-AzDataShareSubscriptionSynchronization
 
@@ -231,6 +231,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareSubscriptionSynchronization
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

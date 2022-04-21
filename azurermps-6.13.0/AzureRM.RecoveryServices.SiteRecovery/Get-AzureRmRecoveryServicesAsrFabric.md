@@ -9,8 +9,8 @@ ms.openlocfilehash: db93d022d2abd6d3c6cecfe32b1f82be4483e850
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136082"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142659729"
 ---
 # Get-AzureRmRecoveryServicesAsrFabric
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

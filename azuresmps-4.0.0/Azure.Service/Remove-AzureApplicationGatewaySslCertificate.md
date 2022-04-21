@@ -7,8 +7,8 @@ ms.openlocfilehash: 1eae51b014c2c5dd9f9ed44b59205775157c162e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335033"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723708"
 ---
 # Remove-AzureApplicationGatewaySslCertificate
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Management.ApplicationGateway.Models.ApplicationGatewayOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

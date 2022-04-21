@@ -7,8 +7,8 @@ ms.openlocfilehash: a977de2b4a60f0fc5ae93e175d521d398d40f850
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735778"
 ---
 # Get-AzureRmApplicationGatewaySslPredefinedPolicy
 
@@ -87,7 +87,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPredefinedPolicy
 System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPredefinedPolicy, Microsoft.Azure.Commands.Network, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: b1a2f6f3d664cf966929f35d0f6ae9d604ab44dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422219"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142679320"
 ---
 # Get-AzNetworkWatcherReachabilityProvidersList
 
@@ -272,7 +272,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAvailableProvidersList
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
 
 ## RELATED LINKS

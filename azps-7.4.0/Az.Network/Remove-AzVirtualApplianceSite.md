@@ -9,8 +9,8 @@ ms.openlocfilehash: 107b63ad0caa237eb674a6a2539114a92f3bacfc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834170"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142742266"
 ---
 # Remove-AzVirtualApplianceSite
 
@@ -231,6 +231,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

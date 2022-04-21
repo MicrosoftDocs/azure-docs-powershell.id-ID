@@ -10,8 +10,8 @@ ms.openlocfilehash: da4c361cb34cec6fd33e1febd9e1aecba97f3af3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142319819"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142701874"
 ---
 # Remove-AzKeyVaultCertificateIssuer
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIssuer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: c109119fbd3bcb481fd17eaf10121959bef24f09
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142305601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142715752"
 ---
 # Update-AzWvdApplication
 
@@ -382,7 +382,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IAplikasi
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: a52afa6a625f2c77a0d8819b29f22bad8ca0f7e6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142722916"
 ---
 # Set-AzureSchedulerJobCollection
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

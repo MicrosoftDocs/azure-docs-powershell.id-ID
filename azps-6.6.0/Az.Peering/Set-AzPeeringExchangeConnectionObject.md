@@ -9,8 +9,8 @@ ms.openlocfilehash: 0403bb732bd70de5bfd0ba0f330d3b8f85a6f3bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142226269"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142709020"
 ---
 # Set-AzPeeringExchangeConnectionObject
 
@@ -177,6 +177,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSExchangeConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
