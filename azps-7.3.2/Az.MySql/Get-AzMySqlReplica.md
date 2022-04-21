@@ -9,8 +9,8 @@ ms.openlocfilehash: be7e26854a2fd2c67bc0db8f43405355f6f0a31a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141849758"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822384"
 ---
 # Get-AzMySqlReplica
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 

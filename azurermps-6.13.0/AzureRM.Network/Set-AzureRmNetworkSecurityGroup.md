@@ -10,8 +10,8 @@ ms.openlocfilehash: 3ef8248f90e24da8818a0fa1a8ff6b05970be397
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819593"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142790118"
 ---
 # Set-AzureRmNetworkSecurityGroup
 
@@ -129,7 +129,7 @@ Parameter: NetworkSecurityGroup (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

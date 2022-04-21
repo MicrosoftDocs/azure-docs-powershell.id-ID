@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubProviderRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubProviderRegistration.md
-ms.openlocfilehash: 22fd3584514c1c454875d2bcba62cbdffd6a2d7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 94f63b73645597a8a04999bfae22f53924cad69b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570560"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142696816"
 ---
 # New-AzProviderHubProviderRegistration
 
 ## SYNOPSIS
 Membuat atau memperbarui pendaftaran penyedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubproviderregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Membuat atau memperbarui pendaftaran penyedia.
 
 ## EXAMPLES
 
-### Contoh 1: Buat/Perbarui pendaftaran penyedia.
+### Contoh 1: Membuat/Memperbarui pendaftaran penyedia.
 ```powershell
 PS C:\> New-AzProviderHubProviderRegistration -ProviderNamespace "Microsoft.Contoso" -ProviderHubMetadataProviderAuthenticationAllowedAudience "https://management.core.windows.net/" -ProviderHubMetadataProviderAuthorization @{ApplicationId = "00000000-0000-0000-0000-000000000000"; RoleDefinitionId = "00000000-0000-0000-0000-000000000000"} -Namespace "Microsoft.Contoso" -ProviderVersion "2.0" -ProviderType "Internal" -ManagementManifestOwner "SPARTA-PlatformServiceAdministrator" -ManagementIncidentContactEmail "help@microsoft.com" -ManagementIncidentRoutingService "Contoso Service" -ManagementIncidentRoutingTeam "Contoso Team" -ManagementServiceTreeInfo @{ComponentId = "00000000-0000-0000-0000-000000000000"; ServiceId = "00000000-0000-0000-0000-000000000000"} -Capability @{QuotaId = "CSP_2015-05-01"; Effect = "Allow"}, @{QuotaId = "CSP_MG_2017-12-01"; Effect = "Allow"}
 
@@ -54,9 +57,9 @@ Name                Type
 Microsoft.Contoso   Microsoft.ProviderHub/providerRegistrations
 ```
 
-Buat/Perbarui pendaftaran penyedia.
+Membuat/Memperbarui pendaftaran penyedia.
 
-### Contoh 2: Buat/Perbarui pendaftaran penyedia.
+### Contoh 2: Membuat/Memperbarui pendaftaran penyedia.
 ```powershell
 PS C:\> New-AzProviderHubProviderRegistration -ProviderNamespace "Microsoft.Contoso" -ProviderHubMetadataProviderAuthenticationAllowedAudience "https://management.core.windows.net/" -ProviderHubMetadataProviderAuthorization @{ApplicationId = "00000000-0000-0000-0000-000000000000"; RoleDefinitionId = "00000000-0000-0000-0000-000000000000"} -Namespace "Microsoft.Contoso" -ProviderVersion "2.0" -ProviderType "Hidden" -ManagementManifestOwner "SPARTA-PlatformServiceAdministrator" -ManagementIncidentContactEmail "help@microsoft.com" -ManagementIncidentRoutingService "Contoso Service" -ManagementIncidentRoutingTeam "Contoso Team" -ManagementServiceTreeInfo @{ComponentId = "00000000-0000-0000-0000-000000000000"; ServiceId = "00000000-0000-0000-0000-000000000000"} -Capability @{QuotaId = "CSP_2015-05-01"; Effect = "Allow"}, @{QuotaId = "CSP_MG_2017-12-01"; Effect = "Allow"}
 
@@ -65,12 +68,12 @@ Name                Type
 Microsoft.Contoso   Microsoft.ProviderHub/providerRegistrations
 ```
 
-Buat/Perbarui pendaftaran penyedia.
+Membuat/Memperbarui pendaftaran penyedia.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,9 +87,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Capability
+### -Kapabilitas
 .
-Untuk membuat, lihat bagian CATATAN untuk properti CAPABILITY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti CAPABILITY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderCapabilities[]
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ManagementBerfestOwner
+### -ManagementManifestOwner
 .
 
 ```yaml
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 
 ### -ManagementServiceTreeInfo
 .
-Untuk membuat, lihat bagian CATATAN untuk properti MANAGEMENTSERVICETREEINFO dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti MANAGEMENTSERVICETREEINFO dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IServiceTreeInfo[]
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 
 ### -ProviderAuthorization
 .
-Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERAUTHORIZATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERAUTHORIZATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderAuthorization[]
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 
 ### -ProviderHubMetadataProviderAuthorization
 .
-Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERHUBMETADATAPROVIDERAUTHORIZATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERHUBMETADATAPROVIDERAUTHORIZATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderAuthorization[]
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionLifecycleNotificationSpecificationSubscriptionStateOverrideAction
 .
-Untuk selanjutnya, lihat bagian CATATAN untuk PROPERTI SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISubscriptionStateOverrideAction[]
@@ -555,8 +558,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -571,8 +574,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -587,7 +590,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -595,7 +598,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IProviderRegistration
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -604,7 +607,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CAPABILITY <iResourceProviderCapabilities[]>: .
+KEMAMPUAN <IResourceProviderCapabilities[]>: .
   - `Effect <ResourceProviderCapabilitiesEffect>`: 
   - `QuotaId <String>`: 
   - `[RequiredFeature <String[]>]`: 

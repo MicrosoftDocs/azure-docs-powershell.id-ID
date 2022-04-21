@@ -9,8 +9,8 @@ ms.openlocfilehash: 772f0a3bb1198bf5c8d00ad8c0dd708c37c92366
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141821577"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791509"
 ---
 # Get-AzureRmPublicIpPrefix
 
@@ -125,6 +125,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

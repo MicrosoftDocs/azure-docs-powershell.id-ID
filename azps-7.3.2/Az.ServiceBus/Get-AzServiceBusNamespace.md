@@ -9,8 +9,8 @@ ms.openlocfilehash: e212955abc85130c3d5dae5f59fc01c7c21d90ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142483379"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142758628"
 ---
 # Get-AzServiceBusNamespace
 
@@ -107,6 +107,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

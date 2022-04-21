@@ -10,8 +10,8 @@ ms.openlocfilehash: 25082cbf5b69867953580cb0f4b0ea74c15005da
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141886207"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794246"
 ---
 # Set-AzureRmVMChefExtension
 
@@ -452,7 +452,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

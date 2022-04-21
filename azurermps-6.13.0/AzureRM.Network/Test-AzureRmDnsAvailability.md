@@ -10,8 +10,8 @@ ms.openlocfilehash: 348fd7e97566520b27163de91d4d52162d4c3978
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385098"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789948"
 ---
 # Test-AzureRmDnsAvailability
 
@@ -91,6 +91,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

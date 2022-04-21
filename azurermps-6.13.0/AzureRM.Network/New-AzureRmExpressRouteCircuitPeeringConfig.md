@@ -10,8 +10,8 @@ ms.openlocfilehash: 8471ccd34ab5d13ad5012e9a2e29892659c297f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142062407"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142791190"
 ---
 # New-AzureRmExpressRouteCircuitPeeringConfig
 
@@ -328,7 +328,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

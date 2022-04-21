@@ -10,8 +10,8 @@ ms.openlocfilehash: adb80d9dda6a87d839b1304f2284fcbec0f79df4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997463"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142808515"
 ---
 # Remove-AzHDInsightCluster
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Boolean
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

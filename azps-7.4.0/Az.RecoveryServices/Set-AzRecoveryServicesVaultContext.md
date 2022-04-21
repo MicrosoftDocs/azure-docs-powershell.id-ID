@@ -10,14 +10,14 @@ ms.openlocfilehash: 076ac91c78f94449092eb9dcb35b735608bff75b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421066"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802476"
 ---
 # Set-AzRecoveryServicesVaultContext
 
 ## SYNOPSIS
 
-Mengatur konteks kubah.
+Mengatur konteks vault.
 
 ## SYNTAX
 
@@ -28,9 +28,9 @@ Set-AzRecoveryServicesVaultContext -Vault <ARSVault> [-DefaultProfile <IAzureCon
 
 ## DESCRIPTION
 
-Cmdlet **Set-AzRecoveryServicesVaultContext** mengatur konteks kubah untuk layanan Azure Site Recovery.
+Cmdlet **Set-AzRecoveryServicesVaultContext** mengatur konteks vault untuk layanan Azure Site Recovery.
 
-Peringatan: Cmdlet ini ditolak dalam rilis perubahan yang akan datang. Tidak akan ada penggantian untuk itu. Silakan gunakan parameter -VaultId di semua perintah Layanan Pemulihan ke depannya.
+Peringatan: Cmdlet ini tidak digunakan lagi dalam rilis perubahan yang melanggar di masa mendatang. Tidak akan ada penggantinya. Silakan gunakan parameter -VaultId di semua perintah Layanan Pemulihan ke depannya.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "v
 Set-AzRecoveryServicesVaultContext -Vault $vault
 ```
 
-Mengatur konteks kubah.
+Mengatur konteks vault.
 
 ## PARAMETERS
 
@@ -63,8 +63,8 @@ Accept wildcard characters: False
 
 ### -Vault
 
-Menentukan nama kubah.
-Kubah harus berupa objek **AzureRmRecoveryServicesVault** .
+Menentukan nama vault.
+Vault harus berupa objek **AzureRmRecoveryServicesVault** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -89,6 +89,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

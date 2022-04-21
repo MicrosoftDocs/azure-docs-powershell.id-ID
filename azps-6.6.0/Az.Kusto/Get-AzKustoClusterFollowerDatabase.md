@@ -9,8 +9,8 @@ ms.openlocfilehash: 5c279970375ace00535351dcfec8c09a34896320
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142230715"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142840546"
 ---
 # Get-AzKustoClusterFollowerDatabase
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IFollowerDatabaseDefinition
 
-## CATATAN
+## NOTES
 
 ALIAS
 

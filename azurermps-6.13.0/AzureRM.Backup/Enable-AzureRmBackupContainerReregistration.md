@@ -10,8 +10,8 @@ ms.openlocfilehash: 6ae660eae9e597d92e162529ff244431d4720418
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283072"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795672"
 ---
 # Enable-AzureRmBackupContainerReregistration
 
@@ -81,7 +81,7 @@ Parameter: Kontainer (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

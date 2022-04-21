@@ -9,8 +9,8 @@ ms.openlocfilehash: 67f57c91a9b6a9f6dac0803b6b99b99e4d05f3be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996330"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142807084"
 ---
 # Start-AzMigrateServerMigration
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IJob
 
-## CATATAN
+## NOTES
 
 ALIAS
 

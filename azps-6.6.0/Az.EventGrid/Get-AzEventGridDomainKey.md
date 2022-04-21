@@ -9,8 +9,8 @@ ms.openlocfilehash: 5943db1a9e686c49fd72f8c4b4dc3a244d5345bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141867848"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142776592"
 ---
 # Get-AzEventGridDomainKey
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.EventGrid.Models.DomainSharedAccessKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

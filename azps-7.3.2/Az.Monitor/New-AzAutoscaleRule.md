@@ -10,16 +10,16 @@ ms.openlocfilehash: 867fca791a603809a563ec1be3c117576f1122de
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142345625"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822546"
 ---
 # New-AzAutoscaleRule
 
 ## SYNOPSIS
-Membuat aturan Skala Otomatis.
+Membuat aturan Autoscale.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscalerule) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscalerule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ New-AzAutoscaleRule -MetricName <String> -MetricResourceId <String> -Operator <C
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutoscaleRule** membuat aturan Skala Otomatis.
+Cmdlet **New-AzAutoscaleRule** membuat aturan Autoscale.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Perintah kedua membuat aturan kedua untuk metrik Permintaan, lalu menyimpannya d
 
 ### Contoh 3
 
-Membuat aturan Skala Otomatis. (autogenerasi)
+Membuat aturan Autoscale. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzAutoscaleRule -MetricName 'Requests' -MetricResourceId '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/mywebsite' -MetricStatistic Average -Operator Equals -ScaleActionCooldown 00:05:00 -ScaleActionDirection None -ScaleActionScaleType ChangeCount -ScaleActionValue '1' -Threshold 10 -TimeGrain 00:01:00 -TimeWindow <TimeSpan>
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 Menentukan statistik metrik.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Rata-rata
-- Min
-- Maks
+- Minimum
+- Maksimum
 - Jumlah
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 Menentukan operator.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Sama
-- Notequals
+- NotEquals
 - GreaterThan
 - GreaterThanOrEqual
 - LessThan
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleActionCooldown
-Menentukan waktu pendinginan tindakan Skala Otomatis.
+Menentukan waktu pendinginan tindakan Autoscale.
 
 ```yaml
 Type: System.TimeSpan
@@ -177,8 +177,8 @@ Accept wildcard characters: False
 ### -ScaleActionDirection
 Menentukan arah tindakan skala.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
-- Meningkatkan
+- Tidak ada
+- Tambah
 - Mengurangi
 
 ```yaml
@@ -195,11 +195,11 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleActionScaleType
-Menentukan tipe skala.
+Menentukan jenis skala.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Ubah Ukuran
 - ChangeCount
-- PersenChangeCount
+- PercentChangeCount
 - ExactCount
 
 ```yaml
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -322,7 +322,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

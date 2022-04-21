@@ -10,8 +10,8 @@ ms.openlocfilehash: bacc9366292225e07fd07ac65726018f1d1879e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065428"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142794116"
 ---
 # Update-AzureRmContainerService
 
@@ -168,7 +168,7 @@ Parameter: ContainerService (ByValue)
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

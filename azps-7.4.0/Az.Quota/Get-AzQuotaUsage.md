@@ -9,8 +9,8 @@ ms.openlocfilehash: dd4f6b88ae6af17e4cab69ecc94cd5404804353a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430324"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802836"
 ---
 # Get-AzQuotaUsage
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Quota.Models.Api20210315Preview.ICurrentUsagesBase
 
-## CATATAN
+## NOTES
 
 ALIAS
 

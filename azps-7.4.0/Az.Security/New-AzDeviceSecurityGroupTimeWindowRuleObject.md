@@ -9,8 +9,8 @@ ms.openlocfilehash: bef904969becc822933fdccbafad76e4fb300b12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429624"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800964"
 ---
 # New-AzDeviceSecurityGroupTimeWindowRuleObject
 
@@ -26,7 +26,7 @@ New-AzDeviceSecurityGroupTimeWindowRuleObject -TimeWindowSize <TimeSpan> -MinThr
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDeviceSecurityGroupTimeWindowRuleObject membuat daftar aturan peringatan jendela waktu baru untuk grup keamanan perangkat dalam solusi keamanan IoT.
+Cmdlet New-AzDeviceSecurityGroupTimeWindowRuleObject membuat daftar aturan pemberitahuan jendela waktu baru untuk grup keamanan perangkat dalam solusi keamanan IoT.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ MaxThreshold: 30
 TimeWindowSize: "PT5M"
 ```
 
-Membuat aturan jendela waktu baru dari tipe "ActiveConnectionsNotInAllowedRange"
+Buat aturan jendela waktu baru dari jenis "ActiveConnectionsNotInAllowedRange"
 
 ## PARAMETERS
 
@@ -65,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Aturan diaktifkan.
+### -Diaktifkan
+Apakah aturan diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinThreshold
-Ambang batas minimum.
+Ambang minimum.
 
 ```yaml
 Type: System.Int32
@@ -125,8 +125,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe aturan.
+### -Type
+Jenis aturan.
 
 ```yaml
 Type: System.String
@@ -141,16 +141,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Security.Models.DeviceSecurityGroups.PSTimeWindowCustomAlertRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

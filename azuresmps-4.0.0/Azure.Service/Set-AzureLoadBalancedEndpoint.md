@@ -7,8 +7,8 @@ ms.openlocfilehash: 70ce9c68095544b86ad3a14ee245bd1a841580a6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142276892"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787253"
 ---
 # Set-AzureLoadBalancedEndpoint
 
@@ -405,7 +405,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

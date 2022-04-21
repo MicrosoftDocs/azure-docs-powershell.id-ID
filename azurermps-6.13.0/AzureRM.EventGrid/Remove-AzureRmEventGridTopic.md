@@ -9,8 +9,8 @@ ms.openlocfilehash: d853d5d4659e41c9696ab87c3f9ab8b58c240044
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792975"
 ---
 # Remove-AzureRmEventGridTopic
 
@@ -195,6 +195,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

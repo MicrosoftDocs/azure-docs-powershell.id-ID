@@ -9,8 +9,8 @@ ms.openlocfilehash: 6d4a115d792d282fca17ddebc6100b82cadf1d4f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142365551"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142814392"
 ---
 # Get-AzStorageObjectReplicationPolicy
 
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSObjectReplicationPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 01fe8cdf0b3c4b2c7691dadccebdd847f7d90b4d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245961"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142788598"
 ---
 # Enable-AzureDataCollection
 
@@ -53,7 +53,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

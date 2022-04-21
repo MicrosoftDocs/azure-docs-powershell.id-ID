@@ -9,8 +9,8 @@ ms.openlocfilehash: 73aa26491a86b0eba01adb3898dba803f1ecf0eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845671"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142796238"
 ---
 # New-AzureRmApplicationInsightsContinuousExport
 
@@ -251,6 +251,6 @@ Parameter: ApplicationInsightsComponent (ByValue)
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSExportConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

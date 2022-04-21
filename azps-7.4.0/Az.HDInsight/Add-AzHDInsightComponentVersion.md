@@ -10,8 +10,8 @@ ms.openlocfilehash: f19f1473b962807e5b00338bf6c80879a46f5292
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837056"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142808722"
 ---
 # Add-AzHDInsightComponentVersion
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

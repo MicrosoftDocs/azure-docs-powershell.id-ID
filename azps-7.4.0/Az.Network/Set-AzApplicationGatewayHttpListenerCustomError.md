@@ -9,8 +9,8 @@ ms.openlocfilehash: 3e90a4d1a91f4e5ce01ac12a5db5fba82bd97f9c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142804546"
 ---
 # Set-AzApplicationGatewayHttpListenerCustomError
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListener
-Pendengar Http Application Gateway
+Pendengar Http Gateway Aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayCustomError
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,13 +9,13 @@ ms.openlocfilehash: fe258c9313b06c8d8451eb9a71bb6718f48993b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430427"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142802998"
 ---
 # New-AzPurviewAzureSynapseWorkspaceDataSourceObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk AzureSynapseWorkspaceDataSource.
+Buat objek dalam memori untuk AzureSynapseWorkspaceDataSource.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-AzPurviewAzureSynapseWorkspaceDataSourceObject -Kind <DataSourceType> [-Coll
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk AzureSynapseWorkspaceDataSource.
+Buat objek dalam memori untuk AzureSynapseWorkspaceDataSource.
 
 ## EXAMPLES
 
@@ -97,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.DataSourceType
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureSynapseWorkspaceDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

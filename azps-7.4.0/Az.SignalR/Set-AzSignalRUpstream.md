@@ -9,13 +9,13 @@ ms.openlocfilehash: e92bb1cecd809c5b9ff5426379f49b88c48f7553
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799794"
 ---
 # Set-AzSignalRUpstream
 
 ## SYNOPSIS
-Mengatur pengaturan hulu layanan SignalR.
+Atur pengaturan upstram layanan SignalR.
 
 ## SYNTAX
 
@@ -39,11 +39,11 @@ Set-AzSignalRUpstream -InputObject <PSSignalRResource> [-AsJob] [-Template <PSUp
 ```
 
 ## DESCRIPTION
-Mengatur pengaturan hulu layanan SignalR.
+Atur pengaturan upstram layanan SignalR.
 
 ## EXAMPLES
 
-### Mengatur dua templat hulu yang diurutkan
+### Mengatur dua templat upstream yang diurutkan
 ```powershell
 Set-AzSignalRUpstream -name pssignalr -ResourceGroupName test_resource_group -Template @{UrlTemplate='http://host-connections1.com'; HubPattern='chat';EventPattern='broadcast' }, @{UrlTemplate='http://host-connections2.com'}
 ```
@@ -54,7 +54,7 @@ Templates
 {Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplate, Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplat…
 ```
 
-JSON berikut ini mewakili kumpulan templat aktual. 
+JSON berikut mewakili kumpulan templat aktual. 
 
  `
 {
@@ -71,7 +71,7 @@ JSON berikut ini mewakili kumpulan templat aktual.
 }
 `
 
-### Menghapus semua pengaturan hulu
+### Menghapus semua pengaturan upstram
 ```powershell
 Set-AzSignalRUpstream -name pssignalr -ResourceGroupName test_resource_group -Clear
 ```
@@ -85,7 +85,7 @@ Templates
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di pekerjaan latar belakang.
+Jalankan cmdlet dalam pekerjaan latar belakang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Bersihkan
-Hapus semua pengaturan hulu.
+Bersihkan semua pengaturan upstram.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan SignalR.
 
 ```yaml
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan Signalr.
+ID sumber daya layanan SignalR.
 
 ```yaml
 Type: System.String
@@ -191,10 +191,10 @@ Accept wildcard characters: False
 ```
 
 ### -Templat
-Item templat untuk pengaturan hulu.
+Item templat untuk pengaturan upstream.
 Kunci yang diperlukan: UrlTemplate.
-Tombol opsional: HubPattern, EventPattern, CategoryPattern.
-Contoh menggunakan sintaks splatting untuk meneruskan parameter templat: @{UrlTemplate=''http://host-connections1.com, HubPattern= 'chat'; EventPattern='broadcast' },@{UrlTemplate='http://host-connections2.com'}
+Kunci opsional: HubPattern, EventPattern, CategoryPattern.
+Contoh menggunakan sintaksis splatting untuk meneruskan parameter templat: @{UrlTemplate=''http://host-connections1.com, HubPattern= 'chat'; EventPattern='broadcast' },@{UrlTemplate='http://host-connections2.com'}
 
 ```yaml
 Type: Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplate[]
@@ -208,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSServerlessUpstreamSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

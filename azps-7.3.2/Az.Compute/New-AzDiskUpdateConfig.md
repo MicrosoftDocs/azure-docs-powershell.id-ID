@@ -9,8 +9,8 @@ ms.openlocfilehash: 47e446494ecb54bff14e1785f9bd7ca1501d1fe6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142347984"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142767304"
 ---
 # New-AzDiskUpdateConfig
 
@@ -461,6 +461,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDiskUpdate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
