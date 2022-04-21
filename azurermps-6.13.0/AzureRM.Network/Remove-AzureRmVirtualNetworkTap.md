@@ -9,8 +9,8 @@ ms.openlocfilehash: 59e3b7f233077c8ed7064bcb1757634fe08c262b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926123"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142727110"
 ---
 # Remove-AzureRmVirtualNetworkTap
 
@@ -217,6 +217,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

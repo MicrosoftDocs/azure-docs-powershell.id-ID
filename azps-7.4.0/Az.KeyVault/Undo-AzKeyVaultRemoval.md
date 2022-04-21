@@ -9,8 +9,8 @@ ms.openlocfilehash: 6b693bb80b54445a93c3c9f2a0ed196d3cb806e0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992178"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747090"
 ---
 # Undo-AzKeyVaultRemoval
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7bfa34e8be20c16b724c45904a87c190675eb19e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173110"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747810"
 ---
 # Add-AzHDInsightConfigValue
 
@@ -391,7 +391,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

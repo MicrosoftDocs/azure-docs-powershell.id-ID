@@ -9,8 +9,8 @@ ms.openlocfilehash: fddf20c748591f339ffa3cf66f3aba4a189ec3db
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142338"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733844"
 ---
 # Add-AzureRmImageDataDisk
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe Akun Storage disk gambar data
+Tipe Akun Penyimpanan disk gambar data
 
 ```yaml
 Type: System.String
@@ -236,6 +236,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

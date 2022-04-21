@@ -9,8 +9,8 @@ ms.openlocfilehash: 4818add69f688026c06c39ff05852e4c66f38511
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747378"
 ---
 # Get-AzIotHubValidSku
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubSkuDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

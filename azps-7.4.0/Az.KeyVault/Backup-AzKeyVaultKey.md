@@ -10,8 +10,8 @@ ms.openlocfilehash: e0a22ce99438388cfaccbb4f0cc38f8f6e284920
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997086"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747341"
 ---
 # Backup-AzKeyVaultKey
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,13 +10,13 @@ ms.openlocfilehash: 09a3457127646c28c96007532f0e83d1dc1232f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385647"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142727164"
 ---
 # Remove-AzureRmVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
-Menghapus Konfigurasi IP dari Gateway Jaringan Virtual
+Menghapus Konfigurasi IP dari Gateway Virtual Network
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Remove-AzureRmVirtualNetworkGatewayIpConfig -VirtualNetworkGateway <PSVirtualNet
 ```
 
 ## DESCRIPTION
-Menghapus Konfigurasi IP dari Gateway Jaringan Virtual
+Menghapus Konfigurasi IP dari Gateway Virtual Network
 
 ## EXAMPLES
 
@@ -166,6 +166,6 @@ Parameter: VirtualNetworkGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

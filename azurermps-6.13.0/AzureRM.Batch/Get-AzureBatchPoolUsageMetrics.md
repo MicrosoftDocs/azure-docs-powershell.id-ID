@@ -10,8 +10,8 @@ ms.openlocfilehash: 881e5d1cbd188589f4e0e28384ecf926b3495233
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141969121"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734071"
 ---
 # Get-AzureBatchPoolUsageMetrics
 
@@ -189,7 +189,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSPoolUsageMetrics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

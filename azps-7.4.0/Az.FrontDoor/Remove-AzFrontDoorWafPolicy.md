@@ -9,8 +9,8 @@ ms.openlocfilehash: 86677e285076a7749758864b20e3217ad1684c11
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178497"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747864"
 ---
 # Remove-AzFrontDoorWafPolicy
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

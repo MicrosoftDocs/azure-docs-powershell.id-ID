@@ -9,8 +9,8 @@ ms.openlocfilehash: 7681b329fc544aeedb0218a0cb6eea3ff33c92a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994878"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142740970"
 ---
 # Remove-AzProviderHubDefaultRollout
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

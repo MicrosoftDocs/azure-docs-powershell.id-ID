@@ -9,8 +9,8 @@ ms.openlocfilehash: 7228e6363fea9fc96252cebf2992c2ed6ff2ccaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177124"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142680202"
 ---
 # Remove-AzNetAppFilesActiveDirectory
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

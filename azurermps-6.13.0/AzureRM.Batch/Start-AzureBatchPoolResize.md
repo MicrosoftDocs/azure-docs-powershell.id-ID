@@ -10,8 +10,8 @@ ms.openlocfilehash: c635061ac19b0fcc9543222da176324f84bea3a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389597"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142664152"
 ---
 # Start-AzureBatchPoolResize
 
@@ -180,7 +180,7 @@ Parameter: BatchContext (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

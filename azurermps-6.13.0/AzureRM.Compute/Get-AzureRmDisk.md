@@ -9,8 +9,8 @@ ms.openlocfilehash: 00d7368c49c86a9c089fef5bce3698b32eb65a74
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968636"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733788"
 ---
 # Get-AzureRmDisk
 
@@ -110,6 +110,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

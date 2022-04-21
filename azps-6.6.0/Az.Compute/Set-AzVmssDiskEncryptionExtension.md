@@ -9,8 +9,8 @@ ms.openlocfilehash: 402f25263c6cb37111d77b8a2a48495f406c2bad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142127969"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142717138"
 ---
 # Set-AzVmssDiskEncryptionExtension
 
@@ -50,7 +50,7 @@ $KeyVaultResourceId = $KeyVault.ResourceId
 PS C:\> Set-AzVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSetName $VmssName -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId
 ```
 
-Perintah ini memungkinkan enkripsi pada semua disk dari semua Windows VM dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada semua disk dari semua VM Windows dalam kumpulan skala VM.
 
 ### Contoh 2
 ```
@@ -288,7 +288,7 @@ Menentukan tipe volume mesin virtual untuk melakukan operasi enkripsi: OS, Data,
 
 Linux: Parameter **VolumeType** harus ada dan harus diatur ke Data. 
 
-Windows: Parameter **VolumeType**, jika ada, harus diatur ke Semua atau OS. Jika parameter **VolumeType** dihilangkan secara default menjadi "Semua".
+Windows: Parameter **VolumeType** , jika ada, harus diatur ke Semua atau OS. Jika parameter **VolumeType** dihilangkan secara default menjadi "Semua".
 
 
 ```yaml
@@ -348,6 +348,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineScaleSetExtension
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

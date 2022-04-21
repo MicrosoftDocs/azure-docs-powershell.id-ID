@@ -10,8 +10,8 @@ ms.openlocfilehash: 549bc5bb67eab5287bf463f7e816cc0ff597cf52
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887414"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142734205"
 ---
 # Set-AzureRmAutomationCertificate
 
@@ -183,7 +183,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CertificateInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: ed26de816351043b254204eed53ff261a7958408
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363607"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142689238"
 ---
 # Restore-AzDeletedWebApp
 
@@ -341,7 +341,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

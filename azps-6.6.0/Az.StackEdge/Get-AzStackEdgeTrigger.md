@@ -9,8 +9,8 @@ ms.openlocfilehash: 2ac5765889889a6377e1af7c2b5541042f9cc349
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141903177"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142706644"
 ---
 # Get-AzStackEdgeTrigger
 
@@ -175,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeTrigger
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

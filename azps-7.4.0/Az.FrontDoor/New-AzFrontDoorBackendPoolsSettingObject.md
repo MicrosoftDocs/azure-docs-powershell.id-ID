@@ -9,8 +9,8 @@ ms.openlocfilehash: 64363fea5121ebef0f7c039bb71cebc9483d86ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423016"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142747990"
 ---
 # New-AzFrontDoorBackendPoolsSettingObject
 
@@ -115,6 +115,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPoolsSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

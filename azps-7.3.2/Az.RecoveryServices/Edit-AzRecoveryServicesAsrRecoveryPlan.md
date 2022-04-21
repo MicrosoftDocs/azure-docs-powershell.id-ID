@@ -9,13 +9,13 @@ ms.openlocfilehash: 26aa619c16ef534dc590a0f449318582c832fe7e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142211095"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142696744"
 ---
 # Edit-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
-Mengedit paket Pemulihan Situs.
+Mengedit paket Site Recovery.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/edit-azrecoveryservicesasrrecoveryplan) untuk informasi terbaru.
@@ -49,7 +49,7 @@ Edit-AzRecoveryServicesAsrRecoveryPlan -InputObject <ASRRecoveryPlan> -Group <AS
 ```
 
 ## DESCRIPTION
-Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Pemulihan Situs Azure.
+Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Site Recovery Azure.
 
 ## EXAMPLES
 
@@ -58,11 +58,11 @@ Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Pemulihan Situs
 PS C:\> $RP = Edit-AzRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP -AppendGroup
 ```
 
-Menambahkan grup ke paket Pemulihan Situs Azure yang sudah ada dan mengembalikan paket pemulihan dalam memori yang diperbarui. 
+Menambahkan grup ke paket Site Recovery Azure yang sudah ada dan mengembalikan paket pemulihan dalam memori yang diperbarui. 
 
 ### Contoh 2
 
-Mengedit paket Pemulihan Situs. (autogenerasi)
+Mengedit paket Site Recovery. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Edit-AzRecoveryServicesAsrRecoveryPlan -AddProtectedItem <ASRReplicationProtectedItem[]> -Group <ASRRecoveryPlanGroup> -InputObject $RP
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
