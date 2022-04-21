@@ -9,8 +9,8 @@ ms.openlocfilehash: 4b47f9568d68a07a918c97c5abb716d91c3b93b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307653"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142777780"
 ---
 # Set-AzDiskKeyEncryptionKey
 
@@ -154,6 +154,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

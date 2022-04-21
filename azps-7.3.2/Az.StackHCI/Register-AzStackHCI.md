@@ -9,8 +9,8 @@ ms.openlocfilehash: d06fc115b319767ba6c767d82b5783ac56b15b33
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142339055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142755946"
 ---
 # Register-AzStackHCI
 
@@ -359,6 +359,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### ResourceId: ID sumber daya sumber daya yang dibuat di Azure.
 ### PortalResourceURL: URL Sumber Daya Portal Azure.
 ### PortalAADAppPermissionsURL: URL Portal Azure untuk halaman izin aplikasi AAD.
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: 4e1ec8fd03bec5f562d4132ac9aa028008cebbfd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841443"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142751158"
 ---
 # New-AzAutomationSourceControl
 
 ## SYNOPSIS
-Membuat kontrol sumber Otomatisasi Azure.
+Membuat kontrol sumber Azure Automation.
 
 ## SYNTAX
 
@@ -321,6 +321,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.SourceControl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

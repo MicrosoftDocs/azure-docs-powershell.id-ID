@@ -9,8 +9,8 @@ ms.openlocfilehash: 96dfa85e9b2db52e4ef17dc13467a5bab3f643f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142298653"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142770706"
 ---
 # New-AzSqlInstanceDatabase
 
@@ -254,6 +254,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

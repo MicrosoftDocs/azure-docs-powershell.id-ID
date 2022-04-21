@@ -15,62 +15,62 @@ ms.locfileid: "142432826"
 ---
 # Modul Az.DataProtection
 ## Deskripsi
-Microsoft Azure PowerShell: cmdlet DataProtection
+Microsoft Azure PowerShell: Cmdlet DataProtection
 
 ## Cmdlet Az.DataProtection
 ### [Backup-AzDataProtectionBackupInstanceAdhoc](Backup-AzDataProtectionBackupInstanceAdhoc.md)
-Memicu cadangan adhoc
+Memicu pencadangan adhoc
 
 ### [Edit-AzDataProtectionPolicyRetentionRuleClientObject](Edit-AzDataProtectionPolicyRetentionRuleClientObject.md)
-Menambahkan atau menghapus Aturan Penyimpanan ke Kebijakan yang sudah ada
+Menambahkan atau menghapus Aturan Retensi ke Kebijakan yang ada
 
 ### [Edit-AzDataProtectionPolicyTagClientObject](Edit-AzDataProtectionPolicyTagClientObject.md)
-Menambahkan atau menghapus tag jadwal dalam kebijakan cadangan yang sudah ada.
+Menambahkan atau menghapus tag jadwal dalam kebijakan pencadangan yang ada.
 
 ### [Edit-AzDataProtectionPolicyTriggerClientObject](Edit-AzDataProtectionPolicyTriggerClientObject.md)
-Pembaruan Jadwal pencadangan kebijakan cadangan yang sudah ada.
+Memperbarui jadwal Pencadangan dari kebijakan pencadangan yang ada.
 
 ### [Find-AzDataProtectionRestorableTimeRange](Find-AzDataProtectionRestorableTimeRange.md)
 
 
 ### [Get-AzDataProtectionBackupInstance](Get-AzDataProtectionBackupInstance.md)
-Mendapatkan instans cadangan dengan nama dalam kubah cadangan
+Mendapatkan instans cadangan dengan nama dalam vault cadangan
 
 ### [Get-AzDataProtectionBackupPolicy](Get-AzDataProtectionBackupPolicy.md)
-Mendapatkan kebijakan cadangan milik kubah cadangan
+Mendapatkan kebijakan cadangan milik brankas cadangan
 
 ### [Get-AzDataProtectionBackupVault](Get-AzDataProtectionBackupVault.md)
 Mengembalikan kumpulan sumber daya milik grup sumber daya.
 
 ### [Get-AzDataProtectionJob](Get-AzDataProtectionJob.md)
-Mendapatkan pekerjaan dengan id dalam kubah cadangan
+Mendapatkan pekerjaan dengan id di brankas cadangan
 
 ### [Get-AzDataProtectionOperation](Get-AzDataProtectionOperation.md)
 Mengembalikan daftar operasi yang tersedia.
 
 ### [Get-AzDataProtectionPolicyTemplate](Get-AzDataProtectionPolicyTemplate.md)
-Mendapatkan templat kebijakan default untuk tipe sumber data yang dipilih.
+Mendapatkan templat kebijakan default untuk jenis sumber data yang dipilih.
 
 ### [Get-AzDataProtectionRecoveryPoint](Get-AzDataProtectionRecoveryPoint.md)
-Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Datasource.
+Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Sumber Data.
 
 ### [Initialize-AzDataProtectionBackupInstance](Initialize-AzDataProtectionBackupInstance.md)
-Menginisialisasi objek Permintaan instans Cadangan untuk mengonfigurasi cadangan
+Menginisialisasi objek Permintaan instans Cadangan untuk mengonfigurasi pencadangan
 
 ### [Initialize-AzDataProtectionRestoreRequest](Initialize-AzDataProtectionRestoreRequest.md)
-Menginisialisasi objek Pulihkan Permintaan untuk memicu pemulihan pada instans cadangan yang diproteksi.
+Menginisialisasi objek Permintaan Pemulihan untuk memicu pemulihan pada instans cadangan yang dilindungi.
 
 ### [New-AzDataProtectionBackupInstance](New-AzDataProtectionBackupInstance.md)
 Mengonfigurasi Pencadangan untuk sumber daya azure yang didukung
 
 ### [New-AzDataProtectionBackupPolicy](New-AzDataProtectionBackupPolicy.md)
-Membuat kebijakan cadangan baru dalam kubah cadangan tertentu
+Membuat kebijakan pencadangan baru dalam vault cadangan tertentu
 
 ### [New-AzDataProtectionBackupVault](New-AzDataProtectionBackupVault.md)
 Membuat atau memperbarui sumber daya BackupVault milik grup sumber daya.
 
 ### [New-AzDataProtectionBackupVaultStorageSettingObject](New-AzDataProtectionBackupVaultStorageSettingObject.md)
-Dapatkan objek pengaturan penyimpanan Vault Cadangan
+Mendapatkan objek pengaturan penyimpanan Backup Vault
 
 ### [New-AzDataProtectionPolicyTagCriteriaClientObject](New-AzDataProtectionPolicyTagCriteriaClientObject.md)
 Membuat objek kriteria baru
@@ -85,22 +85,22 @@ Membuat objek Siklus Hidup baru
 Menghapus backupInstances
 
 ### [Remove-AzDataProtectionBackupPolicy](Remove-AzDataProtectionBackupPolicy.md)
-Menghapus kebijakan cadangan milik kubah cadangan
+Menghapus kebijakan cadangan milik brankas cadangan
 
 ### [Remove-AzDataProtectionBackupVault](Remove-AzDataProtectionBackupVault.md)
 Menghapus sumber daya BackupVault dari grup sumber daya.
 
 ### [Search-AzDataProtectionBackupInstanceInAzGraph](Search-AzDataProtectionBackupInstanceInAzGraph.md)
-Mencari instans Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+Mencari instans Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 ### [Search-AzDataProtectionJobInAzGraph](Search-AzDataProtectionJobInAzGraph.md)
 Mencari Pekerjaan Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 ### [Start-AzDataProtectionBackupInstanceRestore](Start-AzDataProtectionBackupInstanceRestore.md)
-Pemulihan pemicu untuk BackupInstance
+Memicu pemulihan untuk BackupInstance
 
 ### [Update-AzDataProtectionBackupInstanceAssociatedPolicy](Update-AzDataProtectionBackupInstanceAssociatedPolicy.md)
-Pembaruan kebijakan terkait untuk instans cadangan tertentu
+Memperbarui kebijakan terkait untuk instans cadangan tertentu
 
 ### [Update-AzDataProtectionBackupVault](Update-AzDataProtectionBackupVault.md)
 Memperbarui sumber daya BackupVault milik grup sumber daya.

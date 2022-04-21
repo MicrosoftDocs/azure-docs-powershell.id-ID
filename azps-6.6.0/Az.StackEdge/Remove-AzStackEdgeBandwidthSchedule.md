@@ -9,8 +9,8 @@ ms.openlocfilehash: 9d2573b97113b9ca2b6db87957d8ab257a2093e0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141903051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142770310"
 ---
 # Remove-AzStackEdgeBandwidthSchedule
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

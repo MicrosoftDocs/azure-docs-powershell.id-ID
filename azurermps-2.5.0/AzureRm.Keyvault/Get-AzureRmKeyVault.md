@@ -8,8 +8,8 @@ ms.openlocfilehash: 7cbcf722b71919096ca2c7d1dc3201ad2fe42f2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393511"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735894"
 ---
 # Get-AzureRmKeyVault
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.List'1[Microsoft.Azure.Commands.KeyVault.Models.PSDeletedVault]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

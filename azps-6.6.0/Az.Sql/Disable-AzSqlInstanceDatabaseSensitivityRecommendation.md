@@ -10,16 +10,16 @@ ms.openlocfilehash: 8b00a32561954f40794d608c97f277fc46c1d961
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142076755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142707454"
 ---
 # Disable-AzSqlInstanceDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
-Menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom dalam database Azure SQL Managed Instance.
+Menonaktifkan (mematikan) rekomendasi sensitivitas pada kolom di database Azure SQL Managed Instance.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/disable-azsqlinstancedatabasesensitivityrecommendation) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/disable-azsqlinstancedatabasesensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,21 +45,21 @@ Disable-AzSqlInstanceDatabaseSensitivityRecommendation -DatabaseObject <AzureSql
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzSqlInstanceDatabaseSensitivityRecommendation menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom dalam database Azure SQL Managed Instance.
+Cmdlet Disable-AzSqlInstanceDatabaseSensitivityRecommendation menonaktifkan (menutup) rekomendasi sensitivitas pada kolom dalam database Azure SQL Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance.
+### Contoh 1: Nonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Disable-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Menonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam database Azure SQL Managed Instance dengan Piping.
+### Contoh 2: Nonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam database Azure SQL Managed Instance dengan Piping.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database | Disable-AzSqlInstanceDatabaseSensitivityRecommendation
 ```
 
-### Contoh 3: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance dengan Piping.
+### Contoh 3: Nonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance dengan Piping.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName managedInstance -Name database | Disable-AzSqlInstanceDatabaseSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
@@ -67,7 +67,7 @@ PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Azure SQL Managed Instance nama.
+nama Azure SQL Managed Instance.
 
 ```yaml
 Type: System.String
@@ -231,8 +231,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -272,7 +272,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

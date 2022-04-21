@@ -8,8 +8,8 @@ ms.openlocfilehash: 3603adcce2ce39cc4e0a2dd57869a6ca10c48998
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285619"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735582"
 ---
 # New-AzureRmNetworkSecurityGroup
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

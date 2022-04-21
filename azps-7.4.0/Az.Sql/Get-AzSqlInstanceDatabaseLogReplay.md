@@ -9,8 +9,8 @@ ms.openlocfilehash: 8146d5c3c225ff1db7694e5561d92e2cbd302424
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165274"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799632"
 ---
 # Get-AzSqlInstanceDatabaseLogReplay
 
@@ -109,6 +109,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseRestoreDetailsResultModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

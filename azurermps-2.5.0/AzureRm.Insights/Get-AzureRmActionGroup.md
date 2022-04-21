@@ -8,8 +8,8 @@ ms.openlocfilehash: c59d5cfe8952e01b62392d40b56273f3e9a0e71e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285806"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142736092"
 ---
 # Get-AzureRmActionGroup
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

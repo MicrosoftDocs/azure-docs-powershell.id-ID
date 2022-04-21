@@ -9,8 +9,8 @@ ms.openlocfilehash: 1cf60cc1d4d2076fc10318b275a992602379eaf7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989994"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142799668"
 ---
 # Disable-AzSqlInstanceAdvancedDataSecurity
 
@@ -163,6 +163,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.AdvancedThreatProtection.Model.ManagedInstanceAdvancedDataSecurityPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

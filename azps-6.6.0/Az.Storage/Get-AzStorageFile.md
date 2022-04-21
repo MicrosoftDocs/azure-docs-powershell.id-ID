@@ -10,8 +10,8 @@ ms.openlocfilehash: 6e4b6c05ca84b2df2d1d160fc2df51df623aa46b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142221823"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142769914"
 ---
 # Get-AzStorageFile
 
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan konteks Penyimpanan Azure.
-Untuk mendapatkan konteks Penyimpanan, gunakan cmdlet New-AzStorageContext.
+Menentukan konteks Azure Storage.
+Untuk mendapatkan konteks Storage, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -ServerTimeoutPerRequest
 Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
-Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan Penyimpanan mengembalikan kesalahan.
+Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan Storage mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Menentukan objek **CloudFileShare** .
 Cmdlet ini mendapatkan file atau direktori dari berbagi file yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare.
-Objek ini berisi konteks Penyimpanan.
+Objek ini berisi konteks Storage.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
@@ -228,17 +228,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.Storage.File.CloudFileShare
+### Microsoft.Azure. Storage. File.CloudFileShare
 
-### Microsoft.Azure.Storage.File.CloudFileDirectory
+### Microsoft.Azure. Storage. File.CloudFileDirectory
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.Commands.Common.Storage.ResourceModel.AzureStorageFile
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

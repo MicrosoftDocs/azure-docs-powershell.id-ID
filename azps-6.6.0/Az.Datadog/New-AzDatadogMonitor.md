@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMonitor.md
 ms.openlocfilehash: 63e3af9d361ed3bb88cb0339223f4d8960dbcdb4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139977243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142715860"
 ---
 # New-AzDatadogMonitor
 
@@ -18,7 +18,7 @@ ms.locfileid: "139977243"
 Membuat sumber daya monitor.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datadog/new-azdatadogmonitor) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,12 +46,12 @@ Location    Name           Type
 eastus2euap Datadog-pwsh01 microsoft.Datadog/monitors
 ```
 
-Perintah ini akan membuat sumber daya monitor.
+Perintah ini membuat sumber daya monitor.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas
+Jenis identitas
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.ManagedIdentityTypes
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitoringStatus
-Bendera yang menentukan jika pemantauan sumber daya diaktifkan atau dinonaktifkan.
+Bendera yang menentukan apakah pemantauan sumber daya diaktifkan atau dinonaktifkan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.MonitoringStatus
@@ -125,7 +125,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Memantau nama sumber daya
 
 ```yaml
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationApiKey
-Kunci api terkait dengan organisasi Datadog.
+Kunci api yang terkait dengan organisasi Datadog.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationApplicationKey
-Kunci aplikasi terkait dengan organisasi Datadog.
+Kunci aplikasi yang terkait dengan organisasi Datadog.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationEnterpriseAppId
-Id Aplikasi Enterprise yang digunakan untuk Masuk tunggal.
+Id Aplikasi Perusahaan yang digunakan untuk Akses menyeluruh.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationLinkingAuthCode
-Kode auth digunakan untuk menautkan ke organisasi datadog yang sudah ada.
+Kode autentikasi yang digunakan untuk menautkan ke organisasi datadog yang ada.
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationLinkingClientId
-Nomor client_id dari token auth yang sudah ada untuk menautkan organisasi.
+client_id dari yang ada dengan imbalan token autentikasi untuk menautkan organisasi.
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserInfoEmailAddress
-Email pengguna yang digunakan oleh Datao untuk menghubungi mereka jika diperlukan
+Email pengguna yang digunakan oleh Datadog untuk menghubungi mereka jika diperlukan
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserInfoPhoneNumber
-Telepon pengguna yang digunakan oleh Datadog untuk menghubungi mereka jika diperlukan
+Telepon jumlah pengguna yang digunakan oleh Datadog untuk menghubungi mereka jika diperlukan
 
 ```yaml
 Type: System.String
@@ -351,8 +351,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,8 +367,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -383,15 +383,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatamonitorResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

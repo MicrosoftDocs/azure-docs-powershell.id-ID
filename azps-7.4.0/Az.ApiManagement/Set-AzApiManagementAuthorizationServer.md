@@ -10,8 +10,8 @@ ms.openlocfilehash: b54537c94b40b40ff11cc5f3b59202c998d4535f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841491"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142751842"
 ---
 # Set-AzApiManagementAuthorizationServer
 
@@ -43,7 +43,7 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 Set-AzApiManagementAuthorizationServer -Context $ApiMgmtContext -ServerId 0123456789 -Name "Contoso OAuth2 server" -ClientRegistrationPageUrl "https://contoso/signupv2" -AuthorizationEndpointUrl "https://contoso/authv2" -TokenEndpointUrl "https://contoso/tokenv2" -ClientId "clientid" -ClientSecret "e041ed1b660b4eadbad5a29d066e6e88" -AuthorizationRequestMethods @('Get') -GrantTypes @( 'AuthorizationCode', 'Implicit', 'ClientCredentials') -ClientAuthenticationMethods @('Basic') -TokenBodyParameters @{'par1'='val1'} -AccessTokenSendingMethods @('AuthorizationHeader')
 ```
 
-Perintah ini mengubah server otorisasi Manajemen API yang ditentukan.
+Perintah ini mengubah server otorisasi API Management yang ditentukan.
 
 ### Contoh 2
 
@@ -398,7 +398,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOAuth2AuthorizationServer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

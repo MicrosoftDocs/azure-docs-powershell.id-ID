@@ -8,8 +8,8 @@ ms.openlocfilehash: 247470ee878a37968cd690d27f8e5e16047febbd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142145667"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735606"
 ---
 # New-AzureRmLoadBalancerInboundNatPoolConfig
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSInboundNatPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d895485354c33daa4eac57b699358ee0335905be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063455"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142792383"
 ---
 # Update-AzureKeyVaultSecret
 
@@ -316,6 +316,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
