@@ -9,8 +9,8 @@ ms.openlocfilehash: 9d5cd5b64cd97a411b1b25f887bdc42a9619d926
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142252297"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142815202"
 ---
 # Invoke-AzSqlDatabaseFailover
 
@@ -208,7 +208,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

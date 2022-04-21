@@ -9,8 +9,8 @@ ms.openlocfilehash: 3117433c677330eba4585d45337c44658225ee0a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142387862"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142793062"
 ---
 # Get-AzureRmEventGridSubscription
 
@@ -282,6 +282,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSEventSubscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

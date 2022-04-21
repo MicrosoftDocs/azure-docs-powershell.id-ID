@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c84a273363a3dea2eff74dbc715fdd2f7c781a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142338767"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142814428"
 ---
 # Get-AzStorageFileHandle
 
@@ -330,6 +330,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Storage. File.FileHandleResultSegment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

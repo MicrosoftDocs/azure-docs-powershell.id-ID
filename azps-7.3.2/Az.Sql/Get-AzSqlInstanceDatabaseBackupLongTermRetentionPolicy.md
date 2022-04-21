@@ -9,8 +9,8 @@ ms.openlocfilehash: b931a4d6dc8c9fff50763a5336cb44fdd5c3894d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142400471"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142757494"
 ---
 # Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabaseBackup.Model.AzureSqlManagedDatabaseBackupLongTermRetentionPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 5148e6bcd00279c4ca61ee4fcbb8be05bc573375
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787244"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142763902"
 ---
 # Add-AzApplicationGatewayRequestRoutingRule
 
@@ -324,7 +324,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

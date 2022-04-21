@@ -9,13 +9,13 @@ ms.openlocfilehash: 2b0da2897e6bc31e7b86fecb0ff6a7fa3b669281
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800640"
 ---
 # New-AzServiceBusKey
 
 ## SYNOPSIS
-Meregenerasi string koneksi utama atau sekunder untuk ruang nama atau antrean atau topik Bus Layanan.
+Meregenerasi string koneksi primer atau sekunder untuk namespace layanan atau antrean atau topik Bus Layanan.
 
 ## SYNTAX
 
@@ -26,14 +26,14 @@ New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
  [<CommonParameters>]
 ```
 
-### AntreanAuthorizationRuleSet
+### QueueAuthorizationRuleSet
 ```
 New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### TopikAuthorizationRuleSet
+### TopicAuthorizationRuleSet
 ```
 New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -41,7 +41,7 @@ New-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi utama atau sekunder baru untuk ruang nama atau antrean atau aturan topik dan otorisasi yang ditentukan.
+Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi primer atau sekunder baru untuk namespace layanan atau antrean atau topik dan aturan otorisasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,42 +50,42 @@ Cmdlet **New-AzServiceBusKey** menghasilkan string koneksi utama atau sekunder b
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk ruang nama.
+Meregenerasi string koneksi primer atau sekunder untuk namespace.
 
 ### Contoh 2
 ```powershell
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -RegenerateKey PrimaryKey -KeyValue {base64-encoded 256-bit key}
 ```
 
-Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk ruang nama.
+Meregenerasi string koneksi primer atau sekunder dengan nilai Kunci yang disediakan untuk namespace.
 
 ### Contoh 3
 ```powershell
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk antrean.
+Meregenerasi string koneksi primer atau sekunder untuk antrean.
 
 ### Contoh 4
 ```powershell
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -RegenerateKey PrimaryKey -KeyValue {base64-encoded 256-bit key}
 ```
 
-Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk antrean.
+Meregenerasi string koneksi primer atau sekunder dengan nilai Kunci yang disediakan untuk antrean.
 
 ### Contoh 5
 ```powershell
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk topik tersebut.
+Meregenerasi string koneksi primer atau sekunder untuk topik tersebut.
 
 ### Contoh 6
 ```powershell
 New-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -RegenerateKey PrimaryKey -KeyValue {base64-encoded 256-bit key}
 ```
 
-Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk topik tersebut.
+Meregenerasi string koneksi primer atau sekunder dengan nilai Kunci yang disediakan untuk topik tersebut.
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyValue
-Kunci 256-bit berkode base64 untuk menandatangani dan memvalidasi token SAS.
+Kunci 256-bit yang dikodekan base64 untuk menandatangani dan memvalidasi token SAS.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule.
 
 ```yaml
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerateKey
-Regenerasi Tombol - 'PrimaryKey'/'SecondaryKey'.
+Regenerasi Kunci - 'PrimaryKey'/'SecondaryKey'.
 
 ```yaml
 Type: System.String
@@ -210,8 +210,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -252,6 +252,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSListKeysAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

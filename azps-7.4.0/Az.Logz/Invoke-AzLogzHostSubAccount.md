@@ -9,13 +9,13 @@ ms.openlocfilehash: 5e4430d56d4be2277197c44168990f3abc3f3661
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836163"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142681948"
 ---
 # Invoke-AzLogzHostSubAccount
 
 ## SYNOPSIS
-Mengembalikan payload yang perlu dilewati sebagai permintaan untuk menginstal agen Logz.io di VM.
+Mengembalikan payload yang perlu diteruskan sebagai permintaan untuk menginstal agen Logz.io pada VM.
 
 ## SYNTAX
 
@@ -25,18 +25,18 @@ Invoke-AzLogzHostSubAccount -MonitorName <String> -ResourceGroupName <String> -S
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### HostViaIdentitas
+### HostViaIdentity
 ```
 Invoke-AzLogzHostSubAccount -InputObject <ILogzIdentity> [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan payload yang perlu dilewati sebagai permintaan untuk menginstal agen Logz.io di VM.
+Mengembalikan payload yang perlu diteruskan sebagai permintaan untuk menginstal agen Logz.io pada VM.
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan muatan sub akun logz yang perlu dilewatkan dalam isi permintaan untuk menginstal agen Logz.io di VM
+### Contoh 1: Mengembalikan payload sub akun logz yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM
 ```powershell
 Invoke-AzLogzHostSubAccount -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01
 ```
@@ -47,9 +47,9 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan muatan sub akun logz yang perlu dilewatkan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
+Perintah ini mengembalikan payload sub akun logz yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
 
-### Contoh 2: Mengembalikan muatan sub akun logz yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut pipeline
+### Contoh 2: Mengembalikan payload sub akun logz yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut alur
 ```powershell
 Get-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01 | Invoke-AzLogzHostSubAccount
 ```
@@ -60,7 +60,7 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan muatan sub akun logz yang perlu dialihkan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut pipeline.
+Perintah ini mengembalikan payload sub akun logz yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut alur.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -155,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IVMExtensionPayload
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -210,7 +210,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

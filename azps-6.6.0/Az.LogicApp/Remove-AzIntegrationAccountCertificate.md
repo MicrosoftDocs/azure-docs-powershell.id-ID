@@ -10,8 +10,8 @@ ms.openlocfilehash: bd49093ac074ea28554874cf1c82040255d137f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141911074"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142775368"
 ---
 # Remove-AzIntegrationAccountCertificate
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 8f42f96729695f493a86a64393f55ab8466af861
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142213939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142764352"
 ---
 # New-AzMonitorLogAnalyticsSolution
 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MonitoringSolutions.Models.Api20151101Preview.ISolution
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: bb29b7f1cb4a4a4bd704fa640eea40ade7266f5c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142224991"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142771445"
 ---
 # New-AzRecoveryServicesBackupProtectionPolicy
 
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

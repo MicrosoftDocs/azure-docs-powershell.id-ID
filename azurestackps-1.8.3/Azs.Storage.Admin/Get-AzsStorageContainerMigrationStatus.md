@@ -7,8 +7,8 @@ ms.openlocfilehash: 96220d7bac0a71f579f81a4d01f4f1dc3cba9dd1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142333115"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142785664"
 ---
 # Get-AzsStorageContainerMigrationStatus
 
@@ -90,6 +90,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.MigrationResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

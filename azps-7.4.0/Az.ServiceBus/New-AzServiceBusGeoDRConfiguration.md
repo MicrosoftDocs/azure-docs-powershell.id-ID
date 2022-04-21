@@ -9,13 +9,13 @@ ms.openlocfilehash: 4c5d534642fe40c98435e3ee45712fb558b664a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800712"
 ---
 # New-AzServiceBusGeoDRConfiguration
 
 ## SYNOPSIS
-Membuat Alias baru(konfigurasi Pemulihan Bencana)
+Membuat Alias baru (konfigurasi Pemulihan Bencana)
 
 ## SYNTAX
 
@@ -59,12 +59,12 @@ PartnerNamespace  : /subscriptions/{SubscriptionId}/resourceGroups/TestignGeoDR/
 Role              : Primary
 ```
 
-Membuat alias "SampleDRConfigName" dengan ruang nama utama "SampleNamespace_Primary" dengan ruang nama sekunder "SampleNamespace_Secondary"
+Membuat alias "SampleDRConfigName" dengan namespace primer "SampleNamespace_Primary" dengan namespace sekunder "SampleNamespace_Secondary"
 
 ## PARAMETERS
 
-### -AlternatifName
-Nama Alternatif
+### -AlternateName
+AlternateName
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi DR
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerNamespace
-DR Configuration PartnerNamespace (ARM Id of PartnerNamespace [Secondary namespace])
+PartnerNamespace Konfigurasi DR (ID ARM dari PartnerNamespace [Namespace sekunder])
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Ruang Nama
+Id Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -198,8 +198,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,6 +242,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

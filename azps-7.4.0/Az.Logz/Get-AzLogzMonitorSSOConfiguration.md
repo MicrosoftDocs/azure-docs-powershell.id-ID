@@ -1,66 +1,66 @@
 ---
 external help file: ''
 Module Name: Az.Logz
-online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlogzhostmonitor
+online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzmonitorssoconfiguration
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
-ms.openlocfilehash: 4784cb313454d7e554bb9c1735a4e7b275a5fd91
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
+ms.openlocfilehash: c5096783d5559c07684a3c10e4ffbb6fa9263d63
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807840"
+ms.locfileid: "142682020"
 ---
-# Invoke-AzLogzHostMonitor
+# Get-AzLogzMonitorSSOConfiguration
 
 ## SYNOPSIS
-Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
+Mendapatkan sumber daya akses menyeluruh Logz untuk Monitor yang diberikan.
 
 ## SYNTAX
 
-### Host (Default)
+### Dapatkan (Default)
 ```
-Invoke-AzLogzHostMonitor -MonitorName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-AzLogzMonitorSSOConfiguration -MonitorName <String> -ResourceGroupName <String>
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### HostViaIdentity
+### GetViaIdentity
 ```
-Invoke-AzLogzHostMonitor -InputObject <ILogzIdentity> [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+Get-AzLogzMonitorSSOConfiguration -InputObject <ILogzIdentity> [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
+Mendapatkan sumber daya akses menyeluruh Logz untuk Monitor yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM
+### Contoh 1: Mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor yang diberikan
 ```powershell
-Invoke-AzLogzHostMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
+Get-AzLogzMonitorSSOConfiguration -ResourceGroupName LPTrials -MonitorName lpatlogz
 ```
 
 ```output
-ApiKey                           Region
-------                           ------
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
+Name    ProvisioningState SingleSignOnState SingleSignOnUrl                                ResourceGroupName
+----    ----------------- ----------------- ---------------                                -----------------
+default Succeeded         Existing          https://api-wa.logz.io/auth/azure/325420/login LPTrials
 ```
 
-Perintah ini mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
+Perintah ini mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor yang diberikan.
 
-### Contoh 2: Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut alur
+### Contoh 2: Mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor yang diberikan berdasarkan alur
 ```powershell
-Get-AzLogzMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Invoke-AzLogzHostMonitor
+New-AzLogzMonitorSSOConfiguration -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Get-AzLogzMonitorSSOConfiguration
 ```
 
 ```output
-ApiKey                           Region
-------                           ------
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
+Name    ProvisioningState SingleSignOnState SingleSignOnUrl             ResourceGroupName
+----    ----------------- ----------------- ---------------             -----------------
+default Succeeded         Disable           https://app.logz.io/        logz-rg-test
 ```
 
-Perintah ini mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM berdasarkan alur.
+Perintah ini mendapatkan sumber daya akses menyeluruh Logz default untuk Monitor oleh alur yang diberikan.
 
 ## PARAMETERS
 
@@ -84,7 +84,7 @@ Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOB
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
-Parameter Sets: HostViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ Memantau nama sumber daya
 
 ```yaml
 Type: System.String
-Parameter Sets: Host
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
-Parameter Sets: Host
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -129,44 +129,13 @@ Accept wildcard characters: False
 ID langganan target.
 
 ```yaml
-Type: System.String
-Parameter Sets: Host
+Type: System.String[]
+Parameter Sets: Get
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Menunjukkan yang akan terjadi jika cmdlet dijalankan.
-Cmdlet tidak dijalankan.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -180,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IVMExtensionPayload
+### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.ILogzSingleSignOnResource
 
 ## NOTES
 

@@ -1,47 +1,49 @@
 ---
 external help file: Az.DataMigration-help.xml
 Module Name: Az.DataMigration
-online version: https://docs.microsoft.com/powershell/module/az.datamigration/new-azdatamigrationsqlservice
+online version: https://docs.microsoft.com/powershell/module/az.datamigration/stop-azdatamigrationtosqlmanagedinstance
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSqlService.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSqlService.md
-ms.openlocfilehash: 1f270ddbb67dc4be395af7490987724256c45297
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlManagedInstance.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlManagedInstance.md
+ms.openlocfilehash: a9c9d7389880e897de27a1ae6e8da9a1bfc6e7b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685008"
+ms.locfileid: "142684918"
 ---
-# New-AzDataMigrationSqlService
+# Stop-AzDataMigrationToSqlManagedInstance
 
 ## SYNOPSIS
-Buat atau Perbarui Database Migration Service.
+Hentikan migrasi database yang sedang berlangsung ke SQL Managed Instance.
 
 ## SYNTAX
 
 ```
-New-AzDataMigrationSqlService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-Location <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Stop-AzDataMigrationToSqlManagedInstance -ManagedInstanceName <String> -ResourceGroupName <String>
+ -TargetDbName <String> [-SubscriptionId <String>] [-MigrationOperationId <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Buat atau Perbarui Database Migration Service.
+Hentikan migrasi database yang sedang berlangsung ke SQL Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Sql Migration Service di Grup Sumber Daya tertentu
+### Contoh 1: Menghentikan migrasi yang sedang berlangsung ke SQL Managed Instance
 ```powershell
-New-AzDataMigrationSqlService -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService" -Location "eastus2"
+$miMigration = Get-AzDataMigrationToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDatabase"
+Stop-AzDataMigrationToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDatabase" -MigrationOperationId $miMigration.MigrationOperationId
+Get-AzDataMigrationToSqlManagedInstance -InputObject $miMigration 
 ```
 
 ```output
-Location  Name                  Type                                         ProvisioningState IntegrationRuntimeState
---------  ----                  ----                                         ----------------- -----------------------
-eastus2   MySqlMigrationService Microsoft.DataMigration/sqlMigrationServices Succeeded         NeedRegistration
+Name               Type                                       Kind  ProvisioningState MigrationStatus
+----               ----                                       ----  ----------------- ---------------
+MyDatabase         Microsoft.DataMigration/databaseMigrations SqlMi Canceling         Canceling
 ```
 
-Perintah ini membuat Sql Migration Service di Grup Sumber Daya tertentu.
+Perintah ini menghentikan migrasi yang sedang berlangsung ke SQL Managed Instance.
 
 ## PARAMETERS
 
@@ -75,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lokasi
+### -ManagedInstanceName
 .
 
 ```yaml
@@ -83,22 +85,22 @@ Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Name
-Nama SQL Migration Service.
+### -MigrationOperationId
+Operasi migrasi pelacakan ID.
 
 ```yaml
 Type: System.String
 Parameter Sets: (All)
-Aliases: SqlMigrationServiceName
+Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -166,15 +168,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
-Kamus dari \<string\>
+### -TargetDbName
+Nama database target.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,7 +221,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.ISqlMigrationService
+### System.Boolean
 
 ## NOTES
 

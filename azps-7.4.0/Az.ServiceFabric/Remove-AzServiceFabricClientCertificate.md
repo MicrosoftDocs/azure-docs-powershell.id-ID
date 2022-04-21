@@ -9,8 +9,8 @@ ms.openlocfilehash: 91ef998082d56e471f9245605d139b79305f4946
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428417"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142800262"
 ---
 # Remove-AzServiceFabricClientCertificate
 
@@ -26,7 +26,7 @@ Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <S
  [<CommonParameters>]
 ```
 
-### SingleUpdateWithUmbprint
+### SingleUpdateWithThumbprint
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String> -Thumbprint <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,7 +39,7 @@ Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <S
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MultipleUpdatesWithumbprint
+### MultipleUpdatesWithThumbprint
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-AdminClientThumbprint <String[]>] [-ReadonlyClientThumbprint <String[]>]
@@ -56,12 +56,12 @@ Gunakan **Remove-AzServiceFabricClientCertificate** untuk menghapus sertifikat k
 Remove-AzServiceFabricClientCertificate -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -Thumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A
 ```
 
-Perintah ini akan menghapus sertifikat klien dengan sidik jari '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' dari kluster.
+Perintah ini akan menghapus sertifikat klien dengan thumbprint '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' dari kluster.
 
 ## PARAMETERS
 
 ### -AdminClientThumbprint
-Menentukan sidik jari sertifikat klien yang hanya memiliki izin admin
+Tentukan thumbprint sertifikat klien yang hanya memiliki izin admin
 
 ```yaml
 Type: System.String[]
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificateCommonName
-Tentukan nama umum klien , tipe sidik jari dan autentikasi penerbit
+Tentukan nama umum klien , thumbprint penerbit dan jenis autentikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSClientCertificateCommonName[]
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerThumbprint
-Tentukan sidik jari penerbit sertifikat klien
+Tentukan thumbprint pengeluar sertifikat klien
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyClientThumbprint
-Menentukan sidik jari sertifikat klien yang hanya memiliki izin baca-saja
+Tentukan thumbprint sertifikat klien yang hanya memiliki izin baca saja
 
 ```yaml
 Type: System.String[]
@@ -180,8 +180,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Sidik jari
-Tentukan sidik jari sertifikat klien
+### -Thumbprint
+Tentukan thumbprint sertifikat klien
 
 ```yaml
 Type: System.String
@@ -195,8 +195,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

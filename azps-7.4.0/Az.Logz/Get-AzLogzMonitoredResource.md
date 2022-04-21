@@ -9,8 +9,8 @@ ms.openlocfilehash: 269d5b44640da489f920d13ee0a3c457bfed6b22
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422659"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142807876"
 ---
 # Get-AzLogzMonitoredResource
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IMonitoredResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

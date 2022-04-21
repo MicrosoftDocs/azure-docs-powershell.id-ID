@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
 ms.openlocfilehash: 311517cd32fb07d78f0cfe848abe2c77626eda22
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140283775"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142775170"
 ---
 # Invoke-AzLogzHostMonitor
 
 ## SYNOPSIS
-Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io agen pada VM.
+Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/invoke-azlogzhostmonitor) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/invoke-azlogzhostmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Invoke-AzLogzHostMonitor -InputObject <ILogzIdentity> [-DefaultProfile <PSObject
 ```
 
 ## DESCRIPTION
-Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io agen pada VM.
+Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM
+### Contoh 1: Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM
 ```powershell
 PS C:\> Invoke-AzLogzHostMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
 
@@ -48,9 +48,9 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io pada VM.
+Perintah ini mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM.
 
-### Contoh 2: Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM dengan pipeline
+### Contoh 2: Mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut alur
 ```powershell
 PS C:\> Get-AzLogzMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Invoke-AzLogzHostMonitor
 
@@ -59,7 +59,7 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan muatan yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io dalam VM dengan saluran.
+Perintah ini mengembalikan payload yang perlu diteruskan dalam isi permintaan untuk menginstal agen Logz.io pada VM menurut alur.
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -139,8 +139,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -181,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IVMExtensionPayload
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -194,7 +194,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

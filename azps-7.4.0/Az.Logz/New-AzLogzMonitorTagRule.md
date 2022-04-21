@@ -9,8 +9,8 @@ ms.openlocfilehash: cc39f21dbc27696256324bb32b1806ca422fa950
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177727"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142807786"
 ---
 # New-AzLogzMonitorTagRule
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IMonitoringTagRules
 
-## CATATAN
+## NOTES
 
 ALIAS
 

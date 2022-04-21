@@ -9,8 +9,8 @@ ms.openlocfilehash: ea99c4c852ffa1702dace827e7c34c90cdad8a27
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142043939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142771516"
 ---
 # New-AzRecoveryServicesAsrVMNicConfig
 
@@ -344,6 +344,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVMNicConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
