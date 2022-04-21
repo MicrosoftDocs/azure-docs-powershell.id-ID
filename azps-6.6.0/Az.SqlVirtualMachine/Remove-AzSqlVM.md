@@ -9,8 +9,8 @@ ms.openlocfilehash: d6311155d48e6f403dea5bb4c3fcfaf663b80b57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141947563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142706716"
 ---
 # Remove-AzSqlVM
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

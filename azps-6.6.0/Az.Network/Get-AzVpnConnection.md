@@ -9,8 +9,8 @@ ms.openlocfilehash: 93314cae7f0ad308eb8f9ff2724f1553ecbe15e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142268755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142711738"
 ---
 # Get-AzVpnConnection
 
@@ -276,7 +276,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

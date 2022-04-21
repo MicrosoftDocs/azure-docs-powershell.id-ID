@@ -9,8 +9,8 @@ ms.openlocfilehash: 417e1a546777824df86b72f3740079ac91835192
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816876"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724526"
 ---
 # New-AzureRmSearchQueryKey
 
@@ -191,7 +191,7 @@ Parameter: ParentObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchQueryKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

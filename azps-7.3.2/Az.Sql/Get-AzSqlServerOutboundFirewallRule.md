@@ -9,8 +9,8 @@ ms.openlocfilehash: fa35929adfed3aa9f43d96ac63dc740c0cd2a050
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142366487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142757359"
 ---
 # Get-AzSqlServerOutboundFirewallRule
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.OutboundFirewallRules.Model.AzureSqlServerOutboundFirewallRulesModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 571739c72b42e07070a3882ef696388a4a923196
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386631"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731388"
 ---
 # Add-AzureRmApplicationGatewayHttpListener
 
@@ -258,7 +258,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

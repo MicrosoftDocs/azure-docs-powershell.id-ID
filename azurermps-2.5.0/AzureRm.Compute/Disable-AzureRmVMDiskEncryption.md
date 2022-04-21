@@ -8,8 +8,8 @@ ms.openlocfilehash: 81b6d88dcdf5e5e5b41dfd8205cf137a37c9c47c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286314"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142736306"
 ---
 # Disable-AzureRmVMDiskEncryption
 
@@ -259,7 +259,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

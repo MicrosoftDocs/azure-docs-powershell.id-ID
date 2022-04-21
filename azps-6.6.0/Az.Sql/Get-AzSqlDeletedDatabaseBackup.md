@@ -10,8 +10,8 @@ ms.openlocfilehash: dd1494b7199d84fac4c5bce1a5a03c91427c2771
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142120319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142707040"
 ---
 # Get-AzSqlDeletedDatabaseBackup
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDeletedDatabaseBackupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

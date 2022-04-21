@@ -9,8 +9,8 @@ ms.openlocfilehash: f9ddece05e90d8cc7cca4e5ef7c2d527f6955029
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141914439"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142718254"
 ---
 # Get-AzCdnProfileSupportedOptimizationType
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSOptimizationType
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

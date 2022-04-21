@@ -10,8 +10,8 @@ ms.openlocfilehash: a0572e73d270a37b3c705018a38b4a88fe88d1e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967619"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725319"
 ---
 # Get-AzureRmRecoveryServicesVaultSettingsFile
 
@@ -193,7 +193,7 @@ Parameter: Vault (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.VaultSettingsFilePath
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

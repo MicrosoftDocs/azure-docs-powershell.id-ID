@@ -9,8 +9,8 @@ ms.openlocfilehash: d0f26991498d8efc88eaacf9d01ed7e95d92e2cb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730323"
 ---
 # Remove-AzureRmApplicationGatewayHttpListenerCustomError
 
@@ -98,6 +98,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

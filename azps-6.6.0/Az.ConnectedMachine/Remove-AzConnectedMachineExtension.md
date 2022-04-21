@@ -9,8 +9,8 @@ ms.openlocfilehash: 439746c7f593e62261fb5ad30f633b6a753bcd66
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141960225"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142716868"
 ---
 # Remove-AzConnectedMachineExtension
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

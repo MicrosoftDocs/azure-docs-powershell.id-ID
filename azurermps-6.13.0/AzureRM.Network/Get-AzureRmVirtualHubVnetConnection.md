@@ -9,8 +9,8 @@ ms.openlocfilehash: 8aeb992b08e2749168ef3da2db6c264158c6a9ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138879"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730885"
 ---
 # Get-AzureRmVirtualHubVnetConnection
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

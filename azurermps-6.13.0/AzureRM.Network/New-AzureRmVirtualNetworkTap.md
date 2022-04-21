@@ -9,8 +9,8 @@ ms.openlocfilehash: d40d9c378afdbbc9380114a7b5998b173cb4652f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138083"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730328"
 ---
 # New-AzureRmVirtualNetworkTap
 
@@ -293,6 +293,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkTap
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

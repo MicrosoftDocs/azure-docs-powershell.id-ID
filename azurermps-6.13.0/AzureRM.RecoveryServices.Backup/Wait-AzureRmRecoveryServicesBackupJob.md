@@ -10,8 +10,8 @@ ms.openlocfilehash: 377250dcc8cbeb3727e7d2bf3f0dd0a8581d6401
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967849"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142725661"
 ---
 # Wait-AzureRmRecoveryServicesBackupJob
 
@@ -135,7 +135,7 @@ Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

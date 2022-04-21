@@ -9,8 +9,8 @@ ms.openlocfilehash: d52bc8737392bf6fce004a90b1f2fe5207cffea9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138346"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730594"
 ---
 # New-AzureRmPublicIpPrefix
 
@@ -272,6 +272,6 @@ System.Collections.Generic.List`[[System.String, mscorlib, Version=4.0.0.0,0, Cu
 ### Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

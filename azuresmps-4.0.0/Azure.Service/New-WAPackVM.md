@@ -7,8 +7,8 @@ ms.openlocfilehash: 0104aed9567bef851c8fa1c770f6798dddf58a5c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245220"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723852"
 ---
 # New-WAPackVM
 
@@ -272,7 +272,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 4e08654ce66ad2bc8ff0a8213e95495ff6a95176
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314897"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724908"
 ---
 # Move-AzureRmResource
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

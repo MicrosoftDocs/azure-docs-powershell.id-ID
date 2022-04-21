@@ -10,8 +10,8 @@ ms.openlocfilehash: 1a6c5ae69ef6aa6dc0f64d118fcbc733c97e23a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141820256"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730373"
 ---
 # Remove-AzureRmFirewall
 
@@ -191,7 +191,7 @@ Ketik 'PSAzureFirewall' diterima dari pipeline
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

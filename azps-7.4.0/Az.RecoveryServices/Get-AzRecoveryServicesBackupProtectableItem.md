@@ -9,8 +9,8 @@ ms.openlocfilehash: afa4b733a839a17dedd7fb24b9af481777f12b95
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990906"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142740448"
 ---
 # Get-AzRecoveryServicesBackupProtectableItem
 
@@ -191,6 +191,6 @@ System.String
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

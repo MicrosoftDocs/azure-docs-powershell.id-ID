@@ -9,8 +9,8 @@ ms.openlocfilehash: ec565362305aa1d9ad6d39f19b1c388c1859e432
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142740952"
 ---
 # Add-AzPurviewAccountRootCollectionAdmin
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

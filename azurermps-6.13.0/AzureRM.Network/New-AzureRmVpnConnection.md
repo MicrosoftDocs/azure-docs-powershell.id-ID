@@ -9,8 +9,8 @@ ms.openlocfilehash: 8b7d0845e6a8fce2d6c496573a493dfd187c34af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141883395"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730321"
 ---
 # New-AzureRmVpnConnection
 
@@ -365,6 +365,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

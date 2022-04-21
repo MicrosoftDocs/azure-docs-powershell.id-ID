@@ -9,8 +9,8 @@ ms.openlocfilehash: e99ead17cad0a3c6c440967ec1b1852bb5568a26
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775238"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142724446"
 ---
 # Set-AzureRmSecurityAutoProvisioningSetting
 
@@ -185,6 +185,6 @@ System.Management.Automation.SwitchParameter Microsoft.Azure.Commands.Security.M
 
 ### Microsoft.Azure.Commands.Security.Models.AutoProvisioningSettings.PSSecurityAutoProvisioningSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

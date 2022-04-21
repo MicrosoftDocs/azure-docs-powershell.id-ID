@@ -9,8 +9,8 @@ ms.openlocfilehash: fc5cc9124feb446b621596b874df6d44e83a1ccd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174774"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142672696"
 ---
 # Remove-AzDeviceSecurityGroup
 
@@ -185,6 +185,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

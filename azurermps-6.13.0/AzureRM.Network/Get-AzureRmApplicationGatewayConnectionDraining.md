@@ -9,8 +9,8 @@ ms.openlocfilehash: 147727cffc03de5ba8848705cf79facdbdc43320
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884003"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731181"
 ---
 # Get-AzureRmApplicationGatewayConnectionDraining
 
@@ -86,7 +86,7 @@ Parameter: BackendHttpSettings (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionDraining
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

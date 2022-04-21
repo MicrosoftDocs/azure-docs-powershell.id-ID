@@ -9,13 +9,13 @@ ms.openlocfilehash: ddc5abf78f6619ca2187c4c77df8bd6cf5c763ad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142339343"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142756414"
 ---
 # Set-AzSqlServerDnsAlias
 
 ## SYNOPSIS
-Mengubah server tempat Alias DNS Server Azure SQL menunjuk
+Mengubah server tempat Alias DNS Azure SQL Server menunjuk
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserverdnsalias) untuk informasi terbaru.
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

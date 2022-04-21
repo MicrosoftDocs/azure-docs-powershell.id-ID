@@ -10,8 +10,8 @@ ms.openlocfilehash: a9ad0933ce42dc0d031d9ca44d9b5ff7b84d6b81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141777542"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730502"
 ---
 # New-AzureRmVirtualNetworkGatewayConnection
 
@@ -398,7 +398,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

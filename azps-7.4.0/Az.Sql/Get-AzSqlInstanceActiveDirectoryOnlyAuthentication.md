@@ -9,13 +9,13 @@ ms.openlocfilehash: 78d2f32df312da54ed822f6dafbd09fceb877e7b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420379"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142738432"
 ---
 # Get-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Hanya mendapatkan autentikasi Azure AD untuk SQL Managed Instance tertentu.
+Mendapatkan autentikasi Azure AD hanya untuk Instans Terkelola SQL tertentu.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzSqlInstanceActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication** mendapatkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk Instans Terkelola AzureSQL dalam langganan saat ini.
+Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication hanya mendapatkan persyaratan autentikasi** Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication** mendapatkan Azure 
 Get-AzSqlInstanceActiveDirectoryOnlyAuthentication -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01"
 ```
 
-Perintah ini hanya mendapatkan persyaratan autentikasi Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL bernama ManagedInstance01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
+Perintah ini hanya memerlukan autentikasi Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL bernama ManagedInstance01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Azure SQL Managed Instance hanya autentikasi Azure Active Directory yang ada.
+Nama Instans Terkelola Azure SQL tempat autentikasi Azure Active Directory saja berada.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.InstanceActiveDirectoryOnlyAuthentication.Model.AzureSqlInstanceActiveDirectoryOnlyAuthenticationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
