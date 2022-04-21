@@ -7,8 +7,8 @@ ms.openlocfilehash: 4d86a9b50b787a8db233f6b002540f6b88e9b735
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244172"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723150"
 ---
 # Save-AzureVMImage
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

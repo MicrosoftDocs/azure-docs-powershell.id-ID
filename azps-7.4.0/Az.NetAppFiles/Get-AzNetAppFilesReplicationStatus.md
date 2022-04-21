@@ -9,8 +9,8 @@ ms.openlocfilehash: 76777f1835a407b8daa45f990d4c988d2514cdd3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142744912"
 ---
 # Get-AzNetAppFilesReplicationStatus
 
@@ -177,6 +177,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesReplicationStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

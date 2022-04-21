@@ -9,8 +9,8 @@ ms.openlocfilehash: b77ae63f493f8236de1e6addfa5167488464ea2d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307113"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142716184"
 ---
 # Update-AzCosmosDBMongoDBCollection
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticalStorageTtl
-TTL untuk Storage Analitik.
+TTL untuk Penyimpanan Analitik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput wadah SQL (RU/s).
+Throughput kontainer SQL (RU/s).
 Nilai defaultnya adalah 400.
 
 ```yaml
@@ -292,6 +292,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ResourceNotFoundException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

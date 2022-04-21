@@ -9,8 +9,8 @@ ms.openlocfilehash: 3ea06c98119775616cd8d5a4dbb8788dba4380bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884809"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142732503"
 ---
 # Enable-AzureRmHDInsightOperationsManagementSuite
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.HDInsight.Models.OperationResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

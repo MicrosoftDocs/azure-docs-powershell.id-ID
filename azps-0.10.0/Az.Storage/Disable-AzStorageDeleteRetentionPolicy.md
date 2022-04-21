@@ -9,13 +9,13 @@ ms.openlocfilehash: f09ba3cdd0404f1eca21540a6893f1bcd67f05e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235323"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780606"
 ---
 # Disable-AzStorageDeleteRetentionPolicy
 
 ## SYNOPSIS
-Nonaktifkan kebijakan penyimpanan penghapusan untuk layanan Blob Penyimpanan Azure.
+Nonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Blob.
 ## PARAMETERS
 
 ### -Konteks
-Objek Konteks Penyimpanan Azure
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -123,8 +123,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.Commands.Storage.Model.ResourceModel.PSDeleteRetentionPolicy
+### Microsoft.WindowsAzure.Commands. Storage. Model.ResourceModel.PSDeleteRetentionPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 8352f7a63e40986e27c4b521dca58aaf003679bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142732765"
 ---
 # New-AzureRmDataMigrationTask
 
@@ -220,6 +220,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DataMigration.Models.PSProjectTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

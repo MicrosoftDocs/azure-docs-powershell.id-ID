@@ -10,8 +10,8 @@ ms.openlocfilehash: acf0b53ba6ad03de117e9171ec64d30ee627a927
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064758"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142732870"
 ---
 # Set-AzureRmDataLakeStoreItemAclEntry
 
@@ -317,7 +317,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreItemAce
 Jika PassThru ditentukan, akan mengembalikan daftar entri ACL yang dihasilkan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

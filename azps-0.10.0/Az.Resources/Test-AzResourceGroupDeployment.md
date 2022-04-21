@@ -10,8 +10,8 @@ ms.openlocfilehash: 59bbe7c5309764c41f22aaa99dbb4d47a23f1ba8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328061"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780714"
 ---
 # Test-AzResourceGroupDeployment
 
@@ -284,7 +284,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Models.PSResourceManagerError
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: e8f631b485c62dba2e3871d5c2deec69881097af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065037"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733198"
 ---
 # Get-AzureRmDataFactoryV2IntegrationRuntimeNode
 
@@ -243,7 +243,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

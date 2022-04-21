@@ -9,8 +9,8 @@ ms.openlocfilehash: 78fd3072f9777b60db0e0e6a5672a01163d23a84
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141910821"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142713682"
 ---
 # Remove-AzUserAssignedIdentity
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

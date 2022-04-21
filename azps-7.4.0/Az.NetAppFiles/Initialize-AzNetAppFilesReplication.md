@@ -9,8 +9,8 @@ ms.openlocfilehash: 145470bcefaa046c0462d1cb40afaf33f9183d25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422336"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142744876"
 ---
 # Initialize-AzNetAppFilesReplication
 
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 91f7b874cdeb25eb50ec9e35d453f9d8a28b0f28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141783356"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142753552"
 ---
 # Remove-AzVMwareAuthorization
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: e527501424edfbbc12693b47b5858c3c46592402
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357686"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142732978"
 ---
 # Test-AzureRmDataLakeAnalyticsAccount
 
@@ -28,7 +28,7 @@ Test-AzureRmDataLakeAnalyticsAccount [-Name] <String> [[-ResourceGroupName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzureRmDataLakeAnalyticsAccount** memeriksa keberadaan akun Data Lake Analytics.
+Cmdlet **Test-AzureRmDataLakeAnalyticsAccount** memeriksa keberadaan akun Analitik Data Lake.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya akun Data Lake Analytics.
+Menentukan nama grup sumber daya dari akun Analitik Data Lake.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

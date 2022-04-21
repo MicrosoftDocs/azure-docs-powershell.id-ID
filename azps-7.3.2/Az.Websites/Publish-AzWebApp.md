@@ -9,8 +9,8 @@ ms.openlocfilehash: 05d5e4f329cb08e03e376141d9e919e707fa4b49
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848642"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142753228"
 ---
 # Publish-AzWebApp
 
@@ -232,6 +232,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

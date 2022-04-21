@@ -10,8 +10,8 @@ ms.openlocfilehash: a4aee7fc1f7b00aba1dfcbeff965d11c2a23e3da
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142023077"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142753102"
 ---
 # Remove-AzWebApp
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

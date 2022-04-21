@@ -9,8 +9,8 @@ ms.openlocfilehash: 765bd2c75a377204ab4566f47d0498deaf127953
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733109"
 ---
 # New-AzureRmDataFactoryV2LinkedServiceEncryptedCredential
 
@@ -198,6 +198,6 @@ Parameter: DataFactory (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

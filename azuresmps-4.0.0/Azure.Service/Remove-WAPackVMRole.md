@@ -7,8 +7,8 @@ ms.openlocfilehash: addc9aa0805d46cfaf2eeea9501ae85a93e79b6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141880430"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723240"
 ---
 # Remove-WAPackVMRole
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

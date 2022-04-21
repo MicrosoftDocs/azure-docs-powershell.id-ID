@@ -9,8 +9,8 @@ ms.openlocfilehash: cc65c4b4d7d4cc9cf73d3abdf135fd985f71efd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141810572"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780642"
 ---
 # Update-AzManagementGroup
 
@@ -250,6 +250,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

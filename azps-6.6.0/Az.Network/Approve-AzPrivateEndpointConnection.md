@@ -9,8 +9,8 @@ ms.openlocfilehash: c6ba96c5bb06d743c8934d292befa730b03be83e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142047930"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142773983"
 ---
 # Approve-AzPrivateEndpointConnection
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPrivateLinkService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

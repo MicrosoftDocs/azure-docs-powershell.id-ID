@@ -8,8 +8,8 @@ ms.openlocfilehash: 73fff5ff4cf612c39bacd26fed61c4e856e34128
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780326"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735076"
 ---
 # Remove-AzureRmADSpCredential
 
@@ -245,7 +245,7 @@ Parameter: ServicePrincipalObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

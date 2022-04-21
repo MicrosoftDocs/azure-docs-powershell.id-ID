@@ -9,8 +9,8 @@ ms.openlocfilehash: d82033121dd0cbe29a40018f1fd9b994ff33a4e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142744984"
 ---
 # New-AzMySqlVirtualNetworkRule
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IVirtualNetworkRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

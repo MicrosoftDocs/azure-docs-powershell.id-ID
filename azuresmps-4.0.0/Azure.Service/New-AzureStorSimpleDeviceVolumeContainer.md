@@ -7,8 +7,8 @@ ms.openlocfilehash: c37b61e14d41a705e1a579793954a8a059f1ae8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920469"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723870"
 ---
 # New-AzureStorSimpleDeviceVolumeContainer
 
@@ -190,7 +190,7 @@ Cmdlet ini menerima objek **PrimaryStorageAccountCredential** untuk dikaitkan de
 ### TaskStatusInfo
 Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: ed601ce585e9f4eee27ca9a8b11c4fb0464dcf28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286917"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142753642"
 ---
 # New-AzVMwareAddonSrmPropertiesObject
 
@@ -68,7 +68,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.AddonSrmProperties
 
-## CATATAN
+## NOTES
 
 ALIAS
 

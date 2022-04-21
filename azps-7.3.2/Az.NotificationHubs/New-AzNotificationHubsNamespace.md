@@ -10,8 +10,8 @@ ms.openlocfilehash: f59feb60af87655118a4fa7f0c8678640379d29d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142030673"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142761130"
 ---
 # New-AzNotificationHubsNamespace
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NotificationHubs.Models.NamespaceAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

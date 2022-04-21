@@ -7,8 +7,8 @@ ms.openlocfilehash: bad618e09b3f67ced143f4f0ba44b9e09b0b7216
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142279105"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142723976"
 ---
 # Get-AzureRemoteAppCollection
 
@@ -90,7 +90,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

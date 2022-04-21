@@ -9,8 +9,8 @@ ms.openlocfilehash: 6bad66e769744a06b72e06f2cf86104685fc01d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142744588"
 ---
 # Update-AzNetAppFilesSnapshotPolicy
 
@@ -328,6 +328,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesSnapshotPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

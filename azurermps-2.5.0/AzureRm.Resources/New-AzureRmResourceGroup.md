@@ -8,8 +8,8 @@ ms.openlocfilehash: dd115a7d0445a7b07557b884dd2c7413f5269d00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927571"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142735102"
 ---
 # New-AzureRmResourceGroup
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManagement.Models.PSResourceGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

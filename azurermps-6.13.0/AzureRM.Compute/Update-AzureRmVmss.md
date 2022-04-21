@@ -10,8 +10,8 @@ ms.openlocfilehash: d2ecc5799319dcbc9b2e3710c186ffd7ebc09c64
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141885723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142733459"
 ---
 # Update-AzureRmVmss
 
@@ -808,7 +808,7 @@ Parameter: VirtualMachineScaleSet (ByValue)
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

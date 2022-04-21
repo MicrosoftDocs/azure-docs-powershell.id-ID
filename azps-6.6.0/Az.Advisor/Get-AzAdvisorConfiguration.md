@@ -9,8 +9,8 @@ ms.openlocfilehash: 17b2fc08f28ad12973abfec26f6cbf4183fcd762
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141962475"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142780192"
 ---
 # Get-AzAdvisorConfiguration
 
@@ -106,6 +106,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorConfigurationData
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
