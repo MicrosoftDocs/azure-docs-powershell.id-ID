@@ -9,8 +9,8 @@ ms.openlocfilehash: 2d0cba3d3f1e0a414b86808112e67e2b7379afed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142746226"
 ---
 # New-AzManagedServicesAssignment
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.Api20200201Preview.IRegistrationAssignment
 
-## CATATAN
+## NOTES
 
 ALIAS
 

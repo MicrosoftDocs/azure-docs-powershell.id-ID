@@ -7,8 +7,8 @@ ms.openlocfilehash: 998fdac1eabdc06fcb41659f998c09e25c93af8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920397"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787614"
 ---
 # Remove-AzureMediaServicesAccount
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

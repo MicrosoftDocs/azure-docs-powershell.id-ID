@@ -9,8 +9,8 @@ ms.openlocfilehash: f30c44c57aec821b8dadc974f9a7fff960cb9821
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142207837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142756990"
 ---
 # New-AzSqlServerVirtualNetworkRule
 
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualNetworkRule.Model.AzureSqlServerVirtualNetworkRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

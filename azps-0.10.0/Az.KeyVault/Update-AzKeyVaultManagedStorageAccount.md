@@ -9,8 +9,8 @@ ms.openlocfilehash: ea3d16ec55186017852df30f6ff745f79703f224
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142057691"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142782262"
 ---
 # Update-AzKeyVaultManagedStorageAccount
 
@@ -223,7 +223,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

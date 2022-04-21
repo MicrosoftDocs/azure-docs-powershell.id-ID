@@ -9,8 +9,8 @@ ms.openlocfilehash: b7d8a40f53ea236504278abffb620b3546a2b671
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142376855"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142766872"
 ---
 # New-AzConnectedNetworkInterfaceIPConfigurationObject
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.NetworkInterfaceIPConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

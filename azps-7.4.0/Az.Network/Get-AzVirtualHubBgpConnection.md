@@ -9,8 +9,8 @@ ms.openlocfilehash: 6b62d98aaf3737337f6da92e95668b32fd988510
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835171"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142743526"
 ---
 # Get-AzVirtualHubBgpConnection
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSBgpConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

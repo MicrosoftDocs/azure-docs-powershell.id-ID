@@ -9,8 +9,8 @@ ms.openlocfilehash: 123619dc84cac99eb6de3c3b203cca45e637d3bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432842"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142749070"
 ---
 # Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.IIntegrationRuntimeMonitoringData
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: aa8306070eb560deb465cbaa9ddae2bce24c5600
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926510"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731993"
 ---
 # Get-AzureKeyVaultSecret
 
@@ -406,7 +406,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

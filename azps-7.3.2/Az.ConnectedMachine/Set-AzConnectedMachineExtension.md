@@ -9,8 +9,8 @@ ms.openlocfilehash: 016c9540fe3c0849ae15aacc1b9b751bc2e414e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142217431"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142766890"
 ---
 # Set-AzConnectedMachineExtension
 
@@ -511,7 +511,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.IMachineExtension
 
-## CATATAN
+## NOTES
 
 ALIAS
 

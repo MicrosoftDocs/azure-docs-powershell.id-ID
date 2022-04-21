@@ -9,8 +9,8 @@ ms.openlocfilehash: 653b8d9e4343546f9a901390daba767f257b35e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141863834"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142773622"
 ---
 # Get-AzExpressRouteGateway
 
@@ -168,6 +168,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

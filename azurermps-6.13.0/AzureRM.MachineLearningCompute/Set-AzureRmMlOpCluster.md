@@ -9,8 +9,8 @@ ms.openlocfilehash: cbe72d14eac4864b784f31c4a800db09fc38b042
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926402"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731592"
 ---
 # Set-AzureRmMlOpCluster
 
@@ -323,6 +323,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.MachineLearningCompute.Models.PSOperationalizationCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

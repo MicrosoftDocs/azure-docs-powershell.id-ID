@@ -9,8 +9,8 @@ ms.openlocfilehash: a71aed4703158c68d3b156ff1e37d438e5413782
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884220"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142731894"
 ---
 # Set-AzureKeyVaultManagedStorageSasDefinition
 
@@ -260,7 +260,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageSasDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

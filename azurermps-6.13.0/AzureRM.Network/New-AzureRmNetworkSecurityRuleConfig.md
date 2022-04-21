@@ -10,8 +10,8 @@ ms.openlocfilehash: 0950e09185783f0b352defafb7673a2f97461c74
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354777"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730603"
 ---
 # New-AzureRmNetworkSecurityRuleConfig
 
@@ -337,7 +337,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 8e10eedd971a0cb78738b03fe76c3839ee5ecc2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142073624"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142767970"
 ---
 # Get-AzCdnProfileSsoUrl
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSSsoUri
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

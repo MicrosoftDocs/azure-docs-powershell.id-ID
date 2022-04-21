@@ -9,8 +9,8 @@ ms.openlocfilehash: 5a149adbffeaf17fc3b9ec113479f4b047ab0188
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169131"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142748872"
 ---
 # Get-AzWvdApplication
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IAplikasi
 
-## CATATAN
+## NOTES
 
 ALIAS
 

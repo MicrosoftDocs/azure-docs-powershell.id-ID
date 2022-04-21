@@ -10,8 +10,8 @@ ms.openlocfilehash: 865b9a576219cbaf7d938094baf923c497436e07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142062155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730327"
 ---
 # Remove-AzureRmApplicationGatewaySslCertificate
 
@@ -100,7 +100,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7ef0d3ce20868c4240abc43278cdc38a33efa5b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141777631"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142730599"
 ---
 # New-AzureRmPublicIpAddress
 
@@ -364,7 +364,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
