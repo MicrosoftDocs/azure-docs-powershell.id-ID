@@ -10,8 +10,8 @@ ms.openlocfilehash: 580065e44f57ee8ff6ad022f425983860930b3c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142143372"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142664560"
 ---
 # Get-AzureBatchNodeFile
 
@@ -358,7 +358,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSNodeFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

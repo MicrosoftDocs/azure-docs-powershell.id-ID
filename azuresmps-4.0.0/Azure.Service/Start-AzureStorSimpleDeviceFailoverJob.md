@@ -7,8 +7,8 @@ ms.openlocfilehash: c63d30dde7fa16d5c4649d1a39e9e44dc261ebba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243305"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142654102"
 ---
 # Start-AzureStorSimpleDeviceFailoverJob
 
@@ -191,7 +191,7 @@ Anda dapat menyalurkan daftar grup wadah volume ke cmdlet ini.
 
 ### String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

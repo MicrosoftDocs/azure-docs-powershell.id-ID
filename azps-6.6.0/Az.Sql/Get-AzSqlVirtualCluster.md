@@ -9,8 +9,8 @@ ms.openlocfilehash: 0d8b811c30384e7e3eb7d0ed658210989c875667
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141903555"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142706770"
 ---
 # Get-AzSqlVirtualCluster
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualCluster.Model.AzureSqlVirtualClusterModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 144a7be6f6ec8ffdd4c6f94dc8d883e71e5aa8ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246033"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656911"
 ---
 # Clear-AzureRemoteAppVmStaleAdObject
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

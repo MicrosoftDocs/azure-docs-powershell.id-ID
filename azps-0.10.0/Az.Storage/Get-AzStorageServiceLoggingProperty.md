@@ -10,13 +10,13 @@ ms.openlocfilehash: fc1cbddd59d52816b0f7ef3bd664405a98ead518
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142719730"
 ---
 # Get-AzStorageServiceLoggingProperty
 
 ## SYNOPSIS
-Mendapatkan properti pembuatan log untuk layanan Penyimpanan Azure.
+Mendapatkan properti pembuatan log untuk layanan Azure Storage.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-AzStorageServiceLoggingProperty [-ServiceType] <StorageServiceType> [-Contex
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk layanan Penyimpanan Azure.
+Cmdlet **Get-AzStorageServiceLoggingProperty** mendapatkan properti pembuatan log untuk layanan Azure Storage.
 
 ## EXAMPLES
 
@@ -101,9 +101,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAz.Storage.Shared.Protocol.LoggingProperties
+### Microsoft.WindowsAz. Storage. Shared.Protocol.LoggingProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

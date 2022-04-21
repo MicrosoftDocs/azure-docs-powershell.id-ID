@@ -9,8 +9,8 @@ ms.openlocfilehash: d625fe98f4ae18378466db8d7960b306ca1ea8e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426134"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142686682"
 ---
 # Set-AzVmssBootDiagnostic
 
@@ -147,6 +147,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

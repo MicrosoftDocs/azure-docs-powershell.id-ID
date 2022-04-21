@@ -10,8 +10,8 @@ ms.openlocfilehash: 0342f14c2931f59246c7bd5a22a2a3141f50a1a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142679392"
 ---
 # Get-AzLoadBalancerBackendAddressPoolConfig
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

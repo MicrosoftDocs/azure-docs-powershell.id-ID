@@ -9,8 +9,8 @@ ms.openlocfilehash: d02966de2c902a0c03aa9058b41d165d1c0cbc05
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174394"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142671526"
 ---
 # Add-AzSqlServerTransparentDataEncryptionCertificate
 
@@ -245,6 +245,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

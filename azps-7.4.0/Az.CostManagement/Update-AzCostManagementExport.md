@@ -9,8 +9,8 @@ ms.openlocfilehash: 4e9de45e7445e8e3e3dd16918887f2b82a6959f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141839088"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142685836"
 ---
 # Update-AzCostManagementExport
 
@@ -414,7 +414,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IExport
 
-## CATATAN
+## NOTES
 
 ALIAS
 

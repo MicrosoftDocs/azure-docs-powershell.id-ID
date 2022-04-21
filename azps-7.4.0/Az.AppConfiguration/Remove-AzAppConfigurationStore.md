@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c9593a7685def9c393c2f0e41a008d3c116f5ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423666"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142687816"
 ---
 # Remove-AzAppConfigurationStore
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

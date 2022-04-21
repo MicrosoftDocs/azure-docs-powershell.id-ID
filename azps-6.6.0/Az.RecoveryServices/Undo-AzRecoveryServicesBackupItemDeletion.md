@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e2a8c703220b6c2b05d420654c85933611c661f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141797450"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142708444"
 ---
 # Undo-AzRecoveryServicesBackupItemDeletion
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 75ad4e1fabb511ee4ca3cff024389a8e826aeadd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280100"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142657304"
 ---
 # Get-AzureRmDeletedWebApp
 
@@ -112,7 +112,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.WebApps.PSAzureDeletedWebApp
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

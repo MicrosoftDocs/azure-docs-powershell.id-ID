@@ -10,8 +10,8 @@ ms.openlocfilehash: 389a34a5b1c34618339bb7a1752031eaafb9efe9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141964095"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142720108"
 ---
 # Set-AzNetworkInterface
 
@@ -150,7 +150,7 @@ Parameter 'NetworkInterface' menerima nilai tipe 'PSNetworkInterface' dari pipel
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

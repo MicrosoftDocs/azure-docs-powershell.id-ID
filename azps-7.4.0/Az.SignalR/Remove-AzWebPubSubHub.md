@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e55f69296fed79079e714b7ec23f0fe9a10d761
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420526"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142671580"
 ---
 # Remove-AzWebPubSubHub
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

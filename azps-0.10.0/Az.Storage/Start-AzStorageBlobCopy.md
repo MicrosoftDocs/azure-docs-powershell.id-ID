@@ -10,8 +10,8 @@ ms.openlocfilehash: 56b5a98e7654d7b8562a166a82e0596643087338
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142350197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142719622"
 ---
 # Start-AzStorageBlobCopy
 
@@ -568,7 +568,7 @@ Parameter: SrcFile (ByValue)
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

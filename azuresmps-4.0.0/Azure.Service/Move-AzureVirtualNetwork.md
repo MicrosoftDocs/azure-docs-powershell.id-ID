@@ -7,8 +7,8 @@ ms.openlocfilehash: 4c400a39615bddfd02f21d82fd46b0a281b95fba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921024"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142656046"
 ---
 # Move-AzureVirtualNetwork
 
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

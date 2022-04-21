@@ -9,8 +9,8 @@ ms.openlocfilehash: 91194e28b624af2d42f545e867c53958da978e16
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142367855"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142694836"
 ---
 # Start-AzJitNetworkAccessPolicy
 
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.JitNetworkAccessPolicies.PSSecurityJitNetworkAccessPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

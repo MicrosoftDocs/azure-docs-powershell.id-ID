@@ -9,8 +9,8 @@ ms.openlocfilehash: cb8b615250a251a4770f403fccc11afa93ce2183
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142464911"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142696024"
 ---
 # New-AzRedisCacheFirewallRule
 
@@ -226,7 +226,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RedisCache.Models.PSRedisFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

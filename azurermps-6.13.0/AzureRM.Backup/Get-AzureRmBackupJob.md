@@ -10,8 +10,8 @@ ms.openlocfilehash: cbdb60fb4ec139b1dae92b7dd8e2e54675ae1f90
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844922"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142664722"
 ---
 # Get-AzureRmBackupJob
 
@@ -277,7 +277,7 @@ Parameter: Vault (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
 
-## CATATAN
+## NOTES
 * Tidak
 
 ## RELATED LINKS

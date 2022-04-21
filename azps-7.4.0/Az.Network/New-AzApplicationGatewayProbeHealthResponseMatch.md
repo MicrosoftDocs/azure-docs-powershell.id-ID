@@ -9,8 +9,8 @@ ms.openlocfilehash: 8832aecc5532df4f33b898897d0797ee30835d9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834915"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142678798"
 ---
 # New-AzApplicationGatewayProbeHealthResponseMatch
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbeHealthResponseMatch
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
