@@ -9,8 +9,8 @@ ms.openlocfilehash: 333de53ccd3632188100af7f3fcde10e140537c2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060253"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983989"
 ---
 # Add-AzureRmSqlServerTransparentDataEncryptionCertificate
 
@@ -43,7 +43,7 @@ Add-AzureRmSqlServerTransparentDataEncryptionCertificate [-PassThru] [-SqlServer
 ```
 
 ## DESCRIPTION
-Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server yang diberikan
+Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk contoh SQL Server yang diberikan
 
 ## EXAMPLES
 
@@ -248,6 +248,6 @@ Parameter: SqlServer (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 4a20f0fbc5b059e878f0062569ffba2c16794204
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142310155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142977275"
 ---
 # Get-AzsInfrastructureRole
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Fabric.Admin.Models.InfraRole
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

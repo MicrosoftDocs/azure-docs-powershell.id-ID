@@ -10,8 +10,8 @@ ms.openlocfilehash: bc59e5b317588317ae9dc428db76c924847895da
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246907"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982695"
 ---
 # New-AzureRmTrafficManagerProfile
 
@@ -345,7 +345,7 @@ Cmdlet ini tidak menerima input apa pun.
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
 Cmdlet ini mengembalikan objek TrafficManagerProfile baru.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

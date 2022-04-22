@@ -7,8 +7,8 @@ ms.openlocfilehash: eeed2361fc092af5ec3b9c61f799373b627b3d15
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393418"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142991135"
 ---
 # Get-AzureKeyVaultManagedStorageAccount
 
@@ -110,7 +110,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageAccount, Microsoft.Azure.Commands.KeyVault, Version=2.5.0.0, Culture=netral, PublicKeyToken=null]]
 Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

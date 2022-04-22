@@ -9,8 +9,8 @@ ms.openlocfilehash: c25805b5d8cfab28f550e0358df3603c7d15346c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429224"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142995779"
 ---
 # Get-AzSqlInstanceServerTrustCertificate
 
@@ -316,7 +316,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerTrustCertificate.Model.AzureSqlInstanceServerTrustCertificateModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 8f95890eaf90dd5d7c15a6a6a057d342b0453acc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142995898"
 ---
 # Get-AzSqlElasticJobAgent
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobAgentModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

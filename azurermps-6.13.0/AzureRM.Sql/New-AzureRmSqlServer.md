@@ -10,8 +10,8 @@ ms.openlocfilehash: 208d72607397cb61e098052cd1835f44d4e0e4a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314696"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983521"
 ---
 # New-AzureRmSqlServer
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

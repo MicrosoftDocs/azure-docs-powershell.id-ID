@@ -7,8 +7,8 @@ ms.openlocfilehash: b280b9e99fa91c53371d2eff38d42003873951bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814208"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142976987"
 ---
 # Get-AzsLoadBalancer
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Network.Admin.Models.LoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

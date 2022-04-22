@@ -10,8 +10,8 @@ ms.openlocfilehash: 0aeee8e991d0f74a341a750e69016b12027fe584
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059862"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983773"
 ---
 # Get-AzureRmSqlServerBackupLongTermRetentionVault
 
@@ -29,7 +29,7 @@ Get-AzureRmSqlServerBackupLongTermRetentionVault [-ServerName] <String> [-Resour
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmSqlServerBackupLongTermRetentionVault** mendapatkan kubah penyimpanan jangka panjang yang terdaftar di server ini.
-Kubah adalah sumber daya Cadangan Azure yang digunakan untuk menyimpan data cadangan.
+Kubah adalah sumber daya Azure Backup yang digunakan untuk menyimpan data cadangan.
 
 ## EXAMPLES
 
@@ -122,11 +122,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlServerBackupLongTermRetentionVaultModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Set-AzureRmSqlServerBackupLongTermRetentionVault](./Set-AzureRmSqlServerBackupLongTermRetentionVault.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

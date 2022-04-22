@@ -9,8 +9,8 @@ ms.openlocfilehash: 4643ab29be9c93f58895048317edc2b1db6115e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248093"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142984121"
 ---
 # Remove-AzureRmServiceFabricSetting
 
@@ -183,6 +183,6 @@ Parameter: SettingsSectionDescription (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

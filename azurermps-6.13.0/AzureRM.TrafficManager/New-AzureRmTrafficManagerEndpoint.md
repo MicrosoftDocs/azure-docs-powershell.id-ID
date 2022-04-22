@@ -10,8 +10,8 @@ ms.openlocfilehash: 79b3b6bc1097e28a0d11c7c5a44a5b0b80b4718b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280028"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982708"
 ---
 # New-AzureRmTrafficManagerEndpoint
 
@@ -330,7 +330,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

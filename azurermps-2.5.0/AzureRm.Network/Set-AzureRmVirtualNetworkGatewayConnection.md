@@ -8,8 +8,8 @@ ms.openlocfilehash: bb098e23f6e55cc28fcae02b7094a953c5179308
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927977"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142990065"
 ---
 # Set-AzureRmVirtualNetworkGatewayConnection
 
@@ -187,7 +187,7 @@ Parameter 'VirtualNetworkGatewayConnection' menerima nilai tipe 'PSVirtualNetwor
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 20292520f8fc86d73dbd4f91142c6e919fd63544
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142470635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142953497"
 ---
 # Update-AzSapMonitor
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.Api20200207Preview.ISapMonitor
 
-## CATATAN
+## NOTES
 
 ALIAS
 

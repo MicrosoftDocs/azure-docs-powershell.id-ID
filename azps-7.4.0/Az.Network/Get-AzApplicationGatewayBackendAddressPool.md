@@ -10,8 +10,8 @@ ms.openlocfilehash: 89d9ec088e8e11d147685b3bd7ec8d60e85f0cb4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995754"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142997633"
 ---
 # Get-AzApplicationGatewayBackendAddressPool
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

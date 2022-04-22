@@ -9,8 +9,8 @@ ms.openlocfilehash: d79ba2c05665b85d9aa0d8b17ea39f5f84906b65
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142970579"
 ---
 # Set-AzApplicationInsightsContinuousExport
 
@@ -282,6 +282,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSExportConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

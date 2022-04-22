@@ -8,8 +8,8 @@ ms.openlocfilehash: f41149c6abb946340acc06b847c72dcabcee18fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103369"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989299"
 ---
 # New-AzureRmWebAppSlot
 
@@ -232,7 +232,7 @@ Parameter 'SourceWebApp' menerima nilai tipe 'Situs' dari pipeline
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
