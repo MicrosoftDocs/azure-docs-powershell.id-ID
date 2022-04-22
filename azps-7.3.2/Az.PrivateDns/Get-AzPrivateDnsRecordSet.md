@@ -9,8 +9,8 @@ ms.openlocfilehash: c2ee8aee4c17f9cd4c3162be1b40b8a90318d614
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142029989"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143011817"
 ---
 # Get-AzPrivateDnsRecordSet
 
@@ -310,6 +310,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsRecordSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

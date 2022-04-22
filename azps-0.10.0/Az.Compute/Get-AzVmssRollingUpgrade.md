@@ -9,8 +9,8 @@ ms.openlocfilehash: 3e89a549b665ff686cc773fa18cf0fceb22014ad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811454"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037179"
 ---
 # Get-AzVmssRollingUpgrade
 
@@ -94,7 +94,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRollingUpgradeStatusInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

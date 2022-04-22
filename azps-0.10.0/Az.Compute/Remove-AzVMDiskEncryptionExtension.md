@@ -10,8 +10,8 @@ ms.openlocfilehash: 51b1273e5c44756df56177878dbe4fbc9563ec2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329785"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143036819"
 ---
 # Remove-AzVMDiskEncryptionExtension
 
@@ -170,7 +170,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

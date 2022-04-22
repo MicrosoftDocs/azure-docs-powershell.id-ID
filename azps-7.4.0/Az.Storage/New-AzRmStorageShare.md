@@ -9,13 +9,13 @@ ms.openlocfilehash: aaed6cb235a35d301f24e9432add072f368c0910
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001024"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142994789"
 ---
 # New-AzRmStorageShare
 
 ## SYNOPSIS
-Membuat file Storage berbagi.
+Membuat berbagi file Penyimpanan.
 
 ## SYNTAX
 
@@ -34,11 +34,11 @@ New-AzRmStorageShare -StorageAccount <PSStorageAccount> -Name <String> [-QuotaGi
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageShare** membuat berbagi file Storage.
+Cmdlet **New-AzRmStorageShare** membuat berbagi file Penyimpanan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat file Storage berbagi dengan nama akun Storage dan bagikan nama, dengan metadata dan bagikan kuota sebagai 100 GiB.
+### Contoh 1: Buat berbagi file Penyimpanan dengan nama akun Penyimpanan dan bagikan nama, dengan metadata dan bagikan kuota sebagai 100 GiB.
 ```
 PS C:\>New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -QuotaGiB 100 -Metadata @{"tag1" = "value1"; "tag2" = "value2" } 
 
@@ -49,9 +49,9 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 myshare
 ```
 
-Perintah ini membuat file Storage dibagikan dengan metadata dan berbagi kuota sebagai 100 GiB.
+Perintah ini membuat berbagi file Penyimpanan dengan metadata dan berbagi kuota sebagai 100 GiB.
 
-### Contoh 2: Membuat file Storage berbagi dengan objek akun Storage
+### Contoh 2: Membuat berbagi file Penyimpanan dengan objek Akun penyimpanan
 ```
 Get-AzStorageAccount -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" | New-AzRmStorageShare -Name "myshare"
 
@@ -62,9 +62,9 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 myshare
 ```
 
-Perintah ini membuat file Storage dibagikan dengan objek akun Storage dan berbagi nama.
+Perintah ini membuat berbagi file Penyimpanan dengan objek Akun penyimpanan dan berbagi nama.
 
-### Contoh 3: Membuat file Storage berbagi dengan aksesier sebagai Hot
+### Contoh 3: Membuat berbagi file Penyimpanan dengan accesstier sebagai Hot
 ```
 PS C:\>$share = New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -AccessTier Hot
 
@@ -75,9 +75,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare                            Hot
 ```
 
-Perintah ini membuat file Storage dibagikan dengan aksestier sebagai Hot.
+Perintah ini membuat berbagi file Penyimpanan dengan accesstier sebagai Hot.
 
-### Contoh 4: Membuat file Storage berbagi snapshot dari berbagi yang sudah ada
+### Contoh 4: Membuat snapshot berbagi file Penyimpanan dari berbagi yang sudah ada
 ```
 PS C:\>$shareSnapshot = New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -Snapshot
 
@@ -88,9 +88,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes sn
 myshare                                                                       2021-05-10T08:04:08
 ```
 
-Perintah ini membuat snapshot berbagi file Storage dari berbagi file dasar yang sudah ada.
+Perintah ini membuat snapshot berbagi file Penyimpanan dari berbagi file dasar yang sudah ada.
 
-### Contoh 5: Membuat file Storage berbagi dengan properti EnabledProtocol proeprty sebagai NFS, dan RootSquash sebagai NoRootSquash
+### Contoh 5: Membuat berbagi file Penyimpanan dengan EnabledProtocol proeprty sebagai NFS, dan properti RootSquash sebagai NoRootSquash
 ```
 PS C:\>$share = New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -EnabledProtocol NFS -RootSquash NoRootSquash 
 
@@ -106,7 +106,7 @@ PS C:\> $share.RootSquash
 NoRootSquash
 ```
 
-Perintah ini membuat file Storage berbagi dengan EnabledProtocol proeprty sebagai NFS, dan RootSquash proeprty sebagai NoRootSquash.
+Perintah ini membuat berbagi file Penyimpanan dengan EnabledProtocol proeprty sebagai NFS, dan RootSquash proeprty sebagai NoRootSquash.
 
 ## PARAMETERS
 
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Objek akun penyimpanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Nama Akun.
+Nama Akun Penyimpanan.
 
 ```yaml
 Type: System.String
@@ -316,12 +316,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.Commands.Management. Storage. Models.PSStorageAccount
+### Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Management. Storage. Models.PSShare
+### Microsoft.Azure.Commands.Management.Storage.Models.PSShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

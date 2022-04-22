@@ -8,8 +8,8 @@ ms.openlocfilehash: e8ce0397a59a72e2960a8e0af978c1b5484c53af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285254"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989178"
 ---
 # Remove-AzureRmAppServicePlan
 
@@ -179,7 +179,7 @@ Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipe
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

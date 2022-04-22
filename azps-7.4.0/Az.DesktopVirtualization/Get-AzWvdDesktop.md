@@ -9,8 +9,8 @@ ms.openlocfilehash: d0090ad4ba38f793a87fbb7312b5ea6604e61357
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143002583"
 ---
 # Get-AzWvdDesktop
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IDesktopList
 
-## CATATAN
+## NOTES
 
 ALIAS
 

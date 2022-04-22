@@ -10,8 +10,8 @@ ms.openlocfilehash: 6a14a8472ca33fe9dbb15aa2ddf58208764a5a6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142132073"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037269"
 ---
 # Disable-AzVMDiskEncryption
 
@@ -259,7 +259,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

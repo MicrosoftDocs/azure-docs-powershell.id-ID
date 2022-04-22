@@ -9,8 +9,8 @@ ms.openlocfilehash: 58143ef78d77b5f5b23ec8138db428bb9955d6a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178617"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001863"
 ---
 # Remove-AzEdgeOrderItem
 
@@ -208,7 +208,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

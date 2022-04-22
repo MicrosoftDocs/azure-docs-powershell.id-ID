@@ -9,8 +9,8 @@ ms.openlocfilehash: 1f5dec849ee02157c406b902c28bf699ee93748c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001971"
 ---
 # Get-AzEdgeOrderProductFamilyMetadata
 
@@ -120,7 +120,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IProductFamiliesMetadataDetails
 
-## CATATAN
+## NOTES
 
 ALIAS
 

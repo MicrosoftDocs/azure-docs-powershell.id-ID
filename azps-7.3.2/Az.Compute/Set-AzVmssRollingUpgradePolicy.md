@@ -9,8 +9,8 @@ ms.openlocfilehash: 6ba5b9c89694946a26907caccf65a78f4f614035
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142376981"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143019449"
 ---
 # Set-AzVmssRollingUpgradePolicy
 
@@ -220,6 +220,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

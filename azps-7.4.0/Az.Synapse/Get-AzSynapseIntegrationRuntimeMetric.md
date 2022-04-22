@@ -9,8 +9,8 @@ ms.openlocfilehash: 24253cc6e75cebd426a52be4745e99afa941a5d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142500308"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142993817"
 ---
 # Get-AzSynapseIntegrationRuntimeMetric
 
@@ -175,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSIntegrationRuntimeMetrics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

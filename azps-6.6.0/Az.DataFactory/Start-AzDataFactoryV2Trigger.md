@@ -9,8 +9,8 @@ ms.openlocfilehash: 98e1e27dfc57157ef50d5e08dc7b5660533f5393
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142086567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030393"
 ---
 # Start-AzDataFactoryV2Trigger
 
@@ -18,7 +18,7 @@ ms.locfileid: "142086567"
 Memulai pemicu di pabrik data.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2trigger) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2trigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Start-AzDataFactoryV2Trigger [-ResourceId] <String> [-Force] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzDataFactoryV2Trigger** memulai pemicu di pabrik data. Jika pemicu berada dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya memanggil saluran berdasarkan definisinya. Jika pemicu sudah berada dalam status 'Dimulai', cmdlet ini tidak berpengaruh. Jika parameter Paksa ditentukan, cmdlet tidak meminta sebelum memulai pemicu.
+Cmdlet **Start-AzDataFactoryV2Trigger** memulai pemicu di pabrik data. Jika pemicu dalam status 'Dihentikan', cmdlet memulai pemicu dan akhirnya memanggil alur berdasarkan definisinya. Jika pemicu sudah dalam status 'Dimulai', cmdlet ini tidak berpengaruh. Jika parameter Paksa ditentukan, cmdlet tidak meminta sebelum memulai pemicu.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -119,7 +119,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -164,8 +164,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet.
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 3c2e28e99afc84b096dc7af2e3eae33e66ba28e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811724"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037359"
 ---
 # Get-AzsDelegatedProviderOffer
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

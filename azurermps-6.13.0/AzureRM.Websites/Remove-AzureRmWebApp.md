@@ -10,8 +10,8 @@ ms.openlocfilehash: b06a5253ac5b26097d2dc4dea9c3d557c00a4d46
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059009"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982470"
 ---
 # Remove-AzureRmWebApp
 
@@ -185,7 +185,7 @@ Parameter: WebApp (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

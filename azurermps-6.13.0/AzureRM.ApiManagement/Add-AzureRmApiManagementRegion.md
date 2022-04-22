@@ -10,8 +10,8 @@ ms.openlocfilehash: 9ea4b734eba1ed1a37a72e756c32acc3d6ad2a32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142144393"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988795"
 ---
 # Add-AzureRmApiManagementRegion
 
@@ -159,7 +159,7 @@ Parameter: ApiManagement (ByValue)
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 * Cmdlet menulis **instans PsApiManagement** yang diperbarui ke pipeline.
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: ffb7d33e534d0d37a74cbe9a39ceb6140d93ca1f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142234279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030861"
 ---
 # Remove-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
-Menghapus akun Penyimpanan Edge untuk perangkat.
+Menghapus akun Storage Edge untuk perangkat.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgestorageaccount) untuk informasi terbaru.
@@ -41,7 +41,7 @@ Remove-AzDataBoxEdgeStorageAccount [-InputObject] <PSDataBoxEdgeStorageAccount> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataBoxEdgeStorageAccount** menghapus Akun Penyimpanan Edge terkait untuk perangkat Data Box Edge. Anda dapat menentukan nama Akun Penyimpanan Edge yang akan dihapus sebagai parameter dalam cmdlet.
+Cmdlet **Remove-AzDataBoxEdgeStorageAccount** menghapus Akun Storage Edge terkait untuk perangkat Box Edge Data. Anda dapat menentukan nama Akun Storage Edge untuk dihapus sebagai parameter dalam cmdlet.
 
 ## EXAMPLES
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

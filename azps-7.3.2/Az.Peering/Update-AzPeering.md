@@ -9,8 +9,8 @@ ms.openlocfilehash: bcf54135ebf4179d636b3037c43cea9af439f3dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142211563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143012231"
 ---
 # Update-AzPeering
 
@@ -92,7 +92,7 @@ Tags                 : {[tag2, value2], [tag1, value1]}
 
 Mengatur Bendera Penggunaan untuk Layanan Peering
 
-### Memperbarui Alamat IPv4 untuk Peering Exchange
+### Memperbarui Alamat IPv4 untuk Exchange Peering
 ```powershell
 PS C:> $peering = Get-AzPeering -ResourceGroupName rg1  -PeerName "ContosoExchangePeering" 
 PS C:> $peering.Connections[0] = $peering.Connections[0] | Set-AzPeeringExchangeConnectionObject -PeerSessionIPv4Address $ipv4Address
@@ -276,6 +276,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

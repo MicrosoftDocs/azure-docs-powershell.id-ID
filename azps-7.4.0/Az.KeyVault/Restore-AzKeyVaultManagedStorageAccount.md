@@ -9,8 +9,8 @@ ms.openlocfilehash: 3ce5a878d237405793c17e7b85c931f9abe23a88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836403"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143000369"
 ---
 # Restore-AzKeyVaultManagedStorageAccount
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
