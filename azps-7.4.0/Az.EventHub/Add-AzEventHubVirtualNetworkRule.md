@@ -9,8 +9,8 @@ ms.openlocfilehash: e1f7ac6ce2fd4b4bb9f026e148d5a9746ba5f647
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432666"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142941581"
 ---
 # Add-AzEventHubVirtualNetworkRule
 
@@ -207,6 +207,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSNetworkRuleSetAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

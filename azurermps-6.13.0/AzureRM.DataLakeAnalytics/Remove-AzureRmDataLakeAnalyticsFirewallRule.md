@@ -9,8 +9,8 @@ ms.openlocfilehash: 239e9325532b18140a36e4b8f9a8f291e508a91c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779549"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922177"
 ---
 # Remove-AzureRmDataLakeAnalyticsFirewallRule
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

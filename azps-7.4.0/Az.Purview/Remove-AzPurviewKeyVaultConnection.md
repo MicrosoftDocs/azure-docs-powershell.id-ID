@@ -9,13 +9,13 @@ ms.openlocfilehash: 3e5a876d5384b20e51fe47e979f9cbb452eab8d0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175327"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936496"
 ---
 # Remove-AzPurviewKeyVaultConnection
 
 ## SYNOPSIS
-Menghapus koneksi kubah kunci yang terkait dengan akun
+Menghapus koneksi brankas kunci yang terkait dengan akun
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ Remove-AzPurviewKeyVaultConnection -Endpoint <String> -KeyVaultName <String> [-D
 ```
 
 ## DESCRIPTION
-Menghapus koneksi kubah kunci yang terkait dengan akun
+Menghapus koneksi brankas kunci yang terkait dengan akun
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus koneksi kubah kunci
+### Contoh 1: Menghapus koneksi brankas kunci
 ```powershell
 PS C:\> Remove-AzPurviewKeyVaultConnection -Endpoint 'https://parv-brs-2.purview.azure.com/' -KeyVaultName 'KeyVaultConnection5'
 
@@ -39,7 +39,7 @@ Id                : keyVaults/KeyVaultConnection5
 Name              : KeyVaultConnection5
 ```
 
-Hapus koneksi kubah kunci bernama 'KeyVaultConnection5'
+Hapus koneksi brankas kunci bernama 'KeyVaultConnection5'
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IAzureKeyVault
 
-## CATATAN
+## NOTES
 
 ALIAS
 

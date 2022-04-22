@@ -9,8 +9,8 @@ ms.openlocfilehash: 5d81c14c993c5e4f8c9e722839365fa479cf6163
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141829655"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934687"
 ---
 # New-AzSentinelDataConnector
 
@@ -478,6 +478,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.DataConnectors.PSSentinelDataConnector
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

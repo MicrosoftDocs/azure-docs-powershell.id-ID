@@ -9,8 +9,8 @@ ms.openlocfilehash: 9de36f7b79027451642513b16da41c5723473ccb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142372859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142951877"
 ---
 # Get-AzMariaDbConnectionString
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

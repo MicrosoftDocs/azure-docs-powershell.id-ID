@@ -9,8 +9,8 @@ ms.openlocfilehash: 07c7d0e099cb5b83a0f98cfe8404be7e79b0427a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910045"
 ---
 # Get-AzVirtualNetworkUsageList
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

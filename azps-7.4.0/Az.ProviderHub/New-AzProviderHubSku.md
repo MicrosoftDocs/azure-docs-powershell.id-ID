@@ -9,13 +9,13 @@ ms.openlocfilehash: 940c3996ed885a92c1215b1a672695424084d3cf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936901"
 ---
 # New-AzProviderHubSku
 
 ## SYNOPSIS
-Membuat atau memperbarui sku tipe sumber daya dalam tipe sumber daya tertentu.
+Membuat atau memperbarui sku jenis sumber daya dalam jenis sumber daya yang diberikan.
 
 ## SYNTAX
 
@@ -26,11 +26,11 @@ New-AzProviderHubSku -ProviderNamespace <String> -ResourceType <String> -Sku <St
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui sku tipe sumber daya dalam tipe sumber daya tertentu.
+Membuat atau memperbarui sku jenis sumber daya dalam jenis sumber daya yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat/Perbarui definisi SKU sumber daya.
+### Contoh 1: Membuat/Memperbarui definisi SKU sumber daya.
 ```powershell
 New-AzProviderHubSku -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType" -Sku "default" -SkuSetting @{Name = "freeSku"; Tier = "Tier1"; Kind = "Standard"}
 ```
@@ -43,7 +43,7 @@ default   Microsoft.ProviderHub/providerRegistrations/skus
 
 Membuat/Memperbarui definisi SKU sumber daya.
 
-### Contoh 2: Buat/Perbarui definisi SKU tipe sumber daya bertumpuk.
+### Contoh 2: Membuat/Memperbarui definisi SKU jenis sumber daya berlapis.
 ```powershell
 New-AzProviderHubSku -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType/nestedResourceType" -Sku "default" -SkuSetting @{Name = "freeSku"; Tier = "Tier1"; Kind = "Standard"}
 ```
@@ -54,7 +54,7 @@ Name      Type
 default   Microsoft.ProviderHub/providerRegistrations/skus
 ```
 
-Membuat/Memperbarui definisi SKU tipe sumber daya bertumpuk.
+Membuat/Memperbarui definisi SKU jenis sumber daya berlapis.
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The SKU.
+SKU- nya.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -SkuSetting
 .
-Untuk membuat, lihat bagian CATATAN untuk properti SKUSETTING dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SKUSETTING dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISkuSetting[]
@@ -164,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -204,7 +204,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISkuResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

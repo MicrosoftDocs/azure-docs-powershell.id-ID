@@ -9,8 +9,8 @@ ms.openlocfilehash: aea1fac4450a8625eb3d31e9f951a465344a3bd9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920145"
 ---
 # Rename-AzureRmContext
 
@@ -205,6 +205,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

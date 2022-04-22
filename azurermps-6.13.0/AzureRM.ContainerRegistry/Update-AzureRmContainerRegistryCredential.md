@@ -9,8 +9,8 @@ ms.openlocfilehash: 836e8983a9d2e6c7ff21444f0da7b3bf85c1b1d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922731"
 ---
 # Update-AzureRmContainerRegistryCredential
 
@@ -196,7 +196,7 @@ Parameter: Registri (ByValue)
 
 ### Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryCredential
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

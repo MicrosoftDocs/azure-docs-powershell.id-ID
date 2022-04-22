@@ -9,8 +9,8 @@ ms.openlocfilehash: 2e49f7f7f99d3244773dfe925d754052abcc5551
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430217"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936181"
 ---
 # Import-AzRecoveryServicesAsrVaultSettingsFile
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVaultSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 2479336e2c646f82b6868ee2382af508d0404a59
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141824709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922519"
 ---
 # Get-AzureRmDataFactoryV2Dataset
 
@@ -193,7 +193,7 @@ Parameter: DataFactory (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

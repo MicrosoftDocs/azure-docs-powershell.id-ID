@@ -10,8 +10,8 @@ ms.openlocfilehash: 6aeae8333cc8aa5a394abfaba68dcc0d7fb732f3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142123"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142921936"
 ---
 # Get-AzureRmDataLakeStoreItemPermission
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.String
 Representasi string oktal kepemilikan
 
-## CATATAN
+## NOTES
 * Alias: Get-AdlStoreItemPermission
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 56806c78708e449cb31b1c5f620e9063647d2538
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988847"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931609"
 ---
 # Remove-AzSynapseFirewallRule
 
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

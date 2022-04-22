@@ -9,8 +9,8 @@ ms.openlocfilehash: d4d3dc0ffc3606cbf37bed040e6cf4e805d72482
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141881717"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142919629"
 ---
 # Set-AzureRmRelayAuthorizationRule
 
@@ -344,6 +344,6 @@ Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleAttributes System.Strin
 ### Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

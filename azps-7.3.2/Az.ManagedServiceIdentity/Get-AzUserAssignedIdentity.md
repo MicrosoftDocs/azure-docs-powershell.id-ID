@@ -9,8 +9,8 @@ ms.openlocfilehash: 93dc14e1c6678f54e7ed9504dc6a0139b15c54e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142214857"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142952165"
 ---
 # Get-AzUserAssignedIdentity
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

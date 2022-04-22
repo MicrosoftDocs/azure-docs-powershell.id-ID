@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e8b5e051006c59c8173c37687bebd62fb6fa455
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170835"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931411"
 ---
 # Test-AzSynapseSparkPool
 
@@ -130,6 +130,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

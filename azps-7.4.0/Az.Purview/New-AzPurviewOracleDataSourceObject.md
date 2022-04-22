@@ -9,8 +9,8 @@ ms.openlocfilehash: e137dd71999f6415d02d426b7e6fb865d1d0d245
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994667"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936577"
 ---
 # New-AzPurviewOracleDataSourceObject
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.OracleDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
