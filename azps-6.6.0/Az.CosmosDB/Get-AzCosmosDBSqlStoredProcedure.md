@@ -9,8 +9,8 @@ ms.openlocfilehash: 11e98343fcd2d52ee762eaf9c87c5272c29161b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142477853"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142903763"
 ---
 # Get-AzCosmosDBSqlStoredProcedure
 
@@ -166,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlStoredProcedureGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

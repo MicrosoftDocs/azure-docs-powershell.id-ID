@@ -10,8 +10,8 @@ ms.openlocfilehash: 85373f110629632f64d8b0a9fc8eb85ecc06f45c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142075099"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142894366"
 ---
 # Get-AzWebAppCertificate
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.WebApp.PSCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

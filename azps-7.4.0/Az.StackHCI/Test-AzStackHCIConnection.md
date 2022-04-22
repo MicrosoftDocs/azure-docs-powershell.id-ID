@@ -9,8 +9,8 @@ ms.openlocfilehash: 310c828337471ac6020233d09b800308f622bf5f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171442"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142864522"
 ---
 # Test-AzStackHCIConnection
 
@@ -135,6 +135,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### IsRequired: True atau False
 ### Hasil: Berhasil atau Gagal
 ### FailedNodes: Daftar node yang gagal dilakukan pengujian.
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

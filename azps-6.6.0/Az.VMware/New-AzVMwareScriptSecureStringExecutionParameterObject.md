@@ -9,8 +9,8 @@ ms.openlocfilehash: ff3a1618a08a6bdcd17d6093ed347a88ec1fa610
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142116971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142894510"
 ---
 # New-AzVMwareScriptSecureStringExecutionParameterObject
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20210601.ScriptSecureStringExecutionParameter
 
-## CATATAN
+## NOTES
 
 ALIAS
 

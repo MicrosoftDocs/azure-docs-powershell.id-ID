@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e8d7ac5a24baee7cc9b927f630972b946ee3ebf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142272247"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905113"
 ---
 # New-AzVmssIpTagConfig
 
@@ -129,6 +129,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIpTag
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

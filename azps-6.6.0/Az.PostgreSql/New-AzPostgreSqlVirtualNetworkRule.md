@@ -9,8 +9,8 @@ ms.openlocfilehash: 942596014cf17dfbca5e6474dc6f6d0f63d5c7ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141950109"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142898813"
 ---
 # New-AzPostgreSqlVirtualNetworkRule
 
@@ -238,7 +238,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IVirtualNetworkRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

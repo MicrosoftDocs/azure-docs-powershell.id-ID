@@ -9,8 +9,8 @@ ms.openlocfilehash: 93bd0c9f46a75222c96ce75af343d3092260ef2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067863"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142887184"
 ---
 # Get-AzLogzSubAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "142067863"
 Dapatkan sub akun di bawah sumber daya monitor tertentu.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzsubaccount) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzLogzSubAccount -MonitorName <String> -ResourceGroupName <String> [-Subscri
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzLogzSubAccount -MonitorName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,7 +44,7 @@ Dapatkan sub akun di bawah sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua sub-akun di bawah sumber daya monitor tertentu
+### Contoh 1: Mencantumkan semua sub akun di bawah sumber daya monitor tertentu
 ```powershell
 PS C:\> Get-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName logz-portal01
 
@@ -54,9 +54,9 @@ logz01-subaccount01 Enabled          westus2  logz-rg-test
 logz01-subaccount02 Enabled          westus2  logz-rg-test
 ```
 
-Perintah ini mencantumkan semua sub-akun di bawah sumber daya monitor tertentu.
+Perintah ini mencantumkan semua sub akun di bawah sumber daya monitor tertentu.
 
-### Contoh 2: Dapatkan sub akun di bawah sumber daya monitor tertentu
+### Contoh 2: Mendapatkan sub akun di bawah sumber daya monitor tertentu
 ```powershell
 PS C:\> Get-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName logz-portal01 -Name logz01-subaccount01
 
@@ -67,7 +67,7 @@ logz01-subaccount01 Enabled          westus2  logz-rg-test
 
 Perintah ini mendapatkan sub akun di bawah sumber daya monitor tertentu.
 
-### Contoh 3: Mendapatkan sub akun di bawah sumber daya monitor tertentu menurut pipeline
+### Contoh 3: Dapatkan sub akun di bawah sumber daya monitor tertentu berdasarkan alur
 ```powershell
 PS C:\> New-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01 -Location 'westus2' -PlanBillingCycle 'Monthly' -PlanUsageType 'PAYG' -PlanDetail '100gb14days' -PlanEffectiveDate (Get-Date -AsUTC) -UserInfoEmailAddress 'xxxxx@microsoft.com' -UserInfoPhoneNumber 'xxxxxx' -UserInfoFirstName 'xxx' -UserInfoLastName 'xxx' | Get-AzLogzSubAccount
 
@@ -76,7 +76,7 @@ Name           MonitoringStatus Location ResourceGroupName
 logz-pwshsub01 Enabled          westus2  logz-rg-test
 ```
 
-Perintah ini mendapatkan sub akun di bawah sumber daya monitor tertentu menurut pipeline.
+Perintah ini mendapatkan sub akun di bawah sumber daya monitor tertentu berdasarkan alur.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Sub Akun
 
 ```yaml
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -182,7 +182,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.ILogzMonitorResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -195,7 +195,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

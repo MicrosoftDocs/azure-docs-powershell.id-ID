@@ -9,13 +9,13 @@ ms.openlocfilehash: af42b87bc11a6825b45082d07fcb9ac6a341b7cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863190"
 ---
 # Get-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
-Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam kumpulan SQL.
+Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom di kumpulan SQL.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Cmdlet Get-AzSynapseSqlPoolSensitivityRecommendation mengembalikan tipe informas
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kumpulan Azure Synapse SQL.
+### Contoh 1: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kumpulan SQL Azure Synapse.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool
 ```
@@ -66,7 +66,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 2: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kumpulan SQL Azure Synapse menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Get-AzSynapseSqlPoolSensitivityRecommendation
 ```
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL objek input pool, biasanya melewati pipeline.
+Objek input pool SQL, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.DataClassification.SqlPoolSensitivityClassificationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

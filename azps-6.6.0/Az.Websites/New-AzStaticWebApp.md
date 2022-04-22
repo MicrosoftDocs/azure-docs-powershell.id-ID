@@ -9,8 +9,8 @@ ms.openlocfilehash: c873d3f8a8989a4ea4da8077328a16dfa74b6883
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142220131"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142894312"
 ---
 # New-AzStaticWebApp
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiBuildCommand
-Perintah kustom untuk dijalankan selama penyebaran aplikasi API Azure Functions.
+Perintah kustom untuk dijalankan selama penyebaran aplikasi api Azure Functions.
 
 ```yaml
 Type: System.String
@@ -574,7 +574,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20201201.IStaticSiteArmResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

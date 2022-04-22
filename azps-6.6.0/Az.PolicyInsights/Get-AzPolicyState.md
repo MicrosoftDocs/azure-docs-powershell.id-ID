@@ -9,8 +9,8 @@ ms.openlocfilehash: 5f0fc612b5309ab68b27157d2d1bb13c9855fdd2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142226143"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142898831"
 ---
 # Get-AzPolicyState
 
@@ -520,7 +520,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PolicyInsights.Models.PolicyState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

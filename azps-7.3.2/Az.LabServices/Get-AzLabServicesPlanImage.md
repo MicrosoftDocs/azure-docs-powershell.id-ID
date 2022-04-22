@@ -9,8 +9,8 @@ ms.openlocfilehash: 5fb2b2a2bfed87b9aa34a75e17876961d7a9fc51
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142319711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142887832"
 ---
 # Get-AzLabServicesPlanImage
 
@@ -244,7 +244,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.IImage
 
-## CATATAN
+## NOTES
 
 ALIAS
 

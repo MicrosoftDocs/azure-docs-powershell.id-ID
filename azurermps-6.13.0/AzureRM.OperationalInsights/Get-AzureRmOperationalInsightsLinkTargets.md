@@ -10,8 +10,8 @@ ms.openlocfilehash: a1040e5fe810a5dfbbb2e41daf7e8933102e3799
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819359"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142855804"
 ---
 # Get-AzureRmOperationalInsightsLinkTargets
 
@@ -67,7 +67,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

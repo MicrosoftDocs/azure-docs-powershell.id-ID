@@ -10,8 +10,8 @@ ms.openlocfilehash: 35a4ebeeb456b9234ed61b8010dd66bffd89165b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142276458"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142845676"
 ---
 # Set-AzStorageFileContent
 
@@ -329,7 +329,7 @@ Parameter: Direktori (ByValue)
 
 ### Microsoft.WindowsAz. Storage. File.CloudFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

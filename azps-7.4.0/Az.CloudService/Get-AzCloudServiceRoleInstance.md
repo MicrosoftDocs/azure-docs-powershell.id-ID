@@ -9,13 +9,13 @@ ms.openlocfilehash: 6e3861caa79bc9e912e803d01a7eeae5a7164594
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142180417"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877968"
 ---
 # Get-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Mendapatkan contoh peran dari layanan awan.
+Mendapatkan instans peran dari layanan cloud.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzCloudServiceRoleInstance -CloudServiceName <String> -ResourceGroupName <St
  [-SubscriptionId <String[]>] [-Expand <InstanceViewTypes>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzCloudServiceRoleInstance -CloudServiceName <String> -ResourceGroupName <String>
  -RoleInstanceName <String> [-SubscriptionId <String[]>] [-Expand <InstanceViewTypes>]
@@ -39,11 +39,11 @@ Get-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> [-Expand <In
 ```
 
 ## DESCRIPTION
-Mendapatkan contoh peran dari layanan awan.
+Mendapatkan instans peran dari layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua contoh peran
+### Contoh 1: Dapatkan semua instans peran
 ```powershell
 Get-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
 ```
@@ -57,9 +57,9 @@ ContosoBackEnd_IN_1     eastus2euap Standard_D1_v2 Standard
 ContosoBackEnd_IN_1     eastus2euap Standard_D1_v2 Standard
 ```
 
-Perintah ini mendapatkan properti semua contoh peran layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan properti dari semua instans peran layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
-### Contoh 2: Dapatkan properti untuk contoh peran tunggal
+### Contoh 2: Mendapatkan properti untuk instans peran tunggal
 ```powershell
 Get-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0"
 ```
@@ -70,7 +70,7 @@ Name                    Location    SkuName        SkuTier
 ContosoFrontEnd_IN_0    eastus2euap Standard_D1_v2 Standard
 ```
 
-Perintah ini mendapatkan properti contoh peran bernama ContosoFrontEnd_IN_0 layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan properti instans peran bernama ContosoFrontEnd_IN_0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -Perluas
 Ekspresi perluas untuk diterapkan ke operasi.
-'UserData' tidak didukung untuk layanan awan.
+'UserData' tidak didukung untuk layanan cloud.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Support.InstanceViewTypes
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleInstanceName
-Nama contoh peran.
+Nama instans peran.
 
 ```yaml
 Type: System.String
@@ -166,8 +166,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IRoleInstance
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -211,10 +211,10 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Perbarui domain diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan seterunya.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

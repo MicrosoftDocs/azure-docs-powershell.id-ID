@@ -9,8 +9,8 @@ ms.openlocfilehash: 645444537f7ed1e447ef11e250d931bc11fe0682
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142040987"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142897229"
 ---
 # Add-AzSqlInstanceKeyVaultKey
 
@@ -244,6 +244,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureRmSqlManagedInstanceKeyVaultKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

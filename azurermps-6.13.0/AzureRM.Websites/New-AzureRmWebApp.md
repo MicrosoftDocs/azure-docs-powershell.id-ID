@@ -10,8 +10,8 @@ ms.openlocfilehash: 2dfa72867655b95ea752c23c8605f19e7544e8e0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059127"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853294"
 ---
 # New-AzureRmWebApp
 
@@ -442,7 +442,7 @@ Parameter: SourceWebApp (ByValue)
 
 ### Microsoft.Azure.Management.WebSites.Models.Site
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,13 +10,13 @@ ms.openlocfilehash: 5385bc20e70dc4c7b9aeb8e6c1de4ef51999ee72
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326833"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142844776"
 ---
 # Remove-AzApiManagementPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan Manajemen API dari lingkup yang ditentukan.
+Menghapus kebijakan API Management dari lingkup tertentu.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementpolicy) untuk informasi terbaru.
@@ -48,7 +48,7 @@ Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ApiId <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementPolicy** menghapus kebijakan Manajemen API dari lingkup yang ditentukan.
+Cmdlet **Remove-AzApiManagementPolicy** menghapus kebijakan API Management dari lingkup yang ditentukan.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Remove-AzApiManagementPolicy -Context $apimContext
 ```
 
-Perintah ini menghapus kebijakan tingkat penyewa dari Manajemen API.
+Perintah ini menghapus kebijakan tingkat penyewa dari API Management.
 
 ### Contoh 2: Menghapus kebijakan lingkup produk
 ```
@@ -66,7 +66,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Remove-AzApiManagementPolicy -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini menghapus kebijakan lingkup produk dari Manajemen API.
+Perintah ini menghapus kebijakan lingkup produk dari API Management.
 
 ### Contoh 3: Menghapus kebijakan lingkup API
 ```
@@ -74,7 +74,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Remove-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210"
 ```
 
-Perintah ini menghapus kebijakan lingkup API dari Manajemen API.
+Perintah ini menghapus kebijakan lingkup API dari API Management.
 
 ### Contoh 4: Menghapus kebijakan lingkup operasi
 ```
@@ -82,7 +82,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Remove-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777"
 ```
 
-Perintah ini menghapus kebijakan lingkup operasi dari Manajemen API.
+Perintah ini menghapus kebijakan lingkup operasi dari API Management.
 
 ## PARAMETERS
 
@@ -225,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 50268e3a176069326cb9d9ef4275855ad1ee54b5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142274083"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142844380"
 ---
 # Start-AzBatchComputeNodeServiceLogUpload
 
@@ -262,6 +262,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSStartComputeNodeServiceLogUploadResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

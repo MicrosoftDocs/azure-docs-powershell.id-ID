@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a7082558e62feff67595f1927db24e4ae2ffa34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429327"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142865764"
 ---
 # Add-AzSqlElasticJobTarget
 
@@ -387,6 +387,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Sql.Models.JobTarget
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

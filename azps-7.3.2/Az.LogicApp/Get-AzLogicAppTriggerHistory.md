@@ -10,8 +10,8 @@ ms.openlocfilehash: 8502bdc78330ed32388b4d3c0d2c37dbef787257
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142489139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142887400"
 ---
 # Get-AzLogicAppTriggerHistory
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.WorkflowTriggerHistory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

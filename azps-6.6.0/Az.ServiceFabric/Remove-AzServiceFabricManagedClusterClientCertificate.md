@@ -9,8 +9,8 @@ ms.openlocfilehash: d21cb673b8da366347081caf9114173dba77ea57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142120913"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142897391"
 ---
 # Remove-AzServiceFabricManagedClusterClientCertificate
 
@@ -246,6 +246,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
