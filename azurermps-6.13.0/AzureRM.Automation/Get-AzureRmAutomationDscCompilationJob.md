@@ -10,8 +10,8 @@ ms.openlocfilehash: 253a17f16033836622ceb83bdac8532aa808a20f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845646"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924622"
 ---
 # Get-AzureRmAutomationDscCompilationJob
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CompilationJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

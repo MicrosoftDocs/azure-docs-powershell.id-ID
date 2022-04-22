@@ -9,8 +9,8 @@ ms.openlocfilehash: 578864ff249540513b7158b7f5f8a9df8ee30d19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848768"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142880596"
 ---
 # Test-AzVMwareLocationTrialAvailability
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.ITrial
 
-## CATATAN
+## NOTES
 
 ALIAS
 

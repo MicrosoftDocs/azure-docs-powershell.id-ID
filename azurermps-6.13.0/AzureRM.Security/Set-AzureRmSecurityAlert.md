@@ -9,8 +9,8 @@ ms.openlocfilehash: 81cb94cdcb8efa948160d21da3aca709bb86b6fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775204"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142918793"
 ---
 # Set-AzureRmSecurityAlert
 
@@ -233,6 +233,6 @@ Microsoft.Azure.Commands.Security.Cmdlets.Alerts.PSSetAlertInputObject
 
 ### Microsoft.Azure.Commands.Security.Models.Alerts.PSSecurityAlert
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: dd8ef26cc612f02626eaa949e83ef46679678285
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142250515"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142882288"
 ---
 # Start-AzStorageFileCopy
 
@@ -471,7 +471,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

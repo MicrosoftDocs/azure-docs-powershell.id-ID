@@ -9,8 +9,8 @@ ms.openlocfilehash: 62d5b14115490f13a679efede0bb2bab757e8f1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931753"
 ---
 # Invoke-AzSynapseDataFlowDebugSessionCommand
 
@@ -270,6 +270,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSDataFlowDebugCommandResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

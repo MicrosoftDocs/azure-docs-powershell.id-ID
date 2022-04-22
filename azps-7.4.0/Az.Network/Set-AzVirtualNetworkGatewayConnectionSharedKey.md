@@ -10,8 +10,8 @@ ms.openlocfilehash: 30e292de4c1afc56f59fa2610cd5c9f6f25bbbe5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142937819"
 ---
 # Set-AzVirtualNetworkGatewayConnectionSharedKey
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 2cce01f444566a91a7bc3b4b2395e1d4e3dacddc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917971"
 ---
 # New-AzureRmStreamAnalyticsInput
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StreamAnalytics.Models.PSInput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

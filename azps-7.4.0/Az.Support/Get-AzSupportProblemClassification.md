@@ -9,8 +9,8 @@ ms.openlocfilehash: 6472b52541599bccfa28525a347259bbc1ade982
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171135"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142932041"
 ---
 # Get-AzSupportProblemClassification
 
@@ -163,6 +163,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Support.Models.PSSupportProblemClassification
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 530ca83bf7601d33c8a3144d830e59f364621480
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141876056"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142912115"
 ---
 # Enable-AzsComputeUserSubscriptionFeature
 
@@ -224,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

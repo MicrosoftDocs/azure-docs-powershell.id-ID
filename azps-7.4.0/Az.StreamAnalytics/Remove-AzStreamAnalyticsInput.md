@@ -9,8 +9,8 @@ ms.openlocfilehash: 8244c3d66d7a71c4395111c051705d0ecb8f689d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164514"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142932113"
 ---
 # Remove-AzStreamAnalyticsInput
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

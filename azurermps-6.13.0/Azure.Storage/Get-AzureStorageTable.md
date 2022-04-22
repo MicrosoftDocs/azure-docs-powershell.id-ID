@@ -10,8 +10,8 @@ ms.openlocfilehash: 1d31bff44bb93db1022a88a464c2942a2a3fadbb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391510"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925165"
 ---
 # Get-AzureStorageTable
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

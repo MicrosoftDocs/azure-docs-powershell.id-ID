@@ -10,8 +10,8 @@ ms.openlocfilehash: 11f9480f18995712e93425c98e735024c8b82301
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871556"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905815"
 ---
 # Add-AzVmssNetworkInterfaceConfiguration
 
@@ -260,7 +260,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 80a47d3f3943589bc2737bbb46ef1620f70b6237
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424486"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142937621"
 ---
 # Update-AzVpnServerConfiguration
 
@@ -440,6 +440,6 @@ System.String Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy[]
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 39d15940b85e7da19cf4f8f23abee5db6223235f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846870"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925312"
 ---
 # Add-AzureAnalysisServicesAccount
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Dataplane.AsAzureProfile
 
-## CATATAN
+## NOTES
 Alias: Login-AzureAsAccount
 
 ## RELATED LINKS

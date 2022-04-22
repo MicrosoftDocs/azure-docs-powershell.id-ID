@@ -9,8 +9,8 @@ ms.openlocfilehash: f2f367c98032f9f8c72c1a3a9f345b5d38139aa4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931501"
 ---
 # Remove-AzSynapseSqlPoolSensitivityClassification
 
@@ -273,6 +273,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

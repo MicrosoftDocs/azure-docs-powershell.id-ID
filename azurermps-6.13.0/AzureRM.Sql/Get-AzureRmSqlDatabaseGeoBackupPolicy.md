@@ -10,8 +10,8 @@ ms.openlocfilehash: f17619fcdb16574a1fc755843e0084200031085d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142918573"
 ---
 # Get-AzureRmSqlDatabaseGeoBackupPolicy
 
@@ -29,7 +29,7 @@ Get-AzureRmSqlDatabaseGeoBackupPolicy [-ServerName] <String> [-DatabaseName] <St
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmSqlDatabaseGeoBackupPolicy** akan mendaftarkan kebijakan cadangan geo ke database ini.
-Ini adalah sumber daya Cadangan Azure yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
@@ -106,10 +106,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Set-AzureRmSqlDatabaseGeoBackupPolicy](./Set-AzureRmSqlDatabaseGeoBackupPolicy.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

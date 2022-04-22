@@ -9,8 +9,8 @@ ms.openlocfilehash: acd0d2826c36635945a77ff57afa3fca8f81ece6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434618"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142862488"
 ---
 # Update-AzWindowsIotServicesDevice
 
@@ -308,7 +308,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.Api20190601.IDeviceService
 
-## CATATAN
+## NOTES
 
 ALIAS
 

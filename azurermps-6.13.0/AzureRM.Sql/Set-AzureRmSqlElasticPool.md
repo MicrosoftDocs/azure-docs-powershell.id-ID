@@ -10,8 +10,8 @@ ms.openlocfilehash: 6b059905cdc1e9474ce455f78fac88f282b5ce10
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280518"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142918229"
 ---
 # Set-AzureRmSqlElasticPool
 
@@ -404,7 +404,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

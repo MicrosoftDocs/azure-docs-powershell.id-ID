@@ -1,51 +1,48 @@
 ---
 external help file: ''
 Module Name: Az.CloudService
-online version: https://docs.microsoft.com/powershell/module/az.cloudservice/invoke-azcloudserviceroleinstancereimage
+online version: https://docs.microsoft.com/powershell/module/az.cloudservice/restart-azcloudserviceroleinstance
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceReimage.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceReimage.md
-ms.openlocfilehash: 73cccf7dff2fee89f06b269817d224be6089ba9d
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudServiceRoleInstance.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudServiceRoleInstance.md
+ms.openlocfilehash: e2fe130ef40b6b7d2eb08ad40465ee18f236e9b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142905923"
+ms.locfileid: "142877896"
 ---
-# Invoke-AzCloudServiceRoleInstanceReimage
+# Restart-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Operasi Reimage Role Instance asinkron menginstal ulang sistem operasi pada instans peran web atau peran pekerja.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/invoke-azcloudserviceroleinstancereimage) untuk informasi terbaru.
+Operasi Reboot Role Instance asinkron meminta boot ulang instans peran di layanan cloud.
 
 ## SYNTAX
 
-### Reimage (Default)
+### Hidupkan ulang (Default)
 ```
-Invoke-AzCloudServiceRoleInstanceReimage -CloudServiceName <String> -ResourceGroupName <String>
+Restart-AzCloudServiceRoleInstance -CloudServiceName <String> -ResourceGroupName <String>
  -RoleInstanceName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ReimageViaIdentity
+### RestartViaIdentity
 ```
-Invoke-AzCloudServiceRoleInstanceReimage -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>]
- [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Restart-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Operasi Reimage Role Instance asinkron menginstal ulang sistem operasi pada instans peran web atau peran pekerja.
+Operasi Reboot Role Instance asinkron meminta boot ulang instans peran di layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Menggambar ulang instans peran layanan cloud
+### Contoh 1: Menghidupkan ulang instans peran layanan cloud
 ```powershell
-PS C:\> Invoke-AzCloudServiceRoleInstanceReimage -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0"
+Restart-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0"
 ```
 
-Perintah ini mengubah 2 instans peran layanan cloud ContosoFrontEnd_IN_0 dan ContosoBackEnd_IN_1 bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini memulai ulang instans peran bernama ContosoFrontEnd_IN_0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -69,7 +66,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: System.String
-Parameter Sets: Reimage
+Parameter Sets: Restart
 Aliases:
 
 Required: True
@@ -99,7 +96,7 @@ Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOB
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
-Parameter Sets: ReimageViaIdentity
+Parameter Sets: RestartViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +141,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: System.String
-Parameter Sets: Reimage
+Parameter Sets: Restart
 Aliases:
 
 Required: True
@@ -159,7 +156,7 @@ Nama instans peran.
 
 ```yaml
 Type: System.String
-Parameter Sets: Reimage
+Parameter Sets: Restart
 Aliases:
 
 Required: True
@@ -175,7 +172,7 @@ ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
-Parameter Sets: Reimage
+Parameter Sets: Restart
 Aliases:
 
 Required: False
@@ -238,10 +235,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[CloudServiceName <String>]`: 
+  - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi yang berkaitan dengan versi OS.
+  - `[NetworkInterfaceName <String>]`: Nama antarmuka jaringan.
   - `[OSFamilyName <String>]`: Nama keluarga OS.
   - `[OSVersionName <String>]`: Nama versi OS.
+  - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
   - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.

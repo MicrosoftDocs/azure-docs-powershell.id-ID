@@ -9,8 +9,8 @@ ms.openlocfilehash: 63b09c213d2f57229f78f495557020b6b715a18c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424509"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142937747"
 ---
 # Update-AzP2sVpnGateway
 
@@ -440,7 +440,7 @@ System.String Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
 
 ### Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

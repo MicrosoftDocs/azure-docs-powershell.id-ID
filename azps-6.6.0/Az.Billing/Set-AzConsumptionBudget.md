@@ -9,8 +9,8 @@ ms.openlocfilehash: a2a35ff66a115bb9b02f27dd8b7b875c8c1b536a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142325177"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142906697"
 ---
 # Set-AzConsumptionBudget
 
@@ -434,6 +434,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

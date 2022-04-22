@@ -9,8 +9,8 @@ ms.openlocfilehash: 2dc8bf92326aa7c28505a68442922a2a081cd3cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164584"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142932203"
 ---
 # Invoke-AzStorageSyncCompatibilityCheck
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StorageSync.Evaluation.Models.PSValidationResult
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, Az, lengan, sumber daya, manajemen, storagesync, filesync
 
 ## RELATED LINKS
