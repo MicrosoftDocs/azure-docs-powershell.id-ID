@@ -9,8 +9,8 @@ ms.openlocfilehash: ccaac2c04026ab34f45e88a2832a57086a0f1411
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142077601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143024831"
 ---
 # New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject
 
@@ -134,6 +134,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.DeviceSecurityGroups.PSThresholdCustomAlertRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

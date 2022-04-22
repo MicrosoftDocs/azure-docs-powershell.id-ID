@@ -9,8 +9,8 @@ ms.openlocfilehash: 828ea7cf841eed62df0ca49e966824425ea6906a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141852332"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143018441"
 ---
 # Remove-AzDataLakeStoreVirtualNetworkRule
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

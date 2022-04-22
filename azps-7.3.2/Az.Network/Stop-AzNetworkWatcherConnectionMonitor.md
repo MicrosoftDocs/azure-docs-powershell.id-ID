@@ -9,8 +9,8 @@ ms.openlocfilehash: 61c817106bfdc18603a959f3c39fcf67c045e45e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142212139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143012987"
 ---
 # Stop-AzNetworkWatcherConnectionMonitor
 
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS

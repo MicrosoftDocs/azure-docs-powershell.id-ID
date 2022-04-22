@@ -9,8 +9,8 @@ ms.openlocfilehash: 5610be7f3fd8c2d37bbd646fece0143026e1d603
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142112309"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143018117"
 ---
 # Get-AzDataShareReceivedInvitation
 
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

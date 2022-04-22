@@ -9,8 +9,8 @@ ms.openlocfilehash: 9f485096b4b26fe5f24cae57c9252053801c20a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142086189"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030069"
 ---
 # Add-AzDataLakeStoreVirtualNetworkRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "142086189"
 Menambahkan aturan jaringan virtual ke akun Data Lake Store yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestorevirtualnetworkrule) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestorevirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ IgnoreMissingVnetServiceEndpoint :
 State                            :
 ```
 
-Ini membuat aturan jaringan virtual baru yang disebut "myVNET" dalam akun "dls" dengan id subnet "testId"
+Ini membuat aturan jaringan virtual baru yang disebut "myVNET" di akun "dls" dengan id subnet "testId"
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan jaringan virtual.
 
 ```yaml
@@ -108,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreVirtualNetworkRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

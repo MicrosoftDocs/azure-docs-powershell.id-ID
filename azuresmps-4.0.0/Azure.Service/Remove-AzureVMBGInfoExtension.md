@@ -7,8 +7,8 @@ ms.openlocfilehash: 6295aec29c0dca1c2be516dabdba5e64b56951d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142277583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980137"
 ---
 # Remove-AzureVMBGInfoExtension
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

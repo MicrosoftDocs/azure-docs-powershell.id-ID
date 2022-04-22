@@ -9,8 +9,8 @@ ms.openlocfilehash: 2a74fe0ec8202d2955d09613f46734d03891b89f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141789008"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143018621"
 ---
 # Get-AzDataLakeAnalyticsFirewallRule
 
@@ -28,7 +28,7 @@ Get-AzDataLakeAnalyticsFirewallRule [-Account] <String> [[-Name] <String>] [[-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsFirewallRule** mengambil aturan firewall atau daftar aturan firewall dari akun Azure Data Lake Analytics.
+Cmdlet **Get-AzDataLakeAnalyticsFirewallRule** mengambil aturan firewall atau daftar aturan firewall dari akun azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Perintah ini mendapatkan semua aturan firewall dari akun "ContosoAdlAcct"
 ## PARAMETERS
 
 ### -Akun
-Akun Analitik Data Lake untuk mendapatkan aturan firewall dari
+Akun Data Lake Analytics untuk mendapatkan aturan firewall
 
 ```yaml
 Type: System.String
@@ -119,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.DataLakeAnalyticsFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

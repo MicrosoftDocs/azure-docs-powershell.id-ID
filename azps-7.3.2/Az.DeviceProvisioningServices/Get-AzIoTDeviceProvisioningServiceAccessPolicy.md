@@ -9,8 +9,8 @@ ms.openlocfilehash: 792b2866d8b73cf8c073e4794f6137b902d478f7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142215973"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143017739"
 ---
 # Get-AzIoTDeviceProvisioningServiceAccessPolicy
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSSharedAccessSignatureAuthorizationRuleAccessRightsDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

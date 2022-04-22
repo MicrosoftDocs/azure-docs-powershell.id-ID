@@ -10,8 +10,8 @@ ms.openlocfilehash: 8a4889190e58edd896d1a93222a35688dd5884c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141777648"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047493"
 ---
 # New-AzureRmLoadBalancerProbeConfig
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSProbe
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

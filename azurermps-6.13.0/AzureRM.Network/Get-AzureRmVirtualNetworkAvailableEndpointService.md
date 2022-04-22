@@ -9,8 +9,8 @@ ms.openlocfilehash: 7499c96ec887673faaf93cf2901e4705b63604b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141883669"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142986617"
 ---
 # Get-AzureRmVirtualNetworkAvailableEndpointService
 
@@ -85,6 +85,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSEndpointServiceResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

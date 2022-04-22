@@ -9,16 +9,16 @@ ms.openlocfilehash: 62ab42146de5f1f6c9153baf05c72b0806d06f83
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142125377"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143026541"
 ---
 # Get-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
-Mendapatkan sumber daya konfigurasi Ketuk.
+Mendapatkan sumber daya konfigurasi Tap.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterfacetapconfig) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterfacetapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,25 +35,25 @@ Get-AzNetworkInterfaceTapConfig -ResourceId <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetworkInterfaceTapConfig** mendapatkan Azure Tap Configuration untuk grup sumber daya tertentu, antarmuka jaringan dan ketuk nama konfigurasi atau daftar konfigurasi ketuk dalam grup sumber daya dan antarmuka jaringan.
+Cmdlet **Get-AzNetworkInterfaceTapConfig** mendapatkan Azure Tap Configuration untuk grup sumber daya tertentu, antarmuka jaringan, dan ketuk nama konfigurasi atau daftar konfigurasi ketuk dalam grup sumber daya dan antarmuka jaringan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua konfigurasi ketuk untuk antarmuka jaringan tertentu
+### Contoh 1: Mendapatkan semua konfigurasi ketukan untuk antarmuka jaringan tertentu
 ```
 PS C:\> Get-AzNetworkInterfaceTapConfig -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName"
 ```
 
 Perintah ini akan menambahkan konfigurasi ketukan untuk antarmuka jaringan tertentu.
 
-### Contoh 2: Mendapatkan konfigurasi ketukan tertentu
+### Contoh 2: Mendapatkan konfigurasi ketukan yang diberikan
 ```
 PS C:\> Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName" -Name "tapconfigName"
 ```
 
-Perintah ini akan menambahkan konfigurasi ketukan tertentu untuk antarmuka jaringan tertentu.
+Perintah ini mendapatkan konfigurasi ketukan khusus yang ditambahkan untuk antarmuka jaringan tertentu.
 
-### Contoh 3: Mendapatkan konfigurasi ketukan tertentu
+### Contoh 3: Mendapatkan konfigurasi ketukan yang diberikan
 ```
 PS C:\> Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName" -Name "tapconfig*"
 ```
@@ -77,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi ketukan tertentu.
 
 ```yaml
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId sumber daya TapConfiguration
+ResourceId dari sumber daya TapConfiguration
 
 ```yaml
 Type: System.String
@@ -137,8 +137,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceTapConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

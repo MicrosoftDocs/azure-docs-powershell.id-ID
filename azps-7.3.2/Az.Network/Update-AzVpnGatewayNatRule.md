@@ -9,8 +9,8 @@ ms.openlocfilehash: 966c79eb94f237c4e29e6391d0c784f2a365b97d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142211995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143012825"
 ---
 # Update-AzVpnGatewayNatRule
 
@@ -77,7 +77,7 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/testRg/providers/Microsoft.Network/vpnGateways/testvpngw/natRules/testNatRule
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub. Kemudian, kami akan membuat VpnGateway di bawah Hub Virtual tersebut. Lalu, buat aturan NAT baru yang terkait dengan VpnGateway yang dibuat.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual. Kemudian, kami akan membuat VpnGateway di bawah Hub Virtual tersebut. Lalu, buat aturan NAT baru yang terkait dengan VpnGateway yang dibuat.
 Menggunakan perintah ini: Perbarui-AzVpnGatewayNatRule, perbarui aturan NAT.
 
 ## PARAMETERS
@@ -338,6 +338,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnGatewayNatRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

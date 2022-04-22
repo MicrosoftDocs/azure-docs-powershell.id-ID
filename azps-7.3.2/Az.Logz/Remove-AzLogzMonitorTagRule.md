@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/remove-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzMonitorTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzMonitorTagRule.md
-ms.openlocfilehash: 4d07d9593d19a70f42845df4150c977b4380f33e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d4f6f4013f9732a2ddcb3b3072185c8133536bd7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556192"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143016353"
 ---
 # Remove-AzLogzMonitorTagRule
 
 ## SYNOPSIS
-Menghapus kumpulan aturan tag untuk sumber daya monitor tertentu.
+Hapus seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/remove-azlogzmonitortagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,25 +35,25 @@ Remove-AzLogzMonitorTagRule -InputObject <ILogzIdentity> [-DefaultProfile <PSObj
 ```
 
 ## DESCRIPTION
-Menghapus kumpulan aturan tag untuk sumber daya monitor tertentu.
+Hapus seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan aturan tag untuk sumber daya monitor tertentu
+### Contoh 1: Menghapus seperangkat aturan tag untuk sumber daya monitor tertentu
 ```powershell
 PS C:\> Remove-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
 
 ```
 
-Perintah ini menghapus kumpulan aturan tag untuk sumber daya monitor tertentu.
+Perintah ini menghapus seperangkat aturan tag untuk sumber daya monitor tertentu.
 
-### Contoh 2: Hapus kumpulan aturan tag untuk sumber daya monitor tertentu menurut saluran
+### Contoh 2: Menghapus seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur
 ```powershell
 PS C:\> Get-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Remove-AzLogzMonitorTagRule
 
 ```
 
-Perintah ini menghapus kumpulan aturan tag untuk sumber daya monitor tertentu menurut saluran.
+Perintah ini menghapus seperangkat aturan tag untuk sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -145,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -187,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -200,7 +203,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

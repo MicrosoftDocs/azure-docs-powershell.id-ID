@@ -9,8 +9,8 @@ ms.openlocfilehash: 5af4f68d1e00e31354cf88e6a8552da81c134fcc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142476449"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029799"
 ---
 # New-AzDataMigrationTask
 
@@ -18,7 +18,7 @@ ms.locfileid: "142476449"
 Membuat dan memulai tugas migrasi data di Azure Database Migration Service.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtask) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-AzDataMigrationTask [-ResourceId] <String> -TaskType <TaskTypeEnum> -Name <S
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil parameter untuk enumerator Tipe Tugas, Azure Resource Group, nama Azure Database Migration Service terkait dan Project sebagai input. 
+Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil parameter untuk enumerator Jenis Tugas, Grup Sumber Daya Azure, nama Azure Database Migration Service terkait dan Project sebagai input. 
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil 
 PS C:\> New-AzDmsTask -TaskType MigrateSqlServerSqlDb -ResourceGroupName myResourceGroup -ServiceName TestService -ProjectName myDMSProject -TaskName MyMigrationTask -SourceConnection $sourceConnInfo -SourceCred $sourceCred -TargetConnection $targetConnInfo -TargetCred $targetCred -SelectedDatabase  $selectedDbs -MigrationValidation $validationTask
 ```
 
-Skrip contoh ini memperlihatkan cara membuat Tugas Migrasi Data baru bernama MyMigrationTask dalam proyek bernama myDMSProject dan layanan bernama TestService. 
+Contoh skrip ini menunjukkan cara membuat Tugas Migrasi Data baru bernama MyMigrationTask dalam proyek bernama myDMSProject dan layanan bernama TestService. 
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tugas.
 
 ```yaml
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskType
-Tipe Tugas.
+Jenis Tugas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.TaskTypeEnum
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationValidation 
-Objek respons tugas menurut panggilan validasi, opsional tapi disarankan.
+Objek respons tugas dengan panggilan validasi, opsional tetapi direkomendasikan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSProjectTask
@@ -205,8 +205,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -249,6 +249,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataMigration.Models.PSProjectTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

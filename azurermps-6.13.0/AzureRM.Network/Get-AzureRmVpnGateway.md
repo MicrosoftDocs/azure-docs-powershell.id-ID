@@ -9,8 +9,8 @@ ms.openlocfilehash: f1e7b829856558f438793a921154aa3f04666ff8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138643"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142986437"
 ---
 # Get-AzureRmVpnGateway
 
@@ -119,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

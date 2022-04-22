@@ -10,16 +10,16 @@ ms.openlocfilehash: 3b4a8604e6549ec4235bb427a45d3122b25b8296
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141804452"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029961"
 ---
 # Remove-AzDataLakeStoreItemAcl
 
 ## SYNOPSIS
-Menghapus ACL file atau folder di Penyimpanan Data Lake.
+Menghapus ACL file atau folder di Data Lake Store.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreitemacl) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreitemacl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzDataLakeStoreItemAcl [-Account] <String> [-Path] <DataLakeStorePathInst
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataLakeStoreItemAcl** menghapus daftar kontrol akses (ACL) file atau folder di Penyimpanan Data Lake.
+Cmdlet **Remove-AzDataLakeStoreItemAcl** menghapus daftar kontrol akses (ACL) file atau folder di Data Lake Store.
 
 ## EXAMPLES
 
@@ -87,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang menunjukkan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake item, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store item, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Alias: Remove-AdlStoreAcl
 
 ## RELATED LINKS

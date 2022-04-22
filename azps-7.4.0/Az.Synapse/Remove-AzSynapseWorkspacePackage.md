@@ -9,8 +9,8 @@ ms.openlocfilehash: e2a3192051d4956f5fe7943dadd70e61e75af620
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419416"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142993223"
 ---
 # Remove-AzSynapseWorkspacePackage
 
@@ -224,6 +224,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
