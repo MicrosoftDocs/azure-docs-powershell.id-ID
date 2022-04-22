@@ -9,8 +9,8 @@ ms.openlocfilehash: 5c34f262685c1581808867e91dccaa47e5518784
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995322"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142871380"
 ---
 # New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject
 
@@ -274,6 +274,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorIcmpConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

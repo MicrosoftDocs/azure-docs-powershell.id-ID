@@ -9,8 +9,8 @@ ms.openlocfilehash: a7b9d638fae6b4ea8bdba14e0d10d45a263a09f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990666"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867906"
 ---
 # New-AzRelayHybridConnection
 
@@ -234,6 +234,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: a8c6058b9847990dccdb5f323aa100785a10ec4a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991410"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870660"
 ---
 # Set-AzExpressRouteConnection
 
@@ -302,7 +302,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 90d9caa21f5b6856d6fcb4c970e46ab8e7dae3d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142041941"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142835362"
 ---
 # New-AzSearchQueryKey
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchQueryKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

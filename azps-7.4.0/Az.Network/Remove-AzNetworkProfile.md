@@ -9,8 +9,8 @@ ms.openlocfilehash: 0577f780ed031189e0924bce7d8a720b317bb9b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176224"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870930"
 ---
 # Remove-AzNetworkProfile
 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

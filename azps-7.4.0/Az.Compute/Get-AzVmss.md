@@ -10,8 +10,8 @@ ms.openlocfilehash: 2c986d5b1611cbed822cc7b039a756d53d752ea7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877572"
 ---
 # Get-AzVmss
 
@@ -350,7 +350,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

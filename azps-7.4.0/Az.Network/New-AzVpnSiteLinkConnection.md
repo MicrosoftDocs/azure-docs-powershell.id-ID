@@ -9,8 +9,8 @@ ms.openlocfilehash: 33f97a314661a9c3ad43bc04ea919e222ea2be57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142871146"
 ---
 # New-AzVpnSiteLinkConnection
 
@@ -279,7 +279,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnSiteLinkConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: afdf3526e94c1934a3822ae4aca5e9c9f5274ec2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142075945"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142833184"
 ---
 # Remove-AzSqlServerKeyVaultKey
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerKeyVaultKey.Model.AzureSqlServerKeyVaultKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: b524eb04ef9f6765fceb0f3ccb457e29bcc81093
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142131569"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142846612"
 ---
 # Get-AzNetworkWatcherConnectionMonitorReport
 
@@ -368,7 +368,7 @@ System.String Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorResult
 ### Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorQueryResult
 
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS

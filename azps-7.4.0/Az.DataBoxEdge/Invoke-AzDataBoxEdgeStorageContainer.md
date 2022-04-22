@@ -9,8 +9,8 @@ ms.openlocfilehash: 2ce372fedfabaf80b0a8b2700aa2466dab553317
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169623"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142875358"
 ---
 # Invoke-AzDataBoxEdgeStorageContainer
 
@@ -252,6 +252,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

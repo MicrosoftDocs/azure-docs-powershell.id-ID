@@ -9,8 +9,8 @@ ms.openlocfilehash: db1cad14a3c328745046dd569fa1d09882ab78b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142050635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142841248"
 ---
 # Set-AzFrontDoorRulesEngine
 
@@ -214,6 +214,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

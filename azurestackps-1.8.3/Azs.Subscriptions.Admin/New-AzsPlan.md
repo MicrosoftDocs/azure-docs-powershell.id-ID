@@ -7,8 +7,8 @@ ms.openlocfilehash: 348f7dc1f4719e70a73902b59cf335bb22015bec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142134593"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142851418"
 ---
 # New-AzsPlan
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Plan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

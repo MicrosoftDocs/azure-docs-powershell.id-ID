@@ -9,8 +9,8 @@ ms.openlocfilehash: 30944a2c167c02331abe5934f1e61799d83ca3b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176447"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142871308"
 ---
 # New-AzVirtualApplianceSkuProperty
 
@@ -109,6 +109,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSkuProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

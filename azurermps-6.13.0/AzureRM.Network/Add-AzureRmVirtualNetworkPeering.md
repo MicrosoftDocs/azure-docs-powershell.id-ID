@@ -10,8 +10,8 @@ ms.openlocfilehash: 60331e70ac29d81cc8ba2ea6cd1e8688a5484349
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063109"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142857281"
 ---
 # Add-AzureRmVirtualNetworkPeering
 
@@ -232,7 +232,7 @@ Parameter: RemoteVirtualNetworkId (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

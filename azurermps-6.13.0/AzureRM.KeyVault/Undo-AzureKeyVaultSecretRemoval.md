@@ -9,8 +9,8 @@ ms.openlocfilehash: ab47751a427056654270b66fb9753b8d473b64b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884209"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858114"
 ---
 # Undo-AzureKeyVaultSecretRemoval
 
@@ -166,7 +166,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: badbb8c392e053b1f8d994164183bd593843629e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064389"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142859032"
 ---
 # New-AzureRmEventGridTopicKey
 
@@ -207,6 +207,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

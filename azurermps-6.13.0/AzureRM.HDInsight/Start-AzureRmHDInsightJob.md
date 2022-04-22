@@ -10,8 +10,8 @@ ms.openlocfilehash: 38eb1a7468b56507c5e5f2c0f68f04f1a1d2020d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142387423"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858875"
 ---
 # Start-AzureRmHDInsightJob
 
@@ -142,7 +142,7 @@ Parameter: JobDefinition (ByValue)
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
