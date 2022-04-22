@@ -9,8 +9,8 @@ ms.openlocfilehash: 19c20c22b294fd9e1d2a696b5b6bdff5b5f5d9e0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142491191"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143014805"
 ---
 # New-AzApplicationGatewayIdentity
 
@@ -115,6 +115,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSManagedServiceIdentity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

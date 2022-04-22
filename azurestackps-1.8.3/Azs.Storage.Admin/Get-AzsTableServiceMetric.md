@@ -7,8 +7,8 @@ ms.openlocfilehash: c1affc11e3e5ff360cf08468c4935b6d48d68321
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142239949"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143039861"
 ---
 # Get-AzsTableServiceMetric
 
@@ -106,6 +106,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.Metric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

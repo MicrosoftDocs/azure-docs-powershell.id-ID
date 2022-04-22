@@ -10,8 +10,8 @@ ms.openlocfilehash: 7093b51ffee3f0ad635da7a6c0b63d26e93e5f2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988237"
 ---
 # Set-AzureRmApiManagementHostnames
 
@@ -186,7 +186,7 @@ Parameter: ApiManagement (ByValue)
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

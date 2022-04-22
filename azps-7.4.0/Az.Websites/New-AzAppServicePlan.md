@@ -10,8 +10,8 @@ ms.openlocfilehash: ab19dcca468f25e754bcb8065ff8678fa7ef91a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170518"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143056025"
 ---
 # New-AzAppServicePlan
 
@@ -303,7 +303,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.WebApp.PSAppServicePlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

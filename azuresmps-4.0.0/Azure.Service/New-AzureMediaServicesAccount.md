@@ -7,8 +7,8 @@ ms.openlocfilehash: 4b7d6c216d2fad11d87a19cde252dd08134d590c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135692"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042777"
 ---
 # New-AzureMediaServicesAccount
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

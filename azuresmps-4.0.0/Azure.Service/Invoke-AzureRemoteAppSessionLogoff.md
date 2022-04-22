@@ -7,8 +7,8 @@ ms.openlocfilehash: a1cfe5615fda0e342d6f63764522bf2c279e4234
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043101"
 ---
 # Invoke-AzureRemoteAppSessionLogoff
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: f97f6c59bc1888f511d84ed49e6d1d49a5d7f57f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049398"
 ---
 # New-AzureRmApiManagementCertificate
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

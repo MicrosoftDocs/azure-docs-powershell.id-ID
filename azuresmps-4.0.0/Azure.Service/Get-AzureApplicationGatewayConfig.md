@@ -7,8 +7,8 @@ ms.openlocfilehash: 89be2a1fb9483a7514394acc28636abd40c01c2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095219"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981883"
 ---
 # Get-AzureApplicationGatewayConfig
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Networking.ApplicationGatewayObjectModel.ApplicationGatewayConfigContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

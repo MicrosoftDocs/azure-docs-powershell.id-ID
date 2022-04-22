@@ -10,8 +10,8 @@ ms.openlocfilehash: f7be5b7877362484d0f3dfe4d19b8afc669e917c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923170"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982513"
 ---
 # Get-AzureRmWebAppSlot
 
@@ -137,7 +137,7 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.Management.WebSites.Models.Site
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

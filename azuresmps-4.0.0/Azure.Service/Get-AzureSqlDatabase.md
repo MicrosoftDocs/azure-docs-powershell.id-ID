@@ -7,8 +7,8 @@ ms.openlocfilehash: 70b60e311a2a9fc653c12a89c0d8ca15d9b6030a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772362"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043821"
 ---
 # Get-AzureSqlDatabase
 
@@ -242,7 +242,7 @@ Cmdlet ini mengembalikan objek *Database* jika Anda tidak menentukan parameter *
 ### Ienumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.RestorableDroppedDatabase\>
 Cmdlet ini mengembalikan objek *RestorableDroppedDatabase* jika Anda menentukan parameter *RestorableDropped* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

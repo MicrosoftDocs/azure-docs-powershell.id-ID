@@ -9,8 +9,8 @@ ms.openlocfilehash: d1a4a34150ceac599f009bd1010cee2a7887a91c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992315"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001773"
 ---
 # Remove-AzEventHubNamespace
 
@@ -227,6 +227,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
