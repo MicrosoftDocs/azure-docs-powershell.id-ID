@@ -10,8 +10,8 @@ ms.openlocfilehash: cab49566e6276cc282070c50d6c6607a8e71522f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142034543"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142954721"
 ---
 # Remove-AzDnsRecordConfig
 
@@ -481,7 +481,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

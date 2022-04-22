@@ -9,8 +9,8 @@ ms.openlocfilehash: 275b13efa25bbffd2c104a1e9cfa3baf04fffe89
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096917"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142984763"
 ---
 # Get-AzureRmManagementGroup
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

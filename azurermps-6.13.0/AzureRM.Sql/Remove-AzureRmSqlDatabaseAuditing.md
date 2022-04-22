@@ -10,8 +10,8 @@ ms.openlocfilehash: a7cf769b1150ef7e209bd02234674bb26927f9a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923713"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983485"
 ---
 # Remove-AzureRmSqlDatabaseAuditing
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Auditing.Model.AuditingPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

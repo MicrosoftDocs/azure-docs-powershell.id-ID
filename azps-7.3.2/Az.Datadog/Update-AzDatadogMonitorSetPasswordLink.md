@@ -9,8 +9,8 @@ ms.openlocfilehash: 2c6eb91b7bafcaf36a7fd84ed869f13e9cb5ba57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142111859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142955369"
 ---
 # Update-AzDatadogMonitorSetPasswordLink
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

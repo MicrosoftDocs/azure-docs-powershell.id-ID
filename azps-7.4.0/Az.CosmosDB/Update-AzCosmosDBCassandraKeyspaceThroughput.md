@@ -9,8 +9,8 @@ ms.openlocfilehash: 271aa0dddebf9f997f2448f824ce8dd343f6893a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179604"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142943165"
 ---
 # Update-AzCosmosDBCassandraKeyspaceThroughput
 
@@ -223,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSThroughputSettingsGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

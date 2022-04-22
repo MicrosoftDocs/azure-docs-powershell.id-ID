@@ -7,8 +7,8 @@ ms.openlocfilehash: 5e52e75ea1af799eb2640e38cfa0e053b6b3cc7d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393744"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928886"
 ---
 # Remove-AzureRmImage
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

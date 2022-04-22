@@ -7,8 +7,8 @@ ms.openlocfilehash: 06cd8d41fcdaaed6a05f7f7a137cbf75542be62b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285952"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928171"
 ---
 # Update-AzureRmDisk
 
@@ -203,7 +203,7 @@ Microsoft.Azure.Commands.Compute.Automation.Models.PSDiskUpdate Microsoft.Azure.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: e4d7fb2ee1e05b3e9d2cfc6205482389660b90bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141807404"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142969787"
 ---
 # Get-AzBatchLocationQuota
 
@@ -87,6 +87,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSBatchLocationQuotas
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

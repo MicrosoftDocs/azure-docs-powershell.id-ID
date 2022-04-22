@@ -10,8 +10,8 @@ ms.openlocfilehash: 1d53160c08eacd5d7d49f334b415f2726d85cd64
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141909399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142963541"
 ---
 # Remove-AzVirtualNetworkGatewayConnection
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

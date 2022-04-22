@@ -9,8 +9,8 @@ ms.openlocfilehash: b189532079708b05f9767e866552374d148a70f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142258495"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142955351"
 ---
 # New-AzDedicatedHsm
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.Api20181031.IDedicatedHsm
 
-## CATATAN
+## NOTES
 
 ALIAS
 

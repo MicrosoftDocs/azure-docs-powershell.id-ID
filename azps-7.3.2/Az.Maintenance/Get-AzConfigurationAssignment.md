@@ -9,8 +9,8 @@ ms.openlocfilehash: dc279f9d9fbc6664a3d05886ecd6a4b808cd9565
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141936573"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142952417"
 ---
 # Get-AzConfigurationAssignment
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Maintenance.Models.PSConfigurationAssignment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

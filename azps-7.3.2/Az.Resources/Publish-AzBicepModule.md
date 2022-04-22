@@ -9,8 +9,8 @@ ms.openlocfilehash: 0dbe605cce70d5332ad8b3ac6be2b414516fdb15
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142463939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142946549"
 ---
 # Publish-AzBicepModule
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

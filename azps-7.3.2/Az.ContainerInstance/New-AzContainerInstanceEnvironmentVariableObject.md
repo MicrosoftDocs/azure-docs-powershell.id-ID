@@ -9,8 +9,8 @@ ms.openlocfilehash: 89531c79c8547f8061f82b90449b8ad3f1d65eb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142071931"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142957151"
 ---
 # New-AzContainerInstanceEnvironmentVariableObject
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.EnvironmentVariable
 
-## CATATAN
+## NOTES
 
 ALIAS
 

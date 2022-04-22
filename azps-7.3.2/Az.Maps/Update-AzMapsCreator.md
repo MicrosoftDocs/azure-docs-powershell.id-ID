@@ -9,8 +9,8 @@ ms.openlocfilehash: c07945ca9ab75ed2dfc03f0c0d2612f2c3df5466
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142346147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142951895"
 ---
 # Update-AzMapsCreator
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.Api20210201.ICreator
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 508a7619374b7e245b8df99c929f161ce1966288
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779536"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142921981"
 ---
 # Export-AzureRmDataLakeStoreItem
 
@@ -254,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.String
 Jalur tempat file atau folder diunduh.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

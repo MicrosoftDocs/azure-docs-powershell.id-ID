@@ -9,8 +9,8 @@ ms.openlocfilehash: 9b56689ef8fb758439dad6619b8563e440b1c8be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424696"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142997129"
 ---
 # New-AzApplicationGatewayFirewallMatchVariable
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallMatchVariable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

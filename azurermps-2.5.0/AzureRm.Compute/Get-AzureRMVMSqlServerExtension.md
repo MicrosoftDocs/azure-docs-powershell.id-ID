@@ -8,8 +8,8 @@ ms.openlocfilehash: 6b02a83c7664fa460cd4ebd25a1754a8bc57e784
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104397"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142991791"
 ---
 # Get-AzureRmVMSqlServerExtension
 
@@ -149,7 +149,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.VirtualMachineSqlServerExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

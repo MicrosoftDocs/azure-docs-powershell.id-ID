@@ -9,8 +9,8 @@ ms.openlocfilehash: f82d2e890c2db17b46dead36453065929abe5cb1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141937221"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142952795"
 ---
 # Update-AzLabServicesVMReimage
 
@@ -258,7 +258,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

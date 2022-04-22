@@ -9,16 +9,16 @@ ms.openlocfilehash: 9ce368ed52dc7e0b55bc7d4aa4ed842d4ec1b7de
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142071265"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142955657"
 ---
 # New-AzDataProtectionBackupPolicy
 
 ## SYNOPSIS
-Membuat kebijakan cadangan baru dalam kubah cadangan tertentu
+Membuat kebijakan pencadangan baru dalam vault cadangan tertentu
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackuppolicy) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzDataProtectionBackupPolicy -Name <String> -Policy <IBackupPolicy> -Resourc
 ```
 
 ## DESCRIPTION
-Membuat kebijakan cadangan baru dalam kubah cadangan tertentu
+Membuat kebijakan pencadangan baru dalam vault cadangan tertentu
 
 ## EXAMPLES
 
@@ -43,9 +43,9 @@ Name              Type
 MyPolicy       Microsoft.DataProtection/backupVaults/backupPolicies
 ```
 
-Perintah ini membuat kebijakan default untuk tipe sumber data disk Azure.
+Perintah ini membuat kebijakan default untuk jenis sumber data disk Azure.
 
-### Contoh 2: Membuat kebijakan untuk AzureDatabaseForPostgreSQL, contoh ini membahas kebijakan canggih menggunakan powerShell
+### Contoh 2: Membuat kebijakan untuk AzureDatabaseForPostgreSQL, contoh ini mencakup kebijakan canggih menggunakan powerShell
 ```powershell
 PS C:\> $defaultPol = Get-AzDataProtectionPolicyTemplate -DatasourceType AzureDatabaseForPostgreSQL
 PS C:\> $lifeCycleVault = New-AzDataProtectionRetentionLifeCycleClientObject -SourceDataStore VaultStore -SourceRetentionDurationType Months -SourceRetentionDurationCount 3 -TargetDataStore ArchiveStore -CopyOption CopyOnExpiryOption
@@ -75,14 +75,14 @@ MyPolicy       Microsoft.DataProtection/backupVaults/backupPolicies
 ```
 
 Perintah pertama mendapatkan templat kebijakan default untuk AzureDatabaseForPostgreSQL.
-Perintah kedua, ketiga masing-masing membuat dua siklus hidup cadangan yang berbeda untuk kubah dan penyimpanan arsip.
-Cadangan tetap di vaultstore selama 3 Bulan, lalu salinan kedaluwarsa ke toko Arsip dan tinggal di sana hingga 6 bulan.
+Perintah kedua, ketiga membuat dua siklus hidup cadangan yang berbeda untuk brankas dan penyimpanan arsip masing-masing.
+Cadangan tetap di vaultstore selama 3 Bulan, dan kemudian menyalin kedaluwarsa ke penyimpanan Arsip dan tinggal di sana sampai 6 bulan.
 Perintah keempat memperbarui objek kebijakan dengan siklus hidup yang dibuat.
-Perintah kelima, keenam membuat objek jadwal kustom untuk kebijakan cadangan, dua kali mingguan dimulai dari $schDates.
+Perintah kelima keenam membuat objek jadwal kustom untuk kebijakan pencadangan, dua kali setiap minggu mulai dari $schDates.
 Perintah ketujuh memperbarui objek kebijakan dengan jadwal kustom.
-Perintah kedelapan, kesembilan, kesepuluh memperbarui aturan penyimpanan Bulanan dengan siklus hidup kustom.
-Perintah kesebelas, kedua belas membuat kriteria tag untuk kebijakan Bulanan.
-Kriteria tag perlu ditambahkan untuk setiap aturan penyimpanan kustom (ditambahkan secara otomatis untuk aturan penyimpanan default).
+Perintah kedelapan, kesembilan, kesepuluh memperbarui aturan retensi Bulanan dengan siklus hidup kustom.
+Perintah ke sebelas, kedua belas membuat kriteria tag untuk kebijakan Bulanan.
+Kriteria tag perlu ditambahkan untuk setiap aturan retensi kustom (secara otomatis ditambahkan untuk aturan retensi default).
 Perintah terakhir membuat kebijakan.
 
 ## PARAMETERS
@@ -102,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kebijakan
 
 ```yaml
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek Permintaan Kebijakan Untuk dibangun, lihat bagian CATATAN untuk properti KEBIJAKAN dan membuat tabel hash.
+Objek Permintaan Kebijakan Untuk membangun, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan
+ID Langganan
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Kubah
+Nama Vault
 
 ```yaml
 Type: System.String
@@ -177,8 +177,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBaseBackupPolicyResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -227,24 +227,24 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 KEBIJAKAN <IBackupPolicy>: Objek Permintaan Kebijakan
-  - `DatasourceType <String[]>`: Tipe sumber data untuk manajemen cadangan
+  - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap tipe cadangan yaitu Full/Incremental/Logs etc
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
-    - `DataStoreObjectType <String>`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
-    - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Archive
-    - `TriggerObjectType <String>`: Tipe objek tertentu - digunakan untuk deserialisasi
+    - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
+    - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
+    - `TriggerObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
     - `Lifecycle <ISourceLifeCycle[]>`: 
-      - `DeleteAfterDuration <String>`: Durasi penghapusan setelah diberikan rentang waktu
-      - `DeleteAfterObjectType <String>`: Tipe objek tertentu - digunakan untuk deserialisasi
-      - `SourceDataStoreObjectType <String>`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
-      - `SourceDataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Archive
+      - `DeleteAfterDuration <String>`: Durasi penghapusan setelah rentang waktu yang diberikan
+      - `DeleteAfterObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
+      - `SourceDataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
+      - `SourceDataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
       - `[TargetDataStoreCopySetting <ITargetCopySetting[]>]`: 
-        - `CopyAfterObjectType <String>`: Tipe objek tertentu - digunakan untuk deserialisasi
-        - `DataStoreObjectType <String>`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
-        - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Archive
-    - `[BackupParameterObjectType <String>]`: Tipe objek tertentu - digunakan untuk deserialisasi
+        - `CopyAfterObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
+        - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
+        - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
+    - `[BackupParameterObjectType <String>]`: Jenis objek tertentu - digunakan untuk deserialisasi
     - `[IsDefault <Boolean?>]`: 
 
 ## RELATED LINKS

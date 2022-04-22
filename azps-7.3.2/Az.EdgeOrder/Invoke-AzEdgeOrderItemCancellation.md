@@ -9,8 +9,8 @@ ms.openlocfilehash: 51f195177ecde2bec6673f347bc7a8fa11ffc7ff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142215829"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142954487"
 ---
 # Invoke-AzEdgeOrderItemCancellation
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
