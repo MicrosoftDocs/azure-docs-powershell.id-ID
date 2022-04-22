@@ -10,8 +10,8 @@ ms.openlocfilehash: ede2a8566f7305b4f56a5fc392090b426c148547
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142973945"
 ---
 # Set-AzActionGroup
 
@@ -281,7 +281,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

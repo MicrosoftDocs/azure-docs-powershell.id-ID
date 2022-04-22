@@ -10,8 +10,8 @@ ms.openlocfilehash: 805deece859eb4baa05d8c3d34dfcc8a9d571354
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920017"
 ---
 # Remove-AzureRmRecoveryServicesBackupProtectionPolicy
 
@@ -191,7 +191,7 @@ Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

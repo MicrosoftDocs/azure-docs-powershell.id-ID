@@ -9,13 +9,13 @@ ms.openlocfilehash: d8bcaae36d2393df0dd3714a3c93355e07c22827
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432779"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142942121"
 ---
 # Get-AzDataProtectionRecoveryPoint
 
 ## SYNOPSIS
-Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Datasource.
+Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Sumber Data.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-AzDataProtectionRecoveryPoint [-BackupInstanceName <String>] [-ResourceGroup
  [-StartTime <DateTime>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDataProtectionRecoveryPoint -BackupInstanceName <String> -Id <String> -ResourceGroupName <String>
  -VaultName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -39,11 +39,11 @@ Get-AzDataProtectionRecoveryPoint -InputObject <IDataProtectionIdentity> [-Defau
 ```
 
 ## DESCRIPTION
-Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Datasource.
+Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Sumber Data.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua titik pemulihan instans cadangan tertentu
+### Contoh 1: Mendapatkan semua titik pemulihan instans cadangan tertentu
 ```powershell
 $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault -BackupInstanceName $instance[2].Name
@@ -74,7 +74,7 @@ Name                             Type
 892e5c5014dc4a96807d22924f5745c9 Microsoft.DataProtection/backupVaults/backupInstances/recoveryPoints
 ```
 
-Perintah ini mengembalikan titik pemulihan dengan id tertentu.
+Perintah ini mengembalikan titik pemulihan dengan id yang diberikan.
 
 ## PARAMETERS
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah cadangan ada.
+Nama grup sumber daya tempat vault cadangan berada.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan.
+Nama brankas cadangan.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -226,7 +226,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -239,15 +239,15 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama kubah cadangan.
+  - `[VaultName <String>]`: Nama brankas cadangan.
 
 ## RELATED LINKS
 

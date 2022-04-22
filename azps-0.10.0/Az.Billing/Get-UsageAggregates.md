@@ -10,8 +10,8 @@ ms.openlocfilehash: 510d0ee001e4c291dad3cc024f593d1f29c7ddca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093203"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142974233"
 ---
 # Get-UsageAggregates
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commerce.UsageAggregates.Models.UsageAggregationGetResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

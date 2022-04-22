@@ -10,8 +10,8 @@ ms.openlocfilehash: cd9700a633f1a9c09c5fafd060d318b35eaeaabb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773627"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917865"
 ---
 # New-AzureRmTag
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Common.Tags.PSTag
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

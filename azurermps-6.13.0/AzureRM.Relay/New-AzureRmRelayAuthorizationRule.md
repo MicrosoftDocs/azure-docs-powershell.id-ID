@@ -9,8 +9,8 @@ ms.openlocfilehash: 825c6060a77df4adf59465e372ee2511fec80803
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141881732"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142919693"
 ---
 # New-AzureRmRelayAuthorizationRule
 
@@ -248,6 +248,6 @@ System.String[]
 ### Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

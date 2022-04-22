@@ -10,8 +10,8 @@ ms.openlocfilehash: 1f6db8d326a1f7c3ab1b01ceff47cffa243a22c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141862485"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142962929"
 ---
 # Remove-AzNotificationHubsNamespaceAuthorizationRule
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

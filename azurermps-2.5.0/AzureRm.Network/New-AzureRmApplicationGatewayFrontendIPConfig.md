@@ -8,8 +8,8 @@ ms.openlocfilehash: 2003d93a50b1730a162cc910ef289748a86a2954
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142145816"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927117"
 ---
 # New-AzureRmApplicationGatewayFrontendIPConfig
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

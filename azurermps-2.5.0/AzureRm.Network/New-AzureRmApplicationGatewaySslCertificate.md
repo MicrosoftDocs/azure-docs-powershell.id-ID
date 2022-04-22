@@ -8,8 +8,8 @@ ms.openlocfilehash: e22760c2838cf0b4fb0597dbd45532374b604b79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888952"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142926947"
 ---
 # New-AzureRmApplicationGatewaySslCertificate
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

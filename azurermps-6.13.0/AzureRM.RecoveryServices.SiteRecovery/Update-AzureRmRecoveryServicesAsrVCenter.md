@@ -9,8 +9,8 @@ ms.openlocfilehash: 856a316104e0e660f170de8f519dbcb66c55bd53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061255"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142919765"
 ---
 # Update-AzureRmRecoveryServicesAsrvCenter
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

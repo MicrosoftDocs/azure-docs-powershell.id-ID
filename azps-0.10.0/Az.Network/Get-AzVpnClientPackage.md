@@ -10,8 +10,8 @@ ms.openlocfilehash: d08f91029940d60440d50be406dbdfe3652934a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141964401"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142973459"
 ---
 # Get-AzVpnClientPackage
 
@@ -123,7 +123,7 @@ Parameter 'VirtualNetworkGatewayName' menerima nilai tipe 'String' dari pipeline
 ###  
 **Get-AzVpnClientPackage** mengembalikan instance objek System.String.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

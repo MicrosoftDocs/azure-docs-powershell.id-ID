@@ -10,8 +10,8 @@ ms.openlocfilehash: 2a551339bf863186b3966d8a580227b03f164953
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421096"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936109"
 ---
 # New-AzRecoveryServicesVault
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 31f6adcce1f3d62e2bc211c74b183f9b11974450
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998574"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142942625"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpoint, Microsoft.Azure.PowerShell.Cmdlets.DataFactoryV2, Version=1.13.1.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

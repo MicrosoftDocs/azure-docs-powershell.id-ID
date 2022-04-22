@@ -7,8 +7,8 @@ ms.openlocfilehash: 54186adcc1b8605ee9b468b59aeef9c25b2f3f46
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392727"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927325"
 ---
 # Get-AzureRmNetworkWatcherTopology
 
@@ -225,7 +225,7 @@ System.String
 
 ### Microsoft.Azure.Commands.Network.Models.PSTopology
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, topologi, melihat 
 
 ## RELATED LINKS

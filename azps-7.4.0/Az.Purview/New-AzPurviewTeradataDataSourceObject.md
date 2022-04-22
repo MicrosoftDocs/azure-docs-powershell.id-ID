@@ -9,8 +9,8 @@ ms.openlocfilehash: 7cffe6bf30c298772dd84362b0adda6e1c86bc17
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430374"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936495"
 ---
 # New-AzPurviewTeradataDataSourceObject
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.TeradataDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 0e102d6c0c4db5bd3d93d4349a2a0e06284cd8d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097207"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920176"
 ---
 # Remove-AzureRmContext
 
@@ -182,6 +182,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

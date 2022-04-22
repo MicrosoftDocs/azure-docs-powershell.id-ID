@@ -9,8 +9,8 @@ ms.openlocfilehash: 35e3904badd885be18268de0b0f61b14d59f7356
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384850"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920083"
 ---
 # Resolve-AzureRmError
 
@@ -235,6 +235,6 @@ Parameter: Kesalahan (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Errors.AzureRestExceptionRecord
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

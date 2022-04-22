@@ -9,8 +9,8 @@ ms.openlocfilehash: 8e2e7a25b2c6e2c9eaa5e53234d7c1c9c3d0fa9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093059"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142973585"
 ---
 # Get-AzNetworkWatcherPacketCapture
 
@@ -158,7 +158,7 @@ System.String
 
 ### Microsoft.Azure.Commands.Network.Models.PSGetPacketCaptureResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, paket, penangkapan, lalu lintas
 
 ## RELATED LINKS

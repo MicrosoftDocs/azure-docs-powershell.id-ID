@@ -9,8 +9,8 @@ ms.openlocfilehash: 2beeb7d1b4b1d8fa5e633c60f82fcf0df646a38e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142376549"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142956881"
 ---
 # Get-AzCosmosDBSqlContainerBackupInformation
 
@@ -147,6 +147,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CosmosDB.Models.Restore.Sql.PSSqlBackupInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

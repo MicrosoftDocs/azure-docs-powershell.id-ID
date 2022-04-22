@@ -10,8 +10,8 @@ ms.openlocfilehash: e3f246a77d4adb489f660a56d3843520d3a327ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141875408"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142974161"
 ---
 # Add-AzVMSshPublicKey
 
@@ -119,7 +119,7 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

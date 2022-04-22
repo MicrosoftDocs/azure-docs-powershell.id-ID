@@ -10,8 +10,8 @@ ms.openlocfilehash: beb2b723a0b72f7ab485846f6f55fabd4e6ef9aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142492714"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142973657"
 ---
 # Get-AzNetworkSecurityGroup
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
