@@ -7,8 +7,8 @@ ms.openlocfilehash: af42c1b7ce4dea8fc92f35eddd44ed97eeac987a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142279021"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981379"
 ---
 # Get-AzureService
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### HostedServiceContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

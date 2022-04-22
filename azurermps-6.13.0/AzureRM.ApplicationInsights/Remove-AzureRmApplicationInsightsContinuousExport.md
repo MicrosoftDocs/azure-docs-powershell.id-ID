@@ -9,8 +9,8 @@ ms.openlocfilehash: b9a26a1279b89609728837def1997ac5735ddaea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887796"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987977"
 ---
 # Remove-AzureRmApplicationInsightsContinuousExport
 
@@ -206,6 +206,6 @@ Parameter: ApplicationInsightsComponent (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

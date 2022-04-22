@@ -7,8 +7,8 @@ ms.openlocfilehash: c5a681f8be210e76ecbf3bc965e7e9e9c108a94a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781430"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927418"
 ---
 # Get-AzureRmNetworkWatcherReachabilityProvidersList
 
@@ -239,7 +239,7 @@ System.String System.Collections.Generic.List'1[[System.String, mscorlib, Versio
 
 ### Microsoft.Azure.Commands.Network.Models.PSAvailableProvidersList
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
 
 ## RELATED LINKS

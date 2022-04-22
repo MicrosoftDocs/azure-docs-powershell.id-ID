@@ -9,8 +9,8 @@ ms.openlocfilehash: aefa6b1aa61ec02ed0d8471dda3faee1fa1a2567
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000314"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142930601"
 ---
 # Get-AzWebAppContainerContinuousDeploymentUrl
 
@@ -133,6 +133,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

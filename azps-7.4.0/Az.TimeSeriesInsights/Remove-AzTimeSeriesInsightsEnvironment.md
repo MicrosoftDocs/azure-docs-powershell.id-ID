@@ -9,8 +9,8 @@ ms.openlocfilehash: 5eb7b991270e4c17bcc863e8fd500e1883816875
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170739"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931123"
 ---
 # Remove-AzTimeSeriesInsightsEnvironment
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: a8e0a6c2c6dcb5c3f70864440ebab10ba4512122
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142324781"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142969157"
 ---
 # Get-AzCdnEndpointNameAvailability
 
@@ -76,6 +76,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSCheckNameAvailabilityOutput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

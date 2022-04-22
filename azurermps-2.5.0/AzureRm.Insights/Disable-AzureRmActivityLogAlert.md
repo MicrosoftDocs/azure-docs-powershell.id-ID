@@ -8,8 +8,8 @@ ms.openlocfilehash: 16c95de208b602e02a57508e73091633b3b89660
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285855"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927937"
 ---
 # Disable-AzureRmActivityLogAlert
 
@@ -188,7 +188,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActivityLogAlertResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

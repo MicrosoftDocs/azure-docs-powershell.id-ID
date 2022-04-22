@@ -9,8 +9,8 @@ ms.openlocfilehash: fa3ee49c6a1db8b2fd640fabd47808f275a24b41
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164589"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142994357"
 ---
 # Get-AzStorageSyncCloudEndpoint
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StorageSync.Models.PSCloudEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

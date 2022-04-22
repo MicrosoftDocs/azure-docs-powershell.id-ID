@@ -9,8 +9,8 @@ ms.openlocfilehash: 909121a78d09db7d15591a93db9479d0ccc8381b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391021"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988920"
 ---
 # Remove-AzureRmAks
 
@@ -216,6 +216,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

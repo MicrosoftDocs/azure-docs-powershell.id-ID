@@ -7,8 +7,8 @@ ms.openlocfilehash: 3f2ba0cb03b4819c444f43a59f5556cf2ec8c17a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362714"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928127"
 ---
 # Add-AzureRmDnsRecordConfig
 
@@ -390,7 +390,7 @@ Ini adalah representasi offline dari **RecordSet**, dan perubahannya tidak mengu
 Cmdlet ini mengembalikan objek **RecordSet** yang diubah.
 Selain itu, objek yang dilewati diubah secara langsung.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

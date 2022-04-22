@@ -7,8 +7,8 @@ ms.openlocfilehash: c91b9dc68bcc0cdecda9ced83a9b3c64452d6413
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141782681"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142929431"
 ---
 # Add-AzureRmVmssDataDisk
 
@@ -225,7 +225,7 @@ System.Nullable`[[Microsoft.Azure.Management.Compute.Models.StorageAccountTypes,
 
 ### Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

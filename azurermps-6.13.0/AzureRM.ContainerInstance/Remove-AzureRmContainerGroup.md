@@ -9,8 +9,8 @@ ms.openlocfilehash: f1971f8bf0e7d8e779743739b8dd041effe3ba5b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281827"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922843"
 ---
 # Remove-AzureRmContainerGroup
 
@@ -202,6 +202,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

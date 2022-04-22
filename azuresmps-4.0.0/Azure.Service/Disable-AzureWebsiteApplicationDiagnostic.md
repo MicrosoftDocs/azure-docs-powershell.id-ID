@@ -7,8 +7,8 @@ ms.openlocfilehash: 072d49cceb4f172c85172aa8d749fe7983b52a0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981973"
 ---
 # Disable-AzureWebsiteApplicationDiagnostic
 
@@ -158,7 +158,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

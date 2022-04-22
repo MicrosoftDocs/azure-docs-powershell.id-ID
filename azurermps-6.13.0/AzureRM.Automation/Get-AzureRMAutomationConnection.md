@@ -10,8 +10,8 @@ ms.openlocfilehash: 6397c1efdce39e575caa98558a54bd279fd0374e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845647"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987877"
 ---
 # Get-AzureRmAutomationConnection
 
@@ -158,7 +158,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Connection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

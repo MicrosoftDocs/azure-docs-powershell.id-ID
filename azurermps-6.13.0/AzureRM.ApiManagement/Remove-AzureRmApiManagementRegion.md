@@ -10,8 +10,8 @@ ms.openlocfilehash: 9ccd7379a07b83b3ed45eff5f8095b950868810c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390941"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988363"
 ---
 # Remove-AzureRmApiManagementRegion
 
@@ -111,7 +111,7 @@ Parameter: ApiManagement (ByValue)
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

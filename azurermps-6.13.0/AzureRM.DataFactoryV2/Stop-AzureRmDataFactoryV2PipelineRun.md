@@ -9,8 +9,8 @@ ms.openlocfilehash: d93cd05122d0a2c321ef4ab6d858f975e84bc9a6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141885380"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922311"
 ---
 # Stop-AzureRmDataFactoryV2PipelineRun
 
@@ -213,6 +213,6 @@ Parameter: DataFactory (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

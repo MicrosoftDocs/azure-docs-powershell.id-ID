@@ -9,8 +9,8 @@ ms.openlocfilehash: 130f88a9960b3c4708fba2923af07cfced65e51a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433290"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142930007"
 ---
 # Unregister-AzStaticWebAppBuildUserProvidedFunctionApp
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

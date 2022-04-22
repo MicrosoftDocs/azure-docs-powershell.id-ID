@@ -10,8 +10,8 @@ ms.openlocfilehash: 9253e30a7ce3005ad7e419bd9335e1c5e883287a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142479005"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142968833"
 ---
 # Remove-AzCognitiveServicesAccount
 
@@ -183,7 +183,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

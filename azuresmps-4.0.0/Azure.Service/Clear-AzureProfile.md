@@ -7,8 +7,8 @@ ms.openlocfilehash: 8bc3d92b1f9a36a5b0cf7f102a2e0dd1c4907835
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982009"
 ---
 # Clear-AzureProfile
 
@@ -66,7 +66,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

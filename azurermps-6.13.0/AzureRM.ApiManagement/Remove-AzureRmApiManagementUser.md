@@ -10,8 +10,8 @@ ms.openlocfilehash: 31ab005953ea405dc8aac093f973a6e842974814
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142066124"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988345"
 ---
 # Remove-AzureRmApiManagementUser
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

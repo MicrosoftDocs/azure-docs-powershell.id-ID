@@ -7,8 +7,8 @@ ms.openlocfilehash: 996f97eaaad3da5e94ba0d1a917e484af8c3c799
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335692"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981217"
 ---
 # Get-AzureWebsiteJobHistory
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
