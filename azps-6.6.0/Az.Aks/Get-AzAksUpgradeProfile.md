@@ -9,8 +9,8 @@ ms.openlocfilehash: 2438f4dcdd6f90b06a12aee231e96785bec6ed50
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141962367"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142908569"
 ---
 # Get-AzAksUpgradeProfile
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Aks.Models.Api20200901.IManagedClusterUpgradeProfile
 
-## CATATAN
+## NOTES
 
 ALIAS
 

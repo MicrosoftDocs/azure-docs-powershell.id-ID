@@ -10,8 +10,8 @@ ms.openlocfilehash: 6a5ee3b03a4242c3c11d5c34da4a333ee7c82843
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141873921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142909487"
 ---
 # Test-AzPrivateIPAddressAvailability
 
@@ -134,7 +134,7 @@ Parameter 'VirtualNetwork' menerima nilai tipe 'PSVirtualNetwork' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSIPAddressAvailabilityResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

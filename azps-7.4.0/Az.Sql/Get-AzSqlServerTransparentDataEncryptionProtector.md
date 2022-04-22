@@ -9,8 +9,8 @@ ms.openlocfilehash: 575dfb5ed0f9bfcbdd383f04498f5540feb65a64
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989814"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933643"
 ---
 # Get-AzSqlServerTransparentDataEncryptionProtector
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureSqlServerTransparentDataEncryptionProtectorModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

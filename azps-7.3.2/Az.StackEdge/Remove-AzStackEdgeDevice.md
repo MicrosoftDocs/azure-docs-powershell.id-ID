@@ -9,8 +9,8 @@ ms.openlocfilehash: 29fffba9c974e70f5d115b9f19a732bc602f2ae0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142025471"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142945613"
 ---
 # Remove-AzStackEdgeDevice
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

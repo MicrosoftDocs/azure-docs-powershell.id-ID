@@ -8,8 +8,8 @@ ms.openlocfilehash: 03da83268a06ac4026604728281b10f767fab9a3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103561"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925975"
 ---
 # Remove-AzureRmPolicyDefinition
 
@@ -280,7 +280,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

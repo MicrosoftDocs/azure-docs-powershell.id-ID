@@ -10,8 +10,8 @@ ms.openlocfilehash: d3dcdabc84eca5efa7e52e61f4beafd23eb67b05
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141810860"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910243"
 ---
 # Get-AzLoadBalancerInboundNatPoolConfig
 
@@ -88,7 +88,7 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSInboundNatPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

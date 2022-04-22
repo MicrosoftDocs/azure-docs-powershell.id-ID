@@ -10,8 +10,8 @@ ms.openlocfilehash: 6b9a0b792b1a8a5572ce26561202284f3103d764
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142481507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142909120"
 ---
 # Remove-AzResourceLock
 
@@ -328,7 +328,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

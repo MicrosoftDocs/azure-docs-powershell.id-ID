@@ -7,8 +7,8 @@ ms.openlocfilehash: f0f8f3ded2697e713215929f66ebd82b3af03ea0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780392"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142926128"
 ---
 # Get-AzureRmPolicyAlias
 
@@ -380,7 +380,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.PsResourceProviderAlias
 
-## CATATAN
+## NOTES
 
 * Untuk memperluas Alias atau properti lainnya, pipa output ke `select -ExpandProperty <property>`. Misalnya: `Get-AzureRmPolicyAlias -NamespaceMatch 'Microsoft.Cache' -ApiVersionMatch 'alpha' | select -ExpandProperty Aliases | select -Property Name -ExpandProperty Paths`
 

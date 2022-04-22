@@ -10,8 +10,8 @@ ms.openlocfilehash: 137d9ec8af406e3e43d6bd5a9290b04a381ebd00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142228033"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142900109"
 ---
 # New-AzVirtualNetworkGatewayIpConfig
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayIpConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

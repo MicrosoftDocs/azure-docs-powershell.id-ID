@@ -10,8 +10,8 @@ ms.openlocfilehash: 13e6e0ec48b0a3f1d184473614fa07a6dfabe706
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933373"
 ---
 # Set-AzSqlDatabaseRecommendedActionState
 
@@ -231,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlDatabaseRecommendedActionModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS

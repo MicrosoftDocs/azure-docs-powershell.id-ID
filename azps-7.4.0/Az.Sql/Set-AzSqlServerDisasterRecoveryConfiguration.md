@@ -10,8 +10,8 @@ ms.openlocfilehash: b7237b132881b7732d80a06b681e451e9928f47e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173924"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933247"
 ---
 # Set-AzSqlServerDisasterRecoveryConfiguration
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerDisasterRecoveryConfiguration.Model.AzureSqlServerDisasterRecoveryConfigurationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

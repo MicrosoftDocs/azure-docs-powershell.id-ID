@@ -9,8 +9,8 @@ ms.openlocfilehash: e0fa27a99a8a2d00819d558b42218b9405a5f039
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916887"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910369"
 ---
 # Get-AzApplicationGatewayAvailableSslOption
 
@@ -64,7 +64,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableSslOptions
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -6,8 +6,8 @@ ms.openlocfilehash: c7ca8ed3368f4311d9b71cb43663df6eae98ada6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242418"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142915193"
 ---
 # Set-AzureRmEnvironment
 
@@ -418,7 +418,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### PSAzureEnvironment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: a78625d72817807f29b582d554ab22ef7cf2b868
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420376"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933733"
 ---
 # Get-AzSqlInstanceDatabaseSensitivityClassification
 
@@ -298,7 +298,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

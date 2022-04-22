@@ -10,8 +10,8 @@ ms.openlocfilehash: 2e7240f607d2c9ed426c35f9427452640ceec84f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910441"
 ---
 # Remove-AzActionGroup
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: a34754e0032f2dc8b833eb6b03de6e97ab5486fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141963861"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142909379"
 ---
 # New-AzManagedApplication
 
@@ -268,6 +268,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

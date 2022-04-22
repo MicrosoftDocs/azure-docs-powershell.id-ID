@@ -9,8 +9,8 @@ ms.openlocfilehash: de0200856a523b46c847f2ef0c36a256ab263a9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142252747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142945739"
 ---
 # Update-AzSignalRNetworkAcl
 
@@ -293,6 +293,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRNetworkAcls
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

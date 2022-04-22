@@ -9,8 +9,8 @@ ms.openlocfilehash: 4971cebc7aa5c81f5a3df886fa0263f69dec1008
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142369277"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142885960"
 ---
 # Get-AzRedisEnterpriseCacheDatabase
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Models.Api20210301.IDatabase
 
-## CATATAN
+## NOTES
 
 ALIAS
 

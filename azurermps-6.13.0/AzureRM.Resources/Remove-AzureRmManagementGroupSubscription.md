@@ -9,8 +9,8 @@ ms.openlocfilehash: 882583c50db8a4b4473bce829aab120a68478434
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142919171"
 ---
 # Remove-AzureRmManagementGroupSubscription
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
