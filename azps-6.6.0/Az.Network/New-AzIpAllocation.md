@@ -9,8 +9,8 @@ ms.openlocfilehash: ab45944b564abebeca50eacda2623120e4a8e117
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142047118"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142838530"
 ---
 # New-AzIpAllocation
 
@@ -289,6 +289,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSIpAllocation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

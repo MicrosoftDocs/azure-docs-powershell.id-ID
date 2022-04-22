@@ -9,8 +9,8 @@ ms.openlocfilehash: 4465ee73eba81f2973e3fbb5787c74fa7b3b63e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142058501"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848088"
 ---
 # Get-AzTenant
 
@@ -96,6 +96,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureTenant
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

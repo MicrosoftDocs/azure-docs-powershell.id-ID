@@ -9,8 +9,8 @@ ms.openlocfilehash: 8a1af49923c275d0f4d8fbe25a5aaaa28dbaa512
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065719"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860382"
 ---
 # Remove-AzureRmImage
 
@@ -157,6 +157,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

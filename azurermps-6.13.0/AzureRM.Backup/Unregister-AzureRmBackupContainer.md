@@ -10,8 +10,8 @@ ms.openlocfilehash: 8c90137e142086d7ea7c0bcc34321b3f38a12d95
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065934"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795564"
 ---
 # Unregister-AzureRmBackupContainer
 
@@ -151,7 +151,7 @@ Parameter: Kontainer (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
 
-## CATATAN
+## NOTES
 * Tidak
 
 ## RELATED LINKS

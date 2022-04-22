@@ -9,8 +9,8 @@ ms.openlocfilehash: a6c35e13a49d04a975b73e6c31f347d092d7ba18
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142866250"
 ---
 # Set-AzServiceFabricManagedClusterApplicationTypeVersion
 
@@ -294,6 +294,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedApplicationTypeVersion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

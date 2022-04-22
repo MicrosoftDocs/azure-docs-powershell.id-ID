@@ -10,8 +10,8 @@ ms.openlocfilehash: c5cf2d8611238706bb9725101a320c79eb099570
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060130"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853736"
 ---
 # Get-AzureRmSqlDatabaseDataMaskingRule
 
@@ -232,7 +232,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataMasking.Model.DatabaseDataMaskingRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

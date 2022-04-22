@@ -10,8 +10,8 @@ ms.openlocfilehash: defd5c046427115e44783d6b34ea7b034edc8317
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888246"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142796536"
 ---
 # New-AzureRmApiManagementHostnameConfiguration
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementHostnameConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

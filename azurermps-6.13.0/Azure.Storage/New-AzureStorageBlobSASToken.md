@@ -10,8 +10,8 @@ ms.openlocfilehash: 60c93d851e173dd8ee8a5f33ff96bb4e2e12299b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970169"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142796709"
 ---
 # New-AzureStorageBlobSASToken
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.WindowsAzure. Storage. Blob.CloudBlob
+### Microsoft.WindowsAzure.Storage.Blob.CloudBlob
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
@@ -274,7 +274,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

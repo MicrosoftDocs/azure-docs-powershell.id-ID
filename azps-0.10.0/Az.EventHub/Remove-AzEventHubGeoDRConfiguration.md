@@ -9,8 +9,8 @@ ms.openlocfilehash: 5bdc6e29ad55efd774f267af10b0f0652e513e43
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142490111"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142847566"
 ---
 # Remove-AzEventHubGeoDRConfiguration
 
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

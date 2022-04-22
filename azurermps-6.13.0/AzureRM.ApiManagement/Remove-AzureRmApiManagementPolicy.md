@@ -10,13 +10,13 @@ ms.openlocfilehash: 1066598a9e255cecbf7238208b5f06f74d88511e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360212"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142796345"
 ---
 # Remove-AzureRmApiManagementPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan API Management dari lingkup tertentu.
+Menghapus kebijakan Manajemen API dari lingkup yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -47,7 +47,7 @@ Remove-AzureRmApiManagementPolicy -Context <PsApiManagementContext> -ApiId <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmApiManagementPolicy** menghapus kebijakan API Management dari lingkup yang ditentukan.
+Cmdlet **Remove-AzureRmApiManagementPolicy** menghapus kebijakan Manajemen API dari lingkup yang ditentukan.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Remove-AzureRmApiManagementPolicy -Context $apimContext
 ```
 
-Perintah ini menghapus kebijakan tingkat penyewa dari API Management.
+Perintah ini menghapus kebijakan tingkat penyewa dari Manajemen API.
 
 ### Contoh 2: Menghapus kebijakan lingkup produk
 ```
@@ -65,7 +65,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Remove-AzureRmApiManagementPolicy -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini menghapus kebijakan lingkup produk dari API Management.
+Perintah ini menghapus kebijakan lingkup produk dari Manajemen API.
 
 ### Contoh 3: Menghapus kebijakan lingkup API
 ```
@@ -73,7 +73,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Remove-AzureRmApiManagementPolicy -Context $apimContext -ApiId "9876543210"
 ```
 
-Perintah ini menghapus kebijakan lingkup API dari API Management.
+Perintah ini menghapus kebijakan lingkup API dari Manajemen API.
 
 ### Contoh 4: Menghapus kebijakan lingkup operasi
 ```
@@ -81,7 +81,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Remove-AzureRmApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777"
 ```
 
-Perintah ini menghapus kebijakan lingkup operasi dari API Management.
+Perintah ini menghapus kebijakan lingkup operasi dari Manajemen API.
 
 ## PARAMETERS
 
@@ -224,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

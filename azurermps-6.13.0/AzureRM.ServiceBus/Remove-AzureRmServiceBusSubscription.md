@@ -9,8 +9,8 @@ ms.openlocfilehash: b8b2b9f6bb8a082647a14285a907465e8e12348f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854003"
 ---
 # Remove-AzureRmServiceBusSubscription
 
@@ -258,6 +258,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

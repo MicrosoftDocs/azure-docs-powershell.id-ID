@@ -9,8 +9,8 @@ ms.openlocfilehash: 02f1eeb648ae379e1cb1ec0cf90bb98307fd97ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918759"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848034"
 ---
 # Import-AzContext
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.Core.PSAzureProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 6eb86e0c2ddb8c5e3a46cf10f98bcea52ba03dd4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389275"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860523"
 ---
 # New-AzureRmVMDataDisk
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineDataDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

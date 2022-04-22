@@ -10,8 +10,8 @@ ms.openlocfilehash: edb119484d397241b786ff9476b688e150ed3c6d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065914"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795582"
 ---
 # Set-AzureRmBackupVault
 
@@ -104,7 +104,7 @@ Parameter: Vault (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
 
-## CATATAN
+## NOTES
 * Saat Anda mendaftarkan server pertama atau mesin virtual untuk kubah, tipe penyimpanan dikunci. Selanjutnya, Anda tidak dapat mengubah tipe penyimpanan.
 
 ## RELATED LINKS

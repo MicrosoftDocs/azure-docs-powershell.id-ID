@@ -9,8 +9,8 @@ ms.openlocfilehash: e129023857b4fc5e59d687b3cf9f855959b18dc6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142113713"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142828288"
 ---
 # Remove-AzCustomProvider
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

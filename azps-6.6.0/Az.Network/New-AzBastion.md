@@ -9,8 +9,8 @@ ms.openlocfilehash: 727041a41715a603761899689a22a4504063d4f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141953389"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142838764"
 ---
 # New-AzBastion
 
@@ -489,7 +489,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSBastion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

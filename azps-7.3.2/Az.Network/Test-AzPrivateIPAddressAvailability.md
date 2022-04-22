@@ -10,8 +10,8 @@ ms.openlocfilehash: c975f25f4c36c771906bd81bc06a316d41146684
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142486925"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142819594"
 ---
 # Test-AzPrivateIPAddressAvailability
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSIPAddressAvailabilityResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

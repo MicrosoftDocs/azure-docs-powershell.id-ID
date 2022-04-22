@@ -9,8 +9,8 @@ ms.openlocfilehash: d91fa0d957e7886c396100f0694af972027b7256
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165514"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142866124"
 ---
 # Remove-AzWebPubSub
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: e300b5f1fb57f18941d7194aa413a6ef468c626e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096294"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853796"
 ---
 # Get-AzureRmSqlCapability
 
@@ -207,6 +207,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Location_Capabilities.Model.LocationCapabilityModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

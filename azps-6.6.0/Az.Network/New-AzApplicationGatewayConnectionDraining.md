@@ -9,8 +9,8 @@ ms.openlocfilehash: ecc419d2185a6e7e6d56c22e88e0e95a6f9bb965
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142124891"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142838854"
 ---
 # New-AzApplicationGatewayConnectionDraining
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionDraining
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

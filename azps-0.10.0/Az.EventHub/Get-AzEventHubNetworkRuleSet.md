@@ -9,8 +9,8 @@ ms.openlocfilehash: 64dae906f7f28e119d8550ecf5bb31d1b6ca7b27
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493808"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142847656"
 ---
 # Get-AzEventHubNetworkRuleSet
 
@@ -149,6 +149,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSNetworkRuleSetAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
