@@ -8,8 +8,8 @@ ms.openlocfilehash: 27d1e45a9e2c85fb3d2f7470db97ce2426f62a19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336345"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142991629"
 ---
 # Remove-AzureRmContainerService
 
@@ -154,7 +154,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 1cc5311b1c26d4ae0cb9c1a7ce6ad58a818b53c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242361"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978535"
 ---
 # Remove-AzsAzureBridgeDownloadedProduct
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.AzureBridge.Admin.Models.DownloadedProductResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

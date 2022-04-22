@@ -7,8 +7,8 @@ ms.openlocfilehash: 25091f0cb439e0447d19b534d59a0084a5b05c6e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242074"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978517"
 ---
 # Get-AzsBackupConfiguration
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Backup.Admin.Models.BackupLocation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

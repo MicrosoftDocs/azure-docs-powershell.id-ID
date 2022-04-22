@@ -10,8 +10,8 @@ ms.openlocfilehash: fd621c73133ef220dc5ed23b634b49ef8cb7f667
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141809150"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142971479"
 ---
 # Backup-AzApiManagement
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

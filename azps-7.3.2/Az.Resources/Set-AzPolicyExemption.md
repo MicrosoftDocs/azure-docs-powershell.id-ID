@@ -9,8 +9,8 @@ ms.openlocfilehash: 05c8626830290165a9390aadb50ca7368e14ed39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142463831"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143009693"
 ---
 # Set-AzPolicyExemption
 
@@ -364,6 +364,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyExemption
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

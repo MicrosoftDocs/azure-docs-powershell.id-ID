@@ -9,8 +9,8 @@ ms.openlocfilehash: 31dafa04d155cfd89a7685e2e31b7fe40b582a40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142474649"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142966313"
 ---
 # New-AzFrontDoorHeaderActionObject
 
@@ -116,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSHeaderAction
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

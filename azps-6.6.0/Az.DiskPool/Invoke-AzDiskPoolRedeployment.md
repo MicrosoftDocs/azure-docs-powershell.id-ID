@@ -9,8 +9,8 @@ ms.openlocfilehash: 7517ffa2736ec046c1434c6e4a22179c7b938228
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142475513"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142966565"
 ---
 # Invoke-AzDiskPoolRedeployment
 
@@ -224,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

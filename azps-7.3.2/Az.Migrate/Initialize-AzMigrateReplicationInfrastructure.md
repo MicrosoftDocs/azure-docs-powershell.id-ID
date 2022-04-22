@@ -9,8 +9,8 @@ ms.openlocfilehash: 00d910a024f1a5bd72737b7404d8d0fdc12656b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142291723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142951300"
 ---
 # Initialize-AzMigrateReplicationInfrastructure
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 7197c90e5d5cb0c8a0e15b5e16d1a3c05aaeebf2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141820711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142986039"
 ---
 # New-AzureRmVirtualHubRoute
 
@@ -103,6 +103,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualHubRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

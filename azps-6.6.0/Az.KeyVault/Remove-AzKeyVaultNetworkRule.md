@@ -9,8 +9,8 @@ ms.openlocfilehash: 9d748244fe54d287d404a70c6348cbb2c215c4bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142965539"
 ---
 # Remove-AzKeyVaultNetworkRule
 
@@ -276,6 +276,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: d4bc0fdb6c117241af134f5e89ffd960e3292a21
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996690"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142999415"
 ---
 # New-AzIntegrationAccountBatchConfiguration
 
@@ -424,6 +424,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.LogicApp.Models.PSIntegrationAccountBatchConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

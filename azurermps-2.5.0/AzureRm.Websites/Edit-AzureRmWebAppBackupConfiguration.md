@@ -8,8 +8,8 @@ ms.openlocfilehash: 9a90e56909de016bb388be1a43f5b41c8e47e9e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103372"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989386"
 ---
 # Edit-AzureRmWebAppBackupConfiguration
 
@@ -234,7 +234,7 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.WebApps.AzureWebAppBackupConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

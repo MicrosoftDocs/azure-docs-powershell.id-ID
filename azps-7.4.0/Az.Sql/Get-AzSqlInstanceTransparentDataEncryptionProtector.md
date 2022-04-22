@@ -9,8 +9,8 @@ ms.openlocfilehash: 7d49aaf9cd144c68cb6d6bac68916e192bf5652c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142995743"
 ---
 # Get-AzSqlInstanceTransparentDataEncryptionProtector
 
@@ -225,6 +225,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureRmSqlManagedInstanceTransparentDataEncryptionProtectorModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

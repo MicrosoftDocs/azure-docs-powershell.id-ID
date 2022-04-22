@@ -6,8 +6,8 @@ ms.openlocfilehash: d0aaa631bcaade8fef0454adf9c2429d0e1563e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242829"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978607"
 ---
 # Disable-AzureRmDataCollection
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Tidak
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

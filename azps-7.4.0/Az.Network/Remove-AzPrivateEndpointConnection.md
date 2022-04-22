@@ -9,8 +9,8 @@ ms.openlocfilehash: f47f5c3b6767b22ea864d9a85a7b42866db08433
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995111"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142996319"
 ---
 # Remove-AzPrivateEndpointConnection
 
@@ -225,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: c421489490dcd579384b211619180209e9d71f5d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968015"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985363"
 ---
 # Disable-AzureRmContextAutosave
 
@@ -113,6 +113,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Common.Authentication.ContextAutosaveSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

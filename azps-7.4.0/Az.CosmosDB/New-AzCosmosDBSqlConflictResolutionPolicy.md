@@ -9,8 +9,8 @@ ms.openlocfilehash: 0f8efb68299fbcbe3d29d29e2042b78eeb767a0a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433851"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142943417"
 ---
 # New-AzCosmosDBSqlConflictResolutionPolicy
 
@@ -113,6 +113,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlConflictResolutionPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 578210490d92e272e3e4867fb7f96f40a1a39782
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314891"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142984126"
 ---
 # Remove-AzureRmServiceFabricNode
 
@@ -160,7 +160,7 @@ Parameter: NodeType (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

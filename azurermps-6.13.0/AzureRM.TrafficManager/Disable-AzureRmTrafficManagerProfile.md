@@ -10,8 +10,8 @@ ms.openlocfilehash: e714caedb86bd647ccc0692c47233833bc2db867
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314309"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982765"
 ---
 # Disable-AzureRmTrafficManagerProfile
 
@@ -182,7 +182,7 @@ Cmdlet ini menerima objek **TrafficManagerProfile** .
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

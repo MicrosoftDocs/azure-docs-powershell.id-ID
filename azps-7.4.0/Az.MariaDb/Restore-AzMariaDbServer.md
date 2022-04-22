@@ -9,8 +9,8 @@ ms.openlocfilehash: 02ba1b74af0848415550240a735a2547185a2b0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432210"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142998695"
 ---
 # Restore-AzMariaDbServer
 
@@ -269,7 +269,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.Api20180601Preview.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 
