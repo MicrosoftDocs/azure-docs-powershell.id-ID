@@ -10,8 +10,8 @@ ms.openlocfilehash: 31a8d6cbb205b451233bdc72793fb45443350fdd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360846"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989174"
 ---
 # Get-AzureStorageShare
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

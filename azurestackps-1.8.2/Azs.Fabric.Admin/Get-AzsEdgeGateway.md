@@ -7,8 +7,8 @@ ms.openlocfilehash: 793bf4a4b5b9dfb448c5b2a1baf9d74af592a23e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141770883"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978319"
 ---
 # Get-AzsEdgeGateway
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Fabric.Admin.Models.EdgeGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

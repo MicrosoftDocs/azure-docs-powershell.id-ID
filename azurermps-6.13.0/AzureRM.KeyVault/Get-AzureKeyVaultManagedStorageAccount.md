@@ -9,8 +9,8 @@ ms.openlocfilehash: 76093aae2e8f8f9cfec580e8fa334a4118369765
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386876"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048789"
 ---
 # Get-AzureKeyVaultManagedStorageAccount
 
@@ -194,7 +194,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

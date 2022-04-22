@@ -10,16 +10,16 @@ ms.openlocfilehash: 18b7fabb4a3eb1dcb8790a0c652cf1d872aff641
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141961539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143033993"
 ---
 # Remove-AzAutomationVariable
 
 ## SYNOPSIS
-Menghapus variabel Otomatisasi.
+Menghapus variabel Automation.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationvariable) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationvariable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,14 +38,14 @@ Cmdlet **Remove-AzAutomationVariable** menghapus variabel dari Azure Automation.
 PS C:\>Remove-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "StringVariable22" -Force -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghapus variabel bernama StringVariable22 dalam akun Otomatisasi bernama Contoso17.
+Perintah ini menghapus variabel bernama StringVariable22 di akun Automation bernama Contoso17.
 Perintah ini menentukan parameter *Paksa* .
-Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
+Oleh karena itu, itu tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi variabel yang dihapus cmdlet ini.
+Menentukan nama akun Automation yang berisi variabel yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama variabel yang dihapus cmdlet ini.
 
 ```yaml
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya yang mana cmdlet ini menghapus variabel.
+Menentukan grup sumber daya tempat cmdlet ini menghapus variabel.
 
 ```yaml
 Type: System.String
@@ -104,8 +104,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

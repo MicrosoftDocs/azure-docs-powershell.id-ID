@@ -9,8 +9,8 @@ ms.openlocfilehash: 45356de7a24bab108c1636d1182cc23949475230
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142327193"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142971875"
 ---
 # Enable-AzAdvisorRecommendation
 
@@ -201,6 +201,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

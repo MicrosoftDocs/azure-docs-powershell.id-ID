@@ -9,8 +9,8 @@ ms.openlocfilehash: 7e685134566bbe37a8fc5c371b5d7d4b04668aa9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142216045"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143017901"
 ---
 # Remove-AzDeploymentManagerStep
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

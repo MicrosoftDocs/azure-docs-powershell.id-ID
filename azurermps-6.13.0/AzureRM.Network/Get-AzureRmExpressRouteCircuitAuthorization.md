@@ -10,8 +10,8 @@ ms.openlocfilehash: 5b277ca35071c3639a3c7b341451cea78c024901
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141821750"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142986761"
 ---
 # Get-AzureRmExpressRouteCircuitAuthorization
 
@@ -109,7 +109,7 @@ Parameter: ExpressRouteCircuit (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: fe709b560c790ad010469bf2f0a2043231124138
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142101466"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988255"
 ---
 # Set-AzureRmApiManagementApiRevision
 
@@ -355,7 +355,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

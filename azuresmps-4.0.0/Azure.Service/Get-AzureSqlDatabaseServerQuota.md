@@ -7,8 +7,8 @@ ms.openlocfilehash: 3fe03c348ade07f0375502d98e782cc55109fd7f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966188"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043803"
 ---
 # Get-AzureSqlDatabaseServerQuota
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.ServerQuota[]
 
-## CATATAN
+## NOTES
 * Autentikasi: Cmdlet ini dapat menggunakan autentikasi SQL Server atau autentikasi berbasis sertifikat. Untuk contoh pengaturan autentikasi, lihat cmdlet New-AzureSqlDatabaseServerContext.
 
 ## RELATED LINKS

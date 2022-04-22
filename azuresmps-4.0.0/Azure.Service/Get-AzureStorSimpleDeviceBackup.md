@@ -7,8 +7,8 @@ ms.openlocfilehash: 982c70a063f5f69d926e0f59ec435d2514f7b3c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043758"
 ---
 # Get-AzureStorSimpleDeviceBackup
 
@@ -379,7 +379,7 @@ Cmdlet ini menerima objek **BackupPolicyDetails** dan **VirtualDisk** .
 ### IList\<Backup\>
 Cmdlet ini mengembalikan daftar objek **Cadangan** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,16 +10,16 @@ ms.openlocfilehash: a4807ee458fe248572b373a12fc1637d2d85a02b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143033885"
 ---
 # Unregister-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
-Menghapus kaitan antara runbook dan jadwal.
+Menghapus hubungan antara runbook dan jadwal.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/unregister-azautomationscheduledrunbook) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/unregister-azautomationscheduledrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,17 +43,17 @@ Jadwal tidak lagi memulai runbook.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kaitan antara runbook dan jadwal
+### Contoh 1: Menghapus hubungan antara runbook dan jadwal
 ```
 PS C:\>Unregister-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -Name "Runbk01" -ResourceGroupName "ResourceGroup01" -ScheduleName "Runbk01Sched"
 ```
 
-Perintah ini menghapus kaitan antara runbook bernama Runbk01 dan jadwal bernama Runbk01Sched.
+Perintah ini menghapus hubungan antara runbook bernama Runbk01 dan jadwal bernama Runbk01Sched.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan akun Otomatisasi untuk runbook tempat cmdlet ini beroperasi.
+Menentukan akun Automation untuk runbook tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang disososiasikan cmdlet ini dari jadwal.
+Menentukan nama runbook yang disosiasikan cmdlet ini dari jadwal.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleName
-Menentukan nama jadwal di mana cmdlet ini memisahkan sebuah runbook.
+Menentukan nama jadwal tempat cmdlet ini memisahkan runbook.
 
 ```yaml
 Type: System.String
@@ -157,8 +157,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

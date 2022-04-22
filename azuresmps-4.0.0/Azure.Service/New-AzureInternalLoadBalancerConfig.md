@@ -7,8 +7,8 @@ ms.openlocfilehash: 014126fb6e8ca7a26ef024b79b8583f0f20a91b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920696"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042849"
 ---
 # New-AzureInternalLoadBalancerConfig
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.InternalLoadBalancerConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

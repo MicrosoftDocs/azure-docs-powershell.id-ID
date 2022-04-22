@@ -9,8 +9,8 @@ ms.openlocfilehash: 86ed0a3fc6dfef3dcfc111ff6d3a75dc78335924
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887780"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988075"
 ---
 # Get-AzureRmApplicationInsightsApiKey
 
@@ -176,6 +176,6 @@ Parameter: ApplicationInsightsComponent (ByValue)
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSApiKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

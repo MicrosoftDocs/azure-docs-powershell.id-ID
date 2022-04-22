@@ -10,8 +10,8 @@ ms.openlocfilehash: fad6c42c53e475343ad518c89dbb1a918a0f1e68
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918435"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037251"
 ---
 # Get-AzVMImageSku
 
@@ -111,7 +111,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImageSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

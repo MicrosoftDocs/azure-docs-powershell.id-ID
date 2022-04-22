@@ -7,8 +7,8 @@ ms.openlocfilehash: 0193e391ed80404984c4ebf38e62c15f2f52fdfb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921242"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043456"
 ---
 # Get-AzureVMPuppetExtension
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

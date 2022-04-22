@@ -9,8 +9,8 @@ ms.openlocfilehash: b382addeca3bfc714eee63842a171598d0dea06b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419646"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142993961"
 ---
 # Get-AzSynapseActivityRun
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSActivityRunsQueryResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,16 +10,16 @@ ms.openlocfilehash: f009a46ef660ff300cc4ee182facde7878a2cdfc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142479869"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143033939"
 ---
 # Set-AzAutomationCredential
 
 ## SYNOPSIS
-Mengubah kredensial Otomatisasi.
+Memodifikasi kredensial Automation.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationcredential) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Set-AzAutomationCredential [-Name] <String> [-Description <String>] [-Value <PSC
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationCredential** mengubah kredensial sebagai objek **PSCredential** dalam Azure Automation.
+Cmdlet **Set-AzAutomationCredential** memodifikasi kredensial sebagai objek **PSCredential** di Azure Automation.
 
 ## EXAMPLES
 
@@ -43,15 +43,15 @@ PS C:\> Set-AzAutomationCredential -AutomationAccountName "Contoso17" -Name "Con
 ```
 
 Perintah pertama menetapkan nama pengguna ke variabel $User.
-Perintah kedua mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
+Perintah kedua mengonversi kata sandi teks biasa menjadi string aman dengan menggunakan cmdlet ConvertTo-SecureString.
 Perintah menyimpan objek tersebut dalam variabel $Password.
 Perintah ketiga membuat kredensial berdasarkan $User dan $Password, lalu menyimpannya dalam variabel $Credential.
-Perintah terakhir mengubah kredensial Otomatisasi bernama ContosoCredential untuk menggunakan kredensial dalam $Credential.
+Perintah akhir memodifikasi kredensial Automation bernama ContosoCredential untuk menggunakan kredensial dalam $Credential.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah kredensial.
+Menentukan nama akun Automation yang cmdlet ini memodifikasi kredensial.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk kredensial yang diubah cmdlet ini.
+Menentukan deskripsi untuk kredensial yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -95,8 +95,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kredensial yang diubah cmdlet ini.
+### -Name
+Menentukan nama kredensial yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengubah kredensial.
+Menentukan nama grup sumber daya yang cmdlet ini memodifikasi kredensial.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan kredensial sebagai objek **PSCredential** .
 
 ```yaml
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CredentialInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

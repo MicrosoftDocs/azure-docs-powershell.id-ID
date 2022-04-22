@@ -9,8 +9,8 @@ ms.openlocfilehash: 22b03aab2dffadb4afdd27241772911ead437a39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142368143"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143009513"
 ---
 # Get-AzSearchPrivateLinkResource
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSharedPrivateLinkResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

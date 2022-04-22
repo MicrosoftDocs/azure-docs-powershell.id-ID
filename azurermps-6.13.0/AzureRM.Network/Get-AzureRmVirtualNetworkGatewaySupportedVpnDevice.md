@@ -9,8 +9,8 @@ ms.openlocfilehash: 97c832994e39707c0d45963eda856028589d4b70
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138715"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142986511"
 ---
 # Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice
 
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

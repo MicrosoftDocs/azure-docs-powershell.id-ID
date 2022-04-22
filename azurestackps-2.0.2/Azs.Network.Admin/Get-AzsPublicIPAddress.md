@@ -7,8 +7,8 @@ ms.openlocfilehash: d63133d082af8a9938b2e39318d05ec4ba0d0eb3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141876989"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037773"
 ---
 # Get-AzsPublicIPAddress
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
