@@ -7,8 +7,8 @@ ms.openlocfilehash: 8091e2d7c55fa55352d2f365c8304d95c0639292
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966254"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917209"
 ---
 # Get-AzureSBAuthorizationRule
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: b10909ee1ec6f1fe185ef4c5f6d0316d7b02f13f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142266703"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142898489"
 ---
 # New-AzRecoveryServicesAsrInMageAzureV2DiskInput
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.AsrInMageAzureV2DiskInput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

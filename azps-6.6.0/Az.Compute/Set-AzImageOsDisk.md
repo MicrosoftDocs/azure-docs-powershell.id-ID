@@ -9,8 +9,8 @@ ms.openlocfilehash: 42a343b9ff77a80ff428718f8676642cb58e8d07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142904861"
 ---
 # Set-AzImageOsDisk
 
@@ -275,6 +275,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

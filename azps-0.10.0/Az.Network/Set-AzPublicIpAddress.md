@@ -10,8 +10,8 @@ ms.openlocfilehash: 53d5e15e6354e359461e59728e0776b7d3ec99ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142056143"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142909577"
 ---
 # Set-AzPublicIpAddress
 
@@ -119,7 +119,7 @@ Parameter 'PublicIpAddress' menerima nilai tipe 'PSPublicIpAddress' dari pipelin
 
 ### Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

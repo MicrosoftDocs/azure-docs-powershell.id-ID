@@ -9,8 +9,8 @@ ms.openlocfilehash: 4ded93f880641ebb9c9f1d716da7a5e2f5b1f0a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142864324"
 ---
 # New-AzStorageAccountManagementPolicyFilter
 
@@ -105,6 +105,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSManagementPolicyRuleFilter
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

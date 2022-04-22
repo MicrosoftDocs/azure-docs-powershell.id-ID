@@ -9,8 +9,8 @@ ms.openlocfilehash: 264219a01e88cd8c4b30f536a2266a1fc879a195
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142180277"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877662"
 ---
 # Get-AzGalleryImageDefinition
 
@@ -311,6 +311,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSGalleryImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

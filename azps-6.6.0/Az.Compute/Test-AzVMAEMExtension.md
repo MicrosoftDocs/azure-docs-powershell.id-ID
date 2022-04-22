@@ -10,8 +10,8 @@ ms.openlocfilehash: 558079f85a23f353f1ef6f74726dc393196c77e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141806684"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142904519"
 ---
 # Test-AzVMAEMExtension
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Extension.AEM.AEMTestResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

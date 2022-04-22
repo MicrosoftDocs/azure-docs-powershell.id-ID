@@ -7,8 +7,8 @@ ms.openlocfilehash: a966bc26e7943dd7931d566a646ea5bdfd5bfc0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142916363"
 ---
 # Remove-AzureReservedIP
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

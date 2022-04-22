@@ -10,13 +10,13 @@ ms.openlocfilehash: 8658dcf73d6cf1549ac6471e79269883abdf7616
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141964438"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910117"
 ---
 # Get-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
-Mendapatkan Koneksi Gateway Jaringan Virtual
+Mendapatkan Koneksi Gateway Virtual Network
 
 ## SYNTAX
 
@@ -26,18 +26,18 @@ Get-AzVirtualNetworkGatewayConnection [-Name <String>] -ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Koneksi Gateway Jaringan Virtual adalah objek yang mewakili terowongan IPsec (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Gateway Jaringan Virtual Anda di Azure.
+Koneksi Gateway Virtual Network adalah objek yang mewakili terowongan IPsec (Site-to-Site atau Vnet-to-Vnet) yang tersambung ke Gateway Virtual Network Anda di Azure.
 
 Cmdlet **Get-AzVirtualNetworkGatewayConnection** mengembalikan objek koneksi Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### 1: Dapatkan Koneksi Gateway Jaringan Virtual
+### 1: Mendapatkan Koneksi Gateway Virtual Network
 ```
 Get-AzVirtualNetworkGatewayConnection -Name myTunnel -ResourceGroupName myRG
 ```
 
-Mengembalikan objek Koneksi Gateway Jaringan Virtual dengan nama "myTunnel" dalam grup sumber daya "myRG"
+Mengembalikan objek Virtual Network Gateway Connection dengan nama "myTunnel" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -91,7 +91,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

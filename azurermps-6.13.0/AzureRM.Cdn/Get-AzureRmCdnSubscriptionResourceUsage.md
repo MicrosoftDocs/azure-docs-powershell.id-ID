@@ -9,8 +9,8 @@ ms.openlocfilehash: 6631112326a87fbd42ff4e0c24ec5b4883e7fe8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924049"
 ---
 # Get-AzureRmCdnSubscriptionResourceUsage
 
@@ -65,6 +65,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.PSResourceUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

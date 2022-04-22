@@ -9,8 +9,8 @@ ms.openlocfilehash: 48b5182efd368b0950313ac4d2c7b2e23f2948fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910585"
 ---
 # Set-AzKeyVaultManagedStorageSasDefinition
 
@@ -624,7 +624,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageSasDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

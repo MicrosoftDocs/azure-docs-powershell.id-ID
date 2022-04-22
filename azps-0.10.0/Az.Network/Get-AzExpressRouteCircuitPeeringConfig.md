@@ -10,8 +10,8 @@ ms.openlocfilehash: 9c52ff23d4e92af0d1f62cdfc5d5fda01b3221da
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497401"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910333"
 ---
 # Get-AzExpressRouteCircuitPeeringConfig
 
@@ -95,7 +95,7 @@ Parameter 'ExpressRouteCircuit' menerima nilai tipe 'PSExpressRouteCircuit' dari
 
 ### Microsoft.Azure.Commands.Network.Models.PSPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

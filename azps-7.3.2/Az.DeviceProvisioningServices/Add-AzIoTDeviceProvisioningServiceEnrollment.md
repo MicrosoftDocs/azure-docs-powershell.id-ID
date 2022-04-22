@@ -9,8 +9,8 @@ ms.openlocfilehash: d4040d8ab50bb9776ebf2f87702cd3d4c5a45d5d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141893564"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890730"
 ---
 # Add-AzIoTDeviceProvisioningServiceEnrollment
 
@@ -555,6 +555,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSIndividualEnrollment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

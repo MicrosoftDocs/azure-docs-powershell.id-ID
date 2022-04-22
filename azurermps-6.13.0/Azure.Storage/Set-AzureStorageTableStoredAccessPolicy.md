@@ -10,8 +10,8 @@ ms.openlocfilehash: 80fe36072840d112c4c8849e72deedd0a7f49d25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391103"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924949"
 ---
 # Set-AzureStorageTableStoredAccessPolicy
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

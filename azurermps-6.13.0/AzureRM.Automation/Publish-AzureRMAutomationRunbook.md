@@ -10,8 +10,8 @@ ms.openlocfilehash: e3d60cf277402ac23764b538ba6492ef5c424219
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100997"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924463"
 ---
 # Publish-AzureRmAutomationRunbook
 
@@ -112,7 +112,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Runbook
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

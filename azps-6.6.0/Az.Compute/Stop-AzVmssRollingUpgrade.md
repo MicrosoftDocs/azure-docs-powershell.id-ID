@@ -9,8 +9,8 @@ ms.openlocfilehash: 30f46b413ed6a4121f83f797f86859ab4b66a8b2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142127825"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142904537"
 ---
 # Stop-AzVmssRollingUpgrade
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

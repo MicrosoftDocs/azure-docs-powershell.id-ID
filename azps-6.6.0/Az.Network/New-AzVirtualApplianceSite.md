@@ -9,8 +9,8 @@ ms.openlocfilehash: a0d175780030aa9ef990cb7a617cb95797097d05
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141799772"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142900163"
 ---
 # New-AzVirtualApplianceSite
 
@@ -248,6 +248,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Situs Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

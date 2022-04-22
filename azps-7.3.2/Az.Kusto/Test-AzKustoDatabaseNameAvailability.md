@@ -9,8 +9,8 @@ ms.openlocfilehash: 5b73d76618a84c4d6cddb837b695650d9dff7dee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142068601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142888030"
 ---
 # Test-AzKustoDatabaseNameAvailability
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICheckNameResult
 
-## CATATAN
+## NOTES
 
 ALIAS
 

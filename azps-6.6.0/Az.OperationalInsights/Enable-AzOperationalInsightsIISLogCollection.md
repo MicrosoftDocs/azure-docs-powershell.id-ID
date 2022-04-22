@@ -10,8 +10,8 @@ ms.openlocfilehash: f5516857826e47bd71bf080511e09831e51f08a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142226773"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142898903"
 ---
 # Enable-AzOperationalInsightsIISLogCollection
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

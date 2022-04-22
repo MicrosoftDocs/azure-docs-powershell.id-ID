@@ -10,8 +10,8 @@ ms.openlocfilehash: 6c0fe1185bfa8d5233371788da87e7a13fe32c6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845483"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924409"
 ---
 # Remove-AzureRmAutomationCredential
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

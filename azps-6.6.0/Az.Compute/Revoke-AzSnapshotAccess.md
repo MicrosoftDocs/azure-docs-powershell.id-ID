@@ -9,8 +9,8 @@ ms.openlocfilehash: e794ebab492fc2ba6d42df91ec00c450923180aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142088745"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142904897"
 ---
 # Revoke-AzSnapshotAccess
 
@@ -142,6 +142,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

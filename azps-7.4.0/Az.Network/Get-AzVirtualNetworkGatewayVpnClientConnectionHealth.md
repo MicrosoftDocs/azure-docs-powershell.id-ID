@@ -9,8 +9,8 @@ ms.openlocfilehash: d5b7009626933ce0737efe5537005d6353480032
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424749"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142871830"
 ---
 # Get-AzVirtualNetworkGatewayVpnClientConnectionHealth
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSGatewayRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

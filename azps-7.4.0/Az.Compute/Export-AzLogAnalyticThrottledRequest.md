@@ -9,8 +9,8 @@ ms.openlocfilehash: a9ae810bbc2831a4da59a6b32996cff7b2f36a79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434351"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877680"
 ---
 # Export-AzLogAnalyticThrottledRequest
 
@@ -278,6 +278,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSLogAnalyticsOperationResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: bcd1ec3e1f4dfdd62b8b22b798bad491c359a410
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386449"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142857204"
 ---
 # Get-AzureRmApplicationGatewayUrlPathMapConfig
 
@@ -98,7 +98,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayUrlPathMap
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

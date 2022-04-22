@@ -10,8 +10,8 @@ ms.openlocfilehash: 69df8353c06d7490d5bea0f45083a7d6522aa988
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045307"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142898993"
 ---
 # Remove-AzNotificationHubsNamespace
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

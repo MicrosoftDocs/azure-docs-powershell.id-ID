@@ -9,8 +9,8 @@ ms.openlocfilehash: 9b5392dc196be5c1e967b93ac37b29ffef9b90d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423916"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142880092"
 ---
 # Uninstall-AzureRm
 
@@ -110,6 +110,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

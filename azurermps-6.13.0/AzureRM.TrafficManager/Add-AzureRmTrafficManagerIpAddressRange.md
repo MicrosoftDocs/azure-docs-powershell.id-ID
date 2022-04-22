@@ -10,8 +10,8 @@ ms.openlocfilehash: 213e959ecfec178644246f56be11e5b7306ef07f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246906"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917866"
 ---
 # Add-AzureRmTrafficManagerIpAddressRange
 
@@ -177,7 +177,7 @@ Cmdlet ini menerima objek **TrafficManagerEndpoint** untuk cmdlet ini.
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
 Cmdlet ini mengembalikan objek **TrafficManagerEndpoint** yang dimodifikasi.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

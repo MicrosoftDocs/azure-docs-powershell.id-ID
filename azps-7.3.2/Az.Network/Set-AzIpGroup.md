@@ -9,8 +9,8 @@ ms.openlocfilehash: 6db6e3770d4e2c49616f1bcdd2e6409220e6f60b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142344131"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142886662"
 ---
 # Set-AzIpGroup
 
@@ -128,6 +128,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSIpGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

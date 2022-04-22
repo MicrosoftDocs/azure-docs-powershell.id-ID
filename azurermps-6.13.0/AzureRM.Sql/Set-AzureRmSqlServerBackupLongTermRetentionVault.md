@@ -10,8 +10,8 @@ ms.openlocfilehash: e76ba16f9578eefdce36a1f3d726e027be2a9ed6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773978"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142918098"
 ---
 # Set-AzureRmSqlServerBackupLongTermRetentionVault
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlServerBackupLongTermRetentionVaultModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

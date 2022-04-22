@@ -10,8 +10,8 @@ ms.openlocfilehash: b6872447c48fd38271dc4598d3098cdb968b37c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871250"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905617"
 ---
 # Get-AzVMBootDiagnosticsData
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineInstanceView
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

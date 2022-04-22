@@ -9,8 +9,8 @@ ms.openlocfilehash: 29ac9ecedb20a44e79cfa0944f2b0f55ac14aaf6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141870998"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905257"
 ---
 # New-AzDiskPurchasePlanConfig
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSPurchasePlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

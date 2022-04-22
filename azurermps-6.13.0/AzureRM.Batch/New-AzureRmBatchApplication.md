@@ -10,8 +10,8 @@ ms.openlocfilehash: 34c887388256e86657d1a979729333e44cb1bd77
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924283"
 ---
 # New-AzureRmBatchApplication
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSAplikasi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
