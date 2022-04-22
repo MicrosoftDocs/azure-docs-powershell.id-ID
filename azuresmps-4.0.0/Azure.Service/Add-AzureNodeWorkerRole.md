@@ -7,8 +7,8 @@ ms.openlocfilehash: baa781938cfb3d0a89f38cb1a727f329bb295c79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773097"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982045"
 ---
 # Add-AzureNodeWorkerRole
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

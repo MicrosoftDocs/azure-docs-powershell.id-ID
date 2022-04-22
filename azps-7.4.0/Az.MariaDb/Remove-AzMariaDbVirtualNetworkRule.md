@@ -9,8 +9,8 @@ ms.openlocfilehash: d8d5302daa21186965b5d27d7382cac6da91834d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142998713"
 ---
 # Remove-AzMariaDbVirtualNetworkRule
 
@@ -224,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

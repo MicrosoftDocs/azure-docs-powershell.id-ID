@@ -9,8 +9,8 @@ ms.openlocfilehash: fdd745fe5fae94940717a3af6bd9156a9e7a0169
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173834"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142995149"
 ---
 # Get-AzStackEdgeStorageContainer
 
@@ -218,6 +218,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3830d47797101dfd8f62767f6b4108eb4757c9b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001737"
 ---
 # Remove-AzEventHubNetworkRuleSet
 
@@ -233,6 +233,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

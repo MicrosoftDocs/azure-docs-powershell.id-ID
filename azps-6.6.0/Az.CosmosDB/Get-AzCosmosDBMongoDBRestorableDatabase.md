@@ -9,8 +9,8 @@ ms.openlocfilehash: 1b81d36bc94714c7f76b6c4b1179012d3a5d67d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142477925"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143031743"
 ---
 # Get-AzCosmosDBMongoDBRestorableDatabase
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.CosmosDB.Models.PSRestorableMongodbDatabaseGetResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

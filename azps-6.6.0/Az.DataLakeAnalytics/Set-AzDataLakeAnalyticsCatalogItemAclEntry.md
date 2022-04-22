@@ -9,8 +9,8 @@ ms.openlocfilehash: e3e2007803ff76c1502e57ff7675e1c64b977789
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141804704"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030248"
 ---
 # Set-AzDataLakeAnalyticsCatalogItemAclEntry
 
@@ -393,7 +393,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSDataLakeAnalyticsAcl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,16 +10,16 @@ ms.openlocfilehash: ed4a6c28731e11b70e2855dee2cdc48846985f50
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141958119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029933"
 ---
 # Set-AzDataLakeStoreItemOwner
 
 ## SYNOPSIS
-Mengubah pemilik file atau folder di Data Lake Store.
+Memodifikasi pemilik file atau folder di Data Lake Store.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemowner) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemowner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Perintah ini mengatur pemilik untuk direktori akar ke Patti Fuller.
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID objek pengguna, grup, atau prinsipal layanan AzureActive Directory untuk digunakan sebagai pemilik.
+Menentukan ID objek pengguna, grup, atau perwakilan layanan AzureActive Directory untuk digunakan sebagai pemilik.
 
 ```yaml
 Type: System.Guid
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa pemilik yang diperbarui akan dikembalikan.
+Menunjukkan pemilik yang diperbarui yang dihasilkan harus dikembalikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake item untuk diubah, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item yang akan dimodifikasi, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -117,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe pemilik yang akan diatur.
+### -Type
+Menentukan tipe pemilik yang akan ditetapkan.
 Nilai yang dapat diterima untuk parameter ini adalah: Pengguna dan Grup.
 
 ```yaml
@@ -134,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

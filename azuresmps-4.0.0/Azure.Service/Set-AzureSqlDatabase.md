@@ -7,8 +7,8 @@ ms.openlocfilehash: be5852c06ffbb38517aacce5a70d9ea3e8cf1d52
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815987"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143041697"
 ---
 # Set-AzureSqlDatabase
 
@@ -349,7 +349,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.Database
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

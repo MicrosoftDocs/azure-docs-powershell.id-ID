@@ -10,13 +10,13 @@ ms.openlocfilehash: 1b321509bcdc32c9e52e0cf0b6232230a2c60f0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164704"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142994681"
 ---
 # New-AzStorageShareSASToken
 
 ## SYNOPSIS
-Menghasilkan token Tanda Tangan Akses Bersama untuk berbagi Azure Storage.
+Hasilkan token Tanda Tangan Akses Bersama untuk berbagi Penyimpanan Azure.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ New-AzStorageShareSASToken [-ShareName] <String> [-Permission <String>] [-Protoc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageShareSASToken** menghasilkan token tanda tangan akses bersama untuk berbagi Azure Storage.
+Cmdlet **New-AzStorageShareSASToken** menghasilkan token tanda tangan akses bersama untuk berbagi Penyimpanan Azure.
 
 ## EXAMPLES
 
@@ -51,21 +51,21 @@ Perintah ini membuat token tanda tangan akses bersama untuk berbagi bernama Cont
 PS C:\>Get-AzStorageShare -Prefix "test" | New-AzStorageShareSASToken -Permission "rwdl"
 ```
 
-Perintah ini mendapatkan semua Storage berbagi yang cocok dengan uji prefiks.
+Perintah ini mendapatkan semua berbagi Penyimpanan yang cocok dengan uji prefiks.
 Perintah meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini membuat token akses bersama untuk setiap Storage berbagi yang memiliki izin yang ditentukan.
+Cmdlet saat ini membuat token akses bersama untuk setiap berbagi Penyimpanan yang memiliki izin yang ditentukan.
 
 ### Contoh 3: Membuat token tanda tangan akses bersama yang menggunakan kebijakan akses bersama
 ```
 PS C:\>New-AzStorageShareSASToken -ShareName "ContosoShare" -Policy "ContosoPolicy03"
 ```
 
-Perintah ini membuat token tanda tangan akses bersama untuk Storage berbagi bernama ContosoShare yang memiliki kebijakan bernama ContosoPolicy03.
+Perintah ini membuat token tanda tangan akses bersama untuk berbagi Penyimpanan bernama ContosoShare yang memiliki kebijakan bernama ContosoPolicy03.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan konteks Azure Storage.
+Menentukan konteks Penyimpanan Azure.
 Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi Storage.
+Menentukan nama berbagi Penyimpanan.
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 * Kata kunci: umum, azure, layanan, data, penyimpanan, blob, antrean, tabel
 
 ## RELATED LINKS

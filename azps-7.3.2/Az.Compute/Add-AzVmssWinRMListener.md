@@ -10,8 +10,8 @@ ms.openlocfilehash: 296c1fa0bdb00960c4ef76a957b280112b1e2d0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142218241"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142958213"
 ---
 # Add-AzVmssWinRMListener
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

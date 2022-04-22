@@ -9,8 +9,8 @@ ms.openlocfilehash: b00d416feef1fcc3f8ae7d844ed0e048fc9326ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992226"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001035"
 ---
 # Get-AzIotHubRoutingEndpoint
 
@@ -236,6 +236,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingCustomEndpoint[]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

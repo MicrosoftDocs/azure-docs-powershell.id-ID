@@ -9,8 +9,8 @@ ms.openlocfilehash: 4ff48709b02cdd0270c559ea8be2f4e269dbce2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360171"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988408"
 ---
 # Remove-AzureRmApiManagementApiVersionSet
 
@@ -175,7 +175,7 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

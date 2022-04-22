@@ -9,8 +9,8 @@ ms.openlocfilehash: 82179323a4334d9147e14c4562ffe01d8bd934ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998058"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143002457"
 ---
 # New-AzWvdHostPool
 
@@ -793,7 +793,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IHostPool
 
-## CATATAN
+## NOTES
 
 ALIAS
 

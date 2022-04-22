@@ -9,8 +9,8 @@ ms.openlocfilehash: b1da834871c3f9c80e1f59a8eb0166d1e508d226
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433981"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143004563"
 ---
 # New-AzContainerInstanceVolumeMountObject
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.VolumeMount
 
-## CATATAN
+## NOTES
 
 ALIAS
 

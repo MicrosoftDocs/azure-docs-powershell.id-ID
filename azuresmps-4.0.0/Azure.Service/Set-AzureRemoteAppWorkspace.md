@@ -7,8 +7,8 @@ ms.openlocfilehash: 65b4cba0b710dfd8c3cb5e59e52aec955525c187
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142312231"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979669"
 ---
 # Set-AzureRemoteAppWorkspace
 
@@ -79,7 +79,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 * Semua koleksi Azure RemoteApp untuk langganan tertentu ada di dalam ruang kerja bersama.
 
 ## RELATED LINKS

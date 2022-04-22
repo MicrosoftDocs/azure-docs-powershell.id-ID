@@ -9,8 +9,8 @@ ms.openlocfilehash: 90fb82b139af5649ccd96a29c4d5e3fd70fffbd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171562"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142995293"
 ---
 # Stop-AzSqlSyncGroupSync
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

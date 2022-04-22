@@ -9,8 +9,8 @@ ms.openlocfilehash: 1ada4c05a15659f0b20b298a6b70f2f675eefe24
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173287"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143004239"
 ---
 # New-AzCosmosDBCassandraColumn
 
@@ -98,6 +98,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSColumn
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

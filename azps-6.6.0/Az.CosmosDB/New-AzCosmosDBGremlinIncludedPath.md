@@ -9,8 +9,8 @@ ms.openlocfilehash: dbc19c399c069f0d37c39e358064f69c96082556
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142087935"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143031527"
 ---
 # New-AzCosmosDBGremlinIncludedPath
 
@@ -100,6 +100,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSIncludedPath
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

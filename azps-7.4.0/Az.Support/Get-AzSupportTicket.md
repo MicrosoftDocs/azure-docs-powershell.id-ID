@@ -9,8 +9,8 @@ ms.openlocfilehash: 52e41eca379fda67d5adaf69cebdb2d7ef4dc143
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000769"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142994087"
 ---
 # Get-AzSupportTicket
 
@@ -210,6 +210,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Support.Models.PSSupportTicket
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

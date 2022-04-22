@@ -9,8 +9,8 @@ ms.openlocfilehash: 4fdf967573b30e5be0c7cc843984148cf9cb6d5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143007065"
 ---
 # Publish-AzBlueprint
 
@@ -153,6 +153,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Blueprint.Models.PSPublishedBlueprint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

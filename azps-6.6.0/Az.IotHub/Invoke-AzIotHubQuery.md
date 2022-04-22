@@ -9,16 +9,16 @@ ms.openlocfilehash: 0ccf7aeda4e340deff1e5f299681f6d3169c44c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142049951"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029511"
 ---
 # Invoke-AzIotHubQuery
 
 ## SYNOPSIS
-Buat kueri IoT Hub menggunakan bahasa yang canggih seperti SQL.
+Buat kueri IoT Hub menggunakan bahasa seperti SQL yang kuat.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubquery) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,8 +41,8 @@ Invoke-AzIotHubQuery [-ResourceId] <String> [-Query] <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-Buat kueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perutean perangkat dan modul, pekerjaan, dan perutean pesan.
-Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language untuk informasi selengkapnya.
+Kueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perangkat dan modul kembar, pekerjaan, dan perutean pesan.
+Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -51,14 +51,14 @@ Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language u
 PS C:\> Invoke-AzIotHubQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Query "select * from devices"
 ```
 
-Buat kueri semua data kembar perangkat dalam Azure IoT Hub.
+Mengkueri semua data kembar perangkat dalam Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
 PS C:\> Invoke-AzIotHubQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Query "select * from devices.modules where devices.deviceId = 'myDevice1'" -Top 2
 ```
 
-Kueri 2 modul data kembar teratas di perangkat target.
+Kueri 2 data kembar modul teratas pada perangkat target.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri pengguna yang akan dijalankan.
 
 ```yaml
@@ -152,9 +152,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Jumlah maksimum elemen yang akan dikembalikan.
-Secara default kueri tidak memiliki huruf kapital.
+Secara default kueri tidak memiliki batas.
 
 ```yaml
 Type: System.Int32
@@ -168,8 +168,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -211,6 +211,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

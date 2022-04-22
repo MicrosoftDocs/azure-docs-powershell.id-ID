@@ -10,8 +10,8 @@ ms.openlocfilehash: 9c99310755fc3a481cef5dcfcd073e10ecfc9f16
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993018"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143007479"
 ---
 # New-AzAutomationCertificate
 
@@ -182,7 +182,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CertificateInfo
 
-## CATATAN
+## NOTES
 
 Perintah ini harus dijalankan di komputer yang menjadi administrator Anda, serta dalam sesi PowerShell yang ditinggikan; sebelum sertifikat diunggah, cmdlet ini menggunakan bursa lokal X.509 untuk mengambil sidik jari dan kunci, dan jika cmdlet ini dijalankan di luar sesi PowerShell yang ditinggikan, Anda akan menerima kesalahan "Access denied".
 

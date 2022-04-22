@@ -9,8 +9,8 @@ ms.openlocfilehash: 67bca19f4a23c65ad7ff56bdb36ecf34f6801e81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988734"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142992845"
 ---
 # Update-AzSynapseIntegrationRuntime
 
@@ -242,6 +242,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSelfHostedIntegrationRuntimeStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

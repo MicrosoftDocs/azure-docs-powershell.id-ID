@@ -7,8 +7,8 @@ ms.openlocfilehash: 33cafa8dead8c800044bcfa29985a7f551e636d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921903"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981361"
 ---
 # Get-AzureServiceADDomainExtension
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

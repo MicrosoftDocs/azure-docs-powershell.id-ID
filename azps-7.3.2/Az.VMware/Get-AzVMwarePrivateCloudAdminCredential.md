@@ -9,8 +9,8 @@ ms.openlocfilehash: 14114e1d0543be33e7945a97ed9deb7e0e6e93d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848897"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143007551"
 ---
 # Get-AzVMwarePrivateCloudAdminCredential
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.IAdminCredentials
 
-## CATATAN
+## NOTES
 
 ALIAS
 
