@@ -9,8 +9,8 @@ ms.openlocfilehash: d4b3ae1d0905a2d7c2ef74c89b1e1b8748c41785
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142938719"
 ---
 # New-AzNetworkWatcherConnectionMonitorTestGroupObject
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorTestGroupObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

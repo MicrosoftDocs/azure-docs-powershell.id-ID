@@ -10,8 +10,8 @@ ms.openlocfilehash: 6ae8f8b3841e3bfbead2c40ba0a238fc7a436edf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142204453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142945055"
 ---
 # New-AzWebAppSSLBinding
 
@@ -261,7 +261,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.HostNameSslState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

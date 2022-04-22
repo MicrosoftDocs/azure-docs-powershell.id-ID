@@ -9,8 +9,8 @@ ms.openlocfilehash: 87c0e7cc1982d09e5d70ac0021fe5b202fd28ea5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142394729"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142945199"
 ---
 # New-AzAppServiceEnvironmentInboundServices
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

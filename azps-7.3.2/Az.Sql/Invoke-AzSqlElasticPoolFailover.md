@@ -9,8 +9,8 @@ ms.openlocfilehash: d9d5c7e1fa2f19b5f30f07e63f1a910af0a624f7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142252315"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142883890"
 ---
 # Invoke-AzSqlElasticPoolFailover
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

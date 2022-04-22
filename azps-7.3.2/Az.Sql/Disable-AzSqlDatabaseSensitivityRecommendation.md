@@ -10,8 +10,8 @@ ms.openlocfilehash: 329590165a4e715205df5339c81ba628cc7a172d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142208377"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142884376"
 ---
 # Disable-AzSqlDatabaseSensitivityRecommendation
 
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

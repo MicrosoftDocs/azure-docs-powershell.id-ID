@@ -10,8 +10,8 @@ ms.openlocfilehash: 1ea4abae19fa780e87c9b25281f94aa019e28ced
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142907777"
 ---
 # Set-AzApiManagementApi
 
@@ -365,7 +365,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
