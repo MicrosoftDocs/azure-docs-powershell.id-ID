@@ -9,8 +9,8 @@ ms.openlocfilehash: 569f989fc79b30a1f03ef1294783828e77a39b42
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141820573"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142921133"
 ---
 # New-AzureRmNetworkWatcherProtocolConfiguration
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherProtocolConfiguration
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, paket, tangkapan, lalu lintas, filter
 
 ## RELATED LINKS

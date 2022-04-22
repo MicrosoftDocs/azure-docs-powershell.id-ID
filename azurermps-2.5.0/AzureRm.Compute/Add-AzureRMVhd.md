@@ -8,8 +8,8 @@ ms.openlocfilehash: 3c8efdc640ec3cee4cd3d0a8eaf2a63f5832c918
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286396"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142929485"
 ---
 # Add-AzureRmVhd
 
@@ -201,7 +201,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.VhdUploadContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

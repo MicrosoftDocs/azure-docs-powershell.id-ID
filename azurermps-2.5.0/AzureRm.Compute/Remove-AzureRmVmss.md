@@ -8,8 +8,8 @@ ms.openlocfilehash: 0d7e14657d22ac8f8431e82b51cee81d62d5328f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141889307"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928738"
 ---
 # Remove-AzureRmVmss
 
@@ -180,7 +180,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

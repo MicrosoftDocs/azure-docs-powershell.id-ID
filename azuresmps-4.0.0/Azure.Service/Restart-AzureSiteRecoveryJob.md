@@ -7,8 +7,8 @@ ms.openlocfilehash: 802092bf9f738fa7e0b42af09c76ff13bef899dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244117"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142916021"
 ---
 # Restart-AzureSiteRecoveryJob
 
@@ -107,7 +107,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

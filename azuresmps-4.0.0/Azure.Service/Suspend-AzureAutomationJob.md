@@ -7,8 +7,8 @@ ms.openlocfilehash: 32945d58b078c4efedba3c17639bf22b58085f6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815810"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142915481"
 ---
 # Suspend-AzureAutomationJob
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

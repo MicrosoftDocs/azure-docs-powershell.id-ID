@@ -7,8 +7,8 @@ ms.openlocfilehash: b86ad0382fa7f87ac8aabb6b026b84d5a879f8ad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147263"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927999"
 ---
 # Remove-AzureRmDnsRecordSet
 
@@ -292,7 +292,7 @@ Anda dapat menyalurkan objek **RecordSet** ke cmdlet ini.
 ### Tidak
 Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 

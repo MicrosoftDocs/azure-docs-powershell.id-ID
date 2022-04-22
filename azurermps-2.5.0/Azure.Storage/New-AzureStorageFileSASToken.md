@@ -8,8 +8,8 @@ ms.openlocfilehash: 7c1b29cdb420ed0af4be8ce8ff07c73db179cabe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104496"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142929714"
 ---
 # New-AzureStorageFileSASToken
 
@@ -283,7 +283,7 @@ Parameter: Konteks (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

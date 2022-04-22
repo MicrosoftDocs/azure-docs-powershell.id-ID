@@ -9,8 +9,8 @@ ms.openlocfilehash: c4faa3e4288b88f34125b252f35c6e5a2023b9b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142930259"
 ---
 # Remove-AzAppServiceEnvironment
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

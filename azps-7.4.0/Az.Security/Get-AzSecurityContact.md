@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e5ddac07dcf793fc8fcfedba130caac9fd23a2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934993"
 ---
 # Get-AzSecurityContact
 
@@ -114,6 +114,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.SecurityContacts.PSSecurityContact
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

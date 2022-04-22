@@ -8,8 +8,8 @@ ms.openlocfilehash: 6d9a739156d3a4beb0d0dd86f3d7a96086d9fc32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147555"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928380"
 ---
 # Set-AzureRmVMPlan
 
@@ -26,9 +26,9 @@ Set-AzureRmVMPlan [-VM] <PSVirtualMachine> [-Name] <String> [[-Product] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVMPlan** mengatur informasi rencana Azure Marketplace untuk mesin virtual.
+Cmdlet **Set-AzureRmVMPlan** mengatur informasi rencana Marketplace Azure untuk mesin virtual.
 
-Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus disebarkan menggunakan portal Azure.
+Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan dengan menggunakan portal Azure.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan nama gambar dari Marketplace.
 Ini adalah nilai yang sama yang dikembalikan oleh cmdlet Get-AzureRmVMImageSku.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat [Menemukan dan menggunakan gambar VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam dokumentasi Microsoft Azure.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat [Menemukan dan menggunakan gambar VM Marketplace Azure dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam dokumentasi Microsoft Azure.
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 956fcf09006e8e65d029bb5e380abc5de0e15c17
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142056203"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142909271"
 ---
 # Remove-AzADApplication
 
@@ -227,7 +227,7 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Kata kunci: azure, Az, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Template, penyebaran
 
 ## RELATED LINKS

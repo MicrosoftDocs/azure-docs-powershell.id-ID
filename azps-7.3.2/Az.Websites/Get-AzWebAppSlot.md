@@ -10,8 +10,8 @@ ms.openlocfilehash: d4ae4aebf9c8cc63deef4c3ea22a4a9b42d8b6ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848660"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142880481"
 ---
 # Get-AzWebAppSlot
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

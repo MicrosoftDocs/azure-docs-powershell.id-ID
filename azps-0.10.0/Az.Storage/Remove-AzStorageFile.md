@@ -10,8 +10,8 @@ ms.openlocfilehash: a4893e77c0ee8a161b589d5305d16d522305572b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142350287"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142909001"
 ---
 # Remove-AzStorageFile
 
@@ -306,7 +306,7 @@ Parameter: File (ByValue)
 
 ### Microsoft.WindowsAz. Storage. File.CloudFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

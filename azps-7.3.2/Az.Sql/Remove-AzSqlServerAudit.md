@@ -10,8 +10,8 @@ ms.openlocfilehash: 1af0f1726eba4043c5d68a16218ca16505a1b4ae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142366055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142883674"
 ---
 # Remove-AzSqlServerAudit
 
@@ -171,6 +171,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

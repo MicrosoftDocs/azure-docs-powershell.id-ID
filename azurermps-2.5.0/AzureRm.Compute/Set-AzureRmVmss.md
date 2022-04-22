@@ -8,8 +8,8 @@ ms.openlocfilehash: 2d33f111928d0b022c7836d0b5c86fb5ec6f203e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929556"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928376"
 ---
 # Set-AzureRmVmss
 
@@ -194,7 +194,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

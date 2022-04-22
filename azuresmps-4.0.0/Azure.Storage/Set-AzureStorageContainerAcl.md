@@ -7,8 +7,8 @@ ms.openlocfilehash: d75ab7078ba6a1a620f8e539a079d25d9cbf078b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242692"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142915247"
 ---
 # Set-AzureStorageContainerAcl
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

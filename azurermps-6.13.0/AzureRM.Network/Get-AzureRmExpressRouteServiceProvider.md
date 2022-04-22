@@ -10,8 +10,8 @@ ms.openlocfilehash: 0c7beb4bc53635a8bf4293abf50441b0f15b66b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138950"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142921493"
 ---
 # Get-AzureRmExpressRouteServiceProvider
 
@@ -66,7 +66,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteServiceProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

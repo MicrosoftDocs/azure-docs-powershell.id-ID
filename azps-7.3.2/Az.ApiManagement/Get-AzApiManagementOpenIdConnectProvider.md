@@ -10,8 +10,8 @@ ms.openlocfilehash: 0023faabc6b44ef20c38399cb6cf9fcd70fbdce8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141944295"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142893898"
 ---
 # Get-AzApiManagementOpenIdConnectProvider
 
@@ -148,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOpenIdConnectProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

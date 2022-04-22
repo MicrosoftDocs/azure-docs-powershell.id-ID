@@ -9,8 +9,8 @@ ms.openlocfilehash: 0ed985049551a31714c1346f3b9d319d3ba8489a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166044"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142935281"
 ---
 # Remove-AzRoleManagementPolicyAssignment
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 381be9384231dafc51e75f48c85c354da9e3f8cf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835667"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142939781"
 ---
 # Remove-AzNetAppFilesAccount
 
@@ -185,6 +185,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
