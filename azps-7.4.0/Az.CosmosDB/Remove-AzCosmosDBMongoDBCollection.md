@@ -9,8 +9,8 @@ ms.openlocfilehash: 92aca1104e8b96eb96a8d8957804489c1bff96bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142875844"
 ---
 # Remove-AzCosmosDBMongoDBCollection
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

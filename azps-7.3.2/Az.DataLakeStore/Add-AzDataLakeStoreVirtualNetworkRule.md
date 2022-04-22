@@ -9,8 +9,8 @@ ms.openlocfilehash: 9f485096b4b26fe5f24cae57c9252053801c20a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141894986"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142891396"
 ---
 # Add-AzDataLakeStoreVirtualNetworkRule
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreVirtualNetworkRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

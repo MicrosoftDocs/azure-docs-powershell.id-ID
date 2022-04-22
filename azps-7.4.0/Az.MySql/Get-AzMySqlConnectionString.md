@@ -9,8 +9,8 @@ ms.openlocfilehash: d32e82ba77502a02731762048e2b1c980b27191d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996047"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142872874"
 ---
 # Get-AzMySqlConnectionString
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

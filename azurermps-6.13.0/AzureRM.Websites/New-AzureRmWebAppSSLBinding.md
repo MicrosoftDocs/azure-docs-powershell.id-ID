@@ -10,8 +10,8 @@ ms.openlocfilehash: 33efe02dd463334745e39d846d0b43c2ccd9dd6b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314350"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853218"
 ---
 # New-AzureRmWebAppSSLBinding
 
@@ -244,7 +244,7 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.Management.WebSites.Models.HostNameSslState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

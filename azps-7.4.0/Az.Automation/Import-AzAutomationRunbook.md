@@ -10,8 +10,8 @@ ms.openlocfilehash: 1b065af5ff80d959145846d4a5577511f576ba54
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142879012"
 ---
 # Import-AzAutomationRunbook
 
@@ -290,7 +290,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Runbook
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

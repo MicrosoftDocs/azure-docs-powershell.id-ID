@@ -7,8 +7,8 @@ ms.openlocfilehash: 58ed537ec716cb344996d8523adf78f78a1b4435
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278763"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142852120"
 ---
 # Get-AzureSqlRecoverableDatabase
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Ienumerable\<Microsoft.WindowsAzure.Management.Sql.Models.RecoverableDatabase\>
 
-## CATATAN
+## NOTES
 * Anda harus menggunakan autentikasi berbasis sertifikat untuk menjalankan cmdlet ini. Jalankan perintah berikut ini di komputer tempat menjalankan cmdlet ini: 
 
 `PS C:\\\> $subId = \<Subscription ID\>`

@@ -9,8 +9,8 @@ ms.openlocfilehash: 59f0c0c673d8793141dc563729b468bf44866b18
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171166"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863730"
 ---
 # Test-AzStreamAnalyticsOutput
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.Api20170401Preview.IResourceTestStatus
 
-## CATATAN
+## NOTES
 
 ALIAS
 

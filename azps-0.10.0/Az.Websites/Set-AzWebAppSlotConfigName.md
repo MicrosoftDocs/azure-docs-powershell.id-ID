@@ -10,8 +10,8 @@ ms.openlocfilehash: ab00a1fbafc446affd30d7ae06dd0d48f0f0d04d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142481129"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142845406"
 ---
 # Set-AzWebAppSlotConfigName
 
@@ -178,7 +178,7 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

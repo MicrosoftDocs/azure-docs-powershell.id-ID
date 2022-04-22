@@ -9,8 +9,8 @@ ms.openlocfilehash: 6792760cace14e347cfea7ca841d60d0466d2800
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994835"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142869238"
 ---
 # Get-AzPurviewTrigger
 
@@ -29,7 +29,7 @@ Mendapatkan informasi pemicu
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan jadwal pemicu untuk menjalankan pemindaian
+### Contoh 1: Dapatkan jadwal pemicu untuk eksekusi pemindaian
 ```powershell
 PS C:\> Get-AzPurviewTrigger -Endpoint https://parv-brs-2.purview.azure.com/ -DataSourceName 'DataScanTestData-Parv' -ScanName 'Scan-6HK'
 
@@ -56,7 +56,7 @@ ScheduleMonthlyOccurrence  :
 ScheduleWeekDay            :
 ```
 
-Dapatkan jadwal pemicu untuk menjalankan pemindaian
+Mendapatkan jadwal pemicu untuk eksekusi pemindaian
 
 ## PARAMETERS
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.ITrigger
 
-## CATATAN
+## NOTES
 
 ALIAS
 

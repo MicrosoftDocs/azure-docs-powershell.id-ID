@@ -10,8 +10,8 @@ ms.openlocfilehash: b09aeb7288f69d0edc678578bbcc91306f5b0c2d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141821592"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142857106"
 ---
 # Get-AzureRmLoadBalancerRuleConfig
 
@@ -100,7 +100,7 @@ Parameter: LoadBalancer (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancingRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1a21db1918d9baef48d3efd15dc72c2cb542a925
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778766"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858042"
 ---
 # Update-AzureKeyVaultManagedStorageAccount
 
@@ -260,7 +260,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

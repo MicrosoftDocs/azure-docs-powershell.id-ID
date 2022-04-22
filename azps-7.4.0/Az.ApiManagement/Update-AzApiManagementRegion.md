@@ -10,8 +10,8 @@ ms.openlocfilehash: 84d739758356cc35ac60d1fc470f3fd323846132
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423686"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142879354"
 ---
 # Update-AzApiManagementRegion
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

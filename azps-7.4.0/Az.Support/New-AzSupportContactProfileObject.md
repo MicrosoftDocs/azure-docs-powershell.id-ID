@@ -9,8 +9,8 @@ ms.openlocfilehash: b03ac393196a259c8b55878021ee7684bf3b6126
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989070"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863658"
 ---
 # New-AzSupportContactProfileObject
 
@@ -248,6 +248,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Support.Models.PSContactProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

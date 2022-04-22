@@ -9,8 +9,8 @@ ms.openlocfilehash: 930cf28f780445eaacf180ec6556bbf1c9e97203
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142053983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142904627"
 ---
 # Set-AzVmssSecurityProfile
 
@@ -103,6 +103,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

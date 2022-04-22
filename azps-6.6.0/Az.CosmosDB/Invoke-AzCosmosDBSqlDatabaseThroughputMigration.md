@@ -9,8 +9,8 @@ ms.openlocfilehash: 899a0292bfb393aa3e3a485f7303049800c6f0d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142234639"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142903583"
 ---
 # Invoke-AzCosmosDBSqlDatabaseThroughputMigration
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSThroughputSettingsGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

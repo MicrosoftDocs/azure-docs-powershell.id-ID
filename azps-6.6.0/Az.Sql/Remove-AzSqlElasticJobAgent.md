@@ -9,8 +9,8 @@ ms.openlocfilehash: f6742fb32e2e2891ecdab6af4220000eea695f8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141948039"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142896383"
 ---
 # Remove-AzSqlElasticJobAgent
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobAgentModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

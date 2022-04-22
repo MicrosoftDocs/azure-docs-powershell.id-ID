@@ -9,13 +9,13 @@ ms.openlocfilehash: 12551a3f2ccc506d007b336b86611b8a2764dc07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172282"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142868806"
 ---
 # New-AzPurviewTriggerObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk Trigger.
+Buat objek dalam memori untuk Pemicu.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzPurviewTriggerObject [-IncrementalScanStartTime <DateTime>] [-Interval <In
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk Trigger.
+Buat objek dalam memori untuk Pemicu.
 
 ## EXAMPLES
 
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -ScheduleAdditionalProperty
 Kamus .\<any\>
-Untuk membangun, lihat bagian CATATAN untuk properti SCHEDULEADDITIONALPROPERTY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SCHEDULEADDITIONALPROPERTY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IRecurrenceScheduleAdditionalProperties
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleMonthlyOccurrence
-Untuk membangun, lihat bagian CATATAN untuk properti SCHEDULEMONTHLYOCCURRENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SCHEDULEMONTHLYOCCURRENCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IRecurrenceScheduleOccurrence[]
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -273,7 +273,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.Trigger
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -282,11 +282,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-SCHEDULEADDITIONALPROPERTY <IRecurrenceScheduleAdditionalProperties>: Kamus .<any>
+SCHEDULEADDITIONALPROPERTY <IRecurrenceScheduleAdditionalProperties>: Kamus <any>.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 SCHEDULEMONTHLYOCCURRENCE <IRecurrenceScheduleOccurrence[]>: 
-  - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus <any>
+  - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus dari <any>
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[Day <DayOfWeek?>]`: 
   - `[Occurrence <Int32?>]`: 
