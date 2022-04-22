@@ -10,8 +10,8 @@ ms.openlocfilehash: 433dab74993ef900766568989ff39acfd5447a7f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142069789"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142953623"
 ---
 # Invoke-AzHDInsightHiveJob
 
@@ -265,7 +265,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

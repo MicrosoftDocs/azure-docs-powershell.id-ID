@@ -9,8 +9,8 @@ ms.openlocfilehash: 6a29a70f445d591d937085c1944b5d85d1d6c673
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142943183"
 ---
 # Update-AzCosmosDBAccountRegion
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSDatabaseAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

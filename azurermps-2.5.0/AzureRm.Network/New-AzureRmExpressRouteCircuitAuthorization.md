@@ -8,8 +8,8 @@ ms.openlocfilehash: f0e66c1e601ab63eec6d2540edd3ba0235727e9a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781202"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142926889"
 ---
 # New-AzureRmExpressRouteCircuitAuthorization
 
@@ -87,7 +87,7 @@ Cmdlet ini tidak menerima input pipelined.
 ### PSExpressRouteCircuitAuthorization
 Cmdlet ini membuat instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

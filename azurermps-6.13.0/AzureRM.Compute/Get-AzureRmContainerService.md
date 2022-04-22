@@ -10,8 +10,8 @@ ms.openlocfilehash: 0f87254f72d0b5ac22a5770ad3f1a9d03b70fd34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844205"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142923563"
 ---
 # Get-AzureRmContainerService
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

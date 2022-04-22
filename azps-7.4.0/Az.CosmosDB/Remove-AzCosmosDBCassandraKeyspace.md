@@ -9,8 +9,8 @@ ms.openlocfilehash: 8d37f06f4081d3005a440c6822da02b2cdbfe26a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003198"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142943309"
 ---
 # Remove-AzCosmosDBCassandraKeyspace
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

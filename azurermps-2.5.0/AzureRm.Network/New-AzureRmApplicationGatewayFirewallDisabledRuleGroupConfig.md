@@ -7,8 +7,8 @@ ms.openlocfilehash: 4e62a6c8820f9a9e6465c74746d589b343d99898
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285765"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927181"
 ---
 # New-AzureRmApplicationGatewayFirewallDisabledRuleGroupConfig
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallDisabledRuleGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: d85e0ca61b86e523c6d73ea8d2349d7d692aafb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100410"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924241"
 ---
 # Set-AzureBatchPoolOSVersion
 
@@ -117,7 +117,7 @@ Parameter: BatchContext (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

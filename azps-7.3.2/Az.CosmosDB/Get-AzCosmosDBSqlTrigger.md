@@ -9,8 +9,8 @@ ms.openlocfilehash: 3bd389a224defa4516f22fce2266923d6b11bff1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142216927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142956785"
 ---
 # Get-AzCosmosDBSqlTrigger
 
@@ -166,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlTriggerGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

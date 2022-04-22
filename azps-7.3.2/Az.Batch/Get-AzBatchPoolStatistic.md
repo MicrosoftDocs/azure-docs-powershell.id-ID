@@ -10,8 +10,8 @@ ms.openlocfilehash: 2f3eb6220f7781f7c03365981f50d34bdbc1211d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141791060"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142958717"
 ---
 # Get-AzBatchPoolStatistic
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSPoolStatistics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

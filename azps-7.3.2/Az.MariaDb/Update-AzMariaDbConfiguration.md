@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c4488821e501728c24e65b6666f7287be56a420
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141936249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142951769"
 ---
 # Update-AzMariaDbConfiguration
 
@@ -248,7 +248,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.Api20180601Preview.IConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

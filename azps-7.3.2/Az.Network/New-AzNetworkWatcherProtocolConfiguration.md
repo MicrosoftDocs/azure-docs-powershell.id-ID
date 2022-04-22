@@ -9,8 +9,8 @@ ms.openlocfilehash: 8d5ec9ca3c82b0009b91bfc0802469baac4ab6ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142213147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142947683"
 ---
 # New-AzNetworkWatcherProtocolConfiguration
 
@@ -32,7 +32,7 @@ Cmdlet New-AzNetworkWatcherProtocolConfiguration membuat objek konfigurasi proto
 
 ## EXAMPLES
 
-### Contoh 1: Uji Konektivitas Pengawas Jaringan dari VM ke situs web dengan konfigurasi protokol
+### Contoh 1: Uji Konektivitas Network Watcher dari VM ke situs web dengan konfigurasi protokol
 ```
 $config = New-AzNetworkWatcherProtocolConfiguration -Protocol Http -Method Get -Headers @{"accept"="application/json"} -ValidStatusCodes @(200,202,204)
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherProtocolConfiguration
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, paket, tangkapan, lalu lintas, filter
 
 ## RELATED LINKS

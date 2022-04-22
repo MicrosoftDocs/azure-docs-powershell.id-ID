@@ -7,8 +7,8 @@ ms.openlocfilehash: 411e822153c0b95bbf30829f8da915039d01ea32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141782462"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928737"
 ---
 # Remove-AzureRmVmssDataDisk
 
@@ -155,7 +155,7 @@ System.String System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Cultur
 
 ### Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: c99e2c549cc865a5f7f9ad0d7c3252cbf6651e98
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142380192"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142976555"
 ---
 # Set-AzsBackupConfiguration
 
@@ -336,7 +336,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

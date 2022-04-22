@@ -9,8 +9,8 @@ ms.openlocfilehash: e789493f5c476c089cf7ce242d1dea44df2d2aaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142942013"
 ---
 # Update-AzDiskPool
 
@@ -305,7 +305,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IDiskPool
 
-## CATATAN
+## NOTES
 
 ALIAS
 

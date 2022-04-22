@@ -9,8 +9,8 @@ ms.openlocfilehash: 17158c5f44208233df6861e7488fd9758a99f192
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165349"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933931"
 ---
 # Get-AzSqlDatabaseBackupShortTermRetentionPolicy
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseBackupShortTermRetentionPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

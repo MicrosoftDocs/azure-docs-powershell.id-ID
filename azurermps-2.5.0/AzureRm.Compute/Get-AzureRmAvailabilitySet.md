@@ -8,8 +8,8 @@ ms.openlocfilehash: ef00a9e425f67fbfc1ce47746503b574d483598f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286313"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142929274"
 ---
 # Get-AzureRmAvailabilitySet
 
@@ -104,7 +104,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAvailabilitySet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
