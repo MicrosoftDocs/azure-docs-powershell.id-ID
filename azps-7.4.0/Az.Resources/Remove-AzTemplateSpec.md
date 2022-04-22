@@ -9,8 +9,8 @@ ms.openlocfilehash: e7f5d1454408575836b9088be2ef1c180c378f28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166039"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867330"
 ---
 # Remove-AzTemplateSpec
 
@@ -197,6 +197,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

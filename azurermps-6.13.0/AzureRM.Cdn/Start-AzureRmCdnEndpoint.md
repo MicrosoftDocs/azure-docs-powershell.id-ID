@@ -10,8 +10,8 @@ ms.openlocfilehash: 4a6f7b86d16e5b82cf6bf9e869ed74f688fc5950
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141969018"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860947"
 ---
 # Start-AzureRmCdnEndpoint
 
@@ -177,7 +177,7 @@ Parameter: CdnEndpoint (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

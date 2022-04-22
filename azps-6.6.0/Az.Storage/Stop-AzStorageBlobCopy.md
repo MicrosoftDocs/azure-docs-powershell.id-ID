@@ -10,8 +10,8 @@ ms.openlocfilehash: aeae18d31c02b71bbd2f2734f83a87fab28967e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142221139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142832248"
 ---
 # Stop-AzStorageBlobCopy
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob** dari pustaka Klien Penyimpanan Azure.
+Menentukan objek **CloudBlob** dari pustaka Klien Azure Storage.
 Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari pustaka Klien Penyimpanan Azure.
+Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
 Anda dapat membuat objek atau menggunakan cmdlet Get-AzStorageContainer.
 
 ```yaml
@@ -302,17 +302,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.Storage.Blob.CloudBlob
+### Microsoft.Azure. Storage. Blob.CloudBlob
 
-### Microsoft.Azure.Storage.Blob.CloudBlobContainer
+### Microsoft.Azure. Storage. Blob.CloudBlobContainer
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.Commands.Common.Storage.ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

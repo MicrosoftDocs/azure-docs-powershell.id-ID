@@ -9,8 +9,8 @@ ms.openlocfilehash: 396243e366f6a21e2ac94d105473b348c6a8198d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818059"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854665"
 ---
 # Test-AzureRmRelayName
 
@@ -105,6 +105,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Relay.Models.PSCheckNameAvailabilityResultAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

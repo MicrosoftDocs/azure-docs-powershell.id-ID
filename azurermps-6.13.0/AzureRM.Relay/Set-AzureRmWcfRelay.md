@@ -9,8 +9,8 @@ ms.openlocfilehash: f16a77ac0f8c2759b6a3197718a1f8af2d9772cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096918"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854684"
 ---
 # Set-AzureRmWcfRelay
 
@@ -221,6 +221,6 @@ Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 ### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

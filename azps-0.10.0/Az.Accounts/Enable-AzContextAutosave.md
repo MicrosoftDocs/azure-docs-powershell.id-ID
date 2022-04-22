@@ -9,8 +9,8 @@ ms.openlocfilehash: 6c0e557078bde5cbec7b1f7dd96f1fa2c71408a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918993"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848358"
 ---
 # Enable-AzContextAutosave
 
@@ -111,6 +111,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Common.Authentication.ContextAutosaveSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

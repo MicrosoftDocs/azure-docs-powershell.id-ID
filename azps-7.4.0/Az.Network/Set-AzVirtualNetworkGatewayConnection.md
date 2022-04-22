@@ -10,8 +10,8 @@ ms.openlocfilehash: d0479f8f1e93e5692c1154c70eec6f4852434aad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172486"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142804132"
 ---
 # Set-AzVirtualNetworkGatewayConnection
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionMode
-Mode Koneksi Gateway Jaringan Virtual.
+Virtual Network Mode Koneksi Gateway.
 
 ```yaml
 Type: System.String
@@ -432,7 +432,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

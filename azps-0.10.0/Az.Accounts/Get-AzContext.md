@@ -9,13 +9,13 @@ ms.openlocfilehash: e56452d14f9c0f17b4f744d08fdd5911fb39aff5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918957"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848250"
 ---
 # Get-AzContext
 
 ## SYNOPSIS
-Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
+Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-AzContext [-ListAvailable] [-RefreshContextFromTokenCache] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
+Cmdlet Get-AzContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
 Cmdlet ini mendapatkan akun Direktori Aktif, penyewa Direktori Aktif, langganan Azure, dan lingkungan Azure yang ditargetkan.
 Cmdlet Azure Resource Manager menggunakan pengaturan ini secara default saat membuat permintaan Azure Resource Manager.
 
@@ -47,7 +47,7 @@ Name                                     Account             SubscriptionName   
 Subscription1 (xxxxxxxx-xxxx-xxxx-xxx... test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Dalam contoh ini, kami masuk ke akun kami dengan langganan Azure menggunakan Koneksi-AzAccount, lalu kami mendapatkan konteks sesi saat ini dengan menghubungi Get-AzContext.
+Dalam contoh ini, kami masuk ke akun kami dengan langganan Azure menggunakan Connect-AzAccount, lalu kami mendapatkan konteks sesi saat ini dengan menghubungi Get-AzContext.
 
 ### Contoh 2: Mencantumkan semua konteks yang tersedia
 ```
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

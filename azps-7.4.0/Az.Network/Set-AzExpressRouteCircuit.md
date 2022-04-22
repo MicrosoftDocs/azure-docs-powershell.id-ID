@@ -10,8 +10,8 @@ ms.openlocfilehash: 51fccfe0757b1797d0b1da7169d29cb1fdad2308
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431054"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142804402"
 ---
 # Set-AzExpressRouteCircuit
 
@@ -95,7 +95,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

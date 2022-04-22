@@ -9,8 +9,8 @@ ms.openlocfilehash: 6f58c71e7f0f1a781da04e0864221e242e9c47e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142301384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142838944"
 ---
 # Get-AzRouteServerPeerLearnedRoute
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPeerRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

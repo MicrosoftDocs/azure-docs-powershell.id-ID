@@ -9,8 +9,8 @@ ms.openlocfilehash: 1c6f6a38c1811bdda32b60d4af1707c78eb7afd0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382962"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854075"
 ---
 # Remove-AzureRmSecurityWorkspaceSetting
 
@@ -171,6 +171,6 @@ Microsoft.Azure.Commands.Security.Cmdlets.WorkspaceSettings.PSRemoveWorkspaceSet
 
 ### Microsoft.Azure.Commands.Security.Models.WorkspaceSettings.PSSecurityWorkspaceSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

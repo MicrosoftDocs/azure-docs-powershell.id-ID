@@ -9,8 +9,8 @@ ms.openlocfilehash: 900722c15d1c7a6560ba1f498b9dd0d3981f899a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854584"
 ---
 # Search-AzureRmGraph
 
@@ -154,6 +154,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

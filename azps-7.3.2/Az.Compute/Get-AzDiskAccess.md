@@ -8,8 +8,8 @@ ms.openlocfilehash: 95efd09b017a466507f8c1ec3b0c2b621d4bbddd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142259251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829890"
 ---
 # Get-AzDiskAccess
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDiskAccess
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 0382362c16ba65aa194029677cf8ca846e93db54
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141817026"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854222"
 ---
 # New-AzureRmSchedulerServiceBusQueueJob
 
@@ -363,7 +363,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Scheduler.Models.PSSchedulerJobDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,16 +10,16 @@ ms.openlocfilehash: a5843523f0fff1dcd6779d356a8064d234f53cee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141934521"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142819702"
 ---
-# Set-AzRouteTable
+# New-AzRouteTable
 
 ## SYNOPSIS
 Memperbarui tabel rute.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutetable) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Cmdlet **Set-AzRouteTable** memperbarui tabel rute.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tabel rute dengan menambahkan konfigurasi rute ke tabel rute
+### Contoh 1: Memperbarui tabel rute dengan menambahkan konfigurasi rute ke dalamnya
 ```
 PS C:\>Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Add-AzRouteConfig -Name "Route07" -AddressPrefix 10.2.0.0/16 -NextHopType "VnetLocal" | Set-AzRouteTable
 Name              : RouteTable01
@@ -78,11 +78,11 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzRouteTable.
-Perintah melewati tabel tersebut ke cmdlet Add-AzRouteConfig menggunakan operator pipeline.
-**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasil ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet Get-AzRouteTable.
+Perintah meneruskan tabel tersebut ke cmdlet Add-AzRouteConfig dengan menggunakan operator alur.
+**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasilnya ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
-### Contoh 2: Modifikasi tabel rute
+### Contoh 2: Mengubah tabel rute
 
 ```
 PS C:\> $rt = Get-AzRouteTable -ResourceGroupName "rgName" -Name "rtName"
@@ -105,7 +105,7 @@ Perintah keenam menampilkan nilai DisableBgpRoutePropagation.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan objek tabel rute yang mewakili status tempat tabel rute harus diatur.
+Menentukan objek tabel rute yang mewakili status tabel rute yang harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
@@ -149,8 +149,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,11 +190,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Add-AzRouteConfig](./Add-AzRouteConfig.md)
+[New-AzRouteConfig](./Add-AzRouteConfig.md)
 
 [Get-AzRouteTable](./Get-AzRouteTable.md)
 

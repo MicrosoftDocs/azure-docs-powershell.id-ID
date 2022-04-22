@@ -9,8 +9,8 @@ ms.openlocfilehash: 173c78b662253bf347ad5cc30d79208ebe514c15
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142058538"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848268"
 ---
 # Enable-AzureRmAlias
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

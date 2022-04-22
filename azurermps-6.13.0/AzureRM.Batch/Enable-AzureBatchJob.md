@@ -10,8 +10,8 @@ ms.openlocfilehash: be73b757bf20a2f688d7f7293ac4022e7bc8f4aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142861300"
 ---
 # Enable-AzureBatchJob
 
@@ -103,7 +103,7 @@ Parameter: BatchContext (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

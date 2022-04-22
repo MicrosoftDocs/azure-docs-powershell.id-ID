@@ -10,8 +10,8 @@ ms.openlocfilehash: f3c6561af34dcf33bf7c997ad2e2cc5cebe48cba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429784"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867348"
 ---
 # Remove-AzPolicyAssignment
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

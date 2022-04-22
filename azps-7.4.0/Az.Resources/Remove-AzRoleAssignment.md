@@ -10,8 +10,8 @@ ms.openlocfilehash: 5ffbc8aa68d549161e5899d8002b1efbe67d4eae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990419"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867312"
 ---
 # Remove-AzRoleAssignment
 
@@ -394,7 +394,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

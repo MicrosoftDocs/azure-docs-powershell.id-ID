@@ -9,8 +9,8 @@ ms.openlocfilehash: 6a9f7a57810af69638f5d712b27fb161bcb29e15
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303387"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142839736"
 ---
 # Get-AzMigrateSupportedOperatingSystem
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.ISupportedOperatingSystems
 
-## CATATAN
+## NOTES
 
 ALIAS
 

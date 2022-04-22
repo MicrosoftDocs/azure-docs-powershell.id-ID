@@ -10,8 +10,8 @@ ms.openlocfilehash: e6d451deac5a9539a2972964f1ac2536dcd7992f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100986"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142861390"
 ---
 # Set-AzureRmAutomationModule
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Module
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

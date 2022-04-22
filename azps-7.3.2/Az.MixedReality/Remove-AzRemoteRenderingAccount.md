@@ -9,8 +9,8 @@ ms.openlocfilehash: e3768b74ac1274f8d859bbe92d6428bfb52a5b2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142319225"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822744"
 ---
 # Remove-AzRemoteRenderingAccount
 
@@ -191,6 +191,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 0845a213f19bb6662a877a7688262879eaf9ea83
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142344203"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142820008"
 ---
 # Set-AzFirewallPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "142344203"
 Menyimpan kebijakan firewall azure yang dimodifikasi
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewallpolicy) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,14 +65,14 @@ Cmdlet **Set-AzFirewallPolicy** memperbarui Kebijakan Azure Firewall.
 PS C:\> Set-AzFirewallPolicy -InputObject $fp
 ```
 
-Contoh ini mengatur kebijakan firewall dengan nilai kebijakan firewall baru
+Contoh ini menetapkan kebijakan firewall dengan nilai kebijakan firewall baru
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzFirewallPolicy -Name firewallPolicy1 -ResourceGroupName TestRg -Location westcentralus -ThreatIntelMode "Alert"
 ```
 
-Contoh ini mengatur kebijakan firewall dengan mode intel ancaman baru
+Contoh ini menetapkan kebijakan firewall dengan mode intel ancaman baru
 
 ### Contoh 3
 ```powershell
@@ -80,12 +80,12 @@ PS C:\> $threatIntelWhitelist = New-AzFirewallPolicyThreatIntelWhitelist -IpAddr
 PS C:\> Set-AzFirewallPolicy -Name firewallPolicy1 -ResourceGroupName TestRg -Location westcentralus -ThreatIntelWhitelist $threatIntelWhitelist
 ```
 
-Contoh ini mengatur kebijakan firewall dengan daftar putih intel ancaman baru
+Contoh ini menetapkan kebijakan firewall dengan daftar putih intel ancaman baru
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePolicy
-Kebijakan dasar untuk mewarisi
+Kebijakan dasar untuk mewarisi dari
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Identitas
-Identitas Kebijakan Firewall untuk ditetapkan ke Kebijakan Firewall.
+Identitas Kebijakan Firewall yang akan ditetapkan ke Kebijakan Firewall.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSManagedServiceIdentity
@@ -228,7 +228,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlSetting
-Pengaturan SQL terkait
+Pengaturan terkait SQL
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicySqlSetting
@@ -332,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatIntelMode
-Mode operasi untuk Threat Intelligence.
+Mode operasi untuk Inteligensi Ancaman.
 
 ```yaml
 Type: System.String
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatIntelWhitelist
-Daftar putih untuk Threat Intelligence
+Daftar putih untuk Inteligensi Ancaman
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyThreatIntelWhitelist
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransportSecurityKeyVaultSecretId
-Secret Id of (base-64 encoded unencrypted pfx) 'Secret' atau 'Certificate' object stored in KeyVault
+Id Rahasia (base-64 encoded unencrypted pfx) 'Secret' atau objek 'Certificate' yang disimpan di KeyVault
 
 ```yaml
 Type: System.String
@@ -408,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-ResourceId dari identitas pengguna yang ditetapkan untuk ditetapkan ke Kebijakan Firewall.
+ResourceId dari identitas yang ditetapkan pengguna untuk ditetapkan ke Kebijakan Firewall.
 
 ```yaml
 Type: System.String
@@ -422,8 +422,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -438,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -454,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -468,6 +468,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewall
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
