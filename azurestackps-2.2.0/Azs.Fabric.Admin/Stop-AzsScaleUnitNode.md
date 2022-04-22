@@ -7,8 +7,8 @@ ms.openlocfilehash: ba146bd2e0ebf88d9b1db72f8d8028b92bbd0abf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142132631"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848700"
 ---
 # Stop-AzsScaleUnitNode
 
@@ -269,7 +269,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

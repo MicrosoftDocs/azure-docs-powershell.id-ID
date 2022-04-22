@@ -9,8 +9,8 @@ ms.openlocfilehash: eab75044556f81b80adf643c2b7fa5e80ae35206
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175444"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142803142"
 ---
 # New-AzPurviewAzureStorageCredentialScanObject
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureStorageCredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

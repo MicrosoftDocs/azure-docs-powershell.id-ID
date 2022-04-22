@@ -9,8 +9,8 @@ ms.openlocfilehash: fec31ece03fc7d85441222514fadebe5bc3269b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142089069"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843372"
 ---
 # Remove-AzHostGroup
 
@@ -195,6 +195,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

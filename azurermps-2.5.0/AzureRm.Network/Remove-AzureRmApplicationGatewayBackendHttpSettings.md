@@ -7,8 +7,8 @@ ms.openlocfilehash: 71ce0dd8d4c5988dfc5cd4226ee76dcec46042ff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797652"
 ---
 # Remove-AzureRmApplicationGatewayBackendHttpSettings
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

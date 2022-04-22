@@ -7,8 +7,8 @@ ms.openlocfilehash: b72c5cdc8cf623cd4227c3c1187b3d45fc45da3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093833"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787734"
 ---
 # Remove-AzureHDInsightCluster
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

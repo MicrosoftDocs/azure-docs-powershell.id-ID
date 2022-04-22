@@ -7,8 +7,8 @@ ms.openlocfilehash: 2c89f3c96f80531e36ccd34165b14d6d1d021552
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093311"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142787291"
 ---
 # Set-AzureIPForwarding
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: d194982c5a3833d8c799b47211af0974f54cef4f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142378871"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848970"
 ---
 # Get-AzsDiskMigrationJob
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDiskMigrationJob
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: d47eae5b0145b16f6e1315cb5d893b850a8d3bb0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141951027"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142837344"
 ---
 # Get-AzOperationalInsightsWorkspace
 
@@ -101,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

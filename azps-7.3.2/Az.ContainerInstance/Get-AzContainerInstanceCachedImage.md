@@ -9,8 +9,8 @@ ms.openlocfilehash: 559ac9d3582575fe054c55b66594d79b8e0a2fcb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142217287"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829170"
 ---
 # Get-AzContainerInstanceCachedImage
 
@@ -105,7 +105,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.ICachedImages
 
-## CATATAN
+## NOTES
 
 ALIAS
 

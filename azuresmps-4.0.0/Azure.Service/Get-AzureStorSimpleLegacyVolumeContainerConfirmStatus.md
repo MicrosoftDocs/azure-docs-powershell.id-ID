@@ -7,8 +7,8 @@ ms.openlocfilehash: e76d4124ed43416883fa1f3c1542b443e584cdf3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966190"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142788360"
 ---
 # Get-AzureStorSimpleLegacyVolumeContainerConfirmStatus
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### ConfirmMigrationStatusMsg
 Cmdlet ini mengembalikan status operasi migrasi konfirmasi yang dilakukan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 49f0b97cb418505b029d8c1aa74960a301181957
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142330793"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848862"
 ---
 # Remove-AzsComputeQuota
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

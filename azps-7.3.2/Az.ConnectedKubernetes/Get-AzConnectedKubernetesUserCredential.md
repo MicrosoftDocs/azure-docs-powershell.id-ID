@@ -9,16 +9,16 @@ ms.openlocfilehash: 8a60f29b3c99fd133b7967b733571e52dc469c71
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142258675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829386"
 ---
 # Get-AzConnectedKubernetesUserCredential
 
 ## SYNOPSIS
-Mendapatkan kredensial pengguna kluster yang terhubung dengan nama dan grup sumber daya tertentu.
+Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/get-azconnectedkubernetesusercredential) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/get-azconnectedkubernetesusercredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +37,11 @@ Get-AzConnectedKubernetesUserCredential -ClusterName <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Mendapatkan kredensial pengguna kluster yang terhubung dengan nama dan grup sumber daya tertentu.
+Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kredensial pengguna kluster yang terhubung dengan nama dan grup sumber daya tertentu.
+### Contoh 1: Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 ```powershell
 Get-AzConnectedKubernetesUserCredential -ClusterName azps_test_cluster -ResourceGroupName azps_test_group -AuthenticationMethod AAD -ClientProxy
 ```
@@ -57,9 +57,9 @@ Kubeconfig                                 : {{
                                              }}
 ```
 
-Mendapatkan kredensial pengguna kluster yang terhubung dengan nama dan grup sumber daya tertentu.
+Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 
-### Contoh 2: Mendapatkan kredensial pengguna kluster yang terhubung dengan nama dan grup sumber daya tertentu.
+### Contoh 2: Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 ```powershell
 Get-AzConnectedKubernetesUserCredential -ClusterName azps_test_cluster -ResourceGroupName azps_test_group -AuthenticationMethod Token -ClientProxy:$false
 ```
@@ -75,7 +75,7 @@ Kubeconfig                                 : {{
                                              }}
 ```
 
-Mendapatkan kredensial pengguna kluster yang terhubung dengan nama dan grup sumber daya tertentu.
+Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientProxy
-Nilai Boolean untuk menunjukkan apakah permintaan untuk proksi pihak klien atau tidak
+Nilai Boolean untuk menunjukkan apakah permintaan tersebut untuk proksi sisi klien atau tidak
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kubernetes yang dinamai get.
+Nama kluster Kubernetes tempat dipanggil.
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -Properti
 .
-Untuk membangun, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.Api20211001.IListClusterUserCredentialProperties
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -186,8 +186,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.Api20211001.ICredentialResults
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -239,7 +239,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PROPERTI <IListClusterUserCredentialProperties>: .
   - `AuthenticationMethod <AuthenticationMethod>`: Mode autentikasi klien.
-  - `ClientProxy <Boolean>`: Nilai Boolean untuk menunjukkan apakah permintaan untuk proksi pihak klien atau tidak
+  - `ClientProxy <Boolean>`: Nilai Boolean untuk menunjukkan apakah permintaan adalah untuk proksi sisi klien atau tidak
 
 ## RELATED LINKS
 

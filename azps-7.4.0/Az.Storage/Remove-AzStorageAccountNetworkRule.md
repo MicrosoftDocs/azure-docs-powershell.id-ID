@@ -9,8 +9,8 @@ ms.openlocfilehash: 0d552134c6508e60525bcb2bd36d4cad6b9b3e57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993275"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142797783"
 ---
 # Remove-AzStorageAccountNetworkRule
 
@@ -321,6 +321,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSIpRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

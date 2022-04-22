@@ -9,8 +9,8 @@ ms.openlocfilehash: 2b3977e90eed0ac90e0c089c5df4eb4ac2581d37
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141853016"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142828774"
 ---
 # New-AzCosmosDBTable
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ConflictingResourceException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

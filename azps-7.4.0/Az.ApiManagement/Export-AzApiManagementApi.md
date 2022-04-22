@@ -10,8 +10,8 @@ ms.openlocfilehash: c0346dbfa4b39aa1dbaed20910eadd551d61fdd7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841603"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142812610"
 ---
 # Export-AzApiManagementApi
 
@@ -35,7 +35,7 @@ Export-AzApiManagementApi -Context <PsApiManagementContext> -ApiId <String> [-Ap
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzApiManagementApi** mengekspor API Manajemen API Azure ke file dalam salah satu format yang didukung.
+Cmdlet **Export-AzApiManagementApi** mengekspor API Azure API Management ke file dalam salah satu format yang didukung.
 
 ## EXAMPLES
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

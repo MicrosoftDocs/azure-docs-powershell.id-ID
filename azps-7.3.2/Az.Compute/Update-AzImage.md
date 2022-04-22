@@ -9,8 +9,8 @@ ms.openlocfilehash: 4759bab8342345dd7d652b9e06f113447f2d30ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141897885"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829422"
 ---
 # Update-AzImage
 
@@ -207,6 +207,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: feaeceee621fdbc1b8b409bf21bae4282198287a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142491317"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142821682"
 ---
 # New-AzApplicationGatewayClientAuthConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "142491317"
 Membuat konfigurasi autentikasi klien baru untuk profil SSL.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Cmdlet **New-AzApplicationGatewayClientAuthConfiguration** membuat konfigurasi a
 PS C:\> $clientAuthConfig = New-AzApplicationGatewayClientAuthConfiguration -VerifyClientCertIssuerDN
 ```
 
-Perintah membuat konfigurasi auth klien baru dan menyimpannya dalam variabel $clientAuthConfig untuk digunakan dalam profil SSL.
+Perintah membuat konfigurasi autentikasi klien baru dan menyimpannya dalam variabel $clientAuthConfig yang akan digunakan dalam profil SSL.
 
 ## PARAMETERS
 
@@ -72,17 +72,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayClientAuthConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

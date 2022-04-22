@@ -9,8 +9,8 @@ ms.openlocfilehash: d418d4d8f2923e56f443b99ceaeb62cc4ab4dd3a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142256155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822150"
 ---
 # Add-AzRouteFilterRuleConfig
 
@@ -18,7 +18,7 @@ ms.locfileid: "142256155"
 Menambahkan aturan filter rute ke filter rute.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azroutefilterruleconfig) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azroutefilterruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Perintah menyimpan filter dalam variabel $RouteFilter.
 ## PARAMETERS
 
 ### -Access
-Menentukan akses aturan filter rute, nilai Valid adalah Tolak atau Perbolehkan.
+Menentukan akses aturan filter rute, Nilai yang valid adalah Tolak atau Izinkan.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -105,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan filter rute untuk ditambahkan ke filter rute.
 
 ```yaml
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteFilterRuleType
-Menentukan tipe aturan filter rute.
+Menentukan jenis aturan filter rute.
 Nilai yang valid adalah: Komunitas
 
 ```yaml
@@ -152,8 +152,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -193,8 +193,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteFilter
 
-## CATATAN
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+## NOTES
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 
@@ -208,8 +208,8 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzRouteFilter](./Get-AzRouteFilter.md)
 
-[Filter AzRoute Baru](./New-AzRouteFilter.md)
+[New-AzRouteFilter](./New-AzRouteFilter.md)
 
-[Hapus-AzRouteFilter](./Remove-AzRouteFilter.md)
+[Remove-AzRouteFilter](./Remove-AzRouteFilter.md)
 
 [Set-AzRouteFilter](./Set-AzRouteFilter.md)

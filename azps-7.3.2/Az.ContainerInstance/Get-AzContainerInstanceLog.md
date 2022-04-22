@@ -9,8 +9,8 @@ ms.openlocfilehash: 91ed992c698d29bf2807824b26f87ff3ecf295e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142376819"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829152"
 ---
 # Get-AzContainerInstanceLog
 
@@ -182,7 +182,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: c4b31e52dcb4bb7da9eafd7e09a7a0995557f2d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142478969"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843552"
 ---
 # Set-AzCognitiveServicesAccount
 
@@ -470,7 +470,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSCognitiveServicesAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
