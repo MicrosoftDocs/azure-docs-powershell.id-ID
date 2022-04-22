@@ -10,8 +10,8 @@ ms.openlocfilehash: f06075a8067ae8a7d7e1c2dcd522774325b48c57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142308571"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142845568"
 ---
 # Get-AzWebAppCertificate
 
@@ -102,7 +102,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

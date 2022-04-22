@@ -9,8 +9,8 @@ ms.openlocfilehash: 95ff3bec0cbdf262c468db4b01587df7c219abd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142129913"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142906607"
 ---
 # New-AzBlockchainTransactionNode
 
@@ -240,7 +240,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.ITransactionNode
 
-## CATATAN
+## NOTES
 
 ALIAS
 

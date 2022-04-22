@@ -9,8 +9,8 @@ ms.openlocfilehash: 616cc73c2e6897f185a55da142a4116a494465a4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423649"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142879264"
 ---
 # Test-AzAppConfigurationStoreNameAvailability
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.Api20200601.INameAvailabilityStatus
 
-## CATATAN
+## NOTES
 
 ALIAS
 

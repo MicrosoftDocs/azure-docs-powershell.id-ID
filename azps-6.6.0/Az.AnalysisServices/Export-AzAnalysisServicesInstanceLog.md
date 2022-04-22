@@ -9,8 +9,8 @@ ms.openlocfilehash: e78b0413caf1ca3cc841e7a5afeba1b0c9b25a24
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142308121"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142845046"
 ---
 # Export-AzAnalysisServicesInstanceLog
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 Alias: Export-AzAsInstanceLog
 
 ## RELATED LINKS

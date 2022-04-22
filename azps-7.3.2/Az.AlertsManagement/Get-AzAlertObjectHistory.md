@@ -9,8 +9,8 @@ ms.openlocfilehash: 6d3961d5408d5f915f66dedde5730f8ea39fbc96
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141857102"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142894024"
 ---
 # Get-AzAlertObjectHistory
 
@@ -103,6 +103,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSAlertModification
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

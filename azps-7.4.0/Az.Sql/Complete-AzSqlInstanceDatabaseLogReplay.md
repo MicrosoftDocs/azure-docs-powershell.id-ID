@@ -9,8 +9,8 @@ ms.openlocfilehash: 4c044c03ccc129fa225a56c283e72d1870fae3e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165394"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142865584"
 ---
 # Complete-AzSqlInstanceDatabaseLogReplay
 
@@ -193,6 +193,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: e7f0defc7d9f807f518aa9b19b4d98f97138517a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142274893"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142907733"
 ---
 # Set-AzApiManagementApiRevision
 
@@ -403,7 +403,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

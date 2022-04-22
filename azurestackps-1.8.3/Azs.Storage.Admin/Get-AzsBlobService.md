@@ -7,8 +7,8 @@ ms.openlocfilehash: a0fb6da4bde577d5a69c5bd85261822e3cf1865d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142914437"
 ---
 # Get-AzsBlobService
 
@@ -74,6 +74,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.BlobService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7ed4af8c6d5443c3cdc7c8ae395ecc66d0a927e6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384879"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920215"
 ---
 # New-AzureRmPowerBIWorkspaceCollection
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.PowerBIEmbedded.Models.PSWorkspaceCollection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

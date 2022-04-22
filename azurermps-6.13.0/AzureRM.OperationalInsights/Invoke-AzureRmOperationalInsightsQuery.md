@@ -9,8 +9,8 @@ ms.openlocfilehash: 6672bb6f788b06896fdfe9cde44c68639077e5c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920413"
 ---
 # Invoke-AzureRmOperationalInsightsQuery
 
@@ -233,6 +233,6 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSQueryResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

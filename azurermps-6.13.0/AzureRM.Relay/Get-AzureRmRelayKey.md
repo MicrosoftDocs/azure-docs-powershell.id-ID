@@ -9,8 +9,8 @@ ms.openlocfilehash: 69f6b1bc50681bafe7a860dcebaa7616c8f14e90
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061161"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142919732"
 ---
 # Get-AzureRmRelayKey
 
@@ -197,6 +197,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleKeysAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: fbfc199190b1983600d7a8fee0a94128a6153724
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142325141"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142906625"
 ---
 # Get-AzBlockchainSku
 
@@ -81,7 +81,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IResourceTypeSku
 
-## CATATAN
+## NOTES
 
 ALIAS
 

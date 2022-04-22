@@ -10,8 +10,8 @@ ms.openlocfilehash: 0668f82d8bc121d3a38f9cacc236b04d3995df0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142496573"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142845910"
 ---
 # Remove-AzStorageDirectory
 
@@ -289,7 +289,7 @@ Parameter: Direktori (ByValue)
 
 ### Microsoft.WindowsAz. Storage. File.CloudFileDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

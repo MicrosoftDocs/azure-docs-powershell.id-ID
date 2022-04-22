@@ -9,8 +9,8 @@ ms.openlocfilehash: 91144a53c811d7c33d5878a2fbf784d81cabf9d6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176917"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142872190"
 ---
 # Get-AzExpressRoutePortLinkConfig
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteLink
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

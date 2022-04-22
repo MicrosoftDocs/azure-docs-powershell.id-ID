@@ -9,8 +9,8 @@ ms.openlocfilehash: 5b771ace1f27ea6e6a4d4130eaaede7e9f2aa4e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326689"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142907579"
 ---
 # Remove-AzApplicationInsights
 
@@ -56,7 +56,7 @@ Menghapus sumber daya wawasan aplikasi bernama "test" dalam grup sumber daya "te
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Objek Komponen Application Insights.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Komponen Application Insights.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Komponen Wawasan Aplikasi.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

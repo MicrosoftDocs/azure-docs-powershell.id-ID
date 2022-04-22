@@ -9,8 +9,8 @@ ms.openlocfilehash: 0c4e4f531dac3f75f0eff69ba1dcfc644473ea06
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141776408"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920287"
 ---
 # Get-AzureRmPolicyEvent
 
@@ -474,6 +474,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PolicyInsights.Models.PolicyEvent
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: b416ba749bfe2b2f26ce5d9e03056341241429d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164374"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863334"
 ---
 # Get-AzSynapsePipeline
 
@@ -131,6 +131,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSPipelineResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
