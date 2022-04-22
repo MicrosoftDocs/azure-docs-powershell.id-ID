@@ -7,8 +7,8 @@ ms.openlocfilehash: c2b41a96ebfe684216a27a44ec2c608ca047aa5c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094129"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042471"
 ---
 # New-WAPackCloudService
 
@@ -94,7 +94,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

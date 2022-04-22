@@ -10,8 +10,8 @@ ms.openlocfilehash: a88806ddd934c2c7ee4eb8bb6f463da24ecefde7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819353"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046899"
 ---
 # Get-AzureRmOperationalInsightsWorkspace
 
@@ -28,14 +28,14 @@ Get-AzureRmOperationalInsightsWorkspace [[-ResourceGroupName] <String>] [[-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmOperationalInsightsWorkspace** mendapatkan informasi tentang ruang kerja yang sudah ada.
-Jika Anda menentukan nama ruang kerja, cmdlet ini akan mendapatkan informasi tentang ruang kerja tersebut.
+Cmdlet **Get-AzureRmOperationalInsightsWorkspace** mendapatkan informasi tentang ruang kerja yang ada.
+Jika Anda menentukan nama ruang kerja, cmdlet ini mendapatkan informasi tentang ruang kerja tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua ruang kerja dalam grup sumber daya.
 Jika Anda tidak menentukan nama dan grup sumber daya, cmdlet ini mendapatkan informasi tentang semua ruang kerja dalam langganan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ruang kerja menurut nama
+### Contoh 1: Mendapatkan ruang kerja berdasarkan nama
 ```
 PS C:\>Get-AzureRmOperationalInsightsWorkspace -Name "MyWorkspace" -ResourceGroupName "ContosoResourceGroup"
 ```
@@ -59,7 +59,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

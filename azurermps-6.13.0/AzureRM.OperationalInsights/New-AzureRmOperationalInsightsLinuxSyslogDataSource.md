@@ -10,8 +10,8 @@ ms.openlocfilehash: 86bc4b8bedbaafb6da1267d94ffa01b3d0ca95c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384699"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046795"
 ---
 # New-AzureRmOperationalInsightsLinuxSyslogDataSource
 
@@ -316,7 +316,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

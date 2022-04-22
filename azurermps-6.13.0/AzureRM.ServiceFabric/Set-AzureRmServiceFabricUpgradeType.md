@@ -9,8 +9,8 @@ ms.openlocfilehash: ddab39c3ad575cd46c427c7346fd635217c0dbca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382655"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045671"
 ---
 # Set-AzureRmServiceFabricUpgradeType
 
@@ -170,6 +170,6 @@ Parameter: UpgradeMode (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 24e23894b312f4be8732c8d381b88596652e038c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816654"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043281"
 ---
 # Get-AzureWebHostingPlan
 
@@ -142,7 +142,7 @@ Anda dapat meneruskan input ke cmdlet ini menurut nama properti, tetapi tidak me
 ### Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.WebEntities.WebHostingPlan
 Secara default, **Get-AzureWebHostingPlan** mengembalikan array objek **WebHostingPlan** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 33e019a4b1542d307588f9b52203a579e0284960
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142334786"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042111"
 ---
 # Remove-AzureTrafficManagerProfile
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Cmdlet ini menghasilkan $True atau $False.
 Jika operasi berhasil dan jika Anda menentukan parameter *PassThru* , cmdlet ini mengembalikan nilai $True.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

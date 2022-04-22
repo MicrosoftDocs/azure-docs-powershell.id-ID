@@ -8,13 +8,13 @@ ms.openlocfilehash: b1c802425576679da2238afffc0b40b77fc64193
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362066"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052479"
 ---
 # New-AzureRmVpnClientRevokedCertificate
 
 ## SYNOPSIS
-Membuat sertifikat pembatalan klien VPN baru.
+Membuat sertifikat pencabutan klien VPN baru.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,14 +26,14 @@ New-AzureRmVpnClientRevokedCertificate -Name <String> -Thumbprint <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmVpnClientRevokedCertificate** membuat sertifikat pembatalan klien jaringan privat virtual (VPN) baru untuk digunakan di gateway jaringan virtual.
-Sertifikat pembatalan klien mencegah komputer klien menggunakan sertifikat tertentu untuk autentikasi.
+Cmdlet **New-AzureRmVpnClientRevokedCertificate** membuat sertifikat pencabutan klien jaringan privat virtual (VPN) baru untuk digunakan pada gateway jaringan virtual.
+Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
 
-Cmdlet ini membuat sertifikat mandiri yang tidak ditetapkan ke gateway virtual.
+Cmdlet ini membuat sertifikat yang berdiri sendiri yang tidak ditetapkan ke gateway virtual.
 Sebagai gantinya, sertifikat yang dibuat oleh **New-AzureRmVpnClientRevokedCertificate** digunakan bersama dengan cmdlet New-AzureRmVirtualNetworkGateway saat membuat gateway baru.
 Misalnya, Anda membuat sertifikat baru dan menyimpannya dalam variabel bernama $Certificate.
-Anda kemudian bisa menggunakan objek sertifikat itu saat Anda membuat gateway virtual baru.
-Misalnya,
+Anda kemudian dapat menggunakan objek sertifikat tersebut saat membuat gateway virtual baru.
+Contohnya,
 
 `New-AzureRmVirtualNetworkGateway -Name "ContosoVirtualGateway" -ResourceGroupName "ContosoResourceGroup" -Location "West US" -GatewayType "VPN" -IpConfigurations $Ipconfig  -VPNType "RouteBased" -VpnClientRevokedCertificates $Certificate`
 
@@ -41,7 +41,7 @@ Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzureRmVirtualN
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sertifikat klien baru yang dicabut
+### Contoh 1: Membuat sertifikat baru yang dicabut kliennya
 ```
 PS C:\>$Certificate = New-AzureRmVpnClientRevokedCertificate -Name "ContosoClientRevokedCertificate" -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 ```
@@ -66,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama unik untuk sertifikat pembatalan klien baru.
+### -Name
+Menentukan nama unik untuk sertifikat pencabutan klien baru.
 
 ```yaml
 Type: String
@@ -81,10 +81,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sidik jari
+### -Thumbprint
 Menentukan pengidentifikasi unik sertifikat yang ditambahkan.
 
-Anda bisa mengembalikan informasi sidik jari untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell seperti ini:
+Anda dapat mengembalikan informasi thumbprint untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell yang mirip dengan ini:
 
 `Get-ChildItem -Path Cert:\LocalMachine\Root`
 
@@ -103,19 +103,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ###  
-Cmdlet ini tidak menerima input pipelined.
+Cmdlet ini tidak menerima input yang disalurkan.
 
 ## OUTPUTS
 
 ###  
 Cmdlet ini membuat instans baru objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -123,6 +123,6 @@ Cmdlet ini membuat instans baru objek **Microsoft.Azure.Commands.Network.Models.
 
 [Get-AzureRmVpnClientRevokedCertificate](./Get-AzureRmVpnClientRevokedCertificate.md)
 
-[Hapus-AzureRmVpnClientRevokedCertificate](./Remove-AzureRmVpnClientRevokedCertificate.md)
+[Remove-AzureRmVpnClientRevokedCertificate](./Remove-AzureRmVpnClientRevokedCertificate.md)
 
 

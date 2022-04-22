@@ -7,8 +7,8 @@ ms.openlocfilehash: 84d91f95b0465188cc9bd566b45b75e790211801
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094199"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042633"
 ---
 # New-AzureStorSimpleInlineStorageAccountCredential
 
@@ -176,7 +176,7 @@ Cmdlet ini mengembalikan objek **CloudType** , yang berisi bidang berikut:
 - **VolumeCount**.
 **Bilangan bulat**.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
