@@ -8,8 +8,8 @@ ms.openlocfilehash: c9a778638a0ca86198079227cfa0021a96ac138b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141782442"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054207"
 ---
 # Publish-AzureRmVMDscConfiguration
 
@@ -36,7 +36,7 @@ Publish-AzureRmVMDscConfiguration [-ConfigurationPath] <String> [[-OutputArchive
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzureRmVMDscConfiguration** mengunggah skrip Desired State Configuration (DSC) ke penyimpanan blob Azure, yang nantinya dapat diterapkan ke mesin virtual Azure menggunakan cmdlet Set-AzureRmVMDscExtension.
+Cmdlet **Publish-AzureRmVMDscConfiguration** mengunggah skrip Desired State Configuration (DSC) ke penyimpanan blob Azure, yang nantinya dapat diterapkan ke komputer virtual Azure menggunakan cmdlet Set-AzureRmVMDscExtension.
 
 ## EXAMPLES
 
@@ -45,14 +45,14 @@ Cmdlet **Publish-AzureRmVMDscConfiguration** mengunggah skrip Desired State Conf
 PS C:\> Publish-AzureRmVMDscConfiguration ".\MyConfiguration.ps1"
 ```
 
-Perintah ini membuat paket .zip untuk skrip tertentu dan modul sumber daya dependen apa pun dan mengunggahnya ke penyimpanan Azure.
+Perintah ini membuat paket .zip untuk skrip yang diberikan dan modul sumber daya dependen apa pun dan mengunggahnya ke penyimpanan Azure.
 
 ### Contoh 2: Membuat paket .zip dan menyimpannya ke file lokal
 ```
 PS C:\> Publish-AzureRmVMDscConfiguration ".\MyConfiguration.ps1" -OutputArchivePath ".\MyConfiguration.ps1.zip"
 ```
 
-Perintah ini membuat paket .zip untuk skrip tertentu dan modul sumber daya dependen apa pun dan menyimpannya di file lokal yang bernama .\MyConfiguration.ps1.zip.
+Perintah ini membuat paket .zip untuk skrip yang diberikan dan modul sumber daya dependen apa pun dan menyimpannya dalam file lokal yang diberi nama .\MyConfiguration.ps1.zip.
 
 ### Contoh 3: Tambahkan konfigurasi ke arsip lalu unggah ke penyimpanan
 ```
@@ -78,8 +78,8 @@ Perintah ini menambahkan konfigurasi bernama Sample.ps1, data konfigurasi Sample
 ## PARAMETERS
 
 ### -AdditionalPath
-Menentukan jalur file atau direktori untuk disertakan dalam arsip konfigurasi.
-Ini akan diunduh ke mesin virtual bersama-sama dengan konfigurasi.
+Menentukan jalur file atau direktori yang akan disertakan dalam arsip konfigurasi.
+Ini akan diunduh ke komputer virtual bersama dengan konfigurasi.
 
 ```yaml
 Type: String[]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationDataPath
 Menentukan jalur file .psd1 yang menentukan data untuk konfigurasi.
-Ini ditambahkan ke arsip konfigurasi lalu dikirimkan ke fungsi konfigurasi.
+Ini ditambahkan ke arsip konfigurasi dan kemudian diteruskan ke fungsi konfigurasi.
 Ini akan ditimpa oleh jalur data konfigurasi yang disediakan melalui cmdlet Set-AzureRmVMDscExtension
 
 ```yaml
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationPath
 Menentukan jalur file yang berisi satu atau beberapa konfigurasi.
-File dapat berupa file skrip Windows PowerShell (.ps1) atau file modul Windows PowerShell (.psm1).
+File dapat menjadi file skrip Windows PowerShell (.ps1) atau file modul Windows PowerShell (.psm1).
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerName
-Menentukan nama wadah penyimpanan Azure tempat konfigurasi diunggah.
+Menentukan nama kontainer penyimpanan Azure tempat konfigurasi diunggah.
 
 ```yaml
 Type: String
@@ -156,7 +156,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipDependencyDetection
-Menunjukkan bahwa cmdlet ini tidak termasuk dependensi sumber daya DSC dari arsip konfigurasi.
+Menunjukkan bahwa cmdlet ini mengecualikan dependensi sumber daya DSC dari arsip konfigurasi.
 
 ```yaml
 Type: SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan Azure yang digunakan untuk mengunggah skrip konfigurasi ke wadah yang ditentukan oleh parameter *ContainerName* .
+Menentukan nama akun penyimpanan Azure yang digunakan untuk mengunggah skrip konfigurasi ke kontainer yang ditentukan oleh parameter *ContainerName* .
 
 ```yaml
 Type: String
@@ -247,8 +247,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 Cmdlet tidak dijalankan.
 
@@ -280,18 +280,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### String
-Parameter 'ConfigurationPath' menerima nilai tipe 'String' dari pipeline
+### Untai
+Parameter 'ConfigurationPath' menerima nilai jenis 'String' dari alur
 
 ## OUTPUTS
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

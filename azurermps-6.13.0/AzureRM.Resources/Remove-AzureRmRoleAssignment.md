@@ -10,8 +10,8 @@ ms.openlocfilehash: 706ba111fb015c8865a33a9beec4fe3e722718ff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383467"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046068"
 ---
 # Remove-AzureRmRoleAssignment
 
@@ -388,7 +388,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

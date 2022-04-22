@@ -10,8 +10,8 @@ ms.openlocfilehash: d2af2095198cf0a1102e3422716013f2f2e02fc6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045459"
 ---
 # New-AzureRmSqlDatabaseSecondary
 
@@ -41,7 +41,7 @@ New-AzureRmSqlDatabaseSecondary [-DatabaseName] <String> [-Tags <Hashtable>] -Pa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRMSqlDatabaseSecondary** menggantikan cmdlet Start-AzureSqlDatabaseCopy ketika digunakan untuk menyiapkan geo-replikasi untuk database. Ini mengembalikan objek tautan geo-replikasi dari database utama ke sekunder.
+Cmdlet **New-AzureRMSqlDatabaseSecondary** menggantikan cmdlet Start-AzureSqlDatabaseCopy saat digunakan untuk menyiapkan replikasi geografis untuk database. Ini mengembalikan objek tautan replikasi geografis dari database utama ke sekunder.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ $database | New-AzureRmSqlDatabaseSecondary -PartnerResourceGroupName $secondary
 ## PARAMETERS
 
 ### -AllowConnections
-Menentukan tujuan baca Azure SQL Database sekunder.
+Menentukan niat baca dari Azure SQL Database sekunder.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak
 - Semua
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database untuk bertindak sebagai utama.
+Menentukan nama database yang akan bertindak sebagai utama.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi untuk database Azure Sql.
+Jenis lisensi untuk database Azure Sql.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerResourceGroupName
-Menentukan nama Azure Resource Group tempat cmdlet ini menetapkan database sekunder.
+Menentukan nama Grup Sumber Daya Azure tempat cmdlet ini menetapkan database sekunder.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Azure Resource Group tempat cmdlet ini menetapkan database utama.
+Menentukan nama Grup Sumber Daya Azure tempat cmdlet ini menetapkan database utama.
 
 ```yaml
 Type: System.String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryElasticPoolName
-Menentukan nama kumpulan elastis untuk meletakkan database sekunder.
+Menentukan nama kumpulan elastis untuk menempatkan database sekunder.
 
 ```yaml
 Type: System.String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryVCore
-Nomor Vcore dari sekunder Azure Sql Database.
+Nomor Vcore sekunder Azure Sql Database.
 
 ```yaml
 Type: System.Int32
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Menentukan pasangan nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan tautan replikasi SQL Database. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Menentukan pasangan Kunci-nilai dalam bentuk tabel hash untuk dikaitkan dengan tautan replikasi SQL Database. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -267,8 +267,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -309,7 +309,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

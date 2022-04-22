@@ -7,8 +7,8 @@ ms.openlocfilehash: 475f8913731e8663cec6c6de4c89254c47d7af5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141879188"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978193"
 ---
 # Get-AzsScaleUnit
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Fabric.Admin.Models.ScaleUnit
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: 5f3cf624d49e80f083e1d72d4d2f0f2e28fcfaae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303765"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028413"
 ---
 # Remove-AzMapsCreator
 
 ## SYNOPSIS
-Menghapus sumber daya Pembuat Peta.
+Menghapus sumber daya kreator Peta.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maps/remove-azmapscreator) untuk informasi terbaru.
@@ -35,11 +35,11 @@ Remove-AzMapsCreator -InputObject <IMapsIdentity> [-DefaultProfile <PSObject>] [
 ```
 
 ## DESCRIPTION
-Menghapus sumber daya Pembuat Peta.
+Menghapus sumber daya kreator Peta.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sumber daya Pembuat Peta
+### Contoh 1: Menghapus sumber daya Peta Creator
 ```powershell
 PS C:\> Remove-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount03 -Name creator-01
 
@@ -47,7 +47,7 @@ PS C:\> Remove-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-
 
 Perintah ini menghapus sumber daya Pembuat Peta.
 
-### Contoh 2: Hapus sumber daya Maps Creator menurut pipeline
+### Contoh 2: Menghapus sumber daya Peta Creator menurut pipeline
 ```powershell
 PS C:\> Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01 | Remove-AzMapsCreator
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instans Pembuat Peta.
+Nama instans Peta Creator.
 
 ```yaml
 Type: System.String
@@ -199,13 +199,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.IMapsIdentity
 
 ## OUTPUTS
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -216,7 +216,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
-  - `[CreatorName <String>]`: Nama instans Pembuat Peta.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -9,8 +9,8 @@ ms.openlocfilehash: d47f674c02f4f72b0e13d21281674309de91b206
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142999829"
 ---
 # Start-AzLabServicesVM
 
@@ -248,7 +248,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

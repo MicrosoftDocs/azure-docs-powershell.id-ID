@@ -7,8 +7,8 @@ ms.openlocfilehash: 1a3cbf9037f81d9387b1979472e50be940caa7d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104210"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054090"
 ---
 # Set-AzureRmDiskKeyEncryptionKey
 
@@ -149,7 +149,7 @@ System.String
 
 ### Microsoft.Azure.Management.Compute.Models.Disk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

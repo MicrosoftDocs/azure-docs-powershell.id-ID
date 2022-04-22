@@ -9,8 +9,8 @@ ms.openlocfilehash: 75623281c56af3f498db26a5f421847674de9211
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142085793"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029709"
 ---
 # Find-AzDataProtectionRestorableTimeRange
 
@@ -18,7 +18,7 @@ ms.locfileid: "142085793"
 
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/find-azdataprotectionrestorabletimerange) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/find-azdataprotectionrestorabletimerange) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Find-AzDataProtectionRestorableTimeRange -BackupInstanceName <String> -ResourceG
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil rentang waktu yang dapat dipulihkan yang valid untuk BackupInstance
+### Contoh 1: Mengambil rentang waktu yang valid untuk BackupInstance
 ```powershell
 PS C:\> $startTime = (Get-Date).AddDays(-30).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
 PS C:\> $endTime = (Get-Date).AddDays(0).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
@@ -48,9 +48,9 @@ StartTime  : 2021-03-25T14:27:31.0000000Z
 ```
 
 Atur $startTime dan $endTime.
-Ambil contoh cadangan.
-Ambil rentang waktu yang valid untuk $instance Instans Cadangan[0].
-Dispaly RestorableTimeRange, perhatikan bahwa ini bisa berupa beberapa rentang dicrete.
+Ambil instans cadangan.
+Ambil rentang waktu yang valid untuk Instans Cadangan $instance[0].
+Dispaly RestorableTimeRange, perhatikan bahwa ini bisa menjadi beberapa rentang dicrete.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu akhir untuk permintaan Rentang Pemulihan Daftar.
+Waktu akhir untuk permintaan Tentukan Rentang Pemulihan.
 Format ISO 8601.
 
 ```yaml
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah cadangan ada.
+Nama grup sumber daya tempat vault cadangan berada.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceDataStoreType
-Mendapatkan atau mengatur tipe penyimpanan data sumber.
+Mendapatkan atau mengatur jenis penyimpanan data sumber.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.RestoreSourceDataStoreType
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai untuk permintaan Rentang Pemulihan Daftar.
+Waktu mulai untuk permintaan Tentukan Rentang Pemulihan.
 Format ISO 8601.
 
 ```yaml
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan.
+Nama brankas cadangan.
 
 ```yaml
 Type: System.String
@@ -176,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IAzureBackupFindRestorableTimeRangesResponseResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

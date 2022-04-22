@@ -7,13 +7,13 @@ ms.openlocfilehash: 0565956d7f40a633bc1aa2c2049ef9a7d764d77e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362308"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052929"
 ---
 # Get-AzureRmVirtualNetworkGatewayConnectionVpnDeviceConfigScript
 
 ## SYNOPSIS
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi terkait yang dapat diterapkan langsung oleh pelanggan di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci terowongan VPN yang telah dibagikan sebelumnya, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, awalan alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmVirtualNetworkGatewayConnectionVpnDeviceConfigScript -Name <String> -
 ```
 
 ## DESCRIPTION
-Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi terkait yang dapat diterapkan langsung oleh pelanggan di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, prefiks alamat jaringan virtual, kunci terowongan VPN yang telah dibagikan sebelumnya, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
+Commandlet ini mengambil sumber daya koneksi, merek perangkat VPN, model, versi firmware, dan mengembalikan skrip konfigurasi yang sesuai yang dapat diterapkan pelanggan langsung di perangkat VPN lokal mereka. Skrip akan mengikuti sintaks perangkat yang dipilih, dan mengisi parameter yang diperlukan seperti alamat IP publik gateway Azure, awalan alamat jaringan virtual, kunci pra-berbagi terowongan VPN, dll. sehingga pelanggan cukup menyalin-tempel ke konfigurasi perangkat VPN mereka.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ PS C:\> Get-AzureRmVirtualNetworkGatewayConnectionVpnDeviceConfigScript -Resourc
 ```
 
 Contoh di atas menggunakan Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice untuk mendapatkan merek, model, dan versi firmware Perangkat VPN yang didukung.
-Lalu menggunakan salah satu informasi model yang dikembalikan untuk menghasilkan skrip konfigurasi Perangkat VPN untuk VirtualNetworkGatewayConnection "TestConnection". Perangkat yang digunakan dalam contoh ini memiliki DeviceFamily "IOS-Test", DeviceVendor "Cisco-Test" dan FirmwareVersion 20.
+Kemudian menggunakan salah satu informasi model yang dikembalikan untuk menghasilkan skrip konfigurasi Perangkat VPN untuk VirtualNetworkGatewayConnection "TestConnection". Perangkat yang digunakan dalam contoh ini memiliki DeviceFamily "IOS-Test", DeviceVendor "Cisco-Test" dan FirmwareVersion 20.
 
 ## PARAMETERS
 
@@ -101,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya koneksi tempat konfigurasi akan dihasilkan.
+### -Name
+Nama sumber daya koneksi yang konfigurasinya akan dihasilkan.
 
 ```yaml
 Type: String
@@ -131,8 +131,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

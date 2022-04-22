@@ -9,8 +9,8 @@ ms.openlocfilehash: 9207e4cb20169f27896abd86c272fcf9ad8a09cb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141864558"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143027045"
 ---
 # Update-AzNetAppFilesBackupPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "141864558"
 Memperbarui kebijakan pencadangan Azure NetApp Files (ANF) ke pengubah opsional yang disediakan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesbackuppolicy) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesbackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +54,7 @@ Update-AzNetAppFilesBackupPolicy [-DailyBackupsToKeep <Int32>] [-WeeklyBackupsTo
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzNetAppFilesBackupPolicy** mengubah kebijakan cadangan ANF.
+Cmdlet **Update-AzNetAppFilesBackupPolicy** memodifikasi kebijakan pencadangan ANF .
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ Cmdlet **Update-AzNetAppFilesBackupPolicy** mengubah kebijakan cadangan ANF.
 PS C:\> Update-AzNetAppFilesBackupPolicy -ResourceGroupName "MyRG" -AccountName "MyAccount" -Name "MyBackupPolicy" -DailyBackupsToKeep 2
 ```
 
-Perintah ini mengubah kebijakan cadangan ANF "MyBackupPolicy" agar DailyBackupsToKeep diberikan.
+Perintah ini mengubah kebijakan pencadangan ANF "MyBackupPolicy" agar DailyBackupsToKeep diberikan.
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Objek Akun yang berisi Kebijakan Pencadangan untuk memperbarui
+Objek Akun yang berisi Kebijakan Pencadangan untuk diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailyBackupsToKeep
-Jumlah cadangan harian untuk disimpan
+Jumlah pencadangan harian untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek BackupPolicy untuk dihapus
+Objek BackupPolicy yang akan dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlyBackupsToKeep
-Jumlah pencadangan bulanan untuk dipertahankan
+Jumlah pencadangan bulanan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -172,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan cadangan ANF
+### -Name
+Nama kebijakan pencadangan ANF
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari Kebijakan Cadangan ANF
+Id sumber daya Kebijakan Pencadangan ANF
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklyBackupsToKeep
-Jumlah cadangan mingguan untuk dipertahankan
+Jumlah pencadangan mingguan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -YearlyBackupsToKeep
-Jumlah cadangan tahunan untuk dipertahankan
+Jumlah pencadangan tahunan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -262,8 +262,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -308,6 +308,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 5a222b404aa931cec468ee5dfc66963f48b23ada
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925696"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046796"
 ---
 # Remove-AzureRmOperationalInsightsWorkspace
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

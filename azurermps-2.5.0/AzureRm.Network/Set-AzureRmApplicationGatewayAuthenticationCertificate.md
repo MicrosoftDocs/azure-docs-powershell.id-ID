@@ -8,8 +8,8 @@ ms.openlocfilehash: 3c70fcd0e04b566ff1cd3297525d3ed2c9ed95ba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970993"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051975"
 ---
 # Set-AzureRmApplicationGatewayAuthenticationCertificate
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

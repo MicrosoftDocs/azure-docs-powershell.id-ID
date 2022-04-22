@@ -9,8 +9,8 @@ ms.openlocfilehash: 7974005a3e19e0b8572a3b6da2a7fe144a3583bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142484459"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143009945"
 ---
 # Remove-AzManagedApplicationDefinition
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 29b8de41be243a69175c13454132497ac6e0ad1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836883"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001403"
 ---
 # Start-AzHDInsightJob
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

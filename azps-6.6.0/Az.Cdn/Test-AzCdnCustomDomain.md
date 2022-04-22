@@ -10,8 +10,8 @@ ms.openlocfilehash: 07214ae01dd0d546f981ffdfaa58cb7a61641bf7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141961125"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143032949"
 ---
 # Test-AzCdnCustomDomain
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSValidateCustomDomainOutput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: f0eadd6f0561ca5b44a588397f46d6ad3d7a1c3c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142310777"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978067"
 ---
 # Add-AzsGalleryItem
 
@@ -105,6 +105,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Gallery.Admin.Models.GalleryItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

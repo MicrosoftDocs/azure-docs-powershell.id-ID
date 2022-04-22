@@ -10,8 +10,8 @@ ms.openlocfilehash: b60325c9c8a1c542ebe1d7ad55ae06a9bd74271d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142320575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143020295"
 ---
 # Get-AzVMUsage
 
@@ -82,7 +82,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountSchema.md
 ms.openlocfilehash: 64a3f27038a16c58eccae83aaab314a60cc1277c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140105603"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028755"
 ---
 # Get-AzIntegrationAccountSchema
 
@@ -19,7 +19,7 @@ ms.locfileid: "140105603"
 Mendapatkan skema akun integrasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountschema) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,16 +29,16 @@ Get-AzIntegrationAccountSchema [-ResourceGroupName <String>] [-Name <String>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIntegrationAccountSchema** mendapatkan skema akun integrasi.
+Cmdlet **Get-AzIntegrationAccountSchema mendapatkan skema** akun integrasi.
 Menentukan nama akun integrasi, nama grup sumber daya, dan nama skema.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan skema akun integrasi
+### Contoh 1: Mendapatkan skema akun integrasi
 ```
 PS C:\>Get-AzIntegrationAccountSchema -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -SchemaName "IntegrationAccountSchema43"
 Id                   : /subscriptions/<SubscriptionId>/resourceGroups/ResourceGroup11/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount31/schemas/IntegrationAccountSchema43
@@ -56,7 +56,7 @@ MetaData             :
 
 Perintah ini mendapatkan skema akun integrasi bernama IntegrationAccountSchema43.
 
-### Contoh 2: Dapatkan skema akun integrasi untuk grup sumber daya
+### Contoh 2: Mendapatkan skema akun integrasi untuk grup sumber daya
 ```
 PS C:\>Get-AzIntegrationAccountSchema -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31"
 Id                   : /subscriptions/<SubscriptionId>/resourceGroups/ResourceGroup11/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount31/schemas/IntegrationAccountSchema43
@@ -77,7 +77,7 @@ Perintah ini mendapatkan skema akun integrasi untuk grup sumber daya bernama Res
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -91,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.IntegrationAccountSchema
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
