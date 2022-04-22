@@ -9,8 +9,8 @@ ms.openlocfilehash: d411b0613b85a70a1f3dc0d1726f847148a0f30c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142387337"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987589"
 ---
 # Add-AzureRmIotHubCertificate
 
@@ -249,6 +249,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSCertificateDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

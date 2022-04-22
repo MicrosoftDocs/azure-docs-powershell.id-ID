@@ -9,8 +9,8 @@ ms.openlocfilehash: a29dd24ed8afbebd848d249f567b0840c8f4c79e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142999685"
 ---
 # Get-AzIntegrationAccountAssembly
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.LogicApp.Models.PSIntegrationAccountAssembly
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

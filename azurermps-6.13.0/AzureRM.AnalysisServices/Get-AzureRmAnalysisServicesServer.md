@@ -9,8 +9,8 @@ ms.openlocfilehash: efd4c4770bb9a2628530f476d44e9774534ceee7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103165"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988831"
 ---
 # Get-AzureRmAnalysisServicesServer
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: Get-AzureAs
 
 ## RELATED LINKS

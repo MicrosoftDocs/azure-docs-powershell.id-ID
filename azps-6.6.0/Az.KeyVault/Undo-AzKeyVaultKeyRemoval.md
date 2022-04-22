@@ -9,16 +9,16 @@ ms.openlocfilehash: dff688077c4197a80ab7864233b6c829d58f70f9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141801895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029115"
 ---
 # Undo-AzKeyVaultKeyRemoval
 
 ## SYNOPSIS
-Memulihkan kunci yang dihapus dalam kubah kunci ke status aktif.
+Memulihkan kunci yang dihapus dalam brankas kunci ke status aktif.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultkeyremoval) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultkeyremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Undo-AzKeyVaultKeyRemoval [-InputObject] <PSDeletedKeyVaultKeyIdentityItem>
 ## DESCRIPTION
 Cmdlet **Undo-AzKeyVaultKeyRemoval** akan memulihkan kunci yang dihapus sebelumnya.
 Kunci yang dipulihkan akan aktif dan dapat digunakan untuk semua operasi kunci normal.
-Penelepon perlu memiliki izin 'pulihkan' untuk melakukan operasi ini.
+Pemanggil harus memiliki izin 'pulihkan' untuk melakukan operasi ini.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini akan memulihkan kunci 'MyKey' yang sebelumnya dihapus, ke dalam status aktif dan dapat digunakan.
+Perintah ini akan memulihkan kunci 'MyKey' yang sebelumnya dihapus, ke status aktif dan dapat digunakan.
 
 ## PARAMETERS
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmName
-Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang dipilih saat ini.
+Nama HSM. Cmdlet membangun FQDN dari HSM terkelola berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -113,9 +113,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kunci.
-Cmdlet menyusun FQDN kunci dari nama kubah, lingkungan yang saat ini dipilih, dan nama kunci.
+Cmdlet membangun FQDN kunci dari nama vault, lingkungan dan nama kunci yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -130,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -145,8 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -187,11 +187,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Hapus-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
+[Remove-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
 
 [Add-AzKeyVaultKey](./Add-AzKeyVaultKey.md)
 

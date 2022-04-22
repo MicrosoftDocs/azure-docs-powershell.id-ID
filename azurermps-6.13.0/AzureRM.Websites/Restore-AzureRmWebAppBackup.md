@@ -10,8 +10,8 @@ ms.openlocfilehash: efb570c22b5345b9d75fdf96dca061dc5cf7847f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923174"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982367"
 ---
 # Restore-AzureRmWebAppBackup
 
@@ -233,6 +233,6 @@ Parameter: WebApp (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

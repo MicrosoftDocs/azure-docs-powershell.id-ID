@@ -10,8 +10,8 @@ ms.openlocfilehash: 4752612120da1f89729299c41df1b7af78580f92
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142144847"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989057"
 ---
 # Remove-AzureStorageFile
 
@@ -308,7 +308,7 @@ Parameter: File (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

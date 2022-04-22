@@ -9,8 +9,8 @@ ms.openlocfilehash: 1251aaf99a94623b67129bb32fc5c235da121dfa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142221571"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143022905"
 ---
 # Remove-AzDataLakeGen2AclRecursive
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Objek Konteks Penyimpanan Azure
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxBatchCount
-Jumlah maksimum kumpulan yang dapat dijalankan operasi Kontrol Akses perubahan tunggal. Jika ukuran kumpulan data melebihi MaxBatchCount mengalikan BatchSize, token kelanjutan akan dikembalikan.
+Jumlah maksimum kumpulan yang dapat dijalankan operasi Access Control perubahan tunggal. Jika ukuran kumpulan data melebihi MaxBatchCount mengalikan BatchSize, token kelanjutan akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -347,6 +347,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

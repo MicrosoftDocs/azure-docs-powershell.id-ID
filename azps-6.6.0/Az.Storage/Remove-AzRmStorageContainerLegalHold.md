@@ -9,13 +9,13 @@ ms.openlocfilehash: 23cb19a6618bceb921f0094fa2f1f85df35aa051
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142221463"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143022887"
 ---
 # Remove-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
-Menghapus tag penahanan legal dari wadah blob Penyimpanan
+Menghapus tag penahanan legal dari wadah blob Storage
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerlegalhold) untuk informasi terbaru.
@@ -42,36 +42,36 @@ Remove-AzRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag penahanan legal dari wadah blob Penyimpanan
+Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag legal hold dari wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Hapus tag penahanan legal dari wadah blob Penyimpanan dengan nama akun penyimpanan dan nama kontainer
+### Contoh 1: Hapus tag penahanan legal dari wadah blob Storage dengan nama akun Storage dan nama kontainer
 ```
 PS C:\>Remove-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1
 ```
 
-Perintah ini menghapus tag penahanan legal dari wadah blob Penyimpanan dengan nama akun penyimpanan dan nama kontainer.
+Perintah ini menghapus tag penahanan legal dari wadah blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Hapus tag penahanan legal dari wadah blob Penyimpanan dengan objek Akun penyimpanan dan nama kontainer
+### Contoh 2: Menghapus tag penahanan legal dari wadah blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1,tag2
 ```
 
-Perintah ini menghapus tag penahanan legal dari wadah blob Penyimpanan dengan objek akun Penyimpanan dan nama kontainer.
+Perintah ini menghapus tag penahanan legal dari wadah blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Hapus tag penahanan legal dari semua kontainer blob Penyimpanan dalam akun Penyimpanan dengan pipeline
+### Contoh 3: Hapus tag penahanan legal dari semua wadah blob Storage dalam akun Storage dengan pipeline
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Remove-AzRmStorageContainerLegalHold -Tag  tag1
 ```
 
-Perintah ini menghapus tag penahanan legal dari semua kontainer blob Penyimpanan dalam akun Penyimpanan dengan pipeline.
+Perintah ini menghapus tag penahanan legal dari semua wadah blob Storage dalam akun Storage dengan pipeline.
 
 ## PARAMETERS
 
 ### -Kontainer
-Objek wadah penyimpanan
+objek kontainer Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Objek akun penyimpanan
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Nama Akun Penyimpanan.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -212,14 +212,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
+### Microsoft.Azure.Commands.Management. Storage. Models.PSStorageAccount
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
+### Microsoft.Azure.Commands.Management. Storage. Models.PSContainer
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSLegalHold
+### Microsoft.Azure.Commands.Management. Storage. Models.PSLegalHold
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

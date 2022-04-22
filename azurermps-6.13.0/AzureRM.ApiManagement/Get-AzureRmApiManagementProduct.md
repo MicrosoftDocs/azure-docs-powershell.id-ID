@@ -10,8 +10,8 @@ ms.openlocfilehash: 10b17f60ae100004c23a16f341924de6de11b0eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283083"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142988597"
 ---
 # Get-AzureRmApiManagementProduct
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProduct
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

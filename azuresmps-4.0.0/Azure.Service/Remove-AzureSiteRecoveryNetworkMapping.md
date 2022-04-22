@@ -7,8 +7,8 @@ ms.openlocfilehash: 2bf6c89569fdd5ce9710736bfd023d677b676fbf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244449"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980407"
 ---
 # Remove-AzureSiteRecoveryNetworkMapping
 
@@ -102,7 +102,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

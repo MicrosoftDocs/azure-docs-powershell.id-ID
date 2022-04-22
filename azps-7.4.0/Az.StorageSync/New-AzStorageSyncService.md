@@ -9,8 +9,8 @@ ms.openlocfilehash: 449846468130cd61608c350753e7060f8ec61636
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142994267"
 ---
 # New-AzStorageSyncService
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StorageSync.Models.PSStorageSyncService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

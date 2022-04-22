@@ -9,8 +9,8 @@ ms.openlocfilehash: 28d0c33a1aa74b5c5f69670622cc12c48810906f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141810052"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143034947"
 ---
 # Start-AzStorageBlobIncrementalCopy
 
@@ -396,6 +396,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

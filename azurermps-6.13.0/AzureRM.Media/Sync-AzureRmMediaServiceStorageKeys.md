@@ -10,8 +10,8 @@ ms.openlocfilehash: 48cc57b1b829c0551f98bb2a8489bb9efd348b46
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822218"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987103"
 ---
 # Sync-AzureRmMediaServiceStorageKeys
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

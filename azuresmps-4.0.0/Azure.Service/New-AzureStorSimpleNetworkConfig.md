@@ -7,8 +7,8 @@ ms.openlocfilehash: b30f6d6c316a596810cc6439d5a7556bee68be0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278017"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980805"
 ---
 # New-AzureStorSimpleNetworkConfig
 
@@ -299,7 +299,7 @@ Cmdlet ini mengembalikan objek NetworkConfig yang berisi properti berikut:
 - **IPv4Netmask** (**IPAddress**) 
 - **InterfaceAlias** (**NetInterfaceId**)
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

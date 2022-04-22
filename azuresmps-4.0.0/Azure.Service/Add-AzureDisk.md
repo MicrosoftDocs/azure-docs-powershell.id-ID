@@ -7,8 +7,8 @@ ms.openlocfilehash: 4c68b04c4fe7e07235cb9face947d4ad8e2a3e9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982207"
 ---
 # Add-AzureDisk
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### DiskContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

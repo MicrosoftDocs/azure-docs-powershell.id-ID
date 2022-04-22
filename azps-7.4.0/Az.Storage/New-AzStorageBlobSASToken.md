@@ -10,8 +10,8 @@ ms.openlocfilehash: 56510366184167138b4edd178ce3209205e0e504
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433678"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142994735"
 ---
 # New-AzStorageBlobSASToken
 
@@ -346,7 +346,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

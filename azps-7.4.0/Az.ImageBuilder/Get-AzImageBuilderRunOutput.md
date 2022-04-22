@@ -9,8 +9,8 @@ ms.openlocfilehash: c04e092109acca652c505a3d111766dc6379fee3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997367"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143001125"
 ---
 # Get-AzImageBuilderRunOutput
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IRunOutput
 
-## CATATAN
+## NOTES
 
 ALIAS
 

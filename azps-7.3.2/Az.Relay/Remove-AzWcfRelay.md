@@ -9,8 +9,8 @@ ms.openlocfilehash: 02f86427cecaaf009c05fa78631b6247a0d8b0ef
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141933801"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143010557"
 ---
 # Remove-AzWcfRelay
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

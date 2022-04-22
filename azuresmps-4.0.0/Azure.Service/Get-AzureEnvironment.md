@@ -7,8 +7,8 @@ ms.openlocfilehash: a280834b5efb01be6dba87936ec0acc88344aac3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141922119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981793"
 ---
 # Get-AzureEnvironment
 
@@ -147,7 +147,7 @@ Secara default, **Get-AzureEnvironment** mengembalikan objek kustom.
 ### Microsoft.WindowsAzure.Commands.Utilities.Common.WindowsAzureEnvironment
 Saat Anda menjalankan **Get-AzureEnvironment** dengan parameter **Name** , maka akan mengembalikan objek  **WindowsAzureEnvironment** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
