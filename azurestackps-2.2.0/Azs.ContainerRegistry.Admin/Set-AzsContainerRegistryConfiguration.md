@@ -7,8 +7,8 @@ ms.openlocfilehash: ef2b172ffb5fe5f6ff5219151060c60a83864d43
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142330703"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142911899"
 ---
 # Set-AzsContainerRegistryConfiguration
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistryAdmin.Models.Api20191101Preview.IContainerRegistryConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

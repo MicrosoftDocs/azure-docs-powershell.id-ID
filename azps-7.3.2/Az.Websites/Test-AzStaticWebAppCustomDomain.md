@@ -9,8 +9,8 @@ ms.openlocfilehash: 857c294becf3509301b2c959bb335edce6139e1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141931965"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142944857"
 ---
 # Test-AzStaticWebAppCustomDomain
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

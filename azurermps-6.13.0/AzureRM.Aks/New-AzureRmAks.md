@@ -9,8 +9,8 @@ ms.openlocfilehash: f91b4f2afdb1c6aaf7cbac16f952a333d3d362b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142144565"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924877"
 ---
 # New-AzureRmAks
 
@@ -313,6 +313,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

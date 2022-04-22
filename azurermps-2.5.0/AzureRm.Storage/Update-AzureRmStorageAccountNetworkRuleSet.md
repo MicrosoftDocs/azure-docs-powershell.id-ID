@@ -7,8 +7,8 @@ ms.openlocfilehash: beeaf374a261a30ad842aa9c0570ff544ec8ab68
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285210"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925621"
 ---
 # Update-AzureRmStorageAccountNetworkRuleSet
 
@@ -228,6 +228,6 @@ Parameter: VirtualNetworkRule (ByValue)
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSNetworkRuleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

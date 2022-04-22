@@ -7,8 +7,8 @@ ms.openlocfilehash: 1256fa41d7accc175e79bb531c62f76ace6482d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141770612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142914761"
 ---
 # Set-AzsOfferDelegation
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.OfferDelegation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

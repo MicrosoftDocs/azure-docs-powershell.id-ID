@@ -10,8 +10,8 @@ ms.openlocfilehash: 974e64903f7605b230681f1578aafc36d4749cdc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142218385"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142892997"
 ---
 # New-AzCognitiveServicesAccount
 
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Daftar Akun Penyimpanan Milik Pengguna.
+Daftar Akun Storage yang Dimiliki Pengguna.
 
 ```yaml
 Type: System.String[]
@@ -501,7 +501,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSCognitiveServicesAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

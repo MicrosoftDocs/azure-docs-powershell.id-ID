@@ -9,8 +9,8 @@ ms.openlocfilehash: fe255ce280d1e6ff817cca9f9fac3a7a47849e0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431514"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142939106"
 ---
 # Get-AzVirtualWanVpnServerConfigurationVpnProfile
 
@@ -212,6 +212,6 @@ Microsoft.Azure.Commands.Network.Models.PSVirtualWan Microsoft.Azure.Commands.Ne
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnProfileResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

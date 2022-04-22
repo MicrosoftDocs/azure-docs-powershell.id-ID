@@ -8,8 +8,8 @@ ms.openlocfilehash: 097b4c5ff6a4a9be32889f104c8e2c8fe0058b13
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141847313"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925543"
 ---
 # Get-AzureRmAppServicePlanMetrics
 
@@ -193,7 +193,7 @@ Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipe
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

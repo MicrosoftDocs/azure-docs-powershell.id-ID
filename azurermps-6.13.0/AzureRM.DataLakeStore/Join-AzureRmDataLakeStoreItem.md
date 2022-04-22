@@ -10,8 +10,8 @@ ms.openlocfilehash: 6e2a0e21f071f9496cce03f07a9b5c68da405e85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142098928"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142921932"
 ---
 # Join-AzureRmDataLakeStoreItem
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.String
 Jalur lengkap ke file yang dihasilkan dari file yang digabungkan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

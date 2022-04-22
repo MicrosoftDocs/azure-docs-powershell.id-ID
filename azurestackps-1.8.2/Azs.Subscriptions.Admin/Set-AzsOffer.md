@@ -7,8 +7,8 @@ ms.openlocfilehash: 9b08aed00a4c16bd2031608ff795a4dde8491859
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142241149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142914797"
 ---
 # Set-AzsOffer
 
@@ -296,7 +296,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Offer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 05851ae333a0c0a04b4b83574de1e2bb5b48587a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989634"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933265"
 ---
 # Set-AzSqlServerAdvisorAutoExecuteStatus
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlServerAdvisorModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, penasihat
 
 ## RELATED LINKS

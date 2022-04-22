@@ -9,8 +9,8 @@ ms.openlocfilehash: b0ea70ddf51a59df31cd35cd18c2945c59daad56
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933139"
 ---
 # Remove-AzSqlVMGroup
 
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: af3439a59efc6cd7d2d863737458c26e7d7b5753
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142940339"
 ---
 # Get-AzMigrateReplicationRecoveryServicesProvider
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IRecoveryServicesProvider
 
-## CATATAN
+## NOTES
 
 ALIAS
 

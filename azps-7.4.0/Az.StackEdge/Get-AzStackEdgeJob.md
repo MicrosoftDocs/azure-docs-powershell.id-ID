@@ -9,8 +9,8 @@ ms.openlocfilehash: 70884e0967b860b9e2af192e6752dbeefef221f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420106"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142933103"
 ---
 # Get-AzStackEdgeJob
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

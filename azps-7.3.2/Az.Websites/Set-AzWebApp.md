@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
-ms.openlocfilehash: 7b9c3442ff10157f585eb407511cfb8ba437d837
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6a2c5badd5d94fde72b8da74ddbbc5a0a5f84488
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140399826"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142944947"
 ---
 # Set-AzWebApp
 
 ## SYNOPSIS
-Mengubah Azure Web App.
+Memodifikasi Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Cmdlet **Set-AzWebApp** mengatur Azure Web App.
 PS C:\> Set-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -AppServicePlan "ContosoPlan"
 ```
 
-Perintah ini mengubah paket layanan aplikasi yang terkait dengan Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket layanan aplikasi dan batasan yang terkait dengannya.
+Perintah ini mengubah paket layanan aplikasi yang terkait dengan Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket layanan aplikasi dan batasan yang terkait dengannya.
 https://docs.microsoft.com/azure/app-service/app-service-plan-manage#move-an-app-to-another-app-service-plan
 
 ### Contoh 2
@@ -59,11 +62,11 @@ https://docs.microsoft.com/azure/app-service/app-service-plan-manage#move-an-app
 PS C:\> Set-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -HttpLoggingEnabled $true
 ```
 
-Perintah ini mengatur HttpLoggingEnabled ke true untuk Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mengatur HttpLoggingEnabled ke true untuk Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ### Contoh 3
 
-Mengubah Azure Web App. (otomatisgenerated)
+Memodifikasi Azure Web App. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example -->
 Set-AzWebApp -AppSettings <Hashtable> -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS'
@@ -71,7 +74,7 @@ Set-AzWebApp -AppSettings <Hashtable> -Name 'ContosoWebApp' -ResourceGroupName '
 
 ### Contoh 4
 
-Contoh berikut ini membuat string koneksi bernama myConnectionString untuk Web App ContosoWebApp. Ini menggantikan semua string koneksi yang sudah ada untuk Web App ContosoWebApp.
+Contoh berikut membuat string koneksi bernama myConnectionString untuk Aplikasi Web ContosoWebApp. Ini menggantikan semua string koneksi yang ada untuk Web App ContosoWebApp.
 
 ```powershell
 $hashtable =  @{myConnectionString = @{Type='MySql';Value='MySql Connection string'}}
@@ -80,7 +83,7 @@ Set-AzWebApp -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS' -Conn
 
 ### Contoh 5
 
-Mengaktifkan wawasan aplikasi untuk Web App
+Mengaktifkan wawasan aplikasi untuk Aplikasi Web
 ```azurepowershell-interactive
 $key=(Get-AzApplicationInsights -ResourceId $ai).InstrumentationKey
 $setting=@{"ApplicationInsightsAgent_EXTENSION_VERSION"="~3"; "APPINSIGHTS_INSTRUMENTATIONKEY"=$key}
@@ -90,7 +93,7 @@ Set-AzWebApp -AppSettings $setting -Name 'ContosoWebApp' -ResourceGroupName 'Def
 ## PARAMETERS
 
 ### -AlwaysOn
-Pastikan aplikasi web dimuat sepanjang waktu, tetapi tidak dimuat setelah diam.
+Pastikan aplikasi web dimuat sepanjang waktu, agak dibongkar setelah diam.
 
 ```yaml
 Type: System.Boolean
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi
+Nama Paket App Service
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Aplikasi Pengaturan HashTable. Aplikasi yang sudah Pengaturan Anda ganti, menghapus pengaturan apa pun yang tidak disediakan.
+Aplikasi Pengaturan HashTable. App Pengaturan yang ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Mengaktifkan/menonaktifkan MSI di azure webapp atau functionapp yang sudah ada
+Mengaktifkan/menonaktifkan MSI pada aplikasi web atau functionapp azure yang sudah ada
 
 ```yaml
 Type: System.Boolean
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoSwapSlotName
-Nama slot tujuan untuk tukar otomatis
+Nama slot tujuan untuk pertukaran otomatis
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureStoragePath
-Azure Storage terpasang di dalam Aplikasi Web untuk Kontainer. Menggunakan New-AzureRmWebAppAzureStoragePath untuk membuatnya
+Azure Storage untuk dipasang di dalam Aplikasi Web untuk Kontainer. Gunakan New-AzureRmWebAppAzureStoragePath untuk membuatnya
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.WebAppAzureStoragePath[]
@@ -194,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -String Koneksi
-HashTable String Koneksi
+### -ConnectionStrings
+String Koneksi HashTable
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerImageName
-Container Image Name
+Nama Gambar Kontainer
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryPassword
-Kata Sandi Registri Wadah Privat
+Kata Sandi Registri Kontainer Privat
 
 ```yaml
 Type: System.Security.SecureString
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUrl
-Url Server Registri Wadah Privat
+Url Server Registri Kontainer Privat
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Registri Wadah Privat
+Nama Pengguna Azure Container Registry Privat
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultDocuments
-Larik String Dokumen Default
+Array String Dokumen Default
 
 ```yaml
 Type: System.String[]
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Boolean Berkemampuan Pembuatan Log Kesalahan Mendetail
+Boolean Yang Diaktifkan Pencatatan Kesalahan Terperinci
 
 ```yaml
 Type: System.Boolean
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableContainerContinuousDeployment
-Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan wadah
+Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan kontainer
 
 ```yaml
 Type: System.Boolean
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -FtpsState
-Mengatur nilai status Ftps untuk aplikasi. Nilai yang Diperbolehkan [AllAllowed | Dinonaktifkan | FtpsOnly].
+Atur nilai status Ftps untuk aplikasi. Nilai yang Diizinkan [AllAllowed | | yang dinonaktifkan FtpsOnly].
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandlerMappings
-Handler Mappings IList
+Daftar Pemetaan Handler
 
 ```yaml
 Type: System.Collections.Generic.IList`1[Microsoft.Azure.Management.WebSites.Models.HandlerMapping]
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostNames
-Larik String Nama Host WebApp
+WebApp HostNames String Array
 
 ```yaml
 Type: System.String[]
@@ -389,8 +392,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpsOnly
-Aktifkan/nonaktifkan pengalihan semua lalu lintas ke HTTPS di aplikasi atau functionapp Azure Web yang sudah ada
+### -HttpsOnly
+Mengaktifkan/menonaktifkan pengalihan semua lalu lintas ke HTTPS di aplikasi web atau functionapp azure yang ada
 
 ```yaml
 Type: System.Boolean
@@ -405,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedPipelineMode
-Nama Mode Saluran Terkelola
+Nama Mode Alur Terkelola
 
 ```yaml
 Type: System.String
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinTlsVersion
-Versi minimum TLS diperlukan untuk permintaan SSL. Nilai yang Diperbolehkan [1.0 | 1.1 | 1.2].
+Versi minimum TLS yang diperlukan untuk permintaan SSL. Nilai yang Diizinkan [1.0 | 1.1 | 1.2].
 
 ```yaml
 Type: System.String
@@ -435,7 +438,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestTracingEnabled
-Penelusuran Permintaan Diaktifkan
+Pelacakan Permintaan Diaktifkan
 
 ```yaml
 Type: System.Boolean
@@ -571,7 +574,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -585,8 +588,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
-## CATATAN
-Cmdlet yang disediakan di bawah ini akan membantu Anda memperbarui Azure Web App ke **DOTNETCORE** $PropertiesObject = @{ "CURRENT_STACK" = "dotnetcore" } New-AzResource -PropertyObject $PropertiesObject -ResourceGroupName "Default-Web-WestUS" -ResourceType Microsoft.Web/sites/config -ResourceName "ContosoWebApp/metadata" -ApiVersion 2018-02-01 -Force Replace the values of `Default-Web-WestUS` with your resource group name of the webapp and `ContosoWebApp` with the webapp name.
+## NOTES
+Cmdlet yang disediakan di bawah ini akan membantu Anda memperbarui Azure Web App ke **DOTNETCORE** $PropertiesObject = @{ "CURRENT_STACK" = "dotnetcore" } New-AzResource -PropertyObject $PropertiesObject -ResourceGroupName "Default-Web-WestUS" -- ResourceType Microsoft.Web/sites/config -ResourceName "ContosoWebApp/metadata" -ApiVersion 2018-02-01 -Force Ganti nilai `Default-Web-WestUS` dengan nama grup sumber daya Anda dari webapp dan `ContosoWebApp` dengan nama webapp.
 
 ## RELATED LINKS
 
@@ -596,7 +599,7 @@ Cmdlet yang disediakan di bawah ini akan membantu Anda memperbarui Azure Web App
 
 [Remove-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Hidupkan ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

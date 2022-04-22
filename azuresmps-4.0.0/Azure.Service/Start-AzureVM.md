@@ -7,8 +7,8 @@ ms.openlocfilehash: 24a035fe270b5a24a28217eefb3ac8f2173ac05e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141965793"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142915553"
 ---
 # Start-AzureVM
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

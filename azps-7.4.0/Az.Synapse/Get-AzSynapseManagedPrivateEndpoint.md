@@ -9,8 +9,8 @@ ms.openlocfilehash: 87632330ae0fdac9e2244127115d412be1f62993
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931879"
 ---
 # Get-AzSynapseManagedPrivateEndpoint
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSManagedPrivateEndpointResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

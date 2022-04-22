@@ -10,8 +10,8 @@ ms.openlocfilehash: 1a9eb2ef731e7ce555fbac1a08cd8468de83ebc5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925047"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920064"
 ---
 # New-AzureRmRecoveryServicesBackupProtectionPolicy
 
@@ -226,7 +226,7 @@ Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

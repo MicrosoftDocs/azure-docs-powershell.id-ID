@@ -8,8 +8,8 @@ ms.openlocfilehash: 7ea3847c011582d9be809f030a638b09b6cf9532
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285312"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925626"
 ---
 # New-AzureRmStorageAccountKey
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management. Storage. Models.StorageAccountKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
