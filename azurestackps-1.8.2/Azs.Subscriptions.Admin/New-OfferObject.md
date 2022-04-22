@@ -7,8 +7,8 @@ ms.openlocfilehash: 5526ccd8fe050f9aa81974c8ea4ae1872125c087
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141878360"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142977495"
 ---
 # New-OfferObject
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

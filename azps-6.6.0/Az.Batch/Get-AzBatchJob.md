@@ -10,8 +10,8 @@ ms.openlocfilehash: 07d7cd37f7f977c2a68766121d1f8927cb5624ef
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142325753"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142969895"
 ---
 # Get-AzBatchJob
 
@@ -295,7 +295,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCloudJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

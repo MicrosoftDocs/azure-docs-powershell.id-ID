@@ -10,8 +10,8 @@ ms.openlocfilehash: a125e3e4580567c403d9541429929f4ba1e638da
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096112"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983809"
 ---
 # Get-AzureRmSqlServer
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d84a609a896d2eb113027a888fada575f6dbd1a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141890594"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142947251"
 ---
 # New-AzVpnServerConfiguration
 
@@ -411,6 +411,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

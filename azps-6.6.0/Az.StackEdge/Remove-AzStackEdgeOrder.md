@@ -9,8 +9,8 @@ ms.openlocfilehash: 01e05bc0e50b8290b59adab1a9997ce000166463
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142119275"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142961021"
 ---
 # Remove-AzStackEdgeOrder
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeOrder
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

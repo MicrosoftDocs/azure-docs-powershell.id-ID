@@ -9,8 +9,8 @@ ms.openlocfilehash: c938dd611d9f6d731c07d5aee76cb390838f4679
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141881453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142984277"
 ---
 # Set-AzureRmSearchService
 
@@ -213,7 +213,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

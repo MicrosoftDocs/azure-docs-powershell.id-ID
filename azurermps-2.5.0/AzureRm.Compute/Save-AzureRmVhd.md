@@ -8,8 +8,8 @@ ms.openlocfilehash: 86a4cdb4fc0d6709d6cb9311d243f12dcb65e5de
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141782437"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928611"
 ---
 # Save-AzureRmVhd
 
@@ -210,7 +210,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.VhdDownloadContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

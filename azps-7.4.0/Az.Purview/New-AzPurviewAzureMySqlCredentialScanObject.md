@@ -9,8 +9,8 @@ ms.openlocfilehash: af154452e5263489b2a1201893e17cc2c5bd0628
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166669"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142936667"
 ---
 # New-AzPurviewAzureMySqlCredentialScanObject
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureMySqlCredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

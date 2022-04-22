@@ -9,8 +9,8 @@ ms.openlocfilehash: 4c58452cf4b2fb2d7dce27a4c46f5d3aa5ce55cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142341359"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143009387"
 ---
 # Get-AzAllowedConnection
 
@@ -156,6 +156,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Security.Models.AllowedConnection.PSSecurityAllowedConnection
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

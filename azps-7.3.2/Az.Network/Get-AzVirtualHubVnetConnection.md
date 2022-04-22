@@ -9,13 +9,13 @@ ms.openlocfilehash: d0479bcbd007905eaa49726b09cd26355511321a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142494601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142948745"
 ---
 # Get-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
-Mendapatkan koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+Mendapatkan Koneksi Jaringan Virtual di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualhubvnetconnection) untuk informasi terbaru.
@@ -41,7 +41,7 @@ Get-AzVirtualHubVnetConnection -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan koneksi Virtual Network di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
+Mendapatkan Koneksi Jaringan Virtual di hub virtual atau mencantumkan semua koneksi jaringan virtual di hub virtual.
 
 ## EXAMPLES
 
@@ -80,7 +80,7 @@ RoutingConfiguration : {
                         }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya yang akan mengintip Jaringan Virtual ke Hub Virtual.
 
 Setelah koneksi jaringan virtual hub dibuat, ia mendapatkan koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
 
@@ -118,7 +118,7 @@ RoutingConfiguration : {
                         }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya yang akan mengintip Jaringan Virtual ke Hub Virtual.
 
 Setelah koneksi jaringan virtual hub dibuat, hub ini mencantumkan semua koneksi jaringan virtual hub menggunakan nama grup sumber daya dan nama hub.
 
@@ -277,7 +277,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 42536092e072783230acb4d43b6f0ff2396a550f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142334451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979118"
 ---
 # Stop-AzureStorSimpleJob
 
@@ -105,7 +105,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### DeviceJobDetails
 Cmdlet ini mendapatkan detail **DeviceJob** yang cmdlet ini berhenti.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 806ed76a61006463e6d93648786ca1400f2bf38d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142070401"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142954389"
 ---
 # Get-AzElasticDeploymentInfo
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IDeploymentInfoResponse
 
-## CATATAN
+## NOTES
 
 ALIAS
 

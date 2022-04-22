@@ -9,8 +9,8 @@ ms.openlocfilehash: 9a92501e1402ef25f3c038380f6b900dcc763585
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304953"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142965935"
 ---
 # Stop-AzHpcCache
 
@@ -197,6 +197,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

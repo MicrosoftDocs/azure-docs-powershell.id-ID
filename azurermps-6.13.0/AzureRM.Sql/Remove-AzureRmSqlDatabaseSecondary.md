@@ -10,8 +10,8 @@ ms.openlocfilehash: f1bc8fcc019f25b4337dc88ac55965b8d988e753
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983370"
 ---
 # Remove-AzureRmSqlDatabaseSecondary
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

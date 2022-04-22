@@ -10,8 +10,8 @@ ms.openlocfilehash: a01c49ac6591cfec7d8087d664ba61ddd825ac5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141810104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142972253"
 ---
 # New-AzWebAppBackup
 
@@ -178,7 +178,7 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.WebApps.AzureWebAppBackup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

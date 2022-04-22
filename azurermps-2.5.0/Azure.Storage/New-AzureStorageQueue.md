@@ -8,8 +8,8 @@ ms.openlocfilehash: a028d2528d74e9372bfca28ccfb085f119486ce7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141930537"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142929705"
 ---
 # New-AzureStorageQueue
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageQueue
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

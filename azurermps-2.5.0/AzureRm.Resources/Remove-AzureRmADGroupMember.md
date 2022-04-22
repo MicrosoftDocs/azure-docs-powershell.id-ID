@@ -7,8 +7,8 @@ ms.openlocfilehash: 3b1af5134147ad099547d95fdf5dbf79850e464a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285215"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989721"
 ---
 # Remove-AzureRmADGroupMember
 
@@ -232,6 +232,6 @@ Parameter: GroupObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

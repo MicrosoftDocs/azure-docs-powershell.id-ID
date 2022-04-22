@@ -9,8 +9,8 @@ ms.openlocfilehash: dbe93ca98fe8cf7a0a22f2b52a17a17e7222c261
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925435"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985368"
 ---
 # Get-AzureRmContext
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

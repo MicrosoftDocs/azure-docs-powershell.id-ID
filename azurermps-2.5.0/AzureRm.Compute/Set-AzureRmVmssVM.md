@@ -8,8 +8,8 @@ ms.openlocfilehash: ffce87e30fb5bffa78cb10a85b1ac8a143deeaad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147395"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142928252"
 ---
 # Set-AzureRmVmssVM
 
@@ -186,7 +186,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
