@@ -9,8 +9,8 @@ ms.openlocfilehash: a144b33abc63386c5ce06f4e94f4b02b22b61a79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063009"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142856944"
 ---
 # Get-AzureRmNetworkWatcherFlowLogStatus
 
@@ -212,7 +212,7 @@ Parameter: NetworkWatcherName (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
 
 ## RELATED LINKS

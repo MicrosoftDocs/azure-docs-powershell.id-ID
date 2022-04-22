@@ -9,8 +9,8 @@ ms.openlocfilehash: 9d061d02b2af0d71549253c4ad00d39de5edc3e7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835808"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142872766"
 ---
 # Restart-AzMySqlServer
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

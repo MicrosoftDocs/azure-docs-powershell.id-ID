@@ -9,8 +9,8 @@ ms.openlocfilehash: eecf7e5235808c399649dcddd7671295daa8a7e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142258009"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890262"
 ---
 # New-AzEdgeOrderFilterablePropertyObject
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.FilterableProperty
 
-## CATATAN
+## NOTES
 
 ALIAS
 

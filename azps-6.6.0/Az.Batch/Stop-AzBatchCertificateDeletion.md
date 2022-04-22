@@ -10,8 +10,8 @@ ms.openlocfilehash: fe16f9fe07c0ab7aec8d4db7b723e18d4093bfbb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142325483"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142844344"
 ---
 # Stop-AzBatchCertificateDeletion
 
@@ -119,7 +119,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

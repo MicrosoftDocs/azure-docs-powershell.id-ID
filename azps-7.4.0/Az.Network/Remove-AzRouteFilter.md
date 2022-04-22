@@ -9,8 +9,8 @@ ms.openlocfilehash: c7e208c56a247130ff45a665270094000b4c2ef3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870858"
 ---
 # Remove-AzRouteFilter
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

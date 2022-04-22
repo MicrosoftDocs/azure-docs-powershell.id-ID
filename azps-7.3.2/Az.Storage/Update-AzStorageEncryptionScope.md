@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c416e024313e15cd03c3720bd7fd792ac7310e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142397645"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142882252"
 ---
 # Update-AzStorageEncryptionScope
 
@@ -315,6 +315,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSEncryptionScope
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

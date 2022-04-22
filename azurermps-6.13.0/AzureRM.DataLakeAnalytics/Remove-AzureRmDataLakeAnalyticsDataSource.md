@@ -10,8 +10,8 @@ ms.openlocfilehash: 43f9c55e6da93392e95191d1b601f771221e1caa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142099048"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142859475"
 ---
 # Remove-AzureRmDataLakeAnalyticsDataSource
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

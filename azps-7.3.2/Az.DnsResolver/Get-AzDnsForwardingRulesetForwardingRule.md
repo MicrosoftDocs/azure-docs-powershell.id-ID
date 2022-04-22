@@ -9,8 +9,8 @@ ms.openlocfilehash: e68a64e954457cec9db8ccc7db71416fa0201bc3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142215919"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890431"
 ---
 # Get-AzDnsForwardingRulesetForwardingRule
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.IForwardingRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

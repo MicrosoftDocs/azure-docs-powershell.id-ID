@@ -10,8 +10,8 @@ ms.openlocfilehash: 7e24fac68efa4392944179d4a0618c0ad487c03f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097768"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858970"
 ---
 # Remove-AzureRmHDInsightPersistedScriptAction
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

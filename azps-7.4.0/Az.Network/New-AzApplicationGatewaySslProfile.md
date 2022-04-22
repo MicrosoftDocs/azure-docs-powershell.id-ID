@@ -9,8 +9,8 @@ ms.openlocfilehash: e5f5ef4367ba7e0d04485da12059a562db9e8011
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431424"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142871740"
 ---
 # New-AzApplicationGatewaySslProfile
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

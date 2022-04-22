@@ -10,8 +10,8 @@ ms.openlocfilehash: 36ee3606f7377ab4c93c87f57137f7ac444887a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992867"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142878616"
 ---
 # Remove-AzBatchApplication
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

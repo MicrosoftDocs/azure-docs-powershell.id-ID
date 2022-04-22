@@ -10,8 +10,8 @@ ms.openlocfilehash: 129177c93d48b55cf8dfe5675d7ffc30ec7f46ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357186"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142859077"
 ---
 # Remove-AzureRmDnsRecordSet
 
@@ -286,7 +286,7 @@ Parameter: RecordSet (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.

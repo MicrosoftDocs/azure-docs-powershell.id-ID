@@ -9,8 +9,8 @@ ms.openlocfilehash: 67862f9a4e80c0a3f74236c2a87e9a6f30407f1e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142220725"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142895266"
 ---
 # Start-AzStreamAnalyticsJob
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

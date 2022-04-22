@@ -9,8 +9,8 @@ ms.openlocfilehash: 7c46d3120ec99fb93c69d5201a807d00dd4b7cac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141863294"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142900973"
 ---
 # Get-AzVirtualWan
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualWan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

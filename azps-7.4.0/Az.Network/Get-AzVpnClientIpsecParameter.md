@@ -9,8 +9,8 @@ ms.openlocfilehash: 0e25f30f113cfd2bc11ead7d1a01d4531f62ffeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176727"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142871794"
 ---
 # Get-AzVpnClientIpsecParameter
 
@@ -95,7 +95,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnClientIPsecParameters
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

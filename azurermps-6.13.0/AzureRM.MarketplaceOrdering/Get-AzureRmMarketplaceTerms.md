@@ -9,8 +9,8 @@ ms.openlocfilehash: f23912ed21105015e69b94b27c5c5cc7899ed044
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142139714"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142857577"
 ---
 # Get-AzureRmMarketplaceTerms
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher string pengidentifikasi gambar yang sedang digunakan.
+String gambar pengidentifikasi publisher sedang digunakan.
 
 ```yaml
 Type: System.String
@@ -117,6 +117,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
