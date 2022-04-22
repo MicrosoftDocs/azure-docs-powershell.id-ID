@@ -10,8 +10,8 @@ ms.openlocfilehash: 2fb459de89eafa6bd0b9bf99707b94aa82efed1e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421696"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870174"
 ---
 # Get-AzOperationalInsightsStorageInsight
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSStorageInsight
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

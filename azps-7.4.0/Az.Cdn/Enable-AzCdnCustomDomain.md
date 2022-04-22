@@ -9,8 +9,8 @@ ms.openlocfilehash: 4bbbcdcf0ac76cc54250f7164afc41004780f8af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841107"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811044"
 ---
 # Enable-AzCdnCustomDomain
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

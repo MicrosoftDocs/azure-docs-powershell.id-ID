@@ -8,8 +8,8 @@ ms.openlocfilehash: 77e4de344e3dd89eac09b1ebefb6ba49071dcbf2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142861905"
 ---
 # Get-AzureRmVMSize
 
@@ -153,7 +153,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineSize
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

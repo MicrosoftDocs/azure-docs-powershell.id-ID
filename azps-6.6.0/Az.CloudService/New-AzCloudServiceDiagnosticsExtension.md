@@ -9,8 +9,8 @@ ms.openlocfilehash: fac28d32dea6c08d95e0ec11cf4eff7357cb5681
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142273345"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843768"
 ---
 # New-AzCloudServiceDiagnosticsExtension
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.Extension
 
-## CATATAN
+## NOTES
 
 ALIAS
 

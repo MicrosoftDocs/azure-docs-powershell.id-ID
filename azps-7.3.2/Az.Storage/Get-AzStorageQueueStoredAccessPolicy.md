@@ -10,8 +10,8 @@ ms.openlocfilehash: 473635726306820ea3f5d1b4efe54a22281849a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142338659"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142882702"
 ---
 # Get-AzStorageQueueStoredAccessPolicy
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Storage. Queue.SharedAccessQueuePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1589fa1956ba79d28ec5b9dd3beb9cac302d808c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142090509"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142844236"
 ---
 # Get-AzBlockchainConsortium
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IConsortium
 
-## CATATAN
+## NOTES
 
 ALIAS
 

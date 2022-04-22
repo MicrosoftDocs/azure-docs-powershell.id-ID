@@ -10,8 +10,8 @@ ms.openlocfilehash: 08e1ea53e21eb036542bc9360c324522cbf12f01
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999426"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877104"
 ---
 # Remove-AzVMNetworkInterface
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

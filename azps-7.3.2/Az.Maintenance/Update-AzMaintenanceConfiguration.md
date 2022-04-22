@@ -9,8 +9,8 @@ ms.openlocfilehash: f10bcaf33fddd641a96c965a11ee442278b33726
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142488851"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822996"
 ---
 # Update-AzMaintenanceConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "142488851"
 Rekaman konfigurasi patch
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/update-azmaintenanceconfiguration) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/update-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Update-AzMaintenanceConfiguration [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Patch catatan konfigurasi pemeliharaan
+Catatan konfigurasi pemeliharaan patch
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ Name                : workervmscentralus
 Type                : Microsoft.Maintenance/maintenanceConfigurations
 ```
 
-Patch catatan konfigurasi pemeliharaan
+Catatan konfigurasi pemeliharaan patch
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,7 +66,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Configuration
+### -Konfigurasi
 Konfigurasi pemeliharaan yang akan diperbarui.
 
 ```yaml
@@ -96,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi pemeliharaan.
 
 ```yaml
@@ -126,8 +126,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Maintenance.Models.PSMaintenanceConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

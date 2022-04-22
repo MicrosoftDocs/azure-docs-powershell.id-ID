@@ -9,8 +9,8 @@ ms.openlocfilehash: 349a5a06760898d25de6050f91c8aa8d2408047c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175944"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870480"
 ---
 # Stop-AzVirtualNetworkGatewayPacketCapture
 
@@ -253,7 +253,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayPacketCaptureResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Start-AzVirtualnetworkGatewayPacketCapture](./Stop-AzVirtualnetworkGatewayPacketCapture.md)

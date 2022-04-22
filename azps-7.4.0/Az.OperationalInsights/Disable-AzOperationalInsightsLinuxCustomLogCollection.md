@@ -10,8 +10,8 @@ ms.openlocfilehash: 1d0282c1ad3e5dd0208d461d9337e3cb2f10c01c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424406"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870217"
 ---
 # Disable-AzOperationalInsightsLinuxCustomLogCollection
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS

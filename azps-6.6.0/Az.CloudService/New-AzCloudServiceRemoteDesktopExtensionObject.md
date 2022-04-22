@@ -9,8 +9,8 @@ ms.openlocfilehash: e5304dbebb405f5bf26c0de6e94558d01fa5b5a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142273362"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843696"
 ---
 # New-AzCloudServiceRemoteDesktopExtensionObject
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.Extension
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: b48161d488af7a56efc8fb1e3f7d9612483ac8c7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141940713"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142827856"
 ---
 # New-AzDataFactoryEncryptValue
 
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

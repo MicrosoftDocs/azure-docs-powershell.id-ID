@@ -9,16 +9,16 @@ ms.openlocfilehash: 3dcc4f92d7023d2220c6ad752872711c111ae300
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142214731"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142822942"
 ---
 # New-AzManagementPartner
 
 ## SYNOPSIS
-Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Mengaitkan ID Microsoft Partner Network (MPN) ke pengguna atau perwakilan layanan yang diautentikasi saat ini.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managementpartner/new-azmanagementpartner) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managementpartner/new-azmanagementpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzManagementPartner [-PartnerId] <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Mengaitkan ID Microsoft Partner Network (MPN) ke pengguna atau perwakilan layanan yang diautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerId
-Id mitra manajemen, itu adalah angka 6 digit
+Id mitra manajemen, ini adalah angka 6 digit
 
 ```yaml
 Type: System.String
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -108,17 +108,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.ManagementPartner.PSManagementPartner
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

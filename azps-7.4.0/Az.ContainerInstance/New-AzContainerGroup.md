@@ -9,8 +9,8 @@ ms.openlocfilehash: 41cf6fa79356795cb84650a8c5d1872f6c657de0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173347"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142876348"
 ---
 # New-AzContainerGroup
 
@@ -709,7 +709,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IContainerGroup
 
-## CATATAN
+## NOTES
 
 ALIAS
 

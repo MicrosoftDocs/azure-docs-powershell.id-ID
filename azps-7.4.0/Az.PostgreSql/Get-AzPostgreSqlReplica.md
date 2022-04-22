@@ -9,8 +9,8 @@ ms.openlocfilehash: fd8acdac7637e726a1c76d4b7923ace2befadfd8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424189"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142869760"
 ---
 # Get-AzPostgreSqlReplica
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 

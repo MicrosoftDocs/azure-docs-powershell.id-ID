@@ -9,8 +9,8 @@ ms.openlocfilehash: 770318dd01cce4e4fab8f0190c8754ace0a1b72f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430964"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870372"
 ---
 # Update-AzVirtualNetworkGatewayNatRule
 
@@ -299,7 +299,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayNatRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: e6b56ded8e3fd5b584ebf92c676e5a0d8bb19bae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142273183"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843624"
 ---
 # Get-AzCognitiveServicesAccountNetworkRuleSet
 
@@ -97,6 +97,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSNetworkRuleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

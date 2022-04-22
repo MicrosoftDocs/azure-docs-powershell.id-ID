@@ -9,8 +9,8 @@ ms.openlocfilehash: 941bacf3ec4580787438d732efa92caf8b99a599
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179897"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142876798"
 ---
 # New-AzConnectedNetworkFunctionRoleConfigurationObject
 
@@ -421,7 +421,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.NetworkFunctionRoleConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

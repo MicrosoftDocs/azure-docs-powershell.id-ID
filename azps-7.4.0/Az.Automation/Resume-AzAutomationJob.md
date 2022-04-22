@@ -10,8 +10,8 @@ ms.openlocfilehash: 017d83155058a449b2251bc6b7fba3bcc0bd5c37
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811890"
 ---
 # Resume-AzAutomationJob
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

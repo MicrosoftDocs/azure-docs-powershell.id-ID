@@ -9,8 +9,8 @@ ms.openlocfilehash: af02be31e8098d4001dec324853192cefa03df1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426204"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877014"
 ---
 # Repair-AzVmssServiceFabricUpdateDomain
 
@@ -248,6 +248,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRecoveryWalkResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

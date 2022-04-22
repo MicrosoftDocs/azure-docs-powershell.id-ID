@@ -9,8 +9,8 @@ ms.openlocfilehash: 1252c711fd0d18acefaf01dc0b7f33ac40a5ac77
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175824"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142870120"
 ---
 # Get-AzOperationalInsightsTable
 
@@ -116,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

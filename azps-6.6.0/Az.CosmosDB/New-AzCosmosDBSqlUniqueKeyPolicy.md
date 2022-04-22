@@ -9,8 +9,8 @@ ms.openlocfilehash: bd0658f05dfcef9bdd98a0a6604bdb9e88e5ecb1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141959649"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142842652"
 ---
 # New-AzCosmosDBSqlUniqueKeyPolicy
 
@@ -84,6 +84,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlUniqueKeyPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 6a1582a2461b82fec6b0818ad100215840ba507e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142256947"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823248"
 ---
 # New-AzHealthcareApisService
 
@@ -471,6 +471,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HealthcareApis.Models.PSHealthcareApisService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

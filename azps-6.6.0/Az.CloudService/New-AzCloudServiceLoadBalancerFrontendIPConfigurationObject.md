@@ -9,8 +9,8 @@ ms.openlocfilehash: 461ce43fb82dc37040e16bdb6bc5af174f904aa8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871832"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142843732"
 ---
 # New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.LoadBalancerFrontendIPConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

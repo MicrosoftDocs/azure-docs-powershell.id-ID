@@ -9,8 +9,8 @@ ms.openlocfilehash: 93687660149a2cdbe672d825ac3e9bc87c191063
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424169"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142869742"
 ---
 # Get-AzPostgreSqlServer
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 
