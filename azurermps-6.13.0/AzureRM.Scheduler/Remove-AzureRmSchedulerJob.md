@@ -10,8 +10,8 @@ ms.openlocfilehash: 6a15f51290efec856494737881693c3d1fae0620
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141817023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045783"
 ---
 # Remove-AzureRmSchedulerJob
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

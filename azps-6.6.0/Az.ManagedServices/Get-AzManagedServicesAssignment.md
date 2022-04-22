@@ -9,8 +9,8 @@ ms.openlocfilehash: 58e06bc287f9e0ee35302124d78241331d3bccbe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142229869"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028485"
 ---
 # Get-AzManagedServicesAssignment
 
@@ -183,6 +183,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.PSRegistrationAssignment
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

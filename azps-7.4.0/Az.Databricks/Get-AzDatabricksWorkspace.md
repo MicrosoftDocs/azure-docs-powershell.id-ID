@@ -9,8 +9,8 @@ ms.openlocfilehash: 0506a88013d30cf16ecefac175eecdcc243c745b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143062703"
 ---
 # Get-AzDatabricksWorkspace
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.Api20210401Preview.IWorkspace
 
-## CATATAN
+## NOTES
 
 ALIAS
 

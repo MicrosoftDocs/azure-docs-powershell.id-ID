@@ -9,8 +9,8 @@ ms.openlocfilehash: f51ba85215d252959b974a39ea864b1c98fce460
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823145"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048815"
 ---
 # Test-AzureRmIotHubRoute
 
@@ -287,6 +287,6 @@ System.String
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSTestRouteResult
 Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteCompilationError System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 2392743b69da377649dfa08b530a885345c7620f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143015399"
 ---
 # Add-AzApplicationGatewayTrustedRootCertificate
 
@@ -41,9 +41,9 @@ PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
-Perintah kedua menambahkan sertifikat akar tepercaya baru ke Gateway Aplikasi mengambil jalur sertifikat akar sebagai input.
+Perintah kedua menambahkan sertifikat akar tepercaya baru untuk Application Gateway mengambil jalur sertifikat akar sebagai input.
 Perintah ketiga membuat pengaturan backend http baru menggunakan sertifikat akar tepercaya untuk memvalidasi sertifikat server backend terhadap.
-Perintah keempat memperbarui Gateway Aplikasi.
+Perintah keempat memperbarui Application Gateway.
 
 ## PARAMETERS
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

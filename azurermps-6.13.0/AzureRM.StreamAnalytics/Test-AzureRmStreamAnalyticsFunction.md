@@ -10,13 +10,13 @@ ms.openlocfilehash: c62d829da193ae36f10a64149260cf34c6bc20ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280275"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044879"
 ---
 # Test-AzureRmStreamAnalyticsFunction
 
 ## SYNOPSIS
-Menguji apakah Stream Analytics dapat tersambung ke fungsi.
+Menguji apakah Azure Stream Analytics dapat tersambung ke fungsi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,7 +32,7 @@ Cmdlet **Test-AzureRmStreamAnalyticsFunction** menguji apakah Azure Stream Analy
 
 ## EXAMPLES
 
-### Contoh 1: Menguji fungsi Stream Analytics
+### Contoh 1: Menguji fungsi Azure Stream Analytics
 ```
 PS C:\>Test-AzureRmStreamAnalyticsFunction -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -Name "ScoreTweet"
 ```
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Menentukan nama pekerjaan Stream Analytics tempat fungsi berada.
+Menentukan nama pekerjaan Azure Stream Analytics tempat fungsi berada.
 
 ```yaml
 Type: System.String
@@ -71,8 +71,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama fungsi Stream Analytics yang diuji cmdlet ini.
+### -Name
+Menentukan nama fungsi Azure Stream Analytics yang diuji cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat fungsi Stream Analytics berada.
+Menentukan nama grup sumber daya tempat fungsi Azure Stream Analytics berada.
 Cmdlet ini menguji fungsi dalam grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,14 +113,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Get-AzureRmStreamAnalyticsFungsi](./Get-AzureRmStreamAnalyticsFunction.md)
+[Get-AzureRmStreamAnalyticsFunction](./Get-AzureRmStreamAnalyticsFunction.md)
 
-[New-AzureRmStreamAnalyticsFungsi](./New-AzureRmStreamAnalyticsFunction.md)
+[New-AzureRmStreamAnalyticsFunction](./New-AzureRmStreamAnalyticsFunction.md)
 
-[Remove-AzureRmStreamAnalyticsFungsi](./Remove-AzureRmStreamAnalyticsFunction.md)
+[Remove-AzureRmStreamAnalyticsFunction](./Remove-AzureRmStreamAnalyticsFunction.md)
 
 

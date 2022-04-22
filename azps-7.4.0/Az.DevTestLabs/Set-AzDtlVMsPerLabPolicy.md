@@ -10,8 +10,8 @@ ms.openlocfilehash: 0f2f8ab2d410b6024c185b1c32fee6ced446ca3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837824"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143061713"
 ---
 # Set-AzDtlVMsPerLabPolicy
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

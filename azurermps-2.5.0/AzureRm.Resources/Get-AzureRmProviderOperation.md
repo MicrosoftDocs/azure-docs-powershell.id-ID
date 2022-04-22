@@ -8,8 +8,8 @@ ms.openlocfilehash: 1274b04ed85917a9c1e185bfbef6307eaedecc05
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285368"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051333"
 ---
 # Get-AzureRmProviderOperation
 
@@ -91,7 +91,7 @@ Parameter: OperationSearchString (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.PSResourceProviderOperation
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

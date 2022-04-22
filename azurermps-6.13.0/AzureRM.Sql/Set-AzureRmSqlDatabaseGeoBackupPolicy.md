@@ -10,13 +10,13 @@ ms.openlocfilehash: c7aa097318f65cd2506ccfcd96e4d9eeeaf9d1bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967409"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045306"
 ---
 # Set-AzureRmSqlDatabaseGeoBackupPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan pencadangan geo database.
+Mengatur kebijakan pencadangan geografis database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmSqlDatabaseGeoBackupPolicy -State <GeoBackupPolicyState> [-ServerName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseGeoBackupPolicy** mengatur kebijakan cadangan geo yang didaftarkan ke database.
+Cmdlet **Set-AzureRmSqlDatabaseGeoBackupPolicy** menetapkan kebijakan pencadangan geografis yang terdaftar ke database.
 Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
@@ -37,7 +37,7 @@ Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan pe
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet ini mengatur kebijakan cadangan geografis.
+Menentukan nama database tempat cmdlet ini menetapkan kebijakan pencadangan geografis.
 
 ```yaml
 Type: System.String
@@ -96,11 +96,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status kebijakan pencadangan geografis.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diaktifkan 
-- Tamu penyandang cacat
+- Aktif 
+- Nonaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupPolicyModel+GeoBackupPolicyState
@@ -115,8 +115,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 636391b427702b1b66dff284f8a16264bf1b1f12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360409"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049543"
 ---
 # New-AzureRmApiManagementAuthorizationServer
 
@@ -374,6 +374,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOAuth2AuthrozationServer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 985ef58e6c34053054fab2a6b7c4773b9e324289
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428934"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143057861"
 ---
 # Disable-AzStorageBlobLastAccessTimeTracking
 
@@ -162,6 +162,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSRestorePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 2f03d0599a7bfaf2b083b4a6c335b1de98b3fa73
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142133405"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037755"
 ---
 # Get-AzsVirtualNetwork
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

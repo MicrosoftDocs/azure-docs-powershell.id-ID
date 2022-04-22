@@ -10,8 +10,8 @@ ms.openlocfilehash: c9032b70b6a7b1884ce5ff4128e7953bf7d68cf2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142144845"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143050309"
 ---
 # Get-AzureStorageContainerStoredAccessPolicy
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure. Storage. Blob.SharedAccessBlobPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

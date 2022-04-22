@@ -9,8 +9,8 @@ ms.openlocfilehash: 037f10b70bdd89f293df374e471a3b214d1aca9a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142048511"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028630"
 ---
 # New-AzLogzFilteringTagObject
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.FilteringTag
 
-## CATATAN
+## NOTES
 
 ALIAS
 

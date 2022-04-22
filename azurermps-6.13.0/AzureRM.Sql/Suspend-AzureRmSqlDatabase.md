@@ -10,13 +10,13 @@ ms.openlocfilehash: 5ceee1509ed5c47611f68645a6cf1665b9df8408
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247114"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045099"
 ---
 # Suspend-AzureRmSqlDatabase
 
 ## SYNOPSIS
-Menangguhkan database SQL Data Warehouse.
+Menangguhkan database Gudang Data SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -32,7 +32,7 @@ Suspend-AzureRmSqlDatabase [-ServerName] <String> -DatabaseName <String> [-AsJob
 
 ## EXAMPLES
 
-### Contoh 1: Menangguhkan database Azure SQL Data Warehouse
+### Contoh 1: Menangguhkan database Gudang Data Azure SQL
 ```
 PS C:\>Suspend-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
@@ -42,7 +42,7 @@ Perintah ini menangguhkan database Gudang Data Azure SQL aktif.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -116,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,8 +158,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
-## CATATAN
-* **Cmdlet Suspend-AzureRmSqlDatabase** hanya berfungsi pada database Data Warehouse Azure SQL. Operasi ini tidak didukung pada edisi Azure SQL Database Basic, Standard, dan Premium.
+## NOTES
+* **Cmdlet Suspend-AzureRmSqlDatabase** hanya berfungsi pada database Gudang Data Azure SQL. Operasi ini tidak didukung pada edisi Dasar, Standar, dan Premium Azure SQL Database.
 
 ## RELATED LINKS
 
@@ -167,7 +167,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabase](./New-AzureRmSqlDatabase.md)
 
-[Hapus-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
+[Remove-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
 
 [Resume-AzureRmSqlDatabase](./Resume-AzureRmSqlDatabase.md)
 

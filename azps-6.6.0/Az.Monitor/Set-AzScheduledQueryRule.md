@@ -9,8 +9,8 @@ ms.openlocfilehash: 74b6910497df98bb22de41c72c6954372231df03
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142302883"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143027621"
 ---
 # Set-AzScheduledQueryRule
 
@@ -388,6 +388,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSScheduledQueryRuleResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

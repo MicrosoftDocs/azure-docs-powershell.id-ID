@@ -8,8 +8,8 @@ ms.openlocfilehash: 160fb1b7455a2440773978ec80741922248a8af4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103585"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052047"
 ---
 # Reset-AzureRmVirtualNetworkGatewayConnectionSharedKey
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

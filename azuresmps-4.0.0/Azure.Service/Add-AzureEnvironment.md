@@ -7,8 +7,8 @@ ms.openlocfilehash: d38477f94c97f484aba85b041deba748f12405ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773240"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044523"
 ---
 # Add-AzureEnvironment
 
@@ -343,7 +343,7 @@ Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak m
 
 ### Microsoft.WindowsAzure.Commands.Utilities.Common.WindowsAzureEnvironment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

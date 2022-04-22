@@ -9,8 +9,8 @@ ms.openlocfilehash: 411238fe4f098c37a5f870a9c2e616832bd353e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142471193"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143076203"
 ---
 # New-AzEventHubEncryptionConfig
 
@@ -127,6 +127,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEncryptionConfigAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7224e83333b281fac849ee9e5d99a0691aba3ccc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775785"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046456"
 ---
 # Remove-AzureRmRedisCachePatchSchedule
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS

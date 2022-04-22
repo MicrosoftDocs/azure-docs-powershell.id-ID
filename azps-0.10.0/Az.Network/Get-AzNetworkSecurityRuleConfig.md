@@ -10,8 +10,8 @@ ms.openlocfilehash: 184e1291f134b52ee57a239327bb45da4a4481ff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235925"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143035523"
 ---
 # Get-AzNetworkSecurityRuleConfig
 
@@ -120,7 +120,7 @@ Parameter 'NetworkSecurityGroup' menerima nilai tipe 'PSNetworkSecurityGroup' da
 
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
