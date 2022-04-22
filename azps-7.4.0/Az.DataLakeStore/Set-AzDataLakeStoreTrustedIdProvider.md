@@ -10,8 +10,8 @@ ms.openlocfilehash: 92c6478058792f09116506992589cfb706411673
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143063603"
 ---
 # Set-AzDataLakeStoreTrustedIdProvider
 
@@ -154,6 +154,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreTrustedIdProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

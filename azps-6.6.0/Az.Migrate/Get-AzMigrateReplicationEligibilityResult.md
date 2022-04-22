@@ -9,8 +9,8 @@ ms.openlocfilehash: bb4e396eabd551da880e12187352dc81191b73fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142126565"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028143"
 ---
 # Get-AzMigrateReplicationEligibilityResult
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IReplicationEligibilityResults
 
-## CATATAN
+## NOTES
 
 ALIAS
 

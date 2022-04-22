@@ -8,8 +8,8 @@ ms.openlocfilehash: 6d243cccb5f5a64ef0275da1020222416c491ee3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142361124"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143050965"
 ---
 # Set-AzureRmResource
 
@@ -455,7 +455,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Models.PSResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

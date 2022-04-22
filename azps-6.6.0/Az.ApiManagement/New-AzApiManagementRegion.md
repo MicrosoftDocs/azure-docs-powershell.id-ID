@@ -10,16 +10,16 @@ ms.openlocfilehash: 15ad027bce85e30775dd8db15c88995cbea2cbbf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141961845"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143034119"
 ---
 # New-AzApiManagementRegion
 
 ## SYNOPSIS
-Membuat contoh PsApiManagementRegion.
+Membuat instans PsApiManagementRegion.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementregion) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementregion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzApiManagementRegion -Location <String> [-Capacity <Int32>]
 ```
 
 ## DESCRIPTION
-Perintah Helper untuk membuat contoh PsApiManagementRegion.
+Perintah pembantu untuk membuat instans PsApiManagementRegion.
 Perintah ini akan digunakan dengan perintah New-AzApiManagement.
 
 ## EXAMPLES
@@ -57,13 +57,13 @@ $virtualNetwork = New-AzApiManagementVirtualNetwork -Location "West US" -SubnetR
 New-AzApiManagement -ResourceGroupName ContosoGroup -Location "West US" -Name ContosoApi -Organization Contoso -AdminEmail admin@contoso.com -AdditionalRegions $additionalRegions -VirtualNetwork $virtualNetwork -VpnType "External" -Sku "Premium"
 ```
 
-Membuat layanan ApiManagement VpnType Eksternal di Kawasan AS Barat, dengan Kawasan Tambahan di AS Tengah.
+Membuat layanan ApiManagement VpnType Eksternal di Wilayah AS Barat, dengan Wilayah Tambahan di AS Tengah.
 
 ## PARAMETERS
 
 ### -Kapasitas
-Kapasitas Sku dari kawasan tambahan layanan azure API Management.
-Nilai defaultnya adalah 1.
+Kapasitas Sku dari wilayah tambahan layanan Azure API Management.
+Nilai default adalah 1.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisableGateway
-Bendera hanya dimaksudkan untuk digunakan untuk Premium penyebaran SKU ApiManagement Service dan Non Internal VNET. Ini berguna jika kami ingin mengeluarkan kawasan gateway dari rotasi. Ini juga dapat digunakan untuk berdiri di kawasan baru dalam mode Pasif, mengujinya lalu membuatnya Langsung nanti.
-Perilaku defaultnya adalah membuat kawasan langsung hidup.
+Bendera hanya dimaksudkan untuk digunakan untuk Premium SKU ApiManagement Service dan penyebaran VNET Non Internal. Ini berguna jika kita ingin mengeluarkan wilayah gateway dari rotasi. Ini juga dapat digunakan untuk berdiri di wilayah baru dalam mode Pasif, mengujinya dan kemudian membuatnya Langsung nanti.
+Perilaku default adalah membuat wilayah langsung.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi kawasan penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
+Menentukan lokasi wilayah penyebaran baru di antara wilayah yang didukung untuk layanan Api Management.
 Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -VirtualNetwork
 Virtual Network Konfigurasi wilayah penyebaran Azure API Management.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementVirtualNetwork
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan tempat layanan manajemen api disebarkan.
+Daftar zona ketersediaan yang menunjukkan tempat layanan manajemen api disebarkan.
 
 ```yaml
 Type: System.String[]
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -166,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

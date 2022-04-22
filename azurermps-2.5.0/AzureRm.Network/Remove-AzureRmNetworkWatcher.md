@@ -7,8 +7,8 @@ ms.openlocfilehash: 84b92468f4945cbe25404b81f4c6403254a23ad3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103678"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052127"
 ---
 # Remove-AzureRmNetworkWatcher
 
@@ -158,7 +158,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS

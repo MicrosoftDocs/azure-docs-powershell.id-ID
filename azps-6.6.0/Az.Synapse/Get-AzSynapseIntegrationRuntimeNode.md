@@ -9,8 +9,8 @@ ms.openlocfilehash: 77be2fb29f6832719308fb015c405f0aa130e235
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142118177"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143083043"
 ---
 # Get-AzSynapseIntegrationRuntimeNode
 
@@ -218,6 +218,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSelfHostedIntegrationRuntimeNode
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

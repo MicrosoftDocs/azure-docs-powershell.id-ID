@@ -7,8 +7,8 @@ ms.openlocfilehash: 6fd2adf393f0bc3f74c15ece1e89ec5bf78eff17
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311738"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143041355"
 ---
 # Stop-AzureEmulator
 
@@ -73,7 +73,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

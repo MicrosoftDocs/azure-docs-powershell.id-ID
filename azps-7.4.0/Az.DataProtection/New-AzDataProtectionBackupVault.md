@@ -9,8 +9,8 @@ ms.openlocfilehash: 10d211480fdb9ecc6926868f370d22b4e2d83838
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143063243"
 ---
 # New-AzDataProtectionBackupVault
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: c5d9d2131ff144f04794d2cf283aaf51ed1450e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927976"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051462"
 ---
 # Get-AzureRmLocation
 
@@ -92,6 +92,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

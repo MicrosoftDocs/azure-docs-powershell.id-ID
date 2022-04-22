@@ -10,8 +10,8 @@ ms.openlocfilehash: 3e71ade3a77fae3151591c6adee42c2b84105f16
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142344797"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143014049"
 ---
 # Remove-AzLoadBalancerInboundNatPoolConfig
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

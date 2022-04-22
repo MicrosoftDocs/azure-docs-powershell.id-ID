@@ -7,8 +7,8 @@ ms.openlocfilehash: 2ae2a1a141ac3bd7dd149b2496728f450920c25f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772610"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043902"
 ---
 # Get-AzureRole
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

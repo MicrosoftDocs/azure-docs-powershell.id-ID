@@ -8,8 +8,8 @@ ms.openlocfilehash: fd925829248c7f11f047de90ddc2bc0b57f51b71
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285397"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051929"
 ---
 # Set-AzureRmApplicationGatewayWebApplicationFirewallConfiguration
 
@@ -205,7 +205,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari p
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

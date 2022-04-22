@@ -7,8 +7,8 @@ ms.openlocfilehash: 2f51d8b3ff64a2fe64bcdd3961090ae80a0e07dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094204"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042597"
 ---
 # New-AzureStorSimpleStorageAccountCredential
 
@@ -262,7 +262,7 @@ Jika Anda tidak menentukan parameter tersebut, cmdlet mengembalikan objek **Task
 - **UseSSL** (**Boolean**)
 - **VolumeCount** (**int**)
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

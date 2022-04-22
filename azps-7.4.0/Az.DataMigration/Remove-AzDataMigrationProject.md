@@ -9,8 +9,8 @@ ms.openlocfilehash: c452b5892c243fb600607b478ca6c06e9f630780
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143063423"
 ---
 # Remove-AzDataMigrationProject
 
@@ -239,6 +239,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

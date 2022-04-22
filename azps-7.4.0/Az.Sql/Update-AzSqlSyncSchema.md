@@ -9,8 +9,8 @@ ms.openlocfilehash: 4c16d8a0dce0a47c74c218a474de5e7668d51823
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164964"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143058095"
 ---
 # Update-AzSqlSyncSchema
 
@@ -195,6 +195,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

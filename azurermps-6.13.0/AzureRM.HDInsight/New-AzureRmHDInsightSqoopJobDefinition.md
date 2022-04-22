@@ -10,8 +10,8 @@ ms.openlocfilehash: 709c87084cc871814e4760e0d2641c59b0e5a64e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142141267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049068"
 ---
 # New-AzureRmHDInsightSqoopJobDefinition
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightSqoopJobDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

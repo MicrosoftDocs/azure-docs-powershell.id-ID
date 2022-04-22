@@ -9,8 +9,8 @@ ms.openlocfilehash: 1d34fdf7cfbeffed2f977c31ae2435147c2ad47c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141961377"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143033489"
 ---
 # Test-AzBlockchainLocationNameAvailability
 
@@ -18,7 +18,7 @@ ms.locfileid: "141961377"
 Untuk memeriksa apakah nama sumber daya tersedia.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/test-azblockchainlocationnameavailability) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/test-azblockchainlocationnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Untuk memeriksa apakah nama sumber daya tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Memeriksa apakah nama sumber daya tersedia
+### Contoh 1: Periksa apakah nama sumber daya tersedia
 ```powershell
 PS C:\> Test-AzBlockchainLocationNameAvailability -Location eastus -Name erw123 -type Microsoft.Blockchain/blockchainMembers
 
@@ -43,7 +43,7 @@ Message NameAvailable Reason
 
 Perintah memeriksa apakah nama sumber daya tersedia.
 
-### Contoh 2: Memeriksa apakah nama sumber daya tersedia
+### Contoh 2: Periksa apakah nama sumber daya tersedia
 ```powershell
 PS C:\> Test-AzBlockchainLocationNameAvailability -Location eastus -Name 123 -Type Microsoft.Blockchain/blockchainMembers
 
@@ -86,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Mendapatkan atau mengatur nama untuk diperiksa.
 
 ```yaml
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -117,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Mendapatkan atau mengatur tipe sumber daya untuk diperiksa.
+### -Type
+Mendapatkan atau mengatur jenis sumber daya yang akan diperiksa.
 
 ```yaml
 Type: System.String
@@ -132,8 +132,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.INameAvailability
 
-## CATATAN
+## NOTES
 
 ALIAS
 

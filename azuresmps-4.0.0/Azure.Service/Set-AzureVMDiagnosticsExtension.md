@@ -7,8 +7,8 @@ ms.openlocfilehash: 31f0b527da0f026b40182900fa988aa7f7bd40ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143041565"
 ---
 # Set-AzureVMDiagnosticsExtension
 
@@ -262,7 +262,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

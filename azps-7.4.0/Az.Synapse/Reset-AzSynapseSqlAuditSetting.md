@@ -9,8 +9,8 @@ ms.openlocfilehash: dba267340da0a568fff26bc4018cd9b6e6c3a527
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143056763"
 ---
 # Reset-AzSynapseSqlAuditSetting
 
@@ -190,6 +190,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 182dc105a47febe1eb0ed52fd750f35781359729
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142479744"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143033921"
 ---
 # Set-AzAutomationVariable
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Variable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: ab8099e1707a41712e5d5f0546dad7337d2e3083
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772754"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044154"
 ---
 # Get-AzureOSDisk
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
