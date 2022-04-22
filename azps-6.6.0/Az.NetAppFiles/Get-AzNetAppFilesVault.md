@@ -9,16 +9,16 @@ ms.openlocfilehash: e7c5037d290dabf3690c67abb9f7ef9ee8a7dd5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142082479"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143027243"
 ---
 # Get-AzNetAppFilesVault
 
 ## SYNOPSIS
-Mendapatkan daftar kubah cadangan Akun Azure NetApp Files (ANF).
+Mendapatkan daftar vault cadangan Akun Azure NetApp Files (ANF).
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvault) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzNetAppFilesVault -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesVault** mendapatkan daftar kubah cadangan akun ANF.
+Cmdlet **Get-AzNetAppFilesVault** mendapatkan daftar vault cadangan akun ANF.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet **Get-AzNetAppFilesVault** mendapatkan daftar kubah cadangan akun ANF.
 PS C:\> Get-AzNetAppFilesVault -ResourceGroupName "MyRG" -AccountName "MyAnfAccount"
 ```
 
-Perintah ini mendapatkan daftar kubah cadangan untuk akun Azure NetappFiles (ANF) "MyAnfAccount".
+Perintah ini mendapatkan daftar vault cadangan untuk akun Azure NetappFiles (ANF) "MyAnfAccount".
 
 ## PARAMETERS
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -141,6 +141,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

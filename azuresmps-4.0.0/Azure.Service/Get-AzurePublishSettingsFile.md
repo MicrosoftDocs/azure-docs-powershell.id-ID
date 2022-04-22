@@ -7,8 +7,8 @@ ms.openlocfilehash: e84df3f81d0d27e40bd9d041fa0503ebbcb72fe3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142279123"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981631"
 ---
 # Get-AzurePublishSettingsFile
 
@@ -148,7 +148,7 @@ Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak m
 Saat Anda menggunakan parameter *PassThru* , cmdlet ini mengembalikan nilai Boolean.
 Jika tidak, cmdlet ini tidak mengembalikan output apa pun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

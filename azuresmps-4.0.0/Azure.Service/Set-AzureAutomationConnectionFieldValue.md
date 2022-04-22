@@ -7,8 +7,8 @@ ms.openlocfilehash: 94cc77b0f62ed084f3d65c0f14b8303d2533c637
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142277493"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979795"
 ---
 # Set-AzureAutomationConnectionFieldValue
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

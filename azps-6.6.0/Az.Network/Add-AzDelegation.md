@@ -9,8 +9,8 @@ ms.openlocfilehash: 888f620d24fb458e6808ed40a6ede1849a32704c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142269547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143026883"
 ---
 # Add-AzDelegation
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSSubnet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

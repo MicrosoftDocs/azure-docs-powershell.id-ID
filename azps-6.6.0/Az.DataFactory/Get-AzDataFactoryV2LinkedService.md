@@ -9,8 +9,8 @@ ms.openlocfilehash: 0dfcbcfb3862046dbf1174c009092d09ab1686e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142476971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030735"
 ---
 # Get-AzDataFactoryV2LinkedService
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

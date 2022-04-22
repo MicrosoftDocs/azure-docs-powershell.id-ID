@@ -9,8 +9,8 @@ ms.openlocfilehash: 721c871483ab3c7de20ddc578b4c81a169a4a1a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142082291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143026991"
 ---
 # Update-AzNetAppFilesPool
 
@@ -18,7 +18,7 @@ ms.locfileid: "142082291"
 Memperbarui kumpulan Azure NetApp Files (ANF) sesuai dengan pengubah opsional yang disediakan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilespool) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +50,11 @@ Update-AzNetAppFilesPool [-PoolSize <Int64>] [-QosType <String>] [-Tag <Hashtabl
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzNetAppFilesPool** memodifikasi kolam ANF.
+Cmdlet **Update-AzNetAppFilesPool** memodifikasi kumpulan ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi kumpulan ANF
+### Contoh 1: Mengubah kumpulan ANF
 ```
 PS C:\>Update-AzNetAppFilesPool -ResourceGroupName "MyRG" -l "westus2" -AccountName "MyAnfAccount" -PoolName "MyAnfPool" -PoolSize 4398046511104 -QosType "Auto"
 
@@ -72,7 +72,7 @@ QosType           : Auto
 ProvisioningState : Succeeded
 ```
 
-Perintah ini mengubah kumpulan ANF "MyAnfPool" agar memiliki ukuran dan QosType.
+Perintah ini mengubah kumpulan ANF "MyAnfPool" agar memiliki ukuran dan QosType yang diberikan.
 
 ## PARAMETERS
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek kumpulan untuk diperbarui
+Objek kumpulan yang akan diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -151,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan ANF
 
 ```yaml
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -QosType
-Jenis qos kolam renang. Nilai yang memungkinkan termasuk: 'Otomatis', 'Manual'
+Jenis qos dari kumpulan. Nilai yang mungkin termasuk: 'Otomatis', 'Manual'
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya
+Hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -241,8 +241,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -287,6 +287,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
