@@ -10,8 +10,8 @@ ms.openlocfilehash: 35287cf75c8fbcb726ace19abe6f7c6923b537df
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061726"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985419"
 ---
 # Remove-AzureRmPowerBIWorkspaceCollection
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang kerja Power BI yang dihapus cmdlet ini.
+Menentukan nama kumpulan Power BI ruang kerja yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

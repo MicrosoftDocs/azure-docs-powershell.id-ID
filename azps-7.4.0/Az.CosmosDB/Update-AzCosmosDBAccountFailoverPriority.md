@@ -9,8 +9,8 @@ ms.openlocfilehash: 27b2f083393c7cc6976811296e40c0abc2f7acbd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141839264"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143003987"
 ---
 # Update-AzCosmosDBAccountFailoverPriority
 
@@ -222,6 +222,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

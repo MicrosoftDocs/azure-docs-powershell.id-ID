@@ -9,8 +9,8 @@ ms.openlocfilehash: 7403c624a2f20cd6fff52b407d3f89623fc64a39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143003195"
 ---
 # Start-AzDataFactoryV2IntegrationRuntime
 
@@ -225,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

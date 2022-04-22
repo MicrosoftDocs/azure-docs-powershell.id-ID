@@ -9,8 +9,8 @@ ms.openlocfilehash: 746033cfdf48782d10c0fdabf7a018d309269afb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384095"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142984943"
 ---
 # Remove-AzureRmRelayHybridConnection
 
@@ -145,6 +145,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### System.Void
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

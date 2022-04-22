@@ -9,8 +9,8 @@ ms.openlocfilehash: 09b894b866924b24be3033d22ec81f2120b2a27d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142048997"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142965305"
 ---
 # New-AzKustoCluster
 
@@ -598,7 +598,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 

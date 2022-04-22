@@ -9,8 +9,8 @@ ms.openlocfilehash: b6883a0967f4b331a436c04ec5aebeb9cc9b5474
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141801878"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142965431"
 ---
 # Remove-AzKubernetesConfiguration
 
@@ -251,7 +251,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

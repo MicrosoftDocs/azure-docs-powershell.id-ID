@@ -9,8 +9,8 @@ ms.openlocfilehash: cf5be8eac6961c6228f85e90f9cc400b9766ad07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141839280"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143004059"
 ---
 # Remove-AzManagedCassandraCluster
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

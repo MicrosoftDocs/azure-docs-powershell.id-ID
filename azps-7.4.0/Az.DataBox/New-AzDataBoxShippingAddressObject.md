@@ -9,8 +9,8 @@ ms.openlocfilehash: 37bdab35ef1ad09fbe5942b416f6a8b2e553a811
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003047"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143003699"
 ---
 # New-AzDataBoxShippingAddressObject
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.ShippingAddress
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 75a609c8dc81965da96386647cb76af956713702
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141839232"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143003915"
 ---
 # Update-AzCosmosDBGremlinDatabase
 
@@ -227,6 +227,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ResourceNotFoundException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

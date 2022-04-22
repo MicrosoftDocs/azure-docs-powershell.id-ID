@@ -10,8 +10,8 @@ ms.openlocfilehash: 742f1341401a5dab75f9cbf2f15f3698009589a8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142137036"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985762"
 ---
 # Set-AzureRmVirtualNetworkPeering
 
@@ -143,7 +143,7 @@ Parameter: VirtualNetworkPeering (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

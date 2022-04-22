@@ -9,8 +9,8 @@ ms.openlocfilehash: b362471fb7e19c27f3086d9435874077a35e116f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998850"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143003933"
 ---
 # Update-AzCosmosDBCassandraTable
 
@@ -296,6 +296,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ResourceNotFoundException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
