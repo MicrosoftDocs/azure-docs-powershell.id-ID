@@ -9,8 +9,8 @@ ms.openlocfilehash: 0306d327bf7e93eedd040979912622b2dcbc09d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987031"
 ---
 # Add-AzureRmDelegation
 
@@ -117,7 +117,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.Network.Models.PSSubnet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md)

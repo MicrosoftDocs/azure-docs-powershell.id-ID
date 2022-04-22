@@ -7,8 +7,8 @@ ms.openlocfilehash: 51b1a4b01284cd4c55b0251bfe6bed0557ebb555
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142312226"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979912"
 ---
 # Restore-AzureWebsiteDeployment
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: e873fab814c4119d4f7b84d10294769dbddfd612
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142271527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030177"
 ---
 # Update-AzDataLakeAnalyticsComputePolicy
 
@@ -183,6 +183,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSDataLakeAnalyticsComputePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 4428b46bfe9188a4a953fd7b15139fe7d7c2c60b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433948"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143004455"
 ---
 # Remove-AzContainerRegistry
 
@@ -183,7 +183,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

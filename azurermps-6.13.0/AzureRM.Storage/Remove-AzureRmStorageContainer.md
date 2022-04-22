@@ -9,8 +9,8 @@ ms.openlocfilehash: 089451a0a0aae399a18296fbf4982724b35d432e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982855"
 ---
 # Remove-AzureRmStorageContainer
 
@@ -229,6 +229,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

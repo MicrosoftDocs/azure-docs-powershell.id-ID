@@ -9,8 +9,8 @@ ms.openlocfilehash: 8dbf4ebbdc1db4de4e554bdd8c390cc28caa11b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304395"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028971"
 ---
 # Get-AzKustoCluster
 
@@ -49,7 +49,7 @@ Mendapatkan kluster Kusto.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua kluster Kusto dalam grup sumber daya
+### Contoh 1: Mencantumkan semua klaster Kusto dalam grup sumber daya
 ```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg
 
@@ -59,9 +59,9 @@ East US  testnewkustocluster  Microsoft.Kusto/Clusters
 East US  testnewkustocluster2 Microsoft.Kusto/Clusters
 ```
 
-Perintah di atas mencantumkan semua kluster Kusto dalam grup sumber daya "testrg".
+Perintah di atas mencantumkan semua klaster Kusto dalam grup sumber daya "testrg".
 
-### Contoh 2: Dapatkan kluster Kusto tertentu menurut nama
+### Contoh 2: Dapatkan klaster Kusto tertentu menurut nama
 ```powershell
 PS C:\>  Get-AzKustoCluster -ResourceGroupName testrg -Name testnewkustocluster
 
@@ -70,7 +70,7 @@ Location Name                Type                     Zone
 East US  testnewkustocluster Microsoft.Kusto/Clusters
 ```
 
-Perintah di atas mengembalikan kluster Kusto bernama "testnewkustocluster" dalam grup sumber daya "testrg".
+Perintah di atas mengembalikan klaster Kusto bernama "testnewkustocluster" dalam grup sumber daya "testrg".
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -155,13 +155,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.IKustoIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.ICluster
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -172,14 +172,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama kluster Kusto.
+  - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
   - `[OperationId <String>]`: Guid of the operation ID
-  - `[PrincipalAssignmentName <String>]`: Nama kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 452e252b7bf9368ea89e81f2d37fd5a80ab079b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314265"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142982657"
 ---
 # Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint
 
@@ -140,7 +140,7 @@ Cmdlet ini menerima objek **TrafficManagerEndpoint** untuk cmdlet ini.
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
 Cmdlet ini mengembalikan objek TrafficManagerEndpoint yang dimodifikasi.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

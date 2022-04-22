@@ -9,8 +9,8 @@ ms.openlocfilehash: 0bbf4dd937b898f4d3c57b0b5e536eed7d941895
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142275433"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142971245"
 ---
 # New-AzApiManagementCache
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCache
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
