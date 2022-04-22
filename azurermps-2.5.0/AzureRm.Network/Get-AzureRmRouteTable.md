@@ -8,8 +8,8 @@ ms.openlocfilehash: 9498b93d2062bc84d6af423c89eb351c6680eddd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103881"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927271"
 ---
 # Get-AzureRmRouteTable
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

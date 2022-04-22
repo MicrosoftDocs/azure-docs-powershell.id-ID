@@ -8,8 +8,8 @@ ms.openlocfilehash: fbfa70146a5eb70d118e6cd1859f968c576d8a0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781562"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927531"
 ---
 # Get-AzureRmLoadBalancerInboundNatRuleConfig
 
@@ -99,7 +99,7 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSInboundNatRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

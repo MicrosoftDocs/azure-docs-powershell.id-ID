@@ -10,8 +10,8 @@ ms.openlocfilehash: 73e4fb2dde10739176a1adfe55c22529e8ccdaaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141820058"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142920820"
 ---
 # Remove-AzureRmVirtualNetworkPeering
 
@@ -190,6 +190,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

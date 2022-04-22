@@ -9,8 +9,8 @@ ms.openlocfilehash: c41d07fd7ead885ea7b1bbfe5b6ecfd3230011d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497203"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142973495"
 ---
 # Get-AzVirtualNetworkGatewayAdvertisedRoute
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSGatewayRoute[]
 
-## CATATAN
+## NOTES
 Perintah ini hanya berlaku untuk gateway jaringan virtual Azure dengan koneksi BGP yang diaktifkan.
 
 ## RELATED LINKS

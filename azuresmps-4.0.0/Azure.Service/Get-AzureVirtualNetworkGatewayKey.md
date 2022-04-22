@@ -7,8 +7,8 @@ ms.openlocfilehash: abb400a0f9195db5a996e6f42488e89236461ca8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245493"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981235"
 ---
 # Get-AzureVirtualNetworkGatewayKey
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

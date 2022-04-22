@@ -9,8 +9,8 @@ ms.openlocfilehash: 3d7920fd9656c487a053767ce5a4c0120d8a931c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993714"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934939"
 ---
 # Get-AzSecurityTask
 
@@ -177,6 +177,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Tasks.PSSecurityTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 4f87f6183481bf4f37869e4b370317b9e20a851e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174504"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934291"
 ---
 # Remove-AzServiceFabricNodeType
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

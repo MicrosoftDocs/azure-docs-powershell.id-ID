@@ -8,8 +8,8 @@ ms.openlocfilehash: f8463533f8a153b74df1863ba251950f16f9e19a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927757"
 ---
 # Set-AzureKeyVaultSecretAttribute
 
@@ -273,7 +273,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.KeyVault.Models.Secret
 Mengembalikan objek Microsoft.Azure.Commands.KeyVault.Models.Secret jika PassThru ditentukan. Jika tidak, tidak mengembalikan apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

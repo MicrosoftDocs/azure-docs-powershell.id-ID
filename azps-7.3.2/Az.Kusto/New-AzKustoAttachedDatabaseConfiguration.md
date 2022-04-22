@@ -9,8 +9,8 @@ ms.openlocfilehash: d4186ece7ba2aea2009fb738d123e5351ada542b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142068799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142952921"
 ---
 # New-AzKustoAttachedDatabaseConfiguration
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -347,9 +347,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IAttachedDatabaseConfiguration
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IAttachedDatabaseConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

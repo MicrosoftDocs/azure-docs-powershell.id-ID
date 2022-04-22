@@ -9,8 +9,8 @@ ms.openlocfilehash: e06a88087eeb6a7b6f05e0b8527938e9a95c172b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142941095"
 ---
 # Enable-AzFrontDoorCustomDomainHttps
 
@@ -404,6 +404,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSFrontendEndpoint
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

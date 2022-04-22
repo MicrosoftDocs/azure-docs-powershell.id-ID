@@ -7,8 +7,8 @@ ms.openlocfilehash: 24ffdb99efddf22a5e632ac576a4aa8e7db42af6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781474"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927429"
 ---
 # Get-AzureRmNetworkUsage
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

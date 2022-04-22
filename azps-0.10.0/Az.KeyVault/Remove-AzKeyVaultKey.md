@@ -10,8 +10,8 @@ ms.openlocfilehash: 15470f18e457f31deec66554c955890b52e26e83
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493484"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142974107"
 ---
 # Remove-AzKeyVaultKey
 
@@ -203,7 +203,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.KeyVault.Models.DeletedKeyBundle
 Cmdlet ini mengembalikan nilai hanya jika Anda menentukan parameter *PassThru* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

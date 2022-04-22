@@ -9,8 +9,8 @@ ms.openlocfilehash: 961c47a7d164e9118f454a80df8df6837830e6f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141860666"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142961453"
 ---
 # Get-AzRelayOperation
 
@@ -89,6 +89,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSOperationAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

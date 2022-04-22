@@ -9,8 +9,8 @@ ms.openlocfilehash: 4720c8116f72bdc7e7465bd0f979a59d009e17b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142292173"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142952327"
 ---
 # New-AzApplyUpdate
 
@@ -213,6 +213,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Maintenance.Models.PSApplyUpdate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

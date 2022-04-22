@@ -9,8 +9,8 @@ ms.openlocfilehash: aa2e68af86badab11bce4814fcb7e632a8a17c44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141913737"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142968095"
 ---
 # New-AzVmssGalleryApplication
 
@@ -99,6 +99,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.VMGalleryApplication
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

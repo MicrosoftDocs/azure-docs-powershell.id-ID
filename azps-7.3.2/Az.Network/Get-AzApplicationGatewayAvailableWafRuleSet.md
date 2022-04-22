@@ -9,8 +9,8 @@ ms.openlocfilehash: e4c55420287dec9f35ee22a5dbd378a3b3eb1cb1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141891206"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142949591"
 ---
 # Get-AzApplicationGatewayAvailableWafRuleSet
 
@@ -66,7 +66,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableWafRuleSetsResult
 
-## CATATAN
+## NOTES
 **List-AzApplicationGatewayAvailableWafRuleSets** adalah alias untuk cmdlet **Get-AzApplicationGatewayAvailableWafRuleSet** .
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 8cb0d13f0dd1baa65b350f86bd731eaec003c920
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141788954"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142956125"
 ---
 # Test-AzDataLakeAnalyticsAccount
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

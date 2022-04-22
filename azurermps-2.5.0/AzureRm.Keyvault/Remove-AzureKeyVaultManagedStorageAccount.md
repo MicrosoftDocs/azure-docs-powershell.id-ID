@@ -7,8 +7,8 @@ ms.openlocfilehash: 345d4ad784ad00480e15daf5580f23cbb0595e43
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393422"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142927775"
 ---
 # Remove-AzureKeyVaultManagedStorageAccount
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

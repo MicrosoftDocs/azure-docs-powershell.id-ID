@@ -9,8 +9,8 @@ ms.openlocfilehash: f75b8f75199be8b4d78dbcdaeb62ca2c8d4446b2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934921"
 ---
 # Set-AzDeviceSecurityGroup
 
@@ -332,6 +332,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.DeviceSecurityGroups.PSDeviceSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
