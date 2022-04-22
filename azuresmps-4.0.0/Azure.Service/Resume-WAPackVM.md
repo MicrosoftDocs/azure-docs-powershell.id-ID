@@ -7,8 +7,8 @@ ms.openlocfilehash: 2c807be0284fa6c7a8f54ecb2804b15c9d3321f9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142334799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979911"
 ---
 # Resume-WAPackVM
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

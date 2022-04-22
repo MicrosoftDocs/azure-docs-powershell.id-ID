@@ -9,8 +9,8 @@ ms.openlocfilehash: 088e8a38b30fe27f08281db83e44e100799ee966
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142480823"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142971677"
 ---
 # Remove-AzAksNodePool
 
@@ -272,6 +272,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

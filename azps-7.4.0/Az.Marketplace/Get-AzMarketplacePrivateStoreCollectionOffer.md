@@ -9,8 +9,8 @@ ms.openlocfilehash: 0df716818f213865e7b95d66e3f40fc6af000bd0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142998461"
 ---
 # Get-AzMarketplacePrivateStoreCollectionOffer
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.Api20210601.IOffer
 
-## CATATAN
+## NOTES
 
 ALIAS
 

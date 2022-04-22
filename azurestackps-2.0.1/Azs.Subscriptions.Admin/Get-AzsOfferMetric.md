@@ -7,8 +7,8 @@ ms.openlocfilehash: 515cf3d9c26c9ca4ed59178e49854e23edfea84c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141877136"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142975223"
 ---
 # Get-AzsOfferMetric
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ALIAS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

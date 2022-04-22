@@ -7,8 +7,8 @@ ms.openlocfilehash: 50da3cb95a411f306cd9b04f5cfff0fbab701b0c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978931"
 ---
 # New-AzureStorageTable
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

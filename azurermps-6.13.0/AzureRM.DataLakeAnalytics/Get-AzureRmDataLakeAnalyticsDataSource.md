@@ -10,8 +10,8 @@ ms.openlocfilehash: 2f6dfae3d13a6de57a7dc04367ec2886be78f5f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064984"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922239"
 ---
 # Get-AzureRmDataLakeAnalyticsDataSource
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.AdlDataSource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

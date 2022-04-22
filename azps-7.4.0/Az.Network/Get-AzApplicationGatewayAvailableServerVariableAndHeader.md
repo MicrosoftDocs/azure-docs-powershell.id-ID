@@ -9,8 +9,8 @@ ms.openlocfilehash: 33e1fed449a0184b8d3e3b7c1c4a3dd9c3ee3ef7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422289"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142997705"
 ---
 # Get-AzApplicationGatewayAvailableServerVariableAndHeader
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableServerVariableAndRequestHeaderResult
 
-## CATATAN
+## NOTES
 **List-AzApplicationGatewayAvailableServerVariableAndHeader** adalah alias untuk cmdlet **Get-AzApplicationGatewayAvailableServerVariableAndHeader** .
 
 ## RELATED LINKS

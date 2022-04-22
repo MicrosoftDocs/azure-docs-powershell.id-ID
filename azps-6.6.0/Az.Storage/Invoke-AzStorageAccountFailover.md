@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
 ms.openlocfilehash: 81d3e1e8c8d3a25e2b9416ffe3988df8bcf7f784
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139966263"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142960805"
 ---
 # Invoke-AzStorageAccountFailover
 
 ## SYNOPSIS
-Menggunakan failover akun Storage.
+Memanggil failover akun Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/invoke-azstorageaccountfailover) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/invoke-azstorageaccountfailover) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Invoke-AzStorageAccountFailover [-ResourceGroupName] <String> [-Name] <String> [-Force] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -35,15 +35,15 @@ Invoke-AzStorageAccountFailover -InputObject <PSStorageAccount> [-Force] [-AsJob
 ```
 
 ## DESCRIPTION
-Menggunakan failover akun Storage. Permintaan failover dapat dipicu untuk akun penyimpanan jika terjadi masalah ketersediaan.
-Failover terjadi dari kluster utama akun penyimpanan ke kluster sekunder untuk akun RA-GRS. Kluster sekunder akan menjadi utama setelah failover.
-Harap pahami dampak berikut ini pada akun penyimpanan sebelum Anda memulai failover: 1.1. Silakan periksa Waktu Sinkronisasi Terakhir menggunakan GET Blob Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-blob-service-stats), GET Table Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-table-service-stats) dan GET Queue Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-queue-service-stats) untuk akun Anda. Data ini mungkin akan hilang jika Anda memulai failover.
-2.Setelah failover, tipe akun penyimpanan Anda akan dikonversi menjadi penyimpanan berulang secara lokal(LRS). Anda dapat mengonversi akun Anda untuk menggunakan penyimpanan geo-redundant storage(GRS).
-3.Setelah Anda mengaktifkan kembali GRS untuk akun penyimpanan Anda, Microsoft akan mereplikasi data ke kawasan sekunder yang baru. Waktu replikasi bergantung pada jumlah data yang direplikasi. Harap perhatikan bahwa ada biaya bandwidth untuk bootstrap. https://azure.microsoft.com/en-us/pricing/details/bandwidth/
+Memanggil failover akun Storage. Permintaan failover dapat dipicu untuk akun penyimpanan jika terjadi masalah ketersediaan.
+Failover terjadi dari kluster utama akun penyimpanan ke kluster sekunder untuk akun RA-GRS. Kluster sekunder akan menjadi primer setelah failover.
+Harap pahami dampak berikut ke akun penyimpanan Anda sebelum memulai failover: 1.1. Silakan periksa Waktu Sinkronisasi Terakhir menggunakan Get Blob Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-blob-service-stats), GET Table Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-table-service-stats) dan GET Queue Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-queue-service-stats) untuk akun Anda. Ini adalah data yang mungkin hilang jika Anda memulai failover.
+2.Setelah failover, jenis akun penyimpanan Anda akan dikonversi ke penyimpanan redundan lokal (LRS). Anda dapat mengonversi akun Anda untuk menggunakan penyimpanan geo-redundan (GRS).
+3.Setelah Anda mengaktifkan kembali GRS untuk akun penyimpanan Anda, Microsoft akan mereplikasi data ke wilayah sekunder baru Anda. Waktu replikasi tergantung pada jumlah data yang akan direplikasi. Harap dicatat bahwa ada biaya bandwidth untuk bootstrap. https://azure.microsoft.com/en-us/pricing/details/bandwidth/
 
 ## EXAMPLES
 
-### Contoh 1: Invoke failover of a Storage account
+### Contoh 1: Memanggil failover akun Storage
 ```
 PS C:\>$account = Get-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -IncludeGeoReplicationStats
 PS C:\>$account.GeoReplicationStats
@@ -56,7 +56,7 @@ PS C:\>$job = Invoke-AzStorageAccountFailover -ResourceGroupName "MyResourceGrou
 PS C:\>$job | Wait-Job
 ```
 
-Perintah ini memeriksa waktu sinkronisasi terakhir akun Storage meminta failover, kluster sekunder akan menjadi utama setelah failover. Karena failover memakan waktu lama, sarankan untuk menjalankannya dalam backend dengan parameter -Asjob, lalu tunggu hingga pekerjaan selesai.
+Perintah ini memeriksa waktu sinkronisasi terakhir akun Storage kemudian memanggil failover, kluster sekunder akan menjadi primer setelah failover. Karena failover membutuhkan waktu lama, sarankan untuk menjalankannya di backend dengan parameter -Asjob, lalu tunggu pekerjaan selesai.
 
 ## PARAMETERS
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Paksa ke Failover Akun
+Paksa untuk Failover Akun
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,8 +120,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Storage Akun.
+### -Name
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -150,8 +150,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,8 +166,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

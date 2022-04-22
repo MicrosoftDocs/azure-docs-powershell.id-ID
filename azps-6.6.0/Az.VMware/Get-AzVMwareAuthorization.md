@@ -9,8 +9,8 @@ ms.openlocfilehash: 8b91437d57a30fb25fa5e8e5a1f0c9a8094c01e6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142039205"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142959563"
 ---
 # Get-AzVMwareAuthorization
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20210601.IExpressRouteAuthorization
 
-## CATATAN
+## NOTES
 
 ALIAS
 

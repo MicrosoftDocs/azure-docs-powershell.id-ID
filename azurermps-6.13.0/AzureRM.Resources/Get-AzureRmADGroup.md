@@ -10,8 +10,8 @@ ms.openlocfilehash: 8dc8188d9408c1b8e37fe44b149ceebeaf12ee4c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061106"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142984835"
 ---
 # Get-AzureRmADGroup
 
@@ -212,9 +212,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADGroup
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

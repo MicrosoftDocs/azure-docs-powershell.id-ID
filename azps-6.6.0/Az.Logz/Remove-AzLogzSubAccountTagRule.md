@@ -9,16 +9,16 @@ ms.openlocfilehash: e7db8e78572f9649cd271db6d59782deedbaf5ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142230031"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142964765"
 ---
 # Remove-AzLogzSubAccountTagRule
 
 ## SYNOPSIS
-Menghapus kumpulan aturan tag untuk sumber daya monitor tertentu.
+Hapus seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/remove-azlogzsubaccounttagrule) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/remove-azlogzsubaccounttagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,25 +35,25 @@ Remove-AzLogzSubAccountTagRule -InputObject <ILogzIdentity> [-DefaultProfile <PS
 ```
 
 ## DESCRIPTION
-Menghapus kumpulan aturan tag untuk sumber daya monitor tertentu.
+Hapus seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan aturan tag untuk sumber daya sub akun logz tertentu
+### Contoh 1: Menghapus seperangkat aturan tag untuk sumber daya sub akun logz tertentu
 ```powershell
 PS C:\> Remove-AzLogzSubAccountTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -SubAccountName logz-pwshsub01
 
 ```
 
-Perintah ini menghapus kumpulan aturan tag untuk sumber daya sub akun logz tertentu.
+Perintah ini menghapus seperangkat aturan tag untuk sumber daya sub akun logz tertentu.
 
-### Contoh 2: Menghapus kumpulan aturan tag untuk sumber daya sub akun logz tertentu menurut pipeline
+### Contoh 2: Menghapus seperangkat aturan tag untuk sumber daya sub akun logz tertentu menurut alur
 ```powershell
 PS C:\> Get-AzLogzSubAccountTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -SubAccountName logz-pwshsub01 | Remove-AzLogzSubAccountTagRule
 
 ```
 
-Perintah ini menghapus kumpulan aturan tag untuk sumber daya sub akun logz tertentu menurut pipeline.
+Perintah ini menghapus seperangkat aturan tag untuk sumber daya sub akun logz tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -163,8 +163,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -218,7 +218,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

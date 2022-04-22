@@ -9,8 +9,8 @@ ms.openlocfilehash: a0195984890d7b3716a7e7649c902f706339cc90
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142327404"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142972091"
 ---
 # New-AzADDomainService
 
@@ -489,7 +489,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IDomainService
 
-## CATATAN
+## NOTES
 
 ALIAS
 

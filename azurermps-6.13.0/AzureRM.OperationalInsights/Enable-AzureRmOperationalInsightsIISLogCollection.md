@@ -10,8 +10,8 @@ ms.openlocfilehash: b76e17169bdea8e25c1b861cd7de802d877455f9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141776552"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985533"
 ---
 # Enable-AzureRmOperationalInsightsIISLogCollection
 
@@ -146,7 +146,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

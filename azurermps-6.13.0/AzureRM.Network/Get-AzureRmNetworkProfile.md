@@ -9,8 +9,8 @@ ms.openlocfilehash: 5bdd5e5d5212564afb1f9b06f220e8c452bcbbaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141821609"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142986689"
 ---
 # Get-AzureRmNetworkProfile
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 0e8335476fc1cb511aaddb5294ea508832a04003
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136862"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985540"
 ---
 # Set-AzureRmOperationalInsightsIntelligencePack
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSIntelligencePack
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

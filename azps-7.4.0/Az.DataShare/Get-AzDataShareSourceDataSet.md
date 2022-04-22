@@ -9,8 +9,8 @@ ms.openlocfilehash: 4598788f9dcba9932b58fba16aed773d9a1739b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002538"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143002817"
 ---
 # Get-AzDataShareSourceDataSet
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareSourceDataSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

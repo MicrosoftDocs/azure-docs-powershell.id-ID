@@ -7,8 +7,8 @@ ms.openlocfilehash: 769567562199d33116911f1f1f5e258ae2decbbe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814748"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142977851"
 ---
 # Restore-AzsStorageAccount
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

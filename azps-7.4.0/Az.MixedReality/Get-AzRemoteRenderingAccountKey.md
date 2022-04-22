@@ -9,8 +9,8 @@ ms.openlocfilehash: a50f931fb19d7e0f14c0f757780c3b281a1ce3a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177434"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142998173"
 ---
 # Get-AzRemoteRenderingAccountKey
 
@@ -159,6 +159,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.MixedReality.RemoteRenderingAccount.PSAccountKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

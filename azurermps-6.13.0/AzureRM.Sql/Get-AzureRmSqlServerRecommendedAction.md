@@ -10,8 +10,8 @@ ms.openlocfilehash: 7a9493b5dbc1149bd4afa9298ce69c6ebd5fbe2c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059863"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983683"
 ---
 # Get-AzureRmSqlServerRecommendedAction
 
@@ -124,7 +124,7 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan untuk Penasihat SQL Server bernama CreateIndex yang tersedia untuk server bernama wi-runner-australia-east.
+Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan untuk penasihat SQL Server bernama CreateIndex yang tersedia untuk server bernama wi-runner-australia-east.
 
 ### Contoh 2: Dapatkan satu tindakan yang direkomendasikan untuk Penasihat
 ```
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlServerRecommendedActionModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS
@@ -263,4 +263,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlDatabaseRecommendedAction](./Get-AzureRmSqlDatabaseRecommendedAction.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

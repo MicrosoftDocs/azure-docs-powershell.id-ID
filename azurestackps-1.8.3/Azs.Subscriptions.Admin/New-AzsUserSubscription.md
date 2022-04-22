@@ -7,8 +7,8 @@ ms.openlocfilehash: d4b7abdeb085c7cfee6444c4afeeb6a3e79d99e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920037"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142976717"
 ---
 # New-AzsUserSubscription
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Subscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

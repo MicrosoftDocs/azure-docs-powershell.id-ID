@@ -10,8 +10,8 @@ ms.openlocfilehash: 61e382bf6d12cc58087bd64ab05942e66950f220
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179214"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143002943"
 ---
 # Set-AzDataLakeStoreItemPermission
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Alias: Set-AdlStoreItemPermission
 
 ## RELATED LINKS
