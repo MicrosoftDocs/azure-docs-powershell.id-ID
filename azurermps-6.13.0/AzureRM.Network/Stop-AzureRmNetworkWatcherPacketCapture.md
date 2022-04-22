@@ -9,8 +9,8 @@ ms.openlocfilehash: f0d010cda7ee854803330abfaf75b9aae1b8583d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136857"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142856026"
 ---
 # Stop-AzureRmNetworkWatcherPacketCapture
 
@@ -220,7 +220,7 @@ Parameter: NetworkWatcherName (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, paket, penangkapan, lalu lintas
 
 ## RELATED LINKS

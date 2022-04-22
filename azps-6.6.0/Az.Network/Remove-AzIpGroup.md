@@ -9,8 +9,8 @@ ms.openlocfilehash: 543885a5a9d6ad0fedf25b350cfb2fea8a6ce9b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142046729"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142837846"
 ---
 # Remove-AzIpGroup
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

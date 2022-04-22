@@ -9,8 +9,8 @@ ms.openlocfilehash: 2e1a359330ae3836aa32920f746045f3d11417db
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142112147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142826686"
 ---
 # Get-AzDatadogMarketplaceAgreement
 
@@ -85,7 +85,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

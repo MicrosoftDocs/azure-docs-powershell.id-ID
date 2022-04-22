@@ -9,8 +9,8 @@ ms.openlocfilehash: 326a6266a8126a5f280ebc90ad37c229a0a16e1c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874530"
 ---
 # Get-AzDataMigrationSkuRecommendation
 
@@ -338,7 +338,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

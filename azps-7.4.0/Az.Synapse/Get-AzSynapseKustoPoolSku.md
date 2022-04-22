@@ -9,8 +9,8 @@ ms.openlocfilehash: de6d67860f1a14537c1a33a1acd23bd35facf670
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434948"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863424"
 ---
 # Get-AzSynapseKustoPoolSku
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.ISkuDescription
 
-## CATATAN
+## NOTES
 
 ALIAS
 

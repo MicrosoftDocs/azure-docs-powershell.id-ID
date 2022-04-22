@@ -10,8 +10,8 @@ ms.openlocfilehash: 95442c724548119726aa466edf1b4fa223271865
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141777117"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142856404"
 ---
 # Remove-AzureRmVpnClientRootCertificate
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: 4a6f30d1f958094267b4ba8ddf09eb2e342ee889
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336481"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142861858"
 ---
 # New-AzureRmContainerServiceConfig
 
@@ -323,7 +323,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

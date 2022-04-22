@@ -9,8 +9,8 @@ ms.openlocfilehash: eb0366a7371dcb3d3ad03bfa86ee12c828b2e3b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838816"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874854"
 ---
 # Set-AzDataFactoryV2IntegrationRuntime
 
@@ -718,7 +718,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

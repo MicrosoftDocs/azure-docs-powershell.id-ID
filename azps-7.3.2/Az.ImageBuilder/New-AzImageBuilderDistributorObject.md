@@ -9,8 +9,8 @@ ms.openlocfilehash: e81e31eab904e3a475000b05c4782abc109b547d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142373957"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823159"
 ---
 # New-AzImageBuilderDistributorObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "142373957"
 Objek distribusi generik
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuilderdistributorobject) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuilderdistributorobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageId
-Id Sumber Daya dari Citra Disk terkelola.
+Id Sumber Daya dari Gambar Disk Terkelola.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk gambar, akan cocok jika gambar sudah ada.
+Lokasi Azure untuk gambar, harus cocok jika gambar sudah ada.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedImageDistributor
-Distribusikan sebagai Citra Disk terkelola.
+Distribusikan sebagai Citra Disk Terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Storage tipe akun yang akan digunakan untuk menyimpan gambar bersama.
+Storage jenis akun yang akan digunakan untuk menyimpan gambar bersama.
 Hilangkan untuk menggunakan default (Standard_LRS).
 
 ```yaml
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdDistributor
-Distribusikan melalui VHD dalam akun penyimpanan.
+Distribusikan melalui VHD di akun penyimpanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -258,7 +258,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateDistributor
 
-## CATATAN
+## NOTES
 
 ALIAS
 

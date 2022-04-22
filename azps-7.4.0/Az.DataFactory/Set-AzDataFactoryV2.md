@@ -9,8 +9,8 @@ ms.openlocfilehash: 54198afe10d1f035c57802e98f183f1b91b5ed35
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169515"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874872"
 ---
 # Set-AzDataFactoryV2
 
@@ -167,7 +167,7 @@ Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDataFactory
 
 Perintah ini membuat pabrik data bernama WikiADF dalam grup sumber daya bernama ADF di lokasi EastUS dengan konfigurasi kontrol sumber Azure DevOps.
 
-### Contoh 3: Buat pabrik data dengan detail konfigurasi repo GitHub menggunakan objek pabrik baru.
+### Contoh 3: Buat pabrik data dengan detail konfigurasi GitHub repo menggunakan objek pabrik baru.
 ```powershell
 Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location 'EastUS' -HostName 'https://github.com' -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder /
 ```
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyName
-Nama kunci di Azure Key Vault untuk digunakan sebagai Customer Managed Key untuk enkripsi.
+Nama kunci di Azure Key Vault untuk digunakan sebagai Kunci Terkelola Pelanggan untuk enkripsi.
 
 ```yaml
 Type: System.String
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionVaultBaseUrl
-Url Azure Key Vault yang digunakan untuk enkripsi dengan CMK.
+Url Azure Key Vault digunakan untuk enkripsi dengan CMK.
 
 ```yaml
 Type: System.String
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Nama host untuk konfigurasi repo GitHub.
+Nama host untuk konfigurasi GitHub repo.
 
 ```yaml
 Type: System.String
@@ -589,7 +589,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id penyewa untuk konfigurasi repo Azure DevOps.
+Id penyewa untuk konfigurasi Azure DevOps repo.
 
 ```yaml
 Type: System.String
@@ -663,7 +663,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

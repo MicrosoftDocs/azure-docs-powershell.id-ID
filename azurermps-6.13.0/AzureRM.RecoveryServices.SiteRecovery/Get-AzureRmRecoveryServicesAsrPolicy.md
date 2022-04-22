@@ -9,8 +9,8 @@ ms.openlocfilehash: aeceb76fe2f1faf6e7e1f2ddf09ee9262370e8ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882175"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142855315"
 ---
 # Get-AzureRmRecoveryServicesAsrPolicy
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

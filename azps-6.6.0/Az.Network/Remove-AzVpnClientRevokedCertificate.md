@@ -10,8 +10,8 @@ ms.openlocfilehash: 9133f03a5e9fa83cbedee2647ab78005bfc0a67f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141909291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142837576"
 ---
 # Remove-AzVpnClientRevokedCertificate
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

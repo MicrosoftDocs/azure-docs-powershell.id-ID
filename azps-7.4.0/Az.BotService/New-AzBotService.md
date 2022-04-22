@@ -9,8 +9,8 @@ ms.openlocfilehash: 4123767a84429f8e85b384ba39278ea96e3fda94
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999899"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811098"
 ---
 # New-AzBotService
 
@@ -315,7 +315,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.BotService.Models.Api20180712.IBot
 
-## CATATAN
+## NOTES
 
 ALIAS
 

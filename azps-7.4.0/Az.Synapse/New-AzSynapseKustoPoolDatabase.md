@@ -9,8 +9,8 @@ ms.openlocfilehash: fc4d4e2a184ffec8253f09c1b0e481555b3870a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427944"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142862956"
 ---
 # New-AzSynapseKustoPoolDatabase
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama kumpulan Kusto.
+Nama kolam Kusto.
 
 ```yaml
 Type: System.String
@@ -267,7 +267,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.IDatabase
 
-## CATATAN
+## NOTES
 
 ALIAS
 

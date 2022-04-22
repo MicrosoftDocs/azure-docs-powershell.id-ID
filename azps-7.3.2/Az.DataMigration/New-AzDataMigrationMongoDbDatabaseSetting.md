@@ -9,8 +9,8 @@ ms.openlocfilehash: 73e46b9d17ca66da6001392407ac8fafc43a1b77
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142375523"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142827226"
 ---
 # New-AzDataMigrationMongoDbDatabaseSetting
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataMigration.Models.MongoDbDatabaseSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

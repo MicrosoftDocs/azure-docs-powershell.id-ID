@@ -9,8 +9,8 @@ ms.openlocfilehash: 506009ac15fa1c9eeeb3e0b7ae902e3c42d1d468
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061437"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142855314"
 ---
 # Get-AzureRmRecoveryServicesAsrServicesProvider
 
@@ -40,7 +40,7 @@ Get-AzureRmRecoveryServicesAsrServicesProvider -FriendlyName <String> -Fabric <A
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesAsrServicesProvider** mendapatkan informasi tentang penyedia Pemulihan Situs Azure di kubah.
+Cmdlet **Get-AzureRmRecoveryServicesAsrServicesProvider** mendapatkan informasi tentang penyedia Azure Site Recovery di kubah.
 
 ## EXAMPLES
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

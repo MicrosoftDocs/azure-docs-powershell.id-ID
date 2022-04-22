@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e912b5d21a5b17bd03098aa3aaf0ee5b2057d11
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141862914"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142837666"
 ---
 # Remove-AzVirtualHubRouteTable
 
@@ -256,6 +256,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

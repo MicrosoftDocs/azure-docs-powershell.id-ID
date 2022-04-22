@@ -7,8 +7,8 @@ ms.openlocfilehash: aca7a14e42ae79a6f536f38761e4740a8921ceab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245562"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142851976"
 ---
 # Get-AzureStorSimpleResourceContext
 
@@ -81,7 +81,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### StorSimpleResourceContext
 Cmdlet ini mengembalikan objek **ResourceContext** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

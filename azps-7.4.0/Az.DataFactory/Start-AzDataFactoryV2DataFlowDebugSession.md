@@ -9,8 +9,8 @@ ms.openlocfilehash: 72b6ddba9a11840e2cbc812bb074d079585e3769
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432923"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874800"
 ---
 # Start-AzDataFactoryV2DataFlowDebugSession
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDebugSession
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

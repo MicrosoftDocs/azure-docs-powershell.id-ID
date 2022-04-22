@@ -10,8 +10,8 @@ ms.openlocfilehash: be9ce45b0b1b7ecfa09a04b0d597237c4d9a44ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142864270"
 ---
 # New-AzStorageAccountSASToken
 
@@ -28,7 +28,7 @@ New-AzStorageAccountSASToken -Service <SharedAccessAccountServices>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageAccountSASToken** membuat token shared access signature (SAS) tingkat akun untuk akun Azure Storage.
+Cmdlet **New-AzStorageAccountSASToken** membuat token tanda tangan akses bersama (SAS) tingkat akun untuk akun Penyimpanan Azure.
 Anda bisa menggunakan token SAS untuk mendelegasikan izin untuk beberapa layanan, atau untuk mendelegasikan izin untuk layanan yang tidak tersedia dengan token SAS tingkat objek.
 
 ## EXAMPLES
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin untuk akun Storage.
+Menentukan izin untuk akun Penyimpanan.
 Izin hanya valid jika cocok dengan tipe sumber daya yang ditentukan.
 Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 Untuk informasi selengkapnya tentang nilai izin yang dapat diterima, lihat Menyusun Akun SAS http://go.microsoft.com/fwlink/?LinkId=799514
@@ -240,7 +240,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

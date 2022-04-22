@@ -1,61 +1,56 @@
 ---
 external help file: Az.Purview-help.xml
 Module Name: Az.Purview
-online version: https://docs.microsoft.com/powershell/module/az.purview/stop-azpurviewscanresultscan
+online version: https://docs.microsoft.com/powershell/module/az.purview/remove-azpurviewscanruleset
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Stop-AzPurviewScanResultScan.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Stop-AzPurviewScanResultScan.md
-ms.openlocfilehash: 220103207f29f6c9dcbb2acd574f2e92c73146d3
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewScanRuleset.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewScanRuleset.md
+ms.openlocfilehash: ae9629abfa6d1a5e5aaf1e95d7da86b0ee7c1d79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868680"
+ms.locfileid: "142868770"
 ---
-# Stop-AzPurviewScanResultScan
+# Remove-AzPurviewScanRuleset
 
 ## SYNOPSIS
-Membatalkan pemindaian
+Menghapus set aturan pemindaian
 
 ## SYNTAX
 
 ```
-Stop-AzPurviewScanResultScan -Endpoint <String> -DataSourceName <String> -RunId <String> -ScanName <String>
- [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzPurviewScanRuleset -Endpoint <String> -Name <String> [-DefaultProfile <PSObject>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Membatalkan pemindaian
+Menghapus set aturan pemindaian
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan eksekusi pemindaian dengan menjalankan id
+### Contoh 1: Menghapus scanruleset kustom menurut nama
 ```powershell
-PS C:\> Stop-AzPurviewScanResultScan -Endpoint 'https://parv-brs-2.purview.azure.com/' -DataSourceName 'DataScanTestData-Parv' -ScanName 'Scan1ForDemo' -RunId '663623f3-8728-4b10-b5c8-8ed8dbc2ae7e'
+PS C:\> Remove-AzPurviewScanRuleset -Endpoint https://parv-brs-2.purview.azure.com/ -Name TestRule
 
-EndTime ScanResultId StartTime            Status
-------- ------------ ---------            ------
-                     2/15/2022 2:47:55 PM Accepted
+CreatedAt                            : 2/17/2022 2:30:15 PM
+Description                          : test desc
+ExcludedSystemClassification         : {MICROSOFT.FINANCIAL.CREDIT_CARD_NUMBER, MICROSOFT.SECURITY.COMMON_PASSWORDS, MICROSOFT.MISCELLANEOUS.IPADDRESS}
+Id                                   : scanrulesets/TestRule
+IncludedCustomClassificationRuleName : {ClassificationRule5, ClassificationRule2}
+Kind                                 : AzureStorage
+LastModifiedAt                       : 2/17/2022 2:32:02 PM
+Name                                 : TestRule
+ScanningRuleCustomFileExtension      :
+ScanningRuleFileExtension            : {CSV, JSON, PSV, SSV…}
+Status                               : Enabled
+Type                                 : Custom
+Version                              : 2
 ```
 
-Hentikan eksekusi pemindaian dengan menjalankan id '663623f3-8728-4b10-b5c8-8ed8dbc2ae7e'
+Menghapus scanruleset kustom menurut nama
 
 ## PARAMETERS
-
-### -DataSourceName
-.
-
-```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -DefaultProfile
 Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
@@ -88,13 +83,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RunId
+### -Name
 .
 
 ```yaml
 Type: System.String
 Parameter Sets: (All)
-Aliases:
+Aliases: ScanRulesetName
 
 Required: True
 Position: Named
@@ -103,15 +98,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ScanName
-.
+### -PassThru
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
-Type: System.String
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -156,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IOperationResponse
+### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IScanRuleset
 
 ## NOTES
 

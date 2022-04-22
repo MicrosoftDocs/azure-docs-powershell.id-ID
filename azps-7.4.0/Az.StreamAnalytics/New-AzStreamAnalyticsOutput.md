@@ -9,8 +9,8 @@ ms.openlocfilehash: d4ec549f8e746ee78cd2376a22b5c9a5a45ceff5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419686"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142863802"
 ---
 # New-AzStreamAnalyticsOutput
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.Api20170401Preview.IOutput
 
-## CATATAN
+## NOTES
 
 ALIAS
 

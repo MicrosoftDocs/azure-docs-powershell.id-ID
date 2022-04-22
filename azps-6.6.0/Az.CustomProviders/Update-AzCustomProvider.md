@@ -9,8 +9,8 @@ ms.openlocfilehash: a9158402355023a31817b142a44e59adcf5a4b19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142087341"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142842454"
 ---
 # Update-AzCustomProvider
 
@@ -204,7 +204,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.Api20180901Preview.ICustomRpManifest
 
-## CATATAN
+## NOTES
 
 ALIAS
 

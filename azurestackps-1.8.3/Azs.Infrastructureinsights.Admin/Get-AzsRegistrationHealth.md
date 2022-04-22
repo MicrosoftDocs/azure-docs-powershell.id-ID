@@ -7,8 +7,8 @@ ms.openlocfilehash: 4285a7423390f5d9b5384faa63f95c4206840d71
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141877838"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142851904"
 ---
 # Get-AzsRegistrationHealth
 
@@ -185,6 +185,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.InfrastructureInsights.Admin.Models.ResourceHealth
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

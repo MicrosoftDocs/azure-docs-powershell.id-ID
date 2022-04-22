@@ -9,8 +9,8 @@ ms.openlocfilehash: 6f5f1c341db0c5f57ffb541b9455369c0c6e5ab0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136773"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142855764"
 ---
 # Get-AzureRmPolicyState
 
@@ -497,7 +497,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PolicyInsights.Models.PolicyState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
