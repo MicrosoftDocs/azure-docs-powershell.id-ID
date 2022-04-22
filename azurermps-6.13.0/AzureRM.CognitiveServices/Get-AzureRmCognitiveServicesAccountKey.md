@@ -10,8 +10,8 @@ ms.openlocfilehash: b0e47d95d8ede448b37ef62e0b9deb7283d293c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968789"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860882"
 ---
 # Get-AzureRmCognitiveServicesAccountKey
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSCognitiveServicesAccountKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

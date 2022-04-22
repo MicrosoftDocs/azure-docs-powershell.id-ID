@@ -9,8 +9,8 @@ ms.openlocfilehash: 64e2ec58c6ed31e54a4adf0ee983aa9ae485715d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248344"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854625"
 ---
 # Update-AzureRmReservation
 
@@ -218,6 +218,6 @@ Parameter: Reservasi (ByValue)
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

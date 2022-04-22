@@ -10,8 +10,8 @@ ms.openlocfilehash: 484c72dd77ada862536b064cb2bcaec07ef51bb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248347"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854735"
 ---
 # Set-AzureRmRedisCache
 
@@ -324,7 +324,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RedisCache.Models.RedisCacheAttributesWithAccessKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

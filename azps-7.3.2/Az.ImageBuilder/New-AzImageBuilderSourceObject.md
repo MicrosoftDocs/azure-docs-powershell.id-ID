@@ -9,16 +9,16 @@ ms.openlocfilehash: 382a2991989ef3cd178bb12205faeed0b5b06587
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142256876"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142823140"
 ---
 # New-AzImageBuilderSourceObject
 
 ## SYNOPSIS
-Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
+Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ New-AzImageBuilderSourceObject -SourceTypeSharedImageVersion [-ImageVersionId <S
 ```
 
 ## DESCRIPTION
-Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
+Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
 
 ## EXAMPLES
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Gambar sku dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
+Sku gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceTypeSharedImageVersion
-Menjelaskan sumber gambar yang merupakan versi gambar dalam galeri gambar bersama.
+Menjelaskan sumber gambar yang merupakan versi gambar di galeri gambar bersama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -275,7 +275,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

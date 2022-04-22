@@ -1,67 +1,68 @@
 ---
 external help file: Az.DataMigration-help.xml
 Module Name: Az.DataMigration
-online version: https://docs.microsoft.com/powershell/module/az.datamigration/get-azdatamigrationtosqlmanagedinstance
+online version: https://docs.microsoft.com/powershell/module/az.datamigration/get-azdatamigrationtosqlvm
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlManagedInstance.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlManagedInstance.md
-ms.openlocfilehash: 5d1873ce3a46b45a06520badcdb8680a4093fc06
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlVM.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlVM.md
+ms.openlocfilehash: c15ed3687b9a3c794f00f21eb0f0480c4b2f8510
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142827244"
+ms.locfileid: "142874421"
 ---
-# Get-AzDataMigrationToSqlManagedInstance
+# Get-AzDataMigrationToSqlVM
 
 ## SYNOPSIS
-Ambil migrasi database yang ditentukan untuk SQL Managed Instance tertentu.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtosqlmanagedinstance) untuk informasi terbaru.
+Ambil migrasi database yang ditentukan untuk VM SQL tertentu.
 
 ## SYNTAX
 
 ### Dapatkan (Default)
 ```
-Get-AzDataMigrationToSqlManagedInstance -ManagedInstanceName <String> -ResourceGroupName <String>
+Get-AzDataMigrationToSqlVM -ResourceGroupName <String> -SqlVirtualMachineName <String>
  [-SubscriptionId <String[]>] -TargetDbName <String> [-Expand <String>] [-MigrationOperationId <String>]
  [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzDataMigrationToSqlManagedInstance -InputObject <IDataMigrationIdentity> [-Expand <String>]
+Get-AzDataMigrationToSqlVM -InputObject <IDataMigrationIdentity> [-Expand <String>]
  [-MigrationOperationId <String>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Ambil migrasi database yang ditentukan untuk SQL Managed Instance tertentu.
+Ambil migrasi database yang ditentukan untuk VM SQL tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail Migrasi Database tertentu ke SQL Managed Instance
+### Contoh 1: Mendapatkan detail Migrasi Database tertentu ke komputer virtual SQL
 ```powershell
-PS C:\> Get-AzDataMigrationToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDatabase"
-
-Name               Type                                       Kind  ProvisioningState MigrationStatus
-----               ----                                       ----  ----------------- ---------------
-MyDatabase         Microsoft.DataMigration/databaseMigrations SqlMi Succeeded         Succeeded
+Get-AzDataMigrationToSqlVM -ResourceGroupName "MyResourceGroup" -SqlVirtualMachineName "MySqlVM" -TargetDbName "MyDatabase"
 ```
 
-Perintah ini mendapatkan detail Migrasi Database tertentu ke SQL Managed Instance.
+```output
+Name                 Type                                       Kind  ProvisioningState MigrationStatus
+----                 ----                                       ----  ----------------- ---------------
+MyDatabase           Microsoft.DataMigration/databaseMigrations SqlVm Succeeded         Succeeded
+```
 
-### Contoh 2: Dapatkan detail yang diperluas dari Migrasi Database tertentu ke SQL Managed Instance
+Perintah ini mendapatkan detail Migrasi Database tertentu ke komputer virtual SQL.
+
+### Contoh 2: Dapatkan detail yang diperluas dari Migrasi Database tertentu ke komputer virtual SQL
 ```powershell
-PS C:\> $miMigration = Get-AzDataMigrationToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDatabase" -Expand MigrationStatusDetails
-PS C:\> $miMigration.MigrationStatusDetail
+$vmMigration = Get-AzDataMigrationToSqlVM -ResourceGroupName "MyResouceGroup" -SqlVirtualMachineName "MySqlVM" -TargetDbName "MyDatabase" -Expand MigrationStatusDetails
+$vmMigration.MigrationStatusDetail
+```
 
+```output
 BlobContainerName                    CompleteRestoreErrorMessage CurrentRestoringFilename          FileUploadBlockingError 
 -----------------                    --------------------------- ------------------------          ----------------------- 
 2673894b-451c-41cv-ae2b-58a8eefe3546                             AdventureWorks.bak
 ```
 
-Perintah ini mendapatkan detail yang diperluas dari Migrasi Database tertentu ke SQL Managed Instance.
+Perintah ini mendapatkan detail yang diperluas dari Migrasi Database tertentu ke komputer virtual SQL.
 
 ## PARAMETERS
 
@@ -110,21 +111,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedInstanceName
-.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -MigrationOperationId
 ID operasi migrasi opsional.
 Jika ini disediakan, maka detail operasi migrasi untuk ID tersebut diambil.
@@ -160,6 +146,21 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
 Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SqlVirtualMachineName
+.
 
 ```yaml
 Type: System.String
@@ -212,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.IDatabaseMigrationSqlMi
+### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.IDatabaseMigrationSqlVM
 
 ## NOTES
 

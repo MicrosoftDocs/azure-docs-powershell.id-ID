@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/SignalR/Commands.SignalR/help/New-AzureRmSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/SignalR/Commands.SignalR/help/New-AzureRmSignalR.md
 ms.openlocfilehash: d5b7e5480ea3078dadf5280b4f683280dcd00ea4
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140855459"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853866"
 ---
 # New-AzureRmSignalR
 
 ## SYNOPSIS
-Membuat layanan SignalR.
+Buat layanan SignalR.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,9 +28,9 @@ New-AzureRmSignalR [-ResourceGroupName <String>] [-Name] <String> [-Location <St
 ```
 
 ## DESCRIPTION
-Membuat layanan SignalR.
-Nilai berikut ini akan digunakan untuk parameter jika tidak ditentukan:
-* `ResourceGroupName`: grup sumber daya default yang diatur oleh `Set-AzureRmDefault -ResourceGroupName`.
+Buat layanan SignalR.
+Nilai berikut akan digunakan untuk parameter jika tidak ditentukan:
+* `ResourceGroupName`: grup sumber daya default yang ditetapkan oleh `Set-AzureRmDefault -ResourceGroupName`.
 * `Location`: lokasi grup sumber daya
 * `Sku`: `Standard_S1`
 
@@ -48,7 +48,7 @@ mysignalr1.service.signalr.net                     eastus         5002       500
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di pekerjaan latar belakang.
+Jalankan cmdlet dalam pekerjaan latar belakang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan SignalR.
 
 ```yaml
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya. Pengaturan default akan digunakan jika tidak ditentukan.
+Nama grup sumber daya. Default akan digunakan jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU layanan Signalr.
+SKU layanan SignalR.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitCount
-Jumlah unit layanan SignalR, dari 1 sampai 10. Default ke 1.
+Jumlah unit layanan SignalR, dari 1 hingga 10. Default ke 1.
 
 ```yaml
 Type: System.Int32
@@ -167,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,8 +183,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,6 +209,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

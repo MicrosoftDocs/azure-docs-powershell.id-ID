@@ -9,8 +9,8 @@ ms.openlocfilehash: bc1fba5c7fa7e01a3c2461907a214809e175f3ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924852"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854697"
 ---
 # Split-AzureRmReservation
 
@@ -164,6 +164,6 @@ Parameter: Reservasi (ByValue)
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

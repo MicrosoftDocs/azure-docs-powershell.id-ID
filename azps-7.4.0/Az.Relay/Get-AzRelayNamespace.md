@@ -9,8 +9,8 @@ ms.openlocfilehash: f0bd33cb19a13fbfb08d78a3369349918aff914c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867942"
 ---
 # Get-AzRelayNamespace
 
@@ -107,6 +107,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSRelayNamespaceAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

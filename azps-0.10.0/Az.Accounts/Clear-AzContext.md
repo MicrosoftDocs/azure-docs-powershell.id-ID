@@ -9,8 +9,8 @@ ms.openlocfilehash: 9dcf7b7d7149235d5a2ed211dbccf87415f1c496
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141919209"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142848574"
 ---
 # Clear-AzContext
 
@@ -141,6 +141,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

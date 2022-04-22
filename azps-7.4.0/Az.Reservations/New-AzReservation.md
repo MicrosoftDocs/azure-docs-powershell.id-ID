@@ -9,8 +9,8 @@ ms.openlocfilehash: bb4ae9e5170966a54b8a21ae82358e57d30efd5d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175067"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867780"
 ---
 # New-AzReservation
 
@@ -294,6 +294,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Reservations.Models.ReservationOrderResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

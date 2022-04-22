@@ -9,8 +9,8 @@ ms.openlocfilehash: c115283505a71867df316ab52839fb6f5405ca25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141896373"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142828648"
 ---
 # Update-AzCosmosDBSqlTrigger
 
@@ -275,6 +275,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ResourceNotFoundException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

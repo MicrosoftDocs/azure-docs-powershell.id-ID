@@ -9,8 +9,8 @@ ms.openlocfilehash: 142252e282e8af3bdd72e49b603c483e174e4467
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141788504"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142826596"
 ---
 # New-AzDatadogSingleSignOnConfiguration
 
@@ -258,7 +258,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

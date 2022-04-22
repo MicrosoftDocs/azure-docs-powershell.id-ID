@@ -9,8 +9,8 @@ ms.openlocfilehash: 3eaef21cc9652ee7e5e4c52a51bcc3ab8bd5b1c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096456"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853895"
 ---
 # Get-AzureRmSignalRKey
 
@@ -162,6 +162,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: a4a2479c6dc7c116ff7da9151fcd5dea5ec26660
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100413"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860950"
 ---
 # Publish-AzureRmCdnEndpointContent
 
@@ -161,7 +161,7 @@ Parameter: CdnEndpoint (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

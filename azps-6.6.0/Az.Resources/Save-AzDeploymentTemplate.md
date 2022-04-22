@@ -9,8 +9,8 @@ ms.openlocfilehash: 538053e385ba0b9716ef6658275cf036a0d0b0a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141796172"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142835506"
 ---
 # Save-AzDeploymentTemplate
 
@@ -187,6 +187,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSTemplatePath
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

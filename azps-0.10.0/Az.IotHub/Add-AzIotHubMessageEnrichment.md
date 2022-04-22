@@ -9,8 +9,8 @@ ms.openlocfilehash: caae747f7accd76db1424d14274416f0de97122d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811292"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142847746"
 ---
 # Add-AzIotHubMessageEnrichment
 
@@ -220,6 +220,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSEnrichmentMetadata
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

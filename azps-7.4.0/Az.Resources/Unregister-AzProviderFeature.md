@@ -9,8 +9,8 @@ ms.openlocfilehash: f058fcbf0f1653e3f6b0ceb32ebdfe9a000b1c60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993863"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867168"
 ---
 # Unregister-AzProviderFeature
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSProviderFeature
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

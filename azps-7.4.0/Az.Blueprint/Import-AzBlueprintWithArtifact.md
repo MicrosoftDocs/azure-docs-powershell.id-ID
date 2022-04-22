@@ -9,8 +9,8 @@ ms.openlocfilehash: 5cc2e8f4b9153a57fdd0dff02cf12bb2c244c0ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142004398"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142811278"
 ---
 # Import-AzBlueprintWithArtifact
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

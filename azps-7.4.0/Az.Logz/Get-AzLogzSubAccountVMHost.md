@@ -9,8 +9,8 @@ ms.openlocfilehash: 8d3bb1961945e708fce3174f5cfa15e70aa2ef31
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836208"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142873540"
 ---
 # Get-AzLogzSubAccountVMHost
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IVMResources
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d0c3c138fdf8f4a2b4a0afc0053a6c35abea9e73
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141910551"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142839646"
 ---
 # Set-AzMigrateServerReplication
 
@@ -481,7 +481,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IJob
 
-## CATATAN
+## NOTES
 
 ALIAS
 

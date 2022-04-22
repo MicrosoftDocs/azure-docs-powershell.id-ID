@@ -9,8 +9,8 @@ ms.openlocfilehash: 08c3847ad85583660d5a1baa7b324779b8de30e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165494"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142866070"
 ---
 # Test-AzSignalRName
 
@@ -105,6 +105,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

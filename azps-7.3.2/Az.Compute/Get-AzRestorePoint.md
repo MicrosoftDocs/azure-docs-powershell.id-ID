@@ -9,8 +9,8 @@ ms.openlocfilehash: b515e59496d45b58041da699fd9e02b1b91004ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142259161"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142829782"
 ---
 # Get-AzRestorePoint
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRestorePoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

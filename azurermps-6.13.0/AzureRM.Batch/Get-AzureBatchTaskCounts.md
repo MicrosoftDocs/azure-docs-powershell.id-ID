@@ -9,8 +9,8 @@ ms.openlocfilehash: 9010ec1d15958f5198c25fd0ef9e8a5ecfe6a39e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142861267"
 ---
 # Get-AzureBatchTaskCounts
 
@@ -138,7 +138,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSTaskCounts
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

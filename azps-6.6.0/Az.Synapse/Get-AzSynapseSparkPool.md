@@ -9,8 +9,8 @@ ms.openlocfilehash: 71ec04e56eb1be03ecab9cd8d601c5310444de93
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142263751"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142831996"
 ---
 # Get-AzSynapseSparkPool
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

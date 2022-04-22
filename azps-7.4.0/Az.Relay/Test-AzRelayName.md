@@ -9,8 +9,8 @@ ms.openlocfilehash: b3e1dc61e683310bed57a890bcd49947c2e6730b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990642"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142867834"
 ---
 # Test-AzRelayName
 
@@ -106,6 +106,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSCheckNameAvailabilityResultAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

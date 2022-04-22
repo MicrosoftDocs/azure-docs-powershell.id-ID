@@ -10,8 +10,8 @@ ms.openlocfilehash: 3ad44ba1edcec844dcb542defb1baf294aeaa89b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141886839"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860985"
 ---
 # Get-AzureRmCdnProfileSsoUrl
 
@@ -114,7 +114,7 @@ Parameter: CdnProfile (ByValue)
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSSsoUri
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

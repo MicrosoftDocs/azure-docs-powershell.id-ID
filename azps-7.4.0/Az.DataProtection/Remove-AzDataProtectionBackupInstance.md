@@ -1,54 +1,67 @@
 ---
 external help file: ''
 Module Name: Az.DataProtection
-online version: https://docs.microsoft.com/powershell/module/az.dataprotection/remove-azdataprotectionbackuppolicy
+online version: https://docs.microsoft.com/powershell/module/az.dataprotection/remove-azdataprotectionbackupinstance
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupPolicy.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupPolicy.md
-ms.openlocfilehash: 7c92d35c1357ec0e0c0976945f181c2dfc521d91
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
+ms.openlocfilehash: 82c403177e061f059ae4bc887ac7ffdc90dc6b48
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "142841752"
+ms.locfileid: "142873972"
 ---
-# Remove-AzDataProtectionBackupPolicy
+# Remove-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
-Menghapus kebijakan cadangan milik brankas cadangan
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/remove-azdataprotectionbackuppolicy) untuk informasi terbaru.
+Menghapus backupInstances
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzDataProtectionBackupPolicy -Name <String> -ResourceGroupName <String> -VaultName <String>
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzDataProtectionBackupInstance -Name <String> -ResourceGroupName <String> -VaultName <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzDataProtectionBackupPolicy -InputObject <IDataProtectionIdentity> [-DefaultProfile <PSObject>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzDataProtectionBackupInstance -InputObject <IDataProtectionIdentity> [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus kebijakan cadangan milik brankas cadangan
+Menghapus backupInstances
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kebijakan yang sudah ada
+### Contoh 1: Menghapus instans cadangan yang dilindungi
 ```powershell
-PS C:\> $policy = Get-AzDataProtectionBackupPolicy -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
-PS C:\> Remove-AzDataProtectionBackupPolicy -Name $policy[0].name -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
+$instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
+Remove-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault" -Name $instance[0].name
 
 ```
 
-perintah ini menghapus kebijakan yang ada.
+Perintah ini menghentikan pencadangan dan menghapus data cadangan dari instans cadangan yang dilindungi tertentu.
 
 ## PARAMETERS
+
+### -AsJob
+Jalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -DefaultProfile
 Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -81,12 +94,12 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-.
+Nama instans cadangan
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases: BackupPolicyName
+Aliases: BackupInstanceName
 
 Required: True
 Position: Named
@@ -95,8 +108,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -NoWait
+Jalankan perintah secara asinkron
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,12 +238,12 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
   - `[VaultName <String>]`: Nama brankas cadangan.

@@ -9,8 +9,8 @@ ms.openlocfilehash: 8c2f6a45bb483109b61be47de3013f3ccb4d5c19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924413"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854123"
 ---
 # Remove-AzureRmSecurityContact
 
@@ -170,6 +170,6 @@ Microsoft.Azure.Commands.Security.Cmdlets.SecurityContacts.PSRemoveSecurityConta
 
 ### Microsoft.Azure.Commands.Security.Models.SecurityContacts.PSSecurityContact
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

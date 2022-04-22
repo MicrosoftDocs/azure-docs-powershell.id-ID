@@ -9,13 +9,13 @@ ms.openlocfilehash: 4513cba1e095e79bd62cf675337001d216259d6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142085576"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142841716"
 ---
 # Search-AzDataProtectionBackupInstanceInAzGraph
 
 ## SYNOPSIS
-Mencari contoh Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+Mencari instans Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionbackupinstanceinazgraph) untuk informasi terbaru.
@@ -28,7 +28,7 @@ Search-AzDataProtectionBackupInstanceInAzGraph -DatasourceType <DatasourceTypes>
 ```
 
 ## DESCRIPTION
-Mencari contoh Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+Mencari instans Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 ## EXAMPLES
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ALIAS
 

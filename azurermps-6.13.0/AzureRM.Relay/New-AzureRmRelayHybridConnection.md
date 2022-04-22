@@ -9,8 +9,8 @@ ms.openlocfilehash: 1caf26a439cdc835d511ffb7bd6021dd5db1fa9b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818045"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142854724"
 ---
 # New-AzureRmRelayHybridConnection
 
@@ -232,6 +232,6 @@ Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAttibutes System.Nullabl
 ### Microsoft.Azure.Commands.Relay.Models.PSHybridConnectionAttibutes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

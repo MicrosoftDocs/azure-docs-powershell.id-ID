@@ -10,8 +10,8 @@ ms.openlocfilehash: c006c06d03e1f1c120ed62f38ea8b3e451d8fa21
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358647"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142860229"
 ---
 # Set-AzureRmVMAEMExtension
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

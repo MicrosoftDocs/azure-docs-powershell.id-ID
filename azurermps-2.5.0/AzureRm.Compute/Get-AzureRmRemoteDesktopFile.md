@@ -8,8 +8,8 @@ ms.openlocfilehash: e8b19272ed7b6c68221e34cef0395f0592b3013d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141930183"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142861993"
 ---
 # Get-AzureRmRemoteDesktopFile
 
@@ -144,7 +144,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

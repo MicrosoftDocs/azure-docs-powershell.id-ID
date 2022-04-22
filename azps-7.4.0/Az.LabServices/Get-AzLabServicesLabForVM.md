@@ -9,8 +9,8 @@ ms.openlocfilehash: 499d072ccdce8498334b95e95c9048f2ba618c2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142873792"
 ---
 # Get-AzLabServicesLabForVM
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.ILab
 
-## CATATAN
+## NOTES
 
 ALIAS
 

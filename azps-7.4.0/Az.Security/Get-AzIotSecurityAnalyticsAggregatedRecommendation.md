@@ -9,8 +9,8 @@ ms.openlocfilehash: 3bb9b9dc6ceecd47d52da709f2e2aaa0ae8c8aa7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171994"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142866898"
 ---
 # Get-AzIotSecurityAnalyticsAggregatedRecommendation
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.IotSecuritySolutionAnalytics.PSIoTSecurityAggregatedRecommendation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
