@@ -9,8 +9,8 @@ ms.openlocfilehash: 717179261b18a248064df10c99d7865c3f6d5eaf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141946347"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142895482"
 ---
 # Get-AzStreamAnalyticsCluster
 
@@ -183,7 +183,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.Api20200301Preview.ICluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 

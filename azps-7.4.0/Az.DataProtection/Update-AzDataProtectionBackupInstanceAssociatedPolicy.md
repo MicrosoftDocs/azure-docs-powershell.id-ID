@@ -9,8 +9,8 @@ ms.openlocfilehash: 819572e26652b5762b5fbc28bf554c9416a13531
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998226"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142873954"
 ---
 # Update-AzDataProtectionBackupInstanceAssociatedPolicy
 
@@ -208,7 +208,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupInstanceResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

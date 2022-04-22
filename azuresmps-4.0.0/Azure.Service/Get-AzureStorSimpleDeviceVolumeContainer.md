@@ -7,8 +7,8 @@ ms.openlocfilehash: 2df8617c292e1f3903b0a9bbe82dd7a3c83d269a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142852034"
 ---
 # Get-AzureStorSimpleDeviceVolumeContainer
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Cmdlet ini mengembalikan objek **DataContainer** , jika Anda menentukan parameter *VolumeContainerName* .
 Jika Anda tidak menentukan parameter tersebut, cmdlet ini mengembalikan objek **IList\<DataContainer\>** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

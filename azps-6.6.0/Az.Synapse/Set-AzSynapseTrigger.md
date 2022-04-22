@@ -9,8 +9,8 @@ ms.openlocfilehash: 7e4426a9239beb91f223cd9c84edfe6f9390202e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141901287"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142895032"
 ---
 # Set-AzSynapseTrigger
 
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSTriggerResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

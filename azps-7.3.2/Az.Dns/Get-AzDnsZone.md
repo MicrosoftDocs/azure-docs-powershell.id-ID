@@ -10,8 +10,8 @@ ms.openlocfilehash: 6a6bc7863101802b6e80109513faa5ec5ae3b9ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142110833"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890496"
 ---
 # Get-AzDnsZone
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Dns.DnsZone
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

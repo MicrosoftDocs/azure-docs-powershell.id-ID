@@ -9,8 +9,8 @@ ms.openlocfilehash: 91fb0250c64128b86ac97d3e1516968ffd13cb7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142375181"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142826200"
 ---
 # Register-AzWvdApplicationGroup
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IWorkspace
 
-## CATATAN
+## NOTES
 
 ALIAS
 

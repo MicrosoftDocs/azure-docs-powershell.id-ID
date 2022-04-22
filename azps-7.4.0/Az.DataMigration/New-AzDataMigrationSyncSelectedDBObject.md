@@ -9,8 +9,8 @@ ms.openlocfilehash: fa43a19c9aed4d6b623e914ce27f7e967ed37f7f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169299"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874296"
 ---
 # New-AzDataMigrationSyncSelectedDBObject
 
@@ -179,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataMigration.Models.MigrateSqlServerSqlDbSyncTaskInput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

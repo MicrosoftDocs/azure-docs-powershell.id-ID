@@ -10,13 +10,13 @@ ms.openlocfilehash: c7ef4dc9da62a66c9c6a6a03ae70177c97465c61
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142222363"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142896095"
 ---
 # Set-AzSqlInstanceDatabaseSensitivityClassification
 
 ## SYNOPSIS
-Mengatur tipe informasi dan label sensitivitas kolom dalam database Instans Terkelola Azure SQL.
+Mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancedatabasesensitivityclassification) untuk informasi terbaru.
@@ -46,21 +46,21 @@ Set-AzSqlInstanceDatabaseSensitivityClassification [-SensitivityLabel <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlInstanceDatabaseSensitivityClassification mengatur tipe informasi dan label sensitivitas kolom dalam database Instans Terkelola Azure SQL.
+Cmdlet Set-AzSqlInstanceDatabaseSensitivityClassification mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Atur tipe informasi dan label sensitivitas kolom dalam database Instans Terkelola Azure SQL.
+### Contoh 1: Mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Set-AzSqlInstanceDatabaseSensitivityClassification -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
 
-### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database Instans Terkelola Azure SQL.
+### Contoh 2: Mengatur tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database | Set-AzSqlInstanceDatabaseSensitivityClassification
 ```
 
-### Contoh 3: Mengatur tipe informasi dan label sensitivitas kolom dalam database Instans Terkelola Azure SQL, menggunakan pipa.
+### Contoh 3: Mengatur tipe informasi dan label sensitivitas kolom dalam database Azure SQL Managed Instance, menggunakan pipa.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database | Set-AzSqlInstanceDatabaseSensitivityClassification -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationObject
-Objek yang mewakili Klasifikasi Sensitivitas Database Instans Terkelola SQL.
+Objek yang mewakili Klasifikasi Sensitivitas Database SQL Managed Instance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database Instans Terkelola Azure SQL.
+Nama database Azure SQL Managed Instance.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseObject
-Objek database Instans Terkelola Azure SQL.
+Objek database Azure SQL Managed Instance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans Terkelola Azure SQL.
+Azure SQL Managed Instance nama.
 
 ```yaml
 Type: System.String
@@ -303,8 +303,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Pelajari selengkapnya tentang penemuan dan klasifikasi data Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
+[Pelajari selengkapnya tentang Azure SQL Database penemuan dan klasifikasi data](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)

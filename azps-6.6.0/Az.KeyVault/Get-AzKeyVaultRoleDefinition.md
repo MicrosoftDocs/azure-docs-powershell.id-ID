@@ -9,8 +9,8 @@ ms.openlocfilehash: 5fa4dae2865d026ef401affb3f1a92df5e6b2b40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141802076"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142902575"
 ---
 # Get-AzKeyVaultRoleDefinition
 
@@ -187,6 +187,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultRoleDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

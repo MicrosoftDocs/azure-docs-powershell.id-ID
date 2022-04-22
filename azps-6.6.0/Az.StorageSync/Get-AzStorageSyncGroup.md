@@ -9,8 +9,8 @@ ms.openlocfilehash: 777148c9f8033876fded26ee9ca531e21fa5cb44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142297285"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142895609"
 ---
 # Get-AzStorageSyncGroup
 
@@ -157,6 +157,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

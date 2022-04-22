@@ -9,8 +9,8 @@ ms.openlocfilehash: 9da66e9c426c8092a3a8d5a12d858a53d6ceabb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874476"
 ---
 # Get-AzDataMigrationSqlServiceAuthKey
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.IAuthenticationKeys
 
-## CATATAN
+## NOTES
 
 ALIAS
 

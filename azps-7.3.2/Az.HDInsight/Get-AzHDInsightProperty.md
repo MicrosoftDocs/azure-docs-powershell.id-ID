@@ -10,8 +10,8 @@ ms.openlocfilehash: ed7b7e8e5d8b398147fdc080c7e030b75257312d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938661"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142889596"
 ---
 # Get-AzHDInsightProperty
 
@@ -80,6 +80,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.HDInsight.Models.AzureHDInsightCapabilities
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

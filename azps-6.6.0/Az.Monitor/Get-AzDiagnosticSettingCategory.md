@@ -9,8 +9,8 @@ ms.openlocfilehash: 25272d202595cc6daa83d5151d220c9a16b7fa51
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141800942"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142902071"
 ---
 # Get-AzDiagnosticSettingCategory
 
@@ -106,6 +106,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSDiagnosticSettingCategory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

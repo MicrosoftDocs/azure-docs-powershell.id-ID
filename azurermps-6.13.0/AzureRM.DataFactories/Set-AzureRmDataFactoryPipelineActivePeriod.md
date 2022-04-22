@@ -10,8 +10,8 @@ ms.openlocfilehash: 7cbd9331802df11bb1fe243265e82fd73d6524f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779693"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142859806"
 ---
 # Set-AzureRmDataFactoryPipelineActivePeriod
 
@@ -249,7 +249,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

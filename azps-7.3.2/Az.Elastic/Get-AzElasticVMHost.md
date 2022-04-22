@@ -9,8 +9,8 @@ ms.openlocfilehash: bdc905f9e3698cd4bfa80083a5db724264282eb9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141851810"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890172"
 ---
 # Get-AzElasticVMHost
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IVMResources
 
-## CATATAN
+## NOTES
 
 ALIAS
 

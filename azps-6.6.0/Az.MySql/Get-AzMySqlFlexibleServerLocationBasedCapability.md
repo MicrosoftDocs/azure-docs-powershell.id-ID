@@ -9,8 +9,8 @@ ms.openlocfilehash: 4ff59cbce7e68fc06535518ba5edc60838aec4c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142302865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142901837"
 ---
 # Get-AzMySqlFlexibleServerLocationBasedCapability
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20210501.ICapabilityProperties
 
-## CATATAN
+## NOTES
 
 ALIAS
 

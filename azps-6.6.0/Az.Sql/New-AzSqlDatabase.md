@@ -10,8 +10,8 @@ ms.openlocfilehash: 5cbfba9b7d95d80a12f609ab2efc630f1de5738f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142222687"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142896652"
 ---
 # New-AzSqlDatabase
 
@@ -642,7 +642,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -660,5 +660,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Suspend-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

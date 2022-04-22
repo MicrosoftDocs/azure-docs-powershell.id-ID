@@ -7,8 +7,8 @@ ms.openlocfilehash: 6b7072c5cd9c9e91a5c71d585be685a4dfa7700c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921657"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853136"
 ---
 # Get-AzureSqlDatabaseServer
 
@@ -89,7 +89,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Ienumerable\<Microsoft.WindowsAzure.Commands.SqlDatabase.Model.SqlDatabaseServerContext\>
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

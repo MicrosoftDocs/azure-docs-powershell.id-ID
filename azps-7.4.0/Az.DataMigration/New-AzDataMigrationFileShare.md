@@ -9,8 +9,8 @@ ms.openlocfilehash: 2238395d71f7d55ae1cf434153c128ac74161400
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998334"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874405"
 ---
 # New-AzDataMigrationFileShare
 
@@ -98,6 +98,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataMigration.Models.MigrateSqlServerSqlDbDatabaseInput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

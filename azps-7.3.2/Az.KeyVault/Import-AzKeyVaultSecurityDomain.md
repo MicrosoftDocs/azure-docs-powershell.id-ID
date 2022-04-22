@@ -9,8 +9,8 @@ ms.openlocfilehash: 80f53c1b598dc65bb4c2fc10a0f6c5746d4f9018
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142373605"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142888714"
 ---
 # Import-AzKeyVaultSecurityDomain
 
@@ -202,6 +202,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

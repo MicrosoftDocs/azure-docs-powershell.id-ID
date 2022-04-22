@@ -9,8 +9,8 @@ ms.openlocfilehash: e6f5f384be348ff996f52075636eb3abc1dba021
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168094"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142872820"
 ---
 # Start-AzMySqlFlexibleServer
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

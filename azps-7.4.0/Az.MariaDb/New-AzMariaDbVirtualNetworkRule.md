@@ -9,8 +9,8 @@ ms.openlocfilehash: 0af0b16d22518ccec329d2e59fad1291ae16d99f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142873287"
 ---
 # New-AzMariaDbVirtualNetworkRule
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.Api20180601Preview.IVirtualNetworkRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

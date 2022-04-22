@@ -9,8 +9,8 @@ ms.openlocfilehash: 9b37c4a3a4407523e0ec706444f9a1828efd24db
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142396277"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142881244"
 ---
 # Remove-AzSynapseIntegrationRuntimeNode
 
@@ -243,6 +243,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

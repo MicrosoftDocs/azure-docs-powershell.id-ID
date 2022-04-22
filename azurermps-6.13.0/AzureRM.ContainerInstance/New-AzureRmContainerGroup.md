@@ -9,8 +9,8 @@ ms.openlocfilehash: 1823759b72bdb3162164068732f3a8201fcfb589
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142388990"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142859939"
 ---
 # New-AzureRmContainerGroup
 
@@ -549,6 +549,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

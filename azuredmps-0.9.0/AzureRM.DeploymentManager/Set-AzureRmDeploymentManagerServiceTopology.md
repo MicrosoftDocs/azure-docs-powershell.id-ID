@@ -7,8 +7,8 @@ ms.openlocfilehash: 6387e5a2938bdef99e4aea5e93248a0ecf8e8da7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142862309"
 ---
 # Set-AzureRmDeploymentManagerServiceTopology
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: f81b57a585521150745c76b44c8947906c781c8a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772484"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853164"
 ---
 # Get-AzureSiteRecoveryNetwork
 
@@ -94,7 +94,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 4cbd32b4759f27acb171d5bb47243542c559d4ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142249993"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142881442"
 ---
 # Get-AzSynapseSqlDatabase
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlDatabase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
