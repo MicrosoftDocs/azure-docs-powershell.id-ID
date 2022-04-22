@@ -9,13 +9,13 @@ ms.openlocfilehash: e7007388eff74f496e36f836a67563b8664734d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142229797"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142964567"
 ---
 # Get-AzMapsCreator
 
 ## SYNOPSIS
-Dapatkan sumber daya Maps Creator.
+Dapatkan sumber daya Peta Creator.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapscreator) untuk informasi terbaru.
@@ -40,11 +40,11 @@ Get-AzMapsCreator -InputObject <IMapsIdentity> [-DefaultProfile <PSObject>] [<Co
 ```
 
 ## DESCRIPTION
-Dapatkan sumber daya Maps Creator.
+Dapatkan sumber daya Peta Creator.
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan semua sumber daya Pembuat Peta di bawah Akun Peta
+### Contoh 1: Mencantumkan semua sumber daya pembuat Peta di bawah Akun Peta
 ```powershell
 PS C:\> Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01
 
@@ -55,7 +55,7 @@ eastus2  creator-01 Microsoft.Maps/accounts/creators
 
 Perintah ini mencantumkan sumber daya Pembuat Peta di bawah Akun Peta.
 
-### Contoh 2: Dapatkan sumber daya Pembuat Peta
+### Contoh 2: Dapatkan sumber daya Peta Creator
 ```powershell
 PS C:\> Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01
 
@@ -64,9 +64,9 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mendapatkan sumber daya Pembuat Peta.
+Perintah ini mendapatkan sumber daya Kreator Peta.
 
-### Contoh 3: Dapatkan sumber daya Maps Creator menurut pipeline
+### Contoh 3: Dapatkan sumber daya Peta Creator menurut pipeline
 ```powershell
 PS C:\> New-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01 -Location eastus2 -StorageUnit 3 | Get-AzMapsCreator
 
@@ -75,7 +75,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mendapatkan sumber daya Pembuat Peta menurut saluran.
+Perintah ini mendapatkan sumber daya Kreator Peta menurut saluran.
 
 ## PARAMETERS
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama instans Pembuat Peta.
+Nama instans Peta Creator.
 
 ```yaml
 Type: System.String
@@ -175,13 +175,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.IMapsIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.Api20210201.ICreator
+### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.Api20210201.ICreator
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -192,7 +192,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
-  - `[CreatorName <String>]`: Nama instans Pembuat Peta.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
