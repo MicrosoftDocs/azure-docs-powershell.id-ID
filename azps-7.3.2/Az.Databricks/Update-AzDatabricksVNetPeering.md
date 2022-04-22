@@ -9,8 +9,8 @@ ms.openlocfilehash: 66054d153103de01c0a6bf02fecdfdd84d6ace74
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142258549"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143077337"
 ---
 # Update-AzDatabricksVNetPeering
 
@@ -294,7 +294,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.Api20210401Preview.IVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ALIAS
 

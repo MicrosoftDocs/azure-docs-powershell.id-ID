@@ -10,8 +10,8 @@ ms.openlocfilehash: 015dbc617d0c4e3f8d61530eec3abe0167802931
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385057"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046953"
 ---
 # Enable-AzureRmOperationalInsightsLinuxSyslogCollection
 
@@ -35,7 +35,7 @@ Enable-AzureRmOperationalInsightsLinuxSyslogCollection [-Workspace] <PSWorkspace
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzureRmOperationalInsightsLinuxSyslogCollection** memulai pengumpulan data syslog dari komputer Linux yang tersambung dalam ruang kerja.
+Cmdlet **Enable-AzureRmOperationalInsightsLinuxSyslogCollection** memulai pengumpulan data syslog dari komputer Linux yang terhubung di ruang kerja.
 
 ## EXAMPLES
 
@@ -71,7 +71,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -86,7 +86,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -101,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -146,8 +146,8 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
+## NOTES
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS
 

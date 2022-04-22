@@ -7,8 +7,8 @@ ms.openlocfilehash: 5b015e8a2c566ff3de7efa242d77f738cc5c009a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094931"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043641"
 ---
 # Get-AzureStorageKey
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 * Untuk mendapatkan bantuan terkait Node.js, gunakan perintah.`help node-dev` Untuk bantuan dengan ekstensi PHP, gunakan perintah.`help php-dev`
 
 ## RELATED LINKS

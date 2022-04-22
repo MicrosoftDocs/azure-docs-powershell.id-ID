@@ -9,8 +9,8 @@ ms.openlocfilehash: 416c0882c8c50d5e3b3f7a2b4fdf6f5fd25b6cff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141788522"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143077481"
 ---
 # Revoke-AzDataShareSubscriptionAccess
 
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareProviderShareSubscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

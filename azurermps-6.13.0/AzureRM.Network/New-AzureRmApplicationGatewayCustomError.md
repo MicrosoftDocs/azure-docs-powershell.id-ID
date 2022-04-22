@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e05684f40223711db7a8a6aaaf1cfb684efced4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138521"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047709"
 ---
 # New-AzureRmApplicationGatewayCustomError
 
@@ -98,6 +98,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayCustomError
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

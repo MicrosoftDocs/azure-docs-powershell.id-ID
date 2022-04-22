@@ -9,8 +9,8 @@ ms.openlocfilehash: 7932a733fcd672d8ee92e6452765745281ee0a2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142139711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048347"
 ---
 # Set-AzureRmMarketplaceTerms
 
@@ -229,6 +229,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.MarketplaceOrdering.Models.PSAgreementTerms
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 84ac93371d5e2ce9c305cacfa9c67929d24c352b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142207673"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143070839"
 ---
 # Remove-AzSqlServerFirewallRule
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.FirewallRule.Model.AzureSqlServerFirewallRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

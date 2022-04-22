@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCutoverToSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCutoverToSqlVM.md
-ms.openlocfilehash: 6b51ca08d3135223dacaa26a4dcf5dbe31ce7385
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7392f23edd20955ee7e67400c4a6a16185a7312b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143078075"
 ---
 # Invoke-AzDataMigrationCutoverToSqlVM
 
 ## SYNOPSIS
-Memulai langsung untuk migrasi database online yang sedang berlangsung SQL VM.
+Mulai cutover untuk migrasi database online yang sedang berlangsung ke VM SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/invoke-azdatamigrationcutovertosqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Invoke-AzDataMigrationCutoverToSqlVM -ResourceGroupName <String> -SqlVirtualMach
 ```
 
 ## DESCRIPTION
-Memulai langsung untuk migrasi database online yang sedang berlangsung SQL VM.
+Mulai cutover untuk migrasi database online yang sedang berlangsung ke VM SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai langsung untuk migrasi online yang sedang berlangsung yang ditentukan ke SQL Virtual
+### Contoh 1: Memulai cutover untuk migrasi online yang sedang berlangsung yang ditentukan ke SQL Virtual Machine
 ```powershell
 PS C:\> $vmMigration = Get-AzDataMigrationToSqlVM -ResourceGroupName "MyResourceGroup" -SqlVirtualMachineName "MySqlVM" -TargetDbName "MyDatabase"
 PS C:\> Invoke-AzDataMigrationCutoverToSqlVM -ResourceGroupName "MyResourceGroup" -SqlVirtualMachineName "MySqlVM" -TargetDbName "MyDatabase" -MigrationOperationId $vmMigration.MigrationOperationId
@@ -41,12 +44,12 @@ Name                 Type                                       Kind  Provisioni
 MyDatabase           Microsoft.DataMigration/databaseMigrations SqlVm Completing        Completing
 ```
 
-Perintah ini memulai langsung untuk migrasi online dalam proses yang ditentukan ke SQL Virtual.
+Perintah ini memulai cutover untuk migrasi online yang sedang berlangsung yang ditentukan ke SQL Virtual Machine.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationOperationId
-Operasi pelacakan ID migrasi.
+Operasi migrasi pelacakan ID.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,8 +124,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
@@ -181,8 +184,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,8 +200,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -221,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: db85c1f8de00432b3f9213473c89728239099c0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923926"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045639"
 ---
 # Get-AzureRmSqlDatabaseFailoverGroup
 
@@ -119,7 +119,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.FailoverGroup.Model.AzureSqlFailoverGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

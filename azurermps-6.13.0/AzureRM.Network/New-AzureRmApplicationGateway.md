@@ -10,8 +10,8 @@ ms.openlocfilehash: 67da94a783d932501413008523c744f6695f6024
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047753"
 ---
 # New-AzureRmApplicationGateway
 
@@ -580,7 +580,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

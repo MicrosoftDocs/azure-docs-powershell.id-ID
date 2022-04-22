@@ -8,13 +8,13 @@ ms.openlocfilehash: 4302aa7dbc0cf31b9a7aa61678d871e9da140d51
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053694"
 ---
 # Add-AzureRmLogProfile
 
 ## SYNOPSIS
-Membuat profil log aktivitas baru. Profil ini digunakan untuk mengarsipkan log aktivitas ke akun penyimpanan Azure atau streaming ke hub kejadian Azure dalam langganan yang sama. 
+Membuat profil log aktivitas baru. Profil ini digunakan untuk mengarsipkan log aktivitas ke akun penyimpanan Azure atau mengalirkannya ke hub peristiwa Azure dalam langganan yang sama. 
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,13 +29,13 @@ Add-AzureRmLogProfile -Name <String> [-StorageAccountId <String>] [-ServiceBusRu
 
 ## DESCRIPTION
 Cmdlet **Add-AzureRmLogProfile** membuat profil log.
-- **akun Storage** - Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Ini bisa berupa tipe ARM atau Classic. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas akan ditagih dengan tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan yang mungkin hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
-- **Hub Kejadian** - Mungkin hanya ada satu profil log per langganan secara bertahap hanya satu hub kejadian per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas di-streaming ke hub kejadian, harga hub kejadian standar akan berlaku. Dalam log aktivitas, kejadian dapat berkaitan dengan kawasan atau dapat berupa "Global". Global pada dasarnya berarti acara ini adalah agnostik kawasan dan independen dari kawasan, pada kenyataannya mayoritas acara termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil log aktivitas secara implisit menambahkan "Global" bersama dengan kawasan lain yang dipilih di antarmuka pengguna. Ketika menggunakan cmdlet, lokasi sebagai "Global" harus secara eksplisit disebutkan selain dari kawasan lain. 
-**Catatan** :- **Gagal mengatur "Global" di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor.** Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+- **Akun Storage** - Hanya akun penyimpanan standar (akun penyimpanan premium yang tidak didukung) yang didukung. Ini bisa berjenis ARM atau Klasik. Jika dicatat ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih dengan tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan akibatnya hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
+- **Pusat Aktivitas** - Mungkin hanya ada satu profil log per langganan akibatnya hanya satu hub peristiwa per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas dialirkan ke pusat aktivitas, harga pusat aktivitas standar akan berlaku. Dalam log aktivitas, peristiwa dapat berkaitan dengan suatu wilayah atau dapat berupa "Global". Global pada dasarnya berarti peristiwa ini adalah agnostik wilayah dan independen dari wilayah, pada kenyataannya sebagian besar peristiwa termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil tersebut secara implisit menambahkan "Global" bersama dengan wilayah lain yang dipilih di antarmuka pengguna. Saat menggunakan cmdlet , lokasi sebagai "Global" harus secara eksplisit disebutkan selain dari wilayah lain. 
+**Catatan** :- **Gagal mengatur "Global" di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor.** Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1 : Menambahkan profil log baru untuk mengekspor log aktivitas yang sesuai dengan kondisi lokasi ke akun penyimpanan
+### Contoh 1 : Tambahkan profil log baru untuk mengekspor log aktivitas yang cocok dengan kondisi lokasi ke akun penyimpanan
 ```
 Add-AzureRmLogProfile -Location "Global","West US" -Name ExportLogProfile -StorageAccountId /subscriptions/40gpe80s-9sb7-4f07-9042-b1b6a92ja9fk/resourceGroups/activitylogRG/providers/Microsoft.Storage/storageAccounts/activitylogstorageaccount
 ```
@@ -88,7 +88,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama profil.
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Menentukan kebijakan penyimpanan, dalam hari. Ini adalah jumlah hari log dipertahankan dalam akun penyimpanan yang ditentukan. Untuk mempertahankan data yang selamanya diatur ke **0**. Jika tidak ditentukan, defaultnya adalah **0**. Tarif penagihan hub aktivitas atau penyimpanan standar normal akan berlaku untuk penyimpanan data.
+Menentukan kebijakan penyimpanan, dalam hari. Ini adalah jumlah hari log dipertahankan di akun penyimpanan yang ditentukan. Untuk menyimpan data selamanya, atur ini ke **0**. Jika tidak ditentukan, maka defaultnya adalah **0**. Tarif penagihan penyimpanan standar atau hub peristiwa normal akan berlaku untuk retensi data.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -149,8 +149,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,12 +194,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSLogProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzureRmLogProfile](./Get-AzureRmLogProfile.md)
 
-[Hapus-AzureRmLogProfile](./Remove-AzureRmLogProfile.md)
+[Remove-AzureRmLogProfile](./Remove-AzureRmLogProfile.md)
 
 

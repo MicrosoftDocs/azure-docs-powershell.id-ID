@@ -6,8 +6,8 @@ ms.openlocfilehash: bf434b459e3bbd43f9c118c26b4ae2a29a2703c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242423"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143040981"
 ---
 # Import-AzureRmContext
 
@@ -136,7 +136,7 @@ System.String
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

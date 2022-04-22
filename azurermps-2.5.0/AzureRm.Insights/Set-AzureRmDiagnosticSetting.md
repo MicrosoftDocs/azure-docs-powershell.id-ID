@@ -8,8 +8,8 @@ ms.openlocfilehash: 772fe33dab13c4c92a0e17fc09a6bf1d5aa04624
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142146967"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053585"
 ---
 # Set-AzureRmDiagnosticSetting
 
@@ -413,7 +413,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSServiceDiagnosticSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

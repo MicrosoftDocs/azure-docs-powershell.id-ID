@@ -8,13 +8,13 @@ ms.openlocfilehash: 4ce1f2d1c388b531ee960688ba8296ef1632ac25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142146511"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053145"
 ---
 # Get-AzureRmApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
-Mendapatkan kumpulan alamat ujung belakang untuk gateway aplikasi.
+Mendapatkan kumpulan alamat back-end untuk gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,28 +29,28 @@ Get-AzureRmApplicationGatewayBackendAddressPool [-Name <String>] -ApplicationGat
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kumpulan server back-end tertentu
+### Contoh 1: Mendapatkan kumpulan server back-end tertentu
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $BackendPool = Get-AzureRmApplicationGatewayBackendAddressPool -Name "Pool01" -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan kumpulan alamat ujung belakang yang terkait dengan $AppGw bernama Pool01 dan menyimpannya dalam variabel $BackendPool.
+Perintah kedua mendapatkan kumpulan alamat back-end yang terkait dengan $AppGw bernama Pool01 dan menyimpannya dalam variabel $BackendPool.
 
-### Contoh 2: Dapatkan daftar kumpulan server back-end
+### Contoh 2: Mendapatkan daftar kumpulan server back-end
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $BackendPools = Get-AzureRmApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan daftar kumpulan alamat ujung belakang yang terkait dengan $AppGw, dan menyimpan daftar dalam variabel $BackendPools.
+Perintah kedua mendapatkan daftar kumpulan alamat back-end yang terkait dengan $AppGw, dan menyimpan daftar dalam variabel $BackendPools.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Cmdlet **Get-AzureRmApplicationGatewayBackendAddressPool** mendapatkan kumpulan alamat ujung belakang untuk gateway aplikasi.
+Cmdlet **Get-AzureRmApplicationGatewayBackendAddressPool** mendapatkan kumpulan alamat back-end untuk gateway aplikasi.
 
 ```yaml
 Type: PSApplicationGateway
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan alamat ujung belakang yang didapat cmdlet ini.
+### -Name
+Menentukan nama kumpulan alamat back-end yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -105,7 +105,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApplicationGatewayBackendAddressPool](./New-AzureRmApplicationGatewayBackendAddressPool.md)
 
-[Hapus-AzureRmApplicationGatewayBackendAddressPool](./Remove-AzureRmApplicationGatewayBackendAddressPool.md)
+[Remove-AzureRmApplicationGatewayBackendAddressPool](./Remove-AzureRmApplicationGatewayBackendAddressPool.md)
 
 [Set-AzureRmApplicationGatewayBackendAddressPool](./Set-AzureRmApplicationGatewayBackendAddressPool.md)
 

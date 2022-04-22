@@ -9,13 +9,13 @@ ms.openlocfilehash: b3bedc5c521736ff702f5e7378b4c401a42bce5f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046644"
 ---
 # Remove-AzureRmRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
-Menghapus paket pemulihan ASR yang ditentukan dari kubah Layanan Pemulihan.
+Menghapus rencana pemulihan ASR yang ditentukan dari vault Layanan Pemulihan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ Remove-AzureRmRecoveryServicesAsrRecoveryPlan -Name <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmRecoveryServicesAsrRecoveryPlan** menghapus paket pemulihan yang ditentukan dari kubah Layanan Pemulihan.
+Cmdlet **Remove-AzureRmRecoveryServicesAsrRecoveryPlan** menghapus rencana pemulihan yang ditentukan dari vault Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Cmdlet **Remove-AzureRmRecoveryServicesAsrRecoveryPlan** menghapus paket pemulih
 PS C:\> $currentJob = Remove-AzureRmRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP
 ```
 
-Memulai penghapusan rencana pemulihan tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai penghapusan rencana pemulihan yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek rencana pemulihan ASR yang terkait dengan rencana pemulihan yang akan dihapus.
+Objek input ke cmdlet: Objek rencana pemulihan ASR yang sesuai dengan rencana pemulihan yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -78,7 +78,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama rencana pemulihan yang akan dihapus.
 
 ```yaml
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

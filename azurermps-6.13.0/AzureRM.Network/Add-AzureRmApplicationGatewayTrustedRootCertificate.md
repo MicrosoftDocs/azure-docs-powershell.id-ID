@@ -9,8 +9,8 @@ ms.openlocfilehash: e44136d5fa9b0a6b0b979005c13faf6041d98f61
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778431"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048283"
 ---
 # Add-AzureRmApplicationGatewayTrustedRootCertificate
 
@@ -148,6 +148,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

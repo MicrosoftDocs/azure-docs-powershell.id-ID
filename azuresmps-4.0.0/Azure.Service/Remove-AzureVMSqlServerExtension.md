@@ -7,8 +7,8 @@ ms.openlocfilehash: e2598f32f9660f662add4acb9950bf9f4d7f49bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142277588"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042122"
 ---
 # Remove-AzureVMSqlServerExtension
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

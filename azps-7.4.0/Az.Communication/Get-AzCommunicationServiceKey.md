@@ -9,8 +9,8 @@ ms.openlocfilehash: 4f500b69b32ad9268a8a8e9a1f8d3fc6ed41097a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426504"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143066375"
 ---
 # Get-AzCommunicationServiceKey
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.Api20200820.ICommunicationServiceKeys
 
-## CATATAN
+## NOTES
 
 ALIAS
 

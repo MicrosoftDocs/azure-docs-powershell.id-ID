@@ -7,8 +7,8 @@ ms.openlocfilehash: 51d0405ffbedf5ad5a708fdcf9184ef49dc6ecdb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141847366"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143050859"
 ---
 # Test-AzureRmDeployment
 
@@ -229,6 +229,6 @@ Microsoft.Azure.Management.ResourceManager.Models.DeploymentMode System.Collecti
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSResourceManagerError
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 2542740db9cb8f5b0809bf071e2b960ba8979de8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382932"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045927"
 ---
 # Update-AzureRmManagementGroup
 
@@ -84,7 +84,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 3: Memperbarui Grup Manajemen dengan piping PSManagementGroup Object
+### Contoh 3: Memperbarui Grup Manajemen dengan mempipa Objek PSManagementGroup
 ```
 PS C:\> Get-AzureRmManagementGroup -GroupName "TestGroup" | Update-AzureRMManagementGroup -DisplayName "TestDisplayName" -ParentId "/providers/Microsoft.Management/managementGroups/TestGroupParent"
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input dari Dapatkan panggilan
+Objek Input dari panggilan Dapatkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Input dari Dapatkan panggilan
+Objek Input dari panggilan Dapatkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup
@@ -209,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -252,6 +252,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.ManagementGroups.PSManagementGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

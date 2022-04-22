@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a7c48803f18bf73f75e721296757e37ff89d44c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882932"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047169"
 ---
 # Remove-AzureRmVirtualHubVnetConnection
 
@@ -261,6 +261,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

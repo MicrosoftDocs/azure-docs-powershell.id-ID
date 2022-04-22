@@ -8,8 +8,8 @@ ms.openlocfilehash: 0a3dea2b706f7efcdc76b48175df225e2974728c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780986"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052011"
 ---
 # Resize-AzureRmVirtualNetworkGateway
 
@@ -118,7 +118,7 @@ Cmdlet ini menerima instans pipelin objek **Microsoft.Azure.Commands.Network.Mod
 ###  
 Cmdlet ini mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway** yang sudah ada.
 
-## CATATAN
+## NOTES
 Anda tidak dapat mengubah ukuran dari SKU Basic/Standard/HighPerformance ke SKU VpnGw1/VpnGw2/VpnGw3 yang baru. Lihat https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways instruksinya.
 
 ## RELATED LINKS

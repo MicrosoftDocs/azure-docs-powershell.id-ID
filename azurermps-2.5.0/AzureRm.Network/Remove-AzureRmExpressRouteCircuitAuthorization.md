@@ -8,8 +8,8 @@ ms.openlocfilehash: 144d70318463b7c5ffebfa6b7d942ec2a351fc24
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780974"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052263"
 ---
 # Remove-AzureRmExpressRouteCircuitAuthorization
 
@@ -103,7 +103,7 @@ Cmdlet ini menerima instance pipelined objek **Microsoft.Azure.Commands.Network.
 ### PSExpressRouteCircuit
 Cmdlet ini mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** yang sudah ada.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

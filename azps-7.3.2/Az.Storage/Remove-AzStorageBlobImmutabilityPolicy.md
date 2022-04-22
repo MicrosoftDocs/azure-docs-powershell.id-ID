@@ -9,8 +9,8 @@ ms.openlocfilehash: 91d17d26f6553b0957573226020c68e23499319f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142250659"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143070011"
 ---
 # Remove-AzStorageBlobImmutabilityPolicy
 
@@ -245,6 +245,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

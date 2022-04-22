@@ -10,8 +10,8 @@ ms.openlocfilehash: 933f831084ad900e73129dc012e37a0c07a654b7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179284"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143063783"
 ---
 # Join-AzDataLakeStoreItem
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

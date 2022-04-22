@@ -10,8 +10,8 @@ ms.openlocfilehash: c5d77619fa5f89c60ce20a097e096709e9a48bae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882778"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047072"
 ---
 # Reset-AzureRmVirtualNetworkGateway
 
@@ -41,7 +41,7 @@ Reset-AzureRmVirtualNetworkGateway -VirtualNetworkGateway $Gateway
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayVip
-Gateway vip untuk mengatur ulang contoh gateway tertentu (misalnya jika ada gateway Active-Active yang diaktifkan fitur.) Secara default, instans utama gateway akan direset jika tidak ada nilai yang lolos.
+Gateway vip untuk mengatur ulang instans gateway tertentu (misalnya jika fitur Active-Active mengaktifkan gateway.) Secara default, instans utama gateway akan diatur ulang jika tidak ada nilai yang diteruskan.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,7 +113,7 @@ Parameter: GatewayVip (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -121,9 +121,9 @@ Parameter: GatewayVip (ByValue)
 
 [New-AzureRmVirtualNetworkGateway](./New-AzureRmVirtualNetworkGateway.md)
 
-[Hapus-AzureRmVirtualNetworkGateway](./Remove-AzureRmVirtualNetworkGateway.md)
+[Remove-AzureRmVirtualNetworkGateway](./Remove-AzureRmVirtualNetworkGateway.md)
 
-[Mengubah ukuran AzureRmVirtualNetworkGateway](./Resize-AzureRmVirtualNetworkGateway.md)
+[Mengubah ukuran-AzureRmVirtualNetworkGateway](./Resize-AzureRmVirtualNetworkGateway.md)
 
 [Set-AzureRmVirtualNetworkGateway](./Set-AzureRmVirtualNetworkGateway.md)
 

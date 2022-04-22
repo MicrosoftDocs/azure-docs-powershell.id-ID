@@ -7,8 +7,8 @@ ms.openlocfilehash: cfe80a5fd8798ed1b105ee7068cda884077b875b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142277625"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042110"
 ---
 # Restart-AzureWebsite
 
@@ -110,7 +110,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

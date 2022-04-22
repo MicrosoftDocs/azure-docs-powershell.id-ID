@@ -9,8 +9,8 @@ ms.openlocfilehash: 650fda2b931ebb5f06036d9e0f22296beee76eeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142112507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143077949"
 ---
 # Register-AzDataMigrationIntegrationRuntime
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

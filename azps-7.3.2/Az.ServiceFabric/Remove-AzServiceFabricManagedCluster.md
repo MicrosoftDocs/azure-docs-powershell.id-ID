@@ -9,8 +9,8 @@ ms.openlocfilehash: 7cfd453383cc8c98da5ae62e49262a150b449555
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142401983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143071577"
 ---
 # Remove-AzServiceFabricManagedCluster
 
@@ -214,6 +214,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

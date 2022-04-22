@@ -8,13 +8,13 @@ ms.openlocfilehash: 1a043b14ef957eed6ac4983c4a30edf6fc72521f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362074"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052515"
 ---
 # New-AzureRmVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
-Membuat Konfigurasi IP untuk Gateway Virtual Network
+Membuat Konfigurasi IP untuk Gateway Microsoft Azure Virtual Network
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ New-AzureRmVirtualNetworkGatewayIpConfig -Name <String> [-PrivateIpAddress <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmVirtualNetworkGatewayIpConfig** membuat konfigurasi yang ditetapkan ke Gateway Virtual Network dengan Alamat IP Publik (yang sebelumnya dibuat) berdasarkan ID Subnet.
+Cmdlet **New-AzureRmVirtualNetworkGatewayIpConfig** membuat konfigurasi yang ditetapkan ke Gateway Virtual Network dengan Alamat IP Publik (yang dibuat sebelumnya) berdasarkan ID Subnet.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Cmdlet **New-AzureRmVirtualNetworkGatewayIpConfig** membuat konfigurasi yang dit
 $gwIpConfig = New-AzureRmVirtualNetworkGatewayIpConfig -Name myGWIpConfig -SubnetId $myGWsubnet.Id -PublicIpAddressId $myGWpip.Id
 ```
 
-Mengonfigurasi Gateway Virtual Network dengan Alamat IP Publik. Variabel $myGWsubnet diperoleh menggunakan cmdlet **Get-AzureRmVirtualNetworkSubnetConfig** pada "GatewaySubnet" dalam Virtual Network yang ingin Anda buat gateway Virtual Network. Variabel $myGWpip diperoleh menggunakan cmdlet **New-AzureRmPublicIpAddress** .
+Mengonfigurasi gateway Virtual Network dengan Alamat IP Publik. Variabel $myGWsubnet diperoleh menggunakan cmdlet **Get-AzureRmVirtualNetworkSubnetConfig** pada "GatewaySubnet" dalam Virtual Network Anda ingin membuat Gateway Virtual Network. Variabel $myGWpip diperoleh menggunakan cmdlet **New-AzureRmPublicIpAddress** .
 
 ## PARAMETERS
 
@@ -61,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayIpConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

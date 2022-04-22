@@ -10,8 +10,8 @@ ms.openlocfilehash: c0f8150022c84d3fe7feb498769532340351b29b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143064233"
 ---
 # Set-AzDataFactorySliceStatus
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

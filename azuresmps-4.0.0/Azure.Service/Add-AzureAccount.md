@@ -7,8 +7,8 @@ ms.openlocfilehash: d77d3acbc53603663cbe160f01ddd14db3127868
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246158"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044595"
 ---
 # Add-AzureAccount
 
@@ -181,7 +181,7 @@ Anda tidak dapat menyalurkan input ke cmdlet ini
 ### Tidak
 Cmdlet ini tidak mengembalikan output apa pun.
 
-## CATATAN
+## NOTES
 * **Add-AzureAccount** (dan metode autentikasi Azure AD) lebih diutamakan daripada **Import-AzurePublishSettings** (dan metode sertifikat manajemen). Jika Anda menggunakan **Add-AzureAccount** bahkan sekali di akun Anda, metode autentikasi Azure AD digunakan dan sertifikat manajemen diabaikan. Untuk menghapus token Azure AD dan memulihkan metode sertifikat manajemen, gunakan cmdlet **Hapus-AzureAccount**. Untuk informasi selengkapnya, ketik: **Dapatkan Bantuan Hapus-AzureAccount**.
 * Kesalahan, "Kredensial Anda telah kedaluwarsa. Silakan gunakan Add-AzureAccount untuk masuk lagi." menunjukkan bahwa token akses Anda telah kedaluwarsa dan Windows PowerShell tidak dapat mengakses akun Azure Anda. Untuk memulihkan akses ke akun Anda, jalankan kembali **Add-AzureAccount** .
 * Cmdlet langganan dan akun Azure PowerShell mendapatkan data mereka dari file data langganan, bukan dari akun Azure langsung. Jika Anda mengubah akun atau langganan di luar Windows PowerShell, seperti menggunakan Portal Manajemen Azure, jalankan kembali **Add-AzureAccount** untuk merefresh file data langganan.

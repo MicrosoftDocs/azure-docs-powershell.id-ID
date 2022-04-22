@@ -9,8 +9,8 @@ ms.openlocfilehash: b77df654d89ff965cf6116f9a92985b6d07212b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143064431"
 ---
 # Remove-AzDataBoxEdgeRole
 
@@ -212,6 +212,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeRole
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

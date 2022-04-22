@@ -7,8 +7,8 @@ ms.openlocfilehash: 39bf91e5d346b475fe0c4b79b9128648555c6379
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141928887"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052875"
 ---
 # Get-AzureRmVirtualNetworkGatewayLearnedRoute
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSGatewayRoute[]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

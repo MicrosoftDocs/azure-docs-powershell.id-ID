@@ -8,8 +8,8 @@ ms.openlocfilehash: 2359459688dbae2c718e4a5d5f65bf68b2c8c5ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141971331"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053127"
 ---
 # Get-AzureRmApplicationGatewaySku
 
@@ -30,7 +30,7 @@ Cmdlet **Get-AzureRmApplicationGatewaySku** mendapatkan stock keeping unit (SKU)
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan SKU gateway aplikasi
+### Contoh 1: Mendapatkan SKU gateway aplikasi
 ```
 PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $SKU = Get-AzureRmApplicationGatewaySku -ApplicationGateway $AppGW
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -82,12 +82,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[New-AzureRmApplicationGatewaysku](./New-AzureRmApplicationGatewaySku.md)
+[New-AzureRmApplicationGatewaySku](./New-AzureRmApplicationGatewaySku.md)
 
-[Set-AzureRmApplicationGatewaysku](./Set-AzureRmApplicationGatewaySku.md)
+[Set-AzureRmApplicationGatewaySku](./Set-AzureRmApplicationGatewaySku.md)
 
 

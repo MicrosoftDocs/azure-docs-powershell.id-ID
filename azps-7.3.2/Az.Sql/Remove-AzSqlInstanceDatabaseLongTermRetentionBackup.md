@@ -9,8 +9,8 @@ ms.openlocfilehash: 4101dc0615bcf4098a8a33d9079c2971d980510b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142366181"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143070875"
 ---
 # Remove-AzSqlInstanceDatabaseLongTermRetentionBackup
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabaseBackup.Model.AzureSqlManagedDatabaseLongTermRetentionBackupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
