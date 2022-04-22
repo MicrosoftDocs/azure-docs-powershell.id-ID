@@ -10,8 +10,8 @@ ms.openlocfilehash: 047fcfef47d8c0a97c699c45c4b869794318fadb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142029485"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143011349"
 ---
 # Get-AzRecoveryServicesBackupContainer
 
@@ -55,7 +55,7 @@ PS C:\> Get-AzRecoveryServicesBackupContainer -ContainerType Windows -BackupMana
 ```
 
 Perintah ini mendapatkan semua wadah Windows yang dilindungi oleh agen Azure Backup.
-Parameter **BackupManagementType** hanya diperlukan untuk wadah Windows.
+Parameter **BackupManagementType** hanya diperlukan untuk kontainer Windows.
 
 ## PARAMETERS
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

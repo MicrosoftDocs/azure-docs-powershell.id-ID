@@ -7,8 +7,8 @@ ms.openlocfilehash: 3a88889cabf884e4f1f6b5a8272cb8b3bdf0033a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980767"
 ---
 # New-AzureVMSqlServerAutoPatchingConfig
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### AutoPatchingSettings
 Cmdlet ini mengembalikan objek berisi pengaturan untuk patch otomatis.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

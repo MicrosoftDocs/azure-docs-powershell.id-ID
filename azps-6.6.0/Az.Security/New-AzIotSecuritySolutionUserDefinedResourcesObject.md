@@ -9,8 +9,8 @@ ms.openlocfilehash: da39edb0a64f681e29fa80386a82f07c1bb2b2fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142266289"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143024777"
 ---
 # New-AzIotSecuritySolutionUserDefinedResourcesObject
 
@@ -101,6 +101,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.IotSecuritySolutions.PSUserDefinedResources
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

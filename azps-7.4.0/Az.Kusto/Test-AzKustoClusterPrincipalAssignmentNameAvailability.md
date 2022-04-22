@@ -9,8 +9,8 @@ ms.openlocfilehash: 5662a926011cf8b3f6b225d95194b7c8bfbe8908
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143000243"
 ---
 # Test-AzKustoClusterPrincipalAssignmentNameAvailability
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICheckNameResult
 
-## CATATAN
+## NOTES
 
 ALIAS
 

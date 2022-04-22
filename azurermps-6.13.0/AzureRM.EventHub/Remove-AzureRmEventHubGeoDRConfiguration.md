@@ -9,8 +9,8 @@ ms.openlocfilehash: 85f6373cad3c6c42bbefa0aba9aac14d3699b6a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987751"
 ---
 # Remove-AzureRmEventHubGeoDRConfiguration
 
@@ -219,6 +219,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

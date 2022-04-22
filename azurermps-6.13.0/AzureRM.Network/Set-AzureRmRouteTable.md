@@ -10,8 +10,8 @@ ms.openlocfilehash: e94eaeb7c9b4302c0d7e5e1f89496939a612d4d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061739"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142985861"
 ---
 # Set-AzureRmRouteTable
 
@@ -170,7 +170,7 @@ Parameter: RouteTable (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

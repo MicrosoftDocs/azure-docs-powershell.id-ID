@@ -7,8 +7,8 @@ ms.openlocfilehash: 01b9e3689a8dc72871795da559dd71a24c1e1814
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311739"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979237"
 ---
 # Start-AzureSqlDatabaseCopy
 
@@ -304,7 +304,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Model.DatabaseCopy
 
-## CATATAN
+## NOTES
 * Autentikasi: Cmdlet ini memerlukan autentikasi berbasis sertifikat. Untuk contoh cara menggunakan autentikasi berbasis sertifikat untuk mengatur langganan saat ini, lihat cmdlet New-AzureSqlDatabaseServerContext.
 * Pemantauan: Untuk memeriksa status satu atau beberapa hubungan salinan berkelanjutan yang aktif di server, gunakan cmdlet **Get-AzureSqlDatabaseCopy** . Untuk memverifikasi status operasi pada sumber dan target hubungan salinan berkelanjutan, gunakan cmdlet **Get-AzureSqlDatabaseOperation** .
 

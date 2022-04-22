@@ -9,8 +9,8 @@ ms.openlocfilehash: bda4fc4ce91e77924a4c8feb2e440b36f59ad604
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426727"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143007029"
 ---
 # Publish-AzBotServiceApp
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 097cfc29ee0df3b4cb5c4882340c5a115b5bd801
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142244305"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980075"
 ---
 # Remove-AzureVirtualNetworkGateway
 
@@ -67,7 +67,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 542ae898ef056b06e0f3bbd11a146e6118ae21f9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981541"
 ---
 # Get-AzureRemoteAppTemplateImage
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

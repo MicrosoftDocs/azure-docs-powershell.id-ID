@@ -7,8 +7,8 @@ ms.openlocfilehash: 8bb6e703d6c55703ca5dd7dce1d9b0bc2e9467e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980965"
 ---
 # New-AzureServiceExtensionConfig
 
@@ -313,7 +313,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

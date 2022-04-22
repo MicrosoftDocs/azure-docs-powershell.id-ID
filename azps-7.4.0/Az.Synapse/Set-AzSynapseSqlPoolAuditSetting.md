@@ -9,8 +9,8 @@ ms.openlocfilehash: f384e390c99a5c225268d00970005bb8d97fa7d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419376"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142993187"
 ---
 # Set-AzSynapseSqlPoolAuditSetting
 
@@ -540,6 +540,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.SqlPoolAuditModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

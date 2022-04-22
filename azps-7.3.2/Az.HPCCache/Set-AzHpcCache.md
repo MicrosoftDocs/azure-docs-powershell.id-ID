@@ -9,8 +9,8 @@ ms.openlocfilehash: f56e8ddc2d4971f675c06481f06845b161a1339b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142257235"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143017379"
 ---
 # Set-AzHpcCache
 
@@ -179,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.HPCCache.Models.PSHPCCache
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

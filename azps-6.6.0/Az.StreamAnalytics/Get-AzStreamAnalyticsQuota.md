@@ -9,8 +9,8 @@ ms.openlocfilehash: e149b9ecf6f52367b7c1ccb22321882ce29762a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141902601"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142960391"
 ---
 # Get-AzStreamAnalyticsQuota
 
@@ -101,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.Api20170401Preview.ISubscriptionQuota
 
-## CATATAN
+## NOTES
 
 ALIAS
 

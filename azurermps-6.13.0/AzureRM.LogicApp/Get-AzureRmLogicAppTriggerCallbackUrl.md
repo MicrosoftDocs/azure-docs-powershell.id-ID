@@ -10,8 +10,8 @@ ms.openlocfilehash: b1b45fc6d06ec77d3e94254ed044a0a5a6f39406
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140144"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987264"
 ---
 # Get-AzureRmLogicAppTriggerCallbackUrl
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.WorkflowTriggerCallbackUrl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

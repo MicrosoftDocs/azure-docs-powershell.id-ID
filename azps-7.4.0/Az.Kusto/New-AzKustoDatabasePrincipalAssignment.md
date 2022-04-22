@@ -9,8 +9,8 @@ ms.openlocfilehash: 7aeb342367eee70a321f7306779e2c49c0da13cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424946"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143000387"
 ---
 # New-AzKustoDatabasePrincipalAssignment
 
@@ -268,7 +268,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDatabasePrincipalAssignment
 
-## CATATAN
+## NOTES
 
 ALIAS
 

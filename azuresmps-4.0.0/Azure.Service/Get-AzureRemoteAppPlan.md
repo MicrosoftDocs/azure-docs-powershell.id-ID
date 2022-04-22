@@ -7,8 +7,8 @@ ms.openlocfilehash: 5c47dcad4a25fe6800629c40ad3a4df5e2eb94fc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772628"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142981577"
 ---
 # Get-AzureRemoteAppPlan
 
@@ -53,7 +53,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

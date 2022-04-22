@@ -9,8 +9,8 @@ ms.openlocfilehash: 03c1a556f6b3fc207fbbb612f31d172705e4f42b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987899"
 ---
 # Set-AzureRmApplicationInsightsPricingPlan
 
@@ -225,6 +225,6 @@ Parameter: ApplicationInsightsComponent (ByValue)
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSPricingPlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

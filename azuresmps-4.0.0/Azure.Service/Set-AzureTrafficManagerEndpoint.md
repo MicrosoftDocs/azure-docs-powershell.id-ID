@@ -7,8 +7,8 @@ ms.openlocfilehash: 531d298dd3a1a96fab47c5ca2c1d275b6eaa2f8b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311827"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979471"
 ---
 # Set-AzureTrafficManagerEndpoint
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.WindowsAzure.Commands.Utilities.TrafficManager.Models.IProfileWithDefinition
 Cmdlet ini menghasilkan objek profil Traffic Manager, yang berisi informasi tentang profil yang diperbarui.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

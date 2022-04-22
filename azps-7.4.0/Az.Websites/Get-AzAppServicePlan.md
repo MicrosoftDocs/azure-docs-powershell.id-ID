@@ -10,8 +10,8 @@ ms.openlocfilehash: 95b0dbc460d427b4b86fbb9f491ce6615ef0d1c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170542"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142992539"
 ---
 # Get-AzAppServicePlan
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.WebApp.PSAppServicePlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 95908c79565ddd304e9809f077c74ce75bf91e77
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143006489"
 ---
 # Get-AzCognitiveServicesAccountSku
 
@@ -104,6 +104,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.CognitiveServices.Models.ResourceSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

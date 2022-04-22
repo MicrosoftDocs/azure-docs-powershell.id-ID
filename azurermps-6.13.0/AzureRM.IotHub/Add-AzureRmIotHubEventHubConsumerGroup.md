@@ -9,8 +9,8 @@ ms.openlocfilehash: 00342fddd1a8755f22f925e25595ec36b9326c09
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142387332"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987571"
 ---
 # Add-AzureRmIotHubEventHubConsumerGroup
 
@@ -167,6 +167,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

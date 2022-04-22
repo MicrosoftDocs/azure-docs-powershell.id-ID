@@ -7,8 +7,8 @@ ms.openlocfilehash: 995ea9fd34e19a394c932220cc5fef0e64016b2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979993"
 ---
 # Reset-AzureRoleInstance
 
@@ -207,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

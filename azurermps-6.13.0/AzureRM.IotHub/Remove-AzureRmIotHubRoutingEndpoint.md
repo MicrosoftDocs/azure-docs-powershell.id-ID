@@ -9,8 +9,8 @@ ms.openlocfilehash: 6caad4faec3dd292f902689757b82b90091afcde
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987547"
 ---
 # Remove-AzureRmIotHubRoutingEndpoint
 
@@ -226,6 +226,6 @@ System.Collections.Generic.List`[[Microsoft.Azure.Commands.Management.IotHub.Mod
 Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingStorageContainerEndpoint
 System.Collections.Generic.List`[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingStorageContainerProperties, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]] System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Management.IotHub.Models.PSRoutingCustomEndpoint, Microsoft.Azure.Commands.IotHub, Version=3.1.3.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

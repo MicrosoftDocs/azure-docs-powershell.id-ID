@@ -10,8 +10,8 @@ ms.openlocfilehash: 1a279eecfad19fc35bae7c9f1b3bf828a07913e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386745"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142987382"
 ---
 # Get-AzureRmIntegrationAccountCallbackUrl
 
@@ -120,7 +120,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.CallbackUrl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

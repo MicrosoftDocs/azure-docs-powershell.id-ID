@@ -9,8 +9,8 @@ ms.openlocfilehash: cdbb0e07e1bb5d0287bd74404af0a049f1743260
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142375199"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143017811"
 ---
 # New-AzWvdRegistrationInfo
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IRegistrationInfo
 
-## CATATAN
+## NOTES
 
 ALIAS
 
