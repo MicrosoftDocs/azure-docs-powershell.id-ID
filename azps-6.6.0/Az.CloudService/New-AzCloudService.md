@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudService.md
 ms.openlocfilehash: 00182b7ec05eca9f511d43525b34f42f7dc0cc7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139943539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142968959"
 ---
 # New-AzCloudService
 
 ## SYNOPSIS
 Membuat atau memperbarui layanan awan.
-Harap diperhatikan bahwa beberapa properti dapat diatur hanya selama pembuatan layanan awan.
+Harap dicatat bahwa beberapa properti hanya dapat diatur selama pembuatan layanan awan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/new-azcloudservice) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,11 +53,11 @@ New-AzCloudService -Name <String> -ResourceGroupName <String> -ConfigurationFile
 
 ## DESCRIPTION
 Membuat atau memperbarui layanan awan.
-Harap diperhatikan bahwa beberapa properti dapat diatur hanya selama pembuatan layanan awan.
+Harap dicatat bahwa beberapa properti hanya dapat diatur selama pembuatan layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat layanan cloud baru dengan satu peran
+### Contoh 1: Membuat layanan awan baru dengan peran tunggal
 ```powershell
 # Create role profile object
 PS C:\> $role = New-AzCloudServiceRoleProfilePropertiesObject-Name 'ContosoFrontend' -SkuName 'Standard_D1_v2' -SkuTier 'Standard' -SkuCapacity 2
@@ -85,9 +85,9 @@ PS C:\> $cloudService = New-AzCloudService                                      
                           -NetworkProfile $networkProfile
 ```
 
-Kumpulan perintah di atas membuat layanan awan dengan satu peran
+Kumpulan perintah di atas membuat layanan cloud dengan peran tunggal
 
-### Contoh 2: Buat layanan awan baru dengan satu peran dan ekstensi RDP
+### Contoh 2: Membuat layanan cloud baru dengan peran tunggal dan ekstensi RDP
 ```powershell
 # Create role profile object
 PS C:\> $role = New-AzCloudServiceRoleProfilePropertiesObject-Name 'ContosoFrontend' -SkuName 'Standard_D1_v2' -SkuTier 'Standard' -SkuCapacity 2
@@ -122,9 +122,9 @@ PS C:\> $cloudService = New-AzCloudService                                      
                           -ExtensionProfile $extensionProfile
 ```
 
-Kumpulan perintah di atas membuat layanan awan dengan satu peran dan ekstensi RDP
+Kumpulan perintah di atas membuat layanan cloud dengan peran tunggal dan ekstensi RDP
 
-### Contoh 3: Buat layanan cloud baru dengan peran dan sertifikat tunggal dari vault kunci
+### Contoh 3: Membuat layanan awan baru dengan peran tunggal dan sertifikat dari brankas kunci
 ```powershell
 # Create role profile object
 PS C:\> $role = New-AzCloudServiceRoleProfilePropertiesObject-Name 'ContosoFrontend' -SkuName 'Standard_D1_v2' -SkuTier 'Standard' -SkuCapacity 2
@@ -159,9 +159,9 @@ PS C:\> $cloudService = New-AzCloudService                                      
                           -OSProfile $osProfile
 ```
 
-Di atas kumpulan perintah akan membuat layanan cloud dengan peran dan sertifikat tunggal dari vault kunci.
+Sekumpulan perintah di atas membuat layanan cloud dengan peran tunggal dan sertifikat dari brankas kunci.
 
-### Contoh 4: Buat layanan cloud baru dengan beberapa peran dan ekstensi
+### Contoh 4: Membuat layanan awan baru dengan beberapa peran dan ekstensi
 ```powershell
 # Create role profile object
 PS C:\> $role1 = New-AzCloudServiceRoleProfilePropertiesObject-Name 'ContosoFrontend' -SkuName 'Standard_D1_v2' -SkuTier 'Standard' -SkuCapacity 2
@@ -204,9 +204,9 @@ PS C:\> $cloudService = New-AzCloudService                                      
                           -Tag $tag
 ```
 
-Di atas kumpulan perintah akan membuat layanan cloud dengan peran dan sertifikat tunggal dari vault kunci.
+Sekumpulan perintah di atas membuat layanan cloud dengan peran tunggal dan sertifikat dari brankas kunci.
 
-### Contoh 5: Buat layanan awan baru dengan file CsCfg, CsDef, dan Cspkg menggunakan kumpulan parameter 'quickCreateParameterSetWithStorage'.
+### Contoh 5: Buat layanan cloud baru dengan file CsCfg, CsDef, dan Cspkg menggunakan set parameter 'quickCreateParameterSetWithStorage'.
 ```powershell
 # Set up a storage account if you have not
 PS C:\> $storageAccount = New-AzStorageAccount -ResourceGroupName ContosoOrg -Name ContosoStorAcc -Location "East US" -SkuName "Standard_RAGRS" -Kind "StorageV2"
@@ -224,12 +224,12 @@ PS C:\> $cloudService = New-AzCloudService                                      
 
 ```
 
-Di atas kumpulan perintah akan membuat layanan awan dengan mengekstrak informasi NetworkProfile dan RoleProfile dari . CsCfg dan . File CsDef.
+Kumpulan perintah di atas membuat layanan cloud dengan mengekstrak informasi NetworkProfile dan RoleProfile dari . CsCfg dan . File CsDef.
 
-File tersebut juga akan menyediakan informasi OSProfile beserta Sertifikat dari keyvault yang disediakan dalam parameter '-KeyVaultName'.
-Kumpulan parameter ini juga mengunggah . File CsPkg ke StorageAccount yang disediakan.
+File-file tersebut juga akan memberikan informasi OSProfile bersama dengan Sertifikat dari keyvault yang disediakan dalam parameter '-KeyVaultName'.
+Set parameter ini juga mengunggah . File CsPkg ke StorageAccount yang disediakan.
 
-### Contoh 6: Buat layanan awan baru dengan file CsCfg, CsDef, dan Cspkg menggunakan kumpulan parameter 'quickCreateParameterSetWithoutStorage'.
+### Contoh 6: Buat layanan cloud baru dengan file CsCfg, CsDef, dan Cspkg menggunakan set parameter 'quickCreateParameterSetWithoutStorage'.
 ```powershell
 # getting Package URL
 PS C:\> $tokenStartTime = Get-Date 
@@ -250,14 +250,14 @@ PS C:\> $cloudService = New-AzCloudService                                      
 
 ```
 
-Di atas kumpulan perintah akan membuat layanan awan dengan mengekstrak informasi NetworkProfile dan RoleProfile dari . CsCfg dan . File CsDef.
+Kumpulan perintah di atas membuat layanan cloud dengan mengekstrak informasi NetworkProfile dan RoleProfile dari . CsCfg dan . File CsDef.
 
-File tersebut juga akan menyediakan informasi OSProfile beserta Sertifikat dari keyvault yang disediakan dalam parameter '-KeyVaultName'.
+File-file tersebut juga akan memberikan informasi OSProfile bersama dengan Sertifikat dari keyvault yang disediakan dalam parameter '-KeyVaultName'.
 
 ## PARAMETERS
 
 ### -AllowModelOverride
-(Opsional) Menunjukkan apakah properti sku peran (roleProfile.roles.sku) yang ditentukan dalam model/templat harus menimpa jumlah contoh peran dan ukuran vm yang ditentukan dalam masing-masing .cscfg dan .csdef. Nilai defaultnya adalah `false`.
+(Opsional) Menunjukkan apakah properti sku peran (roleProfile.roles.sku) yang ditentukan dalam model/templat harus mengambil alih jumlah instans peran dan ukuran vm yang ditentukan dalam .cscfg dan .csdef masing-masing. Nilai defaultnya adalah `false`.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,8 +286,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Configuration
-Menentukan konfigurasi layanan XML (.cscfg) untuk layanan awan.
+### -Konfigurasi
+Menentukan konfigurasi layanan XML (.cscfg) untuk layanan cloud.
 
 ```yaml
 Type: System.String
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationFile
-Menentukan konfigurasi layanan XML (.cscfg) untuk layanan awan.
+Menentukan konfigurasi layanan XML (.cscfg) untuk layanan cloud.
 
 ```yaml
 Type: System.String
@@ -317,8 +317,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationUrl
-Menentukan URL yang merujuk ke lokasi konfigurasi layanan dalam layanan Blob.
-URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (Sas, Shared Access Signature) dari akun penyimpanan apa pun. Ini adalah properti khusus untuk menulis dan tidak dikembalikan dalam panggilan GET.
+Menentukan URL yang merujuk ke lokasi konfigurasi layanan di Blob service.
+URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (SAS) dari akun penyimpanan apa pun. Ini adalah properti hanya-tulis dan tidak dikembalikan dalam panggilan GET.
 
 ```yaml
 Type: System.String
@@ -378,8 +378,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionProfile
-Menjelaskan profil ekstensi layanan awan.
-Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPROFILE dan membuat tabel hash.
+Menjelaskan profil ekstensi layanan cloud.
+Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPROFILE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudServiceExtensionProfile
@@ -423,7 +423,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan awan.
 
 ```yaml
@@ -440,7 +440,7 @@ Accept wildcard characters: False
 
 ### -NetworkProfile
 Profil Jaringan untuk layanan awan.
-Untuk membuat, lihat bagian CATATAN untuk properti NETWORKPROFILE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NETWORKPROFILE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudServiceNetworkProfile
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -470,8 +470,8 @@ Accept wildcard characters: False
 ```
 
 ### -OSProfile
-Menjelaskan profil OS untuk layanan awan.
-Untuk membuat, lihat bagian CATATAN untuk properti OSPROFILE dan membuat tabel hash.
+Menjelaskan profil OS untuk layanan cloud.
+Untuk membuat, lihat bagian CATATAN untuk properti OSPROFILE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudServiceOSProfile
@@ -487,7 +487,7 @@ Accept wildcard characters: False
 
 ### -PackageFile
 Jalur ke file .cspkg.
-File akan diunggah ke blob
+Ini akan diunggah ke blob
 
 ```yaml
 Type: System.String
@@ -502,8 +502,8 @@ Accept wildcard characters: False
 ```
 
 ### -PackageUrl
-Menentukan URL yang merujuk ke lokasi paket layanan dalam layanan Blob.
-URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (Sas, Shared Access Signature) dari akun penyimpanan apa pun. Ini adalah properti khusus untuk menulis dan tidak dikembalikan dalam panggilan GET.
+Menentukan URL yang merujuk ke lokasi paket layanan di Blob service.
+URL paket layanan dapat menjadi URI Tanda Tangan Akses Bersama (SAS) dari akun penyimpanan apa pun. Ini adalah properti hanya-tulis dan tidak dikembalikan dalam panggilan GET.
 
 ```yaml
 Type: System.String
@@ -534,7 +534,7 @@ Accept wildcard characters: False
 
 ### -RoleProfile
 Menjelaskan profil peran untuk layanan awan.
-Untuk membuat, lihat bagian CATATAN untuk properti ROLEPROFILE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti ROLEPROFILE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudServiceRoleProfile
@@ -549,10 +549,10 @@ Accept wildcard characters: False
 ```
 
 ### -StartCloudService
-(Opsional) Menunjukkan apakah akan memulai layanan awan segera setelah dibuat.
-Nilai defaultnya adalah `true`. Jika false, model layanan masih digunakan, tapi kode tidak langsung dijalankan.
-Sebaliknya, layanan didukungOff hingga Anda menghubungi Mulai, pada saat layanan akan dimulai.
-Layanan yang disebarkan masih menimbulkan biaya, bahkan jika didukung.
+(Opsional) Menunjukkan apakah akan memulai layanan cloud segera setelah dibuat.
+Nilai defaultnya adalah `true`. Jika false, model layanan masih disebarkan, tetapi kode tidak segera dijalankan.
+Sebagai gantinya, layanan ini adalah PoweredOff sampai Anda memanggil Mulai, pada saat itu layanan akan dimulai.
+Layanan yang disebarkan masih dikenakan biaya, bahkan jika diberdayakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -582,7 +582,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -613,10 +613,10 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeMode
-Mode pembaruan untuk layanan awan.
-Contoh peran dialokasikan untuk memperbarui domain ketika layanan digunakan.
-Pembaruan dapat dimulai secara manual dalam setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan. Nilai yang Mungkin Adalah \<br /\>\<br /\>**AutoManual** \<br /\>\<br /\>\<br /\>\<br /\>**SimultaneousJika**\<br /\>\<br /\> tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diset ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan.
-Jika diset ke Otomatis, pembaruan otomatis diterapkan ke setiap pembaruan domain secara berurutan.
+Perbarui mode untuk layanan awan.
+Instans peran dialokasikan untuk memperbarui domain saat layanan disebarkan.
+Pembaruan dapat dimulai secara manual di setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan. Nilai yang Mungkin adalah \<br /\>\<br /\>**AutoManual** \<br /\>\<br /\>\<br /\>\<br /\>**SimultaneousIf**\<br /\>\<br /\> tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diatur ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan.
+Jika diatur ke Otomatis, pembaruan secara otomatis diterapkan ke setiap domain pembaruan secara berurutan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Support.CloudServiceUpgradeMode
@@ -630,8 +630,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -646,8 +646,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -662,7 +662,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -670,7 +670,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudService
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -679,44 +679,44 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONPROFILE <ICloudServiceExtensionProfile>: Menjelaskan profil ekstensi layanan awan.
+EXTENSIONPROFILE <ICloudServiceExtensionProfile>: Menjelaskan profil ekstensi layanan cloud.
   - `[Extension <IExtension[]>]`: Daftar ekstensi untuk layanan awan.
-    - `[AutoUpgradeMinorVersion <Boolean?>]`: Tentukan secara eksplisit apakah platform bisa secara otomatis memutakhirkan tipeHandlerVersion ke versi minor yang lebih tinggi ketika tersedia.
-    - `[ForceUpdateTag <String>]`: Tag untuk memaksa menerapkan pengaturan publik dan yang diproteksi yang disediakan.         Mengubah nilai tag memungkinkan untuk menjalankan kembali ekstensi tanpa mengubah pengaturan publik atau yang diproteksi.         Jika forceUpdateTag tidak diubah, pembaruan ke pengaturan publik atau yang diproteksi masih akan diterapkan oleh penanganan.         Jika tidak memaksaUpdateTag maupun pengaturan publik atau yang diproteksi berubah, ekstensi akan mengalir ke contoh peran dengan nomor urutan yang sama, dan sudah siap untuk menangani implementasi apakah akan menjalankannya kembali atau tidak
+    - `[AutoUpgradeMinorVersion <Boolean?>]`: Secara eksplisit menentukan apakah platform dapat secara otomatis meningkatkan typeHandlerVersion ke versi minor yang lebih tinggi ketika tersedia.
+    - `[ForceUpdateTag <String>]`: Tag untuk memaksa menerapkan pengaturan publik dan terlindungi yang disediakan.         Mengubah nilai tag memungkinkan untuk menjalankan kembali ekstensi tanpa mengubah pengaturan publik atau terlindungi.         Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau terlindungi akan tetap diterapkan oleh handler.         Jika tidak ada forceUpdateTag atau pengaturan publik atau terproteksi yang berubah, ekstensi akan mengalir ke instans peran dengan nomor urutan yang sama, dan terserah implementasi handler apakah akan menjalankannya kembali atau tidak
     - `[Name <String>]`: Nama ekstensi.
-    - `[ProtectedSetting <String>]`: Pengaturan terlindungi untuk ekstensi yang dienkripsi sebelum dikirimkan ke contoh peran.
+    - `[ProtectedSetting <String>]`: Pengaturan terproteksi untuk ekstensi yang dienkripsi sebelum dikirim ke instans peran.
     - `[ProtectedSettingFromKeyVaultSecretUrl <String>]`: 
-    - `[Publisher <String>]`: Nama penerbit penanganan ekstensi.
-    - `[RolesAppliedTo <String[]>]`: Daftar peran opsional untuk menerapkan ekstensi ini. Jika properti tidak ditentukan atau '*' ditentukan, ekstensi diterapkan ke semua peran di layanan awan.
-    - `[Setting <String>]`: Pengaturan publik untuk ekstensi. Untuk ekstensi JSON, ini adalah pengaturan JSON untuk ekstensi tersebut. Untuk Ekstensi XML (seperti RDP), ini adalah pengaturan XML untuk ekstensi.
+    - `[Publisher <String>]`: Nama penerbit handler ekstensi.
+    - `[RolesAppliedTo <String[]>]`: Daftar peran opsional untuk menerapkan ekstensi ini. Jika properti tidak ditentukan atau '*' ditentukan, ekstensi diterapkan ke semua peran dalam layanan awan.
+    - `[Setting <String>]`: Pengaturan publik untuk ekstensi. Untuk ekstensi JSON, ini adalah pengaturan JSON untuk ekstensi. Untuk Ekstensi XML (seperti RDP), ini adalah pengaturan XML untuk ekstensi.
     - `[SourceVaultId <String>]`: Id Sumber Daya
-    - `[Type <String>]`: Menentukan tipe ekstensi.
-    - `[TypeHandlerVersion <String>]`: Menentukan versi ekstensi. Menentukan versi ekstensi. Jika elemen ini tidak ditentukan atau tanda bintang (*) digunakan sebagai nilai, versi terbaru ekstensi digunakan. Jika nilai ditentukan dengan nomor versi utama dan tanda bintang sebagai nomor versi minor (X.), versi minor terbaru dari versi utama yang ditentukan akan dipilih. Jika nomor versi utama dan nomor versi minor ditentukan (X.Y), versi ekstensi tertentu dipilih. Jika versi ditentukan, pemutakhiran otomatis dijalankan pada contoh peran.
+    - `[Type <String>]`: Menentukan jenis ekstensi.
+    - `[TypeHandlerVersion <String>]`: Menentukan versi ekstensi. Menentukan versi ekstensi. Jika elemen ini tidak ditentukan atau tanda bintang (*) digunakan sebagai nilai, versi terbaru ekstensi akan digunakan. Jika nilai ditentukan dengan nomor versi utama dan tanda bintang sebagai nomor versi minor (X.), versi minor terbaru dari versi utama yang ditentukan dipilih. Jika nomor versi utama dan nomor versi minor ditentukan (X.Y), versi ekstensi tertentu dipilih. Jika versi ditentukan, peningkatan otomatis dilakukan pada instans peran.
 
-NETWORKPROFILE <ICloudServiceNetworkProfile>: Profil Jaringan untuk layanan awan.
-  - `[LoadBalancerConfiguration <ILoadBalancerConfiguration[]>]`: Daftar konfigurasi Penyeimbang muat. Layanan awan dapat memiliki hingga dua konfigurasi penyeimbang muat, yang terkait dengan Public Load Balancer dan Internal Load Balancer.
-    - `FrontendIPConfiguration <ILoadBalancerFrontendIPConfiguration[]>`: Menentukan IP frontend yang akan digunakan untuk penyeimbang muat. Hanya alamat IP frontend IPv4 yang didukung. Setiap konfigurasi penyeimbang muat harus memiliki satu konfigurasi IP frontend.
-      - `Name <String>`: Nama sumber daya yang unik dalam kumpulan konfigurasi IP frontend yang digunakan oleh penyeimbang muat. Nama ini bisa digunakan untuk mengakses sumber daya.
-      - `[PrivateIPAddress <String>]`: Alamat IP privat jaringan virtual konfigurasi IP.
+NETWORKPROFILE <ICloudServiceNetworkProfile>: Profil Jaringan untuk layanan cloud.
+  - `[LoadBalancerConfiguration <ILoadBalancerConfiguration[]>]`: Daftar konfigurasi Load balancer. Layanan cloud dapat memiliki hingga dua konfigurasi load balancer, sesuai dengan Load Balancer Publik dan Load Balancer Internal.
+    - `FrontendIPConfiguration <ILoadBalancerFrontendIPConfiguration[]>`: Menentukan IP frontend yang akan digunakan untuk load balancer. Hanya alamat IP frontend IPv4 yang didukung. Setiap konfigurasi load balancer harus memiliki tepat satu konfigurasi IP frontend.
+      - `Name <String>`: Nama sumber daya yang unik dalam kumpulan konfigurasi IP frontend yang digunakan oleh load balancer. Nama ini dapat digunakan untuk mengakses sumber daya.
+      - `[PrivateIPAddress <String>]`: Alamat IP privat jaringan virtual dari konfigurasi IP.
       - `[PublicIPAddressId <String>]`: Id Sumber Daya
       - `[SubnetId <String>]`: Id Sumber Daya
-    - `Name <String>`: Nama Penyeimbang muat
+    - `Name <String>`: Nama Load balancer
     - `[Id <String>]`: Id Sumber Daya
-  - `[SwappableCloudService <ISubResource>]`: Id reference of the cloud service containing the target IP with which the subject cloud service can perform a swap. Properti ini tidak dapat diperbarui setelah diatur. Layanan awan yang dapat menukar yang dirujuk oleh id ini harus ada jika tidak kesalahan akan dilakukan.
+  - `[SwappableCloudService <ISubResource>]`: Referensi id layanan awan yang berisi IP target tempat layanan cloud subjek dapat melakukan pertukaran. Properti ini tidak dapat diperbarui setelah diatur. Layanan cloud yang dapat ditukar yang dirujuk oleh id ini harus ada jika tidak, kesalahan akan dilemparkan.
     - `[Id <String>]`: Id Sumber Daya
 
-OSPROFILE <ICloudServiceOSProfile>: Menjelaskan profil OS untuk layanan awan.
-  - `[Secret <ICloudServiceVaultSecretGroup[]>]`: Menentukan kumpulan sertifikat yang harus diinstal menjadi contoh peran.
+OSPROFILE <ICloudServiceOSProfile>: Menjelaskan profil OS untuk layanan cloud.
+  - `[Secret <ICloudServiceVaultSecretGroup[]>]`: Menentukan sekumpulan sertifikat yang harus diinstal ke instans peran.
     - `[SourceVaultId <String>]`: Id Sumber Daya
-    - `[VaultCertificate <ICloudServiceVaultCertificate[]>]`: Daftar referensi kunci vault dalam SourceVault yang berisi sertifikat.
-      - `[CertificateUrl <String>]`: URL sertifikat berikut telah diunggah ke Key Vault sebagai rahasia.
+    - `[VaultCertificate <ICloudServiceVaultCertificate[]>]`: Daftar referensi brankas kunci di SourceVault yang berisi sertifikat.
+      - `[CertificateUrl <String>]`: Ini adalah URL sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
 
-ROLEPROFILE <ICloudServiceRoleProfile>: Menjelaskan profil peran untuk layanan awan.
+ROLEPROFILE <ICloudServiceRoleProfile>: Menjelaskan profil peran untuk layanan cloud.
   - `[Role <ICloudServiceRoleProfileProperties[]>]`: Daftar peran untuk layanan awan.
     - `[Name <String>]`: Nama sumber daya.
-    - `[SkuCapacity <Int64?>]`: Menentukan jumlah instans peran di layanan awan.
-    - `[SkuName <String>]`: Nama sku. CATATAN: Jika SKU baru tidak didukung pada perangkat keras layanan awan saat ini, Anda harus menghapus dan membuat ulang layanan awan atau kembali ke sku lama.
-    - `[SkuTier <String>]`: Menentukan tingkatan layanan awan. Nilai yang Mungkin adalah <br /><br /> **Standar** <br /><br /> **Dasar**
+    - `[SkuCapacity <Int64?>]`: Menentukan jumlah instans peran di layanan cloud.
+    - `[SkuName <String>]`: Nama sku. CATATAN: Jika SKU baru tidak didukung pada perangkat keras tempat layanan cloud saat ini aktif, Anda perlu menghapus dan membuat ulang layanan cloud atau kembali ke sku lama.
+    - `[SkuTier <String>]`: Menentukan tingkat layanan cloud. Nilai yang Mungkin adalah <br /><br /> **Standard** <br /><br /> **Dasar**
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 05fce55fa1e4fb9e69630666433b61f5df367a1c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135697"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980818"
 ---
 # New-AzureVMSqlServerAutoBackupConfig
 
@@ -337,7 +337,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

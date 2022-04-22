@@ -9,16 +9,16 @@ ms.openlocfilehash: 915168e8839f7fdd8db6cf097d7624878d6953bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142082461"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143027171"
 ---
 # Get-AzNetAppFilesVolumeBackupStatus
 
 ## SYNOPSIS
-Dapatkan status cadangan volume
+Mendapatkan status pencadangan volume
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumebackupstatus) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvolumebackupstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzNetAppFilesVolumeBackupStatus -InputObject <PSNetAppFilesVolume>
 ```
 
 ## DESCRIPTION
-CmdLet **Get-AzNetAppFilesVolumeBackupStatus** mendapatkan status pencadangan untuk volume
+CmdLet **Get-AzNetAppFilesVolumeBackupStatus** mendapatkan status cadangan untuk volume
 
 ## EXAMPLES
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume untuk mendapatkan status cadangan untuk
+Objek volume untuk mendapatkan status pencadangan untuk
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -105,7 +105,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama volume ANF
 
 ```yaml
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolObject
-Objek pool yang berisi volume yang akan dikembalikan
+Objek kumpulan yang berisi volume yang akan dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,6 +195,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolumeBackupStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

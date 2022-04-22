@@ -9,8 +9,8 @@ ms.openlocfilehash: ebdcd48b2df3088900ac151824a0703571517041
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000463"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142992791"
 ---
 # Update-AzTimeSeriesInsightsAccessPolicy
 
@@ -226,7 +226,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.IAccessPolicyResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

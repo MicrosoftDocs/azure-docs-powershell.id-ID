@@ -9,8 +9,8 @@ ms.openlocfilehash: 39d4a8672aca53edbcdec26e3732c286b077a153
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142475225"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142966511"
 ---
 # Get-AzElasticDetailVMIngestion
 
@@ -181,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IVMIngestionDetailsResponse
 
-## CATATAN
+## NOTES
 
 ALIAS
 

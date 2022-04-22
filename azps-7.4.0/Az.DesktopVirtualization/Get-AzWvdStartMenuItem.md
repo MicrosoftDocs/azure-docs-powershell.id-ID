@@ -9,8 +9,8 @@ ms.openlocfilehash: da8739ce002c58628e1d2408ff60f1466985aefa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002314"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143002529"
 ---
 # Get-AzWvdStartMenuItem
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IStartMenuItem
 
-## CATATAN
+## NOTES
 
 ALIAS
 

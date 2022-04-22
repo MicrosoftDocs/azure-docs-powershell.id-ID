@@ -9,8 +9,8 @@ ms.openlocfilehash: 659047e178b3c54f5af05d192d63a59119895598
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143026181"
 ---
 # Set-AzNatGateway
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNatGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

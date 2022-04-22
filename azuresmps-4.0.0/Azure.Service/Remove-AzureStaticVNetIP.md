@@ -7,8 +7,8 @@ ms.openlocfilehash: 89576dc90e7584ab11f0fd98b46c83404fe20907
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135699"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142980353"
 ---
 # Remove-AzureStaticVNetIP
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

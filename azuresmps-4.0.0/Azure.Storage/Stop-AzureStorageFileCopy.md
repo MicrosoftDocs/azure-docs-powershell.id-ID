@@ -7,8 +7,8 @@ ms.openlocfilehash: 9ae9644341d98ac9aca18be5bf9e4f50a36e2ea5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311212"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978625"
 ---
 # Stop-AzureStorageFileCopy
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

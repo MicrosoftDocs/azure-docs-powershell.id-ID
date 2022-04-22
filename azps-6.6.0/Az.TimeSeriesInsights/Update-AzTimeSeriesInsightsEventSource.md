@@ -9,8 +9,8 @@ ms.openlocfilehash: 792a25e2d89f3f72183584fa6933e961d7254d53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142296097"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142959689"
 ---
 # Update-AzTimeSeriesInsightsEventSource
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.IEventSourceResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1222c867b23f1b9040a95236147e181a3d10823d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142465901"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143012141"
 ---
 # Update-AzPostgreSqlConfiguration
 
@@ -260,7 +260,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

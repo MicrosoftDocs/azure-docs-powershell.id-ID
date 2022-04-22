@@ -10,8 +10,8 @@ ms.openlocfilehash: 42c7ec89d51fb38e9f555259a9783932f9a0c40b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141903909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143024129"
 ---
 # Get-AzSqlDatabaseUpgradeHint
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Sql.LegacySdk.Models.RecommendedDatabaseProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
