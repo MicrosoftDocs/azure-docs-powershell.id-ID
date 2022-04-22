@@ -7,8 +7,8 @@ ms.openlocfilehash: 62a7595f8f635a6609d00520eae2bc91756ddd47
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816674"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043372"
 ---
 # Get-AzureVNetConnection
 
@@ -69,7 +69,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

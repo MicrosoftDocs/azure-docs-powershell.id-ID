@@ -7,8 +7,8 @@ ms.openlocfilehash: ffd2667f8c07c5b0594abe38f6cee5d40ce91a49
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381337"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143040617"
 ---
 # New-AzsComputeQuota
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### ComputeQuotaObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

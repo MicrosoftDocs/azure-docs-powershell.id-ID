@@ -10,8 +10,8 @@ ms.openlocfilehash: af18a5a93cf08fe4806af429aee667b569c527d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923325"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044739"
 ---
 # Remove-AzureRmTrafficManagerCustomHeaderFromProfile
 
@@ -140,7 +140,7 @@ Cmdlet ini menerima objek **TrafficManagerProfile** untuk cmdlet ini.
 ### Microsoft.Azure.Commands.Network.TrafficManagerProfile
 Cmdlet ini mengembalikan objek **TrafficManagerProfile** yang dimodifikasi.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

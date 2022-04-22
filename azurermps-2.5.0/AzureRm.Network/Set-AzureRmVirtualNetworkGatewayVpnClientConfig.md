@@ -8,8 +8,8 @@ ms.openlocfilehash: 471ad0ba4126026960879e5babbb592f352d3bcc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142145573"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051688"
 ---
 # Set-AzureRmVirtualNetworkGatewayVpnClientConfig
 
@@ -187,7 +187,7 @@ Cmdlet ini menerima instans pipelin objek **Microsoft.Azure.Commands.Network.Mod
 ###  
 Cmdlet ini mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway** yang sudah ada.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

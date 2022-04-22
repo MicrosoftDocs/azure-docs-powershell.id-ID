@@ -10,8 +10,8 @@ ms.openlocfilehash: 1544b557382deb7ff3c005a184612f48c293521e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142141271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048941"
 ---
 # Set-AzureRmHDInsightDefaultStorage
 
@@ -161,6 +161,6 @@ Parameter: Config (ByValue)
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

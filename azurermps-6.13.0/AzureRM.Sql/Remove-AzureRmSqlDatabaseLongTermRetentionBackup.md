@@ -9,8 +9,8 @@ ms.openlocfilehash: 68481d49fb37fb5246021fb8daa2d53a64b5c6b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045377"
 ---
 # Remove-AzureRmSqlDatabaseLongTermRetentionBackup
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama Database Azure SQL tempat cadangan berasal.
+Nama Azure SQL Database cadangan berasal.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server tempat pencadangan berada di bawah.
+Nama server Azure SQL cadangan berada di bawah.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseLongTermRetentionBackupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -265,4 +265,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlDatabaseBackupLongTermRetentionPolicy](./Set-AzureRmSqlDatabaseBackupLongTermRetentionPolicy.md)
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

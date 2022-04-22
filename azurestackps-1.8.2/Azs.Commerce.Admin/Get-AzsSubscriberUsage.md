@@ -7,8 +7,8 @@ ms.openlocfilehash: 4f45a90d4f8e8c3072393c5dc959885636b64dce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815036"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143040671"
 ---
 # Get-AzsSubscriberUsage
 
@@ -152,6 +152,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Commerce.Admin.Models.UsageAggregate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

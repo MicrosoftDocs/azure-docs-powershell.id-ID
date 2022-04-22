@@ -9,8 +9,8 @@ ms.openlocfilehash: 57b09ea3267447f16ceadf4d1eae51f997c53a82
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816885"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045819"
 ---
 # Get-AzureRmSearchService
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

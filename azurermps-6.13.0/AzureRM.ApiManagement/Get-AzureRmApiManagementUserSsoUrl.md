@@ -10,8 +10,8 @@ ms.openlocfilehash: 485150470bce308d3ab6d1a9a70eabd887abab09
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360429"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049632"
 ---
 # Get-AzureRmApiManagementUserSsoUrl
 
@@ -102,7 +102,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

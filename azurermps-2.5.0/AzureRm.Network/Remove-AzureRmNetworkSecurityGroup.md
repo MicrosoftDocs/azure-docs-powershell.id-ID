@@ -8,8 +8,8 @@ ms.openlocfilehash: 32709a1a0280604b784c9f094478858f8c4bc4ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392443"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052209"
 ---
 # Remove-AzureRmNetworkSecurityGroup
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 965df90e8a94048e64c0d4d92bcc0f86d6ffb37c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773078"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044487"
 ---
 # Add-AzurePHPWebRole
 
@@ -24,8 +24,8 @@ Add-AzurePHPWebRole [-Name <String>] [-Instances <Int32>] [-Profile <AzureSMProf
 ```
 
 ## DESCRIPTION
-Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 dari modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Add-AzurePHPWebRole** membuat file dan konfigurasi, terkadang disebut sebagai perancah, untuk aplikasi PHP yang akan dihosting di Azure melalui IIS.
 
@@ -38,17 +38,17 @@ PS C:\> Add-AzurePHPWebRole
 
 Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru menggunakan nilai default layanan bernama "WebRole1" dengan 1 instans.
 
-### Contoh 2: Menambahkan peran web dengan beberapa contoh
+### Contoh 2: Menambahkan peran web dengan beberapa instans
 ```
 PS C:\> Add-AzurePHPWebRole MyWebRole -I 2
 ```
 
-Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru ke aplikasi saat ini, menggunakan nama "MyWebRole" dan jumlah contoh peran 2.
+Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru ke aplikasi saat ini, menggunakan nama "MyWebRole" dan jumlah instans peran 2.
 
 ## PARAMETERS
 
-### -Instances
-Menentukan jumlah contoh peran untuk peran web ini.
+### -Instans
+Menentukan jumlah instans peran untuk peran web ini.
 Defaultnya adalah 1.
 
 ```yaml
@@ -63,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama peran web.
 Nama menentukan nama direktori yang berisi file dan konfigurasi yang diperlukan untuk aplikasi PHP.
 Defaultnya adalah WebRole#, di mana # adalah jumlah peran web dalam layanan.
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -Profil
 Menentukan profil Azure tempat cmdlet ini dibaca.
-Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -97,13 +97,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

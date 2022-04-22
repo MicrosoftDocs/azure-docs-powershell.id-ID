@@ -10,8 +10,8 @@ ms.openlocfilehash: 5a15df345a57883337d89f18d369da0883f0fe38
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142129139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143032751"
 ---
 # Add-AzVhd
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.VhdUploadContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

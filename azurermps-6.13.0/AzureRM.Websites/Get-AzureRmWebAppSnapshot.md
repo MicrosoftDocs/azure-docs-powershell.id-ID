@@ -9,8 +9,8 @@ ms.openlocfilehash: 292364ae6355c640ed66116c84289fe303acdd53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044706"
 ---
 # Get-AzureRmWebAppSnapshot
 
@@ -135,6 +135,6 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.BackupRestore.AzureWebAppSnapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

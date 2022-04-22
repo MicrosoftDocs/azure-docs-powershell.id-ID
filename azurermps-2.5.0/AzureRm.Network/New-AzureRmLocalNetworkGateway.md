@@ -8,8 +8,8 @@ ms.openlocfilehash: c450d2f6fd3d9a9b0368a667573aadadbd218d8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103778"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052551"
 ---
 # New-AzureRmLocalNetworkGateway
 
@@ -28,9 +28,9 @@ New-AzureRmLocalNetworkGateway -Name <String> -ResourceGroupName <String> -Locat
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Di Tempat.
+Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Secara Lokal.
 
-Cmdlet **New-AzureRmLocalNetworkGateway** membuat objek yang mewakili gateway lokal Anda berdasarkan Nama, Nama Grup Sumber Daya, Lokasi, dan Alamat IP gateway, serta Prefiks Alamat jaringan Lokal yang akan tersambung ke Azure.
+Cmdlet **New-AzureRmLocalNetworkGateway** membuat objek yang mewakili gateway lokal Anda berdasarkan Nama, Nama Grup Sumber Daya, Lokasi, dan Alamat IP gateway, serta Awalan Alamat jaringan Lokal yang akan tersambung ke Azure.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Cmdlet **New-AzureRmLocalNetworkGateway** membuat objek yang mewakili gateway lo
 New-AzureRmLocalNetworkGateway -Name myLocalGW -ResourceGroupName myRG -Location "West US" -GatewayIpAddress 23.99.221.164 -AddressPrefix "10.5.51.0/24"
 ```
 
-Membuat objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" di lokasi "AS Barat" dengan alamat IP "23.99.221.164" dan prefiks alamat "10.5.51.0/24" di awal.
+Membuat objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" di lokasi "US Barat" dengan alamat IP "23.99.221.164" dan awalan alamat "10.5.51.0/24" lokal.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -112,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya:
+Pasangan kunci-nilai dalam bentuk tabel hash. Contohnya:
 
 @{key0="value0";key1=$null;key2="value2"}
 
@@ -211,8 +211,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -251,12 +251,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzureRmLocalNetworkGateway](./Get-AzureRmLocalNetworkGateway.md)
 
-[Hapus-AzureRmLocalNetworkGateway](./Remove-AzureRmLocalNetworkGateway.md)
+[Remove-AzureRmLocalNetworkGateway](./Remove-AzureRmLocalNetworkGateway.md)
 
 [Set-AzureRmLocalNetworkGateway](./Set-AzureRmLocalNetworkGateway.md)

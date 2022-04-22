@@ -7,8 +7,8 @@ ms.openlocfilehash: 14885871139eaed1c901312b9540a90d385795e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141878972"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143040437"
 ---
 # Close-AzsAlert
 
@@ -184,6 +184,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.InfrastructureInsights.Admin.Models.Alert
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

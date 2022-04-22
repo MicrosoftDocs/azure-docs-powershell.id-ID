@@ -7,8 +7,8 @@ ms.openlocfilehash: 6691110a97976a1cea5d7de5597e3d688aba4f44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142279051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043929"
 ---
 # Get-AzureRemoteAppVmStaleAdObject
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

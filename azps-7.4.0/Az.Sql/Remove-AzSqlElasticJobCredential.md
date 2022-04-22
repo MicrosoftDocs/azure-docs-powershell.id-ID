@@ -9,8 +9,8 @@ ms.openlocfilehash: 1a82b35ff529102f76d30d1bbb36b67dcb1cbd9d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143058311"
 ---
 # Remove-AzSqlElasticJobCredential
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobCredentialModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -8,8 +8,8 @@ ms.openlocfilehash: aa9a0c3a1e06c7ef4a66c58f3039bda19d4824ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391816"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051309"
 ---
 # Get-AzureRmResource
 
@@ -344,7 +344,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManagement.Models.PSResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

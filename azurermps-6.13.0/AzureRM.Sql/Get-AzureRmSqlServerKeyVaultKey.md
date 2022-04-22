@@ -9,8 +9,8 @@ ms.openlocfilehash: 74d1909bee5eb4d2645fa1d25a429d1bc66d9f6c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045581"
 ---
 # Get-AzureRmSqlServerKeyVaultKey
 
@@ -32,7 +32,7 @@ Anda dapat melihat semua kunci di server atau melihat kunci tertentu dengan meny
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua tombol Key Vault
+### Contoh 1: Dapatkan semua kunci Key Vault
 ```
 PS C:\> Get-AzureRmSqlServerKeyVaultKey -ServerName 'ContosoServer' -ResourceGroupName 'ContosoResourceGroup'
 ```
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-The Azure Key Vault KeyId.
+Azure Key Vault KeyId.
 
 ```yaml
 Type: System.String
@@ -152,8 +152,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerKeyVaultKey.Model.AzureSqlServerKeyVaultKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -9,8 +9,8 @@ ms.openlocfilehash: 342c18add7438c75babd1225722c3830c4c5c696
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141881869"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046476"
 ---
 # Get-AzureRmWcfRelay
 
@@ -127,6 +127,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
