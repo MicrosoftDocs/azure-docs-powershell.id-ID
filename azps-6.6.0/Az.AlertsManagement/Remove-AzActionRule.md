@@ -9,8 +9,8 @@ ms.openlocfilehash: 59e57bc3ec6c0c1888b2060753c6661ebcadfa3b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142275685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142971587"
 ---
 # Remove-AzActionRule
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 25284786ad35cd3b030ddb65445f9a25e3612a81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427654"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142930817"
 ---
 # Remove-AzVMwareCluster
 
@@ -233,7 +233,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1fb24f7f9d8122c8e435841a747d8e4e7606467a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143003123"
 ---
 # Update-AzDataFactoryV2
 
@@ -313,6 +313,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: e1780eeb2f5d03fafd056c7987f648eae989b3dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141771224"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142978553"
 ---
 # Get-AzsAzureBridgeDownloadedProduct
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.AzureBridge.Admin.Models.DownloadedProductResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

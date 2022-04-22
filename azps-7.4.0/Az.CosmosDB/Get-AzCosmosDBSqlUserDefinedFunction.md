@@ -9,8 +9,8 @@ ms.openlocfilehash: 542f188ec91be8eeeb38badc403d3f7b51404d1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433891"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142943687"
 ---
 # Get-AzCosmosDBSqlUserDefinedFunction
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlUserDefinedFunctionGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

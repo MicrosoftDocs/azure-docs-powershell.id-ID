@@ -9,8 +9,8 @@ ms.openlocfilehash: b867ee87a86993037b766457a73e7418c9605cbc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233109"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142966943"
 ---
 # Update-AzWvdDesktop
 
@@ -41,7 +41,7 @@ Memperbarui desktop.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Desktop Desktop Virtual Windows
+### Contoh 1: Memperbarui Desktop Virtual Windows
 ```powershell
 PS C:\> Update-AzWvdDesktop -ResourceGroupName ResourceGroupName `
                              -GroupName ApplicationGroupName `
@@ -54,7 +54,7 @@ Name                             Type
 ApplicationGroupName/DesktopName Microsoft.DesktopVirtualization/applicationgroups/desktops
 ```
 
-Perintah ini memperbarui Desktop Desktop Virtual Windows dalam Grup aplikasi.
+Perintah ini memperbarui Windows Desktop Desktop Virtual dalam Grup aplikasi.
 
 ## PARAMETERS
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IDesktop
 
-## CATATAN
+## NOTES
 
 ALIAS
 

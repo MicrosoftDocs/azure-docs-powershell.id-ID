@@ -8,8 +8,8 @@ ms.openlocfilehash: 462acabd83090a893119d94d93fd767907c5144b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970505"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142989677"
 ---
 # Remove-AzureRmADServicePrincipal
 
@@ -288,7 +288,7 @@ Parameter: ApplicationObject (ByValue)
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

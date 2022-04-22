@@ -9,8 +9,8 @@ ms.openlocfilehash: b7140570ecf6464483d0dc7da67e10f8b4ed5d70
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357683"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922069"
 ---
 # Set-AzureRmDataLakeAnalyticsFirewallRule
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.DataLakeAnalyticsFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

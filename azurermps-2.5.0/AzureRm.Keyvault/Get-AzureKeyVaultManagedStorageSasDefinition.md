@@ -7,8 +7,8 @@ ms.openlocfilehash: dd02aa2235a154e5bb600b13c935ebe9b229ba18
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848228"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142991081"
 ---
 # Get-AzureKeyVaultManagedStorageSasDefinition
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageSasDefinitionListItem, Microsoft.Azure.Commands.KeyVault, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null]]
 Microsoft.Azure.Commands.KeyVault.Models.ManagedStorageSasDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

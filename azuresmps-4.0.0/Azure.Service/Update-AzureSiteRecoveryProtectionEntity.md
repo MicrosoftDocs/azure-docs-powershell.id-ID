@@ -7,8 +7,8 @@ ms.openlocfilehash: a43251167510e21f7c262e56e8fc9695108acad2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142333950"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142979068"
 ---
 # Update-AzureSiteRecoveryProtectionEntity
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

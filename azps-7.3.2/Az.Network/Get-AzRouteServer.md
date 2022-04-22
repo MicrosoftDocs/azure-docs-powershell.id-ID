@@ -9,8 +9,8 @@ ms.openlocfilehash: b475f9d218e3f61d8b407f9f05ecb90af9e9b38b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142496033"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142948799"
 ---
 # Get-AzRouteServer
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteServer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: ea93eea25d4807d2d34261e4fce5aace2e6bbb3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142992215"
 ---
 # Remove-AzWebAppSlotTriggeredWebJob
 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

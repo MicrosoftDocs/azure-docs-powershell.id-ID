@@ -10,8 +10,8 @@ ms.openlocfilehash: f86e0f18c7d793b5876a48c39b56b11c14b17546
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142091498"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142972361"
 ---
 # Get-AzWebApp
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.Site
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

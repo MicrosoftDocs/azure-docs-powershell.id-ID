@@ -9,8 +9,8 @@ ms.openlocfilehash: a8f147b4e2c8a1f4525585f8622b7195ed759022
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280734"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142983395"
 ---
 # Remove-AzureRmSqlDatabaseFromFailoverGroup
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.FailoverGroup.Model.AzureSqlFailoverGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

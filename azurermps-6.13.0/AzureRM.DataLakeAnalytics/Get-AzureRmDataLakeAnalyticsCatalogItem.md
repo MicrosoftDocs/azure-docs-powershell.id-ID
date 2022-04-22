@@ -10,8 +10,8 @@ ms.openlocfilehash: bac4e3e2cc4471b8cf015f2f3ebeab421097f81c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281603"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142922267"
 ---
 # Get-AzureRmDataLakeAnalyticsCatalogItem
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.CatalogItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

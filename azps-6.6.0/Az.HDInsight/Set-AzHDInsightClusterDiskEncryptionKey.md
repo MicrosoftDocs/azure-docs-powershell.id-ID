@@ -10,8 +10,8 @@ ms.openlocfilehash: 8f747a68697f344ca9a2d90fc197e2c75932cc47
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142305043"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142965971"
 ---
 # Set-AzHDInsightClusterDiskEncryptionKey
 
@@ -238,7 +238,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.HDInsight.Models.Cluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
