@@ -7,8 +7,8 @@ ms.openlocfilehash: 81a7a64f1880e2ed9acb2fedd3f90df614f1619d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141877028"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142913141"
 ---
 # Get-AzsComputeQuota
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 308c7961f74637142ac2702fd9ad470f02bd47b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176424"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142938467"
 ---
 # New-AzVpnClientRevokedCertificate
 
@@ -105,7 +105,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

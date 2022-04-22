@@ -10,8 +10,8 @@ ms.openlocfilehash: e3da436e302bf3661b9576c81b52af9b4743ddb0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141909543"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142899857"
 ---
 # Remove-AzApplicationGatewayHttpListener
 
@@ -102,7 +102,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

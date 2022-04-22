@@ -9,8 +9,8 @@ ms.openlocfilehash: fc33dcb9db62bf4d8004b7e29f54e3547ecdc532
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431699"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142939457"
 ---
 # Get-AzAvailableServiceDelegation
 
@@ -91,7 +91,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAvailableDelegation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

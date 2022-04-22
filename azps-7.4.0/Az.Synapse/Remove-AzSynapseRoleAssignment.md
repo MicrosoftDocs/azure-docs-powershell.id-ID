@@ -9,8 +9,8 @@ ms.openlocfilehash: 56228fb1a77d835e8967434d255dc32f69d07d34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988806"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931519"
 ---
 # Remove-AzSynapseRoleAssignment
 
@@ -367,6 +367,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 0a22053c756563d671de022e5ef5f21b4dff33fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141919352"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142911712"
 ---
 # Close-AzsAlert
 
@@ -573,7 +573,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

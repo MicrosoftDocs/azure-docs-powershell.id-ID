@@ -9,8 +9,8 @@ ms.openlocfilehash: 0cb05819dd1aa00b4d8798404663c0892ac05006
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427657"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142930925"
 ---
 # New-AzVMwareVMPlacementPolicyPropertiesObject
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.VMPlacementPolicyProperties
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: f790266f1e61446cb9d1c257929cf8b6e3ab25d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780431"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142926127"
 ---
 # Get-AzureRmADGroupMember
 
@@ -188,7 +188,7 @@ Parameter: GroupObject (ByValue)
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

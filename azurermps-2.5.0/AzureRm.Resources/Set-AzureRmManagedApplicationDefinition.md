@@ -7,8 +7,8 @@ ms.openlocfilehash: ba2d158257f4be0e0daac8de5dd77e906e0abedc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141847355"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142925777"
 ---
 # Set-AzureRmManagedApplicationDefinition
 
@@ -258,6 +258,6 @@ System.String[] System.Collections.Hashtable
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

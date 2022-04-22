@@ -7,8 +7,8 @@ ms.openlocfilehash: 70aef639a77684ab3df082283868cb348dd962f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141876092"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142911737"
 ---
 # Remove-AzsGalleryItem
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

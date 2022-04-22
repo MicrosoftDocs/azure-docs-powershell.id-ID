@@ -9,8 +9,8 @@ ms.openlocfilehash: 7755605a259e86b6590c0d081552df38b544f9da
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142377359"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142907957"
 ---
 # New-AzApiManagementSamplingSetting
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSamplingSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

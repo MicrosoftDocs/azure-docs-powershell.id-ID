@@ -9,8 +9,8 @@ ms.openlocfilehash: dcb3e5c39c58116c14b90a84d9c1b39509f9aa65
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142944983"
 ---
 # Reset-AzStaticWebAppApiKey
 
@@ -236,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

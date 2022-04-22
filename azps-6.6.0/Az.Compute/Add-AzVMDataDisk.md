@@ -10,8 +10,8 @@ ms.openlocfilehash: 193680e0d0f65dd607367fac1ffe12ee14c38ad8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142054415"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905887"
 ---
 # Add-AzVMDataDisk
 
@@ -358,7 +358,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

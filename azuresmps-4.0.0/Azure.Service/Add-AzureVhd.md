@@ -7,8 +7,8 @@ ms.openlocfilehash: 7b247aa500cfdbcadcbcf7e75ff580bb393eb875
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095813"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917574"
 ---
 # Add-AzureVhd
 
@@ -63,7 +63,7 @@ Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan SAS URI.
 ## PARAMETERS
 
 ### -BaseImageUriToPatch
-Menentukan URI ke blob gambar dasar di Penyimpanan Blob Azure.
+Menentukan URI ke blob gambar dasar dalam Azure Blob Storage.
 SAS dalam input URI juga didukung.
 
 ```yaml
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan URI ke blob di Penyimpanan Blob Microsoft Azure.
+Menentukan URI ke blob di Microsoft Azure Blob Storage.
 SAS dalam input URI didukung.
 Namun, dalam skenario patching, tujuan tidak dapat berupa URI SAS.
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

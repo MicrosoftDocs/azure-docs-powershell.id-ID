@@ -9,8 +9,8 @@ ms.openlocfilehash: 982eb6bf8c579d3f6ef9a5c6b74299ecf1114eb6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142918631"
 ---
 # Add-AzureRmServiceFabricApplicationCertificate
 
@@ -262,7 +262,7 @@ Parameter: CertificatePassword (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

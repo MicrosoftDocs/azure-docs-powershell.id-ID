@@ -9,13 +9,13 @@ ms.openlocfilehash: 7c49c66dcd9f4edbe12178c366ee63a54995b3e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142938323"
 ---
 # Remove-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
-Menghapus kebijakan ipsec kustom Vpn yang diatur pada sumber daya Gateway Jaringan Virtual.
+Menghapus kebijakan ipsec kustom Vpn yang diatur di sumber daya Gateway Virtual Network.
 
 ## SYNTAX
 
@@ -38,18 +38,18 @@ Remove-AzVpnClientIpsecParameter -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
-Cmdlet **Remove-AzVpnClientIpsecParameter** menghapus parameter ipsec kustom vpn yang diatur di Gateway Jaringan Virtual Anda, yang pada gilirannya mengatur kebijakan ipsec vpn default di gateway VPN berdasarkan Nama VirtualNetworkGateway dan Nama Grup Sumber Daya yang dikirim.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
+Cmdlet **Remove-AzVpnClientIpsecParameter** menghapus parameter ipsec kustom vpn yang diatur di Gateway Virtual Network Anda, yang pada gilirannya mengatur kebijakan ipsec vpn default pada gateway VPN berdasarkan Nama VirtualNetworkGateway dan Nama Grup Sumber Daya yang dilewatkan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus parameter ipsec vpn yang diatur di Gateway Jaringan Virtual
+### Contoh 1: Menghapus parameter ipsec vpn yang diatur di gateway Virtual Network
 ```powershell
 $delete = Remove-AzVpnClientIpsecParameter -VirtualNetworkGatewayName myGateway -ResourceGroupName myRG
 ```
 
-Menghapus parameter ipsec kustom vpn yang diatur di Gateway Jaringan Virtual Anda dengan nama "myGateway" dalam grup sumber daya "myRG". Perintah ini mengembalikan objek bool yang memperlihatkan jika penghapusan berhasil atau gagal.
-Catatan: Ini akan mengakibatkan pengaturan kebijakan ipsec vpn default di Gateway Jaringan Virtual Anda.
+Menghapus parameter ipsec kustom vpn yang diatur di gateway Virtual Network Anda dengan nama "myGateway" dalam grup sumber daya "myRG". Perintah ini mengembalikan objek bool yang memperlihatkan jika penghapusan berhasil atau gagal.
+Catatan: Ini akan mengakibatkan pengaturan kebijakan ipsec vpn default di Gateway Virtual Network Anda.
 
 ## PARAMETERS
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

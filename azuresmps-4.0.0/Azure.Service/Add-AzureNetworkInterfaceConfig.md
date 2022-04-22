@@ -7,8 +7,8 @@ ms.openlocfilehash: f88b9c2a56102bee4151660d097aba0333f7ae38
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246160"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917557"
 ---
 # Add-AzureNetworkInterfaceConfig
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: e8854274144355ab3f8f55dc22b67d9e93d92ac4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170806"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142931393"
 ---
 # Update-AzSynapseFirewallRule
 
@@ -220,6 +220,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseIpFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

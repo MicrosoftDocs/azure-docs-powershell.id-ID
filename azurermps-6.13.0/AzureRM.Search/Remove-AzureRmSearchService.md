@@ -9,8 +9,8 @@ ms.openlocfilehash: c558a5d7228253e0a76b0d47fb21f581b4e06f11
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248255"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142918919"
 ---
 # Remove-AzureRmSearchService
 
@@ -208,7 +208,7 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

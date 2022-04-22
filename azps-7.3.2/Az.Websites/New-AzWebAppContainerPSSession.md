@@ -9,8 +9,8 @@ ms.openlocfilehash: f60711e03889652cd3d8dbbfb74b46c44869e95b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141932055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142945073"
 ---
 # New-AzWebAppContainerPSSession
 
@@ -182,6 +182,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.Runspaces.PSSession
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

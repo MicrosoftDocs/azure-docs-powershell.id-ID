@@ -10,8 +10,8 @@ ms.openlocfilehash: c92e42f49368e894006da0f7afeb9ffcf7e4a564
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142101251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924712"
 ---
 # Get-AzureRmAutomationCredential
 
@@ -35,7 +35,7 @@ Get-AzureRmAutomationCredential [-Name] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationCredential** mendapatkan satu kredensial Azure Automation atau lebih.
+Cmdlet **Get-AzureRmAutomationCredential** mendapatkan satu atau beberapa kredensial Azure Automation.
 Secara default, semua kredensial dikembalikan.
 Tentukan nama kredensial untuk mendapatkan kredensial tertentu.
 Untuk tujuan keamanan, cmdlet ini tidak mengembalikan kata sandi kredensial.
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CredentialInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
