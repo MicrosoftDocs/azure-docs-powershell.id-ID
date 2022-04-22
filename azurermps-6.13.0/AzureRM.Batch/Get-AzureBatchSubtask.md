@@ -10,8 +10,8 @@ ms.openlocfilehash: 5aa0ccc7da257cf20deb4a79d2b5415aa4c45885
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389833"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795420"
 ---
 # Get-AzureBatchSubtask
 
@@ -164,7 +164,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSSubtaskInformasi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

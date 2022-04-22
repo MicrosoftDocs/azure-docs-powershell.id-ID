@@ -10,8 +10,8 @@ ms.openlocfilehash: bb26a4c237c056e5a86b47a8e7efa7458ab94487
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059873"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789516"
 ---
 # Get-AzureRmSqlServerAuditing
 
@@ -135,6 +135,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Auditing.Model.ServerBlobAuditingSettingsModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

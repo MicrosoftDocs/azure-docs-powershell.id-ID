@@ -9,8 +9,8 @@ ms.openlocfilehash: d2c02eb95158889abd2fa15428ffea6d2ec00c13
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176564"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142805266"
 ---
 # New-AzFirewallPublicIpAddress
 
@@ -109,6 +109,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPublicIpAddress
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

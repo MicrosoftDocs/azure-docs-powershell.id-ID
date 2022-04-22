@@ -9,8 +9,8 @@ ms.openlocfilehash: afdef65f8cf058c1cb06a6f0b8f3c68fb2d526b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995670"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142806130"
 ---
 # Get-AzBastion
 
@@ -320,7 +320,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSBastion, Microsoft.Azure.PowerShell.Cmdlets.Network, Version=1.13.0.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [New-AzBastion](./New-AzBastion.md)

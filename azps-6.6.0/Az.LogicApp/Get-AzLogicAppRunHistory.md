@@ -10,8 +10,8 @@ ms.openlocfilehash: 3b397bee16d817b242f64c7432365149d44e5f8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142230301"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142840312"
 ---
 # Get-AzLogicAppRunHistory
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.WorkflowRun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: eaae79c09f6ee609d7a7bf645c2312007a78ad59
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328461"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142847026"
 ---
 # Add-AzApplicationGatewayHttpListener
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: aaace602cd50f9464021b1dcbefe39272e1621bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811220"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142847260"
 ---
 # Get-AzKeyVault
 
@@ -214,7 +214,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### System.Collections.Generic.List'1[Microsoft.Azure.Commands.KeyVault.Models.PSDeletedVault]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 921487d7a4b9a9a32006467e7e5482b6ce9eda13
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142120013"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142833868"
 ---
 # Get-AzSqlServerDnsAlias
 
@@ -171,6 +171,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerDnsAlias.Model.AzureSqlServerDnsAliasModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

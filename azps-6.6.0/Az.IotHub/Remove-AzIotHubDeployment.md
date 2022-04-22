@@ -9,8 +9,8 @@ ms.openlocfilehash: 6e68afc172481f3538ed71922302e0b63e0833e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141911865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142840870"
 ---
 # Remove-AzIotHubDeployment
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

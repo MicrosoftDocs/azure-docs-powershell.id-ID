@@ -9,13 +9,13 @@ ms.openlocfilehash: 68fb8bac3a492bec915af6aea7df5d67fc3668dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789444"
 ---
 # Get-AzureRmSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan Aturan Jaringan Virtual Azure SQL Server.
+Mendapatkan atau mencantumkan Azure SQL Aturan Virtual Network Server.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmSqlServerVirtualNetworkRule [-VirtualNetworkRuleName <String>] -Serve
 ```
 
 ## DESCRIPTION
-Perintah ini mendapatkan Aturan Jaringan Virtual Azure SQL Server tertentu atau daftar Aturan Jaringan Virtual Azure SQL Server di bawah server.
+Perintah ini mendapatkan Aturan Virtual Network Server Azure SQL tertentu atau daftar Aturan Virtual Network Server Azure SQL di bawah server.
 
 ## EXAMPLES
 
@@ -36,14 +36,14 @@ Perintah ini mendapatkan Aturan Jaringan Virtual Azure SQL Server tertentu atau 
 PS C:\> $virtualNetworkRule = Get-AzureRmSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRuleName
 ```
 
-Mendapatkan satu aturan jaringan virtual Azure SQL Server
+Mendapatkan aturan jaringan virtual Server Azure SQL tunggal
 
 ### Contoh 2
 ```
 PS C:\> $virtualNetworkRules = Get-AzureRmSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName
 ```
 
-Mendapatkan daftar aturan jaringan virtual Azure SQL Server di bawah server tertentu
+Mendapatkan daftar aturan jaringan virtual server Azure SQL di bawah server tertentu
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRuleName
-Nama Aturan Jaringan Virtual Azure Sql Server.
+Nama Aturan Virtual Network Azure Sql Server.
 
 ```yaml
 Type: System.String
@@ -118,6 +118,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualNetworkRule.Model.AzureSqlServerVirtualNetworkRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

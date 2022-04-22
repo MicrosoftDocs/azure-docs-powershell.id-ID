@@ -9,8 +9,8 @@ ms.openlocfilehash: 2c77bc256cabecb1b6ce08d9f2ade2e94f14c134
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142342835"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142817956"
 ---
 # Start-AzRecoveryServicesAsrCommitFailoverJob
 
@@ -145,6 +145,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

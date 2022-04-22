@@ -9,8 +9,8 @@ ms.openlocfilehash: b53fef4b9a303321cc54da9b2791d7e5bc1607bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142120121"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142833940"
 ---
 # Get-AzSqlServerAdvancedDataSecurityPolicy
 
@@ -130,6 +130,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.AdvancedThreatProtection.Model.ServerAdvancedDataSecurityPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: be019c304423d3a75d578bccaa98b188179c3695
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142076359"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142833562"
 ---
 # New-AzSqlInstancePool
 
@@ -261,6 +261,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: eee5a1ec1b99d9e1fecc62a733e854fae7ad05b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169678"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142810864"
 ---
 # New-AzCdnDeliveryRuleCondition
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSDeliveryRuleCondition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

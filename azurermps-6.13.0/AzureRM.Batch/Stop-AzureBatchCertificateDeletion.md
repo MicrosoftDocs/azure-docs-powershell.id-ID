@@ -10,8 +10,8 @@ ms.openlocfilehash: d43754e1b04dadc447de3d727769902f5454f79a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142359521"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142795320"
 ---
 # Stop-AzureBatchCertificateDeletion
 
@@ -119,7 +119,7 @@ Parameter: BatchContext (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

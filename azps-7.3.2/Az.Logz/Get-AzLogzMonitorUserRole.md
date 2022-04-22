@@ -9,8 +9,8 @@ ms.openlocfilehash: d2187d9ac5c25a97c078a6277c4fa477ef09126e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142109915"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142765144"
 ---
 # Get-AzLogzMonitorUserRole
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IUserRoleResponse
 
-## CATATAN
+## NOTES
 
 ALIAS
 

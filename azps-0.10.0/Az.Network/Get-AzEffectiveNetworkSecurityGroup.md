@@ -10,8 +10,8 @@ ms.openlocfilehash: a960d5b2f6daf19fc4e46eb253b596eb88e6bd71
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142492775"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142846828"
 ---
 # Get-AzEffectiveNetworkSecurityGroup
 
@@ -93,7 +93,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSEffectiveNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

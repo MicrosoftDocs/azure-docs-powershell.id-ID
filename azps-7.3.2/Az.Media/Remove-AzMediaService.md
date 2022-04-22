@@ -10,8 +10,8 @@ ms.openlocfilehash: dc9bc9aebe873e3c5e6581e1f7d47c3596a21b6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142291867"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142764730"
 ---
 # Remove-AzMediaService
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

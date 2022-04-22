@@ -10,8 +10,8 @@ ms.openlocfilehash: 9fe7d3d9580411c31fdf5ca7e21ba1c4379217a4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923160"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789110"
 ---
 # Get-AzureRmAppServicePlan
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.AppServicePlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

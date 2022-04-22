@@ -9,13 +9,13 @@ ms.openlocfilehash: 86c4a52a2e9fbbeac32095c5b3309ed72e528c78
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142222723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142833634"
 ---
 # Get-AzSqlSyncMember
 
 ## SYNOPSIS
-Mengembalikan informasi tentang Anggota Sinkronisasi Database Azure SQL.
+Mengembalikan informasi tentang Azure SQL Database Sinkronkan Anggota.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncmember) untuk informasi terbaru.
@@ -28,12 +28,12 @@ Get-AzSqlSyncMember [-Name <String>] [-SyncGroupName] <String> [-ServerName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlSyncMember** mengembalikan informasi tentang satu atau beberapa Anggota Sinkronisasi Database Azure SQL.
+Cmdlet **Get-AzSqlSyncMember** mengembalikan informasi tentang satu atau beberapa anggota sinkronisasi Azure SQL Database.
 Tentukan nama anggota sinkronisasi untuk melihat informasi hanya untuk anggota sinkronisasi tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua contoh Azure SQL Sync Member yang ditetapkan ke grup sinkronisasi
+### Contoh 1: Dapatkan semua contoh Azure SQL Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi
 ```
 PS C:\> Get-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" | Format-List
 ResourceId                  : subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/databases/{Database01}/syncGroups/{SyncGroup01}/syncMembers/{SyncMember01}
@@ -69,9 +69,9 @@ MemberDatabasePassword      :
 SyncState                   : Good
 ```
 
-Perintah ini mendapatkan informasi tentang semua Anggota Sinkronisasi Database Azure SQL yang ditetapkan ke grup sinkronisasi SyncGroup01.
+Perintah ini mendapatkan informasi tentang semua Azure SQL Database Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi SyncGroup01.
 
-### Contoh 2: Mendapatkan informasi tentang Anggota Sinkronisasi Database Azure SQL
+### Contoh 2: Dapatkan informasi tentang Anggota Sinkronisasi Azure SQL Database
 ```
 PS C:\> Get-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember01" | Format-List
 ResourceId                  : subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/databases/{Database01}/syncGroups/{SyncGroup01}/syncMembers/{SyncMember01}
@@ -91,9 +91,9 @@ MemberDatabasePassword      :
 SyncState                   : Good
 ```
 
-Perintah ini mendapatkan informasi tentang Anggota Sinkronisasi Database Azure SQL dengan nama "SyncMember01"
+Perintah ini mendapatkan informasi tentang Anggota Sinkronisasi Azure SQL Database dengan nama "SyncMember01"
 
-### Contoh 3: Dapatkan semua contoh Azure SQL Sync Member yang ditetapkan ke grup sinkronisasi menggunakan pemfilteran
+### Contoh 3: Dapatkan semua contoh Azure SQL Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi menggunakan pemfilteran
 ```
 PS C:\> Get-AzSqlSyncMember -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SyncGroupName "SyncGroup01" -Name "SyncMember*" | Format-List
 ResourceId                  : subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/databases/{Database01}/syncGroups/{SyncGroup01}/syncMembers/{SyncMember01}
@@ -129,12 +129,12 @@ MemberDatabasePassword      :
 SyncState                   : Good
 ```
 
-Perintah ini mendapatkan informasi tentang semua Anggota Sinkronisasi Database Azure SQL yang ditetapkan ke grup sinkronisasi SyncGroup01 yang dimulai dengan "SyncMember".
+Perintah ini mendapatkan informasi tentang semua Azure SQL Database Anggota Sinkronisasi yang ditetapkan ke grup sinkronisasi SyncGroup01 yang dimulai dengan "SyncMember".
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Database Azure SQL.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncMemberModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

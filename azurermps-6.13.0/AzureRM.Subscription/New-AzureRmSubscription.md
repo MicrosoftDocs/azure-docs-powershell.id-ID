@@ -9,8 +9,8 @@ ms.openlocfilehash: cc88f762f1e965eb4e46462f7d43074fa3fe4646
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246912"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789108"
 ---
 # New-AzureRmSubscription
 
@@ -207,6 +207,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Subscription.Models.PSAzureSubscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

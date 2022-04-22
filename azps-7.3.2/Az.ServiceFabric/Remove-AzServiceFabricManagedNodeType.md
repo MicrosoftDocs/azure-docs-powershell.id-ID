@@ -9,8 +9,8 @@ ms.openlocfilehash: 2db27c83eaf1c7f9f68ef532422e2e3d53ed9cc0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142367225"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142815940"
 ---
 # Remove-AzServiceFabricManagedNodeType
 
@@ -304,6 +304,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,16 +9,16 @@ ms.openlocfilehash: fcadf88ae7dcecef8f272e3e50259923fe8dec4c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141937023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142765198"
 ---
 # Get-AzLogzMonitor
 
 ## SYNOPSIS
-Dapatkan properti sumber daya monitor tertentu.
+Mendapatkan properti sumber daya monitor tertentu.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitor) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Dapatkan properti sumber daya monitor tertentu.
 Get-AzLogzMonitor [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzLogzMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -45,7 +45,7 @@ Get-AzLogzMonitor -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Def
 ```
 
 ## DESCRIPTION
-Dapatkan properti sumber daya monitor tertentu.
+Mendapatkan properti sumber daya monitor tertentu.
 
 ## EXAMPLES
 
@@ -73,7 +73,7 @@ logz-pwsh01 Enabled          westus2  logz-rg-test
 
 Perintah ini mencantumkan semua sumber daya monitor logz di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan properti sumber daya monitor logz tertentu
+### Contoh 3: Mendapatkan properti sumber daya monitor logz tertentu
 ```powershell
 PS C:\> Get-AzLogzMonitor -ResourceGroupName logz-rg-test -Name logz-pwsh01
 
@@ -84,7 +84,7 @@ logz-pwsh01 Enabled          westus2  logz-rg-test
 
 Perintah ini mendapatkan properti sumber daya monitor logz tertentu.
 
-### Contoh 4: Dapatkan properti sumber daya monitor logz tertentu menurut pipeline
+### Contoh 4: Mendapatkan properti sumber daya monitor logz tertentu menurut alur
 ```powershell
 PS C:\> New-AzLogzMonitor -ResourceGroupName logz-rg-test -Name logz-pwsh01 -Location 'westus2' -PlanBillingCycle 'Monthly' -PlanUsageType 'PAYG' -PlanDetail '100gb14days' -PlanEffectiveDate (Get-Date -AsUTC) -UserInfoEmailAddress 'xxxxx@microsoft.com' -UserInfoPhoneNumber 'xxxxxxxx' -UserInfoFirstName 'xxx' -UserInfoLastName 'xxx' | Get-AzLogzMonitor
 
@@ -93,7 +93,7 @@ Name          MonitoringStatus Location ResourceGroupName
 logz-pwsh01 Enabled          westus2  logz-rg-test
 ```
 
-Perintah ini mendapatkan properti sumber daya monitor logz tertentu menurut pipeline.
+Perintah ini mendapatkan properti sumber daya monitor logz tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -127,8 +127,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Pantau nama sumber daya
+### -Name
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.ILogzMonitorResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -197,7 +197,7 @@ INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

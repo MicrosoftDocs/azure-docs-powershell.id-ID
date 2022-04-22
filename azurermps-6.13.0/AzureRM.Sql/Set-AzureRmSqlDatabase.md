@@ -10,8 +10,8 @@ ms.openlocfilehash: 283b12ca63f92086369f273b1f04d5e3f0cd1716
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314604"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142789271"
 ---
 # Set-AzureRmSqlDatabase
 
@@ -421,7 +421,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

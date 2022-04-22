@@ -10,8 +10,8 @@ ms.openlocfilehash: 31790ead292c9146aa73f41c56e79f3bdf51c715
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328462"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142847008"
 ---
 # Add-AzVirtualNetworkGatewayIpConfig
 
@@ -211,7 +211,7 @@ Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' 
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
