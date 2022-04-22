@@ -10,8 +10,8 @@ ms.openlocfilehash: e0c1d2e49cce4798499506352811d1e341bf47e0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142143166"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924098"
 ---
 # Get-AzureRmCdnCustomDomain
 
@@ -144,7 +144,7 @@ Parameter: CdnEndpoint (ByValue)
 
 ### Microsoft.Azure.Commands.Cdn.Models.CustomDomain.PSCustomDomain
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

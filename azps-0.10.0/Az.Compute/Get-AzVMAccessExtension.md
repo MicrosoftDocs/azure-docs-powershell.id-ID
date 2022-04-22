@@ -10,8 +10,8 @@ ms.openlocfilehash: 23120c9225d6905a528ac113bd055ec8fa585870
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142132091"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142911161"
 ---
 # Get-AzVMAccessExtension
 
@@ -134,7 +134,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.VirtualMachineAccessExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 05a4af3e92febcf30d44de9b114972a7c1f61d5b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142733"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142923815"
 ---
 # Get-AzureRmCognitiveServicesAccountType
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

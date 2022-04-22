@@ -9,8 +9,8 @@ ms.openlocfilehash: 7c1d403defcaa9181d36fbf4d4b4cb7ad9689f6a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141910785"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142840006"
 ---
 # Remove-AzManagedServicesDefinition
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Void
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

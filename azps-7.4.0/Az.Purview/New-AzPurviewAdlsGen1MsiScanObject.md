@@ -9,8 +9,8 @@ ms.openlocfilehash: 3c99b6ed704d481693da15a04000606a07482d65
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175504"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142869184"
 ---
 # New-AzPurviewAdlsGen1MsiScanObject
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AdlsGen1MsiScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

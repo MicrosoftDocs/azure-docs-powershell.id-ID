@@ -9,8 +9,8 @@ ms.openlocfilehash: e191acc34a3adb4124f8a0a73ea4724641343c1c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142478627"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905347"
 ---
 # Invoke-AzVMRunCommand
 
@@ -236,6 +236,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRunCommandResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 0799cdc9cd89743e99acdec4a228a80024410f55
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816710"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917191"
 ---
 # Get-AzureRemoteAppVpnDeviceConfigScript
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

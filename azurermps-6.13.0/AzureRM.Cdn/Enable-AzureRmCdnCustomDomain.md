@@ -9,8 +9,8 @@ ms.openlocfilehash: 50c1bf02a8952bbbddd2bbb82e55441adacd6a2c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142143170"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142924089"
 ---
 # Enable-AzureRmCdnCustomDomain
 
@@ -196,6 +196,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

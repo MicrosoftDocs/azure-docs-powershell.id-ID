@@ -9,8 +9,8 @@ ms.openlocfilehash: 1cdfaa6b57a0bcf6d50e0e3a77f80c1a5c069069
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142639"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142923779"
 ---
 # Get-AzureRmCognitiveServicesAccountUsage
 
@@ -180,6 +180,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.CognitiveServices.Models.PSCognitiveServicesUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

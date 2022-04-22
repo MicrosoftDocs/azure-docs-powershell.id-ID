@@ -9,8 +9,8 @@ ms.openlocfilehash: 43a8f6efc69113888454511faa346aea7baa837a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918615"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142911197"
 ---
 # Disable-AzVmssDiskEncryption
 
@@ -203,7 +203,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

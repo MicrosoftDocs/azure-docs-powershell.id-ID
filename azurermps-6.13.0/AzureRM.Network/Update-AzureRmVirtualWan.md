@@ -9,8 +9,8 @@ ms.openlocfilehash: 3f62cf755ac06efe9ed5f04a6657a36cfe612abe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142856000"
 ---
 # Update-AzureRmVirtualWan
 
@@ -263,6 +263,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualWan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

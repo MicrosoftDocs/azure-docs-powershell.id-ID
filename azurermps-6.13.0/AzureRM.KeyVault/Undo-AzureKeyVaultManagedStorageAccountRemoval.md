@@ -9,8 +9,8 @@ ms.openlocfilehash: a8e8bb9a4a006c30275f1de959181ad640a04f88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140415"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858150"
 ---
 # Undo-AzureKeyVaultManagedStorageAccountRemoval
 
@@ -167,6 +167,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

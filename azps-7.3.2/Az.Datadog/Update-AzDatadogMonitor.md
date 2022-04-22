@@ -9,8 +9,8 @@ ms.openlocfilehash: 0b5fd97aa4e88593ca9e88451b8f8bf6e84c1151
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142111895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142891108"
 ---
 # Update-AzDatadogMonitor
 
@@ -257,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

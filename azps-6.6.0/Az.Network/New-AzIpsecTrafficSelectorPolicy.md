@@ -9,8 +9,8 @@ ms.openlocfilehash: 68425f755092c83dca3102bf3d08a84a3ffedc90
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142124369"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142838494"
 ---
 # New-AzIpsecTrafficSelectorPolicy
 
@@ -98,6 +98,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSTrafficSelectorPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

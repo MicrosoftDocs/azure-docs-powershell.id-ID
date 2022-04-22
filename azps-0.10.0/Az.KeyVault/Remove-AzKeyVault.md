@@ -10,8 +10,8 @@ ms.openlocfilehash: 20187e2d7a844b472217fd30acbac9805e85ad40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498067"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910603"
 ---
 # Remove-AzKeyVault
 
@@ -217,7 +217,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 9d452c888fd0fe302fd57792830c5bb2bf5ee8c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142057745"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910675"
 ---
 # New-AzKeyVault
 
@@ -248,7 +248,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

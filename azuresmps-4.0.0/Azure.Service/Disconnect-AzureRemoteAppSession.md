@@ -7,8 +7,8 @@ ms.openlocfilehash: 29534ed6677d1a688b51aca2cc59b692f531e6dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245943"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142917479"
 ---
 # Disconnect-AzureRemoteAppSession
 
@@ -92,7 +92,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

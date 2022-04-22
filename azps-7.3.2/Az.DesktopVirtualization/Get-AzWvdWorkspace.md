@@ -9,8 +9,8 @@ ms.openlocfilehash: 85896dd05a9abcbad47c916d4582373425d52043
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141893888"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890946"
 ---
 # Get-AzWvdWorkspace
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IWorkspace
 
-## CATATAN
+## NOTES
 
 ALIAS
 

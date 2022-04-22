@@ -9,8 +9,8 @@ ms.openlocfilehash: d066a21e1a5b6281f5ca0cd8bc03616082eb5057
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428794"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142879696"
 ---
 # New-AzApiManagementBackendCredential
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementBackendCredential
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

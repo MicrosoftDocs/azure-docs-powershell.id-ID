@@ -10,8 +10,8 @@ ms.openlocfilehash: a9acbe569d18195c55167ea35fd307180e03da6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142004583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142878778"
 ---
 # Disable-AzBatchComputeNodeScheduling
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

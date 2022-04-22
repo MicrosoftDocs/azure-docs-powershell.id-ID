@@ -7,8 +7,8 @@ ms.openlocfilehash: 85daf6ef4ab9bd1c0a8b22db2ce54af2f31a6159
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142313413"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142916993"
 ---
 # Get-AzureStorSimpleStorageAccountCredential
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### StorageAccountCredential, IList\<StorageAccountCredential\>
 Cmdlet ini mengembalikan objek **StorageAccountCredential** , jika Anda menentukan parameter *StorageAccountName* , atau jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **IList\<StorageAccountCredential\>** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

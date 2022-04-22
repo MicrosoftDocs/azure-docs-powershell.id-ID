@@ -7,8 +7,8 @@ ms.openlocfilehash: c94d64559d2694addb6ffac530f65236473e3eb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920928"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142916777"
 ---
 # New-AzureAffinityGroup
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

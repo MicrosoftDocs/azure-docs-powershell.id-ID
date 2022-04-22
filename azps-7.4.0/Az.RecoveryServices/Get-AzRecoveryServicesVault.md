@@ -10,8 +10,8 @@ ms.openlocfilehash: 5c9d89b8f744cb3205834f10fc173c1575fcc36c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421146"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142868410"
 ---
 # Get-AzRecoveryServicesVault
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
-## CATATAN
+## NOTES
 Get-AzRecoveryServicesVault dalam versi lama Az.RecoveryServices(<=2.10.0) tidak dapat berfungsi dengan Az.Accounts(>=1.8.1) karena referensi perakitan yang salah. Modul Az.RecoveryServices perlu dimutakhirkan ke 2.11.0 atau yang lebih baru jika Anda menggunakan Az atau Az.Accounts terbaru.
 
 ## RELATED LINKS

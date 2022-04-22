@@ -9,8 +9,8 @@ ms.openlocfilehash: 51e0f4c5302ca578618069ef2be4430868d3477d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141960693"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142905635"
 ---
 # Get-AzSnapshot
 
@@ -262,6 +262,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
