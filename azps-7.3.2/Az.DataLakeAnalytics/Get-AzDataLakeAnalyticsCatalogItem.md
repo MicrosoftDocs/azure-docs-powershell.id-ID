@@ -10,13 +10,13 @@ ms.openlocfilehash: 43203abd20670ccfd17542d33f23b0038b5146c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141789062"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142956179"
 ---
 # Get-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
-Mendapatkan item katalog data Lake Analytics atau tipe item.
+Mendapatkan Data Lake Analytics item katalog atau tipe item.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscatalogitem) untuk informasi terbaru.
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.CatalogItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3745fa5577796fb0041b5cddbd1d92eb9049db0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171970"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934705"
 ---
 # New-AzSentinelAlertRuleAction
 
@@ -27,7 +27,7 @@ New-AzSentinelAlertRuleAction -ResourceGroupName <String> -WorkspaceName <String
 
 ## DESCRIPTION
 Cmdlet **New-AzSentinelAlertRuleAction** membuat Respons Otomatis untuk Aturan Peringatan di ruang kerja yang ditentukan.
-Anda harus menyediakan Logic App ResourceId dan Trigger Uri yang dapat ditemukan menggunakan [modul PowerShell Azure Logic Apps](https://docs.microsoft.com/en-us/powershell/module/az.logicapp/get-azlogicapp?view=azps-5.6.0).
+Anda harus menyediakan Logic App ResourceId dan Trigger Uri yang dapat ditemukan menggunakan [modul Azure Logic Apps PowerShell](https://docs.microsoft.com/en-us/powershell/module/az.logicapp/get-azlogicapp?view=azps-5.6.0).
 Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
@@ -209,6 +209,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Actions.PSSentinelActionResponse
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

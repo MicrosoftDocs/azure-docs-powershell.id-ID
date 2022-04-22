@@ -9,8 +9,8 @@ ms.openlocfilehash: c4008e9b6587e0b6c5b8ed56057490b0aad8764f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968559"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142923614"
 ---
 # Export-AzureRmLogAnalyticRequestRateByInterval
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSLogAnalyticsOperationResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

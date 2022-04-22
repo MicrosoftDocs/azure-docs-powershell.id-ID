@@ -9,8 +9,8 @@ ms.openlocfilehash: 34fffc4a10017fc9dc703eff8bee445b6e2a9f2e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142941887"
 ---
 # Get-AzEdgeOrderAddress
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IAddressResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

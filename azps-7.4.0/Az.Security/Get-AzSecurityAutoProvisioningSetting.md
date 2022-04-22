@@ -9,8 +9,8 @@ ms.openlocfilehash: f98e0bf3507158de77fe6dff779a3e4f683b80a3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174814"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142935047"
 ---
 # Get-AzSecurityAutoProvisioningSetting
 
@@ -113,6 +113,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.AutoProvisioningSettings.PSSecurityAutoProvisioningSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

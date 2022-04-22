@@ -10,8 +10,8 @@ ms.openlocfilehash: 03a1ca397fb67daf4b7cf73700f54d6642dd9f2d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142494953"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142910495"
 ---
 # New-AzAlertRuleWebhook
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.RuleWebhookAction
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

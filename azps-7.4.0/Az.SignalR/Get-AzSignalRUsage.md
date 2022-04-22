@@ -9,8 +9,8 @@ ms.openlocfilehash: d29533e39b9baf88528281c540bc278d74337861
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429397"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142934237"
 ---
 # Get-AzSignalRUsage
 
@@ -83,6 +83,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

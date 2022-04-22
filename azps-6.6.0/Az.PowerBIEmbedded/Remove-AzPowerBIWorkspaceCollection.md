@@ -10,8 +10,8 @@ ms.openlocfilehash: b2d667082999273581b1cd9ab029c1c273f7a83b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141861818"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142962479"
 ---
 # Remove-AzPowerBIWorkspaceCollection
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

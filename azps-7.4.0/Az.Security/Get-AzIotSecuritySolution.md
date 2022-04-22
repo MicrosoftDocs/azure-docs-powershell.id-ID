@@ -9,8 +9,8 @@ ms.openlocfilehash: 9cb4f59f15b635fb33d56112aa1f59bac8469080
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428484"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142935101"
 ---
 # Get-AzIotSecuritySolution
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.IotSecuritySolutions.PSIotSecuritySolution
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

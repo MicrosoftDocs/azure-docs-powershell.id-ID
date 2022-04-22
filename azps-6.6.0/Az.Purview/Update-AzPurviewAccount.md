@@ -9,8 +9,8 @@ ms.openlocfilehash: 4735fd2d52159962c3c93bea68647080103e17e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142044371"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142962299"
 ---
 # Update-AzPurviewAccount
 
@@ -352,7 +352,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.Api20210701.IAccount
 
-## CATATAN
+## NOTES
 
 ALIAS
 

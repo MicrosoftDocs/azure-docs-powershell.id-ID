@@ -9,8 +9,8 @@ ms.openlocfilehash: a33d548dcd4f634ec6d4a213d9a602c4bb152142
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142478069"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142967735"
 ---
 # New-AzContainerRegistry
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

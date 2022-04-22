@@ -7,8 +7,8 @@ ms.openlocfilehash: 1154ec37b4229e9aa969f1262ec09c3a6d6b49e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335036"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142916291"
 ---
 # Remove-AzureSBAuthorizationRule
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

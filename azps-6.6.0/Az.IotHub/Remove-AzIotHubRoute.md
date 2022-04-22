@@ -9,8 +9,8 @@ ms.openlocfilehash: 8ccb1e83c621fee42110b28a8b08f34261516cea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142049771"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142902827"
 ---
 # Remove-AzIotHubRoute
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

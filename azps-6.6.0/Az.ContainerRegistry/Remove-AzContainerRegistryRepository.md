@@ -9,8 +9,8 @@ ms.openlocfilehash: 8349066d9ea0b45b68f8cdf0e05ce5a7ba81a18b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141959973"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142967681"
 ---
 # Remove-AzContainerRegistryRepository
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.Models.PSDeletedRepository
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
