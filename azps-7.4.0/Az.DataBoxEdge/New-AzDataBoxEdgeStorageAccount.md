@@ -9,8 +9,8 @@ ms.openlocfilehash: 1ef0605d3a48eb6a099379061c571908d4a162a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142875304"
 ---
 # New-AzDataBoxEdgeStorageAccount
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

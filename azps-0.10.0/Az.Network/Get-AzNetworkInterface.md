@@ -10,8 +10,8 @@ ms.openlocfilehash: df769ff4a6e4eb47bc47b881ac8c06de1fdb9e4c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142846648"
 ---
 # Get-AzNetworkInterface
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

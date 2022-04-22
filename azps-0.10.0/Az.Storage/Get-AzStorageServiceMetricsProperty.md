@@ -10,8 +10,8 @@ ms.openlocfilehash: 7bca28da7b4729a414fafc5268bc4e0e02ee3c72
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141810626"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142846054"
 ---
 # Get-AzStorageServiceMetricsProperty
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAz. Storage. Shared.Protocol.MetricsProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

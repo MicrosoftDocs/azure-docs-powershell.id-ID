@@ -9,8 +9,8 @@ ms.openlocfilehash: 7893fe0c19fe0fe6e8bb7da30f4ee83f141ed5d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142868536"
 ---
 # Get-AzRecoveryServicesBackupRecommendedArchivableRPGroup
 
@@ -99,6 +99,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

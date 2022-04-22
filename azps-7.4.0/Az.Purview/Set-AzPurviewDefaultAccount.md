@@ -9,8 +9,8 @@ ms.openlocfilehash: 19cb3cbcd567026a1d06c14a33d87ec700032a8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175324"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142868734"
 ---
 # Set-AzPurviewDefaultAccount
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.Api20210701.IDefaultAccountPayload
 
-## CATATAN
+## NOTES
 
 ALIAS
 

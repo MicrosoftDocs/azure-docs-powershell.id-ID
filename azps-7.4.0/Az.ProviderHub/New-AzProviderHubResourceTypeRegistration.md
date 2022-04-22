@@ -9,13 +9,13 @@ ms.openlocfilehash: 3ddc60740cc3c65ac1b65a7ea7d6b557c9b6f76d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430554"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142869346"
 ---
 # New-AzProviderHubResourceTypeRegistration
 
 ## SYNOPSIS
-Membuat atau memperbarui tipe sumber daya.
+Membuat atau memperbarui jenis sumber daya.
 
 ## SYNTAX
 
@@ -45,11 +45,11 @@ New-AzProviderHubResourceTypeRegistration -ProviderNamespace <String> -ResourceT
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui tipe sumber daya.
+Membuat atau memperbarui jenis sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Buat/Perbarui pendaftaran tipe sumber daya.
+### Contoh 1: Membuat/Memperbarui pendaftaran jenis sumber daya.
 ```powershell
 New-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType" -RoutingType "Default" -Regionality "Regional" -Endpoint @{ApiVersion = "2021-01-01-preview"; Location = "West US 2", "East US 2 EUAP"; RequiredFeature = "Microsoft.Contoso/SampleApp" } -SwaggerSpecification @{ApiVersion = "2021-01-01-preview"; SwaggerSpecFolderUri = "https://github.com/Azure/azure-rest-api-specs-pr/blob/RPSaaSMaster/specification/rpsaas/resource-manager/Microsoft.Contoso/" } -EnableAsyncOperation
 ```
@@ -60,9 +60,9 @@ Name                  Type
 testResourceType      Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Membuat/Memperbarui registrasi tipe sumber daya.
+Membuat/Memperbarui pendaftaran jenis sumber daya.
 
-### Contoh 2: Buat/Perbarui pendaftaran tipe sumber daya bertumpuk.
+### Contoh 2: Membuat/Memperbarui pendaftaran jenis sumber daya berlapis.
 ```powershell
 New-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType/nestedResourceType" -RoutingType "Default" -Regionality "Global" -Endpoint @{ApiVersion = "2021-01-01-preview"; Location = ""; RequiredFeature = "Microsoft.Contoso/SampleApp" } -SwaggerSpecification @{ApiVersion = "2021-01-01-preview"; SwaggerSpecFolderUri = "https://github.com/Azure/azure-rest-api-specs-pr/blob/RPSaaSMaster/specification/rpsaas/resource-manager/Microsoft.Contoso/" }
 ```
@@ -73,7 +73,7 @@ Name                                     Type
 testResourceType/nestedResourceType      Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Membuat/Memperbarui registrasi tipe sumber daya bertumpuk.
+Membuat/Memperbarui pendaftaran jenis sumber daya berlapis.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -AuthorizationActionMapping
 .
-Untuk membangun, lihat bagian CATATAN untuk properti AUTHORIZATIONACTIONMAPPING dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti AUTHORIZATIONACTIONMAPPING dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IAuthorizationActionMapping[]
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 
 ### -Titik akhir
 .
-Untuk membangun, lihat bagian CATATAN untuk properti ENDPOINT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti TITIK AKHIR dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeEndpoint[]
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 
 ### -ExtendedLocation
 .
-Untuk membangun, lihat bagian CATATAN untuk properti EXTENDEDLOCATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti EXTENDEDLOCATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IExtendedLocationOptions[]
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 
 ### -LinkedAccessCheck
 .
-Untuk membangun, lihat bagian CATATAN untuk properti LINKEDACCESSCHECK dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LINKEDACCESSCHECK dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ILinkedAccessCheck[]
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 
 ### -LoggingRule
 .
-Untuk membangun, lihat bagian CATATAN untuk properti LOGGINGRULE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LOGGINGRULE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ILoggingRule[]
@@ -548,7 +548,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -579,7 +579,7 @@ Accept wildcard characters: False
 
 ### -ServiceTreeInfo
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SERVICETREEINFO dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SERVICETREEINFO dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IServiceTreeInfo[]
@@ -625,7 +625,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionLifecycleNotificationSpecificationSubscriptionStateOverrideAction
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISubscriptionStateOverrideAction[]
@@ -641,7 +641,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionStateRule
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SUBSCRIPTIONSTATERULE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SUBSCRIPTIONSTATERULE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISubscriptionStateRule[]
@@ -657,7 +657,7 @@ Accept wildcard characters: False
 
 ### -SwaggerSpecification
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SWAGGERSPECIFICATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SWAGGERSPECIFICATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISwaggerSpecification[]
@@ -703,7 +703,7 @@ Accept wildcard characters: False
 
 ### -ThrottlingRule
 .
-Untuk membangun, lihat bagian CATATAN untuk properti THROTTLINGRULE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti THROTTLINGRULE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IThrottlingRule[]
@@ -717,8 +717,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -733,7 +733,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -749,7 +749,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -757,7 +757,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeRegistration
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -766,11 +766,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-OTORISASIACTIONMAPPING <IAuthorizationActionMapping[]>: .
+AUTHORIZATIONACTIONMAPPING <IAuthorizationActionMapping[]>: .
   - `[Desired <String>]`: 
   - `[Original <String>]`: 
 
-ENDPOINT <IResourceTypeEndpoint[]>: .
+TITIK AKHIR <IResourceTypeEndpoint[]>: .
   - `[ApiVersion <String[]>]`: 
   - `[Enabled <Boolean?>]`: 
   - `[Extension <IResourceTypeExtension[]>]`: 
@@ -793,7 +793,7 @@ LINKEDACCESSCHECK <ILinkedAccessCheck[]>: .
   - `[LinkedProperty <String>]`: 
   - `[LinkedType <String>]`: 
 
-PEMBUATAN LOG <ILoggingRule[]>: .
+LOGGINGRULE <ILoggingRule[]>: .
   - `Action <String>`: 
   - `DetailLevel <LoggingDetails>`: 
   - `Direction <LoggingDirections>`: 

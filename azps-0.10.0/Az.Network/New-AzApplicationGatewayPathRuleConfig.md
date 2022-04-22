@@ -10,8 +10,8 @@ ms.openlocfilehash: b6722412717d0ef087c2540ff49d3d7a5b87913c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497113"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142846594"
 ---
 # New-AzApplicationGatewayPathRuleConfig
 
@@ -253,7 +253,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ###  
 **New-AzApplicationGatewayPathRuleConfig** membuat instans baru objek **Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPathRule** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

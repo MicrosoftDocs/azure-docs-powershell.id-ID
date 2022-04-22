@@ -9,8 +9,8 @@ ms.openlocfilehash: 6461c04506d1cbe87063f593b9b670115d651653
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003870"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142877320"
 ---
 # Remove-AzGallery
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e20936fe42f9f063148d4ddd9ab35754e8b6153
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173864"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142864666"
 ---
 # Stop-AzSqlInstanceOperation
 
@@ -273,6 +273,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedInstanceOperation.Model.AzureSqlManagedInstanceOperationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

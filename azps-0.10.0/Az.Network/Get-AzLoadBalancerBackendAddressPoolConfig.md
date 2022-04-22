@@ -10,8 +10,8 @@ ms.openlocfilehash: 9c2341494f1508563523a181532ce98347051ac3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141964617"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142846702"
 ---
 # Get-AzLoadBalancerBackendAddressPoolConfig
 
@@ -99,7 +99,7 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

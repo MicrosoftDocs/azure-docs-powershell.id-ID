@@ -9,8 +9,8 @@ ms.openlocfilehash: 4031e43428234f66e18998da550efb39b2c1081c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165369"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142865512"
 ---
 # Enable-AzSqlDatabaseLedgerDigestUpload
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.LedgerDigestUploads.Model.AzureSqlDatabaseLedgerDigestLocationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

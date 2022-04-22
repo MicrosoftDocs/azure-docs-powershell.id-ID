@@ -9,8 +9,8 @@ ms.openlocfilehash: c8a2f32b82a6111c1117a4134f0f7fe8b96a966f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142356891"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858654"
 ---
 # Remove-AzureRmIotCentralApp
 
@@ -199,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Boolean
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: e05779278132b1fd99c01f75c2647e1b3522ec1f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179657"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142875934"
 ---
 # New-AzCosmosDBSqlRoleDefinition
 
@@ -291,6 +291,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlRoleAssignmentGetResults
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

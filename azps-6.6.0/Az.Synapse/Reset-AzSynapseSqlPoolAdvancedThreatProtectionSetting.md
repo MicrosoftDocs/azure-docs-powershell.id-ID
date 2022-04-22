@@ -9,8 +9,8 @@ ms.openlocfilehash: d690517cacaee6c13961be5250509ea9f773ab48
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142117673"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142895068"
 ---
 # Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
@@ -241,6 +241,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

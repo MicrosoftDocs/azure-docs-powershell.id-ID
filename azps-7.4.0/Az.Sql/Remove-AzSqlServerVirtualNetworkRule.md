@@ -9,8 +9,8 @@ ms.openlocfilehash: 64addff2c68129c8ca1fb9a65768d96b5b126567
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174014"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142864828"
 ---
 # Remove-AzSqlServerVirtualNetworkRule
 
@@ -156,6 +156,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualNetworkRule.Model.AzureSqlServerVirtualNetworkRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

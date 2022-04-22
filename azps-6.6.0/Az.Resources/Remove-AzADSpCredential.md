@@ -10,8 +10,8 @@ ms.openlocfilehash: ce3ab71d874bbb5f44ed26f03c3a77a71c5a0ea9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142224415"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142835722"
 ---
 # Remove-AzADSpCredential
 
@@ -249,7 +249,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

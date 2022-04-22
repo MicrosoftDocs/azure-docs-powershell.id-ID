@@ -10,8 +10,8 @@ ms.openlocfilehash: 9bd02d11f0d8c6f60638b506fd09c953bc861b9d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140426"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858312"
 ---
 # Remove-AzureKeyVaultCertificateOperation
 
@@ -202,7 +202,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: a77ad781a05135c8f96e5560b2f1cdf5ab37989f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142068511"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142887886"
 ---
 # Update-AzKustoDatabase
 
@@ -52,7 +52,7 @@ Kind      Location Name                                Type
 ReadWrite East US  testnewkustocluster/mykustodatabase Microsoft.Kusto/Clusters/Databases
 ```
 
-Perintah di atas memperbarui periode penghapusan lembut dan periode cache panas database Kusto "mykustodatabase" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas memperbarui periode penghapusan lembut dan periode singgahan panas database Kusto "mykustodatabase" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
 
 ### Contoh 2: Memperbarui database yang sudah ada melalui identitas
 ```powershell
@@ -66,7 +66,7 @@ Kind      Location Name                                Type
 ReadWrite East US  testnewkustocluster/mykustodatabase Microsoft.Kusto/Clusters/Databases
 ```
 
-Perintah di atas memperbarui periode penghapusan lembut dan periode cache panas database Kusto "mykustodatabase" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas memperbarui periode penghapusan lembut dan periode singgahan panas database Kusto "mykustodatabase" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
 
 ### Contoh 3: Memperbarui database ReadOnly yang sudah ada berdasarkan nama
 ```powershell
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama database dalam kluster Kusto.
+Nama database dalam klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -312,13 +312,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.IKustoIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IDatabase
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDatabase
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -329,14 +329,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama kluster Kusto.
+  - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
   - `[OperationId <String>]`: Guid of the operation ID
-  - `[PrincipalAssignmentName <String>]`: Nama kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 

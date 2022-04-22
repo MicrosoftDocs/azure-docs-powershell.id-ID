@@ -9,8 +9,8 @@ ms.openlocfilehash: d738bc498858051f16b49a2e1b7da0958e29fd81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165254"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142865188"
 ---
 # Get-AzSqlInstancePool
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Instance_Pools.Model.AzureSqlInstancePoolModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

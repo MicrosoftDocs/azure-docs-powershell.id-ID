@@ -9,8 +9,8 @@ ms.openlocfilehash: 6bc7ebb16d61793bc348628067f1efca044d1857
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142124189"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142838412"
 ---
 # New-AzNetworkVirtualAppliance
 
@@ -334,6 +334,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkVirtualAppliance
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
