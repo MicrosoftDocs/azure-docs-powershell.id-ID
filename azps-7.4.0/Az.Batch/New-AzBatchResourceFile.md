@@ -9,8 +9,8 @@ ms.openlocfilehash: 93cb518048e87a11b6221a308773d535fb845a01
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142435098"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142878670"
 ---
 # New-AzBatchResourceFile
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSResourceFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

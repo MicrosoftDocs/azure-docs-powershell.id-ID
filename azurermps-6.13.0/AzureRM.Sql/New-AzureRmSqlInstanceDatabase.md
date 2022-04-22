@@ -9,8 +9,8 @@ ms.openlocfilehash: 2ef6ff642d22429ae22186ce01a4a17dad125b70
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853507"
 ---
 # New-AzureRmSqlInstanceDatabase
 
@@ -252,6 +252,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

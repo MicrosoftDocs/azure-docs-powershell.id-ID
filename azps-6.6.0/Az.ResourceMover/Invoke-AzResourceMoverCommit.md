@@ -9,8 +9,8 @@ ms.openlocfilehash: 1cb2411270db82434b8ecd2cecd3103d837ea482
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141949263"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142898071"
 ---
 # Invoke-AzResourceMoverCommit
 
@@ -276,7 +276,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Models.Api202101.IOperationStatus
 
-## CATATAN
+## NOTES
 
 ALIAS
 

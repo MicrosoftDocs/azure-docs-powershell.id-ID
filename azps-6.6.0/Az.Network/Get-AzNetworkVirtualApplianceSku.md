@@ -9,8 +9,8 @@ ms.openlocfilehash: 46d9590306f3d8f313197b4551a04e1b98aeafd8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142269097"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142901171"
 ---
 # Get-AzNetworkVirtualApplianceSku
 
@@ -117,6 +117,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkVirtualApplianceSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

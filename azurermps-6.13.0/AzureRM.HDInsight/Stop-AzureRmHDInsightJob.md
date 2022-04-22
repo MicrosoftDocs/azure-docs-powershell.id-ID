@@ -10,8 +10,8 @@ ms.openlocfilehash: 7247a4f5e23bc4f0f3c520f909cec221ee03e1ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097763"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142858802"
 ---
 # Stop-AzureRmHDInsightJob
 
@@ -134,7 +134,7 @@ Parameter: JobId (ByValue)
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

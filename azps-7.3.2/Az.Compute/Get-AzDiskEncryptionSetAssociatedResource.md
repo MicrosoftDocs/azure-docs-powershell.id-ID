@@ -8,8 +8,8 @@ ms.openlocfilehash: 20e419908c8c5ff628b3efded2119b49f1a30e51
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142348163"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142892728"
 ---
 # Get-AzDiskEncryptionSetAssociatedResource
 
@@ -101,6 +101,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Uri[]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

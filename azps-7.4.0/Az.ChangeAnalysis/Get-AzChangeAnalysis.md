@@ -9,8 +9,8 @@ ms.openlocfilehash: 0d274952fe38fb00288706020a2e26c780f7317c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999786"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142878040"
 ---
 # Get-AzChangeAnalysis
 
@@ -270,7 +270,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ChangeAnalysis.Models.Api20210401.IChange
 
-## CATATAN
+## NOTES
 
 ALIAS
 

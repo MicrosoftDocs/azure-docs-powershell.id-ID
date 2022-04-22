@@ -9,8 +9,8 @@ ms.openlocfilehash: 734e50258c257d904b46f743a521fef594bf747e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141858794"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142896923"
 ---
 # Get-AzSqlElasticJobTargetGroup
 
@@ -184,6 +184,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobTargetGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

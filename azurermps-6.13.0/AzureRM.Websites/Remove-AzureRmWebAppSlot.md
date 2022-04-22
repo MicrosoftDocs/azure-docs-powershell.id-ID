@@ -9,8 +9,8 @@ ms.openlocfilehash: 7fdf5e8de2ec326888c57e8219a006f9ef447aa5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280117"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142853284"
 ---
 # Remove-AzureRmWebAppSlot
 
@@ -197,7 +197,7 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

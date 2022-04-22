@@ -7,8 +7,8 @@ ms.openlocfilehash: 7d28b0bb94372128fd47bd2e2645cb8c2f66cb49
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142852043"
 ---
 # Get-AzureStorSimpleResource
 
@@ -118,7 +118,7 @@ Cmdlet ini mengembalikan objek **ResourceCredentials** yang berisi properti beri
 - **ResouceId**
 - **ResourceState**
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 11c42972e9d657606eafaeb4f7cc7e45dcb4ded5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838512"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142874512"
 ---
 # Get-AzDataMigrationSqlService
 
@@ -25,7 +25,7 @@ Get-AzDataMigrationSqlService [-SubscriptionId <String[]>] [-DefaultProfile <PSO
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDataMigrationSqlService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
@@ -48,7 +48,7 @@ Ambil Database Migration Service.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail Layanan Migrasi Sql tertentu
+### Contoh 1: Mendapatkan detail Sql Migration Service tertentu
 ```powershell
 Get-AzDataMigrationSqlService  -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService"
 ```
@@ -59,9 +59,9 @@ Location  Name                   Type                                         Pr
 eastus2   MySqlMigrationService  Microsoft.DataMigration/sqlMigrationServices Succeeded         Online
 ```
 
-Perintah ini mendapatkan detail Layanan Migrasi Sql tertentu.
+Perintah ini mendapatkan detail Sql Migration Service tertentu.
 
-### Contoh 2: Dapatkan semua Layanan Migrasi Sql dalam Grup Sumber Daya tertentu
+### Contoh 2: Mendapatkan semua Sql Migration Services dalam Grup Sumber Daya tertentu
 ```powershell
 Get-AzDataMigrationSqlService  -ResourceGroupName "MyResourceGroup"
 ```
@@ -73,9 +73,9 @@ eastus    MySqlMigrationService1 Microsoft.DataMigration/sqlMigrationServices Su
 eastus2   MySqlMigrationService  Microsoft.DataMigration/sqlMigrationServices Succeeded
 ```
 
-Perintah ini mendapatkan semua Layanan Migrasi Sql dalam Grup Sumber Daya tertentu.
+Perintah ini mendapatkan semua Sql Migration Services dalam Grup Sumber Daya tertentu.
 
-### Contoh 3: Dapatkan semua Layanan Migrasi Sql dalam Langganan tertentu
+### Contoh 3: Mendapatkan semua Sql Migration Services dalam Langganan tertentu
 ```powershell
 Get-AzDataMigrationSqlService 
 ```
@@ -88,7 +88,7 @@ eastus2   MySqlMigrationService     Microsoft.DataMigration/sqlMigrationServices
 uksouth   MySqlMigrationService-UK  Microsoft.DataMigration/sqlMigrationServices Succeeded
 ```
 
-Perintah ini mendapatkan semua Layanan Migrasi Sql dalam Langganan tertentu.
+Perintah ini mendapatkan semua Sql Migration Services dalam Langganan tertentu.
 
 ## PARAMETERS
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -122,8 +122,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Migrasi SQL.
+### -Name
+Nama SQL Migration Service.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String[]
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.ISqlMigrationService
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -206,8 +206,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagedInstanceName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
-  - `[SqlMigrationServiceName <String>]`: Nama Layanan Migrasi SQL.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
+  - `[SqlMigrationServiceName <String>]`: Nama SQL Migration Service.
   - `[SqlVirtualMachineName <String>]`: 
   - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Azure.
   - `[TargetDbName <String>]`: Nama database target.

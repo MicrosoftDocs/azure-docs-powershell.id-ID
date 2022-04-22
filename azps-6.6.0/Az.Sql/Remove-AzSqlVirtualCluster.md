@@ -9,8 +9,8 @@ ms.openlocfilehash: fb65d79c4497775be2d5aa5f95258137f0098033
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142075891"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142896239"
 ---
 # Remove-AzSqlVirtualCluster
 
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualCluster.Model.AzureSqlVirtualClusterModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

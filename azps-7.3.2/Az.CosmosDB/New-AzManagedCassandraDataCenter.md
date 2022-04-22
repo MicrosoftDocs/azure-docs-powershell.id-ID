@@ -9,8 +9,8 @@ ms.openlocfilehash: 8258d0698728a84fef31a6825a308c510efbed6c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141941829"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142892368"
 ---
 # New-AzManagedCassandraDataCenter
 
@@ -297,6 +297,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSDataCenterResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

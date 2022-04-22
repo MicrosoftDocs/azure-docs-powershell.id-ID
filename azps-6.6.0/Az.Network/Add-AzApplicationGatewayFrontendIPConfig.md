@@ -10,8 +10,8 @@ ms.openlocfilehash: a7c1872e127e2f930b257010f4956f6784f3ad61
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141864536"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142901621"
 ---
 # Add-AzApplicationGatewayFrontendIPConfig
 
@@ -254,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

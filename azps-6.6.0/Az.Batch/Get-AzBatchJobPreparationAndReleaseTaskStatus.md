@@ -9,8 +9,8 @@ ms.openlocfilehash: cfbd9155f02a9d1e2c1b28535ec7b5985817b08a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142479545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142907093"
 ---
 # Get-AzBatchJobPreparationAndReleaseTaskStatus
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSJobPreparationAndReleaseTaskExecutionInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: ed4f78b7926b52e0e2a142b737bda5db5496123f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141940407"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142891575"
 ---
 # Stop-AzDataFactoryV2Trigger
 
@@ -207,7 +207,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

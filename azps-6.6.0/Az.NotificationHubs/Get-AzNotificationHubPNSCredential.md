@@ -10,8 +10,8 @@ ms.openlocfilehash: 98fb3db7060af4cdf85e27de5f2c37af65893fa6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045469"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142899119"
 ---
 # Get-AzNotificationHubPNSCredential
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NotificationHubs.Models.NotificationHubAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

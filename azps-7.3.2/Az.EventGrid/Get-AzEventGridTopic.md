@@ -9,8 +9,8 @@ ms.openlocfilehash: d4d0312609e7c56f034de876e15dc4cc86c612ad
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141851684"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142890137"
 ---
 # Get-AzEventGridTopic
 
@@ -234,6 +234,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSTopicListInstance
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
