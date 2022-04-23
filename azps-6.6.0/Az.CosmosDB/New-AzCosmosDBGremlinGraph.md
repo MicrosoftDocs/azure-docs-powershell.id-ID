@@ -9,8 +9,8 @@ ms.openlocfilehash: 6feef32e8878d09f33351e31dcf91b775facb6ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141868910"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143202348"
 ---
 # New-AzCosmosDBGremlinGraph
 
@@ -386,6 +386,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Exception
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 71d8266c1cf77d673fc67556d1d4cb196286c868
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143226197"
 ---
 # Get-AzIntegrationAccountCertificate
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.IntegrationAccountCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

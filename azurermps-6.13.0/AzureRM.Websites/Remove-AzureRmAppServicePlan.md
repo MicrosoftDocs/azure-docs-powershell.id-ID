@@ -10,8 +10,8 @@ ms.openlocfilehash: b97506b8f104859c54c55ee1a937916623f4201d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335955"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212436"
 ---
 # Remove-AzureRmAppServicePlan
 
@@ -181,7 +181,7 @@ Parameter: AppServicePlan (ByValue)
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

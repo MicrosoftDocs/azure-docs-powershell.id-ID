@@ -9,8 +9,8 @@ ms.openlocfilehash: bc737bf8dac9144c854f546750a1d78b3207e872
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424906"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143226467"
 ---
 # Start-AzKustoCluster
 
@@ -208,7 +208,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

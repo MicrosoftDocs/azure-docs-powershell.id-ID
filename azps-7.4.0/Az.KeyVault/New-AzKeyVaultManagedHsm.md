@@ -9,8 +9,8 @@ ms.openlocfilehash: c9aebe6854acb83a69d4e36e822abd4f973e9799
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143226809"
 ---
 # New-AzKeyVaultManagedHsm
 
@@ -280,7 +280,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

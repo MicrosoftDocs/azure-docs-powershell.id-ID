@@ -9,8 +9,8 @@ ms.openlocfilehash: 6298b29959ac59ff482c29bbd3d5933dbc4793d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997031"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143226701"
 ---
 # Set-AzKeyVaultKeyRotationPolicy
 
@@ -254,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyRotationPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

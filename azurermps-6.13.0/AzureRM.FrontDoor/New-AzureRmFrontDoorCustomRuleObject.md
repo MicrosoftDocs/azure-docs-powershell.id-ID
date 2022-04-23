@@ -9,8 +9,8 @@ ms.openlocfilehash: a5a1494bd217147a4e6f4c94a85140313429898f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064070"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143219231"
 ---
 # New-AzureRmFrontDoorCustomRuleObject
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSCustomRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

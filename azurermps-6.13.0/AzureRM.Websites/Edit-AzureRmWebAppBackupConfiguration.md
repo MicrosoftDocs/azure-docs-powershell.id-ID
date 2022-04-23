@@ -10,8 +10,8 @@ ms.openlocfilehash: a7a66197752e7dd9ec58e7eeca921af277687ed2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966963"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212580"
 ---
 # Edit-AzureRmWebAppBackupConfiguration
 
@@ -246,7 +246,7 @@ Parameter: WebApp (ByValue)
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.WebApps.AzureWebAppBackupConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 90b1b479a3d59816aabaf91ec63e3997777e3922
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997007"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143226683"
 ---
 # Undo-AzKeyVaultManagedStorageAccountRemoval
 
@@ -165,6 +165,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

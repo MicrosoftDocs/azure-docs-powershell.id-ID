@@ -9,8 +9,8 @@ ms.openlocfilehash: 7717aaa76efba736015a1cf762c95af440b28218
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923454"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213032"
 ---
 # Set-AzureRmStorageContainerImmutabilityPolicy
 
@@ -318,7 +318,7 @@ Microsoft.Azure.Commands.Management. Storage. Models.PSImmutabilityPolicy
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSImmutabilityPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

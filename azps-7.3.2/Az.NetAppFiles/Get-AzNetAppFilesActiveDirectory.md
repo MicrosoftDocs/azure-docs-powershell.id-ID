@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e659bc8c99910e93cc58ed71444bc27329323d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787370"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143180567"
 ---
 # Get-AzNetAppFilesActiveDirectory
 
@@ -134,6 +134,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

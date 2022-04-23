@@ -9,8 +9,8 @@ ms.openlocfilehash: f95b5a717c3e38d97461210916f566ccc8dfe66b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143226665"
 ---
 # Update-AzKeyVaultSecret
 
@@ -315,6 +315,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
