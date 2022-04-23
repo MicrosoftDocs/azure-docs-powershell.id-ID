@@ -9,8 +9,8 @@ ms.openlocfilehash: a62076e012d92d90512a203925ca9d91641b6f19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142341593"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143239643"
 ---
 # Save-AzDeploymentScriptLog
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScriptLogPath
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
