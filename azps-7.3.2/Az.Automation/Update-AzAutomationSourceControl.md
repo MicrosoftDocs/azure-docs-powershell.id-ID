@@ -9,13 +9,13 @@ ms.openlocfilehash: da20ff37a8097167c3a5224c298c4d3fc5ce4fcb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142219285"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143363663"
 ---
 # Update-AzAutomationSourceControl
 
 ## SYNOPSIS
-Memperbarui kontrol sumber Otomatisasi Azure.
+Memperbarui kontrol sumber Azure Automation.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/update-azautomationsourcecontrol) untuk informasi terbaru.
@@ -35,7 +35,7 @@ Cmdlet Update-AzAutomationSourceControl mengubah nilai bidang dalam kontrol sumb
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Otomatisasi Azure bernama VSTSNative di akun bernama devAccount.
+Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Azure Automation bernama VSTSNative dalam akun bernama devAccount.
 
 
 ```powershell
@@ -51,7 +51,7 @@ VSTSNative      VsoTfvc           /MyRunbooks False    False          https://co
 
 ### Contoh 2
 
-Memperbarui kontrol sumber Otomatisasi Azure. (autogenerasi)
+Memperbarui kontrol sumber Azure Automation. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -251,6 +251,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.SourceControl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

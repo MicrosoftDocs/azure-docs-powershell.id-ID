@@ -9,8 +9,8 @@ ms.openlocfilehash: 141ffe25711052c160bc3f853c52e8318eeaf225
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141791096"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143363537"
 ---
 # Get-AzBatchPoolNodeCount
 
@@ -199,7 +199,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSPoolNodeCounts
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

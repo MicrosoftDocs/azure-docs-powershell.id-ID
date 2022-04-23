@@ -9,8 +9,8 @@ ms.openlocfilehash: b59f41fd3e8674067ea5319608c372cc4d695232
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141893456"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143337293"
 ---
 # Get-AzIoTDeviceProvisioningServiceCertificate
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSCertificateResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
