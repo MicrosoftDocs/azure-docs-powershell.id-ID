@@ -8,8 +8,8 @@ ms.openlocfilehash: dbfee49f6e6fcd083350a5ab818ac33309e4b672
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142394272"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143169965"
 ---
 # New-AzureStorageShareSASToken
 
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 * Kata kunci: umum, azure, layanan, data, penyimpanan, blob, antrean, tabel
 
 ## RELATED LINKS

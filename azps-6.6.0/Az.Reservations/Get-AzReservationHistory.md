@@ -9,8 +9,8 @@ ms.openlocfilehash: 9ca3bd26e5551e2d38b1e95117cffa6822a0368f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141796964"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143144279"
 ---
 # Get-AzReservationHistory
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservationPage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

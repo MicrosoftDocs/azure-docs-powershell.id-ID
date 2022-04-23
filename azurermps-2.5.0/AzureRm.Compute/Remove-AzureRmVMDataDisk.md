@@ -8,8 +8,8 @@ ms.openlocfilehash: ea8b069be4b153e6e4ca295a917e1c3e81629094
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929440"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143169505"
 ---
 # Remove-AzureRmVMDataDisk
 
@@ -132,7 +132,7 @@ Parameter 'VM' menerima nilai tipe 'PSVirtualMachine' dari pipeline
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

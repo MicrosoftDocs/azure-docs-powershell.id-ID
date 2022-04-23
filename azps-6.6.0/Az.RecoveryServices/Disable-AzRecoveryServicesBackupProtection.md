@@ -10,8 +10,8 @@ ms.openlocfilehash: ab85a4321ea16ab8137ae8ccff3fb801ab8a5137
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142266928"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143145035"
 ---
 # Disable-AzRecoveryServicesBackupProtection
 
@@ -29,7 +29,7 @@ Disable-AzRecoveryServicesBackupProtection [-Item] <ItemBase> [-RemoveRecoveryPo
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzRecoveryServicesBackupProtection** menonaktifkan proteksi untuk item yang dilindungi Azure Backup.
+Cmdlet **Disable-AzRecoveryServicesBackupProtection** menonaktifkan perlindungan untuk item yang dilindungi Cadangan Azure.
 Cmdlet ini menghentikan pencadangan terjadwal reguler item.
 Cmdlet ini juga dapat menghapus titik pemulihan yang sudah ada untuk item cadangan jika dijalankan dengan parameter RemoveRecoveryPoints.
 Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

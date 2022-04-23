@@ -9,8 +9,8 @@ ms.openlocfilehash: 52e4aa9e8fed2e4482f454fb8346d7cb60d55016
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998615"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125631"
 ---
 # Set-AzDataBoxEdgeShare
 
@@ -270,6 +270,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

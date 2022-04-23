@@ -8,8 +8,8 @@ ms.openlocfilehash: ab528e837f6f2e45db5e68430d973e0d8f019850
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970996"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143168617"
 ---
 # New-AzureRmRouteConfig
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

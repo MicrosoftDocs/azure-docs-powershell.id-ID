@@ -8,8 +8,8 @@ ms.openlocfilehash: 1204a8b14cdbb45f46edd2a1ca2e4c12c27845a3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363200"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143169551"
 ---
 # New-AzureRmVMSqlServerAutoPatchingConfig
 
@@ -155,7 +155,7 @@ Cmdlet ini tidak menerima input apa pun.
 ### AutoPatchingSettings
 Cmdlet ini mengembalikan objek berisi pengaturan untuk patch otomatis.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

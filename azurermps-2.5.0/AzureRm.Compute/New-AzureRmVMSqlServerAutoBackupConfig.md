@@ -8,8 +8,8 @@ ms.openlocfilehash: bb00a3e4fc953510d2ec32b7c213d07d6c8801c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143169569"
 ---
 # New-AzureRmVMSqlServerAutoBackupConfig
 
@@ -331,7 +331,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.AutoBackupSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: 8805d5da061ef19037768b72c08145e45c8f2a9c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104285"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143169462"
 ---
 # Remove-AzureRmVMBackup
 
@@ -102,7 +102,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

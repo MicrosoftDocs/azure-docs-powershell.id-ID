@@ -8,8 +8,8 @@ ms.openlocfilehash: 544af56c5e1ff72a3b23c3dcf89af36f7d74eff2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147402"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143169317"
 ---
 # Update-AzureRmVmss
 
@@ -784,7 +784,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
