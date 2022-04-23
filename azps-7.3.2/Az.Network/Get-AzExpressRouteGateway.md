@@ -9,8 +9,8 @@ ms.openlocfilehash: 653b8d9e4343546f9a901390daba767f257b35e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142109051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143243927"
 ---
 # Get-AzExpressRouteGateway
 
@@ -63,7 +63,7 @@ Type                : Microsoft.Network/ExpressRouteGateways
 ProvisioningState   : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di West Central US dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di As Tengah Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 Lalu mendapatkan ExpressRouteGateway menggunakan resourceGroupName dan nama gateway.
 
@@ -168,6 +168,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

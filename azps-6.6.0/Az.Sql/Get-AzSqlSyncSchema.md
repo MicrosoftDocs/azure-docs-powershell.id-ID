@@ -9,8 +9,8 @@ ms.openlocfilehash: 8533aa912fe79ce80cf7782f8ff8ef5fc6a3324f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141948183"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143250191"
 ---
 # Get-AzSqlSyncSchema
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncFullSchemaModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
