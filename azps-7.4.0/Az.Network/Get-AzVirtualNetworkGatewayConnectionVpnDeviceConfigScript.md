@@ -9,8 +9,8 @@ ms.openlocfilehash: 6ba9ee8aa78c800fca6c39ea3282628ea500a856
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835136"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143224415"
 ---
 # Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

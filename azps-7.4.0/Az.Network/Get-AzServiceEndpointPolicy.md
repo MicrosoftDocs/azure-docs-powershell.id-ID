@@ -9,8 +9,8 @@ ms.openlocfilehash: d7a063ae4b50bf24d4e9d915a9aa80237870923d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143224487"
 ---
 # Get-AzServiceEndpointPolicy
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSServiceEndpointPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
