@@ -9,8 +9,8 @@ ms.openlocfilehash: 5aee6a9103a1c9f96621273bcf412b7458558573
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142054685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203103"
 ---
 # Get-AzAutomationSourceControlSyncJobOutput
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.SourceControlSyncJobStreamRecord
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

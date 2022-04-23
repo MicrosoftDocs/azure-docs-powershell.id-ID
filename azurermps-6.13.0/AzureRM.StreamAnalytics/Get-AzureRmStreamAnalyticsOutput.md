@@ -10,8 +10,8 @@ ms.openlocfilehash: c675a8da84e61b659c593cc1f963dd1b07c7f316
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280375"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159210"
 ---
 # Get-AzureRmStreamAnalyticsOutput
 
@@ -119,7 +119,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StreamAnalytics.Models.PSOutput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

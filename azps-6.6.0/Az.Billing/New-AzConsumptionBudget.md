@@ -9,8 +9,8 @@ ms.openlocfilehash: c94463fa8dcc75f99a4e0d23f78ddf01c0fba1e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141914583"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143202635"
 ---
 # New-AzConsumptionBudget
 
@@ -382,6 +382,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

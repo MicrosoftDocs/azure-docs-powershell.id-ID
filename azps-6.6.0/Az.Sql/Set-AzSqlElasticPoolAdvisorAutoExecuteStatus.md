@@ -10,8 +10,8 @@ ms.openlocfilehash: 432049288000b9fcf634d2237c18d6678ba09e57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142075765"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143190053"
 ---
 # Set-AzSqlElasticPoolAdvisorAutoExecuteStatus
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlElasticPoolAdvisorModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, kolam elastis, mssql, penasihat
 
 ## RELATED LINKS

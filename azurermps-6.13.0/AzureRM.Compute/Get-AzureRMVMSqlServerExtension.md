@@ -10,8 +10,8 @@ ms.openlocfilehash: e17e8d55ac831fd87e9af9991b4c8ef4d9686dee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142359172"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165252"
 ---
 # Get-AzureRmVMSqlServerExtension
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.VirtualMachineSqlServerExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: d51062a97089875dd3a9a22a0b9d1e16895f87f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203067"
 ---
 # New-AzAutomationCredential
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CredentialInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

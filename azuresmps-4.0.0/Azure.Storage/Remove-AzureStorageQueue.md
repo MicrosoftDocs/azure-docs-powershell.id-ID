@@ -7,8 +7,8 @@ ms.openlocfilehash: 0a673366444c7b616e1f8b0ca5407a9791d3c3a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142242708"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209853"
 ---
 # Remove-AzureStorageQueue
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

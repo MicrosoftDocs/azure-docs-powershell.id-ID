@@ -9,8 +9,8 @@ ms.openlocfilehash: 096ee731802bd48dbe742032dad8aebf17a809bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142129949"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143202653"
 ---
 # Get-AzConsumptionUsageDetail
 
@@ -325,6 +325,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSUsageDetail
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

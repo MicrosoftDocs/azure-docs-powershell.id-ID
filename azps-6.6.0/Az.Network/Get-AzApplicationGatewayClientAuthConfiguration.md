@@ -9,8 +9,8 @@ ms.openlocfilehash: 71af1cead4f13675dcd6259990fd678d3af398a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141864176"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143196788"
 ---
 # Get-AzApplicationGatewayClientAuthConfiguration
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayClientAuthConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

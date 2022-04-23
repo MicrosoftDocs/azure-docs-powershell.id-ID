@@ -10,8 +10,8 @@ ms.openlocfilehash: 2a81b7bf5420bdbf4fa5252d71c511c7152e47fb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819570"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159687"
 ---
 # Set-AzureRmVirtualNetwork
 
@@ -107,7 +107,7 @@ Parameter: VirtualNetwork (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

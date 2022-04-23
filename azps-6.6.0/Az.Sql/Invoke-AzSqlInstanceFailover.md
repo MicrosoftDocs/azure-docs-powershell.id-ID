@@ -9,13 +9,13 @@ ms.openlocfilehash: 0366904367d781f762e7815a09237d51eb989aa3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142119941"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143190269"
 ---
 # Invoke-AzSqlInstanceFailover
 
 ## SYNOPSIS
-Failovers Azure SQL Managed Instance.
+Failovers an Azure SQL Managed Instance.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/invoke-azsqlinstancefailover) untuk informasi terbaru.
@@ -29,7 +29,7 @@ Invoke-AzSqlInstanceFailover [-Name] <String> [-AsJob] [-PassThru] [-Force] [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzSqlInstanceFailover** mengalami kegagalan Azure SQL Managed Instance.
+Cmdlet **Invoke-AzSqlInstanceFailover** gagalover instans Terkelola Azure SQL.
 
 ## EXAMPLES
 
@@ -193,6 +193,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

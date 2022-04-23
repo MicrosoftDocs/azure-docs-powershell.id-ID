@@ -7,8 +7,8 @@ ms.openlocfilehash: af3edc04e7db61fa43aa4b192d4bc29d0ec47640
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142310685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209421"
 ---
 # Get-AzsPublicIPAddress
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Network.Admin.Models.PublicIpAddress
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

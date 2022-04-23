@@ -9,8 +9,8 @@ ms.openlocfilehash: f64dd6d94d4180641feb18ae4042652bc4d39c4e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915015"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143202743"
 ---
 # Get-AzBatchSupportedImage
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSImageInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

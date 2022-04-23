@@ -7,8 +7,8 @@ ms.openlocfilehash: 2160c0fbe80252be6ad9f916e237a9461395ebd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381616"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209791"
 ---
 # Remove-AzureStorageShareStoredAccessPolicy
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

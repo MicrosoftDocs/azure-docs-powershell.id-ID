@@ -7,8 +7,8 @@ ms.openlocfilehash: 822452c1c6b83669759bae2c861ee3456a13a0dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141878917"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209385"
 ---
 # Get-AzsBlobServiceMetric
 
@@ -106,6 +106,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.Metric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

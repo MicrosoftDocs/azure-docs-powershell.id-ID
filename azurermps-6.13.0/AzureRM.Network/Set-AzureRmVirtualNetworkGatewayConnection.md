@@ -10,8 +10,8 @@ ms.openlocfilehash: 9e9718f23a262b8a914ef88aa1ad1bb97fc36fe3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385151"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159651"
 ---
 # Set-AzureRmVirtualNetworkGatewayConnection
 
@@ -222,7 +222,7 @@ Parameter: VirtualNetworkGatewayConnection (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

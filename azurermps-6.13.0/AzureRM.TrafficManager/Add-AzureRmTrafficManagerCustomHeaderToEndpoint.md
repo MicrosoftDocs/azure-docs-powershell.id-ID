@@ -10,8 +10,8 @@ ms.openlocfilehash: a00eb5977ad1a58b12ad3f326d36dba8d083d718
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773623"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159138"
 ---
 # Add-AzureRmTrafficManagerCustomHeaderToEndpoint
 
@@ -156,7 +156,7 @@ Cmdlet ini menerima objek **TrafficManagerEndpoint** untuk cmdlet ini.
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
 Cmdlet ini mengembalikan objek **TrafficManagerEndpoint** yang dimodifikasi.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

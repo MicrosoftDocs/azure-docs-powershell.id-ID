@@ -10,8 +10,8 @@ ms.openlocfilehash: 3a8ba8fc694ef824b5158d2271f23fb5e44126cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141915339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203229"
 ---
 # Get-AzAutomationDscNodeConfiguration
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CompilationJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

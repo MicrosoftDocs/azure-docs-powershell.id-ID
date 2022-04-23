@@ -7,8 +7,8 @@ ms.openlocfilehash: 82d1adfd3d6d4fda13ca3c1e9df06fd17d0a5acc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381576"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209788"
 ---
 # Set-AzureStorageCORSRule
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

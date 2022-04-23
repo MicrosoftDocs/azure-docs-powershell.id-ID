@@ -10,8 +10,8 @@ ms.openlocfilehash: b95ced4d9027260163d6777207e4c44e5e735aff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142090995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203049"
 ---
 # New-AzAutomationKey
 
@@ -118,6 +118,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.AgentRegistration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
