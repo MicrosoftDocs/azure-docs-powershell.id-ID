@@ -9,8 +9,8 @@ ms.openlocfilehash: f9f94687c3340588c4a814cfc701444a711c692a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141865544"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143090207"
 ---
 # Remove-AzMariaDbServer
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

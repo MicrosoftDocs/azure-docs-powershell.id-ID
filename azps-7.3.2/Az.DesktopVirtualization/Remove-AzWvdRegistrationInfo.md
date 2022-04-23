@@ -9,8 +9,8 @@ ms.openlocfilehash: ab9c3c0733edab9d3084285f932448780ae0e4f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142258243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143076995"
 ---
 # Remove-AzWvdRegistrationInfo
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ALIAS
 

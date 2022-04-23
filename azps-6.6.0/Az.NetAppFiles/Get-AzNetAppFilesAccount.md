@@ -9,8 +9,8 @@ ms.openlocfilehash: 5486d7d6af019d7a774dd6f84fc5e4561d58b273
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141800384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143089253"
 ---
 # Get-AzNetAppFilesAccount
 
@@ -127,6 +127,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

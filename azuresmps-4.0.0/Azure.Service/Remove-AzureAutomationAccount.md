@@ -7,8 +7,8 @@ ms.openlocfilehash: ff7c5afb7c82e1af5ef54cea5e822f6c89b28585
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382039"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103851"
 ---
 # Remove-AzureAutomationAccount
 
@@ -94,7 +94,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 3874c581d1d030f9c0b77abe82b5a5a289d8960d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135385"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143101800"
 ---
 # Get-AzsSubscriptionsQuota
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Quota
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

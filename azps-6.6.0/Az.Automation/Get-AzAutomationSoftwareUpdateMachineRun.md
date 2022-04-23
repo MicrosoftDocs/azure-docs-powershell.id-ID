@@ -9,8 +9,8 @@ ms.openlocfilehash: 32a8899ff19af81b0dc44abb0a4d49802a000a3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142091049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143097371"
 ---
 # Get-AzAutomationSoftwareUpdateMachineRun
 
@@ -219,6 +219,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateMachineRun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

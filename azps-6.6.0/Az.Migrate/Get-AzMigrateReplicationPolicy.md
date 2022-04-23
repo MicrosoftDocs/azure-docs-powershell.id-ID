@@ -9,8 +9,8 @@ ms.openlocfilehash: 60508ac041f80071e4f9447b16411e311a3e38e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142126547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143090027"
 ---
 # Get-AzMigrateReplicationPolicy
 
@@ -150,7 +150,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IPolicy
 
-## CATATAN
+## NOTES
 
 ALIAS
 

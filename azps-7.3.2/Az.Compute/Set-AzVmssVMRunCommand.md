@@ -9,8 +9,8 @@ ms.openlocfilehash: 163d2a6d1ea59ea2da692d6f8d5e58c10717b27c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141854132"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143080883"
 ---
 # Set-AzVmssVMRunCommand
 
@@ -411,7 +411,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.Api20210701.IVirtualMachineRunCommand
 
-## CATATAN
+## NOTES
 
 ALIAS
 

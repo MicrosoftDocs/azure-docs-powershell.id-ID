@@ -10,8 +10,8 @@ ms.openlocfilehash: 4d8bf2922d58190e41e71e17c96ab55b5ee9433f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142098747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143108027"
 ---
 # Get-AzureRmDtlVMsPerUserPolicy
 
@@ -91,7 +91,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 39fd44c3a57d704402eebdcc3e4ce35a28519d3a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243820"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103188"
 ---
 # Set-AzureStorSimpleAccessControlRecord
 
@@ -148,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
 Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

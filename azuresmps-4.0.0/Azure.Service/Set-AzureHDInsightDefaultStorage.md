@@ -7,8 +7,8 @@ ms.openlocfilehash: b021f120f202f1754e14005629d7a119cdaa7463
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142276981"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103311"
 ---
 # Set-AzureHDInsightDefaultStorage
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

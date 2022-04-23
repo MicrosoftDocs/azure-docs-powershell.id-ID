@@ -10,8 +10,8 @@ ms.openlocfilehash: 8f76a2b43fa3b90d59dd611aa661f2ab1959f41d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423786"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143067527"
 ---
 # Remove-AzApiManagement
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

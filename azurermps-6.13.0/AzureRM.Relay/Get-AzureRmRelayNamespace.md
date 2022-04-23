@@ -9,8 +9,8 @@ ms.openlocfilehash: 05482dfae5cf4e68a82763253d0b4507b0fe364c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141881880"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106937"
 ---
 # Get-AzureRmRelayNamespace
 
@@ -110,6 +110,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Relay.Models.PSRelayNamespaceAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 030002c5aebf7f45e6541f70dbcdf5a0af2a0cb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104035"
 ---
 # New-AzureSqlDatabase
 
@@ -281,7 +281,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.Database
 
-## CATATAN
+## NOTES
 * Untuk menghapus database yang dibuat oleh **New-AzureSqlDatabase**, gunakan cmdlet Remove-AzureSqlDatabase.
 
 ## RELATED LINKS

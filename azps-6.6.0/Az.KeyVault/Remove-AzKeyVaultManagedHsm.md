@@ -9,8 +9,8 @@ ms.openlocfilehash: 14bbe4b8099230b5ef4eb1cb92d2a2576b7328c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304593"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143090531"
 ---
 # Remove-AzKeyVaultManagedHsm
 
@@ -254,7 +254,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

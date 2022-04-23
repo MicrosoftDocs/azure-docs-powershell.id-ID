@@ -7,8 +7,8 @@ ms.openlocfilehash: 6564ea5e4b52fb32e61c05f52dc8f50be305ec31
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142277683"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103473"
 ---
 # Revoke-AzureHDInsightHttpServicesAccess
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

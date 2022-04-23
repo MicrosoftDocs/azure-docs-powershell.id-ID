@@ -9,8 +9,8 @@ ms.openlocfilehash: 64de44e74b5c6ea21d9d49b1911bcd34a74a374a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142388155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143107811"
 ---
 # Remove-AzureRmIoTDeviceProvisioningServiceCertificate
 
@@ -221,6 +221,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

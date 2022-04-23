@@ -7,8 +7,8 @@ ms.openlocfilehash: 2a03a09c030b1372dabda8bb8f1c50c96ceb9b31
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354157"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103617"
 ---
 # Remove-AzureVNetGatewayDefaultSite
 
@@ -77,7 +77,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

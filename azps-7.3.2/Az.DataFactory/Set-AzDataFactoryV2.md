@@ -9,8 +9,8 @@ ms.openlocfilehash: 22c6e0d0450b6d4c3bce2b9ab1227c770923a725
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141895436"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143078561"
 ---
 # Set-AzDataFactoryV2
 
@@ -660,7 +660,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
