@@ -9,8 +9,8 @@ ms.openlocfilehash: 5a2d54dfc81c3f59db07ced78d62e459ffa062a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141954825"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143089073"
 ---
 # Remove-AzNetAppFilesPool
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
