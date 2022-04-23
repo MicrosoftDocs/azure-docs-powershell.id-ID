@@ -10,8 +10,8 @@ ms.openlocfilehash: 4e5e6caa4e4e1e547f9803cddf1f159c4b2dc2ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141829494"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143055575"
 ---
 # Switch-AzWebAppSlot
 
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

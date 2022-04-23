@@ -9,8 +9,8 @@ ms.openlocfilehash: 759479d51bf2082d46527789049f54f10ef08536
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141904539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143084447"
 ---
 # Remove-AzSpringCloud
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

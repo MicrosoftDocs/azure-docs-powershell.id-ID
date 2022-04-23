@@ -8,8 +8,8 @@ ms.openlocfilehash: 5371b5c54cfaff4b1c48dd8a8643e0cc51b1e00e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970501"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143050712"
 ---
 # Get-AzureRmStorageAccountNameAvailability
 
@@ -80,7 +80,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management. Storage. Models.CheckNameAvailabilityResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

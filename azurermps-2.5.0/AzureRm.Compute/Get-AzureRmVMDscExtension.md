@@ -8,13 +8,13 @@ ms.openlocfilehash: 0954bcb395cf4a0dcf64dac178b1168ee1abd59b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141930002"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054612"
 ---
 # Get-AzureRmVMDscExtension
 
 ## SYNOPSIS
-Mendapatkan pengaturan ekstensi DSC pada mesin virtual tertentu.
+Mendapatkan pengaturan ekstensi DSC pada komputer virtual tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmVMDscExtension [-ResourceGroupName] <String> [-VMName] <String> [[-Na
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi Status Yang Diinginkan (DSC) pada mesin virtual tertentu.
+Cmdlet **Get-AzureRmVMDscExtension** mendapatkan pengaturan ekstensi Desired State Configuration (DSC) pada komputer virtual tertentu.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Cmdlet **Get-AzureRmVMDscExtension** mendapatkan pengaturan ekstensi Konfigurasi
 PS C:\> Get-AzureRmVMDscExtension -ResourceGroupName "ResourceGroup002" -VMName "VM07" -Name "DSC"
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi bernama DSC pada mesin virtual bernama VM07.
+Perintah ini mendapatkan pengaturan ekstensi bernama DSC pada komputer virtual bernama VM07.
 
 ## PARAMETERS
 
@@ -54,10 +54,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
 Cmdlet Set-AzureRmVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzureRmVMDscExtension**.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzureRmVMDscExtension** atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
+Tentukan parameter ini hanya jika Anda mengubah nama default di cmdlet **Set-AzureRmVMDscExtension** atau menggunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual di mana cmdlet ini mendapatkan ekstensi DSC.
+Menentukan nama komputer virtual yang cmdlet ini mendapatkan ekstensi DSC.
 
 ```yaml
 Type: String
@@ -117,18 +117,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Compute.Extension.DSC.VirtualMachineDscExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

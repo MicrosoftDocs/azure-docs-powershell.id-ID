@@ -8,8 +8,8 @@ ms.openlocfilehash: 134af70c3f913d0eec8310f83341de8784f30f25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970638"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143050713"
 ---
 # Set-AzureRmCurrentStorageAccount
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

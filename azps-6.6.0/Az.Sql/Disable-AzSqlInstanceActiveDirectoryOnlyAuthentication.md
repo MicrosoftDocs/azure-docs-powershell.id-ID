@@ -9,8 +9,8 @@ ms.openlocfilehash: d9709370d915af485b36389fb9e1855e9423ac14
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141859136"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143084231"
 ---
 # Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.InstanceActiveDirectoryOnlyAuthentication.Model.AzureSqlInstanceActiveDirectoryOnlyAuthenticationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

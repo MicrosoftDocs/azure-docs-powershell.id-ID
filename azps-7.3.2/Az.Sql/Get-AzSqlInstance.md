@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstance.md
-ms.openlocfilehash: 8973f02e594cc00a3419da5cc0a84db904f19368
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2dc75f4a15dd92269e3568b39ed94346d3d0873e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140183576"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143071306"
 ---
 # Get-AzSqlInstance
 
 ## SYNOPSIS
-Mengembalikan informasi tentang Azure SQL Contoh Database Terkelola.
+Mengembalikan informasi tentang Instans Database Terkelola Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,12 +53,12 @@ Get-AzSqlInstance [-InstancePoolName] <String> -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstance** mengembalikan informasi tentang satu atau beberapa Azure SQL Managed Instance.
-Tentukan nama instans untuk melihat informasi hanya untuk contoh tersebut.
+Cmdlet **Get-AzSqlInstance** mengembalikan informasi tentang satu atau beberapa Azure SQL Managed Instances.
+Tentukan nama instans untuk melihat informasi hanya untuk instans tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Menetapkan semua instans ke grup sumber daya
+### Contoh 1: Mendapatkan semua instans yang ditetapkan ke grup sumber daya
 ```powershell
 PS C:\> Get-AzSqlInstance -ResourceGroupName "ResourceGroup01"
 Location                 : westcentralus
@@ -94,7 +97,7 @@ ZoneRedundant            : false
 
 Perintah ini mendapatkan informasi tentang semua instans yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 2: Mendapatkan informasi tentang suatu instans
+### Contoh 2: Mendapatkan informasi tentang instans
 ```powershell
 PS C:\> Get-AzSqlInstance -Name "managedInstance1" -ResourceGroupName "ResourceGroup01"
 Location                 : westcentralus
@@ -117,7 +120,7 @@ ZoneRedundant            : false
 
 Perintah ini mendapatkan informasi tentang instans bernama managedInstance1.
 
-### Contoh 3: Menetapkan semua instans ke grup sumber daya menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua instans yang ditetapkan ke grup sumber daya menggunakan pemfilteran
 ```powershell
 PS C:\> Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "managedInstance*"
 Location                 : westcentralus
@@ -157,7 +160,7 @@ ZoneRedundant            : false
 
 Perintah ini mendapatkan informasi tentang semua instans yang ditetapkan ke grup sumber daya ResourceGroup01 yang dimulai dengan "managedInstance".
 
-### Contoh 4: Mendapatkan semua instance dalam sebuah instance pool
+### Contoh 4: Mendapatkan semua instans dalam kumpulan instans
 ```powershell
 PS C:\> Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -InstancePoolName "instancePool0"
 Location                 : westcentralus
@@ -197,9 +200,9 @@ InstancePoolName         : instancePool0
 ZoneRedundant            : false
 ```
 
-Perintah ini mendapatkan informasi tentang semua instans dalam instance pool "instancePool0".
+Perintah ini mendapatkan informasi tentang semua instans dalam kumpulan instans "instancePool0".
 
-### Contoh 5: Mendapatkan semua instance dalam sebuah instance pool menggunakan objek instance pool
+### Contoh 5: Mendapatkan semua instans dalam kumpulan instans menggunakan objek kumpulan instans
 ```powershell
 PS C:\> $instancePool = Get-AzSqlInstancePool -ResourceGroupName "ResourceGroup01" -Name "instancePool0"
 PS C:\> Get-AzSqlInstance -InstancePool $instancePool
@@ -240,9 +243,9 @@ InstancePoolName         : instancePool0
 ZoneRedundant            : false
 ```
 
-Perintah ini mendapatkan informasi tentang semua instans dalam instance pool "instancePool0".
+Perintah ini mendapatkan informasi tentang semua instans dalam kumpulan instans "instancePool0".
 
-### Contoh 6: Dapatkan semua contoh dalam sebuah instance pool menggunakan pengidentifikasi sumber daya pool instance
+### Contoh 6: Mendapatkan semua instans dalam kumpulan instans menggunakan pengidentifikasi sumber daya kumpulan instans
 ```powershell
 PS C:\> Get-AzSqlInstance -InstancePoolResourceIdentifier "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 Location                 : westcentralus
@@ -282,9 +285,9 @@ InstancePoolName         : instancePool0
 ZoneRedundant            : false
 ```
 
-Perintah ini mendapatkan informasi tentang semua instans dalam instance pool "instancePool0".
+Perintah ini mendapatkan informasi tentang semua instans dalam kumpulan instans "instancePool0".
 
-### Contoh 7: Dapatkan contoh terkelola menggunakan pengidentifikasi sumber dayanya
+### Contoh 7: Mendapatkan instans terkelola menggunakan pengidentifikasi sumber dayanya
 ```powershell
 PS C:\> Get-AzSqlInstance -ResourceIdentifier "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/managedInstance1"
 Location                 : westcentralus
@@ -308,7 +311,7 @@ ZoneRedundant            : false
 
 Perintah ini mendapatkan informasi tentang instans bernama managedInstance1.
 
-### Contoh 8: Menetapkan semua instans ke grup sumber daya dengan informasi administrator eksternal
+### Contoh 8: Mendapatkan semua instans yang ditetapkan ke grup sumber daya dengan informasi administrator eksternal
 ```powershell
 PS C:\> $val = Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -ExpandActiveDirectoryAdministrator
 Location                 : westcentralus
@@ -364,7 +367,7 @@ AzureADOnlyAuthentication : True
 
 Perintah ini mendapatkan informasi tentang semua instans yang ditetapkan ke grup sumber daya ResourceGroup01. .
 
-### Contoh 9: Mendapatkan informasi tentang suatu instans dengan informasi administrator eksternal
+### Contoh 9: Mendapatkan informasi tentang instans dengan informasi administrator eksternal
 ```powershell
 PS C:\> $val = Get-AzSqlInstance -Name "managedInstance1" -ResourceGroupName "ResourceGroup01" -ExpandActiveDirectoryAdministrator
 Location                 : westcentralus
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandActiveDirectoryAdministrator
-Memperluas Informasi Administrator Direktori Aktif di server.
+Perluas Informasi Administrator Direktori Aktif di server.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePool
-Objek induk pool instance.
+Objek induk kumpulan instans.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Instance_Pools.Model.AzureSqlInstancePoolModel
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstancePoolName
-Nama instance pool.
+Nama kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -459,7 +462,7 @@ Accept wildcard characters: True
 ```
 
 ### -InstancePoolResourceId
-Pengidentifikasi sumber daya pool instans.
+Pengidentifikasi sumber daya kumpulan instans.
 
 ```yaml
 Type: System.String
@@ -473,8 +476,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-SQL nama contoh.
+### -Name
+SQL nama instans.
 
 ```yaml
 Type: System.String
@@ -516,7 +519,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya instans yang dikelola.
+Pengidentifikasi sumber daya instans terkelola.
 
 ```yaml
 Type: System.String
@@ -531,7 +534,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -541,6 +544,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

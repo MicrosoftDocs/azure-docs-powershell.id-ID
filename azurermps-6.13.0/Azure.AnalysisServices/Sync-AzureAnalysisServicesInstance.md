@@ -9,8 +9,8 @@ ms.openlocfilehash: 732eb92a46fa7e69ba5274398de648c16142ae75
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360863"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143050453"
 ---
 # Sync-AzureAnalysisServicesInstance
 
@@ -133,7 +133,7 @@ Parameter: Database (ByValue), Instance (ByValue)
 
 ### Microsoft.Azure.Commands.AnalysisServices.Dataplane.Models.ScaleOutServerDatabaseSyncDetails
 
-## CATATAN
+## NOTES
 
 Alias: Sync-AzureAsInstance
 

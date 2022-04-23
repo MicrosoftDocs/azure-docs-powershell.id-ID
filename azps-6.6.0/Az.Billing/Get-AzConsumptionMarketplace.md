@@ -9,8 +9,8 @@ ms.openlocfilehash: 134648e01fe97e242e2e94c3b5757ea5bd0929b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142325375"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143096741"
 ---
 # Get-AzConsumptionMarketplace
 
@@ -246,6 +246,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSMarketplace
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

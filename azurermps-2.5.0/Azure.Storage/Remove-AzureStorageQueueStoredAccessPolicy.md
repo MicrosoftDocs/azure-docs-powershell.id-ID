@@ -8,13 +8,13 @@ ms.openlocfilehash: 9c37421ff33bfb7f2a2308512e28fa8373ee308c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336697"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143055038"
 ---
 # Remove-AzureStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan akses yang disimpan dari antrean penyimpanan Azure.
+Menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,20 +27,20 @@ Remove-AzureStorageQueueStoredAccessPolicy [-Queue] <String> [-Policy] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureStorageQueueStoredAccessPolicy** menghapus kebijakan akses yang disimpan dari antrean penyimpanan Azure.
+Cmdlet **Remove-AzureStorageQueueStoredAccessPolicy** menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kebijakan akses yang disimpan dari antrean penyimpanan
+### Contoh 1: Menghapus kebijakan akses tersimpan dari antrean penyimpanan
 ```
 PS C:\>Remove-AzureStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy04"
 ```
 
-Perintah ini menghapus kebijakan akses bernama Policy04 dari antrean penyimpanan bernama Antrean Saya.
+Perintah ini menghapus kebijakan akses bernama Policy04 dari antrean penyimpanan bernama MyQueue.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzureStorageContext.
 
@@ -117,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,13 +161,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzureStorageQueueStoredAccessPolicy](./Get-AzureStorageQueueStoredAccessPolicy.md)
 
-[AzureStorageContext baru](./New-AzureStorageContext.md)
+[New-AzureStorageContext](./New-AzureStorageContext.md)
 
 [New-AzureStorageQueueStoredAccessPolicy](./New-AzureStorageQueueStoredAccessPolicy.md)
 

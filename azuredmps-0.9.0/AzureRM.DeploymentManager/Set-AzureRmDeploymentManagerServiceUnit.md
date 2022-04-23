@@ -7,8 +7,8 @@ ms.openlocfilehash: b04819f61f37b9bb47818a8b17e93db9a7cdb05d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142394333"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143055369"
 ---
 # Set-AzureRmDeploymentManagerServiceUnit
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceUnitResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

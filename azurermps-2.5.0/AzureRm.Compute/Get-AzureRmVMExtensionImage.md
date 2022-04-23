@@ -8,8 +8,8 @@ ms.openlocfilehash: ccb48064bb2d6b91801a58ecfa9d229a748889a8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054611"
 ---
 # Get-AzureRmVMExtensionImage
 
@@ -36,7 +36,7 @@ Cmdlet **Get-AzureRmVMExtensionImage** mendapatkan semua versi untuk ekstensi Az
 PS C:\> Get-AzureRmVMExtensionImage -Location "Central US" -PublisherName "Fabrikam" -Type "FabrikamEndpointProtection"
 ```
 
-Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, dan tipe yang ditentukan.
+Perintah ini mendapatkan semua versi gambar ekstensi untuk lokasi, penerbit, dan jenis yang ditentukan.
 
 ## PARAMETERS
 
@@ -101,9 +101,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe ekstensi.
-Untuk mendapatkan tipe ekstensi, gunakan cmdlet Get-AzureRmVMExtensionImageType.
+### -Type
+Menentukan jenis ekstensi.
+Untuk mendapatkan jenis ekstensi, gunakan cmdlet Get-AzureRmVMExtensionImageType.
 
 ```yaml
 Type: String
@@ -133,11 +133,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -146,7 +146,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineExtensionImageDetails
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: c254762178310a9ffb90511107284134b312fbdf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175144"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143059769"
 ---
 # New-AzRedisCacheLink
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RedisCache.Models.PSRedisLinkedServer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

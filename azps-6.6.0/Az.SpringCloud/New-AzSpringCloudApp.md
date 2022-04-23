@@ -9,8 +9,8 @@ ms.openlocfilehash: 592f682e83f9e96f6db994bc3140d6e2acb575b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141904629"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143084501"
 ---
 # New-AzSpringCloudApp
 
@@ -349,7 +349,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20200701.IAppResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

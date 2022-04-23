@@ -9,8 +9,8 @@ ms.openlocfilehash: fc08ff4443df2034d07c68bb7c6d03a6b01c6ece
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994182"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143059643"
 ---
 # Get-AzResourceMoverRequiredForResources
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

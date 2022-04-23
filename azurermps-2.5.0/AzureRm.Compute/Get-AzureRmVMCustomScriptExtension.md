@@ -8,8 +8,8 @@ ms.openlocfilehash: b6ce3afb8b280b9ca07746979f0bb5ba425afd82
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054647"
 ---
 # Get-AzureRmVMCustomScriptExtension
 
@@ -133,7 +133,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.VirtualMachineCustomScriptExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

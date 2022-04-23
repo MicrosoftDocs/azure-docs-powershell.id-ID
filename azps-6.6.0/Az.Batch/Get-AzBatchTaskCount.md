@@ -9,8 +9,8 @@ ms.openlocfilehash: cd1722a205e7f0e17b1e73ade266b4af86d2a1fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141872564"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143096921"
 ---
 # Get-AzBatchTaskCount
 
@@ -137,7 +137,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSTaskCounts
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

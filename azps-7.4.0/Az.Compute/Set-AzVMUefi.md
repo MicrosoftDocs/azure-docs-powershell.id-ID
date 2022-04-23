@@ -9,8 +9,8 @@ ms.openlocfilehash: ef97e6c0daa4a49fd6219194c16a52b4da893e04
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143065404"
 ---
 # Set-AzVMUefi
 
@@ -116,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

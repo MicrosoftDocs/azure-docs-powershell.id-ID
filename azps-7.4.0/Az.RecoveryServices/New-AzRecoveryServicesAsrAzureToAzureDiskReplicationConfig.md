@@ -9,8 +9,8 @@ ms.openlocfilehash: 849ca8eaa278e345a9c3951e82e893dcd40ae4ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994482"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143060021"
 ---
 # New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig
 
@@ -359,6 +359,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAzuretoAzureDiskReplicationConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

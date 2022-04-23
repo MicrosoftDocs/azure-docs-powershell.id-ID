@@ -9,8 +9,8 @@ ms.openlocfilehash: 9fbe166f059fc62b1f74a6e1353cd7deb5378ddf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141957390"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143091287"
 ---
 # Unregister-AzWvdApplicationGroup
 
@@ -33,7 +33,7 @@ Batalkan pendaftaran grup aplikasi desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan pendaftaran Windows Grup Aplikasi Desktop Virtual
+### Contoh 1: Membatalkan pendaftaran Grup Aplikasi Desktop Virtual Windows
 ```powershell
 PS C:\> Unregister-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName `
                                     -WorkspaceName WorkspaceName `
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20191210Preview.IWorkspace
 
-## CATATAN
+## NOTES
 
 ALIAS
 

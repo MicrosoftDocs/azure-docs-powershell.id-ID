@@ -9,8 +9,8 @@ ms.openlocfilehash: ea4b4c93fc865f80e6a1083074c1a92e98ff8986
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142051823"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143091341"
 ---
 # Remove-AzWvdMsixPackage
 
@@ -196,7 +196,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

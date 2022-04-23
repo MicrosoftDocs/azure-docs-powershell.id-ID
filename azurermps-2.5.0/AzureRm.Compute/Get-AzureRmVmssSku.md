@@ -8,8 +8,8 @@ ms.openlocfilehash: 307b9852f506368e1e13c02fac4532dab4d2ddd2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054433"
 ---
 # Get-AzureRmVmssSku
 
@@ -96,7 +96,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
