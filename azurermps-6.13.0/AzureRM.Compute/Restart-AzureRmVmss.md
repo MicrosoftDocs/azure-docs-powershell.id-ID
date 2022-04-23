@@ -10,8 +10,8 @@ ms.openlocfilehash: 9f4727fc9bc5a735f837d3bec5eced9cd20e9254
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065756"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109359"
 ---
 # Restart-AzureRmVmss
 
@@ -167,7 +167,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

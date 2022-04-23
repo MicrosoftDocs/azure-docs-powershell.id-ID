@@ -9,8 +9,8 @@ ms.openlocfilehash: 82eceb0d524b0ffdc7e77e49930880ae150d8331
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434548"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143129087"
 ---
 # Get-AzBillingProfile
 
@@ -137,6 +137,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Billing.Models.PSBillingProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

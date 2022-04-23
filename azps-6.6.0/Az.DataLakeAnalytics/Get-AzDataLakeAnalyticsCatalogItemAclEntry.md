@@ -9,8 +9,8 @@ ms.openlocfilehash: 696a249440b3e10283fac18dfa89c2077e392879
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142306573"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093015"
 ---
 # Get-AzDataLakeAnalyticsCatalogItemAclEntry
 
@@ -59,7 +59,7 @@ Get-AzDataLakeAnalyticsCatalogItemAclEntry [-Account] <String> [-GroupOwner] -It
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsCatalogItemAclEntry** mendapatkan daftar entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog di Data Lake Analytics.
+Cmdlet **Get-AzDataLakeAnalyticsCatalogItemAclEntry** mendapatkan daftar entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog dalam Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -74,7 +74,7 @@ Group 902b155a-5601-4ca8-8178-ad3289211f88   ReadWrite
 Other 00000000-0000-0000-0000-000000000000        None
 ```
 
-Perintah ini mendapatkan ACL untuk katalog akun Analitik Data Lake yang ditentukan
+Perintah ini mendapatkan ACL untuk katalog akun Data Lake Analytics yang ditentukan
 
 ### Contoh 2: Dapatkan entri ACL pemilik pengguna untuk katalog
 ```powershell
@@ -85,7 +85,7 @@ Type      Id                                   Permissions
 UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL dari pemilik pengguna untuk katalog akun Analitik Data Lake yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik pengguna untuk katalog akun Data Lake Analytics yang ditentukan
 
 ### Contoh 3: Dapatkan entri ACL pemilik grup untuk katalog
 ```powershell
@@ -96,7 +96,7 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL dari pemilik grup untuk katalog akun Analitik Data Lake yang ditentukan
+Perintah ini mendapatkan entri ACL dari pemilik grup untuk katalog akun Data Lake Analytics yang ditentukan
 
 ### Contoh 4: Mendapatkan ACL untuk database
 ```powershell
@@ -109,7 +109,7 @@ Group 902b155a-5601-4ca8-8178-ad3289211f88   ReadWrite
 Other 00000000-0000-0000-0000-000000000000        None
 ```
 
-Perintah ini mendapatkan ACL untuk database akun Analitik Data Lake yang ditentukan
+Perintah ini mendapatkan ACL untuk database akun Data Lake Analytics yang ditentukan
 
 ### Contoh 5: Mendapatkan entri ACL pemilik pengguna untuk database
 ```powershell
@@ -120,7 +120,7 @@ Type      Id                                   Permissions
 UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL pemilik pengguna untuk database akun Analitik Data Lake yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik pengguna untuk database akun Data Lake Analytics yang ditentukan
 
 ### Contoh 6: Mendapatkan entri ACL pemilik grup untuk database
 ```powershell
@@ -131,7 +131,7 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL dari pemilik grup untuk database akun Analitik Data Lake yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik grup untuk database akun Data Lake Analytics yang ditentukan
 
 ## PARAMETERS
 
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Analitik Data Lake dari item katalog atau katalog.
+Menentukan jalur Data Lake Analytics item katalog atau katalog.
 Bagian jalur harus dipisahkan oleh tanda titik (.).
 
 ```yaml
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSDataLakeAnalyticsAcl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

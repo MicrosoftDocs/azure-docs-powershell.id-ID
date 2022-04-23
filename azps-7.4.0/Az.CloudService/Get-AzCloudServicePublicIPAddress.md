@@ -9,13 +9,13 @@ ms.openlocfilehash: 1c841da6d88dbdde6ee81f1f0fd54b9c2ca5c42e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142180424"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143066393"
 ---
 # Get-AzCloudServicePublicIPAddress
 
 ## SYNOPSIS
-Dapatkan alamat IP publik tertentu di layanan awan.
+Dapatkan alamat IP publik yang ditentukan di layanan awan.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzCloudServicePublicIPAddress -CloudServiceName <String> -ResourceGroupName 
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzCloudServicePublicIPAddress -CloudServiceName <String> -IPConfigurationName <String> -Name <String>
  -NetworkInterfaceName <String> -ResourceGroupName <String> -RoleInstanceName <String>
@@ -46,24 +46,24 @@ Get-AzCloudServicePublicIPAddress -CloudServiceName <String> -IPConfigurationNam
 ```
 
 ## DESCRIPTION
-Dapatkan alamat IP publik tertentu di layanan awan.
+Dapatkan alamat IP publik yang ditentukan di layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan alamat IP publik tingkat instans untuk nama layanan awan tertentu.
+### Contoh 1: Dapatkan alamat IP publik tingkat instans untuk nama layanan cloud tertentu.
 ```powershell
 Get-AzCloudServicePublicIPAddress -ResourceGroupName "BRGThree" -CloudServiceName BService -SubscriptionId 1133e0eb-b53c-1234-b478-2eac8f04afca
 ```
 
-Mendapatkan alamat IP publik tingkat instans untuk nama layanan awan tertentu.
+Mendapatkan alamat IP publik tingkat instans untuk nama layanan cloud tertentu.
 
-### Contoh 2: Dapatkan alamat IP publik tingkat instans untuk objek layanan awan tertentu.
+### Contoh 2: Mendapatkan alamat IP publik tingkat instans untuk objek layanan cloud tertentu.
 ```powershell
 $cs = Get-AzCloudService -ResourceGroupName "BRGThree" -CloudServiceName BService -SubscriptionId 1133e0eb-b53c-1234-b478-2eac8f04afca
 Get-AzCloudServicePublicIPAddress -CloudService $cs
 ```
 
-Mendapatkan alamat IP publik tingkat instans untuk objek layanan awan tertentu.
+Mendapatkan alamat IP publik tingkat instans untuk objek layanan cloud tertentu.
 
 ## PARAMETERS
 
@@ -142,7 +142,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Alamat IP publik.
 
 ```yaml
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleInstanceName
-Nama contoh peran.
+Nama instans peran.
 
 ```yaml
 Type: System.String
@@ -203,8 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -229,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IPublicIPAddress
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -248,10 +248,10 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Perbarui domain diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan seterunya.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 290c726c53ea4479c4bd1f3cb9b2c607c04f20cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358597"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109143"
 ---
 # Set-AzureRmVMBootDiagnostics
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 964ec59cb962509e82795cb1816cdd5011dd9e65
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141804398"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143092619"
 ---
 # Remove-AzDataLakeStoreTrustedIdProvider
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

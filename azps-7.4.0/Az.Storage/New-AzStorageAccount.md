@@ -10,8 +10,8 @@ ms.openlocfilehash: 71e2e38360a9fff7781b5a0bafb8099fc3dfd17f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164759"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143116721"
 ---
 # New-AzStorageAccount
 
@@ -1104,7 +1104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

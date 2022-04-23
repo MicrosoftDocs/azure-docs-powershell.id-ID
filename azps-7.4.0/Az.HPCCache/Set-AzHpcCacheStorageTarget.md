@@ -9,8 +9,8 @@ ms.openlocfilehash: 2685147def13d77be3ea15ca4794048677f9feb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425236"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143122301"
 ---
 # Set-AzHpcCacheStorageTarget
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.HPCCache.Models.PsHpcStorageTarget
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: ace9c549d019157533c84aab17a4d0b970068304
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142073677"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143138033"
 ---
 # Set-AzBlueprintArtifact
 
@@ -396,6 +396,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Blueprint.Models.Artifact
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

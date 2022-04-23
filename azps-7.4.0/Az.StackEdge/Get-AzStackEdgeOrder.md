@@ -9,8 +9,8 @@ ms.openlocfilehash: c167162e107b5a7d98e3ea690f0c8cde14796aa1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171466"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143116937"
 ---
 # Get-AzStackEdgeOrder
 
@@ -142,6 +142,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeOrder
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

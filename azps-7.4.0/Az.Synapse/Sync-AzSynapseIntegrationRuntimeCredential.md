@@ -9,8 +9,8 @@ ms.openlocfilehash: d01ec562a8a890d48303ed46ba8cde8a6ee50baf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427824"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143115893"
 ---
 # Sync-AzSynapseIntegrationRuntimeCredential
 
@@ -223,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

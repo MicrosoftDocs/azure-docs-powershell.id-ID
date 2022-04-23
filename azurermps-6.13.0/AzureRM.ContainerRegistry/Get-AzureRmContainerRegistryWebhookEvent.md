@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e14d1e3f146281ec800914474c5caf3ca3cd47e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141885574"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143108963"
 ---
 # Get-AzureRmContainerRegistryWebhookEvent
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryWebhookEvent
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
