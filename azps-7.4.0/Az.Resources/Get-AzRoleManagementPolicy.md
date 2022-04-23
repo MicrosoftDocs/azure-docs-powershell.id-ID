@@ -9,8 +9,8 @@ ms.openlocfilehash: 3657ab3fc0286d52ce0cf808d527d1b1f5ae342e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420879"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275481"
 ---
 # Get-AzRoleManagementPolicy
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.Api20201001Preview.IRoleManagementPolicy
 
-## CATATAN
+## NOTES
 
 ALIAS
 

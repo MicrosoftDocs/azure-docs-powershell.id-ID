@@ -10,8 +10,8 @@ ms.openlocfilehash: 1b9532f6e3a0936f7f6cfc27e4458ef0f70a4812
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142288051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143323991"
 ---
 # New-AzStorageDirectory
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageFileDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

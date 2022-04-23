@@ -9,8 +9,8 @@ ms.openlocfilehash: 52f562a6b90f8a03ed92405a024f7b920b1532b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142108439"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143330615"
 ---
 # New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### Microsoft.Azure.Commands.Network.Models.PSTunnelInterface
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

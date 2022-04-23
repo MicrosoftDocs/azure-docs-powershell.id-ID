@@ -9,8 +9,8 @@ ms.openlocfilehash: 4b60c31edbdf2abdc1aa6b081a80039a6e27b709
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996779"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143315225"
 ---
 # Remove-AzLabServicesLabPlan
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

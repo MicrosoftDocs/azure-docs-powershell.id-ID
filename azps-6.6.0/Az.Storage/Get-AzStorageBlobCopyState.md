@@ -10,8 +10,8 @@ ms.openlocfilehash: f5d99500d786b5c704f2684e971e23c6c639cbcf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141795308"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143293787"
 ---
 # Get-AzStorageBlobCopyState
 
@@ -263,7 +263,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Storage. Blob.CopyState
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

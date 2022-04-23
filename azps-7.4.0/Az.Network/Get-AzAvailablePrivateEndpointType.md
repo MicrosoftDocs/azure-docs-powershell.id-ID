@@ -9,8 +9,8 @@ ms.openlocfilehash: e868f7a8f8e5480f20880c28e8d4915df3d68d85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143314127"
 ---
 # Get-AzAvailablePrivateEndpointType
 
@@ -114,6 +114,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAvailablePrivateEndpointType
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

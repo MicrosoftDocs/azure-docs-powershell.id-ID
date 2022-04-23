@@ -9,8 +9,8 @@ ms.openlocfilehash: 7871a870ca056e7ff01d3da1e0b68c5f2b3fd8f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141947481"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143343989"
 ---
 # New-AzStackEdgeStorageContainer
 
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

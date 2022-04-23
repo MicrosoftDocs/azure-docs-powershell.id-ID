@@ -9,13 +9,13 @@ ms.openlocfilehash: 88176a406a8c0f49ef204173179f651bf28a50e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141862538"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143344007"
 ---
 # Update-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Virtual WAN Hub BGP Connection).
+Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Koneksi BGP Hub WAN Virtual).
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualhubbgpconnection) untuk informasi terbaru.
@@ -87,7 +87,7 @@ Update-AzVirtualHubBgpConnection [-PeerIp <String>] [-PeerAsn <UInt32>]
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Virtual WAN Hub BGP Connection).
+Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Koneksi BGP Hub WAN Virtual).
 
 ## EXAMPLES
 
@@ -110,7 +110,7 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.6
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke hub Virtual WAN dalam grup sumber daya tersebut di Azure. Koneksi BGP Hub Virtual WAN akan dibuat setelahnya yang akan mengintip Hub Virtual WAN dengan peralatan jaringan yang digunakan di Virtual Network. Koneksi BGP Hub Virtual WAN ini kemudian diperbarui agar memiliki IP Peer yang berbeda.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke Virtual WAN Hub dalam grup sumber daya di Azure. Virtual WAN Hub BGP Connection akan dibuat setelahnya yang akan mengintip Virtual WAN Hub dengan peralatan jaringan yang digunakan di Jaringan Virtual. Koneksi BGP Hub WAN Virtual ini kemudian diperbarui agar memiliki IP Peer yang berbeda.
 
 ## PARAMETERS
 
@@ -390,7 +390,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSBgpConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 20feb5d77fa7faf07e5b95a3362c41305d248cdb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142031951"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143330381"
 ---
 # Remove-AzApplicationGatewayAuthenticationCertificate
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

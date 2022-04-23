@@ -9,8 +9,8 @@ ms.openlocfilehash: d8849603aadebe5a79b57ed4865e3b02c6f02940
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143315279"
 ---
 # Get-AzLabServicesUser
 
@@ -210,7 +210,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.IUser
 
-## CATATAN
+## NOTES
 
 ALIAS
 

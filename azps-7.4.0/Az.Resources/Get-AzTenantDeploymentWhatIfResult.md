@@ -9,8 +9,8 @@ ms.openlocfilehash: 7eeb513b48bf3f07aad8c75b761d27e503d5dda1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994043"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275463"
 ---
 # Get-AzTenantDeploymentWhatIfResult
 
@@ -397,6 +397,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.Deployments.PSWhatIfOperationResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

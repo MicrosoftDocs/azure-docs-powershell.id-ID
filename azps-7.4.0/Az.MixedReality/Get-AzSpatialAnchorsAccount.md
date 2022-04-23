@@ -9,8 +9,8 @@ ms.openlocfilehash: 8f2b8832e76388fa5cbc17a08d3404cb111fa744
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177427"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143314829"
 ---
 # Get-AzSpatialAnchorsAccount
 
@@ -186,6 +186,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.MixedReality.SpatialAnchorsAccount.PSSpatialAnchorsAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

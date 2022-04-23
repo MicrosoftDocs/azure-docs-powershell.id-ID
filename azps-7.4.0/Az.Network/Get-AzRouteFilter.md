@@ -9,8 +9,8 @@ ms.openlocfilehash: f7ecad86acc269d715761766daa7f12ab3464a64
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991751"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143314001"
 ---
 # Get-AzRouteFilter
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteFilter
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

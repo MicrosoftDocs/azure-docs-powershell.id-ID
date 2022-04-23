@@ -9,8 +9,8 @@ ms.openlocfilehash: 98370ab8130d13a6b2841b92d237a0a0cf8eda93
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142345085"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143330399"
 ---
 # New-AzVirtualNetworkTap
 
@@ -294,7 +294,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkTap
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

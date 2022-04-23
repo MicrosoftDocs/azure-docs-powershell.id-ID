@@ -10,8 +10,8 @@ ms.openlocfilehash: 18b7fe74a5100e07b0eec6e96a80e9330a3dd8d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142075351"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143293805"
 ---
 # Get-AzStorageBlobContent
 
@@ -368,7 +368,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 * Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan otomatis melakukannya, jika memungkinkan.
 
 ## RELATED LINKS
