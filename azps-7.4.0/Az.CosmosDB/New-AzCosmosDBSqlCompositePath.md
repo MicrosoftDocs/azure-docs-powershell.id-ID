@@ -9,8 +9,8 @@ ms.openlocfilehash: 32310a7e776a8c94cd7ed2a858926521239569e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998915"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143289017"
 ---
 # New-AzCosmosDBSqlCompositePath
 
@@ -100,6 +100,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSCompositePath
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

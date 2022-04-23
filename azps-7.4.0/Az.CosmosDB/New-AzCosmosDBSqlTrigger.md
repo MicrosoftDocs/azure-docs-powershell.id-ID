@@ -9,13 +9,13 @@ ms.openlocfilehash: f78fd2fdf0bf6df4286fd382dca28d716ceb5112
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003222"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288981"
 ---
 # New-AzCosmosDBSqlTrigger
 
 ## SYNOPSIS
-Membuat Pemicu CosmosDB Sql baru.
+Membuat Pemicu Sql CosmosDB baru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ New-AzCosmosDBSqlTrigger -Name <String> -Body <String> [-TriggerOperation <Strin
 ```
 
 ## DESCRIPTION
-Membuat Pemicu CosmosDB Sql baru.
+Membuat Pemicu Sql CosmosDB baru.
 
 ## EXAMPLES
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Isi
-Isi pemicu.
+Isi Pemicu.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Sql Container.
+Objek Kontainer Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlContainerGetResults
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -TriggerOperation
 Operasi yang dikaitkan dengan pemicu.
-Nilai yang memungkinkan termasuk: 'Semua', 'Buat', 'Perbarui', 'Hapus', 'Ganti'
+Nilai yang mungkin termasuk: 'Semua', 'Buat', 'Perbarui', 'Hapus', 'Ganti'
 
 ```yaml
 Type: System.String
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerType
-Tipe Pemicu.
-Nilai yang memungkinkan termasuk: 'Pra', 'Posting'
+Jenis Pemicu.
+Nilai yang mungkin termasuk: 'Pre', 'Post'
 
 ```yaml
 Type: System.String
@@ -206,8 +206,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ConflictingResourceException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

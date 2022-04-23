@@ -9,8 +9,8 @@ ms.openlocfilehash: d8217f8989e59ff1334ffbe29c2c697bf8c6bd27
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003078"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288873"
 ---
 # Get-AzDataBoxJobCredential
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IUnencryptedCredentials
 
-## CATATAN
+## NOTES
 
 ALIAS
 
