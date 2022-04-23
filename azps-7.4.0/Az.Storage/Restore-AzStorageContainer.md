@@ -9,8 +9,8 @@ ms.openlocfilehash: 49038e651e54c49bcd4ec7fcef90a6dbcf0e1306
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419786"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143222939"
 ---
 # Restore-AzStorageContainer
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

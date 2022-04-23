@@ -9,8 +9,8 @@ ms.openlocfilehash: f9c16401390c28e95c6e4aafe1bc7bed0b57f526
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422499"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283725"
 ---
 # New-AzMigrateDiskMapping
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtDiskInput
 
-## CATATAN
+## NOTES
 
 ALIAS
 

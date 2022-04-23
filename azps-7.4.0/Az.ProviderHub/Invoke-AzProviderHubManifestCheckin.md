@@ -9,8 +9,8 @@ ms.openlocfilehash: 1444fbb45ab38012455546deba45a7796acc0424
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166814"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278181"
 ---
 # Invoke-AzProviderHubManifestCheckin
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ICheckinManifestInfo
 
-## CATATAN
+## NOTES
 
 ALIAS
 

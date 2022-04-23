@@ -9,8 +9,8 @@ ms.openlocfilehash: b3e2b3ea03ca0bae0db1bea1606e4ae6b94a597e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141874166"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264141"
 ---
 # Get-AzApplicationGatewayProbeConfig
 
@@ -97,7 +97,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari p
 
 ### System.Collections.Generic.IEnumerable'1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

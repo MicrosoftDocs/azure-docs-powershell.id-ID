@@ -9,8 +9,8 @@ ms.openlocfilehash: 38273cf4a428e657580e9cd08f6d0cc90a7ca4e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992070"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284139"
 ---
 # Get-AzManagedServicesMarketplaceDefinition
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.Api20200201Preview.IMarketplaceRegistrationDefinition
 
-## CATATAN
+## NOTES
 
 ALIAS
 

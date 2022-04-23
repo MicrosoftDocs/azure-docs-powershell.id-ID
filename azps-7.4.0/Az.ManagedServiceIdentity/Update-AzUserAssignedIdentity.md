@@ -9,8 +9,8 @@ ms.openlocfilehash: f03e8950b7b83c045cf47f2d71c68fa25b172767
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996522"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284157"
 ---
 # Update-AzUserAssignedIdentity
 
@@ -208,7 +208,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServiceIdentity.Models.Api20181130.IIdentity
 
-## CATATAN
+## NOTES
 
 ALIAS
 

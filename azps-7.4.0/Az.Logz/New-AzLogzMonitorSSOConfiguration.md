@@ -9,8 +9,8 @@ ms.openlocfilehash: bd11a31c962596bc98cfae45c133f820c89cb2fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836128"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284283"
 ---
 # New-AzLogzMonitorSSOConfiguration
 
@@ -223,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.ILogzSingleSignOnResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

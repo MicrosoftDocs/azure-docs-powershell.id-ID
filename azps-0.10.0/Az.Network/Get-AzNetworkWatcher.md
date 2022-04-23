@@ -9,13 +9,13 @@ ms.openlocfilehash: d312eaa9f75fc13ecba0b00aa0fea64b5d3ea2e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142492613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264087"
 ---
 # Get-AzNetworkWatcher
 
 ## SYNOPSIS
-Mendapatkan properti Network Watcher
+Mendapatkan properti Pengawas Jaringan
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ Get-AzNetworkWatcher [-ResourceGroupName <String>] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcher mendapatkan satu atau beberapa sumber daya azure Network Watcher.
+Cmdlet Get-AzNetworkWatcher mendapatkan satu atau beberapa sumber daya Azure Network Watcher.
 
 ## EXAMPLES
 
-### -------------------------- Contoh 1: Mendapatkan Network Watcher --------------------------
+### -------------------------- Contoh 1: Mendapatkan -------------------------- Pengawas Jaringan
 ```
 Get-AzNetworkWatcher -Name NetworkWatcher_westcentralus -ResourceGroup NetworkWatcherRG
 
@@ -48,7 +48,7 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Mendapatkan Network Watcher bernama NetworkWatcher_westcentralus dalam grup sumber daya NetworkWatcherRG.
+Mendapatkan Pengawas Jaringan bernama NetworkWatcher_westcentralus dalam grup sumber daya NetworkWatcherRG.
 
 ## PARAMETERS
 
@@ -120,7 +120,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan 
 
 ## RELATED LINKS

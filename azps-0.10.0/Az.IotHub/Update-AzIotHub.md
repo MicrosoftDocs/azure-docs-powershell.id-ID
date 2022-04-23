@@ -9,8 +9,8 @@ ms.openlocfilehash: d1b6c8be02ee246053e5930e37186f2a7480325b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141874274"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264393"
 ---
 # Update-AzIotHub
 
@@ -164,6 +164,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHub
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

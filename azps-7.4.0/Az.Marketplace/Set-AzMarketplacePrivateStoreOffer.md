@@ -9,8 +9,8 @@ ms.openlocfilehash: a2ca840c634ed38d5ea1d5256acbf4750c16b2eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283887"
 ---
 # Set-AzMarketplacePrivateStoreOffer
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Marketplace.Models.PrivateStore.PSPrivateStoreOffer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

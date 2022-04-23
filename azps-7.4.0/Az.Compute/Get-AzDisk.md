@@ -9,8 +9,8 @@ ms.openlocfilehash: 375baff9b74b8e26761ad560e5e265bb83224a92
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143231417"
 ---
 # Get-AzDisk
 
@@ -256,6 +256,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: ab3deeb5aef0df0241a059801df2a35507136e40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999767"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143231669"
 ---
 # Set-AzCloudServiceUpdateDomain
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

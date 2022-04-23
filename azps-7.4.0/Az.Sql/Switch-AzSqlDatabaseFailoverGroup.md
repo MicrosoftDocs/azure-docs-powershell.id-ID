@@ -9,8 +9,8 @@ ms.openlocfilehash: 800cff24d3f2767784ca206599ba2e4791d320c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173854"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143271593"
 ---
 # Switch-AzSqlDatabaseFailoverGroup
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.FailoverGroup.Model.AzureSqlFailoverGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

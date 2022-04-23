@@ -10,8 +10,8 @@ ms.openlocfilehash: e4cf2f94be96a8ae1add6443fe6cc7f2622584ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173937"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143271917"
 ---
 # Resume-AzSqlDatabase
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
-## CATATAN
+## NOTES
 * Cmdlet **Resume-AzSqlDatabase** hanya berfungsi pada database Azure SQL Data Warehouse. Operasi ini tidak didukung pada edisi Azure SQL Database Basic, Standard, dan Premium.
 
 ## RELATED LINKS

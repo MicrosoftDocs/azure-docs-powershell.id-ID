@@ -9,8 +9,8 @@ ms.openlocfilehash: 02a4d57be32edb1128f5c528125f53b4e563ce69
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232155"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143257121"
 ---
 # Get-AzVMGuestPolicyStatusHistory
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.GuestConfiguration.Models.PolicyStatus
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

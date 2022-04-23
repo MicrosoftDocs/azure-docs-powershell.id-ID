@@ -9,8 +9,8 @@ ms.openlocfilehash: 0b700b7a9b955a633071774adcfc0767bcabf00c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421289"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277965"
 ---
 # New-AzPurviewAmazonS3CredentialScanObject
 
@@ -221,7 +221,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AmazonS3CredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

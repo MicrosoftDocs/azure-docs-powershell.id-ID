@@ -9,8 +9,8 @@ ms.openlocfilehash: 26d2142ddf6604bf8d04f3d4227a1efdacce3970
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143271629"
 ---
 # Stop-AzSqlInstanceDatabaseLogReplay
 
@@ -194,6 +194,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

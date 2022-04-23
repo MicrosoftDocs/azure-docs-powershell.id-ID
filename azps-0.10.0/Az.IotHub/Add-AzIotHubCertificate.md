@@ -9,8 +9,8 @@ ms.openlocfilehash: 9cf6f5a86107e35bb29a9a6dc0b0a02e0e84c47f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264573"
 ---
 # Add-AzIotHubCertificate
 
@@ -246,6 +246,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSCertificateDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -1,76 +1,76 @@
 ---
 external help file: ''
 Module Name: Az.CloudService
-online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get-azcloudserviceosfamily
+online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get-azcloudserviceosversion
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSFamily.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSFamily.md
-ms.openlocfilehash: fb93e5fbb66c91b7bab666be8303696358928afc
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSVersion.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSVersion.md
+ms.openlocfilehash: e8b86b5b22753531f242952494c04841526dcf1e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231813"
+ms.locfileid: "143231759"
 ---
-# Get-AzCloudServiceOSFamily
+# Get-AzCloudServiceOSVersion
 
 ## SYNOPSIS
-Mendapatkan properti dari keluarga sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
+Mendapatkan properti versi sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
 
 ## SYNTAX
 
 ### Daftar (Default)
 ```
-Get-AzCloudServiceOSFamily -Location <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Get-AzCloudServiceOSVersion -Location <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ### Dapatkan
 ```
-Get-AzCloudServiceOSFamily -Location <String> -OSFamilyName <String> [-SubscriptionId <String[]>]
+Get-AzCloudServiceOSVersion -Location <String> -OSVersionName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzCloudServiceOSFamily -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>]
+Get-AzCloudServiceOSVersion -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan properti dari keluarga sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
+Mendapatkan properti versi sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua keluarga OS di lokasi
+### Contoh 1: Mendapatkan semua versi OS di lokasi
 ```powershell
-Get-AzCloudServiceOSFamily -location 'westus2'
+Get-AzCloudServiceOSVersion -location 'westus2'
 ```
 
 ```output
-Name Label
----- -----
-5    Windows Server 2016
-4    Windows Server 2012 R2
-6    Windows Server 2019
-3    Windows Server 2012
-2    Windows Server 2008 R2
+Name                        Label                                            IsDefault IsActive Family FamilyLabel
+----                        -----                                            --------- -------- ------ -----------
+WA-GUEST-OS-6.7_201905-01   Windows Azure Guest OS 6.7 (Release 201905-01)   False     False    6      Windows Server 2019
+WA-GUEST-OS-3.21_201411-01  Windows Azure Guest OS 3.21 (Release 201411-01)  False     False    3      Windows Server 2012
+WA-GUEST-OS-3.34_201512-01  Windows Azure Guest OS 3.34 (Release 201512-01)  False     False    3      Windows Server 2012
+WA-GUEST-OS-3.26_201504-01  Windows Azure Guest OS 3.26 (Release 201504-01)  False     False    3      Windows Server 2012
+WA-GUEST-OS-2.46_201512-01  Windows Azure Guest OS 2.46 (Release 201512-01)  False     False    2      Windows Server 2008 R2
 ```
 
-Perintah ini mendapatkan semua keluarga OS di lokasi westus2
+Perintah ini mendapatkan semua versi OS di lokasi westus2
 
-### Contoh 2: Dapatkan keluarga OS
+### Contoh 2: Dapatkan versi OS
 ```powershell
-Get-AzCloudServiceOSFamily -location 'westus2' -OSFamilyName 5
+Get-AzCloudServiceOSVersion -location 'westus2' -OSVersionName 'WA-GUEST-OS-6.7_201905-01'
 ```
 
 ```output
-Name Label
----- -----
-5    Windows Server 2016
+Name                      Label                                          IsDefault IsActive Family FamilyLabel
+----                      -----                                          --------- -------- ------ -----------
+WA-GUEST-OS-6.7_201905-01 Windows Azure Guest OS 6.7 (Release 201905-01) False     False    6      Windows Server 2019
 ```
 
-Perintah ini mendapatkan keluarga OS bernama 5 yang terletak di westus2.
+Perintah ini mendapatkan versi OS bernama WA-GUEST-OS-6.7_201905-01 yang terletak di westus2.
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama lokasi yang berkaitan dengan keluarga OS.
+Nama lokasi yang berkaitan dengan versi OS.
 
 ```yaml
 Type: System.String
@@ -119,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OSFamilyName
-Nama keluarga OS.
+### -OSVersionName
+Nama versi OS.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IOSFamily
+### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IOSVersion
 
 ## NOTES
 

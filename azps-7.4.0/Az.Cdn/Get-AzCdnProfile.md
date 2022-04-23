@@ -10,8 +10,8 @@ ms.openlocfilehash: 361dcc9f2bc22a231b4fcfaa7caf575fcf523767
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169695"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143232227"
 ---
 # Get-AzCdnProfile
 
@@ -26,7 +26,7 @@ Get-AzCdnProfile [-ProfileName <String>] [-ResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzCdnProfile** mendapatkan profil Azure Content Delivery Network (CDN) dan informasi terkaitnya.
+**Cmdlet Get-AzCdnProfile** mendapatkan profil Content Delivery Network Azure (CDN) dan informasi terkaitnya.
 
 ## EXAMPLES
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

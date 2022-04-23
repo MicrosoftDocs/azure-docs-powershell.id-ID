@@ -9,13 +9,13 @@ ms.openlocfilehash: 5f36936a65a2246ae2705acb52f2c329021ae293
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277875"
 ---
 # New-AzPurviewAmazonS3ScanRulesetObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk AmazonS3ScanRuleset.
+Buat objek dalam memori untuk AmazonS3ScanRuleset.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-AzPurviewAmazonS3ScanRulesetObject -Kind <DataSourceType> [-Description <Str
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk AmazonS3ScanRuleset.
+Buat objek dalam memori untuk AmazonS3ScanRuleset.
 
 ## EXAMPLES
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScanningRuleCustomFileExtension
-Untuk membangun, lihat bagian CATATAN untuk properti SCANNINGRULECUSTOMFILEEXTENSION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SCANNINGRULECUSTOMFILEEXTENSION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.ICustomFileExtension[]
@@ -139,7 +139,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.ScanRulesetType
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AmazonS3ScanRuleset
 
-## CATATAN
+## NOTES
 
 ALIAS
 

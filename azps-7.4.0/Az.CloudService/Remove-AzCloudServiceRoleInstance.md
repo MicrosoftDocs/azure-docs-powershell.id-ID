@@ -1,84 +1,72 @@
 ---
 external help file: ''
 Module Name: Az.CloudService
-online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get-azcloudservicenetworkinterface
+online version: https://docs.microsoft.com/powershell/module/az.cloudservice/remove-azcloudserviceroleinstance
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceNetworkInterface.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceNetworkInterface.md
-ms.openlocfilehash: 2bf2a5408a42adc628a79cffa6350cf434ff348e
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Remove-AzCloudServiceRoleInstance.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Remove-AzCloudServiceRoleInstance.md
+ms.openlocfilehash: 1d35277c6e9211be485126dae1f5b78dbe99eb4b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231867"
+ms.locfileid: "143231723"
 ---
-# Get-AzCloudServiceNetworkInterface
+# Remove-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Dapatkan antarmuka jaringan yang ditentukan di layanan cloud.
+Menghapus instans peran di layanan awan.
 
 ## SYNTAX
 
-### List1 (Default)
+### DeleteExpanded (Default)
 ```
-Get-AzCloudServiceNetworkInterface -CloudServiceName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
-```
-
-### Dapatkan
-```
-Get-AzCloudServiceNetworkInterface -CloudServiceName <String> -Name <String> -ResourceGroupName <String>
- -RoleInstanceName <String> [-SubscriptionId <String[]>] [-Expand <String>] [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+Remove-AzCloudServiceRoleInstance -CloudServiceName <String> -ResourceGroupName <String>
+ -RoleInstance <String[]> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### DeleteViaIdentityExpanded
 ```
-Get-AzCloudServiceNetworkInterface -InputObject <ICloudServiceIdentity> [-Expand <String>]
- [-DefaultProfile <PSObject>] [<CommonParameters>]
-```
-
-### Daftar
-```
-Get-AzCloudServiceNetworkInterface -CloudServiceName <String> -ResourceGroupName <String>
- -RoleInstanceName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+Remove-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> -RoleInstance <String[]>
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dapatkan antarmuka jaringan yang ditentukan di layanan cloud.
+Menghapus instans peran di layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan antarmuka jaringan dengan nama layanan cloud
+### Contoh 1: Menghapus instans peran layanan cloud
 ```powershell
-Get-AzCloudServiceNetworkInterface -ResourceGroupName "BRGThree" -CloudServiceName BService -SubscriptionId 1133e0eb-b53c-1234-b478-2eac8f04afca
+Remove-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstance "ContosoFrontEnd_IN_0"
 ```
 
-Mendapatkan semua antarmuka jaringan untuk nama layanan cloud tertentu.
-
-### Contoh 2: Mendapatkan antarmuka jaringan oleh objek layanan cloud
-```powershell
-$cs = Get-AzCloudService -ResourceGroupName "BRGThree" -CloudServiceName BService -SubscriptionId 1133e0eb-b53c-1234-b478-2eac8f04afca
-Get-AzCloudServiceNetworkInterface -CloudService $cs
-```
-
-Mendapatkan semua antarmuka jaringan untuk objek layanan cloud tertentu.
-
-### Contoh 3: Mendapatkan antarmuka jaringan dengan objek layanan cloud dan nama instans peran.
-```powershell
-Get-AzCloudServiceNetworkInterface -CloudServiceName $cs -RoleInstanceName WebRole1_IN_0
-```
-
-Mendapatkan semua antarmuka jaringan untuk objek layanan cloud dan nama instans peran tertentu.
+Perintah ini menghapus instans peran bernama ContosoFrontEnd_IN_0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
+
+### -AsJob
+Jalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -CloudServiceName
 Nama layanan awan.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List, List1
+Parameter Sets: DeleteExpanded
 Aliases:
 
 Required: True
@@ -103,27 +91,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Perluas
-Memperluas sumber daya yang dirujuk.
-
-```yaml
-Type: System.String
-Parameter Sets: Get, GetViaIdentity
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: DeleteViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -133,15 +106,30 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Name
-Nama antarmuka jaringan.
+### -NoWait
+Jalankan perintah secara asinkron
 
 ```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases: NetworkInterfaceName
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Mengembalikan true saat perintah berhasil
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -153,7 +141,7 @@ Nama grup sumber daya.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List, List1
+Parameter Sets: DeleteExpanded
 Aliases:
 
 Required: True
@@ -163,12 +151,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RoleInstanceName
-Nama instans peran.
+### -RoleInstance
+Daftar nama instans peran layanan awan.
+Nilai '*' akan menandakan semua instans peran layanan cloud.
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: System.String[]
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -183,13 +172,44 @@ Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
-Type: System.String[]
-Parameter Sets: Get, List, List1
+Type: System.String
+Parameter Sets: DeleteExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -203,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.INetworkInterface
+### System.Boolean
 
 ## NOTES
 

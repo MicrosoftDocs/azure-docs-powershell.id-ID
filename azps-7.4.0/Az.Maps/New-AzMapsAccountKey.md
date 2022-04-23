@@ -9,8 +9,8 @@ ms.openlocfilehash: cbfc7735ebcd9d4b41990ebb2c14b0960ea11610
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001794"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284067"
 ---
 # New-AzMapsAccountKey
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.Api20210201.IMapsAccountKeys
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d757dc82770f7d4d855f59e8adf0896da4ea005c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143271449"
 ---
 # Update-AzSqlInstanceLink
 
@@ -367,7 +367,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedInstanceHybridLink.Model.AzureSqlManagedInstanceLinkModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

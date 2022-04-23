@@ -9,8 +9,8 @@ ms.openlocfilehash: 995a2392dc86a6a2eca2dee8d7632fce3280d09b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141799124"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143254277"
 ---
 # Remove-AzNetworkWatcherFlowLog
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek log alur.
+Flow objek log.
 
 ```yaml
 Type: PSFlowLogResource
@@ -260,7 +260,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

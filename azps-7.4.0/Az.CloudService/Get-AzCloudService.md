@@ -1,76 +1,98 @@
 ---
 external help file: ''
 Module Name: Az.CloudService
-online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get-azcloudserviceosfamily
+online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get-azcloudservice
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSFamily.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSFamily.md
-ms.openlocfilehash: fb93e5fbb66c91b7bab666be8303696358928afc
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudService.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudService.md
+ms.openlocfilehash: 750d6d85a6346d2147088638f5bcabc9fb0a179b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231813"
+ms.locfileid: "143231885"
 ---
-# Get-AzCloudServiceOSFamily
+# Get-AzCloudService
 
 ## SYNOPSIS
-Mendapatkan properti dari keluarga sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
+Menampilkan informasi tentang layanan awan.
 
 ## SYNTAX
 
 ### Daftar (Default)
 ```
-Get-AzCloudServiceOSFamily -Location <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+Get-AzCloudService [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### Dapatkan
 ```
-Get-AzCloudServiceOSFamily -Location <String> -OSFamilyName <String> [-SubscriptionId <String[]>]
+Get-AzCloudService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzCloudServiceOSFamily -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>]
+Get-AzCloudService -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
+```
+
+### Daftar1
+```
+Get-AzCloudService -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan properti dari keluarga sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
+Menampilkan informasi tentang layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua keluarga OS di lokasi
+### Contoh 1: Mendapatkan semua layanan cloud di bawah grup sumber daya
 ```powershell
-Get-AzCloudServiceOSFamily -location 'westus2'
+Get-AzCloudService -ResourceGroupName "ContosOrg"
 ```
 
 ```output
-Name Label
----- -----
-5    Windows Server 2016
-4    Windows Server 2012 R2
-6    Windows Server 2019
-3    Windows Server 2012
-2    Windows Server 2008 R2
+ResourceGroupName Name              Location    ProvisioningState
+----------------- ----              --------    -----------------
+ContosOrg         ContosoCS         eastus2euap Succeeded
+ContosOrg         ContosoCSTest     eastus2euap Failed
 ```
 
-Perintah ini mendapatkan semua keluarga OS di lokasi westus2
+Perintah ini mendapatkan semua layanan cloud dalam grup sumber daya bernama ContosOrg
 
-### Contoh 2: Dapatkan keluarga OS
+### Contoh 2: Mendapatkan layanan cloud
 ```powershell
-Get-AzCloudServiceOSFamily -location 'westus2' -OSFamilyName 5
+Get-AzCloudService -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
+
+ResourceGroupName Name              Location    ProvisioningState
+----------------- ----              --------    -----------------
+ContosOrg         ContosoCS         eastus2euap Succeeded
+
+$cloudService = Get-AzCloudService -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
+$cloudService | Format-List
+ResourceGroupName : ContosOrg
+Configuration     : xxxxxxxx
+ConfigurationUrl  :
+ExtensionProfile  : xxxxxxxx
+Id                : xxxxxxxx
+Location          : East US
+Name              : ContosoCS
+NetworkProfile    : xxxxxxxx
+OSProfile         : xxxxxxxx
+PackageUrl        : xxxxxxxx
+ProvisioningState : Succeeded
+RoleProfile       : xxxxxxxx
+StartCloudService :
+Tag               : {
+                      "Owner": "Contos"
+                    }
+Type              : Microsoft.Compute/cloudServices
+UniqueId          : xxxxxxxx
+UpgradeMode       : Auto
+
 ```
 
-```output
-Name Label
----- -----
-5    Windows Server 2016
-```
-
-Perintah ini mendapatkan keluarga OS bernama 5 yang terletak di westus2.
+Perintah ini mendapatkan layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -104,13 +126,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Lokasi
-Nama lokasi yang berkaitan dengan keluarga OS.
+### -Name
+Nama layanan awan.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List
-Aliases:
+Parameter Sets: Get
+Aliases: CloudServiceName
 
 Required: True
 Position: Named
@@ -119,12 +141,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OSFamilyName
-Nama keluarga OS.
+### -ResourceGroupName
+Nama grup sumber daya.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get
+Parameter Sets: Get, List1
 Aliases:
 
 Required: True
@@ -140,7 +162,7 @@ ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
-Parameter Sets: Get, List
+Parameter Sets: Get, List, List1
 Aliases:
 
 Required: False
@@ -159,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IOSFamily
+### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudService
 
 ## NOTES
 

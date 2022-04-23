@@ -10,8 +10,8 @@ ms.openlocfilehash: e4d920ca0a7d4cc5a6ec79cfc4c97a62fa743ec7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143271791"
 ---
 # Start-AzSqlDatabaseExecuteIndexRecommendation
 
@@ -126,7 +126,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Model.IndexRecommendation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

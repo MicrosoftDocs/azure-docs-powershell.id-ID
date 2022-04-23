@@ -9,8 +9,8 @@ ms.openlocfilehash: aba83e41597e4b140e8ff79fa1d5ceb9a409e9fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165919"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143223155"
 ---
 # Set-AzSearchPrivateEndpointConnection
 
@@ -252,7 +252,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSPrivateEndpointConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

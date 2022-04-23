@@ -1,59 +1,62 @@
 ---
 external help file: ''
-Module Name: Az.MariaDb
-online version: https://docs.microsoft.com/powershell/module/az.mariadb/remove-azmariadbserver
+Module Name: Az.Logz
+online version: https://docs.microsoft.com/powershell/module/az.logz/remove-azlogzsubaccount
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbServer.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbServer.md
-ms.openlocfilehash: c44d0025b917be6e20e70f3bd7be9b6e377bff1f
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzSubAccount.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzSubAccount.md
+ms.openlocfilehash: 025901c490585714a06e75da679e78efa9059213
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284013"
+ms.locfileid: "143284301"
 ---
-# Remove-AzMariaDbServer
+# Remove-AzLogzSubAccount
 
 ## SYNOPSIS
-Menghapus server.
+Menghapus sumber daya sub akun.
+Operasi penghapusan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzMariaDbServer -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzLogzSubAccount -MonitorName <String> -Name <String> -ResourceGroupName <String>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzMariaDbServer -InputObject <IMariaDbIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+Remove-AzLogzSubAccount -InputObject <ILogzIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus server.
+Menghapus sumber daya sub akun.
+Operasi penghapusan ini dapat memakan waktu hingga 10 menit untuk diselesaikan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus MariaDB
+### Contoh 1: Menghapus sumber daya sub akun
 ```powershell
-Remove-AzMariaDbServer -Name mariadb-asd-01 -ResourceGroupName mariadb-test-qu5ov0
+Remove-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName logz-portal01 -Name logz01-subaccount01
 ```
 
-Perintah ini menghapus MariaDB.
+Perintah ini menghapus sumber daya sub akun.
 
-### Contoh 2: Hapus MariaDB
+### Contoh 2: Menghapus sumber daya sub akun menurut alur
 ```powershell
-Get-AzMariaDbServer -Name mariadb-bc-t01 -ResourceGroupName mariadb-test-qu5ov0 | Remove-AzMariaDbServer
+Get-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName logz-portal01 -Name logz01-subaccount02 | Remove-AzLogzSubAccount
 ```
 
-Perintah ini menghapus MariaDB.
+Perintah ini menghapus sumber daya sub akun menurut alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,10 +86,10 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -97,13 +100,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama server.
+### -MonitorName
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases: ServerName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Nama sumber daya Sub Akun
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases: SubAccountName
 
 Required: True
 Position: Named
@@ -128,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Nama grup sumber daya.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -159,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan yang mengidentifikasi langganan Azure.
+ID langganan target.
 
 ```yaml
 Type: System.String
@@ -173,8 +191,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,11 +223,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
 
 ## OUTPUTS
 
@@ -224,17 +242,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
-  - `[ConfigurationName <String>]`: Nama konfigurasi server.
-  - `[DatabaseName <String>]`: Nama database.
-  - `[FirewallRuleName <String>]`: Nama aturan firewall server.
+INPUTOBJECT <ILogzIdentity>: Parameter Identitas
+  - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
-  - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
-  - `[ServerName <String>]`: Nama server.
-  - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.
-  - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
+  - `[MonitorName <String>]`: Memantau nama sumber daya
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[RuleSetName <String>]`: 
+  - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
+  - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 6fdcb8d17fbabd7734c38b2993896b54a20ee8c2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430497"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277821"
 ---
 # New-AzPurviewAzureCosmosDbCredentialScanObject
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureCosmosDbCredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 
