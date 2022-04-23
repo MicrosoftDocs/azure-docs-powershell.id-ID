@@ -7,8 +7,8 @@ ms.openlocfilehash: 3ce903ba229942386f53d7cd3559c1b4c9ac835f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142241551"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209187"
 ---
 # Get-AzsStorageFarmMetric
 
@@ -106,6 +106,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.Metric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 6feb7eb3f20e06c8dfffaa3dd9a1fb2bf3cc4c68
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142735"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143220527"
 ---
 # Remove-AzureRmCdnEndpoint
 
@@ -192,7 +192,7 @@ Parameter: CdnEndpoint (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

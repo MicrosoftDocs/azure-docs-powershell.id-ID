@@ -7,8 +7,8 @@ ms.openlocfilehash: ab432625ab6af4a8fbd23895cb82e1d9f83954c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381081"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143208737"
 ---
 # Install-AzsUpdate
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Update.Admin.Models.Update
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

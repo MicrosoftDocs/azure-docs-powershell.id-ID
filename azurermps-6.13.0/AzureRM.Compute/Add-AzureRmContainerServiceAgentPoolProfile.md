@@ -10,8 +10,8 @@ ms.openlocfilehash: eb2b4e1ea50c7dd8e175583835d16c791313db6b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844414"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143220484"
 ---
 # Add-AzureRmContainerServiceAgentPoolProfile
 
@@ -181,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

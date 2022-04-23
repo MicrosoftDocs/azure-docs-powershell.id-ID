@@ -10,8 +10,8 @@ ms.openlocfilehash: 8b92151c89eb99c0f9223bd9cdcf0f8851c4d8ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141947967"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143250029"
 ---
 # Remove-AzSqlElasticPool
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

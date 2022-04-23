@@ -7,8 +7,8 @@ ms.openlocfilehash: ba118c80656676c47a2d6740ef7c0266fd491af6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143208917"
 ---
 # New-SubscriptionObject
 
@@ -210,7 +210,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

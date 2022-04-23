@@ -10,8 +10,8 @@ ms.openlocfilehash: 39796e1e9d77fb95c65b7ac72e9dee3ee266af10
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328032"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143262161"
 ---
 # Remove-AzADSpCredential
 
@@ -245,7 +245,7 @@ Parameter: ServicePrincipalObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

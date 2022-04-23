@@ -7,8 +7,8 @@ ms.openlocfilehash: 4cc08220a92dce5a49544cf958db79d7243b9ebb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142310821"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209115"
 ---
 # New-AzsStorageQuota
 
@@ -136,6 +136,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.StorageQuota
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

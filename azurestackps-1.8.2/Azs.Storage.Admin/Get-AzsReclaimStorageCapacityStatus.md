@@ -7,8 +7,8 @@ ms.openlocfilehash: fd62756b3a41af82a245a39d4f80478d47d90e1c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142333799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143209241"
 ---
 # Get-AzsReclaimStorageCapacityStatus
 
@@ -88,6 +88,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

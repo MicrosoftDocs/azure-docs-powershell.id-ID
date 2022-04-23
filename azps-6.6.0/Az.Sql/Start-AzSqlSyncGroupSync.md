@@ -9,8 +9,8 @@ ms.openlocfilehash: 17afd3c485820351e3683d4ca6342dc2f3af9636
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142222093"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143249723"
 ---
 # Start-AzSqlSyncGroupSync
 
@@ -43,7 +43,7 @@ Perintah ini memulai putaran sinkronisasi untuk mysg grup sinkronisasi.
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Database Azure SQL.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

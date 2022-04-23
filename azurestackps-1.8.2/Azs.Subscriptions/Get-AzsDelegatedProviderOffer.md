@@ -7,8 +7,8 @@ ms.openlocfilehash: 66e8e58b84c0ea1ca0e71999dad56bcf464d6a0f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142240921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143208791"
 ---
 # Get-AzsDelegatedProviderOffer
 
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscription.Models.Offer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

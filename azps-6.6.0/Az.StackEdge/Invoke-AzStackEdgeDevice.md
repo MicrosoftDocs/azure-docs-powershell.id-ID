@@ -9,8 +9,8 @@ ms.openlocfilehash: 5a5b95b36a3cbf38e8169740a7e16def0e762741
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142040267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143249471"
 ---
 # Invoke-AzStackEdgeDevice
 
@@ -289,6 +289,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

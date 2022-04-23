@@ -9,8 +9,8 @@ ms.openlocfilehash: 22b02f0445e0ea3a0e134fed7c724999785721b7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003443"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143229797"
 ---
 # Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

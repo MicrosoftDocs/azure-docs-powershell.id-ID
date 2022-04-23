@@ -9,8 +9,8 @@ ms.openlocfilehash: c03a76943857e3615269a9584a3975ae6ab86666
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142141476"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143219114"
 ---
 # New-AzureRmFrontDoorRoutingRuleObject
 
@@ -293,7 +293,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSRoutingRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
