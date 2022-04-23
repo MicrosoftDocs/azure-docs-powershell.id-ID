@@ -10,8 +10,8 @@ ms.openlocfilehash: e0bce4f579b2000bc970e35ceb03da03fdffb211
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390862"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166787"
 ---
 # Get-AzureRmApiManagementSsoToken
 
@@ -28,16 +28,16 @@ Get-AzureRmApiManagementSsoToken -ResourceGroupName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token masuk tunggal (SSO) ke portal manajemen yang digunakan dari layanan API Management.
+Cmdlet **Get-AzureRmApiManagementSsoToken** mengembalikan tautan (URL) yang berisi token akses menyeluruh (SSO) ke portal manajemen yang disebarkan dari layanan API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan token SSO dari layanan API Management
+### Contoh 1: Mendapatkan token SSO dari layanan API Management
 ```
 PS C:\>Get-AzureRmApiManagementSsoToken -ResourceGroupName "Contoso" -Name "ContosoApi"
 ```
 
-Perintah ini mendapatkan token SSO layanan API Management.
+Perintah ini mendapatkan token SSO dari layanan API Management.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama instans API Management.
 
 ```yaml
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

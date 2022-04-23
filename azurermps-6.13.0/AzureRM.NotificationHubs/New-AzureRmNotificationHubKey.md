@@ -10,8 +10,8 @@ ms.openlocfilehash: d129d34ab9bcbcd67a7c643e4f412bacf262b293
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216603"
 ---
 # New-AzureRmNotificationHubKey
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.NotificationHubs.Models.ResourceListKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

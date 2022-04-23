@@ -8,8 +8,8 @@ ms.openlocfilehash: d3e7a04f292be8e83bc28456c0510450c078a777
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285208"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167652"
 ---
 # Remove-AzureRmStorageAccount
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 07d0834b89010ff533e1620f29904ea159d3dfea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882544"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216513"
 ---
 # Get-AzureRmOperationalInsightsWorkspaceSharedKeys
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspaceKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

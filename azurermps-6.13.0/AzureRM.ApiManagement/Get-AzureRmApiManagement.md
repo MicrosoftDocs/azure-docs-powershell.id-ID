@@ -10,13 +10,13 @@ ms.openlocfilehash: bff36b7bcb37dd099f9aa50a99bed9538111e8d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166857"
 ---
 # Get-AzureRmApiManagement
 
 ## SYNOPSIS
-Mendapatkan daftar atau deskripsi Layanan API Management tertentu.
+Mendapatkan daftar atau deskripsi layanan API Management tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmApiManagement -ResourceGroupName <String> -Name <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagement** mendapatkan daftar semua layanan API Management dalam langganan atau grup sumber daya tertentu atau API Management tertentu.
+Cmdlet **Get-AzureRmApiManagement** mendapatkan daftar semua layanan API Management di bawah langganan atau grup sumber daya tertentu atau API Management tertentu.
 
 ## EXAMPLES
 
@@ -75,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama layanan API Management.
 
 ```yaml
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan layanan API Management.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan layanan API Management.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,15 +116,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Backup-AzureRmApiManagement](./Backup-AzureRmApiManagement.md)
 
-[Baru-AzureRmApiManagement](./New-AzureRmApiManagement.md)
+[New-AzureRmApiManagement](./New-AzureRmApiManagement.md)
 
-[Hapus-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
+[Remove-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
 
 [Restore-AzureRmApiManagement](./Restore-AzureRmApiManagement.md)
 

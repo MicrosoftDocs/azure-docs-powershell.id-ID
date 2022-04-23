@@ -7,8 +7,8 @@ ms.openlocfilehash: 0e67f421305bbdaa065f3e8cb9cad75b4adcafb9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210951"
 ---
 # Get-WAPackLogicalNetwork
 
@@ -92,7 +92,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

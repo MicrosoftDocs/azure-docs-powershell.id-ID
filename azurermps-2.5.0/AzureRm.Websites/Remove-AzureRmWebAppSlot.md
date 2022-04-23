@@ -7,8 +7,8 @@ ms.openlocfilehash: 93db0a86caf381b32293089bd68a6efafc20ef02
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391633"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167517"
 ---
 # Remove-AzureRmWebAppSlot
 
@@ -192,7 +192,7 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

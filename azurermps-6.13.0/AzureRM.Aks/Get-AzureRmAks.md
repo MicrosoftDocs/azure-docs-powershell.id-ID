@@ -9,13 +9,13 @@ ms.openlocfilehash: d30d9858a3050864f5cc86601adf6b598be8c54d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360858"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166941"
 ---
 # Get-AzureRmAks
 
 ## SYNOPSIS
-Daftar kluster terkelola Kubernetes.
+Mencantumkan kluster terkelola Kubernetes.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -38,11 +38,11 @@ Get-AzureRmAks [-ResourceGroupName] <String> [-Name] <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Daftar kluster terkelola Kubernetes.
+Mencantumkan kluster terkelola Kubernetes.
 
 ## EXAMPLES
 
-### Daftar semua kluster Kubernetes
+### Mencantumkan semua kluster Kubernetes
 ```
 PS C:\> Get-AzureRmAks
 ```
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id dari kluster Kubernetes yang dikelola
+Id kluster Kubernetes terkelola
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster Kubernetes terkelola Anda
 
 ```yaml
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

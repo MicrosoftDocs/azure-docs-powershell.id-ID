@@ -10,8 +10,8 @@ ms.openlocfilehash: 5d13fb4c432a0b40fdfd90a5eea55ea44a8b6ef2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384955"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216567"
 ---
 # Get-AzureRmOperationalInsightsDataSource
 
@@ -233,7 +233,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS

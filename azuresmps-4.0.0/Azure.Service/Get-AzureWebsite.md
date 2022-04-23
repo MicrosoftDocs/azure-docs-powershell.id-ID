@@ -7,8 +7,8 @@ ms.openlocfilehash: bcf65e5d36da5164f116f723a09f06e939fce8c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245418"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211001"
 ---
 # Get-AzureWebsite
 
@@ -158,7 +158,7 @@ Secara default, **Get-AzureWebsite** mengembalikan array objek **Situs** .
 ### Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.WebEntities.SiteWithConfig
 Saat Anda menggunakan parameter *Nama* , **Get-AzureWebsite** mengembalikan objek **SiteWithConfig** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

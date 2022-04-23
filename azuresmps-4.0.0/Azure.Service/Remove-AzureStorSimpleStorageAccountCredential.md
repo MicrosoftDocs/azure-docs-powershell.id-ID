@@ -7,8 +7,8 @@ ms.openlocfilehash: bfe41faa373097fda909d367ede6659c3cb961e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816444"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210483"
 ---
 # Remove-AzureStorSimpleStorageAccountCredential
 
@@ -160,7 +160,7 @@ Cmdlet ini menerima objek **StorageAccountCredential** menggunakan pipeline.
 ### TaskStatusInfo
 Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

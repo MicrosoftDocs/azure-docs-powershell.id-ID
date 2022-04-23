@@ -8,8 +8,8 @@ ms.openlocfilehash: 06bb13207a666b4537c267e391818865e4165e74
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846831"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167553"
 ---
 # Remove-AzureRmWebAppSSLBinding
 
@@ -246,7 +246,7 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

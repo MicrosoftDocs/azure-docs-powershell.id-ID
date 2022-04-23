@@ -10,8 +10,8 @@ ms.openlocfilehash: 67a6a9d706b8865ebca4290649a30bc8e9817569
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391078"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166995"
 ---
 # Stop-AzureStorageBlobCopy
 
@@ -295,7 +295,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

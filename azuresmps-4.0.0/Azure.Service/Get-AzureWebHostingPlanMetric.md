@@ -7,8 +7,8 @@ ms.openlocfilehash: 85df212e6b3002c93af7e2f2edf1ade046919024
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278421"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210990"
 ---
 # Get-AzureWebHostingPlanMetric
 
@@ -214,7 +214,7 @@ Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.WebEntities.MetricRe
 
 Secara default, **Get-AzureWebHostingPlanMetric** mengembalikan array objek **MetricResponse** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

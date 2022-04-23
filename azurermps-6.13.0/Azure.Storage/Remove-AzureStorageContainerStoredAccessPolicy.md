@@ -10,8 +10,8 @@ ms.openlocfilehash: b0a0ffcc1d4742da62c983ed9429df46569f85be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103161"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167121"
 ---
 # Remove-AzureStorageContainerStoredAccessPolicy
 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

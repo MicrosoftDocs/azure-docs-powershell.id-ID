@@ -8,8 +8,8 @@ ms.openlocfilehash: b85d22d1030eaa12e58cded1c7225231c7e8b964
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141847465"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167661"
 ---
 # Get-AzureRmAppServicePlan
 
@@ -126,7 +126,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Management.WebSites.Models.ServerFarmCollection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

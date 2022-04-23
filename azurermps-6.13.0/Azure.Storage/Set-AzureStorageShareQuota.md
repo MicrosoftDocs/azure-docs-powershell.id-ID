@@ -10,8 +10,8 @@ ms.openlocfilehash: 62e9fc5036c4a73335b0b68154288149e806dc4b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846779"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167017"
 ---
 # Set-AzureStorageShareQuota
 
@@ -195,7 +195,7 @@ Parameter: Bagikan (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.FileShareProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
