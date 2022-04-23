@@ -9,8 +9,8 @@ ms.openlocfilehash: 87ebaaab4ef2da2dd5e6dc6530bc5b01e4e653f8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141851324"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143133785"
 ---
 # Set-AzIotCentralApp
 
@@ -294,6 +294,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralApp
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

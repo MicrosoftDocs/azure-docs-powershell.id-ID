@@ -9,8 +9,8 @@ ms.openlocfilehash: be906ac59d299c38de30fa34c49dc09d5ac7ec9a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178597"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143122877"
 ---
 # New-AzEventGridTopicKey
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.EventGrid.Models.TopicSharedAccessKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

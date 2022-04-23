@@ -8,8 +8,8 @@ ms.openlocfilehash: d4884c95966e6f3fddbfac11ca536de0f4611760
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141870782"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143150885"
 ---
 # Remove-AzDiskAccess
 
@@ -210,6 +210,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

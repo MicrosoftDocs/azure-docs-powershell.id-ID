@@ -9,8 +9,8 @@ ms.openlocfilehash: 44bb410702e59e6e1b194e866fc31dc2436c057d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143123507"
 ---
 # Remove-AzIoTDeviceProvisioningService
 
@@ -38,7 +38,7 @@ Remove-AzIoTDeviceProvisioningService [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Layanan Penyediaan Perangkat Hub Azure IoT, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

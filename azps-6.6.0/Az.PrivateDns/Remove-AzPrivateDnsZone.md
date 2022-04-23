@@ -9,8 +9,8 @@ ms.openlocfilehash: 8d4caac0151e6120d90b4096629124ab0cf443f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141798026"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143145269"
 ---
 # Remove-AzPrivateDnsZone
 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

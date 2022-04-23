@@ -9,8 +9,8 @@ ms.openlocfilehash: b76c5d7667c9c8d997b85c94d349d9aaec5b37b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178454"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143122643"
 ---
 # Remove-AzFunctionAppPlan
 
@@ -199,7 +199,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
