@@ -10,8 +10,8 @@ ms.openlocfilehash: ed4a6c28731e11b70e2855dee2cdc48846985f50
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141894842"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143185247"
 ---
 # Set-AzDataLakeStoreItemOwner
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

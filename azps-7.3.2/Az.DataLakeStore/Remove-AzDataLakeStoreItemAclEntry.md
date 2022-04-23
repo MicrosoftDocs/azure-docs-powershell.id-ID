@@ -10,8 +10,8 @@ ms.openlocfilehash: 9cc873146cacb6cc370df0589f18b8c2ff929d33
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141894860"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143185265"
 ---
 # Remove-AzDataLakeStoreItemAclEntry
 
@@ -290,7 +290,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
