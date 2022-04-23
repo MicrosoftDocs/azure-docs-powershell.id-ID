@@ -10,8 +10,8 @@ ms.openlocfilehash: 1956b483fa7067ce43a19b19a6cfca3258ecb752
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215019"
 ---
 # Remove-AzureRmADUser
 
@@ -243,14 +243,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADUser
 Parameter: InputObject (ByValue)
 
 ## OUTPUTS
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

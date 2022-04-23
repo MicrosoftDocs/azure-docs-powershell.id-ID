@@ -10,8 +10,8 @@ ms.openlocfilehash: 10ce1d97cec6a53355aab839ad150e5f53460280
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383221"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214921"
 ---
 # Set-AzureRmResourceLock
 
@@ -366,7 +366,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3886eff4427870ff3944265582d068b992ba8648
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142301137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143196407"
 ---
 # Get-AzVirtualRouterPeerLearnedRoute
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPeerRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

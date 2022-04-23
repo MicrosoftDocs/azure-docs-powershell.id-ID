@@ -9,13 +9,13 @@ ms.openlocfilehash: 51c2772a891cf39ba780c6ff3da0af40170f477e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281156"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214673"
 ---
 # Get-AzureRmSecurityTask
 
 ## SYNOPSIS
-Mendapatkan tugas keamanan yang Azure Security Center sarankan Anda lakukan untuk memperkuat postur keamanan Anda.
+Mendapatkan tugas keamanan yang direkomendasikan Pusat Keamanan Azure untuk Anda lakukan guna memperkuat postur keamanan Anda.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -49,8 +49,8 @@ Get-AzureRmSecurityTask -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Azure Security Center memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
-Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang Azure Security Center rekomendasikan untuk Anda lakukan.
+Pusat Keamanan Azure memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
+Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang disarankan oleh Pusat Keamanan Azure.
 
 ## EXAMPLES
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Tasks.PSSecurityTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

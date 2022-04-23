@@ -9,8 +9,8 @@ ms.openlocfilehash: 5481ec7ff954f08924c744f9db44530d8e196754
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142301911"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143196677"
 ---
 # Get-AzApplicationGatewaySslPredefinedPolicy
 
@@ -231,6 +231,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPredefinedPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

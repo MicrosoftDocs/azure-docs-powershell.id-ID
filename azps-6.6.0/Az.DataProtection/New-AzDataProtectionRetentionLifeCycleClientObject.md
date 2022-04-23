@@ -9,8 +9,8 @@ ms.openlocfilehash: 01951d22c613a6c2292a7d57188ad5b643489ee8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142306195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143201609"
 ---
 # New-AzDataProtectionRetentionLifeCycleClientObject
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.ISourceLifeCycle
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d1f56d91041c5023eb0ca85feb17cac6316fed5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141899865"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143247887"
 ---
 # Get-AzAksCluster
 
@@ -152,6 +152,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

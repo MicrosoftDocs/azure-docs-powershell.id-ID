@@ -10,8 +10,8 @@ ms.openlocfilehash: d19c039a5038c9327ea35a4f0b385e5472b748a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498769"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207657"
 ---
 # Set-AzVmssStorageProfile
 
@@ -353,7 +353,7 @@ Cmdlet ini tidak menghasilkan output apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 9385d8ca958eab28f485e56fbcd6c926f5422ca0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141874490"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207351"
 ---
 # Remove-AzEventHubVirtualNetworkRule
 
@@ -204,6 +204,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSNetworkRuleSetAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

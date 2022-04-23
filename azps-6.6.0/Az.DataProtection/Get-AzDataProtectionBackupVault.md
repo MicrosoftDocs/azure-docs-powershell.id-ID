@@ -9,8 +9,8 @@ ms.openlocfilehash: c8165f1422cb9565ea7d0cc842209accf2843a6b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142306303"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143201681"
 ---
 # Get-AzDataProtectionBackupVault
 
@@ -18,7 +18,7 @@ ms.locfileid: "142306303"
 Mengembalikan kumpulan sumber daya milik grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionbackupvault) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Mengembalikan kumpulan sumber daya milik grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kubah cadangan dalam langganan tertentu
+### Contoh 1: Mendapatkan semua vault cadangan dalam langganan tertentu
 ```powershell
 PS C:\> Get-AzDataProtectionBackupVault
 
@@ -57,10 +57,10 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      26da260b-e232-419c-8586-9157e4f6260e 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap dpprunnervaultus              Microsoft.DataProtection/backupV�
 ```
 
-Perintah ini mendapatkan semua kubah cadangan dalam konteks langganan saat ini.
-Sediakan parameter SubscriptionId untuk mengambil kubah cadangan dalam langganan yang berbeda.
+Perintah ini mendapatkan semua vault cadangan dalam konteks langganan saat ini.
+Berikan parameter SubscriptionId untuk mengambil vault cadangan dalam langganan yang berbeda.
 
-### Contoh 2: Dapatkan semua kubah cadangan dalam Grup sumber daya tertentu.
+### Contoh 2: Dapatkan semua vault cadangan dalam Grup sumber daya tertentu.
 ```powershell
 PS C:\> Get-AzDataProtectionBackupVault -SubscriptionId "xxxx-xxx-xxxx" -ResourceGroupName sarath-rg
 
@@ -70,9 +70,9 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      2ca1d5f7-38b3-4b61-aa45-8147d7e0edbc 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap sarath-vault    Microsoft.DataProtection/backupVaults
 ```
 
-Perintah ini mendapatkan semua kubah cadangan dalam grup sumber daya tertentu.
+Perintah ini mendapatkan semua vault cadangan dalam grup sumber daya tertentu.
 
-### Contoh 3: Dapatkan kubah tertentu.
+### Contoh 3: Dapatkan vault tertentu.
 ```powershell
 PS C:\> Get-AzDataProtectionBackupVault -SubscriptionId "xxxx-xxx-xxxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 
@@ -81,7 +81,7 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      2ca1d5f7-38b3-4b61-aa45-8147d7e0edbc 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap sarath-vault    Microsoft.DataProtection/backupVaults
 ```
 
-Perintah ini mendapatkan kubah tertentu dengan nama kubah tertentu.
+Perintah ini mendapatkan vault tertentu dengan nama vault yang diberikan.
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah cadangan ada.
+Nama grup sumber daya tempat vault cadangan berada.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan.
+Nama brankas cadangan.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupVaultResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -184,15 +184,15 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama kubah cadangan.
+  - `[VaultName <String>]`: Nama brankas cadangan.
 
 ## RELATED LINKS
 

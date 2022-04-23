@@ -9,8 +9,8 @@ ms.openlocfilehash: eb32a8d63a934278981c121839f578167b05ac86
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433027"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143228627"
 ---
 # Get-AzDataFactoryV2IntegrationRuntime
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedIntegrationRuntime
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

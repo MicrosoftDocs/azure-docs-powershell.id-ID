@@ -9,8 +9,8 @@ ms.openlocfilehash: 559661a6c41a8a7127ed5c00cdc90a9773bfad8a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143228663"
 ---
 # Get-AzDataFactoryV2DataFlow
 
@@ -38,7 +38,7 @@ Get-AzDataFactoryV2DataFlow [-ResourceId] <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2DataFlow mendapatkan informasi tentang aliran data di Azure Data Factory.
+Cmdlet Get-AzDataFactoryV2DataFlow mendapatkan informasi tentang aliran data dalam Azure Data Factory.
 Jika Anda menentukan nama alur data, cmdlet ini akan mendapatkan informasi tentang alur data tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua alur data di pabrik data.
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlow
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

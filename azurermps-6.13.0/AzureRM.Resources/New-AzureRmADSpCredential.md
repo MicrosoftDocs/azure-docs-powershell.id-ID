@@ -10,8 +10,8 @@ ms.openlocfilehash: a0fdd053c4ef3b1522fd6b03b8e58a4327fdfd44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383827"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215285"
 ---
 # New-AzureRmADSpCredential
 
@@ -308,7 +308,7 @@ Parameter: ServicePrincipalObject (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSADCredentialWrapper
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

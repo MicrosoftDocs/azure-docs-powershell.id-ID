@@ -9,8 +9,8 @@ ms.openlocfilehash: 6e909f41c727f489fe1b4e61c27e335daf965159
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169558"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143228645"
 ---
 # Get-AzDataFactoryV2Dataset
 
@@ -38,7 +38,7 @@ Get-AzDataFactoryV2Dataset [-ResourceId] <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2Dataset mendapatkan informasi tentang kumpulan data di Azure Data Factory.
+Cmdlet Get-AzDataFactoryV2Dataset mendapatkan informasi tentang kumpulan data dalam Azure Data Factory.
 Jika Anda menentukan nama kumpulan data, cmdlet ini akan mendapatkan informasi tentang kumpulan data tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua kumpulan data di pabrik data.
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

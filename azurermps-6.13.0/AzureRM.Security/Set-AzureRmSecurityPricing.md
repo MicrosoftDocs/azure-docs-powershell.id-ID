@@ -9,8 +9,8 @@ ms.openlocfilehash: f5b23c9221fe8d344e9220590283ab7799a0a3fc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141881457"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214587"
 ---
 # Set-AzureRmSecurityPricing
 
@@ -184,6 +184,6 @@ Microsoft.Azure.Commands.Security.Cmdlets.Pricings.PSAddPricingInputObject
 
 ### Microsoft.Azure.Commands.Security.Models.Pricings.PSSecurityPricing
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

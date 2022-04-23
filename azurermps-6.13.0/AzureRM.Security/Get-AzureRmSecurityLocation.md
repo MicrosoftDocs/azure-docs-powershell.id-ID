@@ -9,13 +9,13 @@ ms.openlocfilehash: 034681ad8ce4fbd30b10b959eda024f1a375c366
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383021"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214731"
 ---
 # Get-AzureRmSecurityLocation
 
 ## SYNOPSIS
-Mendapatkan lokasi di mana Azure Security Center akan secara otomatis menyimpan data untuk langganan tertentu
+Mendapatkan lokasi di mana Pusat Keamanan Azure akan secara otomatis menyimpan data untuk langganan tertentu
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -38,7 +38,7 @@ Get-AzureRmSecurityLocation -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Azure Security Center akan secara otomatis memutuskan lokasi untuk menyimpan beberapa data Anda.
+Pusat Keamanan Azure akan secara otomatis memutuskan lokasi untuk menyimpan beberapa data Anda.
 Gunakan cmdlet ini untuk menemukan lokasi tersebut.
 
 ## EXAMPLES
@@ -51,7 +51,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/locations/centralus centralus
 ```
 
-Mendapatkan lokasi tempat Azure Security Center menyimpan data keamanan terhitung.
+Mendapatkan lokasi di mana Pusat Keamanan Azure menyimpan data keamanan terhitung.
 
 ## PARAMETERS
 
@@ -111,6 +111,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Locations.PSSecurityLocation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

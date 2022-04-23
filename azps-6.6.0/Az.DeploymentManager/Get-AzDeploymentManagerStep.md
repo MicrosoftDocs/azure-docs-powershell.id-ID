@@ -9,8 +9,8 @@ ms.openlocfilehash: 1e18b38ca02ec6b82b559ce57addc688015a509d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141804110"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143201393"
 ---
 # Get-AzDeploymentManagerStep
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSStepResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

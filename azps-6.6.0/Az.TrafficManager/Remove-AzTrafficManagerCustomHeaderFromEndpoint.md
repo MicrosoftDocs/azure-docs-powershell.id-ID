@@ -10,8 +10,8 @@ ms.openlocfilehash: 403dc4d4cddcd507c1880b0a4c2fe3bc3a79eb82
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142262977"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143248229"
 ---
 # Remove-AzTrafficManagerCustomHeaderFromEndpoint
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

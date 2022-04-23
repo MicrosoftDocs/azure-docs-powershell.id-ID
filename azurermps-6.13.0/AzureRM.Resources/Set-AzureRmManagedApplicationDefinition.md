@@ -9,8 +9,8 @@ ms.openlocfilehash: 762987f39c1529b1b2c6dbce3325666704fd57fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924746"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215018"
 ---
 # Set-AzureRmManagedApplicationDefinition
 
@@ -263,6 +263,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

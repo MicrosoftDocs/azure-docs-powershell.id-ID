@@ -9,8 +9,8 @@ ms.openlocfilehash: 514277f5ae3fe1824b487829e7c33a208327ad59
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142306411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143201753"
 ---
 # Start-AzDataMigrationService
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

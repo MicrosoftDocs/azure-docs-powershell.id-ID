@@ -9,8 +9,8 @@ ms.openlocfilehash: 75f623890963095efbf37a631bf4c0736245fe28
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141874454"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207333"
 ---
 # Add-AzIotHubKey
 
@@ -210,6 +210,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSSharedAccessSignatureAuthorizationRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 4ef54651b5490161d7fc28c4a0c068f7b4a1ed76
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281159"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214785"
 ---
 # Get-AzureRmExternalSecuritySolution
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.ExternalSecuritySolutions.PSSecurityExternalSecuritySolution
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

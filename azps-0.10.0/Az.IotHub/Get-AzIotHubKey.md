@@ -9,8 +9,8 @@ ms.openlocfilehash: 29f9fc8847e4b8bf3ab348fcad8f312dab71fd0a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142499399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207297"
 ---
 # Get-AzIotHubKey
 
@@ -139,6 +139,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSSharedAccessSignatureAuthorizationRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

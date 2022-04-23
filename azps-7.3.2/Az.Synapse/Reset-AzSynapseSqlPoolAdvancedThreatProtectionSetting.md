@@ -9,8 +9,8 @@ ms.openlocfilehash: d690517cacaee6c13961be5250509ea9f773ab48
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141932271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143235881"
 ---
 # Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
@@ -48,7 +48,7 @@ Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting -ResourceId <String> [-Pas
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari Azure Synapse Analytics SQL pool.
+Cmdlet **Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari kumpulan SQL Azure Synapse Analytics.
 
 ## EXAMPLES
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL objek input pool, biasanya melewati pipeline.
+Objek input pool SQL, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -241,6 +241,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

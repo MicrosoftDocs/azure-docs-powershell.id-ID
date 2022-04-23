@@ -9,8 +9,8 @@ ms.openlocfilehash: 272a0462f3817ee849efb326b08aa57fd420880e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142495355"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143206991"
 ---
 # Undo-AzKeyVaultKeyRemoval
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.KeyBundle
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

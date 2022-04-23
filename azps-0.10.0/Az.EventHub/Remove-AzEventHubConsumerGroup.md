@@ -9,8 +9,8 @@ ms.openlocfilehash: d4443cf25790d74617a02b048ce31296e451cf95
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329173"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207459"
 ---
 # Remove-AzEventHubConsumerGroup
 
@@ -253,6 +253,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
