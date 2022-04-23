@@ -9,8 +9,8 @@ ms.openlocfilehash: b7f10fd96d8f746db1ff37b1461cdd8394bdf75d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141824876"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143164520"
 ---
 # Update-AzureRmContainerRegistryWebhook
 
@@ -287,7 +287,7 @@ Parameter: Webhook (ByValue)
 
 ### Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryWebhook
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

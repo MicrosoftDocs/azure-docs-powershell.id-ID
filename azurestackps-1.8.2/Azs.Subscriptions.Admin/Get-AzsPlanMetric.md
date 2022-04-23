@@ -7,8 +7,8 @@ ms.openlocfilehash: d8ef41d414d12182c15d9ec5b01138e0110dee9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814639"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143157365"
 ---
 # Get-AzsPlanMetric
 
@@ -74,7 +74,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Metric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3b255271474e8ae359cf0d00dae78ed2b5d08dda
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141937599"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143182907"
 ---
 # Send-AzIotHubDevice2CloudMessage
 
@@ -245,6 +245,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

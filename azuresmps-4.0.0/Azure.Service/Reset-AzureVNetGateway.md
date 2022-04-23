@@ -7,8 +7,8 @@ ms.openlocfilehash: b547ea2754d67b4f40bb323dfc680e2b3a788621
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381823"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158106"
 ---
 # Reset-AzureVNetGateway
 
@@ -74,7 +74,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

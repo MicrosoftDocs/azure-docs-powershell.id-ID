@@ -9,8 +9,8 @@ ms.openlocfilehash: dc4630359070e627a3c65c63f21c23f987cb9a31
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281631"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143164148"
 ---
 # Set-AzureRmDataFactoryV2Trigger
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

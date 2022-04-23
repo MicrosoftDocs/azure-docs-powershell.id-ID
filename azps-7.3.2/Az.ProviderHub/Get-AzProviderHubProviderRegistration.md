@@ -9,8 +9,8 @@ ms.openlocfilehash: edd37c3698763c6487a23cdc1f5038d48c1117c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142485053"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143176121"
 ---
 # Get-AzProviderHubProviderRegistration
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IProviderRegistration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

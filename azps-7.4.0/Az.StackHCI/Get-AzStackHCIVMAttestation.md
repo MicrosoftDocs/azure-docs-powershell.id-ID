@@ -9,8 +9,8 @@ ms.openlocfilehash: 77d6d3820c129f512181195a67932b42b3097e94
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428947"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143171081"
 ---
 # Get-AzStackHCIVMAttestation
 
@@ -68,6 +68,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Nama: Nama VM.
 ### AttestationHost: Host bahwa VM saat ini tersambung.
 ### Status: Status koneksi.
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

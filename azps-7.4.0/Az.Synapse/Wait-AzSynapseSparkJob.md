@@ -9,8 +9,8 @@ ms.openlocfilehash: 835db27c1eb21b629d48030060e00e6ef0d295dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170782"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143170343"
 ---
 # Wait-AzSynapseSparkJob
 
@@ -197,6 +197,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

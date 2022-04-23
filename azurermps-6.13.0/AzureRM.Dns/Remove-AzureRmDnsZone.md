@@ -10,8 +10,8 @@ ms.openlocfilehash: f5dd34c15745707df8bb0b91f7a4716e5c0bba6b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142098489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163809"
 ---
 # Remove-AzureRmDnsZone
 
@@ -197,7 +197,7 @@ Parameter: Zona (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 Karena dampak yang berpotensi tinggi untuk menghapus zona DNS, secara default, cmdlet ini meminta konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai selain Tidak Ada.
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
 Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda. 

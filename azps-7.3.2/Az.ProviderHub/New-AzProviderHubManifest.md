@@ -9,8 +9,8 @@ ms.openlocfilehash: 4ebfb808b1f67f86b127147abb2bb72b2d3fa786
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142289545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143176013"
 ---
 # New-AzProviderHubManifest
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceProviderManifest
 
-## CATATAN
+## NOTES
 
 ALIAS
 

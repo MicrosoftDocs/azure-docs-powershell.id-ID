@@ -9,8 +9,8 @@ ms.openlocfilehash: f8b4f388b7c5bc263d1552107ebeb906e942a611
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142343159"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143176049"
 ---
 # New-AzProviderHubDefaultRollout
 
@@ -18,7 +18,7 @@ ms.locfileid: "142343159"
 Membuat atau memperbarui detail peluncuran.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubdefaultrollout) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/new-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Membuat atau memperbarui detail peluncuran.
 
 ## EXAMPLES
 
-### Contoh 1: Buat/Perbarui peluncuran default penyedia sumber daya.
+### Contoh 1: Membuat/Memperbarui peluncuran default penyedia sumber daya.
 ```powershell
 PS C:\> New-AzProviderHubDefaultRollout -ProviderNamespace "Microsoft.Contoso" -RolloutName "defaultRollout2021w10" -CanarySkipRegion "brazilus" -NoWait
 
@@ -51,12 +51,12 @@ Name                      Type
 defaultRollout2021w10     Microsoft.ProviderHub/providerRegistrations/defaultRollouts
 ```
 
-Buat/Perbarui peluncuran default penyedia sumber daya.
+Membuat/Memperbarui peluncuran default penyedia sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +295,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestOfTheWorldgrouptwoWaitDuration
+### -RestOfTheWorldgroupTwoWaitDuration
 .
 
 ```yaml
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 
 ### -SpecificationProviderRegistration
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SPECIFICATIONPROVIDERREGISTRATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SPECIFICATIONPROVIDERREGISTRATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IProviderRegistration
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 
 ### -SpecificationResourceTypeRegistration
 .
-Untuk membangun, lihat bagian CATATAN untuk properti SPECIFICATIONRESOURCETYPEREGISTRATION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SPECIFICATIONRESOURCETYPEREGISTRATION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeRegistration[]
@@ -447,8 +447,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -479,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -487,7 +487,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IDefaultRollout
 
-## CATATAN
+## NOTES
 
 ALIAS
 

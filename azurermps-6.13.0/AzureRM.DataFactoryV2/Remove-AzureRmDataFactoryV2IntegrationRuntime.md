@@ -9,8 +9,8 @@ ms.openlocfilehash: 8c7ec74e43586a951b3f8d2c4d8af0caa6e09a2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357908"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143164285"
 ---
 # Remove-AzureRmDataFactoryV2IntegrationRuntime
 
@@ -220,7 +220,7 @@ Parameter: InputObject (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

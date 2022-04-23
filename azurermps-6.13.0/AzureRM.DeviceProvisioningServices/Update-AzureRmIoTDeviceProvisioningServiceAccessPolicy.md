@@ -9,8 +9,8 @@ ms.openlocfilehash: f5d750dc795619f32f6c4f16a5fe1e3b5e111106
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142141840"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163881"
 ---
 # Update-AzureRmIoTDeviceProvisioningServiceAccessPolicy
 
@@ -227,6 +227,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSSharedAccessSignatureAuthorizationRuleAccessRightsDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

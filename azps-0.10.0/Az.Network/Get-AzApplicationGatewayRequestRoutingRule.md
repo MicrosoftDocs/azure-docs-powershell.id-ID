@@ -10,8 +10,8 @@ ms.openlocfilehash: 402084acc332102c8a2f003e31e140b175b6f22f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142494719"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154215"
 ---
 # Get-AzApplicationGatewayRequestRoutingRule
 
@@ -36,8 +36,8 @@ PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $Rule = Get-AzApplicationGatewayRequestRoutingRule -"Rule01" -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
-Perintah kedua mendapatkan aturan perutean permintaan bernama Rule01 dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
+Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan aturan perutean permintaan bernama Rule01 dari Gateway Aplikasi yang disimpan dalam variabel bernama $AppGW.
 
 ### Contoh 2: Dapatkan daftar aturan perutean permintaan
 ```
@@ -45,8 +45,8 @@ PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $Rules = Get-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
-Perintah kedua mendapatkan daftar aturan perutean permintaan dari Application Gateway yang disimpan dalam variabel bernama $AppGW.
+Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan daftar aturan perutean permintaan dari Gateway Aplikasi yang disimpan dalam variabel bernama $AppGW.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRequestRoutingRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

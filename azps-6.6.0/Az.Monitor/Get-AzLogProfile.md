@@ -10,8 +10,8 @@ ms.openlocfilehash: acd3bb55b72577e1e1275c2b7d6490d0a0c4163f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141865183"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200151"
 ---
 # Get-AzLogProfile
 
@@ -75,7 +75,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSLogProfileCollection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

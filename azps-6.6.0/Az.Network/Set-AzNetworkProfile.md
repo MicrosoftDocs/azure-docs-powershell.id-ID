@@ -9,8 +9,8 @@ ms.openlocfilehash: e94260a85fd2c7de4c2201fb315a2d38caefe980
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045793"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143194049"
 ---
 # Set-AzNetworkProfile
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

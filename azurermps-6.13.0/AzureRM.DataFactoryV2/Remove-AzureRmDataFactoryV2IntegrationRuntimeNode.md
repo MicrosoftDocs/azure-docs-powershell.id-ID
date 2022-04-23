@@ -9,8 +9,8 @@ ms.openlocfilehash: 413125f6bcc9935ffae66551ba5bd178eb4a3c53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141885529"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143164223"
 ---
 # Remove-AzureRmDataFactoryV2IntegrationRuntimeNode
 
@@ -219,6 +219,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

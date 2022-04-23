@@ -10,8 +10,8 @@ ms.openlocfilehash: f083498860f3f2b9e19280b41d953032796e0eb9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092483"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143152991"
 ---
 # Get-AzADGroupMember
 
@@ -181,14 +181,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADGroup
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADGroup
 Parameter: GroupObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADObject
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

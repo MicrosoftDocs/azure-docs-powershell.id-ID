@@ -9,8 +9,8 @@ ms.openlocfilehash: 811211e0cb70729fa59a2221128e15f6200ed18a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164624"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143170793"
 ---
 # Update-AzStorageBlobServiceProperty
 
@@ -283,6 +283,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSBlobServiceProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

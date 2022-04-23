@@ -9,8 +9,8 @@ ms.openlocfilehash: a2e5e0450d8a0bb48ea292840e94215c681a03be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142489643"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143182457"
 ---
 # Get-AzKubernetesConfiguration
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.Api20210301.ISourceControlConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

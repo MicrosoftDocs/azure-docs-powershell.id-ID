@@ -10,8 +10,8 @@ ms.openlocfilehash: 4d45c042032aa490d7e7da6fdcf913d6b6f5120a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142256516"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143182870"
 ---
 # Remove-AzKeyVaultAccessPolicy
 
@@ -484,7 +484,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

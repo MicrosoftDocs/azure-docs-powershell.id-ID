@@ -9,8 +9,8 @@ ms.openlocfilehash: 081b045550b9f8cb7ab3e4c6e59553c25bac567f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142496969"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143153819"
 ---
 # Remove-AzApplicationGatewayConnectionDraining
 
@@ -38,8 +38,8 @@ PS C:\> Remove-AzApplicationGatewayConnectionDraining -BackendHttpSettings $Sett
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
-Perintah terakhir menghapus konfigurasi koneksi yang menguras pengaturan HTTP ujung-belakang yang disimpan dalam $Pengaturan.
+Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Settings.
+Perintah terakhir menghapus konfigurasi pengurasan koneksi dari pengaturan HTTP ujung-belakang yang disimpan di $Settings.
 
 ## PARAMETERS
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

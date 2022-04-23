@@ -7,8 +7,8 @@ ms.openlocfilehash: 9d27f38a0aa19995db3f63f866927f4d46a8c851
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142093806"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158117"
 ---
 # Remove-AzureRoute
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

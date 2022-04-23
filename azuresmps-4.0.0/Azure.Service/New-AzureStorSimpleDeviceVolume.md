@@ -7,8 +7,8 @@ ms.openlocfilehash: 22273f9ce959e5fd446eb47ce391517a50263b85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158247"
 ---
 # New-AzureStorSimpleDeviceVolume
 
@@ -293,7 +293,7 @@ Cmdlet ini menerima objek **DataContainer** dan daftar objek **AccessControlReco
 ### TaskStatusInfo
 Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: 3a53b5af4cf77ec961e65f8c0c0d84b05b4adfa1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142241623"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143157401"
 ---
 # Get-AzsStorageAcquisition
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

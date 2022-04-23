@@ -9,8 +9,8 @@ ms.openlocfilehash: 00c560d36fdfc53280d34dff3760170df66a4ec8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142083055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143147051"
 ---
 # Remove-AzScheduledQueryRule
 
@@ -197,6 +197,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
