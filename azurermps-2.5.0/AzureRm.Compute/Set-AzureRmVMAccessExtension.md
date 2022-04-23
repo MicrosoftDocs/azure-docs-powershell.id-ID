@@ -8,8 +8,8 @@ ms.openlocfilehash: 069b98f585d606ade255cfecd223be4a074d8316
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285969"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267587"
 ---
 # Set-AzureRmVMAccessExtension
 
@@ -225,7 +225,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

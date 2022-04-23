@@ -8,8 +8,8 @@ ms.openlocfilehash: 0f452818db1af3f3a69db58f82b89e6cfa8ee461
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267183"
 ---
 # New-AzureRmActionGroupReceiver
 
@@ -212,9 +212,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase
+### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupReceiverBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: c149cf0d44bfe5fdeee953d36a7ea8244587ba36
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141889147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267327"
 ---
 # Get-AzureRmAutoscaleHistory
 
@@ -305,7 +305,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSEventData
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

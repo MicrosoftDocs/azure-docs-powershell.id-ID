@@ -7,8 +7,8 @@ ms.openlocfilehash: 87c064cbd3672a5e8d8f198432de87c0facf29cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848200"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266715"
 ---
 # Add-AzureRmApplicationGatewayProbeConfig
 
@@ -247,7 +247,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari p
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

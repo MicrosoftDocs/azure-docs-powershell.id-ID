@@ -10,8 +10,8 @@ ms.openlocfilehash: 86451c1ac7ba52c9b013b3724d9c706caaa961ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780201"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143220905"
 ---
 # Get-AzureBatchNodeAgentSku
 
@@ -126,7 +126,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSNodeAgentSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

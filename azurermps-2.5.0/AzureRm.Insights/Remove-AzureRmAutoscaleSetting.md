@@ -8,8 +8,8 @@ ms.openlocfilehash: 93c51e71cf912a072daafd721d9e9626ccefbb06
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141889149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267101"
 ---
 # Remove-AzureRmAutoscaleSetting
 
@@ -120,7 +120,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

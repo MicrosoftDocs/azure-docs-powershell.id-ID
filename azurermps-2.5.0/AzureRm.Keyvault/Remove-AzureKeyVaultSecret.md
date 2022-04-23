@@ -7,8 +7,8 @@ ms.openlocfilehash: 56cc6b11c517379f1d13ebe2dbf2cee00f18211b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266877"
 ---
 # Remove-AzureKeyVaultSecret
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.KeyVault.Models.DeletedSecret
 Cmdlet ini mengembalikan nilai hanya jika Anda menentukan parameter *PassThru* .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

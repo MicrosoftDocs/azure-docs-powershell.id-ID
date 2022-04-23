@@ -8,8 +8,8 @@ ms.openlocfilehash: 17938a8fe4ee5a279554758cc36cc7a234a359ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266761"
 ---
 # Add-AzureRmApplicationGatewayIPConfiguration
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

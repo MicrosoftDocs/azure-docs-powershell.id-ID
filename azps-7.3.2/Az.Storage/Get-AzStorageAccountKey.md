@@ -10,8 +10,8 @@ ms.openlocfilehash: db510fc0b343bc4a0b78aa460baddf2838654e1c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142365641"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143237465"
 ---
 # Get-AzStorageAccountKey
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management. Storage. Models.StorageAccountKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

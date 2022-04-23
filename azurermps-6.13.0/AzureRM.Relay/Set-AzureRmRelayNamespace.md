@@ -9,8 +9,8 @@ ms.openlocfilehash: 6bb333de426236099bed7402fc4756181415c4ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384062"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215559"
 ---
 # Set-AzureRmRelayNamespace
 
@@ -173,6 +173,6 @@ System.Collections.Hashtable Microsoft.Azure.Commands.Relay.Models.RelayNamespac
 ### Microsoft.Azure.Commands.Relay.Models.PSRelayNamespaceAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

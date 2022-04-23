@@ -10,8 +10,8 @@ ms.openlocfilehash: 4c68470b97134019b0abf7724012f3a6fab4627f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235431"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143262467"
 ---
 # New-AzADSpCredential
 
@@ -293,7 +293,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 Parameter: ServicePrincipalObject (ByValue)
 
 ### System.Security.SecureString
@@ -302,11 +302,11 @@ Parameter: ServicePrincipalObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADCredential
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADCredential
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSADCredentialWrapper
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: 5d31ad189dcc5337b81373d52a026e01f93f08a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285994"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267588"
 ---
 # Set-AzureRmVMBackupExtension
 
@@ -115,7 +115,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

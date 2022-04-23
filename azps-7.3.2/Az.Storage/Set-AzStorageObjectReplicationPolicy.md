@@ -9,8 +9,8 @@ ms.openlocfilehash: 62e01e5e58d3f2830cc4516d43d81cb6505417d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142397753"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143236925"
 ---
 # Set-AzStorageObjectReplicationPolicy
 
@@ -258,6 +258,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSObjectReplicationPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

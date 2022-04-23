@@ -9,8 +9,8 @@ ms.openlocfilehash: d7ea6706be4b78bb63bbe202e4d08b6eaf540076
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141840016"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143230373"
 ---
 # Get-AzConfidentialLedger
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.Api20210513Preview.IConfidentialLedger
 
-## CATATAN
+## NOTES
 
 ALIAS
 

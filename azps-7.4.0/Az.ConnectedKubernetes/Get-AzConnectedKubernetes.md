@@ -9,8 +9,8 @@ ms.openlocfilehash: 05e35b16c3b6569a32c217a2bf42d65696d1fba6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434071"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143230283"
 ---
 # Get-AzConnectedKubernetes
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.Api20211001.IConnectedCluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 

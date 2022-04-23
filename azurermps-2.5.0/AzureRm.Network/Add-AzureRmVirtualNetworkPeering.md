@@ -8,8 +8,8 @@ ms.openlocfilehash: 1bf784a94d3f4a03c380f114064fa3f1e399e379
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848066"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266670"
 ---
 # Add-AzureRmVirtualNetworkPeering
 
@@ -230,7 +230,7 @@ Parameter 'VirtualNetwork' menerima nilai tipe 'PSVirtualNetwork' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

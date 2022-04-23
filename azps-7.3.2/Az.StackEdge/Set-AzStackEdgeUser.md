@@ -9,8 +9,8 @@ ms.openlocfilehash: 0ffedbb4a1cfaca85e4840d9c79f9d0897bd3f76
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142251199"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143237555"
 ---
 # Set-AzStackEdgeUser
 
@@ -230,6 +230,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeUser
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -8,8 +8,8 @@ ms.openlocfilehash: a7ad8616bf2afc79d049384c1f20002ff6d6aa4a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104153"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267102"
 ---
 # New-AzureRmActivityLogAlertCondition
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: d6d2070afcb4a5b9b0b13af1fa54dc93621c5a97
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393425"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267057"
 ---
 # Get-AzureKeyVaultCertificateContact
 
@@ -78,7 +78,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Daftar<Microsoft.Azure.Commands.KeyVault.Models.KeyVaultCertificateContact>
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

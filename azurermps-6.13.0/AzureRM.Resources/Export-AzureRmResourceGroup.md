@@ -10,8 +10,8 @@ ms.openlocfilehash: 20532c22c587f464677ef572d11a5eba76246f88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924669"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215451"
 ---
 # Export-AzureRmResourceGroup
 
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

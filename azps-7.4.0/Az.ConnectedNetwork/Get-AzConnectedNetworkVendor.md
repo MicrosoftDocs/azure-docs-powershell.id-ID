@@ -9,8 +9,8 @@ ms.openlocfilehash: e9b07d401e13fb430ee5e53246dab392250e44c7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426044"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143229887"
 ---
 # Get-AzConnectedNetworkVendor
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.IVendor
 
-## CATATAN
+## NOTES
 
 ALIAS
 

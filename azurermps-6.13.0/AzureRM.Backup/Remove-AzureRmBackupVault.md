@@ -10,8 +10,8 @@ ms.openlocfilehash: 883c4a9892f4525b15369dbb1c3ed6134eb29f00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389880"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143221076"
 ---
 # Remove-AzureRmBackupVault
 
@@ -133,7 +133,7 @@ Parameter: Vault (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 * Tidak
 
 ## RELATED LINKS

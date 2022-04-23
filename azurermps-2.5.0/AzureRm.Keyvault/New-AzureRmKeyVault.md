@@ -8,8 +8,8 @@ ms.openlocfilehash: 6fc2357bd549df737fb5c64c2c96cefafbf6fa0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142146960"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266957"
 ---
 # New-AzureRmKeyVault
 
@@ -245,7 +245,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 159098b3d0f6372067046be7377aec14056d712b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142130935"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143262701"
 ---
 # Test-AzDnsAvailability
 
@@ -85,7 +85,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

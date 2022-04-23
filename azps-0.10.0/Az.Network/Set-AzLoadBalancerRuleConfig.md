@@ -10,8 +10,8 @@ ms.openlocfilehash: f566c2b9ac771071a9eb72673edb7e5218656c9b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141964131"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143262899"
 ---
 # Set-AzLoadBalancerRuleConfig
 
@@ -316,7 +316,7 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

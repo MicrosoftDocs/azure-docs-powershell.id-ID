@@ -9,8 +9,8 @@ ms.openlocfilehash: 307bb2c954526b744f31763f0d3a09d0163c8057
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143262665"
 ---
 # Test-AzNetworkWatcherIPFlow
 
@@ -263,7 +263,7 @@ System.String
 
 ### Microsoft.Azure.Commands.Network.Models.PSIPFlowVerifyResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS

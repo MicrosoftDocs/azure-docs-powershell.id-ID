@@ -10,8 +10,8 @@ ms.openlocfilehash: 740077def0ba0eccb1d962b88317fadb3c5c897c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065947"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143221129"
 ---
 # New-AzureRmBackupRetentionPolicyObject
 
@@ -323,7 +323,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupRetentionPolicy
 
-## CATATAN
+## NOTES
 * Tidak
 
 ## RELATED LINKS

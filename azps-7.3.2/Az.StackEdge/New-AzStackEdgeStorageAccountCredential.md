@@ -9,8 +9,8 @@ ms.openlocfilehash: 59d9794062ef1e5986065c6a423910a97dca2e5f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142025507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143237627"
 ---
 # New-AzStackEdgeStorageAccountCredential
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageAccountCredential
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

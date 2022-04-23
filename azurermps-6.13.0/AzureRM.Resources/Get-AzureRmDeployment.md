@@ -9,8 +9,8 @@ ms.openlocfilehash: 6d25bcf98adb740ec695152eb5b27ec9402082c4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775753"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215433"
 ---
 # Get-AzureRmDeployment
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeployment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
