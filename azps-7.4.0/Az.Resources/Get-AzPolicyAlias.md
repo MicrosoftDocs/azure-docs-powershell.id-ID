@@ -9,14 +9,14 @@ ms.openlocfilehash: bca11d7c411f8d1eca145ceeee5018d149035aeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994115"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275679"
 ---
 # Get-AzPolicyAlias
 
 ## SYNOPSIS
-Get-AzPolicyAlias mengambil dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
-Sakelar -ListAvailable mengubah perilaku ini dengan mencantumkan semua tipe sumber daya yang cocok termasuk yang tidak memiliki alias.
+Get-AzPolicyAlias mengambil dan menghasilkan jenis sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter yang diberikan. Jika tidak ada parameter yang disediakan, semua jenis sumber daya penyedia yang berisi alias akan menjadi output.
+Sakelar -ListAvailable memodifikasi perilaku ini dengan mencantumkan semua jenis sumber daya yang cocok termasuk yang tanpa alias.
 
 ## SYNTAX
 
@@ -27,10 +27,10 @@ Get-AzPolicyAlias [-NamespaceMatch <String>] [-ResourceTypeMatch <String>] [-Ali
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPolicyAlias mendapatkan daftar alias** kebijakan.
-Alias kebijakan digunakan oleh Azure Policy untuk merujuk ke properti tipe sumber daya.
-Parameter disediakan yang membatasi item dalam daftar dengan mencocokkan berbagai properti tipe sumber daya atau aliasnya.
-Nilai kecocokan tertentu cocok jika string target berisinya menggunakan perbandingan yang tidak peka huruf besar kecil.
+Cmdlet **Get-AzPolicyAlias** mendapatkan daftar alias kebijakan.
+Alias kebijakan digunakan oleh Azure Policy untuk merujuk ke properti jenis sumber daya.
+Parameter disediakan yang membatasi item dalam daftar dengan mencocokkan berbagai properti jenis sumber daya atau aliasnya.
+Nilai kecocokan tertentu cocok jika string target berisinya menggunakan perbandingan kasus yang tidak sensitif.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Microsoft.Web                 sites/config                                   {Mi
 Microsoft.GuestConfiguration  guestConfigurationAssignments                  {Microsoft.GuestConfiguration/guestConfigurationAssignments/complianceS...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang memiliki alias.
+Mencantumkan semua jenis sumber daya penyedia yang memiliki alias.
 
 ### Contoh 2
 ```powershell
@@ -73,7 +73,7 @@ Microsoft.AnalysisServices               locations                              
 ...                                      ...                                                                 ...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia, termasuk yang tanpa alias.
+Mencantumkan semua jenis sumber daya penyedia, termasuk yang tanpa alias.
 
 ### Contoh 3
 ```powershell
@@ -90,7 +90,7 @@ Microsoft.Compute virtualMachineScaleSets/extensions {Microsoft.Compute/virtualM
 Microsoft.Compute disks                              {Microsoft.Compute/imagePublisher, Microsoft.Compute/imageOffer, Microsoft.Compute/imageSku, Mi...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang ruang namanya cocok dengan 'komputasi' dan berisi alias.
+Mencantumkan semua jenis sumber daya penyedia yang namespacenya cocok dengan 'komputasi' dan berisi alias.
 
 ### Contoh 4
 ```powershell
@@ -111,7 +111,7 @@ Microsoft.Network virtualNetworks/virtualNetworkPeerings {Microsoft.Network/virt
 Microsoft.Sql     servers/virtualNetworkRules            {Microsoft.Sql/servers/virtualNetworkRules/virtualNetworkSubnetId, Microsoft.Sql/servers/vi...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang tipe sumber dayanya cocok dengan 'virtual' dan berisi alias.
+Mencantumkan semua jenis sumber daya penyedia yang jenis sumber dayanya cocok dengan 'virtual' dan berisi alias.
 
 ### Contoh 5
 ```powershell
@@ -132,7 +132,7 @@ Microsoft.Network            locations/virtualNetworkAvailableEndpointServices  
 ...                          ...                                                        ...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang tipe sumber dayanya cocok dengan 'virtual', termasuk tipe sumber daya tanpa alias.
+Mencantumkan semua jenis sumber daya penyedia yang jenis sumber dayanya cocok dengan 'virtual', termasuk yang tanpa alias.
 
 ### Contoh 6
 ```powershell
@@ -148,8 +148,8 @@ Microsoft.Compute virtualMachineScaleSets            {Microsoft.Compute/VirtualM
 Microsoft.Compute virtualMachineScaleSets/extensions {Microsoft.Compute/virtualMachineScaleSets/extensions/provisioningState, Microsoft.Compute/virt...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang ruang namanya cocok dengan 'komputasi' dan tipe sumber daya cocok dengan 'virtual' dan berisi alias.
-Catatan: -NamespaceMatch dan -ResourceTypeMatch menyediakan kecocokan eksklusif, sedangkan yang lainnya inklusif.
+Mencantumkan semua jenis sumber daya penyedia yang namespacenya cocok dengan 'komputasi' dan jenis sumber daya yang cocok dengan 'virtual' dan berisi alias.
+Catatan: -NamespaceMatch dan -ResourceTypeMatch menyediakan kecocokan eksklusif, sedangkan yang lain inklusif.
 
 ### Contoh 7
 ```powershell
@@ -174,7 +174,7 @@ Microsoft.Sql        servers/virtualNetworkRules            {Microsoft.Sql/serve
 Microsoft.Storage    storageAccounts                        {Microsoft.Storage/storageAccounts/accountType, Microsoft.Storage/storageAccounts/sku.na...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang berisi alias yang cocok dengan 'virtual'.
+Mencantumkan semua jenis sumber daya penyedia yang berisi alias yang cocok dengan 'virtual'.
 
 ### Contoh 8
 ```powershell
@@ -201,7 +201,7 @@ Microsoft.Sql        servers/virtualNetworkRules            {Microsoft.Sql/serve
 Microsoft.Storage    storageAccounts                        {Microsoft.Storage/storageAccounts/accountType, Microsoft.Storage/storageAccounts/sku.na...
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang berisi alias yang cocok dengan 'virtual' atau alias dengan jalur yang cocok dengan 'jaringan'.
+Mencantumkan semua jenis sumber daya penyedia yang berisi alias yang cocok dengan 'virtual' atau alias dengan jalur yang cocok dengan 'jaringan'.
 
 ### Contoh 9
 ```powershell
@@ -218,7 +218,7 @@ Microsoft.Security pricings            {Microsoft.Security/pricings/pricingTier}
 Microsoft.Security complianceResults   {Microsoft.Security/complianceResults/resourceStatus}
 ```
 
-Mencantumkan semua tipe sumber daya penyedia dengan versi api alfa atau berisi alias dengan versi api alfa.
+Mencantumkan semua jenis sumber daya penyedia dengan versi api alfa atau berisi alias dengan versi api alfa.
 
 ## PARAMETERS
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan. Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan. Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 
 ```yaml
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersionMatch
-Termasuk dalam item output yang tipe sumber daya atau aliasnya memiliki versi api yang cocok.
+Termasuk dalam item output yang jenis sumber daya atau aliasnya memiliki versi api yang cocok.
 
 
 ```yaml
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListAvailable
-Termasuk dalam output yang cocok dengan item dengan dan tanpa alias.
+Termasuk dalam item yang cocok dengan output dengan dan tanpa alias.
 
 
 ```yaml
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocationMatch
-Termasuk dalam item output yang tipe sumber dayanya memiliki lokasi yang cocok.
+Termasuk dalam item output yang jenis sumber dayanya memiliki lokasi yang cocok.
 
 
 ```yaml
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceMatch
-Membatasi output untuk item yang ruang namanya cocok dengan nilai ini.
+Membatasi output ke item yang namespacenya cocok dengan nilai ini.
 
 
 ```yaml
@@ -350,8 +350,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 
 ```yaml
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceTypeMatch
-Membatasi output untuk item yang tipe sumber dayanya cocok dengan nilai ini.
+Membatasi output ke item yang jenis sumber dayanya cocok dengan nilai ini.
 
 
 ```yaml
@@ -383,20 +383,20 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.PsResourceProviderAlias
 
-## CATATAN
+## NOTES
 
 * Untuk memperluas Alias atau properti lainnya, pipa output ke `select -ExpandProperty <property>`. Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Microsoft.Cache' -ApiVersionMatch 'alpha' | select -ExpandProperty Aliases | select -Property Name -ExpandProperty Paths`
 
-* Properti tambahan tersedia dalam output dan dapat ditampilkan dengan memipakan output ke `Format-List`. Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Web' -ResourceTypeMatch site -PathMatch cert | Format-List`
+* Properti tambahan tersedia dalam output dan dapat ditampilkan dengan mempipa output ke `Format-List`. Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Web' -ResourceTypeMatch site -PathMatch cert | Format-List`
 
 ## RELATED LINKS

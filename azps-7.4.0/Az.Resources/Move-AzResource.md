@@ -10,8 +10,8 @@ ms.openlocfilehash: 11f31da0bc1eb25ddbfa42c10965a23900d7e008
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994031"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275499"
 ---
 # Move-AzResource
 
@@ -194,7 +194,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

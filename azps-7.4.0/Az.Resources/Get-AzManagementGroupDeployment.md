@@ -9,13 +9,13 @@ ms.openlocfilehash: 18c7128d109a20a70a15297658ae36b0a20dd762
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001389"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275733"
 ---
 # Get-AzManagementGroupDeployment
 
 ## SYNOPSIS
-Dapatkan penggunaan di grup manajemen
+Mendapatkan penyebaran di grup manajemen
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-AzManagementGroupDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureCont
 
 ## DESCRIPTION
 Cmdlet **Get-AzManagementGroupDeployment** mendapatkan penyebaran di grup manajemen.
-Tentukan parameter *Nama* atau *Id* untuk memfilter hasil.
+Tentukan parameter *Nama* atau *Id* untuk memfilter hasilnya.
 Secara default, **Get-AzManagementGroupDeployment** mendapatkan semua penyebaran di grup manajemen.
 
 ## EXAMPLES
@@ -51,10 +51,10 @@ Get-AzDeployment -ManagementGroupId "myMG" -Name "Deploy01"
 ```
 
 Perintah ini mendapatkan penyebaran "Deploy01" di grup manajemen "myMG".
-Anda dapat menetapkan nama ke penyebaran saat membuatnya menggunakan cmdlet **New-AzManagementGroupDeployment** .
+Anda dapat menetapkan nama ke penyebaran saat membuatnya dengan menggunakan cmdlet **New-AzManagementGroupDeployment** .
 Jika Anda tidak menetapkan nama, cmdlet menyediakan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
 
-### Contoh 3: Dapatkan penyebaran menurut ID
+### Contoh 3: Mendapatkan penyebaran berdasarkan ID
 ```powershell
 Get-AzDeployment -Id "/providers/Microsoft.Management/managementGroups/myMG/providers/Microsoft.Resources/deployments/Deploy01"
 ```
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
 contoh: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran.
 
 ```yaml
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,16 +140,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeployment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
