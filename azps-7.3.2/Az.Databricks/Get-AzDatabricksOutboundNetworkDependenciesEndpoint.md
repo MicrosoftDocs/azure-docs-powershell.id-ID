@@ -9,8 +9,8 @@ ms.openlocfilehash: e3c141f1c455d29458eefa22506bdc834485ad9e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142035245"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143337761"
 ---
 # Get-AzDatabricksOutboundNetworkDependenciesEndpoint
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.Api20210401Preview.IOutboundEnvironmentEndpoint
 
-## CATATAN
+## NOTES
 
 ALIAS
 

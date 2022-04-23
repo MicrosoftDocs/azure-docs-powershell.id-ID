@@ -10,8 +10,8 @@ ms.openlocfilehash: 8012df8a4b2252fc5db6defcfc8d769e5a785298
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142338695"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143324117"
 ---
 # Get-AzStorageQueue
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageQueue
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

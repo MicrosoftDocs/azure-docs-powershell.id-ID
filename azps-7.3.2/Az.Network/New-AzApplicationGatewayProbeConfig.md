@@ -9,8 +9,8 @@ ms.openlocfilehash: caaeedd043fd7c24f8ad73f27c0694ca74290c01
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142494305"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143330993"
 ---
 # New-AzApplicationGatewayProbeConfig
 

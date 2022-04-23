@@ -9,8 +9,8 @@ ms.openlocfilehash: 0977d3c9ff566461458cf3958c0b3f01c175ab68
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141894356"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143338013"
 ---
 # Update-AzDataProtectionBackupVault
 
@@ -19,7 +19,7 @@ Memperbarui sumber daya BackupVault milik grup sumber daya.
 Misalnya, memperbarui tag untuk sumber daya.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupvault) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/update-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Misalnya, memperbarui tag untuk sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan tag ke kubah cadangan yang sudah ada
+### Contoh 1: Menambahkan tag ke vault cadangan yang sudah ada
 ```powershell
 PS C:\> $tag = @{"Owner"="sarath";"Purpose"="AzureBackupTesting"}
 PS C:\> Update-AzDataProtectionBackupVault -SubscriptionId "xxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault -Tag $tag
@@ -52,13 +52,13 @@ ETag IdentityPrincipalId                  IdentityTenantId                     I
      2ca1d5f7-38b3-4b61-aa45-8147d7e0edbc 72f988bf-86f1-41af-91ab-2d7cd011db47 SystemAssigned centraluseuap sarath-vault Microsoft.DataProtection/backupVaults
 ```
 
-Perintah pertama membuat tag hashtable baru dengan tag dan nilainya.
-Perintah kedua menambahkan tag yang diberikan ke kubah cadangan.
+Perintah pertama membuat hashtable tag baru dengan tag dan nilainya.
+Perintah kedua menambahkan tag yang diberikan ke vault cadangan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah cadangan ada.
+Nama grup sumber daya tempat vault cadangan berada.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan.
+Nama brankas cadangan.
 
 ```yaml
 Type: System.String
@@ -192,8 +192,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -234,7 +234,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupVaultResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -247,15 +247,15 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama kubah cadangan.
+  - `[VaultName <String>]`: Nama brankas cadangan.
 
 ## RELATED LINKS
 

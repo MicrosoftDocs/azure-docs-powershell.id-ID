@@ -9,8 +9,8 @@ ms.openlocfilehash: a2f8996e79521c483011d07564cc0b6877b18818
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142046243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143344295"
 ---
 # Set-AzApplicationGatewayCustomError
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayCustomError
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

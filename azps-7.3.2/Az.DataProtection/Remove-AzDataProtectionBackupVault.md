@@ -9,8 +9,8 @@ ms.openlocfilehash: 7534ddd9909c56e05c32a8b857bfddce52893602
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141894374"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143337995"
 ---
 # Remove-AzDataProtectionBackupVault
 
@@ -18,7 +18,7 @@ ms.locfileid: "141894374"
 Menghapus sumber daya BackupVault dari grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/remove-azdataprotectionbackupvault) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/remove-azdataprotectionbackupvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,13 +39,13 @@ Menghapus sumber daya BackupVault dari grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kubah cadangan.
+### Contoh 1: Menghapus vault cadangan.
 ```powershell
 PS C:\> Remove-AzDataProtectionBackupVault -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
 
 ```
 
-Perintah ini menghapus kubah yang sudah ada.
+Perintah ini menghapus vault yang ada.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah cadangan ada.
+Nama grup sumber daya tempat vault cadangan berada.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan.
+Nama brankas cadangan.
 
 ```yaml
 Type: System.String
@@ -139,8 +139,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -181,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -194,15 +194,15 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama kubah cadangan.
+  - `[VaultName <String>]`: Nama brankas cadangan.
 
 ## RELATED LINKS
 

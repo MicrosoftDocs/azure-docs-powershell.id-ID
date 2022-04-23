@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlService.md
-ms.openlocfilehash: 7f406432b3ce40c190c4785ce5963ba1260a7ed4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0a790b9072b7ef00515fb542ef23f43931d4df19
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143338085"
 ---
 # Remove-AzDataMigrationSqlService
 
 ## SYNOPSIS
-Hapus Layanan Migrasi Database.
+Hapus Database Migration Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationsqlservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,21 +35,21 @@ Remove-AzDataMigrationSqlService -InputObject <IDataMigrationIdentity> [-Default
 ```
 
 ## DESCRIPTION
-Hapus Layanan Migrasi Database.
+Hapus Database Migration Service.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Sql Migration Service
+### Contoh 1: Menghapus Sql Migration Service
 ```powershell
 PS C:\> Remove-AzDataMigrationSqlService -ResourceGroupName "MyResourceGroup" -Name "MySqlMigrationService"
 ```
 
-Perintah ini akan menghapus Layanan Migrasi Sql tertentu.
+Perintah ini menghapus Sql Migration Service yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -90,8 +93,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama layanan SQL migrasi.
+### -Name
+Nama SQL Migration Service.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,8 +185,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -208,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -220,10 +223,10 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagedInstanceName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SqlMigrationServiceName <String>]`: Nama SQL Migrasi.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
+  - `[SqlMigrationServiceName <String>]`: Nama SQL Migration Service.
   - `[SqlVirtualMachineName <String>]`: 
-  - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.
+  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Azure.
   - `[TargetDbName <String>]`: Nama database target.
 
 ## RELATED LINKS
