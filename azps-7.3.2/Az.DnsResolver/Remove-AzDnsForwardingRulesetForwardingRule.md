@@ -9,8 +9,8 @@ ms.openlocfilehash: 23e1d54cd065d8f13ab566eadb80e4c2aa9f6bde
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142374911"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143135783"
 ---
 # Remove-AzDnsForwardingRulesetForwardingRule
 
@@ -225,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

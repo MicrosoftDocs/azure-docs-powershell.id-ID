@@ -7,8 +7,8 @@ ms.openlocfilehash: 819cdc45e75c15c38c9ae28c583ac3c73e54f4ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142310875"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143157563"
 ---
 # Get-AzsComputeQuota
 
@@ -107,7 +107,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### ComputeQuotaObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

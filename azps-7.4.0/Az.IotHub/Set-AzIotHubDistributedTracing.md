@@ -9,8 +9,8 @@ ms.openlocfilehash: 246769a436579c9e21c4bada0389c5f5e4f3a557
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424989"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121491"
 ---
 # Set-AzIotHubDistributedTracing
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSDeviceTracing
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

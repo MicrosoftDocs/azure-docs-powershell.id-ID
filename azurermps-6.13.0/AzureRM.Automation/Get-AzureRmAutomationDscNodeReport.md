@@ -10,8 +10,8 @@ ms.openlocfilehash: 747ffdb9df955609a38718016af50bb5434c0224
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845417"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166267"
 ---
 # Get-AzureRmAutomationDscNodeReport
 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.DscNode
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

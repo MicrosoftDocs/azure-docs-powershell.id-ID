@@ -9,8 +9,8 @@ ms.openlocfilehash: f1d8c213dc6b77bf6e179481d3a463d38d4f15be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142266613"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143144675"
 ---
 # Register-AzRecoveryServicesBackupContainer
 
@@ -198,6 +198,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

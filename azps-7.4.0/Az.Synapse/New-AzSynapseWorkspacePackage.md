@@ -9,8 +9,8 @@ ms.openlocfilehash: 4929c88976aedbf2e9174719ea745e532da896b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988854"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143116037"
 ---
 # New-AzSynapseWorkspacePackage
 
@@ -196,6 +196,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.WorkspacePackages.PSSynapseWorkspacePackage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

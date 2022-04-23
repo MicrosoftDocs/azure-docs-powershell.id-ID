@@ -9,8 +9,8 @@ ms.openlocfilehash: b88fff9775665f5b20f403d46f11bba89dc61220
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141819930"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160155"
 ---
 # Remove-AzureRmVpnClientIpsecParameter
 
@@ -175,6 +175,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 9aef49607cb2da70acbcc81096b0634988424fd4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169935"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143129393"
 ---
 # New-AzAutomationSchedule
 
@@ -68,7 +68,7 @@ New-AzAutomationSchedule [-Name] <String> [-StartTime] <DateTimeOffset> [-Descri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutomationSchedule** membuat jadwal di Azure Automation.
+Cmdlet **New-AzAutomationSchedule** membuat jadwal dalam Azure Automation.
 
 ## EXAMPLES
 
@@ -377,7 +377,7 @@ Accept wildcard characters: False
 
 ### -Zona Waktu
 Menentukan zona waktu untuk jadwal.
-String ini bisa berupa ID IANA atau ID Zona Waktu Windows.
+String ini dapat berupa ID IANA atau ID Zona Waktu Windows.
 
 ```yaml
 Type: System.String
@@ -421,7 +421,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Schedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

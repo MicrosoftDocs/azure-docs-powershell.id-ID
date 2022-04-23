@@ -10,8 +10,8 @@ ms.openlocfilehash: e37b50b03f525dcc30e911a2f7ba601514083462
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141796641"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143144027"
 ---
 # Get-AzProviderOperation
 
@@ -93,7 +93,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Resources.Models.PSResourceProviderOperation
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

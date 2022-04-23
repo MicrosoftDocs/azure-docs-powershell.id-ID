@@ -9,8 +9,8 @@ ms.openlocfilehash: a78a072408f7c6716958aa17d1f9254a76f30340
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303459"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143147465"
 ---
 # Get-AzMigrateReplicationProtectionIntent
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IReplicationProtectionIntent
 
-## CATATAN
+## NOTES
 
 ALIAS
 

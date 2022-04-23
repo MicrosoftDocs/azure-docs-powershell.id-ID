@@ -10,13 +10,13 @@ ms.openlocfilehash: f68a7d29f71d51a25713310a1bf3288df316a34f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390697"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166347"
 ---
 # Get-AzureRmAutomationCertificate
 
 ## SYNOPSIS
-Mendapatkan sertifikat Otomatisasi.
+Mendapatkan sertifikat Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,9 +46,9 @@ Tentukan nama sertifikat untuk mendapatkan sertifikat tertentu.
 PS C:\>Get-AzureRmAutomationCertificate -ResourceGroupName "ResourceGroup07" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua sertifikat dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua sertifikat di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan sertifikat
+### Contoh 2: Mendapatkan sertifikat
 ```
 PS C:\>Get-AzureRmAutomationCertificate -ResourceGroupName "ResourceGroup07" -AutomationAccountName "Contoso17" -Name "ContosoCertificate"
 ```
@@ -58,7 +58,7 @@ Perintah ini mendapatkan metadata untuk sertifikat bernama ContosoCertificate.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengambil sertifikat.
+Menentukan nama akun Automation tempat cmdlet ini mengambil sertifikat.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat yang akan diambil.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan sertifikat Otomatisasi.
+Menentukan nama grup sumber daya yang cmdlet ini mendapatkan sertifikat Automation.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,13 +128,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.CertificateInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[AzureRmAutomation BaruPenerima](./New-AzureRMAutomationCertificate.md)
+[New-AzureRmAutomationCertificate](./New-AzureRMAutomationCertificate.md)
 
-[Hapus-AzureRmAutomationCertificate](./Remove-AzureRMAutomationCertificate.md)
+[Remove-AzureRmAutomationCertificate](./Remove-AzureRMAutomationCertificate.md)
 
 [Set-AzureRmAutomationCertificate](./Set-AzureRMAutomationCertificate.md)
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 6d2830836fd29edea2843fad4be1892edfa7fbb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142137102"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159633"
 ---
 # Set-AzureRmVirtualNetworkGatewayVpnClientConfig
 
@@ -190,7 +190,7 @@ Parameter: VirtualNetworkGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

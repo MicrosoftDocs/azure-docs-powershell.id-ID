@@ -7,8 +7,8 @@ ms.openlocfilehash: 71bbfd0f68d716ea7ecd5e0d8066464b253bd390
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142330055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154989"
 ---
 # Test-AzsMoveUserSubscription
 
@@ -265,7 +265,7 @@ ALIAS
 
 ### Test-AzsMoveSubscription
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

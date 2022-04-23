@@ -10,8 +10,8 @@ ms.openlocfilehash: 37cc2025b97e16a2af313a2f4dd2cf7dfe815b7b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142495402"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154575"
 ---
 # Remove-AzKeyVaultCertificateOperation
 
@@ -159,7 +159,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.KeyVault.Models.KeyVaultCertificateOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

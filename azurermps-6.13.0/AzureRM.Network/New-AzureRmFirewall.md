@@ -10,8 +10,8 @@ ms.openlocfilehash: 6486c7db87e8c71b0703b90a765fa30287b82769
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160821"
 ---
 # New-AzureRmFirewall
 
@@ -290,7 +290,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Network.Models.PSFirewall
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

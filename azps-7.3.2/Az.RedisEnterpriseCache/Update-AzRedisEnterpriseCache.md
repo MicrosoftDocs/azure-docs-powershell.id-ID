@@ -9,8 +9,8 @@ ms.openlocfilehash: 0e8901d5795a5bd4f1198dc2c998c61e2c865cd0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142210303"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143174303"
 ---
 # Update-AzRedisEnterpriseCache
 
@@ -266,7 +266,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Models.Api20210301.ICluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 

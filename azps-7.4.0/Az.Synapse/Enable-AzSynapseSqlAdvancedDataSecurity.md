@@ -9,8 +9,8 @@ ms.openlocfilehash: e4181a3e863c205d2922372ba6afc0b2ba4a96d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000744"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143116289"
 ---
 # Enable-AzSynapseSqlAdvancedDataSecurity
 
@@ -230,6 +230,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.WorkspaceAdvancedDataSecurityPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

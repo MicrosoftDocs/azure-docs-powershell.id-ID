@@ -8,8 +8,8 @@ ms.openlocfilehash: f93e05448278e2aaa70ff226a5d3618fdad0e6b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142393875"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114183"
 ---
 # New-AzureRmVmss
 
@@ -595,7 +595,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

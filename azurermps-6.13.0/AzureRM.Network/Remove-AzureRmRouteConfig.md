@@ -10,8 +10,8 @@ ms.openlocfilehash: 704ac762bdc7569fd5ad2c0c4912ebf9634e25ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354318"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160245"
 ---
 # Remove-AzureRmRouteConfig
 
@@ -151,7 +151,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

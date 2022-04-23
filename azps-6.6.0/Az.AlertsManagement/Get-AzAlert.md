@@ -9,8 +9,8 @@ ms.openlocfilehash: 6e4aa9efc2329d1669e1ba243ecae06a61676031
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141809438"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143152721"
 ---
 # Get-AzAlert
 
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Project bidang yang diperlukan dari hal-hal penting.
+Proyekkan bidang yang diperlukan dari hal-hal penting.
 Input yang diharapkan dipisahkan koma.
 
 ```yaml
@@ -373,6 +373,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSAlert
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

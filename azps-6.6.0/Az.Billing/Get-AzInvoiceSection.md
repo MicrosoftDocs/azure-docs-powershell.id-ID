@@ -9,8 +9,8 @@ ms.openlocfilehash: eaa98289b337630095b5e8499d0ca51dcd33ac4d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142325249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143152145"
 ---
 # Get-AzInvoiceSection
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Billing.Models.PSInvoiceSection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
