@@ -10,8 +10,8 @@ ms.openlocfilehash: 948088f99e90af4594e239dc379133955340e1d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967120"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105381"
 ---
 # Reset-AzureRmWebAppSlotPublishingProfile
 
@@ -136,6 +136,6 @@ Parameter: WebApp (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

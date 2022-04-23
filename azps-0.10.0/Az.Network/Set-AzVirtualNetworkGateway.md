@@ -10,8 +10,8 @@ ms.openlocfilehash: 87840267cf85997da83af590664c473a61f74033
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142130867"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099657"
 ---
 # Set-AzVirtualNetworkGateway
 
@@ -341,7 +341,7 @@ Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' 
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

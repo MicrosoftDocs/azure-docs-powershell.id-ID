@@ -10,8 +10,8 @@ ms.openlocfilehash: f8451f4164b58c2d6599778ab86dfca4e5ff79dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141843910"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109400"
 ---
 # Restart-AzureRmVM
 
@@ -193,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSComputeLongRunningOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

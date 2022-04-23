@@ -8,8 +8,8 @@ ms.openlocfilehash: ded608261981073ef5544df2b64e99171eef7710
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362170"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143112273"
 ---
 # Remove-AzureRmVirtualNetworkGatewayDefaultSite
 
@@ -93,7 +93,7 @@ Cmdlet ini menerima instans pipelin objek **Microsoft.Azure.Commands.Network.Mod
 ###  
 Cmdlet ini mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway** yang sudah ada.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

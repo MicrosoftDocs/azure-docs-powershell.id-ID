@@ -7,8 +7,8 @@ ms.openlocfilehash: 590664f649f87e1ce3184ff366a025ba2a2502d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142279391"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105219"
 ---
 # Get-AzureAclConfig
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

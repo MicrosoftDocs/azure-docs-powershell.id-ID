@@ -9,13 +9,13 @@ ms.openlocfilehash: 262a3e2154d55d3065496f49dad41953fbd35c9c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142069051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143075357"
 ---
 # Get-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Dapatkan Key Vault yang dikelola Azure Storage Accounts.
+Mendapatkan akun Azure Storage terkelola Key Vault.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
@@ -41,11 +41,11 @@ Get-AzKeyVaultManagedStorageAccount [-ResourceId] <String> [-InRemovedState]
 ```
 
 ## DESCRIPTION
-Mendapatkan Key Vault yang dikelola Azure Storage Account jika nama akun ditentukan dan kunci akun dikelola oleh kubah yang ditentukan. Jika nama akun tidak ditentukan, maka semua akun yang kuncinya dikelola oleh kubah tertentu akan dicantumkan.
+Mendapatkan akun Azure Storage terkelola Key Vault jika nama akun ditentukan dan kunci akun dikelola oleh kubah yang ditentukan. Jika nama akun tidak ditentukan, maka semua akun yang kuncinya dikelola oleh kubah tertentu akan dicantumkan.
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan semua Akun Penyimpanan terkelola Key Vault
+### Contoh 1: Mencantumkan semua akun Storage dikelola Key Vault
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault'
 
@@ -62,7 +62,7 @@ Tags                :
 
 Mencantumkan semua akun yang kuncinya dikelola oleh kubah 'myvault'
 
-### Contoh 2: Dapatkan Akun Penyimpanan terkelola Key Vault
+### Contoh 2: Dapatkan akun Storage terkelola Key Vault
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -Name 'mystorageaccount'
 
@@ -80,9 +80,9 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Mendapatkan detail Key Vault managed Storage Account of 'mystorageaccount' jika kuncinya dikelola oleh vault 'myvault'
+Mendapatkan detail Key Vault dikelola Storage Akun dari 'mystorageaccount' jika kuncinya dikelola oleh 'myvault' kubah
 
-### Contoh 3: Cantumkan semua Akun Penyimpanan terkelola Key Vault menggunakan pemfilteran
+### Contoh 3: Mencantumkan semua akun Storage yang dikelola Key Vault menggunakan pemfilteran
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -Name "test*"
 
@@ -112,7 +112,7 @@ Mencantumkan semua akun yang kuncinya dikelola oleh 'myvault' kubah yang dimulai
 ## PARAMETERS
 
 ### -AccountName
-Nama akun penyimpanan terkelola Key Vault. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
+Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
 
 ```yaml
 Type: System.String
@@ -221,9 +221,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Cmdlet Azure PowerShell Key Vault](/powershell/module/az.keyvault/)
+[cmdlet Azure PowerShell Key Vault](/powershell/module/az.keyvault/)
 

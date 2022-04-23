@@ -10,8 +10,8 @@ ms.openlocfilehash: d0efa32f8a0eb00d203b0e1be3318cd98ab06ef7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141810608"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099459"
 ---
 # Remove-AzRoleAssignment
 
@@ -386,7 +386,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
 
-## CATATAN
+## NOTES
 Kata kunci: azure, Az, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Template, penyebaran
 
 ## RELATED LINKS

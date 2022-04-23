@@ -10,8 +10,8 @@ ms.openlocfilehash: 1d31b81705a6cb401c4a0f968549abe52b0d8c8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142086171"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143092727"
 ---
 # New-AzDataLakeStoreItem
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

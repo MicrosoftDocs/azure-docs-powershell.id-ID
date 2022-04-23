@@ -9,8 +9,8 @@ ms.openlocfilehash: 6d951d8abfc49b4b50bdb677b7c96d8b027d106b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142035173"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143136683"
 ---
 # Get-AzDeploymentManagerRollout
 
@@ -183,6 +183,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSRollout
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
