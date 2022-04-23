@@ -9,8 +9,8 @@ ms.openlocfilehash: 1dc09ecf603ac692e7f4eba8c0ab9776b20aa60f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141944619"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187947"
 ---
 # Update-AzStaticWebAppUser
 
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20201201.IStaticSiteUserArmResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

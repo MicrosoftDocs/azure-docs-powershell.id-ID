@@ -9,8 +9,8 @@ ms.openlocfilehash: c75d8bca528c954cf0612af3392fc79f3cd3b4a8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142141477"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163368"
 ---
 # Remove-AzureRmFrontDoorContent
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

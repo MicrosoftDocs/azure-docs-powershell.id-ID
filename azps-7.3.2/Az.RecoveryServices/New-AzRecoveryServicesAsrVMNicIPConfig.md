@@ -9,8 +9,8 @@ ms.openlocfilehash: 352aed3439d6f37e8dcf1fabbf73cd368f4fd3ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142210825"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143175167"
 ---
 # New-AzRecoveryServicesAsrVMNicIPConfig
 
@@ -252,6 +252,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.PSIPConfigInputDetails
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

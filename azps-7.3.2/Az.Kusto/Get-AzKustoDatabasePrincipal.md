@@ -9,8 +9,8 @@ ms.openlocfilehash: 463e9a235e37326967fae845e67892c102913744
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141850784"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143132597"
 ---
 # Get-AzKustoDatabasePrincipal
 
@@ -42,12 +42,12 @@ AppId Email                   Fqn                                               
       otheruser@microsoft.com aaduser=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Other User  Admin Microsoft  User
 ```
 
-Perintah di atas mengembalikan daftar prinsipal database dari klaster dan database Kusto yang diberikan
+Perintah di atas mengembalikan daftar prinsipal database dari cluster dan database Kusto yang diberikan
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kluster Kusto.
+Nama database dalam klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -160,9 +160,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IDatabasePrincipal
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDatabasePrincipal
 
-## CATATAN
+## NOTES
 
 ALIAS
 

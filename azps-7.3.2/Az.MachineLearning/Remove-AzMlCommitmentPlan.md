@@ -9,8 +9,8 @@ ms.openlocfilehash: 479c44570959a67333a5ae8516ef49cfddca6840
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141936717"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143181539"
 ---
 # Remove-AzMlCommitmentPlan
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

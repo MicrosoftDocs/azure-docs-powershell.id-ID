@@ -8,8 +8,8 @@ ms.openlocfilehash: a46c41ce4e7a4faf5683d00b10e82cbb9e11758b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142262293"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187911"
 ---
 # Update-AzWebAppTrafficRouting
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.RampUpRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

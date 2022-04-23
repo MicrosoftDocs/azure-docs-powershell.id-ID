@@ -10,8 +10,8 @@ ms.openlocfilehash: 003072e6821561c78975d50fa627edf0f7fd120a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097907"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163179"
 ---
 # Add-AzureRmHDInsightSecurityProfile
 
@@ -191,6 +191,6 @@ Parameter: Config (ByValue)
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightSecurityProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

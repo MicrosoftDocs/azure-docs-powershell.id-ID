@@ -9,8 +9,8 @@ ms.openlocfilehash: 34a59f0530ed036397523e3810d68175e7ee2d3b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142357077"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163621"
 ---
 # New-AzureRmEventHubConsumerGroup
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

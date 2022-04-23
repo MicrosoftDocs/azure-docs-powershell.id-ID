@@ -9,8 +9,8 @@ ms.openlocfilehash: 3725f45a5ce5a5ddc695b37779d8b8fbf5bc7630
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141794210"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143140104"
 ---
 # Stop-AzSynapseSparkSession
 
@@ -234,6 +234,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: c0c8b350dd4e2c1f7247ce593424992c9e8445b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142228861"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143146259"
 ---
 # Get-AzAutoApprovedPrivateLinkService
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAutoApprovedPrivateLinkService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

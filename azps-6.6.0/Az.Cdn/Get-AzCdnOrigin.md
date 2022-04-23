@@ -10,8 +10,8 @@ ms.openlocfilehash: 1496190bc41b63851a64f86d3d6e2def3f95f362
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142273849"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143151947"
 ---
 # Get-AzCdnOrigin
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Origin.PSOrigin
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

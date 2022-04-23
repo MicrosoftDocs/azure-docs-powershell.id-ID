@@ -10,8 +10,8 @@ ms.openlocfilehash: dd577b5ae4aa61ff988b872bcd37eab1c911e6cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926915"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163243"
 ---
 # Add-AzureRmHDInsightConfigValues
 
@@ -404,7 +404,7 @@ Parameter: Config (ByValue)
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

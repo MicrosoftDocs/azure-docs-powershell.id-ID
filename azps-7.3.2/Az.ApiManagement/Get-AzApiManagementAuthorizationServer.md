@@ -10,8 +10,8 @@ ms.openlocfilehash: 64023eb1e9e175d511714023bc10fb520c7b9d82
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261681"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187803"
 ---
 # Get-AzApiManagementAuthorizationServer
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOAuth2AuthorizationServer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

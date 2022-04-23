@@ -9,8 +9,8 @@ ms.openlocfilehash: 294c51f4d1474bbde22eab0b6247a4bd60f4f994
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142029503"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143175617"
 ---
 # Get-AzRecoveryServicesAsrProtectionContainer
 
@@ -41,7 +41,7 @@ Get-AzRecoveryServicesAsrProtectionContainer -FriendlyName <String> -Fabric <ASR
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrProtectionContainer** mendapatkan wadah perlindungan Pemulihan Situs Azure dalam kubah Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrProtectionContainer** mendapatkan wadah perlindungan azure Site Recovery dalam kubah Layanan Pemulihan.
 Wadah proteksi adalah wadah logika untuk objek yang dapat dilindungi(ditemukan) dan dilindungi seperti mesin virtual.
 Kebijakan replikasi menentukan pengaturan replikasi untuk item yang diproteksi dan dapat dikaitkan dengan wadah proteksi dan diterapkan ke item yang dapat diproteksi.
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

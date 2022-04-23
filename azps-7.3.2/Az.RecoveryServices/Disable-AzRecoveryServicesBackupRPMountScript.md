@@ -9,8 +9,8 @@ ms.openlocfilehash: 7576b5be295a4e07bda93cb04579bb1d29ef78ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142289185"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143175689"
 ---
 # Disable-AzRecoveryServicesBackupRPMountScript
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

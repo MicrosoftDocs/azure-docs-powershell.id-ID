@@ -9,8 +9,8 @@ ms.openlocfilehash: 0fb90529f4157bf627e43477e3db41764040e5c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163612"
 ---
 # New-AzureRmEventHubNamespace
 
@@ -258,6 +258,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

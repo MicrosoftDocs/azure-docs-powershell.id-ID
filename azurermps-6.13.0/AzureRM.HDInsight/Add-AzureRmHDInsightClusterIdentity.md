@@ -10,8 +10,8 @@ ms.openlocfilehash: d02dce12425015ed12e082f0bb3ba52c5b9b77c2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142387637"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163290"
 ---
 # Add-AzureRmHDInsightClusterIdentity
 
@@ -212,7 +212,7 @@ Parameter: ObjectId (ByValue)
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
