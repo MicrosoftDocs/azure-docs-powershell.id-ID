@@ -10,8 +10,8 @@ ms.openlocfilehash: 14155aff0a8e36a845c25e2d3baf23ecd7cff089
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143313605"
 ---
 # New-AzRouteTable
 
@@ -248,7 +248,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

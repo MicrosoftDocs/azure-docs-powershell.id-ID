@@ -9,8 +9,8 @@ ms.openlocfilehash: 94977a54dc5cdd083db3efca3757e1f965139858
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176387"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143313371"
 ---
 # Remove-AzApplicationGatewayConnectionDraining
 
@@ -84,7 +84,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

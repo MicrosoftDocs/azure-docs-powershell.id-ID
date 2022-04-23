@@ -9,8 +9,8 @@ ms.openlocfilehash: 862ee484ebd046859daa9084e7b858d7e65d8a4c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141942729"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143340245"
 ---
 # Set-AzSnapshotImageReference
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

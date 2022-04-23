@@ -9,8 +9,8 @@ ms.openlocfilehash: 0e6eaeb101d193c77cd3307927e2924a57e10df6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142463535"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143328707"
 ---
 # Remove-AzSearchQueryKey
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

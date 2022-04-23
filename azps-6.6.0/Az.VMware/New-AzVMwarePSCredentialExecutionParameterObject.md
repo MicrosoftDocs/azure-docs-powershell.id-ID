@@ -9,8 +9,8 @@ ms.openlocfilehash: 897f1e68180524b7370adb130f70a1b76a63b5bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142117007"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143352701"
 ---
 # New-AzVMwarePSCredentialExecutionParameterObject
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20210601.PsCredentialExecutionParameter
 
-## CATATAN
+## NOTES
 
 ALIAS
 

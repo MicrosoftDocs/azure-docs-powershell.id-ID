@@ -9,8 +9,8 @@ ms.openlocfilehash: fe5134ba8efd66541e2d2f8d7d57317c6670082c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142295701"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143352539"
 ---
 # New-AzWebAppCertificate
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.WebApp.PSCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Remove-AzWebAppCertificate](./Remove-AzWebAppCertificate.md)

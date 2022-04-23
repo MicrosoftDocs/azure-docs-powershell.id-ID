@@ -10,8 +10,8 @@ ms.openlocfilehash: 273f8e4bde9231f1df84fa5b57b2d00fdbdd79a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991650"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143313749"
 ---
 # New-AzApplicationGatewaySslCertificate
 
@@ -46,9 +46,9 @@ $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -KeyVaultSecretId 
 ```
 
 Dapatkan rahasia dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
-Catatan: Karena secretId tanpa versi disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval rutin dengan KeyVault.
+Catatan: Karena version-less secretId disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval reguler dengan KeyVault.
 
-### Contoh 3: Buat sertifikat SSL menggunakan KeyVault Secret dan tambahkan ke Application Gateway.
+### Contoh 3: Membuat sertifikat SSL menggunakan KeyVault Secret dan tambahkan ke Gateway Aplikasi.
 ```powershell
 $secret = Get-AzKeyVaultSecret -VaultName "keyvault01" -Name "sslCert01"
 $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/<hash>
@@ -56,7 +56,7 @@ $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -KeyVaultSecretId 
 ```
 
 Dapatkan rahasia dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
-Catatan: Jika diperlukan agar Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan secretId tanpa versi.
+Catatan: Jika diperlukan bahwa Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan version-less secretId.
 
 ## PARAMETERS
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1cb4d05af5f763397ca5ec9157eed2a5a245f15c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142367981"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143328653"
 ---
 # Disable-AzIotSecurityAnalyticsAggregatedAlert
 
@@ -210,6 +210,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 49838293794c786d6f20ffcbfa1478199c82dd2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142038719"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143352593"
 ---
 # New-AzStaticWebAppUserRoleInvitationLink
 
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20201201.IStaticSiteUserInvitationResponseResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

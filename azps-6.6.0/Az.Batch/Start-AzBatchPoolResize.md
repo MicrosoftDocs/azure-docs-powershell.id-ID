@@ -10,8 +10,8 @@ ms.openlocfilehash: a9351f4ca3b417f2b9993563cd4de4bb9f222c36
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142274029"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143302229"
 ---
 # Start-AzBatchPoolResize
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

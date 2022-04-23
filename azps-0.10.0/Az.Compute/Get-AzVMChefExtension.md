@@ -10,8 +10,8 @@ ms.openlocfilehash: fe6f65aa2e673007b3eda52134c42782c7a49bd9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142132055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358929"
 ---
 # Get-AzVMChefExtension
 
@@ -170,7 +170,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineExtension
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
