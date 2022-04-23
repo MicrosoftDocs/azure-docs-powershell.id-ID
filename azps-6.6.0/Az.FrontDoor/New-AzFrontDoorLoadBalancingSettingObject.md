@@ -9,8 +9,8 @@ ms.openlocfilehash: 0babdeda214b1c2f88cd5f2ea941cd5d3f3c263a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141802976"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143348273"
 ---
 # New-AzFrontDoorLoadBalancingSettingObject
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSLoadBalancingSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

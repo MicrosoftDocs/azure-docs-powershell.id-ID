@@ -9,8 +9,8 @@ ms.openlocfilehash: 2afb7a2686da4fb288ec1910c30e8a4f0f905606
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141802562"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143348129"
 ---
 # Get-AzIotHubEventHubConsumerGroup
 
@@ -97,6 +97,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSEventHubConsumerGroupInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
