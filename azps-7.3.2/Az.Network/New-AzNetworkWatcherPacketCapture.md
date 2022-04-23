@@ -9,8 +9,8 @@ ms.openlocfilehash: da3ffadac553f2615f33d0726c17d3629f75cb3c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142213129"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143178335"
 ---
 # New-AzNetworkWatcherPacketCapture
 
@@ -68,7 +68,7 @@ $filter2 = New-AzPacketCaptureFilterConfig -Protocol UDP
 New-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -TargetVirtualMachineId $vm.Id -PacketCaptureName "PacketCaptureTest" -StorageAccountId $storageAccount.id -TimeLimitInSeconds 60 -Filter $filter1, $filter2
 ```
 
-Dalam contoh ini, kami membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Catatan: Ekstensi Pengawas Jaringan Azure harus diinstal di mesin virtual target untuk membuat tangkapan paket.
+Dalam contoh ini, kami membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Catatan: Ekstensi Azure Network Watcher harus diinstal di mesin virtual target untuk membuat tangkapan paket.
 
 ## PARAMETERS
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Id akun penyimpanan.
+id akun Storage.
 
 ```yaml
 Type: System.String
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -StoragePath
-Jalur penyimpanan.
+Storage jalur.
 
 ```yaml
 Type: System.String
@@ -343,7 +343,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPacketCaptureResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, paket, penangkapan, lalu lintas 
 
 ## RELATED LINKS

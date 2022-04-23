@@ -10,8 +10,8 @@ ms.openlocfilehash: f82abc45a9b78093c13764ab0eb28f2593c7fabb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165908"
 ---
 # Get-AzureRmBackupRecoveryPoint
 
@@ -112,7 +112,7 @@ Parameter: Item (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupRecoveryPoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

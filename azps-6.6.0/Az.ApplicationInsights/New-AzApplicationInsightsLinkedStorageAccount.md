@@ -9,8 +9,8 @@ ms.openlocfilehash: 39ad9c5cf351af037dbbb9bfd71b934d9d4b95c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142054937"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203355"
 ---
 # New-AzApplicationInsightsLinkedStorageAccount
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedStorageAccountResourceId
-Id Sumber Daya Akun Storage
+ResourceId Akun Penyimpanan
 
 ```yaml
 Type: System.String
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSComponentLinkedStorageAccounts
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

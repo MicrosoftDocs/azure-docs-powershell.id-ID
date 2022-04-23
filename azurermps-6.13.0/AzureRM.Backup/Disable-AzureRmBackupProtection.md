@@ -10,8 +10,8 @@ ms.openlocfilehash: ebea82628aae6df23d16a341f3fd503870a8037a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283081"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165885"
 ---
 # Disable-AzureRmBackupProtection
 
@@ -141,7 +141,7 @@ Parameter: Item (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,13 +10,13 @@ ms.openlocfilehash: e3dd0d475a2a2c34dfa7912bf9ced4ef958295c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142390287"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166041"
 ---
 # Remove-AzureRmAutomationAccount
 
 ## SYNOPSIS
-Menghapus akun Otomatisasi.
+Menghapus akun Automation.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Remove-AzureRmAutomationAccount [-ResourceGroupName] <String> [-Name] <String> [
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmAutomationAccount** menghapus akun Azure Automation dari grup sumber daya.
-Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzureRmAutomationAccount.
+Untuk informasi selengkapnya tentang akun Automation, lihat cmdlet New-AzureRmAutomationAccount.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -72,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Otomatisasi yang dihapus cmdlet ini.
+### -Name
+Menentukan nama akun Automation yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini menghapus akun Otomatisasi.
+Menentukan nama grup sumber daya tempat cmdlet ini menghapus akun Automation.
 
 ```yaml
 Type: System.String
@@ -102,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -144,13 +144,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.AutomationAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzureRmAutomationAccount](./Get-AzureRmAutomationAccount.md)
 
-[AzureRmAutomationAccount Baru](./New-AzureRmAutomationAccount.md)
+[New-AzureRmAutomationAccount](./New-AzureRmAutomationAccount.md)
 
 [Set-AzureRmAutomationAccount](./Set-AzureRmAutomationAccount.md)
 

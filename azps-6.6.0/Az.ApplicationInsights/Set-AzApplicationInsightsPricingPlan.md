@@ -9,8 +9,8 @@ ms.openlocfilehash: 4fc3f5fcba174f74f6f40abd751054ef6410ed10
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326509"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203337"
 ---
 # Set-AzApplicationInsightsPricingPlan
 
@@ -63,7 +63,7 @@ Atur paket harga ke "Dasar", atur batas volume data harian ke 400GB per hari dan
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Objek Komponen Insights Aplikasi.
+Objek Komponen Application Insights.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Komponen Insights Aplikasi.
+Nama Komponen Application Insights.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Komponen Insights Aplikasi.
+Id Sumber Daya Komponen Wawasan Aplikasi.
 
 ```yaml
 Type: System.String
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApplicationInsights.Models.PSPricingPlan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

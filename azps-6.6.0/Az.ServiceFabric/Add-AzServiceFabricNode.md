@@ -9,8 +9,8 @@ ms.openlocfilehash: 8bb0bb544744875ad6b23161bd947b10b2dfd6af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142223605"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143190953"
 ---
 # Add-AzServiceFabricNode
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

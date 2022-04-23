@@ -9,8 +9,8 @@ ms.openlocfilehash: 7d89e5b9b822952065f535ca5510c7f4af3ac910
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142215325"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143184365"
 ---
 # New-AzFrontDoorRulesEngineMatchConditionObject
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineMatchCondition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 9f4de92b49e80ee1b4c64f57f134f934571bd4c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142377665"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203877"
 ---
 # Get-AzAksNodePoolUpgradeProfile
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Aks.Models.Api20200901.IAgentPoolUpgradeProfile
 
-## CATATAN
+## NOTES
 
 ALIAS
 

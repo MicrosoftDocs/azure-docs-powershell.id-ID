@@ -9,8 +9,8 @@ ms.openlocfilehash: f4d17fa6cdcb64aab2ab373420891f686facfdf8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845413"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166131"
 ---
 # Get-AzureRmAutomationSoftwareUpdateConfiguration
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

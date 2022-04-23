@@ -10,13 +10,13 @@ ms.openlocfilehash: 75b129f9f292b78a62e4031348554046175dacf4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141961593"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143203643"
 ---
 # Remove-AzApiManagementProduct
 
 ## SYNOPSIS
-Menghapus produk API Management yang sudah ada.
+Menghapus produk Manajemen API yang sudah ada.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementproduct) untuk informasi terbaru.
@@ -29,7 +29,7 @@ Remove-AzApiManagementProduct -Context <PsApiManagementContext> -ProductId <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementProduct** menghapus produk API Management yang sudah ada.
+Cmdlet **Remove-AzApiManagementProduct** menghapus produk Manajemen API yang sudah ada.
 
 ## EXAMPLES
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

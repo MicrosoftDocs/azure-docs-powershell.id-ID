@@ -9,8 +9,8 @@ ms.openlocfilehash: e5fbecea64a15569fbd6319f3f3be5ff4102153e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925564"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216378"
 ---
 # Disconnect-AzureRmAccount
 
@@ -247,6 +247,6 @@ Parameter: AzureContext (ByValue)
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureRmAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
