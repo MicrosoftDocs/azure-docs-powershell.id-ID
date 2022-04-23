@@ -9,8 +9,8 @@ ms.openlocfilehash: f0fb5704988788fa916a51a21fc1a18058d293f8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427364"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143321093"
 ---
 # Set-AzAksClusterCredential
 
@@ -253,6 +253,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

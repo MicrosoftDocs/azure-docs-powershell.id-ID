@@ -9,8 +9,8 @@ ms.openlocfilehash: c9ea16c28f57862e3d2c4c4e80c0ce19baafc2f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170350"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143321075"
 ---
 # Start-AzAksDashboard
 
@@ -199,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Aks.KubeTunnelJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

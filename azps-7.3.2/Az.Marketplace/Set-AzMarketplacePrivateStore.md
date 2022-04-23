@@ -9,8 +9,8 @@ ms.openlocfilehash: 44bb311b5f1c1d85068c0405b4753821b2ece49e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142372517"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143333999"
 ---
 # Set-AzMarketplacePrivateStore
 
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
