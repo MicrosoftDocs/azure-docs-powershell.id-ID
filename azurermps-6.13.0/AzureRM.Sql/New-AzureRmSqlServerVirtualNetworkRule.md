@@ -9,13 +9,13 @@ ms.openlocfilehash: c2e3386d7c9146eeaa96220ddcbea4cf50864e10
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096148"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213633"
 ---
 # New-AzureRmSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
-Membuat Aturan Jaringan Virtual Azure SQL Server. 
+Membuat Aturan Virtual Network Server Azure SQL. 
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmSqlServerVirtualNetworkRule -VirtualNetworkRuleName <String> -Virtual
 ```
 
 ## DESCRIPTION
-Membuat Aturan Jaringan Virtual Azure SQL Server. Aturan Jaringan Virtual digunakan untuk menyambungkan Azure SQL Server ke Jaringan Virtual tertentu untuk membatasi akses di Azure SQL Server agar hanya tersedia dalam Jaringan Virtual. 
+Membuat Aturan Virtual Network Server Azure SQL. Aturan Virtual Network digunakan untuk menyambungkan Server Azure SQL ke Virtual Network tertentu untuk membatasi akses di Server Azure SQL agar hanya tersedia dalam Virtual Network. 
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Membuat Aturan Jaringan Virtual Azure SQL Server. Aturan Jaringan Virtual diguna
 PS C:\> $virtualNetworkRule = New-AzureRmSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRuleName -VirtualNetworkSubnetId virtualNetworkSubnetId
 ```
 
-Membuat aturan jaringan virtual Azure SQL Server
+Membuat aturan jaringan virtual Server Azure SQL
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRuleName
-Nama Aturan Jaringan Virtual Azure Sql Server.
+Nama Aturan Virtual Network Azure Sql Server.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkSubnetId
-Id Subnet Jaringan Virtual yang menentukan detail Microsoft.Network
+Id Subnet Virtual Network yang menentukan detail Microsoft.Network
 
 ```yaml
 Type: System.String
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualNetworkRule.Model.AzureSqlServerVirtualNetworkRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: a9ec1ef8ad2b3614647464e882ff8311261e1e1d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141943125"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187065"
 ---
 # New-AzSshKey
 
@@ -119,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSshPublicKeyResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

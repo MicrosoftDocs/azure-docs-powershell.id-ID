@@ -9,8 +9,8 @@ ms.openlocfilehash: eb09bf5525cfd6ad3e5d892707ece4346ca8ea63
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142267675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143194858"
 ---
 # Remove-AzDdosProtectionPlan
 
@@ -195,7 +195,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

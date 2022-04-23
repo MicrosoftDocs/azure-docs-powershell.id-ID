@@ -9,8 +9,8 @@ ms.openlocfilehash: b7f435090c0ff5c421df7d8d3e885f67456f9af0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143219832"
 ---
 # New-AzureRmDataFactoryGatewayAuthKey
 
@@ -187,7 +187,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

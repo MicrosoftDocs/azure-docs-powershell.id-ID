@@ -10,8 +10,8 @@ ms.openlocfilehash: 81a88dcb75fd59f03b9a7953b53f7820dcfea03a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142115063"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143186993"
 ---
 # New-AzVMSqlServerAutoBackupConfig
 
@@ -352,7 +352,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.AutoBackupSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

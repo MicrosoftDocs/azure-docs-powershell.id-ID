@@ -10,8 +10,8 @@ ms.openlocfilehash: 3786dc0a9500dd07b332dacfbb026b5a44f0b550
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247876"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213543"
 ---
 # Remove-AzureRmSqlElasticPool
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlElasticPool](./Set-AzureRmSqlElasticPool.md)
 
-[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)
 
 

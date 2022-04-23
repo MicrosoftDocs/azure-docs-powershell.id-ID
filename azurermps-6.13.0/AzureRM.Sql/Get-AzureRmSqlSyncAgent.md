@@ -9,8 +9,8 @@ ms.openlocfilehash: 8b590e6ba8329ba6e0c45d30f7163c637d90f79e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142314784"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213792"
 ---
 # Get-AzureRmSqlSyncAgent
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncAgentModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

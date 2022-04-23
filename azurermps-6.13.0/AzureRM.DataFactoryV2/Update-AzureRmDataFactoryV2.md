@@ -9,8 +9,8 @@ ms.openlocfilehash: 09e13e973178444496604843336c8f483508c59e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141885279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143219789"
 ---
 # Update-AzureRmDataFactoryV2
 
@@ -201,6 +201,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

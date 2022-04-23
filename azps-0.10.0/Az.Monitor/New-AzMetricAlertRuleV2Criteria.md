@@ -9,8 +9,8 @@ ms.openlocfilehash: bb72a50c2db43a8db053d273c601ca51e96402f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493501"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143206865"
 ---
 # New-AzMetricAlertRuleV2Criteria
 
@@ -286,6 +286,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.IPSMultiMetricCriteria
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

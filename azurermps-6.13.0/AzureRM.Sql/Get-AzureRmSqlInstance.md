@@ -9,8 +9,8 @@ ms.openlocfilehash: 72e3b740a84a46da094208b941e8b68173133e46
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774794"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213885"
 ---
 # Get-AzureRmSqlInstance
 
@@ -166,6 +166,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

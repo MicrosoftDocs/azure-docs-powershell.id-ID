@@ -9,8 +9,8 @@ ms.openlocfilehash: 60b98db10aab4456ea8ca463f49ee3f7f58ffdd2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141917049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143206667"
 ---
 # Add-AzApplicationGatewayRedirectConfiguration
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

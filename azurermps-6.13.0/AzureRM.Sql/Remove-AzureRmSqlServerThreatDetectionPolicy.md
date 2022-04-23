@@ -10,8 +10,8 @@ ms.openlocfilehash: 5791d60d6415c71f7e4fa5c52226cd8be7ffbb4b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213489"
 ---
 # Remove-AzureRmSqlServerThreatDetectionPolicy
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ThreatDetection.Model.ServerThreatDetectionPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

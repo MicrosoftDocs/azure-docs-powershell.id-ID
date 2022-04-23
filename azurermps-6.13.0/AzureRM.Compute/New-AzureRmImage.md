@@ -9,8 +9,8 @@ ms.openlocfilehash: e92d167b235c84f5f5e3a6aaa79c4af745158b72
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389188"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143220185"
 ---
 # New-AzureRmImage
 
@@ -172,6 +172,6 @@ Parameter: Gambar (ByValue)
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

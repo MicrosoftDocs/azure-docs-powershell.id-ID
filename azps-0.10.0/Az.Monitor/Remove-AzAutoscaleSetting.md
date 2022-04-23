@@ -10,8 +10,8 @@ ms.openlocfilehash: 1ae571eaaa401bc7d71ba93c5dadf93eaefc89ae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493361"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143206775"
 ---
 # Remove-AzAutoscaleSetting
 
@@ -120,7 +120,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 999a56358f764909dcf6cbad2d3816c979d34bbb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142494863"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143206745"
 ---
 # Remove-AzActivityLogAlert
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

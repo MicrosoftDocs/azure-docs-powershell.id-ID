@@ -9,8 +9,8 @@ ms.openlocfilehash: 4aff82a2621a462f0af14fe2dce620f297011874
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141824411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143219659"
 ---
 # Set-AzureRmDataLakeStoreItemExpiry
 
@@ -209,7 +209,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreItem
 
-## CATATAN
+## NOTES
 Alias: Set-AdlStoreItemExpiry
 
 ## RELATED LINKS

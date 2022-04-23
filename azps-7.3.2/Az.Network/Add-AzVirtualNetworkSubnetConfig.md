@@ -10,8 +10,8 @@ ms.openlocfilehash: fa0a6d696422e0a0bdbab9a0cfdc388952b08752
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787208"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143180081"
 ---
 # Add-AzVirtualNetworkSubnetConfig
 
@@ -332,7 +332,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
