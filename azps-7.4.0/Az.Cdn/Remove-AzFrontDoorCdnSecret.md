@@ -9,8 +9,8 @@ ms.openlocfilehash: 02fd8c4ce05de1b66c072698747b466be1e78a6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992603"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143128709"
 ---
 # Remove-AzFrontDoorCdnSecret
 
@@ -198,6 +198,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: b9b7d422d8538e1b6b22e990180211c9973b449a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142078429"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143144333"
 ---
 # Get-AzReservation
 
@@ -153,6 +153,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 0168b1fc9b2235d0dca70b37f18db0709e0a7c6c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178627"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143122985"
 ---
 # New-AzEdgeOrderShippingAddressObject
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.ShippingAddress
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 9730807b5b68325a783efbca23f4344f16ba856e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419499"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143116055"
 ---
 # New-AzSynapseLinkedServiceEncryptedCredential
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 8df8d91b8c22f3222a9c853c6a44a9ce275a8371
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426454"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143128331"
 ---
 # Disable-AzVMDiskEncryption
 
@@ -259,7 +259,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
