@@ -10,8 +10,8 @@ ms.openlocfilehash: 916418650c7117c8eefc769e3bcfd5b5b3e2ecf0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141788846"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143078201"
 ---
 # Set-AzDataLakeStoreAccount
 
@@ -229,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.PSDataLakeStoreAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

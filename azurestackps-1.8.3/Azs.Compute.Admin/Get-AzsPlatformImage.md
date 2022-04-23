@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 403f980af6b00272ca67b3ba180808ba8c82ebce
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577063"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143101691"
 ---
 # Get-AzsPlatformImage
 
 ## SYNOPSIS
-Mengembalikan gambar mesin virtual yang dimuat ke dalam tempat penyimpanan gambar platform.
+Mengembalikan gambar mesin virtual yang dimuat ke dalam penyimpanan gambar platform.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsPlatformImage [-Publisher <String>] [-Offer <String>] [-Sku <String>] [-L
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsPlatformImage -Publisher <String> -Offer <String> -Sku <String> -Version <String> [-Location <String>]
  [<CommonParameters>]
@@ -44,7 +44,7 @@ Mengembalikan gambar platform.
 Get-AzsPlatformImage
 ```
 
-Mengembalikan gambar mesin virtual yang dimuat ke dalam tempat penyimpanan gambar platform di lokasi lokal.
+Mengembalikan gambar mesin virtual yang dimuat ke dalam penyimpanan gambar platform di lokasi lokal.
 
 ### -------------------------- CONTOH 2 --------------------------
 ```
@@ -70,7 +70,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Offer
+### -Penawaran
 Nama penawaran.
 
 ```yaml
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### PlatformImageObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

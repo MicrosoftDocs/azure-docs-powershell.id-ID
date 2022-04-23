@@ -10,8 +10,8 @@ ms.openlocfilehash: b54a1d3181baaee830413098508ca7c7b5fd29fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142375667"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143078237"
 ---
 # Restore-AzDataLakeStoreDeletedItem
 
@@ -209,7 +209,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Tidak
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

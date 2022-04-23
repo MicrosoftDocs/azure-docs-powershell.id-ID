@@ -9,8 +9,8 @@ ms.openlocfilehash: a58da1ecdb110bff5b7528efe80d0dd929515536
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143065547"
 ---
 # Revoke-AzDiskAccess
 
@@ -139,6 +139,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: b96e01cc98d4e93234a4c4217d2dae41bad4c73e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142265828"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143083889"
 ---
 # Get-AzSqlElasticPoolDatabase
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e49497f8784e9686c84cb75dde4b8fd4297578d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141818002"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106893"
 ---
 # Remove-AzureRmWcfRelay
 
@@ -145,6 +145,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### System.Void
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
