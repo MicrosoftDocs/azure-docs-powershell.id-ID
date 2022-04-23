@@ -10,8 +10,8 @@ ms.openlocfilehash: 0360bcdb766de681ab6f54682007076e18266051
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358957"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109629"
 ---
 # Remove-AzureRmVMAccessExtension
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

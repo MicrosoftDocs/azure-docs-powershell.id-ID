@@ -10,8 +10,8 @@ ms.openlocfilehash: 2e0bd065dc6b01f2539444bb42a137e5fc3a2629
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431979"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143119601"
 ---
 # Set-AzDiagnosticSetting
 
@@ -481,7 +481,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSServiceDiagnosticSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 54ec2a7809aff897b05bdfbb530a62b3eea54ffb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141788972"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143136881"
 ---
 # Submit-AzDataLakeAnalyticsJob
 
@@ -72,7 +72,7 @@ Submit-AzDataLakeAnalyticsJob [-Account] <String> [-Name] <String> [-Script] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Submit-AzDataLakeAnalyticsJob** mengirimkan pekerjaan Azure Data Lake Analytics.
+Cmdlet **Submit-AzDataLakeAnalyticsJob** mengirimkan pekerjaan Data Lake Analytics Azure.
 
 ## EXAMPLES
 
@@ -92,7 +92,7 @@ $parameters["StartDateTime"] = (Get-Date).AddDays(-14)
 Submit-AzDataLakeAnalyticsJob -Account "ContosoAdlAccount" -Name "New Job" -ScriptPath $LocalScriptPath -AnalyticsUnits 32 -ScriptParameter $parameters
 ```
 
-Parameter skrip U-SQL telah didahului di atas konten skrip utama, misalnya: STRING DECLARE @Department = "Sales"; DECLARE @NumRecords int = 1000; DECLARE @StartDateTime DateTime = datetime baru(2017, 12, 6, 0, 0, 0, 0);
+Parameter skrip U-SQL telah didahului di atas konten skrip utama, misalnya: string DECLARE @Department = "Sales"; DECLARE @NumRecords int = 1000; DECLARE @StartDateTime DateTime = datetime baru(2017, 12, 6, 0, 0, 0, 0);
 
 ## PARAMETERS
 
@@ -376,7 +376,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.JobInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

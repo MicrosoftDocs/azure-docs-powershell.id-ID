@@ -7,8 +7,8 @@ ms.openlocfilehash: 5987e92e281dd892ebc56c0a18ca59fc99cfc82d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142336346"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114055"
 ---
 # Remove-AzureRmDisk
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

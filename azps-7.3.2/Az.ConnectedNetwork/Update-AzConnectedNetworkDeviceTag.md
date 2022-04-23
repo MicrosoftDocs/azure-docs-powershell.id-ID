@@ -9,8 +9,8 @@ ms.openlocfilehash: 55197249e903ab2d092d1282218c9c04beec6ef4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142114451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143137097"
 ---
 # Update-AzConnectedNetworkDeviceTag
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.IDevice
 
-## CATATAN
+## NOTES
 
 ALIAS
 

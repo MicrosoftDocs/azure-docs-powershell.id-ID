@@ -10,8 +10,8 @@ ms.openlocfilehash: 500d53810050dd539b57d2182a3b1aae9b4f358a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142496897"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099819"
 ---
 # Remove-AzApplicationGatewayFrontendIPConfig
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

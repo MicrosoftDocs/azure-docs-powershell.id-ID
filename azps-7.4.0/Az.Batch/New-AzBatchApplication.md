@@ -10,8 +10,8 @@ ms.openlocfilehash: e496b8590d188c7b56f12eb3c24825e773108fdc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143066879"
 ---
 # New-AzBatchApplication
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSAplikasi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

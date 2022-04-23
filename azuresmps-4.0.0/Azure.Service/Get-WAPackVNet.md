@@ -7,8 +7,8 @@ ms.openlocfilehash: b4a368e1c3ca04dc83ee4ffcae0d10e62efa201f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104427"
 ---
 # Get-WAPackVNet
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

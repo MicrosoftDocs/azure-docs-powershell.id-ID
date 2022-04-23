@@ -10,13 +10,13 @@ ms.openlocfilehash: 96bcc4c0b8be1f3899a0c3739be26d6d3e8b78e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142086513"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093099"
 ---
 # Suspend-AzDataFactoryPipeline
 
 ## SYNOPSIS
-Menangguhkan saluran di Azure Data Factory.
+Menangguhkan pipa di Azure Data Factory.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/suspend-azdatafactorypipeline) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Suspend-AzDataFactoryPipeline [-Name] <String> [-DataFactory] <PSDataFactory>
 ```
 
 ## DESCRIPTION
-**Cmdlet Suspend-AzDataFactoryPipeline** menangguhkan saluran di Azure Data Factory.
+**Cmdlet Suspend-AzDataFactoryPipeline** menunda saluran dalam Azure Data Factory.
 Anda bisa melanjutkan saluran dengan menggunakan cmdlet Resume-AzDataFactoryPipeline.
 
 ## EXAMPLES
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

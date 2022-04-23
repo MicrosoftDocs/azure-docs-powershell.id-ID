@@ -9,8 +9,8 @@ ms.openlocfilehash: 0f87b5052a3004af092f37d963eefe91f958f987
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177337"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143119907"
 ---
 # New-AzScheduledQueryRuleLogMetricTrigger
 
@@ -128,6 +128,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSScheduledQueryRuleLogMetricTrigger
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

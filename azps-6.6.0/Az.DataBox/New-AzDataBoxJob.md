@@ -9,8 +9,8 @@ ms.openlocfilehash: f59cd17ca6e4802a7aec7c035f00031087b6cbd7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141959235"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093699"
 ---
 # New-AzDataBoxJob
 
@@ -507,7 +507,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.IJobResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

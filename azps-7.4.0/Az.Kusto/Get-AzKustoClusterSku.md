@@ -9,8 +9,8 @@ ms.openlocfilehash: b1dafd7ca5819842752562669823ab9d0c8160a8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996935"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143120753"
 ---
 # Get-AzKustoClusterSku
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ISkuDescription
 
-## CATATAN
+## NOTES
 
 ALIAS
 

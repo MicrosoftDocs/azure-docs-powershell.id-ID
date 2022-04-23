@@ -9,8 +9,8 @@ ms.openlocfilehash: c67c062c45cb3f98ffffa586a9be5aa8b1e13b7b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142234369"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093663"
 ---
 # New-AzDataBoxKeyEncryptionKeyObject
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.KeyEncryptionKey
 
-## CATATAN
+## NOTES
 
 ALIAS
 

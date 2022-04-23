@@ -9,8 +9,8 @@ ms.openlocfilehash: a8ec57c02b6cca8cf75f8fc2d0ae173d6c7afd88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141949083"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143143001"
 ---
 # Get-AzSentinelIncidentComment
 
@@ -162,6 +162,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.IncidentComments.PSSentinelIncidentComment
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

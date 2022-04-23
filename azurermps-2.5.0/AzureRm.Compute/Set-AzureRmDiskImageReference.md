@@ -7,8 +7,8 @@ ms.openlocfilehash: cd0a66d8f8d777df9a8ebc3791643234f0d15fb0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147715"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143113932"
 ---
 # Set-AzureRmDiskImageReference
 
@@ -145,7 +145,7 @@ System.String System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Cultur
 
 ### Microsoft.Azure.Management.Compute.Models.Disk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 592c7cf871e20c96bf84208592d6e3f5b7ef7282
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421926"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143118485"
 ---
 # Remove-AzRouteTable
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

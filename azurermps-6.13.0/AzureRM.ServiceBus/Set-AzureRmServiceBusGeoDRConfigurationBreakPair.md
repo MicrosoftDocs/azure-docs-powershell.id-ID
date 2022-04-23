@@ -9,8 +9,8 @@ ms.openlocfilehash: a12f22260ce8ee5412cd17ddfa420a7d23f82008
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142281054"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106299"
 ---
 # Set-AzureRmServiceBusGeoDRConfigurationBreakPair
 
@@ -205,6 +205,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

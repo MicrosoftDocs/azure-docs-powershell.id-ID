@@ -9,8 +9,8 @@ ms.openlocfilehash: acaebd16ddc395a6f7be94537f107b6b946cafec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141907707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143086931"
 ---
 # Enable-AzRecoveryServicesBackupAutoProtection
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

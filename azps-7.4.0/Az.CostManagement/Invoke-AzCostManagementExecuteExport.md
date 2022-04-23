@@ -9,8 +9,8 @@ ms.openlocfilehash: 2b3cf5c271bab883ff5a141445e08389fd565a44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433801"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125919"
 ---
 # Invoke-AzCostManagementExecuteExport
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

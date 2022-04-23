@@ -10,8 +10,8 @@ ms.openlocfilehash: f4295dc5cc8bc6dde06df8e0a957a264d4a86146
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179354"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125271"
 ---
 # New-AzDataLakeAnalyticsCatalogCredential
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.USqlCredential
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

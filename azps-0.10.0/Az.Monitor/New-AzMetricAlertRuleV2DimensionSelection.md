@@ -9,8 +9,8 @@ ms.openlocfilehash: 33e1b8fe5ae88666ffacf8849b9e2700f7066151
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493585"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099909"
 ---
 # New-AzMetricAlertRuleV2DimensionSelection
 
@@ -116,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSMetricDimension
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

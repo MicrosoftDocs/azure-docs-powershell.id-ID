@@ -9,8 +9,8 @@ ms.openlocfilehash: 1cd749dccf70d1d2a22e6426bd8aed26eff84bee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142258783"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143137241"
 ---
 # Update-AzCapacityReservation
 
@@ -251,6 +251,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSCapacityReservation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

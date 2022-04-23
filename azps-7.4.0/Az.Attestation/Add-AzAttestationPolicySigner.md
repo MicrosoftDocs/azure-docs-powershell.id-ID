@@ -9,8 +9,8 @@ ms.openlocfilehash: fa21d0e0e04187b13c022244bbd0488c6227768c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142435231"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143067257"
 ---
 # Add-AzAttestationPolicySigner
 
@@ -164,6 +164,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Attestation.Models.PSPolicySigners
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

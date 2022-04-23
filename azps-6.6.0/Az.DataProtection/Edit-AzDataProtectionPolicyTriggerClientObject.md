@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
 ms.openlocfilehash: 256ea5a4fd42639a9c3d7db2d9f372149a99220f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139941055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143092385"
 ---
 # Edit-AzDataProtectionPolicyTriggerClientObject
 
 ## SYNOPSIS
-Pembaruan Jadwal pencadangan kebijakan pencadangan yang sudah ada.
+Memperbarui jadwal Pencadangan dari kebijakan pencadangan yang ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicytriggerclientobject) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicytriggerclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Edit-AzDataProtectionPolicyTriggerClientObject -Policy <IBackupPolicy> -Schedule
 ```
 
 ## DESCRIPTION
-Pembaruan Jadwal pencadangan kebijakan pencadangan yang sudah ada.
+Memperbarui jadwal Pencadangan dari kebijakan pencadangan yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan jadwal Harian ke aturan Cadangan Azure.
+### Contoh 1: Tambahkan jadwal Harian ke aturan Azure Backup.
 ```powershell
 PS C:\> $schedule = New-AzDataProtectionPolicyTriggerScheduleClientObject -ScheduleDays (get-date) -IntervalType Daily -IntervalCount 1
 PS C:\> Edit-AzDataProtectionPolicyTriggerClientObject -Policy $pol -Schedule $schedule
@@ -42,13 +42,13 @@ DatasourceType            ObjectType
 {Microsoft.Compute/disks} BackupPolicy
 ```
 
-Perintah ini memperbarui jadwal pencadangan kebijakan yang diberikan untuk pencadangan harian.
+Perintah ini memperbarui jadwal pencadangan kebijakan yang diberikan ke pencadangan harian.
 
 ## PARAMETERS
 
 ### -Kebijakan
-Objek Kebijakan Cadangan.
-Untuk membuat, lihat bagian CATATAN untuk properti KEBIJAKAN dan membuat tabel hash.
+Objek Kebijakan Pencadangan.
+Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Schedule
-Jadwalkan untuk dikaitkan ke kebijakan pencadangan.
+### -Jadwal
+Jadwalkan untuk dikaitkan dengan kebijakan pencadangan.
 
 ```yaml
 Type: System.String[]
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -86,7 +86,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -96,24 +96,24 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan.
-  - `DatasourceType <String[]>`: Tipe sumber data untuk manajemen pencadangan
+  - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap tipe cadangan i.e Penuh/Penambahan/Log dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
-    - `DataStoreObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
-    - `DataStoreType <DataStoreTypes>`: tipe penyimpanan data; Operasional/Vault/Arsip
-    - `TriggerObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
+    - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
+    - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
+    - `TriggerObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
     - `Lifecycle <ISourceLifeCycle[]>`: 
-      - `DeleteAfterDuration <String>`: Durasi penghapusan setelah jangka waktu tertentu
-      - `DeleteAfterObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
-      - `SourceDataStoreObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
-      - `SourceDataStoreType <DataStoreTypes>`: tipe penyimpanan data; Operasional/Vault/Arsip
+      - `DeleteAfterDuration <String>`: Durasi penghapusan setelah rentang waktu yang diberikan
+      - `DeleteAfterObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
+      - `SourceDataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
+      - `SourceDataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
       - `[TargetDataStoreCopySetting <ITargetCopySetting[]>]`: 
-        - `CopyAfterObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
-        - `DataStoreObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
-        - `DataStoreType <DataStoreTypes>`: tipe penyimpanan data; Operasional/Vault/Arsip
-    - `[BackupParameterObjectType <String>]`: Tipe objek spesifik - digunakan untuk deserialisasi
+        - `CopyAfterObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
+        - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
+        - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
+    - `[BackupParameterObjectType <String>]`: Jenis objek tertentu - digunakan untuk deserialisasi
     - `[IsDefault <Boolean?>]`: 
 
 ## RELATED LINKS

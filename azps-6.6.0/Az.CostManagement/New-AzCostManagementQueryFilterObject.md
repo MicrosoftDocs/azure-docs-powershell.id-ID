@@ -9,8 +9,8 @@ ms.openlocfilehash: f195da1db126c623f1f57b2a213f0e2bd316293f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141868460"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093861"
 ---
 # New-AzCostManagementQueryFilterObject
 
@@ -140,7 +140,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.QueryFilter
 
-## CATATAN
+## NOTES
 
 ALIAS
 

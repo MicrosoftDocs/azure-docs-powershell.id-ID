@@ -9,8 +9,8 @@ ms.openlocfilehash: a249cfd7a0f0fa3748d15cb1dd39c6638c88c03d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143118089"
 ---
 # New-AzPurviewAzurePostgreSqlScanRulesetObject
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzurePostgreSqlScanRuleset
 
-## CATATAN
+## NOTES
 
 ALIAS
 
