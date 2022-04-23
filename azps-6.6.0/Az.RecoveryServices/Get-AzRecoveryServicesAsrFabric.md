@@ -9,13 +9,13 @@ ms.openlocfilehash: 07cacd288016ac01504dd32257b3745f0843cbdf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141797882"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143252783"
 ---
 # Get-AzRecoveryServicesAsrFabric
 
 ## SYNOPSIS
-Dapatkan detail Azure Site Recovery Fabric.
+Dapatkan detail Dari Azure Site Recovery Fabric.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrfabric) untuk informasi terbaru.
@@ -39,7 +39,7 @@ Get-AzRecoveryServicesAsrFabric -FriendlyName <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrFabric** mendapatkan properti Azure Site Recovery Fabric tertentu atau semua Azure Site Recovery Fabrics dalam kubah Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrFabric** mendapatkan properti Dari Kain Azure Site Recovery yang ditentukan atau semua Kain Azure Site Recovery dalam kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Cmdlet **Get-AzRecoveryServicesAsrFabric** mendapatkan properti Azure Site Recov
 PS C:\> $fabrics = Get-AzRecoveryServicesAsrFabric
 ```
 
-Mengembalikan semua kain Site Recovery Azure dalam kubah.
+Mengembalikan semua kain Azure Site Recovery dalam kubah.
 
 ### Contoh 2
 ```
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

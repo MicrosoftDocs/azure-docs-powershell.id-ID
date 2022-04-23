@@ -9,8 +9,8 @@ ms.openlocfilehash: eed44121f4d942b9e0bb66bd10c3167e22962f48
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171579"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143306423"
 ---
 # Set-AzSqlInstance
 
@@ -729,6 +729,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

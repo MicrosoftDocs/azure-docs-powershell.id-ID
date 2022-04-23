@@ -10,8 +10,8 @@ ms.openlocfilehash: fbd5bbc26a34d187b2f71d639b09fad6a583aa96
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165039"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143306477"
 ---
 # Set-AzSqlElasticPoolRecommendedActionState
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlElasticPoolRecommendedActionModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, elastispool, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS
