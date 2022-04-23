@@ -10,13 +10,13 @@ ms.openlocfilehash: 80bc75e8029db9aa4cac9f1e0abd53ad17c9fad1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141969896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049636"
 ---
 # Import-AzureRmApiManagementHostnameCertificate
 
 ## SYNOPSIS
-Mengimpor sertifikat dalam format PFX untuk Layanan API Management.
+Mengimpor sertifikat dalam format PFX untuk Layanan Manajemen API.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,12 +29,12 @@ Import-AzureRmApiManagementHostnameCertificate -ResourceGroupName <String> -Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzureRmApiManagementHostnameCertificate** mengimpor sertifikat dalam format PFX untuk Layanan API Management.
+Cmdlet **Impor-AzureRmApiManagementHostnameCertificate** mengimpor sertifikat dalam format PFX untuk Layanan Manajemen API.
 Sertifikat ini akan digunakan untuk konfigurasi nama host kustom.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor sertifikat nama host API Management
+### Contoh 1: Mengimpor sertifikat nama host Manajemen API
 ```powershell
 PS C:\>Import-AzureRmApiManagementHostnameCertificate -Name "ContosoApi" -ResourceGroupName Contoso -HostnameType "Proxy" -PfxPath "C:\proxycert.pfx" -PfxPassword "CertSecret"
 ```
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyebaran API Management yang diimpor cmdlet ini.
+Menentukan nama penyebaran Manajemen API yang diimpor cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana penyebaran API Management ada.
+Menentukan nama grup sumber daya di mana penyebaran Manajemen API ada.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementHostnameCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

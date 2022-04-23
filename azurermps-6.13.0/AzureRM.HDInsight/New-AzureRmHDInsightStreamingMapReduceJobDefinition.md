@@ -10,8 +10,8 @@ ms.openlocfilehash: 22ddeeffd696de260e13c1c817afedfabe1887a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823712"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049023"
 ---
 # New-AzureRmHDInsightStreamingMapReduceJobDefinition
 
@@ -233,7 +233,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightStreamingMapReduceJobDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

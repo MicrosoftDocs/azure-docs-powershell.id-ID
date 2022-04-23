@@ -7,8 +7,8 @@ ms.openlocfilehash: 8c6479f9358322ae76eeb2fdf3cb9f2bb922e462
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781959"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053829"
 ---
 # Set-AzureRmDnsRecordSet
 
@@ -146,7 +146,7 @@ Anda dapat mengirimkan objek **RecordSet** ke cmdlet ini.
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
 Cmdlet ini mengembalikan objek yang mewakili objek **RecordSet** yang diperbarui.
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 

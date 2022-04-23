@@ -7,8 +7,8 @@ ms.openlocfilehash: c12c5532a85bacb5cd854f4f2ad87ad0d8b68178
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147216"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053847"
 ---
 # Remove-AzureRmDnsZone
 
@@ -203,7 +203,7 @@ Anda dapat menyalurkan objek **DnsZone** ke cmdlet ini.
 ### Tidak
 Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 Karena dampak yang berpotensi tinggi untuk menghapus zona DNS, secara default, cmdlet ini meminta konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai selain Tidak Ada.
 
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.

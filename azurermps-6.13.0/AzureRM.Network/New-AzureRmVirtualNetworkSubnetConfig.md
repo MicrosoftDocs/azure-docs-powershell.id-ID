@@ -10,8 +10,8 @@ ms.openlocfilehash: 37202e0e852f0171ce48c2c3d61d13151b05148c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138190"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047390"
 ---
 # New-AzureRmVirtualNetworkSubnetConfig
 
@@ -70,7 +70,7 @@ New-AzureRmVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResource
     -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzureRmVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzureRmVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan grup keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan grup keamanan jaringan yang sama.
+Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzureRmVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzureRmVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan kelompok keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan kelompok keamanan jaringan yang sama.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi subnet yang akan dibuat.
 
 ```yaml
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -239,13 +239,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSServiceEndpointPolicy, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSDelegation, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSDelegation, Microsoft.Azure.Commands.Network, Version=6.7.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSSubnet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

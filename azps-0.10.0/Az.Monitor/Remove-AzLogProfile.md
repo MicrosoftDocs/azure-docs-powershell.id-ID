@@ -10,8 +10,8 @@ ms.openlocfilehash: c598b81990bd24d5808c48aa9511ada2dee2852e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141917464"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143035721"
 ---
 # Remove-AzLogProfile
 
@@ -119,7 +119,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

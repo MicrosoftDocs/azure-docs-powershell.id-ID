@@ -7,8 +7,8 @@ ms.openlocfilehash: 093d3be147b19a0f3bf5ec6bfbe13affad1b56b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921471"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043659"
 ---
 # Get-AzureStorSimpleFailoverVolumeContainers
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### IList\<DataContainerGroup\>
 Cmdlet ini mengembalikan daftar grup **VolumeContainer** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

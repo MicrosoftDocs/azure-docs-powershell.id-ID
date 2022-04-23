@@ -10,8 +10,8 @@ ms.openlocfilehash: 38f510602259ca799c6df947b9d74984dff178ba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141965229"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143037377"
 ---
 # Add-AzVmssAdditionalUnattendContent
 
@@ -182,7 +182,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

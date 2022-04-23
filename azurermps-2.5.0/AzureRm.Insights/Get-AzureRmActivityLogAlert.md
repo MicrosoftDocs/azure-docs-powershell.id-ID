@@ -8,13 +8,13 @@ ms.openlocfilehash: 5a58e65895f08d5110fc47bca8c42e9fe8adbdcf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147211"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053693"
 ---
 # Get-AzureRmActivityLogAlert
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
+Mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,18 +33,18 @@ Get-AzureRmActivityLogAlert [[-ResourceGroupName] <String>] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmActivityLogAlert** mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
+Cmdlet **Get-AzureRmActivityLogAlert** mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemberitahuan log aktivitas menurut ID langganan
+### Contoh 1: Mendapatkan pemberitahuan log aktivitas berdasarkan ID langganan
 ```
 PS C:\>Get-AzureRmActivityLogAlert
 ```
 
 Perintah ini mencantumkan semua pemberitahuan log aktivitas untuk langganan saat ini.
 
-### Contoh 2: Dapatkan pemberitahuan log aktivitas untuk grup sumber daya tertentu
+### Contoh 2: Mendapatkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan
 ```
 PS C:\>Get-AzureRmActivityLogAlert -ResourceGroupName "Default-activityLogAlerts"
 ```
@@ -75,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemberitahuan log aktivitas.
 
 ```yaml
@@ -91,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya peringatan ada.
-Jika Nama bukan nol atau kosong, parameter ini harus berisi dan string yang tidak kosong.
+Nama grup sumber daya tempat sumber daya pemberitahuan berada.
+Jika Nama tidak null atau kosong, parameter ini harus berisi dan string yang tidak kosong.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActivityLogAlertResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -137,8 +137,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-[Hapus-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
+[Remove-AzureRmActivityLogAlert](./Remove-AzureRmActivityLogAlert.md)
 
-[AzureRmActionGroup baru](./New-AzureRmActionGroup.md)
+[New-AzureRmActionGroup](./New-AzureRmActionGroup.md)
 
 

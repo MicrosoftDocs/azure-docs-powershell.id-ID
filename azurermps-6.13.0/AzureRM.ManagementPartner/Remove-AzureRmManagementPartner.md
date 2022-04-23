@@ -9,8 +9,8 @@ ms.openlocfilehash: 3bb1b54abf947d5fc2a05538cc31ce53fb794ab7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142063241"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048348"
 ---
 # Remove-AzureRmManagementPartner
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

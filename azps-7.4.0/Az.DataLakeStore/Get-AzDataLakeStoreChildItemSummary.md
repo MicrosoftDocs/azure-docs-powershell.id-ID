@@ -9,8 +9,8 @@ ms.openlocfilehash: 494b981470922ab9ab01876c65db83361cdfde0d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992526"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143063945"
 ---
 # Get-AzDataLakeStoreChildItemSummary
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreChildItemSummary
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

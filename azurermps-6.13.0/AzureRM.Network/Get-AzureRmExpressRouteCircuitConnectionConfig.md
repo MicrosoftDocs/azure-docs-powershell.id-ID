@@ -10,8 +10,8 @@ ms.openlocfilehash: 78cff1e0b09841adc761616af2dd316e0925b9e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141821594"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048033"
 ---
 # Get-AzureRmExpressRouteCircuitConnectionConfig
 
@@ -102,7 +102,7 @@ Parameter: ExpressRouteCircuit (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

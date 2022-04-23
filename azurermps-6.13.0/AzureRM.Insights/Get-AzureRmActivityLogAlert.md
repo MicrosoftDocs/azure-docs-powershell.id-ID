@@ -10,8 +10,8 @@ ms.openlocfilehash: 875b261068f1431b33c99a407f5ac9dcb2f7e344
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142387338"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048907"
 ---
 # Get-AzureRmActivityLogAlert
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActivityLogAlertResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

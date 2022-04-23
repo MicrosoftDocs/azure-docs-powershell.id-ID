@@ -10,8 +10,8 @@ ms.openlocfilehash: 7091497a1a385a01a36a12ab65c416f76ea9b30b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142494575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143014913"
 ---
 # Get-AzVirtualNetworkSubnetConfig
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSSubnet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

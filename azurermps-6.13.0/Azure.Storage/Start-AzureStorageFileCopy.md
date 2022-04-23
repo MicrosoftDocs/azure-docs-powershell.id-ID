@@ -10,8 +10,8 @@ ms.openlocfilehash: c5e071ddb5316f223260d3e6f239df4e75612332
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049896"
 ---
 # Start-AzureStorageFileCopy
 
@@ -473,7 +473,7 @@ Parameter: SrcFile (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

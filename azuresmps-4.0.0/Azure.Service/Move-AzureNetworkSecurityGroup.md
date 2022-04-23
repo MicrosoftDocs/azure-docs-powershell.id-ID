@@ -7,8 +7,8 @@ ms.openlocfilehash: f5c34723c38aa7ba01281c36374bf0ec41fc793d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335700"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043011"
 ---
 # Move-AzureNetworkSecurityGroup
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -8,8 +8,8 @@ ms.openlocfilehash: 2f5d73cd06d975d6458776dee4242b392b5c160b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781567"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053235"
 ---
 # Add-AzureRmVpnClientRootCertificate
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

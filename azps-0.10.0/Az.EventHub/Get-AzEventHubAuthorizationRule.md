@@ -9,8 +9,8 @@ ms.openlocfilehash: 07cc93cb75c7e6eab57fa03e663de700ee676432
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141874616"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143036189"
 ---
 # Get-AzEventHubAuthorizationRule
 
@@ -190,6 +190,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 952a342c7a7f63d0dd4a521c19b76802ec7a761e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142279249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044181"
 ---
 # Get-AzureCertificate
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### CertificateContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

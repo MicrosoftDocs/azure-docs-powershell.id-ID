@@ -10,8 +10,8 @@ ms.openlocfilehash: 69619b9f5ddd54e0d307a096cc967c307d1f36d0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778845"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143048608"
 ---
 # Set-AzureKeyVaultCertificateIssuer
 
@@ -243,7 +243,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificatePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

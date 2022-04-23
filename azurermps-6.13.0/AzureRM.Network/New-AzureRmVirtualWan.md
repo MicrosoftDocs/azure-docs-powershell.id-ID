@@ -9,8 +9,8 @@ ms.openlocfilehash: 8d514ae4f01709d499c7685958cf13671e9b0c13
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385871"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047331"
 ---
 # New-AzureRmVirtualWan
 
@@ -47,12 +47,12 @@ Type                       : Microsoft.Network/virtualWans
 ProvisioningState          : Succeeded
 ```
 
-Hal di atas akan membuat grup sumber daya "testRG" di kawasan "AS Barat" dan Azure Virtual WAN dengan lalu lintas cabang ke cabang yang diizinkan dalam grup sumber daya tersebut di Azure.
+Hal di atas akan membuat grup sumber daya "testRG" di wilayah "US Barat" dan Azure Virtual WAN dengan lalu lintas cabang ke cabang yang diizinkan dalam grup sumber daya tersebut di Azure.
 
 ## PARAMETERS
 
 ### -AllowBranchToBranchTraffic
-Izinkan cabang untuk cabang lalu lintas untuk VirtualWan.
+Izinkan lalu lintas cabang ke cabang untuk VirtualWan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowVnetToVnetTraffic
-Izinkan vnet untuk vnet lalu lintas untuk VirtualWan.
+Izinkan vnet ke lalu lintas vnet untuk VirtualWan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -171,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualWan
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

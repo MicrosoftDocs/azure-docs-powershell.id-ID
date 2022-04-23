@@ -7,8 +7,8 @@ ms.openlocfilehash: e7104db5c41780ec2e6b41db72ca26599def7767
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142313026"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042563"
 ---
 # New-AzureStorSimpleVirtualDevice
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Cmdlet ini mengembalikan ID pekerjaan yang membuat perangkat virtual.
 Anda dapat menggunakan ID ini untuk melacak kemajuan menggunakan cmdlet Get-AzureStorSimpleJob.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

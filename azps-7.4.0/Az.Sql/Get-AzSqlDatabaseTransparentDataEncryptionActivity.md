@@ -10,8 +10,8 @@ ms.openlocfilehash: 1e6c67ff1062254ed95fc5e522a239ee64e9b3ea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143058617"
 ---
 # Get-AzSqlDatabaseTransparentDataEncryptionActivity
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureSqlDatabaseTransparentDataEncryptionActivityModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

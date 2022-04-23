@@ -8,13 +8,13 @@ ms.openlocfilehash: 5f816be5d3c024e43074d6a75c5ba79df4b2fdb3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104284"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054189"
 ---
 # Remove-AzureRmVM
 
 ## SYNOPSIS
-Menghapus mesin virtual dari Azure.
+Menghapus komputer virtual dari Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,21 +33,21 @@ Remove-AzureRmVM [-Name] <String> [-Force] [-Id] <String> [-AsJob] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVM** menghapus mesin virtual dari Azure.
+Cmdlet **Remove-AzureRmVM** menghapus komputer virtual dari Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus mesin virtual
+### Contoh 1: Menghapus komputer virtual
 ```
 PS C:\> Remove-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 ```
 
-Perintah ini menghapus mesin virtual bernama VirtualMachine07 dalam grup sumber daya ResourceGroup11.
+Perintah ini menghapus komputer virtual bernama VirtualMachine07 dalam grup sumber daya ResourceGroup11.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: SwitchParameter
@@ -76,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -106,7 +106,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -136,8 +136,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 Cmdlet tidak dijalankan.
 
@@ -169,31 +169,31 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Compute.Models.PSComputeLongRunningOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[AzureRmVM Baru](./New-AzureRmVM.md)
+[New-AzureRmVM](./New-AzureRmVM.md)
 
-[Mulai ulang-AzureRmVM](./Restart-AzureRmVM.md)
+[Restart-AzureRmVM](./Restart-AzureRmVM.md)
 
 [Start-AzureRmVM](./Start-AzureRmVM.md)
 
 [Stop-AzureRmVM](./Stop-AzureRmVM.md)
 
-[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
+[Update-AzureRmVM](./Update-AzureRmVM.md)
 
 

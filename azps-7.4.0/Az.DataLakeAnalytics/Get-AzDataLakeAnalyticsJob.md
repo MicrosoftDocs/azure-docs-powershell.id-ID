@@ -10,8 +10,8 @@ ms.openlocfilehash: 837438b701b00f827c47184725eaa46b742ae5f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992531"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143064161"
 ---
 # Get-AzDataLakeAnalyticsJob
 
@@ -307,7 +307,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.JobInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

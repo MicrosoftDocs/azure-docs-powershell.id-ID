@@ -9,8 +9,8 @@ ms.openlocfilehash: aee475f70a60d03298d38190910fdd7c5f81bb39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179544"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143064503"
 ---
 # New-AzDataBoxTransferConfigurationObject
 
@@ -97,7 +97,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.TransferConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

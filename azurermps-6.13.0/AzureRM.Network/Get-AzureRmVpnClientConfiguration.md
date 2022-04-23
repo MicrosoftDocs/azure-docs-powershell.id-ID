@@ -9,8 +9,8 @@ ms.openlocfilehash: 9ab4af1eefa6214d43eca84f65053eeecb12d912
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142355210"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047754"
 ---
 # Get-AzureRmVpnClientConfiguration
 
@@ -128,6 +128,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

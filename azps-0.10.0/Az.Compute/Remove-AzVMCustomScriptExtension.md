@@ -10,8 +10,8 @@ ms.openlocfilehash: 8bead12111148d193e0e5dfe880ed3b28c6dcd01
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142131785"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143036909"
 ---
 # Remove-AzVMCustomScriptExtension
 
@@ -151,7 +151,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

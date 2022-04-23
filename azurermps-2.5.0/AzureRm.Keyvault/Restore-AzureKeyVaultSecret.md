@@ -8,8 +8,8 @@ ms.openlocfilehash: b8ce1dc13204cfeeb63f5b7eb45f57e2117da511
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141889236"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143053467"
 ---
 # Restore-AzureKeyVaultSecret
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.Secret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

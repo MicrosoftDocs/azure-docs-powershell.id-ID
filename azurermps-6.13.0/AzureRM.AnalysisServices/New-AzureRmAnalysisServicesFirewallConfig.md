@@ -9,8 +9,8 @@ ms.openlocfilehash: 2369720eb3a2df1e1c65df727cb02c1464ddc218
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142360434"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143049869"
 ---
 # New-AzureRmAnalysisServicesFirewallConfig
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.PsAzureAnalysisServicesFirewallConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,16 +10,16 @@ ms.openlocfilehash: cb8fc88657c7d7eee324a752edf1005d9220a7f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141958281"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143030141"
 ---
 # Add-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
-Menambahkan penyedia identitas tepercaya ke akun Data Lake Store tertentu.
+Menambahkan IdP tepercaya ke akun Data Lake Store yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestoretrustedidprovider) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestoretrustedidprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Add-AzDataLakeStoreTrustedIdProvider [-Account] <String> [-Name] <String> [-Prov
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzDataLakeStoreTrustedIdProvider** menambahkan penyedia identitas tepercaya ke akun Data Lake Store tertentu.
+Cmdlet **Add-AzDataLakeStoreTrustedIdProvider** menambahkan penyedia identitas tepercaya ke akun Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan penyedia identitas tepercaya
+### Contoh 1: Menambahkan IdP tepercaya
 ```
 PS C:\> Add-AzDataLakeStoreTrustedIdProvider -AccountName "ContosoADL" -Name MyProvider -ProviderEndpoint "https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150"
 ```
@@ -44,7 +44,7 @@ Menambahkan penyedia "MyProvider" ke akun "ContosoADL" dengan titik akhir penyed
 ## PARAMETERS
 
 ### -Akun
-Nama akun Data Lake Store untuk menambahkan penyedia identitas tepercaya tertentu ke dalamnya.
+Nama akun Data Lake Store untuk menambahkan IdP tepercaya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -73,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama penyedia identitas tepercaya untuk ditambahkan
+### -Name
+Nama IdP tepercaya yang akan ditambahkan
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana akun untuk menambahkan penyedia identitas tepercaya berada.
+Nama grup sumber daya tempat akun untuk menambahkan IdP tepercaya berada.
 
 ```yaml
 Type: System.String
@@ -118,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,6 +157,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreTrustedIdProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

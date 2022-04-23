@@ -10,8 +10,8 @@ ms.openlocfilehash: 9cc873146cacb6cc370df0589f18b8c2ff929d33
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142086153"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029934"
 ---
 # Remove-AzDataLakeStoreItemAclEntry
 
@@ -19,7 +19,7 @@ ms.locfileid: "142086153"
 Menghapus entri dari ACL file atau folder di Data Lake Store.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreitemaclentry) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,24 +49,24 @@ PS C:\>Remove-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -Ace
 
 Perintah ini menghapus pengguna ACE untuk Patti Fuller dari akun ContosoADL.
 
-### Contoh 2: Menghapus entri pengguna secara rekurtif
+### Contoh 2: Menghapus entri pengguna secara rekursif
 ```
 PS C:\>Remove-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -AceType User -Id (Get-AzADUser -Mail "PattiFuller@contoso.com").ObjectId -Recurse -Concurrency 128
 ```
 
-### Contoh 3: Menghapus izin untuk ACE secara rekurtif menggunakan objek Acl
+### Contoh 3: Menghapus izin untuk ACE secara rekursif menggunakan objek Acl
 ```
 PS C:\>$fullAcl="user:enterpriseObjectID:rwx,default:user:enterpriseObjectID:rwx"
 PS C:\>$newFullAcl = $fullAcl.Split(",")
 PS C:\>Remove-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -Acl $newFullAcl -Recurse -Concurrency 128 -ShowProgress -Verbose
 ```
 
-Perintah ini menghapus pengguna ACE untuk Patti Fuller dari akar dan secara rekursif dari semua subdirektori dan file untuk akun ContosoADL.
+Perintah ini menghapus pengguna ACE untuk Patti Fuller dari root dan secara rekursif dari semua subdirektori dan file untuk akun ContosoADL.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -81,12 +81,12 @@ Accept wildcard characters: False
 ```
 
 ### -AceType
-Menentukan tipe ACE untuk dihapus.
+Menentukan jenis ACE yang akan dihapus.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Pengguna
-- Kelompok
-- Masker
-- Lain
+- Grup
+- Mask
+- Lainnya
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreEnums+AceType
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konkurensi
-Jumlah file/direktori yang diproses secara paralel. Opsional: default yang masuk akal akan dipilih
+Jumlah file/direktori yang diproses secara paralel. Opsional: default yang wajar akan dipilih
 
 ```yaml
 Type: System.Int32
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID objek pengguna, grup, atau prinsipal layanan AzureActive Directory untuk menghapus ACE.
+Menentukan ID objek pengguna, grup, atau perwakilan layanan AzureActive Directory untuk menghapus ACE.
 
 ```yaml
 Type: System.Guid
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang menunjukkan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake dari item untuk menghapus ACE, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item untuk menghapus ACE, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -206,8 +206,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Berulang
-Menunjukkan bahwa ACL akan dihapus secara rekursif ke subdirektori dan file anak
+### -Rekursi
+Menunjukkan ACL yang akan dihapus secara rekursif ke subdirektori dan file anak
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowProgress
-Jika lolos, status kemajuan akan ditampilkan. Hanya berlaku ketika penghapusan Acl rekurtif dilakukan.
+Jika lulus maka status kemajuan ditampilkan. Hanya berlaku saat penghapusan Acl rekursif dilakukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,8 +236,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -290,7 +290,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 523381f4b8b5b214dc2549f52e3340adec4d9341
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385911"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047621"
 ---
 # New-AzureRmApplicationGatewayWebApplicationFirewallConfiguration
 
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

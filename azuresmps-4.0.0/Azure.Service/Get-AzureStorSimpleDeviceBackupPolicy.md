@@ -7,8 +7,8 @@ ms.openlocfilehash: 11b2c27d4eac62a860d8da2f70de64aa0dd22d94
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278691"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143043757"
 ---
 # Get-AzureStorSimpleDeviceBackupPolicy
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 Cmdlet ini mengembalikan objek **BackupPolicyDetails** , jika Anda menentukan parameter *BackupPolicyName* .
 Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **IList\<BackupPolicy\>** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

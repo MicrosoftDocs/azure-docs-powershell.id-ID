@@ -9,8 +9,8 @@ ms.openlocfilehash: 380c7fb83fe0a06ac53d802f5948db22c79b5918
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386197"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047878"
 ---
 # Get-AzureRmNetworkWatcher
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan 
 
 ## RELATED LINKS

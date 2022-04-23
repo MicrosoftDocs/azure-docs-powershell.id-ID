@@ -10,8 +10,8 @@ ms.openlocfilehash: 522516df5d4500f55a17e769140149f021501210
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138869"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047943"
 ---
 # Get-AzureRmLocalNetworkGateway
 
@@ -94,6 +94,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

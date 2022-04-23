@@ -8,13 +8,13 @@ ms.openlocfilehash: bc8dbd023d8730922614f749f540d182c63237a4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929558"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054117"
 ---
 # Remove-AzureRmVMChefExtension
 
 ## SYNOPSIS
-Menghapus ekstensi Chef dari mesin virtual.
+Menghapus ekstensi Chef dari komputer virtual.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,23 +33,23 @@ Remove-AzureRmVMChefExtension [-ResourceGroupName] <String> [-VMName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMChefExtension** menghapus ekstensi Chef dari mesin virtual.
+Cmdlet **Remove-AzureVMChefExtension** menghapus ekstensi Chef dari komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi Chef dari mesin virtual Windows
+### Contoh 1: Menghapus ekstensi Chef dari komputer virtual Windows
 ```
 PS C:\> Remove-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup001" -VMName "WindowsVM001" -Windows
 ```
 
-Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Windows bernama WindowsVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
+Perintah ini menghapus ekstensi Chef dari komputer virtual berbasis Windows bernama WindowsVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
 
-### Contoh 2: Hapus ekstensi Chef dari mesin virtual Linux
+### Contoh 2: Menghapus ekstensi Chef dari komputer virtual Linux
 ```
 PS C:\> Remove-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup002" -VMName "LinuxVM001" -Linux
 ```
 
-Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Linux bernama LinuxVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
+Perintah ini menghapus ekstensi Chef dari komputer virtual berbasis Linux bernama LinuxVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa cmdlet ini menargetkan mesin virtual Linux.
+Menunjukkan bahwa cmdlet ini menargetkan komputer virtual Linux.
 
 ```yaml
 Type: SwitchParameter
@@ -83,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi Chef yang dihapus cmdlet ini.
 
 ```yaml
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi mesin virtual.
+Menentukan nama grup sumber daya yang berisi komputer virtual.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi Chef.
+Menentukan nama komputer virtual yang cmdlet ini menghapus ekstensi Chef.
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa cmdlet ini menargetkan mesin virtual Windows.
+Menunjukkan bahwa cmdlet ini menargetkan komputer virtual Windows.
 
 ```yaml
 Type: SwitchParameter
@@ -143,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 Cmdlet tidak dijalankan.
 
@@ -176,18 +176,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

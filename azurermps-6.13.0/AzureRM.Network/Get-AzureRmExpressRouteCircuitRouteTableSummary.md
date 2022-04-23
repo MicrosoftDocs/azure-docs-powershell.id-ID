@@ -10,8 +10,8 @@ ms.openlocfilehash: aa3d229ec14118b87c960e234a00cf82f85754c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142355487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047979"
 ---
 # Get-AzureRmExpressRouteCircuitRouteTableSummary
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitRoutesTableSummary
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

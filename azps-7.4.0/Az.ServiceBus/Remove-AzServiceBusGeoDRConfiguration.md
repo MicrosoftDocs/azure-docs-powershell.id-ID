@@ -9,8 +9,8 @@ ms.openlocfilehash: e4f01cf0874e62ce2f173264f77fcbba9cad915b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174664"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143058995"
 ---
 # Remove-AzServiceBusGeoDRConfiguration
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Konfigurasi Geodr Bus Layanan
+Objek Konfigurasi Geodr Service Bus
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

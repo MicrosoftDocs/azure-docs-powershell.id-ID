@@ -8,8 +8,8 @@ ms.openlocfilehash: 9ae4e22cde856129d21965b7e7f2fc9af647572a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142362941"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054225"
 ---
 # New-AzureRmVmssVaultCertificateConfig
 
@@ -134,7 +134,7 @@ Cmdlet ini tidak menerima input apa pun.
 ###  
 Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

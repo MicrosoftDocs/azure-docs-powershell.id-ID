@@ -9,8 +9,8 @@ ms.openlocfilehash: f6a8536c3cf7338f61bbb0a25b1bfe6e257414aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174724"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143059013"
 ---
 # Get-AzSentinelAlertRuleAction
 
@@ -144,6 +144,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Actions.PSSentinelActionResponse
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
