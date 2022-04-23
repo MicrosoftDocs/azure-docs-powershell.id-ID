@@ -10,8 +10,8 @@ ms.openlocfilehash: c719eee4800b404d691d478a989fdfdb3e7be09d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248262"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106661"
 ---
 # Remove-AzureRmResourceLock
 
@@ -330,7 +330,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

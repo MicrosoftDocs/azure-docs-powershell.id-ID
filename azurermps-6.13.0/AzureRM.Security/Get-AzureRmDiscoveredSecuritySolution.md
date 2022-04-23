@@ -9,8 +9,8 @@ ms.openlocfilehash: ecea7ba6aa34df73de65a4d03e004531e81ff497
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141816836"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106544"
 ---
 # Get-AzureRmDiscoveredSecuritySolution
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.DiscoveredSecuritySolutions.PSSecurityDiscoveredSecuritySolution
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

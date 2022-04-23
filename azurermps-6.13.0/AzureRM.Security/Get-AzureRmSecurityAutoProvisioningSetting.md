@@ -9,8 +9,8 @@ ms.openlocfilehash: 98adc5714f4a4abaeca9fe6723b1a56fe1d49fca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060736"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106448"
 ---
 # Get-AzureRmSecurityAutoProvisioningSetting
 
@@ -39,7 +39,7 @@ Get-AzureRmSecurityAutoProvisioningSetting -ResourceId <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Pengaturan Penyediaan Otomatis memungkinkan Anda memutuskan apakah Anda ingin Azure Security Cetner memproviosionalkan agen keamanan yang akan diinstal di VM Anda secara otomatis.
+Pengaturan Penyediaan Otomatis memungkinkan Anda memutuskan apakah Anda ingin Azure Security Cetner secara otomatis melakukan proviosion agen keamanan yang akan diinstal di VM Anda.
 Agen keamanan akan memantau VM Anda untuk membuat peringatan keamanan dan memantau kepatuhan keamanan VM.
 
 ## EXAMPLES
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.AutoProvisioningSettings.PSSecurityAutoProvisioningSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

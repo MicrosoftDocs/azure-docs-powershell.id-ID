@@ -9,8 +9,8 @@ ms.openlocfilehash: 751b1b7daff59861b3f8e480b27dc4c88d35709d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141775634"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106698"
 ---
 # New-AzureRmADGroup
 
@@ -128,6 +128,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

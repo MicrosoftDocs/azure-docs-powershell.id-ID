@@ -9,8 +9,8 @@ ms.openlocfilehash: 3149e2fa0ef748d11583919161555805d54f5efc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106832"
 ---
 # Get-AzureRmReservationHistory
 
@@ -121,6 +121,6 @@ Parameter: Reservasi (ByValue)
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservationPage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
