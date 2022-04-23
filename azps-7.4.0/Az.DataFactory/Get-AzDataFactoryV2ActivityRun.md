@@ -9,13 +9,13 @@ ms.openlocfilehash: 1922db20b29808cdf2ed78a87910304ecb22cb44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433042"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288711"
 ---
 # Get-AzDataFactoryV2ActivityRun
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aktivitas yang dijalankan untuk proses saluran.
+Mendapatkan informasi tentang eksekusi aktivitas untuk eksekusi alur.
 
 ## SYNTAX
 
@@ -34,11 +34,11 @@ Get-AzDataFactoryV2ActivityRun [-PipelineRunId] <String> [-RunStartedAfter] <Dat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryV2ActivityRun** mendapatkan informasi tentang berjalan di Azure Data Factory untuk proses saluran tertentu yang terjadi dalam jangka waktu tertentu. Selain itu, Anda dapat menentukan filter untuk nama aktivitas, nama layanan tertaut yang menjalankan proses, dan status proses.
+Cmdlet **Get-AzDataFactoryV2ActivityRun** mendapatkan informasi tentang eksekusi di Azure Data Factory untuk eksekusi alur yang ditentukan yang terjadi dalam jangka waktu tertentu. Selain itu, Anda dapat menentukan filter untuk nama aktivitas, nama layanan tertaut yang menjalankan eksekusi, dan status eksekusi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua aktivitas yang dijalankan untuk proses pipeline
+### Contoh 1: Mendapatkan semua eksekusi aktivitas untuk eksekusi alur
 ```powershell
 Get-AzDataFactoryV2ActivityRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineRunId "f288712d-fb08-4cb8-96ef-82d3b9b30621" -RunStartedAfter "2017-09-01" -RunStartedBefore "2017-09-30"
 ```
@@ -58,7 +58,7 @@ Get-AzDataFactoryV2ActivityRun -ResourceGroupName "ADF" -DataFactoryName "WikiAD
     Error             : {errorCode, message, failureType, target}
 ```
 
-Perintah ini mendapatkan detail tentang semua aktivitas yang dijalankan dalam alur berjalan dengan ID "f288712d-fb08-4cb8-96ef-82d3b9b30621" yang terjadi antara "2017-09-01" dan "2017-09-30".
+Perintah ini mendapatkan detail tentang semua eksekusi aktivitas dalam eksekusi alur dengan ID "f288712d-fb08-4cb8-96ef-82d3b9b30621" yang terjadi antara "2017-09-01" dan "2017-09-30".
 
 ## PARAMETERS
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-ID Jalankan dari pipeline.
+ID Eksekusi alur.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedAfter
-Waktu di atau setelah pipeline dijalankan mulai dijalankan.
+Waktu pada atau setelah eksekusi alur mulai dijalankan.
 
 ```yaml
 Type: System.DateTime
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunStartedBefore
-Waktu di atau sebelum alur dijalankan mulai dijalankan.
+Waktu pada atau sebelum eksekusi alur mulai dijalankan.
 
 ```yaml
 Type: System.DateTime
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status alur berjalan.
+Status eksekusi alur.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -210,7 +210,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSActivityRun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

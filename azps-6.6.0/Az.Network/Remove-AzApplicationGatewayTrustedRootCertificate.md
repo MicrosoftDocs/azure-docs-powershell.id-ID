@@ -9,8 +9,8 @@ ms.openlocfilehash: c2f6768266924daa6a48e9f902a72112d4b76210
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142079995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143344907"
 ---
 # Remove-AzApplicationGatewayTrustedRootCertificate
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

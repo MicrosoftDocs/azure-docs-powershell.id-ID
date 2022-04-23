@@ -9,13 +9,13 @@ ms.openlocfilehash: 3a7532cb24ab401d381e24121cd63430f6d67444
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998651"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288729"
 ---
 # Remove-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
-Menghapus wadah penyimpanan untuk akun Storage Edge di perangkat.
+Menghapus kontainer penyimpanan untuk akun Azure Stack Edge Storage di perangkat.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Remove-AzDataBoxEdgeStorageContainer -InputObject <PSDataBoxEdgeStorageContainer
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataBoxEdgeStorageContainer** menghapus wadah penyimpanan terkait untuk akun Edge Storage di perangkat Data Box Edge. Anda dapat menentukan nama wadah penyimpanan yang akan dihapus sebagai parameter.
+Cmdlet **Remove-AzDataBoxEdgeStorageContainer menghapus kontainer** penyimpanan terkait untuk akun Edge Storage pada perangkat Data Box Edge. Anda dapat menentukan nama kontainer penyimpanan yang akan dihapus sebagai parameter.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Remove-AzDataBoxEdgeStorageContainer -ResourceGroupName resourceGroupName -Devic
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeStorageAccountName
-Sediakan Nama EdgeStorageAccount yang sudah ada
+Berikan Nama EdgeStorageAccount yang ada
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input
+Objek input
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageContainer
@@ -125,8 +125,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -185,8 +185,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -228,6 +228,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

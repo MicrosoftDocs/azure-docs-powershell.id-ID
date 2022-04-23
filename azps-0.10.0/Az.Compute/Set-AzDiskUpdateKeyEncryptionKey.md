@@ -9,8 +9,8 @@ ms.openlocfilehash: b1fe2674360ffec8b2f2c570d47aef3daad78e7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142495655"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305379"
 ---
 # Set-AzDiskUpdateKeyEncryptionKey
 
@@ -150,7 +150,7 @@ System.String
 
 ### Microsoft.Azure.Management.Compute.Models.DiskUpdate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

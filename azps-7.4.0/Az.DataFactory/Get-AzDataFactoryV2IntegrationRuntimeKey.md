@@ -9,13 +9,13 @@ ms.openlocfilehash: cee646d11f1b2b054edb8fbed35bb689a6ec06c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002958"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288675"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeKey
 
 ## SYNOPSIS
-Mendapatkan kunci untuk runtime integrasi yang dihosting sendiri.
+Mendapatkan kunci untuk runtime integrasi yang dihost sendiri.
 
 ## SYNTAX
 
@@ -38,11 +38,11 @@ Get-AzDataFactoryV2IntegrationRuntimeKey [-InputObject] <PSIntegrationRuntime>
 ```
 
 ## DESCRIPTION
-Dapatkan kunci untuk runtime integrasi. Kunci digunakan untuk mendaftarkan simpul runtime integrasi.
+Mendapatkan kunci untuk runtime integrasi. Kunci digunakan untuk mendaftarkan simpul runtime integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci runtime integrasi
+### Contoh 1: Mendapatkan kunci runtime integrasi
 ```powershell
 Get-AzDataFactoryV2IntegrationRuntimeKey -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2' -Name 'test-selfhost-ir'
 ```
@@ -102,7 +102,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama runtime integrasi.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

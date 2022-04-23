@@ -9,8 +9,8 @@ ms.openlocfilehash: 0b1fd38e375f4b09bb178725fec8ddba714d9772
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141799394"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143344781"
 ---
 # Remove-AzLoadBalancerBackendAddressPool
 
@@ -235,6 +235,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 52d4d11a1b401a524e66962dc9f5bbd496bf65ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141863024"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143344853"
 ---
 # Remove-AzCustomIpPrefix
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

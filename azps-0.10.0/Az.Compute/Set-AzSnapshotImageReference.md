@@ -9,8 +9,8 @@ ms.openlocfilehash: 87786196e027597dc532bcaab2adfec4aa8c3892
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142351511"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305361"
 ---
 # Set-AzSnapshotImageReference
 
@@ -145,7 +145,7 @@ System.String System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Cultur
 
 ### Microsoft.Azure.Management.Compute.Models.Snapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

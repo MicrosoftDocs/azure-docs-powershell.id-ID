@@ -9,13 +9,13 @@ ms.openlocfilehash: b458416ff95a37e7a8936d7815a46c6858191932
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003011"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288765"
 ---
 # Get-AzDataBoxEdgeJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan yang dijadwalkan di perangkat.
+Mendapatkan pekerjaan yang dijadwalkan pada perangkat.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-AzDataBoxEdgeJob [-Name] <String> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeJob** mendapatkan pekerjaan aktif di perangkat Data Box Edge. Anda dapat menyebutkan parameter Nama untuk mendapatkan detail pekerjaan tertentu.
+Cmdlet **Get-AzDataBoxEdgeJob** mendapatkan pekerjaan aktif pada perangkat Data Box Edge. Anda dapat menyebutkan parameter Nama untuk mendapatkan detail pekerjaan tertentu.
 
 ## EXAMPLES
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeDevice
@@ -99,7 +99,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Pekerjaan, Umumnya GUID
 
 ```yaml
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
