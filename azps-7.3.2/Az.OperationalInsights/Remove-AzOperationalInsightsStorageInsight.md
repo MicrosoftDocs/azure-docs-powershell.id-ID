@@ -10,13 +10,13 @@ ms.openlocfilehash: 2c7f9cd02847596c48d13b06251934bdae9f9f3b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142211743"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143329283"
 ---
 # Remove-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
-Menghapus Insight Penyimpanan.
+Menghapus Wawasan Storage.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsstorageinsight) untuk informasi terbaru.
@@ -36,19 +36,19 @@ Remove-AzOperationalInsightsStorageInsight [-Workspace] <PSWorkspace> [-Name] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus Wawasan Penyimpanan dari ruang kerja.
+Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus wawasan Storage dari ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Wawasan Penyimpanan menurut nama
+### Contoh 1: Menghapus Storage Insight menurut nama
 ```
 PS C:\>Remove-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight"
 ```
 
-Perintah ini menghapus Insight Penyimpanan bernama MyStorageInsight dari ruang kerja bernama MyWorkspace dalam grup sumber daya yang ditentukan.
-Perintah tidak menentukan parameter *Paksa* , sehingga perintah meminta konfirmasi sebelum menghapus Wawasan Penyimpanan.
+Perintah ini menghapus Storage Insight bernama MyStorageInsight dari ruang kerja bernama MyWorkspace dalam grup sumber daya tertentu.
+Perintah tidak menentukan parameter *Paksa*, sehingga perintah meminta konfirmasi sebelum menghapus Storage Insight.
 
-### Contoh 2: Hapus Wawasan Penyimpanan tanpa konfirmasi
+### Contoh 2: Menghapus Storage Insight tanpa konfirmasi
 ```
 PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ruang Kerja
-Menentukan ruang kerja yang berisi Wawasan Penyimpanan.
+Menentukan ruang kerja yang berisi Storage Insight.
 
 ```yaml
 Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama Ruang Kerja
-Menentukan nama ruang kerja yang berisi Wawasan Penyimpanan.
+Menentukan nama ruang kerja yang berisi Storage Insight.
 
 ```yaml
 Type: System.String
@@ -193,11 +193,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 [Get-AzOperationalInsightsWorkspace](./Get-AzOperationalInsightsWorkspace.md)
 

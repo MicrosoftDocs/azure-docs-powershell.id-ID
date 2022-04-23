@@ -9,8 +9,8 @@ ms.openlocfilehash: 790691f3f30551443c042dfea679ec3e1b072947
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142230751"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298575"
 ---
 # Update-AzKubernetesExtension
 
@@ -310,7 +310,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.Api20210901.IExtension
 
-## CATATAN
+## NOTES
 
 ALIAS
 

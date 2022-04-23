@@ -9,8 +9,8 @@ ms.openlocfilehash: 6c7f0be5c0df93d5bb32861669cba654ec82b30d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142048871"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298323"
 ---
 # Get-AzIntegrationAccountGeneratedIcn
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.LogicApp.Utilities.IntegrationAccountControlNumber
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

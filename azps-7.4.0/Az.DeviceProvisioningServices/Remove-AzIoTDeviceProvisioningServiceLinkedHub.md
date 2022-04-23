@@ -9,13 +9,13 @@ ms.openlocfilehash: 1a757b47c185197f21eb89047bc41fc4b35f621a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997902"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143317133"
 ---
 # Remove-AzIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
-Hapus hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub.
+Menghapus hub IoT tertaut di layanan provisi perangkat Azure IoT Hub.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Remove-AzIoTDeviceProvisioningServiceLinkedHub [-ResourceId] <String> [-LinkedHu
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -52,14 +52,14 @@ Remove-AzIoTDeviceProvisioningServiceLinkedHub -ResourceGroupName "myresourcegro
 True
 ```
 
-Hapus "myiothub" hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+Hapus hub IoT tertaut "myiothub" dalam layanan provisi perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
 Get-AzIoTDeviceProvisioningServiceLinkedHub -ResourceGroupName "myresourcegroup" -Name "myiotdps" -LinkedHubName "myiothub" | Remove-AzIoTDeviceProvisioningServiceLinkedHub
 ```
 
-Hapus "myiothub" hub IoT yang ditautkan dalam layanan penyediaan perangkat Azure IoT Hub menggunakan pipeline.
+Hapus hub IoT tertaut "myiothub" dalam layanan provisi perangkat Azure IoT Hub menggunakan alur.
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSIotHubDefinitionDescription
@@ -108,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -168,8 +168,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,6 +212,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

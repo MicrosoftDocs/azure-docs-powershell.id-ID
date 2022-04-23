@@ -9,8 +9,8 @@ ms.openlocfilehash: 28aec5e4a41f6eb92bbcc74080e07ed869c2d4bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172642"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281349"
 ---
 # New-AzFirewallPolicyIntrusionDetection
 
@@ -27,7 +27,7 @@ New-AzFirewallPolicyIntrusionDetection -Mode <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicyIntrusionDetection** menciptakan Objek Deteksi Intrusi Kebijakan Azure Firewall.
+Cmdlet **New-AzFirewallPolicyIntrusionDetection** membuat Objek Deteksi Intrusi Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **New-AzFirewallPolicyIntrusionDetection** menciptakan Objek Deteksi Intr
 New-AzFirewallPolicyIntrusionDetection -Mode "Alert"
 ```
 
-Contoh ini membuat deteksi intrusi dengan mode Peringatan (deteksi)
+Contoh ini membuat deteksi intrusi dengan mode Pemberitahuan (deteksi)
 
 ### Contoh 2: Membuat deteksi intrusi dengan penimpaan tanda tangan
 ```powershell
@@ -53,12 +53,12 @@ $intrusionDetection = New-AzFirewallPolicyIntrusionDetection -Mode "Deny" -Bypas
 New-AzFirewallPolicy -Name fp1 -Location "westus2" -ResourceGroup TestRg -SkuTier "Premium" -IntrusionDetection $intrusionDetection
 ```
 
-Contoh ini membuat deteksi gangguan dengan melewati pengaturan lalu lintas
+Contoh ini membuat deteksi intrusi dengan melewati pengaturan lalu lintas
 
 ## PARAMETERS
 
 ### -BypassTraffic
-Daftar aturan lalu lintas yang akan dilewati.
+Daftar aturan untuk lalu lintas yang akan dilewati.
 
 ```yaml
 Type: PSAzureFirewallPolicyIntrusionDetectionBypassTrafficSetting[]
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Deteksi Intrusi keadaan umum.
+Status umum Deteksi Intrusi.
 
 ```yaml
 Type: String
@@ -118,8 +118,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -150,16 +150,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyIntrusionDetection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

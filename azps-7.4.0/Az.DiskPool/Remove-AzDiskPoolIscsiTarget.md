@@ -9,8 +9,8 @@ ms.openlocfilehash: b51d215be71b5b71e2a6d4f2bb2b5e9d5baf8c08
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178744"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143316917"
 ---
 # Remove-AzDiskPoolIscsiTarget
 
@@ -54,7 +54,7 @@ Perintah ini menghapus target iSCSI menurut objek.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +113,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Target iSCSI.
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -189,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -231,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -241,11 +241,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
-  - `[DiskPoolName <String>]`: Nama Disk Pool.
+  - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

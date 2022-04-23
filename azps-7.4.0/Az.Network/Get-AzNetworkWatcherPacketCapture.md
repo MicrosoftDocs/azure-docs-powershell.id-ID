@@ -9,8 +9,8 @@ ms.openlocfilehash: 3e8563a2e6fe8a2d0fc8b5481fa684e020f362b7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167724"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282069"
 ---
 # Get-AzNetworkWatcherPacketCapture
 
@@ -42,7 +42,7 @@ Get-AzNetworkWatcherPacketCapture mendapatkan properti dan status sumber daya pe
 
 ## EXAMPLES
 
-### Contoh 1: Buat Tangkapan Paket dengan beberapa filter dan ambil statusnya
+### Contoh 1: Membuat Pengambilan Paket dengan beberapa filter dan mengambil statusnya
 ```powershell
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -56,22 +56,22 @@ New-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -TargetVirtual
 Get-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -PacketCaptureName "PacketCaptureTest"
 ```
 
-Dalam contoh ini, kami membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Kami kemudian memanggil Get-AzNetworkWatcherPacketCapture untuk mengambil status sesi penangkapan. Catatan: Ekstensi Azure Network Watcher harus diinstal di mesin virtual target untuk membuat tangkapan paket.
+Dalam contoh ini kita membuat tangkapan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan yang ditentukan. Kami kemudian memanggil Get-AzNetworkWatcherPacketCapture untuk mengambil status sesi pengambilan. Catatan: Ekstensi Azure Network Watcher harus diinstal pada komputer virtual target untuk membuat tangkapan paket.
 
 >[!NOTE]
->Jika Anda membuat referensi ke pengambilan paket secara langsung dari perintah New-AzNetworkWatcherPacketCapture, maka tidak akan memiliki semua properti. Anda bisa mendapatkan semua properti penangkapan paket dengan melakukan panggilan ke perintah Get-AzNetworkWatcherPacketCapture.
+>Jika Anda membuat referensi ke pengambilan paket langsung dari perintah New-AzNetworkWatcherPacketCapture, itu tidak akan memiliki semua properti. Anda bisa mendapatkan semua properti pengambilan paket dengan melakukan panggilan ke perintah Get-AzNetworkWatcherPacketCapture.
 
-### Contoh 2: Buat Tangkapan Paket dengan beberapa filter dan ambil statusnya
+### Contoh 2: Membuat Pengambilan Paket dengan beberapa filter dan mengambil statusnya
 ```powershell
 Get-AzNetworkWatcherPacketCapture -ResourceGroupName rg1 -NetworkWatcherName nw1 -PacketCaptureName PacketCapture*
 ```
 
-Cmdlet ini mengembalikan semua PacketCapture yang dimulai dengan "PacketCapture" dalam Network Watcher nw1.
+Cmdlet ini mengembalikan semua PacketCaptures yang dimulai dengan "PacketCapture" di Network Watcher nw1.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PacketCaptureName
-Nama penangkapan paket.
+Nama pengambilan paket.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSGetPacketCaptureResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, paket, penangkapan, lalu lintas
 
 ## RELATED LINKS
@@ -197,7 +197,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -237,9 +237,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

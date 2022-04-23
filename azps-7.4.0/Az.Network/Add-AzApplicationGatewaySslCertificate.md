@@ -10,8 +10,8 @@ ms.openlocfilehash: 8cd87bcaac12294ccb644f40f7e07fbf2ebc62a8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282735"
 ---
 # Add-AzApplicationGatewaySslCertificate
 
@@ -31,7 +31,7 @@ Cmdlet **Add-AzApplicationGatewaySslCertificate** menambahkan sertifikat SSL ke 
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan sertifikat SSL menggunakan pfx ke gateway aplikasi.
+### Contoh 1: Tambahkan sertifikat SSL menggunakan pfx ke gateway aplikasi.
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $password = ConvertTo-SecureString $passwordPlainString -AsPlainText -Force
@@ -40,7 +40,7 @@ $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name
 
 Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 lalu menambahkan sertifikat SSL bernama Cert01 ke dalamnya.
 
-### Contoh 2: Tambahkan sertifikat SSL menggunakan KeyVault Secret (version-less secretId) ke gateway aplikasi.
+### Contoh 2: Tambahkan sertifikat SSL menggunakan Rahasia KeyVault (secretId tanpa versi) ke gateway aplikasi.
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $secret = Get-AzKeyVaultCertificate -VaultName "keyvault01" -Name "sslCert01"
@@ -48,10 +48,10 @@ $secretId = $secret.SecretId.Replace($secret.Version, "") # https://<keyvaultnam
 $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Dapatkan rahasia dan referensikan dalam `Add-AzApplicationGatewaySslCertificate` menambahkannya ke Application Gateway dengan nama `Cert01`.
-Catatan: Karena secretId tanpa versi disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval rutin dengan KeyVault.
+Dapatkan rahasia dan referensikan `Add-AzApplicationGatewaySslCertificate` di untuk menambahkannya ke Application Gateway dengan nama `Cert01`.
+Catatan: Karena secretId tanpa versi disediakan di sini, Application Gateway akan menyinkronkan sertifikat secara berkala dengan KeyVault.
 
-### Contoh 3: Menambahkan sertifikat SSL menggunakan KeyVault Secret (versioned secretId) ke gateway aplikasi.
+### Contoh 3: Tambahkan sertifikat SSL menggunakan Rahasia KeyVault (secretId versi) ke gateway aplikasi.
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $secret = Get-AzKeyVaultCertificate -VaultName "keyvault01" -Name "sslCert01"
@@ -59,8 +59,8 @@ $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/<hash>
 $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Dapatkan rahasia dan referensikan dalam `Add-AzApplicationGatewaySslCertificate` menambahkannya ke Application Gateway dengan nama `Cert01`.
-Catatan: Jika diperlukan agar Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan secretId tanpa versi.
+Dapatkan rahasia dan referensikan `Add-AzApplicationGatewaySslCertificate` di untuk menambahkannya ke Application Gateway dengan nama `Cert01`.
+Catatan: Jika diperlukan bahwa Application Gateway menyinkronkan sertifikat dengan KeyVault, berikan secretId tanpa versi.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFile
-Menentukan file .pfx sertifikat SSL yang ditambahkan cmdlet ini.
+Menentukan file .pfx dari sertifikat SSL yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultSecretId
-SecretId (uri) dari KeyVault Secret. Gunakan opsi ini saat versi rahasia tertentu perlu digunakan.
+SecretId (uri) dari Rahasia KeyVault. Gunakan opsi ini saat versi rahasia tertentu perlu digunakan.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat SSL yang ditambahkan cmdlet ini.
 
 ```yaml
@@ -139,7 +139,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Menentukan kata sandi sertifikat SSL yang ditambahkan cmdlet ini.
 
 ```yaml
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

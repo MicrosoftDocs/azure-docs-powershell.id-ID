@@ -10,13 +10,13 @@ ms.openlocfilehash: d34f5cf27a64e19fcadd8c0a4e73615bedb5f545
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422256"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282107"
 ---
-# Get-AzLoadBalancerProbeConfig
+# Dapatkan-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi probe untuk penyeimbang beban.
+Menambahkan konfigurasi probe ke load balancer.
 
 ## SYNTAX
 
@@ -26,18 +26,18 @@ Get-AzLoadBalancerProbeConfig -LoadBalancer <PSLoadBalancer> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerProbeConfig** mendapatkan satu atau beberapa konfigurasi probe untuk load balancer.
+Cmdlet **Get-AzLoadBalancerProbeConfig** mendapatkan satu atau beberapa konfigurasi pemeriksaan untuk load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi probe dari load balancer
+### Contoh 1: Mendapatkan konfigurasi pemeriksaan load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 Get-AzLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $slb
 ```
 
 Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua mendapatkan konfigurasi probe terkait bernama MyProbe dari load balancer dalam $slb.
+Perintah kedua mendapatkan konfigurasi pemeriksaan terkait bernama MyProbe dari load balancer di $slb.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muatan yang terkait dengan konfigurasi probe yang akan didapatkan.
+Menentukan load balancer yang terkait dengan konfigurasi probe yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -71,7 +71,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi probe yang akan didapatkan.
 
 ```yaml
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -97,13 +97,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSProbe
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Add-AzLoadBalancerProbeConfig](./Add-AzLoadBalancerProbeConfig.md)
+[Tambahkan-AzLoadBalancerProbeConfig](./Add-AzLoadBalancerProbeConfig.md)
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [New-AzLoadBalancerProbeConfig](./New-AzLoadBalancerProbeConfig.md)
 

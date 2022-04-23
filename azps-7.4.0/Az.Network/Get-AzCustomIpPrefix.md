@@ -9,8 +9,8 @@ ms.openlocfilehash: 8b1f6287c19794b1efdc21c572a7b5db1b6d0bf6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835395"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282231"
 ---
 # Get-AzCustomIpPrefix
 
@@ -31,7 +31,7 @@ Get-AzCustomIpPrefix -ResourceId <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCustomIpPrefix** mendapatkan satu atau beberapa CustomIpPrefix mengingat kumpulan parameter input
+Cmdlet **Get-AzCustomIpPrefix** mendapatkan satu atau beberapa CustomIpPrefixes mengingat set parameter input
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ CustomIpPrefixParent :
 ChildCustomIpPrefixes: []
 ```
 
-Perintah ini mendapatkan sumber daya CustomIpPrefix bernama myCustomIpPrefix dalam myRg grup sumber daya
+Perintah ini mendapatkan sumber daya CustomIpPrefix bernama myCustomIpPrefix dalam grup sumber daya myRg
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSCustomIpPrefix
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1a5d507d67535cd9ebe3a141536b795e46b2f190
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141932307"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143322407"
 ---
 # Remove-AzSynapseKustoPoolLanguageExtension
 
@@ -45,7 +45,7 @@ Hapus daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
 PS C:\> Remove-AzSynapseKustoPoolLanguageExtension -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -Value (@{Name="R"})
 ```
 
-Perintah di atas menghapus daftar ekstensi bahasa yang dapat berjalan dalam kueri KQL.
+Perintah di atas menghapus daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama kumpulan Kusto.
+Nama kolam Kusto.
 
 ```yaml
 Type: System.String
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -259,7 +259,7 @@ INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
   - `[Location <String>]`: Nama kawasan Azure.
-  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[PrincipalAssignmentName <String>]`: Nama kusto principalAssignment.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja

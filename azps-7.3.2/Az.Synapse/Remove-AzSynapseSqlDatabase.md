@@ -9,13 +9,13 @@ ms.openlocfilehash: 6dd64fe3d8d5409d72eb9d72d84b4080ed77623f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141786308"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143322299"
 ---
 # Remove-AzSynapseSqlDatabase
 
 ## SYNOPSIS
-Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu. Menghapus database SQL Analitik Sinapsis.
+Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu. Menghapus database SQL Analitik Synapse.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqldatabase) untuk informasi terbaru.
@@ -47,7 +47,7 @@ Remove-AzSynapseSqlDatabase -ResourceId <String> [-PassThru] [-AsJob] [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSqlPool** menghapus database Azure Synapse Analytics SQL secara permanen.
+Cmdlet **Remove-AzSynapseSqlPool** menghapus database SQL Analitik Azure Synapse secara permanen.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Cmdlet **Remove-AzSynapseSqlPool** menghapus database Azure Synapse Analytics SQ
 PS C:\> Remove-AzSynapseSqlDatabase -WorkspaceName ContosoWorkspace -Name ContosoSqlDatabase
 ```
 
-Perintah ini menghapus database SQL Azure Synapse Analytics.
+Perintah ini menghapus database SQL Analitik Azure Synapse.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +64,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseSqlDatabase -Name ContosoSqlDatabase
 ```
 
-Perintah ini menghapus database SQL Azure Synapse Analytics melalui pipeline.
+Perintah ini menghapus Azure Synapse analytics SQL database melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -72,14 +72,14 @@ PS C:\> $database = Get-AzSynapseSqlDatabase -WorkspaceName ContosoWorkspace -Na
 PS C:\> $database | Remove-AzSynapseSqlDatabase
 ```
 
-Perintah ini menghapus database SQL Azure Synapse Analytics melalui pipeline.
+Perintah ini menghapus Azure Synapse analytics SQL database melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Remove-AzSynapseSqlDatabase -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlDatabases/ContosoSqlDatabase
 ```
 
-Perintah ini menghapus database SQL Azure Synapse Analytics dengan ID sumber daya yang ditentukan.
+Perintah ini menghapus database SQL Analitik Azure Synapse dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input Database SQL, biasanya melewati pipeline.
+SQL Database objek input, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlDatabase
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Database SQL Synapse.
+Nama SQL Database Synapse.
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya Database SQL Synapse.
+Pengidentifikasi sumber daya SQL Database Synapse.
 
 ```yaml
 Type: System.String
@@ -280,6 +280,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

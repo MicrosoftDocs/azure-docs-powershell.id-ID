@@ -10,8 +10,8 @@ ms.openlocfilehash: 37255dfda50d7c055aad6941bbf417d1aa852d35
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916599"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143263565"
 ---
 # New-AzLocalNetworkGateway
 
@@ -251,7 +251,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

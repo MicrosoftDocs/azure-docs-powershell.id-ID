@@ -9,8 +9,8 @@ ms.openlocfilehash: f95fdf7c2efe481d9714931be365fce92f63f726
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993798"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309357"
 ---
 # Get-AzRegulatoryComplianceAssessment
 
@@ -166,7 +166,7 @@ FailedResources       : 0
 SkippedResources      : 0
 ```
 
-Dapatkan penilaian khusus berdasarkan kontrol dan standar tertentu sesuai dengan id penilaian.
+Dapatkan penilaian tertentu di bawah kontrol dan standar tertentu sesuai dengan id penilaian.
 
 ### Contoh 3
 ```powershell
@@ -190,7 +190,7 @@ FailedResources       : 0
 SkippedResources      : 0
 ```
 
-Dapatkan penilaian khusus di bawah kontrol dan standar tertentu sesuai dengan id sumber daya.
+Dapatkan penilaian tertentu di bawah kontrol dan standar tertentu sesuai dengan id sumber daya.
 
 ## PARAMETERS
 
@@ -224,7 +224,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Id Penilaian.
 
 ```yaml
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -280,6 +280,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SecurityCenter.Models.RegulatoryCompliance.PSSecurityRegulatoryComplianceAssessment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

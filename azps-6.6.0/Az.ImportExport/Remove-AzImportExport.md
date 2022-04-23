@@ -9,8 +9,8 @@ ms.openlocfilehash: 260b0d9715f8a334e961dc1c6bd6fb0c568144d2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141912153"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143299421"
 ---
 # Remove-AzImportExport
 
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

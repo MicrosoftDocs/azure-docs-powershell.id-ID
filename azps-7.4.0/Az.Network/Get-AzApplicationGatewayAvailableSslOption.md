@@ -9,8 +9,8 @@ ms.openlocfilehash: a7cfaec93bbe0298eefb416eb1a715738f07de69
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177027"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282555"
 ---
 # Get-AzApplicationGatewayAvailableSslOption
 
@@ -53,16 +53,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableSslOptions
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

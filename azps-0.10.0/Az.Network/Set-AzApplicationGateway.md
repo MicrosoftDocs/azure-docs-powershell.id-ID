@@ -10,8 +10,8 @@ ms.openlocfilehash: b62a41c2c97055f0ef090ed5def3dc771ae3c1ed
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142491929"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143263115"
 ---
 # Set-AzApplicationGateway
 
@@ -96,7 +96,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari p
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

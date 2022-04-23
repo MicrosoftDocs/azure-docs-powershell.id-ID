@@ -9,8 +9,8 @@ ms.openlocfilehash: b0b5ef08d99ee8ab7aeb67f3cee4262599957cd4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143276723"
 ---
 # Set-AzRecoveryServicesAsrAlertSetting
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRAlertSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: bccbc116552615ec679837acf34ed96030af7290
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172018"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309393"
 ---
 # Get-AzDiscoveredSecuritySolution
 
@@ -37,7 +37,7 @@ Get-AzDiscoveredSecuritySolution -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Solusi keamanan ditemukan secara otomatis oleh Azure Security Center, gunakan cmdlet ini untuk melihat solusi keamanan yang ditemukan
+Solusi keamanan secara otomatis ditemukan oleh Azure Security Center, gunakan cmdlet ini untuk melihat solusi keamanan yang ditemukan
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ SecurityFamily : SaasWaf
 Sku            :
 ```
 
-Dapatkan semua solusi keamanan yang ditemukan dalam langganan
+Mendapatkan semua solusi keamanan yang ditemukan dalam langganan
 
 ### Contoh 2
 ```powershell
@@ -73,7 +73,7 @@ SecurityFamily : SaasWaf
 Sku            :
 ```
 
-Dapatkan solusi keamanan tertentu yang ditemukan
+Mendapatkan solusi keamanan tertentu yang ditemukan
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -163,6 +163,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.DiscoveredSecuritySolutions.PSSecurityDiscoveredSecuritySolution
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

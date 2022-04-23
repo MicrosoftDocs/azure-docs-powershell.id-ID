@@ -9,8 +9,8 @@ ms.openlocfilehash: 61542ece1e7cd3e557f58fcb1597181e3a8567f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142396709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143322659"
 ---
 # Get-AzSynapseSqlPoolSensitivityRecommendation
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.DataClassification.SqlPoolSensitivityClassificationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

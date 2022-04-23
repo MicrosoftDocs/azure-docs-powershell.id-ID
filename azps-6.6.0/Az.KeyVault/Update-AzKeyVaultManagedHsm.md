@@ -9,16 +9,16 @@ ms.openlocfilehash: 155f3dde3f9fdc46e5ec0b93805ec33c1cceda6c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141911577"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298701"
 ---
 # Update-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
-Perbarui status HSM yang dikelola Azure.
+Memperbarui status HSM terkelola Azure.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedhsm) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-AzKeyVaultManagedHsm -ResourceId <String> [-Tag <Hashtable>] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet ini memperbarui status HSM yang dikelola Azure.
+Cmdlet ini memperbarui status HSM terkelola Azure.
 
 ## EXAMPLES
 
@@ -71,14 +71,14 @@ Tags                                :
                                       testKey     testValued
 ```
 
-Memperbarui tag untuk Hsm yang dikelola bernama `$hsmName` dalam grup `$resourceGroupName`sumber daya .
+Memperbarui tag untuk Hsm terkelola bernama `$hsmName` dalam grup `$resourceGroupName`sumber daya .
 
-### Contoh 2: Memperbarui Hsm terkelola menggunakan piping
+### Contoh 2: Memperbarui Hsm terkelola menggunakan pipa
 ```powershell
 PS C:\> Get-AzKeyVaultManagedHsm -Name $hsmName -ResourceGroupName $resourceGroupName | Update-AzKeyVaultManagedHsm -Tag @{testKey="testValue"}
 ```
 
-Memperbarui tag untuk Hsm yang dikelola menggunakan sintaks perpipaan.
+Memperbarui tag untuk Hsm terkelola menggunakan sintaks piping.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek HSM yang dikelola.
+Objek HSM terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
@@ -112,8 +112,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama HSM yang dikelola.
+### -Name
+Nama HSM terkelola.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya dari HSM yang dikelola.
+ID sumber daya HSM terkelola.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -189,8 +189,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

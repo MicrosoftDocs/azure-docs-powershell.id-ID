@@ -9,8 +9,8 @@ ms.openlocfilehash: 08cc7ffc7bf20fb777e9e1b0dbb609179ade291b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142249939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143322749"
 ---
 # Get-AzSynapseSqlPoolRestorePoint
 
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Synapse.Models.RestorePoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

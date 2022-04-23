@@ -9,8 +9,8 @@ ms.openlocfilehash: b87065e187e92138337a4461f34ba75dfa8cb6dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990330"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309123"
 ---
 # Get-AzSqlInformationProtectionPolicy
 
@@ -76,6 +76,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SecurityCenter.Models.SqlInformationProtectionPolicy.PSSqlInformationProtectionPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

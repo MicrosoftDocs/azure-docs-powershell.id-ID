@@ -9,8 +9,8 @@ ms.openlocfilehash: 6e7fad11d783da3f5a0895c310fb35c97ca70eab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176804"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282015"
 ---
 # Get-AzPrivateEndpointConnection
 
@@ -39,7 +39,7 @@ Get-AzPrivateEndpointConnection [-Description <String>] [-Name <String>] -Resour
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPrivateEndpointConnection** mengambil sumber daya koneksi titik akhir pribadi.
+Cmdlet **Get-AzPrivateEndpointConnection** mengambil sumber daya koneksi titik akhir privat.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Contoh ini mengembalikan daftar semua koneksi titik akhir privat milik server sq
 Get-AzPrivateEndpointConnection -Name MyPrivateEndpointConnection1 -ResourceGroupName TestResourceGroup -ServiceName MyPrivateLinkService -PrivateLinkResourceType 'Microsoft.Network/privateLinkServices'
 ```
 
-Contoh ini mendapatkan koneksi titik akhir pribadi bernama MyPrivateEndpointConnection1 milik layanan tautan privat bernama MyPrivateLinkService
+Contoh ini mendapatkan koneksi titik akhir privat bernama MyPrivateEndpointConnection1 milik layanan tautan privat bernama MyPrivateLinkService
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koneksi titik akhir privat.
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Id manajer sumber daya Azure dari sumber daya tautan privat yang menjadi milik koneksi titik akhir privat.
+Id manajer sumber daya Azure dari sumber daya tautan privat tempat koneksi titik akhir privat berada.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceType
-Tipe sumber daya tautan privat.
+Jenis sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure dari koneksi titik akhir privat.
+Id azure resource manager dari koneksi titik akhir privat.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -191,13 +191,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPrivateEndpointConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Setujui-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
+[Approve-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
 
-[Tolak-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
+[Deny-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
 
 [Remove-AzPrivateEndpointConnection](./Remove-AzPrivateEndpointConnection.md)
 

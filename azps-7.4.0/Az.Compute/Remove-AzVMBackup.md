@@ -10,8 +10,8 @@ ms.openlocfilehash: 7344d94c0b87d6f4950b345a42eb05a87b77461d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141840227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143290043"
 ---
 # Remove-AzVMBackup
 
@@ -101,6 +101,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

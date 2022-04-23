@@ -9,8 +9,8 @@ ms.openlocfilehash: d339b751101e26a0bc781fa85da030e49b6a21e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167574"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281331"
 ---
 # New-AzIpsecTrafficSelectorPolicy
 
@@ -25,7 +25,7 @@ New-AzIpsecTrafficSelectorPolicy -LocalAddressRange <String[]> -RemoteAddressRan
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzTrafficSelectorPolicy membuat proposal kebijakan pemilih lalu lintas untuk digunakan dalam koneksi gateway jaringan virtual.
+Cmdlet New-AzTrafficSelectorPolicy membuat proposal kebijakan pemilih lalu lintas yang akan digunakan dalam koneksi gateway jaringan virtual.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ $trafficSelectorPolicy = New-AzIpsecTrafficSelectorPolicy -LocalAddressRange ("1
 New-AzVirtualNetworkGatewayConnection -ResourceGroupName $rgname -name $vnetConnectionName -location $location -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localnetGateway -ConnectionType IPsec -RoutingWeight 3 -SharedKey $sharedKey -UsePolicyBasedTrafficSelectors $true -TrafficSelectorPolicy ($trafficSelectorPolicy)
 ```
 
-Membuat contoh kebijakan pemilih lalu lintas dan menambahkannya sebagai parameter saat membuat koneksi gateway jaringan virtual dengan protokol IKEv2.
+Membuat instans kebijakan pemilih lalu lintas dan menambahkannya sebagai parameter saat membuat koneksi gateway jaringan virtual dengan protokol IKEv2.
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSTrafficSelectorPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

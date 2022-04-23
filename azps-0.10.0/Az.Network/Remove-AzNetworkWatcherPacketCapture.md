@@ -9,8 +9,8 @@ ms.openlocfilehash: b3095aace7fa8e1959e51ef64aa92b6d2bcaffba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916275"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143263241"
 ---
 # Remove-AzNetworkWatcherPacketCapture
 
@@ -194,7 +194,7 @@ System.String
 
 ### System.Object
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan, paket, menangkap, lalu lintas, menghapus
 
 ## RELATED LINKS

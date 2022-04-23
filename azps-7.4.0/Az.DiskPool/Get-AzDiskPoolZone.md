@@ -9,8 +9,8 @@ ms.openlocfilehash: 49772287b6e02d800b1c15a094f34fcbf8001217
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425482"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143317007"
 ---
 # Get-AzDiskPoolZone
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IDiskPoolZoneInfo
 
-## CATATAN
+## NOTES
 
 ALIAS
 

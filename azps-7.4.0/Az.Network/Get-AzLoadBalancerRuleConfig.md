@@ -10,13 +10,13 @@ ms.openlocfilehash: a3d5fdae7b26ab1b43a760f1992bdfb813ec4289
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995579"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282121"
 ---
 # Get-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan untuk penyeimbang muatan.
+Mendapatkan konfigurasi aturan untuk load balancer.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Cmdlet **Get-AzLoadBalancerRuleConfig** mendapatkan satu atau beberapa konfigura
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi aturan penyeimbang muat
+### Contoh 1: Mendapatkan konfigurasi aturan load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 Get-AzLoadBalancerRuleConfig -Name "MyLBrulename" -LoadBalancer $slb
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muatan yang terkait dengan konfigurasi aturan yang akan didapatkan.
+Menentukan load balancer yang terkait dengan konfigurasi aturan yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -71,7 +71,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi aturan yang akan didapatkan.
 
 ```yaml
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -97,13 +97,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancingRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Add-AzLoadBalancerRuleConfig](./Add-AzLoadBalancerRuleConfig.md)
+[Dapatkan-AzLoadBalancerRuleConfig](./Add-AzLoadBalancerRuleConfig.md)
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [Remove-AzLoadBalancerRuleConfig](./Remove-AzLoadBalancerRuleConfig.md)
 

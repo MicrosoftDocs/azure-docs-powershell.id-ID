@@ -10,8 +10,8 @@ ms.openlocfilehash: b65fcbc132923f18c0a70187403e4c4ba2cef52a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142131156"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143263169"
 ---
 # Remove-AzVirtualNetwork
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
