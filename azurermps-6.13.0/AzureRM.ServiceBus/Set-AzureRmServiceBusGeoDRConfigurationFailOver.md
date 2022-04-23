@@ -9,8 +9,8 @@ ms.openlocfilehash: 274563165beefdc8a5d7575bd32328f68bf40efa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382526"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214407"
 ---
 # Set-AzureRmServiceBusGeoDRConfigurationFailOver
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Konfigurasi Geodr Bus Layanan
+Objek Konfigurasi Geodr Service Bus
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -205,6 +205,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

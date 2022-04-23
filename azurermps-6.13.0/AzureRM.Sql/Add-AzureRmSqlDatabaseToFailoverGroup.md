@@ -9,8 +9,8 @@ ms.openlocfilehash: c195215bb38152287e1aa65457a5a0ff4b5452cf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096471"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214137"
 ---
 # Add-AzureRmSqlDatabaseToFailoverGroup
 
@@ -148,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.FailoverGroup.Model.AzureSqlFailoverGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

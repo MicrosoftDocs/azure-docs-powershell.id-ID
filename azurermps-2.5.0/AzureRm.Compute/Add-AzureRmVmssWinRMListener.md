@@ -8,8 +8,8 @@ ms.openlocfilehash: dd9c13298adac34a53ed2f97bbc1e3edc95892df
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363201"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143221902"
 ---
 # Add-AzureRmVmssWinRMListener
 
@@ -152,7 +152,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: e8a4223e9daba389caeb752cfdc0d121bf39bd5a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141790161"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143247491"
 ---
 # New-AzHost
 
@@ -266,6 +266,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSHost
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

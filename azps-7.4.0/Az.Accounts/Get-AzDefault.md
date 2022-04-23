@@ -9,8 +9,8 @@ ms.openlocfilehash: a9e6c5702246d27e3799e234dbf3c777e773137f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170422"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143234639"
 ---
 # Get-AzDefault
 
@@ -103,6 +103,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSResourceGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

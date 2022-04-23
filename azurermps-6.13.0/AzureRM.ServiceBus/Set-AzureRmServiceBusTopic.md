@@ -9,8 +9,8 @@ ms.openlocfilehash: b08b4d9bd201f8a29ef878a4aaa73c926eb47151
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248174"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214317"
 ---
 # Set-AzureRmServiceBusTopic
 
@@ -185,6 +185,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSTopicAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

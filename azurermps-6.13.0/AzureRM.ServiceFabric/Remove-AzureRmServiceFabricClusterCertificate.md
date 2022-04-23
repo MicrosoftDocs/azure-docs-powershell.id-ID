@@ -9,8 +9,8 @@ ms.openlocfilehash: 088f90af1ce80bdda390de1ce62a9d38581344aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382530"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214191"
 ---
 # Remove-AzureRmServiceFabricClusterCertificate
 
@@ -143,6 +143,6 @@ Parameter: Cap Jempol (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

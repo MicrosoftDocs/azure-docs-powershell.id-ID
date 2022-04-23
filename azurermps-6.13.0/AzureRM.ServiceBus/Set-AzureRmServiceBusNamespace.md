@@ -9,8 +9,8 @@ ms.openlocfilehash: 6ac46fc8b8f94480e11f00d44efc690d97ee56a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774919"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214389"
 ---
 # Set-AzureRmServiceBusNamespace
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

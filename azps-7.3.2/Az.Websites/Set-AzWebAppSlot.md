@@ -10,16 +10,16 @@ ms.openlocfilehash: ec56f11e7e154fd9210a2c5e6cd6da674c0b2859
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848516"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143234837"
 ---
 # Set-AzWebAppSlot
 
 ## SYNOPSIS
-Mengubah slot Azure Web App.
+Memodifikasi slot Azure Web App.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebappslot) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Set-AzWebAppSlot [[-AppServicePlan] <String>] [[-DefaultDocuments] <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzWebApp** mengatur Slot Azure Web App.
+Cmdlet **Set-AzWebApp** menetapkan Slot Aplikasi Web Azure.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Cmdlet **Set-AzWebApp** mengatur Slot Azure Web App.
 PS C:\> Set-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001" -AppServicePlan "ContosoPlan"
 ```
 
-Perintah ini mengubah paket layanan aplikasi yang terkait dengan Slot001, di Webapp ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah rencana dan batasan layanan aplikasi yang terkait dengannya.
+Perintah ini mengubah paket layanan aplikasi yang terkait dengan Slot001, di Webapp ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket dan batasan layanan aplikasi yang terkait dengannya.
 https://docs.microsoft.com/azure/app-service/app-service-plan-manage#move-an-app-to-another-app-service-plan
 
 ### Contoh 2
@@ -69,11 +69,11 @@ https://docs.microsoft.com/azure/app-service/app-service-plan-manage#move-an-app
 PS C:\> Set-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001" -HttpLoggingEnabled $true
 ```
 
-Perintah ini mengatur HttpLoggingEnabled ke true untuk Slot Slot001 yang berkaitan dengan Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mengatur HttpLoggingEnabled ke true untuk Slot Slot001 yang berkaitan dengan Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ### Contoh 3
 
-Mengubah slot Azure Web App. (autogenerasi)
+Memodifikasi slot Azure Web App. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzWebAppSlot -AppSettings <Hashtable> -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS' -Slot 'Slot001'
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppServicePlan
-Nama Rencana App Service
+Nama Paket App Service
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Aplikasi Pengaturan HashTable. Pengaturan Aplikasi yang sudah ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
+HashTable Pengaturan Aplikasi. Pengaturan Aplikasi yang ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Aktifkan/nonaktifkan MSI pada slot yang sudah ada [PRATINJAU]
+Aktifkan/nonaktifkan MSI pada slot yang ada [PRATINJAU]
 
 ```yaml
 Type: System.Boolean
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoSwapSlotName
-Nama slot tujuan untuk pentukaran otomatis
+Nama slot tujuan untuk pertukaran otomatis
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureStoragePath
-Azure Storage untuk dipasang di dalam Web App untuk Kontainer. Menggunakan New-AzureRmWebAppAzureStoragePath untuk membuatnya
+Azure Storage untuk dipasang di dalam Aplikasi Web untuk Kontainer. Gunakan New-AzureRmWebAppAzureStoragePath untuk membuatnya
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.WebAppAzureStoragePath[]
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUrl
-Url Server Registri Kontainer Pribadi
+Url Server Registri Kontainer Privat
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Private Container Registry
+Nama Pengguna Registri Kontainer Privat
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Pencatatan Log Kesalahan Mendetail Diaktifkan Boolean
+Boolean Diaktifkan Pengelogan Kesalahan Terperinci
 
 ```yaml
 Type: System.Boolean
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableContainerContinuousDeployment
-Webhook penyebaran berkelanjutan kontainer Enables/Disables
+Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan kontainer
 
 ```yaml
 Type: System.Boolean
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -FtpsState
-Atur nilai status Ftps untuk aplikasi. Nilai yang Diperbolehkan [| AllAllowed | yang dinonaktifkan FtpsOnly].
+Atur nilai status Ftps untuk aplikasi. Nilai yang Diizinkan [AllAllowed | | yang dinonaktifkan FtpsOnly].
 
 ```yaml
 Type: System.String
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandlerMappings
-Handler Mappings IList
+Daftar IList Pemetaan Handler
 
 ```yaml
 Type: System.Collections.Generic.IList`1[Microsoft.Azure.Management.WebSites.Models.HandlerMapping]
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpsOnly
-Aktifkan/nonaktifkan pengalihan semua lalu lintas ke HTTPS di slot yang sudah ada
+Mengaktifkan/menonaktifkan pengalihan semua lalu lintas ke HTTPS pada slot yang ada
 
 ```yaml
 Type: System.Boolean
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedPipelineMode
-Nama Mode Saluran Terkelola
+Nama Mode Alur Terkelola
 
 ```yaml
 Type: System.String
@@ -398,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinTlsVersion
-Versi minimum TLS yang diperlukan untuk permintaan SSL. Nilai yang Diizinkan [1,0 | 1,1 | 1,2].
+Versi minimum TLS yang diperlukan untuk permintaan SSL. Nilai yang Diizinkan [1.0 | 1.1 | 1.2].
 
 ```yaml
 Type: System.String
@@ -412,7 +412,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestTracingEnabled
-Request Tracing Enabled Boolean
+Boolean Yang Diaktifkan Pelacakan Permintaan
 
 ```yaml
 Type: System.Boolean
@@ -517,7 +517,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Use32BitWorkerProcesss
+### -Use32BitWorkerProcess
 Menggunakan Boolean Proses Pekerja 32-bit
 
 ```yaml
@@ -548,7 +548,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebSocketsEnabled
-Soket Web Diaktifkan Boolean
+Web Sockets Diaktifkan Boolean
 
 ```yaml
 Type: System.Boolean
@@ -563,7 +563,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -571,13 +571,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -585,7 +585,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzWebAppSlot](./New-AzWebAppSlot.md)
 
-[Hapus-AzWebAppSlot](./Remove-AzWebAppSlot.md)
+[Remove-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
 [Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 

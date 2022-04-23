@@ -9,8 +9,8 @@ ms.openlocfilehash: 9e08d2ea4997ec8da486004373460cfda8d618de
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142484891"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143240813"
 ---
 # Remove-AzPurviewAccount
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

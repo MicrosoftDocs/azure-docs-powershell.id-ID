@@ -10,8 +10,8 @@ ms.openlocfilehash: f22b972d6b2cad4402cb453f3047829e3fb341bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248517"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143234783"
 ---
 # Start-AzWebAppSlot
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

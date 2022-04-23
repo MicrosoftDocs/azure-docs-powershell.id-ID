@@ -9,8 +9,8 @@ ms.openlocfilehash: 08e68a878267f706c280c8d461e8c904141cd06d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924158"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214237"
 ---
 # Get-AzureRmSignalR
 
@@ -162,6 +162,6 @@ Parameter: ResourceId (ByValue)
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

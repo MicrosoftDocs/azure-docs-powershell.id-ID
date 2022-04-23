@@ -10,8 +10,8 @@ ms.openlocfilehash: f9dbdaf531f4ccc35543dc542dc0637b9795360e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497023"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205947"
 ---
 # New-AzVpnClientRevokedCertificate
 
@@ -115,7 +115,7 @@ Cmdlet ini tidak menerima input pipelined.
 ###  
 Cmdlet ini membuat instans baru objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

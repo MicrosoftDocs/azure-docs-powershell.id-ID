@@ -8,8 +8,8 @@ ms.openlocfilehash: 0a474171b7659346a1d921f98920a9befc85eea8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104548"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143221905"
 ---
 # New-AzureStorageDirectory
 
@@ -234,7 +234,7 @@ Parameter: Direktori (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 1276ba100a795ca113f1f09064bc46dfdfddf39b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096457"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214083"
 ---
 # Enable-AzureRmSqlServerAdvancedThreatProtection
 
@@ -161,6 +161,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Sql.AdvancedThreatProtection.Model.ServerAdvancedThreatProtectionPolicyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

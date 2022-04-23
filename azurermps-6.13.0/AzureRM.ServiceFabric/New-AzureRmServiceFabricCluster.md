@@ -9,8 +9,8 @@ ms.openlocfilehash: 87fb451028fb0e345bd8748573424cf33066e52b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141880907"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214234"
 ---
 # New-AzureRmServiceFabricCluster
 
@@ -485,6 +485,6 @@ Parameter: ClusterSize (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSDeploymentResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

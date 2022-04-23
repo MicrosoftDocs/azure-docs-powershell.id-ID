@@ -9,8 +9,8 @@ ms.openlocfilehash: dcece7aa21797bac3b870913a1ecd1dbe6ad4087
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838768"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143228285"
 ---
 # Stop-AzDataFactoryV2PipelineRun
 
@@ -211,6 +211,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

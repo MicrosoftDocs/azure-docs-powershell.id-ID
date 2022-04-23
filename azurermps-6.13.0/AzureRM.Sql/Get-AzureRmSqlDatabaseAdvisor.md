@@ -10,8 +10,8 @@ ms.openlocfilehash: 853702ab34a6a9dab7e90f2335f99deb7155a837
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060151"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214065"
 ---
 # Get-AzureRmSqlDatabaseAdvisor
 
@@ -283,7 +283,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlDatabaseAdvisorModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, penasihat
 
 ## RELATED LINKS

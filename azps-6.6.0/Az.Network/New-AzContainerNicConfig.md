@@ -9,8 +9,8 @@ ms.openlocfilehash: 34394afe6e29d85be0757e2dfdf0a29f59e543aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142124711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143196083"
 ---
 # New-AzContainerNicConfig
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSContainerNetworkInterfaceConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 62dccdc3b55caa5d63036ed3298caa5a01514342
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214533"
 ---
 # Start-AzureRmJitNetworkAccessPolicy
 
@@ -212,6 +212,6 @@ Microsoft.Azure.Commands.Security.Models.JitNetworkAccessPolicies.PSSecurityJitN
 
 ### Microsoft.Azure.Commands.Security.Models.JitNetworkAccessPolicies.PSSecurityJitNetworkAccessPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

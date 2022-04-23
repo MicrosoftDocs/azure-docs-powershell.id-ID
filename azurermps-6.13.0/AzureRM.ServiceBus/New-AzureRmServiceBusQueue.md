@@ -9,8 +9,8 @@ ms.openlocfilehash: 29e2c0f04dff07e76907ee67c3e012c2b67c1582
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142060427"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214497"
 ---
 # New-AzureRmServiceBusQueue
 
@@ -428,6 +428,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSQueueAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

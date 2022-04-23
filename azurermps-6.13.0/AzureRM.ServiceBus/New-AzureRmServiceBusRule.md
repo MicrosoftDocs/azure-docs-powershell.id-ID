@@ -9,8 +9,8 @@ ms.openlocfilehash: 6ef5b99f916724dcdb746d67a6f9373e4bbfc9ae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382623"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143214461"
 ---
 # New-AzureRmServiceBusRule
 
@@ -237,6 +237,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSRulesAttributes
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
