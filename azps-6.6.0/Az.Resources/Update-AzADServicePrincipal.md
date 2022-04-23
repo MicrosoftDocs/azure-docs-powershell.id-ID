@@ -9,8 +9,8 @@ ms.openlocfilehash: 1672421fb49d4ddf3cf021e27c82ee9c66e39d3d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142224055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143296127"
 ---
 # Update-AzADServicePrincipal
 
@@ -292,6 +292,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

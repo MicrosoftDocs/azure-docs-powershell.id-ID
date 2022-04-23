@@ -9,8 +9,8 @@ ms.openlocfilehash: 099090987876e2e611c7d0c918e9baf89f7c044f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001349"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309843"
 ---
 # Get-AzProviderPreviewFeature
 
@@ -25,7 +25,7 @@ Get-AzProviderPreviewFeature [-Name <String>] -ProviderNamespace <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzProviderPreviewFeature** mendapatkan registrasi fitur di akun Anda.
+Cmdlet **Get-AzProviderPreviewFeature** mendapatkan pendaftaran fitur di akun Anda.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Get-AzProviderPreviewFeature** mendapatkan registrasi fitur di akun And
 Get-AzProviderPreviewFeature -FeatureName AllowApplicationSecurityGroups -ProviderNamespace Microsoft.Network
 ```
 
-Tindakan ini akan mendapatkan fitur AllowApplicationSecurityGroups untuk Microsoft.Network di akun Anda.
+Ini mendapatkan fitur AllowApplicationSecurityGroups untuk Microsoft.Network di akun Anda.
 
 ## PARAMETERS
 
@@ -53,7 +53,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama fitur.
 
 ```yaml
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderNamespace
-Ruang nama penyedia sumber daya.
+Namespace penyedia sumber daya.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -94,10 +94,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.ResourceManager.Models.PSSubscriptionFeatureRegistration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Register-AzProviderPreviewFeature](./Register-AzProviderPreviewFeature.md)
 
-[Unregister-AzProviderPreviewFeature](./Unregister-AzProviderPreviewFeature.md)
+[Batalkan pendaftaran-AzProviderPreviewFeature](./Unregister-AzProviderPreviewFeature.md)

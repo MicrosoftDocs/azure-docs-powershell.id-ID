@@ -9,8 +9,8 @@ ms.openlocfilehash: c3d1e7e3a76a2561c77c8d580b7365f8fd2e6fee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092987"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264051"
 ---
 # Get-AzNetworkWatcherTroubleshootingResult
 
@@ -142,7 +142,7 @@ System.String
 
 ### Microsoft.Azure.Commands.Network.Models.PSViewNsgRules
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, pemecahan masalah, VPN, koneksi
 
 ## RELATED LINKS

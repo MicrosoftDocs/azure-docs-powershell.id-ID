@@ -9,8 +9,8 @@ ms.openlocfilehash: 23bb5558f2b69bead89c61ceddec1ed3f52f7e85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173387"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143289506"
 ---
 # Remove-AzConfidentialLedger
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

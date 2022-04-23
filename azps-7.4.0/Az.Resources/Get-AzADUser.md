@@ -9,8 +9,8 @@ ms.openlocfilehash: 0c14b1cfd1ac08c6cc025e9a0a51d228876eeda0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420966"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310041"
 ---
 # Get-AzADUser
 
@@ -40,7 +40,7 @@ Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip 
  [-DefaultProfile <PSObject>] -DisplayName <String> [<CommonParameters>]
 ```
 
-### MulaiWithParameterSet
+### StartsWithParameterSet
 ```
 Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
  [-DefaultProfile <PSObject>] -StartsWith <String> [<CommonParameters>]
@@ -74,21 +74,21 @@ Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menuru
 Get-AzADUser -SignedIn
 ```
 
-Dapatkan pengguna masuk
+Mendapatkan pengguna masuk
 
-### Contoh 2: Daftar pengguna
+### Contoh 2: Mencantumkan pengguna
 ```powershell
 Get-AzADUser -First 10 -Select 'City' -AppendSelected
 ```
 
-Daftar 10 pengguna pertama dan tambahkan properti 'Kota' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
+Cantumkan 10 pengguna pertama dan tambahkan properti 'City' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
 
-### Contoh 3: Mendapatkan pengguna dengan nama tampilan
+### Contoh 3: Mendapatkan pengguna menurut nama tampilan
 ```powershell
 Get-AzADUser -DisplayName $name
 ```
 
-Mendapatkan pengguna dengan nama tampilan
+Mendapatkan pengguna menurut nama tampilan
 
 ## PARAMETERS
 
@@ -107,9 +107,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KonsistensiLevel
+### -ConsistencyLevel
 Menunjukkan tingkat konsistensi yang diminta.
-URL dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Orderby
-Item pesanan menurut nilai properti
+Mengurutkan item menurut nilai properti
 
 ```yaml
 Type: System.String[]
@@ -228,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pencarian
-Mencari item menurut frasa pencarian
+### -Cari
+Cari item menurut frasa pencarian
 
 ```yaml
 Type: System.String
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-nama pokok pengguna
+nama prinsipal pengguna
 
 ```yaml
 Type: System.String
@@ -318,7 +318,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -342,7 +342,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser
 
-## CATATAN
+## NOTES
 
 ALIAS
 

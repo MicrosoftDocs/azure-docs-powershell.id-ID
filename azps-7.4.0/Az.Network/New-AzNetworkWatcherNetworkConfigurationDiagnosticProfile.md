@@ -9,8 +9,8 @@ ms.openlocfilehash: 416aaa2712897e7196105d6dbe428dc363cdda00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431324"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281097"
 ---
 # New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile
 
@@ -30,7 +30,7 @@ Cmdlet New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile membuat objek p
 
 ## EXAMPLES
 
-### Contoh 1: Memanggil sesi diagnostik konfigurasi jaringan untuk VM dan profil jaringan yang ditentukan
+### Contoh 1: Memanggil sesi diagnostik konfigurasi jaringan untuk VM dan profil jaringan tertentu
 ```powershell
 $profile = New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile -Direction Inbound -Protocol Tcp -Source 10.1.1.4 -Destination * -DestinationPort 50
 Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic -Location eastus -TargetResourceId /subscriptions/61cc8a98-a8be-4bfe-a04e-0b461f93fe35/resourceGroups/NwRgEastUS/providers/Microsoft.Compute/virtualMachines/vm1 -Profile $profile
@@ -84,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
+### -Destination
 Tujuan lalu lintas.
 Nilai yang diterima adalah: '*', Alamat IP/CIDR, Tag Layanan.
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Pelabuhan tujuan lalu lintas.
+Port tujuan lalu lintas.
 Nilai yang diterima adalah '*', port (misalnya, 3389) dan rentang port (misalnya, 80-100).
 
 ```yaml
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Protokol untuk diverifikasi pada.
+Protokol yang akan diverifikasi.
 Nilai yang diterima adalah '*', TCP, UDP.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Sumber lalu lintas.
 Nilai yang diterima adalah '*', Alamat IP/CIDR, Tag Layanan.
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -175,8 +175,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkConfigurationDiagnosticProfile
 
-## CATATAN
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, diagnostik, profil
+## NOTES
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat, diagnostik, profil
 
 ## RELATED LINKS
 
@@ -184,7 +184,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -224,9 +224,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

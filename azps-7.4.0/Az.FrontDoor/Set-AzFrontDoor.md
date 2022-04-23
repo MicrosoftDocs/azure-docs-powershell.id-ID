@@ -9,8 +9,8 @@ ms.openlocfilehash: 3b073a4180978f01d31fb2a41d57ff9358253762
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143316377"
 ---
 # Set-AzFrontDoor
 
@@ -463,7 +463,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

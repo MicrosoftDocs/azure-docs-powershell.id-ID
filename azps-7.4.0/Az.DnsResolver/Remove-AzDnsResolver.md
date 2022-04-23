@@ -9,8 +9,8 @@ ms.openlocfilehash: 74af56cda6fb138ee7569c7886e5268a5e3001f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168886"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143316665"
 ---
 # Remove-AzDnsResolver
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

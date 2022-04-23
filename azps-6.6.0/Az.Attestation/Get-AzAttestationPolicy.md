@@ -9,8 +9,8 @@ ms.openlocfilehash: cf54f3488a4d5fa142aa6d96520c93cc845e0f77
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142274598"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143302895"
 ---
 # Get-AzAttestationPolicy
 
@@ -240,6 +240,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Attestation.Models.PSPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

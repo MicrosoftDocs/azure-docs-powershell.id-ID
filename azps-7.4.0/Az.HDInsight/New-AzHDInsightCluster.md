@@ -10,8 +10,8 @@ ms.openlocfilehash: 9dc8e52b1c9562e17f2f39ceebc1b30d3619dc2c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422976"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143316125"
 ---
 # New-AzHDInsightCluster
 
@@ -107,7 +107,7 @@ New-AzHDInsightCluster [-Location] <String> [-ResourceGroupName] <String> [-Clus
 ## DESCRIPTION
 New-AzHDInsightCluster membuat kluster Azure HDInsight menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet New-AzHDInsightClusterConfig.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat menghubungi di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /servicePrincipals/{id}
 
@@ -648,7 +648,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdditionalStorageAccounts
-Menentukan akun Azure Storage tambahan untuk kluster.
+Menentukan akun Penyimpanan Azure tambahan untuk kluster.
 Anda juga dapat menggunakan cmdlet Add-AzHDInsightStorage.
 
 ```yaml
@@ -1077,7 +1077,7 @@ Accept wildcard characters: False
 ```
 
 ### -HiveMetastore
-Menentukan SQL Database untuk menyimpan metadata Sarang.
+Menentukan Database SQL untuk menyimpan metadata Hive.
 Anda juga dapat menggunakan cmdlet Add-AzHDInsightMetastore.
 
 ```yaml
@@ -1599,7 +1599,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightCluster
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, hadoop, hdinsight, hd, wawasan
 
 ## RELATED LINKS

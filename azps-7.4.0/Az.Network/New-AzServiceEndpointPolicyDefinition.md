@@ -9,8 +9,8 @@ ms.openlocfilehash: 3519eeb9f5710c3cc94dd367365ff776b436e542
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995286"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143280845"
 ---
 # New-AzServiceEndpointPolicyDefinition
 
@@ -38,7 +38,7 @@ Perintah ini membuat definisi kebijakan titik akhir layanan dengan nama ServiceE
 
 ### Contoh 2
 
-Membuat definisi kebijakan titik akhir layanan. (autogenerasi)
+Membuat definisi kebijakan titik akhir layanan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Penjabaran dari definisi
+Deskripsi definisi
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kebijakan titik akhir layanan
 
 ```yaml
@@ -92,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Layanan
+### -Service
 Nama layanan
 
 ```yaml
@@ -122,8 +122,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,17 +153,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSServiceEndpointPolicyDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

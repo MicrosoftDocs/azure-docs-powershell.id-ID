@@ -10,8 +10,8 @@ ms.openlocfilehash: a8ac0d0dd7435c209fd90ce9e759a0538997a012
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142480121"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143302553"
 ---
 # Remove-AzAutomationDscNodeConfiguration
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

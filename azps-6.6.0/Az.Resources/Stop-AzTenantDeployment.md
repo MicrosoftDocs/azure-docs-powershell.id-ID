@@ -9,8 +9,8 @@ ms.openlocfilehash: aad6766b0273a8372c41c6257a0e94bfc0c4e541
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142042175"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143296181"
 ---
 # Stop-AzTenantDeployment
 
@@ -197,6 +197,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

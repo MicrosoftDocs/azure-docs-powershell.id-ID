@@ -9,13 +9,13 @@ ms.openlocfilehash: ead9a4b0b8350622f4f090cd582260cd4a7439a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422046"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281115"
 ---
 # New-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
-Membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan tertentu.
+Membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan yang ditentukan.
 
 ## SYNTAX
 
@@ -71,7 +71,7 @@ New-AzNetworkWatcherFlowLog -Location <String> -Name <String> -TargetResourceId 
 ```
 
 ## DESCRIPTION
-perintah New-AzNetworkWatcherFlowLog membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan yang ditentukan.
+New-AzNetworkWatcherFlowLog perintah membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan yang ditentukan.
 
 ## EXAMPLES
 
@@ -143,7 +143,7 @@ FlowAnalyticsConfiguration : {
                                }
                              }
 ```
-Jika Anda ingin menonaktifkan sumber daya flowLog tempat TrafficAnalytics dikonfigurasi, Anda juga perlu menonaktifkan TrafficAnalytics. Itu bisa dilakukan seperti dalam contoh 2.
+Jika Anda ingin menonaktifkan sumber daya flowLog yang trafficAnalytics-nya dikonfigurasi, Anda juga perlu menonaktifkan TrafficAnalytics. Ini dapat dilakukan seperti dalam contoh 2.
 ## PARAMETERS
 
 ### -DefaultProfile
@@ -161,8 +161,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Tandai untuk mengaktifkan/menonaktifkan pembuatan log alur.
+### -Diaktifkan
+Bendera untuk mengaktifkan/menonaktifkan pengelogan alur.
 
 ```yaml
 Type: Boolean
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRetention
-Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
+Benderai untuk mengaktifkan/menonaktifkan retensi.
 
 ```yaml
 Type: Boolean
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTrafficAnalytics
-Bendera untuk mengaktifkan/menonaktifkan TrafficAnalytics
+Benderai untuk mengaktifkan/menonaktifkan TrafficAnalytics
 
 ```yaml
 Type: SwitchParameter
@@ -206,7 +206,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -FormatType
-Tipe file log alur.
+Jenis file log alur.
 Satu-satunya nilai yang didukung sekarang adalah 'JSON'.
 
 ```yaml
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: String
@@ -267,7 +267,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama log alur.
 
 ```yaml
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama network watcher.
 
 ```yaml
 Type: String
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: String
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionPolicyDays
-Jumlah hari untuk mempertahankan catatan log alur.
+Jumlah hari untuk menyimpan rekaman log alur.
 
 ```yaml
 Type: Int32
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficAnalyticsWorkspaceId
-Id Sumber Daya ruang kerja yang dilampirkan.
+Id Sumber Daya dari ruang kerja yang dilampirkan.
 
 ```yaml
 Type: String
@@ -417,8 +417,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -433,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -449,7 +449,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -459,7 +459,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLogResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -467,7 +467,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -507,9 +507,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

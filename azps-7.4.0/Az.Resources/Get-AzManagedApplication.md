@@ -9,10 +9,10 @@ ms.openlocfilehash: 9c7b904cb2b2cb37094bdc0ec6ac7ae714f281c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429897"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309951"
 ---
-# Get-AzManagedApplication
+# Baru-AzManagedApplication
 
 ## SYNOPSIS
 Mendapatkan aplikasi terkelola
@@ -38,11 +38,11 @@ Get-AzManagedApplication -Id <String> [-ApiVersion <String>] [-Pre] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzManagedApplication** mendapatkan aplikasi yang dikelola
+Cmdlet **Get-AzManagedApplication** mendapatkan aplikasi terkelola
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua aplikasi terkelola di bawah grup sumber daya
+### Contoh 1: Mendapatkan semua aplikasi terkelola di bawah grup sumber daya
 ```powershell
 Get-AzManagedApplication -ResourceGroupName "MyRG"
 ```
@@ -59,8 +59,8 @@ Perintah ini mendapatkan semua aplikasi terkelola di bawah langganan saat ini
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -105,8 +105,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama aplikasi yang dikelola.
+### -Name
+Nama aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -120,8 +120,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

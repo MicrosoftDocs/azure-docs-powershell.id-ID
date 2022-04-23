@@ -9,8 +9,8 @@ ms.openlocfilehash: 50d6ecf947606141071c8434fc7c69e7eaa5283f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837392"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143316413"
 ---
 # New-AzElasticTagRule
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IMonitoringTagRules
 
-## CATATAN
+## NOTES
 
 ALIAS
 

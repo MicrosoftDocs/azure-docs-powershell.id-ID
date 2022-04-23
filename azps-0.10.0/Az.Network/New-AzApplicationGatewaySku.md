@@ -10,8 +10,8 @@ ms.openlocfilehash: 0b87119ccec521b85a210dc8685874bd4ba4b9ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142492271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143263709"
 ---
 # New-AzApplicationGatewaySku
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

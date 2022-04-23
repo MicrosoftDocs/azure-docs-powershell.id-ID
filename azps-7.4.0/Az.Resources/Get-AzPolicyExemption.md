@@ -9,8 +9,8 @@ ms.openlocfilehash: a48d6a4c0473808d5a5d2d1b12cd04ee32af21d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309879"
 ---
 # Get-AzPolicyExemption
 
@@ -39,7 +39,7 @@ Get-AzPolicyExemption -Id <String> [-PolicyAssignmentIdFilter <String>] [-ApiVer
 
 ## DESCRIPTION
 Cmdlet **Get-AzPolicyExemption** mendapatkan semua pengecualian kebijakan atau pengecualian tertentu.
-Identifikasi pengecualian kebijakan untuk mendapatkan berdasarkan nama dan lingkup atau menurut ID.
+Identifikasi pengecualian kebijakan untuk mendapatkan berdasarkan nama dan cakupan atau berdasarkan ID.
 
 ## EXAMPLES
 
@@ -50,16 +50,16 @@ Get-AzPolicyExemption
 
 Perintah ini mendapatkan semua pengecualian kebijakan.
 
-### Contoh 2: Dapatkan pengecualian kebijakan tertentu
+### Contoh 2: Mendapatkan pengecualian kebijakan tertentu
 ```powershell
 $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 Get-AzPolicyExemption -Name 'PolicyExemption07' -Scope $ResourceGroup.ResourceId
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
-Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 untuk lingkup yang diidentifikasi properti **ResourceId** $ResourceGroup.
+Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 untuk cakupan yang diidentifikasi properti **ResourceId** $ResourceGroup.
 
-### Contoh 3: Dapatkan semua pengecualian kebijakan yang terkait dengan penetapan kebijakan
+### Contoh 3: Mendapatkan semua pengecualian kebijakan yang terkait dengan penetapan kebijakan
 ```powershell
 $Assignment = Get-AzPolicyAssignment -Name 'PolicyAssignment07'
 Get-AzPolicyExemption -PolicyAssignmentIdFilter $Assignment.ResourceId
@@ -71,8 +71,8 @@ Perintah kedua mendapatkan semua pengecualian kebijakan yang ditetapkan dengan p
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID pembebasan kebijakan yang sepenuhnya memenuhi syarat untuk didapatkan, termasuk lingkup, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
+ID pengecualian kebijakan yang sepenuhnya memenuhi syarat untuk mendapatkan, termasuk cakupan, misalnya /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/policyExemptions/{policyExemptionName}.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDescendent
-Menyebabkan daftar pengecualian kebijakan yang dikembalikan untuk menyertakan semua pengecualian yang terkait dengan lingkup tertentu, termasuk yang berasal dari lingkup leluhur dan yang berasal dari lingkup keturunan.
+Menyebabkan daftar pengecualian kebijakan yang dikembalikan menyertakan semua pengecualian yang terkait dengan cakupan yang diberikan, termasuk yang berasal dari cakupan leluhur dan yang berasal dari cakupan keturunan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,8 +131,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pembebasan kebijakan yang akan didapatkan.
+### -Name
+Nama pengecualian kebijakan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyAssignmentIdFilter
-Membatasi daftar pengecualian kebijakan yang dikembalikan untuk penetapan kebijakan yang ditetapkan oleh Id yang sepenuhnya memenuhi syarat ini.
+Membatasi daftar pengecualian kebijakan yang dikembalikan kepada mereka yang menetapkan penetapan kebijakan yang diidentifikasi oleh Id yang sepenuhnya memenuhi syarat ini.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup pengecualian kebijakan untuk mendapatkan, misalnya /providers/managementGroups/{managementGroupName}, default untuk langganan saat ini.
+### -Cakupan
+Cakupan pengecualian kebijakan untuk mendapatkan, misalnya /providers/managementGroups/{managementGroupName}, default ke langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyExemption
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

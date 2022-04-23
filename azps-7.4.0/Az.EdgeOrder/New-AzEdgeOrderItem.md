@@ -9,8 +9,8 @@ ms.openlocfilehash: d1bd6bd71936d963e7409d558ed56da053e74f3c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168850"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143316611"
 ---
 # New-AzEdgeOrderItem
 
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IOrderItemResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: a87440d2ef349356756e2c2e906ef0dc9d55ccec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141868172"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143259821"
 ---
 # Get-AzDataBoxEdgeTrigger
 
@@ -175,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeTrigger
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

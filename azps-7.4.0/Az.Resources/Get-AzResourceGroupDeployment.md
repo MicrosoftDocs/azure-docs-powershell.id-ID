@@ -10,8 +10,8 @@ ms.openlocfilehash: bee0dd05c3a55d91eb9479e1d55ecac354c3a62e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309825"
 ---
 # Get-AzResourceGroupDeployment
 
@@ -34,24 +34,24 @@ Get-AzResourceGroupDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureContex
 
 ## DESCRIPTION
 Cmdlet **Get-AzResourceGroupDeployment** mendapatkan penyebaran dalam grup sumber daya Azure.
-Tentukan parameter *Nama* atau *Id* untuk memfilter hasil.
+Tentukan parameter *Nama* atau *Id* untuk memfilter hasilnya.
 Secara default, **Get-AzResourceGroupDeployment** mendapatkan semua penyebaran untuk grup sumber daya tertentu.
 Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web.
 Grup sumber daya Azure adalah kumpulan sumber daya Azure yang disebarkan sebagai unit.
 Penyebaran adalah operasi yang membuat sumber daya dalam grup sumber daya tersedia untuk digunakan.
 Untuk informasi selengkapnya tentang sumber daya Azure dan grup sumber daya Azure, lihat cmdlet New-AzResourceGroup.
 Anda dapat menggunakan cmdlet ini untuk pelacakan.
-Untuk proses debug, gunakan cmdlet ini dengan cmdlet Get-AzLog.
+Untuk penelusuran kesalahan, gunakan cmdlet ini dengan cmdlet Get-AzLog.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua penyebaran untuk grup sumber daya
+### Contoh 1: Mendapatkan semua penyebaran untuk grup sumber daya
 ```powershell
 Get-AzResourceGroupDeployment -ResourceGroupName "ContosoLabsRG"
 ```
 
 Perintah ini mendapatkan semua penyebaran untuk grup sumber daya ContosoLabsRG.
-Output memperlihatkan penyebaran untuk blog WordPress yang menggunakan templat galeri.
+Output menunjukkan penyebaran untuk blog WordPress yang menggunakan templat galeri.
 
 ### Contoh 2: Mendapatkan penyebaran berdasarkan nama
 ```powershell
@@ -59,17 +59,17 @@ Get-AzResourceGroupDeployment -ResourceGroupName "ContosoLabsRG" -Name "DeployWe
 ```
 
 Perintah ini mendapatkan penyebaran DeployWebsite01 dari grup sumber daya ContosoLabsRG.
-Anda dapat menetapkan nama untuk penyebaran saat membuatnya menggunakan cmdlet **New-AzResourceGroup** atau **New-AzResourceGroupDeployment** .
+Anda dapat menetapkan nama ke penyebaran saat membuatnya dengan menggunakan cmdlet **New-AzResourceGroup** atau **New-AzResourceGroupDeployment** .
 Jika Anda tidak menetapkan nama, cmdlet menyediakan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
 
-### Contoh 3: Dapatkan penyebaran semua grup sumber daya
+### Contoh 3: Mendapatkan penyebaran semua grup sumber daya
 ```powershell
 Get-AzResourceGroup | Get-AzResourceGroupDeployment | Format-Table ResourceGroupName, DeploymentName, ProvisioningState
 ```
 
-Perintah ini mendapatkan semua grup sumber daya dalam langganan Anda menggunakan cmdlet Get-AzResourceGroup.
-Perintah melewati grup sumber daya ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan semua penyebaran semua grup sumber daya dalam langganan, dan mengirimkan hasil ke cmdlet Format-Table untuk menampilkan nilai properti **ResourceGroupName**, **DeploymentName**, dan **ProvisioningState** mereka.
+Perintah ini mendapatkan semua grup sumber daya dalam langganan Anda dengan menggunakan cmdlet Get-AzResourceGroup.
+Perintah meneruskan grup sumber daya ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet saat ini mendapatkan semua penyebaran semua grup sumber daya dalam langganan, dan meneruskan hasilnya ke cmdlet Format-Table untuk menampilkan nilai properti **ResourceGroupName**, **DeploymentName**, dan **ProvisioningState** mereka.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID penyebaran grup sumber daya untuk didapatkan.
+Menentukan ID penyebaran grup sumber daya yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -103,9 +103,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penyebaran yang akan didapatkan.
-Karakter wildcard tidak diizinkan.
+Karakter kartubebas tidak diizinkan.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
 Cmdlet mendapatkan penyebaran untuk grup sumber daya yang ditentukan parameter ini.
-Karakter wildcard tidak diizinkan.
-Parameter ini diperlukan dan Anda hanya dapat menentukan satu grup sumber daya dalam setiap perintah.
+Karakter kartubebas tidak diizinkan.
+Parameter ini diperlukan dan Anda hanya dapat menentukan satu grup sumber daya di setiap perintah.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -163,13 +163,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSResourceGroupDeployment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzResourceGroup](./Get-AzResourceGroup.md)
 
-[AzResourceGroup baru](./New-AzResourceGroup.md)
+[Baru-AzResourceGroup](./New-AzResourceGroup.md)
 
 [New-AzResourceGroupDeployment](./New-AzResourceGroupDeployment.md)
 

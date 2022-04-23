@@ -10,13 +10,13 @@ ms.openlocfilehash: 6cf3a1f514257698f0b5c26573e8c96e94acb811
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143309771"
 ---
 # Get-AzRoleDefinition
 
 ## SYNOPSIS
-Mencantumkan semua peran RBAC Azure yang tersedia untuk penetapan.
+Mencantumkan semua peran Azure RBAC yang tersedia untuk penugasan.
 
 ## SYNTAX
 
@@ -39,8 +39,8 @@ Get-AzRoleDefinition [-Scope <String>] [-Custom] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Gunakan perintah Get-AzRoleDefinition dengan nama peran tertentu untuk menampilkan detailnya.
-Untuk memeriksa operasi individual yang diberi peran akses, tinjau properti Tindakan dan Notaksi peran tersebut.
+Gunakan perintah Get-AzRoleDefinition dengan nama peran tertentu untuk melihat detailnya.
+Untuk memeriksa setiap operasi yang diberikan akses oleh peran, tinjau properti Tindakan dan NotActions dari peran tersebut.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Untuk memeriksa operasi individual yang diberi peran akses, tinjau properti Tind
 Get-AzRoleDefinition -Name Reader
 ```
 
-Dapatkan definisi peran Pembaca
+Mendapatkan definisi peran Pembaca
 
 ### Contoh 2
 ```powershell
@@ -61,7 +61,7 @@ Mencantumkan semua definisi peran RBAC
 ## PARAMETERS
 
 ### -Kustom
-Jika ditentukan, hanya menampilkan peran kustom yang dibuat dalam direktori.
+Jika ditentukan, hanya menampilkan peran yang dibuat khusus di direktori.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,9 +105,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi peran.
-Misalnya Pembaca, Kontributor, Kontributor Mesin Virtual.
+Misalnya Pembaca, Kontributor, Kontributor Komputer Virtual.
 
 ```yaml
 Type: System.String
@@ -121,8 +121,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup definisi peran.
+### -Cakupan
+Cakupan definisi peran.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -151,8 +151,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
-## CATATAN
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
+## NOTES
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 48d27bcd5f651d5af741db439847fe31c7260f7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142054883"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143302805"
 ---
 # Set-AzAttestationPolicy
 
@@ -223,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
