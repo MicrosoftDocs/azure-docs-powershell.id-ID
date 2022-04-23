@@ -8,8 +8,8 @@ ms.openlocfilehash: 193353a3e578ec0f644be605498214d5bf4944c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103896"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052808"
 ---
 # Get-AzureRmVpnClientPackage
 
@@ -123,7 +123,7 @@ Parameter 'VirtualNetworkGatewayName' menerima nilai tipe 'String' dari pipeline
 ###  
 **Get-AzureRmVpnClientPackage** mengembalikan instans objek System.String.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

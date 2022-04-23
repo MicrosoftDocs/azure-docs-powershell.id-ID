@@ -9,8 +9,8 @@ ms.openlocfilehash: 425af0e8ae8d40a7b2a56f39f2dae9b440f1b8b7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001194"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143058203"
 ---
 # Set-AzSqlElasticJobCredential
 
@@ -222,6 +222,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobCredentialModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

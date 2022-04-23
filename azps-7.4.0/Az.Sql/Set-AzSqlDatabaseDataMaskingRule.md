@@ -10,8 +10,8 @@ ms.openlocfilehash: 01ad51523cd6a407a49b3b6770c9afe6234523a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420269"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143058275"
 ---
 # Set-AzSqlDatabaseDataMaskingRule
 
@@ -337,7 +337,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataMasking.Model.DatabaseDataMaskingRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

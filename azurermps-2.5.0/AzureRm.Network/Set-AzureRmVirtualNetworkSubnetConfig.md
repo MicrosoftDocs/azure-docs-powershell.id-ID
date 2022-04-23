@@ -8,8 +8,8 @@ ms.openlocfilehash: b13a06fbc2bd7f071888dcd0504d3e1963cbedd8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141780483"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143051593"
 ---
 # Set-AzureRmVirtualNetworkSubnetConfig
 
@@ -229,7 +229,7 @@ Parameter 'VirtualNetwork' menerima nilai tipe 'PSVirtualNetwork' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

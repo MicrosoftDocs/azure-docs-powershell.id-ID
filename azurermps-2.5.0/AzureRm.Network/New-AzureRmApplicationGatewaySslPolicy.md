@@ -8,8 +8,8 @@ ms.openlocfilehash: 6c28665f35a7422a731aefd4ccf1c4ecabc549d4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781207"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052648"
 ---
 # New-AzureRmApplicationGatewaySslPolicy
 
@@ -43,7 +43,7 @@ Perintah ini membuat kebijakan kustom.
 ## PARAMETERS
 
 ### -CipherSuite
-Rangkaian sandi Ssl untuk diaktifkan dalam urutan yang ditentukan untuk gateway aplikasi
+Suite sandi Ssl untuk diaktifkan dalam urutan yang ditentukan ke gateway aplikasi
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledSslProtocols
-Menentukan protokol mana yang dinon-fungsikan.
+Menentukan protokol mana yang dinonaktifkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - TLSv1_0 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinProtocolVersion
-Versi minimum protokol Ssl untuk didukung di gateway aplikasi
+Versi minimum protokol Ssl yang akan didukung pada gateway aplikasi
 
 ```yaml
 Type: String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-Nama kebijakan Ssl yang sudah ditentukan sebelumnya
+Nama kebijakan Ssl yang telah ditentukan sebelumnya
 
 ```yaml
 Type: String
@@ -140,8 +140,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -182,8 +182,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewaySslPolicy
 
-## CATATAN
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+## NOTES
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

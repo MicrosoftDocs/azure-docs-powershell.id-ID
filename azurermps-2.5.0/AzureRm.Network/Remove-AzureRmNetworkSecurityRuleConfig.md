@@ -8,8 +8,8 @@ ms.openlocfilehash: 9aed668c977fc1156e2a52723273b1d6d37fba71
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888775"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143052155"
 ---
 # Remove-AzureRmNetworkSecurityRuleConfig
 
@@ -103,7 +103,7 @@ Parameter 'NetworkSecurityGroup' menerima nilai tipe 'PSNetworkSecurityGroup' da
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
