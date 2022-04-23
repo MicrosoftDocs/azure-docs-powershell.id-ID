@@ -10,8 +10,8 @@ ms.openlocfilehash: 535d65bfeaa01c0c992ecdcc8370b377a12b1bee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142349351"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143341055"
 ---
 # Get-AzBatchRemoteLoginSetting
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSRemoteLoginSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

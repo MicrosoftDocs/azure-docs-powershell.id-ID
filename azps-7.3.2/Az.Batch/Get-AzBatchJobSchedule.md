@@ -10,8 +10,8 @@ ms.openlocfilehash: 948723e06b482ed94adca678d35e33246d737c17
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142219195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143341109"
 ---
 # Get-AzBatchJobSchedule
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCloudJobSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

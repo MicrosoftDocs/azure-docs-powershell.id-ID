@@ -10,8 +10,8 @@ ms.openlocfilehash: f129b2e24ecf899cc5ae716ea5a8781386d5f7e7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142037873"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143341217"
 ---
 # Get-AzBatchCertificate
 
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
