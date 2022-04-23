@@ -9,8 +9,8 @@ ms.openlocfilehash: e47a5c584a73d12ffcfbd92b252d574c4b6887fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141900009"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143292617"
 ---
 # Register-AzModule
 
@@ -80,6 +80,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### System.Object
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

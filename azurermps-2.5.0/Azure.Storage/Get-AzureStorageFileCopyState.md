@@ -8,8 +8,8 @@ ms.openlocfilehash: 61e633bc0890a8971b0be9d1b5950d990d32e8f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141930713"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143268065"
 ---
 # Get-AzureStorageFileCopyState
 
@@ -206,7 +206,7 @@ Parameter: File (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
