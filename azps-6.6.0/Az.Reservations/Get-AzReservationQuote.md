@@ -9,8 +9,8 @@ ms.openlocfilehash: b282fd0da4a60858117ed93be846ba1d6c1e67f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141906915"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143192267"
 ---
 # Get-AzReservationQuote
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Reservations.Models.CalculatePriceResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

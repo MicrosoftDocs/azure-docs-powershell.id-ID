@@ -7,8 +7,8 @@ ms.openlocfilehash: c4b2a382a6be1ed2ba0348983f69ab53c20118c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245673"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211671"
 ---
 # Get-AzureServiceProjectRoleRuntime
 
@@ -72,7 +72,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
