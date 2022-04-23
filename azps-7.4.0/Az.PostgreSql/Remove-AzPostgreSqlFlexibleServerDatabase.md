@@ -9,8 +9,8 @@ ms.openlocfilehash: 1c06e1ea526a21f1395e4cfa53099b0f225a6f66
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278595"
 ---
 # Remove-AzPostgreSqlFlexibleServerDatabase
 
@@ -233,7 +233,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

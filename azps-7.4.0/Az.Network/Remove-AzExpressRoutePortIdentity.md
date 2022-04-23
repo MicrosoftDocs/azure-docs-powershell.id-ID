@@ -9,8 +9,8 @@ ms.openlocfilehash: 8c7040a008facc683a56a3f5286e5483cb808ffc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995166"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143223839"
 ---
 # Remove-AzExpressRoutePortIdentity
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRoutePort
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Get-AzExpressRoutePortIdentity](./Get-AzExpressRoutePortIdentity.md)

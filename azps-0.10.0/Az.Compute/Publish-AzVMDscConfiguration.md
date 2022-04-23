@@ -10,8 +10,8 @@ ms.openlocfilehash: d099feea5efe52d8bcc6a0067550a7c4ae9bbc3a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141917985"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265275"
 ---
 # Publish-AzVMDscConfiguration
 
@@ -291,7 +291,7 @@ Parameter 'ConfigurationPath' menerima nilai tipe 'String' dari pipeline
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

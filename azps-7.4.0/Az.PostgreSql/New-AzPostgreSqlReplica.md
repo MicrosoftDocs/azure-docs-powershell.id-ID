@@ -9,8 +9,8 @@ ms.openlocfilehash: e74fcd85ba58bf17449fa3d631435f18f69879fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278685"
 ---
 # New-AzPostgreSqlReplica
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda bisa mendapatkan nilai ini dari API Azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.Api20171201.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -253,7 +253,7 @@ MASTER <IServer>: Objek server sumber untuk membuat replika dari.
   - `[AdministratorLogin <String>]`: Nama masuk administrator server. Hanya dapat ditentukan ketika server sedang dibuat (dan diperlukan untuk pembuatan).
   - `[EarliestRestoreDate <DateTime?>]`: Waktu pembuatan titik pemulihan paling awal (format ISO8601)
   - `[FullyQualifiedDomainName <String>]`: Nama domain server yang sepenuhnya memenuhi syarat.
-  - `[IdentityType <IdentityType?>]`: Tipe identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory untuk sumber daya secara otomatis.
+  - `[IdentityType <IdentityType?>]`: Tipe identitas. Atur ini ke 'SystemAssigned' untuk membuat dan menetapkan prinsipal Azure Active Directory secara otomatis untuk sumber daya.
   - `[InfrastructureEncryption <InfrastructureEncryption?>]`: Status memperlihatkan apakah enkripsi infrastruktur yang diaktifkan server.
   - `[MasterServerId <String>]`: Id server master dari server replika.
   - `[MinimalTlsVersion <MinimalTlsVersionEnum?>]`: Terapkan versi Tls minimal untuk server.
@@ -268,7 +268,7 @@ MASTER <IServer>: Objek server sumber untuk membuat replika dari.
   - `[SslEnforcement <SslEnforcementEnum?>]`: Aktifkan penerapan ssl atau tidak saat tersambung ke server.
   - `[StorageProfileBackupRetentionDay <Int32?>]`: Mencadangkan hari penyimpanan untuk server.
   - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Aktifkan Geo-redundant atau tidak untuk cadangan server.
-  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Storage Pertumbuhan Otomatis.
+  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Penyimpanan Otomatis Tumbuh.
   - `[StorageProfileStorageMb <Int32?>]`: Penyimpanan maksimal yang diperbolehkan untuk server.
   - `[UserVisibleState <ServerState?>]`: Status server yang terlihat oleh pengguna.
   - `[Version <ServerVersion?>]`: Versi server.

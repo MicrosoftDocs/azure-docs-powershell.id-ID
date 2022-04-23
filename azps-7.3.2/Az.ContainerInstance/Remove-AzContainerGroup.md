@@ -9,8 +9,8 @@ ms.openlocfilehash: a2a8cbf6e8dd29398f8e100654443b3bf8fec71b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142294045"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143246843"
 ---
 # Remove-AzContainerGroup
 
@@ -232,7 +232,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IContainerGroup
 
-## CATATAN
+## NOTES
 
 ALIAS
 

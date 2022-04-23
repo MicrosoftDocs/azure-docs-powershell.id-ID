@@ -9,8 +9,8 @@ ms.openlocfilehash: adab7d7bb3e3f6cd8aa7cf7a9df352b89dba653f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168555"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284895"
 ---
 # Update-AzKeyVaultManagedStorageAccount
 
@@ -267,7 +267,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

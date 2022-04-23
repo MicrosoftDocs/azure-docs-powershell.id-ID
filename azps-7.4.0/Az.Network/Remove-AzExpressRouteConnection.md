@@ -9,8 +9,8 @@ ms.openlocfilehash: 84c0620f54f477553e68664207f36ef2379c21e7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172594"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143223875"
 ---
 # Remove-AzExpressRouteConnection
 
@@ -248,6 +248,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

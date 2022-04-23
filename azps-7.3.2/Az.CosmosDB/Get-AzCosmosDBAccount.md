@@ -9,8 +9,8 @@ ms.openlocfilehash: b13a1d9929a246dc2c6e9ede8160f4796e66f5bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142376675"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143246753"
 ---
 # Get-AzCosmosDBAccount
 
@@ -138,6 +138,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSDatabaseAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

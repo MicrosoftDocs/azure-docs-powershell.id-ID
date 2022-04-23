@@ -10,8 +10,8 @@ ms.openlocfilehash: c407ce7147d3eb175fc181b76b140605e463d9a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141917967"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265329"
 ---
 # New-AzVmssConfig
 
@@ -560,7 +560,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 3f1c3eaf386396e761010322b4b2c02ba23af9df
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175434"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143223695"
 ---
 # New-AzPurviewAzureSubscriptionCredentialScanObject
 
@@ -32,7 +32,7 @@ Buat objek dalam memori untuk AzureSubscriptionCredentialScan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek pemindaian sub-Kredensial sumber daya Azure
+### Contoh 1: Membuat objek pemindaian sub-Kredensial sumber daya Azure
 ```powershell
 PS C:\> New-AzPurviewAzureSubscriptionCredentialScanObject -Kind 'AzureSubscriptionCredential' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -CredentialType 'ServicePrincipal' -CredentialReferenceName 'svcp'
 
@@ -55,7 +55,7 @@ ScanRulesetType           :
 Worker                    :
 ```
 
-Buat objek pemindaian sub-Kredensial sumber daya Azure
+Membuat objek pemindaian sub-Kredensial sumber daya Azure
 
 ## PARAMETERS
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Untuk membangun, lihat bagian CATATAN untuk properti RESOURCETYPE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti RESOURCETYPE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IExpandingResourceScanPropertiesResourceTypes
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -209,7 +209,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureSubscriptionCredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

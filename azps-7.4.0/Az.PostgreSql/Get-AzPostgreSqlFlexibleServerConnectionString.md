@@ -9,8 +9,8 @@ ms.openlocfilehash: e0c17ec1c2f28776d0ed6675eaab9c4f8fcf2485
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430694"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278775"
 ---
 # Get-AzPostgreSqlFlexibleServerConnectionString
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

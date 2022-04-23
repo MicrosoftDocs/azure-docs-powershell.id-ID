@@ -10,8 +10,8 @@ ms.openlocfilehash: 4ef0bc6c008dfa9d57910fdddad8fb1608c5d2ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434578"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143232569"
 ---
 # New-AzBatchAccountKey
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.BatchAccountContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

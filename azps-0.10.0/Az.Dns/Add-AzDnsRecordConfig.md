@@ -10,8 +10,8 @@ ms.openlocfilehash: a5f3871f0ab63d875c2a0389c5585f0871fb0cb9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264861"
 ---
 # Add-AzDnsRecordConfig
 
@@ -391,7 +391,7 @@ Ini adalah representasi offline dari **RecordSet**, dan perubahannya tidak mengu
 Cmdlet ini mengembalikan objek **RecordSet** yang diubah.
 Selain itu, objek yang dilewati diubah secara langsung.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

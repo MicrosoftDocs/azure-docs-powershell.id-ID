@@ -9,8 +9,8 @@ ms.openlocfilehash: ca4462b163a75559b9c77416ef6b0a298ce05e2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142217305"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143246825"
 ---
 # Connect-AzContainerRegistry
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

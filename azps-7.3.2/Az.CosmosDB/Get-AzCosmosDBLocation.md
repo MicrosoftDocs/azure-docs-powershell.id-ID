@@ -9,8 +9,8 @@ ms.openlocfilehash: 60d5af8febc11575f5d53679ea6085c75a2b532e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142217125"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143246645"
 ---
 # Get-AzCosmosDBLocation
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSLocationGetResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

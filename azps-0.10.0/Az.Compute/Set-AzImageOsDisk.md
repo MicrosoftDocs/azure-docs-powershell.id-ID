@@ -9,8 +9,8 @@ ms.openlocfilehash: 5bc92ea5aa49cb97be457fd937c7b9deb492bb0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141875156"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265149"
 ---
 # Set-AzImageOsDisk
 
@@ -253,7 +253,7 @@ System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, Publ
 
 ### Microsoft.Azure.Management.Compute.Models.Image
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 80092d15eae9b8141b269c09a73e7ff64c89c810
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175607"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278577"
 ---
 # Restart-AzPostgreSqlServer
 
@@ -218,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

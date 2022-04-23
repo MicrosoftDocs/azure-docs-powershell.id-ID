@@ -10,8 +10,8 @@ ms.openlocfilehash: d2e9633bc3b2bdf08f0f8a2d31fdc5304ddbd5bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177827"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284570"
 ---
 # Get-AzLogicAppUpgradedDefinition
 
@@ -263,7 +263,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

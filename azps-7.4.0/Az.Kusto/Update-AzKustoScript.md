@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e11a60047607db83996fd27b6982747c238f7c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168526"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284607"
 ---
 # Update-AzKustoScript
 
@@ -27,7 +27,7 @@ Update-AzKustoScript -ClusterName <String> -DatabaseName <String> -Name <String>
  [<CommonParameters>]
 ```
 
-### Update
+### Pembaruan
 ```
 Update-AzKustoScript -ClusterName <String> -DatabaseName <String> -Name <String> -ResourceGroupName <String>
  -Parameter <IScript> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
@@ -52,7 +52,7 @@ Memperbarui skrip database.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui skrip kusto yang sudah ada menurut nama
+### Contoh 1: Memperbarui skrip kusto yang ada menurut nama
 ```powershell
 Update-AzKustoScript -DatabaseName mykustodatabase -Name newkustoscript -ClusterName testnewkustocluster -ResourceGroupName testrg -ScriptUrl $BlobSASURL -ScriptUrlSasToken $BlobSASToken
 ```
@@ -63,12 +63,12 @@ Name                                               Type
 testnewkustocluster/mykustodatabase/newkustoscript Microsoft.Kusto/Clusters/Databases/Scripts
 ```
 
-Perintah di atas memperbarui skrip Kusto "newkustoscript" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas memperbarui skrip Kusto "newkustoscript" yang ditemukan di grup sumber daya "testrg".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama klaster Kusto.
+Nama kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam klaster Kusto.
+Nama database di kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdateTag
-String yang unik.
-Jika skrip diubah akan diterapkan lagi.
+String unik.
+Jika diubah, skrip akan diterapkan lagi.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama skrip database Kusto.
 
 ```yaml
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Kelas mewakili skrip database.
-Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Kelas yang mewakili skrip database.
+Untuk membuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IScript
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi klaster Kusto.
+Nama grup sumber daya yang berisi kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptUrl
-Url untuk file blob skrip KQL.
+Url ke file blob skrip KQL.
 
 ```yaml
 Type: System.String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptUrlSasToken
-Token Sas.
+Token SaS.
 
 ```yaml
 Type: System.String
@@ -265,8 +265,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -280,8 +280,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -324,7 +324,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IScript
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -334,28 +334,28 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama klaster Kusto.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
+  - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
+  - `[DatabaseName <String>]`: Nama database di kluster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid of the operation ID
+  - `[Location <String>]`: Nama lokasi (wilayah) Azure.
+  - `[OperationId <String>]`: Panduan ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 PARAMETER <IScript>: Kelas yang mewakili skrip database.
   - `[ContinueOnError <Boolean?>]`: Bendera yang menunjukkan apakah akan melanjutkan jika salah satu perintah gagal.
-  - `[ForceUpdateTag <String>]`: String yang unik. Jika skrip diubah akan diterapkan lagi.
-  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
+  - `[ForceUpdateTag <String>]`: String unik. Jika diubah, skrip akan diterapkan lagi.
+  - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
-  - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
-  - `[Url <String>]`: Url untuk file blob skrip KQL.
+  - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
+  - `[Url <String>]`: Url ke file blob skrip KQL.
   - `[UrlSasToken <String>]`: Token SaS.
 
 ## RELATED LINKS

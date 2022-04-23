@@ -9,8 +9,8 @@ ms.openlocfilehash: aa9b6f8c3edfc25fc74f8351fa14bfa74577cf0c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329479"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143264933"
 ---
 # Get-AzDataBoxEdgeStorageAccount
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

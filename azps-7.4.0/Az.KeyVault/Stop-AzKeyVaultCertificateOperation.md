@@ -10,8 +10,8 @@ ms.openlocfilehash: 9dd06b7033c95425cd965caaa4165aa23e23ee63
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178017"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143284931"
 ---
 # Stop-AzKeyVaultCertificateOperation
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

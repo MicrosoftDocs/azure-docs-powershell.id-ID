@@ -9,8 +9,8 @@ ms.openlocfilehash: 5120f27204266951fe527c7bbfd44e32f8774e2d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141995154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143223821"
 ---
 # Remove-AzIpAllocation
 
@@ -212,6 +212,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

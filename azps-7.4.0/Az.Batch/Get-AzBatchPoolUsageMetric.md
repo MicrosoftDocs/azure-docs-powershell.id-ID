@@ -10,8 +10,8 @@ ms.openlocfilehash: 768bf10e474eee28519cf55945e6240f145b172d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173724"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143232623"
 ---
 # Get-AzBatchPoolUsageMetric
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSPoolUsageMetrics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

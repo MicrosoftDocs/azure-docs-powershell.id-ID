@@ -10,8 +10,8 @@ ms.openlocfilehash: 294ba3b11a6fe570dbaa8c29d4e55e2a4a5bb176
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991127"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278433"
 ---
 # Get-AzPrivateDnsVirtualNetworkLink
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsVirtualNetworkLink
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

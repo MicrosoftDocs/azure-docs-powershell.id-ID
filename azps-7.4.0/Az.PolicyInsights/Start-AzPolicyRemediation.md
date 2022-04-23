@@ -9,8 +9,8 @@ ms.openlocfilehash: 90aab0c93166f97774e12125e979571e825deb32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424249"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278847"
 ---
 # Start-AzPolicyRemediation
 
@@ -371,6 +371,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PolicyInsights.Models.Remediation.PSRemediation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
