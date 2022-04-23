@@ -10,8 +10,8 @@ ms.openlocfilehash: a0d79aa0d1699f6e6645f86475732c235447342f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154593"
 ---
 # Get-AzKeyVaultKey
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Daftar<Microsoft.Azure.Commands.KeyVault.Models.KeyIdentityItem>, Microsoft.Azure.Commands.KeyVault.Models.KeyBundle, Daftar<Microsoft.Azure.Commands.KeyVault.Models.DeletedKeyIdentityItem>, Microsoft.Azure.Commands.KeyVault.Models.DeletedKeyBundle
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

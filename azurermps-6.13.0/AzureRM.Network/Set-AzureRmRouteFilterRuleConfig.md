@@ -9,8 +9,8 @@ ms.openlocfilehash: 88863b0db825eacfc844a8c24cc81f3ad866894d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925695"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159705"
 ---
 # Set-AzureRmRouteFilterRuleConfig
 
@@ -192,6 +192,6 @@ Parameter: RouteFilter (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteFilter
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

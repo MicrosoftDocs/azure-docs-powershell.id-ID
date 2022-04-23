@@ -9,8 +9,8 @@ ms.openlocfilehash: 6e1f11f04d65a1adeb74d6d999f8b2ca77038a0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304341"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143148095"
 ---
 # Get-AzKustoClusterLanguageExtension
 
@@ -147,7 +147,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ILanguageExtension
 
-## CATATAN
+## NOTES
 
 ALIAS
 

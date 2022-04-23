@@ -10,8 +10,8 @@ ms.openlocfilehash: 177c8b51d6ad893e1f73dcc168906066a91f2210
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142023005"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143130275"
 ---
 # Remove-AzWebAppBackup
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.BackupItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

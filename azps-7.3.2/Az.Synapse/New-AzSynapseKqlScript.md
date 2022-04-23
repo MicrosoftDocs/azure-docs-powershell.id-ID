@@ -9,8 +9,8 @@ ms.openlocfilehash: 87bf41221d7d8924ae2bcc5cd186d51dce9fe8b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142396493"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143130887"
 ---
 # New-AzSynapseKqlScript
 
@@ -239,6 +239,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSKqlScriptResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: de0d25be77ef38371d2dfbc8eddb16941b1d53b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142234153"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143150039"
 ---
 # New-AzDataFactoryPipeline
 
@@ -37,7 +37,7 @@ New-AzDataFactoryPipeline [[-Name] <String>] [-DataFactory] <PSDataFactory> [-Fi
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryPipeline** membuat saluran di Azure Data Factory.
+Cmdlet **New-AzDataFactoryPipeline** membuat saluran dalam Azure Data Factory.
 Jika Anda menentukan nama untuk pipeline yang sudah ada, cmdlet meminta Anda untuk konfirmasi sebelum menggantikan pipeline.
 Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan pipeline yang sudah ada tanpa konfirmasi.
 Lakukan operasi ini dalam urutan berikut: 
@@ -217,7 +217,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSPipeline
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

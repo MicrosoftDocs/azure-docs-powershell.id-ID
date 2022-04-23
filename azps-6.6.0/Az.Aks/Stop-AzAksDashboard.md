@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a2605634bc5ff6cbb3d1e51fa027ad100205250
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141962205"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099405"
 ---
 # Stop-AzAksDashboard
 
@@ -99,6 +99,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

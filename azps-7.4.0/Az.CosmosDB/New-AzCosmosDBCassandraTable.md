@@ -9,8 +9,8 @@ ms.openlocfilehash: 8a0d17a375ad01eaa69f20784ef986b85af429cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143126531"
 ---
 # New-AzCosmosDBCassandraTable
 
@@ -280,6 +280,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Exceptions.ConflictingResourceException
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
