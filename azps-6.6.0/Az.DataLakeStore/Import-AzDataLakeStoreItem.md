@@ -10,8 +10,8 @@ ms.openlocfilehash: 05b6566ef67c71e90dd8d2656bddcd4b4409348e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233775"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143258993"
 ---
 # Import-AzDataLakeStoreItem
 
@@ -43,7 +43,7 @@ Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Pe
 
 ## EXAMPLES
 
-### Contoh 1: Mengunggah file
+### Contoh 1: Upload file
 ```
 PS C:\>Import-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "C:\SrcFile.csv" -Destination "/MyFiles/File.csv" -Concurrency 4
 ```
@@ -268,7 +268,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

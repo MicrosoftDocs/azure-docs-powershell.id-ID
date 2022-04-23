@@ -8,8 +8,8 @@ ms.openlocfilehash: c08bf4ac0344e58242f967df8166c15a241ea657
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141971066"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266211"
 ---
 # Get-AzureRmNetworkInterfaceIpConfig
 
@@ -98,7 +98,7 @@ Parameter 'NetworkInterface' menerima nilai tipe 'PSNetworkInterface' dari pipel
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceIPConfiguration
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

@@ -8,8 +8,8 @@ ms.openlocfilehash: a80fa84beaaea0307447f25767d665c465e8c2aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141971169"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266299"
 ---
 # Get-AzureRmLoadBalancerFrontendIpConfig
 
@@ -99,7 +99,7 @@ Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

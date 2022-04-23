@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
-ms.openlocfilehash: cf21cba82a5db7f1a02575845cae7d5f2e84cd0d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 281fc6781b396cf7674c382f9df21b4a133e56b5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006214"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143238815"
 ---
 # Add-AzServiceFabricManagedNodeTypeVMSecret
 
 ## SYNOPSIS
-Tambahkan sertifikat rahasia ke tipe node.
+Tambahkan rahasia sertifikat ke jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagednodetypevmsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Add-AzServiceFabricManagedNodeTypeVMSecret [-ResourceGroupName] <String> [-Clust
 ```
 
 ## DESCRIPTION
-Tambahkan sertifikat rahasia ke tipe node. Rahasia harus disimpan di Key Vault Azure. Untuk informasi selengkapnya tentang Key Vault, lihat Apa itu Azure Key Vault? (https://azure.microsoft.com/en-us/documentation/articles/key-vault-whatis/). Untuk informasi selengkapnya tentang cmdlet, lihat Cmdlet Azure Key Vault (/powershell/module/az.keyvault/) dalam pustaka Jaringan Pengembang Microsoft atau cmdlet Set-AzKeyVaultSecret cmdlet.
+Tambahkan rahasia sertifikat ke jenis node. Rahasia harus disimpan dalam Key Vault Azure. Untuk informasi selengkapnya terkait Key Vault, lihat Apa itu Azure Key Vault? (https://azure.microsoft.com/en-us/documentation/articles/key-vault-whatis/). Untuk informasi selengkapnya tentang cmdlet, lihat Cmdlet Azure Key Vault (/powershell/module/az.keyvault/) di pustaka Microsoft Developer Network atau cmdlet Set-AzKeyVaultSecret.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ $NodeTypeName = "nt1"
 Add-AzServiceFabricManagedNodeTypeVMSecret -ResourceGroupName $rgName -ClusterName $clusterName -NodeTypeName $NodeTypeName -SourceVaultId /subscriptions/XXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/testRG/providers/Microsoft.KeyVault/vaults/testkv -CertificateUrl https://testskv.vault.azure.net:443/secrets/TestCert/xxxxxxxxxxxxxxxxxxxxxxxx -CertificateStore My -Verbose
 ```
 
-Tanda koma ini menambahkan sertifikat rahasia dari keyvault dan pengidentifikasi rahasia yang ditentukan.
+Komad ini menambahkan rahasia sertifikat dari keyvault dan pengidentifikasi rahasia yang ditentukan.
 
 ### Contoh 2
 ```powershell
@@ -58,7 +61,7 @@ $nodeType = Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -Clust
 $nodeType | Add-AzServiceFabricManagedNodeTypeVMSecret -SourceVaultId /subscriptions/XXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/testRG/providers/Microsoft.KeyVault/vaults/testkv -CertificateUrl https://testskv.vault.azure.net:443/secrets/TestCert/xxxxxxxxxxxxxxxxxxxxxxxx -CertificateStore My -Verbose
 ```
 
-Tanda koma ini menambahkan sertifikat rahasia dari keyvault dan pengidentifikasi rahasia yang ditentukan, dengan pemipaan.
+Komad ini menambahkan rahasia sertifikat dari keyvault dan pengidentifikasi rahasia yang ditentukan, dengan pipa.
 
 ## PARAMETERS
 
@@ -78,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateStore
-Menentukan penyimpanan sertifikat di Komputer Virtual tempat sertifikat harus ditambahkan.
-Penyimpanan sertifikat tertentu dilakukan secara implisit di akun LocalMachine.
+Menentukan penyimpanan sertifikat pada Komputer Virtual tempat sertifikat harus ditambahkan.
+Penyimpanan sertifikat yang ditentukan secara implisit di akun LocalMachine.
 
 ```yaml
 Type: System.String
@@ -94,9 +97,9 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateUrl
-Url ini adalah sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
-Untuk menambahkan rahasia ke Key Vault, lihat \[Menambahkan kunci atau rahasia ke key vault\](https://docs.microsoft.com/azure/key-vault/key-vault-get-started/#add).
-Dalam hal ini, sertifikat Anda harus menggunakan pengodean Base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: \<br\>\<br\> {\<br\>  "databerber...\<Base64-encoded-certificate\>",\<br\>  "dataType pengodeans",\<br\>  "kata sandiformat\<pfx-file-password\>"\<br\>}/
+Ini adalah URL sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
+Untuk menambahkan rahasia ke Key Vault, lihat \[Menambahkan kunci atau rahasia ke brankas\] kunci(https://docs.microsoft.com/azure/key-vault/key-vault-get-started/#add).
+Dalam hal ini, sertifikat Anda harus Berupa Pengodean Base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: \<br\>\<br\> {\<br\>  "data":"\<Base64-encoded-certificate\>",\<br\>  "dataType":"pfx",\<br\>  "password":"\<pfx-file-password\>"\<br\>}/
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya Tipe Node
+Sumber daya Jenis Simpul
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
@@ -155,8 +158,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe node.
+### -Name
+Tentukan nama jenis node.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVaultId
-Id sumber daya Key Vault yang berisi sertifikat.
+Key Vault id sumber daya yang berisi sertifikat.
 
 ```yaml
 Type: System.String
@@ -200,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,8 +219,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -242,6 +245,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

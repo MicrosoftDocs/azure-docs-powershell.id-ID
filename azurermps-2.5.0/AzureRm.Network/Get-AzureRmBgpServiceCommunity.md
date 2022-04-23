@@ -7,8 +7,8 @@ ms.openlocfilehash: a70b0560a5980b28c50290dd9f401b02b920461c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929022"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266364"
 ---
 # Get-AzureRmBgpServiceCommunity
 
@@ -59,7 +59,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSBgpServiceCommunity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

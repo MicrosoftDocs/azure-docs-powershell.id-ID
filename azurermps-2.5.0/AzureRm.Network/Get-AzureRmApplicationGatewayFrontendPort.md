@@ -8,8 +8,8 @@ ms.openlocfilehash: a8e6fffca256920f6d138088ef75ea6658ad1375
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141781572"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266517"
 ---
 # Get-AzureRmApplicationGatewayFrontendPort
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

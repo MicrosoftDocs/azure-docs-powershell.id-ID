@@ -9,13 +9,13 @@ ms.openlocfilehash: 4a86b4d567bbf16a3611ad5a9f258ba0478c07e0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142086027"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143258579"
 ---
 # New-AzDataMigrationProject
 
 ## SYNOPSIS
-Membuat proyek Layanan Migrasi Database Azure yang baru.
+Membuat proyek Azure Database Migration Service baru.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationproject) untuk informasi terbaru.
@@ -47,7 +47,7 @@ New-AzDataMigrationProject [-ResourceId] <String> -Location <String> -Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationProject membuat proyek Azure Database Migration Service yang baru. Cmdlet ini mengambil semua parameter yang diperlukan, seperti nama Grup Sumber Daya Azure, nama Layanan Migrasi Data Azure tempat proyek baru akan dibuat, kawasan tempat proyek akan dibuat, nama unik proyek baru, objek koneksi sumber dan target, dan objek tipe target,  sebagai input untuk daftar database yang akan dimigrasikan. Gunakan cmdlet New-AzDataMigrationConnectionInfo untuk membuat objek ConnectionInfo baru baik untuk koneksi sumber maupun target. Daftar Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo diharapkan untuk database yang dipilih; objek ini dapat dibuat menggunakan cmdlet New-AzDataMigrationDatabaseInfo. 
+Cmdlet New-AzDataMigrationProject membuat proyek Azure Database Migration Service baru. Cmdlet ini mengambil semua parameter yang diperlukan, seperti nama Grup Sumber Daya Azure, nama Layanan Migrasi Data Azure tempat proyek baru akan dibuat, kawasan tempat proyek akan dibuat, nama unik proyek baru, objek koneksi sumber dan target, dan objek tipe target,  sebagai input untuk daftar database yang akan dimigrasikan. Gunakan cmdlet New-AzDataMigrationConnectionInfo untuk membuat objek ConnectionInfo baru baik untuk koneksi sumber maupun target. Daftar Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo diharapkan untuk database yang dipilih; objek ini dapat dibuat menggunakan cmdlet New-AzDataMigrationDatabaseInfo. 
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Cmdlet New-AzDataMigrationProject membuat proyek Azure Database Migration Servic
 PS C:\> New-AzDataMigrationProject -ResourceGroupName MyResourceGroup -ServiceName TestService -ProjectName MyDMSProject -Location "central us"  -SourceType SQL -TargetType SQLDB -SourceConnection $sourceConnInfo -TargetConnection $targetConnInfo -DatabaseInfo $dbList
 ```
 
-Contoh di atas memperlihatkan cara membuat proyek baru bernama MyDMSProject yang terletak di kawasan AS Tengah di bawah instans Layanan Migrasi Database Azure bernama TestService.
+Contoh di atas memperlihatkan cara membuat proyek baru bernama MyDMSProject yang terletak di kawasan AS Tengah di bawah contoh Azure Database Migration Service bernama TestService.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi instans Layanan Migrasi Database Azure.
+Lokasi instans Azure Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama instans Layanan Migrasi Database Azure.
+Nama instans Azure Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -283,6 +283,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataMigration.Models.PSProject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 2ccf327f977edd7d6972370b427328970cbaa947
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421629"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143279153"
 ---
 # Remove-AzOperationalInsightsSavedSearch
 
@@ -141,10 +141,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
+[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
 
 

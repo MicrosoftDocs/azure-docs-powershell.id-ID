@@ -7,13 +7,13 @@ ms.openlocfilehash: cbe38933cb4c2c75b5219bf0deccc0b28052a61f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141971421"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143266490"
 ---
 # Get-AzureRmApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
+Mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Gateway Aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,7 +25,7 @@ Get-AzureRmApplicationGatewayProbeConfig [-Name <String>] -ApplicationGateway <P
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmApplicationGatewayProbeConfig mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Application Gateway.
+Cmdlet Get-AzureRmApplicationGatewayProbeConfig mendapatkan konfigurasi pemeriksaan kesehatan yang sudah ada dari Gateway Aplikasi.
 
 ## EXAMPLES
 
@@ -97,7 +97,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari p
 
 ### System.Collections.Generic.IEnumerable'1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

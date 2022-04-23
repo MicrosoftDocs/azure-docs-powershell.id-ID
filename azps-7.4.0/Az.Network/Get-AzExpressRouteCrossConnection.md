@@ -10,8 +10,8 @@ ms.openlocfilehash: 0706c3f8c43253925e1a7c6ae98a4246bf4883a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172743"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143225171"
 ---
 # Get-AzExpressRouteCrossConnection
 
@@ -102,7 +102,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

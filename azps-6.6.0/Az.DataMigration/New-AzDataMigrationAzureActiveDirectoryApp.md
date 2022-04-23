@@ -9,8 +9,8 @@ ms.openlocfilehash: 847305aa1707ae4bb8fb74aa24a890142a1bb006
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143258759"
 ---
 # New-AzDataMigrationAzureActiveDirectoryApp
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationId
-Id Aplikasi Azure Active Directory
+ID Aplikasi Azure Active Directory
 
 ```yaml
 Type: System.String
@@ -98,6 +98,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.DataMigration.Models.PSAzureActiveDirectoryApp
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

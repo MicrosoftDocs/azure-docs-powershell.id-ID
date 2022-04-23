@@ -9,8 +9,8 @@ ms.openlocfilehash: e5e52ce4de407fbc8f244621efeb8f454b15719a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141905231"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143251055"
 ---
 # Remove-AzServiceBusRule
 
@@ -284,6 +284,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

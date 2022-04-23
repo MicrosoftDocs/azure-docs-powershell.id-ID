@@ -9,8 +9,8 @@ ms.openlocfilehash: 602d263fc84bf4240adb459c51a3d2895ea809b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142263337"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143248481"
 ---
 # Stop-AzSynapseTrigger
 
@@ -219,6 +219,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

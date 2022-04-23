@@ -9,8 +9,8 @@ ms.openlocfilehash: f9f501496814d57ad7b2c54c59b09d4174586f22
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142085612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143258507"
 ---
 # Get-AzDataProtectionPolicyTemplate
 
@@ -69,7 +69,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
 
-## CATATAN
+## NOTES
 
 ALIAS
 

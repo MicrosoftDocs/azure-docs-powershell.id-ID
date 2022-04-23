@@ -9,8 +9,8 @@ ms.openlocfilehash: bf6921c68878cb089565ae1452b2dbe9b961824f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172695"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143224703"
 ---
 # Get-AzNetworkWatcherReachabilityReport
 
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureReachabilityReport
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, keterjangkauan, laporan
 
 ## RELATED LINKS

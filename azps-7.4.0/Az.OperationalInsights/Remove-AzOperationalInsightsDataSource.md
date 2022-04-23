@@ -10,8 +10,8 @@ ms.openlocfilehash: 026a73f56b465da14985be3b6af59ae9bf078757
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166974"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143279171"
 ---
 # Remove-AzOperationalInsightsDataSource
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS

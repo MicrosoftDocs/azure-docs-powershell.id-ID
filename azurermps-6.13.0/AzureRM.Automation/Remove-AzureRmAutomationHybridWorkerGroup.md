@@ -9,8 +9,8 @@ ms.openlocfilehash: b6f15bc55c2e9f9a05e60e7e6f2c139ddbb70454
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265869"
 ---
 # Remove-AzureRmAutomationHybridWorkerGroup
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 038d54c74775c8df854dad5120836f58a69becd8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141958245"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143259047"
 ---
 # Enable-AzDataLakeStoreKeyVault
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

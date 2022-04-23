@@ -9,8 +9,8 @@ ms.openlocfilehash: 89b0a7cb39bf02723c5e5967cb6fac3f586d449a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421589"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143279135"
 ---
 # Update-AzOperationalInsightsDataExport
 
@@ -264,6 +264,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataExport
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

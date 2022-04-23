@@ -9,8 +9,8 @@ ms.openlocfilehash: eb9a9ec14a7ea9dbe730f428d190eba7a253a411
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143279567"
 ---
 # Update-AzVirtualRouterPeer
 
@@ -265,6 +265,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualRouter
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

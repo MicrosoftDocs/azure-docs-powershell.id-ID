@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionRestoreRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionRestoreRequest.md
 ms.openlocfilehash: ab9bc57311a65d0a0e7c22db90542b51aa9558c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140256337"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143258489"
 ---
 # Initialize-AzDataProtectionRestoreRequest
 
 ## SYNOPSIS
-Memulai pemulihan objek Permintaan untuk memicu pemulihan pada instans cadangan yang diproteksi.
+Menginisialisasi objek Permintaan Pemulihan untuk memicu pemulihan pada instans cadangan yang dilindungi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/initialize-azdataprotectionrestorerequest) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/initialize-azdataprotectionrestorerequest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,11 +60,11 @@ Initialize-AzDataProtectionRestoreRequest -DatasourceType <DatasourceTypes> -Fil
 ```
 
 ## DESCRIPTION
-Memulai pemulihan objek Permintaan untuk memicu pemulihan pada instans cadangan yang diproteksi.
+Menginisialisasi objek Permintaan Pemulihan untuk memicu pemulihan pada instans cadangan yang dilindungi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan objek permintaan pemulihan untuk instans Pencadangan Disk Azure yang Dilindungi
+### Contoh 1: Dapatkan objek permintaan pemulihan untuk instans Azure Disk Backup yang Dilindungi
 ```powershell
 PS C:\> $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "sarath-rg" -VaultName "sarath-vault"
 PS C:\> $rp = Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxx-xxx-xxx" -ResourceGroupName "sarath-rg" -VaultName "sarath-vault" -BackupInstanceName $instance.Name
@@ -77,9 +77,9 @@ ObjectType                                  RestoreTargetInfoObjectType RestoreT
 AzureBackupRecoveryPointBasedRestoreRequest RestoreTargetInfo           FailIfExists                    westus                           OperationalStore    892e5c5014dc4a96807d22924f5745c9
 ```
 
-Perintah ini menginialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu pemulihan.
+Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu pemulihan.
 
-### Contoh 2: Dapatkan objek permintaan pemulihan untuk instans Pencadangan Blob Azure Terlindungi
+### Contoh 2: Dapatkan objek permintaan pemulihan untuk instans Azure Blob Backup yang Dilindungi
 ```powershell
 PS C:\> $startTime = (Get-Date).AddDays(-30).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
 PS C:\> $endTime = (Get-Date).AddDays(0).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
@@ -94,9 +94,9 @@ AzureBackupRecoveryTimeBasedRestoreRequest restoreTargetInfo           FailIfExi
 
 ```
 
-Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu pemulihan untuk Blob.
+Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu pemulihan blob.
 
-### Contoh 3: Dapatkan objek permintaan pemulihan untuk Pemulihan Tingkat Item untuk wadah dalam contoh AzureBlob Cadangan yang dilindungi
+### Contoh 3: Dapatkan objek permintaan pemulihan untuk pemulihan Tingkat Item untuk kontainer di bawah instans AzureBlob Backup yang dilindungi
 ```powershell
 PS C:\> $startTime = (Get-Date).AddDays(-30).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
 PS C:\> $endTime = (Get-Date).AddDays(0).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
@@ -111,9 +111,9 @@ AzureBackupRecoveryTimeBasedRestoreRequest itemLevelRestoreTargetInfo  FailIfExi
 
 ```
 
-Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu Pemulihan Tingkat Item pada tingkat wadah untuk Blob.
+Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu Pemulihan Tingkat Item pada tingkat kontainer untuk Blob.
 
-### Contoh 4: Dapatkan pemulihan objek permintaan untuk Pemulihan Tingkat Item untuk wadah/prefiksMatch di bawah instans Cadangan AzureBlob yang diproteksi
+### Contoh 4: Dapatkan objek permintaan pemulihan untuk pemulihan Tingkat Item untuk kontainer/prefixMatch di bawah instans AzureBlob Backup yang dilindungi
 ```powershell
 PS C:\> $startTime = (Get-Date).AddDays(-30).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
 PS C:\> $endTime = (Get-Date).AddDays(0).ToString("yyyy-MM-ddTHH:mm:ss.0000000Z")
@@ -128,20 +128,20 @@ AzureBackupRecoveryTimeBasedRestoreRequest itemLevelRestoreTargetInfo  FailIfExi
 
 ```
 
-Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu Pemulihan Tingkat Item pada tingkat blob berdasarkan prefiks nama dalam wadah Blob.
+Perintah ini menginisialisasi objek permintaan pemulihan yang dapat digunakan untuk memicu Pemulihan Tingkat Item pada tingkat blob berdasarkan awalan nama di bawah kontainer Blob.
 
-RestoreRequest di atas memulihkan container/blob berikut:
+RestoreRequest di atas memulihkan kontainer/blob berikut:
 
-FromPrefix ToPrefix "container1/aaa" "container1/bbb" (memulihkan semua blob yang cocok dalam rentang Prefiks ini) "container1/ccc" "container1/ddd" "container2/aab" "container2/abc" "container3" "container3-0" (restores whole container3)
+FromPrefix ToPrefix "container1/aaa" "container1/bbb" (memulihkan semua blob yang cocok dalam rentang Prefiks ini) "container1/ccc" "container1/ddd" "container2/aab" "container2/abc" "container3" "container3-0" (memulihkan seluruh kontainer3)
                     
-Catatan: Rentang tidak boleh saling tumpang tindih.
+Catatan: Rentang tidak boleh tumpang tindih satu sama lain.
 Referensi: https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata
 
 ## PARAMETERS
 
 ### -BackupInstance
-Objek Instance Cadangan untuk memicu pemulihan lokal asli.
-Untuk membuat, lihat bagian CATATAN untuk properti BACKUPINSTANCE dan membuat tabel hash.
+Objek Instans Cadangan untuk memicu pemulihan lokal asli.
+Untuk membuat, lihat bagian CATATAN untuk properti BACKUPINSTANCE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.BackupInstanceResource
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainersList
-Wadah nama untuk Pemulihan Tingkat Item.
+Nama kontainer untuk Pemulihan Tingkat Item.
 
 ```yaml
 Type: System.String[]
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatasourceType
-Tipe SumberData
+Jenis Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileNamePrefix
-Nama file akan diawali dengan data cadangan yang dipulihkan.
+Nama file yang akan diawali dengan data cadangan yang dipulihkan.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromPrefixPattern
-Nilai minimum yang cocok untuk Pemulihan Tingkat Item.
+Nilai pencocokan minimum untuk Pemulihan Tingkat Item.
 
 ```yaml
 Type: System.String[]
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -PointInTime
-Arahkan Waktu untuk memulihkan.
+Titik Waktu untuk pemulihan.
 
 ```yaml
 Type: System.DateTime
@@ -260,8 +260,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RehydrationDuration
-Durasi rehydration untuk titik pemulihan yang diarsipkan agar tetap dihidasi, nilai default untuk durasi rehydration adalah 15.
+### -RehidrasiDurasi
+Durasi rehidrasi untuk titik pemulihan yang diarsipkan agar tetap direhidrasi, nilai default untuk durasi rehidrasi adalah 15.
 
 ```yaml
 Type: System.String
@@ -276,8 +276,8 @@ Accept wildcard characters: False
 ```
 
 ### -RehydrationPriority
-Prioritas rehydrasi untuk titik pemulihan yang diarsipkan.
-Parameter ini adalah wajib untuk memulihkan titik-titik yang diarsipkan.
+Prioritas rehidrasi untuk titik pemulihan yang diarsipkan.
+Parameter ini wajib untuk pemulihan rehidrasi titik yang diarsipkan.
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreLocation
-Pulihkan Lokasi Target
+Lokasi Pemulihan Target
 
 ```yaml
 Type: System.String
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreType
-Pulihkan Tipe Target
+Pulihkan Jenis Target
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.RestoreTargetType
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretStoreType
-Tipe penyimpanan rahasia untuk autentikasi sumber data toko rahasia.
+Jenis penyimpanan rahasia untuk autentikasi penyimpanan rahasia sumber data.
 Parameter ini hanya didukung untuk AzureDatabaseForPostgreSQL saat ini.
 
 ```yaml
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretStoreURI
-Rahasia uri untuk autentikasi penyimpanan rahasia sumber data.
+Uri rahasia untuk autentikasi penyimpanan rahasia sumber data.
 Parameter ini hanya didukung untuk AzureDatabaseForPostgreSQL saat ini.
 
 ```yaml
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceDataStore
-Tipe DataStore titik Pemulihan
+Jenis DataStore dari titik Pemulihan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DataStoreType
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetContainerURI
-Id wadah akun penyimpanan target tempat data cadangan akan dipulihkan sebagai file.
+Id kontainer akun penyimpanan target tempat data cadangan akan dipulihkan sebagai file.
 
 ```yaml
 Type: System.String
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceId
-Id sumber daya target tempat data cadangan akan dipulihkan.
+Id sumber daya target yang data cadangannya akan dipulihkan.
 
 ```yaml
 Type: System.String
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -ToPrefixPattern
-Nilai maksimum yang cocok untuk Pemulihan Tingkat Item.
+Nilai pencocokan maksimum untuk Pemulihan Tingkat Item.
 
 ```yaml
 Type: System.String[]
@@ -414,7 +414,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -422,7 +422,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IAzureBackupRestoreRequest
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -431,34 +431,34 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-BACKUPINSTANCE <BackupInstanceResource>: Objek Instans Cadangan untuk memicu pemulihan lokal asli.
+BACKUPINSTANCE <BackupInstanceResource>: Objek Instans Cadangan untuk memicu pemulihan lokalsi asli.
   - `[Property <IBackupInstance>]`: Properti BackupInstanceResource
     - `DataSourceInfo <IDatasource>`: Mendapatkan atau mengatur informasi sumber data.
-      - `ResourceId <String>`: ID ARM penuh dari sumber daya. Untuk sumber daya Azure, ini adalah ID ARM. For non azure resources, this will be the ID created by backup service via Fabric/Vault.
-      - `[ObjectType <String>]`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
+      - `ResourceId <String>`: ID ARM lengkap sumber daya. Untuk sumber daya azure, ini adalah ARM ID. Untuk sumber daya non azure, ini akan menjadi ID yang dibuat oleh layanan cadangan melalui Fabric/Vault.
+      - `[ObjectType <String>]`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Tipe Sumber Daya Sumber Data.
-      - `[ResourceUri <String>]`: Uri dari sumber daya.
-      - `[Type <String>]`: TipeData sumber daya.
+      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Daya.
+      - `[ResourceUri <String>]`: Uri sumber daya.
+      - `[Type <String>]`: DatasourceType sumber daya.
     - `ObjectType <String>`: 
-    - `PolicyInfo <IPolicyInfo>`: Mendapatkan atau mengatur informasi kebijakan.
+    - `PolicyInfo <IPolicyInfo>`: Mendapatkan atau menetapkan informasi kebijakan.
       - `PolicyId <String>`: 
       - `[PolicyParameter <IPolicyParameters>]`: Parameter kebijakan untuk instans cadangan
         - `[DataStoreParametersList <IDataStoreParameters[]>]`: Mendapatkan atau mengatur Parameter DataStore
-          - `DataStoreType <DataStoreTypes>`: tipe penyimpanan data; Operasional/Vault/Arsip
-          - `ObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
+          - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Arsip
+          - `ObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
     - `[DataSourceSetInfo <IDatasourceSet>]`: Mendapatkan atau mengatur informasi kumpulan sumber data.
-      - `ResourceId <String>`: ID ARM penuh dari sumber daya. Untuk sumber daya Azure, ini adalah ID ARM. For non azure resources, this will be the ID created by backup service via Fabric/Vault.
-      - `[DatasourceType <String>]`: TipeData sumber daya.
-      - `[ObjectType <String>]`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
+      - `ResourceId <String>`: ID ARM lengkap sumber daya. Untuk sumber daya azure, ini adalah ARM ID. Untuk sumber daya non azure, ini akan menjadi ID yang dibuat oleh layanan cadangan melalui Fabric/Vault.
+      - `[DatasourceType <String>]`: DatasourceType sumber daya.
+      - `[ObjectType <String>]`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Tipe Sumber Daya Sumber Data.
-      - `[ResourceUri <String>]`: Uri dari sumber daya.
+      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Daya.
+      - `[ResourceUri <String>]`: Uri sumber daya.
     - `[DatasourceAuthCredentials <IAuthCredentials>]`: Kredensial yang digunakan untuk mengautentikasi dengan penyedia sumber data.
-      - `ObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
-    - `[FriendlyName <String>]`: Mendapatkan atau mengatur nama cadangan yang mudah digunakan.
+      - `ObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
+    - `[FriendlyName <String>]`: Mendapatkan atau mengatur nama yang mudah diingat Instans Cadangan.
 
 ## RELATED LINKS
 
