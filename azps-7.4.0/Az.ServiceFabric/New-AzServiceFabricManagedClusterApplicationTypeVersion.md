@@ -9,8 +9,8 @@ ms.openlocfilehash: 5ca975527d0a37e2293313262ab282d92c3eeace
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420586"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143273717"
 ---
 # New-AzServiceFabricManagedClusterApplicationTypeVersion
 
@@ -26,7 +26,7 @@ New-AzServiceFabricManagedClusterApplicationTypeVersion [-ResourceGroupName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet ini membuat versi tipe aplikasi terkelola baru menggunakan paket yang ditentukan dalam -PackageUrl, ini harus dapat diakses melalui titik akhir REST untuk azure Resource Manager untuk digunakan selama penyebaran dan aplikasi yang dikemas dalam zip dengan ekstensi .sfpkg. Perintah ini akan membuat tipe aplikasi jika belum ada.
+Cmdlet ini membuat versi tipe aplikasi terkelola baru menggunakan paket yang ditentukan dalam -PackageUrl, ini harus dapat diakses melalui titik akhir REST untuk digunakan Azure Resource Manager selama penyebaran dan aplikasi yang dikemas dalam zip dengan ekstensi .sfpkg. Perintah ini akan membuat tipe aplikasi jika belum ada.
 
 ## EXAMPLES
 
@@ -223,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedApplicationTypeVersion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

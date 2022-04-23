@@ -9,8 +9,8 @@ ms.openlocfilehash: b797a6b698650d07f2893ed4f1fa4eeba6f4e928
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171910"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143273591"
 ---
 # Remove-AzServiceFabricManagedNodeTypeVMExtension
 
@@ -223,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

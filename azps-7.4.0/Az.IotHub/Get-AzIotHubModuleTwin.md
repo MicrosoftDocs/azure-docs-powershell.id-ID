@@ -9,8 +9,8 @@ ms.openlocfilehash: f08d1ab290a54c3f56ae4166fe8c95a8f3322eb0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178264"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143285777"
 ---
 # Get-AzIotHubModuleTwin
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSModuleTwin
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
