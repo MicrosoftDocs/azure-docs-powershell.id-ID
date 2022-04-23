@@ -8,8 +8,8 @@ ms.openlocfilehash: f01fd5c1c6694c8d16ab34e6aad9f6a52463c726
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888758"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143168156"
 ---
 # Set-AzureRmLocalNetworkGateway
 
@@ -146,7 +146,7 @@ Parameter 'LocalNetworkGateway' menerima nilai tipe 'PSLocalNetworkGateway' dari
 
 ### Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

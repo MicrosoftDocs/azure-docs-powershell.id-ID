@@ -9,8 +9,8 @@ ms.openlocfilehash: 75623281c56af3f498db26a5f421847674de9211
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142112489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143185049"
 ---
 # Find-AzDataProtectionRestorableTimeRange
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IAzureBackupFindRestorableTimeRangesResponseResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

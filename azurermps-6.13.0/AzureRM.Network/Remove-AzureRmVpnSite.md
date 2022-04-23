@@ -9,8 +9,8 @@ ms.openlocfilehash: ac0513b7d411c2c95864aa6f619e80d2373a3554
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882795"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143217112"
 ---
 # Remove-AzureRmVpnSite
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

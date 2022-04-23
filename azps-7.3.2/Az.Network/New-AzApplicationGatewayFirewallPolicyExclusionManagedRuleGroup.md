@@ -9,8 +9,8 @@ ms.openlocfilehash: e0d7ee692be6358b718adf0d7a9063e89d38d370
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142345571"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143178965"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleGroup
 
@@ -105,6 +105,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyExclusionManagedRuleGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

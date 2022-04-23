@@ -10,13 +10,13 @@ ms.openlocfilehash: 040efd4e483825db637345fbd8bcb54a27e8675b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142275937"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143204471"
 ---
 # New-AzAppServicePlan
 
 ## SYNOPSIS
-Membuat rencana Azure App Service di lokasi Geo tertentu.
+Membuat rencana Layanan Aplikasi Azure di lokasi Geo tertentu.
 
 ## SYNTAX
 
@@ -36,22 +36,22 @@ New-AzAppServicePlan [-Location] <String> [[-Tier] <String>] [[-NumberofWorkers]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAppServicePlan** membuat rencana Azure App Service di lokasi Geo tertentu dengan Tingkat, ukuran pekerja, dan jumlah pekerja yang ditentukan.
+Cmdlet **New-AzAppServicePlan** membuat rencana Layanan Aplikasi Azure di lokasi Geo tertentu dengan Tingkat, ukuran pekerja, dan jumlah pekerja yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat paket App Service
+### Contoh 1: Membuat paket Layanan Aplikasi
 ```
 PS C:\>New-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -Location "West US" -Tier "Basic" -NumberofWorkers 2 -WorkerSize "Small"
 ```
 
-Perintah ini membuat rencana App Service bernama ContosoASP dalam grup sumber daya bernama Default-Web-WestUS di Geo location West US.
+Perintah ini membuat paket Layanan Aplikasi bernama ContosoASP dalam grup sumber daya bernama Default-Web-WestUS di Geo location West US.
 Perintah menentukan Tingkat Dasar dan mengalokasikan dua pekerja kecil.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Objek Rencana App Service
+Objek Paket Layanan Aplikasi
 
 ```yaml
 Type: ServerFarmWithRichSku
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan App Service
+Nama Lingkungan Layanan Aplikasi
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan App Service
+Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Rencana App Service
+Nama Paket Layanan Aplikasi
 
 ```yaml
 Type: String
@@ -243,7 +243,7 @@ Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipe
 
 ### Microsoft.Azure.Management.WebSites.Models.ServerFarmWithRichSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

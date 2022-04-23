@@ -9,8 +9,8 @@ ms.openlocfilehash: 9762d109efabce3bc15a0d49894f7599e8d0604f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141859928"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143191295"
 ---
 # New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject
 
@@ -119,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.DeviceSecurityGroups.PSAllowlistCustomAlertRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

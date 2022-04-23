@@ -7,8 +7,8 @@ ms.openlocfilehash: 62c56b4f249b4feffaca76b8f0192d37768f3d59
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966168"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211239"
 ---
 # Get-AzureStorSimpleLegacyVolumeContainerMigrationPlan
 
@@ -134,7 +134,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### MigrasiPlanMsg
 Cmdlet ini mengembalikan objek **MigrationPlanMsg** yang berisi status pekerjaan rencana migrasi, bandwidth diasumsikan dalam megabit per detik, dan perkiraan waktu dalam menit.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

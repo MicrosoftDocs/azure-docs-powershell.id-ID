@@ -10,8 +10,8 @@ ms.openlocfilehash: 517ecd46d7599b50c540c7cc39e231d1dfc8f91b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141796244"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143191853"
 ---
 # Remove-AzADServicePrincipal
 
@@ -291,7 +291,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

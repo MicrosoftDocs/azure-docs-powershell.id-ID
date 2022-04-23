@@ -10,8 +10,8 @@ ms.openlocfilehash: 85852f56f9aada1a10a07c054b898c8f860a6b4d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142308750"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143204651"
 ---
 # Remove-AzStorageShare
 
@@ -267,7 +267,7 @@ Parameter: Bagikan (ByValue)
 
 ### Microsoft.WindowsAz. Storage. File.CloudFileShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

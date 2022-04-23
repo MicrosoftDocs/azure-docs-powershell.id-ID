@@ -9,8 +9,8 @@ ms.openlocfilehash: de13cb4534ff1ebc5fc2ab39e45f22fb6dd3a8b2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097546"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216719"
 ---
 # Test-AzureRmNetworkWatcherConnectivity
 
@@ -283,7 +283,7 @@ Parameter: NetworkWatcher (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSConnectivityInformation
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS

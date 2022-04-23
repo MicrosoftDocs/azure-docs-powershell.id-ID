@@ -7,8 +7,8 @@ ms.openlocfilehash: 1435fe734074cee3c44adee735fc347651c05d97
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278781"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211419"
 ---
 # Get-AzureSqlDatabaseImportExportStatus
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.ImportExport.StatusInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

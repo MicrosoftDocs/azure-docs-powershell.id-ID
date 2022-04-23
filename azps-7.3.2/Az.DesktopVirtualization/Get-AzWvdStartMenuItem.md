@@ -9,8 +9,8 @@ ms.openlocfilehash: 07df7360a66a10e240849547020b42d05199a5c3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141893870"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143184779"
 ---
 # Get-AzWvdStartMenuItem
 
@@ -32,7 +32,7 @@ Daftar item menu mulai dalam grup aplikasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 2: Daftar Windows Item Menu Mulai Desktop Virtual
+### Contoh 2: Daftar Item Menu Mulai Desktop Virtual Windows
 ```powershell
 PS C:\> Get-AzWvdStartMenuItem -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName
 
@@ -44,7 +44,7 @@ ApplicationGroupName/Disk Cleanup                   Microsoft.DesktopVirtualizat
 ApplicationGroupName/Internet Explorer              Microsoft.DesktopVirtualization/applicationgroups/startmenuitems
 ```
 
-Perintah ini Mencantumkan Windows Item Menu Mulai Desktop Virtual dalam Grup Aplikasi.
+Perintah ini Mencantumkan Item Menu Mulai Desktop Virtual Windows dalam Grup aplikasi.
 
 ## PARAMETERS
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IStartMenuItem
 
-## CATATAN
+## NOTES
 
 ALIAS
 

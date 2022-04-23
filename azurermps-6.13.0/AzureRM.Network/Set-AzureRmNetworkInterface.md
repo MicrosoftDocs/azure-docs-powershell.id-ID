@@ -10,8 +10,8 @@ ms.openlocfilehash: 771681739e8afd95215c8789a6ac849835bb2c8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142137113"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216917"
 ---
 # Set-AzureRmNetworkInterface
 
@@ -150,7 +150,7 @@ Parameter: NetworkInterface (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

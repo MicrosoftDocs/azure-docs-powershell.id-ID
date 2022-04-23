@@ -10,8 +10,8 @@ ms.openlocfilehash: f43ae519b63b8ed95e715e2d22bba33e15d4545c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141860612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143191889"
 ---
 # New-AzPolicyAssignment
 
@@ -502,7 +502,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

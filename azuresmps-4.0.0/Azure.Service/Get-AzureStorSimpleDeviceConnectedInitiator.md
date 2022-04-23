@@ -7,8 +7,8 @@ ms.openlocfilehash: c76f170a0f2a0fe974d2c3b6aaeca1d320d22a88
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278663"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211311"
 ---
 # Get-AzureStorSimpleDeviceConnectedInitiator
 
@@ -136,7 +136,7 @@ Cmdlet ini mengembalikan objek koneksi iSCSI yang berisi properti berikut:
 - **Iqn**
 - **IscsiConnectionId**
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

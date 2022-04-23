@@ -8,8 +8,8 @@ ms.openlocfilehash: 749f1b84ed033e903d3e50652e6199f184fffa2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285587"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143168443"
 ---
 # Remove-AzureRmExpressRouteCircuitPeeringConfig
 
@@ -112,7 +112,7 @@ Parameter 'ExpressRouteCircuit' menerima nilai tipe 'PSExpressRouteCircuit' dari
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

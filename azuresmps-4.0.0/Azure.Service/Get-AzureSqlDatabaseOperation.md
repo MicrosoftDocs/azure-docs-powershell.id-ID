@@ -7,8 +7,8 @@ ms.openlocfilehash: e18800e1f7deddda47ef0f8d80bcd4ffc2012086
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772378"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211341"
 ---
 # Get-AzureSqlDatabaseOperation
 
@@ -168,7 +168,7 @@ Cmdlet ini mengembalikan array objek **DatabaseOperationResponseList** jika Anda
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.Server.Database.DatabaseOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

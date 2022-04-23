@@ -7,8 +7,8 @@ ms.openlocfilehash: b9252814c7595bd3d74d312f8aa7910e38ad9f32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142058663"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211113"
 ---
 # Get-AzureVMDscExtension
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.VirtualMachineDscExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

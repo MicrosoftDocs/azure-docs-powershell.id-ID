@@ -9,8 +9,8 @@ ms.openlocfilehash: 4547253c774eba48e5cf06ec1857a9fbabbfeabc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141906609"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143191925"
 ---
 # New-AzADGroup
 
@@ -152,6 +152,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ActiveDirectory.PSADGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

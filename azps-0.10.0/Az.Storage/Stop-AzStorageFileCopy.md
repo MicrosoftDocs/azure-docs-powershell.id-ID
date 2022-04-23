@@ -10,8 +10,8 @@ ms.openlocfilehash: ce00ee3fa67477bfdced040fb8c990ff11dc4504
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142327823"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143204597"
 ---
 # Stop-AzStorageFileCopy
 
@@ -252,7 +252,7 @@ Parameter: File (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
