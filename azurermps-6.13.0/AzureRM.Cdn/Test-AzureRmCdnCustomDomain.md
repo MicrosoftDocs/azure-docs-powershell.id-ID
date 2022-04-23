@@ -10,8 +10,8 @@ ms.openlocfilehash: e249331f70e0ef0b7e1397f514363787e9dcf0dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142738"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265645"
 ---
 # Test-AzureRmCdnCustomDomain
 
@@ -143,7 +143,7 @@ Parameter: CdnEndpoint (ByValue)
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSValidateCustomDomainOutput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

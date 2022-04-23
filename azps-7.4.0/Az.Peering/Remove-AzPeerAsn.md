@@ -9,8 +9,8 @@ ms.openlocfilehash: 93958b0d3b325a94404cdb50096ddd0b0f0f6717
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421539"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143279083"
 ---
 # Remove-AzPeerAsn
 
@@ -199,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

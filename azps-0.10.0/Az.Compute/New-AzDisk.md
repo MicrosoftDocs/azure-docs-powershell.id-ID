@@ -9,8 +9,8 @@ ms.openlocfilehash: 1eea8504f974e7ffc504520a5b5abc036c4d3e2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142309129"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265401"
 ---
 # New-AzDisk
 
@@ -165,7 +165,7 @@ Microsoft.Azure.Management.Compute.Models.Disk
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

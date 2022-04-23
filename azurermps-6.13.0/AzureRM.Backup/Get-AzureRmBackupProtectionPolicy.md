@@ -10,8 +10,8 @@ ms.openlocfilehash: e3e4858e3cb4f3c54c502ac14fb2c5d8e3ba0c63
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887288"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265802"
 ---
 # Get-AzureRmBackupProtectionPolicy
 
@@ -122,7 +122,7 @@ Parameter: Vault (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupProtectionPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 25e808926bf58bf11929b8e2d8218f517d1832ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329821"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265383"
 ---
 # New-AzImage
 
@@ -173,7 +173,7 @@ Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

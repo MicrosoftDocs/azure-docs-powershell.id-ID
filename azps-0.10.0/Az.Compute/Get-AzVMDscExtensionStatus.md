@@ -10,8 +10,8 @@ ms.openlocfilehash: 3ae9827c6db5136b9327936a63ac0441dcf94ff1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235989"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265491"
 ---
 # Get-AzVMDscExtensionStatus
 
@@ -112,7 +112,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineInstanceView
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

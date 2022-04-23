@@ -10,8 +10,8 @@ ms.openlocfilehash: 413977ee42b0edc2221cbbdcfd34b6130d40f74e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918543"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265509"
 ---
 # Get-AzRemoteDesktopFile
 
@@ -144,7 +144,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

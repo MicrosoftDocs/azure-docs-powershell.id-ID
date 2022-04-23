@@ -10,8 +10,8 @@ ms.openlocfilehash: 0a43f98a926da76f2127589477e8c9f771a032cc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887230"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265803"
 ---
 # Get-AzureBatchJobStatistics
 
@@ -102,7 +102,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSJobStatistics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

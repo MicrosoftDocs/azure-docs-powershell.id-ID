@@ -9,8 +9,8 @@ ms.openlocfilehash: e4f232425f75b79169ac3b800e17916afda310c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142207135"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143237771"
 ---
 # Update-AzAvailabilityGroupListener
 
@@ -248,6 +248,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureAvailabilityGroupListenerModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: cd649d5f3ab437170662451d8f6791302aecd134
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143272853"
 ---
 # Get-AzSqlDatabaseImportExportStatus
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ImportExport.Model.AzureSqlDatabaseImportExportStatusModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS

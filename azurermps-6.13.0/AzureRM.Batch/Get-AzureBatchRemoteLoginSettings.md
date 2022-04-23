@@ -10,8 +10,8 @@ ms.openlocfilehash: d25e9aeb75c58bcce560043d87f5ce9eef065b97
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844798"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143265743"
 ---
 # Get-AzureBatchRemoteLoginSettings
 
@@ -163,7 +163,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSRemoteLoginSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
