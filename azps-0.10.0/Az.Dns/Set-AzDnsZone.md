@@ -10,8 +10,8 @@ ms.openlocfilehash: 9b6d84f9007a872db0e41efa78d8e16d7269eb02
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142499435"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358083"
 ---
 # Set-AzDnsZone
 
@@ -190,7 +190,7 @@ Anda dapat menyalurkan objek DnsZone ke cmdlet ini.
 ### Microsoft.Azure.Commands.Dns.DnsZone
 Cmdlet ini mengembalikan objek DnsZone yang mewakili zona DNS yang diperbarui dengan Etag baru.
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 

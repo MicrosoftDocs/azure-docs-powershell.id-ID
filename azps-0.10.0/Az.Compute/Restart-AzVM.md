@@ -10,8 +10,8 @@ ms.openlocfilehash: f7965e43c7a294d50d6f0774f76504a90c9d7148
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141875192"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358479"
 ---
 # Restart-AzVM
 
@@ -190,7 +190,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSComputeLongRunningOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

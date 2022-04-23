@@ -10,8 +10,8 @@ ms.openlocfilehash: 0bc25aecae445ba18634df578de590f514640c07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329245"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358209"
 ---
 # New-AzDnsRecordConfig
 
@@ -376,7 +376,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Dns.DnsRecordBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

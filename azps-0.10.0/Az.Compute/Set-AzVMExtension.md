@@ -10,8 +10,8 @@ ms.openlocfilehash: c8aa9660be48f5b5eb2b95343c8a11420978448d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142351295"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358335"
 ---
 # Set-AzVMExtension
 
@@ -348,7 +348,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

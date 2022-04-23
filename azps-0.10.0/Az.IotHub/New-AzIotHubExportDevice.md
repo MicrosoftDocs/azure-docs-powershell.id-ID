@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c1561330d6cd76c7c2d00efc16d61fe3b387b65
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811256"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358011"
 ---
 # New-AzIotHubExportDevice
 
@@ -26,7 +26,7 @@ New-AzIotHubExportDevice [-ResourceGroupName] <String> [-Name] <String> [-Export
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat ekspor baru untuk IotHub.
-Tindakan ini akan mengekspor semua perangkat ke wadah yang ditentukan. Lihat artikel berikut tentang cara menghasilkan URI SAS.
+Ini akan mengekspor semua perangkat ke kontainer yang ditentukan. Lihat artikel berikut tentang cara menghasilkan SAS URI.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportBlobContainerUri
-Uri untuk mengekspor blob ke. 
+Uri untuk mengekspor blob. 
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -115,8 +115,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,6 +157,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubJobResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

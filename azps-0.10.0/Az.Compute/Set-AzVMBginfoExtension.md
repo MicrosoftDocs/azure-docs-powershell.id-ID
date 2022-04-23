@@ -10,8 +10,8 @@ ms.openlocfilehash: 21b8b73d1063881104b799c016c2cfab618a9705
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142490471"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358407"
 ---
 # Set-AzVMBginfoExtension
 
@@ -210,7 +210,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 8044be4e6d9c353dd50420fe73066a8f47d53855
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329713"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358515"
 ---
 # Remove-AzVmssExtension
 
@@ -146,7 +146,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 
 ### Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 595d439707c67363faa7a780f8980efa7a1f3065
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142131767"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358659"
 ---
 # Remove-AzVMChefExtension
 
@@ -187,7 +187,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

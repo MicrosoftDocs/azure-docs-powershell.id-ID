@@ -9,8 +9,8 @@ ms.openlocfilehash: e437f8fc6d650a330b4a2aa7a88b6b491832bd0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142320701"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143366634"
 ---
 # Get-AzComputeResourceSku
 
@@ -81,6 +81,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSResourceSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

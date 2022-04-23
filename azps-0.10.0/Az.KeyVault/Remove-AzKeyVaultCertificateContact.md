@@ -10,8 +10,8 @@ ms.openlocfilehash: 0b92fcb3725d42ac7c2978600f7903d6bf7f6142
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142057709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143357867"
 ---
 # Remove-AzKeyVaultCertificateContact
 
@@ -143,7 +143,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### System.Collections.Generic.List'1[Microsoft.Azure.Commands.KeyVault.Models.KeyVaultCertificateContact]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: e6a436334af06bd09066e2dcda0595fd5fffa89b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142495493"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143357561"
 ---
 # Get-AzMetric
 
@@ -439,7 +439,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSMetric
 
-## CATATAN
+## NOTES
 
 Informasi selengkapnya tentang metrik yang didukung dapat ditemukan di: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported
 

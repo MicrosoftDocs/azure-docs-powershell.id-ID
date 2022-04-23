@@ -10,8 +10,8 @@ ms.openlocfilehash: e00b31783554b8ea70760809c36f23a6a62575ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142493873"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358119"
 ---
 # Remove-AzDnsRecordConfig
 
@@ -405,7 +405,7 @@ Ini adalah representasi offline dari kumpulan catatan dan pembaruan untuknya tid
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
 Cmdlet ini mengembalikan objek **RecordSet** yang diubah.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

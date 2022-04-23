@@ -9,16 +9,16 @@ ms.openlocfilehash: 6363180cc5ac32dbd06025ed6599f05bca789dd3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141790214"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143366903"
 ---
 # Remove-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Menghapus contoh peran di layanan awan.
+Menghapus instans peran di layanan awan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/remove-azcloudserviceroleinstance) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/remove-azcloudserviceroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,21 +36,21 @@ Remove-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> -RoleInst
 ```
 
 ## DESCRIPTION
-Menghapus contoh peran di layanan awan.
+Menghapus instans peran di layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus contoh peran layanan awan
+### Contoh 1: Menghapus instans peran layanan cloud
 ```powershell
 Remove-AzCloudServiceInstance -ResourceGroup "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstance "ContosoFrontEnd_IN_0"
 ```
 
-Perintah ini menghapus contoh peran bernama ContosoFrontEnd_IN_0 layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini menghapus instans peran bernama ContosoFrontEnd_IN_0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,8 +155,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoleInstance
-Daftar nama contoh peran layanan awan.
-Nilai '*' akan menandakan semua contoh peran layanan awan.
+Daftar nama instans peran layanan awan.
+Nilai '*' akan menandakan semua instans peran layanan cloud.
 
 ```yaml
 Type: System.String[]
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -186,8 +186,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -247,10 +247,10 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Perbarui domain diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan seterunya.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

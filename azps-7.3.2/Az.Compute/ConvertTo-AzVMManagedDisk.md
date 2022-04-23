@@ -9,8 +9,8 @@ ms.openlocfilehash: e22cd4f0b7f3c5105201e599c3f179a3d20b9ad7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142218259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143366723"
 ---
 # ConvertTo-AzVMManagedDisk
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

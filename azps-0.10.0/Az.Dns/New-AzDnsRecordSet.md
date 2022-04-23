@@ -10,8 +10,8 @@ ms.openlocfilehash: 0327837f6e28d7147892669bd77b1aa78747a5c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142499453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358173"
 ---
 # New-AzDnsRecordSet
 
@@ -434,7 +434,7 @@ Anda dapat menyalurkan objek DnsZone ke cmdlet ini.
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
 Cmdlet ini mengembalikan objek **RecordSet** .
 
-## CATATAN
+## NOTES
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 
