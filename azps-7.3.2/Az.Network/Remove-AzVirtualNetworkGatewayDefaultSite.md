@@ -10,8 +10,8 @@ ms.openlocfilehash: 6f708be0760d76c4ef83bdd7d28eceb2b0388161
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142468295"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143073845"
 ---
 # Remove-AzVirtualNetworkGatewayDefaultSite
 
@@ -91,7 +91,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

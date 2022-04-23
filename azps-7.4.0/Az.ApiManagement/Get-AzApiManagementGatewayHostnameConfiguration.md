@@ -9,8 +9,8 @@ ms.openlocfilehash: 24fb0924cc1285a8e9cb19c6b1ffd31428f8f45d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142435428"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143067995"
 ---
 # Get-AzApiManagementGatewayHostnameConfiguration
 
@@ -130,6 +130,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementGatewayHostnameConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

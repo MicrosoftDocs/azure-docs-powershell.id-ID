@@ -9,8 +9,8 @@ ms.openlocfilehash: e55e588442a3464433c00da2f9727929c0e90baf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002843"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125451"
 ---
 # Remove-AzDataFactoryV2Trigger
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

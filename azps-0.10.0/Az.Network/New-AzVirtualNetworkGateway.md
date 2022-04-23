@@ -10,13 +10,13 @@ ms.openlocfilehash: a19cc1484a00b60eb27723621e05aa67634e8732
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235791"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099837"
 ---
 # New-AzVirtualNetworkGateway
 
 ## SYNOPSIS
-Membuat Gateway Jaringan Virtual
+Membuat Gateway Virtual Network
 
 ## SYNTAX
 
@@ -62,7 +62,7 @@ New-AzVirtualNetworkGateway
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
 
 Cmdlet **New-AzVirtualNetworkGateway** membuat objek gateway Anda di Azure berdasarkan Nama, Nama Grup Sumber Daya, Lokasi, dan konfigurasi IP, serta Tipe Gateway dan jika VPN, Tipe VPN. Anda juga bisa memberi nama SKU Gateway.
 
@@ -72,7 +72,7 @@ Anda juga dapat memilih untuk menyertakan fitur lain seperti BGP dan Active-Acti
 
 ## EXAMPLES
 
-### 1: Membuat Gateway Jaringan Virtual
+### 1: Membuat Gateway Virtual Network
 ```
 New-AzResourceGroup -Location "UK West" -Name "vnet-gateway"
 $subnet = New-AzVirtualNetworkSubnetConfig -Name 'gatewaysubnet' -AddressPrefix '10.254.0.0/27'
@@ -85,11 +85,11 @@ $ngwipconfig = New-AzVirtualNetworkGatewayIpConfig -Name ngwipconfig -SubnetId $
 New-AzVirtualNetworkGateway -Name myNGW -ResourceGroupName vnet-gateway -Location "UK West" -IpConfigurations $ngwIpConfig  -GatewayType "Vpn" -VpnType "RouteBased" -GatewaySku "Basic"
 ```
 
-Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Jaringan Virtual dan subnet dan membuat Gateway Jaringan Virtual di Azure.
+Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Virtual Network dan subnet dan membuat gateway Virtual Network di Azure.
 
 Gateway akan disebut "myNGW" dalam grup sumber daya "vnet-gateway" di lokasi "UK West" dengan konfigurasi IP yang dibuat sebelumnya disimpan dalam variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "Basic."
 
-### 2: Membuat Gateway Jaringan Virtual dengan Konfigurasi Radius Eksternal
+### 2: Membuat Gateway Virtual Network dengan Konfigurasi Radius Eksternal
 ```
 New-AzResourceGroup -Location "UK West" -Name "vnet-gateway"
 New-AzVirtualNetworkSubnetConfig -Name 'gatewaysubnet' -AddressPrefix '10.254.0.0/27'
@@ -103,7 +103,7 @@ $Secure_String_Pwd = ConvertTo-SecureString "TestRadiusServerPassword" -AsPlainT
 New-AzVirtualNetworkGateway -Name myNGW -ResourceGroupName vnet-gateway -Location "UK West" -IpConfigurations $ngwIpConfig  -GatewayType "Vpn" -VpnType "RouteBased" -GatewaySku "Basic" -RadiusServerAddress "TestRadiusServer" -RadiusServerSecret $Secure_String_Pwd
 ```
 
-Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Jaringan Virtual dan subnet dan membuat Gateway Jaringan Virtual di Azure.
+Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Virtual Network dan subnet dan membuat gateway Virtual Network di Azure.
 
 Gateway akan disebut "myNGW" dalam grup sumber daya "vnet-gateway" di lokasi "UK West" dengan konfigurasi IP yang dibuat sebelumnya disimpan dalam variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "Basic." Ini juga menambahkan server radius eksternal dengan alamat "TestRadiusServer"
 
@@ -453,7 +453,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

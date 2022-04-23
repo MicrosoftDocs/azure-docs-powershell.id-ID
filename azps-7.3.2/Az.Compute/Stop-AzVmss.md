@@ -10,8 +10,8 @@ ms.openlocfilehash: 2e72e27b55683b2309c4c99ef6761299745aa3ae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141789927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143080811"
 ---
 # Stop-AzVmss
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

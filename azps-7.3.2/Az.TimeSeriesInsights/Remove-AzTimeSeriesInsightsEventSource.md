@@ -9,8 +9,8 @@ ms.openlocfilehash: 6c891c560d48413bfc87ca4b580ca4c495914fbd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142287205"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143130520"
 ---
 # Remove-AzTimeSeriesInsightsEventSource
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya tertentu.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+Nama sumber kejadian Time Series Insights yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -205,7 +205,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -217,7 +217,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama sumber kejadian Time Series Insights yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
