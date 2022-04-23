@@ -10,13 +10,13 @@ ms.openlocfilehash: 9a3b325f0edcd7c622ae0af5e9ae3f8bc300cf1d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142115657"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143138933"
 ---
 # New-AzApiManagementCertificate
 
 ## SYNOPSIS
-Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend.
+Membuat sertifikat Manajemen API yang akan digunakan selama Autentikasi dengan Backend.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcertificate) untuk informasi terbaru.
@@ -38,7 +38,7 @@ New-AzApiManagementCertificate -Context <PsApiManagementContext> [-CertificateId
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementCertificate** membuat sertifikat API Management Azure.
+Cmdlet **New-AzApiManagementCertificate** membuat sertifikat Manajemen API Azure.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Perintah ini mengunggah sertifikat ke Manajemen Api. Sertifikat ini bisa digunak
 
 ### Contoh 2
 
-Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend. (autogenerasi)
+Membuat sertifikat Manajemen API yang akan digunakan selama Autentikasi dengan Backend. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -195,7 +195,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

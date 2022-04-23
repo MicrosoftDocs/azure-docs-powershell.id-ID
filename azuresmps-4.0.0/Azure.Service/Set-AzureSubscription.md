@@ -7,8 +7,8 @@ ms.openlocfilehash: 589ff3496db0c6d589f94b86cdaf5669eba8f2b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142311748"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103054"
 ---
 # Set-AzureSubscription
 
@@ -261,7 +261,7 @@ Anda dapat menyalurkan input ke cmdlet ini menurut nama properti, tetapi tidak m
 Saat Anda menggunakan parameter *PassThru* , cmdlet ini mengembalikan nilai Boolean.
 Secara default, cmdlet ini tidak mengembalikan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 05027c0cf0588542eadfeade57b2b7e1a4c4d119
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142349021"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143138375"
 ---
 # Get-AzConsumptionReservationDetail
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSReservationDetail
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 1a8e2e5e8421ecd3db7fc2136b6adc66d1e9199a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142248877"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143130365"
 ---
 # Get-AzWebAppBackup
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Cmdlets.WebApps.AzureWebAppBackup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 68ddfaf154d7e2bc72713b013f72d5f2f30e70a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141791312"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143138717"
 ---
 # Enable-AzBatchAutoScale
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

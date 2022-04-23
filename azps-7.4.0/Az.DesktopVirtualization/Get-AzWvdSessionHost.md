@@ -9,8 +9,8 @@ ms.openlocfilehash: 2b46413ed72f6dde0f71052ff1990a48c4ed4f35
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432699"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143123975"
 ---
 # Get-AzWvdSessionHost
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.ISessionHost
 
-## CATATAN
+## NOTES
 
 ALIAS
 

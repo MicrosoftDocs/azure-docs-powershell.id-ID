@@ -9,8 +9,8 @@ ms.openlocfilehash: 807247e55f14968f0a0a4aac190b1b9560f986fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142004866"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143130095"
 ---
 # Disable-AzDataCollection
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
