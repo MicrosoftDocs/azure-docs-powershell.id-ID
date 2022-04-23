@@ -10,8 +10,8 @@ ms.openlocfilehash: 2afef7cb6dfab2158f6b604c5b829c8178892261
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165409"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143308187"
 ---
 # Clear-AzSqlServerAdvancedThreatProtectionSetting
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ThreatDetection.Model.ServerThreatDetectionsettingsModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

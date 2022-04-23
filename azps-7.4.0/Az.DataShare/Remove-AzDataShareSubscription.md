@@ -9,8 +9,8 @@ ms.openlocfilehash: 931c678c954e2fd228b5eec7efd54f15fcfc7f34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998166"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288099"
 ---
 # Remove-AzDataShareSubscription
 
@@ -221,6 +221,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
