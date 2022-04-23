@@ -9,8 +9,8 @@ ms.openlocfilehash: 3969287b149977c2e3ef9012ddb6563989a6113d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142484801"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143072855"
 ---
 # New-AzQuotaLimitObject
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Quota.Models.Api20210315Preview.LimitObject
 
-## CATATAN
+## NOTES
 
 ALIAS
 

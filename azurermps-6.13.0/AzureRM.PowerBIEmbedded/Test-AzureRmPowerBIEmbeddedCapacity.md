@@ -10,8 +10,8 @@ ms.openlocfilehash: 306bb6e4e12adcb4a4eda65b2517ddf0648a81fe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968283"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143107505"
 ---
 # Test-AzureRmPowerBIEmbeddedCapacity
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

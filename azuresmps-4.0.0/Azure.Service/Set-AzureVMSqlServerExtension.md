@@ -7,8 +7,8 @@ ms.openlocfilehash: 33e0a54ccbeda6ab5b60fe2af805dc24989ede8e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143102945"
 ---
 # Set-AzureVMSqlServerExtension
 
@@ -258,7 +258,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

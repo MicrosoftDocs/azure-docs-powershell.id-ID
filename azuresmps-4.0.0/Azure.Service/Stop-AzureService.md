@@ -7,8 +7,8 @@ ms.openlocfilehash: b789479157f90c99b43fae07fc8caf7996f70f6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142243225"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143102681"
 ---
 # Stop-AzureService
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

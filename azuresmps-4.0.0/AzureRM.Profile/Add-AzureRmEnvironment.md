@@ -6,8 +6,8 @@ ms.openlocfilehash: d2ce5bc54f086d2e0da04485e5328e3e2bb8b5f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141879512"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143102393"
 ---
 # Add-AzureRmEnvironment
 
@@ -420,7 +420,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSAzureEnvironment
 Cmdlet ini mengembalikan rangkaian titik akhir dan metadata yang diperlukan untuk berkomunikasi dengan instans Azure.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

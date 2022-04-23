@@ -9,8 +9,8 @@ ms.openlocfilehash: a1046ff7f6ac9fab8a5f9c62234e072b49145d39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141999671"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143066267"
 ---
 # Add-AzImageDataDisk
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSImage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

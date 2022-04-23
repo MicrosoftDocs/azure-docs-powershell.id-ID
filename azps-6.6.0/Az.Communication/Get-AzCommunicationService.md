@@ -9,8 +9,8 @@ ms.openlocfilehash: c5236bb1ddd3493233b88b5d0dd403c74ab73e76
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142129211"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143096309"
 ---
 # Get-AzCommunicationService
 
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.Api20200820Preview.ICommunicationServiceResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

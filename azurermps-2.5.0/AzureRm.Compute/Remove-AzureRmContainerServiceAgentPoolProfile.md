@@ -8,8 +8,8 @@ ms.openlocfilehash: 2bbc7d9e1ac125134931be483d3a693252ce12d0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114111"
 ---
 # Remove-AzureRmContainerServiceAgentPoolProfile
 
@@ -130,7 +130,7 @@ Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari pipelin
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

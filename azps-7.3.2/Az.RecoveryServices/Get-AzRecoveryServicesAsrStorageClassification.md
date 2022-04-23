@@ -9,8 +9,8 @@ ms.openlocfilehash: 99ddff4f80d132f375b7d5b91a116826e63f8c44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142318078"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143072729"
 ---
 # Get-AzRecoveryServicesAsrStorageClassification
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRStorageClassification
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

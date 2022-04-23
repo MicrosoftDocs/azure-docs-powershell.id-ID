@@ -9,8 +9,8 @@ ms.openlocfilehash: ca32f2d0436ea16d8897f279239ce4de079d1550
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143107923"
 ---
 # Add-AzureRmIoTDeviceProvisioningServiceLinkedHub
 
@@ -258,6 +258,6 @@ Parameter: DpsObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSIotHubDefinitions
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

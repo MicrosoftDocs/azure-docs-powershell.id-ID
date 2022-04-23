@@ -7,8 +7,8 @@ ms.openlocfilehash: b7e691d3bfea45fc8fc45725ddfe782418c12ab7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141929641"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114040"
 ---
 # Remove-AzureRmImageDataDisk
 
@@ -125,7 +125,7 @@ System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, Publ
 
 ### Microsoft.Azure.Management.Compute.Models.Image
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

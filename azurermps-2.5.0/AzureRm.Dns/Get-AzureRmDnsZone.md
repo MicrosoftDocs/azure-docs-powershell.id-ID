@@ -7,8 +7,8 @@ ms.openlocfilehash: 8b71c522a8d4dc006428ca2a400160a0ce7ce68b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142285936"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143113650"
 ---
 # Get-AzureRmDnsZone
 
@@ -110,7 +110,7 @@ Cmdlet ini tidak memungkinkan Anda untuk menyalurkan input.
 Cmdlet ini mengembalikan objek yang mewakili zona DNS.
 Jika nama zona tidak ditentukan, array objek zona akan dikembalikan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
