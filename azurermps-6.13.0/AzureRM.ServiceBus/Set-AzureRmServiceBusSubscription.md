@@ -9,8 +9,8 @@ ms.openlocfilehash: dbc3acdf65f97e5fa46d9359f1f7af43c2c137d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142382523"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143045756"
 ---
 # Set-AzureRmServiceBusSubscription
 
@@ -180,6 +180,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

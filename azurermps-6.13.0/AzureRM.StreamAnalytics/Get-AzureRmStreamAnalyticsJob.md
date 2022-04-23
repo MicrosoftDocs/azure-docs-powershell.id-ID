@@ -10,13 +10,13 @@ ms.openlocfilehash: eef326688a81481d235fb85281739f0361a6233c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923537"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044937"
 ---
 # Get-AzureRmStreamAnalyticsJob
 
 ## SYNOPSIS
-Dapatkan informasi pekerjaan Stream Analytics.
+Mendapatkan informasi pekerjaan Azure Stream Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,30 +34,30 @@ Get-AzureRmStreamAnalyticsJob [-NoExpand] [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmStreamAnalyticsJob** mencantumkan semua pekerjaan Stream Analytics yang ditentukan dalam langganan Azure atau grup sumber daya tertentu atau mendapatkan informasi pekerjaan tentang pekerjaan tertentu dalam grup sumber daya.
+Cmdlet **Get-AzureRmStreamAnalyticsJob** mencantumkan semua pekerjaan Azure Stream Analytics yang ditentukan dalam langganan Azure atau grup sumber daya tertentu atau mendapatkan informasi pekerjaan tentang pekerjaan tertentu dalam grup sumber daya.
 
 ## EXAMPLES
 
-### CONTOH 1: Dapatkan informasi tentang semua pekerjaan dalam langganan
+### CONTOH 1: Mendapatkan informasi tentang semua pekerjaan dalam langganan
 ```
 PS C:\>Get-AzureRmStreamAnalyticsJob
 ```
 
-Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam langganan Azure.
+Perintah ini mengembalikan informasi tentang semua pekerjaan Azure Stream Analytics di langganan Azure.
 
-### CONTOH 2: Dapatkan informasi tentang semua pekerjaan dalam grup sumber daya
+### CONTOH 2: Mendapatkan informasi tentang semua pekerjaan dalam grup sumber daya
 ```
 PS C:\>Get-AzureRmStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US"
 ```
 
-Perintah ini mengembalikan informasi tentang semua pekerjaan Stream Analytics dalam grup sumber daya StreamAnalytics-Default-West-US.
+Perintah ini mengembalikan informasi tentang semua pekerjaan Azure Stream Analytics di grup sumber daya StreamAnalytics-Default-West-US.
 
 ### CONTOH 3: Mendapatkan informasi tentang pekerjaan tertentu dalam grup sumber daya
 ```
 PS C:\>Get-AzureRmStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -Name "StreamingJob"
 ```
 
-Perintah ini mengembalikan informasi tentang pekerjaan Stream Analytics StreamingJob dalam grup sumber daya StreamAnalytics-Default-West-US.
+Perintah ini mengembalikan informasi tentang pekerjaan Stream Analytics StreamingJob di grup sumber daya StreamAnalytics-Default-West-US.
 
 ## PARAMETERS
 
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pekerjaan Azure Stream Analytics untuk diambil.
+### -Name
+Menentukan nama pekerjaan Azure Stream Analytics yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,13 +134,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StreamAnalytics.Models.PSJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [New-AzureRmStreamAnalyticsJob](./New-AzureRmStreamAnalyticsJob.md)
 
-[Hapus-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
+[Remove-AzureRmStreamAnalyticsJob](./Remove-AzureRmStreamAnalyticsJob.md)
 
 [Start-AzureRmStreamAnalyticsJob](./Start-AzureRmStreamAnalyticsJob.md)
 

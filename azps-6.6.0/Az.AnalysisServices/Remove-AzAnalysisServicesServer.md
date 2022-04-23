@@ -9,16 +9,16 @@ ms.openlocfilehash: 53764cfbc14bb4eddc1dc1d1eb1475f628942148
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141809330"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143034479"
 ---
 # Remove-AzAnalysisServicesServer
 
 ## SYNOPSIS
-Menghapus contoh server Analysis Services
+Menghapus instans server Analysis Services
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/remove-azanalysisservicesserver) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/remove-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzAnalysisServicesServer menghapus contoh server Analysis Services
+Cmdlet Remove-AzAnalysisServicesServer menghapus instans server Analysis Services
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Cmdlet Remove-AzAnalysisServicesServer menghapus contoh server Analysis Services
 PS C:\> Remove-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 
-Perintah ini akan menghapus server bernama testserver dalam grup uji grup sumber daya
+Perintah ini akan menghapus server bernama testserver di grup sumber daya grup uji
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server Analysis Services
 
 ```yaml
@@ -101,7 +101,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta pengguna untuk mengonfirmasi apakah akan melakukan operasi
 
 ```yaml
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar melakukannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Models.AzureAnalysisServicesServer
 
-## CATATAN
+## NOTES
 Alias: Remove-AzAs
 
 ## RELATED LINKS

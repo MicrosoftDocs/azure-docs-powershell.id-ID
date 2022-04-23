@@ -7,8 +7,8 @@ ms.openlocfilehash: 2d07aad989b08909228aebca7538b007f36bfcab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381157"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143040455"
 ---
 # Get-AzsRegionHealth
 
@@ -147,6 +147,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.InfrastructureInsights.Admin.Models.RegionHealth
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

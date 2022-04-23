@@ -7,8 +7,8 @@ ms.openlocfilehash: 4be2c2ac3ed189c4831613890648cbdbebb31f7c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141922821"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044361"
 ---
 # Add-AzureWorkerRole
 
@@ -25,8 +25,8 @@ Add-AzureWorkerRole [-TemplateFolder <String>] [-Name <String>] [-Instances <Int
 ```
 
 ## DESCRIPTION
-Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 dari modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Add-AzureWorkerRole** membuat file dan konfigurasi yang diperlukan, terkadang disebut sebagai perancah, untuk peran pekerja kustom.
 
@@ -37,14 +37,14 @@ Cmdlet **Add-AzureWorkerRole** membuat file dan konfigurasi yang diperlukan, ter
 PS C:\> Add-AzureWorkerRole -Name MyWorkerRole
 ```
 
-Contoh ini menambahkan perancah untuk peran pekerja tunggal bernama MyWorkerRole ke aplikasi saat ini.
+Contoh ini menambahkan perancah untuk satu peran pekerja bernama MyWorkerRole ke aplikasi saat ini.
 
-### Contoh 2: Membuat peran beberapa contoh pekerja
+### Contoh 2: Membuat beberapa peran pekerja instans
 ```
 PS C:\> Add-AzureWorkerRole MyWorkerRole -I 2
 ```
 
-Contoh ini menambahkan peran peran pekerja baru bernama MyWorkerRole ke aplikasi saat ini, dengan jumlah contoh peran 2.
+Contoh ini menambahkan perancah untuk peran pekerja baru bernama MyWorkerRole ke aplikasi saat ini, dengan jumlah instans peran 2.
 
 ### Contoh 3: Membuat peran pekerja dengan perancah kustom
 ```
@@ -55,8 +55,8 @@ Contoh ini membuat peran pekerja dengan perancah kustom.
 
 ## PARAMETERS
 
-### -Instances
-Menentukan jumlah contoh peran untuk peran pekerja ini.
+### -Instans
+Menentukan jumlah instans peran untuk peran pekerja ini.
 Defaultnya adalah 1.
 
 ```yaml
@@ -71,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama peran pekerja.
 Nilai ini menentukan nama folder yang berisi perancah untuk aplikasi kustom yang akan dihosting dalam peran pekerja.
 Defaultnya adalah WorkerRolenumber, di mana angka adalah jumlah peran pekerja dalam layanan.
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -Profil
 Menentukan profil Azure tempat cmdlet ini dibaca.
-Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -120,18 +120,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Add-AzureWebRole](./Add-AzureWebRole.md)
 
-[AzureRoleTemplate baru](./New-AzureRoleTemplate.md)
+[New-AzureRoleTemplate](./New-AzureRoleTemplate.md)
 
 

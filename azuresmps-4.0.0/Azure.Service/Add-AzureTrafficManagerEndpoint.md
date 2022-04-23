@@ -7,8 +7,8 @@ ms.openlocfilehash: 0b8f097cc0d7e6b8ccf9712f8e909f8d32a5af74
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246051"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044397"
 ---
 # Add-AzureTrafficManagerEndpoint
 
@@ -27,7 +27,7 @@ Add-AzureTrafficManagerEndpoint -DomainName <String> [-Location <String>] -Type 
 
 ## DESCRIPTION
 Cmdlet **Add-AzureTrafficManagerEndpoint** menambahkan titik akhir ke profil Microsoft Azure Traffic Manager.
-Setelah menambahkan titik akhir, serahkan hasil ke cmdlet **Set-AzureTrafficManagerProfile** menggunakan operator pipeline.
+Setelah Anda menambahkan titik akhir, teruskan hasilnya ke cmdlet **Set-AzureTrafficManagerProfile** dengan menggunakan operator alur.
 Cmdlet tersebut tersambung ke Azure untuk menyimpan perubahan Anda.
 
 ## EXAMPLES
@@ -42,24 +42,24 @@ Perintah pertama menggunakan cmdlet **Get-AzureTrafficManagerProfile** untuk men
 
 Perintah kedua menambahkan titik akhir ke profil Traffic Manager yang disimpan di $TrafficManagerProfile.
 Titik akhir memiliki nama domain Contoso02App.couldapp.net.
-Perintah juga menentukan apakah diaktifkan dan tipenya.
-Perintah melewati objek profil ke cmdlet **Set-AzureTrafficManagerProfile** untuk menyambungkan ke Azure untuk menyimpan perubahan Anda.
+Perintah juga menentukan apakah diaktifkan dan jenisnya.
+Perintah meneruskan objek profil ke cmdlet **Set-AzureTrafficManagerProfile** untuk menyambungkan ke Azure untuk menyimpan perubahan Anda.
 
-### Contoh 2: Menambahkan titik akhir yang memiliki lokasi dan berat yang ditentukan
+### Contoh 2: Menambahkan titik akhir yang memiliki lokasi dan berat tertentu
 ```
 PS C:\>Add-AzureTrafficManagerEndpoint -TrafficManagerProfile ContosoTrafficManagerProfile -DomainName " Contoso02App.cloudapp.net" -Status Enabled -Type CloudService -Weight 2 -Location myLocation | Set-AzureTrafficManagerProfile
 ```
 
 Perintah ini menambahkan titik akhir ke profil Traffic Manager.
 Titik akhir memiliki nama domain Contoso02App.couldapp.net.
-Perintah juga menentukan apakah diaktifkan dan tipenya.
-Perintah juga menentukan berat dan lokasi untuk titik akhir.
-Perintah melewati objek profil ke **Set-AzureTrafficManagerProfile** untuk menyambungkan ke Azure untuk menyimpan perubahan Anda.
+Perintah juga menentukan apakah diaktifkan dan jenisnya.
+Perintah ini juga menentukan bobot dan lokasi untuk titik akhir.
+Perintah meneruskan objek profil ke **Set-AzureTrafficManagerProfile** untuk menyambungkan ke Azure untuk menyimpan perubahan Anda.
 
 ## PARAMETERS
 
 ### -DomainName
-Menentukan nama domain titik akhir untuk ditambahkan.
+Menentukan nama domain titik akhir yang akan ditambahkan.
 
 ```yaml
 Type: String
@@ -75,10 +75,10 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi titik akhir yang ditambahkan cmdlet.
-Lokasi ini harus berupa Azure.
+Ini harus menjadi lokasi Azure.
 
-Parameter ini harus berisi nilai untuk titik akhir dari tipe "Any" atau tipe "TrafficManager" dalam profil yang memiliki metode load balancing yang diatur ke "Performance".
-Nilai yang memungkinkan adalah nama kawasan Azure, seperti yang tercantum di https://azure.microsoft.com/regions/.
+Parameter ini harus berisi nilai untuk titik akhir jenis "Apa pun" atau jenis "TrafficManager" di profil yang memiliki metode penyeimbangan beban yang diatur ke "Performa".
+Nilai yang mungkin adalah nama wilayah Azure, seperti yang tercantum di https://azure.microsoft.com/regions/.
 
 ```yaml
 Type: String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinChildEndpoints
-Menentukan jumlah titik akhir minimum yang harus dimiliki profil bertumpuk secara online agar titik akhir ini dapat dipertimbangkan secara online.
+Menentukan jumlah minimum titik akhir yang harus dimiliki profil berlapis secara online agar titik akhir ini dipertimbangkan secara online.
 
 ```yaml
 Type: Int32
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 Menentukan status titik akhir pemantauan.
 Nilai yang valid adalah: 
 
-- Diaktifkan
-- Tamu penyandang cacat
+- Aktif
+- Nonaktifkan
 
 Jika Anda menentukan nilai Diaktifkan, Traffic Manager memantau titik akhir dan metode penyeimbangan beban mempertimbangkannya saat mengelola lalu lintas.
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerProfile
-Menentukan objek profil Traffic Manager yang akan ditambahkan titik akhir.
+Menentukan objek profil Traffic Manager untuk menambahkan titik akhir.
 
 ```yaml
 Type: IProfileWithDefinition
@@ -158,17 +158,17 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe titik akhir.
+### -Type
+Menentukan jenis titik akhir.
 Nilai yang valid adalah: 
 
 - CloudService
 - AzureWebsite
 - TrafficManager
 
-- Setiap 
+- Apa pun 
 
-Jika terdapat lebih dari satu titik akhir AzureWebsite, titik akhir harus berada di pusat data yang berbeda.
+Jika ada lebih dari satu titik akhir AzureWebsite, titik akhir harus berada di pusat data yang berbeda.
 
 ```yaml
 Type: String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Berat
-Menentukan berat titik akhir yang ditambahkan cmdlet.
+Menentukan bobot titik akhir yang ditambahkan cmdlet.
 Rentang nilai yang valid untuk parameter ini adalah \[1.1000\].
 
 Parameter ini hanya digunakan untuk kebijakan penyeimbangan beban RoundRobin.
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -210,11 +210,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.WindowsAzure.Commands.Utilities.TrafficManager.Models.IProfileWithDefinition
 Cmdlet ini menghasilkan objek profil Traffic Manager, yang berisi informasi tentang profil yang diperbarui.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Hapus-AzureTrafficManagerEndpoint](./Remove-AzureTrafficManagerEndpoint.md)
+[Remove-AzureTrafficManagerEndpoint](./Remove-AzureTrafficManagerEndpoint.md)
 
 [Set-AzureTrafficManagerEndpoint](./Set-AzureTrafficManagerEndpoint.md)
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 428b56e33ff8f0495a496d2dff2c5c0cf75c5d2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142273939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143033327"
 ---
 # Confirm-AzCdnEndpointProbeURL
 
@@ -85,6 +85,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSValidateProbeOutput
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

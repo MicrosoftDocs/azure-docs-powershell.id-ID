@@ -9,8 +9,8 @@ ms.openlocfilehash: 3c28bc2a13bbcfdd496b8df01a757aa683a87802
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142383821"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046251"
 ---
 # New-AzureRmDeployment
 
@@ -336,6 +336,6 @@ System.Collections.Hashtable
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeployment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

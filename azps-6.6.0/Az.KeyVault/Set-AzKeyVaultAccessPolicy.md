@@ -10,8 +10,8 @@ ms.openlocfilehash: bb37a4cf538369c903dd5ba8ff0539dd68fdce7b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304515"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143029151"
 ---
 # Set-AzKeyVaultAccessPolicy
 
@@ -596,7 +596,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Kubah Kunci
+Id Sumber Daya Key Vault
 
 ```yaml
 Type: System.String
@@ -718,7 +718,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

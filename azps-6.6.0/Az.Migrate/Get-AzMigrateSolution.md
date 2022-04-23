@@ -9,8 +9,8 @@ ms.openlocfilehash: d6730daaf498823d68d5904c16f5fa0e58b27aaf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303423"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143027981"
 ---
 # Get-AzMigrateSolution
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20180901Preview.ISolution
 
-## CATATAN
+## NOTES
 
 ALIAS
 

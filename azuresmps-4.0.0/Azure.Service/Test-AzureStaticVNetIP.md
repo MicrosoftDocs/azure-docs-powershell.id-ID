@@ -7,8 +7,8 @@ ms.openlocfilehash: bf0fb8f94e075e7dc5b3bf6acd0f7aec4de7b11b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141771656"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143041328"
 ---
 # Test-AzureStaticVNetIP
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

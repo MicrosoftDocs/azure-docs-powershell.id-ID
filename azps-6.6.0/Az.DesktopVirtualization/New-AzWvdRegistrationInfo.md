@@ -9,13 +9,13 @@ ms.openlocfilehash: cdbb0e07e1bb5d0287bd74404af0a049f1743260
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233163"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "142967051"
 ---
 # New-AzWvdRegistrationInfo
 
 ## SYNOPSIS
-Buat info pendaftaran desktop virtual Windows.
+Buat Windows info pendaftaran desktop virtual.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdregistrationinfo) untuk informasi terbaru.
@@ -28,7 +28,7 @@ New-AzWvdRegistrationInfo -ExpirationTime <String> -HostPoolName <String> -Resou
 ```
 
 ## DESCRIPTION
-Buat info pendaftaran desktop virtual Windows.
+Buat Windows info pendaftaran desktop virtual.
 
 ## EXAMPLES
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IRegistrationInfo
 
-## CATATAN
+## NOTES
 
 ALIAS
 

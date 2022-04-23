@@ -10,13 +10,13 @@ ms.openlocfilehash: 19662972e115acb0e3a194e14abf3f956d39035e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141817451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143046075"
 ---
 # Remove-AzureRmResourceGroupDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran grup sumber daya dan operasi apa pun yang terkait.
+Menghapus penyebaran grup sumber daya dan operasi terkait apa pun.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ Remove-AzureRmResourceGroupDeployment -Id <String> [-ApiVersion <String>] [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmResourceGroupDeployment** menghapus penyebaran grup sumber daya Azure dan semua operasi terkait.
+Cmdlet **Remove-AzureRmResourceGroupDeployment** menghapus penyebaran grup sumber daya Azure dan operasi terkait.
 
 ## EXAMPLES
 
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyebaran grup sumber daya untuk dihapus.
+### -Name
+Menentukan nama penyebaran grup sumber daya yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -102,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk dihapus.
+Menentukan nama grup sumber daya yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -164,15 +164,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
@@ -182,6 +182,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmResourceGroupDeployment](./Stop-AzureRmResourceGroupDeployment.md)
 
-[Uji-AzureRmResourceGroupDeployment](./Test-AzureRmResourceGroupDeployment.md)
+[Test-AzureRmResourceGroupDeployment](./Test-AzureRmResourceGroupDeployment.md)
 
 

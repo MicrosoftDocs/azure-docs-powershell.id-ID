@@ -9,8 +9,8 @@ ms.openlocfilehash: 4c64a9601c625ec1d0cc9a28bbdf56f30848dab3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141790628"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143020421"
 ---
 # New-AzFrontDoorCdnRoute
 
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

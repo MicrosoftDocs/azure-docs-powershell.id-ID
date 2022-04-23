@@ -7,8 +7,8 @@ ms.openlocfilehash: e54b9af06b56f3e9010136b8aff704cf5e8d5d4c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772053"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143042255"
 ---
 # Remove-AzureSqlDatabase
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 * Karena tingkat keparahan operasi, secara default, cmdlet ini meminta Anda untuk konfirmasi. Untuk melewati konfirmasi, tentukan parameter *Paksa* .
 
 ## RELATED LINKS

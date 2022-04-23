@@ -9,16 +9,16 @@ ms.openlocfilehash: 9f015c71bc34a2f5eabddcf5e4f1f76ae8d63fe8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142323004"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143032859"
 ---
 # Get-AzCloudServiceRoleInstanceRemoteDesktopFile
 
 ## SYNOPSIS
-Mendapatkan file desktop jarak jauh untuk contoh peran di layanan awan.
+Mendapatkan file desktop jarak jauh untuk instans peran di layanan cloud.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstanceremotedesktopfile) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstanceremotedesktopfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,16 +29,16 @@ Get-AzCloudServiceRoleInstanceRemoteDesktopFile -CloudServiceName <String> -Reso
 ```
 
 ## DESCRIPTION
-Mendapatkan file desktop jarak jauh untuk contoh peran di layanan awan.
+Mendapatkan file desktop jarak jauh untuk instans peran di layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan file RDP
+### Contoh 1: Mendapatkan file RDP
 ```powershell
 PS C:\> Get-AzCloudServiceRoleInstanceRemoteDesktopFile -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0" -OutFile "C:\temp\ContosoFrontEnd_IN_0.rdp"
 ```
 
-Perintah ini mendapatkan file RDP untuk contoh peran bernama ContosoFrontEndIN0\_\_ dari Layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan file RDP untuk instans peran bernama ContosoFrontEndIN0\_\_ dari Layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleInstanceName
-Nama contoh peran.
+Nama instans peran.
 
 ```yaml
 Type: System.String
@@ -133,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -157,7 +157,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: b248ea6e7163eb99230d5ce343e49eea29e33190
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142073407"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143020457"
 ---
 # New-AzFrontDoorCdnRuleAction
 
@@ -18,7 +18,7 @@ ms.locfileid: "142073407"
 Membuat tindakan aturan.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnruleaction) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +74,7 @@ Membuat tindakan aturan.
 ## PARAMETERS
 
 ### -CacheBehavior
-Singgahan perilaku untuk tindakan tersebut.
+Perilaku penembolokan untuk tindakan.
 
 ```yaml
 Type: String
@@ -89,8 +89,8 @@ Accept wildcard characters: False
 ```
 
 ### -CacheDuration
-Durasi yang kontennya perlu disinggahkan.
-Format yang diperbolehkan adalah \[d.\] hh:mm:ss
+Durasi konten perlu di-cache.
+Format yang diizinkan adalah \[d.\] hh:mm:ss
 
 ```yaml
 Type: String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ### -CustomFragment
 Fragmen untuk ditambahkan ke URL pengalihan.
 Fragmen adalah bagian dari URL yang muncul setelah #.
-Jangan sertakan kesalahan #.
+Jangan sertakan #.
 
 ```yaml
 Type: String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomHostname
-Host untuk mengalihkan.
+Host untuk dialihkan.
 Biarkan kosong untuk menggunakan host masuk sebagai host tujuan.
 
 ```yaml
@@ -156,9 +156,9 @@ Accept wildcard characters: False
 
 ### -CustomQueryString
 Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
-Mengatur nilai ini akan menggantikan string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
+Mengatur nilai ini akan menggantikan string kueri yang ada; biarkan kosong untuk mempertahankan string kueri masuk.
 String kueri harus dalam \<key\>=\<value\> format.
-? dan & akan ditambahkan secara otomatis, jadi jangan sertakan.
+? dan & akan ditambahkan secara otomatis sehingga jangan sertakan.
 
 ```yaml
 Type: String
@@ -187,7 +187,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
+### -Destination
 Tentukan URL relatif tempat permintaan di atas akan ditulis ulang.
 
 ```yaml
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationProtocol
-Protokol untuk digunakan untuk pengalihan.
+Protokol yang digunakan untuk pengalihan.
 Nilai defaultnya adalah MatchRequest.
 
 ```yaml
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderAction
-Tindakan untuk dijalankan.
+Tindakan yang harus dilakukan.
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderName
-Nama header untuk diubah.
+Nama header yang akan diubah.
 
 ```yaml
 Type: String
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderType
-Apakah mengubah header permintaan atau header respons.
+Apakah akan mengubah header permintaan atau header respons.
 
 ```yaml
 Type: String
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupOverride
-Menentukan tindakan pengesampingan grup asal untuk aturan pengiriman.
+Menentukan tindakan ambil alih grup asal untuk aturan pengiriman.
 
 ```yaml
 Type: String
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryStringBehavior
-Menentukan parameter untuk tindakan string kueri kunci singgahan.
+Menentukan parameter untuk tindakan string kueri kunci cache.
 Nilai yang diterima : Include, IncludeAll, Exclude, ExcludeAll
 
 ```yaml
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectType
-Tipe pengalihan aturan akan digunakan saat mengalihkan lalu lintas.
+Jenis pengalihan yang akan digunakan aturan saat mengalihkan lalu lintas.
 
 ```yaml
 Type: String
@@ -355,8 +355,8 @@ Accept wildcard characters: False
 ```
 
 ### -SourcePattern
-Tentukan pola URI permintaan yang mengidentifikasi tipe permintaan yang mungkin ditulis ulang.
-Jika nilai kosong, semua string cocok.
+Tentukan pola URI permintaan yang mengidentifikasi jenis permintaan yang mungkin ditulis ulang.
+Jika nilai kosong, semua string dicocokkan.
 
 ```yaml
 Type: String
@@ -371,16 +371,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdRuleAction
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

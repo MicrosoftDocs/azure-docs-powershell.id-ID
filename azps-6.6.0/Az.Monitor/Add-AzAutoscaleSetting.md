@@ -10,8 +10,8 @@ ms.openlocfilehash: ff5490eb8d9ba3ff1df3be724854e49de8ff539e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141955257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143027837"
 ---
 # Add-AzAutoscaleSetting
 
@@ -19,7 +19,7 @@ ms.locfileid: "141955257"
 Membuat pengaturan Skala Otomatis.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azautoscalesetting) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/add-azautoscalesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Add-AzAutoscaleSetting -Location <String> -Name <String> -ResourceGroupName <Str
 
 ## DESCRIPTION
 Cmdlet **Add-AzAutoscaleSetting** membuat pengaturan Skala Otomatis.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -59,13 +59,13 @@ PS C:\> $Profile2 = New-AzAutoscaleProfile -DefaultCapacity "1" -MaximumCapacity
 PS C:\> Add-AzAutoscaleSetting -Location "East US" -Name "MySetting" -ResourceGroupName "Default-Web-EastUS" -TargetResourceId "/subscriptions/b93fb07a-6f93-30be-bf3e-4f0deca15f4f/resourceGroups/Default-Web-EastUS/providers/microsoft.web/serverFarms/DefaultServerFarm" -AutoscaleProfile $Profile1, $Profile2
 ```
 
-Dua perintah pertama menggunakan [New-AzAutoscaleRule](https://docs.microsoft.com/powershell/module/az.monitor/new-azautoscalerule) untuk membuat dua aturan Skala Otomatis, $Rule 1 dan $Rule 2.
-Perintah ketiga dan keempat menggunakan [New-AzAutoscaleProfile](https://docs.microsoft.com/powershell/module/az.monitor/new-azautoscaleprofile) untuk membuat profil Skala Otomatis, $Profile 1 dan $Profile 2, menggunakan $Rule 1 dan $Rule 2.
+Dua perintah pertama menggunakan [New-AzAutoscaleRule](https://docs.microsoft.com/powershell/module/az.monitor/new-azautoscalerule) untuk membuat dua aturan Autoscale, $Rule 1 dan $Rule 2.
+Perintah ketiga dan keempat menggunakan [New-AzAutoscaleProfile](https://docs.microsoft.com/powershell/module/az.monitor/new-azautoscaleprofile) untuk membuat profil Autoscale, $Profile 1 dan $Profile 2, menggunakan $Rule 1 dan $Rule 2.
 Perintah akhir membuat pengaturan Skala Otomatis menggunakan profil di $Profile 1 dan $Profile 2.
 
 ### Contoh 2
 
-Membuat pengaturan Skala Otomatis. (autogenerasi)
+Membuat pengaturan Skala Otomatis. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -75,7 +75,7 @@ Add-AzAutoscaleSetting -AutoscaleProfile <List`1[AutoscaleProfile]> -DisableSett
 ## PARAMETERS
 
 ### -AutoscaleProfile
-Menentukan daftar profil untuk ditambahkan ke pengaturan Skala Otomatis, atau $Null untuk tidak menambahkan profil.
+Menentukan daftar profil yang akan ditambahkan ke pengaturan Skala otomatis, atau $Null untuk tidak menambahkan profil.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile]
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableSetting
-Menonaktifkan pengaturan Skala Otomatis yang sudah ada.
+Menonaktifkan pengaturan Autoscale yang ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Spesifikasi lengkap dari AutoscaleSetting
+Spesifikasi lengkap autoscaleSetting
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting
@@ -149,8 +149,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pengaturan Skala Otomatis untuk dibuat.
+### -Name
+Menentukan nama pengaturan Skala Otomatis yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk sumber daya yang terkait dengan pengaturan Skala Otomatis.
+Menentukan nama grup sumber daya untuk sumber daya yang terkait dengan pengaturan Skala otomatis.
 
 ```yaml
 Type: System.String
@@ -221,8 +221,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -262,15 +262,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSAddAutoscaleSettingOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

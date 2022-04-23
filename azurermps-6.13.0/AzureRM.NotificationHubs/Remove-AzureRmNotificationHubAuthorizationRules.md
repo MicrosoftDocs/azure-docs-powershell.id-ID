@@ -10,8 +10,8 @@ ms.openlocfilehash: 7e731052219c796b6e8453c64accd0cf8c25895a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141882533"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143047067"
 ---
 # Remove-AzureRmNotificationHubAuthorizationRules
 
@@ -29,14 +29,14 @@ Remove-AzureRmNotificationHubAuthorizationRules [-ResourceGroup] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Hapus-AzureRmNotificationHubAuthorizationRules** menghapus aturan otorisasi Tanda Tangan Akses Bersama (SAS) dari hub pemberitahuan.
+Cmdlet **Remove-AzureRmNotificationHubAuthorizationRules** menghapus aturan otorisasi Tanda Tangan Akses Bersama (SAS) dari hub pemberitahuan.
 Aturan otorisasi mengelola akses ke hub pemberitahuan Anda melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Tingkat izin bisa menjadi salah satu hal berikut ini: 
-- Mendengarkan
-- Mengirim
+- Dengar
+- Kirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
-Menghapus aturan otorisasi juga menghapus izin pengguna terkait.
+Menghapus aturan otorisasi juga menghapus izin pengguna yang sesuai.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ PS C:\>Remove-AzureRmNotificationHubAuthorizationRules -Namespace "ContosoNamesp
 ```
 
 Perintah ini menghapus aturan otorisasi bernama ListenRule dari hub pemberitahuan bernama ContosoExternalHub.
-Ketika menjalankan perintah ini, Anda harus menentukan ruang nama dan grup sumber daya tempat hub ditetapkan.
+Saat menjalankan perintah ini, Anda harus menentukan namespace layanan dan grup sumber daya tempat hub ditetapkan.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat hub pemberitahuan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -NotificationHub
 Menentukan hub pemberitahuan tempat aturan otorisasi ditetapkan.
-Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform.
+Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platformnya.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -143,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -184,13 +184,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzureRmNotificationHubAuthorizationRules](./Get-AzureRmNotificationHubAuthorizationRules.md)
 
-[AzureRmNotificationHubAuthorizationRules baru](./New-AzureRmNotificationHubAuthorizationRules.md)
+[New-AzureRmNotificationHubAuthorizationRules](./New-AzureRmNotificationHubAuthorizationRules.md)
 
 [Set-AzureRmNotificationHubAuthorizationRules](./Set-AzureRmNotificationHubAuthorizationRules.md)
 

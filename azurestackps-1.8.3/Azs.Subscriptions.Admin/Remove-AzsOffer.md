@@ -7,8 +7,8 @@ ms.openlocfilehash: 74772615551979a9ab0cdba3603305489698e212
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142239661"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143039787"
 ---
 # Remove-AzsOffer
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

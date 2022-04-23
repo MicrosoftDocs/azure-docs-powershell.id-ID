@@ -10,13 +10,13 @@ ms.openlocfilehash: 335cb4308a64811fdc99b0bafe6660ee69c9b9d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059131"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143044811"
 ---
 # Get-AzureRmTrafficManagerEndpoint
 
 ## SYNOPSIS
-Mendapatkan titik akhir untuk profil Pengelola Lalu Lintas.
+Mendapatkan titik akhir untuk profil Traffic Manager.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,10 +37,10 @@ Get-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoin
 ## DESCRIPTION
 Cmdlet **Get-AzureRmTrafficManagerEndpoint** mendapatkan titik akhir untuk profil Azure Traffic Manager.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada profil menggunakan cmdlet Set-AzureRmTrafficManagerEndpoint.
-Tentukan titik akhir dengan menggunakan parameter *Nama* dan *Tipe* .
-Anda dapat menentukan profil Traffic Manager baik dengan menggunakan parameter *ProfileName* dan *ResourceGroupName* , atau dengan menentukan objek **TrafficManagerProfile** .
-Atau, Anda dapat melewati nilai tersebut menggunakan pipeline.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke profil dengan menggunakan cmdlet Set-AzureRmTrafficManagerEndpoint.
+Tentukan titik akhir dengan menggunakan parameter *Nama* dan *Jenis* .
+Anda dapat menentukan profil Traffic Manager baik dengan menggunakan parameter *ProfileName* dan *ResourceGroupName*, atau dengan menentukan objek **TrafficManagerProfile**.
+Atau, Anda dapat meneruskan nilai tersebut dengan menggunakan alur.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Atau, Anda dapat melewati nilai tersebut menggunakan pipeline.
 PS C:\>$TrafficManagerEndpoint = Get-AzureRmTrafficManagerEndpoint -Name "contoso" -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11" -Type AzureEndpoints
 ```
 
-Perintah ini mendapatkan titik akhir Azure bernama contoso dari profil bernama ContosoProfile dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $TrafficManagerEndpoint.
+Perintah ini mendapatkan titik akhir Azure bernama contoso dari profil bernama ContosoProfile di grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
@@ -68,8 +68,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama titik akhir Manajer Lalu Lintas yang didapat cmdlet ini.
+### -Name
+Menentukan nama titik akhir Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama titik akhir Manajer Lalu Lintas yang didapat cmdlet ini.
+Menentukan nama titik akhir Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mendapatkan titik akhir Manajer Lalu Lintas dalam grup yang ditentukan parameter ini.
+Cmdlet ini mendapatkan titik akhir Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -129,8 +129,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
+### -Type
+Menentukan jenis titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
 Nilai yang valid adalah: 
 
 - AzureEndpoints
@@ -151,28 +151,28 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
-Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' dari pipeline
+Parameter 'TrafficManagerEndpoint' menerima nilai jenis 'TrafficManagerEndpoint' dari alur
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
-[Menonaktifkan-AzureRmTrafficManagerEndpoint](./Disable-AzureRmTrafficManagerEndpoint.md)
+[Disable-AzureRmTrafficManagerEndpoint](./Disable-AzureRmTrafficManagerEndpoint.md)
 
 [Enable-AzureRmTrafficManagerEndpoint](./Enable-AzureRmTrafficManagerEndpoint.md)
 
 [New-AzureRmTrafficManagerEndpoint](./New-AzureRmTrafficManagerEndpoint.md)
 
-[Hapus-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
+[Remove-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
 
 [Set-AzureRmTrafficManagerEndpoint](./Set-AzureRmTrafficManagerEndpoint.md)
 

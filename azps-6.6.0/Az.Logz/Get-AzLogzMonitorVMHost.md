@@ -9,8 +9,8 @@ ms.openlocfilehash: bb4bd83b5e1c581bae2548ed94219b2ce41f1e94
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141866084"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143028646"
 ---
 # Get-AzLogzMonitorVMHost
 
@@ -18,7 +18,7 @@ ms.locfileid: "141866084"
 Cantumkan sumber daya komputasi yang saat ini sedang dipantau oleh sumber daya akun utama Logz.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitorvmhost) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitorvmhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Cantumkan sumber daya komputasi yang saat ini sedang dipantau oleh sumber daya a
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan sumber daya komputasi yang sedang dipantau oleh sumber daya monitor
+### Contoh 1: Mencantumkan sumber daya komputasi yang saat ini sedang dipantau oleh sumber daya monitor
 ```powershell
 PS C:\> Get-AzLogzMonitorVMHost -ResourceGroupName logz-rg-test -Name pwsh-logz04
 
@@ -60,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Pantau nama sumber daya
+### -Name
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -106,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IVMResources
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 084d95635e55bd20962cc1e0f6788a93958d3720
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142027271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143008883"
 ---
 # Set-AzServiceBusGeoDRConfigurationBreakPair
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
