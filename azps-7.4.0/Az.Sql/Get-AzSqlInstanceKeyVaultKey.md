@@ -9,8 +9,8 @@ ms.openlocfilehash: a8e41352f1ffd6f92d4f5b6940c8d7b511f61351
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174207"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143307809"
 ---
 # Get-AzSqlInstanceKeyVaultKey
 
@@ -265,6 +265,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureRmSqlManagedInstanceKeyVaultKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

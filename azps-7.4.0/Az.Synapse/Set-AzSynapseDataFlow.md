@@ -9,8 +9,8 @@ ms.openlocfilehash: 489844ea7183bb8d107754d5d7b93f4fdfcd9ec8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142164259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143269469"
 ---
 # Set-AzSynapseDataFlow
 
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSDataFlowResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

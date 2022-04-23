@@ -10,8 +10,8 @@ ms.openlocfilehash: 994b24322e9f11ecb943dca7340a06fca40f4f34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420329"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143307485"
 ---
 # Get-AzSqlServerServiceObjective
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServiceObjective.Model.AzureSqlServerServiceObjectiveModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
