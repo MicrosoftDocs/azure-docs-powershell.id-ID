@@ -10,8 +10,8 @@ ms.openlocfilehash: deb750d372cc0506d324b64c77fc447f6da0de00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141899181"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143364401"
 ---
 # Get-AzApiManagementUserSsoUrl
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

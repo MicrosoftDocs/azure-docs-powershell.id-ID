@@ -9,48 +9,48 @@ ms.openlocfilehash: 403c96821922c13f7e1196b14fd0079db362f1a7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142073065"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143364599"
 ---
 # Restart-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Operasi Asinkron Peran Reboot meminta boot ulang contoh peran di layanan cloud.
+Operasi Reboot Role Instance asinkron meminta boot ulang instans peran di layanan cloud.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/restart-azcloudserviceroleinstance) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/restart-azcloudserviceroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Mulai ulang (Default)
+### Hidupkan ulang (Default)
 ```
 Restart-AzCloudServiceRoleInstance -CloudServiceName <String> -ResourceGroupName <String>
  -RoleInstanceName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Mulai UlangIdentitas
+### RestartViaIdentity
 ```
 Restart-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Operasi Asinkron Peran Reboot meminta boot ulang contoh peran di layanan cloud.
+Operasi Reboot Role Instance asinkron meminta boot ulang instans peran di layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai ulang contoh peran layanan awan
+### Contoh 1: Menghidupkan ulang instans peran layanan cloud
 ```powershell
 Restart-AzCloudService -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0"
 ```
 
-Perintah ini memulai ulang contoh peran bernama ContosoFrontEnd_IN_0 layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini memulai ulang instans peran bernama ContosoFrontEnd_IN_0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleInstanceName
-Nama contoh peran.
+Nama instans peran.
 
 ```yaml
 Type: System.String
@@ -170,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -185,8 +185,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -246,10 +246,10 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Perbarui domain diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan seterunya.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

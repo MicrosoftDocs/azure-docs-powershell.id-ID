@@ -9,8 +9,8 @@ ms.openlocfilehash: a17b2a3e05e0c8280433f5db34def7a9dce53c56
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141858056"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143343035"
 ---
 # Get-AzSynapseSparkSession
 
@@ -179,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkSession
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

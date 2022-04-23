@@ -9,8 +9,8 @@ ms.openlocfilehash: c44aca397b88a85b1353fea0877a861a60c1620a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141792842"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143364311"
 ---
 # New-AzApiManagementUserToken
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementUserToken
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

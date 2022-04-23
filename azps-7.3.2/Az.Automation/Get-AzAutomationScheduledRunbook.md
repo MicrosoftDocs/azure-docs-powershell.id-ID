@@ -10,8 +10,8 @@ ms.openlocfilehash: 036f0ef0b9c8c600b0bf45e2c96e2a87fc956b8e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141791888"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143364041"
 ---
 # Get-AzAutomationScheduledRunbook
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.JobSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

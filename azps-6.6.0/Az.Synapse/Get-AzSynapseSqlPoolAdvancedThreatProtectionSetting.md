@@ -9,8 +9,8 @@ ms.openlocfilehash: 45b794874b1919027724b8c86f8bf46dd20103f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142118069"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143342999"
 ---
 # Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSqlPoolSecurityAlertPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

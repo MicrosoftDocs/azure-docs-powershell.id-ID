@@ -9,8 +9,8 @@ ms.openlocfilehash: e71bb242a18c9c060b241cbe7eaa9f02f1296d9a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142483757"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143328203"
 ---
 # Get-AzSecurityTopology
 
@@ -156,6 +156,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Topology.PSSecurityTopologies
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

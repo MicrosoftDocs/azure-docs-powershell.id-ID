@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudService.md
-ms.openlocfilehash: 750d6d85a6346d2147088638f5bcabc9fb0a179b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 464fd92cecb077cc007f659029bae4891809b33a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001725"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143364743"
 ---
 # Get-AzCloudService
 
 ## SYNOPSIS
 Menampilkan informasi tentang layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Menampilkan informasi tentang layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua layanan awan di bawah grup sumber daya
+### Contoh 1: Mendapatkan semua layanan cloud di bawah grup sumber daya
 ```powershell
 Get-AzCloudService -ResourceGroupName "ContosOrg"
 ```
@@ -58,9 +61,9 @@ ContosOrg         ContosoCS         eastus2euap Succeeded
 ContosOrg         ContosoCSTest     eastus2euap Failed
 ```
 
-Perintah ini mendapatkan semua layanan awan dalam grup sumber daya bernama ContosOrg
+Perintah ini mendapatkan semua layanan cloud dalam grup sumber daya bernama ContosOrg
 
-### Contoh 2: Dapatkan layanan cloud
+### Contoh 2: Mendapatkan layanan cloud
 ```powershell
 Get-AzCloudService -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
 
@@ -92,7 +95,7 @@ UpgradeMode       : Auto
 
 ```
 
-Perintah ini mendapatkan layanan awan bernama ContosoCS yang dimiliki oleh grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -126,7 +129,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan awan.
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -183,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.ICloudService
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -196,16 +199,16 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi yang terkait dengan versi OS.
+  - `[Location <String>]`: Nama lokasi yang berkaitan dengan versi OS.
   - `[NetworkInterfaceName <String>]`: Nama antarmuka jaringan.
   - `[OSFamilyName <String>]`: Nama keluarga OS.
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Update domains are identified with a zero-based index: the first update domain has an ID of 0, the second has an ID of 1, and so on.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

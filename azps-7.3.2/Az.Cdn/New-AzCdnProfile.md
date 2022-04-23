@@ -10,8 +10,8 @@ ms.openlocfilehash: aad74aa15e93a9a89440d03d3ff60f043e2fb2e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142073533"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143364869"
 ---
 # New-AzCdnProfile
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

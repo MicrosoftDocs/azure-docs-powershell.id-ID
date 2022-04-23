@@ -9,8 +9,8 @@ ms.openlocfilehash: 157b5d76af8b889ad96121cffa348393f5156823
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142263661"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143342945"
 ---
 # Get-AzSynapseWorkspaceKey
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.WorkspaceKey.PSWorkspaceKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

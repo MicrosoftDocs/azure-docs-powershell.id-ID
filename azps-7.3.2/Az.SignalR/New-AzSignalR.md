@@ -9,8 +9,8 @@ ms.openlocfilehash: 738c9cca1677482673824fdfb17974617b4f36de
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142208611"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143327033"
 ---
 # New-AzSignalR
 
@@ -18,7 +18,7 @@ ms.locfileid: "142208611"
 Membuat layanan SignalR.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azsignalr) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azsignalr) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ New-AzSignalR [-ResourceGroupName <String>] [-Name] <String> [-Location <String>
 ## DESCRIPTION
 Membuat layanan SignalR.
 Nilai berikut akan digunakan untuk parameter jika tidak ditentukan:
-* `ResourceGroupName`: grup sumber daya default yang diatur oleh `Set-AzDefault -ResourceGroupName`.
+* `ResourceGroupName`: grup sumber daya default yang ditetapkan oleh `Set-AzDefault -ResourceGroupName`.
 * `Location`: lokasi grup sumber daya
 * `Sku`: `Standard_S1`
 
@@ -59,7 +59,7 @@ mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard
 ## PARAMETERS
 
 ### -AllowedOrigin
-Asal yang diperbolehkan untuk layanan SignalR. Untuk memperbolehkan semua, gunakan "*" dan hapus semua asal lainnya dari daftar. Garis miring tidak diperbolehkan sebagai bagian dari domain atau setelah TLD
+Asal yang diizinkan untuk layanan SignalR. Untuk mengizinkan semua, gunakan "*" dan hapus semua asal lain dari daftar. Garis miring tidak diizinkan sebagai bagian dari domain atau setelah TLD
 
 ```yaml
 Type: System.String[]
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di pekerjaan latar belakang.
+Jalankan cmdlet dalam pekerjaan latar belakang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan SignalR.
 
 ```yaml
@@ -208,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

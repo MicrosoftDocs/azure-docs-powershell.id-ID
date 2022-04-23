@@ -10,8 +10,8 @@ ms.openlocfilehash: 5c9ef8d9ea4b701922b43d14f0739176d369e6ba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142295899"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143342549"
 ---
 # Set-AzTrafficManagerEndpoint
 
@@ -97,6 +97,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
