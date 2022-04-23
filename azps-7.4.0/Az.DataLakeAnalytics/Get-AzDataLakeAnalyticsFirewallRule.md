@@ -9,8 +9,8 @@ ms.openlocfilehash: dd2bff29f61686c22018c949ea63e96a50bbb445
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838704"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318231"
 ---
 # Get-AzDataLakeAnalyticsFirewallRule
 
@@ -25,16 +25,16 @@ Get-AzDataLakeAnalyticsFirewallRule [-Account] <String> [[-Name] <String>] [[-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsFirewallRule** mengambil aturan firewall atau daftar aturan firewall dari akun azure Data Lake Analytics.
+Cmdlet **Get-AzDataLakeAnalyticsFirewallRule** mengambil aturan firewall atau daftar aturan firewall dari akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan firewall
+### Contoh 1: Mendapatkan aturan firewall
 ```powershell
 Get-AzDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct" -Name "My firewall rule"
 ```
 
-Perintah ini mendapatkan aturan firewall bernama "my firewall rule" dari akun "ContosoAdlAcct"
+Perintah ini mendapatkan aturan firewall bernama "aturan firewall saya" dari akun "ContosoAdlAcct"
 
 ### Contoh 2: Mencantumkan semua aturan firewall
 ```powershell
@@ -46,7 +46,7 @@ Perintah ini mendapatkan semua aturan firewall dari akun "ContosoAdlAcct"
 ## PARAMETERS
 
 ### -Akun
-Akun Data Lake Analytics untuk mendapatkan aturan firewall
+Akun Data Lake Analytics untuk mendapatkan aturan firewall dari
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall.
 
 ```yaml
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang ingin diambil akunnya.
+Nama grup sumber daya di mana ingin mengambil akun.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.DataLakeAnalyticsFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

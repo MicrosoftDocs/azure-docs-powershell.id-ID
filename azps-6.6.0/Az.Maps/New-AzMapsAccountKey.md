@@ -9,8 +9,8 @@ ms.openlocfilehash: c85f96b43c7b7058a8f8a2f1512659c972c7dc7f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142229707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143297405"
 ---
 # New-AzMapsAccountKey
 
@@ -53,7 +53,7 @@ W5VYcbrpyt4urV2-4C-lXepnHoy6EIOHnoLL_wjEtaw 2021-05-20T05:50:27.1509422Z zi6W1bw
 Perintah ini meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta.
 Kunci lama akan segera berhenti bekerja.
 
-### Contoh 2: Meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta menurut saluran
+### Contoh 2: Meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta menurut pipeline
 ```powershell
 PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 | New-AzMapsAccountKey -KeyType primary
 
@@ -194,13 +194,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.IMapsIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.Api20210201.IMapsAccountKeys
+### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.Api20210201.IMapsAccountKeys
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -211,7 +211,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
-  - `[CreatorName <String>]`: Nama instans Pembuat Peta.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.

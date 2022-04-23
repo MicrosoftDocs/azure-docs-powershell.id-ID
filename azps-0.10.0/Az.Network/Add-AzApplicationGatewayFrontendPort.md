@@ -10,8 +10,8 @@ ms.openlocfilehash: e0ca615d856e7905127c488c17c039b23051cc0a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143304713"
 ---
 # Add-AzApplicationGatewayFrontendPort
 
@@ -112,7 +112,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

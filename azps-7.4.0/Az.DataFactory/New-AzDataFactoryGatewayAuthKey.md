@@ -9,13 +9,13 @@ ms.openlocfilehash: ee3f9f80e700129fb1f0dfc5657d7f28c6dc8e41
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002879"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318447"
 ---
 # New-AzDataFactoryGatewayAuthKey
 
 ## SYNOPSIS
-Membuat kunci auth untuk Gateway Azure Data Factory.
+Membuat kunci autentikasi untuk gateway Azure Data Factory.
 
 ## SYNTAX
 
@@ -33,12 +33,12 @@ New-AzDataFactoryGatewayAuthKey [-InputObject] <PSDataFactory> [-GatewayName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryGatewayAuthKey** membuat kunci auth gateway untuk gateway Azure Data Factory yang ditentukan.
+Cmdlet **New-AzDataFactoryGatewayAuthKey** membuat kunci autentikasi gateway untuk gateway Azure Data Factory tertentu.
 Anda mendaftarkan gateway dengan layanan awan dengan menggunakan kunci ini.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kunci auth gateway untuk Key1
+### Contoh 1: Membuat kunci autentikasi gateway untuk Key1
 ```powershell
 New-AzDataFactoryGatewayAuthKey -ResourceGroupName ADFResource -GatewayName 'MyGateway' -DataFactoryName MyADF -KeyName key1
 ```
@@ -49,7 +49,7 @@ Key1 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd645
 Key2 :
 ```
 
-Perintah ini membuat kunci auth gateway Key1 untuk gateway pabrik data bernama MyGateway.
+Perintah ini membuat kunci autentikasi gateway Key1 untuk gateway pabrik data bernama MyGateway.
 
 ## PARAMETERS
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci auth gateway yang akan diregenerasi, baik 'key1' atau 'key2'.
+Nama kunci autentikasi gateway yang akan diregenerasi, baik 'key1' atau 'key2'.
 
 ```yaml
 Type: System.String
@@ -144,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -187,8 +187,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
 
-## CATATAN
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+## NOTES
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

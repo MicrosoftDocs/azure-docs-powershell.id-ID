@@ -10,13 +10,13 @@ ms.openlocfilehash: aacd28f9e43e2131a0ff4cba83c08480f38863fc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432874"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318159"
 ---
 # Add-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
-Menambahkan aturan firewall ke akun Penyimpanan Data Lake tertentu.
+Menambahkan aturan firewall ke akun Data Lake Store yang ditentukan.
 
 ## SYNTAX
 
@@ -31,12 +31,12 @@ Cmdlet **Add-AzDataLakeStoreFirewallRule** menambahkan aturan firewall ke akun D
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan aturan firewall baru ke akun Penyimpanan Data Lake
+### Contoh 1: Menambahkan aturan firewall baru ke akun Data Lake Store
 ```powershell
 Add-AzDataLakeStoreFirewallRule -AccountName "ContosoADL" -Name MyRule -StartIpAddress "127.0.0.1" -EndIpAddress "127.0.0.2"
 ```
 
-Ini membuat aturan firewall baru yang disebut "MyRule" dalam akun "ContosoADL" dengan rentang IP 127.0.0.1 - 127.0.0.2
+Ini membuat aturan firewall baru yang disebut "MyRule" di akun "ContosoADL" dengan rentang IP 127.0.0.1 - 127.0.0.2
 
 ## PARAMETERS
 
@@ -85,8 +85,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama aturan firewall untuk ditambahkan.
+### -Name
+Nama aturan firewall yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana akun untuk menambahkan aturan firewall berada.
+Nama grup sumber daya tempat akun menambahkan aturan firewall.
 
 ```yaml
 Type: System.String
@@ -130,8 +130,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

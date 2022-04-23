@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c51551f0cbaa79c7591bb5878911b96a48df111
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142025417"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143324455"
 ---
 # Set-AzStackEdgeBandwidthSchedule
 
@@ -341,6 +341,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeBandWidthSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 743cd33fe2e76f880e106221fc5e8098012794e9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142126853"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143297369"
 ---
 # Update-AzMapsAccount
 
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.Api20210201.IMapsAccount
 
-## CATATAN
+## NOTES
 
 ALIAS
 

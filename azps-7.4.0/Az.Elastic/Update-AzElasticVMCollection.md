@@ -9,8 +9,8 @@ ms.openlocfilehash: e82c0fa5c78388118ac4cda760725959b18e8824
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837376"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143286968"
 ---
 # Update-AzElasticVMCollection
 
@@ -216,7 +216,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

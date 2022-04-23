@@ -10,8 +10,8 @@ ms.openlocfilehash: 750a0633892d0dfc1131cd839eed65a03bd04dd0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142376009"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143338625"
 ---
 # Remove-AzDataFactoryLinkedService
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

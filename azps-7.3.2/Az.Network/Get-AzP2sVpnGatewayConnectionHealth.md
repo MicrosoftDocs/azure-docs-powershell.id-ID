@@ -9,8 +9,8 @@ ms.openlocfilehash: ac44dbfd0d9c9d6f2192bd857f0b1afa8a931caa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141786956"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143331407"
 ---
 # Get-AzP2sVpnGatewayConnectionHealth
 
@@ -173,6 +173,6 @@ Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
 
 ### Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

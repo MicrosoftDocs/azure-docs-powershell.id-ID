@@ -9,18 +9,18 @@ ms.openlocfilehash: 3aab231a9739c97af5a1eb49f00d6d93c25bad75
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142224757"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143296505"
 ---
 # Invoke-AzResourceMoverBulkRemove
 
 ## SYNOPSIS
-Menghapus kumpulan sumber daya pemindahan yang disertakan dalam isi permintaan dari pemindahan koleksi.
-Orkestrasi dilakukan melalui layanan.
-Untuk membantu pengguna prasyarat operasi klien dapat menghubungi operasi dengan properti validateOnly diatur ke true.
+Menghapus kumpulan sumber daya pemindahan yang disertakan dalam isi permintaan dari kumpulan pemindahan.
+Orkestrasi dilakukan oleh layanan.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverbulkremove) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverbulkremove) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,13 +31,13 @@ Invoke-AzResourceMoverBulkRemove -MoveCollectionName <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Menghapus kumpulan sumber daya pemindahan yang disertakan dalam isi permintaan dari pemindahan koleksi.
-Orkestrasi dilakukan melalui layanan.
-Untuk membantu pengguna prasyarat operasi klien dapat menghubungi operasi dengan properti validateOnly diatur ke true.
+Menghapus kumpulan sumber daya pemindahan yang disertakan dalam isi permintaan dari kumpulan pemindahan.
+Orkestrasi dilakukan oleh layanan.
+Untuk membantu pengguna untuk prasyarat operasi, klien dapat memanggil operasi dengan properti validateOnly diatur ke true.
 
 ## EXAMPLES
 
-### Contoh 1: Memvalidasi depende sebelum menghapus Pindahkan Sumber Daya dari Pindahkan Koleksi
+### Contoh 1: Memvalidasi dependek sebelum menghapus Pindahkan Sumber Daya dari Kumpulan Pemindahan
 ```powershell
 PS C:\> Invoke-AzResourceMoverBulkRemove -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS"  -MoveResource $('PSDemoVM') -MoveResourceInputType "MoveResourceId" -ValidateOnly
 
@@ -55,7 +55,7 @@ Status         : Succeeded
 
 ```
 
-Validasikan dependeies sebelum menghapus pemindahan sumber daya dari Pindahkan Koleksi.
+Validasi dependecies sebelum menghapus sumber daya pemindahan dari Move Collection.
 
 ### Contoh 2: Hapus Pindahkan Sumber Daya dari Pindahkan Koleksi menggunakan "Nama MoveResource" sebagai input
 ```powershell
@@ -98,7 +98,7 @@ Hapus Pindahkan Sumber Daya dari Pindahkan Koleksi menggunakan "SourceARMID" seb
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResource
-Mendapatkan atau mengatur daftar id sumber daya, secara default id sumber daya menerima id sumber daya pindah kecuali tipe input dialihkan melalui properti moveResourceInputType.
+Mendapatkan atau mengatur daftar ID sumber daya, secara default menerima id sumber daya pemindahan kecuali jenis input dialihkan melalui properti moveResourceInputType.
 
 ```yaml
 Type: System.String[]
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -MoveResourceInputType
-Menentukan tipe input pemindahan sumber daya.
+Menentukan jenis input sumber daya pemindahan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Support.MoveResourceInputType
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ValidateOnly
-Mendapatkan atau mengatur nilai yang mengindikasikan apakah operasi hanya perlu menjalankan prasyarat.
+Mendapatkan atau menetapkan nilai yang menunjukkan apakah operasi hanya perlu menjalankan prasyarat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,8 +232,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -272,7 +272,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Models.Api202101.IOperationStatus
 
-## CATATAN
+## NOTES
 
 ALIAS
 

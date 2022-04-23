@@ -10,8 +10,8 @@ ms.openlocfilehash: 9f26d9da1de1d3f7aa766fb8138a45392a9d9e81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992555"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318357"
 ---
 # New-AzDataFactoryHub
 
@@ -34,8 +34,8 @@ New-AzDataFactoryHub [-Name] <String> [-File] <String> [-Force] [-DataFactory] <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryHub** membuat hub untuk Azure Data Factory dalam grup sumber daya Azure yang ditentukan dan di pabrik data tertentu dengan definisi file yang ditentukan.
-Setelah membuat hub, Anda bisa menggunakannya untuk menyimpan dan mengelola layanan tertaut dalam grup, dan Anda bisa menambahkan saluran ke hub.
+Cmdlet **New-AzDataFactoryHub** membuat hub untuk Azure Data Factory di grup sumber daya Azure yang ditentukan dan di pabrik data yang ditentukan dengan definisi file yang ditentukan.
+Setelah membuat hub, Anda dapat menggunakannya untuk menyimpan dan mengelola layanan tertaut dalam grup, dan Anda dapat menambahkan alur ke hub.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Setelah membuat hub, Anda bisa menggunakannya untuk menyimpan dan mengelola laya
 New-AzDataFactoryHub -ResourceGroupName "ADFResourceGroup" -DataFactoryName "ADFDataFactory" -Name "ContosoDataHub" -File "C:\Hub.json"
 ```
 
-Perintah ini membuat hub bernama ContosoDataHub dalam grup sumber daya ADFResourceGroup dan pabrik data bernama ADFDataFactory.
+Perintah ini membuat hub bernama ContosoDataHub di grup sumber daya ADFResourceGroup dan pabrik data bernama ADFDataFactory.
 
 ## PARAMETERS
 
@@ -110,8 +110,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan hub yang sudah ada tanpa meminta konfirmasi kepada Anda.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan hub yang ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama hub yang akan dibuat.
 
 ```yaml
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini membuat hub yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini membuat hub milik grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -156,8 +156,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -200,8 +200,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSHub
 
-## CATATAN
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+## NOTES
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

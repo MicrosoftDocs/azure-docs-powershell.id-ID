@@ -9,8 +9,8 @@ ms.openlocfilehash: f41e7a1288856a1088f7fbe723cc6a98092e54ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433018"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318427"
 ---
 # Invoke-AzDataFactoryV2IntegrationRuntimeUpgrade
 
@@ -186,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

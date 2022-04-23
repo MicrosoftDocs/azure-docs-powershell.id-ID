@@ -9,8 +9,8 @@ ms.openlocfilehash: c51454bdff80208293d7c1bc9b24c576d7ba19d6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141864302"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143296757"
 ---
 # Disconnect-AzP2sVpnGatewayVpnConnection
 
@@ -163,6 +163,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

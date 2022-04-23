@@ -9,8 +9,8 @@ ms.openlocfilehash: 6961ea226c6ac52c0bbe53503c81c56caf8b9ebd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997794"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143286979"
 ---
 # Get-AzEventGridSubscription
 
@@ -480,6 +480,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSEventSubscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
