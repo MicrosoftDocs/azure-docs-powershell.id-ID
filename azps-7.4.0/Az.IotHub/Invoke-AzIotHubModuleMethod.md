@@ -9,8 +9,8 @@ ms.openlocfilehash: cb1bd6d6487dc2812b8ade2466edd3a6290f1e34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997206"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121671"
 ---
 # Invoke-AzIotHubModuleMethod
 
@@ -266,6 +266,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSCloudToDeviceMethodResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 813e0e7dc2535b3c7cd424e55ff924c380d84e2f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142239229"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143156555"
 ---
 # Get-AzsKeyvaultQuota
 
@@ -100,7 +100,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

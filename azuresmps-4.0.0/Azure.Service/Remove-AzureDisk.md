@@ -7,8 +7,8 @@ ms.openlocfilehash: 1dd6da9a2bd726552600a67572abed7a8438bdd3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141920217"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143103833"
 ---
 # Remove-AzureDisk
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

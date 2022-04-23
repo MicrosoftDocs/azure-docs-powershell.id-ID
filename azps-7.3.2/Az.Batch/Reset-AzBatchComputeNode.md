@@ -10,8 +10,8 @@ ms.openlocfilehash: b5850a7bec8481360ed23910ada06c1680b38d34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142349135"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143138429"
 ---
 # Reset-AzBatchComputeNode
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

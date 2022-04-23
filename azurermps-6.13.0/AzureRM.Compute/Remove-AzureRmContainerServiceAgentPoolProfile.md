@@ -10,8 +10,8 @@ ms.openlocfilehash: b960f89ddacb365ee7c1b909b6f0a12bf7c038e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844013"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109655"
 ---
 # Remove-AzureRmContainerServiceAgentPoolProfile
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

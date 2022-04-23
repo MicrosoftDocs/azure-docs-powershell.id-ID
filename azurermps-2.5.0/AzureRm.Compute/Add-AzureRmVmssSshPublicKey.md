@@ -8,8 +8,8 @@ ms.openlocfilehash: 6cd715c3ba6ef0a890f5aaeaf04022b19026592c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286311"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114399"
 ---
 # Add-AzureRmVmssSshPublicKey
 
@@ -148,7 +148,7 @@ Parameter 'VirtualMachineScaleSet' menerima nilai tipe 'VirtualMachineScaleSet' 
 ###  
 Cmdlet ini tidak menghasilkan output apa pun.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

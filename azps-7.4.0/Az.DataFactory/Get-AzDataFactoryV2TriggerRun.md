@@ -9,8 +9,8 @@ ms.openlocfilehash: f95849fdd3c5d9d62650581b046b892ab2042ea6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838912"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125505"
 ---
 # Get-AzDataFactoryV2TriggerRun
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

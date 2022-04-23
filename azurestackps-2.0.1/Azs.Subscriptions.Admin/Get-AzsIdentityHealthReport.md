@@ -7,8 +7,8 @@ ms.openlocfilehash: 995ddf191f870fee9d27438ebea6d29729ca4c9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142133711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143156195"
 ---
 # Get-AzsIdentityHealthReport
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ALIAS
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

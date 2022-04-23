@@ -9,8 +9,8 @@ ms.openlocfilehash: 634e5ac1eabd815029b0a71ebf897a571fdd3ee9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142271473"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143149751"
 ---
 # Export-AzDataLakeStoreChildItemProperty
 
@@ -302,6 +302,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

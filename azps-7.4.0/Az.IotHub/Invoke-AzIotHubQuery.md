@@ -9,8 +9,8 @@ ms.openlocfilehash: 86aefc93af5bbce05e9be2806cec3e901e7eb901
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121653"
 ---
 # Invoke-AzIotHubQuery
 
@@ -208,6 +208,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

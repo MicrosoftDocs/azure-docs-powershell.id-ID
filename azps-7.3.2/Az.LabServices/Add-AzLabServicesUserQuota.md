@@ -9,8 +9,8 @@ ms.openlocfilehash: 0db3dfd6cd64148dc1009d4a3af1cbe4f4fcfd08
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142489409"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143132489"
 ---
 # Add-AzLabServicesUserQuota
 
@@ -228,7 +228,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.IUser
 
-## CATATAN
+## NOTES
 
 ALIAS
 

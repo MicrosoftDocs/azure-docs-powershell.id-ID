@@ -8,8 +8,8 @@ ms.openlocfilehash: 901d8209cc18a5d64285bf45f7169d55d3c7a41e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392472"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143112500"
 ---
 # Remove-AzureRmApplicationGatewayIPConfiguration
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

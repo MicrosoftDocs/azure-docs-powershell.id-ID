@@ -8,8 +8,8 @@ ms.openlocfilehash: 403a3d37418e022032988d5d7fccb40a1e79f449
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142146419"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143112841"
 ---
 # Get-AzureRmEffectiveRouteTable
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSEffectiveRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

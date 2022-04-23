@@ -9,13 +9,13 @@ ms.openlocfilehash: 2931d3c7308954da922416ee184d57878e271b40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141805299"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093483"
 ---
 # New-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
-Membuat wadah penyimpanan baru di akun Storage Edge di perangkat.
+Membuat wadah penyimpanan baru di akun Edge Storage di perangkat.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestoragecontainer) untuk informasi terbaru.
@@ -29,7 +29,7 @@ New-AzDataBoxEdgeStorageContainer [-ResourceGroupName] <String> [-DeviceName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeStorageContainer** membuat wadah penyimpanan baru di akun Edge Storage di perangkat Data Box Edge.
+Cmdlet **New-AzDataBoxEdgeStorageContainer** membuat wadah penyimpanan baru di akun Penyimpanan Edge pada perangkat Box Edge Data.
 
 ## EXAMPLES
 
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

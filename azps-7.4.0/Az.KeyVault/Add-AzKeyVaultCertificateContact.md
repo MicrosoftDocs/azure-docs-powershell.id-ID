@@ -10,8 +10,8 @@ ms.openlocfilehash: 0c76fa55cb9d50b8e813ce865c20934c516c367b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432563"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121401"
 ---
 # Add-AzKeyVaultCertificateContact
 
@@ -195,7 +195,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateContact
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

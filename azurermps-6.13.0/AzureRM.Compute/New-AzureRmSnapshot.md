@@ -9,8 +9,8 @@ ms.openlocfilehash: d23376f05f20306f7d2554755b703a11e078b5df
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358961"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109782"
 ---
 # New-AzureRmSnapshot
 
@@ -169,6 +169,6 @@ Parameter: Snapshot (ByValue)
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

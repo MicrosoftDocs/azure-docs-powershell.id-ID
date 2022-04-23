@@ -10,8 +10,8 @@ ms.openlocfilehash: 876b6b4f88ce9e5df18ca098dccdac348b08dac5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142349297"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143138537"
 ---
 # Get-AzBatchSubtask
 
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSSubtaskInformasi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
