@@ -10,8 +10,8 @@ ms.openlocfilehash: 9927b3496911ca41836d0dd5f6ca630f75b17fb9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142341791"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143173565"
 ---
 # Get-AzRoleDefinition
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

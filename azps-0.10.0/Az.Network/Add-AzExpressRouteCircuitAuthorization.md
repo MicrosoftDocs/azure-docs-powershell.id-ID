@@ -10,8 +10,8 @@ ms.openlocfilehash: efe2a149d2ca02c075b2e0a1f73191e9e2b8859b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142497941"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154413"
 ---
 # Add-AzExpressRouteCircuitAuthorization
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSExpressRouteCircuit
 **Add-AzExpressRouteCircuitAuthorization** mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

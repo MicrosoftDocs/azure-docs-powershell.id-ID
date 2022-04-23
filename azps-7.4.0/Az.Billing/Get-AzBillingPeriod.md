@@ -9,8 +9,8 @@ ms.openlocfilehash: 295d4ec9105cf9f9b39695a015758d6dbdd8a184
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142004470"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143129159"
 ---
 # Get-AzBillingPeriod
 
@@ -114,6 +114,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Billing.Models.PSBillingPeriod
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: d05750e46d89bd2fc99ced867b098a6614e9deaf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989063"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143116397"
 ---
 # Add-AzSynapseKustoPoolLanguageExtension
 
@@ -240,7 +240,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

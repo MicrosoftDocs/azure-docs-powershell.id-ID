@@ -9,8 +9,8 @@ ms.openlocfilehash: fdb8dfb850175ade7b6741ba630ad1366650b312
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142210195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143174141"
 ---
 # Get-AzReservationOrderId
 
@@ -89,6 +89,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Reservations.Models.AppliedReservations
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

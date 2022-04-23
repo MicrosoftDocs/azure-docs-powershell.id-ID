@@ -10,8 +10,8 @@ ms.openlocfilehash: e01567bd2e937f0d395e7e46791ec8f828fd83ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141891998"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143180711"
 ---
 # Set-AzActivityLogAlert
 
@@ -454,7 +454,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActivityLogAlertResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

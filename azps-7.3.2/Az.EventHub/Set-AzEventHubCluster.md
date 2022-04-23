@@ -9,8 +9,8 @@ ms.openlocfilehash: e4c32b23f4aa71b3c54da8ab43e7d9b97e1d782f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142070149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143135180"
 ---
 # Set-AzEventHubCluster
 
@@ -232,6 +232,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubClusterAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

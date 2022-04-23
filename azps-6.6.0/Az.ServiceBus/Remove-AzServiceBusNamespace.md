@@ -9,8 +9,8 @@ ms.openlocfilehash: adfc3a31c5b017d2cd869be2076b1d7db4679e22
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142077313"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143142650"
 ---
 # Remove-AzServiceBusNamespace
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

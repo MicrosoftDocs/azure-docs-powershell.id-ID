@@ -10,8 +10,8 @@ ms.openlocfilehash: 59ef1bfb36d5ab8e890ed5bf793dfec2fcd5836b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067557"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143180207"
 ---
 # Add-AzApplicationGatewaySslCertificate
 
@@ -51,8 +51,8 @@ PS C:\> $secretId = $secret.SecretId.Replace($secret.Version, "") # https://<key
 PS C:\> $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Dapatkan rahasia dan referensikan dalam `Add-AzApplicationGatewaySslCertificate` untuk menambahkannya ke Gateway Aplikasi dengan nama `Cert01`.
-Catatan: Karena version-less secretId disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval reguler dengan KeyVault.
+Dapatkan rahasia dan referensikan dalam `Add-AzApplicationGatewaySslCertificate` menambahkannya ke Application Gateway dengan nama `Cert01`.
+Catatan: Karena secretId tanpa versi disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval rutin dengan KeyVault.
 
 ### Contoh 3: Menambahkan sertifikat SSL menggunakan KeyVault Secret (versioned secretId) ke gateway aplikasi.
 ```
@@ -62,8 +62,8 @@ PS C:\> $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/
 PS C:\> $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Dapatkan rahasia dan referensikan dalam `Add-AzApplicationGatewaySslCertificate` untuk menambahkannya ke Gateway Aplikasi dengan nama `Cert01`.
-Catatan: Jika diperlukan bahwa Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan version-less secretId.
+Dapatkan rahasia dan referensikan dalam `Add-AzApplicationGatewaySslCertificate` menambahkannya ke Application Gateway dengan nama `Cert01`.
+Catatan: Jika diperlukan agar Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan secretId tanpa versi.
 
 ## PARAMETERS
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

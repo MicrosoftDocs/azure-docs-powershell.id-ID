@@ -9,8 +9,8 @@ ms.openlocfilehash: 09480fe4f87b553c32f777058c0229daff0ee1a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142121021"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143142375"
 ---
 # Get-AzServiceFabricApplicationTypeVersion
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSApplicationTypeVersion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

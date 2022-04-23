@@ -9,8 +9,8 @@ ms.openlocfilehash: 589a0f19f6b471b0b8dd5b7af77a1aa8db947906
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097658"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159579"
 ---
 # Set-AzureRmVpnClientIpsecParameter
 
@@ -198,7 +198,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnClientIPsecParameters
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

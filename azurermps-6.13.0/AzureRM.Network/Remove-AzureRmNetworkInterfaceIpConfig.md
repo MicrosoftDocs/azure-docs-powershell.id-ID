@@ -10,8 +10,8 @@ ms.openlocfilehash: c912d32c39380ee3d653fa228632a4d01f0e3049
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142062119"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160389"
 ---
 # Remove-AzureRmNetworkInterfaceIpConfig
 
@@ -101,7 +101,7 @@ Parameter: NetworkInterface (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

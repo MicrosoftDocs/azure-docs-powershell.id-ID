@@ -9,8 +9,8 @@ ms.openlocfilehash: f87fb543ccc7232c5f202b497fc9fbf34e8094b7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141865652"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143147573"
 ---
 # Update-AzManagementPartner
 
@@ -118,7 +118,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ManagementPartner.PSManagementPartner
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 9833a2e66eb6471efb9aed021af7ae07e8e520c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142062020"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160371"
 ---
 # Remove-AzureRmNetworkInterfaceTapConfig
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

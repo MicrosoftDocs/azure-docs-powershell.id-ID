@@ -10,8 +10,8 @@ ms.openlocfilehash: ed3b2de22c5f71c0782724f99c8325de4dea98b0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925805"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159741"
 ---
 # Set-AzureRmPublicIpAddress
 
@@ -121,7 +121,7 @@ Parameter: PublicIpAddress (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

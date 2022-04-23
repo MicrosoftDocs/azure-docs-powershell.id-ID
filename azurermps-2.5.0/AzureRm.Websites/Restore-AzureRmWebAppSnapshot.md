@@ -7,8 +7,8 @@ ms.openlocfilehash: 0719210cae275dc7e250e7fd14e622c51014d7c2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283918"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167481"
 ---
 # Restore-AzureRmWebAppSnapshot
 
@@ -221,7 +221,7 @@ Microsoft.Azure.Management.WebSites.Models.Site System.String Microsoft.Azure.Co
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

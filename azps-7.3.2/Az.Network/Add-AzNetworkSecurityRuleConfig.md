@@ -10,8 +10,8 @@ ms.openlocfilehash: b58e99301cf7095c5e95f993f07d9c2ad99677ba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142213579"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143180171"
 ---
 # Add-AzNetworkSecurityRuleConfig
 
@@ -354,7 +354,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

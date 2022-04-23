@@ -10,8 +10,8 @@ ms.openlocfilehash: 8fe4c554fd781d198af6bea784a433c141c2d41d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845652"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166329"
 ---
 # Get-AzureRmAutomationHybridWorkerGroup
 
@@ -40,31 +40,31 @@ Untuk mendapatkan grup tertentu, tentukan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua grup pekerja runbook hibrid
+### Contoh 1: Mendapatkan semua grup pekerja runbook hibrid
 ```
 PS C:\>Get-AzureRMAutomationHybridWorkerGroup -ResourceGroupName "ResourceGroupName01" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua grup pekerja runbook hibrid di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua grup pekerja runbook hibrid di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan satu grup pekerja runbook hibrid
+### Contoh 2: Mendapatkan satu grup pekerja runbook hibrid
 ```
 PS C:\>Get-AzureRMAutomationHybridWorkerGroup -ResourceGroupName "ResourceGroupName01" -AutomationAccountName "Contoso17" -Name "HybridRunbookWorkerGroup01"
 ```
 
-Perintah ini mendapatkan grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 di akun Automation bernama Contoso17.
 
-### Contoh 3: Dapatkan pekerja dalam grup pekerja runbook hibrid
+### Contoh 3: Mendapatkan pekerja dalam grup pekerja runbook hibrid
 ```
 PS C:\>(Get-AzureRMAutomationHybridWorker -ResourceGroupName ResourceGroupName01 -AutomationAccountName Contoso17 -Name "HybridRunbookWorkerGroup01" ).RunbookWorker
 ```
 
-Perintah ini mendapatkan pekerja runbook hibrid dalam grup pekerja runbook hibrid bernama HybridRunbookWorkerGroup01 di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan pekerja runbook hibrid di grup hybrid runbook worker bernama HybridRunbookWorkerGroup01 di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi.
+Menentukan nama akun Automation.
 
 ```yaml
 Type: System.String
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama grup pekerja runbook hibrid.
+### -Name
+Menentukan nama grup hybrid runbook worker.
 
 ```yaml
 Type: System.String
@@ -124,17 +124,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-Parameter: Name (ByValue)
+Parameter: Nama (ByValue)
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Automation.Model.HybridRunbookWorkerGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
