@@ -7,8 +7,8 @@ ms.openlocfilehash: abd7d74374df9662b5688f821ecd0b9d5b6abbd4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245557"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158697"
 ---
 # Get-AzureStorSimpleDeviceVolume
 
@@ -195,7 +195,7 @@ Cmdlet ini menerima objek **DataContainer** yang berisi volume yang akan didapat
 Cmdlet ini mengembalikan objek **VirtualDisk** jika Anda menentukan parameter *VolumeName* .
 Jika Anda menentukan *VolumeContainer*, cmdlet ini mengembalikan objek **IList\<VirtualDisk\>** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 31ed4d8765599fcc99f58870b347a14cdaf00162
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142098453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163622"
 ---
 # Remove-AzureRmEventHub
 
@@ -240,6 +240,6 @@ Parameter: InputObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

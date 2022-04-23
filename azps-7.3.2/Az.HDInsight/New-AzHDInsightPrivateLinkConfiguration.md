@@ -9,8 +9,8 @@ ms.openlocfilehash: 2d8d3eb3c1a0e7a4586b171e65ed04d20efccdc7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938607"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143134469"
 ---
 # New-AzHDInsightPrivateLinkConfiguration
 
@@ -124,6 +124,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightPrivateLinkConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

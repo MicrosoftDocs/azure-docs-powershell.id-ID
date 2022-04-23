@@ -10,8 +10,8 @@ ms.openlocfilehash: 41b147307d253271e24667bd61d827c245f4500a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358381"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143164439"
 ---
 # Save-AzureRmDataFactoryLog
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactories.Models.PSRunLogInfo
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS

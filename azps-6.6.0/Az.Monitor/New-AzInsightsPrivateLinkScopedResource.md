@@ -9,8 +9,8 @@ ms.openlocfilehash: 680b28dc2cbc2a3bbac6e570f0aaabd0c21e69c1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141800853"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143147105"
 ---
 # New-AzInsightsPrivateLinkScopedResource
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSMonitorPrivateLinkScopedResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

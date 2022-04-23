@@ -9,8 +9,8 @@ ms.openlocfilehash: 3473b980b582a98124fbf4b35953609b87bd310e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142033949"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143134613"
 ---
 # Enable-AzHDInsightAzureMonitor
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

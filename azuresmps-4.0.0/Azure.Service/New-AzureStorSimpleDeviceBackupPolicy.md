@@ -7,8 +7,8 @@ ms.openlocfilehash: 11654814dca5869be3902409003e1e9bb89acd6e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335082"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158336"
 ---
 # New-AzureStorSimpleDeviceBackupPolicy
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### BackupPolicy
 Cmdlet ini mengembalikan objek **BackupPolicy** yang berisi jadwal dan volume baru.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

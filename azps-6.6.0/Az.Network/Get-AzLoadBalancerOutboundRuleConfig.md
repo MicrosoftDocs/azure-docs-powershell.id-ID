@@ -9,8 +9,8 @@ ms.openlocfilehash: 4afd298d6589d20b032d71c766a01a3eb1aff61d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142301749"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143146007"
 ---
 # Get-AzLoadBalancerOutboundRuleConfig
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSOutboundRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

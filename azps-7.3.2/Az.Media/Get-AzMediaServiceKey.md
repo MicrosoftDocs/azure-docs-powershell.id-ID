@@ -10,8 +10,8 @@ ms.openlocfilehash: 6bb898c8d115e32747e12388611a2619ccf8a2df
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142319369"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143181341"
 ---
 # Get-AzMediaServiceKey
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Media.Models.PSServiceKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

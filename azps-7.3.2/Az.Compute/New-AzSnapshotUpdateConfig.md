@@ -9,8 +9,8 @@ ms.openlocfilehash: d085ca81681a434c7d5ebb6b9e7d9ea91ff618fb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142347875"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187137"
 ---
 # New-AzSnapshotUpdateConfig
 
@@ -292,6 +292,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshotUpdate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: f832fbed15a96f09093de654281681dafa52c4a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141861854"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143192915"
 ---
 # Get-AzPowerBIWorkspaceCollection
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.PowerBIEmbedded.Models.PSWorkspaceCollection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

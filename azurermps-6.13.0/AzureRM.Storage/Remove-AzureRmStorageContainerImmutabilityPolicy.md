@@ -9,13 +9,13 @@ ms.openlocfilehash: 74963ef36a33bed6145d315f5792aa776a36bc7d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159335"
 ---
 # Remove-AzureRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Menghapus ImmutabilityPolicy wadah blob Penyimpanan
+Menghapus ImmutabilityPolicy wadah blob Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -47,7 +47,7 @@ Remove-AzureRmStorageContainerImmutabilityPolicy -InputObject <PSImmutabilityPol
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityPolicy dari wadah blob Penyimpanan.
+Cmdlet **Remove-AzureRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityPolicy wadah blob Storage.
 
 ## EXAMPLES
 
@@ -57,7 +57,7 @@ PS C:\>$policy = Get-AzureRmStorageContainerImmutabilityPolicy -ResourceGroupNam
 PS C:\>Remove-AzureRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy dari kontainer blob Penyimpanan dengan nama akun Penyimpanan dan nama kontainer.
+Perintah ini menghapus ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
 
 ### Contoh 2: Remove ImmutabilityPolicy of a Storage blob container, with Storage account object
 ```
@@ -66,7 +66,7 @@ PS C:\>$policy = Get-AzureRmStorageContainerImmutabilityPolicy -StorageAccount $
 PS C:\>Remove-AzureRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy wadah blob Penyimpanan, dengan objek akun Penyimpanan. 
+Perintah ini menghapus ImmutabilityPolicy wadah blob Storage, dengan objek akun Storage. 
 
 ### Contoh 3: Remove ImmutabilityPolicyof a Storage blob container, with container object
 ```
@@ -75,19 +75,19 @@ PS C:\>$policy = Get-AzureRmStorageContainerImmutabilityPolicy -Container $conta
 PS C:\>Remove-AzureRmStorageContainerImmutabilityPolicy -Container $containerObject -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy wadah blob Penyimpanan dengan objek Kontainer penyimpanan.
+Perintah ini menghapus ImmutabilityPolicy wadah blob Storage dengan objek kontainer Storage.
 
 ### Contoh 4: Remove ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
 ```
 PS C:\>Get-AzureRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Remove-AzureRmStorageContainerImmutabilityPolicy
 ```
 
-Perintah ini menghapus ImmutabilityPolicy wadah blob Penyimpanan, dengan objek ImmutabilityPolicy.
+Perintah ini menghapus ImmutabilityPolicy dari wadah blob Storage, dengan objek ImmutabilityPolicy.
 
 ## PARAMETERS
 
 ### -Kontainer
-Objek wadah penyimpanan
+objek kontainer Storage
 
 ```yaml
 Type: PSContainer
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Objek akun penyimpanan
+objek akun Storage
 
 ```yaml
 Type: PSStorageAccount
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Nama Akun Penyimpanan.
+Storage Nama Akun.
 
 ```yaml
 Type: String
@@ -243,13 +243,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## INPUTS
 
 ### System.String
-Microsoft.Azure.Commands.Management.Storage.Models.PSImmutabilityPolicy
+Microsoft.Azure.Commands.Management. Storage. Models.PSImmutabilityPolicy
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSImmutabilityPolicy
+### Microsoft.Azure.Commands.Management. Storage. Models.PSImmutabilityPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

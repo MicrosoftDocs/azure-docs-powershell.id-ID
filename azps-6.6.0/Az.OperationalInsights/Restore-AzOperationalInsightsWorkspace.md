@@ -9,8 +9,8 @@ ms.openlocfilehash: 55940e19b23374ff48e40453b9fd6b79f36b5b8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141950918"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143193203"
 ---
 # Restore-AzOperationalInsightsWorkspace
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
