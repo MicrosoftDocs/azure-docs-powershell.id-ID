@@ -10,8 +10,8 @@ ms.openlocfilehash: af224a39b1475ffb08f698f8c29d311ad955f315
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142253995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143173673"
 ---
 # Get-AzResourceGroup
 
@@ -203,7 +203,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSResourceGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

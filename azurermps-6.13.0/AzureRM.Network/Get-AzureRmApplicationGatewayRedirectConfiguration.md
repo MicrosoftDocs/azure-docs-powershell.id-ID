@@ -9,8 +9,8 @@ ms.openlocfilehash: 23815c5b4d0977f27f09f002f32e1658a8515d61
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141821995"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161325"
 ---
 # Get-AzureRmApplicationGatewayRedirectConfiguration
 
@@ -99,6 +99,6 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

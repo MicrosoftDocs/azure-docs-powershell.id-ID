@@ -10,8 +10,8 @@ ms.openlocfilehash: 3504e4fbdb74fffc41e3f6424540dec71bb209e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141883279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160515"
 ---
 # Remove-AzureRmApplicationGatewaySslPolicy
 
@@ -130,7 +130,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS

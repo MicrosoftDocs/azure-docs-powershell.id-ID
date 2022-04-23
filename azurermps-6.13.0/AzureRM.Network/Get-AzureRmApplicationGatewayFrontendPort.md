@@ -10,8 +10,8 @@ ms.openlocfilehash: 388c2d06f7ff62bfe5fc2f6fcf47d5fa9fa16877
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386445"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161415"
 ---
 # Get-AzureRmApplicationGatewayFrontendPort
 
@@ -109,7 +109,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

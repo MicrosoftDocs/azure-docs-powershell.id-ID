@@ -9,8 +9,8 @@ ms.openlocfilehash: 2391e852bd51310454a788a7c976f73ca93c34d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326653"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143152343"
 ---
 # Remove-AzApplicationInsightsApiKey
 
@@ -58,7 +58,7 @@ Hapus kunci api wawasan aplikasi tertentu yang id adalah "dd173f38-4fd1-4c75-8af
 ## PARAMETERS
 
 ### -ApiKeyId
-ID Kunci API Wawasan Aplikasi.
+ID Kunci API Insights aplikasi.
 
 ```yaml
 Type: System.String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationInsightsComponent
-Objek Komponen Application Insights.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Komponen Application Insights.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Komponen Wawasan Aplikasi.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

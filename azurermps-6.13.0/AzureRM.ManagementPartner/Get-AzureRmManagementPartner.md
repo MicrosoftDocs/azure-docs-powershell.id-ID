@@ -9,8 +9,8 @@ ms.openlocfilehash: d291814a2683388fd6c8fa7b26e06195e9cfa09d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142356037"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161676"
 ---
 # Get-AzureRmManagementPartner
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ManagementPartner.PSManagementPartner
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 184853f805a4b38ce35662b77df26813e3028dd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143162245"
 ---
 # Set-AzureRmKeyVaultAccessPolicy
 
@@ -673,7 +673,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

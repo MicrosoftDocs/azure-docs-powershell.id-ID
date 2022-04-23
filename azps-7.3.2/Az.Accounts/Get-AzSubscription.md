@@ -9,8 +9,8 @@ ms.openlocfilehash: 18c2c1d512dd834a8013dcc476d8fd5a044e4d44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141857301"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143139293"
 ---
 # Get-AzSubscription
 
@@ -183,6 +183,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAzureSubscription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

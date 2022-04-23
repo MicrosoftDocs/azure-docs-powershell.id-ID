@@ -10,8 +10,8 @@ ms.openlocfilehash: 0a8a5c4084813bac74ea907575d2bd26c3d8c5f3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925899"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160111"
 ---
 # Resize-AzureRmVirtualNetworkGateway
 
@@ -123,7 +123,7 @@ Parameter: VirtualNetworkGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 Anda tidak dapat mengubah ukuran dari SKU Basic/Standard/HighPerformance ke SKU VpnGw1/VpnGw2/VpnGw3 yang baru. Ukuran lebih lanjut tidak diperbolehkan dari/ke VpnGw1AZ/VpnGw2AZ/VpnGw3AZ atau ErGw1AZ/ErGw2AZ/ErGw3AZ. Mengubah ukuran hanya diperbolehkan dalam 'seri' SKU, misalnya VpnGw1AZ dapat diubah ukurannya menjadi/dari VpnGw2AZ/VpnGw3AZ dan ErGw1AZ dapat diubah ukurannya menjadi/dari ErGw2AZ/ErGw3AZ. Lihat https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways instruksinya.
 
 ## RELATED LINKS

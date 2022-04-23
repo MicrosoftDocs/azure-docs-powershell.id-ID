@@ -10,8 +10,8 @@ ms.openlocfilehash: b4998853fe1499c3fc6d0bd57aaa28f57d493aa1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141933927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143174987"
 ---
 # Set-AzRecoveryServicesVaultContext
 
@@ -92,6 +92,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

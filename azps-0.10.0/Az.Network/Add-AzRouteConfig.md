@@ -10,8 +10,8 @@ ms.openlocfilehash: 1afd855be89f83e9591bbd180b1357e1b03952eb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916905"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154395"
 ---
 # Add-AzRouteConfig
 
@@ -241,7 +241,7 @@ Parameter 'RouteTable' menerima nilai tipe 'PSRouteTable' dari pipeline
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

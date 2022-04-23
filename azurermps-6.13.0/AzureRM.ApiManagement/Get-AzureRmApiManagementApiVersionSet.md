@@ -9,13 +9,13 @@ ms.openlocfilehash: 2a3b2e56f4cf3a03d0ce36a3102242dfdbf45a19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142283222"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143166788"
 ---
 # Get-AzureRmApiManagementApiVersionSet
 
 ## SYNOPSIS
-Dapatkan detail Kumpulan Versi API
+Mendapatkan detail Set Versi API
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmApiManagementApiVersionSet -Context <PsApiManagementContext> [-ApiVer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementApiVersionSet** mendapatkan detail Kumpulan Versi API yang dikonfigurasi dalam konteks API Management.
+Cmdlet **Get-AzureRmApiManagementApiVersionSet** mendapatkan detail Set Versi API yang dikonfigurasi dalam konteks API Management.
 
 ## EXAMPLES
 
@@ -70,9 +70,9 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini mendapatkan semua kumpulan Versi API untuk konteks yang ditentukan.
+Perintah ini mendapatkan semua set Versi API untuk konteks yang ditentukan.
 
-### Contoh 2: Dapatkan VERSI API yang Diatur oleh ID
+### Contoh 2: Mendapatkan Versi API yang Ditetapkan oleh ID
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementApiVersionSet -Context $ApiMgmtContext -ApiVersionSetId $ApiVersionSetId
@@ -88,12 +88,12 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini mendapatkan SET Versi API dengan ID yang ditentukan.
+Perintah ini mendapatkan Set Versi API dengan ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-PENGIDENTIFIKASI API untuk dicari.
+Pengidentifikasi API untuk dicari.
 Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
@@ -108,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,12 +152,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiVersionSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [New-AzureRmApiManagementApiVersionSet](./New-AzureRmApiManagementApiVersionSet.md)
 
-[Hapus-AzureRmApiManagementApiSet](./Remove-AzureRmApiManagementApiVersionSet.md)
+[Remove-AzureRmApiManagementApiSet](./Remove-AzureRmApiManagementApiVersionSet.md)
 
 [Set-AzureRmApiManagementApiVersionSet](./Set-AzureRmApiManagementApiVersionSet.md)

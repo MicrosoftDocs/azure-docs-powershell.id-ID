@@ -9,8 +9,8 @@ ms.openlocfilehash: eb6be4303f9d2301c44e6580fa87647bc2600d03
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141907617"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143144819"
 ---
 # Get-AzRecoveryServicesAsrReplicationProtectedItem
 
@@ -158,7 +158,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

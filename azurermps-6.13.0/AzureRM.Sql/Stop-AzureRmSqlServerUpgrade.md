@@ -10,8 +10,8 @@ ms.openlocfilehash: 692c4fd98db0ebaff70e740abc8a7238e4a28685
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141773888"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159462"
 ---
 # Stop-AzureRmSqlServerUpgrade
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerUpgrade.Model.AzureSqlServerUpgradeModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

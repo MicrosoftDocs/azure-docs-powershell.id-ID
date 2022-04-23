@@ -9,8 +9,8 @@ ms.openlocfilehash: 43cf0efd6093c3929e2e7796fd58b2ac3670b619
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141863384"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143145683"
 ---
 # Get-AzVirtualHubRouteTable
 
@@ -182,6 +182,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualHubRouteTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

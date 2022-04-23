@@ -10,8 +10,8 @@ ms.openlocfilehash: 1456afca27b6a5993fa014b738c415af5db98c6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142355535"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161307"
 ---
 # Get-AzureRmApplicationGatewayWebApplicationFirewallConfiguration
 
@@ -86,7 +86,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

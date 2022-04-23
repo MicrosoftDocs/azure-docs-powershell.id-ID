@@ -10,8 +10,8 @@ ms.openlocfilehash: 0311a00b8c02697825e180d3c7a5f800215f5a96
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142128779"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143151119"
 ---
 # Get-AzVMImageSku
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImageSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

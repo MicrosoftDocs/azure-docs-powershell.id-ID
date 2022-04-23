@@ -10,8 +10,8 @@ ms.openlocfilehash: c8e67ba73d17bb4b5816a7f34e3625779bbb36be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142326887"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143152685"
 ---
 # Add-AzApiManagementApiToProduct
 
@@ -29,7 +29,7 @@ Add-AzApiManagementApiToProduct -Context <PsApiManagementContext> -ProductId <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApiManagementApiToProduct** menambahkan API Manajemen API Azure ke produk.
+Cmdlet **Add-AzApiManagementApiToProduct** menambahkan API azure API Management ke produk.
 
 ## EXAMPLES
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
