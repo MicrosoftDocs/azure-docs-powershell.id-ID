@@ -10,8 +10,8 @@ ms.openlocfilehash: c96ae4964d926a17c762f735002826f9ac1fe384
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419999"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143271269"
 ---
 # Get-AzStorageBlobContent
 
@@ -94,7 +94,7 @@ Contoh ini terlebih dahulu mendapatkan objek blob dan menyimpannya dalam variabe
 PS C:\>Get-AzStorageBlobContent -Uri $blobUri -Destination "C:\test" -Force
 ```
 
-Contoh ini akan mengunduh konten blob dengan Uri, Uri dapat berupa Uri dengan token Sas. Jika blob berada di akun disk yang dikelola, dan server memerlukan token bearer selain Sas Uri untuk diunduh, cmdlet akan mencoba menghasilkan token pembawa dengan audiens yang dikembalikan server dan kredensial AAD pengguna login, lalu unduh blob dengan sas Uri dan token bearer.
+Contoh ini akan mengunduh konten blob dengan Uri, Uri dapat berupa Uri dengan token Sas. Jika blob berada di akun disk yang dikelola, dan server memerlukan token pembawa selain Sas Uri untuk diunduh, cmdlet akan mencoba menghasilkan token pembawa dengan audiens yang dikembalikan server dan kredensial pengguna AAD login, lalu unduh blob dengan sas Uri dan token bearer.
 
 ## PARAMETERS
 
@@ -385,17 +385,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure. Storage. Blob.CloudBlob
+### Microsoft.Azure.Storage.Blob.CloudBlob
 
-### Microsoft.Azure. Storage. Blob.CloudBlobContainer
+### Microsoft.Azure.Storage.Blob.CloudBlobContainer
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageBlob
+### Microsoft.WindowsAzure.Commands.Common.Storage.ResourceModel.AzureStorageBlob
 
-## CATATAN
+## NOTES
 * Jika nama blob tidak valid untuk komputer lokal, cmdlet ini akan otomatis melakukannya, jika memungkinkan.
 
 ## RELATED LINKS
