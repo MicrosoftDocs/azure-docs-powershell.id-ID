@@ -9,8 +9,8 @@ ms.openlocfilehash: d75365d8f01ae6a0f1bf00b040730781d8b07cd5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142080805"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143255303"
 ---
 # Get-AzVpnGatewayNatRule
 
@@ -179,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnGatewayNatRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

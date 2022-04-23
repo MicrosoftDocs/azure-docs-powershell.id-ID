@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
 ms.openlocfilehash: b7c8014c4b93e1e970bc7543980f42c94c5acce6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140287339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143261567"
 ---
 # Get-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Mendapatkan peran contoh dari layanan awan.
+Mendapatkan instans peran dari layanan awan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstance) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +42,11 @@ Get-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> [-Expand <In
 ```
 
 ## DESCRIPTION
-Mendapatkan peran contoh dari layanan awan.
+Mendapatkan instans peran dari layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua peran contoh
+### Contoh 1: Mendapatkan semua instans peran
 ```powershell
 PS C:\> Get-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
 
@@ -59,9 +59,9 @@ ContosoBackEnd_IN_1     eastus2euap Standard_D1_v2 Standard
 
 ```
 
-Perintah ini mendapatkan properti semua peran layanan awan bernama ContosoCS yang dimiliki oleh grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan properti dari semua instans peran layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
-### Contoh 2: Dapatkan properti untuk contoh peran tunggal
+### Contoh 2: Mendapatkan properti untuk instans peran tunggal
 ```powershell
 PS C:\> Get-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0"
 
@@ -71,7 +71,7 @@ ContosoFrontEnd_IN_0    eastus2euap Standard_D1_v2 Standard
 
 ```
 
-Perintah ini mendapatkan properti contoh peran yang bernama ContosoFrontEnd_IN_0 awan bernama ContosoCS yang dimiliki grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan properti instans peran bernama ContosoFrontEnd_IN_0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Ekspresi yang diperluas untuk diterapkan ke operasi.
+Ekspresi perluas untuk diterapkan ke operasi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Support.InstanceViewTypes
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleInstanceName
-Nama contoh peran.
+Nama instans peran.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IRoleInstance
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -204,14 +204,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi yang terkait dengan versi OS.
+  - `[Location <String>]`: Nama lokasi yang berkaitan dengan versi OS.
   - `[OSFamilyName <String>]`: Nama keluarga OS.
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Update domains are identified with a zero-based index: the first update domain has an ID of 0, the second has an ID of 1, and so on.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

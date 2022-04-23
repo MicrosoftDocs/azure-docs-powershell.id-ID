@@ -9,8 +9,8 @@ ms.openlocfilehash: 31a71306e1f510eda75871034c192b71cf8a9945
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141786488"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143236313"
 ---
 # Get-AzSynapseRoleDefinition
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseRole
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

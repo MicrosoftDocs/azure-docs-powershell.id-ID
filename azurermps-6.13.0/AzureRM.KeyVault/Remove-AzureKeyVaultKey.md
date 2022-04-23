@@ -10,8 +10,8 @@ ms.openlocfilehash: 8beb5e1c582865e5ed730ca64342a30e822591b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386899"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143218619"
 ---
 # Remove-AzureKeyVaultKey
 
@@ -240,7 +240,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

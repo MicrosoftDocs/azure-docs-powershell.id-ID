@@ -9,8 +9,8 @@ ms.openlocfilehash: 6f4dffa540d47caade42f8cddcceb541594b8895
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141863762"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143255645"
 ---
 # Get-AzFirewallPolicyRuleCollectionGroup
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSAzureFirewall, Microsoft.Azure.PowerShell.Cmdlets.Network, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

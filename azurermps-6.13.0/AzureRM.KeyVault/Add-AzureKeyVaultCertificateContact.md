@@ -10,8 +10,8 @@ ms.openlocfilehash: c56dad380d1e5a43b3f4dafdc0e0e964e6264ef3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141823064"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143218736"
 ---
 # Add-AzureKeyVaultCertificateContact
 
@@ -196,7 +196,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateContact
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
