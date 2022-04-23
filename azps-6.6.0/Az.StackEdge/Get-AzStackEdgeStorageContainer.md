@@ -9,13 +9,13 @@ ms.openlocfilehash: 9c15170a89b0bf014ae7cd54ca1bae3459eaf1c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141947559"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143189477"
 ---
 # Get-AzStackEdgeStorageContainer
 
 ## SYNOPSIS
-Mendapatkan wadah untuk akun Storage Edge di perangkat.
+Mendapatkan wadah untuk akun Edge Storage di perangkat.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestoragecontainer) untuk informasi terbaru.
@@ -48,7 +48,7 @@ Get-AzStackEdgeStorageContainer [[-Name] <String>] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeStorageContainer** mendapatkan wadah penyimpanan untuk akun Storage Edge di perangkat Stack Edge. Anda dapat menentukan nama sebagai parameter dalam cmdlet untuk mengambil detail wadah penyimpanan tertentu. 
+Cmdlet **Get-AzStackEdgeStorageContainer** mendapatkan wadah penyimpanan untuk akun Edge Storage di perangkat Stack Edge. Anda dapat menentukan nama sebagai parameter dalam cmdlet untuk mengambil detail wadah penyimpanan tertentu. 
 
 ## EXAMPLES
 
@@ -212,6 +212,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeStorageContainer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

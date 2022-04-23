@@ -9,8 +9,8 @@ ms.openlocfilehash: 46487ca9b1f683a6fa405c1d5989d0041841579e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141902925"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143189315"
 ---
 # Enable-AzStorageStaticWebsite
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands. Storage. Model.ResourceModel.PSStaticWebsiteProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
