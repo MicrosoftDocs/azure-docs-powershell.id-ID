@@ -9,16 +9,16 @@ ms.openlocfilehash: 4310a427dbd531ca70471aae8efe472a5187a831
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141868622"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143260109"
 ---
 # Restore-AzCosmosDBAccount
 
 ## SYNOPSIS
-Memulihkan akun CosmosDB yang sudah ada (live atau deleted) ke stempel waktu tertentu ke akun baru
+Memulihkan akun CosmosDB yang ada (langsung atau dihapus) ke tanda waktu tertentu ke akun baru
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/restore-azcosmosdbaccount) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/restore-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Restore-AzCosmosDBAccount -RestoreTimestampInUtc <DateTime> -SourceDatabaseAccou
 ```
 
 ## DESCRIPTION
-Membuat akun CosmosDB baru dengan memulihkan akun yang sudah ada dengan nama dan stempel waktu tertentu.
+Membuat akun CosmosDB baru dengan memulihkan akun yang ada dengan nama dan tanda waktu yang diberikan.
 
 ## EXAMPLES
 
@@ -72,12 +72,12 @@ RestoreParameters                  : Microsoft.Azure.Commands.CosmosDB.Models.PS
 CreateMode                         : Restore
 ```
 
-{{ Membuat akun CosmosDB baru dengan memulihkan akun yang sudah ada dengan nama dan cap waktu tertentu. }}
+{{ Membuat akun CosmosDB baru dengan memulihkan akun yang sudah ada dengan nama dan tanda waktu yang diberikan. }}
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabasesToRestore
-Daftar objek PSDatabaseToRestore yang menentukan subset database dan kumpulan untuk dipulihkan dari akun sumber. (Jika tidak disediakan, semua database akan dipulihkan)
+Daftar objek PSDatabaseToRestore yang menentukan subset database dan koleksi untuk dipulihkan dari akun sumber. (Jika tidak disediakan, semua database akan dipulihkan)
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSDatabaseToRestore[]
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreTimestampInUtc
-Cap waktu tempat akun sumber harus dipulihkan.
+Tanda waktu tempat akun sumber harus dipulihkan.
 
 ```yaml
 Type: System.DateTime
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -229,16 +229,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSDatabaseAccountGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

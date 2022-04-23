@@ -10,13 +10,13 @@ ms.openlocfilehash: a2bc4eca12488b0d393d896b6fb95f3ae8f94060
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176547"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281295"
 ---
 # New-AzLoadBalancer
 
 ## SYNOPSIS
-Membuat penyeimbang beban.
+Membuat load balancer.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzLoadBalancer -ResourceGroupName <String> -Name <String> -Location <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancer** membuat penyeimbang muatan Azure.
+Cmdlet **New-AzLoadBalancer** membuat penyeimbang beban Azure.
 
 ## EXAMPLES
 
@@ -47,12 +47,12 @@ $lb = New-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGr
 Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Menyebarkan load balancer mengharuskan Anda membuat beberapa objek terlebih dahulu, dan tujuh perintah pertama memperlihatkan cara membuat objek tersebut.
-Perintah kedelapan membuat load balancer bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup.
-Perintah kesembilan dan terakhir mendapatkan penyeimbang muatan baru untuk memastikan berhasil dibuat.
-Perhatikan bahwa contoh ini hanya memperlihatkan cara membuat load balancer. Anda juga harus mengonfigurasinya menggunakan cmdlet Add-AzNetworkInterfaceIpConfig untuk menetapkan NIC ke mesin virtual yang berbeda.
+Menyebarkan load balancer mengharuskan Anda terlebih dahulu membuat beberapa objek, dan tujuh perintah pertama menunjukkan cara membuat objek tersebut.
+Perintah kedelapan membuat load balancer bernama MyLoadBalancer di grup sumber daya bernama MyResourceGroup.
+Perintah kesembilan dan terakhir mendapatkan load balancer baru untuk memastikannya berhasil dibuat.
+Perhatikan bahwa contoh ini hanya menunjukkan cara membuat load balancer. Anda juga harus mengonfigurasinya menggunakan cmdlet Add-AzNetworkInterfaceIpConfig untuk menetapkan NIC ke komputer virtual yang berbeda.
 
-### Contoh 2: Membuat penyeimbang muat global
+### Contoh 2: Membuat load balancer global
 ```powershell
 $publicip = New-AzPublicIpAddress -ResourceGroupName "MyResourceGroup" -name "MyPublicIp" -Location "West US" -AllocationMethod Static -DomainNameLabel $domainNameLabel -Sku Standard -Tier Global
 $frontend = New-AzLoadBalancerFrontendIpConfig -Name $frontendName -PublicIpAddress $publicip
@@ -63,15 +63,15 @@ $lb = New-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGr
 Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Menyebarkan penyeimbang muat global mengharuskan Anda membuat beberapa objek terlebih dahulu, dan lima perintah pertama memperlihatkan cara membuat objek tersebut.
-Perintah keenam membuat load balancer bernama MyLoadBalancer dalam grup sumber daya bernama MyResourceGroup.
-Perintah ketujuh dan terakhir mendapatkan penyeimbang muatan baru untuk memastikan bahwa load balancer berhasil dibuat.
-Perhatikan bahwa contoh ini hanya memperlihatkan cara membuat penyeimbang beban global. Anda juga harus mengonfigurasinya menggunakan cmdlet New-AzLoadBalancerBackendAddressConfig untuk menetapkan id ipconfig frontend load balancer regional ke kumpulan alamat backend-nya
+Menyebarkan load balancer global mengharuskan Anda terlebih dahulu membuat beberapa objek, dan lima perintah pertama menunjukkan cara membuat objek tersebut.
+Perintah keenam membuat load balancer bernama MyLoadBalancer di grup sumber daya bernama MyResourceGroup.
+Perintah ketujuh dan terakhir mendapatkan load balancer baru untuk memastikannya berhasil dibuat.
+Perhatikan bahwa contoh ini hanya menunjukkan cara membuat penyeimbang beban global. Anda juga harus mengonfigurasinya menggunakan cmdlet New-AzLoadBalancerBackendAddressConfig untuk menetapkan id ipconfig frontend load balancer regional ke kumpulan alamat backend-nya
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPool
-Menentukan kumpulan alamat backend untuk dikaitkan dengan penyeimbang muatan.
+Menentukan kumpulan alamat backend untuk dikaitkan dengan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool[]
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Zona tepi penyeimbang beban
+Zona tepi load balancer
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa cmdlet ini membuat load balancer meskipun load balancer dengan nama yang sama sudah ada.
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan load balancer.
+Menentukan daftar alamat IP front-end untuk dikaitkan dengan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundNatRule
-Menentukan daftar aturan penerjemahan alamat jaringan masuk (NAT) untuk dikaitkan dengan penyeimbang muatan.
+Menentukan daftar aturan terjemahan alamat jaringan masuk (NAT) untuk dikaitkan dengan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSInboundNatRule[]
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingRule
-Menentukan daftar aturan penyeimbangan beban untuk dikaitkan dengan penyeimbang muatan.
+Menentukan daftar aturan penyeimbangan beban untuk dikaitkan dengan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancingRule[]
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat untuk membuat penyeimbang muatan.
+Menentukan wilayah untuk membuat penyeimbang beban.
 
 ```yaml
 Type: System.String
@@ -218,8 +218,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyeimbang muatan yang dibuat ini.
+### -Name
+Menentukan nama load balancer yang dibuat ini.
 
 ```yaml
 Type: System.String
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Probe
-Menentukan daftar probe untuk dikaitkan dengan load balancer.
+Menentukan daftar probe yang akan dikaitkan dengan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSProbe[]
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama Sku penyeimbang muatan.
+Nama Sku load balancer.
 
 ```yaml
 Type: System.String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Penyeimbang muatan Sku Tier.
+Tingkat Sku load balancer.
 
 ```yaml
 Type: System.String
@@ -323,8 +323,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -355,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -381,14 +381,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Add-AzNetworkInterfaceIpConfig](./Add-AzNetworkInterfaceIpConfig.md)
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [Remove-AzLoadBalancer](./Remove-AzLoadBalancer.md)
 
-[Set-AzLoadBalancer](./Set-AzLoadBalancer.md)
+[Atur-AzLoadBalancer](./Set-AzLoadBalancer.md)

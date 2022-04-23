@@ -10,8 +10,8 @@ ms.openlocfilehash: 977cea06fafe30644a4577a10adab2517474467c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434158"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143289719"
 ---
 # Remove-AzVMExtension
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

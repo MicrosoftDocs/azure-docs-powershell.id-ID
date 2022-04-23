@@ -10,8 +10,8 @@ ms.openlocfilehash: 29814b1be617731bc7ba5567547aa037ff43a638
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000944"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143270999"
 ---
 # Set-AzStorageShareQuota
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageFileShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
