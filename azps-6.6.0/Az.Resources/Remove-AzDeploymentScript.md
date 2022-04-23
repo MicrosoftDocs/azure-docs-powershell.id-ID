@@ -9,8 +9,8 @@ ms.openlocfilehash: 2f8203eba4ddf3016c78b2177e7338536f1148c9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142042484"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143354483"
 ---
 # Remove-AzDeploymentScript
 
@@ -190,6 +190,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 77aaed89dc09cd003883943534beeb531b370af0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141868136"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143349137"
 ---
 # Set-AzDtlAutoStartPolicy
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

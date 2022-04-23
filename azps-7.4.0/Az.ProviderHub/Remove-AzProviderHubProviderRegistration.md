@@ -9,8 +9,8 @@ ms.openlocfilehash: f86f3d36d36b8d6b68c1465d066b3be78a0ac628
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143311409"
 ---
 # Remove-AzProviderHubProviderRegistration
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

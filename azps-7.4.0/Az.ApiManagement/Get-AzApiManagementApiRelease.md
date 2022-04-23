@@ -9,8 +9,8 @@ ms.openlocfilehash: 1b634073df2b8dc06d57bc8ffc5f13eebc893708
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428864"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143320805"
 ---
 # Get-AzApiManagementApiRelease
 
@@ -168,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiRelease
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

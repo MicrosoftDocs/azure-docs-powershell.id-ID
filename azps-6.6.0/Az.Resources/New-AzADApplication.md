@@ -10,8 +10,8 @@ ms.openlocfilehash: cce132b9cf16c52df2b911e0cb8246bc4ac343b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142078069"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143354681"
 ---
 # New-AzADApplication
 
@@ -328,7 +328,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

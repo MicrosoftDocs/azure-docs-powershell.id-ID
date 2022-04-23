@@ -9,8 +9,8 @@ ms.openlocfilehash: f77230fd2aa3ea6779de2a3bb1ed6d20c124d062
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141803282"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143348727"
 ---
 # Get-AzEventGridDomainTopic
 
@@ -299,6 +299,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSDomainTopicListInstance
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 346d37a05f2942b29ad64033a5d4abc61b9f97d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142262203"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143341937"
 ---
 # Get-AzAccessToken
 
@@ -133,6 +133,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.PSAccessToken
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

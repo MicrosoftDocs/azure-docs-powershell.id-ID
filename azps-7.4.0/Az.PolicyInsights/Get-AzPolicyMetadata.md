@@ -9,8 +9,8 @@ ms.openlocfilehash: 3d50adbd9b96fc1cd8a9767cfffa0e6549d442c0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143311715"
 ---
 # Get-AzPolicyMetadata
 
@@ -108,6 +108,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.PolicyInsights.Models.PSPolicyMetadata
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

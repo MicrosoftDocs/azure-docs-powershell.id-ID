@@ -10,8 +10,8 @@ ms.openlocfilehash: bb5ef6b3fdd57f93c43b41917fb1aa9bb6d73ac6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142122875"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143354861"
 ---
 # Export-AzRedisCache
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS

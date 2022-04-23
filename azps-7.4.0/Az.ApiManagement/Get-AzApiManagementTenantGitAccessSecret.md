@@ -9,8 +9,8 @@ ms.openlocfilehash: e519a0e077d63d73cf792eb31dca3598ba3e3a17
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423826"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143320589"
 ---
 # Get-AzApiManagementTenantGitAccessSecret
 
@@ -87,6 +87,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

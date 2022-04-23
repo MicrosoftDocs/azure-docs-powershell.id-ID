@@ -9,8 +9,8 @@ ms.openlocfilehash: 10dd0919cf4b9f5acb070efa219e7f5f4e5633a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141912892"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143349101"
 ---
 # New-AzDevSpacesController
 
@@ -193,6 +193,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DevSpaces.Models.PSController
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
