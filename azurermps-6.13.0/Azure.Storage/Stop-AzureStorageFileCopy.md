@@ -10,8 +10,8 @@ ms.openlocfilehash: 7aea0516080ccceb6b453de86f5b731f64a1a8f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142103157"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143111285"
 ---
 # Stop-AzureStorageFileCopy
 
@@ -254,7 +254,7 @@ Parameter: File (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

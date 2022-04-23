@@ -9,8 +9,8 @@ ms.openlocfilehash: 379c9ad95f39d4eb47f8c2564ef9933ab7db8e35
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143124677"
 ---
 # Update-AzDataMigrationSqlService
 
@@ -37,7 +37,7 @@ Perbarui Database Migration Service.
 
 ## EXAMPLES
 
-### Contoh 1: Tag pembaruan layanan migrasi SQL
+### Contoh 1: Memperbarui tag SQL Migration Service
 ```powershell
 Update-AzDataMigrationSqlService -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService" -Tag @{Tag="Service"}
 ```
@@ -48,9 +48,9 @@ Location  Name    Type                                         ProvisioningState
 eastus2   MySqlMS Microsoft.DataMigration/sqlMigrationServices Succeeded         Online
 ```
 
-Tag perintah pembaruan layanan migrasi SQL ini.
+Perintah ini memperbarui tag SQL Migration Service.
 
-### Contoh 2: Tag pembaruan layanan migrasi SQL menggunakan InputObject
+### Contoh 2: Memperbarui tag SQL Migration Service menggunakan InputObject
 ```powershell
 $mySqlMS = Get-AzDataMigrationSqlService -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService"
 Update-AzDataMigrationSqlService -InputObject $mySqlMS -Tag @{Tag="Service"}
@@ -62,12 +62,12 @@ Location  Name    Type                                         ProvisioningState
 eastus2   MySqlMS Microsoft.DataMigration/sqlMigrationServices Succeeded         Online
 ```
 
-Tag perintah ini memperbarui SQL Layanan Migrasi menggunakan InputObject.
+Perintah ini memperbarui tag SQL Migration Service menggunakan InputObject.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -111,8 +111,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Migrasi SQL.
+### -Name
+Nama SQL Migration Service.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
@@ -202,8 +202,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -244,7 +244,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.Api20211030Preview.ISqlMigrationService
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -256,8 +256,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagedInstanceName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
-  - `[SqlMigrationServiceName <String>]`: Nama Layanan Migrasi SQL.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
+  - `[SqlMigrationServiceName <String>]`: Nama SQL Migration Service.
   - `[SqlVirtualMachineName <String>]`: 
   - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Azure.
   - `[TargetDbName <String>]`: Nama database target.

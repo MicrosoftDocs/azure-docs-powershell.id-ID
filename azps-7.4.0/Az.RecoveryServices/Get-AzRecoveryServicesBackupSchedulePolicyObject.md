@@ -10,8 +10,8 @@ ms.openlocfilehash: 8d37e4d9d0afa18b037985d3a02d261771e18e53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166484"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143117441"
 ---
 # Get-AzRecoveryServicesBackupSchedulePolicyObject
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.SchedulePolicyBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: d3cda1f856610c48f670b73ba14a4a8616f9c519
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142480589"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099099"
 ---
 # New-AzApiManagementSslSetting
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSslSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

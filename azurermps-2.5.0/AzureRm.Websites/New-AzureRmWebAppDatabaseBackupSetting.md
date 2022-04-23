@@ -8,8 +8,8 @@ ms.openlocfilehash: f44b6f370b1431a5baf1a0686b4e893653327227
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141846950"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143111670"
 ---
 # New-AzureRmWebAppDatabaseBackupSetting
 
@@ -125,7 +125,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

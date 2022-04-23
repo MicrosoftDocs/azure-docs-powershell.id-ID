@@ -10,8 +10,8 @@ ms.openlocfilehash: c63573da3c12eb54329d05f49615057d0595b77c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923614"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105599"
 ---
 # Get-AzureRmStorageUsage
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

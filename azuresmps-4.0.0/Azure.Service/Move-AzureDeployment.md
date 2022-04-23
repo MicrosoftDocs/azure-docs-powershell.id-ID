@@ -7,8 +7,8 @@ ms.openlocfilehash: b6a3b81e547bffd8706b9b0ac02072132b71aeeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094499"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104355"
 ---
 # Move-AzureDeployment
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### ManagementOperationContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

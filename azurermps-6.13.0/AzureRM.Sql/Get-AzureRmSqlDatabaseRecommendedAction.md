@@ -10,8 +10,8 @@ ms.openlocfilehash: cf0f8c3be01f5b3f48eea940bd733d6dd7cc1c1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142096204"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106140"
 ---
 # Get-AzureRmSqlDatabaseRecommendedAction
 
@@ -267,7 +267,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlDatabaseRecommendedActionModel
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql, penasihat, rekomendasi
 
 ## RELATED LINKS

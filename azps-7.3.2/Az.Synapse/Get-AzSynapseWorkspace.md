@@ -9,8 +9,8 @@ ms.openlocfilehash: c94a37b9648699939db1d19cd26f296e357d277c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141786470"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143130941"
 ---
 # Get-AzSynapseWorkspace
 
@@ -34,7 +34,7 @@ Get-AzSynapseWorkspace -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseWorkspace** mendapatkan informasi tentang ruang kerja Azure Synapse Analytics.
+Cmdlet **Get-AzSynapseWorkspace** mendapatkan informasi tentang ruang kerja Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Perintah ini mendapatkan ruang kerja Azure Synapse Analytics dengan nama yang di
 PS C:\> Get-AzSynapseWorkspace -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
 ```
 
-Perintah ini mendapatkan ruang kerja Azure Synapse Analytics dengan ID sumber daya tertentu.
+Perintah ini mendapatkan ruang kerja Azure Synapse Analytics dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -139,6 +139,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

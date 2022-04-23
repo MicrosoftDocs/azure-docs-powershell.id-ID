@@ -7,8 +7,8 @@ ms.openlocfilehash: 50a80f823981bb6946e3e93f838da610b3ae964b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142313575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105201"
 ---
 # Get-AzureAutomationJob
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Job
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

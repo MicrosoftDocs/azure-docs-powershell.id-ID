@@ -7,8 +7,8 @@ ms.openlocfilehash: 777a1a6063eb0d318594aaaf9c1280bdc95333ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772448"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104931"
 ---
 # Get-AzureSiteRecoveryVaultSettingsFile
 
@@ -182,7 +182,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

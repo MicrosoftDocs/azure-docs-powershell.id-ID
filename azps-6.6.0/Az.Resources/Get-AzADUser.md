@@ -10,8 +10,8 @@ ms.openlocfilehash: bac24d9ef3bd45fa4f5cb5ebfffb7dd494187638
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142300480"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143086085"
 ---
 # Get-AzADUser
 
@@ -258,7 +258,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ActiveDirectory.PSADUser
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

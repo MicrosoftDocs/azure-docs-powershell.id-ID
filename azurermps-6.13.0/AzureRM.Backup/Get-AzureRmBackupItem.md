@@ -10,8 +10,8 @@ ms.openlocfilehash: f0380a518353c3bc462a8a7b58012871359569a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141845006"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143110493"
 ---
 # Get-AzureRmBackupItem
 
@@ -173,7 +173,7 @@ Parameter: Kontainer (ByValue)
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupItem
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 6ee9e3062108049e517dbea09573af7905dd54d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142359515"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143110421"
 ---
 # Get-AzureRmBackupVaultCredentials
 
@@ -95,7 +95,7 @@ Parameter: Vault (ByValue)
 ### System.String
 Cmdlet ini mengembalikan nama file kredensial kubah.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

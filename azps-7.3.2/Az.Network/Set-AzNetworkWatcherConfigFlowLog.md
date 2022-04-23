@@ -9,8 +9,8 @@ ms.openlocfilehash: 1289c8249b19125fb8fea5081ab600abb2c09123
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142030979"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143073575"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
@@ -574,7 +574,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 03a5a2ee26823b5e1feffca0e0831a8a7d885baf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142335612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104481"
 ---
 # Get-AzureWebsiteMetric
 
@@ -226,7 +226,7 @@ Anda dapat meneruskan input ke cmdlet ini menurut nama properti, tetapi tidak me
 ### Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.WebEntities.MetricResponse
 Secara default, **Get-AzureWebsiteMetric** mengembalikan array objek **MetricResponse** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

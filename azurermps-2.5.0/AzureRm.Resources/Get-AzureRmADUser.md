@@ -8,8 +8,8 @@ ms.openlocfilehash: 78523d5bef3bfb2461bb524044da14f8aedbbc12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141970764"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143112131"
 ---
 # Get-AzureRmADUser
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

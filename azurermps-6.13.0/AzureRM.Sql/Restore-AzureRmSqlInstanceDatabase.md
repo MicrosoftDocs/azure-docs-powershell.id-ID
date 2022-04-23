@@ -9,8 +9,8 @@ ms.openlocfilehash: 61fe76eba8d1f8faf0ab45d0a24f56a8dabf3641
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967489"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105876"
 ---
 # Restore-AzureRmSqlInstanceDatabase
 
@@ -312,6 +312,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

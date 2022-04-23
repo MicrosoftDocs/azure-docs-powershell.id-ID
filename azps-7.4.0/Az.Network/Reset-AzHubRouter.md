@@ -9,8 +9,8 @@ ms.openlocfilehash: 846937f6702ef9d573b717415d414e3b54a671c7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167304"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143118269"
 ---
 # Reset-AzHubRouter
 
@@ -225,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualHub
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

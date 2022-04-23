@@ -9,8 +9,8 @@ ms.openlocfilehash: 7bc6b2c992486c87238c1f438f4d2e1fdb15f59e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142043075"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143086265"
 ---
 # Search-AzGraph
 
@@ -252,6 +252,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceGraph.Models.PSResourceGraphResponse'1[[System.Management.Automation.PSObject]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

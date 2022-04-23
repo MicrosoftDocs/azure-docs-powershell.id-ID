@@ -7,8 +7,8 @@ ms.openlocfilehash: b33233d214964e443a37deebfc92a3c00c14855b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141772286"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104805"
 ---
 # Get-AzureSubscription
 
@@ -200,7 +200,7 @@ Anda dapat menyalurkan input ke properti **SubscriptionName** menurut nama, teta
 
 ### Microsoft.WindowsAzure.Commands.Utilities.Common.WindowsAzureSubscription
 
-## CATATAN
+## NOTES
 * Get-AzureSubscription mendapatkan data dari file data langganan yang dibuat cmdlet **Add-AzureAccount** dan **Import-PublishSettingsFile** .
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: adc9e5e87e6da3e7bdf075aa2d3e6b5b7d36443a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141861710"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143087075"
 ---
 # Test-AzPowerBIEmbeddedCapacity
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

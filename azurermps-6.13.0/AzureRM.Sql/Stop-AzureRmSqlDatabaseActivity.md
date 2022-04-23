@@ -10,8 +10,8 @@ ms.openlocfilehash: af2f10b371eb21558a4b675331ec97f797611d26
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142280386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105727"
 ---
 # Stop-AzureRmSqlDatabaseActivity
 
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseActivityModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

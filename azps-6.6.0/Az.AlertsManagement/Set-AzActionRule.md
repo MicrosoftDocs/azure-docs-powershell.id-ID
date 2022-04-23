@@ -9,8 +9,8 @@ ms.openlocfilehash: de736d79fc11337f52a42f833ef2271574bfe785
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142308157"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099387"
 ---
 # Set-AzActionRule
 
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 
 ### -TargetResourceTypeCondition
 Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
-Berisi:Mesin Virtual,Akun Penyimpanan
+Berisi:Virtual Machines,akun Storage
 
 ```yaml
 Type: System.String
@@ -436,6 +436,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSActionRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

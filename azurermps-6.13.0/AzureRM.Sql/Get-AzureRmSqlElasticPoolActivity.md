@@ -10,8 +10,8 @@ ms.openlocfilehash: f5e7455a253c86fe363b72c5d4c0e8ff47b96f56
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774688"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143106085"
 ---
 # Get-AzureRmSqlElasticPoolActivity
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolActivityModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
