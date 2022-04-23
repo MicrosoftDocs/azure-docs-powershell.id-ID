@@ -9,8 +9,8 @@ ms.openlocfilehash: 400778f9e4b22c094446a6c7c678c96b9c0cd2a2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143227079"
 ---
 # Add-AzIotHubDeviceChildren
 
@@ -235,6 +235,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSDeviceChildren
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

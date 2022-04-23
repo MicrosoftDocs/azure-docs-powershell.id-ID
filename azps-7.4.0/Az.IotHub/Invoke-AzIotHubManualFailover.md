@@ -9,8 +9,8 @@ ms.openlocfilehash: 69e166c405d4b14a224bbec74570020dfdc33578
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173055"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143227043"
 ---
 # Invoke-AzIotHubManualFailover
 
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

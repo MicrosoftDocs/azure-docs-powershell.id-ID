@@ -9,8 +9,8 @@ ms.openlocfilehash: bc5c09913209713df192603aff7ea7646e651699
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386459"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143217835"
 ---
 # Get-AzureRmAvailableServiceDelegation
 
@@ -92,7 +92,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.Network.Models.PSAvailableDelegation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Add-AzureRmDelegation](./Add-AzureRmDelegation.md)

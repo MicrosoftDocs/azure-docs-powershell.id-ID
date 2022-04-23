@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e474a4eb1b162bf6b11a034db7aaaaf205bf225
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427334"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143234369"
 ---
 # Measure-AzAlertStatistic
 
@@ -255,6 +255,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AlertsManagement.OutputModels.PSAlertsSummary
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

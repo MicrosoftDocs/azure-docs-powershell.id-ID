@@ -9,8 +9,8 @@ ms.openlocfilehash: 1b34cf58f708b05f6554da7057a2b473b6d2f8c4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142228303"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143254907"
 ---
 # New-AzPrivateEndpoint
 
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPrivateEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

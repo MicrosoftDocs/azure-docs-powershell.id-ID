@@ -9,8 +9,8 @@ ms.openlocfilehash: 0f934f6293cf7116af54a3bb1213773e146eba12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841712"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143234531"
 ---
 # Remove-AzContext
 
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: a73d7e85660c9eabfb3b384dd7fad330f0ff0923
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141794408"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143248553"
 ---
 # Remove-AzSynapsePipeline
 
@@ -235,6 +235,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

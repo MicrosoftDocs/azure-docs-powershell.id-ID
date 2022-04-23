@@ -9,8 +9,8 @@ ms.openlocfilehash: 865418b8110c4a3e8bf5a04f0fe805b653fc0a9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142466477"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143241803"
 ---
 # Get-AzPeeringRegisteredAsn
 
@@ -164,6 +164,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeeringRegisteredAsn
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: fc94bb7de5663995e75f0c4f1fed05fb36b35f40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141926145"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143217683"
 ---
 # Get-AzureRmVpnClientPackage
 
@@ -120,7 +120,7 @@ Parameter: ResourceGroupName (ByValue), VirtualNetworkGatewayName (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 7a6d8bef710ddf41f805c6ced558e12781a23276
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142139243"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143217925"
 ---
 # Get-AzureRmApplicationGatewayRequestRoutingRule
 
@@ -109,7 +109,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRequestRoutingRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

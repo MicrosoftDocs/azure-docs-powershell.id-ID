@@ -9,8 +9,8 @@ ms.openlocfilehash: 8cc17374350300bc14582deea7fcf8e8dc1caa1e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142355311"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143217773"
 ---
 # Get-AzureRmNetworkWatcherSecurityGroupView
 
@@ -176,7 +176,7 @@ Parameter: NetworkWatcherName (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSSecurityGroupViewResult
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS

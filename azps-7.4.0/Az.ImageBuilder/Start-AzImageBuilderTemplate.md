@@ -9,8 +9,8 @@ ms.openlocfilehash: 203ce844cfe520019c5f12ce4f31a0607585ff02
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143227241"
 ---
 # Start-AzImageBuilderTemplate
 
@@ -223,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: df8e54c8f21b4d47526040eae05bb3c3e972cdaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142080337"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143254781"
 ---
 # New-AzStaticRoute
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSStaticRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

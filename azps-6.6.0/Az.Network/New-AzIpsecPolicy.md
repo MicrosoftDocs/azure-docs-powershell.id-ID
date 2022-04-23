@@ -9,8 +9,8 @@ ms.openlocfilehash: 47983730da2fe75d369604158fbabdb6f8c8cbee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141953259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143255015"
 ---
 # New-AzIpsecPolicy
 
@@ -195,6 +195,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

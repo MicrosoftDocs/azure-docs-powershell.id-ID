@@ -9,8 +9,8 @@ ms.openlocfilehash: 1ca2021a675f780653a653540b577c420a4b5dc0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143227223"
 ---
 # Get-AzImportExportBitLockerKey
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IDriveBitLockerKey
 
-## CATATAN
+## NOTES
 
 ALIAS
 

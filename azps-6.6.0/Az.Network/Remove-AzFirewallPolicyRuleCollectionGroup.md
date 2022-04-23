@@ -9,13 +9,13 @@ ms.openlocfilehash: 6211a0645ad05019e1330db0eec91d4bb6ef9879
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141799412"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143254458"
 ---
 # Remove-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
-Menghapus Grup Kumpulan Aturan Kebijakan Firewall Azure dalam kebijakan firewall Azure
+Menghapus Grup Kumpulan Aturan Kebijakan Azure Firewall dalam kebijakan firewall Azure
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
@@ -50,7 +50,7 @@ Remove-AzFirewallPolicyRuleCollectionGroup -ResourceId <String> [-Force] [-PassT
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzFirewallPolicyRuleCollectionGroup** menghapus grup kumpulan aturan dari Kebijakan Firewall Azure.
+Cmdlet **Remove-AzFirewallPolicyRuleCollectionGroup** menghapus grup kumpulan aturan dari Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -279,6 +279,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
