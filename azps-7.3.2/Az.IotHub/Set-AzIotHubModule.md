@@ -9,8 +9,8 @@ ms.openlocfilehash: d87a750d6cbbdef39282dbb8921d66e3a481f539
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142293145"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143133443"
 ---
 # Set-AzIotHubModule
 
@@ -263,6 +263,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSModule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

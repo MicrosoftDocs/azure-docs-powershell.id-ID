@@ -10,8 +10,8 @@ ms.openlocfilehash: f58f07e4be20800b41ec1a08546d7d28477f7fe5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142055063"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143097695"
 ---
 # Remove-AzApiManagementOpenIdConnectProvider
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

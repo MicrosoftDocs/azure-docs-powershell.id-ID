@@ -9,8 +9,8 @@ ms.openlocfilehash: d2ba04e96c41170329444120e1d649a047dac112
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142110149"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143134163"
 ---
 # Remove-AzSapMonitorProviderInstance
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

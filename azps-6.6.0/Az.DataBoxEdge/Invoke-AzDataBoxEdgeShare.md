@@ -9,8 +9,8 @@ ms.openlocfilehash: 2cd7aece0850a1413e1edd3f3f9e1f2d11d0071a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141959199"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093591"
 ---
 # Invoke-AzDataBoxEdgeShare
 
@@ -237,6 +237,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

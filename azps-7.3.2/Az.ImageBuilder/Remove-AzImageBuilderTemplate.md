@@ -9,8 +9,8 @@ ms.openlocfilehash: 443c0594ff2a074c7e22d373c8a9fe362075956d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142293559"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143134001"
 ---
 # Remove-AzImageBuilderTemplate
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

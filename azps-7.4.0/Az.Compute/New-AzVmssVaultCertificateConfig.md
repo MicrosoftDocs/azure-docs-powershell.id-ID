@@ -10,8 +10,8 @@ ms.openlocfilehash: 52f7d580b20bcdc93912da27ada78bf47b85a93d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142173524"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143127845"
 ---
 # New-AzVmssVaultCertificateConfig
 
@@ -36,13 +36,13 @@ Output cmdlet ini dimaksudkan untuk digunakan dengan cmdlet Add-AzVmssSecret.
 New-AzVmssVaultCertificateConfig -CertificateUrl "http://keyVaultName.vault.contoso.net/secrets/secretName/secretVersion" -CertificateStore "MyCerts"
 ```
 
-Perintah ini membuat konfigurasi sertifikat Key Vault yang menggunakan penyimpanan sertifikat bernama MyCerts yang terletak di URL sertifikat tertentu.
+Perintah ini membuat konfigurasi sertifikat Key Vault yang menggunakan penyimpanan sertifikat bernama MyCerts yang terletak di URL sertifikat yang ditentukan.
 
 ## PARAMETERS
 
 ### -CertificateStore
 Menentukan penyimpanan sertifikat pada mesin virtual dalam kumpulan skala tempat sertifikat ditambahkan.
-Ini hanya berlaku untuk Windows Virtual Machine Scale Sets.
+Ini hanya berlaku untuk Windows Virtual Machine Scale Set.
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateUrl
-Menentukan URI sertifikat yang disimpan dalam Key Vault.
+Menentukan URI sertifikat yang disimpan dalam Kubah Kunci.
 Ini adalah pengodean base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: { "data}\<Base64-encoded-certificate\>", "dataType}pfx", "password}\<pfx-file-password\>" }
 
 ```yaml
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.VaultCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: bf973cdf7406f31cc96a33b1b9826958c8e2dfe4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179627"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143126261"
 ---
 # Remove-AzCosmosDBGremlinDatabase
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

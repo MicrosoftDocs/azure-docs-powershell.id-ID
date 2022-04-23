@@ -9,8 +9,8 @@ ms.openlocfilehash: 9cf27a51f286877e28a1d3d7c38ecb0ee5815a41
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142078321"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143086175"
 ---
 # Add-AzADGroupMember
 
@@ -239,6 +239,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

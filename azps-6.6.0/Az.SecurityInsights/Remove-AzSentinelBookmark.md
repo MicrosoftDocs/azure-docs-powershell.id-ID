@@ -9,8 +9,8 @@ ms.openlocfilehash: 1a9a0517b489085f0f4e58da4dc617ba3086f3bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141905763"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143142893"
 ---
 # Remove-AzSentinelBookmark
 
@@ -193,6 +193,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Bookmarks.PSSentinelBookmark
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

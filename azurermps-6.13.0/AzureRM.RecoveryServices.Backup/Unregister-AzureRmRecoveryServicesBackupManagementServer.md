@@ -10,8 +10,8 @@ ms.openlocfilehash: 4ef306b80aaf5fbb03b5ee4e98104829d8853ba1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142136398"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143107407"
 ---
 # Unregister-AzureRmRecoveryServicesBackupManagementServer
 
@@ -150,7 +150,7 @@ Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.BackupEngineBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

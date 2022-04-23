@@ -9,8 +9,8 @@ ms.openlocfilehash: 637204411a269e445892788bed377d6178255b0e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425059"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121941"
 ---
 # Get-AzIotHubDeviceParent
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSDevice
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

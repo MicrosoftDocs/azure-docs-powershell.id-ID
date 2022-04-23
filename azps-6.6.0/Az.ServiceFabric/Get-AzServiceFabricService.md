@@ -9,8 +9,8 @@ ms.openlocfilehash: 50ef3e3bd38c24258ee37330ec25b22d915b2300
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141948921"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143142300"
 ---
 # Get-AzServiceFabricService
 
@@ -168,6 +168,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

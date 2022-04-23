@@ -7,8 +7,8 @@ ms.openlocfilehash: 5ed3f08c1817b87feb86235a8758ce34cce3fb14
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142245295"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104078"
 ---
 # New-AzureSBNamespace
 
@@ -129,7 +129,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 36167e927e5cc4a816d587e43e4a5cebf0c5efeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142087449"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143093969"
 ---
 # Invoke-AzCostManagementQuery
 
@@ -308,7 +308,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryResult
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 98a5f0e16ea679ad98e54f8a4235d6dc935d398b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179907"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143127269"
 ---
 # New-AzConnectedNetworkFunction
 
@@ -342,7 +342,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkFungsi
 
-## CATATAN
+## NOTES
 
 ALIAS
 
