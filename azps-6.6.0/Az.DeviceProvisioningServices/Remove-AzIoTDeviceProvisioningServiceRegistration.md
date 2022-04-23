@@ -9,8 +9,8 @@ ms.openlocfilehash: b37db542e4de485ef5d7e3bc2550a409e996a86d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141957129"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143257661"
 ---
 # Remove-AzIoTDeviceProvisioningServiceRegistration
 
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

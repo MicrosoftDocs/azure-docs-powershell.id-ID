@@ -9,8 +9,8 @@ ms.openlocfilehash: fcec59bab8c8f898c5f4d3ec4a07dc06f61bc2b8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430577"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143278271"
 ---
 # Get-AzProviderHubResourceTypeRegistration
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeRegistration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

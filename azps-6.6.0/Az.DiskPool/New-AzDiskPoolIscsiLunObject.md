@@ -9,8 +9,8 @@ ms.openlocfilehash: 440b011480fb1db58efc1f9afdd5c7dfef4569ab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141957003"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143257391"
 ---
 # New-AzDiskPoolIscsiLunObject
 
@@ -80,7 +80,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IscsiLun
 
-## CATATAN
+## NOTES
 
 ALIAS
 

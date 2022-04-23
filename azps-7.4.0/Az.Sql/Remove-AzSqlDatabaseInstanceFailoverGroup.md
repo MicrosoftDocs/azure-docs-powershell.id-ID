@@ -9,8 +9,8 @@ ms.openlocfilehash: c9c2970e8e667c0360112e497caeb31dae80efd8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001219"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143272097"
 ---
 # Remove-AzSqlDatabaseInstanceFailoverGroup
 
@@ -216,6 +216,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

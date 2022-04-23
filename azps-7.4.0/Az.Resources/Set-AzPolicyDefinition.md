@@ -10,8 +10,8 @@ ms.openlocfilehash: 35220548858b8850d11f89ccb42a23ee69ed64dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990414"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143223443"
 ---
 # Set-AzPolicyDefinition
 
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: c5ed034898d1d46db00806237d81b41628c5d472
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142429107"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143272115"
 ---
 # Remove-AzSqlServerDisasterRecoveryConfiguration
 
@@ -150,7 +150,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerDisasterRecoveryConfiguration.Model.AzureSqlServerDisasterRecoveryConfigurationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
