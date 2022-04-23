@@ -9,8 +9,8 @@ ms.openlocfilehash: df1a222d4ca8e0952c0ce7e1108e5d6f68ad8d48
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142320137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143369513"
 ---
 # Set-AzSnapshotDiskEncryptionKey
 
@@ -153,6 +153,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
