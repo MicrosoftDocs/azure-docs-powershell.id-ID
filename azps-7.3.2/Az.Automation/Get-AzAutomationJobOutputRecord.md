@@ -10,8 +10,8 @@ ms.openlocfilehash: cc4be181d9c44e0f6db0836d3445c4ee3a944299
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142260907"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143367713"
 ---
 # Get-AzAutomationJobOutputRecord
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.JobStreamRecord
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

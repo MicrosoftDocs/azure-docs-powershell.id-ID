@@ -9,16 +9,16 @@ ms.openlocfilehash: 195a77edc6a03e323c03101997ffa5ab3be3d116
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142205389"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143321831"
 ---
 # Start-AzSynapseDataFlowDebugSession
 
 ## SYNOPSIS
-Memulai sesi debug alur data Analitik Synapse di Ruang Kerja Synapse.
+Memulai sesi debug aliran data Synapse Analytics di Ruang Kerja Synapse.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/start-azsynapsedataflowdebugsession) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/start-azsynapsedataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,8 +35,8 @@ Start-AzSynapseDataFlowDebugSession -WorkspaceObject <PSSynapseWorkspace> [-Inte
 ```
 
 ## DESCRIPTION
-Perintah yang berjalan panjang ini memulai sesi debug alur data untuk perintah debug yang akan datang. Perintah ini dapat dilampirkan dengan definisi runtime integrasi untuk mengonfigurasi ukuran/tipe kluster sesi debug.
-Urutan perintah PowerShell untuk alur kerja debug alur data harus:  
+Perintah jangka panjang ini memulai sesi debug aliran data untuk perintah debug yang akan datang. Perintah ini dapat melampirkan dengan definisi runtime integrasi untuk mengonfigurasi ukuran/jenis kluster sesi debug.
+Urutan perintah PowerShell untuk alur kerja debug aliran data harus:  
 1. Start-AzSynapseDataFlowDebugSession  
 2. Add-AzSynapseDataFlowDebugSessionPackage  
 3. Invoke-AzSynapseDataFlowDebugSessionCommand (ulangi langkah ini untuk perintah/target yang berbeda, atau ulangi langkah 2-3 untuk mengubah file paket)  
@@ -49,7 +49,7 @@ Urutan perintah PowerShell untuk alur kerja debug alur data harus:
 PS C:\> Start-AzSynapseDataFlowDebugSession -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini memulai sesi debug alur data analitik Azure Synapse.
+Perintah ini memulai sesi debug aliran data Azure Synapse Analytics.
 
 ### Contoh 2
 ```powershell
@@ -62,12 +62,12 @@ SessionId
 b75f917c-1a5e-432e-a1b9-ec6aabb1f546
 ```
 
-Perintah ini memulai sesi debug aliran data analitik Azure Synapse melalui pipeline.
+Perintah ini memulai sesi debug aliran data Azure Synapse Analytics melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -141,8 +141,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -183,6 +183,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSCreateDataFlowDebugSessionResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

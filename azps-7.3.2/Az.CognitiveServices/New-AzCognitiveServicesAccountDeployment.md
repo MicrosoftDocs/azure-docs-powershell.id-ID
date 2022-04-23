@@ -9,8 +9,8 @@ ms.openlocfilehash: 5602b124721de70975834d3a99b728a594abd6e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141854707"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143370179"
 ---
 # New-AzCognitiveServicesAccountDeployment
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.CognitiveServices.Models.Deployment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
