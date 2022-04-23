@@ -9,8 +9,8 @@ ms.openlocfilehash: 230369464c21c9d3bf3e87f4f73b1b663bdd0e49
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142427914"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143056817"
 ---
 # Remove-AzSynapseSqlScript
 
@@ -232,7 +232,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

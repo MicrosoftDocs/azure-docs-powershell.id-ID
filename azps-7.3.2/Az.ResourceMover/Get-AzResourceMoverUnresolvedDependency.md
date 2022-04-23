@@ -9,8 +9,8 @@ ms.openlocfilehash: 14f757daf337aab5c6069dbf0136ef8b117149b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142342151"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143072225"
 ---
 # Get-AzResourceMoverUnresolvedDependency
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Models.Api20210801.IUnresolvedDependency
 
-## CATATAN
+## NOTES
 
 ALIAS
 

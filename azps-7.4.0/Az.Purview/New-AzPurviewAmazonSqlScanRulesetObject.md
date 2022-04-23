@@ -9,8 +9,8 @@ ms.openlocfilehash: bce980f8b9e401ea054bc1200b009b5145ab9e12
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421236"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143060327"
 ---
 # New-AzPurviewAmazonSqlScanRulesetObject
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AmazonSqlScanRuleset
 
-## CATATAN
+## NOTES
 
 ALIAS
 

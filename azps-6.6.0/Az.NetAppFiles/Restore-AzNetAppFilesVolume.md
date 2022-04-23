@@ -9,8 +9,8 @@ ms.openlocfilehash: aa4685087df9d05d61bf4048a97ce9f67e42576f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142082353"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143089001"
 ---
 # Restore-AzNetAppFilesVolume
 
@@ -258,6 +258,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

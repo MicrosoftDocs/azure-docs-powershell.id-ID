@@ -10,8 +10,8 @@ ms.openlocfilehash: 2d3efb7dc960e204633079ce8ac1fa605f5aa29d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141786560"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143069885"
 ---
 # Remove-AzStorageTable
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 19feab7a49d6b411b124c8b28a8e984ad06733d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142215415"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143076185"
 ---
 # Remove-AzEventHubSchemaGroup
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubsSchemaRegistryAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 81e908ade86d604fc5fff45213d3599e7a432668
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142272733"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143096039"
 ---
 # Get-AzProximityPlacementGroup
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

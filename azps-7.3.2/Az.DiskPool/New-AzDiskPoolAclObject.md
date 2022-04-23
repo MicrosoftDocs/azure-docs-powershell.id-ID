@@ -9,8 +9,8 @@ ms.openlocfilehash: 7a77a33ec5bd6094702842347349940a5c4f66a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141893060"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143076689"
 ---
 # New-AzDiskPoolAclObject
 
@@ -83,7 +83,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.Acl
 
-## CATATAN
+## NOTES
 
 ALIAS
 

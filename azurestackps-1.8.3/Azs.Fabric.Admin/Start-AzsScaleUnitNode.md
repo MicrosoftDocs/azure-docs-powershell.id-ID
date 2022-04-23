@@ -7,8 +7,8 @@ ms.openlocfilehash: 4c51249856d9cd8c8fc47d4968b1bc011040610e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142240399"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143101511"
 ---
 # Start-AzsScaleUnitNode
 
@@ -172,6 +172,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

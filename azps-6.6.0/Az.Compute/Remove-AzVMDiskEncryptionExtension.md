@@ -10,8 +10,8 @@ ms.openlocfilehash: 6e7ce2bbfe845a5cf5598d92205bb9e3cd2dd597
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142235143"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143095553"
 ---
 # Remove-AzVMDiskEncryptionExtension
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
 Cmdlet Set-AzVMDiskEncryptionExtension mengatur nama ini ke AzureDiskEncryption untuk mesin virtual yang menjalankan sistem operasi Windows dan AzureDiskEncryptionForLinux untuk mesin virtual Linux.
-Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDiskEncryptionExtension** atau menggunakan nama sumber daya yang berbeda dalam templat Manajer Sumber Daya.
+Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDiskEncryptionExtension** atau gunakan nama sumber daya yang berbeda dalam templat Resource Manager.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

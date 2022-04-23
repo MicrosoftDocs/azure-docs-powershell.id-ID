@@ -7,8 +7,8 @@ ms.openlocfilehash: 0b06ef857a7c035b7069b7a8b33db2d1763091e2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142309741"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143101124"
 ---
 # Set-AzsStorageSettings
 
@@ -160,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

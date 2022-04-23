@@ -7,8 +7,8 @@ ms.openlocfilehash: 1d75764209b56ed0cc05d80e00581de3f982e435
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141877334"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143100949"
 ---
 # Remove-AzsAzureBridgeDownloadedProduct
 
@@ -39,7 +39,7 @@ Hapus produk yang diunduh dari Azure MarketPlace.
 Remove-AzsAzureBridgeDownloadedProduct -ActivationName 'myActivation' -ProductName 'microsoft.docker-arm.1.1.0' -ResourceGroupName 'activationRG'
 ```
 
-Menghapus produk yang diunduh dari Azure Marketplace
+Menghapus produk yang diunduh dari Marketplace Azure
 
 ## PARAMETERS
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.AzureBridge.Admin.Models.DownloadedProductResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

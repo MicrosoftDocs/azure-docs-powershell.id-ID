@@ -9,8 +9,8 @@ ms.openlocfilehash: 521cce2db370ab7e803cd387b9db3c3bb4d893f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142337255"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143069535"
 ---
 # Get-AzSynapseSparkJob
 
@@ -187,6 +187,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
