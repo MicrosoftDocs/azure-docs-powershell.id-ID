@@ -9,8 +9,8 @@ ms.openlocfilehash: df6c1d6e29874ad3fd2cf24fddd0c685fbaa2046
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871682"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143261369"
 ---
 # New-AzCognitiveServicesAccountApiProperty
 
@@ -101,6 +101,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.CognitiveServices.Models.CognitiveServicesAccountApiProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

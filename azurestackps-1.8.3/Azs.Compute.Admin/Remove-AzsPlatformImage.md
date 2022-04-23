@@ -7,8 +7,8 @@ ms.openlocfilehash: 28d807ebcd1ae61844b0316492b3d9d10437f1d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814262"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143208485"
 ---
 # Remove-AzsPlatformImage
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

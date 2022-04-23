@@ -9,8 +9,8 @@ ms.openlocfilehash: 67c96d257be803e77555a7a93d8f9b1ebbbbf8c2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142276603"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207819"
 ---
 # Revoke-AzDiskAccess
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

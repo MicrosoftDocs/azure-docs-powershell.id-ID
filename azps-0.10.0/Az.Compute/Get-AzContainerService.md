@@ -10,8 +10,8 @@ ms.openlocfilehash: 1a0daa4bf336ba970c12c24db3d5aab73641aaea
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141965139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143208143"
 ---
 # Get-AzContainerService
 
@@ -97,7 +97,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

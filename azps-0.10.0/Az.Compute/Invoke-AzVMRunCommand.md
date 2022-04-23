@@ -9,8 +9,8 @@ ms.openlocfilehash: 3036b26c4f3ebe6fc6f039f1754acdb3b50977f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811436"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143207945"
 ---
 # Invoke-AzVMRunCommand
 
@@ -210,7 +210,7 @@ Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRunCommandResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

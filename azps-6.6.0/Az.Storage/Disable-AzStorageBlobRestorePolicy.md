@@ -9,8 +9,8 @@ ms.openlocfilehash: 84e6d83d285de187c64c06538923fcd8a9033865
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142119167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143249093"
 ---
 # Disable-AzStorageBlobRestorePolicy
 
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSRestorePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

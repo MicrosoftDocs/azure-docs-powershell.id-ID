@@ -9,8 +9,8 @@ ms.openlocfilehash: f3d4e16c13e58c29c686184265abe2689639e73c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141794768"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143249003"
 ---
 # Get-AzSynapseKustoPoolLanguageExtension
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.ILanguageExtension
 
-## CATATAN
+## NOTES
 
 ALIAS
 
