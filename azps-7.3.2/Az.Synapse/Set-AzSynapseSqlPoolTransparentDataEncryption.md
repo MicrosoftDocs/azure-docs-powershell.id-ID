@@ -9,8 +9,8 @@ ms.openlocfilehash: b29f4040504b89fde1cc8af05c1d4a798b89b865
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142287691"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143069183"
 ---
 # Set-AzSynapseSqlPoolTransparentDataEncryption
 
@@ -243,6 +243,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSTransparentDataEncryption
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

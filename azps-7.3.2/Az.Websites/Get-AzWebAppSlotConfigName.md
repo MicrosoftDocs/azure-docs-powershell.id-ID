@@ -10,8 +10,8 @@ ms.openlocfilehash: 607b4f488f4ed139609d3e699f40704abfec17ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142363769"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143068589"
 ---
 # Get-AzWebAppSlotConfigName
 
@@ -121,6 +121,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.WebSites.Models.SlotConfigNamesResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

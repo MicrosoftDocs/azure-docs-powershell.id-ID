@@ -9,8 +9,8 @@ ms.openlocfilehash: 527c9ab5956b992467389ef6fedb956d71ef14d0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141805982"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143094383"
 ---
 # New-AzCosmosDBMongoDBIndex
 
@@ -113,6 +113,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSMongoIndex
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

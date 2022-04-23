@@ -9,8 +9,8 @@ ms.openlocfilehash: a2b0c91f05f1f26cfa3da4d071ac6b675bd2b984
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141848606"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143068517"
 ---
 # Remove-AzWebAppSlot
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

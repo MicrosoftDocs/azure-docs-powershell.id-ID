@@ -9,13 +9,13 @@ ms.openlocfilehash: bb910422a5b29acd347200c7d9ce27ee36b73845
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143060759"
 ---
 # Update-AzOperationalInsightsWorkspaceSharedKey
 
 ## SYNOPSIS
-Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menghubungkan agen Wawasan Operasional Microsoft ke ruang kerja.
+Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menyambungkan agen Insights Operasional Microsoft ke ruang kerja.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Update-AzOperationalInsightsWorkspaceSharedKey [-ResourceGroupName] <String> [-N
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menghubungkan agen Wawasan Operasional Microsoft ke ruang kerja.
+Meregenerasi kunci bersama untuk Ruang Kerja Analitik Log. Kunci ini digunakan untuk menyambungkan agen Insights Operasional Microsoft ke ruang kerja.
 
 ## EXAMPLES
 
@@ -125,6 +125,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspaceKeys
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

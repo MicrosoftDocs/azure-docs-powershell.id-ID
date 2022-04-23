@@ -9,8 +9,8 @@ ms.openlocfilehash: 9827bba29a820a7dad7bcc989243a935081b1f40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143060885"
 ---
 # Remove-AzOperationalInsightsDataExport
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

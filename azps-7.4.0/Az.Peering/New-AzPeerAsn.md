@@ -9,8 +9,8 @@ ms.openlocfilehash: 99810c3356b035cebb3a0e6a8a2af097d506b99a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430767"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143060723"
 ---
 # New-AzPeerAsn
 
@@ -181,6 +181,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeerAsn
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

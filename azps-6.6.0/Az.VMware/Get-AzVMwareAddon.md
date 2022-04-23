@@ -9,8 +9,8 @@ ms.openlocfilehash: 7bc2a8a5d7e3774ce017c6c515e9e970406d079e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141944961"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143082287"
 ---
 # Get-AzVMwareAddon
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20210601.IAddon
 
-## CATATAN
+## NOTES
 
 ALIAS
 

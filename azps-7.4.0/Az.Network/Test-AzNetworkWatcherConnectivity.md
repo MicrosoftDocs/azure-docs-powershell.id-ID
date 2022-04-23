@@ -9,8 +9,8 @@ ms.openlocfilehash: e8e6b4a51d9a41db0b9c3b2f0707b89b55ffb5e4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176024"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143061119"
 ---
 # Test-AzNetworkWatcherConnectivity
 
@@ -290,7 +290,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSConnectivityInformation
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengawas jaringan
 
 ## RELATED LINKS

@@ -7,8 +7,8 @@ ms.openlocfilehash: 7a46c770a12cc98d0d79695f90aac7f2b488ca7f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142378745"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143100197"
 ---
 # Get-AzsContainerRegistryQuota
 
@@ -167,7 +167,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistryAdmin.Models.Api20191101Preview.IContainerRegistryQuota
 
-## CATATAN
+## NOTES
 
 ALIAS
 

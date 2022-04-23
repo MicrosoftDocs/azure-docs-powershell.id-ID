@@ -9,8 +9,8 @@ ms.openlocfilehash: 494abd82b7ea8c14dd331671335d65c6b3fe26c4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141900171"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143081909"
 ---
 # New-AzADDomainServiceForestTrust
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.ForestTrust
 
-## CATATAN
+## NOTES
 
 ALIAS
 
