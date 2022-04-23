@@ -10,8 +10,8 @@ ms.openlocfilehash: df0688675f2386cb06a9010347f670beb8377d79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142291453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143181197"
 ---
 # Add-AzWebtestAlertRule
 
@@ -281,7 +281,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSAddAlertRuleOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

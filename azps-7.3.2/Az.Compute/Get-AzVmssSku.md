@@ -10,8 +10,8 @@ ms.openlocfilehash: c8e2a904a7d323bbd43412de7a7b9bec251fc642
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142320503"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187299"
 ---
 # Get-AzVmssSku
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetSku
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

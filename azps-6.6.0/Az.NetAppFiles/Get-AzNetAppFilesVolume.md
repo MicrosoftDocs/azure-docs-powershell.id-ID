@@ -9,8 +9,8 @@ ms.openlocfilehash: ee8e4a61eb1a2f09fe82ddcd42da61294f44bded
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142269799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143146781"
 ---
 # Get-AzNetAppFilesVolume
 
@@ -186,6 +186,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

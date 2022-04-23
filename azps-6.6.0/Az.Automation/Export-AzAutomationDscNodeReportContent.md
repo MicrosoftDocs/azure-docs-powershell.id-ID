@@ -10,8 +10,8 @@ ms.openlocfilehash: 21c05e876c6a44850ff51dacfb6648d61442eb89
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142480211"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143152289"
 ---
 # Export-AzAutomationDscNodeReportContent
 
@@ -31,7 +31,7 @@ Export-AzAutomationDscNodeReportContent -NodeId <Guid> -ReportId <Guid> [-Output
 
 ## DESCRIPTION
 Cmdlet **Export-AzAutomationDscNodeReportContent** mengekspor konten mentah laporan APS Desired State Configuration (DSC).
-Simpul DSC mengirim laporan DSC ke Azure Automation.
+Simpul DSC mengirimkan laporan DSC ke Azure Automation.
 
 ## EXAMPLES
 
@@ -197,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.IO.DirectoryInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

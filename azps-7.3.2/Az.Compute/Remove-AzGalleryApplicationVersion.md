@@ -9,8 +9,8 @@ ms.openlocfilehash: 46acc1b6871749f65b8c17bdc04df0c9af2c4d44
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142347605"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143186849"
 ---
 # Remove-AzGalleryApplicationVersion
 
@@ -243,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

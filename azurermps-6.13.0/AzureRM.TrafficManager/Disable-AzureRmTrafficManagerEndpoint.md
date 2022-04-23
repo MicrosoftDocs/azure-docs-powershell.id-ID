@@ -10,8 +10,8 @@ ms.openlocfilehash: af05a91fe2281d457cff649bf0de6d986f7f413a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967191"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159075"
 ---
 # Disable-AzureRmTrafficManagerEndpoint
 
@@ -222,7 +222,7 @@ Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' 
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

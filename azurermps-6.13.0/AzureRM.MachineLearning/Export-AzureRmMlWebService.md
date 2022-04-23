@@ -9,8 +9,8 @@ ms.openlocfilehash: 45e0fe4583477b05d4218f9e7b3ffb920b0218d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161886"
 ---
 # Export-AzureRmMlWebService
 
@@ -169,7 +169,7 @@ Parameter: WebService (ByValue)
 
 ### System.String
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

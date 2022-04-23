@@ -9,8 +9,8 @@ ms.openlocfilehash: a02510cc72b9e674f9d4fded1355ae5b2cadc807
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142097991"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143163276"
 ---
 # Set-AzureRmFrontDoorFireWallPolicy
 
@@ -296,7 +296,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

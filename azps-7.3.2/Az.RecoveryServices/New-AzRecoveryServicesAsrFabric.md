@@ -9,13 +9,13 @@ ms.openlocfilehash: d8734ef9f74ad4fa6c1cae99a8902eee8f387837
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142029377"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143175257"
 ---
 # New-AzRecoveryServicesAsrFabric
 
 ## SYNOPSIS
-Membuat Kain Pemulihan Situs Azure.
+Membuat Azure Site Recovery Fabric.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrfabric) untuk informasi terbaru.
@@ -35,7 +35,7 @@ New-AzRecoveryServicesAsrFabric [-Azure] -Name <String> -Location <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Kain Pemulihan Situs Azure dari tipe yang ditentukan.
+Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Azure Site Recovery Fabric dari tipe yang ditentukan.
 
 ## EXAMPLES
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure yang terkait dengan objek Fabric yang sedang dibuat. Objek kain Azure Site Recovery mewakili sebuah kawasan. Untuk mesin virtual yang sedang direplikasi antara dua kawasan Azure, kain utama mewakili wilayah Azure utama dan kain pemulihan.
+Menentukan kawasan Azure yang terkait dengan objek Fabric yang sedang dibuat. Objek kain Azure Site Recovery mewakili suatu kawasan. Untuk mesin virtual yang sedang direplikasi antara dua kawasan Azure, kain utama mewakili wilayah Azure utama dan kain pemulihan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan Tipe Kain Pemulihan Situs Azure.
+Menentukan Tipe Kain azure Site Recovery.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

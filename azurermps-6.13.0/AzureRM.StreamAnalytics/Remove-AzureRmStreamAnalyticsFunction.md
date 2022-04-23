@@ -10,8 +10,8 @@ ms.openlocfilehash: 4429142b19e64939b9fcc90d56c80f67c5296c15
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141923526"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159165"
 ---
 # Remove-AzureRmStreamAnalyticsFunction
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

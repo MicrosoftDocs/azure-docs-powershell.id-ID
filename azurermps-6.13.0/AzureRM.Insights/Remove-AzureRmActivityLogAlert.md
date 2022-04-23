@@ -10,8 +10,8 @@ ms.openlocfilehash: b4b77e0fc4b3eacf04a56f30b1e15761f46387f3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142140939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143162567"
 ---
 # Remove-AzureRmActivityLogAlert
 
@@ -195,7 +195,7 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

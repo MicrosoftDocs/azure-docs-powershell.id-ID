@@ -9,8 +9,8 @@ ms.openlocfilehash: 2b27f165cc371604108f56da6f36030d35b51aeb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141898497"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143186777"
 ---
 # Remove-AzVMSecret
 
@@ -129,6 +129,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

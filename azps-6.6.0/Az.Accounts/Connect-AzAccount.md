@@ -9,8 +9,8 @@ ms.openlocfilehash: 12865bc837352de64f85d9c529533fe77d899e39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142275775"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143204201"
 ---
 # Connect-AzAccount
 
@@ -727,6 +727,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.Core.PSAzureProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

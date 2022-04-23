@@ -9,8 +9,8 @@ ms.openlocfilehash: 84160b8cab8c90b8273c0ee342254d9c5595e3d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142317983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143175311"
 ---
 # Move-AzRecoveryServicesBackupRecoveryPoint
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

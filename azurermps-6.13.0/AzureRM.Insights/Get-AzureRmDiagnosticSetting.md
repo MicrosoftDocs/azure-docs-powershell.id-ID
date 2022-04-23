@@ -10,8 +10,8 @@ ms.openlocfilehash: 2b70fd58bd0b51e03079b1c24665b67ac3ad3a2d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141968278"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143162711"
 ---
 # Get-AzureRmDiagnosticSetting
 
@@ -105,7 +105,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSServiceDiagnosticSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
