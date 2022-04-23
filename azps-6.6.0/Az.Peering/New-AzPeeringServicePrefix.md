@@ -9,8 +9,8 @@ ms.openlocfilehash: 0e72f19dd5679fedba01db91c171e2ca42f280b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141798170"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143252963"
 ---
 # New-AzPeeringServicePrefix
 
@@ -275,6 +275,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeeringServicePrefix
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

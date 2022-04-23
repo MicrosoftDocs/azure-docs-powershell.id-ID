@@ -9,13 +9,13 @@ ms.openlocfilehash: cd9682bc970f64efc296577699b35a1379b0ccff
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175294"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277209"
 ---
 # Get-AzRecoveryServicesAsrEvent
 
 ## SYNOPSIS
-Mendapatkan detail acara Azure Site Recovery dalam kubah.
+Mendapatkan detail acara azure Site Recovery di kubah.
 
 ## SYNTAX
 
@@ -256,6 +256,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASREvent
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

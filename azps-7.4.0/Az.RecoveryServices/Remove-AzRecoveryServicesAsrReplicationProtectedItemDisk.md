@@ -9,8 +9,8 @@ ms.openlocfilehash: 3c02c167137ebe6b1b9895145145e0205767ea85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994410"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143276885"
 ---
 # Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
@@ -179,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

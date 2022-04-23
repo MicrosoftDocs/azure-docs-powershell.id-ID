@@ -9,8 +9,8 @@ ms.openlocfilehash: 60ed62e793c9628a8ec968c6a1de2948c811261e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141849650"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143244359"
 ---
 # Get-AzNetAppFilesQuotaLimit
 
@@ -103,6 +103,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesSubscriptionQuotaLimit
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

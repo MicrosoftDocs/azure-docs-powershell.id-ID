@@ -9,8 +9,8 @@ ms.openlocfilehash: 9cc93be8199fc369eccb862d21b3901c0f72c50b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988590"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143268450"
 ---
 # Get-AzWebAppSlotTriggeredWebJobHistory
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20210201.ITriggeredJobHistory
 
-## CATATAN
+## NOTES
 
 ALIAS
 

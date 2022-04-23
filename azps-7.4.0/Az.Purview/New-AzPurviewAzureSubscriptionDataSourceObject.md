@@ -9,8 +9,8 @@ ms.openlocfilehash: b92e761b17ac914c9ad387e9a636186a83b8480b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277425"
 ---
 # New-AzPurviewAzureSubscriptionDataSourceObject
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureSubscriptionDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

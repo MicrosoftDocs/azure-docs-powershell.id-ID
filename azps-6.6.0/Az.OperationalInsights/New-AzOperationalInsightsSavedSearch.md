@@ -10,8 +10,8 @@ ms.openlocfilehash: 5994a8bf03ff2d984fe1e76b8b082b2e73084eaa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142226575"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143253377"
 ---
 # New-AzOperationalInsightsSavedSearch
 
@@ -270,7 +270,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Net.httpStatusCode
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,16 +9,16 @@ ms.openlocfilehash: c38806b487913cb242fb18e304796076d8153db0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142475747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143300681"
 ---
 # Get-AzDevSpacesController
 
 ## SYNOPSIS
-Dapatkan atau cantumkan pengontrol Azure DevSpaces.
+Mendapatkan atau mencantumkan pengontrol Azure DevSpaces.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.devspaces/get-azdevspacescontroller) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devspaces/get-azdevspacescontroller) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzDevSpacesController [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan pengontrol Azure DevSpaces.
+Mendapatkan atau mencantumkan pengontrol Azure DevSpaces.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Name        Resource Group  Location  Provisioning State
 devSpaceControllerName   devSpaceResourceGroup     eastus    Succeeded
 ```
 
-Cantumkan semua pengontrol dalam langganan.
+Mencantumkan semua pengontrol dalam langganan.
 
 ### Contoh 2
 ```powershell
@@ -78,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pengontrol DevSpaces.
 
 ```yaml
@@ -121,16 +121,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.DevSpaces.Models.PSController
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

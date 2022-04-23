@@ -9,8 +9,8 @@ ms.openlocfilehash: fbfc3a501c7712b51cfd890aa5a3ce6420db0b3e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142298257"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143294417"
 ---
 # Remove-AzSqlServerTrustGroup
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerTrustGroup.Model.AzureSqlServerTrustGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

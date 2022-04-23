@@ -10,8 +10,8 @@ ms.openlocfilehash: 278a5ad5107c05e0eb3f63a2fcc70e16a00abab6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141951909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143253881"
 ---
 # Reset-AzVpnGateway
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

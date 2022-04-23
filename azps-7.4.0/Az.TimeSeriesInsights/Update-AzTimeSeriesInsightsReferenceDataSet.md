@@ -9,8 +9,8 @@ ms.openlocfilehash: 62a8cf341bd54308d12d03f18b26b4ac874da39c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142000451"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143269127"
 ---
 # Update-AzTimeSeriesInsightsReferenceDataSet
 
@@ -211,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.IReferenceDataSetResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

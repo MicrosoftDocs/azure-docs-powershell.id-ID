@@ -9,8 +9,8 @@ ms.openlocfilehash: e238f46bccd25d63d0b34a4d35aea70f7bfb7f8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430437"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277497"
 ---
 # New-AzPurviewAzureStorageDataSourceObject
 
@@ -30,7 +30,7 @@ Buat objek dalam memori untuk AzureStorageDataSource.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek sumber data Azure Storage
+### Contoh 1: Membuat objek sumber data Penyimpanan Azure
 ```powershell
 PS C:\> New-AzPurviewAzureStorageDataSourceObject -Kind 'AzureStorage' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -Endpoint 'https://bnsrpause.blob.core.windows.net'
 
@@ -50,7 +50,7 @@ Scan                     :
 SubscriptionId           :
 ```
 
-Membuat objek sumber data Azure Storage
+Membuat objek sumber data Penyimpanan Azure
 
 ## PARAMETERS
 
@@ -175,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureStorageDataSource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

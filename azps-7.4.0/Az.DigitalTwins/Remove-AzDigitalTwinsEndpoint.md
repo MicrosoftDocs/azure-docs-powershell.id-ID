@@ -9,8 +9,8 @@ ms.openlocfilehash: 54c7ce38dca9383d1aada85de9e19d59b6fd719b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837747"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143287685"
 ---
 # Remove-AzDigitalTwinsEndpoint
 
@@ -231,7 +231,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsEndpointResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

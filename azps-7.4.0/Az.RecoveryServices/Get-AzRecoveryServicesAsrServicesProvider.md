@@ -9,8 +9,8 @@ ms.openlocfilehash: 001e3167a8f3181bea433eddd1d87452c8304841
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277083"
 ---
 # Get-AzRecoveryServicesAsrServicesProvider
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

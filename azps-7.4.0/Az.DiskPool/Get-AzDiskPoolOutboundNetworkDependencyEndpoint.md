@@ -9,8 +9,8 @@ ms.openlocfilehash: a8bd11ff6fd5cac431ff549cd2b459c38cc77ec1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423206"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143287649"
 ---
 # Get-AzDiskPoolOutboundNetworkDependencyEndpoint
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IOutboundEnvironmentEndpoint
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: f12bc8748108f6de8939768298c9231b8f51ae98
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141803624"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143300573"
 ---
 # Get-AzIoTDeviceProvisioningServiceLinkedHub
 
@@ -179,6 +179,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSIotHubDefinitions
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: c6e05da8f72dda2239cb86d042fd41c0b072e208
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142227259"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143253863"
 ---
 # Set-AzApplicationGatewayRewriteRuleSet
 
@@ -115,7 +115,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

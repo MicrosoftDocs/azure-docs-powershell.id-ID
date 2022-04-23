@@ -9,8 +9,8 @@ ms.openlocfilehash: bc45853a68a9d97f7a901bb8d26bf5167036cf66
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232875"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143300501"
 ---
 # New-AzDigitalTwinsDigitalTwinsIdentityObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "142232875"
 Membuat objek dalam memori untuk DigitalTwinsIdentity
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsdigitaltwinsidentityobject) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsdigitaltwinsidentityobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Membuat objek dalam memori untuk DigitalTwinsIdentity
 
 ## EXAMPLES
 
-### Contoh 1: Create A DigitalTwinsIdentityObject
+### Contoh 1: Membuat DigitalTwinsIdentityObject
 ```powershell
 PS C:\> New-AzDigitalTwinsDigitalTwinsIdentityObject -Id '************' -Location eastus
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.DigitalTwinsIdentity
 
-## CATATAN
+## NOTES
 
 ALIAS
 

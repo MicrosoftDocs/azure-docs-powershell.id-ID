@@ -10,8 +10,8 @@ ms.openlocfilehash: 5448923c15ff7eddfc007ed38315f05cf6e68044
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434651"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143268227"
 ---
 # Restore-AzWebAppBackup
 
@@ -239,6 +239,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

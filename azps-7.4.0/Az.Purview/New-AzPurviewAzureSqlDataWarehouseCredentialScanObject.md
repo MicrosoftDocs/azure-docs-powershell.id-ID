@@ -9,8 +9,8 @@ ms.openlocfilehash: b719443c770d8ca39a6156bd78be21409f2935b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994739"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277659"
 ---
 # New-AzPurviewAzureSqlDataWarehouseCredentialScanObject
 
@@ -222,7 +222,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.AzureSqlDataWarehouseCredentialScan
 
-## CATATAN
+## NOTES
 
 ALIAS
 

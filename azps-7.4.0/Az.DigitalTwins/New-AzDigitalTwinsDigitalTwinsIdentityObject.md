@@ -9,8 +9,8 @@ ms.openlocfilehash: 678afed3a3c99e5b2475636f6788da77ff377b4f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997883"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143287721"
 ---
 # New-AzDigitalTwinsDigitalTwinsIdentityObject
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.DigitalTwinsIdentity
 
-## CATATAN
+## NOTES
 
 ALIAS
 

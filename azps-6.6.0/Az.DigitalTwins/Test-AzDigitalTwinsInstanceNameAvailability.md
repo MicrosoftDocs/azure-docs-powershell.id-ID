@@ -9,8 +9,8 @@ ms.openlocfilehash: 91bfbf5afd6a98d6e00b6db6900c53328ae64f17
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232785"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143300483"
 ---
 # Test-AzDigitalTwinsInstanceNameAvailability
 
@@ -18,7 +18,7 @@ ms.locfileid: "142232785"
 Periksa apakah nama DigitalTwinsInstance tersedia.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/test-azdigitaltwinsinstancenameavailability) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/test-azdigitaltwinsinstancenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Test-AzDigitalTwinsInstanceNameAvailability -Location <String> -Name <String> [-
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Check
+### Centang 
 ```
 Test-AzDigitalTwinsInstanceNameAvailability -Location <String>
  -DigitalTwinsInstanceCheckName <ICheckNameRequest> [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -DigitalTwinsInstanceCheckName
-Hasilnya dikembalikan dari permintaan ketersediaan nama pemeriksaan database.
-Untuk membangun, lihat bagian CATATAN untuk properti DIGITALTWINSINSTANCECHECKNAME dan membuat tabel hash.
+Hasil yang dikembalikan dari permintaan ketersediaan nama pemeriksaan database.
+Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSINSTANCECHECKNAME dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.ICheckNameRequest
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -140,7 +140,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -170,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.ICheckNameResult
 
-## CATATAN
+## NOTES
 
 ALIAS
 

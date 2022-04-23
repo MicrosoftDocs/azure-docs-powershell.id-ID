@@ -9,8 +9,8 @@ ms.openlocfilehash: 5e3b121114d8f5c160b6cfe6f5b6166f9e30e2aa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837680"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143287541"
 ---
 # Start-AzDiskPool
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

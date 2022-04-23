@@ -9,13 +9,13 @@ ms.openlocfilehash: f2ccd0381a5bb8736e2f1f60a130af0757cd8cc5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430367"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143277281"
 ---
 # New-AzPurviewTrigger
 
 ## SYNOPSIS
-Membuat contoh pemicu
+Membuat instans pemicu
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ New-AzPurviewTrigger -Endpoint <String> -DataSourceName <String> -ScanName <Stri
 ```
 
 ## DESCRIPTION
-Membuat contoh pemicu
+Membuat instans pemicu
 
 ## EXAMPLES
 
-### Contoh 1: Membuat jadwal pemicu untuk menjalankan pemindaian
+### Contoh 1: Membuat jadwal pemicu untuk eksekusi pemindaian
 ```powershell
 PS C:\> $obj = New-AzPurviewTriggerObject -RecurrenceEndTime '7/20/2022 12:00:00 AM' -RecurrenceStartTime '2/17/2022 1:32:00 PM' -Interval 1 -RecurrenceFrequency 'Month' -ScanLevel 'Full' -ScheduleHour $(9) -ScheduleMinute $(0) -ScheduleMonthDay $(10)
 New-AzPurviewTrigger -Endpoint https://parv-brs-2.purview.azure.com/ -DataSourceName 'DataScanTestData-Parv' -ScanName 'Scan-6HK' -Body $obj
@@ -57,13 +57,13 @@ ScheduleMonthlyOccurrence  :
 ScheduleWeekDay            :
 ```
 
-Buat pemicu untuk pemindaian penuh mulai 02/17/22 13:31 UTC dan berakhir 20/7/2022 12:00:00, terjadi setiap 1 bulan, pada tanggal 10 bulan, pukul 09:00 UTC
+Buat pemicu untuk pemindaian penuh mulai 02/17/22 13:31 UTC dan berakhir 20/7/2022 12:00:00, terjadi setiap 1 bulan, pada tanggal 10 bulan, pukul 09.00 UTC
 
 ## PARAMETERS
 
 ### -Isi
 .
-Untuk membangun, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.ITrigger
@@ -138,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -180,7 +180,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.ITrigger
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -189,7 +189,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TUBUH <ITrigger>: .
+ISI <ITrigger>: .
   - `[IncrementalScanStartTime <DateTime?>]`: 
   - `[Interval <Int32?>]`: 
   - `[RecurrenceEndTime <DateTime?>]`: 

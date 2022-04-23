@@ -9,8 +9,8 @@ ms.openlocfilehash: 0c89a2d50e9f7ae657ce123d320129d613175954
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168898"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143287379"
 ---
 # Get-AzDnsForwardingRulesetVirtualNetworkLink
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.IVirtualNetworkLink
 
-## CATATAN
+## NOTES
 
 ALIAS
 
