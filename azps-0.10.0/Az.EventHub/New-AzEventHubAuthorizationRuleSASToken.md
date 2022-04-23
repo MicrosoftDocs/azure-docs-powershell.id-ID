@@ -9,8 +9,8 @@ ms.openlocfilehash: 85155804c128b67a77e458bb68f04155499ed31a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142329209"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143351531"
 ---
 # New-AzEventHubAuthorizationRuleSASToken
 
@@ -170,6 +170,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessSignatureAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

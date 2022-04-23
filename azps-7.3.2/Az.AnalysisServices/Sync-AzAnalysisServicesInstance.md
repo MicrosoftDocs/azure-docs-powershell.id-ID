@@ -9,8 +9,8 @@ ms.openlocfilehash: 0c7a53162a2ffade7b00c8a5b70919e8559a0b78
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141793184"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143352370"
 ---
 # Sync-AzAnalysisServicesInstance
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AnalysisServices.Dataplane.Models.ScaleOutServerDatabaseSyncDetails
 
-## CATATAN
+## NOTES
 
 Alias: Sync-AzAsInstance
 

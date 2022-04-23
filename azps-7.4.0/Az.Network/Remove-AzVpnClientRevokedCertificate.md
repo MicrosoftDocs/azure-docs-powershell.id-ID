@@ -10,8 +10,8 @@ ms.openlocfilehash: 7bd7947bc3a0aa57a499cc61d07c464b58a957d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172546"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143313047"
 ---
 # Remove-AzVpnClientRevokedCertificate
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 
 ### -Sidik jari
 Menentukan pengidentifikasi unik sertifikat yang dihapus.
-Anda bisa mengembalikan informasi sidik jari untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell yang mirip dengan ini: `Get-ChildItem -Path "Cert:\LocalMachine\Root"`
+Anda bisa mengembalikan informasi sidik jari untuk sertifikat Anda dengan menggunakan perintah Windows PowerShell seperti ini:`Get-ChildItem -Path "Cert:\LocalMachine\Root"`
 Perintah sebelumnya mengembalikan informasi untuk semua sertifikat Komputer Lokal yang ditemukan di penyimpanan sertifikat Akar.
 
 ```yaml
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

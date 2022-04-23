@@ -9,8 +9,8 @@ ms.openlocfilehash: 3247c6198104acaf10003f542ead38d16df5e055
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142069375"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143335961"
 ---
 # New-AzIotHubImportDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "142069375"
 Membuat pekerjaan perangkat impor baru.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubimportdevice) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubimportdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzIotHubImportDevice [-ResourceGroupName] <String> [-Name] <String> [-InputB
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat impor baru untuk IotHub.
-Tindakan ini akan mengimpor semua perangkat ke IotHub dari kontainer yang ditentukan. Lihat artikel berikut tentang cara menghasilkan URI SAS.
+Ini akan mengimpor semua perangkat ke IotHub dari kontainer yang ditentukan. Lihat artikel berikut tentang cara membuat URI SAS.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputBlobContainerUri
-Input Blob Container Uri untuk FileUpload
+Input Uri Kontainer Blob untuk FileUpload
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -119,8 +119,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubJobResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

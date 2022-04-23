@@ -10,8 +10,8 @@ ms.openlocfilehash: 36fd9813523a5977c1981e6de54384cf71de7dc5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141874904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143351747"
 ---
 # Test-AzVMAEMExtension
 
@@ -147,7 +147,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Extension.AEM.AEMTestResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

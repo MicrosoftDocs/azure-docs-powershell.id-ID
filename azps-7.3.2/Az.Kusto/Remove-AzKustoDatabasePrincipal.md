@@ -9,8 +9,8 @@ ms.openlocfilehash: e7bfb097909c37f085c2daa9c41133aac9a258dd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787820"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143335295"
 ---
 # Remove-AzKustoDatabasePrincipal
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDatabasePrincipal
 
-## CATATAN
+## NOTES
 
 ALIAS
 

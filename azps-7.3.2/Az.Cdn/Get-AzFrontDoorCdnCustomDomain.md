@@ -9,8 +9,8 @@ ms.openlocfilehash: fa6b5b2f94685d4afae713ab6c305a836a28fa84
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142259683"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143367299"
 ---
 # Get-AzFrontDoorCdnCustomDomain
 
@@ -155,6 +155,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdCustomDomain
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

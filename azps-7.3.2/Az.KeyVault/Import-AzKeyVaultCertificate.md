@@ -10,8 +10,8 @@ ms.openlocfilehash: 6d6f086688d6153c0ed921a029eba354565fc5fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141851090"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143335619"
 ---
 # Import-AzKeyVaultCertificate
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

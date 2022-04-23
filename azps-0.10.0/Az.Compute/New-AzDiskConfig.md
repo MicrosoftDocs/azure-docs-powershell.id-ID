@@ -9,8 +9,8 @@ ms.openlocfilehash: 851687bdc00b25bd283433fbc00254380a8ef3a5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918255"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143351891"
 ---
 # New-AzDiskConfig
 
@@ -321,7 +321,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSDisk
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

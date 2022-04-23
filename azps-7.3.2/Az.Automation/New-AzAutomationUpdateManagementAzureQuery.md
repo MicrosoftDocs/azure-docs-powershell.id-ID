@@ -9,8 +9,8 @@ ms.openlocfilehash: 04ec5922c6a22d1ebc74e3331dfcb10ea58555fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141791744"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143367551"
 ---
 # New-AzAutomationUpdateManagementAzureQuery
 
@@ -203,6 +203,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.Automation.Model.UpdateManagement.AzureQueryProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 002a1cd0b76db7bbfee186c15f9e94834fc2eac6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141790340"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143367137"
 ---
 # Set-AzFrontDoorCdnOriginGroup
 
@@ -288,6 +288,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdOriginGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

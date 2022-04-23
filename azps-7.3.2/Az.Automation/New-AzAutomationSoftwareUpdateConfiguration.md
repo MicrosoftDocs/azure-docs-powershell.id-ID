@@ -9,8 +9,8 @@ ms.openlocfilehash: b3ebd82df948abc7a9ae40eb5085774002be4be5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142260763"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143359920"
 ---
 # New-AzAutomationSoftwareUpdateConfiguration
 
@@ -493,6 +493,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: d9f732a40b61687d7970fdf24f9f9f0f841b2cc7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811349"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143358713"
 ---
 # New-AzVMSqlServerKeyVaultCredentialConfig
 
@@ -154,7 +154,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.KeyVaultCredentialSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

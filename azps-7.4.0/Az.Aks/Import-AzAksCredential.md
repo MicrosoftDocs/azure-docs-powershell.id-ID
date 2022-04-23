@@ -9,8 +9,8 @@ ms.openlocfilehash: 1525eff4818d439efb617340f265436ff9573cbe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142423906"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143321273"
 ---
 # Import-AzAksCredential
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

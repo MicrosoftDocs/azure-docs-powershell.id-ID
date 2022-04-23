@@ -9,8 +9,8 @@ ms.openlocfilehash: ab380fc12f1cb3b3e04bbaab44f460534df1dfcd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142292803"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143335529"
 ---
 # Undo-AzKeyVaultCertificateRemoval
 
@@ -187,7 +187,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

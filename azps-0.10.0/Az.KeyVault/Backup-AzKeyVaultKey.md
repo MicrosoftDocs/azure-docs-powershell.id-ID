@@ -10,8 +10,8 @@ ms.openlocfilehash: d5fce3a4c70593b9478c0efa8afef29021797bb3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498103"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143351222"
 ---
 # Backup-AzKeyVaultKey
 
@@ -207,7 +207,7 @@ Cmdlet ini tidak menerima input apa pun.
 ### String
 Cmdlet mengembalikan jalur file output yang berisi cadangan kunci.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 5c30db1845fe135aad9ebb575a6b31f19e9598b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498175"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143351387"
 ---
 # Remove-AzIotHubMessageEnrichment
 
@@ -203,6 +203,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
