@@ -9,8 +9,8 @@ ms.openlocfilehash: 423a25c38b1fd84d6497752f3d3e52171501f6ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045523"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143356445"
 ---
 # Stop-AzVpnConnectionPacketCapture
 
@@ -283,7 +283,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnPacketCaptureResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

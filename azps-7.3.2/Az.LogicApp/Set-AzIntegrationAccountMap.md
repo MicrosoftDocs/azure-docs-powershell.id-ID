@@ -10,8 +10,8 @@ ms.openlocfilehash: bc564521d038038bb82c51105590a2296fc530a9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142214929"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143334809"
 ---
 # Set-AzIntegrationAccountMap
 
@@ -264,7 +264,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.IntegrationAccountMap
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

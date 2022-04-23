@@ -9,8 +9,8 @@ ms.openlocfilehash: f16b49d91496cab5e8997a37fa114db5d663c4f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142372553"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143334071"
 ---
 # Remove-AzMarketplacePrivateStoreOffer
 
@@ -143,6 +143,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

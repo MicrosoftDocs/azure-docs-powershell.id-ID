@@ -10,8 +10,8 @@ ms.openlocfilehash: 3f474f6a98fb25bd2b3b3e6e73ff520da1c9625f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142045235"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143356373"
 ---
 # Set-AzNotificationHubsNamespaceAuthorizationRule
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NotificationHubs.Models.SharedAccessAuthorizationRuleAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

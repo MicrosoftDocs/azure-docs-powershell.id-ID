@@ -10,8 +10,8 @@ ms.openlocfilehash: cf1b4cb85bc0168e713dc622640bd09ae7494c9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431014"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143312525"
 ---
 # Stop-AzApplicationGateway
 
@@ -95,7 +95,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

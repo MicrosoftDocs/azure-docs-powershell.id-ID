@@ -10,8 +10,8 @@ ms.openlocfilehash: 066e2f0eb761826ad0a95816bb3a5cc7643c282a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142421909"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143312795"
 ---
 # Set-AzExpressRouteCrossConnection
 
@@ -225,7 +225,7 @@ Parameter 'ExpressRouteCrossConnection' menerima nilai tipe 'PSExpressRouteCross
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

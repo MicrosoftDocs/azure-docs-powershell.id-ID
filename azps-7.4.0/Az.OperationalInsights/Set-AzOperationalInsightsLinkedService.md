@@ -9,8 +9,8 @@ ms.openlocfilehash: c8ce3596a3bbe951638fbc5c852235d69cabf010
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175757"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143312003"
 ---
 # Set-AzOperationalInsightsLinkedService
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSLinkedService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

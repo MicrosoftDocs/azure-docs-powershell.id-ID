@@ -9,8 +9,8 @@ ms.openlocfilehash: d5fcfbcaf229a2c3949c2d3fd54a650ef64cc138
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261177"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143365499"
 ---
 # Remove-AzApplicationInsightsWebTest
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

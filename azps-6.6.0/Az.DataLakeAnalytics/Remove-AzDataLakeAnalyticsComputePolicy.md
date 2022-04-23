@@ -9,8 +9,8 @@ ms.openlocfilehash: 27a54fa6f64c68183db19c7e541158684ec7b393
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142271581"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143350091"
 ---
 # Remove-AzDataLakeAnalyticsComputePolicy
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
