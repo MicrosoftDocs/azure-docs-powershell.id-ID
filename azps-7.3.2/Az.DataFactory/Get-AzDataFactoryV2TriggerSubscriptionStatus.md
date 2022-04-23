@@ -9,8 +9,8 @@ ms.openlocfilehash: b4f2dd82ef2001b410e3ec1c43a11d573405047e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141895688"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143245529"
 ---
 # Get-AzDataFactoryV2TriggerSubscriptionStatus
 
@@ -160,7 +160,7 @@ Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerSubscriptionStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

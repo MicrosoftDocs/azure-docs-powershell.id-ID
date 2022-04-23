@@ -9,13 +9,13 @@ ms.openlocfilehash: c71f8284cc3b1a2648e3523c77f0e9e2dd2d3876
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213165"
 ---
 # Set-AzureRmSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
-Mengubah konfigurasi Aturan Jaringan Virtual Azure SQL Server.
+Mengubah konfigurasi Aturan Virtual Network Server Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Set-AzureRmSqlServerVirtualNetworkRule -VirtualNetworkRuleName <String> -Virtual
 ```
 
 ## DESCRIPTION
-Perintah ini mengubah konfigurasi Aturan Jaringan Virtual Azure SQL Server.
+Perintah ini mengubah konfigurasi Aturan Virtual Network Server Azure SQL.
 Untuk mengontrol kumpulan aturan jaringan virtual di server, gunakan 'Add-AzureRmSqlServerVirtualNetworkRule' dan 'Remove-AzureRmSqlServerVirtualNetworkRule' sebagai gantinya.
 
 ## EXAMPLES
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRuleName
-Nama Aturan Jaringan Virtual Azure Sql Server.
+Nama Aturan Virtual Network Azure Sql Server.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkSubnetId
-Id Subnet Jaringan Virtual untuk aturan tersebut.
+Id Subnet Virtual Network untuk aturan tersebut.
 
 ```yaml
 Type: System.String
@@ -189,6 +189,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.VirtualNetworkRule.Model.AzureSqlServerVirtualNetworkRuleModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

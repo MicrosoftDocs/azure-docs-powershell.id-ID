@@ -9,8 +9,8 @@ ms.openlocfilehash: 22d2e4281ccc5c10cea9ef4c5db183b17235b3d3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141792410"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187435"
 ---
 # Sync-AzApiManagementKeyVaultSecret
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementKeyVaultEntity
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 268ea7342c8235e91688313d7280e794b3516574
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142298077"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143189711"
 ---
 # Stop-AzSqlElasticPoolActivity
 
@@ -188,6 +188,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolActivityModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

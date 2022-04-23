@@ -9,8 +9,8 @@ ms.openlocfilehash: 73f096c516bb285b89e45d90107ff6a3ad406dbf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142247083"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213093"
 ---
 # Remove-AzureRmStorageAccountNetworkRule
 
@@ -253,6 +253,6 @@ Parameter: VirtualNetworkRule (ByValue)
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSIpRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,13 +9,13 @@ ms.openlocfilehash: 465a40e384e5ea7240e0ced2a010c88529feb2f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059199"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143213129"
 ---
 # Add-AzureRmStorageContainerLegalHold
 
 ## SYNOPSIS
-Menambahkan tag penahanan legal ke wadah blob Penyimpanan
+Menambahkan tag penahanan legal ke wadah blob Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,36 +41,36 @@ Add-AzureRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmStorageContainerLegalHold** menambahkan tag penahanan legal ke wadah blob Penyimpanan
+Cmdlet **Add-AzureRmStorageContainerLegalHold** menambahkan tag penahanan legal ke wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan tag penahanan legal ke wadah blob Penyimpanan dengan nama akun penyimpanan dan nama kontainer
+### Contoh 1: Menambahkan tag penahanan legal ke wadah blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Add-AzureRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1,tag2 
 ```
 
-Perintah ini menambahkan tag penahanan legal ke wadah blob Penyimpanan dengan nama akun Penyimpanan dan nama kontainer.
+Perintah ini menambahkan tag penahanan legal ke wadah blob Storage dengan nama akun dan nama kontainer Storage.
 
-### Contoh 2: Menambahkan tag penahanan legal ke wadah blob Penyimpanan dengan objek Akun penyimpanan dan nama kontainer
+### Contoh 2: Menambahkan tag penahanan legal ke wadah blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzureRmStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Add-AzureRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1
 ```
 
-Perintah ini menambahkan tag penahanan legal ke wadah blob Penyimpanan dengan objek akun Penyimpanan dan nama kontainer.
+Perintah ini menambahkan tag penahanan legal ke wadah blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Menambahkan tag penahanan legal ke semua kontainer blob Penyimpanan dalam akun Penyimpanan dengan pipeline
+### Contoh 3: Menambahkan tag penahanan legal ke semua wadah blob Storage dalam akun Storage dengan pipeline
 ```
 PS C:\>Get-AzureRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Add-AzureRmStorageContainerLegalHold -Tag  tag1,tag2,tag3
 ```
 
-Perintah ini menambahkan tag penahanan legal ke semua kontainer blob Penyimpanan dalam akun Penyimpanan dengan pipeline.
+Perintah ini menambahkan tag penahanan legal ke semua wadah blob Storage dalam akun Storage dengan pipeline.
 
 ## PARAMETERS
 
 ### -Kontainer
-Objek wadah penyimpanan
+objek kontainer Storage
 
 ```yaml
 Type: PSContainer
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Objek akun penyimpanan
+objek akun Storage
 
 ```yaml
 Type: PSStorageAccount
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Nama Akun Penyimpanan.
+Storage Nama Akun.
 
 ```yaml
 Type: String
@@ -213,9 +213,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Management.Storage.Models.PSLegalHold
+### Microsoft.Azure.Commands.Management. Storage. Models.PSLegalHold
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 403c41de0359f2d857d2c86b772e4af419640f2a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142492019"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205857"
 ---
 # Remove-AzNetworkInterface
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

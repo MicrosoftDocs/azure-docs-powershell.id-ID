@@ -9,8 +9,8 @@ ms.openlocfilehash: 91bdce4b2c38ae7c2b2ef6afa344c7e42edda5ee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142500458"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143233523"
 ---
 # New-AzApplicationInsightsWebTest
 
@@ -588,7 +588,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.Api20180501Preview.IWebTest
 
-## CATATAN
+## NOTES
 
 ALIAS
 

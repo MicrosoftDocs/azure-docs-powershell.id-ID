@@ -9,8 +9,8 @@ ms.openlocfilehash: ec51b599d9f2ade21453ddf270f10505aff38092
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993071"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143233271"
 ---
 # New-AzAttestation
 
@@ -209,6 +209,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Attestation.Models.PSAttestation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

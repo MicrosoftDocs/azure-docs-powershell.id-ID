@@ -9,8 +9,8 @@ ms.openlocfilehash: ea63fe114a1c4afa17b9dcc2b92ebbaf98062a1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142228159"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143195327"
 ---
 # New-AzVHubRoute
 
@@ -233,7 +233,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVHubRoute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

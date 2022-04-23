@@ -9,8 +9,8 @@ ms.openlocfilehash: ffb7d33e534d0d37a74cbe9a39ceb6140d93ca1f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141940965"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143245799"
 ---
 # Remove-AzDataBoxEdgeStorageAccount
 
@@ -215,6 +215,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

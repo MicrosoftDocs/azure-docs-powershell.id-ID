@@ -9,8 +9,8 @@ ms.openlocfilehash: f4159132786ea263aa53fc8feba86631fa0353c6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141909723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143195525"
 ---
 # New-AzO365PolicyProperty
 
@@ -111,6 +111,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSO365PolicyProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

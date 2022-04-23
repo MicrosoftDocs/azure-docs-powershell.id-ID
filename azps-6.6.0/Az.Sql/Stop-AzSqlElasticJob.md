@@ -9,8 +9,8 @@ ms.openlocfilehash: 69080fc22e0726a9fe47b33bdd29a77185de1cae
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142298113"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143189837"
 ---
 # Stop-AzSqlElasticJob
 
@@ -229,6 +229,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobExecutionModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

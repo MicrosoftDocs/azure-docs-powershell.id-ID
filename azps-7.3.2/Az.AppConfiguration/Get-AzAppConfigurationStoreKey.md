@@ -9,8 +9,8 @@ ms.openlocfilehash: a8825094d8b71f30073cb720504f024be7146c25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141943809"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143187431"
 ---
 # Get-AzAppConfigurationStoreKey
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.Api20200601.IApiKey
 
-## CATATAN
+## NOTES
 
 ALIAS
 

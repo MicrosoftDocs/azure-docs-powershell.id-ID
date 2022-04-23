@@ -9,8 +9,8 @@ ms.openlocfilehash: d8c870a24817cc3ddad24cffd988fa7390a8545b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141789260"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143245835"
 ---
 # Remove-AzDataBoxEdgeOrder
 
@@ -200,6 +200,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeOrder
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
