@@ -9,8 +9,8 @@ ms.openlocfilehash: eb3450e0c5efd01f10870572e3d1ca072ab07172
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143171585"
 ---
 # Remove-AzConnectedPrivateLinkScope
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

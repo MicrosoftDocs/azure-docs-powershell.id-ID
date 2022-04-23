@@ -9,8 +9,8 @@ ms.openlocfilehash: 14b1c1179e9fee15f398c4518e446cf47396e660
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142099983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165044"
 ---
 # Get-AzureRmSnapshot
 
@@ -110,6 +110,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

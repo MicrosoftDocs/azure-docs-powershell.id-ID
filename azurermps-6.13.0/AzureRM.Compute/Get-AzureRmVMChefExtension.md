@@ -10,8 +10,8 @@ ms.openlocfilehash: 29d30bc039f826f4c2d56fde15286695187aabb5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141886824"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165039"
 ---
 # Get-AzureRmVMChefExtension
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineExtension
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

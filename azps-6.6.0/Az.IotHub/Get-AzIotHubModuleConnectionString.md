@@ -9,8 +9,8 @@ ms.openlocfilehash: 2e4611bbb873392d096e2d83cf7dd3225bcfc825
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141911973"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200421"
 ---
 # Get-AzIotHubModuleConnectionString
 
@@ -204,6 +204,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSModuleConnectionString
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

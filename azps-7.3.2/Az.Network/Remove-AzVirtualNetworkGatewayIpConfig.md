@@ -10,13 +10,13 @@ ms.openlocfilehash: 527e85957fcd554a3a87270d2326d157e820ff1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142255507"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143177471"
 ---
 # Remove-AzVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
-Menghapus Konfigurasi IP dari Gateway Virtual Network
+Menghapus Konfigurasi IP dari Gateway Jaringan Virtual
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgatewayipconfig) untuk informasi terbaru.
@@ -29,7 +29,7 @@ Remove-AzVirtualNetworkGatewayIpConfig -VirtualNetworkGateway <PSVirtualNetworkG
 ```
 
 ## DESCRIPTION
-Menghapus Konfigurasi IP dari Gateway Virtual Network
+Menghapus Konfigurasi IP dari Gateway Jaringan Virtual
 
 ## EXAMPLES
 
@@ -166,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

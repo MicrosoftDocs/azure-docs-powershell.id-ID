@@ -10,8 +10,8 @@ ms.openlocfilehash: c164d352256f84ea18c09b775c9a9639dbde7866
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142388916"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143164721"
 ---
 # Set-AzureRmVMSourceImage
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

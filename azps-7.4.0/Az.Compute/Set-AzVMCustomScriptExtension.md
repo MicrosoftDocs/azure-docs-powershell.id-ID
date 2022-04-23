@@ -10,8 +10,8 @@ ms.openlocfilehash: a9c65bdf78ec6272fb089cb2497b2dff3a5de925
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142180087"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143171765"
 ---
 # Set-AzVMCustomScriptExtension
 
@@ -560,7 +560,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

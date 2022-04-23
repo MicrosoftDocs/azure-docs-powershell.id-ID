@@ -7,8 +7,8 @@ ms.openlocfilehash: d5c9a3f694787110ef87f7bb7d51b2944b89e0e5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094769"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158583"
 ---
 # Get-AzureWebsiteLocation
 
@@ -63,7 +63,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

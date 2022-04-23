@@ -9,8 +9,8 @@ ms.openlocfilehash: 3ca88bf451b028bd52eec305399f8a4f773da456
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141903195"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143189549"
 ---
 # Update-AzSqlVMGroup
 
@@ -335,6 +335,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

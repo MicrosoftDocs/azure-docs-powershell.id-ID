@@ -7,8 +7,8 @@ ms.openlocfilehash: d5c22bbe74a1ef766cce6bcc119610e022ed5d14
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095309"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158931"
 ---
 # Disable-AzureServiceProjectRemoteDesktop
 
@@ -73,7 +73,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

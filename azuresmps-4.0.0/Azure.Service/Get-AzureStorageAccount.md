@@ -7,8 +7,8 @@ ms.openlocfilehash: edb4058998ecd0ee327dced446dd5ec8d51b5cc9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142094985"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143158715"
 ---
 # Get-AzureStorageAccount
 
@@ -133,7 +133,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### ManagementOperationContext
 
-## CATATAN
+## NOTES
 * Ketikkan `help node-dev` untuk mendapatkan bantuan tentang cmdlet terkait pengembangan Node.js. Ketikkan `help php-dev` untuk mendapatkan bantuan tentang cmdlet terkait pengembangan PHP.
 
 ## RELATED LINKS
