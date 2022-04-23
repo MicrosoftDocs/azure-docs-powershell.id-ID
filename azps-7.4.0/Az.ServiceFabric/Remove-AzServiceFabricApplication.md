@@ -9,8 +9,8 @@ ms.openlocfilehash: c93b77415d226f3075b1e0f481d7eceb9e95b995
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420589"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143308583"
 ---
 # Remove-AzServiceFabricApplication
 
@@ -218,6 +218,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

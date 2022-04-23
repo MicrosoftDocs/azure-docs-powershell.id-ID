@@ -9,13 +9,13 @@ ms.openlocfilehash: 3ac084c1fa90bdf754ae261a48b02b98ff805785
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998339"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288405"
 ---
 # Invoke-AzDataMigrationCutoverToSqlManagedInstance
 
 ## SYNOPSIS
-Mulai langsung untuk migrasi database online yang sedang berlangsung ke SQL Managed Instance.
+Mulai cutover untuk migrasi database online yang sedang berlangsung ke SQL Managed Instance.
 
 ## SYNTAX
 
@@ -26,11 +26,11 @@ Invoke-AzDataMigrationCutoverToSqlManagedInstance -ManagedInstanceName <String> 
 ```
 
 ## DESCRIPTION
-Mulai langsung untuk migrasi database online yang sedang berlangsung ke SQL Managed Instance.
+Mulai cutover untuk migrasi database online yang sedang berlangsung ke SQL Managed Instance.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai langsung untuk migrasi online yang sedang berlangsung yang ditentukan ke SQL Managed Instance
+### Contoh 1: Memulai cutover untuk migrasi online yang sedang berlangsung yang ditentukan ke SQL Managed Instance
 ```powershell
 $miMigration = Get-AzDataMigrationToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDatabase"
 Invoke-AzDataMigrationCutoverToSqlManagedInstance -ResourceGroupName "MyResourceGroup" -ManagedInstanceName "MyManagedInstance" -TargetDbName "MyDatabase" -MigrationOperationId $miMigration.MigrationOperationId
@@ -43,12 +43,12 @@ Name               Type                                       Kind  Provisioning
 MyDatabase         Microsoft.DataMigration/databaseMigrations SqlMi Completing        Completing
 ```
 
-Perintah ini memulai langsung untuk migrasi online yang sedang berlangsung tertentu ke SQL Managed Instance.
+Perintah ini memulai cutover untuk migrasi online yang sedang berlangsung yang ditentukan ke SQL Managed Instance.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang mengidentifikasi langganan Azure.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
@@ -183,8 +183,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -223,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

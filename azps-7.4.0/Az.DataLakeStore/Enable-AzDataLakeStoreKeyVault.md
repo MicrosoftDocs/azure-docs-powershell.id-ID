@@ -9,13 +9,13 @@ ms.openlocfilehash: a0bb51ae63e34ab3a0902041fde54810fbeb597c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169419"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143288513"
 ---
 # Enable-AzDataLakeStoreKeyVault
 
 ## SYNOPSIS
-Mencoba mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Data Lake Store yang ditentukan.
+Mencoba mengaktifkan pengguna yang dikelola Key Vault untuk enkripsi akun Penyimpanan Data Lake yang ditentukan.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Enable-AzDataLakeStoreKeyVault [-Account] <String> [-ResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzDataLakeStoreKeyVault** berusaha mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Data Lake Store yang ditentukan.
+Cmdlet **Enable-AzDataLakeStoreKeyVault** berusaha mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Penyimpanan Data Lake yang ditentukan.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Enable-AzDataLakeStoreKeyVault** berusaha mengaktifkan Key Vault yang d
 Enable-AzDataLakeStoreKeyVault -Name "ContosoADLS"
 ```
 
-Perintah ini mencoba mengaktifkan Key Vault yang dikelola pengguna untuk akun Data Lake Store bernama ContosoADLS.
+Perintah ini berusaha mengaktifkan Key Vault yang dikelola pengguna untuk akun Data Lake Store bernama ContosoADLS.
 
 ## PARAMETERS
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
