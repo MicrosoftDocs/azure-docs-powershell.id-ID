@@ -10,8 +10,8 @@ ms.openlocfilehash: 4c9d2b8fc138b42417bbb522d3e9acca2455db2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141870422"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143095319"
 ---
 # Set-AzVM
 
@@ -250,7 +250,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSAzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

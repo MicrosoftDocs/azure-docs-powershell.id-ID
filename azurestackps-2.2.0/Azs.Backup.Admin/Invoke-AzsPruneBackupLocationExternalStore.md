@@ -7,8 +7,8 @@ ms.openlocfilehash: f0a4dc86138ea59ba26ae0d435c4ad39a2cba7e1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141812300"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143100251"
 ---
 # Invoke-AzsPruneBackupLocationExternalStore
 
@@ -267,7 +267,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IPruneModel
 
-## CATATAN
+## NOTES
 
 ALIAS
 

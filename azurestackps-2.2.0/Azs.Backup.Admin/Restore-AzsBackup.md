@@ -7,8 +7,8 @@ ms.openlocfilehash: 784d61c9ace843f69ea0af89ac3f102bbd773e9e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141919533"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143100233"
 ---
 # Restore-AzsBackup
 
@@ -315,7 +315,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

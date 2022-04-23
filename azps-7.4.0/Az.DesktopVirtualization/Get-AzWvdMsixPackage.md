@@ -9,8 +9,8 @@ ms.openlocfilehash: 69d71cd2cc036d8578f2da9c748e37ade7070a57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837987"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143061965"
 ---
 # Get-AzWvdMsixPackage
 
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IMsixPackage
 
-## CATATAN
+## NOTES
 
 ALIAS
 

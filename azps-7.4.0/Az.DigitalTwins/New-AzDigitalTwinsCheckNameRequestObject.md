@@ -9,8 +9,8 @@ ms.openlocfilehash: 2fbee35e8645a281a56d26a858a2bc5a4eea566d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143061497"
 ---
 # New-AzDigitalTwinsCheckNameRequestObject
 
@@ -67,7 +67,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.CheckNameRequest
 
-## CATATAN
+## NOTES
 
 ALIAS
 
