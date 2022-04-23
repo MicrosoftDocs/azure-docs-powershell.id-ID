@@ -9,8 +9,8 @@ ms.openlocfilehash: 52cc9978e117b8d551059a09e49c7a57ff715fa8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141801932"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143346527"
 ---
 # Remove-AzKustoDatabase
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

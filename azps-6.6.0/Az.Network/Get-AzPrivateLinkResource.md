@@ -9,8 +9,8 @@ ms.openlocfilehash: 2f30318214fafefb88bcd335cc9b2782b5871158
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142268971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143346257"
 ---
 # Get-AzPrivateLinkResource
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

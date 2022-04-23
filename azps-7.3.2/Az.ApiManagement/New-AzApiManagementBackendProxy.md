@@ -9,8 +9,8 @@ ms.openlocfilehash: e5f4b23ca5b62913d9913d2d705cf5a0e0650574
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141899127"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143365733"
 ---
 # New-AzApiManagementBackendProxy
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementBackendProxy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

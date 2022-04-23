@@ -9,8 +9,8 @@ ms.openlocfilehash: e60a998506f6f2a631129042672b9445476057f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142230697"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143346617"
 ---
 # Get-AzKustoClusterPrincipalAssignment
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IClusterPrincipalAssignment
 
-## CATATAN
+## NOTES
 
 ALIAS
 

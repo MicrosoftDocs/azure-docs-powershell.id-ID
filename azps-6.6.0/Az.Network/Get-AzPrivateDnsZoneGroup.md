@@ -9,8 +9,8 @@ ms.openlocfilehash: d9b476dc10b6cb9ee27c0b1ed9e24aeabc89988a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142125269"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143346239"
 ---
 # Get-AzPrivateDnsZoneGroup
 
@@ -129,6 +129,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSPrivateDnsZoneGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
