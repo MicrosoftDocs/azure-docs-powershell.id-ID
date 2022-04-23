@@ -9,8 +9,8 @@ ms.openlocfilehash: 7d4f4b4b7830d6723b679f4a39ac40f38a4bf6cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837312"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143227835"
 ---
 # Remove-AzEventGridSubscription
 
@@ -354,6 +354,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

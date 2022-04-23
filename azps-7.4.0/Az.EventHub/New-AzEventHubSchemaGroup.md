@@ -9,8 +9,8 @@ ms.openlocfilehash: f69f37a1f0e599473124c9130ee245d987a1b4fd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997691"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143227745"
 ---
 # New-AzEventHubSchemaGroup
 
@@ -201,6 +201,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubsSchemaRegistryAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
