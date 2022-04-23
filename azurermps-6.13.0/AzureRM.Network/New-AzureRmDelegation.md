@@ -9,8 +9,8 @@ ms.openlocfilehash: 9912d41cd9e2600c55d378fbb88510a0defaaa85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385755"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143217413"
 ---
 # New-AzureRmDelegation
 
@@ -101,7 +101,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.Network.Models.PSDelegation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 [Add-AzureRmDelegation](./Add-AzureRmDelegation.md)

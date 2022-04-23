@@ -10,8 +10,8 @@ ms.openlocfilehash: d43ec874af02d57abedddb1b49b3cc8723af5c2e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142056179"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205353"
 ---
 # Get-AzRoleDefinition
 
@@ -152,7 +152,7 @@ Parameter: Lingkup (ByValue)
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
-## CATATAN
+## NOTES
 Kata kunci: azure, Az, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Template, penyebaran
 
 ## RELATED LINKS

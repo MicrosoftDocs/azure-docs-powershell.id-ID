@@ -9,8 +9,8 @@ ms.openlocfilehash: 798882d3962292f50d86aef09a08190e885f2dbc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141908769"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143193689"
 ---
 # Update-AzVirtualHubVnetConnection
 
@@ -264,7 +264,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

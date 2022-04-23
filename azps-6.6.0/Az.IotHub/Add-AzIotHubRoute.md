@@ -9,8 +9,8 @@ ms.openlocfilehash: 3c99bfe2f7f27dd268962c2763037c75f7e5488c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141802634"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200547"
 ---
 # Add-AzIotHubRoute
 
@@ -258,6 +258,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSRouteMetadata
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 73c1d0077c1869a258bef39c3cafba03d67a0498
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142050473"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200781"
 ---
 # Remove-AzHDInsightPersistedScriptAction
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

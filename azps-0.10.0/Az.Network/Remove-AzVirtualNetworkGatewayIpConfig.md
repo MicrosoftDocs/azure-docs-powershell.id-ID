@@ -10,8 +10,8 @@ ms.openlocfilehash: b4503c94b750763fa7371f1c5297b0c181e32054
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916167"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205659"
 ---
 # Remove-AzVirtualNetworkGatewayIpConfig
 
@@ -119,7 +119,7 @@ Parameter 'VirtualNetworkGateway' menerima nilai tipe 'PSVirtualNetworkGateway' 
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

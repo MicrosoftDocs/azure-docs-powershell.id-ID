@@ -10,8 +10,8 @@ ms.openlocfilehash: 1342722b9bccfaee5186a51f4cddb73c6437fc8c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426474"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143172521"
 ---
 # Add-AzVMNetworkInterface
 
@@ -173,7 +173,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

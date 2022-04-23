@@ -7,8 +7,8 @@ ms.openlocfilehash: b6c8d768d5c3306b6027b3bfaf242b4c66b3f00e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142095273"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212159"
 ---
 # Export-AzureVM
 
@@ -147,7 +147,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

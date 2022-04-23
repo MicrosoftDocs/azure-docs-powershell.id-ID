@@ -9,8 +9,8 @@ ms.openlocfilehash: 9ff7e258537fd832a282e1bcc83cd102306fb709
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142050761"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200961"
 ---
 # New-AzFrontDoorWafManagedRuleOverrideObject
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSAzureManagedRuleOverride
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

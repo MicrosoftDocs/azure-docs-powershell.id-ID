@@ -7,8 +7,8 @@ ms.openlocfilehash: 319cf07b7008737342b9ff575ef740bcdce1d80a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141922137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212031"
 ---
 # Get-AzureEndpoint
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

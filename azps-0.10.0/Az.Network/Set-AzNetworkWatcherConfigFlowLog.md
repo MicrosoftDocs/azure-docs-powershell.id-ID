@@ -9,8 +9,8 @@ ms.openlocfilehash: f250615837f4953f63a4c5ff5f0a0ea965691856
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092519"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205569"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
@@ -253,7 +253,7 @@ System.String System.Boolean System.Int32
 
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
 
 ## RELATED LINKS

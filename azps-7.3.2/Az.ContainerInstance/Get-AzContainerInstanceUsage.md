@@ -9,8 +9,8 @@ ms.openlocfilehash: da2dc63e131bda9a8e3c1bd88637e39928101e89
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142114415"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143186255"
 ---
 # Get-AzContainerInstanceUsage
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IUsage
 
-## CATATAN
+## NOTES
 
 ALIAS
 

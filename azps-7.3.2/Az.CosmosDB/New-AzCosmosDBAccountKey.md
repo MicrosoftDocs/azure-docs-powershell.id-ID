@@ -9,8 +9,8 @@ ms.openlocfilehash: e148c010fafa3b6648ff190d627ddc3e87a454bd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141896859"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143186003"
 ---
 # New-AzCosmosDBAccountKey
 
@@ -213,6 +213,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

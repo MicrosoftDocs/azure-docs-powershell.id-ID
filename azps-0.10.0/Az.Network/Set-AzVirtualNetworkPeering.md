@@ -10,8 +10,8 @@ ms.openlocfilehash: 9ad6d0ef43913bc7b182a37a9bca4b9cccae1918
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141964059"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205497"
 ---
 # Set-AzVirtualNetworkPeering
 
@@ -142,7 +142,7 @@ Parameter 'VirtualNetworkPeering' menerima nilai tipe 'PSVirtualNetworkPeering' 
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

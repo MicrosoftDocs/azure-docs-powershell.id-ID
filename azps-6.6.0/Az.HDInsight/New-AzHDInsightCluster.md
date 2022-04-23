@@ -10,8 +10,8 @@ ms.openlocfilehash: 6cecfa30f2b2c7e14c1cf6ad238f17ee4f206181
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142474325"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200853"
 ---
 # New-AzHDInsightCluster
 
@@ -1445,7 +1445,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightCluster
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, hadoop, hdinsight, hd, wawasan
 
 ## RELATED LINKS

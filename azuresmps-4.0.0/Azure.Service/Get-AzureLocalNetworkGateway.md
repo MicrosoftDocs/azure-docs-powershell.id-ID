@@ -7,8 +7,8 @@ ms.openlocfilehash: 9f0e5c8d46941af35ba4203d97b92e33833f8d25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141966460"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143211874"
 ---
 # Get-AzureLocalNetworkGateway
 
@@ -68,7 +68,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

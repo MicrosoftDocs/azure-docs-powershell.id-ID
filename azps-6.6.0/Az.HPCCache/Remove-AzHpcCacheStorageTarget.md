@@ -9,8 +9,8 @@ ms.openlocfilehash: 4c85dc4e3a6be3fdafe62da8f089b7eefdc82f00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200745"
 ---
 # Remove-AzHpcCacheStorageTarget
 
@@ -184,6 +184,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

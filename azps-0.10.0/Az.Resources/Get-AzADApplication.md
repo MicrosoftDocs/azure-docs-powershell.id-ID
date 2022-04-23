@@ -10,8 +10,8 @@ ms.openlocfilehash: a4d1831114db40295e30b30e0fb12621caff2c89
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092501"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143205479"
 ---
 # Get-AzADApplication
 
@@ -245,7 +245,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

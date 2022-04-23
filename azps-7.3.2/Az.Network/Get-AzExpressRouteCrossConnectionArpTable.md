@@ -10,8 +10,8 @@ ms.openlocfilehash: 23d18f6aef08d059db118b241e1f5d3be92bddc8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067341"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143179739"
 ---
 # Get-AzExpressRouteCrossConnectionArpTable
 
@@ -153,7 +153,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitArpTable
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

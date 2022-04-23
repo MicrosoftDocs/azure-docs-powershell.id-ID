@@ -9,8 +9,8 @@ ms.openlocfilehash: 33e58618d61c14b0a5955a6ddb330f895e7c1138
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141912279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143200673"
 ---
 # Remove-AzHealthBot
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

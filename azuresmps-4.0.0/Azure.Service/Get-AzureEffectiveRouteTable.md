@@ -7,8 +7,8 @@ ms.openlocfilehash: 53db278d631b9da554ccdaf0a5215c78cb1906e8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141922173"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212054"
 ---
 # Get-AzureEffectiveRouteTable
 
@@ -154,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable<Microsoft.WindowsAzure.Management.Network.Models.EffectiveRouteTable, Microsoft.WindowsAzure.Management.Network>
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

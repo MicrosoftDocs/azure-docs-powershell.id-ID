@@ -9,8 +9,8 @@ ms.openlocfilehash: 62ab42146de5f1f6c9153baf05c72b0806d06f83
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142109033"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143179577"
 ---
 # Get-AzNetworkInterfaceTapConfig
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceTapConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
