@@ -9,8 +9,8 @@ ms.openlocfilehash: b6679558fd2c486a5af5268e567f6641ac855dfc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990882"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310779"
 ---
 # New-AzRecoveryServicesAsrFabric
 
@@ -32,7 +32,7 @@ New-AzRecoveryServicesAsrFabric [-Azure] -Name <String> -Location <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Azure Site Recovery Fabric dari tipe yang ditentukan.
+Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Azure Site Recovery Fabric dari jenis yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Azure Site Recovery Fabric da
 $currentJob = New-AzRecoveryServicesAsrFabric -Name $FabricName
 ```
 
-Memulai pembuatan kain dengan nama yang dilewati dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi pembuatan kain.
+Memulai pembuatan fabric dengan nama yang diteruskan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi pembuatan fabric.
 
 ### Contoh 2
 ```powershell
@@ -49,12 +49,12 @@ $currentJob = New-AzRecoveryServicesAsrFabric -Azure -Name $fabricName -Location
 Get-ASRJob -name $currentJob.id
 ```
 
-Memulai pembuatan kain azure dengan nama yang dilewati dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi pembuatan kain.
+Memulai pembuatan azure fabric dengan nama yang diteruskan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi pembuatan fabric.
 
 ## PARAMETERS
 
 ### -Azure
-Alihkan parameter yang ditentukan untuk membuat kain azure.
+Parameter switch menentukan untuk membuat azure fabric.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure yang terkait dengan objek Fabric yang sedang dibuat. Objek kain Azure Site Recovery mewakili suatu kawasan. Untuk mesin virtual yang sedang direplikasi antara dua kawasan Azure, kain utama mewakili wilayah Azure utama dan kain pemulihan.
+Menentukan wilayah Azure yang sesuai dengan objek Fabric yang sedang dibuat. Objek Fabric Azure Site Recovery mewakili suatu wilayah. Untuk komputer virtual yang direplikasi antara dua wilayah Azure, fabric primer mewakili wilayah Azure utama dan fabric pemulihan .
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama Azure Site Recovery Fabric.
 
 ```yaml
@@ -114,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan Tipe Kain azure Site Recovery.
+### -Type
+Menentukan Jenis Azure Site Recovery Fabric.
 
 ```yaml
 Type: System.String
@@ -130,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,17 +161,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

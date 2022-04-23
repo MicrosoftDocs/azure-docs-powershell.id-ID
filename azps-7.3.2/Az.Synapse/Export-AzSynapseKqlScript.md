@@ -9,8 +9,8 @@ ms.openlocfilehash: 17f1596dbf2a91426e36fe9c8d6b0141038b6203
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142024139"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143323181"
 ---
 # Export-AzSynapseKqlScript
 
@@ -195,6 +195,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.IO.FileInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

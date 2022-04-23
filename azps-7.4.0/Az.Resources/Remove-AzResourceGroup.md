@@ -10,8 +10,8 @@ ms.openlocfilehash: 41e81c95cff9e2a955de4059cfd117c8ec170748
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172071"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275013"
 ---
 # Remove-AzResourceGroup
 
@@ -212,7 +212,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

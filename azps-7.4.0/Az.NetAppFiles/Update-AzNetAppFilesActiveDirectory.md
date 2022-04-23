@@ -9,8 +9,8 @@ ms.openlocfilehash: 44d09e6ffee3b4000c1d7910d7fcfb2ed38effa3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168024"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282843"
 ---
 # Update-AzNetAppFilesActiveDirectory
 
@@ -52,7 +52,7 @@ Update-AzNetAppFilesActiveDirectory [-Dns <String[]>] [-Domain <String>] [-Site 
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzNetAppFilesAccount** mengubah konfigurasi direktori aktif ANF.
+Cmdlet **Update-AzNetAppFilesAccount** memodifikasi konfigurasi direktori aktif ANF.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Cmdlet **Update-AzNetAppFilesAccount** mengubah konfigurasi direktori aktif ANF.
 Update-AzNetAppFilesActiveDirectory  -ResourceGroupName "MyRG" -AccountName "MyAccount" -Name "MyADName" -Username $adUsername
 ```
 
-Perintah ini melakukan pembaruan pada konfigurasi direktori aktif tertentu yang mengubah nama pengguna ke yang disediakan.
+Perintah ini melakukan pembaruan pada konfigurasi direktori aktif yang diberikan yang memodifikasi nama pengguna ke yang disediakan.
 
 ## PARAMETERS
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Administrator
-Pengguna Domain untuk ditambahkan ke grup Direktori Aktif Administrator Bawaan. Daftar nama pengguna unik tanpa penentu domain.
+Pengguna Domain yang akan ditambahkan ke grup Direktori Aktif Administrator Bawaan. Daftar nama pengguna unik tanpa penentu domain.
 
 ```yaml
 Type: System.String[]
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdName
-Nama mesin direktori aktif.
+Nama komputer direktori aktif.
 Parameter opsional ini hanya digunakan saat membuat volume kerberos
 
 ```yaml
@@ -171,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Backupoperator
+### -BackupOperator
 Pengguna yang akan ditambahkan ke grup direktori aktif Operator Cadangan Bawaan.
 Daftar nama pengguna unik tanpa penentu domain
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dns
-Daftar dipisahkan koma alamat IP server DNS (hanya IPv4) untuk domain Direktori Aktif
+Daftar alamat IP server DNS yang dipisahkan koma (hanya IPv4) untuk domain Direktori Aktif
 
 ```yaml
 Type: System.String[]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptDCConnection
-Jika diaktifkan, Lalu lintas antara server SMB ke Pengontrol Domain (DC) akan dienkripsi.
+Jika diaktifkan, Lalu lintas antara server SMB ke Pengendali Domain (DC) akan dienkripsi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek direktori aktif untuk dihapus
+Objek direktori aktif yang akan dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -KdcIP
-alamat IP server kdc untuk mesin direktori aktif.
+alamat IP server kdc untuk komputer direktori aktif.
 Parameter opsional ini hanya digunakan saat membuat volume kerberos.
 
 ```yaml
@@ -323,8 +323,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
-Kata sandi teks biasa administrator domain Direktori Aktif, nilai disematkan dalam respons
+### -Kata sandi
+Kata sandi teks biasa administrator domain Direktori Aktif, nilai ditutupi dalam respons
 
 ```yaml
 Type: System.Security.SecureString
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityOperator
-Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk berbagi yang tersedia secara berkelanjutan untuk SQL). Daftar nama pengguna unik tanpa penentu domain
+Pengguna Domain di direktori Aktif untuk diberikan Hak Istimewa Keamanan (Diperlukan untuk berbagi SMB yang tersedia terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
 
 ```yaml
 Type: System.String[]
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerRootCACertificate
-Ketika LDAP melalui SSL/TLS diaktifkan, klien LDAP harus memiliki sertifikat CA Layanan Sertifikat Direktori Aktif base64 yang dikodekan sendiri, parameter opsional ini hanya digunakan untuk protokol ganda dengan volume pemetaan pengguna LDAP.
+Ketika LDAP melalui SSL/TLS diaktifkan, klien LDAP diharuskan memiliki sertifikat CA akar Layanan Sertifikat Direktori Aktif yang dikodekan base64, parameter opsional ini hanya digunakan untuk protokol ganda dengan volume pemetaan pengguna LDAP.
 
 ```yaml
 Type: System.String
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -Situs
-Situs Direktori Aktif tempat layanan akan membatasi penemuan Pengontrol Domain
+Situs Direktori Aktif tempat layanan akan membatasi penemuan Pengendali Domain
 
 ```yaml
 Type: System.String
@@ -399,8 +399,8 @@ Accept wildcard characters: False
 ```
 
 ### -SmbServerName
-Nama NetBIOS server SMB.
-Nama ini akan didaftarkan sebagai akun komputer dalam AD dan digunakan untuk memasang volume
+Nama NetBIOS dari server SMB.
+Nama ini akan didaftarkan sebagai akun komputer di AD dan digunakan untuk memasang volume
 
 ```yaml
 Type: System.String
@@ -429,8 +429,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -461,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -473,6 +473,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: d2397ac264d737bb9ea90f013a1c0560a2729715
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142051013"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143299907"
 ---
 # Test-AzEventHubName
 
@@ -132,6 +132,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSCheckNameAvailabilityResultAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: ade516544b1983e3fc845bb15d534ec1f177b8d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283419"
 ---
 # Remove-AzDiagnosticSetting
 
@@ -34,7 +34,7 @@ Remove-AzDiagnosticSetting [-Name <String>] [-SubscriptionId] <String>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzDiagnosticSetting** menghapus pengaturan diagnostik untuk sumber daya tertentu.
-Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ Remove-AzDiagnosticSetting -ResourceId "Resource01"
 
 Perintah ini menghapus pengaturan diagnostik default (layanan) untuk sumber daya yang disebut Resource01.
 
-### Contoh 2: Menghapus pengaturan diagnostik default yang diidentifikasi dengan nama tertentu untuk sumber daya
+### Contoh 2: Menghapus pengaturan diagnostik default yang diidentifikasi dengan nama yang diberikan untuk sumber daya
 ```powershell
 Remove-AzDiagnosticSetting -ResourceId "Resource01" -Name myDiagSetting
 ```
@@ -69,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pengaturan diagnostik. Jika tidak memberikan panggilan default ke "layanan" seperti dalam API sebelumnya dan cmdlet ini hanya akan menonaktifkan semua kategori untuk metrik/log.
+### -Name
+Nama pengaturan diagnostik. Jika tidak diberikan panggilan default ke "layanan" seperti di API sebelumnya dan cmdlet ini hanya akan menonaktifkan semua kategori untuk metrik/log.
 
 ```yaml
 Type: System.String
@@ -114,8 +114,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.AzureOperationResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

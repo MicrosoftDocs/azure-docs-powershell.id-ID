@@ -9,13 +9,13 @@ ms.openlocfilehash: 05f656804dde8229ef917430a2d7ca6efe205f14
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141835699"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143282969"
 ---
 # New-AzNetAppFilesBackupPolicy
 
 ## SYNOPSIS
-Membuat kebijakan cadangan Azure NetApp Files (ANF) baru untuk akun ANF.
+Membuat kebijakan pencadangan Azure NetApp Files (ANF) baru untuk akun ANF.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ New-AzNetAppFilesBackupPolicy -Name <String> [-Enabled] [-DailyBackupsToKeep <In
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNetAppFilesActiveDirectory** membuat kebijakan cadangan baru untuk akun ANF.
+Cmdlet **New-AzNetAppFilesActiveDirectory** membuat kebijakan pencadangan baru untuk akun ANF.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ Cmdlet **New-AzNetAppFilesActiveDirectory** membuat kebijakan cadangan baru untu
 New-AzNetAppFilesBackupPolicy -ResourceGroupName "MyRG" -l "westus2" -AccountName "MyAccount" -Name "MyBackupPolicy" -Tag @{"tag1" = "tagValue"} -Enabled -DailyBackupsToKeep 1 -WeeklyBackupsToKeep 2 -MonthlyBackupsToKeep 2
 ```
 
-Perintah ini membuat kebijakan cadangan ANF baru untuk akun ANF bernama "MyAccount".
+Perintah ini membuat kebijakan pencadangan ANF baru untuk akun ANF bernama "MyAccount".
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailyBackupsToKeep
-Jumlah cadangan harian untuk disimpan
+Jumlah pencadangan harian untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Properti untuk memutuskan kebijakan diaktifkan atau tidak
 
 ```yaml
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlyBackupsToKeep
-Jumlah pencadangan bulanan untuk dipertahankan
+Jumlah pencadangan bulanan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -154,8 +154,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan cadangan ANF
+### -Name
+Nama kebijakan pencadangan ANF
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklyBackupsToKeep
-Jumlah cadangan mingguan untuk dipertahankan
+Jumlah pencadangan mingguan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -YearlyBackupsToKeep
-Jumlah cadangan tahunan untuk dipertahankan
+Jumlah pencadangan tahunan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -229,8 +229,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -271,6 +271,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

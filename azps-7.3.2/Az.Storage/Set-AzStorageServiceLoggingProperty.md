@@ -10,8 +10,8 @@ ms.openlocfilehash: 7078c6878e1013a7f6e46822a141b9af3833c112
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142337993"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143323721"
 ---
 # Set-AzStorageServiceLoggingProperty
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Storage. Shared.Protocol.LoggingProperties
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

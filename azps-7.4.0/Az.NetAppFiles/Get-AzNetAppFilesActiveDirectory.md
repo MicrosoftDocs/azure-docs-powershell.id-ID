@@ -9,8 +9,8 @@ ms.openlocfilehash: 721e08de9ddf1e224e0a64569c4a596a45094ddb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142168054"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283023"
 ---
 # Get-AzNetAppFilesActiveDirectory
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Akun untuk objek Direktori Aktif yang baru
+Akun untuk objek Direktori Aktif baru
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryId
-ActiveDirectoryId dari Direktori Aktif ANF
+ActiveDirectoryId dari Active Directory ANF
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -131,6 +131,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

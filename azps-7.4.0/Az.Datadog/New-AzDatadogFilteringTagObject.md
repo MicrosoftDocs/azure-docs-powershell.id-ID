@@ -9,8 +9,8 @@ ms.openlocfilehash: 8090ba34b65879072cdf7c1d29946303a4c55c8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141838160"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143317655"
 ---
 # New-AzDatadogFilteringTagObject
 
@@ -92,7 +92,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag
 
-## CATATAN
+## NOTES
 
 ALIAS
 

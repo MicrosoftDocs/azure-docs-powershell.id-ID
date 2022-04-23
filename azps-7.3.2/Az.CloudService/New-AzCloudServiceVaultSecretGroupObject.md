@@ -9,8 +9,8 @@ ms.openlocfilehash: 4a6907f72f569872db97e34fd8aa014fc276e163
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142037026"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143290817"
 ---
 # New-AzCloudServiceVaultSecretGroupObject
 
@@ -82,7 +82,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.CloudServiceVaultSecretGroup
 
-## CATATAN
+## NOTES
 
 ALIAS
 

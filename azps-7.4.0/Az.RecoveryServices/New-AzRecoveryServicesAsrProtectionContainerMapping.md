@@ -9,13 +9,13 @@ ms.openlocfilehash: ccd02408ddd9babfab206f1b185cd9386484bff5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990834"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310653"
 ---
 # New-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
-Membuat pemetaan Azure Site Recovery Protection Container dengan mengasosiasikan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
+Membuat pemetaan Kontainer Azure Site Recovery Protection dengan mengaitkan kebijakan replikasi yang ditentukan ke kontainer perlindungan ASR yang ditentukan.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ New-AzRecoveryServicesAsrProtectionContainerMapping -Name <String> -Policy <ASRP
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrProtectionContainerMapping** membuat pemetaan Azure Site Recovery Protection Container dengan mengaitkan kebijakan replikasi yang ditentukan ke wadah proteksi yang ditentukan.
+Cmdlet **New-AzRecoveryServicesAsrProtectionContainerMapping** membuat pemetaan Kontainer Azure Site Recovery Protection dengan mengaitkan kebijakan replikasi yang ditentukan ke kontainer perlindungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Memulai pembuatan pemetaan wadah proteksi dengan parameter yang ditentukan, dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai pembuatan pemetaan kontainer perlindungan dengan parameter yang ditentukan, dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 2
 ```powershell
@@ -88,7 +88,7 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Memulai pembuatan pemetaan wadah proteksi dengan parameter yang ditentukan, dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai pembuatan pemetaan kontainer perlindungan dengan parameter yang ditentukan, dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -108,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pemetaan Wadah Proteksi.
+### -Name
+Menentukan nama pemetaan Kontainer Perlindungan.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan objek kebijakan replikasi ASR agar kebijakan replikasi digunakan dalam pemetaan.
+Menentukan objek kebijakan replikasi ASR untuk kebijakan replikasi yang akan digunakan dalam pemetaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryProtectionContainer
-Menentukan objek kontainer proteksi ASR untuk wadah proteksi utama yang akan digunakan dalam pemetaan.
+Menentukan objek kontainer perlindungan ASR untuk kontainer perlindungan utama yang akan digunakan dalam pemetaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryProtectionContainer
-Menentukan objek kontainer proteksi ASR agar wadah proteksi pemulihan digunakan dalam pemetaan (digunakan jika mereplikasi ke lokasi pemulihan yang bukan Azure.)
+Menentukan objek kontainer perlindungan ASR untuk kontainer perlindungan pemulihan yang akan digunakan dalam pemetaan (digunakan jika mereplikasi ke lokasi pemulihan yang bukan Azure.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -168,8 +168,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -209,7 +209,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

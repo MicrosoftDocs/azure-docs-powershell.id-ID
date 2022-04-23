@@ -10,8 +10,8 @@ ms.openlocfilehash: 6f84cc96f99442b1ab0a7e3aa8bf702804d156f0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141991907"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283545"
 ---
 # New-AzAutoscaleWebhook
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

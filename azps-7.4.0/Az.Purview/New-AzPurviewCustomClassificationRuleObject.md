@@ -9,8 +9,8 @@ ms.openlocfilehash: 4076b5577fe0c9519e04e26921c5c1942aa4f2ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172294"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310995"
 ---
 # New-AzPurviewCustomClassificationRuleObject
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.CustomClassificationRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

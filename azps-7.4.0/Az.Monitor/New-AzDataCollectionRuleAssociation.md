@@ -9,8 +9,8 @@ ms.openlocfilehash: d597083e8bf419e806279aa61f08b13e26f5e1cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142177357"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283491"
 ---
 # New-AzDataCollectionRuleAssociation
 
@@ -224,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSDataCollectionRuleAssociationProxyOnlyResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 2fec656a55b3b38cf969314b259d6f08aa833705
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142337453"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143323235"
 ---
 # New-AzSupportTicketCommunication
 
@@ -214,6 +214,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Support.Models.PSSupportTicketCommunication
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

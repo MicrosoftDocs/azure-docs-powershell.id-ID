@@ -9,13 +9,13 @@ ms.openlocfilehash: 73aad0c3384ba8fc57bbdc04ad58794b46140e54
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142424799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283185"
 ---
 # Get-AzMySqlReplica
 
 ## SYNOPSIS
-Cantumkan semua replika untuk server tertentu.
+Mencantumkan semua replika untuk server tertentu.
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ Get-AzMySqlReplica -ResourceGroupName <String> -ServerName <String> [-Subscripti
 ```
 
 ## DESCRIPTION
-Cantumkan semua replika untuk server tertentu.
+Mencantumkan semua replika untuk server tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan replika server MySql menurut grup sumber daya dan nama server
+### Contoh 1: Mendapatkan replika server MySql menurut grup sumber daya dan nama server
 ```powershell
 Get-AzMySqlReplica -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -114,7 +114,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IServer
 
-## CATATAN
+## NOTES
 
 ALIAS
 

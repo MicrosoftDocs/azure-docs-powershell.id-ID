@@ -9,8 +9,8 @@ ms.openlocfilehash: 28aec5f0e074086db24663ee9df7ff77b4db2bd1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142321025"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143290871"
 ---
 # New-AzCloudServiceRoleProfilePropertiesObject
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.CloudServiceRoleProfileProperties
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,13 +9,13 @@ ms.openlocfilehash: 37d5597beac4fc37267c89ffa0b3dde21780fff1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175177"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310473"
 ---
 # Start-AzRecoveryServicesAsrUnplannedFailoverJob
 
 ## SYNOPSIS
-Memulai operasi failover yang tidak dienkripsi.
+Memulai operasi failover yang tidak direncanakan.
 
 ## SYNTAX
 
@@ -44,8 +44,8 @@ Start-AzRecoveryServicesAsrUnplannedFailoverJob -ReplicationProtectedItem <ASRRe
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrUnplannedFailoverJob** memulai failover terencana item terproteksi azure Site Recovery replikasi atau rencana pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
+Cmdlet **Start-AzRecoveryServicesAsrUnplannedFailoverJob** memulai failover yang tidak direncanakan dari item yang dilindungi replikasi azure Site Recovery atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
 
 ## EXAMPLES
 
@@ -54,11 +54,11 @@ Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecovery
 $currentJob = Start-AzRecoveryServicesAsrUnplannedFailoverJob -RecoveryPlan $RP -Direction PrimaryToRecovery -VMNetwork $RecoveryNetwork
 ```
 
-Memulai operasi failover tidak terencana untuk rencana pemulihan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi failover yang tidak direncanakan untuk rencana pemulihan dengan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 2
 
-Memulai operasi failover yang tidak dienkripsi. (autogenerasi)
+Memulai operasi failover yang tidak direncanakan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -68,7 +68,7 @@ Start-AzRecoveryServicesAsrUnplannedFailoverJob -Direction PrimaryToRecovery -Re
 ## PARAMETERS
 
 ### -DataEncryptionPrimaryCertFile
-Menentukan jalur file sertifikat utama enkripsi data untuk kegagalan Item Terproteksi.
+Menentukan jalur file sertifikat utama enkripsi data untuk failover Item Terproteksi.
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataEncryptionSecondaryCertFile
-Menentukan jalur file sertifikat sekunder enkripsi data untuk kegagalan Item Terproteksi.
+Menentukan jalur file sertifikat sekunder enkripsi data untuk failover Item Terproteksi.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Menentukan arah failover.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - PrimaryToRecovery
-- PemulihanToPrimary
+- RecoveryToPrimary
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiVmSyncPoint
-Menentukan apakah akan mengaktifkan titik sinkronisasi multi VM untuk kegagalan sinkronisasi multi VM yang diaktifkan VM (Berlaku hanya untuk VMware ke skenario replikasi Azure).
+Menentukan apakah akan mengaktifkan titik sinkronisasi multi VM untuk failover VM yang diaktifkan sinkronisasi multi VM (Hanya berlaku untuk skenario replikasi VMware ke Azure).
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformSourceSideAction
-Jalankan operasi di sisi sumber sebelum memulai failover yang tidak dienkripsi.
+Lakukan operasi di sisi sumber sebelum memulai failover yang tidak direncanakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoint
-Menentukan titik pemulihan kustom untuk failover mesin yang dilindungi. Jika tidak ditentukan, ASR akan memproses tulisan tertunda dan memilih titik pemulihan terbaru (RPO terendah).
+Menentukan titik pemulihan kustom untuk failover komputer yang dilindungi. Jika tidak ditentukan, ASR akan memproses penulisan yang tertunda dan memilih titik pemulihan terbaru (RPO terendah).
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPoint
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTag
-Menentukan tag pemulihan untuk di-failover.
+Menentukan tag pemulihan untuk failover.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan item yang diproteksi replikasi pemulihan situs azure.
+Menentukan item yang dilindungi replikasi azure site recovery.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -238,8 +238,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -281,7 +281,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

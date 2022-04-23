@@ -9,13 +9,13 @@ ms.openlocfilehash: cc4476b2d87d23e138feee7b25068112bf03023a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143274185"
 ---
 # Update-AzSentinelAlertRule
 
 ## SYNOPSIS
-Memperbarui Aturan Analitik (Aturan Peringatan).
+Memperbarui Aturan Analitik (Aturan Pemberitahuan).
 
 ## SYNTAX
 
@@ -59,9 +59,9 @@ Update-AzSentinelAlertRule [-AlertRuleTemplateName <String>] [-Enabled] [-Disabl
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSentinelAlertRule** memperbarui Aturan Analitik (Peringatan) di ruang kerja yang ditentukan.
+Cmdlet **Update-AzSentinelAlertRule** memperbarui Aturan Analitik (Pemberitahuan) di ruang kerja yang ditentukan.
 Anda dapat menggunakan -InputObject atau -ResourceId atau -AlertId.  Anda dapat memperbarui 1 parameter properti atau lebih.
-Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -70,7 +70,7 @@ Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Wi
 Update-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -Disabled -DisplayName "Disabled-AlertRuleDisplayName"
 ```
 
-Contoh ini memperbarui pengaturan **AlertRule** menjadi *Nonaktif* dan mengganti nama AlertRule menjadi *Disabled-AlertRuleDisplayName*.  Semua properti lainnya akan tetap sama.
+Contoh ini memperbarui pengaturan **AlertRule** menjadi *Dinonaktifkan* dan mengganti nama AlertRule menjadi *Disabled-AlertRuleDisplayName*.  Semua properti lainnya akan tetap sama.
 
 ### Contoh 2
 ```powershell
@@ -78,7 +78,7 @@ $AlertRule = Get-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -Works
 Update-AzSentinelAlertRule -InputObject $AlertRule -Disabled
 ```
 
-Contoh ini memperbarui **AlertRule** menggunakan pengaturan InputObject menjadi *Nonaktif*.  Semua properti lainnya akan tetap sama.
+Contoh ini memperbarui **AlertRule** menggunakan pengaturan InputObject ke *Dinonaktifkan*.  Semua properti lainnya akan tetap sama.
 
 ### Contoh 3
 ```powershell
@@ -90,12 +90,12 @@ $ruleToDisable = Get-AzSentinelAlertRule @SentinelConnection | Where-Object {$_.
 Update-AzSentinelAlertRule @SentinelConnection -AlertRuleId $ruleToDisable.Name -Disabled
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mendapatkan AlertRule tertentu berdasarkan nama tampilan dan menonaktifkan aturan.
+Contoh ini menggunakan objek koneksi untuk meneruskan resourceGroupName dan workspaceName. Kemudian mendapatkan AlertRule tertentu berdasarkan nama tampilan dan menonaktifkan aturan.
 
 ## PARAMETERS
 
 ### -AlertRuleId
-Id Aturan Peringatan.
+Id Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi.
+Keterangan.
 
 ```yaml
 Type: System.String
@@ -154,8 +154,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nonaktif
-Aturan Peringatan Dinonaktifkan.
+### -Dinonaktifkan
+Aturan Pemberitahuan Dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayNamesExcludeFilter
-Nama Tampilan Aturan Pemberitahuan Tidak Termasuk Filter.
+Nama Tampilan Aturan Pemberitahuan Mengecualikan Filter.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -214,8 +214,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Aturan Peringatan Diaktifkan.
+### -Diaktifkan
+Aturan Pemberitahuan Diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductFilter
-Filter Produk Aturan Peringatan.
+Filter Produk Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -260,7 +260,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri Aturan Pemberitahuan.
 
 ```yaml
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -SeveritiesFilter
-Filter Tingkat Keparahan Aturan Peringatan.
+Filter Tingkat Keparahan Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -350,8 +350,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Keparahan
-Keparahan Insiden.
+### -Tingkat keparahan
+Tingkat Keparahan Insiden.
 
 ```yaml
 Type: System.String
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionDisabled
-Peredaman Aturan Peringatan Dinonaktifkan.
+Penekanan Aturan Pemberitahuan Dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionDuration
-Durasi Peredaman Aturan Peringatan.
+Durasi Penekanan Aturan Pemberitahuan.
 
 ```yaml
 Type: System.TimeSpan
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionEnabled
-Peredaman Aturan Peringatan Diaktifkan.
+Penekanan Aturan Pemberitahuan Diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -Taktik
-Taktik Aturan Peringatan.
+Taktik Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -425,8 +425,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Triggeroperator
-Operator Pemicu Aturan Peringatan.
+### -TriggerOperator
+Operator Pemicu Aturan Pemberitahuan.
 
 ```yaml
 Type: Microsoft.Azure.Management.SecurityInsights.Models.TriggerOperator
@@ -442,7 +442,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerThreshold
-Ambang Pemicu Aturan Peringatan.
+Ambang Pemicu Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -456,7 +456,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -471,8 +471,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -487,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -503,7 +503,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -515,6 +515,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.AlertRules.PSSentinelAlertRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

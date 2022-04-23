@@ -9,8 +9,8 @@ ms.openlocfilehash: 13f6e202b1783efc9487b6e17ed6d8fef15b3a79
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141956553"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143300015"
 ---
 # New-AzEventHubKey
 
@@ -217,6 +217,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

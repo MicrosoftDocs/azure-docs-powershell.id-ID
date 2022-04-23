@@ -9,13 +9,13 @@ ms.openlocfilehash: aceb158c08f4e26b18401adde844543b4a276862
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837923"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143317295"
 ---
 # Update-AzWvdHostPool
 
 ## SYNOPSIS
-Perbarui kumpulan host.
+Memperbarui kumpulan host.
 
 ## SYNTAX
 
@@ -45,11 +45,11 @@ Update-AzWvdHostPool -InputObject <IDesktopVirtualizationIdentity> [-CustomRdpPr
 ```
 
 ## DESCRIPTION
-Perbarui kumpulan host.
+Memperbarui kumpulan host.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Windows Virtual Desktop HostPool menurut nama
+### Contoh 1: Memperbarui Windows Virtual Desktop HostPool berdasarkan nama
 ```powershell
 Update-AzWvdHostPool -ResourceGroupName ResourceGroupName `
                             -Name HostPoolName `
@@ -73,7 +73,7 @@ Perintah ini memperbarui Windows Virtual Desktop HostPool dalam Grup Sumber Daya
 ## PARAMETERS
 
 ### -CustomRdpProperty
-Properti rdp kustom HostPool.
+Properti rdp kustom hostPool.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama HostPool yang ramah.
+Nama hostPool yang mudah diingat.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerType
-Tipe penyeimbang beban.
+Jenis load balancer.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.LoadBalancerType
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSessionLimit
-Batas maksimal sesi HostPool.
+Batas sesi maksimum HostPool.
 
 ```yaml
 Type: System.Int32
@@ -177,7 +177,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan host dalam grup sumber daya yang ditentukan
 
 ```yaml
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalDesktopAssignmentType
-Tipe PersonalDesktopAssignment untuk HostPool.
+Jenis PersonalDesktopAssignment untuk HostPool.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PersonalDesktopAssignmentType
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredAppGroupType
-Tipe tipe grup aplikasi pilihan, default ke Grup Aplikasi Desktop
+Jenis jenis grup aplikasi pilihan, default ke Grup Aplikasi Desktop
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PreferredAppGroupType
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationInfoExpirationTime
-Waktu kedaluwarsa token registrasi.
+Waktu kedaluwarsa token pendaftaran.
 
 ```yaml
 Type: System.DateTime
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationInfoRegistrationTokenOperation
-Tipe pengaturan ulang token.
+Jenis pengaturan ulang token.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.RegistrationTokenOperation
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoClientId
-ClientId untuk Relying Party terdaftar yang digunakan untuk menerbitkan sertifikat WVD SSO.
+ClientId untuk Pihak Yang Mengandalkan terdaftar yang digunakan untuk menerbitkan sertifikat SSO WVD.
 
 ```yaml
 Type: System.String
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoSecretType
-Tipe tanda tunggal pada Tipe Rahasia.
+Jenis akses menyeluruh pada Jenis Rahasia.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SsoSecretType
@@ -418,8 +418,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -460,7 +460,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IHostPool
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -475,9 +475,9 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan

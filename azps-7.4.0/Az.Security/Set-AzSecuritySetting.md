@@ -9,8 +9,8 @@ ms.openlocfilehash: 79a7dde768a8710b415893b402d9473b09c7bc0c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143274329"
 ---
 # Set-AzSecuritySetting
 
@@ -193,6 +193,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Security.Models. Pengaturan. PSSecurityDataExportSetting
 ### Microsoft.Azure.Commands.Security.Models. Pengaturan. PSSecurityAlertSyncSettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

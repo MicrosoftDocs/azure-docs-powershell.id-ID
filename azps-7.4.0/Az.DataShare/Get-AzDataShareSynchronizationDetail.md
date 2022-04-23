@@ -9,8 +9,8 @@ ms.openlocfilehash: 711478db02418e0903824b02a7cf70d802481de2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425637"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143317889"
 ---
 # Get-AzDataShareSynchronizationDetail
 
@@ -56,7 +56,7 @@ Name         : 16d5161b-2b3f-4d90-b074-13ad7121bcc7
 Message      :
 ```
 
-Perintah ini menyediakan informasi tentang detail sinkronisasi semua kumpulan data yang terkait dengan id sinkronisasi yang disediakan.
+Perintah ini menyediakan informasi tentang detail sinkronisasi semua himpunan data yang sesuai dengan id sinkronisasi yang disediakan.
 
 ## PARAMETERS
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari akun berbagi data azure
+Nama grup sumber daya akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -SynchronizationId
-Id sinkronisasi berbagi
+Id sinkronisasi sinkronisasi berbagi
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareSynchronizationDetail
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

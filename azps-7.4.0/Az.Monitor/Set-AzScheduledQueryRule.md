@@ -9,13 +9,13 @@ ms.openlocfilehash: 248c32859fdbad81701affe4e51b14c08c925296
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431971"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283311"
 ---
 # Set-AzScheduledQueryRule
 
 ## SYNOPSIS
-Memperbarui Aturan Peringatan Log
+Memperbarui Aturan Pemberitahuan Log
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Set-AzScheduledQueryRule -ResourceId <String> -Source <PSScheduledQueryRuleSourc
 ```
 
 ## DESCRIPTION
-Memperbarui Aturan Peringatan Log dengan semantik PUT
+Memperbarui Aturan Pemberitahuan Log dengan semantik PUT
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 2: Atur menurut Objek Input
+### Contoh 2: Diatur oleh Objek Input
 ```powershell
 Set-AzScheduledQueryRule -InputObject $sqr -Description "changed description"
 ```
@@ -88,7 +88,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 3: Atur menurut Id sumber daya
+### Contoh 3: Diatur menurut Id sumber daya
 ```powershell
 Set-AzScheduledQueryRule -ResourceId "/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.Insights/scheduledqueryrules/LogAlertRule1" -Enabled $true -Location "centralindia" -Action $alertingAction -Description "change description again" -Schedule $schedule -Source $source
 ```
@@ -111,7 +111,7 @@ Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-1197894
 ## PARAMETERS
 
 ### -Tindakan
-Aturan kueri terjadwal Tindakan Peringatan
+Tindakan Pemberitahuan aturan kueri terjadwal
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSScheduledQueryRuleAlertingAction
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Status peringatan azure - nilai yang valid - $true, $false
+### -Diaktifkan
+Status pemberitahuan azure - nilai yang valid - $true, $false
 
 ```yaml
 Type: System.Boolean
@@ -239,7 +239,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemberitahuan
 
 ```yaml
@@ -299,7 +299,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
+### -Sumber
 Sumber aturan kueri terjadwal
 
 ```yaml
@@ -341,8 +341,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -391,6 +391,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSScheduledQueryRuleResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

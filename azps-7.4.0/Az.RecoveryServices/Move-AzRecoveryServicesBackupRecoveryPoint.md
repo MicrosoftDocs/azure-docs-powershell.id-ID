@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a1be2a132b7751ccafaf1e47f1f5cf6120c1a07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142166469"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310761"
 ---
 # Move-AzRecoveryServicesBackupRecoveryPoint
 
@@ -41,7 +41,7 @@ $rp = Get-AzRecoveryServicesBackupRecoveryPoint -Item $item[3] -StartDate $start
 Move-AzRecoveryServicesBackupRecoveryPoint -RecoveryPoint $rp[2] -SourceTier VaultStandard -DestinationTier VaultArchive -VaultId $vault.ID
 ```
 
-Pertama, kami mendapatkan kubah layanan pemulihan, daftar item cadangan. Lalu, kami mengambil titik pemulihan untuk item cadangan tertentu ($item[3] dalam hal ini) yang ada di tingkat VaultStandard. Lalu kita memicu perpindahan untuk salah satu titik pemulihan dari daftar Rp ke tingkat VaultArchive.  
+Pertama kita mendapatkan vault layanan pemulihan, daftar item cadangan. Kemudian, kami mengambil titik pemulihan untuk item cadangan tertentu ($item[3] dalam hal ini) yang berada di tingkat VaultStandard. Kemudian kami memicu pemindahan untuk salah satu titik pemulihan dari daftar rp ke tingkat VaultArchive.  
 
 ## PARAMETERS
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationTier
-Tingkat Tujuan untuk perpindahan Titik Pemulihan.
+Tingkat Tujuan untuk pemindahan Titik Pemulihan.
 Saat ini satu-satunya nilai yang dapat diterima adalah 'VaultArchive'
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceTier
-Tingkat Sumber untuk perpindahan Titik Pemulihan.
+Tingkat Sumber untuk pemindahan Titik Pemulihan.
 Saat ini satu-satunya nilai yang dapat diterima adalah 'VaultStandard'
 
 ```yaml
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -124,8 +124,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -167,6 +167,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

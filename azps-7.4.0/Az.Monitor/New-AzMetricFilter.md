@@ -10,8 +10,8 @@ ms.openlocfilehash: 53381b0626b27146e9e483f58f86e1721294bbc8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141996126"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143283455"
 ---
 # New-AzMetricFilter
 
@@ -112,7 +112,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

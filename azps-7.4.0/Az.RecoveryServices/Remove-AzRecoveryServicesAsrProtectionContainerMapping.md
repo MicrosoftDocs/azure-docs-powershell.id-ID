@@ -9,13 +9,13 @@ ms.openlocfilehash: 22b62fadb482900a41e48dce82f93369b5921ad6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994422"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310545"
 ---
 # Remove-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
-Menghapus pemetaan wadah perlindungan azure Site Recovery yang ditentukan.
+Menghapus pemetaan kontainer perlindungan Azure Site Recovery yang ditentukan.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-AzRecoveryServicesAsrProtectionContainerMapping -InputObject <ASRProtecti
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRecoveryServicesAsrProtectionContainerMapping** menghapus pemetaan wadah perlindungan Azure Site Recovery yang ditentukan.
+Cmdlet **Remove-AzRecoveryServicesAsrProtectionContainerMapping** menghapus pemetaan kontainer perlindungan Azure Site Recovery yang ditentukan.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Cmdlet **Remove-AzRecoveryServicesAsrProtectionContainerMapping** menghapus peme
 $currentJob = Remove-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainerMapping $ProtectionContainerMapping
 ```
 
-Memulai penghapusan pemetaan wadah proteksi tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai penghapusan pemetaan kontainer perlindungan yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -54,8 +54,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa perintah untuk berjalan tanpa memberikan peringatan tambahan.
+### -Force
+Paksa perintah untuk berjalan tanpa memberikan peringatan tambahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: objek pemetaan wadah perlindungan ASR yang terkait dengan wadah proteksi yang akan dihapus.
+Objek input ke cmdlet: objek pemetaan kontainer perlindungan ASR yang sesuai dengan kontainer perlindungan yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainerMapping
@@ -84,7 +84,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Tentukan apakah konfirmasi diperlukan. Atur nilai parameter konfirmasi ke $false untuk melewati konfirmasi
 
 ```yaml
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menunjukkan apa yang akan terjadi jika cmdlet dijalankan tanpa benar-benar menjalankan cmdlet.
+Menunjukkan apa yang akan terjadi jika cmdlet dijalankan tanpa benar-benar mengeksekusi cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

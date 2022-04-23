@@ -9,16 +9,16 @@ ms.openlocfilehash: 5425e433facc28873ed72ff832c61a06f3b67c56
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141803012"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143299871"
 ---
 # New-AzFrontDoorBackendPoolsSettingObject
 
 ## SYNOPSIS
-Buat objek PSBackendPoolsSetting untuk pembuatan Pintu Depan.
+Buat objek PSBackendPoolsSetting untuk pembuatan Front Door.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendpoolssettingobject) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendpoolssettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ New-AzFrontDoorBackendPoolsSettingObject [-EnforceCertificateNameCheck <PSEnable
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFrontDoorBackendpoolsSettingObject** membuat objek PSBackendPoolsSettings baru untuk pembuatan Pintu Depan.
+Cmdlet **New-AzFrontDoorBackendpoolsSettingObject** membuat objek PSBackendPoolsSettings baru untuk pembuatan Front Door.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek BackendPoolsSettings menggunakan default
+### Contoh 1: Membuat objek BackendPoolsSettings menggunakan default
 ```powershell
 PS C:\> New-AzFrontDoorBackendpoolsSettingObject
 
@@ -44,7 +44,7 @@ Name                        :
 Type                        :
 ```
 
-### Contoh 2: Buat objek BackendPoolsSettings dengan nilai yang ditentukan pengguna
+### Contoh 2: Membuat objek BackendPoolsSettings dengan nilai yang ditentukan pengguna
 ```powershell
 PS C:\> New-AzFrontDoorBackendpoolsSettingObject -SendRecvTimeoutInSeconds 60 -EnforceCertificateNameCheck Enabled
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnforceCertificateNameCheck
-Apakah memberlakukan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend.
+Apakah akan menerapkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend.
 Tidak berpengaruh pada permintaan non-HTTPS.
 
 ```yaml
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -SendRecvTimeoutInSeconds
-Kirim dan terima waktu habis pada permintaan penerusan ke backend. Ketika waktu habis tercapai, permintaan gagal dan dikembalikan.
+Kirim dan terima batas waktu pada permintaan penerusan ke backend. Ketika batas waktu tercapai, permintaan gagal dan kembali.
 
 ```yaml
 Type: System.Int32
@@ -106,16 +106,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPoolsSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
