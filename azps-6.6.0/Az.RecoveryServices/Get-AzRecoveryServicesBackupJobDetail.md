@@ -10,8 +10,8 @@ ms.openlocfilehash: 9655499578b97e3502fbbe264c8115352d004a53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142123019"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143355239"
 ---
 # Get-AzRecoveryServicesBackupJobDetail
 
@@ -152,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

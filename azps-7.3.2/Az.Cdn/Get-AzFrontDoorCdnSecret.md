@@ -9,8 +9,8 @@ ms.openlocfilehash: 2d994085bb97198a29371528b756f1350fe8f78f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142037405"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143370557"
 ---
 # Get-AzFrontDoorCdnSecret
 
@@ -154,6 +154,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

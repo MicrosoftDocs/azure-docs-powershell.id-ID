@@ -9,8 +9,8 @@ ms.openlocfilehash: ea8e1fbb48c6a6e1e262441aed2ab744d1785ee9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142074379"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143370953"
 ---
 # Remove-AzApplicationInsightsLinkedStorageAccount
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

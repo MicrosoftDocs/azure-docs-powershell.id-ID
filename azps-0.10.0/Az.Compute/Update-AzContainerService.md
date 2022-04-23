@@ -10,8 +10,8 @@ ms.openlocfilehash: 1a15486b3e24dec3af66cb98391bd8322c28d2e6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498643"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143363087"
 ---
 # Update-AzContainerService
 
@@ -168,7 +168,7 @@ Parameter 'ContainerService' menerima nilai tipe 'ContainerService' dari pipelin
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

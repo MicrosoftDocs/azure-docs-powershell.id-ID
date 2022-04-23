@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceOSVersion.md
-ms.openlocfilehash: e8b86b5b22753531f242952494c04841526dcf1e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ccbcce9c0617cc6a71dfa93b48ab1dcf7074bdae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140180132"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143370341"
 ---
 # Get-AzCloudServiceOSVersion
 
 ## SYNOPSIS
-Mendapatkan properti versi sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan awan.
+Mendapatkan properti versi sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceosversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzCloudServiceOSVersion -InputObject <ICloudServiceIdentity> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Mendapatkan properti versi sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan awan.
+Mendapatkan properti versi sistem operasi tamu yang dapat ditentukan dalam konfigurasi layanan XML (.cscfg) untuk layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua versi OS di suatu lokasi
+### Contoh 1: Mendapatkan semua versi OS di lokasi
 ```powershell
 Get-AzCloudServiceOSVersion -location 'westus2'
 ```
@@ -70,7 +73,7 @@ Name                      Label                                          IsDefau
 WA-GUEST-OS-6.7_201905-01 Windows Azure Guest OS 6.7 (Release 201905-01) False     False    6      Windows Server 2019
 ```
 
-Perintah ini mendapatkan versi OS yang bernama WA-GUEST-OS-6.7_201905-01 yang terletak di westus2.
+Perintah ini mendapatkan versi OS bernama WA-GUEST-OS-6.7_201905-01 yang terletak di westus2.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama lokasi yang terkait dengan versi OS.
+Nama lokasi yang berkaitan dengan versi OS.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -161,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.Api20210301.IOSVersion
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -174,16 +177,16 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi yang terkait dengan versi OS.
+  - `[Location <String>]`: Nama lokasi yang berkaitan dengan versi OS.
   - `[NetworkInterfaceName <String>]`: Nama antarmuka jaringan.
   - `[OSFamilyName <String>]`: Nama keluarga OS.
   - `[OSVersionName <String>]`: Nama versi OS.
   - `[PublicIPAddressName <String>]`: Nama Alamat IP publik.
   - `[ResourceGroupName <String>]`: 
-  - `[RoleInstanceName <String>]`: Nama contoh peran.
+  - `[RoleInstanceName <String>]`: Nama instans peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
-  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Update domains are identified with a zero-based index: the first update domain has an ID of 0, the second has an ID of 1, and so on.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Domain pembaruan diidentifikasi dengan indeks berbasis nol: domain pembaruan pertama memiliki ID 0, yang kedua memiliki ID 1, dan sebagainya.
 
 ## RELATED LINKS
 

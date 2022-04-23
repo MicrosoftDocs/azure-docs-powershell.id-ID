@@ -9,8 +9,8 @@ ms.openlocfilehash: de452901a307dedc9ee4bcd431fd254b53cc8937
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142299715"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143353511"
 ---
 # Add-AzServiceFabricClientCertificate
 
@@ -268,7 +268,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

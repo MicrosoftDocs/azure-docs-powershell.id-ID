@@ -10,8 +10,8 @@ ms.openlocfilehash: ee1b1b70abf8256a6974c34bd21c16877e84ef84
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328936"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143362565"
 ---
 # Add-AzApplicationGatewayBackendAddressPool
 
@@ -179,7 +179,7 @@ System.String
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

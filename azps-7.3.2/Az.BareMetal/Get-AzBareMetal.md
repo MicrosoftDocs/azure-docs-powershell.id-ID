@@ -9,8 +9,8 @@ ms.openlocfilehash: bf2a5c4b36bec9b696a8aaba4ad1e5de3690d4b6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142073983"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143370701"
 ---
 # Get-AzBareMetal
 
@@ -153,7 +153,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.BareMetal.Models.Api20210809.IAzureBareMetalInstance
 
-## CATATAN
+## NOTES
 
 ALIAS
 

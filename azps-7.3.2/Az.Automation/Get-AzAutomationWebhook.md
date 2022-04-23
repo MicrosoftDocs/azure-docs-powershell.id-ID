@@ -10,8 +10,8 @@ ms.openlocfilehash: 81da456d02a3724802d5c90788c6d7188ae0a808
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142074271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143370773"
 ---
 # Get-AzAutomationWebhook
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Webhook
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

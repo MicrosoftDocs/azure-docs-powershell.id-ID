@@ -10,8 +10,8 @@ ms.openlocfilehash: c55fb1af95b1c0f85e2b36732f6235ad0c6c78d0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142057014"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143362511"
 ---
 # Get-AzVpnClientRootCertificate
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ###  
 **Get-AzVpnClientRootCertificate** mendapatkan instance objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

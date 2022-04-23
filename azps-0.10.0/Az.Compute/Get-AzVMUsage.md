@@ -10,8 +10,8 @@ ms.openlocfilehash: 66a74ed2fa389c0dd39fa9fc86570ff8d68dc1dc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918323"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143363195"
 ---
 # Get-AzVMUsage
 
@@ -80,7 +80,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSUsage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

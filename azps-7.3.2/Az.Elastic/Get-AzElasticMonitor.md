@@ -9,8 +9,8 @@ ms.openlocfilehash: 936a5c0de13dbec0838c26d71d6831c115a65dd2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142471319"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143336933"
 ---
 # Get-AzElasticMonitor
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IElasticMonitorResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

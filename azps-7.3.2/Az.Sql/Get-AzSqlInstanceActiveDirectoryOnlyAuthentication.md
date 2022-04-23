@@ -9,8 +9,8 @@ ms.openlocfilehash: 1bf536db09f40dfc809c39b53a880850229cadb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142339955"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143326061"
 ---
 # Get-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
@@ -171,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.InstanceActiveDirectoryOnlyAuthentication.Model.AzureSqlInstanceActiveDirectoryOnlyAuthenticationModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

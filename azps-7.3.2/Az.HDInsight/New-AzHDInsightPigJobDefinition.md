@@ -10,8 +10,8 @@ ms.openlocfilehash: d6660a2549333d35c9b374865ec92d57acde95f1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142069771"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143336429"
 ---
 # New-AzHDInsightPigJobDefinition
 
@@ -158,7 +158,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightPigJobDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

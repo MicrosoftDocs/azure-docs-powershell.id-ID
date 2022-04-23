@@ -9,8 +9,8 @@ ms.openlocfilehash: 18cb97d0b03eec1a975c539294d9e92622d3999b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142110923"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143337059"
 ---
 # Stop-AzDiskPool
 
@@ -226,7 +226,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

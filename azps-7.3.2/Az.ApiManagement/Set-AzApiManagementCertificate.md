@@ -10,8 +10,8 @@ ms.openlocfilehash: 8bebe70561de0123367fb577af677c3e1c483b83
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143371106"
 ---
 # Set-AzApiManagementCertificate
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
