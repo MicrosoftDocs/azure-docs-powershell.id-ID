@@ -9,8 +9,8 @@ ms.openlocfilehash: bcb0d59c564087e02cd152c1ae76f38c91f33e80
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092663"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143153611"
 ---
 # Remove-AzRouteFilterRuleConfig
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSRouteFilterRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

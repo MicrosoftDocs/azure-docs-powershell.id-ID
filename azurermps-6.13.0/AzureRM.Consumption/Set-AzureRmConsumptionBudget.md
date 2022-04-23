@@ -9,8 +9,8 @@ ms.openlocfilehash: f416a6cef4888e51dfabbc9f34b4afad9dbd7370
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142358365"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143108981"
 ---
 # Set-AzureRmConsumptionBudget
 
@@ -434,6 +434,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

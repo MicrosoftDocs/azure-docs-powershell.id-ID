@@ -9,8 +9,8 @@ ms.openlocfilehash: 7d7663d2f9c5010db01f69452085f8f5dd5aaae9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141956679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143148473"
 ---
 # Get-AzEventHub
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

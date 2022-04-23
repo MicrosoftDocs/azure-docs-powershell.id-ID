@@ -9,8 +9,8 @@ ms.openlocfilehash: aec7aa2cf559dfbe678c6cd72153e07659dc156f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142475135"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143148509"
 ---
 # New-AzEventGridDomain
 
@@ -266,6 +266,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.EventGrid.Models.PSDomain
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

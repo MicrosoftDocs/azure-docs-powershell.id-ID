@@ -9,13 +9,13 @@ ms.openlocfilehash: 9acb6b26465bd23da71a073089fdf11e89345b8a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142221931"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143141057"
 ---
 # Get-AzStorageBlobQueryResult
 
 ## SYNOPSIS
-Menerapkan pernyataan Sederhana Structured Query Language (SQL) pada konten blob dan hanya menyimpan subkumpulan data yang dikueri ke file lokal.
+Menerapkan pernyataan Bahasa Permintaan Terstruktur sederhana (SQL) pada konten blob dan hanya menyimpan subkumpulan data yang dikueri ke file lokal.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobqueryresult) untuk informasi terbaru.
@@ -55,7 +55,7 @@ Get-AzStorageBlobQueryResult -BlobContainerClient <BlobContainerClient> [-Blob] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageBlobQueryResult** menerapkan pernyataan Sederhana Structured Query Language (SQL) pada konten blob dan menyimpan subset data yang dikueri ke file lokal.
+Cmdlet **Get-AzStorageBlobQueryResult** menerapkan pernyataan Bahasa Permintaan Terstruktur sederhana (SQL) pada konten blob dan menyimpan subset data yang dikueri ke file lokal.
 
 ## EXAMPLES
 
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Objek Konteks Penyimpanan Azure
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -401,9 +401,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Azure.Storage.Blobs.Specialized.BlobBaseClient
+### Azure. Storage. Blobs.Specialized.BlobBaseClient
 
-### Azure.Storage.Blobs.BlobContainerClient
+### Azure. Storage. Blobs.BlobContainerClient
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
@@ -411,6 +411,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

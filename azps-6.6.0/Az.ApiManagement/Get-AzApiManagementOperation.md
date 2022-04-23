@@ -10,8 +10,8 @@ ms.openlocfilehash: 21e6b30ddd00ee0fedb8853e76301dd122a948a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307851"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099117"
 ---
 # Get-AzApiManagementOperation
 
@@ -48,7 +48,7 @@ PS C:\>Get-AzApiManagementOperation -Context $apimContext -ApiId $APIId
 
 Perintah ini mendapatkan semua operasi manajemen API.
 
-### Contoh 2: Dapatkan operasi Manajemen API menurut ID operasi
+### Contoh 2: Dapatkan operasi API Management menurut ID operasi
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementOperation -Context $apimContext -ApiId $APIId -OperationId "Operation003"
@@ -146,7 +146,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

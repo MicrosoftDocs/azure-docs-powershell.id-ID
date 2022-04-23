@@ -9,8 +9,8 @@ ms.openlocfilehash: bb1152281fe678ac89c7dd477b3bd9cc96ca583b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141957183"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143148887"
 ---
 # New-AzIoTDeviceProvisioningService
 
@@ -226,6 +226,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

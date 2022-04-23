@@ -9,8 +9,8 @@ ms.openlocfilehash: f8b200165a325f68a5b143038e7fd3147001fe87
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141939111"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143135657"
 ---
 # New-AzEdgeOrderContactDetailsObject
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.ContactDetails
 
-## CATATAN
+## NOTES
 
 ALIAS
 

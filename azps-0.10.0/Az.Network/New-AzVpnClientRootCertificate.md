@@ -10,8 +10,8 @@ ms.openlocfilehash: bd260deb8e43450b2feacb3c60f34ed6cc4003be
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141916545"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143153837"
 ---
 # New-AzVpnClientRootCertificate
 
@@ -126,7 +126,7 @@ Cmdlet ini tidak menerima input pipelined.
 ###  
 Cmdlet ini membuat instans baru objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate** .
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

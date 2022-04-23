@@ -9,8 +9,8 @@ ms.openlocfilehash: 147e1d0e42e45685cc27f881e2f6fdef3e82ec6d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142083757"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143147681"
 ---
 # Get-AzMaintenanceConfiguration
 
@@ -107,6 +107,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Maintenance.Models.PSMaintenanceConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

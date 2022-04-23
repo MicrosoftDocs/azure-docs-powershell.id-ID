@@ -9,8 +9,8 @@ ms.openlocfilehash: 91dd4ff310bab19c64ac07420b2e3cdbb44a3ed5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141905061"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143142227"
 ---
 # New-AzServiceFabricManagedClusterApplication
 
@@ -282,6 +282,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedApplication
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

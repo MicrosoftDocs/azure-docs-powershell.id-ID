@@ -10,8 +10,8 @@ ms.openlocfilehash: 75725505e7c5239f1b5dc8f05d4cdfe3cf2b4903
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092864"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143154053"
 ---
 # Get-AzVirtualNetworkPeering
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

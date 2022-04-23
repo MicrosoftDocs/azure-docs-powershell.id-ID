@@ -9,8 +9,8 @@ ms.openlocfilehash: e0510f83d6c4af848404aa539e004970fc88a89e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434088"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143127575"
 ---
 # Set-AzVmssOrchestrationServiceState
 
@@ -224,6 +224,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSOperationStatusResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

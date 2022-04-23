@@ -9,8 +9,8 @@ ms.openlocfilehash: 0ab81664c59e51d4490cf8389246844074da600c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141998730"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125793"
 ---
 # New-AzDataBoxManagedDiskDetailsObject
 
@@ -113,7 +113,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.ManagedDiskDetails
 
-## CATATAN
+## NOTES
 
 ALIAS
 

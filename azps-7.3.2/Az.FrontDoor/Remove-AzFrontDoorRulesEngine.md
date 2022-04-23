@@ -9,8 +9,8 @@ ms.openlocfilehash: 5a0c1b0e25e27f441e3b0dd70e43e90e323437f8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142293685"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143134937"
 ---
 # Remove-AzFrontDoorRulesEngine
 
@@ -216,6 +216,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

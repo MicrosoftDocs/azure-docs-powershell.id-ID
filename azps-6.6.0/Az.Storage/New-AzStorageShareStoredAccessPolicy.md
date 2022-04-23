@@ -10,8 +10,8 @@ ms.openlocfilehash: 4f555d9dea3afdbaa38a8b39e2f9fe243c92647d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142264435"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143140805"
 ---
 # New-AzStorageShareStoredAccessPolicy
 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

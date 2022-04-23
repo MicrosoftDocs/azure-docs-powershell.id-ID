@@ -9,8 +9,8 @@ ms.openlocfilehash: 0a316ee8e4d1d7c8d58e2444aa6cdfadbc5e0367
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967291"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159381"
 ---
 # Get-AzureRmStorageAccountNetworkRuleSet
 
@@ -96,6 +96,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSNetworkRuleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

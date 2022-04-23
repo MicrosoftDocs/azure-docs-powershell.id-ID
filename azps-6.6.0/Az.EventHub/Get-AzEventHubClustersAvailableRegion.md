@@ -9,8 +9,8 @@ ms.openlocfilehash: b406f621c1ad0626a6a4833939830ff9e561ac9c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232569"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143148455"
 ---
 # Get-AzEventHubClustersAvailableRegion
 
@@ -87,6 +87,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.EventHub.Models.PSEventHubsAvailableCluster, Microsoft.Azure.PowerShell.Cmdlets.EventHub, Version=1.5.0.0, Culture=netral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

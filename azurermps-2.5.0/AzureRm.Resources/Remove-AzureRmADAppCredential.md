@@ -8,8 +8,8 @@ ms.openlocfilehash: 0e442687604b99249f7e64a1c6d1fd4db91c38b9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927473"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143111948"
 ---
 # Remove-AzureRmADAppCredential
 
@@ -257,7 +257,7 @@ Parameter: ApplicationObject (ByValue)
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
