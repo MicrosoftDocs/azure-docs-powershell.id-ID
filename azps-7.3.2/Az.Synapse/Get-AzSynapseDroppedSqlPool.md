@@ -9,8 +9,8 @@ ms.openlocfilehash: 95ad959ac367ada9bd130593b2e325df701c53bb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142337363"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143323109"
 ---
 # Get-AzSynapseDroppedSqlPool
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Synapse.Models.PSDroppedSqlPoolBackupModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

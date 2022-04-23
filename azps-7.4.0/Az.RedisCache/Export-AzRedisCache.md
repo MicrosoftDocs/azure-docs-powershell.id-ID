@@ -10,13 +10,13 @@ ms.openlocfilehash: 2dd577165d667013a99c8d9caea926fbbe9491fc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142175154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310203"
 ---
 # Export-AzRedisCache
 
 ## SYNOPSIS
-Mengekspor data dari Azure Redis Cache ke wadah.
+Mengekspor data dari Azure Redis Cache ke kontainer.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Export-AzRedisCache [-ResourceGroupName <String>] -Name <String> -Prefix <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzRedisCache** mengekspor data dari Azure Redis Cache ke wadah.
+Cmdlet **Export-AzRedisCache** mengekspor data dari Azure Redis Cache ke kontainer.
 
 ## EXAMPLES
 
@@ -36,12 +36,12 @@ Cmdlet **Export-AzRedisCache** mengekspor data dari Azure Redis Cache ke wadah.
 Export-AzRedisCache -ResourceGroupName "ResourceGroup13" -Name "RedisCache06" -Prefix "blobprefix" -Container "https://mystorageaccount.blob.core.windows.net/container18?sv=2015-04-05&sr=c&sig=HezZtBZ3DURmEGDduauE7pvETY4kqlPI8JCNa8ATmaw%3D&st=2016-05-27T00%3A00%3A00Z&se=2016-05-28T00%3A00%3A00Z&sp=rwdl"
 ```
 
-Perintah ini mengekspor data dari instans Cache Azure Redis ke dalam wadah yang ditentukan oleh URL SAS.
+Perintah ini mengekspor data dari instans Azure Redis Cache ke dalam kontainer yang ditentukan oleh URL SAS.
 
 ## PARAMETERS
 
 ### -Kontainer
-Menentukan URL kontainer Service SAS tempat cmdlet ini mengekspor data. Anda dapat membuat URL SAS Layanan menggunakan perintah PowerShell berikut: $storageAccountContext = New-AzStorageContext -StorageAccountName "storageName" -StorageAccountKey "key" $sasKeyForContainer = New-AzStorageContainerSASToken -Name "containername" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri Export-AzRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Prefix "blobprefix" -Container ($sasKeyForContainer)
+Menentukan URL LAYANAN SAS kontainer tempat cmdlet ini mengekspor data. Anda dapat membuat URL SAS Layanan menggunakan perintah PowerShell berikut: $storageAccountContext = New-AzStorageContext -StorageAccountName "storageName" -StorageAccountKey "key" $sasKeyForContainer = New-AzStorageContainerSASToken -Name "containername" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri Export-AzRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Prefix "blobprefix" -Container ($sasKeyForContainer)
 
 ```yaml
 Type: System.String
@@ -86,8 +86,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama singgahan.
+### -Name
+Menentukan nama cache.
 
 ```yaml
 Type: System.String
@@ -117,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prefiks
-Menentukan prefiks yang digunakan untuk nama blob.
+### -Awalan
+Menentukan awalan yang akan digunakan untuk nama blob.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi singgahan.
+Menentukan nama grup sumber daya yang berisi cache.
 
 ```yaml
 Type: System.String
@@ -147,8 +147,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -188,18 +188,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
+## NOTES
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS
 
-[Impor-AzRedisCache](./Import-AzRedisCache.md)
+[Import-AzRedisCache](./Import-AzRedisCache.md)
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
-[Atur Ulang-AzRedisCache](./Reset-AzRedisCache.md)
+[Reset-AzRedisCache](./Reset-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)
 

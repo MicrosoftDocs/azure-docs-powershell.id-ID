@@ -9,13 +9,13 @@ ms.openlocfilehash: fcf5f0fae7560e8f502b6eae4fc49ad597e783d1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141990731"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310185"
 ---
 # Get-AzRedisCacheFirewallRule
 
 ## SYNOPSIS
-Atur aturan firewall di Redis Cache.
+Dapatkan aturan firewall yang ditetapkan di Redis Cache.
 
 ## SYNTAX
 
@@ -25,11 +25,11 @@ Get-AzRedisCacheFirewallRule [-ResourceGroupName <String>] -Name <String> [-Rule
 ```
 
 ## DESCRIPTION
-Jika parameter **RuleName** jika disediakan, cmdlet **Get-AzRedisCacheFirewallRule** mendapatkan detail tentang aturan firewall tertentu di Azure Redis Cache. Jika hanya **Nama** yang ditentukan operasi ini mendapatkan semua aturan firewall yang tersedia di Singgahan Redis tersebut.
+Jika parameter **RuleName** jika disediakan, cmdlet **Get-AzRedisCacheFirewallRule** mendapatkan detail tentang aturan firewall yang ditentukan di Azure Redis Cache. Jika hanya **Nama** yang ditentukan, operasi ini mendapatkan semua aturan firewall yang tersedia di Redis Cache tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan firewall tunggal
+### Contoh 1: Mendapatkan satu aturan firewall
 ```powershell
 Get-AzRedisCacheFirewallRule -Name "mycache" -RuleName "ruleone"
 ```
@@ -88,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama singgahan redis.
+### -Name
+Nama cache redis.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana singgahan ada.
+Nama grup sumber daya tempat cache ada.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -144,18 +144,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RedisCache.Models.PSRedisFirewallRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [New-AzRedisCacheFirewallRule](./New-AzRedisCacheFirewallRule.md)
 
-[Hapus-AzRedisCacheFirewallRule](./Remove-AzRedisCacheFirewallRule.md)
+[Remove-AzRedisCacheFirewallRule](./Remove-AzRedisCacheFirewallRule.md)
 
 [Get-AzRedisCache](./Get-AzRedisCache.md)
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)

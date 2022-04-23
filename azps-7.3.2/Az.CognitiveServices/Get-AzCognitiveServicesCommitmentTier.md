@@ -9,8 +9,8 @@ ms.openlocfilehash: 569dbde1490a2d9a46081c18fed322ffe1d12bb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141943467"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143290745"
 ---
 # Get-AzCognitiveServicesCommitmentTier
 
@@ -82,6 +82,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.CognitiveServices.Models.CommitmentTier
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

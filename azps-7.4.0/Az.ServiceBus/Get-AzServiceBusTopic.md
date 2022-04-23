@@ -9,8 +9,8 @@ ms.openlocfilehash: 66db8fc1bc7302284fc2dfe393aad40e70ec327c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141829606"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143274041"
 ---
 # Get-AzServiceBusTopic
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSTopicAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 69c57667a087f71c1003df60fd621354c2e5bb86
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994343"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143310239"
 ---
 # Wait-AzRecoveryServicesBackupJob
 
@@ -29,14 +29,14 @@ Wait-AzRecoveryServicesBackupJob [-Job] <Object> [[-Timeout] <Int64>] [-VaultId 
 ## DESCRIPTION
 
 Cmdlet **Wait-AzRecoveryServicesBackupJob** menunggu pekerjaan Azure Backup selesai.
-Pencadangan dapat memakan waktu lama.
-Jika Anda menjalankan pekerjaan cadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum berlanjut ke tugas lain.
-Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada skrip yang menjajaki layanan Cadangan untuk status pekerjaan.
-Mengatur konteks kubah menggunakan parameter -VaultId.
+Pekerjaan pencadangan dapat memakan waktu lama.
+Jika Anda menjalankan pekerjaan pencadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum berlanjut ke tugas lain.
+Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada skrip yang melakukan polling layanan Backup untuk status pekerjaan.
+Atur konteks vault dengan menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
-### Contoh 1: Tunggu hingga pekerjaan selesai
+### Contoh 1: Tunggu pekerjaan selesai
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -44,7 +44,7 @@ $Jobs = Get-AzRecoveryServicesBackupJob -Status InProgress -VaultId $vault.ID
 Wait-AzRecoveryServicesBackupJob -Job $Jobs[0] -VaultId $vault.ID -Timeout 3600
 ```
 
-Skrip ini menjajaki pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan telah selesai atau jangka waktu habis 1 jam kedaluwarsa.
+Skrip ini melakukan polling pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan selesai atau periode batas waktu 1 jam kedaluwarsa.
 
 ## PARAMETERS
 
@@ -64,9 +64,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Job
+### -Pekerjaan
 
-Menentukan pekerjaan yang harus ditunggu.
+Menentukan pekerjaan yang akan ditunggu.
 Untuk mendapatkan objek **BackupJob** , gunakan cmdlet **Get-AzRecoveryServicesBackupJob** .
 
 ```yaml
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 
 ### -Waktu habis
 
-Menentukan waktu maksimum, dalam detik, cmdlet ini menunggu pekerjaan selesai.
-Disarankan untuk menentukan nilai batas waktu.
+Menentukan waktu maksimum, dalam detik, bahwa cmdlet ini menunggu pekerjaan selesai.
+Disarankan untuk menentukan nilai waktu habis.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -127,7 +127,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
