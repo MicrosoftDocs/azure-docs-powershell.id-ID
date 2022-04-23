@@ -9,8 +9,8 @@ ms.openlocfilehash: a2c4c72f93597f3275e9edb1fecb6139eafbeb50
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779015"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143218943"
 ---
 # Get-AzureRmIotHubCertificateVerificationCode
 
@@ -185,6 +185,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSCertificateWithNonceDescription
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: c0c4522b3651403ccbf184dcdcf1ec84c750e8f8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142473929"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143256221"
 ---
 # Update-AzImportExport
 
@@ -530,7 +530,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IJobResponse
 
-## CATATAN
+## NOTES
 
 ALIAS
 

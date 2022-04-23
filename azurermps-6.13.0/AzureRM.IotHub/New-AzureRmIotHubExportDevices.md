@@ -9,8 +9,8 @@ ms.openlocfilehash: 4c13a6366f0ccae803e8020f16bf2b566bd70934
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141884612"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143218853"
 ---
 # New-AzureRmIotHubExportDevices
 
@@ -29,12 +29,12 @@ New-AzureRmIotHubExportDevices [-ResourceGroupName] <String> [-Name] <String>
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat ekspor baru untuk IotHub.
-Tindakan ini akan mengekspor semua perangkat ke wadah yang ditentukan. Lihat artikel berikut tentang cara menghasilkan URI SAS.
+Ini akan mengekspor semua perangkat ke kontainer yang ditentukan. Lihat artikel berikut tentang cara membuat URI SAS.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES
 
-### Contoh 1 Menerbitkan permintaan perangkat ekspor.
+### Contoh 1 Mengeluarkan permintaan perangkat ekspor.
 ```
 PS C:\> New-AzureRmIotHubExportDevices -ResourceGroupName "myresourcegroup" -Name "myiothub" -ExportBlobContainerUri "https://mystorageaccount.blob.core.windows.net/mystoragecontainer?sv=2015-04-05&ss=bfqt&sr=c&srt=sco&sp=rwdl&se=2016-10-27T04:01:48Z&st=2016-10-26T20:01:48Z&spr=https&sig=QqpIhHsIMF8hNuFO%3D" -ExcludeKeys
 ```
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportBlobContainerUri
-Uri untuk mengekspor blob ke. 
+Uri untuk mengekspor blob. 
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -118,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubJobResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 8f4ef8e222d140efe93a479d342a0ac07b90418d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142082029"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143255879"
 ---
 # Add-AzLoadBalancerInboundNatRuleConfig
 
@@ -271,7 +271,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
