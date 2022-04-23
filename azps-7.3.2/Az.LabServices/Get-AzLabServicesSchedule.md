@@ -9,8 +9,8 @@ ms.openlocfilehash: ff8dab44d80338ed644600854e330ec859f3f1b4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142068475"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143335187"
 ---
 # Get-AzLabServicesSchedule
 
@@ -200,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.ISchedule
 
-## CATATAN
+## NOTES
 
 ALIAS
 
