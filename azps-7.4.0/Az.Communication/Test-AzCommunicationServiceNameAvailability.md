@@ -9,8 +9,8 @@ ms.openlocfilehash: 02552dad66f4895e18fe2be0e7ef471d8cdf394f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426467"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143128385"
 ---
 # Test-AzCommunicationServiceNameAvailability
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.Api20200820.INameAvailability
 
-## CATATAN
+## NOTES
 
 ALIAS
 

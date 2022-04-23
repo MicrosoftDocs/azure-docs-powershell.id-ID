@@ -9,8 +9,8 @@ ms.openlocfilehash: 73dd0ec70f2a39f9d96625e8ac5685301b38176f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141886664"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143109407"
 ---
 # Repair-AzureRmVmssServiceFabricUpdateDomain
 
@@ -220,6 +220,6 @@ Parameter: VirtualMachineScaleSet (ByValue)
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRecoveryWalkResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: c8b51f3822ce52fd21aa1d2b8df45d11108d713a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100721"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143110322"
 ---
 # Get-AzureBatchJobSchedule
 
@@ -231,7 +231,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCloudJobSchedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

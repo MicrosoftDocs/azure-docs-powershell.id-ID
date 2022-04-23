@@ -9,8 +9,8 @@ ms.openlocfilehash: 5550706892d03e180222108b8f6e86294048ff9e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141938679"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143134541"
 ---
 # New-AzHDInsightIPConfiguration
 
@@ -150,6 +150,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 17855e0aec6bf1465459295bb5a7669b5cbf14d5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434038"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143127143"
 ---
 # Remove-AzConnectedNetworkFunction
 
@@ -223,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

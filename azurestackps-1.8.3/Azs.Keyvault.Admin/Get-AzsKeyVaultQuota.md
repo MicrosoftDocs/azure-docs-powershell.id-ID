@@ -7,8 +7,8 @@ ms.openlocfilehash: 435db6fd34e36e6c65b9086b7ac1935f60d86c06
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142353527"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143156969"
 ---
 # Get-AzsKeyVaultQuota
 
@@ -59,6 +59,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.KeyVault.Admin.Models.Quota
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

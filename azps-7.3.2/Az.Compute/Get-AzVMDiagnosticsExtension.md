@@ -10,8 +10,8 @@ ms.openlocfilehash: e74d27c6e6d0d83cb9e36872c6a4035f9e94efd0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142072705"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143137493"
 ---
 # Get-AzVMDiagnosticsExtension
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineExtension
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: fce77ab0faab01af656a33c2add458fb2124e613
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141871268"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143151137"
 ---
 # Get-AzVMAccessExtension
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.VirtualMachineAccessExtensionContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

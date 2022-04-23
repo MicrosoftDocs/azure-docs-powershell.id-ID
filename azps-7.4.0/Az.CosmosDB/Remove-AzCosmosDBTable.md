@@ -9,8 +9,8 @@ ms.openlocfilehash: 816446381584af5ae649f0b2c6745cc5f58d4e40
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142425794"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143126171"
 ---
 # Remove-AzCosmosDBTable
 
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

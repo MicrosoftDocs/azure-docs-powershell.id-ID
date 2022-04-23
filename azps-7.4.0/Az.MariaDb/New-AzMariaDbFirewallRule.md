@@ -9,8 +9,8 @@ ms.openlocfilehash: 2bbeae6ace876effe1ec1dead1eb875754ad4884
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432227"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143120393"
 ---
 # New-AzMariaDbFirewallRule
 
@@ -297,7 +297,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.Api20180601Preview.IFirewallRule
 
-## CATATAN
+## NOTES
 
 ALIAS
 

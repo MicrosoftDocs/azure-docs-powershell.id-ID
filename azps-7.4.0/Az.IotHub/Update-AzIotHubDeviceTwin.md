@@ -9,8 +9,8 @@ ms.openlocfilehash: 08ebf3d7e8e43b8c057df7f8499a6a6feac71c57
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141836560"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121473"
 ---
 # Update-AzIotHubDeviceTwin
 
@@ -257,6 +257,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

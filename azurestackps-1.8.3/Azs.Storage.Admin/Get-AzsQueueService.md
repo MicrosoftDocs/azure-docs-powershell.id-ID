@@ -7,8 +7,8 @@ ms.openlocfilehash: 7d6bd071f4e1d61fdf2d682459dbe8baa57b5276
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814118"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143156933"
 ---
 # Get-AzsQueueService
 
@@ -74,6 +74,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management. Storage. Admin.Models.QueueService
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

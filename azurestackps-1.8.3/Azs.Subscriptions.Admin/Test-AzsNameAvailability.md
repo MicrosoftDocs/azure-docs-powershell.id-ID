@@ -7,8 +7,8 @@ ms.openlocfilehash: a4bd00dc1709a3060da9777ab4755ae1c6a28ec4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142239625"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143156699"
 ---
 # Test-AzsNameAvailability
 
@@ -74,7 +74,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Subscriptions.Admin.Models.CheckNameAvailabilityResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

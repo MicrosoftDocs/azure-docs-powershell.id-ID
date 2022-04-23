@@ -7,8 +7,8 @@ ms.openlocfilehash: 7241e072109583b7afc24fc3f69746599bd67c53
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104566"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114926"
 ---
 # Set-AzureRmDeploymentManagerStep
 
@@ -111,6 +111,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSStepResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

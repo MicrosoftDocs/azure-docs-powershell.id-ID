@@ -9,8 +9,8 @@ ms.openlocfilehash: 6f8598883b7ed98250c9a22d693caf323fef61e3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170626"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143115425"
 ---
 # New-AzVMwareCluster
 
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.ICluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 

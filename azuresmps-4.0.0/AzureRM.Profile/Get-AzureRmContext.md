@@ -6,8 +6,8 @@ ms.openlocfilehash: 47523664195913a7a3d24a21a9804b035b88acf5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142354058"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143157630"
 ---
 # Get-AzureRmContext
 
@@ -57,7 +57,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSAzureContext
 Cmdlet ini mengembalikan cmdlet akun, penyewa, dan langganan yang digunakan oleh Cmdlet Azure Resource Manager.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

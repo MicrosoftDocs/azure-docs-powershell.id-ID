@@ -9,13 +9,13 @@ ms.openlocfilehash: fbc8f4af6b637fd09dc5cd40aeb55e4154783ad5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141860072"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143143199"
 ---
 # Get-AzSecurityTask
 
 ## SYNOPSIS
-Mendapatkan tugas keamanan yang Azure Security Center sarankan Anda lakukan untuk memperkuat postur keamanan Anda.
+Mendapatkan tugas keamanan yang direkomendasikan Pusat Keamanan Azure untuk Anda lakukan guna memperkuat postur keamanan Anda.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritytask) untuk informasi terbaru.
@@ -49,8 +49,8 @@ Get-AzSecurityTask -ResourceId <String> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Azure Security Center memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
-Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang Azure Security Center rekomendasikan untuk Anda lakukan.
+Pusat Keamanan Azure memindai sumber daya Anda untuk mendeteksi potensi masalah keamanan.
+Cmdlet ini memungkinkan Anda menemukan tugas keamanan yang disarankan oleh Pusat Keamanan Azure.
 
 ## EXAMPLES
 
@@ -173,6 +173,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Tasks.PSSecurityTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

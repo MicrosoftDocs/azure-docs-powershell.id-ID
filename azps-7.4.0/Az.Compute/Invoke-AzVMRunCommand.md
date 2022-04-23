@@ -9,8 +9,8 @@ ms.openlocfilehash: 9f1d6b429d537406322e65461c6fcb7399393ffe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142434251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143128043"
 ---
 # Invoke-AzVMRunCommand
 
@@ -50,7 +50,7 @@ Memanggil perintah jalankan pada VM.
 Invoke-AzVMRunCommand -ResourceGroupName 'rgname' -VMName 'vmname' -CommandId 'RunPowerShellScript' -ScriptPath 'sample.ps1' -Parameter @{param1 = "var1"; param2 = "var2"}
 ```
 
-Gunakan perintah jalankan 'RunPowerShellScript' dengan menimpa skrip 'sample.ps1' pada Windows VM bernama 'vmname' dalam grup sumber daya 'rgname'. Var1 dan var2 didefinisikan sebagai parameter dalam sample.ps1. Nilai parameter hanya dapat berupa tipe string dan skrip bertanggung jawab untuk mengonversinya ke tipe lain jika diperlukan. 
+Gunakan perintah jalankan 'RunPowerShellScript' dengan menimpa skrip 'sample.ps1' pada VM Windows bernama 'vmname' dalam grup sumber daya 'rgname'. Var1 dan var2 didefinisikan sebagai parameter dalam sample.ps1. Nilai parameter hanya dapat berupa tipe string dan skrip bertanggung jawab untuk mengonversinya ke tipe lain jika diperlukan. 
 
 ### Contoh 2: Memanggil perintah di Linux
 ```powershell
@@ -247,6 +247,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRunCommandResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

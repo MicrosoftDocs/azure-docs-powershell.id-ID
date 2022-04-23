@@ -8,8 +8,8 @@ ms.openlocfilehash: 3e42cf7c2be8433d9e1b7e85987e53b9f0050038
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142394012"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143114219"
 ---
 # New-AzureRmVMConfig
 
@@ -227,7 +227,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

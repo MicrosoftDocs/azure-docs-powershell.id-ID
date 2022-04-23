@@ -9,8 +9,8 @@ ms.openlocfilehash: b9109483e3d75177fe00619e4c805b48ee3fe5cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003654"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143127503"
 ---
 # Set-AzVmssUefi
 
@@ -116,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

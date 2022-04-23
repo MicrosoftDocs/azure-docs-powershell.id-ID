@@ -9,8 +9,8 @@ ms.openlocfilehash: e7d9b8610b42b383b57f88b4fc395f2133e8c896
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141945447"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143140337"
 ---
 # Remove-AzSynapseTriggerSubscription
 
@@ -234,6 +234,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 920a3bbc02360a0ed771e7120b7d0b9455e08e45
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141844826"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143110321"
 ---
 # Enable-AzureBatchAutoScale
 
@@ -135,7 +135,7 @@ Parameter: BatchContext (ByValue)
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

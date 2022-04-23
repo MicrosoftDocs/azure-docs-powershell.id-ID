@@ -8,8 +8,8 @@ ms.openlocfilehash: cd83d61c64e4111faf7fc6149107e172d0cf0c9f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141928958"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143113489"
 ---
 # Backup-AzureKeyVaultSecret
 
@@ -202,7 +202,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### String
 Cmdlet mengembalikan jalur file output yang berisi cadangan kunci.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

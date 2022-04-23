@@ -8,8 +8,8 @@ ms.openlocfilehash: e18605025273855ada65d83302be7cc1972158ca
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433323"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143115083"
 ---
 # Remove-AzWebAppAccessRestrictionRule
 
@@ -283,7 +283,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.WebApps.Models.PSAccessRestrictionConfig
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
