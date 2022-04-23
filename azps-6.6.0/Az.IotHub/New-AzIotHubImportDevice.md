@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubImportDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubImportDevice.md
 ms.openlocfilehash: 3247c6198104acaf10003f542ead38d16df5e055
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140253709"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143347751"
 ---
 # New-AzIotHubImportDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "140253709"
 Membuat pekerjaan perangkat impor baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/new-aziothubimportdevice) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubimportdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzIotHubImportDevice [-ResourceGroupName] <String> [-Name] <String> [-InputB
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat impor baru untuk IotHub.
-Ini akan mengimpor semua perangkat ke IotHub dari wadah yang ditentukan. Lihat artikel berikut tentang cara menghasilkan URI SAS.
+Ini akan mengimpor semua perangkat ke IotHub dari kontainer yang ditentukan. Lihat artikel berikut tentang cara membuat URI SAS.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES
@@ -40,12 +40,12 @@ https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-cont
 PS C:\> New-AzIotHubImportDevice -ResourceGroupName "myresourcegroup" -Name "myiothub" -InputBlobContainerUri "https://mystorageaccount.blob.core.windows.net/mystoragecontainer?sv=2015-04-05&ss=bfqt&sr=c&srt=sco&sp=rwdl&se=2016-10-27T04:01:48Z&st=2016-10-26T20:01:48Z&spr=https&sig=QqpIhHsIMF8hNuFO%3D" -OutputBlobContainerUri "https://mystorageaccount.blob.core.windows.net/?sv=2015-04-05&ss=bfqt&sr=c&srt=sco&sp=rwdl&se=2016-10-27T04:01:48Z&st=2016-10-26T20:01:48Z&spr=https&sig=QqpIhHsIMF8hNuFO%3D"
 ```
 
-Membuat permintaan perangkat impor baru untuk "myiothub" IotHub.
+Membuat permintaan perangkat impor baru untuk IotHub "myiothub".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputBlobContainerUri
-Input Blob Container Uri untuk FileUpload
+Input Uri Kontainer Blob untuk FileUpload
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IotHub
 
 ```yaml
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobContainerUri
-Uri untuk menulis outputnya. 
+Uri untuk menulis output. 
 
 ```yaml
 Type: System.String
@@ -119,8 +119,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubJobResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: 9b5b052e146b62c4e3c25697c244dcef42b87ccf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142348829"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143368361"
 ---
 # New-AzCdnEndpoint
 
@@ -649,7 +649,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

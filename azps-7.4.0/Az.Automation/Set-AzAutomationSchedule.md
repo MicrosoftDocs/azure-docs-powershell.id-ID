@@ -10,8 +10,8 @@ ms.openlocfilehash: d62c0f8206b7d74c05678fb1c0c77e565b8acb21
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426847"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143319707"
 ---
 # Set-AzAutomationSchedule
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.Schedule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

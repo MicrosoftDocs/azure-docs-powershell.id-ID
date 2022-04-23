@@ -9,8 +9,8 @@ ms.openlocfilehash: 8520c38eb849d7833d9245d663fb9e50c393e31c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142328858"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143361251"
 ---
 # Get-AzIotHubRegistryStatistic
 
@@ -95,6 +95,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubRegistryStatistics
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

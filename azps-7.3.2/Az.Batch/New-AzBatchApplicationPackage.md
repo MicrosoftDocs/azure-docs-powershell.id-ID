@@ -10,8 +10,8 @@ ms.openlocfilehash: 72b89779998a76957b1b5c7743b03e58e9c945af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142219141"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143340983"
 ---
 # New-AzBatchApplicationPackage
 
@@ -38,7 +38,7 @@ New-AzBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchApplicationPackage** membuat paket aplikasi di akun Azure Batch.
+Cmdlet **New-AzBatchApplicationPackage** membuat paket aplikasi dalam akun Azure Batch.
 
 ## EXAMPLES
 
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSApplicationPackage
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

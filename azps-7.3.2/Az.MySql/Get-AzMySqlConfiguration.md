@@ -9,8 +9,8 @@ ms.openlocfilehash: d74efaa6fa8dc7d9cf3b7f38d64456fa1fc5bf3b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142290949"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143333135"
 ---
 # Get-AzMySqlConfiguration
 
@@ -178,7 +178,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20171201.IConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

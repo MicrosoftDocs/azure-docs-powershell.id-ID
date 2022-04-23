@@ -10,13 +10,13 @@ ms.openlocfilehash: 9d3ecc29c2228176d60eb4a587956828d7890127
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142169911"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143319851"
 ---
 # Register-AzAutomationDscNode
 
 ## SYNOPSIS
-Mendaftarkan mesin virtual Azure yang menjalankan OS Windows sebagai simpul DSC untuk akun Otomatisasi.
+Mendaftarkan mesin virtual Azure yang menjalankan os Windows sebagai simpul DSC untuk akun Otomatisasi.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Register-AzAutomationDscNode -AzureVMName <String> [-NodeConfigurationName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Register-AzAutomationDscNode** mendaftarkan mesin virtual Azure sebagai node APS Desired State Configuration (DSC) dalam akun Azure Automation. Cmdlet ini hanya akan mendaftarkan VM yang menjalankan WINDOWS OS sebagai Simpul DSC Otomatisasi untuk akun.
+Cmdlet **Register-AzAutomationDscNode** mendaftarkan mesin virtual Azure sebagai node APS Desired State Configuration (DSC) dalam akun Azure Automation. Cmdlet ini hanya akan mendaftarkan VM yang menjalankan Windows OS sebagai Node DSC Otomatisasi untuk akun.
 
 Jika Anda perlu mendaftarkan simpul ke akun otomatisasi dalam langganan yang berbeda, Anda harus menggunakan templat ARM daripada cmdlet. Lihat [dokumentasi](https://docs.microsoft.com/azure/automation/automation-dsc-onboarding#registering-virtual-machines-across-azure-subscriptions) Azure Automation untuk detail selengkapnya.
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowModuleOverwrite
-Menentukan apakah konfigurasi baru yang diunduh simpul DSC ini dari server tarik DSC Azure Automation menggantikan modul yang sudah ada pada simpul target.
+Menentukan apakah konfigurasi baru yang diunduh simpul DSC ini dari Azure Automation server tarik DSC menggantikan modul yang sudah ada pada simpul target.
 
 ```yaml
 Type: System.Boolean
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshFrequencyMins
-Menentukan frekuensi, dalam menit, di mana Manajer Konfigurasi lokal menghubungi server tarik DSC Azure Automation untuk mengunduh konfigurasi simpul terbaru.
+Menentukan frekuensi, dalam menit, di mana Configuration Manager lokal menghubungi server tarik DSC Azure Automation untuk mengunduh konfigurasi simpul terbaru.
 
 ```yaml
 Type: System.Int32
@@ -264,7 +264,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

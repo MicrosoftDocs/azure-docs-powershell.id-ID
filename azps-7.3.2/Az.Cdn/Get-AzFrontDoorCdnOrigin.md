@@ -9,8 +9,8 @@ ms.openlocfilehash: a2e4f5220c4e545e9fdaf9c4d449ce19121ece20
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142259647"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143368397"
 ---
 # Get-AzFrontDoorCdnOrigin
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdOrigin
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

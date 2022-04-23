@@ -9,8 +9,8 @@ ms.openlocfilehash: 4870dd57d950c42062c6951334b422d1c1531ff1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141891818"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143332937"
 ---
 # Remove-AzMySqlFlexibleServerFirewallRule
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

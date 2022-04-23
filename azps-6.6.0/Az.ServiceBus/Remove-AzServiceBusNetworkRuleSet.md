@@ -9,8 +9,8 @@ ms.openlocfilehash: 6a3c136f8737f53aaf43be026e722bb8077d0b20
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142223713"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143353637"
 ---
 # Remove-AzServiceBusNetworkRuleSet
 
@@ -223,6 +223,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

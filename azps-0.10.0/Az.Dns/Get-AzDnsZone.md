@@ -10,8 +10,8 @@ ms.openlocfilehash: fe650e87635d16d3768bd527bf7422fe644c885e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141917661"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143361413"
 ---
 # Get-AzDnsZone
 
@@ -111,7 +111,7 @@ Cmdlet ini tidak memungkinkan Anda untuk menyalurkan input.
 Cmdlet ini mengembalikan objek yang mewakili zona DNS.
 Jika nama zona tidak ditentukan, array objek zona akan dikembalikan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: dd0da8fb867dd014819056f21326e7f6e72485cd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142170067"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143320355"
 ---
 # Set-AzApiManagementApiSchema
 
@@ -41,7 +41,7 @@ Set-AzApiManagementApiSchema -ResourceId <String> [-SchemaDocumentContentType <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApiSchema** mengubah Skema API Manajemen API Azure.
+Cmdlet **Set-AzApiManagementApiSchema** mengubah Skema API Azure API Management.
 
 ## EXAMPLES
 
@@ -265,7 +265,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

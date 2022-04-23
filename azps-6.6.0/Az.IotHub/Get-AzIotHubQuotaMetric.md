@@ -9,8 +9,8 @@ ms.openlocfilehash: aa132e0ccaf81d29cb7d37e22f444379be8c2446
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141867308"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143347859"
 ---
 # Get-AzIotHubQuotaMetric
 
@@ -97,6 +97,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubQuotaMetric
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

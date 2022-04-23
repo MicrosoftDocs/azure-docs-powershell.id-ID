@@ -9,8 +9,8 @@ ms.openlocfilehash: d1b882ac2767de10d70c80b99673020c0341014c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142033013"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143332883"
 ---
 # Test-AzMySqlFlexibleServerConnect
 
@@ -238,7 +238,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 
