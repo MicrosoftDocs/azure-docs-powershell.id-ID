@@ -9,8 +9,8 @@ ms.openlocfilehash: e28856b5825fd9b44ef917f2c995b56731d65226
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141805568"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143150309"
 ---
 # Remove-AzCustomLocation
 
@@ -220,7 +220,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 
