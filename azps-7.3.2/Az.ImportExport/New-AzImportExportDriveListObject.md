@@ -9,8 +9,8 @@ ms.openlocfilehash: a9fd906818fd2933a8360b09a6f3d095087a77de
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142293487"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143336231"
 ---
 # New-AzImportExportDriveListObject
 
@@ -237,7 +237,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IDriveStatus
 
-## CATATAN
+## NOTES
 
 ALIAS
 
