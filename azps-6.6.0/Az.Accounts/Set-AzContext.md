@@ -9,8 +9,8 @@ ms.openlocfilehash: 0f8c6b684de0bf114082160c6a2ac4e9df094dd6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141962493"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143303707"
 ---
 # Set-AzContext
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

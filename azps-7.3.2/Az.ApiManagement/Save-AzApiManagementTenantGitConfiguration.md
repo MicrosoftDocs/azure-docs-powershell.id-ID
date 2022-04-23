@@ -10,8 +10,8 @@ ms.openlocfilehash: e568cc3de4838bbe45c1286204ae4ce6acdd4385
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142115279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143368019"
 ---
 # Save-AzApiManagementTenantGitConfiguration
 
@@ -164,7 +164,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementOperationResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

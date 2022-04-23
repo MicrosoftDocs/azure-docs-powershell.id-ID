@@ -10,8 +10,8 @@ ms.openlocfilehash: c2dc86d26dd6a35fc5830fc37b768ec7e14819a4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141962781"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143303831"
 ---
 # Remove-AzWebAppSSLBinding
 
@@ -246,7 +246,7 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

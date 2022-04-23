@@ -10,8 +10,8 @@ ms.openlocfilehash: 1111412abbfb1790843809a6745af640d783c3af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307833"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143303597"
 ---
 # Get-AzApiManagementProduct
 
@@ -58,7 +58,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Get-AzApiManagementProduct -Context $apimContext
 ```
 
-Perintah ini mendapatkan semua produk Manajemen API.
+Perintah ini mendapatkan semua produk API Management.
 
 ### Contoh 2: Dapatkan produk berdasarkan ID
 ```
@@ -66,7 +66,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Get-AzApiManagementProduct -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini mendapatkan produk Manajemen API berdasarkan ID.
+Perintah ini mendapatkan produk API Management berdasarkan ID.
 
 ## PARAMETERS
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProduct
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

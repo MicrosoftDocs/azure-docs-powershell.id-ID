@@ -9,8 +9,8 @@ ms.openlocfilehash: fd161ef529250d57e23e9638d2ebc71183c71695
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141792193"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143367839"
 ---
 # New-AzApplicationInsightsWebTestGeolocationObject
 
@@ -70,7 +70,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.Api20180501Preview.WebTestGeolocation
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: e2e46a44406536518f8891d3c1ab61db26c41fbc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498931"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143360747"
 ---
 # New-AzAutoscaleProfile
 
@@ -365,7 +365,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

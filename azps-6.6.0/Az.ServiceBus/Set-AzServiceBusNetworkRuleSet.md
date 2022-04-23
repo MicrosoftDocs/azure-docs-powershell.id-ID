@@ -9,8 +9,8 @@ ms.openlocfilehash: 49e1c5464c6050f772acfa85fba97250a47cb98c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141859622"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143353619"
 ---
 # Set-AzServiceBusNetworkRuleSet
 
@@ -246,6 +246,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSNetworkRuleSetAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

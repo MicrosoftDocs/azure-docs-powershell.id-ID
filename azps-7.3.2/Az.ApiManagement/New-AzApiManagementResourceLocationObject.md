@@ -9,8 +9,8 @@ ms.openlocfilehash: 33915c0cd59b3d733764d0e6ee87377e39449d85
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261303"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143368199"
 ---
 # New-AzApiManagementResourceLocationObject
 
@@ -131,6 +131,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementResourceLocation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

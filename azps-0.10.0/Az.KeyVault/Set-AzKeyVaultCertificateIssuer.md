@@ -10,8 +10,8 @@ ms.openlocfilehash: 97faf51b25ee2ae36b028e4a6b992416949a219f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142495358"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143360963"
 ---
 # Set-AzKeyVaultCertificateIssuer
 
@@ -226,7 +226,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.KeyVault.Models.KeyVaultCertificatePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

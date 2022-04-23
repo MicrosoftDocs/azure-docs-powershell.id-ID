@@ -10,8 +10,8 @@ ms.openlocfilehash: ac588fe9a82209cfd56c08f750fcd35945bc8af1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142498895"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143360675"
 ---
 # New-AzAutoscaleRule
 
@@ -311,7 +311,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
