@@ -7,8 +7,8 @@ ms.openlocfilehash: 063014d8230346d580f4be3959da674efece041f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142246087"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212301"
 ---
 # Add-AzureProvisioningConfig
 
@@ -667,7 +667,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

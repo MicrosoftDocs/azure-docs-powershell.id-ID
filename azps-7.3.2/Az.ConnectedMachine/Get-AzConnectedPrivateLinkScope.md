@@ -9,8 +9,8 @@ ms.openlocfilehash: aa430324759d1868815f0b9c5cea425707286f60
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142036361"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143186507"
 ---
 # Get-AzConnectedPrivateLinkScope
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.IHybridComputePrivateLinkScope
 
-## CATATAN
+## NOTES
 
 ALIAS
 

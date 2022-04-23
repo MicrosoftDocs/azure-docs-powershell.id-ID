@@ -7,8 +7,8 @@ ms.openlocfilehash: 3fc7c4138722e0f95fc4542f2a6ac3f97302605f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142313629"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143212211"
 ---
 # Get-AzureAutomationAccount
 
@@ -99,7 +99,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.AutomationAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
