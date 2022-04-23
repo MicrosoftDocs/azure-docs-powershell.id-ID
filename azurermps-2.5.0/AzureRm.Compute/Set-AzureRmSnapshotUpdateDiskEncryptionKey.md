@@ -7,8 +7,8 @@ ms.openlocfilehash: b777c13abbbac7de79af09d61f660fcbc68aaeb8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142286049"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267669"
 ---
 # Set-AzureRmSnapshotUpdateDiskEncryptionKey
 
@@ -151,7 +151,7 @@ System.String
 
 ### Microsoft.Azure.Management.Compute.Models.SnapshotUpdate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

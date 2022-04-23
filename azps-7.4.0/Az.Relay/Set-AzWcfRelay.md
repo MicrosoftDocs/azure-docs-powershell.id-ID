@@ -9,8 +9,8 @@ ms.openlocfilehash: 246cf964bdc760823f745e6c80b38497ce47d7bc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172191"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143276075"
 ---
 # Set-AzWcfRelay
 
@@ -220,6 +220,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

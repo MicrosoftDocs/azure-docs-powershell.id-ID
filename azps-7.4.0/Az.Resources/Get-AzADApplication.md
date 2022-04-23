@@ -9,8 +9,8 @@ ms.openlocfilehash: b5af78f2d12b1214b8c6cb5dda628920ae142767
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172162"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275769"
 ---
 # Get-AzADApplication
 
@@ -313,7 +313,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication
 
-## CATATAN
+## NOTES
 
 ALIAS
 

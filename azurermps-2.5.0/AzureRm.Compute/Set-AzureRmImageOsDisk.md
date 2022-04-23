@@ -7,8 +7,8 @@ ms.openlocfilehash: 9d7d7436e6c653c257fb549854338a277d621ee0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104265"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267705"
 ---
 # Set-AzureRmImageOsDisk
 
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe Akun Storage dari Os Image Disk
+Tipe Akun Penyimpanan Dari Disk Gambar Os
 
 ```yaml
 Type: StorageAccountTypes
@@ -253,7 +253,7 @@ System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, Publ
 
 ### Microsoft.Azure.Management.Compute.Models.Image
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

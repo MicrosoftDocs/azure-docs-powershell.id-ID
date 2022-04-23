@@ -9,8 +9,8 @@ ms.openlocfilehash: 2ba3a917686ad7666c6b8729201cbcc50c4f5300
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141949208"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143251991"
 ---
 # Get-AzDenyAssignment
 
@@ -563,7 +563,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSDenyAssignment
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS

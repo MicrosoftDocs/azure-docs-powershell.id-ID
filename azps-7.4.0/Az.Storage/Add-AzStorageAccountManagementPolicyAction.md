@@ -9,8 +9,8 @@ ms.openlocfilehash: e0104fd3a33e3fdbf433463e0683528550fe6a48
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001094"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305847"
 ---
 # Add-AzStorageAccountManagementPolicyAction
 
@@ -260,6 +260,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management. Storage. Models.PSManagementPolicyActionGroup
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

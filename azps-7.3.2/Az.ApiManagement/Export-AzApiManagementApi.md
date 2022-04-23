@@ -10,8 +10,8 @@ ms.openlocfilehash: d80af92a75d6a0d1b1c6409f21bc5775f3389c13
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261717"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143292167"
 ---
 # Export-AzApiManagementApi
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

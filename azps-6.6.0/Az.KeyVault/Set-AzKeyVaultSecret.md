@@ -10,16 +10,16 @@ ms.openlocfilehash: 3ba814479cbe7f90709b2ff95c18eee666d24523
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142304467"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298791"
 ---
-# Set-AzKeyVaultSecret
+# Atur-AzKeyVaultSecret
 
 ## SYNOPSIS
-Membuat atau memperbarui rahasia dalam kubah kunci.
+Membuat atau memperbarui rahasia di brankas kunci.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultsecret) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +38,11 @@ Set-AzKeyVaultSecret [-InputObject] <PSKeyVaultSecretIdentityItem> [-SecretValue
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzKeyVaultSecret** membuat atau memperbarui rahasia dalam kubah kunci di Azure Key Vault. Jika rahasia tidak ada, cmdlet ini akan membuatnya. Jika rahasia sudah ada, cmdlet ini membuat versi baru rahasia itu.
+Cmdlet **Set-AzKeyVaultSecret** membuat atau memperbarui rahasia di brankas kunci di Azure Key Vault. Jika rahasia tidak ada, cmdlet ini akan membuatnya. Jika rahasia sudah ada, cmdlet ini membuat versi baru dari rahasia tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi nilai rahasia menggunakan atribut default
+### Contoh 1: Mengubah nilai rahasia menggunakan atribut default
 ```powershell
 PS C:\> $Secret = ConvertTo-SecureString -String 'Password' -AsPlainText -Force
 PS C:\> Set-AzKeyVaultSecret -VaultName 'Contoso' -Name 'ITSecret' -SecretValue $Secret
@@ -60,11 +60,11 @@ Content Type :
 Tags         :
 ```
 
-Perintah pertama mengonversi string menjadi string aman menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string tersebut dalam variabel $Secret. Untuk informasi selengkapnya, ketik .`Get-Help
-ConvertTo-SecureString`
-Perintah kedua mengubah nilai rahasia bernama ITSecret dalam kubah kunci bernama Contoso. Nilai rahasia menjadi nilai yang disimpan dalam $Secret.
+Perintah pertama mengonversi string menjadi string aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string tersebut dalam variabel $Secret. Untuk informasi selengkapnya, ketik `Get-Help
+ConvertTo-SecureString`.
+Perintah kedua memodifikasi nilai rahasia bernama ITSecret di brankas kunci bernama Contoso. Nilai rahasia menjadi nilai yang disimpan dalam $Secret.
 
-### Contoh 2: Memodifikasi nilai rahasia menggunakan atribut kustom
+### Contoh 2: Mengubah nilai rahasia menggunakan atribut kustom
 ```powershell
 PS C:\> $Secret = ConvertTo-SecureString -String 'Password' -AsPlainText -Force
 PS C:\> $Expires = (Get-Date).AddYears(2).ToUniversalTime()
@@ -88,16 +88,16 @@ Tags         : Name      Value
                IT        true
 ```
 
-Perintah pertama mengonversi string menjadi string aman menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string tersebut dalam variabel $Secret. Untuk informasi selengkapnya, ketik .`Get-Help
-ConvertTo-SecureString`
-Perintah berikutnya menentukan atribut kustom untuk tanggal kedaluwarsa, tag, dan tipe konteks, dan menyimpan atribut dalam variabel.
-Perintah akhir mengubah nilai rahasia bernama ITSecret dalam kubah kunci bernama Contoso, dengan menggunakan nilai yang ditentukan sebelumnya sebagai variabel.
+Perintah pertama mengonversi string menjadi string aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string tersebut dalam variabel $Secret. Untuk informasi selengkapnya, ketik `Get-Help
+ConvertTo-SecureString`.
+Perintah berikutnya menentukan atribut kustom untuk tanggal kedaluwarsa, tag, dan jenis konteks, dan menyimpan atribut dalam variabel.
+Perintah akhir memodifikasi nilai rahasia bernama ITSecret di brankas kunci bernama Contoso, dengan menggunakan nilai yang ditentukan sebelumnya sebagai variabel.
 
 ## PARAMETERS
 
 ### -ContentType
 Menentukan tipe konten rahasia.
-Untuk menghapus tipe konten yang sudah ada, tentukan string kosong.
+Untuk menghapus tipe konten yang ada, tentukan string kosong.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Non-fungsikan
+### -Nonaktifkan
 Menunjukkan bahwa cmdlet ini menonaktifkan rahasia.
 
 ```yaml
@@ -142,8 +142,8 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Menentukan waktu kedaluwarsa, sebagai objek **DateTime** , untuk rahasia cmdlet ini diperbarui.
-Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** . Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
+Menentukan waktu kedaluwarsa, sebagai objek **DateTime** , untuk rahasia yang diperbarui cmdlet ini.
+Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** . Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -172,8 +172,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama rahasia yang akan diubah. Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) rahasia berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
+### -Name
+Menentukan nama rahasia yang akan diubah. Cmdlet ini membangun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari rahasia berdasarkan nama yang ditentukan parameter ini, nama brankas kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -187,8 +187,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TidakBefore
-Menentukan waktu, sebagai objek **DateTime** , sebelum rahasia tidak dapat digunakan. Parameter ini menggunakan UTC. Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
+### -NotBefore
+Menentukan waktu, sebagai objek **DateTime** , yang sebelumnya rahasianya tidak dapat digunakan. Parameter ini menggunakan UTC. Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -203,8 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -SecretValue
-Menentukan nilai untuk rahasia sebagai objek **SecureString** . Untuk mendapatkan objek **SecureString** , gunakan cmdlet **ConvertTo-SecureString** . Untuk informasi selengkapnya, ketik .`Get-Help
-ConvertTo-SecureString`
+Menentukan nilai untuk rahasia sebagai objek **SecureString** . Untuk mendapatkan objek **SecureString** , gunakan cmdlet **ConvertTo-SecureString** . Untuk informasi selengkapnya, ketik `Get-Help
+ConvertTo-SecureString`.
 
 ```yaml
 Type: System.Security.SecureString
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci tempat rahasia ini berada. Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama brankas kunci tempat rahasia ini berada. Cmdlet ini membangun FQDN dari brankas kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -248,8 +248,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -290,7 +290,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

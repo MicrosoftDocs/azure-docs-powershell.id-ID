@@ -9,8 +9,8 @@ ms.openlocfilehash: 4dc2556700a4cbb30eb99969b887d5e173bfb51d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178524"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143286461"
 ---
 # Get-AzFrontDoorWafManagedRuleSetDefinition
 
@@ -72,7 +72,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSManagedRuleSetDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

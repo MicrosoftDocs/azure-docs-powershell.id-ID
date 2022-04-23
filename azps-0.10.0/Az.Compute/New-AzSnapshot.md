@@ -9,8 +9,8 @@ ms.openlocfilehash: 6810aa032e6d822087c9951d23cb07c3850c67a0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141918075"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305613"
 ---
 # New-AzSnapshot
 
@@ -167,7 +167,7 @@ Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: 98b088afe4529acbdea31730c7bdbe5191932d78
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142261645"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143292023"
 ---
 # Get-AzApiManagementNetworkStatus
 
@@ -193,6 +193,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementNetworkStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

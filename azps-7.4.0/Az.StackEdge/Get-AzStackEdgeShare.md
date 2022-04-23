@@ -9,8 +9,8 @@ ms.openlocfilehash: 41647bbfa82ea1e61a87fc0d902928d7cc6ead74
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989550"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143306153"
 ---
 # Get-AzStackEdgeShare
 
@@ -176,6 +176,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeShare
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

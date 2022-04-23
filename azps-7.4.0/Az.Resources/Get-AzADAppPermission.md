@@ -9,8 +9,8 @@ ms.openlocfilehash: c21ef44e6d57b255eab4db2c160899bfb3607afc
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994146"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275751"
 ---
 # Get-AzADAppPermission
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.MicrosoftGraphApplicationApiPermission
 
-## CATATAN
+## NOTES
 
 ALIAS
 

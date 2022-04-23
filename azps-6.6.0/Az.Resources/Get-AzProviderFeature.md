@@ -10,8 +10,8 @@ ms.openlocfilehash: 126ceb0fd73977316b9b6ffca71cdac0be7759d6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141860684"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143251937"
 ---
 # Get-AzProviderFeature
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSProviderFeature
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

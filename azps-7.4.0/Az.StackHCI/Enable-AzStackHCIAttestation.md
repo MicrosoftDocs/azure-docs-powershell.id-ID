@@ -9,8 +9,8 @@ ms.openlocfilehash: 9f8bad84711e6841619e799681af8765224b0b9b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171459"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143306027"
 ---
 # Enable-AzStackHCIAttestation
 
@@ -149,6 +149,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Kluster: Nama kluster
 ### Node: Nama host.
 ### Atestation: Status Attesasi IMDS.
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

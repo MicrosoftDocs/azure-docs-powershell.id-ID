@@ -9,8 +9,8 @@ ms.openlocfilehash: 97cf68856110f68636a83594529b18f55e7df03f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002134"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143285956"
 ---
 # Get-AzHealthBot
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.HealthBot.Models.Api20201208.IHealthBot
 
-## CATATAN
+## NOTES
 
 ALIAS
 

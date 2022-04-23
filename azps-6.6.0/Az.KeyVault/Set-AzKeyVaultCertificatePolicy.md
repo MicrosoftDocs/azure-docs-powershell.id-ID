@@ -10,16 +10,16 @@ ms.openlocfilehash: 7d40dc381946ae1e945925b08e2600264f2c6f14
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142231093"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298809"
 ---
 # Set-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui kebijakan untuk sertifikat dalam kubah kunci.
+Membuat atau memperbarui kebijakan untuk sertifikat dalam brankas kunci.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultcertificatepolicy) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultcertificatepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Set-AzKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String> [-RenewAt
  [-Curve <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByValue
+### NilaiDasar
 ```
 Set-AzKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String>
  [-InputObject] <PSKeyVaultCertificatePolicy> [-EmailAtNumberOfDaysBeforeExpiry <Int32>]
@@ -57,7 +57,7 @@ Set-AzKeyVaultCertificatePolicy [-VaultName] <String> [-Name] <String> -RenewAtN
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzKeyVaultCertificatePolicy** membuat atau memperbarui kebijakan untuk sertifikat dalam kubah kunci.
+Cmdlet **Set-AzKeyVaultCertificatePolicy** membuat atau memperbarui kebijakan untuk sertifikat di brankas kunci.
 
 ## EXAMPLES
 
@@ -88,7 +88,7 @@ Created                         :
 Updated                         :
 ```
 
-Perintah ini mengatur kebijakan untuk sertifikat TestCert01 dalam kubah kunci ContosoKV01.
+Perintah ini menetapkan kebijakan untuk sertifikat TestCert01 di brankas kunci ContosoKV01.
 
 ## PARAMETERS
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateType
-Menentukan tipe sertifikat kepada penerbit.
+Menentukan jenis sertifikat kepada pengeluar sertifikat.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kurva
-Menentukan nama kurva eliptik kunci sertifikat.
+Menentukan nama kurva elips kunci sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - P-256
 - P-384
@@ -160,7 +160,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nonaktif
+### -Dinonaktifkan
 Menunjukkan bahwa kebijakan sertifikat dinonaktifkan.
 
 ```yaml
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAtPercentageLifetime
-Menentukan persentase masa berlaku setelah proses otomatis untuk pemberitahuan dimulai.
+Menentukan persentase masa pakai setelah proses otomatis untuk pemberitahuan dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -250,8 +250,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -NamaPengguna
-Menentukan nama penerbit untuk sertifikat ini.
+### -IssuerName
+Menentukan nama pengeluar sertifikat untuk sertifikat ini.
 
 ```yaml
 Type: System.String
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci kunci yang mengembalikan sertifikat.
+Menentukan jenis kunci kunci yang mendukung sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - RSA
 - RSA-HSM
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUsage
-Menentukan penggunaan kunci dalam sertifikat.
+Menentukan penggunaan utama dalam sertifikat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.Security.Cryptography.X509Certificates.X509KeyUsageFlags]
@@ -340,7 +340,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat.
 
 ```yaml
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -387,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -RenewAtPercentageLifetime
-Menentukan persentase masa berlaku setelah proses otomatis untuk perpanjangan sertifikat dimulai.
+Menentukan persentase masa pakai setelah proses otomatis untuk perpanjangan sertifikat dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -417,9 +417,9 @@ Accept wildcard characters: False
 ```
 
 ### -SecretContentType
-Menentukan tipe konten rahasia kubah kunci baru.
+Menentukan jenis konten rahasia brankas kunci baru.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- aplikasi/x-pkcs12
+- application/x-pkcs12
 - application/x-pem-file
 
 ```yaml
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci.
+Menentukan nama brankas kunci.
 
 ```yaml
 Type: System.String
@@ -480,8 +480,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -496,7 +496,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -512,7 +512,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -522,11 +522,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificatePolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
 [Get-AzKeyVaultCertificatePolicy](./Get-AzKeyVaultCertificatePolicy.md)
 
-[New-AzKeyVaultCertificatePolicy](./New-AzKeyVaultCertificatePolicy.md)
+[Baru-AzKeyVaultCertificatePolicy](./New-AzKeyVaultCertificatePolicy.md)
 

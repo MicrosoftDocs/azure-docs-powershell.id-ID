@@ -9,8 +9,8 @@ ms.openlocfilehash: 1156abd5edfdd1c1e68d34de361ef2e757e8cf4b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142428937"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305919"
 ---
 # Unregister-AzStackHCI
 
@@ -338,6 +338,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
 ### Hasil: Berhasil atau Gagal atau Dibatalkan.
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

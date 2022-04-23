@@ -9,16 +9,16 @@ ms.openlocfilehash: 2f8db0dab04eda3dfe49d5dd0f51d55f69593c5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142049753"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298935"
 ---
 # Backup-AzKeyVault
 
 ## SYNOPSIS
-Sepenuhnya mencadangkan HSM yang dikelola.
+Mencadangkan HSM terkelola sepenuhnya.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvault) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Backup-AzKeyVault -StorageAccountName <String> -StorageContainerName <String> -S
 ```
 
 ## DESCRIPTION
-Cadangkan sepenuhnya HSM yang dikelola ke akun penyimpanan.
+Mencadangkan HSM terkelola sepenuhnya ke akun penyimpanan.
 Gunakan `Restore-AzKeyVault` untuk memulihkan cadangan.
 
 ## EXAMPLES
@@ -61,7 +61,7 @@ PS C:\> Backup-AzKeyVault -HsmName myHsm -StorageContainerUri "https://{accountN
 https://{accountName}.blob.core.windows.net/{containerName}/{backupFolder}
 ```
 
-Cmdlet akan membuat folder (biasanya bernama `mhsm-{name}-{timestamp}`) dalam wadah penyimpanan, menyimpan cadangan dalam folder tersebut dan membuat output URI folder.
+Cmdlet akan membuat folder (biasanya bernama `mhsm-{name}-{timestamp}`) dalam kontainer penyimpanan, menyimpan cadangan di folder tersebut dan menghasilkan folder URI.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmObject
-Objek HSM yang dikelola
+Objek HSM terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerName
-Nama wadah blob tempat cadangan akan disimpan.
+Nama kontainer blob tempat cadangan akan disimpan.
 
 ```yaml
 Type: System.String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerUri
-URI wadah penyimpanan tempat cadangan akan disimpan.
+URI kontainer penyimpanan tempat cadangan akan disimpan.
 
 ```yaml
 Type: System.Uri
@@ -170,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -202,16 +202,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

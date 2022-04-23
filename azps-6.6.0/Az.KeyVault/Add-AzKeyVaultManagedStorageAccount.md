@@ -9,16 +9,16 @@ ms.openlocfilehash: c46deb560cca376dad2003428891c77868ec407d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141911721"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298971"
 ---
 # Add-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Menambahkan Akun Azure Storage yang sudah ada ke kubah kunci yang ditentukan agar kuncinya dikelola oleh layanan Key Vault.
+Menambahkan Akun Azure Storage yang ada ke brankas kunci yang ditentukan agar kuncinya dikelola oleh layanan Key Vault.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,8 +29,8 @@ Add-AzKeyVaultManagedStorageAccount [-VaultName] <String> [-AccountName] <String
 ```
 
 ## DESCRIPTION
-Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault agar kunci Akun Storage dikelola oleh Key Vault. Akun Storage harus sudah ada. Kunci Storage tidak pernah diekspos ke penelepon.
-Key Vault otomatis meregenerasi dan mengalihkan kunci aktif berdasarkan periode regenerasi. Lihat [Akun penyimpanan terkelola Azure Key Vault - PowerShell](https://docs.microsoft.com/azure/key-vault/key-vault-overview-storage-keys-powershell) untuk mendapatkan gambaran umum tentang fitur ini.
+Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault agar kunci Akun Storage dikelola oleh Key Vault. Akun Storage harus sudah ada. Kunci Storage tidak pernah diekspos ke pemanggil.
+Key Vault meregenerasi dan mengalihkan kunci aktif secara otomatis berdasarkan periode regenerasi. Lihat [Akun penyimpanan terkelola Azure Key Vault - PowerShell](https://docs.microsoft.com/azure/key-vault/key-vault-overview-storage-keys-powershell) untuk gambaran umum fitur ini.
 
 ## EXAMPLES
 
@@ -58,9 +58,9 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Mengatur Akun Storage dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jarak 90 hari.
+Mengatur Akun Storage dengan Key Vault agar kuncinya dikelola oleh Key Vault. Set kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi sejak perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan celah 90 hari.
 
-### Contoh 2: Atur Akun Azure Storage Klasik dengan Key Vault untuk mengelola kuncinya
+### Contoh 2: Mengatur Akun Azure Storage Klasik dengan Key Vault untuk mengelola kuncinya
 ```powershell
 PS C:\> $regenerationPeriod = [System.Timespan]::FromDays(90)
 PS C:\> Add-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -AccountResourceId '/subscriptions/<subscription id>/resourceGroups/myresourcegroup/providers/Microsoft.ClassicStorage/storageAccounts/mystorageaccount' -ActiveKeyName 'Primary' -RegenerationPeriod $regenerationPeriod
@@ -79,12 +79,12 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Mengatur Akun Storage Klasik dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'Utama'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'Sekunder' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'Primer' dan 'Sekunder' dengan jarak 90 hari.
+Mengatur Akun Storage Klasik dengan Key Vault agar kuncinya dikelola oleh Key Vault. Set kunci aktif adalah 'Primer'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'Sekunder' setelah periode regenerasi sejak perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'Primer' dan 'Sekunder' dengan celah 90 hari.
 
 ## PARAMETERS
 
 ### -AccountName
-Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
+Key Vault nama akun penyimpanan terkelola. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Non-fungsikan
+### -Nonaktifkan
 Menonaktifkan penggunaan kunci akun penyimpanan terkelola untuk pembuatan token sas.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoRegenerateKey
-Kunci regenerasi otomatis. Jika true, kunci tidak aktif akun penyimpanan terkelola akan otomatis diregenerasi dan menjadi kunci aktif baru setelah periode regenerasi. Jika false, kunci akun penyimpanan terkelola tidak diregenerasi secara otomatis.
+Kunci regenerasi otomatis. Jika true, kunci tidak aktif akun penyimpanan terkelola akan diregenerasi secara otomatis dan menjadi kunci aktif baru setelah periode regenerasi. Jika false, maka kunci akun penyimpanan terkelola tidak diregenerasi secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerationPeriod
-Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan jangka waktu setelah keygets akun penyimpanan terkelola tidak aktif secara otomatis diregenerasi dan menjadi kunci aktif baru.
+Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan rentang waktu setelah kunci tidak aktif akun penyimpanan terkelola diregenerasi secara otomatis dan menjadi kunci aktif baru.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -219,8 +219,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -265,7 +265,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

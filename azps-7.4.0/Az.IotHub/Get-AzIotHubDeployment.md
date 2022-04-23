@@ -9,8 +9,8 @@ ms.openlocfilehash: 4d4a0e4730b55fce8e2e8c5e3752dfe40dfc2c34
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141997290"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143285831"
 ---
 # Get-AzIotHubDeployment
 
@@ -164,6 +164,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.IotHub.Models.PSDeployments[]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

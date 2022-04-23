@@ -9,8 +9,8 @@ ms.openlocfilehash: 45fa83b141d82c05b0b6e24f23bd95c027f2517e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141857282"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143292455"
 ---
 # Get-AzAksVersion
 
@@ -111,7 +111,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Aks.Models.Api20190801.IOrchestratorVersionProfileListResult
 
-## CATATAN
+## NOTES
 
 ALIAS
 

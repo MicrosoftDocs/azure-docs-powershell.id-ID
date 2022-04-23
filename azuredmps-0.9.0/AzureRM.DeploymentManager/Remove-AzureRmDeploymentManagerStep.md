@@ -7,8 +7,8 @@ ms.openlocfilehash: 3abceb6c3c270378c911036967698f459cbe063a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104589"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267975"
 ---
 # Remove-AzureRmDeploymentManagerStep
 
@@ -213,6 +213,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

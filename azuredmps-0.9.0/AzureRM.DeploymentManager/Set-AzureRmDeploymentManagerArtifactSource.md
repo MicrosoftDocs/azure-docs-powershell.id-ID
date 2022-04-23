@@ -7,8 +7,8 @@ ms.openlocfilehash: 230e443fad4740b6bf9896164f02ae9b382e3ed2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141782638"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143267921"
 ---
 # Set-AzureRmDeploymentManagerArtifactSource
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DeploymentManager.Models.PSArtifactSource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: dff3872c348cbb57a10eeffe038cb4c58c0f88f4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141837251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143286695"
 ---
 # Remove-AzEventHubIPRule
 
@@ -196,6 +196,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSNetworkRuleSetAttributes
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

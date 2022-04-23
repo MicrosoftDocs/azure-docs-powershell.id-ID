@@ -9,8 +9,8 @@ ms.openlocfilehash: 6ebab8bd07d570a5d55d95e48d7b71017396148e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141911631"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143298917"
 ---
 # New-AzKeyVaultRoleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "141911631"
 Membuat definisi peran kustom pada HSM.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroledefinition) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ New-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] [-InputFile] 
 ```
 
 ## DESCRIPTION
-`New-AzKeyVaultRoleDefinition` Cmdlet membuat peran kustom di Azure Role-Based Access Control dari HSM yang dikelola Azure KeyVault.
+`New-AzKeyVaultRoleDefinition` Cmdlet membuat peran kustom di Azure Role-Based Access Control HSM terkelola Azure KeyVault.
 
-Menyediakan file definisi peran JSON atau `PSKeyVaultRoleDefinition` objek sebagai input.
-Pertama, gunakan `Get-AzKeyVaultRoleDefinition` perintah untuk menghasilkan objek definisi peran garis dasar.
-Lalu, ubah propertinya sesuai kebutuhan.
+Berikan file definisi peran JSON atau `PSKeyVaultRoleDefinition` objek sebagai input.
+Pertama, gunakan `Get-AzKeyVaultRoleDefinition` perintah untuk menghasilkan objek definisi peran garis besar.
+Kemudian, ubah propertinya sesuai kebutuhan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
 
 ## EXAMPLES
@@ -54,7 +54,7 @@ $role.Permissions[0].AllowedDataActions = @("Microsoft.KeyVault/managedHsm/roleA
 New-AzKeyVaultRoleDefinition -HsmName myHsm -Role $role
 ```
 
-Contoh ini menggunakan peran "Pengguna Kripto HSM Terkelola" yang sudah ditentukan sebelumnya sebagai templat untuk membuat peran kustom.
+Contoh ini menggunakan peran "Pengguna Kripto HSM Terkelola" yang telah ditentukan sebelumnya sebagai templat untuk membuat peran kustom.
 
 ### Contoh 2
 ```powershell
@@ -127,9 +127,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
-'/' digunakan ketika dihilangkan.
+### -Cakupan
+Cakupan tempat penetapan peran atau definisi berlaku, misalnya, '/' atau '/keys' atau '/keys/{keyName}'.
+'/' digunakan saat dihilangkan.
 
 ```yaml
 Type: System.String
@@ -143,8 +143,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,16 +174,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultRoleDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

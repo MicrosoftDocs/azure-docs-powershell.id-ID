@@ -9,8 +9,8 @@ ms.openlocfilehash: 08f1e40fc3e0f5efb927854fa2d790d35f2e2bcd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141994187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143275967"
 ---
 # Get-AzResourceGraphQuery
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya kueri Graph.
+Nama sumber daya Kueri Grafik.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ResourceGraph.Models.Api20180901Preview.IGraphQueryResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -184,7 +184,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IResourceGraphIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[ResourceName <String>]`: Nama sumber daya kueri Graph.
+  - `[ResourceName <String>]`: Nama sumber daya Kueri Grafik.
   - `[SubscriptionId <String>]`: Id langganan Azure.
 
 ## RELATED LINKS
