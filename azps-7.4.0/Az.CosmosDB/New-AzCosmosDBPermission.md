@@ -9,13 +9,13 @@ ms.openlocfilehash: c45cee52930050a93754112281fbe4279c1746bf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318753"
 ---
 # New-AzCosmosDBPermission
 
 ## SYNOPSIS
-Membuat objek Izin CosmosDB baru untuk digunakan untuk membuat atau memperbarui Definisi Peran.
+Membuat objek Izin CosmosDB baru yang akan digunakan untuk membuat atau memperbarui Definisi Peran.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzCosmosDBPermission -DataAction <System.Collections.Generic.List`1[System.S
 ```
 
 ## DESCRIPTION
-Membuat objek Izin CosmosDB baru untuk digunakan untuk membuat atau memperbarui Definisi Peran.
+Membuat objek Izin CosmosDB baru yang akan digunakan untuk membuat atau memperbarui Definisi Peran.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ DataActions
 ## PARAMETERS
 
 ### -DataAction
-Kumpulan tindakan data yang diberikan melalui Definisi Peran. Daftar tindakan yang diperbolehkan dapat ditemukan di: https://aka.ms/cosmos-native-rbac
+Kumpulan tindakan data yang diberikan melalui Definisi Peran. Daftar tindakan yang diizinkan dapat ditemukan di: https://aka.ms/cosmos-native-rbac
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -72,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -104,14 +104,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSPermission
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

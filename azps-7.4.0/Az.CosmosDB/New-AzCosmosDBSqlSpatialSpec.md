@@ -9,13 +9,13 @@ ms.openlocfilehash: b50e0c0c47c967fd2c0fb72c57f74878187a3827
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003234"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318717"
 ---
 # New-AzCosmosDBSqlSpatialSpec
 
 ## SYNOPSIS
-Membuat objek baru tipe PSSpatialSpec. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBSqlIndexingPolicy.
+Membuat objek baru jenis PSSpatialSpec. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBSqlIndexingPolicy.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzCosmosDBSqlSpatialSpec -Path <String> -Type <String[]> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Membuat Objek yang terkait dengan Sql API SpatialSpec.
+Membuat Objek yang sesuai dengan SpatialSpec Sql API.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam dokumen JSON ke indeks.
+Jalur dalam dokumen JSON untuk diindeks.
 
 ```yaml
 Type: System.String
@@ -72,9 +72,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 Array string dengan nilai yang dapat diterima: Point, LineString, Polygon, MultiPolygon.
-Tipe spasial jalur representasi.
+Jenis spasial jalur representasi.
 
 ```yaml
 Type: System.String[]
@@ -89,16 +89,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSpatialSpec
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

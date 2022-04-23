@@ -10,8 +10,8 @@ ms.openlocfilehash: c8601e617ae316ea08f6c9dfe6f19f01072252c5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142026011"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143325395"
 ---
 # Restore-AzSqlDatabase
 
@@ -19,7 +19,7 @@ ms.locfileid: "142026011"
 Memulihkan database SQL.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/restore-azsqldatabase) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/restore-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -93,20 +93,20 @@ Restore-AzSqlDatabase [-FromLongTermRetentionBackup] -ResourceId <String> -Serve
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzSqlDatabase** memulihkan database SQL dari cadangan geo-redundan, cadangan database yang dihapus, cadangan penyimpanan jangka panjang, atau titik waktu dalam database langsung.
+Cmdlet **Restore-AzSqlDatabase** memulihkan database SQL dari cadangan geo-redundan, cadangan database yang dihapus, cadangan retensi jangka panjang, atau titik waktu dalam database langsung.
 Database yang dipulihkan dibuat sebagai database baru.
-Anda dapat membuat database SQL elastis dengan mengatur parameter *ElasticPoolName* ke kumpulan elastis yang sudah ada.
+Anda dapat membuat database SQL elastis dengan mengatur parameter *ElasticPoolName* ke kumpulan elastis yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan database dari titik waktu
+### Contoh 1: Memulihkan database dari titik waktu tertentu
 ```
 PS C:\>$Database = Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 PS C:\> Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName "S2"
 ```
 
 Perintah pertama mendapatkan database SQL bernama Database01, lalu menyimpannya dalam variabel $Database.
-Perintah kedua memulihkan database dalam $Database dari pencadangan point-in-time yang ditentukan ke database bernama RestoredDatabase.
+Perintah kedua memulihkan database dalam $Database dari cadangan titik waktu yang ditentukan ke database bernama RestoredDatabase.
 
 ### Contoh 2: Memulihkan database dari titik waktu ke kumpulan elastis
 ```
@@ -115,7 +115,7 @@ PS C:\> Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -R
 ```
 
 Perintah pertama mendapatkan database SQL bernama Database01, lalu menyimpannya dalam variabel $Database.
-Perintah kedua memulihkan database dalam $Database dari cadangan point-in-time yang ditentukan ke database SQL bernama RestoredDatabase dalam kumpulan elastis bernama elasticpool01.
+Perintah kedua memulihkan database dalam $Database dari cadangan point-in-time yang ditentukan ke database SQL bernama RestoredDatabase di kumpulan elastis bernama elasticpool01.
 
 ### Contoh 3: Memulihkan database yang dihapus
 ```
@@ -123,8 +123,8 @@ PS C:\>$DeletedDatabase = Get-AzSqlDeletedDatabaseBackup -ResourceGroupName "Res
 PS C:\> Restore-AzSqlDatabase -FromDeletedDatabaseBackup -DeletionDate $DeletedDatabase.DeletionDate -ResourceGroupName $DeletedDatabase.ResourceGroupName -ServerName $DeletedDatabase.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $DeletedDatabase.ResourceID -Edition "Standard" -ServiceObjectiveName "S2" -PointInTime UTCDateTime
 ```
 
-Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzSqlDeletedDatabaseBackup](./Get-AzSqlDeletedDatabaseBackup.md).
-Perintah kedua memulai pemulihan dari cadangan database yang dihapus menggunakan cmdlet [Restore-AzSqlDatabase](./Restore-AzSqlDatabase.md) . Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
+Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan dengan menggunakan [Get-AzSqlDeletedDatabaseBackup](./Get-AzSqlDeletedDatabaseBackup.md).
+Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan cmdlet [Restore-AzSqlDatabase](./Restore-AzSqlDatabase.md) . Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
 
 ### Contoh 4: Memulihkan database yang dihapus ke dalam kumpulan elastis
 ```
@@ -132,8 +132,8 @@ PS C:\>$DeletedDatabase = Get-AzSqlDeletedDatabaseBackup -ResourceGroupName $res
 PS C:\> Restore-AzSqlDatabase -FromDeletedDatabaseBackup -DeletionDate $DeletedDatabase.DeletionDate -ResourceGroupName $DeletedDatabase.ResourceGroupName -ServerName $DeletedDatabase.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $DeletedDatabase.ResourceID -ElasticPoolName "elasticpool01" -PointInTime UTCDateTime
 ```
 
-Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzSqlDeletedDatabaseBackup](./Get-AzSqlDeletedDatabaseBackup.md).
-Perintah kedua memulai pemulihan dari cadangan database yang dihapus menggunakan [Restore-AzSqlDatabase](./Restore-AzSqlDatabase.md). Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
+Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan dengan menggunakan [Get-AzSqlDeletedDatabaseBackup](./Get-AzSqlDeletedDatabaseBackup.md).
+Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan [Restore-AzSqlDatabase](./Restore-AzSqlDatabase.md). Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
 
 ### Contoh 5: Geo-Restore database
 ```
@@ -147,7 +147,7 @@ Perintah kedua memulihkan cadangan di $GeoBackup ke database SQL bernama Restore
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Redundansi penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
+Redundansi penyimpanan Cadangan yang digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona, dan Geo.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PenghapusanDate
+### -DeletionDate
 Menentukan tanggal penghapusan sebagai objek **DateTime** .
 Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ### -Edisi
 Menentukan edisi database SQL.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak
+- Tidak ada
 - Dasar
 - Standar
 - Premium
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElasticPoolName
-Menentukan nama kumpulan elastis untuk meletakkan database SQL.
+Menentukan nama kumpulan elastis untuk menempatkan database SQL.
 
 ```yaml
 Type: System.String
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromLongTermRetentionBackup
-Menunjukkan bahwa cmdlet ini memulihkan database SQL dari cadangan penyimpanan jangka panjang.
+Menunjukkan bahwa cmdlet ini memulihkan database SQL dari cadangan retensi jangka panjang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromPointInTimeBackup
-Menunjukkan bahwa cmdlet ini memulihkan database SQL dari cadangan point-in-time.
+Menunjukkan bahwa cmdlet ini memulihkan database SQL dari cadangan titik waktu.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi untuk database Azure Sql.
+Jenis lisensi untuk database Azure Sql.
 
 ```yaml
 Type: System.String
@@ -355,7 +355,7 @@ Accept wildcard characters: False
 ### -PointInTime
 Menentukan titik waktu, sebagai objek **DateTime**, yang ingin Anda pulihkan database SQL Anda.
 Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
-Gunakan parameter ini bersama-sama dengan parameter *FromPointInTimeBackup* .
+Gunakan parameter ini bersama dengan parameter *FromPointInTimeBackup* .
 
 ```yaml
 Type: System.DateTime
@@ -457,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Nomor Vcore dari Database Azure Sql yang dipulihkan.
+Nomor Vcore dari Azure Sql Database yang dipulihkan.
 
 ```yaml
 Type: System.Int32
@@ -472,7 +472,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Redundansi zona untuk dikaitkan dengan Database Azure Sql. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
+Redundansi zona untuk dikaitkan dengan Azure Sql Database. Properti ini hanya dapat diatur untuk database edisi Hyperscale.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -486,8 +486,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -502,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -517,7 +517,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -529,7 +529,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

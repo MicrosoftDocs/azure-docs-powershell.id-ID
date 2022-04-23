@@ -10,8 +10,8 @@ ms.openlocfilehash: 41b176d5952e9a33d0d0868b97fc71a14d6b43d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142309039"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305541"
 ---
 # New-AzVmssIpConfig
 
@@ -285,7 +285,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Management.Compute.Models.VirtualMachineScaleSetIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

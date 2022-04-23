@@ -9,13 +9,13 @@ ms.openlocfilehash: 6f4dffa540d47caade42f8cddcceb541594b8895
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142067251"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143331605"
 ---
 # Get-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
-Mendapatkan Grup Kumpulan Aturan Kebijakan Firewall Azure
+Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
@@ -54,7 +54,7 @@ Contoh ini mendapatkan kumpulan aturanGroup dalam kebijakan firewall $fp
 
 ### Contoh 2
 
-Mendapatkan Grup Kumpulan Aturan Kebijakan Firewall Azure. (autogenerasi)
+Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -180,6 +180,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSAzureFirewall, Microsoft.Azure.PowerShell.Cmdlets.Network, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

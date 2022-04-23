@@ -9,8 +9,8 @@ ms.openlocfilehash: 7b1f434dc178d685665eadae613d8c2b6e035ebf
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142109267"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143331965"
 ---
 # Get-AzApplicationGatewayPrivateLinkConfiguration
 
@@ -108,7 +108,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPrivateLinkConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

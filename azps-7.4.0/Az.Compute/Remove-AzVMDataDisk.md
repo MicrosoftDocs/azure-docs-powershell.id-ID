@@ -10,8 +10,8 @@ ms.openlocfilehash: 113528febf9a99971f4cae08a67f67d31e7a5a6e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426234"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143319383"
 ---
 # Remove-AzVMDataDisk
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 3ba7ab00076a3a0634a0d4394270fe4a83ec8ede
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811400"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143305595"
 ---
 # New-AzVMSqlServerAutoPatchingConfig
 
@@ -155,7 +155,7 @@ Cmdlet ini tidak menerima input apa pun.
 ### AutoPatchingSettings
 Cmdlet ini mengembalikan objek berisi pengaturan untuk patch otomatis.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

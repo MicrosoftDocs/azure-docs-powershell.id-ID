@@ -9,8 +9,8 @@ ms.openlocfilehash: 11050e07d249928dcdad6a3562115bbf5c47f72c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141941631"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143339129"
 ---
 # Update-AzCosmosDBGremlinGraphThroughput
 
@@ -238,6 +238,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSThroughputSettingsGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

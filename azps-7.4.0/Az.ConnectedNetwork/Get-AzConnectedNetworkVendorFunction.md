@@ -9,13 +9,13 @@ ms.openlocfilehash: adbc7bb3223b635cd9e9e8c2978f600fe2d720f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426037"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143319113"
 ---
 # Get-AzConnectedNetworkVendorFunction
 
 ## SYNOPSIS
-Mendapatkan informasi tentang fungsi jaringan vendor tertentu.
+Mendapatkan informasi tentang fungsi jaringan vendor yang ditentukan.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzConnectedNetworkVendorFunction -LocationName <String> -VendorName <String>
  [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzConnectedNetworkVendorFunction -LocationName <String> -ServiceKey <String> -VendorName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,7 +38,7 @@ Get-AzConnectedNetworkVendorFunction -InputObject <IConnectedNetworkIdentity> [-
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang fungsi jaringan vendor tertentu.
+Mendapatkan informasi tentang fungsi jaringan vendor yang ditentukan.
 
 ## EXAMPLES
 
@@ -65,8 +65,8 @@ VendorProvisioningState            : NotProvisioned
 
 ```
 
-Mendapatkan informasi fungsi jaringan vendor dengan kunci layanan 1234-abcd-4321-dcba, nama vendor myVendor, lokasi centraluseuap dan langganan.
-Kunci layanan dapat diperoleh ketika mendapatkan detail funcrtion jaringan atau saat membuat fungsi jaringan.
+Mendapatkan informasi fungsi jaringan vendor dengan kunci layanan 1234-abcd-4321-dcba, nama vendor myVendor, centraluseuap lokasi, dan langganan.
+Kunci layanan dapat diperoleh saat mendapatkan detail funcrtion jaringan atau saat membuat fungsi jaringan.
 
 ### Contoh 2: Get-AzConnectedNetworkVendorFunction melalui Identitas
 ```powershell
@@ -92,7 +92,7 @@ VendorProvisioningState            : Provisioned
 
 ```
 
-Membuat identitas dengan kunci layanan 1234-abcd-4321-dcba, nama vendor myVendor, lokasi centraluseuap dan langganan.
+Membuat identitas dengan kunci layanan 1234-abcd-4321-dcba, nama vendor myVendor, centraluseuap lokasi, dan langganan.
 Mendapatkan informasi fungsi jaringan vendor menggunakan identitas ini.
 
 ## PARAMETERS
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan pada operasi.
+Filter yang akan diterapkan pada operasi.
 Properti yang dapat Anda gunakan untuk eq (sama dengan) adalah: skuType, skuName, dan vendorProvisioningState.
 
 ```yaml
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.IConnectedNetworkIdentity
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocationName
-Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
+Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -214,7 +214,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.IVendorNetworkFunction
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -226,11 +226,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[DeviceName <String>]`: Nama sumber daya perangkat.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
+  - `[LocationName <String>]`: Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
-  - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RoleInstanceName <String>]`: Nama contoh peran fungsi jaringan vendor.
+  - `[PreviewSubscription <String>]`: ID langganan pratinjau.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[RoleInstanceName <String>]`: Nama instans peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.
   - `[SubscriptionId <String>]`: ID langganan target.

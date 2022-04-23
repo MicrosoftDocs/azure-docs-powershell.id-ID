@@ -9,16 +9,16 @@ ms.openlocfilehash: 479c44570959a67333a5ae8516ef49cfddca6840
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303945"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143297693"
 ---
 # Remove-AzMlCommitmentPlan
 
 ## SYNOPSIS
-Menghapus rencana komitmen.
+Menghapus paket komitmen.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/remove-azmlcommitmentplan) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/remove-azmlcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Remove-AzMlCommitmentPlan -MlCommitmentPlan <CommitmentPlan> [-Force]
 ```
 
 ## DESCRIPTION
-Menghapus rencana komitmen Azure Machine Learning. Perhatikan bahwa rencana komitmen yang memiliki asosiasi komitmen tidak dapat dihapus. Asosiasi komitmen hanya dapat dihapus oleh sumber daya target mereka. Misalnya, jika Anda menghapus layanan web Azure Machine Learning, komitmen yang mengaitkan layanan web dengan rencana komitmen juga akan dihapus.
+Menghapus paket komitmen Azure Machine Learning. Perhatikan bahwa rencana komitmen yang memiliki asosiasi komitmen tidak dapat dihapus. Asosiasi komitmen hanya dapat dihapus oleh sumber daya target mereka. Misalnya, jika Anda menghapus layanan web Azure Machine Learning, asosiasi komitmen yang mengaitkan layanan web ke paket komitmen juga akan dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus rencana komitmen
+### Contoh 1: Menghapus paket komitmen
 ```
 Remove-AzMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommitmentPlanName"
 ```
@@ -61,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -91,8 +91,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rencana komitmen Azure ML.
+### -Name
+Nama paket komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk rencana komitmen Azure ML.
+Nama grup sumber daya untuk paket komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -121,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -162,7 +162,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
+## NOTES
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

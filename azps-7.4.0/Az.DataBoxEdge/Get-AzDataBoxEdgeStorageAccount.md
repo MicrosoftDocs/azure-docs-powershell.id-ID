@@ -9,13 +9,13 @@ ms.openlocfilehash: 393de852b1b625d90b7a2042388c400aeda9c6d9
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992586"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318537"
 ---
 # Get-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
-Mendapatkan akun Storage Edge di perangkat.
+Mendapatkan akun Storage Azure Stack Edge di perangkat.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Get-AzDataBoxEdgeStorageAccount [[-Name] <String>] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeStorageAccount** mendapatkan akun Storage Edge yang tersedia di perangkat Data Box Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi akun Storage Edge tertentu.
+Cmdlet **Get-AzDataBoxEdgeStorageAccount** mendapatkan akun Azure Stack Edge Storage tersedia di perangkat Data Box Edge. Anda dapat menentukan Nama sebagai parameter di cmdlet untuk mendapatkan informasi akun Storage Azure Stack Edge tertentu.
 
 ## EXAMPLES
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeDevice
@@ -142,8 +142,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -212,6 +212,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageAccount
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

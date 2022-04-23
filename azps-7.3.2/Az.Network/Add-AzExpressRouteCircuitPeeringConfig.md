@@ -10,8 +10,8 @@ ms.openlocfilehash: 8f6dfe70a195c51c49478532eb679c3d56b1c94e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142256173"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143332289"
 ---
 # Add-AzExpressRouteCircuitPeeringConfig
 
@@ -344,7 +344,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

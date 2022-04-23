@@ -9,8 +9,8 @@ ms.openlocfilehash: 780db02d5eeadd1f999b421c24d0914df56e0f62
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142426004"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143319059"
 ---
 # Get-AzContainerInstanceCapability
 
@@ -106,7 +106,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.ICapabilities
 
-## CATATAN
+## NOTES
 
 ALIAS
 

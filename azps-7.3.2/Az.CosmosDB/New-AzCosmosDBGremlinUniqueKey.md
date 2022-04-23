@@ -9,8 +9,8 @@ ms.openlocfilehash: 5661beaeaf3f205c29fe6700e57da696de63d59b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142216711"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143339309"
 ---
 # New-AzCosmosDBGremlinUniqueKey
 
@@ -82,6 +82,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSUniqueKey
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

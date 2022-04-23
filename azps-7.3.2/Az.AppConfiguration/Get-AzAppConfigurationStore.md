@@ -9,8 +9,8 @@ ms.openlocfilehash: 00583592ef78a67876f8d5bbaced4e234e763e07
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141792374"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143291699"
 ---
 # Get-AzAppConfigurationStore
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.Api20200601.IConfigurationStore
 
-## CATATAN
+## NOTES
 
 ALIAS
 

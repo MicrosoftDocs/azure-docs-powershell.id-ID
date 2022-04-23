@@ -9,8 +9,8 @@ ms.openlocfilehash: 3182eb01cab0c97aa3282e7d479e1b1bbeec0f2b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179837"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143319005"
 ---
 # New-AzContainerInstancePortObject
 
@@ -82,7 +82,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.ContainerPort
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: ba5fd656541172edcc01e54e47d7036002cb539d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142303927"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143297585"
 ---
 # New-AzConfigurationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "142303927"
 Daftarkan konfigurasi untuk sumber daya.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/new-azconfigurationassignment) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/new-azconfigurationassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-AzConfigurationAssignment [-ResourceGroupName] <String> [-ProviderName] <Str
 ```
 
 ## DESCRIPTION
-Mendaftarkan konfigurasi pemeliharaan untuk sumber daya.
+Daftarkan konfigurasi pemeliharaan untuk sumber daya.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ Name                       : ps2
 Type                       : Microsoft.Maintenance/configurationAssignments
 ```
 
-Mendaftarkan konfigurasi pemeliharaan untuk host khusus.
+Daftarkan konfigurasi pemeliharaan untuk host khusus.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationAssignmentName
-Nama penetapan konfigurasi, harus sesuai dengan NamaKonfigurasi Pemeliharaan.
+Nama penetapan konfigurasi, harus cocok dengan MaintenanceConfigurationName.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Nama penetapan konfigurasi, harus sesuai dengan NamaKonfigurasi Pemeliharaan.
+Nama penetapan konfigurasi, harus cocok dengan MaintenanceConfigurationName.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceParentType
-Tipe sumber daya induk.
+Jenis sumber daya induk.
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -233,8 +233,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -275,6 +275,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Maintenance.Models.PSConfigurationAssignment
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

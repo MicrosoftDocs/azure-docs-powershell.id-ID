@@ -9,8 +9,8 @@ ms.openlocfilehash: be0fa1af1d598a88fe2a113180111e8956f764f2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141839120"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143318609"
 ---
 # New-AzCostManagementQueryComparisonExpressionObject
 
@@ -98,7 +98,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.QueryComparisonExpression
 
-## CATATAN
+## NOTES
 
 ALIAS
 

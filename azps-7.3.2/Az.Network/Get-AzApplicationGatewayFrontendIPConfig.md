@@ -10,16 +10,16 @@ ms.openlocfilehash: b1fee7bf994ddf09282fd243ad7b8e8878e363ec
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141787154"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143332073"
 ---
 # Get-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi IP ujung depan gateway aplikasi.
+Mendapatkan konfigurasi IP front-end dari gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendipconfig) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,26 +33,26 @@ Cmdlet **Get-AzApplicationGatewayFrontendIPConfig** mendapatkan konfigurasi IP f
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi IP front-end tertentu
+### Contoh 1: Mendapatkan konfigurasi IP front-end tertentu
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $FrontEndIP= Get-AzApplicationGatewayFrontendIPConfig -Name "FrontEndIP01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan konfigurasi IP ujung depan bernama FrontEndIP01 dari $AppGw dan menyimpannya dalam variabel $FrontEndIP.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan konfigurasi IP front-end bernama FrontEndIP01 dari $AppGw dan menyimpannya dalam variabel $FrontEndIP.
 
-### Contoh 2: Dapatkan daftar konfigurasi IP ujung depan
+### Contoh 2: Mendapatkan daftar konfigurasi IP front-end
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $FrontEndIPs= Get-AzApplicationGatewayFrontendIPConfig  -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan daftar konfigurasi IP ujung-depan dari $AppGw dan menyimpannya dalam variabel $FrontEndIPs.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan daftar konfigurasi IP front-end dari $AppGw dan menyimpannya dalam variabel $FrontEndIPs.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi yang berisi konfigurasi IP ujung-depan.
+Menentukan objek gateway aplikasi yang berisi konfigurasi IP front-end.
 
 ```yaml
 Type: PSApplicationGateway
@@ -81,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP ujung depan yang didapatkan cmdlet ini.
+### -Name
+Menentukan nama konfigurasi IP front-end yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -107,7 +107,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

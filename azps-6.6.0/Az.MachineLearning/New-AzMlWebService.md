@@ -9,8 +9,8 @@ ms.openlocfilehash: 2b6a9aebaa5cb1ea9012d2c9d1581fbd6573d2d8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142270411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143297675"
 ---
 # New-AzMlWebService
 
@@ -18,17 +18,17 @@ ms.locfileid: "142270411"
 Membuat layanan web baru.
 
 > [!NOTE]
->Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/new-azmlwebservice) untuk informasi terbaru.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/new-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 
-### BuatFromFile
+### CreateFromFile
 ```
 New-AzMlWebService -ResourceGroupName <String> -Location <String> -Name <String> -DefinitionFile <String>
  [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BuatFromInstance
+### CreateFromInstance
 ```
 New-AzMlWebService -ResourceGroupName <String> -Location <String> -Name <String>
  -NewWebServiceDefinition <WebService> [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -36,8 +36,8 @@ New-AzMlWebService -ResourceGroupName <String> -Location <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Membuat layanan web Azure Machine Learning dalam grup sumber daya yang sudah ada.
-Jika layanan web dengan nama yang sama ada dalam grup sumber daya, panggilan bertindak sebagai operasi pembaruan dan layanan web yang sudah ada ditimpa.
+Membuat layanan web Azure Machine Learning di grup sumber daya yang sudah ada.
+Jika layanan web dengan nama yang sama ada di grup sumber daya, panggilan bertindak sebagai operasi pembaruan dan layanan web yang ada ditimpa.
 
 ## EXAMPLES
 
@@ -46,14 +46,14 @@ Jika layanan web dengan nama yang sama ada dalam grup sumber daya, panggilan ber
 New-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Location "South Central US" -DefinitionFile "C:\mlservice.json"
 ```
 
-Membuat layanan web Azure Machine Learning baru bernama "mywebservicename" dalam grup "myresourcegroup" dan kawasan South Central US, berdasarkan definisi yang ada dalam file json yang direferensikan.
+Membuat layanan web Azure Machine Learning baru bernama "mywebservicename" di grup "myresourcegroup" dan wilayah US Tengah Selatan, berdasarkan definisi yang ada dalam file json yang direferensikan.
 
 ### Contoh 2: Membuat layanan baru dari instans objek
 ```
 New-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Location "South Central US" -NewWebServiceDefinition $serviceDefinitionObject
 ```
 
-Anda bisa mendapatkan instans objek layanan web untuk dikustomisasi sebelum menerbitkan sebagai sumber daya dengan menggunakan cmdlet Import-AzMlWebService.
+Anda dapat memperoleh instans objek layanan web untuk disesuaikan sebelum menerbitkan sebagai sumber daya dengan menggunakan cmdlet Import-AzMlWebService.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -105,11 +105,11 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Wilayah layanan web.
-Masukkan kawasan pusat data Azure, seperti "AS Barat" atau "Asia Tenggara".
-Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe tersebut.
-Layanan web tidak harus berada di kawasan yang sama dengan langganan Azure Anda atau kawasan yang sama dengan grup sumber dayanya.
-Grup sumber daya bisa berisi layanan web dari kawasan yang berbeda.
-Untuk menentukan wilayah mana yang mendukung setiap tipe sumber daya, gunakan Get-AzResourceProvider dengan cmdlet parameter ProviderNamespace.
+Masukkan wilayah pusat data Azure, seperti "US Barat" atau "Asia Tenggara".
+Anda dapat menempatkan layanan web di wilayah mana pun yang mendukung sumber daya jenis tersebut.
+Layanan web tidak harus berada di wilayah yang sama dengan langganan Azure Anda atau wilayah yang sama dengan grup sumber dayanya.
+Grup sumber daya dapat berisi layanan web dari berbagai wilayah.
+Untuk menentukan wilayah mana yang mendukung setiap jenis sumber daya, gunakan Get-AzResourceProvider dengan cmdlet parameter ProviderNamespace.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama untuk layanan web.
 Nama harus unik dalam grup sumber daya.
 
@@ -140,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -NewWebServiceDefinition
-Definisi untuk layanan web baru, berisi semua properti yang menyusun layanan.
-Parameter ini diperlukan dan mewakili contoh kelas Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
+Definisi untuk layanan web baru, berisi semua properti yang membentuk layanan.
+Parameter ini diperlukan dan mewakili instans kelas Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
 Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web dalam spesifikasi swagger di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/stable/2017-01-01/webservices.json.
 
 ```yaml
@@ -157,12 +157,12 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat untuk menempatkan layanan web.
-Masukkan kawasan pusat data Azure, seperti "AS Barat" atau "Asia Tenggara".
-Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe tersebut.
-Layanan web tidak harus berada di kawasan yang sama dengan langganan Azure Anda atau kawasan yang sama dengan grup sumber dayanya.
-Grup sumber daya bisa berisi layanan web dari kawasan yang berbeda.
-Untuk menentukan wilayah mana yang mendukung setiap tipe sumber daya, gunakan Get-AzResourceProvider dengan cmdlet parameter ProviderNamespace.
+Grup sumber daya untuk menempatkan layanan web.
+Masukkan wilayah pusat data Azure, seperti "US Barat" atau "Asia Tenggara".
+Anda dapat menempatkan layanan web di wilayah mana pun yang mendukung sumber daya jenis tersebut.
+Layanan web tidak harus berada di wilayah yang sama dengan langganan Azure Anda atau wilayah yang sama dengan grup sumber dayanya.
+Grup sumber daya dapat berisi layanan web dari berbagai wilayah.
+Untuk menentukan wilayah mana yang mendukung setiap jenis sumber daya, gunakan Get-AzResourceProvider dengan cmdlet parameter ProviderNamespace.
 
 ```yaml
 Type: System.String
@@ -176,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +218,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
-## CATATAN
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
+## NOTES
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS
