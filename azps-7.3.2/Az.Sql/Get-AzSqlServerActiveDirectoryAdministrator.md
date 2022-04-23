@@ -10,8 +10,8 @@ ms.openlocfilehash: 10a3ffc28b87b17c1d000ce46e5782f3fe6c35c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142252423"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143071163"
 ---
 # Get-AzSqlServerActiveDirectoryAdministrator
 
@@ -132,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerActiveDirectoryAdministrator.Model.AzureSqlServerActiveDirectoryAdministratorModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

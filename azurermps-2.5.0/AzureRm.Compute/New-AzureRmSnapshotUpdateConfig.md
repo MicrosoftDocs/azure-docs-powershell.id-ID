@@ -7,8 +7,8 @@ ms.openlocfilehash: 033b183c763be266b29aadf47a57e760e2432452
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142104335"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143054297"
 ---
 # New-AzureRmSnapshotUpdateConfig
 
@@ -220,7 +220,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshotUpdate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

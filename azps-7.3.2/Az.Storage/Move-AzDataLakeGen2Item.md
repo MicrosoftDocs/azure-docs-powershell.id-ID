@@ -9,8 +9,8 @@ ms.openlocfilehash: 9edd2cc59980490963b59ab8af5e73c56c93d524
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142024877"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143070173"
 ---
 # Move-AzDataLakeGen2Item
 
@@ -255,6 +255,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureDataLakeGen2Item
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

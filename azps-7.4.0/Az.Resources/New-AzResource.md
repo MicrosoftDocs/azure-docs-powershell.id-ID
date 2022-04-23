@@ -10,8 +10,8 @@ ms.openlocfilehash: b63b8546ab96d3be781c2f293750549d9516dd25
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142420826"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143059355"
 ---
 # New-AzResource
 
@@ -424,7 +424,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PSObject
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: c5368ee583203b1a27e5bcd13b534560b57e1a9a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142481741"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143070515"
 ---
 # Get-AzStackEdgeRole
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeRole
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
