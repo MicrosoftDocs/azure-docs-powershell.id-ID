@@ -9,8 +9,8 @@ ms.openlocfilehash: 39ec87a29912e1e275aed3e2387d07d05c3fb159
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141936141"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143244665"
 ---
 # Add-AzMetricAlertRuleV2
 
@@ -450,6 +450,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSMetricAlertRuleV2
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

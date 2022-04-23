@@ -9,8 +9,8 @@ ms.openlocfilehash: 43af1a15637c8aef63ec6548eb0336bcac720fd5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142167309"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143280287"
 ---
 # Remove-AzVpnGateway
 
@@ -221,7 +221,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

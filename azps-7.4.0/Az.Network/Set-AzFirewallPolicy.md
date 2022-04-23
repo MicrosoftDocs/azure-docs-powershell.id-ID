@@ -9,8 +9,8 @@ ms.openlocfilehash: eb7d62a7d3152b16fc47e6bd454d9990e2621508
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142172534"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143280179"
 ---
 # Set-AzFirewallPolicy
 
@@ -53,7 +53,7 @@ Set-AzFirewallPolicy [-AsJob] -ResourceId <String> [-ThreatIntelMode <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzFirewallPolicy** memperbarui Kebijakan Firewall Azure.
+Cmdlet **Set-AzFirewallPolicy** memperbarui Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlSetting
-Pengaturan terkait SQL
+Pengaturan SQL terkait
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicySqlSetting
@@ -465,6 +465,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewall
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

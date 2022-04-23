@@ -9,8 +9,8 @@ ms.openlocfilehash: 68167813ac05351076d2daaff9cd6bffb7bfccd4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171214"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143270747"
 ---
 # Set-AzStorageSyncServerEndpoint
 
@@ -295,6 +295,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.StorageSync.Models.PSServerEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

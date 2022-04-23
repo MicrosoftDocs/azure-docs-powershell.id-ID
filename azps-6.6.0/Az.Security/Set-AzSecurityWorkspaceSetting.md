@@ -9,8 +9,8 @@ ms.openlocfilehash: 86c8e38b2b100623076c987d76fa38bdb7f7345a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141859892"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143295767"
 ---
 # Set-AzSecurityWorkspaceSetting
 
@@ -147,6 +147,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.WorkspaceSettings.PSSecurityWorkspaceSetting
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

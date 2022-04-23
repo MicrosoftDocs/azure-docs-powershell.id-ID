@@ -9,13 +9,13 @@ ms.openlocfilehash: f1ad81ccb7081cff648bd36751398b5705e76722
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142233649"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143301149"
 ---
 # New-AzDataMigrationDatabaseInfo
 
 ## SYNOPSIS
-Membuat objek DatabaseInfo untuk Layanan Migrasi Database Azure, yang menentukan sumber database untuk migrasi.
+Membuat objek DatabaseInfo untuk Azure Database Migration Service, yang menentukan sumber database untuk migrasi.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationdatabaseinfo) untuk informasi terbaru.
@@ -83,6 +83,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

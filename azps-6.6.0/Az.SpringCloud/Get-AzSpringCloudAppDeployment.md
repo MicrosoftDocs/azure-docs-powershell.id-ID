@@ -9,8 +9,8 @@ ms.openlocfilehash: 0cc250b27f7a282fee7a72f807f4bb9d4b3efa81
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141859299"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143295227"
 ---
 # Get-AzSpringCloudAppDeployment
 
@@ -226,7 +226,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20200701.IDeploymentResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

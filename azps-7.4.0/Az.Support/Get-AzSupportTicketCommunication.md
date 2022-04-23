@@ -9,8 +9,8 @@ ms.openlocfilehash: b97a0f876113ac9ed12846fd46d30f36bbf1727f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142171106"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143270459"
 ---
 # Get-AzSupportTicketCommunication
 
@@ -40,7 +40,7 @@ Mendapatkan komunikasi untuk tiket dukungan. Ini akan mengambil semua komunikasi
 | Skenario                                                        | Filter                                                     |
 |-----------------------------------------------------------------|------------------------------------------------------------|
 | Dapatkan komunikasi Web                                          | "CommunicationType eq 'Web'"                               |
-| Dapatkan komunikasi Telepon                                        | "CommunicationType eq 'Telepon'"                             |
+| Dapatkan komunikasi Telepon                                        | "CommunicationType eq 'Phone'"                             |
 | Dapatkan komunikasi yang dibuat pada atau setelah 20 Des 2019 | "CreatedDate ge 2019-12-20"                                |
 | Dapatkan komunikasi yang dibuat setelah 20 Des 2019       | "CreatedDate gt 2019-12-20"                                |
 | Membuat komunikasi Web setelah 20 Des 2019            | "CreatedDate gt 2019-12-20 and CommunicationType eq 'Web'" |
@@ -278,6 +278,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Support.Models.PSSupportTicketCommunication
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

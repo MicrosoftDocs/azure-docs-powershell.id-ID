@@ -9,8 +9,8 @@ ms.openlocfilehash: 49d5f6f6ccfa810937b08170b5b6393db9722bf8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142178904"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143287919"
 ---
 # New-AzWvdApplicationGroup
 
@@ -503,7 +503,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IApplicationGroup
 
-## CATATAN
+## NOTES
 
 ALIAS
 

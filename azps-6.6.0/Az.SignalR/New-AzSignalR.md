@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalR.md
 ms.openlocfilehash: 738c9cca1677482673824fdfb17974617b4f36de
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139968279"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143295281"
 ---
 # New-AzSignalR
 
@@ -18,7 +18,7 @@ ms.locfileid: "139968279"
 Membuat layanan SignalR.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/new-azsignalr) untuk informasi terkini.
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/new-azsignalr) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,8 +31,8 @@ New-AzSignalR [-ResourceGroupName <String>] [-Name] <String> [-Location <String>
 
 ## DESCRIPTION
 Membuat layanan SignalR.
-Nilai berikut ini akan digunakan untuk parameter jika tidak ditentukan:
-* `ResourceGroupName`: grup sumber daya default yang diatur oleh `Set-AzDefault -ResourceGroupName`.
+Nilai berikut akan digunakan untuk parameter jika tidak ditentukan:
+* `ResourceGroupName`: grup sumber daya default yang ditetapkan oleh `Set-AzDefault -ResourceGroupName`.
 * `Location`: lokasi grup sumber daya
 * `Sku`: `Standard_S1`
 
@@ -59,7 +59,7 @@ mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard
 ## PARAMETERS
 
 ### -AllowedOrigin
-Asal yang diperbolehkan untuk layanan SignalR. Untuk memperbolehkan semua, gunakan "*" dan hapus semua asal lain dari daftar. Garis miring tidak diperbolehkan sebagai bagian dari domain atau setelah TLD
+Asal yang diizinkan untuk layanan SignalR. Untuk mengizinkan semua, gunakan "*" dan hapus semua asal lain dari daftar. Garis miring tidak diizinkan sebagai bagian dari domain atau setelah TLD
 
 ```yaml
 Type: System.String[]
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di pekerjaan latar belakang.
+Jalankan cmdlet dalam pekerjaan latar belakang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan SignalR.
 
 ```yaml
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya. Pengaturan default akan digunakan jika tidak ditentukan.
+Nama grup sumber daya. Default akan digunakan jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU layanan Signalr.
+SKU layanan SignalR.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnitCount
-Jumlah unit layanan SignalR, dari 1 sampai 10. Default ke 1.
+Jumlah unit layanan SignalR, dari 1 hingga 10. Default ke 1.
 
 ```yaml
 Type: System.Int32
@@ -208,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,8 +224,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -250,6 +250,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

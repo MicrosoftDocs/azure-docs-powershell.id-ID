@@ -9,8 +9,8 @@ ms.openlocfilehash: 4273746bcf101f333e586a51a8cf412de7ff2a4d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142419509"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143269775"
 ---
 # New-AzSynapseKustoPoolDataConnection
 
@@ -506,7 +506,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.IDataConnection
 
-## CATATAN
+## NOTES
 
 ALIAS
 

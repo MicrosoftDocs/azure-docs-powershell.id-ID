@@ -9,8 +9,8 @@ ms.openlocfilehash: d6705d2818c2e9dec1e040be91b30fcec1a40f5e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142227439"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143254061"
 ---
 # Remove-AzVirtualHubVnetConnection
 
@@ -262,7 +262,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

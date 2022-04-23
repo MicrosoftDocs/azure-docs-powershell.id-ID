@@ -9,8 +9,8 @@ ms.openlocfilehash: 8f5d86f9d19d04b614a9e0c1fe1c9c9cf4012971
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142476611"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143301221"
 ---
 # Get-AzDataMigrationTask
 
@@ -310,6 +310,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataMigration.Models.PSProjectTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

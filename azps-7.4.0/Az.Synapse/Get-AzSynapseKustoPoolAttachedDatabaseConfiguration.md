@@ -9,8 +9,8 @@ ms.openlocfilehash: 2d2397270100f6bd26df8d95b47429ef3e73d178
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141989010"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143270225"
 ---
 # Get-AzSynapseKustoPoolAttachedDatabaseConfiguration
 
@@ -188,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.IAttachedDatabaseConfiguration
 
-## CATATAN
+## NOTES
 
 ALIAS
 

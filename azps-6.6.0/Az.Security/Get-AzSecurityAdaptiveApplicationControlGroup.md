@@ -9,8 +9,8 @@ ms.openlocfilehash: f77e78981d21faed2f74b19aa2f8e0dc4f6c91b1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142041779"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143251415"
 ---
 # Get-AzSecurityAdaptiveApplicationControlGroup
 
@@ -119,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.AdaptiveApplicationControls.PSSecurityAdaptiveApplicationControls
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

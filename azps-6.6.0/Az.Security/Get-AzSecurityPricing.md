@@ -9,8 +9,8 @@ ms.openlocfilehash: 7945933a3bd4dcd2dd95772b287c7d8ce5567235
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142300147"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143251343"
 ---
 # Get-AzSecurityPricing
 
@@ -148,6 +148,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Pricings.PSSecurityPricing
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
