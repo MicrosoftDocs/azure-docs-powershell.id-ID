@@ -9,8 +9,8 @@ ms.openlocfilehash: 245855ccb8c862d1118b10e0bf375c72cd527c99
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142500187"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143115047"
 ---
 # Remove-AzWebAppCertificate
 
@@ -124,7 +124,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

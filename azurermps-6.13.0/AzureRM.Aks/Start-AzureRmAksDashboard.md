@@ -9,8 +9,8 @@ ms.openlocfilehash: bf9ad8306a8158d9a8087de1f299ba66a02717fb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142144538"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143111183"
 ---
 # Start-AzureRmAksDashboard
 
@@ -170,6 +170,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Aks.KubeTunnelJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

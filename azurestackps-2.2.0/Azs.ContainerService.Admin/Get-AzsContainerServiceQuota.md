@@ -7,8 +7,8 @@ ms.openlocfilehash: fca146a861a6e1a07b2002a0111d5925770e9542
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141812012"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143155367"
 ---
 # Get-AzsContainerServiceQuota
 
@@ -96,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ContainerServiceAdmin.Models.Api20191101.IContainerServiceQuotaListValueItem
 
-## CATATAN
+## NOTES
 
 ALIAS
 

@@ -10,8 +10,8 @@ ms.openlocfilehash: 22a10d4f65d43f4d11871cbf43399bfc35febf04
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142236"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143108530"
 ---
 # Set-AzureRmDataLakeAnalyticsCatalogSecret
 
@@ -170,7 +170,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.DataLake.Analytics.Models.USqlSecret
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

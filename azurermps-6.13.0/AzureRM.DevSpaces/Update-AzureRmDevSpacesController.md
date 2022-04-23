@@ -9,8 +9,8 @@ ms.openlocfilehash: b413311fea0d7e2235bc5e4ddb04e40db6d81162
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141779360"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143108117"
 ---
 # Update-AzureRmDevSpacesController
 
@@ -192,6 +192,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.DevSpaces.Models.PSController
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

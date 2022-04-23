@@ -9,8 +9,8 @@ ms.openlocfilehash: c4b7785a51f0a6d1b15b844c23da8f1fb5dfa82f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141800780"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143089649"
 ---
 # New-AzMetricAlertRuleV2Criteria
 
@@ -119,7 +119,7 @@ Perintah ini membuat kriteria ketersediaan terlama yang bisa digunakan dalam atu
 ## PARAMETERS
 
 ### -ApplicationInsightsId
-Id sumber daya Insights Aplikasi.
+Id sumber daya Application Insights.
 
 ```yaml
 Type: System.String
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebTestId
-Id uji web aplikasi Insights.
+Id uji web Application Insights.
 
 ```yaml
 Type: System.String
@@ -378,12 +378,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.Commands. Insights. OutputClasses.PSMetricDimension[]
+### Microsoft.Azure.Commands.Insights.OutputClasses.PSMetricDimension[]
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands. Insights. OutputClasses.IPSMultiMetricCriteria
+### Microsoft.Azure.Commands.Insights.OutputClasses.IPSMultiMetricCriteria
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

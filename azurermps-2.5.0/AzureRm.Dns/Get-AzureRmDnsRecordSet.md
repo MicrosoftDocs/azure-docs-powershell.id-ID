@@ -7,8 +7,8 @@ ms.openlocfilehash: 4027b13fb398d69bee09be5c0a939ff86a099e39
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142147271"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143113653"
 ---
 # Get-AzureRmDnsRecordSet
 
@@ -198,7 +198,7 @@ Objek **DnsZone** mewakili zona untuk mencari objek **RecordSet** .
 Cmdlet ini mengembalikan satu atau beberapa objek yang mewakili kumpulan rekaman yang ditemukan.
 Akan ada paling banyak satu **RecordSet** yang dikembalikan jika parameter *Name* dan *RecordType* ditentukan, jika tidak beberapa objek **RecordSet** dikembalikan sebagai array.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

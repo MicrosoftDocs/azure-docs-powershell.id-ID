@@ -10,8 +10,8 @@ ms.openlocfilehash: 740ef9b21a2e2caa839880ff2c5e9dadc042351a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142386799"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161937"
 ---
 # Get-AzureRmLogicApp
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Logic.Models.WorkflowVersion
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

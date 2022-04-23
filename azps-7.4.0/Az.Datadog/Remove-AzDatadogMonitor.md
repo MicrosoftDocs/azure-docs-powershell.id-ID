@@ -9,8 +9,8 @@ ms.openlocfilehash: d1584a261403849a31df8861471b38d076b5f6b3
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002379"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143124270"
 ---
 # Remove-AzDatadogMonitor
 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ALIAS
 

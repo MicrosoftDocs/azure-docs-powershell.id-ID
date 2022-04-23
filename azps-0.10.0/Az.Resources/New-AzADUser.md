@@ -10,8 +10,8 @@ ms.openlocfilehash: 213e488dde914a8e87b76d6c3765f5dbe99a527a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142092322"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099531"
 ---
 # New-AzADUser
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADUser
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

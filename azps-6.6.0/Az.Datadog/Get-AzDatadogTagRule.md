@@ -9,8 +9,8 @@ ms.openlocfilehash: 967d27a9a6ea36531811e8977fe3c5f21fae183a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141957723"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143149355"
 ---
 # Get-AzDatadogTagRule
 
@@ -181,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoringTagRules
 
-## CATATAN
+## NOTES
 
 ALIAS
 

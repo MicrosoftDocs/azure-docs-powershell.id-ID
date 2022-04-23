@@ -9,8 +9,8 @@ ms.openlocfilehash: bc105168b3d79511996f9645f46068f6b461a2fa
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142271671"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143149895"
 ---
 # Get-AzDataLakeAnalyticsJobRecurrence
 
@@ -146,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataLakeAnalytics.Models.PSJobRecurrenceInformation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

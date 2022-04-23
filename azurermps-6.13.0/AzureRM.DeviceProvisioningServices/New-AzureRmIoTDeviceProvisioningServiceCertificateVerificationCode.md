@@ -9,8 +9,8 @@ ms.openlocfilehash: 59445c2e162a7cbfce5cff26bac91d133c8928a1
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142064593"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143107907"
 ---
 # New-AzureRmIoTDeviceProvisioningServiceCertificateVerificationCode
 
@@ -236,6 +236,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSVerificationCodeResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

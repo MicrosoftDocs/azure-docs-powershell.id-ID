@@ -9,8 +9,8 @@ ms.openlocfilehash: c4092d89f8b541db92737b71e534fcc1d4d917f5
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141822270"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143161757"
 ---
 # New-AzureRmMlOpCluster
 
@@ -417,6 +417,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.MachineLearningCompute.Models.PSOperationalizationCluster
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

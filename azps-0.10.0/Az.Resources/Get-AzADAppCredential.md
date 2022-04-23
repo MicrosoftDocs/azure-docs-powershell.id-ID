@@ -10,8 +10,8 @@ ms.openlocfilehash: fc8e454328706243e701c0f4df61733562ab73ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141963951"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099585"
 ---
 # Get-AzADAppCredential
 
@@ -158,7 +158,7 @@ Parameter: ApplicationObject (ByValue)
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADCredential
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: d3e5459c81d2abbe7178652ce7b00fc35e6e3bbd
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141888757"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143111897"
 ---
 # Update-AzureRmADServicePrincipal
 
@@ -280,6 +280,6 @@ Parameter: InputObject (ByValue)
 
 ### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
