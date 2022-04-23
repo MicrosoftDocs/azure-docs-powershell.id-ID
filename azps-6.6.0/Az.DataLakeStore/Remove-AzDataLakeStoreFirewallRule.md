@@ -10,8 +10,8 @@ ms.openlocfilehash: 428e0dfc3b101dd00f95b7b5cc84f79edf00cc84
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142271311"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143092637"
 ---
 # Remove-AzDataLakeStoreFirewallRule
 
@@ -159,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

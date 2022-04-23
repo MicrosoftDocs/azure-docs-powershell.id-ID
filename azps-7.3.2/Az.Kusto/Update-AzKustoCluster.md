@@ -9,8 +9,8 @@ ms.openlocfilehash: 135a7f0f0a7ac729c7775befff61cf69721977ce
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142068565"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143074835"
 ---
 # Update-AzKustoCluster
 
@@ -610,7 +610,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.ICluster
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -623,12 +623,12 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
   - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
   - `[OperationId <String>]`: Guid of the operation ID
-  - `[PrincipalAssignmentName <String>]`: Nama kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 

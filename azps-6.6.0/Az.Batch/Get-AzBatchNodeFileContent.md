@@ -10,8 +10,8 @@ ms.openlocfilehash: 3f7fd2bd5dad871fe0a2a67a267e748e8d2eb31b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141872690"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143096975"
 ---
 # Get-AzBatchNodeFileContent
 
@@ -327,7 +327,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Void
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

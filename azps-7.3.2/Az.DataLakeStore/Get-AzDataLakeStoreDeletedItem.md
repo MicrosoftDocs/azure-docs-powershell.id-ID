@@ -10,8 +10,8 @@ ms.openlocfilehash: 74f1f5d7be79fd2e24b2cc016c6d848628157293
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142375721"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143185319"
 ---
 # Get-AzDataLakeStoreDeletedItem
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.List<Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreDeletedItem>
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

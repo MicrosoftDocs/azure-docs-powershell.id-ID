@@ -9,8 +9,8 @@ ms.openlocfilehash: 876bd575c4401f3900a2b24ce68521201859d914
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142179677"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143126405"
 ---
 # New-AzCosmosDBSqlIndexingPolicy
 
@@ -171,6 +171,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlIndexingPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

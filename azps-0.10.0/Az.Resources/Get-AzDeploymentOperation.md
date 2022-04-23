@@ -9,8 +9,8 @@ ms.openlocfilehash: 1eafc934777809d7fd4041496b004ea682e97910
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142130635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099567"
 ---
 # Get-AzDeploymentOperation
 
@@ -161,6 +161,6 @@ System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, Publi
 
 ### Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PSDeploymentOperation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

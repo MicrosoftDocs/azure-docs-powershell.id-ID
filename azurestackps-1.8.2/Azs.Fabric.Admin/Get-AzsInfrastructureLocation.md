@@ -7,8 +7,8 @@ ms.openlocfilehash: fc074d17ea73bf54f623ea3e8ec72567ef2bcffe
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141814918"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143102195"
 ---
 # Get-AzsInfrastructureLocation
 
@@ -154,6 +154,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.AzureStack.Management.Fabric.Admin.Models.FabricLocation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -10,8 +10,8 @@ ms.openlocfilehash: a37cb732aed95a2c31c970d83558a3eff8ab31c8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142061736"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143159813"
 ---
 # Set-AzureRmLocalNetworkGateway
 
@@ -175,7 +175,7 @@ Parameter: LocalNetworkGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

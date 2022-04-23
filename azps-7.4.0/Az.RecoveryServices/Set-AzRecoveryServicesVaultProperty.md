@@ -10,8 +10,8 @@ ms.openlocfilehash: e9fca8b891390e0e3e345fe211f9773add4df38c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142430137"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143117063"
 ---
 # Set-AzRecoveryServicesVaultProperty
 
@@ -255,7 +255,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupResourceVaultConfigResource
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -7,8 +7,8 @@ ms.openlocfilehash: a7be848e7806e77e8d720542b037c5bb0dabe933
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142278664"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143104841"
 ---
 # Get-AzureStorSimpleTask
 
@@ -115,7 +115,7 @@ Nilai yang valid adalah: Inprogress, Invalid, dan Completed.
 **TaskResult**, nilai yang dihitung berdasarkan **Hasil** dan **Status**.
 Nilai yang valid adalah: Gagal, Berhasil, InProgress, PartialSuccess, Cancelled, dan Invalid.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

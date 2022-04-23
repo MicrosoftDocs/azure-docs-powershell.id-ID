@@ -9,8 +9,8 @@ ms.openlocfilehash: b9b3f29711cbb3e8b033a23f00a0af50f44fbe8f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141866426"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143090386"
 ---
 # Invoke-AzKustoDiagnoseClusterVirtualNetwork
 
@@ -198,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-## CATATAN
+## NOTES
 
 ALIAS
 

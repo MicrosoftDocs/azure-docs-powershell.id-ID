@@ -7,8 +7,8 @@ ms.openlocfilehash: 1a47334171f188f73dda60a7738aa3da6009eb8d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141921939"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105075"
 ---
 # Get-AzureReservedIP
 
@@ -122,7 +122,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

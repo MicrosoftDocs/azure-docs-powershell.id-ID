@@ -7,8 +7,8 @@ ms.openlocfilehash: 65691116ea8e73e8f03e8cc7dc97f38c61ecebdb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142352483"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143155637"
 ---
 # Add-AzsPlanToOffer
 
@@ -265,7 +265,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ALIAS
 
-## CATATAN
+## NOTES
 
 COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 

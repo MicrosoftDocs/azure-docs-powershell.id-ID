@@ -9,8 +9,8 @@ ms.openlocfilehash: 751a551f5ed0a0a1968c74e5f94bcabad3b5ff32
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141811544"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143099963"
 ---
 # Get-AzComputeResourceSku
 
@@ -63,7 +63,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Object
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

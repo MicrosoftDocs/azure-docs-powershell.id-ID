@@ -10,8 +10,8 @@ ms.openlocfilehash: c11170e6bee80b9eaa19135ad604d8bf70e1baab
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142065966"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143110457"
 ---
 # Get-AzureRmBackupVault
 
@@ -139,7 +139,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

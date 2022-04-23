@@ -9,8 +9,8 @@ ms.openlocfilehash: 67dfb891952a3ab206490caa3af342f4693ecd00
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142001959"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143121203"
 ---
 # Remove-AzKeyVaultManagedStorageSasDefinition
 
@@ -225,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultManagedStorageSasDefinition
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

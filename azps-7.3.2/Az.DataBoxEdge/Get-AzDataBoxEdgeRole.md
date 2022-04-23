@@ -9,8 +9,8 @@ ms.openlocfilehash: bb80500a10e5018befb65f44d6167f4aa344fc63
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141941289"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143079155"
 ---
 # Get-AzDataBoxEdgeRole
 
@@ -174,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeRole
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

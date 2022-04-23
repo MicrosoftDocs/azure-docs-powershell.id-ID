@@ -7,8 +7,8 @@ ms.openlocfilehash: da0cefa416ee461a5aab8b5faf93dbb3f3596864
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142334528"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143102771"
 ---
 # Start-AzureSqlDatabaseImport
 
@@ -213,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Services.ImportExportRequest
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
