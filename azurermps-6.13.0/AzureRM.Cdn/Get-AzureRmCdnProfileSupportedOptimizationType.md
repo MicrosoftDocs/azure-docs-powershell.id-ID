@@ -9,8 +9,8 @@ ms.openlocfilehash: e6434b2b5b07cad811f245d72e1d6bd34da63bb4
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142142929"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165488"
 ---
 # Get-AzureRmCdnProfileSupportedOptimizationType
 
@@ -121,6 +121,6 @@ Parameter: CdnProfile (ByValue)
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSOptimizationType
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

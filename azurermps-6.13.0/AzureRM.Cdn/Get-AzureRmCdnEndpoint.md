@@ -10,8 +10,8 @@ ms.openlocfilehash: eb4215a281b83bd533a7502e3ec538ec4e3a570c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141887090"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165507"
 ---
 # Get-AzureRmCdnEndpoint
 
@@ -129,7 +129,7 @@ Parameter: CdnProfile (ByValue)
 
 ### Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

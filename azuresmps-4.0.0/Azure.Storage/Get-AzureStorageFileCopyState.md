@@ -7,8 +7,8 @@ ms.openlocfilehash: 6b2b810318490760a8aa6ddf1191686e166d158f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142381556"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210033"
 ---
 # Get-AzureStorageFileCopyState
 
@@ -182,7 +182,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

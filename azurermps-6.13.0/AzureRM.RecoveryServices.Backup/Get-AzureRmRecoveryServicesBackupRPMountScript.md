@@ -9,8 +9,8 @@ ms.openlocfilehash: 6caf37bf8e9b4bc11969ff4f1e0e55e7e0d6880c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141925030"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143216130"
 ---
 # Get-AzureRmRecoveryServicesBackupRPMountScript
 
@@ -158,6 +158,6 @@ Parameter: VaultId (ByValue)
 
 ### Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RPMountScriptDetails
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

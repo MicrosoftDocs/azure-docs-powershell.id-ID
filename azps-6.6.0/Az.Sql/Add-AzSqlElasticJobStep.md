@@ -9,8 +9,8 @@ ms.openlocfilehash: dae32c9a2a260b8ef1476ce6726229ad6e201e2c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142299067"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143190539"
 ---
 # Add-AzSqlElasticJobStep
 
@@ -514,6 +514,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobStepModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

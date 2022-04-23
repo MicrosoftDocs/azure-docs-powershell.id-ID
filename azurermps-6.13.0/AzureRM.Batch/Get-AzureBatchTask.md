@@ -10,8 +10,8 @@ ms.openlocfilehash: 0229a44512aecc52b16650740d74ff177f83b9fb
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100561"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165742"
 ---
 # Get-AzureBatchTask
 
@@ -283,7 +283,7 @@ Parameter: BatchContext (ByValue)
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCloudTask
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

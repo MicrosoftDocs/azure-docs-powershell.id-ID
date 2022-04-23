@@ -10,8 +10,8 @@ ms.openlocfilehash: 8a59f09184c7042b12abbd549398ca4690ace235
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141883280"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160803"
 ---
 # New-AzureRmFirewallApplicationRule
 
@@ -210,7 +210,7 @@ Cmdlet ini tidak menerima input apa pun.
 
 ### Microsoft.Azure.Commands.Network.Models.PSFirewallApplicationRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

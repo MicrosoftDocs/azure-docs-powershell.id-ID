@@ -9,8 +9,8 @@ ms.openlocfilehash: 1b68b8ac6e480c93a9158d77a635c497fe9d1102
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141778143"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160749"
 ---
 # New-AzureRmIpsecPolicy
 
@@ -194,6 +194,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

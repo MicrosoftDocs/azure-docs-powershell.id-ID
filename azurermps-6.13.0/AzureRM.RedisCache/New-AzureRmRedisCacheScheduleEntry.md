@@ -10,8 +10,8 @@ ms.openlocfilehash: 8364a3a8b9d88bfd3ce34f2e70f8fcae80e9b612
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142384264"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215674"
 ---
 # New-AzureRmRedisCacheScheduleEntry
 
@@ -128,7 +128,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.RedisCache.Models.PSScheduleEntry
 
-## CATATAN
+## NOTES
 * Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, redis, cache, web, webapp, situs web
 
 ## RELATED LINKS

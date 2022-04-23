@@ -10,8 +10,8 @@ ms.openlocfilehash: 996a2c17b6283e967eaca8462f4d703aed60d19c
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142385782"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160623"
 ---
 # Remove-AzureRmApplicationGatewayBackendAddressPool
 
@@ -131,7 +131,7 @@ Parameter: ApplicationGateway (ByValue)
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

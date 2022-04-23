@@ -7,8 +7,8 @@ ms.openlocfilehash: f91e6d4d6d5b9a9da58c2d51e311b89ccfefd8f6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142135461"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210015"
 ---
 # New-AzureStorageContainerStoredAccessPolicy
 
@@ -191,7 +191,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

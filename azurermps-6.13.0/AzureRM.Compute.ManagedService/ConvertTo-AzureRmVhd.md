@@ -9,8 +9,8 @@ ms.openlocfilehash: 0fa0f2d5cb78fe96f05b818b5cbfdabca47cbdee
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142389428"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165357"
 ---
 # ConvertTo-AzureRmVhd
 
@@ -158,6 +158,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.PathInfo
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

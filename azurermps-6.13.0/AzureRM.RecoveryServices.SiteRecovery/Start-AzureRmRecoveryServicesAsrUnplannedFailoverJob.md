@@ -9,8 +9,8 @@ ms.openlocfilehash: b7a9dffe443ca7603b8b5a3bdd100560d83a498e
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141967695"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143215783"
 ---
 # Start-AzureRmRecoveryServicesAsrUnplannedFailoverJob
 
@@ -257,7 +257,7 @@ Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedIt
 
 ### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

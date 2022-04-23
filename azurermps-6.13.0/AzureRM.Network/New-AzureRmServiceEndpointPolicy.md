@@ -9,8 +9,8 @@ ms.openlocfilehash: 657c18a02f05f2e318fe676a672e894a4aec9e50
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142138194"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143160688"
 ---
 # New-AzureRmServiceEndpointPolicy
 
@@ -162,6 +162,6 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 ### Microsoft.Azure.Commands.Network.Models.PSServiceEndpointPolicy
 
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

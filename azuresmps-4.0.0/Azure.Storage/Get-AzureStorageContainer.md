@@ -7,8 +7,8 @@ ms.openlocfilehash: 694fa6ef5c438a0eec07d534b2843f9c59dd0fb2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141815345"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210123"
 ---
 # Get-AzureStorageContainer
 
@@ -192,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

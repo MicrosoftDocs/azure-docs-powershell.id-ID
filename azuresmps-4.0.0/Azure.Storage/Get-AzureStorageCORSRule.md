@@ -7,8 +7,8 @@ ms.openlocfilehash: 7b0d7efb5cad64e594393b223d57168f5cbe2fe2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141879564"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143210141"
 ---
 # Get-AzureStorageCORSRule
 
@@ -138,7 +138,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ###  
 Cmdlet ini mengembalikan array objek **PSCORSRule** yang mewakili aturan CORS saat ini pada layanan.
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

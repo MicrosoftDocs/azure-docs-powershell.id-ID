@@ -10,8 +10,8 @@ ms.openlocfilehash: e80b82f567dd1c0935dd56d8e3996a63bcce72e7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142100411"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143165420"
 ---
 # Set-AzureRmCdnProfile
 
@@ -107,7 +107,7 @@ Parameter: CdnProfile (ByValue)
 
 ### Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
