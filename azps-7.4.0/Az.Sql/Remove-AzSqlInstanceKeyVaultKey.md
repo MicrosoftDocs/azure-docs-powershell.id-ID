@@ -9,8 +9,8 @@ ms.openlocfilehash: ce5d4762333356bedd4093194d3a0c4030b5232d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142165104"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143306999"
 ---
 # Remove-AzSqlInstanceKeyVaultKey
 
@@ -248,6 +248,6 @@ System.String
 
 ### Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.AzureRmSqlManagedInstanceKeyVaultKeyModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

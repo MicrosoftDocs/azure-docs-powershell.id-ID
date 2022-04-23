@@ -9,8 +9,8 @@ ms.openlocfilehash: 4bbadffb1221c1037b78010f1eb27237359b8f47
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174074"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143306855"
 ---
 # Remove-AzSqlInstanceServerTrustCertificate
 
@@ -291,7 +291,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ServerTrustCertificate.Model.AzureSqlInstanceServerTrustCertificateModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 
