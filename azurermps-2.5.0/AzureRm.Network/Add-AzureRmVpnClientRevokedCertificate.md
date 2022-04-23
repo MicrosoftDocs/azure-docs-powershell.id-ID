@@ -8,8 +8,8 @@ ms.openlocfilehash: e2a2153ca9d75447603ce87c896720ece0f83a18
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142392903"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143168975"
 ---
 # Add-AzureRmVpnClientRevokedCertificate
 
@@ -136,7 +136,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

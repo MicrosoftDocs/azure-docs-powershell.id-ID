@@ -8,8 +8,8 @@ ms.openlocfilehash: 10d95102058c759f9b2641f233bd590364945c71
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141927998"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143167985"
 ---
 # Get-AzureRmADServicePrincipal
 
@@ -268,14 +268,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADServicePrincipal
+### Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADServicePrincipal
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

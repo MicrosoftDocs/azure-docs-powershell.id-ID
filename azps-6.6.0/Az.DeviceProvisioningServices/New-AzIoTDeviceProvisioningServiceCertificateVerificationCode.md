@@ -9,8 +9,8 @@ ms.openlocfilehash: 16fa13c86ef47465eacba6bf9637237f083cc330
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142232929"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143148869"
 ---
 # New-AzIoTDeviceProvisioningServiceCertificateVerificationCode
 
@@ -43,7 +43,7 @@ New-AzIoTDeviceProvisioningServiceCertificateVerificationCode [-ResourceId] <Str
 
 ## DESCRIPTION
 Kode verifikasi ini digunakan untuk menyelesaikan langkah bukti kepemilikan untuk sertifikat. Gunakan kode verifikasi ini sebagai CN sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
-Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
+Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
 
 ## EXAMPLES
 
@@ -236,6 +236,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSVerificationCodeResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
