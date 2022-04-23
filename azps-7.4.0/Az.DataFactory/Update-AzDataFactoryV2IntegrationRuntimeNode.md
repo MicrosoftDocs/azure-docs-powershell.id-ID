@@ -9,8 +9,8 @@ ms.openlocfilehash: e6640ae5fc0b6b59384bb6b08c56cdb74cc9f777
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142002790"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143125379"
 ---
 # Update-AzDataFactoryV2IntegrationRuntimeNode
 
@@ -223,7 +223,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode
 
-## CATATAN
+## NOTES
 Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS

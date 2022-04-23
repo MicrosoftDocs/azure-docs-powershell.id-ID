@@ -10,8 +10,8 @@ ms.openlocfilehash: 6b5d7fa889810563964aa66a34b567f482781ac6
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142391435"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143111522"
 ---
 # Get-AzureStorageCORSRule
 
@@ -156,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.WindowsAzure.Commands. Storage. Model.ResourceModel.PSCorsRule
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

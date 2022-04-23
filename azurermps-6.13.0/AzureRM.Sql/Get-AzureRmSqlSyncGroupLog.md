@@ -9,8 +9,8 @@ ms.openlocfilehash: 09d095751ff9f9e8ba7103073392f2c2d0a008d7
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141774795"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105985"
 ---
 # Get-AzureRmSqlSyncGroupLog
 
@@ -178,6 +178,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.DataSync.Model.AzureSqlSyncGroupLogModel
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

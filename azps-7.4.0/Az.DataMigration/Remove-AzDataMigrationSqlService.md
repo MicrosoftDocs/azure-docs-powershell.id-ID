@@ -1,60 +1,52 @@
 ---
-external help file: ''
-Module Name: Az.MySql
-online version: https://docs.microsoft.com/powershell/module/az.mysql/remove-azmysqlflexibleserver
+external help file: Az.DataMigration-help.xml
+Module Name: Az.DataMigration
+online version: https://docs.microsoft.com/powershell/module/az.datamigration/remove-azdatamigrationsqlservice
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServer.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServer.md
-ms.openlocfilehash: 4c3fbce358aaecd946cb2d1bb16b3749ce867b62
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlService.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlService.md
+ms.openlocfilehash: 68dd6eb5e55997b1bc29708802215b0897853f19
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119583"
+ms.locfileid: "143124713"
 ---
-# Remove-AzMySqlFlexibleServer
+# Remove-AzDataMigrationSqlService
 
 ## SYNOPSIS
-Menghapus server.
+Hapus Database Migration Service.
 
 ## SYNTAX
 
 ### Hapus (Default)
 ```
-Remove-AzMySqlFlexibleServer -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzDataMigrationSqlService -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzMySqlFlexibleServer -InputObject <IMySqlIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzDataMigrationSqlService -InputObject <IDataMigrationIdentity> [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus server.
+Hapus Database Migration Service.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus server MySql menurut resourceGroup dan nama server
+### Contoh 1: Menghapus Sql Migration Service
 ```powershell
-Remove-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -Name mysql-test
+Remove-AzDataMigrationSqlService -ResourceGroupName "MyResourceGroup" -Name "MySqlMigrationService"
 ```
 
-Cmdlet ini menghapus server MySql menurut resourceGroup dan nama server.
-
-### Contoh 2: Hapus server MySql menurut identitas
-```powershell
-$ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/flexibleServers/mysql-test"
-Remove-AzMySqlFlexibleServer -InputObject $ID
-```
-
-Cmdlet ini menghapus server MySql berdasarkan identitas.
+Perintah ini menghapus Sql Migration Service yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +79,7 @@ Accept wildcard characters: False
 Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -98,13 +90,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama server.
+### -Name
+Nama SQL Migration Service.
 
 ```yaml
 Type: System.String
 Parameter Sets: Delete
-Aliases: ServerName
+Aliases: SqlMigrationServiceName
 
 Required: True
 Position: Named
@@ -144,8 +136,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -160,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan target.
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
@@ -174,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,11 +198,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
 
 ## OUTPUTS
 
@@ -225,18 +217,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
-  - `[BackupName <String>]`: Nama cadangan.
-  - `[ConfigurationName <String>]`: Nama konfigurasi server.
-  - `[DatabaseName <String>]`: Nama database.
-  - `[FirewallRuleName <String>]`: Nama aturan firewall server.
+INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
-  - `[ServerName <String>]`: Nama server.
-  - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
+  - `[ManagedInstanceName <String>]`: 
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
+  - `[SqlMigrationServiceName <String>]`: Nama SQL Migration Service.
+  - `[SqlVirtualMachineName <String>]`: 
+  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Azure.
+  - `[TargetDbName <String>]`: Nama database target.
 
 ## RELATED LINKS
-

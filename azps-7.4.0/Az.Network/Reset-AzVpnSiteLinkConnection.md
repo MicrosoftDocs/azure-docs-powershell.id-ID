@@ -9,8 +9,8 @@ ms.openlocfilehash: a4f62a880fd66a334487ee62e179b78e226fadc2
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176114"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143118287"
 ---
 # Reset-AzVpnSiteLinkConnection
 
@@ -181,6 +181,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

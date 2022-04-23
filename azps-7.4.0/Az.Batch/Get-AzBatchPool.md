@@ -10,8 +10,8 @@ ms.openlocfilehash: 87c3956cae023c762db64c09f7d393b4aab8b62f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141992910"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143067023"
 ---
 # Get-AzBatchPool
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Batch.Models.PSCloudPool
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

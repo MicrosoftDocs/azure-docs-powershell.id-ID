@@ -9,13 +9,13 @@ ms.openlocfilehash: e1ce7af18ff7fe6ba5c0dfa099f9b1852edbfd7a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142432787"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143124623"
 ---
 # Get-AzDataProtectionJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan dengan id dalam kubah cadangan
+Mendapatkan pekerjaan dengan id di brankas cadangan
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-AzDataProtectionJob -ResourceGroupName <String> -VaultName <String> [-Subscr
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDataProtectionJob -Id <String> -ResourceGroupName <String> -VaultName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +38,11 @@ Get-AzDataProtectionJob -InputObject <IDataProtectionIdentity> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Mendapatkan pekerjaan dengan id dalam kubah cadangan
+Mendapatkan pekerjaan dengan id di brankas cadangan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Semua Pekerjaan cadangan dalam kubah cadangan
+### Contoh 1: Mendapatkan Semua Pekerjaan pencadangan dalam brankas cadangan
 ```powershell
 Get-AzDataProtectionjob -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 ```
@@ -58,9 +58,9 @@ a6a4879d-f914-4174-b129-0e27da8a4fb0 Microsoft.DataProtection/backupVaults/backu
 736bab4d-480f-49f8-92ea-57c5ff203c33 Microsoft.DataProtection/backupVaults/backupJobs
 ```
 
-Perintah ini mendapatkan semua pekerjaan cadangan dalam kubah cadangan tertentu.
+Perintah ini mendapatkan semua pekerjaan pencadangan dalam vault cadangan tertentu.
 
-### Contoh 2: Dapatkan Satu Pekerjaan 
+### Contoh 2: Mendapatkan satu Pekerjaan 
 ```powershell
 Get-AzDataProtectionjob -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault -Id 4abaea8c-f53a-4bb1-9963-59f96b597165
 ```
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -Id
 ID Pekerjaan.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah cadangan ada.
+Nama grup sumber daya tempat vault cadangan berada.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah cadangan.
+Nama brankas cadangan.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IAzureBackupJobResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 
@@ -190,15 +190,15 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama kubah cadangan.
+  - `[VaultName <String>]`: Nama brankas cadangan.
 
 ## RELATED LINKS
 

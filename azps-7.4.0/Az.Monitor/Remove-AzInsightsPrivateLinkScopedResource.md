@@ -9,8 +9,8 @@ ms.openlocfilehash: a46c7f7aeffbb82e5a952d804745f9c31398718d
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431994"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143119655"
 ---
 # Remove-AzInsightsPrivateLinkScopedResource
 
@@ -185,6 +185,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 0071a47c660f1e3516fd6db1ffcc2a0a64773072
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141841635"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143068067"
 ---
 # Invoke-AzAksRunCommand
 
@@ -265,6 +265,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Aks.Models.PSRunCommandResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

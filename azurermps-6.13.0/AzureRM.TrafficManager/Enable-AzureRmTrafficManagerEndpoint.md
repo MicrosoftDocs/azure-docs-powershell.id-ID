@@ -10,13 +10,13 @@ ms.openlocfilehash: 2556715c321ddcc3f8acbc518ddbe6a3048353af
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142059013"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143105443"
 ---
 # Enable-AzureRmTrafficManagerEndpoint
 
 ## SYNOPSIS
-Mengaktifkan titik akhir di profil Pengelola Lalu Lintas.
+Mengaktifkan titik akhir di profil Traffic Manager.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,7 +35,7 @@ Enable-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndp
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzureRmTrafficManagerEndpoint** memungkinkan titik akhir di profil Azure Traffic Manager.
+Cmdlet **Enable-AzureRmTrafficManagerEndpoint** memungkinkan titik akhir dalam profil Azure Traffic Manager.
 
 Anda dapat menggunakan operator pipeline untuk mengirimkan objek **TrafficManagerEndpoint** ke cmdlet ini, atau menentukan objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama titik akhir Manajer Lalu Lintas yang diaktifkan cmdlet ini.
+Menentukan nama titik akhir Traffic Manager yang diaktifkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil Traffic Manager di mana cmdlet ini mengaktifkan titik akhir.
+Menentukan nama profil Traffic Manager tempat cmdlet ini mengaktifkan titik akhir.
 Untuk mendapatkan profil, gunakan cmdlet Get-AzureRmTrafficManagerProfile.
 
 ```yaml
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini memungkinkan titik akhir Manajer Lalu Lintas dalam grup yang ditentukan parameter ini.
+Cmdlet ini memungkinkan titik akhir Traffic Manager dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Parameter 'TrafficManagerEndpoint' menerima nilai tipe 'TrafficManagerEndpoint' 
 
 ### System.Boolean
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

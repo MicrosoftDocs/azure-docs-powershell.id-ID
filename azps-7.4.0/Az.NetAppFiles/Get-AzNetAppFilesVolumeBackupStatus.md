@@ -9,8 +9,8 @@ ms.openlocfilehash: 4f4bfb334eb615ff3e72c1fd6079986a1c79822a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142422356"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143119205"
 ---
 # Get-AzNetAppFilesVolumeBackupStatus
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolumeBackupStatus
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

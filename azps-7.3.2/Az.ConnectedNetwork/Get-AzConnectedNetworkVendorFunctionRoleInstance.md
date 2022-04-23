@@ -9,8 +9,8 @@ ms.openlocfilehash: 9c898a7d52d74f53bfc52a1a1b200a836baa1976
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141897633"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143080487"
 ---
 # Get-AzConnectedNetworkVendorFunctionRoleInstance
 
@@ -206,7 +206,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.IRoleInstance
 
-## CATATAN
+## NOTES
 
 ALIAS
 

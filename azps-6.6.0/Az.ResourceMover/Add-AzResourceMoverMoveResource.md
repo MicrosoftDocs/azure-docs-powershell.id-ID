@@ -9,8 +9,8 @@ ms.openlocfilehash: 9a672d7144d4d70c2d2117337460bfe47b294a37
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142300525"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143086157"
 ---
 # Add-AzResourceMoverMoveResource
 
@@ -349,7 +349,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ResourceMover.Models.Api202101.IMoveResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

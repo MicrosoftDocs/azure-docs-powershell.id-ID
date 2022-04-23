@@ -9,8 +9,8 @@ ms.openlocfilehash: c0466a320f4aa92409e8d4fa402d084cec7b2642
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142030403"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143073413"
 ---
 # Invoke-AzOperationalInsightsQuery
 
@@ -233,6 +233,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSQueryResponse
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
