@@ -9,8 +9,8 @@ ms.openlocfilehash: a44c799eec3083fb14683e7d8c4df2268e7a6858
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307383"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143260397"
 ---
 # Update-AzContainerRegistryManifest
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Kontainer Azure.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -244,6 +244,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ContainerRegistry.Models.PSManifestAttribute
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

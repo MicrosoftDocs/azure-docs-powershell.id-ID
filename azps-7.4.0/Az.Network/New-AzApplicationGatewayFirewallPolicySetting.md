@@ -9,8 +9,8 @@ ms.openlocfilehash: e5f984d1b57efaf07962f1d47785fd0e1feeab6f
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834979"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281727"
 ---
 # New-AzApplicationGatewayFirewallPolicySetting
 
@@ -36,7 +36,7 @@ $condition = New-AzApplicationGatewayFirewallPolicySetting -State $enabledState 
 ```
 
 Perintah membuat pengaturan kebijakan dengan status sebagai $enabledState, mode sebagai $enabledMode, RequestBodyCheck sebagai false, FileUploadLimitInMb sebagai $fileUploadLimitInMb dan MaxRequestBodySizeInKb sebagai $$maxRequestBodySizeInKb.
-Kebijakan baruSettings disimpan ke $condition.
+PolicySettings baru disimpan ke $condition.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableRequestBodyCheck
-Diables the requestBodyCheck in policy settings of the firewall policy.
+Mendiables requestBodyCheck dalam pengaturan kebijakan kebijakan firewall.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxFileUploadInMb
-Ukuran maksimal fileUpload dalam MB.
+Ukuran fileUpload maksimum dalam MB.
 
 ```yaml
 Type: System.Int32
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Mode Firewall dalam pengaturan kebijakan kebijakan kebijakan firewall.
+Mode Firewall dalam pengaturan kebijakan kebijakan firewall.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Variabel status dalam pengaturan kebijakan kebijakan firewall.
 
 ```yaml
@@ -133,16 +133,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicySettings
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

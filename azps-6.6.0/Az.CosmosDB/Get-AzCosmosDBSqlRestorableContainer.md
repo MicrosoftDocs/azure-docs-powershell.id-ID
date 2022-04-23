@@ -9,13 +9,13 @@ ms.openlocfilehash: 28ceaa60bce7c8d83070044e2a2d8ae4fb19d23b
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142307293"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143260253"
 ---
 # Get-AzCosmosDBSqlRestorableContainer
 
 ## SYNOPSIS
-Mencantumkan semua wadah Azure Cosmos DB SQL yang dapat disembuhkan yang tersedia untuk database tertentu.
+Mencantumkan semua kontainer SQL Azure Cosmos DB yang dapat disembuhkan yang tersedia untuk database tertentu.
 
 > [!NOTE]
 >Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorablecontainer) untuk informasi terbaru.
@@ -35,7 +35,7 @@ Get-AzCosmosDBSqlRestorableContainer -InputObject <PSRestorableSqlDatabaseGetRes
 ```
 
 ## DESCRIPTION
-Mencantumkan semua wadah Azure Cosmos DB SQL yang dapat disembuhkan yang tersedia untuk database tertentu.
+Mencantumkan semua kontainer SQL Azure Cosmos DB yang dapat disembuhkan yang tersedia untuk database tertentu.
 Daftar akan memiliki entri yang terkait untuk membuat, mengganti, dan menghapus kejadian semua kontainer langsung dan dihapus di bawah database.
 Daftar ini berguna untuk mengidentifikasi stempel waktu pemulihan berdasarkan perubahan dalam wadah. Misalnya, jika pengguna ingin memulihkan akun database ke stempel waktu ketika wadah tertentu dihapus, pengguna dapat menemukan kejadian penghapusan koleksi yang terkait dari daftar ini, dan memilih cap waktu sebelum acara penghapusan untuk dipulihkan.
 
@@ -170,6 +170,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.CosmosDB.Models.PSRestorableSqlContainerGetResult
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

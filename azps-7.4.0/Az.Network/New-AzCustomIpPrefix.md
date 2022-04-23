@@ -9,8 +9,8 @@ ms.openlocfilehash: f3b40a9be921239ebce3cb5d408fe623da7a2406
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431414"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281475"
 ---
 # New-AzCustomIpPrefix
 
@@ -36,12 +36,12 @@ Cmdlet **New-AzCustomIpPrefix** membuat sumber daya CustomIpPrefix.
 $myCustomIpPrefix = New-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Cidr "40.40.40.0/24" -Location westus2 -Zone 1,2,3 -AuthorizationMessage $authorizationMessage -SignedMessage $signedMessage
 ```
 
-Perintah ini memulai proses penyediaan untuk sumber daya Prefiks IP Kustom IPv4 zona baru dengan nama $prefixName dalam grup sumber daya $rgName dengan CIDR 40.40.40.0/24 di wilayah AS Barat 2.  Perhatikan bahwa AuthorizationMessage adalah string yang dihubungi (berisi ID langganan, CIDR, dan tanggal kedaluwarsa Otorisasi Rute Origin) dan SignedMessage adalah string yang sama yang ditandatangani oleh sertifikat X509 secara offline. 
+Perintah ini memulai proses provisi untuk sumber daya Prefiks IP Kustom IPv4 zona redundan baru dengan nama $prefixName dalam grup sumber daya $rgName dengan CIDR 40.40.40.0/24 di wilayah US Barat 2.  Perhatikan bahwa AuthorizationMessage adalah string yang dihubungi (berisi ID langganan, CIDR, dan tanggal kedaluwarsa Otorisasi Asal Rute) dan SignedMessage adalah string yang sama yang ditandatangani oleh sertifikat X509 secara offline. 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +100,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+Daftar zona ketersediaan yang menunjukkan IP yang dialokasikan untuk kebutuhan sumber daya.
 
 ```yaml
 Type: String[]
@@ -205,8 +205,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -253,7 +253,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSCustomIpPrefix
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: bf359a82ded4ac3e597e5e969d47d2f63fb5ca84
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141988602"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143268623"
 ---
 # Get-AzStaticWebAppCustomDomain
 
@@ -185,7 +185,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20201201.IStaticSiteCustomDomainOverviewArmResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

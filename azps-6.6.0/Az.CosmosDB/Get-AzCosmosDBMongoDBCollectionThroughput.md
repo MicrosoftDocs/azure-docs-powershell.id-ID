@@ -9,8 +9,8 @@ ms.openlocfilehash: 6abb7693a9f0d13df3f2e3dac31a8776df529110
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142088241"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143260271"
 ---
 # Get-AzCosmosDBMongoDBCollectionThroughput
 
@@ -185,6 +185,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSThroughputSettingsGetResults
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

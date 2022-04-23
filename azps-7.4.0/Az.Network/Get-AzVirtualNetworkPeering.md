@@ -10,13 +10,13 @@ ms.openlocfilehash: 59a1f654c814013014495150e3421d1ce933d7ac
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431574"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281745"
 ---
 # Get-AzVirtualNetworkPeering
 
 ## SYNOPSIS
-Mendapatkan peering jaringan virtual.
+Menghapus peering jaringan virtual.
 
 ## SYNTAX
 
@@ -30,14 +30,14 @@ Cmdlet **Get-AzVirtualNetworkPeering** mendapatkan peering jaringan virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan peering di antara dua jaringan virtual
+### Contoh 1: Mendapatkan peering antara dua jaringan virtual
 ```powershell
 # Get virtual network peering named myVnet1TomyVnet2 located in myVirtualNetwork in the resource group named myResourceGroup.
 
 Get-AzVirtualNetworkPeering -Name "myVnet1TomyVnet2" -VirtualNetwork "myVnet" -ResourceGroupName "myResourceGroup"
 ```
 
-### Contoh 2: Dapatkan semua peering di jaringan virtual
+### Contoh 2: Mendapatkan semua peering di jaringan virtual
 ```powershell
 # Get all virtual network peerings located in myVirtualNetwork in the resource group named myResourceGroup.
 
@@ -61,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama peering jaringan maya.
+### -Name
+Menentukan nama peering jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkPeering
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

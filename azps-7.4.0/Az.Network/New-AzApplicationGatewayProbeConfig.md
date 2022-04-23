@@ -9,8 +9,8 @@ ms.openlocfilehash: 2e9b592c78bba289394c0da1a2cee6f8f5588519
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141834912"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281619"
 ---
 # New-AzApplicationGatewayProbeConfig
 
@@ -27,7 +27,7 @@ New-AzApplicationGatewayProbeConfig -Name <String> -Protocol <String> [-HostName
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzApplicationGatewayProbeConfig menciptakan pemeriksaan kesehatan.
+Cmdlet New-AzApplicationGatewayProbeConfig membuat pemeriksaan kesehatan.
 
 ## EXAMPLES
 
@@ -36,11 +36,11 @@ Cmdlet New-AzApplicationGatewayProbeConfig menciptakan pemeriksaan kesehatan.
 New-AzApplicationGatewayProbeConfig -Name "Probe03" -Protocol Http -HostName "contoso.com" -Path "/path/custompath.htm" -Interval 30 -Timeout 120 -UnhealthyThreshold 8
 ```
 
-Perintah ini membuat pemeriksaan kesehatan bernama Probe03, dengan protokol HTTP, interval 30 detik, waktu habis 120 detik, dan ambang batas 8 percobaan yang tidak sehat.
+Perintah ini membuat pemeriksaan kesehatan bernama Probe03, dengan protokol HTTP, interval 30 detik, batas waktu 120 detik, dan ambang tidak sehat dari 8 percobaan ulang.
 
 ### Contoh 2
 
-Membuat pemeriksaan kesehatan. (autogenerasi)
+Membuat pemeriksaan kesehatan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host yang dikirim cmdlet ini ke probe.
+Menentukan nama host yang dikirim cmdlet ini untuk pemeriksaan.
 
 ```yaml
 Type: System.String
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval probe dalam detik.
-Ini adalah interval waktu antara dua probe berturut-turut.
+Menentukan interval pemeriksaan dalam hitungan detik.
+Nilai ini adalah jeda waktu antara dua pemeriksaan berturutan.
 Nilai ini antara 1 detik dan 86400 detik.
 
 ```yaml
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cocok
-Tubuh yang harus dikandung dalam respons kesehatan.
+Tubuh yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -128,7 +128,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama probe.
 
 ```yaml
@@ -144,9 +144,9 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur relatif probe.
+Menentukan jalur relatif pemeriksaan.
 Jalur yang valid dimulai dengan karakter garis miring (/).
-Probe dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
+Pemeriksaan dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -PickHostNameFromBackendHttpSettings
 Apakah header host harus dipilih dari pengaturan http backend.
-Nilai default adalah false
+Nilai defaultnya adalah false
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang digunakan untuk mengirim probe.
+Menentukan protokol yang digunakan untuk mengirim pemeriksaan.
 
 ```yaml
 Type: System.String
@@ -193,8 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu habis
-Menentukan waktu probe habis dalam detik.
-Cmdlet ini menandai pemeriksaan gagal jika respons valid tidak diterima dengan periode waktu habis ini.
+Menentukan batas waktu pemeriksaan dalam detik.
+Cmdlet ini menandai pemeriksaan sebagai gagal jika respons yang valid tidak diterima dengan periode batas waktu ini.
 Nilai yang valid adalah antara 1 detik dan 86400 detik.
 
 ```yaml
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyThreshold
-Menentukan jumlah percobaan ulang probe.
-Server backend ditandai turun setelah jumlah kegagalan penyelidikan berturut-turut mencapai ambang batas yang tidak sehat.
+Menentukan jumlah coba lagi pemeriksaan.
+Server backend ditandai ke bawah setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang tidak sehat.
 Nilai yang valid adalah antara 1 detik dan 20 detik.
 
 ```yaml
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan porta yang digunakan untuk probing backend server.
+Menentukan porta yang digunakan untuk memeriksa server ujung belakang.
 
 ```yaml
 Type: System.Int32

@@ -9,8 +9,8 @@ ms.openlocfilehash: f87a35df8aa113d915f32639e71c4b396ca85d31
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142433386"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143268713"
 ---
 # Get-AzStaticWebApp
 
@@ -189,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.Api20201201.IStaticSiteArmResource
 
-## CATATAN
+## NOTES
 
 ALIAS
 

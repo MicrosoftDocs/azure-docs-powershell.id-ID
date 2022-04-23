@@ -9,8 +9,8 @@ ms.openlocfilehash: 7200b256e76bd77c12bc4dd07e6f52c2eb140fd8
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "141993743"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143274599"
 ---
 # Get-AzSecuritySecureScoreControl
 
@@ -99,6 +99,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Assessments.PSSecuritySecureScoreControl
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

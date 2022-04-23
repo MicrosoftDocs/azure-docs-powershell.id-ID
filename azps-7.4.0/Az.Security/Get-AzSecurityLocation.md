@@ -9,8 +9,8 @@ ms.openlocfilehash: 535e552e83adc1689d1397f8d3b10e60b4a859d0
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142174807"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143274635"
 ---
 # Get-AzSecurityLocation
 
@@ -111,6 +111,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Security.Models.Locations.PSSecurityLocation
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

@@ -9,8 +9,8 @@ ms.openlocfilehash: 934a78a83a0005a389c7e71ee5344fe612ab2c86
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142003858"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143230895"
 ---
 # Remove-AzRestorePoint
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSRestorePoint
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS

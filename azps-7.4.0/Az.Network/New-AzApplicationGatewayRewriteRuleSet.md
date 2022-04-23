@@ -9,13 +9,13 @@ ms.openlocfilehash: bf364d7c41b0cfb7c25a35141ce8294277b8b435
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142431457"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281565"
 ---
 # New-AzApplicationGatewayRewriteRuleSet
 
 ## SYNOPSIS
-Membuat kumpulan aturan penulisan ulang untuk gateway aplikasi.
+Membuat seperangkat aturan penulisan ulang untuk gateway aplikasi.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-AzApplicationGatewayRewriteRuleSet -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayRewriteRuleSet** membuat kumpulan aturan penulisan ulang untuk gateway aplikasi Azure.
+Cmdlet **New-AzApplicationGatewayRewriteRuleSet** membuat seperangkat aturan penulisan ulang untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Cmdlet **New-AzApplicationGatewayRewriteRuleSet** membuat kumpulan aturan penuli
 $ruleset = New-AzApplicationGatewayRewriteRuleSet -Name ruleset1 -RewriteRule $rule
 ```
 
-Perintah ini membuat kumpulan aturan tulis ulang bernama ruleset1 dan menyimpan hasilnya dalam variabel bernama $ruleset.
+Perintah ini membuat seperangkat aturan penulisan ulang bernama ruleset1 dan menyimpan hasilnya dalam variabel bernama $ruleset.
 
 ## PARAMETERS
 
@@ -54,7 +54,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama RewriteRuleSet
 
 ```yaml
@@ -85,17 +85,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleSet
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
 

@@ -9,13 +9,13 @@ ms.openlocfilehash: a935cae96b57dd895dfe0cace17e26c7c6c2ab1a
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "142176754"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "143281817"
 ---
 # Get-AzVirtualNetworkGatewayConnectionIkeSa
 
 ## SYNOPSIS
-Dapatkan Asosiasi Keamanan IKE dari Koneksi Gateway Virtual Network
+Mendapatkan Asosiasi Keamanan IKE dari Koneksi Gateway Virtual Network
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Get-AzVirtualNetworkGatewayConnectionIkeSa [-ResourceId <String>] [-AsJob]
 
 ## DESCRIPTION
 Cmdlet **Get-AzVirtualNetworkGatewayConnectionIkeSa** mengembalikan Asosiasi Keamanan IKE koneksi Anda berdasarkan Nama Koneksi dan Nama Grup Sumber Daya.
-Jika cmdlet **Get-AzVirtualNetworkGatewayConnection** dikeluarkan tanpa menentukan parameter -Name, output tidak akan memperlihatkan Asosiasi Keamanan IKE.
+Jika cmdlet **Get-AzVirtualNetworkGatewayConnection** dikeluarkan tanpa menentukan parameter -Name, output tidak akan menampilkan Asosiasi Keamanan IKE.
 
 ## EXAMPLES
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek koneksi gateway jaringan virtual tempat SAS IKE perlu disambungkan.
+Objek koneksi gateway jaringan virtual yang SAs IKE-nya perlu diambil.
 
 ```yaml
 Type: PSVirtualNetworkGatewayConnection
@@ -113,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama koneksi gateway jaringan virtual tempat SAS IKE perlu disambungkan.
+### -Name
+Nama koneksi gateway jaringan virtual yang SAs IKE-nya perlu diambil.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari Virtual Network Gateway Connection tempat SAS IKE harus di ambil.
+ID sumber daya Azure dari Virtual Network Gateway Connection yang SAs IKE-nya perlu diambil.
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -169,6 +169,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnectionIkeSa
 
-## CATATAN
+## NOTES
 
 ## RELATED LINKS
