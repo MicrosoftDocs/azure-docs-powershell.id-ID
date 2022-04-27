@@ -1,0 +1,178 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.ServiceBus.dll-Help.xml
+Module Name: Az.ServiceBus
+online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-azservicebusnetworkruleset
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
+ms.openlocfilehash: c190f9dec002774c17e3a1b81547ba70bba8e9eb
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144188221"
+---
+# Get-AzServiceBusNetworkRuleSet
+
+## SYNOPSIS
+Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
+
+## SYNTAX
+
+### NetworkRuleSetPropertiesSet (Default)
+```
+Get-AzServiceBusNetworkRuleSet [-ResourceGroupName] <String> [-Namespace] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### NetworkRuleSetNamespacePropertiesSet
+```
+Get-AzServiceBusNetworkRuleSet [[-ResourceGroupName] <String>] [-Namespace] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### NetworkRuleSetResourceIdParameterSet
+```
+Get-AzServiceBusNetworkRuleSet [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+Get-AzServiceBusNetworkRuleSet -ResourceGroupName  v-ajnavtest -Namespace ServiceBus-Namespace-1122
+```
+
+```output
+Name                : default
+DefaultAction       : Allow
+Id                  : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default
+Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
+IpRules             : {1.1.1.1, Allow}
+VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
+```
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan parameter ResourceGroup dan Namespace. 
+
+### Contoh 2
+```powershell
+Get-AzServiceBusNetworkRuleSet -Namespace ServiceBus-Namespace-1122
+```
+
+```output
+Name                : default
+DefaultAction       : Allow
+Id                  : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default
+Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
+IpRules             : {1.1.1.1, Allow}
+VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
+```
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Namespace layanan yang ada di langganan saat ini.
+
+### Contoh 3
+```powershell
+Get-AzServiceBusNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389
+```
+
+```output
+Name                : default
+DefaultAction       : Allow
+Id                  : /subscriptions/subscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389/networkRuleSets/default
+Type                : Microsoft.ServiceBus/Namespaces/NetworkRuleSet
+IpRules             : {1.1.1.1, Allow}
+VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default, False}
+```
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Id Sumber Daya namespace layanan lainnya 
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Namespace
+Nama Namespace
+
+```yaml
+Type: System.String
+Parameter Sets: NetworkRuleSetPropertiesSet, NetworkRuleSetNamespacePropertiesSet
+Aliases: NamespaceName
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama Grup Sumber Daya
+
+```yaml
+Type: System.String
+Parameter Sets: NetworkRuleSetPropertiesSet
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: NetworkRuleSetNamespacePropertiesSet
+Aliases:
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceId
+Id Sumber Daya Namespace
+
+```yaml
+Type: System.String
+Parameter Sets: NetworkRuleSetResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.ServiceBus.Models.PSNetworkRuleSetAttributes
+
+## NOTES
+
+## RELATED LINKS

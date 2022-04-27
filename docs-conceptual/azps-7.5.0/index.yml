@@ -1,0 +1,145 @@
+###YamlMime:Landing
+title: Dokumentasi Azure PowerShell
+summary: |
+  Dokumentasi produk resmi untuk Azure PowerShell. Azure PowerShell adalah kumpulan modul untuk mengelola sumber daya Azure dari PowerShell.
+metadata:
+  title: Dokumentasi Azure PowerShell
+  description: Dokumentasi produk resmi untuk Azure PowerShell. Azure PowerShell adalah kumpulan modul untuk mengelola sumber daya Azure dari PowerShell.
+  ms.topic: landing-page
+  author: mikefrobbins
+  ms.author: mirobb
+  ms.date: 04/05/2022
+  ms.prod: azure-powershell
+landingContent:
+  - title: Tentang Azure PowerShell
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Mulai
+            url: get-started-azureps.md
+          - text: Apa itu Azure PowerShell?
+            url: what-is-azure-powershell.md
+          - text: Memperkenalkan modul Az PowerShell
+            url: new-azureps-module-az.md
+          - text: Siklus Hidup Dukungan
+            url: azureps-support-lifecycle.md
+      - linkListType: learn
+        links:
+          - text: Mengotomatiskan tugas Azure dari PowerShell
+            url: /learn/modules/automate-azure-tasks-with-powershell/
+  - title: Penginstalan
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Menginstal dengan PowerShellGet
+            url: install-az-ps.md
+          - text: Menginstal dengan MSI
+            url: install-az-ps-msi.md
+          - text: Menjalankan di Azure Cloud Shell
+            url: 'https://shell.azure.com'
+          - text: Menjalankan di Docker
+            url: azureps-in-docker.md
+  - title: Apa yang baru
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Catatan rilis
+            url: release-notes-azureps.md
+          - text: Perubahan mencolok di Az 7.0.0
+            url: migrate-az-7.0.0.md
+          - text: Penyelesaian perintah cerdas
+            url: az-predictor.md
+  - title: Referensi Azure PowerShell
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Referensi Cmdlet
+            url: /powershell/module/?view=azps-7.4.0
+  - title: Identitas dan Autentikasi
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Azure AD perubahan Migrasi Graph Microsoft
+            url: azps-msgraph-migration-changes.md
+      - linkListType: how-to-guide
+        links:
+          - text: Metode autentikasi
+            url: authenticate-azureps.md
+          - text: Membuat perwakilan layanan
+            url: create-azure-service-principal-azureps.md
+          - text: Konteks Kredensial
+            url: context-persistence.md
+  - title: Konsep
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Kelola langganan
+            url: manage-subscriptions-azureps.md
+          - text: Mengelola sumber daya Azure dengan Invoke-AzRestMethod
+            url: manage-azure-resources-invoke-azrestmethod.md
+          - text: Memfilter hasil cmdlet
+            url: queries-azureps.md
+          - text: Output format
+            url: formatting-output.md
+          - text: Pekerjaan PowerShell
+            url: using-psjobs.md
+      - linkListType: tutorial
+        links:
+          - text: Membuat komputer virtual
+            url: azureps-vm-tutorial.yml
+  - title: Konfigurasi
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Menggunakan modul Az PowerShell di belakang proksi.
+            url: az-powershell-proxy.md
+          - text: Penyelesaian perintah cerdas
+            url: az-predictor.md
+  - title: Sebarkan
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Menyebarkan templat resource manager
+            url: /azure/azure-resource-manager/templates/deploy-powershell?toc=/powershell/azure/toc.json
+          - text: Mengekspor templat resource manager
+            url: /azure/azure-resource-manager/management/manage-resources-powershell?toc=/powershell/azure/toc.json
+          - text: Menyebarkan templat manajer sumber daya privat
+            url: /azure/azure-resource-manager/templates/secure-template-with-sas-token?toc=/powershell/azure/toc.json
+  - title: Sampel
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Azure App Service
+            url: /azure/app-service-web/app-service-powershell-samples?toc=/powershell/azure/toc.json
+          - text: Database SQL
+            url: /azure/sql-database/sql-database-powershell-samples?toc=/powershell/azure/toc.json
+          - text: Cosmos DB
+            url: /azure/cosmos-db/sql/powershell-samples?toc=/powershell/azure/toc.json
+          - text: Repositori sampel
+            url: /samples/browse/?terms=azure%20powershell
+  - title: Migrasi dari AzureRM
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Perubahan antara AzureRM dan Az
+            url: migrate-az-1.0.0.md
+      - linkListType: how-to-guide
+        links:
+          - text: Langkah migrasi
+            url: migrate-from-azurerm-to-az.md
+      - linkListType: quickstart
+        links:
+          - text: Memigrasikan skrip PowerShell secara otomatis
+            url: quickstart-migrate-azurerm-to-az-automatically.md
+  - title: Bantuan & Dukungan
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Melaporkan masalah produk
+            url: 'https://github.com/Azure/azure-powershell/issues'
+          - text: Pecahkan masalah
+            url: troubleshooting.md
+          - text: Ikuti Azure PowerShell di Twitter
+            url: 'https://twitter.com/azureposh'
+          - text: Blog Alat Azure
+            url: 'https://techcommunity.microsoft.com/t5/azure-tools-blog/bg-p/AzureToolsBlog'

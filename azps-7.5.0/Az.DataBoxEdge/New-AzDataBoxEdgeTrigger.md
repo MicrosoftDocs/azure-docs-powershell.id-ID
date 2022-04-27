@@ -1,0 +1,304 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.dll-Help.xml
+Module Name: Az.DataBoxEdge
+online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-azdataboxedgetrigger
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeTrigger.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeTrigger.md
+ms.openlocfilehash: a49807e1cf5a8b5625c3e47119c253cca007da80
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144204758"
+---
+# New-AzDataBoxEdgeTrigger
+
+## SYNOPSIS
+Mengonfigurasi pemicu pada perangkat.
+
+## SYNTAX
+
+### FileEventTriggerParameterSet (Default)
+```
+New-AzDataBoxEdgeTrigger [-ResourceGroupName] <String> [-DeviceName] <String> [-Name] <String>
+ -RoleName <String> [-FileEvent] -ShareName <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PeriodicTimerTriggerParameterSet
+```
+New-AzDataBoxEdgeTrigger [-ResourceGroupName] <String> [-DeviceName] <String> [-Name] <String>
+ -RoleName <String> [-PeriodicTimerEvent] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ -Schedule <String> -StartTime <DateTime> -Topic <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### FileEventTriggerResourceIdParameterSet
+```
+New-AzDataBoxEdgeTrigger [-FileEvent] -ShareId <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PeriodicTimerTriggerResourceIdParameterSet
+```
+New-AzDataBoxEdgeTrigger [-PeriodicTimerEvent] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ -Schedule <String> -StartTime <DateTime> -Topic <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzDataBoxEdgeTrigger** mengonfigurasi pemicu pada perangkat Data Box Edge. 
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+New-AzDataBoxEdgeTrigger -ResourceGroupName resourceGroupName -DeviceName deviceName -PeriodicTimerEvent -Name periodic-trigger -RoleName IOTRole -Schedule "00:00" -StartTime "2019-10-28 12:00:00" -Topic sample-topic
+```
+
+```output
+Name                  Kind               
+----                  ----               
+periodic-trigger      PeriodicTimerEvent
+```
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceName
+Nama Perangkat
+
+```yaml
+Type: System.String
+Parameter Sets: FileEventTriggerParameterSet, PeriodicTimerTriggerParameterSet
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FileEvent
+Teruskan parameter sakelar ini untuk mengonfigurasi Pemicu FileEvent
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: FileEventTriggerParameterSet, FileEventTriggerResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Nama sumber daya
+
+```yaml
+Type: System.String
+Parameter Sets: FileEventTriggerParameterSet, PeriodicTimerTriggerParameterSet
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PeriodicTimerEvent
+Teruskan parameter switch ini untuk mengonfigurasi Pemicu PeriodicTimerEvent
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: PeriodicTimerTriggerParameterSet, PeriodicTimerTriggerResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama Grup Sumber Daya
+
+```yaml
+Type: System.String
+Parameter Sets: FileEventTriggerParameterSet, PeriodicTimerTriggerParameterSet
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleName
+Peran komputasi terhadap peristiwa mana yang akan dimunculkan.
+
+```yaml
+Type: System.String
+Parameter Sets: FileEventTriggerParameterSet, PeriodicTimerTriggerParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Jadwal
+Frekuensi berkala di mana peristiwa timer perlu dinaikkan. Tentukan jadwal dalam salah satu hari (antara 1 dan 365), jam (antara 1 dan 23), atau menit (antara 1 dan 59).
+
+```yaml
+Type: System.String
+Parameter Sets: PeriodicTimerTriggerParameterSet, PeriodicTimerTriggerResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShareId
+ID berbagi file yang akan diteruskan di Pemicu FileEvent
+
+```yaml
+Type: System.String
+Parameter Sets: FileEventTriggerResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShareName
+ID berbagi file yang akan diteruskan di Pemicu FileEvent
+
+```yaml
+Type: System.String
+Parameter Sets: FileEventTriggerParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartTime
+Waktu hari yang menghasilkan pemicu yang valid. Jadwal dihitung dengan referensi ke waktu yang ditentukan hingga detik. Jika zona waktu tidak ditentukan, waktu akan dianggap berada di zona waktu perangkat. Nilai akan selalu dikembalikan sebagai waktu UTC.
+
+```yaml
+Type: System.DateTime
+Parameter Sets: PeriodicTimerTriggerParameterSet, PeriodicTimerTriggerResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Topik
+Topik di mana peristiwa berkala diterbitkan ke perangkat IoT.
+
+```yaml
+Type: System.String
+Parameter Sets: PeriodicTimerTriggerParameterSet, PeriodicTimerTriggerResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeTrigger
+
+## NOTES
+
+## RELATED LINKS
