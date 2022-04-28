@@ -1,0 +1,114 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Batch.dll-Help.xml
+Module Name: Az.Batch
+ms.assetid: 8188C617-4895-4B43-8D3B-FA6FC5B868DD
+online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatchpoolstatistic
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolStatistic.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolStatistic.md
+ms.openlocfilehash: 3f4ed7a6e8cbcb25b7d8e7f9c8eac7122bea38f2
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144195238"
+---
+# Get-AzBatchPoolStatistic
+
+## SYNOPSIS
+Mendapatkan statistik ringkasan kumpulan untuk akun Batch.
+
+## SYNTAX
+
+```
+Get-AzBatchPoolStatistic -BatchContext <BatchAccountContext> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzBatchPoolStatistic** mendapatkan statistik seumur hidup untuk semua kumpulan di akun yang ditentukan.
+Statistik dikumpulkan di semua kumpulan yang pernah ada di akun, dari pembuatan akun hingga waktu pembaruan terakhir statistik.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan statistik sumber daya dari semua kumpulan dalam akun
+```powershell
+$Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
+$PoolStatistics = Get-AzBatchPoolStatistic -BatchContext $Context
+$PoolStatistics.ResourceStatistics
+```
+
+```output
+AverageCpuPercentage : 0.351232518750755
+AverageDiskGiB       : 55.2569014701165
+AverageMemoryGiB     : 2.87273772318252
+DiskReadGiB          : 45.1326256990433
+DiskReadIOps         : 878278
+DiskWriteGiB         : 1230.72120628133
+DiskWriteIOps        : 176832212
+LastUpdateTime       : 5/16/2016 4:30:00 PM
+NetworkReadGiB       : 29.3502839952707
+NetworkWriteGiB      : 25.5208827350289
+PeakDiskGiB          : 21.9638671875
+PeakMemoryGiB        : 1.11184692382813
+StartTime            : 2/10/2016 7:07:24 PM
+```
+
+Perintah pertama membuat referensi objek ke kunci akun untuk akun batch bernama ContosoBatchAccount dengan menggunakan **Get-AzBatchAccountKey**.
+Perintah menyimpan referensi objek ini dalam variabel $Context.
+Perintah kedua mendapatkan statistik semua kumpulan di akun yang ditentukan, lalu menyimpannya di $PoolStatistics.
+Perintah akhir menampilkan properti **ResourceStatistics** $PoolStatistics.
+
+## PARAMETERS
+
+### -BatchContext
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+
+```yaml
+Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Batch.BatchAccountContext
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Batch.Models.PSPoolStatistics
+
+## NOTES
+
+## RELATED LINKS
+
+[Get-AzBatchAccountKey](./Get-AzBatchAccountKey.md)
+
+[Get-AzBatchPoolUsageMetrics](./Get-AzBatchPoolUsageMetric.md)
+
+[Get-AzBatchJobStatistic](./Get-AzBatchJobStatistic.md)
