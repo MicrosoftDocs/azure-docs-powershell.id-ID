@@ -1,0 +1,196 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataFactoryV2.dll-Help.xml
+Module Name: Az.DataFactory
+online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-azdatafactoryv2trigger
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Trigger.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Trigger.md
+ms.openlocfilehash: f1d2d2cc0ef680cce78ed418d9865efb81498a28
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144204125"
+---
+# Get-AzDataFactoryV2Trigger
+
+## SYNOPSIS
+Mendapatkan informasi tentang pemicu di pabrik data.
+
+## SYNTAX
+
+### ByFactoryName (Default)
+```
+Get-AzDataFactoryV2Trigger [[-Name] <String>] [-ResourceGroupName] <String> [-DataFactoryName] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByFactoryObject
+```
+Get-AzDataFactoryV2Trigger [[-Name] <String>] [-DataFactory] <PSDataFactory>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByResourceId
+```
+Get-AzDataFactoryV2Trigger [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzDataFactoryV2Trigger** mendapatkan informasi tentang pemicu di pabrik data. Jika Anda menentukan nama pemicu, cmdlet mendapatkan informasi tentang pemicu tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua pemicu di pabrik data.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan informasi tentang semua pemicu
+```powershell
+Get-AzDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
+```
+
+```output
+    TriggerName       : ScheduledTrigger
+    ResourceGroupName : ADF
+    DataFactoryName   : WikiADF
+    Properties        : Microsoft.Azure.Management.DataFactory.Models.ScheduleTrigger
+    RuntimeState      : Stopped
+
+    TriggerName       : ScheduledTrigger2
+    ResourceGroupName : ADF
+    DataFactoryName   : WikiADF
+    Properties        : Microsoft.Azure.Management.DataFactory.Models.ScheduleTrigger
+    RuntimeState      : Stopped
+```
+
+Mendapatkan daftar semua pemicu yang telah dibuat di pabrik data "WikiADF".
+
+### Contoh 2: Mendapatkan informasi tentang pemicu tertentu
+```powershell
+Get-AzDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "ScheduledTrigger"
+```
+
+```output
+    TriggerName       : ScheduledTrigger
+    ResourceGroupName : ADF
+    DataFactoryName   : WikiADF
+    Properties        : Microsoft.Azure.Management.DataFactory.Models.ScheduleTrigger
+    RuntimeState      : Stopped
+```
+
+Mendapatkan satu pemicu yang disebut "ScheduledTrigger" di pabrik data "WikiADF".
+
+## PARAMETERS
+
+### -DataFactory
+Objek pabrik data.
+
+```yaml
+Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
+Parameter Sets: ByFactoryObject
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DataFactoryName
+Nama pabrik data.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Nama pemicu.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName, ByFactoryObject
+Aliases: TriggerName
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceId
+ID sumber daya Azure.
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceId
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger
+
+## NOTES
+
+## RELATED LINKS
+
+[Set-AzDataFactoryV2Trigger]()
+
+[Start-AzDataFactoryV2Trigger]()
+
+[Stop-AzDataFactoryV2Trigger]()
+
+[Remove-AzDataFactoryV2Trigger]()
