@@ -1,0 +1,134 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.SiteRecovery.dll-Help.xml
+Module Name: Az.RecoveryServices
+online version: https://docs.microsoft.com/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrservicesprovider
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrServicesProvider.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrServicesProvider.md
+ms.openlocfilehash: 34b76c5c700da3525f1315eaa063cf1c2b2b0eee
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144230702"
+---
+# Remove-AzRecoveryServicesAsrServicesProvider
+
+## SYNOPSIS
+Menghapus/membatalkan pendaftaran penyedia layanan pemulihan Azure Site Recovery yang ditentukan dari vault layanan pemulihan.
+
+## SYNTAX
+
+```
+Remove-AzRecoveryServicesAsrServicesProvider -InputObject <ASRRecoveryServicesProvider> [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Remove-AzRecoveryServicesAsrServicesProvider** menghapus penyedia layanan pemulihan Azure Site Recovery yang ditentukan dari vault.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+$currentJob = Remove-AzRecoveryServicesAsrServicesProvider -ServicesProvider $ServicesProvider
+```
+
+Memulai penghapusan/pembatasan pendaftaran penyedia layanan Azure Site Recovery yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Paksa perintah untuk berjalan tanpa memberikan peringatan tambahan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek input ke cmdlet: Objek penyedia layanan pemulihan ASR yang sesuai dengan penyedia layanan pemulihan ASR yang akan dihapus.
+
+```yaml
+Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
+Parameter Sets: (All)
+Aliases: ServicesProvider
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Tentukan apakah konfirmasi diperlukan. Atur nilai parameter konfirmasi ke $false untuk melewati konfirmasi.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan apa yang akan terjadi jika cmdlet dijalankan tanpa benar-benar mengeksekusi cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
+
+## NOTES
+
+## RELATED LINKS
+
+[Get-AzRecoveryServicesAsrServicesProvider](./Get-AzRecoveryServicesAsrServicesProvider.md)
+
+[Update-AzRecoveryServicesAsrServicesProvider](./Update-AzRecoveryServicesAsrServicesProvider.md)
