@@ -1,0 +1,296 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
+Module Name: Az.Monitor
+ms.assetid: FBAE5F75-1E28-4F1C-A9ED-20075FFD4AC7
+online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azwebtestalertrule
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzWebtestAlertRule.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzWebtestAlertRule.md
+ms.openlocfilehash: 35f66eca40ece8678a80247c83477c499067c415
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144184514"
+---
+# Add-AzWebtestAlertRule
+
+## SYNOPSIS
+Menambahkan atau memperbarui aturan pemberitahuan webtest.
+
+## SYNTAX
+
+```
+Add-AzWebtestAlertRule -MetricName <String> -TargetResourceUri <String> -WindowSize <TimeSpan>
+ -FailedLocationCount <Int32> [-MetricNamespace <String>] -Location <String> [-Description <String>]
+ [-DisableRule] -ResourceGroupName <String> -Name <String>
+ [-Action <System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Add-AzWebtestAlertRule** menambahkan atau memperbarui aturan pemberitahuan dari jenis metrik, peristiwa, atau webtest.
+Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama.
+Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
+
+## EXAMPLES
+
+### Contoh 1: Menambahkan aturan pemberitahuan webtest
+```powershell
+Add-AzWebtestAlertRule -Name "webtestRule" -Location "East US" -ResourceGroup "Default-Web-EastUS" -WindowSize 00:05:00 -MetricName "metric" -TargetResourceUri "/subscriptions/b67f7fec-69fc-4974-9099-a26bd6ffeda3/resourcegroups/Default-Web-WestUS/providers/Microsoft.Insights/webtests/leowebtestr1-webtestr1" -Description "Nice Webtest rule" -Failed 3
+```
+
+```output
+RequestId                                                                                                    StatusCode
+---------                                                                                                    ----------
+9a5bc388-c7ac-4dc6-aa70-f4bc29c2c712                                                                                 OK
+```
+
+Perintah ini menambahkan atau memperbarui aturan pemberitahuan webtest.
+
+## PARAMETERS
+
+### -Tindakan
+Menentukan daftar tindakan yang dipisahkan koma.
+
+```yaml
+Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Deskripsi
+Menentukan deskripsi aturan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DisableRule
+Menonaktifkan aturan.
+Jika Anda tidak menentukan parameter ini, aturan diaktifkan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -FailedLocationCount
+Menentukan jumlah lokasi yang gagal untuk aturan webtest.
+Ini mirip dengan ambang batas dalam jenis aturan lainnya.
+
+```yaml
+Type: System.Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Lokasi
+Menentukan lokasi tempat aturan ditentukan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -MetricName
+Menentukan nama metrik.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -MetricNamespace
+Menentukan namespace metrik untuk aturan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Name
+Menentukan nama aturan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: ResourceGroup
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -TargetResourceUri
+Menentukan ID sumber daya dari webtest.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -WindowSize
+Menentukan ukuran jendela waktu untuk aturan guna menghitung datanya.
+
+```yaml
+Type: System.TimeSpan
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### System.String
+
+### System.TimeSpan
+
+### System.Int32
+
+### System.Management.Automation.SwitchParameter
+
+### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands. Insights. OutputClasses.PSAddAlertRuleOperationResponse
+
+## NOTES
+
+## RELATED LINKS
+
+[Set-AzActivityLogAlert](./Set-AzActivityLogAlert.md)
+
+[Add-AzMetricAlertRule](./Add-AzMetricAlertRule.md)
+
+[Get-AzAlertHistory](./Get-AzAlertHistory.md)
+
+[New-AzAlertRuleWebhook](./New-AzAlertRuleWebhook.md)
+
+
