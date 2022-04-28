@@ -1,0 +1,474 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Resources.dll-Help.xml
+Module Name: Az.Resources
+ms.assetid: E460D108-2BF9-4F57-AF3D-13868DC73EA0
+online version: https://docs.microsoft.com/powershell/module/az.resources/new-azroleassignment
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
+ms.openlocfilehash: 31bb04d3400f48bad6e3321d5397cd659a49b5ad
+ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144200894"
+---
+# New-AzRoleAssignment
+
+## SYNOPSIS
+Menetapkan peran RBAC yang ditentukan ke prinsipal yang ditentukan, pada cakupan yang ditentukan.
+
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
+
+- GET /users/{id}
+- GET /servicePrincipals/{id}
+- GET /groups/{id}
+- GET /directoryObjects/{id}
+
+Harap perhatikan bahwa cmdlet ini akan menandai `ObjectType` sebagai `Unknown` dalam output jika objek penetapan peran tidak ditemukan atau akun saat ini tidak memiliki hak istimewa yang cukup untuk mendapatkan jenis objek.
+
+## SYNTAX
+
+### EmptyParameterSet (Default)
+```
+New-AzRoleAssignment -ObjectId <String> [-Scope <String>] -RoleDefinitionName <String> [-Description <String>]
+ [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>] [-AllowDelegation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceGroupWithObjectIdParameterSet
+```
+New-AzRoleAssignment -ObjectId <String> -ResourceGroupName <String> -RoleDefinitionName <String>
+ [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
+ [-AllowDelegation] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceWithObjectIdParameterSet
+```
+New-AzRoleAssignment -ObjectId <String> -ResourceGroupName <String> -ResourceName <String>
+ -ResourceType <String> [-ParentResource <String>] -RoleDefinitionName <String> [-Description <String>]
+ [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>] [-AllowDelegation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### RoleIdWithScopeAndObjectIdParameterSet
+```
+New-AzRoleAssignment -ObjectId <String> -Scope <String> [-Description <String>] [-Condition <String>]
+ [-ConditionVersion <String>] [-ObjectType <String>] -RoleDefinitionId <Guid> [-AllowDelegation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceGroupWithSignInNameParameterSet
+```
+New-AzRoleAssignment -SignInName <String> -ResourceGroupName <String> -RoleDefinitionName <String>
+ [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
+ [-AllowDelegation] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceWithSignInNameParameterSet
+```
+New-AzRoleAssignment -SignInName <String> -ResourceGroupName <String> -ResourceName <String>
+ -ResourceType <String> [-ParentResource <String>] -RoleDefinitionName <String> [-Description <String>]
+ [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>] [-AllowDelegation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ScopeWithSignInNameParameterSet
+```
+New-AzRoleAssignment -SignInName <String> [-Scope <String>] -RoleDefinitionName <String>
+ [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
+ [-AllowDelegation] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceGroupWithSPNParameterSet
+```
+New-AzRoleAssignment -ApplicationId <String> -ResourceGroupName <String> -RoleDefinitionName <String>
+ [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
+ [-AllowDelegation] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceWithSPNParameterSet
+```
+New-AzRoleAssignment -ApplicationId <String> -ResourceGroupName <String> -ResourceName <String>
+ -ResourceType <String> [-ParentResource <String>] -RoleDefinitionName <String> [-Description <String>]
+ [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>] [-AllowDelegation]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ScopeWithSPNParameterSet
+```
+New-AzRoleAssignment -ApplicationId <String> [-Scope <String>] -RoleDefinitionName <String>
+ [-Description <String>] [-Condition <String>] [-ConditionVersion <String>] [-ObjectType <String>]
+ [-AllowDelegation] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### InputFileParameterSet
+```
+New-AzRoleAssignment -InputFile <String> [-AllowDelegation] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Gunakan perintah New-AzRoleAssignment untuk memberikan akses.
+Akses diberikan dengan menetapkan peran RBAC yang sesuai kepada mereka pada cakupan yang tepat.
+Untuk memberikan akses ke seluruh langganan, tetapkan peran di cakupan langganan.
+Untuk memberikan akses ke grup sumber daya tertentu dalam langganan, tetapkan peran di cakupan grup sumber daya.
+Subjek penugasan harus ditentukan.
+Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.
+Untuk menentukan grup keamanan, gunakan parameter objectId Azure AD.
+Dan untuk menentukan aplikasi Azure AD, gunakan parameter ApplicationId atau ObjectId.
+Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName.
+Cakupan di mana akses diberikan dapat ditentukan.
+Ini default ke langganan yang dipilih. Cakupan penugasan dapat ditentukan menggunakan salah satu kombinasi parameter berikut a.
+Cakupan - Ini adalah cakupan yang sepenuhnya memenuhi syarat yang dimulai dengan /subscriptions/\<subscriptionId\> b.
+ResourceGroupName - untuk memberikan akses ke grup sumber daya yang ditentukan.
+c.
+ResourceName, ResourceType, ResourceGroupName, dan (opsional) ParentResource - untuk menentukan sumber daya tertentu dalam grup sumber daya untuk diberikan akses.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+New-AzRoleAssignment -ResourceGroupName rg1 -SignInName allen.young@live.com -RoleDefinitionName Reader -AllowDelegation
+```
+
+Memberikan akses peran Pembaca kepada pengguna di cakupan grup sumber daya dengan Penetapan Peran tersedia untuk delegasi
+
+### Contoh 2
+```powershell
+Get-AzADGroup -SearchString "Christine Koch Team"
+
+          DisplayName                    Type                           Id
+          -----------                    ----                           --------
+          Christine Koch Team                                           2f9d4375-cbf1-48e8-83c9-2a0be4cb33fb
+
+New-AzRoleAssignment -ObjectId 2f9d4375-cbf1-48e8-83c9-2a0be4cb33fb -RoleDefinitionName Contributor  -ResourceGroupName rg1
+```
+
+Memberikan akses ke grup keamanan
+
+### Contoh 3
+```powershell
+New-AzRoleAssignment -SignInName john.doe@contoso.com -RoleDefinitionName Owner -Scope "/subscriptions/86f81fc3-b00f-48cd-8218-3879f51ff362/resourcegroups/rg1/providers/Microsoft.Web/sites/site1"
+```
+
+Memberikan akses ke pengguna di sumber daya (situs web)
+
+### Contoh 4
+```powershell
+New-AzRoleAssignment -ObjectId 5ac84765-1c8c-4994-94b2-629461bd191b -RoleDefinitionName "Virtual Machine Contributor" -ResourceName Devices-Engineering-ProjectRND -ResourceType Microsoft.Network/virtualNetworks/subnets -ParentResource virtualNetworks/VNET-EASTUS-01 -ResourceGroupName Network
+```
+
+Memberikan akses ke grup di sumber daya berlapis (subnet)
+
+### Contoh 5
+```powershell
+$servicePrincipal = New-AzADServicePrincipal -DisplayName "testServiceprincipal"
+New-AzRoleAssignment -RoleDefinitionName "Reader" -ApplicationId $servicePrincipal.ApplicationId
+```
+
+Memberikan akses pembaca ke perwakilan layanan
+
+## PARAMETERS
+
+### -AllowDelegation
+Bendera delegasi saat membuat penetapan Peran.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ApplicationId
+ID Aplikasi servicePrincipal
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet, ScopeWithSPNParameterSet
+Aliases: SPN, ServicePrincipalName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Kondisi
+Kondisi yang akan diterapkan ke RoleAssignment.
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, RoleIdWithScopeAndObjectIdParameterSet, ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ScopeWithSignInNameParameterSet, ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet, ScopeWithSPNParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ConditionVersion
+Versi kondisi.
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, RoleIdWithScopeAndObjectIdParameterSet, ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ScopeWithSignInNameParameterSet, ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet, ScopeWithSPNParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Deskripsi
+Deskripsi singkat tentang penetapan peran.
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, RoleIdWithScopeAndObjectIdParameterSet, ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ScopeWithSignInNameParameterSet, ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet, ScopeWithSPNParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InputFile
+Jalur ke json penetapan peran
+
+```yaml
+Type: System.String
+Parameter Sets: InputFileParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ObjectId
+Azure AD Objectid pengguna, grup, atau perwakilan layanan.
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, RoleIdWithScopeAndObjectIdParameterSet
+Aliases: Id, PrincipalId
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ObjectType
+Untuk digunakan dengan ObjectId. Menentukan jenis objek asignee
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, RoleIdWithScopeAndObjectIdParameterSet, ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ScopeWithSignInNameParameterSet, ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet, ScopeWithSPNParameterSet
+Aliases: PrincipalType
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ParentResource
+Sumber daya induk dalam hierarki(dari sumber daya yang ditentukan menggunakan parameter ResourceName).
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan ResourceName untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceWithObjectIdParameterSet, ResourceWithSignInNameParameterSet, ResourceWithSPNParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+Membuat penugasan yang efektif pada grup sumber daya yang ditentukan.
+Saat digunakan bersama dengan parameter ResourceName, ResourceType, dan (opsional)ParentResource, perintah membuat cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceName
+Nama sumber daya.
+Misalnya storageaccountprod.
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceType, dan (opsional)ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceWithObjectIdParameterSet, ResourceWithSignInNameParameterSet, ResourceWithSPNParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceType
+Jenis sumber daya.
+Misalnya, Microsoft.Network/virtualNetworks.
+Hanya boleh digunakan bersama dengan parameter ResourceGroupName, ResourceName, dan (opsional)ParentResource untuk membangun cakupan hierarkis dalam bentuk URI relatif yang mengidentifikasi sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceWithObjectIdParameterSet, ResourceWithSignInNameParameterSet, ResourceWithSPNParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RoleDefinitionId
+Id peran RBAC yang perlu ditetapkan ke prinsipal.
+
+```yaml
+Type: System.Guid
+Parameter Sets: RoleIdWithScopeAndObjectIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RoleDefinitionName
+Nama peran RBAC yang perlu ditetapkan ke prinsipal yaitu Pembaca, Kontributor, Virtual Network Administrator, dll.
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ResourceGroupWithObjectIdParameterSet, ResourceWithObjectIdParameterSet, ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ScopeWithSignInNameParameterSet, ResourceGroupWithSPNParameterSet, ResourceWithSPNParameterSet, ScopeWithSPNParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Cakupan
+Cakupan penetapan peran.
+Dalam format URI relatif.
+Misalnya "/subscriptions/9004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/TestRG".
+Jika tidak ditentukan, akan membuat penetapan peran di tingkat langganan.
+Jika ditentukan, seharusnya dimulai dengan "/subscriptions/{id}".
+
+```yaml
+Type: System.String
+Parameter Sets: EmptyParameterSet, ScopeWithSignInNameParameterSet, ScopeWithSPNParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: RoleIdWithScopeAndObjectIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SignInName
+Alamat email atau nama utama pengguna pengguna.
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceGroupWithSignInNameParameterSet, ResourceWithSignInNameParameterSet, ScopeWithSignInNameParameterSet
+Aliases: Email, UserPrincipalName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
+
+## INPUTS
+
+### System.String
+
+### System.Guid
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleAssignment
+
+## NOTES
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sumber daya, grup, templat, penyebaran
+
+## RELATED LINKS
+
+[Get-AzRoleAssignment](./Get-AzRoleAssignment.md)
+
+[Remove-AzRoleAssignment](./Remove-AzRoleAssignment.md)
+
+[Get-AzRoleDefinition](./Get-AzRoleDefinition.md)
