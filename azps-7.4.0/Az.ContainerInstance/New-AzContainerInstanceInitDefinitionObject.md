@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceInitDefinitionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceInitDefinitionObject.md
-ms.openlocfilehash: fb22c88d680cea9c59ec15577ecdb1431ed6c954
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1bf30f5cc75266958c455cce921ca90fde42cbb2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229764"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632852"
 ---
 # New-AzContainerInstanceInitDefinitionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk InitContainerDefinition
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceinitdefinitionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Membuat objek dalam memori untuk InitContainerDefinition
 
 ## EXAMPLES
 
-### Contoh 1: Menyiapkan definisi init container
+### Contoh 1: Menyiapkan definisi kontainer init
 ```powershell
 New-AzContainerInstanceInitDefinitionObject -Name "initDefinition" -Command "/bin/sh -c myscript.sh"
 ```
@@ -41,12 +44,12 @@ Name
 initDefinition
 ```
 
-Perintah ini mengatur definisi kontainer init dengan perintah `/bin/sh -c myscript.sh`
+Perintah ini menyiapkan definisi kontainer init dengan perintah `/bin/sh -c myscript.sh`
 
 ## PARAMETERS
 
-### -Command
-Perintah untuk dijalankan dalam wadah init dalam formulir exec.
+### -Perintah
+Perintah untuk menjalankan dalam kontainer init dalam bentuk eksekusi.
 
 ```yaml
 Type: System.String[]
@@ -61,8 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentVariable
-Variabel lingkungan yang diatur dalam wadah init.
-Untuk membangun, lihat bagian CATATAN untuk properti ENVIRONMENTVARIABLE dan membuat tabel hash.
+Variabel lingkungan yang akan diatur dalam kontainer init.
+Untuk membuat, lihat bagian CATATAN untuk properti ENVIRONMENTVARIABLE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IEnvironmentVariable[]
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Gambar
-Gambar wadah init.
+Gambar kontainer init.
 
 ```yaml
 Type: System.String
@@ -91,8 +94,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama untuk wadah init.
+### -Name
+Nama untuk kontainer init.
 
 ```yaml
 Type: System.String
@@ -107,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeMount
-Volume akan terpasang pada wadah init.
-Untuk membangun, lihat bagian CATATAN untuk properti VOLUMEMOUNT dan membuat tabel hash.
+Mount volume yang tersedia untuk kontainer init.
+Untuk membuat, lihat bagian CATATAN untuk properti VOLUMEMOUNT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IVolumeMount[]
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -140,15 +143,15 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ENVIRONMENTVARIABLE <IEnvironmentVariable[]>: Variabel lingkungan yang diatur dalam wadah init.
+ENVIRONMENTVARIABLE <IEnvironmentVariable[]>: Variabel lingkungan yang akan diatur dalam kontainer init.
   - `Name <String>`: Nama variabel lingkungan.
   - `[SecureValue <String>]`: Nilai variabel lingkungan yang aman.
   - `[Value <String>]`: Nilai variabel lingkungan.
 
-VOLUMEMOUNT <IVolumeMount[]>: Volume akan terpasang pada wadah init.
-  - `MountPath <String>`: Jalur dalam wadah tempat volume harus dipasang. Tidak boleh mengandung titik dua (:).
-  - `Name <String>`: Nama dudukan volume.
-  - `[ReadOnly <Boolean?>]`: Bendera menunjukkan apakah dudukan volume bersifat baca-saja.
+VOLUMEMOUNT <IVolumeMount[]>: Volume dipasang tersedia untuk kontainer init.
+  - `MountPath <String>`: Jalur dalam kontainer tempat volume harus dipasang. Tidak boleh ada titik dua (:).
+  - `Name <String>`: Nama pemasangan volume.
+  - `[ReadOnly <Boolean?>]`: Bendera yang menunjukkan apakah pemasangan volume bersifat baca-saja.
 
 ## RELATED LINKS
 

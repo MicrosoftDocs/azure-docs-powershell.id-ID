@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRule.md
-ms.openlocfilehash: c11dc948f980f97f9ab41b0ea4ade13d45fcfbfc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d63e947b04ab21e30ab3fccf7f3bc5751d1aea9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281367"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632492"
 ---
 # New-AzFirewallNatRule
 
 ## SYNOPSIS
 Membuat Aturan NAT Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallnatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,20 +31,20 @@ New-AzFirewallNatRule -Name <String> [-Description <String>] [-SourceAddress <St
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallNatRule** menciptakan aturan NAT untuk Azure Firewall.
+Cmdlet **New-AzFirewallNatRule** membuat aturan NAT untuk Azure Firewall.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat aturan untuk DNAT semua lalu lintas TCP dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 ke tujuan 10.4.5.6:8080
+### Contoh 1: Buat aturan untuk DNAT semua lalu lintas TCP dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 ke tujuan 10.4.5.6:8080
 ```powershell
 New-AzFirewallNatRule -Name "dnat-rule" -Protocol "TCP" -SourceAddress "10.0.0.0/24" -DestinationAddress "10.1.2.3" -DestinationPort "80" -TranslatedAddress "10.4.5.6" -TranslatedPort "8080"
 ```
 
-Contoh ini membuat aturan yang akan DNAT semua lalu lintas berasal dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 hingga 10.4.5.6:8080
+Contoh ini membuat aturan yang akan DNAT semua lalu lintas yang berasal dari 10.0.0.0/24 dengan tujuan 10.1.2.3:80 ke 10.4.5.6:8080
 
 ### Contoh 2
 
-Membuat Aturan NAT Firewall. (autogenerasi)
+Membuat Aturan NAT Firewall. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan NAT ini. Nama harus unik di dalam kumpulan aturan.
 
 ```yaml
@@ -126,9 +129,9 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan tipe lalu lintas yang akan difilter menurut aturan ini.
+Menentukan jenis lalu lintas yang akan difilter oleh aturan ini.
 Protokol yang didukung adalah TCP dan UDP.
-Nilai khusus "Apa pun" diperbolehkan, yang berarti akan cocok dengan TCP dan UDP, tetapi tidak ada protokol lain.
+Nilai khusus "Apa pun" diizinkan, yang berarti akan cocok dengan TCP dan UDP, tetapi tidak ada protokol lain.
 
 ```yaml
 Type: System.String[]
@@ -218,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -250,11 +253,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

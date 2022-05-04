@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsLinkedStorageAccount.md
-ms.openlocfilehash: 4d8f2758b8917638eec9ff6ac4e565f49c450e1f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff4a1eec340a7c1920783eb45ac383bdfd94d264
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676242"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619862"
 ---
 # Get-AzOperationalInsightsLinkedStorageAccount
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan akun penyimpanan tertaut
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzOperationalInsightsLinkedStorageAccount [-ResourceGroupName] <String> [-Wo
 ```
 
 ## DESCRIPTION
-Dapatkan akun penyimpanan tertaut, daftar semua akun penyimpanan yang ditautkan ketika "-DataSourceType" tidak ditentukan
+Dapatkan akun penyimpanan tertaut, cantumkan semua akun penyimpanan tertaut saat "-DataSourceType" tidak ditentukan
 
 ## EXAMPLES
 
@@ -42,12 +45,12 @@ DataSourceType    : CustomLogs
 StorageAccountIds : {/subscriptions/{subscription}/resourceGroups/{rg-name}/providers/Microsoft.Storage/storageAccounts/{account}}
 ```
 
-daftar akrual penyimpanan tertaut untuk ruang kerja {workspace-name}
+daftar accoount penyimpanan tertaut untuk ruang kerja {workspace-name}
 
 ## PARAMETERS
 
 ### -DataSourceType
-Tipe Sumber Data harus menjadi salah satu dari 'CustomLogs', 'AzureWatson'.
+Jenis Sumber Data harus salah satu dari 'CustomLogs', 'AzureWatson'.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja.
 
 ```yaml
@@ -108,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

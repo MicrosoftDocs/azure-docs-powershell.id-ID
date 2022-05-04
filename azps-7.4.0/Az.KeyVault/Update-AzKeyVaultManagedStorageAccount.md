@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: adab7d7bb3e3f6cd8aa7cf7a9df352b89dba653f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 057b1ab2fff861ac1c7ebb9bf98932192fbf8dc4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284895"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655616"
 ---
 # Update-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Memperbarui atribut akun Azure Storage yang dapat diedit dari akun Azure Storage yang dikelola Key Vault.
+Perbarui atribut yang dapat diedit dari Akun Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Update-AzKeyVaultManagedStorageAccount [-InputObject] <PSKeyVaultManagedStorageA
 ```
 
 ## DESCRIPTION
-Perbarui atribut akun Azure Storage yang dapat diedit Key Vault dikelola.
+Perbarui atribut yang dapat diedit dari Akun Azure Storage terkelola Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui kunci aktif ke 'key2' di akun Azure Storage terkelola Key Vault.
+### Contoh 1: Perbarui kunci aktif ke 'key2' pada Akun Azure Storage yang dikelola Key Vault.
 ```powershell
 Update-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -ActiveKeyName 'key2'
 ```
@@ -59,11 +62,11 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Memperbarui Key Vault kunci aktif Akun Azure Storage terkelola menjadi 'key2'. 'key2' akan digunakan untuk menghasilkan token SAS setelah pembaruan ini.
+Memperbarui kunci aktif Akun Azure Storage terkelola Key Vault ke 'key2'. 'key2' akan digunakan untuk menghasilkan token SAS setelah pembaruan ini.
 
 ### Contoh 2
 
-Memperbarui atribut akun Azure Storage yang dapat diedit dari akun Azure Storage yang dikelola Key Vault. (autogenerasi)
+Perbarui atribut yang dapat diedit dari Akun Azure Storage terkelola Key Vault. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -73,7 +76,7 @@ Update-AzKeyVaultManagedStorageAccount -AccountName 'mystorageaccount' -AutoRege
 ## PARAMETERS
 
 ### -AccountName
-Key Vault nama akun penyimpanan terkelola. Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan yang ditukar.
+Key Vault nama akun penyimpanan terkelola. Cmdlet membangun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 
 ### -ActiveKeyName
 Nama kunci aktif.
-Jika tidak ditentukan, nilai nama kunci aktif akun penyimpanan terkelola yang sudah ada tidak berubah
+Jika tidak ditentukan, nilai yang ada dari nama kunci aktif akun penyimpanan terkelola tetap tidak berubah
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 
 ### -AutoRegenerateKey
 Kunci regenerasi otomatis.
-Jika tidak ditentukan, nilai kunci auto regenerasi akun penyimpanan terkelola yang sudah ada tidak berubah
+Jika tidak ditentukan, nilai kunci regenerasi otomatis akun penyimpanan terkelola yang ada tetap tidak berubah
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Jika ada, memungkinkan penggunaan kunci akun penyimpanan terkelola untuk pembuatan token sas jika nilai benar. Menonaktifkan penggunaan kunci akun penyimpanan terkelola untuk pembuatan token sas jika nilai salah. Jika tidak ditentukan, nilai status aktif/nonaktif akun penyimpanan yang sudah ada tidak berubah.
+Jika ada, memungkinkan penggunaan kunci akun penyimpanan terkelola untuk pembuatan token sas jika nilainya benar. Menonaktifkan penggunaan kunci akun penyimpanan terkelola untuk pembuatan token sas jika nilainya salah. Jika tidak ditentukan, nilai yang ada dari status akun penyimpanan yang diaktifkan/dinonaktifkan tetap tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerationPeriod
-Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan rentang waktu setelah keygets tidak aktif akun penyimpanan terkelola yang otomatis diregenerasi dan menjadi kunci aktif. Jika tidak ditentukan, nilai periode regenerasi kunci akun penyimpanan terkelola yang sudah ada tidak berubah
+Periode regenerasi. Jika kunci regenerasi otomatis diaktifkan, nilai ini menentukan rentang waktu setelah kunci tidak aktif akun penyimpanan terkelola diregenerasi secara otomatis dan menjadi kunci aktif. Jika tidak ditentukan, nilai periode regenerasi kunci akun penyimpanan terkelola yang ada tetap tidak berubah
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -210,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -225,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

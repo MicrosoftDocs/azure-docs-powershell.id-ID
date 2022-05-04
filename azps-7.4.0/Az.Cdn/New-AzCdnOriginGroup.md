@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOriginGroup.md
-ms.openlocfilehash: 6b97426b6b6ab236809a3bdddc07610b8b38c0ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4e3a8bec6379d026a185401adb776cc33d627692
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006867"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629706"
 ---
 # New-AzCdnOriginGroup
 
 ## SYNOPSIS
 Membuat grup asal CDN baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzCdnOriginGroup -CdnOriginGroup <PSOriginGroup> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-New-AzCdnOriginGroup akan membuat grup asal baru dalam titik akhir yang ditentukan. Jika ini adalah grup asal pertama untuk titik akhir, properti DefaultOriginGroup juga harus diatur.
+New-AzCdnOriginGroup akan membuat grup asal baru dalam titik akhir yang ditentukan. Jika ini adalah grup asal pertama untuk titik akhir, maka properti DefaultOriginGroup juga harus diatur.
 
 ## EXAMPLES
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeProtocol
-Protokol untuk digunakan untuk pemeriksaan kesehatan.
+Protokol yang digunakan untuk pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -213,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

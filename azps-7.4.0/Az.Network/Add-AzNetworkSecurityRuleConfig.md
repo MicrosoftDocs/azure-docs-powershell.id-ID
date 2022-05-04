@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkSecurityRuleConfig.md
-ms.openlocfilehash: e69d55d0db6321037601e71da6e82b1969551c8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b58e99301cf7095c5e95f993f07d9c2ad99677ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744355"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144589446"
 ---
-# Add-AzNetworkSecurityRuleConfig
+# Tambahkan-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi aturan keamanan jaringan ke grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,9 +57,9 @@ Add-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access 
     Set-AzNetworkSecurityGroup
 ```
 
-Perintah pertama mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". Perintah kedua menambahkan aturan keamanan jaringan bernama "rdp-rule" yang memungkinkan lalu lintas dari internet pada port 3389 ke objek grup keamanan jaringan yang diambil. Tetap mengubah grup keamanan jaringan Azure.
+Perintah pertama mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". Perintah kedua menambahkan aturan keamanan jaringan bernama "rdp-rule" yang memungkinkan lalu lintas dari internet pada port 3389 ke objek kelompok keamanan jaringan yang diambil. Mempertahankan grup keamanan jaringan Azure yang dimodifikasi.
 
-### Contoh 2: Menambahkan aturan keamanan baru dengan grup keamanan aplikasi
+### Contoh 2: Menambahkan aturan keamanan baru dengan kelompok keamanan aplikasi
 ```powershell
 $srcAsg = New-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name srcAsg -Location "West US"
 $destAsg = New-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name destAsg -Location "West US"
@@ -68,12 +71,12 @@ Add-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access 
 Set-AzNetworkSecurityGroup
 ```
 
-Pertama, kami membuat dua grup keamanan aplikasi baru. Lalu, kami mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". dan tambahkan aturan keamanan jaringan bernama "rdp-rule" ke aturan tersebut. Aturan ini memungkinkan lalu lintas dari semua konfigurasi IP dalam grup keamanan aplikasi "srcAsg" ke semua konfigurasi IP di "destAsg" pada port 3389. Setelah menambahkan aturan, kami tetap memiliki grup keamanan jaringan Azure yang dimodifikasi.
+Pertama, kita membuat dua kelompok keamanan aplikasi baru. Kemudian, kami mengambil grup keamanan jaringan Azure bernama "nsg1" dari grup sumber daya "rg1". dan tambahkan aturan keamanan jaringan bernama "rdp-rule" ke dalamnya. Aturan ini memungkinkan lalu lintas dari semua konfigurasi IP dalam grup keamanan aplikasi "srcAsg" ke semua konfigurasi IP di "destAsg" pada port 3389. Setelah menambahkan aturan, kami mempertahankan grup keamanan jaringan Azure yang dimodifikasi.
 
 ## PARAMETERS
 
 ### -Access
-Menentukan apakah lalu lintas jaringan diperbolehkan atau ditolak.
+Menentukan apakah lalu lintas jaringan diizinkan atau ditolak.
 Nilai yang dapat diterima untuk parameter ini adalah: Izinkan dan Tolak.
 
 ```yaml
@@ -120,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAddressPrefix
-Menentukan prefiks alamat tujuan.
+Menentukan awalan alamat tujuan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Alamat Classless Interdomain Routing (CIDR)
 - Rentang alamat IP tujuan
-- Karakter wildcard (*) untuk mencocokkan alamat IP apa pun.
+- Karakter kartubebas (*) untuk mencocokkan alamat IP apa pun.
 Anda dapat menggunakan tag seperti VirtualNetwork, AzureLoadBalancer, dan Internet.
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationApplicationSecurityGroup
-Grup keamanan aplikasi diatur sebagai tujuan untuk aturan tersebut. Tidak dapat digunakan dengan parameter 'DestinationAddressPrefix'.
+Kelompok keamanan aplikasi ditetapkan sebagai tujuan untuk aturan. Ini tidak dapat digunakan dengan parameter 'DestinationAddressPrefix'.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup[]
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationApplicationSecurityGroupId
-Grup keamanan aplikasi diatur sebagai tujuan untuk aturan tersebut. Tidak dapat digunakan dengan parameter 'DestinationAddressPrefix'.
+Kelompok keamanan aplikasi ditetapkan sebagai tujuan untuk aturan. Ini tidak dapat digunakan dengan parameter 'DestinationAddressPrefix'.
 
 ```yaml
 Type: System.String[]
@@ -174,7 +177,7 @@ Menentukan port atau rentang tujuan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Bilangan bulat
 - Rentang bilangan bulat antara 0 dan 65535
-- Karakter wildcard (*) untuk mencocokkan port apa pun
+- Karakter kartubebas (*) untuk mencocokkan port apa pun
 
 ```yaml
 Type: System.String[]
@@ -205,7 +208,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi aturan keamanan jaringan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ### -Prioritas
 Menentukan prioritas konfigurasi aturan.
 Nilai yang dapat diterima untuk parameter ini adalah: Bilangan bulat antara 100 dan 4096.
-Nomor prioritas harus unik untuk setiap aturan dalam kumpulan.
+Nomor prioritas harus unik untuk setiap aturan dalam koleksi.
 Semakin rendah angka prioritas, semakin tinggi prioritas aturan.
 
 ```yaml
@@ -255,11 +258,11 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol jaringan yang diterapkan konfigurasi aturan.
+Menentukan protokol jaringan tempat konfigurasi aturan diterapkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tcp
 - Udp
-- Karakter wildcard (*) untuk mencocokkan keduanya
+- Karakter kartubebas (*) untuk mencocokkan keduanya
 
 ```yaml
 Type: System.String
@@ -275,11 +278,11 @@ Accept wildcard characters: False
 ```
 
 ### -SourceAddressPrefix
-Menentukan prefiks alamat sumber.
+Menentukan awalan alamat sumber.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- SEBUAH CIDR
+- A CIDR
 - Rentang IP sumber
-- Karakter wildcard (*) untuk mencocokkan alamat IP apa pun.
+- Karakter kartubebas (*) untuk mencocokkan alamat IP apa pun.
 Anda juga dapat menggunakan tag seperti VirtualNetwork, AzureLoadBalancer, dan Internet.
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceApplicationSecurityGroup
-Grup keamanan aplikasi diatur sebagai sumber untuk aturan. Tidak dapat digunakan dengan parameter 'SourceAddressPrefix'.
+Kelompok keamanan aplikasi ditetapkan sebagai sumber untuk aturan. Ini tidak dapat digunakan dengan parameter 'SourceAddressPrefix'.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup[]
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceApplicationSecurityGroupId
-Grup keamanan aplikasi diatur sebagai sumber untuk aturan. Tidak dapat digunakan dengan parameter 'SourceAddressPrefix'.
+Kelompok keamanan aplikasi ditetapkan sebagai sumber untuk aturan. Ini tidak dapat digunakan dengan parameter 'SourceAddressPrefix'.
 
 ```yaml
 Type: System.String[]
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 
 ### -SourcePortRange
 Menentukan port atau rentang sumber.
-Nilai ini dinyatakan sebagai bilangan bulat, sebagai rentang antara 0 dan 65535, atau sebagai karakter wildcard (*) untuk mencocokkan port sumber apa pun.
+Nilai ini dinyatakan sebagai bilangan bulat, sebagai rentang antara 0 dan 65535, atau sebagai karakter kartubebas (*) untuk mencocokkan port sumber apa pun.
 
 ```yaml
 Type: System.String[]
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

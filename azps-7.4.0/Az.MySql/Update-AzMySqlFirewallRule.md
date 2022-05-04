@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFirewallRule.md
-ms.openlocfilehash: 500a4ab4b0210e6b0db26c5d84d8450c515883c9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b38abff203b217e9b0495b4ba8be969c90ef477
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680364"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619124"
 ---
 # Update-AzMySqlFirewallRule
 
 ## SYNOPSIS
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Update-AzMySqlFirewallRule -InputObject <IMySqlIdentity> -EndIPAddress <String> 
 ```
 
 ## DESCRIPTION
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Aturan MySql Firewall menurut nama
+### Contoh 1: Memperbarui Aturan Firewall MySql berdasarkan nama
 ```powershell
 Update-AzMySqlFirewallRule -Name rule -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
 ```
@@ -61,9 +64,9 @@ Name StartIPAddress EndIPAddress
 rule 0.0.0.2        0.0.0.3
 ```
 
-Cmdlet ini memperbarui Aturan Firewall MySql menurut nama.
+Cmdlet ini memperbarui Aturan Firewall MySql berdasarkan nama.
 
-### Contoh 2: Update MySql Firewall Rule by identity.
+### Contoh 2: Perbarui Aturan Firewall MySql berdasarkan identitas.
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/servers/mysql-test/firewallRules/rule"
 Update-AzMySqlFirewallRule -InputObject $ID -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
@@ -75,9 +78,9 @@ Name StartIPAddress EndIPAddress
 rule 0.0.0.2        0.0.0.3
 ```
 
-Cmdlet ini memperbarui Aturan MySql Firewall menurut identitas.
+Cmdlet ini memperbarui Aturan Firewall MySql berdasarkan identitas.
 
-### Contoh 3: Update MySql Firewall Rule by -ClientIPAddress.
+### Contoh 3: Perbarui Aturan Firewall MySql oleh -ClientIPAddress.
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/servers/mysql-test/firewallRules/rule"
 Update-AzMySqlFirewallRule -InputObject $ID --ClientIPAddress 0.0.0.2
@@ -94,7 +97,7 @@ Cmdlet ini memperbarui Aturan Firewall MySql oleh -ClientIPAddress.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,8 +112,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal aturan firewall server.
-Harus berupa format IPv4.
+KLIEN menentukan IP tunggal dari aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus berupa format IPv4.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -170,7 +173,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall server.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -232,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartIPAddress
-Alamat IP mulai aturan firewall server.
-Harus berupa format IPv4.
+Alamat IP awal aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -262,8 +265,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -320,7 +323,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

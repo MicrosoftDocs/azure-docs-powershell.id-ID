@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLogStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLogStatus.md
-ms.openlocfilehash: c4d85716e40263b3c464a6eec024f7920e54b309
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1074fdcefe47b1c40a33cf3a0f3c3d6be2e471b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805806"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605570"
 ---
 # Get-AzNetworkWatcherFlowLogStatus
 
 ## SYNOPSIS
-Mendapatkan status pembuatan log aliran pada sumber daya.
+Mendapatkan status alur masuk pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherflowlogstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzNetworkWatcherFlowLogStatus -Location <String> -TargetResourceId <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherFlowLogStatus Mendapatkan status pembuatan log aliran pada sumber daya. Status mencakup apakah pembuatan log alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, dan kebijakan penyimpanan untuk log. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
+cmdlet Get-AzNetworkWatcherFlowLogStatus Mendapatkan status pengelogan alur pada sumber daya. Status ini mencakup apakah pengelogan alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, dan kebijakan penyimpanan untuk log. Saat ini Kelompok Keamanan Jaringan didukung untuk pengelogan alur. 
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Status Pembuatan Log Flow untuk NSG Tertentu
+### Contoh 1: Mendapatkan Status Pengelogan Flow untuk NSG Tertentu
 ```powershell
 $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -66,9 +69,9 @@ Properties       : {
                    }
 ```
 
-Dalam contoh ini, kami mendapatkan status pembuatan log alur untuk Grup Keamanan Jaringan. NSG yang ditentukan telah mengaktifkan pembuatan log alur, format default, dan tidak ada kumpulan kebijakan penyimpanan.
+Dalam contoh ini kita mendapatkan status pengelogan alur untuk Kelompok Keamanan Jaringan. NSG yang ditentukan mengaktifkan pengelogan alur, format default, dan tidak ada kebijakan penyimpanan yang ditetapkan.
 
-### Contoh 2: Dapatkan Flow Status Log dan Analitik Lalu Lintas untuk NSG Tertentu
+### Contoh 2: Mendapatkan Status Pengelogan Flow dan Analitik Lalu Lintas untuk NSG tertentu
 ```powershell
 $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -99,12 +102,12 @@ FlowAnalyticsConfiguration : {
           }
 ```
 
-Dalam contoh ini, kami mendapatkan status pembuatan log alur dan Analitik Lalu Lintas untuk Grup Keamanan Jaringan. NSG yang ditentukan memiliki pembuatan log alur dan Analitik Lalu Lintas diaktifkan, format default, dan tidak ada rangkaian kebijakan penyimpanan.
+Dalam contoh ini kita mendapatkan pengelogan alur dan status Analitik Lalu Lintas untuk Grup Keamanan Jaringan. NSG yang ditentukan memiliki pengelogan alur dan Analitik Lalu Lintas diaktifkan, format default, dan tidak ada kebijakan penyimpanan yang ditetapkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -222,7 +225,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat, alur, log, flowlog, pengelogan
 
 ## RELATED LINKS
 
@@ -230,7 +233,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -270,9 +273,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTagCriteriaClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTagCriteriaClientObject.md
-ms.openlocfilehash: 6ef018e8859798d402f83819d16753e02f6fcd95
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 610c251bff41669e5a85ff69d18f369b2a84ccb6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684846"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631054"
 ---
 # New-AzDataProtectionPolicyTagCriteriaClientObject
 
 ## SYNOPSIS
 Membuat objek kriteria baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytagcriteriaclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzDataProtectionPolicyTagCriteriaClientObject [-DaysOfWeek <DaysOfWeek[]>]
 New-AzDataProtectionPolicyTagCriteriaClientObject -AbsoluteCriteria <AbsoluteTagCriteria> [<CommonParameters>]
 ```
 
-### BulananKriteria
+### MonthlyCriteria
 ```
 New-AzDataProtectionPolicyTagCriteriaClientObject -DaysOfMonth <String[]> [-MonthsOfYear <MonthsOfYear[]>]
  [-ScheduleTimes <DateTime[]>] [<CommonParameters>]
@@ -71,7 +74,7 @@ Perintah ini membuat objek critetia dengan kriteria mingguan
 ## PARAMETERS
 
 ### -AbsoluteCriteria
-Kriteria mutlak
+Kriteria absolut
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.AbsoluteTagCriteria
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -DaysOfMonth
 Hari dalam sebulan.
-Nilai yang diperbolehkan adalah 1 hingga 28 dan Terakhir
+Nilai yang diizinkan adalah 1 hingga 28 dan Terakhir
 
 ```yaml
 Type: System.String[]
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DaysOfWeek
-Hari dalam seminggu
+Hari dalam sepekan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DaysOfWeek[]
@@ -116,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BulanOfYear
+### -MonthsOfYear
 Bulan dalam setahun.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MingguOfMonth
+### -WeeksOfMonth
 Minggu dalam sebulan.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

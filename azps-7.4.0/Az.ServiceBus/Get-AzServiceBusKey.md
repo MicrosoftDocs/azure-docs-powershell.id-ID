@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
-ms.openlocfilehash: 2a32f10a4392c46b681b4162358ccfd3215a7475
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a051e020a9c57d31f0598cffe8f1bdb0e22d427b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143308997"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632150"
 ---
 # Get-AzServiceBusKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi utama dan sekunder untuk Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) tertentu.
+Mendapatkan string koneksi utama dan sekunder untuk Namespace layanan atau Antrean atau Topik atau Alias yang diberikan (Konfigurasi GeoDR).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebuskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,13 +28,13 @@ Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### AntreanAuthorizationRuleSet
+### QueueAuthorizationRuleSet
 ```
 Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopikAuthorizationRuleSet
+### TopicAuthorizationRuleSet
 ```
 Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -44,7 +47,7 @@ Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-AliasN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzServiceBusKey** mengembalikan string koneksi utama dan sekunder untuk Ruang Nama atau Antrean atau Alias (Konfigurasi GeoDR) tertentu.
+Cmdlet **Get-AzServiceBusKey** mengembalikan string koneksi primer dan sekunder untuk Namespace layanan atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) yang diberikan.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Get-AzServiceBusKey** mengembalikan string koneksi utama dan sekunder u
 Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1
 ```
 
-String koneksi primer dan sekunder ke ruang nama yang ditentukan.
+String koneksi primer dan sekunder ke namespace yang ditentukan.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +77,7 @@ String koneksi primer dan sekunder ke topik yang ditentukan.
 Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -AliasName SBAlias -Name AuthoRule1
 ```
 
-String koneksi primer dan sekunder ke ruang nama dan alias yang ditentukan.
+String koneksi primer dan sekunder ke namespace layanan dan alias yang ditentukan.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

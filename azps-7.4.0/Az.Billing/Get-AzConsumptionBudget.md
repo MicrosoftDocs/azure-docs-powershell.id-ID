@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionBudget.md
-ms.openlocfilehash: 04bae231794fbe018014b346dcf21aa564403ddd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aea6e881fbfb9937e2c9caf4dd45ed8b887af822
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007137"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619754"
 ---
 # Get-AzConsumptionBudget
 
 ## SYNOPSIS
-Dapatkan daftar anggaran baik dalam langganan maupun grup sumber daya.
+Dapatkan daftar anggaran dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet Get-AzConsumptionBudget mendapatkan daftar anggaran baik dalam langganan 
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar anggaran pada tingkat langganan
+### Contoh 1: Mendapatkan daftar anggaran di tingkat langganan
 ```powershell
 Get-AzConsumptionBudget
 ```
@@ -46,7 +49,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 2: Dapatkan daftar anggaran di tingkat grup sumber daya
+### Contoh 2: Mendapatkan daftar anggaran di tingkat grup sumber daya
 ```powershell
 Get-AzConsumptionBudget -ResourceGroupName RGBudgets
 ```
@@ -63,7 +66,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 3: Dapatkan anggaran dengan nama anggaran pada tingkat langganan
+### Contoh 3: Mendapatkan anggaran dengan nama anggaran di tingkat langganan
 ```powershell
 Get-AzConsumptionBudget -Name PSBudget
 ```
@@ -114,7 +117,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama anggaran.
 
 ```yaml
@@ -145,18 +148,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
 ## NOTES
-- Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia untuk pelanggan Perjanjian Enterprise.
-- SDK PowerShell untuk Pemakaian menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
+- Saat ini, PowerShell SDK untuk Konsumsi hanya tersedia untuk Perjanjian Enterprise pelanggan.
+- PowerShell SDK for Consumption menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel ke belakang seperti mencantumkan Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 
 ## RELATED LINKS

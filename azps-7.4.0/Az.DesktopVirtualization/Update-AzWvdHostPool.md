@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdHostPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdHostPool.md
-ms.openlocfilehash: aceb158c08f4e26b18401adde844543b4a276862
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da6d890c4d685cd08ac33d5a6c7b110932ac1003
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143317295"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631000"
 ---
 # Update-AzWvdHostPool
 
 ## SYNOPSIS
 Memperbarui kumpulan host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdhostpool) untuk informasi terbaru.
 
 ## SYNTAX
 

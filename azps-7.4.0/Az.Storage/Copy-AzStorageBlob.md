@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/copy-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Copy-AzStorageBlob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Copy-AzStorageBlob.md
-ms.openlocfilehash: 61f891ba3aca3bfb325180cc3082ba08f2dbec6d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f141e1eee39720de3a5220a6f4a6deb959822d1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143305739"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615092"
 ---
 # Copy-AzStorageBlob
 
 ## SYNOPSIS
-Salin gumpalan secara sinkron.
+Salin blob secara sinkron.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/copy-azstorageblob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Copy-AzStorageBlob -AbsoluteUri <String> -DestContainer <String> -DestBlob <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Copy-AzStorageBlob** menyalin blob secara sinkron, saat ini hanya mendukung blok blob.
+Cmdlet **Copy-AzStorageBlob** menyalin blob secara sinkron, saat ini hanya mendukung blob blok.
 
 ## EXAMPLES
 
@@ -53,35 +56,35 @@ Cmdlet **Copy-AzStorageBlob** menyalin blob secara sinkron, saat ini hanya mendu
 C:\PS> $destBlob = Copy-AzStorageBlob -SrcContainer "sourcecontainername" -SrcBlob "srcblobname" -DestContainer "destcontainername" -DestBlob "destblobname"
 ```
 
-Perintah ini menyalin blob dari wadah sumber ke wadah tujuan dengan nama blob baru. 
+Perintah ini menyalin blob dari kontainer sumber ke kontainer tujuan dengan nama blob baru. 
 
-### Contoh 2: Salin blob dari objek blob
+### Contoh 2: Menyalin blob dari objek blob
 ```
 C:\PS> $srcBlob = Get-AzStorageBlob -Container $containerName -Blob $blobName  -Context $ctx 
 C:\PS> $destBlob =  $srcBlob | Copy-AzStorageBlob  -DestContainer "destcontainername" -DestBlob "destblobname"
 ```
 
-Perintah ini menyalin blob dari objek blob sumber ke wadah tujuan dengan nama blob baru.
+Perintah ini menyalin blob dari objek blob sumber ke kontainer tujuan dengan nama blob baru.
 
-### Contoh 3: Copy blob from a blob Uri
+### Contoh 3: Menyalin blob dari Uri blob
 ```
 C:\PS> $srcBlobUri = New-AzStorageBlobSASToken -Container $srcContainerName -Blob $srcBlobName -Permission rt -ExpiryTime (Get-Date).AddDays(7) -FullUri 
 C:\PS> $destBlob = Copy-AzStorageBlob -AbsoluteUri $srcBlobUri -DestContainer "destcontainername" -DestBlob "destblobname"
 ```
 
-Perintah pertama membuat Uri gumpalan dari blob sumber, dengan sas token izin "rt". Perintah kedua menyalin dari Uri blob sumber ke blob tujuan.
+Perintah pertama membuat Uri blob dari blob sumber, dengan token sas izin "rt". Perintah kedua menyalin dari Uri blob sumber ke blob tujuan.
 
-### Contoh 4: Memperbarui lingkup enkripsi blok blob
+### Contoh 4: Memperbarui cakupan enkripsi blob blok
 ```
 C:\PS> $blob = Copy-AzStorageBlob -SrcContainer $containerName -SrcBlob $blobname -DestContainer $containername -EncryptionScope $newScopeName -Force
 ```
 
-Perintah ini memperbarui lingkup enkripsi blok blob dengan menyalinnya sendiri dengan lingkup enkripsi baru.
+Perintah ini memperbarui cakupan enkripsi blob blok dengan menyalinnya ke dirinya sendiri dengan cakupan enkripsi baru.
 
 ## PARAMETERS
 
 ### -AbsoluteUri
-Sumber blob uri
+Uri blob sumber
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage Sumber
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestContainer
-Nama wadah tujuan
+Nama kontainer tujuan
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionScope
-Lingkup enkripsi yang akan digunakan saat membuat permintaan ke lingkup dest.
+Cakupan enkripsi yang akan digunakan saat membuat permintaan ke blob dest.
 
 ```yaml
 Type: System.String
@@ -239,8 +242,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk menimpa blob atau file yang sudah ada
+### -Force
+Paksa untuk menimpa blob atau file yang ada
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -RehydratePriority
-Blokir Blob RehydratePriority.
+Block Blob RehydratePriority.
 Menunjukkan prioritas untuk merehidrasi blob yang diarsipkan.
 Nilai yang valid adalah Tinggi/Standar.
 
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcContainer
-Nama Wadah Sumber
+Nama Kontainer Sumber
 
 ```yaml
 Type: System.String
@@ -303,8 +306,8 @@ Accept wildcard characters: False
 ```
 
 ### -StandardBlobTier
-Block Blob Tier, nilai yang valid adalah Hot/Cool/Archive.
-Lihat detailnya di https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers
+Tingkat Blob Blok, nilai yang valid adalah Panas/Dingin/Arsip.
+Lihat detail di https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers
 
 ```yaml
 Type: System.String
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -334,8 +337,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

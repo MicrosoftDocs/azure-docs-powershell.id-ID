@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactory.md
-ms.openlocfilehash: eb4892b43098d72fe64e33639d84dc400aa2ad8d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3d177f0aa9499f35092357402322270330e858c5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875016"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144607406"
 ---
 # New-AzDataFactory
 
 ## SYNOPSIS
 Membuat pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/new-azdatafactory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,9 +33,9 @@ New-AzDataFactory [-Name] <String> [-Location] <String> [[-Tag] <Hashtable>] [-F
 Cmdlet **New-AzDataFactory** membuat pabrik data dengan nama dan lokasi grup sumber daya yang ditentukan.
 Lakukan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
-- Membuat layanan tertaut. 
-- Membuat kumpulan data. 
-- Membuat saluran.
+- Buat layanan tertaut. 
+- Membuat himpunan data. 
+- Buat alur.
 
 ## EXAMPLES
 
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan pabrik data yang sudah ada tanpa meminta konfirmasi kepada Anda.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan pabrik data yang ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pabrik data untuk dibuat.
+### -Name
+Menentukan nama pabrik data yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini membuat pabrik data yang termasuk dalam grup yang ditentukan parameter ini.
+Cmdlet ini membuat pabrik data milik grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -145,8 +148,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,12 +193,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Get-AzDataFactory](./Get-AzDataFactory.md)
 
-[Hapus-AzDataFactory](./Remove-AzDataFactory.md)
+[Remove-AzDataFactory](./Remove-AzDataFactory.md)
 
 

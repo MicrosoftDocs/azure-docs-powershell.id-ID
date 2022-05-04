@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPath.md
-ms.openlocfilehash: c7413bae8d6fe4e3a64b0c505dfc812c1d808d0d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f55d6bfbee3e37afa90f26f2aa040632e495394e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126549"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587682"
 ---
 # New-AzCosmosDBGremlinIncludedPath
 
 ## SYNOPSIS
-Membuat objek baru dari tipe PSIncludedPath. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+Membuat objek baru jenis PSIncludedPath. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlinincludedpath) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBGremlinIncludedPath [-Path <String>] [-Index <PSIndexes[]>]
 ```
 
 ## DESCRIPTION
-Objek yang terkait dengan Gremlin API's IncludedPath.
+Objek yang sesuai dengan IncludedPath Gremlin API.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Index
+### -Indeks
 Daftar indeks untuk jalur ini
 
 ```yaml
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur di mana perilaku pengindeksan diterapkan.
-Jalur indeks biasanya dimulai dengan root dan diakhiri dengan wildcard (/path/*)
+Jalur tempat perilaku pengindeksan berlaku.
+Jalur indeks biasanya dimulai dengan root dan diakhir dengan wildcard (/path/*)
 
 ```yaml
 Type: System.String
@@ -90,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

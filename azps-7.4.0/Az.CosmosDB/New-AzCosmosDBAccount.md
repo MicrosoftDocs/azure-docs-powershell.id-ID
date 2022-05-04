@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccount.md
-ms.openlocfilehash: 954847db037a08ab4c31f71128c420c59f69b6ee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 613407efb5d69834d4da30847be09c79e09c66c8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686106"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587898"
 ---
 # New-AzCosmosDBAccount
 
 ## SYNOPSIS
 Buat Akun CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzCosmosDBAccount [-EnableAutomaticFailover] [-EnableMultipleWriteLocations]
 ```
 
 ## DESCRIPTION
-Buat Akun CosmosDB baru di ResourceGroup tertentu.
+Buat Akun CosmosDB baru di ResourceGroup yang diberikan.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ NetworkAclBypass              : None
 NetworkAclBypassResourceIds   : {}
 ```
 
-Akun CosmosDB baru dengan database namaAccountName dibuat di ResourceGroup resourceGroupName.
+Akun CosmosDB baru dengan nama databaseAccountName dibuat di ResourceGroup resourceGroupName.
 
 ### Contoh 2
 ```powershell
@@ -109,7 +112,7 @@ RestoreParameters                  : Microsoft.Azure.Commands.CosmosDB.Models.PS
 CreateMode                         : Restore
 ```
 
-Akun baru dengan nama yang dipulihkanDatabaseAccountName dibuat dengan memulihkan akun database yang dapat dipulihkan dari Id yang diberikan ke stempel waktu tertentu.
+Akun baru dengan nama restoredDatabaseAccountName dibuat dengan memulihkan akun database yang dapat dipulihkan dari Id yang diberikan ke tanda waktu yang diberikan.
 
 ### Contoh 3
 ```powershell
@@ -151,12 +154,12 @@ RestoreParameters                  : Microsoft.Azure.Commands.CosmosDB.Models.PS
 CreateMode                         : Restore
 ```
 
-Akun baru dengan nama yang dipulihkanDatabaseAccountName dibuat dengan memulihkan akun database yang dapat dipulihkan dari Id yang diberikan ke stempel waktu tertentu.
+Akun baru dengan nama restoredDatabaseAccountName dibuat dengan memulihkan akun database yang dapat dipulihkan dari Id yang diberikan ke tanda waktu yang diberikan.
 
 ## PARAMETERS
 
 ### -AnalyticalStorageSchemaType
-Tipe skema untuk penyimpanan analitik. Nilai yang valid meliputi: 'WellDefined' dan 'FullFidelity'.
+Jenis skema untuk penyimpanan analitis. Nilai yang valid meliputi: 'WellDefined' dan 'FullFidelity'.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiKind
-Tipe akun database Cosmos DB untuk dibuat.
+Jenis akun database Cosmos DB untuk dibuat.
 Nilai yang diterima: GlobalDocumentDB, MongoDB, Gremlin, Table, Cassandra.
 Nilai default: GlobalDocumentDB
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupIntervalInMinutes
-Interval(dalam menit) dengan cadangan yang diambil (hanya untuk akun dengan cadangan mode berkala)
+Interval(dalam menit) dengan cadangan mana yang diambil (hanya untuk akun dengan cadangan mode berkala)
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupPolicyType
-Tipe cadangan pada akun Cosmos DB. Nilai yang diterima: Periodik, Berkelanjutan
+Jenis cadangan pada akun Cosmos DB. Nilai yang diterima: Berkala, Berkelanjutan
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Tipe redundansi dari akun Storage cadangan
+Jenis redundansi akun Storage cadangan
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableKeyBasedMetadataWriteAccess
-Menonaktifkan operasi penulisan pada sumber daya metadata (database, wadah, throughput) melalui kunci akun
+Menonaktifkan operasi tulis pada sumber daya metadata (database, kontainer, throughput) melalui kunci akun
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticFailover
-Mengaktifkan failover otomatis dari wilayah tulis dalam kejadian langka bahwa kawasan tidak tersedia karena pemadaman.
+Memungkinkan failover otomatis wilayah tulis dalam peristiwa langka bahwa wilayah tersebut tidak tersedia karena pemadaman.
 Failover otomatis akan menghasilkan wilayah tulis baru untuk akun dan dipilih berdasarkan prioritas failover yang dikonfigurasi untuk akun tersebut.
 Nilai yang diterima: false, true
 
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableVirtualNetwork
-Mengaktifkan jaringan virtual di akun database Cosmos DB.
+Mengaktifkan jaringan virtual pada akun database Cosmos DB.
 Nilai yang diterima: false, true
 
 ```yaml
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Dukungan firewall. Menentukan kumpulan alamat IP atau rentang alamat IP dalam formulir CIDR untuk disertakan sebagai daftar IP klien yang diperbolehkan untuk akun database tertentu.
+Dukungan firewall. Menentukan kumpulan alamat IP atau rentang alamat IP dalam formulir CIDR yang akan disertakan sebagai daftar IP klien yang diizinkan untuk akun database tertentu.
 
 ```yaml
 Type: System.String[]
@@ -464,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessIntervalInSeconds
-Ketika digunakan dengan konsistensi Ketokohan Terikat, nilai ini menunjukkan jumlah ketokohan waktu (dalam jangka waktu) yang ditoleransi.
+Ketika digunakan dengan konsistensi Bounded Staleness, nilai ini menunjukkan jumlah waktu kedaluarsa (dalam jangka waktu) yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 5-86400.
 
 ```yaml
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessPrefix
-Ketika digunakan dengan konsistensi Ketokohan Terikat, nilai ini menunjukkan jumlah permintaan basi yang ditoleransi.
+Saat digunakan dengan konsistensi Bounded Staleness, nilai ini menunjukkan jumlah permintaan kedaluarsa yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 1 - 2.147.483.647.
 
 ```yaml
@@ -495,7 +498,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -511,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkAclBypass
-Apakah Bypass Acl Jaringan diaktifkan atau tidak untuk akun ini untuk Tautan Sinapsis. Nilai yang memungkinkan meliputi: 'Tidak ada', 'AzureServices'.
+Apakah Bypass Acl Jaringan diaktifkan atau tidak untuk akun ini untuk Synapse Link. Nilai yang mungkin termasuk: 'None', 'AzureServices'.
 
 ```yaml
 Type: System.String
@@ -526,7 +529,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkAclBypassResourceId
-Daftar Id Sumber Daya untuk memperbolehkan Bypass Acl Jaringan untuk Tautan Synapse.
+Daftar Id Sumber Daya untuk mengizinkan Bypass Acl Jaringan untuk Synapse Link.
 
 ```yaml
 Type: System.String[]
@@ -541,7 +544,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses titik akhir publik diperbolehkan atau tidak untuk server ini. Nilai yang memungkinkan termasuk: 'Diaktifkan', 'Dinonaktifkan'
+Apakah akses titik akhir publik diperbolehkan untuk server ini atau tidak. Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -586,8 +589,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable tag sebagai pasangan nilai kunci.
-Gunakan string kosong untuk menghapus tag yang sudah ada.
+Hashtable tag sebagai pasangan kunci-nilai.
+Gunakan string kosong untuk menghapus tag yang ada.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -631,8 +634,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -647,7 +650,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -663,7 +666,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

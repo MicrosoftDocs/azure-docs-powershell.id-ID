@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdHostPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdHostPool.md
-ms.openlocfilehash: 82179323a4334d9147e14c4562ffe01d8bd934ee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5b87191394ae02b611da3178853f380ea25c699d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002457"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599522"
 ---
 # New-AzWvdHostPool
 
 ## SYNOPSIS
 Membuat atau memperbarui kumpulan host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdhostpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzWvdHostPool -HostPoolType <HostPoolType> -LoadBalancerType <LoadBalancerTy
  [-VMTemplate <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### FullSenerioMebuat
+### FullSenerioBuat
 ```
 New-AzWvdHostPool -HostPoolType <HostPoolType> -LoadBalancerType <LoadBalancerType> -Location <String>
  -Name <String> -PreferredAppGroupType <PreferredAppGroupType> -ResourceGroupName <String>
@@ -48,7 +51,7 @@ Membuat atau memperbarui kumpulan host.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Windows Virtual Desktop HostPool menurut nama
+### Contoh 1: Membuat Windows Virtual Desktop HostPool berdasarkan nama
 ```powershell
 New-AzWvdHostPool -ResourceGroupName ResourceGroupName `
                             -Name HostPoolName `
@@ -78,7 +81,7 @@ eastus     HostPoolName Microsoft.DesktopVirtualization/hostpools
 
 Perintah ini membuat Windows Virtual Desktop HostPool dalam Grup Sumber Daya.
 
-### Contoh 2: Membuat Windows Virtual Desktop HostPool menurut nama
+### Contoh 2: Membuat Windows Virtual Desktop HostPool berdasarkan nama
 ```powershell
 New-AzWvdHostPool -ResourceGroupName ResourceGroupName `
                             -Name HostPoolName `
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationTime
-Waktu kedaluwarsa token registrasi.
+Waktu kedaluwarsa token pendaftaran.
 
 ```yaml
 Type: System.DateTime
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama HostPool yang ramah.
+Nama hostPool yang mudah diingat.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostPoolType
-Tipe HostPool untuk desktop.
+Jenis HostPool untuk desktop.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.HostPoolType
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas.
+Jenis identitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ResourceIdentityType
@@ -231,8 +234,8 @@ Accept wildcard characters: False
 ```
 
 ### -Jenis
-Metadata yang digunakan oleh portal/tooling/etc untuk menyajikan pengalaman UX yang berbeda untuk sumber daya dengan tipe yang sama; misalnya ApiApps adalah jenis tipe Microsoft.Web/sites.
-Jika didukung, penyedia sumber daya harus memvalidasi dan tetap memiliki nilai ini.
+Metadata yang digunakan oleh portal/peralatan/dll untuk merender pengalaman UX yang berbeda untuk sumber daya dengan jenis yang sama; misalnya ApiApps adalah jenis Microsoft.Web/sites.
+Jika didukung, penyedia sumber daya harus memvalidasi dan mempertahankan nilai ini.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerType
-Tipe penyeimbang beban.
+Jenis load balancer.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.LoadBalancerType
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 
 ### -ManagedBy
 ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya yang mengelola sumber daya ini.
-Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
+Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
 Jika ada, penyebaran mode lengkap tidak akan menghapus sumber daya jika dihapus dari templat karena dikelola oleh sumber daya lain.
 
 ```yaml
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSessionLimit
-Batas maksimal sesi HostPool.
+Batas sesi maksimum HostPool.
 
 ```yaml
 Type: System.Int32
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationRequestMigrationPath
-Jalur menuju objek warisan untuk dimigrasikan.
+Jalur ke objek warisan untuk dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationRequestOperation
-Tipe operasi untuk migrasi.
+Jenis operasi untuk migrasi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.Operation
@@ -338,7 +341,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan host dalam grup sumber daya yang ditentukan
 
 ```yaml
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalDesktopAssignmentType
-Tipe PersonalDesktopAssignment untuk HostPool.
+Jenis PersonalDesktopAssignment untuk HostPool.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PersonalDesktopAssignmentType
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanName
-Pengguna mendefinisikan nama Artefak Pihak ke-3 yang sedang diakui.
+Nama yang ditentukan pengguna dari Artefak Pihak ke-3 yang sedang diakui.
 
 ```yaml
 Type: System.String
@@ -384,10 +387,10 @@ Accept wildcard characters: False
 ```
 
 ### -PlanProduct
-Artefak Partai ke-3 yang sedang dijadikan pengadaan.
-Misalnya.
+Artefak Pihak ke-3 yang sedang diakui.
+Mis.
 NewRelic.
-Peta produk untuk OfferID yang ditentukan untuk artefak pada saat onboarding Data Market.
+Peta produk ke OfferID yang ditentukan untuk artefak pada saat onboarding Data Market.
 
 ```yaml
 Type: System.String
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPromotionCode
-Penerbit menyediakan kode promosi sebagaimana ditetapkan di Pasar Data untuk produk/artefak tersebut.
+Penerbit menyediakan kode promosi seperti yang disediakan di Pasar Data untuk produk/artefak tersebut.
 
 ```yaml
 Type: System.String
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 
 ### -PlanPublisher
 Penerbit Artefak Pihak ke-3 yang sedang dibeli.
-Misalnya.
+Mis.
 NewRelic
 
 ```yaml
@@ -449,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredAppGroupType
-Tipe tipe grup aplikasi pilihan, default ke Grup Aplikasi Desktop
+Jenis jenis grup aplikasi pilihan, default ke Grup Aplikasi Desktop
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.PreferredAppGroupType
@@ -464,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationInfoToken
-String berkode token registrasi base64.
+String yang dikodekan token pendaftaran base64.
 
 ```yaml
 Type: System.String
@@ -478,8 +481,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RegistrationTokenoperation
-Tipe pengaturan ulang token.
+### -RegistrationTokenOperation
+Jenis pengaturan ulang token.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.RegistrationTokenOperation
@@ -495,7 +498,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -525,8 +528,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Jika SKU mendukung penskalaan keluar/masuk maka bilangan bulat kapasitas harus disertakan.
-Jika skala keluar/masuk tidak dimungkinkan untuk sumber daya ini mungkin dihilangkan.
+Jika SKU mendukung peluasan skala/masuk, bilangan bulat kapasitas harus disertakan.
+Jika peluasan/penyempurnaan skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
 
 ```yaml
 Type: System.Int32
@@ -541,7 +544,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka yang dapat ditangkap di sini.
+Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka itu dapat ditangkap di sini.
 
 ```yaml
 Type: System.String
@@ -556,9 +559,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU.
-Bekas - P3.
-Biasanya berupa kode huruf+angka
+Nama SKUnya.
+Mantan - P3.
+Biasanya kode huruf+angka
 
 ```yaml
 Type: System.String
@@ -572,7 +575,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skusize
+### -SkuSize
 Ukuran SKU.
 Ketika bidang nama adalah kombinasi tingkat dan beberapa nilai lainnya, ini akan menjadi kode mandiri.
 
@@ -589,7 +592,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Bidang ini diperlukan untuk diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
+Bidang ini diperlukan untuk diimplementasikan oleh Penyedia Sumber Jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SkuTier
@@ -604,7 +607,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoadfsAuthority
-URL ke server ADFS pelanggan untuk menandatangani sertifikat WVD SSO.
+URL ke server ADFS pelanggan untuk menandatangani sertifikat SSO WVD.
 
 ```yaml
 Type: System.String
@@ -619,7 +622,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoClientId
-ClientId untuk Relying Party terdaftar yang digunakan untuk menerbitkan sertifikat WVD SSO.
+ClientId untuk Pihak Pengandal terdaftar yang digunakan untuk menerbitkan sertifikat SSO WVD.
 
 ```yaml
 Type: System.String
@@ -649,7 +652,7 @@ Accept wildcard characters: False
 ```
 
 ### -SsoSecretType
-Tipe tanda tunggal pada Tipe Rahasia.
+Jenis akses menyeluruh pada Jenis Rahasia.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SsoSecretType
@@ -738,7 +741,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja
 
 ```yaml
@@ -753,8 +756,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -769,7 +772,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -785,7 +788,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

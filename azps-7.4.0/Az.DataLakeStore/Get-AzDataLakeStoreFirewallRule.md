@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreFirewallRule.md
-ms.openlocfilehash: 870d21db2fb4290227b18a8a4e55d0f743d18932
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07363cbc9253bfe403e0c47a43407e90e66af15b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063927"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632816"
 ---
 # Get-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
-Mendapatkan aturan firewall tertentu dalam Data Lake Store yang ditentukan.
+Mendapatkan aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada aturan firewall yang ditentukan, maka daftar semua aturan firewall untuk akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestorefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzDataLakeStoreFirewallRule [-Account] <String> [[-Name] <String>] [[-Resour
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataLakeStoreFirewallRule mendapatkan aturan firewall yang ditentukan dalam Data Lake Store yang ditentukan.
+Cmdlet Get-AzDataLakeStoreFirewallRule mendapatkan aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada aturan firewall yang ditentukan, maka daftar semua aturan firewall untuk akun tersebut.
 
 ## EXAMPLES
@@ -44,7 +47,7 @@ Mengembalikan aturan firewall bernama "MyFirewallRule" dari akun "ContosoADL"
 Get-AzDataLakeStoreFirewallRule -AccountName "ContosoADL"
 ```
 
-Mengembalikan semua aturan firewall dalam akun "ContosoADL"
+Mengembalikan semua aturan firewall di akun "ContosoADL"
 
 ## PARAMETERS
 
@@ -78,8 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama aturan firewall untuk diambil
+### -Name
+Nama aturan firewall yang akan diambil
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana ingin mengambil aturan firewall akun tertentu.
+Nama grup sumber daya di mana ingin mengambil aturan firewall yang ditentukan akun yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

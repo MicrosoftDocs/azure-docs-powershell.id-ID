@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayAutoscaleConfiguration.md
-ms.openlocfilehash: fe494f98545e9ea79d636ec7ec4f96a55cbe8a62
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cbf59abd53a98b792f4d37d4ec37ba919f68cb48
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678852"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632582"
 ---
 # New-AzApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
 Membuat Konfigurasi Skala Otomatis untuk Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,9 +50,9 @@ $gw.AutoscaleConfiguration = New-AzApplicationGatewayAutoscaleConfiguration -Min
 $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama akan memasukkan konfigurasi Application Gateway ke dalam variabel.
+Perintah pertama mendapatkan konfigurasi Application Gateway ke dalam variabel.
 Perintah kedua menghapus variabel Kapasitas SKU untuk memungkinkan Konfigurasi Skala Otomatis diatur.
-Perintah ketiga menentukan Konfigurasi SkalaOtomatis baru untuk Application Gateway.
+Perintah ketiga menentukan Konfigurasi Skala Otomatis baru untuk Application Gateway.
 Perintah keempat menerapkan konfigurasi baru ke Application Gateway.
 
 ## PARAMETERS
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCapacity
-Unit kapasitas maksimum yang akan selalu tersedia [dan dikenai biaya] untuk gateway aplikasi.
+Unit kapasitas maksimum yang akan selalu tersedia [dan dikenakan biaya] untuk gateway aplikasi.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinCapacity
-Minimal unit kapasitas yang akan selalu tersedia [dan dikenakan biaya] untuk gateway aplikasi. 
+Unit kapasitas minimum yang akan selalu tersedia [dan dikenakan biaya] untuk gateway aplikasi. 
 
 ```yaml
 Type: System.Int32
@@ -99,8 +102,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -131,11 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

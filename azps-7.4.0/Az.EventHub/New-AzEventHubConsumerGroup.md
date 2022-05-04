@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 5da52a4780b31073adba970bf2103727decc1995
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c85d3a03e6ce53955acf4fe679bfaf7c8443894
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286713"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630910"
 ---
 # New-AzEventHubConsumerGroup
 
 ## SYNOPSIS
-Membuat grup konsumen baru untuk Hub Kejadian tertentu.
+Membuat grup konsumen baru untuk Pusat Aktivitas yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzEventHubConsumerGroup [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Membuat grup konsumen baru untuk Hub Kejadian tertentu.
+Membuat grup konsumen baru untuk Pusat Aktivitas yang ditentukan.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Membuat grup konsumen baru untuk Hub Kejadian tertentu.
 New-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName
 ```
 
-Membuat grup \`konsumen MyConsumerGroupName\` di Hub \`Kejadian MyEventHubName\`, yang tercakup ke ruang \`nama MyNamespaceName\`, dengan grup \`sumber daya MyResourceGroupName\`.
+Membuat grup \`konsumen MyConsumerGroupName\` di Event Hub \`MyEventHubName\`, yang tercakup ke namespace \`MyNamespaceName\`, dengan grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Grup Konsumen
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -129,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

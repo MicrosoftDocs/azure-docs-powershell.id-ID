@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationDscNode.md
-ms.openlocfilehash: 78bd3f7814e69f39a6f1a1cd23bc54c18ad068cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 28b1961947a49feea03df959545314717fbb1d72
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811908"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612806"
 ---
 # Set-AzAutomationDscNode
 
 ## SYNOPSIS
 Memodifikasi konfigurasi simpul tempat simpul DSC dipetakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,22 +30,22 @@ Set-AzAutomationDscNode -Id <Guid> -NodeConfigurationName <String> [-Force] [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationDscNode** mengubah konfigurasi node APS Desired State Configuration (DSC).
+Cmdlet **Set-AzAutomationDscNode** memodifikasi konfigurasi simpul APS Desired State Configuration (DSC).
 Azure Automation menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi pemetaan konfigurasi simpul
+### Contoh 1: Memodifikasi pemetaan konfigurasi simpul
 ```
 PS C:\>Set-AzAutomationDscNode -NodeConfigurationName "Contoso.NodeConfiguration01" -ResourceGroupName "ResourceGroup01" -Id 064a8929-c98b-25e4-80hh-111c8a6067j8
 ```
 
-Perintah ini menetapkan konfigurasi node bernama Contoso.NodeConfiguration01 ke simpul yang memiliki GUID yang ditentukan.
+Perintah ini menetapkan konfigurasi simpul bernama Contoso.NodeConfiguration01 ke simpul yang memiliki GUID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi simpul DSC di mana cmdlet ini mengubah konfigurasi.
+Menentukan nama akun Automation yang berisi simpul DSC tempat cmdlet ini memodifikasi konfigurasi.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID unik simpul DSC tempat cmdlet ini mengubah konfigurasi.
+Menentukan ID unik simpul DSC yang cmdlet ini memodifikasi konfigurasi.
 
 ```yaml
 Type: System.Guid
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengubah konfigurasi simpul DSC.
+Menentukan nama grup sumber daya tempat cmdlet ini memodifikasi konfigurasi simpul DSC.
 
 ```yaml
 Type: System.String
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProviderAssociation.md
-ms.openlocfilehash: 7213ddf6f887b37bdd1b07bab7338c65577582e4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a17de649a1da4a795e7b80f43c3083b5be47eb67
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942931"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631270"
 ---
 # Remove-AzCustomProviderAssociation
 
 ## SYNOPSIS
 Menghapus asosiasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customproviders/remove-azcustomproviderassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ Menghapus asosiasi.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus asosiasi penyedia kustom.
+### Contoh 1: Menghapus asosiasi penyedia kustom.
 ```powershell
 Remove-AzCustomProviderAssociation -Scope $id -Name Namespace.Type
 ```
 
-Hapus asosiasi penyedia kustom.
+Menghapus asosiasi penyedia kustom.
 
 ### Contoh 2: Menghapus asosiasi penyedia kustom dengan Piping
 ```powershell
@@ -52,12 +55,12 @@ Get-AzCustomProviderAssociation | Remove-AzCustomProviderAssociation -PassThru
 True
 ```
 
-Hapus asosiasi penyedia kustom, menggunakan piping dan fitur PassThru untuk menunjukkan keberhasilan atau kegagalan.
+Hapus asosiasi penyedia kustom, menggunakan pipa dan fitur PassThru untuk menunjukkan keberhasilan atau kegagalan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.ICustomProvidersIdentity
@@ -101,7 +104,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama asosiasi.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup asosiasi.
+### -Cakupan
+Ruang lingkup asosiasi.
 
 ```yaml
 Type: System.String
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -217,8 +220,8 @@ INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
-  - `[Scope <String>]`: Lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[Scope <String>]`: Ruang lingkup asosiasi.
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

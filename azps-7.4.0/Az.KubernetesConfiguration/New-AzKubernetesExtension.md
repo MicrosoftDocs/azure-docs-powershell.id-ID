@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesExtension.md
-ms.openlocfilehash: c3d1aaed2387b8c9a21db529a24deae60e2537e7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eaa6920c96f3ede4b10104e3f465e7b4dfd7f534
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120843"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655346"
 ---
 # New-AzKubernetesExtension
 
 ## SYNOPSIS
 Buat Ekstensi Kluster Kubernetes baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Buat Ekstensi Kluster Kubernetes baru.
 
 ## EXAMPLES
 
-### Contoh 1: Create a new Kubernetes Cluster Extension.
+### Contoh 1: Buat Ekstensi Kluster Kubernetes baru.
 ```powershell
 New-AzKubernetesExtension -ClusterName azps_test_cluster -ClusterType ConnectedClusters -Name azps_test_extension -ResourceGroupName azps_test_group -ExtensionType Microsoft.Arcdataservices
 ```
@@ -50,7 +53,7 @@ Buat Ekstensi Kluster Kubernetes baru.
 ## PARAMETERS
 
 ### -AkAssignedIdentityType
-Tipe identitas.
+Jenis identitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Support.ResourceIdentityType
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoUpgradeMinorVersion
-Benderai untuk diperhatikan jika ekstensi ini berpartisipasi dalam pemutakhiran otomatis versi minor, atau tidak.
+Bendera untuk dicatat apakah ekstensi ini berpartisipasi dalam peningkatan otomatis versi minor, atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterReleaseNamespace
-Ruang nama tempat Rilis ekstensi harus diletakkan, untuk ekstensi Kluster yang tercakup.
-Jika ruang nama ini tidak ada, ruang nama ini akan dibuat
+Namespace tempat Rilis ekstensi harus ditempatkan, untuk ekstensi lingkup Kluster.
+Jika namespace ini tidak ada, namespace ini akan dibuat
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterType
-Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationProtectedSetting
-Pengaturan konfigurasi yang sensitif, sebagai pasangan nilai nama untuk mengonfigurasi ekstensi ini.
+Pengaturan konfigurasi yang sensitif, sebagai pasangan nama-nilai untuk mengonfigurasi ekstensi ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationSetting
-Pengaturan konfigurasi, sebagai pasangan nilai nama untuk mengonfigurasi ekstensi ini.
+Pengaturan konfigurasi, sebagai pasangan nama-nilai untuk mengonfigurasi ekstensi ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -186,8 +189,8 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe Ekstensi, di mana sumber daya ini merupakan contohnya.
-Ini harus menjadi salah satu Tipe Ekstensi yang terdaftar di Microsoft.KubernetesConfiguration oleh penerbit Ekstensi.
+Jenis Ekstensi, di mana sumber daya ini adalah instans.
+Ini harus menjadi salah satu Jenis Ekstensi yang terdaftar di Microsoft.KubernetesConfiguration oleh penerbit Ekstensi.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas.
+Jenis identitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Support.ResourceIdentityType
@@ -216,7 +219,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Ekstensi.
 
 ```yaml
@@ -232,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceTargetNamespace
-Ruang nama tempat ekstensi akan dibuat untuk ekstensi ruang nama yang dilingkup.
-Jika ruang nama ini tidak ada, ruang nama ini akan dibuat
+Namespace tempat ekstensi akan dibuat untuk ekstensi lingkup Namespace.
+Jika namespace ini tidak ada, namespace ini akan dibuat
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReleaseTrain
-ReleaseTrain ekstensi ini berpartisipasi untuk pemutakhiran otomatis (misalnya Stabil, Pratinjau, dll.) - hanya jika autoUpgradeMinorVersion adalah 'true'.
+ReleaseTrain ekstensi ini berpartisipasi dalam untuk peningkatan otomatis (misalnya Stabil, Pratinjau, dll.) - hanya jika autoUpgradeMinorVersion adalah 'true'.
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -294,8 +297,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -325,8 +328,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
