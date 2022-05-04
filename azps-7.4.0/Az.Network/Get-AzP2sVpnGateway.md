@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGateway.md
-ms.openlocfilehash: 0c76544e136f02d210675e2256eec40f0ef2680e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa59220dc0ffeebfe8c863afab26ffabed44d8e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224613"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574165"
 ---
 # Get-AzP2sVpnGateway
 
 ## SYNOPSIS
-Mendapatkan P2SVpnGateway yang sudah ada di bawah VirtualHub.
+Mendapatkan P2SVpnGateway yang ada di bawah VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzP2sVpnGateway [-ResourceGroupName <String>] [-Name <String>] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzP2sVpnGateway** memungkinkan Anda mendapatkan P2SVpnGateway yang sudah ada di bawah VirtualHub.
+Cmdlet **Get-AzP2sVpnGateway** memungkinkan Anda mendapatkan P2SVpnGateway yang ada di bawah VirtualHub.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ P2SConnectionConfigurations    : [
                                  ]
 ```
 
-Cmdlet **Get-AzP2sVpnGateway** memungkinkan Anda mendapatkan P2SVpnGateway yang sudah ada di bawah VirtualHub yang digunakan untuk konektivitas situs Point to.
+Cmdlet **Get-AzP2sVpnGateway** memungkinkan Anda mendapatkan P2SVpnGateway yang ada di bawah VirtualHub yang digunakan untuk konektivitas Titik ke situs.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -135,11 +138,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

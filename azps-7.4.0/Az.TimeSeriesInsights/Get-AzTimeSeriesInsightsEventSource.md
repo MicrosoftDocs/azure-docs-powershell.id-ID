@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 88c2ab606e428c3b766ac7619bb9d8392bea093d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 37e5a0e3d870cb58ca35e782b1ee53bb323a1cc0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222129"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668320"
 ---
 # Get-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Mendapatkan sumber kejadian dengan nama yang ditentukan dalam lingkungan yang ditentukan.
+Mendapatkan sumber peristiwa dengan nama yang ditentukan di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightseventsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzTimeSeriesInsightsEventSource -EnvironmentName <String> -ResourceGroupName
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzTimeSeriesInsightsEventSource -EnvironmentName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity> [
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber kejadian dengan nama yang ditentukan dalam lingkungan yang ditentukan.
+Mendapatkan sumber peristiwa dengan nama yang ditentukan di lingkungan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua sumber kejadian di bawah lingkungan yang ditentukan
+### Contoh 1: Mencantumkan semua sumber peristiwa di bawah lingkungan yang ditentukan
 ```powershell
 Get-AzTimeSeriesInsightsEventSource -ResourceGroupName testgroup -EnvironmentName tsitest001
 ```
@@ -76,9 +79,9 @@ TimestampPropertyName :
 Type                  : Microsoft.TimeSeriesInsights/Environments/EventSources
 ```
 
-Perintah ini mencantumkan semua sumber kejadian di bawah lingkungan tertentu.
+Perintah ini mencantumkan semua sumber peristiwa di bawah lingkungan yang ditentukan.
 
-### Contoh 2: Dapatkan sumber kejadian tertentu menurut nama
+### Contoh 2: Mendapatkan sumber peristiwa tertentu berdasarkan nama
 ```powershell
 Get-AzTimeSeriesInsightsEventSource -ResourceGroupName testgroup -EnvironmentName tsitest001 -Name iots001
 ```
@@ -97,9 +100,9 @@ TimestampPropertyName :
 Type                  : Microsoft.TimeSeriesInsights/Environments/EventSources
 ```
 
-Perintah ini mendapatkan sumber kejadian tertentu.
+Perintah ini mendapatkan sumber peristiwa tertentu.
 
-### Contoh 3: Mendapatkan sumber kejadian tertentu menurut objek
+### Contoh 3: Mendapatkan sumber peristiwa tertentu menurut objek
 ```powershell
 $es = Get-AzTimeSeriesInsightsEventSource -ResourceGroupName tsi-test-i01k5l -EnvironmentName tsi-envv8u56x -Name tsi-esrfyi9h
 Get-AzTimeSeriesInsightsEventSource -InputObject $es
@@ -119,7 +122,7 @@ TimestampPropertyName :
 Type                  : Microsoft.TimeSeriesInsights/Environments/EventSources
 ```
 
-Perintah ini mendapatkan sumber kejadian tertentu.
+Perintah ini mendapatkan sumber peristiwa tertentu.
 
 ## PARAMETERS
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -168,8 +171,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+### -Name
+Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -236,9 +239,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
+  - `[ReferenceDataSetName <String>]`: Nama himpunan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 

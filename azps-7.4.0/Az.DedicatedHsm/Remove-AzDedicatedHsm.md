@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Remove-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Remove-AzDedicatedHsm.md
-ms.openlocfilehash: 177a1540e9d9f86bb60e73b82a5457873110afe1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3311117498f203145b94e3f82d13781be6c6769
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143317583"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675898"
 ---
 # Remove-AzDedicatedHsm
 
 ## SYNOPSIS
 Menghapus Azure Dedicated HSM yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/remove-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,26 +39,26 @@ Menghapus Azure Dedicated HSM yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus HSM Khusus menurut nama
+### Contoh 1: Menghapus Dedicated HSM menurut nama
 ```powershell
 Remove-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName lucas-manual-test
 
 ```
 
-Commnad ini menghapus modul keamanan perangkat keras (HSM) menurut nama.
+Commnad ini menghapus modul keamanan perangkat keras (HSM) berdasarkan nama.
 
-### Contoh 2: Menghapus HSM Khusus menurut objek
+### Contoh 2: Menghapus Azure Dedicated HSM menurut objek
 ```powershell
 $hsm = Get-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName dedicatedhsm-rg-n359cz
 Remove-AzDedicatedHsm -InputObject  $hsm
 ```
 
-Commnad ini menghapus HSM Khusus menurut objek.
+Commnad ini menghapus Dedicated HSM menurut objek.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama HSM khusus untuk dihapus
+### -Name
+Nama HSM khusus yang akan dihapus
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -175,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -230,7 +233,7 @@ INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya berada.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azca
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzCapacityReservationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzCapacityReservationGroup.md
-ms.openlocfilehash: 0d427a7cd902e957a28b80789a3259ceedc1080a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b93fb51459412bd002024157753779e75d8d45bb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810162"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637172"
 ---
 # Get-AzCapacityReservationGroup
 
 ## SYNOPSIS
 Mendapatkan properti Grup Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azcapacityreservationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCapacityReservationGroup -ResourceId <String> [-InstanceView] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCapacityReservationGroup** mendapatkan properti sumber daya Cadangan Kapasitas dari Grup Reservasi Kapasitas
+Cmdlet **Get-AzCapacityReservationGroup** mendapatkan properti sumber daya Reservasi Kapasitas dari Grup Reservasi Kapasitas
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzCapacityReservationGroup** mendapatkan properti sumber daya Cadan
 Get-AzCapacityReservationGroup -ResourceGroupName $rgname -Name "CRGroup1" -InstanceView
 ```
 
-Tindakan ini akan mengambil Grup Cadangan Kapasitas bernama "CRGroup1" dengan informasi tampilan instansnya.
+Ini akan mengambil Grup Reservasi Kapasitas bernama "CRGroup1" dengan informasi tampilan instansnya.
 
 ### Contoh 2
 ```powershell
 Get-AzCapacityReservationGroup -ResourceGroupName $rgname
 ```
 
-Tindakan ini akan mengambil semua informasi Grup Reservasi Kapasitas dari grup sumber daya.
+Ini akan mengambil semua informasi Grup Reservasi Kapasitas dari grup sumber daya.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama grup reservasi kapasitas.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

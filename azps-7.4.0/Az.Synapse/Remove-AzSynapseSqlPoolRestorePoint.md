@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: 8736feb60645de38efff123b2300db8dfbe2ef4e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7b3fe8bacff2ef5a193e2b9858d9bf1f787c5ee7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222368"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666628"
 ---
 # Remove-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
-Menghapus Analitik Synapse SQL titik pemulihan kumpulan.
+Menghapus titik pemulihan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Remove-AzSynapseSqlPoolRestorePoint -ResourceId <String> [-PassThru] [-AsJob] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** secara permanen menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan.
+Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** menghapus titik pemulihan kumpulan SQL Azure Synapse Analytics secara permanen.
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPoo
 $pool | Remove-AzSynapseSqlPoolRestorePoint -Name ContosoSqlPoolRestorePointCreationDate
 ```
 
-Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui pipeline.
+Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui alur.
 
 ### Contoh 3
 ```powershell
@@ -71,7 +74,7 @@ $points = Get-AzSynapseSqlPoolRestorePoint -WorkspaceName ContosoWorkspace -Name
 $points[index] | Remove-AzSynapseSqlPoolRestorePoint
 ```
 
-Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui pipeline.
+Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui alur.
 
 ### Contoh 4
 ```powershell
@@ -83,7 +86,7 @@ Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan deng
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL objek input waktu pembuatan titik pemulihan kumpulan, biasanya melewati pipeline.
+SQL objek input waktu pembuatan titik pemulihan kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSRestorePoint
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Synapse SQL pool.
+### -Name
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya Synapse SQL Pool.
+Pengidentifikasi sumber daya Kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointCreationDate
-Nama Synapse SQL Restore Point Creation Date .
+Nama Synapse SQL Tanggal Pembuatan Titik Pemulihan .
 
 ```yaml
 Type: System.DateTime
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-Objek input Sql Pool, biasanya melewati pipeline.
+Objek input Kumpulan Sql, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -232,7 +235,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -247,8 +250,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

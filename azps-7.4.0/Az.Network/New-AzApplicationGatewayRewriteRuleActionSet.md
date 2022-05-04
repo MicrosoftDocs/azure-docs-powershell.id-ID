@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleActionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleActionSet.md
-ms.openlocfilehash: c6fe62af3646c66876a9729c96e11477e724eaaf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f5938f82aacdb8166570b007ed7d51c2ee7c214f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743085"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650686"
 ---
 # New-AzApplicationGatewayRewriteRuleActionSet
 
 ## SYNOPSIS
-Membuat rangkaian tindakan penulisan ulang aturan untuk gateway aplikasi.
+Membuat kumpulan tindakan aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleactionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **New-AzApplicationGatewayRewriteRuleActionSet** membuat kumpulan tindaka
 $action = New-AzApplicationGatewayRewriteRuleActionSet -ResponseHeaderConfiguration $hc -UrlConfiguration $urlConfiguration
 ```
 
-Perintah ini membuat kumpulan tindakan penulisan ulang aturan dan menyimpan hasil dalam variabel bernama $action.
+Perintah ini membuat kumpulan tindakan aturan penulisan ulang dan menyimpan hasilnya dalam variabel bernama $action.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -UrlConfiguration
-Konfigurasi Url untuk kumpulan tindakan
+Konfigurasi Url untuk set tindakan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayUrlConfiguration
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

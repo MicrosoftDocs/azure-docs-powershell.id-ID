@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSize.md
-ms.openlocfilehash: 84f76830daa6ea08fc5c7ba1ad7d45da9578a7e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85b6e23bd5f202cc7a63f63084159e9dae7b65b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809802"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599864"
 ---
 # Get-AzVMSize
 
 ## SYNOPSIS
-Dapatkan ukuran mesin virtual yang tersedia.
+Mendapatkan ukuran komputer virtual yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmsize) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,36 +41,36 @@ Get-AzVMSize [-ResourceGroupName] <String> [-VMName] <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMSize** mendapatkan ukuran mesin virtual yang tersedia.
+Cmdlet **Get-AzVMSize** mendapatkan ukuran komputer virtual yang tersedia.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ukuran mesin virtual untuk lokasi
+### Contoh 1: Mendapatkan ukuran komputer virtual untuk lokasi
 ```powershell
 Get-AzVMSize -Location "Central US"
 ```
 
-Perintah ini mendapatkan ukuran yang tersedia untuk mesin virtual di lokasi yang ditentukan.
+Perintah ini mendapatkan ukuran yang tersedia untuk komputer virtual di lokasi yang ditentukan.
 
-### Contoh 2: Dapatkan ukuran untuk rangkaian ketersediaan
+### Contoh 2: Mendapatkan ukuran untuk set ketersediaan
 ```powershell
 Get-AzVMSize -ResourceGroupName "ResourceGroup03" -AvailabilitySetName "AvailabilitySet17"
 ```
 
-Perintah ini mendapatkan ukuran yang tersedia untuk mesin virtual yang dapat Anda sebarkan dalam kumpulan ketersediaan bernama AvailabilitySet17.
+Perintah ini mendapatkan ukuran yang tersedia untuk komputer virtual yang dapat Anda sebarkan dalam set ketersediaan bernama AvailabilitySet17.
 
-### Contoh 3: Dapatkan ukuran untuk mesin virtual yang sudah ada
+### Contoh 3: Mendapatkan ukuran untuk komputer virtual yang ada
 ```powershell
 Get-AzVMSize -ResourceGroupName "ResourceGroup03" -VMName "VirtualMachine12"
 ```
 
-Perintah ini mendapatkan ukuran yang tersedia untuk mesin virtual yang sudah ada bernama VirtualMachine12.
-Anda dapat mengubah ukuran mesin virtual ini ke ukuran yang didapatkan perintah ini.
+Perintah ini mendapatkan ukuran yang tersedia untuk komputer virtual yang ada bernama VirtualMachine12.
+Anda dapat mengubah ukuran komputer virtual ini ke ukuran yang didapat perintah ini.
 
 ## PARAMETERS
 
 ### -AvailabilitySetName
-Menentukan nama Kumpulan Ketersediaan di mana cmdlet ini mendapatkan ukuran mesin virtual yang tersedia.
+Menentukan nama Set Ketersediaan yang cmdletnya mendapatkan ukuran komputer virtual yang tersedia.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi di mana cmdlet ini mendapatkan ukuran mesin virtual yang tersedia.
+Menentukan lokasi di mana cmdlet ini mendapatkan ukuran komputer virtual yang tersedia.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual yang cmdlet ini mendapatkan ukuran mesin virtual yang tersedia untuk mengubah ukuran.
+Menentukan nama komputer virtual yang cmdlet ini mendapatkan ukuran komputer virtual yang tersedia untuk mengubah ukuran.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -156,6 +159,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 

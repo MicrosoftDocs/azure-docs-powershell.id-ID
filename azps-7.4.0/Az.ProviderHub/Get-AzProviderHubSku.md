@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
-ms.openlocfilehash: c7d3085d46737bf9baa9d212e5bc4777c9599a2a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: db66bd0b46a5261dc8faa62f8b044f1fb0777a37
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143278235"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584966"
 ---
 # Get-AzProviderHubSku
 
 ## SYNOPSIS
-Mendapatkan detail sku untuk tipe sumber daya dan nama sku tertentu.
+Mendapatkan detail sku untuk jenis sumber daya dan nama sku yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzProviderHubSku -ProviderNamespace <String> -ResourceType <String> [-Subscr
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzProviderHubSku -ProviderNamespace <String> -ResourceType <String> -Sku <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -49,7 +52,7 @@ Get-AzProviderHubSku -NestedResourceTypeFirst <String> -NestedResourceTypeSecond
  [<CommonParameters>]
 ```
 
-### List3
+### Daftar3
 ```
 Get-AzProviderHubSku -NestedResourceTypeFirst <String> -NestedResourceTypeSecond <String>
  -NestedResourceTypeThird <String> -ProviderNamespace <String> -ResourceType <String>
@@ -57,7 +60,7 @@ Get-AzProviderHubSku -NestedResourceTypeFirst <String> -NestedResourceTypeSecond
 ```
 
 ## DESCRIPTION
-Mendapatkan detail sku untuk tipe sumber daya dan nama sku tertentu.
+Mendapatkan detail sku untuk jenis sumber daya dan nama sku yang diberikan.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ testResourceType            Microsoft.ProviderHub/providerRegistrations/skus
 
 Dapatkan definisi SKU sumber daya.
 
-### Contoh 2: Dapatkan definisi SKU tipe sumber daya bertumpuk.
+### Contoh 2: Dapatkan definisi SKU jenis sumber daya berlapis.
 ```powershell
 Get-AzProviderHubSku -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType/nestedResourceType" -Sku "default"
 ```
@@ -85,7 +88,7 @@ Name                                        Type
 testResourceType/nestedResourceType         Microsoft.ProviderHub/providerRegistrations/skus
 ```
 
-Dapatkan definisi SKU tipe sumber daya bertumpuk.
+Dapatkan definisi SKU jenis sumber daya berlapis.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -NestedResourceTypeFirst
-Tipe sumber daya turunan pertama.
+Jenis sumber daya anak pertama.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -NestedResourceTypeSecond
-Tipe sumber daya anak kedua.
+Jenis sumber daya anak kedua.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -NestedResourceTypeThird
-Tipe sumber daya anak ketiga.
+Jenis sumber daya anak ketiga.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The SKU.
+SKU- nya.
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -246,12 +249,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
-  - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
-  - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
+  - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
+  - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.
+  - `[NestedResourceTypeThird <String>]`: Jenis sumber daya anak ketiga.
+  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
-  - `[ResourceType <String>]`: Tipe sumber daya.
+  - `[ResourceType <String>]`: Jenis sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.
   - `[Sku <String>]`: SKU.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 185f75b9416accb3f512f84b9881f57e46ba4ebf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7b8dd562695bdfccff0e5365fa171c03396a9bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749160"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682212"
 ---
 # New-AzDataLakeStoreAccount
 
 ## SYNOPSIS
-Membuat akun Baru Penyimpanan Data Lake.
+Membuat akun Data Lake Store baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/new-azdatalakestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzDataLakeStoreAccount [-ResourceGroupName] <String> [-Name] <String> [-Loca
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataLakeStoreAccount** membuat akun Baru Data Lake Store.
+Cmdlet **New-AzDataLakeStoreAccount** membuat akun Data Lake Store baru.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Cmdlet **New-AzDataLakeStoreAccount** membuat akun Baru Data Lake Store.
 New-AzDataLakeStoreAccount -Name "ContosoADL" -ResourceGroupName "ContosoOrg" -Location "East US 2"
 ```
 
-Perintah ini membuat akun Data Lake Store bernama ContosoADL untuk lokasi AS Timur 2.
+Perintah ini membuat akun Data Lake Store bernama ContosoADL untuk lokasi US Timur 2.
 
 ## PARAMETERS
 
@@ -164,7 +167,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun yang akan dibuat.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan tag sebagai pasangan nilai kunci.
+Menentukan tag sebagai pasangan kunci-nilai.
 Anda dapat menggunakan tag untuk mengidentifikasi akun Data Lake Store dari sumber daya Azure lainnya.
 
 ```yaml
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -239,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 

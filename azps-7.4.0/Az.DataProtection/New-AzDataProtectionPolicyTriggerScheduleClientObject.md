@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTriggerScheduleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTriggerScheduleClientObject.md
-ms.openlocfilehash: 6f5c761018d660132c111da93c97aec40d924336
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c6decc3e17c6e15d627780abc92445721946842a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874008"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664954"
 ---
 # New-AzDataProtectionPolicyTriggerScheduleClientObject
 
 ## SYNOPSIS
 Membuat objek Jadwal baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytriggerscheduleclientobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Perintah ini membuat scheudle per jam untuk Aturan Azure Backup.
 ## PARAMETERS
 
 ### -IntervalCount
-Frekuensi cadangan.
+Frekuensi pencadangan.
 
 ```yaml
 Type: System.Int32
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleDays
-Hari-hari di mana pencadangan akan dijadwalkan.
+Hari di mana pencadangan akan dijadwalkan.
 
 ```yaml
 Type: System.DateTime[]
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

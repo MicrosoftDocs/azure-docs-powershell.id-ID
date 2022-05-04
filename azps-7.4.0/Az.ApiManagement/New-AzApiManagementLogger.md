@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementLogger.md
-ms.openlocfilehash: 0a7b1030e7d2400b4f17f064a816163835750792
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0ecc058b215378fb4fe951f9c9f6d034a1acc86b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879624"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639277"
 ---
 # New-AzApiManagementLogger
 
 ## SYNOPSIS
-Membuat API Management Logger.
+Membuat pencatat API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementlogger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,17 +41,17 @@ Cmdlet **New-AzApiManagementLogger** membuat Azure API Management **Logger**.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat logger
+### Contoh 1: Membuat pencatat
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementLogger -Context $apimContext -LoggerId "Logger123" -Name "ContosoSdkEventHub" -ConnectionString "Endpoint=sb://ContosoSdkEventHubs.servicebus.windows.net/;SharedAccessKeyName=SendKey;SharedAccessKey=<key>" -Description "SDK event hub logger"
 ```
 
-Perintah ini membuat logger bernama ContosoSdkEventHub menggunakan string koneksi yang ditentukan.
+Perintah ini membuat pencatat bernama ContosoSdkEventHub dengan menggunakan string koneksi yang ditentukan.
 
 ### Contoh 2
 
-Membuat API Management Logger. (autogenerasi)
+Membuat pencatat API Management. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -73,7 +76,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstrumentationKey
-Kunci Instrumentasi aplikasi Insights. Parameter ini bersifat opsional.
+Kunci Instrumentasi Insights aplikasi. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -134,9 +137,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuffered
-Menentukan apakah rekaman dalam logger dibunyikan sebelum diterbitkan.
+Menentukan apakah rekaman dalam pencatat di-buffer sebelum diterbitkan.
 Nilai defaultnya adalah $True.
-Ketika catatan dibunyikan, data dikirim ke Hub Acara setiap 15 detik, atau setiap kali buffer menerima 256 KB pesan.
+Saat rekaman di-buffer, rekaman dikirim ke Azure Event Hubs setiap 15 detik, atau setiap kali buffer menerima pesan 256 KB.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -166,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama entitas hub acara dari portal klasik Azure.
+### -Name
+Menentukan nama entitas pusat aktivitas dari portal klasik Azure.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

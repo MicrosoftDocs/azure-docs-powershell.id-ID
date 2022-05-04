@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVmssDiskEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVmssDiskEncryption.md
-ms.openlocfilehash: 71bf3a9f87dfe437fbf2f01d863c8c89db87f17b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c05582b0f5975bdfc10dbc2afa9029af1e09719f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687258"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637370"
 ---
 # Disable-AzVmssDiskEncryption
 
 ## SYNOPSIS
-Menonaktifkan enkripsi disk pada kumpulan skala VM.
+Menonaktifkan enkripsi disk pada set skala VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/disable-azvmssdiskencryption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Disable-AzVmssDiskEncryption [-ResourceGroupName] <String> [-VMScaleSetName] <St
 ```
 
 ## DESCRIPTION
-Menonaktifkan enkripsi disk pada kumpulan skala VM.
+Menonaktifkan enkripsi disk pada set skala VM.
 
 ## EXAMPLES
 
@@ -35,11 +38,11 @@ Menonaktifkan enkripsi disk pada kumpulan skala VM.
 Disable-AzVmssDiskEncryption -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Menonaktifkan enkripsi disk pada kumpulan skala VM bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
+Menonaktifkan enkripsi disk pada set skala VM bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ### Contoh 2
 
-Menonaktifkan enkripsi disk pada kumpulan skala VM. (autogenerasi)
+Menonaktifkan enkripsi disk pada set skala VM. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Disable-AzVmssDiskEncryption -ResourceGroupName 'Group001' -VMScaleSetName 'VMSS001' -VolumeType OS
@@ -48,7 +51,7 @@ Disable-AzVmssDiskEncryption -ResourceGroupName 'Group001' -VMScaleSetName 'VMSS
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 
 ### -ExtensionName
 Nama ekstensi.
-Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk windows VM dan AzureDiskEncryptionForLinux untuk VM Linux.
+Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk VM windows dan AzureDiskEncryptionForLinux untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -93,8 +96,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Untuk memaksa penghapusan ekstensi dari mesin virtual.
+### -Force
+Untuk memaksa penghapusan ekstensi dari komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeType
-Tipe volume (OS atau Data) untuk melakukan operasi enkripsi
+Jenis volume (OS atau Data) untuk melakukan operasi enkripsi
 
 ```yaml
 Type: System.String
@@ -169,8 +172,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

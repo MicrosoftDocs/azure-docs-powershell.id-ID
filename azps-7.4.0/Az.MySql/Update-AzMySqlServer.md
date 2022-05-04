@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
-ms.openlocfilehash: 7d8f21ccb73424fa61a2bc04b09aacd056a2df35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8e8719476c3a566272179cbbf4922421ccb89be1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680310"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650866"
 ---
 # Update-AzMySqlServer
 
 ## SYNOPSIS
-Memperbarui server yang sudah ada.
+Memperbarui server yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzMySqlConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzMySqlConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,13 +44,13 @@ Update-AzMySqlServer -InputObject <IMySqlIdentity> [-AdministratorLoginPassword 
 ```
 
 ## DESCRIPTION
-Memperbarui server yang sudah ada.
+Memperbarui server yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzMySqlConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzMySqlConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui server MySql menurut grup sumber daya dan nama server
+### Contoh 1: Memperbarui server MySql menurut grup sumber daya dan nama server
 ```powershell
 Update-AzMySqlServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -SslEnforcement Disabled
 ```
@@ -58,9 +61,9 @@ Name          Location AdministratorLogin Version StorageProfileStorageMb SkuNam
 mysql-test    eastus   mysql_test         5.7     5120                    GP_Gen5_4 GeneralPurpose Disabled
 ```
 
-Cmdlet ini memperbarui server MySql menurut grup sumber daya dan nama server.
+Cmdlet ini memperbarui server MySql berdasarkan grup sumber daya dan nama server.
 
-### Contoh 2: Update MySql server by identity.
+### Contoh 2: Perbarui server MySql berdasarkan identitas.
 ```powershell
 Get-AzMySqlServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test | Update-AzMySqlServer -BackupRetentionDay 23 -StorageMb 10240
 ```
@@ -71,12 +74,12 @@ Name          Location AdministratorLogin Version StorageProfileStorageMb SkuNam
 mysql-test    eastus   mysql_test         5.7     10240                   GP_Gen5_4 GeneralPurpose Disabled
 ```
 
-Cmdlet ini memperbarui server MySql menurut identitas.
+Cmdlet ini memperbarui server MySql berdasarkan identitas.
 
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
-Kata sandi log masuk administrator.
+Kata sandi login administrator.
 
 ```yaml
 Type: System.Security.SecureString
@@ -106,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Mencadangkan hari penyimpanan untuk server.
-Hitungan hari adalah antara 7 dan 35.
+Hari retensi cadangan untuk server.
+Jumlah hari adalah antara 7 dan 35.
 
 ```yaml
 Type: System.Int32
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Parameter Identitas.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -168,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tingkat + family + core, misalnya B_Gen4_1, GP_Gen5_8.
+Nama sku, biasanya, tingkat + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas peningkatan/keluar skala, mewakili unit komputasi server.
+Kapasitas peningkatan/peluasan skala, mewakili unit komputasi server.
 
 ```yaml
 Type: System.Int32
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkat SKU tertentu, misalnya Basic.
+Tingkat SKU tertentu, misalnya Dasar.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.SkuTier
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslEnforcement
-Aktifkan penerapan ssl atau tidak saat tersambung ke server.
+Aktifkan penegakan ssl atau tidak saat tersambung ke server.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.SslEnforcementEnum
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks yang diperbolehkan untuk server.
+Penyimpanan maksimum yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Metadata khusus aplikasi dalam bentuk pasangan nilai kunci.
+Metadata khusus aplikasi dalam bentuk pasangan kunci-nilai.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -364,8 +367,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -396,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -422,7 +425,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

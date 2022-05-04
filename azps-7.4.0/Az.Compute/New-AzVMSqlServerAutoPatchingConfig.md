@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoPatchingConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoPatchingConfig.md
-ms.openlocfilehash: 64518555942f84d87a495fd611e4618e64b38542
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d2cfe024adc165b60c022fb8c3ff471b82592d1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231021"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639044"
 ---
 # New-AzVMSqlServerAutoPatchingConfig
 
 ## SYNOPSIS
-Membuat objek konfigurasi untuk patch otomatis pada mesin virtual.
+Membuat objek konfigurasi untuk patching otomatis pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautopatchingconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzVMSqlServerAutoPatchingConfig [-Enable] [-DayOfWeek <String>] [-Maintenanc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVMSqlServerAutoPatchingConfig** membuat objek konfigurasi untuk patching otomatis pada mesin virtual.
+Cmdlet **New-AzVMSqlServerAutoPatchingConfig** membuat objek konfigurasi untuk patching otomatis pada komputer virtual.
 
 ## EXAMPLES
 
@@ -45,8 +48,8 @@ PatchCategory                 : Important
 
 Perintah ini membuat objek konfigurasi untuk patching.
 Perintah menentukan hari dalam seminggu dan menentukan jendela pemeliharaan.
-Konfigurasi ini memungkinkan patch yang menggunakan nilai ini.
-Perintah menyimpan hasil dalam variabel $AutoBackupConfig.
+Konfigurasi ini memungkinkan patching yang menggunakan nilai-nilai ini.
+Perintah menyimpan hasilnya dalam variabel $AutoBackupConfig.
 Anda dapat menentukan item konfigurasi ini untuk cmdlet lain, seperti cmdlet Set-AzVMSqlServerExtension.
 
 ## PARAMETERS
@@ -54,14 +57,14 @@ Anda dapat menentukan item konfigurasi ini untuk cmdlet lain, seperti cmdlet Set
 ### -DayOfWeek
 Menentukan hari dalam seminggu ketika pembaruan harus diinstal.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Minggu
+- Hari Minggu
 - Senin
 - Selasa
 - Rabu
 - Kamis
 - Jumat
 - Sabtu
-- Everyday
+- Setiap hari
 
 ```yaml
 Type: System.String
@@ -77,9 +80,9 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa patch otomatis untuk mesin virtual diaktifkan.
-Jika Anda mengaktifkan patch otomatis cmdlet menempatkan Windows Update ke mode interaktif.
-Jika Anda menonaktifkan patch otomatis, pengaturan Windows Update tidak berubah.
+Menunjukkan bahwa patching otomatis untuk komputer virtual diaktifkan.
+Jika Anda mengaktifkan patching otomatis cmdlet menempatkan Windows Update ke mode interaktif.
+Jika Anda menonaktifkan patching otomatis, pengaturan Windows Update tidak berubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 
 ### -MaintenanceWindowDuration
 Menentukan durasi, dalam menit, dari jendela pemeliharaan.
-Patch otomatis menghindari melakukan tindakan yang dapat mempengaruhi ketersediaan mesin virtual di luar jendela tersebut.
+Patching otomatis menghindari melakukan tindakan yang dapat memengaruhi ketersediaan komputer virtual di luar jendela tersebut.
 Tentukan kelipatan 30 menit.
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceWindowStartingHour
-Menentukan jam hari ketika jendela pemeliharaan dimulai.
+Menentukan jam dalam sehari saat jendela pemeliharaan dimulai.
 Waktu ini menentukan kapan pembaruan mulai diinstal.
 
 ```yaml
@@ -143,11 +146,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

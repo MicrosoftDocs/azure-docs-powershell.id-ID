@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxPerformanceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxPerformanceCollection.md
-ms.openlocfilehash: 6a4fea1c319fdfd820392ed943b7ffd47087e712
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c815563308a469c77c699ca5e829872a61e2a8f2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676314"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610466"
 ---
 # Disable-AzOperationalInsightsLinuxPerformanceCollection
 
 ## SYNOPSIS
 Menghentikan pengumpulan penghitung kinerja dari komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/disable-azoperationalinsightslinuxperformancecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Disable-AzOperationalInsightsLinuxPerformanceCollection [-Workspace] <PSWorkspac
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzOperationalInsightsLinuxPerformanceCollection** menghentikan pengumpulan penghitung kinerja dari komputer Linux yang terhubung dalam ruang kerja.
+Cmdlet **Disable-AzOperationalInsightsLinuxPerformanceCollection** menghentikan pengumpulan penghitung kinerja dari komputer Linux yang terhubung di ruang kerja.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ ResourceId        : /subscriptions/xxxx-xxxx-xxxx-xxxx-xxxx/resourceGroups/test-
 Kind              : LinuxPerformanceCollection
 Properties        : {"state":"Disabled"}
 ```
-Menghentikan pengumpulan penghitung kinerja dari komputer Linux yang terhubung dalam ruang kerja.
+Menghentikan pengumpulan penghitung kinerja dari komputer Linux yang terhubung di ruang kerja.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja tempat cmdlet ini beroperasi.
 
 ```yaml
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -160,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubNetworkRuleSet.md
-ms.openlocfilehash: d81e5710b52e33ee5821e90dd2f92b187f30d11c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc9702b7d97552bbfe9cb05e7548807e01996b5d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941545"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575984"
 ---
 # Get-AzEventHubNetworkRuleSet
 
 ## SYNOPSIS
-Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure saat ini.
+Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzEventHubNetworkRuleSet [-ResourceId] <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure saat ini.
+Mendapatkan detail Event Hubs NetworkruleSet namespace layanan di langganan Azure saat ini.
 
 ## EXAMPLES
 
@@ -47,21 +50,21 @@ Mendapatkan detail Event Hubs NetworkruleSet ruang nama dalam langganan Azure sa
 Get-AzEventHubNetworkRuleSet -ResourceGroupName  v-ajnavtest -Namespace Eventhub-Namespace1-1375
 ```
 
-Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan parameter ResourceGroup dan Namespace. 
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan parameter ResourceGroup dan Namespace. 
 
 ### Contoh 2
 ```powershell
 Get-AzEventHubNetworkRuleSet -Namespace Eventhub-Namespace1-2389
 ```
 
-Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan Namespace yang ada dalam langganan saat ini.
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Namespace layanan yang ada di langganan saat ini.
 
 ### Contoh 3
 ```powershell
 Get-AzEventHubNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.EventHub/namespaces/Eventhub-Namespace1-2389
 ```
 
-Dapatkan detail Event Hubs NetworkruleSet ruang nama menggunakan Id Sumber Daya ruang Nama lainnya 
+Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Id Sumber Daya namespace layanan lainnya 
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Ruang Nama
+Id Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

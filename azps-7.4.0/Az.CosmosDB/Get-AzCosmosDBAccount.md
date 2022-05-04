@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBAccount.md
-ms.openlocfilehash: 6bd70bb4213cc7cea76b00aae1974166bf31a613
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: efd931c707a29c8e1e0809421f9239485d8bdfe1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943993"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601556"
 ---
 # Get-AzCosmosDBAccount
 
 ## SYNOPSIS
 Dapatkan Akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzCosmosDBAccount -ResourceId <String> [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBAccount** mendapatkan daftar semua akun CosmosDB yang sudah ada untuk ResourceGroupName tertentu dan mendapatkan satu akun CosmosDB untuk ResourceGroupName dan AccountName tertentu.
+Cmdlet **Get-AzCosmosDBAccount** mendapatkan daftar semua akun CosmosDB yang ada untuk ResourceGroupName tertentu dan mendapatkan satu akun CosmosDB untuk ResourceGroupName dan AccountName tertentu.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ NetworkAclBypass              : None
 NetworkAclBypassResourceIds   : {}
 ```
 
-Dapatkan akun database CosmosDB dengan database namaAccountName di ResourceGroup resourceGroupName.
+Dapatkan akun database CosmosDB dengan nama databaseAccountName di ResourceGroup resourceGroupName.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -126,11 +129,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

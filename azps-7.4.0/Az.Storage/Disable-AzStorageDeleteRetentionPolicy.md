@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageDeleteRetentionPolicy.md
-ms.openlocfilehash: 1062aa5ab060532acd2ada637d5c1f206646c01e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 47e30b24f988b997908aaefa32e31cf576dc9e32
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171045"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618242"
 ---
 # Disable-AzStorageDeleteRetentionPolicy
 
 ## SYNOPSIS
-Nonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
+Nonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstoragedeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,20 +28,20 @@ Disable-AzStorageDeleteRetentionPolicy [-PassThru] [-Context <IStorageContext>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
+Cmdlet **Disable-AzStorageDeleteRetentionPolicy** menonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Blob
+### Contoh 1: Menonaktifkan kebijakan penyimpanan penghapusan untuk Blob service
 ```
 C:\PS>Disable-AzStorageDeleteRetentionPolicy
 ```
 
-Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk layanan Blob.
+Perintah ini menonaktifkan kebijakan penyimpanan penghapusan untuk Blob service.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -83,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

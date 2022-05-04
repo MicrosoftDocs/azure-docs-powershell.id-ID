@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
-ms.openlocfilehash: ef9827210952d88ea9c5ff83bf9fcbfb4176b0ee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7664b7197b0da41a528fe50671e8b9a916adfb44
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800334"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603788"
 ---
 # Add-AzServiceFabricNodeType
 
 ## SYNOPSIS
-Tambahkan tipe node baru ke kluster yang sudah ada.
+Tambahkan jenis node baru ke kluster yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricnodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Add-AzServiceFabricNodeType [-ResourceGroupName] <String> [-Name] <String> -Capa
 ```
 
 ## DESCRIPTION
-Tambahkan tipe node baru ke kluster yang sudah ada.
+Tambahkan jenis node baru ke kluster yang ada.
 
 ## EXAMPLES
 
@@ -38,12 +41,12 @@ $pwd = ConvertTo-SecureString -String 'Password$123456' -AsPlainText -Force
 Add-AzServiceFabricNodeType -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -NodeType 'n2' -Capacity 5 -VmUserName 'adminName' -VmPassword $pwd
 ```
 
-Perintah ini akan menambahkan NodeType baru 'n2' dengan kapasitas 5, dan nama admin vm adalah 'adminName'.
+Perintah ini akan menambahkan NodeType 'n2' baru dengan kapasitas 5, dan nama admin vm adalah 'adminName'.
 
 ### Contoh 2
-Tipe simpul baru akan menjadi tipe simpul utama dan akan menyalin referensi gambar VM dari Tipe Node VMSS yang ditemukan sebelumnya pertama, mengganti ImageSku dengan 18.04-LTS.
-- Referensi gambar tipe simpul yang sudah ada: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 16.04-LTS, ImageVersion: latest
-- Referensi gambar tipe simpul baru: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 18.04-LTS, ImageVersion: latest
+Jenis node baru akan menjadi jenis node utama dan akan menyalin referensi gambar VM dari Node Type VMSS pertama yang ditemukan sebelumnya, mengganti imageSku dengan 18.04-LTS.
+- Referensi gambar jenis node yang ada: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 16.04-LTS, ImageVersion: terbaru
+- Referensi gambar jenis node baru: ImagePublisher: Canonical, ImageOffer: UbuntuServer, ImageSku: 18.04-LTS, ImageVersion: terbaru
 
 
 ```powershell
@@ -54,7 +57,7 @@ $nodeTypeName = "n3"
 Add-AzServiceFabricNodeType -ResourceGroupName $resourceGroup -Name $clusterName -NodeType $nodeTypeName -Capacity 5 -VmUserName 'adminName' -VmPassword $pwd -DurabilityLevel Silver -Verbose -VMImageSku 18.04-LTS -IsPrimaryNodeType $true
 ```
 
-Perintah ini akan menambahkan NodeType baru 'n3' dengan kapasitas 5, nama admin vm adalah 'adminName', Tingkat ketahanan Silver (pekerjaan penyewa dan infrastruktur ditengahi dengan aman menggunakan Layanan Infrastruktur), dan VMSS dibuat menggunakan profil VM versi penerbit-penawaran-sku dengan sku berganti ke '18.04-LTS'.
+Perintah ini akan menambahkan NodeType 'n3' baru dengan kapasitas 5, nama admin vm adalah 'adminName', Durability level Silver (pekerjaan penyewa dan infrastruktur di-broker dengan aman menggunakan Infrastructure Service), dan VMSS dibuat menggunakan profil gambar VM publisher-offer-sku-version dengan sku yang dipertukarkan dengan '18.04-LTS'.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DurabilityLevel
-Tentukan tingkat ketahanan NodeType.
+Tentukan tingkat durabilitas NodeType.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.DurabilityLevel
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsPrimaryNodeType
-Tentukan apakah tipe simpul adalah tipe simpul utama. Tipe simpul utama mungkin memiliki simpul benih dan layanan sistem.
+Tentukan apakah jenis node adalah jenis node utama. Jenis node primer mungkin memiliki node seed dan layanan sistem.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -119,7 +122,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Nama tipe simpul
+Nama jenis node
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Vm Sku Tier
+Tingkat Sku Vm
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -VmImagesku
+### -VMImageSku
 Tentukan Sku referensi gambar VM.
 
 ```yaml
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmUserName
-Nama pengguna untuk pembuatan log ke Vm
+Nama pengguna untuk pengelogan ke Vm
 
 ```yaml
 Type: System.String
@@ -284,8 +287,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

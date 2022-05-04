@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageShare.md
-ms.openlocfilehash: 6fc3560b270d689522a8b709ccb54d9f301eb11d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7017b7fece2ef7682a194c5f59887cc3f1770dac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057844"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668770"
 ---
 # Get-AzRmStorageShare
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Storage berbagi file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Cmdlet **Get-AzRmStorageShare** mendapatkan atau mencantumkan Storage berbagi fi
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan berbagi file Storage dengan nama akun Storage dan bagikan nama
+### Contoh 1: Dapatkan berbagi file Storage dengan nama akun Storage dan nama berbagi
 ```
 PS C:\>Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare"
 
@@ -65,9 +68,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare  5120
 ```
 
-Perintah ini mendapatkan Storage berbagi file dengan nama akun Storage dan nama berbagi.
+Perintah ini mendapatkan berbagi file Storage dengan nama akun Storage dan nama berbagi.
 
-### Contoh 2: Mencantumkan semua Storage berbagi file akun Storage
+### Contoh 2: Mencantumkan semua berbagi file Storage dari akun Storage
 ```
 PS C:\>Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount"
 
@@ -79,9 +82,9 @@ share1   5120                     TransactionOptimized
 share2   5120                     TransactionOptimized
 ```
 
-Perintah ini mencantumkan semua Storage berbagi file akun Storage dengan nama akun Storage.
+Perintah ini mencantumkan semua berbagi file Storage dari akun Storage dengan nama akun Storage.
 
-### Contoh 3: Dapatkan wadah blob Storage dengan objek akun Storage dan nama kontainer.
+### Contoh 3: Dapatkan kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 ```
 Get-AzStorageAccount -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" | Get-AzRmStorageShare -Name "myshare"
 
@@ -92,9 +95,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare  5120
 ```
 
-Perintah ini mendapatkan wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini mendapatkan kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 4: Dapatkan Storage berbagi file dengan penggunaan berbagi dalam byte
+### Contoh 4: Mendapatkan berbagi file Storage dengan penggunaan berbagi dalam byte
 ```
 PS C:\>Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -GetShareUsage
 
@@ -105,9 +108,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare  5120                                                2097152
 ```
 
-Perintah ini mendapatkan Storage berbagi file dengan nama akun Storage dan nama berbagi, serta menyertakan penggunaan berbagi dalam byte.
+Perintah ini mendapatkan berbagi file Storage dengan nama akun Storage dan nama berbagi, dan menyertakan penggunaan berbagi dalam byte.
 
-### Contoh 5: Cantumkan semua Storage berbagi file akun Storage, sertakan berbagi yang dihapus, sertakan snapshot berbagi
+### Contoh 5: Cantumkan semua Storage berbagi file dari akun Storage, sertakan berbagi yang dihapus, sertakan salinan bayangan berbagi
 ```
 PS C:\> Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -IncludeDeleted -IncludeSnapshot 
 
@@ -120,9 +123,9 @@ testshare1 5120                     TransactionOptimized
 share1     100                      TransactionOptimized True    01D61FD1FC5498B6
 ```
 
-Perintah ini mencantumkan semua file Storage yang dibagikan termasuk berbagi yang dihapus dan berbagi snapshot.
+Perintah ini mencantumkan semua berbagi file Storage menyertakan berbagi yang dihapus dan berbagi rekam jepret.
 
-### Contoh 6: Mendapatkan snapshot berbagi tunggal
+### Contoh 6: Mendapatkan satu salinan bayangan berbagi
 ```
 PS C:\> Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "testshare1" -SnapshotTime "2021-05-10T08:04:08Z"
 
@@ -133,7 +136,7 @@ Name       QuotaGiB EnabledProtocols AccessTier           Deleted Version ShareU
 testshare1 5120                     TransactionOptimized                                 2021-05-10T08:04:08Z
 ```
 
-Perintah ini mendapatkan snapshot berbagi file tunggal dengan nama berbagi dan waktu snapshot.
+Perintah ini mendapatkan satu rekam jepret berbagi file dengan nama berbagi dan waktu rekam jepret.
 
 ## PARAMETERS
 
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -GetShareUsage
-Tentukan parameter ini untuk mendapatkan Penggunaan Berbagi di Byte.
+Tentukan parameter ini untuk mendapatkan Penggunaan Berbagi dalam Byte.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDeleted
-Sertakan berbagi yang dihapus, secara default berbagi daftar tidak akan menyertakan berbagi yang dihapus
+Menyertakan berbagi yang dihapus, secara default berbagi daftar tidak akan menyertakan berbagi yang dihapus
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeSnapshot
-Sertakan bagikan snapshot, secara default berbagi daftar tidak akan menyertakan snapshot bersama.
+Sertakan salinan bayangan berbagi, secara default berbagi daftar tidak akan menyertakan salinan bayangan berbagi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,8 +200,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Bagikan Nama
+### -Name
+Nama Berbagi
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotTime
-Bagi SnapshotTime
+BagiKan SnapshotTime
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafRuleGroupOverrideObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafRuleGroupOverrideObject.md
-ms.openlocfilehash: c9b2d79f77a177f9cb07393ff2010fe725121951
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 541628c94d0f3443b5c45db8c156f17157141a4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227583"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651064"
 ---
 # New-AzFrontDoorWafRuleGroupOverrideObject
 
 ## SYNOPSIS
-Buat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafrulegroupoverrideobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorWafRuleGroupOverrideObject -RuleGroupName <String>
 ```
 
 ## DESCRIPTION
-Buat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedRuleOverride
-Daftar ganti aturan
+Daftar penggantian aturan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSAzureManagedRuleOverride[]
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupName
-Nama Grup Aturan yang menerapkan penimpaan ini
+Nama Grup Aturan yang berlaku untuk penimpaan ini
 
 ```yaml
 Type: System.String
@@ -109,11 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

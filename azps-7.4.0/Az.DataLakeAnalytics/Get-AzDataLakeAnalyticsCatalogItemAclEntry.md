@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItemAclEntry.md
-ms.openlocfilehash: ae3353d478886d54bbadb7d5eab3ee9f29cf1ab8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 38e640f372b59678ae61ad68ffe3ff985e258004
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682374"
 ---
 # Get-AzDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
-Mendapatkan entri dalam ACL item katalog atau katalog di Data Lake Analytics.
+Mendapatkan entri di ACL katalog atau item katalog di Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscatalogitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,11 +59,11 @@ Get-AzDataLakeAnalyticsCatalogItemAclEntry [-Account] <String> [-GroupOwner] -It
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsCatalogItemAclEntry** mendapatkan daftar entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog dalam Data Lake Analytics.
+Cmdlet **Get-AzDataLakeAnalyticsCatalogItemAclEntry** mendapatkan daftar entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog di Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ACL untuk katalog
+### Contoh 1: Mendapatkan ACL untuk katalog
 ```powershell
 Get-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla"
 ```
@@ -75,7 +78,7 @@ Other 00000000-0000-0000-0000-000000000000        None
 
 Perintah ini mendapatkan ACL untuk katalog akun Data Lake Analytics yang ditentukan
 
-### Contoh 2: Dapatkan entri ACL pemilik pengguna untuk katalog
+### Contoh 2: Mendapatkan entri ACL pemilik pengguna untuk katalog
 ```powershell
 Get-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -UserOwner
 ```
@@ -88,7 +91,7 @@ UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 
 Perintah ini mendapatkan entri ACL pemilik pengguna untuk katalog akun Data Lake Analytics yang ditentukan
 
-### Contoh 3: Dapatkan entri ACL pemilik grup untuk katalog
+### Contoh 3: Mendapatkan entri ACL pemilik grup untuk katalog
 ```powershell
 Get-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -GroupOwner
 ```
@@ -99,7 +102,7 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc   ReadWrite
 ```
 
-Perintah ini mendapatkan entri ACL dari pemilik grup untuk katalog akun Data Lake Analytics yang ditentukan
+Perintah ini mendapatkan entri ACL pemilik grup untuk katalog akun Data Lake Analytics yang ditentukan
 
 ### Contoh 4: Mendapatkan ACL untuk database
 ```powershell
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupOwner
-Dapatkan entri ACL katalog untuk pemilik grup
+Mendapatkan entri katalog ACL untuk pemilik grup
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe katalog atau item katalog. Nilai yang dapat diterima untuk parameter ini adalah:
+Menentukan jenis katalog atau item katalog. Nilai yang dapat diterima untuk parameter ini adalah:
 - Katalog
 - Database
 
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 
 ### -Jalur
 Menentukan jalur Data Lake Analytics item katalog atau katalog.
-Bagian jalur harus dipisahkan oleh tanda titik (.).
+Bagian-bagian jalur harus dipisahkan oleh titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserOwner
-Dapatkan entri ACL katalog untuk pemilik pengguna.
+Dapatkan entri katalog ACL untuk pemilik pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -254,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[U-SQL kini menawarkan kontrol akses tingkat database](https://github.com/Azure/AzureDataLake/blob/master/docs/Release_Notes/2016/2016_08_01/USQL_Release_Notes_2016_08_01.md#u-sql-now-offers-database-level-access-control)
+[U-SQL sekarang menawarkan kontrol akses tingkat database](https://github.com/Azure/AzureDataLake/blob/master/docs/Release_Notes/2016/2016_08_01/USQL_Release_Notes_2016_08_01.md#u-sql-now-offers-database-level-access-control)
 
 [Remove-AzDataLakeAnalyticsCatalogItemAclEntry](Remove-AzDataLakeAnalyticsCatalogItemAclEntry.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
-ms.openlocfilehash: bc80d1fda78afaf3de52f00ebd7649a5c35fd36e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 61dffcfb21283e3c932ba305e0221943bd41e6f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999055"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583697"
 ---
 # New-AzMaintenanceConfiguration
 
 ## SYNOPSIS
-Membuat atau Memperbarui catatan konfigurasi
+Membuat atau Memperbarui rekaman konfigurasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/new-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzMaintenanceConfiguration [-ResourceGroupName] <string> [-Name] <string> [-
 ```
 
 ## DESCRIPTION
-Membuat atau Memperbarui catatan konfigurasi
+Membuat atau Memperbarui rekaman konfigurasi
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Membuat konfigurasi pemeliharaan dengan lingkup Host
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Durasi
+### -Duration
 Durasi
 
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-TanggalDaluwarsa dari jadwal dalam format YYYY-MM-DD hh:mm
+ExpirationDateTime dari jadwal dalam format YYYY-MM-DD hh:mm
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstallPatchRebootSetting
-Instal Patch Opsi Boot Ulang. Nilai yang diizinkan Tidak Pernah, Jika Diperlukan, Selalu
+Pasang Opsi Reboot Patch. Nilai yang diizinkan Tidak Pernah, IfRequired, Always
 
 ```yaml
 Type: string
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxParameterPackageNameMaskToInclude
-Daftar paket yang disertakan selama operasi patch vm
+Daftar paket yang akan disertakan selama operasi patch vm
 
 ```yaml
 Type: HashSet[string]
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceScope
-Lingkup Pemeliharaan.
+Cakupan Pemeliharaan.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi pemeliharaan.
 
 ```yaml
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-The ARM Tags.
+Tag ARM.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -332,7 +335,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zona waktu
+### -Zona Waktu
 Zona waktu
 
 ```yaml
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -Visibilitas
-Visibilitas lingkup
+Visibilitas cakupan
 
 ```yaml
 Type: System.String
@@ -378,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowParameterExcludeKbRequiringReboot
-Tidak termasuk KB yang memerlukan boot ulang
+Mengecualikan KB yang memerlukan boot ulang
 
 ```yaml
 Type: bool
@@ -408,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowParameterKbNumberToInclude
-Daftar KB yang disertakan selama operasi patch vm
+Daftar KB yang akan disertakan selama operasi patch vm
 
 ```yaml
 Type: HashSet[string]
@@ -422,8 +425,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -438,7 +441,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

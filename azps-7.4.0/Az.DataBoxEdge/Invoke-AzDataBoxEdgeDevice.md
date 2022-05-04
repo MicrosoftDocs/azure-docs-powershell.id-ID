@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeDevice.md
-ms.openlocfilehash: 9f0c2adda8711c3d7a77a5a5a4e5e588bc2ab6d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 003252ca692e054d7bf568d64c6aa2c02ebe7348
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003555"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648976"
 ---
 # Invoke-AzDataBoxEdgeDevice
 
 ## SYNOPSIS
 Memanggil tindakan tertentu pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Invoke-AzDataBoxEdgeDevice -DeviceObject <PSDataBoxEdgeDevice> [-InstallUpdate] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzDataBoxEdgeDevice** meminta tindakan untuk memindai, mengunduh, dan menginstal pembaruan di perangkat Data Box Edge. Pemindaian otomatis berjalan pada perangkat setiap hari, Anda dapat memicu pemindaian secara eksplisit dengan menjalankan cmdlet ini.
+Cmdlet **Invoke-AzDataBoxEdgeDevice** memanggil tindakan untuk memindai, mengunduh, dan menginstal pembaruan pada perangkat Data Box Edge. Pemindaian otomatis berjalan pada perangkat setiap hari, Anda dapat memicu pemindaian secara eksplisit dengan menjalankan cmdlet ini.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ Invoke-AzDataBoxEdgeDevice -ResourceGroupName resourceGroupName -Name deviceName
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeDevice
@@ -170,7 +173,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Perangkat
 
 ```yaml
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScanForUpdate
-Memindai pembaruan di perangkat edge/gateway kotak data.
+Memindai pembaruan pada perangkat edge/gateway kotak data.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,8 +248,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,11 +279,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

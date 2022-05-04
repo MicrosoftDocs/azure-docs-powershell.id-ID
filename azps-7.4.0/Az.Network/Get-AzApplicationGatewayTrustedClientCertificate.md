@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: 53f2506b1148e85c6341142beb1da33136fda1fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 88350ba532a7851473d3a5ef723b62087b4051ff
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939511"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585416"
 ---
 # Get-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
 Mendapatkan rantai sertifikat CA klien tepercaya dengan nama tertentu dari Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaytrustedclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ $gw = Get-AzApplicationGateway -Name $appgwName -ResourceGroupName $resgpName
 $trustedClientCert = Get-AzApplicationGatewayTrustedClientCertificate -ApplicationGateway $gw -Name $certName
 ```
 
-Perintah pertama mendapatkan Application Gateway dan menyimpannya dalam variabel $gw. Perintah kedua mendapatkan rantai sertifikat CA klien tepercaya dengan nama tertentu dari Application Gateway.
+Perintah pertama mendapatkan Application Gateway dan menyimpannya dalam variabel $gw. Perintah kedua mendapatkan rantai sertifikat OS klien tepercaya dengan nama tertentu dari Application Gateway.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rantai sertifikat CA klien tepercaya
+### -Name
+Nama rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteDesktopProtocolFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteDesktopProtocolFile.md
-ms.openlocfilehash: c301642f7572c0c0fe095a1fd4ca7d2bc8653f84
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 582ecb868ac4c173d08a7324df320ec89403e15c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232605"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144649318"
 ---
 # Get-AzBatchRemoteDesktopProtocolFile
 
 ## SYNOPSIS
 Mendapatkan file RDP dari simpul komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchremotedesktopprotocolfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Get-AzBatchRemoteDesktopProtocolFile [[-ComputeNode] <PSComputeNode>] -Destinati
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchRemoteDesktopProtocolFile** mendapatkan file Remote Desktop Protocol (RDP) dari simpul komputasi dan menyimpannya sebagai file atau ke streaming yang disediakan pengguna.
+Cmdlet **Get-AzBatchRemoteDesktopProtocolFile** mendapatkan file Protokol Desktop Jarak Jauh (RDP) dari simpul komputasi dan menyimpannya sebagai file atau ke aliran yang disediakan pengguna.
 
 ## EXAMPLES
 
@@ -54,34 +57,34 @@ Cmdlet **Get-AzBatchRemoteDesktopProtocolFile** mendapatkan file Remote Desktop 
 Get-AzBatchRemoteDesktopProtocolFile -PoolId "Pool06" -ComputeNodeId "ComputeNode01" -DestinationPath "C:\PowerShell\ComputeNode01.rdp" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file RDP dari simpul komputasi yang memiliki ID ComputeNode01 dalam kumpulan yang memiliki ID Pool06.
+Perintah ini mendapatkan file RDP dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool06.
 Perintah menyimpan file .rdp sebagai C:\PowerShell\MyComputeNode.rdp.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Dapatkan file RDP dari simpul komputasi dan simpan file menggunakan pipeline
+### Contoh 2: Dapatkan file RDP dari simpul komputasi dan simpan file dengan menggunakan alur
 ```powershell
 Get-AzBatchComputeNode -PoolId "Pool06" -Id "ComputeNode02" -BatchContext $Context | Get-AzBatchRemoteDesktopProtocolFile -DestinationPath "C:\PowerShell\MyComputeNode02.rdp" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan node komputasi yang memiliki ID ComputeNode02 di pool yang memiliki ID Pool06.
-Perintah melewati simpul komputasi ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan simpul komputasi yang memiliki ID ComputeNode02 di kumpulan yang memiliki ID Pool06.
+Perintah meneruskan simpul komputasi tersebut ke cmdlet saat ini dengan menggunakan operator alur.
 Cmdlet saat ini mendapatkan file .rpd dari simpul komputasi, lalu menyimpan konten sebagai file yang bernama C:\PowerShell\MyComputeNode02.rdp.
 
-### Contoh 3: Dapatkan file RDP dari simpul komputasi tertentu dan arahkan ke streaming
+### Contoh 3: Dapatkan file RDP dari simpul komputasi tertentu dan arahkan ke aliran
 ```powershell
 $Stream = New-Object -TypeName "System.IO.MemoryStream"
 Get-AzBatchRemoteDesktopProtocolFile "Pool06" -ComputeNodeId "ComputeNode03" -DestinationStream $Stream -BatchContext $Context
 ```
 
-Perintah pertama membuat streaming menggunakan cmdlet New-Object, lalu menyimpannya dalam variabel $Stream.
-Perintah kedua mendapatkan file .rdp dari simpul komputasi yang memiliki ID ComputeNode03 dalam kumpulan yang memiliki ID Pool06.
-Perintah mengarahkan konten file ke streaming di $Stream.
+Perintah pertama membuat aliran dengan menggunakan cmdlet New-Object, lalu menyimpannya dalam variabel $Stream.
+Perintah kedua mendapatkan file .rdp dari simpul komputasi yang memiliki ID ComputeNode03 di kumpulan yang memiliki ID Pool06.
+Perintah mengarahkan konten file ke aliran di $Stream.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -96,8 +99,8 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan node komputasi, sebagai objek **PSComputeNode** , tempat file .rdp menunjuk.
-Untuk mendapatkan objek node komputasi, gunakan cmdlet Get-AzBatchComputeNode.
+Menentukan simpul komputasi, sebagai objek **PSComputeNode** , tempat file .rdp menunjuk.
+Untuk mendapatkan objek simpul komputasi, gunakan cmdlet Get-AzBatchComputeNode.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

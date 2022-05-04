@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/switch-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 1b9968589c2714d5e58f27af3c12d0720ff458c7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f094ae27018aca99512a8e05e0d5c8fa614154ab
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271539"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670732"
 ---
 # Switch-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Menjalankan failover Grup Failover Instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/switch-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Switch-AzSqlDatabaseInstanceFailoverGroup [-InputObject] <AzureSqlInstanceFailov
 ```
 
 ## DESCRIPTION
-Perintah ini menukar peran instans terkelola dalam Grup Failover Instans dengan gagal ke kawasan sekunder yang ditentukan, menjadikannya kawasan utama baru. Semua sesi TDS baru yang tersambung ke titik akhir utama secara otomatis dirutekan ulang ke kawasan utama baru. 
+Perintah ini menukar peran instans terkelola dalam Grup Failover Instans dengan melakukan failover ke wilayah sekunder yang ditentukan, menjadikannya wilayah utama baru. Semua sesi TDS baru yang terhubung ke titik akhir utama secara otomatis dirutekan ulang ke wilayah utama baru. 
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Keluarkan operasi failover yang memungkinkan hilangnya data dengan piping dalam Grup Failover Instans.
+Terbitkan operasi failover yang memungkinkan kehilangan data dengan pipa di Grup Failover Instans.
 
 ### Contoh 2
 ```powershell
@@ -86,13 +89,13 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Keluarkan operasi failover upaya terbaik yang akan berhasil tanpa kehilangan data atau gagal dan kembali.
+Terbitkan operasi failover upaya terbaik yang akan berhasil tanpa kehilangan data atau gagal dan gulung balik.
 
 ## PARAMETERS
 
 ### -AllowDataLoss
-Selesaikan failover meskipun melakukannya dapat mengakibatkan hilangnya data.
-Ini akan memungkinkan failover untuk melanjutkan bahkan jika database utama tidak tersedia.
+Selesaikan failover bahkan jika melakukannya dapat mengakibatkan kehilangan data.
+Ini akan memungkinkan failover untuk melanjutkan meskipun database utama tidak tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Grup Failover Instans untuk dialihkan
+Objek Grup Failover Instans yang akan dialihkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
+Nama Wilayah Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Grup Failover Instans.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Grup Failover Instans untuk beralih.
+ID Sumber Daya dari Grup Failover Instans untuk beralih.
 
 ```yaml
 Type: System.String
@@ -196,8 +199,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

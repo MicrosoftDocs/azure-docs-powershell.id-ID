@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
-ms.openlocfilehash: 3650bbd94bbb820e562695862fa8524a5e60ca8f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8087fd08981b0f769046c80b2c49acab6e0241eb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683442"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144651046"
 ---
 # Set-AzHDInsightDefaultStorage
 
 ## SYNOPSIS
 Mengatur pengaturan akun Storage default dalam objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightdefaultstorage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzHDInsightDefaultStorage [-Config] <AzureHDInsightConfig> [-StorageAccountR
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHDInsightDefaultStorage** mengatur pengaturan akun Storage default dalam objek konfigurasi cluster Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
+Cmdlet **Set-AzHDInsightDefaultStorage** mengatur pengaturan akun Storage default di objek konfigurasi kluster Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Perintah ini mengatur akun Storage default untuk objek konfigurasi kluster.
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Mendapatkan atau mengatur tipe akun penyimpanan default. Default ke AzureStorage
+Mendapatkan atau mengatur jenis akun penyimpanan default. Default ke AzureStorage
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.HDInsight.Models.Management.StorageType]
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

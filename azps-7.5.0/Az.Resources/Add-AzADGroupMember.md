@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADGroupMember.md
-ms.openlocfilehash: 78e03b257af3baf50b62531ff4318e3fdee7d2aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 95bddae1c3751ce23059ec5e685d1f7829cff7ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144230545"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603428"
 ---
 # Add-AzADGroupMember
 
 ## SYNOPSIS
 Menambahkan anggota ke grup.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -119,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +152,7 @@ Accept wildcard characters: False
 
 ### -TargetGroupObject
 Objek grup target, dapat digunakan sebagai input alur.
-Untuk membuat, lihat bagian CATATAN untuk properti TARGETGROUPOBJECT dan buat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti TARGETGROUPOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.MicrosoftGraphGroup
@@ -236,18 +238,18 @@ TARGETGROUPOBJECT <MicrosoftGraphGroup>: Objek grup target, dapat digunakan seba
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
     - `[AppRoleId <String>]`: Pengidentifikasi (id) untuk peran aplikasi yang ditetapkan ke prinsipal. Peran aplikasi ini harus diekspos di properti appRoles pada perwakilan layanan aplikasi sumber daya (resourceId). Jika aplikasi sumber daya belum mendeklarasikan peran aplikasi apa pun, ID peran aplikasi default 00000000-0000-0000-0000-000000000000 dapat ditentukan untuk memberi sinyal bahwa prinsipal ditetapkan ke aplikasi sumber daya tanpa peran aplikasi tertentu. Diperlukan untuk membuat.
-    - `[CreatedDateTime <DateTime?>]`: Waktu ketika penetapan peran aplikasi dibuat. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Baca-saja.
+    - `[CreatedDateTime <DateTime?>]`: Waktu saat penetapan peran aplikasi dibuat. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Baca-saja.
     - `[PrincipalDisplayName <String>]`: Nama tampilan pengguna, grup, atau perwakilan layanan yang diberikan penetapan peran aplikasi. Baca-saja. Mendukung $filter (eq dan startswith).
     - `[PrincipalId <String>]`: Pengidentifikasi unik (id) untuk pengguna, grup, atau perwakilan layanan yang diberikan peran aplikasi. Diperlukan untuk membuat.
     - `[PrincipalType <String>]`: Jenis prinsipal yang ditetapkan. Ini bisa berupa Pengguna, Grup, atau ServicePrincipal. Baca-saja.
     - `[ResourceDisplayName <String>]`: Nama tampilan perwakilan layanan aplikasi sumber daya tempat penugasan dibuat.
     - `[ResourceId <String>]`: Pengidentifikasi unik (id) untuk perwakilan layanan sumber daya tempat penugasan dibuat. Diperlukan untuk membuat. Mendukung $filter (eq saja).
-  - `[Classification <String>]`: Menjelaskan klasifikasi untuk grup (seperti dampak bisnis rendah, sedang, atau tinggi). Nilai yang valid untuk properti ini ditentukan dengan membuat nilai pengaturan ClassificationList, berdasarkan definisi templat. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, startsWith).
+  - `[Classification <String>]`: Menjelaskan klasifikasi untuk grup (seperti dampak bisnis rendah, menengah, atau tinggi). Nilai yang valid untuk properti ini ditentukan dengan membuat nilai pengaturan ClassificationList, berdasarkan definisi templat. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, startsWith).
   - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: Mewakili objek Azure Active Directory. Jenis directoryObject adalah jenis dasar untuk banyak jenis entitas direktori lainnya.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
   - `[Description <String>]`: Deskripsi opsional untuk grup. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, startsWith) dan $search.
-  - `[GroupType <String[]>]`: Menentukan jenis grup dan keanggotaannya.  Jika koleksi berisi Terpadu, grup tersebut adalah grup Microsoft 365; jika tidak, itu adalah grup keamanan atau grup distribusi. Untuk detailnya, lihat gambaran umum grup. Jika koleksi menyertakan DynamicMembership, grup memiliki keanggotaan dinamis; jika tidak, keanggotaan bersifat statis.  Dikembalikan secara default. Mendukung $filter (eq, NOT).
+  - `[GroupType <String[]>]`: Menentukan jenis grup dan keanggotaannya.  Jika koleksi berisi Terpadu, grup adalah grup Microsoft 365; jika tidak, itu adalah grup keamanan atau grup distribusi. Untuk detailnya, lihat gambaran umum grup. Jika koleksi menyertakan DynamicMembership, grup memiliki keanggotaan dinamis; jika tidak, keanggotaan bersifat statis.  Dikembalikan secara default. Mendukung $filter (eq, NOT).
   - `[HasMembersWithLicenseError <Boolean?>]`: Menunjukkan apakah ada anggota dalam grup ini yang memiliki kesalahan lisensi dari penetapan lisensi berbasis grupnya. Properti ini tidak pernah dikembalikan pada operasi GET. Anda dapat menggunakannya sebagai argumen $filter untuk mendapatkan grup yang memiliki anggota dengan kesalahan lisensi (yaitu, filter untuk properti ini menjadi benar).  Mendukung $filter (eq).
   - `[IsArchived <Boolean?>]`: 
   - `[IsAssignableToRole <Boolean?>]`: Menunjukkan apakah grup ini dapat ditetapkan ke peran Azure Active Directory. Properti ini hanya dapat diatur saat membuat grup dan tidak dapat diubah. Jika diatur ke true, properti securityEnabled juga harus diatur ke true dan grup tidak dapat menjadi grup dinamis (yaitu, groupTypes tidak boleh berisi DynamicMembership). Hanya penelepon dalam peran administrator peran Administrator Global dan Istimewa yang dapat mengatur properti ini. Pemanggil juga harus diberi izin Directory.AccessAsUser.All untuk mengatur properti ini. Untuk informasi selengkapnya, lihat Menggunakan grup untuk mengelola Azure AD penetapan peranReturned secara default. Mendukung $filter (eq, ne, NOT).

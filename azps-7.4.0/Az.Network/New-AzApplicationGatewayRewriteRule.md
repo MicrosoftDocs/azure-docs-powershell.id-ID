@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRule.md
-ms.openlocfilehash: 3c9c934bfb425769f71d30810a3e0c8aae51375b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09bf98d1b5efdcb4c45e4d98f67149a131ff9155
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678618"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144650650"
 ---
 # New-AzApplicationGatewayRewriteRule
 
 ## SYNOPSIS
 Membuat aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriterule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,12 +39,12 @@ Cmdlet **New-AzApplicationGatewayRewriteRule** membuat aturan penulisan ulang un
 $rule = New-AzApplicationGatewayRewriteRule -Name rule1 -ActionSet $action -RuleSequence 101 -Condition $condition
 ```
 
-Perintah ini membuat aturan penulisan ulang bernama aturan1 dan menyimpan hasil dalam variabel bernama $rule.
+Perintah ini membuat aturan penulisan ulang bernama rule1 dan menyimpan hasilnya dalam variabel bernama $rule.
 
 ## PARAMETERS
 
 ### -ActionSet
-Kumpulan Tindakan aturan penulisan ulang
+ActionSet dari aturan penulisan ulang
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleActionSet
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kondisi
-Kondisi untuk menjalankan aturan penulisan ulang
+Kondisi untuk aturan penulisan ulang yang akan dijalankan
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleCondition]
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama RewriteRule
 
 ```yaml
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AturanSequence
-Urutan aturan aturan penulisan ulang ini dalam kumpulan aturan penulisan ulang
+### -RuleSequence
+Urutan aturan aturan penulisan ulang ini dalam seperangkat aturan penulisan ulang
 
 ```yaml
 Type: System.Int32
@@ -116,11 +119,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

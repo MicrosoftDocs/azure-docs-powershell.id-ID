@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: 0b5adb95ee06bd6e1d0420e5ef0dab532150a1f5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bb7a9cf0569c241163958c35798e1ee4895a0888
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741996"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602438"
 ---
 # Set-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
-Mengubah rantai sertifikat CA klien tepercaya gateway aplikasi.
+Memodifikasi rantai sertifikat OS klien tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzApplicationGatewayTrustedClientCertificate -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayTrustedClientCertificate** mengubah rantai sertifikat CA klien tepercaya gateway aplikasi.
+Cmdlet **Set-AzApplicationGatewayTrustedClientCertificate** memodifikasi rantai sertifikat CA klien tepercaya dari gateway aplikasi.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ $gw = Set-AzApplicationGatewayTrustedClientCertificate -ApplicationGateway $gw -
 $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Contoh skenario di atas memperlihatkan cara memperbarui objek rantai sertifikat CA klien tepercaya yang sudah ada. Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw. Perintah kedua mengubah objek rantai sertifikat CA klien tepercaya yang sudah ada dengan file rantai sertifikat CA baru. Perintah ketiga memperbarui gateway aplikasi di Azure.
+Contoh skenario di atas menunjukkan cara memperbarui objek rantai sertifikat CA klien tepercaya yang ada. Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw. Perintah kedua memodifikasi objek rantai sertifikat CA klien tepercaya yang ada dengan file rantai sertifikat CA baru. Perintah ketiga memperbarui gateway aplikasi di Azure.
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFile
-Jalur file rantai sertifikat CA klien tepercaya
+Jalur file rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: String
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rantai sertifikat CA klien tepercaya
+### -Name
+Nama rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: String
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

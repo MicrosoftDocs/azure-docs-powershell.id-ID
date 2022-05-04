@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesServer.md
-ms.openlocfilehash: c17913e10b6dc6638781300bb6ef4255541680bb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cd05f7321b92accfac5a5d5b2a52ecb3c160dab1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068031"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676366"
 ---
 # New-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Membuat server Analysis Services baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/new-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ Cmdlet New-AzAnalysisServicesServer membuat server Analysis Services baru
 New-AzAnalysisServicesServer -ResourceGroupName "testresourcegroup" -Name "testserver" -Location "West-US" -Sku "S1"
 ```
 
-Membuat server bernama testserver di wilayah Azure Barat-AS dan dalam testresourcegroup grup sumber daya. Tingkat sku untuk server akan menjadi S1.
+Membuat server bernama testserver di wilayah Azure West-US dan dalam grup sumber daya testresourcegroup. Tingkat sku untuk server akan menjadi S1.
 
 ### Contoh 2
 
-Membuat server Analysis Services baru. (autogenerasi)
+Membuat server Analysis Services baru. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -54,7 +57,7 @@ New-AzAnalysisServicesServer -Administrator 'testuser1@contoso.com' -FirewallCon
 ## PARAMETERS
 
 ### -Administrator
-String yang mewakili daftar pengguna atau grup yang dipisahkan koma untuk diatur sebagai administrator di server. Pengguna atau grup perlu ditentukan format UPN misalnya user@contoso.com atau groups@contoso.com
+String yang mewakili daftar pengguna atau grup yang dipisahkan koma untuk ditetapkan sebagai administrator di server. Pengguna atau grup perlu ditentukan format UPN misalnya user@contoso.com atau groups@contoso.com
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupBlobContainerUri
-Wadah blob Uri untuk mencadangkan server Analysis Services
+Uri kontainer blob untuk mencadangkan server Analysis Services
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayResourceId
-Id sumber daya gateway untuk mengaitkan ke server Analisis
+Id sumber daya gateway untuk dikaitkan dengan server Analisis
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan Azure tempat server Analysis Services dihosting
+Wilayah Azure tempat server Analysis Services dihosting
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server Analysis Services
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyReplicaCount
-Hanya membaca hitungan replika server layanan Analisis
+Jumlah replika baca saja dari server layanan Analisis
 
 ```yaml
 Type: System.Int32
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag di server.
+Pasangan kunci-nilai dalam bentuk tabel hash yang ditetapkan sebagai tag di server.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -235,7 +238,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta pengguna untuk mengonfirmasi apakah akan melakukan operasi
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar melakukannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

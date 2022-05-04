@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAlertingAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleAlertingAction.md
-ms.openlocfilehash: da65e685cd56090ec793fccf277eadabe11c8699
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 420815be2d50638f4803657547ad60c06b3ef926
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806886"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144599432"
 ---
 # New-AzScheduledQueryRuleAlertingAction
 
 ## SYNOPSIS
-Membuat objek dari tipe Tindakan Peringatan
+Membuat objek jenis Tindakan Pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulealertingaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzScheduledQueryRuleAlertingAction [-AznsAction <PSScheduledQueryRuleAznsAct
 ```
 
 ## DESCRIPTION
-Membuat objek dari tipe Tindakan Peringatan Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log
+Membuat objek tipe Tindakan Peringatan Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Keparahan
+### -Tingkat keparahan
 Tingkat keparahan untuk pemberitahuan ini
 
 ```yaml
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThrottlingInMinutes
-Durasi dalam menit yang pemberitahuannya harus dibatasi
+Durasi dalam menit di mana pemberitahuan harus dibatasi
 
 ```yaml
 Type: System.Int32
@@ -97,8 +100,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Trigger
-Kondisi pemicu peringatan
+### -Pemicu
+Kondisi pemicu pemberitahuan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSScheduledQueryRuleTriggerCondition
@@ -113,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

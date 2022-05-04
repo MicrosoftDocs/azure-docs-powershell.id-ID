@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkServiceConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkServiceConnection.md
-ms.openlocfilehash: 65c231ce0f9a3ef58910efa2482846aa8b93d63f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7c35c4a3481ade0c8fc61a6612740c5771467080
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280899"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647770"
 ---
 # New-AzPrivateLinkServiceConnection
 
 ## SYNOPSIS
 Membuat konfigurasi koneksi layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivatelinkserviceconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ New-AzPrivateLinkServiceConnection -Name <String> -PrivateLinkServiceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateLinkServiceConnection** membuat konfigurasi koneksi layanan tautan pribadi.
+**Cmdlet New-AzPrivateLinkServiceConnection** membuat konfigurasi koneksi layanan tautan privat.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Contoh ini membuat objek koneksi layanan tautan privat dalam memori untuk diguna
 
 ### Contoh 2
 
-Membuat konfigurasi koneksi layanan tautan privat. (autogenerasi)
+Membuat konfigurasi koneksi layanan tautan privat. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan tautan privat.
 
 ```yaml
@@ -146,11 +149,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

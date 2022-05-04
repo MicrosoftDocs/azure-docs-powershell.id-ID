@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicy.md
-ms.openlocfilehash: 51082540d551b4cd1b90f3f66e073848f0f40634
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6effaccdb16675721605405d731d7ae67d75d278
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687690"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593028"
 ---
 # Get-AzAttestationPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/get-azattestationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ JwtLength  : 1129
 Algorithm  : none
 ```
 
-Mendapatkan kebijakan untuk Penyedia Pengesahan *pshtest* untuk tipe Tee *SgxEnclave*.
+Mendapatkan kebijakan untuk *pshtest* Penyedia Pengesahan untuk jenis Tee *SgxEnclave*.
 
 ### Contoh 2
 ```powershell
@@ -89,7 +92,7 @@ JwtLength  : 907
 Algorithm  : none
 ```
 
-Mendapatkan kebijakan untuk Penyedia Default Pengesahan dari Location *UK South* untuk tipe Tee *SgxEnclave*.
+Mendapatkan kebijakan untuk Penyedia Default Pengesahan dari Lokasi *UK Selatan* untuk jenis Tee *SgxEnclave*.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan Lokasi penyedia penetapan default.
+Menentukan Lokasi penyedia pengesahan default.
 
 ```yaml
 Type: System.String
@@ -138,9 +141,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penyewa.
-Cmdlet ini mendapatkan kebijakan penetapan untuk penyewa yang ditentukan parameter ini.
+Cmdlet ini mendapatkan kebijakan pengesahan untuk penyewa yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan RESOURCEID penyedia atestation.
+Menentukan ResourceID dari penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tee
-Menentukan tipe Lingkungan Eksekusi Tepercaya.
+Menentukan jenis Lingkungan Eksekusi Tepercaya.
 Kami mendukung empat jenis lingkungan: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
 
 ```yaml
@@ -200,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

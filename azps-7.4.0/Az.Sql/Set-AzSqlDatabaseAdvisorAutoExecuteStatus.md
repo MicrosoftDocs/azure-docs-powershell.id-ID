@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: 9571340bcb308e09379d13257bd33d5f3a7dc2e8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 723ccd51f62271fbe198343f6f0cf0aed718730c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306747"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666802"
 ---
 # Set-AzSqlDatabaseAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
-Mengubah status eksekusi otomatis Azure SQL Database Advisor.
+Memodifikasi status eksekusi otomatis Azure SQL Database Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabaseadvisorautoexecutestatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Set-AzSqlDatabaseAdvisorAutoExecuteStatus -AdvisorName <String> -AutoExecuteStat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseAdvisorAutoExecuteStatus** mengubah properti auto execute untuk Azure SQL Database Advisor.
+Cmdlet **Set-AzSqlDatabaseAdvisorAutoExecuteStatus** memodifikasi properti eksekusi otomatis untuk Azure SQL Database Advisor.
 Saat ini, cmdlet ini mendukung nilai Diaktifkan, Dinonaktifkan, dan Default.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan eksekusi otomatis untuk penasihat
+### Contoh 1: Mengaktifkan eksekusi otomatis untuk advisor
 ```powershell
 Set-AzSqlDatabaseAdvisorAutoExecuteStatus -ResourceGroupName "ContosoRunnersProd" -ServerName "runner-australia-east" -DatabaseName "ContosoRunner" -AdvisorName "CreateIndex" -AutoExecuteStatus Enabled
 ```
@@ -50,12 +53,12 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mengubah status eksekusi otomatis penasihat bernama CreateIndex menjadi Enabled.
+Perintah ini mengubah status eksekusi otomatis penasihat bernama CreateIndex menjadi Diaktifkan.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang mengubah status cmdlet ini.
+Menentukan nama advisor yang cmdlet ini memodifikasi status.
 
 ```yaml
 Type: System.String
@@ -70,10 +73,10 @@ Accept wildcard characters: False
 ```
 
 ### -AutoExecuteStatus
-Menentukan nilai untuk status tersebut.
+Menentukan nilai untuk status.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diaktifkan 
-- Tamu penyandang cacat 
+- Aktif 
+- Nonaktifkan 
 - Default
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database yang mengubah status cmdlet ini.
+Menentukan nama database yang cmdlet ini memodifikasi status.
 
 ```yaml
 Type: System.String
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

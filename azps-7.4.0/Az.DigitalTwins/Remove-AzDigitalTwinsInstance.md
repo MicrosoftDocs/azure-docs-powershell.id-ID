@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 296b1dda2d5f88193f7f4c82bb018d418a942499
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d96624914ed0cf5e5cfe6812f1b184f01b69dda5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061479"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675844"
 ---
 # Remove-AzDigitalTwinsInstance
 
 ## SYNOPSIS
-Hapus DigitalTwinsInstance.
+Menghapus DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/remove-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,29 +35,29 @@ Remove-AzDigitalTwinsInstance -InputObject <IDigitalTwinsIdentity> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Hapus DigitalTwinsInstance.
+Menghapus DigitalTwinsInstance.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus AzDigitalTwinsInstance menurut nama
+### Contoh 1: Menghapus AzDigitalTwinsInstance berdasarkan nama
 ```powershell
 Remove-AzDigitalTwinsInstance -ResourceGroupName youritemp -ResourceName youriDigitalTwin
 ```
 
-Perintah ini menghapus AzDigitalTwinsInstance menurut nama
+Perintah ini menghapus AzDigitalTwinsInstance berdasarkan nama
 
-### Contoh 2: Remove an AzDigitalTwinsInstance by InputObject
+### Contoh 2: Menghapus AzDigitalTwinsInstance dengan InputObject
 ```powershell
 $GetAzDigitalTwins =  Get-AzDigitalTwinsInstance -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 Remove-AzDigitalTwinsInstance -InputObject $GetAzDigitalTwins
 ```
 
-Perintah ini menghapus AzDigitalTwinsInstance menurut nama
+Perintah ini menghapus AzDigitalTwinsInstance berdasarkan nama
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: 99da82ba5fba717b547aa24b361acf91615d2443
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4e255b9ece38a1029603c62edda457171c9358c4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744371"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610646"
 ---
 # Add-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi kumpulan alamat backend ke penyeimbang muatan.
+Menambahkan konfigurasi kumpulan alamat backend ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Add-AzLoadBalancerBackendAddressPoolConfig -LoadBalancer <PSLoadBalancer> -Name 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerBackend** menambahkan kumpulan alamat backend ke penyeimbang muat Azure.
+Cmdlet **Add-AzLoadBalancerBackend** menambahkan kumpulan alamat backend ke load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan konfigurasi kumpulan alamat backend ke penyeimbang muat
+### Contoh 1: Menambahkan konfigurasi kumpulan alamat backend ke load balancer
 ```powershell
 Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "myrg" | Add-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzLoadBalancer
 ```
@@ -69,8 +72,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi kumpulan alamat backend untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi kumpulan alamat backend yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -84,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -129,7 +132,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzLoadBalancer](./Get-AzLoadBalancer.md)
+[Dapatkan-AzLoadBalancer](./Get-AzLoadBalancer.md)
 
 [Get-AzNetworkInterface](./Get-AzNetworkInterface.md)
 
