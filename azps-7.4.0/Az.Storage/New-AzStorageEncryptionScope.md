@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageEncryptionScope.md
-ms.openlocfilehash: 07a271bff2009d7e3496b3edf1e4edcef6a22a63
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 398f530dac5b8543914e7fb5b987d333795c276a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932581"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565060"
 ---
 # New-AzStorageEncryptionScope
 
 ## SYNOPSIS
-Membuat lingkup enkripsi untuk akun Storage.
+Membuat cakupan enkripsi untuk akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,11 +51,11 @@ New-AzStorageEncryptionScope -StorageAccount <PSStorageAccount> -EncryptionScope
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageEncryptionScope** membuat lingkup enkripsi untuk akun Storage.
+Cmdlet **New-AzStorageEncryptionScope** membuat cakupan enkripsi untuk akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat lingkup enkripsi dengan enkripsi Storage
+### Contoh 1: Membuat cakupan enkripsi dengan enkripsi Storage
 ```
 PS C:\> New-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount"  -EncryptionScopeName testscope -StorageEncryption
 
@@ -63,9 +66,9 @@ Name      State    Source            KeyVaultKeyUri RequireInfrastructureEncrypt
 testscope Enabled  Microsoft.Storage
 ```
 
-Perintah ini membuat lingkup enkripsi dengan Enkripsi Storage.
+Perintah ini membuat cakupan enkripsi dengan enkripsi Storage.
 
-### Contoh 2: Membuat lingkup enkripsi dengan Enkripsi Keyvault, dan RequireInfrastructureEncryption
+### Contoh 2: Membuat cakupan enkripsi dengan Enkripsi Keyvault, dan RequireInfrastructureEncryption
 ```
 PS C:\> New-AzStorageEncryptionScope -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" `
     -EncryptionScopeName testscope -KeyvaultEncryption -KeyUri "https://keyvalutname.vault.azure.net:443/keys/keyname/34a0ba563b4243d9a0ef2b1d3c0c7d57" `
@@ -78,8 +81,8 @@ Name         State   Source           KeyVaultKeyUri                            
 testscope Enabled  Microsoft.Keyvault https://keyvalutname.vault.azure.net:443/keys/keyname/34a0ba563b4243d9a0ef2b1d3c0c7d57  True
 ```
 
-Perintah ini membuat lingkup enkripsi dengan Enkripsi Keyvault dan RequireInfrastructureEncryption.
-Akun Storage Yang diperlukan Identitas memiliki izin get,wrapkey,unwrapkey ke kunci keyvault.
+Perintah ini membuat cakupan enkripsi dengan Enkripsi Keyvault dan RequireInfrastructureEncryption.
+Akun Storage yang dibutuhkan identitas memiliki izin get,wrapkey,unwrapkey ke kunci keyvault.
 
 ## PARAMETERS
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUri
-Kunci Uri
+Uri kunci
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyvaultEncryption
-Membuat lingkup enkripsi dengan keySource sebagai Microsoft.Keyvault
+Membuat cakupan enkripsi dengan keySource sebagai Microsoft.Keyvault
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequireInfrastructureEncryption
-Lingkup enkripsi akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data saat disimpan.
+Cakupan enkripsi akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data tidak aktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageEncryption
-Buat lingkup enkripsi dengan keySource sebagai Microsoft. Storage.
+Buat cakupan enkripsi dengan keySource sebagai Microsoft. Storage.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

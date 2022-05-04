@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlAdvancedDataSecurity.md
-ms.openlocfilehash: 12253b4701cf29c0ab489f489f816f31edbbc551
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3fadc26d1177ff0433831b5270e6d63629eb4460
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057123"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578828"
 ---
 # Disable-AzSynapseSqlAdvancedDataSecurity
 
 ## SYNOPSIS
-Menonaktifkan Keamanan Data Tingkat Lanjut di ruang kerja.
+Menonaktifkan Advanced Data Security pada ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/disable-azsynapsesqladvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzSynapseSqlAdvancedDataSecurity -ResourceId <String> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzSynapseSqlAdvancedDataSecurity** menonaktifkan Keamanan Data Tingkat Lanjut di ruang kerja.
+Cmdlet **Disable-AzSynapseSqlAdvancedDataSecurity** menonaktifkan Advanced Data Security di ruang kerja.
 
 ## EXAMPLES
 
@@ -47,19 +50,19 @@ Cmdlet **Disable-AzSynapseSqlAdvancedDataSecurity** menonaktifkan Keamanan Data 
 Disable-AzSynapseSqlAdvancedDataSecurity -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini menonaktifkan Keamanan Data Tingkat Lanjut di ruang kerja bernama ContosoWorkspace.
+Perintah ini menonaktifkan Advanced Data Security di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 1
 ```powershell
 Get-AzSynapseWorkspace -Name ContosoWorkspace | Disable-AzSynapseSqlAdvancedDataSecurity
 ```
 
-Perintah ini menonaktifkan Keamanan Data Tingkat Lanjut di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah ini menonaktifkan Advanced Data Security pada ruang kerja bernama ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -133,7 +136,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -148,8 +151,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

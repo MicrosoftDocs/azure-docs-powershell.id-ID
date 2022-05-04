@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationConnectionInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationConnectionInfo.md
-ms.openlocfilehash: e7261f307aeb31a183f713f72b6f7c1d3a49ee8c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13e944843a1943ba39b7453aa2db999b86113f4b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685080"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144564088"
 ---
 # New-AzDataMigrationConnectionInfo
 
 ## SYNOPSIS
-Membuat objek Info Koneksi baru yang menentukan tipe dan nama server untuk koneksi.
+Membuat objek Info Koneksi baru yang menentukan jenis server dan nama untuk koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationconnectioninfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDataMigrationConnectionInfo -ServerType <ServerTypeEnum> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationConnectionInfo membuat objek Info Koneksi baru yang menentukan tipe server untuk koneksi. 
+Cmdlet New-AzDataMigrationConnectionInfo membuat objek Info Koneksi baru yang menentukan jenis server untuk koneksi. 
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerType
-Enum yang menjelaskan tipe server untuk disambungkan. Nilai yang didukung saat ini SQL untuk SQL Server, Azure SQL Managed Instance, MongoDb, CosmosDb, dan Azure SQL Database. 
+Enum yang menjelaskan jenis server untuk disambungkan. Nilai yang saat ini didukung SQL untuk SQL Server, Azure SQL Managed Instance, MongoDb, CosmosDb, dan Azure SQL Database. 
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.ServerTypeEnum
@@ -70,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

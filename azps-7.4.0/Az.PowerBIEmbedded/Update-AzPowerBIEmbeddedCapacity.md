@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 71e578d14d274fe1cd8a1afdfd51ea28064970bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 58b6927cc175bee2b1931052d416c890c77231ee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142869436"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144585002"
 ---
 # Update-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
-Mengubah contoh Kapasitas Tersemat PowerBI.
+Memodifikasi instans Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/update-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Update-AzPowerBIEmbeddedCapacity [-Sku <String>] [-Tag <Hashtable>] [-Administra
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzPowerBIEmbeddedCapacity mengubah contoh Kapasitas Tersemat PowerBI
+Cmdlet Update-AzPowerBIEmbeddedCapacity memodifikasi instans Kapasitas Tersemat PowerBI
 
 ## EXAMPLES
 
@@ -64,12 +67,12 @@ Tier                   : PBIE_Azure
 Tag                    : {[key1, value1], [key2, value2]}
 ```
 
-Mengubah kapasitas bernama testcapacity dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 dan key2:value2 dan administrator ke testuser1@contoso.com , testuser2@contoso.com dan prinsipal layanan: 9035a021-a96f-43ea-acbf-864227c2abbb@45119f4f-c71b-4420-b6ec-60e503450098
+Memodifikasi kapasitas bernama testcapacity dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 dan key2:value2 dan administrator ke testuser1@contoso.com , testuser2@contoso.com dan perwakilan layanan: 9035a021-a96f-43ea-acbf-864227c2abbb@45119f4f-c71b-4420-b6ec-60e503450098
 
 ## PARAMETERS
 
 ### -Administrator
-Nama yang dipisahkan koma untuk ditetapkan sebagai administrator pada kapasitas. Untuk prinsipal layanan: <service principal object id>@<tenant id>
+Nama yang dipisahkan koma untuk ditetapkan sebagai administrator pada kapasitas. Untuk perwakilan layanan: <service principal object id>@<tenant id>
 
 ```yaml
 Type: System.String[]
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Kapasitas Tersemat PowerBI
+### -Name
+Nama Kapasitas PowerBI Embedded
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag pada kapasitas.
+Pasangan kunci-nilai dalam bentuk tabel hash yang ditetapkan sebagai tag pada kapasitas.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -204,7 +207,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta pengguna untuk mengonfirmasi apakah akan melakukan operasi
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar melakukannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

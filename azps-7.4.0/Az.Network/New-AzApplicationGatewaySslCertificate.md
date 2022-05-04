@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 273f8e4bde9231f1df84fa5b57b2d00fdbdd79a7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 16f8a1211b74b63402a1476667b8dcfcfb7de969
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567004"
 ---
 # New-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Membuat sertifikat SSL untuk gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -CertificateFile "
 
 Perintah ini membuat sertifikat SSL bernama Cert01 untuk gateway aplikasi default dan menyimpan hasilnya dalam variabel bernama $Cert.
 
-### Contoh 2: Buat sertifikat SSL menggunakan KeyVault Secret (version-less secretId) dan tambahkan ke gateway aplikasi.
+### Contoh 2: Buat sertifikat SSL menggunakan Rahasia KeyVault (secretId tanpa versi) dan tambahkan ke gateway aplikasi.
 ```powershell
 $secret = Get-AzKeyVaultSecret -VaultName "keyvault01" -Name "sslCert01"
 $secretId = $secret.Id.Replace($secret.Version, "") # https://<keyvaultname>.vault.azure.net/secrets/
@@ -46,9 +49,9 @@ $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -KeyVaultSecretId 
 ```
 
 Dapatkan rahasia dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
-Catatan: Karena version-less secretId disediakan di sini, Application Gateway akan menyinkronkan sertifikat dalam interval reguler dengan KeyVault.
+Catatan: Karena secretId tanpa versi disediakan di sini, Application Gateway akan menyinkronkan sertifikat secara berkala dengan KeyVault.
 
-### Contoh 3: Membuat sertifikat SSL menggunakan KeyVault Secret dan tambahkan ke Gateway Aplikasi.
+### Contoh 3: Buat sertifikat SSL menggunakan Rahasia KeyVault dan tambahkan ke Application Gateway.
 ```powershell
 $secret = Get-AzKeyVaultSecret -VaultName "keyvault01" -Name "sslCert01"
 $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/<hash>
@@ -56,12 +59,12 @@ $cert = New-AzApplicationGatewaySslCertificate -Name "Cert01" -KeyVaultSecretId 
 ```
 
 Dapatkan rahasia dan buat Sertifikat SSL menggunakan `New-AzApplicationGatewaySslCertificate`.
-Catatan: Jika diperlukan bahwa Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan version-less secretId.
+Catatan: Jika diperlukan bahwa Application Gateway menyinkronkan sertifikat dengan KeyVault, berikan secretId tanpa versi.
 
 ## PARAMETERS
 
 ### -CertificateFile
-Menentukan jalur file .pfx sertifikat SSL yang dibuat cmdlet ini.
+Menentukan jalur file .pfx dari sertifikat SSL yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultSecretId
-SecretId (uri) dari KeyVault Secret. Gunakan opsi ini saat versi rahasia tertentu perlu digunakan.
+SecretId (uri) dari Rahasia KeyVault. Gunakan opsi ini saat versi rahasia tertentu perlu digunakan.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat SSL yang dibuat cmdlet ini.
 
 ```yaml
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Menentukan kata sandi SSL yang dibuat cmdlet ini.
 
 ```yaml
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

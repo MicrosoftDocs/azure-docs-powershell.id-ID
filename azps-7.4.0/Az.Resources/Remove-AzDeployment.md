@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzDeployment.md
-ms.openlocfilehash: 753b0ab87e7d93aaf86e1893e153644f194a9d90
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 41ac485258a30d3245d189baa933d91d01c34d77
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801468"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563314"
 ---
 # Remove-AzDeployment
 
 ## SYNOPSIS
-Menghapus penyebaran dan semua operasi terkait
+Menghapus penyebaran dan operasi terkait
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzDeployment -InputObject <PSDeployment> [-AsJob] [-PassThru] [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDeployment** menghapus penyebaran Azure pada lingkup langganan dan semua operasi terkait.
+Cmdlet **Remove-AzDeployment** menghapus penyebaran Azure pada cakupan langganan dan operasi terkait.
 
 ## EXAMPLES
 
@@ -47,19 +50,19 @@ Cmdlet **Remove-AzDeployment** menghapus penyebaran Azure pada lingkup langganan
 Remove-AzDeployment -Name "RolesDeployment"
 ```
 
-Perintah ini menghapus penyebaran "RolesDeployment" pada lingkup langganan saat ini.
+Perintah ini menghapus penyebaran "RolesDeployment" pada cakupan langganan saat ini.
 
-### Contoh 2: Dapatkan penyebaran dan hapus
+### Contoh 2: Mendapatkan penyebaran dan menghapusnya
 ```powershell
 Get-AzDeployment -Name "RolesDeployment" | Remove-AzDeployment
 ```
 
-Perintah ini mendapatkan penyebaran "RolesDeployment" pada lingkup langganan saat ini dan menghapusnya.
+Perintah ini mendapatkan penyebaran "RolesDeployment" pada cakupan langganan saat ini dan menghapusnya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
 contoh: /subscriptions/{subId}/providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -119,7 +122,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,8 +167,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

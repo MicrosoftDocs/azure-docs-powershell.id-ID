@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDatabase.md
-ms.openlocfilehash: 3d583da3059f76f5c7484c50f2abeeca1aa7bb66
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f275acd1048e75b2e426c2c6b73e35d9c2416e55
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284679"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580826"
 ---
 # New-AzKustoDatabase
 
 ## SYNOPSIS
 Membuat atau memperbarui database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustodatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,12 +44,12 @@ Kind      Location Name                                Type
 ReadWrite East US  testnewkustocluster/mykustodatabase Microsoft.Kusto/Clusters/Databases
 ```
 
-Perintah di atas membuat datebase baru bernama "mykustodatabase" dalam grup sumber daya "testrg".
+Perintah di atas membuat basis tanggal baru bernama "mykustodatabase" di grup sumber daya "testrg".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama klaster Kusto.
+Nama kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -HotCachePeriod
-Waktu data harus disimpan dalam cache untuk kueri cepat di Rentang Waktu.
+Waktu data harus disimpan dalam cache untuk kueri cepat di TimeSpan.
 
 ```yaml
 Type: System.TimeSpan
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis database
 
 ```yaml
@@ -135,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama database dalam klaster Kusto.
+### -Name
+Nama database di kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi klaster Kusto.
+Nama grup sumber daya yang berisi kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftDeletePeriod
-Waktu data harus disimpan sebelum berhenti diakses oleh kueri di Rentang Waktu.
+Waktu data harus disimpan sebelum berhenti dapat diakses oleh kueri di TimeSpan.
 
 ```yaml
 Type: System.TimeSpan
@@ -196,8 +199,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -211,8 +214,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

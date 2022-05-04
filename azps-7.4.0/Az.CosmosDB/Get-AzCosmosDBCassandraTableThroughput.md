@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTableThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTableThroughput.md
-ms.openlocfilehash: fd875b97a07699539153d962ef0f8695302e69c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 974ba6dc54610f4440d013db1b4cb0130040198c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943921"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575408"
 ---
 # Get-AzCosmosDBCassandraTableThroughput
 
 ## SYNOPSIS
-Mendapatkan nilai throughput Tabel Cassandra.
+Mendapatkan nilai throughput dari Tabel Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandratablethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBCassandraTableThroughput -InputObject <PSCassandraKeyspaceGetResul
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBCassandraTableThroughput** mendapatkan objek throughput yang terkait dengan Keyspace tertentu.
+**Cmdlet Get-AzCosmosDBCassandraTableThroughput** mendapatkan objek throughput yang sesuai dengan Keyspace tertentu.
 
 ## EXAMPLES
 
@@ -103,7 +106,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Tabel Cassandra.
 
 ```yaml
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

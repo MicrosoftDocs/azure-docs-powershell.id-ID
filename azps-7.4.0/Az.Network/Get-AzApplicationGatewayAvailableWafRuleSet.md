@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableWafRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableWafRuleSet.md
-ms.openlocfilehash: 67890f89e4858f106b2aacb201da4664f2e37b2f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c8ea6e4cb9cdea9d34a1ea2f3ef8efaf8f01352f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579152"
 ---
 # Get-AzApplicationGatewayAvailableWafRuleSet
 
 ## SYNOPSIS
-Mendapatkan semua kumpulan aturan firewall aplikasi web yang tersedia.
+Mendapatkan semua seperangkat aturan firewall aplikasi web yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayavailablewafruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzApplicationGatewayAvailableWafRuleSet [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayAvailableWafRuleSet** mendapatkan semua kumpulan aturan firewall aplikasi web yang tersedia.
+Cmdlet **Get-AzApplicationGatewayAvailableWafRuleSet** mendapatkan semua seperangkat aturan firewall aplikasi web yang tersedia.
 
 ## EXAMPLES
 
@@ -33,7 +36,7 @@ Cmdlet **Get-AzApplicationGatewayAvailableWafRuleSet** mendapatkan semua kumpula
 $availableRuleSets = Get-AzApplicationGatewayAvailableWafRuleSet
 ```
 
-Perintah ini mengembalikan semua kumpulan aturan firewall aplikasi web yang tersedia.
+Perintah ini mengembalikan semua seperangkat aturan firewall aplikasi web yang tersedia.
 
 ## PARAMETERS
 
@@ -53,11 +56,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

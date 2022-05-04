@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: 08b5bb2b78aa527a130a14316229729b303fbbaa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dea88d0cf6de0f6b0ac5dcead2a0c90bf5356bea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679338"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574292"
 ---
 # Get-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
-Mendapatkan sumber daya log alur atau daftar sumber daya log aliran di langganan dan kawasan yang ditentukan.
+Mendapatkan sumber daya log alur atau daftar sumber daya log alur di langganan dan wilayah yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzNetworkWatcherFlowLog -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber daya log alur atau daftar sumber daya log aliran di langganan dan kawasan yang ditentukan.
+Mendapatkan sumber daya log alur atau daftar sumber daya log alur di langganan dan wilayah yang ditentukan.
 
 ## EXAMPLES
 
@@ -53,11 +56,11 @@ Mendapatkan sumber daya log alur atau daftar sumber daya log aliran di langganan
 Get-AzNetworkWatcherFlowLog -Location eastus -Name pstest
 ```
 
-Nama : pstest Id : /subscriptions/bbbbbb-bb-bb-bb-bbbbbbbbbb/resourceGroups/NetworkWatcherRG/provid ers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus/FlowLogs/pstest Etag : W/"f6047360-d797-4ca6-a9ec-28b5aec5c768" ProvisioningState : Lokasi Berhasil : eastus TargetResourceId : /subscriptions/56abfbd6-ec72-4ce9-831f-bc2b6f2c5505/resourceGroups/MyFlowLog/provide  rs/Microsoft.Network/networkSecurityGroups/MyNSG StorageId : /subscriptions/56abfbd6-ec72-4ce9-831f-bc2b6f2c5505/resourceGroups/FlowLogsV2Demo/provider s/Microsoft. Storage/storageAccounts/MySTorage Enabled : True RetentionPolicy : { "Days": 5, "Enabled": true } Format : { "Type": "JSON", "Version": 2 } FlowAnalyticsConfiguration : { "networkWatcherFlowAnalyticsConfiguration": { "enabled": true, "workspaceId": "bbbbbbbb-bb-bb-bb-bb", "workspaceRegion": "eastus", "workspaceResourceId": "/subscriptions/bbbbbb-bbbb-bb-bb-bbbb-bbbb-bbbbbbbbbbbb/resourcegr  oups/flowlogsv2demo/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace", "trafficAnalyticsInterval": 60 }
+Nama : Id pstest : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/NetworkWatcherRG/provid ers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus/FlowLogs/pstest Etag : W/"f6047360-d797-4ca6-a9ec-28b5aec5c768" ProvisioningState : Lokasi berhasil : eastus TargetResourceId : /subscriptions/56abfbd6-ec72-4ce9-831f-bc2b6f2c5505/resourceGroups/MyFlowLog/provide  rs/Microsoft.Network/networkSecurityGroups/MyNSG StorageId : /subscriptions/56abfbd6-ec72-4ce9-831f-bc2b6f2c5505/resourceGroups/FlowLogsV2Demo/provider s/Microsoft. Storage/storageAccounts/MySTorage Diaktifkan : True RetentionPolicy : { "Days": 5, "Enabled": true } Format : { "Type": "JSON", "Version": 2 } FlowAnalyticsConfiguration : { "networkWatcherFlowAnalyticsConfiguration": { "enabled": true, "workspaceId": "bbbbbbbb-bbbb-bbbb-bbbb", "workspaceRegion": "eastus", "workspaceResourceId": "/subscriptions/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb/resourcegr  oups/flowlogsv2demo/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace", "trafficAnalyticsInterval": 60 }
 
 ### Contoh 2
 
-Mendapatkan sumber daya log alur atau daftar sumber daya log aliran di langganan dan kawasan yang ditentukan. (autogenerasi)
+Mendapatkan sumber daya log alur atau daftar sumber daya log alur di langganan dan wilayah yang ditentukan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: String
@@ -96,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama log alur.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama network watcher.
 
 ```yaml
 Type: String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -192,7 +195,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -232,9 +235,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

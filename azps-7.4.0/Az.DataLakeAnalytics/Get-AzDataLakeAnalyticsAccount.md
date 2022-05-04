@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: cdb2abc247c0bffc75a525b009fc2bf1da51265d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1a686b01e4f40656800a7a0775409742815bc1cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228213"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567706"
 ---
 # Get-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
 Mendapatkan informasi tentang akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzDataLakeAnalyticsAccount [[-ResourceGroupName] <String>] [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeAnalyticsAccount** mendapatkan informasi tentang akun Data Lake Analytics Azure.
+Cmdlet **Get-AzDataLakeAnalyticsAccount** mendapatkan informasi tentang akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang akun Data Lake Analytics
+### Contoh 1: Mendapatkan informasi tentang akun Data Lake Analytics
 ```powershell
 Get-AzDataLakeAnalyticsAccount -Name "ContosoAdlAccount"
 ```
@@ -66,7 +69,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun Data Lake Analytics.
 
 ```yaml
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

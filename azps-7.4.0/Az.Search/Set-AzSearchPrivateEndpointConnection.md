@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/set-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Set-AzSearchPrivateEndpointConnection.md
-ms.openlocfilehash: aba83e41597e4b140e8ff79fa1d5ceb9a409e9fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d0b3d37de1d30229e6b2815fa1d831a9eace41bb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223155"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583166"
 ---
 # Set-AzSearchPrivateEndpointConnection
 
 ## SYNOPSIS
 Perbarui koneksi titik akhir privat ke layanan Azure Cognitive Search.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.search/set-azsearchprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Set-AzSearchPrivateEndpointConnection -ResourceGroupName arjagann -ServiceName a
 }
 ```
 
-Contoh ini memperbarui status koneksi titik akhir privat layanan Azure Cognitive Search menjadi "Ditolak".
+Contoh ini memperbarui status koneksi titik akhir privat dari layanan Azure Cognitive Search menjadi "Ditolak".
 
 ## PARAMETERS
 
@@ -119,8 +122,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-nama koneksi titik akhir privat Layanan Azure Cognitive Search
+### -Name
+nama koneksi titik akhir privat Azure Cognitive Search Service
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya layanan tautan privat
+Id sumber daya layanan private link
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status koneksi layanan tautan privat
+Status koneksi layanan private link
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSPrivateLinkServiceConnectionStatus
@@ -210,8 +213,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

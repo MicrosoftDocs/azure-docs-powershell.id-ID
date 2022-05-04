@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.baremetal/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Update-AzBareMetal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BareMetal/help/Update-AzBareMetal.md
-ms.openlocfilehash: 8b14b64afbb75b7af295d6207cd135964f49b2aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 79dfaedfeaf4fc538c995683047c7169eda6d4dd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878796"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573338"
 ---
 # Update-AzBareMetal
 
 ## SYNOPSIS
-Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans tertentu.
+Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.baremetal/update-azbaremetal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzBareMetal -InputObject <IBareMetalIdentity> [-Tag <Hashtable>] [-Defaul
 ```
 
 ## DESCRIPTION
-Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans tertentu.
+Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Location       Name        ResourceGroupName
 southcentralus oraclerac53 SAT09A-T530
 ```
 
-Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans tertentu.
+Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
 
 ### Contoh 2: UpdateViaIdentityExpanded
 ```powershell
@@ -60,7 +63,7 @@ Location       Name        ResourceGroupName
 southcentralus oraclerac53 SAT09A-T530
 ```
 
-Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans tertentu.
+Menambal bidang Tag instans Azure BareMetal untuk langganan, grup sumber daya, dan nama instans yang ditentukan.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BareMetal.Models.IBareMetalIdentity
@@ -94,8 +97,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Azure BareMetal di instans Azure.
+### -Name
+Nama Azure BareMetal pada instans Azure.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -155,8 +158,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -209,7 +212,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IBareMetalIdentity>: Parameter Identitas
   - `[AzureBareMetalInstanceName <String>]`: Nama Azure BareMetal pada instans Azure.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
-ms.openlocfilehash: 3c02c167137ebe6b1b9895145145e0205767ea85
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85a0838c5de7ef5c51af05423ecb226aa20d4f28
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276885"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566735"
 ---
 # Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
 ## SYNOPSIS
-Menghapus diska untuk item yang dilindungi replikasi.
+Menghapus disk ke item yang dilindungi replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrreplicationprotecteditemdisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,14 +46,14 @@ Cmdlet **Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk** menghapus di
 Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -VhdUri $vhdUri
 ```
 
-Mulai operasi untuk menghapus disk yang ditentukan dari proteksi VM untuk disk yang tidak dikelola.
+Mulai operasi untuk menghapus disk yang ditentukan dari VM perlindungan untuk disk yang tidak Dikelola.
 
 ### Contoh 2
 ```powershell
 Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -ReplicationProtectedItem $rpi -DiskId $diskId
 ```
 
-Mulai operasi untuk menghapus disk tertentu dari proteksi VM untuk Disk terkelola.
+Mulai operasi untuk menghapus disk tertentu dari VM perlindungan untuk Disk terkelola.
 
 ### Contoh 3
 ```powershell
@@ -58,12 +61,12 @@ $currentJob = Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk -Replicat
 Get-AzRecoveryServicesAsrJob -name $currentJob.id
 ```
 
-Memulai operasi untuk menghapus disk yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi disk yang dilindungi penghapusan.
+Memulai operasi untuk menghapus disk yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi hapus disk yang dilindungi.
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek item dilindungi replikasi ASR yang terkait dengan disk mana yang akan dihapus.
+Objek input ke cmdlet: Objek item yang dilindungi replikasi ASR yang sesuai dengan disk mana yang akan dihapus.
 
 ```yaml
 Type: ASRReplicationProtectedItem
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

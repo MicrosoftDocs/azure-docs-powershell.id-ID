@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerStep.md
-ms.openlocfilehash: f6bc018e280776ee11d25d459f1f17396850ee18
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 34643aae5078934b10c7127098c5b07a15c98959
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002655"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584066"
 ---
 # Get-AzDeploymentManagerStep
 
 ## SYNOPSIS
-Dapatkan langkahnya.
+Mendapatkan langkah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,9 +42,9 @@ Get-AzDeploymentManagerStep [-InputObject] <PSStepResource> [-DefaultProfile <IA
 
 ## DESCRIPTION
 Cmdlet **Get-AzDeploymentManagerStep** mendapatkan langkah, dan mengembalikan objek yang mewakili langkah tersebut.
-Tentukan langkah menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda bisa menyediakan objek Langkah atau ResourceId.
+Tentukan langkah berdasarkan nama dan nama grup sumber dayanya. Secara bergantian, Anda dapat menyediakan objek Langkah atau ResourceId.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke sumber artefak menggunakan cmdlet Set-AzDeploymentManagerStep.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke sumber artefak dengan menggunakan cmdlet Set-AzDeploymentManagerStep.
 
 ## EXAMPLES
 
@@ -59,12 +62,12 @@ Get-AzDeploymentManagerStep -ResourceId "/subscriptions/subscriptionId/resourceg
 
 Perintah ini mendapatkan langkah bernama ContosoService1WaitStep di ContosoResourceGroup.
 
-### Contoh 3: Mendapatkan langkah menggunakan objek yang dikembalikan oleh New-AzDeploymentManagerStep
+### Contoh 3: Dapatkan langkah menggunakan objek yang dikembalikan oleh New-AzDeploymentManagerStep
 ```powershell
 Get-AzDeploymentManagerStep -InputObject $stepObject
 ```
 
- Perintah ini mendapatkan langkah yang namanya dan ResourceGroup masing-masing cocok dengan properti Name and ResourceGroupName dari $stepObject.
+ Perintah ini mendapatkan langkah yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName dari $stepObject.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama langkah.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: f95849fdd3c5d9d62650581b046b892ab2042ea6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 094c85724231aaa381baec20fe9a8c721e14d55c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125505"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579512"
 ---
 # Get-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
-Mengembalikan informasi tentang pemicu yang dijalankan.
+Mengembalikan informasi tentang eksekusi pemicu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Get-AzDataFactoryV2TriggerRun [-Name] <String> [-TriggerRunStartedAfter] <DateTi
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzDataFactoryV2TriggerRun** mengembalikan informasi mendetail tentang pemicu yang dijalankan untuk pemicu tertentu dalam jangka waktu tertentu.
+Perintah **Get-AzDataFactoryV2TriggerRun** mengembalikan informasi terperinci tentang eksekusi pemicu untuk pemicu yang ditentukan dalam jangka waktu tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang pemicu jalankan
+### Contoh 1: Mendapatkan informasi tentang eksekusi pemicu
 ```powershell
 Get-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "WikiTrigger" -TriggerRunStartedAfter "2017-09-01" -TriggerRunStartedBefore "2019-09-30"
 ```
@@ -53,7 +56,7 @@ Get-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF
     Status              : Succeeded
 ```
 
-Perintah ini memperlihatkan informasi tentang jalankan untuk "WikiTrigger" di pabrik "WikiADF" yang dimulai antara "2017-09-01" dan "2019-09-30".
+Perintah ini menunjukkan informasi tentang eksekusi untuk "WikiTrigger" di pabrik "WikiADF" yang dimulai antara "2017-09-01" dan "2019-09-30".
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -132,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -TriggerRunstartedAfter
-Waktu di atau setelah pemicu dijalankan mulai dijalankan dalam format ISO8601.
+### -TriggerRunStartedAfter
+Waktu pada atau setelah eksekusi pemicu mulai dijalankan dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunStartedBefore
-Waktu di atau sebelum pemicu dijalankan mulai dijalankan dalam format ISO8601.
+Waktu pada atau sebelum eksekusi pemicu mulai dijalankan dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

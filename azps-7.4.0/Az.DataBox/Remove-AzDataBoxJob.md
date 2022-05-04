@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Remove-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Remove-AzDataBoxJob.md
-ms.openlocfilehash: ad0e7a77ff670d019672ec2ccc5240dcec41791b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be3e79c50ce73d498d38fb9cbb2337576e7bfd93
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288819"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575210"
 ---
 # Remove-AzDataBoxJob
 
 ## SYNOPSIS
 Menghapus pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/remove-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Menghapus pekerjaan
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -68,9 +71,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+nama pekerjaan harus memiliki panjang antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

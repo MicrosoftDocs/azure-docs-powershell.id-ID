@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobRestorePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageBlobRestorePolicy.md
-ms.openlocfilehash: c5eb50aaf24711e2cf37e0036ce057c2e80d202d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 84e6d83d285de187c64c06538923fcd8a9033865
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737118"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582860"
 ---
 # Disable-AzStorageBlobRestorePolicy
 
 ## SYNOPSIS
 Menonaktifkan Kebijakan Pemulihan Blob pada akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/disable-azstorageblobrestorepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,16 +41,16 @@ Disable-AzStorageBlobRestorePolicy [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageBlobRestorePolicy** menonaktifkan Kebijakan Pemulihan Blob untuk layanan Azure Storage Blob.
+Cmdlet **Disable-AzStorageBlobRestorePolicy** menonaktifkan Kebijakan Pemulihan Blob untuk layanan blob Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan Kebijakan Pemulihan Blob untuk layanan Azure Storage Blob di akun Storage
+### Contoh 1: Menonaktifkan Kebijakan Pemulihan Blob untuk layanan blob Azure Storage pada akun Storage
 ```powershell
 PS C:\> Disable-AzStorageBlobRestorePolicy -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount"
 ```
 
-Perintah ini Menonaktifkan Kebijakan Pemulihan Blob untuk layanan Azure Storage Blob pada akun Storage.
+Perintah ini Menonaktifkan Kebijakan Pemulihan Blob untuk layanan blob Azure Storage pada akun Storage.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menampilkan ServiceProperties
+Tampilkan ServiceProperties
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti Blob service.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -141,8 +144,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

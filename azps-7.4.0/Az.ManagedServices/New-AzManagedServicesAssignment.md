@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAssignment.md
-ms.openlocfilehash: 2d0cba3d3f1e0a414b86808112e67e2b7379afed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d7cbfce47cb301803e8edaf712615f900bdc8d42
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746226"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583508"
 ---
 # New-AzManagedServicesAssignment
 
 ## SYNOPSIS
-Membuat atau memperbarui tugas pendaftaran.
+Membuat atau memperbarui penugasan pendaftaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzManagedServicesAssignment -Name <String> [-Scope <String>] [-RegistrationD
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui tugas pendaftaran.
+Membuat atau memperbarui penugasan pendaftaran.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat penetapan pendaftaran Azure Lighthouse baru pada lingkup langganan
+### Contoh 1: Membuat penetapan pendaftaran Azure Lighthouse baru di cakupan langganan
 ```powershell
 New-AzManagedServicesAssignment -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -Scope "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -RegistrationDefinitionId  "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.ManagedServices/registrationDefinitions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
@@ -40,9 +43,9 @@ Name                                 Type
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationAssignments
 ```
 
-Membuat penetapan pendaftaran Azure Lighthouse baru pada lingkup langganan dengan definisi pendaftaran.
+Membuat penetapan pendaftaran Azure Lighthouse baru pada cakupan langganan dengan definisi pendaftaran.
 
-### Contoh 2: Membuat penetapan pendaftaran Azure Lighthouse baru di lingkup grup sumber daya
+### Contoh 2: Membuat penetapan pendaftaran Azure Lighthouse baru di cakupan grup sumber daya
 ```powershell
 New-AzManagedServicesAssignment -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -Scope "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testgroup" -RegistrationDefinitionId  "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.ManagedServices/registrationDefinitions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
@@ -53,12 +56,12 @@ Name                                 Type
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationAssignments
 ```
 
-Membuat penetapan pendaftaran Azure Lighthouse baru di lingkup grup sumber daya dengan definisi pendaftaran.
+Membuat penetapan pendaftaran Azure Lighthouse baru di cakupan grup sumber daya dengan definisi pendaftaran.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-GUID tugas pendaftaran.
+### -Name
+GUID penugasan pendaftaran.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationDefinitionId
-Jalur yang sepenuhnya memenuhi syarat dari definisi pendaftaran.
+Jalur definisi pendaftaran yang sepenuhnya memenuhi syarat.
 
 ```yaml
 Type: System.String
@@ -132,8 +135,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup sumber daya.
+### -Cakupan
+Cakupan sumber daya.
 
 ```yaml
 Type: System.String
@@ -147,8 +150,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

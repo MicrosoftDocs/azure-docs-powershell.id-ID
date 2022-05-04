@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmss.md
-ms.openlocfilehash: f9fdd52d6b582b9bd3c14dd19ff184b7fd54e8b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a173ec2a2aca5811f112815ef4669ae9a9adf36c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319365"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574868"
 ---
 # Remove-AzVmss
 
 ## SYNOPSIS
-Menghapus VMSS atau mesin virtual yang ada dalam VMSS.
+Menghapus VMSS atau komputer virtual yang berada dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,9 +30,9 @@ Remove-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Instan
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVmss** menghapus Kumpulan Skala Mesin Virtual (VMSS) dari Azure.
-Cmdlet ini juga dapat digunakan untuk menghapus mesin virtual tertentu di dalam VMSS.
-Anda dapat menggunakan parameter *InstanceId* untuk menghapus mesin virtual tertentu di dalam VMSS.
+Cmdlet **Remove-AzVmss** menghapus Virtual Machine Scale Set (VMSS) dari Azure.
+Cmdlet ini juga dapat digunakan untuk menghapus komputer virtual tertentu di dalam VMSS.
+Anda dapat menggunakan parameter *InstanceId* untuk menghapus komputer virtual tertentu di dalam VMSS.
 
 ## EXAMPLES
 
@@ -40,17 +43,17 @@ Remove-AzVmss -ResourceGroupName "Group001" -VMScaleSetName "VMScaleSet001"
 
 Perintah ini menghapus VMSS bernama VMScaleSet001 yang termasuk dalam grup sumber daya bernama Group001.
 
-### Contoh 2: Menghapus mesin virtual dari dalam VMSS
+### Contoh 2: Menghapus komputer virtual dari dalam VMSS
 ```powershell
 Remove-AzVmss -ResourceGroupName "Group002" -VMScaleSetName "VMScaleSet002" -InstanceId "3";
 ```
 
-Perintah ini menghapus mesin virtual dengan ID instans 3 dari VMSS bernama VMScaleSet002 yang termasuk dalam grup sumber daya bernama Group002.
+Perintah ini menghapus komputer virtual dengan ID instans 3 dari VMSS bernama VMScaleSet002 yang termasuk dalam grup sumber daya bernama Group002.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceDeletion
-Parameter opsional untuk memaksa penghapusan VM.
+Parameter opsional untuk memaksa menghapus VM.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -InstanceId
 Menentukan, sebagai array string, ID instans yang perlu dimulai.
-Misalnya: `-InstanceId "0", "3"`
+Contohnya: `-InstanceId "0", "3"`
 
 ```yaml
 Type: System.String[]
@@ -141,8 +144,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Spesies nama VMSS yang cmdlet ini hapus.
-Jika Anda menentukan parameter *InstanceId* , cmdlet akan menghapus mesin virtual tertentu dari VMSS yang dinamai oleh parameter ini.
+Spesies nama VMSS yang dihapus cmdlet ini.
+Jika Anda menentukan parameter *InstanceId* , cmdlet akan menghapus komputer virtual yang ditentukan dari VMSS yang dinamai oleh parameter ini.
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -203,18 +206,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVmss](./Get-AzVmss.md)
+[Dapatkan-AzVmss](./Get-AzVmss.md)
 
-[New-AzVmss](./New-AzVmss.md)
+[Baru-AzVmss](./New-AzVmss.md)
 
-[Mulai ulang-AzVms](./Restart-AzVmss.md)
+[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
 
-[Set-AzVms](./Set-AzVmss.md)
+[Set-AzVmss](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Pembaruan-AzVms](./Update-AzVmss.md)
+[Update-AzVmss](./Update-AzVmss.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceConnectionString.md
-ms.openlocfilehash: 91ea8dfa2743ec9987e0a96c917ab22f0f4932b2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c2428d701fa7e667c361c9ccba87f9347b0ba23
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285813"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572841"
 ---
 # Get-AzIotHubDeviceConnectionString
 
 ## SYNOPSIS
-Dapatkan string koneksi perangkat IoT target di Hub Iot.
+Dapatkan string koneksi perangkat IoT target di Iot Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeviceconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDeviceConnectionString [-ResourceId] <String> [-DeviceId <String>] [
 ```
 
 ## DESCRIPTION
-Daftar string koneksi semua perangkat atau perangkat IoT target yang terdapat dalam Azure IoT Hub.
+Mencantumkan string koneksi semua perangkat atau perangkat IoT target yang terkandung dalam Azure IoT Hub.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ device1   HostName=myiothub.azure-devices.net;DeviceId=device1;SharedAccessKey=/
 device2   HostName=myiothub.azure-devices.net;DeviceId=device2;x509=true
 ```
 
-Menampilkan string koneksi semua perangkat dalam Hub Iot.
+Menampilkan semua string koneksi perangkat di Iot Hub.
 
 ### Contoh 2
 ```powershell
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Tipe kunci kebijakan akses bersama untuk auth.
+Jenis kunci kebijakan akses bersama untuk autentikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSKeyType
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

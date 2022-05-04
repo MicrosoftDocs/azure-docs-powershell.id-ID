@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubJob.md
-ms.openlocfilehash: cb52211b8db0d6baf013d5b60f2fd5f9a00c2643
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9b8719240be1ca02e00157d149939baafbcd4149
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121887"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583886"
 ---
 # Get-AzIotHubJob
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pekerjaan IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,25 +28,25 @@ Get-AzIotHubJob [-ResourceGroupName] <String> [-Name] <String> [[-JobId] <String
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang IotHub Job.
-Pekerjaan IotHub dibuat ketika operasi impor atau ekspor diinisialisasi menggunakan perintah New-AzIotHubExportDevices atau New-AzIotHubImportDevices.
+Mendapatkan informasi tentang Pekerjaan IotHub.
+Pekerjaan IotHub dibuat saat operasi impor atau ekspor diinisialisasi menggunakan perintah New-AzIotHubExportDevices atau New-AzIotHubImportDevices.
 Anda dapat mencantumkan semua pekerjaan atau memfilter pekerjaan menurut Pengidentifikasi Pekerjaan.
 
 ## EXAMPLES
 
-### Contoh 1 Daftar semua Pekerjaan
+### Contoh 1 Mencantumkan semua Pekerjaan
 ```powershell
 Get-AzIotHubJob -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
 Mendapatkan semua pekerjaan untuk IotHub bernama "myiothub"
 
-### Contoh 2 Dapatkan Pekerjaan tertentu
+### Contoh 2 Mendapatkan Pekerjaan tertentu
 ```powershell
 Get-AzIotHubJob -ResourceGroupName "myresourcegroup" -Name "myiothub" -JobId 3630fc31-4caa-43e8-a232-ea0577221cb2
 ```
 
-Mendapatkan informasi tentang pekerjaan dengan pengidentifikasi "3630fc31-4caa-43e8-a232-ea0577221cb2" untuk IotHub bernama "myiothub"
+Mendapatkan informasi tentang pekerjaan dengan pengidentifikasi "3630fc31-4caa-43e8-a232-ea05772221cb2" untuk IotHub bernama "myiothub"
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama hub IoT. 
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

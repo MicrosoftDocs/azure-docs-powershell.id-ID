@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayPacketCapture.md
-ms.openlocfilehash: 349a5a06760898d25de6050f91c8aa8d2408047c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4ccceadab905a7f1571998d31495bf068c0a61bb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870480"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569126"
 ---
 # Stop-AzVirtualNetworkGatewayPacketCapture
 
 ## SYNOPSIS
-Menghentikan Operasi Penangkapan Paket di Gateway Virtual Network.
+Menghentikan Operasi Pengambilan Paket pada Gateway Virtual Network.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-azvirtualnetworkgatewaypacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzVirtualNetworkGatewayPacketCapture -ResourceId <String> -SasUrl <String> 
 ```
 
 ## DESCRIPTION
-Menghentikan Operasi Penangkapan Paket di Gateway Virtual Network dan akan mengunggah hasilnya pada wadah penyimpanan SasUrl yang diberikan.
+Menghentikan Operasi Penangkapan Paket di Gateway Virtual Network dan akan mengunggah hasilnya pada SasUrl kontainer penyimpanan tertentu.
 
 ## EXAMPLES
 
@@ -105,7 +108,7 @@ Id                :
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -119,8 +122,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -164,7 +167,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasUrl
-Tangkapan paket URL SAS di gateway jaringan virtual.
+Pengambilan paket URL SAS di gateway jaringan virtual.
 
 ```yaml
 Type: String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

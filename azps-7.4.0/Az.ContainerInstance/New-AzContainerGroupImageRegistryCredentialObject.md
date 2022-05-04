@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupImageRegistryCredentialObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupImageRegistryCredentialObject.md
-ms.openlocfilehash: 54af84415bdf676c7547004162465732d793c407
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c3362fe6956ae2e553269a1a46fb3d81e800b98a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289233"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573212"
 ---
 # New-AzContainerGroupImageRegistryCredentialObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ImageRegistryCredential
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroupimageregistrycredentialobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Membuat objek dalam memori untuk ImageRegistryCredential
 
 ## EXAMPLES
 
-### Contoh 1: Menyiapkan kredensial registri gambar untuk membuat grup wadah
+### Contoh 1: Menyiapkan kredensial registri gambar untuk membuat grup kontainer
 ```powershell
 New-AzContainerGroupImageRegistryCredentialObject -Server "myserver.com" -Username "username" -Password (ConvertTo-SecureString "******" -AsPlainText -Force) 
 ```
@@ -40,11 +43,11 @@ Password          Server       Username
 ****** myserver.com username
 ```
 
-Perintah ini menyiapkan kredensial registri gambar untuk membuat grup wadah
+Perintah ini menyiapkan kredensial registri gambar untuk membuat grup kontainer
 
 ## PARAMETERS
 
-### -Acridentity
+### -AcrIdentity
 Identitas dengan akses ke ACR.
 
 ```yaml
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Kata sandi untuk registri privat.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

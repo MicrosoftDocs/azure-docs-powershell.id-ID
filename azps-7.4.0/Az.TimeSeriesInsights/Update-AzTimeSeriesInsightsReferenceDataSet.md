@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 62a8cf341bd54308d12d03f18b26b4ac874da39c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 33c36d2f18ac5593a58062e8c3708fe9011526a1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269127"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559786"
 ---
 # Update-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
-Memperbarui kumpulan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu.
+Memperbarui himpunan data referensi dengan nama yang ditentukan di langganan, grup sumber daya, dan lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Update-AzTimeSeriesInsightsReferenceDataSet -InputObject <ITimeSeriesInsightsIde
 ```
 
 ## DESCRIPTION
-Memperbarui kumpulan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu.
+Memperbarui himpunan data referensi dengan nama yang ditentukan di langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kumpulan data referensi tertentu menurut nama
+### Contoh 1: Memperbarui himpunan data referensi tertentu berdasarkan nama
 ```powershell
 Update-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -Name dstest001 -ResourceGroupName testgroup -Tag @{"tstg"="lb001"}
 ```
@@ -47,9 +50,9 @@ Location Name      Type
 eastus   dstest001 Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 ```
 
-Perintah ini memperbarui kumpulan data referensi tertentu.
+Perintah ini memperbarui himpunan data referensi tertentu.
 
-### Contoh 2: Memperbarui kumpulan data referensi tertentu menurut objek
+### Contoh 2: Memperbarui himpunan data referensi tertentu menurut objek
 ```powershell
 $ds = Get-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -ResourceGroupName testgroup -ReferenceDataSetName dstest001
 Update-AzTimeSeriesInsightsReferenceDataSet -InputObject $ds -Tag @{"tstg"="lb001"}
@@ -60,7 +63,7 @@ Location Name      Type
 eastus   dstest001 Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 ```
 
-Perintah ini memperbarui kumpulan data referensi tertentu.
+Perintah ini memperbarui himpunan data referensi tertentu.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -109,8 +112,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan data referensi Insights Time Series yang terkait dengan lingkungan tertentu.
+### -Name
+Nama himpunan data referensi Insights Time Series yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci properti tambahan untuk kumpulan data referensi.
+Pasangan kunci-nilai properti tambahan untuk himpunan data referensi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -169,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -223,9 +226,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
+  - `[ReferenceDataSetName <String>]`: Nama himpunan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 

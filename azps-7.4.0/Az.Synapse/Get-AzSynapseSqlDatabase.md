@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlDatabase.md
-ms.openlocfilehash: f6c79eed686c56ad668e4d5758cc3925b27cd262
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ca326f49003a579fa7c6c7e75b754d84d2b9e215
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863208"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578738"
 ---
 # Get-AzSynapseSqlDatabase
 
 ## SYNOPSIS
-Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu. Mendapatkan database SQL Synapse Analytics.
+Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses oleh langganan tertentu. Mendapatkan database SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSqlDatabase
 ```
 
-Perintah ini mendapatkan semua database SQL di bawah ruang kerja melalui saluran.
+Perintah ini mendapatkan semua database SQL di bawah ruang kerja melalui alur.
 
 ### Contoh 4
 ```powershell
@@ -87,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama SQL Database Synapse.
+### -Name
+Nama Synapse SQL Database.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

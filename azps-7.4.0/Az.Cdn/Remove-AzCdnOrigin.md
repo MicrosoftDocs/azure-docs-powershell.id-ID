@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOrigin.md
-ms.openlocfilehash: 9c62aae2564540ac6a68692121371c0b59432558
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff1012b42fe5e14139894baafcffa98b57900ca7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232101"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559246"
 ---
 # Remove-AzCdnOrigin
 
 ## SYNOPSIS
 Menghapus asal CDN
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/remove-azcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzCdnOrigin [-PassThru] -CdnOrigin <PSOrigin> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Remove-AzCdnOrigin akan menghapus asal CDN dari titik akhir tertentu. Jika asalnya adalah satu-satunya asal dalam titik akhir yang ditentukan, penghapusan akan gagal karena setidaknya diperlukan 1 asal. 
+Remove-AzCdnOrigin akan menghapus asal CDN dari titik akhir yang diberikan. Jika asalnya adalah satu-satunya asal dalam titik akhir yang ditentukan, maka penghapusan akan gagal karena setidaknya 1 asal diperlukan. 
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Remove-AzCdnOrigin akan menghapus asal CDN dari titik akhir tertentu. Jika asaln
 Remove-AzCdnOrigin -ResourceGroupName $resourceGroupName -ProfileName $profileName -EndpointName $endpointName -OriginName $originName
 ```
 
-Cmdlet ini akan menghapus asal yang ditentukan dari titik akhir tertentu. 
+Cmdlet ini akan menghapus asal yang ditentukan dari titik akhir yang diberikan. 
 
 ## PARAMETERS
 
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya asal Azure CDN.
+Id sumber daya dari asal Azure CDN.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,11 +207,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Test-AzStackHCIConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Test-AzStackHCIConnection.md
-ms.openlocfilehash: 310c828337471ac6020233d09b800308f622bf5f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dc464eefcbd5e949b377bca643bd96a9fa38b53a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864522"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565186"
 ---
 # Test-AzStackHCIConnection
 
 ## SYNOPSIS
-Test-AzStackHCIConnection memverifikasi konektivitas dari simpul tergugus lokal ke layanan Azure yang diperlukan oleh Azure Stack HCI.
+Test-AzStackHCIConnection memverifikasi konektivitas dari simpul terkluster lokal ke layanan Azure yang diperlukan oleh Azure Stack HCI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/test-azstackhciconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Test-AzStackHCIConnection [[-EnvironmentName] <String>] [[-Region] <String>] [[-
 ```
 
 ## DESCRIPTION
-Test-AzStackHCIConnection memverifikasi konektivitas dari simpul tergugus lokal ke layanan Azure yang diperlukan oleh Azure Stack HCI.
+Test-AzStackHCIConnection memverifikasi konektivitas dari simpul terkluster lokal ke layanan Azure yang diperlukan oleh Azure Stack HCI.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ EndpointTested: https://azurestackhci-df.azurefd.net/health
 IsRequired: True
 Result: Succeeded
 ```
-Memanggil salah satu simpul kluster. Kasus keberhasilan.
+Memanggil pada salah satu node kluster. Kasus sukses.
 
 ### CONTOH 2
 ```powershell
@@ -54,12 +57,12 @@ IsRequired: True
 Result: Failed
 FailedNodes: Node1inClus2, Node2inClus3
 ```
-Memanggil salah satu simpul kluster. Kasus gagal.
+Memanggil pada salah satu node kluster. Kasus gagal.
 
 ## PARAMETERS
 
 ### -ComputerName
-Menentukan salah satu simpul kluster di kluster lokal yang sedang didaftarkan ke Azure.
+Menentukan salah satu node kluster di kluster lokal yang sedang didaftarkan ke Azure.
 
 ```yaml
 Type: System.String
@@ -73,9 +76,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Menentukan kredensial untuk ComputerName.
-Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini yang menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -106,9 +109,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kawasan
-Menentukan Kawasan yang akan disambungkan.
-Tidak digunakan kecuali itu adalah kawasan Canary.
+### -Wilayah
+Menentukan Wilayah yang akan disambungkan.
+Tidak digunakan kecuali itu adalah wilayah Canary.
 
 ```yaml
 Type: System.String
@@ -123,18 +126,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
-### Uji: Nama uji yang dilakukan.
+### Uji: Nama pengujian yang dilakukan.
 ### EndpointTested: Titik akhir yang digunakan dalam pengujian.
 ### IsRequired: True atau False
 ### Hasil: Berhasil atau Gagal
-### FailedNodes: Daftar node yang gagal dilakukan pengujian.
+### FailedNodes: Daftar simpul tempat pengujian gagal.
 ## NOTES
 
 ## RELATED LINKS

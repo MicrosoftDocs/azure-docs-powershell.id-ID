@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 2d303db3833882a07878c65082e78a505408f2c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e675682c630c8807a4b9335b7df91f4d6902fe02
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560200"
 ---
 # Get-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa cadangan penyimpanan jangka panjang.
+Mendapatkan satu atau beberapa cadangan retensi jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaselongtermretentionbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,11 +68,11 @@ Get-AzSqlDatabaseLongTermRetentionBackup [-InputObject] <AzureSqlDatabaseModel> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseLongTermRetentionBackup** mendapatkan semua cadangan penyimpanan jangka panjang untuk lokasi, server, atau database atau mendapatkan cadangan penyimpanan jangka panjang tertentu.
+Cmdlet **Get-AzSqlDatabaseLongTermRetentionBackup** mendapatkan semua cadangan retensi jangka panjang untuk lokasi, server, atau database atau mendapatkan cadangan retensi jangka panjang tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua cadangan untuk lokasi
+### Contoh 1: Mendapatkan semua cadangan untuk lokasi
 ```powershell
 Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope
 ```
@@ -100,9 +103,9 @@ ResourceGroupName                :
 BackupStorageRedundancy          : Geo
 ```
 
-Perintah ini mendapatkan semua cadangan penyimpanan jangka panjang untuk semua database (yang mungkin hidup atau dihapus) di southeastasia, grup sumber daya hanya akan diatur jika server aktif.
+Perintah ini mendapatkan semua cadangan retensi jangka panjang untuk semua database (yang mungkin hidup atau dihapus) di southeastasia, grup sumber daya akan diatur hanya jika server aktif.
 
-### Contoh 2: Dapatkan semua cadangan untuk lokasi di bawah grup sumber daya
+### Contoh 2: Mendapatkan semua cadangan untuk lokasi di bawah grup sumber daya
 ```powershell
 Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope -ResourceGroup resourceGroup01
 ```
@@ -121,9 +124,9 @@ ResourceGroupName          : resourceGroup01
 BackupStorageRedundancy      : Geo
 ```
 
-Perintah ini mendapatkan semua cadangan penyimpanan jangka panjang untuk semua database (yang mungkin hidup atau dihapus) di bawah grup sumber daya di northeurope.
+Perintah ini mendapatkan semua cadangan retensi jangka panjang untuk semua database (yang mungkin hidup atau dihapus) di bawah grup sumber daya di northeurope.
 
-### Contoh 3: Dapatkan cadangan penyimpanan jangka panjang tertentu
+### Contoh 3: Mendapatkan cadangan retensi jangka panjang tertentu
 ```powershell
 Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope -ServerName server01 -DatabaseName database01 -BackupName "601061b7-d10b-46e0-bf77-a2bfb16a6add;131655666550000000"
 ```
@@ -144,7 +147,7 @@ BackupStorageRedundancy      : Geo
 
 Perintah ini mendapatkan cadangan dengan nama 601061b7-d10b-46e0-bf77-a2bfb16a6add;131655666550000000
 
-### Contoh 4: Mendapatkan semua cadangan penyimpanan jangka panjang untuk database
+### Contoh 4: Mendapatkan semua cadangan retensi jangka panjang untuk database
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01 | Get-AzSqlDatabaseLongTermRetentionBackup
 ```
@@ -163,9 +166,9 @@ ResourceGroupName          :
 BackupStorageRedundancy      : Geo
 ```
 
-Perintah ini mendapatkan semua cadangan penyimpanan jangka panjang untuk database01
+Perintah ini mendapatkan semua cadangan retensi jangka panjang untuk database01
 
-### Contoh 5: Dapatkan cadangan penyimpanan jangka panjang menggunakan pemfilteran
+### Contoh 5: Mendapatkan cadangan retensi jangka panjang menggunakan pemfilteran
 ```powershell
 Get-AzSqlDatabaseLongTermRetentionBackup -Location northeurope -ServerName server01 -DatabaseName database01 -BackupName "601061b7*"
 ```
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseState
-Status database yang cadangannya ingin Anda temukan, Hidup, Dihapus, atau Semua.
+Status database yang cadangannya ingin Anda temukan, Alive, Deleted, atau All.
 Default ke Semua
 
 ```yaml
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnlyLatestPerDatabase
-Apakah hanya mendapatkan cadangan terbaru per database.
+Apakah hanya mendapatkan cadangan terbaru per database atau tidak.
 Default ke false.
 
 ```yaml
@@ -365,8 +368,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -397,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceBillingPrivateStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceBillingPrivateStoreAccount.md
-ms.openlocfilehash: a51e744e24193d820362865f8b85909524614f9b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 269fd0aa29bbe727d289706644f1cbcbaae234cb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998677"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575966"
 ---
 # Get-AzMarketplaceBillingPrivateStoreAccount
 
 ## SYNOPSIS
-Nama akun tagihan penyewa
+Nama akun penagihan penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplacebillingprivatestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Tagihan (Default)
+### Penagihan (Default)
 ```
 Get-AzMarketplaceBillingPrivateStoreAccount -PrivateStoreId <String> [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
@@ -32,11 +35,11 @@ Get-AzMarketplaceBillingPrivateStoreAccount -InputObject <IMarketplaceIdentity> 
 ```
 
 ## DESCRIPTION
-Nama akun tagihan penyewa
+Nama akun penagihan penyewa
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan akun tagihan dari bursa pribadi 
+### Contoh 1: Mengembalikan akun penagihan penyimpanan privat 
 ```powershell
 Get-AzMarketplaceBillingPrivateStoreAccount -PrivateStoreId 3ac32d8c-e888-4dc6-b4ff-be4d755af13a
 ```
@@ -45,7 +48,7 @@ Get-AzMarketplaceBillingPrivateStoreAccount -PrivateStoreId 3ac32d8c-e888-4dc6-b
 <billing account[string]>
 ```
 
-Perintah ini mengembalikan akun tagihan bursa pribadi.
+Perintah ini mengembalikan akun penagihan penyimpanan privat.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -94,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -150,7 +153,7 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
-  - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
+  - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS

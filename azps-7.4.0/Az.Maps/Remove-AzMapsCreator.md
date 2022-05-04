@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/remove-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
-ms.openlocfilehash: 88657ae5ad8f99636577a80e8b718ee8f4c158b9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13b1615474c6612e2a75d3c49c94680475ef4d26
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873342"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569396"
 ---
 # Remove-AzMapsCreator
 
 ## SYNOPSIS
-Menghapus sumber daya kreator Peta.
+Menghapus sumber daya Peta Creator.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/remove-azmapscreator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzMapsCreator -InputObject <IMapsIdentity> [-DefaultProfile <PSObject>] [
 ```
 
 ## DESCRIPTION
-Menghapus sumber daya kreator Peta.
+Menghapus sumber daya Peta Creator.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Menghapus sumber daya kreator Peta.
 Remove-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount03 -Name creator-01
 ```
 
-Perintah ini menghapus sumber daya Pembuat Peta.
+Perintah ini menghapus sumber daya Peta Creator.
 
-### Contoh 2: Menghapus sumber daya Peta Creator menurut pipeline
+### Contoh 2: Menghapus sumber daya Pembuat Peta menurut alur
 ```powershell
 Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01 | Remove-AzMapsCreator
 ```
 
-Perintah ini menghapus sumber daya Pembuat Peta menurut saluran.
+Perintah ini menghapus sumber daya Peta Creator menurut alur.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama instans Peta Creator.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -158,8 +161,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -213,7 +216,7 @@ INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

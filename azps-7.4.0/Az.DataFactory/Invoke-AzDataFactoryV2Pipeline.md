@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 56a86fd2ceba1563acbc0e7aa04708791558d375
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d87a9c3bfccafef9f8a01e1a7710d50beef6ad92
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942571"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577964"
 ---
 # Invoke-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
-  Memanggil pipeline untuk memulai prosesnya.
+  Memanggil alur untuk memulai eksekusi untuk alur tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2pipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +53,11 @@ Invoke-AzDataFactoryV2Pipeline [-ResourceGroupName] <String> [-DataFactoryName] 
 ```
 
 ## DESCRIPTION
-Perintah **Invoke-AzDataFactoryV2Pipeline** memulai proses pada pipeline tertentu dan mengembalikan ID untuk proses tersebut. GUID ini dapat diteruskan ke **Get-AzDataFactoryV2PipelineRun** atau **Get-AzDataFactoryV2ActivityRun** untuk mendapatkan detail lebih lanjut tentang proses ini.
+Perintah **Invoke-AzDataFactoryV2Pipeline** memulai eksekusi pada alur yang ditentukan dan mengembalikan ID untuk eksekusi tersebut. GUID ini dapat diteruskan ke **Get-AzDataFactoryV2PipelineRun** atau **Get-AzDataFactoryV2ActivityRun** untuk mendapatkan detail lebih lanjut tentang eksekusi ini.
 
 ## EXAMPLES
 
-### Contoh 1: Memanggil pipeline untuk memulai proses
+### Contoh 1: Memanggil alur untuk memulai eksekusi
 ```powershell
 Invoke-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineName "DPWikisample"
 ```
@@ -63,11 +66,11 @@ Invoke-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -DataFactoryName "WikiAD
 867d9d9f-1efc-4fee-974d-d8e6320bfbcb
 ```
 
-Perintah ini memulai proses untuk pipeline "DPWikisample" di pabrik "WikiADF".
+Perintah ini memulai eksekusi untuk alur "DPWikisample" di pabrik "WikiADF".
 
 ### Contoh 2
 
-Memanggil pipeline untuk memulai prosesnya. (autogenerasi)
+Memanggil alur untuk memulai eksekusi untuk alur tersebut. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRecovery
-Bendera mode pemulihan. Jika mode pemulihan diatur ke true, alur yang dirujuk yang ditentukan berjalan dan proses baru akan dikelompokkan di bawah groupId yang sama.
+Bendera mode pemulihan. Jika mode pemulihan diatur ke true, eksekusi alur yang direferensikan yang ditentukan dan eksekusi baru akan dikelompokkan di bawah groupId yang sama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter untuk proses pipeline.
+Parameter untuk eksekusi alur.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFile
-Nama file dengan parameter untuk proses pipeline.
+Nama file dengan parameter untuk eksekusi alur.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Nama saluran.
+Nama alur.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReferencePipelineRunId
-ID jalankan saluran untuk dijalankan ulang. Jika RUN ID ditentukan, parameter dari run yang ditentukan akan digunakan untuk membuat run baru.
+ID eksekusi alur untuk dijalankan ulang. Jika ID eksekusi ditentukan, parameter eksekusi yang ditentukan akan digunakan untuk membuat eksekusi baru.
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartActivityName
-Dalam mode pemulihan, rerun akan dimulai dari aktivitas ini. Jika tidak ditentukan, semua aktivitas akan berjalan.
+Dalam mode pemulihan, eksekusi ulang akan dimulai dari aktivitas ini. Jika tidak ditentukan, semua aktivitas akan berjalan.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartFromFailure
-Mulai jalankan ulang dari bendera aktivitas yang gagal. Dalam mode pemulihan, jika ditentukan, tayangan ulang akan dimulai dari aktivitas yang gagal.
+Mulai jalankan ulang dari bendera aktivitas yang gagal. Dalam mode pemulihan, jika ditentukan, eksekusi ulang akan dimulai dari aktivitas yang gagal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,8 +244,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet.
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 82c403177e061f059ae4bc887ac7ffdc90dc6b48
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bd17bef94c89a46ca8a2a4d341f4f79bd17d339b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873972"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573050"
 ---
 # Remove-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
 Menghapus backupInstances
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/remove-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

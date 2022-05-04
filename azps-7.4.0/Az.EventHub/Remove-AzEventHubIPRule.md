@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubIPRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubIPRule.md
-ms.openlocfilehash: dff3872c348cbb57a10eeffe038cb4c58c0f88f4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e985cf91463a16fc2f32f35c1682a1c0d0c28358
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286695"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562630"
 ---
 # Remove-AzEventHubIPRule
 
 ## SYNOPSIS
 Menghapus satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubiprule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,12 +45,12 @@ Menghapus satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
 Remove-AzEventHubIPRule -ResourceGroupName v-ajnavtest -Namespace Eventhub-Namespace1-2389 -IpMask "11.22.33.44"
 ```
 
-Menghapus IpMask dari NetworkRuleSet ruang nama tertentu
+Menghapus IpMask dari NetworkRuleSet dari namespace yang diberikan
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRuleObject
-Objek Konfigurasi IpRule
+Objek Konfigurasi IPRule
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSNWRuleSetIpRulesAttributes
@@ -106,8 +109,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama
+### -Name
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -151,8 +154,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

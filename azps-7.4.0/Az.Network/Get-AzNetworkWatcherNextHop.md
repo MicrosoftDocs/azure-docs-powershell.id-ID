@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherNextHop.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherNextHop.md
-ms.openlocfilehash: 4eb1c19e51f52604478f3d5df9bb0b78710abd95
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ae026d8100e7dd555ccc03b6b37058cb882279f3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871974"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574183"
 ---
 # Get-AzNetworkWatcherNextHop
 
 ## SYNOPSIS
-Dapatkan hop berikutnya dari VM.
+Mendapatkan hop berikutnya dari VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatchernexthop) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ Get-AzNetworkWatcherNextHop -Location <String> -TargetVirtualMachineId <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherNextHop mendapatkan hop berikutnya dari VM. Lompat berikutnya memungkinkan Anda menampilkan tipe sumber daya Azure, alamat IP terkait sumber daya tersebut, dan aturan tabel perutean yang bertanggung jawab atas rute tersebut.
+Cmdlet Get-AzNetworkWatcherNextHop mendapatkan hop berikutnya dari VM. Lompatan berikutnya memungkinkan Anda melihat jenis sumber daya Azure, alamat IP terkait dari sumber daya tersebut, dan aturan tabel perutean yang bertanggung jawab atas rute tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Next Hop saat berkomunikasi dengan IP Internet
+### Contoh 1: Dapatkan Lompatan Berikutnya saat berkomunikasi dengan IP Internet
 ```powershell
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -60,12 +63,12 @@ NextHopIpAddress NextHopType RouteTableId
                  Internet    System Route
 ```
 
-Mendapatkan Next Hop untuk komunikasi keluar dari Antarmuka Jaringan utama pada Mesin Virtual tertentu ke 204.79.197.200 (www.bing.com)
+Mendapatkan Hop Berikutnya untuk komunikasi keluar dari Antarmuka Jaringan utama pada Komputer Virtual yang ditentukan ke 204.79.197.200 (www.bing.com)
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetVirtualMachineId
-ID mesin virtual target.
+ID komputer virtual target.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -236,7 +239,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -276,9 +279,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

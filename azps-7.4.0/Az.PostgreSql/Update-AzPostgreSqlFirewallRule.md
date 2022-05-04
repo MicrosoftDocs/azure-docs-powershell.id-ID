@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFirewallRule.md
-ms.openlocfilehash: c60cd6b71a913ae464963d8ec490a990d3d0d863
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fdb460f5c029557e008534dd42076913e3e93ca6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936991"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560542"
 ---
 # Update-AzPostgreSqlFirewallRule
 
 ## SYNOPSIS
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,11 +50,11 @@ Update-AzPostgreSqlFirewallRule -InputObject <IPostgreSqlIdentity> -EndIPAddress
 ```
 
 ## DESCRIPTION
-Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Aturan Firewall PostgreSql menurut nama
+### Contoh 1: Memperbarui Aturan Firewall PostgreSql berdasarkan nama
 ```powershell
  Update-AzPostgreSqlFirewallRule -Name rule -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
 ```
@@ -62,9 +65,9 @@ Name StartIPAddress EndIPAddress
 rule 0.0.0.2        0.0.0.3
 ```
 
-Cmdlet ini memperbarui Aturan Firewall PostgreSql menurut nama.
+Cmdlet ini memperbarui Aturan Firewall PostgreSql berdasarkan nama.
 
-### Contoh 2: Update PostgreSql Firewall Rule by identity.
+### Contoh 2: Perbarui Aturan Firewall PostgreSql menurut identitas.
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PostgreSqlTestRG/providers/Microsoft.DBforPostgreSQL/servers/PostgreSqlTestServer/firewallRules/rule"
  Update-AzPostgreSqlFirewallRule -InputObject $ID -EndIPAddress 0.0.0.1 -StartIPAddress 0.0.0.0
@@ -76,9 +79,9 @@ Name StartIPAddress EndIPAddress
 rule 0.0.0.0        0.0.0.1
 ```
 
-Cmdlet ini memperbarui Aturan Firewall PostgreSql menurut identitas.
+Cmdlet ini memperbarui Aturan Firewall PostgreSql berdasarkan identitas.
 
-### Contoh 3: Update PostgreSql Firewall Rule by -ClientIPAddress.
+### Contoh 3: Perbarui Aturan Firewall PostgreSql oleh -ClientIPAddress.
 ```powershell
  $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.DBforPostgreSQL/servers/PostgreSqlTestServer/firewallRules/rule"
  Update-AzPostgreSqlFirewallRule -InputObject $ID --ClientIPAddress 0.0.0.2
@@ -90,12 +93,12 @@ Name StartIPAddress EndIPAddress
 rule 0.0.0.2        0.0.0.2
 ```
 
-Cmdlet ini memperbarui PostgreSql Firewall Rule oleh -ClientIPAddress.
+Cmdlet ini memperbarui Aturan Firewall PostgreSql oleh -ClientIPAddress.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal aturan firewall server.
-Harus berupa format IPv4.
+Klien menentukan IP tunggal dari aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus berupa format IPv4.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall server.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -233,8 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartIPAddress
-Alamat IP mulai aturan firewall server.
-Harus berupa format IPv4.
+Alamat IP awal aturan firewall server.
+Harus format IPv4.
 
 ```yaml
 Type: System.String
@@ -263,8 +266,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -320,7 +323,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

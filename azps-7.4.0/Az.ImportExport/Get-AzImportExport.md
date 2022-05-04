@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
-ms.openlocfilehash: 53a1be49d7dd1da309115dfd483f5c58b50ef03e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0aa02ca6c30d402c1e690b84f38377295558b21e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227259"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559048"
 ---
 # Get-AzImportExport
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pekerjaan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.importexport/get-azimportexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzImportExport [-SubscriptionId <String[]>] [-Filter <String>] [-Top <Int32>
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzImportExport -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-AcceptLanguage <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -48,7 +51,7 @@ Mendapatkan informasi tentang pekerjaan yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pekerjaan ImportExport dengan konteks default
+### Contoh 1: Mendapatkan pekerjaan ImportExport dengan konteks default
 ```powershell
 Get-AzImportExport
 ```
@@ -61,7 +64,7 @@ East US  test-job Microsoft.ImportExport/jobs
 
 Cmdlet ini mendapatkan pekerjaan ImportExport dengan konteks default.
 
-### Contoh 2: Dapatkan pekerjaan ImportExport menurut grup sumber daya dan nama pekerjaan
+### Contoh 2: Mendapatkan pekerjaan ImportExport menurut grup sumber daya dan nama pekerjaan
 ```powershell
 Get-AzImportExport -Name test-job -ResourceGroupName ImportTestRG
 ```
@@ -72,7 +75,7 @@ Location Name     Type
 East US  test-job Microsoft.ImportExport/jobs
 ```
 
-Cmdlet ini mendapatkan pekerjaan ImportExport menurut grup sumber daya dan nama pekerjaan.
+Cmdlet ini mendapatkan pekerjaan ImportExport berdasarkan grup sumber daya dan nama pekerjaan.
 
 ### Contoh 3: Mencantumkan semua pekerjaan ImportExport dalam grup sumber daya tertentu
 ```powershell
@@ -87,7 +90,7 @@ East US  test-job Microsoft.ImportExport/jobs
 
 Cmdlet ini mencantumkan semua pekerjaan ImportExport dalam grup sumber daya tertentu.
 
-### Contoh 4: Dapatkan pekerjaan ImportExport menurut identitas
+### Contoh 4: Mendapatkan pekerjaan ImportExport berdasarkan identitas
 ```powershell
 $Id = "/subscriptions/<SubscriptionId>/resourceGroups/ImportTestRG/providers/Microsoft.ImportExport/jobs/test-job"
 Get-AzImportExport -InputObject $Id
@@ -99,12 +102,12 @@ Location Name     Type
 East US  test-job Microsoft.ImportExport/jobs
 ```
 
-Daftar cmdlet ini mendapatkan pekerjaan ImportExport menurut identitas.
+Daftar cmdlet ini mendapatkan pekerjaan ImportExport berdasarkan identitas.
 
 ## PARAMETERS
 
 ### -AcceptLanguage
-Menentukan bahasa pilihan untuk respons.
+Menentukan bahasa yang dipilih untuk respons.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Dapat digunakan untuk membatasi hasil ke kondisi tertentu.
+Dapat digunakan untuk membatasi hasil untuk kondisi tertentu.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.IImportExportIdentity
@@ -163,7 +166,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pekerjaan impor/ekspor.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya mengidentifikasi grup sumber daya dalam langganan pengguna secara unik.
+Nama grup sumber daya secara unik mengidentifikasi grup sumber daya dalam langganan pengguna.
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Nilai bilangan bulat yang menentukan berapa banyak pekerjaan yang paling banyak harus dikembalikan.
 Nilai tidak boleh melebihi 100.
 
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -247,8 +250,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IImportExportIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobName <String>]`: Nama pekerjaan impor/ekspor.
-  - `[LocationName <String>]`: Nama lokasi. Misalnya, AS Barat atau westus.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya mengidentifikasi grup sumber daya dalam langganan pengguna secara unik.
+  - `[LocationName <String>]`: Nama lokasi. Misalnya, US Barat atau westus.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya secara unik mengidentifikasi grup sumber daya dalam langganan pengguna.
   - `[SubscriptionId <String>]`: ID langganan untuk pengguna Azure.
 
 ## RELATED LINKS

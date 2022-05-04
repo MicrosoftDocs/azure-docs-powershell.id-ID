@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdWorkspace.md
-ms.openlocfilehash: 0415dbfff6a3d9876915b58137aebd8d1ffaf399
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d76308ab8fc5966ca44c6f00334f33a82ce195cd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002421"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577928"
 ---
 # New-AzWvdWorkspace
 
 ## SYNOPSIS
 Membuat atau memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Membuat atau memperbarui ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Windows Ruang Kerja Desktop Virtual berdasarkan nama
+### Contoh 1: Membuat Windows Virtual Desktop Workspace berdasarkan nama
 ```powershell
 New-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -50,9 +53,9 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini membuat Windows Ruang Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini membuat Windows Virtual Desktop Workspace dalam Grup Sumber Daya.
 
-### Contoh 2: Membuat Windows Virtual Desktop Workspace menurut nama
+### Contoh 2: Membuat Windows Virtual Desktop Workspace berdasarkan nama
 ```powershell
 New-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -68,12 +71,12 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini membuat Windows Ruang Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini membuat Windows Virtual Desktop Workspace dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
 ### -ApplicationGroupReference
-Daftar id sumber daya applicationGroup.
+Daftar Id sumber daya applicationGroup.
 
 ```yaml
 Type: System.String[]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama Ruang Kerja yang mudah dikenali.
+Nama Ruang Kerja yang mudah diingat.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas.
+Jenis identitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.ResourceIdentityType
@@ -147,9 +150,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
-Metadata yang digunakan oleh portal/tooling/etc untuk menyajikan pengalaman UX yang berbeda untuk sumber daya dengan tipe yang sama; misalnya ApiApps adalah jenis tipe Microsoft.Web/sites.
-Jika didukung, penyedia sumber daya harus memvalidasi dan tetap memiliki nilai ini.
+### -Kind
+Metadata yang digunakan oleh portal/peralatan/dll untuk merender pengalaman UX yang berbeda untuk sumber daya dengan jenis yang sama; misalnya ApiApps adalah jenis Microsoft.Web/sites.
+Jika didukung, penyedia sumber daya harus memvalidasi dan mempertahankan nilai ini.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 
 ### -ManagedBy
 ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya yang mengelola sumber daya ini.
-Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lainnya.
+Menunjukkan apakah sumber daya ini dikelola oleh sumber daya Azure lain.
 Jika ada, penyebaran mode lengkap tidak akan menghapus sumber daya jika dihapus dari templat karena dikelola oleh sumber daya lain.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ruang kerja
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanName
-Pengguna mendefinisikan nama Artefak Pihak ke-3 yang sedang diakui.
+Nama yang ditentukan pengguna dari Artefak Pihak ke-3 yang sedang diakui.
 
 ```yaml
 Type: System.String
@@ -226,10 +229,10 @@ Accept wildcard characters: False
 ```
 
 ### -PlanProduct
-Artefak Partai ke-3 yang sedang dijadikan pengadaan.
-Misalnya.
+Artefak Pihak ke-3 yang sedang diakui.
+Mis.
 NewRelic.
-Peta produk untuk OfferID yang ditentukan untuk artefak pada saat onboarding Data Market.
+Peta produk ke OfferID yang ditentukan untuk artefak pada saat onboarding Data Market.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPromotionCode
-Penerbit menyediakan kode promosi sebagaimana ditetapkan di Pasar Data untuk produk/artefak tersebut.
+Penerbit memberikan kode promosi sebagaimana disediakan di Pasar Data untuk produk/artefak tersebut.
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 
 ### -PlanPublisher
 Penerbit Artefak Pihak ke-3 yang sedang dibeli.
-Misalnya.
+Mis.
 NewRelic
 
 ```yaml
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -307,8 +310,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Jika SKU mendukung penskalaan keluar/masuk maka bilangan bulat kapasitas harus disertakan.
-Jika skala keluar/masuk tidak dimungkinkan untuk sumber daya ini mungkin dihilangkan.
+Jika SKU mendukung peluasan skala/masuk, bilangan bulat kapasitas harus disertakan.
+Jika peluasan/masuk skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
 
 ```yaml
 Type: System.Int32
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka yang dapat ditangkap di sini.
+Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka itu dapat ditangkap di sini.
 
 ```yaml
 Type: System.String
@@ -338,9 +341,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU.
-Bekas - P3.
-Biasanya berupa kode huruf+angka
+Nama SKUnya.
+Ex - P3.
+Biasanya kode huruf+angka
 
 ```yaml
 Type: System.String
@@ -354,7 +357,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skusize
+### -SkuSize
 Ukuran SKU.
 Ketika bidang nama adalah kombinasi tingkat dan beberapa nilai lainnya, ini akan menjadi kode mandiri.
 
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Bidang ini diperlukan untuk diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
+Bidang ini diperlukan untuk diimplementasikan oleh Penyedia Sumber Jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Support.SkuTier
@@ -415,8 +418,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -447,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

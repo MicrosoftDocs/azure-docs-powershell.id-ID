@@ -5,23 +5,26 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Invoke-AzDiskPoolRedeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Invoke-AzDiskPoolRedeployment.md
-ms.openlocfilehash: ea821221766ee3909b10d9587a87a7ff4ba1ddf4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6298efc254b258b5aff72679b15664208b81781a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061335"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581024"
 ---
 # Invoke-AzDiskPoolRedeployment
 
 ## SYNOPSIS
-Pemutakhiran menggantikan host mesin virtual yang mendasar satu per satu.
-Operasi ini dapat memakan waktu 10-15 menit untuk diselesaikan.
+Peningkatan menggantikan host komputer virtual yang mendasar satu per satu.
+Operasi ini dapat memakan waktu 10-15 menit untuk menyelesaikannya.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/invoke-azdiskpoolredeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Redeploy (Default)
+### Menyebarkan ulang (Default)
 ```
 Invoke-AzDiskPoolRedeployment -DiskPoolName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -34,30 +37,30 @@ Invoke-AzDiskPoolRedeployment -InputObject <IDiskPoolIdentity> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Pemutakhiran menggantikan host mesin virtual yang mendasar satu per satu.
-Operasi ini dapat memakan waktu 10-15 menit untuk diselesaikan.
+Peningkatan menggantikan host komputer virtual yang mendasar satu per satu.
+Operasi ini dapat memakan waktu 10-15 menit untuk menyelesaikannya.
 Ini adalah perilaku layanan yang diharapkan.
 
 ## EXAMPLES
 
-### Contoh 1: Redeploy a Disk Pool
+### Contoh 1: Menyebarkan ulang Kumpulan Disk
 ```powershell
 Invoke-AzDiskPoolRedeployment -DiskPoolName 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test'
 ```
 
-Perintah ini menampung ulang Kumpulan Disk.
+Perintah ini menyebarkan ulang Kumpulan Disk.
 
-### Contoh 2: Redeploy a Disk Pool by object
+### Contoh 2: Menyebarkan ulang Kumpulan Disk menurut objek
 ```powershell
 Get-AzDiskPool -ResourceGroupName 'storagepool-rg-test' -Name 'disk-pool-1' | Invoke-AzDiskPoolRedeployment
 ```
 
-Perintah ini menampung ulang Kumpulan Disk menurut objek.
+Perintah ini menyebarkan ulang Kumpulan Disk menurut objek.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -229,11 +232,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
-  - `[DiskPoolName <String>]`: Nama Disk Pool.
+  - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

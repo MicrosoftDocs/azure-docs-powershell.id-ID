@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshot.md
-ms.openlocfilehash: 9ec8dbd56487010e34b8662252ad980a41b5669f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b6b4d27db072c548376d024ed15b1c092b213fa1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686970"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144578018"
 ---
 # New-AzSnapshot
 
 ## SYNOPSIS
-Membuat snapshot.
+Membuat rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSnapshot [-ResourceGroupName] <String> [-SnapshotName] <String> [-Snapshot
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSnapshot** membuat snapshot.
+Cmdlet **New-AzSnapshot** membuat rekam jepret.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ $snapshotconfig = Set-AzSnapshotKeyEncryptionKey -Snapshot $snapshotconfig -KeyU
 New-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -Snapshot $snapshotconfig;
 ```
 
-Perintah pertama membuat objek snapshot kosong lokal dengan ukuran 5GB dalam tipe akun penyimpanan Standard_LRS.  Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi.
-Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek snapshot.
-Perintah terakhir mengambil objek snapshot dan membuat snapshot dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek rekam jepret kosong lokal dengan ukuran 5GB dalam jenis akun penyimpanan Standard_LRS.  Ini juga mengatur jenis OS Windows dan mengaktifkan pengaturan enkripsi.
+Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek rekam jepret.
+Perintah terakhir mengambil objek rekam jepret dan membuat rekam jepret dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,8 +95,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Snapshot
-Menentukan objek snapshot lokal.
+### -Rekam jepret
+Menentukan objek rekam jepret lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotName
-Menentukan nama snapshot.
+Menentukan nama rekam jepret.
 
 ```yaml
 Type: System.String
@@ -122,8 +125,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

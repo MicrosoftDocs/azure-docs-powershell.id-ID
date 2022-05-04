@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveCollection.md
-ms.openlocfilehash: 3f7a8a76fc0f1f90e48d68e1bf348c63d2365d68
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 06ae6c47374e4a99038f5d790483f4b0cdc262fd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143275787"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580430"
 ---
 # Get-AzResourceMoverMoveCollection
 
 ## SYNOPSIS
-Mendapatkan koleksi perpindahan.
+Mendapatkan koleksi pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/get-azresourcemovermovecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzResourceMoverMoveCollection [-SubscriptionId <String[]>] [-DefaultProfile 
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzResourceMoverMoveCollection -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzResourceMoverMoveCollection -ResourceGroupName <String> [-SubscriptionId <
 ```
 
 ## DESCRIPTION
-Mendapatkan koleksi perpindahan.
+Mendapatkan koleksi pemindahan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail semua koleksi Pindahkan dalam langganan
+### Contoh 1: Mendapatkan detail semua koleksi Pindahkan dalam langganan
 ```powershell
 Get-AzResourceMoverMoveCollection  -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
@@ -59,7 +62,7 @@ Etag                                   Location      Name                       
 
 Dapatkan detail semua koleksi Pindahkan dalam langganan.
 
-### Contoh 2: Dapatkan detail koleksi Pindahkan dengan nama koleksi pemindahan tertentu dalam langganan
+### Contoh 2: Mendapatkan detail kumpulan Pindahkan dengan nama kumpulan pemindahan tertentu dalam langganan
 ```powershell
 Get-AzResourceMoverMoveCollection -ResourceGroupName "RG-MoveCollection-demoRMS" -Name "PS-centralus-westcentralus-demoRMS"
 ```
@@ -71,9 +74,9 @@ Etag                                   Location      Name                       
 
 ```
 
-Dapatkan detail koleksi Pindahkan dengan nama koleksi pemindahan tertentu dalam langganan.
+Dapatkan detail kumpulan Pindahkan dengan nama kumpulan pemindahan tertentu dalam langganan.
 
-### Contoh 3: Mendapatkan detail koleksi Pindahkan dengan nama grup sumber daya tertentu dalam langganan
+### Contoh 3: Mendapatkan detail kumpulan Pindahkan dengan nama grup sumber daya tertentu dalam langganan
 ```powershell
 Get-AzResourceMoverMoveCollection -ResourceGroupName "RG-MoveCollection-demoRMS" 
 ```
@@ -89,7 +92,7 @@ Etag                                   Location      Name                       
 
 ```
 
-Dapatkan detail Tentang Pindahkan Koleksi dengan nama grup sumber daya tertentu dalam langganan.
+Dapatkan detail Kumpulan Pemindahan dengan nama grup sumber daya tertentu dalam langganan.
 
 ## PARAMETERS
 
@@ -108,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Pindahkan Koleksi.
+### -Name
+Nama Kumpulan Pemindahan.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

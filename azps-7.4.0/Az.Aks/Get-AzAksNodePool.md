@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksnod
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksNodePool.md
-ms.openlocfilehash: 39d8a27f9584363471f7dfd2f6a04f02610c3a7b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 08c91f6e9d365203c58dd2e04b4770d052b1e0fc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688734"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575534"
 ---
 # Get-AzAksNodePool
 
 ## SYNOPSIS
-Daftar kumpulan node dalam kluster yang ditentukan.
+Mencantumkan kumpulan simpul dalam kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/get-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzAksNodePool -ClusterObject <PSKubernetesCluster> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Daftar kumpulan node dalam kluster yang ditentukan.
+Mencantumkan kumpulan simpul dalam kluster tertentu.
 
 ## EXAMPLES
 
-### Dapatkan semua kumpulan node dalam kluster yang ditentukan
+### Mendapatkan semua kumpulan simpul dalam kluster yang ditentukan
 ```powershell
 Get-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster
 ```
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id of an node pool in managed Kubernetes cluster
+Id kumpulan simpul di kluster Kubernetes terkelola
 
 ```yaml
 Type: System.String
@@ -109,8 +112,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kolam simpul.
+### -Name
+Nama kumpulan node.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

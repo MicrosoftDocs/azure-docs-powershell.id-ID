@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobImmutabilityPolicy.md
-ms.openlocfilehash: 80a79acc1dd2d6c3e58d6364df13a6991826dfc5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: de7d9a9345ec0c77cbe9cc3d8f3b89fe0908be03
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864072"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559912"
 ---
 # Set-AzStorageBlobImmutabilityPolicy
 
 ## SYNOPSIS
 Membuat atau memperbarui ImmutabilityPolicy dari blob Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageblobimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Set-AzStorageBlobImmutabilityPolicy -BlobBaseClient <BlobBaseClient> -ExpiresOn 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageBlobImmutabilityPolicy** membuat atau memperbarui ImmutabilityPolicy dari blob Storage. Cmdlet hanya berfungsi ketika wadah blob telah mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Cmdlet **Set-AzStorageBlobImmutabilityPolicy** membuat atau memperbarui ImmutabilityPolicy dari blob Storage. Cmdlet hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui kebijakan keabadian blob Storage.
+### Contoh 1: Membuat atau memperbarui kebijakan kekekalan blob Storage.
 ```
 PS C:\> $blob = Set-AzStorageBlobImmutabilityPolicy -Container $containerName -Blob $blobname  -ExpiresOn (Get-Date).AddDays(100) -PolicyMode Unlocked
 
@@ -61,8 +64,8 @@ ExpiresOn                    PolicyMode
 10/27/2021 8:56:32 AM +00:00   Unlocked
 ```
 
-Perintah ini membuat atau memperbarui ImmutabilityPolicy dari blob Storage, lalu memperlihatkan blob dan ImmutabilityPolicy.
-Perintah hanya berfungsi ketika wadah blob telah mengaktifkan Storage yang tidak dapat berubah dengan penerapan versi.
+Perintah ini membuat atau memperbarui ImmutabilityPolicy dari blob Storage, lalu menampilkan blob dan ImmutabilityPolicy-nya.
+Perintah hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -172,7 +175,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KedaluwarsaOn
+### -ExpiresOn
 Blob ImmutabilityPolicy ExpiresOn
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -233,8 +236,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFileContent.md
-ms.openlocfilehash: bdb45a0788ee8d97f2c24b668d688db3a95bb876
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3e9507c26bf6726d9a7670efd3228cb5930537cd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232731"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579854"
 ---
 # Get-AzBatchNodeFileContent
 
 ## SYNOPSIS
-Mendapatkan file simpul batch.
+Mendapatkan file simpul Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchnodefilecontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,72 +66,72 @@ Get-AzBatchNodeFileContent [[-InputObject] <PSNodeFile>] -DestinationStream <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchNodeFileContent** mendapatkan file simpul Azure Batch dan menyimpannya sebagai file atau ke streaming.
+Cmdlet **Get-AzBatchNodeFileContent** mendapatkan file simpul Azure Batch dan menyimpannya sebagai file atau ke aliran.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan file simpul Kumpulan yang terkait dengan tugas dan simpan file
+### Contoh 1: Mendapatkan file simpul Batch yang terkait dengan tugas dan menyimpan file
 ```powershell
 Get-AzBatchNodeFileContent -JobId "Job01" -TaskId "Task01" -Path "StdOut.txt" -DestinationPath "E:\PowerShell\StdOut.txt" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file simpul yang bernama StdOut.txt, dan menyimpannya ke jalur file E:\PowerShell\StdOut.txt di komputer lokal.
+Perintah ini mendapatkan file simpul yang diberi nama StdOut.txt, dan menyimpannya ke jalur file E:\PowerShell\StdOut.txt di komputer lokal.
 File simpul StdOut.txt dikaitkan dengan tugas yang memiliki ID Task01 untuk pekerjaan yang memiliki ID Job01.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Dapatkan file simpul batch dan simpan ke jalur file tertentu menggunakan pipeline
+### Contoh 2: Dapatkan file simpul Batch dan simpan ke jalur file tertentu menggunakan alur
 ```powershell
 Get-AzBatchNodeFile -JobId "Job02" -TaskId "Task02" -Path "StdErr.txt" -BatchContext $Context | Get-AzBatchNodeFileContent -DestinationPath "E:\PowerShell\StdOut.txt" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file simpul yang dinamai StdErr.txt dengan menggunakan cmdlet Get-AzBatchNodeFile.
-Perintah melewati file tersebut ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini menyimpan file tersebut ke jalur file E:\PowerShell\StdOut.txt di komputer lokal.
-File simpul StdOut.txt dikaitkan dengan tugas yang memiliki ID Task02 untuk pekerjaan yang memiliki ID Job02.
+Perintah ini mendapatkan file simpul yang diberi nama StdErr.txt dengan menggunakan cmdlet Get-AzBatchNodeFile.
+Perintah meneruskan file tersebut ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet saat ini menyimpan file tersebut ke jalur file E:\PowerShell\StdOut.txt pada komputer lokal.
+File simpul StdOut.txt dikaitkan dengan tugas yang memiliki TUGAS ID02 untuk pekerjaan yang memiliki ID Job02.
 
-### Contoh 3: Mendapatkan file simpul kumpulan yang terkait dengan tugas dan mengarahkannya ke streaming
+### Contoh 3: Mendapatkan file simpul Batch yang terkait dengan tugas dan mengarahkannya ke aliran
 ```powershell
 $Stream = New-Object -TypeName "System.IO.MemoryStream"
 Get-AzBatchNodeFileContent -JobId "Job03" -TaskId "Task11" -Path "StdOut.txt" -DestinationStream $Stream -BatchContext $Context
 ```
 
-Perintah pertama membuat streaming menggunakan cmdlet New-Object, lalu menyimpannya dalam variabel $Stream.
-Perintah kedua mendapatkan file simpul yang dinamai StdOut.txt dari tugas yang memiliki ID Task11 untuk pekerjaan yang memiliki ID Job03.
-Perintah mengarahkan konten file ke streaming di $Stream.
+Perintah pertama membuat aliran dengan menggunakan cmdlet New-Object, lalu menyimpannya dalam variabel $Stream.
+Perintah kedua mendapatkan file simpul yang diberi nama StdOut.txt dari tugas yang memiliki ID Task11 untuk pekerjaan yang memiliki ID Job03.
+Perintah mengarahkan konten file ke aliran di $Stream.
 
-### Contoh 4: Mendapatkan file simpul dari simpul komputasi dan menyimpannya
+### Contoh 4: Dapatkan file simpul dari simpul komputasi dan simpan
 ```powershell
 Get-AzBatchNodeFileContent -PoolId "Pool01" -ComputeNodeId "ComputeNode01" -Path "Startup\StdOut.txt" -DestinationPath "E:\PowerShell\StdOut.txt" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file node Startup\StdOut.txt dari simpul komputasi yang memiliki ID ComputeNode01 dalam kumpulan yang memiliki ID Pool01.
+Perintah ini mendapatkan file simpul Startup\StdOut.txt dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool01.
 Perintah menyimpan file ke jalur file E:\PowerShell\StdOut.txt di komputer lokal.
 
-### Contoh 5: Dapatkan file simpul dari simpul komputasi dan simpan dengan menggunakan pipeline
+### Contoh 5: Dapatkan file simpul dari simpul komputasi dan simpan dengan menggunakan alur
 ```powershell
 Get-AzBatchNodeFile -PoolId "Pool01" -ComputeNodeId "ComputeNode01" -Path "Startup\StdOut.txt" -BatchContext $Context | Get-AzBatchNodeFileContent -DestinationPath "E:\PowerShell\StdOut.txt" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file simpul Startup\StdOut.txt dengan menggunakan Get-AzBatchNodeFile dari node komputasi yang memiliki ID ComputeNode01.
-Simpul komputasi berada di kolam yang memiliki ID Pool01.
-Perintah melewati file simpul tersebut ke cmdlet saat ini.
+Perintah ini mendapatkan file simpul Startup\StdOut.txt dengan menggunakan Get-AzBatchNodeFile dari simpul komputasi yang memiliki ID ComputeNode01.
+Simpul komputasi berada di kumpulan yang memiliki ID Pool01.
+Perintah meneruskan file simpul tersebut ke cmdlet saat ini.
 Cmdlet tersebut menyimpan file ke jalur file E:\PowerShell\StdOut.txt di komputer lokal.
 
-### Contoh 6: Dapatkan file simpul dari simpul komputasi dan arahkan ke streaming
+### Contoh 6: Dapatkan file simpul dari simpul komputasi dan arahkan ke aliran
 ```powershell
 $Stream = New-Object -TypeName "System.IO.MemoryStream"
 Get-AzBatchNodeFileContent -PoolId "Pool01" -ComputeNodeId "ComputeNode01" -Path "startup\stdout.txt" -DestinationStream $Stream -BatchContext $Context
 ```
 
-Perintah pertama membuat streaming menggunakan cmdlet New-Object, lalu menyimpannya dalam variabel $Stream.
-Perintah kedua mendapatkan file simpul yang dinamai StdOut.txt dari node komputasi yang memiliki ID ComputeNode01 dalam kumpulan yang memiliki ID Pool01.
-Perintah mengarahkan konten file ke streaming di $Stream.
+Perintah pertama membuat aliran dengan menggunakan cmdlet New-Object, lalu menyimpannya dalam variabel $Stream.
+Perintah kedua mendapatkan file simpul yang diberi nama StdOut.txt dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool01.
+Perintah mengarahkan konten file ke aliran di $Stream.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

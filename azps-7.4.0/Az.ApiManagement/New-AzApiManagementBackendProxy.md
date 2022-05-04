@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendProxy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendProxy.md
-ms.openlocfilehash: a483c138c61fa7a7faacc69ec28b94eeff7bfe58
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e5f4b23ca5b62913d9913d2d705cf5a0e0650574
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752076"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575192"
 ---
 # New-AzApiManagementBackendProxy
 
 ## SYNOPSIS
 Membuat Objek Proksi Backend baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendproxy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Membuat Objek Proksi Backend baru yang dapat disalurkan saat membuat entitas Bac
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Proksi Backend In-Memory Objek
+### Contoh 1: Membuat Objek In-Memory Proksi Backend
 ```powershell
 $secpassword = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
 $proxyCreds = New-Object System.Management.Automation.PSCredential ("foo", $secpassword)
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Url
-Url server Proksi yang akan digunakan ketika mengalihkan panggilan ke Backend.
+Url server Proksi yang akan digunakan saat mengalihkan panggilan ke Backend.
 Parameter ini diperlukan.
 
 ```yaml
@@ -91,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

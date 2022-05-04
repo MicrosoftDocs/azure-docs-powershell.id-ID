@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: a8e799d6cffa3f8ef96b50327fe9ab5cc9f1b358
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3fd0e422c908dce36932f5a56951873069711374
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995635"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558058"
 ---
 # Get-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan Azure SQL Aturan Virtual Network Server.
+Mendapatkan atau mencantumkan Aturan Virtual Network Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservervirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,21 +37,21 @@ Perintah ini mendapatkan Aturan Virtual Network Server Azure SQL tertentu atau d
 $virtualNetworkRule = Get-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRuleName
 ```
 
-Mendapatkan aturan jaringan virtual Server Azure SQL tunggal
+Mendapatkan aturan jaringan virtual server Azure SQL tunggal
 
 ### Contoh 2
 ```powershell
 $virtualNetworkRules = Get-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName
 ```
 
-Mendapatkan daftar aturan jaringan virtual server Azure SQL di bawah server tertentu
+Mendapatkan daftar aturan jaringan virtual Azure SQL Server di bawah server yang ditentukan
 
 ### Contoh 3
 ```powershell
 $virtualNetworkRules = Get-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRule*
 ```
 
-Mendapatkan daftar aturan jaringan virtual Azure SQL Server di bawah server tertentu yang dimulai dengan "virtualNetworkRule".
+Mendapatkan daftar aturan jaringan virtual Azure SQL Server di bawah server yang ditentukan yang dimulai dengan "virtualNetworkRule".
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

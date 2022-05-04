@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: 91c99931110d0c4ddb3f9e205e32a5aa7027f1cd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2a93ef118c2c22dbcc45e0d3a2d530f4f7af99a7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943255"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144582014"
 ---
 # Remove-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
 Menghapus Definisi Peran CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbsqlroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzCosmosDBSqlRoleDefinition -InputObject <PSSqlRoleDefinitionGetResults> 
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzCosmosDBSqlRoleDefinition menghapus Definisi Peran CosmosDB Sql yang terkait dengan ResourceGroupName, AccountName, dan Id. Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
+Cmdlet Remove-AzCosmosDBSqlRoleDefinition menghapus Definisi Peran CosmosDB Sql yang sesuai dengan ResourceGroupName, AccountName, dan Id yang diberikan dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Untuk diatur ke true jika pengguna ingin menerima output.
-Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
+Output benar jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,8 +162,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

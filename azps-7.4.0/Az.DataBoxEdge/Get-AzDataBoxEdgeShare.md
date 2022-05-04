@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeShare.md
-ms.openlocfilehash: 8999f93fa0b864867278fc023bf3bdc80f5941aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3783563a96f132a4a86d3a8af425c649f35445eb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875412"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567760"
 ---
 # Get-AzDataBoxEdgeShare
 
 ## SYNOPSIS
 Mendapatkan berbagi yang tersedia untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzDataBoxEdgeShare [[-Name] <String>] [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Data Box Edge. Jika Nama disediakan, ini akan mendapatkan berbagi menurut Nama.
+Cmdlet **Get-AzDataBoxEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Data Box Edge. Jika Nama disediakan, ini akan mendapatkan berbagi berdasarkan Nama.
 
 ## EXAMPLES
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceObject
-Harap sediakan objek perangkat terkait
+Harap sediakan objek perangkat yang sesuai
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeDevice
@@ -108,8 +111,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeTypeVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeTypeVMExtension.md
-ms.openlocfilehash: b797a6b698650d07f2893ed4f1fa4eeba6f4e928
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6955fdc10cb301aba45abc7048039b1bfa72c2d5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273591"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144558087"
 ---
 # Remove-AzServiceFabricManagedNodeTypeVMExtension
 
 ## SYNOPSIS
-Hapus ekstensi vm dari tipe simpul.
+Hapus ekstensi vm dari jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagednodetypevmextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzServiceFabricManagedNodeTypeVMExtension [-ResourceGroupName] <String> [
 ```
 
 ## DESCRIPTION
-Hapus ekstensi vm dari tipe simpul menurut nama. Gunakan [Get-AzServiceFabricManagedNodeType](./Get-AzServiceFabricManagedNodeType.md) dan lihat properti VmExtensions untuk melihat ekstensi saat ini pada tipe node.
+Hapus ekstensi vm dari jenis node menurut nama. Gunakan [Get-AzServiceFabricManagedNodeType](./Get-AzServiceFabricManagedNodeType.md) dan lihat properti VmExtensions untuk melihat ekstensi saat ini pada jenis node.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ $NodeTypeName = "nt1"
 Remove-AzServiceFabricManagedNodeTypeVMExtension -ResourceGroupName $rgName -ClusterName $clusterName -NodeTypeName $NodeTypeName -Name MyExtensionName
 ```
 
-Hapus ekstensi dari tipe simpul menurut nama.
+Hapus ekstensi dari jenis node menurut nama.
 
 ### Contoh 2
 ```powershell
@@ -57,12 +60,12 @@ $nodeType = Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -Clust
 $nodeType | Remove-AzServiceFabricManagedNodeTypeVMExtension -Name MyExtensionName
 ```
 
-Hapus ekstensi dari tipe simpul menurut nama, dengan pipa.
+Hapus ekstensi dari jenis node menurut nama, dengan pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe simpul
+Sumber daya jenis node
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
@@ -121,7 +124,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama ekstensi.
 
 ```yaml
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeTypeName
-Tentukan nama tipe simpul.
+Tentukan nama jenis simpul.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGatewayNatRule.md
-ms.openlocfilehash: 8a7844c648392caac4c734462ff579c90b705f94
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e69d2cc91edc00b0fbdf95163195987c3ee561a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676404"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560560"
 ---
 # Update-AzVpnGatewayNatRule
 
 ## SYNOPSIS
 Memperbarui aturan NAT yang terkait dengan VpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,13 +79,13 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/testRg/providers/Microsoft.Network/vpnGateways/testvpngw/natRules/testNatRule
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual. Kemudian, kami akan membuat VpnGateway di bawah Hub Virtual tersebut. Lalu, buat aturan NAT baru yang terkait dengan VpnGateway yang dibuat.
-Menggunakan perintah ini: Perbarui-AzVpnGatewayNatRule, perbarui aturan NAT.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual. Kemudian, kita akan membuat VpnGateway di bawah Hub Virtual tersebut. Kemudian, buat aturan NAT baru yang terkait dengan VpnGateway yang dibuat.
+Menggunakan perintah ini: Update-AzVpnGatewayNatRule, perbarui aturan NAT.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalMapping
-Daftar pemetaan eksternal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan eksternal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalMapping
-Daftar pemetaan internal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan internal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfigurationId
-ID Konfigurasi IP aturan NAT ini berlaku untuk
+ID Konfigurasi IP yang berlaku untuk aturan NAT ini
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -277,8 +280,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe aturan NAT untuk VPN NAT
+### -Type
+Jenis aturan NAT untuk VPN NAT
 
 ```yaml
 Type: System.String
@@ -293,8 +296,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

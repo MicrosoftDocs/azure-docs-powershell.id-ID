@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnEndpoint.md
-ms.openlocfilehash: a9c509d3f0f054a6f9df6b3b9ff621f1952fd51b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 87a7b00fd9cfe7e6ac654158a99c6148390bb562
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810612"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581600"
 ---
 # Set-AzFrontDoorCdnEndpoint
 
 ## SYNOPSIS
 Memperbarui titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Objek titik akhir Pintu Depan Azure.
+Objek titik akhir Azure Front Door.
 
 ```yaml
 Type: PSAfdEndpoint
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Nama titik akhir Pintu Depan Azure.
+Nama titik akhir Azure Front Door.
 
 ```yaml
 Type: String
@@ -135,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

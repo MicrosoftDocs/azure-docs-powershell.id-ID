@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSyncSelectedDBObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSyncSelectedDBObject.md
-ms.openlocfilehash: fa43a19c9aed4d6b623e914ce27f7e967ed37f7f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e448b777c21aefd06dcf9817cb3c3695d9918355
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874296"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581168"
 ---
 # New-AzDataMigrationSyncSelectedDBObject
 
 ## SYNOPSIS
 Membuat objek info database khusus untuk skenario sinkronisasi yang akan digunakan untuk tugas migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationsyncselecteddbobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ $tableMap = New-Object 'system.collections.hashtable'
         -SourceDatabaseName DatabaseName
 ```
 
-Contoh ini membuat objek metadata database yang menjelaskan pengaturan migrasi untuk $DatabaseName ke database $DatabaseName.  
+Contoh ini membuat objek metadata database yang menjelaskan pengaturan migrasi untuk $DatabaseName ke $DatabaseName database.  
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationSetting
-Pengaturan migrasi yang menyempurnakan perilaku migrasi
+Pengaturan migrasi yang menyetel perilaku migrasi
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaName
-Nama skema yang akan dimigrasi
+Nama skema yang akan dimigrasikan
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceSetting
-Pengaturan sumber untuk menyempurnakan perilaku migrasi titik akhir sumber
+Pengaturan sumber untuk menyetel perilaku migrasi titik akhir sumber
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableMap
-Pemetaan tabel sumber ke target
+Pemetaan sumber ke tabel target
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetSetting
-Pengaturan target untuk menyempurnakan perilaku migrasi titik akhir target
+Pengaturan target untuk menyetel perilaku migrasi titik akhir target
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -169,11 +172,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

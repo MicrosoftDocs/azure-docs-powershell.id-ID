@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Update-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Update-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: 5763bd9f64bdabbefd4d0f0113b4a66ae3e64817
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c0b52bda5753287e2a86bba1324b8e7e20fb80bd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872892"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563800"
 ---
 # Update-AzMonitorLogAnalyticsSolution
 
 ## SYNOPSIS
 Perbarui tag solusi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitoringsolutions/update-azmonitorloganalyticssolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Containers(monitoringworkspace-2vob7n) Microsoft.OperationsManagement/solutions 
 
 Perintah ini memperbarui solusi analitik log monitor berdasarkan nama.
 
-### Contoh 2: Memperbarui solusi analitik log monitor menurut objek
+### Contoh 2: Memperbarui solusi analitik log monitor berdasarkan objek
 ```powershell
 $monitor = Get-AzMonitorLogAnalyticsSolution -ResourceGroupName lucas-manual-test -Name 'Containers(monitoringworkspace-2vob7n)'
 Update-AzMonitorLogAnalyticsSolution -InputObject $monitor -Tag @{'Operation'='update';'Param'='Tag'}
@@ -61,7 +64,7 @@ Name                                   Type                                     
 Containers(monitoringworkspace-2vob7n) Microsoft.OperationsManagement/solutions East US
 ```
 
-Perintah ini memperbarui solusi analitik log monitor menurut objek.
+Perintah ini memperbarui solusi analitik log monitor berdasarkan objek.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Solusi Pengguna.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang akan didapatkan.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -213,11 +216,11 @@ INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
   - `[ManagementAssociationName <String>]`: User ManagementAssociation Name.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.
   - `[ProviderName <String>]`: Nama penyedia untuk sumber daya induk.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya induk.
-  - `[ResourceType <String>]`: Tipe sumber daya untuk sumber daya induk
+  - `[ResourceType <String>]`: Jenis sumber daya untuk sumber daya induk
   - `[SolutionName <String>]`: Nama Solusi Pengguna.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

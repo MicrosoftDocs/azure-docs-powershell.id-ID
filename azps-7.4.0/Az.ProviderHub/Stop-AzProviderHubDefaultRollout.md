@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Stop-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Stop-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: fd800efbdbf4e2998cbb73042ab5c38e566e12f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9a59affe48d3b61d7d078dd990931c418f5a238b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311355"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560524"
 ---
 # Stop-AzProviderHubDefaultRollout
 
 ## SYNOPSIS
 Menghentikan atau membatalkan peluncuran, jika sedang berlangsung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/stop-azproviderhubdefaultrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Stop-AzProviderHubDefaultRollout -ProviderNamespace <String> -RolloutName <Strin
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentitas
+### StopViaIdentity
 ```
 Stop-AzProviderHubDefaultRollout -InputObject <IProviderHubIdentity> [-DefaultProfile <PSObject>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -142,8 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,12 +198,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
-  - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
-  - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
+  - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
+  - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.
+  - `[NestedResourceTypeThird <String>]`: Jenis sumber daya anak ketiga.
+  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
-  - `[ResourceType <String>]`: Tipe sumber daya.
+  - `[ResourceType <String>]`: Jenis sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.
   - `[Sku <String>]`: SKU.
   - `[SubscriptionId <String>]`: ID langganan target.

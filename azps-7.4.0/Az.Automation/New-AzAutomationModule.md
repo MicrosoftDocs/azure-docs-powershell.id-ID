@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationModule.md
-ms.openlocfilehash: b5042fedc412314f9cdfd2012b52f9f175c03c08
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b3c16544454edfa569d037e945ae39ec19fcce31
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812034"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566194"
 ---
 # New-AzAutomationModule
 
 ## SYNOPSIS
-Mengimpor modul ke Dalam Otomatisasi.
+Mengimpor modul ke Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzAutomationModule [-Name] <String> [-ContentLinkUri] <Uri> [-ResourceGroupN
 ## DESCRIPTION
 Cmdlet **New-AzAutomationModule** mengimpor modul ke Azure Automation.
 Perintah ini menerima file terkompresi yang memiliki ekstensi nama file .zip.
-File berisi folder yang menyertakan file yang merupakan salah satu tipe berikut ini: 
+File berisi folder yang menyertakan file yang merupakan salah satu jenis berikut: 
 - Windows PowerShell modul, yang memiliki ekstensi nama file .psm1 atau .dll 
 - Windows PowerShell manifes modul, yang memiliki ekstensi nama file .psd1 Nama file .zip, nama folder, dan nama file dalam folder harus sama.
-Tentukan file .zip sebagai URL yang dapat diakses oleh layanan Otomatisasi.
-Jika Anda mengimpor modul Windows PowerShell ke Dalam Otomatisasi dengan menggunakan cmdlet ini atau cmdlet Set-AzAutomationModule, operasinya tidak sinkron.
+Tentukan file .zip sebagai URL yang dapat diakses oleh layanan Automation.
+Jika Anda mengimpor modul Windows PowerShell ke Automation dengan menggunakan cmdlet ini atau cmdlet Set-AzAutomationModule, operasinya asinkron.
 Perintah selesai apakah impor berhasil atau gagal.
 Untuk memeriksa apakah berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name `ModuleName Periksa properti **ProvisioningState** untuk nilai Berhasil.
 
@@ -43,13 +46,13 @@ Untuk memeriksa apakah berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleIn
 PS C:\>New-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ContentLink "http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini mengimpor modul bernama ContosoModule ke akun Otomatisasi bernama Contoso17.
+Perintah ini mengimpor modul bernama ContosoModule ke akun Automation bernama Contoso17.
 Modul disimpan dalam blob Azure di akun penyimpanan bernama contosostorage dan kontainer bernama modul.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengimpor modul.
+Menentukan nama akun Automation tempat cmdlet ini mengimpor modul.
 
 ```yaml
 Type: System.String
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLinkUri
-Url untuk paket zip modul
+Url ke paket zip modul
 
 ```yaml
 Type: System.Uri
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama modul yang diimpor cmdlet ini.
 
 ```yaml
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat cmdlet ini mengimpor modul.
+Menentukan nama grup sumber daya yang cmdlet ini mengimpor modul.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

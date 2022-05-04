@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSourceControl.md
-ms.openlocfilehash: 8cad4203f7850a111dc9352772fe4b88fa3e3e0b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9f30bc53fccf2736195b385e918c9edd1eb74952
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007497"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575084"
 ---
 # Get-AzAutomationSourceControl
 
 ## SYNOPSIS
 Mendapatkan daftar kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,13 +35,13 @@ Get-AzAutomationSourceControl -Name <String> [-ResourceGroupName] <String> [-Aut
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAutomationSourceControl mendapatkan kontrol sumber Otomatisasi.
+Cmdlet Get-AzAutomationSourceControl mendapatkan kontrol sumber Automation.
 Untuk mendapatkan kontrol sumber tertentu, tentukan namanya.
 
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mendapatkan kontrol sumber Otomatisasi bernama VSTSNative dalam akun bernama devAccount.
+Perintah ini mendapatkan kontrol sumber Automation bernama VSTSNative di akun bernama devAccount.
 
 
 ```powershell
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kontrol sumber.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceType
-Tipe kontrol sumber.
+Jenis kontrol sumber.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

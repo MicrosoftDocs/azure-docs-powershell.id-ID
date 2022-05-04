@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCertificate.md
-ms.openlocfilehash: c504bf13a2996ada6424153f3174a390fbdb63b5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9a3b325f0edcd7c622ae0af5e9ae3f8bc300cf1d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067653"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575174"
 ---
 # New-AzApiManagementCertificate
 
 ## SYNOPSIS
 Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzApiManagementCertificate -Context <PsApiManagementContext> [-CertificateId
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementCertificate** membuat sertifikat API Management Azure.
+Cmdlet **New-AzApiManagementCertificate** membuat sertifikat Azure API Management.
 
 ## EXAMPLES
 
@@ -45,18 +48,18 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 New-AzApiManagementCertificate -Context $ApiMgmtContext -PfxFilePath "C:\contoso\certificates\apimanagement.pfx" -PfxPassword "1111"
 ```
 
-Perintah ini mengunggah sertifikat ke Manajemen Api. Sertifikat ini bisa digunakan untuk autentikasi bersama dengan backend menggunakan kebijakan.
+Perintah ini mengunggah sertifikat ke Api Management. Sertifikat ini dapat digunakan untuk autentikasi bersama dengan backend menggunakan kebijakan.
 
 ### Contoh 2
 
-Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend. (autogenerasi)
+Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
 New-AzApiManagementCertificate -CertificateId '0123456789' -Context <PsApiManagementContext> -PfxFilePath 'C:\contoso\certificates\apimanagement.pfx' -PfxPassword '1111'
 ```
 
-### Contoh 3 : Membuat sertifikat keyVault
+### Contoh 3 : Membuat Sertifikat keyVault
 ```powershell
 $secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
 $keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
@@ -70,7 +73,7 @@ Perintah kedua membuat sertifikat menggunakan rahasia dari keyvault ini.
 
 ### -CertificateId
 Menentukan ID sertifikat yang akan dibuat.
-Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
+Jika Anda tidak menentukan parameter ini, ID dibuat untuk Anda.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfxFilePath
-Menentukan jalur ke file sertifikat dalam format .pfx untuk dibuat dan diunggah.
+Menentukan jalur ke file sertifikat dalam format .pfx untuk membuat dan mengunggah.
 Parameter ini diperlukan jika Anda tidak menentukan parameter *PfxBytes* .
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

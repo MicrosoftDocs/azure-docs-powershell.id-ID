@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: eb9e14b4d71543673d54391810bc6c513c8938ae
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 87b8e5a2559f00c2fb7fbb079259185a03b33e5e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874062"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574688"
 ---
 # Get-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
-Mendapatkan instans cadangan dengan nama dalam vault cadangan
+Mendapatkan instans cadangan dengan nama di brankas cadangan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzDataProtectionBackupInstance -InputObject <IDataProtectionIdentity> [-Defa
 ```
 
 ## DESCRIPTION
-Mendapatkan instans cadangan dengan nama dalam vault cadangan
+Mendapatkan instans cadangan dengan nama di brankas cadangan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua instans cadangan yang dilindungi dalam vault cadangan tertentu.
+### Contoh 1: Dapatkan semua instans cadangan yang dilindungi dalam brankas cadangan tertentu.
 ```powershell
 Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName "MyResourceGroup" -VaultName "MyVault"
 ```
@@ -68,7 +71,7 @@ Name                                                       Type                 
 sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166 Microsoft.DataProtection/backupVaults/backupInstances sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166
 ```
 
-Perintah ini mendapatkan instans cadangan tertentu yang dilindungi dalam vault cadangan.
+Perintah ini mendapatkan instans cadangan tertentu yang dilindungi dalam brankas cadangan.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -186,12 +189,12 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
   - `[VaultName <String>]`: Nama brankas cadangan.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzLogicApp.md
-ms.openlocfilehash: 41c63568feb501dd81cf5418b414bf262e4b90b5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3f7f6f2f2a1fa1f525797d4706ee9ac4aa9154ab
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746604"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572887"
 ---
 # Remove-AzLogicApp
 
 ## SYNOPSIS
 Menghapus aplikasi logika dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,10 +29,10 @@ Remove-AzLogicApp -ResourceGroupName <String> -Name <String> [-Force]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLogicApp** menghapus aplikasi logika dari grup sumber daya menggunakan fitur Aplikasi Logika.
+Cmdlet **Remove-AzLogicApp** menghapus aplikasi logika dari grup sumber daya dengan menggunakan fitur Logic Apps.
 Tentukan aplikasi logika dan grup sumber daya.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -41,7 +44,7 @@ Remove-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp03" -Force
 ```
 
 Perintah ini menghapus aplikasi logika dari grup sumber daya.
-Perintah ini menyertakan parameter *Paksa* , yang mencegah perintah meminta konfirmasi kepada Anda.
+Perintah ini mencakup parameter *Paksa* , yang mencegah perintah meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aplikasi logika yang dihapus cmdlet ini.
 
 ```yaml
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

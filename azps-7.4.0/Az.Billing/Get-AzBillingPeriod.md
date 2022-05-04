@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingPeriod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingPeriod.md
-ms.openlocfilehash: 295d4ec9105cf9f9b39695a015758d6dbdd8a184
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 04f8335b00a59d8e6443b5c94831d0389472896b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129159"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566104"
 ---
 # Get-AzBillingPeriod
 
 ## SYNOPSIS
-Dapatkan periode tagihan langganan.
+Dapatkan periode penagihan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillingperiod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,14 +27,14 @@ Dapatkan periode tagihan langganan.
 Get-AzBillingPeriod [-MaxCount <Int32>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Satu
+### Tunggal
 ```
 Get-AzBillingPeriod -Name <System.Collections.Generic.List`1[System.String]>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBillingPeriod** mendapatkan periode tagihan langganan.
+Cmdlet **Get-AzBillingPeriod** mendapatkan periode penagihan langganan.
 
 ## EXAMPLES
 
@@ -40,21 +43,21 @@ Cmdlet **Get-AzBillingPeriod** mendapatkan periode tagihan langganan.
 Get-AzBillingPeriod
 ```
 
-Dapatkan semua periode tagihan langganan yang tersedia.
+Dapatkan semua periode penagihan langganan yang tersedia.
 
 ### Contoh 2
 ```powershell
 Get-AzBillingPeriod -Name 201704-1
 ```
 
-Dapatkan periode tagihan langganan dengan nama yang ditentukan.
+Dapatkan periode penagihan langganan dengan nama yang ditentukan.
 
 ### Contoh 3
 ```powershell
 Get-AzBillingPeriod -MaxCount 2
 ```
 
-Dapatkan paling banyak 2 periode tagihan langganan.
+Dapatkan maksimal 2 periode penagihan langganan.
 
 ## PARAMETERS
 
@@ -88,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama periode tagihan tertentu untuk didapatkan.
+### -Name
+Nama periode penagihan tertentu untuk didapatkan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -104,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

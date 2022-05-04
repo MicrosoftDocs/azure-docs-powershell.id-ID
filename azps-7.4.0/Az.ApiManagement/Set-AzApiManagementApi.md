@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApi.md
-ms.openlocfilehash: 7c05116a261184db98596f612f669dc4f5f6913c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c09a19715fc7cd622754fab789fec36f73c19812
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751860"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575462"
 ---
 # Set-AzApiManagementApi
 
 ## SYNOPSIS
-Mengubah API.
+Memodifikasi API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,17 +44,17 @@ Set-AzApiManagementApi -InputObject <PsApiManagementApi> [-Name <String>] [-Desc
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApi** mengubah API azure API Management.
+Cmdlet **Set-AzApiManagementApi** memodifikasi AZURE API Management API.
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi API
+### Contoh 1: Mengubah API
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementApi -Context $ApiMgmtContext -Name "EchoApi" -ServiceUrl "https://contoso.com/apis/echo" -Protocols @('https') -Description "Responds with what was sent" -Path "echo"
 ```
 
-### Contoh 2: Menambahkan API ke ApiVersionSet yang sudah ada
+### Contoh 2: Menambahkan API ke ApiVersionSet yang ada
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 $versionSet = New-AzApiManagementApiVersionSet -Context $context -Name "Echo API Version Set" -Scheme Segment -Description "version set sample"
@@ -62,7 +65,7 @@ $api.ApiVersionSetDescription = $versionSet.Description
 Set-AzApiManagementApi -InputObject $api -PassThru
 ```
 
-Contoh ini menambahkan API ke Set Versi API yang sudah ada
+Contoh ini menambahkan API ke Set Versi API yang ada
 
 ### Contoh 3: Ubah Backend ServiceUrl tempat API menunjuk ke
 ```powershell
@@ -71,7 +74,7 @@ $updatedApiServiceUrl = "http://newechoapi.cloudapp.net/updateapi"
 $updatedApi = Set-AzApiManagementApi -Context $ApiMgmtContext -ApiId $echoApiId -ServiceUrl $updatedApiServiceUrl
 ```
 
-Contoh ini memperbarui ServiceUrl yang `echo-api` diarahkan.
+Contoh ini memperbarui ServiceUrl yang `echo-api` menunjuk ke.
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationScope
-Menentukan lingkup operasi OAuth.
+Menentukan cakupan operasi OAuth.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId di mana token akses dikirimkan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId tempat token akses diteruskan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4. Parameter ini bersifat opsional. Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -138,7 +141,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementApi. Parameter ini diperlukan.
+Instans PsApiManagementApi. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi
@@ -198,7 +201,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama API web.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdProviderId
-Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai default adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
+Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai defaultnya adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ### -Protokol
 Menentukan array protokol API web.
 psdx_paramvalues http dan https.
-Ini adalah protokol web di mana API disediakan.
+Ini adalah protokol web tempat API tersedia.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -281,8 +284,8 @@ Accept wildcard characters: False
 
 ### -ServiceUrl
 Menentukan URL layanan web yang mengekspos API.
-URL ini hanya digunakan oleh Azure API Management, dan tidak diumumkan ke publik.
-URL harus panjangnya satu hingga 2000 karakter.
+URL ini hanya digunakan oleh Azure API Management, dan tidak dibuat publik.
+PANJANG URL harus satu hingga 2000 karakter.
 
 ```yaml
 Type: System.String
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Bendera untuk memberlakukan LanggananPerlukan permintaan ke Api. Parameter ini bersifat opsional.
+Bendera untuk memberlakukan SubscriptionRequired untuk permintaan ke Api. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -370,7 +373,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzApiManagementApi](./Get-AzApiManagementApi.md)
 
-[Impor-AzApiManagementApi](./Import-AzApiManagementApi.md)
+[Import-AzApiManagementApi](./Import-AzApiManagementApi.md)
 
 [New-AzApiManagementApi](./New-AzApiManagementApi.md)
 

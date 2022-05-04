@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerFirewallRule.md
-ms.openlocfilehash: 4e931fb4a2cbe450c2bcea13ec5ab6c0893c1dff
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2480858c78c844f3735041767900efd0177a9c0e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272493"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561712"
 ---
-# Get-AzSqlServerFirewallRule
+# Dapatkan-AzSqlServerFirewallRule
 
 ## SYNOPSIS
 Mendapatkan aturan firewall untuk server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Get-AzSqlServerFirewallRule [[-FirewallRuleName] <String>] [-ServerName] <String
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlServerFirewallRule** mendapatkan aturan firewall untuk server Azure SQL Database.
-Jika Anda menentukan nama aturan firewall, cmdlet ini akan mendapatkan informasi tentang aturan firewall tertentu tersebut.
+Jika Anda menentukan nama aturan firewall, cmdlet ini mendapatkan informasi tentang aturan firewall tertentu tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua aturan untuk server
+### Contoh 1: Mendapatkan semua aturan untuk server
 ```powershell
 Get-AzSqlServerFirewallRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
@@ -52,7 +55,7 @@ FirewallRuleName  : Rule01
 
 Perintah ini mendapatkan semua aturan firewall untuk server bernama Server01.
 
-### Contoh 2: Dapatkan semua aturan untuk server menggunakan pemfilteran
+### Contoh 2: Mendapatkan semua aturan untuk server menggunakan pemfilteran
 ```powershell
 Get-AzSqlServerFirewallRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -FirewallRuleName "Rule*"
 ```
@@ -135,8 +138,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -183,9 +186,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzSqlServerFirewallRule](./New-AzSqlServerFirewallRule.md)
 
-[Remove-AzSqlServerFirewallRule](./Remove-AzSqlServerFirewallRule.md)
+[Hapus-AzSqlServerFirewallRule](./Remove-AzSqlServerFirewallRule.md)
 
-[Set-AzSqlServerFirewallRule](./Set-AzSqlServerFirewallRule.md)
+[Atus-AzSqlServerFirewallRule](./Set-AzSqlServerFirewallRule.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

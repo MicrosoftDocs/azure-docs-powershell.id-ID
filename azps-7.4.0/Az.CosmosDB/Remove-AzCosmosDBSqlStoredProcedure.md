@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlStoredProcedure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlStoredProcedure.md
-ms.openlocfilehash: 864d2203ad1a91b4f6bdd5180a808b0a23e3d4fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 55f6cf5d84d211a824ad6de4fed783062ba80d86
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318591"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569774"
 ---
 # Remove-AzCosmosDBSqlStoredProcedure
 
 ## SYNOPSIS
 Menghapus CosmosDB Sql StoredProcedure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbsqlstoredprocedure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzCosmosDBSqlStoredProcedure -InputObject <PSSqlStoredProcedureGetResults
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCosmosDBSqlStoredProcedure** menghapus cmdlet CosmosDB Sql StoredProcedure yang terkait dengan ResourceGroupName, AccountName, dan DatabaseName yang diberikan.
+Cmdlet **Remove-AzCosmosDBSqlStoredProcedure** menghapus CosmosDB Sql StoredProcedure yang sesuai dengan ResourceGroupName, AccountName, dan DatabaseName yang diberikan.
 
 ## EXAMPLES
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Database Sql.
+Objek Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlStoredProcedureGetResults
@@ -119,8 +122,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Prcodecure yang Disimpan.
+### -Name
+Nama Prcodecure Tersimpan.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Untuk diatur ke true jika pengguna ingin menerima output.
-Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
+Output benar jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,8 +168,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -197,11 +200,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

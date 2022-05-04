@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppPlan.md
-ms.openlocfilehash: cdd26ad1430c2c4e1e8c286f9c833610aeac049e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c902d9d87a0a9c8aead15dfee7a3c13baef7c354
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122589"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579368"
 ---
 # Update-AzFunctionAppPlan
 
 ## SYNOPSIS
 Memperbarui paket layanan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/update-azfunctionappplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Memperbarui paket layanan aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui paket layanan aplikasi ke EP2 sku dengan dua puluh pekerja maksimum.
+### Contoh 1: Perbarui paket layanan aplikasi ke sku EP2 dengan dua puluh pekerja maksimum.
 ```powershell
 Update-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                          -Name MyPremiumPlan `
@@ -47,7 +50,7 @@ Update-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
                          -Force
 ```
 
-Perintah ini memperbarui paket layanan aplikasi ke EP2 sku dengan dua puluh pekerja maksimum.
+Perintah ini memperbarui paket layanan aplikasi ke sku EP2 dengan dua puluh pekerja maksimum.
 
 ## PARAMETERS
 
@@ -81,8 +84,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa cmdlet untuk memperbarui rencana aplikasi fungsi tanpa meminta konfirmasi.
+### -Force
+Memaksa cmdlet untuk memperbarui paket aplikasi fungsi tanpa meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.IAppServicePlan
@@ -141,7 +144,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama paket App Service.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -232,8 +235,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -290,17 +293,17 @@ INPUTOBJECT <IAppServicePlan>:
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[Capacity <Int32?>]`: Jumlah instans saat ini yang ditetapkan ke sumber daya.
   - `[FreeOfferExpirationTime <DateTime?>]`: Waktu ketika penawaran gratis farm server kedaluwarsa.
-  - `[HostingEnvironmentProfileId <String>]`: ID Sumber Daya lingkungan App Service.
-  - `[HyperV <Boolean?>]`: Jika paket <code>true</code>layanan aplikasi kontainer Hyper-V , <code>false</code> jika tidak.
-  - `[IsSpot <Boolean?>]`: Jika <code>true</code>, Paket App Service ini memiliki instans spot.
-  - `[IsXenon <Boolean?>]`: Usang: Jika hyper-V container paket <code>true</code>layanan aplikasi , <code>false</code> jika tidak.
-  - `[MaximumElasticWorkerCount <Int32?>]`: Jumlah maksimum total pekerja yang diperbolehkan untuk Paket App Service ElasticScaleEnabled ini
-  - `[PerSiteScaling <Boolean?>]`: Jika <code>true</code>, aplikasi yang ditetapkan ke paket App Service ini dapat diskalakan secara independen.         Jika <code>false</code>, aplikasi yang ditetapkan ke paket App Service ini akan diskalakan ke semua instans paket.
-  - `[Reserved <Boolean?>]`: Jika paket <code>true</code>layanan aplikasi Linux , <code>false</code> jika tidak.
-  - `[SkuCapability <ICapability[]>]`: Kemampuan SKU, misalnya, apakah pengelola lalu lintas diaktifkan?
-    - `[Name <String>]`: Nama kapabilitas SKU.
+  - `[HostingEnvironmentProfileId <String>]`: ID sumber daya lingkungan App Service.
+  - `[HyperV <Boolean?>]`: Jika hyper-V paket <code>true</code>layanan aplikasi kontainer , <code>false</code> jika tidak.
+  - `[IsSpot <Boolean?>]`: Jika <code>true</code>, App Service Plan ini memiliki instans spot.
+  - `[IsXenon <Boolean?>]`: Usang: Jika paket <code>true</code>layanan aplikasi kontainer Hyper-V , <code>false</code> jika tidak.
+  - `[MaximumElasticWorkerCount <Int32?>]`: Jumlah maksimum total pekerja yang diizinkan untuk Paket App Service ElasticScaleEnabled ini
+  - `[PerSiteScaling <Boolean?>]`: Jika <code>true</code>, aplikasi yang ditetapkan ke paket App Service ini dapat diskalakan secara independen.         Jika <code>false</code>, aplikasi yang ditetapkan ke paket App Service ini akan menskalakan ke semua instans paket.
+  - `[Reserved <Boolean?>]`: Jika paket <code>true</code>layanan aplikasi Linux, <code>false</code> jika tidak.
+  - `[SkuCapability <ICapability[]>]`: Kemampuan SKU, misalnya, apakah traffic manager diaktifkan?
+    - `[Name <String>]`: Nama kemampuan SKU.
     - `[Reason <String>]`: Alasan kemampuan SKU.
-    - `[Value <String>]`: Nilai kapabilitas SKU.
+    - `[Value <String>]`: Nilai kemampuan SKU.
   - `[SkuCapacityDefault <Int32?>]`: Jumlah default pekerja untuk SKU paket App Service ini.
   - `[SkuCapacityMaximum <Int32?>]`: Jumlah maksimum pekerja untuk SKU paket App Service ini.
   - `[SkuCapacityMinimum <Int32?>]`: Jumlah minimum pekerja untuk SKU paket App Service ini.
@@ -310,10 +313,10 @@ INPUTOBJECT <IAppServicePlan>:
   - `[SkuName <String>]`: Nama SKU sumber daya.
   - `[SkuSize <String>]`: Penentu ukuran SKU sumber daya.
   - `[SkuTier <String>]`: Tingkat layanan SKU sumber daya.
-  - `[SpotExpirationTime <DateTime?>]`: Waktu ketika farm server kedaluwarsa. Hanya berlaku jika ini adalah farm server spot.
-  - `[TargetWorkerCount <Int32?>]`: Menghitung skala pekerja.
-  - `[TargetWorkerSizeId <Int32?>]`: ID ukuran pekerja skala.
-  - `[WorkerTierName <String>]`: Tingkat pekerja target ditetapkan ke paket App Service.
+  - `[SpotExpirationTime <DateTime?>]`: Waktu ketika farm server kedaluwarsa. Valid hanya jika itu adalah farm server spot.
+  - `[TargetWorkerCount <Int32?>]`: Menskalakan jumlah pekerja.
+  - `[TargetWorkerSizeId <Int32?>]`: MENSKALAKAN ID ukuran pekerja.
+  - `[WorkerTierName <String>]`: Tingkat pekerja target yang ditetapkan ke paket App Service.
 
 ## RELATED LINKS
 

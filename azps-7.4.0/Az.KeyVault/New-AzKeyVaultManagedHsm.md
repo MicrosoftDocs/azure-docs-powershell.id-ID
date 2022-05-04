@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: c9aebe6854acb83a69d4e36e822abd4f973e9799
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 78933b856a057f2f3e00b0c1c9a4550a77006f99
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226809"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567328"
 ---
 # New-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Membuat HSM terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultmanagedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,10 +30,10 @@ New-AzKeyVaultManagedHsm [-Name] <String> [-ResourceGroupName] <String> [-Locati
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzKeyVaultManagedHsm** membuat HSM terkelola dalam grup sumber daya yang ditentukan. Untuk menambahkan, menghapus, atau mencantumkan kunci dalam HSM yang dikelola, pengguna harus: 
+Cmdlet **New-AzKeyVaultManagedHsm** membuat HSM terkelola dalam grup sumber daya yang ditentukan. Untuk menambahkan, menghapus, atau mencantumkan kunci di HSM terkelola, pengguna harus: 
 1. memberikan izin dengan menambahkan ID pengguna ke Administrator;
-2. tambahkan penetapan peran untuk pengguna seperti "Pengguna Kripto HSM terkelola" dan seterusnya;
-3. mencadangkan data domain keamanan dari HSM yang dikelola menggunakan `Export-AzKeyVaultSecurityDomain`.
+2. tambahkan penetapan peran untuk pengguna seperti "Pengguna Kripto HSM Terkelola" dan sebagainya;
+3. cadangkan data domain keamanan HSM terkelola menggunakan `Export-AzKeyVaultSecurityDomain`.
 
 ## EXAMPLES
 
@@ -45,9 +48,9 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini membuat HSM terkelola bernama myhsm di lokasi eastus2euap. Perintah menambahkan HSM yang dikelola ke grup sumber daya bernama myrg1. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah membuat HSM yang dikelola Standard_B1.
+Perintah ini membuat HSM terkelola bernama myhsm di lokasi eastus2euap. Perintah menambahkan HSM terkelola ke grup sumber daya bernama myrg1. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah membuat HSM terkelola Standard_B1.
 
-### Contoh 2: Membuat HSM yang dikelola CustomB32
+### Contoh 2: Membuat HSM terkelola CustomB32
 ```powershell
 New-AzKeyVaultManagedHsm -Name 'myhsm' -ResourceGroupName 'myrg1' -Location 'eastus2euap' -Administrator "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -Sku 'CustomB32'
 ```
@@ -59,12 +62,12 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap CustomB32
 ```
 
-Perintah ini membuat HSM terkelola, sama seperti contoh sebelumnya. Namun, ini menentukan nilai CustomB32 untuk parameter *SKU* untuk membuat HSM yang dikelola CustomB32.
+Perintah ini membuat HSM terkelola, sama seperti contoh sebelumnya. Namun, ini menentukan nilai CustomB32 untuk parameter *SKU* untuk membuat HSM terkelola CustomB32.
 
 ## PARAMETERS
 
 ### -Administrator
-Id objek administrator awal untuk kumpulan HSM yang dikelola ini.
+Id objek administrator awal untuk kumpulan HSM terkelola ini.
 
 ```yaml
 Type: System.String[]
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurgeProtection
-menentukan apakah perlindungan terhadap pembersihan diaktifkan untuk kumpulan HSM yang dikelola ini. Pengaturan ini hanya efektif jika penghapusan lunak juga diaktifkan. Mengaktifkan fungsionalitas ini tidak dapat dikembalikan.
+menentukan apakah perlindungan terhadap pembersihan diaktifkan untuk kumpulan HSM terkelola ini. Pengaturan ini hanya efektif jika penghapusan sementara juga diaktifkan. Mengaktifkan fungsionalitas ini tidak dapat diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure untuk membuat kubah kunci.
+Menentukan wilayah Azure untuk membuat brankas kunci.
 Gunakan perintah Get-AzResourceProvider dengan parameter ProviderNamespace untuk melihat pilihan Anda.
 
 ```yaml
@@ -139,10 +142,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama HSM yang dikelola untuk dibuat.
+### -Name
+Menentukan nama HSM terkelola yang akan dibuat.
 Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun.
-Nama harus dimulai dan diakhiri dengan huruf atau digit.
+Nama harus dimulai dan diakhir dengan huruf atau digit.
 Nama harus unik secara universal.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang sudah ada untuk membuat kubah kunci.
+Menentukan nama grup sumber daya yang ada untuk membuat brankas kunci.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan SKU instans HSM yang dikelola.
+Menentukan SKU instans HSM terkelola.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftDeleteRetentionInDays
-Menentukan berapa lama kumpulan hsm yang dihapus dipertahankan, dan berapa lama hingga kumpulan hsm yang dikelola dalam status dihapus dapat dibersihkan. Defaultnya adalah 90 hari.
+Menentukan berapa lama kumpulan hsm terkelola yang dihapus dipertahankan, dan berapa lama hingga kumpulan hsm terkelola dalam status dihapus dapat dihapus menyeluruh. Defaultnya 90 hari.
 
 ```yaml
 Type: System.Int32
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -234,8 +237,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

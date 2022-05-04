@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
-ms.openlocfilehash: f19f1473b962807e5b00338bf6c80879a46f5292
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77a7abb056cf5b4e0d9f8107cec273faa0bf219e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808722"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144562612"
 ---
 # Add-AzHDInsightComponentVersion
 
 ## SYNOPSIS
 Menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightcomponentversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Config
+### -Konfigurasi
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
 Parameter Sets: (All)
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayNatRule.md
-ms.openlocfilehash: b40b5ee1e1230ad79a37335ae7de5a6c3ae42fcd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b04aa5563d673631a8915b0c35fcb5c5d5b291f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313425"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580556"
 ---
 # New-AzVirtualNetworkGatewayNatRule
 
 ## SYNOPSIS
 Membuat objek natRule gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworkgatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzVirtualNetworkGatewayNatRule -Name <String> -Type <String> -Mode <String> 
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzVirtualNetworkGatewayNatRule** membuat objek PSVirtualNetworkGatewayNatRule yang mewakili properti natRules di gateway jaringan virtual Anda.
+Cmdlet **New-AzVirtualNetworkGatewayNatRule** membuat objek PSVirtualNetworkGatewayNatRule yang mewakili properti natRules di gateway jaringan virtual Anda.
 
 ## EXAMPLES
 
@@ -38,13 +41,13 @@ $natRule = New-AzVirtualNetworkGatewayNatRule -Name "natRule1" -Type "Static" -M
 Set-AzVirtualNetworkGateway -VirtualNetworkGateway $gateway -NatRule $natRule
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama gw1 milik grup sumber daya myRg dan menyimpannya ke variabel bernama $gateway Perintah kedua membuat objek PSVirtualNetworkGatewayNatRuleirtual baru.
+Perintah pertama mendapatkan gateway jaringan virtual bernama gw1 yang termasuk dalam grup sumber daya myRg dan menyimpannya ke variabel bernama $gateway Perintah kedua membuat objek PSVirtualNetworkGatewayNatRuleirtual baru.
 Perintah ketiga memperbarui gateway jaringan virtual gw1 dengan natRule yang baru ditambahkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalMapping
-Daftar pemetaan eksternal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan eksternal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalMapping
-Daftar pemetaan internal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan internal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfigurationId
-ID Konfigurasi IP aturan NAT ini berlaku untuk
+ID Konfigurasi IP yang berlaku untuk aturan NAT ini
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -179,8 +182,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe aturan NAT untuk VPN NAT
+### -Type
+Jenis aturan NAT untuk VPN NAT
 
 ```yaml
 Type: System.String
@@ -195,8 +198,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,11 +229,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

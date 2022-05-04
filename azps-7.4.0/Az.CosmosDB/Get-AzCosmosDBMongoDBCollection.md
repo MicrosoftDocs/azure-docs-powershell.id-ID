@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollection.md
-ms.openlocfilehash: 112a2350f5633cfe4e16abe006e04a064f286bff
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 43cd9951ba0f8943d5c9cfa12e3b8f44c6401431
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686376"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569882"
 ---
 # Get-AzCosmosDBMongoDBCollection
 
 ## SYNOPSIS
-Dapatkan Koleksi CosmosDB MongoDB.
+Mendapatkan Koleksi CosmosDB MongoDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbcollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBMongoDBCollection [-Name <String>] -ParentObject <PSMongoDBDatabas
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBMongoDBCollection** mendapatkan Koleksi CosmosDB MongoDB.
+Cmdlet **Get-AzCosmosDBMongoDBCollection** mendapatkan Koleksi MongoDB CosmosDB.
 
 ## EXAMPLES
 
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koleksi.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

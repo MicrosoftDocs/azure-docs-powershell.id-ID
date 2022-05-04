@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/New-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject.md
-ms.openlocfilehash: 72bbdf95d84613d392ba10a432c725efb5fa937b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 636fe083b5db8d9ff6823314c31deff7e88257e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866772"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144561910"
 ---
 # New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject
 
 ## SYNOPSIS
-Membuat aturan pemberitahuan kustom daftar perbolehkan baru untuk grup keamanan perangkat (Keamanan IoT)
+Membuat aturan pemberitahuan kustom daftar perkenankan baru untuk grup keamanan perangkat (Keamanan IoT)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azdevicesecuritygroupallowlistcustomalertruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject -Enabled <Boolean> -Type
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject membuat daftar baru aturan peringatan kustom yang diperbolehkan untuk grup keamanan perangkat dalam solusi keamanan IoT.
+Cmdlet New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject membuat daftar baru aturan pemberitahuan kustom yang diizinkan untuk grup keamanan perangkat dalam solusi keamanan IoT.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ ValueType: "String"
 AllowlistValues: []
 ```
 
-Membuat daftar perbolehkan baru pemberitahuan kustom rull dari tipe "LocalUserNotAllowed" dengan status diatur ke nonaktif
+Buat daftar perkenankan baru rull pemberitahuan kustom dari jenis "LocalUserNotAllowed" dengan status diatur ke nonaktifkan
 
 ## PARAMETERS
 
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Aturan diaktifkan.
+### -Diaktifkan
+Apakah aturan diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -92,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe aturan.
+### -Type
+Jenis aturan.
 
 ```yaml
 Type: System.String
@@ -108,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

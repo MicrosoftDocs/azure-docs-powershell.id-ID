@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSchedule.md
-ms.openlocfilehash: 631472734dd896d1845a0f229302d7c2ed525afb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d43bf66500c8e8c794d6f12bb1b3439200c65b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119889"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567238"
 ---
 # New-AzScheduledQueryRuleSchedule
 
 ## SYNOPSIS
-Membuat objek dengan tipe Jadwal
+Membuat objek jenis Jadwal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruleschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ New-AzScheduledQueryRuleSchedule -FrequencyInMinutes <Int32> -TimeWindowInMinute
 ```
 
 ## DESCRIPTION
-Membuat objek dengan tipe Jadwal.
-Objek ini akan dialihkan ke perintah yang membuat Aturan Peringatan Log.
+Membuat objek jenis Jadwal.
+Objek ini akan diteruskan ke perintah yang membuat Aturan Pemberitahuan Log.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrequencyInMinutes
-Frekuensi peringatan
+Frekuensi pemberitahuan
 
 ```yaml
 Type: System.Int32
@@ -83,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

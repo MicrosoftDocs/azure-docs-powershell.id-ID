@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleTemplate.md
-ms.openlocfilehash: f8aee55740b08e6b899c67b826f93d31a88835c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee7002398d65cbf73782f25031e6b696f5b63cb0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934813"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563170"
 ---
 # Get-AzSentinelAlertRuleTemplate
 
 ## SYNOPSIS
 Mendapatkan Templat Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertruletemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,10 +41,10 @@ Get-AzSentinelAlertRuleTemplate -ResourceId <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelAlertRuleTemplate** mendapatkan Templat Aturan Peringatan dari ruang kerja tertentu.
-Jika Anda menentukan parameter *AlertRuleTemplateId* , sebuah objek **AlertRuleTemplate** dikembalikan.
-Jika Anda tidak menentukan parameter *AlertRuleTemplateId* , array yang berisi semua Templat Aturan Peringatan di ruang kerja tertentu akan dikembalikan.
-Anda dapat menggunakan objek **AlertRuleTemplate** untuk membuat Aturan Peringatan baru.
+Cmdlet **Get-AzSentinelAlertRuleTemplate** mendapatkan Templat Aturan Pemberitahuan dari ruang kerja yang ditentukan.
+Jika Anda menentukan parameter *AlertRuleTemplateId* , satu objek **AlertRuleTemplate** dikembalikan.
+Jika Anda tidak menentukan parameter *AlertRuleTemplateId* , array yang berisi semua Templat Aturan Pemberitahuan di ruang kerja yang ditentukan akan dikembalikan.
+Anda dapat menggunakan objek **AlertRuleTemplate** untuk membuat Aturan Pemberitahuan baru.
 
 ## EXAMPLES
 
@@ -50,21 +53,21 @@ Anda dapat menggunakan objek **AlertRuleTemplate** untuk membuat Aturan Peringat
 $AlertRuleTemplates = Get-AzSentinelAlertRuleTemplate -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua **AlertRuleTemplates** dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $AlertRuleTemplates.
+Contoh ini mendapatkan semua **AlertRuleTemplates** di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRuleTemplates.
 
 ### Contoh 2
 ```powershell
 $AlertRuleTemplate = Get-AzSentinelAlertRuleTemplate -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleTemplateId "MyAlertRuleTemplateId"
 ```
 
-Contoh ini mendapatkan **AlertRuleTemplate** tertentu dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $AlertRuleTemplate.
+Contoh ini mendapatkan **AlertRuleTemplate** tertentu di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $AlertRuleTemplate.
 
 ### Contoh 3
 ```powershell
 Get-AzSentinelAlertRuleTemplate @SentinelConnection | Where-Object {$_.Kind -eq "Scheduled"}
 ```
 
-Contoh ini (menggunakan objek koneksi) mendapatkan AlertRuleTemplates jenis "Terjadwal"
+Contoh ini (menggunakan objek koneksi) mendapatkan AlertRuleTemplates dari jenis "Terjadwal"
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

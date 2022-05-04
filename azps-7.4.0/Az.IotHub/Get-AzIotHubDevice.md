@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDevice.md
-ms.openlocfilehash: 2eeea0e78072a734c3b98cc317c828f2472d3a8f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0a1732e045c410b361d5b140f706b7a84109e13b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121959"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572787"
 ---
 # Get-AzIotHubDevice
 
 ## SYNOPSIS
-Mencantumkan semua perangkat atau perangkat tertentu yang ada dalam Azure IoT Hub. 
+Mencantumkan semua perangkat atau perangkat tertentu yang terkandung dalam Azure IoT Hub. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDevice [-ResourceId] <String> [-DeviceId <String>] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Dapatkan detail perangkat Hub Iot atau cantumkan semua perangkat di Hub Iot.
+Dapatkan detail perangkat Iot Hub atau cantumkan semua perangkat di Iot Hub.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ device2   Disabled Disconnected     Sas                  False        1/1/0001 1
 device3   Enabled  Disconnected     SelfSigned           False        1/1/0001 12:00:00 AM
 ```
 
-Tampilkan semua perangkat di Hub Iot.
+Tampilkan semua perangkat di Iot Hub.
 
 ### Contoh 2
 ```powershell
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

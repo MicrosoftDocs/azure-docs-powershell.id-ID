@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 60b42f9416e2f07c315dd10b3cabdb9bd663105a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 62e1c98f26429b271ed9d425ea5cbb102959cc9d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938791"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566951"
 ---
 # New-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkinterfaceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,10 +59,10 @@ $IPConfig1 = New-AzNetworkInterfaceIpConfig -Name "IPConfig-1" -Subnet $Subnet -
     -IpConfiguration $IpConfig1
 ```
 
-Dua perintah pertama mendapatkan jaringan virtual yang disebut myvnet dan subnet yang disebut mysubnet yang sebelumnya dibuat. Ini disimpan di $vnet dan $Subnet masing-masing. Perintah ketiga mendapatkan alamat IP publik yang sebelumnya dibuat yang disebut PIP1. Perintah forth membuat konfigurasi IP baru yang disebut "IPConfig-1" sebagai konfigurasi IP utama dengan alamat IP publik yang terkait dengannya.
+Dua perintah pertama mendapatkan jaringan virtual yang disebut myvnet dan subnet yang masing-masing disebut mysubnet yang sebelumnya dibuat. Ini disimpan dalam $vnet dan $Subnet masing-masing. Perintah ketiga mendapatkan alamat IP publik yang dibuat sebelumnya yang disebut PIP1. Perintah forth membuat konfigurasi IP baru yang disebut "IPConfig-1" sebagai konfigurasi IP utama dengan alamat IP publik yang terkait dengannya.
 Perintah terakhir kemudian membuat antarmuka jaringan yang disebut mynic1 menggunakan konfigurasi IP ini.
 
-### Contoh 2: Membuat konfigurasi IP dengan alamat IP pribadi
+### Contoh 2: Membuat konfigurasi IP dengan alamat IP privat
 ```powershell
 $vnet = Get-AzVirtualNetwork -Name myvnet -ResourceGroupName myrg
 $Subnet = Get-AzVirtualNetworkSubnetConfig -Name mysubnet -VirtualNetwork $vnet
@@ -71,12 +74,12 @@ $nic = New-AzNetworkInterface -Name mynic1 -ResourceGroupName myrg -Location wes
     $IpConfig2
 ```
 
-Dua perintah pertama mendapatkan jaringan virtual yang disebut myvnet dan subnet yang disebut mysubnet yang sebelumnya dibuat. Ini disimpan di $vnet dan $Subnet masing-masing. Perintah ketiga membuat konfigurasi IP baru yang disebut "IPConfig-2" dengan alamat IP pribadi 10.0.0.5 yang terkait dengannya.
+Dua perintah pertama mendapatkan jaringan virtual yang disebut myvnet dan subnet yang masing-masing disebut mysubnet yang sebelumnya dibuat. Ini disimpan dalam $vnet dan $Subnet masing-masing. Perintah ketiga membuat konfigurasi IP baru yang disebut "IPConfig-2" dengan alamat IP privat 10.0.0.5 yang terkait dengannya.
 Perintah terakhir kemudian membuat antarmuka jaringan yang disebut mynic1 menggunakan konfigurasi IP ini.
 
 ### Contoh 3
 
-Membuat konfigurasi IP antarmuka jaringan. (autogenerasi)
+Membuat konfigurasi IP antarmuka jaringan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroup
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi kelompok keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup[]
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationSecurityGroupId
-Menentukan kumpulan referensi grup keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi kelompok keamanan aplikasi tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.String[]
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRule
-Menentukan kumpulan referensi Aturan Nat masuk penyeimbang muatan tempat IPConfiguration antarmuka jaringan ini berada.
+Menentukan kumpulan referensi Aturan Nat masuk penyeimbang beban tempat IPConfiguration antarmuka jaringan ini berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSInboundNatRule[]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRuleId
-Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang muat tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang muatan tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: System.String[]
@@ -220,7 +223,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi IP antarmuka jaringan.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Menentukan alamat IP statis dari konfigurasi IP antarmuka jaringan.
+Menentukan alamat IP statis konfigurasi IP antarmuka jaringan.
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -364,7 +367,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceIPConfiguration
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

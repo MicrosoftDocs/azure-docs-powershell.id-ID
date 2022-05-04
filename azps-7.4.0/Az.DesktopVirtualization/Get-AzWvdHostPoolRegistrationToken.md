@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdHostPoolRegistrationToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdHostPoolRegistrationToken.md
-ms.openlocfilehash: c864db4ff437d34265edebc4f35eed36b0e667d2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a20d2a3b3d308b44895fb655c4be39b79af643f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684487"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567472"
 ---
 # Get-AzWvdHostPoolRegistrationToken
 
 ## SYNOPSIS
-Token registrasi kolam renang tuan rumah.
+Token pendaftaran kumpulan host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdhostpoolregistrationtoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzWvdHostPoolRegistrationToken -InputObject <IDesktopVirtualizationIdentity>
 ```
 
 ## DESCRIPTION
-Token registrasi kolam renang tuan rumah.
+Token pendaftaran kumpulan host.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Windows informasi token registrasi Desktop Virtual oleh HostPoolName
+### Contoh 1: Mendapatkan Windows informasi token pendaftaran Virtual Desktop oleh HostPoolName
 ```powershell
 Get-AzWvdHostPoolRegistrationToken -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
 ```
@@ -47,7 +50,7 @@ ExpirationTime       RegistrationTokenOperation Token
 4/1/2020 10:19:33 PM None                       eyJhbGciOiJSUzI1NiIsImtpZCI6IkMyRjU1RUYxNzg0MEFCNzkzMDk2RUYzRjdEMkNBRDk0NThGNDhEOTQiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjU5NGJjZWUwLTk5MjQtNDg3ZC1iOW...
 ```
 
-Perintah ini mendapatkan informasi token registrasi Desktop Virtual Windows dari HostPool.
+Perintah ini mendapatkan Windows informasi token pendaftaran Virtual Desktop dari HostPool.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -184,9 +187,9 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan

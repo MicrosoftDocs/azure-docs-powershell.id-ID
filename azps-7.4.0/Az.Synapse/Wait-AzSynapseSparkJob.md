@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/wait-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Wait-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Wait-AzSynapseSparkJob.md
-ms.openlocfilehash: 835db27c1eb21b629d48030060e00e6ef0d295dc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7ddb248bb9f755bc624c4f41b52a42014049cd5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559694"
 ---
 # Wait-AzSynapseSparkJob
 
 ## SYNOPSIS
 Menunggu pekerjaan Synapse Analytics Spark selesai.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/wait-azsynapsesparkjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Wait-AzSynapseSparkJob -SparkJobObject <PSSynapseSparkJob> [-LivyId <Int32>] [-W
 ```
 
 ## DESCRIPTION
-Cmdlet **Wait-AzSynapseSparkJob** menunggu pekerjaan Analitik Azure Synapse selesai.
+Cmdlet **Wait-AzSynapseSparkJob** menunggu pekerjaan analitik Azure Synapse selesai.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet **Wait-AzSynapseSparkJob** menunggu pekerjaan Analitik Azure Synapse sele
 Wait-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -LivyId 324
 ```
 
-Perintah ini menunggu pekerjaan dengan ID yang ditentukan untuk diselesaikan.
+Perintah ini menunggu pekerjaan dengan ID yang ditentukan selesai.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkJobObject
-Objek input pekerjaan percikan api, biasanya melewati pipeline.
+Objek input pekerjaan Spark, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkJob
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama kolam renang Synapse Spark.
+Nama kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolObject
-Objek input spark pool, biasanya melewati pipeline.
+Objek input kumpulan Spark, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeoutInSeconds
-Jumlah waktu maksimum untuk menunggu sebelum kesalahan keluar. Nilai defaultnya adalah jangan pernah habis waktu.
+Jumlah waktu maksimum untuk menunggu sebelum kesalahan keluar. Nilai defaultnya adalah tidak pernah habis waktu.
 
 ```yaml
 Type: System.Int32
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitIntervalInSeconds
-Interval polling antara memeriksa status pekerjaan, dalam hitungan detik.
+Interval polling antara pemeriksaan status pekerjaan, dalam hitungan detik.
 
 ```yaml
 Type: System.Int32
@@ -169,7 +172,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

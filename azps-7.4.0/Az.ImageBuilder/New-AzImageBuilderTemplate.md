@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
-ms.openlocfilehash: 39a28293a73b7f8e29d49eec982cf9c7b6102797
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1d46ee79ee9ca91cf98440099087a5db6f80a40e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940861"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569468"
 ---
 # New-AzImageBuilderTemplate
 
 ## SYNOPSIS
-Membuat templat gambar mesin virtual
+Membuat templat gambar komputer virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildertemplate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +40,11 @@ New-AzImageBuilderTemplate -ImageTemplateName <String> -ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Membuat templat gambar mesin virtual
+Membuat templat gambar komputer virtual
 
 ## EXAMPLES
 
-### Contoh 1: Membuat templat gambar mesin virtual
+### Contoh 1: Membuat templat gambar komputer virtual
 ```powershell
 $srcPlatform = New-AzImageBuilderSourceObject -SourceTypePlatformImage -Publisher 'Canonical'  -Offer 'UbuntuServer' -Sku '18.04-LTS' -Version 'latest'
 $disSharedImg = New-AzImageBuilderDistributorObject -SharedImageDistributor -ArtifactTag @{tag='dis-share'} -GalleryImageId '/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/wyunchi-imagebuilder/providers/Microsoft.Compute/galleries/testsharedgallery/images/imagedefinition-linux/versions/1.0.0' -ReplicationRegion 'eastus2' -RunOutputName 'runoutput-01'  -ExcludeFromLatest $false
@@ -60,12 +63,12 @@ Version               : latest
 PlanInfo              : Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.PlatformImagePurchasePlan
 ```
 
-Perintah ini membuat templat gambar mesin virtual.
+Perintah ini membuat templat gambar komputer virtual.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -BuildTimeoutInMinute
-Durasi maksimum untuk menunggu selagi menyusun templat gambar.
+Durasi maksimum untuk menunggu saat membangun templat gambar.
 Hilangkan atau tentukan 0 untuk menggunakan default (4 jam).
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kustomisasi
-Menentukan properti yang digunakan untuk menjelaskan langkah-langkah kustomisasi gambar, seperti Sumber gambar dll. Untuk membangun, lihat bagian CATATAN untuk MENGKUSTOMISASI properti dan membuat tabel hash.
+Menentukan properti yang digunakan untuk menjelaskan langkah-langkah penyesuaian gambar, seperti Sumber gambar, dll. Untuk membuat, lihat bagian CATATAN untuk menyesuaikan properti dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateCustomizer[]
@@ -126,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -Distribusikan
-Distribusi menargetkan tempat output gambar perlu dialakan.
-Untuk membangun, lihat bagian CATATAN untuk properti DISTRIBUTE dan membuat tabel hash.
+Distribusi menargetkan ke mana output gambar perlu masuk.
+Untuk membuat, lihat bagian CATATAN untuk properti DISTRIBUTE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateDistributor[]
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -JsonTemplatePath
-Jalur file templat gambar json yang diformat.
+Jalur file templat gambar berformat json.
 
 ```yaml
 Type: System.String
@@ -216,9 +219,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Source
-Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi, dan mendistribusikan.
-Untuk membangun, lihat bagian CATATAN untuk properti SOURCE dan membuat tabel hash.
+### -Sumber
+Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
+Untuk membuat, lihat bagian CATATAN untuk properti SUMBER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateSource
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMProfileVmSize
-Ukuran mesin virtual yang digunakan untuk menyusun, mengustomisasi, dan mengambil gambar.
+Ukuran komputer virtual yang digunakan untuk membangun, menyesuaikan, dan mengambil gambar.
 Hilangkan atau tentukan string kosong untuk menggunakan default (Standard_D1_v2).
 
 ```yaml
@@ -324,8 +327,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -373,18 +376,18 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-KUSTOMISASI <IImageTemplateCustomizer[]>: Menentukan properti yang digunakan untuk menjelaskan langkah-langkah kustomisasi gambar, seperti Sumber gambar dll.
-  - `Type <String>`: Tipe alat kustomisasi yang ingin Anda gunakan pada Gambar. Misalnya, "Shell" bisa menjadi penyesuai shell
-  - `[Name <String>]`: Nama yang Mudah Dikenal untuk memberikan konteks tentang apa yang dilakukan langkah kustomisasi ini
+KUSTOMISASI <IImageTemplateCustomizer[]>: Menentukan properti yang digunakan untuk menjelaskan langkah-langkah penyesuaian gambar, seperti Sumber gambar, dll.
+  - `Type <String>`: Jenis alat kustomisasi yang ingin Anda gunakan pada Gambar. Misalnya, "Shell" bisa menjadi penyesuai shell
+  - `[Name <String>]`: Nama yang Mudah Diingat untuk memberikan konteks tentang apa yang dilakukan langkah penyesuaian ini
 
-DISTRIBUSIkan <IImageTemplateDistributor[]>: Target distribusi tempat output gambar perlu dialihkan.
+DISTRIBUTE <IImageTemplateDistributor[]>: Distribusi menargetkan tempat output gambar perlu masuk.
   - `RunOutputName <String>`: Nama yang akan digunakan untuk RunOutput terkait.
   - `Type <String>`: Jenis distribusi.
   - `[ArtifactTag <IImageTemplateDistributorArtifactTags>]`: Tag yang akan diterapkan ke artefak setelah dibuat/diperbarui oleh distributor.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-SUMBER <IImageTemplateSource>: Menjelaskan sumber gambar mesin virtual untuk membangun, mengustomisasi, dan mendistribusikan.
-  - `Type <String>`: Menentukan tipe gambar sumber yang ingin Anda mulai.
+SUMBER <IImageTemplateSource>: Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
+  - `Type <String>`: Menentukan jenis gambar sumber yang ingin Anda mulai.
 
 ## RELATED LINKS
 

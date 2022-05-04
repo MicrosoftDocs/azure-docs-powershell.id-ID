@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/start-azaksc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Start-AzAksCluster.md
-ms.openlocfilehash: 8d33e76ee86155d803335639a235601239cdcc79
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36b69dc1a8b93bbbc00bb67dc4b3f92152d6ad56
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752652"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559768"
 ---
 # Start-AzAksCluster
 
 ## SYNOPSIS
-Memulai Kluster terkelola yang Dihentikan
+Memulai Kluster Terkelola yang Dihentikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/start-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,28 +35,28 @@ Start-AzAksCluster -InputObject <IAksIdentity> [-DefaultProfile <PSObject>] [-As
 ```
 
 ## DESCRIPTION
-Memulai Kluster terkelola yang Dihentikan
+Memulai Kluster Terkelola yang Dihentikan
 
 ## EXAMPLES
 
-### Contoh 1: Memulai kluster Aks dengan nama grup sumber daya dan nama kluster
+### Contoh 1: Mulai kluster Aks dengan nama grup sumber daya dan nama kluster
 ```powershell
 Start-AzAksCluster -ResourceGroupName group -Name myCluster
 ```
 
 Mulai kluster Aks dengan nama grup sumber daya dan nama kluster.
 
-### Contoh 2: Memulai kluster Aks dengan pipeline
+### Contoh 2: Memulai kluster Aks dengan alur
 ```powershell
 Get-AzAksCluster -ResourceGroupName group -Name myCluster | Start-AzAksCluster
 ```
 
-Mulai kluster Aks dengan pipeline.
+Mulai kluster Aks dengan alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya kluster terkelola.
 
 ```yaml
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -173,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -225,14 +228,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IAksIdentity>: Parameter Identitas
-  - `[AgentPoolName <String>]`: Nama pool agen.
+  - `[AgentPoolName <String>]`: Nama kumpulan agen.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama kawasan Azure yang didukung.
+  - `[Location <String>]`: Nama wilayah Azure yang didukung.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[ResourceName <String>]`: Nama sumber daya kluster yang dikelola.
-  - `[RoleName <String>]`: Nama peran untuk sumber daya cluster accessProfile yang dikelola.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceName <String>]`: Nama sumber daya kluster terkelola.
+  - `[RoleName <String>]`: Nama peran untuk sumber daya accessProfile kluster terkelola.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

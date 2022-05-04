@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/install-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Install-AzAksKubectl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Install-AzAksKubectl.md
-ms.openlocfilehash: 0fee6fdb1e6a118eaef6fbdd5f21e6096bfd7ace
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0363fa5f2b1b5376186b887c36c4202fd793bc6d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143130023"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579872"
 ---
 # Install-AzAksKubectl
 
 ## SYNOPSIS
 Unduh dan instal kubectl, alat baris perintah Kubernetes.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/install-azakskubectl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Install-AzAksKubectl -Version latest
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -67,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
-Path di mana untuk menginstal kubectl.
+### -Destination
+Jalur untuk menginstal kubectl.
 Default untuk diinstal ke ~/.azure-kubectl/
 
 ```yaml
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Timpa kubectl yang sudah ada tanpa prompt
+### -Force
+Timpa kubectl yang ada tanpa perintah
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -193,11 +196,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

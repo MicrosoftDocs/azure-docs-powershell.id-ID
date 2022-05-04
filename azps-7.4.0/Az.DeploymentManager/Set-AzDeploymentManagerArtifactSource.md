@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerArtifactSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerArtifactSource.md
-ms.openlocfilehash: 6fb0fe8aa07579b165ca2ba5d0b34db92a772d00
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f24173d6fdcf98ceb0ad160445933df3ca732831
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002601"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144574544"
 ---
 # Set-AzDeploymentManagerArtifactSource
 
 ## SYNOPSIS
 Memperbarui sumber artefak.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerartifactsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet mengembalikan objek ArtifactSource yang diperbarui.
 Get-AzDeploymentManagerArtifactSource -InputObject $artifactSourceObject
 ```
 
-Perintah ini memperbarui sumber artefak yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $artifactSourceObject.
+Perintah ini memperbarui sumber artefak yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName dari $artifactSourceObject.
 Sumber artefak akan diperbarui ke properti yang diatur dalam $artifactSourceObject.
 
 ## PARAMETERS
@@ -70,8 +73,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

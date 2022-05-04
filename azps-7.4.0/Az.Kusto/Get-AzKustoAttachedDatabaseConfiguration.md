@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 632b5061b8a97923449f8337ab3ecf0b42239919
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c439248a5d9384e3524c07482099e91439fe84c8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682668"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577730"
 ---
 # Get-AzKustoAttachedDatabaseConfiguration
 
 ## SYNOPSIS
-Mengembalikan konfigurasi database yang dilampirkan.
+Mengembalikan konfigurasi database terlampir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzKustoAttachedDatabaseConfiguration -ClusterName <String> -ResourceGroupNam
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzKustoAttachedDatabaseConfiguration -ClusterName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,7 +41,7 @@ Get-AzKustoAttachedDatabaseConfiguration -InputObject <IKustoIdentity> [-Default
 ```
 
 ## DESCRIPTION
-Mengembalikan konfigurasi database yang dilampirkan.
+Mengembalikan konfigurasi database terlampir.
 
 ## EXAMPLES
 
@@ -53,9 +56,9 @@ Name                                         Type                               
 testnewkustoclusterf/myfollowerconfiguration Microsoft.Kusto/Clusters/AttachedDatabaseConfigurations East US
 ```
 
-Perintah di atas mencantumkan semua AttachedDatabaseConfigurations dalam kluster "testnewkustoclusterf".
+Perintah di atas mencantumkan semua AttachedDatabaseConfigurations di kluster "testnewkustoclusterf".
 
-### Contoh 2: Dapatkan AttachedDatabaseConfiguration tertentu dalam kluster
+### Contoh 2: Mendapatkan AttachedDatabaseConfiguration tertentu dalam kluster
 ```powershell
 Get-AzKustoAttachedDatabaseConfiguration -ResourceGroupName "testrg" -ClusterName "testnewkustoclusterf" -Name "myfollowerconfiguration" 
 ```
@@ -66,12 +69,12 @@ Name                                         Type                               
 testnewkustoclusterf/myfollowerconfiguration Microsoft.Kusto/Clusters/AttachedDatabaseConfigurations East US
 ```
 
-Perintah di atas mengembalikan AttachedDatabaseConfigurations bernama "myfollowerconfiguration" dalam kluster "testnewkustoclusterf".
+Perintah di atas mengembalikan AttachedDatabaseConfigurations bernama "myfollowerconfiguration" di kluster "testnewkustoclusterf".
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama klaster Kusto.
+Nama kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama konfigurasi database yang dilampirkan.
+### -Name
+Nama konfigurasi database terlampir.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi klaster Kusto.
+Nama grup sumber daya yang berisi kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -146,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -182,17 +185,17 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama klaster Kusto.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
+  - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
+  - `[DatabaseName <String>]`: Nama database di kluster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid of the operation ID
+  - `[Location <String>]`: Nama lokasi (wilayah) Azure.
+  - `[OperationId <String>]`: Panduan ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityWorkspaceSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityWorkspaceSetting.md
-ms.openlocfilehash: d9173949888a0f8f2004a56780bd7b767137f63a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5c22c6c2bf5096c020ebaf17e0ca7f03790f5048
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672426"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573914"
 ---
 # Set-AzSecurityWorkspaceSetting
 
 ## SYNOPSIS
 Memperbarui pengaturan ruang kerja untuk langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecurityworkspacesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzSecurityWorkspaceSetting -Name <String> -Scope <String> -WorkspaceId <Stri
 
 ## DESCRIPTION
 Memperbarui pengaturan ruang kerja untuk langganan.
-Ruang kerja yang dikonfigurasi akan menyimpan data keamanan yang dikumpulkan oleh agen agen Analitik Log Azure yang diinstal di VM di dalam langganan ini.
+Ruang kerja yang dikonfigurasi akan menyimpan data keamanan yang dikumpulkan oleh agen agen Azure Log Analytics yang diinstal di VM di dalam langganan ini.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/workspaceSettings/default default /...
 ```
 
-Mengatur ruang kerja "securityuserws" untuk menyimpan semua data keamanan yang dikumpulkan oleh agen Analitik Log Azure.
+Mengatur ruang kerja "securityuserws" untuk menyimpan semua data keamanan yang dikumpulkan oleh agen Azure Log Analytics.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup.
+### -Cakupan
+Cakupan.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceId
-ID Ruang Kerja.
+ID ruang kerja.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

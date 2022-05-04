@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientPackage.md
-ms.openlocfilehash: 5640bba06bde12882da995bae8e2703481fb3517
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f25fa4327a1e948243253e5a604c831777fdc655
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743346"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563692"
 ---
 # Get-AzVpnClientPackage
 
 ## SYNOPSIS
 Mendapatkan informasi tentang paket klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,13 +30,13 @@ Get-AzVpnClientPackage -ResourceGroupName <String> -VirtualNetworkGatewayName <S
 
 ## DESCRIPTION
 Cmdlet **Get-AzVpnClientPackage** mendapatkan informasi tentang paket klien VPN yang tersedia dari gateway jaringan virtual.
-Paket klien berisi data konfigurasi yang memungkinkan komputer klien membuat koneksi VPN ke jaringan virtual Azure; komputer klien harus memiliki paket konfigurasi yang benar yang terinstal untuk membuat koneksi VPN.
+Paket klien berisi data konfigurasi yang memungkinkan komputer klien membuat koneksi VPN ke jaringan virtual Azure; komputer klien harus memiliki paket konfigurasi yang benar yang diinstal untuk membuat koneksi VPN.
 Paket konfigurasi yang berbeda tersedia berdasarkan versi Windows komputer klien (misalnya, Windows 7 atau Windows 10) dan pada arsitektur prosesor komputer klien (AMD64 atau x86).
-Anda harus menentukan tipe arsitektur saat menjalankan **Get-AzVpnClientPackage**.
+Anda harus menentukan jenis arsitektur saat menjalankan **Get-AzVpnClientPackage**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang paket klien VPN arsitektur prosesor
+### Contoh 1: Mendapatkan informasi tentang paket klien VPN arsitektur prosesor
 ```powershell
 Get-AzVpnClientPackage -ProcessorArchitecture -VirtualNetworkGatewayName "ContosoVirtualNetworkGateway" -ResourceGroupName "ContosoResourceGroup" -ProcessorArchitecture "Amd64"
 ```
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessorArchitecture
-Menentukan tipe arsitektur CPU tempat paket klien didesain.
+Menentukan jenis arsitektur CPU yang dirancang untuk paket klien.
 Nilai yang valid adalah Amd64 dan X86.
 
 ```yaml
@@ -76,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
+Menentukan nama grup sumber daya tempat gateway jaringan virtual ditetapkan.
+Grup sumber daya mengategorikan item untuk membantu menyederhanakan manajemen inventarisasi dan administrasi Azure umum.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

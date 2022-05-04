@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiagnosticsExtension.md
-ms.openlocfilehash: 1c8d28ace80e5e48f21a8a3ce577be1df7245160
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 082a29c1b2d209134680d75ed53cbfe2e60b8a44
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686934"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559192"
 ---
 # Set-AzVMDiagnosticsExtension
 
 ## SYNOPSIS
-Mengonfigurasi ekstensi diagnostik Azure di mesin virtual.
+Mengonfigurasi ekstensi diagnostik Azure pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmdiagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Set-AzVMDiagnosticsExtension [-ResourceGroupName] <String> [-VMName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMDiagnosticsExtension mengonfigurasi** ekstensi diagnostik Azure pada mesin virtual.
+Cmdlet **Set-AzVMDiagnosticsExtension mengonfigurasi** ekstensi diagnostik Azure pada komputer virtual.
 
 ## EXAMPLES
 
@@ -40,16 +43,16 @@ Set-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup01" -VMName "Virtu
 
 Perintah ini menggunakan file konfigurasi diagnostik untuk mengaktifkan diagnostik.
 File diagnostics_publicconfig.xml berisi konfigurasi XML publik untuk ekstensi diagnostik termasuk nama akun penyimpanan tempat data diagnostik akan dikirim.
-Akun penyimpanan diagnostik harus berada dalam langganan yang sama dengan mesin virtual.
+Akun penyimpanan diagnostik harus berada dalam langganan yang sama dengan komputer virtual.
 
-### Contoh 2: Aktifkan diagnostik menggunakan nama akun penyimpanan
+### Contoh 2: Mengaktifkan diagnostik menggunakan nama akun penyimpanan
 ```powershell
 Set-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup1" -VMName "VirtualMachine2" -DiagnosticsConfigurationPath diagnostics_publicconfig.xml -StorageAccountName "MyStorageAccount"
 ```
 
 Perintah ini menggunakan nama akun penyimpanan untuk mengaktifkan diagnostik.
-Jika konfigurasi diagnostik tidak menentukan nama akun penyimpanan atau jika Anda ingin menimpa nama akun penyimpanan diagnostik yang ditentukan dalam file konfigurasi, gunakan parameter *StorageAccountName* .
-Akun penyimpanan diagnostik harus berada dalam langganan yang sama dengan mesin virtual.
+Jika konfigurasi diagnostik tidak menentukan nama akun penyimpanan atau jika Anda ingin mengganti nama akun penyimpanan diagnostik yang ditentukan dalam file konfigurasi, gunakan parameter *StorageAccountName* .
+Akun penyimpanan diagnostik harus berada dalam langganan yang sama dengan komputer virtual.
 
 ### Contoh 3: Mengaktifkan diagnostik menggunakan nama dan kunci akun penyimpanan
 ```powershell
@@ -57,12 +60,12 @@ Set-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup01" -VMName "Virtu
 ```
 
 Perintah ini menggunakan nama dan kunci akun penyimpanan untuk mengaktifkan diagnostik.
-Jika akun penyimpanan diagnostik berada dalam langganan yang berbeda dari mesin virtual, maka aktifkan pengiriman data diagnostik ke akun penyimpanan tersebut dengan menentukan nama dan kuncinya secara eksplisit.
+Jika akun penyimpanan diagnostik berada dalam langganan yang berbeda dari komputer virtual, maka aktifkan pengiriman data diagnostik ke akun penyimpanan tersebut dengan secara eksplisit menentukan nama dan kuncinya.
 
 ## PARAMETERS
 
 ### -AutoUpgradeMinorVersion
-Menunjukkan apakah cmdlet ini memungkinkan agen tamu Azure memperbarui ekstensi secara otomatis ke versi minor yang lebih baru.
+Menunjukkan apakah cmdlet ini memungkinkan agen tamu Azure untuk memperbarui ekstensi secara otomatis ke versi minor yang lebih baru.
 
 ```yaml
 Type: System.Boolean
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin maya.
+Menentukan lokasi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -227,8 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Tipe* .
+Menentukan versi ekstensi yang akan digunakan untuk komputer virtual ini.
+Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Jenis* .
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini beroperasi.
+Menentukan nama komputer virtual tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

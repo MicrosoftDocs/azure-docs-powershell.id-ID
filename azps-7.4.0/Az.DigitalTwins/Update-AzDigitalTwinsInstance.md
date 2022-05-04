@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 8c617d566f25daab83b7c18f170f636fdf6cc8a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ae5889d2c4b53038fa8a3b3807dcd8077a08d4bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748584"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577766"
 ---
 # Update-AzDigitalTwinsInstance
 
 ## SYNOPSIS
-Memperbarui metadata DigitalTwinsInstance.
+Perbarui metadata DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/update-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
  [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update
+### Pembaruan
 ```
 Update-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String>
  -DigitalTwinsPatchDescription <IDigitalTwinsPatchDescription> [-SubscriptionId <String>]
@@ -46,7 +49,7 @@ Update-AzDigitalTwinsInstance -InputObject <IDigitalTwinsIdentity> [-Tag <Hashta
 ```
 
 ## DESCRIPTION
-Memperbarui metadata DigitalTwinsInstance.
+Perbarui metadata DigitalTwinsInstance.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Location Name                  Type
 eastus   youriDigitalTwinsTest Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Memperbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lainnya
+Perbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lain
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -DigitalTwinsPatchDescription
 Penjabaran dari layanan DigitalTwins.
-Untuk membangun, lihat bagian CATATAN untuk properti DIGITALTWINSPATCHDESCRIPTION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSPATCHDESCRIPTION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsPatchDescription
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

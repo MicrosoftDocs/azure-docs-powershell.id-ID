@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
-ms.openlocfilehash: 20c1df9de90ccc6bdc6fd5783b3d9d32f0544779
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d1d660a9fc947886cb600a9a767637a1850e7df0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000567"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567382"
 ---
-# New-AzKeyVaultCertificatePolicy
+# Baru-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
 Membuat objek kebijakan sertifikat dalam memori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultcertificatepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzKeyVaultCertificatePolicy [-IssuerName] <String> [-SubjectName] <String>
  [-Curve <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Nama DNS
+### DNSNames
 ```
 New-AzKeyVaultCertificatePolicy [-IssuerName] <String> [[-SubjectName] <String>]
  [-DnsName] <System.Collections.Generic.List`1[System.String]> [-RenewAtNumberOfDaysBeforeExpiry <Int32>]
@@ -78,11 +81,11 @@ Created                         :
 Updated                         :
 ```
 
-Perintah ini membuat kebijakan sertifikat yang berlaku selama enam bulan dan menggunakan kembali kunci untuk memperpanjang sertifikat.
+Perintah ini membuat kebijakan sertifikat yang berlaku selama enam bulan dan menggunakan kembali kunci untuk memperbarui sertifikat.
 
 ### Contoh 2
 
-Membuat objek kebijakan sertifikat dalam memori. (autogenerasi)
+Membuat objek kebijakan sertifikat dalam memori. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -124,7 +127,7 @@ Contoh ini membuat sertifikat SAN dengan 3 nama DNS.
 ## PARAMETERS
 
 ### -CertificateTransparency
-Menunjukkan apakah transparansi sertifikat diaktifkan untuk sertifikat/penerbit ini; jika tidak dispesifikasikan, defaultnya adalah 'true'
+Menunjukkan apakah transparansi sertifikat diaktifkan untuk sertifikat/penerbit ini; jika tidak ditentukan, defaultnya adalah 'true'
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateType
-Menentukan tipe sertifikat kepada penerbit.
+Menentukan jenis sertifikat kepada pengeluar sertifikat.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kurva
-Menentukan nama kurva eliptik kunci sertifikat.
+Menentukan nama kurva elips kunci sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - P-256
 - P-384
@@ -190,7 +193,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nonaktif
+### -Dinonaktifkan
 Menunjukkan bahwa kebijakan sertifikat dinonaktifkan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsName
-Menentukan nama DNS dalam sertifikat. Nama Alternatif Subjek (PIN) dapat ditentukan sebagai nama DNS.
+Menentukan nama DNS dalam sertifikat. Nama Alternatif Subjek (SAN) dapat ditentukan sebagai nama DNS.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAtNumberOfDaysBeforeExpiry
-Menentukan berapa hari sebelum proses pemberitahuan otomatis kedaluwarsa dimulai.
+Menentukan berapa hari sebelum kedaluwarsa proses pemberitahuan otomatis dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAtPercentageLifetime
-Menentukan persentase masa berlaku setelah proses otomatis untuk pemberitahuan dimulai.
+Menentukan persentase masa pakai setelah proses otomatis untuk pemberitahuan dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -265,8 +268,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NamaPengguna
-Menentukan nama penerbit untuk sertifikat.
+### -IssuerName
+Menentukan nama pengeluar sertifikat untuk sertifikat.
 
 ```yaml
 Type: System.String
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci kunci yang mengembalikan sertifikat.
+Menentukan jenis kunci kunci yang mendukung sertifikat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - RSA
 - RSA-HSM
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyUsage
-Menentukan penggunaan kunci dalam sertifikat.
+Menentukan penggunaan utama dalam sertifikat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.Security.Cryptography.X509Certificates.X509KeyUsageFlags]
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### -RenewAtPercentageLifetime
-Menentukan persentase masa berlaku setelah proses otomatis untuk perpanjangan sertifikat dimulai.
+Menentukan persentase masa pakai setelah proses otomatis untuk perpanjangan sertifikat dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -401,9 +404,9 @@ Accept wildcard characters: False
 ```
 
 ### -SecretContentType
-Menentukan tipe konten rahasia kubah kunci baru.
+Menentukan jenis konten rahasia brankas kunci baru.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- aplikasi/x-pkcs12
+- application/x-pkcs12
 - application/x-pem-file
 
 ```yaml
@@ -423,7 +426,7 @@ Accept wildcard characters: False
 Menentukan nama subjek sertifikat. 
 
 > [!NOTE]
-> Jika Anda harus menggunakan tanda koma (,) atau tanda titik (.) dalam properti dalam `SubjectName` parameter, Anda harus mengapit bidang properti dalam tanda kutip. Misalnya, Anda dapat menggunakan O="Contoso, Ltd." dalam bidang Nama Organisasi.
+> Jika Anda harus menggunakan koma (,) atau titik (.) dalam properti dalam `SubjectName` parameter , Anda harus mengapit bidang properti dalam tanda kutip. Misalnya, Anda dapat menggunakan O="Contoso, Ltd." di bidang Nama Organisasi.
 
 ```yaml
 Type: System.String
@@ -464,8 +467,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

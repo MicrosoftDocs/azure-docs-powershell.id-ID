@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: a80401f350ae69b21ae5c0fe5491edaf6675c52e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89cdefb914c971ecfeb1ba40a083adbbce3f507f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808380"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572783"
 ---
 # Add-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
 Membuat grup konsumen eventhub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Membuat grup konsumen di Eventhub yang terkait dengan IotHub yang ditentukan.
 Add-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubConsumerGroupName "myconsumergroup"
 ```
 
-Menambahkan grup konsumen baru bernama "myconsumergroup" ke eventhub untuk acara telemetri di iothub bernama "myiothub"
+Menambahkan grup konsumen baru bernama "myconsumergroup" ke eventhub untuk peristiwa telemetri di iothub bernama "myiothub"
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

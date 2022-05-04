@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
-ms.openlocfilehash: 54198afe10d1f035c57802e98f183f1b91b5ed35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0f728167a75b7e062ba0f03d22f9a4f17ba941bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874872"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581978"
 ---
 # Set-AzDataFactoryV2
 
 ## SYNOPSIS
 Membuat pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -128,8 +131,8 @@ Set-AzDataFactoryV2 [-IdentityType <String>]
 Cmdlet **Set-AzDataFactoryV2** membuat pabrik data dengan nama dan lokasi grup sumber daya yang ditentukan.
 Lakukan operasi ini dalam urutan berikut: -- Buat pabrik data.
 -- Buat layanan tertaut.
--- Membuat kumpulan data.
--- Buat pipa.
+-- Buat himpunan data.
+-- Buat alur.
 
 ## EXAMPLES
 
@@ -149,7 +152,7 @@ Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location "WestUS"
     RepoConfiguration :
 ```
 
-### Contoh 2: Buat pabrik data dengan detail konfigurasi repo menggunakan objek pabrik yang sudah ada.
+### Contoh 2: Buat pabrik data dengan detail konfigurasi repositori menggunakan objek pabrik yang ada.
 ```powershell
 Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDataFactoryV2 -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder / -ProjectName "Azure Data Factory"
 ```
@@ -167,7 +170,7 @@ Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDataFactory
 
 Perintah ini membuat pabrik data bernama WikiADF dalam grup sumber daya bernama ADF di lokasi EastUS dengan konfigurasi kontrol sumber Azure DevOps.
 
-### Contoh 3: Buat pabrik data dengan detail konfigurasi GitHub repo menggunakan objek pabrik baru.
+### Contoh 3: Buat pabrik data dengan detail konfigurasi repositori GitHub menggunakan objek pabrik baru.
 ```powershell
 Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location 'EastUS' -HostName 'https://github.com' -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder /
 ```
@@ -188,7 +191,7 @@ Perintah ini membuat pabrik data bernama WikiADF dalam grup sumber daya bernama 
 ## PARAMETERS
 
 ### -AccountName
-Nama akun untuk konfigurasi repo.
+Nama akun untuk konfigurasi repositori.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollaborationBranch
-Cabang kolaborasi untuk konfigurasi repo.
+Cabang kolaborasi untuk konfigurasi repositori.
 
 ```yaml
 Type: System.String
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionUserAssignedIdentity
-Identitas yang ditetapkan pengguna untuk digunakan untuk mengautentikasi kubah kunci pelanggan. Jika tidak diberikan Identitas Layanan Terkelola akan digunakan.
+Identitas yang ditetapkan pengguna untuk digunakan untuk mengautentikasi ke brankas kunci pelanggan. Jika tidak disediakan, Identitas Layanan Terkelola akan digunakan.
 
 ```yaml
 Type: System.String
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionVaultBaseUrl
-Url Azure Key Vault digunakan untuk enkripsi dengan CMK.
+Url Key Vault Azure yang digunakan untuk enkripsi dengan CMK.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Nama host untuk konfigurasi GitHub repo.
+Nama host untuk konfigurasi repositori GitHub.
 
 ```yaml
 Type: System.String
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas yang akan dikaitkan dengan DataFactory Anda. Opsinya adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
+Jenis Identitas yang akan dikaitkan dengan DataFactory Anda. Opsinya adalah 'SystemAssigned', 'UserAssigned' atau 'SystemAssigned,UserAssigned'
 
 ```yaml
 Type: System.String
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses jaringan publik diperbolehkan atau tidak untuk pabrik data. Opsinya adalah 'Diaktifkan' atau 'Dinonaktifkan'
+Apakah akses jaringan publik diizinkan atau tidak untuk pabrik data. Opsinya adalah 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -406,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastCommitId
-Id commit terakhir untuk konfigurasi repo.
+Id penerapan terakhir untuk konfigurasi repositori.
 
 ```yaml
 Type: System.String
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Pabrik data dibuat di kawasan ini.
+Pabrik data dibuat di wilayah ini.
 
 ```yaml
 Type: System.String
@@ -447,7 +450,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pabrik data.
 
 ```yaml
@@ -463,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Nama proyek Azure DevOps untuk konfigurasi repo.
+Nama proyek Azure DevOps untuk konfigurasi repositori.
 
 ```yaml
 Type: System.String
@@ -478,7 +481,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama penyimpanan untuk konfigurasi repo.
+Nama repositori untuk konfigurasi repositori.
 
 ```yaml
 Type: System.String
@@ -535,7 +538,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootFolder
-Folder akar untuk konfigurasi repo.
+Folder akar untuk konfigurasi repositori.
 
 ```yaml
 Type: System.String
@@ -589,7 +592,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Id penyewa untuk konfigurasi Azure DevOps repo.
+Id penyewa untuk konfigurasi repositori Azure DevOps.
 
 ```yaml
 Type: System.String
@@ -618,8 +621,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -634,7 +637,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet.
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -649,7 +652,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -664,10 +667,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Get-AzDataFactoryV2]()
 
-[Hapus-AzDataFactoryV2]()
+[Remove-AzDataFactoryV2]()

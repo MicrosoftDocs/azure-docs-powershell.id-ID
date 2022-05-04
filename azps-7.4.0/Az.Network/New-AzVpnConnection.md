@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnConnection.md
-ms.openlocfilehash: 48366ff81f87f15704ad65432ef7836e92387318
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f342f17fffcceac4a32311487c38c7a51ee2e40a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677808"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577352"
 ---
 # New-AzVpnConnection
 
 ## SYNOPSIS
-Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai Situs Vpn.
+Membuat koneksi IPSec yang menghubungkan VpnGateway ke cabang pelanggan jarak jauh yang diwakili dalam RM sebagai VpnSite.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ New-AzVpnConnection -ParentResourceId <String> -Name <String> -VpnSiteId <String
 ```
 
 ## DESCRIPTION
-Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai Situs Vpn.
+Membuat koneksi IPSec yang menghubungkan VpnGateway ke cabang pelanggan jarak jauh yang diwakili dalam RM sebagai VpnSite.
 
 ## EXAMPLES
 
@@ -128,7 +131,7 @@ RoutingConfiguration      : {
                             }
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan VpnSite di US Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
 Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection.
 
@@ -155,14 +158,14 @@ $vpnSiteLinkConnection2 = New-AzVpnSiteLinkConnection -Name "testLinkConnection2
 New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection1, $vpnSiteLinkConnection2)
 ```
 
-Di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
 Gateway VPN akan dibuat setelahnya di Hub Virtual.
-Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection dengan 1 VpnSiteLinkConnections ke VpnSiteLink dari VpnSite.
+Setelah gateway dibuat, gateway terhubung ke VpnSite menggunakan perintah New-AzVpnConnection dengan 1 VpnSiteLinkConnections ke VpnSiteLink dari VpnSite.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurity
-Fungsikan keamanan internet untuk koneksi ini
+Aktifkan keamanan internet untuk sambungan ini
 
 ```yaml
 Type: SwitchParameter
@@ -266,7 +269,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-VpnGateway induk untuk sambungan ini.
+VpnGateway induk untuk koneksi ini.
 
 ```yaml
 Type: PSVpnGateway
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari induk VpnGateway untuk koneksi ini.
+Id sumber daya vpnGateway induk untuk koneksi ini.
 
 ```yaml
 Type: String
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingConfiguration
-Merutekan konfigurasi untuk koneksi ini
+Konfigurasi perutean untuk koneksi ini
 
 ```yaml
 Type: PSRoutingConfiguration
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnSite
-Situs vpn jauh tempat koneksi jaringan maya hub ini tersambung.
+Situs vpn jarak jauh tempat koneksi jaringan virtual hub ini tersambung.
 
 ```yaml
 Type: PSVpnSite
@@ -433,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnSiteId
-Situs vpn jauh tempat koneksi jaringan maya hub ini tersambung.
+Situs vpn jarak jauh tempat koneksi jaringan virtual hub ini tersambung.
 
 ```yaml
 Type: String
@@ -462,8 +465,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -478,7 +481,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -494,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -516,4 +519,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Update-AzVpnConnection](./Update-AzVpnConnection.md)
 
-[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)
+[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)

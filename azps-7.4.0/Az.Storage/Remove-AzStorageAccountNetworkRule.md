@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccountNetworkRule.md
-ms.openlocfilehash: 0d552134c6508e60525bcb2bd36d4cad6b9b3e57
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b3ccfd514853694f8af99395207e51062b6cb4cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142797783"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575624"
 ---
 # Remove-AzStorageAccountNetworkRule
 
 ## SYNOPSIS
-Hapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
+Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageaccountnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Remove-AzStorageAccountNetworkRule [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageAccountNetworkRule** menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
+Cmdlet **Remove-AzStorageAccountNetworkRule** menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Storage
 
 ## EXAMPLES
 
@@ -78,14 +81,14 @@ PS C:\>Remove-AzStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -
 
 Perintah ini menghapus VirtualNetworkRule dengan input Objek VirtualNetworkRule dengan JSON.
 
-### Contoh 3: Hapus IpRule pertama dengan pipeline
+### Contoh 3: Hapus IpRule pertama dengan alur
 ```
 PS C:\>(Get-AzStorageAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount").IpRules[0] | Remove-AzStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 ```
 
-Perintah ini menghapus IpRule pertama dengan pipeline.
+Perintah ini menghapus IpRule pertama dengan alur.
 
-### Contoh 4: Hapus beberapa VirtualNetworkRules dengan VirtualNetworkResourceID
+### Contoh 4: Menghapus beberapa VirtualNetworkRules dengan VirtualNetworkResourceID
 ```
 PS C:\>Remove-AzStorageAccountNetworkRule -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -VirtualNetworkResourceId "/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1","/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/subnet2"
 ```
@@ -109,7 +112,7 @@ Perintah ini menghapus 3 aturan akses sumber daya pertama dari akun penyimpanan.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRule
-Array objek IpRule untuk dihapus dari Properti NetWorkRule.
+Array objek IpRule yang akan dihapus dari Properti NetWorkRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule[]
@@ -168,7 +171,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun Storage.
 
 ```yaml
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Storage Account ResourceAccessRule ResourceId dalam string.
+Storage ResourceAccessRule ResourceId Akun dalam string.
 
 ```yaml
 Type: System.String
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Array objek VirtualNetworkRule untuk dihapus dari Properti NetWorkRule.
+Array objek VirtualNetworkRule yang akan dihapus dari Properti NetWorkRule.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule[]
@@ -273,8 +276,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

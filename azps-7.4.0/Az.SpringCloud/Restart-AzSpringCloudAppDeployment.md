@@ -5,28 +5,31 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/rest
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Restart-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Restart-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: f70cdd39758ab9cb24ee7113d54fe56cf7fe1ade
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 80573bdcd5acbfc43da0195f720470fa40506512
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273213"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560164"
 ---
 # Restart-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Mulai ulang penyebaran.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/restart-azspringcloudappdeployment) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Mulai ulang (Default)
+### Hidupkan ulang (Default)
 ```
 Restart-AzSpringCloudAppDeployment -AppName <String> -Name <String> -ResourceGroupName <String>
  -ServiceName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Mulai UlangIdentitas
+### RestartViaIdentity
 ```
 Restart-AzSpringCloudAppDeployment -InputObject <ISpringCloudIdentity> [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -37,19 +40,19 @@ Mulai ulang penyebaran.
 
 ## EXAMPLES
 
-### Contoh 1: Restart Spring Cloud Service by name.
+### Contoh 1: Hidupkan ulang Spring Cloud Service berdasarkan nama.
 ```powershell
 Restart-AzSpringCloudAppDeployment -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway -DeploymentName default
 ```
 
-Mulai ulang Layanan Cloud Musim Semi berdasarkan nama.
+Mulai ulang Spring Cloud Service berdasarkan nama.
 
-### Contoh 2: Restart Spring Cloud Service from pipe.
+### Contoh 2: Mulai ulang Spring Cloud Service dari pipa.
 ```powershell
 Get-AzSpringCloudAppDeployment -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway -DeploymentName default | Restart-AzSpringCloud
 ```
 
-Mulai ulang Layanan Cloud Musim Semi dari pipa.
+Mulai ulang Spring Cloud Service dari pipa.
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Penyebaran.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -190,8 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -205,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -258,15 +261,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
-  - `[BindingName <String>]`: Nama sumber daya Pengikat.
+  - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.
   - `[DeploymentName <String>]`: Nama sumber daya Penyebaran.
   - `[DomainName <String>]`: Nama sumber daya domain kustom.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: kawasan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[Location <String>]`: wilayah
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
   - `[ServiceName <String>]`: Nama sumber daya Layanan.
-  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

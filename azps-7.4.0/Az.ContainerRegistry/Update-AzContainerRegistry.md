@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistry.md
-ms.openlocfilehash: c9747bdf4062fdf13d1ef9291a4cb39df9b6f3ae
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cda52203e8ecbfc0cc14802345c547daddd21134
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126783"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567886"
 ---
 # Update-AzContainerRegistry
 
 ## SYNOPSIS
 Memperbarui registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Registry Name        Sku        LoginServer                    CreationDate     
 MyRegistry           Basic      myregistry.azurecr.io          11/20/2017 10:05:... Succeeded  True
 ```
 
-Perintah ini memungkinkan pengguna admin untuk registri kontainer tertentu.
+Perintah ini memungkinkan pengguna admin untuk registri kontainer yang ditentukan.
 
 ### Contoh 2: Mengatur akun penyimpanan yang digunakan oleh registri kontainer tertentu
 ```powershell
@@ -96,7 +99,7 @@ Registry Name        Sku        LoginServer                    CreationDate     
 MyRegistry           Basic      myregistry.azurecr.io          11/20/2017 10:05:... Succeeded  True       mystorageaccount
 ```
 
-Perintah ini mengatur registri kontainer yang ditentukan untuk menggunakan akun \`penyimpanan mystorageaccount\` yang sudah ada dalam langganan yang sama.
+Perintah ini mengatur registri kontainer yang ditentukan untuk menggunakan akun \`penyimpanan yang ada mystorageaccount\` dalam langganan yang sama.
 
 ## PARAMETERS
 
@@ -145,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Registri Kontainer.
+### -Name
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-Aturan jaringan diatur untuk registri kontainer.
+Seperangkat aturan jaringan untuk registri kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.Models.PSNetworkRuleSet
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Kontainer Registri SKU.
+SKU Container Registry.
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash.
+Pasangan kunci-nilai dalam bentuk tabel hash.
 Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -276,8 +279,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

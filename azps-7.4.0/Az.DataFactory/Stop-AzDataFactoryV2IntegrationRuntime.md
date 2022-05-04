@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: cfc2f238ecd5679c23f4ab3a3b6bc632460de2c7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3f11c8d8dafc5459f717a6a7fe2d8db3d26ebbdd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874764"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577946"
 ---
 # Stop-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Menghentikan runtime integrasi khusus terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2integrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,16 +42,16 @@ Stop-AzDataFactoryV2IntegrationRuntime [-Force] [-InputObject] <PSIntegrationRun
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataFactoryV2IntegrationRuntime** menghentikan runtime integrasi khusus terkelola dalam status 'Dimulai', yang dimulai oleh cmdlet Start-AzDataFactoryV2IntegrationRuntime. Sumber daya dirilis dan transfer status ke 'Dihentikan'.
+Cmdlet **Stop-AzDataFactoryV2IntegrationRuntime** menghentikan runtime integrasi khusus terkelola dalam status 'Dimulai', yang dimulai oleh cmdlet Start-AzDataFactoryV2IntegrationRuntime. Sumber daya dirilis dan status ditransfer ke 'Dihentikan'.
 
 ## EXAMPLES
 
-### Contoh 1: Hentikan runtime integrasi terkelola yang berada dalam status 'Dimulai'.
+### Contoh 1: Hentikan runtime integrasi terkelola yang dalam status 'Dimulai'.
 ```powershell
 Stop-AzDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df' -Name 'test-reserlved-ir'
 ```
 
-Runtime integrasi terkelola 'test-reserlved-ir' berada dalam status 'Dimulai'. Setelah menjalankan cmdlet Stop-AzDataFactoryV2IntegrationRuntime, sumber daya dirilis dan transfer status ke 'Dihentikan'.
+Runtime integrasi terkelola 'test-reserlved-ir' berada dalam status 'Dimulai'. Setelah menjalankan cmdlet Stop-AzDataFactoryV2IntegrationRuntime, sumber daya dirilis dan status ditransfer ke 'Dihentikan'.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama runtime integrasi.
 
 ```yaml
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet.
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,7 +204,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Void
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS
 

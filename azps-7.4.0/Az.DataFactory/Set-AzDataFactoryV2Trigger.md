@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2Trigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2Trigger.md
-ms.openlocfilehash: 629d1aaba96072798b7969399f2896ffaadaad75
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: df4493768e474296fdc02735e054cca7bf35a729
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003213"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569720"
 ---
 # Set-AzDataFactoryV2Trigger
 
 ## SYNOPSIS
 Membuat pemicu di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2trigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzDataFactoryV2Trigger [-DefinitionFile] <String> [-ResourceId] <String> [-F
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataFactoryV2Trigger** membuat pemicu di pabrik data. Jika Anda menentukan nama untuk pemicu yang sudah ada, cmdlet meminta konfirmasi sebelum mengganti pemicu. Jika Anda menentukan parameter _Paksa_ , cmdlet menggantikan pemicu yang sudah ada tanpa meminta konfirmasi. Pemicu dibuat dalam status 'Dihentikan', yang berarti bahwa pemicu tidak langsung memulai pemicu yang dirujuknya.
+Cmdlet **Set-AzDataFactoryV2Trigger** membuat pemicu di pabrik data. Jika Anda menentukan nama untuk pemicu yang sudah ada, cmdlet akan meminta konfirmasi sebelum mengganti pemicu. Jika Anda menentukan parameter _Paksa_ , cmdlet menggantikan pemicu yang ada tanpa meminta konfirmasi. Pemicu dibuat dalam status 'Dihentikan', yang berarti bahwa pemicu tidak segera mulai memanggil alur yang mereka referensikan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Set-AzDataFactoryV2Trigger -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -
     RuntimeState      : Stopped
 ```
 
-Buat pemicu baru yang disebut "ScheduledTrigger" di pabrik data "WikiADF". Pemicu dibuat dalam status 'Dihentikan', yang berarti pemicu tidak langsung dimulai. Pemicu dapat dimulai menggunakan `Start-AzDataFactoryV2Trigger` cmdlet.
+Buat pemicu baru yang disebut "ScheduledTrigger" di pabrik data "WikiADF". Pemicu dibuat dalam status 'Dihentikan', yang berarti bahwa pemicu tidak segera dimulai. Pemicu dapat dimulai menggunakan `Start-AzDataFactoryV2Trigger` cmdlet .
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -159,8 +162,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet.
+Menunjukkan apa yang terjadi jika cmdlet berjalan, tetapi tidak menjalankan cmdlet .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

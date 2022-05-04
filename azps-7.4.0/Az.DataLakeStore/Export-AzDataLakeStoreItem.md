@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreItem.md
-ms.openlocfilehash: 9515731968868cb5ee1ff98e08e161eafd17289a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8f56854f4e7d7d9d66f6aeddf747b6403fe130f6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142874620"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573158"
 ---
 # Export-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Mengunduh file dari Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/export-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Export-AzDataLakeStoreItem [-Account] <String> [-Path] <DataLakeStorePathInstanc
  [-Confirm] [<CommonParameters>]
 ```
 
-### IncludeDiagnosticLogging
+### SertakanDiagnosticLogging
 ```
 Export-AzDataLakeStoreItem [-Account] <String> [-Path] <DataLakeStorePathInstance> [-Destination] <String>
  [-Recurse] [-Resume] [-Force] [-Concurrency <Int32>] [-DiagnosticLogLevel <LogLevel>]
@@ -45,12 +48,12 @@ Cmdlet **Export-AzDataLakeStoreItem** mengunduh file dari Data Lake Store.
 Export-AzDataLakeStoreItem -AccountName "ContosoADL" -Path /myFiles/TestSource.csv -Destination "C:\Test.csv" -Concurrency 4
 ```
 
-Perintah ini mengunduh file TestSource.csv dari Data Lake Store ke C:\Test.csv dengan konkurensi 4.
+Perintah ini mengunduh TestSource.csv file dari Data Lake Store ke C:\Test.csv dengan konkurensi 4.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konkurensi
-Menunjukkan jumlah file atau potongan untuk diunduh secara paralel. Default akan dihitung sebagai upaya terbaik berdasarkan spesifikasi sistem.
+Menunjukkan jumlah file atau gugus yang akan diunduh secara paralel. Default akan dihitung sebagai upaya terbaik berdasarkan spesifikasi sistem.
 
 ```yaml
 Type: System.Int32
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
+### -Destination
 Menentukan jalur file lokal untuk mengunduh file.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticLogLevel
-Secara opsional menunjukkan tingkat log diagnostik untuk digunakan untuk merekam kejadian selama impor file atau folder. Defaultnya adalah Kesalahan.
+Secara opsional menunjukkan tingkat log diagnostik yang akan digunakan untuk merekam peristiwa selama impor file atau folder. Defaultnya adalah Kesalahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.LogLevel
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticLogPath
-Menentukan jalur untuk log diagnostik untuk merekam kejadian selama impor file atau folder.
+Menentukan jalur untuk log diagnostik untuk merekam peristiwa selama impor file atau folder.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur item yang akan diunduh dari Penyimpanan Data Lake, dimulai dari direktori akar (/).
+Menentukan jalur item yang akan diunduh dari Data Lake Store, mulai dari direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -170,8 +173,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Berulang
-Menunjukkan bahwa unduhan folder bersifat rekurtif.
+### -Rekursi
+Menunjukkan bahwa unduhan folder rekursif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,9 +188,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lanjutkan
-Menunjukkan bahwa file yang sedang disalin merupakan kelanjutan dari unduhan sebelumnya.
-Hal ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang belum diunduh sepenuhnya.
+### -Resume
+Menunjukkan bahwa file yang sedang disalin adalah kelanjutan dari unduhan sebelumnya.
+Ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang tidak sepenuhnya diunduh.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,8 +204,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

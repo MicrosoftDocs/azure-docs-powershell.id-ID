@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Remove-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Remove-AzHpcCacheStorageTarget.md
-ms.openlocfilehash: 92d5b5b6f220eba751688933ac92c7276c52989c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4314ebedee1c7b3fb2a2ef682ed2523d7f85bb9d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747630"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572924"
 ---
 # Remove-AzHpcCacheStorageTarget
 
 ## SYNOPSIS
 Menghapus Target Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/remove-azhpccachestoragetarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzHpcCacheStorageTarget -ResourceGroupName <String> -CacheName <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzHpcCacheStorageTarget** menghapus target Storage dari Azure HPC Cache.
+Cmdlet **Remove-AzHpcCacheStorageTarget** menghapus Target Storage dari Azure HPC Cache.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Remove-AzHpcCacheStorageTarget -ResourceGroupName testRG -CacheName testCache -S
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -52,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheName
-Nama singgahan.
+Nama cache.
 
 ```yaml
 Type: System.String
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa cmdlet tidak meminta konfirmasi kepada Anda. Secara default, cmdlet ini meminta Anda untuk mengonfirmasi bahwa Anda ingin menghapus target penyimpanan.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama target penyimpanan.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana Anda ingin menghapus target penyimpanan dari singgahan.
+Nama grup sumber daya tempat Anda ingin menghapus target penyimpanan dari cache.
 
 ```yaml
 Type: System.String
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

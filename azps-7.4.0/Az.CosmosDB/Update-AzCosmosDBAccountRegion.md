@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccountRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccountRegion.md
-ms.openlocfilehash: 6a29a70f445d591d937085c1944b5d85d1d6c673
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3f1270eb1a55dbe30ae8417def87484a06a71fa4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943183"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144579710"
 ---
 # Update-AzCosmosDBAccountRegion
 
 ## SYNOPSIS
-Perbarui Wilayah Akun CosmosDB.
+Memperbarui Wilayah Akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccountregion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,9 +43,9 @@ Update-AzCosmosDBAccountRegion [-Location <String[]>] [-LocationObject <PSLocati
 ```
 
 ## DESCRIPTION
-Perbarui Wilayah Akun CosmosDB. Lokasi dapat disediakan baik sebagai objek tipe PSLocation atau sebagai string Nama Lokasi yang diurutkan berdasarkan prioritas failover.
-Parameter LocationObject mengharapkan daftar lokasi saat ini (prioritas failover disertakan) ditambahkan oleh LocationObjects baru yang terkait dengan lokasi baru yang akan ditambahkan.
-Parameter lokasi mengharapkan daftar lokasi saat ini(diurutkan oleh prioritas failover) dan lokasi baru. Harap diperhatikan, kami hanya mendukung Penambahan Kawasan. Harap sediakan Lokasi atau LocationObject.
+Memperbarui Wilayah Akun CosmosDB. Lokasi dapat disediakan baik sebagai objek jenis PSLocation atau sebagai string Nama Lokasi yang diurutkan berdasarkan prioritas failover.
+Parameter LocationObject mengharapkan daftar lokasi saat ini (termasuk prioritas failover) yang ditambahkan oleh LocationObjects baru yang sesuai dengan lokasi baru yang akan ditambahkan.
+Parameter lokasi mengharapkan daftar lokasi saat ini (diurutkan berdasarkan prioritas failover) dan lokasi baru. Harap dicatat, kami hanya mendukung Penambahan Wilayah. Harap sediakan Lokasi atau LocationObject.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Kind                          : GlobalDocumentDB
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -196,8 +199,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

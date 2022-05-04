@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationToSqlVM.md
-ms.openlocfilehash: b4acd313554cc031525bd357a4abdac016a9aa7a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b5d06bd0f35b5380d3763d2a2789d9a15c915a5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063459"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584282"
 ---
 # New-AzDataMigrationToSqlVM
 
 ## SYNOPSIS
 Buat migrasi database baru ke VM SQL tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtosqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 .
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationOperationId
-ID melacak operasi migrasi saat ini.
+Id melacak operasi migrasi saat ini.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationService
-ID Sumber Daya dari Layanan Migrasi.
+Id Sumber Daya Layanan Migrasi.
 
 ```yaml
 Type: System.String
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -464,7 +467,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-ID Sumber Daya dari akun penyimpanan yang menyalin cadangan.
+Id Sumber Daya dari akun penyimpanan yang menyalin cadangan.
 
 ```yaml
 Type: System.String

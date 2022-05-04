@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayWebApplicationFirewallConfiguration.md
-ms.openlocfilehash: a196a34065e21d765c27d409bc746238264d31b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5145739df5721f294fed4877f56ca1967a539fe3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314163"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580592"
 ---
 # Get-AzApplicationGatewayWebApplicationFirewallConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi WAF gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaywebapplicationfirewallconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayWebApplicationFirewallConfiguration** mendapatkan konfigurasi firewall aplikasi web (WAF) gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayWebApplicationFirewallConfiguration** mendapatkan konfigurasi firewall aplikasi web (WAF) dari gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi firewall aplikasi gateway web
+### Contoh 1: Mendapatkan konfigurasi firewall aplikasi web gateway aplikasi
 ```powershell
 $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $FirewallConfig = Get-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway $AppGW
@@ -43,7 +46,7 @@ Perintah kedua mendapatkan konfigurasi firewall gateway aplikasi di $AppGW, lalu
 
 ### -ApplicationGateway
 Menentukan objek gateway aplikasi.
-Anda bisa menggunakan cmdlet Get-AzApplicationGateway untuk mendapatkan objek gateway aplikasi.
+Anda dapat menggunakan cmdlet Get-AzApplicationGateway untuk mendapatkan objek gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

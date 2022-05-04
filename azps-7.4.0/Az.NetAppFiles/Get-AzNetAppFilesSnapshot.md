@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesSnapshot.md
-ms.openlocfilehash: 5df25e96eec0bd4646cb63397f59d0bdedb13195
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 82bd60766856e4986cb2b6dfb59eaa9bf9b0a2c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680292"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567148"
 ---
 # Get-AzNetAppFilesSnapshot
 
 ## SYNOPSIS
-Mendapatkan detail snapshot Azure NetApp Files (ANF).
+Mendapatkan detail rekam jepret Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilessnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzNetAppFilesSnapshot [-Name <String>] -VolumeObject <PSNetAppFilesVolume>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesSnapshot** mendapatkan detail snapshot ANF.
+Cmdlet **Get-AzNetAppFilesSnapshot** mendapatkan detail rekam jepret ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan snapshot ANF
+### Contoh 1: Mendapatkan rekam jepret ANF
 ```powershell
 Get-AzNetAppFilesSnapshot -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -PoolName "MyAnfPool" -VolumeName "MyAnfVolume" -Name "MyAnfSnapshot"
 ```
@@ -60,7 +63,7 @@ Created           :
 ProvisioningState : Succeeded
 ```
 
-Perintah ini mendapatkan snapshot bernama MyAnfSnapshot dari volume "MyAnfVolume".
+Perintah ini mendapatkan rekam jepret bernama MyAnfSnapshot dari volume "MyAnfVolume".
 
 ## PARAMETERS
 
@@ -94,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama snapshot ANF
+### -Name
+Nama rekam jepret ANF
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari snapshot ANF
+Id sumber daya rekam jepret ANF
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeObject
-Objek volume yang berisi snapshot untuk dikembalikan
+Objek volume yang berisi rekam jepret yang akan dikembalikan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

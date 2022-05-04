@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
-ms.openlocfilehash: e7f5d1454408575836b9088be2ef1c180c378f28
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e8338516d596ce547a767251fd2f26e439bd0e98
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867330"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144560146"
 ---
 # Remove-AzTemplateSpec
 
 ## SYNOPSIS
 Menghapus Spesifikasi Templat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-aztemplatespec) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzTemplateSpec [-Force] [[-Version] <String>] [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Menghapus Spesifikasi Templat tertentu. Jika parameter versi **-Version** disediakan, hanya versi yang ditentukan yang akan dihapus. Jika tidak ada versi tertentu yang disediakan, Spesifikasi Templat dan semua versinya akan dihapus. Jika bendera **-Force** ada tidak akan ada permintaan konfirmasi untuk penghapusan.
+Menghapus Spesifikasi Templat tertentu. Jika parameter versi **-Versi** disediakan, hanya versi yang ditentukan yang akan dihapus. Jika tidak ada versi tertentu yang disediakan, Spesifikasi Templat dan semua versinya akan dihapus. Jika bendera **-Force** ada tidak akan ada permintaan konfirmasi untuk penghapusan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Remove-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/pr
 
 Menghapus versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' subId\} langganan\{.
 
-### Contoh 3: Menghapus Spesifikasi Templat dan semua versi menurut nama
+### Contoh 3: Menghapus Spesifikasi Templat dan semua versi berdasarkan nama
 ```powershell
 Remove-AzTemplateSpec -ResourceGroupName 'myRG' -Name 'MyTemplateSpec'
 ```
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama spesifikasi templat.
 
 ```yaml
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

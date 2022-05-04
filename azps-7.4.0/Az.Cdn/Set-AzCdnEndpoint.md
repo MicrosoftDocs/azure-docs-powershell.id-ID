@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnEndpoint.md
-ms.openlocfilehash: 8da9bbb458ef82eee386a0f70c064e236034bd34
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c8e662275e088ee016ff70a3c04150d05a0ee01
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144564448"
 ---
 # Set-AzCdnEndpoint
 
 ## SYNOPSIS
 Memperbarui titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azcdnendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Set-AzCdnEndpoint -CdnEndpoint <PSEndpoint> [-DefaultProfile <IAzureContextConta
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur protokol yang diperbolehkan ke HTTPS saja
+### Contoh 1: Atur protokol yang diizinkan ke HTTPS saja
 ```powershell
 $endpointObject = Get-AzCdnEndpoint -ResourceGroupName myresourcegroup -ProfileName mycdnprofile -EndpointName myendpoint
 $endpointObject.IsHttpAllowed = $false
@@ -64,7 +67,7 @@ Type                       : Microsoft.Cdn/profiles/endpoints
 ProvisioningState          : Succeeded
 ```
 
-Properti yang diperbolehkan untuk diubah adalah: `ContentTypesToCompress`, , `IsCompressionEnabled`, `IsHttpsAllowed``IsHttpAllowed`, `QueryStringCachingBehavior`, `GeoFilters` dan `Tags`.
+Properti yang diizinkan untuk diubah adalah: `ContentTypesToCompress`, , `IsCompressionEnabled`, `IsHttpAllowed``IsHttpsAllowed`, `QueryStringCachingBehavior`, `GeoFilters` dan `Tags`.
 
 ## PARAMETERS
 
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
-ms.openlocfilehash: 2408501a80ef908adf8ae85f3bbd91da877ba046
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5a2d472cf27b1060e5d16ec560b274a634bdc66f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232767"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566140"
 ---
 # Get-AzBatchJobPreparationAndReleaseTaskStatus
 
 ## SYNOPSIS
-Mendapatkan persiapan pekerjaan batch dan melepaskan status tugas.
+Mendapatkan persiapan pekerjaan Batch dan status tugas rilis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchjobpreparationandreleasetaskstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Get-AzBatchJobPreparationAndReleaseTaskStatus [-InputObject] <PSCloudJob> [-Filt
 
 ## DESCRIPTION
 **Cmdlet Get-AzBatchJobPreparationAndReleaseTaskStatus** mendapatkan Azure Batch persiapan pekerjaan dan melepaskan status tugas untuk pekerjaan Batch.
-Anda harus memasukkan parameter *Id* atau **instans PSCloudJob** ke cmdlet ini.
+Anda harus menyediakan parameter *Id* atau **instans PSCloudJob** ke cmdlet ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status persiapan pekerjaan dan rilis pekerjaan
+### Contoh 1: Dapatkan status persiapan dan rilis pekerjaan
 ```powershell
 Get-AzBatchJobPreparationAndReleaseTaskStatus -BatchContext $Context -Id Test
 ```
@@ -52,10 +55,10 @@ JobReleaseTaskExecutionInformation     :
 PoolId                                 : test
 ```
 
-Perintah ini mendapatkan status tugas persiapan pekerjaan dan pelepasan untuk pekerjaan "Uji".
+Perintah ini mendapatkan persiapan pekerjaan dan melepaskan status tugas untuk pekerjaan "Uji".
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Dapatkan status persiapan pekerjaan dan rilis pekerjaan dengan Filter dan Pilih yang ditentukan
+### Contoh 2: Dapatkan status persiapan dan rilis pekerjaan dengan Filter dan Pilih yang ditentukan
 ```powershell
 Get-AzBatchJobPreparationAndReleaseTaskStatus -BatchContext $context -Id Test -Filter "nodeId eq 'tvm-2316545714_1-20170613t201733z'" -Select "jobPreparationTaskExecutionInfo"
 ```
@@ -68,13 +71,13 @@ JobReleaseTaskExecutionInformation     :
 PoolId                                 :
 ```
 
-Perintah ini mendapatkan status tugas persiapan pekerjaan dan rilis untuk pekerjaan "Uji" pada simpul "tvm-2316545714_1-20170613t201733z" dan menggunakan klausul Select untuk menentukan untuk hanya mengembalikan informasi JobPreparationTaskExecutionInformation
+Perintah ini mendapatkan status tugas persiapan dan pelepasan pekerjaan untuk pekerjaan "Uji" pada simpul "tvm-2316545714_1-20170613t201733z" dan menggunakan klausa Select untuk menentukan untuk hanya mengembalikan informasi JobPreparationTaskExecutionInformation
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
-Gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
+Instans BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
+Gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluasan Open Data Protocol (OData).
+Menentukan klausa perluas Open Data Protocol (OData).
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang Anda dapatkan.
 
 ```yaml
@@ -120,8 +123,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData.
-Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua persiapan pekerjaan dan melepaskan status tugas ' untuk pekerjaan tersebut.
+Menentukan klausa filter OData.
+Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua persiapan pekerjaan dan status tugas rilis' untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -Id
 Menentukan ID pekerjaan yang tugas persiapan dan rilisnya harus diambil.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek **PSCloudJob** yang mewakili pekerjaan untuk mendapatkan persiapan dan melepaskan status tugas.
+Menentukan objek **PSCloudJob** yang mewakili pekerjaan untuk mendapatkan status tugas persiapan dan pelepasan.
 Untuk mendapatkan objek **PSCloudJob** , gunakan cmdlet Get-AzBatchJob.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pemilihan OData.
+Menentukan klausa pemilihan OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

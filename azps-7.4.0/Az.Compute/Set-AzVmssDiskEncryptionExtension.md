@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssDiskEncryptionExtension.md
-ms.openlocfilehash: 99d0947644d93527f43293ae3925b4f48b596f56
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7262841e9dfd339ef9c2869101895ffb0069e434
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567958"
 ---
 # Set-AzVmssDiskEncryptionExtension
 
 ## SYNOPSIS
-Mengaktifkan enkripsi disk pada kumpulan skala VM.
+Mengaktifkan enkripsi disk pada set skala VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssdiskencryptionextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,9 +33,9 @@ Set-AzVmssDiskEncryptionExtension [-ResourceGroupName] <String> [-VMScaleSetName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssDiskEncryptionExtension** memungkinkan enkripsi pada kumpulan skala VM. Cmdlet ini memungkinkan enkripsi dengan menginstal ekstensi enkripsi disk pada kumpulan skala VM.
+Cmdlet **Set-AzVmssDiskEncryptionExtension** memungkinkan enkripsi pada set skala VM. Cmdlet ini memungkinkan enkripsi dengan menginstal ekstensi enkripsi disk pada set skala VM.
 
-Untuk mesin virtual Linux, parameter *VolumeType* harus ada dan harus diatur ke "Data"
+Untuk komputer virtual Linux, parameter *VolumeType* harus ada dan harus diatur ke "Data"
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ $KeyVaultResourceId = $KeyVault.ResourceId
 Set-AzVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSetName $VmssName -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId
 ```
 
-Perintah ini memungkinkan enkripsi pada semua disk dari semua Windows VM dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada semua disk dari semua Windows VM dalam set skala VM.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ Set-AzVmssDiskEncryptionExtension -ResourceGroupName $RGName -VMScaleSetName $Vm
  -VolumeType $volumeType
 ```
 
-Perintah ini memungkinkan enkripsi pada disk data semua VM Linux dalam kumpulan skala VM.
+Perintah ini memungkinkan enkripsi pada disk data semua VM Linux dalam set skala VM.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoUpgradeMinorVersion
-Menonaktifkan pemutakhiran otomatis versi minor
+Menonaktifkan peningkatan otomatis versi minor
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultId
-RESOURCEID dari KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
+ResourceID dari KeyVault tempat kunci enkripsi yang dihasilkan akan ditempatkan
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKeyVaultUrl
-URL KeyVault tempat kunci enkripsi yang dihasilkan akan diletakkan ke
+URL KeyVault tempat kunci enkripsi yang dihasilkan akan ditempatkan
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptFormatAll
-EnkripsiFormatSemua drive data yang belum dienkripsi
+EncryptFormatAll drive data yang belum dienkripsi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ExtensionName
 Nama ekstensi.
-Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk Windows VM dan AzureDiskEncryptionForLinux untuk VM Linux
+Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk VM Windows dan AzureDiskEncryptionForLinux untuk VM Linux
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk Windows VM dan "AzureDiskEncryptionForLinux" untuk VM Linux.
+Jenis ekstensi. Tentukan parameter ini untuk mengambil alih nilai default "AzureDiskEncryption" untuk VM Windows dan "AzureDiskEncryptionForLinux" untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -189,8 +192,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Untuk mengaktifkan enkripsi pada kumpulan skala mesin virtual.
+### -Force
+Untuk memaksa mengaktifkan enkripsi pada set skala komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionAlgorithm
-KeyEncryption Algorithm digunakan untuk mengenkripsi kunci enkripsi volume
+Algoritma KeyEncryption yang digunakan untuk mengenkripsi kunci enkripsi volume
 
 ```yaml
 Type: System.String
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyVaultId
-RESOURCEID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
+ResourceID dari KeyVault yang berisi KeyEncryptionKey yang digunakan untuk mengenkripsi kunci enkripsi disk
 
 ```yaml
 Type: System.String
@@ -265,9 +268,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Frasa sandi
-Frasa sandi yang ditentukan dalam parameter.
-Parameter ini hanya berfungsi untuk Linux VM.
+### -Frase sandi
+Frase sandi yang ditentukan dalam parameter.
+Parameter ini hanya berfungsi untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat Kumpulan Skala VM berada
+Nama grup sumber daya tempat Set Skala VM berada
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Versi pengatur tipe.
+Versi handler jenis.
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Nama kumpulan skala mesin virtual
+Nama set skala komputer virtual
 
 ```yaml
 Type: System.String
@@ -327,11 +330,11 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeType
-Menentukan tipe volume mesin virtual untuk melakukan operasi enkripsi: OS, Data, atau Semua. 
+Menentukan jenis volume komputer virtual untuk melakukan operasi enkripsi: OS, Data, atau Semua. 
 
 Linux: Parameter **VolumeType** harus ada dan harus diatur ke Data. 
 
-Windows: Parameter **VolumeType**, jika ada, harus diatur ke Semua atau OS. Jika parameter **VolumeType** dihilangkan secara default menjadi "Semua".
+Windows: Parameter **VolumeType**, jika ada, harus diatur ke Semua atau OS. Jika parameter **VolumeType** dihilangkan, parameter tersebut default ke "Semua".
 
 
 ```yaml
@@ -347,8 +350,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -379,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

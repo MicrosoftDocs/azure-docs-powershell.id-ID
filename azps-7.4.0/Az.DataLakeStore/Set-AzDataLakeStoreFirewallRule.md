@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreFirewallRule.md
-ms.openlocfilehash: ab4bd516bc9d99b719ce1c4c7d70951b4d6ccf7f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c1937a8e857a8c406841976e5e968684ac413e9f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063693"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573122"
 ---
 # Set-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
-Mengubah aturan firewall yang ditentukan dalam Data Lake Store yang ditentukan.
+Memodifikasi aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestorefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,16 +30,16 @@ Set-AzDataLakeStoreFirewallRule [-Account] <String> [-Name] <String> [[-StartIpA
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeStoreFirewallRule** mengubah aturan firewall tertentu dalam Data Lake Store yang ditentukan.
+Cmdlet **Set-AzDataLakeStoreFirewallRule** memodifikasi aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui rentang IP mulai dan akhir untuk aturan firewall
+### Contoh 1: Memperbarui rentang IP awal dan akhir untuk aturan firewall
 ```powershell
 Set-AzDataLakeStoreFirewallRule -AccountName "ContosoADL" -Name MyFirewallRule -StartIpAddress "127.0.0.1" -EndIpAddress "127.0.0.2"
 ```
 
-Memperbarui aturan firewall "MyFirewallRule" dalam akun "ContosoADL" untuk memiliki rentang 127.0.0.1 - 127.0.0.2
+Memperbarui aturan firewall "MyFirewallRule" di akun "ContosoADL" agar memiliki rentang 127.0.0.1 - 127.0.0.2
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall.
 
 ```yaml
@@ -130,8 +133,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

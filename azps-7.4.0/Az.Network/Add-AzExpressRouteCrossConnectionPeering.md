@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCrossConnectionPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCrossConnectionPeering.md
-ms.openlocfilehash: 742b5d3d0d76d271e08e00bf99156baf4c7e9ab2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 17a6992f22299f82e5480a9e211bb3cdb10df3d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997831"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144563710"
 ---
 # Add-AzExpressRouteCrossConnectionPeering
 
 ## SYNOPSIS
 Menambahkan konfigurasi peering ke koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azexpressroutecrossconnectionpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +33,11 @@ Add-AzExpressRouteCrossConnectionPeering -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzExpressRouteCrossConnectionPeering** menambahkan konfigurasi peering ke koneksi silang ExpressRoute. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCrossConnectionPeering**, Anda harus menghubungi cmdlet Set-AzExpressRouteCrossConnection untuk mengaktifkan konfigurasi.
+Cmdlet **Add-AzExpressRouteCrossConnectionPeering** menambahkan konfigurasi peering ke koneksi silang ExpressRoute. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCrossConnectionPeering**, Anda harus memanggil cmdlet Set-AzExpressRouteCrossConnection untuk mengaktifkan konfigurasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan peer ke koneksi silang ExpressRoute yang sudah ada
+### Contoh 1: Menambahkan peer ke koneksi silang ExpressRoute yang ada
 ```powershell
 $cc = Get-AzExpressRouteCrossConnection -Name $CrossConnectionName -ResourceGroupName $rg
 $parameters = @{
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCrossConnection
-Koneksi silang ExpressRoute sedang diubah. Ini adalah objek Azure yang dikembalikan oleh cmdlet **Get-AzExpressRouteCrossConnection** .
+Koneksi silang ExpressRoute sedang dimodifikasi. Ini adalah objek Azure yang dikembalikan oleh cmdlet **Get-AzExpressRouteCrossConnection** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
@@ -82,7 +85,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigAdvertisedPublicPrefix
-Untuk PeeringType microsoftPeering, Anda harus menyediakan daftar semua prefiks yang anda rencanakan untuk beriklan melalui sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda bisa mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan prefiks. Prefiks ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
+Untuk PeeringType microsoftPeering, Anda harus memberikan daftar semua prefiks yang Anda rencanakan untuk diiklankan selama sesi BGP. Hanya prefiks alamat IP publik yang diterima. Anda dapat mengirim daftar yang dipisahkan koma jika Anda berencana untuk mengirim sekumpulan awalan. Awalan ini harus didaftarkan kepada Anda dalam Nama Registri Perutean (RIR / IRR).
 
 ```yaml
 Type: System.String[]
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigCustomerAsn
-Jika Anda adalah prefiks iklan yang tidak terdaftar pada nomor PEERING AS, Anda dapat menentukan nomor AS yang didaftarkan.
+Jika Anda mengiklankan awalan yang tidak terdaftar ke nomor AS peering, Anda dapat menentukan nomor AS tempat mereka terdaftar.
 
 ```yaml
 Type: System.Int32
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftConfigRoutingRegistryName
-Nama Registri Perutean (RIR / IRR) tempat nomor dan prefiks AS didaftarkan.
+Nama Registri Perutean (RIR/IRR) tempat nomor dan awalan AS didaftarkan.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama hubungan peering yang akan ditambahkan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean utama hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka perute Anda. Azure akan mengonfigurasi alamat bernomor genjat berikutnya ke antarmuka perute Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean utama dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama di subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryPeerAddressPrefix
-Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama dalam subnet ini harus ditetapkan ke antarmuka perute Anda. Azure akan mengonfigurasi alamat bernomor genjat berikutnya ke antarmuka perute Azure.
+Ini adalah rentang Alamat IP untuk jalur perutean sekunder dari hubungan peering ini. Ini harus berupa subnet CIDR /30. Alamat bernomor ganjil pertama di subnet ini harus ditetapkan ke antarmuka router Anda. Azure akan mengonfigurasi alamat bernomor genap berikutnya ke antarmuka router Azure.
 
 ```yaml
 Type: System.String
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedKey
-Ini adalah hash MD5 opsional yang digunakan sebagai kunci pra-berbagi untuk konfigurasi peering.
+Ini adalah hash MD5 opsional yang digunakan sebagai kunci yang dibagikan sebelumnya untuk konfigurasi peering.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -VlanId
-Ini adalah nomor Id dari VLAN yang ditetapkan untuk peering ini.
+Ini adalah nomor Id VLAN yang ditetapkan untuk peering ini.
 
 ```yaml
 Type: System.Int32
@@ -264,8 +267,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,12 +298,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSExpressRouteCrossConnection
-Parameter 'ExpressRouteCrossConnection' menerima nilai tipe 'PSExpressRouteCrossConnection' dari pipeline
+Parameter 'ExpressRouteCrossConnection' menerima nilai jenis 'PSExpressRouteCrossConnection' dari alur
 
 ## OUTPUTS
 

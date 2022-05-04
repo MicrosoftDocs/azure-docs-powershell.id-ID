@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModuleTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModuleTwin.md
-ms.openlocfilehash: f08d1ab290a54c3f56ae4166fe8c95a8f3322eb0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da83a9d079cdde88c1814ec66aa311e34762ac14
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285777"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567418"
 ---
 # Get-AzIotHubModuleTwin
 
 ## SYNOPSIS
-Mendapatkan modul perangkat IoT kembar.
+Mendapatkan kembar modul perangkat IoT.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubmoduletwin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubModuleTwin [-ResourceId] <String> [-DeviceId] <String> -ModuleId <St
 ```
 
 ## DESCRIPTION
-Mendapatkan modul perangkat IoT kembar. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-module-twins untuk informasi selengkapnya.
+Mendapatkan kembar modul perangkat IoT. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-module-twins untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

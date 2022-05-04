@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzAlertProcessingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzAlertProcessingRule.md
-ms.openlocfilehash: 7b43b4bf34dafafd250a6045fbd0be04fa0c77d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5d0edc5f1d432fa1db7c5377b31f6aa09d6ba392
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812754"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566266"
 ---
 # Update-AzAlertProcessingRule
 
 ## SYNOPSIS
 Memperbarui properti aturan pemrosesan pemberitahuan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/update-azalertprocessingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Update-AzAlertProcessingRule -InputObject <PSActionRule> [-Enabled <String>] [-T
 ```
 
 ## DESCRIPTION
-**Update-AzAlertProcessingRule** cmdlet memperbarui properti aturan pemrosesan peringatan - status dan tag yang diaktifkan.
+**Cmdlet Update-AzAlertProcessingRule** memperbarui properti aturan pemrosesan pemberitahuan - status dan tag yang diaktifkan.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan Pemrosesan Pemberitahuan
 
 ```yaml
@@ -126,7 +129,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Status aturan Pemrosesan Pemberitahuan
 
 ```yaml
@@ -142,8 +145,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag aturan Pemrosesan Pemberitahuan Untuk misalnya.
-@{"tag1" = "key1";" tag2" = "key2"} Gunakan {} untuk menghapus tag yang sudah ada. 
+Tag aturan Pemrosesan Pemberitahuan Misalnya.
+@{"tag1" = "key1";" tag2" = "key2"} Gunakan {} untuk menghapus tag yang ada. 
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

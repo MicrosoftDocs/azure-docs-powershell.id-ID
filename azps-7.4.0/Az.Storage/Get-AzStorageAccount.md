@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
-ms.openlocfilehash: 616ad0ed28ea6c99cb0e6a1257607852b6bc75d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 26e8a75f7940786c47b51c348c876d696270415f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142736974"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565114"
 ---
-# Get-AzStorageAccount
+# Dapatkan-AkunPenyimpananAz
 
 ## SYNOPSIS
 Mendapatkan akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,28 +46,28 @@ Cmdlet **Get-AzStorageAccount** mendapatkan akun Storage tertentu atau semua aku
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan akun Storage yang ditentukan
+### Contoh 1: Mendapatkan akun Storage yang ditentukan
 ```
 PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01" -Name "mystorageaccount"
 ```
 
 Perintah ini mendapatkan akun Storage yang ditentukan.
 
-### Contoh 2: Dapatkan semua akun Storage dalam grup sumber daya
+### Contoh 2: Mendapatkan semua akun Storage dalam grup sumber daya
 ```
 PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01"
 ```
 
 Perintah ini mendapatkan semua akun Storage dalam grup sumber daya.
 
-### Contoh 3: Dapatkan semua akun Storage dalam langganan
+### Contoh 3: Mendapatkan semua akun Storage dalam langganan
 ```
 PS C:\>Get-AzStorageAccount
 ```
 
 Perintah ini mendapatkan semua akun Storage dalam langganan.
 
-### Contoh 4: Dapatkan akun Storage dengan status pemulihan blob
+### Contoh 4: Mendapatkan akun Storage dengan status pemulihan blob-nya
 ```
 PS C:\> $account = Get-AzStorageAccount -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount" -IncludeBlobRestoreStatus
 
@@ -75,12 +78,12 @@ Status     RestoreId                            FailureReason Parameters.TimeToR
 InProgress a70cd4a1-f223-4c86-959f-cc13eb4795a8               2020-02-10T13:45:04.7155962Z [container1/blob1 -> container2/blob2]
 ```
 
-Perintah ini mendapatkan akun Storage dengan status pemulihan blob, dan memperlihatkan status pemulihan blob.
+Perintah ini mendapatkan akun Storage dengan status pemulihan blob-nya, dan menunjukkan status pemulihan blob.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeGeoReplicationStats
-Dapatkan GeoReplicationStats akun Storage.
+Dapatkan GeoReplicationStats dari akun Storage.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun Storage yang akan didapatkan.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -198,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzStorageAccount](./New-AzStorageAccount.md)
 
-[Hapus-AzStorageAccount](./Remove-AzStorageAccount.md)
+[Remove-AzStorageAccount](./Remove-AzStorageAccount.md)
 
 [Set-AzStorageAccount](./Set-AzStorageAccount.md)
 

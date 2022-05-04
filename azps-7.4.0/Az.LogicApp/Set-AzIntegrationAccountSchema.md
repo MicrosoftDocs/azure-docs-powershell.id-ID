@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountSchema.md
-ms.openlocfilehash: dceaa023e3745ad623ee5ff5c260c3fd87388a3a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 372d35d82ad9f050b2824f3b40c02ad8f98cb5cd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314937"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144565636"
 ---
 # Set-AzIntegrationAccountSchema
 
 ## SYNOPSIS
-Mengubah skema akun integrasi.
+Memodifikasi skema akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountschema) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,12 +31,12 @@ Set-AzIntegrationAccountSchema -ResourceGroupName <String> -Name <String> -Schem
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzIntegrationAccountSchema** mengubah skema akun integrasi.
+Cmdlet **Set-AzIntegrationAccountSchema** memodifikasi skema akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili skema akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, dan nama skema.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -56,12 +59,12 @@ ContentLink : https://<baseurl>/integrationaccounts68a13b6b49f14995ba7c5f3aedcbd
 ContentSize : 7901
 ```
 
-Perintah ini mengubah skema akun integrasi bernama IntegrationAccountSchema43.
+Perintah ini memodifikasi skema akun integrasi bernama IntegrationAccountSchema43.
 
 ## PARAMETERS
 
 ### -ContentType
-Menentukan tipe konten untuk skema akun integrasi.
+Menentukan jenis konten untuk skema akun integrasi.
 Cmdlet ini mendukung aplikasi/xml sebagai tipe konten peta.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -197,8 +200,8 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaType
-Menentukan tipe untuk skema akun integrasi.
-Parameter ini mendukung Xml sebagai tipenya.
+Menentukan jenis untuk skema akun integrasi.
+Parameter ini mendukung Xml sebagai jenis.
 
 ```yaml
 Type: System.String
@@ -213,8 +216,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
-ms.openlocfilehash: 6c2f1e6b0d1e91a3f6a316a798df8d45cc604878
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b3ebd82df948abc7a9ae40eb5085774002be4be5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143319869"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566176"
 ---
 # New-AzAutomationSoftwareUpdateConfiguration
 
 ## SYNOPSIS
-Membuat konfigurasi pembaruan perangkat lunak otomatisasi azure terjadwal.
+Membuat konfigurasi pembaruan perangkat lunak azure automation terjadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationsoftwareupdateconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,12 +47,12 @@ New-AzAutomationSoftwareUpdateConfiguration -Schedule <Schedule> [-Linux] [-Rebo
 ```
 
 ## DESCRIPTION
-Membuat konfigurasi pembaruan perangkat lunak yang berjalan sesuai jadwal untuk memperbarui daftar komputer. Komputer menyertakan mesin virtual Azure atau komputer non-az.
+Membuat konfigurasi pembaruan perangkat lunak yang berjalan sesuai jadwal untuk memperbarui daftar komputer. Komputer mencakup komputer virtual azure atau komputer non-az.
 
 ## EXAMPLES
 
 ### Contoh 1
-Membuat konfigurasi pembaruan perangkat lunak untuk menginstal pembaruan penting pada dua Windows mesin virtual Azure sekali setiap Sabtu 21:00. Durasi pembaruan diatur ke 2 jam dalam contoh ini.
+Membuat konfigurasi pembaruan perangkat lunak untuk menginstal pembaruan penting pada dua Windows komputer virtual azure sekali setiap Sabtu pukul 21.00. Durasi pembaruan diatur ke 2 jam dalam contoh ini.
 
 ```powershell
 PS C:\> $startTime = [DateTimeOffset]"2018-09-13T21:00"
@@ -89,7 +92,7 @@ Description           :
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureVMResourceId
-Id Sumber Daya untuk mesin virtual azure.
+Id Sumber Daya untuk komputer virtual azure.
 
 ```yaml
 Type: System.String[]
@@ -148,7 +151,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Durasi
+### -Duration
 Durasi maksimum untuk pembaruan.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedKbNumber
-Nomor KB pembaruan yang dikecualikan.
+Jumlah KB pembaruan yang dikecualikan.
 
 ```yaml
 Type: System.String[]
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedKbNumber
-Nomor KB pembaruan yang disertakan.
+Jumlah KB pembaruan yang disertakan.
 
 ```yaml
 Type: System.String[]
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa konfigurasi pembaruan perangkat lunak yang menargetkan mesin sistem operasi Linux.
+Menunjukkan bahwa konfigurasi pembaruan perangkat lunak yang menargetkan komputer sistem operasi Linux.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -NonAzureQuery
-Grup dinamis bukan kueri Azure.
+Kueri non Azure grup dinamis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.NonAzureQueryProperties[]
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostTaskRunbookName
-Memposting tugas.
+Posting tugas.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostTaskRunbookParameter
-Posting parameter tugas.
+Pasca parameter tugas.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreTaskRunbookName
-Tugas sebelumnya.
+Pra-tugas.
 
 ```yaml
 Type: System.String
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootOnly
-Menunjukkan bahwa konfigurasi pembaruan perangkat lunak hanya akan boot ulang mesin.
+Menunjukkan bahwa konfigurasi pembaruan perangkat lunak hanya akan Me-reboot komputer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootSetting
-Mulai ulang Pengaturan.
+Pengaturan Reboot.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.RebootSetting
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa konfigurasi pembaruan perangkat lunak yang menargetkan mesin sistem operasi windows.
+Menunjukkan bahwa konfigurasi pembaruan perangkat lunak yang menargetkan komputer sistem operasi windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -436,8 +439,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -468,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

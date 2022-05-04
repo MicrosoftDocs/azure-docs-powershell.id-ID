@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSSLBinding.md
-ms.openlocfilehash: e095fde66ff3cce1102ccb7620d90e4300658678
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d2969a78c33fce6233751afcd27fa98f063e5c60
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056097"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575588"
 ---
 # Get-AzWebAppSSLBinding
 
 ## SYNOPSIS
-Mendapatkan penjilidan SSL sertifikat Azure Web App.
+Mendapatkan pengikatan SSL sertifikat Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappsslbinding) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,28 +37,28 @@ Get-AzWebAppSSLBinding [[-Name] <String>] [-WebApp] <PSSite> [-DefaultProfile <I
 
 ## DESCRIPTION
 Cmdlet **Get-AzWebAppSSLBinding** mendapatkan pengikatan Secure Sockets Layer (SSL) untuk Azure Web App.
-Pengikat SSL digunakan untuk mengaitkan Aplikasi Web dengan sertifikat yang diunggah.
+Pengikatan SSL digunakan untuk mengaitkan Aplikasi Web dengan sertifikat yang diunggah.
 Web Apps dapat terikat ke beberapa sertifikat.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengikat SSL untuk Aplikasi Web
+### Contoh 1: Mendapatkan pengikatan SSL untuk Aplikasi Web
 ```powershell
 Get-AzWebAppSSLBinding -ResourceGroupName "ContosoResourceGroup" -WebAppName "ContosoWebApp"
 ```
 
-Perintah ini mengambil pengikat SSL untuk Web App ContosoWebApp, yang terkait dengan grup sumber daya ContosoResourceGroup.
+Perintah ini mengambil pengikatan SSL untuk Aplikasi Web ContosoWebApp, yang terkait dengan grup sumber daya ContosoResourceGroup.
 
-### Contoh 2: Menggunakan referensi objek untuk mendapatkan pengikat SSL untuk Aplikasi Web
+### Contoh 2: Gunakan referensi objek untuk mendapatkan pengikatan SSL untuk Aplikasi Web
 ```powershell
 $WebApp = Get-AzWebApp -Name "ContosoWebApp"
 Get-AzWebAppSSLBinding -WebApp $WebApp
 ```
 
-Perintah dalam contoh ini juga mendapatkan pengikat SSL untuk Aplikasi Web ContosoWebApp; namun, dalam hal ini, referensi objek digunakan sebagai ganti nama Web App dan nama grup sumber daya terkait.
+Perintah dalam contoh ini juga mendapatkan pengikatan SSL untuk Aplikasi Web ContosoWebApp; namun, dalam hal ini, referensi objek digunakan alih-alih nama Aplikasi Web dan nama grup sumber daya terkait.
 Referensi objek ini dibuat oleh perintah pertama dalam contoh, yang menggunakan **Get-AzWebApp** untuk membuat referensi objek ke Aplikasi Web bernama ContosoWebApp.
 Referensi objek tersebut disimpan dalam variabel bernama $WebApp.
-Variabel ini, dan cmdlet **Get-AzWebAppSSLBinding** , kemudian digunakan oleh perintah kedua untuk mendapatkan pengikat SSL.
+Variabel ini, dan cmdlet **Get-AzWebAppSSLBinding** , kemudian digunakan oleh perintah kedua untuk mendapatkan pengikatan SSL.
 
 ## PARAMETERS
 
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pengikat SSL.
+### -Name
+Menentukan nama pengikatan SSL.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-Menentukan slot penyebaran Web App.
+Menentukan slot penyebaran Aplikasi Web.
 Untuk mendapatkan slot penyebaran, gunakan cmdlet Get-AzWebAppSlot.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -WebApp
 Menentukan Aplikasi Web.
-Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp.
+Untuk mendapatkan Aplikasi Web, gunakan cmdlet Get-AzWebApp.
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebAppName
-Menentukan nama Web App tempat cmdlet ini mendapatkan pengikat SSL.
+Menentukan nama Aplikasi Web tempat cmdlet ini mendapatkan pengikatan SSL.
 Anda tidak dapat menggunakan parameter *WebAppName* dan parameter *WebApp* dalam perintah yang sama.
 
 ```yaml
@@ -154,11 +157,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzDataCollectionRule.md
-ms.openlocfilehash: 1150666e808d6cce689592cb175c09504b75e0ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b62e35766b4260e2c8390ddbc15a3080d3904a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314577"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144567220"
 ---
 # Update-AzDataCollectionRule
 
 ## SYNOPSIS
 Memperbarui properti tag aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/update-azdatacollectionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,9 +57,9 @@ Update-AzDataCollectionRule
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzDataCollectionRule** memperbarui properti tag aturan pengumpulan data.
+Cmdlet **Update-AzDataCollectionRule** memperbarui properti Tag aturan pengumpulan data.
 
-Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan di mana data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview) lengkap.
+Aturan Pengumpulan Data (DCR) menentukan data yang masuk ke Azure Monitor dan menentukan lokasi data tersebut harus dikirim atau disimpan. Berikut adalah [artikel gambaran umum DCR](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview) lengkap.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini memperbarui properti tag untuk aturan pengumpulan data tertentu.
+Perintah ini memperbarui properti tag untuk aturan pengumpulan data yang diberikan.
 
 ### Contoh 2: Memperbarui tag aturan pengumpulan data
 ```powershell
@@ -103,7 +106,7 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini memperbarui properti tag untuk aturan pengumpulan data tertentu.
+Perintah ini memperbarui properti tag untuk aturan pengumpulan data yang diberikan.
 
 ### Contoh 3: Memperbarui tag aturan pengumpulan data
 ```powershell
@@ -125,7 +128,7 @@ Location          : East US 2 EUAP
 Tags              : {[tag2, value2], [tag1, value1]}
 ```
 
-Perintah ini memperbarui properti tag untuk aturan pengumpulan data tertentu.
+Perintah ini memperbarui properti tag untuk aturan pengumpulan data yang diberikan.
 
 ## PARAMETERS
 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Properti tag aturan pengumpulan data
+Properti tag dari aturan pengumpulan data
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -219,8 +222,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

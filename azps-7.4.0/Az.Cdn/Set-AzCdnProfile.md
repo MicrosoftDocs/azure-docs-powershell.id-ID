@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnProfile.md
-ms.openlocfilehash: fc4739ff279f92d0978dcb6ff1d9a71f5c771659
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5d5aac28c7ed77fbf15665d7050c5998acf4310a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172647"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144581574"
 ---
 # Set-AzCdnProfile
 
 ## SYNOPSIS
 Memperbarui profil CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azcdnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzCdnProfile -CdnProfile <PSProfile> [-DefaultProfile <IAzureContextContaine
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzCdnProfile** memperbarui profil azure Content Delivery Network (CDN).
+**Cmdlet Set-AzCdnProfile** memperbarui profil Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -132,6 +135,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzCdnProfile](./New-AzCdnProfile.md)
 
-[Hapus-AzCdnProfile](./Remove-AzCdnProfile.md)
+[Remove-AzCdnProfile](./Remove-AzCdnProfile.md)
 
 

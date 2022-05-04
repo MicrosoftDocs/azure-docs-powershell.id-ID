@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIncludedPath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIncludedPath.md
-ms.openlocfilehash: 6f6232aff81096c96535d975de2e3dd8ce99421c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 537efd6fd68e5f38199a026698c7147278a983ec
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289035"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144575390"
 ---
 # Baru-AzCosmosDBSqlIncludedPath
 
 ## SYNOPSIS
 Membuat objek baru jenis PSIncludedPath. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBSqlContainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlincludedpath) untuk informasi terbaru.
 
 ## SYNTAX
 

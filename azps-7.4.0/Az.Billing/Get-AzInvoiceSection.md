@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzInvoiceSection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzInvoiceSection.md
-ms.openlocfilehash: 0c6f947bbecfff7349b3f21e1a90e71435bb7c21
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b19e799b396ea7d75122608d36487e9b5e578e1c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750204"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144576488"
 ---
 # Get-AzInvoiceSection
 
 ## SYNOPSIS
-Dapatkan bagian faktur.
+Mendapatkan bagian faktur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azinvoicesection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,14 +28,14 @@ Get-AzInvoiceSection -BillingAccountName <String> -BillingProfileName <String> [
  [<CommonParameters>]
 ```
 
-### Satu
+### Tunggal
 ```
 Get-AzInvoiceSection -BillingAccountName <String> -BillingProfileName <String> -Name <System.Collections.Generic.List`1[System.String]>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzInvoiceSection** mendapatkan bagian faktur di bawah profil tagihan tertentu. 
+Cmdlet **Get-AzInvoiceSection** mendapatkan bagian faktur di bawah profil penagihan yang ditentukan. 
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Get-AzInvoiceSection** mendapatkan bagian faktur di bawah profil tagiha
 Get-AzInvoiceSection -BillingAccountName 00000000-0000-0000-0000-000000000000 -BillingProfileName AAAA-0A00-AAA-ZZZ
 ```
 
-Dapatkan semua bagian faktur di bawah profil tagihan tertentu.
+Dapatkan semua bagian faktur di bawah profil penagihan yang ditentukan.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingAccountName
-Nama akun tagihan tertentu.
+Nama akun penagihan tertentu.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingProfileName
-Nama profil tagihan tertentu.
+Nama profil penagihan tertentu.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama bagian faktur tertentu.
 
 ```yaml
@@ -113,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

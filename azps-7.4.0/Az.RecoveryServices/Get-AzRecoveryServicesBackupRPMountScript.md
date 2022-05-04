@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: 5f58ef6a02bb019117443afaae2447a8ac6391b1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a14196d7c99eba80789444662660f2c8490a63dc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277011"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583238"
 ---
 # Get-AzRecoveryServicesBackupRPMountScript
 
 ## SYNOPSIS
 Mengunduh skrip untuk memasang semua file titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprpmountscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzRecoveryServicesBackupRPMountScript [-RecoveryPoint] <RecoveryPointBase> [
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzRecoveryServicesBackupRPMountScript mengunduh skrip yang memasang volume titik pemulihan pada mesin tempatnya dijalankan.
+Cmdlet Get-AzRecoveryServicesBackupRPMountScript mengunduh skrip yang memasang volume titik pemulihan pada komputer tempatnya dijalankan.
 
 ## EXAMPLES
 
-### Contoh 1: Mount a recovery point
+### Contoh 1: Memasang titik pemulihan
 ```powershell
 $namedContainer = Get-AzRecoveryServicesBackupContainer  -ContainerType "AzureVM" -Status "Registered" -FriendlyName "V2VM"
 $backupitem = Get-AzRecoveryServicesBackupItem -Container $namedContainer  -WorkloadType "AzureVM"
@@ -48,11 +51,11 @@ OsType  Password        Filename
 Windows e3632984e51f496 V2VM_wus2_8287309959960546283_451516692429_cbd6061f7fc543c489f1974d33659fed07a6e0c2e08740.exe
 ```
 
-Ketika skrip dijalankan, skrip akan me-mount file titik pemulihan $rp\[ 0\]
+Ketika skrip dijalankan, skrip akan memasang file titik pemulihan $rp\[ 0\]
 
 ### Contoh 2
 
-Mengunduh skrip untuk memasang semua file titik pemulihan. (autogenerasi)
+Mengunduh skrip untuk memasang semua file titik pemulihan. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Lokasi tempat file harus diunduh dalam kasus pemulihan file. Jika -Path tidak disediakan, maka berkas skrip akan diunduh dalam direktori saat ini.
+Lokasi tempat file harus diunduh dalam kasus pemulihan file. Jika -Path tidak disediakan, file skrip akan diunduh di direktori saat ini.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -121,8 +124,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

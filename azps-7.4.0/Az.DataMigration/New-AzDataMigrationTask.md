@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationTask.md
-ms.openlocfilehash: 430584b0d2aad4207ae8b6dfcbd60b83d885cdf0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c0b8fdeb50b12c3b0ee4035c06b6d27084daef3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063549"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573068"
 ---
 # New-AzDataMigrationTask
 
 ## SYNOPSIS
 Membuat dan memulai tugas migrasi data di Azure Database Migration Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzDataMigrationTask [-ResourceId] <String> -TaskType <TaskTypeEnum> -Name <S
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil parameter untuk enumerator Tipe Tugas, Azure Resource Group, nama Azure Database Migration Service terkait dan Project sebagai input. 
+Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil parameter untuk enumerator Jenis Tugas, Grup Sumber Daya Azure, nama Azure Database Migration Service terkait dan Project sebagai input. 
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet New-AzDataMigrationTask membuat tugas migrasi data. Cmdlet ini mengambil 
 New-AzDataMigrationTask -TaskType MigrateSqlServerSqlDb -ResourceGroupName myResourceGroup -ServiceName TestService -ProjectName myDMSProject -TaskName MyMigrationTask
 ```
 
-Skrip contoh ini memperlihatkan cara membuat Tugas Migrasi Data baru bernama MyMigrationTask dalam proyek bernama myDMSProject dan layanan bernama TestService. 
+Contoh skrip ini menunjukkan cara membuat Tugas Migrasi Data baru bernama MyMigrationTask dalam proyek bernama myDMSProject dan layanan bernama TestService. 
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tugas.
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-nama Database Migration Service.
+Nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskType
-Tipe Tugas.
+Jenis Tugas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.TaskTypeEnum
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tunggu
-Apakah menunggu tugas selesai. Jika bendera diatur, periksa setiap satu detik hingga tugas selesai dan kembali ke pengguna properti tugas tempat output atau kesalahan dapat diperiksa. 
+Apakah menunggu tugas selesai. Jika bendera diatur, periksa setiap satu detik sampai tugas selesai dan kembali ke pengguna properti tugas tempat output atau kesalahan dapat diperiksa. 
 
 
 ```yaml
@@ -189,8 +192,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

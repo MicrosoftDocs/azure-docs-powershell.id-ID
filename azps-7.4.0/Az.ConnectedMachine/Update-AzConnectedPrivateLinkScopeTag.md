@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedPrivateLinkScopeTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedPrivateLinkScopeTag.md
-ms.openlocfilehash: fcc03d455d2b5c4fed839cee624e5791910df403
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7f59de726777f126d729939efbaf317eea629975
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230013"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559174"
 ---
 # Update-AzConnectedPrivateLinkScopeTag
 
 ## SYNOPSIS
-Memperbarui tag PrivateLinkScope yang sudah ada.
+Memperbarui tag PrivateLinkScope yang ada.
 Untuk memperbarui bidang lain, gunakan metode CreateOrUpdate.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedprivatelinkscopetag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzConnectedPrivateLinkScopeTag -ResourceGroupName <String> -ScopeName <St
  [<CommonParameters>]
 ```
 
-### Update
+### Pembaruan
 ```
 Update-AzConnectedPrivateLinkScopeTag -ResourceGroupName <String> -ScopeName <String>
  -PrivateLinkScopeTag <ITagsResource> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm]
@@ -47,12 +50,12 @@ Update-AzConnectedPrivateLinkScopeTag -InputObject <IConnectedMachineIdentity> [
 ```
 
 ## DESCRIPTION
-Memperbarui tag PrivateLinkScope yang sudah ada.
+Memperbarui tag PrivateLinkScope yang ada.
 Untuk memperbarui bidang lain, gunakan metode CreateOrUpdate.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tag lingkup tautan privat
+### Contoh 1: Memperbarui tag cakupan tautan privat
 ```powershell
 Update-AzConnectedPrivateLinkScopeTag -ResourceGroupName $resourceGroupName -ScopeName $scopeName -Tag $tags2
 ```
@@ -64,7 +67,7 @@ name         eastus2euap Disabled            Succeeded         Microsoft.Azure.P
 
 ```
 
-Memperbarui tag lingkup link privat
+Memperbarui tag cakupan tautan privat
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
@@ -99,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkScopeTag
-Wadah yang hanya menyimpan Tag untuk sumber daya, memungkinkan pengguna memperbarui tag pada instans PrivateLinkScope.
-Untuk membangun, lihat bagian CATATAN untuk properti PRIVATELINKSCOPETAG dan membuat tabel hash.
+Kontainer yang hanya menyimpan Tag untuk sumber daya, memungkinkan pengguna memperbarui tag pada instans PrivateLinkScope.
+Untuk membuat, lihat bagian CATATAN untuk properti PRIVATELINKSCOPETAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.ITagsResource
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -175,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -229,18 +232,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
-  - `[ExtensionName <String>]`: Nama ekstensi mesin.
+  - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya target.
-  - `[MachineName <String>]`: Nama mesin hibrid.
+  - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya PrivateLinkScope Azure Arc.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-PRIVATELINKSCOPETAG <ITagsResource>: Wadah yang hanya memiliki Tag untuk sumber daya, memungkinkan pengguna untuk memperbarui tag pada instans PrivateLinkScope.
+PRIVATELINKSCOPETAG <ITagsResource>: Kontainer yang hanya menyimpan Tag untuk sumber daya, memungkinkan pengguna memperbarui tag pada instans PrivateLinkScope.
   - `[Tag <ITagsResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 

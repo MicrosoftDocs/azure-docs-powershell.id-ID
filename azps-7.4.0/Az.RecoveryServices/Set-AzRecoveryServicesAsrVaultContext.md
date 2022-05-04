@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrVaultContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrVaultContext.md
-ms.openlocfilehash: 42a8f3a31ecb3f5d7935cad5dae36232a18ef274
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 552a98e7b2e303573eb22dd3ad05e3daee92f0ad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117153"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144580484"
 ---
 # Set-AzRecoveryServicesAsrVaultContext
 
 ## SYNOPSIS
-Mengatur konteks kubah Layanan Pemulihan yang akan digunakan untuk operasi azure Site Recovery berikutnya dalam sesi PowerShell saat ini.
+Mengatur konteks vault Layanan Pemulihan yang akan digunakan untuk operasi azure Site Recovery berikutnya dalam sesi PowerShell saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasrvaultcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzRecoveryServicesAsrVaultContext -Vault <ARSVault> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRecoveryServicesAsrVaultContext** mengatur konteks brankas Azure Site Recovery untuk operasi lebih lanjut.
+Cmdlet **Set-AzRecoveryServicesAsrVaultContext** mengatur konteks azure Site Recovery vault untuk operasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Set-AzRecoveryServicesAsrVaultContext** mengatur konteks brankas Azure 
 $vaultSettings = Set-AzRecoveryServicesAsrVaultContext -Vault $RecoveryServicesVault
 ```
 
-Mengatur konteks kubah ke kubah Layanan Pemulihan yang ditentukan untuk operasi Azure Site Recovery berikutnya dalam sesi PowerShell saat ini.
+Mengatur konteks vault ke vault Layanan Pemulihan yang ditentukan untuk operasi Azure Site Recovery berikutnya dalam sesi PowerShell saat ini.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Objek kubah Layanan Pemulihan yang terkait dengan kubah Layanan Pemulihan.
+Objek vault Layanan Pemulihan yang sesuai dengan vault Layanan Pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -68,8 +71,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

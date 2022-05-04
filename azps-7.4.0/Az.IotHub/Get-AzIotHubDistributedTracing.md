@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDistributedTracing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDistributedTracing.md
-ms.openlocfilehash: 291a9da35b38d4c96c29176c737e1664c52dfef5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab44e3933e7b27f708d550f3e8e0930126fcbd6f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747360"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144583958"
 ---
 # Get-AzIotHubDistributedTracing
 
 ## SYNOPSIS
-Dapatkan pengaturan penelusuran terdistribusi untuk perangkat.
+Dapatkan pengaturan pelacakan terdistribusi untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdistributedtracing) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDistributedTracing [-ResourceId] <String> [-DeviceId] <String>
 ```
 
 ## DESCRIPTION
-Dapatkan pengaturan penelusuran terdistribusi untuk perangkat.
+Dapatkan pengaturan pelacakan terdistribusi untuk perangkat.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Sampling Rate : 22%
 IsSynced      : False
 ```
 
-Dapatkan pengaturan penelusuran terdistribusi untuk perangkat.
+Dapatkan pengaturan pelacakan terdistribusi untuk perangkat.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

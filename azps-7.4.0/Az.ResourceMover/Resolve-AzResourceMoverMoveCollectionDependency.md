@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Resolve-AzResourceMoverMoveCollectionDependency.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Resolve-AzResourceMoverMoveCollectionDependency.md
-ms.openlocfilehash: 6daf9c81279a2e91c3c18a0da9c68f0e72ab08d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b0b3866ad136c505a6d1fd1e1c18f3ed796681e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802008"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144572240"
 ---
 # Resolve-AzResourceMoverMoveCollectionDependency
 
 ## SYNOPSIS
 Menghitung, menyelesaikan, dan memvalidasi dependensi moveResources dalam kumpulan pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resourcemover/resolve-azresourcemovermovecollectiondependency) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Menghitung, menyelesaikan, dan memvalidasi dependensi moveResources dalam kumpul
 
 ## EXAMPLES
 
-### Contoh 1: Menghitung, menyelesaikan, dan memvalidasi dependensi Pindahkan Sumber Daya dalam kumpulan Pemindahan.
+### Contoh 1: Menghitung, mengatasi, dan memvalidasi dependensi Pindahkan Sumber Daya dalam kumpulan Pemindahan.
 ```powershell
 Resolve-AzResourceMoverMoveCollectionDependency -ResourceGroupName "RG-MoveCollection-demoRMS" -MoveCollectionName "PS-centralus-westcentralus-demoRMS" 
 ```
@@ -52,7 +55,7 @@ StartTime      : 2/9/2021 2:05:00 AM
 Status         : Succeeded
 ```
 
-Komputasi, atasi, dan validasi dependensi Pindahkan Sumber Daya dalam kumpulan Pindahkan.
+Komputasi, selesaikan, dan validasi dependensi Pindahkan Sumber Daya di kumpulan Pindahkan.
 
 ## PARAMETERS
 

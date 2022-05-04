@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/invoke-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
-ms.openlocfilehash: 163843a9d90ddb479c6b2ccf86c57be96a289c36
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 81d3e1e8c8d3a25e2b9416ffe3988df8bcf7f784
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798210"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559930"
 ---
 # Invoke-AzStorageAccountFailover
 
 ## SYNOPSIS
 Memanggil failover akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/invoke-azstorageaccountfailover) untuk informasi terbaru.
 
 ## SYNTAX
 

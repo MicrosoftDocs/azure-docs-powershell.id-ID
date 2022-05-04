@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemAclEntry.md
-ms.openlocfilehash: 64219b16403d2aa8ab79448df9f31865b41f5419
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d523c7ffe928c6c34bc8086a50da5908fe7f0761
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125091"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144573140"
 ---
 # Get-AzDataLakeStoreItemAclEntry
 
 ## SYNOPSIS
-Mendapatkan entri dalam ACL file atau folder di Data Lake Store.
+Mendapatkan entri di ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet **Get-AzDataLakeStoreItemAclEntry** mendapatkan entri (ACE) dalam daftar 
 Get-AzDataLakeStoreItemAclEntry -AccountName 'ContosoADL' -Path '/'
 ```
 
-Perintah ini mendapatkan ACL untuk direktori akar dari akun Penyimpanan Data Lake yang ditentukan
+Perintah ini mendapatkan ACL untuk direktori akar dari akun Data Lake Store yang ditentukan
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake dari item tempat cmdlet ini mendapatkan ACE, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item tempat cmdlet ini mendapatkan ACE, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

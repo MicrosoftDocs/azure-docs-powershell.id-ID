@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcher.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcher.md
-ms.openlocfilehash: a72a91106f53f38633c602c1b1af9e580f356a37
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb53a3a9308320484a1ec5f2b29f221ba4e0b051
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281205"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144577424"
 ---
 # New-AzNetworkWatcher
 
 ## SYNOPSIS
 Membuat sumber daya Network Watcher baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcher) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Contoh ini membuat Network Watcher baru di dalam Grup Sumber Daya yang baru dibuat. Perhatikan bahwa hanya satu Network Watcher yang dapat dibuat per kawasan per langganan.
+Contoh ini membuat Network Watcher baru di dalam Grup Sumber Daya yang baru dibuat. Perhatikan bahwa hanya satu Network Watcher yang dapat dibuat per wilayah per langganan.
 
 ## PARAMETERS
 
@@ -78,8 +81,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pengawas jaringan.
+### -Name
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -123,8 +126,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -168,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas jaringan
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan
 
 ## RELATED LINKS
 
@@ -176,7 +179,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -216,9 +219,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

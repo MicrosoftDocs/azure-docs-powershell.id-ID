@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageCORSRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageCORSRule.md
-ms.openlocfilehash: 271ec9f96a446988d8544a8b0ce068404178784c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c58c7dbaba77a7c4bbae6e70c945fc2003e2b6a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932347"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144559840"
 ---
 # Set-AzStorageCORSRule
 
 ## SYNOPSIS
-Mengatur aturan CORS untuk tipe layanan Storage.
+Mengatur aturan CORS untuk jenis layanan Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragecorsrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,9 +30,9 @@ Set-AzStorageCORSRule [-ServiceType] <StorageServiceType> -CorsRules <PSCorsRule
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageCORSRule** mengatur aturan Cross-Origin Resource Sharing (CORS) untuk tipe layanan Azure Storage.
-Tipe layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
-Cmdlet ini menimpa aturan yang sudah ada.
+Cmdlet **Set-AzStorageCORSRule** menetapkan aturan Cross-Origin Resource Sharing (CORS) untuk jenis layanan Azure Storage.
+Jenis layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
+Cmdlet ini menimpa aturan yang ada.
 Untuk melihat aturan saat ini, gunakan cmdlet Get-AzStorageCORSRule.
 
 ## EXAMPLES
@@ -51,8 +54,8 @@ PS C:\> Set-AzStorageCORSRule -ServiceType Blob -CorsRules $CorsRules
 ```
 
 Perintah pertama menetapkan array aturan ke variabel $CorsRules.
-Perintah ini menggunakan perluasan standar di beberapa baris dalam blok kode ini.
-Perintah kedua menetapkan aturan dalam $CorsRules ke tipe layanan Blob.
+Perintah ini menggunakan standar meluas ke beberapa baris dalam blok kode ini.
+Perintah kedua menetapkan aturan dalam $CorsRules ke jenis blob service.
 
 ### Contoh 2: Mengubah properti aturan CORS untuk layanan blob
 ```
@@ -62,17 +65,17 @@ PS C:\> $CorsRules[0].AllowedMethods = @("Get", "Connect", "Merge")
 PS C:\> Set-AzStorageCORSRule -ServiceType Blob -CorsRules $CorsRules
 ```
 
-Perintah pertama mendapatkan aturan CORS saat ini untuk tipe Blob menggunakan cmdlet **Get-AzStorageCORSRule** .
+Perintah pertama mendapatkan aturan CORS saat ini untuk jenis Blob dengan menggunakan cmdlet **Get-AzStorageCORSRule** .
 Perintah menyimpan aturan dalam variabel array $CorsRules.
-Perintah kedua dan ketiga mengubah aturan pertama dalam $CorsRules.
-Perintah akhir menetapkan aturan dalam $CorsRules ke tipe layanan Blob.
+Perintah kedua dan ketiga memodifikasi aturan pertama di $CorsRules.
+Perintah akhir menetapkan aturan dalam $CorsRules ke jenis layanan Blob.
 Aturan yang direvisi menimpa aturan CORS saat ini.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -88,9 +91,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -CorsRules
 Menentukan array aturan CORS.
-Anda dapat mengambil aturan yang sudah ada menggunakan cmdlet Get-AzStorageCORSRule.
+Anda dapat mengambil aturan yang ada menggunakan cmdlet Get-AzStorageCORSRule.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Commands.Storage.Model.ResourceModel.PSCorsRule[]
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
+Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -185,11 +188,11 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan tipe layanan Azure Storage tempat cmdlet ini menetapkan aturan.
+Menentukan jenis layanan Azure Storage yang cmdlet ini menetapkan aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Gumpalan 
-- Meja 
-- Antrian 
+- Blob 
+- Tabel 
+- Antrean 
 - File
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -224,6 +227,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzStorageContext](./New-AzStorageContext.md)
 
-[Hapus-AzStorageCORSRule](./Remove-AzStorageCORSRule.md)
+[Remove-AzStorageCORSRule](./Remove-AzStorageCORSRule.md)
 
 

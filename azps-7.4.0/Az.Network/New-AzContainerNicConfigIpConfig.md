@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-AzCo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzContainerNicConfigIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzContainerNicConfigIpConfig.md
-ms.openlocfilehash: e3ec674bfe4445fdfc66ddc2192a0b282f29697d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77739b7117239ca9fad4c6ef2b0afbb535bbbb0a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997039"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144566986"
 ---
 # New-AzContainerNicConfigIpConfig
 
 ## SYNOPSIS
-Membuat kontainer nic configuration ip configuration object.
+Membuat objek konfigurasi ip konfigurasi nic kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azcontainernicconfigipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ $containerNicConfig = New-AzContainerNicConfig -Name cnic -IpConfiguration conta
 $networkProfile = New-AzNetworkProfile -Name np1 -Location "West US" -ResourceGroupName rg1 -ContainerNetworkInterfaceConfiguration $containerNicConfig
 ```
 
-Dua perintah pertama membuat dan menginisialisasi vnet dan subnet. Perintah ketiga membuat profil konfigurasi container nic ip yang mereferensikan subnet yang dibuat. Perintah keempat membuat konfigurasi antarmuka jaringan kontainer yang memasok profil konfigurasi ip yang dibuat dalam perintah sebelumnya. Akhirnya, perintah kelima membuat profil jaringan yang diinisialisasi dengan konfigurasi antarmuka jaringan kontainer yang disimpan di $containerNicConfig.
+Dua perintah pertama membuat dan menginisialisasi vnet dan subnet. Perintah ketiga membuat profil konfigurasi ip nic kontainer yang mereferensikan subnet yang dibuat. Perintah keempat membuat konfigurasi antarmuka jaringan kontainer yang menyediakan profil konfigurasi ip yang dibuat di perintah sebelumnya. Terakhir, perintah kelima membuat profil jaringan yang diinisialisasi dengan konfigurasi antarmuka jaringan kontainer yang disimpan dalam $containerNicConfig.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama profil konfigurasi ip konfigurasi antarmuka jaringan kontainer.
 
 ```yaml
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

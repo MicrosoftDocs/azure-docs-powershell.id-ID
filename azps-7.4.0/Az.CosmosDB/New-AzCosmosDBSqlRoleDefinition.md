@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: e05779278132b1fd99c01f75c2647e1b3522ec1f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: edb5b843b3c6ee8a2bdad89cb809a5fb459d098c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875934"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144569864"
 ---
 # New-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
 Membuat Definisi Peran CosmosDB Sql baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,8 +57,8 @@ New-AzCosmosDBSqlRoleDefinition [-Id <String>] -RoleName <String> [-Type <String
 
 ## DESCRIPTION
 Membuat Definisi Peran CosmosDB Sql baru.
-Lingkup yang Dapat Ditetapkan dapat sepenuhnya memenuhi syarat (yaitu. /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbName) atau dimulai dengan nama database (ie. /dbs/dbName).
-Untuk menentukan Izin Definisi Peran, gunakan parameter DataAction dan lolos dalam daftar string yang akan diubah menjadi objek Izin tunggal, atau gunakan cmdlet New-AzCosmosDBPermission untuk membuat objek PSPermission untuk masuk melalui parameter Izin.
+Cakupan yang Dapat Ditetapkan dapat sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbs/dbName) atau dimulai dengan nama database (yaitu. /dbs/dbName).
+Untuk menentukan Izin Definisi Peran, gunakan parameter DataAction dan teruskan daftar string yang akan diubah menjadi objek Izin tunggal, atau gunakan cmdlet New-AzCosmosDBPermission untuk membuat objek PSPermission untuk melewati parameter Izin.
 
 ## EXAMPLES
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignableScope
-Kumpulan jalur sumber daya di bawah tempat Penetapan Peran dapat dilampirkan ke Definisi Peran. Misalnya. '/', '/dbs/dbname','/dbs/dbname/colls/collname'.
+Kumpulan jalur sumber daya di bawah tempat Penetapan Peran dapat dilampirkan ke Definisi Peran. Mis. '/', '/dbs/dbname','/dbs/dbname/colls/collname'.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataAction
-Kumpulan tindakan data yang diberikan melalui Definisi Peran. Daftar tindakan yang diperbolehkan dapat ditemukan di: https://aka.ms/cosmos-native-rbac
+Kumpulan tindakan data yang diberikan melalui Definisi Peran. Daftar tindakan yang diizinkan dapat ditemukan di: https://aka.ms/cosmos-native-rbac
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -235,8 +238,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe Definisi Peran, baik CustomRole atau BuiltInRole.
+### -Type
+Jenis Definisi Peran, baik CustomRole atau BuiltInRole.
 Nilai defaultnya adalah CustomRole.
 
 ```yaml
@@ -251,8 +254,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

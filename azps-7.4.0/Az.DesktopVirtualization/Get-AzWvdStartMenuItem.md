@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdStartMenuItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdStartMenuItem.md
-ms.openlocfilehash: da8739ce002c58628e1d2408ff60f1466985aefa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 73aa695bc4a5db71971f63c34f840d1d91d29c09
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002529"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144584048"
 ---
 # Get-AzWvdStartMenuItem
 
 ## SYNOPSIS
-Daftar item menu mulai dalam grup aplikasi tertentu.
+Mencantumkan item menu mulai di grup aplikasi yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdstartmenuitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzWvdStartMenuItem -ApplicationGroupName <String> -ResourceGroupName <String
 ```
 
 ## DESCRIPTION
-Daftar item menu mulai dalam grup aplikasi tertentu.
+Mencantumkan item menu mulai di grup aplikasi yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 2: Daftar Windows Item Menu Mulai Desktop Virtual
+### Contoh 2: Daftar Windows Item Menu Mulai Virtual Desktop
 ```powershell
 Get-AzWvdStartMenuItem -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName
 ```
@@ -43,7 +46,7 @@ ApplicationGroupName/Disk Cleanup                   Microsoft.DesktopVirtualizat
 ApplicationGroupName/Internet Explorer              Microsoft.DesktopVirtualization/applicationgroups/startmenuitems
 ```
 
-Perintah ini Mencantumkan Windows Item Menu Mulai Desktop Virtual dalam Grup Aplikasi.
+Perintah ini Mencantumkan Windows Item Menu Mulai Virtual Desktop dalam Grup Aplikasi.
 
 ## PARAMETERS
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
