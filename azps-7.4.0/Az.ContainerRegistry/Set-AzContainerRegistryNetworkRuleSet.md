@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Set-AzContainerRegistryNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Set-AzContainerRegistryNetworkRuleSet.md
-ms.openlocfilehash: eccb01d127cc7423256c2fb617acb0f539e5fbfd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 18976f691639db3e9059985ab596010549f2b0b3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143126873"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614390"
 ---
 # Set-AzContainerRegistryNetworkRuleSet
 
 ## SYNOPSIS
-Membuat atau memperbarui rangkaian aturan jaringan. Kumpulan aturan hanya dapat diterapkan ke registri "Premium".
+Membuat atau memperbarui seperangkat aturan jaringan. Seperangkat aturan hanya dapat diterapkan ke registri "Premium".
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/set-azcontainerregistrynetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
-### AddAddNetworkRuleWithoutInputObject (Default)
+### TambahkanAddNetworkRuleWithoutInputObject (Default)
 ```
 Set-AzContainerRegistryNetworkRuleSet -DefaultAction <String> [-NetworkRule <IPSNetworkRule[]>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -32,7 +35,7 @@ Set-AzContainerRegistryNetworkRuleSet [-DefaultAction <String>] [-NetworkRule <I
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui rangkaian aturan jaringan
+Membuat atau memperbarui seperangkat aturan jaringan
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ $rule = New-AzContainerRegistryNetworkRule -VirtualNetworkRule -VirtualNetworkRe
 $set = Set-AzContainerRegistryNetworkRuleSet -DefaultAction "Allow" -NetworkRule $rule
 ```
 
-Buat kumpulan aturan jaringan baru.
+Buat seperangkat aturan jaringan baru.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

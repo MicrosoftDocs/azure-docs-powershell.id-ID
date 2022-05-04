@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingRule.md
-ms.openlocfilehash: 01ad51523cd6a407a49b3b6770c9afe6234523a2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5ad4d18daf336085d7c4a997e070d023bd37cace
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058275"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657396"
 ---
-# Set-AzSqlDatabaseDataMaskingRule
+# Get-AzSqlDatabaseMaskingRule
 
 ## SYNOPSIS
 Mengatur properti aturan masking data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasedatamaskingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +32,13 @@ Set-AzSqlDatabaseDataMaskingRule [-MaskingFunction <String>] [-PrefixSize <UInt3
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseDataMaskingRule** mengatur aturan masking data untuk database Azure SQL.
-Untuk menggunakan cmdlet, sediakan parameter *ResourceGroupName*, *ServerName*, *DatabaseName*, dan *RuleId* untuk mengidentifikasi aturan.
-Anda dapat menyediakan parameter *SchemaName*, *TableName*, dan *ColumnName* untuk menargetkan ulang aturan.
-Tentukan parameter *MaskingFunction* untuk mengubah cara data disematkan.
-Jika Menentukan nilai Angka atau Teks untuk *MaskerFungsi*, Anda dapat menentukan parameter *NumberFrom* dan *NumberTo* untuk masking angka atau parameter *PrefixSize*, *ReplacementString*, dan *SuffixSize* untuk masking teks.
-Jika perintah berhasil, dan jika Anda menentukan parameter *PassThru* , cmdlet mengembalikan objek yang menjelaskan properti aturan masking data dan pengidentifikasi aturan.
-Pengidentifikasi aturan mencakup, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, **DatabaseName**, dan **RuleId**.
+Cmdlet **Set-AzSqlDatabaseDataMaskingRule** menetapkan aturan masking data untuk database Azure SQL.
+Untuk menggunakan cmdlet, berikan parameter *ResourceGroupName*, *ServerName*, *DatabaseName*, dan *RuleId* untuk mengidentifikasi aturan.
+Anda dapat memberikan salah satu parameter *SchemaName*, *TableName*, dan *ColumnName* untuk menargetkan ulang aturan.
+Tentukan parameter *MaskingFunction* untuk mengubah cara data disembunyikan.
+Jika Anda menentukan nilai Angka atau Teks untuk *MaskingFunction*, Anda dapat menentukan parameter *NumberFrom* dan *NumberTo* untuk masking angka atau parameter *PrefiksSize*, *ReplacementString*, dan parameter *SuffixSize* untuk masking teks.
+Jika perintah berhasil, dan jika Anda menentukan parameter *PassThru*, cmdlet mengembalikan objek yang menjelaskan properti aturan masking data dan pengidentifikasi aturan.
+Pengidentifikasi aturan termasuk, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, **DatabaseName**, dan **RuleId**.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -45,14 +48,14 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 Set-AzSqlDatabaseDataMaskingRule -ResourceGroupName $params.rgname -ServerName $params.serverName  -DatabaseName $params.databaseName -SchemaName "dbo" -TableName  "table1" -ColumnName "column1" -MaskingFunction "Default"
 ```
 
-Perintah ini mengubah aturan masking data yang memiliki ID Rule17.
-Aturan tersebut beroperasi dalam database bernama Database01 di server Server01.
-Perintah ini mengubah batas interval di mana angka acak dihasilkan sebagai nilai bertopeng.
+Perintah ini memodifikasi aturan masking data yang memiliki Aturan ID17.
+Aturan itu beroperasi dalam database bernama Database01 di server Server01.
+Perintah ini mengubah batas untuk interval di mana angka acak dihasilkan sebagai nilai yang ditutupi.
 Rentang baru adalah antara 23 dan 42.
 
 ### Contoh 2
 
-Mengatur properti aturan masking data untuk database. (autogenerasi)
+Mengatur properti aturan masking data untuk database. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -106,13 +109,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MaskingFungsi
+### -MaskingFunction
 Menentukan fungsi masking yang digunakan aturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Default
 - NoMasking
 - Teks
-- Nomor
+- Telepon
 - SocialSecurityNumber
 - CreditCardNumber
 - Email Nilai defaultnya adalah Default.
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ### -NumberFrom
 Menentukan jumlah batas bawah interval tempat nilai acak dipilih.
 Tentukan parameter ini hanya jika Anda menentukan nilai Angka untuk parameter *MaskingFunction* .
-Nilai defaultnya adalah 0.
+Nilai default adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -148,9 +151,9 @@ Accept wildcard characters: False
 ```
 
 ### -NumberTo
-Menentukan nomor terikat atas interval tempat nilai acak dipilih.
+Menentukan jumlah batas atas interval tempat nilai acak dipilih.
 Tentukan parameter ini hanya jika Anda menentukan nilai Angka untuk parameter *MaskingFunction* .
-Nilai defaultnya adalah 0.
+Nilai default adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -181,9 +184,9 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixSize
-Menentukan jumlah karakter di awal teks yang tidak disematkan.
+Menentukan jumlah karakter di awal teks yang tidak diselubungi.
 Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
-Nilai defaultnya adalah 0.
+Nilai default adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -198,9 +201,9 @@ Accept wildcard characters: False
 ```
 
 ### -ReplacementString
-Menentukan jumlah karakter di akhir teks yang tidak disematkan.
+Menentukan jumlah karakter di akhir teks yang tidak diselubungi.
 Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
-Nilai defaultnya adalah 0.
+Nilai default adalah 0.
 
 ```yaml
 Type: System.String
@@ -260,9 +263,9 @@ Accept wildcard characters: False
 ```
 
 ### -SuffixSize
-Menentukan jumlah karakter di akhir teks yang tidak disematkan.
+Menentukan jumlah karakter di akhir teks yang tidak diselubungi.
 Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
-Nilai defaultnya adalah 0.
+Nilai default adalah 0.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -291,8 +294,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -323,13 +326,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[System.Double, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
@@ -341,11 +344,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlDatabaseDataMaskingRule](./Get-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./Get-AzSqlDatabaseDataMaskingRule.md)
 
-[New-AzSqlDatabaseDataMaskingRule](./New-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./New-AzSqlDatabaseDataMaskingRule.md)
 
-[Remove-AzSqlDatabaseDataMaskingRule](./Remove-AzSqlDatabaseDataMaskingRule.md)
+[Get-AzSqlDatabaseMaskingRule](./Remove-AzSqlDatabaseDataMaskingRule.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

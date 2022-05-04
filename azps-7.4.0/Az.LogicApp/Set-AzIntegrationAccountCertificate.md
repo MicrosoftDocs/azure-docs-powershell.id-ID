@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountCertificate.md
-ms.openlocfilehash: 84aeb0966d11504c0a76e68415d547b0b61301c9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9ab3f5b6bdc1c17ac931b8cbf33b60a8ad13fd3a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746532"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587466"
 ---
 # Set-AzIntegrationAccountCertificate
 
 ## SYNOPSIS
-Mengubah sertifikat akun integrasi.
+Memodifikasi sertifikat akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Set-AzIntegrationAccountCertificate -ResourceGroupName <String> -Name <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzIntegrationAccountCertificate** mengubah sertifikat akun integrasi.
+Cmdlet **Set-AzIntegrationAccountCertificate** memodifikasi sertifikat akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili sertifikat akun integrasi.
 Menentukan nama akun integrasi, nama grup sumber daya, dan nama sertifikat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -58,7 +61,7 @@ PublicCertificate :
 MetaData          :
 ```
 
-Perintah ini mengubah sertifikat akun integrasi dalam grup sumber daya tertentu.
+Perintah ini memodifikasi sertifikat akun integrasi dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Menentukan nama kunci sertifikat dalam kubah kunci.
+Menentukan nama kunci sertifikat di brankas kunci.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultId
-Menentukan ID kubah kunci.
+Menentukan ID brankas kunci.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Menentukan versi kunci sertifikat dalam kubah kunci.
+Menentukan versi kunci sertifikat di brankas kunci.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -212,8 +215,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

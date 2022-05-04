@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureDataExplorerMsiScanObject.md
-ms.openlocfilehash: cec90026cbbf26a7449eeb402b839c363f8d4296
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 01fc060afa720fae0ad4b934069be7cf55a9486e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740880"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613688"
 ---
 # New-AzPurviewAzureDataExplorerMsiScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureDataExplorerMsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuredataexplorermsiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Buat objek dalam memori untuk AzureDataExplorerMsiScan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek pemindaian Azure Data Explorer Msi
+### Contoh 1: Membuat objek pemindaian Azure Data Explorer Msi
 ```powershell
 PS C:\> New-AzPurviewAzureDataExplorerMsiScanObject -Kind 'AzureDataExplorerMsi' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ScanRulesetName 'AzureDataExplorer' -ScanRulesetType 'System'
 
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.ScanAuthorizationType
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMExtension.md
-ms.openlocfilehash: 6c884b600f0e22ea0ea6fa36f2e0bc46fafe7f02
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 675e0a068f267c8cb98b51e8e5eba4e2893ed9e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065457"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144678346"
 ---
 # Set-AzVMExtension
 
 ## SYNOPSIS
-Memperbarui properti ekstensi atau menambahkan ekstensi ke mesin virtual.
+Memperbarui properti ekstensi atau menambahkan ekstensi ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,22 +42,22 @@ Set-AzVMExtension -Publisher <String> -ExtensionType <String> [-SettingString <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMExtension** memperbarui properti untuk Ekstensi Mesin Virtual yang sudah ada atau menambahkan ekstensi ke mesin virtual.
+Cmdlet **Set-AzVMExtension** memperbarui properti untuk Ekstensi Komputer Virtual yang ada atau menambahkan ekstensi ke komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Ubah pengaturan dengan menggunakan tabel hash
+### Contoh 1: Mengubah pengaturan dengan menggunakan tabel hash
 ```powershell
 $Settings = @{"fileUris" = "[]"; "commandToExecute" = ""};
 $ProtectedSettings = @{"storageAccountName" = $stoname; "storageAccountKey" = $stokey};
 Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West US" -VMName "VirtualMachine22" -Name "ContosoTest" -Publisher "Contoso.Compute" -ExtensionType "CustomScriptExtension" -TypeHandlerVersion "1.1" -Settings $Settings -ProtectedSettings $ProtectedSettings;
 ```
 
-Dua perintah pertama menggunakan sintaks Windows PowerShell standar untuk membuat tabel hash, lalu menyimpan tabel hash tersebut dalam variabel $Pengaturan dan $ProtectedSettings.
-Untuk informasi selengkapnya, ketik .`Get-Help about_Hash_Tables`
-Perintah kedua menyertakan dua nilai yang sebelumnya dibuat dan disimpan dalam variabel.
-Perintah akhir mengubah ekstensi mesin virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $Pengaturan dan $ProtectedSettings.
-Perintah menentukan informasi lain yang diperlukan yang menyertakan penerbit dan tipe ekstensi.
+Dua perintah pertama menggunakan sintaks Windows PowerShell standar untuk membuat tabel hash, lalu menyimpan tabel hash tersebut di variabel $Pengaturan dan $ProtectedSettings.
+Untuk informasi selengkapnya, ketik `Get-Help about_Hash_Tables`.
+Perintah kedua mencakup dua nilai yang dibuat sebelumnya dan disimpan dalam variabel.
+Perintah akhir memodifikasi ekstensi komputer virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $Pengaturan dan $ProtectedSettings.
+Perintah menentukan informasi lain yang diperlukan yang menyertakan penerbit dan jenis ekstensi.
 
 ### Contoh 2: Mengubah pengaturan dengan menggunakan string
 ```powershell
@@ -64,13 +67,13 @@ Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West US" -VMNa
 ```
 
 Dua perintah pertama membuat string yang berisi pengaturan, lalu menyimpannya dalam variabel $SettingsString dan $ProtectedSettingsString.
-Perintah akhir mengubah ekstensi mesin virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $SettingsString dan $ProtectedSettingsString.
-Perintah menentukan informasi lain yang diperlukan yang menyertakan penerbit dan tipe ekstensi.
+Perintah akhir memodifikasi ekstensi komputer virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $SettingsString dan $ProtectedSettingsString.
+Perintah menentukan informasi lain yang diperlukan yang menyertakan penerbit dan jenis ekstensi.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticUpgrade
-Menunjukkan apakah ekstensi harus dimutakhirkan secara otomatis oleh platform jika ada versi ekstensi yang lebih baru yang tersedia.
+Menunjukkan apakah ekstensi harus ditingkatkan secara otomatis oleh platform jika ada versi ekstensi yang lebih baru yang tersedia.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Menentukan tipe ekstensi.
+Menentukan jenis ekstensi.
 
 ```yaml
 Type: System.String
@@ -146,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
-Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilainya bisa berupa string apa pun yang berbeda dari nilai saat ini.
 Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin maya.
+Menentukan lokasi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi.
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan nama penerbit ekstensi.
-Penerbit menyediakan nama ketika penerbit mendaftarkan ekstensi.
+Penerbit memberikan nama saat penerbit mendaftarkan ekstensi.
 
 ```yaml
 Type: System.String
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
+Menentukan versi ekstensi yang akan digunakan untuk komputer virtual ini.
 
 ```yaml
 Type: System.String
@@ -318,8 +321,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
-Cmdlet ini mengubah ekstensi untuk mesin virtual yang ditentukan parameter ini.
+Menentukan nama komputer virtual.
+Cmdlet ini memodifikasi ekstensi untuk komputer virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -333,8 +336,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

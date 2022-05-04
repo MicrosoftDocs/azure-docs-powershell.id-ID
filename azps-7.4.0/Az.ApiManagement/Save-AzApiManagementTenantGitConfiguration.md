@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/sa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Save-AzApiManagementTenantGitConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Save-AzApiManagementTenantGitConfiguration.md
-ms.openlocfilehash: a12673c6318206f3c51fa87295412bd4ad842314
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e568cc3de4838bbe45c1286204ae4ce6acdd4385
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812430"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144656732"
 ---
 # Save-AzApiManagementTenantGitConfiguration
 
 ## SYNOPSIS
-Menyimpan perubahan dengan membuat komit untuk konfigurasi saat ini.
+Menyimpan perubahan dengan membuat penerapan untuk konfigurasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/save-azapimanagementtenantgitconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,22 +29,22 @@ Save-AzApiManagementTenantGitConfiguration -Context <PsApiManagementContext> -Br
 ```
 
 ## DESCRIPTION
-Cmdlet **Save-AzApiManagementTenantGitConfiguration** menyimpan perubahan dengan membuat komit yang berisi snapshot konfigurasi saat ini ke cabang di repositori.
+Cmdlet **Save-AzApiManagementTenantGitConfiguration** menyimpan perubahan dengan membuat penerapan yang berisi rekam jepret konfigurasi saat ini ke cabang di repositori.
 
 ## EXAMPLES
 
-### Contoh 1: Menyimpan perubahan pada konfigurasi
+### Contoh 1: Menyimpan perubahan ke konfigurasi
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Save-AzApiManagementTenantGitConfiguration -Context $apimContext -Branch 'master' -PassThru
 ```
 
-Perintah ini menyimpan perubahan dengan membuat komit dengan snapshot konfigurasi saat ini ke cabang yang ditentukan di repository.
+Perintah ini menyimpan perubahan dengan membuat penerapan dengan rekam jepret konfigurasi saat ini ke cabang yang ditentukan di repositori.
 
 ## PARAMETERS
 
-### -Branch
-Menentukan nama cabang Git untuk melakukan snapshot konfigurasi saat ini.
+### -Cabang
+Menentukan nama cabang Git untuk menerapkan rekam jepret konfigurasi saat ini.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menentukan bahwa cmdlet ini melakukan database konfigurasi saat ini ke repositori Git, bahkan jika repositori Git memiliki perubahan yang lebih baru yang ditimpa.
+### -Force
+Menentukan bahwa cmdlet ini menerapkan database konfigurasi saat ini ke repositori Git, bahkan jika repositori Git memiliki perubahan yang lebih baru yang ditimpa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

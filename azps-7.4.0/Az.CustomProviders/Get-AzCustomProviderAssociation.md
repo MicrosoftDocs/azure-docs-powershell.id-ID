@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProviderAssociation.md
-ms.openlocfilehash: c816bf94974ed1c9022703aac2eda0f65e5da1fd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ea30838bd673ca2ac6416924ff13a5af5e7547b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875574"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614408"
 ---
 # Get-AzCustomProviderAssociation
 
 ## SYNOPSIS
 Dapatkan asosiasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customproviders/get-azcustomproviderassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan asosiasi.
 Get-AzCustomProviderAssociation -Scope <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzCustomProviderAssociation -Name <String> -Scope <String> [-DefaultProfile <PSObject>]
  [<CommonParameters>]
@@ -52,9 +55,9 @@ Location  Name             Type
 East US 2 MyAssoc   Microsoft.CustomProviders/associations
 ```
 
-Cantumkan semua asosiasi penyedia kustom untuk lingkup tertentu.
+Cantumkan semua asosiasi penyedia kustom untuk cakupan tertentu.
 
-### Contoh 2: Dapatkan asosiasi
+### Contoh 2: Mendapatkan asosiasi
 ```powershell
 Get-AzCustomProviderAssociation -Scope $resourceId -Name MyAssoc
 ```
@@ -65,7 +68,7 @@ Location  Name             Type
 East US 2 MyAssoc   Microsoft.CustomProviders/associations
 ```
 
-Dapatkan detail untuk asosiasi CustomProvider tunggal
+Mendapatkan detail untuk asosiasi CustomProvider tunggal
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.ICustomProvidersIdentity
@@ -99,7 +102,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama asosiasi.
 
 ```yaml
@@ -114,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup asosiasi.
+### -Cakupan
+Ruang lingkup asosiasi.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -154,8 +157,8 @@ INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
-  - `[Scope <String>]`: Lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[Scope <String>]`: Ruang lingkup asosiasi.
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobQueryResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobQueryResult.md
-ms.openlocfilehash: 1dbf5a7a05411229712d06c970715bac844e04bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9acb6b26465bd23da71a073089fdf11e89345b8a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798444"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657378"
 ---
 # Get-AzStorageBlobQueryResult
 
 ## SYNOPSIS
-Menerapkan pernyataan Bahasa Permintaan Terstruktur sederhana (SQL) pada konten blob dan hanya menyimpan subkumpulan data yang dikueri ke file lokal.
+Menerapkan pernyataan Bahasa Permintaan Terstruktur sederhana (SQL) pada konten blob dan hanya menyimpan subset data yang dikueri ke file lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageblobqueryresult) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Cmdlet **Get-AzStorageBlobQueryResult** menerapkan pernyataan Bahasa Permintaan 
 
 ## EXAMPLES
 
-### Contoh 1: Kueri blob
+### Contoh 1: Mengkueri blob
 ```powershell
 PS C:\> $inputconfig = New-AzStorageBlobQueryConfig -AsCsv -HasHeader
 
@@ -73,9 +76,9 @@ BytesScanned FailureCount BlobQueryError
          449            0
 ```
 
-Perintah ini membuat kueri blob secara succsssful dengan konfigurasi input sebagai csv, dan output config sebagai json, dan menyimpan output ke file lokal "c:\resultfile.json".
+Perintah ini mengkueri blob dengan sukses dengan konfigurasi input sebagai csv, dan konfigurasi output sebagai json, dan menyimpan output ke file lokal "c:\resultfile.json".
 
-### Contoh 2: Membuat kueri snapshot blob
+### Contoh 2: Mengkueri rekam jepret blob
 ```powershell
 PS C:\> $blob = Get-AzStorageBlob -Container $containerName -Blob $blobName -SnapshotTime "2020-07-29T11:08:21.1097874Z" -Context $ctx
 
@@ -102,7 +105,7 @@ Name       Description                                                   IsFatal
 ParseError Unexpected token '1' at [byte: 3077737]. Expecting token ','.    True  7270632
 ```
 
-Perintah ini terlebih dahulu mendapatkan objek blob untuk snapshot blob, lalu kueri snapshot blob dan memperlihatkan hasilnya menyertakan kesalahan kueri.
+Perintah ini pertama-tama mendapatkan objek blob untuk rekam jepret blob, lalu mengkueri rekam jepret blob dan menampilkan hasilnya termasuk kesalahan kueri.
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -227,8 +230,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk menimpa file yang sudah ada.
+### -Force
+Paksa untuk menimpa file yang ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,8 +365,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -378,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

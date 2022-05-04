@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageSasDefinitionRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultManagedStorageSasDefinitionRemoval.md
-ms.openlocfilehash: 8e15e1a1e9235e2546608cdbf63f872731e1e0b9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63bfcc03d3bf2b6ee7b5dd93b0b3792f6b256089
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121149"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144655850"
 ---
 # Undo-AzKeyVaultManagedStorageSasDefinitionRemoval
 
 ## SYNOPSIS
-Memulihkan definisi SAS penyimpanan yang dikelola KeyVault yang sebelumnya dihapus.
+Memulihkan definisi SAS penyimpanan yang dikelola KeyVault yang dihapus sebelumnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultmanagedstoragesasdefinitionremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Undo-AzKeyVaultManagedStorageSasDefinitionRemoval [-AccountName] <String>
 ```
 
 ## DESCRIPTION
-Perintah **Undo-AzKeyVaultManagedStorageSasDefinitionRemoval** memulihkan definisi SAS penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan lunak diaktifkan untuk kubah ini, dan upaya untuk memulihkan terjadi selama interval pemulihan.
+Perintah **Undo-AzKeyVaultManagedStorageSasDefinitionRemoval** memulihkan definisi SAS penyimpanan terkelola yang dihapus sebelumnya, asalkan penghapusan sementara diaktifkan untuk vault ini, dan bahwa upaya untuk memulihkan terjadi selama interval pemulihan.
 
 ## EXAMPLES
 
@@ -56,13 +59,13 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Urutan perintah ini menentukan apakah definisi SAS penyimpanan tertentu ada dalam kubah dalam keadaan dihapus; perintah berikutnya memulihkan definisi sas yang dihapus, mengembalikannya ke status aktif.
+Urutan perintah ini menentukan apakah definisi SAS penyimpanan yang ditentukan ada di vault dalam status dihapus; perintah berikutnya memulihkan definisi sas yang dihapus, membawanya kembali ke status aktif.
 
 ## PARAMETERS
 
 ### -AccountName
 Nama akun penyimpanan yang dikelola KeyVault.
-Cmdlet menyusun FQDN definisi SAS penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
+Cmdlet membangun FQDN dari definisi SAS penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan terkelola.
 
 ```yaml
 Type: System.String
@@ -106,9 +109,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi SAS penyimpanan yang dikelola KeyVault.
-Cmdlet menyusun FQDN target dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan terkelola dan nama definisi SAS.
+Cmdlet membangun FQDN target dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan terkelola, dan nama definisi SAS.
 
 ```yaml
 Type: System.String
@@ -123,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

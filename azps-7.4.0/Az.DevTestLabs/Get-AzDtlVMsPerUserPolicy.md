@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerUserPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerUserPolicy.md
-ms.openlocfilehash: 05b457e6e3b314547d482983b5c452507feb02ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 882d5a60aec2f2ac2d4159a379bcdaafc6fe837a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061803"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677554"
 ---
 # Get-AzDtlVMsPerUserPolicy
 
 ## SYNOPSIS
-Mendapatkan mesin virtual per kebijakan pengguna lab di DevTest Labs.
+Mendapatkan komputer virtual per kebijakan pengguna lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlvmsperuserpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzDtlVMsPerUserPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDtlVMsPererPolicy** mendapatkan mesin virtual per kebijakan pengguna lab, yang memungkinkan Anda untuk mengatur jumlah maksimum mesin virtual yang diperbolehkan per pengguna.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan jumlah maksimum mesin virtual yang diperbolehkan per pengguna yang telah Anda tetapkan dalam kebijakan.
+Cmdlet **Get-AzDtlVMsPerUserPolicy** mendapatkan komputer virtual per kebijakan pengguna lab, yang memungkinkan Anda mengatur jumlah maksimum komputer virtual yang diizinkan per pengguna.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan jumlah maksimum komputer virtual yang diizinkan per pengguna yang telah Anda tetapkan dalam kebijakan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Description        :
 Status             : Enabled
 Provisioning State : 
 ```
-Mendapatkan mesin virtual per kebijakan pengguna lab di DevTest Labs.
+Mendapatkan komputer virtual per kebijakan pengguna lab di DevTest Labs.
 
 
 ## PARAMETERS
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mendapatkan mesin virtual per kebijakan pengguna.
+Menentukan nama lab yang cmdlet ini mendapatkan komputer virtual per kebijakan pengguna.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

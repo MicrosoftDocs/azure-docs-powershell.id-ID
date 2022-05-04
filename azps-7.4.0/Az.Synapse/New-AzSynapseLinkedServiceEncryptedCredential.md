@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseLinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseLinkedServiceEncryptedCredential.md
-ms.openlocfilehash: 9730807b5b68325a783efbca23f4344f16ba856e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e511f70d4678ff9706ec5bb3c02d154da7e994d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116055"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144700808"
 ---
 # New-AzSynapseLinkedServiceEncryptedCredential
 
 ## SYNOPSIS
 Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapselinkedserviceencryptedcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,10 +37,10 @@ New-AzSynapseLinkedServiceEncryptedCredential -WorkspaceObject <PSSynapseWorkspa
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzSynapseLinkedServiceEncryptedCredential mengenkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
+cmdlet New-AzSynapseLinkedServiceEncryptedCredential mengenkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
 
 Pastikan prasyarat berikut terpenuhi:
-* Opsi **akses jarak jauh** diaktifkan pada runtime integrasi yang dihosting sendiri.
+* Opsi **akses jarak jauh** diaktifkan pada runtime integrasi yang dihost sendiri.
 * Powershell 7.0 atau yang lebih tinggi digunakan untuk menjalankan cmdlet.
 
 ## EXAMPLES
@@ -55,7 +58,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | New-AzSynapseLinkedServiceEncryptedCredential -IntegrationRuntimeName "IR-LSEncryptedCredential" -DefinitionFile "D:\sqlLinkService.json" > "D:\SynapseEncryptedSQLServerLinkedService.json"
 ```
 
-Perintah ini mengenkripsi kredensial dalam file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi bernama IR-LSEncryptedCredential melalui pipeline.
+Perintah ini mengenkripsi kredensial dalam file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi bernama IR-LSEncryptedCredential melalui alur.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

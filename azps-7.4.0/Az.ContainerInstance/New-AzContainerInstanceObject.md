@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceObject.md
-ms.openlocfilehash: 99ad2713bdf150c7755b1977a823c2ccbaa9ee91
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 745445180f3ca943422032f65a21b931d30d2f12
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142876312"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614498"
 ---
 # New-AzContainerInstanceObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Kontainer
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Membuat objek dalam memori untuk Kontainer
 
 ## EXAMPLES
 
-### Contoh 1: Membuat instance container menggunakan alfin gambar dengan request cpu 1.0 dan request memory 1.5Gb
+### Contoh 1: Membuat instans kontainer menggunakan alphine gambar dengan cpu permintaan 1.0 dan meminta memori 1,5Gb
 ```powershell
 New-AzContainerInstanceObject -Name "test-container" -Image alpine -RequestCpu 1 -RequestMemoryInGb 1.5
 ```
@@ -52,9 +55,9 @@ Name
 test-container
 ```
 
-Membuat instance container menggunakan image alphine dengan request cpu 1.0 dan request memory 1.5Gb
+Membuat instans kontainer menggunakan alphine gambar dengan cpu permintaan 1.0 dan meminta memori 1,5Gb
 
-### Contoh 2: Membuat instance container menggunakan alfin gambar dengan limit cpu 2.0 dan limit memory 2.5Gb
+### Contoh 2: Buat instans kontainer menggunakan alphine gambar dengan batas cpu 2.0 dan batasi memori 2,5Gb
 ```powershell
 New-AzContainerInstanceObject -Image alpine -Name "test-container" -LimitCpu 2 -LimitMemoryInGb 2.5
 ```
@@ -65,9 +68,9 @@ Name
 test-container
 ```
 
-Membuat instance container menggunakan alphine image dengan limit cpu 2.0 dan limit memory 2.5Gb
+Membuat instans kontainer menggunakan alphine gambar dengan batas cpu 2.0 dan batasi memori 2,5Gb
 
-### Contoh 3: Membuat grup wadah dengan contoh kontainer
+### Contoh 3: Membuat grup kontainer dengan instans kontainer
 ```powershell
 $container = New-AzContainerInstanceObject -Name test-container -Image alpine
 New-AzContainerGroup -ResourceGroupName testrg-rg -Name test-cg -Location eastus -Container $container
@@ -79,12 +82,12 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Membuat grup wadah dengan contoh kontainer
+Membuat grup kontainer dengan instans kontainer
 
 ## PARAMETERS
 
-### -Command
-Perintah untuk dijalankan dalam contoh kontainer dalam formulir exec.
+### -Perintah
+Perintah untuk menjalankan di dalam instans kontainer dalam bentuk eksekusi.
 
 ```yaml
 Type: System.String[]
@@ -99,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentVariable
-Variabel lingkungan yang diatur dalam instance kontainer.
-Untuk membangun, lihat bagian CATATAN untuk properti ENVIRONMENTVARIABLE dan membuat tabel hash.
+Variabel lingkungan yang akan diatur dalam instans kontainer.
+Untuk membuat, lihat bagian CATATAN untuk properti ENVIRONMENTVARIABLE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IEnvironmentVariable[]
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Gambar
-Nama gambar yang digunakan untuk membuat contoh kontainer.
+Nama gambar yang digunakan untuk membuat instans kontainer.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -LimitCpu
-Batas CPU dari contoh kontainer ini.
+Batas CPU instans kontainer ini.
 
 ```yaml
 Type: System.Double
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -LimitMemoryInGb
-Batas memori dalam GB dari instance container ini.
+Batas memori dalam GB dari instans kontainer ini.
 
 ```yaml
 Type: System.Double
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -LimitsGpuCount
-Hitungan sumber daya GPU.
+Jumlah sumber daya GPU.
 
 ```yaml
 Type: System.Int32
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeExecCommand
-Perintah untuk dijalankan dalam wadah.
+Perintah untuk menjalankan dalam kontainer.
 
 ```yaml
 Type: System.String[]
@@ -220,8 +223,8 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeHttpGetHttpHeader
-Header HTTP untuk penyelidikan keaktifan.
-Untuk membangun, lihat bagian CATATAN untuk properti LIVENESSPROBEHTTPGETHTTPHEADER dan membuat tabel hash.
+Header HTTP untuk pemeriksaan keaktivaan.
+Untuk membuat, lihat bagian CATATAN untuk properti LIVENESSPROBEHTTPGETHTTPHEADER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IHttpHeader[]
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeHttpGetPath
-Jalan menuju penyelidikan.
+Jalur menuju penyelidikan.
 
 ```yaml
 Type: System.String
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeHttpGetPort
-Nomor port untuk diprobes.
+Nomor port untuk diselidiki.
 
 ```yaml
 Type: System.Int32
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeHttpGetScheme
-Skemanya.
+Skema.
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeInitialDelaySecond
-Penundaan awal detik.
+Detik penundaan awal.
 
 ```yaml
 Type: System.Int32
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -LivenessProbeTimeoutSecond
-Waktu habis detik.
+Detik waktu habis.
 
 ```yaml
 Type: System.Int32
@@ -340,8 +343,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kontainer yang disediakan pengguna.
+### -Name
+Nama instans kontainer yang disediakan pengguna.
 
 ```yaml
 Type: System.String
@@ -356,8 +359,8 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port yang diekspos pada instance container.
-Untuk membangun, lihat bagian CATATAN untuk properti PORT dan membuat tabel hash.
+Port yang terekspos di instans kontainer.
+Untuk membuat, lihat bagian CATATAN untuk properti PORT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IContainerPort[]
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeExecCommand
-Perintah untuk dijalankan dalam wadah.
+Perintah untuk menjalankan dalam kontainer.
 
 ```yaml
 Type: System.String[]
@@ -402,8 +405,8 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeHttpGetHttpHeader
-Header HTTP untuk penyelidikan kesiapan.
-Untuk membangun, lihat bagian CATATAN untuk properti READINESSPROBEHTTPGETHTTPHEADER dan membuat tabel hash.
+Header HTTP untuk pemeriksaan kesiapan.
+Untuk membuat, lihat bagian CATATAN untuk properti READINESSPROBEHTTPGETHTTPHEADER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IHttpHeader[]
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeHttpGetPath
-Jalan menuju penyelidikan.
+Jalur menuju penyelidikan.
 
 ```yaml
 Type: System.String
@@ -433,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeHttpGetPort
-Nomor port untuk diprobes.
+Nomor port untuk diselidiki.
 
 ```yaml
 Type: System.Int32
@@ -448,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeHttpGetScheme
-Skemanya.
+Skema.
 
 ```yaml
 Type: System.String
@@ -463,7 +466,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeInitialDelaySecond
-Penundaan awal detik.
+Detik penundaan awal.
 
 ```yaml
 Type: System.Int32
@@ -508,7 +511,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadinessProbeTimeoutSecond
-Waktu habis detik.
+Detik waktu habis.
 
 ```yaml
 Type: System.Int32
@@ -523,7 +526,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestCpu
-Permintaan CPU dari contoh kontainer ini.
+Permintaan CPU instans kontainer ini.
 
 ```yaml
 Type: System.Double
@@ -538,7 +541,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestMemoryInGb
-Permintaan memori dalam GB contoh kontainer ini.
+Permintaan memori dalam GB dari instans kontainer ini.
 
 ```yaml
 Type: System.Double
@@ -553,7 +556,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestsGpuCount
-Hitungan sumber daya GPU.
+Jumlah sumber daya GPU.
 
 ```yaml
 Type: System.Int32
@@ -583,8 +586,8 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeMount
-Volume akan terpasang pada instance container.
-Untuk membangun, lihat bagian CATATAN untuk properti VOLUMEMOUNT dan membuat tabel hash.
+Mount volume yang tersedia untuk instans kontainer.
+Untuk membuat, lihat bagian CATATAN untuk properti VOLUMEMOUNT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IVolumeMount[]
@@ -599,7 +602,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -616,27 +619,27 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ENVIRONMENTVARIABLE <IEnvironmentVariable[]>: Variabel lingkungan yang diatur dalam instance kontainer.
+ENVIRONMENTVARIABLE <IEnvironmentVariable[]>: Variabel lingkungan yang akan diatur dalam instans kontainer.
   - `Name <String>`: Nama variabel lingkungan.
   - `[SecureValue <String>]`: Nilai variabel lingkungan yang aman.
   - `[Value <String>]`: Nilai variabel lingkungan.
 
-LIVENESSPROBEHTTPGETHTTPHEADER <IHttpHeader[]>: Header HTTP untuk penyelidikan liveness.
+LIVENESSPROBEHTTPGETHTTPHEADER <IHttpHeader[]>: Header HTTP untuk pemeriksaan keaktifan.
   - `[Name <String>]`: Nama header.
   - `[Value <String>]`: Nilai header.
 
-PORT <IContainerPort[]>: Port yang terbuka pada instance container.
-  - `Port <Int32>`: Nomor port yang diekspos dalam grup kontainer.
+PORT <IContainerPort[]>: Port yang diekspos pada instans kontainer.
+  - `Port <Int32>`: Nomor port yang terekspos dalam grup kontainer.
   - `[Protocol <ContainerNetworkProtocol?>]`: Protokol yang terkait dengan port.
 
-READINESSPROBEHTTPGETHTTPHEADER <IHttpHeader[]>: Header HTTP untuk penyelidikan kesiapan.
+READINESSPROBEHTTPGETHTTPHEADER <IHttpHeader[]>: Header HTTP untuk pemeriksaan kesiapan.
   - `[Name <String>]`: Nama header.
   - `[Value <String>]`: Nilai header.
 
-VOLUMEMOUNT <IVolumeMount[]>: Volume akan terpasang pada instance container.
-  - `MountPath <String>`: Jalur dalam wadah tempat volume harus dipasang. Tidak boleh mengandung titik dua (:).
-  - `Name <String>`: Nama dudukan volume.
-  - `[ReadOnly <Boolean?>]`: Bendera menunjukkan apakah dudukan volume bersifat baca-saja.
+VOLUMEMOUNT <IVolumeMount[]>: Volume dipasang tersedia untuk instans kontainer.
+  - `MountPath <String>`: Jalur dalam kontainer tempat volume harus dipasang. Tidak boleh ada titik dua (:).
+  - `Name <String>`: Nama pemasangan volume.
+  - `[ReadOnly <Boolean?>]`: Bendera yang menunjukkan apakah pemasangan volume bersifat baca-saja.
 
 ## RELATED LINKS
 

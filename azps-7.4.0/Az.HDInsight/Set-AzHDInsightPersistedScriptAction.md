@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightPersistedScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightPersistedScriptAction.md
-ms.openlocfilehash: 97f0330ac308311539cda0733a53e1fb7893e165
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f99d2dda1603492b5215eb348b27d0bdaecc8dfe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227403"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614048"
 ---
 # Set-AzHDInsightPersistedScriptAction
 
 ## SYNOPSIS
-Mengatur tindakan skrip yang dijalankan sebelumnya menjadi tindakan skrip tetap.
+Mengatur tindakan skrip yang dijalankan sebelumnya menjadi tindakan skrip yang dipertahankan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightpersistedscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,20 +29,20 @@ Set-AzHDInsightPersistedScriptAction [-ClusterName] <String> [-ScriptExecutionId
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHDInsightPersistedScriptAction** mengatur tindakan skrip yang dijalankan sebelumnya menjadi tindakan skrip tetap.
-Tindakan skrip yang ditentukan harus telah berhasil sebelumnya.
-Tindakan skrip akan berjalan setiap kali kluster Azure HDInsight diskalakan.
+Cmdlet **Set-AzHDInsightPersistedScriptAction** menetapkan tindakan skrip yang dijalankan sebelumnya menjadi tindakan skrip yang bertahan.
+Tindakan skrip yang ditentukan sebelumnya harus berhasil.
+Tindakan skrip akan berjalan setiap kali kluster Azure HDInsight ditingkatkan skalanya.
 
 ## EXAMPLES
 
-### Contoh 1: Atur tindakan skrip yang sebelumnya berhasil agar tetap ada, atau dijalankan pada skala kluster
+### Contoh 1: Atur tindakan skrip yang berhasil sebelumnya untuk dipertahankan, atau jalankan pada peningkatan skala kluster
 ```powershell
 Set-AzHDInsightPersistedScriptAction `
             -ClusterName "your-hadoop-001" `
             -ScriptExecutionId "<id>"
 ```
 
-Perintah ini mengatur tindakan skrip yang sebelumnya berhasil menjadi tindakan skrip tetap.
+Perintah ini menetapkan tindakan skrip yang berhasil sebelumnya menjadi tindakan skrip yang bertahan.
 
 ## PARAMETERS
 
@@ -89,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptExecutionId
-Menentukan ID eksekusi tindakan skrip yang akan dipromosikan ke tetap ada.
-Tindakan skrip ini harus berhasil agar dapat dipromosikan.
+Menentukan ID eksekusi tindakan skrip untuk dipromosikan ke bertahan.
+Tindakan skrip ini harus berhasil untuk dipromosikan.
 Anda dapat menemukan ID eksekusi tindakan skrip menggunakan Get-AzHDInsightScriptActionHistory.
 
 ```yaml
@@ -106,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

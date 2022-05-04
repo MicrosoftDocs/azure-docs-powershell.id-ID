@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzEnvironment.md
-ms.openlocfilehash: 996f841fde24a2cae9ff17df173b53c940df2d72
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3d54d642db4c7862e2332186bfbdecceb9338932
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688896"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657145"
 ---
 # Get-AzEnvironment
 
 ## SYNOPSIS
-Dapatkan titik akhir dan metadata untuk contoh layanan Azure.
+Dapatkan titik akhir dan metadata untuk instans layanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzEnvironment [[-Name] <String>] [-DefaultProfile <IAzureContextContainer>] 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEnvironment mendapatkan titik akhir dan metadata untuk contoh layanan Azure.
+Cmdlet Get-AzEnvironment mendapatkan titik akhir dan metadata untuk instans layanan Azure.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ AzureCloud        https://management.azure.com/         https://login.microsofto
 AzureChinaCloud   https://management.chinacloudapi.cn/  https://login.chinacloudapi.cn/    Built-in
 ```
 
-Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
+Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
 
 ### Contoh 2: Mendapatkan lingkungan AzureCloud
 ```powershell
@@ -55,7 +58,7 @@ Name       Resource Manager Url          ActiveDirectory Authority          Type
 AzureCloud https://management.azure.com/ https://login.microsoftonline.com/ Built-in
 ```
 
-Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
+Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureCloud (default).
 
 ### Contoh 3: Mendapatkan lingkungan AzureChinaCloud
 ```powershell
@@ -96,7 +99,7 @@ AzureSynapseAnalyticsEndpointSuffix               : dev.azuresynapse.azure.cn
 AzureSynapseAnalyticsEndpointResourceId           : https://dev.azuresynapse.azure.cn
 ```
 
-Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureChinaCloud.
+Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureChinaCloud.
 
 ### Contoh 4: Mendapatkan lingkungan AzureUSGovernment
 ```powershell
@@ -109,7 +112,7 @@ Name              Resource Manager Url                  ActiveDirectory Authorit
 AzureUSGovernment https://management.usgovcloudapi.net/ https://login.microsoftonline.us/ Built-in
 ```
 
-Contoh ini memperlihatkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
+Contoh ini menunjukkan cara mendapatkan titik akhir dan metadata untuk lingkungan AzureUSGovernment.
 
 ## PARAMETERS
 
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama instans Azure yang akan didapatkan.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -160,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzEnvironment](./Add-AzEnvironment.md)
 
-[Hapus-AzEnvironment](./Remove-AzEnvironment.md)
+[Remove-AzEnvironment](./Remove-AzEnvironment.md)
 
 [Set-AzEnvironment](./Set-AzEnvironment.md)
 

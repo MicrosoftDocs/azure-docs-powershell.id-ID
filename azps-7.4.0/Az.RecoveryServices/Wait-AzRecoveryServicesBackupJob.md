@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Wait-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Wait-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: 69c57667a087f71c1003df60fd621354c2e5bb86
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a88456cc5225e6228397500b888dd81e01139a3e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310239"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613634"
 ---
 # Wait-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 
 Menunggu pekerjaan Pencadangan selesai.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/wait-azrecoveryservicesbackupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,12 +34,12 @@ Wait-AzRecoveryServicesBackupJob [-Job] <Object> [[-Timeout] <Int64>] [-VaultId 
 Cmdlet **Wait-AzRecoveryServicesBackupJob** menunggu pekerjaan Azure Backup selesai.
 Pekerjaan pencadangan dapat memakan waktu lama.
 Jika Anda menjalankan pekerjaan pencadangan sebagai bagian dari skrip, Anda mungkin ingin memaksa skrip untuk menunggu pekerjaan selesai sebelum berlanjut ke tugas lain.
-Skrip yang menyertakan cmdlet ini bisa lebih sederhana daripada skrip yang melakukan polling layanan Backup untuk status pekerjaan.
+Skrip yang menyertakan cmdlet ini bisa lebih sederhana dari yang melakukan polling layanan Backup untuk status pekerjaan.
 Atur konteks vault dengan menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
-### Contoh 1: Tunggu pekerjaan selesai
+### Contoh 1: Tunggu hingga pekerjaan selesai
 
 ```powershell
 $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"

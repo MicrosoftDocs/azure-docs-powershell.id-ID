@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIRemoteSupport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIRemoteSupport.md
-ms.openlocfilehash: 781b019c79e8eb6d8b0b16485b0b500452abc597
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cdc9ab12925a6e1a52703139f022d00cc1bf33f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116829"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613328"
 ---
 # Enable-AzStackHCIRemoteSupport
 
 ## SYNOPSIS
 Mengaktifkan Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/enable-azstackhciremotesupport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Enable-AzStackHCIRemoteSupport [-AccessLevel] <String> [[-ExpireInMinutes] <Int3
 ```
 
 ## DESCRIPTION
-Mengaktifkan Dukungan Jarak Jauh memungkinkan pengguna Dukungan Microsoft yang sah untuk mengakses perangkat dari jarak jauh untuk diagnostik atau perbaikan tergantung pada tingkat akses yang diberikan.
+Mengaktifkan Dukungan Jarak Jauh memungkinkan pengguna Dukungan Microsoft yang berwenang untuk mengakses perangkat dari jarak jauh untuk diagnostik atau perbaikan tergantung pada tingkat akses yang diberikan.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Enable-AzStackHCIRemoteSupport -AccessLevel DiagnosticsRepair -ExpireInMinutes 1
 ## PARAMETERS
 
 ### -AccessLevel
-Mengontrol operasi jarak jauh yang bisa dilakukan. Ini bisa berupa Diagnostik atau DiagnosticsAndRepair.
+Mengontrol operasi jarak jauh yang dapat dilakukan. Ini bisa berupa Diagnostik atau DiagnosticsAndRepair.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreeToRemoteSupportConsent
-Jika diatur ke true, maka merekam persetujuan pengguna sebagaimana disediakan dan dilanjutkan tanpa perintah.
+Jika diatur ke true, maka rekam persetujuan pengguna sebagaimana disediakan dan dilanjutkan tanpa perintah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpireInMinutes
-Menentukan dukungan jarak jauh kedaluwarsa dalam hari. Defaultnya 480 menit (8 jam).
+Menentukan kedaluwarsa dukungan jarak jauh dalam hari. Default ke 480 menit (8 jam).
 
 ```yaml
 Type: System.Int32
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

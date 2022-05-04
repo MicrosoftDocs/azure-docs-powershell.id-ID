@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorTestConfigurationObject.md
-ms.openlocfilehash: 7cc05d29af2d91c816fe17eb7d84941562c8749a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a6529302b1be6fb4e436b5113789ca34db428225
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805068"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677230"
 ---
 # New-AzNetworkWatcherConnectionMonitorTestConfigurationObject
 
 ## SYNOPSIS
-Membuat konfigurasi uji monitor koneksi.
+Membuat konfigurasi pengujian pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitortestconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzNetworkWatcherConnectionMonitorTestConfigurationObject -Name <String> -Tes
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitorTestConfigurationObject membuat konfigurasi uji monitor koneksi.
+Cmdlet New-AzNetworkWatcherConnectionMonitorTestConfigurationObject membuat konfigurasi pengujian monitor koneksi.
 
 ## EXAMPLES
 
@@ -79,8 +82,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama konfigurasi uji monitor koneksi.
+### -Name
+Nama konfigurasi pengujian pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredIPVersion
-Versi IP pilihan untuk digunakan dalam evaluasi uji. Monitor koneksi mungkin memilih untuk menggunakan versi lain tergantung pada parameter lainnya.
+Versi IP pilihan untuk digunakan dalam evaluasi pengujian. Pemantau koneksi dapat memilih untuk menggunakan versi yang berbeda tergantung pada parameter lain.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessThresholdChecksFailedPercent
-Persentase maksimum dari pemeriksaan yang gagal diizinkan untuk pengujian dievaluasi sesukses mungkin.
+Persentase maksimum pemeriksaan yang gagal diizinkan untuk pengujian untuk dievaluasi sebagai berhasil.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessThresholdRoundTripTimeMs
-Waktu pulang pergi maksimum dalam milidetik diizinkan untuk ujian agar berhasil dievaluasi.
+Waktu round-trip maksimum dalam milidetik yang diizinkan untuk pengujian untuk dievaluasi sebagai berhasil.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -169,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -201,11 +204,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

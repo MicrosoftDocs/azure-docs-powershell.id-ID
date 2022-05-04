@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryWebhook.md
-ms.openlocfilehash: 07bee2136788064de1096575d9f31cd39448adab
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d235d5f0e49591cd6b69aa489fd52ea91014a5a9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064845"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653188"
 ---
 # New-AzContainerRegistryWebhook
 
 ## SYNOPSIS
-Membuat webhook registri wadah.
+Membuat webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistrywebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzContainerRegistryWebhook [-Name] <String> [-ResourceGroupName] <String> [-
  [<CommonParameters>]
 ```
 
-### RegistriObjectParameterSet
+### RegistryObjectParameterSet
 ```
 New-AzContainerRegistryWebhook [-Name] <String> [-Uri] <Uri> [-Action] <String[]>
  -Registry <PSContainerRegistry> [-Header <Hashtable>] [-Tag <Hashtable>] [-Status <String>] [-Scope <String>]
@@ -42,7 +45,7 @@ New-AzContainerRegistryWebhook [-Name] <String> [-Uri] <Uri> [-Action] <String[]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzContainerRegistryWebhook membuat webhook registri wadah.
+Cmdlet New-AzContainerRegistryWebhook membuat webhook registri kontainer.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Name            Location   Status     Scope           Actions         Provisioni
 webhook001      westus     enabled    foo:*           {push, delete}  Succeeded
 ```
 
-Membuat webhook registri wadah.
+Membuat webhook registri kontainer.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Webhook.
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Registri
-Objek Registri Kontainer.
+Objek Container Registry.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Kontainer.
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -199,8 +202,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup Webhook.
+### -Cakupan
+Cakupan webhook.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Webhook.
+Tag webhook.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Layanan URI untuk webhook untuk memposting pemberitahuan.
+URI layanan untuk webhook untuk memposting pemberitahuan.
 
 ```yaml
 Type: System.Uri
@@ -260,8 +263,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -312,4 +315,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzContainerRegistryWebhook](Remove-AzContainerRegistryWebhook.md)
 
-[Uji-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)
+[Test-AzContainerRegistryWebhook](Test-AzContainerRegistryWebhook.md)

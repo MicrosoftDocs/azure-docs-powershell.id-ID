@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
-ms.openlocfilehash: a2d528da646c3a59077e193331f47b74e56076eb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 04c043e648dc93c8dc54033e03e40d78411d1ebd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739998"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144702282"
 ---
 # Get-AzADGroup
 
@@ -18,6 +18,9 @@ ms.locfileid: "142739998"
 Mencantumkan entitas dari grup atau mendapatkan entitas dari grup menurut kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Get-AzADGroup -First 10
 
 Mencantumkan 10 grup pertama
 
-### Contoh 3: Dapatkan grup menurut id objek
+### Contoh 3: Mendapatkan grup menurut id objek
 ```powershell
 Get-AzADGroup -ObjectId $id -Select groupTypes -AppendSelected
 ```
@@ -90,9 +93,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KonsistensiLevel
+### -ConsistencyLevel
 Menunjukkan tingkat konsistensi yang diminta.
-URL dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
+URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Orderby
-Item pesanan menurut nilai properti
+Mengurutkan item menurut nilai properti
 
 ```yaml
 Type: System.String[]
@@ -211,7 +214,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pencarian
+### -Cari
 Mencari item menurut frasa pencarian
 
 ```yaml
@@ -256,7 +259,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

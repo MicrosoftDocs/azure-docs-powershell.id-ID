@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemAcl.md
-ms.openlocfilehash: cf15a72d9d4d3e4900eecc7934d91b99c1500b60
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ba7a2093602e93b3628fd25e89eced7fe8a3dcfd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809550"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144678796"
 ---
 # Set-AzDataLakeStoreItemAcl
 
 ## SYNOPSIS
-Mengubah ACL file atau folder di Penyimpanan Data Lake.
+Memodifikasi ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemacl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzDataLakeStoreItemAcl [-Account] <String> [-Path] <DataLakeStorePathInstanc
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeStoreItemAcl** mengubah daftar kontrol akses (ACL) file atau folder di Data Lake Store.
+Cmdlet **Set-AzDataLakeStoreItemAcl** memodifikasi daftar kontrol akses (ACL) file atau folder di Data Lake Store.
 
 ## EXAMPLES
 
@@ -38,21 +41,21 @@ Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/MyFiles/Test.txt" -
 ```
 
 Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya dalam variabel $ACL.
-Perintah kedua mengatur ACL untuk file Test.txt ke file di $ACL.
+Perintah kedua mengatur ACL untuk file Test.txt ke yang ada di $ACL.
 
-### Contoh 2: Mengatur ACL untuk folder secara rekurtif
+### Contoh 2: Mengatur ACL untuk folder secara rekursif
 ```powershell
 $ACL = Get-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path /Folder1
 Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/Folder2" -Acl $ACL -Recurse -Concurrency 128
 ```
 
-Perintah pertama mendapatkan ACL untuk folder direktori1 akun ContosoADL, lalu menyimpannya dalam variabel $ACL.
-Perintah kedua mengatur ACL secara rekurtif ke Folder2 dan sub direktori dan filenya ke folder dalam $ACL.
+Perintah pertama mendapatkan ACL untuk direktori Folder1 dari akun ContosoADL, lalu menyimpannya dalam variabel $ACL.
+Perintah kedua mengatur ACL secara rekursif ke Folder2 dan sub direktori dan filenya ke yang ada di $ACL.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa ACL yang dihasilkan harus dikembalikan.
+Menunjukkan ACL yang dihasilkan harus dikembalikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake dari file atau folder, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari file atau folder, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Berulang
-Menunjukkan ACL untuk diatur secara rekursif ke subdirektori dan file anak
+### -Rekursi
+Menunjukkan ACL yang akan diatur secara rekursif ke subdirektori dan file anak
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowProgress
-Jika lolos, status kemajuan akan ditampilkan. Hanya berlaku ketika rangkaian Acl rekurtif selesai.
+Jika lulus maka status kemajuan ditampilkan. Hanya berlaku saat set Acl rekursif selesai.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,8 +174,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

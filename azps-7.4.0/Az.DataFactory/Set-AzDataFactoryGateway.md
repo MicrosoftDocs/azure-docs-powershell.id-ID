@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryGateway.md
-ms.openlocfilehash: 8df587c57eb9a5666ee3b730974f5f149346c9d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5b8281677d9ff19f1fac36b0055231450c47df94
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142942337"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632834"
 ---
 # Set-AzDataFactoryGateway
 
 ## SYNOPSIS
 Mengatur deskripsi untuk gateway di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactorygateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzDataFactoryGateway [-DataFactory] <PSDataFactory> [-Name] <String> [-Descr
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataFactoryGateway** mengatur deskripsi untuk gateway tertentu di Azure Data Factory.
+Cmdlet **Set-AzDataFactoryGateway** mengatur deskripsi untuk gateway yang ditentukan di Azure Data Factory.
 
 ## EXAMPLES
 
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama gateway untuk mengatur deskripsi.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGateway
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
@@ -174,6 +177,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzDataFactoryGateway](./New-AzDataFactoryGateway.md)
 
-[Hapus-AzDataFactoryGateway](./Remove-AzDataFactoryGateway.md)
+[Remove-AzDataFactoryGateway](./Remove-AzDataFactoryGateway.md)
 
 

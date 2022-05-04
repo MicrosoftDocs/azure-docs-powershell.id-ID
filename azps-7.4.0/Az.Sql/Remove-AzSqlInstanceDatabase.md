@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceDatabase.md
-ms.openlocfilehash: c5b06b66d19852077cd0496313d7536f117f2a1b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7c45d2ffd528b7c03c2215de4aa1331187dab60
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799146"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613310"
 ---
 # Remove-AzSqlInstanceDatabase
 
 ## SYNOPSIS
 Menghapus database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstancedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Database Instans untuk dihapus
+Objek Database Instans yang akan dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseModel
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: System.String
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Database Instans Azure SQL untuk dihapus.
+### -Name
+Nama Database Instans Azure SQL yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek Database Instans untuk dihapus
+Id sumber daya objek Database Instans yang akan dihapus
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

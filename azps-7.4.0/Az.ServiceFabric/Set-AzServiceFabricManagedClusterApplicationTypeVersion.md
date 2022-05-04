@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: a6c35e13a49d04a975b73e6c31f347d092d7ba18
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e94d137476505e433d0c93e1737f8010b51f8e26
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142866250"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606380"
 ---
 # Set-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
-Perbarui versi tipe aplikasi yang dikelola kain layanan. Ini memungkinkan Anda memperbarui tag dan Url paket. Hanya mendukung ARM versi tipe aplikasi yang digunakan.
+Memperbarui versi jenis aplikasi terkelola service fabric. Ini memungkinkan Anda memperbarui tag dan Url paket. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzServiceFabricManagedClusterApplicationTypeVersion [-PackageUrl <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet ini dapat digunakan untuk memperbarui tag versi tipe aplikasi.
+Cmdlet ini dapat digunakan untuk memperbarui tag versi jenis aplikasi.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ $packageUrl = "https://sftestapp.blob.core.windows.net/sftestapp/testAppType_v1.
 Set-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Version $version -Tags $newTags -PackageUrl $packageUrl -Verbose
 ```
 
-Contoh ini akan memperbarui tag dan packageUrl versi tipe aplikasi terkelola.
+Contoh ini akan memperbarui tag dan packageUrl versi aplikasi terkelola versi "v1".
 
 ### Contoh 2
 ```powershell
@@ -69,7 +72,7 @@ $appType = Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGrou
 $appType | Set-AzServiceFabricManagedClusterApplicationTypeVersion -Tags $newTags -PackageUrl $packageUrl -Verbose
 ```
 
-Contoh ini akan memperbarui tag dan packageUrl versi tipe aplikasi terkelola.
+Contoh ini akan memperbarui tag dan packageUrl versi aplikasi terkelola versi "v1".
 
 ### Contoh 3
 ```powershell
@@ -79,12 +82,12 @@ $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroup
 Set-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceId $resourceId -Tags $newTags -PackageUrl $packageUrl -Verbose
 ```
 
-Contoh ini akan memperbarui detail tipe aplikasi yang dikelola dengan ID Sumber Daya ARM yang ditentukan.
+Contoh ini akan memperbarui detail jenis aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lanjutkan tanpa perintah
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya versi tipe aplikasi terkelola.
+Sumber daya versi jenis aplikasi terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedApplicationTypeVersion
@@ -158,8 +161,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe aplikasi yang dikelola
+### -Name
+Tentukan nama jenis aplikasi terkelola
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari versi tipe aplikasi yang dikelola.
+Arm ResourceId dari versi jenis aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi tipe aplikasi yang dikelola
+Tentukan versi jenis aplikasi terkelola
 
 ```yaml
 Type: System.String
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

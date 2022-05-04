@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
-ms.openlocfilehash: 9fb65fb8386e3bb4f3f558224e4ea32c242cbebe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2689c303822ea7e2d5c41efc8293732b7581ee96
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873018"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707088"
 ---
 # Get-AzAutoscaleHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat Autoscale.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azautoscalehistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ Get-AzAutoscaleHistory [-ResourceId <String>] [-StartTime <DateTime>] [-EndTime 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutoscaleHistory** mendapatkan riwayat kejadian yang terkait dengan pengaturan Skala Otomatis.
+Cmdlet **Get-AzAutoscaleHistory** mendapatkan riwayat peristiwa yang terkait dengan pengaturan Autoscale.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua acara yang terkait dengan langganan
+### Contoh 1: Mendapatkan semua peristiwa yang terkait dengan langganan
 ```
 Get-AzAutoscaleHistory -StartTime 2015-02-09T18:35:00 -EndTime 2015-02-09T18:40:00 -DetailedOutput
 ```
 
-Perintah ini mendapatkan semua kejadian terkait Skala Otomatis yang terkait dengan langganan saat ini.
+Perintah ini mendapatkan semua peristiwa terkait Autoscale yang terkait dengan langganan saat ini.
 
 ### Contoh 2: GetAutoscaleHistory untuk sumber daya tertentu
 ```powershell
@@ -177,7 +180,7 @@ SubscriptionId       : b93fb07a-6f93-30be-bf3e-4f0deca15f4f
 SubStatus            :
 ```
 
-Perintah ini mendapatkan semua kejadian terkait skala otomatis yang terkait dengan sumber daya tertentu yang diidentifikasi oleh ID sumber daya (pada dasarnya, ResourceUri).
+Perintah ini mendapatkan semua peristiwa terkait Skala Otomatis yang terkait dengan sumber daya tertentu yang diidentifikasi oleh ID sumber daya (pada dasarnya, ResourceUri).
 
 ## PARAMETERS
 
@@ -212,8 +215,8 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedOutput
-Menunjukkan bahwa operasi ini menyertakan output mendetail.
-Jika Anda tidak menentukan parameter ini, output akan diringkas.
+Menunjukkan bahwa operasi ini menyertakan output terperinci.
+Jika Anda tidak menentukan parameter ini, output akan dirangkum.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Menentukan waktu akhir kueri dalam waktu lokal.
+Menentukan waktu akhir kueri di waktu lokal.
 Defaultnya adalah waktu saat ini.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu mulai kueri dalam waktu lokal.
+Menentukan waktu mulai kueri di waktu setempat.
 Parameter ini bersifat opsional.
 Defaultnya adalah waktu lokal saat ini dikurangi satu jam.
 
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ### -Status
 Menentukan filter menurut status.
 Parameter ini bersifat opsional.
-Kesalahan adalah string kosong (misalnya tidak ada filter)
+Kesalahannya adalah string kosong (yaitu tidak ada filter)
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

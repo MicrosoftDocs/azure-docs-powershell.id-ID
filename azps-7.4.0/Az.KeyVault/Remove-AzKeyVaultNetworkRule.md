@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultNetworkRule.md
-ms.openlocfilehash: c688ccbc51cf6025f4499925a980e725268f7508
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77142ecaa383271e53dc5f00c8999f74a2aba2ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000513"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707214"
 ---
 # Remove-AzKeyVaultNetworkRule
 
 ## SYNOPSIS
-Menghapus aturan jaringan dari kubah kunci.
+Menghapus aturan jaringan dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzKeyVaultNetworkRule [-ResourceId] <String> [-IpAddressRange <String[]>]
 ```
 
 ## DESCRIPTION
-Menghapus aturan jaringan dari kubah kunci.
+Menghapus aturan jaringan dari brankas kunci.
 
 ## EXAMPLES
 
@@ -89,7 +92,7 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini menghapus aturan jaringan dari kubah yang ditentukan, asalkan aturan ditemukan cocok dengan alamat IP tertentu dan pengidentifikasi sumber daya jaringan virtual.
+Perintah ini menghapus aturan jaringan dari vault yang ditentukan, asalkan aturan ditemukan cocok dengan alamat IP yang ditentukan dan pengidentifikasi sumber daya jaringan virtual.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka akan mengembalikan objek kubah kunci yang diperbarui.
+Jika sakelar ini ditentukan, maka akan mengembalikan objek brankas kunci yang diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang aturan jaringannya sedang diubah.
+Menentukan nama grup sumber daya yang terkait dengan brankas kunci yang aturan jaringannya sedang dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci yang aturan jaringannya sedang diubah.
+Menentukan nama brankas kunci yang aturan jaringannya sedang dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan virtual yang diizinkan dari aturan jaringan.
 
 ```yaml
 Type: System.String[]
@@ -231,8 +234,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

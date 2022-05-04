@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceInstanceView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceInstanceView.md
-ms.openlocfilehash: e6493d25ac77bf9a8b04d8e9f27f1c45097a376d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c37266e2f26b0b6972c884f6206ea6dc859e5811
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066411"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144656660"
 ---
 # Get-AzCloudServiceInstanceView
 
 ## SYNOPSIS
 Mendapatkan status layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceinstanceview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Mendapatkan status layanan awan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tampilan instans layanan awan
+### Contoh 1: Mendapatkan tampilan instans layanan cloud
 ```powershell
 $cloudServiceInstanceView = Get-AzCloudServiceInstanceView -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
 
@@ -79,7 +82,7 @@ $cloudServiceInstanceView.ToJsonString()
 }
 ```
 
-Cmdlet ini mendapatkan tampilan instans layanan awan bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Cmdlet ini mendapatkan tampilan instans layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -129,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

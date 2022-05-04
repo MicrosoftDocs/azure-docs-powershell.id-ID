@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
-ms.openlocfilehash: 067ec7d8a41e926f30a9b72dab4a316266e226e4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e9e0a114468de94ca5149c0a37b4fe6f159d7505
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739818"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632258"
 ---
 # Set-AzManagedApplication
 
 ## SYNOPSIS
-Pembaruan aplikasi terkelola
+Memperbarui aplikasi terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/set-azmanagedapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,13 +48,13 @@ Cmdlet **Set-AzManagedApplication** memperbarui aplikasi terkelola
 Set-AzManagedApplication -ResourceId "/subscriptions/mySubId/resourcegroups/myRG/Microsoft.Solutions/applications/myApp" -Description "Updated description here"
 ```
 
-Perintah ini memperbarui deskripsi aplikasi yang dikelola
+Perintah ini memperbarui deskripsi aplikasi terkelola
 
 ## PARAMETERS
 
 ### -ApiVersion
-Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
-Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai yang terbaru yang tersedia.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jenis
-Jenis aplikasi yang dikelola.
+Jenis aplikasi terkelola.
 Salah satu marketplace atau servicecatalog
 
 ```yaml
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama aplikasi yang dikelola.
+### -Name
+Nama aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-String parameter yang diformat JSON untuk aplikasi terkelola.
-Ini bisa berupa jalur ke nama file atau uri yang berisi parameter, atau parameter sebagai string.
+String parameter berformat JSON untuk aplikasi terkelola.
+Ini bisa menjadi jalur ke nama file atau uri yang berisi parameter, atau parameter sebagai string.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Tabel hash yang mewakili properti rencana aplikasi terkelola.
+Tabel hash yang mewakili properti paket aplikasi terkelola.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,8 +235,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

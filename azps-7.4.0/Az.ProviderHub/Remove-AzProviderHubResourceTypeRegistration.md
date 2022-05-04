@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubResourceTypeRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubResourceTypeRegistration.md
-ms.openlocfilehash: b5202d7046def753a002e77e29fd8484f03eb7b9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 514ebd98d601e43c63bee42ced8df064470587ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674928"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632420"
 ---
 # Remove-AzProviderHubResourceTypeRegistration
 
 ## SYNOPSIS
-Menghapus tipe sumber daya
+Menghapus jenis sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/remove-azproviderhubresourcetyperegistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,23 +35,23 @@ Remove-AzProviderHubResourceTypeRegistration -InputObject <IProviderHubIdentity>
 ```
 
 ## DESCRIPTION
-Menghapus tipe sumber daya
+Menghapus jenis sumber daya
 
 ## EXAMPLES
 
-### Contoh 1: Hapus pendaftaran tipe sumber daya menurut nama.
+### Contoh 1: Menghapus pendaftaran jenis sumber daya berdasarkan nama.
 ```powershell
 Remove-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType"
 ```
 
-Hapus registrasi tipe sumber daya menurut nama.
+Hapus pendaftaran jenis sumber daya berdasarkan nama.
 
-### Contoh 2: Hapus pendaftaran tipe sumber daya bertumpuk menurut nama.
+### Contoh 2: Menghapus pendaftaran jenis sumber daya berlapis menurut nama.
 ```powershell
 Remove-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType/nestedResourceType"
 ```
 
-Menghapus registrasi tipe sumber daya bertumpuk menurut nama.
+Hapus pendaftaran jenis sumber daya berlapis menurut nama.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -142,8 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,12 +198,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
-  - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
-  - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
+  - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
+  - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.
+  - `[NestedResourceTypeThird <String>]`: Jenis sumber daya anak ketiga.
+  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
-  - `[ResourceType <String>]`: Tipe sumber daya.
+  - `[ResourceType <String>]`: Jenis sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.
   - `[Sku <String>]`: SKU.
   - `[SubscriptionId <String>]`: ID langganan target.

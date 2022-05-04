@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.SpringCloud/depl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Deploy-AzSpringCloudApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Deploy-AzSpringCloudApp.md
-ms.openlocfilehash: e5c4ae6c58ec628f3455762f9ca930c3277afad9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8bc95abe73511c32a6f181ac44f5e0b8240fe11a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865980"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613544"
 ---
 # Deploy-AzSpringCloudApp
 
 ## SYNOPSIS
-Sebarkan toples bawaan untuk servis.
+Sebarkan jar bawaan ke layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.springcloud/deploy-azspringcloudapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Deploy-AzSpringCloudApp -JarPath <String> -Name <String> -ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-Sebarkan toples bawaan untuk servis.
+Sebarkan jar bawaan ke layanan.
 
 ## EXAMPLES
 
-### Contoh 1: Deploy local compiled jar to service by name.
+### Contoh 1: Sebarkan jar yang dikompilasi lokal ke layanan berdasarkan nama.
 ```powershell
 Deploy-AzSpringCloudApp -ResourceGroupName 'spring-cloud-rg' -ServiceName 'spring-cloud-service' -AppName 'gateway' -JarPath '/home/user/piggymetrics/gateway/target/gateway.jar'
 ```
@@ -44,12 +47,12 @@ Name Type
 prod Microsoft.AppPlatform/Spring/apps/deployments
 ```
 
-Sebarkan stoples terkompilasi lokal untuk melayani berdasarkan nama.
+Sebarkan jar yang dikompilasi lokal ke layanan berdasarkan nama.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -JarPath
-Jalur guci perlu dilepaskan.
+Jalur jar perlu di-deploi.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Aplikasi.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang berisi sumber daya.
-Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -155,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan ID langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

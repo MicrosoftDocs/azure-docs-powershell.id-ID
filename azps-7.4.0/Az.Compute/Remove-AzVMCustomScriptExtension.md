@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
-ms.openlocfilehash: 49f629716beac15357ed15044f620d2d4158e594
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f3e6ca6efb1f68997947c6e3d7239d8c41d94b9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877140"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614660"
 ---
 # Remove-AzVMCustomScriptExtension
 
 ## SYNOPSIS
-Menghapus ekstensi skrip kustom dari mesin virtual.
+Menghapus ekstensi skrip kustom dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,13 +29,13 @@ Remove-AzVMCustomScriptExtension [-ResourceGroupName] <String> [-VMName] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVMCustomScriptExtension** menghapus skrip kustom Virtual Machine Extension dari mesin virtual.
+Cmdlet **Remove-AzVMCustomScriptExtension** menghapus Ekstensi Komputer Virtual skrip kustom dari komputer virtual.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Menghapus ekstensi skrip kustom dari mesin virtual. (autogenerasi)
+Menghapus ekstensi skrip kustom dari komputer virtual. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Remove-AzVMCustomScriptExtension -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
@@ -55,7 +58,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi skrip kustom yang dihapus cmdlet ini.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi skrip kustom.
+Menentukan nama komputer virtual tempat cmdlet ini menghapus ekstensi skrip kustom.
 
 ```yaml
 Type: System.String
@@ -130,8 +133,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

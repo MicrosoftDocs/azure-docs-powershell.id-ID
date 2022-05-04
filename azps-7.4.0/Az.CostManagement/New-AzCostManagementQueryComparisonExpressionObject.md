@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.CostManagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryComparisonExpressionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryComparisonExpressionObject.md
-ms.openlocfilehash: be0fa1af1d598a88fe2a113180111e8956f764f2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e6e62423369e1b7b29ab6aa40e5ae20ba8c7f82f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318609"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677770"
 ---
 # New-AzCostManagementQueryComparisonExpressionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk QueryComparisonExpression
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementquerycomparisonexpressionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Perintah ini membuat objek ekspresi perbandingan kueri untuk ekspor manajemen bi
 
 ## PARAMETERS
 
-### -Nama
+### -Name
 Nama kolom yang akan digunakan sebagai perbandingan.
 
 ```yaml
@@ -74,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Array nilai yang akan digunakan untuk perbandingan.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

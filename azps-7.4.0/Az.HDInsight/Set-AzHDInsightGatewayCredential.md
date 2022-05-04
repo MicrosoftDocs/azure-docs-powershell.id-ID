@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightGatewayCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightGatewayCredential.md
-ms.openlocfilehash: 7c0cd4563abc8047647e07050ef6da26a140d1e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74a93d3f13c7cd8efe0e673e2ec66e5710b5edc8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683406"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144656246"
 ---
 # Set-AzHDInsightGatewayCredential
 
 ## SYNOPSIS
 Mengatur kredensial HTTP gateway dari kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightgatewaycredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzHDInsightGatewayCredential [-HttpCredential] <PSCredential> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHDInsightGatewayCredential** mengatur kredensial gateway dari kluster Azure HDInsight.
+Cmdlet **Set-AzHDInsightGatewayCredential** menetapkan kredensial gateway dari kluster Azure HDInsight.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Set-AzHDInsightGatewayCredential `
             -HttpCredential $clusterCreds
 ```
 
-Perintah ini mengatur kredensial gateway kluster bernama your-hadoop-001 menurut kumpulan parameter nama.
+Perintah ini mengatur kredensial gateway kluster bernama your-hadoop-001 berdasarkan parameter nama yang ditetapkan.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ Set-AzHDInsightGatewayCredential `
             -HttpCredential $clusterCreds
 ```
 
-Perintah ini mengatur kredensial gateway dari kluster bernama your-hadoop-001 menurut kumpulan parameter ResourceId.
+Perintah ini mengatur kredensial gateway kluster bernama your-hadoop-001 oleh set parameter ResourceId.
 
 ### Contoh 3
 ```powershell
@@ -76,7 +79,7 @@ Get-AzHDInsightCluster -ClusterName $clusterName | Set-AzHDInsightGatewayCredent
             -HttpCredential $clusterCreds
 ```
 
-Perintah ini mengatur kredensial gateway dari kluster bernama your-hadoop-001 menurut kumpulan parameter InputObject.
+Perintah ini mengatur info masuk gateway kluster bernama your-hadoop-001 oleh set parameter InputObject.
 
 ## PARAMETERS
 
@@ -140,7 +143,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Mendapatkan atau mengatur nama kluster.
 
 ```yaml
@@ -185,8 +188,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,11 +219,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

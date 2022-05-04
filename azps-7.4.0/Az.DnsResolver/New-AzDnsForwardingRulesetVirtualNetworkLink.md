@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: fb5d82c9befb0f3a2616ad88165b574a3a406e7d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3083db5b7211af681079f3f70d9231764608e77a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287307"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674242"
 ---
 # New-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Membuat atau memperbarui tautan jaringan virtual ke aturan penerusan DNS.
+Membuat atau memperbarui tautan jaringan virtual ke set aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName <String> 
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui tautan jaringan virtual ke aturan penerusan DNS.
+Membuat atau memperbarui tautan jaringan virtual ke set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Cmdlet ini membuat tautan jaringan virtual dengan metadata.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsForwardingRulesetName
-Nama aturan penerusan DNS.
+Nama set aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag sumber daya.
 Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memperbolehkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
+Atur ke '*' untuk mengizinkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang ada.
 Nilai lain akan diabaikan.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan jaringan virtual.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -228,8 +231,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
