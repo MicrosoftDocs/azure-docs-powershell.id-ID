@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccount.md
-ms.openlocfilehash: a3a536154fe55ecdd2fcd604cb718bf4cad0d411
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 799fdef4fb87db4686f41141e35491fc14d3dff1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682290"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735778"
 ---
 # Get-AzIntegrationAccount
 
 ## SYNOPSIS
 Mendapatkan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +31,13 @@ Get-AzIntegrationAccount [-ResourceGroupName <String>] [-Name <String>]
 ## DESCRIPTION
 Cmdlet **Get-AzIntegrationAccount** mendapatkan akun integrasi dari grup sumber daya. Tentukan nama akun integrasi dan nama grup sumber daya.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan akun integrasi menurut nama
+### Contoh 1: Mendapatkan akun integrasi berdasarkan nama
 ```powershell
 Get-AzIntegrationAccount -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31"
 ```
@@ -51,7 +54,7 @@ ChangedTime : 3/26/2016 4:26:07 PM
 
 Perintah ini mendapatkan akun integrasi bernama IntegrationAccount31 dari grup sumber daya yang ditentukan.
 
-### Contoh 2: Dapatkan akun integrasi dalam grup sumber daya
+### Contoh 2: Mendapatkan akun integrasi dalam grup sumber daya
 ```powershell
 Get-AzIntegrationAccount -ResourceGroupName "ResourceGroup11"
 ```
@@ -68,7 +71,7 @@ ChangedTime : 3/26/2016 4:26:07 PM
 
 Perintah ini mendapatkan akun integrasi dari grup sumber daya bernama ResourceGroup11.
 
-### Contoh 3: Dapatkan semua akun integrasi
+### Contoh 3: Mendapatkan semua akun integrasi
 ```powershell
 Get-AzIntegrationAccount
 ```
@@ -83,7 +86,7 @@ CreatedTime : 3/26/2016 4:26:07 PM
 ChangedTime : 3/26/2016 4:26:07 PM
 ```
 
-Perintah ini mendapatkan semua akun integrasi dalam langganan Azure Anda.
+Perintah ini mendapatkan semua akun integrasi di langganan Azure Anda.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -151,7 +154,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzIntegrationAccount](./New-AzIntegrationAccount.md)
 
-[Hapus-AzIntegrationAccount](./Remove-AzIntegrationAccount.md)
+[Remove-AzIntegrationAccount](./Remove-AzIntegrationAccount.md)
 
 [Set-AzIntegrationAccount](./Set-AzIntegrationAccount.md)
 

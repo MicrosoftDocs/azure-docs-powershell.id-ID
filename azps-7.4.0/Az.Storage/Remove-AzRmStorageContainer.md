@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainer.md
-ms.openlocfilehash: dad7f1b5ef26c98ba50e9dff84aae2bfd3e41c26
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e451ff636f40438529f304fe825a69db7c16e82d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994645"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707482"
 ---
 # Remove-AzRmStorageContainer
 
 ## SYNOPSIS
-Menghapus wadah blob Storage
+Menghapus kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,31 +41,31 @@ Remove-AzRmStorageContainer -InputObject <PSContainer> [-Force] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRmStorageContainer** menghapus wadah blob Storage
+Cmdlet **Remove-AzRmStorageContainer menghapus kontainer** blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus wadah blob Storage dengan nama akun Storage dan nama kontainer
+### Contoh 1: Menghapus kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Remove-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini menghapus wadah blob Storage dengan nama akun dan nama kontainer Storage.
+Perintah ini menghapus kontainer blob Storage dengan nama akun Storage dan nama kontainer.
 
-### Contoh 2: Menghapus wadah blob Storage dengan objek akun Storage dan nama kontainer
+### Contoh 2: Menghapus kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini menghapus wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini menghapus kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Hapus semua wadah blob Storage dalam akun Storage dengan pipeline
+### Contoh 3: Menghapus semua kontainer blob Storage di akun Storage dengan alur
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Remove-AzRmStorageContainer -Force
 ```
 
-Perintah ini menghapus semua wadah blob Storage dalam akun Storage dengan pipeline.
+Perintah ini menghapus semua kontainer blob Storage di akun Storage dengan alur.
 
 ## PARAMETERS
 
@@ -81,8 +84,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk menghapus wadah dan semua konten di dalamnya
+### -Force
+Paksa untuk menghapus kontainer dan semua konten di dalamnya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kontainer
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -187,8 +190,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

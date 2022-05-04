@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuildFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuildFunction.md
-ms.openlocfilehash: 1efea3135ae9def41a2b6cb2a5917c5c41d62119
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 15b48ae8b838854c0037d505f9781253387e6fe0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115263"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722808"
 ---
 # Get-AzStaticWebAppBuildFunction
 
 ## SYNOPSIS
-Deskripsi untuk Mendapatkan fungsi build situs statis tertentu.
+Deskripsi untuk Mendapatkan fungsi dari build situs statis tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azstaticwebappbuildfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzStaticWebAppBuildFunction -EnvironmentName <String> -Name <String> -Resour
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Mendapatkan fungsi build situs statis tertentu.
+Deskripsi untuk Mendapatkan fungsi dari build situs statis tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua fungsi build situs statis tertentu
+### Contoh 1: Mencantumkan semua fungsi dari build situs statis tertentu
 ```powershell
 Get-AzStaticWebAppBuildFunction -ResourceGroupName lucas-rg-test -Name staticweb-portal04 -EnvironmentName 'default'
 ```
@@ -40,7 +43,7 @@ Kind Name            Type
      WeatherForecast Microsoft.Web/staticSites/builds/functions
 ```
 
-Perintah ini mencantumkan semua fungsi build situs statis tertentu.
+Perintah ini mencantumkan semua fungsi dari build situs statis tertentu.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama situs statis.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String[]
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

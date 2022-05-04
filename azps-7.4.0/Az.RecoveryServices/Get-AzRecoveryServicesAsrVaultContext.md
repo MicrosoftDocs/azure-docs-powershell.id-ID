@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrVaultContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrVaultContext.md
-ms.openlocfilehash: 2760312bb2d0bb4e8030f803e04bf0ef33c73407
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 03f1e9e0d40e11cfe00ccdff6a837f98964fb23c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802584"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716672"
 ---
 # Get-AzRecoveryServicesAsrVaultContext
 
 ## SYNOPSIS
-Mendapatkan informasi pengaturan vault ASR untuk kubah Layanan Pemulihan.
+Mendapatkan informasi pengaturan vault ASR untuk vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrvaultcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzRecoveryServicesAsrVaultContext [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrVaultContext** mendapatkan informasi pengaturan vault ASR yang terkait dengan kubah Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrVaultContext** mendapatkan informasi pengaturan vault ASR yang terkait dengan vault Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -33,7 +36,7 @@ Cmdlet **Get-AzRecoveryServicesAsrVaultContext** mendapatkan informasi pengatura
 $VaultSettings = Get-AzRecoveryServicesAsrVaultContext
 ```
 
-Mendapatkan pengaturan vault ASR untuk kubah Layanan Pemulihan yang saat ini aktif(dalam sesi PowerShell).
+Mendapatkan pengaturan vault ASR untuk vault Layanan Pemulihan yang saat ini aktif (dalam sesi PowerShell).
 
 ## PARAMETERS
 
@@ -53,11 +56,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

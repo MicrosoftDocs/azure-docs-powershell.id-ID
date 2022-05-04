@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlPoolSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlPoolSensitivityRecommendation.md
-ms.openlocfilehash: 87778653ef295718a57352b2e3faf915c3e0c3bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5dba42dacfcfde9e26dfe1d3b271488febd43ca8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116361"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737056"
 ---
 # Disable-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
-Menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom di kumpulan SQL.
+Menonaktifkan (menutup) rekomendasi sensitivitas pada kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/disable-azsynapsesqlpoolsensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,21 +43,21 @@ Disable-AzSynapseSqlPoolSensitivityRecommendation -SqlPoolObject <PSSynapseSqlPo
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzSynapseSqlPoolSensitivityRecommendation menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom di kumpulan SQL.
+Cmdlet Disable-AzSynapseSqlPoolSensitivityRecommendation menonaktifkan (menutup) rekomendasi sensitivitas pada kolom di kumpulan SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam kumpulan Azure Synapse SQL.
+### Contoh 1: Nonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam kumpulan Azure Synapse SQL.
 ```powershell
 Disable-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Menonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 2: Nonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas di kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Disable-AzSynapseSqlPoolSensitivityRecommendation
 ```
 
-### Contoh 3: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 3: Nonaktifkan rekomendasi sensitivitas pada kolom tertentu di kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Disable-AzSynapseSqlPoolSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
@@ -62,7 +65,7 @@ Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName Cont
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama Synapse SQL pool.
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL objek input pool, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -212,7 +215,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -227,8 +230,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

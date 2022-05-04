@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomain.md
-ms.openlocfilehash: dd7fb02f625ff3cf5c2f7302aee1e8f9a2100017
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 930e2255df669e194f2fa0251637d8dbfcec4203
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122913"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144730958"
 ---
 # New-AzEventGridDomain
 
 ## SYNOPSIS
 Membuat Domain Azure Event Grid baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,13 +30,13 @@ New-AzEventGridDomain [-ResourceGroupName] <String> [-Name] <String> [-Location]
 ```
 
 ## DESCRIPTION
-Membuat Domain Azure Event Grid baru. Setelah domain dibuat, aplikasi dapat menerbitkan acara ke titik akhir topik.
+Membuat Domain Azure Event Grid baru. Setelah domain dibuat, aplikasi dapat menerbitkan peristiwa ke titik akhir topik.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Membuat domain \`Kisi Kejadian1\` di lokasi \`geografis yang ditentukan westus2\`, dalam grup \`sumber daya MyResourceGroupName\`.
+Membuat domain \`Event Grid Domain1\` di lokasi \`geografis yang ditentukan westus2\`, dalam grup \`sumber daya MyResourceGroupName\`.
 
 ```powershell
 New-AzEventGridDomain -ResourceGroupName MyResourceGroupName -Name Domain1 -Location westus2
@@ -52,7 +55,7 @@ Tags              :
 
 ### Contoh 2
 
-Membuat domain \`Kisi Kejadian Domain1\` di lokasi \`geografis yang ditentukan westus2\`, dalam grup \`sumber daya MyResourceGroupName\` dengan tag tertentu "Departemen" dan "Lingkungan".
+Membuat domain \`Event Grid Domain1\` di lokasi \`geografis yang ditentukan westus2\`, dalam grup \`sumber daya MyResourceGroupName\` dengan tag "Departemen" dan "Lingkungan" yang ditentukan.
 
 ```powershell
 New-AzEventGridDomain -ResourceGroupName MyResourceGroupName -Name Domain1 -Location westus2 -Tag @{ Department="Finance"; Environment="Test" }
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundIpRule
-Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan terkait yang akan dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Nilai Tindakan yang Mungkin menyertakan Perbolehkan saja
+Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan yang sesuai untuk dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Kemungkinan nilai Tindakan termasuk Izinkan saja
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputMappingDefaultValue
-Hashtable yang mewakili bidang pemetaan input dengan nilai default dalam spasi yang dipisahkan kunci = format nilai. Nama kunci yang diizinkan adalah: subjek, tipe kejadian, dan dataversi. Ini digunakan ketika InputSchemaHelp hanya merupakan customeventschema.
+Hashtable yang mewakili bidang pemetaan input dengan nilai default dalam kunci yang dipisahkan spasi = format nilai. Nama kunci yang diizinkan adalah: subjek, jenis peristiwa, dan dataversion. Ini digunakan ketika InputSchemaHelp hanya customeventschema.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputMappingField
-Hashtable yang mewakili bidang pemetaan input dalam spasi yang dipisahkan kunci = format nilai. Nama kunci yang diizinkan adalah: id, topik, waktu kejadian, subjek, tipe kejadian, dan dataversi. Ini digunakan ketika InputSchemaHelp hanya merupakan customeventschema.
+Hashtable yang mewakili bidang pemetaan input dalam kunci yang dipisahkan spasi = format nilai. Nama kunci yang diizinkan adalah: id, topik, eventtime, subjek, eventtype, dan dataversion. Ini digunakan ketika InputSchemaHelp hanya customeventschema.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputSchema
-Skema kejadian input untuk topik tersebut. Nilai yang diizinkan adalah: eventgridschema, customeventschema, atau cloudeventv01Schema. Nilai defaultnya adalah eventgridschema. Perhatikan bahwa jika customeventschema ditentukan, parameter InputMappingField atau/dan InputMappingDefaultValue perlu ditentukan juga.
+Skema peristiwa input untuk topik tersebut. Nilai yang diizinkan adalah: eventgridschema, customeventschema, atau cloudeventv01Schema. Nilai defaultnya adalah eventgridschema. Perhatikan bahwa jika customeventschema ditentukan, parameter InputMappingField atau/dan InputMappingDefaultValue juga perlu ditentukan.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama domain EventGrid.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Ini menentukan apakah lalu lintas diperbolehkan melalui jaringan publik. Secara default diaktifkan. Anda dapat membatasi lebih lanjut ke IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diperbolehkan dinonaktifkan dan diaktifkan.
+Ini menentukan apakah lalu lintas diizinkan melalui jaringan publik. Secara default diaktifkan. Anda selanjutnya dapat membatasi IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diizinkan dinonaktifkan dan diaktifkan.
 
 ```yaml
 Type: System.String
@@ -223,8 +226,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

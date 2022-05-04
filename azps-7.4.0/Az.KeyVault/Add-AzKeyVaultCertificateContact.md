@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificateContact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificateContact.md
-ms.openlocfilehash: 0c76fa55cb9d50b8e813ce865c20934c516c367b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 228930891bc0d61816ad08e77ea9ec956bcbb6cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121401"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699386"
 ---
 # Add-AzKeyVaultCertificateContact
 
 ## SYNOPSIS
 Menambahkan kontak untuk pemberitahuan sertifikat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultcertificatecontact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,13 +42,13 @@ Add-AzKeyVaultCertificateContact [-ResourceId] <String> [-EmailAddress] <String[
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzKeyVaultCertificateContact** menambahkan kontak untuk kubah kunci untuk pemberitahuan sertifikat di Azure Key Vault.
-Kontak menerima pembaruan tentang acara seperti sertifikat yang mendekati kedaluwarsa, sertifikat diperpanjang, dan seterusnya.
-Kejadian ini ditentukan oleh kebijakan sertifikat.
+Cmdlet **Add-AzKeyVaultCertificateContact** menambahkan kontak untuk brankas kunci untuk pemberitahuan sertifikat di Azure Key Vault.
+Kontak menerima pembaruan tentang peristiwa seperti sertifikat yang hampir kedaluwarsa, sertifikat diperpanjang, dan sebagainya.
+Peristiwa ini ditentukan oleh kebijakan sertifikat.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan kontak sertifikat kubah kunci
+### Contoh 1: Menambahkan kontak sertifikat brankas kunci
 ```powershell
 Add-AzKeyVaultCertificateContact -VaultName "ContosoKV01" -EmailAddress "patti.fuller@contoso.com" -PassThru
 ```
@@ -56,7 +59,7 @@ Email                    VaultName
 patti.fuller@contoso.com ContosoKV01
 ```
 
-Perintah ini menambahkan Patti Fuller sebagai kontak sertifikat untuk kubah kunci ContosoKV01 dan mengembalikan daftar kontak untuk kubah "ContosoKV01".
+Perintah ini menambahkan Patti Fuller sebagai kontak sertifikat untuk brankas kunci ContosoKV01 dan mengembalikan daftar kontak untuk vault "ContosoKV01".
 
 ## PARAMETERS
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci.
+Menentukan nama brankas kunci.
 
 ```yaml
 Type: System.String
@@ -151,8 +154,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -201,5 +204,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzKeyVaultCertificateContact](./Get-AzKeyVaultCertificateContact.md)
 
-[Hapus-AzKeyVaultCertificateContact](./Remove-AzKeyVaultCertificateContact.md)
+[Remove-AzKeyVaultCertificateContact](./Remove-AzKeyVaultCertificateContact.md)
 

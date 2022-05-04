@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationFabric.md
-ms.openlocfilehash: 46557426268a34f4f85a8d811eba3ee9b82a4b28
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f1166e057319d46c76fe7c06411595c17d420507
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681336"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708220"
 ---
 # Get-AzMigrateReplicationFabric
 
 ## SYNOPSIS
-Mendapatkan detail kain Site Recovery Azure.
+Mendapatkan detail azure Site Recovery fabric.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigratereplicationfabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,18 +28,18 @@ Get-AzMigrateReplicationFabric -ResourceGroupName <String> -ResourceName <String
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMigrateReplicationFabric -FabricName <String> -ResourceGroupName <String> -ResourceName <String>
  [-SubscriptionId <String[]>] [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mendapatkan detail kain Site Recovery Azure.
+Mendapatkan detail azure Site Recovery fabric.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kain menurut grup sumber daya dan nama kubah
+### Contoh 1: Dapatkan semua fabric berdasarkan grup sumber daya dan nama vault
 ```powershell
 Get-AzMigrateReplicationFabric -ResourceGroupName azmigratepwshtestasr13072020 -ResourceName AzMigrateTestProjectPWSH02aarsvault -FabricName AzMigratePWSHTc8d1replicationfabric
 ```
@@ -62,9 +65,9 @@ RolloverEncryptionDetailKekState          : None
 Type                                      : Microsoft.RecoveryServices/vaults/replicationFabrics
 ```
 
-Dapatkan semua kain dalam grup sumber daya dan kubah
+Mendapatkan semua fabric dalam grup sumber daya dan vault
 
-### Contoh 2: Dapatkan fabric by resource group, vault name and fabric name
+### Contoh 2: Dapatkan fabric menurut grup sumber daya, nama vault, dan nama fabric
 ```powershell
 Get-AzMigrateReplicationFabric -ResourceGroupName azmigratepwshtestasr13072020 -ResourceName AzMigrateTestProjectPWSH02aarsvault
 ```
@@ -90,7 +93,7 @@ RolloverEncryptionDetailKekState          : None
 Type                                      : Microsoft.RecoveryServices/vaults/replicationFabrics
 ```
 
-Dapatkan kain tertentu
+Mendapatkan fabric tertentu
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Nama kain.
+Nama Fabric.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah layanan pemulihan ada.
+Nama grup sumber daya tempat vault layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama kubah layanan pemulihan.
+Nama vault layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

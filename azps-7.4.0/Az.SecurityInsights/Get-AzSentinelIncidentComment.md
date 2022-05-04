@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelIncidentComment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelIncidentComment.md
-ms.openlocfilehash: d3cb110e72e122ddf1a59769255e8d0c0db06b4c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a75348c252cbb1879a47994ca8d8a211a6eb1a97
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800856"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716366"
 ---
 # Get-AzSentinelIncidentComment
 
 ## SYNOPSIS
 Mendapatkan Komentar Insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelincidentcomment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,9 +41,9 @@ Get-AzSentinelIncidentComment -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelIncidentComment** mendapatkan Komentar Insiden dari ruang kerja tertentu.
-Jika Anda menentukan parameter *IncidentCommentId* dan *IncidentId* , sebuah objek **IncidentComment** dikembalikan.
-Jika Anda tidak menentukan parameter *IncidentCommentId* , array yang berisi semua Komentar Insiden untuk Insiden tertentu dalam ruang kerja yang ditentukan akan dikembalikan.
+Cmdlet **Get-AzSentinelIncidentComment** mendapatkan Komentar Insiden dari ruang kerja yang ditentukan.
+Jika Anda menentukan parameter *IncidentCommentId* dan *IncidentId* , satu objek **IncidentComment** dikembalikan.
+Jika Anda tidak menentukan parameter *IncidentCommentId* , array yang berisi semua Komentar Insiden untuk Insiden yang ditentukan di ruang kerja yang ditentukan akan dikembalikan.
 
 ## EXAMPLES
 
@@ -49,14 +52,14 @@ Jika Anda tidak menentukan parameter *IncidentCommentId* , array yang berisi sem
 $IncidentComments = Get-AzSentinelIncidentComment -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -IncidentId "MyIncidentId"
 ```
 
-Contoh ini mendapatkan semua IncidentComments untuk Insiden tertentu dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $IncidentComments.
+Contoh ini mendapatkan semua IncidentComments untuk Insiden yang ditentukan di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $IncidentComments.
 
 ### Contoh 2
 ```powershell
 $IncidentComment = Get-AzSentinelIncidentComment -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -IncidentId "MyIncidentId" -IncidentCommentId "MyIncidentCommentId"
 ```
 
-Contoh ini mendapatkan IncidentComment untuk Insiden tertentu dalam ruang kerja tertentu, lalu menyimpannya dalam variabel $IncidentComment.
+Contoh ini mendapatkan IncidentComment untuk Insiden yang ditentukan di ruang kerja yang ditentukan, lalu menyimpannya dalam variabel $IncidentComment.
 
 ## PARAMETERS
 
@@ -135,7 +138,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

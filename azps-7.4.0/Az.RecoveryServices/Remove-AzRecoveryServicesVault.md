@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesVault.md
-ms.openlocfilehash: b0d75aeeb76ef244dc6911e5e6a6c7a33f9619f1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48e0cb09e36a62de53da2d0e632f81e77dccbfc1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868338"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705720"
 ---
 # Remove-AzRecoveryServicesVault
 
 ## SYNOPSIS
-Menghapus kubah Layanan Pemulihan.
+Menghapus vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzRecoveryServicesVault -Vault <ARSVault> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRecoveryServicesVault** menghapus kubah Layanan Pemulihan.
+Cmdlet **Remove-AzRecoveryServicesVault** menghapus vault Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **Remove-AzRecoveryServicesVault** menghapus kubah Layanan Pemulihan.
 Remove-AzRecoveryServicesVault -Vault $vault
 ```
 
-Menghapus kubah Layanan Pemulihan.
+Menghapus vault Layanan Pemulihan.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

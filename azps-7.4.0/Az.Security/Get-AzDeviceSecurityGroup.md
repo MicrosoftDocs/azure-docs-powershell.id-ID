@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzDeviceSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzDeviceSecurityGroup.md
-ms.openlocfilehash: 491832394caffdcaa8eed9c382791600c4b45388
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bcdeb3de2058846cdd491da97191c6582017c00c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707785"
 ---
 # Get-AzDeviceSecurityGroup
 
 ## SYNOPSIS
-Dapatkan grup keamanan perangkat (keamanan IoT Hub)
+Mendapatkan grup keamanan perangkat (keamanan IoT Hub)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azdevicesecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ AllowlistRules: [
 DenylistRules: []
 ```
 
-Dapatkan grup keamanan perangkat "MySecurityGroup" di IoT Hub dengan Id reasource "/subscriptions/XXXXXXXX-XXXXX-XXXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub"
+Dapatkan grup keamanan perangkat "MySecurityGroup" di IoT Hub dengan Id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXXX-XXXX-XXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub"
 
 ### Contoh 2
 ```powershell
@@ -96,7 +99,7 @@ Get-AzDeviceSecurityGroup -HubResourceId "/subscriptions/XXXXXXXX-XXXX-XXXXX-XXX
 Array of security group items like the item returned in example 1
 ```
 
-Dapatkan daftar grup keamanan perangkat di IoT Hub dengan Id reasource "/subscriptions/XXXXXXXXX-XXXXX-XXXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub"
+Dapatkan daftar grup keamanan perangkat di IoT Hub dengan Id sumber daya "/subscriptions/XXXXXXXX-XXXX-XXXXX-XXXX-XXXXXXXXXXXXXXXXX/resourceGroups/MyResourceGroup/providers/Microsoft.Devices/IotHubs/MyHub"
 
 ## PARAMETERS
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -HubResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -146,11 +149,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

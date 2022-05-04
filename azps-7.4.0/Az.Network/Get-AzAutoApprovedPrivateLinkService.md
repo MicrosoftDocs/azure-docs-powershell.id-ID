@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAutoApprovedPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAutoApprovedPrivateLinkService.md
-ms.openlocfilehash: fcb67ae9991a12311158af82d89ad560a156a099
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 90c12f7e73e9cab69eb7fc4e5842218628071fa6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939529"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699224"
 ---
 # Get-AzAutoApprovedPrivateLinkService
 
 ## SYNOPSIS
-Mendapatkan array id layanan tautan pribadi yang dapat ditautkan ke titik akhir privat dengan disetujui otomatis.
+Mendapatkan array id layanan tautan privat yang dapat ditautkan ke titik akhir privat dengan disetujui secara otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azautoapprovedprivatelinkservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzAutoApprovedPrivateLinkService -Location <String> [-ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-**Get-AzAutoApprovedPrivateLinkService** mendapatkan array id layanan tautan pribadi yang dapat ditautkan ke titik akhir pribadi dengan disetujui otomatis.
+**Get-AzAutoApprovedPrivateLinkService** mendapatkan array id layanan tautan privat yang dapat ditautkan ke titik akhir privat dengan disetujui secara otomatis.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Get-AzAutoApprovedPrivateLinkService -Location <String> [-ResourceGroupName <Str
 Get-AzAutoApprovedPrivateLinkService -Location westus -ResourceGroupName TestResourceGroup
 ```
 
-Contoh ini mengembalikan array id layanan tautan privat yang dapat ditautkan ke titik akhir privat dengan disetujui otomatis.
+Contoh ini mengembalikan array id layanan tautan privat yang dapat ditautkan ke titik akhir privat dengan disetujui secara otomatis.
 
 ## PARAMETERS
 
@@ -82,11 +85,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

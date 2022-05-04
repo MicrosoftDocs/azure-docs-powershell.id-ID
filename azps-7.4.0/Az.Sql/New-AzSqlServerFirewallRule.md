@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
-ms.openlocfilehash: d1814166e160eeb58a3d5bbe3d131f4c78e661c0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b55ef9044b3e85ef63f93b6223c7e56efe7fd42b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272169"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691834"
 ---
 # New-AzSqlServerFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall untuk server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ FirewallRuleName  : Rule01
 ```
 
 Perintah ini membuat aturan firewall bernama Rule01 di server bernama Server01.
-Aturan ini menyertakan alamat IP mulai dan akhir yang ditentukan.
+Aturan ini mencakup alamat IP awal dan akhir yang ditentukan.
 
 ### Contoh 2: Membuat aturan firewall yang memungkinkan semua alamat IP Azure mengakses server
 ```powershell
@@ -60,13 +63,13 @@ New-AzSqlServerFirewallRule -ResourceGroupName "ResourceGroup01" -ServerName "Se
 ```
 
 Perintah ini membuat aturan firewall di server bernama Server01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
-Karena parameter *AllowAllAzureIP* digunakan, aturan firewall memungkinkan semua alamat IP Azure untuk mengakses server.
+Karena parameter *AllowAllAzureIPs* digunakan, aturan firewall memungkinkan semua alamat IP Azure untuk mengakses server.
 
 ## PARAMETERS
 
 ### -AllowAllAzureIPs
-Menunjukkan bahwa aturan firewall ini memungkinkan semua alamat IP Azure mengakses server.
-Anda tidak dapat menggunakan parameter ini jika ingin menggunakan parameter *FirewallRuleName*, *StartIpAddress*, dan *EndIpAddress* .
+Menunjukkan bahwa aturan firewall ini memungkinkan semua alamat IP Azure untuk mengakses server.
+Anda tidak dapat menggunakan parameter ini jika Anda berniat menggunakan parameter *FirewallRuleName*, *StartIpAddress*, dan *EndIpAddress* .
 Jika Anda ingin mengizinkan IP Azure mengakses server, parameter ini harus digunakan dalam panggilan cmdlet terpisah yang tidak menggunakan parameter *FirewallRuleName*, *StartIpAddress*, dan *EndIpAddress* .
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartIpAddress
-Menentukan nilai mulai rentang alamat IP untuk aturan firewall.
+Menentukan nilai awal rentang alamat IP untuk aturan firewall.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -218,11 +221,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlServerFirewallRule](./Get-AzSqlServerFirewallRule.md)
+[Dapatkan-AzSqlServerFirewallRule](./Get-AzSqlServerFirewallRule.md)
 
-[Remove-AzSqlServerFirewallRule](./Remove-AzSqlServerFirewallRule.md)
+[Hapus-AzSqlServerFirewallRule](./Remove-AzSqlServerFirewallRule.md)
 
-[Set-AzSqlServerFirewallRule](./Set-AzSqlServerFirewallRule.md)
+[Atus-AzSqlServerFirewallRule](./Set-AzSqlServerFirewallRule.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Register-AzStaticWebAppUserProvidedFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Register-AzStaticWebAppUserProvidedFunctionApp.md
-ms.openlocfilehash: d04e3f58d30220420c930badfab3d46c149c91b8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7884285c1aa576e4348357fa93b1549bb010f4c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930295"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731138"
 ---
 # Register-AzStaticWebAppUserProvidedFunctionApp
 
 ## SYNOPSIS
 Deskripsi untuk Mendaftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/register-azstaticwebappuserprovidedfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,9 +55,9 @@ Kind Name                  Type
 ```
 
 Perintah ini mendaftarkan aplikasi fungsi yang disediakan pengguna dengan situs statis.
--FunctionAppRegion adalah kawasan aplikasi fungsi.
+-FunctionAppRegion adalah wilayah aplikasi fungsi.
 
-### Contoh 2: Daftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
+### Contoh 2: Mendaftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
 ```powershell
 Register-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName azure-rg-test -Name staticweb-pwsh02 -FunctionAppName functionapp-portal02 -FunctionAppResourceId '/subscriptions/xxxxxxxxx/resourcegroups/azure-rg-test/providers/Microsoft.Web/sites/functionapp-portal02' -FunctionAppRegion 'Central US' -EnvironmentName 5
 ```
@@ -66,12 +69,12 @@ Kind Name                 Type
 ```
 
 Perintah ini mendaftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis.
--FunctionAppRegion adalah kawasan aplikasi fungsi.
+-FunctionAppRegion adalah wilayah aplikasi fungsi.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Dipaksa
-Tentukan \<code\>true\</code\> untuk memaksa pembaruan konfigurasi auth pada aplikasi fungsi meskipun penyedia AzureStaticWebApps sudah dikonfigurasi pada aplikasi fungsi.
+Tentukan \<code\>true\</code\> untuk memaksa pembaruan konfigurasi autentikasi pada aplikasi fungsi meskipun penyedia AzureStaticWebApps sudah dikonfigurasi pada aplikasi fungsi.
 Defaultnya adalah \<code\>false\</code\>.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama situs statis.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String
@@ -252,8 +255,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

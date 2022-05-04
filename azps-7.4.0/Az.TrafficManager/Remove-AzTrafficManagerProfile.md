@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerProfile.md
-ms.openlocfilehash: 7307d27eaf463b8e1eb3e1eee3b8c3e2eea31333
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ffffdb3ccf0775fb8905d7f0901e02bb3058ed4f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669294"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737848"
 ---
 # Remove-AzTrafficManagerProfile
 
 ## SYNOPSIS
 Menghapus profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,12 +37,12 @@ Remove-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile> [-
 
 ## DESCRIPTION
 Cmdlet **Remove-AzTrafficManagerProfile** menghapus profil Azure Traffic Manager.
-Tentukan profil yang akan dihapus menggunakan parameter *Nama* dan *ResourceGroupName* .
-Atau, Anda dapat menentukan objek **TrafficManagerProfile** menggunakan parameter *TrafficManagerProfile* , atau menggunakan pipeline.
+Tentukan profil yang akan dihapus dengan menggunakan parameter *Nama* dan *ResourceGroupName* .
+Atau, Anda dapat menentukan objek **TrafficManagerProfile** menggunakan parameter *TrafficManagerProfile* , atau Anda dapat menggunakan alur.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus profil yang ditentukan menurut nama
+### Contoh 1: Menghapus profil yang ditentukan berdasarkan nama
 ```powershell
 Remove-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
@@ -47,16 +50,16 @@ Remove-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "Resour
 Perintah ini menghapus profil bernama ContosoProfile di ResourceGroup11.
 Perintah meminta konfirmasi kepada Anda.
 
-### Contoh 2: Menghapus profil menggunakan pipeline
+### Contoh 2: Menghapus profil dengan menggunakan alur
 ```powershell
 Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Remove-AzTrafficManagerProfile -Force
 ```
 
 Perintah ini mendapatkan profil bernama ContosoProfile di ResourceGroup11.
-Perintah kemudian meneruskan profil tersebut ke cmdlet **Remove-AzTrafficManagerProfile** menggunakan operator pipeline.
-Cmdlet itu menghapus profil itu.
-Perintah menentukan parameter *Paksa* .
-Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
+Perintah kemudian meneruskan profil tersebut ke cmdlet **Remove-AzTrafficManagerProfile** dengan menggunakan operator alur.
+Cmdlet itu menghapus profil tersebut.
+Perintah menentukan parameter *Force* .
+Oleh karena itu, ini tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama profil Traffic Manager yang dihapus cmdlet ini.
 
 ```yaml
@@ -137,8 +140,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

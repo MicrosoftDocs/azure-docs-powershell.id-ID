@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLab.md
-ms.openlocfilehash: 428121c2abdc8cbfccdbc353922293649610f22c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d20e486eb8f1e8bf26608839ed4cdcb02fc018f5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746874"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735994"
 ---
 # Update-AzLabServicesLab
 
 ## SYNOPSIS
 Operasi untuk memperbarui sumber daya lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/update-azlabserviceslab) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Operasi untuk memperbarui sumber daya lab.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui lab yang sudah ada.
+### Contoh 1: Perbarui lab yang ada.
 ```powershell
 Update-AzLabServicesLab -ResourceGroupName "Group Name" -Name "Lab Name" -AutoShutdownProfileShutdownOnDisconnect Enabled -AutoShutdownProfileDisconnectDelay "00:25:00"
 ```
@@ -57,12 +60,12 @@ Location Name
 westus2  Lab Name
 ```
 
-Contoh ini memperbarui lab dan mengaktifkan opsi Matikan pada Putuskan Sambungan mengatur penundaan pada 25 menit.
+Contoh ini memperbarui lab dan mengaktifkan opsi Matikan saat Putuskan Sambungan mengatur penundaan pada 25 menit.
 
 ## PARAMETERS
 
 ### -AdditionalCapabilityInstallGpuDriver
-Tandai ke driver GPU khusus pra-instal.
+Benderai ke driver GPU khusus pra-instal.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 
 ### -AdminUserPassword
 Kata sandi untuk pengguna.
-Ini diperlukan untuk CreateOption TemplateVM.
+Ini diperlukan untuk TemplateVM createOption.
 
 ```yaml
 Type: System.Security.SecureString
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileIdleDelay
-Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
+Jumlah waktu VM akan menganggur sebelum dimatikan jika perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileNoConnectDelay
-Jumlah waktu VM akan tetap berjalan sebelum mati jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
+Jumlah waktu VM akan tetap berjalan sebelum dimatikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownOnDisconnect
-Apakah mematikan sambungan saat diputus diaktifkan
+Apakah matikan saat pemutusan sambungan diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownOnIdle
-Apakah VM akan dimatikan ketika diam selama periode waktu tertentu.
+Apakah VM akan dimatikan ketika telah menganggur untuk jangka waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.ShutdownOnIdleMode
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownWhenNotConnected
-Apakah VM akan dimatikan ketika belum tersambung setelah periode waktu tertentu.
+Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Penjabaran dari lab.
+Deskripsi lab.
 
 ```yaml
 Type: System.String
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReferenceOffer
-Penawaran gambar jika ada.
+Gambar menawarkan jika berlaku.
 
 ```yaml
 Type: System.String
@@ -347,8 +350,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ImageReferencesku
-Gambar SKU
+### -ImageReferenceSku
+SKU gambar
 
 ```yaml
 Type: System.String
@@ -379,8 +382,8 @@ Accept wildcard characters: False
 
 ### -LabPlanId
 ID rencana lab.
-Digunakan selama pembuatan sumber daya untuk menyediakan default dan bertindak sebagai wadah izin saat membuat lab melalui labs.azure.com.
-Mengatur labPlanId di lab yang sudah ada menyediakan organisasi..
+Digunakan selama pembuatan sumber daya untuk menyediakan default dan bertindak sebagai kontainer izin saat membuat lab melalui labs.azure.com.
+Mengatur labPlanId di lab yang ada menyediakan organisasi..
 
 ```yaml
 Type: System.String
@@ -394,8 +397,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
+### -Name
+Nama lab yang secara unik mengidentifikasinya dalam berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 
 ### -NonAdminUserPassword
 Kata sandi untuk pengguna.
-Ini diperlukan untuk CreateOption TemplateVM.
+Ini diperlukan untuk TemplateVM createOption.
 
 ```yaml
 Type: System.Security.SecureString
@@ -458,7 +461,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 
 ### -RosterProfileActiveDirectoryGroupId
 ID grup AAD tempat daftar lab ini diisi.
-Mengatur ini mengaktifkan mode sinkronisasi AAD.
+Memiliki set ini memungkinkan mode sinkronisasi AAD.
 
 ```yaml
 Type: System.String
@@ -489,7 +492,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLmsInstance
-Basis URI yang mengidentifikasi instans IM.
+URI dasar yang mengidentifikasi instans lms.
 
 ```yaml
 Type: System.String
@@ -504,7 +507,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLtiClientId
-Id unik dari alat layanan lab azure di lms.
+Id unik alat layanan lab azure di lms.
 
 ```yaml
 Type: System.String
@@ -519,7 +522,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLtiContextId
-Pengidentifikasi konteks yang unik untuk lab di lms.
+Pengidentifikasi konteks unik untuk lab di lms.
 
 ```yaml
 Type: System.String
@@ -534,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileLtiRosterEndpoint
-Uri dari nama dan peran titik akhir layanan pada lms untuk kelas yang melekat pada lab ini.
+Uri titik akhir layanan nama dan peran pada lms untuk kelas yang melekat pada lab ini.
 
 ```yaml
 Type: System.String
@@ -548,8 +551,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecurityProfileOpenAccesss
-Apakah setiap pengguna atau hanya pengguna tertentu yang dapat mendaftar ke lab.
+### -SecurityProfileOpenAccess
+Apakah ada pengguna atau hanya pengguna tertentu yang dapat mendaftar ke lab.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -564,8 +567,8 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Jika SKU mendukung penskalaan keluar/masuk maka bilangan bulat kapasitas harus disertakan.
-Jika skala keluar/masuk tidak dimungkinkan untuk sumber daya ini mungkin dihilangkan.
+Jika SKU mendukung peluasan skala/masuk, bilangan bulat kapasitas harus disertakan.
+Jika peluasan/masuk skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
 
 ```yaml
 Type: System.Int32
@@ -580,7 +583,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka yang dapat ditangkap di sini.
+Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka itu dapat ditangkap di sini.
 
 ```yaml
 Type: System.String
@@ -595,9 +598,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU.
-Bekas - P3.
-Biasanya berupa kode huruf+angka
+Nama SKUnya.
+Ex - P3.
+Biasanya kode huruf+angka
 
 ```yaml
 Type: System.String
@@ -611,7 +614,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skusize
+### -SkuSize
 Ukuran SKU.
 Ketika bidang nama adalah kombinasi tingkat dan beberapa nilai lainnya, ini akan menjadi kode mandiri.
 
@@ -628,7 +631,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Bidang ini diperlukan untuk diterapkan oleh Penyedia Sumber Daya jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
+Bidang ini diperlukan untuk diimplementasikan oleh Penyedia Sumber Jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.SkuTier
@@ -673,7 +676,7 @@ Accept wildcard characters: False
 ```
 
 ### -Judul
-Judul laboratorium.
+Judul lab.
 
 ```yaml
 Type: System.String
@@ -688,7 +691,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineProfileCreateOption
-Menunjukkan dari mesin virtual lab mana yang dibuat.
+Menunjukkan dari komputer virtual lab mana yang dibuat.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.CreateOption
@@ -733,8 +736,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -749,7 +752,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -765,7 +768,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

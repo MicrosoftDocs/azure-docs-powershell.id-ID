@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: 7545070483060a534832832fb5748e03a604ec75
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 29dcec6b584b71f92aa7ea36cb8a49353d7567ac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671832"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707554"
 ---
 # Remove-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
-Hapus aplikasi yang dikelola dari kluster. Tindakan ini akan menghapus semua layanan terkelola di bawah aplikasi. Hanya mendukung aplikasi arm yang digunakan.
+Menghapus aplikasi terkelola dari kluster. Ini akan menghapus semua layanan terkelola di bawah aplikasi. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzServiceFabricManagedClusterApplication -InputObject <PSManagedApplicati
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus aplikasi terkelola dari kluster. Tindakan ini akan menghapus semua layanan yang dikelola, jika ada, di bawah sumber daya aplikasi.
+Cmdlet ini menghapus aplikasi terkelola dari kluster. Ini akan menghapus semua layanan terkelola, jika ada, di bawah sumber daya aplikasi.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ $appName = "testApp"
 Remove-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appName
 ```
 
-Contoh ini menghapus aplikasi terkelola "testApp" di bawah grup sumber daya "testRG" dan kluster "testCluster".
+Contoh ini menghapus "testApp" aplikasi terkelola di bawah grup sumber daya "testRG" dan kluster "testCluster".
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ $app = Get-AzServiceFabricManagedClusterApplication -ResourceGroupName $resource
 $app | Remove-AzServiceFabricManagedClusterApplication
 ```
 
-Contoh ini menghapus aplikasi terkelola "testApp" di bawah grup sumber daya "testRG" dan kluster "testCluster".
+Contoh ini menghapus "testApp" aplikasi terkelola di bawah grup sumber daya "testRG" dan kluster "testCluster".
 
 ### Contoh 3
 ```powershell
@@ -70,12 +73,12 @@ $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroup
 Remove-AzServiceFabricManagedClusterApplication -ResourceId $resourceId
 ```
 
-Contoh ini menghapus aplikasi terkelola "testApp" dengan ID Sumber Daya ARM yang ditentukan.
+Contoh ini menghapus "testApp" aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Hapus tanpa perintah.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama aplikasi yang dikelola.
+### -Name
+Tentukan nama aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari aplikasi yang dikelola.
+Arm ResourceId dari aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -209,8 +212,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

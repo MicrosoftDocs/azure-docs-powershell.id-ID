@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolver.md
-ms.openlocfilehash: d51b1556c26d8b3f7dc771e6ee6ca66e7f53fbc1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4010fdf17aca2aff65de3ba01c0ffb7d7a53950f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002025"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686816"
 ---
 # Get-AzDnsResolver
 
 ## SYNOPSIS
-Mendapatkan properti dari penyelesaian DNS.
+Mendapatkan properti pemecah masalah DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsresolver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDnsResolver [-SubscriptionId <String[]>] [-Top <Int32>] [-DefaultProfile <
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDnsResolver -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -49,11 +52,11 @@ Get-AzDnsResolver -ResourceGroupName <String> -VirtualNetworkName <String> [-Sub
 ```
 
 ## DESCRIPTION
-Mendapatkan properti dari penyelesaian DNS.
+Mendapatkan properti pemecah masalah DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua Pemecah DNS di bawah langganan 
+### Contoh 1: Mencantumkan semua Pemecah Masalah DNS di bawah langganan 
 ```powershell
 Get-AzDnsResolver -SubscriptionId 0e5a46b1-de0b-4ec3-a5d7-dda908b4e076
 ```
@@ -74,9 +77,9 @@ westus2  dnsresolvertestguli01       Microsoft.Network/dnsResolvers "48009f1b-00
 westus2  dnsresolvertestresolver9892 Microsoft.Network/dnsResolvers "47008640-0000-0800-0000-60300f220000"
 ```
 
-Perintah ini mendapatkan semua Pemecah DNS di bawah langganan.
+Perintah ini mendapatkan semua Pemecah Masalah DNS di bawah langganan.
 
-### Contoh 2: Daftar semua Pemecah DNS di bawah grup sumber daya 
+### Contoh 2: Mencantumkan semua Pemecah Masalah DNS di bawah grup sumber daya 
 ```powershell
 Get-AzDnsResolver -ResourceGroupName powershell-test-rg
 ```
@@ -89,9 +92,9 @@ westus2  psdnsresolvername34dp19g6 Microsoft.Network/dnsResolvers "0000c9d4-0000
 westus2  psdnsresolvername35m3jf0n Microsoft.Network/dnsResolvers "0000d0d4-0000-0800-0000-604013a80000"
 ```
 
-Perintah ini mendapatkan semua Pemecah DNS di bawah grup sumber daya.
+Perintah ini mendapatkan semua Pemecah Masalah DNS di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan Satu Pemecah DNS berdasarkan nama 
+### Contoh 3: Mendapatkan Pemecah Masalah DNS tunggal berdasarkan nama 
 ```powershell
 Get-AzDnsResolver -ResourceGroupName powershell-test-rg -Name  psdnsresolvername33nmy1fz
 ```
@@ -102,9 +105,9 @@ Location Name                      Type                           Etag
 westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000c2d4-0000-0800-0000-604013880000"
 ```
 
-Perintah ini mendapatkan satu Pemecah DNS berdasarkan nama.
+Perintah ini mendapatkan pemecah Masalah DNS tunggal berdasarkan nama.
 
-### Contoh 4: Daftar semua Pemecah DNS di bawah jaringan virtual 
+### Contoh 4: Mencantumkan semua Pemecah Masalah DNS di bawah jaringan virtual 
 ```powershell
 Get-AzDnsResolver -ResourceGroupName powershell-test-rg -VirtualNetworkName virtualnetwork-test
 ```
@@ -115,7 +118,7 @@ Location Name                      Type                           Etag
 westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000c2d4-0000-0800-0000-604013880000"
 ```
 
-Perintah ini mendapatkan satu Pemecah DNS melalui jaringan virtual.
+Perintah ini mendapatkan pemecah Masalah DNS tunggal dengan jaringan virtual.
 
 ## PARAMETERS
 
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama penuntas DNS.
+### -Name
+Nama pemecah masalah DNS.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -195,8 +198,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Jumlah hasil maksimum yang akan dikembalikan.
+### -Atas
+Jumlah maksimum hasil yang akan dikembalikan.
 Jika tidak ditentukan, mengembalikan hingga 100 hasil.
 
 ```yaml
@@ -226,8 +229,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -280,13 +283,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama aturan penerusan DNS.
-  - `[DnsResolverName <String>]`: Nama penuntas DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+  - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk penyelesaian DNS.
-  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk penyelesaian DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
+  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerReplica.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerReplica.md
-ms.openlocfilehash: b60dbaaf6ffc3cd97aa0ab9b6ba782b4f22a19d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8ea6c09f3269c6a8c9c16495b1a7922ba0b18349
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680508"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715772"
 ---
 # Get-AzMySqlFlexibleServerReplica
 
 ## SYNOPSIS
-Cantumkan semua replika untuk server tertentu.
+Mencantumkan semua replika untuk server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverreplica) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzMySqlFlexibleServerReplica -ResourceGroupName <String> -ServerName <String
 ```
 
 ## DESCRIPTION
-Cantumkan semua replika untuk server tertentu.
+Mencantumkan semua replika untuk server tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan replika server MySql menurut grup sumber daya dan nama server
+### Contoh 1: Mendapatkan replika server MySql menurut grup sumber daya dan nama server
 ```powershell
 Get-AzMySqlFlexibleServerReplica -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

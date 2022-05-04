@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesSchedule.md
-ms.openlocfilehash: d9dbf355746e6c541ccee8baab9f4d131e529b59
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: af4668de8ea42c45720a53ad1937e5fb6562ac3b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315171"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736372"
 ---
 # Remove-AzLabServicesSchedule
 
 ## SYNOPSIS
 Operasi untuk menghapus sumber daya jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/remove-azlabservicesschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzLabServicesSchedule -ResourceId <String> [-SubscriptionId <String>] [-D
  [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Menghapus
+### Hapus
 ```
 Remove-AzLabServicesSchedule -LabName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
@@ -53,7 +56,7 @@ Menghapus jadwal dari lab.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
+Nama lab yang secara unik mengidentifikasinya dalam berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama jadwal yang mengidentifikasinya secara unik di dalam lab.
+### -Name
+Nama jadwal yang secara unik mengidentifikasinya di dalam lab yang berisi.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jadwal
-Untuk membangun, lihat bagian CATATAN untuk properti SCHEDULE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SCHEDULE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.Schedule
@@ -205,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -258,18 +261,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 JADWAL <Schedule>: 
   - `[Note <String>]`: Catatan untuk jadwal ini.
-  - `[RecurrencePatternExpirationDate <DateTime?>]`: Saat pengulangan akan kedaluwarsa. Tanggal ini inklusif.
+  - `[RecurrencePatternExpirationDate <DateTime?>]`: Ketika pengulangan akan kedaluwarsa. Tanggal ini inklusif.
   - `[RecurrencePatternFrequency <RecurrenceFrequency?>]`: Frekuensi pengulangan.
-  - `[RecurrencePatternInterval <Int32?>]`: Interval untuk mengaktifkan jadwal. Misalnya, interval = 2 dan RecurrenceFrequency.Daily akan berjalan setiap 2 hari. Ketika tidak ada interval yang disediakan, interval 1 digunakan.
+  - `[RecurrencePatternInterval <Int32?>]`: Interval untuk memanggil jadwal. Misalnya, interval = 2 dan RecurrenceFrequency.Daily akan berjalan setiap 2 hari. Ketika tidak ada interval yang disediakan, interval 1 digunakan.
   - `[RecurrencePatternWeekDay <WeekDay[]>]`: Hari dalam seminggu jadwal berjalan. Digunakan saat Frekuensi diatur ke Mingguan.
-  - `[StartAt <DateTime?>]`: Ketika mesin virtual pengguna lab akan dimulai. Offset stempel waktu akan diabaikan dan timeZoneId digunakan sebagai gantinya.
-  - `[StopAt <DateTime?>]`: Ketika mesin virtual pengguna lab akan dihentikan. Offset stempel waktu akan diabaikan dan timeZoneId digunakan sebagai gantinya.
-  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
+  - `[StartAt <DateTime?>]`: Ketika komputer virtual pengguna lab akan dimulai. Offset tanda waktu akan diabaikan dan timeZoneId digunakan sebagai gantinya.
+  - `[StopAt <DateTime?>]`: Ketika komputer virtual pengguna lab akan dihentikan. Offset tanda waktu akan diabaikan dan timeZoneId digunakan sebagai gantinya.
+  - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
-  - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
   - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
   - `[TimeZoneId <String>]`: Id zona waktu IANA untuk jadwal.
 
 ## RELATED LINKS

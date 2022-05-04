@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelBookmark.md
-ms.openlocfilehash: eb862f341427528e7a04e6aaab35fb8f61171f79
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f6ef67d6f9e7a26cd2938a6508e40623f8947968
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274203"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144690380"
 ---
 # Remove-AzSentinelBookmark
 
 ## SYNOPSIS
 Menghapus Bookmark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelbookmark) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Remove-AzSentinelBookmark -InputObject <PSSentinelBookmark> [-PassThru]
 
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelBookmark** menghapus Bookmark secara permanen dari ruang kerja tertentu.
-Anda dapat melewati objek Bookmark menggunakan operator pipeline, atau menentukan parameter yang diperlukan.
-Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Anda dapat meneruskan objek Bookmark dengan menggunakan operator alur, atau Anda dapat menentukan parameter yang diperlukan.
+Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ $Bookmark = Get-AzSentinelBookmark @SentinelConnection | Where-Object {$_.Displa
 Remove-AzSentinelBookmark @SentinelConnection -BookmarkId $Bookmark.Name
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName untuk mendapatkan Bookmark dengan nama tertentu. Lalu menggunakan BookmarkId untuk menghapusnya.
+Contoh ini menggunakan objek koneksi untuk meneruskan resourceGroupName dan workspaceName untuk mendapatkan Bookmark dengan nama tertentu. Kemudian menggunakan BookmarkId untuk menghapusnya.
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

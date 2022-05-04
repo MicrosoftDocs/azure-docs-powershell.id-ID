@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppBackup.md
-ms.openlocfilehash: f346420ef0ee7641871da227ce63f0b0afc13451
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 39cdd2a48e0a545a0c9e46670fddb5d2bc887144
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222111"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731300"
 ---
 # New-AzWebAppBackup
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ New-AzWebAppBackup [[-BackupName] <String>] [-WebApp] <PSSite> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppBackup** membuat Cadangan Azure Web App.
+Cmdlet **New-AzWebAppBackup** membuat Azure Web App Backup.
 
 ## EXAMPLES
 
@@ -42,11 +45,11 @@ Cmdlet **New-AzWebAppBackup** membuat Cadangan Azure Web App.
 New-AzWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StorageAccountUrl "https://storageaccount.file.core.windows.net"
 ```
 
-Membuat cadangan aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS di https://storageaccount.file.core.windows.net
+Membuat cadangan aplikasi yang ditentukan ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS di https://storageaccount.file.core.windows.net
 
 ### Contoh 2
 
-Cmdlet New-AzWebAppBackup membuat Cadangan Azure Web App. (autogenerasi)
+Cmdlet New-AzWebAppBackup membuat Azure Web App Backup. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -70,8 +73,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Databases
-Database tipe DatabaseBackupSetting[]
+### -Database
+Database jenis DatabaseBackupSetting[]
 
 ```yaml
 Type: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting[]
@@ -100,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-URL Akun Storage
+Url Akun Storage
 
 ```yaml
 Type: System.String
@@ -176,13 +179,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ### Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting[]
 

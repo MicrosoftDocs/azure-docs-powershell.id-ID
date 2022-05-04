@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotPublishingProfile.md
-ms.openlocfilehash: 6abc63cda8848adc213d7b45701e2a2dc341e196
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 062100f39d0cd2c40ae74cf5a8d6c752c3be561b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115191"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691600"
 ---
 # Get-AzWebAppSlotPublishingProfile
 
 ## SYNOPSIS
 Mendapatkan profil penerbitan slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotpublishingprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Cmdlet **Get-AzWebAppSlotPublishingProfile** mendapatkan profil penerbitan Aplik
 Get-AzWebAppSlotPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "slot001" -Format "Ftp" -OutputFile "C:\Users\contoso\outputfile"
 ```
 
-Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk slot Slot001 yang berkaitan dengan Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
+Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk slot Slot001 yang berkaitan dengan Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -170,13 +173,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

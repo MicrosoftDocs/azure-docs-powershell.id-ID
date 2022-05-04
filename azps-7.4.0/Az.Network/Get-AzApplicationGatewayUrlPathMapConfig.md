@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayUrlPathMapConfig.md
-ms.openlocfilehash: 5cd5b950efe9131f3ea7f20adff89381d509f41b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 440f9a50766d6a1dbe51ea34fcd5e5d7879a7dbe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679644"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737690"
 ---
 # Get-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
 Mendapatkan array pemetaan jalur URL ke kumpulan server backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayurlpathmapconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzApplicationGatewayURLPathMapConfig** mendapatkan array pemetaan j
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi peta jalur URL
+### Contoh 1: Mendapatkan konfigurasi peta jalur URL
 ```powershell
 Get-AzApplicationGatewayUrlPathMapConfig -ApplicationGateway Gateway
 ```
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama peta jalur URL di mana cmdlet ini mendapatkan konfigurasi peta jalur.
+### -Name
+Menentukan nama peta jalur URL tempat cmdlet ini mendapatkan konfigurasi peta jalur.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

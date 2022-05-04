@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azef
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzEffectiveRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzEffectiveRouteTable.md
-ms.openlocfilehash: 13f623de06caab86b507e8059a36d796f21a957a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 840dd523d6e33c69d0a2322934b8689e8c11dd37
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939385"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717050"
 ---
 # Get-AzEffectiveRouteTable
 
 ## SYNOPSIS
-Mendapatkan tabel rute antarmuka jaringan yang efektif.
+Mendapatkan tabel rute yang efektif dari antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azeffectiveroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,17 +33,17 @@ Cmdlet **Get-AzEffectiveRouteTable** mengembalikan tabel rute efektif yang diter
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tabel rute yang efektif di antarmuka jaringan
+### Contoh 1: Dapatkan tabel rute efektif pada antarmuka jaringan
 ```powershell
 Get-AzEffectiveRouteTable -NetworkInterfaceName "MyNetworkInterface" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini mendapatkan tabel rute efektif yang terkait dengan antarmuka jaringan bernama MyNetworkInterface dalam grup sumber daya bernama MyResourceGroup.
+Perintah ini mendapatkan tabel rute efektif yang terkait dengan antarmuka jaringan bernama MyNetworkInterface di grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

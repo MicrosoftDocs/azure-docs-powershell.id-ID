@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject.md
-ms.openlocfilehash: 4d9d02d5388f7689835410bb150a52e4be5239e4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a2dfa6661f26f971b416770d96b2734c262c99e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810558"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689768"
 ---
 # New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk LoadBalancerFrontendIPConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceloadbalancerfrontendipconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,10 +46,10 @@ $feIpConfig = New-AzCloudServiceLoadBalancerFrontendIPConfigurationObject -Name 
 $loadBalancerConfig = New-AzCloudServiceLoadBalancerConfigurationObject -Name 'ContosoLB' -FrontendIPConfiguration $feIpConfig
 ```
 
-Perintah ini membuat objek konfigurasi IP frontend load balancer yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek konfigurasi IP frontend load balancer yang digunakan untuk membuat atau memperbarui layanan cloud.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
-### Contoh 2: Membuat objek konfigurasi IP frontend load balancer dengan alamat ID Pribadi
+### Contoh 2: Membuat objek konfigurasi IP frontend load balancer dengan alamat ID Privat
 ```powershell
 # Create role profile object
 $subnet = New-AzVirtualNetworkSubnetConfig -Name "WebTier" -AddressPrefix "10.0.0.0/24" -WarningAction SilentlyContinue 
@@ -59,7 +62,7 @@ Perintah ini membuat objek konfigurasi IP frontend load balancer dengan alamat I
 
 ## PARAMETERS
 
-### -Nama
+### -Name
 Nama FrontendIpConfigration.
 
 ```yaml
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Alamat IP Pribadi
+Alamat IP Privat
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Subnet ID
+ID Subnet
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

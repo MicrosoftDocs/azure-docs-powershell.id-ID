@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 90b3f3b72671ffe07f94ed5af9d296442566ffcc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fea3809e6eb03f3ce55d0604444fd2b70cfb5c1a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279837"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707896"
 ---
 # Set-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 Memperbarui status koneksi titik akhir privat pada layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Cmdlet **Set-AzPrivateEndpointConnection** memperbarui status koneksi titik akhi
 Set-AzPrivateEndpointConnection -Name TestPrivateEndpointConnection -ResourceGroupName TestResourceGroup -ServiceName TestPrivateLinkService -PrivateLinkServiceConnectionState "Approved"
 ```
 
-Contoh ini memperbarui status koneksi titik akhir privat ke Disetujui.
+Contoh ini memperbarui status koneksi titik akhir privat menjadi Disetujui.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceType
-Tipe sumber daya tautan privat.
+Jenis sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure dari koneksi titik akhir privat.
+Id azure resource manager dari koneksi titik akhir privat.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -182,9 +185,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Setujui-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
+[Approve-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
 
-[Tolak-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
+[Deny-AzPrivateEndpointConnection](./Deny-AzPrivateEndpointConnection.md)
 
 [Get-AzPrivateEndpointConnection](./Get-AzPrivateEndpointConnection.md)
 

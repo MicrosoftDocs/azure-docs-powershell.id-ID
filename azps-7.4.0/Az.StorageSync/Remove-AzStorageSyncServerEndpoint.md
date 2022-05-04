@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: 58cbad74a31165cc365f0ae5dce22dd518454c16
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2bdf1df26cf960f4a214b08f94c0cb5a32b9c201
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143270818"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716150"
 ---
 # Remove-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini akan menghapus titik akhir server yang ditentukan. Sinkronkan ke lokasi ini akan segera berhenti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzStorageSyncServerEndpoint [-ResourceId] <String> [-Force] [-PassThru] [
 ```
 
 ## DESCRIPTION
-Menghapus titik akhir server adalah operasi yang merusak. Lokasi server ini akan berhenti menyinkronkan. Operasi ini tidak boleh dilakukan untuk mengatasi masalah sinkronisasi. Jika lokasi server ini (termasuk. file) ditambahkan lagi ke grup sinkronisasi yang sama dengan titik akhir server, itu bisa menyebabkan file konflik dan konsekuensi lain yang tidak diinginkan. Perintah ini ditujukan untuk penolakan saja.
+Menghapus titik akhir server adalah operasi yang merusak. Lokasi server ini akan berhenti disinkronkan. Operasi ini tidak boleh dilakukan untuk menyelesaikan masalah sinkronisasi. Jika lokasi server ini (termasuk file) ditambahkan lagi ke grup sinkronisasi yang sama dengan titik akhir server, itu dapat menyebabkan file konflik dan konsekuensi lain yang tidak diinginkan. Perintah ini hanya ditujukan untuk penonaktifan.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Perintah ini akan menghapus titik akhir server.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Pasokan -Paksa untuk melewati konfirmasi perintah ini.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Input ServerEndpoint, biasanya melewati saluran.
+Objek Input ServerEndpoint, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSServerEndpoint
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ServerEndpoint.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, maka cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronkan.
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

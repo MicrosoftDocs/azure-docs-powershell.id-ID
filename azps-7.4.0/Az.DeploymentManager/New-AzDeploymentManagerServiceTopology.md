@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceTopology.md
-ms.openlocfilehash: c2a08107295110a6f7c9983782a23b511d830230
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff0f30a4fa5a4a0a27038f6ff20dbb3aea77707d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143317547"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714459"
 ---
 # New-AzDeploymentManagerServiceTopology
 
 ## SYNOPSIS
 Membuat topologi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerservicetopology) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,14 +43,14 @@ Objek yang dikembalikan memiliki bidang ResourceId yang dapat direferensikan dal
 New-AzDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology -Location "Central US" -ArtifactSourceId "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/artifactSources/ContosoArtifactSource"
 ```
 
-Cmdlet ini membuat topologi layanan baru di grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi AS Tengah. Sumber artefak ResourceId menunjukkan bahwa artefak yang diperlukan untuk definisi unit layanan dalam topologi ini perlu dibaca dari sumber artefak yang ditentukan.
+Cmdlet ini membuat topologi layanan baru di grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi US Tengah. Sumber artefak ResourceId menunjukkan bahwa artefak yang diperlukan untuk definisi unit layanan dalam topologi ini perlu dibaca dari sumber artefak yang ditentukan.
 
 ### Contoh 2
 ```powershell
 New-AzDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology -Location "Central US"
 ```
 
-Cmdlet ini membuat topologi layanan baru di grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi AS Tengah. Tidak adanya referensi sumber artefak menunjukkan bahwa artefak yang diperlukan untuk definisi unit layanan dalam topologi ini akan disediakan sebagai URI SAS absolut di unit layanan.
+Cmdlet ini membuat topologi layanan baru di grup sumber daya ContosoResourceGroup dengan nama ContosoServiceTopology dan di lokasi US Tengah. Tidak adanya referensi sumber artefak menunjukkan bahwa artefak yang diperlukan untuk definisi unit layanan dalam topologi ini akan disediakan sebagai URI SAS absolut di unit layanan.
 
 ## PARAMETERS
 

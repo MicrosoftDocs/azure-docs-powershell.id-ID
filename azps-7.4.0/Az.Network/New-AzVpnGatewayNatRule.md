@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGatewayNatRule.md
-ms.openlocfilehash: 968444ef999e772dbc15fafb092e8ea32dc0df3f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0e62a0ed1d71f877ce55cd9106693581a03d704d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313389"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720902"
 ---
 # New-AzVpnGatewayNatRule
 
 ## SYNOPSIS
-Membuat aturan NAT di VpnGateway yang dapat dikaitkan dengan VpnSiteLinkConnection.
+Membuat aturan NAT pada VpnGateway yang dapat dikaitkan dengan VpnSiteLinkConnection.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzVpnGatewayNatRule -ParentResourceId <String> -Name <String> [-Type <String
 ```
 
 ## DESCRIPTION
-Membuat aturan NAT di VpnGateway yang dapat dikaitkan dengan VpnGateway.
+Membuat aturan NAT pada VpnGateway yang dapat dikaitkan dengan VpnGateway.
 
 ## EXAMPLES
 
@@ -77,12 +80,12 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/testRg/providers/Microsoft.Network/vpnGateways/testvpngw/natRules/testNatRule
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual. Kemudian, kami akan membuat VpnGateway di bawah Hub Virtual tersebut. Lalu, menggunakan perintah ini: New-AzVpnGatewayNatRule, aturan NAT dapat dibuatdan dikaitkan dengan VpnGateway yang dibuat.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual. Kemudian, kita akan membuat VpnGateway di bawah Hub Virtual tersebut. Kemudian, menggunakan perintah ini: New-AzVpnGatewayNatRule, aturan NAT dapat dibuatdan dikaitkan dengan VpnGateway yang dibuat.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalMapping
-Daftar pemetaan eksternal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan eksternal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalMapping
-Daftar pemetaan internal subnet alamat IP pribadi untuk NAT
+Daftar pemetaan internal subnet alamat IP privat untuk NAT
 
 ```yaml
 Type: System.String[]
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfigurationId
-ID Konfigurasi IP aturan NAT ini berlaku untuk
+ID Konfigurasi IP yang berlaku untuk aturan NAT ini
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari induk VpnGateway untuk Aturan NAT ini.
+Id sumber daya vpnGateway induk untuk Aturan NAT ini.
 
 ```yaml
 Type: System.String
@@ -277,8 +280,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe aturan NAT untuk VPN NAT
+### -Type
+Jenis aturan NAT untuk VPN NAT
 
 ```yaml
 Type: System.String
@@ -293,8 +296,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

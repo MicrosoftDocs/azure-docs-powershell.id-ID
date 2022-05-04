@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: 5c0af72f81aca0830e62bcf483e56fe00931b7bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b6c74bfc4b70481ae8ee28f55ba2f534620a8628
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738702"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723078"
 ---
-# Get-AzSqlDatabaseFailoverGroup
+# Dapatkan-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Azure SQL Database Grup Failover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ Get-AzSqlDatabaseFailoverGroup [-ServerName] <String> [[-FailoverGroupName] <Str
 ```
 
 ## DESCRIPTION
-Mendapatkan Grup Azure SQL Database Failover tertentu atau mencantumkan Grup Failover di server.
-Salah satu server dalam Grup Failover mungkin digunakan untuk menjalankan perintah. Nilai yang dikembalikan akan mencerminkan status server yang ditentukan sehubungan dengan Grup Failover.
+Mendapatkan Grup Failover Azure SQL Database tertentu atau mencantumkan Grup Failover di server.
+Salah satu server dalam Grup Failover dapat digunakan untuk menjalankan perintah. Nilai yang dikembalikan akan mencerminkan status server yang ditentukan sehubungan dengan Grup Failover.
 
 ## EXAMPLES
 
@@ -35,14 +38,14 @@ Salah satu server dalam Grup Failover mungkin digunakan untuk menjalankan perint
 $failoverGroups = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName server
 ```
 
-Mencantumkan semua Grup Failover di server.
+Mencantumkan semua Grup Failover pada server.
 
 ### Contoh 2
 ```powershell
 $failoverGroup = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName server -FailoverGroupName fg
 ```
 
-Dapatkan Grup Failover tertentu.
+Mendapatkan Grup Failover tertentu.
 
 ### Contoh 3
 ```powershell
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama Grup Azure SQL Database Failover untuk diambil.
+Nama Grup Failover Azure SQL Database yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -128,15 +131,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
+[Baru-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
 
 [Set-AzSqlDatabaseFailoverGroup](./Set-AzSqlDatabaseFailoverGroup.md)
 
-[Add-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
+[Tambahkan-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFromFailoverGroup](./Remove-AzSqlDatabaseFromFailoverGroup.md)
 
-[Switch-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
+[Alihkan-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 

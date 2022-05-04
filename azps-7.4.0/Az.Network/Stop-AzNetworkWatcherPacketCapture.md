@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: 87262bc00ea20ba6c7a02299fe0b6bb513af972d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 52c64f85511be6a2e6d699375b2eb6738410bffa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870534"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698972"
 ---
 # Stop-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
-Menghentikan sesi perekaman paket yang berjalan
+Menghentikan sesi pengambilan paket yang sedang berjalan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-aznetworkwatcherpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Stop-AzNetworkWatcherPacketCapture -Location <String> -PacketCaptureName <String
 ```
 
 ## DESCRIPTION
-Stop-AzNetworkWatcherPacketCapture menghentikan sesi pengambilan paket yang berjalan. Setelah sesi dihentikan, file pengambilan paket diunggah ke penyimpanan dan/atau disimpan secara lokal di VM tergantung pada konfigurasinya.
+Stop-AzNetworkWatcherPacketCapture menghentikan sesi pengambilan paket yang sedang berjalan. Setelah sesi dihentikan, file pengambilan paket diunggah ke penyimpanan dan/atau disimpan secara lokal pada VM tergantung pada konfigurasinya.
 
 ## EXAMPLES
 
@@ -48,12 +51,12 @@ Stop-AzNetworkWatcherPacketCapture menghentikan sesi pengambilan paket yang berj
 Stop-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -PacketCaptureName "PacketCaptureTest"
 ```
 
-Dalam contoh ini, kami menghentikan sesi penangkapan paket yang berjalan bernama "PacketCaptureTest". Setelah sesi dihentikan, file pengambilan paket diunggah ke penyimpanan dan/atau disimpan secara lokal di VM tergantung pada konfigurasinya.
+Dalam contoh ini kita menghentikan sesi pengambilan paket yang sedang berjalan bernama "PacketCaptureTest". Setelah sesi dihentikan, file pengambilan paket diunggah ke penyimpanan dan/atau disimpan secara lokal pada VM tergantung pada konfigurasinya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PacketCaptureName
-Nama penangkapan paket.
+Nama pengambilan paket.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -233,7 +236,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Test-AzNetworkWatcherIPFlow](./Test-AzNetworkWatcherIPFlow.md)
 
@@ -265,9 +268,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [New-AzNetworkWatcherConnectionMonitor](./New-AzNetworkWatcherConnectionMonitor.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesBackupPolicy.md
-ms.openlocfilehash: 786c510f46e1fd15b6d1de58aa721162410685a0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 52fd88350b35a6ae23c4e23054f427d649f343bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708076"
 ---
 # Set-AzNetAppFilesBackupPolicy
 
 ## SYNOPSIS
-Memperbarui Kebijakan Pencadangan Azure NetApp Files (ANF) dengan kumpulan data baru. 
+Memperbarui Kebijakan Pencadangan Azure NetApp Files (ANF) dengan himpunan data baru. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesbackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Set-AzNetAppFilesBackupPolicy -Name <String> [-Enabled] [-DailyBackupsToKeep <In
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzNetAppFilesBackupPolicy** mengubah akun ANF.
+Cmdlet **Set-AzNetAppFilesBackupPolicy** memodifikasi akun ANF.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Set-AzNetAppFilesBackupPolicy** mengubah akun ANF.
 Set-AzNetAppFilesBackupPolicy -ResourceGroupName "MyRG" -l "westus2" -AccountName "MyAccount" -Name "MyBackupPolicy" -Tag @{"tag1" = "tagValue"} -Enabled -DailyBackupsToKeep 1 -WeeklyBackupsToKeep 2 -MonthlyBackupsToKeep 2
 ```
 
-Perintah ini melakukan pembaruan pada kebijakan cadangan yang diberikan. 
+Perintah ini melakukan pembaruan pada kebijakan pencadangan yang diberikan. 
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailyBackupsToKeep
-Jumlah cadangan harian untuk disimpan
+Jumlah pencadangan harian untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Properti untuk memutuskan kebijakan diaktifkan atau tidak
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlyBackupsToKeep
-Jumlah pencadangan bulanan untuk dipertahankan
+Jumlah pencadangan bulanan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -162,8 +165,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan cadangan ANF
+### -Name
+Nama kebijakan pencadangan ANF
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklyBackupsToKeep
-Jumlah cadangan mingguan untuk dipertahankan
+Jumlah pencadangan mingguan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -YearlyBackupsToKeep
-Jumlah cadangan tahunan untuk dipertahankan
+Jumlah pencadangan tahunan untuk disimpan
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -252,8 +255,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

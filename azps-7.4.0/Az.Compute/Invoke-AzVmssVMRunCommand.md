@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVmssVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVmssVMRunCommand.md
-ms.openlocfilehash: 0b9e07be245b7c2e4e19bfb9b27dacccc38569f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbeec1bf4b70de10457a301ddd301a730a1a375c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809730"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685630"
 ---
 # Invoke-AzVmssVMRunCommand
 
 ## SYNOPSIS
-Jalankan perintah pada VM Set Skala Mesin Virtual.
+Jalankan perintah pada Komputer Virtual Machine Scale Set VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmssvmruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzVmssVMRunCommand -CommandId <String> [-ScriptPath <String>] [-Parameter
 ```
 
 ## DESCRIPTION
-Memanggil perintah jalankan pada VM Set Skala Mesin Virtual.
+Panggil perintah jalankan pada Komputer Virtual Machine Scale Set VM.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Memanggil perintah jalankan pada VM Set Skala Mesin Virtual.
 Invoke-AzVmssVMRunCommand -ResourceGroupName 'rgname' -VMScaleSetName 'vmssname' -InstanceId '0' -CommandId 'RunPowerShellScript' -ScriptPath 'sample.ps1' -Parameter @{"arg1" = "var1";"arg2" = "var2"}
 ```
 
-Perintah jalankan RunPowerShellScript dengan menimpa skrip 'sample.ps1' dan parameter pada VM ID '0' dalam kumpulan skala mesin virtual 'vmssname' dalam grup sumber daya 'rgname'.
+Panggil perintah jalankan RunPowerShellScript dengan mengambil alih skrip 'sample.ps1' dan parameter pada VM ID '0' dalam set skala komputer virtual 'vmssname' dalam grup sumber daya 'rgname'.
 
 ### Contoh 2
 ```powershell
@@ -58,12 +61,12 @@ $VmssVM = Get-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -Insta
 Invoke-AzVmssVMRunCommand -VirtualMachineScaleSetVM $VmssVM -CommandId 'RunPowerShellScript' -ScriptPath 'sample.ps1' -Parameter @{"arg1" = "var1";"arg2" = "var2"}
 ```
 
-Perintah jalankan RunPowerShellScript dengan menimpa skrip 'sample.ps1' dan parameter pada VM ID '0' dalam kumpulan skala mesin virtual 'vmssname' dalam grup sumber daya 'rgname'.
+Panggil perintah jalankan RunPowerShellScript dengan mengambil alih skrip 'sample.ps1' dan parameter pada VM ID '0' dalam set skala komputer virtual 'vmssname' dalam grup sumber daya 'rgname'.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommandId
-Id perintah jalankan.
+Id perintah eksekusi.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-ID instans dari skala mesin virtual set VM.
+ID instans VM set skala komputer virtual.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter perintah jalankan.
+Parameter perintah eksekusi.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya untuk kumpulan skala mesin virtual VM
+Id sumber daya untuk VM set skala komputer virtual
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptPath
-Jalur skrip yang akan dijalankan.  Ketika nilai ini diberikan, skrip yang diberikan akan menimpa skrip default perintah.
+Jalur skrip yang akan dijalankan.  Ketika nilai ini diberikan, skrip yang diberikan akan mengambil alih skrip default perintah.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSetVM
-Skala Mesin Virtual PS Mengatur Objek VM.
+Objek VM Set Skala Komputer Virtual PS.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Nama skala mesin virtual set VM.
+Nama VM set skala komputer virtual.
 
 ```yaml
 Type: System.String
@@ -212,8 +215,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

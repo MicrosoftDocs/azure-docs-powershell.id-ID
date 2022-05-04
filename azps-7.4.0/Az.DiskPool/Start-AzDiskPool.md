@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Start-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Start-AzDiskPool.md
-ms.openlocfilehash: 5e3b121114d8f5c160b6cfe6f5b6166f9e30e2aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2dc8d8bf05a1ba76746901aed909442f1193a724
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287541"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722754"
 ---
 # Start-AzDiskPool
 
 ## SYNOPSIS
-Operasi untuk memulai Disk Pool.
-Operasi mulai ini dapat memakan waktu 10 menit untuk selesai.
+Operasi untuk memulai Kumpulan Disk.
+Operasi mulai ini dapat memakan waktu 10 menit untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/start-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,30 +37,30 @@ Start-AzDiskPool -InputObject <IDiskPoolIdentity> [-DefaultProfile <PSObject>] [
 ```
 
 ## DESCRIPTION
-Operasi untuk memulai Disk Pool.
-Operasi mulai ini dapat memakan waktu 10 menit untuk selesai.
+Operasi untuk memulai Kumpulan Disk.
+Operasi mulai ini dapat memakan waktu 10 menit untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai Disk Pool
+### Contoh 1: Memulai Kumpulan Disk
 ```powershell
 Start-AzDiskPool -DiskPoolName 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test'
 ```
 
 Perintah ini memulai Kumpulan Disk.
 
-### Contoh 2: Memulai Disk Pool menurut objek
+### Contoh 2: Memulai Kumpulan Disk menurut objek
 ```powershell
 Get-AzDiskPool -Name 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test' | Start-AzDiskPool
 ```
 
-Perintah ini memulai Disk Pool menurut objek.
+Perintah ini memulai Kumpulan Disk menurut objek.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kumpulan Disk.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -229,11 +232,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
-  - `[DiskPoolName <String>]`: Nama Disk Pool.
+  - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

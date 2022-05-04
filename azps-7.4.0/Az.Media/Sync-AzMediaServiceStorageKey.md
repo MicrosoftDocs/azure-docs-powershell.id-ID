@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/sync-azmed
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Sync-AzMediaServiceStorageKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Sync-AzMediaServiceStorageKey.md
-ms.openlocfilehash: 3cc5a061ac44cb784c9181d5c6fbda8891ba5458
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 341d2e458c4e76dc237843c0e99ceb943d57f77e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120123"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708238"
 ---
 # Sync-AzMediaServiceStorageKey
 
 ## SYNOPSIS
 Menyinkronkan kunci akun penyimpanan untuk akun penyimpanan yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/sync-azmediaservicestoragekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Sync-AzMediaServiceStorageKey -ResourceGroupName "ResourceGroup001" -AccountName
 ```
 
 Perintah pertama menggunakan cmdlet Get-AzStorageAccount untuk mendapatkan akun penyimpanan bernama Storage135 milik ResourceGroup001 dan menyimpan hasilnya dalam variabel bernama $StorageAccount.
-Perintah kedua menyinkronkan kunci akun penyimpanan untuk layanan media bernama MediaService001 menggunakan properti **Id** yang terdapat dalam variabel $StorageAccount.
+Perintah kedua menyinkronkan kunci akun penyimpanan untuk layanan media bernama MediaService001 menggunakan properti **Id** yang terkandung dalam variabel $StorageAccount.
 
 ## PARAMETERS
 
@@ -103,8 +106,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

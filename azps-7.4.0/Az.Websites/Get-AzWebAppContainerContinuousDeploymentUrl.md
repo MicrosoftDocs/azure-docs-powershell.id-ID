@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppContainerContinuousDeploymentUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppContainerContinuousDeploymentUrl.md
-ms.openlocfilehash: aefa6b1aa61ec02ed0d8471dda3faee1fa1a2567
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d97eabc831fe0685b91e90a24a0e6ce80f4ca67e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930601"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691618"
 ---
 # Get-AzWebAppContainerContinuousDeploymentUrl
 
 ## SYNOPSIS
-Get-AzWebAppContainerContinuousDeploymentUrl akan mengembalikan url penyebaran kontainer berkelanjutan
+Get-AzWebAppContainerContinuousDeploymentUrl akan mengembalikan url penyebaran berkelanjutan kontainer
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappcontainercontinuousdeploymenturl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzWebAppContainerContinuousDeploymentUrl [-WebApp] <PSSite> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Get-AzWebAppContainerContinuousDeploymentUrl akan mengembalikan url penyebaran kontainer berkelanjutan
+Get-AzWebAppContainerContinuousDeploymentUrl akan mengembalikan url penyebaran berkelanjutan kontainer
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Get-AzWebAppContainerContinuousDeploymentUrl akan mengembalikan url penyebaran k
 Get-AzWebAppContainerContinuousDeploymentUrl -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP"
 ```
 
-Perintah ini akan mengembalikan url penyebaran kontainer berkelanjutan.
+Perintah ini akan mengembalikan url penyebaran berkelanjutan kontainer.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aplikasi web.
 
 ```yaml
@@ -121,13 +124,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesSnapshotPolicy.md
-ms.openlocfilehash: 8af3df6dab735db39470583a774db4cf0a982d96
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6f7960024a07c7af3bedb87160e7ec9b4b39064f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872676"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708148"
 ---
 # Get-AzNetAppFilesSnapshotPolicy
 
 ## SYNOPSIS
-Mendapatkan detail kebijakan snapshot Azure NetApp Files (ANF).
+Mendapatkan detail kebijakan rekam jepret Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilessnapshotpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetAppFilesSnapshotPolicy -AccountObject <PSNetAppFilesAccount>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetAppFilesSnapshotPolicy** mendapatkan detail kebijakan snapshot ANF.
+Cmdlet **Get-AzNetAppFilesSnapshotPolicy** mendapatkan detail kebijakan rekam jepret ANF.
 
 ## EXAMPLES
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Akun untuk objek Kebijakan Snapshot baru
+Akun untuk objek Kebijakan Rekam Jepret baru
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -96,8 +99,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kebijakan snapshot ANF
+### -Name
+Nama kebijakan rekam jepret ANF
 
 ```yaml
 Type: System.String
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya Kebijakan Snapshot ANF
+Id sumber daya Kebijakan Rekam Jepret ANF
 
 ```yaml
 Type: System.String
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

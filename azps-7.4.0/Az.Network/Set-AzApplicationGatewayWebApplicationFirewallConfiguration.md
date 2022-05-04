@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayWebApplicationFirewallConfiguration.md
-ms.openlocfilehash: ddfed27c18b476fdaf100978271d9b6b63b46f10
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1a381982e400ccb804c410b4cdaad23fd56583d5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676944"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715592"
 ---
 # Set-AzApplicationGatewayWebApplicationFirewallConfiguration
 
 ## SYNOPSIS
-Mengubah konfigurasi WAF gateway aplikasi.
+Memodifikasi konfigurasi WAF gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaywebapplicationfirewallconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,20 +37,20 @@ Cmdlet **Set-AzApplicationGatewayWebApplicationFirewallConfiguration memodifikas
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui konfigurasi firewall aplikasi gateway web aplikasi
+### Contoh 1: Memperbarui konfigurasi firewall aplikasi web gateway aplikasi
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 Set-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway $AppGw -Enabled $True -FirewallMode "Detection" -RuleSetType "OWASP" -RuleSetVersion "3.0"
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 lalu menyimpannya dalam variabel $AppGw.
-Perintah kedua memungkinkan konfigurasi firewall untuk gateway aplikasi yang disimpan di $AppGw dan mengatur mode firewall ke "Deteksi", RuleSetType ke "OWASP" dan RuleSetVersion menjadi "3.0".
+Perintah kedua memungkinkan konfigurasi firewall untuk gateway aplikasi yang disimpan di $AppGw dan mengatur mode firewall ke "Deteksi", RuleSetType ke "OWASP" dan RuleSetVersion ke "3.0".
 
 ## PARAMETERS
 
 ### -ApplicationGateway
 Menentukan objek gateway aplikasi.
-Anda bisa menggunakan cmdlet Get-AzApplicationGateway untuk mendapatkan objek gateway aplikasi.
+Anda dapat menggunakan cmdlet Get-AzApplicationGateway untuk mendapatkan objek gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
+### -Diaktifkan
 Menunjukkan apakah firewall aplikasi web diaktifkan.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileUploadLimitInMb
-Batas pengunggaan file maks dalam MB.
+Batas unggahan file maks dalam MB.
 
 ```yaml
 Type: System.Int32
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxRequestBodySizeInKb
-Ukuran bodi permintaan maks dalam KB.
+Ukuran isi permintaan maks dalam KB.
 
 ```yaml
 Type: System.Int32
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetType
-Tipe kumpulan aturan firewall aplikasi web. Nilai yang dapat diterima untuk parameter ini adalah: 
+Jenis seperangkat aturan firewall aplikasi web. Nilai yang dapat diterima untuk parameter ini adalah: 
 - OWASP
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetVersion
-Versi tipe kumpulan aturan.
+Versi jenis seperangkat aturan.
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

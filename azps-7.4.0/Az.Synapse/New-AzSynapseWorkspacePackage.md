@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspacePackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspacePackage.md
-ms.openlocfilehash: 4929c88976aedbf2e9174719ea745e532da896b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 15737fbad7a892a3faa8b6ee8c86d1d08db5bcaa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116037"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716060"
 ---
 # New-AzSynapseWorkspacePackage
 
 ## SYNOPSIS
 Mengunggah file paket ruang kerja lokal ke ruang kerja Azure Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapseworkspacepackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,14 +45,14 @@ New-AzSynapseWorkspacePackage -WorkspaceObject <PSSynapseWorkspace> -Package <St
 New-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace -Package ".\ContosoPackage.whl"
 ```
 
-Perintah ini mengunggah paket ruang kerja yang lokasinya ".\ContosoPackage.whl" ke ruang kerja Azure Synapse bernama ContosoWorkspace. Pacakge ruang kerja dapat berupa file roda atau stoples.
+Perintah ini mengunggah paket ruang kerja yang lokasinya adalah ".\ContosoPackage.whl" ke ruang kerja Azure Synapse bernama ContosoWorkspace. Pacakge ruang kerja dapat berupa file roda atau jar.
 
 ### Contoh 2: Upload semua paket ruang kerja di bawah folder saat ini
 ```powershell
 Get-ChildItem -File | New-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini menggunakan cmdlet inti Windows PowerShell Get-ChildItem untuk mendapatkan semua paket ruang kerja dalam folder saat ini dan di subfolder, lalu meneruskannya ke cmdlet saat ini menggunakan operator pipeline. Cmdlet New-AzSynapseWorkspacePackage mengunggah file paket ruang kerja ke ruang kerja Azure Synapse bernama ContosoWorkspace.
+Perintah ini menggunakan cmdlet Windows PowerShell inti Get-ChildItem untuk mendapatkan semua paket ruang kerja di folder saat ini dan di subfolder, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator alur. Cmdlet New-AzSynapseWorkspacePackage mengunggah file paket ruang kerja ke ruang kerja Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 3: Upload paket ruang kerja bernama dan menambahkannya ke kumpulan Apache Spark
 ```powershell
@@ -57,12 +60,12 @@ $package = New-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace -Packag
 Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -PackageAction Add -Package $package
 ```
 
-Perintah pertama ini mengunggah paket ruang kerja yang lokasinya adalah ".\ContosoPackage.whl" ke ruang kerja Azure Synapse bernama ContosoWorkspace. Pacakge ruang kerja dapat berupa file roda atau stoples. Kemudian perintah kedua menambahkan paket ke kumpulan Apache Spark tertentu bernama ContotoSparkPool.
+Perintah pertama ini mengunggah paket ruang kerja yang lokasinya adalah ".\ContosoPackage.whl" ke ruang kerja Azure Synapse bernama ContosoWorkspace. Pacakge ruang kerja dapat berupa file roda atau jar. Kemudian perintah kedua menambahkan paket ke kumpulan Apache Spark tertentu bernama ContotoSparkPool.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas asinkron serentak.
+Jumlah total tugas asinkron bersamaan.
 Nilai defaultnya adalah 10.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -152,8 +155,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

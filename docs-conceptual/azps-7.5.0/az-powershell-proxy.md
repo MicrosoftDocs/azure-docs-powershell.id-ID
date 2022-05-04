@@ -1,17 +1,17 @@
 ---
 description: Cara menggunakan modul Azure Az PowerShell di belakang server proksi
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menggunakan modul Az PowerShell di belakang proksi
-ms.openlocfilehash: f98dc11df5108b022e1da3c3faf8f62ec31f3018
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9341af6dd3115959285a9150c3dacb0724b8e78b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116339"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691510"
 ---
 # <a name="use-the-az-powershell-module-behind-a-proxy"></a>Menggunakan modul Az PowerShell di belakang proksi
 

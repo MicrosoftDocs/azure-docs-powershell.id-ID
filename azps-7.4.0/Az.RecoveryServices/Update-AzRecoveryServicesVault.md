@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesVault.md
-ms.openlocfilehash: bd696ad3f2f437877dbccaa0f9459471e52903d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e053dd21d4c220e6ba5710a5190e7702ba065913
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802296"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737344"
 ---
 # Update-AzRecoveryServicesVault
 
 ## SYNOPSIS
-Memperbarui MSIdentity ke kubah layanan pemulihan.
+Memperbarui MSIdentity ke vault layanan pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,18 +36,18 @@ Update-AzRecoveryServicesVault [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet ini digunakan untuk menambahkan atau menghapus MSI dari kubah layanan pemulihan. Gunakan param -IdentityType untuk menambahkan identitas SystemAssigned/UserAssigned ke RSVault. Gunakan sakelar RemoveSystemAssigned/RemoveUserAssigned untuk menghapus MSI dari kubah.
+Cmdlet ini digunakan untuk menambahkan atau menghapus MSI dari vault layanan pemulihan. Gunakan param -IdentityType untuk menambahkan identitas SystemAssigned/UserAssigned ke RSVault. Gunakan switch RemoveSystemAssigned/RemoveUserAssigned untuk menghapus MSI dari vault.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan identitas SystemAssigned ke kubah layanan pemulihan
+### Contoh 1: Menambahkan identitas SystemAssigned ke vault layanan pemulihan
 ```powershell
 Update-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "vaultName" -IdentityType SystemAssigned
 ```
 
-Cmdlet ini digunakan untuk menambahkan identitas SystemAssigned ke kubah layanan pemulihan.
+Cmdlet ini digunakan untuk menambahkan identitas SystemAssigned ke vault layanan pemulihan.
 
-### Contoh 2: Tambahkan identitas UserAssigned ke kubah layanan pemulihan
+### Contoh 2: Menambahkan identitas UserAssigned ke vault layanan pemulihan
 ```powershell
 $vault = Get-AzRecoveryServicesVault -Name "vaultName" -ResourceGroupName "resourceGroupName"
 $identity1 = Get-AzUserAssignedIdentity -ResourceGroupName "resourceGroupName" -Name "UserIdentity1"
@@ -63,12 +66,12 @@ UserAssignedIdentities : {[/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/r
                          Microsoft.Azure.Management.RecoveryServices.Models.UserIdentity]}
 ```
 
-Cmdlet pertama mengambil kubah layanan pemulihan.
+Cmdlet pertama mengambil vault layanan pemulihan.
 Cmdlet kedua dan ketiga mengambil MSI yang dibuat pengguna.
-Cmdlet keempat menambahkan MSI pengguna ke kubah.
-Cmdlet kelima memperlihatkan identitas yang ditambahkan ke kubah.
+Cmdlet keempat menambahkan MSI pengguna ke vault.
+Cmdlet kelima menunjukkan Identitas yang ditambahkan ke vault.
 
-### Contoh 3: Remove SystemAssigned and UserAssigned identities from the vault
+### Contoh 3: Menghapus identitas SystemAssigned dan UserAssigned dari vault
 ```powershell
 $vault = Get-AzRecoveryServicesVault -Name "vaultName" -ResourceGroupName "resourceGroupName"
 $updatedVault = Update-AzRecoveryServicesVault -ResourceGroupName $vault.ResourceGroupName -Name $vault.Name -RemoveSystemAssigned
@@ -84,11 +87,11 @@ Type                   : None
 UserAssignedIdentities :
 ```
 
-Cmdlet pertama mengambil kubah layanan pemulihan.
-Cmdlet kedua menghapus identitas SystemAssigned dari kubah.
-Cmdlet ketiga mengambil semua MSI pengguna sebagai daftar dari kubah.
-Cmdlet keempat menghapus semua MSI pengguna dari kubah. Jika anda ingin, Anda bisa menyediakan identitas pengguna yang dipilih untuk dihapus sebagai koma dipisahkan, seperti dalam contoh sebelumnya.
-Cmdlet kelima memperlihatkan identitas dalam kubah, saat kami menghapus semua identitas, Tipe ditampilkan sebagai Tidak Ada.
+Cmdlet pertama mengambil vault layanan pemulihan.
+Cmdlet kedua menghapus identitas SystemAssigned dari vault.
+Cmdlet ketiga mengambil semua MSI pengguna sebagai daftar dari vault.
+Cmdlet keempat menghapus semua MSI pengguna dari vault. Jika mau, Anda dapat memberikan identitas pengguna yang dipilih untuk dihapus sebagai dipisahkan koma, seperti dalam contoh sebelumnya.
+Cmdlet kelima menunjukkan identitas di brankas, saat kami menghapus semua identitas, Jenis ditampilkan sebagai Tidak Ada.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe MSI yang ditetapkan ke Vault Layanan Pemulihan.
+Jenis MSI yang ditetapkan ke Vault Layanan Pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.MSIdentity
@@ -138,9 +141,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
-Menentukan nama kubah layanan pemulihan untuk diperbarui.
+Menentukan nama vault layanan pemulihan yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveSystemAssigned
-Berikan sakelar ini untuk menghapus SystemAssigned Identity dari kubah.
+Berikan sakelar ini untuk menghapus SystemAssigned Identity dari vault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveUserAssigned
-Berikan sakelar ini untuk menghapus UserAssigned Identity dari kubah. Juga, berikan parameter IdenityId bersama dengan sakelar ini.
+Berikan sakelar ini untuk menghapus UserAssigned Identity dari vault. Selain itu, berikan parameter IdenityId bersama dengan sakelar ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 
-Menentukan nama grup sumber daya Azure tempat kubah layanan pemulihan ada.
+Menentukan nama grup sumber daya Azure tempat vault layanan pemulihan berada.
 
 ```yaml
 Type: System.String
@@ -200,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

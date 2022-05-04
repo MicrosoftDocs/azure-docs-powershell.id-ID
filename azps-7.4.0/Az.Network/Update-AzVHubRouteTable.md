@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVHubRouteTable.md
-ms.openlocfilehash: 74959ea7996080b2b807a2449c0568f3a4e152ee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0dd3c614c2e03a19e3d9a03f1a09ea63a9e9927f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741834"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698954"
 ---
 # Update-AzVHubRouteTable
 
 ## SYNOPSIS
-Hapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
+Menghapus sumber daya tabel rute hub yang terkait dengan VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Update-AzVHubRouteTable -ResourceId <String> [-Route <PSVHubRoute[]>] [-Label <S
 ```
 
 ## DESCRIPTION
-Memperbarui tabel rute tertentu yang terkait dengan hub virtual tertentu dengan rute atau label yang disediakan.
+Memperbarui tabel rute yang ditentukan yang terkait dengan hub virtual yang ditentukan dengan rute atau label yang disediakan.
 
 ## EXAMPLES
 
@@ -91,7 +94,7 @@ Perintah ini menghapus tabel rute hub hub hub virtual.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya vhubroutetable ke Pembaruan.
+Sumber daya vhubroutetable untuk Diperbarui.
 
 ```yaml
 Type: PSVHubRouteTable
@@ -150,7 +153,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek hub maya induk sumber daya ini.
+Objek hub virtual induk dari sumber daya ini.
 
 ```yaml
 Type: PSVirtualHub
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya sumber daya vhubroutetable ke Update.
+Id sumber daya dari sumber daya vhubroutetable untuk Diperbarui.
 
 ```yaml
 Type: String
@@ -240,8 +243,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

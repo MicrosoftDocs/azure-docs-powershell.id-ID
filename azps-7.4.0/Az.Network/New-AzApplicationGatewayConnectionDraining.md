@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 90f10d5fd4c444e28f576a60508be1fca5382a9f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c690476ca1d5e2666115d0b40ac7e16526253842
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997237"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689120"
 ---
 # New-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Membuat konfigurasi pengeringan koneksi baru untuk pengaturan HTTP ujung-belakang.
+Membuat konfigurasi pengurasan koneksi baru untuk pengaturan HTTP back-end.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayconnectiondraining) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApplicationGatewayConnectionDraining -Enabled <Boolean> -DrainTimeoutInSec
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayConnectionDraining** membuat konfigurasi pengeringan koneksi baru untuk pengaturan HTTP ujung belakang.
+Cmdlet **New-AzApplicationGatewayConnectionDraining** membuat konfigurasi pengurasan koneksi baru untuk pengaturan HTTP back-end.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DrainTimeoutInSec
-Jumlah detik pengurasan koneksi aktif.
+Jumlah pengurasan koneksi detik aktif.
 Nilai yang dapat diterima adalah dari 1 detik hingga 3600 detik.
 
 ```yaml
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Apakah koneksi menguras daya diaktifkan atau tidak.
+### -Diaktifkan
+Apakah pengurasan koneksi diaktifkan atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
