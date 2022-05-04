@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRewriteRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRewriteRuleSet.md
-ms.openlocfilehash: ac12fc029a1a19726b8d96c815b944ae6bfa13cd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0ff7c8257888b8ad10b5a828cc07bb35885e943f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677052"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144600800"
 ---
 # Set-AzApplicationGatewayRewriteRuleSet
 
 ## SYNOPSIS
-Mengubah kumpulan aturan penulisan ulang untuk gateway aplikasi.
+Memodifikasi seperangkat aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayrewriteruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzApplicationGatewayRewriteRuleSet -ApplicationGateway <PSApplicationGateway
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayRewriteRuleSet** mengubah aturan perutean permintaan.
+Cmdlet **Set-AzApplicationGatewayRewriteRuleSet** memodifikasi aturan perutean permintaan.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ $AppGw = Set-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGw -Name
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mengubah kumpulan aturan penulisan ulang untuk gateway aplikasi agar menggunakan aturan penulisan ulang yang ditentukan dalam variabel $rule.
+Perintah kedua memodifikasi seperangkat aturan penulisan ulang untuk gateway aplikasi untuk menggunakan aturan penulisan ulang yang ditentukan dalam variabel $rule.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama RewriteRuleSet
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

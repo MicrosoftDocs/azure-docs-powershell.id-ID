@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConfiguration.md
-ms.openlocfilehash: 9ac2c615362c85a5204f07c52f5ecf63749b602b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1af5e45675e289ea20d6585a32c90362f6839775
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001017"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621984"
 ---
 # Get-AzIotHubConfiguration
 
 ## SYNOPSIS
 Mencantumkan semua atau konfigurasi manajemen perangkat otomatis IoT tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzIotHubConfiguration [-ResourceId] <String> [-Name <String>] [-DefaultProfi
 
 ## DESCRIPTION
 Dapatkan detail konfigurasi manajemen perangkat otomatis IoT atau daftar konfigurasi manajemen perangkat otomatis IoT dalam IoT Hub.
-Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi selengkapnya.
+Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Dapatkan detail konfigurasi manajemen perangkat otomatis IoT.
 Get-AzIotHubConfiguration -ResourceGroupName "myresourcegroup" -IotHubName "myiothub"
 ```
 
-Cantumkan konfigurasi manajemen perangkat otomatis IoT dalam IoT Hub.
+Mencantumkan konfigurasi manajemen perangkat otomatis IoT dalam IoT Hub.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Pengidentifikasi untuk konfigurasi.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

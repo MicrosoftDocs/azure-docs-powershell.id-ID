@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Update-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Update-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: 22eed0166f34f7783fb12864dee7a433009152f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c73eee02d66e51c6aba512813c911978a676adc5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310113"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638072"
 ---
 # Update-AzRedisEnterpriseCacheDatabase
 
 ## SYNOPSIS
-Memperbarui database Redis Enterprise yang sudah ada
+Memperbarui database Perusahaan Redis yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/update-azredisenterprisecachedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Update-AzRedisEnterpriseCacheDatabase -InputObject <IRedisEnterpriseCacheIdentit
 ```
 
 ## DESCRIPTION
-Memperbarui database Redis Enterprise yang sudah ada
+Memperbarui database Perusahaan Redis yang sudah ada
 
 ## EXAMPLES
 
@@ -53,9 +56,9 @@ default Microsoft.Cache/redisEnterprise/databases
 
 ```
 
-Perintah ini memperbarui protokol klien database untuk singgahan Redis Enterprise bernama MyCache.
+Perintah ini memperbarui protokol klien database untuk cache Redis Enterprise bernama MyCache.
 
-### Contoh 2: Memperbarui protokol klien dan properti kebijakan penggalian database
+### Contoh 2: Memperbarui protokol klien dan properti kebijakan pengeluaran database
 ```powershell
 Update-AzRedisEnterpriseCacheDatabase -Name "MyCache" -ResourceGroupName "MyGroup" -ClientProtocol "Encrypted" -EvictionPolicy "NoEviction"
 ```
@@ -67,7 +70,7 @@ default Microsoft.Cache/redisEnterprise/databases
 
 ```
 
-Perintah ini memperbarui protokol klien dan kebijakan pengguntingan database untuk singgahan Redis Enterprise bernama MyCache.
+Perintah ini memperbarui protokol klien dan kebijakan pengeluaran database untuk cache Redis Enterprise bernama MyCache.
 
 ## PARAMETERS
 
@@ -89,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -AofPersistenceFrequency
-[Pratinjau] Mengatur frekuensi saat data ditulis ke disk jika persistensi AOF diaktifkan.
-Nilai yang diperbolehkan: 1s, selalu
+[Pratinjau] Mengatur frekuensi di mana data ditulis ke disk jika persistensi AOF diaktifkan.
+Nilai yang diizinkan: 1d, selalu
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.AofFrequency
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,8 +123,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientProtocol
-Menentukan apakah klien redis dapat tersambung menggunakan protokol redis terenkripsi TLS atau plaintext.
-Nilai yang diperbolehkan: Terenkripsi, Plaintext
+Menentukan apakah klien redis dapat terhubung menggunakan protokol redis yang dienkripsi TLS atau teks biasa.
+Nilai yang diizinkan: Terenkripsi, Teks Biasa
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.Protocol
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Redis eviction policy.
+Kebijakan pengeluaran Redis.
 Nilai yang diizinkan: AllKeysLFU, AllKeysLRU, AllKeysRandom, VolatileLRU, VolatileLFU, VolatileTTL, VolatileRandom, NoEviction
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Models.IRedisEnterpriseCacheIdentity
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ### -RdbPersistenceEnabled
 [Pratinjau] Mengatur apakah persistensi RDB diaktifkan.
 Setelah mengaktifkan persistensi RDB, Anda tidak akan dapat menonaktifkannya.
-Dukungan untuk menonaktifkan kegigihan RDB setelah mengaktifkan akan ditambahkan di kemudian hari.
+Dukungan untuk menonaktifkan persistensi RDB setelah mengaktifkan akan ditambahkan di kemudian hari.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,8 +232,8 @@ Accept wildcard characters: False
 ```
 
 ### -RdbPersistenceFrequency
-[Pratinjau] Mengatur frekuensi pembuatan snapshot database jika persistensi RDB diaktifkan.
-Nilai yang diperbolehkan: 1h, 6h, 12h
+[Pratinjau] Mengatur frekuensi di mana rekam jepret database dibuat jika persistensi RDB diaktifkan.
+Nilai yang diizinkan: 1h, 6h, 12h
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.RdbFrequency
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -275,8 +278,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -327,13 +330,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IRedisEnterpriseCacheIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama klaster RedisEnterprise.
+  - `[ClusterName <String>]`: Nama kluster RedisEnterprise.
   - `[DatabaseName <String>]`: Nama database.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Wilayah tempat operasi berada.
   - `[OperationId <String>]`: Pengidentifikasi unik operasi.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat yang terkait dengan sumber daya Azure
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

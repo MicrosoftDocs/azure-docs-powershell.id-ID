@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdvancedThreatProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdvancedThreatProtection.md
-ms.openlocfilehash: 2ad16806d59cab476e83311d30a584d69de47aaa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 43e02a0f5cd000135bed038b86990951e9f5bffe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309321"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672892"
 ---
 # Get-AzSecurityAdvancedThreatProtection
 
 ## SYNOPSIS
 Mendapatkan kebijakan perlindungan ancaman tingkat lanjut untuk akun penyimpanan / cosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityadvancedthreatprotection) untuk informasi terbaru.
 
 ## SYNTAX
 

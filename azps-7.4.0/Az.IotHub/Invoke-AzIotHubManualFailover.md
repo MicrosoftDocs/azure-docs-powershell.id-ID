@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubManualFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubManualFailover.md
-ms.openlocfilehash: 69e166c405d4b14a224bbec74570020dfdc33578
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c4879eb3fd5cd6508572aaebfc939b8676cf1cfd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227043"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693796"
 ---
 # Invoke-AzIotHubManualFailover
 
 ## SYNOPSIS
-Ajukan proses failover untuk IoT Hub ke kawasan pemulihan bencana yang dipasangkan secara geo.
+Panggil proses failover untuk IoT Hub ke wilayah pemulihan bencana yang dipasangkan secara geografis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubmanualfailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Invoke-AzIotHubManualFailover [-ResourceId] <String> [-AsJob] [-PassThru]
 ```
 
 ## DESCRIPTION
-Ini akan memicu failover hub IoT Anda ke lokasi sekunder. Tindakan ini akan menyebabkan hilangnya waktu dan telemetri pada solusi Anda. Ini adalah operasi yang berjalan panjang dan bisa memakan waktu beberapa menit untuk menyelesaikan. Harap berolahraga dengan hati-hati saat menggunakannya.
+Ini akan memicu failover hub IoT Anda ke lokasi sekunder. Tindakan ini akan menyebabkan waktu henti dan kehilangan telemetri pada solusi Anda. Ini adalah operasi yang berjalan lama dan bisa memakan waktu beberapa menit untuk menyelesaikannya. Harap berolahraga dengan hati-hati saat menggunakannya.
 
 ## EXAMPLES
 
@@ -47,19 +50,19 @@ Ini akan memicu failover hub IoT Anda ke lokasi sekunder. Tindakan ini akan meny
 Invoke-AzIotHubManualFailover -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Memulai proses failover "myiothub" IoT Hub.
+Memulai proses failover IoT Hub "myiothub".
 
 ### Contoh 2
 ```powershell
 Invoke-AzIotHubManualFailover -ResourceGroupName "myresourcegroup" -Name "myiothub" -AsJob
 ```
 
-Memulai proses failover "myiothub" IoT Hub di latar belakang.
+Memulai proses failover IoT Hub "myiothub" di latar belakang.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,8 +106,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectableItem.md
-ms.openlocfilehash: 5f909deb1d6236c9c0000ca3ed11f1a52eb5ea04
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aad048c7d3c38992d00d2fb7563dcf4f01c772eb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223659"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675232"
 ---
 # Get-AzRecoveryServicesAsrProtectableItem
 
 ## SYNOPSIS
-Dapatkan item yang dapat dilindungi dalam wadah perlindungan ASR.
+Dapatkan item yang dapat dilindungi dalam kontainer perlindungan ASR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzRecoveryServicesAsrProtectableItem -SiteId <String> -ProtectionContainer <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrProtectableItem** mendapatkan item yang dapat dilindungi dalam Wadah Perlindungan Site Recovery Azure.
+Cmdlet **Get-AzRecoveryServicesAsrProtectableItem** mendapatkan item yang dapat dilindungi dalam Kontainer Azure Site Recovery Protection.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Cmdlet **Get-AzRecoveryServicesAsrProtectableItem** mendapatkan item yang dapat 
 $ProtectableItems = Get-AzRecoveryServicesAsrProtectableItem -ProtectionContainer $Container
 ```
 
-Mendapatkan semua item yang dapat dilindungi dalam wadah proteksi ASR tertentu.
+Mendapatkan semua item yang dapat dilindungi dalam kontainer perlindungan ASR tertentu.
 
 ### Contoh 2
 ```powershell
@@ -84,7 +87,7 @@ ReplicationProtectedItemId    :
 SupportedReplicationProviders : {InMage, InMageAzureV2}
 ```
 
-Dapatkan item yang dapat dilindungi dalam wadah proteksi ASR tertentu dan dengan nama yang mudah dikenali.
+Dapatkan item yang dapat dilindungi dalam kontainer perlindungan ASR tertentu dan dengan nama yang mudah diingat.
 
 ### Contoh 3
 ```powershell
@@ -109,7 +112,7 @@ ReplicationProtectedItemId    :
 SupportedReplicationProviders : {InMage, InMageAzureV2}
 ```
 
-Mendapatkan semua item yang dapat dilindungi dalam wadah proteksi ASR tertentu.
+Mendapatkan semua item yang dapat dilindungi dalam kontainer perlindungan ASR tertentu.
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama item yang mudah diproteksi ASR.
+Menentukan nama yang mudah diingat dari item yang dapat dilindungi ASR.
 
 ```yaml
 Type: System.String
@@ -144,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama item yang dapat diproteksi ASR.
+### -Name
+Menentukan nama item yang dapat dilindungi ASR.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Menentukan objek Azure Site Recovery Protection Container.
+Menentukan objek Kontainer Azure Site Recovery Protection.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -175,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -SiteId
-Menentukan Id situs VMware tempat item yang dapat dilindungi ditemukan (Hanya berlaku untuk VMware ke skenario replikasi Azure).
-Gunakan Site Id dari detail khusus kain dalam kain ASR untuk menentukannya.
+Menentukan Id situs VMware tempat item yang dapat dilindungi ditemukan (Hanya berlaku untuk skenario replikasi VMware ke Azure).
+Gunakan ID situs dari detail spesifik fabric dalam fabric ASR untuk menentukannya.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

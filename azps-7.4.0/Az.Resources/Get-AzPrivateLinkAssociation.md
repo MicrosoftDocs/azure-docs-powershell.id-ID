@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPrivateLinkAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPrivateLinkAssociation.md
-ms.openlocfilehash: 67068503760795caa712f3481cbb2d00bb2e9084
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7719cc611e47f46afbbcb1142832bfb71493f768
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801846"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670948"
 ---
 # Get-AzPrivateLinkAssociation
 
 ## SYNOPSIS
-Mendapatkan semua Asosiasi Private Link Manajemen Sumber Daya Azure.
+Mendapatkan semua Asosiasi Private Link Azure Resource Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azprivatelinkassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzPrivateLinkAssociation [-ManagementGroupId] <String> [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzPrivateLinkAssociation mendapatkan semua tautan pribadi manajemen sumber daya di lingkup.
+Cmdlet Get-AzPrivateLinkAssociation mendapatkan semua tautan privat manajemen sumber daya di cakupan.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Properties : {"privateLink":"/subscriptions/aeb49941-36c3-4e7c-9ffd-16ba89d33ec4
              /managementGroups/fc096d27-0434-4460-a3ea-110df0422a2d"}
 ```
 
-Dapatkan semua asosiasi tautan privat di lingkup grup manajemen.
+Dapatkan semua asosiasi tautan privat di cakupan grup manajemen.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +75,7 @@ Properties : {"privateLink":"/subscriptions/aeb49941-36c3-4e7c-9ffd-16ba89d33ec4
              /managementGroups/fc096d27-0434-4460-a3ea-110df0422a2d"}
 ```
 
-Dapatkan asosiasi tautan privat tertentu di lingkup grup manajemen.
+Dapatkan asosiasi tautan privat tertentu di cakupan grup manajemen.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Id asosiasi tautan privat.
 
 ```yaml
@@ -122,11 +125,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

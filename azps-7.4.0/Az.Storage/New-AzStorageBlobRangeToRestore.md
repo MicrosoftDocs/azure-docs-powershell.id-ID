@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobRangeToRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobRangeToRestore.md
-ms.openlocfilehash: 48fc46c2a5bb1e27225ab495dbb89cc11dd4074b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 27630efd6d86c7a633d3b727b5215d0ba611ebd9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671022"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645772"
 ---
 # New-AzStorageBlobRangeToRestore
 
 ## SYNOPSIS
-Membuat objek Blob Range untuk memulihkan akun Storage.
+Membuat objek Rentang Blob untuk memulihkan akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageblobrangetorestore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,21 +37,21 @@ Cmdlet **New-AzStorageBlobRangeToRestore** membuat objek rentang Blob, yang dapa
 PS C:\> $range = New-AzStorageBlobRangeToRestore -StartRange container1/blob1 -EndRange container2/blob2
 ```
 
-Perintah ini membuat rentang blob untuk dipulihkan, yang dimulai dari container1/blob1 (include), dan berakhir di container2/blob2 (tidak termasuk).
+Perintah ini membuat rentang blob untuk dipulihkan, yang dimulai pada container1/blob1 (termasuk), dan berakhir pada container2/blob2 (kecualikan).
 
-### Contoh 2: Membuat rentang blob yang akan memulihkan dari blob pertama dalam urutan alfabet, ke blob tertentu (tidak termasuk)
+### Contoh 2: Membuat rentang blob yang akan memulihkan dari blob pertama dalam urutan alfabet, ke blob tertentu (kecuali)
 ```powershell
 PS C:\> $range = New-AzStorageBlobRangeToRestore -StartRange "" -EndRange container2/blob2
 ```
 
-Perintah ini membuat rentang blob yang akan memulihkan dari gumpakan pertama urutan alfabet, ke wadah blob2/blob2 tertentu (tidak termasuk)
+Perintah ini membuat rentang blob yang akan memulihkan dari blob pertama urutan alfabet, ke kontainer blob tertentu2/blob2 (tidak termasuk)
 
-### Contoh 3: Membuat rentang blob yang akan dipulihkan dari blob tertentu (include), hingga blob terakhir dalam urutan alfabet
+### Contoh 3: Membuat rentang blob yang akan memulihkan dari blob tertentu (termasuk), ke blob terakhir dalam urutan alfabet
 ```powershell
 PS C:\> $range = New-AzStorageBlobRangeToRestore -StartRange container1/blob1 -EndRange ""
 ```
 
-Perintah ini membuat rentang blob yang akan dipulihkan dari wadah blob tertentu1/blob1 (termasuk), ke gumpakan terakhir dalam urutan alfabet.
+Perintah ini membuat rentang blob yang akan memulihkan dari kontainer blob tertentu1/blob1 (termasuk), ke blob terakhir dalam urutan alfabet.
 
 ### Contoh 4: Membuat rentang blob yang akan memulihkan semua blob
 ```powershell
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ### -EndRange
 Tentukan rentang Akhir pemulihan blob.
 Rentang akhir akan dikecualikan dalam blob pemulihan.
-Atur sebagai strng kosong untuk memulihkan ke akhir.
+Atur sebagai strng kosong untuk dipulihkan ke akhir.
 
 ```yaml
 Type: System.String
@@ -109,11 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightCluster.md
-ms.openlocfilehash: 5bf1742c256fa8d815b9e94b679965ffce425eb8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 268b155172e52db3b970ba15171f310bad8251d1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122427"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624072"
 ---
 # Get-AzHDInsightCluster
 
 ## SYNOPSIS
-Mendapatkan dan mencantumkan semua kluster Azure HDInsight yang terkait dengan langganan saat ini atau grup sumber daya tertentu, atau mengambil klaster tertentu.
+Mendapatkan dan mencantumkan semua kluster Azure HDInsight yang terkait dengan langganan saat ini atau grup sumber daya tertentu, atau mengambil kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzHDInsightCluster [[-ResourceGroupName] <String>] [[-ClusterName] <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzHDInsightCluster** mencantumkan kluster layanan Azure HDInsight untuk langganan saat ini.
-Gunakan parameter *ClusterName* untuk mendapatkan detail kluster tertentu.
+Gunakan parameter *ClusterName* untuk mendapatkan detail untuk kluster tertentu.
 
 ## EXAMPLES
 
@@ -86,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -100,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Hapus-AzHDInsightCluster](./Remove-AzHDInsightCluster.md)
+[Remove-AzHDInsightCluster](./Remove-AzHDInsightCluster.md)
 
 [Use-AzHDInsightCluster](./Use-AzHDInsightCluster.md)
 

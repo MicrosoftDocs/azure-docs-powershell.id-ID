@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsDataSource.md
-ms.openlocfilehash: d435a056ac19ef656c2cd39fd814c73206c9356e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c2c81562dbd2405ce3a2009e6a0a40a26104cc3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741474"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671254"
 ---
 # Set-AzOperationalInsightsDataSource
 
 ## SYNOPSIS
 Memperbarui sumber data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Properties        : {"customLogName":"Customlog_CL","description":"","extraction
 Memperbarui sumber data.
 ## PARAMETERS
 
-### -DataSource
+### -Sumber Data
 Menentukan sumber data yang diperbarui cmdlet ini.
 
 ```yaml
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -93,7 +96,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.OperationalInsights.Models.PSDataSource
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, operasional, wawasan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, operasional, wawasan
 
 ## RELATED LINKS
 

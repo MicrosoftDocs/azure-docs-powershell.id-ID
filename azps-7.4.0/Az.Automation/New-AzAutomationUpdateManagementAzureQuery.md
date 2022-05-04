@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationUpdateManagementAzureQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationUpdateManagementAzureQuery.md
-ms.openlocfilehash: 9266b1145fa660ea7a918499395393ce5e6c9846
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 04ec5922c6a22d1ebc74e3331dfcb10ea58555fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233127"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624720"
 ---
 # New-AzAutomationUpdateManagementAzureQuery
 
 ## SYNOPSIS
-Membuat objek Azure Query Manajemen Pembaruan.
+Membuat objek Kueri Azure Manajemen Pembaruan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzAutomationUpdateManagementAzureQuery -Scope <String[]> [-Location <String[
 ```
 
 ## DESCRIPTION
-Membuat objek "Perbarui Manajemen Azure Query" yang akan secara dinamis mengatasi daftar mesin virtual Azure untuk digunakan dalam menjadwalkan pembaruan perangkat lunak.
+Membuat objek "Perbarui Manajemen Azure Query" yang akan secara dinamis menyelesaikan daftar komputer virtual Azure untuk digunakan dalam menjadwalkan pembaruan perangkat lunak.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Description           :
 ## PARAMETERS
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: String
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Filteroperator
+### -FilterOperator
 Operator filter tag.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Daftar lokasi untuk mesin virtual azure.
+Daftar lokasi untuk komputer virtual azure.
 
 ```yaml
 Type: String[]
@@ -154,8 +157,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Id Sumber Daya untuk mesin virtual azure.
+### -Cakupan
+Id Sumber Daya untuk komputer virtual azure.
 
 ```yaml
 Type: String[]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk mesin virtual azure.
+Tag untuk komputer virtual azure.
 
 ```yaml
 Type: Hashtable
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

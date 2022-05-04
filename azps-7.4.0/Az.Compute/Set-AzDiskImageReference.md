@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskImageReference.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskImageReference.md
-ms.openlocfilehash: 6f3a29b152c9572516794ab965c31ac0334b841f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6beb6677ae6cfe6494c34c88f11ccef0ac67643d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005445"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603230"
 ---
 # Set-AzDiskImageReference
 
 ## SYNOPSIS
 Mengatur properti referensi gambar pada objek disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azdiskimagereference) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,9 +40,9 @@ $diskconfig = Set-AzDiskImageReference -Disk $diskconfig -Id $image -Lun 0
 New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskconfig
 ```
 
-Perintah pertama membuat objek disk lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS.  Ini juga mengatur tipe OS Windows.
-Perintah kedua mengatur id gambar dan unit logika nomor 0 untuk objek disk.
-Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek disk lokal dengan ukuran 10GB dalam jenis akun penyimpanan Premium_LRS.  Ini juga menetapkan jenis OS Windows.
+Perintah kedua mengatur id gambar dan unit logis nomor 0 untuk objek disk.
+Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN). Jika disk dibuat dari disk data gambar, ini adalah indeks yang menunjukkan disk data mana dalam gambar yang akan digunakan. Untuk disk OS, bidang ini null.
+Menentukan nomor unit logis (LUN). Jika disk dibuat dari disk data gambar, ini adalah indeks yang menunjukkan disk data mana dalam gambar yang akan digunakan. Untuk disk OS, bidang ini null.
 
 ```yaml
 Type: System.Int32
@@ -103,8 +106,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

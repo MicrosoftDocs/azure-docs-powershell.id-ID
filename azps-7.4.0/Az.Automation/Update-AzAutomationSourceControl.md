@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
-ms.openlocfilehash: f8a85cd8be6f6ddb2d54bd145f3978fc1a7c41ab
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da20ff37a8097167c3a5224c298c4d3fc5ce4fcb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232983"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670498"
 ---
 # Update-AzAutomationSourceControl
 
 ## SYNOPSIS
 Memperbarui kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/update-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Update-AzAutomationSourceControl -Name <String> [-AccessToken <SecureString>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzAutomationSourceControl mengubah nilai bidang dalam kontrol sumber di Azure Automation.
+Cmdlet Update-AzAutomationSourceControl memodifikasi nilai bidang dalam kontrol sumber di Azure Automation.
 
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Azure Automation bernama VSTSNative dalam akun bernama devAccount.
+Perintah ini mengatur bidang PublishRunbook ke false untuk kontrol sumber Azure Automation bernama VSTSNative di akun bernama devAccount.
 
 
 ```powershell
@@ -48,7 +51,7 @@ VSTSNative      VsoTfvc           /MyRunbooks False    False          https://co
 
 ### Contoh 2
 
-Memperbarui kontrol sumber Azure Automation. (autogenerasi)
+Memperbarui kontrol sumber Azure Automation. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomationAccountName
-Nama akun otomatisasi.
+Nama akun automasi.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Branch
+### -Cabang
 Cabang kontrol sumber.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kontrol sumber.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishRunbook
-Properti publishRunbook kontrol sumber.
+Properti publishRunbook dari kontrol sumber.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -207,8 +210,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

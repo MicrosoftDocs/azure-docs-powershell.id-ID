@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementNamedValue.md
-ms.openlocfilehash: 9355dd40e89b219f646e170c73bc10adf6b3f6b5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5e350ac727c3d5110986d0444499aeda15eb657
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320283"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692824"
 ---
 # Set-AzApiManagementNamedValue
 
 ## SYNOPSIS
-Mengubah API Management Nilai Bernama.
+Memodifikasi nilai bernama API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzApiManagementNamedValue -Context <PsApiManagementContext> -NamedValueId <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementNamedValue** mengubah Azure API Management Nilai Bernama.
+Cmdlet **Set-AzApiManagementNamedValue** memodifikasi Nilai Bernama API Management Azure.
 
 ## EXAMPLES
 
@@ -38,10 +41,10 @@ Set-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property11" -
 ```
 
 Perintah pertama menetapkan dua nilai ke variabel $Tags.
-Perintah kedua mengubah nilai bernama yang memiliki Properti ID11.
+Perintah kedua memodifikasi nilai bernama yang memiliki ID Property11.
 Perintah menetapkan string dalam $Tags sebagai tag pada nilai bernama.
 
-### Contoh 2: Memodifikasi nilai bernama agar memiliki nilai rahasia
+### Contoh 2: Ubah nilai bernama agar memiliki nilai rahasia
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property12" -Secret $True -PassThru
@@ -51,7 +54,7 @@ Perintah ini mengubah nilai bernama menjadi Terenkripsi.
 
 ### Contoh 3
 
-Mengubah API Management Nilai Bernama. (autogenerasi)
+Memodifikasi nilai bernama API Management. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -60,8 +63,8 @@ Set-AzApiManagementNamedValue -Context <PsApiManagementContext> -Name 'ContosoAp
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -91,10 +94,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama nilai bernama.
 Panjang maksimum adalah 100 karakter.
-Ini mungkin hanya berisi huruf, digit, titik, garis putus-putus, dan karakter garis bawah.
+Ini hanya boleh berisi huruf, digit, titik, tanda hubung, dan karakter garis bawah.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -109,9 +112,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NameValueId
+### -NamedValueId
 Pengidentifikasi nilai bernama untuk diperbarui.
-Parameter ini wajib dilakukan.
+Parameter ini bersifat wajib.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProperty type yang mewakili properti yang dimodifikasi akan ditulis ke output.
+Jika ditentukan, maka instans jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementProperty yang mewakili properti yang dimodifikasi akan ditulis ke output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,11 +175,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Nilai nilai bernama.
 Dapat berisi ekspresi kebijakan.
 Panjang maksimum adalah 1000 karakter.
-Spasi mungkin tidak kosong atau hanya terdiri dari spasi kosong.
+Ini mungkin tidak kosong atau hanya terdiri dari spasi kosong.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -191,8 +194,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

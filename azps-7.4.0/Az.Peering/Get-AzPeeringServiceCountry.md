@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServiceCountry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringServiceCountry.md
-ms.openlocfilehash: 6a0f16dc8cfdcc8b9b5677a9a2ce16dec8e27770
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 57e0d41a6452970dd5546f2193e3669feb17822a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060741"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671164"
 ---
 # Get-AzPeeringServiceCountry
 
 ## SYNOPSIS
 Mencantumkan negara yang tersedia untuk layanan peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringservicecountry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Mencantumkan negara yang tersedia untuk layanan peering.
 Get-AzPeeringServiceCountry
 ```
 
-Daftar negara yang tersedia untuk layanan peering.
+Daftar negara yang tersedia untuk peering service.
 
 ## PARAMETERS
 
@@ -53,11 +56,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVMDiskEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVMDiskEncryption.md
-ms.openlocfilehash: 8df8d91b8c22f3222a9c853c6a44a9ce275a8371
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b30e3853a6f6b3ee3c4c9f16f6eb338ed3914b4a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128331"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637424"
 ---
 # Disable-AzVMDiskEncryption
 
 ## SYNOPSIS
-Menonaktifkan enkripsi pada mesin virtual IaaS.
+Menonaktifkan enkripsi pada komputer virtual IaaS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/disable-azvmdiskencryption) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,23 +31,23 @@ Disable-AzVMDiskEncryption [-ResourceGroupName] <String> [-VMName] <String> [[-V
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzVMDiskEncryption** menonaktifkan enkripsi pada infrastruktur sebagai mesin virtual layanan (IaaS).
-Cmdlet ini hanya didukung pada mesin virtual Windows dan bukan mesin virtual Linux.
-Cmdlet ini menginstal ekstensi pada mesin virtual untuk menonaktifkan enkripsi.
-Jika parameter *Nama* tidak ditentukan, ekstensi dengan nama default "AzureDiskEncryption untuk Windows VM" akan dibuat.
-Perhatian: Cmdlet ini melakukan boot ulang mesin virtual.
+Cmdlet **Disable-AzVMDiskEncryption** menonaktifkan enkripsi pada komputer virtual infrastruktur sebagai layanan (IaaS).
+Cmdlet ini hanya didukung pada komputer virtual Windows dan bukan komputer virtual Linux.
+Cmdlet ini menginstal ekstensi pada komputer virtual untuk menonaktifkan enkripsi.
+Jika parameter *Nama* tidak ditentukan, ekstensi dengan nama default "AzureDiskEncryption for Windows VM" dibuat.
+Perhatian: Cmdlet ini me-reboot komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan enkripsi untuk semua volume pada mesin virtual Windows
+### Contoh 1: Menonaktifkan enkripsi untuk semua volume pada komputer virtual Windows
 ```powershell
 Disable-AzVMDiskEncryption -ResourceGroupName "Group001" -VMName "VM002"
 ```
 
-Perintah ini menonaktifkan enkripsi untuk volume tipe semua untuk mesin virtual bernama VM002 yang termasuk dalam grup sumber daya bernama Group001.
+Perintah ini menonaktifkan enkripsi untuk volume jenis semua untuk komputer virtual bernama VM002 yang termasuk dalam grup sumber daya bernama Group001.
 Karena parameter *VolumeType* tidak ditentukan, cmdlet mengatur nilai ke Semua.
 
-### Contoh 2: Menonaktifkan enkripsi untuk volume data di mesin virtual Windows
+### Contoh 2: Menonaktifkan enkripsi untuk volume data pada komputer virtual Windows
 ```powershell
 $ResourceGroup = "Group002"
 $VMName = "VM004"
@@ -52,7 +55,7 @@ $VolumeType = "Data"
 Disable-AzVMDiskEncryption -ResourceGroupName $ResourceGroup -VMName $VMName -VolumeType $VolumeType
 ```
 
-Perintah ini menonaktifkan enkripsi untuk volume data tipe untuk mesin virtual bernama VM004 yang termasuk dalam grup sumber daya bernama Group002.
+Perintah ini menonaktifkan enkripsi untuk volume data jenis untuk komputer virtual bernama VM004 yang termasuk dalam grup sumber daya bernama Group002.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableAutoUpgradeMinorVersion
-Menunjukkan bahwa cmdlet ini menonaktifkan pemutakhiran otomatis dari versi minor ekstensi.
+Menunjukkan bahwa cmdlet ini menonaktifkan peningkatan otomatis versi minor ekstensi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionPublisherName
-Nama penerbit ekstensi. Tentukan parameter ini hanya untuk menimpa nilai default "Microsoft.Azure.Security".
+Nama penerbit ekstensi. Tentukan parameter ini hanya untuk mengambil alih nilai default "Microsoft.Azure.Security".
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtensionType
-Tipe ekstensi. Tentukan parameter ini untuk menimpa nilai default "AzureDiskEncryption" untuk Windows VM dan "AzureDiskEncryptionForLinux" untuk VM Linux.
+Jenis ekstensi. Tentukan parameter ini untuk mengambil alih nilai default "AzureDiskEncryption" untuk VM Windows dan "AzureDiskEncryptionForLinux" untuk VM Linux.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -131,9 +134,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sumber daya Azure Resource Manager (ARM) yang mewakili ekstensi.
-Jika parameter ini tidak ditentukan, cmdlet ini akan menjadi "AzureDiskEncryption untuk Windows VM".
+Jika parameter ini tidak ditentukan, cmdlet ini default ke "AzureDiskEncryption for Windows VM".
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -TypeHandlerVersion
 Menentukan versi ekstensi enkripsi.
-Jika Anda tidak menentukan nilai untuk parameter ini, versi ekstensi terbaru akan digunakan.
+Jika Anda tidak menentukan nilai untuk parameter ini, versi terbaru ekstensi akan digunakan.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini menonaktifkan enkripsi.
+Menentukan nama komputer virtual tempat cmdlet ini menonaktifkan enkripsi.
 
 ```yaml
 Type: System.String
@@ -194,13 +197,13 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeType
-Menentukan tipe volume mesin virtual untuk melakukan operasi enkripsi.
-Untuk mesin virtual Windows, nilai yang valid adalah: 
+Menentukan jenis volume komputer virtual untuk melakukan operasi enkripsi.
+Untuk komputer virtual Windows, nilai yang valid adalah: 
 - Semua
 - OS
 - Data.
 Jika Anda tidak menentukan nilai untuk parameter ini, nilai defaultnya adalah Semua.
-Enkripsi non-fungsikan saat ini tidak didukung untuk Linux.
+Nonaktifkan enkripsi saat ini tidak didukung untuk Linux.
 
 ```yaml
 Type: System.String
@@ -215,8 +218,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: a76beb9dadef15b30945ff3bcd3439430942b72e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b875da67f04c727e202a961ede15c21ba725479b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000621"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698078"
 ---
 # Get-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Dapatkan Key Vault dikelola Storage Definisi SAS.
+Mendapatkan Definisi SAS Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Mendapatkan Key Vault dikelola Storage Definisi SAS jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault akun Storage dikelola yang ditentukan dalam kubah dicantumkan.
+Mendapatkan Definisi SAS Storage terkelola Key Vault jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan akun Storage terkelola Key Vault yang ditentukan di vault akan dicantumkan.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua definisi Key Vault dikelola Storage SAS
+### Contoh 1: Mencantumkan semua Definisi SAS Storage terkelola Key Vault
 ```powershell
 Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount'
 ```
@@ -52,9 +55,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh kubah 'myvault'
+Mencantumkan semua definisi SAS yang terkait dengan Key Vault akun Storage terkelola 'mystorageaccount' yang dikelola oleh vault 'myvault'
 
-### Contoh 2: Dapatkan akun Storage terkelola Key Vault
+### Contoh 2: Mendapatkan Akun Storage terkelola Key Vault
 ```powershell
 Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'accountsas'
 ```
@@ -72,9 +75,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mendapatkan detail 'accountsas' Definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh vault 'myvault'.
+Mendapatkan detail 'akun' Definisi SAS yang terkait dengan Key Vault akun Storage terkelola 'mystorageaccount' yang dikelola oleh vault 'myvault'.
 
-### Contoh 3: Mencantumkan semua Key Vault dikelola Storage Definisi SAS menggunakan pemfilteran
+### Contoh 3: Mencantumkan semua Definisi SAS Storage terkelola Key Vault menggunakan pemfilteran
 ```powershell
 Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name "account*"
 ```
@@ -99,13 +102,13 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Key Vault dikelola Storage Akun 'mystorageaccount' yang dikelola oleh 'myvault' kubah yang dimulai dengan "akun".
+Mencantumkan semua definisi SAS yang terkait dengan Key Vault akun Storage terkelola 'mystorageaccount' yang dikelola oleh vault 'myvault' yang dimulai dengan "akun".
 
 ## PARAMETERS
 
 ### -AccountName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan memperlihatkan definisi sas penyimpanan yang dihapus sebelumnya dalam output.
+Menentukan apakah akan menampilkan definisi sas penyimpanan yang dihapus sebelumnya dalam output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,9 +167,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Storage nama definisi sas.
-Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
+Cmdlet membangun FQDN definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan, dan nama definisi sas.
 
 ```yaml
 Type: System.String
@@ -181,8 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
-Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama vault.
+Cmdlet membangun FQDN vault berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

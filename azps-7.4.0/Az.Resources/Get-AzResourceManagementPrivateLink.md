@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceManagementPrivateLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceManagementPrivateLink.md
-ms.openlocfilehash: 8dd4ec0944562cee2530a7060c6f807007e6d5ad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d7d0a8e8b5f06eabdb01ac726589013fbe10a83
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674208"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693400"
 ---
 # Get-AzResourceManagementPrivateLink
 
 ## SYNOPSIS
 Mendapatkan Private Link Azure Resource Management
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcemanagementprivatelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzResourceManagementPrivateLink [[-ResourceGroupName] <String>] [[-Name] <St
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzResourceManagementPrivateLink mendapatkan tautan pribadi manajemen sumber daya tertentu.
+Cmdlet Get-AzResourceManagementPrivateLink mendapatkan tautan privat manajemen sumber daya tertentu.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Location                   : centralus
 PrivateEndpointConnections : {}
 ```
 
-Mendapatkan semua tautan privat manajemen resoure di lingkup langganan.
+Mendapatkan semua tautan privat manajemen resoure di cakupan langganan.
 
 ### Contoh 3
 ```powershell
@@ -86,7 +89,7 @@ Location                   : centralus
 PrivateEndpointConnections : {}
 ```
 
-Mendapatkan semua tautan privat manajemen resoure di lingkup grup sumber daya.
+Mendapatkan semua tautan privat manajemen sumber daya di cakupan grup sumber daya.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan privat.
 
 ```yaml
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

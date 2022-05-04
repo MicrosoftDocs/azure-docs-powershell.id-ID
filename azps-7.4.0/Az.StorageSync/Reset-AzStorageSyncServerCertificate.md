@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Reset-AzStorageSyncServerCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Reset-AzStorageSyncServerCertificate.md
-ms.openlocfilehash: 30fd8b2197c65ad3e567f63f81cf2b9a72f30026
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1975c3e2c329479e2528247f2ba7803c80f950fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994213"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670750"
 ---
 # Reset-AzStorageSyncServerCertificate
 
 ## SYNOPSIS
-Gunakan untuk pemecahan masalah saja. Perintah ini akan menggulung sertifikat server sinkronisasi penyimpanan yang digunakan untuk menjelaskan identitas server ke layanan sinkronisasi penyimpanan.
+Gunakan hanya untuk pemecahan masalah. Perintah ini akan menggulung sertifikat server sinkronisasi penyimpanan yang digunakan untuk menjelaskan identitas server ke layanan sinkronisasi penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/reset-azstoragesyncservercertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Reset-AzStorageSyncServerCertificate [-ParentResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Perintah ini akan menggulung sertifikat server sinkronisasi penyimpanan yang digunakan untuk menjelaskan identitas server ke layanan sinkronisasi penyimpanan. Hal ini dimaksudkan untuk digunakan dalam skenario pemecahan masalah. Saat memanggil perintah ini, sertifikat server diganti, memperbarui layanan sinkronisasi penyimpanan tempat server ini terdaftar juga, dengan mengirimkan bagian kunci publik. Karena sertifikat baru dibuat, waktu kedaluwarsa sert ini juga diperbarui. Perintah ini juga dapat digunakan untuk memperbarui sertifikat yang kedaluwarsa. Hal ini dapat terjadi jika server offline dalam jangka waktu yang lama.
+Perintah ini akan menggulung sertifikat server sinkronisasi penyimpanan yang digunakan untuk menjelaskan identitas server ke layanan sinkronisasi penyimpanan. Ini dimaksudkan untuk digunakan dalam skenario pemecahan masalah. Saat memanggil perintah ini, sertifikat server diganti, memperbarui layanan sinkronisasi penyimpanan yang didaftarkan server ini juga, dengan mengirimkan bagian publik dari kunci. Karena sertifikat baru dibuat, waktu kedaluwarsa sertifikasi ini juga diperbarui. Perintah ini juga dapat digunakan untuk memperbarui sertifikat yang kedaluwarsa. Ini dapat terjadi jika server offline untuk jangka waktu yang lama.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Perintah ini akan menggulung sertifikat server sinkronisasi penyimpanan yang dig
 Reset-AzStorageSyncServerCertificate -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName"
 ```
 
-Perintah ini akan menggulung sertifikat server lokal dan menginformasikan layanan sinkronisasi penyimpanan terkait identitas baru server, dengan cara yang aman.
+Perintah ini akan menggulung sertifikat server lokal dan menginformasikan layanan sinkronisasi penyimpanan yang sesuai dari identitas baru server, dengan cara yang aman.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSStorageSyncService
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-StorageSyncService Parent Resource Id
+Id Sumber Daya Induk StorageSyncService
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

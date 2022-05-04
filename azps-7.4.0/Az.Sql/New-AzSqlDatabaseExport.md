@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseExport.md
-ms.openlocfilehash: 650733e4b0f14a47f73947444f95dbe03cddb9af
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f565a047640dc2f750c2d45d7b17365d9c3e6eb2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307341"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637784"
 ---
 # New-AzSqlDatabaseExport
 
 ## SYNOPSIS
 Mengekspor Azure SQL Database sebagai file .bacpac ke akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabaseexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,8 +33,8 @@ New-AzSqlDatabaseExport [-DatabaseName] <String> [-ServerName] <String> -Storage
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabaseExport** mengekspor Azure SQL Database sebagai file .bacpac ke akun penyimpanan.
-Permintaan status dapatkan database ekspor mungkin dikirim untuk mengambil informasi status untuk permintaan ini.
+Cmdlet **New-AzSqlDatabaseExport mengekspor** Azure SQL Database sebagai file .bacpac ke akun penyimpanan.
+Permintaan dapatkan status database ekspor dapat dikirim untuk mengambil informasi status untuk permintaan ini.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 > [!IMPORTANT]
@@ -60,7 +63,7 @@ Status                     : InProgress
 ErrorMessage               :
 ```
 
-Perintah ini membuat permintaan ekspor untuk database tertentu.
+Perintah ini membuat permintaan ekspor untuk database yang ditentukan.
 
 ## PARAMETERS
 
@@ -95,16 +98,16 @@ Accept wildcard characters: False
 ```
 
 ### -AuthenticationType
-Menentukan tipe autentikasi yang digunakan untuk mengakses server.
-Nilai default SQL jika tidak ada tipe autentikasi yang diatur.
+Menentukan jenis autentikasi yang digunakan untuk mengakses server.
+Nilai default adalah SQL jika tidak ada jenis autentikasi yang diatur.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql.
 SQL autentikasi.
 Atur *AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator SQL. 
-- AdPassword.
-Azure Active Directory autentikasi.
+- Kata Sandi Ad.
+Autentikasi Azure Active Directory.
 Atur *AdministratorLogin* dan *AdministratorLoginPassword* ke nama pengguna dan kata sandi administrator Azure AD.
-Parameter ini hanya tersedia di server V12 SQL Database.
+Parameter ini hanya tersedia di server SQL Database V12.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.AuthenticationType
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerResourceIdForPrivateLink
-Id sumber daya sql server untuk membuat tautan privat
+Id sumber daya server sql untuk membuat tautan privat
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceIdForPrivateLink
-Id sumber daya akun penyimpanan untuk membuat tautan pribadi
+Id sumber daya akun penyimpanan untuk membuat tautan privat
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageKeyType
-Menentukan tipe kunci akses untuk akun penyimpanan.
+Menentukan jenis kunci akses untuk akun penyimpanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - StorageAccessKey.
 Nilai ini menggunakan kunci akun penyimpanan. 
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseNetworkIsolation
-Jika diatur, akan membuat tautan pribadi untuk akun penyimpanan dan/atau server SQL
+Jika diatur, akan membuat tautan privat untuk akun penyimpanan dan/atau server SQL
 
 ```yaml
 Type: System.Boolean
@@ -275,8 +278,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -318,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.ImportExport.Model.AzureSqlDatabaseImportExportBaseModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS
 

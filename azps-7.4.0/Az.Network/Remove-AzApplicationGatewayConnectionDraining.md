@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 94977a54dc5cdd083db3efca3757e1f965139858
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5aabe82baf1fa1e33f903e8dbc2c755e58b9742
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313371"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698990"
 ---
 # Remove-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Menghapus koneksi yang menguras konfigurasi objek pengaturan HTTP ujung-belakang.
+Menghapus konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayconnectiondraining) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzApplicationGatewayConnectionDraining -BackendHttpSettings <PSApplicatio
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayConnectionDraining** menghapus koneksi menguras konfigurasi objek pengaturan HTTP ujung belakang.
+Cmdlet **Remove-AzApplicationGatewayConnectionDraining** menghapus konfigurasi pengurasan koneksi objek pengaturan HTTP back-end.
 
 ## EXAMPLES
 
@@ -38,8 +41,8 @@ Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
-Perintah ketiga menghapus konfigurasi koneksi yang menguras pengaturan HTTP ujung-belakang yang disimpan dalam $Pengaturan. Dan, perintah terakhir memperbarui gateway aplikasi.
+Perintah kedua mendapatkan pengaturan HTTP back-end bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
+Perintah ketiga menghapus konfigurasi pengurasan koneksi dari pengaturan HTTP back-end yang disimpan dalam $Pengaturan. Dan, perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

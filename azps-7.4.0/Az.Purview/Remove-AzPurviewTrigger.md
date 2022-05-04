@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewTrigger.md
-ms.openlocfilehash: 630cb1acfdd2a101053d1cb4e3926646846a9d71
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c2da6e49d49292bda170bd5bb04ad00cb52654bd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117783"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144621362"
 ---
 # Remove-AzPurviewTrigger
 
 ## SYNOPSIS
 Menghapus pemicu yang terkait dengan pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewtrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

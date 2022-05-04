@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
-ms.openlocfilehash: f95fdf7c2efe481d9714931be365fce92f63f726
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 700e08a9912e7a64e3f63f12ead2097a1121fb19
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670930"
 ---
 # Get-AzRegulatoryComplianceAssessment
 
 ## SYNOPSIS
 Mendapatkan penilaian kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycomplianceassessment) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
-ms.openlocfilehash: 57edd81ccf6b673299842162299afe0ce7be5c3d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 264d4ffb7c12effc562eeaddd5c3ea92af7554eb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281277"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636020"
 ---
 # New-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworksecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzNetworkSecurityGroup -Name "nsg1" -ResourceGroupName "rg1"  -Location  "we
 
 Perintah ini membuat grup keamanan jaringan Azure baru bernama "nsg1" dalam grup sumber daya "rg1" di lokasi "westus".
 
-### Contoh 2: Membuat grup keamanan jaringan mendetail
+### Contoh 2: Membuat grup keamanan jaringan terperinci
 ```powershell
 $rule1 = New-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" `
     -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix `
@@ -59,7 +62,7 @@ Langkah:3 Tambahkan aturan yang dibuat di atas ke NSG baru bernama NSG-FrontEnd.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat untuk membuat grup keamanan jaringan.
+Menentukan wilayah untuk membuat grup keamanan jaringan.
 
 ```yaml
 Type: System.String
@@ -118,8 +121,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama grup keamanan jaringan untuk dibuat.
+### -Name
+Menentukan nama grup keamanan jaringan yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityRules
-Menentukan daftar objek aturan keamanan jaringan untuk dibuat dalam grup keamanan jaringan.
+Menentukan daftar objek aturan keamanan jaringan yang akan dibuat dalam kelompok keamanan jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSecurityRule[]
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -179,8 +182,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -229,8 +232,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzNetworkSecurityGroup](./Get-AzNetworkSecurityGroup.md)
+[Dapatkan-AzNetworkSecurityGroup](./Get-AzNetworkSecurityGroup.md)
 
 [Remove-AzNetworkSecurityGroup](./Remove-AzNetworkSecurityGroup.md)
 
-[Set-AzNetworkSecurityGroup](./Set-AzNetworkSecurityGroup.md)
+[Atur-AzNetworkSecurityGroup](./Set-AzNetworkSecurityGroup.md)

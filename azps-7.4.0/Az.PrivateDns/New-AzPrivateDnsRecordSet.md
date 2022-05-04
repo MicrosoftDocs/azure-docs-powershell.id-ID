@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 34b66f86f2ae9e61d08ffeb39c900b08481f16fb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 32f8ddce70eea9274ea645446bf1f8a85198588d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803574"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673144"
 ---
 # New-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
-Membuat kumpulan catatan di zona DNS Pribadi.
+Membuat kumpulan catatan di zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +44,11 @@ New-AzPrivateDnsRecordSet -ParentResourceId <String> -Name <String> -RecordType 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzPrivateDnsRecordSet membuat kumpulan catatan Private Domain Name System (DNS) baru dengan nama yang ditentukan dan ketikkan zona privat yang ditentukan. Objek RecordSet adalah sekumpulan catatan DNS Pribadi dengan nama dan tipe yang sama. Perhatikan bahwa nama tersebut relatif terhadap zona privat dan bukan nama yang sepenuhnya memenuhi syarat. Parameter PrivateDnsRecord menentukan rekaman dalam kumpulan rekaman. Parameter ini mengambil array catatan DNS Pribadi, dibuat menggunakan New-AzPrivateDnsRecordConfig. Anda bisa menggunakan operator pipeline untuk mengirimkan objek PSPrivateDnsZone ke cmdlet ini, atau Anda bisa melewati objek PSPrivateDnsZone sebagai parameter Zona, atau Anda bisa menentukan zona dengan ResourceId-nya, atau anda bisa menentukan zona menurut nama. Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Jika RecordSet yang cocok sudah ada (nama dan tipe rekaman yang sama), Anda harus menentukan parameter Overwrite, jika tidak cmdlet tidak akan membuat RecordSet baru.
+Cmdlet New-AzPrivateDnsRecordSet membuat kumpulan catatan Sistem Nama Domain Privat (DNS) baru dengan nama dan jenis yang ditentukan di zona privat yang ditentukan. Objek RecordSet adalah sekumpulan catatan DNS Privat dengan nama dan jenis yang sama. Perhatikan bahwa namanya relatif terhadap zona privat dan bukan nama yang sepenuhnya memenuhi syarat. Parameter PrivateDnsRecord menentukan rekaman dalam kumpulan catatan. Parameter ini mengambil array rekaman DNS Privat, dibangun menggunakan New-AzPrivateDnsRecordConfig. Anda dapat menggunakan operator alur untuk meneruskan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat meneruskan objek PSPrivateDnsZone sebagai parameter Zona, atau Anda dapat menentukan zona dengan ResourceId-nya, atau Anda dapat menentukan zona berdasarkan nama. Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Jika RecordSet yang cocok sudah ada (nama dan jenis rekaman yang sama), Anda harus menentukan parameter Timpa, jika tidak cmdlet tidak akan membuat RecordSet baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Kumpulan Rekaman tipe A
+### Contoh 1: Membuat RecordSet tipe A
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -IPv4Address 1.2.3.4
@@ -89,9 +92,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe A dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi.
+Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat.
 
-### Contoh 2: Membuat Kumpulan Rekaman dari tipe AAAA
+### Contoh 2: Membuat RecordSet jenis AAAA
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Ipv6Address 2001:db8::1
@@ -112,9 +115,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe AAAA dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan berjenis AAAA dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 3: Membuat Kumpulan Rekaman tipe CNAME
+### Contoh 3: Membuat RecordSet jenis CNAME
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Cname www.contoso.com
@@ -135,9 +138,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe CNAME dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Contoh ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan berjenis CNAME dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 4: Membuat RecordSet tipe MX
+### Contoh 4: Membuat RecordSet jenis MX
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Exchange "mail.microsoft.com" -Preference 5
@@ -158,9 +161,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan adalah tipe MX dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama www di zona privat myzone.com. Kumpulan catatan berjenis MX dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 5: Membuat RecordSet tipe PTR
+### Contoh 5: Membuat RecordSet jenis PTR
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Ptrdname www.contoso.com
@@ -181,9 +184,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama 4 di zona privat 3.2.1.in-addr.arpa. Kumpulan rekor adalah tipe PTR dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama 4 di zona privat 3.2.1.in-addr.arpa. Kumpulan catatan berjenis PTR dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 6: Membuat Kumpulan Data tipe SRV
+### Contoh 6: Membuat RecordSet jenis SRV
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Priority 0 -Weight 5 -Port 8080 -Target sipservice.contoso.com
@@ -204,9 +207,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama _sip._tcp di zona privat myzone.com. Kumpulan catatan adalah tipe SRV dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi, mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama _sip._tcp di zona privat myzone.com. Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat, menunjuk ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 7: Membuat Kumpulan Data tipe TXT
+### Contoh 7: Membuat RecordSet jenis TXT
 ```powershell
  $Records = @()
  $Records += New-AzPrivateDnsRecordConfig -Value "This is a TXT Record"
@@ -227,7 +230,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat teks RecordSet bernama di zona privat myzone.com. Kumpulan catatan adalah tipe TXT dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Pribadi. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Perintah ini membuat teks bernama RecordSet di zona privat myzone.com. Kumpulan catatan berjenis TXT dan memiliki TTL 1 jam (3600 detik). Ini berisi satu catatan DNS Privat. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 8: Membuat RecordSet di apex zona
 ```powershell
@@ -250,9 +253,9 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet pada apex (atau akar) zona privat myzone.com. Untuk melakukan ini, nama kumpulan catatan ditentukan sebagai "@" (termasuk tanda kutip ganda). Anda tidak bisa membuat catatan CNAME di puncak zona. Ini adalah batasan standar DNS; bukan batasan AZURE Private DNS. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Perintah ini membuat RecordSet di puncak (atau akar) zona privat myzone.com. Untuk melakukan ini, nama kumpulan catatan ditentukan sebagai "@" (termasuk tanda kutip ganda). Anda tidak dapat membuat data CNAME di puncak zona. Ini adalah batasan dari standar DNS; ini bukan batasan Azure Private DNS. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
-### Contoh 9: Membuat Kumpulan Catatan wildcard
+### Contoh 9: Membuat Kumpulan Catatan kartubebas
 
 ```powershell
  $Records = @()
@@ -274,7 +277,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama * di zona privat myzone.com. Ini adalah kumpulan rekor wildcard. Untuk membuat Kumpulan Rekaman hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa catatan, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama * di zona privat myzone.com. Ini adalah kumpulan catatan kartubebas. Untuk membuat RecordSet hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 10: Membuat Kumpulan Catatan kosong
 
@@ -296,15 +299,15 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama * di zona privat myzone.com. Kumpulan catatan adalah tipe A dan memiliki TTL 1 jam (3600 detik). Ini adalah kumpulan catatan kosong, yang bertindak sebagai tempat penampung tempat Anda nanti bisa menambahkan catatan.
+Perintah ini membuat RecordSet bernama * di zona privat myzone.com. Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik). Ini adalah kumpulan catatan kosong, yang bertindak sebagai tempat penampung tempat Anda nantinya bisa menambahkan rekaman.
 
-### Contoh 11: Membuat kumpulan catatan dan menyembunyikan semua konfirmasi
+### Contoh 11: Membuat kumpulan catatan dan menekan semua konfirmasi
 
 ```powershell
 $RecordSet = New-AzPrivateDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -PrivateDnsRecords (New-AzDnsRecordConfig -Ipv4Address 1.2.3.4) -Confirm:$False -Overwrite
 ```
 
-Perintah ini membuat RecordSet. Parameter Timpa memastikan bahwa kumpulan catatan ini menimpa kumpulan catatan yang sudah ada sebelumnya dengan nama dan tipe yang sama (rekaman yang sudah ada dalam kumpulan catatan tersebut hilang). Parameter Konfirmasi dengan nilai $False menyembunyikan perintah konfirmasi.
+Perintah ini membuat RecordSet. Parameter Timpa memastikan bahwa kumpulan catatan ini menimpa kumpulan catatan yang sudah ada sebelumnya dengan nama dan jenis yang sama (rekaman yang sudah ada dalam kumpulan catatan tersebut hilang). Parameter Konfirmasi dengan nilai $False menekan prompt konfirmasi.
 
 ## PARAMETERS
 
@@ -338,7 +341,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama rekaman dalam kumpulan catatan ini (relatif terhadap nama zona dan tanpa titik penghentian).
 
 ```yaml
@@ -369,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-ID Sumber Daya Zona DNS Pribadi.
+ResourceID Zona DNS Privat.
 
 ```yaml
 Type: System.String
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateDnsRecord
-Catatan dns pribadi yang merupakan bagian dari kumpulan catatan ini.
+Catatan dns privat yang merupakan bagian dari kumpulan catatan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsRecordBase[]
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordType
-Tipe catatan DNS Pribadi dalam kumpulan catatan ini.
+Tipe catatan DNS Privat dalam kumpulan catatan ini.
 
 ```yaml
 Type: Microsoft.Azure.Management.PrivateDns.Models.RecordType
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ttl
-Nilai TTL dari semua catatan dalam kumpulan catatan ini.
+Nilai TTL dari semua rekaman dalam kumpulan catatan ini.
 
 ```yaml
 Type: System.UInt32
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Objek PrivateDnsZone mewakili zona untuk membuat kumpulan rekaman.
+Objek PrivateDnsZone yang mewakili zona untuk membuat kumpulan catatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsZone
@@ -460,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Zona tempat untuk membuat kumpulan rekaman (tanpa titik penghentian).
+Zona untuk membuat kumpulan catatan (tanpa titik yang mengakhiri).
 
 ```yaml
 Type: System.String
@@ -474,8 +477,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -490,7 +493,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -506,7 +509,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

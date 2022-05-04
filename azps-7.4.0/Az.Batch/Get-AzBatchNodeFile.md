@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
-ms.openlocfilehash: 9515b2da5cd3f9cbee441aaebd3c3cec1f889740
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 16525695d7176756343f2a93a1918ac1f0e6adfc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811692"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672208"
 ---
 # Get-AzBatchNodeFile
 
 ## SYNOPSIS
 Mendapatkan properti file simpul Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchnodefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,8 +61,8 @@ Get-AzBatchNodeFile [[-ComputeNode] <PSComputeNode>] [-Filter <String>] [-MaxCou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchNodeFile** mendapatkan properti file simpul Azure Batch dari tugas atau node komputasi.
-Untuk mempersempit hasil, Anda bisa menentukan filter Open Data Protocol (OData).
+Cmdlet **Get-AzBatchNodeFile** mendapatkan properti file simpul Azure Batch dari tugas atau simpul komputasi.
+Untuk mempersempit hasil, Anda dapat menentukan filter Open Data Protocol (OData).
 Jika Anda menentukan tugas, tetapi bukan filter, cmdlet ini mengembalikan properti untuk semua file simpul untuk tugas tersebut.
 Jika Anda menentukan simpul komputasi, tetapi bukan filter, cmdlet ini mengembalikan properti untuk semua file simpul untuk simpul komputasi tersebut.
 
@@ -81,7 +84,7 @@ False       StdOut.txt    Microsoft.Azure.Commands.Batch.Models.PSFile... https:
 Perintah ini mendapatkan properti file simpul StdOut.txt yang terkait dengan tugas yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Dapatkan properti file simpul yang terkait dengan tugas menggunakan filter
+### Contoh 2: Mendapatkan properti file simpul yang terkait dengan tugas dengan menggunakan filter
 ```powershell
 Get-AzBatchNodeFile -JobId "Job-00002" -TaskId "Task26" -Filter "startswith(name,'St')" -BatchContext $Context
 ```
@@ -95,9 +98,9 @@ False       StdErr.txt  Microsoft.Azure.Commands.Batch.Models.PSFile... https://
 False       StdOut.txt  Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan properti file simpul yang namanya dimulai dengan st dan dikaitkan dengan tugas yang memiliki ID Task26 di bawah pekerjaan yang memiliki ID Job-00002.
+Perintah ini mendapatkan properti file simpul yang namanya dimulai dengan st dan dikaitkan dengan tugas yang memiliki TUGAS26 ID di bawah pekerjaan yang memiliki ID Job-00002.
 
-### Contoh 3: Mendapatkan properti file simpul yang terkait dengan tugas secara rekurtif
+### Contoh 3: Secara rekursif mendapatkan properti file simpul yang terkait dengan tugas
 ```powershell
 Get-AzBatchTask "Job-00003" "Task31" -BatchContext $Context | Get-AzBatchNodeFile -Recursive -BatchContext $Context
 ```
@@ -114,11 +117,11 @@ True        wd                                                               htt
 False       wd\newFile.txt   Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan properti semua file yang terkait dengan tugas yang memiliki ID Task31 di job Job-00003.
-Perintah ini menentukan parameter *Rekursi* .
+Perintah ini mendapatkan properti semua file yang terkait dengan tugas yang memiliki TUGAS ID31 dalam pekerjaan Job-00003.
+Perintah ini menentukan parameter *Rekursif* .
 Oleh karena itu, cmdlet melakukan pencarian file rekursif dilakukan, dan mengembalikan file simpul wd\newFile.txt.
 
-### Contoh 4: Dapatkan satu file dari simpul komputasi
+### Contoh 4: Mendapatkan satu file dari simpul komputasi
 ```powershell
 Get-AzBatchNodeFile -PoolId "Pool22" -ComputeNodeId "ComputeNode01" -Path "Startup\StdOut.txt" -BatchContext $Context
 ```
@@ -129,9 +132,9 @@ IsDirectory Name                    Properties                                  
 False       startup\stdout.txt      Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan file yang dinamai Startup\StdOut.txt dari simpul komputasi yang memiliki ID ComputeNode01 dalam kumpulan yang memiliki ID Pool22.
+Perintah ini mendapatkan file yang diberi nama Startup\StdOut.txt dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool22.
 
-### Contoh 5: Dapatkan semua file di bawah folder dari simpul komputasi
+### Contoh 5: Mendapatkan semua file di bawah folder dari simpul komputasi
 ```powershell
 Get-AzBatchNodeFile -PoolId "Pool22" -ComputeNodeId "ComputeNode01" -Filter "startswith(name,'startup')" -Recursive -BatchContext $Context
 ```
@@ -146,8 +149,8 @@ False       startup\stdout.txt        Microsoft.Azure.Commands.Batch.Models.PSFi
 True        startup\wd                                                                https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan semua file di bawah folder startup dari simpul komputasi yang memiliki ID ComputeNode01 dalam kumpulan yang memiliki ID Pool22.
-Cmdlet ini menentukan parameter *Rekursi* .
+Perintah ini mendapatkan semua file di bawah folder startup dari simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool22.
+Cmdlet ini menentukan parameter *Rekursif* .
 
 ### Contoh 6: Mendapatkan file dari folder akar simpul komputasi
 ```powershell
@@ -162,13 +165,13 @@ True        startup                         https://cmdletexample.westus.Batch.c
 True        workitems                       https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan semua file di folder akar simpul komputasi yang memiliki ID ComputeNode01 dalam kumpulan yang memiliki ID Pool22.
+Perintah ini mendapatkan semua file di folder akar simpul komputasi yang memiliki ID ComputeNode01 di kumpulan yang memiliki ID Pool22.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -183,8 +186,8 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan simpul komputasi, sebagai objek **PSComputeNode** , yang berisi file simpul batch.
-Untuk mendapatkan objek node komputasi, gunakan cmdlet Get-AzBatchComputeNode.
+Menentukan simpul komputasi, sebagai objek **PSComputeNode** , yang berisi file simpul Batch.
+Untuk mendapatkan objek simpul komputasi, gunakan cmdlet Get-AzBatchComputeNode.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNodeId
-Menentukan ID simpul komputasi yang berisi file simpul batch.
+Menentukan ID simpul komputasi yang berisi file simpul Batch.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData.
+Menentukan klausa filter OData.
 Cmdlet ini mengembalikan properti untuk file simpul yang cocok dengan filter yang ditentukan parameter ini.
 
 ```yaml
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 
 ### -Jalur
 Menentukan jalur file simpul tempat cmdlet ini mengambil properti.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -307,9 +310,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rekursi
-Menunjukkan bahwa cmdlet ini mengembalikan daftar file berulang.
-Jika tidak, hanya mengembalikan file dalam folder akar.
+### -Rekursif
+Menunjukkan bahwa cmdlet ini mengembalikan daftar file rekursif.
+Jika tidak, ia hanya mengembalikan file di folder akar.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tugas
-Menentukan tugas, sebagai objek **PSCloudTask** , yang mengaitkan file simpul.
+Menentukan tugas, sebagai objek **PSCloudTask** , yang dengannya file simpul dikaitkan.
 Untuk mendapatkan objek tugas, gunakan cmdlet Get-AzBatchTask.
 
 ```yaml
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskId
-Menentukan ID tugas di mana cmdlet ini mendapatkan properti file simpul.
+Menentukan ID tugas tempat cmdlet ini mendapatkan properti file simpul.
 
 ```yaml
 Type: System.String
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

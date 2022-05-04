@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: f32320653ab9f745bf6a5fd2535959f71014c0c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8a869fad61b92e9b6acd5ac9b6472d59613d83dd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802692"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672910"
 ---
 # Disable-AzRecoveryServicesBackupRPMountScript
 
 ## SYNOPSIS
 Melepas semua file titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackuprpmountscript) untuk informasi terbaru.
 
 ## SYNTAX
 

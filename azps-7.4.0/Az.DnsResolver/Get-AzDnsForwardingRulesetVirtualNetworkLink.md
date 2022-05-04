@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: 0c89a2d50e9f7ae657ce123d320129d613175954
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d83df76bc138ff262be588bb988fd4f09cea335a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143287379"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622470"
 ---
 # Get-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Mendapatkan properti tautan jaringan virtual ke aturan penerusan DNS.
+Mendapatkan properti tautan jaringan virtual ke set aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName <String> 
  [-SubscriptionId <String[]>] [-Top <Int32>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName <String> -Name <String>
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzDnsForwardingRulesetVirtualNetworkLink -InputObject <IDnsResolverIdentity>
 ```
 
 ## DESCRIPTION
-Mendapatkan properti tautan jaringan virtual ke aturan penerusan DNS.
+Mendapatkan properti tautan jaringan virtual ke set aturan penerusan DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan tautan jaringan virtual di bawah aturan penerusan DNS
+### Contoh 1: Mencantumkan tautan jaringan virtual di bawah set aturan penerusan DNS
 ```powershell
 Get-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName pstestdnsresolvername -ResourceGroupName powershell-test-rg
 ```
@@ -56,7 +59,7 @@ samplevnetLink2  Microsoft.Network/dnsForwardingRuleset/virtualNetworkLinks "0b0
 
 Perintah ini mendapatkan semua tautan jaringan virtual berdasarkan nama
 
-### Contoh 2: Dapatkan tautan jaringan virtual tunggal menurut nama
+### Contoh 2: Dapatkan tautan jaringan virtual tunggal berdasarkan nama
 ```powershell
 Get-AzDnsResolverVirtualNetworkLink -DnsForwardingRulesetName pstestdnsresolvername -Name samplevnetLink1 -ResourceGroupName powershell-test-rg
 ```
@@ -67,7 +70,7 @@ Name                  Type                                            Etag
 samplevnetLink1 Microsoft.Network/dnsForwardingRuleset/virtualNetworkLinks "0b008451-0000-0800-0000-60402b960000"
 ```
 
-Perintah ini mendapatkan satu tautan jaringan virtual berdasarkan nama
+Perintah ini mendapatkan tautan jaringan virtual tunggal berdasarkan nama
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsForwardingRulesetName
-Nama aturan penerusan DNS.
+Nama kumpulan aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan jaringan virtual.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -162,8 +165,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Jumlah hasil maksimum yang akan dikembalikan.
+### -Atas
+Jumlah maksimum hasil yang akan dikembalikan.
 Jika tidak ditentukan, mengembalikan hingga 100 hasil.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -199,13 +202,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama aturan penerusan DNS.
-  - `[DnsResolverName <String>]`: Nama penuntas DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+  - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk penyelesaian DNS.
-  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk penyelesaian DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
+  - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

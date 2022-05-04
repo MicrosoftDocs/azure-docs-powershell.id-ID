@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/inv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceReimage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceReimage.md
-ms.openlocfilehash: c6b0ea26f05d4df27555cb16ec62268c87299c8d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 55cf6317c61c245677c8bad32c510935eefa5cfb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810486"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672046"
 ---
 # Invoke-AzCloudServiceRoleInstanceReimage
 
 ## SYNOPSIS
 Operasi Reimage Role Instance asinkron menginstal ulang sistem operasi pada instans peran web atau peran pekerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/invoke-azcloudserviceroleinstancereimage) untuk informasi terbaru.
 
 ## SYNTAX
 

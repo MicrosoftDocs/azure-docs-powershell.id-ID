@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMRunCommand.md
-ms.openlocfilehash: 9f1d6b429d537406322e65461c6fcb7399393ffe
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 52c5f89fefe68eef581e23e201305c2a307bf8f9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128043"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671974"
 ---
 # Invoke-AzVMRunCommand
 
 ## SYNOPSIS
 Jalankan perintah pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzVMRunCommand -CommandId <String> [-ScriptPath <String>] [-Parameter <Ha
 ```
 
 ## DESCRIPTION
-Memanggil perintah jalankan pada VM.
+Panggil perintah jalankan pada VM.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Memanggil perintah jalankan pada VM.
 Invoke-AzVMRunCommand -ResourceGroupName 'rgname' -VMName 'vmname' -CommandId 'RunPowerShellScript' -ScriptPath 'sample.ps1' -Parameter @{param1 = "var1"; param2 = "var2"}
 ```
 
-Gunakan perintah jalankan 'RunPowerShellScript' dengan menimpa skrip 'sample.ps1' pada VM Windows bernama 'vmname' dalam grup sumber daya 'rgname'. Var1 dan var2 didefinisikan sebagai parameter dalam sample.ps1. Nilai parameter hanya dapat berupa tipe string dan skrip bertanggung jawab untuk mengonversinya ke tipe lain jika diperlukan. 
+Panggil perintah jalankan 'RunPowerShellScript' dengan menimpa skrip 'sample.ps1' pada VM Windows bernama 'vmname' dalam grup sumber daya 'rgname'. Var1 dan var2 didefinisikan sebagai parameter dalam sample.ps1. Nilai parameter hanya dapat berupa jenis string dan skrip bertanggung jawab untuk mengonversinya ke jenis lain jika diperlukan. 
 
 ### Contoh 2: Memanggil perintah di Linux
 ```powershell
@@ -63,7 +66,7 @@ echo Usage 1: Ordered parameters: $0 $1
 echo Usage 2: Named exports: $var1 $var2
 ```
 
-Perintah ini menjalankan perintah 'RunShellScript' dengan menimpa skrip 'sample.bash' pada VM Linux bernama 'vmname'. Var1 dan var2 didefinisikan sebagai parameter dalam sample.bash.
+Perintah ini memanggil perintah jalankan 'RunShellScript' dengan menimpa skrip 'sample.bash' pada VM Linux bernama 'vmname'. Var1 dan var2 didefinisikan sebagai parameter dalam sample.bash.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -CommandId
-ID perintah jalankan.
+ID perintah eksekusi.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter perintah jalankan. Tentukan parameter sebagai pasangan kunci/nilai yang akan dilewati pada eksekusi skrip.
+Parameter perintah eksekusi. Tentukan parameter sebagai pasangan kunci/nilai yang akan diteruskan pada eksekusi skrip.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptPath
-Jalur skrip yang akan dijalankan. Ketika nilai ini diberikan, skrip yang diberikan akan menimpa skrip default perintah.
-Jalur harus menunjuk ke file dari sistem file lokal. Perintah akan memuatnya dan mengirimkannya untuk eksekusi.
+Jalur skrip yang akan dijalankan. Ketika nilai ini diberikan, skrip yang diberikan akan mengambil alih skrip default perintah.
+Jalur harus menunjuk ke file dari sistem file lokal. Perintah akan memuatnya dan mengirimkannya untuk dieksekusi.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Objek mesin virtual PS.
+Objek komputer virtual PS.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Nama mesin virtual.
+Nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -203,8 +206,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

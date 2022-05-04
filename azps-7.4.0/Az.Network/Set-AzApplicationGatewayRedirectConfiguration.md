@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: 7a6133067074be561a30dc628e7c78eb8dcc86b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3db0faba83971809d45e2e25e3917d724b300d35
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142742032"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697862"
 ---
 # Set-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
-Mengatur konfigurasi pengalihan pada Application Gateway yang sudah ada.
+Mengatur konfigurasi pengalihan pada Application Gateway yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayredirectconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzApplicationGatewayRedirectConfiguration -ApplicationGateway <PSApplication
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayRequestRoutingRule** mengubah konfigurasi pengalihan.
+Cmdlet **Set-AzApplicationGatewayRequestRoutingRule** memodifikasi konfigurasi pengalihan.
 
 ## EXAMPLES
 
@@ -52,11 +55,11 @@ $AppGw =  Set-AzApplicationGatewayRedirectConfiguration -ApplicationGateway $app
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mengubah konfigurasi pengalihan gateway aplikasi untuk mengalihkan tipe Permanen dan menggunakan url target.
+Perintah kedua memodifikasi konfigurasi pengalihan untuk gateway aplikasi untuk mengalihkan jenis Permanen dan menggunakan url target.
 
 ### Contoh 2
 
-Mengatur konfigurasi pengalihan pada Application Gateway yang sudah ada. (autogenerasi)
+Mengatur konfigurasi pengalihan pada Application Gateway yang ada. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -96,8 +99,8 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePath
-Sertakan jalur dalam url yang dialihkan.
-Default adalah true.
+Sertakan jalur di url yang dialihkan.
+Defaultnya adalah true.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -112,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeQueryString
-Sertakan string kueri dalam url yang dialihkan.
-Default adalah true.
+Sertakan string kueri di url yang dialihkan.
+Defaultnya adalah true.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -127,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi Pengalihan
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectType
-Tipe pengalihan
+Jenis pengalihan
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetUrl
-Pengalihan fo URL target
+Url target untuk pengalihan
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

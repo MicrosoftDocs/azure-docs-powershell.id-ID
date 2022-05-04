@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
-ms.openlocfilehash: 53bb828c0cc3a30b9aac59cc02b795648ffad0d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cef21265ef2483cd648670e2352e08b00a3bd477
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672948"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144697556"
 ---
 # Get-AzRegulatoryComplianceStandard
 
 ## SYNOPSIS
 Mendapatkan standar kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycompliancestandard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzRegulatoryComplianceStandard -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Dapatkan detail standar kepatuhan peraturan tertentu atau cantumkan semua standar kepatuhan peraturan dalam langganan tertentu.
+Dapatkan detail standar kepatuhan peraturan tertentu atau cantumkan semua standar kepatuhan peraturan di bawah langganan tertentu.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ SkippedControls     : 0
 UnsupportedControls : 24
 ```
 
-Dapatkan semua standar kepatuhan terhadap peraturan di bawah langganan.
+Dapatkan semua standar kepatuhan terhadap peraturan berdasarkan langganan.
 
 ### Contoh 2
 ```powershell
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama standar.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
+ID sumber daya keamanan yang ingin Anda panggil perintahnya.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
-ms.openlocfilehash: ed649d76bb9d3157503af6f584c07cdc4fdaf8b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e9bdf7724022072f922c586a44b1385d00dd4610
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143068265"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670516"
 ---
 # Invoke-AzRestMethod
 
 ## SYNOPSIS
 Membuat dan melakukan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/invoke-azrestmethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Content    : {
              }
 ```
 
-Dapatkan ruang kerja analitik log menurut jalur. Ini hanya mendukung API bidang manajemen dan Hostname Azure Resource Manager ditambahkan sesuai dengan pengaturan lingkungan Azure.  
+Mendapatkan ruang kerja analitik log menurut jalur. Ini hanya mendukung API bidang manajemen dan Nama host Azure Resource Manager ditambahkan sesuai dengan pengaturan lingkungan Azure.  
 
 ### Contoh 2
 ```powershell
@@ -103,7 +106,7 @@ Method     : GET
 Content    : {"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users/$entity","businessPhones":["......}
 ```
 
-Dapatkan pengguna masuk saat ini melalui API MicrosoftGraph. Contoh ini setara `Get-AzADUser -SignedIn`dengan .
+Dapatkan pengguna masuk saat ini melalui MicrosoftGraph API. Contoh ini setara dengan `Get-AzADUser -SignedIn`.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Method
+### -Metode
 Metode Http
 
 ```yaml
@@ -168,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 daftar Nama Sumber Daya Target
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Muatan format JSON
+Payload format JSON
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-URI Pengidentifikasi ditentukan oleh REST API yang Anda panggil. Ini seharusnya bukan id sumber daya Azure Resource Manager.
+URI pengidentifikasi yang ditentukan oleh REST API yang Anda panggil. Seharusnya bukan id sumber daya Azure Resource Manager.
 
 ```yaml
 Type: System.Uri
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Daftar Tipe Sumber Daya Target
+Daftar Jenis Sumber Daya Target
 
 ```yaml
 Type: System.String[]
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Pengidentifikasi Sumber Daya Seragam sumber daya Azure. Sumber daya target perlu mendukung autentikasi Azure AD dan token akses berasal sesuai dengan id sumber daya. Jika id sumber daya tidak diatur, nilainya berasal menurut akhiran layanan bawaan di Lingkungan Azure saat ini.
+Pengidentifikasi Sumber Daya Seragam sumber daya Azure. Sumber daya target perlu mendukung autentikasi Azure AD dan token akses diturunkan sesuai dengan id sumber daya. Jika id sumber daya tidak ditetapkan, nilainya diturunkan sesuai dengan akhiran layanan bawaan di Lingkungan Azure saat ini.
 
 ```yaml
 Type: System.Uri
@@ -303,8 +306,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

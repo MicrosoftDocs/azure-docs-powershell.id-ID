@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchPool.md
-ms.openlocfilehash: 12cac935efe285a23a35728e9d6627dda1c14f1b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be3fc0905f70c9855deef8a549f5865bfa875628
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066931"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674620"
 ---
 # Remove-AzBatchPool
 
 ## SYNOPSIS
-Menghapus kumpulan Kumpulan yang ditentukan.
+Menghapus kumpulan Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,31 +30,31 @@ Remove-AzBatchPool [-Id] <String> [-Force] -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchPool** menghapus kumpulan Azure Batch yang ditentukan.
-Anda akan dimintai konfirmasi kecuali Anda menggunakan parameter *Paksa* .
+Anda dimintai konfirmasi kecuali Anda menggunakan parameter *Paksa* .
 
 ## EXAMPLES
 
-### Contoh 1: Hapus kumpulan Kumpulan menurut ID pool
+### Contoh 1: Menghapus kumpulan Batch menurut ID kumpulan
 ```powershell
 Remove-AzBatchPool -Id "MyPool" -BatchContext $Context
 ```
 
 Perintah ini menghapus kumpulan dengan ID MyPool.
-Pengguna akan dimintai konfirmasi sebelum operasi penghapusan dilakukan.
+Pengguna dimintai konfirmasi sebelum operasi penghapusan berlangsung.
 
-### Contoh 2: Hapus semua kumpulan Kumpulan secara paksa
+### Contoh 2: Hapus semua kumpulan Batch secara paksa
 ```powershell
 Get-AzBatchPool -BatchContext $Context | Remove-AzBatchPool -Force -BatchContext $Context
 ```
 
-Perintah ini menghapus semua kumpulan Kumpulan.
+Perintah ini menghapus semua kumpulan Batch.
 Karena parameter *Paksa* ada, perintah konfirmasi ditekan.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -80,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 
 ### -Id
 Menentukan ID kumpulan yang akan dihapus.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -111,8 +114,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

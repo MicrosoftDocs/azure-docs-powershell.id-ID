@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionPriceSheet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionPriceSheet.md
-ms.openlocfilehash: 487549eee26097a143ca3dacec9f3f7198fbd2b0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9c4fae128bdd0c69582b7d5a5f3336fb134bf525
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750258"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616118"
 ---
 # Get-AzConsumptionPriceSheet
 
 ## SYNOPSIS
 Dapatkan lembar harga langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionpricesheet) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
               UnitPrice:  1.37
 ```
 
-### Contoh 4: Dapatkan 5 rekaman teratas lembar harga
+### Contoh 4: Dapatkan 5 catatan lembar harga teratas
 ```powershell
 Get-AzConsumptionPriceSheet -Top 5
 ```
@@ -109,7 +112,7 @@ Pricesheets:  BillingPeriodId:  subscriptions/1caaa5a3-2b66-438e-8ab4-bce37d518c
 ## PARAMETERS
 
 ### -BillingPeriodName
-Nama periode tagihan tertentu untuk mendapatkan lembar harga yang terkait dengannya.
+Nama periode penagihan tertentu untuk mendapatkan lembar harga yang terkait.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Tentukan jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
@@ -169,11 +172,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

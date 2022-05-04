@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: bda2e3118084ea7157914cc34da989aa4c842952
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 048ad98d3ed8a31dd4cc70e40bfd6038e5260c20
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117495"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602384"
 ---
 # Get-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan perlindungan Pencadangan untuk kubah.
+Mendapatkan kebijakan perlindungan Pencadangan untuk brankas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRecoveryServicesBackupProtectionPolicy [-Name] <String> [-VaultId <String>
  [-DefaultProfile <IAzureContextContainer>] [-PolicySubType <PSPolicyType>] [<CommonParameters>]
 ```
 
-### Beban KerjaParamSet
+### WorkloadParamSet
 ```
 Get-AzRecoveryServicesBackupProtectionPolicy [-WorkloadType] <WorkloadType> [-VaultId <String>]
  [-DefaultProfile <IAzureContextContainer>] [-PolicySubType <PSPolicyType>] [<CommonParameters>]
@@ -46,12 +49,12 @@ Get-AzRecoveryServicesBackupProtectionPolicy [-WorkloadType] <WorkloadType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupProtectionPolicy** mendapatkan kebijakan perlindungan Azure Backup untuk kubah.
-Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Get-AzRecoveryServicesBackupProtectionPolicy** mendapatkan kebijakan perlindungan Azure Backup untuk vault.
+Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kebijakan dalam kubah
+### Contoh 1: Dapatkan semua kebijakan di vault
 ```powershell
 Get-AzRecoveryServicesBackupProtectionPolicy
 ```
@@ -64,9 +67,9 @@ NewPolicy            AzureVM            AzureVM              4/23/2016 5:30:00 P
 NewPolicy2           AzureVM            AzureVM              4/24/2016 1:30:00 AM
 ```
 
-Perintah ini mendapatkan semua kebijakan perlindungan yang dibuat dalam kubah.
+Perintah ini mendapatkan semua kebijakan perlindungan yang dibuat di vault.
 
-### Contoh 2: Dapatkan kebijakan tertentu
+### Contoh 2: Mendapatkan kebijakan tertentu
 ```powershell
 $Pol= Get-AzRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 ```
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama kebijakan.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicySubType
-Jenis kebijakan yang akan disambungkan: Standar, Ditingkatkan
+Jenis kebijakan yang akan diambil: Standar, Ditingkatkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PSPolicyType
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkloadType
-Tipe beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, AzureFiles, MSSQL
+Jenis beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, AzureFiles, MSSQL
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.WorkloadType]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -183,7 +186,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzRecoveryServicesBackupProtectionPolicy](./New-AzRecoveryServicesBackupProtectionPolicy.md)
+[Baru-AzRecoveryServicesBackupProtectionPolicy](./New-AzRecoveryServicesBackupProtectionPolicy.md)
 
 [Remove-AzRecoveryServicesBackupProtectionPolicy](./Remove-AzRecoveryServicesBackupProtectionPolicy.md)
 

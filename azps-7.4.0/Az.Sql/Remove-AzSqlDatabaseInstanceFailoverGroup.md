@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: c9c2970e8e667c0360112e497caeb31dae80efd8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 29f03ccd51aa37a0eb2ebdd5777d14a85dda48b5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272097"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616496"
 ---
 # Remove-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Menghapus Grup Failover Instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,9 +41,9 @@ Remove-AzSqlDatabaseInstanceFailoverGroup [-InputObject] <AzureSqlInstanceFailov
 ```
 
 ## DESCRIPTION
-Perintah ini menghapus Grup Failover Instans dengan nama yang ditentukan, membiarkan semua database tetap utuh. Titik akhir pendengar akan tidak terdaftar dari DNS.
+Perintah ini menghapus Grup Failover Instans dengan nama yang ditentukan, membiarkan semua database tetap utuh. Titik akhir pendengar tidak akan terdaftar dari DNS.
 
-Kawasan utama Grup Failover Instans harus digunakan untuk menjalankan perintah.
+Wilayah utama Grup Failover Instans harus digunakan untuk menjalankan perintah.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan.
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Grup Failover Instans untuk dihapus
+Objek Grup Failover Instans yang akan dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
+Nama Wilayah Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Grup Failover Instans untuk dihapus.
+### -Name
+Nama Grup Failover Instans yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Grup Failover Instans untuk dihapus.
+ID Sumber Daya dari Grup Failover Instans yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -173,8 +176,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

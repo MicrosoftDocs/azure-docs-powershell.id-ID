@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceVaultSecretGroupObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceVaultSecretGroupObject.md
-ms.openlocfilehash: 41dc2de646fbc85de16ee36d5812d00260c2811a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a6907f72f569872db97e34fd8aa014fc276e163
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687510"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631396"
 ---
 # New-AzCloudServiceVaultSecretGroupObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk Vault Secret Group
+Membuat objek dalam memori untuk Grup Rahasia Vault
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudservicevaultsecretgroupobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,14 +31,14 @@ Membuat objek dalam memori untuk Grup Rahasia
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek grup rahasia kubah
+### Contoh 1: Membuat objek grup rahasia vault
 ```powershell
 $keyVault = Get-AzKeyVault -VaultName 'ContosoKeyVault'
 $certificate = Get-AzKeyVaultCertificate -VaultName 'ContosoKeyVault' -Name 'ContosoCert'
 $secretGroup = New-AzCloudServiceVaultSecretGroupObject -Id $keyVault.ResourceId -CertificateUrl $certificate.SecretId
 ```
 
-Perintah ini membuat objek grup rahasia kubah yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek grup rahasia vault yang digunakan untuk membuat atau memperbarui layanan cloud.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

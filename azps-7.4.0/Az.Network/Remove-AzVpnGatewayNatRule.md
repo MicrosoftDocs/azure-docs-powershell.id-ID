@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnGatewayNatRule.md
-ms.openlocfilehash: 09a2f3b920235c9fabcaa229e1c76940932010c6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7fa5fa3f3b85560b40fc55e3be58168d2ca7a42c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638252"
 ---
 # Remove-AzVpnGatewayNatRule
 
 ## SYNOPSIS
 Menghapus aturan NAT yang terkait dengan VpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvpngatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,8 +57,8 @@ New-AzVpnGatewayNatRule -ResourceGroupName $vpnGateway.ResourceGroupName -Parent
 Remove-AzVpnGatewayNatRule -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testNatRule"
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual,VpnGateway dan aturan NAT yang terkait dengan VpnGateway tersebut.
-Lalu menghapus aturan NAT menggunakan nama aturan NAT.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, VpnGateway, dan aturan NAT yang terkait dengan VpnGateway tersebut.
+Kemudian menghapus aturan NAT menggunakan nama aturan NAT.
 
 
 ## PARAMETERS
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menghapus sumber daya
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek VpnGatewayNatRule untuk diperbarui.
+Objek VpnGatewayNatRule yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGatewayNatRule
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat operasi ini dijalankan.
+Mengembalikan objek yang mewakili item tempat operasi ini sedang dilakukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek VpnGatewayNatRule untuk dihapus.
+Id sumber daya objek VpnGatewayNatRule yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -180,8 +183,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

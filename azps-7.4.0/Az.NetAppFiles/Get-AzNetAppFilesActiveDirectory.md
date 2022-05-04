@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: 721e08de9ddf1e224e0a64569c4a596a45094ddb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b4d7ae57badda2a1f23b8f6afbc197b20975341a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283023"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647860"
 ---
 # Get-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Mendapatkan detail konfigurasi Direktori Aktif Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesactivedirectory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryId
-ActiveDirectoryId dari Active Directory ANF
+ActiveDirectoryId dari Direktori Aktif ANF
 
 ```yaml
 Type: System.String

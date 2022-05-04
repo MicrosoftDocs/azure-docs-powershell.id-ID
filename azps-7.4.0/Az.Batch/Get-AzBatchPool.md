@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
-ms.openlocfilehash: 87c3956cae023c762db64c09f7d393b4aab8b62f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ac21e0785577405c918fb61a6c6e9115c4c61f02
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067023"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672190"
 ---
 # Get-AzBatchPool
 
 ## SYNOPSIS
-Dapatkan kumpulan Batch di bawah akun Batch yang ditentukan.
+Mendapatkan kumpulan Batch di bawah akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Get-AzBatchPool [[-Id] <String>] [-Select <String>] [-Expand <String>] -BatchCon
 
 ## DESCRIPTION
 Cmdlet **Get-AzBatchPool** mendapatkan kumpulan Azure Batch di bawah akun Batch yang ditentukan dengan parameter *BatchContext*.
-Anda bisa menggunakan parameter *Id* untuk mendapatkan satu kumpulan, atau Anda bisa menggunakan parameter *Filter* untuk mendapatkan kumpulan yang cocok dengan filter Open Data Protocol (OData).
+Anda dapat menggunakan parameter *Id* untuk mendapatkan satu kumpulan, atau Anda dapat menggunakan parameter *Filter* untuk mendapatkan kumpulan yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pool by ID
+### Contoh 1: Mendapatkan kumpulan berdasarkan ID
 ```powershell
 Get-AzBatchPool -Id "MyPool" -BatchContext $Context
 ```
@@ -74,9 +77,9 @@ Url                                  : https://cmdletexample.westus.batch.azure.
 VirtualMachineSize                   : standard_d1_v2
 ```
 
-Perintah ini mendapatkan kolam renang dengan ID MyPool.
+Perintah ini mendapatkan kumpulan dengan ID MyPool.
 
-### Contoh 2: Dapatkan semua kumpulan menggunakan filter OData
+### Contoh 2: Mendapatkan semua kumpulan menggunakan filter OData
 ```powershell
 Get-AzBatchPool -Filter "startswith(id,'My')" -BatchContext $Context
 ```
@@ -112,13 +115,13 @@ Url                                  : https://cmdletexample.westus.batch.azure.
 VirtualMachineSize                   : standard_d1_v2
 ```
 
-Perintah ini mendapatkan kumpulan yang ID-nya dimulai dengan My dengan menggunakan parameter *Filter* .
+Perintah ini mendapatkan kumpulan yang ID-nya dimulai dengan Saya dengan menggunakan parameter *Filter* .
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluasan Open Data Protocol (OData).
+Menentukan klausa perluas Open Data Protocol (OData).
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang Anda dapatkan.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData untuk digunakan saat membuat kueri untuk kumpulan.
+Menentukan klausa filter OData yang akan digunakan saat mengkueri kumpulan.
 Jika Anda tidak menentukan filter, semua kumpulan di bawah akun Batch yang ditentukan dengan parameter *BatchContext* dikembalikan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -Id
 Menentukan ID kumpulan yang akan didapatkan.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pemilihan OData.
+Menentukan klausa pemilihan OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -249,6 +252,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchPool](./New-AzBatchPool.md)
 
-[Hapus-AzBatchPool](./Remove-AzBatchPool.md)
+[Remove-AzBatchPool](./Remove-AzBatchPool.md)
 
 [Cmdlet Azure Batch](/powershell/module/Az.Batch/)

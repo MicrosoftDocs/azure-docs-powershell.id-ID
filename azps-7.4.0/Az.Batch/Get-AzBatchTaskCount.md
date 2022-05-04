@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTaskCount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTaskCount.md
-ms.openlocfilehash: b7de63823ed06c0fbecd8ebd02c253a759eef3b7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00a984c91e7d4e7da2a72521e46effa7d1d84653
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143173007"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601754"
 ---
 # Get-AzBatchTaskCount
 
 ## SYNOPSIS
-Mendapatkan hitungan tugas untuk pekerjaan yang ditentukan.
+Mendapatkan jumlah tugas untuk pekerjaan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchtaskcount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,13 +35,13 @@ Get-AzBatchTaskCount [[-Job] <PSCloudJob>] -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchTaskCount** mendapatkan Azure Batch hitungan tugas untuk pekerjaan Batch.
-Tentukan pekerjaan dengan parameter *JobId* atau parameter *Job* .
-Hitungan tugas menyediakan hitungan tugas dengan status tugas aktif, berjalan, atau selesai, dan hitungan tugas yang berhasil atau gagal. Tugas dalam status persiapan dihitung sebagai berjalan. Jika validasiStatus tidak valid, maka layanan Batch belum dapat memeriksa jumlah status terhadap status tugas seperti yang dilaporkan dalam API Tugas Daftar. ValidationStatus mungkin tidak valid jika pekerjaan berisi lebih dari 200.000 tugas.
+Cmdlet **Get-AzBatchTaskCount** mendapatkan jumlah tugas Azure Batch untuk pekerjaan Batch.
+Tentukan pekerjaan dengan parameter *JobId* atau parameter *Pekerjaan* .
+Jumlah tugas menyediakan hitungan tugas dengan status tugas aktif, berjalan, atau selesai, dan hitungan tugas yang berhasil atau gagal. Tugas dalam status persiapan dihitung sebagai berjalan. Jika validationStatus tidak divalidasi, maka layanan Batch belum dapat memeriksa jumlah status terhadap status tugas seperti yang dilaporkan dalam List Tasks API. ValidationStatus mungkin tidak valid jika pekerjaan berisi lebih dari 200.000 tugas.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan hitungan tugas menurut ID
+### Contoh 1: Mendapatkan jumlah tugas menurut ID
 ```powershell
 Get-AzBatchTaskCount -JobId "Job01" -BatchContext $Context
 ```
@@ -52,16 +55,16 @@ Succeeded           : 5
 ValidationStatus    : Validated
 ```
 
-Perintah ini mendapatkan hitungan tugas untuk job Job01.
+Perintah ini mendapatkan jumlah tugas untuk pekerjaan Job01.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
 ## PARAMETERS
 
 ### -BatchContext
-Contoh BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
-Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi.
-Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
+Instans BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
+Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi.
+Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
 Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Job
+### -Pekerjaan
 Menentukan pekerjaan yang berisi tugas yang didapat cmdlet ini.
 Untuk mendapatkan objek **PSCloudJob** , gunakan cmdlet Get-AzBatchJob.
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Id pekerjaan yang digunakan untuk mendapatkan hitungan tugas.
+Id pekerjaan untuk mendapatkan jumlah tugas.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

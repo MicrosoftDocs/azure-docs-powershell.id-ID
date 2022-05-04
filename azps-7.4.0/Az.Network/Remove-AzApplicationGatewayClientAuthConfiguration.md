@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayClientAuthConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayClientAuthConfiguration.md
-ms.openlocfilehash: c0ff0e0f2eed3232d1ebc1b6bf4e6abf4a99465a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7f8e29ac52375176a22c17104e4928a326617f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804798"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144699008"
 ---
 # Remove-AzApplicationGatewayClientAuthConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi autentikasi klien objek profil SSL.
+Menghapus konfigurasi autentikasi klien dari objek profil SSL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayclientauthconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Remove-AzApplicationGatewayClientAuthConfiguration -SslProfile $profile
 Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama Profile01 untuk $AppGw dan menyimpannya dalam variabel $profile. Perintah berikutnya menghapus konfigurasi autentikasi klien profil ssl yang disimpan di $profile. Perintah terakhir memperbarui gateway aplikasi.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan profil SSL bernama Profile01 untuk $AppGw dan menyimpannya dalam variabel $profile. Perintah berikutnya menghapus konfigurasi autentikasi klien dari profil ssl yang disimpan di $profile. Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

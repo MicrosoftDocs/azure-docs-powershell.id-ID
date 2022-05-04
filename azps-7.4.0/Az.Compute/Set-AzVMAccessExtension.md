@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
-ms.openlocfilehash: c42fea9c873f0bb5a4e495a7c4d39423b481c91e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9f96f0c364d70911a7325643bdced8d297e26db8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005373"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601646"
 ---
 # Set-AzVMAccessExtension
 
 ## SYNOPSIS
-Menambahkan ekstensi VMAccess ke mesin virtual.
+Menambahkan ekstensi VMAccess ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmaccessextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzVMAccessExtension [-Credential <PSCredential>] [-ResourceGroupName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMAccessExtension** menambahkan Virtual Machine Access (VMAccess) Virtual Machine VMAccess Extension ke mesin virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan ini harus segera diubah setelah masuk ke komputer. Ini tidak didukung pada Windows Pengontrol Domain.
+Cmdlet **Set-AzVMAccessExtension** menambahkan Ekstensi VMAccess Komputer Virtual Akses Komputer Virtual (VMAccess) Virtual Machine ke komputer virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan ini harus segera diubah setelah masuk ke komputer. Ini tidak didukung pada Pengendali Domain Windows.
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ Cmdlet **Set-AzVMAccessExtension** menambahkan Virtual Machine Access (VMAccess)
 Set-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -Location "Central US" -VMName "VirtualMachine07" -Name "ContosoTest" -TypeHandlerVersion "2.4" -UserName "PFuller" -Password "Password"
 ```
 
-Perintah ini menambahkan ekstensi VMAccess untuk mesin virtual bernama VirtualMachine07 di ResourceGroup11.
-Perintah menentukan nama dan versi pengatur tipe untuk VMAccess.
+Perintah ini menambahkan ekstensi VMAccess untuk komputer virtual bernama VirtualMachine07 di ResourceGroup11.
+Perintah menentukan nama dan versi handler jenis untuk VMAccess.
 
 ### Contoh 2
 
-Menambahkan ekstensi VMAccess ke mesin virtual. (autogenerasi)
+Menambahkan ekstensi VMAccess ke komputer virtual. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -51,11 +54,11 @@ Set-AzVMAccessExtension -Credential <PSCredential> -Location 'Central US' -Name 
 
 ## PARAMETERS
 
-### -Kredensial
-Menentukan nama pengguna dan kata sandi untuk mesin virtual sebagai objek **PSCredential** .
-Jika Anda mengetikkan nama yang berbeda dari akun administrator lokal saat ini di VM, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang ditentukan ke akun tersebut. Jika akun administrator lokal di VM Anda ada, akun tersebut akan mereset kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess mengaktifkannya.
+### -Credential
+Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
+Jika Anda mengetikkan nama yang berbeda dari akun administrator lokal saat ini di VM Anda, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang Anda tentukan ke akun tersebut. Jika akun administrator lokal di VM Anda ada, akun tersebut akan mengatur ulang kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess mengaktifkannya.
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik .`Get-Help Get-Credential`
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -98,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Menunjukkan bahwa cmdlet ini memaksa pengintaian ulang konfigurasi ekstensi yang sama pada mesin virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
-Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
+Nilainya bisa berupa string apa pun yang berbeda dari nilai saat ini.
 Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin maya.
+Menentukan lokasi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi yang ditambahkan cmdlet ini.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -175,8 +178,8 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Tipe* . TypeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 ditolak.
+Menentukan versi ekstensi yang akan digunakan untuk komputer virtual ini.
+Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Jenis* . TypeHandlerVersion harus 2.0 atau lebih tinggi, karena versi 1 tidak digunakan lagi.
 
 ```yaml
 Type: System.String
@@ -191,8 +194,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
-Cmdlet ini menambahkan VMAccess untuk mesin virtual yang ditentukan parameter ini.
+Menentukan nama komputer virtual.
+Cmdlet ini menambahkan VMAccess untuk komputer virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: 318904ba6eb4ffacd6122c4253d558109ab7bcef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aca23e5f3d2fe2ecac5aed713b57608b617b4354
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993673"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144598830"
 ---
 # Get-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
-Mendapatkan pengaturan audit ruang kerja analitik Azure Synapse.
+Mendapatkan pengaturan audit Azure Synapse Analytics Workspace.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlauditsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,20 +28,20 @@ Get-AzSynapseSqlAuditSetting [[-ResourceGroupName] <String>] [-WorkspaceName] <S
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Ruang KerjaObjectParameterSet
+### WorkspaceObjectParameterSet
 ```
 Get-AzSynapseSqlAuditSetting -WorkspaceObject <PSSynapseWorkspace> [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Ruang KerjaResourceIdParameterSetName
+### WorkspaceResourceIdParameterSetName
 ```
 Get-AzSynapseSqlAuditSetting -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlAuditSetting** mendapatkan pengaturan pengauditan ruang kerja analitik Azure Synapse.
+Cmdlet **Get-AzSynapseSqlAuditSetting** mendapatkan pengaturan audit Azure Synapse Analytics Workspace.
 
 ## EXAMPLES
 
@@ -54,12 +57,12 @@ Mendapatkan pengaturan audit ruang kerja bernama ContosoWorkspace.
 Get-AzSynapseWorkspace -Name ContosoWorkspace | Get-AzSynapseSqlAuditSetting
 ```
 
-Mendapatkan pengaturan pengauditan ruang kerja bernama ContosoWorkspace melalui pipeline.
+Mendapatkan pengaturan audit ruang kerja bernama ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

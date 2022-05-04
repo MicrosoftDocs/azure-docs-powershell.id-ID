@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayHostnameConfiguration.md
-ms.openlocfilehash: 24fb0924cc1285a8e9cb19c6b1ffd31428f8f45d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1ef30b9f8a9cb6a3c88187698ffa2b9b792956da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067995"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144634976"
 ---
 # Get-AzApiManagementGatewayHostnameConfiguration
 
 ## SYNOPSIS
 Mendapatkan semua atau konfigurasi nama host tertentu untuk Gateway yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgatewayhostnameconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzApiManagementGatewayHostnameConfiguration -Context <PsApiManagementContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementGatewayHostnameConfiguration** mendapatkan semua atau konfigurasi nama host tertentu untuk Gateway yang sudah ada.
+Cmdlet **Get-AzApiManagementGatewayHostnameConfiguration** mendapatkan semua atau konfigurasi nama host tertentu untuk Gateway yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua konfigurasi nama host untuk gateway
+### Contoh 1: Mendapatkan semua konfigurasi nama host untuk gateway
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGatewayHostnameConfiguration -Context $apimContext  -GatewayId "0123456789"
@@ -54,8 +57,8 @@ Perintah ini mendapatkan konfigurasi nama host "123" untuk gateway "0123456789".
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

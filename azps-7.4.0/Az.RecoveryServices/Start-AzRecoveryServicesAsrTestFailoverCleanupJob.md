@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverCleanupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverCleanupJob.md
-ms.openlocfilehash: 6f4f42ff3a1d2ce9f3f86b61df9303f11e44ebd5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5d7ed1dbecd861ef7b003531ed1e7c7abffa041
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935947"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707771"
 ---
 # Start-AzRecoveryServicesAsrTestFailoverCleanupJob
 
 ## SYNOPSIS
-Memulai operasi pembersihan failover uji coba.
+Memulai operasi pembersihan failover pengujian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrtestfailovercleanupjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ Start-AzRecoveryServicesAsrTestFailoverCleanupJob -RecoveryPlan <ASRRecoveryPlan
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrTestFailoverCleanupJob memulai operasi pembersihan** failover uji coba pada item yang dilindungi replikasi atau rencana pemulihan di mana failover pengujian telah dilakukan.
+Cmdlet **Start-AzRecoveryServicesAsrTestFailoverCleanupJob memulai operasi pembersihan** failover pengujian pada item yang dilindungi replikasi atau rencana pemulihan tempat failover pengujian telah dilakukan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Tugas untuk melacak pembersihan failover pengujian Azure Site Recovery pemulihanPlan.
+Pekerjaan untuk melacak pembersihan failover pengujian azure Site Recovery recoveryPlan.
 
 ```powershell
 Start-AzRecoveryServicesAsrTestFailoverCleanupJob -RecoveryPlan $recoveryPlan -Comment "testing done"
@@ -52,7 +55,7 @@ Start-AzRecoveryServicesAsrTestFailoverCleanupJob -RecoveryPlan $recoveryPlan -C
 
 ### Contoh 2
 
-Memulai operasi pembersihan failover uji coba. (autogenerasi)
+Memulai operasi pembersihan failover pengujian. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Start-AzRecoveryServicesAsrTestFailoverCleanupJob -Comment 'testing done' -ReplicationProtectedItem $rpi
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPlan
-Rencana Pemulihan untuk melakukan pembersihan failover uji.
+Rencana Pemulihan untuk melakukan pembersihan failover pengujian.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryPlan
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Item Terproteksi Replikasi untuk melakukan pembersihan failover uji.
+Replikasi Item Terproteksi untuk melakukan pembersihan failover pengujian.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya item yang dilindungi replikasi / rencana pemulihan untuk kegagalan pengujian pembersihan.
+Id sumber daya item/rencana pemulihan yang dilindungi replikasi untuk pembersihan pengujian failover.
 
 ```yaml
 Type: System.String
@@ -135,8 +138,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

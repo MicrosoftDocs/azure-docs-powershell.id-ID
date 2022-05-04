@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 8cef5fb741ca10aed1bfb6e6abcd90a86549cc76
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 152954a5cb1f5373fa3fccd415e069bb43d1288f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678906"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673540"
 ---
 # New-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
-Membuat pengaturan HTTP ujung-belakang untuk gateway aplikasi.
+Membuat pengaturan HTTP back-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewaybackendhttpsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,22 +34,22 @@ New-AzApplicationGatewayBackendHttpSetting -Name <String> -Port <Int32> -Protoco
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzApplicationGatewayBackendHttpSetting membuat pengaturan HTTP ujung-belakang untuk gateway aplikasi.
-Pengaturan HTTP ujung-belakang diterapkan ke semua server back-end dalam kumpulan.
+Cmdlet New-AzApplicationGatewayBackendHttpSetting membuat pengaturan HTTP back-end untuk gateway aplikasi.
+Pengaturan HTTP back-end diterapkan ke semua server back-end dalam kumpulan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat pengaturan HTTP ujung-belakang
+### Contoh 1: Membuat pengaturan HTTP back-end
 ```powershell
 $Setting = New-AzApplicationGatewayBackendHttpSetting -Name "Setting01" -Port 80 -Protocol Http -CookieBasedAffinity Disabled
 ```
 
-Perintah ini membuat pengaturan HTTP ujung-belakang bernama Pengaturan01 pada port 80, menggunakan protokol HTTP, dengan afinitas berbasis cookie dinonaktifkan.
+Perintah ini membuat pengaturan HTTP back-end bernama Pengaturan01 pada port 80, menggunakan protokol HTTP, dengan afinitas berbasis cookie dinonaktifkan.
 Pengaturan disimpan dalam variabel $Setting.
 
 ### Contoh 2
 
-Membuat pengaturan HTTP ujung-belakang untuk gateway aplikasi. (autogenerasi)
+Membuat pengaturan HTTP back-end untuk gateway aplikasi. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -56,7 +59,7 @@ New-AzApplicationGatewayBackendHttpSetting -CookieBasedAffinity Enabled -Name 'S
 ## PARAMETERS
 
 ### -AffinityCookieName
-Nama cookie yang digunakan untuk cookie affinity
+Nama cookie yang digunakan untuk cookie afinitas
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionDraining
-Koneksi menguras sumber daya pengaturan backend http.
+Pengurasan koneksi sumber daya pengaturan http backend.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionDraining
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -CookieBasedAffinity
-Menentukan apakah affinity berbasis cookie harus diaktifkan atau dinonaktifkan untuk kumpulan server back-end.
+Menentukan apakah afinitas berbasis cookie harus diaktifkan atau dinonaktifkan untuk kumpulan server back-end.
 
 ```yaml
 Type: System.String
@@ -146,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pengaturan HTTP ujung-belakang yang dibuat cmdlet ini.
+### -Name
+Menentukan nama pengaturan HTTP back-end yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -162,8 +165,8 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur yang harus digunakan sebagai prefiks untuk semua permintaan HTTP.
-Jika tidak ada nilai yang disediakan untuk parameter ini, maka tidak ada jalur yang akan didahului.
+Jalur yang harus digunakan sebagai awalan untuk semua permintaan HTTP.
+Jika tidak ada nilai yang disediakan untuk parameter ini, maka tidak ada jalur yang akan diawali.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port kumpulan server ujung-belakang.
+Menentukan port kumpulan server back-end.
 
 ```yaml
 Type: System.Int32
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Probe
-Menentukan probe untuk dikaitkan dengan kumpulan server ujung-belakang.
+Menentukan pemeriksaan untuk dikaitkan dengan kumpulan server back-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayProbe
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeId
-Menentukan ID probe untuk dikaitkan dengan kumpulan server ujung-belakang.
+Menentukan ID probe yang akan dikaitkan dengan kumpulan server back-end.
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang digunakan untuk komunikasi antara gateway aplikasi dan server back-end.
+Menentukan protokol yang akan digunakan untuk komunikasi antara gateway aplikasi dan server back-end.
 Nilai yang dapat diterima untuk parameter ini adalah: Http dan Https.
 
 ```yaml
@@ -285,11 +288,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

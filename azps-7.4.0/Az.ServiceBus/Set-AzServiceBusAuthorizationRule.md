@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 48ad5e9865e9c424e16a9245324242b0eaf883fc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b73e0b6096e2b9f519d4d0046c37db0c967b70b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273897"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626588"
 ---
 # Set-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
-Memperbarui deskripsi aturan otorisasi tertentu untuk ruang nama atau antrean atau topik Bus Layanan tertentu.
+Memperbarui deskripsi aturan otorisasi yang ditentukan untuk namespace layanan atau antrean atau topik Bus Layanan yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Set-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AntreanAuthorizationRuleSet
+### QueueAuthorizationRuleSet
 ```
 Set-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String>
  [-Name] <String> [[-InputObject] <PSSharedAccessAuthorizationRuleAttributes>] [[-Rights] <String[]>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TopikAuthorizationRuleSet
+### TopicAuthorizationRuleSet
 ```
 Set-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String>
  [-Name] <String> [[-InputObject] <PSSharedAccessAuthorizationRuleAttributes>] [[-Rights] <String[]>]
@@ -48,7 +51,7 @@ Set-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusAuthorizationRule** memperbarui deskripsi untuk aturan otorisasi tertentu dalam ruang nama atau antrean atau topik Bus Layanan tertentu.
+Cmdlet **Set-AzServiceBusAuthorizationRule** memperbarui deskripsi untuk aturan otorisasi yang ditentukan di namespace layanan atau antrean atau topik Bus Layanan yang diberikan.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ $authRuleObj.Rights.Remove("Manage")
 Set-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -InputObj $authRuleObj
 ```
 
-Menghapus **Kelola** dari hak akses aturan `AuthoRule1` otorisasi dalam ruang `SB-Example1`nama .
+Menghapus **Kelola** dari hak akses aturan `AuthoRule1` otorisasi di namespace `SB-Example1`.
 
 ### Contoh 2
 ```powershell
@@ -129,7 +132,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Hak
-Hak, misalnya @("Dengarkan","Kirim","Kelola")
+Hak, misalnya @("Dengar","Kirim","Kelola")
 
 ```yaml
 Type: System.String[]
@@ -220,8 +223,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

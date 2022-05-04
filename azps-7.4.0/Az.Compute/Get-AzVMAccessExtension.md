@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAccessExtension.md
-ms.openlocfilehash: dd1a33afb9454147ebb52f7ccfe1ad4eb0dba7b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63a67695119388b716b09b26696777fda617c5f0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128205"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144624450"
 ---
 # Get-AzVMAccessExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi VMAccess.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmaccessextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzVMAccessExtension [-ResourceGroupName] <String> [-VMName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Virtual Machine Access (VMAccess) Virtual Machine Extension.
+Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Ekstensi Komputer Virtual Akses Komputer Virtual (VMAccess).
 
 ## EXAMPLES
 
@@ -35,14 +38,14 @@ Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Virtual Machine
 $VMAccessExtension = Get-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoTest"
 ```
 
-Perintah ini mendapatkan ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan ekstensi VMAccess bernama ContosoTest untuk komputer virtual bernama VirtualMachine07.
 
-### Contoh 2: Dapatkan tampilan instans ekstensi VMAccess
+### Contoh 2: Mendapatkan tampilan instans ekstensi VMAccess
 ```powershell
 $VMAccessExtension = Get-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoTest" -Status
 ```
 
-Perintah ini mendapatkan tampilan instans ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan tampilan instans ekstensi VMAccess bernama ContosoTest untuk komputer virtual bernama VirtualMachine07.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi yang didapat cmdlet ini.
 
 ```yaml
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -107,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
-Cmdlet ini mendapatkan informasi tentang VMAccess untuk mesin virtual yang ditentukan parameter ini.
+Menentukan nama komputer virtual.
+Cmdlet ini mendapatkan informasi tentang VMAccess untuk komputer virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

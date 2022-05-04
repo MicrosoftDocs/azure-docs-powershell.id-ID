@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusGeoDRConfiguration.md
-ms.openlocfilehash: 188b659b116438c8bacded28971cccdf971bb973
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e5a2d871098cc29ee6426064c94fd910834668d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934471"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144698846"
 ---
 # Get-AzServiceBusGeoDRConfiguration
 
 ## SYNOPSIS
-Mengambil Alias(konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
+Mengambil Alias (konfigurasi Pemulihan Bencana) untuk namespace primer atau sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusgeodrconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceBusGeoDRConfiguration [-ResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-**Get-AzServiceBusGeoDRConfiguration** Mengambil Alias(konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
+**Get-AzServiceBusGeoDRConfiguration** Mengambil Alias (konfigurasi Pemulihan Bencana) untuk namespace primer atau sekunder
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Role              : Primary
 PendingReplicationOperationsCount : 0
 ```
 
-Mengambil alias konfigurasi "SampleDRConfigName" untuk ruang nama utama "SampleNamespace_Primary"
+Mengambil konfigurasi alias "SampleDRConfigName" untuk namespace primer "SampleNamespace_Primary"
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi DR
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Ruang Nama
+Id Sumber Daya Namespace
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

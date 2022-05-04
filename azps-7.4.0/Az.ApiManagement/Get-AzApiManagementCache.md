@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCache.md
-ms.openlocfilehash: c99132503931a0ccd87c2f1dba3bf4bd74d464de
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0c179dec8777d9d2cceed4e099738e535625785b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879948"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601862"
 ---
 # Get-AzApiManagementCache
 
 ## SYNOPSIS
 Dapatkan detail Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementcache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +34,11 @@ Get-AzApiManagementCache -ResourceId <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Dapatkan detail Cache yang dikonfigurasi dalam layanan Manajemen Api.
+Dapatkan detail Cache yang dikonfigurasi dalam layanan Api Management.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua Singgahan
+### Contoh 1: Dapatkan semua Cache
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementCache -Context $apimContext
@@ -51,9 +54,9 @@ ResourceGroupName : Api-Default-West-US
 ServiceName       : contoso
 ```
 
-Mendapatkan daftar semua Cache yang dikonfigurasi dalam layanan Manajemen Api.
+Mendapatkan daftar semua Cache yang dikonfigurasi dalam layanan Api Management.
 
-### Contoh 2: Dapatkan Singgahan yang ditentukan oleh Pengidentifikasi westus
+### Contoh 2: Dapatkan Cache yang ditentukan oleh Pengidentifikasi westus
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementCache -Context $apimContext -cacheId westus
@@ -69,13 +72,13 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Dapatkan detail Cache tertentu yang dikonfigurasi untuk westus
+Mendapatkan detail Cache yang ditentukan yang dikonfigurasi untuk westus
 
 ## PARAMETERS
 
 ### -CacheId
-Pengidentifikasi singgahan.
-Jika ditentukan akan mencoba menemukan singgahan oleh pengidentifikasi.
+Pengidentifikasi cache.
+Jika ditentukan akan mencoba menemukan cache oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier dari singgahan. Jika ditentukan akan mencoba menemukan singgahan oleh pengidentifikasi. Parameter ini diperlukan.
+Pengidentifikasi Sumber Daya Arm dari cache. Jika ditentukan akan mencoba menemukan cache oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

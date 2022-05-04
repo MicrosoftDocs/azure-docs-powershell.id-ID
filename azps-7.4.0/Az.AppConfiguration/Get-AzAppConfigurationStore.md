@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
-ms.openlocfilehash: e4ec53de3f86cb8446584d64e91d14c304eb8dde
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 45decb177488ed458f9ce16773cea41ce91c09e0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233621"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144591480"
 ---
 # Get-AzAppConfigurationStore
 
 ## SYNOPSIS
-Dapatkan atau cantumkan bursa konfigurasi aplikasi.
+Mendapatkan atau mencantumkan penyimpanan konfigurasi aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan atau cantumkan bursa konfigurasi aplikasi.
 Get-AzAppConfigurationStore [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzAppConfigurationStore -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,7 +46,7 @@ Get-AzAppConfigurationStore -ResourceGroupName <String> [-SubscriptionId <String
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan bursa konfigurasi aplikasi.
+Mendapatkan atau mencantumkan penyimpanan konfigurasi aplikasi.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ eastus   appconfig-test02 Microsoft.AppConfiguration/configurationStores
 
 Perintah ini mencantumkan semua penyimpanan konfigurasi aplikasi di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan penyimpanan konfigurasi aplikasi menurut nama
+### Contoh 3: Mendapatkan penyimpanan konfigurasi aplikasi berdasarkan nama
 ```powershell
 Get-AzAppConfigurationStore -ResourceGroupName azpwsh-manual-test -Name appconfig-test01
 ```
@@ -88,7 +91,7 @@ eastus   appconfig-test01 Microsoft.AppConfiguration/configurationStores
 
 Perintah ini mendapatkan penyimpanan konfigurasi aplikasi berdasarkan nama.
 
-### Contoh 4: Dapatkan penyimpanan konfigurasi aplikasi menurut saluran
+### Contoh 4: Mendapatkan penyimpanan konfigurasi aplikasi berdasarkan alur
 ```powershell
 Get-AzAppConfigurationStore -ResourceGroupName azpwsh-manual-test -Name appconfig-test01 | Get-AzAppConfigurationStore
 ```
@@ -99,7 +102,7 @@ Location Name             Type
 eastus   appconfig-test01 Microsoft.AppConfiguration/configurationStores
 ```
 
-Perintah ini mendapatkan penyimpanan konfigurasi aplikasi menurut saluran.
+Perintah ini mendapatkan penyimpanan konfigurasi aplikasi berdasarkan alur.
 
 ## PARAMETERS
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -133,7 +136,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyimpanan konfigurasi.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -200,7 +203,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
-  - `[GroupName <String>]`: Nama grup sumber daya tautan pribadi.
+  - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat registri kontainer berada.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Update-AzOperationalInsightsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Update-AzOperationalInsightsCluster.md
-ms.openlocfilehash: a62ac58b9ed86a2e7290ab651e0b184f804783f5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ddde47e21be338fb14d81f76c0e185b0acdb336d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638180"
 ---
 # Update-AzOperationalInsightsCluster
 
 ## SYNOPSIS
-kluster pembaruan
+perbarui kluster
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/update-azoperationalinsightscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Update-AzOperationalInsightsCluster -InputCluster <PSCluster> [-SkuName <String>
 ```
 
 ## DESCRIPTION
-kluster pembaruan
+perbarui kluster
 
 ## EXAMPLES
 
@@ -80,12 +83,12 @@ Type                            : Microsoft.OperationalInsights/clusters
 Tags                            : {}
 ```
 
-perbarui kluster dengan properti kubah kunci dan sku
+memperbarui kluster dengan properti brankas kunci dan sku
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingType
-Tipe tagihan dapat diatur sebagai 'Kluster' atau 'Ruang Kerja'
+Jenis penagihan dapat diatur sebagai 'Kluster' atau 'Ruang Kerja'
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-tipe identitas, nilai dapat berupa 'SystemAssigned', 'None'.
+jenis identitas, nilainya bisa 'SystemAssigned', 'None'.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Key Vault Uri, "Perlindungan Pembersihan" dan "Penghapusan Lunak" harus diaktifkan untuk keyvault ini
+Key Vault Uri, "Perlindungan Penghapusan Menyeluruh" dan "Penghapusan Sementara" harus diaktifkan untuk keyvault ini
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Sku, kini hanya dapat berupa 'CapacityReservation'
+Nama Sku, sekarang hanya dapat berupa 'CapacityReservation'
 
 ```yaml
 Type: System.String
@@ -346,8 +349,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -378,7 +381,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

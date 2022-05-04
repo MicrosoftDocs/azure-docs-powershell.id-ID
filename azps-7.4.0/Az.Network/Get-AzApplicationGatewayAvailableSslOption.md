@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableSslOption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableSslOption.md
-ms.openlocfilehash: a7cfaec93bbe0298eefb416eb1a715738f07de69
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b26ce872bac7b3604511b70174532f3c309bf1e1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282555"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636056"
 ---
 # Get-AzApplicationGatewayAvailableSslOption
 
 ## SYNOPSIS
 Mendapatkan semua opsi ssl yang tersedia untuk kebijakan ssl untuk Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayavailablessloption) untuk informasi terbaru.
 
 ## SYNTAX
 

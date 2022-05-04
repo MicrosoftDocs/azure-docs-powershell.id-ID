@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
-ms.openlocfilehash: edf464886b1fc5aeb2100502a02dd801eff4618e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b8761d8d670a7283219ab537419650c082611621
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808866"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674044"
 ---
 # New-AzEventHubNamespace
 
 ## SYNOPSIS
-Membuat ruang nama Hub Kejadian.
+Membuat namespace layanan Azure Event Hubs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Locatio
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzEventHubNamespace membuat ruang nama baru tipe Hub Kejadian.
+Cmdlet New-AzEventHubNamespace membuat namespace baru jenis Azure Event Hubs.
 
 ## EXAMPLES
 ### Contoh 1                                           
@@ -74,7 +77,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\`.
+Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
@@ -107,9 +110,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis myLocation\` tertentu, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
+Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
 
-### Contoh 3: Kafka enabled namespace
+### Contoh 3: Namespace yang diaktifkan Kafka
 ```powershell
 New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -EnableKafka
 ```
@@ -140,9 +143,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
+Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
-### Contoh 4: ZoneRedundant enabled namespace
+### Contoh 4: Namespace yang diaktifkan ZoneRedundant
 ```powershell
 New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -ZoneRedundant
 ```
@@ -173,9 +176,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
+Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
-### Contoh 5: Membuat Ruang Nama dengan Kelola Identitas dalam kluster 
+### Contoh 5: Membuat Namespace dengan Kelola Identitas dalam kluster 
 ```powershell
 New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation --EnableAutoInflate -MaximumThroughputUnits 12 -EnableKafka -ZoneRedundant -IdentityType SystemAssigned
 ```
@@ -205,7 +208,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-### Contoh 6: Membuat Ruang Nama dengan enkripsi identitas userAssigned diaktifkan
+### Contoh 6: Membuat Namespace dengan enkripsi identitas UserAssigned diaktifkan
 
 
 ```powershell
@@ -268,7 +271,7 @@ EncryptionConfig              : {{ KeyName: key1,
 ## PARAMETERS
 
 ### -ClusterARMId
-ARM ID dari Kluster tempat ruang nama akan dibuat
+ARM ID Kluster tempat namespace akan dibuat
 
 ```yaml
 Type: System.String
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama
+mengaktifkan atau menonaktifkan autentikasi SAS untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableKafka
-mengaktifkan atau menonaktifkan Kafka untuk ruang nama
+mengaktifkan atau menonaktifkan Kafka untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionConfig
-Properti Key
+Properti Kunci
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEncryptionConfigAttributes[]
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -Identitas
-mengaktifkan atau menonaktifkan Identitas untuk ruang nama
+mengaktifkan atau menonaktifkan Identitas untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas ('SystemAssigned', 'UserAssigned', 'SystemAssigned', 'UserAssigned', 'None')
+Jenis Identitas ('SystemAssigned', 'UserAssigned', 'SystemAssigned', 'UserAssigned', 'None')
 
 ```yaml
 Type: System.String
@@ -404,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Ruang Nama EventHub.
+Lokasi Namespace Layanan EventHub.
 
 ```yaml
 Type: System.String
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -433,8 +436,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama EventHub.
+### -Name
+Nama Namespace Layanan EventHub.
 
 ```yaml
 Type: System.String
@@ -479,7 +482,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Sku Ruang Nama.
+Nama Sku Namespace.
 
 ```yaml
 Type: System.String
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-mengaktifkan atau menonaktifkan Zona Berlebihan untuk ruang nama
+mengaktifkan atau menonaktifkan Zona Redundan untuk namespace
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -524,8 +527,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -540,7 +543,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -556,7 +559,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

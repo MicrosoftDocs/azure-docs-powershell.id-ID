@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLabPlan.md
-ms.openlocfilehash: 64cb423dd0073ec4c53cd8e2ecb734940ebaf3b9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 99f67f42062c68a07cd8a3c8894c8effa7446576
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873720"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706350"
 ---
 # Get-AzLabServicesLabPlan
 
 ## SYNOPSIS
 Mengambil properti Paket Lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/get-azlabserviceslabplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzLabServicesLabPlan [-SubscriptionId <String[]>] [-Filter <String>] [-Defau
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzLabServicesLabPlan -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter untuk diterapkan ke operasi.
+Filter yang akan diterapkan ke operasi.
 
 ```yaml
 Type: System.String
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rencana lab yang mengidentifikasinya secara unik di dalamnya berisi grup sumber daya.
+### -Name
+Nama paket lab yang secara unik mengidentifikasinya dalam grup sumber daya.
 Digunakan dalam URI sumber daya dan di UI.
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: True
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
