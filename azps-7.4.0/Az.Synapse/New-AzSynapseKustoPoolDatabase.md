@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: fc4d4e2a184ffec8253f09c1b0e481555b3870a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 26e0647e9970244a6956dcebd88dba5c390003cc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142862956"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718708"
 ---
 # New-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
 Membuat atau memperbarui database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopooldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Membuat atau memperbarui database.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui database kusto baru dalam ruang kerja
+### Contoh 1: Membuat atau memperbarui database kusto baru di ruang kerja
 ```powershell
 New-AzSynapseKustoPoolDatabase -ResourceGroupName "testrg" -WorkspaceName "testws" -KustoPoolName "testkustopool" -DatabaseName "mykustodatabase" -Kind "ReadWrite" -Location "East US 2"
 ```
@@ -42,12 +45,12 @@ Kind      Location  Name
 ReadWrite East US 2 testws/testkustopool/mykustodatabase
 ```
 
-Membuat atau memperbarui database kusto "mykustodatabase" di Kusto Pool "testkustopool" di ruang kerja "testws" yang ditemukan dalam grup sumber daya "testrg".
+Membuat atau memperbarui database kusto "mykustodatabase" di Kusto Pool "testkustopool" di ruang kerja "testws" yang ditemukan di grup sumber daya "testrg".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kumpulan Kusto.
+Nama database di kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -HotCachePeriod
-Waktu data harus disimpan dalam cache untuk kueri cepat di Rentang Waktu.
+Waktu data harus disimpan dalam cache untuk kueri cepat di TimeSpan.
 
 ```yaml
 Type: System.TimeSpan
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama kolam Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftDeletePeriod
-Waktu data harus disimpan sebelum berhenti diakses oleh kueri di Rentang Waktu.
+Waktu data harus disimpan sebelum berhenti dapat diakses oleh kueri di TimeSpan.
 
 ```yaml
 Type: System.TimeSpan
@@ -212,7 +215,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -227,8 +230,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

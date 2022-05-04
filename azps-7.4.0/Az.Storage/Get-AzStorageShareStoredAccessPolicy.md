@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageShareStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageShareStoredAccessPolicy.md
-ms.openlocfilehash: 962e0c12434d026312286f6dcf21332872be9436
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c7161277c090208e4892732f047e28c9604af13
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057699"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714530"
 ---
 # Get-AzStorageShareStoredAccessPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan akses yang disimpan untuk berbagi Storage.
+Mendapatkan kebijakan akses tersimpan untuk berbagi Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragesharestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,30 +30,30 @@ Get-AzStorageShareStoredAccessPolicy [-ShareName] <String> [[-Policy] <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageShareStoredAccessPolicy** mendapatkan kebijakan akses yang disimpan untuk berbagi Azure Storage.
-Untuk mendapatkan kebijakan tertentu, tentukan menurut nama.
+Cmdlet **Get-AzStorageShareStoredAccessPolicy** mendapatkan kebijakan akses tersimpan untuk berbagi Azure Storage.
+Untuk mendapatkan kebijakan tertentu, tentukan berdasarkan nama.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan akses yang disimpan dalam berbagi
+### Contoh 1: Mendapatkan kebijakan akses tersimpan dalam berbagi
 ```
 PS C:\>Get-AzStorageShareStoredAccessPolicy -ShareName "ContosoShare" -Policy "GeneralPolicy"
 ```
 
 Perintah ini mendapatkan kebijakan akses tersimpan bernama GeneralPolicy di ContosoShare.
 
-### Contoh 2: Dapatkan semua kebijakan akses yang disimpan dalam berbagi
+### Contoh 2: Mendapatkan semua kebijakan akses tersimpan dalam berbagi
 ```
 PS C:\>Get-AzStorageShareStoredAccessPolicy -ShareName "ContosoShare"
 ```
 
-Perintah ini mendapatkan semua kebijakan akses yang disimpan di ContosoShare.
+Perintah ini mendapatkan semua kebijakan akses tersimpan di ContosoShare.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -66,9 +69,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks Azure Storage.
 Untuk mendapatkan konteks, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
+Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi Storage di mana cmdlet ini mendapatkan kebijakan.
+Menentukan nama berbagi Storage yang cmdlet ini mendapatkan kebijakan.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

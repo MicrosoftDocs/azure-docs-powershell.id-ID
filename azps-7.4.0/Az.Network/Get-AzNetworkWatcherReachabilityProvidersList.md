@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityProvidersList.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityProvidersList.md
-ms.openlocfilehash: b1a2f6f3d664cf966929f35d0f6ae9d604ab44dd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63f21e26897f6a31ccfb212707b480d10c575112
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679320"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704946"
 ---
 # Get-AzNetworkWatcherReachabilityProvidersList
 
 ## SYNOPSIS
-Mencantumkan semua penyedia layanan internet yang tersedia untuk kawasan Azure tertentu.
+Mencantumkan semua penyedia layanan internet yang tersedia untuk wilayah Azure tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkwatcherreachabilityproviderslist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Get-AzNetworkWatcherReachabilityProvidersList -ResourceId <String> [-Location <S
 ```
 
 ## DESCRIPTION
-Get-AzNetworkWatcherReachabilityProvidersList mencantumkan semua penyedia layanan internet yang tersedia untuk kawasan Azure tertentu.
+Get-AzNetworkWatcherReachabilityProvidersList mencantumkan semua penyedia layanan internet yang tersedia untuk wilayah Azure tertentu.
 
 ## EXAMPLES
 
@@ -81,11 +84,11 @@ Get-AzNetworkWatcherReachabilityProvidersList -NetworkWatcher $nw -Location "Wes
 ]
 ```
 
-Mencantumkan semua penyedia yang tersedia di Seattle, WA untuk Azure Data Center di AS Barat.
+Mencantumkan semua penyedia yang tersedia di Seattle, WA untuk Azure Data Center di US Barat.
 
 ### Contoh 2
 
-Mencantumkan semua penyedia layanan internet yang tersedia untuk kawasan Azure tertentu. (autogenerasi)
+Mencantumkan semua penyedia layanan internet yang tersedia untuk wilayah Azure tertentu. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -95,7 +98,7 @@ Get-AzNetworkWatcherReachabilityProvidersList -NetworkWatcherName nw1 -ResourceG
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan Azure opsional untuk melingkupi kueri.
+Wilayah Azure opsional untuk mencakup kueri.
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherLocation
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya pengawas jaringan.
+Id sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Nama negara bagian.
 
 ```yaml
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -273,7 +276,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSAvailableProvidersList
 
 ## NOTES
-Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
+Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, berikutnya, hop 
 
 ## RELATED LINKS
 
@@ -281,7 +284,7 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 
@@ -321,9 +324,9 @@ Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, j
 
 [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[Get-AzNetworkWatcherReacherReportability](./Get-AzNetworkWatcherReachabilityReport.md)
+[Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
 
-[Get-AzNetworkWatcherReacherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+[Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
 
 [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
 

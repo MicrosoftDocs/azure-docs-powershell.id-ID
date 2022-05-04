@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicType.md
-ms.openlocfilehash: afc5865cae562d1088bbec467bad82ae69926abf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6bb09ba3ae6f0483f3881df42c873e53e077f8fc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748206"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733474"
 ---
 # Get-AzEventGridTopicType
 
 ## SYNOPSIS
-Mendapatkan detail tentang tipe topik yang didukung oleh Azure Event Grid.
+Mendapatkan detail tentang jenis topik yang didukung oleh Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopictype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,10 +28,10 @@ Get-AzEventGridTopicType [-Name <String>] [-IncludeEventTypeData] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Mendapatkan detail tipe topik yang didukung oleh Azure Event Grid.
-Jika nama tipe topik ditentukan, detail tentang tipe topik tersebut dikembalikan.
-Jika nama tipe topik tidak ditentukan, detail tentang semua tipe topik dikembalikan.
-Jika IncludeEventTypes ditentukan, informasi tentang tipe kejadian yang didukung oleh setiap tipe topik disertakan dalam respons.
+Mendapatkan detail jenis topik yang didukung oleh Azure Event Grid.
+Jika nama jenis topik ditentukan, detail tentang jenis topik tersebut dikembalikan.
+Jika nama jenis topik tidak ditentukan, detail tentang semua jenis topik dikembalikan.
+Jika IncludeEventTypes ditentukan, informasi tentang jenis peristiwa yang didukung oleh setiap jenis topik disertakan dalam respons.
 
 ## EXAMPLES
 
@@ -37,21 +40,21 @@ Jika IncludeEventTypes ditentukan, informasi tentang tipe kejadian yang didukung
 Get-AzEventGridTopicType
 ```
 
-Mendapatkan daftar tipe topik.
+Mendapatkan daftar jenis topik.
 
 ### Contoh 2
 ```powershell
 Get-AzEventGridTopicType -Name "Microsoft.Storage.StorageAccounts"
 ```
 
-Mendapatkan informasi tentang tipe topik StorageAccounts.
+Mendapatkan informasi tentang jenis topik StorageAccounts.
 
 ### Contoh 3
 ```powershell
 Get-AzEventGridTopicType -Name "Microsoft.Storage.StorageAccounts" -IncludeEventTypeData
 ```
 
-Mendapatkan informasi tentang tipe topik StorageAccounts, termasuk tipe acara yang didukung oleh StorageAccounts.
+Mendapatkan informasi tentang jenis topik StorageAccounts, termasuk jenis peristiwa yang didukung oleh StorageAccounts.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeEventTypeData
-Jika ditentukan, respons akan menyertakan tipe acara yang didukung oleh tipe topik.
+Jika ditentukan, respons akan menyertakan jenis peristiwa yang didukung oleh jenis topik.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Tipe Topik EventGrid.
+### -Name
+Nama Jenis Topik EventGrid.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

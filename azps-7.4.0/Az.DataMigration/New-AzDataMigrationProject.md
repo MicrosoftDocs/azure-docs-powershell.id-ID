@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationProject.md
-ms.openlocfilehash: 1728b21883a6aeb07a50ab0dc4e991179647be7b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab03f330da03e9a8952102e6edcd72a52e235c53
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288351"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680252"
 ---
 # New-AzDataMigrationProject
 
 ## SYNOPSIS
 Membuat proyek Azure Database Migration Service baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationproject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzDataMigrationProject [-ResourceId] <String> -Location <String> -Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationProject membuat proyek Azure Database Migration Service baru. Cmdlet ini mengambil semua parameter yang diperlukan, seperti nama Grup Sumber Daya Azure, nama Layanan Migrasi Data Azure tempat proyek baru akan dibuat, kawasan tempat proyek akan dibuat, nama unik proyek baru, objek koneksi sumber dan target, dan objek tipe target,  sebagai input untuk daftar database yang akan dimigrasikan. Gunakan cmdlet New-AzDataMigrationConnectionInfo untuk membuat objek ConnectionInfo baru baik untuk koneksi sumber maupun target. Daftar Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo diharapkan untuk database yang dipilih; objek ini dapat dibuat menggunakan cmdlet New-AzDataMigrationDatabaseInfo. 
+Cmdlet New-AzDataMigrationProject membuat proyek Azure Database Migration Service baru. Cmdlet ini mengambil semua parameter yang diperlukan, seperti nama Grup Sumber Daya Azure, nama Azure Data Migration Service tempat proyek baru akan dibuat, wilayah tempat proyek akan dibuat, nama unik proyek baru, objek koneksi sumber dan target, dan objek jenis target,  sebagai input untuk daftar database yang akan dimigrasikan. Gunakan cmdlet New-AzDataMigrationConnectionInfo untuk membuat objek ConnectionInfo baru untuk koneksi sumber dan target. Daftar Microsoft.Azure.Management.DataMigration.Models.DatabaseInfo diharapkan untuk database yang dipilih; objek ini dapat dibuat dengan menggunakan cmdlet New-AzDataMigrationDatabaseInfo. 
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet New-AzDataMigrationProject membuat proyek Azure Database Migration Servic
 New-AzDataMigrationProject -ResourceGroupName MyResourceGroup -ServiceName TestService -ProjectName MyDMSProject -Location "central us"  -SourceType SQL -TargetType SQLDB -SourceConnection $sourceConnInfo -TargetConnection $targetConnInfo -DatabaseInfo $dbList
 ```
 
-Contoh di atas memperlihatkan cara membuat proyek baru bernama MyDMSProject yang terletak di kawasan AS Tengah di bawah contoh Azure Database Migration Service bernama TestService.
+Contoh di atas menunjukkan cara membuat proyek baru bernama MyDMSProject yang terletak di wilayah US Tengah di bawah instans Azure Database Migration Service bernama TestService.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataMigrationService Object.
+Objek PSDataMigrationService.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataMigration.Models.PSDataMigrationService
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama proyek.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceType
-Tipe platform sumber untuk proyek.
+Jenis platform sumber untuk proyek.
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetType
-Tipe platform target untuk proyek.
+Jenis platform target untuk proyek.
 
 ```yaml
 Type: System.String
@@ -237,8 +240,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

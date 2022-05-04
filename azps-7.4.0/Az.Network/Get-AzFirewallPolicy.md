@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicy.md
-ms.openlocfilehash: 29a5c44969d21b0bbe8ff2e83637408563e85cb2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0e7660780c9e6b524c24d3c7506778ccb04bf1fb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143225063"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704136"
 ---
 # Get-AzFirewallPolicy
 
 ## SYNOPSIS
 Mendapatkan Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Cmdlet **Get-AzFirewallPolicy** mendapatkan satu atau beberapa Firewall dalam gr
 Get-AzFirewallPolicy -Name firewallPolicy -ResourceGroupName TestRg
 ```
 
-Contoh ini mendapatkan kebijakan firewall bernama "firewallPolicy" dalam grup sumber daya "TestRg"
+Contoh ini mendapatkan kebijakan firewall bernama "firewallPolicy" di grup sumber daya "TestRg"
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

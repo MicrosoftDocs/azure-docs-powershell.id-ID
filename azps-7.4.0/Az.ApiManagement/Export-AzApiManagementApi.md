@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Export-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Export-AzApiManagementApi.md
-ms.openlocfilehash: c0346dbfa4b39aa1dbaed20910eadd551d61fdd7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d80af92a75d6a0d1b1c6409f21bc5775f3389c13
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812610"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688364"
 ---
 # Export-AzApiManagementApi
 
 ## SYNOPSIS
 Mengekspor API ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/export-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Export-AzApiManagementApi -Context <PsApiManagementContext> -ApiId <String> [-Ap
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzApiManagementApi** mengekspor API Azure API Management ke file dalam salah satu format yang didukung.
+Cmdlet **Export-AzApiManagementApi** mengekspor AZURE API Management API ke file dalam salah satu format yang didukung.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, ekspor akan dilakukan untuk revisi api aktif saat ini.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, ekspor akan dilakukan untuk revisi api yang saat ini aktif.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa operasi ini menimpa file dengan nama yang sama jika sudah ada.
 
 ```yaml
@@ -179,8 +182,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -233,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzApiManagementApi](./Get-AzApiManagementApi.md)
 
-[Impor-AzApiManagementApi](./Import-AzApiManagementApi.md)
+[Import-AzApiManagementApi](./Import-AzApiManagementApi.md)
 
 [New-AzApiManagementApi](./New-AzApiManagementApi.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncCompatibilityCheck.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncCompatibilityCheck.md
-ms.openlocfilehash: 2dc8bf92326aa7c28505a68442922a2a081cd3cc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf44788414a5cdf005ac7c0435d79a77b757ba13
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932203"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719714"
 ---
 # Invoke-AzStorageSyncCompatibilityCheck
 
 ## SYNOPSIS
-Memeriksa potensi masalah kompatibilitas antara sistem Anda dan Sinkronisasi File Azure.
+Memeriksa potensi masalah kompatibilitas antara sistem Anda dan Azure File Sync.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/invoke-azstoragesynccompatibilitycheck) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,14 +35,14 @@ Invoke-AzStorageSyncCompatibilityCheck [-Credential <PSCredential>] [-ComputerNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzStorageSyncCompatibilityCheck** memeriksa potensi masalah kompatibilitas antara sistem anda dan Azure File Sync. Dengan jalur lokal atau jarak jauh, jalur ini menjalankan sekumpulan validasi pada sistem dan ruang nama file, lalu mengembalikan masalah kompatibilitas yang ditemukan.
+Cmdlet **Invoke-AzStorageSyncCompatibilityCheck** memeriksa potensi masalah kompatibilitas antara sistem Anda dan Azure File Sync. Mengingat jalur lokal atau jarak jauh, ia melakukan serangkaian validasi pada sistem dan namespace file, lalu mengembalikan masalah kompatibilitas yang ditemukannya.
 Pemeriksaan sistem:
-- Kompatibilitas OS Ruang nama file memeriksa:
+- Pemeriksaan namespace file kompatibilitas OS:
 - Karakter yang tidak didukung
-- Ukuran file maksimum
+- Ukuran file maksimal
 - Panjang jalur maksimum
 - Panjang file maksimum
-- Ukuran kumpulan data maksimum
+- Ukuran himpunan data maksimum
 - Kedalaman direktori maksimum
 
 ## EXAMPLES
@@ -64,12 +67,12 @@ $validation = Invoke-AzStorageSyncCompatibilityCheck C:\DATA
 $validation.Results | Select-Object -Property Type, Path, Level, Description, Result | Export-Csv -Path C:\results.csv -Encoding utf8
 ```
 
-Perintah ini memeriksa kompatibilitas sistem dan juga file dan folder di C:\DATA, lalu mengekspor hasil sebagai file CSV ke C:\hasil.
+Perintah ini memeriksa kompatibilitas sistem dan juga file dan folder di C:\DATA, lalu mengekspor hasilnya sebagai file CSV ke C:\results.
 
 ## PARAMETERS
 
 ### -ComputerName
-Komputer tempat Anda menjalankan pemeriksaan ini.
+Komputer tempat Anda melakukan pemeriksaan ini.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Kredensial Anda untuk berbagi yang Anda validasi.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur UNC berbagi yang Anda validasi.
+Jalur UNC dari berbagi yang Anda validasi.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipNamespaceChecks
-Atur bendera ini untuk melewati validasi ruang nama file dan hanya melakukan validasi sistem.
+Atur bendera ini untuk melewati validasi namespace file dan hanya melakukan validasi sistem.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipSystemChecks
-Atur bendera ini untuk melewati validasi sistem dan hanya melakukan validasi ruang nama file.
+Atur bendera ini untuk melewati validasi sistem dan hanya melakukan validasi namespace file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,17 +147,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.StorageSync.Evaluation.Models.PSValidationResult
 
 ## NOTES
-* Kata kunci: azure, Az, lengan, sumber daya, manajemen, storagesync, filesync
+* Kata kunci: azure, Az, arm, sumber daya, manajemen, storagesync, filesync
 
 ## RELATED LINKS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageBlobCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageBlobCopy.md
-ms.openlocfilehash: 10516d49a907c72d0f005b508841736583befcd3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aeae18d31c02b71bbd2f2734f83a87fab28967e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864054"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684336"
 ---
 # Stop-AzStorageBlobCopy
 
 ## SYNOPSIS
 Menghentikan operasi penyalinan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/stop-azstorageblobcopy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,26 +52,26 @@ Cmdlet **Stop-AzStorageBlobCopy** menghentikan operasi salin ke blob tujuan yang
 
 ## EXAMPLES
 
-### Contoh 1: Hentikan operasi salin menurut nama
+### Contoh 1: Hentikan operasi salin berdasarkan nama
 ```
 PS C:\>Stop-AzStorageBlobCopy -Container "ContainerName" -Blob "BlobName" -CopyId "CopyID"
 ```
 
-Perintah ini menghentikan operasi salin menurut nama.
+Perintah ini menghentikan operasi salin berdasarkan nama.
 
-### Contoh 2: Hentikan operasi salin dengan menggunakan pipeline
+### Contoh 2: Hentikan operasi salin dengan menggunakan alur
 ```
 PS C:\>Get-AzStorageContainer container* | Stop-AzStorageBlobCopy -Blob "BlobName"
 ```
 
-Perintah ini menghentikan operasi salin dengan melewati wadah pada pipeline dari **Get-AzStorageContainer**.
+Perintah ini menghentikan operasi salin dengan meneruskan kontainer pada alur dari **Get-AzStorageContainer**.
 
-### Contoh 3: Hentikan operasi salin dengan menggunakan pipeline dan Get-AzStorageBlob
+### Contoh 3: Hentikan operasi salin dengan menggunakan alur dan Get-AzStorageBlob
 ```
 PS C:\>Get-AzStorageBlob -Container "ContainerName" | Stop-AzStorageBlobCopy -Force
 ```
 
-Contoh ini menghentikan operasi salin dengan melewati wadah pada pipeline dari cmdlet Get-AzStorageBlob.
+Contoh ini menghentikan operasi salin dengan meneruskan kontainer pada alur dari cmdlet Get-AzStorageBlob.
 
 ## PARAMETERS
 
@@ -88,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
@@ -137,9 +140,9 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan maksimum panggilan jaringan serentak.
-Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
-Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
+Menentukan panggilan jaringan bersamaan maksimum.
+Anda dapat menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU dan bandwidth lokal dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Nilai yang ditentukan adalah jumlah absolut dan tidak dikalikan dengan jumlah inti.
 Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
 Nilai defaultnya adalah 10.
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Menentukan nama wadah.
+Menentukan nama kontainer.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Anda dapat membuat konteks dengan menggunakan cmdlet New-AzStorageContext.
 
@@ -216,8 +219,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menghentikan tugas salinan saat ini pada gumpalan yang ditentukan tanpa meminta konfirmasi.
+### -Force
+Menghentikan tugas salin saat ini pada blob yang ditentukan tanpa meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan interval batas waktu sisi layanan, dalam detik, untuk permintaan.
+Menentukan interval waktu habis sisi layanan, dalam detik, untuk permintaan.
 Jika interval yang ditentukan berlalu sebelum layanan memproses permintaan, layanan penyimpanan mengembalikan kesalahan.
 
 ```yaml
@@ -248,8 +251,8 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag Opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan.
+Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -263,8 +266,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -313,9 +316,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzStorageBlob](./Get-AzStorageBlob.md)
+[Dapatkan-BlobPenyimpananAz](./Get-AzStorageBlob.md)
 
-[Get-AzStorageContainer](./Get-AzStorageContainer.md)
+[Dapatkan-AzStorageContainer](./Get-AzStorageContainer.md)
 
 [Start-AzStorageBlobCopy](./Start-AzStorageBlobCopy.md)
 

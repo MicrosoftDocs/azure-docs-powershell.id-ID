@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: c65aec9d778ddaa37eefff8362030e7b0a41454f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 86aafc91da26e96ec4aaf80c8eb6f3a8043c70a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681462"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696710"
 ---
 # Remove-AzMarketplacePrivateStoreCollectionOffer
 
 ## SYNOPSIS
-Menghapus penawaran dari koleksi bursa pribadi tertentu.
+Menghapus penawaran dari koleksi penyimpanan privat yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/remove-azmarketplaceprivatestorecollectionoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,16 +35,16 @@ Remove-AzMarketplacePrivateStoreCollectionOffer -InputObject <IMarketplaceIdenti
 ```
 
 ## DESCRIPTION
-Menghapus penawaran dari koleksi bursa pribadi tertentu.
+Menghapus penawaran dari koleksi penyimpanan privat yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus penawaran dari koleksi bursa pribadi
+### Contoh 1: Menghapus penawaran dari koleksi penyimpanan privat
 ```powershell
 Remove-AzMarketplacePrivateStoreCollectionOffer -PrivateStoreId 3ac32d8c-e888-4dc6-b4ff-be4d755af13a -CollectionId fdb889a1-cf3e-49f0-95b8-2bb012fa01f1 -OfferId aumatics.azure_managedservices
 ```
 
-Perintah ini menghapus penawaran dari koleksi bursa pribadi
+Perintah ini menghapus penawaran dari koleksi penyimpanan privat
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferId
-ID penawaran untuk memperbarui atau menghapus
+ID penawaran untuk diperbarui atau dihapus
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -135,8 +138,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -190,8 +193,8 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
-  - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
+  - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS

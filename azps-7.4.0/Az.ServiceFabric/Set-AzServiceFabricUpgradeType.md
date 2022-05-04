@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricUpgradeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricUpgradeType.md
-ms.openlocfilehash: 0c1fcd463592203dc346fd1157365cb91e7be73c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cc7e23d1c0c0cd6f7668de82b66c9496c3608476
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671760"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687500"
 ---
 # Set-AzServiceFabricUpgradeType
 
 ## SYNOPSIS
-Ubah tipe pemutakhiran Service Fabric kluster.
+Ubah jenis peningkatan Service Fabric kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricupgradetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzServiceFabricUpgradeType [-ResourceGroupName] <String> [-Name] <String> -U
 ```
 
 ## DESCRIPTION
-Gunakan **Set-AzServiceFabricUpgradeType** untuk mengatur tipe pemutakhiran ke otomatis atau manual dengan versi kode Service Fabric tertentu.
+Gunakan **Set-AzServiceFabricUpgradeType** untuk mengatur jenis peningkatan ke otomatis atau manual dengan versi kode Service Fabric tertentu.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Gunakan **Set-AzServiceFabricUpgradeType** untuk mengatur tipe pemutakhiran ke o
 Set-AzServiceFabricUpgradeType -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster'  -UpgradeMode Automatic
 ```
 
-Perintah ini akan mengatur mode pemutakhiran kluster menjadi otomatis.
+Perintah ini akan mengatur mode peningkatan kluster ke otomatis.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -121,8 +124,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

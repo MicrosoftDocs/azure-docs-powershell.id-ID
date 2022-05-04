@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceServerTrustCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceServerTrustCertificate.md
-ms.openlocfilehash: 4bbadffb1221c1037b78010f1eb27237359b8f47
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f9d13e34d4dde250e8781873d8b2c85e9ad6c067
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306855"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706728"
 ---
 # Remove-AzSqlInstanceServerTrustCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat kepercayaan server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlinstanceservertrustcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzSqlInstanceServerTrustCertificate [-ResourceId] <String> [-AsJob] [-Pas
 ```
 
 ## DESCRIPTION
-**Remove-AzSqlInstanceServerTrustCertificate** cmdlet menghapus sertifikat kepercayaan server dari Azure SQL Managed Instanc
+**Cmdlet Remove-AzSqlInstanceServerTrustCertificate** menghapus sertifikat kepercayaan server dari Azure SQL Managed Instanc
 
 ## EXAMPLES
 
@@ -56,14 +59,14 @@ PS C:\> Remove-AzSqlInstanceServerTrustCertificate -ResourceGroupName "ResourceG
 
 Perintah ini menghapus sertifikat kepercayaan server "Certificate01" dari instans terkelola "ManagedInstance01" dan grup sumber daya "ResourceGroup1"
 
-### Contoh 2: Menghapus sertifikat kepercayaan server menurut pengidentifikasi sumber dayanya
+### Contoh 2: Menghapus sertifikat kepercayaan server dengan pengidentifikasi sumber dayanya
 ```powershell
 PS C:\> Remove-AzSqlInstanceServerTrustCertificate -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance01/serverTrustCertificates/Certificate01"
 ```
 
-Perintah ini menghapus sertifikat kepercayaan server dengan ID sumber daya tertentu.
+Perintah ini menghapus sertifikat kepercayaan server dengan ID sumber daya yang ditentukan.
 
-### Contoh 3: Menghapus sertifikat kepercayaan server menurut objek PowerShell-nya
+### Contoh 3: Menghapus sertifikat kepercayaan server dengan objek PowerShell-nya
 ```powershell
 PS C:\> $serverTrustCertificate = Get-AzSqlInstanceServerTrustCertificate -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Certificate01" 
 PS C:\> Remove-AzSqlInstanceServerTrustCertificate -InputObject $serverTrustCertificate
@@ -71,7 +74,7 @@ PS C:\> Remove-AzSqlInstanceServerTrustCertificate -InputObject $serverTrustCert
 
 Perintah ini menghapus sertifikat kepercayaan server yang ditentukan oleh objek sertifikat.
 
-### Contoh 4: Menghapus sertifikat kepercayaan server oleh objek instans induknya
+### Contoh 4: Menghapus sertifikat kepercayaan server dengan objek instans induknya
 ```powershell
 PS C:\> $instance = Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01" 
 PS C:\> Remove-AzSqlInstanceServerTrustCertificate -InstanceObject $instance -Name "Certificate01"
@@ -86,7 +89,7 @@ PS C:\> Remove-AzSqlInstanceServerTrustCertificate "ResourceGroup01" "ManagedIns
 
 Perintah ini menghapus sertifikat kepercayaan server "Certificate01" dari instans terkelola "ManagedInstance01" menggunakan parameter posisi.
 
-### Contoh 6: Hapus semua sertifikat kepercayaan server dari instans induknya
+### Contoh 6: Menghapus semua sertifikat kepercayaan server dari instans induknya
 ```powershell
 PS C:\> $instance = Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance01" 
 PS C:\> $instance | Get-AzSqlInstanceServerTrustCertificate | Remove-AzSqlInstanceServerTrustCertificate
@@ -94,7 +97,7 @@ PS C:\> $instance | Get-AzSqlInstanceServerTrustCertificate | Remove-AzSqlInstan
 
 Perintah ini menghapus semua sertifikat kepercayaan server dari instans "ManagedInstance01".
 
-### Contoh 7: Menghapus sertifikat kepercayaan server dan membuat output objek sertifikat yang dihapus
+### Contoh 7: Menghapus sertifikat kepercayaan server dan menghasilkan objek sertifikat yang dihapus
 ```powershell
 PS C:\> Remove-AzSqlInstanceServerTrustCertificate "ResourceGroup01" "ManagedInstance01" "Certificate01" -PassThru
 ResourceGroupName : ResourceGroup01
@@ -106,12 +109,12 @@ Thumbprint        : 0x7D989DF34BD0FD0D2F9F6B3B6A7096856F5AB004
 PublicKey         : 0x1C8E3F85BCD8A2C1D082CE42D7A1E8112651A906B15F5F244134142C53B050FCBF2571965C522EBB86B4F1B790F3AD31E689950EE909B87C25A1BB51DA328BEEB1BB0FD44AB3CB774B8CC9F72B486476DEB8B1C95210B84C4A0F18310CD83F299CAF0D567EBCE2DD008581622D72499F8EC9A686BA526916E7F78DCA90BA0ADD8C2E5F601017D374E2FBD0818458BFC11C8268BC21383613323153163C0F33E09D03586A3BBFDA3628F0358FBADE41602BD05C4E47CDB67A9914F35B315B7844C2F2D1352034B56D6B155D38415B816247779E7A0EB3431765D9A48F4649E647CCD2EA8F38E8B5D415833BA8337BA00FED2F00D9066B9CAEF7BAA8C553F7B8787BCEF63AC98E05372981520BD5A598356590736B547F3B300F1D710EC3003D398AEB94589E196C42C5F6A1873D6138D9F666A2D6F24DAFB12FBD6B0124B2CFFAD51EF67032832900A9E113625BE4C4FB012923BB9886B52B733A5F8BFF04122A2474828F2EE5FC66154D9EBA92A21F0BFD6E8AAEE7DCC45BB3883A410E603C9D98A5BB913853D1B7543E694FF74F8CA9174BE152A96530803DD03C15BC258E77925877BCAF748CA85230ABBF90789F4856200166D110D369FB03B6593339CCE498CDA69016289056F4638E761B9904129DB36B6B4CD17D49567C27FF11059C0569ABF48C438CB6128F2B2F245BDB066B6BF1155BCA11E9D6B0BD8A1607F2F5BB42AF7498D1B8410AA1E5E3E23A3CA6FB933D3894C8D1A2162E735CFCB7BEDFB3318DAE32AE9E24900B9B0F472ABD563550C9E696836889123F0ED2E7A9A4B90C2C617C8ADCF088CE2A7EC8AB97A80C00F3296241C7B320118A1182E327919007930417004A301249EAACF139D611D9C30DAFDF8672F5347C488250F46D45E7D7E9BF3BE99ECD1C60A046FC80EB1DC473FD2E1A7672235F8A834338A4810E32CB24C9C24D09234995A3D038D70379B900E6C9217EF19062775B050CF7CA52D3D72E294E2315AA544247B436D46AD08D55957B9688C576E35760B527B7F7EB71E6209301C59B6643C921F2FB182D237E81DC6205BF6740C8EDC48C65DAB0546C1098C2DCBF0E3B31A47868A721942022E0B5DBFFFBBC4767699C7F0ABD6DEBE7D5FB91
 ```
 
-Perintah ini menghapus semua tautan instans dari instans terkelola "ManagedInstance01" dan membuat output objek tautan instans yang dihapus.
+Perintah ini menghapus semua tautan instans dari instans terkelola "ManagedInstance01" dan menghasilkan objek tautan instans yang dihapus.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sertifikat.
 
 ```yaml
@@ -245,8 +248,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

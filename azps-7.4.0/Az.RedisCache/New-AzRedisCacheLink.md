@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheLink.md
-ms.openlocfilehash: c254762178310a9ffb90511107284134b312fbdf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 51ccbfe7283c10e7158f4e36c0d640b662fa32ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059769"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706710"
 ---
 # New-AzRedisCacheLink
 
 ## SYNOPSIS
-Buat tautan replikasi geografis antara dua Singgahan Redis.
+Buat tautan replikasi geografis antara dua Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/new-azrediscachelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ New-AzRedisCacheLink -PrimaryServerName <String> -SecondaryServerName <String>
 ```
 
 ## DESCRIPTION
-Buat tautan replikasi geografis antara dua Singgahan Redis.
+Buat tautan replikasi geografis antara dua Redis Cache.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tautan di antara dua singgahan
+### Contoh 1: Membuat tautan antara dua cache
 ```powershell
 New-AzRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerName "mycache2"
 ```
@@ -40,7 +43,7 @@ New-AzRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerName "mycache
         ProvisioningState   : Creating
 ```
 
-Perintah ini membuat tautan geo-replikasi antara Redis Cache mycache1 dan mycache2.
+Perintah ini membuat tautan replikasi geografis antara Redis Cache mycache1 dan mycache2.
 
 ## PARAMETERS
 
@@ -89,8 +92,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -143,6 +146,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)

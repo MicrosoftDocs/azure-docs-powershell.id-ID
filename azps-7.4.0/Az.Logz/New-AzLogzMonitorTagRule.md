@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/new-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitorTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzMonitorTagRule.md
-ms.openlocfilehash: cc39f21dbc27696256324bb32b1806ca422fa950
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 004e9a036d6169286e307fd109be8e3ae10f4eaa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807786"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689265"
 ---
 # New-AzLogzMonitorTagRule
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzmonitortagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzLogzMonitorTagRule -MonitorName <String> -ResourceGroupName <String> [-Sub
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu
+### Contoh 1: Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu
 ```powershell
 New-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
 ```
@@ -41,7 +44,7 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini membuat atau memperbarui kumpulan aturan tag untuk sumber daya monitor tertentu.
+Perintah ini membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## PARAMETERS
 
@@ -61,12 +64,12 @@ Accept wildcard characters: False
 ```
 
 ### -LogRuleFilteringTag
-Daftar pemfilteran tag yang akan digunakan untuk mengambil log.
+Daftar tag pemfilteran yang akan digunakan untuk menangkap log.
 Ini hanya berlaku jika bendera SendActivityLogs diaktifkan.
-Jika kosong, semua sumber daya akan direkam.
-Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
-Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-Untuk membangun, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan membuat tabel hash.
+Jika kosong, semua sumber daya akan ditangkap.
+Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia.
+Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+Untuk membuat, lihat bagian CATATAN untuk properti LOGRULEFILTERINGTAG dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.Api20201001Preview.IFilteringTag[]
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Pantau nama sumber daya
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -220,9 +223,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk mengambil log. Ini hanya berlaku jika bendera SendActivityLogs diaktifkan. Jika kosong, semua sumber daya akan direkam. Jika hanya tindakan Pengecualian yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Sertakan tindakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
-  - `[Action <TagAction?>]`: Tindakan valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
-  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) tag.
+LOGRULEFILTERINGTAG <IFilteringTag[]>: Daftar tag pemfilteran yang akan digunakan untuk menangkap log. Ini hanya berlaku jika bendera SendActivityLogs diaktifkan. Jika kosong, semua sumber daya akan ditangkap. Jika hanya tindakan Kecualikan yang ditentukan, aturan akan berlaku untuk daftar semua sumber daya yang tersedia. Jika Tindakan sertakan ditentukan, aturan hanya akan menyertakan sumber daya dengan tag terkait.
+  - `[Action <TagAction?>]`: Tindakan yang valid untuk tag pemfilteran. Pengecualian lebih diprioritaskan daripada penyertaan.
+  - `[Name <String>]`: Nama (juga dikenal sebagai kunci) dari tag.
   - `[Value <String>]`: Nilai tag.
 
 ## RELATED LINKS

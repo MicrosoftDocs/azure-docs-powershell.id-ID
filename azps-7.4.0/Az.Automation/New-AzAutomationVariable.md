@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationVariable.md
-ms.openlocfilehash: 3ec14221e9393ad7511e991121d9f7401a581282
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 278dddb699f1ee99d846ae27cbbb1de9a2e07aee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751104"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680594"
 ---
 # New-AzAutomationVariable
 
 ## SYNOPSIS
-Membuat variabel Otomatisasi.
+Membuat variabel Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationvariable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Anda tidak dapat mengubah status variabel terenkripsi setelah pembuatan.
 PS C:\>New-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "StringVariable22" -Encrypted $False -Value "My String" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini membuat variabel bernama StringVariable22 dengan nilai string di akun Otomatisasi bernama Contoso17.
+Perintah ini membuat variabel bernama StringVariable22 dengan nilai string di akun Automation bernama Contoso17.
 
 ### Contoh 2: Membuat variabel dengan nilai kompleks
 ```
@@ -46,15 +49,15 @@ PS C:\>$VirtualMachine = Get-AzVM -Name "VirtualMachine03"
 PS C:\> New-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "ComplexVariable01" -Encrypted $False -Value $VirtualMachine -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama mendapatkan mesin virtual dengan menggunakan cmdlet Get-AzVM.
+Perintah pertama mendapatkan komputer virtual dengan menggunakan cmdlet Get-AzVM.
 Perintah menyimpannya dalam variabel $VirtualMachine.
-Perintah kedua membuat variabel bernama ComplexVariable01 dalam akun Otomatisasi bernama Contoso17.
-Perintah ini menggunakan objek kompleks untuk nilainya, dalam hal ini, mesin virtual dalam $VirtualMachine.
+Perintah kedua membuat variabel bernama ComplexVariable01 di akun Automation bernama Contoso17.
+Perintah ini menggunakan objek kompleks untuk nilainya, dalam hal ini, komputer virtual dalam $VirtualMachine.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat untuk menyimpan variabel.
+Menentukan nama akun Automation untuk menyimpan variabel.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk variabel tersebut.
+Menentukan deskripsi untuk variabel .
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama untuk variabel tersebut.
+### -Name
+Menentukan nama untuk variabel.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Value
+### -Nilai
 Menentukan nilai untuk variabel.
 
 ```yaml
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

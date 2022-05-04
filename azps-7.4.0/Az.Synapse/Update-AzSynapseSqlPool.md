@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
-ms.openlocfilehash: 389e874941fe0fc13ca1024e258e4bdf115e7d5e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 69fae55192d39004615540b4c78bdeb6b5f8b718
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931249"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712264"
 ---
 # Update-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memperbarui kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Update-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-Tag <Hashtable
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSqlPool** memperbarui Azure Synapse Analytics SQL pool.
+Cmdlet **Update-AzSynapseSqlPool** memperbarui kumpulan SQL Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Cmdlet **Update-AzSynapseSqlPool** memperbarui Azure Synapse Analytics SQL pool.
 Update-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -Tag @{'key'='value'} -PerformanceLevel DW300c
 ```
 
-Perintah ini memperbarui SQL kumpulan Azure Synapse Analytics.
+Perintah ini memperbarui kumpulan SQL Analitik Azure Synapse.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Update-AzSynapseSqlPool -Name ContosoSqlPool -Tag @{'key'='value1'}
 ```
 
-Perintah ini memperbarui Azure Synapse Analytics SQL kumpulan melalui pipeline.
+Perintah ini memperbarui kumpulan SQL Azure Synapse Analytics melalui alur.
 
 ### Contoh 3
 ```powershell
@@ -72,19 +75,19 @@ $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPoo
 $pool | Update-AzSynapseSqlPool -Tag @{'key'='value2'}
 ```
 
-Perintah ini memperbarui Azure Synapse Analytics SQL kumpulan melalui pipeline.
+Perintah ini memperbarui kumpulan SQL Azure Synapse Analytics melalui alur.
 
 ### Contoh 4
 ```powershell
 Update-AzSynapseSqlPool -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd3/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlPools/ContosoSqlPool -Tag @{'key'='value3'}
 ```
 
-Perintah ini memperbarui kumpulan SQL Analitik Azure Synapse dengan ID sumber daya.
+Perintah ini memperbarui kumpulan SQL Azure Synapse Analytics dengan ID sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL objek input pool, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -128,8 +131,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Synapse SQL pool.
+### -Name
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformanceLevel
-Tingkat layanan SQL dan tingkat kinerja untuk ditetapkan ke kumpulan SQL.
+Tingkat layanan SQL dan tingkat performa untuk ditetapkan ke kumpulan SQL.
 Misalnya, DW2000c.
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya Synapse SQL Pool.
+Pengidentifikasi sumber daya Kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi Synapse SQL pool. Misalnya, 2 atau 3.
+Versi kumpulan SQL Synapse. Misalnya, 2 atau 3.
 
 ```yaml
 Type: System.Int32
@@ -234,7 +237,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -264,8 +267,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

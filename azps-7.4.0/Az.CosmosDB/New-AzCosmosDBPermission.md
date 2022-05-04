@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBPermission.md
-ms.openlocfilehash: c45cee52930050a93754112281fbe4279c1746bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1948df67b57db50b8c8bbd25fa94878939c46628
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143318753"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614372"
 ---
 # New-AzCosmosDBPermission
 
 ## SYNOPSIS
 Membuat objek Izin CosmosDB baru yang akan digunakan untuk membuat atau memperbarui Definisi Peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbpermission) untuk informasi terbaru.
 
 ## SYNTAX
 

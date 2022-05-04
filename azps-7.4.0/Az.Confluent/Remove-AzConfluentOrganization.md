@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Remove-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Remove-AzConfluentOrganization.md
-ms.openlocfilehash: 9721da2c05fa9362304220f0297e5bc9d7540a79
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 98353cd9bdabcbd0b576229d24dbdd8a8906a38a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127341"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632942"
 ---
 # Remove-AzConfluentOrganization
 
 ## SYNOPSIS
-Hapus sumber daya Organisasi
+Menghapus sumber daya Organisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confluent/remove-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Remove-AzConfluentOrganization -InputObject <IConfluentIdentity> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Hapus sumber daya Organisasi
+Menghapus sumber daya Organisasi
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus organisasi konferensi menurut nama
+### Contoh 1: Menghapus organisasi confluent berdasarkan nama
 ```powershell
 Remove-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-01-portal
 ```
@@ -48,9 +51,9 @@ Remove-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluento
 Do you want to proceed (Y/N)?: y
 ```
 
-Perintah ini menghapus organisasi konferensi berdasarkan nama
+Perintah ini menghapus organisasi confluent berdasarkan nama
 
-### Contoh 2: Menghapus organisasi konferensi menurut saluran
+### Contoh 2: Menghapus organisasi konfluen menurut alur
 ```powershell
 Get-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh | Remove-AzConfluentOrganization
 ```
@@ -62,12 +65,12 @@ Get-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-
 Do you want to proceed (Y/N)?: y
 ```
 
-Perintah ini menghapus organisasi konferensi menurut saluran.
+Perintah ini menghapus organisasi confluent berdasarkan alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Confluent.Models.IConfluentIdentity
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya organisasi
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,8 +189,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

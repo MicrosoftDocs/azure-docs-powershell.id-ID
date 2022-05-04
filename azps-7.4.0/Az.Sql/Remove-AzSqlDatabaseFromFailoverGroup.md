@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseFromFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseFromFailoverGroup.md
-ms.openlocfilehash: 1cf8455d4b6da604cbbf20ccbb07b6aa7f2b4c3e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f456014fa6a3e5ae5011071c3617178cbf0b2351
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272151"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687410"
 ---
 # Remove-AzSqlDatabaseFromFailoverGroup
 
 ## SYNOPSIS
 Menghapus satu atau beberapa database dari Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabasefromfailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Remove-AzSqlDatabaseFromFailoverGroup [-ServerName] <String> [-FailoverGroupName
 ```
 
 ## DESCRIPTION
-Menghapus satu atau beberapa database dari Grup Failover Azure SQL Database yang ditentukan. Database dan hubungan replikasi dibiarkan tetap utuh, tetapi tidak lagi dapat diakses melalui titik akhir Grup Failover.
-Untuk mendapatkan objek database yang digunakan untuk mengisi parameter '-Database', gunakan (misalnya) cmdlet Get-AzSqlDatabase.
+Menghapus satu atau beberapa database dari Grup Failover Azure SQL Database yang ditentukan. Database dan hubungan replikasi dibiarkan utuh, tetapi tidak akan lagi dapat diakses melalui titik akhir Grup Failover.
+Untuk mendapatkan objek database untuk mengisi parameter '-Database', gunakan (misalnya) cmdlet Get-AzSqlDatabase.
 Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 
 ## EXAMPLES
@@ -38,7 +41,7 @@ Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 $failoverGroup = Get-AzSqlDatabase -ResourceGroupName rg -ServerName primaryserver -DatabaseName db1 | Remove-AzSqlDatabaseFromFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg
 ```
 
-Perintah ini menghapus satu database dari Grup Failover dengan memilahnya.
+Perintah ini menghapus satu database dari Grup Failover dengan mempipanya.
 
 ### Contoh 2
 ```powershell
@@ -60,7 +63,7 @@ Perintah ini menghapus semua database dalam Kumpulan Elastis dari Grup Failover.
 ## PARAMETERS
 
 ### -Database
-Satu atau beberapa Database Azure SQL di server utama Grup Failover yang akan dihapus dari Grup Failover.
+Satu atau beberapa database Azure SQL di server utama Grup Failover yang akan dihapus dari Grup Failover.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel]
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama Grup failover Azure SQL Database.
+Nama Grup Failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan.
 
 ```yaml
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -196,15 +199,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
+[Baru-AzSqlDatabaseFailoverGroup](./New-AzSqlDatabaseFailoverGroup.md)
 
 [Set-AzSqlDatabaseFailoverGroup](./Set-AzSqlDatabaseFailoverGroup.md)
 
-[Get-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
+[Dapatkan-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
 
-[Add-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
+[Tambahkan-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
 
-[Switch-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
+[Alihkan-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 

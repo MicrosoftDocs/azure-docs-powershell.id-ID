@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewScan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewScan.md
-ms.openlocfilehash: 47a7cbb723c44e043eab6de85b381d0d68a4e2e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5ed32443ed4c5fb701e2ddb9da20cb2308b3f9d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142740736"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706764"
 ---
 # New-AzPurviewScan
 
 ## SYNOPSIS
 Membuat instans pemindaian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewscan) untuk informasi terbaru.
 
 ## SYNTAX
 

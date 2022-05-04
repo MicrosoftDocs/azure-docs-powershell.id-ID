@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkPeering.md
-ms.openlocfilehash: 59a1f654c814013014495150e3421d1ce933d7ac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cc80a06b512226cb242d6b4f4b664b690b3f6d91
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281745"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733438"
 ---
 # Get-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Menghapus peering jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 

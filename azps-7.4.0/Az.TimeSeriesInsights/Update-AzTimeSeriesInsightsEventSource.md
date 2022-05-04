@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 53a8de9c0632982a254b3276d70a37873efed5d8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6753844070731773a4a33b8e48e71134dec577e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669384"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714493"
 ---
 # Update-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Memperbarui sumber kejadian dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu.
+Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightseventsource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Update-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity
 ```
 
 ## DESCRIPTION
-Memperbarui sumber kejadian dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu.
+Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui sumber kejadian tertentu menurut nama
+### Contoh 1: Memperbarui sumber peristiwa tertentu berdasarkan nama
 ```powershell
 Update-AzTimeSeriesInsightsEventSource -EnvironmentName tsitest001 -Name iots001 -ResourceGroupName testgroup -Tag @{"tgk"="001"}
 ```
@@ -55,9 +58,9 @@ TimestampPropertyName :
 Type                  : Microsoft.TimeSeriesInsights/Environments/EventSources
 ```
 
-Perintah ini memperbarui sumber kejadian tertentu.
+Perintah ini memperbarui sumber peristiwa tertentu.
 
-### Contoh 2: Memperbarui sumber kejadian tertentu menurut objek
+### Contoh 2: Memperbarui sumber peristiwa tertentu menurut objek
 ```powershell
 $es = Get-AzTimeSeriesInsightsEventSource -EnvironmentName tsitest001 -ResourceGroupName testgroup -Name iots001
 Update-AzTimeSeriesInsightsEventSource -InputObject $es -Tag @{"tgb"="002"}
@@ -76,7 +79,7 @@ TimestampPropertyName :
 Type                  : Microsoft.TimeSeriesInsights/Environments/EventSources
 ```
 
-Perintah ini memperbarui sumber kejadian tertentu.
+Perintah ini memperbarui sumber peristiwa tertentu.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -125,8 +128,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+### -Name
+Nama Time Series Insights sumber peristiwa yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci properti tambahan untuk sumber kejadian.
+Pasangan kunci-nilai properti tambahan untuk sumber peristiwa.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -239,9 +242,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
+  - `[ReferenceDataSetName <String>]`: Nama himpunan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 

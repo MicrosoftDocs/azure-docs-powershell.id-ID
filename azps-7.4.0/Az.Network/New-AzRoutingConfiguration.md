@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRoutingConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRoutingConfiguration.md
-ms.openlocfilehash: bb2389254ec772adc5c9e00e85c8e6c18f7a134e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 842831e5690741d2636c864e7a6facbbb3235c43
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313515"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687716"
 ---
 # New-AzRoutingConfiguration
 
 ## SYNOPSIS
-Membuat objek Konfigurasi Perutean.
+Membuat objek RoutingConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azroutingconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ New-AzRoutingConfiguration -AssociatedRouteTable <String> -Label <String[]> -Id 
 ```
 
 ## DESCRIPTION
-Membuat objek Konfigurasi Perutean.
+Membuat objek RoutingConfiguration.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ VnetRoutes            : {
                         }
 ```
 
-Perintah di atas akan membuat objek Konfigurasi Perutean yang kemudian dapat ditambahkan ke sumber daya koneksi. Rute statis hanya diperbolehkan dengan objek HubVirtualNetworkConnection. 
+Perintah di atas akan membuat objek RoutingConfiguration yang kemudian dapat ditambahkan ke sumber daya koneksi. Rute statis hanya diizinkan dengan objek HubVirtualNetworkConnection. 
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Daftar id sumber daya dari semua tabel rute hub untuk mengiklankan rute ke properti PropagatedRouteTables.
+Daftar id sumber daya dari semua tabel rute hub untuk mengiklankan rute untuk properti PropagatedRouteTables.
 
 ```yaml
 Type: String[]
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

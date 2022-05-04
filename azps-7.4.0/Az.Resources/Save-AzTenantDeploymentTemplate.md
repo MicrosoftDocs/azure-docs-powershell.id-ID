@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/save-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzTenantDeploymentTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Save-AzTenantDeploymentTemplate.md
-ms.openlocfilehash: 60d4624ec5e37b6fc632a967651f03962cae02e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d9bb37c072a765779613a1dd1db658e066904cac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801342"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718994"
 ---
 # Save-AzTenantDeploymentTemplate
 
 ## SYNOPSIS
 Menyimpan templat penyebaran ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/save-aztenantdeploymenttemplate) untuk informasi terbaru.
 
 ## SYNTAX
 

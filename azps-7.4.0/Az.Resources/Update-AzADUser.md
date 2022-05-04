@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
-ms.openlocfilehash: 1d058972db6cada0692e7374a785ebd0e2348aad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2bf985855d270f9380c5092afc623c239e176835
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867078"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679622"
 ---
 # Update-AzADUser
 
@@ -18,6 +18,9 @@ ms.locfileid: "142867078"
 Memperbarui entitas dalam pengguna
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-azaduser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -577,7 +580,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -763,8 +766,8 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Kode negara dua huruf (standar ISO 3166).
-Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
-Contohnya meliputi: US, JP, dan GB.
+Diperlukan bagi pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
+Contohnya meliputi: AS, JP, dan GB.
 Tidak dapat diubah ke null.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -786,7 +789,7 @@ UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar
 Menurut konvensi, ini harus dipetakan ke nama email pengguna.
 Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa.
 Properti ini diperlukan saat pengguna dibuat.
-Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
+Domain terverifikasi untuk penyewa dapat diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
 
 ```yaml
@@ -872,34 +875,34 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 IDENTITY <IMicrosoftGraphObjectIdentity[]>: Mewakili identitas yang dapat digunakan untuk masuk ke akun pengguna ini. Identitas dapat disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terkait dengan akun pengguna. Mungkin berisi beberapa item dengan nilai signInType yang sama. Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
   - `[Issuer <String>]`: Menentukan penerbit identitas, misalnya facebook.com.Untuk akun lokal (di mana signInType tidak terfederasi), properti ini adalah nama domain default penyewa B2C lokal, misalnya contoso.onmicrosoft.com.Untuk pengguna eksternal dari organisasi Azure AD lain, ini akan menjadi domain organisasi federasi, misalnya contoso.com.Supports $filter. Batas karakter 512.
-  - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi pengeluar sertifikat dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
-  - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh penerbit. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
+  - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi penerbit dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
+  - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh pengeluar sertifikat. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
 
 INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
   - `[AccountEnabled <Boolean?>]`: true jika akun diaktifkan; jika tidak, salah. Properti ini diperlukan saat pengguna dibuat. Mendukung $filter (eq, ne, NOT, dan in).
-  - `[AgeGroup <String>]`: Mengatur grup usia pengguna. Nilai yang diizinkan: null, minor, notAdult dan adult. Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut. Mendukung $filter (eq, ne, NOT, dan in).
+  - `[AgeGroup <String>]`: Mengatur grup usia pengguna. Nilai yang diizinkan: null, minor, notAdult dan adult. Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut. Mendukung $filter (eq, ne, NOT, dan in).
   - `[ApproximateLastSignInDateTime <DateTime?>]`: Jenis tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Baca-saja. Mendukung $filter (eq, ne, not, ge, le, dan eq pada nilai null) dan $orderBy.
   - `[City <String>]`: Kota tempat pengguna berada. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[CompanyName <String>]`: Nama perusahaan yang dikaitkan dengan pengguna. Properti ini dapat berguna untuk menjelaskan perusahaan asal pengguna eksternal. Panjang maksimum nama perusahaan adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[ComplianceExpirationDateTime <DateTime?>]`: Tanda waktu ketika perangkat tidak lagi dianggap sesuai. Jenis tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Baca-saja.
-  - `[ConsentProvidedForMinor <String>]`: Menetapkan apakah persetujuan telah diperoleh untuk anak di bawah umur. Nilai yang diizinkan: null, granted, denied, dan notRequired. Lihat definisi properti kelompok usia legal untuk informasi lebih lanjut. Mendukung $filter (eq, ne, NOT, dan in).
+  - `[ComplianceExpirationDateTime <DateTime?>]`: Tanda waktu saat perangkat tidak lagi dianggap sesuai. Jenis tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Baca-saja.
+  - `[ConsentProvidedForMinor <String>]`: Menetapkan apakah persetujuan telah diperoleh untuk anak di bawah umur. Nilai yang diizinkan: null, granted, denied, dan notRequired. Lihat definisi properti kelompok usia hukum untuk informasi lebih lanjut. Mendukung $filter (eq, ne, NOT, dan in).
   - `[Country <String>]`: Negara/wilayah tempat pengguna berada; misalnya, AS atau Inggris. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[Department <String>]`: Nama untuk departemen tempat pengguna bekerja. Panjang maksimum adalah 64 karakter. Mendukung $filter (operator eq, ne, NOT , ge, le, dan in).
   - `[DeviceVersion <Int32?>]`: Hanya untuk penggunaan internal.
   - `[EmployeeHireDate <DateTime?>]`: Tanggal dan waktu ketika pengguna dipekerjakan atau akan mulai bekerja jika terjadi persewaan di masa mendatang. Mendukung $filter (eq, ne, NOT , ge, le, in).
   - `[EmployeeId <String>]`: Pengidentifikasi karyawan yang ditetapkan untuk pengguna oleh organisasi. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[EmployeeType <String>]`: Menangkap jenis pekerja perusahaan. Misalnya, Karyawan, Kontraktor, Konsultan, atau Vendor. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
-  - `[ExternalUserState <String>]`: Untuk pengguna eksternal yang diundang ke penyewa menggunakan API undangan, properti ini mewakili status undangan pengguna yang diundang. Untuk pengguna yang diundang, statusnya bisa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain. Mendukung $filter (eq, ne, NOT , in).
-  - `[ExternalUserStateChangeDateTime <DateTime?>]`: Menampilkan tanda waktu untuk perubahan terbaru pada properti externalUserState. Mendukung $filter (eq, ne, NOT , in).
+  - `[ExternalUserState <String>]`: Untuk pengguna eksternal yang diundang ke penyewa menggunakan API undangan, properti ini mewakili status undangan pengguna yang diundang. Untuk pengguna yang diundang, statusnya dapat Berupa PendingAcceptance atau Accepted, atau null untuk semua pengguna lain. Mendukung $filter (eq, ne, NOT , in).
+  - `[ExternalUserStateChangeDateTime <DateTime?>]`: Menunjukkan tanda waktu untuk perubahan terbaru ke properti externalUserState. Mendukung $filter (eq, ne, NOT , in).
   - `[FaxNumber <String>]`: Nomor faks pengguna. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[GivenName <String>]`: Nama yang diberikan (nama depan) pengguna. Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[Identity <IMicrosoftGraphObjectIdentity[]>]`: Mewakili identitas yang dapat digunakan untuk masuk ke akun pengguna ini. Identitas dapat disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terkait dengan akun pengguna. Mungkin berisi beberapa item dengan nilai signInType yang sama. Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
     - `[Issuer <String>]`: Menentukan penerbit identitas, misalnya facebook.com.Untuk akun lokal (di mana signInType tidak terfederasi), properti ini adalah nama domain default penyewa B2C lokal, misalnya contoso.onmicrosoft.com.Untuk pengguna eksternal dari organisasi Azure AD lain, ini akan menjadi domain organisasi federasi, misalnya contoso.com.Supports $filter. Batas karakter 512.
-    - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi penerbit dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
-    - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh pengeluar sertifikat. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
+    - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi pengeluar sertifikat dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
+    - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh penerbit. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
   - `[IsResourceAccount <Boolean?>]`: Jangan gunakan - dicadangkan untuk digunakan di masa mendatang.
   - `[JobTitle <String>]`: Jabatan pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[Mail <String>]`: Alamat SMTP untuk pengguna, misalnya, admin@contoso.com. Perubahan pada properti ini juga akan memperbarui koleksi proxyAddresses pengguna untuk menyertakan nilai sebagai alamat SMTP. Meskipun properti ini dapat berisi karakter aksen, menggunakannya dapat menyebabkan masalah akses dengan aplikasi Microsoft lainnya untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
@@ -914,8 +917,8 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[PasswordPolicy <String>]`: Menentukan kebijakan kata sandi untuk pengguna. Nilai ini adalah enumerasi dengan satu nilai yang mungkin adalah DisableStrongPassword, yang memungkinkan kata sandi yang lebih lemah daripada kebijakan default yang ditentukan. DisablePasswordExpiration juga dapat ditentukan. Keduanya dapat ditentukan bersama-sama; misalnya: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (ne, NOT).
   - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-    - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada saat pertama kali masuk.
-    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna harus terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis direset ke false. Jika tidak diatur, defaultnya adalah false.
+    - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada log masuk pertama.
+    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna diperlukan untuk terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis diatur ulang ke false. Jika tidak diatur, defaultnya adalah false.
     - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimum seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
   - `[PhysicalId <String[]>]`: Hanya untuk penggunaan internal. Tidak dapat diubah ke null. Mendukung $filter (eq, bukan, ge, le, startsWith).
   - `[PostalCode <String>]`: Kode pos untuk alamat pos pengguna. Kode pos khusus untuk negara/wilayah pengguna. Di Amerika Serikat, atribut ini berisi kode pos. Panjang maksimum adalah 40 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
@@ -925,14 +928,14 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[StreetAddress <String>]`: Alamat jalan tempat bisnis pengguna. Panjang maksimum adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[Surname <String>]`: Nama keluarga pengguna (nama keluarga atau nama belakang). Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[TrustType <String>]`: Jenis kepercayaan untuk perangkat yang bergabung. Baca-saja. Nilai yang mungkin: Tempat kerja (menunjukkan bawa perangkat pribadi Anda sendiri), AzureAd (Perangkat yang bergabung hanya cloud), ServerAd (perangkat yang bergabung dengan domain lokal bergabung ke Azure AD). Untuk detail selengkapnya, lihat Pengenalan manajemen perangkat di Azure Active Directory
-  - `[UsageLocation <String>]`: Kode negara dua huruf (standar ISO 3166). Diperlukan bagi pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.  Contohnya meliputi: AS, JP, dan GB. Tidak dapat diubah ke null. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[UserPrincipalName <String>]`: Nama prinsipal pengguna (UPN) pengguna. UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar Internet RFC 822. Menurut konvensi, ini harus dipetakan ke nama email pengguna. Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa. Properti ini diperlukan saat pengguna dibuat. Domain terverifikasi untuk penyewa dapat diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
+  - `[UsageLocation <String>]`: Kode negara dua huruf (standar ISO 3166). Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.  Contohnya meliputi: US, JP, dan GB. Tidak dapat diubah ke null. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[UserPrincipalName <String>]`: Nama prinsipal pengguna (UPN) pengguna. UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar Internet RFC 822. Menurut konvensi, ini harus dipetakan ke nama email pengguna. Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa. Properti ini diperlukan saat pengguna dibuat. Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
   - `[UserType <String>]`: Nilai string yang dapat digunakan untuk mengklasifikasikan jenis pengguna di direktori Anda, seperti Anggota dan Tamu. Mendukung $filter (eq, ne, NOT, in,).
 
 PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada saat pertama kali masuk.
-  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna harus terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis direset ke false. Jika tidak diatur, defaultnya adalah false.
+  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada log masuk pertama.
+  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna diperlukan untuk terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis diatur ulang ke false. Jika tidak diatur, defaultnya adalah false.
   - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimum seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
 
 ## RELATED LINKS

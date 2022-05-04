@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubValidSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubValidSku.md
-ms.openlocfilehash: 4818add69f688026c06c39ff05852e4c66f38511
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d453c25cc602ce7b99e6b4708238057fe480bdd9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747378"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719408"
 ---
 # Get-AzIotHubValidSku
 
 ## SYNOPSIS
-Mendapatkan semua sku valid yang dapat ditransisikan oleh IotHub ini.
+Mendapatkan semua sku yang valid yang dapat ditransisikan oleh IotHub ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubvalidsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ Get-AzIotHubValidSku [-ResourceGroupName] <String> [-Name] <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Mendapatkan semua sku valid yang dapat ditransisikan oleh IotHub ini.
-IotHub tidak dapat bertransisi antara skus gratis dan berbayar dan sebaliknya. Anda harus menghapus dan membuat ulang iothub jika Anda ingin mencapai ini.
+Mendapatkan semua sku yang valid yang dapat ditransisikan oleh IotHub ini.
+IotHub tidak dapat beralih antara sku gratis dan berbayar dan sebaliknya. Anda harus menghapus dan membuat ulang iothub jika Ingin mencapai hal ini.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan skus yang valid
+### Contoh 1 Dapatkan sku yang valid
 ```powershell
 Get-AzIotHubValidSku -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama hub IoT. 
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

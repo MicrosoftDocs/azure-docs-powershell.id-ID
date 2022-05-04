@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleOverrideObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleOverrideObject.md
-ms.openlocfilehash: 684793851362a22d364da70bd2158d45100969c8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf5bbe97cd5f9d1694aa5057f8851b0a2a285557
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940897"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718508"
 ---
 # New-AzFrontDoorWafManagedRuleOverrideObject
 
 ## SYNOPSIS
-Membuat objek penggantian aturan terkelola
+Membuat objek penimpaan aturan terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleoverrideobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ New-AzFrontDoorWafManagedRuleOverrideObject -RuleId <String> [-Action <String>] 
 ```
 
 ## DESCRIPTION
-Buat Objek PSAzureManagedRuleOverride untuk grup aturan WAF yang dikelola menimpa pembuatan objek.
+Buat Objek PSAzureManagedRuleOverride untuk grup aturan WAF terkelola mengambil alih pembuatan objek.
 
 ## EXAMPLES
 
 ### Contoh 1
-Membuat objek pengesampingan aturan terkelola untuk aturan 942250 (yang berada dalam grup SQLI).
+Buat objek penimpaan aturan terkelola untuk aturan 942250 (yang berada dalam grup SQLI).
 
 ```powershell
 New-AzFrontDoorWafManagedRuleOverrideObject -RuleId "942250" -Action Log
@@ -45,7 +48,7 @@ RuleId EnabledState Action
 ## PARAMETERS
 
 ### -Tindakan
-Mengesampingkan Tindakan
+Ambil alih Tindakan
 
 ```yaml
 Type: System.String
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nonaktif
-Status nonaktif
+### -Dinonaktifkan
+Status dinonaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightClusterIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightClusterIdentity.md
-ms.openlocfilehash: d795d771a81c2478fa1793cf75d6b9d9685c9d2c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 21580d8a8e8635179410b08d690f57dc887327be
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286119"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714279"
 ---
 # Add-AzHDInsightClusterIdentity
 
 ## SYNOPSIS
 Menambahkan identitas kluster ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightclusteridentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ New-AzHDInsightClusterConfig `
                 -StorageContainer $storageAccountContainer
 ```
 
-Perintah ini menambahkan info Identitas Kluster ke kluster bernama your-hadoop-001, yang memungkinkan kluster mengakses Azure Data Lake Store.
+Perintah ini menambahkan info Identitas Kluster ke kluster bernama your-hadoop-001, memungkinkan kluster mengakses Azure Data Lake Store.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationId
-Id Aplikasi Prinsipal Layanan untuk mengakses Azure Data Lake.
+Id Aplikasi Perwakilan Layanan untuk mengakses Azure Data Lake.
 
 ```yaml
 Type: System.Guid
@@ -135,8 +138,8 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFilePath
-Menentukan jalur file ke sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
+Menentukan jalur file ke sertifikat yang akan digunakan untuk mengautentikasi sebagai Perwakilan Layanan.
+Kluster akan menggunakan ini saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -151,8 +154,8 @@ Accept wildcard characters: False
 ```
 
 ### -CertificatePassword
-Menentukan kata sandi untuk sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
+Menentukan kata sandi untuk sertifikat yang akan digunakan untuk mengautentikasi sebagai Perwakilan Layanan.
+Kluster akan menggunakan ini saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ```yaml
@@ -198,8 +201,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek Azure AD (GUID) dari Azure AD Service Principal yang mewakili kluster.
-Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
+Menentukan ID objek Azure AD (GUID) dari Perwakilan Layanan Azure AD yang mewakili kluster.
+Kluster akan menggunakan ini saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Guid
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

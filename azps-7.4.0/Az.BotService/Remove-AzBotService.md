@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Remove-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Remove-AzBotService.md
-ms.openlocfilehash: 3a9368bd31a7db61dad772b6493c397d34cad9ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 90033af2d5bdcb18f61bcab33b363b2c79befa9e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811062"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653836"
 ---
 # Remove-AzBotService
 
 ## SYNOPSIS
 Menghapus Bot Service dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/remove-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,15 +39,15 @@ Menghapus Bot Service dari grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus BotService Menurut Nama dan ResourceGroupName
+### Contoh 1: Hapus BotService Berdasarkan Nama dan ResourceGroupName
 ```powershell
 Remove-AzBotService -Name youri-bot -ResourceGroupName youriBotTest
 
 ```
 
-Menghapus BotService Menurut Nama dan ResourceGroupName
+Menghapus BotService Berdasarkan Nama dan ResourceGroupName
 
-### Contoh 2: Hapus BotService Menurut InputObject
+### Contoh 2: Hapus BotService Dengan InputObject
 ```powershell
 $getservice = Get-AzBotService -Name youriechobottest -ResourceGroupName youriBotTest
 Remove-AzBotService -InputObject $getservice
@@ -85,7 +88,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Bot.
 
 ```yaml
@@ -145,8 +148,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
