@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubListKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubListKey.md
-ms.openlocfilehash: 6e4c90a4f5ec20a5d0574ce8729545b0f58a4440
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0682309a9ce7fd4be9d6d028c1fd33f1e45447d4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803934"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737452"
 ---
 # Get-AzNotificationHubListKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi utama dan sekunder yang terkait dengan aturan otorisasi hub pemberitahuan.
+Mendapatkan string koneksi primer dan sekunder yang terkait dengan aturan otorisasi hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhublistkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ Get-AzNotificationHubListKey [-ResourceGroup] <String> [-Namespace] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNotificationHubListKey** mengembalikan string koneksi utama dan sekunder dari aturan otorisasi Shared Access Signature (SAS) hub pemberitahuan.
+Cmdlet **Get-AzNotificationHubListKey** mengembalikan string koneksi utama dan sekunder dari aturan otorisasi Tanda Tangan Akses Bersama (SAS) hub pemberitahuan.
 Aturan otorisasi mengelola hak pengguna ke hub.
-Setiap aturan menyertakan string koneksi utama dan sekunder.
+Setiap aturan menyertakan string koneksi primer dan sekunder.
 String koneksi (URI) ini melakukan hal berikut:
 - Arahkan pengguna ke sumber daya.
 - Sertakan token yang berisi parameter kueri.
@@ -36,19 +39,19 @@ Salah satu parameter ini, tanda tangan, digunakan untuk mengautentikasi pengguna
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan string koneksi utama dan sekunder untuk aturan otorisasi
+### Contoh 1: Mendapatkan string koneksi primer dan sekunder untuk aturan otorisasi
 ```powershell
 Get-AzNotificationHubListKey -Namespace "ContosoNamespace" -NotificationHub "ContosoInternalHub" -ResourceGroup "ContosoNotificationsGroup" -AuthorizationRule "ListenRule"
 ```
 
-Perintah ini mendapatkan string koneksi utama dan sekunder untuk aturan otorisasi ListenRule, aturan yang ditetapkan ke hub pemberitahuan ContosoInternalHub.
-Perintah harus menyertakan ruang nama hub dan grup sumber daya.
+Perintah ini mendapatkan string koneksi primer dan sekunder untuk aturan otorisasi ListenRule, aturan yang ditetapkan ke hub pemberitahuan ContosoInternalHub.
+Perintah harus menyertakan namespace hub dan grup sumber daya.
 
 ## PARAMETERS
 
 ### -AuthorizationRule
 Menentukan nama aturan autentikasi Tanda Tangan Akses Bersama (SAS).
-Aturan ini menentukan tipe akses yang dimiliki pengguna ke hub pemberitahuan.
+Aturan ini menentukan jenis akses yang dimiliki pengguna ke hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -78,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat hub pemberitahuan ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat hub pemberitahuan ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

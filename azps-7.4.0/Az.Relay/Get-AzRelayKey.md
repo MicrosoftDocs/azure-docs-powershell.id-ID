@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayKey.md
-ms.openlocfilehash: 9bdbf50c4bfe811881ed8b8405a307a721933aa3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ce999447974fdd581b18cb35c5ff4399f90aa295
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142674550"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734140"
 ---
 # Get-AzRelayKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi utama dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
+Mendapatkan string koneksi primer dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelaykey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-HybridCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRelayKey** mengembalikan string koneksi utama dan sekunder untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+Cmdlet **Get-AzRelayKey** mengembalikan string koneksi primer dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1: Ruang nama
+### Contoh 1: Namespace
 ```powershell
 Get-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 ```
@@ -81,7 +84,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-String koneksi primer dan sekunder ke entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
+String koneksi primer dan sekunder ke entitas Relay yang ditentukan (Namespace/WcfRelay/HybridConnection).
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

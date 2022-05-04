@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/sync-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Sync-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Sync-AzVirtualNetworkPeering.md
-ms.openlocfilehash: 56a9a29920b43a07f017df017a8e63f267ec867b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7571d002439336c92c19a9849ca7e0b9fa41f97f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312453"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718022"
 ---
 # Sync-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Perintah untuk menyinkronkan ruang alamat pada tautan peering jika jaringan virtual jarak jauh memiliki ruang alamat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/sync-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Sync-AzVirtualNetworkPeering -VirtualNetworkPeering <PSVirtualNetworkPeering>
 ```
 
 ## DESCRIPTION
-Memperbarui ruang alamat di jaringan virtual peered kini didukung. Namun, untuk menyinkronkan ruang alamat terbaru pada tautan peering, commandlet ini perlu dipanggil di jaringan virtual jarak jauh (peered). Ketika dipanggil, itu akan menyinkronkan ruang alamat pada tautan peering dengan ruang alamat terbaru dari jaringan virtual jarak jauh (peered).
+Memperbarui ruang alamat pada jaringan virtual yang di-peering sekarang didukung. Namun, untuk menyinkronkan ruang alamat terbaru pada tautan peering, commandlet ini perlu dipanggil pada jaringan virtual jarak jauh (peered). Ketika dipanggil, itu akan menyinkronkan ruang alamat pada tautan peering dengan ruang alamat terbaru dari jaringan virtual jarak jauh (peered).
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Memperbarui ruang alamat di jaringan virtual peered kini didukung. Namun, untuk 
 Sync-AzVirtualNetworkPeering -Name 'peering2' -VirtualNetworkName 'vnet1' -ResourceGroupName 'rg1'
 ```
 
-Menyinkronkan ruang alamat di peering, peering2 di jaringan virtual, vnet1 dalam grup sumber daya, rg1.
+Menyinkronkan ruang alamat pada peering, peering2 di jaringan virtual, vnet1 dalam grup sumber daya, rg1.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama peering jaringan virtual.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

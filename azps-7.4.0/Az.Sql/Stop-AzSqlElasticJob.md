@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/stop-Azsqlel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
-ms.openlocfilehash: d8b70feb8405a77f6bd004f06cdb3ae3813c4566
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4debb2176d5023cfb5d839502285899f26ede70c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995311"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717698"
 ---
 # Stop-AzSqlElasticJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan mengingat id eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,12 +42,12 @@ Stop-AzSqlElasticJob [-ParentResourceId] <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzSqlElasticJob menghentikan pekerjaan dengan eksekusi berjalan.
+Cmdlet Stop-AzSqlElasticJob menghentikan pekerjaan dengan eksekusi yang sedang berjalan.
 Mengembalikan status eksekusi pekerjaan saat ini
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan pekerjaan dengan menjalankan eksekusi pekerjaan
+### Contoh 1: Menghentikan pekerjaan dengan eksekusi pekerjaan yang sedang berjalan
 ```powershell
 $je = Get-AzSqlElasticJobExecution -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -JobName job1 -JobExecutionId dab0ebe8-fd52-42e9-bacf-e5f27577039b
 $je | Stop-AzSqlElasticJob
@@ -56,7 +59,7 @@ JobName JobExecutionId                       Lifecycle                    StartT
 job1    dab0ebe8-fd52-42e9-bacf-e5f27577039b WaitingForChildJobExecutions 6/1/2018 10:13:56 PM
 ```
 
-Menghentikan eksekusi pekerjaan yang berjalan dan mengembalikan statusnya saat ini
+Menghentikan eksekusi pekerjaan yang sedang berjalan dan mengembalikan statusnya saat ini
 
 ### Contoh 2
 
@@ -187,8 +190,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreOffer.md
-ms.openlocfilehash: b155a96999d6545a406ad8908840eadac82ddd8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e8bd5ca78297ccb9ebeec6b12df35af416c8d5e6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998479"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717230"
 ---
 # Get-AzMarketplacePrivateStoreOffer
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa penawaran bursa pribadi.
+Dapatkan satu atau beberapa penawaran toko privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMarketplacePrivateStoreOffer -PrivateStoreId <String> [-OfferId <String>]
 ```
 
 ## DESCRIPTION
-Dapatkan satu atau beberapa penawaran bursa pribadi dengan paket publik + pribadi yang ditambahkan di bawah lingkup penyewa. Jika id langganan ada, dapatkan satu atau beberapa penawaran bursa pribadi dengan paket pribadi hanya dalam lingkup langganan
+Dapatkan satu atau beberapa penawaran penyimpanan privat dengan paket publik + privat yang ditambahkan di bawah cakupan penyewa. Jika id langganan ada, dapatkan satu atau beberapa penawaran penyimpanan privat dengan paket privat hanya di bawah cakupan langganan
 ## EXAMPLES
 
 ### Contoh 1
@@ -61,7 +64,7 @@ Name                      : publisherid1.offerid1
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi + publik yang ditambahkan di bawah lingkup penyewa.
+Dapatkan penawaran toko privat dengan paket privat + publik yang ditambahkan di bawah cakupan penyewa.
 
 ### Contoh 2
 ```powershell
@@ -96,7 +99,7 @@ Name                      : publisherid1.offerid1
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi saja yang ditambahkan dalam lingkup langganan.
+Dapatkan penawaran penyimpanan privat dengan paket privat yang hanya ditambahkan di bawah cakupan langganan.
 
 ### Contoh 3
 ```powershell
@@ -118,7 +121,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi + publik yang telah ditambahkan di bawah lingkup penyewa.
+Dapatkan penawaran toko privat dengan paket privat + publik yang telah ditambahkan di bawah cakupan penyewa.
 
 ### Contoh 4
 ```powershell
@@ -140,7 +143,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi saja yang telah ditambahkan di bawah lingkup penyewa.
+Dapatkan penawaran penyimpanan privat dengan paket privat yang hanya ditambahkan di bawah cakupan penyewa.
 
 
 ## PARAMETERS
@@ -206,11 +209,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

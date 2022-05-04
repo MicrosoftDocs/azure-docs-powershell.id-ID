@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
-ms.openlocfilehash: 5448923c15ff7eddfc007ed38315f05cf6e68044
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4a1eaa80d55c48be5715f652f9cccc9c75f8a08e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143268227"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723636"
 ---
 # Restore-AzWebAppBackup
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/restore-azwebappbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Restore-AzWebAppBackup [-AppServicePlan <String>] [-Databases <DatabaseBackupSet
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzWebAppBackup** memulihkan Cadangan Azure Web App.
+Cmdlet **Restore-AzWebAppBackup** memulihkan Azure Web App Backup.
 
 ## EXAMPLES
 
@@ -44,11 +47,11 @@ Cmdlet **Restore-AzWebAppBackup** memulihkan Cadangan Azure Web App.
 Restore-AzWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StorageAccountUrl "https://storageaccount.file.core.windows.net" -BlobName "myBlob"
 ```
 
-Memulihkan cadangan aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS dalam blob "myBlob" yang terletak di https://storageaccount.file.core.windows.net
+Memulihkan cadangan aplikasi yang ditentukan ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS dalam blob "myBlob" yang terletak di https://storageaccount.file.core.windows.net
 
 ### Contoh 2
 
-Cmdlet Restore-AzWebAppBackup memulihkan Cadangan Azure Web App. (autogenerasi)
+Cmdlet Restore-AzWebAppBackup memulihkan Azure Web App Backup. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -87,8 +90,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Databases
-Database tipe DatabaseBackupSetting[]
+### -Database
+Database jenis DatabaseBackupSetting[]
 
 ```yaml
 Type: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting[]
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreConflictingHostNames
-Opsi Abaikan Nama Host yang Berkonflik
+Abaikan Opsi HostNames yang Berkonflik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-URL Akun Storage
+Url Akun Storage
 
 ```yaml
 Type: System.String
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -233,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

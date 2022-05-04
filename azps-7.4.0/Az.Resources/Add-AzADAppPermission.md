@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADAppPermission.md
-ms.openlocfilehash: 3dad627aa3ce69800d89ef142ab14a433418625e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bcfdbca03504584cb0c9498a51a91d8c4bfe1d98
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935605"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739521"
 ---
 # Add-AzADAppPermission
 
 ## SYNOPSIS
 Menambahkan izin API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/add-azadapppermission) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,32 +36,32 @@ Add-AzADAppPermission -ApiId <Guid> -PermissionId <String> [-Type <String>] -App
 
 ## DESCRIPTION
 Menambahkan izin API.
-Daftar izin API yang tersedia adalah properti aplikasi yang diwakili oleh prinsipal layanan dalam penyewa.
+Daftar izin API yang tersedia adalah properti aplikasi yang diwakili oleh perwakilan layanan dalam penyewa.
 
 Misalnya, untuk mendapatkan izin yang tersedia untuk API Graph:
 * Azure Active Directory Graph:`Get-AzAdServicePrincipal -ApplicationId 00000002-0000-0000-c000-000000000000`
-* Microsoft Graph:`Get-AzAdServicePrincipal -ApplicationId 00000003-0000-0000-c000-000000000000`
+* Microsoft Graph: `Get-AzAdServicePrincipal -ApplicationId 00000003-0000-0000-c000-000000000000`
 
 Izin aplikasi di `appRoles` bawah properti sesuai dengan `Role` di `-Type`.
-Izin yang didelegasikan di `oauth2Permissions` bawah properti terkait dengan `Scope` di .`-Type`
+Izin yang didelegasikan di `oauth2Permissions` bawah properti sesuai dengan `Scope` di `-Type`.
 
-Pengguna perlu memberikan persetujuan melalui Portal Azure jika izin memerlukan persetujuan admin karena Azure PowerShell belum mendukungnya.
+Pengguna perlu memberikan persetujuan melalui Portal Microsoft Azure jika izin memerlukan persetujuan admin karena Azure PowerShell belum mendukungnya.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan Izin API
+### Contoh 1: Menambahkan Izin API
 ```powershell
 Add-AzADAppPermission -ObjectId 9cc74d5e-1162-4b90-8696-65f3d6a3f7d0 -ApiId 00000003-0000-0000-c000-000000000000 -PermissionId 5f8c59db-677d-491f-a6b8-5f174b11ec1d
 ```
 
 Menambahkan izin yang didelegasikan "Group.Read.All" dari Microsoft Graph API ke Aplikasi AD (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
 
-### Contoh 2: Tambahkan Izin API
+### Contoh 2: Menambahkan Izin API
 ```powershell
 Add-AzADAppPermission -ObjectId 9cc74d5e-1162-4b90-8696-65f3d6a3f7d0 -ApiId 00000003-0000-0000-c000-000000000000 -PermissionId 1138cb37-bd11-4084-a2b7-9f71582aeddb -Type Role
 ```
 
-Tambahkan izin aplikasi "Device.ReadWrite.All" dari Microsoft Graph API ke Ad Application (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
+Tambahkan izin aplikasi "Device.ReadWrite.All" dari Microsoft Graph API ke Aplikasi AD (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Pengidentifikasi unik di Azure AD.
+Pengidentifikasi unik dalam Azure AD.
 
 ```yaml
 Type: System.Guid
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionId
-Pengidentifikasi unik untuk salah satu contoh oauth2PermissionScopes atau appRole yang diekspos oleh aplikasi sumber daya.
+Pengidentifikasi unik untuk salah satu instans oauth2PermissionScopes atau appRole yang diekspos aplikasi sumber daya.
 
 ```yaml
 Type: System.String
@@ -138,8 +141,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan apakah properti id mereferensikan oauth2PermissionScopes(Scope, delegated permission) atau appRole(Role, application permission).
+### -Type
+Menentukan apakah properti id mereferensikan oauth2PermissionScopes(Cakupan, izin yang didelegasikan) atau appRole(Peran, izin aplikasi).
 
 ```yaml
 Type: System.String
@@ -153,8 +156,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlvir
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlVirtualCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlVirtualCluster.md
-ms.openlocfilehash: a9ccda71fcde13fae510dd3f2d66bd849b5c95a7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 218ac24dd5fd925846cf7a3a91a5a05e848869fb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738252"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715304"
 ---
 # Get-AzSqlVirtualCluster
 
 ## SYNOPSIS
 Mengembalikan informasi tentang Azure SQL Virtual Cluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlvirtualcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlVirtualCluster [-ResourceId] <String> [-DefaultProfile <IAzureContextCo
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlVirtualCluster** mengembalikan informasi tentang satu atau beberapa Azure SQL Kluster Virtual.
-Tentukan nama kluster virtual untuk melihat informasi bagi kluster tersebut saja.
+Tentukan nama kluster virtual untuk melihat informasi hanya untuk kluster tersebut.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ SubnetId           : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourc
 
 Perintah ini mendapatkan informasi tentang semua Kluster Virtual yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 2: Dapatkan informasi tentang kluster virtual tertentu
+### Contoh 2: Mendapatkan informasi tentang kluster virtual tertentu
 ```powershell
 Get-AzSqlVirtualCluster -Name VirtualCluster1 -ResourceGroupName ResourceGroup01
 ```
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster virtual.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek instans untuk mendapatkan
+Id sumber daya objek instans yang akan didapatkan
 
 ```yaml
 Type: System.String
@@ -163,11 +166,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

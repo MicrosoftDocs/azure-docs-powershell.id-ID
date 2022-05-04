@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
-ms.openlocfilehash: 07a384d6bb697dc90d7b1cece4cf565971213ea2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 53e69591c9baebde21cd6bd2c75a68830293daef
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273987"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725058"
 ---
 # New-AzServiceBusSubscription
 
 ## SYNOPSIS
 Membuat langganan ke topik Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebussubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzServiceBusSubscription [-ResourceGroupName] <String> [-Namespace] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusSubscription** membuat langganan baru untuk topik Bus Layanan yang ditentukan.
+Cmdlet **New-AzServiceBusSubscription** membuat langganan baru ke topik Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -55,12 +58,12 @@ Status                                    : Active
 UpdatedAt                                 : 1/20/2017 3:18:54 AM
 ```
 
-Membuat langganan `SB-TopicSubscription-Example1` untuk topik `SB-Topic_exampl1`Bus Layanan yang ditentukan.
+Membuat langganan `SB-TopicSubscription-Example1` untuk topik `SB-Topic_exampl1`Bus Layanan yang ditentukan .
 
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) diam, setelah itu langganan dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval idle [TimeSpan](https://msdn.microsoft.com/library/system.timespan.aspx) , setelah itu langganan dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetteringOnFilterEvaluationExceptions
-Nilai yang menunjukkan apakah langganan memiliki dukungan surat mati pada pengecualian evaluasi filter.
+Nilai yang menunjukkan apakah langganan memiliki dukungan surat gagal pada pengecualian evaluasi filter.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetteringOnMessageExpiration
-Surat Mati Pada Pesan Kedaluwarsa
+Surat Gagal Pada Kedaluwarsa Pesan
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMessageTimeToLive
-Jangka waktu untuk nilai langsung.
+Rentang waktu untuk nilai langsung.
 Ini adalah durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirim ke Bus Layanan.
 Ini adalah nilai default yang digunakan ketika TimeToLive tidak diatur pada pesan itu sendiri.
 Untuk Standar = Timespan.Max dan Basic = 14 hari
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBatchedOperations
-Aktifkan Operasi Batched - nilai yang menunjukkan apakah operasi batch sisi server diaktifkan
+Aktifkan Operasi Batch - nilai yang menunjukkan apakah operasi batch sisi server diaktifkan
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -LockDuration
-Durasi Penguncian
+Durasi Kunci
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -MaxDeliveryCount
 MaxDeliveryCount - jumlah pengiriman maksimum.
-Pesan akan tenggat waktu otomatis setelah jumlah pengiriman ini.
+Pesan secara otomatis mengalami deadletter setelah jumlah pengiriman ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -215,8 +218,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Langganan
+### -Name
+Nama langganan
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresSession
-MemerlukanSession - nilai yang mengindikasikan jika antrean ini memerlukan deteksi duplikat.
+RequiresSession - nilai yang menunjukkan apakah antrean ini memerlukan deteksi duplikat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -291,8 +294,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -331,7 +334,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

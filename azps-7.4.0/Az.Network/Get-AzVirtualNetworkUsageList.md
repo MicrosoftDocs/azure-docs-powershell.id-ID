@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkUsageList.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkUsageList.md
-ms.openlocfilehash: 49f2bddb51d1cb10a88a400d903a91add59059c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4168c83c8fdc8def4e662d84899dbf68bb4665fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679086"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739882"
 ---
 # Get-AzVirtualNetworkUsageList
 
 ## SYNOPSIS
 Mendapatkan penggunaan jaringan virtual saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkusagelist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Limit        : 251
 Unit         : Count
 ```
 
-Mendapatkan nilai penggunaan saat ini per subnet untuk jaringan virtual tergunakan.
+Mendapatkan nilai penggunaan saat ini per subnet untuk jaringan virtual usagetest.
 
 ## PARAMETERS
 
@@ -67,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama jaringan maya untuk memperlihatkan penggunaan.
+### -Name
+Menentukan nama jaringan virtual yang akan ditampilkan penggunaannya.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat jaringan maya berada.
+Menentukan nama grup sumber daya tempat jaringan virtual berada.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

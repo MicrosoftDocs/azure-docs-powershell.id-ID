@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricReliability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricReliability.md
-ms.openlocfilehash: aa7d5115578ac3ad18a7685e788ac9657097a8f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7ceeafd57d25f58df649b73142168e3c0cd5e769
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739044"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721818"
 ---
 # Update-AzServiceFabricReliability
 
 ## SYNOPSIS
-Perbarui tingkat keandalan tipe node utama dalam kluster.
+Perbarui tingkat keandalan jenis node utama dalam kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricreliability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzServiceFabricReliability [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Gunakan **Update-AzServiceFabricReliability** untuk memperbarui keandalan tipe node utama dalam kluster.
+Gunakan **Update-AzServiceFabricReliability** untuk memperbarui keandalan jenis node utama dalam kluster.
 
 ## EXAMPLES
 
@@ -35,11 +38,11 @@ Gunakan **Update-AzServiceFabricReliability** untuk memperbarui keandalan tipe n
 Update-AzServiceFabricReliability -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -ReliabilityLevel Silver
 ```
 
-Perintah ini mengubah tingkat keandalan tipe simpul utama menjadi perak.
+Perintah ini mengubah tingkat keandalan dari jenis node utama menjadi silver.
 
 ### Contoh 2
 
-Perbarui tingkat keandalan tipe node utama dalam kluster. (autogenerasi)
+Perbarui tingkat keandalan jenis node utama dalam kluster. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -51,7 +54,7 @@ Update-AzServiceFabricReliability -AutoAddNode -Name 'Contoso01SFCluster' -Relia
 ## PARAMETERS
 
 ### -AutoAddNode
-Menambahkan hitungan simpul secara otomatis saat mengubah keandalan
+Menambahkan jumlah simpul secara otomatis saat mengubah keandalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Tentukan nama tipe simpul Service Fabric. Pengaturan ini hanya diperlukan jika terdapat beberapa tipe simpul utama.
+Tentukan nama jenis simpul Service Fabric. Pengaturan ini hanya diperlukan jika ada beberapa jenis node utama.
 
 ```yaml
 Type: System.String
@@ -110,7 +113,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -KeandalanLevel
+### -ReliabilityLevel
 Tingkat keandalan
 
 ```yaml
@@ -141,8 +144,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,13 +176,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ServiceFabric.Models.ReliabilitasLevel
+### Microsoft.Azure.Commands.ServiceFabric.Models.ReliabilityLevel
 
 ### System.Management.Automation.SwitchParameter
 

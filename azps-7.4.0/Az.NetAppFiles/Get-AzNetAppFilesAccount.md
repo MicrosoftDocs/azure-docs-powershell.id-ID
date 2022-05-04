@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesAccount.md
-ms.openlocfilehash: d10ce6ea8bc91564152760a5e0fb564dd8a2ffda
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 49e778d2bd3c21ed79cd67c87610eae9e23d8e1a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119367"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712066"
 ---
 # Get-AzNetAppFilesAccount
 
 ## SYNOPSIS
 Mendapatkan detail akun Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Get-AzNetAppFilesAccount** mendapatkan detail akun ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan akun ANF
+### Contoh 1: Mendapatkan akun ANF
 ```powershell
 Get-AzNetAppFilesAccount -ResourceGroupName "MyRG" -Name "MyAnfAccount"
 ```
@@ -49,7 +52,7 @@ Tags              :
 ProvisioningState : Succeeded
 ```
 
-Perintah ini mendapatkan akun bernama MyanfAccount.
+Perintah ini mendapatkan akun bernama MyAnfAccount.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama akun ANF
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

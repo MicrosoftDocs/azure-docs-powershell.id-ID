@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/restart-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlFlexibleServer.md
-ms.openlocfilehash: ca40ee4697744c5cb487f16c147781856211387d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c7f8ade2cf08223be42836d321c579b72c8ea8cf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283059"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711130"
 ---
 # Restart-AzMySqlFlexibleServer
 
 ## SYNOPSIS
-Memulai ulang server.
+Menghidupkan ulang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/restart-azmysqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Restart-AzMySqlFlexibleServer -Name <String> -ResourceGroupName <String> [-Subsc
  [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Restart
+### Mulai ulang
 ```
 Restart-AzMySqlFlexibleServer -Name <String> -ResourceGroupName <String> -Parameter <IServerRestartParameter>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Mulai UlangIdentitas
+### RestartViaIdentity
 ```
 Restart-AzMySqlFlexibleServer -InputObject <IMySqlIdentity> -Parameter <IServerRestartParameter>
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -47,36 +50,36 @@ Restart-AzMySqlFlexibleServer -InputObject <IMySqlIdentity> [-MaxFailoverSecond 
 ```
 
 ## DESCRIPTION
-Memulai ulang server.
+Menghidupkan ulang server.
 
 ## EXAMPLES
 
-### Contoh 1: Hidupkan ulang server menurut nama sumber daya
+### Contoh 1: Menghidupkan ulang server menurut nama sumber daya
 ```powershell
 Restart-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -Name mysql-test
 ```
 
-Mulai ulang server menurut nama
+Menghidupkan ulang server berdasarkan nama
 
-### Contoh 2: Hidupkan ulang server menurut identitas
+### Contoh 2: Menghidupkan ulang server menurut identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/flexibleServers/mysql-test/restart"
 Restart-AzMySqlFlexibleServer -InputObject $ID
 ```
 
-Mulai ulang server menurut identitas
+Menghidupkan ulang server menurut identitas
 
-### Contoh 2: Hidupkan ulang server dengan failover
+### Contoh 2: Menghidupkan ulang server dengan failover
 ```powershell
 Restart-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -Name mysql-test -RestartWithFailover Enabled
 ```
 
-Mulai ulang server dengan failover
+Menghidupkan ulang server dengan failover
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxFailoverSecond
-Waktu failover maksimum yang diperbolehkan dalam detik.
+Waktu failover maksimum yang diizinkan dalam detik.
 
 ```yaml
 Type: System.Int32
@@ -135,7 +138,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server.
 
 ```yaml
@@ -166,8 +169,8 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter mulai ulang server.
-Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Parameter hidupkan ulang server.
+Untuk membuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.Api20210501.IServerRestartParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartWithFailover
-Apakah server siaga gagal atau tidak ketika memulai ulang server dengan ketersediaan tinggi diaktifkan.
+Apakah failover ke server siaga saat memulai ulang server dengan ketersediaan tinggi diaktifkan atau tidak.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.EnableStatusEnum
@@ -242,8 +245,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -302,15 +305,15 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
-PARAMETER <IServerRestartParameter>: Parameter restart server.
-  - `[MaxFailoverSecond <Int32?>]`: Waktu failover maksimum yang diperbolehkan dalam detik.
-  - `[RestartWithFailover <EnableStatusEnum?>]`: Apakah failover ke server siaga atau tidak saat memulai ulang server dengan ketersediaan tinggi diaktifkan.
+PARAMETER <IServerRestartParameter>: Parameter hidupkan ulang server.
+  - `[MaxFailoverSecond <Int32?>]`: Waktu failover maksimum yang diizinkan dalam detik.
+  - `[RestartWithFailover <EnableStatusEnum?>]`: Apakah failover ke server siaga saat memulai ulang server dengan ketersediaan tinggi diaktifkan atau tidak.
 
 ## RELATED LINKS
 

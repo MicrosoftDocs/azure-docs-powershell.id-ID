@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzRemoteRenderingAccount.md
-ms.openlocfilehash: edf8f31af9a93c57c3529d2ae98598d14d6f6a6e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e5d2c9f25f6e0cd99a0d8ea9fbe8b294a168958e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680994"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739972"
 ---
 # Remove-AzRemoteRenderingAccount
 
 ## SYNOPSIS
 Hapus Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/remove-azremoterenderingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzRemoteRenderingAccount -InputObject <PSRemoteRenderingAccount> [-PassTh
 ```
 
 ## DESCRIPTION
-Hapus Akun Remote Rendering tertentu dari Grup Langganan dan Sumber Daya tertentu.
+Hapus Akun Remote Rendering tertentu dari Langganan dan Grup Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ Hapus Akun Remote Rendering tertentu dari Grup Langganan dan Sumber Daya tertent
 Remove-AzRemoteRenderingAccount -ResourceGroup rg1 -Name example
 ```
 
-Hapus "contoh" Akun Remote Rendering dari Langganan dan Grup Sumber Daya saat ini "rg1".
+Hapus "contoh" Akun Remote Rendering dari Langganan saat ini dan Grup Sumber Daya "rg1".
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -96,7 +99,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Remote Rendering Nama Akun.
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya akun Remote Rendering.
+ID Sumber Daya Akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

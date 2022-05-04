@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineActionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineActionObject.md
-ms.openlocfilehash: 88f041d3498cd3a0b45f0a4f24e3aaac730f5ef3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e01943d6a57029bdcd4b65fa1d03d7286fcce0e5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286371"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724590"
 ---
 # New-AzFrontDoorRulesEngineActionObject
 
 ## SYNOPSIS
 Buat objek PSRulesEngineAction untuk membuat aturan mesin aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengineactionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ New-AzFrontDoorRulesEngineActionObject
 ## DESCRIPTION
 Buat objek PSRulesEngineAction untuk membuat aturan mesin aturan. 
 
-Gunakan cmdlet "New-AzFrontDoorHeaderActionObject" untuk membuat PSHeaderObjects untuk masuk ke parameter "-RequestHeaderActions" dan "-ResponseHeaderActions".
+Gunakan cmdlet "New-AzFrontDoorHeaderActionObject" untuk membuat PSHeaderObjects untuk meneruskan ke parameter "-RequestHeaderActions" dan "-ResponseHeaderActions".
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ RequestHeaderActions ResponseHeaderActions    RouteConfigurationOverride
 
 ```
 
-Buat tindakan mesin aturan yang menambahkan nilai header respons dan perlihatkan cara menampilkan properti tindakan mesin aturan yang dibuat.
+Buat tindakan mesin aturan yang menambahkan nilai header respons dan tunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
 
 ### Contoh 2
 ```powershell
@@ -103,7 +106,7 @@ DynamicCompression           : Disabled
 EnableCaching                : True
 ```
 
-Buat tindakan mesin aturan yang meneruskan permintaan ke kumpulan backend speicific dan perlihatkan cara menampilkan properti tindakan mesin aturan yang dibuat.
+Buat tindakan mesin aturan yang meneruskan permintaan ke kumpulan backend speicific dan tunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
 
 ### Contoh 3
 ```powershell
@@ -125,7 +128,7 @@ CustomQueryString :
 
 ```
 
-Buat tindakan mesin aturan yang mengalihkan permintaan ke host lain dan perlihatkan cara menampilkan properti tindakan mesin aturan yang dibuat.
+Buat tindakan mesin aturan yang mengalihkan permintaan ke host lain dan menunjukkan cara melihat properti tindakan mesin aturan yang dibuat.
 
 
 ## PARAMETERS
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ### -CustomFragment
 Fragmen untuk ditambahkan ke URL pengalihan.
 Fragmen adalah bagian dari URL yang muncul setelah #.
-Jangan sertakan kesalahan #.
+Jangan sertakan #.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomHost
-Host untuk mengalihkan.
+Host untuk dialihkan.
 Biarkan kosong untuk menggunakan host masuk sebagai host tujuan.
 
 ```yaml
@@ -213,10 +216,10 @@ Accept wildcard characters: False
 
 ### -CustomQueryString
 Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
-Mengatur nilai ini akan menggantikan string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
+Mengatur nilai ini akan menggantikan string kueri yang ada; biarkan kosong untuk mempertahankan string kueri masuk.
 String kueri harus dalam \<key\>=\<value\> format.
 Yang pertama?
-dan & akan ditambahkan secara otomatis, jadi jangan sertakan di bagian depan, tetapi pisahkan beberapa string kueri dengan &.
+dan & akan ditambahkan secara otomatis, jadi jangan sertakan di depan, tetapi pisahkan beberapa string kueri dengan &.
 
 ```yaml
 Type: System.String
@@ -246,8 +249,8 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicCompression
-Apakah mengaktifkan pemadatan dinamis untuk konten singgahan.
-Nilai default diaktifkan
+Apakah akan mengaktifkan pemadatan dinamis untuk konten yang di-cache.
+Nilai default Diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -263,8 +266,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCaching
-Apakah akan mengaktifkan cache untuk rute ini.
-Nilai default adalah false
+Apakah akan mengaktifkan penembolokan untuk rute ini.
+Nilai defaultnya adalah false
 
 ```yaml
 Type: System.Boolean
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardingProtocol
-Protokol yang akan digunakan aturan ini ketika meneruskan lalu lintas ke backend.
+Protokol yang akan digunakan aturan ini saat meneruskan lalu lintas ke backend.
 Nilai defaultnya adalah MatchRequest
 
 ```yaml
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontDoorName
-Nama Pintu Depan tempat aturan perutean ini berada.
+Nama Front Door tempat aturan perutean ini berada.
 
 ```yaml
 Type: System.String
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectType
-Tipe pengalihan aturan akan digunakan saat mengalihkan lalu lintas.
+Jenis pengalihan yang akan digunakan aturan saat mengalihkan lalu lintas.
 Nilai Default Dipindahkan
 
 ```yaml
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestHeaderAction
-Daftar tindakan header untuk diterapkan dari permintaan dari AFD ke asal.
+Daftar tindakan header yang akan diterapkan dari permintaan dari AFD ke asal.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.FrontDoor.Models.PSHeaderAction]
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResponseHeaderAction
-Daftar tindakan header untuk diterapkan dari respons dari AFD ke klien.
+Daftar tindakan header yang akan diterapkan dari respons dari AFD ke klien.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.FrontDoor.Models.PSHeaderAction]
@@ -403,11 +406,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

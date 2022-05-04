@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationSecurityGroup.md
-ms.openlocfilehash: 40c465643d305f00fba57f21cd82d7dc12c28a1d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c22219ba03ea066b361c468ac7fcf9b284763667
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740836"
 ---
 # New-AzApplicationSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationsecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,12 +37,12 @@ Cmdlet **New-AzApplicationSecurityGroup** membuat grup keamanan aplikasi.
 New-AzApplicationSecurityGroup -ResourceGroupName "MyResourceGroup" -Name "MyApplicationSecurityGroup" -Location "West US"
 ```
 
-Contoh ini membuat grup keamanan aplikasi tanpa asosiasi. Setelah dibuat, konfigurasi IP di antarmuka jaringan dapat disertakan dalam grup. Aturan keamanan juga dapat merujuk ke grup sebagai sumber atau tujuannya.
+Contoh ini membuat kelompok keamanan aplikasi tanpa asosiasi. Setelah dibuat, konfigurasi IP di antarmuka jaringan dapat disertakan dalam grup. Aturan keamanan juga dapat merujuk ke grup sebagai sumber atau tujuannya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama grup keamanan aplikasi.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya grup keamanan aplikasi.
+Nama grup sumber daya dari grup keamanan aplikasi.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -143,8 +146,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -197,7 +200,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNetworkSecurityRuleConfig](./New-AzNetworkSecurityRuleConfig.md)
 
-[Add-AzNetworkSecurityRuleConfig](./Add-AzNetworkSecurityRuleConfig.md)
+[Tambahkan-AzNetworkSecurityRuleConfig](./Add-AzNetworkSecurityRuleConfig.md)
 
 [Set-AzNetworkSecurityRuleConfig](./Set-AzNetworkSecurityRuleConfig.md)
 

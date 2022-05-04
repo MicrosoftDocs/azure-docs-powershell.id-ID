@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusQueue.md
-ms.openlocfilehash: 039447ec1979090aba335b9073fa8578862294f9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 20ff66f2271aed4ff2bf63d3f270dfe5909c08f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800748"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731696"
 ---
 # Get-AzServiceBusQueue
 
 ## SYNOPSIS
 Mengembalikan deskripsi untuk antrean Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebusqueue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,14 +70,14 @@ Mengembalikan deskripsi antrean.
 Get-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 ```
 
-Mengembalikan daftar antrean untuk ruang nama tertentu, Secara default 100 antrean akan dikembalikan, jika lebih dari 100 antrean yang akan dikembalikan, silakan gunakan -MaxCount Parameter.
+Mengembalikan daftar antrean untuk namespace layanan tertentu, Secara default 100 antrean akan dikembalikan, jika lebih dari 100 antrean yang akan dikembalikan, silakan gunakan Parameter -MaxCount.
 
 ### Contoh 3
 ```powershell
 Get-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -MaxCount 150
 ```
 
-Mengembalikan daftar 150 antrean pertama untuk ruang nama tertentu
+Mengembalikan daftar 150 antrean pertama untuk namespace yang diberikan
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Antrean
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

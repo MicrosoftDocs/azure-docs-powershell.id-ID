@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayNamespace.md
-ms.openlocfilehash: f0bd33cb19a13fbfb08d78a3369349918aff914c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6b0b347deeebd64313fdbc0d647077370467f8ce
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867942"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716654"
 ---
 # Get-AzRelayNamespace
 
 ## SYNOPSIS
-Mendapatkan deskripsi untuk ruang nama Relay tertentu dalam grup sumber daya.
+Mendapatkan deskripsi untuk namespace Relay yang ditentukan dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelaynamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRelayNamespace [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRelayNamespace** mendapatkan deskripsi untuk ruang nama Relay tertentu dalam grup sumber daya.
+Cmdlet **Get-AzRelayNamespace** mendapatkan deskripsi untuk namespace Relay yang ditentukan dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Name               : TestNameSpace-Relay1
 Type               : Microsoft.Relay/namespaces
 ```
 
-Mengembalikan deskripsi ruang nama Relai yang ditentukan.
+Mengembalikan deskripsi namespace layanan Relay yang ditentukan.
 
 ## PARAMETERS
 
@@ -66,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Relai Nama Ruang Nama.
+### -Name
+Nama Namespace Layanan Relai.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

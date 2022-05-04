@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 6ed9443748bce6fe47a878f0b57102e0cb5d6498
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 527b4e21ce2f228347bccb99a4748ba2e960c2df
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273807"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725022"
 ---
 # Get-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
-Dapatkan detail sumber daya tipe simpul terkelola.
+Dapatkan detail sumber daya jenis node terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] 
 ```
 
 ## DESCRIPTION
-Dapatkan detail sumber daya tipe simpul terkelola.
+Dapatkan detail sumber daya jenis node terkelola.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ $NodeTypeName = "nt1"
 Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -Name $NodeTypeName
 ```
 
-Dapatkan detail tipe simpul.
+Dapatkan detail jenis node.
 
 ### Contoh 2
 ```powershell
@@ -52,7 +55,7 @@ $rgName = "testRG"
 Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName
 ```
 
-Dapatkan daftar tipe node di bawah kluster yang ditentukan.
+Dapatkan daftar jenis node di bawah kluster yang ditentukan.
 
 ## PARAMETERS
 
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe simpul.
+### -Name
+Tentukan nama jenis simpul.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: 2bf81158b0e5b4e9170d98e9b46c61910d0d8d0d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5bcf8d89a7706d39b0edbd0472124f94aa85eca9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805158"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724248"
 ---
 # New-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muatan.
+Membuat konfigurasi kumpulan alamat backend untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ New-AzLoadBalancerBackendAddressPoolConfig -Name <String> [-TunnelInterface <PST
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerBackendAddressPoolConfig** membuat konfigurasi kumpulan alamat backend untuk penyeimbang muat Azure.
+Cmdlet **New-AzLoadBalancerBackendAddressPoolConfig** membuat konfigurasi kumpulan alamat backend untuk load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi kumpulan alamat backend untuk penyeimbang muat
+### Contoh 1: Membuat konfigurasi kumpulan alamat backend untuk load balancer
 ```powershell
 New-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02"
 ```
 
 Perintah ini membuat konfigurasi kumpulan alamat backend bernama BackendAddressPool02 untuk load balancer.
 
-### Contoh 2: Membuat konfigurasi kumpulan alamat backend dengan antarmuka tunnel untuk penyeimbang muatan
+### Contoh 2: Membuat konfigurasi kumpulan alamat backend dengan antarmuka terowongan untuk load balancer
 ```powershell
 ## create with Gateway LoadBalancer TunnelInterface configuration
 $tunnelInterface1 = New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig -Protocol 'Vxlan' -Type 'Internal' -Port 2000 -Identifier 800
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi kumpulan alamat untuk dibuat.
+### -Name
+Menentukan nama konfigurasi kumpulan alamat yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -92,8 +95,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

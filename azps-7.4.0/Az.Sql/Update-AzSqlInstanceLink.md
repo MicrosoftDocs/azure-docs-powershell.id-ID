@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlInstanceLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlInstanceLink.md
-ms.openlocfilehash: d757dc82770f7d4d855f59e8adf0896da4ea005c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0bf6b42834c5d1409ef93ad26e6bc9665420c878
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271449"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732988"
 ---
 # Update-AzSqlInstanceLink
 
 ## SYNOPSIS
 Memperbarui properti tautan instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlinstancelink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ LastHardenedLsn                :
 
 Perintah ini mengatur mode replikasi tautan instans ke "Sinkronkan".
 
-### Contoh 2: Mengatur mode replikasi tautan instans ke Async
+### Contoh 2: Mengatur mode replikasi tautan instans ke Asinkron
 ```powershell
 PS C:\> Update-AzSqlInstanceLink -ResourceGroupName "ResourceGroup1" -InstanceName "ManagedInstance01" -Name "Link01" -ReplicationMode "Async"
 ResourceGroupName              : ResourceGroup01
@@ -94,7 +97,7 @@ LastHardenedLsn                :
 
 Perintah ini mengatur mode replikasi tautan instans ke "Aync".
 
-### Contoh 3: Mengatur mode replikasi tautan instans menurut pengidentifikasi sumber dayanya
+### Contoh 3: Mengatur mode replikasi tautan instans oleh pengidentifikasi sumber dayanya
 ```powershell
 PS C:\> Update-AzSqlInstanceLink -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance01/distributedAvailabilityGroups/Link01" -ReplicationMode "Async"
 ResourceGroupName              : ResourceGroup01
@@ -114,9 +117,9 @@ LinkState                      : Copying
 LastHardenedLsn                :
 ```
 
-Perintah ini mengatur mode replikasi tautan instans ke "Sinkronkan" menurut pengidentifikasi sumber dayanya.
+Perintah ini mengatur mode replikasi tautan instans ke "Sinkronkan" oleh pengidentifikasi sumber dayanya.
 
-### Contoh 4: Atur mode replikasi tautan instans oleh objek PowerShell-nya
+### Contoh 4: Mengatur mode replikasi tautan instans oleh objek PowerShell-nya
 ```powershell
 PS C:\> $managedInstanceLink = Get-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01" 
 PS C:\> Update-AzSqlInstanceLink -InputObject $managedInstanceLink -ReplicationMode "Async"
@@ -137,9 +140,9 @@ LinkState                      : Copying
 LastHardenedLsn                :
 ```
 
-Perintah ini mengatur mode replikasi tautan instans ke "Async" menggunakan objek input.
+Perintah ini mengatur mode replikasi tautan instans ke "Asinkron" menggunakan objek input.
 
-### Contoh 5: Atur mode replikasi tautan instans dengan memutasi objeknya
+### Contoh 5: Atur mode replikasi tautan instans dengan membidik objeknya
 ```powershell
 PS C:\> $managedInstanceLink = Get-AzSqlInstanceLink -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01" -Name "Link01" 
 PS C:\> $managedInstanceLink.ReplicationMode = "Async"
@@ -184,7 +187,7 @@ LinkState                      : Copying
 LastHardenedLsn                :
 ```
 
-Perintah ini mengatur mode replikasi tautan instans ke "Async" menggunakan objek instans induk.
+Perintah ini mengatur mode replikasi tautan instans ke "Asinkron" menggunakan objek instans induk.
 
 ## PARAMETERS
 
@@ -248,7 +251,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama tautan instans.
 
 ```yaml
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 
 ### -ReplicationMode
 Nilai mode replikasi.
-Nilai yang memungkinkan termasuk 'Sinkronkan' dan 'Async'.
+Nilai yang mungkin termasuk 'Sinkronkan' dan 'Asinkron'.
 
 ```yaml
 Type: System.String
@@ -321,8 +324,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

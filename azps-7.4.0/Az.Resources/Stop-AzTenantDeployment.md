@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzTenantDeployment.md
-ms.openlocfilehash: 4a469e258232cc2019a17ff39aebc987115414d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b73194ec9d4592a5c38a385ea7a42819b0eced3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739566"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711490"
 ---
 # Stop-AzTenantDeployment
 
 ## SYNOPSIS
-Membatalkan penyebaran yang berjalan di lingkup penyewa
+Membatalkan penyebaran yang sedang berjalan di cakupan penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/stop-aztenantdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,10 +41,10 @@ Stop-AzTenantDeployment -InputObject <PSDeployment> [-PassThru] [-Pre]
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzTenantDeployment** membatalkan penyebaran yang telah dimulai tetapi tidak selesai pada lingkup penyewa saat ini.
-Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status yang diselesaikan, seperti Provisioned atau Failed.
+Cmdlet **Stop-AzTenantDeployment** membatalkan penyebaran yang telah dimulai tetapi tidak selesai pada cakupan penyewa saat ini.
+Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Provisi, dan bukan status selesai, seperti Disediakan atau Gagal.
 
-Untuk membuat penyebaran di lingkup penyewa, gunakan cmdlet New-AzTenantDeployment.
+Untuk membuat penyebaran di cakupan penyewa, gunakan cmdlet New-AzTenantDeployment.
 
 ## EXAMPLES
 
@@ -50,14 +53,14 @@ Untuk membuat penyebaran di lingkup penyewa, gunakan cmdlet New-AzTenantDeployme
 Stop-AzTenantDeployment -Name "deployment01"
 ```
 
-Perintah ini membatalkan penyebaran yang berjalan "deployment01" pada lingkup penyewa saat ini.
+Perintah ini membatalkan penyebaran "deployment01" yang sedang berjalan pada cakupan penyewa saat ini.
 
 ### Contoh 2
 ```powershell
 Get-AzTenantDeployment -Name "deployment01" | Stop-AzTenantDeployment
 ```
 
-Perintah ini mendapatkan penyebaran "deployment01" pada lingkup penyewa saat ini dan membatalkannya. 
+Perintah ini mendapatkan penyebaran "deployment01" pada cakupan penyewa saat ini dan membatalkannya. 
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id sumber daya yang sepenuhnya memenuhi syarat dari penyebaran.
+Id sumber daya penyebaran yang sepenuhnya memenuhi syarat.
 contoh: /providers/Microsoft.Resources/deployments/{deploymentName}
 
 ```yaml
@@ -107,7 +110,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+Saat diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

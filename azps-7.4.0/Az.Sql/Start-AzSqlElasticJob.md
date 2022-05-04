@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/start-Azsqle
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlElasticJob.md
-ms.openlocfilehash: ea793b263f0339b85111a904ef507cde6f6dc579
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b2b7ba50444f2e92da184fefa813f859d79d27b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864684"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741322"
 ---
 # Start-AzSqlElasticJob
 
 ## SYNOPSIS
-Memulai pekerjaan, mengembalikan id eksekusi pekerjaan yang dapat dipolisikan untuk melihat statusnya
+Memulai pekerjaan, mengembalikan id eksekusi pekerjaan yang dapat dijajaki untuk melihat statusnya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/start-azsqlelasticjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Start-AzSqlElasticJob [-ParentResourceId] <String> [-Wait] [-AsJob] [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzSqlElasticJob memulai pekerjaan mengembalikan eksekusi pekerjaan baru
+Cmdlet Start-AzSqlElasticJob memulai pekerjaan yang mengembalikan eksekusi pekerjaan baru
 
 ## EXAMPLES
 
-### Contoh 1 - Memulai pekerjaan mengembalikan eksekusi pekerjaan baru
+### Contoh 1 - Memulai pekerjaan yang mengembalikan eksekusi pekerjaan baru
 ```powershell
 $job = Get-AzSqlElasticJob -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -Name job1
 $job | Start-AzSqlElasticJob
@@ -55,7 +58,7 @@ JobName JobExecutionId                       Lifecycle StartTime EndTime
 job1    b93b3a90-987b-4565-b3d3-5fa1751fa9bc Created
 ```
 
-Memulai pekerjaan mengembalikan eksekusi pekerjaan baru
+Memulai pekerjaan yang mengembalikan eksekusi pekerjaan baru
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

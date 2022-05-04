@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 6e8930764ac261c5ebb24e6427566af852cb2bd5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d48cf5a2f7acf80ee2fc8b238c6dcc5740d6722f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747199"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722718"
 ---
 # Get-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan penetapan peran HSM yang dikelola. Gunakan parameter masing-masing untuk mencantumkan penetapan ke pengguna tertentu atau definisi peran.
+Mendapatkan atau mencantumkan penetapan peran dari HSM terkelola. Gunakan parameter masing-masing untuk mencantumkan penetapan ke pengguna tertentu atau definisi peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,17 +36,17 @@ Get-AzKeyVaultRoleAssignment [-HsmName] <String> [-Scope <String>] -RoleAssignme
 ```
 
 ## DESCRIPTION
-`Get-AzKeyVaultRoleAssignment` Gunakan perintah untuk mencantumkan semua penetapan peran yang efektif pada lingkup.
-Tanpa parameter apa pun, perintah ini mengembalikan semua penetapan peran yang dibuat di bawah HSM yang dikelola.
-Daftar ini dapat difilter menggunakan parameter pemfilteran untuk prinsipal, peran, dan lingkup.
-Subjek tugas harus ditentukan.
-Untuk menentukan pengguna, gunakan SignInName atau parameter ObjectId Azure AD.
-Untuk menentukan grup keamanan, gunakan parameter ObjectId Azure AD.
+`Get-AzKeyVaultRoleAssignment` Gunakan perintah untuk mencantumkan semua penetapan peran yang efektif pada cakupan.
+Tanpa parameter apa pun, perintah ini mengembalikan semua penetapan peran yang dibuat di bawah HSM terkelola.
+Daftar ini dapat difilter menggunakan parameter pemfilteran untuk prinsipal, peran, dan cakupan.
+Subjek penugasan harus ditentukan.
+Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.
+Untuk menentukan grup keamanan, gunakan parameter objectId Azure AD.
 Dan untuk menentukan aplikasi Azure AD, gunakan parameter ApplicationId atau ObjectId.
 Peran yang sedang ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
-Lingkup akses yang diberikan mungkin ditentukan. Defaultnya adalah "/".
+Cakupan di mana akses diberikan dapat ditentukan. Ini default ke "/".
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /directoryObjects/{id}
 - GET /users/{id}
@@ -66,7 +69,7 @@ Managed HSM Backup         User 2 (user2@microsoft.com)     User       /
 Managed HSM Administrator  User 2 (user2@microsoft.com)     User       /
 ```
 
-Contoh ini mencantumkan semua penetapan peran "myHsm" di semua lingkup.
+Contoh ini mencantumkan semua penetapan peran "myHsm" pada semua cakupan.
 
 ### Contoh 2
 ```powershell
@@ -80,12 +83,12 @@ Managed HSM Crypto Auditor User 1 (user1@microsoft.com)     User       /keys
 Managed HSM Backup         User 1 (user1@microsoft.com)     User       /keys
 ```
 
-Contoh ini mencantumkan semua penetapan peran "myHsm" pada lingkup "/keys" dan memfilter hasil menurut nama masuk pengguna.
+Contoh ini mencantumkan semua penetapan peran "myHsm" pada cakupan "/keys" dan memfilter hasilnya berdasarkan nama masuk pengguna.
 
 ## PARAMETERS
 
 ### -ApplicationId
-Aplikasi SPN.
+SPN aplikasi.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Role Id tempat pokok ditetapkan.
+Id Peran tempat prinsipal ditetapkan.
 
 ```yaml
 Type: System.String
@@ -189,9 +192,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
-'/' digunakan ketika dihilangkan.
+### -Cakupan
+Cakupan tempat penetapan peran atau definisi berlaku, misalnya, '/' atau '/keys' atau '/keys/{keyName}'.
+'/' digunakan saat dihilangkan.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SignInName
-Pengguna SignInName.
+SignInName pengguna.
 
 ```yaml
 Type: System.String
@@ -221,11 +224,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

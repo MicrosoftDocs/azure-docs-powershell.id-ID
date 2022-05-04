@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuit.md
-ms.openlocfilehash: 8f52038d4b98ce83ef976befd5392dabe6e2450d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5d6ae99360a23fc4dd07d5ee78e760679e02f061
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871686"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721028"
 ---
 # New-AzExpressRouteCircuit
 
 ## SYNOPSIS
-Membuat sirkuit rute Azure express.
+Membuat sirkuit rute ekspres Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azexpressroutecircuit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzExpressRouteCircuit -Name <String> -ResourceGroupName <String> -Location <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzExpressRouteCircuit** membuat sirkuit rute Azure express.
+Cmdlet **New-AzExpressRouteCircuit membuat sirkuit** rute ekspres Azure.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ New-AzExpressRouteCircuit @parameters
 ## PARAMETERS
 
 ### -AllowClassicOperations
-Penggunaan parameter ini memungkinkan Anda menggunakan cmdlet klasik Azure PowerShell untuk mengelola sirkuit.
+Penggunaan parameter ini memungkinkan Anda menggunakan cmdlet Azure PowerShell klasik untuk mengelola sirkuit.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -BandwidthInGbps
-Bandwidth sirkuit ketika sirkuit disediakan pada sumber daya ExpressRoutePort.
+Bandwidth sirkuit saat sirkuit disediakan pada sumber daya ExpressRoutePort.
 
 ```yaml
 Type: System.Double
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -BandwidthInMbps
-Bandwidth sirkuit. Ini harus berupa nilai yang didukung oleh penyedia layanan.
+Bandwidth sirkuit. Ini harus merupakan nilai yang didukung oleh penyedia layanan.
 
 ```yaml
 Type: System.Int32
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRoutePort
-Referensi ke sumber daya ExpressRoutePort saat sirkuit ditetapkan pada sumber daya ExpressRoutePort.
+Referensi ke sumber daya ExpressRoutePort saat sirkuit disediakan pada sumber daya ExpressRoutePort.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRoutePort
@@ -179,7 +182,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -209,8 +212,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sirkuit ExpressRoute sedang dibuat.
+### -Name
+Nama sirkuit ExpressRoute yang sedang dibuat.
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peering
-Konfigurasi peer daftar.
+Konfigurasi serekan daftar.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPeering[]
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuFamily
-Keluarga SKU menentukan jenis tagihan. Nilai yang memungkinkan untuk parameter ini adalah: `MeteredData` atau `UnlimitedData`. Perhatikan bahwa Anda bisa mengubah tipe tagihan dari MeteredData menjadi UnlimitedData, tapi Anda tidak bisa mengubah tipe dari UnlimitedData menjadi MeteredData.
+Keluarga SKU menentukan jenis penagihan. Nilai yang mungkin untuk parameter ini adalah: `MeteredData` atau `UnlimitedData`. Perhatikan bahwa Anda dapat mengubah jenis penagihan dari MeteredData ke UnlimitedData, tetapi Anda tidak dapat mengubah jenis dari UnlimitedData menjadi MeteredData.
 
 ```yaml
 Type: System.String
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -331,8 +334,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

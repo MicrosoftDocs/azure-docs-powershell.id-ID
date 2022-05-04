@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/New-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageObjectReplicationPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageObjectReplicationPolicyRule.md
-ms.openlocfilehash: 5fef0f5f35d40ecb2e80a6636c33ba870a3bb3f0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 389a562358c8d89d3c64a03845846c6d623f17b1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142797922"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733834"
 ---
 # New-AzStorageObjectReplicationPolicyRule
 
 ## SYNOPSIS
 Membuat aturan kebijakan replikasi objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageobjectreplicationpolicyrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ RuleId SourceContainer DestinationContainer Filters.PrefixMatch Filters.MinCreat
        src1            dest1                {}
 ```
 
-Perintah ini membuat aturan kebijakan replikasi objek dengan akun sumber dan tujuan saja, dan memperlihatkan propertinya.
+Perintah ini membuat aturan kebijakan replikasi objek hanya dengan akun sumber dan tujuan, dan menampilkan propertinya.
 
 ### Contoh 2: Membuat aturan kebijakan replikasi objek dengan semua properti, dan memperlihatkan propertinya
 ```
@@ -54,7 +57,7 @@ RuleId SourceContainer DestinationContainer Filters.PrefixMatch Filters.MinCreat
        src             dest                 {a, abc, dd}        2019-01-01T16:00:00Z
 ```
 
-Perintah ini memerintahkan aturan kebijakan replikasi objek dengan semua properti, dan memperlihatkan propertinya.
+Perintah ini merupakan aturan kebijakan replikasi objek dengan semua properti, dan menampilkan propertinya.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationContainer
-Nama Wadah Tujuan untuk direplikasi.
+Nama Kontainer Tujuan untuk direplikasi.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixMatch
-Memfilter hasil untuk mereplikasi hanya blob yang namanya dimulai dengan prefiks yang ditentukan.
+Memfilter hasil untuk mereplikasi hanya blob yang namanya dimulai dengan awalan yang ditentukan.
 
 ```yaml
 Type: System.String[]
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceContainer
-Nama Wadah Sumber untuk direplikasi.
+Nama Kontainer Sumber untuk direplikasi.
 
 ```yaml
 Type: System.String
@@ -149,11 +152,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

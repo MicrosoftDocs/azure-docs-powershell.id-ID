@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHub.md
-ms.openlocfilehash: 47eb9abb7d0d20a77e167bbf2d53489193853bd8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0ac3a58a9eac59fad4727324a8e86c4dfe5a3496
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941509"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740206"
 ---
 # New-AzEventHub
 
 ## SYNOPSIS
-Membuat Hub Acara baru.
+Membuat Pusat Aktivitas baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzEventHub [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzEventHub membuat Hub Acara Azure baru.
+Cmdlet New-AzEventHub membuat Azure Event Hub baru.
 Untuk membuat Eventhub dengan properti deskripsi Capture, ikuti langkah-langkah di bawah ini (Contoh 2). 
 
 ## EXAMPLES
@@ -44,7 +47,7 @@ Untuk membuat Eventhub dengan properti deskripsi Capture, ikuti langkah-langkah 
 New-AzEventHub -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Name MyEventHubName
 ```
 
-Membuat Hub Kejadian bernama \`MyEventHubName\` dengan periode penyimpanan pesan 3 hari dan dua partisi, di \`lokasi WestUS\` , dengan grup \`sumber daya MyResourceGroupName\`.
+Membuat Pusat Aktivitas bernama \`MyEventHubName\` dengan periode retensi pesan 3 hari dan dua partisi, di \`lokasi WestUS\` , dengan grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2: Memperbarui Eventhub dengan 'CaptureDescription'
 ```powershell
@@ -65,7 +68,7 @@ $createdEventHub.CaptureDescription.Destination.StorageAccountResourceId = "/sub
 Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 
-Membuat Hub Kejadian bernama \`MyEventHubName\` dengan periode penyimpanan pesan 3 hari, 2 partisi dan properti CaptureDescription di \`lokasi WestUS\` , dengan grup \`sumber daya MyResourceGroupName\`.
+Membuat Pusat Aktivitas bernama \`MyEventHubName\` dengan periode retensi pesan 3 hari, 2 partisi, dan properti CaptureDescription di \`lokasi WestUS\` , dengan grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -MessageRetentionInDays
-Penyimpanan Pesan Eventhub Dalam Hari
+Retensi Pesan Eventhub Dalam Hari
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -114,7 +117,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Eventhub
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

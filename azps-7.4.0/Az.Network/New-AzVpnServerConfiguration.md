@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnServerConfiguration.md
-ms.openlocfilehash: e6177f436171252c250a97c579856c78437a5c0d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d057e039e7b23b2e5b59a3256176a9d60fad12f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871218"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720074"
 ---
 # New-AzVpnServerConfiguration
 
 ## SYNOPSIS
-Buat VpnServerConfiguration baru untuk mengarahkan ke konektivitas situs.
+Buat VpnServerConfiguration baru untuk konektivitas titik ke situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnserverconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzVpnServerConfiguration -ResourceGroupName <String> -Name <String> -Locatio
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzVpnServerConfiguration** memungkinkan Anda membuat VpnServerConfiguration baru dengan VpnProtocols yang berbeda, VpnAuthenticationTypes, IpsecPolicies dan mengatur parameter terkait tipe autentikasi vpn yang dipilih sesuai persyaratan pelanggan untuk konektivitas titik ke situs.
+Cmdlet **New-AzVpnServerConfiguration** memungkinkan Anda membuat VpnServerConfiguration baru dengan VpnProtocols yang berbeda, VpnAuthenticationTypes, IpsecPolicies dan untuk mengatur parameter terkait jenis autentikasi vpn yang dipilih sesuai persyaratan pelanggan untuk konektivitas Titik ke situs.
 
 ## EXAMPLES
 
@@ -67,11 +70,11 @@ Type                         : Microsoft.Network/vpnServerConfigurations
 ProvisioningState            : Succeeded
 ```
 
-Perintah di atas akan membuat VpnServerConfiguration baru dengan VpnAuthenticationType sebagai Certificate.
+Perintah di atas akan membuat VpnServerConfiguration baru dengan VpnAuthenticationType sebagai Sertifikat.
 
 ### Contoh 2
 
-Buat VpnServerConfiguration baru untuk mengarahkan ke konektivitas situs. (autogenerasi)
+Buat VpnServerConfiguration baru untuk konektivitas titik ke situs. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadIssuer
-AAD penerbit untuk autentikasi AAD P2S.
+AAD pengeluar sertifikat untuk autentikasi AAD P2S.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -RadiusServerList
-P2S Server radius ganda eksternal.
+P2S Eksternal beberapa server radius.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRadiusServer[]
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnAuthenticationType
-Daftar protokol tunneling klien P2S VPN.
+Daftar protokol penerowongan klien P2S VPN.
 
 ```yaml
 Type: System.String[]
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRevokedCertificateFilesList
-Daftar VpnClientCertificates yang akan dicabut jalur file
+Daftar VpnClientCertificates yang akan dicabut jalur filenya
 
 ```yaml
 Type: System.String[]
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnProtocol
-Daftar protokol tunneling klien P2S VPN.
+Daftar protokol penerowongan klien P2S VPN.
 
 ```yaml
 Type: System.String[]
@@ -369,8 +372,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -401,7 +404,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

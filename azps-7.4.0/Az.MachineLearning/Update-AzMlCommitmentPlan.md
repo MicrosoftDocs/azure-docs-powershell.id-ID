@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlCommitmentPlan.md
-ms.openlocfilehash: 8e4e048a6723316febce4044834aceb71ae052a8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4aedb7f00f59938ab94723ebff7a151a05d318ec
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142746334"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740116"
 ---
 # Update-AzMlCommitmentPlan
 
 ## SYNOPSIS
-Memperbarui properti sumber daya rencana komitmen yang sudah ada.
+Memperbarui properti sumber daya paket komitmen yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/update-azmlcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Update-AzMlCommitmentPlan -ResourceGroupName <String> -Name <String> -SkuName <S
 ```
 
 ## DESCRIPTION
-Memperbarui sumber daya rencana komitmen yang sudah ada. Perhatikan bahwa sebagian besar properti paket komitmen tidak dapat diubah dan tidak dapat diubah. Properti yang dapat dimodifikasi meliputi Sku (memungkinkan Anda untuk melakukan migrasi rencana komitmen dari satu SKU ke SKU lainnya) dan Tag.
+Memperbarui sumber daya paket komitmen yang ada. Perhatikan bahwa sebagian besar properti paket komitmen tidak dapat diubah dan tidak dapat dimodifikasi. Properti yang dapat dimodifikasi termasuk Sku (memungkinkan Anda untuk memigrasikan rencana komitmen dari satu SKU ke SKU lainnya) dan Tag.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui rencana komitmen
+### Contoh 1: Memperbarui paket komitmen
 ```powershell
 Update-AzMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommitmentPlanName" -Tags @{'MyTagKey'='MyTagValue'}
 ```
@@ -52,7 +55,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -67,8 +70,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rencana komitmen Azure ML.
+### -Name
+Nama paket komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk rencana komitmen Azure ML.
+Nama grup sumber daya untuk paket komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas SKU untuk digunakan saat memperbarui rencana komitmen Azure ML.
+Kapasitas SKU yang akan digunakan saat memperbarui rencana komitmen Azure ML.
 
 ```yaml
 Type: System.Int32
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU yang akan digunakan saat memperbarui rencana komitmen Azure ML.
+Nama SKU yang akan digunakan saat memperbarui paket komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkat SKU yang digunakan saat memperbarui rencana komitmen Azure ML.
+Tingkat SKU yang akan digunakan saat memperbarui paket komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,11 +191,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

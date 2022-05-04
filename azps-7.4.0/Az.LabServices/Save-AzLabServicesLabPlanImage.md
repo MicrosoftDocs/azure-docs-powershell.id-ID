@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/save
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Save-AzLabServicesLabPlanImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Save-AzLabServicesLabPlanImage.md
-ms.openlocfilehash: 9866b7b23f754df4dda6e8a14ce260fa5cc23986
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83df2e6b90809e86ff9fea6b7eb284470183aae9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873684"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736282"
 ---
 # Save-AzLabServicesLabPlanImage
 
 ## SYNOPSIS
 Menyimpan gambar dari VM lab ke galeri gambar bersama yang dilampirkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/save-azlabserviceslabplanimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Menyimpan gambar dari VM lab ke galeri gambar bersama yang dilampirkan.
 Save-AzLabServicesLabPlanImage -ResourceGroupName "Group Name" -LabName "Lab Name" -Name "New Image Name" -LabVirtualMachineId "/subscriptions/<subscription Id>/resourceGroups/<group name>/providers/Microsoft.LabServices/labs/labName/virtualMachines/<vm name>"
 ```
 
-Tindakan ini akan membuat gambar baru dalam Shared Image Gallery.
+Ini membuat gambar baru di Shared Image Gallery.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabPlanName
-Nama rencana lab yang mengidentifikasinya secara unik di dalamnya berisi grup sumber daya.
+Nama paket lab yang secara unik mengidentifikasinya dalam berisi grup sumber daya.
 Digunakan dalam URI sumber daya dan di UI.
 
 ```yaml
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabVirtualMachineId
-ID mesin virtual lab tempat Anda ingin menyimpan gambar.
+ID komputer virtual lab yang ingin Anda simpan gambarnya.
 
 ```yaml
 Type: System.String
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama untuk gambar yang kami buat.
+### -Name
+Nama untuk gambar yang kita buat.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -176,8 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

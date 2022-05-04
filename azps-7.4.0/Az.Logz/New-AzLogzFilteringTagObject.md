@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Logz/new-AzLogzF
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzFilteringTagObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzFilteringTagObject.md
-ms.openlocfilehash: 3a7489a58793343d6e1efca12ad5edc23812dbe8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4f749ba7336acac3cce2e301c54f48b03746ed48
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284391"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722511"
 ---
 # New-AzLogzFilteringTagObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk FilteringTag
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzfilteringtagobject) untuk informasi terbaru.
 
 ## SYNTAX
 

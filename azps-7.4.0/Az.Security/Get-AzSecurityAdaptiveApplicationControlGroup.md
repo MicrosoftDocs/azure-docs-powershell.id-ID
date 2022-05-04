@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveApplicationControlGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAdaptiveApplicationControlGroup.md
-ms.openlocfilehash: d03cee0afd8f3d207a6f16d7e79ee1c45efdbaa7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3bac2b2929dbbc9b3a406eadee1eb59bf52e7879
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309339"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741538"
 ---
 # Get-AzSecurityAdaptiveApplicationControlGroup
 
 ## SYNOPSIS
 Mendapatkan kontrol aplikasi VM/grup server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityadaptiveapplicationcontrolgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSecurityAdaptiveApplicationControlGroup  -GroupName <String> -AscLocation 
 ```
 
 ## DESCRIPTION
-Kontrol Aplikasi Adaptif dihitung secara otomatis dengan Azure Security Center, gunakan cmdlet ini untuk mendapatkan kontrol aplikasi grup VM/server.
+Kontrol Aplikasi Adaptif dihitung secara otomatis dengan Azure Security Center, gunakan cmdlet ini untuk mendapatkan kontrol aplikasi VM/grup server.
 
 ## EXAMPLES
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+ID Langganan Azure.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

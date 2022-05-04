@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportProblemClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportProblemClassification.md
-ms.openlocfilehash: 6472b52541599bccfa28525a347259bbc1ade982
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 948e223c3d1f4d4b6f662f5742401a82ba382e96
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932041"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717518"
 ---
 # Get-AzSupportProblemClassification
 
 ## SYNOPSIS
 Dapatkan klasifikasi masalah untuk layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.support/get-azsupportproblemclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Get-AzSupportProblemClassification [-Id <String>] -ServiceObject <PSSupportServi
 ## DESCRIPTION
 Mendapatkan daftar klasifikasi masalah saat ini untuk layanan Azure. Anda dapat menggunakan GUID klasifikasi layanan dan masalah untuk membuat tiket dukungan baru menggunakan New-AzSupportTicket.
 
-Selalu gunakan GUID klasifikasi layanan dan masalah yang diperoleh secara terprogram. Praktik ini memastikan bahwa Anda memiliki kumpulan GUID klasifikasi masalah dan layanan terbaru untuk pembuatan tiket dukungan.
+Selalu gunakan GUID klasifikasi layanan dan masalah yang diperoleh secara terprogram. Praktik ini memastikan bahwa Anda memiliki serangkaian GUID klasifikasi layanan dan masalah terbaru untuk pembuatan tiket dukungan.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ d36eec9e-cab1-8d62-1ce5-3245a02e3bcf Cannot connect to my VM / My problem is not
 f47d6b99-6f4b-d21a-feee-1800ad391e10 Cannot start or stop my VM / I received an allocation failure
 ```
 
-### Contoh 2: Dapatkan semua classificaitons masalah untuk layanan menggunakan objek layanan induk
+### Contoh 2: Mendapatkan semua classificaitons masalah untuk layanan menggunakan objek layanan induk
 ```powershell
 Get-AzSupportService -Id "{vm_running_windows_service_guid}" | Get-AzSupportProblemClassification 
 ```
@@ -80,7 +83,7 @@ d36eec9e-cab1-8d62-1ce5-3245a02e3bcf Cannot connect to my VM / My problem is not
 f47d6b99-6f4b-d21a-feee-1800ad391e10 Cannot start or stop my VM / I received an allocation failure
 ```
 
-### Contoh 3: Dapatkan detail tentang classificaiton masalah tunggal menurut id oleh objek layanan perpipaan
+### Contoh 3: Mendapatkan detail klasifikasi masalah tunggal berdasarkan id dengan objek layanan piping
 ```powershell
 Get-AzSupportService -Id "{vm_running_windows_service_guid}" | Get-AzSupportProblemClassification -Id 923d6b56-d573-f943-b65d-d69ba79ea21a
 ```
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceId
-Id layanan di mana semua klasifikasi masalah diambil.
+Id layanan yang semua klasifikasi masalahnya diambil.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

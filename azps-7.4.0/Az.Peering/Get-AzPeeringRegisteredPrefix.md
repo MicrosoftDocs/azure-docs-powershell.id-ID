@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredPrefix.md
-ms.openlocfilehash: b5ae5e74eb7a1194ab6d91978d8ab83ce4b2484b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9714fd6800e9e46e0ec8f42ed670fab51916574e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675846"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723996"
 ---
 # Get-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan prefiks terdaftar untuk peering.
+Mendapatkan atau mencantumkan awalan terdaftar untuk peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeeringregisteredprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,23 +41,23 @@ Get-AzPeeringRegisteredPrefix [-ResourceId] <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Mendapatkan atau mencantumkan prefiks terdaftar untuk peering.
+Mendapatkan atau mencantumkan awalan terdaftar untuk peering.
 
 ## EXAMPLES
 
-### Daftar ASN terdaftar untuk peering
+### Mencantumkan ASN terdaftar untuk peering
 ```powershell
 Get-AzPeeringRegisteredPrefix -ResourceGroupName $resourceGroupName -PeeringName $peeringName
 ```
 
 Mencantumkan asn terdaftar.
 
-### Dapatkan ASN terdaftar untuk peering by name
+### Mendapatkan ASN terdaftar untuk peering berdasarkan nama
 ```powershell
 Get-AzPeeringRegisteredPrefix -ResourceGroupName $resourceGroupName -PeeringName $peeringName -Name $registeredPrefixName
 ```
 
-Mendapat asn peering terdaftar.
+Mendapatkan asn peering terdaftar.
 
 
 ## PARAMETERS
@@ -89,8 +92,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama prefiks.
+### -Name
+Nama awalan.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

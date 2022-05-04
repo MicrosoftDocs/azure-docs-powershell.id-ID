@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Remove-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseAudit.md
-ms.openlocfilehash: 199112ae443b29c20782f758bb71806533991f64
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09691d68b80bad8e81dac92209dfb9180f48fd26
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307143"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741304"
 ---
 # Remove-AzSqlDatabaseAudit
 
 ## SYNOPSIS
 Menghapus pengaturan audit database Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabaseaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Remove-AzSqlDatabaseAudit -DatabaseObject <AzureSqlDatabaseModel> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlDatabaseAudit** menghapus pengaturan pengauditan database Azure SQL.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
+Cmdlet **Remove-AzSqlDatabaseAudit** menghapus pengaturan audit database Azure SQL.
+Untuk menggunakan cmdlet , gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, d
 Remove-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-### Contoh 2: Hapus, melalui pipeline, pengaturan audit database Azure SQL
+### Contoh 2: Hapus, melalui alur, pengaturan audit database Azure SQL
 ```powershell
 Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" | Remove-AzSqlDatabaseAudit
 ```
@@ -51,7 +54,7 @@ Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -D
 ## PARAMETERS
 
 ### -DatabaseName
-SQL Database nama.
+nama SQL Database.
 
 ```yaml
 Type: System.String
@@ -125,8 +128,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
-ms.openlocfilehash: 2b870bfd20b45032fc37a5766a4f1154e02f00e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 70baa592b994f75eaf6dd835c5285bc4b3abf3d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998137"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740008"
 ---
 # New-AzSpatialAnchorsAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci Akun Jangkar Spasial
+Meregenerasi kunci Akun Spatial Anchors
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ New-AzSpatialAnchorsAccountKey -InputObject <PSSpatialAnchorsAccount> -Secondary
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci utama atau kunci sekunder Akun Jangkar Spasial.
+Regenerasi kunci primer atau kunci sekunder Akun Spatial Anchors.
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= mF8lsBeEbs51H/jLe4COW4zUiEyg9lDM1XHQ03jtxZU=
 ```
 
-Regenerasi kunci sekunder dari "contoh" Akun Jangkar Spasial dalam Grup Sumber Daya "rg1". 
+Regenerasi kunci sekunder "contoh" Akun Spatial Anchors di Grup Sumber Daya "rg1". 
 
 ### Contoh 2
 ```powershell
@@ -84,7 +87,7 @@ PrimaryKey                                   SecondaryKey
 QTwT6LpnD6NuUfgfkCKFBmf89xWJ7tDC0Yx0yxxaejs= BGOP2NZN5ThHbDFKzW+FISSgxnnBqCPKpTsixAxkvXk=
 ```
 
-Regenerasi kunci sekunder dari "contoh" Akun Jangkar Spasial dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan perpipaan.
+Regenerasi kunci sekunder "contoh" Akun Spatial Anchors dari Langganan saat ini dan Grup Sumber Daya "rg1" dengan pipa.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -133,8 +136,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Jangkar Spasial.
+### -Name
+Nama Akun Spatial Anchors.
 
 ```yaml
 Type: String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Primer
-Meregenerasi kunci utama Akun Jangkar Spasial.
+Regenerasi kunci utama Akun Spatial Anchors.
 
 ```yaml
 Type: SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Akun Jangkar Spasial.
+ID Sumber Daya Akun Spatial Anchors.
 
 ```yaml
 Type: String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sekunder
-Meregenerasi kunci utama Akun Jangkar Spasial.
+Regenerasi kunci utama Akun Spatial Anchors.
 
 ```yaml
 Type: SwitchParameter
@@ -208,8 +211,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

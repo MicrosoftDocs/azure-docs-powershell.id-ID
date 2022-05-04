@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfile.md
-ms.openlocfilehash: 355164d3081cfcc8d889617c419bfdcba36e5682
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 498180a58b44cad46c4fe6f76aadd626c6ce6955
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804420"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718094"
 ---
 # Set-AzApplicationGatewaySslProfile
 
 ## SYNOPSIS
 Memperbarui profil ssl untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupNam
 $AppGw = Set-AzApplicationGatewaySslProfile -ApplicationGateway $AppGw -Name "Profile01" -ClientAuthConfiguration $newclientconfig
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua memperbarui profil ssl gateway aplikasi dalam variabel $AppGw untuk memperbarui konfigurasi auth klien ke nilai baru yang disimpan di $newclientconfig.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua memperbarui profil ssl gateway aplikasi dalam variabel $AppGw untuk memperbarui konfigurasi autentikasi klien ke nilai baru yang disimpan di $newclientconfig.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama profil SSL
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedClientCertificates
-Rantai sertifikat CA klien tepercaya
+Rantai sertifikat OS klien tepercaya
 
 ```yaml
 Type: PSApplicationGatewayTrustedClientCertificate[]
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

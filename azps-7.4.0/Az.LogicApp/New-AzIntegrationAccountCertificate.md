@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountCertificate.md
-ms.openlocfilehash: 92b53a64299ada3f3955f5c36c988c952620583d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07b1702525eec3a37db4fa55b851875169933d6b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999361"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734968"
 ---
 # New-AzIntegrationAccountCertificate
 
 ## SYNOPSIS
 Membuat sertifikat akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ New-AzIntegrationAccountCertificate -ResourceGroupName <String> -Name <String> -
  [-Metadata <Object>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Tombol Publik
+### Kunci Umum
 ```
 New-AzIntegrationAccountCertificate -ResourceGroupName <String> -Name <String> -CertificateName <String>
  [-KeyName <String>] [-KeyVersion <String>] [-KeyVaultId <String>] -PublicCertificateFilePath <String>
  [-Metadata <Object>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Kedua
+### Keduanya
 ```
 New-AzIntegrationAccountCertificate -ResourceGroupName <String> -Name <String> -CertificateName <String>
  -KeyName <String> -KeyVersion <String> -KeyVaultId <String> -PublicCertificateFilePath <String>
@@ -44,10 +47,10 @@ New-AzIntegrationAccountCertificate -ResourceGroupName <String> -Name <String> -
 ## DESCRIPTION
 Cmdlet **New-AzIntegrationAccountCertificate** membuat sertifikat akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili sertifikat akun integrasi.
-Tentukan nama akun integrasi, nama grup sumber daya, nama sertifikat, nama kunci, versi kunci, dan ID kubah kunci.
+Tentukan nama akun integrasi, nama grup sumber daya, nama sertifikat, nama kunci, versi kunci, dan ID brankas kunci.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -73,7 +76,7 @@ PublicCertificate :
 MetaData          :
 ```
 
-Perintah ini membuat sertifikat akun integrasi dalam grup sumber daya tertentu.
+Perintah ini membuat sertifikat akun integrasi dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Menentukan nama kunci sertifikat dalam kubah kunci.
+Menentukan nama kunci sertifikat di brankas kunci.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultId
-Menentukan ID kubah kunci.
+Menentukan ID brankas kunci.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Menentukan versi kunci sertifikat dalam kubah kunci.
+Menentukan versi kunci sertifikat di brankas kunci.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -260,8 +263,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

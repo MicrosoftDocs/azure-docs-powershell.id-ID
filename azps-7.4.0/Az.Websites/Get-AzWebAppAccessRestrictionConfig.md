@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppAccessRestrictionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppAccessRestrictionConfig.md
-ms.openlocfilehash: 133e4781db316bc370fcf8755645be85fb996b62
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 243c959d63d8aaa0e14a5548e554143c70b1a891
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115227"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731372"
 ---
 # Get-AzWebAppAccessRestrictionConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi Pemulihan Akses untuk Azure Web App.
+Mendapatkan konfigurasi Restiction Akses untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappaccessrestrictionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Cmdlet **Get-AzWebAppAccessRestrictionConfig** mendapatkan konfigurasi Pembatasa
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Konfigurasi Pembatasan Akses Aplikasi Web dari grup sumber daya
+### Contoh 1: Mendapatkan Konfigurasi Pembatasan Akses Aplikasi Web dari grup sumber daya
 ```powershell
 Get-AzWebAppAccessRestrictionConfig -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
@@ -52,7 +55,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

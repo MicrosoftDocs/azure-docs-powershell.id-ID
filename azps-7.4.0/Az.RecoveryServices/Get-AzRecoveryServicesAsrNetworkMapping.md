@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetworkMapping.md
-ms.openlocfilehash: 6734c9c8b828a9dc171b92a1d2d811bab230b3ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8f446bf6356566a8c26c54d384cfd270971cdba7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117549"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714764"
 ---
 # Get-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
-Mendapatkan informasi tentang pemetaan jaringan Site Recovery untuk kubah saat ini.
+Mendapatkan informasi tentang pemetaan jaringan Site Recovery untuk vault saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrnetworkmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRecoveryServicesAsrNetworkMapping [-Name <String>] -PrimaryFabric <ASRFabr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrNetworkMapping** mendapatkan informasi tentang pemetaan jaringan Azure Site Recovery untuk kubah Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrNetworkMapping** mendapatkan informasi tentang pemetaan jaringan Azure Site Recovery untuk vault Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Get-AzRecoveryServicesAsrNetworkMapping** mendapatkan informasi tentang
 $Networkmappings = Get-AzRecoveryServicesAsrNetworkMapping -Network $Network
 ```
 
-Mendapatkan semua pemetaan jaringan untuk Jaringan yang lolos.
+Mendapatkan semua pemetaan jaringan untuk Jaringan yang diteruskan.
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ $primaryFabric = Get-AzRecoveryServicesAsrFabric -Name xxxx
 $Networkmappings = Get-AzRecoveryServicesAsrNetworkMapping -Name $networkMappingName -PrimaryFabric $primaryFabric
 ```
 
-Mendapatkan pemetaan jaringan dengan nama yang disediakan dalam kain pemulihan situs azure tertentu.
+Mendapatkan pemetaan jaringan dengan nama yang disediakan dalam fabric azure site recovery tertentu.
 
 ## PARAMETERS
 
@@ -69,8 +72,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama objek pemetaan jaringan ASR untuk didapatkan.
+### -Name
+Nama objek pemetaan jaringan ASR yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jaringan
-Dapatkan pemetaan jaringan ASR yang terkait dengan objek ASR jaringan yang ditentukan.
+Dapatkan pemetaan jaringan ASR yang sesuai dengan objek ASR jaringan yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRNetwork
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryFabric
-Dapatkan pemetaan jaringan ASR yang sesuai dengan objek kain utama yang ditentukan.
+Dapatkan pemetaan jaringan ASR yang sesuai dengan objek fabric primer yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

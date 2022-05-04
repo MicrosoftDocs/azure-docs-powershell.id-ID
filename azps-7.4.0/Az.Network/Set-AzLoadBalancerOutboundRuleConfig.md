@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerOutboundRuleConfig.md
-ms.openlocfilehash: b2afa60307e7856531ba0fdb259d987a616b9ff7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a04fb0b1b24889764e3d6911dc1fa76359e6002d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280053"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739648"
 ---
 # Set-AzLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
-Mengatur konfigurasi aturan keluar untuk penyeimbang muatan.
+Mengatur konfigurasi aturan keluar untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalanceroutboundruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ Set-AzLoadBalancerOutboundRuleConfig -LoadBalancer <PSLoadBalancer> -Name <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancerOutboundRuleConfig** mengatur konfigurasi aturan keluar untuk penyeimbang muatan Azure.
+Cmdlet **Set-AzLoadBalancerOutboundRuleConfig** menetapkan konfigurasi aturan keluar untuk load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi aturan keluar pada penyeimbang muatan
+### Contoh 1: Mengubah konfigurasi aturan keluar pada load balancer
 ```powershell
 $slb = Get-AzLoadBalancer -ResourceGroupName "MyResourceGroup" -Name "MyLoadBalancer"
 $slb | Add-AzLoadBalancerOutboundRuleConfig -Name "NewRule" -Protocol "Tcp" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -BackendAddressPool $slb.BackendAddressPools[0] -IdleTimeoutInMinutes 5
@@ -48,8 +51,8 @@ $slb | Set-AzLoadBalancerOutboundRuleConfig -Name "NewRule" -Protocol "Tcp" -Fro
 ```
 
 Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua menggunakan operator pipeline untuk mengirimkan penyeimbang muatan dalam $slb ke Add-AzLoadBalancerOutboundRuleConfig, yang menambahkan konfigurasi aturan keluar ke dalamnya.
-Perintah ketiga melewati penyeimbang muatan ke **Set-AzLoadBalancerOutboundRuleConfig**, yang menyimpan dan memperbarui konfigurasi aturan keluar.
+Perintah kedua menggunakan operator alur untuk meneruskan load balancer di $slb ke Add-AzLoadBalancerOutboundRuleConfig, yang menambahkan konfigurasi aturan keluar ke dalamnya.
+Perintah ketiga meneruskan load balancer ke **Set-AzLoadBalancerOutboundRuleConfig**, yang menyimpan dan memperbarui konfigurasi aturan keluar.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BackendAddressPool
 Referensi ke kumpulan DIP.
-Lalu lintas keluar secara acak memuat seimbang di seluruh IP di IP backend.
+Lalu lintas keluar secara acak dimuat seimbang di seluruh IP di IP backend.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -BackendAddressPoolId
 Referensi ke kumpulan DIP.
-Lalu lintas keluar secara acak memuat seimbang di seluruh IP di IP backend.
+Lalu lintas keluar secara acak dimuat seimbang di seluruh IP di IP backend.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau penghentian koneksi yang tidak terduga.
 Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Alamat IP Frontend dari penyeimbang muatan.
+Alamat IP Frontend dari load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu habis untuk koneksi diam TCP
+Batas waktu untuk koneksi diam TCP
 
 ```yaml
 Type: System.Int32
@@ -176,7 +179,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan keluar.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Protokol - TCP, UDP atau Semua
+Protokol - TCP, UDP, atau Semua
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

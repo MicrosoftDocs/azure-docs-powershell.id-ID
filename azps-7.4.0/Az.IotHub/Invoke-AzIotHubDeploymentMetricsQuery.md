@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeploymentMetricsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeploymentMetricsQuery.md
-ms.openlocfilehash: 3b73334fe0078ffbee58fdb9c308f5b4a0551828
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5683c7524a892af995c407ffd029d62ef8b15af0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121761"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720236"
 ---
 # Invoke-AzIotHubDeploymentMetricsQuery
 
 ## SYNOPSIS
-Memanggil kueri metrik penyebaran IoT Edge.
+Panggil kueri metrik penyebaran IoT Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubdeploymentmetricsquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,13 +44,13 @@ Invoke-AzIotHubDeploymentMetricsQuery [-ResourceId] <String> -Name <String> -Met
 ```
 
 ## DESCRIPTION
-Mengevaluasi metrik sistem atau kustom target yang ditentukan dalam penyebaran IoT Edge.
-Terdapat metrik sistem yang telah ditentukan sebelumnya yang dihitung oleh Iot Hub dan tidak dapat dikustomisasi.
-- "Ditargetkan" memperlihatkan perangkat IoT Edge yang cocok dengan kondisi penargetan penyebaran.
-- "Diterapkan" memperlihatkan perangkat IoT Edge bertarget yang tidak ditargetkan oleh penyebaran lain dengan prioritas yang lebih tinggi.
-- "Pelaporan Keberhasilan" memperlihatkan perangkat IoT Edge yang telah melaporkan bahwa modul telah berhasil digunakan.
-- "Kegagalan Pelaporan" memperlihatkan perangkat IoT Edge yang telah melaporkan bahwa satu atau beberapa modul belum berhasil digunakan. 
-  Untuk menyelidiki kesalahan lebih lanjut, sambungkan dari jarak jauh ke perangkat tersebut dan lihat file log.
+Mengevaluasi metrik kustom atau sistem target yang ditentukan dalam penyebaran IoT Edge.
+Ada metrik sistem yang telah ditentukan sebelumnya yang dihitung oleh Iot Hub dan tidak dapat disesuaikan.
+- "Ditargetkan" menunjukkan perangkat IoT Edge yang cocok dengan kondisi penargetan penyebaran.
+- "Diterapkan" menunjukkan perangkat IoT Edge yang ditargetkan yang tidak ditargetkan oleh penyebaran lain dengan prioritas yang lebih tinggi.
+- "Reporting Success" menunjukkan perangkat IoT Edge yang telah melaporkan bahwa modul telah berhasil disebarkan.
+- "Kegagalan Pelaporan" menunjukkan perangkat IoT Edge yang telah melaporkan bahwa satu atau beberapa modul belum berhasil disebarkan. 
+  Untuk menyelidiki kesalahan lebih lanjut, sambungkan ke perangkat tersebut dari jarak jauh dan lihat file log.
 
 ## EXAMPLES
 
@@ -56,14 +59,14 @@ Terdapat metrik sistem yang telah ditentukan sebelumnya yang dihitung oleh Iot H
 Invoke-AzIotHubDeploymentMetricsQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "myDeploy1" -MetricName "warningLimit"
 ```
 
-Evaluasi metrik 'warningLimit' yang ditentukan kustom.
+Mengevaluasi metrik 'warningLimit' yang ditentukan kustom.
 
 ### Contoh 2
 ```powershell
 Invoke-AzIotHubDeployMetric -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "myDeploy1" -MetricName "Reporting Success" -MetricType "system"
 ```
 
-Evaluasi metrik sistem 'Pelaporan Keberhasilan'.
+Mengevaluasi metrik 'Pelaporan Keberhasilan' sistem.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricType
-Menunjukkan kumpulan metrik mana yang harus digunakan untuk mencari metrik.
+Menunjukkan koleksi metrik mana yang harus digunakan untuk mencari metrik.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.IotHub.Models.PSConfigurationMetricType
@@ -143,7 +146,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Pengidentifikasi untuk penyebaran.
 
 ```yaml
@@ -188,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

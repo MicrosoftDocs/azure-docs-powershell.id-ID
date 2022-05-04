@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageShare.md
-ms.openlocfilehash: 602ed6ce4092ed0c9c7e94ebc04ed683775b95b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5948aa59c4c2135b12869c27dee875df1a3ceb7c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670806"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722988"
 ---
 # Remove-AzRmStorageShare
 
 ## SYNOPSIS
 Menghapus berbagi file Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,49 +65,49 @@ Cmdlet **New-AzRmStorageShare** menghapus berbagi file Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Storage berbagi file dengan nama akun Storage dan berbagi nama
+### Contoh 1: Menghapus berbagi file Storage dengan nama akun Storage dan nama berbagi
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare"
 ```
 
-Perintah ini menghapus Storage berbagi file dengan nama akun Storage dan berbagi nama.
+Perintah ini menghapus berbagi file Storage dengan nama akun Storage dan nama berbagi.
 
-### Contoh 2: Menghapus file Storage berbagi dengan objek akun Storage dan berbagi nama
+### Contoh 2: Menghapus berbagi file Storage dengan objek akun Storage dan nama berbagi
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageShare -StorageAccount $accountObject -Name "myshare"
 ```
 
-Perintah ini menghapus berbagi file Storage dengan objek akun Storage dan berbagi nama.
+Perintah ini menghapus berbagi file Storage dengan objek akun Storage dan nama berbagi.
 
-### Contoh 3: Hapus semua file Storage yang dibagikan dalam akun Storage dengan pipeline
+### Contoh 3: Menghapus semua berbagi file Storage di akun Storage dengan alur
 ```
 PS C:\>Get-AzStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" | Remove-AzRmStorageShare -Force
 ```
 
-Perintah ini menghapus semua file Storage yang dibagikan dalam akun Storage dengan pipeline.
+Perintah ini menghapus semua berbagi file Storage di akun Storage dengan alur.
 
-### Contoh 4: Menghapus snapshot berbagi file Storage tunggal
+### Contoh 4: Menghapus salinan bayangan berbagi file Storage tunggal
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -SnapshotTime "2021-05-10T08:04:08Z"
 ```
 
-Perintah ini menghapus satu Storage file berbagi snapshot dengan nama berbagi dan waktu snapshot tertentu
+Perintah ini menghapus salinan bayangan berbagi file Storage tunggal dengan nama berbagi dan waktu rekam jepret tertentu
 
-### Contoh 5: Menghapus berbagi file Storage dan snapshotnya
+### Contoh 5: Menghapus berbagi file Storage dan salinan bayangannya
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -Include Snapshots
 ```
 
-Perintah ini menghapus berbagi file Storage dan snapshot secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-include".
+Perintah ini menghapus berbagi file Storage dan rekam jepret secara default, cmdlet akan gagal jika berbagi file memiliki rekam jepret tanpa parameter "-include".
 
-### Contoh 6: Hapus Storage berbagi file dan semua snapshotnya (termasuk snapshot yang disewakan)
+### Contoh 6: Menghapus berbagi file Storage dan semua rekam jepretnya (termasuk rekam jepret yang disewakan)
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -Include Leased-Snapshots
 ```
 
-Perintah ini menghapus berbagi file Storage dan semua snapshotnya, termasuk snapshot yang disewakan dan tidak disewakan.
-Secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-include".
+Perintah ini menghapus berbagi file Storage dan semua rekam jepretnya, termasuk rekam jepret yang disewakan dan tidak disewakan.
+Secara default, cmdlet akan gagal jika berbagi file memiliki rekam jepret tanpa parameter "-include".
 
 ## PARAMETERS
 
@@ -123,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk menghapus Berbagi dan semua konten di dalamnya
+### -Force
+Paksa untuk menghapus Berbagi dan semua konten di dalamnya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,10 +141,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sertakan
-Nilai yang valid adalah: snapshot, leased-snapshot, none. Nilai default tidak ada. Untuk 'tidak ada', berbagi file akan dihapus jika tidak memiliki snapshot berbagi. Jika berbagi file berisi snapshot(disewakan atau tidak dilepas), penghapusan gagal.
-Untuk 'snapshot', berbagi file dihapus termasuk semua snapshot berbagi file. Jika berbagi file berisi snapshot yang disewakan, penghapusan akan gagal.
-Untuk 'snapshot yang disewakan', berbagi file dihapus menyertakan semua snapshot berbagi filenya (disewakan / tidak dirilis). 
+### -Meliputi
+Nilai yang valid adalah: rekam jepret, rekam jepret sewaan, tidak ada. Nilai defaultnya tidak ada. Untuk 'none', berbagi file akan dihapus jika tidak memiliki salinan bayangan berbagi. Jika berbagi file berisi rekam jepret apa pun (disewakan atau tidak dilepas), penghapusan gagal.
+Untuk 'rekam jepret', berbagi file dihapus termasuk semua salinan bayangan berbagi filenya. Jika berbagi file berisi rekam jepret sewaan, penghapusan gagal.
+Untuk 'leased-snapshots', berbagi file dihapus menyertakan semua rekam jepret berbagi filenya (disewakan/tidak dilepas). 
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage Bagikan objek
+objek berbagi Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSShare
@@ -171,8 +174,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Bagikan Nama
+### -Name
+Nama Berbagi
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotTime
-Bagi SnapshotTime
+Bagikan SnapshotTime
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -277,8 +280,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

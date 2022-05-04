@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayIPConfiguration.md
-ms.openlocfilehash: fd88f6e1567c383b821d2cadefa0e41ced4d395a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bb1cfb7d0f9aca6f742c3e30dd43ebc3c7e92b82
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282789"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724320"
 ---
 # Add-AzApplicationGatewayIPConfiguration
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNode.md
-ms.openlocfilehash: dcaa48e6ab8db8818c81f09a7b8bcb2ac5a4ee29
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e638cf590d1e81d41e2322198a8e3ca72a43e879
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273573"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738208"
 ---
 # Remove-AzServiceFabricNode
 
 ## SYNOPSIS
-Hapus node dari tipe simpul tertentu dari kluster.
+Hapus simpul dari jenis node tertentu dari kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzServiceFabricNode -NumberOfNodesToRemove <Int32> [-ResourceGroupName] <
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzServiceFabricNode** untuk menghapus node dari tipe node tertentu dari kluster. Penghapusan hanya dilanjutkan jika memenuhi metrik kesehatan kluster.
+Gunakan **Remove-AzServiceFabricNode** untuk menghapus simpul dari jenis node tertentu dari kluster. Penghapusan hanya berlanjut jika memenuhi metrik kesehatan kluster.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Gunakan **Remove-AzServiceFabricNode** untuk menghapus node dari tipe node terte
 Remove-AzServiceFabricNode -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -NodeType 'nt1' -NumberOfNodesToRemove 2
 ```
 
-Perintah ini akan menghapus 2 node dari NodeType 'nt1'.
+Perintah ini akan menghapus 2 simpul dari NodeType 'nt1'.
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Nama tipe simpul
+Nama jenis node
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfNodesToRemove
-Jumlah node yang akan dihapus
+Jumlah simpul yang akan dihapus
 
 ```yaml
 Type: System.Int32
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

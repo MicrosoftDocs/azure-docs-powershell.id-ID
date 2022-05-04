@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebServiceKey.md
-ms.openlocfilehash: 257f982aed8dfb403e4adcff7da1d4d1ac5f5597
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a49926a30e38627506ef164919ad2dceb420e9e1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142873414"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739144"
 ---
 # Get-AzMlWebServiceKey
 
 ## SYNOPSIS
 Mengambil kunci layanan web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlwebservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzMlWebServiceKey -MlWebService <WebService> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Mendapatkan kunci akses untuk AZURE MACHINE LEARNING API runtime layanan web.
+Mendapatkan kunci akses untuk API runtime layanan web Azure Machine Learning.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Get-AzMlWebServiceKey -ResourceGroupName "myresourcegroup" -Name "mywebservicena
 Get-AzMlWebServiceKey -MlWebService $mlService
 ```
 
-$mlService adalah objek tipe Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
+$mlService adalah objek jenis Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan web tempat kunci akses diambil.
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

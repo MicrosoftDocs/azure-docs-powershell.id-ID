@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkIpConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkIpConfiguration.md
-ms.openlocfilehash: 3ac9a9543b21208aeda1bd2351b94d535f8f1f02
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 13131d98bb25cb2ebe506f7f69b1e80dabcb03c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143313767"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733366"
 ---
 # New-AzApplicationGatewayPrivateLinkIpConfiguration
 
 ## SYNOPSIS
 Membuat Konfigurasi Ip yang akan dikaitkan dengan Konfigurasi PrivateLink
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprivatelinkipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,16 +29,16 @@ New-AzApplicationGatewayPrivateLinkIpConfiguration -Name <String> -Subnet <PSSub
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayPrivateLinkIpConfiguration** membuat Konfigurasi Ip untuk dikaitkan dengan Konfigurasi PrivateLink untuk gateway aplikasi Azure.
+Cmdlet **New-AzApplicationGatewayPrivateLinkIpConfiguration** membuat Konfigurasi Ip yang akan dikaitkan dengan Konfigurasi PrivateLink untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
-### Contoh 1: PrivateLink Ip Configuration
+### Contoh 1: Konfigurasi Ip PrivateLink
 ```powershell
 $PrivateLinkIpConfiguration = New-AzApplicationGatewayPrivateLinkIpConfiguration -Name "ipConfig01" -Subnet $subnet -Primary
 ```
 
-Perintah ini membuat Konfigurasi IP PrivateLink bernama 'ipConfig01' menyimpan hasil dalam variabel bernama $PrivateLinkIpConfiguration. 
+Perintah ini membuat Konfigurasi IP PrivateLink bernama 'ipConfig01' menyimpan hasilnya dalam variabel bernama $PrivateLinkIpConfiguration. 
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama IpConfiguration
 
 ```yaml
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Primer
-Menunjukkan bahwa konfigurasi ip adalah yang utama.
+Menunjukkan konfigurasi ip adalah primer.
 
 ```yaml
 Type: SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Alamat ip pribadi ipConfiguration jika alokasi statis diinginkan.
+Alamat ip privat ipConfiguration jika alokasi statis diinginkan.
 
 ```yaml
 Type: String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddressVersion
-Versi ip dari konfigurasi ip
+Versi ip konfigurasi ip
 
 ```yaml
 Type: String
@@ -131,11 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

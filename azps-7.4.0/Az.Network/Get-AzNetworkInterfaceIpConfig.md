@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 04211b7b60eefc1b579affc5ddc6388bdeb95d6d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 09c970fd221a8e4e5a20570a1e55eb484f6311ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743850"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718274"
 ---
 # Get-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi IP antarmuka jaringan untuk antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterfaceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $nic1 = Get-AzNetworkInterface -Name mynic -ResourceGroupName $myrg
 Get-AzNetworkInterfaceIpConfig -Name ipconfig1 -NetworkInterface $nic1
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut mynic dan menyimpannya dalam variabel $nic 1. Perintah kedua mendapatkan konfigurasi IP yang disebut ipconfig1 antarmuka jaringan ini.
+Perintah pertama mendapatkan antarmuka jaringan yang ada yang disebut mynic dan menyimpannya dalam variabel $nic 1. Perintah kedua mendapatkan konfigurasi IP yang disebut ipconfig1 dari antarmuka jaringan ini.
     
 
 ## PARAMETERS
@@ -56,8 +59,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP jaringan yang didapatkan cmdlet ini.
+### -Name
+Menentukan nama konfigurasi IP jaringan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan objek **NetworkInterface** yang berisi konfigurasi IP jaringan yang didapatkan cmdlet ini.
+Menentukan objek **NetworkInterface** yang berisi konfigurasi IP jaringan yang didapat cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -98,7 +101,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceIPConfiguration
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

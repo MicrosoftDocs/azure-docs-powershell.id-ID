@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/lock-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 071bbedab06386b7803c038297b6c6532a853c77
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8dbb512ee0f9796c8e9c317e9e5b62321152dee1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994807"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731426"
 ---
 # Lock-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Mengunci ImmutabilityPolicy dari wadah blob Storage
+Mengunci ImmutabilityPolicy dari kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/lock-azrmstoragecontainerimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,47 +48,47 @@ Lock-AzRmStorageContainerImmutabilityPolicy [-InputObject] <PSImmutabilityPolicy
 ```
 
 ## DESCRIPTION
-**Cmdlet Lock-AzRmStorageContainerImmutabilityPolicy** mengunci ImmutabilityPolicy dari wadah blob Storage.
+Cmdlet **Lock-AzRmStorageContainerImmutabilityPolicy** mengunci ImmutabilityPolicy dari kontainer blob Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Kunci ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer
+### Contoh 1: Mengunci ImmutabilityPolicy dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini Mengunci ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
+Perintah ini Mengunci ImmutabilityPolicy dari kontainer blob Storage dengan nama akun Storage dan nama kontainer.
 
-### Contoh 2: Kunci ImmutabilityPolicy dari wadah blob Storage, dengan objek akun Storage
+### Contoh 2: Kunci ImmutabilityPolicy dari kontainer blob Storage, dengan objek akun Storage
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -Etag $policy.Etag -Force
 ```
 
-Perintah ini mengunci ImmutabilityPolicy wadah blob Storage, dengan objek akun Storage. 
+Perintah ini mengunci ImmutabilityPolicy dari kontainer blob Storage, dengan objek akun Storage. 
 
-### Contoh 3: Lock ImmutabilityPolicyof a Storage blob container, with container object
+### Contoh 3: Mengunci ImmutabilityPolicydari kontainer blob Storage, dengan objek kontainer
 ```
 PS C:\>$containerObject = Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -Name "myContainer"
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -Container $containerObject
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -Container $containerObject -Etag $policy.Etag -Force
 ```
 
-Perintah ini mengunci ImmutabilityPolicy wadah blob Storage dengan objek kontainer Storage.
+Perintah ini mengunci ImmutabilityPolicy dari kontainer blob Storage dengan objek kontainer Storage.
 
-### Contoh 4: Lock ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
+### Contoh 4: Kunci ImmutabilityPolicy dari kontainer blob Storage, dengan objek ImmutabilityPolicy
 ```
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Lock-AzRmStorageContainerImmutabilityPolicy -Force
 ```
 
-Perintah ini mengunci ImmutabilityPolicy dari wadah blob Storage, dengan objek ImmutabilityPolicy. 
+Perintah ini mengunci ImmutabilityPolicy dari kontainer blob Storage, dengan objek ImmutabilityPolicy. 
 
 ## PARAMETERS
 
 ### -Kontainer
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Etag
-Etag kebijakan keabadian.
+Kebijakan imutabilitas etag.
 
 ```yaml
 Type: System.String
@@ -144,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk menghapus ImmutabilityPolicy.
+### -Force
+Paksa untuk menghapus ImmutabilityPolicy.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-ImmutabilityPolicy Object to Remove
+Objek ImmutabilityPolicy untuk Dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSImmutabilityPolicy
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -219,8 +222,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

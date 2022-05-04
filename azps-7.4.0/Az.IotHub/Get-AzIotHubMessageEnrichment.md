@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubMessageEnrichment.md
-ms.openlocfilehash: 4e0898fa79a74fe054c423bc86213ce9fe160369
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc31d8625cd1bde698a99b9a70b80a92718ba7d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683100"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736733"
 ---
 # Get-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
 Mencantumkan semua pengayaan pesan atau pengayaan pesan tertentu untuk IoT Hub Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubmessageenrichment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubMessageEnrichment [-ResourceId] <String> [-Key <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Untuk penjelasan mendetail tentang pengayaan pesan dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview
+Untuk penjelasan terperinci tentang pengayaan pesan dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ key1 value1  {endpoint1, endpoint2}
 key2 value2  {endpoint3, endpoint4}
 ```
 
-Daftar semua pengayaan pesan di MyIotHub
+Mencantumkan semua pengayaan pesan di MyIotHub
 
 ### Contoh 2
 ```powershell
@@ -101,7 +104,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Key
+### -Kunci
 Kunci pengayaan.
 
 ```yaml
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Hub Iot
+### -Name
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

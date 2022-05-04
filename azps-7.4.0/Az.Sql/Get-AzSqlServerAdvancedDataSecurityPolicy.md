@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvancedDataSecurityPolicy.md
-ms.openlocfilehash: ea215fee9b90deac29a59e9851e5f5b476371bba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0419572f5d73710162d34e10a8fba2458b0931d2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142995671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741376"
 ---
 # Get-AzSqlServerAdvancedDataSecurityPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan Keamanan Data Tingkat Lanjut dari server.
+Mendapatkan kebijakan Advanced Data Security dari server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveradvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzSqlServerAdvancedDataSecurityPolicy [-InputObject <AzureSqlServerModel>] -
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerAdvancedDataSecurityPolicy** mengambil kebijakan Keamanan Data Tingkat Lanjut dari server.
+Cmdlet **Get-AzSqlServerAdvancedDataSecurityPolicy** mengambil kebijakan Advanced Data Security server.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ ServerName                   : Server01
 IsEnabled                    : True
 ```
 
-### Contoh 2: Mendapatkan Keamanan Data Tingkat Lanjut server dari sumber daya server
+### Contoh 2: Mendapatkan Server Advanced Data Security dari sumber daya server
 ```powershell
 Get-AzSqlServer `
            -ResourceGroupName "ResourceGroup01" `
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek server untuk digunakan dengan operasi kebijakan Keamanan Data Tingkat Lanjut
+Objek server yang akan digunakan dengan operasi kebijakan Advanced Data Security
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Server.Model.AzureSqlServerModel
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

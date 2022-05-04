@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetection.md
-ms.openlocfilehash: 28aec5e4a41f6eb92bbcc74080e07ed869c2d4bc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc866b239eb2e928579c7daaf7ffdd583ac96ee0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281349"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739846"
 ---
 # New-AzFirewallPolicyIntrusionDetection
 
 ## SYNOPSIS
 Membuat Deteksi Penyusupan Kebijakan Azure Firewall baru untuk dikaitkan dengan Kebijakan Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetection) untuk informasi terbaru.
 
 ## SYNTAX
 

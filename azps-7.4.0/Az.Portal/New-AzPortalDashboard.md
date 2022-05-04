@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/new-azpor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
-ms.openlocfilehash: 90735a34fc7306d593a019cd6c23fe796eb79d4f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0cf043dc940a475333ca5fcabe50e70487e29a43
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723186"
 ---
 # New-AzPortalDashboard
 
 ## SYNOPSIS
 Membuat atau memperbarui Dasbor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/new-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzPortalDashboard -Name <String> -ResourceGroupName <String> -Location <Stri
  [-WhatIf] [<CommonParameters>]
 ```
 
-### Membuat
+### Buat
 ```
 New-AzPortalDashboard -Name <String> -ResourceGroupName <String> -Dashboard <IDashboard>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -60,7 +63,7 @@ Buat dasbor baru menggunakan file templat dasbor yang disediakan.
 
 ### -Dasbor
 Definisi sumber daya dasbor bersama.
-Untuk membangun, lihat bagian CATATAN untuk properti DASBOR dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti DASBOR dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Portal.Models.Api201901Preview.IDashboard
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 
 ### -DashboardPath
 Jalur ke templat dasbor yang sudah ada.
-Templat dasbor mungkin diunduh dari portal.
+Templat dasbor dapat diunduh dari portal.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama dasbor.
 
 ```yaml
@@ -181,8 +184,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String
@@ -211,8 +214,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
