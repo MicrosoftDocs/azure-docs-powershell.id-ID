@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: 4af8207f72e1ab17a665ec0ecb248d218d5b7fa9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 10fb6e62b48d3702d0683fab6ffc7bf07028047e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306729"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144734014"
 ---
 # Set-AzSqlDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan penyimpanan jangka pendek cadangan.
+Menetapkan kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Set-AzSqlDatabaseBackupShortTermRetentionPolicy [-RetentionDays <Int32>] [-DiffB
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseBackupShortTermRetentionPolicy** mengatur kebijakan penyimpanan jangka pendek untuk database ini.
-Kebijakan ini adalah periode penyimpanan, dalam hari, untuk pencadangan pemulihan point-in-time dan frekuensi pencadangan disensial, dalam jam.
+Cmdlet **Set-AzSqlDatabaseBackupShortTermRetentionPolicy** menetapkan kebijakan penyimpanan jangka pendek untuk database ini.
+Kebijakan ini adalah periode retensi, dalam hari, untuk pencadangan pemulihan titik waktu dan frekuensi pencadangan diferensial, dalam jam.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ ResourceGroupName ServerName DatabaseName RetentionDays DiffBackupIntervalInHour
 resourcegroup01   server01   database01   6             24
 ```
 
-Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 6 hari penyimpanan dan 24 jam interval cadangan disendata.
+Perintah ini menetapkan kebijakan penyimpanan jangka pendek untuk database01 hingga 6 hari retensi dan 24 jam interval cadangan diferensial.
 
 ### Contoh 2
 ```powershell
@@ -69,7 +72,7 @@ ResourceGroupName ServerName DatabaseName RetentionDays DiffBackupIntervalInHour
 resourcegroup01   server01   database01   5             12
 ```
 
-Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 5 hari penyimpanan dan 12 jam interval cadangan disendata melalui pipa dalam objek database.
+Perintah ini menetapkan kebijakan penyimpanan jangka pendek untuk database01 hingga 5 hari retensi dan 12 jam interval cadangan diferensial melalui piping dalam objek database.
 
 ### Contoh 3
 ```powershell
@@ -82,7 +85,7 @@ ResourceGroupName ServerName DatabaseName RetentionDays DiffBackupIntervalInHour
 resourcegroup01   server01   database01   7             12
 ```
 
-Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 7 hari penyimpanan saja. DiffBackupIntervalInHours tidak berubah.  
+Perintah ini menetapkan kebijakan penyimpanan jangka pendek hanya untuk database01 hingga 7 hari retensi. DiffBackupIntervalInHours tidak berubah.  
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama Azure SQL Database untuk digunakan.
+Nama Azure SQL Database yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiffBackupIntervalInHours
-Frekuensi pencadangan dibingkai dalam jam.
+Frekuensi pencadangan diferensial dalam jam.
 
 ```yaml
 Type: System.Int32
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionDays
-Pengaturan penyimpanan cadangan, dalam beberapa hari.
+Pengaturan retensi cadangan, dalam beberapa hari.
 
 ```yaml
 Type: System.Int32
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL tempat database berada.
+Nama server Azure SQL tempat database berada.
 
 ```yaml
 Type: System.String
@@ -206,8 +209,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

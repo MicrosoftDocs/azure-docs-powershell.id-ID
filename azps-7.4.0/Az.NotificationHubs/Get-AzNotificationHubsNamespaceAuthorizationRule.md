@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespaceAuthorizationRule.md
-ms.openlocfilehash: 7f73c22232ddcbeb21d4c83fb5c8484415f9a7f8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 52cfc8dada4031dce7ce57fecc079f655d2bfdfa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142676386"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722376"
 ---
 # Get-AzNotificationHubsNamespaceAuthorizationRule
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aturan otorisasi yang terkait dengan ruang nama hub pemberitahuan.
+Mendapatkan informasi tentang aturan otorisasi yang terkait dengan namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubsnamespaceauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,41 +29,41 @@ Get-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNotificationHubsNamespaceAuthorizationRule** mengembalikan informasi tentang aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang terkait dengan ruang nama hub pemberitahuan.
-Anda bisa mengembalikan informasi tentang semua aturan yang terkait dengan ruang nama.
-Alternatifnya, dan dengan menyertakan parameter *AuthorizationRule* , Anda dapat mengembalikan informasi untuk aturan tertentu.
-Aturan otorisasi mengelola akses ke ruang nama.
-Hal ini dilakukan melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
+Cmdlet **Get-AzNotificationHubsNamespaceAuthorizationRule** mengembalikan informasi tentang aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang terkait dengan namespace hub pemberitahuan.
+Anda dapat mengembalikan informasi tentang semua aturan yang terkait dengan namespace.
+Atau, dan dengan menyertakan parameter *AuthorizationRule* , Anda dapat mengembalikan informasi untuk aturan tertentu.
+Aturan otorisasi mengelola akses ke namespace layanan.
+Ini dilakukan melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Tingkat platform dapat berupa salah satu hal berikut: 
-- Mendengarkan
-- Mengirim
+- Dengar
+- Kirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
-Cmdlet ini hanya mendapatkan aturan otorisasi yang terkait dengan ruang nama.
-Untuk mendapatkan informasi tentang ruang nama itu sendiri, gunakan Get-AzNotificationHubsNamespace.
+Cmdlet ini hanya mendapatkan aturan otorisasi yang terkait dengan namespace.
+Untuk mendapatkan informasi tentang namespace layanan itu sendiri, gunakan Get-AzNotificationHubsNamespace.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang semua aturan otorisasi yang ditetapkan ke ruang nama
+### Contoh 1: Mendapatkan informasi tentang semua aturan otorisasi yang ditetapkan ke namespace
 ```powershell
 Get-AzNotificationHubsNamespaceAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini mendapatkan informasi tentang semua aturan otorisasi yang ditetapkan ke ruang nama ContosoNamespace dan grup sumber daya ContosoNotificationsGroup.
+Perintah ini mendapatkan informasi tentang semua aturan otorisasi yang ditetapkan ke namespace ContosoNamespace dan grup sumber daya ContosoNotificationsGroup.
 
 ### Contoh 2: Mendapatkan informasi tentang aturan otorisasi
 ```powershell
 Get-AzNotificationHubsNamespaceAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -AuthorizationRule "ListenRule"
 ```
 
-Perintah ini mendapatkan informasi tentang aturan otorisasi ruang nama tunggal bernama ListenRule.
-Anda harus menyertakan ruang nama dan grup sumber daya saat mendapatkan informasi untuk aturan otorisasi tertentu.
+Perintah ini mendapatkan informasi tentang aturan otorisasi namespace layanan tunggal bernama ListenRule.
+Anda harus menyertakan namespace layanan dan grup sumber daya saat mendapatkan informasi untuk aturan otorisasi tertentu.
 
 ## PARAMETERS
 
 ### -AuthorizationRule
 Menentukan nama aturan autentikasi SAS.
-Aturan ini menentukan tipe akses yang dimiliki pengguna ke ruang nama.
+Aturan ini menentukan jenis akses yang dimiliki pengguna ke namespace layanan.
 
 ```yaml
 Type: System.String
@@ -90,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama tempat aturan otorisasi ditetapkan.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace tempat aturan otorisasi ditetapkan.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat aturan otorisasi ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

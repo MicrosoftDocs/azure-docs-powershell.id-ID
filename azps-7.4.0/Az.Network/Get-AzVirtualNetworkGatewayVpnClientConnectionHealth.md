@@ -5,16 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayVpnClientConnectionHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayVpnClientConnectionHealth.md
-ms.openlocfilehash: d5b7009626933ce0737efe5537005d6353480032
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d6dd30b3a6f4b4b977616c3ac561ced825f33a0f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871830"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721009"
 ---
 # Get-AzVirtualNetworkGatewayVpnClientConnectionHealth
 
-## SYNOPSIS Dapatkan daftar kesehatan koneksi klien vpn gateway jaringan virtual Azure untuk koneksi klien per vpn
+## SYNOPSIS Mendapatkan daftar kesehatan koneksi klien vpn dari gateway jaringan virtual Azure untuk koneksi klien per vpn
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayvpnclientconnectionhealth) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzVirtualNetworkGatewayVpnClientConnectionHealth -ResourceName <String> -Res
 ```
 
 ## DESCRIPTION
-Mencantumkan semua kesehatan koneksi klien vpn yang tersambung. Ini termasuk: vpnConnectionId vpnConnectionDuration vpnConnectionTime publicIpAddress privateIpAddress vpnUserName maxBandwidth egressPacketsTransferred egressBytesTransferred ingressPacketsTransferred ingressBytesTransferred maxPacketsPerSecond
+Mencantumkan semua kesehatan koneksi klien vpn yang terhubung. Ini termasuk: vpnConnectionId vpnConnectionDuration vpnConnectionTime publicIpAddress privateIpAddress vpnUserName maxBandwidth egressPacketsTransferred egressBytesTransferred ingressPacketsTransferred ingressBytesTransferred maxPacketsPerSecond
 
 ## EXAMPLES
 
@@ -61,11 +64,11 @@ IngressBytesTransferred   : 67968
 MaxPacketsPerSecond       : 1
 ```
 
-Untuk gateway jaringan virtual Azure bernama gatewayname dalam sumber daya grup sumber dayaGroup, mengambil koneksi klien vpn yang saat ini tersambung menggunakan OpenVpn. 
+Untuk gateway jaringan virtual Azure bernama gatewayname dalam grup sumber daya resourceGroup, mengambil koneksi klien vpn yang saat ini tersambung dengan menggunakan OpenVpn. 
 
 ### Contoh 2
 
-Dapatkan daftar kesehatan koneksi klien vpn gateway jaringan virtual Azure untuk koneksi klien per vpn. (autogenerasi)
+Dapatkan daftar kesehatan koneksi klien vpn dari gateway jaringan virtual Azure untuk koneksi klien per vpn. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

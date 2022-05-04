@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRule.md
-ms.openlocfilehash: 8c3ed7bd2120a3df71b8061b605ab8e2089fcc4d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: faf8f23fc864478dcf010905fa232dffef313c88
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672361"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144733132"
 ---
 # New-AzSentinelAlertRule
 
 ## SYNOPSIS
-Membuat Aturan Analitik (Aturan Peringatan).
+Membuat Aturan Analitik (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,9 +51,9 @@ New-AzSentinelAlertRule -ResourceGroupName <String> -WorkspaceName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSentinelAlertRule** membuat Analitik (Aturan Peringatan) di ruang kerja yang ditentukan.
-Anda harus menentukan salah satu dari tiga parameter, *Fusion*, *Terjadwal* atau *MicrosoftSecurityIncidentCreation*, untuk menentukan jenis aturan Peringatan yang akan dibuat.  Setiap Jenis memiliki paramater yang diperlukan berbeda.
-Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Cmdlet **New-AzSentinelAlertRule** membuat Analitik (Aturan Pemberitahuan) di ruang kerja yang ditentukan.
+Anda harus menentukan salah satu dari tiga parameter, *Fusion*, *Terjadwal* , atau *MicrosoftSecurityIncidentCreation*, untuk menentukan jenis aturan Pemberitahuan yang akan dibuat.  Setiap Jenis memiliki paramater yang diperlukan yang berbeda.
+Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -60,8 +63,8 @@ $AlertRuleTemplateName = "f71aba3d-28fb-450b-b192-4e76a83015c8"
 $AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Fusion -Enabled -AlertRuleTemplateName $AlertRuleTemplateName
 ```
 
-Contoh ini membuat **AlertRule** jenis *Fusion* berdasarkan Templat untuk *Deteksi Serangan Multistage Tingkat Lanjut*, lalu menyimpannya dalam variabel $AlertRule.<br/>
-Karena Anda menggunakan AlertRuleTemplate, Anda hanya perlu melewati parameter *-Enabled* untuk mengaktifkan dan mengaktifkan aturan ini.
+Contoh ini membuat **AlertRule** dari jenis *Fusion* berdasarkan Templat untuk *Deteksi Serangan Multistage Tingkat Lanjut*, lalu menyimpannya dalam variabel $AlertRule.<br/>
+Karena Anda menggunakan AlertRuleTemplate, Anda hanya perlu meneruskan parameter *-Enabled* untuk mengaktifkan dan mengaktifkan aturan ini.
 
 ### Contoh 2
 ```powershell
@@ -69,7 +72,7 @@ $AlertRuleTemplateName = "a2e0eb51-1f11-461a-999b-cd0ebe5c7a72"
 $AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -MicrosoftSecurityIncidentCreation -Enabled -AlertRuleTemplateName $AlertRuleTemplateName -DisplayName "Create incidents based on Azure Security Center for IoT" -ProductFilter "Azure Security Center for IoT"
 ```
 
-Contoh ini membuat **AlertRule** dari *jenis MicrosoftSecurityIncidentCreation* berdasarkan templat untuk *Membuat insiden berdasarkan Azure Security Center untuk pemberitahuan IoT*, lalu menyimpannya di $AlertRule varaible.
+Contoh ini membuat **AlertRule** dari jenis *MicrosoftSecurityIncidentCreation* berdasarkan templat untuk *Membuat insiden berdasarkan Azure Security Center untuk pemberitahuan IoT*, lalu menyimpannya di $AlertRule dapat bervariasi.
 
 ### Contoh 3
 ```powershell
@@ -77,7 +80,7 @@ $AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -Works
 ```
 
 Contoh ini membuat **DataConnector** dari jenis *Terjadwal* , lalu menyimpannya dalam variabel $AlertRule.<br/>
-*Harap diperhatikan bahwa kueri (parameter -Query) harus berada di satu baris sebagai string.*
+*Harap dicatat bahwa kueri (parameter -Query) harus berada di satu baris sebagai string.*
 
 ### Contoh 4
 ```powershell
@@ -100,13 +103,13 @@ $NewRuleObject = @{
 $NewRule= New-AzSentinelAlertRule @SentinelConnection @NewRuleObject
 ```
 
-Contoh ini menggunakan objek koneksi dan objek untuk mengonfigurasi logika aturan peringatan, termasuk kueri.<br/>
-*Catatan: Perhatikan tanda kutip ganda dalam contoh. Jika perlu menggunakan string dalam kueri, Anda perlu menggunakan tanda kutip ganda sebagai karakter escape.*
+Contoh ini menggunakan objek koneksi dan objek untuk mengonfigurasi logika aturan pemberitahuan, termasuk kueri.<br/>
+*Catatan: Perhatikan tanda kutip ganda dalam contoh. Jika Anda perlu menggunakan string dalam kueri, Anda perlu menggunakan tanda kutip ganda sebagai karakter escape.*
 
 ## PARAMETERS
 
 ### -AlertRuleId
-Id Aturan Peringatan.
+Id Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi.
+Keterangan.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayNamesExcludeFilter
-Nama Tampilan Aturan Pemberitahuan Tidak Termasuk Filter.
+Nama Tampilan Aturan Pemberitahuan Mengecualikan Filter.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -222,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Aturan Peringatan Diaktifkan.
+### -Diaktifkan
+Aturan Pemberitahuan Diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fusion
-Jenis Aturan Peringatan.
+Jenis Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -MicrosoftSecurityIncidentCreation
-Jenis Aturan Peringatan.
+Jenis Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductFilter
-Filter Produk Aturan Peringatan.
+Filter Produk Aturan Pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -283,7 +286,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Query
+### -Kueri
 Kueri Aturan Pemberitahuan.
 
 ```yaml
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -Terjadwal
-Jenis Aturan Peringatan.
+Jenis Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -SeveritiesFilter
-Filter Tingkat Keparahan Aturan Peringatan.
+Filter Tingkat Keparahan Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -373,8 +376,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Keparahan
-Keparahan Insiden.
+### -Tingkat keparahan
+Tingkat keparahan insiden.
 
 ```yaml
 Type: System.String
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionDuration
-Durasi Peredaman Aturan Peringatan.
+Durasi Penekanan Aturan Pemberitahuan.
 
 ```yaml
 Type: System.TimeSpan
@@ -405,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionEnabled
-Peredaman Aturan Peringatan Diaktifkan.
+Penekanan Aturan Pemberitahuan Diaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### -Taktik
-Taktik Aturan Peringatan.
+Taktik Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Collections.Generic.IList`1[System.String]
@@ -434,8 +437,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Triggeroperator
-Operator Pemicu Aturan Peringatan.
+### -TriggerOperator
+Operator Pemicu Aturan Pemberitahuan.
 
 ```yaml
 Type: Microsoft.Azure.Management.SecurityInsights.Models.TriggerOperator
@@ -451,7 +454,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerThreshold
-Ambang Pemicu Aturan Peringatan.
+Ambang Pemicu Aturan Pemberitahuan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -465,7 +468,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama Ruang Kerja.
 
 ```yaml
@@ -480,8 +483,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -511,11 +514,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.SecurityInsights.Models.AlertRules.PSSentinelAlertRule

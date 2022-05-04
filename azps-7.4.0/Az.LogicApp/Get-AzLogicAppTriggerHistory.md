@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerHistory.md
-ms.openlocfilehash: b08dc0a22e9bf925f908d2e297eb2f6c5b7ddb43
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e53475d04cd02585f0f2ba58038c0ea5e9a25e5d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143226305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735184"
 ---
 # Get-AzLogicAppTriggerHistory
 
 ## SYNOPSIS
 
 Mendapatkan riwayat pemicu dalam aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicapptriggerhistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Get-AzLogicAppTriggerHistory -ResourceGroupName <String> -Name <String> -Trigger
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzLogicAppTriggerHistory** mendapatkan riwayat pemicu dalam aplikasi logika dalam fitur Aplikasi Logika.
+Cmdlet **Get-AzLogicAppTriggerHistory** mendapatkan riwayat pemicu dalam aplikasi logika di fitur Logic Apps.
 Cmdlet ini mengembalikan objek **WorkflowTriggerHistory** .
 Tentukan aplikasi logika, grup sumber daya, dan pemicu.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -61,9 +64,9 @@ TrackingId  : f88a499b-f80f-4a28-9bbf-c4cc0d129700
 Type        : Microsoft.Logic/workflows/triggers/histories
 ```
 
-Perintah ini mendapatkan riwayat pemicu aplikasi logika tertentu untuk pemicu dalam aplikasi logika bernama LogicApp03.
+Perintah ini mendapatkan riwayat pemicu aplikasi logika tertentu untuk pemicu di aplikasi logika bernama LogicApp03.
 
-### Contoh 2: Dapatkan riwayat pemicu dari aplikasi logika
+### Contoh 2: Mendapatkan riwayat pemicu aplikasi logika
 
 ```powershell
 Get-AzLogicAppTriggerHistory -ResourceGroupName "ResourceGroup11" -Name "LogicApp07" -TriggerName "Trigger01"
@@ -99,7 +102,7 @@ TrackingId  : f88a499b-f80f-4a28-9bbf-c4cc0d129700
 Type        : Microsoft.Logic/workflows/triggers/histories
 ```
 
-Perintah ini mendapatkan riwayat pemicu alur kerja untuk pemicu dalam aplikasi logika bernama LogicApp07.
+Perintah ini mendapatkan riwayat pemicu alur kerja untuk pemicu di aplikasi logika bernama LogicApp07.
 
 ### Contoh 3: Mendapatkan seluruh riwayat pemicu aplikasi logika
 
@@ -107,7 +110,7 @@ Perintah ini mendapatkan riwayat pemicu alur kerja untuk pemicu dalam aplikasi l
 Get-AzLogicAppTriggerHistory -ResourceGroupName "ResourceGroup11" -Name "LogicApp08" -TriggerName "Trigger01" -FollowNextPageLink
 ```
 
-Perintah ini mendapatkan riwayat pemicu seluruh alur kerja untuk pemicu dalam aplikasi logika bernama LogicApp08 dengan mengikuti NextPageLink.
+Perintah ini mendapatkan seluruh riwayat pemicu alur kerja untuk pemicu di aplikasi logika bernama LogicApp08 dengan mengikuti NextPageLink.
 
 ### Contoh 4
 
@@ -115,7 +118,7 @@ Perintah ini mendapatkan riwayat pemicu seluruh alur kerja untuk pemicu dalam ap
 Get-AzLogicAppTriggerHistory -ResourceGroupName "ResourceGroup11" -Name "LogicApp08" -TriggerName "Trigger01" -FollowNextPageLink -MaximumFollowNextPageLink 1
 ```
 
-Perintah ini mendapatkan dua halaman pertama riwayat pemicu alur kerja untuk pemicu dalam aplikasi logika bernama LogicApp09 dengan mengikuti NextPageLink dan membatasi ukuran hasil menjadi dua halaman.
+Perintah ini mendapatkan dua halaman pertama riwayat pemicu alur kerja untuk pemicu di aplikasi logika bernama LogicApp09 dengan mengikuti NextPageLink dan membatasi ukuran hasil hingga dua halaman.
 Setiap halaman berisi tiga puluh hasil.
 
 ## PARAMETERS
@@ -184,9 +187,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
-Menentukan nama aplikasi logika di mana cmdlet ini mendapatkan riwayat pemicu.
+Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan riwayat pemicu.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

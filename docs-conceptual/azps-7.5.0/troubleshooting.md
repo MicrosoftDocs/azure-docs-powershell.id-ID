@@ -1,17 +1,17 @@
 ---
 description: Memecahkan masalah modul Azure Az PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Pemecahan masalah modul Azure Az PowerShell
-ms.openlocfilehash: 0e87d03bf7b2701d86cf465452ce5d1a59970898
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d87ba7f16a5a18cfa5de64196f13040acfe16149
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116208"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701922"
 ---
 # <a name="troubleshooting-the-azure-az-powershell-module"></a>Pemecahan masalah modul Azure Az PowerShell
 

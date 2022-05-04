@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppPlan.md
-ms.openlocfilehash: 8f161cf1e5942d9e07e7c53aa3e62c60bbc3dfa2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 29cbc9a66d007e85c2b46af4a57892c6b4753000
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286299"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706404"
 ---
 # Get-AzFunctionAppPlan
 
 ## SYNOPSIS
-Dapatkan paket aplikasi fungsi dalam langganan.
+Mendapatkan paket aplikasi fungsi dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionappplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzFunctionAppPlan [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
 ```
 
 ## DESCRIPTION
-Dapatkan paket aplikasi fungsi dalam langganan.
+Mendapatkan paket aplikasi fungsi dalam langganan.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ Func99-Windows-Premium819994758    Windows    ElasticPremium EP1     West Europe
 
 Perintah ini mendapatkan semua paket aplikasi fungsi.
 
-### Contoh 2: Dapatkan paket aplikasi fungsi menurut nama grup sumber daya.
+### Contoh 2: Dapatkan paket aplikasi fungsi berdasarkan nama grup sumber daya.
 ```powershell
 Get-AzFunctionAppPlan -ResourceGroupName "West Europe"
 ```
@@ -79,7 +82,7 @@ Func99-West-Europe-Windows-Premium Windows    ElasticPremium EP1     West Europe
 Func99-Windows-Premium1680894595   Windows    ElasticPremium EP1     West Europe Func99-West-Europe-Win-Premium   fe16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
 
-Perintah ini mendapatkan rencana aplikasi fungsi menurut nama grup sumber daya.
+Perintah ini mendapatkan paket aplikasi fungsi berdasarkan nama grup sumber daya.
 
 ### Contoh 3: Dapatkan paket aplikasi fungsi untuk langganan tertentu.
 ```powershell
@@ -105,7 +108,7 @@ Name                               WorkerType SkuTier        SkuName Location   
 Func99-West-Europe-Windows-Premium Windows    ElasticPremium EP1     Central US Func99-West-Europe-Win-Premium   3r16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
 
-Perintah ini mendapatkan rencana aplikasi fungsi berdasarkan lokasi.
+Perintah ini mendapatkan paket aplikasi fungsi berdasarkan lokasi.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi rencana aplikasi fungsi.
+Lokasi paket aplikasi fungsi.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama paket layanan.
 
 ```yaml
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
+Atur ID Langganan Azure.
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

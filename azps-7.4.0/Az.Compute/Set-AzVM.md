@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVM.md
-ms.openlocfilehash: 97e66316385b95763fab0260b5bf9d44da86036e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 948853394c4dda58d79fbda8b8530b651842b88c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687006"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686942"
 ---
 # Set-AzVM
 
 ## SYNOPSIS
-Menandai mesin virtual sebagai generalisasi.
+Menandai komputer virtual sebagai umum.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzVM [-ResourceGroupName] <String> [-Name] <String> [-Reapply] [-AsJob] [-No
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### SimulasiEvictionResourceGroupNameParameterSetName
+### SimulateEvictionResourceGroupNameParameterSetName
 ```
 Set-AzVM [-ResourceGroupName] <String> [-Name] <String> [-SimulateEviction] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -55,35 +58,35 @@ Set-AzVM [-Id] <String> [-Redeploy] [-AsJob] [-NoWait] [-DefaultProfile <IAzureC
  [<CommonParameters>]
 ```
 
-### Menerapkan ulangIdParameterSetName
+### ReapplyIdParameterSetName
 ```
 Set-AzVM [-Id] <String> [-Reapply] [-AsJob] [-NoWait] [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
-### SimulasiEvictionIdParameterSetName
+### SimulateEvictionIdParameterSetName
 ```
 Set-AzVM [-Id] <String> [-SimulateEviction] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVM** menandai mesin virtual sebagai umum.
-Sebelum Anda menjalankan cmdlet ini, masuk ke mesin virtual dan gunakan Sysprep untuk menyiapkan hard disk.
+Cmdlet **Set-AzVM** menandai komputer virtual sebagai umum.
+Sebelum Anda menjalankan cmdlet ini, masuk ke komputer virtual dan gunakan Sysprep untuk menyiapkan hard disk.
 
 ## EXAMPLES
 
-### Contoh 1: Menandai mesin virtual sebagai generalisasi
+### Contoh 1: Menandai komputer virtual sebagai umum
 ```powershell
 Set-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized
 ```
 
-Perintah ini menandai mesin virtual bernama VirtualMachine07 seperti yang digeneralisasi.
+Perintah ini menandai komputer virtual bernama VirtualMachine07 sebagai umum.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Generalized
-Menunjukkan bahwa cmdlet ini menandai mesin virtual seperti yang disertifikasi.
+Menunjukkan bahwa cmdlet ini menandai komputer virtual sebagai umum.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya mesin virtual.
+Menentukan ID Sumber Daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama mesin virtual tempat cmdlet ini beroperasi.
+### -Name
+Menentukan nama komputer virtual tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Terapkan ulang
-Untuk menerapkan kembali mesin virtual.
+Untuk menerapkan kembali komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,9 +190,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Redeploy
-Menunjukkan bahwa cmdlet ini secara manual menampung mesin virtual ke host Azure yang berbeda untuk memperbaiki masalah apa pun.
-Jika Anda menebus mesin virtual, mesin virtual akan dimulai ulang, yang menyebabkan hilangnya data drive sementara.
+### -Penyebaran ulang
+Menunjukkan bahwa cmdlet ini secara manual menyebarkan ulang komputer virtual ke host Azure yang berbeda untuk memperbaiki masalah apa pun.
+Jika Anda menyebarkan ulang komputer virtual, komputer virtual akan dimulai ulang, yang mengalihkan hilangnya data drive sementara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -219,8 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -SimulateEviction
-Menunjukkan bahwa cmdlet ini mensimulasikan penggusuran mesin virtual spot.
-Pengusiran akan terjadi dalam waktu 30 menit setelah panggilan API.
+Menunjukkan bahwa cmdlet ini mensimulasikan pengeluaran komputer virtual spot.
+Pengeluaran akan terjadi dalam waktu 30 menit setelah memanggil API.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -251,6 +254,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 

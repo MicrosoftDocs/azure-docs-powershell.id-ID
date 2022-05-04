@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azo3
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzO365PolicyProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzO365PolicyProperty.md
-ms.openlocfilehash: 847e1f2720dea22ded33573998c2f4aa7e43a453
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c151a754eb3ace5e8c70ce5348091695c4c0374f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938665"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718256"
 ---
 # New-AzO365PolicyProperty
 
 ## SYNOPSIS
-Buat objek kebijakan terpisah lalu lintas office 365.
+Buat objek kebijakan perincian lalu lintas office 365.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azo365policyproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzO365PolicyProperty [-Allow] [-Optimize] [-Default] [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Buat kebijakan diskusi terpisah office 365 untuk digunakan dengan cmdlet New-AzVpnSite dan Update-AzVpnSite.
+Buat kebijakan breakout office 365 untuk digunakan dengan cmdlet New-AzVpnSite dan Update-AzVpnSite.
 ## EXAMPLES
 
 ### Contoh 1
@@ -33,12 +36,12 @@ Buat kebijakan diskusi terpisah office 365 untuk digunakan dengan cmdlet New-AzV
 $policy = New-AzO365PolicyProperty -Allow -Optimize
 ```
 
-Buat kebijakan terpisah lalu lintas Office 365 dengan breakout yang diizinkan untuk mengizinkan dan mengoptimalkan kategori lalu lintas.
+Buat kebijakan breakout lalu lintas Office 365 dengan breakout yang diizinkan untuk mengizinkan dan mengoptimalkan kategori lalu lintas.
 
 ## PARAMETERS
 
 ### -Izinkan
-Memisahkan lalu lintas kategori yang diperbolehkan.
+Perincian lalu lintas kategori izinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -53,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Default
-Memisahkan lalu lintas kategori default.
+Memecah lalu lintas kategori default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Optimize
-Breakout mengoptimalkan lalu lintas kategori.
+### -Optimalkan
+Perincian lalu lintas kategori pengoptimalan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

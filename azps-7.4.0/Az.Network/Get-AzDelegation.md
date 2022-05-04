@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzDelegation.md
-ms.openlocfilehash: 8c87be28c149d0f097feb44cb140602d7416b2ed
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa0263b67ed18946952bcf8f440e4ca4e395c6d6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679500"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144717032"
 ---
 # Get-AzDelegation
 
 ## SYNOPSIS
 Dapatkan delegasi (atau semua delegasi) pada subnet tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDelegation [-Name <String>] -Subnet <PSSubnet> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDelegation** mendapatkan delegasi bernama dari subnet. Jika tidak ada delegasi yang dinamai, delegasi mengembalikan semua delegasi pada subnet yang disediakan.
+Cmdlet **Get-AzDelegation** mendapatkan delegasi bernama dari subnet. Jika tidak ada delegasi yang diberi nama, delegasi mengembalikan semua delegasi pada subnet yang disediakan.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Etag              : "thisisaguid"
 Id                : /subscriptions/subId/resourceGroups/rg/providers/Microsoft.Network/virtualNetworks/myvnet/subnets/mySubnet/delegations/myDelegation
 ```
 
-Baris pertama mengambil subnet yang menarik. Baris kedua memperlihatkan informasi delegasi untuk delegasi yang disebut "myDelegation."
+Baris pertama mengambil subnet yang diminati. Baris kedua menunjukkan informasi delegasi untuk delegasi yang disebut "myDelegation."
 
 ### 2: Mengambil semua delegasi subnet
 ```powershell
@@ -52,7 +55,7 @@ $subnet = Get-AzVirtualNetwork -Name "myVNet" -ResourceGroupName "myResourceGrou
 $delegations = Get-AzDelegation -Subnet $subnet
 ```
 
-Baris pertama mengambil subnet yang menarik. Baris kedua menyimpan daftar semua delegasi di _mySubnet_ dalam variabel $delegations.
+Baris pertama mengambil subnet yang diminati. Baris kedua menyimpan daftar semua delegasi di _mySubnet_ dalam variabel $delegations.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama delegasi
 
 ```yaml
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -120,6 +123,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzDelegation](./Add-AzDelegation.md)
  [New-AzDelegation](./New-AzDelegation.md)
- [Hapus-AzDelegation](./Remove-AzDelegation.md)
+ [Remove-AzDelegation](./Remove-AzDelegation.md)
  [Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
  [Get-AzVirtualNetworkSubnetConfig](./Get-AzVirtualNetworkSubnetConfig.md)

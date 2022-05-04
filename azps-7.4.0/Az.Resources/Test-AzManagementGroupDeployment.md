@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/test-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzManagementGroupDeployment.md
-ms.openlocfilehash: ec9dd0673684fbbe0f9ba03ad074aaa95dd8a355
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 328818e4c78d94784a9b97f5d5259c4d19e103cd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935173"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716474"
 ---
 # Test-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Memvalidasi penyebaran di grup manajemen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/test-azmanagementgroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -136,21 +139,21 @@ Cmdlet **Test-AzManagementGroupDeployment** menentukan apakah templat penyebaran
 
 ## EXAMPLES
 
-### Contoh 1: Uji penyebaran dengan templat kustom dan file parameter
+### Contoh 1: Menguji penyebaran dengan templat kustom dan file parameter
 ```powershell
 Test-AzManagementGroupDeployment -ManagementGroupId "myMG" -Location "West US" -TemplateFile "D:\Azure\Templates\OrgSetup.json" -TemplateParameterFile "D:\Azure\Templates\OrgParms.json"
 ```
 
-Perintah ini menguji penyebaran di grup manajemen "myMG" menggunakan file templat dan file parameter tertentu.
+Perintah ini menguji penyebaran di grup manajemen "myMG" menggunakan file templat dan file parameter yang diberikan.
 
-### Contoh 2: Uji penyebaran dengan objek templat kustom dan file parameter
+### Contoh 2: Menguji penyebaran dengan objek templat kustom dan file parameter
 ```powershell
 $TemplateFileText = [System.IO.File]::ReadAllText("D:\Azure\Templates\OrgSetup.json")
 $TemplateObject = ConvertFrom-Json $TemplateFileText -AsHashtable
 Test-AzManagementGroupDeployment -ManagementGroupId "myMG" -Location "West US" -TemplateObject $TemplateObject -TemplateParameterFile "D:\Azure\Templates\EngSiteParams.json"
 ```
 
-Perintah ini menguji penyebaran di grup manajemen "myMG" menggunakan hashtable dalam memori yang dibuat dari file templat tertentu dan file parameter.
+Perintah ini menguji penyebaran di grup manajemen "myMG" menggunakan hashtable dalam memori yang dibuat dari file templat yang diberikan dan file parameter.
 
 ## PARAMETERS
 
@@ -199,7 +202,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyebaran yang akan diuji. Jika tidak ditentukan, default ke nama file templat saat file templat disediakan
 
 ```yaml
@@ -214,8 +217,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pra
-Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
+### -Pre
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API pra-rilis saat secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryString
-String kueri (misalnya, token SAS) untuk digunakan dengan parameter TemplateUri. Akan digunakan dalam kasus templat yang ditautkan
+String kueri (misalnya, token SAS) yang akan digunakan dengan parameter TemplateUri. Akan digunakan dalam kasus templat yang ditautkan
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ### -SkipTemplateParameterPrompt
 Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
 Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
-Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan puas.
+Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan terpenuhi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateFile
-Jalur lokal ke file templat. Tipe file templat yang didukung: json dan bicep.
+Jalur lokal ke file templat. Jenis file templat yang didukung: json dan bicep.
 
 ```yaml
 Type: System.String
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSpecId
-ID sumber daya templatSpec yang akan digunakan.
+ID sumber daya templatSpec yang akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

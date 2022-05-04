@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: a1f09a5c6170fb9ac369c01f31f7a95b667f7980
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 96fb0a0019d07fb1d5ea5c32779d2cccbdcfa4c3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865710"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724968"
 ---
 # Add-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
-Menambahkan kunci kubah kunci ke Instans Terkelola yang disediakan. 
+Menambahkan kunci brankas kunci ke Instans Terkelola yang disediakan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlinstancekeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Add-AzSqlInstanceKeyVaultKey [-ResourceGroupName] <String> [-InstanceName] <Stri
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddAzureRmSqlManagedInstanceKeyVaultKeyInputObjectParameterSet
+### TambahkanAzureRmSqlManagedInstanceKeyVaultKeyInputObjectParameterSet
 ```
 Add-AzSqlInstanceKeyVaultKey [-Instance] <AzureSqlManagedInstanceModel> [-KeyId] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +41,7 @@ Add-AzSqlInstanceKeyVaultKey [-InstanceResourceId] <String> [-KeyId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzSqlInstanceKeyVaultKey menambahkan kunci kubah kunci ke Instans Terkelola yang disediakan. Instans yang dikelola harus memiliki izin 'get, wrapKey, unwrapKey' ke kubah, gunakan skrip berikut ini untuk memberikan izin ke instans yang dikelola.
+Cmdlet Add-AzSqlInstanceKeyVaultKey menambahkan kunci brankas kunci ke Instans Terkelola yang disediakan. Instans terkelola harus memiliki izin 'get, wrapKey, unwrapKey' ke vault, gunakan skrip berikut untuk memberikan izin ke instans terkelola.
 $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup' Set-AzKeyVaultAccessPolicy -VaultName ContosoVault -ObjectId $managedInstance.Identity.PrincipalId -PermissionsToKeys get, wrapKey, unwrapKey
 
 ## EXAMPLES
@@ -58,7 +61,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL instans terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans terkelola SQL bernama 'ContosoManagedInstanceName' di grup sumber daya 'ContosoResourceGroup'. 
 
 ### Contoh 2: Menggunakan objek instans terkelola
 ```powershell
@@ -76,7 +79,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL instans terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans terkelola SQL bernama 'ContosoManagedInstanceName' di grup sumber daya 'ContosoResourceGroup'. 
 
 ### Contoh 3: Menggunakan id sumber daya instans terkelola
 ```powershell
@@ -94,9 +97,9 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL instans terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans terkelola SQL bernama 'ContosoManagedInstanceName' di grup sumber daya 'ContosoResourceGroup'. 
 
-### Contoh 4: Menggunakan piping
+### Contoh 4: Menggunakan pipa
 ```powershell
 $managedInstance = Get-AzSqlInstance -Name 'ContosoManagedInstanceName' -ResourceGroupName 'ContosoResourceGroup'
 $managedInstance | Add-AzSqlInstanceKeyVaultKey -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901'
@@ -112,7 +115,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL instans terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans terkelola SQL bernama 'ContosoManagedInstanceName' di grup sumber daya 'ContosoResourceGroup'. 
 
 ## PARAMETERS
 
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

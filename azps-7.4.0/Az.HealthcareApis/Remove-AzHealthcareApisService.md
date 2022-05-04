@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Remove-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Remove-AzHealthcareApisService.md
-ms.openlocfilehash: 13c625369dce9775903575cc8d2efca338ec1f76
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d418c19731beb49d07eda776e46e6ac0932ea156
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720254"
 ---
 # Remove-AzHealthcareApisService
 
 ## SYNOPSIS
 Menghapus instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/remove-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Menghapus instans layanan.
 Remove-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup
 ```
 
-Menghapus layanan HealthcareApis yang sudah ada dengan nama yang disediakan dalam grup sumber daya yang disediakan.
+Menghapus layanan HealthcareApis yang ada dengan nama yang disediakan dalam grup sumber daya yang disediakan.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ $ResourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroup
 Remove-AzHealthcareApisService -ResourceId $ResourceId
 ```
 
-Menghapus layanan HealthcareApis yang sudah ada dengan ResourceId yang disediakan.
+Menghapus layanan HealthcareApis yang ada dengan ResourceId yang disediakan.
 
 ### Contoh 3
 ```powershell
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Layanan HealthcareApis.
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-HealthcareApis Service ResourceId.
+ResourceId Layanan HealthcareApis.
 
 ```yaml
 Type: System.String
@@ -171,8 +174,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsZone.md
-ms.openlocfilehash: 77bc606b1ee022aeac83cb74c139e68a968b2966
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 54597be4a0f493792e336363ae33e01f86318dd8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675054"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144696332"
 ---
 # New-AzPrivateDnsZone
 
 ## SYNOPSIS
-Membuat zona DNS pribadi baru.
+Membuat zona DNS privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/new-azprivatednszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,12 +28,12 @@ New-AzPrivateDnsZone -ResourceGroupName <String> -Name <String> [-Tag <Hashtable
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateDnsZone** membuat zona Sistem Nama Domain (DNS) pribadi baru dalam grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS pribadi yang unik untuk parameter *Nama* atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzPrivateDnsRecordSet untuk membuat kumpulan rekaman di zona.
-Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Cmdlet **New-AzPrivateDnsZone** membuat zona Sistem Nama Domain (DNS) privat baru di grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS privat unik untuk parameter *Nama* atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzPrivateDnsRecordSet untuk membuat kumpulan catatan di zona tersebut.
+Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat zona DNS Pribadi
+### Contoh 1: Membuat zona DNS Privat
 ```powershell
 $Zone = New-AzPrivateDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 ```
@@ -45,7 +48,7 @@ Tags                          : {}
 NumberOfRecordSets            : 1
 MaxNumberOfRecordSets         : 5000
 ```
-Perintah ini membuat zona DNS pribadi baru bernama myzone.com dalam grup sumber daya tertentu, lalu menyimpannya dalam variabel $Zone. $Zone objek terlihat seperti ini,
+Perintah ini membuat zona DNS privat baru bernama myzone.com dalam grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone. $Zone objek terlihat seperti ini,
 ## PARAMETERS
 
 ### -DefaultProfile
@@ -63,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama zona DNS privat untuk dibuat.
+### -Name
+Menentukan nama zona DNS privat yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan. Menunjukkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

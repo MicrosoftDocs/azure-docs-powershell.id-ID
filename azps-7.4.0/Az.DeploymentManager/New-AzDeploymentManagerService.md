@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerService.md
-ms.openlocfilehash: 62ad163c6ff135d13760faf3010e9cdb3a2d4bc9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dfc3225abbc5c18ed7d5f8bf0fa9611fb3ab327f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124083"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706440"
 ---
 # New-AzDeploymentManagerService
 
 ## SYNOPSIS
 Membuat layanan di bawah topologi layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzDeploymentManagerService [-ResourceGroupName] <String> -Name <String> -Loc
 Cmdlet **New-AzDeploymentManagerService** membuat layanan di bawah topologi layanan, dan mengembalikan objek yang mewakili layanan tersebut.
 Tentukan layanan berdasarkan namanya, topologi layanan di dalamnya dan nama grup sumber daya. 
 
-Cmdlet mengembalikan objek Service. Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzDeploymentManagerService.
+Cmdlet mengembalikan objek Layanan. Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan dengan menggunakan cmdlet Set-AzDeploymentManagerService.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet mengembalikan objek Service. Anda dapat mengubah objek ini secara lokal, 
 New-AzDeploymentManagerService -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -Name ContosoService1 -Location "Central US" -TargetLocation "East US" -TargetSubscriptionId XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 
-Membuat layanan baru dengan nama ContosoService1 di bawah topologi layanan ContosoServiceTopology dalam Resource Group ContosoResourceGroup, di lokasi Pusat AS. Properti TargetLocation menunjukkan bahwa layanan ContosoService1 harus digunakan ke kawasan AS Timur dalam langganan yang ditentukan.
+Membuat layanan baru dengan nama ContosoService1 di bawah topologi layanan ContosoServiceTopology di Grup Sumber Daya ContosoResourceGroup, di lokasi US Tengah. Properti TargetLocation menunjukkan bahwa layanan ContosoService1 harus disebarkan ke wilayah US Timur dalam langganan yang ditentukan.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyName
-Nama layanan topologi layanan milik layanan ini.
+Nama topologi layanan tempat layanan ini berada.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetLocation
-Menentukan lokasi tempat sumber daya di bawah layanan akan digunakan.
+Menentukan lokasi tempat sumber daya di bawah layanan akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetSubscriptionId
-Menentukan langganan sumber daya di bawah layanan yang akan digunakan.
+Menentukan langganan tempat sumber daya di bawah layanan akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -207,8 +210,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

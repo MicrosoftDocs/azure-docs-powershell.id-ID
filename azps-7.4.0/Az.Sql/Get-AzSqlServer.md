@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
-ms.openlocfilehash: 37b23d38d737632b0fe8fef5c4d6cd068d369838
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2216b993a2f9ddb5ad50389416ba1647407dd507
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799578"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741412"
 ---
-# Get-AzSqlServer
+# Dapatkan-AzSqlServer
 
 ## SYNOPSIS
 Mengembalikan informasi tentang server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Tentukan nama server untuk melihat informasi hanya untuk server tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua contoh SQL Server ditetapkan ke grup sumber daya
+### Contoh 1: Mendapatkan semua instans SQL Server yang ditetapkan ke grup sumber daya
 ```powershell
 Get-AzSqlServer -ResourceGroupName "ResourceGroup01"
 ```
@@ -79,7 +82,7 @@ FullyQualifiedDomainName : server01.database.windows.net
 
 Perintah ini mendapatkan informasi tentang server Azure SQL Database bernama Server01.
 
-### Contoh 3: Dapatkan semua contoh SQL Server dalam langganan
+### Contoh 3: Mendapatkan semua instans SQL Server dalam langganan
 ```powershell
 Get-AzResourceGroup | Get-AzSqlServer
 ```
@@ -118,7 +121,7 @@ FullyQualifiedDomainName : server03.database.windows.net
 
 Perintah ini mendapatkan informasi tentang semua server Azure SQL Database dalam langganan saat ini.
 
-### Contoh 4: Mendapatkan semua contoh SQL Server ditetapkan ke grup sumber daya menggunakan pemfilteran
+### Contoh 4: Mendapatkan semua instans SQL Server yang ditetapkan ke grup sumber daya menggunakan pemfilteran
 ```powershell
 Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "server*"
 ```
@@ -147,7 +150,7 @@ FullyQualifiedDomainName : server02.database.windows.net
 
 Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01 yang dimulai dengan "server".
 
-### Contoh 5: Dapatkan semua contoh SQL Server ditetapkan ke grup sumber daya dengan informasi administrator eksternal
+### Contoh 5: Dapatkan semua instans SQL Server yang ditetapkan ke grup sumber daya dengan informasi administrator eksternal
 ```powershell
 $val = Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ExpandActiveDirectoryAdministrator
 
@@ -191,7 +194,7 @@ AzureADOnlyAuthentication : True
 
 Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 6: Dapatkan informasi tentang server Azure SQL Database dengan informasi administrator eksternal
+### Contoh 6: Mendapatkan informasi tentang server Azure SQL Database dengan informasi administrator eksternal
 ```powershell
 $val = Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ExpandActiveDirectoryAdministrator
 ResourceGroupName        : resourcegroup01
@@ -278,8 +281,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: True
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -324,11 +327,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlServer](./New-AzSqlServer.md)
+[Baru-AzSqlServer](./New-AzSqlServer.md)
 
-[Remove-AzSqlServer](./Remove-AzSqlServer.md)
+[Hapus-AzSqlServer](./Remove-AzSqlServer.md)
 
-[Set-AzSqlServer](./Set-AzSqlServer.md)
+[Atur-AzSqlServer](./Set-AzSqlServer.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

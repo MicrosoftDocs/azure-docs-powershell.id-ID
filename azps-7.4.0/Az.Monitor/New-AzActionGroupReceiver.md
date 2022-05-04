@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroupReceiver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroupReceiver.md
-ms.openlocfilehash: 189c655674b8fbc175b4a91ae3d2575b1ee343be
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4db92e02c281f7b8349566cf9016576557c2c379
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680850"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741880"
 ---
 # New-AzActionGroupReceiver
 
 ## SYNOPSIS
 Membuat penerima grup tindakan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azactiongroupreceiver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Cmdlet **New-AzActionGroupReceiver** membuat penerima grup tindakan baru dalam m
 
 ## EXAMPLES
 
-### Contoh 1: Membuat penerima Email baru dalam memori.
+### Contoh 1: Buat penerima Email baru dalam memori.
 ```powershell
 $emailReceiver = New-AzActionGroupReceiver -Name 'emailReceiver1' -EmailReceiver -EmailAddress 'user1@example.com'
 ```
@@ -103,7 +106,7 @@ $smsReceiver = New-AzActionGroupReceiver -Name 'smsReceiver1' -SmsReceiver -Coun
 
 Perintah ini membuat penerima SMS baru dalam memori.
 
-### Contoh 3: Membuat penerima webhook baru dalam memori.
+### Contoh 3: Buat penerima webhook baru dalam memori.
 ```powershell
 $webhookReceiver = New-AzActionGroupReceiver -Name 'webhookReceiver1' -WebhookReceiver -ServiceUri 'http://test.com'
 ```
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionId
-id koneksi itsm penerima ini
+id koneksi itsm dari penerima ini
 
 ```yaml
 Type: System.String
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionName
-namafungsi
+functionName
 
 ```yaml
 Type: System.String
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentifierUri
-uri Pengidentifikasi untuk aad auth
+uri Pengidentifikasi untuk autentikasi aad
 
 ```yaml
 Type: System.String
@@ -367,8 +370,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -IsGlobalRunbook
-mengindikasikan apakah instans ini adalah runbook global
+### -IsglobalRunbook
+menunjukkan apakah instans ini adalah runbook global
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -412,7 +415,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk penerima.
 
 ```yaml
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-objek aplikasi webhook Id untuk aad auth
+ID objek aplikasi webhook untuk autentikasi aad
 
 ```yaml
 Type: System.String
@@ -457,8 +460,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kawasan
-wilayah itsm penerima ini
+### -Wilayah
+Wilayah itsm penerima ini
 
 ```yaml
 Type: System.String
@@ -488,7 +491,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleId
-Id peran lengan penerima
+Id peran arm penerima
 
 ```yaml
 Type: System.String
@@ -548,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-id penyewa untuk aad auth
+id penyewa untuk autentikasi aad
 
 ```yaml
 Type: System.String
@@ -563,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketConfiguration
-itsm TicketConfiguration of this receiver
+Itsm TicketConfiguration dari penerima ini
 
 ```yaml
 Type: System.String
@@ -593,7 +596,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseCommonAlertSchema
-Bendera apakah akan menggunakan skema pemberitahuan umum . Nilai ini akan diabaikanuntuk SMS, push Aplikasi Azure, ITSM dan Voice recievers.
+Bendera apakah akan menggunakan skema pemberitahuan umum . Nilai ini akan diabaikanuntuk SMS, Pendorongan Aplikasi Azure, ITSM, dan pengikat Suara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -698,7 +701,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

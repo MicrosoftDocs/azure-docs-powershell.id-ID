@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/new-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccountKey.md
-ms.openlocfilehash: cbfc7735ebcd9d4b41990ebb2c14b0960ea11610
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 609b088f2ebdb68126e7a21df35b3febe7a87731
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284067"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740998"
 ---
 # New-AzMapsAccountKey
 
 ## SYNOPSIS
-Regenerasi kunci utama atau sekunder untuk digunakan dengan API Peta.
+Regenerasi kunci primer atau sekunder untuk digunakan dengan API Peta.
 Kunci lama akan segera berhenti bekerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/new-azmapsaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ New-AzMapsAccountKey -InputObject <IMapsIdentity> -KeyType <KeyType> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Regenerasi kunci utama atau sekunder untuk digunakan dengan API Peta.
+Regenerasi kunci primer atau sekunder untuk digunakan dengan API Peta.
 Kunci lama akan segera berhenti bekerja.
 
 ## EXAMPLES
 
-### Contoh 1: Meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta
+### Contoh 1: Meregenerasi kunci primer atau sekunder untuk digunakan dengan API Peta
 ```powershell
 New-AzMapsAccountKey -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -KeyType primary
 ```
@@ -49,10 +52,10 @@ PrimaryKey                                  PrimaryKeyLastUpdated        Seconda
 W5VYcbrpyt4urV2-4C-lXepnHoy6EIOHnoLL_wjEtaw 2021-05-20T05:50:27.1509422Z zi6W1bw4zIYLjDj_DRRrC3jBkX-APgBebwx4cZBKJOU 2021-05-20T05:41:03.452571Z
 ```
 
-Perintah ini meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta.
+Perintah ini meregenerasi kunci primer atau sekunder untuk digunakan dengan API Peta.
 Kunci lama akan segera berhenti bekerja.
 
-### Contoh 2: Meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta menurut pipeline
+### Contoh 2: Meregenerasi kunci primer atau sekunder untuk digunakan dengan API Peta menurut alur
 ```powershell
 Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 | New-AzMapsAccountKey -KeyType primary
 ```
@@ -63,7 +66,7 @@ PrimaryKey                                  PrimaryKeyLastUpdated        Seconda
 xoGsuTFWuG6xq0re7EdA7nCbDhvRoisZfLHvKfdzIhQ 2021-05-20T05:55:21.7797268Z zi6W1bw4zIYLjDj_DRRrC3jBkX-APgBebwx4cZBKJOU 2021-05-20T05:41:03.452571Z
 ```
 
-Perintah ini meregenerasi kunci utama atau sekunder untuk digunakan dengan API Peta menurut saluran.
+Perintah ini meregenerasi kunci primer atau sekunder untuk digunakan dengan API Peta menurut alur.
 Kunci lama akan segera berhenti bekerja.
 
 ## PARAMETERS
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Apakah operasi merujuk ke kunci utama atau sekunder.
+Apakah operasi mengacu pada kunci primer atau sekunder.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Support.KeyType
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Akun Peta.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -159,8 +162,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -214,7 +217,7 @@ INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-AzW
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppCertificate.md
-ms.openlocfilehash: 0018ebf774b40e94fb140f14827ee6f26beea574
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6a2fd91ee0d8599bdbc546b6151ee8839299d6da
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992341"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731354"
 ---
 # New-AzWebAppCertificate
 
 ## SYNOPSIS
 Membuat sertifikat terkelola layanan Aplikasi untuk Azure Web App. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzWebAppCertificate [-ResourceGroupName] <String> [-WebAppName] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebAppCertificate** membuat Sertifikat yang Dikelola Azure App Service
+Cmdlet **New-AzWebAppCertificate** membuat Sertifikat Terkelola Azure App Service
 
 ## EXAMPLES
 
@@ -35,21 +38,21 @@ Cmdlet **New-AzWebAppCertificate** membuat Sertifikat yang Dikelola Azure App Se
 New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net"
 ```
 
-Perintah ini membuat Sertifikat terkelola App Service untuk WebApp yang diberikan
+Perintah ini membuat Sertifikat Terkelola App Service untuk WebApp yang diberikan
 
 ### Contoh 2
 ```powershell
 New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net" -Slot "test" -AddBinding
 ```
 
-Perintah ini membuat Sertifikat terkelola App Service dan mengikat ke Slot WebApp tertentu.
+Perintah ini membuat Sertifikat Terkelola App Service dan mengikat ke Slot WebApp yang diberikan.
 
 ### Contoh 3
 ```powershell
 New-AzWebAppCertificate -ResourceGroupName Default-Web-WestUS -WebAppName "ContosoSite" -Name "ContosoCert" -HostName "www.ContosoSite.net" -AddBinding
 ```
 
-Perintah ini membuat Sertifikat terkelola App Service dan mengikat ke WebApp tertentu.
+Perintah ini membuat Sertifikat Terkelola App Service dan mengikat webApp yang diberikan.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sertifikat.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslState
-Opsi status ssl.
+Opsi status Ssl.
 Gunakan 'SniEnabled' atau 'IpBasedEnabled'.
 Opsi default adalah 'SniEnabled'.
 
@@ -176,8 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,11 +210,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

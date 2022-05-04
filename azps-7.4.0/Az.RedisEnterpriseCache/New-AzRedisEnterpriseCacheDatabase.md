@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: 3ca71c8a58222a7d39507e018c9df29bad9707fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c26ff0ecabfa7517116f8cbd68d630b7b839a282
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142802206"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731750"
 ---
 # New-AzRedisEnterpriseCacheDatabase
 
 ## SYNOPSIS
-Membuat database untuk singgahan Redis Enterprise.
+Membuat database untuk cache Redis Enterprise.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/new-azredisenterprisecachedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzRedisEnterpriseCacheDatabase -ClusterName <String> -ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-Membuat database untuk singgahan Redis Enterprise.
+Membuat database untuk cache Redis Enterprise.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat database untuk singgahan Redis Enterprise
+### Contoh 1: Membuat database untuk cache Redis Enterprise
 ```powershell
 New-AzRedisEnterpriseCacheDatabase -Name "MyCache" -ResourceGroupName "MyGroup" -Module "{name:RedisBloom, args:`"ERROR_RATE 0.00 INITIAL_SIZE 400`"}","{name:RedisTimeSeries, args:`"RETENTION_POLICY 20`"}","{name:RediSearch}" -ClientProtocol "Plaintext" -EvictionPolicy "NoEviction" -ClusteringPolicy "EnterpriseCluster" -Port 10000 -AofPersistenceEnabled -AofPersistenceFrequency "always"
 ```
@@ -44,7 +47,7 @@ West US  MyCache Microsoft.Cache/redisEnterprise      {default}
 
 ```
 
-Perintah ini membuat database bernama default untuk singgahan Redis Enterprise bernama MyCache.
+Perintah ini membuat database bernama default untuk cache Redis Enterprise bernama MyCache.
 
 ## PARAMETERS
 
@@ -66,8 +69,8 @@ Accept wildcard characters: False
 ```
 
 ### -AofPersistenceFrequency
-[Pratinjau] Mengatur frekuensi saat data ditulis ke disk jika persistensi AOF diaktifkan.
-Nilai yang diperbolehkan: 1s, selalu
+[Pratinjau] Mengatur frekuensi di mana data ditulis ke disk jika persistensi AOF diaktifkan.
+Nilai yang diizinkan: 1dt, selalu
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.AofFrequency
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientProtocol
-Menentukan apakah klien redis dapat tersambung menggunakan protokol redis terenkripsi TLS atau plaintext - defaultnya adalah nilai Terenkripsi Yang Diperbolehkan: Terenkripsi, Plaintext
+Menentukan apakah klien redis dapat terhubung menggunakan protokol redis terenkripsi TLS atau teks biasa - defaultnya adalah Nilai yang Diizinkan Terenkripsi: Terenkripsi, Teks Biasa
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.Protocol
@@ -112,8 +115,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClusteringPolicy
-Kebijakan kluster - defaultnya adalah OSSCluster Yang Ditentukan saat membuat waktu.
-Nilai yang diperbolehkan: EnterpriseCluster, OSSCluster
+Kebijakan pengklusteran - defaultnya adalah OSSCluster Yang Ditentukan pada waktu pembuatan.
+Nilai yang diizinkan: EnterpriseCluster, OSSCluster
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.ClusteringPolicy
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Kebijakan penggusuran Redis - default adalah nilai yang diizinkan VolatileLRU: AllKeysLFU, AllKeysLRU, AllKeysRandom, VolatileLRU, VolatileLFU, VolatileTTL, VolatileRandom, NoEviction
+Kebijakan pengeluaran Redis - defaultnya adalah Nilai yang diizinkan VolatileLRU: AllKeysLFU, AllKeysLRU, AllKeysRandom, VolatileLRU, VolatileLFU, VolatileTTL, VolatileRandom, NoEviction
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.EvictionPolicy
@@ -173,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -Module
-Rangkaian modul redis opsional untuk diaktifkan dalam database ini - modul hanya dapat ditambahkan pada waktu pembuatan.
-Untuk membangun, lihat bagian CATATAN untuk properti MODULE dan membuat tabel hash.
+Set modul redis opsional untuk diaktifkan dalam database ini - modul hanya dapat ditambahkan pada waktu pembuatan.
+Untuk membuat, lihat bagian CATATAN untuk properti MODUL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Models.Api20210301.IModule[]
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port TCP dari titik akhir database - default ke port yang tersedia Ditentukan saat membuat waktu.
+Port TCP titik akhir database - default ke port yang tersedia Ditentukan pada waktu pembuatan.
 
 ```yaml
 Type: System.Int32
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ### -RdbPersistenceEnabled
 [Pratinjau] Mengatur apakah persistensi RDB diaktifkan.
 Setelah mengaktifkan persistensi RDB, Anda tidak akan dapat menonaktifkannya.
-Dukungan untuk menonaktifkan kegigihan RDB setelah mengaktifkan akan ditambahkan di kemudian hari.
+Dukungan untuk menonaktifkan persistensi RDB setelah mengaktifkan akan ditambahkan di kemudian hari.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,8 +239,8 @@ Accept wildcard characters: False
 ```
 
 ### -RdbPersistenceFrequency
-[Pratinjau] Mengatur frekuensi pembuatan snapshot database jika persistensi RDB diaktifkan.
-Nilai yang diperbolehkan: 1h, 6h, 12h
+[Pratinjau] Mengatur frekuensi di mana rekam jepret database dibuat jika persistensi RDB diaktifkan.
+Nilai yang diizinkan: 1h, 6h, 12h
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Support.RdbFrequency
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -282,8 +285,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -331,9 +334,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-MODULE <IModule[]>: Rangkaian modul redis opsional untuk diaktifkan dalam database ini - modul hanya dapat ditambahkan pada waktu pembuatan.
+MODUL <IModule[]>: Set modul redis opsional untuk diaktifkan dalam database ini - modul hanya dapat ditambahkan pada waktu pembuatan.
   - `Name <String>`: Nama modul, misalnya 'RedisBloom', 'RediSearch', 'RedisTimeSeries'
-  - `[Arg <String>]`: Opsi konfigurasi untuk modul, misalnya 'ERROR_RATE 0.00 INITIAL_SIZE 400'.
+  - `[Arg <String>]`: Opsi konfigurasi untuk modul, misalnya 'ERROR_RATE 0,00 INITIAL_SIZE 400'.
 
 ## RELATED LINKS
 

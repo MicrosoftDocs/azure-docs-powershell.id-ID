@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseIntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseIntegrationRuntimeNode.md
-ms.openlocfilehash: cdf6e38ce54319da18299262e245aeac0d73fc3f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6b3e08075ecf68bbfde6664ec832e0654f0bfbbd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931303"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740314"
 ---
 # Update-AzSynapseIntegrationRuntimeNode
 
 ## SYNOPSIS
-Memperbarui simpul runtime integrasi yang dihosting sendiri.
+Memperbarui simpul runtime integrasi yang dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapseintegrationruntimenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Update-AzSynapseIntegrationRuntimeNode -InputObject <PSIntegrationRuntime> -Name
 ```
 
 ## DESCRIPTION
-**Cmdlet Update-AzSynapseIntegrationRuntimeNode** memperbarui properti simpul runtime integrasi yang dihosting sendiri di ruang kerja. Saat ini hanya mendukung pembaruan 'ConcurrentJobsLimit'.
+Cmdlet **Update-AzSynapseIntegrationRuntimeNode** memperbarui properti simpul runtime integrasi yang dihost sendiri di ruang kerja. Saat ini hanya mendukung pembaruan 'ConcurrentJobsLimit'.
 
 ## EXAMPLES
 
@@ -56,13 +59,13 @@ Update-AzSynapseIntegrationRuntimeNode -InputObject <PSIntegrationRuntime> -Name
 Update-AzSynapseIntegrationRuntimeNode -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -ConcurrentJobsLimit 3
 ```
 
-Cmdlet memperbarui 'ConcurrentJobsLimit' ke 3 untuk node 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir'.
+Cmdlet memperbarui 'ConcurrentJobsLimit' ke 3 untuk node 'Node_1' dalam runtime integrasi yang dihost sendiri 'test-selfhost-ir'.
 
 ## PARAMETERS
 
 ### -ConcurrentJobsLimit
-Jumlah pekerjaan serentak yang diizinkan untuk berjalan pada simpul runtime integrasi.
-Nilai antara 1 dan maxConcurrentJobs diperbolehkan.
+Jumlah pekerjaan bersamaan yang diizinkan untuk berjalan pada simpul runtime integrasi.
+Nilai antara 1 dan maxConcurrentJobs diizinkan.
 
 ```yaml
 Type: System.Int32
@@ -121,7 +124,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama simpul runtime integrasi.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -196,8 +199,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

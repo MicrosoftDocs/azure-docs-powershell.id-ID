@@ -5,27 +5,30 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplaceBulkPrivateStoreCollectionAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplaceBulkPrivateStoreCollectionAction.md
-ms.openlocfilehash: e135ea1046da86022d8f1cc8de7b7df328a864ec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f1e861964ef7d6dfa4dbd95757810eeea898ec46
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940555"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684966"
 ---
 # Set-AzMarketplaceBulkPrivateStoreCollectionAction
 
 ## SYNOPSIS
 Melakukan tindakan pada koleksi massal
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplacebulkprivatestorecollectionaction) untuk informasi terbaru.
+
 ## SYNTAX
 
-### MassalExpanded (Default)
+### BulkExpanded (Default)
 ```
 Set-AzMarketplaceBulkPrivateStoreCollectionAction -PrivateStoreId <String> [-Action <String>]
  [-CollectionId <String[]>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Massal
+### /Bulk
 ```
 Set-AzMarketplaceBulkPrivateStoreCollectionAction -PrivateStoreId <String> -Payload <IBulkCollectionsPayload>
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -52,7 +55,7 @@ Perintah ini Melakukan preformasi tindakan massal pada koleksi
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan untuk dijalankan (Misalnya: EnableCollections, DisableCollections)
+Tindakan yang harus dilakukan (Misalnya: EnableCollections, DisableCollections)
 
 ```yaml
 Type: System.String
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectionId
-daftar id koleksi tempat tindakan dijalankan pada
+id koleksi mencantumkan tindakan yang dilakukan
 
 ```yaml
 Type: System.String[]
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Properti tindakan kumpulan massal Untuk membangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
+Properti tindakan koleksi massal Untuk membangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.Api20210601.IBulkCollectionsPayload
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -126,8 +129,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -178,8 +181,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 PAYLOAD <IBulkCollectionsPayload>: Properti tindakan pengumpulan massal
-  - `[Action <String>]`: Tindakan untuk dijalankan (Misalnya: EnableCollections, DisableCollections)
-  - `[CollectionId <String[]>]`: pengumpulan id daftar bahwa tindakan dilakukan pada
+  - `[Action <String>]`: Tindakan yang harus dilakukan (Misalnya: EnableCollections, DisableCollections)
+  - `[CollectionId <String[]>]`: id koleksi mencantumkan bahwa tindakan dilakukan pada
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzScheduledQueryRule.md
-ms.openlocfilehash: 248c32859fdbad81701affe4e51b14c08c925296
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a07b8d0e5aa07acb2f1218ee1d93ce452421af51
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283311"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724428"
 ---
 # Set-AzScheduledQueryRule
 
 ## SYNOPSIS
 Memperbarui Aturan Pemberitahuan Log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azscheduledqueryrule) untuk informasi terbaru.
 
 ## SYNTAX
 

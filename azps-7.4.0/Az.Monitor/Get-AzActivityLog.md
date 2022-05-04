@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLog.md
-ms.openlocfilehash: 1317bc0635630efad29ef9214af5c041d9bf7f2f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36e40d713eb7bd4e41044cbb16ae888351398f22
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745596"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738838"
 ---
 # Get-AzActivityLog
 
 ## SYNOPSIS
-Mengambil aktivitas Log Aktivitas.
+Mengambil peristiwa Log Aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azactivitylog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,157 +57,157 @@ Get-AzActivityLog [-StartTime <DateTime>] [-EndTime <DateTime>] [-Status <String
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzActivityLog mengambil kejadian Log Aktivitas. Kejadian dapat dikaitkan dengan ID langganan saat ini, ID korlasi, grup sumber daya, ID sumber daya, atau penyedia sumber daya.
+Cmdlet Get-AzActivityLog mengambil peristiwa Log Aktivitas. Peristiwa dapat dikaitkan dengan ID langganan saat ini, ID korelasi, grup sumber daya, ID sumber daya, atau penyedia sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan log kejadian menurut ID langganan
+### Contoh 1: Mendapatkan log peristiwa berdasarkan ID langganan
 ```powershell
 Get-AzActivityLog
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID langganan pengguna yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID langganan pengguna yang berlangsung 7 hari sejak tanggal/waktu saat ini.
 
-### Contoh 2: Dapatkan log kejadian berdasarkan ID langganan dengan jumlah peristiwa maksimum
+### Contoh 2: Mendapatkan log peristiwa berdasarkan ID langganan dengan jumlah maksimum peristiwa
 ```powershell
 Get-AzActivityLog -MaxRecord 100
 ```
 
-Perintah ini mencantumkan paling banyak 100 kejadian yang terkait dengan ID langganan pengguna yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 100 peristiwa yang terkait dengan ID langganan pengguna yang berlangsung 7 hari sejak tanggal/waktu saat ini.
 
-### Contoh 3: Dapatkan log kejadian menurut ID langganan dengan waktu mulai.
+### Contoh 3: Dapatkan log peristiwa berdasarkan ID langganan dengan waktu mulai.
 ```powershell
 Get-AzActivityLog -StartTime 2017-06-01T10:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID langganan pengguna yang berlangsung pada atau setelah 2017-06-01T10:30 waktu setempat jika tanggal/waktu tersebut tidak lebih lama dari 90 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID langganan pengguna yang terjadi pada atau setelah 2017-06-01T10:30 waktu setempat jika tanggal/waktu tersebut tidak lebih lama dari 90 hari dari tanggal/waktu saat ini.
 
-### Contoh 4: Dapatkan log kejadian menurut ID langganan dengan waktu mulai dan waktu akhir.
+### Contoh 4: Dapatkan log peristiwa berdasarkan ID langganan dengan waktu mulai dan waktu akhir.
 ```powershell
 Get-AzActivityLog -StartTime 2017-04-01T10:30 -EndTime 2017-04-14T11:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID langganan pengguna yang berlangsung pada atau setelah 2017-04-01T10:30 waktu setempat, dan sebelum 2017-04-14T11:30 waktu setempat jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode penyimpanan.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID langganan pengguna yang terjadi pada atau setelah 2017-04-01T10:30 waktu setempat, dan sebelum 2017-04-14T11:30 waktu setempat jika seluruh rentang tanggal/waktu tidak lebih dari 90 hari dari tanggal/waktu saat ini, yaitu: periode retensi.
 
-### Contoh 5: Dapatkan log kejadian menurut ID korlasi
+### Contoh 5: Mendapatkan log peristiwa dengan ID korelasi
 ```powershell
 Get-AzActivityLog -CorrelationId "60c694d0-e46f-4c12-bed1-9b7aef541c23"
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID korlasi tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini. 
-**CATATAN**: ini biasanya hanya satu acara.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID korelasi yang ditentukan yang berlangsung 7 hari sejak tanggal/waktu saat ini. 
+**CATATAN**: ini biasanya hanya satu peristiwa.
 
-### Contoh 6: Dapatkan log kejadian menurut ID korlasi dengan jumlah peristiwa maksimum
+### Contoh 6: Mendapatkan log peristiwa dengan ID korelasi dengan jumlah maksimum peristiwa
 ```powershell
 Get-AzActivityLog -CorrelationId "60c694d0-e46f-4c12-bed1-9b7aef541c23" -MaxRecord 100
 ```
 
-Perintah ini mencantumkan paling banyak 100 kejadian yang terkait dengan ID korlasi tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini. 
-**CATATAN**: ini biasanya hanya satu acara.
+Perintah ini mencantumkan paling banyak 100 peristiwa yang terkait dengan ID korelasi yang ditentukan yang berlangsung 7 hari sejak tanggal/waktu saat ini. 
+**CATATAN**: ini biasanya hanya satu peristiwa.
 
-### Contoh 7: Dapatkan log kejadian menurut ID korlasi dan waktu mulai
+### Contoh 7: Mendapatkan log peristiwa dengan ID korelasi dan waktu mulai
 ```powershell
 Get-AzActivityLog -CorrelationId "60c694d0-e46f-4c12-bed1-9b7aef541c23" -StartTime 2017-05-22T04:30:00
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID korlasi tertentu yang terjadi pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
-**CATATAN**: ini biasanya hanya satu acara.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID korelasi yang ditentukan yang terjadi pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
+**CATATAN**: ini biasanya hanya satu peristiwa.
 
-### Contoh 8: Mendapatkan log kejadian berdasarkan ID korlasi dengan waktu mulai dan waktu akhir
+### Contoh 8: Mendapatkan log peristiwa dengan ID korelasi dengan waktu mulai dan waktu akhir
 ```powershell
 Get-AzActivityLog -CorrelationId "60c694d0-e46f-4c12-bed1-9b7aef541c23" -StartTime 2017-04-15T04:30:00 -EndTime 2017-04-25T12:30:00
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID korlasi tertentu yang terjadi pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum 2017-04-25T12:30 waktu setempat jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode penyimpanan.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID korelasi yang ditentukan yang terjadi pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum 2017-04-25T12:30 waktu setempat jika seluruh rentang tanggal/waktu tidak lebih dari 90 hari dari tanggal/waktu saat ini, yaitu: periode retensi.
 
-### Contoh 9: Mendapatkan log kejadian untuk grup sumber daya
+### Contoh 9: Mendapatkan log peristiwa untuk grup sumber daya
 ```powershell
 Get-AzActivityLog -ResourceGroupName "Contoso-Web-CentralUS"
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan grup sumber daya tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan grup sumber daya yang ditentukan yang berlangsung 7 hari sejak tanggal/waktu saat ini.
 
-### Contoh 10: Mendapatkan log kejadian untuk grup sumber daya dengan jumlah peristiwa maksimum
+### Contoh 10: Mendapatkan log peristiwa untuk grup sumber daya dengan jumlah maksimum peristiwa
 ```powershell
 Get-AzActivityLog -ResourceGroup "Contoso-Web-CentralUS" -MaxRecord 100
 ```
 
-Perintah ini mencantumkan paling banyak 100 kejadian yang terkait dengan grup sumber daya tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 100 peristiwa yang terkait dengan grup sumber daya yang ditentukan yang berlangsung 7 hari dari tanggal/waktu saat ini.
 
-### Contoh 11: Mendapatkan log kejadian untuk grup sumber daya menurut waktu mulai
+### Contoh 11: Mendapatkan log peristiwa untuk grup sumber daya berdasarkan waktu mulai
 ```powershell
 Get-AzActivityLog -ResourceGroup "Contoso-Web-CentralUS" -StartTime 2017-05-22T04:30:00
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan grup sumber daya tertentu yang berlangsung pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih lama dari 90 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan grup sumber daya yang ditentukan yang terjadi pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
 
-### Contoh 12: Mendapatkan log kejadian untuk grup sumber daya dengan waktu mulai dan waktu akhir
+### Contoh 12: Mendapatkan log peristiwa untuk grup sumber daya dengan waktu mulai dan waktu akhir
 ```powershell
 Get-AzActivityLog -ResourceGroup "Contoso-Web-CentralUS" -StartTime 2017-04-15T04:30 -EndTime 2017-04-25T12:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan grup sumber daya tertentu yang berlangsung pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum 2017-04-25T12:30 waktu setempat jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode penyimpanan.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan grup sumber daya yang ditentukan yang terjadi pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum waktu lokal 2017-04-25T12:30 jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode retensi.
 
-### Contoh 13: Mendapatkan log kejadian menurut ID sumber daya
+### Contoh 13: Mendapatkan log peristiwa berdasarkan ID sumber daya
 ```powershell
 Get-AzActivityLog -ResourceId "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/ResourceGroups/Contoso-Web-CentralUS/providers/Microsoft.Web/ServerFarms/Contoso1"
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID sumber daya tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID sumber daya yang ditentukan yang berlangsung 7 hari dari tanggal/waktu saat ini.
 
-### Contoh 14: Dapatkan log kejadian menurut ID sumber daya dengan jumlah peristiwa maksimum
+### Contoh 14: Mendapatkan log peristiwa berdasarkan ID sumber daya dengan jumlah maksimum peristiwa
 ```powershell
 Get-AzActivityLog -ResourceId "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/ResourceGroups/Contoso-Web-CentralUS/providers/Microsoft.Web/ServerFarms/Contoso1" -MaxRecord 100
 ```
 
-Perintah ini mencantumkan paling banyak 100 kejadian yang terkait dengan ID sumber daya tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 100 peristiwa yang terkait dengan ID sumber daya yang ditentukan yang berlangsung 7 hari sejak tanggal/waktu saat ini.
 
-### Contoh 15: Mendapatkan log kejadian menurut ID sumber daya dengan waktu mulai
+### Contoh 15: Mendapatkan log peristiwa berdasarkan ID sumber daya dengan waktu mulai
 ```powershell
 Get-AzActivityLog -ResourceId "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/ResourceGroups/Contoso-Web-CentralUS/providers/Microsoft.Web/ServerFarms/Contoso1" -StartTime 2017-05-22T04:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID sumber daya tertentu yang terjadi pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih lama dari 90 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID sumber daya yang ditentukan yang terjadi pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
 
-### Contoh 16: Mendapatkan log kejadian menurut ID sumber daya dengan waktu mulai dan waktu akhir
+### Contoh 16: Mendapatkan log peristiwa berdasarkan ID sumber daya dengan waktu mulai dan waktu akhir
 ```powershell
 Get-AzActivityLog -ResourceId "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/ResourceGroups/Contoso-Web-CentralUS/providers/Microsoft.Web/ServerFarms/Contoso1" -StartTime 2017-04-15T04:30 -EndTime 2017-04-25T12:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID sumber daya tertentu yang terjadi pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum 2017-04-25T12:30 waktu setempat jika rentang tanggal/waktu keseluruhan tidak lebih dari 90 hari dari tanggal/waktu saat ini, yaitu: periode penyimpanan.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan ID sumber daya yang ditentukan yang terjadi pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum waktu lokal 2017-04-25T12:30 jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode retensi.
 
-### Contoh 17: Mendapatkan log kejadian menurut penyedia sumber daya
+### Contoh 17: Mendapatkan log peristiwa menurut penyedia sumber daya
 ```powershell
 Get-AzActivityLog -ResourceProvider "Microsoft.Web"
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan penyedia sumber daya tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan penyedia sumber daya tertentu yang berlangsung 7 hari sejak tanggal/waktu saat ini.
 
-### Contoh 18: Mendapatkan log kejadian menurut penyedia sumber daya dengan jumlah peristiwa maksimum
+### Contoh 18: Mendapatkan log peristiwa oleh penyedia sumber daya dengan jumlah maksimum peristiwa
 ```powershell
 Get-AzActivityLog -ResourceProvider "Microsoft.Web" -MaxRecord 100
 ```
 
-Perintah ini mencantumkan paling banyak 100 kejadian yang terkait dengan penyedia sumber daya tertentu yang berlangsung 7 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 100 peristiwa yang terkait dengan penyedia sumber daya tertentu yang berlangsung 7 hari sejak tanggal/waktu saat ini.
 
-### Contoh 19: Mendapatkan log kejadian menurut penyedia sumber daya dengan waktu mulai
+### Contoh 19: Mendapatkan log peristiwa oleh penyedia sumber daya dengan waktu mulai
 ```powershell
 Get-AzActivityLog -ResourceProvider "Microsoft.Web" -StartTime 2017-05-22T04:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan penyedia sumber daya tertentu yang berlangsung pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih lama dari 90 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan penyedia sumber daya tertentu yang terjadi pada atau setelah 2017-05-22T04:30:00 waktu setempat jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
 
-### Contoh 20: Mendapatkan log kejadian menurut penyedia sumber daya dengan waktu mulai dan waktu akhir
+### Contoh 20: Mendapatkan log peristiwa oleh penyedia sumber daya dengan waktu mulai dan waktu akhir
 ```powershell
 Get-AzActivityLog -ResourceProvider "Microsoft.Web" -StartTime 2017-04-15T04:30 -EndTime 2017-04-25T12:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan penyedia sumber daya tertentu yang berlangsung pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum 2017-04-25T12:30 waktu setempat jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode penyimpanan.
+Perintah ini mencantumkan paling banyak 1000 peristiwa yang terkait dengan penyedia sumber daya yang ditentukan yang terjadi pada atau setelah 2017-04-15T04:30 waktu setempat, tetapi sebelum waktu lokal 2017-04-25T12:30 jika seluruh rentang tanggal/waktu tidak lebih lama dari 90 hari dari tanggal/waktu saat ini, yaitu: periode retensi.
 
 ## PARAMETERS
 
 ### -Penelepon
-Penelepon acara untuk mengambil
+Pemanggil peristiwa yang akan diambil
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedOutput
-Mengembalikan objek dengan semua detail kejadian (defaultnya hanya mengembalikan beberapa atribut, misalnya tanpa detail)
+Mengembalikan objek dengan semua detail peristiwa (defaultnya adalah mengembalikan hanya beberapa atribut, yaitu tidak ada detail)
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxRecord
-Jumlah maksimum rekaman yang akan disambungkan.
+Jumlah maksimum rekaman yang akan diambil.
 Alias: MaxRecords, MaxEvents
 
 ```yaml
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status acara untuk mengambil
+Status peristiwa yang akan diambil
 
 ```yaml
 Type: System.String
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

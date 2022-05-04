@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseGeoBackupPolicy.md
-ms.openlocfilehash: a964b5605f7b39764790f7cd290e1f1a1c2b1c69
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 30124e8b9ccf047582ced8054109ea3258d12837
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737676"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723096"
 ---
 # Set-AzSqlDatabaseGeoBackupPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan pencadangan geo database.
+Mengatur kebijakan pencadangan geografis database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasegeobackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ Set-AzSqlDatabaseGeoBackupPolicy -State <GeoBackupPolicyState> [-ServerName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseGeoBackupPolicy** mengatur kebijakan cadangan geo yang didaftarkan ke database.
+Cmdlet **Set-AzSqlDatabaseGeoBackupPolicy** menetapkan kebijakan pencadangan geografis yang terdaftar ke database.
 Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mengatur kebijakan pencadangan geo database. (autogenerasi)
+Mengatur kebijakan pencadangan geografis database. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -46,7 +49,7 @@ Set-AzSqlDatabaseGeoBackupPolicy -DatabaseName db1 -ResourceGroupName myresource
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet ini mengatur kebijakan cadangan geografis.
+Menentukan nama database tempat cmdlet ini menetapkan kebijakan pencadangan geografis.
 
 ```yaml
 Type: System.String
@@ -105,11 +108,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status kebijakan pencadangan geografis.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diaktifkan 
-- Tamu penyandang cacat
+- Aktif 
+- Nonaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseGeoBackupPolicyModel+GeoBackupPolicyState
@@ -124,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

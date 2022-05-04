@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamilyMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamilyMetadata.md
-ms.openlocfilehash: 1f5dec849ee02157c406b902c28bf699ee93748c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d9beedb89001e7743adeddc2cf137ebd3a28a0e3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001971"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728133"
 ---
 # Get-AzEdgeOrderProductFamilyMetadata
 
 ## SYNOPSIS
 Metode ini menyediakan daftar metadata keluarga produk untuk langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderproductfamilymetadata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Metode ini menyediakan daftar metadata keluarga produk untuk langganan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan keluarga produk yang tersedia untuk pengadaan langganan
+### Contoh 1: Mendapatkan keluarga produk yang tersedia pada langganan yang diakui
 ```powershell
 $productFamilyMeta = Get-AzEdgeOrderProductFamilyMetadata -SubscriptionId SubscriptionId
 $productFamilyMeta.HierarchyInformation
@@ -42,11 +45,11 @@ ConfigurationName ProductFamilyName ProductLineName ProductName
                   azurestackhub
 ```
 
-Perintah ini akan menyediakan keluarga produk pada langganan yang dituntut.
+Perintah ini membuat keluarga produk tersedia untuk mendapatkan langganan.
 
-Pastikan registerProvider di Microsoft.EdgeOrder sudah selesai sebelum menjalankan perintah ini.
+Pastikan registerProvider di Microsoft.EdgeOrder dilakukan sebelum menjalankan perintah ini.
 
-Untuk mendapatkan detail tentang perintah Get-AzEdgeOrderProductFamily penggunaan keluarga
+Untuk mendapatkan detail penggunaan keluarga apa pun Get-AzEdgeOrderProductFamily perintah
 
 ## PARAMETERS
 
@@ -80,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

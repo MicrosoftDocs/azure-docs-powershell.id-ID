@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzSpatialAnchorsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzSpatialAnchorsAccount.md
-ms.openlocfilehash: 48bcbd2482f95d3bd34244b4fe75d6aa96792c12
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be249810863272ed74acb19a5bb7230a682619d8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745649"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144739180"
 ---
 # Remove-AzSpatialAnchorsAccount
 
 ## SYNOPSIS
-Hapus Akun Jangkar Spasial
+Menghapus Akun Spatial Anchors
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/remove-azspatialanchorsaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzSpatialAnchorsAccount -InputObject <PSSpatialAnchorsAccount> [-PassThru
 ```
 
 ## DESCRIPTION
-Hapus Akun Jangkar Spasial tertentu dari Grup Langganan dan Sumber Daya tertentu.
+Hapus Akun Spatial Anchors tertentu dari Langganan dan Grup Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -47,12 +50,12 @@ Hapus Akun Jangkar Spasial tertentu dari Grup Langganan dan Sumber Daya tertentu
 Remove-AzSpatialAnchorsAccount -ResourceGroup rg1 -Name example
 ```
 
-Hapus "contoh" Akun Jangkar Spasial dari Langganan saat ini dan Grup Sumber Daya "rg1".
+Hapus "contoh" Akun Spatial Anchors dari Langganan saat ini dan Grup Sumber Daya "rg1".
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -96,8 +99,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Akun Jangkar Spasial.
+### -Name
+Nama Akun Spatial Anchors.
 
 ```yaml
 Type: String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Akun Jangkar Spasial.
+ID Sumber Daya Akun Spatial Anchors.
 
 ```yaml
 Type: String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

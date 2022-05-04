@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAllowedVMSizesPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAllowedVMSizesPolicy.md
-ms.openlocfilehash: 6e41cbd61915d1b4152159db04b3ac0d116d7397
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d3420d35de1efabd6058b4bd5366cdf41a23c6d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724626"
 ---
 # Set-AzDtlAllowedVMSizesPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan ukuran mesin virtual yang diperbolehkan dari laboratorium di DevTest Labs.
+Menetapkan kebijakan ukuran komputer virtual yang diizinkan dari lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/set-azdtlallowedvmsizespolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzDtlAllowedVMSizesPolicy [[-VmSizes] <String[]>] [-Enable] [-LabName] <Stri
  [<CommonParameters>]
 ```
 
-### Menonaktifkan
+### Nonaktifkan
 ```
 Set-AzDtlAllowedVMSizesPolicy [[-VmSizes] <String[]>] [-Disable] [-LabName] <String>
  [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -35,8 +38,8 @@ Set-AzDtlAllowedVMSizesPolicy [[-VmSizes] <String[]>] [-Disable] [-LabName] <Str
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzDtlAllowedVMSizesPolicy** mengatur kebijakan ukuran mesin virtual yang diperbolehkan, yang menentukan daftar ukuran mesin virtual yang diperbolehkan di laboratorium.
-Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk menetapkan kebijakan.
+Cmdlet **Set-AzDtlAllowedVMSizesPolicy** menetapkan kebijakan ukuran komputer virtual yang diizinkan, yang menentukan daftar ukuran komputer virtual yang diizinkan di laboratorium.
+Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk mengatur kebijakan.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Description        :
 Status             : Enabled
 Provisioning State : 
 ```
-Mengatur kebijakan ukuran mesin virtual yang diperbolehkan dari laboratorium di DevTest Labs.
+Menetapkan kebijakan ukuran komputer virtual yang diizinkan dari lab di DevTest Labs.
 
 
 ## PARAMETERS
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Non-fungsikan
+### -Nonaktifkan
 Menunjukkan bahwa cmdlet ini menonaktifkan kebijakan.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mengatur kebijakan ukuran mesin virtual.
+Menentukan nama lab tempat cmdlet ini menetapkan kebijakan ukuran komputer virtual.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmSizes
-Menentukan, sebagai array string, daftar ukuran mesin virtual yang diperbolehkan di lab.
+Menentukan, sebagai array string, daftar ukuran komputer virtual yang diizinkan di lab.
 
 ```yaml
 Type: System.String[]
@@ -154,8 +157,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceNameAvailability.md
-ms.openlocfilehash: 1689340fbfba9af6a8ce86aa887c814173c771e7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59aafabee3dc8920562ddac5186394e74c97a40f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120213"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709118"
 ---
 # Get-AzMediaServiceNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama layanan media tersedia.
 Nama layanan media unik secara global.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicenameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Nama layanan media unik secara global.
 
 ## EXAMPLES
 
-### Contoh 1: Periksa apakah nama Layanan Media tersedia
+### Contoh 1: Periksa apakah nama Media Service tersedia
 ```powershell
 Get-AzMediaServiceNameAvailability -AccountName "MediaService1"
 ```
@@ -72,11 +75,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -90,7 +93,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzMediaService](./New-AzMediaService.md)
 
-[Hapus-AzMediaService](./Remove-AzMediaService.md)
+[Remove-AzMediaService](./Remove-AzMediaService.md)
 
 [Set-AzMediaService](./Set-AzMediaService.md)
 

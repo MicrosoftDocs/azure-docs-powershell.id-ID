@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlot.md
-ms.openlocfilehash: 84a3e3131a557a84e9888b0792ec14738ff4003b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa304a84b9b6ec4d88f3b27e55b4ffa3847d80fe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142862596"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144737020"
 ---
 # Set-AzWebAppSlot
 
 ## SYNOPSIS
 Memodifikasi slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Set-AzWebAppSlot [[-AppServicePlan] <String>] [[-DefaultDocuments] <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzWebApp** menetapkan Slot Aplikasi Web Azure.
+Cmdlet **Set-AzWebApp** mengatur Slot Aplikasi Web Azure.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Cmdlet **Set-AzWebApp** menetapkan Slot Aplikasi Web Azure.
 Set-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001" -AppServicePlan "ContosoPlan"
 ```
 
-Perintah ini mengubah paket layanan aplikasi yang terkait dengan Slot001, di Webapp ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket dan batasan layanan aplikasi yang terkait dengannya.
+Perintah ini mengubah paket layanan aplikasi yang terkait dengan Slot001, di Webapp ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket layanan aplikasi dan batasan yang terkait dengannya.
 https://docs.microsoft.com/azure/app-service/app-service-plan-manage#move-an-app-to-another-app-service-plan
 
 ### Contoh 2
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-HashTable Pengaturan Aplikasi. Pengaturan Aplikasi yang ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
+Aplikasi Pengaturan HashTable. App Pengaturan yang ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionStrings
-HashTable String Koneksi
+String Koneksi HashTable
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Registri Kontainer Privat
+Nama Pengguna Azure Container Registry Privat
 
 ```yaml
 Type: System.String
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Boolean Diaktifkan Pengelogan Kesalahan Terperinci
+Boolean Yang Diaktifkan Pencatatan Kesalahan Terperinci
 
 ```yaml
 Type: System.Boolean
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandlerMappings
-Daftar IList Pemetaan Handler
+Daftar Pemetaan Handler
 
 ```yaml
 Type: System.Collections.Generic.IList`1[Microsoft.Azure.Management.WebSites.Models.HandlerMapping]
@@ -602,7 +605,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
-[Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
+[Hidupkan ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 
 [Start-AzWebAppSlot](./Start-AzWebAppSlot.md)
 

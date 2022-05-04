@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdUserSession.md
-ms.openlocfilehash: 5ada9213fc107df131fe97058df59222644fb3d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 90158de32b57a4a96a649e2471c5af3646964635
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705477"
 ---
 # Get-AzWvdUserSession
 
 ## SYNOPSIS
-Dapatkan userSession.
+Mendapatkan userSession.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdusersession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzWvdUserSession -HostPoolName <String> -ResourceGroupName <String> [-Subscr
  [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzWvdUserSession -HostPoolName <String> -Id <String> -ResourceGroupName <String> -SessionHostName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,11 +47,11 @@ Get-AzWvdUserSession -HostPoolName <String> -ResourceGroupName <String> -Session
 ```
 
 ## DESCRIPTION
-Dapatkan userSession.
+Mendapatkan userSession.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Windows UserSession Desktop Virtual berdasarkan nama
+### Contoh 1: Mendapatkan Windows UserSession Virtual Desktop berdasarkan nama
 ```powershell
 Get-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName -SessionHostName SessionHostName -Id 2
 ```
@@ -59,9 +62,9 @@ Name                           Type
 HostPoolName/SessionHostName/2 Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions
 ```
 
-Perintah ini mendapatkan Windows UserSession Desktop Virtual dalam Host Sesi.
+Perintah ini mendapatkan Windows UserSession Virtual Desktop dalam Host Sesi.
 
-### Contoh 2: Daftar Windows UserSessions Desktop Virtual
+### Contoh 2: Daftar Windows UserSessions Virtual Desktop
 ```powershell
 Get-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName -SessionHostName SessionHostName
 ```
@@ -73,9 +76,9 @@ HostPoolName/SessionHostName/2 Microsoft.DesktopVirtualization/hostpools/session
 HostPoolName/SessionHostName/3 Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions
 ```
 
-Perintah ini mencantumkan Windows UserSessions Desktop Virtual dalam Host Sesi.
+Perintah ini mencantumkan Windows UserSessions Virtual Desktop dalam Host Sesi.
 
-### Contoh 3: Daftar Windows UserSessions Desktop Virtual di kumpulan host
+### Contoh 3: Daftar Windows Pengguna Desktop VirtualSessions di kumpulan host
 ```powershell
 Get-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
 ```
@@ -87,7 +90,7 @@ HostPoolName/SessionHostName/2 Microsoft.DesktopVirtualization/hostpools/session
 HostPoolName/SessionHostName/3 Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions
 ```
 
-Perintah ini mencantumkan Windows UserSessions Desktop Virtual dalam Host Sesi dalam kumpulan host.
+Perintah ini mencantumkan Windows UserSessions Virtual Desktop di Host Sesi di kumpulan host.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Filter
 Ekspresi filter OData.
-Properti yang valid untuk pemfilteran adalah namapengguna dan sessionstate.
+Properti yang valid untuk pemfilteran adalah userprincipalname dan sessionstate.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -239,9 +242,9 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan

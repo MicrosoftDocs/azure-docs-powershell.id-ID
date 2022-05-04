@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzAvailabilityGroupListener.md
-ms.openlocfilehash: 5a87da819d3a331c506e8fc280bacb42e5c8a453
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 725cd27b238be45df9965a3d415c600c5fc66fd5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671490"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711382"
 ---
 # Update-AzAvailabilityGroupListener
 
 ## SYNOPSIS
-Memperbarui Pendengar Grup Ketersediaan.
+Memperbarui Listener Grup Ketersediaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Update-AzAvailabilityGroupListener [-SqlVirtualMachineId <String[]>] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzAvailabilityGroupListener memperbarui Pendengar Grup Ketersediaan.
+Cmdlet Update-AzAvailabilityGroupListener memperbarui Listener Grup Ketersediaan.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Name         ResourceGroupName GroupName    AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01   SqlVmGroup01 AvailabilityGroup01
 ```
-Memperbarui daftar SQL Virtual Machines untuk Pendengar Grup Ketersediaan.
+Memperbarui daftar SQL Virtual Machines untuk Listener Grup Ketersediaan.
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Pendengar Grup Ketersediaan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Pendengar Grup Ketersediaan
+Id Sumber Daya Listener Grup Ketersediaan
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVirtualMachineId
-Daftar ID Sumber Daya VM Sql
+Daftar ID Sumber Daya Sql VM
 
 ```yaml
 Type: System.String[]
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupName
-SQL nama grup mesin virtual.
+SQL nama grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL objek Grup mesin virtual.
+SQL objek Grup komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -200,8 +203,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

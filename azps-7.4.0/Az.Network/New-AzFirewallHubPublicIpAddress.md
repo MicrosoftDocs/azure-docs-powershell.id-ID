@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubPublicIpAddress.md
-ms.openlocfilehash: d732e194ed208897e0f3818f186a817ce0c96e46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b2758d74b7b59d1102c27e3fddb10f02ca63d130
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281403"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706008"
 ---
 # New-AzFirewallHubPublicIpAddress
 
 ## SYNOPSIS
-Ip Publik diasoicated ke firewall di hub virtual
+Ip Publik diasosiasikan ke firewall di hub virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallhubpublicipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFirewallHubPublicIpAddress [-Count <Int32>] [-Addresses <PSAzureFirewallPu
 ```
 
 ## DESCRIPTION
-Ip Publik diasoicated ke firewall di hub virtual
+Ip Publik diasosiasikan ke firewall di hub virtual
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Ip Publik diasoicated ke firewall di hub virtual
 New-AzFirewallHubPublicIpAddress -Count 2
 ```
 
-Ini akan membuat 2 ip publik di firewall yang terpasang ke hub virtual. Tindakan ini akan membuat alamat ip di backend. Kami tidak dapat menyediakan ipaddress secara eksplisit untuk firewall baru.
+Ini akan membuat 2 ip publik pada firewall yang dilampirkan ke hub virtual. Ini akan membuat alamat ip di backend. Kami tidak dapat menyediakan ipaddresses secara eksplisit untuk firewall baru.
 
 ### Contoh 2
 ```powershell
@@ -48,7 +51,7 @@ Ini akan membuat 1 ip publik baru di firewall dengan mempertahankan $publicIp 1,
 ## PARAMETERS
 
 ### -Alamat
-Alamat IP Publik firewall yang dilampirkan ke hub
+Alamat IP Publik Firewall yang dilampirkan ke hub
 
 ```yaml
 Type: PSAzureFirewallPublicIpAddress[]
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Hitungan alamat IP publik
+Jumlah alamat IP publik
 
 ```yaml
 Type: Int32
@@ -93,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

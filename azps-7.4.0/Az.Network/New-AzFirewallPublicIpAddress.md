@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPublicIpAddress.md
-ms.openlocfilehash: d2c02eb95158889abd2fa15428ffea6d2ec00c13
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 025e7f710dadb63a5ad85c4d582b71581a725cc0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805266"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732092"
 ---
 # New-AzFirewallPublicIpAddress
 
 ## SYNOPSIS
-Ini adalah tempat penampung untuk Alamat Ip yang dapat digunakan untuk multi pip di firewall azure.
+Ini adalah tempat penampung untuk Alamat Ip yang dapat digunakan untuk multi pip di azure firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpublicipaddress) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzFirewallPublicIpAddress [-Address <String>] [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Ini adalah tempat penampung untuk Alamat Ip yang dapat digunakan untuk multi pip di firewall azure.
+Ini adalah tempat penampung untuk Alamat Ip yang dapat digunakan untuk multi pip di azure firewall.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Ini adalah tempat penampung untuk Alamat Ip yang dapat digunakan untuk multi pip
 $publicIp = New-AzFirewallPublicIpAddress -Address 20.2.3.4
 ```
 
-$publicIp akan menjadi placeholder untuk alamat ip 20.2.3.4
+$publicIp akan menjadi tempat penampung untuk alamat IP 20.2.3.4
 
 ## PARAMETERS
 
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -99,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

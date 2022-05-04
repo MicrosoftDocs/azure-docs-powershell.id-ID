@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Test-AzEventHubName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Test-AzEventHubName.md
-ms.openlocfilehash: d22dfe7844bad5c82051b95a2c25b73c68391185
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbea634e0f6e8f35367ad6f59a574159810d0cea
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808812"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144724572"
 ---
 # Test-AzEventHubName
 
 ## SYNOPSIS
-Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan
+Memeriksa Ketersediaan Nama NameSpace atau Alias yang diberikan (Nama Konfigurasi DR)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/test-azeventhubname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,21 +43,21 @@ Cmdlet **Test-AzEventhubName** Memeriksa Ketersediaan Nama NameSpace atau Alias 
 Test-AzEventhubName -Namespace MyNameSapceName
 ```
 
-Mengembalikan status ketersediaan nama ruang nama 'MyNameSapceName' sebagai True jika tersedia
+Mengembalikan status pada ketersediaan nama namespace 'MyNameSapceName' sebagai True jika tersedia
 
 ### Contoh 2
 ```powershell
 Test-AzEventhubName -Namespace MyNameSapceName
 ```
 
-Mengembalikan status ketersediaan nama ruang nama 'MyNameSapceName' sebagai False dengan Alasan
+Mengembalikan status pada ketersediaan nama namespace 'MyNameSapceName' sebagai False dengan Alasan
 
 ### Contoh 3
 ```powershell
 Test-AzEventhubName -ResourceGroupName MyResourceGroup -Namespace Test123 -AliasName myAliasName
 ```
 
-Mengembalikan status ketersediaan nama alias 'myAliasName' untuk ruang nama 'MyNameSapceName' sebagai True jika tersedia
+Mengembalikan status ketersediaan nama alias 'myAliasName' untuk namespace 'MyNameSapceName' sebagai True jika tersedia
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Namespace Eventhub
+Nama Namespace Layanan Eventhub
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

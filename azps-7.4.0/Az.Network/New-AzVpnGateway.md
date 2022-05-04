@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGateway.md
-ms.openlocfilehash: 259645391558a32b7bb2110863d8a94f075f4210
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dae70bacd4c4aeb40800d85d3b7642969865fd53
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677790"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144740746"
 ---
 # New-AzVpnGateway
 
 ## SYNOPSIS
 Membuat VPN Gateway yang Dapat Diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +50,12 @@ New-AzVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleUnit
 New-AzVpnGateway membuat VPN Gateway yang dapat diskalakan.
 Ini adalah konektivitas yang ditentukan perangkat lunak untuk koneksi situs ke situs di dalam VirtualHub.
 
-Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzVpnGateway ini.
+Gateway ini mengubah ukuran dan menskalakan berdasarkan unit skala yang ditentukan dalam cmdlet ini atau Set-AzVpnGateway.
 
-Koneksi disetel dari cabang/Situs yang dikenal sebagai VPNSitus ke gateway yang dapat diskalakan.
+Koneksi disiapkan dari cabang/Situs yang dikenal sebagai VPNSite ke gateway yang dapat diskalakan.
 Setiap koneksi terdiri dari 2 terowongan Active-Active.
 
-VpnGateway akan berada di lokasi yang sama dengan VirtualHub yang dirujuk.
+VpnGateway akan berada di lokasi yang sama dengan VirtualHub yang direferensikan.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Vir
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgpRouteTranslationForNat
-Bendera untuk mengaktifkan terjemahan rute Bgp untuk NAT di VpnGateway ini.
+Benderai untuk mengaktifkan terjemahan rute Bgp untuk NAT di VpnGateway ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRoutingPreferenceInternetFlag
-Benderai untuk mengaktifkan Perutean Preferensi Internet pada VpnGateway ini.
+Benderai untuk mengaktifkan Internet Preferensi Perutean pada VpnGateway ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualHub
-VirtualHub VpnGateway ini perlu dikaitkan.
+VirtualHub yang perlu dikaitkan dengan VpnGateway ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualHub
@@ -275,8 +278,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -322,7 +325,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzVpnGateway]()
 
-[Hapus-AzVpnGateway]()
+[Remove-AzVpnGateway]()
 
 [Update-AzVpnGateway]()
 

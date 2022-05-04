@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitConnectionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitConnectionConfig.md
-ms.openlocfilehash: 12ec1adcefd40c6a553fcf5fc8cc45540c8e5e66
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 87ebf61a0d4dc7dacb0a113fa6dd51adf36ff06b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744066"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144723438"
 ---
 # Get-AzExpressRouteCircuitConnectionConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi koneksi sirkuit ExpressRoute yang terkait dengan Private Peering expressRouteCircuit.
+Mendapatkan konfigurasi koneksi sirkuit ExpressRoute yang terkait dengan Peering Privat ExpressRouteCircuit.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitconnectionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzExpressRouteCircuitConnectionConfig [[-Name] <String>] [-ExpressRouteCircu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteCircuitConnectionConfig** mengambil konfigurasi koneksi sirkuit yang terkait dengan Private Peering untuk sirkuit ExpressRoute.
+Cmdlet **Get-AzExpressRouteCircuitConnectionConfig** mengambil konfigurasi koneksi sirkuit yang terkait dengan Peering Privat untuk sirkuit ExpressRoute.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ $circuit_init = Get-AzExpressRouteCircuit -Name $initiatingCircuitName -Resource
 Get-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName -ExpressRouteCircuit $circuit_init
 ```
 
-### Contoh 2: Dapatkan sumber daya koneksi sirkuit yang terkait dengan Sirkuit ExpressRoute menggunakan piping
+### Contoh 2: Mendapatkan sumber daya koneksi sirkuit yang terkait dengan Sirkuit ExpressRoute menggunakan pipa
 ```powershell
 Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Get-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName
 ```
@@ -73,7 +76,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konfigurasi koneksi sirkuit yang akan diambil.
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

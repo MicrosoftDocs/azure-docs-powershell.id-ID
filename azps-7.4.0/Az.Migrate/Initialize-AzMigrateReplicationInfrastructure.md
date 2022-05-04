@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/initiali
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Initialize-AzMigrateReplicationInfrastructure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Initialize-AzMigrateReplicationInfrastructure.md
-ms.openlocfilehash: 4330686819632b09be70814ef01ac0f67e78ef28
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6538767f4543b58b3012168564dc65d4dffe3704
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681300"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732398"
 ---
 # Initialize-AzMigrateReplicationInfrastructure
 
 ## SYNOPSIS
-Menginisialisasi infrastruktur untuk migrasi proyek.
+Menginisialisasi infrastruktur untuk proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/initialize-azmigratereplicationinfrastructure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Initialize-AzMigrateReplicationInfrastructure -ProjectName <String> -ResourceGro
 ```
 
 ## DESCRIPTION
-Cmdlet Initialize-AzMigrateReplicationInfrastructure menginisiasi infrastruktur untuk migrasi proyek.
+cmdlet Initialize-AzMigrateReplicationInfrastructure menginisialisasi infrastruktur untuk proyek migrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menginisialisasi infrastruktur untuk migrasi proyek.
+### Contoh 1: Menginisialisasi infrastruktur untuk proyek migrasi.
 ```powershell
 Initialize-AzMigrateReplicationInfrastructure -ResourceGroupName TestRG  -ProjectName TestProject -Vmwareagentless -TargetRegion centralus
 ```
@@ -39,7 +42,7 @@ Initialize-AzMigrateReplicationInfrastructure -ResourceGroupName TestRG  -Projec
 True
 ```
 
-Menginisialisasi infrastruktur untuk migrasi proyek.
+Menginisialisasi infrastruktur untuk proyek migrasi.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Menentukan nama proyek Migrasi Azure yang akan digunakan untuk migrasi server.
+Menentukan nama proyek Azure Migrate yang akan digunakan untuk migrasi server.
 
 ```yaml
 Type: System.String
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan Grup Sumber Daya Azure Melakukan migrasi Project dalam langganan saat ini.
+Menentukan Grup Sumber Daya Project Azure Migrate dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skenario
-Menentukan skenario migrasi server di mana infrastruktur replikasi perlu diinisialisasi.
+Menentukan skenario migrasi server yang infrastruktur replikasinya perlu diinisialisasi.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetRegion
-Menentukan kawasan Azure target untuk migrasi server.
+Menentukan wilayah Azure target untuk migrasi server.
 
 ```yaml
 Type: System.String
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

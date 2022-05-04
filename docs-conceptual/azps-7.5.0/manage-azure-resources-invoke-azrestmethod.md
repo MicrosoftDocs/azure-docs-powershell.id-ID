@@ -1,17 +1,17 @@
 ---
 description: Cara menggunakan Azure PowerShell untuk mengelola sumber daya dengan cmdlet Invoke-AzRestMethod.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Mengelola sumber daya Azure dengan Invoke-AzRestMethod
-ms.openlocfilehash: 83652c3b2e05cb163439369d28c39f1d8394a91b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3d5f72847b549da771b8540fef3d543bca148ca1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144294278"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694370"
 ---
 # <a name="manage-azure-resources-with-invoke-azrestmethod"></a>Mengelola sumber daya Azure dengan Invoke-AzRestMethod
 

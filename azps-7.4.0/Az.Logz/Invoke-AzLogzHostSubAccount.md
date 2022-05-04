@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostSubAccount.md
-ms.openlocfilehash: 5e4430d56d4be2277197c44168990f3abc3f3661
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8e59b18ea0a8c177cfdaa53249ff3cff068bc70c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681948"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144732504"
 ---
 # Invoke-AzLogzHostSubAccount
 
 ## SYNOPSIS
 Mengembalikan payload yang perlu diteruskan sebagai permintaan untuk menginstal agen Logz.io pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/invoke-azlogzhostsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

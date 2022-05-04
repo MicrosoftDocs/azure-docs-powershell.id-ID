@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: bbe6dc339a5afc55d2a4b4e19c771eee5fff2e8a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e079f5f3792730eb85bd45fe35143341b68b3c9b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677340"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718130"
 ---
 # Remove-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
-Cmdlet Remove-AzVirtualHubVnetConnection menghapus Azure Virtual Network Connection yang mengabdikan VNET jarak jauh ke hub VNET.
+Cmdlet Remove-AzVirtualHubVnetConnection menghapus Koneksi azure Virtual Network yang mengintip VNET jarak jauh ke VNET hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azvirtualhubvnetconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzVirtualHubVnetConnection -ResourceId <String> [-AsJob] [-Force] [-PassT
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzVirtualHubVnetConnection menghapus Azure Virtual Network Connection yang mengabdikan VNET jarak jauh ke hub VNET.
+Cmdlet Remove-AzVirtualHubVnetConnection menghapus Koneksi azure Virtual Network yang mengintip VNET jarak jauh ke VNET hub.
 
 ## EXAMPLES
 
@@ -56,9 +59,9 @@ New-AzVirtualHubVnetConnection -ResourceGroupName "testRG" -VirtualHubName "west
 Remove-AzVirtualHubVnetConnection -ResourceGroupName testRG -VirtualHubName westushub -Name testvnetconnection
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah di grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan melakukan peering Virtual Network ke Hub Virtual.
 
-Setelah koneksi jaringan virtual hub dibuat, hub akan menghapus koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
+Setelah koneksi jaringan virtual hub dibuat, koneksi jaringan virtual hub akan dihapus menggunakan nama grup sumber dayanya, nama hub, dan nama koneksi.
 
 ### Contoh 2
 
@@ -73,14 +76,14 @@ New-AzVirtualHubVnetConnection -ResourceGroupName "testRG" -VirtualHubName "west
 Get-AzVirtualHubVnetConnection -ResourceGroupName testRG -VirtualHubName westushub -Name testvnetconnection | Remove-AzHubVnetConnection
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah di grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan melakukan peering Virtual Network ke Hub Virtual.
 
 Setelah koneksi jaringan virtual hub dibuat, koneksi jaringan virtual hub akan dihapus menggunakan piping powershell pada output dari Get-AzHubVirtualNetworkConnection.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya hubvirtualnetworkconnection untuk diubah.
+Sumber daya hubvirtualnetworkconnection untuk dimodifikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
@@ -139,7 +142,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya sumber daya hubvirtualnetworkconnection untuk diubah.
+Id sumber daya dari sumber daya hubvirtualnetworkconnection untuk dimodifikasi.
 
 ```yaml
 Type: System.String
@@ -215,8 +218,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

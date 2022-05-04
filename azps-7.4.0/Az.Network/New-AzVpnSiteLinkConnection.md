@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLinkConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnSiteLinkConnection.md
-ms.openlocfilehash: 33f97a314661a9c3ad43bc04ea919e222ea2be57
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3701a809f82872c0544846ce2d9cba82e59bc7f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871146"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725760"
 ---
 # New-AzVpnSiteLinkConnection
 
 ## SYNOPSIS
 Membuat objek Azure VpnSiteLinkConnection.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvpnsitelinkconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,9 +56,9 @@ $vpnSiteLinkConnection = New-AzVpnSiteLinkConnection -Name "testLinkConnection1"
 New-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -ParentResourceName $vpnGateway.Name -Name "testConnection" -VpnSite $vpnSite -VpnSiteLinkConnection @($vpnSiteLinkConnection)
 ```
 
-Di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan VpnSite dengan 1 VpnSiteLinks di AS Barat dalam grup sumber daya "testRG" di Azure.
 Gateway VPN akan dibuat setelahnya di Hub Virtual.
-Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzVpnConnection dengan 1 VpnSiteLinkConnections ke VpnSiteLink dari VpnSite.
+Setelah gateway dibuat, gateway terhubung ke VpnSite menggunakan perintah New-AzVpnConnection dengan 1 VpnSiteLinkConnections ke VpnSiteLink dari VpnSite.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -EgressNatRule
-Daftar aturan KELUAR NAT yang terkait dengan link Connection ini.
+Daftar aturan NAT keluar yang terkait dengan koneksi tautan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IngressNatRule
-Daftar aturan NAT ingress yang terkait dengan link Connection ini.
+Daftar aturan NAT ingress yang terkait dengan tautan Ini Koneksi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpSecPolicy
-Kebijakan IpSec untuk dipertimbangkan untuk sambungan tautan ini.
+Kebijakan IpSec yang perlu dipertimbangkan untuk koneksi tautan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama
 
 ```yaml
@@ -164,7 +167,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PeruteanWeight
+### -RoutingWeight
 Berat Perutean
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedKey
-Kunci bersama diperlukan untuk menyetel sambungan tautan ini.
+Kunci bersama yang diperlukan untuk menyetel sambungan tautan ini.
 
 ```yaml
 Type: System.Security.SecureString
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseLocalAzureIpAddress
-Gunakan alamat azure ip lokal sebagai ip sumber untuk koneksi tautan ini.
+Gunakan alamat ip azure lokal sebagai ip sumber untuk koneksi tautan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

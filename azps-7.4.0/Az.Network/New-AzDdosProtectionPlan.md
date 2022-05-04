@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azdd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
-ms.openlocfilehash: 2436177b1c2f34a5ae64ec4695d41b2862e2bd56
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b1f83724981d46853a4642edc23f409309c1a68b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871704"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718310"
 ---
 # New-AzDdosProtectionPlan
 
 ## SYNOPSIS
-Membuat paket proteksi DDoS.
+Membuat paket perlindungan DDoS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,21 +28,21 @@ New-AzDdosProtectionPlan -ResourceGroupName <String> -Name <String> -Location <S
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDdosProtectionPlan membuat rencana proteksi DDoS.
+Cmdlet New-AzDdosProtectionPlan membuat rencana perlindungan DDoS.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan mengaitkan paket proteksi DDoS dengan jaringan virtual baru
+### Contoh 1: Membuat dan mengaitkan paket perlindungan DDoS dengan jaringan virtual baru
 ```powershell
 $ddosProtectionPlan = New-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName -Location "West US"
 $subnet = New-AzVirtualNetworkSubnetConfig -Name SubnetName -AddressPrefix 10.0.1.0/24
 $vnet = New-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName -Location "West US" -AddressPrefix 10.0.0.0/16 -DnsServer 8.8.8.8 -Subnet $subnet -EnableDdoSProtection -DdosProtectionPlanId $ddosProtectionPlan.Id
 ```
 
-Pertama, kami membuat rencana Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
-Lalu, kami membuat jaringan virtual baru dengan **New-AzVirtualNetwork** dan kami menentukan ID rencana yang baru dibuat dalam parameter **DdosProtectionPlanId**. Dalam hal ini, karena kami mengaitkan jaringan virtual dengan rencana, kami juga dapat menentukan parameter **EnableDdoSProtection**.
+Pertama, kami membuat paket DDoS Protection baru dengan perintah **New-AzDdosProtectionPlan** .
+Kemudian, kami membuat jaringan virtual baru dengan **New-AzVirtualNetwork** dan kami menentukan ID rencana yang baru dibuat dalam parameter **DdosProtectionPlanId**. Dalam hal ini, karena kita mengaitkan jaringan virtual dengan rencana, kita juga dapat menentukan parameter **EnableDdoSProtection**.
 
-### Contoh 2: Membuat dan mengaitkan paket proteksi DDoS dengan jaringan virtual yang sudah ada
+### Contoh 2: Membuat dan mengaitkan paket perlindungan DDoS dengan jaringan virtual yang ada
 ```powershell
 $ddosProtectionPlan = New-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName -Location "West US"
 $vnet = Get-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName
@@ -88,14 +91,14 @@ DdosProtectionPlan     : {
 EnableVmProtection     : false
 ```
 
-Pertama, kami membuat rencana Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
-Kedua, kami mendapatkan versi terbaru dari jaringan virtual yang ingin kami kaitkan dengan rencana. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId** yang berisi referensi ke ID rencana yang baru dibuat. Dalam hal ini, jika kami mengaitkan jaringan virtual dengan paket proteksi DDoS, kami juga dapat mengatur bendera **EnableDdosProtection** ke true.
-Akhirnya, kami tetap menggunakan status baru dengan memipakan variabel lokal ke **Set-AzVirtualNetwork**.
+Pertama, kami membuat paket DDoS Protection baru dengan perintah **New-AzDdosProtectionPlan** .
+Kedua, kita mendapatkan versi terbaru dari jaringan virtual yang ingin kita kaitkan dengan rencana. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId** yang berisi referensi ke ID paket yang baru dibuat. Dalam hal ini, jika kita mengaitkan jaringan virtual dengan rencana perlindungan DDoS, kita juga dapat mengatur bendera **EnableDdosProtection** ke true.
+Akhirnya, kita mempertahankan status baru dengan membagi variabel lokal ke **Set-AzVirtualNetwork**.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi rencana proteksi DDoS yang akan dibuat.
+Menentukan lokasi rencana perlindungan DDoS yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -139,8 +142,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama rencana proteksi DDoS yang akan dibuat.
+### -Name
+Menentukan nama rencana perlindungan DDoS yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya dari rencana proteksi DDoS yang akan dibuat.
+Menentukan grup sumber daya dari rencana perlindungan DDoS yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -184,8 +187,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -240,4 +243,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzVirtualNetwork](./Set-AzVirtualNetwork.md)
 
-[Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
+[Pulihkan-AzSqlDatabase](./Get-AzVirtualNetwork.md)

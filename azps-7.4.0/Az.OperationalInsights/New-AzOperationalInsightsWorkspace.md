@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: 04c935ec6f3c3b14f89b6459faca252323dd0db1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: beb246f4ef421f30f5e654d57cabac14ee8d0e6b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279189"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684678"
 ---
 # New-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
-Membuat ruang kerja, atau memulihkan ruang kerja yang dihapus dengan lembut.
+Membuat ruang kerja, atau memulihkan ruang kerja yang dihapus sementara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,16 +32,16 @@ New-AzOperationalInsightsWorkspace [-ResourceGroupName] <String> [-Name] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzOperationalInsightsWorkspace** membuat ruang kerja dalam grup dan lokasi sumber daya yang ditentukan. Atau pulihkan ruang kerja yang dihapus dengan lembut.
+Cmdlet **New-AzOperationalInsightsWorkspace** membuat ruang kerja di grup sumber daya dan lokasi yang ditentukan. Atau pulihkan ruang kerja yang dihapus sementara.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat ruang kerja menurut nama
+### Contoh 1: Membuat ruang kerja berdasarkan nama
 ```powershell
 New-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" -Location "East US"
 ```
 
-Perintah ini membuat ruang kerja SKU standar bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini membuat ruang kerja SKU standar bernama MyWorkspace di grup sumber daya bernama ContosoResourceGroup.
 
 ### Contoh 2: Membuat ruang kerja dan menautkannya ke akun yang sudah ada
 ```powershell
@@ -48,7 +51,7 @@ $OILinkTargets[0] | New-AzOperationalInsightsWorkspace -ResourceGroupName "Conto
 ```
 
 Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsLinkTargets untuk mendapatkan target tautan akun Insights Operasional, lalu menyimpannya dalam variabel $OILinkTargets.
-Perintah kedua melewati target tautan akun pertama dalam $OILinkTargets ke cmdlet **New-AzOperationalInsightsWorkspace** menggunakan operator pipeline.
+Perintah kedua meneruskan target tautan akun pertama dalam $OILinkTargets ke cmdlet **New-AzOperationalInsightsWorkspace** dengan menggunakan operator alur.
 Perintah membuat ruang kerja SKU standar bernama MyWorkspace yang ditautkan ke akun Insights Operasional pertama di $OILinkTargets.
 
 ## PARAMETERS
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceCmkForQuery
-Dapatkan atau kumpulan menunjukkan apakah penyimpanan yang dikelola pelanggan wajib untuk manajemen kueri
+Mendapatkan atau mengatur menunjukkan apakah penyimpanan yang dikelola pelanggan wajib untuk manajemen kueri
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi tempat untuk membuat ruang kerja, misalnya, AS Timur atau Eropa Barat.
+Menentukan lokasi untuk membuat ruang kerja, misalnya, US Timur atau Eropa Barat.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForIngestion
-Tipe akses jaringan untuk mengakses penyerapan ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Jenis akses jaringan untuk mengakses penyerapan ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForQuery
-Tipe akses jaringan untuk mengakses kueri ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
+Jenis akses jaringan untuk mengakses kueri ruang kerja. Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Penyimpanan data ruang kerja dalam hari. 730 hari adalah maksimum yang diperbolehkan untuk semua Sku lainnya
+Retensi data ruang kerja dalam beberapa hari. 730 hari adalah maksimum yang diizinkan untuk semua Sku lainnya
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas Sku, nilai perlu kelipatan 100 dan setidaknya 0.
+Kapasitas Sku, nilainya harus kelipatan 100 dan setidaknya 0.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -249,8 +252,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -297,7 +300,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 
-Model harga baru telah dirilis. Jika Anda adalah CSP yang berarti bahwa Anda harus menggunakan "mandiri" untuk sku. Di balik layar, sku akan diubah menjadi pergb2018. Untuk informasi selengkapnya, silakan lihat yang berikut ini: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs#new-pricing-model
+Model harga baru telah dirilis. Jika Anda adalah CSP yang berarti Bahwa Anda harus menggunakan "mandiri" untuk sku. Di balik layar, sku akan diubah menjadi pergb2018. Untuk informasi selengkapnya, silakan lihat yang berikut ini: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs#new-pricing-model
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzP2sVpnGatewayVpnProfile.md
-ms.openlocfilehash: d9eb6bb46c2d7b7cfff4521eb417535e610020ab
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 900fabcd04778fc5cedbc5d7f0001a50b297bf25
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224523"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144716960"
 ---
 # Get-AzP2sVpnGatewayVpnProfile
 
 ## SYNOPSIS
-Menghasilkan dan mengembalikan url SAS bagi pelanggan untuk mengunduh profil Vpn untuk mengarahkan ke penyiapan klien situs agar mengarahkan ke konektivitas situs ke P2SVpnGateway.
+Menghasilkan dan mengembalikan url SAS bagi pelanggan untuk mengunduh profil Vpn untuk penyiapan klien titik ke situs agar memiliki konektivitas titik ke situs ke P2SVpnGateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azp2svpngatewayvpnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzP2sVpnGatewayVpnProfile -ResourceId <String> [-AuthenticationMethod <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda menghasilkan dan mendapatkan url SAS bagi pelanggan untuk mengunduh profil Vpn agar penyiapan klien mengarahkan ke konektivitas situs ke P2SVpnGateway. Arahkan ke penyiapan klien situs menggunakan profil Vpn ini hanya dapat tersambung ke P2SVpnGateway tertentu ini.
+Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda membuat dan mendapatkan url SAS bagi pelanggan untuk mengunduh profil Vpn agar penyiapan klien titik ke situs memiliki konektivitas titik ke situs ke P2SVpnGateway. Pengaturan klien titik ke situs menggunakan profil Vpn ini hanya dapat tersambung ke P2SVpnGateway tertentu ini.
 
 ## EXAMPLES
 
@@ -52,12 +55,12 @@ ProfileUrl : https://nfvprodsuppby.blob.core.windows.net/vpnprofileimmutable/8cf
              6hDY3x1HX958nimOjavnEjL2rlSuKIIW8Q%3D&st=2019-10-25T19%3A20%3A04Z&se=2019-10-25T20%3A20%3A04Z&sp=r&fileExtension=.zip
 ```
 
-Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda menghasilkan dan mendapatkan url SAS bagi pelanggan untuk mengunduh profil Vpn agar penyiapan klien mengarahkan ke konektivitas situs ke P2SVpnGateway. ProfileUrl memperlihatkan url SAS dari mana pelanggan dapat mengunduh profil Vpn untuk mengarahkan ke penyiapan klien situs.
+Cmdlet **Get-AzP2sVpnGatewayVpnProfile** memungkinkan Anda membuat dan mendapatkan url SAS bagi pelanggan untuk mengunduh profil Vpn agar penyiapan klien titik ke situs memiliki konektivitas titik ke situs ke P2SVpnGateway. ProfileUrl menunjukkan url SAS tempat pelanggan dapat mengunduh profil Vpn untuk penyiapan klien titik ke situs.
 
 ## PARAMETERS
 
 ### -AuthenticationMethod
-Metode Autentikasi
+Metode autentikasi
 
 ```yaml
 Type: String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway vpn p2s yang akan diubah
+Objek gateway vpn p2s yang akan dimodifikasi
 
 ```yaml
 Type: PSP2SVpnGateway
@@ -102,7 +105,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari P2SVpnGateway untuk diubah.
+ID sumber daya Azure dari P2SVpnGateway yang akan dimodifikasi.
 
 ```yaml
 Type: String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

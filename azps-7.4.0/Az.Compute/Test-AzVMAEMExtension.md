@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/test-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Test-AzVMAEMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Test-AzVMAEMExtension.md
-ms.openlocfilehash: 2bd10f3bea4f20e5ddeabd054a9b174a3175a396
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6ec46ee88114af98f80b8d61c9af1b903cedf99e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005049"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682662"
 ---
 # Test-AzVMAEMExtension
 
 ## SYNOPSIS
 Memeriksa konfigurasi ekstensi AEM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/test-azvmaemextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ Test-AzVMAEMExtension [-ResourceGroupName] <String> [-VMName] <String> [[-OSType
 
 ## DESCRIPTION
 Cmdlet **Test-AzVMAEMExtension** memeriksa konfigurasi ekstensi Azure Enhanced Monitoring (AEM).
-Ekstensi AEM mengumpulkan data kinerja.
-Cmdlet ini memeriksa apakah data kinerja tersedia.
+Ekstensi AEM mengumpulkan data performa.
+Cmdlet ini memeriksa apakah data performa tersedia.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Cmdlet ini memeriksa apakah data kinerja tersedia.
 Test-AzVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "contoso-server"
 ```
 
-Perintah ini memeriksa konfigurasi ekstensi AEM untuk mesin virtual bernama contoso-server.
+Perintah ini memeriksa konfigurasi ekstensi AEM untuk komputer virtual bernama contoso-server.
 
 ## PARAMETERS
 
@@ -58,8 +61,8 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Menentukan tipe sistem operasi disk sistem operasi.
-Jika disk sistem operasi tidak memiliki tipe, Anda harus menentukan parameter ini.
+Menentukan jenis sistem operasi disk sistem operasi.
+Jika disk sistem operasi tidak memiliki jenis, Anda harus menentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Windows dan Linux.
 
 ```yaml
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual yang diperiksa cmdlet ini.
+Menentukan nama grup sumber daya komputer virtual yang diperiksa cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
-Cmdlet ini menguji ekstensi AEM untuk mesin virtual yang ditentukan parameter ini.
+Menentukan nama komputer virtual.
+Cmdlet ini menguji ekstensi AEM untuk komputer virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

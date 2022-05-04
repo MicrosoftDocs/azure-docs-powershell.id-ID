@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzAvailabilityGroupListener.md
-ms.openlocfilehash: 2976f9e30094637390968ac9d850fdd3e371ef0a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 68c9052872c1ea3039574ac103fe3fa3d995d218
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271359"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738082"
 ---
 # Get-AzAvailabilityGroupListener
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa Pendengar Grup Ketersediaan dalam grup Mesin Virtual SQL.
+Dapatkan satu atau beberapa Listener Grup Ketersediaan di Grup Komputer Virtual SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzAvailabilityGroupListener [-ResourceId] <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Get-AzAvailabilityGroupListener mendapatkan satu atau beberapa Pendengar Grup Ketersediaan dari SQL Grup Mesin Virtual.
+Get-AzAvailabilityGroupListener mendapatkan satu atau beberapa Pendengar Grup Ketersediaan dari Grup Komputer Virtual SQL.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Name         ResourceGroupName GroupName    AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01   SqlVmGroup01 AvailabilityGroup01
 ```
-Perintah ini mendapatkan informasi tentang Availability Group Listener AgListener01 di SQL Virtual Machine Group SqlVmGroup01 dan Resource Group ResourceGroup01.
+Perintah ini mendapatkan informasi tentang Grup Ketersediaan Listener AgListener01 di SQL Virtual Machine Group SqlVmGroup01 dan Resource Group ResourceGroup01.
 
 ### Contoh 2
 ```powershell
@@ -65,7 +68,7 @@ Name         ResourceGroupName GroupName    AvailabilityGroupName
 AgListener01 ResourceGroup01   SqlVmGroup01 AvailabilityGroup01
 AgListener02 ResourceGroup01   SqlVmGroup01 AvailabilityGroup01
 ```
-Perintah ini mendapatkan informasi tentang semua Pendengar Grup Ketersediaan di SQL Grup Mesin Virtual SqlVmGroup01 dan Resource Group ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua Listener Grup Ketersediaan di Grup Komputer Virtual SQL SqlVmGroup01 dan Resource Group ResourceGroup01.
 
 ### Contoh 3
 ```powershell
@@ -95,7 +98,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Pendengar Grup Ketersediaan.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Pendengar Grup Ketersediaan
+Id Sumber Daya Listener Grup Ketersediaan
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupName
-SQL nama grup mesin virtual.
+SQL nama grup komputer virtual.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL objek Grup mesin virtual.
+SQL objek Grup komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
