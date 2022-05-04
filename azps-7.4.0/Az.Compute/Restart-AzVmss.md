@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVmss.md
-ms.openlocfilehash: fa6ec72f1b1107c142be937b66d4a9f27917d61a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6666e3b6c8d677461b6a76f4848c0a745a56bc7d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143005481"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683922"
 ---
 # Restart-AzVmss
 
 ## SYNOPSIS
-Memulai ulang VMSS atau mesin virtual dalam VMSS.
+Menghidupkan ulang VMSS atau komputer virtual dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/restart-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,29 +29,29 @@ Restart-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Insta
 ```
 
 ## DESCRIPTION
-Cmdlet **Restart-AzVmss** memulai ulang Kumpulan Skala Mesin Virtual (VMSS).
-Cmdlet ini juga dapat digunakan untuk memulai ulang mesin virtual tertentu di dalam VMSS menggunakan parameter *InstanceId* .
+Cmdlet **Restart-AzVmss** memulai ulang Virtual Machine Scale Set (VMSS).
+Cmdlet ini juga dapat digunakan untuk menghidupkan ulang komputer virtual tertentu di dalam VMSS dengan menggunakan parameter *InstanceId* .
 
 ## EXAMPLES
 
-### Contoh 1: Hidupkan ulang VMSS
+### Contoh 1: Mulai ulang VMSS
 ```powershell
 Restart-AzVmss -ResourceGroupName "Group001" -VMScaleSetName "VMSS001";
 ```
 
 Perintah ini memulai ulang VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
-### Contoh 2: Hidupkan ulang mesin virtual tertentu dalam VMSS
+### Contoh 2: Menghidupkan ulang komputer virtual tertentu dalam VMSS
 ```powershell
 Restart-AzVmss -ResourceGroupName "Group004" -VMScaleSetName "VMSS001" -InstanceId "1"
 ```
 
-Perintah ini memulai ulang mesin virtual yang memiliki ID instans 1 dalam VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
+Perintah ini memulai ulang komputer virtual yang memiliki ID instans 1 di VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Spesies nama VMSS yang cmdlet ini mulai ulang.
+Spesies nama VMSS yang dimulai ulang cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -122,8 +125,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -169,18 +172,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVmss](./Get-AzVmss.md)
+[Dapatkan-AzVmss](./Get-AzVmss.md)
 
-[New-AzVmss](./New-AzVmss.md)
+[Baru-AzVmss](./New-AzVmss.md)
 
-[Hapus-AzVms](./Remove-AzVmss.md)
+[Remove-AzVmss](./Remove-AzVmss.md)
 
-[Set-AzVms](./Set-AzVmss.md)
+[Set-AzVmss](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Pembaruan-AzVms](./Update-AzVmss.md)
+[Update-AzVmss](./Update-AzVmss.md)
 
 

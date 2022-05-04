@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: 330b562bfde859e19d8e924aefd61286e7c4626a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 450e81cfce99bf121ef45ed6fbe2757be2c9f325
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996607"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701456"
 ---
 # New-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
-Membuat sumber daya monitor koneksi.
+Membuat sumber daya pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ New-AzNetworkWatcherConnectionMonitor [-ConnectionMonitor <PSNetworkWatcherConne
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitor membuat sumber monitor koneksi untuk sumber dan tujuan tertentu (monitor koneksi SingleSourcedestination) atau kumpulan grup pengujian (MultiEndpointConnectionMonitor).
+Cmdlet New-AzNetworkWatcherConnectionMonitor membuat sumber daya pemantau koneksi untuk sumber dan tujuan tertentu (pemantau koneksi SingleSourcedestination) atau serangkaian grup pengujian (MultiEndpointConnectionMonitor).
 
 ## EXAMPLES
 
@@ -113,7 +116,7 @@ Tags                        : {}
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigureOnly
-Mengonfigurasi monitor koneksi, tetapi jangan memulainya
+Mengonfigurasi pemantau koneksi, tetapi jangan memulainya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionMonitor
-Objek monitor koneksi.
+Objek pemantau koneksi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorObject
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationAddress
-Alamat tujuan monitor koneksi (IP atau nama domain).
+Alamat tujuan pemantau koneksi (IP atau nama domain).
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationPort
-Port tujuan yang digunakan oleh monitor koneksi.
+Port tujuan yang digunakan oleh pemantau koneksi.
 
 ```yaml
 Type: System.Int32
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationResourceId
-ID sumber daya yang digunakan sebagai tujuan menurut monitor koneksi.
+ID sumber daya yang digunakan sebagai tujuan oleh pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi pengawas jaringan.
+Lokasi pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitoringIntervalInSeconds
-Interval pemantauan dalam detik. Nilai default adalah 60 detik.
+Interval pemantauan dalam hitungan detik. Nilai defaultnya adalah 60 detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -262,8 +265,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama monitor koneksi.
+### -Name
+Nama pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengawas jaringan.
+Nama pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -Catatan
-Catatan yang terkait dengan monitor koneksi.
+Catatan yang terkait dengan pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengawas jaringan.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: System.String
@@ -353,7 +356,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourcePort
-Port sumber yang digunakan oleh monitor koneksi.
+Port sumber yang digunakan oleh pemantau koneksi.
 
 ```yaml
 Type: System.Int32
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceResourceId
-ID sumber daya yang digunakan sebagai sumber menurut monitor koneksi.
+ID sumber daya yang digunakan sebagai sumber oleh pemantau koneksi.
 
 ```yaml
 Type: System.String
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -398,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestGroup
-Daftar grup uji.
+Daftar grup pengujian.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcherConnectionMonitorTestGroupObject[]
@@ -412,8 +415,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDscExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDscExtension.md
-ms.openlocfilehash: 1dcf2d5ac91653452741bf815394559036706960
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b0c43ec35ee9eb38095901b92f8c2d1a4b9a4a92
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289953"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626178"
 ---
 # Remove-AzVMDscExtension
 
 ## SYNOPSIS
-Menghapus pengatur ekstensi DSC dari mesin virtual dalam grup sumber daya.
+Menghapus handler ekstensi DSC dari komputer virtual dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmdscextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzVMDscExtension [-ResourceGroupName] <String> [-VMName] <String> [[-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVMDscExtension** menghapus pengatur ekstensi Desired State Configuration (DSC) dari mesin virtual dalam grup sumber daya.
+Cmdlet **Remove-AzVMDscExtension** menghapus handler ekstensi Desired State Configuration (DSC) dari komputer virtual dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **Remove-AzVMDscExtension** menghapus pengatur ekstensi Desired State Con
 Remove-AzVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM07" -Name "DSC"
 ```
 
-Perintah ini menghapus ekstensi bernama DSC pada mesin virtual bernama VM07.
+Perintah ini menghapus ekstensi bernama DSC pada komputer virtual bernama VM07.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi DSC yang dihapus cmdlet ini.
 Cmdlet Set-AzVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai default yang digunakan oleh **Remove-AzVMDscExtension**.
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini menghapus ekstensi DSC.
+Menentukan nama komputer virtual tempat cmdlet ini menghapus ekstensi DSC.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

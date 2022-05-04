@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: 277611459dd048ecc62b0c23b22798f8b1c1721c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6e5c55dedd033b2c27f71689970fa99963f7a7ab
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143118233"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711850"
 ---
 # Set-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
-Memperbarui kumpulan alamat ujung belakang untuk gateway aplikasi.
+Memperbarui kumpulan alamat back-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaybackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,19 +30,19 @@ Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway <PSApplicationGat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayBackendAddressPool** memperbarui kumpulan alamat ujung belakang untuk gateway aplikasi Azure.
-Alamat ujung belakang dapat ditentukan sebagai alamat IP, nama domain yang sepenuhnya memenuhi syarat (FQDN) atau ID konfigurasi IP.
+Cmdlet **Set-AzApplicationGatewayBackendAddressPool** memperbarui kumpulan alamat back-end untuk gateway aplikasi Azure.
+Alamat back-end dapat ditentukan sebagai alamat IP, nama domain yang sepenuhnya memenuhi syarat (FQDN) atau ID konfigurasi IP.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kumpulan alamat ujung belakang menggunakan FQDN
+### Contoh 1: Mengatur kumpulan alamat back-end dengan menggunakan FQDN
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $AppGw = Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -Name "Pool02" -BackendFqdns "contoso1.com", "contoso2.com"
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah kedua memperbarui kumpulan alamat ujung belakang gateway aplikasi di $AppGw menggunakan FQDN.
+Perintah kedua memperbarui kumpulan alamat back-end gateway aplikasi di $AppGw dengan menggunakan FQDN.
 
 ### Contoh 2: Mengatur kumpulan alamat back-end dengan menggunakan alamat IP server backend
 ```powershell
@@ -48,12 +51,12 @@ $AppGw = Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
-Perintah kedua memperbarui kumpulan alamat ujung belakang gateway aplikasi di $AppGw menggunakan alamat IP.
+Perintah kedua memperbarui kumpulan alamat back-end gateway aplikasi di $AppGw dengan menggunakan alamat IP.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini mengaitkan kumpulan alamat ujung belakang.
+Menentukan gateway aplikasi tempat cmdlet ini mengaitkan kumpulan alamat back-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendFqdns
-Menentukan daftar alamat IP ujung-belakang untuk digunakan sebagai kumpulan server back-end.
+Menentukan daftar alamat IP back-end untuk digunakan sebagai kumpulan server back-end.
 
 ```yaml
 Type: System.String[]
@@ -110,9 +113,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan alamat ujung-belakang.
-Kumpulan alamat ujung belakang ini harus ada di gateway aplikasi.
+### -Name
+Menentukan nama kumpulan alamat back-end.
+Kumpulan alamat back-end ini harus ada di gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -126,8 +129,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

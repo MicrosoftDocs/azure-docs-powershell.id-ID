@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 451c51e0ffacaa3f9a079452c2ecf8137b84c886
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d04b0e882bfe00bbb28cb85890429f3fef641691
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143271521"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144708490"
 ---
 # Update-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
-Memperbarui cadangan penyimpanan jangka panjang.
+Memperbarui cadangan retensi jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqldatabaselongtermretentionbackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,12 +44,12 @@ Update-AzSqlDatabaseLongTermRetentionBackup [-BackupStorageRedundancy <String>]
 ```
 
 ## DESCRIPTION
-Memperbarui properti cadangan penyimpanan jangka panjang.
+Memperbarui properti cadangan retensi jangka panjang.
   
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Pencadangan Storage Redundansi cadangan penyimpanan jangka panjang.
+### Contoh 1: Perbarui Pencadangan Storage Redundansi cadangan retensi jangka panjang.
 ```powershell
 Update-AzSqlDatabaseLongTermRetentionBackup -Location southeastasia -ServerName ayang-stage-seas -DatabaseName ltr3 -BackupName 'e5c20f43-494c-4925-89d1-58e0f4569fb3;132579992320000000' -ResourceGroupName testrg -BackupStorageRedundancy Geo
 ```
@@ -65,9 +68,9 @@ ResourceGroupName                : testrg
 BackupStorageRedundancy          : Geo
 ```
 
-Perintah ini mengatur Pencadangan Storage Redundansi cadangan yang ditentukan menggunakan nama lokasi dan Grup Sumber Daya, Server, Database, dan Pencadangan.  
+Perintah ini mengatur Redundansi Storage Cadangan yang ditentukan menggunakan nama lokasi dan Grup Sumber Daya, Server, Database, dan Cadangan.  
 
-### Contoh 2: Memperbarui Pencadangan Storage Redundansi cadangan penyimpanan jangka panjang (menggunakan Id Sumber Daya).
+### Contoh 2: Memperbarui Pencadangan Storage Redundansi cadangan retensi jangka panjang (menggunakan Id Sumber Daya).
 ```powershell
 Update-AzSqlDatabaseLongTermRetentionBackup -ResourceId '/subscriptions/01c4ec88-e179-44f7-9eb0-e9719a5087ab/resourceGroups/testrg/providers/Microsoft.Sql/locations/southeastasia/longTermRetentionServers/ayang-stage-seas/longTermRetentionDatabases/ltr3/longTermRetentionBackups/e5c20f43-494c-4925-89d1-58e0f4569fb3;132579992320000000' -BackupStorageRedundancy Geo
 ```
@@ -86,12 +89,12 @@ ResourceGroupName                : testrg
 BackupStorageRedundancy          : Geo
 ```
 
-Perintah ini mengatur Pencadangan Storage Redundansi cadangan yang ditentukan menggunakan Id Sumber Daya cadangan. 
+Perintah ini mengatur Redundansi Storage Cadangan yang ditentukan menggunakan Id Sumber Daya cadangan. 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,8 +124,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Redundansi penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database.
-Opsinya adalah: Lokal, Zona dan Geo.
+Redundansi penyimpanan Cadangan yang digunakan untuk menyimpan cadangan untuk SQL Database.
+Opsinya adalah: Lokal, Zona, dan Geo.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Cadangan Penyimpanan Jangka Panjang Database untuk diperbarui.
+Objek Cadangan Retensi Jangka Panjang Database yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Backup.Model.AzureSqlDatabaseLongTermRetentionBackupModel
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Cadangan Penyimpanan Jangka Panjang Database untuk dihapus.
+ID Sumber Daya dari Cadangan Retensi Jangka Panjang Database untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL cadangan berada di bawah.
+Nama Server Azure SQL tempat cadangan berada.
 
 ```yaml
 Type: System.String
@@ -242,8 +245,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

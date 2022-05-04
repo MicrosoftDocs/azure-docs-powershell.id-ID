@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Get-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Get-AzHealthcareApisService.md
-ms.openlocfilehash: c9338d90aec95278c05980c679452130f68f45ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 30b9b829b6602abc07192cb06432776602f31152
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143315855"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712102"
 ---
 # Get-AzHealthcareApisService
 
 ## SYNOPSIS
-Dapatkan metadata instans layanan.
+Mendapatkan metadata instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/get-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzHealthcareApisService -ResourceId <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Dapatkan akun layanan fhir HealthcareApis yang sudah ada yang dibuat dalam langganan tertentu atau grup sumber daya.
+Mendapatkan akun layanan fhir healthcareApis yang sudah ada yang dibuat dalam langganan atau grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ SmartProxyEnabled       : False
 
 ### Contoh 2
 
-Mendapatkan metadata untuk semua layanan HealthcareApis dalam Grup Sumber Daya yang disediakan.
+Mendapatkan metadata untuk semua layanan HealthcareApis di Grup Sumber Daya yang disediakan.
 
 ```powershell
 Get-AzHealthcareApisService -ResourceGroupName "MyResourceGroup"
@@ -191,7 +194,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Layanan HealthcareApis.
 
 ```yaml
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

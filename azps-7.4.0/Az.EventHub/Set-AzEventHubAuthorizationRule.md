@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: 7500a67b522e0dc7318967177cbe053bc27e1e61
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e4ad0e8064385b047436465a5954d938aebce1c6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941221"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642462"
 ---
 # Set-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
-Memperbarui aturan otorisasi yang ditentukan di Hub Acara.
+Memperbarui aturan otorisasi yang ditentukan pada Pusat Aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzEventHubAuthorizationRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentukan pada Hub Kejadian tertentu.
+Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentukan pada Event Hub yang diberikan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentu
 Set-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName -Rights @("Manage")
 ```
 
-Memperbarui aturan \`otorisasi MyAuthRuleName\` untuk memberikan hak Kelola ke Hub \`Kejadian MyEventHubName\`, yang dilingkup oleh ruang \`nama MyNamespaceName\`.
+Memperbarui aturan \`otorisasi MyAuthRuleName\` untuk memberikan hak Kelola ke Event Hub \`MyEventHubName\`, yang dicakup oleh namespace \`MyNamespaceName\`.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Hak
-Hak, misalnya @("Dengarkan","Kirim","Kelola")
+Hak, misalnya @("Dengar","Kirim","Kelola")
 
 ```yaml
 Type: System.String[]
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2Item.md
-ms.openlocfilehash: e5c1d1e1858f24ffddf4fddf82f672cd1039f500
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1adb91b8d000dc3a8bee78aa351efc4d69b40cc4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932689"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602186"
 ---
 # Get-AzDataLakeGen2Item
 
 ## SYNOPSIS
 Mendapatkan detail file atau direktori dalam sistem file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzDataLakeGen2Item [-FileSystem] <String> [-Path <String>] [-Context <IStora
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataLakeGen2Item** mendapatkan detail file atau direktori dalam Filesystem di akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan direktori dari Filesystem, dan perlihatkan detailnya
+### Contoh 1: Dapatkan direktori dari Filesystem, dan tampilkan detailnya
 ```
 PS C:\> $dir1 = Get-AzDataLakeGen2Item -FileSystem "filesystem1" -Path "dir1/"
 PS C:\> $dir1
@@ -96,7 +99,7 @@ ArchiveStatus         :
 AccessTierChangedOn   : 1/1/0001 12:00:00 AM +00:00
 ```
 
-Perintah ini mendapatkan direktori dari Filesystem, dan memperlihatkan detailnya.
+Perintah ini mendapatkan direktori dari Filesystem, dan menampilkan detailnya.
 
 ### Contoh 2: Mendapatkan file dari Filesystem
 ```
@@ -113,7 +116,7 @@ Perintah ini mendapatkan detail file dari Filesystem.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -159,9 +162,9 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam Filesystem tertentu yang harus diambil.
+Jalur dalam Filesystem yang ditentukan yang harus diambil.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'.
-Tidak menentukan parameter ini untuk mendapatkan direktori akar dari Filesystem.
+Tidak menentukan parameter ini untuk mendapatkan direktori akar filesystem.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

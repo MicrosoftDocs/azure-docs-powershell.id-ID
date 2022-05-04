@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubGeoDRConfigurationFailOver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubGeoDRConfigurationFailOver.md
-ms.openlocfilehash: 051b09fa40ed0215bd2dfab9ae1202b9179cba0f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bd4016ec76b920cc843036c58fe03b22c4d98045
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941185"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144693857"
 ---
 # Set-AzEventHubGeoDRConfigurationFailOver
 
 ## SYNOPSIS
-Mencabut failover GEO DR dan mengonfigurasi ulang alias untuk mengarahkan ke ruang nama sekunder
+Memanggil failover GEO DR dan mengonfigurasi ulang alias untuk menunjuk ke namespace sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubgeodrconfigurationfailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,14 +34,14 @@ Set-AzEventHubGeoDRConfigurationFailOver [-InputObject] <PSEventHubDRConfigurati
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GeodrConfigResourceIdParameterSet
+### GeoDRConfigResourceIdParameterSet
 ```
 Set-AzEventHubGeoDRConfigurationFailOver [-ResourceId] <String> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzEventHubGeoDRConfigurationFailOver** memanggil failover GEO DR dan mengonfigurasi ulang alias untuk mengarahkan ke ruang nama sekunder
+Cmdlet **Set-AzEventHubGeoDRConfigurationFailOver** memanggil failover GEO DR dan mengonfigurasi ulang alias untuk menunjuk ke namespace sekunder
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Set-AzEventHubGeoDRConfigurationFailOver** memanggil failover GEO DR da
 Set-AzEventHubGeoDRConfigurationFailOver -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Secondary" -Name "SampleDRConfigName"
 ```
 
-Memanggil Failover melalui alias "SampleDRConfigName", mengonfigurasi ulang dan mengarahkan ke Ruang nama sekunder "SampleNamespace_Secondary"
+Memanggil Failover melalui alias "SampleDRConfigName", mengonfigurasi ulang dan menunjuk ke namespace sekunder "SampleNamespace_Secondary"
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Konfigurasi Geodr Eventhub
+Objek Konfigurasi GeoDR Eventhub
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes
@@ -81,7 +84,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Konfigurasi DR
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama - Ruang Nama Sekunder
+Nama Namespace - Namespace Sekunder
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Konfigurasi Geodr
+Id Sumber Daya GeoDRConfiguration
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

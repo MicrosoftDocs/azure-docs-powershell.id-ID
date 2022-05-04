@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeering.md
-ms.openlocfilehash: 5b6d29cf5906f9f44dc27ef0fc45c4ee80678d7c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ccc2b0fe8f6cd0fe4ade7218e26cc13b38c9bb1d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741420"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625089"
 ---
 # Get-AzPeering
 
 ## SYNOPSIS
 Mendapatkan Sumber Daya Peering untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/get-azpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzPeering [-ResourceId] <String> [-DefaultProfile <IAzureContextContainer>] 
 ```
 
 ## DESCRIPTION
-Mendapatkan Peerings dari langganan, grup sumber daya, atau menurut nama.
+Mendapatkan Peering dari langganan, grup sumber daya, atau berdasarkan nama.
 
 ## EXAMPLES
 
@@ -93,7 +96,7 @@ Type              : Microsoft.Peering/peerings
 Tags              : {}
 ```
 
-Mendapatkan nama Exchange peering`myExchangePeering1`
+Mendapatkan peering Exchange bernama`myExchangePeering1`
 
 ### Contoh 3
 ```powershell
@@ -114,7 +117,7 @@ Type              : Microsoft.Peering/peerings
 Tags              : {}
 ```
 
-Mendapatkan nama Exchange peering `myExchangePeering1` berdasarkan id sumber daya.
+Mendapatkan peering Exchange bernama `myExchangePeering1` berdasarkan id sumber daya.
 
 ## PARAMETERS
 
@@ -133,8 +136,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
-Memperlihatkan semua sumber daya Peering menurut Jenis.
+### -Kind
+Memperlihatkan semua sumber daya Peering berdasarkan Jenis.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unik PSPeering.
 
 ```yaml
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 14ec19d51224a080614c471fdebeede20dbabd7f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d244d1c9667b74d2593bb124121055764aa5b78e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678942"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681816"
 ---
 # New-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Membuat pendengar HTTP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Cmdlet **New-AzApplicationGatewayHttpListener** membuat pendengar HTTP untuk gat
 $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Http" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01
 ```
 
-Perintah ini membuat pendengar HTTP bernama Listener01 dan menyimpan hasilnya dalam variabel bernama $Listener.
+Perintah ini membuat listener HTTP bernama Listener01 dan menyimpan hasilnya dalam variabel bernama $Listener.
 
 ### Contoh 2: Membuat pendengar HTTP dengan SSL
 ```powershell
@@ -59,14 +62,14 @@ $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "H
 ```
 
 Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01.
-Perintah menyimpan hasil dalam variabel bernama $Listener.
+Perintah menyimpan hasilnya dalam variabel bernama $Listener.
 
-### Contoh 3: Membuat pendengar HTTP dengan kebijakan-firewall
+### Contoh 3: Membuat pendengar HTTP dengan kebijakan firewall
 ```powershell
 $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Http" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -FirewallPolicy $firewallPolicy
 ```
 
-Perintah ini membuat pendengar HTTP bernama Listener01, FirewallPolicy sebagai $firewallPolicy dan menyimpan hasilnya dalam variabel bernama $Listener.
+Perintah ini membuat listener HTTP bernama Listener01, FirewallPolicy sebagai $firewallPolicy dan menyimpan hasilnya dalam variabel bernama $Listener.
 
 ### Contoh 4: Menambahkan pendengar HTTPS dengan SSL dan HostNames
 ```powershell
@@ -74,7 +77,7 @@ $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "H
 ```
 
 Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01 bersama dengan dua HostName.
-Perintah menyimpan hasil dalam variabel bernama $Listener.
+Perintah menyimpan hasilnya dalam variabel bernama $Listener.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ### -FirewallPolicy
 Menentukan referensi objek ke kebijakan firewall tingkat atas. Referensi objek dapat dibuat dengan menggunakan cmdlet New-AzApplicationGatewayWebApplicationFirewallPolicy.
 $firewallPolicy = New-AzApplicationGatewayFirewallPolicy -Name "wafPolicy1" -ResourceGroup "rgName" Kebijakan firewall yang dibuat menggunakan commandlet di atas dapat dirujuk pada tingkat aturan jalur. perintah dia di atas akan membuat pengaturan kebijakan default dan aturan terkelola.
-Sebagai ganti nilai default, pengguna dapat menentukan Pengaturan Kebijakan, ManagedRules dengan menggunakan New-AzApplicationGatewayFirewallPolicySettings dan New-AzApplicationGatewayFirewallPolicyManagedRules.
+Alih-alih nilai default, pengguna dapat menentukan PolicySettings, ManagedRules dengan menggunakan New-AzApplicationGatewayFirewallPolicySettings dan New-AzApplicationGatewayFirewallPolicyManagedRules masing-masing.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallPolicy
@@ -126,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallPolicyId
-Menentukan ID sumber daya firewall aplikasi web tingkat atas yang sudah ada.
-ID kebijakan firewall dapat dikembalikan menggunakan cmdlet Get-AzApplicationGatewayWebApplicationFirewallPolicy. Setelah kami memiliki ID, Anda dapat menggunakan parameter *FirewallPolicyId* dan bukan parameter *FirewallPolicy* .
+Menentukan ID sumber daya firewall aplikasi web tingkat atas yang ada.
+ID kebijakan firewall dapat dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayWebApplicationFirewallPolicy. Setelah kami memiliki ID, Anda dapat menggunakan parameter *FirewallPolicyId* alih-alih parameter *FirewallPolicy* .
 Misalnya: -FirewallPolicyId /subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/<firewallPolicyName>
 
 ```yaml
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfiguration
-Menentukan objek konfigurasi IP ujung-depan untuk pendengar HTTP.
+Menentukan objek konfigurasi IP front-end untuk pendengar HTTP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfigurationId
-Menentukan ID konfigurasi IP ujung-depan untuk pendengar HTTP.
+Menentukan ID konfigurasi IP front-end untuk pendengar HTTP.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan untuk pendengar HTTP.
+Menentukan port front-end untuk pendengar HTTP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendPort
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPortId
-Menentukan ID objek port ujung depan untuk pendengar HTTP.
+Menentukan ID objek port front-end untuk pendengar HTTP.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama pendengar HTTP yang dibuat cmdlet ini.
 
 ```yaml
@@ -338,11 +341,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

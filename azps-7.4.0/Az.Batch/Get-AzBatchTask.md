@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTask.md
-ms.openlocfilehash: 7fa9a941f8b2e95014a532cf5f8c0e90c1cde606
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b9361bf31f5256c491795c13800e08cc9da89dc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129267"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658512"
 ---
 # Get-AzBatchTask
 
 ## SYNOPSIS
-Mendapatkan tugas Kumpulan untuk pekerjaan.
+Mendapatkan tugas Batch untuk pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,14 +43,14 @@ Get-AzBatchTask [[-Job] <PSCloudJob>] [-Filter <String>] [-MaxCount <Int32>] [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchTask** mendapatkan Azure Batch tugas untuk pekerjaan Batch.
-Tentukan pekerjaan dengan parameter *JobId* atau parameter *Job* .
-Untuk mendapatkan tugas tunggal, tentukan parameter *Id* .
-Anda bisa menentukan parameter *Filter* untuk mendapatkan tugas yang cocok dengan filter Open Data Protocol (OData).
+Cmdlet **Get-AzBatchTask** mendapatkan tugas Azure Batch untuk pekerjaan Batch.
+Tentukan pekerjaan dengan parameter *JobId* atau parameter *Pekerjaan* .
+Untuk mendapatkan satu tugas, tentukan parameter *Id* .
+Anda dapat menentukan parameter *Filter* untuk mendapatkan tugas yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tugas menurut ID
+### Contoh 1: Mendapatkan tugas berdasarkan ID
 ```powershell
 Get-AzBatchTask -JobId "Job01" -Id "Task03" -BatchContext $Context
 ```
@@ -77,7 +80,7 @@ Url                         : https://pfuller.westus.batch.azure.com/jobs/Job01/
 Perintah ini mendapatkan tugas dengan ID Task03 di bawah job Job01.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Mendapatkan semua tugas yang sudah selesai dari pekerjaan tertentu
+### Contoh 2: Mendapatkan semua tugas yang diselesaikan dari pekerjaan tertentu
 ```powershell
 Get-AzBatchTask -JobId "Job02" -Filter "state eq 'completed'" -BatchContext $Context
 ```
@@ -122,13 +125,13 @@ Statistics                  :
 Url                         : https://pfuller.westus.batch.azure.com/jobs/Job02/tasks/Task27
 ```
 
-Perintah ini mendapatkan tugas yang sudah selesai dari pekerjaan yang memiliki ID Job02.
+Perintah ini mendapatkan tugas yang diselesaikan dari pekerjaan yang memiliki ID Job02.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluasan OData.
+Menentukan klausa perluasan OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang akan didapatkan.
 
 ```yaml
@@ -174,8 +177,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData untuk tugas.
-Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua tugas untuk akun Batch atau pekerjaan.
+Menentukan klausa filter OData untuk tugas.
+Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua tugas untuk akun atau pekerjaan Batch.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 
 ### -Id
 Menentukan ID tugas yang didapat cmdlet ini.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Job
+### -Pekerjaan
 Menentukan pekerjaan yang berisi tugas yang didapat cmdlet ini.
 Untuk mendapatkan objek **PSCloudJob** , gunakan cmdlet Get-AzBatchJob.
 
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pemilihan OData.
+Menentukan klausa pilih OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -294,7 +297,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchTask](./New-AzBatchTask.md)
 
-[Hapus-AzBatchTask](./Remove-AzBatchTask.md)
+[Remove-AzBatchTask](./Remove-AzBatchTask.md)
 
 [Stop-AzBatchTask](./Stop-AzBatchTask.md)
 

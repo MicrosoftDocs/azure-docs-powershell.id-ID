@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationSummary.md
-ms.openlocfilehash: da8a357f1a3ed7134e14a8b4e035dcb6a11e0e88
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5bc0271cd50d8dd85c6fbae1ec296f5ad7b8b44b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878508"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666448"
 ---
 # Get-AzConsumptionReservationSummary
 
 ## SYNOPSIS
-Dapatkan ringkasan reservasi untuk gandum harian atau bulanan.
+Dapatkan ringkasan reservasi untuk butir harian atau bulanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionreservationsummary) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzConsumptionReservationSummary -Grain <String> -ReservationOrderId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzConsumptionReservationSummary** mendapatkan ringkasan reservasi untuk gandum harian atau bulanan.
+Cmdlet **Get-AzConsumptionReservationSummary** mendapatkan ringkasan reservasi untuk butir harian atau bulanan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ringkasan reservasi dengan Id pesanan reservasi untuk gandum bulanan
+### Contoh 1: Dapatkan ringkasan reservasi dengan Id pesanan reservasi untuk butir bulanan
 ```powershell
 Get-AzConsumptionReservationSummary -Grain monthly -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b
 ```
@@ -49,7 +52,7 @@ UsageDate:  9/1/2017 12:00:00 AM
 UsedHour:  288
 ```
 
-### Contoh 2: Dapatkan ringkasan reservasi dengan Id pesanan reservasi dan Id reservasi untuk gandum bulanan
+### Contoh 2: Dapatkan ringkasan reservasi dengan Id pesanan reservasi dan Id reservasi untuk butir bulanan
 ```powershell
 Get-AzConsumptionReservationSummary -Grain monthly -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -ReservationId f37f4b70-52ba-4344-a8bd-28abfd21d640
 ```
@@ -69,7 +72,7 @@ UsageDate:  9/1/2017 12:00:00 AM
 UsedHour:  288
 ```
 
-### Contoh 3: Dapatkan ringkasan reservasi dengan Id pesanan reservasi untuk rentang tanggal yang disediakan gandum harian
+### Contoh 3: Dapatkan ringkasan reservasi dengan Id pesanan reservasi untuk rentang tanggal yang disediakan butir harian
 ```powershell
 Get-AzConsumptionReservationSummary -Grain daily -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -StartDate 2017-10-01 -EndDate 2017-12-07
 ```
@@ -89,7 +92,7 @@ UsageDate:  11/1/2017 12:00:00 AM
 UsedHour:  24
 ```
 
-### Contoh 4: Dapatkan ringkasan reservasi dengan Id pesanan reservasi dan Id reservasi untuk rentang tanggal yang disediakan biji-bijian harian
+### Contoh 4: Dapatkan ringkasan reservasi dengan Id pesanan reservasi dan Id reservasi untuk rentang tanggal yang disediakan butir harian
 ```powershell
 Get-AzConsumptionReservationSummary -Grain daily -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -ReservationId f37f4b70-52ba-4344-a8bd-28abfd21d640 -StartDate 2017-10-01 -EndDate 2017-12-07
 ```
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Data akhir (YYYY-MM-DD dalam UTC) dari ringkasan reservasi, hanya diperlukan untuk gandum harian.
+Data akhir (YYYY-MM-DD dalam UTC) dari ringkasan reservasi, hanya diperlukan untuk butir harian.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -141,7 +144,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Biji-bijian
+### -Grain
 Butir waktu ringkasan reservasi, bisa harian atau bulanan.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Pengidentifikasi reservasi dalam pesanan pemesanan.
+Pengidentifikasi reservasi dalam pesanan reservasi.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Data mulai (YYYY-MM-DD dalam UTC) dari ringkasan reservasi, hanya diperlukan untuk biji-bijian harian.
+Data awal (YYYY-MM-DD dalam UTC) dari ringkasan reservasi, hanya diperlukan untuk butir harian.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -203,11 +206,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/move-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Move-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Move-AzDataLakeGen2Item.md
-ms.openlocfilehash: 9bf01e93a6f0d253091ca3bbd18dc6872fd1b0c2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9edd2cc59980490963b59ab8af5e73c56c93d524
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798084"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711346"
 ---
 # Move-AzDataLakeGen2Item
 
 ## SYNOPSIS
-Memindahkan file atau direktori ke file atau direktori lain dalam akun Storage yang sama.
+Pindahkan file atau direktori ke file atau direktori lain di akun Storage yang sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/move-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,8 +37,8 @@ Move-AzDataLakeGen2Item -InputObject <AzureDataLakeGen2Item> -DestFileSystem <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzDataLakeGen2Item** memindahkan file atau direktori ke file atau direktori lain dalam akun Storage yang sama.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet **Move-AzDataLakeGen2Item** memindahkan file atau direktori ke file atau direktori lain di akun Storage yang sama.
+Cmdlet ini hanya berfungsi jika Namespace Hierarki diaktifkan untuk akun Storage. Akun semacam ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
@@ -50,9 +53,9 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir3                 True                         2020-03-13 13:07:34Z rwxrw-rw-    $superuser           $superuser
 ```
 
-Perintah ini memindahkan direktori 'dir1' ke direktori 'dir3' dalam Filesystem yang sama.
+Perintah ini memindahkan direktori 'dir1' ke direktori 'dir3' di Filesystem yang sama.
 
-### Contoh 2: Memindahkan file menurut saluran, ke Filesystem lain di akun Storage yang sama tanpa perintah
+### Contoh 2: Memindahkan file menurut alur, ke Filesystem lain di akun Storage yang sama tanpa permintaan
 ```
 PS C:\> Get-AzDataLakeGen2Item -FileSystem "filesystem1" -Path "dir1/file1" | Move-AzDataLakeGen2Item -DestFileSystem "filesystem2" -DestPath "dir2/file2" -Force
 
@@ -63,7 +66,7 @@ Path                 IsDirectory  Length          LastModified         Permissio
 dir2/file2           False        1024            2020-03-23 09:57:33Z rwxrw-rw-    $superuser           $superuser
 ```
 
-Perintah ini memindahkan file 'dir1/file1' di 'filesystem1' ke file 'dir2/file2' di 'filesystem2' dalam akun Storage yang sama tanpa perintah.
+Perintah ini memindahkan file 'dir1/file1' di 'filesystem1' ke file 'dir2/file2' di 'filesystem2' di akun Storage yang sama tanpa perintah.
 
 ### Contoh 3: Memindahkan item dengan token Sas
 ```
@@ -81,11 +84,11 @@ dir2/file1           False        1024            2021-03-23 09:57:33Z rwxrw-rw-
 ```
 
 Perintah pertama ini membuat token Sas dengan izin rdw, perintah kedua membuat konteks Storage dari token Sas, perintah ke-3 memindahkan item dengan token Sas.
-Contoh ini menggunakan Sastoken yang sama dengan izin rdw pada sumber dan destikasi, jika menggunakan 2 token SAS untuk sumber dan destikasi, sumber memerlukan izin rd, destikasi memerlukan izin w.
+Contoh ini menggunakan Sastoken yang sama dengan izin rdw pada sumber dan destikasi, jika menggunakan token SAS 2 untuk sumber dan destikasi, sumber memerlukan izin rd, destication memerlukan izin w.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestFileSystem
-Nama Dest FileSystem
+Nama FileSystem Dest
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa untuk lebih menulis tujuan.
+### -Force
+Paksa untuk menulis lebih dari tujuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur dalam Filesystem tertentu yang harus dipindahkan.
+Jalur dalam Filesystem yang ditentukan yang harus dipindahkan.
 Dapat berupa file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
 
 ```yaml
@@ -206,8 +209,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

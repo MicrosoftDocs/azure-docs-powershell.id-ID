@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Add-AzMlWebServiceRegionalProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Add-AzMlWebServiceRegionalProperty.md
-ms.openlocfilehash: 459c69ae2c894ced6e4d22e494e6b242334aefb3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2c3ca019ab37d8386d5f0bbe7a9ed318d8b4aa18
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807696"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726676"
 ---
 # Add-AzMlWebServiceRegionalProperty
 
 ## SYNOPSIS
 Membuat properti layanan web regional.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/add-azmlwebserviceregionalproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,17 +28,17 @@ Add-AzMlWebServiceRegionalProperty -ResourceGroupName <String> -Name <String> -R
 ```
 
 ## DESCRIPTION
-Membuat properti kawasan Azure Machine Learning untuk layanan web yang sudah ada.
+Membuat properti regional Azure Machine Learning untuk layanan web yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan properti kawasan baru untuk West Central US
+### Contoh 1: Menambahkan properti regional baru untuk WEST Central US
 
 ```powershell
 Add-AzMlWebServiceRegionalProperty -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Region westcentralus
 ```
 
-Perintah contoh ini membuat properti kawasan untuk layanan web di kawasan "Barat Tengah AS".
+Contoh perintah ini membuat properti regional untuk layanan web di wilayah "BARAT Sentral AS".
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama untuk layanan web.
 
 ```yaml
@@ -84,8 +87,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kawasan
-Kawasan tempat untuk membuat properti layanan web.
+### -Wilayah
+Wilayah tempat membuat properti layanan web.
 
 ```yaml
 Type: System.String
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

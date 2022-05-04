@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubsNamespace.md
-ms.openlocfilehash: 20b4142f15d961b8beadbe870085135083e30e40
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8f7c663f253053c8afdebb397d2fbb8d40511d35
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142741492"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675376"
 ---
 # Remove-AzNotificationHubsNamespace
 
 ## SYNOPSIS
-Menghapus ruang nama hub pemberitahuan.
+Menghapus namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhubsnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,20 +29,20 @@ Remove-AzNotificationHubsNamespace [-ResourceGroup] <String> [-Namespace] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzNotificationHubsNamespace** menghapus ruang nama hub pemberitahuan dari penyebaran Anda.
-Ruang nama adalah wadah logis yang membantu Anda menata dan mengelola hub pemberitahuan.
-Cmdlet **Remove-AzNotificationHubsNamespace** menghapus ruang nama hub pemberitahuan dari penyebaran Anda.
-Saat Anda menjalankan cmdlet ini, ruang nama yang ditentukan akan dihapus bersama dengan semua hub pemberitahuan yang terkait dengan ruang nama tersebut.
+Cmdlet **Remove-AzNotificationHubsNamespace** menghapus namespace hub pemberitahuan dari penyebaran Anda.
+Namespace adalah kontainer logis yang membantu Anda mengatur dan mengelola hub pemberitahuan Anda.
+Cmdlet **Remove-AzNotificationHubsNamespace** menghapus namespace hub pemberitahuan dari penyebaran Anda.
+Saat Anda menjalankan cmdlet ini, namespace yang ditentukan akan dihapus bersama dengan semua hub pemberitahuan yang terkait dengan namespace tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus ruang nama hub pemberitahuan
+### Contoh 1: Menghapus namespace hub pemberitahuan
 ```powershell
 Remove-AzNotificationHubsNamespace -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini menghapus ruang nama bernama ContosoNamespace.
-Anda harus menentukan grup sumber daya tempat ruang nama ditetapkan.
+Perintah ini menghapus namespace layanan bernama ContosoNamespace.
+Anda harus menentukan grup sumber daya tempat namespace ditetapkan.
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama yang dihapus cmdlet ini.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace yang dihapus cmdlet ini.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -90,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Menentukan grup sumber daya tempat namespace layanan ditetapkan.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/im
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
-ms.openlocfilehash: d73007bf88f42479448d5ddb194e29d937fa7a68
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 65f595a87697eeafcc4334e1eacfe10b1c70d805
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063855"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682284"
 ---
 # Import-AzDataLakeStoreItem
 
 ## SYNOPSIS
-Mengunggah file atau direktori lokal ke Penyimpanan Data Lake.
+Mengunggah file atau direktori lokal ke Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/import-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Import-AzDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### IncludeDiagnosticLogging
+### SertakanDiagnosticLogging
 ```
 Import-AzDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <DataLakeStorePathInstance>
  [-Recurse] [-Resume] [-ForceBinary] [-Force] [-Concurrency <Int32>] [-DiagnosticLogLevel <LogLevel>]
@@ -36,7 +39,7 @@ Import-AzDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Penyimpanan Data Lake.
+Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Data Lake Store.
 
 ## EXAMPLES
 
@@ -45,12 +48,12 @@ Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Pe
 Import-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "C:\SrcFile.csv" -Destination "/MyFiles/File.csv" -Concurrency 4
 ```
 
-Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Penyimpanan Data Lake sebagai File.csv dengan konkurensi 4.
+Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Data Lake Store sebagai File.csv dengan konkurensi 4.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konkurensi
-Menunjukkan jumlah file atau potongan untuk diunggah secara paralel. Default akan dihitung sebagai upaya terbaik berdasarkan spesifikasi sistem.
+Menunjukkan jumlah file atau gugus yang akan diunggah secara paralel. Default akan dihitung sebagai upaya terbaik berdasarkan spesifikasi sistem.
 
 ```yaml
 Type: System.Int32
@@ -94,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tujuan
-Menentukan jalur Penyimpanan Data Lake tempat mengunggah file atau folder, dimulai dengan direktori akar (/).
+### -Destination
+Menentukan jalur Data Lake Store tempat mengunggah file atau folder, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticLogLevel
-Secara opsional menunjukkan tingkat log diagnostik untuk digunakan untuk merekam kejadian selama impor file atau folder. Defaultnya adalah Kesalahan.
+Secara opsional menunjukkan tingkat log diagnostik yang akan digunakan untuk merekam peristiwa selama impor file atau folder. Defaultnya adalah Kesalahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.LogLevel
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticLogPath
-Menentukan jalur untuk log diagnostik untuk merekam kejadian selama impor file atau folder.
+Menentukan jalur untuk log diagnostik untuk merekam peristiwa selama impor file atau folder.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceBinary
-Menunjukkan bahwa file yang sedang disalin harus disalin tanpa perlu khawatir dengan pelestarian baris baru di seluruh penamaan.
+Menunjukkan bahwa file yang sedang disalin harus disalin tanpa khawatir untuk pelestarian baris baru di seluruh penambah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Berulang
+### -Rekursi
 Menunjukkan bahwa operasi ini harus mengunggah semua item di semua subfolder.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lanjutkan
+### -Resume
 Menunjukkan bahwa file yang sedang disalin adalah kelanjutan dari unggahan sebelumnya. Ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang tidak sepenuhnya diunggah.
 
 ```yaml
@@ -215,8 +218,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

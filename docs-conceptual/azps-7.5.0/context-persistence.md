@@ -1,17 +1,17 @@
 ---
 description: Pelajari cara menggunakan kembali info masuk Azure dan informasi lainnya di beberapa sesi PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Konteks Azure dan informasi masuk
-ms.openlocfilehash: 4e3b8b3f60fa59e710e1651a5f4a4bb6f2ab04b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 49e1f0f4b7cd0575f1588f4915425c490731dabf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116225"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728312"
 ---
 # <a name="azure-powershell-context-objects"></a>Objek konteks Azure PowerShell
 

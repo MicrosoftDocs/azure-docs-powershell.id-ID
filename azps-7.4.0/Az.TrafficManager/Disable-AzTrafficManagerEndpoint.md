@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/d
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 83e5395bb3a8f032c362f309d48fe4963e863e46
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d2a36f23fd9cdac142e4f9e789e8e9720a1e1f53
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711310"
 ---
 # Disable-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Menonaktifkan titik akhir di profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/disable-aztrafficmanagerendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,32 +37,32 @@ Disable-AzTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzTrafficManagerEndpoint** menonaktifkan titik akhir dalam profil Azure Traffic Manager.
+Cmdlet **Disable-AzTrafficManagerEndpoint** menonaktifkan titik akhir di profil Azure Traffic Manager.
 
-Anda dapat menggunakan operator pipeline untuk mengirimkan objek **TrafficManagerEndpoint** ke cmdlet ini, atau melewati objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
+Anda dapat menggunakan operator alur untuk meneruskan objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda dapat meneruskan objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
 
-Atau, Anda dapat menentukan nama titik akhir dan mengetik menggunakan parameter *Nama* dan *Tipe* , bersama-sama dengan parameter *ProfileName* dan *ResourceGroupName* .
+Atau, Anda dapat menentukan nama dan jenis titik akhir dengan menggunakan parameter *Nama* dan *Jenis* , bersama dengan parameter *ProfileName* dan *ResourceGroupName* .
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan titik akhir menurut nama
+### Contoh 1: Menonaktifkan titik akhir berdasarkan nama
 ```powershell
 Disable-AzTrafficManagerEndpoint -Name "contoso" -ProfileName "ContosoProfile" -ResourceGroupName ResourceGroup11 -Type ExternalEndpoints
 ```
 
-Perintah ini menonaktifkan titik akhir eksternal bernama contoso dalam profil bernama ContosoProfile dalam grup sumber daya ResourceGroup11.
+Perintah ini menonaktifkan titik akhir eksternal bernama contoso di profil bernama ContosoProfile dalam grup sumber daya ResourceGroup11.
 Perintah meminta konfirmasi kepada Anda.
 
-### Contoh 2: Menonaktifkan titik akhir menggunakan pipeline
+### Contoh 2: Menonaktifkan titik akhir dengan menggunakan alur
 ```powershell
 Get-AzTrafficManagerEndpoint -Name "contoso" -Type ExternalEndpoints -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Disable-AzTrafficManagerEndpoint -Force
 ```
 
 Perintah ini mendapatkan titik akhir eksternal bernama Contoso dari profil bernama ContosoProfile di ResourceGroup11.
-Perintah kemudian melewati titik akhir tersebut ke cmdlet **Disable-AzTrafficManagerEndpoint** menggunakan operator pipeline.
-Cmdlet itu menonaktifkan titik akhir itu.
+Perintah kemudian meneruskan titik akhir tersebut ke cmdlet **Disable-AzTrafficManagerEndpoint** dengan menggunakan operator alur.
+Cmdlet itu menonaktifkan titik akhir tersebut.
 Perintah menentukan parameter *Paksa* .
-Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
+Oleh karena itu, itu tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama titik akhir Traffic Manager yang dinonaktifkan cmdlet ini.
 
 ```yaml
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil Traffic Manager tempat cmdlet ini menonaktifkan titik akhir.
+Menentukan nama profil Traffic Manager di mana cmdlet ini menonaktifkan titik akhir.
 Untuk mendapatkan profil, gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
+### -Type
+Menentukan jenis titik akhir yang ditambahkan cmdlet ini ke profil Traffic Manager.
 Nilai yang valid adalah: 
 
 - AzureEndpoints
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

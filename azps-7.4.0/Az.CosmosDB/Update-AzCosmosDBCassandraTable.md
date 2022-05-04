@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: b362471fb7e19c27f3086d9435874077a35e116f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b6e75c3e52d13013601c382e3f8372b6a1d240d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143003933"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682446"
 ---
 # Update-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
-Memperbarui Tabel CosmosDB Cassandra. Melakukan operasi patch sisi klien dengan membaca Tabel yang sudah ada.
+Memperbarui Tabel CosmosDB Cassandra. Melakukan operasi patch sisi klien dengan membaca Tabel yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzCosmosDBCassandraTable [-Name <String>] [-Throughput <Int32>] [-Autosca
 ```
 
 ## DESCRIPTION
-Memperbarui Tabel CosmosDB Cassandra. Melakukan operasi patch sisi klien dengan membaca Tabel yang sudah ada.
+Memperbarui Tabel CosmosDB Cassandra. Melakukan operasi patch sisi klien dengan membaca Tabel yang ada.
 
 ## EXAMPLES
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticalStorageTtl
-TTL Storage analitik.
+TTL Storage analitis.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -154,7 +157,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Tabel Cassandra.
 
 ```yaml
@@ -232,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -TtlInSeconds
-Ttl default dalam detik.
-Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
+Ttl default dalam hitungan detik.
+Jika nilai hilang atau diatur ke - 1, item tidak kedaluwarsa.
 Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleWebhook.md
-ms.openlocfilehash: 0c6ea74fd3caa3abd2a247ee0ad148deaf9447c3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2eb064009b3926f61b9baf3710da5559f3e04707
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939907"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144741826"
 ---
 # New-AzAlertRuleWebhook
 
 ## SYNOPSIS
-Membuat webhook aturan peringatan.
+Membuat webhook aturan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azalertrulewebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,23 +29,23 @@ New-AzAlertRuleWebhook [-ServiceUri] <String> [[-Property] <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAlertRuleWebhook** membuat webhook aturan peringatan.
+Cmdlet **New-AzAlertRuleWebhook** membuat webhook aturan pemberitahuan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat webhook aturan peringatan
+### Contoh 1: Membuat webhook aturan pemberitahuan
 ```powershell
 New-AzAlertRuleWebhook -ServiceUri "http://contoso.com"
 ```
 
-Perintah ini membuat webhook aturan peringatan dengan menentukan hanya URI layanan.
+Perintah ini membuat webhook aturan pemberitahuan dengan hanya menentukan URI layanan.
 
 ### Contoh 2: Membuat webhook dengan satu properti
 ```powershell
 $Actual = New-AzAlertRuleWebhook -ServiceUri "http://contoso.com" -Property @{prop1 = 'value1'}
 ```
 
-Perintah ini membuat webhook aturan peringatan untuk Contoso.com yang memiliki satu properti, lalu menyimpannya dalam variabel $Actual.
+Perintah ini membuat webhook aturan pemberitahuan untuk Contoso.com yang memiliki satu properti, lalu menyimpannya dalam variabel $Actual.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

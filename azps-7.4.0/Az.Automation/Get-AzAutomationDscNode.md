@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNode.md
-ms.openlocfilehash: 79a9ec02df9bf8e6de6390cac3d4b29bfb9bf16d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4342f9e05d8d59df71da7da81b85bdbd44b0de8b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067203"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680774"
 ---
 # Get-AzAutomationDscNode
 
 ## SYNOPSIS
-Mendapatkan node DSC dari Otomatisasi.
+Mendapatkan simpul DSC dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,49 +54,49 @@ Get-AzAutomationDscNode -ConfigurationName <String> [-ResourceGroupName] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNode** mendapatkan node APS Desired State Configuration (DSC) dari Azure Automation.
+Cmdlet **Get-AzAutomationDscNode** mendapatkan simpul APS Desired State Configuration (DSC) dari Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua node DSC
+### Contoh 1: Dapatkan semua simpul DSC
 ```
 PS C:\>Get-AzAutomationDscNode -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua node DSC di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua simpul DSC di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan semua node DSC untuk konfigurasi DSC
+### Contoh 2: Dapatkan semua simpul DSC untuk konfigurasi DSC
 ```
 PS C:\>Get-AzAutomationDscNode -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -ConfigurationName "ContosoConfiguration"
 ```
 
-Perintah ini mendapatkan metadata untuk semua node DSC dalam akun Otomatisasi bernama Contoso17 yang dipetakan ke konfigurasi node DSC yang dihasilkan oleh Konfigurasi DSC ContosoConfiguration.
+Perintah ini mendapatkan metadata untuk semua simpul DSC di akun Automation bernama Contoso17 yang dipetakan ke konfigurasi simpul DSC yang dihasilkan oleh konfigurasi DSC ContosoConfiguration.
 
-### Contoh 3: Dapatkan simpul DSC menurut ID
+### Contoh 3: Mendapatkan simpul DSC berdasarkan ID
 ```
 PS C:\>Get-AzAutomationDscNode -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Id c0a1718e-d8be-4fa3-91b6-82e1d3a36298
 ```
 
-Perintah ini mendapatkan metadata pada simpul DSC dengan ID tertentu dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata pada simpul DSC dengan ID yang ditentukan di akun Automation bernama Contoso17.
 
-### Contoh 4: Dapatkan simpul DSC menurut nama
+### Contoh 4: Mendapatkan simpul DSC berdasarkan nama
 ```
 PS C:\>Get-AzAutomationDscNode -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Name "Computer14"
 ```
 
-Perintah ini mendapatkan metadata pada simpul DSC dengan nama Computer14 di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata pada simpul DSC dengan nama Computer14 di akun Automation bernama Contoso17.
 
 ### Contoh 5: Dapatkan semua simpul DSC yang dipetakan ke konfigurasi simpul DSC
 ```
 PS C:\>Get-AzAutomationDscNode -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -NodeConfigurationName "ContosoConfiguration.webserver"
 ```
 
-Perintah ini mendapatkan metadata di semua node DSC dalam akun Otomatisasi bernama Contoso17 yang dipetakan ke konfigurasi node DSC bernama ContosoConfiguration.webserver.
+Perintah ini mendapatkan metadata pada semua simpul DSC di akun Automation bernama Contoso17 yang dipetakan ke konfigurasi simpul DSC bernama ContosoConfiguration.webserver.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi simpul DSC yang didapat cmdlet ini.
+Menentukan nama akun Automation yang berisi simpul DSC yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationName
 Menentukan nama konfigurasi DSC.
-Cmdlet ini mendapatkan node DSC yang cocok dengan konfigurasi simpul yang dihasilkan dari konfigurasi yang ditentukan parameter ini.
+Cmdlet ini mendapatkan simpul DSC yang cocok dengan konfigurasi simpul yang dihasilkan dari konfigurasi yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID unik simpul DSC yang didapat cmdlet ini.
+Menentukan ID unik simpul DSC yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.Guid
@@ -153,7 +156,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama simpul DSC yang didapat cmdlet ini.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeConfigurationName
-Menentukan nama konfigurasi simpul yang didapatkan cmdlet ini.
+Menentukan nama konfigurasi simpul yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan node DSC.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan simpul DSC.
 
 ```yaml
 Type: System.String
@@ -201,12 +204,12 @@ Accept wildcard characters: False
 ### -Status
 Menentukan status simpul DSC yang didapat cmdlet ini.
 Nilai yang valid adalah: 
-- Compliant 
-- Tidak Sesuai
+- Sesuai 
+- Tidak Patuh
 - Gagal
-- Tertunda 
-- Menerima
-- Tidak responsif
+- Sedang diproses 
+- Diterima
+- Merespons
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Common.DscNodeStatus
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

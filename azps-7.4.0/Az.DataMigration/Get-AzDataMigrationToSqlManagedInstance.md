@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlManagedInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationToSqlManagedInstance.md
-ms.openlocfilehash: 2ae04e7fb38161927310f19c07b89461970f79e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d3636e9b76d83dd6c4bed27f72e44f58de650c1f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063567"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144640392"
 ---
 # Get-AzDataMigrationToSqlManagedInstance
 
 ## SYNOPSIS
 Ambil migrasi database yang ditentukan untuk SQL Managed Instance tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtosqlmanagedinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Sumber daya anak yang akan disertakan dalam respons.
+Sumber daya anak untuk disertakan dalam respons.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

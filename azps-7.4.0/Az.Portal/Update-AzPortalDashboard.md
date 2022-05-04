@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Update-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Update-AzPortalDashboard.md
-ms.openlocfilehash: 1b99c5b91da40e8522bf84535d50bbcf25b74478
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 38490ae4ccf3ab14b0e88d41bbd199a314f79208
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142937099"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710788"
 ---
 # Update-AzPortalDashboard
 
 ## SYNOPSIS
 Memperbarui Dasbor yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/update-azportaldashboard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,9 +52,9 @@ eastasia dashbase03 Microsoft.Portal/dashboards
 ```
 
 Perbarui tag di dasbor.
-Tag dinyatakan sebagai hashtable sebaris.
+Tag direpresentasikan sebagai hashtable sebaris.
 
-### Contoh 2: Memperbarui tag Dasbor menggunakan pipeline
+### Contoh 2: Memperbarui tag Dasbor menggunakan alur
 ```powershell
 Get-AzPortalDashboard -ResourceGroupName my-rg -Name dashbase03 | Update-AzPortalDashboard -Tag @{'hidden-title'="My Dashboard Title"; NewTag="NewValue"}
 ```
@@ -62,7 +65,7 @@ Location Name       Type
 eastasia dashbase03 Microsoft.Portal/dashboards
 ```
 
-Perbarui Tag di Dasbor yang diambil menggunakan Get-AzPortalDashboard.
+Perbarui Tag di Dasbor yang dicoba ulang menggunakan Get-AzPortalDashboard.
 Ini dapat digunakan untuk memperbarui tag melalui satu dasbor, atau beberapa dasbor.
 
 ## PARAMETERS
@@ -127,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama dasbor.
 
 ```yaml
@@ -158,8 +161,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -188,8 +191,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -243,7 +246,7 @@ INPUTOBJECT <IPortalIdentity>: Parameter Identitas
   - `[DashboardName <String>]`: Nama dasbor.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

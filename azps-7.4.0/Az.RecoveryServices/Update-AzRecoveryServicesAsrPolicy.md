@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 3bc724a7518822cb896b8d2303a27f3b3717561b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 89015d749391f91f0ae2823d167e939b2b25e56c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276633"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144730292"
 ---
 # Update-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan replikasi Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -96,19 +99,19 @@ Memulai operasi kebijakan replikasi pembaruan menggunakan parameter yang ditentu
 Update-AzRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -ReplicationFrequencyInSeconds 900
 ```
 
-Memulai operasi kebijakan pembaruan azure ke azure replikasi menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi kebijakan pembaruan azure ke replikasi azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 3
 ```powershell
 $currentJob = Update-AzRecoveryServicesAsrPolicy -AzureToAzure -InputObject $Policy -RecoveryPointRetentionInHours 20
 ```
 
-Memulai pembaruan azure ke kebijakan replikasi azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai kebijakan pembaruan azure ke replikasi azure menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
 ### -ApplicationConsistentSnapshotFrequencyInHours
-Menentukan frekuensi(dalam jam) untuk membuat titik pemulihan aplikasi yang konsisten.
+Menentukan frekuensi (dalam jam) untuk membuat titik pemulihan aplikasi yang konsisten.
 
 ```yaml
 Type: System.Int32
@@ -122,8 +125,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Otentikasi
-Menentukan tipe autentikasi yang digunakan.
+### -Autentikasi
+Menentukan jenis autentikasi yang digunakan.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToVMware
-Menentukan Azure ke vMWare pemulihan bencana.
+Menentukan pemulihan bencana Azure ke vMWare.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperVToAzure
-Parameter switch yang mengindikasikan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi mesin virtual Hyper-V ke Azure.
+Parameter switch yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi komputer virtual Hyper-V ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input untuk cmdlet: Menentukan objek kebijakan replikasi ASR yang terkait dengan kebijakan replikasi yang akan diperbarui.
+Objek input untuk cmdlet: Menentukan objek kebijakan replikasi ASR yang sesuai dengan kebijakan replikasi yang akan diperbarui.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -MultiVmSyncStatus
-Menentukan status sinkronisasi multiVm untuk kebijakan tersebut.
+Menentukan status sinkronisasi multiVm untuk kebijakan.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfRecoveryPointsToRetain
-Menentukan titik pemulihan angka untuk dipertahankan.
+Menentukan titik pemulihan angka yang akan dipertahankan.
 
 ```yaml
 Type: System.Int32
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaDeletion
-Menentukan apakah mesin virtual replika harus dihapus saat menonaktifkan replikasi dari situs yang dikelola VMM ke situs lain.
+Menentukan apakah komputer virtual replika harus dihapus saat menonaktifkan replikasi dari situs terkelola VMM ke situs lain.
 
 ```yaml
 Type: System.String
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicateVMwareToAzure
-Beralih parameter yang menentukan VMware ke skenario replikasi Azure.
+Beralih parameter yang menentukan skenario replikasi VMware ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationFrequencyInSeconds
-Menentukan interval frekuensi replikasi dalam detik.
+Menentukan interval frekuensi replikasi dalam hitungan detik.
 Nilai yang valid adalah:
 
 - 30
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 
 ### -ReplicationStartTime
 Menentukan waktu mulai replikasi.
-Harus tidak lebih dari 24 jam dari awal pekerjaan.
+Ini harus tidak lebih dari 24 jam sejak awal pekerjaan.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPOWarningThresholdInMinutes
-Nilai ambang batas RPO dalam menit untuk memperingatkan.
+Nilai ambang RPO dalam hitungan menit untuk memperingatkan.
 
 ```yaml
 Type: System.Int32
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmmToVmm
-Parameter switch menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi mesin virtual Hyper-V yang dikelola VMM antara dua situs Hyper-V.
+Parameter sakelar yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi komputer virtual Hyper-V yang dikelola VMM antara dua situs Hyper-V.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMwareToAzure
-Beralih parameter yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi mesin virtual VMware ke Azure.
+Parameter switch yang menunjukkan bahwa kebijakan yang ditentukan digunakan untuk mereplikasi komputer virtual VMware ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -436,8 +439,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -467,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

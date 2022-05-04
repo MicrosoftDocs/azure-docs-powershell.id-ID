@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/new-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubExportDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubExportDevice.md
-ms.openlocfilehash: 6bba547dd2e747ff492987e9a79c561e420e01ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 959abad12b1c87149c05a5bf28be54ce4f2654a5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683046"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726730"
 ---
 # New-AzIotHubExportDevice
 
 ## SYNOPSIS
 Membuat pekerjaan perangkat ekspor baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubexportdevice) untuk informasi terbaru.
 
 ## SYNTAX
 

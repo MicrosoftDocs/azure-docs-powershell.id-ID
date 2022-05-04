@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 9417c40732d910aeceb1d95df23dec0647017756
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7377ed502b775889cd0d1937c2b782a0ac031a2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115821"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645592"
 ---
 # New-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
-Membuat atau memperbarui kumpulan data referensi di lingkungan yang ditentukan.
+Membuat atau memperbarui himpunan data referensi di lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName <String> -Name <String
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui kumpulan data referensi di lingkungan yang ditentukan.
+Membuat atau memperbarui himpunan data referensi di lingkungan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kumpulan data referensi untuk lingkungan tertentu  
+### Contoh 1: Membuat himpunan data referensi untuk lingkungan tertentu  
 ```powershell
 $mykeyproperties = @{ "name" = "device01"; "type" = "Double"}
 New-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -Name dstest001 -ResourceGroupName testgroup -Location eastus -DataStringComparisonBehavior Ordinal -KeyProperty $mykeyproperties
@@ -42,14 +45,14 @@ Location Name      Type
 eastus   dstest001 Microsoft.TimeSeriesInsights/Environments/ReferenceDataSets
 ```
 
-Perintah ini membuat kumpulan data referensi untuk lingkungan tertentu.
+Perintah ini membuat himpunan data referensi untuk lingkungan tertentu.
 
 ## PARAMETERS
 
 ### -DataStringComparisonBehavior
-Perilaku perbandingan kunci kumpulan data referensi dapat diatur menggunakan properti ini.
-Secara default, nilainya adalah 'Ordinal' - yang berarti perbandingan kunci peka huruf besar kecil akan dilakukan saat menggabungkan data referensi dengan kejadian atau saat menambahkan data referensi baru.
-Ketika 'OrdinalIgnoreCase' diatur, perbandingan yang tidak peka huruf besar kecil akan digunakan.
+Perilaku perbandingan kunci himpunan data referensi dapat diatur menggunakan properti ini.
+Secara default, nilainya adalah 'Ordinal' - yang berarti perbandingan kunci sensitif huruf besar/kecil akan dilakukan saat menggabungkan data referensi dengan peristiwa atau saat menambahkan data referensi baru.
+Ketika 'OrdinalIgnoreCase' diatur, perbandingan tidak peka huruf besar/kecil akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Support.DataStringComparisonBehavior
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -94,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyProperty
-Daftar properti kunci untuk kumpulan data referensi.
-Untuk membangun, lihat bagian CATATAN untuk properti KEYPROPERTY dan membuat tabel hash.
+Daftar properti kunci untuk himpunan data referensi.
+Untuk membuat, lihat bagian CATATAN untuk properti KEYPROPERTY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.Api20200515.IReferenceDataSetKeyProperty[]
@@ -124,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan data referensi.
+### -Name
+Nama himpunan data referensi.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci properti tambahan untuk sumber daya.
+Pasangan kunci-nilai properti tambahan untuk sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -184,8 +187,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -233,9 +236,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-KEYPROPERTY <IReferenceDataSetKeyProperty[]>: Daftar properti kunci untuk kumpulan data referensi.
+KEYPROPERTY <IReferenceDataSetKeyProperty[]>: Daftar properti kunci untuk himpunan data referensi.
   - `[Name <String>]`: Nama properti kunci.
-  - `[Type <ReferenceDataKeyPropertyType?>]`: Tipe properti kunci.
+  - `[Type <ReferenceDataKeyPropertyType?>]`: Jenis properti kunci.
 
 ## RELATED LINKS
 

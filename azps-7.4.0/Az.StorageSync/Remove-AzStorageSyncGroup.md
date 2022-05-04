@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncGroup.md
-ms.openlocfilehash: 4eed9352dfcbc3786f5f5dc89418ee9cbdeeeff3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c23cf67b925af4b1d53901299bc580b1e58803d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670320"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672712"
 ---
 # Remove-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini akan menghapus grup sinkronisasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzStorageSyncGroup [-ResourceId] <String> [-Force] [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Perintah ini akan menghapus grup sinkronisasi yang ditentukan. Grup sinkronisasi hanya bisa dihapus ketika semua titik akhir yang dimuat dihapus terlebih dahulu.
+Perintah ini akan menghapus grup sinkronisasi yang ditentukan. Grup sinkronisasi hanya dapat dihapus ketika semua titik akhir yang terkandung dihapus terlebih dahulu.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Perintah ini akan menghapus grup sinkronisasi.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Pasokan -Paksa untuk melewati konfirmasi perintah ini.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sinkronkan Objek Input Grup
+Objek Input SyncGroup
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
@@ -112,8 +115,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama GrupSinkronkan.
+### -Name
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke pipeline setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, maka cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

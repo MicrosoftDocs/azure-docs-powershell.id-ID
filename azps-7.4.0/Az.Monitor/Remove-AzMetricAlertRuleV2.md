@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzMetricAlertRuleV2.md
-ms.openlocfilehash: 32e140deff513dc1185b821b3c8ca9dfcad03757
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bf5c1eb18b90d8649685e8f08d32b796c439c00d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283365"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727738"
 ---
 # Remove-AzMetricAlertRuleV2
 
 ## SYNOPSIS
 Menghapus aturan pemberitahuan metrik V2 (non-klasik).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azmetricalertrulev2) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Remove-AzMetricAlertRuleV2 -InputObject <PSMetricAlertRuleV2> [-PassThru] [-AsJo
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzMetricAlertRuleV2** menghapus aturan peringatan. Cmdlet ini menerapkan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Cmdlet **Remove-AzMetricAlertRuleV2** menghapus aturan pemberitahuan. Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus aturan pemberitahuan menurut nama
+### Contoh 1: Menghapus aturan pemberitahuan berdasarkan nama
 
 ```powershell
 Remove-AzMetricAlertRuleV2 -ResourceGroupName xxxxRG -Name PsSdk -PassThru
@@ -52,9 +55,9 @@ Remove-AzMetricAlertRuleV2 -ResourceGroupName xxxxRG -Name PsSdk -PassThru
 True
 ```
 
-Perintah ini menghapus aturan peringatan bernama PsSdk
+Perintah ini menghapus aturan pemberitahuan bernama PsSdk
 
-### Contoh 2: Menghapus aturan pemberitahuan menurut ID
+### Contoh 2: Menghapus aturan pemberitahuan berdasarkan ID
 
 ```powershell
 Remove-AzMetricAlertRuleV2 -ResourceId /subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/metricAlertRG/providers/Microsoft.Insights/metricAlerts/myAlertRule
@@ -62,18 +65,18 @@ Remove-AzMetricAlertRuleV2 -ResourceId /subscriptions/00000000-0000-0000-0000-00
 
 Perintah ini menghapus aturan pemberitahuan dengan ID sumber daya `/subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/metricAlertRG/providers/Microsoft.Insights/metricAlerts/myAlertRule`
 
-### Contoh 3: Dapatkan pemberitahuan dan hapus
+### Contoh 3: Mendapatkan pemberitahuan dan menghapusnya
 
 ```powershell
 Get-AzMetricAlertRuleV2 -ResourceGroupName alertstest -Name sampleAlertRule | Remove-AzMetricAlertRuleV2
 ```
 
-Perintah ini mendapatkan peringatan dan menghapusnya.
+Perintah ini mendapatkan pemberitahuan dan menghapusnya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan pemberitahuan metrik
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true setelah penghapusan berhasil.
+Kembalikan true setelah penghapusan berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,8 +180,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

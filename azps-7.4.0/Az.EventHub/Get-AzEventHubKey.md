@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubKey.md
-ms.openlocfilehash: c996dbecd06ed927a95dc797c44c907424ed0e59
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a02e20f77ce012f638657a60a5015b56dccf5bb7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748116"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675790"
 ---
 # Get-AzEventHubKey
 
 ## SYNOPSIS
-Mendapatkan detail kunci utama dari aturan otorisasi Hub Kejadian yang ditentukan.
+Mendapatkan detail kunci utama dari aturan otorisasi Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ Get-AzEventHubKey [-ResourceGroupName] <String> [-Namespace] <String> [-AliasNam
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHubKey mengembalikan detail koneksi Utama dan Sekunder serta detail kunci aturan otorisasi NameSpace/Event Hubs/Alias yang ditentukan.
+Cmdlet Get-AzEventHubKey mengembalikan connectionstring Primer dan Sekunder dan detail kunci dari aturan otorisasi NameSpace/Event Hubs/Alias yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Ruang nama
+### Contoh 1: Namespace
 ```powershell
 Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AuthorizationRuleName MyAuthRuleName
 ```
@@ -52,14 +55,14 @@ Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamesp
 Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName
 ```
 
-Mendapatkan detail kunci dan sambungan Utama dan Sekunder untuk aturan \`otorisasi MyAuthRuleName\`.
+Mendapatkan detail connectionstring dan kunci Primer dan Sekunder untuk aturan \`otorisasi MyAuthRuleName\`.
 
-### Contoh 3: Alias (GeoRecovery Configuration)
+### Contoh 3: Alias (Konfigurasi GeoRecovery)
 ```powershell
 Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AliasName MyAliasName -Name MyAuthRuleName
 ```
 
-Mendapatkan detail koneksi Primer, Sekunder, AliasPrimary dan AliasSecondary dan kunci untuk aturan \`otorisasi MyAuthRuleName\`.
+Mendapatkan detail connectionstring dan kunci Primer, Sekunder, AliasPrimary, dan AliasSecondary untuk aturan \`otorisasi MyAuthRuleName\`.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVM.md
-ms.openlocfilehash: 2f00f5b47e9a72e41d33eb59d77c102798d70f00
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 950f796ec37f08b47a00a5d99fd70560fbd83c1d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864612"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728528"
 ---
 # Update-AzSqlVM
 
 ## SYNOPSIS
-Memperbarui mesin virtual sql.
+Memperbarui komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azsqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Update-AzSqlVM [-InputObject] <AzureSqlVMModel> [-ResourceId] <String> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzSqlVM memperbarui mesin virtual sql.
+Cmdlet Update-AzSqlVM memperbarui komputer virtual sql.
 
 ## EXAMPLES
 
@@ -63,11 +66,11 @@ Name                           Value
 key                            value
 ```
 
-Memperbarui tag mesin virtual sql.
+Memperbarui tag komputer virtual sql.
 
 ### Contoh 2
 
-Memperbarui mesin virtual sql. (autogenerasi)
+Memperbarui komputer virtual sql. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL objek mesin virtual.
+SQL objek komputer virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMModel
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-SQL tipe lisensi mesin virtual.
+SQL jenis lisensi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -136,8 +139,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-SQL nama mesin virtual.
+### -Name
+SQL nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penawaran
-SQL penawaran mesin virtual.
+SQL penawaran komputer virtual.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-SQL id sumber daya mesin virtual.
+SQL id sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL tipe edisi mesin virtual.
+SQL jenis edisi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlManagementType
-SQL tipe manajemen mesin virtual.
+SQL jenis manajemen komputer virtual.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan mesin virtual SQL
+Tag yang akan dikaitkan dengan komputer virtual SQL
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -241,8 +244,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

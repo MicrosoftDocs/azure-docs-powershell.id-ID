@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
-ms.openlocfilehash: 295e8764f8f5db43bc35b1e164911f693992752d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e6c7d0b6058f914c7ffcf0f0d11721e267bd570f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142868051"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144602348"
 ---
 # Get-AzRedisCache
 
 ## SYNOPSIS
-Dapatkan Cache Redis.
+Mendapatkan Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/get-azrediscache) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Get-AzRedisCache [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile
 
 ## DESCRIPTION
 Cmdlet **Get-AzRedisCache** mendapatkan Azure Redis Cache yang ditentukan.
-Jika Anda tidak menentukan parameter, operasi ini mendapatkan setiap Cache Redis untuk langganan saat ini.
+Jika Anda tidak menentukan parameter, operasi ini mendapatkan setiap Redis Cache untuk langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Singgahan Redis menurut nama
+### Contoh 1: Dapatkan Cache Redis berdasarkan nama
 ```powershell
 Get-AzRedisCache -Name "myexists"
 ```
@@ -57,7 +60,7 @@ Get-AzRedisCache -Name "myexists"
 
 Perintah ini mendapatkan Redis Cache bernama myexists.
 
-### Contoh 2: Dapatkan setiap Cache Redis dalam grup sumber daya
+### Contoh 2: Mendapatkan setiap Redis Cache dalam grup sumber daya
 ```powershell
 Get-AzRedisCache -ResourceGroupName "myGroup"
 ```
@@ -98,9 +101,9 @@ Get-AzRedisCache -ResourceGroupName "myGroup"
         Zone               : []
 ```
 
-Perintah ini mendapatkan setiap Cache Redis dalam grup sumber daya tertentu.
+Perintah ini mendapatkan setiap Redis Cache dalam grup sumber daya yang ditentukan.
 
-### Contoh 3: Dapatkan setiap Cache Redis dalam langganan saat ini
+### Contoh 3: Dapatkan setiap Redis Cache di langganan saat ini
 ```powershell
 Get-AzRedisCache
 ```
@@ -158,7 +161,7 @@ Get-AzRedisCache
         Zone               : []
 ```
 
-Perintah ini mendapatkan setiap Cache Redis dalam langganan saat ini.
+Perintah ini mendapatkan setiap Redis Cache dalam langganan saat ini.
 
 ## PARAMETERS
 
@@ -177,8 +180,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama Singgahan Redis untuk didapatkan.
+### -Name
+Menentukan nama Redis Cache yang akan didapatkan.
 Gunakan dengan parameter *ResourceGroupName* .
 
 ```yaml
@@ -194,8 +197,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi Singgahan Redis untuk didapatkan.
-Jika Anda hanya menentukan parameter *ResourceGroupName* , operasi ini mendapatkan setiap Cache Redis dalam grup sumber daya yang ditentukan.
+Menentukan nama grup sumber daya yang berisi Redis Cache untuk didapatkan.
+Jika Anda hanya menentukan parameter *ResourceGroupName* , operasi ini mendapatkan setiap Redis Cache dalam grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -226,7 +229,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzRedisCache](./New-AzRedisCache.md)
 
-[Hapus-AzRedisCache](./Remove-AzRedisCache.md)
+[Remove-AzRedisCache](./Remove-AzRedisCache.md)
 
 [Set-AzRedisCache](./Set-AzRedisCache.md)
 

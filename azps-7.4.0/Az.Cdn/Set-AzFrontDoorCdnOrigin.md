@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: 4220551c55ee0576d53c460e984a60f6020df947
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d76cd07fe8f3f746cb6d109b63b182e41eda590
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143066483"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670174"
 ---
 # Set-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
 Memperbarui asal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 
 ### -HostName
 Alamat asal.
-Nama domain, alamat IPv4, dan alamat IPv6 didukung. Ini harus unik di seluruh asal usul di titik akhir.
+Nama domain, alamat IPv4, dan alamat IPv6 didukung. Ini harus unik di semua asal dalam titik akhir.
 
 ```yaml
 Type: String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Origin
-Objek asal Pintu Depan Azure.
+Objek asal Azure Front Door.
 
 ```yaml
 Type: PSAfdOrigin
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup asal Pintu Depan Azure.
+Nama grup asal Azure Front Door.
 
 ```yaml
 Type: String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginHostHeader
-Nilai header host yang dikirim ke asal dengan setiap permintaan.
+Nilai header host dikirim ke asal dengan setiap permintaan.
 Jika Anda membiarkan ini kosong, nama host permintaan menentukan nilai ini.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Nama asal Pintu Depan Azure.
+Nama asal Azure Front Door.
 
 ```yaml
 Type: String
@@ -173,8 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas asal dalam grup asal yang diberikan untuk keseimbangan muat.
-Prioritas yang lebih tinggi tidak akan digunakan untuk keseimbangan beban jika asal prioritas yang lebih rendah sehat.
+Prioritas asal dalam grup asal yang diberikan untuk penyeimbangan beban.
+Prioritas yang lebih tinggi tidak akan digunakan untuk penyeimbangan beban jika asal prioritas yang lebih rendah sehat.
 
 ```yaml
 Type: Int32
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkId
-Id sumber daya Azure dari sumber daya tautan pribadi bersama.
+Id sumber daya Azure dari sumber daya tautan privat bersama.
 
 ```yaml
 Type: String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkLocation
-Lokasi sumber daya tautan pribadi bersama.
+Lokasi sumber daya tautan privat bersama.
 
 ```yaml
 Type: String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkRequestMessage
-Pesan permintaan untuk meminta persetujuan sumber daya tautan pribadi bersama.
+Pesan permintaan untuk meminta persetujuan sumber daya tautan privat bersama.
 
 ```yaml
 Type: String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Berat
-Berat asal dalam grup asal tertentu untuk keseimbangan beban.
+Berat asal dalam grup asal yang diberikan untuk penyeimbangan beban.
 
 ```yaml
 Type: Int32
@@ -278,8 +281,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -310,11 +313,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

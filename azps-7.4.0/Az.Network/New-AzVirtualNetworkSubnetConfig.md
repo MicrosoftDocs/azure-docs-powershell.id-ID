@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 8f6483c7de0353014ea22b92cd213a3ef204f12b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 751bbc5b27810f372953317050404ee4e13430cb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677934"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726658"
 ---
 # New-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Membuat konfigurasi subnet jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ New-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup
     -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet,$natGatewaySubnet
 ```
 
-Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzVirtualSubnetConfig hanya membuat representasi dalam memori subnet. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan grup keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan grup keamanan jaringan yang sama.
+Contoh ini membuat dua konfigurasi subnet baru menggunakan cmdlet New-AzVirtualSubnetConfig, lalu menggunakannya untuk membuat jaringan virtual. Templat New-AzVirtualSubnetConfig hanya membuat representasi subnet dalam memori. Dalam contoh ini, frontendSubnet memiliki CIDR 10.0.1.0/24 dan mereferensikan kelompok keamanan jaringan yang memungkinkan akses RDP. BackendSubnet memiliki CIDR 10.0.2.0/24 dan mereferensikan kelompok keamanan jaringan yang sama.
 
 ## PARAMETERS
 
@@ -154,7 +157,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi subnet yang akan dibuat.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateEndpointNetworkPoliciesFlag
-Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat dalam subnet.
+Konfigurasikan untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat di subnet.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkServiceNetworkPoliciesFlag
-Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat dalam subnet.
+Konfigurasikan untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat di subnet.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan Id sumber daya GATEWAY NAT yang terkait dengan konfigurasi subnet.
+Menentukan Id sumber daya NAT Gateway yang terkait dengan konfigurasi subnet.
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

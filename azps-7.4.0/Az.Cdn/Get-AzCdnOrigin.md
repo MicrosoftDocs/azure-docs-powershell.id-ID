@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnOrigin.md
-ms.openlocfilehash: 06316c32deeb087e68c114bcd2c06507af965a42
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 876e41565a08e43abd93724170d37eafbb693557
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143128907"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670390"
 ---
 # Get-AzCdnOrigin
 
 ## SYNOPSIS
 Mendapatkan server asal CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnorigin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ ProvisioningState          : Succeeded
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan objek titik akhir CDN tempat asalnya berada.
+Menentukan objek titik akhir CDN tempat asal berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya asal Azure CDN.
+Id sumber daya dari asal Azure CDN.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

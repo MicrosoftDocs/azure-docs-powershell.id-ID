@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHub.md
-ms.openlocfilehash: 8dd052e375dc8b36e2dec7d503769601eb5eb046
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 131286d29b0de962b365cdf6ff7cf4dd3a79023e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142941433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701600"
 ---
 # Remove-AzEventHub
 
 ## SYNOPSIS
-Menghapus Hub Kejadian tertentu.
+Menghapus Pusat Aktivitas yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzEventHub [-ResourceId] <String> [-PassThru] [-AsJob] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHub menghapus dan menghapus Hub Kejadian tertentu dari ruang nama tertentu.
+Cmdlet Remove-AzEventHub menghapus dan menghapus Pusat Aktivitas yang ditentukan dari namespace yang diberikan.
 
 ## EXAMPLES
 
@@ -47,9 +50,9 @@ Cmdlet Remove-AzEventHub menghapus dan menghapus Hub Kejadian tertentu dari ruan
 Remove-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName
 ```
 
-Menghapus Hub \`Kejadian MyEventHubName\`.
+Menghapus Event Hub \`MyEventHubName\`.
 
-### Contoh 2: InputObject - Using Variable:
+### Contoh 2: InputObject - Menggunakan Variabel:
 ```powershell
 $inputobject = Get-AzEventHub <params>
 Remove-AzEventHub -InputObject $inputobject
@@ -60,13 +63,13 @@ Remove-AzEventHub -InputObject $inputobject
 Get-AzEventHub <params> | Remove-AzEventHub
 ```
 
-### Contoh 4: ResourceId - Using Variable:
+### Contoh 4: ResourceId - Menggunakan Variabel:
 ```powershell
 $resourceid = Get-AzEventHub <params>
 Remove-AzEventHub -ResourceId $resourceid.Id
 ```
 
-### Contoh 5: ResourceId - Using string:
+### Contoh 5: ResourceId - Menggunakan string:
 ```powershell
 Remove-AzEventHub -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-xxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.EventHub/namespaces/NamespaceName/eventhubs/EventHubName"
 ```
@@ -74,7 +77,7 @@ Remove-AzEventHub -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-xxxxxx/resourceG
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama EventHub
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -193,8 +196,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

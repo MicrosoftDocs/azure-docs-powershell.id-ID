@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountMap.md
-ms.openlocfilehash: 0f16cf1f0de11cdc715ee7301cf20aaf13ffedd4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d339eae628ac8d3a91b51fd758bd74bd5b0ac87
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284445"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710178"
 ---
 # Set-AzIntegrationAccountMap
 
 ## SYNOPSIS
-Mengubah peta akun integrasi.
+Memodifikasi peta akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountmap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ Set-AzIntegrationAccountMap -ResourceGroupName <String> -Name <String> -MapName 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzIntegrationAccountMap** mengubah peta akun integrasi.
+Cmdlet **Set-AzIntegrationAccountMap** memodifikasi peta akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili peta akun integrasi.
 Tentukan nama akun integrasi, nama grup sumber daya, dan nama peta.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -56,12 +59,12 @@ ContentSize : 3056
 Metadata    :
 ```
 
-Perintah ini mengubah peta akun integrasi dalam grup sumber daya tertentu.
+Perintah ini memodifikasi peta akun integrasi dalam grup sumber daya yang ditentukan.
 Perintah menentukan definisi peta yang disimpan dalam variabel $MapContent oleh perintah sebelumnya.
 
 ### Contoh 2
 
-Mengubah peta akun integrasi. (autogenerasi)
+Memodifikasi peta akun integrasi. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMap47' -MapType Xslt -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
@@ -70,7 +73,7 @@ Set-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMa
 ## PARAMETERS
 
 ### -ContentType
-Menentukan tipe konten untuk peta akun integrasi.
+Menentukan jenis konten untuk peta akun integrasi.
 Cmdlet ini mendukung aplikasi/xml sebagai tipe konten peta.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -161,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -MapType
-Menentukan tipe untuk peta akun integrasi.
-Cmdlet ini mendukung Xslt sebagai tipe peta.
+Menentukan jenis untuk peta akun integrasi.
+Cmdlet ini mendukung Xslt sebagai jenis peta.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akun integrasi.
 
 ```yaml
@@ -222,8 +225,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

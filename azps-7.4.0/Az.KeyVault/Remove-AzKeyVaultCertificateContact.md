@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificateContact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificateContact.md
-ms.openlocfilehash: 5f80cb114a70ad709bb1003b92a7994dcc4beeac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cbf824105ff0e79004fee4258c0ed6e5cb514bbe
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285183"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144742006"
 ---
 # Remove-AzKeyVaultCertificateContact
 
 ## SYNOPSIS
-Menghapus kontak yang terdaftar untuk pemberitahuan sertifikat dari kubah kunci.
+Menghapus kontak yang terdaftar untuk pemberitahuan sertifikat dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultcertificatecontact) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzKeyVaultCertificateContact [-ResourceId] <String> [-EmailAddress] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzKeyVaultCertificateContact** menghapus kontak yang terdaftar untuk pemberitahuan sertifikat dari kubah kunci.
+Cmdlet **Remove-AzKeyVaultCertificateContact** menghapus kontak yang terdaftar untuk pemberitahuan sertifikat dari brankas kunci.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ user3@microsoft.com mvault2
 user4@microsoft.com mvault2
 ```
 
-Perintah ini menghapus Patti Fuller sebagai kontak sertifikat untuk kubah kunci Contoso01.  Jika PassThru ditentukan, cmdlet mengembalikan daftar kontak sertifikat yang tersisa.
+Perintah ini menghapus Patti Fuller sebagai kontak sertifikat untuk brankas kunci Contoso01.  Jika PassThru ditentukan, cmdlet mengembalikan daftar kontak sertifikat yang tersisa.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci.
+Menentukan nama brankas kunci.
 
 ```yaml
 Type: System.String
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

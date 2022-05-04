@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managementpartne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Get-AzManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Get-AzManagementPartner.md
-ms.openlocfilehash: 150d5e4784ee43a83abf1bd231633002c5fa6ac4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fb46eb21891f04ef7ce73da7effc23c140b2658d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681588"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727810"
 ---
 # Get-AzManagementPartner
 
 ## SYNOPSIS
-Mendapatkan ID Jaringan Mitra Microsoft (MPN) dari pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Mendapatkan ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan terautentikasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managementpartner/get-azmanagementpartner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzManagementPartner [[-PartnerId] <String>] [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Mendapatkan ID Jaringan Mitra Microsoft (MPN) dari pengguna atau prinsipal layanan yang diautentikasi saat ini.
+Mendapatkan ID Microsoft Partner Network (MPN) dari pengguna atau perwakilan layanan terautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ ObjectId    : aa67f786-0552-423e-8849-244ed12bf581
 State       : Active
 ```
 
-Dapatkan id mitra manajemen saat ini
+Mendapatkan id mitra manajemen saat ini
 
 ### Contoh 2
 ```powershell
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerId
-Id mitra manajemen, itu adalah angka 6 digit
+Id mitra manajemen, ini adalah angka 6 digit
 
 ```yaml
 Type: System.String
@@ -91,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

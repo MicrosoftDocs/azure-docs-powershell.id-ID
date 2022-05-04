@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironmentInboundServices.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzAppServiceEnvironmentInboundServices.md
-ms.openlocfilehash: c623542983f019e01a702cca64d957b255bbf838
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b2d728afc1428126ce6bac4594a90a62d6eb88e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142736722"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707411"
 ---
 # New-AzAppServiceEnvironmentInboundServices
 
 ## SYNOPSIS
-Membuat layanan masuk untuk Lingkungan App Service. Untuk ASEv2 ILB, tindakan ini akan membuat Azure Private DNS Zone dan rekaman untuk dipetakan ke IP internal. Untuk ASEv3, subnet akan dinonaktifkan dan akan membuat titik akhir privat.
+Membuat layanan masuk untuk lingkungan App Service. Untuk ASEv2 ILB, ini akan membuat Zona DNS Privat Azure dan rekaman untuk dipetakan ke IP internal. Untuk ASEv3, selain itu, pastikan subnet menonaktifkan Kebijakan Jaringan dan akan membuat titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azappserviceenvironmentinboundservices) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,23 +36,23 @@ New-AzAppServiceEnvironmentInboundServices [-ResourceGroupName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAppServiceEnvironmentInboundServices** menciptakan layanan masuk untuk Lingkungan App Service.
+Cmdlet **New-AzAppServiceEnvironmentInboundServices** membuat layanan masuk untuk Lingkungan App Service.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Zona DNS Pribadi dan catatan untuk ASEv2
+### Contoh 1: Membuat Zona DNS Privat dan rekaman untuk ASEv2
 ```powershell
 New-AzAppServiceEnvironmentInboundServices -ResourceGroupName AseResourceGroup -Name AseV2Name -VirtualNetworkName MyVirtualNetwork -SubnetName InboundSubnet
 ```
 
-Membuat Zona DNS Pribadi dan catatan untuk ASEv2
+Membuat Zona DNS Privat dan rekaman untuk ASEv2
 
-### Contoh 2: Membuat titik akhir privat, Zona DNS Pribadi dan catatan untuk ASEv3
+### Contoh 2: Membuat titik akhir privat, Zona DNS Privat, dan rekaman untuk ASEv3
 ```powershell
 New-AzAppServiceEnvironmentInboundServices -ResourceGroupName AseResourceGroup -Name AseV2Name -VirtualNetworkName MyVirtualNetwork -SubnetName InboundSubnet
 ```
 
-Membuat titik akhir pribadi, Zona DNS Pribadi, dan catatan untuk ASEv3
+Membuat titik akhir privat, Zona DNS Privat, dan rekaman untuk ASEv3
 
 ### Contoh 3: Membuat titik akhir privat untuk ASEv3
 ```powershell
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama lingkungan layanan aplikasi.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipDns
-Jangan buat Azure Private DNS Zone dan rekaman.
+Jangan membuat Zona dan rekaman DNS Privat Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,8 +183,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -212,11 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerUpgradeHint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerUpgradeHint.md
-ms.openlocfilehash: 03c827a252ecb37638f5908d020a0cda2a61a6d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2a700f2e6c2132f1dd1d16b6dd2de171157b4d00
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272511"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668842"
 ---
 # Get-AzSqlServerUpgradeHint
 
 ## SYNOPSIS
-Mendapatkan petunjuk tingkat harga untuk memutakhirkan server Azure SQL Database.
+Mendapatkan petunjuk tingkat harga untuk meningkatkan server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverupgradehint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,10 +30,10 @@ Get-AzSqlServerUpgradeHint [-ServerName] <String> [-ExcludeElasticPools <Boolean
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerUpgradeHint** mendapatkan petunjuk tingkat harga untuk memutakhirkan server Azure SQL Database.
-Petunjuk mungkin berisi kumpulan database elastis dan petunjuk database mandiri.
-Database yang masih berada di tingkat harga Web dan Bisnis mendapatkan petunjuk untuk memutakhirkan ke tingkat harga Dasar, Standar, atau Premium yang baru, atau untuk masuk ke kumpulan database elastis.
-Cmdlet ini mengembalikan petunjuk untuk semua database yang dihosting di server tertentu.
+Cmdlet **Get-AzSqlServerUpgradeHint** mendapatkan petunjuk tingkat harga untuk meningkatkan server Azure SQL Database.
+Petunjuk mungkin berisi kumpulan database elastis dan petunjuk database yang berdiri sendiri.
+Database yang masih berada di tingkat harga Web dan Bisnis mendapatkan petunjuk untuk meningkatkan ke tingkat harga Dasar, Standar, atau Premium baru, atau untuk masuk ke kumpulan database elastis.
+Cmdlet ini mengembalikan petunjuk untuk semua database yang dihosting di server yang ditentukan.
 
 ## EXAMPLES
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server di mana cmdlet ini mendapatkan petunjuk pemutakhiran.
+Menentukan nama server yang cmdletnya mendapatkan petunjuk pemutakhiran.
 
 ```yaml
 Type: System.String
@@ -109,8 +112,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

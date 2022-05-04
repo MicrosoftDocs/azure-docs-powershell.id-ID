@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: a73f7ccb1a5a6da90c6ae7b9f9c84391ebd6f774
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 88316a574b9a5c1b24a90103b3120c6f0ea4ee56
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143115749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676492"
 ---
 # Remove-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
-Menghapus kumpulan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu
+Menghapus himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/remove-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,26 +36,26 @@ Remove-AzTimeSeriesInsightsReferenceDataSet -InputObject <ITimeSeriesInsightsIde
 ```
 
 ## DESCRIPTION
-Menghapus kumpulan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan tertentu
+Menghapus himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan data referensi tertentu menurut nama
+### Contoh 1: Menghapus himpunan data referensi tertentu menurut nama
 ```powershell
 Remove-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -Name dstest001 -ResourceGroupName testgroup
 
 ```
 
-Perintah ini menghapus kumpulan data referensi tertentu.
+Perintah ini menghapus himpunan data referensi tertentu.
 
-### Contoh 2: Menghapus kumpulan data referensi tertentu menurut objek
+### Contoh 2: Menghapus himpunan data referensi tertentu menurut objek
 ```powershell
 $ds = Get-AzTimeSeriesInsightsReferenceDataSet -EnvironmentName tsitest001 -Name dstest001 -ResourceGroupName testgroup
 Remove-AzTimeSeriesInsightsReferenceDataSet -InputObject $ds
 
 ```
 
-Perintah ini menghapus kumpulan data referensi tertentu.
+Perintah ini menghapus himpunan data referensi tertentu.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Insights Time Series yang terkait dengan grup sumber daya tertentu.
+Nama lingkungan Time Series Insights yang terkait dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -101,8 +104,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kumpulan data referensi Insights Time Series yang terkait dengan lingkungan tertentu.
+### -Name
+Nama himpunan data referensi Insights Time Series yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -215,9 +218,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama sumber kejadian Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
+  - `[ReferenceDataSetName <String>]`: Nama himpunan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 

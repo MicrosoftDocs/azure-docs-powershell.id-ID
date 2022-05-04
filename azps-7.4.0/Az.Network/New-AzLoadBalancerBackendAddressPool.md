@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPool.md
-ms.openlocfilehash: dee6c8193e6c78aec1ca2c9cc3ed8def5589f947
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cf40c0440fdc884992e4b6ad9da76bfb641ac276
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996697"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711058"
 ---
 # New-AzLoadBalancerBackendAddressPool
 
 ## SYNOPSIS
 Membuat kumpulan alamat backend pada loadbalancer. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzLoadBalancerBackendAddressPool -LoadBalancer <PSLoadBalancer> -Name <Strin
 ```
 
 ## DESCRIPTION
-Membuat kumpulan alamat backend pada loadbalancer. Memungkinkan untuk melakukan specifiying array PSLoadBalancerBackendAddress. 
+Membuat kumpulan alamat backend pada loadbalancer. Memungkinkan untuk menspesifikasikan array PSLoadBalancerBackendAddress. 
 ## EXAMPLES
 
 ### Contoh 1
@@ -67,7 +70,7 @@ New-AzLoadBalancerBackendAddressPool -ResourceGroupName $resourceGroup -LoadBala
 New-AzLoadBalancerBackendAddressPool -ResourceGroupName $resourceGroup -LoadBalancerName $loadBalancerName -Name $backendPool3 -LoadBalancerBackendAddress $ips
 ```
 
-### Contoh 5: Membuat konfigurasi kumpulan alamat backend dengan antarmuka tunnel untuk load balancer
+### Contoh 5: Membuat konfigurasi kumpulan alamat backend dengan antarmuka terowongan untuk load balancer
 ```powershell
 ## create with Gateway LoadBalancer TunnelInterface configuration
 $tunnelInterface1 = New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig -Protocol 'Vxlan' -Type 'Internal' -Port 2000 -Identifier 800
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Sumber daya penyeimbang beban.
+Sumber daya load balancer.
 
 ```yaml
 Type: PSLoadBalancer
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerName
-Nama penyeimbang beban.
+Nama load balancer.
 
 ```yaml
 Type: String
@@ -137,8 +140,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kolam backend.
+### -Name
+Nama kumpulan backend.
 
 ```yaml
 Type: String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya penyeimbang muat.
+Nama grup sumber daya dari load balancer.
 
 ```yaml
 Type: String
@@ -167,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobSchedule.md
-ms.openlocfilehash: 81bc7b89d5aaa861a2617bbb533c724d24037bb5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 948723e06b482ed94adca678d35e33246d737c17
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143232749"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644856"
 ---
 # Get-AzBatchJobSchedule
 
 ## SYNOPSIS
-Dapatkan jadwal pekerjaan Batch.
+Mendapatkan jadwal pekerjaan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchjobschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Url                         : https://pfuller.westus.batch.azure.com/jobschedule
 Perintah ini mendapatkan jadwal pekerjaan yang memiliki ID JobSchedule23.
 Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
 
-### Contoh 2: Dapatkan jadwal pekerjaan dengan menggunakan filter
+### Contoh 2: Mendapatkan jadwal pekerjaan dengan menggunakan filter
 ```powershell
 Get-AzBatchJobSchedule -Filter "startswith(id,'Job')" -BatchContext $Context
 ```
@@ -104,13 +107,13 @@ Statistics                  :
 Url                         : https://pfuller.westus.batch.azure.com/jobschedules/JobSchedule26
 ```
 
-Perintah ini mendapatkan semua jadwal pekerjaan yang memiliki ID yang dimulai dengan Job dengan menentukan parameter *Filter* .
+Perintah ini mendapatkan semua jadwal pekerjaan yang memiliki ID yang dimulai dengan Pekerjaan dengan menentukan parameter *Filter* .
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan klausul perluasan Open Data Protocol (OData).
+Menentukan klausa perluasan Open Data Protocol (OData).
 Tentukan nilai untuk parameter ini untuk mendapatkan entitas terkait dari entitas utama yang Anda dapatkan.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Menentukan klausul filter OData.
+Menentukan klausa filter OData.
 Cmdlet ini mengembalikan jadwal pekerjaan yang cocok dengan filter yang ditentukan parameter ini.
 Jika Anda tidak menentukan filter, cmdlet ini mengembalikan semua jadwal pekerjaan untuk konteks Batch.
 
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### -Id
 Menentukan ID jadwal pekerjaan yang didapat cmdlet ini.
-Anda tidak bisa menentukan karakter wildcard.
+Anda tidak dapat menentukan karakter kartubebas.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Menentukan klausul pemilihan OData.
+Menentukan klausa pilih OData.
 Tentukan nilai untuk parameter ini untuk mendapatkan properti tertentu daripada semua properti objek.
 
 ```yaml
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -246,7 +249,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchJobSchedule](./New-AzBatchJobSchedule.md)
 
-[Hapus-AzBatchJobSchedule](./Remove-AzBatchJobSchedule.md)
+[Remove-AzBatchJobSchedule](./Remove-AzBatchJobSchedule.md)
 
 [Stop-AzBatchJobSchedule](./Stop-AzBatchJobSchedule.md)
 

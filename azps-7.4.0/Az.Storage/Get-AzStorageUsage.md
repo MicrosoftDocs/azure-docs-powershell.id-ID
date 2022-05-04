@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
-ms.openlocfilehash: 2eaf03940e3c32b4646efc88f8cf219c65d68d74
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 60ebb21258a05f8d6ed8d232bc1c7b8b92a5645b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170973"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668554"
 ---
 # Get-AzStorageUsage
 
 ## SYNOPSIS
-Mendapatkan Storage penggunaan sumber daya langganan saat ini.
+Mendapatkan penggunaan sumber daya Storage dari langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **Get-AzStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Sto
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penggunaan sumber daya penyimpanan dari lokasi tertentu
+### Contoh 1: Mendapatkan penggunaan sumber daya penyimpanan dari lokasi yang ditentukan
 ```
 PS C:\>Get-AzStorageUsage -Location 'West US'
 
@@ -40,7 +43,7 @@ CurrentValue  : 18
 Limit         : 250
 ```
 
-Perintah ini mendapatkan Storage penggunaan sumber daya dari lokasi tertentu di bawah langganan saat ini.
+Perintah ini mendapatkan Storage penggunaan sumber daya dari lokasi yang ditentukan di bawah langganan saat ini.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Indikasikan untuk mendapatkan penggunaan sumber daya Storage pada lokasi yang ditentukan.
+Tunjukkan untuk mendapatkan penggunaan sumber daya Storage pada lokasi yang ditentukan.
 Jika tidak ditentukan, akan mendapatkan Storage penggunaan sumber daya di semua lokasi di bawah langganan.
 
 ```yaml
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

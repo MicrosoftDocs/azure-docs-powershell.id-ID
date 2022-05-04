@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
-ms.openlocfilehash: 03971a72c7097aa79163203d35daea4d7f167bc1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 456069808d88eb3c2d97759fb7e8c0a2292b9e09
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688770"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622866"
 ---
 # Disable-AzAdvisorRecommendation
 
 ## SYNOPSIS
-Menonaktifkan rekomendasi Azure Advisor.
+Nonaktifkan rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/disable-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzAdvisorRecommendation [[-Days] <Int32>] [-InputObject] <PsAzureAdvisor
 ```
 
 ## DESCRIPTION
-Membuat penindasan untuk rekomendasi, ini memungkinkan rekomendasi tertentu untuk ditunda selama durasi tertentu atau tanpa batas.
+Membuat supresi untuk rekomendasi, ini memungkinkan rekomendasi tertentu untuk ditunda selama durasi tertentu atau tanpa batas.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Name          : HardCodedSupressionName
 Type          : Microsoft.Advisor/suppressions
 ```
 
-Buat penindasan untuk nama rekomendasi tertentu dengan NamaPenyembukan default dan hari default sebagai -1.
+Buat supresi untuk nama rekomendasi yang diberikan dengan SuppressionName default dan hari default sebagai -1.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +75,7 @@ Name          : HardCodedSupressionName
 Type          : Microsoft.Advisor/suppressions
 ```
 
-Penindasan dibuat untuk recommendation_id tertentu.
+Supresi dibuat untuk recommendation_id yang diberikan.
 
 ### Contoh 3
 ```powershell
@@ -88,12 +91,12 @@ Name          : HardCodedSupressionName
 Type          : Microsoft.Advisor/suppressions
 ```
 
-Membuat penindasan, perpipaan dari Get-AzAdvisorRecommendation ke Disable-AzAdvisorRecommendation.
+Membuat supresi, mempipa dari Get-AzAdvisorRecommendation ke Disable-AzAdvisorRecommendation.
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Hari
+### -Days
 Hari untuk menonaktifkan.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek powershell tipe PsAzureAdvisorResourceRecommendationBase dikembalikan oleh panggilan Get-AzAdvisorRecommendation.
+Jenis objek powershell PsAzureAdvisorResourceRecommendationBase yang dikembalikan oleh panggilan Get-AzAdvisorRecommendation.
 
 ```yaml
 Type: PsAzureAdvisorResourceRecommendationBase
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendationName
-ResourceName dari rekomendasi
+ResourceName rekomendasi
 
 ```yaml
 Type: String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id dari rekomendasi yang akan ditekan.
+Id rekomendasi yang akan ditekan.
 
 ```yaml
 Type: String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

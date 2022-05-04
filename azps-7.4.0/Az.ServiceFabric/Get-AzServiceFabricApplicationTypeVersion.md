@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricApplicationTypeVersion.md
-ms.openlocfilehash: bef61b9dc3308ae45a53a0e3ddc4d24d0066ae65
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 03add860650722ccaceda9ed09e974b2ac1a0d17
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058887"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707752"
 ---
 # Get-AzServiceFabricApplicationTypeVersion
 
 ## SYNOPSIS
-Dapatkan detail versi tipe aplikasi Service Fabric. Hanya mendukung ARM versi tipe aplikasi yang digunakan.
+Dapatkan detail versi jenis aplikasi Service Fabric. Hanya mendukung versi jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricapplicationtypeversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceFabricApplicationTypeVersion -ResourceId <String> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Gunakan cmdlet ini untuk mendapatkan detail versi tipe aplikasi dalam grup sumber daya dan kluster yang ditentukan.
+Gunakan cmdlet ini untuk mendapatkan detail versi jenis aplikasi dalam grup sumber daya dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ $appTypeName = "v1"
 Get-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName -Version
 ```
 
-Contoh ini mendapatkan tipe aplikasi "testAppType" dengan versi "v1", jika tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini mendapatkan jenis aplikasi "testAppType" dengan versi "v1", jika tidak menemukan sumber daya, itu akan memberikan pengecualian.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +64,7 @@ $appTypeName = "testAppType"
 Get-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName
 ```
 
-Contoh ini mendapatkan daftar versi tipe aplikasi yang ditentukan di bawah kluster dan tipe yang ditentukan.
+Contoh ini mendapatkan daftar versi jenis aplikasi yang ditentukan di bawah kluster dan jenis yang ditentukan.
 
 ## PARAMETERS
 
@@ -95,8 +98,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe aplikasi.
+### -Name
+Tentukan nama jenis aplikasi.
 
 ```yaml
 Type: System.String
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari versi tipe aplikasi.
+Arm ResourceId dari versi jenis aplikasi.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Tentukan versi tipe aplikasi.
+Tentukan versi jenis aplikasi.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

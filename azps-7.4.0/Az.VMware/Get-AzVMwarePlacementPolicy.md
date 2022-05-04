@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/get-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwarePlacementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwarePlacementPolicy.md
-ms.openlocfilehash: dd115d2bc0889fe8e512ee397c32284c5f363bc8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b9340f3050a8d4393e3874d41972711550d3c1ab
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669258"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694442"
 ---
 # Get-AzVMwarePlacementPolicy
 
 ## SYNOPSIS
-Dapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
+Mendapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/get-azvmwareplacementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzVMwarePlacementPolicy -ClusterName <String> -PrivateCloudName <String> -Re
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzVMwarePlacementPolicy -ClusterName <String> -Name <String> -PrivateCloudName <String>
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -37,11 +40,11 @@ Get-AzVMwarePlacementPolicy -InputObject <IVMwareIdentity> [-DefaultProfile <PSO
 ```
 
 ## DESCRIPTION
-Dapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
+Mendapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Kebijakan penempatan daftar menurut kluster cloud privat
+### Contoh 1: Mencantumkan kebijakan penempatan menurut kluster cloud privat
 ```powershell
 Get-AzVMwarePlacementPolicy -ClusterName cluster1 -PrivateCloudName cloud1 -ResourceGroupName group1
 ```
@@ -52,9 +55,9 @@ policy1 group1
 policy2 group1
 ```
 
-Kebijakan penempatan daftar menurut kluster cloud privat
+Mencantumkan kebijakan penempatan menurut kluster cloud privat
 
-### Contoh 2: Dapatkan kebijakan penempatan menurut nama di kluster cloud privat
+### Contoh 2: Mendapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
 ```powershell
 Get-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1
 ```
@@ -64,12 +67,12 @@ Name    ResourceGroupName
 policy1 group1
 ```
 
-Dapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
+Mendapatkan kebijakan penempatan berdasarkan nama di kluster cloud privat
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster di awan pribadi
+Nama kluster di cloud privat
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan pribadi
+Nama cloud privat
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -195,31 +198,31 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
-  - `[AddonName <String>]`: Nama add-on untuk awan pribadi
-  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
-  - `[CloudLinkName <String>]`: Nama sumber daya tautan awan
-  - `[ClusterName <String>]`: Nama kluster di cloud pribadi
+  - `[AddonName <String>]`: Nama addon untuk cloud privat
+  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
+  - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud
+  - `[ClusterName <String>]`: Nama kluster di cloud privat
   - `[DatastoreName <String>]`: Nama datastore di kluster cloud privat
-  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Umumnya sama dengan nama tampilan DHCP
+  - `[DhcpId <String>]`: Pengidentifikasi NSX DHCP. Umumnya sama dengan nama tampilan DHCP
   - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Umumnya sama dengan nama tampilan Layanan DNS
   - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Umumnya sama dengan nama tampilan Zona DNS
   - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Umumnya sama dengan nama tampilan Gateway
-  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan pribadi
-  - `[HcxEnterpriseSiteName <String>]`: Nama Situs HCX Enterprise di awan pribadi
+  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di cloud privat
+  - `[HcxEnterpriseSiteName <String>]`: Nama Situs Perusahaan HCX di cloud privat
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Kawasan Azure
+  - `[Location <String>]`: Wilayah Azure
   - `[PlacementPolicyName <String>]`: Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
   - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
-  - `[PrivateCloudName <String>]`: Nama awan pribadi
+  - `[PrivateCloudName <String>]`: Nama cloud privat
   - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan pribadi
-  - `[ScriptExecutionName <String>]`: Nama sumber eksekusi skrip yang diminta pengguna
-  - `[ScriptPackageName <String>]`: Nama paket skrip di awan pribadi
-  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segmen
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di cloud privat
+  - `[ScriptExecutionName <String>]`: Nama sumber daya eksekusi skrip yang dipanggil pengguna
+  - `[ScriptPackageName <String>]`: Nama paket skrip di cloud privat
+  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segment
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VMGroupId <String>]`: Pengidentifikasi Grup VM NSX. Umumnya sama dengan nama tampilan Grup VM
-  - `[VirtualMachineId <String>]`: Pengidentifikasi Mesin Virtual
+  - `[VMGroupId <String>]`: Pengidentifikasi NSX VM Group. Umumnya sama dengan nama tampilan Grup VM
+  - `[VirtualMachineId <String>]`: Pengidentifikasi Komputer Virtual
 
 ## RELATED LINKS
 

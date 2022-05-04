@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Stop-AzConnectedNetworkVendorFunctionRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Stop-AzConnectedNetworkVendorFunctionRoleInstance.md
-ms.openlocfilehash: 8305681072f05f3786de3320a4d42543030442d2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 62aa8c341fe02ffbdec90a5ff097a2c55f783ff9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944065"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625530"
 ---
 # Stop-AzConnectedNetworkVendorFunctionRoleInstance
 
 ## SYNOPSIS
-Mematikan (menghentikan) contoh peran fungsi jaringan vendor.
+Mematikan (menghentikan) instans peran fungsi jaringan vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/stop-azconnectednetworkvendorfunctionroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,24 +29,24 @@ Stop-AzConnectedNetworkVendorFunctionRoleInstance -LocationName <String> -Name <
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentitas
+### StopViaIdentity
 ```
 Stop-AzConnectedNetworkVendorFunctionRoleInstance -InputObject <IConnectedNetworkIdentity>
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mematikan (menghentikan) contoh peran fungsi jaringan vendor.
+Mematikan (menghentikan) instans peran fungsi jaringan vendor.
 
 ## EXAMPLES
 
-### Contoh 1: Stop-AzConnectedNetworkVendorFunctionRoleInstance melalui lokasi, serviceKey, nama vendor dan nama contoh peran
+### Contoh 1: Stop-AzConnectedNetworkVendorFunctionRoleInstance melalui lokasi, serviceKey, nama vendor, dan nama instans peran
 ```powershell
 PS C:\> Stop-AzConnectedNetworkVendorFunctionRoleInstance -LocationName centraluseuap -ServiceKey 1234-abcd-4321-dcba -SubscriptionId xxxx-3333-xxxx-3333 -VendorName myVendor -Name role1
 
 ```
 
-Menghentikan contoh peran fungsi jaringan vendor dengan serviceKey, location centraluseuap, nama vendor myVendor, dan peran nama contoh peran1.
+Menghentikan instans peran fungsi jaringan vendor dengan serviceKey yang ditentukan, centraluseuap lokasi, nama vendor myVendor, dan nama instans peran1.
 
 ### Contoh 2: Stop-AzConnectedNetworkVendorFunctionRoleInstance melalui Identitas
 ```powershell
@@ -52,13 +55,13 @@ PS C:\> Stop-AzConnectedNetworkVendorFunctionRoleInstance -InputObject $role
 
 ```
 
-Membuat identitas dengan peran nama contoh peran1, lokasi centraluseuap, nama vendor myVendor langganan tertentu, serviceKey.
-Menghentikan contoh peran dengan identitas tertentu.
+Membuat identitas dengan peran nama instans peran1, centraluseuap lokasi, nama vendor myVendor langganan yang ditentukan, serviceKey.
+Menghentikan instans peran dengan identitas yang diberikan.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocationName
-Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
+Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
 
 ```yaml
 Type: System.String
@@ -117,8 +120,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama contoh peran fungsi jaringan vendor.
+### -Name
+Nama instans peran fungsi jaringan vendor.
 
 ```yaml
 Type: System.String
@@ -207,8 +210,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -261,11 +264,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[DeviceName <String>]`: Nama sumber daya perangkat.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[LocationName <String>]`: Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
+  - `[LocationName <String>]`: Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
   - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[RoleInstanceName <String>]`: Nama contoh peran fungsi jaringan vendor.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[RoleInstanceName <String>]`: Nama instans peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.
   - `[SubscriptionId <String>]`: ID langganan target.

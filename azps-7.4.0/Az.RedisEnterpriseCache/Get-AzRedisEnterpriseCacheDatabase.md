@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: 368bd30aae2455aab7fd3d46d8c16d70ba6eaff2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 73bed947a411eb22ecfb7ddc1c0c746e6d879e4c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143059715"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144709836"
 ---
 # Get-AzRedisEnterpriseCacheDatabase
 
 ## SYNOPSIS
-Mendapatkan informasi tentang database di klaster Redis Enterprise.
+Mendapatkan informasi tentang database di kluster Redis Enterprise.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/get-azredisenterprisecachedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzRedisEnterpriseCacheDatabase -ClusterName <String> -ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang database di klaster Redis Enterprise.
+Mendapatkan informasi tentang database di kluster Redis Enterprise.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi database
+### Contoh 1: Mendapatkan informasi database
 ```powershell
 Get-AzRedisEnterpriseCacheDatabase -Name "MyCache" -ResourceGroupName "MyGroup"
 ```
@@ -41,7 +44,7 @@ default Microsoft.Cache/redisEnterprise/databases
 
 ```
 
-Perintah ini mendapatkan informasi tentang database dalam singgahan Redis Enterprise bernama MyCache.
+Perintah ini mendapatkan informasi tentang database di cache Redis Enterprise bernama MyCache.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

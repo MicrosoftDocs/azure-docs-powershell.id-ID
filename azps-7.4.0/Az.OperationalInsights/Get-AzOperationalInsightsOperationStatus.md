@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsOperationStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsOperationStatus.md
-ms.openlocfilehash: 3a81beccde2c7782c9ce7c7499ae6f9da7e4526e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 80b644abaa649ea16b30158a543c9c7382eb52d2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142937387"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626916"
 ---
 # Get-AzOperationalInsightsOperationStatus
 
 ## SYNOPSIS
-Dapatkan status operasi azure asinkron yang berjalan panjang.
+Dapatkan status operasi asinkron azure yang berjalan lama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsoperationstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzOperationalInsightsOperationStatus -Location <String> -OperationId <String
 ```
 
 ## DESCRIPTION
-Dapatkan status operasi azure asinkron yang berjalan panjang.
+Dapatkan status operasi asinkron azure yang berjalan lama.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Dapatkan status operasi azure asinkron yang berjalan panjang.
 Get-AzOperationalInsightsOperationStatus -Location {location} -OperationId {op_id}
 ```
 
-mendapatkan operasi azure asynchronous yang berjalan panjang
+mendapatkan operasi asinkron azure yang berjalan lama
 
 ## PARAMETERS
 
@@ -84,11 +87,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

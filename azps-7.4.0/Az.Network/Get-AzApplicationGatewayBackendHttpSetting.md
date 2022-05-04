@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 2bb255085339f058abd6861f2ecf86b6c7eca1aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e92af4586674540a818394db9ab40b2d7daa61c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314235"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711958"
 ---
 # Get-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
-Mendapatkan pengaturan HTTP ujung-belakang gateway aplikasi.
+Mendapatkan pengaturan HTTP back-end gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaybackendhttpsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzApplicationGatewayBackendHttpSetting [-Name <String>] -ApplicationGateway 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzApplicationGatewayBackendHttpSetting mendapatkan pengaturan HTTP ujung-belakang gateway aplikasi.
+Cmdlet Get-AzApplicationGatewayBackendHttpSetting mendapatkan pengaturan HTTP back-end dari gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan HTTP ujung-belakang berdasarkan nama
+### Contoh 1: Dapatkan pengaturan HTTP back-end berdasarkan nama
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Settings  = Get-AzApplicationGatewayBackendHttpSetting -Name "Settings01" -ApplicationGateway $AppGw
@@ -37,7 +40,7 @@ $Settings  = Get-AzApplicationGatewayBackendHttpSetting -Name "Settings01" -Appl
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw. Perintah kedua mendapatkan pengaturan HTTP bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
 
-### Contoh 2: Dapatkan kumpulan pengaturan HTTP ujung-belakang
+### Contoh 2: Mendapatkan kumpulan pengaturan HTTP back-end
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $SettingsList  = Get-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw
@@ -48,7 +51,7 @@ Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi yang berisi pengaturan HTTP ujung-belakang.
+Menentukan objek gateway aplikasi yang berisi pengaturan HTTP back-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama pengaturan http backend yang didapatkan cmdlet ini.
+### -Name
+Menentukan nama pengaturan HTTP backend yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

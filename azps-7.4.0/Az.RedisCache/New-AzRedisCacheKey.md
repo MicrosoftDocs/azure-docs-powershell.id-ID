@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheKey.md
-ms.openlocfilehash: 97b8a1a74409460e51e518f4b600d197e6b1c422
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 84f5dc406226bb6c433bf316e14fd9538ddc534a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935821"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144677050"
 ---
 # New-AzRedisCacheKey
 
 ## SYNOPSIS
-Meregenerasi kunci akses Cache Redis.
+Meregenerasi kunci akses Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/new-azrediscachekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzRedisCacheKey [-ResourceGroupName <String>] -Name <String> -KeyType <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRedisCacheKey** meregenerasi kunci akses Cache Azure Redis.
+Cmdlet **New-AzRedisCacheKey** meregenerasi kunci akses Azure Redis Cache.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ New-AzRedisCacheKey -ResourceGroupName "ResourceGroup03" -Name "myCache" -KeyTyp
           SecondaryKey      : sJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
 ```
 
-Perintah ini meregenerasi kunci utama Singgahan Redis.
+Perintah ini meregenerasi kunci utama Redis Cache.
 
 ### Contoh 2: Meregenerasi kunci sekunder
 ```powershell
@@ -54,7 +57,7 @@ New-AzRedisCacheKey -ResourceGroupName "ResourceGroup03" -Name "myCache" -KeyTyp
           SecondaryKey      : sJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
 ```
 
-Perintah ini meregenerasi kunci sekunder Singgahan Redis.
+Perintah ini meregenerasi kunci sekunder dari Redis Cache.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -89,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan apakah akan meregenerasi kunci akses utama atau sekunder.
-Nilai yang valid adalah: Utama, Sekunder.
+Menentukan apakah akan meregenerasi kunci akses primer atau sekunder.
+Nilai yang valid adalah: Primer, Sekunder.
 
 ```yaml
 Type: System.String
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama Singgahan Redis.
+### -Name
+Menentukan nama Redis Cache.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi Singgahan Redis.
+Menentukan nama grup sumber daya yang berisi Redis Cache.
 
 ```yaml
 Type: System.String
@@ -135,8 +138,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

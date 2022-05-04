@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
-ms.openlocfilehash: 800e352214b20fea49bf980dc1bd4a5e39489d0c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9d0c78ef8e47ff3abbd181b5e17ef0e9f0a9bb0b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143122625"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728151"
 ---
 # Remove-AzFunctionApp
 
 ## SYNOPSIS
 Menghapus aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/remove-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 

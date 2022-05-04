@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagement.md
-ms.openlocfilehash: 23f931f2d30f9e98bb5723c608fc7dae24eaae7f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fc744427507535a0a496b0e84036ef694b8bf6a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879750"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623352"
 ---
 # New-AzApiManagement
 
 ## SYNOPSIS
 Membuat penyebaran API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ EnableClientCertificate               :
 ResourceGroupName                     : ContosoGroup02
 ```
 
-Perintah ini membuat layanan API Management tingkat pengembang.
+Perintah ini membuat layanan API Management tingkat Pengembang.
 Perintah menentukan organisasi dan alamat administrator.
 Perintah tidak menentukan parameter *SKU* .
 Oleh karena itu, cmdlet menggunakan nilai default Pengembang.
@@ -119,7 +122,7 @@ EnableClientCertificate               : True
 ResourceGroupName                     : Api-Default-North-Europe
 ```
 
-Perintah ini membuat layanan API Management tingkat pemakaian dengan Sertifikat Klien diaktifkan di Eropa barat.
+Perintah ini membuat layanan API Management tingkat konsumsi dengan Sertifikat Klien diaktifkan di Eropa barat.
 
 ### Contoh 4: Membuat layanan API Management untuk jaringan virtual eksternal
 ```powershell
@@ -135,7 +138,7 @@ $virtualNetwork = New-AzApiManagementVirtualNetwork -SubnetResourceId "/subscrip
 New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US" -Name "ContosoApi" -Organization "Contoso" -AdminEmail "admin@contoso.com" -VirtualNetwork $virtualNetwork -VpnType "Internal" -Sku "Premium"
 ```
 
-Perintah ini membuat layanan API Management tingkat Premium di subnet jaringan virtual Azure yang memiliki titik akhir gateway yang menghadap ke internal dengan wilayah master di AS Barat.
+Perintah ini membuat layanan API Management tingkat Premium di subnet jaringan virtual Azure yang memiliki titik akhir gateway yang menghadap internal dengan wilayah master di AS Barat.
 
 ### Contoh 6: Membuat layanan API Management dan Mengaktifkan protokol TLS 1.0
 ```powershell
@@ -177,9 +180,9 @@ EnableClientCertificate               :
 ResourceGroupName                     : Api-Default-CentralUS
 ```
 
-Perintah ini membuat layanan Manajemen Api SKU Standar dan Mengaktifkan TLS 1.0 di klien Frontend ke ApiManagement Gateway dan klien Backend antara ApiManagement Gateway dan Backend.
+Perintah ini membuat layanan Api Management SKU Standar dan Mengaktifkan TLS 1.0 pada klien Frontend ke ApiManagement Gateway dan klien Backend antara ApiManagement Gateway dan Backend.
 
-### Contoh 7: Membuat layanan API Management di Availability Zones
+### Contoh 7: Membuat layanan API Management di Zona Ketersediaan
 ```powershell
 New-AzApiManagement -ResourceGroupName "contoso-rg" -Name "apim-test-pshell-azs" -Location "Central US" -Organization "Contoso" -AdminEmail "admin@contoso.com" -Sku Premium -Capacity 3 -Zone @("1","2","3")
 ```
@@ -221,7 +224,7 @@ DisableGateway                        : False
 MinimalControlPlaneApiVersion         :
 ResourceGroupName                     : contoso-rg
 ```
-Perintah ini membuat Premium layanan Manajemen Api SKU di Zona
+Perintah ini membuat layanan SKU Api Management Premium di Zona
 
 ## PARAMETERS
 
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Menentukan kapasitas SKU layanan API Management Azure.
+Menentukan kapasitas SKU layanan Azure API Management.
 Defaultnya adalah satu (1).
 
 ```yaml
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomHostnameConfiguration
-Konfigurasi nama host kustom. Nilai default adalah $null. Passing $null akan mengatur nama host default.
+Konfigurasi nama host kustom. Nilai defaultnya adalah $null. Meneruskan $null akan mengatur nama host default.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementCustomHostNameConfiguration[]
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableGateway
-Bendera hanya dimaksudkan untuk digunakan untuk Premium penyebaran SKU ApiManagement Service dan Non Internal VNET. Ini berguna jika kami ingin mengeluarkan kawasan gateway dari rotasi. Ini juga dapat digunakan untuk berdiri di kawasan baru dalam mode Pasif, mengujinya lalu membuatnya Langsung nanti.
+Bendera hanya dimaksudkan untuk digunakan untuk Premium SKU ApiManagement Service dan penyebaran VNET Non Internal. Ini berguna jika kita ingin mengeluarkan wilayah gateway dari rotasi. Ini juga dapat digunakan untuk berdiri di wilayah baru dalam mode Pasif, mengujinya dan kemudian membuatnya Langsung nanti.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableClientCertificate
-Bendera hanya dimaksudkan untuk digunakan untuk Layanan Pemakaian SKU ApiManagement. Ini memberlakukan sertifikat klien untuk disajikan pada setiap permintaan ke gateway. Ini juga memungkinkan kemampuan untuk mengautentikasi sertifikat dalam kebijakan di gateway.
+Bendera hanya dimaksudkan untuk digunakan untuk Layanan Consumption SKU ApiManagement. Ini memberlakukan sertifikat klien untuk disajikan pada setiap permintaan ke gateway. Ini juga memungkinkan kemampuan untuk mengautentikasi sertifikat dalam kebijakan di gateway.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -332,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi untuk membuat layanan Manajemen Api.
+Menentukan lokasi untuk membuat layanan Api Management.
 Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalControlPlaneApiVersion
-Versi Minimal Control Plane Apis memungkinkan pengelolaan layanan API Management.
+Versi Api Sarana Kontrol Minimal untuk memungkinkan pengelolaan layanan API Management.
 
 ```yaml
 Type: System.String
@@ -362,7 +365,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk penyebaran API Management.
 
 ```yaml
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 Menentukan tingkat layanan API Management.
 Nilai yang valid adalah: 
 - Pengembang 
-- Standar 
+- Standard 
 - Premium Defaultnya adalah Pengembang.
 
 ```yaml
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslSetting
-Pengaturan Ssl Dari Layanan ApiManagement. Nilai default adalah $null
+Pengaturan Ssl Dari Layanan ApiManagement. Nilai defaultnya adalah $null
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSslSetting
@@ -444,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemAssignedIdentity
-Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -459,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemCertificateConfiguration
-Sertifikat yang dikeluarkan oleh CA Internal untuk diinstal pada layanan. Nilai default adalah $null.
+Sertifikat yang dikeluarkan oleh OS Internal untuk diinstal pada layanan. Nilai defaultnya adalah $null.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSystemCertificate[]
@@ -504,7 +507,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Virtual Network Konfigurasi kawasan penyebaran master Azure API Management.
+Virtual Network Konfigurasi wilayah penyebaran master Azure API Management.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementVirtualNetwork
@@ -519,10 +522,10 @@ Accept wildcard characters: False
 ```
 
 ### -VpnType
-Virtual Network Tipe Penyebaran ApiManagement. Nilai yang Valid adalah 
-- "Tidak Ada" (Nilai Default. ApiManagement bukan bagian dari Virtual Network apa pun")
-- "External" (ApiManagement Deployment is setup inside a Virtual Network having an Internet Facing Endpoint)
-- "Internal" (Penyebaran ApiManagement diatur di dalam Virtual Network memiliki Titik Akhir Menghadapi Intranet)
+Virtual Network Jenis Penyebaran ApiManagement. Nilai yang valid adalah 
+- "None" (Nilai Default. ApiManagement bukan bagian dari Virtual Network")
+- "Eksternal" (Penyebaran ApiManagement disiapkan di dalam Virtual Network memiliki Titik Akhir Yang Menghadap Internet)
+- "Internal" (Penyebaran ApiManagement disiapkan di dalam Virtual Network memiliki Titik Akhir Yang Menghadap Intranet)
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementVpnType
@@ -538,7 +541,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan tempat layanan manajemen api disebarkan.
+Daftar zona ketersediaan yang menunjukkan tempat layanan manajemen api disebarkan.
 
 ```yaml
 Type: System.String[]
@@ -553,19 +556,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSku, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementSku, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementVirtualNetwork
 
-### System.Collections.Generic.Dictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.Dictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion[]
 
@@ -587,7 +590,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzApiManagement](./Set-AzApiManagement.md)
 
-[Hapus-AzApiManagement](./Remove-AzApiManagement.md)
+[Remove-AzApiManagement](./Remove-AzApiManagement.md)
 
 [Restore-AzApiManagement](./Restore-AzApiManagement.md)
 

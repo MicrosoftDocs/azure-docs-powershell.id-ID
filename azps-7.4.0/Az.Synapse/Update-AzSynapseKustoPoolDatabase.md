@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: ad9261b4ee25a88204badbe0c4a4f9fdacca97db
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 184f141b48776e241729c13deac0a65ef679aff2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142862722"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674818"
 ---
 # Update-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
 Memperbarui database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopooldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Memperbarui database.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui database yang sudah ada menurut nama
+### Contoh 1: Memperbarui database yang sudah ada berdasarkan nama
 ```powershell
 $2ds = New-TimeSpan -Days 2
 $4ds = New-TimeSpan -Days 4
@@ -52,7 +55,7 @@ Kind      Location Name
 ReadWrite East US  testws/testkustopool/mykustodatabase
 ```
 
-Perintah di atas memperbarui periode penghapusan lembut dan periode singgahan panas database Kusto "mykustodatabase" di ruang kerja "testws" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas memperbarui periode penghapusan sementara dan periode cache panas dari database Kusto "mykustodatabase" di ruang kerja "testws" yang ditemukan di grup sumber daya "testrg".
 
 ### Contoh 2: Memperbarui database yang sudah ada melalui identitas
 ```powershell
@@ -68,12 +71,12 @@ Kind      Location Name
 ReadWrite East US  testws/testkustopool/mykustodatabase
 ```
 
-Perintah di atas memperbarui periode penghapusan lembut dan periode singgahan panas database Kusto "mykustodatabase" di ruang kerja "testws" yang ditemukan dalam grup sumber daya "testrg" melalui identitas database.
+Perintah di atas memperbarui periode penghapusan sementara dan periode cache panas dari database Kusto "mykustodatabase" di ruang kerja "testws" yang ditemukan di grup sumber daya "testrg" melalui identitas database.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kumpulan Kusto.
+Nama database di kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -HotCachePeriod
-Waktu data harus disimpan dalam cache untuk kueri cepat di Rentang Waktu.
+Waktu data harus disimpan dalam cache untuk kueri cepat di TimeSpan.
 
 ```yaml
 Type: System.TimeSpan
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftDeletePeriod
-Waktu data harus disimpan sebelum berhenti diakses oleh kueri di Rentang Waktu.
+Waktu data harus disimpan sebelum berhenti dapat diakses oleh kueri di TimeSpan.
 
 ```yaml
 Type: System.TimeSpan
@@ -253,7 +256,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja
 
 ```yaml
@@ -268,8 +271,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -320,14 +323,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
-  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
+  - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
+  - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

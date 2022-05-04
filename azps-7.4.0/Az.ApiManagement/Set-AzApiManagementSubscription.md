@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementSubscription.md
-ms.openlocfilehash: b142abef741f1484b8303a78047c54b21870fbcf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9602257108b44155d63f8c8b2856a759c8ec12ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751662"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144672316"
 ---
 # Set-AzApiManagementSubscription
 
 ## SYNOPSIS
 Mengatur detail langganan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,21 +40,21 @@ Set-AzApiManagementSubscription -Context <PsApiManagementContext> -SubscriptionI
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementSubscription** mengatur detail langganan yang sudah ada.
+Cmdlet **Set-AzApiManagementSubscription** menetapkan detail langganan yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur kunci status dan utama dan sekunder untuk langganan
+### Contoh 1: Mengatur kunci status dan primer dan sekunder untuk langganan
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementSubscription -Context $apimContext -SubscriptionId -0123456789 -PrimaryKey "80450f7d0b6d481382113073f67822c1" -SecondaryKey "97d6112c3a8f48d5bf0266b7a09a761c" -State "Active"
 ```
 
-Perintah ini mengatur kunci utama dan sekunder untuk langganan dan mengaktifkannya.
+Perintah ini mengatur kunci primer dan sekunder untuk langganan dan mengaktifkannya.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KedaluwarsaOn
+### -ExpiresOn
 Menentukan tanggal kedaluwarsa langganan.
 Nilai default parameter ini adalah $Null.
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementSubscription. Parameter ini diperlukan.
+Instans PsApiManagementSubscription. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscription
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama langganan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ### -PrimaryKey
 Menentukan kunci utama langganan.
 Parameter ini dihasilkan secara otomatis jika tidak ditentukan.
-Parameter ini harus panjangnya 1 hingga 300 karakter.
+Panjang parameter ini harus 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -159,8 +162,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup Langganan, baik itu Lingkup Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau lingkup Global /. Parameter ini diperlukan.
+### -Cakupan
+Cakupan Langganan, apakah itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ### -SecondaryKey
 Menentukan kunci sekunder langganan.
 Parameter ini dihasilkan secara otomatis jika tidak ditentukan.
-Parameter ini harus panjangnya 1 hingga 300 karakter.
+Panjang parameter ini harus 1 hingga 300 karakter.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status langganan.
 Nilai default parameter ini adalah $Null.
 
@@ -254,8 +257,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -293,7 +296,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSubscriptionState, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ### System.Nullable'1[[System.DateTime, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: 5688bc0e90f3d261697c51f92e9e3baa6ba1e82b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d940c7073eb16626a996906c17bdc8847752a12
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743130"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144669508"
 ---
 # New-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
-Membuat konfigurasi IP ujung depan untuk gateway aplikasi.
+Membuat konfigurasi IP front-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,14 +40,14 @@ New-AzApplicationGatewayFrontendIPConfig -Name <String> [-PrivateIPAddress <Stri
 
 ## DESCRIPTION
 Cmdlet **New-AzApplicationGatewayFrontendIPConfig** membuat konfigurasi IP front-end untuk gateway aplikasi Azure.
-Gateway aplikasi mendukung dua tipe konfigurasi IP ujung depan: 
-- Alamat IP publik -- Alamat IP pribadi menggunakan penyeimbangan muatan internal (ILB).
- Gateway aplikasi bisa memiliki paling banyak satu alamat IP publik dan satu alamat IP privat.
+Gateway aplikasi mendukung dua jenis konfigurasi IP front-end: 
+- Alamat IP publik -- Alamat IP privat menggunakan penyeimbangan beban internal (ILB).
+ Gateway aplikasi dapat memiliki paling banyak satu alamat IP publik dan satu alamat IP privat.
 Alamat IP publik dan alamat IP privat harus ditambahkan secara terpisah sebagai alamat IP front-end.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi IP ujung depan menggunakan objek sumber daya IP publik
+### Contoh 1: Membuat konfigurasi IP front-end menggunakan objek sumber daya IP publik
 ```powershell
 $PublicIP = New-AzPublicIpAddress -ResourceGroupName "ResourceGroup01" -Name "PublicIP01" -location "West US" -AllocationMethod Dynamic
 $FrontEnd = New-AzApplicationGatewayFrontendIPConfig -Name "FrontEndIP01" -PublicIPAddress $PublicIP
@@ -53,7 +56,7 @@ $FrontEnd = New-AzApplicationGatewayFrontendIPConfig -Name "FrontEndIP01" -Publi
 Perintah pertama membuat objek sumber daya IP publik dan menyimpannya dalam variabel $PublicIP.
 Perintah kedua menggunakan $PublicIP untuk membuat konfigurasi IP front-end baru bernama FrontEndIP01 dan menyimpannya dalam variabel $FrontEnd.
 
-### Contoh 2: Membuat IP pribadi statis sebagai alamat IP ujung depan
+### Contoh 2: Membuat IP privat statis sebagai alamat IP front-end
 ```powershell
 $VNet = Get-AzVirtualNetwork -Name "VNet01" -ResourceGroupName "ResourceGroup01"
 $Subnet = Get-AzVirtualNetworkSubnetConfig -Name "Subnet01" -VirtualNetwork $VNet
@@ -62,7 +65,7 @@ $FrontEnd = New-AzApplicationGatewayFrontendIPConfig -Name "FrontendIP02" -Subne
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang termasuk dalam grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $VNet.
 Perintah kedua mendapatkan konfigurasi subnet bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam variabel $Subnet.
-Perintah ketiga membuat konfigurasi IP front-end bernama FrontEndIP02 menggunakan $Subnet dari perintah kedua dan alamat IP pribadi 10.0.1.1, lalu menyimpannya dalam variabel $FrontEnd.
+Perintah ketiga membuat konfigurasi IP front-end bernama FrontEndIP02 menggunakan $Subnet dari perintah kedua dan alamat IP privat 10.0.1.1, lalu menyimpannya dalam variabel $FrontEnd.
 
 ### Contoh 3: Membuat IP privat dinamis sebagai alamat IP front-end
 ```powershell
@@ -92,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP ujung depan yang dibuat cmdlet ini.
+### -Name
+Menentukan nama konfigurasi IP front-end yang dibuat cmdlet ini.
 
 ```yaml
 Type: String
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIPAddress
-Menentukan alamat IP privat yang dikaitkan cmdlet ini dengan alamat IP ujung depan gateway aplikasi.
-Hal ini hanya dapat ditentukan jika subnet ditentukan.
+Menentukan alamat IP privat yang dikaitkan cmdlet ini dengan alamat IP front-end gateway aplikasi.
+Ini hanya dapat ditentukan jika subnet ditentukan.
 IP ini dialokasikan secara statis dari subnet.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddress
-Menentukan objek alamat IP publik yang dikaitkan cmdlet ini dengan alamat IP ujung depan gateway aplikasi.
+Menentukan objek alamat IP publik yang dikaitkan cmdlet ini dengan alamat IP front-end gateway aplikasi.
 
 ```yaml
 Type: PSPublicIpAddress
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIPAddressId
-Menentukan ID alamat IP publik yang dikaitkan cmdlet ini dengan IP ujung depan gateway aplikasi.
+Menentukan ID alamat IP publik yang dikaitkan cmdlet ini dengan IP front-end gateway aplikasi.
 
 ```yaml
 Type: String
@@ -185,10 +188,10 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek subnet yang dikaitkan cmdlet ini dengan alamat IP ujung depan gateway aplikasi.
-Jika Anda menentukan parameter ini, artinya gateway menggunakan alamat IP privat.
-Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus dimiliki oleh subnet yang ditentukan oleh parameter ini.
-Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini dipilih secara dinamis sebagai alamat IP ujung depan gateway aplikasi.
+Menentukan objek subnet yang dikaitkan cmdlet ini dengan alamat IP front-end gateway aplikasi.
+Jika Anda menentukan parameter ini, itu menyiratkan bahwa gateway menggunakan alamat IP privat.
+Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus milik subnet yang ditentukan oleh parameter ini.
+Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini diambil secara dinamis sebagai alamat IP front-end gateway aplikasi.
 
 ```yaml
 Type: PSSubnet
@@ -203,10 +206,10 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Menentukan ID subnet yang dikaitkan cmdlet ini dengan konfigurasi IP ujung depan gateway aplikasi.
-Jika Anda menentukan parameter *Subnet* , artinya gateway menggunakan alamat IP privat.
-Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus dimiliki oleh subnet yang ditentukan oleh *Subnet*.
-Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini dipilih secara dinamis sebagai alamat IP ujung depan gateway aplikasi.
+Menentukan ID subnet yang dikaitkan cmdlet ini dengan konfigurasi IP front-end gateway aplikasi.
+Jika Anda menentukan parameter *Subnet* , itu menyiratkan bahwa gateway menggunakan alamat IP privat.
+Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus milik subnet yang ditentukan oleh *Subnet*.
+Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini diambil secara dinamis sebagai alamat IP front-end gateway aplikasi.
 
 ```yaml
 Type: String
@@ -221,11 +224,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

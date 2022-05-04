@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Remove-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Remove-AzContainerGroup.md
-ms.openlocfilehash: edb833543b04e791d24b3f2613567863ddb5e944
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a2a8cbf6e8dd29398f8e100654443b3bf8fec71b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065043"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144601628"
 ---
 # Remove-AzContainerGroup
 
 ## SYNOPSIS
-Hapus grup kontainer tertentu dalam grup sumber daya dan langganan tertentu.
+Hapus grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi ini tidak menghapus sumber daya lain yang disediakan oleh pengguna, seperti volume.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/remove-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Remove-AzContainerGroup -InputObject <IContainerInstanceIdentity> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Hapus grup kontainer tertentu dalam grup sumber daya dan langganan tertentu.
+Hapus grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi ini tidak menghapus sumber daya lain yang disediakan oleh pengguna, seperti volume.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus grup wadah
+### Contoh 1: Menghapus grup kontainer
 ```powershell
 Remove-AzContainerGroup -Name test-cg -ResourceGroupName test-rg
 ```
@@ -49,9 +52,9 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini menghapus grup wadah yang ditentukan.
+Perintah ini menghapus grup kontainer yang ditentukan.
 
-### Contoh 2: Menghapus grup wadah dengan mempipa
+### Contoh 2: Menghapus grup kontainer dengan mempipa
 ```powershell
 Get-AzContainerGroup -Name test-cg -ResourceGroupName bez-rg | Remove-AzContainerGroup
 ```
@@ -62,12 +65,12 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini menghapus grup wadah dengan pipa.
+Perintah ini menghapus grup kontainer dengan pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +114,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama grup wadah.
+### -Name
+Nama grup kontainer.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -187,8 +190,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -239,12 +242,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
-  - `[ContainerGroupName <String>]`: Nama grup wadah.
+  - `[ContainerGroupName <String>]`: Nama grup kontainer.
   - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Pengidentifikasi untuk lokasi azure fisik.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

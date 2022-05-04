@@ -1,17 +1,17 @@
 ---
 description: Panduan migrasi ini berisi daftar perubahan berisiko yang dibuat untuk Azure PowerShell dalam rilis Az versi 5.0.0.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Panduan migrasi untuk Az 5.0.0
-ms.openlocfilehash: 294a695238e20fe2a4398811c2271fcf2e185ec6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c6f3fc5dc83e1652c59c32614e8e71e4e06e356
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116209"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645448"
 ---
 # <a name="migration-guide-for-az-500"></a>Panduan Migrasi untuk Az 5.0.0
 

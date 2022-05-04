@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchApplication.md
-ms.openlocfilehash: 36ee3606f7377ab4c93c87f57137f7ac444887a9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7326dec3e22cbf5ebd0d1e149c8ca80e705c3e61
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142878616"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641436"
 ---
 # Remove-AzBatchApplication
 
 ## SYNOPSIS
 Menghapus aplikasi dari akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -115,16 +118,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
+[Get-AzBatchApplication](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchAplikasi](./New-AzBatchApplication.md)
+[New-AzBatchApplication](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 
-[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
+[Set-AzBatchApplication](./Set-AzBatchApplication.md)
 
 

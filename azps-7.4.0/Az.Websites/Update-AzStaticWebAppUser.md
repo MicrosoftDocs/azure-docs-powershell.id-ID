@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzStaticWebAppUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzStaticWebAppUser.md
-ms.openlocfilehash: 82ccbba050becf23ed5a00774ea0812425ac1ccc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5dfbfe47efccac63ddaf01d146ca918cc1174ab5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143055469"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691564"
 ---
 # Update-AzStaticWebAppUser
 
 ## SYNOPSIS
 Deskripsi untuk Memperbarui entri pengguna dengan peran yang tercantum
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/update-azstaticwebappuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Kind Name                             Type
 
 Perintah ini memperbarui entri pengguna dengan peran yang tercantum.
 
-### Contoh 2: Memperbarui entri pengguna dengan peran yang tercantum menurut saluran
+### Contoh 2: Memperbarui entri pengguna dengan peran yang tercantum menurut alur
 ```powershell
 Get-AzStaticWebAppUser -ResourceGroupName azure-rg-test -Name staticweb-portal01 -Authprovider 'all'  | Update-AzStaticWebAppUser -Role 'contributor'
 ```
@@ -62,12 +65,12 @@ Kind Name                             Type
      8bcf2cef5f3c4c8e9a58386d62bba7c3 Microsoft.Web/staticSites/users
 ```
 
-Perintah ini memperbarui entri pengguna dengan peran yang tercantum menurut saluran.
+Perintah ini memperbarui entri pengguna dengan peran yang tercantum menurut alur.
 
 ## PARAMETERS
 
 ### -AuthProvider
-Penyedia auth untuk pengguna ini.
+Penyedia autentikasi untuk pengguna ini.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis sumber daya.
 
 ```yaml
@@ -126,7 +129,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama situs statis.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
 
 ```yaml
 Type: System.String
@@ -202,8 +205,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -254,19 +257,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobHistoryId <String>]`: ID Riwayat.
-  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
-  - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+  - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
-  - `[WebJobName <String>]`: Nama Web Job.
+  - `[WebJobName <String>]`: Nama Pekerjaan Web.
 
 ## RELATED LINKS

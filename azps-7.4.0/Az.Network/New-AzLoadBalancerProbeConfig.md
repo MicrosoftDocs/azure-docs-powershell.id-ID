@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 5fc4273b0506f6cf3a02abdc99b44ca4cfe80a19
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 913386d2b768c33662b86089d3bf071788183b4a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695072"
 ---
 # New-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Membuat konfigurasi probe untuk load balancer.
+Menambahkan konfigurasi probe ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,21 +30,21 @@ New-AzLoadBalancerProbeConfig -Name <String> [-Protocol <String>] -Port <Int32> 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerProbeConfig** membuat konfigurasi probe untuk load balancer Azure.
+Cmdlet **New-AzLoadBalancerProbeConfig** membuat konfigurasi pemeriksaan untuk penyeimbang beban Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi probe
+### Contoh 1: Membuat konfigurasi pemeriksaan
 ```powershell
 New-AzLoadBalancerProbeConfig -Name "MyProbe" -Protocol "http" -Port 80 -IntervalInSeconds 15 -ProbeCount 15
 ```
 
 Perintah ini membuat konfigurasi pemeriksaan bernama MyProbe menggunakan protokol HTTP.
-Probe baru akan tersambung ke layanan load-balanced pada port 80.
+Pemeriksaan baru akan terhubung ke layanan dengan beban seimbang pada port 80.
 
 ### Contoh 2
 
-Membuat konfigurasi probe untuk load balancer. (autogenerasi)
+Menambahkan konfigurasi probe ke load balancer. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Menentukan interval, dalam detik, antara probe untuk setiap instans layanan yang seimbang beban.
+Menentukan interval, dalam detik, antara pemeriksaan ke setiap instans layanan yang seimbang.
 
 ```yaml
 Type: System.Int32
@@ -80,7 +83,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi probe yang akan dibuat.
 
 ```yaml
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port tempat probe baru harus tersambung ke layanan load-balanced.
+Menentukan port tempat probe baru harus tersambung ke layanan yang seimbang.
 
 ```yaml
 Type: System.Int32
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProbeCount
-Menentukan jumlah kegagalan berturut-turut per instans yang dianggap tidak sehat.
+Menentukan jumlah kegagalan berturut-turut per instans untuk instans yang dianggap tidak sehat.
 
 ```yaml
 Type: System.Int32
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang digunakan untuk konfigurasi probe.
+Menentukan protokol yang akan digunakan untuk konfigurasi pemeriksaan.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Http.
 
 ```yaml
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestPath
-Menentukan jalur dalam layanan seimbang-muat untuk melakukan pemeriksaan untuk menentukan kesehatan.
+Menentukan jalur dalam layanan dengan beban seimbang untuk pemeriksaan untuk menentukan kesehatan.
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,9 +206,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzLoadBalancerProbeConfig](./Add-AzLoadBalancerProbeConfig.md)
+[Tambahkan-AzLoadBalancerProbeConfig](./Add-AzLoadBalancerProbeConfig.md)
 
-[Get-AzLoadBalancerProbeConfig](./Get-AzLoadBalancerProbeConfig.md)
+[Dapatkan-AzLoadBalancerProbeConfig](./Get-AzLoadBalancerProbeConfig.md)
 
 [Remove-AzLoadBalancerProbeConfig](./Remove-AzLoadBalancerProbeConfig.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyNetworkRule.md
-ms.openlocfilehash: 5ed4a6c1c395c405d1b7ab3ff06023747531c28d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6fc3b721e0d37aa796450718c397d92efabb10e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996769"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675610"
 ---
-# New-AzFirewallPolicyNetworkRule
+# Baru-AzFirewallPolicyNetworkRule
 
 ## SYNOPSIS
 Membuat Aturan Jaringan Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicynetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **New-AzFirewallPolicyNetworkRule** membuat aturan Jaringan untuk Kebijak
 New-AzFirewallPolicyNetworkRule -Name NRC1 -Protocol "TCP" -SourceAddress "192.168.0.0/16" -DestinationAddress * -DestinationPort *
 ```
 
-Contoh ini membuat aturan jaringan dengan alamat sumber, protokol, alamat tujuan dan port tujuan
+Contoh ini membuat aturan jaringan dengan alamat sumber, protokol, alamat tujuan, dan port tujuan
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Penjabaran dari aturan
+Deskripsi aturan
 
 ```yaml
 Type: String
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Aturan Jaringan
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceIpGroup
-Ipgroups sumber aturan
+Ipgroup sumber aturan
 
 ```yaml
 Type: String[]
@@ -191,8 +194,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -223,11 +226,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

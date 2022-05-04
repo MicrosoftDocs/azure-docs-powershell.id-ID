@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryManifest.md
-ms.openlocfilehash: 1387312e5c9fa64c276c23dada363bd715e97ba2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: be4dfb65912e7ab8859ec582e48b5b2f4de9b1b4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686412"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682518"
 ---
 # Remove-AzContainerRegistryManifest
 
 ## SYNOPSIS
-Hapus manifes ACR. 
+Menghapus manifes ACR. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/remove-azcontainerregistrymanifest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Remove-AzContainerRegistryManifest -RepositoryName <String> -Tag <String> -Regis
 ```
 
 ## DESCRIPTION
-Hapus manifes ACR.
-Untuk menggunakan cmdlet ini silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -DeleteEnable $true`
+Menghapus manifes ACR.
+Untuk menggunakan cmdlet ini, silakan jalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -DeleteEnable $true`
 Pertama.
 
 ## EXAMPLES
@@ -47,7 +50,7 @@ Remove-AzContainerRegistryManifest -RegistryName registry -RepositoryName test/b
 True
 ```
 
-Hapus manifes sha256:31a54a0cf86d735478a8265f60ae6acb4b348a67efbcf7c1007dd3cf7af05ab untuk uji repository/busybox27 di bawah registri
+Hapus manifes sha256:31a54a0cf86d7354788a8265f60ae6acb4b348a67efbcf7c1007dd3cf7af05ab untuk uji repositori/kotak sibuk27 di bawah registri
 
 ### Contoh 2
 ```powershell
@@ -58,7 +61,7 @@ Remove-AzContainerRegistryManifest -RegistryName registry -RepositoryName test/b
 True
 ```
 
-Hapus manifes dengan tag terbaru untuk uji repository/busybox27 di bawah registri
+Hapus manifes dengan tag terbaru untuk uji repositori/kotak sibuk27 di bawah registri
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Manifest
+### -Manifes
 Referensi manifes.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama Penyimpanan.
+Nama Repositori.
 
 ```yaml
 Type: System.String
@@ -137,8 +140,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

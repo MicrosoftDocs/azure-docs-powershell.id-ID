@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultKey.md
-ms.openlocfilehash: 5ee5e77cc407282f072f5705f776b8e13f656ff7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0c624695b4afa57af761cb6bd6722afc1c4c01a6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682790"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144701618"
 ---
 # Remove-AzKeyVaultKey
 
 ## SYNOPSIS
-Menghapus kunci dalam kubah kunci.
+Menghapus kunci dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,13 +42,13 @@ Remove-AzKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [-Force] [-PassT
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzKeyVaultKey menghapus kunci dalam kubah kunci.
-Jika kunci dihapus secara tidak sengaja, kunci dapat dipulihkan menggunakan Undo-AzKeyVaultKeyRemoval oleh pengguna dengan izin khusus 'pulihkan'.
+Cmdlet Remove-AzKeyVaultKey menghapus kunci dalam brankas kunci.
+Jika kunci dihapus secara tidak sengaja, kunci dapat dipulihkan menggunakan Undo-AzKeyVaultKeyRemoval oleh pengguna dengan izin 'pulihkan' khusus.
 Cmdlet ini memiliki nilai tinggi untuk properti **ConfirmImpact** .
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kunci dari kubah kunci
+### Contoh 1: Menghapus kunci dari brankas kunci
 ```powershell
 Remove-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -PassThru
 ```
@@ -65,31 +68,31 @@ Purge Disabled       : False
 Tags                 :
 ```
 
-Perintah ini menghapus kunci bernama ITSoftware dari kubah kunci bernama Contoso.
+Perintah ini menghapus kunci bernama ITSoftware dari brankas kunci bernama Contoso.
 
 ### Contoh 2: Menghapus kunci tanpa konfirmasi pengguna
 ```powershell
 Remove-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -Force
 ```
 
-Perintah ini menghapus kunci bernama ITSoftware dari kubah kunci bernama Contoso.
-Perintah menentukan parameter *Paksa* , dan oleh karena itu, cmdlet tidak meminta Anda untuk mengonfirmasi.
+Perintah ini menghapus kunci bernama ITSoftware dari brankas kunci bernama Contoso.
+Perintah menentukan parameter *Force* , dan, oleh karena itu, cmdlet tidak meminta Anda untuk konfirmasi.
 
-### Contoh 3: Membersihkan kunci yang dihapus dari kubah kunci secara permanen
+### Contoh 3: Hapus menyeluruh kunci yang dihapus dari brankas kunci secara permanen
 ```powershell
 Remove-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -InRemovedState
 ```
 
-Perintah ini menghapus kunci bernama ITSoftware dari kubah kunci bernama Contoso secara permanen.
-Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus telah diberikan secara eksplisit dan sebelumnya kepada pengguna untuk kubah kunci ini.
+Perintah ini menghapus kunci bernama ITSoftware dari brankas kunci bernama Contoso secara permanen.
+Menjalankan cmdlet ini memerlukan izin 'hapus menyeluruh', yang harus diberikan sebelumnya dan secara eksplisit kepada pengguna untuk brankas kunci ini.
 
-### Contoh 4: Hapus tombol dengan menggunakan operator pipeline
+### Contoh 4: Menghapus kunci dengan menggunakan operator alur
 ```powershell
 Get-AzKeyVaultKey -VaultName 'Contoso' | Where-Object {$_.Attributes.Enabled -eq $False} | Remove-AzKeyVaultKey
 ```
 
-Perintah ini mendapatkan semua kunci di kubah kunci bernama Contoso, dan meneruskannya ke cmdlet **Where-Object** menggunakan operator pipeline.
-Cmdlet tersebut melewati kunci yang memiliki nilai $False untuk atribut **Enabled** ke cmdlet saat ini.
+Perintah ini mendapatkan semua kunci di brankas kunci bernama Contoso, dan meneruskannya ke cmdlet **Where-Object** dengan menggunakan operator alur.
+Cmdlet tersebut meneruskan kunci yang memiliki nilai $False untuk atribut **Diaktifkan** ke cmdlet saat ini.
 Cmdlet itu menghapus kunci tersebut.
 
 ## PARAMETERS
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmName
-Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang dipilih saat ini.
+Nama HSM. Cmdlet membangun FQDN dari HSM terkelola berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -169,9 +172,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama kunci yang akan dihapus.
-Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) kunci berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
+Cmdlet ini membangun nama domain yang sepenuhnya memenuhi syarat (FQDN) dari kunci berdasarkan nama yang ditentukan parameter ini, nama brankas kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -202,8 +205,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci untuk menghapus kunci.
-Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama brankas kunci untuk menghapus kunci.
+Cmdlet ini membangun FQDN dari brankas kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -217,8 +220,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,8 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
+Cmdlet tidak dijalankan. Menunjukkan apa yang akan terjadi jika cmdlet berjalan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

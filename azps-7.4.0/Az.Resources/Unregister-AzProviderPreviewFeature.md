@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/unregi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Unregister-AzProviderPreviewFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Unregister-AzProviderPreviewFeature.md
-ms.openlocfilehash: 8c98a800bdf86e53297b1c5df833c0e891128dc5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b6b268e6ac18394982caee0716afd40702ad5da3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143223281"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144727090"
 ---
 # Unregister-AzProviderPreviewFeature
 
 ## SYNOPSIS
 Menghapus pendaftaran fitur dari akun Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/unregister-azproviderpreviewfeature) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **Unregister-AzProviderPreviewFeature** menghapus pendaftaran fitur dari 
 Unregister-AzProviderPreviewFeature -FeatureName AllowApplicationSecurityGroups -ProviderNamespace Microsoft.Network
 ```
 
-Tindakan ini akan menghapus fitur AllowApplicationSecurityGroups untuk Microsoft.Network dari akun Anda.
+Ini menghapus fitur AllowApplicationSecurityGroups untuk Microsoft.Network dari akun Anda.
 
 ## PARAMETERS
 
@@ -53,7 +56,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama fitur.
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderNamespace
-Ruang nama penyedia sumber daya.
+Namespace layanan penyedia sumber daya.
 
 ```yaml
 Type: System.String
@@ -98,8 +101,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

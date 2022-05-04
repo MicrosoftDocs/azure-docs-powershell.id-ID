@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: 8f5e41dbc70a58e05ba137e25cc73360c005bbe1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb559706b7bc157efd334d9872b2b0d63b505368
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943147"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694066"
 ---
 # Update-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
-Memperbarui Graph CosmosDB Gremlin. Melakukan operasi patch sisi klien dengan membaca Graph yang sudah ada.
+Memperbarui Graph CosmosDB Gremlin. Melakukan operasi patch sisi klien dengan membaca Graph yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbgremlingraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Update-AzCosmosDBGremlinGraph [-Name <String>] [-IndexingPolicy <PSIndexingPolic
 ```
 
 ## DESCRIPTION
-Memperbarui Graph CosmosDB Gremlin. Melakukan operasi patch sisi klien dengan membaca Graph yang sudah ada.
+Memperbarui Graph CosmosDB Gremlin. Melakukan operasi patch sisi klien dengan membaca Graph yang ada.
 
 ## EXAMPLES
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicy
-ConflictResolutionPolicy Object tipe PSConflictResolutionPolicy, ketika disediakan ini diatur sebagai ConflictResolutionPolicy kontainer.
+Objek ConflictResolutionPolicy jenis PSConflictResolutionPolicy, ketika disediakan ini ditetapkan sebagai ConflictResolutionPolicy kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSConflictResolutionPolicy
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyMode
-Dapat memiliki nilai: LastWriterWins, Kustom, Manual.
+Dapat memiliki nilai: LastWriterWins, Custom, Manual.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyPath
-Untuk disediakan ketika tipenya adalah LastWriterWins.
+Untuk disediakan ketika jenisnya adalah LastWriterWins.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyProcedure
-Untuk disediakan saat tipenya adalah kustom.
+Untuk disediakan ketika jenisnya adalah kustom.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -IndexingPolicy
-Objek Kebijakan Pengindeksan tipe Microsoft.Azure.Commands.CosmosDB.PSIndexingPolicy.
+Objek Kebijakan Pengindeksan jenis Microsoft.Azure.Commands.CosmosDB.PSIndexingPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSIndexingPolicy
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Gremlin Graph objek.
+Objek Graph Gremlin.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetResults
@@ -222,8 +225,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Gremlin Graph Nama.
+### -Name
+Nama Graph Gremlin.
 
 ```yaml
 Type: System.String
@@ -253,8 +256,8 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyKind
-Jenis algoritma yang digunakan untuk partisi.
-Nilai yang memungkinkan termasuk: 'Hash', 'Rentang'
+Jenis algoritma yang digunakan untuk pemartisian.
+Nilai yang mungkin termasuk: 'Hash', 'Range'
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyPath
-Jalur Kunci Partisi, mis., '/address/zipcode'.
+Jalur Kunci Partisi, misalnya, '/address/zipcode'.
 
 ```yaml
 Type: System.String[]
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput gremlin Graph (RU/s).
+Throughput gremlin Graph (RU/dtk).
 Nilai defaultnya adalah 400.
 
 ```yaml
@@ -330,8 +333,8 @@ Accept wildcard characters: False
 ```
 
 ### -TtlInSeconds
-Ttl default dalam detik.
-Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
+Ttl default dalam hitungan detik.
+Jika nilai hilang atau diatur ke - 1, item tidak kedaluwarsa.
 Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml
@@ -347,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueKeyPolicy
-Objek UniqueKeyPolicy tipe Microsoft.Azure.Commands.CosmosDB.PSUniqueKeyPolicy.
+Objek UniqueKeyPolicy jenis Microsoft.Azure.Commands.CosmosDB.PSUniqueKeyPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSUniqueKeyPolicy
@@ -361,8 +364,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -393,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

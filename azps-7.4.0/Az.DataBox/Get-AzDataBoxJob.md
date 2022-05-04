@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJob.md
-ms.openlocfilehash: 00e0a575c2320a46087e4509c24d47f87875c14d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6f2a637c5f0dbc8e37f5633bb8f65c66f819c08f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875520"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625885"
 ---
 # Get-AzDataBoxJob
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pekerjaan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/get-azdataboxjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDataBoxJob [-SubscriptionId <String[]>] [-SkipToken <String>] [-DefaultPro
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDataBoxJob -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Expand <String>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -55,7 +58,7 @@ Powershell10 WestUS   DeviceOrdered ImportToAzure DataBox None         NonSchedu
 
 Mendapatkan pekerjaan tertentu
 
-### Contoh 2: Daftar semua pekerjaan di bawah langganan 
+### Contoh 2: Mencantumkan semua pekerjaan di bawah langganan 
 ```powershell
 Get-AzDataBoxJob -SubscriptionId "SubscriptionId"
 ```
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-$expand didukung pada parameter detail untuk pekerjaan, yang menyediakan detail tentang tahapan pekerjaan.
+$expand didukung pada parameter detail untuk pekerjaan, yang memberikan detail tentang tahap pekerjaan.
 
 ```yaml
 Type: System.String
@@ -116,9 +119,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+panjang nama pekerjaan harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-$skipToken didukung di Dapatkan daftar pekerjaan, yang menyediakan halaman berikutnya dalam daftar pekerjaan.
+$skipToken didukung pada Dapatkan daftar pekerjaan, yang menyediakan halaman berikutnya dalam daftar pekerjaan.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

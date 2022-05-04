@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeployment.md
-ms.openlocfilehash: dc2ff58135334c4ef2a56a7fa5a9f9aae1c48984
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 45e4f9205d70d6921bab6d916e4b03aec7576465
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143227097"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692374"
 ---
 # Add-AzIotHubDeployment
 
 ## SYNOPSIS
 Tambahkan penyebaran IoT Edge dalam IoT Hub target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Add-AzIotHubDeployment [-ResourceId] <String> -Name <String> [-ModulesContent <H
 
 ## DESCRIPTION
 Penyebaran Edge dapat dibuat dengan metrik yang ditentukan pengguna untuk evaluasi sesuai permintaan.
-Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring untuk informasi selengkapnya.
+Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -51,14 +54,14 @@ Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring unt
 Add-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "deploy1"
 ```
 
-Buat penyebaran Edge dengan metadata default.
+Buat penyebaran Azure Stack Edge dengan metadata default.
 
 ### Contoh 2
 ```powershell
 Add-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "deploy1" -Priority 3 -TargetCondition "tags.building=9 and tags.environment='test'"
 ```
 
-Buat penyebaran Edge dengan prioritas 3 yang berlaku pada kondisi saat perangkat ditandai dalam pembuatan 9 dan lingkungan 'uji'.
+Buat penyebaran Edge dengan prioritas 3 yang berlaku pada kondisi saat perangkat ditandai dalam bangunan 9 dan lingkungannya adalah 'uji'.
 
 ### Contoh 2
 ```powershell
@@ -67,7 +70,7 @@ $metrics.add("query1", "select deviceId from devices where tags.location='US'")
 Add-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "deploy1" -Metric $metrics
 ```
 
-Buat penyebaran Edge dengan metrik pengguna.
+Membuat penyebaran Azure Stack Edge dengan metrik pengguna.
 
 ### Contoh 3
 ```powershell
@@ -77,7 +80,7 @@ $labels.add("key1","value1")
 Add-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "deploy1" -Label $labels
 ```
 
-Buat penyebaran Edge dengan label.
+Buat penyebaran Azure Stack Edge dengan label.
 
 ### Contoh 4
 ```powershell
@@ -85,7 +88,7 @@ $content = Get-Content "C:/Edge/modules.json" | ConvertFrom-Json -AsHashtable
 Add-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "deploy1" -ModulesContent $content -TargetCondition "from devices.modules where tags.environment='test'"
 ```
 
-Buat penyebaran Edge dengan konten.
+Membuat penyebaran Azure Stack Edge dengan konten.
 
 ## PARAMETERS
 
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Peta label yang akan diterapkan ke penempatan target.
+Peta label yang akan diterapkan ke penyebaran target.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -179,7 +182,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Pengidentifikasi untuk penyebaran.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Berat penyebaran dalam kasus aturan bersaing (kemenangan tertinggi).
+Bobot penyebaran jika terjadi aturan yang bersaing (kemenangan tertinggi).
 
 ```yaml
 Type: System.Int32
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCondition
-Kondisi target tempat penerapan Edge diterapkan.
+Kondisi target tempat penyebaran Edge berlaku.
 
 ```yaml
 Type: System.String
@@ -254,8 +257,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

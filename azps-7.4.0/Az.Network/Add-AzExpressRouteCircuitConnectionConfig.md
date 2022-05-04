@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCircuitConnectionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCircuitConnectionConfig.md
-ms.openlocfilehash: a34f8a8f873bd037acf282a3d47ff5ea0b9a72e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6fd5001fcafd19429cf78f4ec0e645d182d438ed
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744480"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729541"
 ---
 # Add-AzExpressRouteCircuitConnectionConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi koneksi sirkuit ke Private Peering dari Express Route Circuit. 
+Menambahkan konfigurasi koneksi sirkuit ke Peering Privat Sirkuit Rute Ekspres. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azexpressroutecircuitconnectionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Add-AzExpressRouteCircuitConnectionConfig [-Name] <String> [-ExpressRouteCircuit
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzExpressRouteCircuitConnectionConfig** menambahkan konfigurasi koneksi sirkuit ke peering pribadi untuk sirkuit ExpressRoute. Hal ini memungkinkan peering dua Express Route Circuits lintas kawasan atau langganan. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCircuitConnectionConfig**, Anda harus memanggil cmdlet Set-AzExpressRouteCircuit untuk mengaktifkan konfigurasi.
+Cmdlet **Add-AzExpressRouteCircuitConnectionConfig** menambahkan konfigurasi koneksi sirkuit ke peering privat untuk sirkuit ExpressRoute. Ini memungkinkan peering dua Sirkuit Rute Ekspres di seluruh wilayah atau langganan. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCircuitConnectionConfig**, Anda harus memanggil cmdlet Set-AzExpressRouteCircuit untuk mengaktifkan konfigurasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan sumber daya koneksi sirkuit ke sirkuit ExpressRoute yang sudah ada
+### Contoh 1: Menambahkan sumber daya koneksi sirkuit ke sirkuit ExpressRoute yang ada
 ```powershell
 $circuit_init = Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg
 $circuit_peer = Get-AzExpressRouteCircuit -Name $peeringCircuitName -ResourceGroupName $rg
@@ -49,7 +52,7 @@ Add-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName -ExpressR
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $circuit_init
 ```
 
-### Contoh 2: Menambahkan konfigurasi koneksi sirkuit menggunakan Piping ke Sirkuit ExpressRoute yang sudah ada
+### Contoh 2: Menambahkan konfigurasi koneksi sirkuit menggunakan Piping ke Sirkuit ExpressRoute yang ada
 ```powershell
 $circuit_peer = Get-AzExpressRouteCircuit -Name $peeringCircuitName -ResourceGroupName $rg
 $addressSpace = '60.0.0.0/29'
@@ -59,8 +62,8 @@ Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Ad
 ## PARAMETERS
 
 ### -AddressPrefix
-Minimal /29 ruang alamat pelanggan untuk membuat terowongan VxLan antara Express Route Circuits untuk terowongan IPv4.
-atau minimal /125 ruang alamat pelanggan untuk membuat terowongan VxLan antara Express Route Circuits untuk terowongan IPv6.
+Ruang alamat pelanggan minimum /29 untuk membuat terowongan VxLan antara Sirkuit Rute Ekspres untuk terowongan IPv4.
+atau minimal /125 ruang alamat pelanggan untuk membuat terowongan VxLan antara Sirkuit Rute Ekspres untuk terowongan IPv6.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationKey
-Otorisasi Key to peer Express Route Circuit dalam langganan lain. Otorisasi pada sirkuit rekan dapat dibuat menggunakan perintah yang sudah ada.
+Kunci Otorisasi ke Sirkuit Rute Ekspres peer di langganan lain. Otorisasi pada sirkuit serekan dapat dibuat menggunakan perintah yang ada.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya koneksi sirkuit yang akan ditambahkan.
 
 ```yaml
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerExpressRouteCircuitPeering
-Id Sumber Daya untuk Private Peering dari sirkuit jarak jauh yang akan diintip dengan sirkuit saat ini.
+Id Sumber Daya untuk Peering Privat sirkuit jarak jauh yang akan di-peering dengan sirkuit saat ini.
 
 ```yaml
 Type: System.String
@@ -164,8 +167,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
