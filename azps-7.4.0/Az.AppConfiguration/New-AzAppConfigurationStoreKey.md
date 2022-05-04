@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStoreKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStoreKey.md
-ms.openlocfilehash: 8925843a758092add01bf960b3511cfeddabbfad
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fd5634269ef81c9dba8e5f7a149d8ebfe9badaaf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751644"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629939"
 ---
 # New-AzAppConfigurationStoreKey
 
 ## SYNOPSIS
-Meregenerasi kunci akses untuk penyimpanan konfigurasi tertentu.
+Meregenerasi kunci akses untuk penyimpanan konfigurasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstorekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzAppConfigurationStoreKey -InputObject <IAppConfigurationIdentity> -Id <Str
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci akses untuk penyimpanan konfigurasi tertentu.
+Meregenerasi kunci akses untuk penyimpanan konfigurasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kunci untuk regenerasi.
+Id kunci yang akan diregenerasi.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama penyimpanan konfigurasi.
 
 ```yaml
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -210,7 +213,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
-  - `[GroupName <String>]`: Nama grup sumber daya tautan pribadi.
+  - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat registri kontainer berada.

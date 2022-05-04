@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchApplication.md
-ms.openlocfilehash: 983ee8904777d40429349ce4f5da22d009af4af0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a9c82180adad86a913812798960bc5ce74307b92
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750528"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144614714"
 ---
 # Set-AzBatchApplication
 
 ## SYNOPSIS
-Pengaturan pembaruan untuk aplikasi yang ditentukan.
+Memperbarui pengaturan untuk aplikasi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/set-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Set-AzBatchApplication [-AccountName] <String> [-ResourceGroupName] <String> [-A
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzBatchApplication** mengubah pengaturan untuk aplikasi Azure Batch yang ditentukan.
+Cmdlet **Set-AzBatchApplication** memodifikasi pengaturan untuk aplikasi Azure Batch yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui aplikasi dalam akun Batch
+### Contoh 1: Memperbarui aplikasi di akun Batch
 ```powershell
 Set-AzBatchApplication -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationName "Litware" -AllowUpdates $False
 ```
@@ -41,7 +44,7 @@ Perintah tidak mengubah versi default atau nama tampilan aplikasi.
 
 ### Contoh 2
 
-Pengaturan pembaruan untuk aplikasi yang ditentukan. (autogenerasi)
+Memperbarui pengaturan untuk aplikasi yang ditentukan. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -51,7 +54,7 @@ Set-AzBatchApplication -AccountName 'ContosoBatch' -ApplicationName 'Litware' -D
 ## PARAMETERS
 
 ### -AccountName
-Menentukan nama akun Batch tempat cmdlet ini mengubah aplikasi.
+Menentukan nama akun Batch yang cmdlet ini memodifikasi aplikasi.
 
 ```yaml
 Type: System.String
@@ -156,13 +159,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -172,15 +175,15 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
+[Get-AzBatchApplication](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchAplikasi](./New-AzBatchApplication.md)
+[New-AzBatchApplication](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
+[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 

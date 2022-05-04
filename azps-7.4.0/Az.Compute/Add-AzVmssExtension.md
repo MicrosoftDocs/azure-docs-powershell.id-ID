@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssExtension.md
-ms.openlocfilehash: 2bf80f033923018aa7fee9276210f81d5f51166b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb85b9ffbdbc3fde3223a97bd89a88a871e90f88
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687384"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633464"
 ---
-# Add-AzVmssExtension
+# Tambahkan-EkstensiAzVmss
 
 ## SYNOPSIS
 Menambahkan ekstensi ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Add-AzVmssExtension [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssExtension** menambahkan ekstensi ke Kumpulan Skala Mesin Virtual (VMSS).
+Cmdlet **Add-AzVmssExtension** menambahkan ekstensi ke Virtual Machine Scale Set (VMSS).
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Add-AzVmssExtension -VirtualMachineScaleSet $VMSS -Name $ExtName -Publisher $Pub
 
 Perintah ini menambahkan ekstensi ke VMSS.
 
-### Contoh 2: Menambahkan ekstensi ke VMSS dengan pengaturan dan pengaturan yang diproteksi
+### Contoh 2: Menambahkan ekstensi ke VMSS dengan pengaturan dan pengaturan yang dilindungi
 ```powershell
 $Settings = @{"fileUris" = "[]"; "commandToExecute" = ""};
 $ProtectedSettings = @{"storageAccountName" = $stoname; "storageAccountKey" = $stokey};
@@ -50,7 +53,7 @@ Add-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $vmssExtensionName -Publ
   -Setting $Settings -ProtectedSetting $ProtectedSettings
 ```
 
-### Contoh 3: Menambahkan ekstensi ke VMSS dengan pengaturan dan pengaturan yang diproteksi
+### Contoh 3: Menambahkan ekstensi ke VMSS dengan pengaturan dan pengaturan yang dilindungi
 ```powershell
 $BatchFile = "runbook.sh"
 $ResourceGroupName = "HelloRG"
@@ -87,7 +90,7 @@ Update-AzVmss `
     -VirtualMachineScaleSet $vmss
 ```
 
-Perintah ini menambahkan ekstensi ke VMSS dengan sampel skrip bash pada penyimpanan blob, menentukan url penyimpanan blob dan perintah yang dapat dijalankan dalam pengaturan dan akses keamanan dalam pengaturan yang diproteksi. 
+Perintah ini menambahkan ekstensi ke VMSS dengan contoh skrip bash pada penyimpanan blob, menentukan url penyimpanan blob dan perintah yang dapat dieksekusi di pengaturan dan akses keamanan dalam pengaturan yang dilindungi. 
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticUpgrade
-Menunjukkan apakah ekstensi harus dimutakhirkan secara otomatis oleh platform jika ada versi ekstensi yang lebih baru yang tersedia.
+Menunjukkan apakah ekstensi harus ditingkatkan secara otomatis oleh platform jika ada versi ekstensi yang lebih baru yang tersedia.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdateTag
-Jika nilai disediakan dan berbeda dari nilai sebelumnya, penanganan ekstensi akan dipaksa untuk diperbarui meskipun konfigurasi ekstensi belum berubah.
+Jika nilai disediakan dan berbeda dari nilai sebelumnya, handler ekstensi akan dipaksa untuk memperbarui meskipun konfigurasi ekstensi belum berubah.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi yang ditambahkan cmdlet ini.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisionAfterExtension
-Pengumpulan nama ekstensi yang perlu disediakan ekstensi ini.
+Kumpulan nama ekstensi setelah itu ekstensi ini perlu disediakan.
 
 ```yaml
 Type: System.String[]
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan nama penerbit ekstensi.
-Penerbit menyediakan nama ketika penerbit mendaftarkan ekstensi.
+Penerbit memberikan nama saat penerbit mendaftarkan ekstensi.
 Ini dapat menggunakan cmdlet [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md) untuk mendapatkan penerbit.
 
 ```yaml
@@ -230,9 +233,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe ekstensi.
-Anda dapat menggunakan cmdlet [Get-AzVMExtensionImageType](./Get-AzVMExtensionImageType.md) untuk mendapatkan tipe ekstensi.
+### -Type
+Menentukan jenis ekstensi.
+Anda dapat menggunakan cmdlet [Get-AzVMExtensionImageType](./Get-AzVMExtensionImageType.md) untuk mendapatkan jenis ekstensi.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
+Menentukan versi ekstensi yang akan digunakan untuk komputer virtual ini.
 Anda dapat menggunakan cmdlet [Get-AzVMExtensionImage](./Get-AzVMExtensionImage.md) untuk mendapatkan versi ekstensi.
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 
 ### -VirtualMachineScaleSet
 Tentukan objek VMSS.
-Anda dapat menggunakan [New-AzVmsConfig](./New-AzVmssConfig.md) untuk membuat objek.
+Anda dapat menggunakan [New-AzVmssConfig](./New-AzVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -278,8 +281,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

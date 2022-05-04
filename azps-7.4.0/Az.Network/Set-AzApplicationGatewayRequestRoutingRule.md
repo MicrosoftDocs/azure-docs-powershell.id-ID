@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: 21519467455f821001d6120b87a39955939af5d3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dc3e4b9f6bd1217195ce68839caee1412e274802
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804528"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673198"
 ---
 # Set-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
-Mengubah aturan perutean permintaan untuk gateway aplikasi.
+Memodifikasi aturan perutean permintaan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayrequestroutingrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzApplicationGatewayRequestRoutingRule -ApplicationGateway <PSApplicationGat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayRequestRoutingRule** mengubah aturan perutean permintaan.
+Cmdlet **Set-AzApplicationGatewayRequestRoutingRule** memodifikasi aturan perutean permintaan.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ $AppGw = Set-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw -
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mengubah aturan perutean permintaan untuk gateway aplikasi agar menggunakan pengaturan HTTP ujung-belakang yang ditentukan dalam variabel $Setting, pendengar HTTP yang ditentukan dalam variabel $Listener, dan kumpulan alamat ujung-belakang yang ditentukan dalam variabel $Pool.
+Perintah kedua memodifikasi aturan perutean permintaan untuk gateway aplikasi untuk menggunakan pengaturan HTTP back-end yang ditentukan dalam variabel $Setting, pendengar HTTP yang ditentukan dalam variabel $Listener, dan kumpulan alamat back-end yang ditentukan dalam variabel $Pool.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPool
-Menentukan kumpulan alamat ujung-belakang gateway aplikasi.
+Menentukan kumpulan alamat back-end gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettings
-Menentukan pengaturan HTTP backend gateway aplikasi.
+Menentukan pengaturan HTTP ujung belakang gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHttpSettingsId
-Menentukan ID pengaturan HTTP ujung-belakang gateway aplikasi.
+Menentukan ID pengaturan HTTP ujung belakang gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpListener
-Menentukan pendengar HTTP gateway aplikasi.
+Menentukan listener HTTP gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayHttpListener
@@ -175,7 +178,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan perutean permintaan yang diubah cmdlet ini.
 
 ```yaml
@@ -206,8 +209,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfigurasi Ulang
-Konfigurasi Ulang gateway aplikasi
+### -RedirectConfiguration
+Konfigurasi Ulang Gateway Aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRedirectConfiguration
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID konfigurasi ulang gateway aplikasi
+ID redirectConfiguration gateway aplikasi
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -RewriteRuleSet
-Gateway aplikasi RewriteRuleSet
+RewriteRuleSet gateway aplikasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRuleSet
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleType
-Menentukan tipe aturan perutean permintaan.
+Menentukan jenis aturan perutean permintaan.
 
 ```yaml
 Type: System.String
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

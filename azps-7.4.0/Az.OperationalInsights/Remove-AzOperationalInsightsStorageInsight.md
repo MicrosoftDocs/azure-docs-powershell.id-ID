@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 2423562179ccf066a82139fae65b01bc4ccc8f2b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f466cf6764e18fc8000d1ec1fc8f62a94a68ba3e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675864"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671326"
 ---
 # Remove-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
-Menghapus Wawasan Storage.
+Menghapus Storage Insight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,15 +40,15 @@ Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus wawasan Storage 
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Storage Insight menurut nama
+### Contoh 1: Menghapus wawasan Storage berdasarkan nama
 ```powershell
 Remove-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight"
 ```
 
-Perintah ini menghapus Storage Insight bernama MyStorageInsight dari ruang kerja bernama MyWorkspace dalam grup sumber daya tertentu.
-Perintah tidak menentukan parameter *Paksa*, sehingga perintah meminta konfirmasi sebelum menghapus Storage Insight.
+Perintah ini menghapus Storage Insight bernama MyStorageInsight dari ruang kerja bernama MyWorkspace di grup sumber daya yang ditentukan.
+Perintah tidak menentukan parameter *Force*, sehingga meminta Konfirmasi sebelum menghapus Storage Insight.
 
-### Contoh 2: Menghapus Storage Insight tanpa konfirmasi
+### Contoh 2: Menghapus wawasan Storage tanpa konfirmasi
 ```powershell
 $Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -86,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama Storage Insight.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Ruang Kerja
+### -Ruang kerja
 Menentukan ruang kerja yang berisi Storage Insight.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Menentukan nama ruang kerja yang berisi Storage Insight.
 
 ```yaml
@@ -146,8 +149,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

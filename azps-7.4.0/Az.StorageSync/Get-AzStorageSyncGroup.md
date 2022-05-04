@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncGroup.md
-ms.openlocfilehash: 84dff8f7d2882d8998f85eefbd1b8049d88e80e2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 870337585c41636df34eca71038fc678abbf267c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864018"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144670786"
 ---
 # Get-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzStorageSyncGroup [-ParentResourceId] <String> [-Name <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu. Opsi ini juga dapat digunakan untuk mencantumkan atribut setiap grup sinkronisasi.
+Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu. Ini dapat digunakan untuk juga mencantumkan atribut dari setiap grup sinkronisasi.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi pen
 Get-AzStorageSyncGroup New-AzStorageSyncCloudEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName"
 ```
 
-Perintah ini mendapatkan semua grup sinkronisasi yang terdapat dalam layanan sinkronisasi penyimpanan tertentu. Tentukan -Name untuk mengembalikan nama tertentu.
+Perintah ini mendapatkan semua grup sinkronisasi yang terkandung dalam layanan sinkronisasi penyimpanan yang ditentukan. Tentukan -Name untuk mengembalikan yang spesifik.
 
 ## PARAMETERS
 
@@ -66,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama GrupSinkronkan.
+### -Name
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSStorageSyncService
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssVMRunCommand.md
-ms.openlocfilehash: f084c46b059e1c410ce4b9781b7d4324cbd3605b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 163d2a6d1ea59ea2da692d6f8d5e58c10717b27c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143230679"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660294"
 ---
 # Set-AzVmssVMRunCommand
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui perintah jalankan VMSS VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssvmruncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,12 +48,12 @@ Location Name  Type
 eastus   first Microsoft.Compute/virtualMachineScaleSets/virtualMachines/runCommands
 ```
 
-Tambahkan RunCommand ke Contoh VMSS.
+Tambahkan RunCommand ke Instans VMSS.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 
 ### -AsyncExecution
 Opsional.
-Jika diatur ke true, penyediaan akan selesai segera setelah skrip dimulai dan tidak akan menunggu skrip selesai.
+Jika diatur ke true, provisi akan selesai segera setelah skrip dimulai dan tidak akan menunggu skrip selesai.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorBlobUri
-Menentukan blob penyimpanan Azure tempat streaming kesalahan skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat aliran kesalahan skrip akan diunggah.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-ID instans mesin virtual.
+ID instans komputer virtual.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputBlobUri
-Menentukan blob penyimpanan Azure tempat streaming output skrip akan diunggah.
+Menentukan blob penyimpanan Azure tempat aliran output skrip akan diunggah.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 
 ### -Parameter
 Parameter yang digunakan oleh skrip.
-Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.Api20210701.IRunCommandInputParameter[]
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 
 ### -ProtectedParameter
 Parameter yang digunakan oleh skrip.
-Untuk membangun, lihat bagian CATATAN untuk properti PROTECTEDPARAMETER dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROTECTEDPARAMETER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.Api20210701.IRunCommandInputParameter[]
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsPassword
-Menentukan kata sandi akun pengguna pada VM ketika menjalankan perintah jalankan.
+Menentukan kata sandi akun pengguna pada VM saat menjalankan perintah jalankan.
 
 ```yaml
 Type: System.String
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunAsUser
-Menentukan akun pengguna pada VM ketika menjalankan perintah jalankan.
+Menentukan akun pengguna pada VM saat menjalankan perintah jalankan.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunCommandName
-Nama perintah jalankan mesin virtual.
+Nama perintah eksekusi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceCommandId
-Menentukan perintahId dari skrip bawaan yang sudah ditentukan sebelumnya.
+Menentukan commandId skrip bawaan yang telah ditentukan sebelumnya.
 
 ```yaml
 Type: System.String
@@ -308,8 +311,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeoutInSecond
-Waktu habis dalam detik untuk menjalankan perintah jalankan.
+Batas waktu dalam detik untuk menjalankan perintah jalankan.
 
 ```yaml
 Type: System.Int32
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Nama kumpulan skala VM.
+Nama set skala VM.
 
 ```yaml
 Type: System.String
@@ -368,8 +371,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -418,12 +421,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 PARAMETER <IRunCommandInputParameter[]>: Parameter yang digunakan oleh skrip.
-  - `Name <String>`: Nama parameter perintah jalankan.
-  - `Value <String>`: Nilai parameter perintah jalankan.
+  - `Name <String>`: Nama parameter perintah eksekusi.
+  - `Value <String>`: Nilai parameter perintah eksekusi.
 
 PROTECTEDPARAMETER <IRunCommandInputParameter[]>: Parameter yang digunakan oleh skrip.
-  - `Name <String>`: Nama parameter perintah jalankan.
-  - `Value <String>`: Nilai parameter perintah jalankan.
+  - `Name <String>`: Nama parameter perintah eksekusi.
+  - `Value <String>`: Nilai parameter perintah eksekusi.
 
 ## RELATED LINKS
 

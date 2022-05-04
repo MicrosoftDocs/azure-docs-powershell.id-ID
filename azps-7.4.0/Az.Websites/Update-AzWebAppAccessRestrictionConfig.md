@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppAccessRestrictionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppAccessRestrictionConfig.md
-ms.openlocfilehash: ea4860fc27c8b5e96b04bfd748fcf289103b0003
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cd98061fecc41659b9b76f1df0e20022621547de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992053"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144654212"
 ---
 # Update-AzWebAppAccessRestrictionConfig
 
 ## SYNOPSIS
-Memperbarui pewarisan konfigurasi Pemulihan Akses situs utama ke Situs SCM untuk Azure Web App.
+Memperbarui pewarisan konfigurasi Restiksi Akses situs Utama ke Situs SCM untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/update-azwebappaccessrestrictionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Cmdlet **Update-AzWebAppAccessRestrictionConfig** memperbarui konfigurasi Pembat
 
 ### Contoh 1: Memperbarui Situs SCM Aplikasi Web untuk menggunakan Pembatasan Akses dari Situs Utama
 
-Contoh berikut ini memperbarui Aplikasi Web bernama IpRule yang termasuk dalam grup sumber daya MyResourceGroup untuk menggunakan konfigurasi pembatasan akses situs utama di situs scm.
+Contoh berikut memperbarui Aplikasi Web bernama IpRule yang termasuk dalam grup sumber daya MyResourceGroup untuk menggunakan konfigurasi pembatasan akses situs utama di situs scm.
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -77,7 +80,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek konfigurasi batasan akses.
+Mengembalikan objek konfigurasi pembatasan akses.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScmSiteUseMainSiteRestrictionConfig
-Situs scm mewarisi aturan yang diatur di Situs utama.
+Situs Scm mewarisi aturan yang ditetapkan di situs Utama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

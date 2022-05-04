@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/disable-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
-ms.openlocfilehash: 1c47dd7ff82596c9a473a97bfbdbfae3add3dd54
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eb8214d98cddf094405029b0ce7a0d73a30db5a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812808"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611672"
 ---
 # Disable-AzAksAddOn
 
 ## SYNOPSIS
-Nonaktifkan add-on untuk ak.
+Nonaktifkan addon untuk aks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/disable-azaksaddon) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Disable-AzAksAddOn -ClusterObject <PSKubernetesCluster> [-Name <String[]>]
 ```
 
 ## DESCRIPTION
-Nonaktifkan add-on untuk ak.
+Nonaktifkan addon untuk aks.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Nonaktifkan add-on untuk ak.
 Get-AzAksCluster -ResourceGroupName group -Name myCluster | Disable-AzAksAddon -Name HttpApplicationRouting,Monitoring,AzurePolicy,VirtualNode,KubeDashboard
 ```
 
-Nonaktifkan add-on `HttpApplicationRouting`, `Monitoring`, `AzurePolicy`, `VirtualNode` dan `KubeDashboard` untuk ak.
+Nonaktifkan addons `HttpApplicationRouting`, `Monitoring`, `AzurePolicy`, `VirtualNode` dan `KubeDashboard` untuk aks.
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterObject
-Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
+Objek PSKubernetesCluster, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster terkelola Kubernetes.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -139,8 +142,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

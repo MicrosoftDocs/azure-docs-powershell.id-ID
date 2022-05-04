@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationPerformanceDataCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationPerformanceDataCollection.md
-ms.openlocfilehash: 6fee7ec3ca85be41fee875dbaa44edbcdab326f2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8cc5b015cb747c2170e920d156f3e158a8bc0932
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124857"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659538"
 ---
 # Get-AzDataMigrationPerformanceDataCollection
 
 ## SYNOPSIS
-Mengumpulkan data kinerja untuk instans SQL Server tertentu
+Mengumpulkan data performa untuk instans SQL Server yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationperformancedatacollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzDataMigrationPerformanceDataCollection -ConfigFilePath <String> [-PassThru
 ```
 
 ## DESCRIPTION
-Mengumpulkan data kinerja untuk instans SQL Server tertentu
+Mengumpulkan data performa untuk instans SQL Server yang diberikan
 
 ## EXAMPLES
 
-### Contoh 1: Jalankan Pengumpulan Data Kinerja pada SQL Server tertentu menggunakan string koneksi
+### Contoh 1: Jalankan Pengumpulan Data Performa pada SQL Server tertentu menggunakan string koneksi
 ```powershell
 PS C:\> Get-AzDataMigrationPerformanceDataCollection -SqlConnectionStrings "Data Source=AALAB03-2K8.REDMOND.CORP.MICROSOFT.COM;Initial Catalog=master;Integrated Security=False;User Id=dummyUserId;Password=dummyPassword" -NumberOfIterations 2
 
@@ -62,9 +65,9 @@ UTC 2022-02-03 07:07:16, Server AALAB03-2K8:
 Event and Error Logs Folder Path: C:\Users\vmanhas\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan Pengumpulan Data Kinerja pada SQL Server tertentu menggunakan string koneksi.
+Perintah ini menjalankan Pengumpulan Data Performa pada SQL Server tertentu menggunakan string koneksi.
 
-### Contoh 2: Jalankan Pengumpulan Data Kinerja pada SQL Server tertentu menggunakan file konfigurasi penilaian
+### Contoh 2: Jalankan Pengumpulan Data Performa pada SQL Server tertentu menggunakan file konfigurasi penilaian
 ```powershell
 PS C:\> Get-AzDataMigrationAssessment -ConfigFilePath "C:\Users\user\document\config.json"
 
@@ -90,7 +93,7 @@ UTC 2022-02-03 07:07:16, Server AALAB03-2K8:
 Event and Error Logs Folder Path: C:\Users\vmanhas\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan Pengumpulan Data Kinerja pada SQL Server tertentu menggunakan file konfigurasi.
+Perintah ini menjalankan Pengumpulan Data Performa pada SQL Server tertentu menggunakan file konfigurasi.
 
 ## PARAMETERS
 
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfIterations
-Jumlah perulangan pengumpulan data kinerja untuk dilakukan sebelum tetap ke file.
-Misalnya, dengan nilai default, data kinerja akan tetap ada setiap 30 detik * 20 perulangan = 10 menit.
+Jumlah perulangan pengumpulan data performa yang harus dilakukan sebelum bertahan ke file.
+Misalnya, dengan nilai default, data performa akan dipertahankan setiap 30 detik * 20 iterasi = 10 menit.
 (Default: 20, Minimum: 2)
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFolder
-Folder dari data dan hasil mana laporan akan ditulis/dibaca.
+Folder data dan laporan hasil mana yang akan ditulis ke/dibaca.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerfQueryInterval
-Interval di mana untuk membuat kueri data kinerja, dalam hitungan detik.
+Interval untuk mengkueri data performa, dalam hitungan detik.
 (Default: 30)
 
 ```yaml
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticQueryInterval
-Interval untuk membuat kueri dan data konfigurasi statis tetap, dalam hitungan detik.
+Interval untuk mengkueri dan mempertahankan data konfigurasi statis, dalam hitungan detik.
 (Default: 3600)
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

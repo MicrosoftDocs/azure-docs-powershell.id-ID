@@ -6,43 +6,46 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azre
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzRemoteDesktopFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzRemoteDesktopFile.md
-ms.openlocfilehash: 4154bf7d6a508636f52d38472db1657626f0af94
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f6c22da119de2536f2144d8606902d59854ef0e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142687168"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144636686"
 ---
 # Get-AzRemoteDesktopFile
 
 ## SYNOPSIS
 Mendapatkan file .rdp.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azremotedesktopfile) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Download
+### Unduh
 ```
 Get-AzRemoteDesktopFile [-ResourceGroupName] <String> [-Name] <String> [-LocalPath] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Peluncuran
+### Luncurkan 
 ```
 Get-AzRemoteDesktopFile [-ResourceGroupName] <String> [-Name] <String> [[-LocalPath] <String>] [-Launch]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRemoteDesktopFile** mendapatkan file Remote Desktop Protocol (.rdp).
+Cmdlet **Get-AzRemoteDesktopFile** mendapatkan file Protokol Desktop Jarak Jauh (.rdp).
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan file Desktop Jarak Jauh
+### Contoh 1: Mendapatkan file Desktop Jauh
 ```powershell
 Get-AzRemoteDesktopFile -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -LocalPath "D:\RemoteDesktopFile07.rdp"
 ```
 
-Perintah ini mendapatkan file Desktop Jauh untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan file Desktop Jauh untuk komputer virtual bernama VirtualMachine07.
 Perintah menyimpan hasil dalam file bernama D:\RemoteDesktopFile07.rdp.
 
 ## PARAMETERS
@@ -104,8 +107,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan ketersediaan yang didapat cmdlet ini.
+### -Name
+Menentukan nama set ketersediaan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 7b9df33a948f28f5f15f52f1908863b1b2a7bca3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 135aac97e50845717d9e9e0b1aeb064b290070ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320571"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643254"
 ---
 # New-AzApiManagementDiagnostic
 
 ## SYNOPSIS
-Membuat diagnostik baru di lingkup Global atau Lingkup Api.
+Membuat diagnostik baru di Cakupan Global atau Cakupan Api.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzApiManagementDiagnostic -Context <PsApiManagementContext> -LoggerId <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementDiagnostic** menciptakan entitas diagnostik baik di lingkup Global atau lingkup Api tertentu.
+Cmdlet **New-AzApiManagementDiagnostic** membuat entitas diagnostik baik di cakupan Global atau cakupan Api tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat lingkup Diagnostik Global baru
+### Contoh 1: Buat Diagnostik Cakupan Global baru
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 $logger = Get-AzApiManagementLogger -Context $context -LoggerId "backendapisachinc"
@@ -54,9 +57,9 @@ ResourceGroupName            : Api-Default-WestUs
 ServiceName                  : contoso
 ```
 
-Contoh ini membuat entitas diagnostik di Lingkup Global.
+Contoh ini membuat entitas diagnostik di Cakupan Global.
 
-### Contoh 2: Membuat diagnostik di lingkup Api
+### Contoh 2: Membuat diagnostik di cakupan Api
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 $logger = Get-AzApiManagementLogger -Context $context -LoggerId azuremonitor
@@ -80,12 +83,12 @@ ResourceGroupName            : Api-Default-WestUS
 ServiceName                  : contoso
 ```
 
-Contoh di atas membuat diagnostik untuk API `httpbin` untuk mencatat Header dan 100 Byte isi ke `azuremonitor` logger.
+Contoh di atas membuat diagnostik untuk API `httpbin` untuk mencatat Header dan 100 Byte Isi ke `azuremonitor` pencatat.
 
 ## PARAMETERS
 
 ### -AlwaysLog
-Menentukan tipe pengaturan pengambilan sampel pesan yang tidak boleh diterapkan.
+Menentukan jenis pengaturan pengambilan sampel pesan apa yang tidak boleh diterapkan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -101,8 +104,8 @@ Accept wildcard characters: False
 ```
 
 ### -ApiId
-Pengidentifikasi API yang sudah ada.
-Jika ditentukan akan mengatur kebijakan lingkup API.
+Pengidentifikasi API yang ada.
+Jika ditentukan akan menetapkan kebijakan cakupan API.
 Parameter ini diperlukan.
 
 ```yaml
@@ -132,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoggerId
-Pengidentifikasi penebang untuk mendorong diagnostik.
+Pengidentifikasi pencatat untuk mendorong diagnostik.
 Parameter ini diperlukan.
 
 ```yaml
@@ -226,8 +229,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionJobInAzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionJobInAzGraph.md
-ms.openlocfilehash: 0c48b619304d5a6022266863cf1b943d3eba88aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 24aeacc93524477dea27bc96ee962033608d48ac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749035"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680180"
 ---
 # Search-AzDataProtectionJobInAzGraph
 
 ## SYNOPSIS
 Mencari Pekerjaan Pencadangan di Azure Resource Graph dan mengambil entri yang diharapkan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionjobinazgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Mencari Pekerjaan Pencadangan di Azure Resource Graph dan mengambil entri yang d
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua pekerjaan dalam rentang waktu tertentu
+### Contoh 1: Mendapatkan semua pekerjaan dalam rentang waktu tertentu
 ```powershell
 $endtime = Get-Date
 $starttime = $endtime.AddHours(-5)
@@ -45,9 +48,9 @@ Name                                 Type
 96238abd-6ff3-48e0-8c07-0eabd6928a17 microsoft.dataprotection/backupvaults/backupjobs
 ```
 
-Perintah ini mendapatkan semua pekerjaan dalam kubah dalam 5 jam terakhir.
+Perintah ini mendapatkan semua pekerjaan dalam vault dalam 5 jam terakhir.
 
-### Contoh 2: Dapatkan semua pekerjaan dari tipe operasi tertentu
+### Contoh 2: Mendapatkan semua pekerjaan dari jenis operasi tertentu
 ```powershell
 Search-AzDataProtectionJobInAzGraph -Subscription "xxxx-xxx-xxx" -ResourceGroup sarath-rg -Vault sarath-vault -DatasourceType AzureDisk -Operation OnDemandBackup
 ```
@@ -60,12 +63,12 @@ Name                                 Type
 1b0b17e3-398f-4265-9d03-ffc1e21fa73a microsoft.dataprotection/backupvaults/backupjobs
 ```
 
-Perintah ini mendapatkan semua pekerjaan cadangan yang tidak ditugaskan dalam lemari besi.
+Perintah ini mendapatkan semua pekerjaan pencadangan ondemand dalam vault.
 
 ## PARAMETERS
 
 ### -DatasourceType
-Tipe Sumber Data
+Jenis Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Filter Waktu Akhir untuk Tugas Pencadangan
+Filter Waktu Akhir untuk Pekerjaan Pencadangan
 
 ```yaml
 Type: System.DateTime
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operasi
-Filter operasi untuk tugas pencadangan
+Filter operasi untuk pekerjaan pencadangan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.JobOperation[]
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Filter Waktu Mulai untuk pencadangan Job
+Filter Waktu Mulai untuk Pekerjaan pencadangan
 
 ```yaml
 Type: System.DateTime
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Nama kubah
+Nama vault
 
 ```yaml
 Type: System.String[]
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

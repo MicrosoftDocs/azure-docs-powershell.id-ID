@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTableStoredAccessPolicy.md
-ms.openlocfilehash: 5e1414abda322094fdc86e99bf0725814dbc3d52
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eae93c853139afb9ef218204c8acba478bb6bb58
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116739"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687302"
 ---
 # Get-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragetablestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,18 +29,18 @@ Get-AzStorageTableStoredAccessPolicy [-Table] <String> [[-Policy] <String>] [-Co
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageTableStoredAccessPolicy** mencantumkan kebijakan atau kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
+Cmdlet **Get-AzStorageTableStoredAccessPolicy** mencantumkan kebijakan atau kebijakan akses tersimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan akses yang disimpan dalam tabel penyimpanan
+### Contoh 1: Mendapatkan kebijakan akses tersimpan dalam tabel penyimpanan
 ```
 PS C:\>Get-AzStorageTableStoredAccessPolicy -Table "Table02" -Policy "Policy50"
 ```
 
 Perintah ini mendapatkan kebijakan akses bernama Policy50 dalam tabel penyimpanan bernama Table02.
 
-### Contoh 2: Dapatkan semua kebijakan akses yang disimpan dalam tabel penyimpanan
+### Contoh 2: Mendapatkan semua kebijakan akses tersimpan dalam tabel penyimpanan
 ```
 PS C:\>Get-AzStorageTableStoredAccessPolicy -Table "Table02"
 ```
@@ -46,7 +49,7 @@ Perintah ini mendapatkan semua kebijakan akses dalam tabel bernama Table02.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses yang disimpan, yang menyertakan izin untuk token Tanda Tangan Akses Bersama (SAS) ini.
+Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token Tanda Tangan Akses Bersama (SAS) ini.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Table
+### -Tabel
 Menentukan nama tabel penyimpanan Azure.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreV1.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreV1.md
-ms.openlocfilehash: c5566b46b9891965e6f2532b23f799ba759d3c2b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2d489ea70b3bb70b7114c3e37d6c25586328cd10
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998533"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612266"
 ---
 # Get-AzMarketplacePrivateStoreV1
 
 ## SYNOPSIS
-Dapatkan informasi tentang bursa pribadi
+Mendapatkan informasi tentang penyimpanan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestorev1) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan informasi tentang bursa pribadi
 Get-AzMarketplacePrivateStoreV1 [-UseCache <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMarketplacePrivateStoreV1 -Id <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
@@ -36,11 +39,11 @@ Get-AzMarketplacePrivateStoreV1 -InputObject <IMarketplaceIdentity> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Dapatkan informasi tentang bursa pribadi
+Mendapatkan informasi tentang penyimpanan privat
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail Bursa Pribadi
+### Contoh 1: Mendapatkan detail Penyimpanan Privat
 ```powershell
 Get-AzMarketplacePrivateStoreV1
 ```
@@ -51,7 +54,7 @@ Name                                 SystemDataCreatedAt SystemDataCreatedBy Sys
 a260d38c-96cf-492d-a340-404d0c4b3ad6                                         User                    12/1/2021 9:01:33 PM                              User
 ```
 
-Perintah ini Mendapatkan detail bursa pribadi
+Perintah ini Mendapatkan detail penyimpanan privat
 
 
 ## PARAMETERS
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID bursa - harus menggunakan ID penyewa
+ID penyimpanan - harus menggunakan ID penyewa
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseCache
-Menentukan apakah menggunakan cache atau DB untuk melayani permintaan ini
+Menentukan apakah akan menggunakan cache atau DB untuk melayani permintaan ini
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -141,7 +144,7 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
-  - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
+  - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 ## RELATED LINKS

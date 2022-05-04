@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSystemCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSystemCertificate.md
-ms.openlocfilehash: 4960f3086f911facd1890a73924b53b39660fb99
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fa04b48c6f16cf3dfa735cd937aab9ec0c220db5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879606"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144660492"
 ---
 # New-AzApiManagementSystemCertificate
 
 ## SYNOPSIS
-Membuat contoh `PsApiManagementSystemCertificate`. Sertifikat dapat dikeluarkan oleh CA pribadi dan akan diinstal pada layanan API Management ke dalam `CertificateAuthority` atau `Root` toko.
+Membuat instans `PsApiManagementSystemCertificate`. Sertifikat dapat dikeluarkan oleh CA privat dan akan diinstal pada layanan API Management ke dalam `CertificateAuthority` atau `Root` penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsystemcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,19 +28,19 @@ New-AzApiManagementSystemCertificate -StoreName <String> -PfxPath <String> [-Pfx
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementSystemCertificate** adalah perintah penolong yang membuat contoh **PsApiManagementSystemCertificate**.
+Cmdlet **New-AzApiManagementSystemCertificate** adalah perintah pembantu yang membuat **instans PsApiManagementSystemCertificate**.
 Perintah ini digunakan dengan cmdlet New-AzApiManagement dan Set-AzApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan menginisialisasi contoh PsApiManagementSystemCertificate menggunakan Sertifikat Ssl dari file
+### Contoh 1: Membuat dan menginisialisasi instans PsApiManagementSystemCertificate menggunakan Sertifikat Ssl dari file
 ```powershell
 $rootCa = New-AzApiManagementSystemCertificate -StoreName "Root" -PfxPath "C:\contoso\certificates\privateCa.cer"
 $systemCert = @($rootCa)
 New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US" -Name "ContosoApi" -Organization Contoso -AdminEmail admin@contoso.com -SystemCertificateConfiguration $systemCert
 ```
 
-Perintah ini membuat dan menginisialisasi contoh **PsApiManagementSystemCertificate** dengan sertifikat CA akar. Kemudian membuat dan API Management layanan yang menginstal sert CA ke Toko Akar.
+Perintah ini membuat dan menginisialisasi **instans PsApiManagementSystemCertificate** dengan sertifikat OS akar. Kemudian membuat dan API Management layanan yang menginstal sertifikasi CA ke penyimpanan Root.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

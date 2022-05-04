@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzWebPubSub.md
-ms.openlocfilehash: ea8063dd692f8ecc925d74a31fe0ac7096135492
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab0901da63776fb7e9f9b87292f6133df8ec6533
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142799866"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641832"
 ---
 # Restart-AzWebPubSub
 
 ## SYNOPSIS
 Operasi untuk memulai ulang sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.signalr/restart-azwebpubsub) untuk informasi terbaru.
 
 ## SYNTAX
 

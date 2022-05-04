@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: ea3d7cd2c19f8182e541339fc196507cb37d7602
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 64023eb1e9e175d511714023bc10fb520c7b9d82
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688464"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144619790"
 ---
 # Get-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Mendapatkan server otorisasi API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementauthorizationserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Get-AzApiManagementAuthorizationServer [-ServerId <String>] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementAuthorizationServer** mendapatkan semua server otorisasi azure API Management atau server otorisasi tertentu.
+Cmdlet **Get-AzApiManagementAuthorizationServer** mendapatkan semua server otorisasi Azure API Management atau server otorisasi tertentu.
 ClientSecret tidak akan disertakan ke dalam detail hasil. Untuk mendapatkan rahasia klien, gunakan **Get-AzApiManagementAuthorizationServerClientSecret**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua server otorisasi
+### Contoh 1: Mendapatkan semua server otorisasi
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementAuthorizationServer -Context $ApiMgmtContext
@@ -56,7 +59,7 @@ Perintah ini mendapatkan server otorisasi yang ditentukan.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier server otorisasi. Jika ditentukan akan mencoba menemukan server otorisasi oleh pengidentifikasi. Parameter ini diperlukan.
+Pengidentifikasi Sumber Daya Arm dari server otorisasi. Jika ditentukan akan mencoba menemukan server otorisasi oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

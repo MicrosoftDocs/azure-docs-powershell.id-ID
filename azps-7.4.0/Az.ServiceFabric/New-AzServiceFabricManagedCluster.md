@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedCluster.md
-ms.openlocfilehash: e3aeeaddaa8bb7a574eb0dbfe732b04f87854369
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 249e38438a111219b56be4e5df9d60d947d2f0be
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934345"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679532"
 ---
 # New-AzServiceFabricManagedCluster
 
 ## SYNOPSIS
 Buat kluster terkelola baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzServiceFabricManagedCluster [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet ini akan membuat sumber daya kluster terkelola tanpa tipe node. Untuk bootstrap kluster Tipe node utama perlu ditambahkan gunakan [New-AzServiceFabricManagedNodeType](./New-AzServiceFabricManagedNodeType.md).
+Cmdlet ini akan membuat sumber daya kluster terkelola tanpa jenis node. Untuk bootstrap kluster Jenis node utama perlu ditambahkan, gunakan [New-AzServiceFabricManagedNodeType](./New-AzServiceFabricManagedNodeType.md).
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ $password = ConvertTo-SecureString -AsPlainText -Force "testpass1234!@#$"
 New-AzServiceFabricManagedCluster -ResourceGroupName $rgName -Location centraluseuap -ClusterName $clusterName -AdminPassword $password -Sku Standard -UpgradeMode Automatic -UpgradeCadence Wave1 -ZonalResiliency -Verbose
 ```
 
-Perintah ini membuat kluster dengan cadence pemutakhiran dalam wave1 dan ketahanan zona diaktifkan.
+Perintah ini membuat kluster dengan irama peningkatan di wave1 dan ketahanan zona diaktifkan.
 
 ### Contoh 4
 ```powershell
@@ -83,12 +86,12 @@ $password = ConvertTo-SecureString -AsPlainText -Force "testpass1234!@#$"
 New-AzServiceFabricManagedCluster -ResourceGroupName $rgName -Location centraluseuap -ClusterName $clusterName -AdminPassword $password -Sku Standard -UpgradeMode Manual -CodeVersion 7.2.477.9590 -Verbose
 ```
 
-Perintah ini membuat kluster dengan mode pemutakhiran manual dan versi kode 7.2.477.9590.
+Perintah ini membuat kluster dengan mode peningkatan manual dan versi kode 7.2.477.9590.
 
 ## PARAMETERS
 
 ### -AdminPassword
-Kata sandi admin yang digunakan untuk mesin virtual.
+Kata sandi admin yang digunakan untuk komputer virtual.
 
 ```yaml
 Type: System.Security.SecureString
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUserName
-Kata sandi admin yang digunakan untuk mesin virtual.
+Kata sandi admin yang digunakan untuk komputer virtual.
 Default: vmadmin.
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertIssuerThumbprint
-Daftar sidik jari Penerbit untuk sertifikat klien.
+Daftar thumbprint Penerbit untuk sertifikat klien.
 Hanya gunakan dalam kombinasi dengan ClientCertCommonName.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertThumbprint
-Sidik jari sertifikat klien.
+Thumbprint sertifikat klien.
 
 ```yaml
 Type: System.String
@@ -211,8 +214,8 @@ Accept wildcard characters: False
 ```
 
 ### -CodeVersion
-Versi kode kain servis kluster.
-Hanya gunakan jika mode pemutakhiran adalah Manual.
+Versi kode fabric layanan kluster.
+Hanya gunakan jika mode peningkatan adalah Manual.
 
 ```yaml
 Type: System.String
@@ -287,7 +290,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster.
 
 ```yaml
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Cluster's Sku, opsinya adalah Basic: akan memiliki minimal 3 seed node dan hanya memungkinkan 1 tipe node dan Standard: akan memiliki minimal 5 seed node dan memungkinkan beberapa tipe node.
+Sku kluster, opsinya adalah Dasar: akan memiliki minimal 3 node seed dan hanya memungkinkan 1 jenis node dan Standar: ia akan memiliki minimal 5 node seed dan memungkinkan beberapa jenis node.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ManagedClusterSku
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeCadence
-Menunjukkan kapan pemutakhiran versi runtime kluster baru akan diterapkan setelah dirilis. Secara default adalah Wave0.
+Menunjukkan kapan peningkatan versi runtime kluster baru akan diterapkan setelah dirilis. Secara default adalah Wave0.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSClusterUpgradeCadence
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeMode
-Mode pemutakhiran versi kode kain servis kluster.
+Mode peningkatan versi kode service fabric kluster.
 Otomatis atau Manual.
 
 ```yaml
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseTestExtension
-Jika Tentukan Kluster akan dikripsi dengan ekstensi service test vmss.
+Jika Tentukan Kluster akan diberi peringkat dengan ekstensi vmss pengujian layanan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -396,8 +399,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

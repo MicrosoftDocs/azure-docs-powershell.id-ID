@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayNatRule.md
-ms.openlocfilehash: 141d6b6c638e92d2cec73689cf0b3d99d662d780
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00bc41e76ef69e1738afcf2517544d57d99185fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142997471"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659160"
 ---
 # Get-AzVirtualNetworkGatewayNatRule
 
 ## SYNOPSIS
 Mendapatkan Virtual Network Gateway NatRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaynatrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzVirtualNetworkGatewayNatRule -ParentResourceId <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVirtualNetworkGatewayNatRule** mengembalikan objek aturan nat gateway jaringan virtual gateway jaringan virtual Anda berdasarkan Nama dan ParentResourceName.
+**Cmdlet Get-AzVirtualNetworkGatewayNatRule** mengembalikan objek aturan nat gateway jaringan virtual gateway jaringan virtual Anda berdasarkan Nama dan ParentResourceName.
 
 ## EXAMPLES
 
@@ -128,7 +131,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Induk VirtualNetworkGateway untuk VirtualNetworkGatewayNatRule ini.
+VirtualNetworkGateway induk untuk VirtualNetworkGatewayNatRule ini.
 
 ```yaml
 Type: PSVirtualNetworkGateway
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari induk VirtualNetworkGateway untuk VirtualNetworkGatewayNatRule ini.
+Id sumber daya virtualNetworkGateway induk untuk VirtualNetworkGatewayNatRule ini.
 
 ```yaml
 Type: String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

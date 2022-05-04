@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Register-AzRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Register-AzRecoveryServicesBackupContainer.md
-ms.openlocfilehash: bc1e71691bf8d4eca1d1dc2ff4327197007167ba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2aa6bb47dcc2bbcd8ac2f060f0bd72ab51516e33
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276903"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658944"
 ---
 # Register-AzRecoveryServicesBackupContainer
 
 ## SYNOPSIS
 Cmdlet **Register-AzRecoveryServicesBackupContainer** mendaftarkan Azure VM untuk AzureWorkloads dengan workloadType tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/register-azrecoveryservicesbackupcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Register-AzRecoveryServicesBackupContainer [-Container] <ContainerBase>
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan Azure Backup untuk mengonversi Sumber Daya menjadi Wadah Cadangan yang kemudian didaftarkan ke kubah layanan Pemulihan yang diberikan. Layanan Azure Backup kemudian dapat menemukan beban kerja tipe beban kerja tertentu dalam wadah ini untuk dilindungi nanti.
+Perintah ini memungkinkan Azure Backup untuk mengonversi Sumber Daya ke Kontainer Cadangan yang kemudian didaftarkan ke vault layanan Pemulihan yang diberikan. Layanan Azure Backup kemudian dapat menemukan beban kerja dari jenis beban kerja yang diberikan dalam kontainer ini untuk dilindungi nanti.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Perintah ini memungkinkan Azure Backup untuk mengonversi Sumber Daya menjadi Wad
 Register-AzRecoveryServicesBackupContainer -ResourceId <AzureVMID> -VaultId <vaultID> -WorkloadType MSSQL -BackupManagementType AzureWorkload
 ```
 
-Cmdlet mendaftarkan azure VM sebagai wadah untuk MSSQL beban kerja.
+Cmdlet mendaftarkan azure VM sebagai kontainer untuk MSSQL beban kerja.
 
 ## PARAMETERS
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-Wadah tempat item berada
+Kontainer tempat item berada
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ContainerBase
@@ -93,8 +96,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Wadah register paksa (mencegah dialog konfirmasi). Parameter ini bersifat opsional.
+### -Force
+Memaksa mendaftarkan kontainer (mencegah dialog konfirmasi). Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Azure yang item representatifnya perlu diperiksa apakah item tersebut sudah dilindungi oleh beberapa Vault Layanan Pemulihan dalam langganan.
+ID Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa RecoveryServices Vault dalam langganan.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkloadType
-Tipe beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, WindowsServer, AzureFiles, MSSQL
+Jenis beban kerja sumber daya. Nilai yang didukung saat ini adalah AzureVM, WindowsServer, AzureFiles, MSSQL
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.WorkloadType
@@ -154,8 +157,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

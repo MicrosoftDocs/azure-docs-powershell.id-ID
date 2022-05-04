@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Update-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Update-AzBotService.md
-ms.openlocfilehash: c27dfe5fe7cfe1d4e360c3fa72cac0db24a25a14
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bbc1d18157ae75600389207b9ce5cd4bdda12006
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172989"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144653818"
 ---
 # Update-AzBotService
 
 ## SYNOPSIS
 Memperbarui Bot Service
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/update-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Memperbarui Bot Service
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Bot menurut Nama dan ResourceGroupName
+### Contoh 1: Memperbarui Bot berdasarkan Nama dan ResourceGroupName
 ```powershell
 Update-AzBotService -Name 'youri-apptest' -ResourceGroupName 'youriBotTest' -kind Bot
 ```
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BotService.Models.IBotServiceIdentity
@@ -221,8 +224,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
-Diperlukan.
+### -Kind
+Wajib diisi.
 Mendapatkan atau mengatur Jenis sumber daya.
 
 ```yaml
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -LuisKey
-Tombol LUIS
+Kunci LUIS
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya Bot.
 
 ```yaml
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Berisi tag sumber daya yang ditentukan sebagai pasangan kunci/nilai.
+Berisi tag sumber daya yang didefinisikan sebagai pasangan kunci/nilai.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -372,8 +375,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -404,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

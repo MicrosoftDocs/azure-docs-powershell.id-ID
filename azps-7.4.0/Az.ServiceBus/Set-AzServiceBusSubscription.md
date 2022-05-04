@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusSubscription.md
-ms.openlocfilehash: f306e2d296a45253015497f2c1d2e2d7e30fed33
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fa311db5a09f93c289d3e12d861f8edde7ab786a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672120"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611888"
 ---
 # Set-AzServiceBusSubscription
 
 ## SYNOPSIS
-Memperbarui deskripsi langganan untuk topik Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+Memperbarui deskripsi langganan untuk topik Bus Layanan di namespace Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebussubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzServiceBusSubscription [-ResourceGroupName] <String> [-Namespace] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusSubscription** memperbarui deskripsi langganan untuk topik Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+Cmdlet **Set-AzServiceBusSubscription** memperbarui deskripsi langganan untuk topik Bus Layanan di namespace Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Status                                    : Active
 UpdatedAt                                 : 1/20/2017 9:59:15 PM
 ```
 
-Memperbarui deskripsi untuk langganan tertentu ke topik tertentu. Contoh ini memperbarui properti **DeadLetteringOnMessageExpiration** menjadi **true** dan **MaxDeliveryCount** menjadi 9.
+Memperbarui deskripsi untuk langganan yang ditentukan ke topik yang diberikan. Contoh ini memperbarui properti **DeadLetteringOnMessageExpiration** ke **true** dan **MaxDeliveryCount** ke 9.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Definisi ServiceBus Subscription.
+Definisi Langganan ServiceBus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -136,8 +139,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

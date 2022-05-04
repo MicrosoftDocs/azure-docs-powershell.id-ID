@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueStoredAccessPolicy.md
-ms.openlocfilehash: 25921228876d8f6851416192b269a39ba791efba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1a6cc5d2b664d38ae45002116c9ac90b4ae360ac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670914"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679442"
 ---
 # New-AzStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Membuat kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
+Membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragequeuestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,20 +30,20 @@ New-AzStorageQueueStoredAccessPolicy [-Queue] <String> [-Policy] <String> [-Perm
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageQueueStoredAccessPolicy** membuat kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
+Cmdlet **New-AzStorageQueueStoredAccessPolicy** membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat kebijakan akses yang disimpan dalam antrean penyimpanan
+### Contoh 1: Membuat kebijakan akses tersimpan dalam antrean penyimpanan
 ```
 PS C:\>New-AzStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy01"
 ```
 
-Perintah ini membuat kebijakan akses bernama Policy01 dalam antrean penyimpanan bernama Antrean Saya.
+Perintah ini membuat kebijakan akses bernama Policy01 dalam antrean penyimpanan bernama MyQueue.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -87,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses antrean penyimpanan.
-Penting untuk diperhatikan bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
+Menentukan izin dalam kebijakan akses tersimpan untuk mengakses antrean penyimpanan.
+Penting untuk dicatat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis, dan Hapus).
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan nama untuk kebijakan akses yang disimpan.
+Menentukan nama untuk kebijakan akses tersimpan.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
