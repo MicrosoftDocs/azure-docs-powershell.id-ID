@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzLogicApp.md
-ms.openlocfilehash: 5806e7e886445e3fed07b80eef4d2f109e1083e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 44f668983bb0bcaf3b62e4f6f0273fa062a6a578
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682218"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596462"
 ---
 # New-AzLogicApp
 
 ## SYNOPSIS
 Membuat aplikasi logika dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,14 +39,14 @@ New-AzLogicApp -ResourceGroupName <String> -Name <String> -Location <String> [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLogicApp** membuat aplikasi logika menggunakan fitur Aplikasi Logika.
+Cmdlet **New-AzLogicApp** membuat aplikasi logika dengan menggunakan fitur Logic Apps.
 Aplikasi logika adalah kumpulan tindakan atau pemicu yang ditentukan dalam definisi Aplikasi Logika.
 Cmdlet ini mengembalikan objek **Alur Kerja** .
-Anda dapat membuat aplikasi logika dengan menentukan nama, lokasi, definisi Aplikasi Logika, grup sumber daya, dan rencana.
+Anda dapat membuat aplikasi logika dengan menentukan nama, lokasi, definisi Aplikasi Logika, grup sumber daya, dan paket.
 Definisi dan parameter Aplikasi Logika diformat dalam JavaScript Object Notation (JSON).
 Anda dapat menggunakan aplikasi logika sebagai templat untuk definisi dan parameter.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
@@ -77,8 +80,8 @@ PlanId                       : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a
 Version                      : 08587489107859952120
 ```
 
-Perintah ini membuat aplikasi logika dalam grup sumber daya yang ditentukan.
-Aplikasi logika menyertakan definisi dan parameter yang ditentukan oleh jalur file.
+Perintah ini membuat aplikasi logika di grup sumber daya yang ditentukan.
+Aplikasi logika mencakup definisi dan parameter yang ditentukan oleh jalur file.
 
 ### Contoh 2: Membuat aplikasi logika dengan menggunakan objek definisi dan parameter
 ```powershell
@@ -107,9 +110,9 @@ PlanId                       : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a
 Version                      : 08587489107859952120
 ```
 
-Perintah ini membuat aplikasi logika dalam grup sumber daya grup sumber daya tertentu.
+Perintah ini membuat aplikasi logika di grup sumber daya grup sumber daya yang ditentukan.
 
-### Contoh 3: Membuat aplikasi logika dengan menggunakan pipeline untuk menentukan grup sumber daya
+### Contoh 3: Membuat aplikasi logika dengan menggunakan alur untuk menentukan grup sumber daya
 ```powershell
 Get-AzResourceGroup -ResourceGroupName "ResourceGroup11" | New-AzLogicApp -Name "LogicApp11" -State "Enabled" -AppServicePlan "ServicePlan01" -DefinitionFilePath "d:\Workflow\Definition.json" -ParameterFilePath "d:\Workflow\Parameters.json"
 ```
@@ -136,12 +139,12 @@ PlanId                       : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a
 Version                      : 08587489107859952120
 ```
 
-Perintah ini mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup.
-Perintah melewati grup sumber daya ke cmdlet saat ini menggunakan operator pipeline.
-Cmdlet saat ini membuat aplikasi logika dalam grup sumber daya tersebut.
-Aplikasi logika menyertakan definisi dan parameter yang ditentukan oleh jalur file.
+Perintah ini mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup.
+Perintah meneruskan grup sumber daya tersebut ke cmdlet saat ini dengan menggunakan operator alur.
+Cmdlet saat ini membuat aplikasi logika di grup sumber daya tersebut.
+Aplikasi logika mencakup definisi dan parameter yang ditentukan oleh jalur file.
 
-### Contoh 4: Membuat aplikasi logika berdasarkan aplikasi logika yang sudah ada
+### Contoh 4: Membuat aplikasi logika berdasarkan aplikasi logika yang ada
 ```powershell
 $Workflow = Get-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp03"
 New-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp13" -State "Enabled" -AppServicePlan "ServicePlan01" -Definition $Workflow.Definition -Parameters $Workflow.Parameters
@@ -252,7 +255,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk aplikasi logika.
 
 ```yaml
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParameterFilePath
-Menentukan jalur file parameter JSON yang diformat.
+Menentukan jalur file parameter berformat JSON.
 
 ```yaml
 Type: System.String
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameters
-Menentukan objek kumpulan parameter untuk Aplikasi Logika.
+Menentukan objek pengumpulan parameter untuk Aplikasi Logika.
 Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
@@ -313,7 +316,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status aplikasi logika.
 Nilai yang dapat diterima untuk parameter ini adalah: Diaktifkan dan Dinonaktifkan.
 
@@ -330,8 +333,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -346,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -378,7 +381,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzLogicApp](./Get-AzLogicApp.md)
 
-[Hapus-AzLogicApp](./Remove-AzLogicApp.md)
+[Remove-AzLogicApp](./Remove-AzLogicApp.md)
 
 [Set-AzLogicApp](./Set-AzLogicApp.md)
 

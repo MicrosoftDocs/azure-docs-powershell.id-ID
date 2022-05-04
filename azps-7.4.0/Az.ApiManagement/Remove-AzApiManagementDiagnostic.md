@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 45149ef9e2c3ad950182b3c06eb4cffcfbfbda83
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07262f560c9207112fbcc4ae4a64cb1d870fcd1b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233811"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657055"
 ---
 # Remove-AzApiManagementDiagnostic
 
 ## SYNOPSIS
-Hapus entitas Diagnostik dari lingkup tingkat Global atau API.
+Hapus entitas Diagnostik dari cakupan tingkat Global atau API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,17 +41,17 @@ Remove-AzApiManagementDiagnostic -InputObject <PsApiManagementDiagnostic> [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementDiagnostic menghapus entitas diagnostik** yang ditentukan oleh `DiagnosticId` dari lingkup global atau `ApiId` lingkup
+Cmdlet **Remove-AzApiManagementDiagnostic** menghapus entitas diagnostik yang ditentukan oleh `DiagnosticId` dari cakupan global atau `ApiId` cakupan
 
 ## EXAMPLES
 
-### Contoh 1: Hapus entitas Diagnostik
+### Contoh 1: Menghapus entitas Diagnostik
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Remove-AzApiManagementDiagnostic -Context $apimContext -DiagnosticId "applicationinsights"
 ```
 
-Contoh ini menghapus diagnostik `applicationinsights` dari layanan Manajemen Api.
+Contoh ini menghapus diagnostik `applicationinsights` dari layanan Api Management.
 
 ## PARAMETERS
 
@@ -68,8 +71,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -100,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticId
-Pengidentifikasi produk yang sudah ada.
-Jika ditentukan akan mengembalikan kebijakan lingkup produk.
+Pengidentifikasi produk yang ada.
+Jika ditentukan akan mengembalikan kebijakan cakupan produk.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementDiagnostic. Parameter ini diperlukan.
+Instans PsApiManagementDiagnostic. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementDiagnostic
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menulis true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true jika operasi berhasil.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -162,8 +165,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

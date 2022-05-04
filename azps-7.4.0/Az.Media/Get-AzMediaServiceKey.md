@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceKey.md
-ms.openlocfilehash: 3470e215b6563e4276cd73532f1492035346f2d6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 123bc94c7a1e74ddd421392268f31eefd39d439a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283869"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596336"
 ---
 # Get-AzMediaServiceKey
 
 ## SYNOPSIS
 Mendapatkan informasi utama untuk mengakses titik akhir REST yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/get-azmediaservicekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzMediaServiceKey [-ResourceGroupName] <String> [-AccountName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzMediaServiceKey** mendapatkan informasi penting untuk mengakses titik akhir Representational State Transfer (REST) yang terkait dengan layanan media Azure.
+Cmdlet **Get-AzMediaServiceKey** mendapatkan informasi utama untuk mengakses titik akhir Representational State Transfer (REST) yang terkait dengan layanan media Azure.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **Get-AzMediaServiceKey** mendapatkan informasi penting untuk mengakses t
 Get-AzMediaServiceKey -ResourceGroupName "ResourceGroup001" -AccountName "MediaService001"
 ```
 
-Perintah ini mendapatkan informasi kunci untuk mengakses layanan media bernama MediaService001 milik grup sumber daya bernama ResourceGroup001.
+Perintah ini mendapatkan informasi utama untuk mengakses layanan media bernama MediaService001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

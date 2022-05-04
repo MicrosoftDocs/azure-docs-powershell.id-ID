@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBSqlContainerThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBSqlContainerThroughputMigration.md
-ms.openlocfilehash: 7b90d5cdff4a03c38010b83b75b454b776093ef7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f459b5eb93687cf2ab30ffd869c8770d37f2a7f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142686124"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594394"
 ---
 # Invoke-AzCosmosDBSqlContainerThroughputMigration
 
 ## SYNOPSIS
-Gunakan ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+Gunakan ini untuk memigrasikan throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbsqlcontainerthroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Invoke-AzCosmosDBSqlContainerThroughputMigration [-Name <String>] -InputObject <
 ```
 
 ## DESCRIPTION
-Paramter ThroughpyteType menentukan throughput yang ingin Anda migrasi.
+Paramter ThroughpyteType menentukan throughput yang ingin Anda migrasikan.
 
 ## EXAMPLES
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Sql Container.
+Objek Kontainer Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlContainerGetResults
@@ -111,7 +114,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kontainer.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database Sql.
+Objek Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlDatabaseGetResults
@@ -157,8 +160,8 @@ Accept wildcard characters: False
 ```
 
 ### -ThroughputType
-Tipe throughput untuk dimigrasikan.
-Nilai yang memungkinkan adalah: Skala Otomatis, Manual.
+Jenis throughput untuk dimigrasikan.
+Nilai yang mungkin adalah: Skala otomatis, Manual.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

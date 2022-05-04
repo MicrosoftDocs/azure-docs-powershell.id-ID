@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 91bdce4b2c38ae7c2b2ef6afa344c7e42edda5ee
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 66bf85ff7d0e3a1b98419eede6fd74da18cb52b8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233523"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611528"
 ---
 # New-AzApplicationInsightsWebTest
 
 ## SYNOPSIS
-Membuat atau memperbarui definisi uji web Insights Aplikasi.
+Membuat atau memperbarui definisi pengujian web Insights Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightswebtest) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ New-AzApplicationInsightsWebTest -Name <String> -ResourceGroupName <String> -Loc
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui definisi uji web Insights Aplikasi.
+Membuat atau memperbarui definisi pengujian web Insights Aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui jenis standar uji web Aplikasi Insights
+### Contoh 1: Membuat atau memperbarui jenis standar pengujian web Insights Aplikasi
 ```powershell
 $geoLocation = @()
 $geoLocation += New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
@@ -62,11 +65,11 @@ Name            Location WebTestKind ResourceGroupName  Enabled
 standard-pwsh01 westus2  standard    azpwsh-rg-test     True
 ```
 
-Perintah ini membuat atau memperbarui jenis standar uji web aplikasi Insights.
+Perintah ini membuat atau memperbarui jenis standar pengujian web Insights Aplikasi.
 
-Kami memasukkan tautan tersembunyi dalam `Tag` parameter untuk mengaitkan WebTest dan Aplikasi Insights.
+Kami memasukkan tautan tersembunyi dalam `Tag` parameter untuk mengaitkan WebTest dan Insights Aplikasi.
 
-### Contoh 2: Membuat atau memperbarui jenis ping dari uji web Aplikasi Insights
+### Contoh 2: Membuat atau memperbarui jenis ping dari pengujian web Application Insights
 ```powershell
 $geoLocation = @()
 $geoLocation += New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
@@ -83,9 +86,9 @@ Name               Location WebTestKind ResourceGroupName   Enabled
 pingwebtest-pwsh01 westus2  ping        azpwsh-rg-test      True
 ```
 
-Perintah ini membuat atau memperbarui jenis ping dari uji web Aplikasi Insights.
+Perintah ini membuat atau memperbarui jenis ping dari pengujian web Application Insights.
 
-### Contoh 3: Membuat atau memperbarui jenis ping dari uji web Aplikasi Insights dengan konfigurasi kustom
+### Contoh 3: Membuat atau memperbarui jenis ping dari pengujian web Application Insights dengan konfigurasi kustom
 ```powershell
 $geoLocation = @()
 $geoLocation += New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
@@ -116,12 +119,12 @@ Name               Location WebTestKind ResourceGroupName   Enabled
 pingwebtest-pwsh01 westus2  ping        azpwsh-rg-test      True
 ```
 
-Perintah ini membuat atau memperbarui jenis ping dari uji web Aplikasi Insights dengan konfigurasi kustom.
+Perintah ini membuat atau memperbarui jenis ping dari pengujian web Application Insights dengan konfigurasi kustom.
 
 ## PARAMETERS
 
-### -Configuration
-Spesifikasi XML dari WebTest untuk dijalankan terhadap aplikasi.
+### -Konfigurasi
+Spesifikasi XML webTest untuk dijalankan terhadap aplikasi.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentIgnoreCase
-Ketika diatur, nilai ini membuat kasus validasi ContentMatch tidak peka.
+Saat diatur, nilai ini membuat kasus validasi ContentMatch tidak sensitif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentMatch
-Konten untuk dicari dalam pengembalian WebTest.
+Konten yang akan dicari dalam pengembalian WebTest.
 Tidak boleh null atau kosong.
 
 ```yaml
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentPassIfTextFound
-Jika true, validasi akan berlalu jika ada kecocokan untuk string ContentMatch.
+Jika true, validasi akan lulus jika ada kecocokan untuk string ContentMatch.
 Jika false, validasi akan gagal jika ada kecocokan
 
 ```yaml
@@ -212,8 +215,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Difungsikan
-Apakah tes sedang dipantau secara aktif.
+### -Diaktifkan
+Apakah pengujian sedang dipantau secara aktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Frekuensi
-Interval dalam detik antara uji berjalan untuk WebTest ini.
+Interval dalam detik antara eksekusi pengujian untuk WebTest ini.
 Nilai defaultnya adalah 300.
 
 ```yaml
@@ -243,9 +246,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GeoLokasi
-Daftar tempat menjalankan tes secara fisik untuk memberikan cakupan global untuk aksesibilitas aplikasi Anda.
-Untuk membangun, lihat bagian CATATAN untuk properti GEOLOCATION dan membuat tabel hash.
+### -GeoLocation
+Daftar tempat menjalankan pengujian secara fisik untuk memberikan cakupan global untuk aksesibilitas aplikasi Anda.
+Untuk membuat, lihat bagian CATATAN untuk properti GEOLOCATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.Api20180501Preview.IWebTestGeolocation[]
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jenis
-Jenis uji web ini, pilihan yang valid adalah ping, multistep, dan standar.
+Jenis pengujian web ini adalah, pilihan yang valid adalah ping, multistep, dan standar.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Support.WebTestKindEnum
@@ -289,8 +292,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama sumber daya Aplikasi Insights WebTest.
+### -Name
+Nama sumber daya WebTest Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestBody
-Isi string berkode Base64 untuk dikirim dengan uji web ini.
+Isi string yang dikodekan Base64 untuk dikirim dengan pengujian web ini.
 
 ```yaml
 Type: System.String
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestFollowRedirect
-Ikuti pengalihan untuk uji web ini.
+Ikuti pengalihan untuk pengujian web ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 
 ### -RequestHeader
 Daftar header dan nilainya untuk ditambahkan ke panggilan WebTest.
-Untuk membangun, lihat bagian CATATAN untuk properti REQUESTHEADER dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti REQUESTHEADER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.Api20180501Preview.IHeaderField[]
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestHttpVerb
-Kata kerja http untuk digunakan untuk uji web ini.
+Kata kerja http yang digunakan untuk pengujian web ini.
 
 ```yaml
 Type: System.String
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestParseDependent
-Mengurai permintaan Dependen untuk WebTest ini.
+Uraikan permintaan Dependen untuk WebTest ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -397,7 +400,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryEnabled
-Izinkan untuk percobaan ulang jika WebTest ini gagal.
+Perbolehkan percobaan ulang jika WebTest ini gagal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -442,7 +445,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleIgnoreHttpsStatusCode
-Ketika diatur, validasi akan mengabaikan kode status.
+Saat diatur, validasi akan mengabaikan kode status.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -457,7 +460,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSslCertRemainingLifetimeCheck
-Sejumlah hari untuk diperiksa masih tersisa sebelum sert SSL yang sudah ada kedaluwarsa.
+Sejumlah hari untuk diperiksa masih tersisa sebelum sertifikasi SSL yang ada kedaluwarsa.
 Nilai harus positif dan SSLCheck harus diatur ke true.
 
 ```yaml
@@ -473,7 +476,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSslCheck
-Memeriksa untuk melihat apakah sertifikat SSL masih valid.
+Memeriksa untuk melihat apakah sertifikasi SSL masih valid.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -548,8 +551,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -564,7 +567,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -580,7 +583,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -597,8 +600,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-GEOLOCATION <IWebTestGeolocation[]>: Daftar tempat menjalankan tes secara fisik untuk memberikan cakupan global untuk aksesibilitas aplikasi Anda.
-  - `[Location <String>]`: ID Lokasi untuk WebTest untuk dijalankan.
+GEOLOCATION <IWebTestGeolocation[]>: Daftar tempat menjalankan pengujian secara fisik untuk memberikan cakupan global untuk aksesibilitas aplikasi Anda.
+  - `[Location <String>]`: ID Lokasi untuk WebTest yang akan dijalankan.
 
 REQUESTHEADER <IHeaderField[]>: Daftar header dan nilainya untuk ditambahkan ke panggilan WebTest.
   - `[Name <String>]`: Nama header.

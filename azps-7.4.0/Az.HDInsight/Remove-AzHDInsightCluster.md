@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightCluster.md
-ms.openlocfilehash: adb80d9dda6a87d839b1304f2284fcbec0f79df4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4d4493c9f1562d0b3bfcac194fa989125f0c7020
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808515"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587556"
 ---
 # Remove-AzHDInsightCluster
 
 ## SYNOPSIS
 Menghapus kluster HDInsight yang ditentukan dari langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/remove-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,9 +30,9 @@ Remove-AzHDInsightCluster [-ClusterName] <String> [-ResourceGroupName <String>] 
 
 ## DESCRIPTION
 Cmdlet **Remove-AzHDInsightCluster** menghapus kluster layanan HDInsight yang ditentukan dari langganan.
-Operasi ini juga menghapus semua data yang disimpan dalam Hadoop Distributed File System (HDFS) di kluster.
+Operasi ini juga menghapus data apa pun yang disimpan dalam Sistem File Terdistribusi Hadoop (HDFS) pada kluster.
 Data yang disimpan di akun Azure Storage terkait tidak dihapus.
-Data yang disimpan dalam metastore eksternal tidak dihapus.
+Data yang disimpan dalam metore eksternal tidak dihapus.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika PassThru ada, hasilnya akan dihasilkan
+Jika PassThru ada, keluarkan hasilnya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### System.Boolean

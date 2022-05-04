@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolActivity.md
-ms.openlocfilehash: 04b2833219d44be2ca4ec0d5de82731789c2c82c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4bc3505a80692105868721996e3235c114b7070c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865314"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657486"
 ---
 # Get-AzSqlElasticPoolActivity
 
 ## SYNOPSIS
-Mendapatkan status operasi pada kolam elastis.
+Mendapatkan status operasi pada kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpoolactivity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,17 +30,17 @@ Get-AzSqlElasticPoolActivity [-ServerName] <String> [-ElasticPoolName] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPoolActivity** mendapatkan status operasi pada kolam elastis untuk Azure SQL Database.
-Anda dapat melihat status pembaruan pembuatan kumpulan dan konfigurasi.
+Cmdlet **Get-AzSqlElasticPoolActivity** mendapatkan status operasi pada kumpulan elastis untuk Azure SQL Database.
+Anda dapat melihat status pembuatan kumpulan dan pembaruan konfigurasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status operasi untuk kumpulan elastis
+### Contoh 1: Mendapatkan status operasi untuk kumpulan elastis
 ```powershell
 Get-AzSqlElasticPoolActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah ini mendapatkan status operasi untuk kolam elastis bernama ElasticPool01.
+Perintah ini mendapatkan status operasi untuk kumpulan elastis bernama ElasticPool01.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-ID operasi untuk diambil.
+ID operasi yang akan diambil.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -168,7 +171,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzSqlElasticPoolDatabase](./Get-AzSqlElasticPoolDatabase.md)
 
-[New-AzSqlElasticPool](./New-AzSqlElasticPool.md)
+[Baru-AzSqlElasticPool](./New-AzSqlElasticPool.md)
 
 [Remove-AzSqlElasticPool](./Remove-AzSqlElasticPool.md)
 

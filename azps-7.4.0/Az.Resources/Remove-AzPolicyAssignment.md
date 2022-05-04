@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyAssignment.md
-ms.openlocfilehash: f3c6561af34dcf33bf7c997ad2e2cc5cebe48cba
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 01214c305995c8e209b6fe17a7b72644b9016fd7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867348"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657504"
 ---
 # Remove-AzPolicyAssignment
 
 ## SYNOPSIS
 Menghapus penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/remove-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,18 +46,18 @@ Cmdlet **Remove-AzPolicyAssignment** menghapus penetapan kebijakan yang ditentuk
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus penetapan kebijakan menurut nama dan lingkup
+### Contoh 1: Menghapus penetapan kebijakan berdasarkan nama dan cakupan
 ```powershell
 $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 Remove-AzPolicyAssignment -Name 'PolicyAssignment07' -Scope $ResourceGroup.ResourceId -Confirm
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup.
 Perintah menyimpan objek tersebut dalam variabel $ResourceGroup.
 Perintah kedua menghapus penetapan kebijakan bernama PolicyAssignment07 yang ditetapkan pada tingkat grup sumber daya.
-Properti **ResourceId** $ResourceGroup mengidentifikasi grup sumber daya.
+Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
 
-### Contoh 2: Hapus penetapan kebijakan menurut ID
+### Contoh 2: Menghapus penetapan kebijakan berdasarkan ID
 ```powershell
 $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11' 
 $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment07' -Scope $ResourceGroup.ResourceId
@@ -62,14 +65,14 @@ Remove-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -Confirm
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut dalam variabel $ResourceGroup.
-Perintah kedua mendapatkan penetapan kebijakan pada tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyAssignment.
-Properti **ResourceId** $ResourceGroup mengidentifikasi grup sumber daya.
-Perintah akhir menghapus penetapan kebijakan yang diidentifikasi properti **ResourceId** $PolicyAssignment.
+Perintah kedua mendapatkan penetapan kebijakan di tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyAssignment.
+Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
+Perintah akhir menghapus penetapan kebijakan yang diidentifikasi properti **ResourceId** dari $PolicyAssignment.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek penetapan kebijakan untuk menghapusnya adalah output dari cmdlet lain.
+Objek penetapan kebijakan untuk menghapus yang merupakan output dari cmdlet lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment
@@ -129,7 +132,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama penetapan kebijakan yang dihapus cmdlet ini.
 
 ```yaml
@@ -144,8 +147,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,8 +162,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup penerapan kebijakan.
+### -Cakupan
+Menentukan cakupan di mana kebijakan diterapkan.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

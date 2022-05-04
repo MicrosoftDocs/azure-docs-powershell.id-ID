@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageShare.md
-ms.openlocfilehash: e9ca7a36e5c7e83a15748f3b119564676a4f474a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eb42deda12f31ade81c79e5dad2ad41863a83b74
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142670392"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144606524"
 ---
 # Update-AzRmStorageShare
 
 ## SYNOPSIS
-Mengubah berbagi file Storage.
+Memodifikasi berbagi file Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,11 +51,11 @@ Update-AzRmStorageShare -InputObject <PSShare> [-QuotaGiB <Int32>] [-Metadata <H
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageShare** mengubah berbagi file Storage.
+Cmdlet **New-AzRmStorageShare** memodifikasi berbagi file Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah metadata berbagi file Storage dan berbagi kuota dengan nama akun Storage dan berbagi nama
+### Contoh 1: Memodifikasi metadata berbagi file Storage dan berbagi kuota dengan nama akun Storage dan nama berbagi
 ```
 PS C:\>$share = Update-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -QuotaGiB 200 -Metadata @{tag0="value0";tag1="value1"}
 
@@ -72,17 +75,17 @@ tag0 value0
 tag1 value1
 ```
 
-Perintah ini mengubah metadata berbagi file Storage dan berbagi kuota dengan nama akun Storage dan nama berbagi, serta memperlihatkan hasil modifikasi dengan objek berbagi file yang dikembalikan.
+Perintah ini memodifikasi metadata berbagi file Storage dan berbagi kuota dengan nama akun Storage dan nama berbagi, dan menampilkan hasil modifikasi dengan objek berbagi file yang dikembalikan.
 
-### Contoh 2: Mengubah metadata pada file Storage berbagi dengan objek akun Storage dan berbagi nama
+### Contoh 2: Memodifikasi metadata pada berbagi file Storage dengan objek akun Storage dan nama berbagi
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount"
 PS C:\>$share = Update-AzRmStorageShare -StorageAccount $accountObject -Name "myshare" -Metadata @{tag0="value0";tag1="value1"}
 ```
 
-Perintah ini mengubah metadata pada file Storage yang dibagikan dengan objek akun Storage dan nama berbagi.
+Perintah ini memodifikasi metadata pada berbagi file Storage dengan objek akun Storage dan nama berbagi.
 
-### Contoh 3: Mengubah kuota berbagi untuk semua file Storage yang dibagikan dalam akun Storage dengan pipeline
+### Contoh 3: Memodifikasi kuota berbagi untuk semua berbagi file Storage di akun Storage dengan alur
 ```
 PS C:\>Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" | Update-AzRmStorageShare -QuotaGiB 5000
 
@@ -94,9 +97,9 @@ share1   5000
 share2   5000
 ```
 
-Perintah ini mengubah kuota berbagi sebagai 5000 GiB untuk semua file Storage yang dibagikan dalam akun Storage dengan pipeline.
+Perintah ini memodifikasi kuota berbagi sebagai 5000 GiB untuk semua berbagi file Storage di akun Storage dengan alur.
 
-### Contoh 4: Memodifikasi Storage berbagi file dengan aksesier sebagai Keren
+### Contoh 4: Memodifikasi berbagi file Storage dengan accesstier sebagai Cool
 ```
 PS C:\>$share = Update-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -AccessTier Cool
 
@@ -107,9 +110,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare                            Cool
 ```
 
-Perintah ini mengubah berbagi file Storage dengan accesstier sebagai Cool.
+Perintah ini memodifikasi berbagi file Storage dengan accesstier sebagai Cool.
 
-### Contoh 5: Mengubah rootsquash untuk file yang dibagikan dalam akun Storage
+### Contoh 5: Memodifikasi rootsquash untuk berbagi file di akun Storage
 ```
 PS C:\>$share = Update-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -RootSquash NoRootSquash 
 
@@ -125,7 +128,7 @@ PS C:\> $share.RootSquash
 NoRootSquash
 ```
 
-Perintah ini mengubah properti bagikan RootSquash ke NoRootSquash. Properti RootSquash hanya tersedia untuk dibagikan dengan EnabledProtocol sebagai NFS.
+Perintah ini memodifikasi properti berbagi RootSquash ke NoRootSquash. Properti RootSquash hanya tersedia di berbagi dengan EnabledProtocol sebagai NFS.
 
 ## PARAMETERS
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage Bagikan objek
+Storage Berbagi objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSShare
@@ -190,8 +193,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Bagikan Nama
+### -Name
+Nama Berbagi
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -QuotaGiB
+### -KuotaGiB
 Bagi Quota in Gibibyte.
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -RootSquash
-Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang memungkinkan termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
+Mengatur pengurangan hak akses untuk superuser jarak jauh. Nilai yang mungkin termasuk: 'NoRootSquash', 'RootSquash', 'AllSquash'
 
 ```yaml
 Type: System.String
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -296,8 +299,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

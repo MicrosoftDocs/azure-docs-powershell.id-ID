@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
-ms.openlocfilehash: e0a22ce99438388cfaccbb4f0cc38f8f6e284920
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74278320b699d16007bdf1573ca4053108109e65
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747341"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642300"
 ---
-# Backup-AzKeyVaultKey
+# Cadangan-KunciAzKeyVault
 
 ## SYNOPSIS
-Mencadangkan kunci dalam kubah kunci.
+Mencadangkan kunci dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,15 +42,15 @@ Backup-AzKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [[-OutputFile] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzKeyVaultKey** mencadangkan kunci tertentu dalam kubah kunci dengan mengunduhnya dan menyimpannya dalam file.
-Jika terdapat beberapa versi kunci, semua versi disertakan dalam cadangan.
+Cmdlet **Backup-AzKeyVaultKey** mencadangkan kunci tertentu dalam brankas kunci dengan mengunduhnya dan menyimpannya dalam file.
+Jika ada beberapa versi kunci, semua versi disertakan dalam cadangan.
 Karena konten yang diunduh dienkripsi, konten tidak dapat digunakan di luar Azure Key Vault.
-Anda dapat memulihkan kunci yang dicadangkan ke kubah kunci apa pun dalam langganan tempatnya dicadangkan.
+Anda dapat memulihkan kunci yang dicadangkan ke brankas kunci apa pun dalam langganan tempat kunci tersebut dicadangkan.
 Alasan umum untuk menggunakan cmdlet ini adalah: 
-- Anda ingin memasukkan salinan kunci, sehingga Anda memiliki salinan offline jika Anda secara tidak sengaja menghapus kunci di kubah kunci Anda.
+- Anda ingin mengeskrow salinan kunci Anda, sehingga Anda memiliki salinan offline jika Anda secara tidak sengaja menghapus kunci Anda di brankas kunci Anda.
  
-- Anda membuat kunci menggunakan Key Vault dan sekarang ingin mengkloning kunci ke kawasan Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang didistribusikan.
-Gunakan cmdlet **Backup-AzKeyVaultKey** untuk mengambil kunci dalam format terenkripsi lalu gunakan cmdlet Restore-AzKeyVaultKey dan tentukan kubah kunci di kawasan kedua.
+- Anda membuat kunci menggunakan Key Vault dan sekarang ingin mengkloning kunci ke wilayah Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua instans aplikasi terdistribusi Anda.
+Gunakan cmdlet **Backup-AzKeyVaultKey** untuk mengambil kunci dalam format terenkripsi lalu gunakan cmdlet Restore-AzKeyVaultKey dan tentukan brankas kunci di wilayah kedua.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Backup-AzKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyKey'
 C:\Users\username\mykeyvault-mykey-1527029447.01191
 ```
 
-Perintah ini mengambil kunci bernama MyKey dari kubah kunci bernama MyKeyVault dan menyimpan cadangan kunci tersebut ke file yang secara otomatis dinamai untuk Anda, dan menampilkan nama file.
+Perintah ini mengambil kunci bernama MyKey dari brankas kunci bernama MyKeyVault dan menyimpan cadangan kunci tersebut ke file yang secara otomatis dinamai untuk Anda, dan menampilkan nama file.
 
 ### Contoh 2: Mencadangkan kunci ke nama file tertentu
 ```powershell
@@ -71,9 +74,9 @@ Backup-AzKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyKey' -OutputFile 'C:\Backu
 C:\Backup.blob
 ```
 
-Perintah ini mengambil kunci bernama MyKey dari kunci vaultnamed MyKeyVault dan menyimpan cadangan kunci tersebut ke file bernama Backup.blob.
+Perintah ini mengambil kunci bernama MyKey dari brankas kunci bernama MyKeyVault dan menyimpan cadangan kunci tersebut ke file bernama Backup.blob.
 
-### Contoh 3: Mencadangkan kunci yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
+### Contoh 3: Cadangkan kunci yang diambil sebelumnya ke nama file tertentu, menimpa file tujuan tanpa meminta.
 ```powershell
 $key = Get-AzKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyKey'
 Backup-AzKeyVaultKey -Key $key -OutputFile 'C:\Backup.blob' -Force
@@ -83,7 +86,7 @@ Backup-AzKeyVaultKey -Key $key -OutputFile 'C:\Backup.blob' -Force
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan kunci bernama $key. Nama dalam kubah bernama $key. VaultName ke file bernama Backup.blob, menimpa file secara diam-diam jika sudah ada.
+Perintah ini membuat cadangan kunci bernama $key. Nama di brankas bernama $key. VaultName ke file bernama Backup.blob, diam-diam menimpa file jika sudah ada.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Timpa file yang diberikan jika ada
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmName
-Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang dipilih saat ini.
+Nama HSM. Cmdlet membangun FQDN dari HSM terkelola berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Key bundle untuk mencadangkan, disalurkan dari output panggilan pengambilan.
+Bundel kunci untuk mencadangkan, disalurkan dari output panggilan pengambilan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKeyIdentityItem
@@ -147,8 +150,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kunci untuk dicadangkan.
+### -Name
+Menentukan nama kunci yang akan dicadangkan.
 
 ```yaml
 Type: System.String
@@ -163,9 +166,9 @@ Accept wildcard characters: False
 ```
 
 ### -OutputFile
-Menentukan berkas output tempat blob cadangan disimpan.
-Jika Anda tidak menentukan parameter ini, cmdlet ini akan menghasilkan nama file untuk Anda.
-Jika Anda menentukan nama file output yang sudah ada, operasi tidak akan selesai dan mengembalikan pesan kesalahan bahwa file cadangan sudah ada.
+Menentukan file output tempat blob cadangan disimpan.
+Jika Anda tidak menentukan parameter ini, cmdlet ini menghasilkan nama file untuk Anda.
+Jika Anda menentukan nama file output yang ada, operasi tidak akan selesai dan mengembalikan pesan kesalahan bahwa file cadangan sudah ada.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci yang berisi kunci untuk dicadangkan.
+Menentukan nama brankas kunci yang berisi kunci untuk dicadangkan.
 
 ```yaml
 Type: System.String
@@ -194,8 +197,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -244,7 +247,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzKeyVaultKey](./Get-AzKeyVaultKey.md)
 
-[Hapus-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
+[Remove-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
 
-[Restore-AzKeyVaultKey](./Restore-AzKeyVaultKey.md)
+[Pemulihan-KunciAzKeyVault](./Restore-AzKeyVaultKey.md)
 

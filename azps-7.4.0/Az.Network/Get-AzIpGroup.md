@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzIpGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzIpGroup.md
-ms.openlocfilehash: 56ab103c5115544d82e961c52679216724055857
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5bccfbbdc463021cfb4723e38d187f9e91a0be15
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142743976"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605588"
 ---
-# Get-AzIpGroup
+# Dapatkan-AzIpGroup
 
 ## SYNOPSIS
-Dapatkan Azure IpGroup
+Mendapatkan Azure IpGroup
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azipgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,8 +66,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama grup ip.
+### -Name
+Nama ipgroup.
 
 ```yaml
 Type: String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari grup ip.
+Nama grup sumber daya ipgroup.
 
 ```yaml
 Type: String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId dari grup ip.
+ResourceId dari ipgroup.
 
 ```yaml
 Type: String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

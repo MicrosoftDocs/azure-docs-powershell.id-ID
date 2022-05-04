@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTrigger.md
-ms.openlocfilehash: 658840b25b4033a65616ec67befd42a4ed32a18f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d9f1f03c24f61db3a19149913dd1de377e7ff780
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142669888"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144586980"
 ---
 # Get-AzSynapseTrigger
 
 ## SYNOPSIS
-Mendapatkan informasi tentang pemicu dalam ruang kerja.
+Mendapatkan informasi tentang pemicu di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseTrigger -WorkspaceObject <PSSynapseWorkspace> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseTrigger** mendapatkan informasi tentang pemicu dalam ruang kerja. Jika Anda menentukan nama pemicu, cmdlet akan mendapatkan informasi tentang pemicu tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua pemicu dalam ruang kerja.
+Cmdlet **Get-AzSynapseTrigger** mendapatkan informasi tentang pemicu di ruang kerja. Jika Anda menentukan nama pemicu, cmdlet mendapatkan informasi tentang pemicu tersebut. Jika Anda tidak menentukan nama, cmdlet mendapatkan informasi tentang semua pemicu di ruang kerja.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Mendapatkan daftar semua pemicu yang telah dibuat di ruang kerja ContosoWorkspac
 Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 ```
 
-Mendapatkan pemicu tunggal yang disebut ContosoTrigger di ruang kerja ContosoWorkspace.
+Mendapatkan satu pemicu yang disebut ContosoTrigger di ruang kerja ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseTrigger -Name ContosoTrigger
 ```
 
-Mendapatkan pemicu tunggal yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui pipeline.
+Mendapatkan satu pemicu yang disebut ContosoTrigger di ruang kerja ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama pemicu.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

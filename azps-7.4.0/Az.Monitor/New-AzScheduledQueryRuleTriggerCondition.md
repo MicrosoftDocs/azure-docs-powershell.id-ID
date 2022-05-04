@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
-ms.openlocfilehash: 22fa7c4666036dcefebd62fdc54e5a9946bca6cb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02a2d783bd7b6b3e0c271d0ae285d4ec70cf6509
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143314685"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144669616"
 ---
 # New-AzScheduledQueryRuleTriggerCondition
 
 ## SYNOPSIS
-Membuat objek dengan tipe Kondisi Pemicu
+Membuat objek jenis Kondisi Pemicu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruletriggercondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ New-AzScheduledQueryRuleTriggerCondition -ThresholdOperator <String> -Threshold 
 ```
 
 ## DESCRIPTION
-Membuat objek dengan tipe Kondisi Pemicu.
-Objek ini akan dialihkan ke perintah yang membuat objek Tindakan Peringatan
+Membuat objek jenis Kondisi Pemicu.
+Objek ini akan diteruskan ke perintah yang membuat objek Tindakan Peringatan
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ambang batas
-Ambang batas di atas yang peringatan akan ditembakkan
+Ambang batas di atas yang pemberitahuannya akan diaktifkan
 
 ```yaml
 Type: System.Double
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang BatasOperator
+### -ThresholdOperator
 Operator ambang batas : GreaterThan, LessThan atau Equal
 
 ```yaml
@@ -99,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

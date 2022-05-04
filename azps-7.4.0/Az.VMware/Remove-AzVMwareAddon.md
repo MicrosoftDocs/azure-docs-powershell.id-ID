@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareAddon.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareAddon.md
-ms.openlocfilehash: ac516a23fe0ec3bcf09ee225b41bdd771944e53d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 88a706b6301bb580509b8fb90afdd28078efc598
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930871"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658638"
 ---
 # Remove-AzVMwareAddon
 
 ## SYNOPSIS
-Menghapus add-on di awan pribadi
+Menghapus addon di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/remove-azvmwareaddon) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,30 +36,30 @@ Remove-AzVMwareAddon -InputObject <IVMwareIdentity> [-DefaultProfile <PSObject>]
 ```
 
 ## DESCRIPTION
-Menghapus add-on di awan pribadi
+Menghapus addon di cloud privat
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus add-on di awan pribadi
+### Contoh 1: Menghapus addon di cloud privat
 ```powershell
 Remove-AzVMwareAddon -AddonType vr -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
 ```
 
-Menghapus add-on di awan pribadi
+Menghapus addon di cloud privat
 
-### Contoh 2: Menghapus add-on di awan pribadi
+### Contoh 2: Menghapus addon di cloud privat
 ```powershell
 Get-AzVMwareAddon -AddonType vr -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group | Remove-AzVMwareAddon
 
 ```
 
-Menghapus add-on di awan pribadi
+Menghapus addon di cloud privat
 
 ## PARAMETERS
 
 ### -AddonType
-Nama add-on untuk awan pribadi
+Nama addon untuk cloud privat
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateCloudName
-Nama awan pribadi
+Nama cloud privat
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -191,8 +194,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -243,31 +246,31 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
-  - `[AddonName <String>]`: Nama add-on untuk awan pribadi
-  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
-  - `[CloudLinkName <String>]`: Nama sumber daya tautan awan
-  - `[ClusterName <String>]`: Nama kluster di cloud pribadi
+  - `[AddonName <String>]`: Nama addon untuk cloud privat
+  - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
+  - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud
+  - `[ClusterName <String>]`: Nama kluster di cloud privat
   - `[DatastoreName <String>]`: Nama datastore di kluster cloud privat
-  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Umumnya sama dengan nama tampilan DHCP
+  - `[DhcpId <String>]`: Pengidentifikasi NSX DHCP. Umumnya sama dengan nama tampilan DHCP
   - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Umumnya sama dengan nama tampilan Layanan DNS
   - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Umumnya sama dengan nama tampilan Zona DNS
   - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Umumnya sama dengan nama tampilan Gateway
-  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan pribadi
-  - `[HcxEnterpriseSiteName <String>]`: Nama Situs HCX Enterprise di awan pribadi
+  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di cloud privat
+  - `[HcxEnterpriseSiteName <String>]`: Nama Situs Perusahaan HCX di cloud privat
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Kawasan Azure
+  - `[Location <String>]`: Wilayah Azure
   - `[PlacementPolicyName <String>]`: Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
   - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
-  - `[PrivateCloudName <String>]`: Nama awan pribadi
+  - `[PrivateCloudName <String>]`: Nama cloud privat
   - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan pribadi
-  - `[ScriptExecutionName <String>]`: Nama sumber eksekusi skrip yang diminta pengguna
-  - `[ScriptPackageName <String>]`: Nama paket skrip di awan pribadi
-  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segmen
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di cloud privat
+  - `[ScriptExecutionName <String>]`: Nama sumber daya eksekusi skrip yang dipanggil pengguna
+  - `[ScriptPackageName <String>]`: Nama paket skrip di cloud privat
+  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segment
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VMGroupId <String>]`: Pengidentifikasi Grup VM NSX. Umumnya sama dengan nama tampilan Grup VM
-  - `[VirtualMachineId <String>]`: Pengidentifikasi Mesin Virtual
+  - `[VMGroupId <String>]`: Pengidentifikasi NSX VM Group. Umumnya sama dengan nama tampilan Grup VM
+  - `[VirtualMachineId <String>]`: Pengidentifikasi Komputer Virtual
 
 ## RELATED LINKS
 

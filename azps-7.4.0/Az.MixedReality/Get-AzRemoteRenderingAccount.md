@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
-ms.openlocfilehash: e35f1a1d2d40f79151b26bde1eac07f637312045
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 558357b890f89ebf935e717be3727cab8ac14148
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658044"
 ---
 # Get-AzRemoteRenderingAccount
 
 ## SYNOPSIS
 Dapatkan Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/get-azremoterenderingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRemoteRenderingAccount -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan Akun Remote Rendering dalam Grup Langganan dan Sumber Daya tertentu.
+Mendapatkan atau mencantumkan Akun Remote Rendering di Langganan dan Grup Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Remote Rendering Nama Akun.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya akun Remote Rendering.
+ID Sumber Daya Akun Remote Rendering.
 
 ```yaml
 Type: String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

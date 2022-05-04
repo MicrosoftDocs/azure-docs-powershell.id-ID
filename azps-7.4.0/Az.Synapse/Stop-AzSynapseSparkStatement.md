@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkStatement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkStatement.md
-ms.openlocfilehash: 296a816a1372e2b29b0564c7fb160e075fba86ca
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cbdcf51eb3878270838c142fc7b8f72bed44f0df
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992971"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668375"
 ---
 # Stop-AzSynapseSparkStatement
 
 ## SYNOPSIS
 Membatalkan pernyataan Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsesparkstatement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ $session = Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolN
 $session | Stop-AzSynapseStatement -LivyId 3
 ```
 
-Perintah ini membatalkan pernyataan Spark dengan ID livy yang ditentukan melalui pipeline.
+Perintah ini membatalkan pernyataan Spark dengan ID livy yang ditentukan melalui alur.
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionObject
-Objek input sesi percikan api, biasanya melewati pipeline.
+Objek input sesi Spark, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkSession
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama kolam renang Synapse Spark.
+Nama kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -173,8 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/suspend-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Suspend-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Suspend-AzSynapseSqlPool.md
-ms.openlocfilehash: c61fb4419e79b5430e0356dbb38f358d3d5da906
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 97feaa156e5214af9168304e60f3efb5231d7f8e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992899"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613076"
 ---
 # Suspend-AzSynapseSqlPool
 
 ## SYNOPSIS
 Menangguhkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/suspend-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Suspend-AzSynapseSqlPool -ResourceId <String> [-PassThru] [-AsJob] [-DefaultProf
 ```
 
 ## DESCRIPTION
-**Cmdlet Suspend-AzSynapseSqlPool** menangguhkan Azure Synapse Analytics SQL pool.
+**Cmdlet Suspend-AzSynapseSqlPool** menangguhkan kumpulan SQL Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -53,12 +56,12 @@ Suspend-AzSynapseSqlPool -ResourceId <String> [-PassThru] [-AsJob] [-DefaultProf
 Suspend-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini menangguhkan kumpulan SQL Azure Synapse Analytics aktif.
+Perintah ini menangguhkan kumpulan SQL Analitik Azure Synapse aktif.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL objek input pool, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -102,8 +105,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Synapse SQL pool.
+### -Name
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya Synapse SQL Pool.
+Pengidentifikasi sumber daya Kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -193,8 +196,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

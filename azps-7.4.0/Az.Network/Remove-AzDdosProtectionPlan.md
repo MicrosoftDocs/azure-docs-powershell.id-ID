@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDdosProtectionPlan.md
-ms.openlocfilehash: dda85df94e828da82117e8653eb631681b5a7fbf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00c7163d77176acf5ac24c8cfa151c176cfbffc1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996373"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587304"
 ---
 # Remove-AzDdosProtectionPlan
 
 ## SYNOPSIS
-Menghapus paket proteksi DDoS.
+Menghapus paket perlindungan DDoS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,18 +28,18 @@ Remove-AzDdosProtectionPlan -ResourceGroupName <String> -Name <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzDdosProtectionPlan menghapus paket proteksi DDoS.
+Cmdlet Remove-AzDdosProtectionPlan menghapus paket perlindungan DDoS.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus paket proteksi DDoS kosong
+### Contoh 1: Menghapus paket perlindungan DDoS kosong
 ```powershell
 Remove-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlan
 ```
 
-Dalam hal ini, kami menghapus paket proteksi DDoS seperti yang ditentukan.
+Dalam hal ini, kami menghapus paket perlindungan DDoS seperti yang ditentukan.
 
-### Contoh 2: Hapus paket proteksi DDoS yang terkait dengan jaringan virtual
+### Contoh 2: Menghapus paket perlindungan DDoS yang terkait dengan jaringan virtual
 ```powershell
 $vnet = Get-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName
 $vnet.DdosProtectionPlan = $null
@@ -82,9 +85,9 @@ EnableVmProtection     : false
 Remove-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlan
 ```
 
-Paket proteksi DDoS tidak dapat dihapus jika dikaitkan dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan rencana, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak dapat berlaku tanpa rencana).
-Kemudian, kami tetap menggunakan status baru dengan memipakan variabel lokal ke **Set-AzVirtualNetwork**. Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
-Jika ini adalah yang terakhir terkait dengan rencana, kami dapat menghapus paket proteksi DDoS menggunakan perintah Remove-AzDdosProtectionPlan.
+Paket perlindungan DDoS tidak dapat dihapus jika dikaitkan dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan paket, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak boleh benar tanpa rencana).
+Kemudian, kita mempertahankan status baru dengan membagi variabel lokal ke **Set-AzVirtualNetwork**. Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
+Jika ini adalah yang terakhir terkait dengan paket, kita dapat menghapus rencana perlindungan DDoS dengan menggunakan perintah Remove-AzDdosProtectionPlan.
 
 ## PARAMETERS
 
@@ -103,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama paket proteksi DDoS yang akan dihapus.
+### -Name
+Menentukan nama rencana perlindungan DDoS yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya dari rencana proteksi DDoS yang akan dihapus.
+Menentukan grup sumber daya dari rencana perlindungan DDoS yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -149,8 +152,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,4 +206,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzVirtualNetwork](./Set-AzVirtualNetwork.md)
 
-[Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
+[Pulihkan-AzSqlDatabase](./Get-AzVirtualNetwork.md)

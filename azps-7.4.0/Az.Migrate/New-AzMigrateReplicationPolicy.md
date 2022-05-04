@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
-ms.openlocfilehash: 8a1dc5c872a4adebfd52822957cdb02dcf06054a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c3833bc16691ee98f21f787d515c7c61b6f8941b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807174"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667816"
 ---
 # New-AzMigrateReplicationPolicy
 
 ## SYNOPSIS
 Operasi untuk membuat kebijakan replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Membuat kebijakan untuk VmWare Cbt
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 
 ### -ProviderSpecificInput
 The ReplicationProviderSettings.
-Untuk membangun, lihat bagian CATATAN untuk properti PROVIDERSPECIFICINPUT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PROVIDERSPECIFICINPUT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IPolicyProviderSpecificInput
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat kubah layanan pemulihan ada.
+Nama grup sumber daya tempat vault layanan pemulihan ada.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Nama kubah layanan pemulihan.
+Nama vault layanan pemulihan.
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -221,8 +224,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROVIDERSPECIFICINPUT <IPolicyProviderSpecificInput>: The ReplicationProviderSettings.
-  - `[InstanceType <String>]`: Tipe kelas.
+PROVIDERSPECIFICINPUT <IPolicyProviderSpecificInput>: ReplicationProviderSettings.
+  - `[InstanceType <String>]`: Jenis kelas.
 
 ## RELATED LINKS
 

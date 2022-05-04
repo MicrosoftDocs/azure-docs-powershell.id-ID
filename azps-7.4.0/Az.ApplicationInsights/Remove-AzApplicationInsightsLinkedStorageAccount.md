@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsLinkedStorageAccount.md
-ms.openlocfilehash: cac2fdc439370b24bb49743b2c5544c8f7916845
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ea8e1fbb48c6a6e1e262441aed2ab744d1785ee9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879228"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611492"
 ---
 # Remove-AzApplicationInsightsLinkedStorageAccount
 
 ## SYNOPSIS
-Menghapus akun penyimpanan tertaut wawasan aplikasi
+Menghapus akun penyimpanan tertaut application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzApplicationInsightsLinkedStorageAccount -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Menghapus akun penyimpanan tertaut wawasan aplikasi
+Menghapus akun penyimpanan tertaut application insights
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Menghapus akun penyimpanan tertaut wawasan aplikasi
 Get-AzApplicationInsights -ResourceGroupName "rgName" -Name "componentName" | Remove-AzApplicationInsightsLinkedStorageAccount
 ```
 
-Hapus akun penyimpanan tertaut yang terkait dengan komponen wawasan aplikasi "componentName"
+Hapus akun penyimpanan tertaut yang terkait dengan komponen application insights "componentName"
 
 ## PARAMETERS
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Komponen
+ResourceId Komponen
 
 ```yaml
 Type: System.String
@@ -126,8 +129,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

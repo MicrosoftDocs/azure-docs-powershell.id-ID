@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespaceAuthorizationRule.md
-ms.openlocfilehash: 3de6f010c1c0c3804a972a3ec09fcf708f97100d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bc916fd161e92924bf6b65ce06fdfdd2c6a4ef79
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279495"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144669202"
 ---
 # Set-AzNotificationHubsNamespaceAuthorizationRule
 
 ## SYNOPSIS
-Mengatur aturan otorisasi untuk ruang nama hub pemberitahuan.
+Mengatur aturan otorisasi untuk namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhubsnamespaceauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,31 +38,31 @@ Set-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-Nam
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** mengubah aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang ditetapkan ke ruang nama hub pemberitahuan.
-Aturan otorisasi mengelola hak pengguna ke ruang nama dan hub pemberitahuan yang terdapat dalam ruang nama tersebut.
-Cmdlet ini menyediakan dua cara untuk mengubah aturan otorisasi yang ditetapkan ke ruang nama.
-Untuk satu, Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang anda inginkan untuk dimiliki aturan.
-Anda dapat menggunakan .NET Framework untuk menyelesaikannya.
+Cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** memodifikasi aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang ditetapkan ke namespace hub pemberitahuan.
+Aturan otorisasi mengelola hak pengguna ke namespace layanan dan ke hub pemberitahuan yang terkandung dalam namespace tersebut.
+Cmdlet ini menyediakan dua cara untuk memodifikasi aturan otorisasi yang ditetapkan ke namespace layanan.
+Untuk satu, Anda dapat membuat instans objek **SharedAccessAuthorizationRuleAttributes** lalu mengonfigurasi objek tersebut dengan nilai properti yang Anda inginkan untuk dimiliki aturan.
+Anda dapat menggunakan .NET Framework untuk mencapai hal ini.
 Anda kemudian dapat menyalin nilai properti tersebut ke aturan melalui parameter *SASRule* .
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut melalui parameter *InputFile* .
-File JSON adalah file teks yang menggunakan sintaks seperti ini: {  
-    "Nama": "ContosoAuthorizationRule",  
-    "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29KkUnnpUk01Y=",  
+Atau, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan lalu menerapkan nilai tersebut melalui parameter *InputFile* .
+File JSON adalah file teks yang menggunakan sintaksis yang mirip dengan ini: {  
+    "Name": "ContosoAuthorizationRule",  
+    "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29KKUnnpUk01Y=",  
     "Hak": \[  
         "Dengarkan",  
         "Kirim"  
     \]  
-} Ketika digunakan bersama dengan cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** , sampel JSON sebelumnya mengubah aturan otorisasi bernama ContosoAuthorizationRule untuk memberi pengguna hak Dengar dan Kirim ke ruang nama.
+} Ketika digunakan bersama dengan cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** , sampel JSON sebelumnya memodifikasi aturan otorisasi bernama ContosoAuthorizationRule untuk memberi pengguna hak Dengar dan Kirim ke namespace layanan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah aturan otorisasi yang ditetapkan ke ruang nama
+### Contoh 1: Mengubah aturan otorisasi yang ditetapkan ke namespace
 ```powershell
 Set-AzNotificationHubsNamespaceAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationGroup" -InputFile "C:\Configuration\AuthorizationRules.json"
 ```
 
-Perintah ini mengubah aturan otorisasi yang ditetapkan ke ruang nama bernama ContosoNamespace.
-Anda harus menentukan grup sumber daya tempat ruang nama ditetapkan.
+Perintah ini memodifikasi aturan otorisasi yang ditetapkan ke namespace bernama ContosoNamespace.
+Anda harus menentukan grup sumber daya tempat namespace ditetapkan.
 Informasi tentang aturan otorisasi tidak disertakan dalam perintah itu sendiri.
 Sebagai gantinya, informasi tersebut diperoleh dari file input C:\Configuration\AuthorizationRules.json.
 
@@ -80,7 +83,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -111,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan ruang nama yang berisi aturan otorisasi yang diubah cmdlet ini.
-Ruang nama menyediakan cara untuk mengelompokkan dan mengkategorikan hub pemberitahuan.
+Menentukan namespace yang berisi aturan otorisasi yang diubah cmdlet ini.
+Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -127,8 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
+Menentukan grup sumber daya tempat namespace ditetapkan.
+Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -SASRule
-Menentukan objek **SharedAccessAuthorizationRuleAttributes** yang berisi informasi konfigurasi untuk aturan otorisasi yang diubah cmdlet ini.
+Menentukan objek **SharedAccessAuthorizationRuleAttributes** yang berisi informasi konfigurasi untuk aturan otorisasi yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.NotificationHubs.Models.SharedAccessAuthorizationRuleAttributes
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,6 +209,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNotificationHubsNamespaceAuthorizationRule](./New-AzNotificationHubsNamespaceAuthorizationRule.md)
 
-[Hapus-AzNotificationHubsNamespaceAuthorizationRule](./Remove-AzNotificationHubsNamespaceAuthorizationRule.md)
+[Remove-AzNotificationHubsNamespaceAuthorizationRule](./Remove-AzNotificationHubsNamespaceAuthorizationRule.md)
 
 

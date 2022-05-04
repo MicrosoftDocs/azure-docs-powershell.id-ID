@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Start-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Start-AzLogicApp.md
-ms.openlocfilehash: 79083e13dfa6b59c12dc58c34f0bec61874ec40d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 95d6acd0ce5f16acdb038e205b1a7769a5426394
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682110"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644314"
 ---
 # Start-AzLogicApp
 
 ## SYNOPSIS
 Menjalankan aplikasi logika dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/start-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,10 +29,10 @@ Start-AzLogicApp -ResourceGroupName <String> -Name <String> [-Parameters <Object
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzLogicApp** menjalankan aplikasi logika menggunakan fitur Aplikasi Logika.
+Cmdlet **Start-AzLogicApp** menjalankan aplikasi logika dengan menggunakan fitur Logic Apps.
 Tentukan nama, grup sumber daya, dan pemicu.
 Modul ini mendukung parameter dinamis.
-Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
+Untuk menggunakan parameter dinamis, ketikkan dalam perintah .
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
@@ -40,7 +43,7 @@ Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta n
 Start-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp03" -TriggerName "Trigger22"
 ```
 
-Perintah ini menjalankan aplikasi logika dalam grup sumber daya bernama ResourceGroup11.
+Perintah ini menjalankan aplikasi logika di grup sumber daya bernama ResourceGroup11.
 
 ## PARAMETERS
 
@@ -59,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama aplikasi logika yang cmdlet ini mulai.
+### -Name
+Menentukan nama aplikasi logika yang dimulai cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameters
-Menentukan objek pengumpulan parameter dari aplikasi logika.
+Menentukan objek pengumpulan parameter aplikasi logika.
 Tentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
@@ -120,8 +123,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -172,7 +175,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzLogicApp](./New-AzLogicApp.md)
 
-[Hapus-AzLogicApp](./Remove-AzLogicApp.md)
+[Remove-AzLogicApp](./Remove-AzLogicApp.md)
 
 [Set-AzLogicApp](./Set-AzLogicApp.md)
 

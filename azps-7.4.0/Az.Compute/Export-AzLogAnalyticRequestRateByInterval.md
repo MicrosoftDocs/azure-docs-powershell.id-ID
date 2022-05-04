@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticRequestRateByInterval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticRequestRateByInterval.md
-ms.openlocfilehash: 5401e1f769ccf04ee9da36de4e5df770d565772a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d0a44bd41102babcc14ef69adc7c947765d34dcf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142810198"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144637388"
 ---
 # Export-AzLogAnalyticRequestRateByInterval
 
 ## SYNOPSIS
-Ekspor log yang memperlihatkan permintaan Api yang dibuat oleh langganan ini di jendela waktu tertentu untuk memperlihatkan aktivitas pembatasan.
+Ekspor log yang menampilkan permintaan Api yang dibuat oleh langganan ini di jendela waktu tertentu untuk menampilkan aktivitas pembatasan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/export-azloganalyticrequestratebyinterval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,14 +30,14 @@ Export-AzLogAnalyticRequestRateByInterval [-Location] <String> [-FromTime] <Date
 ```
 
 ## DESCRIPTION
-Mengekspor data statistik tentang panggilan langganan ke API Microsoft.Compute menurut status Keberhasilan, Kegagalan, atau Pembatasan, dalam interval waktu yang sudah ditentukan sebelumnya. Log dapat dikelompokkan lebih lanjut dengan lima parameter: GroupByOperationName, GroupByThrottlePolicy, GroupByResourceName, GroupByUserAgent, atau GroupByApplicationId.
-Perhatikan bahwa cmdlet ini hanya mengumpulkan log Penyedia Sumber Daya Komputasi; selain itu, data tentang tipe sumber daya Disk dan Snapshot belum tersedia.
+Mengekspor data statistik tentang panggilan langganan ke MICROSOFT.Compute API berdasarkan status Berhasil, Gagal, atau Dibatasi, dalam interval waktu yang telah ditentukan sebelumnya. Log dapat dikelompokkan lebih lanjut menurut lima parameter: GroupByOperationName, GroupByThrottlePolicy, GroupByResourceName, GroupByUserAgent, atau GroupByApplicationId.
+Perhatikan bahwa cmdlet ini hanya mengumpulkan log Penyedia Sumber Komputasi; selain itu, data tentang jenis sumber daya Disk dan Snapshot belum tersedia.
 
 Untuk gambaran umum pembatasan API Penyedia Sumber Daya Komputasi, lihat https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-request-limits. 
 
 ## EXAMPLES
 
-### Contoh 1: Mengekspor rekaman yang diagregat menurut nama operasi
+### Contoh 1: Mengekspor rekaman yang dikumpulkan berdasarkan nama operasi
 ```powershell
 Export-AzLogAnalyticRequestRateByInterval -Location 'West Central US' -FromTime '2018-02-20T17:54:14.8806951-08:00' -ToTime '2018-02-22T17:54:17.5832413-08:00' -BlobContainerSasUri 'https://wkuotest1.blob.core.windows.net/mylogs?someSasUri' -IntervalLength ThirtyMins -GroupByOperationName
 ```
@@ -49,9 +52,9 @@ TIMESTAMP             operationName   TotalRequests SuccessfulRequests Throttled
 2/21/2018  9:00:00 PM <operationName> 9             9                  0
 ```
 
-Perintah ini menyimpan nomor agregat panggilan API Microsoft.Compute yang dipisahkan oleh Keberhasilan, Kegagalan, atau Pembatasan antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, diagregasikan menurut nama operasi.
+Perintah ini menyimpan jumlah agregat panggilan MICROSOFT.Compute API yang dipisahkan oleh Success, Failure, atau Throttled antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, dikumpulkan berdasarkan nama operasi.
 
-### Contoh 2: Mengekspor rekaman agregat menurut id aplikasi
+### Contoh 2: Mengekspor rekaman yang dikumpulkan oleh id aplikasi
 ```powershell
 Export-AzLogAnalyticRequestRateByInterval -Location 'West Central US' -FromTime '2018-02-20T17:54:14.8806951-08:00' -ToTime '2018-02-22T17:54:17.5832413-08:00' -BlobContainerSasUri 'https://wkuotest1.blob.core.windows.net/mylogs?someSasUri' -IntervalLength ThirtyMins -GroupByApplicationId
 ```
@@ -66,9 +69,9 @@ TIMESTAMP             clientApplicationId   TotalRequests SuccessfulRequests Thr
 2/21/2018  9:00:00 PM <clientApplicationId> 9             9                  0
 ```
 
-Perintah ini menyimpan nomor agregat panggilan API Microsoft.Compute yang dipisahkan oleh Keberhasilan, Kegagalan, atau Throttled antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, diagregat dengan id aplikasi. 
+Perintah ini menyimpan jumlah agregat panggilan MICROSOFT.Compute API yang dipisahkan oleh Success, Failure, atau Throttled antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, dikumpulkan oleh id aplikasi. 
 
-### Contoh 3: Mengekspor rekaman yang digabungkan oleh agen pengguna
+### Contoh 3: Mengekspor rekaman yang dikumpulkan oleh agen pengguna
 ```powershell
 Export-AzLogAnalyticRequestRateByInterval -Location 'West Central US' -FromTime '2018-02-20T17:54:14.8806951-08:00' -ToTime '2018-02-22T17:54:17.5832413-08:00' -BlobContainerSasUri 'https://wkuotest1.blob.core.windows.net/mylogs?someSasUri' -IntervalLength ThirtyMins -GroupByUserAgent
 ```
@@ -83,12 +86,12 @@ TIMESTAMP             userAgent   TotalRequests SuccessfulRequests ThrottledRequ
 2/21/2018  9:00:00 PM <userAgent> 9             9                  0
 ```
 
-Perintah ini menyimpan nomor agregat panggilan API Microsoft.Compute yang dipisahkan oleh Keberhasilan, Kegagalan, atau Pembatasan antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, diagregat oleh agen pengguna. 
+Perintah ini menyimpan nomor agregat panggilan MICROSOFT.Compute API yang dipisahkan oleh Success, Failure, atau Throttled antara 2018-02-20T17:54:14 dan 2018-02-22T17:54:17 dalam URI SAS yang diberikan, dikumpulkan oleh agen pengguna. 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlobContainerSasUri
-SAS Uri dari kontainer logging blob tempat LogAnalytics Api menulis log output.
+SAS Uri dari kontainer blob pengelogan tempat LogAnalytics Api menulis log output.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupByApplicationId
-Hasil kueri grup menurut Id Aplikasi.
+Mengelompokkan hasil kueri menurut Id Aplikasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupByoperationName
-Hasil kueri grup menurut Nama Operasi.
+### -GroupByOperationName
+Mengelompokkan hasil kueri menurut Nama Operasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupByThrottlePolicy
-Hasil kueri grup menurut Kebijakan Throttle diterapkan.
+Hasil kueri grup menurut Kebijakan Pembatasan diterapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupByUserAgent
-Hasil kueri grup menurut UserAgent.
+Mengelompokkan hasil kueri menurut UserAgent.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,8 +284,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

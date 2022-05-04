@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusQueue.md
-ms.openlocfilehash: 43b7a09437dac8c20525bb6ca1c937eb094e7487
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4b8cc144e37adf94ef71e8c54ac64eb1010fa9f8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739242"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641850"
 ---
 # Set-AzServiceBusQueue
 
 ## SYNOPSIS
-Memperbarui deskripsi antrean Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+Memperbarui deskripsi antrean Bus Layanan di namespace Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusqueue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzServiceBusQueue [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusQueue** memperbarui deskripsi untuk antrean Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+Cmdlet **Set-AzServiceBusQueue** memperbarui deskripsi untuk antrean Bus Layanan di namespace Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ ForwardDeadLetteredMessagesTo       :
 EnableBatchedOperations             : False
 ```
 
-Memperbarui antrean yang ditentukan dengan deskripsi baru dalam ruang nama yang ditentukan. Contoh ini memperbarui properti **DeadLetteringOnMessageExpiration** menjadi **true** dan **SupportOrdering** menjadi **true**.
+Memperbarui antrean yang ditentukan dengan deskripsi baru di namespace yang ditentukan. Contoh ini memperbarui properti **DeadLetteringOnMessageExpiration** ke **true** dan **SupportOrdering** ke **true**.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Antrean.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -145,8 +148,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

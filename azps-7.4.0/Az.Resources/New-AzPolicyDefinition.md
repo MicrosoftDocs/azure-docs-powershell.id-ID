@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyDefinition.md
-ms.openlocfilehash: c7018756339ab36e303404377c7fc5fd01b0aee6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4df0e6e2955d91f6d6cf56dba57c7a74e6f153a8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935407"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587178"
 ---
 # New-AzPolicyDefinition
 
 ## SYNOPSIS
 Membuat definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azpolicydefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,14 +64,14 @@ Cmdlet **New-AzPolicyDefinition** membuat definisi kebijakan yang menyertakan at
 New-AzPolicyDefinition -Name 'LocationDefinition' -Policy C:\LocationPolicy.json
 ```
 
-Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan di C:\LocationPolicy.json. Konten contoh untuk file LocationPolicy.json disediakan di atas. Tiga format konten file didukung:
+Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan dalam C:\LocationPolicy.json. Contoh konten untuk file LocationPolicy.json disediakan di atas. Tiga format konten file didukung:
 1. Aturan kebijakan saja (contoh di atas).
-2. Objek properti kebijakan. Format ini ditampilkan di portal saat mengedit definisi kebijakan dan mungkin menyertakan parameter.
-3. Objek kebijakan penuh. Format ini dihasilkan oleh fungsi ekspor Azure Policy dan mungkin menyertakan parameter.
+2. Objek properti kebijakan. Format ini ditampilkan di portal saat mengedit definisi kebijakan dan dapat menyertakan parameter.
+3. Objek kebijakan penuh. Format ini dihasilkan oleh fungsi ekspor Azure Policy dan dapat mencakup parameter.
 
 Catatan: Nilai yang disediakan pada baris perintah (misalnya parameter, metadata) menimpa nilai terkait yang ada dalam file.
 
-### Contoh 2: Membuat definisi kebijakan yang di parameter menggunakan parameter sebaris
+### Contoh 2: Membuat definisi kebijakan berparameter menggunakan parameter sebaris
 
 ```powershell
 <#{
@@ -83,7 +86,7 @@ Catatan: Nilai yang disediakan pada baris perintah (misalnya parameter, metadata
 New-AzPolicyDefinition -Name 'LocationDefinition' -Policy C:\LocationPolicy.json -Parameter '{ "listOfAllowedLocations": { "type": "array" } }'
 ```
 
-Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan di C:\LocationPolicy.json. Definisi parameter untuk aturan kebijakan disediakan sebaris.
+Perintah ini membuat definisi kebijakan bernama LocationDefinition yang berisi aturan kebijakan yang ditentukan dalam C:\LocationPolicy.json. Definisi parameter untuk aturan kebijakan disediakan sebaris.
 
 ### Contoh 3: Membuat definisi kebijakan sebaris dalam grup manajemen
 ```powershell
@@ -108,7 +111,7 @@ Properties         : @{displayName=VMPolicyDefinition; policyType=Custom; mode=A
 PolicyDefinitionId : /subscriptions/11111111-1111-1111-1111-111111111111/providers/Microsoft.Authorization/policyDefinitions/VMPolicyDefinition
 ```
 
-Perintah ini membuat definisi kebijakan bernama VMPolicyDefinition dengan metadata yang mengindikasikan kategorinya adalah "Mesin Virtual".
+Perintah ini membuat definisi kebijakan bernama VMPolicyDefinition dengan metadata yang menunjukkan kategorinya adalah "Komputer Virtual".
 Perintah menentukan kebijakan sebagai string dalam format JSON yang valid.
 
 ### Contoh 5: Membuat definisi kebijakan sebaris dengan mode
@@ -126,12 +129,12 @@ Properties         : @{displayName=TagsPolicyDefinition; policyType=Custom; mode
 PolicyDefinitionId : /subscriptions/11111111-1111-1111-1111-111111111111/providers/Microsoft.Authorization/policyDefinitions/TagsPolicyDefinition
 ```
 
-Perintah ini membuat definisi kebijakan bernama TagsPolicyDefinition dengan mode "Terindeks" yang mengindikasikan kebijakan harus dievaluasi hanya untuk tipe sumber daya yang mendukung tag dan lokasi.
+Perintah ini membuat definisi kebijakan bernama TagsPolicyDefinition dengan mode "Terindeks" yang menunjukkan kebijakan harus dievaluasi hanya untuk jenis sumber daya yang mendukung tag dan lokasi.
 
 ## PARAMETERS
 
 ### -ApiVersion
-Menentukan versi API penyedia sumber daya untuk digunakan.
+Menentukan versi API penyedia sumber daya yang akan digunakan.
 Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata untuk definisi kebijakan. Ini bisa berupa jalur ke nama file yang berisi metadata, atau metadata sebagai string
+Metadata untuk definisi kebijakan. Ini bisa menjadi jalur ke nama file yang berisi metadata, atau metadata sebagai string
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk definisi kebijakan.
 
 ```yaml
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Deklarasi parameter untuk definisi kebijakan. Ini bisa berupa jalur ke nama file yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
+Deklarasi parameter untuk definisi kebijakan. Ini bisa menjadi jalur ke nama file yang berisi deklarasi parameter, atau deklarasi parameter sebagai string.
 
 ```yaml
 Type: System.String
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

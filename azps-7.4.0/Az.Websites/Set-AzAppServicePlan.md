@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzAppServicePlan.md
-ms.openlocfilehash: ee72826d538f1ebb8ae8b69baa6b9dc1e6bb9f2f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2ce1b4a2557220551864529ecdfceadba3469651
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142992197"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658584"
 ---
 # Set-AzAppServicePlan
 
 ## SYNOPSIS
 Mengatur paket Azure App Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azappserviceplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Set-AzAppServicePlan [-AsJob] [-AppServicePlan] <PSAppServicePlan> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAppServicePlan** mengatur rencana Azure App Service.
+Cmdlet **Set-AzAppServicePlan** menetapkan paket Azure App Service.
 
 ## EXAMPLES
 
@@ -43,11 +46,11 @@ Cmdlet **Set-AzAppServicePlan** mengatur rencana Azure App Service.
 Set-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -PerSiteScaling $true
 ```
 
-Perintah ini mengatur opsi PerSiteScaling menjadi true pada paket App Service bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
+Perintah ini mengatur opsi PerSiteScaling ke true pada paket App Service bernama ContosoASP yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ### Contoh 2
 
-Mengatur paket Azure App Service. (autogenerasi)
+Mengatur paket Azure App Service. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -56,7 +59,7 @@ Set-AzAppServicePlan -Name 'ContosoASP' -ResourceGroupName 'Default-Web-WestUS' 
 
 ## PARAMETERS
 
-### -AdminsiteName
+### -AdminSiteName
 Nama Situs Admin
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Rencana App Service
+### -Name
+Nama Paket App Service
 
 ```yaml
 Type: System.String
@@ -146,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Persitescaling
-Per Boolean Penskalaan Situs
+### -PersiteScaling
+Boolean Penskalaan Per Situs
 
 ```yaml
 Type: System.Boolean
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag adalah pasangan nama/nilai yang memungkinkan Anda mengkategorikan sumber daya
+Tag adalah pasangan nama/nilai yang memungkinkan Anda mengategorikan sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tingkat
-Tier
+Tingkat
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -240,7 +243,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Hapus-AzWebApp](./Remove-AzWebApp.md)
+[Remove-AzWebApp](./Remove-AzWebApp.md)
 
 [Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 

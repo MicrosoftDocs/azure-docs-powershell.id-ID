@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerTransparentDataEncryptionProtector.md
-ms.openlocfilehash: 9c28abb8d3791afbe3cb21edbf3ea29f0d46ead9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 664dc098466fa8ec9e9cc433511fd718e785785c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933157"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658818"
 ---
 # Set-AzSqlServerTransparentDataEncryptionProtector
 
 ## SYNOPSIS
-Mengatur pelindung Enkripsi Data Transparan (TDE, Transparent Data Encryption) untuk server SQL.
+Mengatur pelindung Enkripsi Data Transparan (TDE) untuk server SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlservertransparentdataencryptionprotector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ Set-AzSqlServerTransparentDataEncryptionProtector [-Type] <EncryptionProtectorTy
 
 ## DESCRIPTION
 Cmdlet Set-AzSqlServerTransparentDataEncryptionProtector mengatur pelindung TDE untuk server SQL.
-Mengubah tipe pelindung TDE akan memutar pelindung.
+Mengubah jenis pelindung TDE akan memutar pelindung.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur tipe pelindung Enkripsi Data Transparan (TDE) ke ServiceManaged
+### Contoh 1: Atur jenis pelindung Enkripsi Data Transparan (TDE) ke ServiceManaged
 ```powershell
 Set-AzSqlServerTransparentDataEncryptionProtector -Type ServiceManaged -ServerName 'ContosoServer' -ResourceGroup 'ContosoResourceGroup'
 ```
@@ -41,8 +44,8 @@ ResourceGroupName    ServerName                   Type ServerKeyVaultKeyName
 -----------------    ----------                   ---- ---------------------
 ContosoResourceGroup ContosoServer      ServiceManaged ServiceManaged
 ```
-Perintah ini memperbarui tipe pelindung TDE server ke Service Managed.
-### Contoh 2: Atur tipe pelindung Enkripsi Data Transparan ke Azure Key Vault
+Perintah ini memperbarui jenis pelindung TDE server ke Dikelola Layanan.
+### Contoh 2: Atur jenis pelindung Enkripsi Data Transparan ke Azure Key Vault
 ```powershell
 Set-AzSqlServerTransparentDataEncryptionProtector -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' -ServerName 'ContosoServer' -ResourceGroup 'ContosoResourceGroup'
 ```
@@ -55,7 +58,7 @@ ContosoResourceGroup ContosoServer       AzureKeyVault contoso_contosokey_012345
 Perintah ini memperbarui server untuk menggunakan Kunci Key Vault Server dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pelindung TDE.
 ### Contoh 3
 
-Mengatur pelindung Enkripsi Data Transparan (TDE, Transparent Data Encryption) untuk server SQL. (autogenerasi)
+Mengatur pelindung Enkripsi Data Transparan (TDE) untuk server SQL. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 
@@ -66,7 +69,7 @@ Set-AzSqlServerTransparentDataEncryptionProtector -AutoRotationEnabled $false -K
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoRotationEnabled
-Status opt-in rotasi otomatis utama.
+Status keikutsertaan rotasi otomatis kunci.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -170,8 +173,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe pelindung TDE Azure Sql Database.
+### -Type
+Jenis pelindung TDE Azure Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.TransparentDataEncryption.Model.EncryptionProtectorType
@@ -186,8 +189,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

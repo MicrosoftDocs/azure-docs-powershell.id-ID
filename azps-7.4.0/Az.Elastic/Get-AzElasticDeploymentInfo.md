@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDeploymentInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDeploymentInfo.md
-ms.openlocfilehash: 3b7a81e2e6bff7bce35d657802a6a14404030349
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2268becde7dbc7f8022d9b2cff088943b4788f2b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658134"
 ---
 # Get-AzElasticDeploymentInfo
 
 ## SYNOPSIS
-Ambil informasi terkait penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastic.
+Ambil informasi mengenai penyebaran cloud Elastic yang sesuai dengan sumber daya monitor Elastic.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelasticdeploymentinfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzElasticDeploymentInfo -Name <String> -ResourceGroupName <String> [-Subscri
 ```
 
 ## DESCRIPTION
-Ambil informasi terkait penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastic.
+Ambil informasi mengenai penyebaran cloud Elastic yang sesuai dengan sumber daya monitor Elastic.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil informasi mengenai penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastic
+### Contoh 1: Mengambil informasi mengenai penyebaran cloud Elastic yang sesuai dengan sumber daya monitor Elastic
 ```powershell
 Get-AzElasticDeploymentInfo -ResourceGroupName elastic-rg-3eytki -Name elastic-rhqz1v
 ```
@@ -40,7 +43,7 @@ DiskCapacity MemoryCapacity Status  Version
 491520       16384          Healthy 7.14.1
 ```
 
-Perintah ini mengambil informasi terkait penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastis.
+Perintah ini mengambil informasi mengenai penyebaran cloud Elastic yang sesuai dengan sumber daya monitor Elastic.
 
 ## PARAMETERS
 
@@ -59,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Pantau nama sumber daya
+### -Name
+Memantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis berada.
+Nama grup sumber daya tempat sumber daya Elastic berada.
 
 ```yaml
 Type: System.String
@@ -90,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String[]
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

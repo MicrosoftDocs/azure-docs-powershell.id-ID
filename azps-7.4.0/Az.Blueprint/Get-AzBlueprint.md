@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprint.md
-ms.openlocfilehash: 5d9cfb1ebfc71ecf4370479ad430313c91b04e99
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 17ae6805a7abe9e63a6a70ec094c9e046e2fc214
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750114"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642570"
 ---
 # Get-AzBlueprint
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/get-azblueprint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Get-AzBlueprint -ManagementGroupId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Dapatkan satu atau beberapa definisi cetak biru. Definisi cetak biru ada di lingkup grup manajemen atau langganan.
+Dapatkan satu atau beberapa definisi cetak biru. Definisi cetak biru ada di grup manajemen atau cakupan langganan.
 
 ## EXAMPLES
 
@@ -132,21 +135,21 @@ Dapatkan definisi cetak biru dalam langganan yang ditentukan dan hierarki grup m
 Get-AzBlueprint -SubscriptionId "00000000-1111-0000-1111-000000000000&quot; -Name &quot;myBlueprintName"
 ```
 
-Dapatkan definisi cetak biru dengan nama tertentu dalam langganan yang ditentukan.
+Dapatkan definisi cetak biru dengan nama yang diberikan dalam langganan yang ditentukan.
 
 ### Contoh 5
 ```powershell
 Get-AzBlueprint -ManagementGroupId "myManagementGroupId&quot; -Name &quot;myBlueprintName&quot; -Version &quot;myBlueprintVersion"
 ```
 
-Dapatkan definisi cetak biru dengan nama dan versi tertentu dalam grup manajemen yang ditentukan.
+Dapatkan definisi cetak biru dengan nama dan versi yang diberikan dalam grup manajemen yang ditentukan.
 
 ### Contoh 6
 ```powershell
 Get-AzBlueprint -ManagementGroupId "myManagementGroupId" -Name "myBlueprintName" -LatestPublished
 ```
 
-Dapatkan definisi cetak biru terbaru yang diterbitkan dengan nama tertentu dalam grup manajemen yang ditentukan.
+Dapatkan definisi cetak biru terbaru yang diterbitkan dengan nama yang diberikan dalam grup manajemen yang ditentukan.
 
 ## PARAMETERS
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -LatestPublished
 Bendera definisi cetak biru terbaru yang diterbitkan.
-Ketika diatur, eksekusi mengembalikan versi terbaru definisi cetak biru.
+Saat diatur, eksekusi mengembalikan versi terbaru dari definisi cetak biru yang diterbitkan.
 Default ke false.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama definisi cetak biru.
 
 ```yaml
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

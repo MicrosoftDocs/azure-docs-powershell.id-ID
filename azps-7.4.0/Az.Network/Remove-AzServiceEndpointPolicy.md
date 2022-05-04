@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzServiceEndpointPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzServiceEndpointPolicy.md
-ms.openlocfilehash: 64660100dd922f2c351612dd77a25700eafa32f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee61889f762b30e5d33abea091eafa1a8c12bb5a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870840"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597596"
 ---
 # Remove-AzServiceEndpointPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan titik akhir layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azserviceendpointpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,14 +50,14 @@ Cmdlet **Remove-AzServiceEndpointPolicy** menghapus kebijakan titik akhir layana
 Remove-AzServiceEndpointPolicy -Name "Policy1" -ResourceGroup "resourcegroup1"
 ```
 
-Perintah ini menghapus kebijakan titik akhir layanan dengan nama Kebijakan1 yang termasuk dalam grup sumber daya dengan nama "resourcegroup1"
+Perintah ini menghapus kebijakan titik akhir layanan dengan nama Policy1 yang termasuk dalam grup sumber daya dengan nama "resourcegroup1"
 
 ### Contoh 2: Menghapus kebijakan titik akhir layanan menggunakan objek input
 ```powershell
 Remove-AzServiceEndpointPolicy -InputObject $Policy1 -ResourceGroup "resourcegroup1"
 ```
 
-Perintah ini menghapus objek kebijakan titik akhir layanan Kebijakan1 yang termasuk dalam grup sumber daya dengan nama "resourcegroup1"
+Perintah ini menghapus objek kebijakan titik akhir layanan Policy1 yang termasuk dalam grup sumber daya dengan nama "resourcegroup1"
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -103,7 +106,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kebijakan titik akhir layanan
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id kebijakan titik akhir layanan.
+ID kebijakan titik akhir layanan.
 
 ```yaml
 Type: System.String
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

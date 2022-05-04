@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: 1ef0605d3a48eb6a099379061c571908d4a162a9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0d5c2b854feb3944249e69e22652d37c3c584ad3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142875304"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144612608"
 ---
 # New-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
-Membuat akun Storage Edge baru di perangkat.
+Membuat akun Edge Storage baru di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxEdgeStorageAccount [-ResourceGroupName] <String> [-DeviceName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Data Box Edge. Untuk perangkat, satu akun Storage Edge paling banyak hanya dapat dipetakan ke satu akun Storage Cloud.
+Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Edge Storage baru di perangkat Data Box Edge. Untuk perangkat, satu akun Storage Edge dapat dipetakan paling banyak ke hanya satu akun Cloud Storage.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ edgestoragegacount2 0              OK     https://edgestoragegacount2.blob.dbEdg
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cloud
-Akan menggunakan CloudStorageAccount untuk tiering
+Akan menggunakan CloudStorageAccount untuk tingkatan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -116,8 +119,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Sumber Daya
+### -Name
+Nama sumber daya
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountCredentialName
-Menyediakan Nama Sumber Daya StorageAccountCredential yang sudah ada
+Berikan Nama Sumber Daya StorageAccountCredential yang ada
 
 ```yaml
 Type: System.String
@@ -161,8 +164,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 0f6c727552ab8a124968b1b865e28ccadb30ec80
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fcb3540d5981d58907cc2313360ed9158605fc04
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142682740"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610955"
 ---
 # Remove-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
-Menghapus penetapan peran untuk pokok tertentu yang ditetapkan ke peran tertentu pada lingkup tertentu.
+Menghapus penetapan peran ke prinsipal yang ditentukan yang ditetapkan ke peran tertentu pada cakupan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,9 +77,9 @@ Remove-AzKeyVaultRoleAssignment [-Scope <String>] [-PassThru] -InputObject <PSKe
 ```
 
 ## DESCRIPTION
-`Remove-AzKeyVaultRoleAssignment` Gunakan cmdlet untuk mencabut akses ke prinsipal apa pun pada lingkup tertentu dan peran tertentu. Objek penugasan yaitu pokok harus ditentukan. Prinsipal dapat berupa pengguna (menggunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (menggunakan parameter ObjectId untuk mengidentifikasi grup) atau prinsipal layanan (gunakan parameter ApplicationId atau ObjectId untuk mengidentifikasi ServicePrincipal. Peran yang ditetapkan prinsipal ke MUST ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
+`Remove-AzKeyVaultRoleAssignment` Gunakan cmdlet untuk mencabut akses ke perwakilan mana pun pada cakupan tertentu dan peran yang diberikan. Objek penugasan yaitu prinsipal HARUS ditentukan. Prinsipal dapat menjadi pengguna (gunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (gunakan parameter ObjectId untuk mengidentifikasi grup) atau perwakilan layanan (gunakan parameter ApplicationId atau ObjectId untuk mengidentifikasi ServicePrincipal. Peran yang ditetapkan prinsipal ke HARUS ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /users/{id}
 - GET /servicePrincipals
@@ -88,19 +91,19 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 Remove-AzKeyVaultRoleAssignment -HsmName myHsm -RoleDefinitionName "Managed HSM Policy Administrator" -SignInName user1@microsoft.com -Scope "/keys"
 ```
 
-Contoh ini mencabut peran "Administrator Kebijakan HSM terkelola" dari "user1@microsoft.com" pada lingkup "/keys".
+Contoh ini mencabut peran "Administrator Kebijakan HSM Terkelola" dari "user1@microsoft.com" pada cakupan "/keys".
 
 ### Contoh 2
 ```powershell
 Get-AzKeyVaultRoleAssignment -HsmName myHsm -SignInName user1@microsoft.com | Remove-AzKeyVaultRoleAssignment
 ```
 
-Contoh ini mencabut semua peran "user1@microsoft.com" di semua lingkup.
+Contoh ini mencabut semua peran "user1@microsoft.com" di semua cakupan.
 
 ## PARAMETERS
 
 ### -ApplicationId
-Aplikasi SPN.
+SPN aplikasi.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Role Id tempat pokok ditetapkan.
+Id Peran tempat prinsipal ditetapkan.
 
 ```yaml
 Type: System.String
@@ -234,9 +237,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup tempat penetapan peran atau definisi diterapkan, misalnya '/' atau '/keys' atau '/keys/{keyName}'.
-'/' digunakan ketika dihilangkan.
+### -Cakupan
+Cakupan tempat penetapan peran atau definisi berlaku, misalnya, '/' atau '/keys' atau '/keys/{keyName}'.
+'/' digunakan saat dihilangkan.
 
 ```yaml
 Type: System.String
@@ -265,8 +268,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

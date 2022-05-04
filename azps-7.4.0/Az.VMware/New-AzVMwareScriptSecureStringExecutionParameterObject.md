@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptSecureStringExecutionParameterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptSecureStringExecutionParameterObject.md
-ms.openlocfilehash: 8ac4048ec5adde3f2e24fed651a95a107e06c203
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 17ff53e9020b32a42fc86938149c5c5685b24e38
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143056295"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657270"
 ---
 # New-AzVMwareScriptSecureStringExecutionParameterObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ScriptSecureStringExecutionParameter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarescriptsecurestringexecutionparameterobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Membuat objek dalam memori untuk ScriptSecureStringExecutionParameter
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek Skrip Lokal Eksekusi String Aman
+### Contoh 1: Membuat objek Eksekusi String Aman Skrip lokal
 ```powershell
 New-AzVMwareScriptSecureStringExecutionParameterObject -Name azps_test_securevalue -SecureValue "passwordValue"
 ```
@@ -39,12 +42,12 @@ Name                  Type        SecureValue
 azps_test_securevalue SecureValue passwordValue
 ```
 
-Membuat objek Skrip Lokal Eksekusi String Aman
+Membuat objek Eksekusi String Aman Skrip lokal
 
 ## PARAMETERS
 
-### -Nama
-Nama parameter.
+### -Name
+Nama parameternya.
 
 ```yaml
 Type: System.String
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecureValue
-Nilai aman untuk parameter yang dilewati, tidak disimpan dalam log.
+Nilai aman untuk parameter yang diteruskan, tidak disimpan dalam log.
 
 ```yaml
 Type: System.String
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

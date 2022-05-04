@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTable.md
-ms.openlocfilehash: d2a10da8aab33dca5d9c3adcae219925d14c4eb3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8f39ff39918b45c88299e2212d1c17f3876dae18
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864396"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144668572"
 ---
 # Get-AzStorageTable
 
 ## SYNOPSIS
 Mencantumkan tabel penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,25 +47,25 @@ PS C:\>Get-AzStorageTable
 
 Perintah ini mendapatkan semua tabel penyimpanan untuk akun Storage.
 
-### Contoh 2: Daftar tabel Azure Storage menggunakan karakter wildcard
+### Contoh 2: Mencantumkan tabel Azure Storage menggunakan karakter kartubebas
 ```
 PS C:\>Get-AzStorageTable -Name table*
 ```
 
-Perintah ini menggunakan karakter wildcard untuk mendapatkan tabel penyimpanan yang namanya dimulai dengan tabel.
+Perintah ini menggunakan karakter kartubebas untuk mendapatkan tabel penyimpanan yang namanya dimulai dengan tabel.
 
-### Contoh 3: Daftar tabel Azure Storage menggunakan prefiks nama tabel
+### Contoh 3: Mencantumkan tabel Azure Storage menggunakan awalan nama tabel
 ```
 PS C:\>Get-AzStorageTable -Prefix "table"
 ```
 
-Perintah ini menggunakan parameter *Prefiks* untuk mendapatkan tabel penyimpanan yang namanya dimulai dengan tabel.
+Perintah ini menggunakan parameter *Awalan* untuk mendapatkan tabel penyimpanan yang namanya dimulai dengan tabel.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan.
-Untuk membuatnya, Anda bisa menggunakan cmdlet New-AzStorageContext.
+Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -91,10 +94,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tabel.
 Jika nama tabel kosong, cmdlet mencantumkan semua tabel.
-Jika tidak, tabel mencantumkan semua tabel yang cocok dengan nama tertentu atau pola nama reguler.
+Jika tidak, ini mencantumkan semua tabel yang cocok dengan nama yang ditentukan atau pola nama reguler.
 
 ```yaml
 Type: System.String
@@ -108,9 +111,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Prefiks
-Menentukan prefiks yang digunakan dalam nama tabel atau tabel yang ingin Anda dapatkan.
-Anda dapat menggunakannya untuk menemukan semua tabel yang dimulai dengan string yang sama, seperti tabel.
+### -Awalan
+Menentukan awalan yang digunakan dalam nama tabel atau tabel yang ingin Anda dapatkan.
+Anda dapat menggunakan ini untuk menemukan semua tabel yang dimulai dengan string yang sama, seperti tabel.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

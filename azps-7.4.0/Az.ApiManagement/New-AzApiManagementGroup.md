@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGroup.md
-ms.openlocfilehash: d31d838deea4b337e3e8a3840972b3094dd9afd8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0bb8fafe2def6cf3083b5a0802d6d740fbc93d38
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944677"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643020"
 ---
 # New-AzApiManagementGroup
 
 ## SYNOPSIS
 Membuat grup manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Perintah ini membuat grup manajemen.
 
 ### Contoh 2
 
-Membuat grup manajemen API. (autogenerasi)
+Membuat grup manajemen API. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -50,8 +53,8 @@ New-AzApiManagementGroup -Context <PsApiManagementContext> -Description 'Create 
 
 ## PARAMETERS
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -125,7 +128,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama grup manajemen.
 
 ```yaml
@@ -140,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe Grup. Grup Kustom adalah Grup yang ditentukan pengguna. Grup Sistem mencakup Administrator, Pengembang, dan Tamu. Anda tidak dapat membuat atau memperbarui Grup Sistem.  Grup Eksternal adalah grup dari Penyedia Identitas Eksternal seperti Azure Active Directory. Parameter ini bersifat opsional dan secara default diasumsikan sebagai Grup Kustom.
+### -Type
+Jenis Grup. Grup Kustom adalah Grup yang Ditentukan Pengguna. Grup Sistem mencakup Administrator, Pengembang, dan Tamu. Anda tidak dapat membuat atau memperbarui Grup Sistem.  Grup Eksternal adalah grup dari Penyedia Identitas Eksternal seperti Azure Active Directory. Parameter ini bersifat opsional dan secara default diasumsikan sebagai Grup Kustom.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementGroupType]
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -165,7 +168,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementGroupType, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementGroupType, Microsoft.Azure.PowerShell.Cmdlets.ApiManagement.ServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

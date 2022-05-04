@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: d3b5df791fe88cae4a0de31e7a7490aa8c446998
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83ce84a7c12eb0bc47e46362970fad7b17da9fa8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934399"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593710"
 ---
 # Get-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
-Dapatkan detail aplikasi terkelola Service Fabric. Hanya mendukung aplikasi arm yang digunakan.
+Dapatkan detail aplikasi terkelola Service Fabric. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceFabricManagedClusterApplication -ResourceId <String> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet ini mendapatkan detail aplikasi yang dikelola dalam grup dan kluster sumber daya yang ditentukan.
+Cmdlet ini mendapatkan detail aplikasi terkelola dalam grup sumber daya dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ $clusterName = "testCluster"
 Get-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-Contoh ini mendapatkan daftar aplikasi yang dikelola di bawah kluster "testCluster".
+Contoh ini mendapatkan daftar aplikasi terkelola di bawah kluster "testCluster".
 
 ### Contoh 3
 ```powershell
@@ -67,7 +70,7 @@ $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroup
 Get-AzServiceFabricManagedClusterApplication -ResourceId $resourceId
 ```
 
-Contoh ini akan mendapatkan detail aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini akan mendapatkan detail aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya, itu akan melemparkan pengecualian.
 
 ## PARAMETERS
 
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama aplikasi yang dikelola.
+### -Name
+Tentukan nama aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari aplikasi yang dikelola.
+Arm ResourceId dari aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

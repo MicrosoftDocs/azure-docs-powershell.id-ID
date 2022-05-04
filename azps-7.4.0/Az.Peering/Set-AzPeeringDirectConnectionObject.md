@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringDirectConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringDirectConnectionObject.md
-ms.openlocfilehash: 09783b467f5b2cb5cf4e2722428ecf7e9849bc60
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4f08e5c517af6cf9e58702d58f65c2c3f08d772e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311751"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593944"
 ---
 # Set-AzPeeringDirectConnectionObject
 
 ## SYNOPSIS
 Mengatur atau memperbarui informasi Koneksi Langsung. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.peering/set-azpeeringdirectconnectionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,25 +53,25 @@ Set-AzPeeringDirectConnectionObject -InputObject <PSDirectConnection> -UseForPee
 ```
 
 ## DESCRIPTION
-Digunakan bersama dengan Update-AzPeering, ini adalah operasi memori dan hanya akan bertahan dengan `Update-AzPeering`. 
+Digunakan bersama dengan Update-AzPeering, ini adalah operasi dalam memori dan hanya akan bertahan dengan `Update-AzPeering`. 
 
 ## EXAMPLES
 
-### Contoh 1: Upgrade Bandwidth
+### Contoh 1: Tingkatkan Bandwidth
 ```powershell
 $update = Get-AzPeering -PeerName "ContosoPeering" -ResourceGroupName rg1 | Set-AzPeeringDirectConnectionObject -BandwidthInMbps 30000
 ```
 
-Memutakhirkan bandwidth untuk koneksi pertama dalam objek Peering di memori. 
+Meningkatkan bandwidth untuk koneksi pertama di objek Peering dalam memori. 
 
 ### Contoh 2: Memperbarui Alamat Sesi Bgp
 ```powershell
 $update = Get-AzPeering -PeerName "ContosoPeering" -ResourceGroupName rg1 | Set-AzPeeringDirectConnectionObject -SessionPrefixV4 "192.168.0.1" -MaxPrefixesAdvertisedIPv4 20000
 ```
 
-Memperbarui Alamat Peering untuk koneksi pertama dalam objek Peering di memori. 
+Memperbarui Alamat Peering untuk koneksi pertama di objek Peering dalam memori. 
 
-### Contoh 3: Pembaruan Penggunaan untuk layanan peering
+### Contoh 3: Memperbarui Penggunaan untuk peering service
 ```powershell
 $update = Get-AzPeering -PeerName "ContosoPeering" -ResourceGroupName rg1 | Set-AzPeeringDirectConnectionObject -UseForPeeringService $true
 ```
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionPrefixV4
-Alamat IPv4 sesi peer
+Alamat IPv4 sesi serekan
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionPrefixV6
-Alamat IPv6 sesi peer
+Alamat IPv6 sesi serekan
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

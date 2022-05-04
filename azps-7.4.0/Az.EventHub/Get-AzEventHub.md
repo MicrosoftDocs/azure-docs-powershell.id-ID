@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHub.md
-ms.openlocfilehash: 7192c41ba8b89fa91d3b68a5153d00f36e408ce8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6666ffdc8fcb8e44faa603eece8fd4379a73b2c7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808938"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594268"
 ---
 # Get-AzEventHub
 
 ## SYNOPSIS
-Mendapatkan detail hub acara tunggal, atau mendapatkan daftar Hub Acara.
+Mendapatkan detail satu Pusat Aktivitas, atau mendapatkan daftar Azure Event Hubs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,25 +35,25 @@ Get-AzEventHub [[-Name] <String>] [-NamespaceObject] <PSNamespaceAttributes>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHub mengembalikan detail Hub Acara, atau daftar semua Hub Acara dalam ruang nama saat ini.
-Jika nama Hub Acara disediakan, detail hub acara tunggal akan dikembalikan.
-Jika nama Hub Kejadian tidak disediakan, daftar semua Hub Acara dalam ruang nama tertentu dikembalikan.
+Cmdlet Get-AzEventHub mengembalikan detail Pusat Aktivitas, atau daftar semua Azure Event Hubs di namespace saat ini.
+Jika nama Pusat Aktivitas disediakan, detail satu Pusat Aktivitas dikembalikan.
+Jika nama Pusat Aktivitas tidak disediakan, daftar semua Azure Event Hubs di namespace yang ditentukan dikembalikan.
 
 ## EXAMPLES
 
-### Contoh 1: eventhub yang ditentukan
+### Contoh 1: EventHub yang ditentukan
 ```powershell
 Get-AzEventHub -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
-Mengembalikan detail Hub \`Kejadian MyEventHubName\`.
+Mengembalikan detail Pusat \`Aktivitas MyEventHubName\`.
 
-### Contoh 2: Daftar EventHub dalam Namespace yang ditentukan
+### Contoh 2: Daftar EventHub di Namespace yang ditentukan
 ```powershell
 Get-AzEventHub -ResourceGroup MyResourceGroupName -NamespaceName MyNamespaceName
 ```
 
-Mengembalikan daftar Hub Acara di ruang \`nama MyNamespaceName\`.
+Mengembalikan daftar Event Hubs di namespace \`MyNamespaceName\`.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama EventHub
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceObject
-Objek ruang nama
+Objek namespace
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

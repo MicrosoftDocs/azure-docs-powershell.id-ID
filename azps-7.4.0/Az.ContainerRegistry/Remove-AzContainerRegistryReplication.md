@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Remove-AzContainerRegistryReplication.md
-ms.openlocfilehash: 5eef57b36066f8c5ab0b2dcbc9c0956004bc2a91
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 754555b6268a25d93038067f44aaeb4e070c6199
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171315"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596858"
 ---
 # Remove-AzContainerRegistryReplication
 
 ## SYNOPSIS
 Menghapus replikasi registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/remove-azcontainerregistryreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzContainerRegistryReplication [-Name] <String> [-ResourceGroupName] <Str
  [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplikasiObjectParameterSet
+### ReplicationObjectParameterSet
 ```
 Remove-AzContainerRegistryReplication -Replication <PSContainerRegistryReplication> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +41,7 @@ Remove-AzContainerRegistryReplication -ResourceId <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzContainerRegistryReplication menghapus replikasi registri wadah.
+Cmdlet Remove-AzContainerRegistryReplication menghapus replikasi registri kontainer.
 
 ## EXAMPLES
 
@@ -66,8 +69,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Replikasi Registri Kontainer.
+### -Name
+Nama Replikasi Container Registry.
 Default ke nama lokasi.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Kontainer.
+Nama Container Registry.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Replikasi
-Objek Registri Kontainer.
+Objek Container Registry.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistryReplication
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya registri registri kontainer
+Id sumber daya replikasi registri kontainer
 
 ```yaml
 Type: System.String
@@ -157,8 +160,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

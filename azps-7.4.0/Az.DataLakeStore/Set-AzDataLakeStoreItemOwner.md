@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemOwner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemOwner.md
-ms.openlocfilehash: 3acf031ed93c34d5212cbc6d374773c30ecd80b3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6157253ded28bfcfafff3f78af03f91f76bf43e7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143063639"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658278"
 ---
 # Set-AzDataLakeStoreItemOwner
 
 ## SYNOPSIS
-Mengubah pemilik file atau folder di Data Lake Store.
+Memodifikasi pemilik file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemowner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Perintah ini mengatur pemilik untuk direktori akar ke Patti Fuller.
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID objek pengguna, grup, atau prinsipal layanan AzureActive Directory untuk digunakan sebagai pemilik.
+Menentukan ID objek pengguna, grup, atau perwakilan layanan AzureActive Directory untuk digunakan sebagai pemilik.
 
 ```yaml
 Type: System.Guid
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa pemilik yang diperbarui akan dikembalikan.
+Menunjukkan pemilik yang diperbarui yang dihasilkan harus dikembalikan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Penyimpanan Data Lake item untuk diubah, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item yang akan diubah, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -114,8 +117,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Menentukan tipe pemilik yang akan diatur.
+### -Type
+Menentukan jenis pemilik yang akan ditetapkan.
 Nilai yang dapat diterima untuk parameter ini adalah: Pengguna dan Grup.
 
 ```yaml
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

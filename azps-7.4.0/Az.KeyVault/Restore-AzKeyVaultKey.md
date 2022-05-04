@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
-ms.openlocfilehash: 701b0c68f85e0b0bb18bddbfb176189ffcc53eac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 665c03bc24cde0e9954f25997c8d782499e72862
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285003"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144596534"
 ---
-# Restore-AzKeyVaultKey
+# Pemulihan-KunciAzKeyVault
 
 ## SYNOPSIS
-Membuat kunci dalam kubah kunci dari tombol yang dicadangkan.
+Membuat kunci dalam brankas kunci dari kunci yang dicadangkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,17 +60,17 @@ Restore-AzKeyVaultKey -HsmResourceId <String> [-InputFile] <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzKeyVaultKey** membuat kunci dalam kubah kunci yang ditentukan.
-Kunci ini adalah replika kunci yang dicadangkan dalam file input dan memiliki nama yang sama dengan kunci aslinya.
-Jika kubah kunci sudah memiliki kunci dengan nama yang sama, cmdlet ini gagal, bukan menimpa kunci asli.
+Cmdlet **Restore-AzKeyVaultKey** membuat kunci di brankas kunci yang ditentukan.
+Kunci ini adalah replika kunci yang dicadangkan dalam file input dan memiliki nama yang sama dengan kunci asli.
+Jika brankas kunci sudah memiliki kunci dengan nama yang sama, cmdlet ini gagal alih-alih menimpa kunci asli.
 Jika cadangan berisi beberapa versi kunci, semua versi akan dipulihkan.
-Kubah kunci yang Anda pulihkan kuncinya bisa berbeda dari kubah kunci yang Anda cadangkan dari kunci.
-Namun, kubah kunci harus menggunakan langganan yang sama dan berada di kawasan Azure dalam geografi yang sama (misalnya, Amerika Utara).
-Lihat Pusat Kepercayaan Microsoft Azure (https://azure.microsoft.com/support/trust-center/) untuk pemetaan kawasan Azure ke geografis.
+Brankas kunci tempat Anda memulihkan kunci dapat berbeda dari brankas kunci tempat Anda mencadangkan kunci.
+Namun, brankas kunci harus menggunakan langganan yang sama dan berada di wilayah Azure dalam geografi yang sama (misalnya, Amerika Utara).
+Lihat Pusat Kepercayaan Microsoft Azure (https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan kunci cadangan
+### Contoh 1: Memulihkan kunci yang dicadangkan
 ```powershell
 Restore-AzKeyVaultKey -VaultName 'MyKeyVault' -InputFile "C:\Backup.blob"
 ```
@@ -86,7 +89,7 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini memulihkan kunci, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kubah kunci bernama MyKeyVault.
+Perintah ini memulihkan kunci, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam brankas kunci bernama MyKeyVault.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmName
-Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang dipilih saat ini.
+Nama HSM. Cmdlet membangun FQDN dari HSM terkelola berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmResourceId
-Id Sumber Daya HSM
+Id Sumber Daya Hsm
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Menentukan berkas input yang berisi cadangan kunci untuk dipulihkan.
+Menentukan file input yang berisi cadangan kunci yang akan dipulihkan.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci untuk memulihkan kunci.
+Menentukan nama brankas kunci untuk memulihkan kunci.
 
 ```yaml
 Type: System.String
@@ -210,8 +213,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -260,9 +263,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzKeyVaultKey](./Add-AzKeyVaultKey.md)
 
-[Backup-AzKeyVaultKey](./Backup-AzKeyVaultKey.md)
+[Cadangan-KunciAzKeyVault](./Backup-AzKeyVaultKey.md)
 
 [Get-AzKeyVaultKey](./Get-AzKeyVaultKey.md)
 
-[Hapus-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
+[Remove-AzKeyVaultKey](./Remove-AzKeyVaultKey.md)
 

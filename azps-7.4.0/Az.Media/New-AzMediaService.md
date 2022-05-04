@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/new-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaService.md
-ms.openlocfilehash: 3a40e0c9a1e327e357bb0a4f664ea00a2c369aec
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c39068ad3d72bd4bc1446068fa24c300c747f144
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940465"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144658008"
 ---
 # New-AzMediaService
 
 ## SYNOPSIS
 Membuat layanan media jika layanan media sudah ada, semua propertinya diperbarui dengan input yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.media/new-azmediaservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ New-AzMediaService [-ResourceGroupName] <String> [-AccountName] <String> [-Locat
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMediaService** menciptakan layanan media.
+Cmdlet **New-AzMediaService** membuat layanan media.
 Jika layanan media sudah ada, cmdlet ini memperbarui propertinya.
 
 ## EXAMPLES
 
-### Contoh1: Membuat layanan media dengan akun penyimpanan utama saja
+### Contoh1: Membuat layanan media hanya dengan akun penyimpanan utama
 ```powershell
 # Variables
 ## Global
@@ -65,7 +68,7 @@ $StorageAccount = New-AzStorageAccount -ResourceGroupName $ResourceGroupName -Na
 New-AzMediaService -ResourceGroupName $ResourceGroupName -AccountName $MediaServiceName -Location $Location -StorageAccountId $StorageAccount.Id -Tag $Tags
 ```
 
-Contoh ini memperlihatkan cara membuat layanan media dengan menentukan akun penyimpanan utama saja.
+Contoh ini menunjukkan cara membuat layanan media dengan menentukan akun penyimpanan utama saja.
 Skrip ini menggunakan beberapa cmdlet lainnya.
 
 ### Contoh 2: Membuat layanan media dengan beberapa penyimpanan
@@ -104,7 +107,7 @@ $StorageAccounts = @($PrimaryStorageAccount, $SecondaryStorageAccount)
 ## Create a media service.New-AzMediaService -ResourceGroupName $ResourceGroupName -AccountName $MediaServiceName -Location $Location -StorageAccounts $StorageAccounts -Tag $Tags
 ```
 
-Contoh ini memperlihatkan cara membuat layanan media dengan beberapa akun penyimpanan.
+Contoh ini menunjukkan cara membuat layanan media dengan beberapa akun penyimpanan.
 Skrip ini menggunakan beberapa cmdlet lainnya.
 
 ## PARAMETERS
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat cmdlet ini membuat layanan media.
+Menentukan wilayah tempat cmdlet ini membuat layanan media.
 
 ```yaml
 Type: System.String
@@ -214,8 +217,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -264,7 +267,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzMediaService](./Get-AzMediaService.md)
 
-[Hapus-AzMediaService](./Remove-AzMediaService.md)
+[Remove-AzMediaService](./Remove-AzMediaService.md)
 
 [Set-AzMediaService](./Set-AzMediaService.md)
 

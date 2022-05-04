@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzConfigurationAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzConfigurationAssignment.md
-ms.openlocfilehash: 6ce8f67c95339de5e0e1579da310b484cf071577
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ec58eb29e757485028c48f7f5542bbc027fcf6f6
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143284193"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144605706"
 ---
 # Get-AzConfigurationAssignment
 
 ## SYNOPSIS
-Konfigurasi daftarSertaan untuk sumber daya.
+Mencantumkan configurationAssignments untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azconfigurationassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzConfigurationAssignment [-ResourceGroupName] <String> [-ProviderName] <Str
 ```
 
 ## DESCRIPTION
-Konfigurasi daftarSertaan untuk sumber daya.
+Mencantumkan configurationAssignments untuk sumber daya.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Name                       : ps2
 Type                       : Microsoft.Maintenance/configurationAssignments
 ```
 
-Konfigurasi daftarSertakan untuk host khusus.
+Mencantumkan configurationAssignments untuk host khusus.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceParentType
-Tipe sumber daya induk.
+Jenis sumber daya induk.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-Tipe sumber daya.
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsLinkedStorageAccount.md
-ms.openlocfilehash: f9dbde1a42b94ec5952a31bd7f77c2a9fde9fe4e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3d3cfd84e53c15321e8e5c21370633e67180c00
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067329"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593243"
 ---
 # New-AzApplicationInsightsLinkedStorageAccount
 
 ## SYNOPSIS
-Membuat akun penyimpanan tertaut wawasan aplikasi
+Membuat akun penyimpanan tertaut application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightslinkedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzApplicationInsightsLinkedStorageAccount -ResourceId <String> -LinkedStorag
 ```
 
 ## DESCRIPTION
-Membuat akun penyimpanan tertaut wawasan aplikasi
+Membuat akun penyimpanan tertaut application insights
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ $account = Get-AzStorageAccount -ResourceGroupName "rgName" -Name "accountName"
 Get-AzApplicationInsights -ResourceGroupName "rgName" -Name "componentName" | New-AzApplicationInsightsLinkedStorageAccount -LinkedStorageAccountResourceId $account.Id
 ```
 
-Membuat akun penyimpanan tertaut $account di bawah komponen "componentName"
+Buat akun penyimpanan tertaut $account di bawah komponen "componentName"
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedStorageAccountResourceId
-Id Sumber Daya Akun Storage
+Storage ResourceId Akun
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Komponen
+ResourceId Komponen
 
 ```yaml
 Type: System.String
@@ -144,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsights.md
-ms.openlocfilehash: f0db2e1d8b59a45e486bfaa798c4378a10d29fdf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1cbf25a6efa51a2168a6514d833d396731f0fa7e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593100"
 ---
 # Update-AzApplicationInsights
 
 ## SYNOPSIS
-memperbarui sumber daya wawasan aplikasi yang sudah ada
+memperbarui sumber daya application insights yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsights) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzApplicationInsights [-ResourceGroupName] <String> [-Name] <String> [-Ta
 ```
 
 ## DESCRIPTION
-memperbarui sumber daya wawasan aplikasi yang sudah ada
+memperbarui sumber daya application insights yang ada
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ memperbarui sumber daya wawasan aplikasi yang sudah ada
 Update-AzApplicationInsights -ResourceGroupName "rgName" -Name "aiName" -PublicNetworkAccessForIngestion "Disabled" -PublicNetworkAccessForQuery "Disabled"
 ```
 
-perbarui komponen wawasan aplikasi "aiName" PublicNetworkAccessForIngestion/PublicNetworkAccessForQuery keduanya menjadi "Disabled"
+perbarui komponen application insights "aiName" PublicNetworkAccessForIngestion/PublicNetworkAccessForQuery keduanya menjadi "Dinonaktifkan"
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Sumber Daya Insights Aplikasi.
 
 ```yaml
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForIngestion
-Tipe akses jaringan untuk mengakses aplikasi Insights penyerapan.
+Jenis akses jaringan untuk mengakses penyerapan Insights Aplikasi.
 Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccessForQuery
-Tipe akses jaringan untuk mengakses kueri Insights Aplikasi.
+Jenis akses jaringan untuk mengakses kueri Insights Aplikasi.
 Nilai harus 'Diaktifkan' atau 'Dinonaktifkan'
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionInDays
-Penyimpanan Dalam Hari, 90 secara default.
+Retensi Dalam Hari, 90 secara default.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -147,8 +150,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

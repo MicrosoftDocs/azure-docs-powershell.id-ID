@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Add-AzWebAppTrafficRouting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Add-AzWebAppTrafficRouting.md
-ms.openlocfilehash: 6e22a8d4d8ec6f400f12c302b0c4db94ec587c29
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f3b48adda8b9ede6caf93aa77dd942137909dd41
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142930655"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144657234"
 ---
 # Add-AzWebAppTrafficRouting
 
 ## SYNOPSIS
-Menambahkan Aturan perutean ke Slot.
+Tambahkan Aturan perutean ke Slot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/add-azwebapptrafficrouting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,24 +27,24 @@ Add-AzWebAppTrafficRouting -ResourceGroupName <String> -WebAppName <String> -Rou
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzWebAppTrafficRouting** menambahkan aturan Perutean ke Slot Azure Web App.
+Cmdlet **Add-AzWebAppTrafficRouting** menambahkan aturan Perutean ke Slot Aplikasi Web Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan aturan perutean untuk mentransfer 15% lalu lintas produksi ke slot Stg
+### Contoh 1: Menambahkan aturan perutean untuk mentransfer 15% lalu lintas produksi ke slot Stg
 ```powershell
 Add-AzWebAppTrafficRouting -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" -RoutingRule @{ActionHostName='XXXX.azurewebsites.net';ReroutePercentage=15;Name='Stg'}
 ```
 
 Perintah ini menambahkan aturan perutean untuk mentransfer 15% lalu lintas produksi ke slot Stg
 
-### Contoh 2: Tambahkan aturan perutean untuk mengalihkan lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% dengan cara tambahan.
+### Contoh 2: Tambahkan aturan perutean untuk mentransfer lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% secara bertahap.
 ```powershell
 Add-AzWebAppTrafficRouting -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" -RoutingRule @{ActionHostName='XXXX.azurewebsites.net';ReroutePercentage=50;ChangeIntervalInMinutes=1;
 MinReroutePercentage=50;MaxReroutePercentage=90;Name='Stg';ChangeStep=10}
 ```
 
-Perintah ini menambahkan aturan perutean untuk mengalihkan lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% dengan cara tambahan.
+Perintah ini menambahkan aturan perutean untuk mentransfer lalu lintas produksi ke slot Stg berkisar dari 50% hingga 90% secara bertahap.
 
 ## PARAMETERS
 
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PeruteanRule
-Perutean Aplikasi Web.
+### -RoutingRule
+RoutingRule Aplikasi Web.
 Contoh: -RoutingRule @{ActionHostName=$slot. DefaultHostName ; ReroutePercentage=$ReroutePercentage ; Name=$slotName}
 
 ```yaml
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -138,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

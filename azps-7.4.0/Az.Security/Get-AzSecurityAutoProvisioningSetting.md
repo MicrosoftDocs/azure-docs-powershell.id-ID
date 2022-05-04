@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutoProvisioningSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutoProvisioningSetting.md
-ms.openlocfilehash: f98e0bf3507158de77fe6dff779a3e4f683b80a3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c877c97c956bd0d5f7f266f8c7319012985b41e8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935047"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144587106"
 ---
 # Get-AzSecurityAutoProvisioningSetting
 
 ## SYNOPSIS
-Mendapatkan pengaturan penyediaan otomatis keamanan
+Mendapatkan pengaturan provisi otomatis keamanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityautoprovisioningsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ Get-AzSecurityAutoProvisioningSetting -ResourceId <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Pengaturan Penyediaan Otomatis memungkinkan Anda memutuskan apakah Anda ingin Azure Security Center menyediakan agen keamanan yang akan diinstal secara otomatis di VM Anda.
-Agen keamanan akan memantau VM Anda untuk membuat peringatan keamanan dan memantau kepatuhan keamanan VM.
+Provisi Otomatis Pengaturan memungkinkan Anda memutuskan apakah Anda ingin Azure Security Center untuk secara otomatis menyediakan agen keamanan yang akan diinstal pada VM Anda.
+Agen keamanan akan memantau VM Anda untuk membuat pemberitahuan keamanan dan memantau kepatuhan keamanan VM.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/autoProvisioningSettings/default default On
 ```
 
-Mendapatkan pengaturan penyediaan otomatis untuk langganan
+Mendapatkan pengaturan provisi otomatis untuk langganan
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

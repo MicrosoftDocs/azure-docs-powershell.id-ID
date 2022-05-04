@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Resume-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Resume-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: a133719f8e836ed135ee10e511f6b05f48ddcb9e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd987367b821aa4524ddf38ad6c5546c4f67f67a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311607"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671146"
 ---
 # Resume-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
-Melanjutkan contoh Kapasitas Tersemat PowerBI.
+Melanjutkan instans Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/resume-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Resume-AzPowerBIEmbeddedCapacity [-InputObject] <PSPowerBIEmbeddedCapacity> [-Pa
 ```
 
 ## DESCRIPTION
-Cmdlet Resume-AzPowerBIEmbeddedCapacity melanjutkan contoh Kapasitas Tersemat PowerBI
+Cmdlet Resume-AzPowerBIEmbeddedCapacity melanjutkan instans Kapasitas Tersemat PowerBI
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Tier                   : PBIE_Azure
 Tag                    : {}
 ```
 
-Perintah ini akan melanjutkan kapasitas jeda bernama testcapacity dalam testRG grup sumber daya
+Perintah ini akan melanjutkan kapasitas jeda bernama testcapacity di testRG grup sumber daya
 
 ## PARAMETERS
 
@@ -95,8 +98,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Kapasitas Tersemat PowerBI
+### -Name
+Nama Kapasitas PowerBI Embedded
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
+### -Confirm
 Meminta pengguna untuk mengonfirmasi apakah akan melakukan operasi
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar melakukannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

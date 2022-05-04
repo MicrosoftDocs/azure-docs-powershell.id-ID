@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseActivity.md
-ms.openlocfilehash: 9300b6f545c58a5430023d20c836e7d29556d199
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 02c783a125edb5c0d5d47703dcde79a932a8f03b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142737406"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144597272"
 ---
 # Stop-AzSqlDatabaseActivity
 
 ## SYNOPSIS
 Membatalkan operasi pembaruan asinkron pada database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/stop-azsqldatabaseactivity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Stop-AzSqlDatabaseActivity** membatalkan operasi pembaruan asinkron pad
 
 ## EXAMPLES
 
-### Contoh 1: Batalkan operasi pembaruan asinkron pada database
+### Contoh 1: Membatalkan operasi pembaruan asinkron pada database
 ```powershell
 Stop-AzSqlDatabaseActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -OperationId af97005d-9243-4f8a-844e-402d1cc855f5
 ```
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElasticPoolName
-Nama Azure SQL Elastic Pool.
+Nama Kumpulan Elastis Azure SQL.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama Microsoft SQL Server yang menjadi host database.
+Menentukan nama Microsoft SQL Server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -145,8 +148,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
