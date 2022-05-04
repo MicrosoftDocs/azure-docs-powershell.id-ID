@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAEMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAEMExtension.md
-ms.openlocfilehash: 9fa86619a581858e26eff44dea1f60a6737c35e2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9161b8077ab73b42d8afd9f45c2c3b060c7a32d8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127611"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646906"
 ---
 # Set-AzVMAEMExtension
 
 ## SYNOPSIS
-Mengaktifkan dukungan untuk pemantauan untuk sistem SAP.
+Memungkinkan dukungan untuk pemantauan untuk sistem SAP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmaemextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,17 +31,17 @@ Set-AzVMAEMExtension [-ResourceGroupName] <String> [-VMName] <String> [-EnableWA
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMAEMExtension** memperbarui konfigurasi mesin virtual untuk mengaktifkan atau memperbarui dukungan untuk pemantauan sistem SAP yang diinstal pada mesin virtual.
-Cmdlet menginstal ekstensi Azure Enhanced Monitoring (AEM) yang mengumpulkan data kinerja dan membuatnya dapat ditemukan untuk sistem SAP.
+Cmdlet **Set-AzVMAEMExtension** memperbarui konfigurasi komputer virtual untuk mengaktifkan atau memperbarui dukungan untuk pemantauan untuk sistem SAP yang diinstal pada komputer virtual.
+Cmdlet menginstal ekstensi Azure Enhanced Monitoring (AEM) yang mengumpulkan data performa dan membuatnya dapat ditemukan untuk sistem SAP.
 
 ## EXAMPLES
 
-### Contoh 1: Menggunakan ekstensi AEM
+### Contoh 1: Gunakan ekstensi AEM
 ```powershell
 Set-AzVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "contoso-server" -WADStorageAccountName "stdstorage"
 ```
 
-Perintah ini mengonfigurasi mesin virtual bernama contoso-server untuk menggunakan ekstensi AEM.
+Perintah ini mengonfigurasi komputer virtual bernama contoso-server untuk menggunakan ekstensi AEM.
 Perintah menentukan akun penyimpanan bernama stdstorage.
 
 ## PARAMETERS
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableWAD
-Jika parameter ini disediakan, commandlet akan mengaktifkan Windows Azure Diagnostics untuk mesin virtual ini.
+Jika parameter ini disediakan, commandlet akan mengaktifkan Windows Diagnostik Azure untuk komputer virtual ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Menentukan tipe sistem operasi disk sistem operasi.
-Jika disk sistem operasi tidak memiliki tipe, Anda harus menentukan parameter ini.
+Menentukan jenis sistem operasi disk sistem operasi.
+Jika disk sistem operasi tidak memiliki jenis, Anda harus menentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Windows dan Linux.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual yang diubah cmdlet ini.
+Menentukan nama grup sumber daya komputer virtual yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -166,8 +169,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
-Cmdlet ini menambahkan ekstensi AEM untuk mesin virtual yang ditentukan parameter ini.
+Menentukan nama komputer virtual.
+Cmdlet ini menambahkan ekstensi AEM untuk komputer virtual yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WADStorageAccountName
 Menentukan nama akun penyimpanan yang digunakan cmdlet ini untuk mengonfigurasi ekstensi LinuxDiagnostics atau IaaSDiagnostics.
-Jika mesin virtual tidak menggunakan akun penyimpanan standar, Anda harus menentukan nilai untuk parameter ini.
+Jika komputer virtual tidak menggunakan akun penyimpanan standar, Anda harus menentukan nilai untuk parameter ini.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

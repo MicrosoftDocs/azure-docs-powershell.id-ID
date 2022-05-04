@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccount.md
-ms.openlocfilehash: b8b722fbd3d9e5af6321181f57769fd0079bd455
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d5bc4f0bb9d09ee8ac0d2df286c4d45822ad0aad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811656"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144647104"
 ---
 # New-AzBatchAccount
 
 ## SYNOPSIS
 Membuat akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzBatchAccount [-AccountName] <String> [-Location] <String> [-ResourceGroupN
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchAccount** membuat akun Azure Batch untuk grup sumber daya dan lokasi yang ditentukan.
+Cmdlet **New-AzBatchAccount** membuat akun Azure Batch untuk grup dan lokasi sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -49,11 +52,11 @@ Tags                         :
 TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 ```
 
-Perintah ini membuat akun Batch bernama pfuller menggunakan grup sumber daya ResourceGroup03 di lokasi AS Barat.
+Perintah ini membuat akun Batch bernama pfuller menggunakan grup sumber daya ResourceGroup03 di lokasi US Barat.
 
 ### Contoh 2
 
-Membuat akun Batch. (autogenerasi)
+Membuat akun Batch. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -64,7 +67,7 @@ New-AzBatchAccount -AccountName 'pfuller' -AutoStorageAccountId <String> -Locati
 
 ### -AccountName
 Menentukan nama akun Batch yang dibuat cmdlet ini.
-Nama akun batch harus panjangnya antara 3 dan 24 karakter dan hanya berisi angka dan huruf kecil.
+Panjang nama akun batch harus antara 3 dan 24 karakter dan hanya berisi angka dan huruf kecil.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultId
-ID sumber daya kubah kunci Azure yang terkait dengan akun Batch.
+ID sumber daya brankas kunci Azure yang terkait dengan akun Batch.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUrl
-URL kubah kunci Azure yang terkait dengan akun Batch.
+URL brankas kunci Azure yang terkait dengan akun Batch.
 
 ```yaml
 Type: System.String
@@ -155,8 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat cmdlet ini membuat akun.
-Untuk informasi selengkapnya, lihat [Kawasan Azure](https://azure.microsoft.com/en-us/regions).
+Menentukan wilayah tempat cmdlet ini membuat akun.
+Untuk informasi selengkapnya, lihat [Wilayah Azure](https://azure.microsoft.com/en-us/regions).
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolAllocationMode
-Mode alokasi untuk membuat kumpulan dalam akun Batch.
+Mode alokasi untuk membuat kumpulan di akun Batch.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Batch.Models.PoolAllocationMode]
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Tipe akses jaringan publik
+Jenis akses jaringan publik
 
 ```yaml
 Type: Microsoft.Azure.Management.Batch.Models.PublicNetworkAccessType
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -253,7 +256,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccount](./Get-AzBatchAccount.md)
 
-[Hapus-AzBatchAccount](./Remove-AzBatchAccount.md)
+[Remove-AzBatchAccount](./Remove-AzBatchAccount.md)
 
 [Set-AzBatchAccount](./Set-AzBatchAccount.md)
 

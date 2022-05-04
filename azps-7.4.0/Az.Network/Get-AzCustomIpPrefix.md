@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azcu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzCustomIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzCustomIpPrefix.md
-ms.openlocfilehash: 8b1f6287c19794b1efdc21c572a7b5db1b6d0bf6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ab8b431c6e8e2b27276c86a0a160b56429840bf7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143282231"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604436"
 ---
 # Get-AzCustomIpPrefix
 
 ## SYNOPSIS
 Mendapatkan sumber daya CustomIpPrefix
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azcustomipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 

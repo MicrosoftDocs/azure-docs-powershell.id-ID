@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssVM.md
-ms.openlocfilehash: 49785f9ff9c827e0d6627bba8b54bbfa63977dbf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 98d252a1e5a39fea597d5fe65613d49b5131d83d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004995"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644694"
 ---
 # Update-AzVmssVM
 
 ## SYNOPSIS
-Memperbarui status Vmss VM.
+Memperbarui status VM VMss.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvmssvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Update-AzVmssVM [-DataDisk <PSVirtualMachineDataDisk[]>] [-ProtectFromScaleIn <B
 ```
 
 ## DESCRIPTION
-Memperbarui status Vmss VM.  Untuk saat ini, satu-satunya pembaruan yang diperbolehkan adalah menambahkan disk data terkelola.
+Memperbarui status VM VMss.  Untuk saat ini, satu-satunya pembaruan yang diizinkan adalah menambahkan disk data terkelola.
 
 ## EXAMPLES
 
@@ -54,10 +57,10 @@ $VmssVM = Get-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -Insta
 Update-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0 -DataDisk $datadisk
 ```
 
-Perintah pertama akan mendapatkan disk terkelola yang sudah ada.
-Perintah berikutnya membuat objek disk data dengan disk yang dikelola.
-Perintah berikutnya mendapatkan VM Vmss yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah terakhir memperbarui VM VM dengan menambahkan disk data baru.
+Perintah pertama mendapatkan disk terkelola yang ada.
+Perintah berikutnya membuat objek disk data dengan disk terkelola.
+Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
+Perintah akhir memperbarui VM VM dengan menambahkan disk data baru.
 
 ### Contoh 2: Menambahkan disk data terkelola ke VM Vmss menggunakan Add-AzVMDataDisk
 ```powershell
@@ -67,14 +70,14 @@ $VmssVM = Add-AzVMDataDisk -VirtualMachineScaleSetVM $VmssVM -Lun 0 -DiskSizeInG
 Update-AzVmssVM -VirtualMachineScaleSetVM $VmssVM
 ```
 
-Perintah pertama akan mendapatkan disk terkelola yang sudah ada.
-Perintah berikutnya mendapatkan VM Vmss yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah berikutnya menambahkan disk yang dikelola ke VM Vmss yang disimpan secara lokal di $VmssVM.
-Perintah terakhir memperbarui VM VM dengan disk data tambahan.
+Perintah pertama mendapatkan disk terkelola yang ada.
+Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
+Perintah berikutnya menambahkan disk terkelola ke VM Vmss yang disimpan secara lokal di $VmssVM.
+Perintah akhir memperbarui VM VM dengan disk data tambahan.
 
 ### Contoh 3
 
-Memperbarui status Vmss VM. (autogenerasi)
+Memperbarui status VM VMss. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -84,7 +87,7 @@ Update-AzVmssVM -InstanceId 0 -ProtectFromScaleIn $false -ProtectFromScaleSetAct
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -LindungiFromScaleIn
-Menunjukkan bahwa kumpulan skala mesin virtual VM tidak boleh dipertimbangkan untuk dihapus selama operasi skala masuk.
+### -ProtectFromScaleIn
+Menunjukkan bahwa VM set skala komputer virtual tidak boleh dipertimbangkan untuk penghapusan selama operasi penyempurnaan skala.
 
 ```yaml
 Type: System.Boolean
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectFromScaleSetAction
-Menunjukkan bahwa pembaruan model atau tindakan (termasuk skala-dalam) yang dimulai pada VMSS tidak boleh diterapkan ke VMSS VMSS.
+Menunjukkan bahwa pembaruan atau tindakan model (termasuk penyempurnaan skala) yang dimulai pada VMSS tidak boleh diterapkan ke VMSS VM.
 
 ```yaml
 Type: System.Boolean
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Grup Sumber Daya dari VMSS.
+Menentukan nama Grup Sumber Daya VMSS.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya untuk kumpulan skala mesin virtual VM
+Id sumber daya untuk VM set skala komputer virtual
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserData
-UserData untuk Vmss Vm, yang akan dikodekan basis-64. Pelanggan tidak boleh memberikan rahasia apa pun di sini.
+UserData untuk Vmss Vm, yang akan dikodekan base-64. Pelanggan tidak boleh meneruskan rahasia apa pun di sini.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSetVM
-Skala mesin virtual lokal mengatur objek VM
+Objek VM set skala komputer virtual lokal
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Nama kumpulan skala mesin virtual
+Nama set skala komputer virtual
 
 ```yaml
 Type: System.String
@@ -247,8 +250,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

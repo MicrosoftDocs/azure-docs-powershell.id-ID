@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: f49da2994ccda1b726b0962561e9df3f57cc74a2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 931552b3315cad0d7042caaf15313edd97ae01c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872388"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613958"
 ---
 # Add-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Menambahkan pendengar HTTP ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayhttplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ $AppGw = Add-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "
 ```
 
 Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
-Perintah kedua menambahkan pendengar, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan NamaHost, ke gateway aplikasi.
+Perintah kedua menambahkan pendengar, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan HostNames, ke gateway aplikasi.
 
 ## PARAMETERS
 
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfiguration
-Menentukan objek sumber daya IP ujung-depan gateway aplikasi.
+Menentukan objek sumber daya IP front-end gateway aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfigurationId
-Menentukan ID IP ujung-depan gateway aplikasi.
+Menentukan ID IP front-end gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPortId
-Menentukan ID port ujung-depan gateway aplikasi.
+Menentukan ID port front-end gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -240,8 +243,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama port ujung-depan yang ditambahkan perintah ini.
+### -Name
+Menentukan nama port front-end yang ditambahkan perintah ini.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 
 ### -Protokol
 Menentukan protokol pendengar HTTP.
-Baik HTTP maupun HTTPS didukung.
+HTTP dan HTTPS didukung.
 
 ```yaml
 Type: System.String
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

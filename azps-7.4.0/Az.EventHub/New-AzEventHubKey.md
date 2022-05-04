@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubKey.md
-ms.openlocfilehash: b42ae41f5ec4eb929adaabd5eb9f997f53c252e3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da4044c4c7f11271bea407cf183f24b782a60b2c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683964"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144644352"
 ---
 # New-AzEventHubKey
 
 ## SYNOPSIS
-Membuat kunci utama atau sekunder baru untuk aturan otorisasi Hub Kejadian tertentu.
+Membuat kunci primer atau sekunder baru untuk aturan otorisasi Azure Event Hubs yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzEventHubKey [-ResourceGroupName] <String> [-Namespace] <String> [-EventHub
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzEventHubKey meregenerasi kunci SAS utama atau sekunder untuk aturan otorisasi Hub Kejadian yang ditentukan.
+Cmdlet New-AzEventHubKey meregenerasi kunci SAS primer atau sekunder untuk aturan otorisasi Azure Event Hubs yang ditentukan.
 
 ## EXAMPLES
 
@@ -43,14 +46,14 @@ Cmdlet New-AzEventHubKey meregenerasi kunci SAS utama atau sekunder untuk aturan
 New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -Name MyAuthRuleName -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi kunci utama untuk aturan \`otorisasi MyAuthRuleName\`.
+Meregenerasi kunci primer untuk aturan \`otorisasi MyAuthRuleName\`.
 
 ### Contoh 2: EventHub - AuthorizationRule PrimaryKey
 ```powershell
 New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyAuthRuleName -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi kunci utama untuk aturan \`otorisasi MyAuthRuleName\`.
+Meregenerasi kunci primer untuk aturan \`otorisasi MyAuthRuleName\`.
 
 ### Contoh 3: - Namespace - AuthorizationRule SecondaryKey
 ```powershell
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyValue
-Kunci 256-bit berkode base64 untuk menandatangani dan memvalidasi token SAS.
+Kunci 256-bit yang dikodekan base64 untuk menandatangani dan memvalidasi token SAS.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama AuthorizationRule
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama
+Nama Namespace
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerateKey
-Kunci Regenerasi - 'PrimaryKey'/'SecondaryKey'
+Regenerasi Kunci - 'PrimaryKey'/'SecondaryKey'
 
 ```yaml
 Type: System.String
@@ -172,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

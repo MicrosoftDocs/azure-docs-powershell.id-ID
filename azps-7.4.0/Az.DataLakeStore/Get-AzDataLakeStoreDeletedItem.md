@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreDeletedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreDeletedItem.md
-ms.openlocfilehash: fbc5f85fb95f94be317df943e9e4a21b0159bf40
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b314a2b2ab864890775342a5bb873f926892c7ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685260"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617576"
 ---
 # Get-AzDataLakeStoreDeletedItem
 
 ## SYNOPSIS
-Mencari entri yang dihapus dalam sampah yang cocok dengan filter.
+Mencari entri yang dihapus di tempat sampah yang cocok dengan filter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoredeleteditem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Get-AzDataLakeStoreDeletedItem [-Account] <String> [-Filter] <String> [-Count <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataLakeStoreDeletedItem** mencari file atau folder yang dihapus di Data Lake Store yang cocok dengan filter tertentu.
+Cmdlet **Get-AzDataLakeStoreDeletedItem** mencari file atau folder yang dihapus di Data Lake Store yang cocok dengan filter yang diberikan.
 Ini menampilkan atribut berikut dari item yang dihapus - OriginalPath, TrashDirPath, Type, CreationTime.
-Ini bisa menjadi operasi yang berjalan panjang karena mungkin harus mencari melalui jutaan file di sampah dan bisa dijalankan sebagai pekerjaan.
-Perhatian: Menghapus file adalah operasi upaya terbaik. Tidak ada jaminan bahwa file dapat dipulihkan setelah dihapus. Penggunaan API ini diaktifkan melalui daftar yang diizinkan. Jika akun ADL Anda tidak diizinkan, maka penggunaan api ini akan memunculkan Pengecualian tidak diimplementasikan. Untuk informasi dan bantuan lebih lanjut, silakan hubungi dukungan Microsoft.
+Ini bisa menjadi operasi jangka panjang karena mungkin harus mencari melalui jutaan file di tempat sampah dan dapat dijalankan sebagai pekerjaan.
+Perhatian: Membatalkan penghapusan file adalah operasi upaya terbaik. Tidak ada jaminan bahwa file dapat dipulihkan setelah dihapus. Penggunaan API ini diaktifkan melalui daftar putih. Jika akun ADL Anda tidak diizinkan, maka menggunakan api ini akan melemparkan Pengecualian tidak diimplementasikan. Untuk informasi dan bantuan lebih lanjut, hubungi dukungan Microsoft.
 
 ## EXAMPLES
 
-### Contoh: Get details of a file from the Data Lake Store
+### Contoh: Mendapatkan detail file dari Data Lake Store
 ```powershell
 Get-AzDataLakeStoreDeletedItem -Account ml1ptrashtest -Filter test0/file_123
 ```
@@ -49,7 +52,7 @@ e7b30ac8-2dbc-43a3-8ca6-2d420ac0c488 adl://ml1ptrashtest.azuredatalake.com/test0
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Penyimpanan Data Lake.
+Menentukan nama akun Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Menentukan jumlah hasil yang ingin ditemukan pengguna. Kueri berjalan hingga menemukan Hasil hitungan atau mencari seluruh sampah, mana pun yang terjadi terlebih dahulu.
+Menentukan jumlah hasil yang ingin ditemukan pengguna. Kueri berjalan hingga menemukan Hitung hasil atau mencari seluruh sampah, mana pun yang terjadi terlebih dahulu.
 
 ```yaml
 Type: System.Int32
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

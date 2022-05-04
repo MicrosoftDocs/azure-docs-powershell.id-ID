@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkProfile.md
-ms.openlocfilehash: fa4697c39613e28d312d5f9e3d9e0177359a6ffc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59be1e459d8f16b4bb1bbafb39380e5b7dcf680b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143224901"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604246"
 ---
 # Get-AzNetworkProfile
 
 ## SYNOPSIS
-Mendapatkan sumber daya tingkat teratas profil jaringan yang sudah ada
+Mendapatkan sumber daya tingkat atas profil jaringan yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzNetworkProfile -ResourceId <String> [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNetworkProfile** mengambil sumber daya tingkat atas profil jaringan yang sudah ada
+Cmdlet **Get-AzNetworkProfile** mengambil sumber daya tingkat atas profil jaringan yang ada
 
 ## EXAMPLES
 
@@ -145,7 +148,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama profil jaringan.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure dari profil jaringan.
+Id Azure Resource Manager dari profil jaringan.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -231,6 +234,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzNetworkProfile](./New-AzNetworkProfile.md)
 
-[Hapus-AzNetworkProfile](./Remove-AzNetworkProfile.md)
+[Remove-AzNetworkProfile](./Remove-AzNetworkProfile.md)
 
 [Set-AzNetworkProfile](./Set-AzNetworkProfile.md)

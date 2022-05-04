@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: 61007ecfb6a519dfb5a504388629f6b10f3be3f2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0a44f834362bd8186e0ab3306e70fed4bfce9efd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143058797"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613580"
 ---
 # Set-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
-Perbarui aplikasi yang dikelola kain layanan. Hal ini memungkinkan untuk memperbarui parameter aplikasi dan/atau memutakhirkan versi tipe aplikasi yang akan memicu pemutakhiran aplikasi atau hanya pembaruan konfigurasi lainnya. Hanya mendukung aplikasi arm yang digunakan.
+Memperbarui aplikasi yang dikelola service fabric. Ini memungkinkan untuk memperbarui parameter aplikasi dan/atau meningkatkan versi jenis aplikasi yang akan memicu peningkatan aplikasi atau pembaruan konfigurasi lainnya saja. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Set-AzServiceFabricManagedClusterApplication [[-ApplicationTypeVersion] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet ini dapat digunakan untuk memperbarui parameter aplikasi dan memutakhirkan versi tipe aplikasi bersama dengan pembaruan konfigurasi lainnya saja. Memperbarui parameter hanya akan mengubah model di sisi ARM, hanya ketika versi tipe baru digunakan, perintah akan memicu pemutakhiran aplikasi. Tipe versi yang ditentukan seharusnya sudah dibuat dalam kluster menggunakan **New-AzServiceFabricManagedClusterApplicationTypeVersion**.
+Cmdlet ini dapat digunakan untuk memperbarui parameter aplikasi dan meningkatkan versi jenis aplikasi bersama dengan pembaruan konfigurasi lain saja. Memperbarui parameter hanya akan mengubah model di sisi ARM, hanya ketika versi jenis baru digunakan, perintah akan memicu peningkatan aplikasi. Versi jenis yang ditentukan harus sudah dibuat di kluster menggunakan **New-AzServiceFabricManagedClusterApplicationTypeVersion**.
 
 ## EXAMPLES
 
@@ -80,7 +83,7 @@ New-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $reso
 Set-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeVersion $version -Name $appName -ApplicationParameter @{key0="value0";key1=$null;key2="value2"} -Tags @{tag0="updated"}
 ```
 
-Contoh ini akan memulai pemutakhiran aplikasi terkelola untuk memperbarui versi tipe ke "v2" yang dibuat dengan **New-AzServiceFabricManagedClusterApplicationTypeVersion**. Parameter aplikasi yang digunakan harus ditentukan dalam manifes aplikasi.
+Contoh ini akan memulai peningkatan aplikasi terkelola untuk memperbarui versi jenis ke "v2" yang dibuat dengan **New-AzServiceFabricManagedClusterApplicationTypeVersion**. Parameter aplikasi yang digunakan harus ditentukan dalam manifes aplikasi.
 
 ### Contoh 2
 ```powershell
@@ -103,14 +106,14 @@ New-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $reso
 Set-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeVersion $version -Name $appName -ApplicationParameter @{key0="value0";key1=$null;key2="value2"} -HealthCheckStableDurationSec 0 -HealthCheckWaitDurationSec 0 -HealthCheckRetryTimeoutSec 0 -UpgradeDomainTimeoutSec 5000 -UpgradeTimeoutSec 7000 -FailureAction Rollback -UpgradeReplicaSetCheckTimeoutSec 300 -ForceRestart
 ```
 
-Contoh ini akan memulai pemutakhiran aplikasi untuk memperbarui versi tipe ke "v2" dan juga mengatur beberapa parameter kebijakan pemutakhiran yang akan diterapkan dari pemutakhiran saat ini.
+Contoh ini akan memulai peningkatan aplikasi untuk memperbarui versi jenis ke "v2" dan juga menetapkan beberapa parameter kebijakan peningkatan yang akan berlaku dari peningkatan saat ini.
 
 ### Contoh 4
 ```powershell
 Set-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appName -ApplicationParameter @{key0="value0";key1=$null;key2="value2"}
 ```
 
-Contoh ini memperbarui parameter aplikasi tetapi perubahan ini hanya akan diterapkan hingga pemutakhiran versi berikutnya ke aplikasi.
+Contoh ini memperbarui parameter aplikasi tetapi perubahan ini hanya akan berlaku sampai peningkatan versi berikutnya ke aplikasi.
 
 ## PARAMETERS
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationTypeVersion
-Menentukan versi tipe aplikasi
+Tentukan versi jenis aplikasi
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,8 +178,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -PertimbangkanWarningAsError
-Menunjukkan apakah akan memperlakukan kejadian kesehatan peringatan sebagai kejadian kesalahan selama evaluasi kesehatan.
+### -ConsiderWarningAsError
+Menunjukkan apakah akan memperlakukan peristiwa kesehatan peringatan sebagai peristiwa kesalahan selama evaluasi kesehatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceTypeMaxPercentUnhealthyPartitionsPerService
-Menentukan persen maksimum partisi yang tidak membantu per layanan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang digunakan untuk pemutakhiran yang dipantau.
+Menentukan persentase maksimum partisi yang tidak baik per layanan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang digunakan untuk peningkatan yang dipantau.
 
 ```yaml
 Type: System.Int32
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition
-Menentukan persentase maksimum replika per layanan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang digunakan untuk pemutakhiran yang dipantau.
+Menentukan persentase maksimum replika yang tidak disengaja per layanan yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang digunakan untuk peningkatan yang dipantau.
 
 ```yaml
 Type: System.Int32
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultServiceTypeUnhealthyServicesMaxPercent
-Menentukan persentase maksimum layanan yang tidak diperbolehkan oleh kebijakan kesehatan untuk tipe layanan default yang digunakan untuk pemutakhiran yang dipantau.
+Menentukan persentase maksimum layanan yang tidak disengaja yang diizinkan oleh kebijakan kesehatan untuk jenis layanan default yang akan digunakan untuk peningkatan yang dipantau.
 
 ```yaml
 Type: System.Int32
@@ -251,8 +254,8 @@ Accept wildcard characters: False
 ```
 
 ### -FailureAction
-Menentukan tindakan yang akan dilakukan jika pemutakhiran yang dipantau gagal.
-Nilai yang dapat diterima untuk parameter ini adalah Rollback atau Manual.
+Menentukan tindakan yang akan diambil jika peningkatan yang dipantau gagal.
+Nilai yang dapat diterima untuk parameter ini adalah Putar Kembali atau Manual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.FailureAction
@@ -267,7 +270,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lanjutkan tanpa perintah
 
 ```yaml
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRestart
-Menunjukkan bahwa host layanan memulai ulang bahkan jika pemutakhiran adalah perubahan konfigurasi saja.
+Menunjukkan bahwa host layanan dimulai ulang meskipun peningkatan adalah perubahan khusus konfigurasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckStableDurationSec
-Menentukan durasi, dalam detik, Service Fabric menunggu untuk memverifikasi bahwa aplikasi stabil sebelum berpindah ke domain pemutakhiran berikutnya atau menyelesaikan pemutakhiran.
+Menentukan durasi, dalam detik, yang Service Fabric tunggu untuk memverifikasi bahwa aplikasi stabil sebelum pindah ke domain peningkatan berikutnya atau menyelesaikan peningkatan.
 Durasi tunggu ini mencegah perubahan kesehatan yang tidak terdeteksi tepat setelah pemeriksaan kesehatan dilakukan.
 
 ```yaml
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckWaitDurationSec
-Menentukan durasi, dalam detik, Service Fabric menunggu sebelum melakukan pemeriksaan kesehatan awal setelah menyelesaikan pemutakhiran pada domain pemutakhiran.
+Menentukan durasi, dalam hitungan detik, yang Service Fabric tunggu sebelum melakukan pemeriksaan kesehatan awal setelah menyelesaikan peningkatan pada domain peningkatan.
 
 ```yaml
 Type: System.Int32
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCloseDelayDurationSec
-Menentukan durasi dalam detik, untuk menunggu sebelum instans tanpa status ditutup, untuk memungkinkan permintaan aktif menguras dengan anggun.
+Menentukan durasi dalam hitungan detik, untuk menunggu sebelum instans stateless ditutup, untuk memungkinkan permintaan aktif terkuras dengan lancar.
 
 ```yaml
 Type: System.Int32
@@ -373,7 +376,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama aplikasi
 
 ```yaml
@@ -388,9 +391,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Buat UlangAplikasi
-Menentukan apakah aplikasi harus dibuat ulang pada pembaruan.
-Jika value=true, sisa parameter kebijakan pemutakhiran tidak diperbolehkan.
+### -RecreateApplication
+Menentukan apakah aplikasi harus dibuat ulang saat pembaruan.
+Jika value=true, parameter kebijakan peningkatan lainnya tidak diizinkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari aplikasi yang dikelola.
+Arm ResourceId dari aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -435,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTypeHealthPolicyMap
-Menentukan peta kebijakan kesehatan yang digunakan untuk tipe layanan yang berbeda sebagai tabel hash dalam format berikut: @ {"ServiceTypeName" : "MaxPercentUnhealthyPartitionsPerService,MaxPercentUnhealthyReplicasPerPartition,MaxPercentUnhealthyServices"}.
+Menentukan peta kebijakan kesehatan yang akan digunakan untuk jenis layanan yang berbeda sebagai tabel hash dalam format berikut: @ {"ServiceTypeName" : "MaxPercentUnhealthyPartitionsPerService,MaxPercentUnhealthyReplicasPerPartition,MaxPercentUnhealthyServices"}.
 Misalnya: @{ "ServiceTypeName01" = "5,10,5"; "ServiceTypeName02" = "5,5,5" }
 
 ```yaml
@@ -466,7 +469,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyDeployedApplicationsMaxPercent
-Menentukan persentase maksimum dari instance aplikasi yang digunakan pada simpul dalam kluster yang memiliki status kesehatan kesalahan sebelum status kesehatan aplikasi untuk kluster adalah kesalahan.
+Menentukan persentase maksimum instans aplikasi yang disebarkan pada simpul dalam kluster yang memiliki status kesehatan kesalahan sebelum status kesehatan aplikasi untuk kluster adalah kesalahan.
 
 ```yaml
 Type: System.Int32
@@ -481,8 +484,8 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeDomainTimeoutSec
-Menentukan waktu maksimum, dalam detik, yang Service Fabric perlukan untuk memutakhirkan satu domain pemutakhiran.
-Setelah periode ini, pemutakhiran gagal.
+Menentukan waktu maksimum, dalam detik, yang Service Fabric ambil untuk meningkatkan satu domain peningkatan.
+Setelah periode ini, peningkatan gagal.
 
 ```yaml
 Type: System.Int32
@@ -497,8 +500,8 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeMode
-Mode yang digunakan untuk memantau kesehatan selama pemutakhiran bergulir.
-Nilai dipantau, dan UnmonitoredAuto.
+Mode yang digunakan untuk memantau kesehatan selama peningkatan yang sedang bergulir.
+Nilainya dipantau, dan UnmonitoredAuto.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.ApplicationUpgradeMode
@@ -514,7 +517,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeReplicaSetCheckTimeoutSec
-Menentukan waktu maksimum yang Service Fabric menunggu layanan dikonfigurasi ulang ke dalam keadaan aman, jika belum dalam keadaan aman, sebelum Service Fabric melanjutkan pemutakhiran.
+Menentukan waktu maksimum yang Service Fabric menunggu layanan dikonfigurasi ulang ke status aman, jika belum dalam keadaan aman, sebelum Service Fabric melanjutkan peningkatan.
 
 ```yaml
 Type: System.Int32
@@ -529,8 +532,8 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeTimeoutSec
-Menentukan waktu maksimum, dalam detik, yang Service Fabric ambil untuk seluruh pemutakhiran.
-Setelah periode ini, pemutakhiran gagal.
+Menentukan waktu maksimum, dalam detik, yang Service Fabric ambil untuk seluruh peningkatan.
+Setelah periode ini, peningkatan gagal.
 
 ```yaml
 Type: System.Int32
@@ -544,8 +547,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -560,7 +563,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -576,7 +579,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabase.md
-ms.openlocfilehash: f0453e2bb416e83a7df597ac2363c50d2525a776
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0a1b6cd7f29f1e719f6b014134135cf4e1d71155
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142934003"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628212"
 ---
 # Get-AzSqlDatabase
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlDatabase [[-DatabaseName] <String>] [-ServerName] <String> [-ResourceGr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabase** mendapatkan satu atau beberapa database Azure SQL dari Server Azure SQL Database.
+Cmdlet **Get-AzSqlDatabase** mendapatkan satu atau beberapa database Azure SQL dari server Azure SQL Database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -225,8 +228,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -271,14 +274,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzSqlDatabase](./New-AzSqlDatabase.md)
+[Baru-AzSqlDatabase](./New-AzSqlDatabase.md)
 
-[Remove-AzSqlDatabase](./Remove-AzSqlDatabase.md)
+[Hapus-AzSqlDatabase](./Remove-AzSqlDatabase.md)
 
-[Resume-AzSqlDatabase](./Resume-AzSqlDatabase.md)
+[Melanjutkan-AzSqlDatabase](./Resume-AzSqlDatabase.md)
 
 [Set-AzSqlDatabase](./Set-AzSqlDatabase.md)
 
-[Suspend-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
+[Menangguhkan-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
 
 

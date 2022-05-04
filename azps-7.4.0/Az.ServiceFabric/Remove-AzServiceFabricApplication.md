@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricApplication.md
-ms.openlocfilehash: c93b77415d226f3075b1e0f481d7eceb9e95b995
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5ef0fabaf894337ebb8af536176180adc2f8db6e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143308583"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630334"
 ---
 # Remove-AzServiceFabricApplication
 
 ## SYNOPSIS
-Hapus aplikasi dari kluster. Tindakan ini akan menghapus semua layanan di bawah aplikasi. Hanya mendukung aplikasi arm yang digunakan.
+Menghapus aplikasi dari kluster. Ini akan menghapus semua layanan di bawah aplikasi. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzServiceFabricApplication -InputObject <PSApplication> [-PassThru] [-For
 ```
 
 ## DESCRIPTION
-Cmdlet ini menghapus aplikasi dari kluster. Tindakan ini akan menghapus semua layanan, jika ada, di bawah sumber daya aplikasi.
+Cmdlet ini menghapus aplikasi dari kluster. Ini akan menghapus semua layanan, jika ada, di bawah sumber daya aplikasi.
 
 ## EXAMPLES
 
@@ -84,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Hapus tanpa perintah.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama aplikasi.
 
 ```yaml
@@ -174,8 +177,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -206,13 +209,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ServiceFabric.Models.PSAplikasi
+### Microsoft.Azure.Commands.ServiceFabric.Models.PSApplication
 
 ## OUTPUTS
 

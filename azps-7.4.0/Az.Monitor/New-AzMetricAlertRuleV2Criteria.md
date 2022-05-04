@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2Criteria.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2Criteria.md
-ms.openlocfilehash: 33f05a37cd02aaee4f23ebaa8d6a46833c356b10
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: df26002755eabc987f891d87a6bb8492e68fe5e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142680688"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646438"
 ---
 # New-AzMetricAlertRuleV2Criteria
 
 ## SYNOPSIS
-Membuat objek kriteria lokal yang bisa digunakan untuk membuat pemberitahuan metrik baru
+Membuat objek kriteria lokal yang dapat digunakan untuk membuat pemberitahuan metrik baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azmetricalertrulev2criteria) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ New-AzMetricAlertRuleV2Criteria [-WebTest] -WebTestId <String> -ApplicationInsig
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricAlertRuleV2Criteria** membuat objek kriteria metrik lokal untuk digunakan sebagai cmdlet [Add-AzMetricAlertRuleV2](https://docs.microsoft.com/powershell/module/az.monitor/add-azmetricalertrulev2) input yang membuat aturan peringatan metrik baru.
+Cmdlet **New-AzMetricAlertRuleV2Criteria** membuat objek kriteria metrik lokal untuk digunakan sebagai cmdlet [Add-AzMetricAlertRuleV2](https://docs.microsoft.com/powershell/module/az.monitor/add-azmetricalertrulev2) input yang membuat aturan pemberitahuan metrik baru.
 
 ## EXAMPLES
 
@@ -64,9 +67,9 @@ TimeAggregation      : Average
 Dimensions           :
 ```
 
-Perintah ini membuat kriteria pemberitahuan metrik sederhana yang bisa digunakan dalam aturan pemberitahuan metrik
+Perintah ini membuat kriteria pemberitahuan metrik sederhana yang dapat digunakan dalam aturan pemberitahuan metrik
 
-### Contoh 2: Membuat kriteria peringatan metrik dinamis
+### Contoh 2: Membuat kriteria pemberitahuan metrik dinamis
 
 ```powershell
 New-AzMetricAlertRuleV2Criteria -Dynamic -MetricName "Percentage CPU" -MetricNameSpace "Microsoft.Compute/virtualMachines" -TimeAggregation Average -Operator GreaterThan -ThresholdSensitivity Medium -ViolationCount 2 -ExaminedAggregatedPointCount 4
@@ -86,7 +89,7 @@ TimeAggregation      : Average
 Dimensions           :
 ```
 
-Perintah ini membuat kriteria pemberitahuan metrik dinamis yang bisa digunakan dalam aturan pemberitahuan metrik
+Perintah ini membuat kriteria pemberitahuan metrik Dinamis yang dapat digunakan dalam aturan pemberitahuan metrik
 
 ### Contoh 3: Membuat kriteria pemberitahuan metrik yang lebih kompleks
 
@@ -106,9 +109,9 @@ TimeAggregation      : Average
 Dimensions           : {availabilityResult/name}
 ```
 
-Kumpulan perintah ini membuat kriteria peringatan metrik yang lebih kompleks yang menyertakan pilihan dimensi
+Kumpulan perintah ini membuat kriteria pemberitahuan metrik yang lebih kompleks yang mencakup pemilihan dimensi
 
-### Contoh 4: Membuat kriteria ketersediaan terlama
+### Contoh 4: Membuat kriteria ketersediaan webtest
 
 ```powershell
 New-AzMetricAlertRuleV2Criteria -WebTest -WebTestId "/subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/012345/providers/Microsoft.Insights/webtests/PingTest-appInsights" -ApplicationInsightsId "/subscriptions/00000000-0000-0000-0000-0000000/resourceGroups/012345/providers/Microsoft.Insights/components/appInsights" -FailedLocationCount 3
@@ -122,7 +125,7 @@ FailedLocationCount  : 3
 AdditionalProperties :
 ```
 
-Perintah ini membuat kriteria ketersediaan terlama yang bisa digunakan dalam aturan pemberitahuan metrik
+Perintah ini membuat kriteria ketersediaan webtest yang dapat digunakan dalam aturan pemberitahuan metrik
 
 ## PARAMETERS
 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicThreshold
-Beralih parameter untuk menggunakan Tipe Ambang Dinamis
+Beralih parameter untuk menggunakan Jenis Ambang Dinamis
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailedLocationCount
-Jumlah minimum lokasi yang gagal untuk menaikkan peringatan.
+Jumlah minimum lokasi yang gagal untuk menaikkan pemberitahuan.
 
 ```yaml
 Type: System.Int32
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricNamespace
-Ruang Nama metrik
+Namespace metrik
 
 ```yaml
 Type: System.String
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipMetricValidation
-Memungkinkan pembuatan aturan peringatan pada metrik kustom yang belum dipancarkan, dengan menyebabkan validasi metrik dilewati
+Memungkinkan pembuatan aturan pemberitahuan pada metrik kustom yang belum dipancarkan, dengan menyebabkan validasi metrik dilewati
 
 ```yaml
 Type: System.Boolean
@@ -306,7 +309,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang BatasSensitivitas
+### -ThresholdSensitivity
 Sensitivitas untuk kondisi aturan
 
 ```yaml
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeAggregation
-Operasi agregasi yang digunakan untuk menggulung beberapa nilai metrik di sepanjang interval jendela
+Operasi agregasi yang digunakan untuk menggulung beberapa nilai metrik di seluruh interval jendela
 
 ```yaml
 Type: System.String
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -ViolationCount
-Jumlah minimum pelanggaran yang diperlukan dalam jendela waktu pengembalian yang dipilih diperlukan untuk menaikkan peringatan
+Jumlah minimum pelanggaran yang diperlukan dalam jendela waktu lookback yang dipilih yang diperlukan untuk menaikkan pemberitahuan
 
 ```yaml
 Type: System.Int32
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebTest
-Beralih parameter untuk menggunakan kriteria ketersediaan Tipe
+Beralih parameter untuk menggunakan jenis kriteria ketersediaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebTestId
-Id uji web aplikasi Insights.
+Id pengujian web Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

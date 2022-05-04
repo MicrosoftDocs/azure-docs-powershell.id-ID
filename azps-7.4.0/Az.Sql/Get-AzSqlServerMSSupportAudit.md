@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
-ms.openlocfilehash: 262baf3c2f69c4320897e6ad6c4825069fcb4b05
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a45c7a2a93a7861f61eb793acaba93ea4f40c268
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307521"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616514"
 ---
 # Get-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
-Mendapatkan pengaturan pengaudungan operasi dukungan Microsoft dari server Azure SQL.
+Mendapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservermssupportaudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Get-AzSqlServerMSSupportAudit -ServerObject <AzureSqlServerModel> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerMSupportAudit** mendapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
+Cmdlet **Get-AzSqlServerMSSupportAudit** mendapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL.
 Tentukan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan pengauditan operasi dukungan Microsoft dari server Azure SQL
+### Contoh 1: Mendapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL
 ```powershell
 Get-AzSqlServerMSSupportAudit -ResourceGroupName "resourcegroup01" -ServerName "server01"
 ```
@@ -55,7 +58,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 2: Dapatkan, melalui pipeline, pengaturan audit operasi Dukungan Microsoft dari server Azure SQL
+### Contoh 2: Dapatkan, melalui alur, Microsoft mendukung operasi yang mengaudit pengaturan server Azure SQL
 ```powershell
 Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Get-AzSqlServerMSSupportAudit
 ```
@@ -72,7 +75,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 3: Dapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL
+### Contoh 3: Mendapatkan pengaturan audit operasi dukungan Microsoft dari server Azure SQL
 ```powershell
 Get-AzSqlServerMSSupportAudit -ResourceGroupName "resourcegroup01" -ServerName "server01"
 ```
@@ -92,7 +95,7 @@ WorkspaceResourceId                 :
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

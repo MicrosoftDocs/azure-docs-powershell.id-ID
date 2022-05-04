@@ -1,17 +1,17 @@
 ---
 description: Artikel ini adalah pengantar untuk Azure PowerShell dan fitur-fiturnya.
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: overview
 title: Apa itu Azure PowerShell
-ms.openlocfilehash: d19c43ef44146c21dd23f8d867f38c0f5baaf6a6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6bb6b0468dc2fcf86a04ca4558d45e695bd25ce3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116205"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685880"
 ---
 # <a name="what-is-azure-powershell"></a>Apa itu Azure PowerShell?
 

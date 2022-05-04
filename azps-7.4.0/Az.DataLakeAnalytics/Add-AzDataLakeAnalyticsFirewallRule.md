@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Add-AzDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Add-AzDataLakeAnalyticsFirewallRule.md
-ms.openlocfilehash: cabe850e77d037afd4c8ae8b48b0f54b727f4982
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fea611def931c4db4a42998b77f302d228070f3e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143228267"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629346"
 ---
 # Add-AzDataLakeAnalyticsFirewallRule
 
 ## SYNOPSIS
 Menambahkan aturan firewall ke akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/add-azdatalakeanalyticsfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Add-AzDataLakeAnalyticsFirewallRule [-Account] <String> [-Name] <String> [-Start
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzDataLakeAnalyticsFirewallRule** menambahkan aturan firewall ke akun Data Lake Analytics Azure.
+Cmdlet **Add-AzDataLakeAnalyticsFirewallRule** menambahkan aturan firewall ke akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **Add-AzDataLakeAnalyticsFirewallRule** menambahkan aturan firewall ke ak
 Add-AzDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct" -Name "My firewall rule" -StartIpAddress 127.0.0.1 -EndIpAddress 127.0.0.10
 ```
 
-Perintah ini menambahkan aturan firewall bernama "my firewall rule" dari akun "ContosoAdlAcct" dengan rentang IP: 127.0.0.1 - 127.0.0.10
+Perintah ini menambahkan aturan firewall bernama "aturan firewall saya" dari akun "ContosoAdlAcct" dengan rentang IP: 127.0.0.1 - 127.0.0.10
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama aturan firewall.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang ingin diambil akunnya.
+Nama grup sumber daya di mana ingin mengambil akun.
 
 ```yaml
 Type: System.String
@@ -129,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

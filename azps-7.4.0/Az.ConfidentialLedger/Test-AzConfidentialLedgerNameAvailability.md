@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Test-AzConfidentialLedgerNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Test-AzConfidentialLedgerNameAvailability.md
-ms.openlocfilehash: 6f04e32a50e6ee7cb952f08b25bac944617d46e3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b6cc596dee4a61b1c0b53a0cdf31455083bd3a3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004959"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144617810"
 ---
 # Test-AzConfidentialLedgerNameAvailability
 
 ## SYNOPSIS
 Untuk memeriksa apakah nama sumber daya tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confidentialledger/test-azconfidentialledgernameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,9 +46,9 @@ NameAvailable : True
 Reason        :
 ```
 
-Memeriksa untuk melihat apakah nama Buku Besar Rahasia tertentu tersedia.
+Memeriksa untuk melihat apakah nama Confidential Ledger yang ditentukan tersedia.
 Dalam hal ini, nama tersedia.
-Nama Buku Besar Rahasia harus unik secara global.
+Nama Confidential Ledger harus unik secara global.
 
 ### Contoh 2: Nama tidak tersedia
 ```powershell
@@ -61,9 +64,9 @@ NameAvailable : False
 Reason        : AlreadyExists
 ```
 
-Memeriksa untuk melihat apakah nama Buku Besar Rahasia tertentu tersedia.
+Memeriksa untuk melihat apakah nama Confidential Ledger yang ditentukan tersedia.
 Dalam hal ini, nama tidak tersedia.
-Nama Buku Besar Rahasia harus unik secara global.
+Nama Confidential Ledger harus unik secara global.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya yang ketersediaannya perlu diperiksa.
 
 ```yaml
@@ -98,8 +101,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
+Atur ID Langganan Azure.
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe sumber daya.
+### -Type
+Jenis sumber daya.
 
 ```yaml
 Type: System.String
@@ -128,8 +131,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

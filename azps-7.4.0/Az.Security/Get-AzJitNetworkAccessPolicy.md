@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzJ
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzJitNetworkAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzJitNetworkAccessPolicy.md
-ms.openlocfilehash: 5642b6b33781d483ffe9f92b7ba738d0e114d572
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d569ff43756ee50583b09803a3547d4fc526d780
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673020"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686096"
 ---
-# Get-AzJitNetworkAccessPolicy
+# Dapatkan-AzJitNetworkAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan akses jaringan JIT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azjitnetworkaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,8 +46,8 @@ Get-AzJitNetworkAccessPolicy -ResourceId <String> [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Kebijakan akses jaringan Just In Time (JIT) memungkinkan Anda menentukan kebijakan yang memungkinkan pengguna sederhana untuk membuat koneksi jaringan sementara ke VM.
-Kebijakan ini menentukan port, protokol, dan alamat IP sumber apa yang dapat meminta koneksi ke VM dan durasi maksimal sebelum koneksi akan ditutup secara otomatis.
+Kebijakan akses jaringan Just In Time (JIT) memungkinkan Anda menentukan kebijakan yang akan memungkinkan pengguna sederhana untuk membuat koneksi jaringan sementara ke VM.
+Kebijakan menentukan port, protokol, dan alamat IP sumber apa yang dapat meminta koneksi ke VM dan durasi maksimum sebelum koneksi akan ditutup secara otomatis.
 Dalam kebijakan, Anda juga dapat melihat permintaan koneksi yang dibuat dengan kebijakan ini. 
 
 ## EXAMPLES
@@ -70,7 +73,7 @@ Requests          : {Microsoft.Azure.Commands.Security.Models.JitNetworkAccessPo
 ProvisioningState : Succeeded
 ```
 
-Dapatkan semua polisi akses jaringan JIT pada langganan
+Mendapatkan semua kebijakan akses jaringan JIT pada langganan
 
 ### Contoh 2
 ```powershell
@@ -93,7 +96,7 @@ Requests          : {Microsoft.Azure.Commands.Security.Models.JitNetworkAccessPo
 ProvisioningState : Succeeded
 ```
 
-Dapatkan semua polisi akses jaringan JIT di grup sumber daya "myService1"
+Dapatkan semua kebijakan akses jaringan JIT di grup sumber daya "myService1"
 
 ### Contoh 3
 ```powershell
@@ -143,7 +146,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya sumber daya sumber daya Kebijakan Akses Jaringan jit.
+Id sumber daya dari sumber daya Kebijakan Akses Jaringan jit.
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

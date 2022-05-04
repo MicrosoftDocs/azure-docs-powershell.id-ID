@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseGitRepositoryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseGitRepositoryConfig.md
-ms.openlocfilehash: dd123f983da715b7f6ddb91744805bfe4e6020cb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b44ffe2ad904a2e31a7072e3eed46c04af4c5221
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142993547"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645610"
 ---
 # New-AzSynapseGitRepositoryConfig
 
 ## SYNOPSIS
-Membuat konfigurasi penyimpanan Git.
+Membuat konfigurasi repositori Git.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsegitrepositoryconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ $creds = New-Object System.Management.Automation.PSCredential ("ContosoUser", $p
 New-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup -Name ContosoWorkspace -Location northeurope -DefaultDataLakeStorageAccountName ContosoAdlGen2Storage -DefaultDataLakeStorageFilesystem ContosoFileSystem -SqlAdministratorLoginCredential $creds -AsJob -GitRepository $config
 ```
 
-Perintah pertama membuat konfigurasi penyimpanan Git. Kemudian metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse baru.
+Perintah pertama membuat konfigurasi repositori Git. Kemudian metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse baru.
 
 ## PARAMETERS
 
 ### -AccountName
-GitHub atau nama akun DevOps yang digunakan untuk penyimpanan.
+GitHub atau nama akun DevOps yang digunakan untuk repositori.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProjectName
-Nama proyek yang Anda sambungkan, hanya tentukan ketika Anda memilih DevOps.
+Nama proyek yang Anda sambungkan, hanya tentukan saat Anda memilih DevOps.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryName
-Nama repository yang Anda sambungkan.
+Nama repositori yang Anda sambungkan.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryType
-Pilih tipe repositori yang ingin Anda gunakan untuk menyimpan artefak Anda untuk ruang kerja Analitik Synapse ini, tipenya termasuk DevOps dan GitHub.
+Pilih jenis repositori yang ingin Anda gunakan untuk menyimpan artefak untuk ruang kerja Synapse Analytics ini, jenisnya termasuk DevOps dan GitHub.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Pilih Id penyewa yang akan digunakan saat masuk ke repository Git Azure DevOps.
+Pilih Id penyewa yang akan digunakan saat masuk ke repositori Git Azure DevOps.
 
 ```yaml
 Type: System.Guid
@@ -181,11 +184,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

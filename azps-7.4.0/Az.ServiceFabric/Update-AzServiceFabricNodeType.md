@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricNodeType.md
-ms.openlocfilehash: 343cd02063537ef4d947f70db9e231c2f0465a56
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9feff6c63d7781bb87aefcd97ef886342b5cc53e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142739062"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645952"
 ---
 # Update-AzServiceFabricNodeType
 
 ## SYNOPSIS
-Memperbarui tipe simpul dalam kluster.
+Perbarui jenis node dalam kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricnodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzServiceFabricNodeType [-ResourceGroupName] <String> [-Name] <String> [-
 ```
 
 ## DESCRIPTION
-Gunakan **Update-AzServiceFabricNodeType** untuk memperbarui pengaturan terkait tipe simpul. Ketika tipe node berhenti bertindak sebagai tipe simpul utama menggunakan '-IsPrimaryNodeType $false', tipe node primer lainnya harus sudah didaftarkan dalam kluster.
+Gunakan **Update-AzServiceFabricNodeType** untuk memperbarui pengaturan terkait jenis node. Ketika jenis node untuk berhenti bertindak sebagai jenis node utama menggunakan '-IsPrimaryNodeType $false', jenis node utama lain harus sudah terdaftar dalam kluster.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Gunakan **Update-AzServiceFabricNodeType** untuk memperbarui pengaturan terkait 
 Update-AzServiceFabricNodeType -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -NodeTypeName 'nt1' -IsPrimaryNodeType $false
 ```
 
-Perintah ini akan memperbarui NodeType 'nt1' untuk berhenti bertindak sebagai tipe simpul utama. Ini mungkin dilakukan setelah menambahkan tipe simpul utama lainnya, untuk melakukan migrasi simpul benih dan layanan sistem.
+Perintah ini akan memperbarui NodeType 'nt1' untuk berhenti bertindak sebagai jenis node utama. Ini dapat dilakukan setelah menambahkan jenis node utama lain, untuk memigrasikan node benih dan layanan sistem.
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsPrimaryNodeType
-Tentukan apakah tipe simpul adalah tipe simpul utama. Tipe simpul utama mungkin memiliki simpul benih dan layanan sistem.
+Tentukan apakah jenis node adalah jenis node utama. Jenis node primer mungkin memiliki node seed dan layanan sistem.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -68,7 +71,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Nama tipe simpul
+Nama jenis node
 
 ```yaml
 Type: System.String
@@ -113,8 +116,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

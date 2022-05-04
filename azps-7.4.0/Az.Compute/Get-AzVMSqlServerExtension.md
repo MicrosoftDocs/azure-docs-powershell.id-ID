@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSqlServerExtension.md
-ms.openlocfilehash: 1a4bf5ba5d3c8f74ce992c26d2cfe83f29e9501f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 17fa2b0f505ec383f84b07b9c4542d278a593b60
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143290007"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622668"
 ---
 # Get-AzVMSqlServerExtension
 
 ## SYNOPSIS
-Mendapatkan pengaturan untuk ekstensi SQL Server di mesin virtual.
+Mendapatkan pengaturan untuk ekstensi SQL Server pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmsqlserverextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzVMSqlServerExtension [-ResourceGroupName] <String> [-VMName] <String> [[-N
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMSqlServerExtension** mendapatkan pengaturan infrastruktur SQL Server sebagai agen layanan (IaaS) pada mesin virtual.
+Cmdlet **Get-AzVMSqlServerExtension** mendapatkan pengaturan agen infrastruktur sebagai layanan (IaaS) SQL Server pada komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan ekstensi SQL Server di mesin virtual
+### Contoh 1: Mendapatkan pengaturan ekstensi SQL Server pada komputer virtual
 ```powershell
 Get-AzVMSqlServerExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM07"
 ```
@@ -45,9 +48,9 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi SQL Server pada mesin virtual bernama ContosoVM07.
+Perintah ini mendapatkan pengaturan ekstensi SQL Server pada komputer virtual bernama ContosoVM07.
 
-### Contoh 2: Dapatkan pengaturan dengan menggunakan pipeline
+### Contoh 2: Mendapatkan pengaturan dengan menggunakan alur
 ```powershell
 Get-AzVM -ServiceName "Service08" -Name "ContosoVM22" | Get-AzVMSqlServerExtension
 ```
@@ -62,9 +65,9 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan mesin virtual bernama ContosoVM22 pada service Service08 dengan menggunakan cmdlet Get-AzVM.
-Perintah meneruskan hasil ke cmdlet saat ini menggunakan operator pipeline.
-Perintah saat ini mendapatkan pengaturan agen iaaS SQL Server pada mesin virtual tersebut.
+Perintah ini mendapatkan komputer virtual bernama ContosoVM22 pada layanan Service08 dengan menggunakan cmdlet Get-AzVM.
+Perintah meneruskan hasil ke cmdlet saat ini dengan menggunakan operator alur.
+Perintah saat ini mendapatkan pengaturan Agen IaaS SQL Server pada komputer virtual tersebut.
 
 ### Contoh 3: Mendapatkan pengaturan versi SQL Server tertentu
 ```powershell
@@ -81,7 +84,7 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan pengaturan ekstensi SQL Server versi 1.0 di mesin virtual bernama ContosoVM07.
+Perintah ini mendapatkan pengaturan ekstensi SQL Server versi 1.0 pada komputer virtual bernama ContosoVM07.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama SQL Server ekstensi.
 
 ```yaml
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual.
+Menentukan nama komputer virtual.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -160,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVM](./Get-AzVM.md)
+[Dapatkan-AzVM](./Get-AzVM.md)
 
 [Remove-AzVMSqlServerExtension](./Remove-AzVMSqlServerExtension.md)
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 8ffb4410d37f18aac7a101c65f80c6e84ba2cde8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1dd26a39f2c5684495fc59127485fa3cdff592d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751248"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685684"
 ---
 # Import-AzAutomationDscConfiguration
 
 ## SYNOPSIS
-Mengimpor konfigurasi DSC ke Dalam Otomatisasi.
+Mengimpor konfigurasi DSC ke Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/import-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,20 +31,20 @@ Import-AzAutomationDscConfiguration -SourcePath <String> [-Tags <IDictionary>] [
 
 ## DESCRIPTION
 Cmdlet **Import-AzAutomationDscConfiguration** mengimpor konfigurasi APS Desired State Configuration (DSC) ke dalam Azure Automation.
-Tentukan jalur skrip APS yang berisi konfigurasi DSC tunggal.
+Tentukan jalur skrip APS yang berisi satu konfigurasi DSC.
 
 ## EXAMPLES
 
-### Contoh 1: Mengimpor konfigurasi DSC ke Dalam Otomatisasi
+### Contoh 1: Mengimpor konfigurasi DSC ke Automation
 ```powershell
 PS C:\>Import-AzAutomationDscConfiguration -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -SourcePath "C:\DSC\client.ps1" -Force
 ```
 
-Perintah ini mengimpor konfigurasi DSC dalam file bernama client.ps1 ke akun Otomatisasi bernama Contoso17. Perintah menentukan parameter *Paksa* . Jika ada konfigurasi DSC yang sudah ada, perintah ini akan menggantikannya.
+Perintah ini mengimpor konfigurasi DSC dalam file bernama client.ps1 ke akun Automation bernama Contoso17. Perintah menentukan parameter *Paksa* . Jika ada konfigurasi DSC yang ada, perintah ini akan menggantikannya.
 
 ### Contoh 2
 
-Mengimpor konfigurasi DSC ke Dalam Otomatisasi. (autogenerasi)
+Mengimpor konfigurasi DSC ke Automation. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -51,7 +54,7 @@ Import-AzAutomationDscConfiguration -AutomationAccountName 'Contoso17' -Publishe
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mengimpor konfigurasi DSC.
+Menentukan nama akun Automation tempat cmdlet ini mengimpor konfigurasi DSC.
 
 ```yaml
 Type: System.String
@@ -95,8 +98,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Menunjukkan bahwa cmdlet ini menggantikan konfigurasi DSC yang sudah ada dalam Otomatisasi.
+### -Force
+Menunjukkan bahwa cmdlet ini menggantikan konfigurasi DSC yang ada di Automation.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai $True untuk mengaktifkan atau $False pembuatan log secara verbose untuk menonaktifkannya.
+Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pengelogan verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai $True untuk mengaktifkan pengelogan verbose atau $False untuk menonaktifkannya.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -125,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Dipublikasikan
-Menunjukkan bahwa cmdlet ini mengimpor konfigurasi DSC dalam status yang diterbitkan.
+### -Diterbitkan
+Menunjukkan bahwa cmdlet ini mengimpor konfigurasi DSC dalam status diterbitkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -185,8 +188,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

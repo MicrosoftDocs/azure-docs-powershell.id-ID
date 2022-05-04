@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBVirtualNetworkRule.md
-ms.openlocfilehash: 7c3a15bcacb660aded4752aefba639901d0fef96
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 07c198ca8e4f0d154ad8878b50110b1f5b53f13e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142685962"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622488"
 ---
 # New-AzCosmosDBVirtualNetworkRule
 
 ## SYNOPSIS
-Buat CosmosDB VirtualNetworkRule Object (PSVirtualNetworkRule baru).
+Buat Objek CosmosDB VirtualNetworkRule baru (PSVirtualNetworkRule).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBVirtualNetworkRule -Id <String> [-IgnoreMissingVNetServiceEndpoint
 ```
 
 ## DESCRIPTION
-Buat CosmosDB VirtualNetworkRule Object (PSVirtualNetworkRule baru).
+Buat Objek CosmosDB VirtualNetworkRule baru (PSVirtualNetworkRule).
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreMissingVNetServiceEndpoint
-Boolean untuk menunjukkan apakah membuat aturan firewall sebelum jaringan virtual memiliki titik akhir layanan vnet diaktifkan.
+Boolean untuk menunjukkan apakah akan membuat aturan firewall sebelum jaringan virtual mengaktifkan titik akhir layanan vnet.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -88,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

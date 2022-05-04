@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
-ms.openlocfilehash: 089557a7addd8ec3eee5038097c05a206db55efb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c102b46c3b4b3328d260ad49227bf1ce1176fc8b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143064899"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144629580"
 ---
 # Import-AzContainerRegistryImage
 
 ## SYNOPSIS
-Impor gambar dari registri publik/azure ke registri kontainer azure.
+Mengimpor gambar dari registri publik/azure ke registri kontainer azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/import-azcontainerregistryimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Import-AzContainerRegistryImage -ResourceGroupName <String> -RegistryName <Strin
 ```
 
 ## DESCRIPTION
-Impor gambar dari registri publik/azure ke registri kontainer azure.
+Mengimpor gambar dari registri publik/azure ke registri kontainer azure.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Import-AzContainerRegistryImage -SourceImage library/busybox:latest -ResourceGro
 ```
 
 Impor kotak sibuk ke ACR. Catatan: 
-* "pustaka/" perlu ditambahkan sebelum gambar sumber. "busybox:latest" => "library/busybox:latest"
+* "library/" perlu ditambahkan sebelum gambar sumber. "busybox:latest" => "library/busybox:latest"
 * Kredensial diperlukan jika registri sumber tidak tersedia untuk umum
 
 ### Contoh 2
@@ -90,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Ketika Paksa, semua tag target yang sudah ada akan ditimpa.
-Ketika NoForce, semua tag target yang sudah ada akan gagal dalam operasi sebelum penyalinan dimulai.
+Ketika Force, tag target yang ada akan ditimpa.
+Ketika NoForce, tag target yang ada akan gagal dalam operasi sebelum penyalinan dimulai.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Kata sandi yang digunakan untuk mengautentikasi dengan registri sumber.
 
 ```yaml
@@ -152,14 +155,14 @@ Accept wildcard characters: False
 ```
 
 ### -SourceImage
-Nama penyimpanan gambar sumber.
+Nama repositori gambar sumber.
 
-Tentukan gambar menurut repository ('hello-world').
+Tentukan gambar menurut repositori ('hello-world').
 Ini akan menggunakan tag 'terbaru'.
 
 Tentukan gambar menurut tag ('hello-world:latest').
 
-Tentukan gambar menurut pencernaan manifes berbasis sha256 ('hello-world@sha256:abc123').
+Tentukan gambar menurut hash manifes berbasis sha256 ('hello-world@sha256:abc123').
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceRegistryResourceId
-Pengidentifikasi sumber daya sumber Azure Container Registry.
+Pengidentifikasi sumber daya Azure Container Registry sumber.
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetTag
-Daftar string formulir repo\[:tag\].
+Daftar string repositori\[ formulir:tag\].
 Ketika tag dihilangkan, sumber akan digunakan (atau 'terbaru' jika tag sumber juga dihilangkan).
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -UntaggedTargetRepository
-Daftar string nama penyimpanan untuk melakukan salinan manifes saja.
+Daftar string nama repositori untuk melakukan salinan manifes saja.
 Tidak ada tag yang akan dibuat.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama pengguna
-Nama pengguna untuk diautentikasi dengan registri sumber.
+Nama pengguna untuk mengautentikasi dengan registri sumber.
 
 ```yaml
 Type: System.String
@@ -250,8 +253,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

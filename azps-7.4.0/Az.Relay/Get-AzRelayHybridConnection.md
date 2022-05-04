@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/get-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayHybridConnection.md
-ms.openlocfilehash: 15b1667ed874152bc928780999a28e4ee7c729e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 27469a83d1547d73c728d38119bafeeca7cd9171
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276345"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144613616"
 ---
 # Get-AzRelayHybridConnection
 
 ## SYNOPSIS
-Mendapatkan deskripsi untuk HybridConnection tertentu dalam ruang nama Relai.
+Mendapatkan deskripsi untuk HybridConnection yang ditentukan dalam namespace Relay.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelayhybridconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRelayHybridConnection [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRelayHybridConnection** mendapatkan deskripsi untuk HybridConnection tertentu dalam ruang nama Relay.
+Cmdlet **Get-AzRelayHybridConnection** mendapatkan deskripsi untuk HybridConnection yang ditentukan dalam namespace Relay.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Name                        : TestHybridConnection
 Type                        : Microsoft.Relay/HybridConnections
 ```
 
-Mengembalikan deskripsi HibridConnection.
+Mengembalikan deskripsi HybridConnection.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama HybridConnections.
 
 ```yaml
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

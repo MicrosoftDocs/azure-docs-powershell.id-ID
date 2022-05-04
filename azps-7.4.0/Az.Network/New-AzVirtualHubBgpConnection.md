@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubBgpConnection.md
-ms.openlocfilehash: fff0ac78851af4b8fb3b525ad8a90133c4f99ab4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3c5f8937c3b7af484cafd5ac11243dc2a1deb1e3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280755"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604220"
 ---
 # New-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
 Cmdlet New-AzVirtualHubBgpConnection membuat sumber daya HubBgpConnection yang mengintip Router Azure Virtual WAN Hub dengan serekan berkemampuan BGP di jaringan virtual yang terhubung ke Virtual WAN Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlWebService.md
-ms.openlocfilehash: 160990de61c8d2ab42ed9f860f7cdbe2b4f7e83b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4df2e313c1f035f26c25af5eeeaa482506ac63de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807642"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144630820"
 ---
 # Get-AzMlWebService
 
 ## SYNOPSIS
 Mengambil informasi ringkasan untuk satu atau beberapa layanan web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Get-AzMlWebService [-ResourceGroupName <String>] [-Name <String>] [-Region <Stri
 
 ## DESCRIPTION
 Mengambil informasi definisi layanan web.
-Tergantung pada parameter yang dilewati, cmdlet mengembalikan definisi untuk layanan web tertentu, kumpulan definisi untuk layanan web untuk grup sumber daya tertentu dalam langganan saat ini, atau kumpulan definisi untuk layanan web dalam langganan saat ini.
+Bergantung pada parameter yang dilewatkan, cmdlet mengembalikan definisi untuk layanan web tertentu, kumpulan definisi untuk layanan web untuk grup sumber daya tertentu dalam langganan saat ini, atau kumpulan definisi untuk layanan web dalam langganan saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail layanan web tertentu
+### Contoh 1: Mendapatkan detail layanan web tertentu
 ```powershell
 Get-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename"
 ```
 
-### Contoh 2: Dapatkan semua sumber daya layanan web dalam langganan saat ini
+### Contoh 2: Mendapatkan semua sumber daya layanan web dalam langganan saat ini
 ```powershell
 Get-AzMlWebService
 ```
 
-### Contoh 3: Dapatkan semua layanan web dalam langganan saat ini dan grup sumber daya yang diberikan
+### Contoh 3: Mendapatkan semua layanan web dalam langganan saat ini dan grup sumber daya yang diberikan
 ```powershell
 Get-AzMlWebService -ResourceGroupName "myresourcegroup"
 ```
@@ -62,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama layanan web tempat detail diambil.
 
 ```yaml
@@ -77,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kawasan
-Nama kawasan
+### -Wilayah
+Nama wilayah
 
 ```yaml
 Type: System.String
@@ -108,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
-ms.openlocfilehash: 8effa74f4a904a3db7b4abe78b365f5ef4e4f90b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 632d72bdc6dd4d81e3d23c1ea2b459c6855923ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808344"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616874"
 ---
 # Get-AzIotHubDeviceChildren
 
 ## SYNOPSIS
-Cetak daftar yang dipisahkan koma dari perangkat turunan yang ditetapkan.
+Cetak daftar perangkat turunan yang dipisahkan koma.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ DeviceId  ChildrenDeviceId
 myDevice1 {device1, device2}
 ```
 
-Memperlihatkan semua perangkat non-edge yang ditetapkan sebagai daftar yang dipisahkan koma.
+Tampilkan semua perangkat non-edge yang ditetapkan sebagai daftar yang dipisahkan koma.
 
 ### Contoh 2
 ```powershell
@@ -67,7 +70,7 @@ myDevice1 {device1, device2}
 myDevice2 {device3, device4, device5}
 ```
 
-Tampilkan semua perangkat non-edge yang ditetapkan sebagai daftar yang dipisahkan koma dari semua perangkat edge.
+Tampilkan semua perangkat non-edge yang ditetapkan sebagai daftar semua perangkat edge yang dipisahkan koma.
 
 ## PARAMETERS
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

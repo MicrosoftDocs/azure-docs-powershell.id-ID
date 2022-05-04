@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceUnit.md
-ms.openlocfilehash: ea0e20b23a6787f4a6c343c8374549b9bc16aedf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6bbeb3f9746eb6831593d4644645cdbdb8ef8e18
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062253"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622956"
 ---
 # New-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
 Membuat unit layanan di bawah topologi layanan dan layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerserviceunit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,9 +71,9 @@ New-AzDeploymentManagerServiceUnit [-ResourceGroupName] <String> [-Name] <String
 
 ## DESCRIPTION
 Cmdlet **New-AzDeploymentManagerServiceUnit** membuat layanan di bawah layanan dalam topologi layanan, dan mengembalikan objek yang mewakili unit layanan tersebut.
-Tentukan unit layanan berdasarkan nama, nama layanan, topologi layanan di dalamnya dan nama grup sumber daya. 
+Tentukan unit layanan berdasarkan namanya, nama layanan, topologi layanan di dalamnya dan nama grup sumber daya. 
 
-Cmdlet mengembalikan objek ServiceUnit. Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzDeploymentManagerService.
+Cmdlet mengembalikan objek ServiceUnit. Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan dengan menggunakan cmdlet Set-AzDeploymentManagerService.
 
 ## EXAMPLES
 
@@ -79,19 +82,19 @@ Cmdlet mengembalikan objek ServiceUnit. Anda dapat mengubah objek ini secara lok
 New-AzDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -ServiceName ContosoService2 -Name ContosoService2Storage -Location "Central US" -TargetResourceGroup service2ResourceGroup -DeploymentMode Incremental -TemplateArtifactSourceRelativePath "Templates/Service2.Storage.json" -ParametersArtifactSourceRelativePath "Parameters/Service2Storage.Parameters.json"
 ```
 
-Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 dalam topologi ContosoServiceTopology, di lokasi AS Tengah. File Templat dan parameter didefinisikan sebagai jalur relatif ke lokasi sumber artefak yang dirujuk dalam Service Topology ContosoServiceTopology. Sumber daya yang ditentukan dalam templat ini akan digunakan ke dalam layanan grup sumber daya target2ResourceGroup dengan mode penyebaran yang diatur ke Penambahan.
+Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 dalam topologi ContosoServiceTopology, di lokasi AS Tengah. File Templat dan parameter didefinisikan sebagai jalur relatif ke lokasi sumber artefak yang dirujuk dalam Topologi Layanan ContosoServiceTopology. Sumber daya yang ditentukan dalam templat ini akan disebarkan ke dalam grup sumber daya target service2ResourceGroup dengan mode penyebaran diatur ke Bertahap.
 
 ### Contoh 2
 ```powershell
 New-AzDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology1 -ServiceName ContosoService2 -Name ContosoService2Storage -Location "Central US" -TargetResourceGroup service2ResourceGroup -DeploymentMode Complete -TemplateUri "https://ContosoStorage.blob.core.windows.net/ContosoArtifacts/Templates/Service2.Storage.json?sasParameters" -ParametersUri "https://ContosoStorage.blob.core.windows.net/ContosoArtifacts/Parameters/Service2Storage.Parameters.json?sasParameters"
 ```
 
-Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 dalam topologi ContosoServiceTopology, di lokasi AS Tengah. Referensi Templat dan parameter disediakan sebagai sumber artefak SAS Uri tidak disediakan dalam Service Topology ContosoServiceTopology1. Sumber daya yang ditentukan dalam templat ini akan digunakan ke dalam layanan grup sumber daya target2ResourceGroup dengan mode penyebaran diatur ke Selesai.
+Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 dalam topologi ContosoServiceTopology, di lokasi AS Tengah. Referensi Templat dan parameter disediakan sebagai SAS Uri sebagai resourceId sumber artefak tidak disediakan dalam Topologi Layanan ContosoServiceTopology1. Sumber daya yang ditentukan dalam templat ini akan disebarkan ke dalam grup sumber daya target service2ResourceGroup dengan mode penyebaran diatur ke Selesai.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama unit layanan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyName
-Nama layanan topologi unit layanan ini adalah bagian dari.
+Nama topologi layanan yang menjadi bagian dari unit layanan ini.
 
 ```yaml
 Type: System.String
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroup
-Menentukan lokasi tempat sumber daya di bawah unit layanan akan digunakan.
+Menentukan lokasi tempat sumber daya di bawah unit layanan akan disebarkan.
 
 ```yaml
 Type: System.String
@@ -351,7 +354,7 @@ Accept wildcard characters: False
 
 ### -TemplateUri
 SAS Uri ke file templat.
-Jika ArtifactSourceId dirujuk dalam ServiceTopology, tentukan jalur relatif menggunakan TemplateArtifactSourceRelativePath.
+Jika ArtifactSourceId direferensikan dalam ServiceTopology, tentukan jalur relatif menggunakan TemplateArtifactSourceRelativePath.
 
 ```yaml
 Type: System.String
@@ -365,8 +368,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -397,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

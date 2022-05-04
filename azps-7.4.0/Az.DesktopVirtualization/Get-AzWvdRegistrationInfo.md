@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
-ms.openlocfilehash: 42433b4bcd0d7ee8550e049f8cf82fee9100f8d9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bffb563f8440933c1abfaeb257417849edcc47e9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124011"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144622938"
 ---
 # Get-AzWvdRegistrationInfo
 
 ## SYNOPSIS
-Dapatkan info registrasi desktop virtual Windows.
+Dapatkan info pendaftaran desktop virtual Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdregistrationinfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzWvdRegistrationInfo -HostPoolName <String> -ResourceGroupName <String> [-S
 ```
 
 ## DESCRIPTION
-Dapatkan info registrasi desktop virtual Windows.
+Dapatkan info pendaftaran desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Token Registrasi Desktop Virtual Windows 
+### Contoh 1: Mendapatkan Token Pendaftaran Virtual Desktop Windows 
 ```powershell
 Get-AzWvdRegistrationInfo -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
 ```
@@ -40,7 +43,7 @@ ExpirationTime       RegistrationTokenOperation Token
 4/1/2020 10:19:33 PM None                       eyJhbGciOiJSUzI1NiIsImtpZCI6IkMyRjU1RUYxNzg0MEFCNzkzMDk2RUYzRjdEMkNBRDk0NThGNDhEOTQiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjU5NGJjZWUwLTk5MjQtNDg3ZC1iOW...    
 ```
 
-Perintah ini mendapatkan Token Registrasi Desktop Virtual Windows di Host Pool.
+Perintah ini mendapatkan Token Pendaftaran Virtual Desktop Windows di Kumpulan Host.
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostPoolName
-Nama Pool Host
+Nama Kumpulan Host
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan
+ID Langganan
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

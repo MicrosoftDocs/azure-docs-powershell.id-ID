@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/st
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlVM.md
-ms.openlocfilehash: 4d2c147dcacf88a93009a9f8a53ec65376e0b8d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e788ae46f6d6b6f111f23415d89f6edbefb94af5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002835"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144648850"
 ---
 # Stop-AzDataMigrationToSqlVM
 
 ## SYNOPSIS
 Hentikan migrasi database yang sedang berlangsung untuk SQL VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationtosqlvm) untuk informasi terbaru.
 
 ## SYNTAX
 

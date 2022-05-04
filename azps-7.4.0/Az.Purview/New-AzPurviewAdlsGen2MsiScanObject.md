@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2MsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2MsiScanObject.md
-ms.openlocfilehash: b1a31df2e895648160e0db09c1f70cc79b308095
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 69921911c7900f5ccbabc680067f856902aa6ab1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936847"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686222"
 ---
 # New-AzPurviewAdlsGen2MsiScanObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk AdlsGen2MsiScan.
+Buat objek dalam memori untuk AdlsGen2MsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewadlsgen2msiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzPurviewAdlsGen2MsiScanObject -Kind <ScanAuthorizationType> [-CollectionRef
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk AdlsGen2MsiScan.
+Buat objek dalam memori untuk AdlsGen2MsiScan.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek pemindaian AdlsGen2 Msi
+### Contoh 1: Membuat objek pemindaian AdlsGen2 Msi
 ```powershell
 PS C:\> New-AzPurviewAdlsGen2MsiScanObject -Kind 'AdlsGen2Msi' -CollectionReferenceName 'parv-brs-2' -CollectionType 'CollectionReference' -ScanRulesetName 'AdlsGen2' -ScanRulesetType 'System'
 
@@ -49,7 +52,7 @@ ScanRulesetType           : System
 Worker                    :
 ```
 
-Buat objek pemindaian AdlsGen2 Msi
+Membuat objek pemindaian AdlsGen2 Msi
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusGeoDRConfiguration.md
-ms.openlocfilehash: 4c5d534642fe40c98435e3ee45712fb558b664a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bcf0cc02997079ddb9562a01494c4587a74cd5c0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800712"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144686060"
 ---
 # New-AzServiceBusGeoDRConfiguration
 
 ## SYNOPSIS
 Membuat Alias baru (konfigurasi Pemulihan Bencana)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusgeodrconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

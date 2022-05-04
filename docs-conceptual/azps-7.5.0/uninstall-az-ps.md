@@ -1,17 +1,17 @@
 ---
 description: Cara melakukan penghapusan instalan Azure PowerShell secara menyeluruh
 ms.custom: devx-track-azurepowershell
-ms.date: 04/05/2022
+ms.date: 04/26/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menghapus instalan Azure PowerShell
-ms.openlocfilehash: def78d7a5ef427b3515b57b3609b6e5248a7aa12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9bd7a7ee102e5fcda063d456fc8b23f2e6cb344e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144116204"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685743"
 ---
 # <a name="how-to-uninstall-azure-powershell-modules"></a>Cara menghapus instalan modul Azure PowerShell
 

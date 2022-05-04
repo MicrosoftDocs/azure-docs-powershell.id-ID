@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPrivateLinkAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPrivateLinkAssociation.md
-ms.openlocfilehash: 88f3d96230622e566f59c2bddaf033c2e8a491a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6c886ffb082a4befe92e7cc9bec0682e570fd036
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673668"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144628410"
 ---
 # New-AzPrivateLinkAssociation
 
 ## SYNOPSIS
-Membuat Asosiasi Private Link Manajemen Sumber Daya Azure.
+Membuat Asosiasi Private Link Azure Resource Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azprivatelinkassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzPrivateLinkAssociation [-ManagementGroupId] <String> [-Name] <String> [-Pr
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzPrivateLinkAssociation membuat assokaisi tautan privat pada lingkup.
+Cmdlet New-AzPrivateLinkAssociation membuat assocaition tautan privat pada cakupan.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Properties : {"privateLink":"/subscriptions/aeb49941-36c3-4e7c-9ffd-16ba89d33ec4
              /managementGroups/fc096d27-0434-4460-a3ea-110df0422a2d"}
 ```
 
-Membuat kaitan link privat tertentu di lingkup grup manajemen.
+Membuat asosiasi tautan privat tertentu di cakupan grup manajemen.
 
 ## PARAMETERS
 
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Id asosiasi tautan privat.
 
 ```yaml
@@ -124,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -156,11 +159,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

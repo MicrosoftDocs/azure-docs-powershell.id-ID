@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADGroup.md
-ms.openlocfilehash: ef76de685a69471db0b38b4224a598f095bc79c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 094fb1194bc4e8a6f6c55ff0c7d88a83ba9aa97b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109571"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144618044"
 ---
 # New-AzADGroup
 
 ## SYNOPSIS
 Menambahkan entitas baru ke grup
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -196,7 +198,7 @@ Accept wildcard characters: False
 
 ### -GroupType
 Menentukan jenis grup dan keanggotaannya.
-Jika koleksi berisi Terpadu, grup tersebut adalah grup Microsoft 365; jika tidak, itu adalah grup keamanan atau grup distribusi.
+Jika koleksi berisi Terpadu, grup adalah grup Microsoft 365; jika tidak, itu adalah grup keamanan atau grup distribusi.
 Untuk detailnya, lihat gambaran umum grup. Jika koleksi menyertakan DynamicMembership, grup memiliki keanggotaan dinamis; jika tidak, keanggotaan bersifat statis.
 Dikembalikan secara default.
 Mendukung $filter (eq, NOT).
@@ -267,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -MailEnabled
-Menentukan apakah grup diaktifkan email.
+Menentukan apakah grup diaktifkan melalui email.
 Dikembalikan secara default.
 Mendukung $filter (eq, ne, NOT).
 
@@ -425,7 +427,7 @@ Accept wildcard characters: False
 
 ### -Tema
 Menentukan tema warna grup Microsoft 365.
-Nilai yang mungkin adalah Teal, Ungu, Hijau, Biru, Merah Muda, Oranye atau Merah.
+Nilai yang mungkin adalah Teal, Purple, Green, Blue, Pink, Orange atau Red.
 Dikembalikan secara default.
 
 ```yaml

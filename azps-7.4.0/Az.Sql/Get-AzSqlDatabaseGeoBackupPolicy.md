@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackupPolicy.md
-ms.openlocfilehash: 869e5d9208a148d732671788047ccd6e5ecf61c4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 24e17d4b1de2e2450e6f1318ceb8b2eccf512272
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143272871"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645826"
 ---
 # Get-AzSqlDatabaseGeoBackupPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan pencadangan geo database.
+Mendapatkan kebijakan pencadangan geografis database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasegeobackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Get-AzSqlDatabaseGeoBackupPolicy [-ServerName] <String> [-DatabaseName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseGeoBackupPolicy** mendapatkan kebijakan cadangan geo yang terdaftar pada database ini.
+Cmdlet **Get-AzSqlDatabaseGeoBackupPolicy** mendapatkan kebijakan pencadangan geografis yang terdaftar ke database ini.
 Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan kebijakan pencadangan geo database. (autogenerasi)
+Mendapatkan kebijakan pencadangan geografis database. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -43,7 +46,7 @@ Get-AzSqlDatabaseGeoBackupPolicy -DatabaseName db1 -ResourceGroupName MyResource
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database tempat cmdlet ini mendapatkan kebijakan cadangan geo.
+Menentukan nama database yang cmdlet ini mendapatkan kebijakan pencadangan geografis.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
