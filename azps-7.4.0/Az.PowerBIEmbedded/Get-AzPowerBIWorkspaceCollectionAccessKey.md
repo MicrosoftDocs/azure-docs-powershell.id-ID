@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
-ms.openlocfilehash: 0b8219b2265a92773fdd7ad301f21f6ca08527b4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 496dc3d17d33a8dcd3dd1d71b3cfd0161b2f397d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060525"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729248"
 ---
 # Get-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
 Mendapatkan kunci akses saat ini yang terkait dengan kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspacecollectionaccesskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan kunci akses saa
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akses
+### Contoh 1: Mendapatkan kunci akses
 ```powershell
 Get-AzPowerBIWorkspaceCollectionAccessKey -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11"
 ```
 
-Perintah ini mendapatkan kunci akses untuk kumpulan ruang kerja bernama WCN11 dalam grup sumber daya yang ditentukan.
+Perintah ini mendapatkan kunci akses untuk koleksi ruang kerja bernama WCN11 dalam grup sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya kumpulan.
+Menentukan nama grup sumber daya koleksi.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

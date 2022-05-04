@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAssembly.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAssembly.md
-ms.openlocfilehash: a29dd24ed8afbebd848d249f567b0840c8f4c79e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 323ef32b4f843ef1c254c10f11038b82112eeb5c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142999685"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144735634"
 ---
 # Get-AzIntegrationAccountAssembly
 
 ## SYNOPSIS
-Mendapatkan perakitan akun integrasi.
+Mendapatkan rakitan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountassembly) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzIntegrationAccountAssembly** mendapatkan perakitan dari akun inte
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan perakitan menurut parameter
+### Contoh 1: Mendapatkan rakitan menurut parameter
 ```powershell
 Get-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -AssemblyName "sampleAssembly"
 ```
@@ -56,9 +59,9 @@ Location   :
 Tags       :
 ```
 
-Dapatkan perakitan bernama "sampleAssembly" yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat dalam grup sumber daya "sampleResourceGroup".
+Dapatkan assembly bernama "sampleAssembly" yang terletak di akun integrasi "sampleIntegrationAccount" yang terkandung dalam grup sumber daya "sampleResourceGroup".
 
-### Contoh 2: Mencantumkan semua perakitan dalam akun integrasi menurut parameter
+### Contoh 2: Mencantumkan semua rakitan dalam akun integrasi menurut parameter
 ```powershell
 Get-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount"
 ```
@@ -79,7 +82,7 @@ Location   :
 Tags       :
 ```
 
-Dapatkan semua perakitan yang terletak di akun integrasi "sampleIntegrationAccount" yang terdapat dalam grup sumber daya "sampleResourceGroup".
+Dapatkan semua rakitan yang terletak di akun integrasi "sampleIntegrationAccount" yang terkandung dalam grup sumber daya "sampleResourceGroup".
 
 ## PARAMETERS
 
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama perakitan akun integrasi.
+### -Name
+Nama rakitan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

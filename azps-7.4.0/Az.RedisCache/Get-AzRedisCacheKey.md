@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCacheKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCacheKey.md
-ms.openlocfilehash: 6ed7267c841e8865e540dc42bbc3d94f6185955d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 162f222c63e7357e72a613fb542ab48aa435fa97
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276615"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705648"
 ---
 # Get-AzRedisCacheKey
 
 ## SYNOPSIS
-Mendapatkan kunci akses untuk Cache Redis.
+Mendapatkan kunci akses untuk Redis Cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.rediscache/get-azrediscachekey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzRedisCacheKey [-ResourceGroupName <String>] -Name <String> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRedisCacheKey** mendapatkan tombol akses untuk Cache Azure Redis.
+Cmdlet **Get-AzRedisCacheKey** mendapatkan kunci akses untuk Azure Redis Cache.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tombol akses untuk Cache Redis
+### Contoh 1: Mendapatkan kunci akses untuk Redis Cache
 ```powershell
 Get-AzRedisCacheKey -ResourceGroupName "MyResourceGroup" -Name "MyCacheKey"
 ```
@@ -40,7 +43,7 @@ PrimaryKey        : pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
 SecondaryKey      : sJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
 ```
 
-Perintah ini akan mendapatkan tombol akses bernama MyCacheKey.
+Perintah ini mendapatkan kunci akses bernama MyCacheKey.
 
 ## PARAMETERS
 
@@ -59,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama Singgahan Redis.
+### -Name
+Menentukan nama Redis Cache.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi Singgahan Redis.
+Menentukan nama grup sumber daya yang berisi Redis Cache.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

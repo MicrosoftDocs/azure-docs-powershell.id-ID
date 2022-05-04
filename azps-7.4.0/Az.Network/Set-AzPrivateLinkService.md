@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateLinkService.md
-ms.openlocfilehash: ed501445a938dae49da4d3f6067cf18e5bd6d4eb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 387bed88a2c41c1e3cc2a92e93211741744fc271
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279819"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722448"
 ---
 # Set-AzPrivateLinkService
 
 ## SYNOPSIS
 Memperbarui layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azprivatelinkservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Set-AzPrivateLinkService -PrivateLinkService <PSPrivateLinkService> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzPrivateLinkService** memperbarui layanan tautan pribadi.
+Cmdlet **Set-AzPrivateLinkService** memperbarui layanan tautan privat.
 
 ## EXAMPLES
 
-### 1: Membuat layanan tautan pribadi dan memperbarui
+### 1: Membuat layanan tautan privat dan memperbaruinya
 ```powershell
 $vnet = Get-AzVirtualNetwork -ResourceName "myvnet" -ResourceGroupName "myresourcegroup"
 $IPConfig = New-AzPrivateLinkServiceIpConfig -Name "IP-Config" -Subnet $vnet.subnets[1] -PrivateIpAddress "10.0.0.5"
@@ -43,12 +46,12 @@ $privateLinkService.IpConfigurations[0] = $newIPConfig
 $privateLinkService | Set-AzPrivateLinkService
 ```
 
-Contoh ini membuat layanan tautan pribadi yang disebut mypls. Kemudian menggantikan ipConfigurations dari objek ipConfiguratiuon dalam memori. Cmdlet Set-AzPrivateLinkService kemudian digunakan untuk menulis status layanan tautan pribadi yang dimodifikasi di sisi layanan. 
+Contoh ini membuat layanan tautan privat yang disebut mypls. Kemudian mengganti ipConfigurations dari objek ipConfiguratiuon dalam memori. Cmdlet Set-AzPrivateLinkService kemudian digunakan untuk menulis status layanan tautan privat yang dimodifikasi di sisi layanan. 
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

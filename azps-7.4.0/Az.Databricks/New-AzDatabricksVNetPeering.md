@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksVNetPeering.md
-ms.openlocfilehash: 1f283856449b28555393cce0ceacdb9407fcb1fb
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6344ce61a10f3af151fab41bdc46196af88381bd
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143062649"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705476"
 ---
 # New-AzDatabricksVNetPeering
 
 ## SYNOPSIS
 Membuat vNet Peering untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksvnetpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,12 +46,12 @@ Name            Type
 vnetpeering-t01
 ```
 
-Perintah ini membuat peering vnet untuk trik data.
+Perintah ini membuat peering vnet untuk databricks.
 
 ## PARAMETERS
 
 ### -AllowForwardedTraffic
-Apakah lalu lintas yang diteruskan dari VM di jaringan virtual lokal akan diperbolehkan/tidak diizinkan dalam jaringan virtual jarak jauh.
+Apakah lalu lintas yang diteruskan dari VM di jaringan virtual lokal akan diizinkan/tidak diizinkan dalam jaringan virtual jarak jauh.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowGatewayTransit
-Jika link gateway bisa digunakan dalam jaringan virtual jarak jauh untuk menautkan ke jaringan virtual ini.
+Jika tautan gateway dapat digunakan dalam jaringan virtual jarak jauh untuk ditautkan ke jaringan virtual ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowVirtualNetworkAccess
-Apakah VM di ruang jaringan virtual lokal akan dapat mengakses VM dalam ruang jaringan virtual jarak jauh.
+Apakah VM di ruang jaringan virtual lokal akan dapat mengakses VM di ruang jaringan virtual jarak jauh.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama ruang kerja peering vNet.
+### -Name
+Nama peering vNet ruang kerja.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -244,10 +247,10 @@ Accept wildcard characters: False
 ```
 
 ### -UseRemoteGateway
-Jika gateway jarak jauh bisa digunakan pada jaringan maya ini.
+Jika gateway jarak jauh dapat digunakan pada jaringan virtual ini.
 Jika bendera diatur ke true, dan allowGatewayTransit pada peering jarak jauh juga benar, jaringan virtual akan menggunakan gateway jaringan virtual jarak jauh untuk transit.
 Hanya satu peering yang dapat mengatur bendera ini ke true.
-Bendera ini tidak bisa diatur jika jaringan virtual sudah memiliki gateway.
+Bendera ini tidak dapat diatur jika jaringan virtual sudah memiliki gateway.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja.
 
 ```yaml
@@ -276,8 +279,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

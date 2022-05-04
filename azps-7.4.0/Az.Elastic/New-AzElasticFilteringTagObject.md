@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Elastic/new-AzEl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticFilteringTagObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticFilteringTagObject.md
-ms.openlocfilehash: f3abdc802df070de20d60f6b2843a3fff814c683
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1a63a4ddc2555a1f5cdb4a9bc312728e6b5f9a9f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684000"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721369"
 ---
 # New-AzElasticFilteringTagObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk FilteringTag
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/new-azelasticfilteringtagobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Perintah ini membuat objek dalam memori untuk FilteringTag yang digunakan saat m
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan valid untuk tag pemfilteran.
+Tindakan yang valid untuk tag pemfilteran.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Elastic.Support.TagAction
@@ -59,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama (juga dikenal sebagai kunci) tag.
+### -Name
+Nama (juga dikenal sebagai kunci) dari tag.
 
 ```yaml
 Type: System.String
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Value
-Nilai tag.
+### -Nilai
+Nilai dari tag.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
-ms.openlocfilehash: c93afaeb9506f02a0f7dead41431b42e22b14204
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7f7576b8d74aab098b57c9963117e46181fb807a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673740"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683094"
 ---
 # New-AzManagementGroup
 
 ## SYNOPSIS
 Membuat Grup Manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/new-azmanagementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Pembuatan grup baru dengan `DisplayName` dan `ParentId` atur ke `null`. Yang `DisplayName` akan sama dengan `GroupName` dan induk grup akan menjadi penyewa.  
+Pembuatan grup baru dengan `DisplayName` dan `ParentId` diatur ke `null`. `DisplayName` akan sama dengan `GroupName` dan induk grup akan menjadi penyewa.  
 
 ### Contoh 2: Membuat Grup Manajemen dengan nama tampilan
 ```powershell
@@ -190,8 +193,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -222,11 +225,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceMetricsProperty.md
-ms.openlocfilehash: 00fc466a15755d6771e6c407650373da1cdd3057
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c277b28e3955e2f27342766e30bd8c4c7169904d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671112"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706566"
 ---
 # Get-AzStorageServiceMetricsProperty
 
 ## SYNOPSIS
 Mendapatkan properti metrik untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageservicemetricsproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,16 +33,16 @@ Cmdlet **Get-AzStorageServiceMetricsProperty** mendapatkan properti metrik untuk
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti metrik untuk layanan Blob
+### Contoh 1: Mendapatkan properti metrik untuk Blob service
 ```
 C:\PS>Get-AzStorageServiceMetricsProperty -ServiceType Blob -MetricsType Hour
 ```
 
-Perintah ini mendapatkan properti metrik untuk penyimpanan blob untuk tipe metrik Jam.
+Perintah ini mendapatkan properti metrik untuk penyimpanan blob untuk jenis metrik Jam.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks penyimpanan Azure.
 Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
@@ -71,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -MetricsType
-Menentukan tipe metrik.
-Cmdlet ini mendapatkan properti metrik layanan Azure Storage untuk tipe metrik yang ditentukan parameter ini.
+Menentukan jenis metrik.
+Cmdlet ini mendapatkan properti metrik layanan Azure Storage untuk jenis metrik yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Jam dan Menit.
 
 ```yaml
@@ -89,12 +92,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti metrik untuk tipe yang ditentukan parameter ini.
+Menentukan jenis layanan penyimpanan.
+Cmdlet ini mendapatkan properti metrik untuk jenis yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Gumpalan 
-- Meja
-- Antrian
+- Blob 
+- Tabel
+- Antrean
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

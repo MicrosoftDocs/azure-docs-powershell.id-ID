@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccount.md
-ms.openlocfilehash: 71e2e38360a9fff7781b5a0bafb8099fc3dfd17f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 65c8f85adde247e29a8d6c0fe269e63910257858
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143116721"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144684300"
 ---
 # New-AzStorageAccount
 
 ## SYNOPSIS
-Membuat akun Storage.
+Membuat Akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,12 +74,12 @@ PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName myst
 
 Perintah ini membuat akun Storage untuk nama grup sumber daya MyResourceGroup.
 
-### Contoh 2: Buat akun blob Storage dengan BlobStorage Kind dan hot AccessTier
+### Contoh 2: Membuat akun blob Storage dengan BlobStorage Kind dan hot AccessTier
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -SkuName Standard_GRS -Kind BlobStorage -AccessTier Hot
 ```
 
-Perintah ini membuat akun blob Storage dengan BlobStorage Kind dan Hot AccessTier
+Perintah ini membuat akun blob Storage dengan BlobStorage Kind dan hot AccessTier
 
 ### Contoh 3: Buat akun Storage dengan Kind StorageV2, dan Buat dan Tetapkan Identitas untuk Azure KeyVault.
 ```powershell
@@ -97,7 +100,7 @@ PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName myst
 
 Perintah ini membuat akun Storage yang memiliki properti NetworkRuleSet dari JSON
 
-### Contoh 5: Membuat akun Storage dengan Namespace Hierarki diaktifkan.
+### Contoh 5: Buat akun Storage dengan Namespace Hierarki diaktifkan.
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "US West" -SkuName "Standard_GRS" -Kind StorageV2  -EnableHierarchicalNamespace $true
 ```
@@ -125,9 +128,9 @@ PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "m
         -DefaultSharePermission StorageFileDataSmbShareElevatedContributor
 ```
 
-Perintah ini membuat akun Storage dengan File Active Directory Domain Service Authentication dan DefaultSharePermission.
+Perintah ini membuat akun Storage dengan Autentikasi Layanan Domain Direktori Aktif File dan DefaultSharePermission.
 
-### Contoh 8: Membuat akun Storage dengan Antrean dan Layanan Tabel menggunakan kunci enkripsi tercakup akun, dan Memerlukan Enkripsi Infrastruktur.
+### Contoh 8: Buat akun Storage dengan Antrean dan Layanan Tabel menggunakan kunci enkripsi cakupan akun, dan Memerlukan Enkripsi Infrastruktur.
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "eastus2euap" -SkuName "Standard_LRS" -Kind StorageV2  -EncryptionKeyTypeForTable Account -EncryptionKeyTypeForQueue Account -RequireInfrastructureEncryption
 
@@ -149,8 +152,8 @@ PS C:\> $account.Encryption.RequireInfrastructureEncryption
 True
 ```
 
-Perintah ini membuat akun Storage dengan Antrean dan Layanan Tabel menggunakan kunci enkripsi tercakup akun dan Memerlukan Enkripsi Infrastruktur, sehingga Antrean dan Tabel akan menggunakan kunci enkripsi yang sama dengan layanan Blob dan File, dan layanan akan menerapkan lapisan enkripsi sekunder dengan kunci platform yang dikelola untuk data saat istirahat.
-Kemudian dapatkan properti akun Storage, dan lihat keytype enkripsi Antrean dan Layanan Tabel, dan nilai RequireInfrastructureEncryption.
+Perintah ini membuat akun Storage dengan Antrean dan Layanan Tabel menggunakan kunci enkripsi cakupan akun dan Memerlukan Enkripsi Infrastruktur, sehingga Antrean dan Tabel akan menggunakan kunci enkripsi yang sama dengan layanan Blob dan File, dan layanan akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data tidak aktif.
+Kemudian dapatkan properti akun Storage, dan lihat jenis kunci enkripsi Antrean dan Layanan Tabel, dan nilai RequireInfrastructureEncryption.
 
 ### Contoh 9: Buat akun MinimumTlsVersion dan AllowBlobPublicAccess, dan nonaktifkan Akses SharedKey
 ```
@@ -166,9 +169,9 @@ PS C:\> $a.AllowSharedKeyAccess
 False
 ```
 
-Perintah membuat akun dengan MinimumTlsVersion, AllowBlobPublicAccess, dan menonaktifkan akses SharedKey ke akun, lalu memperlihatkan 3 properti akun yang dibuat 
+Perintah membuat akun dengan MinimumTlsVersion, AllowBlobPublicAccess, dan menonaktifkan akses SharedKey ke akun, lalu menampilkan 3 properti akun yang dibuat 
 
-### Contoh 10: Membuat akun Storage dengan pengaturan PeruteanPreferensi
+### Contoh 10: Membuat akun Storage dengan pengaturan RoutingPreference
 ```powershell
 PS C:\>$account = New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "eastus2euap" -SkuName "Standard_LRS" -PublishMicrosoftEndpoint $true -PublishInternetEndpoint $true -RoutingChoice MicrosoftRouting
 
@@ -208,7 +211,7 @@ PS C:\> $account.AllowCrossTenantReplication
 False
 ```
 
-Perintah ini membuat akun Storage dengan EdgeZone sebagai "microsoftlosangeles1" dan AllowCrossTenantReplication sebagai false, lalu memperlihatkan properti terkait akun yang dibuat.
+Perintah ini membuat akun Storage dengan EdgeZone sebagai "microsoftlosangeles1" dan AllowCrossTenantReplication sebagai false, lalu menampilkan properti terkait akun yang dibuat.
 
 ### Contoh 12: Membuat akun Storage dengan KeyExpirationPeriod dan SasExpirationPeriod
 ```powershell
@@ -221,9 +224,9 @@ PS C:\> $$account.SasPolicy.SasExpirationPeriod
 1.12:05:06
 ```
 
-Perintah ini membuat akun Storage dengan KeyExpirationPeriod dan SasExpirationPeriod, lalu memperlihatkan properti terkait akun yang dibuat.
+Perintah ini membuat akun Storage dengan KeyExpirationPeriod dan SasExpirationPeriod, lalu menampilkan properti terkait akun yang dibuat.
 
-### Contoh 12: Membuat akun Storage dengan enkripsi Keyvault (access Keyvault dengan identitas yang ditetapkan pengguna)
+### Contoh 12: Membuat akun Storage dengan enkripsi Keyvault (akses Keyvault dengan identitas yang ditetapkan pengguna)
 ```powershell
 # Create KeyVault (no need if using exist keyvault)
 PS C:\> $keyVault = New-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location eastus2euap -EnablePurgeProtection
@@ -254,7 +257,7 @@ CurrentVersionedKeyIdentifier : https://mykeyvault.vault.azure.net/keys/wrapping
 LastKeyRotationTimestamp      : 4/12/2021 8:17:57 AM
 ```
 
-Perintah ini terlebih dahulu membuat keyvault dan identitas yang ditetapkan pengguna, lalu membuat akun penyimpanan dengan enkripsi keyvault (keyvault akses akses penyimpanan dengan identitas yang ditetapkan pengguna).
+Perintah ini pertama-tama membuat keyvault dan identitas yang ditetapkan pengguna, lalu membuat akun penyimpanan dengan enkripsi keyvault (keyvault akses penyimpanan dengan identitas yang ditetapkan pengguna).
 
 ### Contoh 13: Membuat akun dengan EnableNfsV3
 ```
@@ -265,7 +268,7 @@ PS C:\> $account.EnableNfsV3
 True
 ```
 
-Perintah membuat akun dengan EnableNfsV3 sebagai true, lalu memperlihatkan properti EnableNfsV3 dari akun yang dibuat 
+Perintah buat akun dengan EnableNfsV3 sebagai true, lalu tampilkan properti EnableNfsV3 dari akun yang dibuat 
 
 ### Contoh 14: Membuat akun dengan menonaktifkan PublicNetworkAccess
 ```
@@ -291,15 +294,15 @@ ImmutabilityPeriodSinceCreationInDays State
                                     1 Unlocked 
 ```
 
-Perintah membuat akun dan mengaktifkan kekebalan tingkat akun dengan penerapan versi dengan '-EnableAccountLevelImmutability', maka semua kontainer di bawah akun ini akan memiliki kekebalan tingkat objek yang diaktifkan secara default.
-Akun ini juga dibuat dengan kebijakan keabadian tingkat akun default yang diwarisi dan diterapkan pada objek yang tidak memiliki kebijakan kekebalan eksplisit pada tingkat objek. 
+Perintah membuat akun dan mengaktifkan imutabilitas tingkat akun dengan penerapan versi oleh '-EnableAccountLevelImmutability', maka semua kontainer di bawah akun ini akan memiliki kekekalan tingkat objek yang diaktifkan secara default.
+Akun ini juga dibuat dengan kebijakan imutabilitas tingkat akun default yang diwariskan dan diterapkan ke objek yang tidak memiliki kebijakan imutabilitas eksplisit di tingkat objek. 
 
 ## PARAMETERS
 
 ### -AccessTier
 Menentukan tingkat akses akun Storage yang dibuat cmdlet ini.
-Nilai yang dapat diterima untuk parameter ini adalah: Panas dan Keren.
-Jika Anda menentukan nilai BlobStorage untuk parameter *Kind* , Anda harus menentukan nilai untuk parameter *AccessTier* . Jika Anda menentukan nilai Storage untuk parameter *Jenis* ini, jangan tentukan parameter *AccessTier*.
+Nilai yang dapat diterima untuk parameter ini adalah: Panas dan Dingin.
+Jika Anda menentukan nilai BlobStorage untuk parameter *Jenis* , Anda harus menentukan nilai untuk parameter *AccessTier* . Jika Anda menentukan nilai Storage untuk parameter *Jenis* ini, jangan tentukan parameter *AccessTier*.
 
 ```yaml
 Type: System.String
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryAccountType
-Menentukan tipe akun Direktori Aktif untuk Azure Storage. Nilai yang memungkinkan meliputi: 'Pengguna', 'Komputer'.
+Menentukan jenis akun Direktori Aktif untuk Azure Storage. Nilai yang mungkin termasuk: 'Pengguna', 'Komputer'.
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryDomainGuid
-Menentukan domain GUID. Parameter ini harus diatur ketika -EnableActiveDirectoryDomainServicesForFile diatur ke true.
+Menentukan GUID domain. Parameter ini harus diatur ketika -EnableActiveDirectoryDomainServicesForFile diatur ke true.
 
 ```yaml
 Type: System.String
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryDomainName
-Menentukan domain utama yang menjadi otoritatif server DNS AD. Parameter ini harus diatur ketika -EnableActiveDirectoryDomainServicesForFile diatur ke true.
+Menentukan domain utama tempat server DNS AD berotoritatif. Parameter ini harus diatur ketika -EnableActiveDirectoryDomainServicesForFile diatur ke true.
 
 ```yaml
 Type: System.String
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveDirectoryForestName
-Menentukan hutan Direktori Aktif untuk didapatkan. Parameter ini harus diatur ketika -EnableActiveDirectoryDomainServicesForFile diatur ke true.
+Menentukan forest Direktori Aktif yang akan didapatkan. Parameter ini harus diatur ketika -EnableActiveDirectoryDomainServicesForFile diatur ke true.
 
 ```yaml
 Type: System.String
@@ -435,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowBlobPublicAccess
-Izinkan akses publik ke semua blob atau kontainer dalam akun penyimpanan. Interpretasi default berlaku untuk properti ini.
+Izinkan akses publik ke semua blob atau kontainer di akun penyimpanan. Interpretasi default berlaku untuk properti ini.
 
 ```yaml
 Type: System.Boolean
@@ -450,7 +453,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowCrossTenantReplication
-Mendapatkan atau mengatur izin atau tidak memperbolehkan replikasi objek penyewa AAD silang. Interpretasi default berlaku untuk properti ini.
+Mendapatkan atau mengatur mengizinkan atau melarang replikasi objek penyewa lintas AAD. Interpretasi default berlaku untuk properti ini.
 
 ```yaml
 Type: System.Boolean
@@ -465,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowSharedKeyAccess
-Menunjukkan apakah akun penyimpanan mengizinkan permintaan untuk diotorisasi dengan kunci akses akun melalui Kunci Bersama. Jika false, semua permintaan, termasuk tanda tangan akses bersama, harus diotorisasi dengan Azure Active Directory (Azure AD). Nilai defaultnya adalah null, yang setara dengan true.
+Menunjukkan apakah akun penyimpanan mengizinkan permintaan untuk diotorisasi dengan kunci akses akun melalui Kunci Bersama. Jika false, maka semua permintaan, termasuk tanda tangan akses bersama, harus diotorisasi dengan Azure Active Directory (Azure AD). Nilai default adalah null, yang setara dengan true.
 
 ```yaml
 Type: System.Boolean
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -495,7 +498,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan identitas akun Storage baru untuk akun Storage ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
+Buat dan tetapkan Identitas akun Storage baru untuk akun Storage ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -557,7 +560,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, akun penyimpanan akan dibuat di kawasan utama Azure. Jika tidak, maka akan dibuat di lokasi yang diperluas yang ditentukan
+Atur nama lokasi yang diperluas untuk EdgeZone. Jika tidak diatur, akun penyimpanan akan dibuat di wilayah utama Azure. Jika tidak, itu akan dibuat di lokasi yang diperluas yang ditentukan
 
 ```yaml
 Type: System.String
@@ -572,7 +575,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAccountLevelImmutability
-Mengaktifkan kekebalan tingkat akun, maka semua kontainer di bawah akun ini akan memiliki kekebalan tingkat objek yang diaktifkan secara default.
+Mengaktifkan imutabilitas tingkat akun, maka semua kontainer di bawah akun ini akan mengaktifkan imutabilitas tingkat objek secara default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -617,7 +620,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHierarchicalNamespace
-Menunjukkan apakah akun Storage mengaktifkan Ruang Nama Hierarki atau tidak.
+Menunjukkan apakah akun Storage mengaktifkan Namespace Hierarkis atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -647,7 +650,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableLargeFileShare
-Menunjukkan apakah akun penyimpanan dapat mendukung berbagi file berukuran besar dengan kapasitas lebih dari 5 TiB atau tidak. Setelah akun diaktifkan, fitur tidak dapat dinonaktifkan. Saat ini hanya didukung untuk jenis replikasi LRS dan ZRS, maka konversi akun ke akun geo-redundant tidak akan dimungkinkan. Pelajari selengkapnya di https://go.microsoft.com/fwlink/?linkid=2086047
+Menunjukkan apakah akun penyimpanan dapat mendukung berbagi file besar dengan kapasitas lebih dari 5 TiB atau tidak. Setelah akun diaktifkan, fitur tidak dapat dinonaktifkan. Saat ini hanya didukung untuk jenis replikasi LRS dan ZRS, oleh karena itu konversi akun ke akun geo-redundan tidak akan dimungkinkan. Pelajari lebih lanjut di https://go.microsoft.com/fwlink/?linkid=2086047
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -677,8 +680,8 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyTypeForQueue
-Atur Tipe Kunci Enkripsi untuk Antrean. Nilai defaultnya adalah Layanan.
--Account: Queue akan dienkripsi dengan account-scoped encryption key. -Layanan: Antrean akan selalu dienkripsi dengan kunci Service-Managed. 
+Atur Encryption KeyType untuk Queue. Nilai defaultnya adalah Layanan.
+-Account: Antrean akan dienkripsi dengan kunci enkripsi cakupan akun. -Layanan: Antrean akan selalu dienkripsi dengan kunci Service-Managed. 
 
 ```yaml
 Type: System.String
@@ -695,7 +698,7 @@ Accept wildcard characters: False
 
 ### -EncryptionKeyTypeForTable
 Atur KeyType Enkripsi untuk Tabel. Nilai defaultnya adalah Layanan.
-- Akun: Tabel akan dienkripsi dengan kunci enkripsi tercakup akun. 
+- Akun: Tabel akan dienkripsi dengan kunci enkripsi cakupan akun. 
 - Layanan: Tabel akan selalu dienkripsi dengan kunci Service-Managed. 
 
 ```yaml
@@ -712,7 +715,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Atur tipe Identitas Akun Storage baru, idenetitas digunakan dengan layanan manajemen utama seperti Azure KeyVault.
+Atur jenis Identitas Akun Storage baru, idenetitasnya adalah untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
 
 ```yaml
 Type: System.String
@@ -728,7 +731,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutabilityPeriod
-Periode kekebalan untuk blob dalam wadah sejak pembuatan kebijakan dalam beberapa hari. Properti ini hanya dapat ditentukan dengan '-EnableAccountLevelImmutability'.
+Periode imutabilitas untuk blob dalam kontainer sejak pembuatan kebijakan dalam beberapa hari. Properti ini hanya dapat ditentukan dengan '-EnableAccountLevelImmutability'.
 
 ```yaml
 Type: System.Int32
@@ -743,7 +746,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutabilityPolicyState
-Mode kebijakan. Nilai yang memungkinkan meliputi: 'Tidak Terkunci', 'Dinonaktifkan. Status nonaktif menonaktifkan kebijakan ini. Status tidak terkunci memungkinkan peningkatan dan penurunan waktu penyimpanan kekebalan dan juga memungkinkan pengalihan properti allowProtectedAppendWrites. Kebijakan hanya dapat dibuat dalam status Nonaktif atau Tidak Terkunci dan dapat dialihkan di antara kedua status tersebut.
+Mode kebijakan. Nilai yang mungkin termasuk: 'Tidak Terkunci', 'Dinonaktifkan. Status dinonaktifkan menonaktifkan kebijakan. Status tidak terkunci memungkinkan peningkatan dan penurunan waktu retensi imutabilitas dan juga memungkinkan pengalihan properti allowProtectedAppendWrites. Kebijakan hanya dapat dibuat dalam status Dinonaktifkan atau Tidak Terkunci dan dapat dialihkan di antara kedua status.
 Properti ini hanya dapat ditentukan dengan '-EnableAccountLevelImmutability'.
 
 ```yaml
@@ -759,7 +762,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyExpirationPeriodInDay
-Periode kunci kedaluwarsa akun ini, akurat hingga hari.
+Periode kedaluwarsa kunci akun ini, itu akurat hingga ber hari.
 
 ```yaml
 Type: System.Int32
@@ -774,7 +777,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Storage Kunci enkripsi AkunSource KeyVault KeyName
+Storage Kunci enkripsi akunSource KeyVault KeyName
 
 ```yaml
 Type: System.String
@@ -789,7 +792,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Storage Kunci enkripsi AkunSource KeyVault KeyVaultUri
+Storage Kunci enkripsi akunSource KeyVault KeyVaultUri
 
 ```yaml
 Type: System.String
@@ -804,7 +807,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUserAssignedIdentityId
-Set resource id for user assigned Identity used to access Azure KeyVault of Storage Account Encryption, the id must in UserAssignIdentityId.
+Atur id sumber daya untuk Identitas yang ditetapkan pengguna yang digunakan untuk mengakses Azure KeyVault dari Enkripsi Akun Storage, id harus di UserAssignIdentityId.
 
 ```yaml
 Type: System.String
@@ -819,7 +822,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Storage Kunci enkripsi AkunSource KeyVault KeyVersion
+Storage Kunci enkripsi akunSource KeyVault KeyVersion
 
 ```yaml
 Type: System.String
@@ -833,14 +836,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Menentukan jenis akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Storage. Tujuan umum Storage akun yang mendukung penyimpanan Blob, Tabel, Antrean, File dan Disk.
-- StorageV2. Akun Storage Tujuan Umum Versi 2 (GPv2) yang mendukung Blob, Tabel, Antrean, File, dan Disk, dengan fitur tingkat lanjut seperti tingkat data.
-- Blobstorage. Akun blob Storage yang hanya mendukung penyimpanan Blob.
-- BlockBlobStorage. Blokir akun blob Storage yang mendukung penyimpanan Block Blobs saja.
-- FileStorage. Akun Storage file yang mendukung penyimpanan File saja.
+- Penyimpanan. Tujuan umum Storage akun yang mendukung penyimpanan Blob, Tabel, Antrean, File, dan Disk.
+- StorageV2. Akun Storage Tujuan Umum Versi 2 (GPv2) yang mendukung Blob, Tabel, Antrean, File, dan Disk, dengan fitur canggih seperti tingkatan data.
+- BlobStorage. Akun blob Storage yang hanya mendukung penyimpanan Blob.
+- BlockBlobStorage. Blokir akun blob Storage yang hanya mendukung penyimpanan Blob Blok.
+- FileStorage. Akun Storage file yang hanya mendukung penyimpanan File.
 Nilai defaultnya adalah StorageV2.
 
 ```yaml
@@ -857,7 +860,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi akun Storage untuk dibuat.
+Menentukan lokasi akun Storage yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -872,7 +875,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumTlsVersion
-Versi TLS minimum yang akan diizinkan berdasarkan permintaan penyimpanan. Interpretasi default adalah TLS 1.0 untuk properti ini.
+Versi TLS minimum yang akan diizinkan berdasarkan permintaan ke penyimpanan. Interpretasi default adalah TLS 1.0 untuk properti ini.
 
 ```yaml
 Type: System.String
@@ -887,8 +890,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama akun Storage untuk dibuat.
+### -Name
+Menentukan nama akun Storage yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -918,7 +921,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Memperbolehkan atau tidak memperbolehkan akses jaringan publik ke Storage Akun.Nilai yang memungkinkan meliputi: 'Diaktifkan', 'Dinonaktifkan'.
+Izinkan atau larang akses jaringan publik ke akun Storage.Nilai yang mungkin meliputi: 'Diaktifkan', 'Dinonaktifkan'.
 
 ```yaml
 Type: System.String
@@ -963,7 +966,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequireInfrastructureEncryption
-Layanan akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data saat istirahat.
+Layanan ini akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data tidak aktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -993,7 +996,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingChoice
-Pilihan Perutean menentukan jenis perutean jaringan yang dipilih oleh pengguna. Nilai yang memungkinkan termasuk: 'MicrosoftRouting', 'InternetRouting'
+Pilihan Perutean menentukan jenis perutean jaringan yang dipilih oleh pengguna. Nilai yang mungkin termasuk: 'MicrosoftRouting', 'InternetRouting'
 
 ```yaml
 Type: System.String
@@ -1009,7 +1012,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasExpirationPeriod
-Periode kedaluwarsa SAS dari akun ini, adalah rentang waktu dan akurat untuk detik.
+Periode kedaluwarsa SAS dari akun ini, ini adalah rentang waktu dan akurat hingga detik.
 
 ```yaml
 Type: System.TimeSpan
@@ -1026,14 +1029,14 @@ Accept wildcard characters: False
 ### -SkuName
 Menentukan nama SKU akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Standard_LRS. Penyimpanan lokal yang berlebihan.
-- Standard_ZRS. Penyimpanan berlemak zona.
-- Standard_GRS. Penyimpanan geo-berlebihan.
+- Standard_LRS. Penyimpanan redundan secara lokal.
+- Standard_ZRS. Penyimpanan zona-redundan.
+- Standard_GRS. Penyimpanan geo-redundan.
 - Standard_RAGRS. Membaca penyimpanan geo-redundan akses.
-- Premium_LRS. Premium penyimpanan lokal yang berlebihan.
-- Premium_ZRS. Premium penyimpanan berlemak zona.
-- Standard_GZRS - Penyimpanan berlemak zona geo-redundan.
-- Standard_RAGZRS - Membaca akses geo-redundan zona-redundan penyimpanan.
+- Premium_LRS. Premium penyimpanan yang berlebihan secara lokal.
+- Premium_ZRS. Premium penyimpanan zona-redundan.
+- Standard_GZRS - Penyimpanan zona redundan geo-redundan.
+- Standard_RAGZRS - Akses baca penyimpanan redundansi zona redundan secara geografis.
 
 ```yaml
 Type: System.String
@@ -1049,7 +1052,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag di server. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash yang ditetapkan sebagai tag di server. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -1064,7 +1067,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-Atur id sumber daya untuk pengguna akun Storage baru yang ditetapkan Identitas, identitas akan digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Atur id sumber daya untuk Identitas yang ditetapkan pengguna Akun Storage baru, identitas akan digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.String
@@ -1079,7 +1082,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSubDomain
-Menunjukkan apakah mengaktifkan validasi CName tidak langsung.
+Menunjukkan apakah akan mengaktifkan validasi CName tidak langsung.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -1094,7 +1097,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -1108,8 +1111,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzStorageAccount](./Get-AzStorageAccount.md)
+[Dapatkan-AkunPenyimpananAz](./Get-AzStorageAccount.md)
 
-[Hapus-AzStorageAccount](./Remove-AzStorageAccount.md)
+[Remove-AzStorageAccount](./Remove-AzStorageAccount.md)
 
 [Set-AzStorageAccount](./Set-AzStorageAccount.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleUrlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleUrlConfiguration.md
-ms.openlocfilehash: 9100ddc710e19c88b4a575da33a5e84b54ab1a05
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 104fc918859216ba6cf10b721e8a1cac93c06f97
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678510"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720992"
 ---
 # New-AzApplicationGatewayRewriteRuleUrlConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi url aturan penulisan ulang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriteruleurlconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApplicationGatewayRewriteRuleUrlConfiguration [-ModifiedPath <String>] [-M
 ```
 
 ## DESCRIPTION
-Cmdlet **AzApplicationGatewayRewriteRuleUrlConfiguration** membuat konfigurasi URL aturan penulisan ulang untuk gateway aplikasi Azure.
+Cmdlet **AzApplicationGatewayRewriteRuleUrlConfiguration** membuat konfigurasi url aturan penulisan ulang untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ $urlConfiguration = New-AzApplicationGatewayRewriteRuleUrlConfiguration -Modifie
 
 Perintah ini membuat konfigurasi url aturan penulisan ulang dan menyimpan hasilnya dalam variabel bernama $urlConfiguration.
 
-Jika ingin memperbarui UrlConfiguration yang sudah ada, Anda dapat melakukannya dengan membuat UrlConfiguration baru dan menetapkan UrlConfiguration baru ke properti UrlConfiguration dari Rewrite Rule Action Set.
+Jika Anda ingin memperbarui UrlConfiguration yang ada, Anda dapat melakukannya dengan membuat UrlConfiguration baru dan menetapkan UrlConfiguration baru ke properti UrlConfiguration dari Rewrite Rule Action Set.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModifiedPath
-Nilai jalur URL.
+Nilai jalur url.
 
 ```yaml
 Type: System.String
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Reroute
-Benderai untuk mengevaluasi ulang peta jalur URL yang disediakan dalam aturan perutean permintaan berbasis jalur menggunakan jalur yang diubah.
+### -Rute ulang
+Benderai untuk mengevaluasi kembali peta jalur url yang disediakan dalam aturan perutean permintaan berbasis jalur menggunakan jalur yang dimodifikasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,11 +100,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

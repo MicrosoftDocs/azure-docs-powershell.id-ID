@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPool.md
-ms.openlocfilehash: f2308740dc78d1fb13339b1509100e79032545d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9f417c4d95c330650f77a071e9a39276969edbad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809154"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144728241"
 ---
 # Get-AzDiskPool
 
 ## SYNOPSIS
-Dapatkan disk pool.
+Mendapatkan kumpulan Disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/get-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan disk pool.
 Get-AzDiskPool [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzDiskPool -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -42,7 +45,7 @@ Get-AzDiskPool -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Defaul
 ```
 
 ## DESCRIPTION
-Dapatkan disk pool.
+Mendapatkan kumpulan Disk.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ disk-pool-5      eastus2euap Running   Succeeded         {3}
 
 Perintah ini mencantumkan semua Kumpulan Disk dalam grup sumber daya
 
-### Contoh 2: Dapatkan Disk Pool
+### Contoh 2: Mendapatkan Kumpulan Disk
 ```powershell
 Get-AzDiskPool -ResourceGroupName 'storagepool-rg-test' -Name 'disk-pool-1'
 ```
@@ -71,9 +74,9 @@ Name             Location    Status    ProvisioningState AvailabilityZone
 disk-pool-1      eastus2euap Running   Succeeded         {3}
 ```
 
-Perintah ini mendapatkan Disk Pool.
+Perintah ini mendapatkan Kumpulan Disk.
 
-### Contoh 3: Cantumkan semua Kumpulan Disk di bawah langganan
+### Contoh 3: Mencantumkan semua Kumpulan Disk di bawah langganan
 ```powershell
 Get-AzDiskPool
 ```
@@ -87,7 +90,7 @@ disk-pool-5      eastus2euap Running   Succeeded         {3}
 
 Perintah ini mencantumkan semua Kumpulan Disk dalam langganan.
 
-### Contoh 4: Dapatkan Disk Pool menurut objek
+### Contoh 4: Mendapatkan Kumpulan Disk berdasarkan objek
 ```powershell
 New-AzDiskPool -Name 'disk-pool-1' -ResourceGroupName 'storagepool-rg-test' -Location 'westeurope' -SkuName 'Standard' -SkuTier 'Standard' -SubnetId '/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/storagepool-rg-test/providers/Microsoft.Network/virtualNetworks/disk-pool-vnet/subnets/default' -AvailabilityZone "1" | Get-AzDiskPool
 ```
@@ -98,7 +101,7 @@ Name             Location    Status    ProvisioningState AvailabilityZone
 disk-pool-1      eastus2euap Running   Succeeded         {3}
 ```
 
-Perintah ini mendapatkan Disk Pool berdasarkan objek.
+Perintah ini mendapatkan Kumpulan Disk berdasarkan objek.
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.IDiskPoolIdentity
@@ -132,7 +135,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kumpulan Disk.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -199,11 +202,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
-  - `[DiskPoolName <String>]`: Nama Disk Pool.
+  - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

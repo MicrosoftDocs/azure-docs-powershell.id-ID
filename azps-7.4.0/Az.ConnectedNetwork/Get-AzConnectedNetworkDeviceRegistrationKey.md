@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkDeviceRegistrationKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkDeviceRegistrationKey.md
-ms.openlocfilehash: dfb888907755f36bf07764bf5e28f829c3a2eea8
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fab0e978cb069d1dc622adddd6c88c63edd4ed0b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143229959"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685362"
 ---
 # Get-AzConnectedNetworkDeviceRegistrationKey
 
 ## SYNOPSIS
-Cantumkan kunci registrasi untuk perangkat.
+Cantumkan kunci pendaftaran untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkdeviceregistrationkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConnectedNetworkDeviceRegistrationKey -DeviceName <String> -ResourceGroupN
 ```
 
 ## DESCRIPTION
-Cantumkan kunci registrasi untuk perangkat.
+Cantumkan kunci pendaftaran untuk perangkat.
 
 ## EXAMPLES
 
@@ -37,9 +40,9 @@ eyJNZWNEZXZpY2VUcmFuc2llbnRBdXRoS2V5IjoiMTIzNCIsIk1lY0RldmljZUF1dGhLZXlTdGFydFRp
 ```
 
 Mendapatkan kunci pendaftaran untuk perangkat NFM dalam grup sumber daya myResources dengan nama sumber daya myMecDevice.
-Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran dalam sesi minishell.
+Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran di sesi minishell.
 
-### Contoh 2: Get-AzConnectedNetworkDeviceRegistrationKey menggunakan Grup Sumber Daya, Nama sumber daya dan Id Langganan
+### Contoh 2: Get-AzConnectedNetworkDeviceRegistrationKey menggunakan Grup Sumber Daya, Nama sumber daya, dan Id Langganan
 ```powershell
 PS C:\> Get-AzConnectedNetworkDeviceRegistrationKey -DeviceName myMecDevice -ResourceGroupName myResources -SubscriptionId xxxxx-00000-xxxxx-00000
 
@@ -47,7 +50,7 @@ eyJNZWNEZXZpY2VUcmFuc2llbnRBdXRoS2V5IjoiMTIzNCIsIk1lY0RldmljZUF1dGhLZXlTdGFydFRp
 ```
 
 Mendapatkan kunci pendaftaran untuk perangkat NFM dalam grup sumber daya myResources dengan nama sumber daya myMecDevice.
-Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran dalam sesi minishell.
+Untuk mendaftarkan perangkat, gunakan commandlet Invoke-MecRegister dengan kunci pendaftaran di sesi minishell.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -112,8 +115,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

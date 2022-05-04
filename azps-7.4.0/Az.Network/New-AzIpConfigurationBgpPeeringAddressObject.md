@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpConfigurationBgpPeeringAddressObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpConfigurationBgpPeeringAddressObject.md
-ms.openlocfilehash: a77507d4259610ff82069450d84bac9190d306c1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9a14c23891c4c18091482bb7665dfe58d6018d55
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142996751"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144707034"
 ---
 # New-AzIpConfigurationBgpPeeringAddressObject
 
 ## SYNOPSIS
 membuat IpconfigurationBgpPeeringAddressObject baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipconfigurationbgppeeringaddressobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzIpConfigurationBgpPeeringAddressObject -IpConfigurationId <String>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 ## DESCRIPTION
-**The New-AzIpConfigurationBgpPeeringAddressObject** creates a IpConfigurationBgpPeeringAddressObject object which represents BgpPeeringAddresses property in your virtual network gateway bgpsettings.
+**New-AzIpConfigurationBgpPeeringAddressObject** membuat objek IpConfigurationBgpPeeringAddressObject yang mewakili properti BgpPeeringAddresses di gateway jaringan virtual bgpsettings Anda.
 
 ## EXAMPLES
 
@@ -41,8 +44,8 @@ Hal di atas akan membuat IpConfigurationBgpPeeringAddressObject.Objek baru ini a
 
 ## PARAMETERS
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomAddress
-Gateway jaringan virtual CustomAddress List untuk BgpPeeringAddresses.
+Daftar CustomAddress gateway jaringan virtual untuk BgpPeeringAddresses.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -118,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

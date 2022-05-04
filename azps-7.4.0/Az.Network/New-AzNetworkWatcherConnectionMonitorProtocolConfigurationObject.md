@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject.md
-ms.openlocfilehash: 5c34f262685c1581808867e91dccaa47e5518784
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6a9eb41425c414a23ba11dd1c467cc704657e5b2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142871380"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722430"
 ---
 # New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject
 
 ## SYNOPSIS
-Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP atau ICMP.
+Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP, atau ICMP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitorprotocolconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject [-IcmpProtocol]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject membuat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP atau ICMP.
+Cmdlet New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject membuat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP, atau ICMP.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ DisableTraceRoute : False
 ```
 ### Contoh 2
 
-Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP atau ICMP. (autogenerasi)
+Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi pengujian melalui TCP, HTTP, atau ICMP. (dibuat otomatis)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 
 ### -DestinationPortBehavior
 Perilaku port tujuan.
-Nilai yang didukung tidak ada, ListenIfAvailable.
+Nilai yang didukung adalah Tidak Ada, ListenIfAvailable.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableTraceRoute
-Nilai yang menunjukkan apakah evaluasi jalur dengan rute jejak harus dinonaktifkan.
+Nilai yang menunjukkan apakah evaluasi jalur dengan rute pelacakan harus dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Method
-Metode HTTP untuk digunakan.
+Metode HTTP yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestHeader
-Header HTTP untuk ditransmisikan dengan permintaan.
+Header HTTP untuk dikirimkan dengan permintaan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -260,11 +263,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

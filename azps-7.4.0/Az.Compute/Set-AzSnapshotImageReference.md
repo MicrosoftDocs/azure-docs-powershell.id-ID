@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotImageReference.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotImageReference.md
-ms.openlocfilehash: cbf48f7e916e581dde7bec0abdbb955141db412a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 862ee484ebd046859daa9084e7b858d7e65d8a4c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127683"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144689750"
 ---
 # Set-AzSnapshotImageReference
 
 ## SYNOPSIS
-Mengatur properti referensi gambar pada objek snapshot.
+Mengatur properti referensi gambar pada objek rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azsnapshotimagereference) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzSnapshotImageReference [-Snapshot] <PSSnapshot> [[-Id] <String>] [[-Lun] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSnapshotImageReference** mengatur properti referensi gambar pada objek snapshot.
+Cmdlet **Set-AzSnapshotImageReference** mengatur properti referensi gambar pada objek rekam jepret.
 
 ## EXAMPLES
 
@@ -37,9 +40,9 @@ $snapshotconfig = Set-AzSnapshotImageReference -Snapshot $snapshotconfig -Id $im
 New-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -Snapshot $snapshotconfig;
 ```
 
-Perintah pertama membuat objek snapshot lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS.  Ini juga mengatur tipe OS Windows.
-Perintah kedua mengatur ID gambar dan unit logika nomor 0 untuk objek snapshot.
-Perintah terakhir mengambil objek snapshot dan membuat snapshot dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek rekam jepret lokal dengan ukuran 10GB dalam jenis akun penyimpanan Premium_LRS.  Ini juga menetapkan jenis OS Windows.
+Perintah kedua mengatur ID gambar dan unit logis nomor 0 untuk objek rekam jepret.
+Perintah terakhir mengambil objek rekam jepret dan membuat rekam jepret dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN).
+Menentukan nomor unit logis (LUN).
 
 ```yaml
 Type: System.Int32
@@ -88,8 +91,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Snapshot
-Menentukan objek snapshot lokal.
+### -Rekam jepret
+Menentukan objek rekam jepret lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSSnapshot
@@ -103,8 +106,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

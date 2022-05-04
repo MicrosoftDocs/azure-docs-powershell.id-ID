@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleObject.md
-ms.openlocfilehash: a92b416fad394527539225e736cd914705ff2c9a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aa2f129f509690ac8aa807841e2c773f92c31f4c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143286353"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144682104"
 ---
 # New-AzFrontDoorWafManagedRuleObject
 
 ## SYNOPSIS
-Buat Objek ManagedRule untuk pembuatan kebijakan WAF
+Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorWafManagedRuleObject -Type <String> -Version <String> [-Action <S
 ```
 
 ## DESCRIPTION
-Buat Objek ManagedRule untuk pembuatan kebijakan WAF
+Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Membuat Objek ManagedRule
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan Kumpulan Aturan. Nilai yang memungkinkan termasuk: 'Izinkan', 'Blokir', 'Log', 'Pengalihan'.
+Tindakan Seperangkat Aturan. Nilai yang mungkin termasuk: 'Izinkan', 'Blokir', 'Log', 'Alihkan'.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupOverride
-Daftar konfigurasi pengesampingan penyedia terkelola azure
+Daftar konfigurasi penimpaan penyedia terkelola azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSAzureRuleGroupOverride[]
@@ -112,8 +115,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe ruleset
+### -Type
+Jenis set aturan
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi ruleset
+Versi set aturan
 
 ```yaml
 Type: System.String
@@ -143,11 +146,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

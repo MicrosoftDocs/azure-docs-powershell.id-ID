@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderFilterablePropertyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderFilterablePropertyObject.md
-ms.openlocfilehash: 40723977f69958672f7b134032840fc7913d3003
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2aaefe6aa2ddef4eec7ddf2beee0ebc0fca5e1bc
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143001989"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715160"
 ---
 # New-AzEdgeOrderFilterablePropertyObject
 
 ## SYNOPSIS
-Membuat objek dalam memori untuk FilterableProperty.
+Buat objek dalam memori untuk FilterableProperty.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderfilterablepropertyobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzEdgeOrderFilterablePropertyObject -SupportedValue <String[]> -Type <Suppor
 ```
 
 ## DESCRIPTION
-Membuat objek dalam memori untuk FilterableProperty.
+Buat objek dalam memori untuk FilterableProperty.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ SupportedValue : {US}
 Type           : ShipToCountries
 ```
 
-ShipToCountries adalah tipe yang dapat difilter wajib, SupportedValue dapat berupa daftar kode negara ISO 2 huruf yang valid.
+ShipToCountries adalah jenis yang dapat difilter wajib, SupportedValue dapat menjadi daftar kode negara ISO yang valid 2 huruf.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 Jenis filter produk.
 
 ```yaml
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

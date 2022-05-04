@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: 1964aeb80c53e830929d7b4e16cc08e2d1a668ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5179f6666fd20721053f6d88054404f79d8ed155
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143125307"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683598"
 ---
 # Get-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
-Mendapatkan Data Lake Analytics kebijakan komputasi atau daftar kebijakan komputasi.
+Mendapatkan kebijakan komputasi Data Lake Analytics atau daftar kebijakan komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,28 +28,28 @@ Get-AzDataLakeAnalyticsComputePolicy [-ResourceGroupName <String>] [-Account] <S
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeAnalyticsComputePolicy** mendapatkan kebijakan komputasi Azure Data Lake Analytics tertentu atau daftar kebijakan.
+**Get-AzDataLakeAnalyticsComputePolicy** mendapatkan kebijakan komputasi Data Lake Analytics Azure tertentu atau daftar kebijakan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan komputasi yang ditentukan
+### Contoh 1: Mendapatkan kebijakan komputasi yang ditentukan
 ```powershell
 Get-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name myPolicy
 ```
 
-Perintah ini mendapatkan kebijakan komputasi yang ditentukan dengan nama 'myPolicy' dalam akun 'contosoadla'.
+Perintah ini mendapatkan kebijakan komputasi yang ditentukan dengan nama 'myPolicy' di akun 'contosoadla'.
 
-### Contoh 2: Dapatkan daftar semua kebijakan komputasi dalam akun
+### Contoh 2: Mendapatkan daftar semua kebijakan komputasi di akun
 ```powershell
 Get-AzDataLakeAnalyticsComputePolicy -AccountName "contosoadla"
 ```
 
-Perintah ini mendapatkan daftar semua kebijakan komputasi dalam akun "contosoadla"
+Perintah ini mendapatkan daftar semua kebijakan komputasi di akun "contosoadla"
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun untuk mendapatkan kebijakan komputasi atau kebijakan.
+Nama akun untuk mendapatkan kebijakan atau kebijakan komputasi.
 
 ```yaml
 Type: System.String
@@ -75,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kebijakan komputasi yang akan didapatkan.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana Akun Anda sudah ada.
+Nama grup sumber daya tempat Akun Anda berada.
 Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

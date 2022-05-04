@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/repair-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Repair-AzVmssServiceFabricUpdateDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Repair-AzVmssServiceFabricUpdateDomain.md
-ms.openlocfilehash: af02be31e8098d4001dec324853192cefa03df1a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: aed909f2fe1bac5218c3e91470f76eaceb3c74d3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142877014"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683940"
 ---
 # Repair-AzVmssServiceFabricUpdateDomain
 
 ## SYNOPSIS
-Manual platform update domain walk to update virtual machines in a service fabric virtual machine scale set.
+Panduan domain pembaruan platform manual untuk memperbarui komputer virtual dalam set skala komputer virtual service fabric.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/repair-azvmssservicefabricupdatedomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Repair-AzVmssServiceFabricUpdateDomain [-PlatformUpdateDomain] <Int32> [-Zone <S
 ```
 
 ## DESCRIPTION
-Paksa platform manual memperbarui domain berjalan untuk memperbarui mesin virtual dalam rangkaian skala mesin virtual kain layanan.
+Paksa panduan domain pembaruan platform manual untuk memperbarui komputer virtual dalam set skala komputer virtual service fabric.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ Paksa platform manual memperbarui domain berjalan untuk memperbarui mesin virtua
 Repair-AzVmssServiceFabricUpdateDomain -ResourceGroupName $rgname -VMScaleSetName $vmssName -PlatformUpdateDomain 0
 ```
 
-Perintah ini memaksa layanan pembaruan kain berjalan di UD 0 untuk kumpulan skala mesin virtual yang ditentukan oleh nama grup sumber daya dan nama kumpulan skala.
+Perintah ini memaksa pembaruan service fabric berjalan pada UD 0 untuk set skala komputer virtual yang ditentukan oleh nama grup sumber daya dan nama set skala.
 
 ### Contoh 2
 ```powershell
@@ -58,19 +61,19 @@ $vmss = Get-AzVmss -ResourceGroupName $rgname -VMScaleSetName $vmssName
 Repair-AzVmssServiceFabricUpdateDomain -VirtualMachineScaleSet $vmss -PlatformUpdateDomain 1
 ```
 
-Perintah ini memaksa layanan pembaruan kain berjalan di UD 1 untuk mesin virtual skala yang ditentukan oleh VM skala set objek.
+Perintah ini memaksa pembaruan service fabric berjalan pada UD 1 untuk set skala komputer virtual yang ditentukan oleh objek set skala VM.
 
 ### Contoh 3
 ```powershell
 Repair-AzVmssServiceFabricUpdateDomain -ResourceId $resourceId  -PlatformUpdateDomain 2;
 ```
 
-Perintah ini memaksa layanan pembaruan kain berjalan di UD 2 untuk skala mesin virtual yang ditentukan oleh id sumber daya.
+Perintah ini memaksa pembaruan service fabric berjalan pada UD 2 untuk set skala komputer virtual yang ditentukan oleh id sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlacementGroupId
-Id Grup Penempatan Vmss
+Id Grup Penempatan Vm
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformUpdateDomain
-Domain pembaruan platform di mana panduan pemulihan berjalan diminta.
+Domain pembaruan platform tempat panduan pemulihan manual diminta.
 
 ```yaml
 Type: System.Int32
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya untuk kumpulan skala mesin virtual.
+Id sumber daya untuk set skala komputer virtual.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSet
-Objek kumpulan skala mesin virtual lokal
+Objek set skala komputer virtual lokal
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Nama kumpulan skala mesin virtual
+Nama set skala komputer virtual
 
 ```yaml
 Type: System.String
@@ -204,8 +207,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

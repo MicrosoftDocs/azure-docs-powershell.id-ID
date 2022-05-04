@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
-ms.openlocfilehash: 4fc5fbbbdb504141bd4ca5c3024c95bf84046274
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 06e8b73e4694f0f9f48165a38398a1822b2f907f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143273843"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715412"
 ---
 # Set-AzServiceBusNamespace
 
 ## SYNOPSIS
-Memperbarui deskripsi ruang nama Bus Layanan yang sudah ada.
+Memperbarui deskripsi namespace Bus Layanan yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/set-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzServiceBusNamespace [-ResourceGroupName] <String> [[-Location] <String>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusNamespace** memperbarui deskripsi ruang nama Bus Layanan yang ditentukan dalam grup sumber daya.
+Cmdlet **Set-AzServiceBusNamespace** memperbarui deskripsi namespace Bus Layanan yang ditentukan dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ UpdatedAt          :
 ServiceBusEndpoint :
 ```
 
-Memperbarui ruang nama Bus Layanan dengan deskripsi baru.
+Memperbarui namespace Bus Layanan dengan deskripsi baru.
 
 ### Contoh 2
 ```powershell
@@ -69,7 +72,7 @@ UpdatedAt          :
 ServiceBusEndpoint :
 ```
 
-Memperbarui ruang nama Bus Layanan dengan deskripsi baru.
+Memperbarui namespace Bus Layanan dengan deskripsi baru.
 
 ### Contoh 3
 ```powershell
@@ -95,7 +98,7 @@ IdentityId         :
 EncryptionConfigs  :
 ```
 
-Memperbarui ruang nama Bus Layanan untuk mengaktifkan identitas sistem yang ditetapkan.
+Memperbarui namespace Bus Layanan untuk mengaktifkan identitas yang ditetapkan sistem.
 
 ### Contoh 4
 ```powershell
@@ -138,7 +141,7 @@ EncryptionConfigs  : {{ KeyName: key1,
                      }}
 ```
 
-Memperbarui ruang nama Bus Layanan untuk mengaktifkan enkripsi Identitas yang Ditetapkan Pengguna.
+Memperbarui namespace Bus Layanan untuk mengaktifkan enkripsi Identitas yang Ditetapkan Pengguna.
 
 ## PARAMETERS
 
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama Bus Layanan
+mengaktifkan atau menonaktifkan autentikasi SAS untuk namespace Bus Layanan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionConfig
-Properti Key
+Properti Kunci
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSEncryptionConfigAttributes[]
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe Identitas
+Jenis identitas
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Ruang Nama ServiceBus
+Lokasi Namespace ServiceBus
 
 ```yaml
 Type: System.String
@@ -233,8 +236,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Ruang Nama ServiceBus
+### -Name
+Nama Namespace ServiceBus
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kapasitas Sku Ruang Nama.
+Kapasitas Sku Namespace.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Sku Ruang Nama
+Nama Sku Namespace
 
 ```yaml
 Type: System.String
@@ -309,8 +312,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

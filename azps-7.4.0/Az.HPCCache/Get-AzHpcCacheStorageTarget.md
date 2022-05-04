@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/get-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCacheStorageTarget.md
-ms.openlocfilehash: 7f56b446af0356f6af9b72494317636c85395009
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bce4633070558421406239f75b3ececebeb07198
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747684"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144721262"
 ---
 # Get-AzHpcCacheStorageTarget
 
 ## SYNOPSIS
-Dapatkan target penyimpanan cache HPC.
+Mendapatkan target penyimpanan cache HPC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hpccache/get-azhpccachestoragetarget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Get-AzHpcCacheStorageTarget -ResourceGroupName rgTest -CacheName cacheTest -Stor
 ## PARAMETERS
 
 ### -CacheId
-Id sumber daya singgahan
+Id sumber daya Cache
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheName
-Nama singgahan.
+Nama cache.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama target penyimpanan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

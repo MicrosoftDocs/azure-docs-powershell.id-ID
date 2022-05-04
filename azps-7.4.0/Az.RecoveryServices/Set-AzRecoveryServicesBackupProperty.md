@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProperty.md
-ms.openlocfilehash: 5bfc3994e1577af0d23300c304f053ca6e8ba5b6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1ee4a9e025afa5ca38325495ed137b6751bcf83a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144705684"
 ---
 # Set-AzRecoveryServicesBackupProperty
 
 ## SYNOPSIS
 Mengatur properti untuk manajemen cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesbackupproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,23 +30,23 @@ Set-AzRecoveryServicesBackupProperty -Vault <ARSVault>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRecoveryServicesBackupProperty** mengatur properti penyimpanan cadangan untuk kubah Layanan Pemulihan.
+Cmdlet **Set-AzRecoveryServicesBackupProperty** menetapkan properti penyimpanan cadangan untuk vault Layanan Pemulihan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur penyimpanan GeoRedundant untuk kubah
+### Contoh 1: Mengatur penyimpanan GeoRedundan untuk vault
 ```powershell
 $Vault01 = Get-AzRecoveryServicesVault -Name "TestVault"
 Set-AzRecoveryServicesBackupProperty -Vault $Vault01 -BackupStorageRedundancy GeoRedundant
 ```
 
-Perintah pertama mendapatkan kubah bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
+Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
 Perintah kedua mengatur redundansi penyimpanan cadangan untuk $Vault 01 ke GeoRedundant.
 
 ## PARAMETERS
 
 ### -BackupStorageRedundancy
-Menentukan tipe redundansi penyimpanan cadangan.
+Menentukan jenis redundansi penyimpanan cadangan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.RecoveryServices.AzureRmRecoveryServicesBackupStorageRedundancyType]
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCrossRegionRestore
-Aktifkan CRR pada kubah. Pastikan untuk mengatur BackupStorageRedundancy ke GeoRedundant sebelum mengaktifkan CRR.
+Aktifkan CRR pada vault. Pastikan untuk mengatur BackupStorageRedundancy ke GeoRedundant sebelum mengaktifkan CRR.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan nama kubah.
-Kubah harus berupa objek **AzureRmRecoveryServicesVault** .
+Menentukan nama vault.
+Vault harus berupa objek **AzureRmRecoveryServicesVault** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -104,8 +107,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

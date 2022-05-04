@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityPricing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityPricing.md
-ms.openlocfilehash: 3bcbe6550203c99cb4b06aa4b7413eff5117e68f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e627d59520ec0ca03aadf18d0135b369b3deb027
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672804"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683022"
 ---
 # Get-AzSecurityPricing
 
 ## SYNOPSIS
 
-Mendapatkan paket Pertahanan Azure untuk langganan di Azure Security Center.
+Mendapatkan paket Azure Defender untuk langganan di Azure Security Center.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritypricing) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,9 +43,9 @@ Get-AzSecurityPricing -ResourceId <String> [-DefaultProfile <IAzureContextContai
 
 ## DESCRIPTION
 
-Anda dapat menampilkan setiap paket Pertahanan Azure, per langganan, menggunakan cmdlet ini.
+Anda dapat melihat setiap paket Azure Defender, per langganan, menggunakan cmdlet ini.
 
-Untuk detail tentang Pertahanan Azure dan paket yang tersedia, lihat [Pengenalan Pertahanan Azure](https://docs.microsoft.com/azure/security-center/azure-defender).
+Untuk detail tentang Azure Defender dan paket yang tersedia, lihat [Pengantar Azure Defender](https://docs.microsoft.com/azure/security-center/azure-defender).
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Id                                                                              
 /subscriptions/fbaa2b23-e9dd-4bed-93c1-9e2a44f64bc0/providers/Microsoft.Security/pricings/KeyVaults                  KeyVaults                 Free           00:00:00
 ```
 
-Mendapatkan status setiap paket Pertahanan Azure untuk langganan.
+Mendapatkan status setiap paket Azure Defender untuk langganan.
 
 
 
@@ -83,7 +86,7 @@ Mendapatkan detail harga ID sumber daya tertentu. Di mana ResourceId adalah sala
 Get-AzSecurityPricing -Name
 ```
 
-Mendapatkan detail harga paket Azure Defender yang bernama. Di mana `name` salah satu nama yang dikembalikan oleh `Get-AzSecurityPricing`.
+Mendapatkan detail harga paket Azure Defender bernama. Di mana `name` adalah salah satu nama yang dikembalikan oleh `Get-AzSecurityPricing`.
 
 
 ## PARAMETERS
@@ -104,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 
 Nama sumber daya.
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

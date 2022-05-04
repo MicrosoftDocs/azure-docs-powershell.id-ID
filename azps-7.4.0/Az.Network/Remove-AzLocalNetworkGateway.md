@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLocalNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLocalNetworkGateway.md
-ms.openlocfilehash: aa991b7799043ad74c21ab4564d09fc12f2d6cc6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74c3efab65c4e4f84d732e4f245d3fe36527bf27
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142742464"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729266"
 ---
 # Remove-AzLocalNetworkGateway
 
 ## SYNOPSIS
 Menghapus Gateway Jaringan Lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azlocalnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,22 +29,22 @@ Remove-AzLocalNetworkGateway -Name <String> -ResourceGroupName <String> [-Force]
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Di Tempat.
+Gateway Jaringan Lokal adalah objek yang mewakili perangkat VPN Anda Secara Lokal.
 Cmdlet **Remove-AzLocalNetworkGateway** menghapus objek yang mewakili gateway lokal Anda berdasarkan Nama dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Gateway Jaringan Lokal
+### Contoh 1: Menghapus Gateway Jaringan Lokal
 ```powershell
 Remove-AzLocalNetworkGateway -Name myLocalGW -ResourceGroupName myRG
 ```
 
-Menghapus objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya "myRG" Catatan: Anda harus menghapus semua koneksi ke Gateway Jaringan Lokal terlebih dahulu menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
+Menghapus objek Gateway Jaringan Lokal dengan nama "myLocalGW" dalam grup sumber daya Catatan "myRG": Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Jaringan Lokal menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -70,7 +73,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama gateway jaringan lokal yang dihapus cmdlet ini.
 
 ```yaml
@@ -131,8 +134,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

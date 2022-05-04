@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationCatalog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationCatalog.md
-ms.openlocfilehash: 60270362affe23755d37ec2384c25ba6b7bdd8d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5be9475ab8ebcd16419c94b2643ca2c7f4d5502d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142867798"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144714692"
 ---
 # Get-AzReservationCatalog
 
 ## SYNOPSIS
-Dapatkan katalog reservasi yang tersedia
+Mendapatkan katalog reservasi yang tersedia
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationcatalog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzReservationCatalog [-SubscriptionId <Guid>] -ReservedResourceType <String>
 ```
 
 ## DESCRIPTION
-Dapatkan kawasan dan sku yang tersedia untuk pembelian Instans Terpesan untuk langganan Azure yang ditentukan.
+Dapatkan wilayah dan sku yang tersedia untuk pembelian Instans Cadangan untuk langganan Azure yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Dapatkan katalog VirtualMachines di westus untuk langganan default
 Get-AzReservationCatalog -SubscriptionId "1111aaaa-b1b2-c0c2-d0d2-00000fffff" -ReservedResourceType SuseLinux
 ```
 
-Dapatkan katalog SuseLinux untuk langganan tertentu
+Dapatkan katalog SuseLinux untuk langganan yang ditentukan
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi sumber daya khusus dalam katalog
+Menentukan lokasi sumber daya yang dipesan dalam katalog
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservedResourceType
-Menentukan tipe sumber daya khusus dalam katalog
+Menentukan jenis sumber daya yang dipesan dalam katalog
 
 ```yaml
 Type: System.String
@@ -106,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

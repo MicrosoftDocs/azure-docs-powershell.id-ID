@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLabPlan.md
-ms.openlocfilehash: f4298ebd898d78e1469295f479805bc1f8d7bcac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 05d421ecc02ee8138daa6ddcf1578c3922867b2c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000027"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736660"
 ---
 # New-AzLabServicesLabPlan
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui sumber daya Rencana Lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/new-azlabserviceslabplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Buat rencana lab.
 ## PARAMETERS
 
 ### -AllowedRegion
-Kawasan yang diperbolehkan untuk digunakan oleh pembuat lab saat membuat lab menggunakan rencana lab ini.
+Wilayah yang diizinkan untuk digunakan pembuat lab saat membuat lab menggunakan rencana lab ini.
 
 ```yaml
 Type: System.String[]
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileNoConnectDelay
-Jumlah waktu VM akan tetap berjalan sebelum mati jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
+Jumlah waktu VM akan tetap berjalan sebelum dimatikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileShutdownOnDisconnect
-Apakah mematikan sambungan saat diputus diaktifkan
+Apakah matikan saat sambungan terputus diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileShutdownOnIdle
-Apakah VM akan dimatikan ketika diam selama periode waktu tertentu.
+Apakah VM akan dimatikan ketika telah menganggur untuk jangka waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.ShutdownOnIdleMode
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileShutdownWhenNotConnected
-Apakah VM akan dimatikan ketika belum tersambung setelah periode waktu tertentu.
+Apakah VM akan dimatikan ketika belum tersambung setelah jangka waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedLmsInstance
-Url dasar contoh lms rencana lab ini dapat menautkan daftar nama lab terhadap.
+Url Dasar instans lms, rencana lab ini dapat menautkan daftar nama lab.
 
 ```yaml
 Type: System.String
@@ -311,8 +314,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama rencana lab yang mengidentifikasinya secara unik di dalamnya berisi grup sumber daya.
+### -Name
+Nama paket lab yang secara unik mengidentifikasinya dalam grup sumber daya.
 Digunakan dalam URI sumber daya dan di UI.
 
 ```yaml
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -359,9 +362,9 @@ Accept wildcard characters: False
 ```
 
 ### -SharedGalleryId
-ID sumber daya dari Shared Image Gallery yang dilampirkan ke paket lab ini.
-Ketika menyimpan gambar mesin virtual templat lab, gambar itu akan tetap ada di galeri ini.
-Gambar bersama dari galeri dapat disediakan untuk digunakan saat membuat laboratorium baru.
+ID sumber daya Shared Image Gallery yang dilampirkan ke paket lab ini.
+Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan bertahan di galeri ini.
+Gambar bersama dari galeri dapat digunakan saat membuat lab baru.
 
 ```yaml
 Type: System.String
@@ -465,8 +468,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -481,7 +484,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -497,7 +500,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

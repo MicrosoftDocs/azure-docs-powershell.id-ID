@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
-ms.openlocfilehash: f6f0d28923d2f0c8c4f1cc49d3116050cd94ea21
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3fb5d33bd0c7223573a6066b2e2079bea59e384b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143055683"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144736984"
 ---
 # Set-AzWebAppSlotConfigName
 
 ## SYNOPSIS
-Mengatur nama Web App Slot Config
+Mengatur nama Konfigurasi Slot Aplikasi Web
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/set-azwebappslotconfigname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +47,11 @@ Cmdlet **Set-AzWebAppSlotConfigName** menandai Pengaturan Aplikasi dan String Ko
 Set-AzWebAppSlotConfigName -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -RemoveAllAppSettingNames -RemoveAllConnectionStringNames
 ```
 
-Perintah ini menghapus semua pengaturan aplikasi dan string koneksi untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini menghapus semua pengaturan aplikasi dan string koneksi untuk Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ### Contoh 2
 
-Atur nama Web App Slot Config. (autogenerasi)
+Atur nama Konfigurasi Slot Aplikasi Web. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionStringNames
-Array String Nama String Koneksi
+Array String Nama String Nama String Koneksi
 
 ```yaml
 Type: System.String[]
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveAllConnectionStringNames
-Opsi Hapus Semua Nama String Koneksi
+Hapus Opsi Semua Nama String Koneksi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -186,7 +189,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

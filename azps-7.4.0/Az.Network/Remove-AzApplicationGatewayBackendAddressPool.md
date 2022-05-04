@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: 1f6aefde669aaad82f8a6a876d09286743c6266e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 844af819e5585274e4754c75ec56c36ddf08ed8c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142742626"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144720812"
 ---
 # Remove-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
-Menghapus kumpulan alamat ujung belakang dari gateway aplikasi.
+Menghapus kumpulan alamat back-end dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaybackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Remove-AzApplicationGatewayBackendAddressPool -Name <String> -ApplicationGateway
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayBackendAddressPool** menghapus kumpulan alamat ujung belakang dari gateway aplikasi Azure.
+Cmdlet **Remove-AzApplicationGatewayBackendAddressPool** menghapus kumpulan alamat back-end dari gateway aplikasi Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan alamat ujung belakang dari gateway aplikasi
+### Contoh 1: Menghapus kumpulan alamat back-end dari gateway aplikasi
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 Remove-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -Name "BackEndPool02"
@@ -43,7 +46,7 @@ Perintah kedua menghapus kumpulan alamat back-end bernama BackEndPool02 dari gat
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menghapus kumpulan alamat ujung belakang.
+Menentukan gateway aplikasi tempat cmdlet ini menghapus kumpulan alamat back-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -72,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama kumpulan alamat ujung-belakang yang dihapus cmdlet ini.
+### -Name
+Menentukan nama kumpulan alamat back-end yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -87,8 +90,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

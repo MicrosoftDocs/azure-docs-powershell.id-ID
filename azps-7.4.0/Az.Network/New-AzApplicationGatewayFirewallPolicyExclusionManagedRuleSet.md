@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet.md
-ms.openlocfilehash: d0608a4103e62ab188387c30236639f345820a91
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 330be4785f259522b62d8a0dc96591ddd35bcf8a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678888"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144706080"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet
 
 ## SYNOPSIS
 Membuat ExclusionManagedRuleSet untuk pengecualian firewallPolicy
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusionmanagedruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet -RuleSetType <Stri
 ```
 
 ## DESCRIPTION
-**New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet** membuat pengecualian managed-ruleset untuk pengecualian kebijakan firewall.
+**New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet** membuat aturan terkelola pengecualian untuk pengecualian kebijakan firewall.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroup
-Pengesampingan Grup Aturan.
+Penimpaan Grup Aturan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyExclusionManagedRuleGroup[]
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetType
-Menentukan RuleSetType dalam pengecualianManagedRuleSet
+Tentukan RuleSetType dalam exclusionManagedRuleSet
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetVersion
-Tentukan RuleSetVersion dalam pengecualianManagedRuleSet
+Tentukan RuleSetVersion dalam exclusionManagedRuleSet
 
 ```yaml
 Type: System.String
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

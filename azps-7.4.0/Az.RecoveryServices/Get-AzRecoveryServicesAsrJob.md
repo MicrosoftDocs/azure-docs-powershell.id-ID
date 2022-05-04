@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 43564bf371463311daabb4c7f6d469aed0ad8914
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3b0ef2504887debb11261ac52df5b30a192eb9ad
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277173"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144722106"
 ---
 # Get-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
-Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru dalam kubah Layanan Pemulihan.
+Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzRecoveryServicesAsrJob -Job <ASRJob> [-DefaultProfile <IAzureContextContai
 
 ## DESCRIPTION
 Cmdlet **Get-AzRecoveryServicesAsrJob** mendapatkan pekerjaan Azure Site Recovery.
-Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR dalam kubah Layanan Pemulihan.
+Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR di vault Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -46,11 +49,11 @@ Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR dalam kubah Layana
 $jobs = Get-AzRecoveryServicesAsrJob -TargetObjectId $ASRObjectId
 ```
 
-Mengembalikan semua pekerjaan pada objek ASR tertentu(mereferensikan objek ASR seperti item yang direplikasi atau rencana pemulihan menurut ID-nya.) 
+Mengembalikan semua pekerjaan pada objek ASR tertentu (referensi objek ASR seperti item yang direplikasi atau rencana pemulihan dengan ID-nya.) 
 
 ### Contoh 2
 
-Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru dalam kubah Layanan Pemulihan. (autogenerasi)
+Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesAsrJob -Job $Job
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 Menentukan waktu akhir untuk pekerjaan.
 Cmdlet ini mendapatkan semua pekerjaan yang dimulai sebelum waktu yang ditentukan.
 Untuk mendapatkan objek **DateTime** untuk parameter ini, gunakan cmdlet Get-Date.
-Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
+Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -92,7 +95,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Job
+### -Pekerjaan
 Menentukan objek pekerjaan ASR untuk mendapatkan detail yang diperbarui.
 
 ```yaml
@@ -107,8 +110,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan tugas ASR menurut nama.
+### -Name
+Tentukan pekerjaan ASR berdasarkan nama.
 
 ```yaml
 Type: System.String
@@ -138,15 +141,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Negara Bagian
+### -State
 Menentukan status untuk pekerjaan ASR.
-Cmdlet ini mendapatkan semua pekerjaan yang sesuai dengan status yang ditentukan.
+Cmdlet ini mendapatkan semua pekerjaan yang cocok dengan status yang ditentukan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - NotStarted
-- InProgress
+- SedangBerlangsung
 - Berhasil
-- Lain
+- Lainnya
 - Gagal
 - Dibatalkan
 - Ditangguhkan
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

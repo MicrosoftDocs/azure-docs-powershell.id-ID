@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Export-AzAnalysisServicesInstanceLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Export-AzAnalysisServicesInstanceLog.md
-ms.openlocfilehash: e2f63abc256fec05f7a7cab522c888e6c04fb1e1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b26f64b08b5285748d09625e5a5860c5d32d3350
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320931"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144691386"
 ---
 # Export-AzAnalysisServicesInstanceLog
 
 ## SYNOPSIS
-Mengekspor log dari contoh server Analysis Services di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+Mengekspor log dari instans server Analysis Services di Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/export-azanalysisservicesinstancelog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Export-AzAnalysisServicesInstanceLog -OutputPath <String> [-Force] [-Instance] <
 ```
 
 ## DESCRIPTION
-Cmdlet Export-AzAnalysisServicesInstance mengekspor log dari contoh server Azure Analysis Services ke file
+Cmdlet Export-AzAnalysisServicesInstance mengekspor log dari instans server Azure Analysis Services ke file
 
 ## EXAMPLES
 
@@ -34,11 +37,11 @@ Cmdlet Export-AzAnalysisServicesInstance mengekspor log dari contoh server Azure
 Export-AzAnalysisServicesInstanceLog -Instance testserver -OutputPath C:\path\to\log\testserver.log
 ```
 
-Perintah ini akan mengekspor log dari server 'testserver' dalam lingkungan yang ditentukan dalam perintah Add-AzAnalysisServicesAccount dan menyimpannya ke file yang ditentukan dalam OutputPath 'C:\path\to\log\testserver.log'
+Perintah ini akan mengekspor log dari server 'testserver' di lingkungan yang ditentukan dalam perintah Add-AzAnalysisServicesAccount dan menyimpannya ke file yang ditentukan dalam OutputPath 'C:\path\to\log\testserver.log'
 
 ## PARAMETERS
 
-### -Paksa
+### -Force
 Timpa file jika ada tanpa bertanya
 
 ```yaml
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

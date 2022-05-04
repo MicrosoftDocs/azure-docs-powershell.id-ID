@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
-ms.openlocfilehash: 0f87b5052a3004af092f37d963eefe91f958f987
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 752b30b6bcac79eb5c2956eb63a21263d73eea42
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143119907"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144730832"
 ---
 # New-AzScheduledQueryRuleLogMetricTrigger
 
 ## SYNOPSIS
-Membuat objek dari tipe Pemicu Metrik Log.
+Membuat objek jenis Pemicu Metrik Log.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulelogmetrictrigger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ New-AzScheduledQueryRuleLogMetricTrigger -ThresholdOperator <String> -Threshold 
 ```
 
 ## DESCRIPTION
-Membuat objek dari tipe Pemicu Metrik Log dan bersifat opsional.
-Ini adalah kondisi pemicu untuk aturan kueri metrik, yang akan digunakan saat Anda perlu menyatakan tipe pengukuran metrik pemberitahuan.
+Membuat objek jenis Pemicu Metrik Log dan bersifat opsional.
+Ini adalah kondisi pemicu untuk aturan kueri metrik, yang akan digunakan saat Anda perlu menyatakan jenis pemberitahuan pengukuran metrik.
 
 ## EXAMPLES
 
@@ -54,8 +57,8 @@ Accept wildcard characters: False
 ```
 
 ### -MetricColumn
-Kolom yang nilai metriknya akan diagregasikan.
-Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
+Kolom tempat nilai metrik diagregasi.
+Input tidak divalidasi. Ini pertama-tama akan divalidasi ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -MetricTriggerType
-Tipe pemicu metrik.
-Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
+Jenis pemicu metrik.
+Input tidak divalidasi. Ini pertama-tama akan divalidasi ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -Ambang batas
 Nilai ambang batas metrik: Berturut-turut, Total.
-Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
+Input tidak divalidasi. Ini pertama-tama akan divalidasi ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.Double
@@ -101,9 +104,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ambang BatasOperator
+### -ThresholdOperator
 Operator ambang batas metrik : GreaterThan, LessThan, Equal.
-Input tidak divalidasi. Ini akan divalidasi terlebih dahulu ketika New-AzScheduledQueryRule akhirnya dipanggil.
+Input tidak divalidasi. Ini pertama-tama akan divalidasi ketika New-AzScheduledQueryRule akhirnya dipanggil.
 
 ```yaml
 Type: System.String
@@ -118,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVault.md
-ms.openlocfilehash: 3cea1f9ebbb724ad52292e9b96185d6d73d2e9d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 29e5fb7355dd55506283e61fcd2e91034a631758
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143000693"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144715070"
 ---
 # Get-AzKeyVault
 
 ## SYNOPSIS
-Mendapatkan kubah kunci.
+Mendapatkan brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,10 +42,10 @@ Get-AzKeyVault [-InRemovedState] [-DefaultProfile <IAzureContextContainer>] [-Su
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVault** mendapatkan informasi tentang kubah kunci dalam langganan. Anda dapat menampilkan semua contoh kubah kunci dalam langganan, atau memfilter hasil menurut grup sumber daya atau kubah kunci tertentu.
-Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini ketika Anda mendapatkan kubah kunci tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
+Cmdlet **Get-AzKeyVault** mendapatkan informasi tentang brankas kunci dalam langganan. Anda dapat melihat semua instans brankas kunci dalam langganan, atau memfilter hasil Anda menurut grup sumber daya atau brankas kunci tertentu.
+Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini ketika Anda mendapatkan satu brankas kunci, Anda harus melakukannya untuk performa yang lebih baik.
 
-Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - GET /directoryObjects/{id}
 - GET /users/{id}
@@ -51,7 +54,7 @@ Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter inpu
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kubah kunci dalam langganan Anda saat ini
+### Contoh 1: Mendapatkan semua brankas kunci di langganan Anda saat ini
 ```powershell
 Get-AzKeyVault
 ```
@@ -80,9 +83,9 @@ Resource ID         : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resou
 Tags                :
 ```
 
-Perintah ini mendapatkan semua kubah kunci dalam langganan Anda saat ini.
+Perintah ini mendapatkan semua brankas kunci di langganan Anda saat ini.
 
-### Contoh 2: Dapatkan kubah kunci tertentu
+### Contoh 2: Mendapatkan brankas kunci tertentu
 ```powershell
 Get-AzKeyVault -VaultName 'myvault'
 ```
@@ -118,9 +121,9 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah ini mendapatkan kubah kunci bernama myvault dalam langganan Anda saat ini.
+Perintah ini mendapatkan brankas kunci bernama myvault di langganan Anda saat ini.
 
-### Contoh 3: Dapatkan kubah kunci dalam grup sumber daya
+### Contoh 3: Mendapatkan brankas kunci dalam grup sumber daya
 ```powershell
 Get-AzKeyVault -ResourceGroupName 'myrg1'
 ```
@@ -141,9 +144,9 @@ Resource ID         : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resou
 Tags                :
 ```
 
-Perintah ini mendapatkan semua kubah kunci dalam grup sumber daya bernama ContosoPayRollResourceGroup.
+Perintah ini mendapatkan semua brankas kunci dalam grup sumber daya bernama ContosoPayRollResourceGroup.
 
-### Contoh 4: Dapatkan semua kubah kunci yang dihapus dalam langganan Anda saat ini
+### Contoh 4: Mendapatkan semua brankas kunci yang dihapus di langganan Anda saat ini
 ```powershell
 Get-AzKeyVault -InRemovedState
 ```
@@ -160,9 +163,9 @@ Scheduled Purge Date : 8/22/2018 9:33:24 PM
 Tags                 :
 ```
 
-Perintah ini mendapatkan semua kubah kunci yang dihapus dalam langganan Anda saat ini.
+Perintah ini mendapatkan semua brankas kunci yang dihapus di langganan Anda saat ini.
 
-### Contoh 5: Dapatkan kubah kunci yang dihapus
+### Contoh 5: Mendapatkan brankas kunci yang dihapus
 ```powershell
 Get-AzKeyVault -VaultName 'myvault4'  -Location 'westus' -InRemovedState
 ```
@@ -179,9 +182,9 @@ Scheduled Purge Date : 8/22/2018 9:33:24 PM
 Tags                 :
 ```
 
-Perintah ini mendapatkan informasi kubah kunci yang dihapus bernama myvault4 dalam langganan Anda saat ini dan di kawasan westus.
+Perintah ini mendapatkan informasi brankas kunci yang dihapus bernama myvault4 di langganan Anda saat ini dan di wilayah westus.
 
-### Contoh 6: Dapatkan kubah kunci menggunakan pemfilteran
+### Contoh 6: Mendapatkan brankas kunci menggunakan pemfilteran
 ```powershell
 Get-AzKeyVault -VaultName 'myvault*'
 ```
@@ -202,7 +205,7 @@ Resource ID         : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resou
 Tags                :
 ```
 
-Perintah ini mendapatkan semua kubah kunci dalam langganan yang dimulai dengan "myvault".
+Perintah ini mendapatkan semua brankas kunci dalam langganan yang dimulai dengan "myvault".
 
 ## PARAMETERS
 
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -InRemovedState
-Menentukan apakah akan memperlihatkan kubah yang dihapus sebelumnya dalam output.
+Menentukan apakah akan menampilkan vault yang dihapus sebelumnya dalam output.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi kubah yang dihapus.
+Lokasi vault yang dihapus.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan kubah kunci atau kubah kunci yang sedang dikueri.
+Menentukan nama grup sumber daya yang terkait dengan brankas kunci atau brankas kunci yang sedang dikueri.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: True
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci.
+Menentukan nama brankas kunci.
 
 ```yaml
 Type: System.String
@@ -326,7 +329,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -348,4 +351,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzKeyVault](./New-AzKeyVault.md)
 
-[Hapus-AzKeyVault](./Remove-AzKeyVault.md)
+[Remove-AzKeyVault](./Remove-AzKeyVault.md)

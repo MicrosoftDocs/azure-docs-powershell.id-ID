@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSynapseWorkspaceCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSynapseWorkspaceCredentialScanObject.md
-ms.openlocfilehash: d1d0783736bf072e14525c5a436bee811c81a242
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 59fb7a5402d165b29aa8688e37f481c7d624865a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142803034"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144683228"
 ---
 # New-AzPurviewAzureSynapseWorkspaceCredentialScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AzureSynapseWorkspaceCredentialScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewazuresynapseworkspacecredentialscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

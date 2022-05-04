@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
-ms.openlocfilehash: e315f442a1285ebf9a309378f8742f39757c6ca9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9d15c12ea3623dd3eb7d9d7ff9486ae896f65d22
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310815"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144729068"
 ---
 # Get-AzRecoveryServicesVaultSettingsFile
 
 ## SYNOPSIS
 Mendapatkan file pengaturan brankas Azure Site Recovery.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultsettingsfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,35 +47,35 @@ Cmdlet **Get-AzRecoveryServicesVaultSettingsFile** mendapatkan file pengaturan u
 
 ## EXAMPLES
 
-### Contoh 1: Daftarkan mesin Server Windows atau DPM untuk Azure Backup
+### Contoh 1: Mendaftarkan Windows Server atau mesin DPM untuk Azure Backup
 ```powershell
 $Vault01 = Get-AzRecoveryServicesVault -Name "TestVault"
 $CredsPath = "C:\Downloads"
 $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -Backup -Vault $Vault01 -Path $CredsPath
 ```
 
-Perintah pertama mendapatkan kubah bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
+Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
 Perintah kedua mengatur variabel $CredsPath ke C:\Downloads.
-Perintah terakhir mendapatkan file kredensial kubah untuk $Vault 01 menggunakan kredensial di $CredsPath untuk Azure Backup.
+Perintah terakhir mendapatkan file kredensial vault untuk $Vault 01 menggunakan kredensial di $CredsPath untuk Azure Backup.
 
 ### Contoh 2
 ```powershell
 $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
 ```
 
-Perintah mendapatkan file kredensial kubah untuk $Vault 01 dari jenis kubah siteRecovery.
+Perintah mendapatkan file kredensial vault untuk $Vault 01 jenis vault siteRecovery.
 
-### Contoh 3: Daftarkan mesin server Windows atau DPM untuk Azure Backup
+### Contoh 3: Mendaftarkan komputer Windows Server atau DPM untuk Azure Backup
 ```powershell
 $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
 ```
 
-Perintah mendapatkan file kredensial kubah untuk $Vault 01.
+Perintah mendapatkan file kredensial vault untuk $Vault 01.
 
 ## PARAMETERS
 
-### -Cadangan
-Menunjukkan bahwa file kredensial kubah berlaku untuk Azure Backup.
+### -Pencadangan
+Menunjukkan file kredensial vault berlaku untuk Azure Backup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur ke file pengaturan azure Site Recovery kubah.
+Menentukan jalur ke file pengaturan brankas Azure Site Recovery.
 Anda dapat mengunduh file ini dari portal brankas Azure Site Recovery dan menyimpannya secara lokal.
 
 ```yaml
@@ -133,8 +136,8 @@ Accept wildcard characters: False
 ```
 
 ### -SiteFriendlyName
-Menentukan nama situs yang mudah dikenali.
-Gunakan parameter ini jika Anda mengunduh kredensial kubah untuk situs Hyper-V.
+Menentukan nama situs yang mudah diingat.
+Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -SiteIdentifier
 Menentukan pengidentifikasi situs.
-Gunakan parameter ini jika Anda mengunduh kredensial kubah untuk situs Hyper-V.
+Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteRecovery
-Menunjukkan bahwa file kredensial kubah berlaku untuk Azure Site Recovery.
+Menunjukkan file kredensial vault berlaku untuk Azure Site Recovery.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan objek kubah Azure Site Recovery.
+Menentukan objek brankas Azure Site Recovery.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

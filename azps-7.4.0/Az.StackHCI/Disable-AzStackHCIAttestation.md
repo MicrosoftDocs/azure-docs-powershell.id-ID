@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIAttestation.md
-ms.openlocfilehash: e15cb46bb45c04103460facfd7c87f13b9533a15
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f21e60d1ea56c5501aeb5e5d368c7b0f274f6095
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143171171"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144731534"
 ---
 # Disable-AzStackHCIAttestation
 
 ## SYNOPSIS
 Disable-AzStackHCIAttestation menonaktifkan Pengesahan IMDS pada host
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/disable-azstackhciattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Disable-AzStackHCIAttestation menonaktifkan Pengesahan IMDS pada host
 Disable-AzStackHCIAttestation -RemoveVM
 ```
 
-Hapus semua tamu dari Pengesahan IMDS sebelum menonaktifkan node kluster.
+Hapus semua tamu dari IMDS Attestation sebelum menonaktifkan pada node kluster.
 
 ### CONTOH 2
 ```powershell
@@ -58,9 +61,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
+### -Credential
 Menentukan kredensial untuk ComputerName.
-Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini yang menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -74,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Tidak ada konfirmasi.
 
 ```yaml
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveVM
-Menentukan tamu di setiap simpul harus dihapus dari Pengesahan IMDS sebelum menonaktifkan pada kluster.
+Menentukan tamu pada setiap simpul harus dihapus dari Pengesahan IMDS sebelum menonaktifkan pada kluster.
 Nonaktifkan tidak dapat dilanjutkan sebelum tamu dihapus.
 
 ```yaml
@@ -105,8 +108,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -145,7 +148,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### PSCustomObject. Mengembalikan Properti berikut di PSCustomObject
 ### Kluster: Nama kluster
 ### Node: Nama host.
-### Atestation: Status Attesasi IMDS.
+### Pengesahan: Status Pengesahan IMDS.
 ## NOTES
 
 ## RELATED LINKS

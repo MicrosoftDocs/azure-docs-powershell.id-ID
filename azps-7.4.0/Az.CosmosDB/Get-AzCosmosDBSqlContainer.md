@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainer.md
-ms.openlocfilehash: 31500856ccf7f55279e77d1196093fe83dfc93a1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4990d743afdb3166d01dc884a92bb15582027086
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004347"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144685326"
 ---
 # Get-AzCosmosDBSqlContainer
 
 ## SYNOPSIS
-Dapatkan CosmosDB Sql Container.
+Mendapatkan Kontainer Sql CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlContainer [-Name <String>] -ParentObject <PSSqlDatabaseGetResul
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlContainer** mendapatkan daftar semua CosmosDB Sql Container yang sudah ada untuk ResourceGroupName, AccountName dan DatabaseName tertentu dan mendapatkan satu CosmosDB Sql Container untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu.
+Cmdlet **Get-AzCosmosDBSqlContainer** mendapatkan daftar semua Kontainer Sql CosmosDB yang ada untuk ResourceGroupName, AccountName, dan DatabaseName tertentu dan mendapatkan satu CosmosDB Sql Container untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName tertentu.
 
 ## EXAMPLES
 
@@ -94,7 +97,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kontainer.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database Sql.
+Objek Sql Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlDatabaseGetResults
@@ -140,11 +143,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
