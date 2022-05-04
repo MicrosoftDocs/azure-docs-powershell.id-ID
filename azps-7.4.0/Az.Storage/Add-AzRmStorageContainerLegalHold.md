@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/add-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: 90c4fd378c959d1e4a5e77f6c4d371458a2df96e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dd96a2db2b576d790e1203944113fd3c02bf3eae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798516"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663856"
 ---
 # Add-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
-Menambahkan tag penahanan legal ke wadah blob Storage
+Menambahkan tag penahanan legal ke kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/add-azrmstoragecontainerlegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,36 +44,36 @@ Add-AzRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzRmStorageContainerLegalHold** menambahkan tag penahanan legal ke wadah blob Storage
+Cmdlet **Add-AzRmStorageContainerLegalHold** menambahkan tag penahanan legal ke kontainer blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan tag penahanan legal ke wadah blob Storage dengan nama akun dan nama kontainer Storage
+### Contoh 1: Menambahkan tag penahanan legal ke kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Add-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1,tag2 -AllowProtectedAppendWriteAll $true
 ```
 
-Perintah ini menambahkan tag penahanan legal ke wadah blob Storage dengan nama akun Storage dan nama kontainer, dan atur AllowProtectedAppendWriteAll sebagai true untuk memungkinkan penambahan blok baru untuk menambahkan atau memblokir blob.
+Perintah ini menambahkan tag penahanan legal ke kontainer blob Storage dengan nama akun dan nama kontainer Storage, dan mengatur AllowProtectedAppendWriteAll sebagai true untuk memungkinkan penambahan blok baru untuk menambahkan atau memblokir blob.
 
-### Contoh 2: Menambahkan tag penahanan legal ke wadah blob Storage dengan objek akun Storage dan nama kontainer
+### Contoh 2: Menambahkan tag penahanan legal ke kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Add-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1
 ```
 
-Perintah ini menambahkan tag penahanan legal ke wadah blob Storage dengan objek akun Storage dan nama kontainer.
+Perintah ini menambahkan tag penahanan legal ke kontainer blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Menambahkan tag penahanan legal ke semua wadah blob Storage dalam akun Storage dengan pipeline
+### Contoh 3: Menambahkan tag penahanan legal ke semua kontainer blob Storage di akun Storage dengan alur
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Add-AzRmStorageContainerLegalHold -Tag  tag1,tag2,tag3
 ```
 
-Perintah ini menambahkan tag penahanan legal ke semua wadah blob Storage dalam akun Storage dengan pipeline.
+Perintah ini menambahkan tag penahanan legal ke semua kontainer blob Storage di akun Storage dengan alur.
 
 ## PARAMETERS
 
-### -AllowProtectedAppendWriteSemua
-Saat diaktifkan, blok baru dapat ditulis ke 'Blob Disetujui dan Blokir' sambil mempertahankan perlindungan dan kepatuhan kekebalan tubuh. Hanya blok baru yang dapat ditambahkan dan blok yang sudah ada tidak dapat diubah atau dihapus.
+### -AllowProtectedAppendWriteAll
+Saat diaktifkan, blok baru dapat ditulis ke 'Blob Yang Disetujui dan Blokir' sambil mempertahankan perlindungan dan kepatuhan imutabilitas. Hanya blok baru yang dapat ditambahkan dan blok yang ada tidak dapat dimodifikasi atau dihapus.
 
 ```yaml
 Type: System.Boolean
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kontainer
-objek kontainer Storage
+Storage objek kontainer
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -114,7 +117,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kontainer
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container LegalHold Tags
+Tag LegalHold Kontainer
 
 ```yaml
 Type: System.String[]
@@ -189,8 +192,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

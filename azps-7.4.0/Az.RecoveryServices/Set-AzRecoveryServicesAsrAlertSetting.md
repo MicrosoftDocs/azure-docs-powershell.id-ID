@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: b0b5ef08d99ee8ab7aeb67f3cee4262599957cd4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 060ad44749c1a54d833134a0b10fa1ea9b2c7d6e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276723"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144671056"
 ---
 # Set-AzRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
-Mengonfigurasi pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk kubah.
+Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasralertsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Atur (Default)
+### Set (Default)
 ```
 Set-AzRecoveryServicesAsrAlertSetting [-CustomEmailAddress <String[]>] [-LocaleID <String>]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,14 +40,14 @@ Set-AzRecoveryServicesAsrAlertSetting [-DisableEmailToSubscriptionOwner] [-Custo
  [-LocaleID <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Menonaktifkan
+### Nonaktifkan
 ```
 Set-AzRecoveryServicesAsrAlertSetting [-DisableNotification] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzRecoveryServicesAsrNotificationSetting** mengonfigurasi pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk kubah.
+Cmdlet **Set-AzRecoveryServicesAsrNotificationSetting** mengonfigurasi pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Atur pemberitahuan untuk alamat email kustom dan untuk pemilik langganan.
 
 ### Contoh 3
 
-Mengonfigurasi pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk kubah. (autogenerasi)
+Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Set-AzRecoveryServicesAsrAlertSetting -CustomEmailAddress 'abcxxxx@xxxx.com' -DisableEmailToSubscriptionOwner
@@ -85,7 +88,7 @@ Set-AzRecoveryServicesAsrAlertSetting -CustomEmailAddress 'abcxxxx@xxxx.com' -Di
 ## PARAMETERS
 
 ### -CustomEmailAddress
-Pemberitahuan / Pemberitahuan yang dikirim ke email.
+Pemberitahuan / Pemberitahuan dikirim ke email.
 
 ```yaml
 Type: System.String[]
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableEmailToSubscriptionOwner
-Beralih parameter menentukan aktifkan pemberitahuan ke pemilik langganan.
+Parameter pengalihan menentukan aktifkan pemberitahuan kepada pemilik langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableNotification
-Tandai untuk menonaktifkan semua pemberitahuan.
+Benderai untuk menonaktifkan semua pemberitahuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableEmailSubscriptionOwner
-Beralih parameter menentukan aktifkan pemberitahuan ke pemilik langganan.
+Parameter pengalihan menentukan aktifkan pemberitahuan kepada pemilik langganan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -LOCALEID
+### -LocaleID
 Bahasa email pemberitahuan /pemberitahuan kepada pengguna(kode budaya yang didukung dari microsoft). 
 
 ```yaml
@@ -174,8 +177,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,11 +208,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

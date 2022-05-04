@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlUserDefinedFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlUserDefinedFunction.md
-ms.openlocfilehash: 542f188ec91be8eeeb38badc403d3f7b51404d1a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0abbcb7dd1ed29723aeac5e74a82f11020b1f18a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142943687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144594824"
 ---
 # Get-AzCosmosDBSqlUserDefinedFunction
 
 ## SYNOPSIS
-Mendapatkan Fungsi Definisi Pengguna CosmosDB Sql.
+Mendapatkan Fungsi yang Ditentukan Pengguna CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqluserdefinedfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlUserDefinedFunction [-Name <String>] -ParentObject <PSSqlContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlUserDefinedFunction** mendapatkan daftar semua CosmosDB Sql UserDefinedFunctions yang sudah ada untuk ResourceGroupName tertentu, AccountName, DatabaseName, dan ContainerName dan mendapatkan satu CosmosDB Sql UserDefinedFunction untuk ResourceGroupName, AccountName, DatabaseName, ContainerName dan UserDefinedFunctionName.
+Cmdlet **Get-AzCosmosDBSqlUserDefinedFunction** mendapatkan daftar semua CosmosDB Sql UserDefinedFunctions yang ada untuk ResourceGroupName tertentu, AccountName, DatabaseName, dan ContainerName dan mendapatkan satu CosmosDB Sql UserDefinedFunction untuk ResourceGroupName, AccountName, DatabaseName, ContainerName, dan UserDefinedFunctionName tertentu.
 
 ## EXAMPLES
 
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Fungsi yang Ditentukan Pengguna.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Sql Container.
+Objek Kontainer Sql.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlContainerGetResults
@@ -155,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

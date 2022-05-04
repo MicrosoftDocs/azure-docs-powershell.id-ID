@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationDetail.md
-ms.openlocfilehash: 73f72b11fac30efdcf2693e1885e621e3c79743d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 05027c0cf0588542eadfeade57b2b7e1a4c4d119
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142811386"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642948"
 ---
 # Get-AzConsumptionReservationDetail
 
 ## SYNOPSIS
 Dapatkan detail reservasi untuk rentang tanggal yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionreservationdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **Get-AzConsumptionReservationDetail** mendapatkan detail reservasi untuk
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail reservasi dengan ID pesanan reservasi untuk rentang tanggal yang disediakan
+### Contoh 1: Dapatkan detail reservasi dengan Id pesanan reservasi untuk rentang tanggal yang disediakan
 ```powershell
 Get-AzConsumptionReservationDetail -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -StartDate 2017-10-01 -EndDate 2017-12-07
 ```
@@ -48,7 +51,7 @@ UsageDate:  10/7/2017 12:00:00 AM
 UsedHour:  24
 ```
 
-### Contoh 2: Dapatkan detail reservasi dengan Id pesanan reservasi dan Id reservasi untuk rentang tanggal yang disediakan
+### Contoh 2: Dapatkan detail reservasi dengan Id pesanan reservasi dan ID reservasi untuk rentang tanggal yang disediakan
 ```powershell
 Get-AzConsumptionReservationDetail -ReservationOrderId ca69259e-bd4f-45c3-bf28-3f353f9cce9b -ReservationId f37f4b70-52ba-4344-a8bd-28abfd21d640 -StartDate 2017-10-01 -EndDate 2017-12-07
 ```
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Data akhir (YYYY-MM-DD dalam UTC) dari detail pemesanan.
+Data akhir (YYYY-MM-DD dalam UTC) dari detail reservasi.
 
 ```yaml
 Type: System.DateTime
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Pengidentifikasi reservasi dalam pesanan pemesanan.
+Pengidentifikasi reservasi dalam pesanan reservasi.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Data awal (YYYY-MM-DD dalam UTC) dari detail pemesanan.
+Data awal (YYYY-MM-DD dalam UTC) dari detail reservasi.
 
 ```yaml
 Type: System.DateTime
@@ -145,11 +148,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

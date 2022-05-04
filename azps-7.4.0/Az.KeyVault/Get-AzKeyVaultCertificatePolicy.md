@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificatePolicy.md
-ms.openlocfilehash: e16f14168ffd87e209c7289449f116ef8c47e682
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1246f6b5a8094c41edf961923632112472ded0b1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747288"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673936"
 ---
 # Get-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan untuk sertifikat dalam kubah kunci.
+Mendapatkan kebijakan untuk sertifikat dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificatepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzKeyVaultCertificatePolicy [-InputObject] <PSKeyVaultCertificateIdentityIte
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat dalam kubah kunci di Azure Key Vault.
+Cmdlet **Get-AzKeyVaultCertificatePolicy** mendapatkan kebijakan untuk sertifikat di brankas kunci di Azure Key Vault.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan sertifikat
+### Contoh 1: Mendapatkan kebijakan sertifikat
 ```powershell
 Get-AzKeyVaultCertificatePolicy -VaultName "ContosoKV01" -Name "TestCert01"
 ```
@@ -63,7 +66,7 @@ Created                         : 2/8/2016 11:10:29 PM
 Updated                         : 2/8/2016 11:10:29 PM
 ```
 
-Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 dalam kubah kunci ContosoKV01.
+Perintah ini mendapatkan kebijakan sertifikat untuk sertifikat TestCert01 di brankas kunci ContosoKV01.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama sertifikat.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kubah kunci.
+Menentukan nama brankas kunci.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -142,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzKeyVaultCertificatePolicy](./New-AzKeyVaultCertificatePolicy.md)
+[Baru-AzKeyVaultCertificatePolicy](./New-AzKeyVaultCertificatePolicy.md)
 
 [Set-AzKeyVaultCertificatePolicy](./Set-AzKeyVaultCertificatePolicy.md)
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProviderClientSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProviderClientSecret.md
-ms.openlocfilehash: 0726c9af336a672ea1243b3019dd4f3ab4960093
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f0aa0a648cc2ac49ecf878ffb000c63e0366d5e4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143234009"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663551"
 ---
 # Get-AzApiManagementOpenIdConnectProviderClientSecret
 
 ## SYNOPSIS
-Dapatkan rahasia klien penyedia openID Koneksi.
+Mendapatkan rahasia klien penyedia OpenID Koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementopenidconnectproviderclientsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzApiManagementOpenIdConnectProviderClientSecret -Context <PsApiManagementCo
 ```
 
 ## DESCRIPTION
-Dapatkan rahasia klien penyedia openID Koneksi.
+Mendapatkan rahasia klien penyedia OpenID Koneksi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan rahasia klien penyedia dengan menggunakan ID
+### Contoh 1: Mendapatkan rahasia klien penyedia dengan menggunakan ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementOpenIdConnectProviderClientSecret -Context $apimContext -OpenIdConnectProviderId "OICProvider01"
@@ -39,8 +42,8 @@ Perintah ini mendapatkan rahasia klien penyedia yang memiliki ID OICProvider01.
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

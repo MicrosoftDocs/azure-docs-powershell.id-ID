@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRegistryStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRegistryStatistic.md
-ms.openlocfilehash: abd2616a818e247bfad7ea75328a0d8f8fb0dd62
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: dc671dc78754d01173d2e31969d93875e5480b6d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683082"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642408"
 ---
 # Get-AzIotHubRegistryStatistic
 
 ## SYNOPSIS
-Mendapatkan RegistriStatistics untuk IotHub.
+Mendapatkan RegistryStatistics untuk IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubregistrystatistic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,17 +28,17 @@ Get-AzIotHubRegistryStatistic [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Mendapatkan RegistriStatistics untuk IotHub.
-Tindakan ini menyediakan informasi tentang jumlah total perangkat yang diaktifkan, dan dinonaktifkan dalam IotHub.
+Mendapatkan RegistryStatistics untuk IotHub.
+Ini memberikan informasi tentang jumlah total, perangkat yang diaktifkan, dan dinonaktifkan di IotHub.
 
 ## EXAMPLES
 
-### Contoh 1 Dapatkan RegistriStatistics
+### Contoh 1 Dapatkan RegistryStatistics
 ```powershell
 Get-AzIotHubRegistryStatistic -ResourceGroupName "myresourcegroup" -Name "myiothub"
 ```
 
-Dapatkan RegistriStatistics untuk IotHub bernama "myiothub"
+Mendapatkan RegistryStatistics untuk IotHub bernama "myiothub"
 
 ## PARAMETERS
 
@@ -54,7 +57,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama hub IoT. 
 
 ```yaml
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

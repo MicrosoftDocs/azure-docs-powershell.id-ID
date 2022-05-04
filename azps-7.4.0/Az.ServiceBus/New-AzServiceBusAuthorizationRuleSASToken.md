@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRuleSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRuleSASToken.md
-ms.openlocfilehash: 7b7f0055646b24d5eb48c3dd9b5558cfb9797412
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b79f47a6be4506cdf668e6dce907ae8aa023b66a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142672192"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144645970"
 ---
 # New-AzServiceBusAuthorizationRuleSASToken
 
 ## SYNOPSIS
-Menghasilkan tolen SAS untuk aturan otorisasi servicebus Azure dari namespace/queue/topic. 
+Menghasilkan tolen SAS untuk aturan otorisasi azure servicebus namespace/antrean/topik. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusauthorizationrulesastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzServiceBusAuthorizationRuleSASToken [-AuthorizationRuleId] <String> [-KeyT
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzServiceBusAuthorizationRuleSASToken menghasilkan token Shared Access Signature (SAS) untuk Azure Eventhub Namesapce atau Azure Eventhub
+Cmdlet New-AzServiceBusAuthorizationRuleSASToken menghasilkan token Tanda Tangan Akses Bersama (SAS) untuk Namesapce Azure Eventhub atau Azure Eventhub
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ $EndTime = $StartTime.AddHours(2.0)
 $SasToken = New-AzServiceBusAuthorizationRuleSASToken -AuthorizationRuleId $updatedAuthRule.Id  -KeyType Primary -ExpiryTime $EndTime -StartTime $StartTime
 ```
 
-Hasilkan token SAS untuk aturan otorisasi tertentu untuk Namespace dengan waktu mulai dan kedaluwarsa..
+Hasilkan token SAS untuk aturan otorisasi yang diberikan untuk Namespace dengan waktu mulai dan kedaluwarsa..
 
 ### Contoh 2
 ```powershell
@@ -46,12 +49,12 @@ $EndTime = $StartTime.AddHours(2.0)
 $SasToken = New-AzServiceBusAuthorizationRuleSASToken -AuthorizationRuleId $updatedAuthRule.Id  -KeyType Primary -ExpiryTime $EndTime
 ```
 
-Hasilkan token SAS untuk aturan otorisasi tertentu untuk Namespace dengan waktu kedaluwarsa.
+Hasilkan token SAS untuk aturan otorisasi yang diberikan untuk Namespace dengan waktu kedaluwarsa.
 
 ## PARAMETERS
 
 ### -AuthorizationRuleId
-ARM ResourceId dari Aturan Otorisasi
+RESOURCEId ARM dari Aturan Otorisasi
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Tipe Kunci
+Jenis Kunci
 
 ```yaml
 Type: System.String
@@ -125,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
-ms.openlocfilehash: ba118774bb0db2f6305cff7fb733f9e2297203e9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 840e602520047ba2c4947212c53b7611d361cead
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143306333"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675016"
 ---
-# Set-AzSqlServer
+# Atur-AzSqlServer
 
 ## SYNOPSIS
-Mengubah properti server SQL Database.
+Memodifikasi properti server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Set-AzSqlServer [-ServerName] <String> [-SqlAdministratorPassword <SecureString>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlServer** mengubah properti server Azure SQL Database.
+Cmdlet **Set-AzSqlServer** memodifikasi properti server Azure SQL Database.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Perintah ini mengatur ulang kata sandi administrator di AzureSQL Server bernama 
 
 ### Contoh 2
 
-Mengubah properti server SQL Database. (autogenerasi)
+Memodifikasi properti server SQL Database. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -68,7 +71,7 @@ Set-AzSqlServer -AssignIdentity -ResourceGroupName 'ResourceGroup01' -ServerName
 ## PARAMETERS
 
 ### -AssignIdentity
-Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk server ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -FederatedClientId
-Menentukan ID klien Federasi server saat menggunakan CMK Penyewa Silang, Jangan atur nilai ini jika Anda tidak berniat menggunakan CMK Penyewa Silang
+Menentukan ID klien Federasi server saat menggunakan CMK Lintas Penyewa, Jangan atur nilai ini jika Anda tidak berniat menggunakan CMK Lintas Penyewa
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -112,7 +115,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang akan ditetapkan ke server. Nilai yang memungkinkan adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+Jenis identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal yang diterapkan untuk Sql Server
+Versi TLS minimal yang akan diterapkan untuk Sql Server
 
 ```yaml
 Type: System.String
@@ -189,8 +192,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diperbolehkan atau tidak.
-Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Tautan Privat yang dapat menjangkau server ini.
+Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diizinkan atau tidak.
+Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Private Link yang dapat menjangkau server ini.
 
 ```yaml
 Type: System.String
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestrictOutboundNetworkAccess
-Saat diaktifkan, hanya koneksi keluar yang diperbolehkan oleh aturan firewall keluar yang akan berhasil.
+Ketika diaktifkan, hanya koneksi keluar yang diizinkan oleh aturan firewall keluar yang akan berhasil.
 
 ```yaml
 Type: System.String
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-Menentukan versi di mana cmdlet ini mengubah server. Nilai yang dapat diterima untuk parameter ini adalah: 2,0 dan 12,0.
+Menentukan versi di mana cmdlet ini mengubah server. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
 
 ```yaml
 Type: System.String
@@ -265,8 +268,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorPassword
-Menentukan kata sandi baru, sebagai **SecureString**, untuk administrator server database. Untuk mendapatkan **SecureString**, gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik .`Get-Help
-ConvertTo-SecureString`
+Menentukan kata sandi baru, sebagai **SecureString**, untuk administrator server database. Untuk mendapatkan **SecureString**, gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
+ConvertTo-SecureString`.
 
 ```yaml
 Type: System.Security.SecureString
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Menentukan kamus tag yang dikaitkan cmdlet ini dengan server. Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag di server. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Menentukan kamus tag yang dikaitkan cmdlet ini dengan server. Pasangan kunci-nilai dalam bentuk tabel hash yang ditetapkan sebagai tag di server. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -310,8 +313,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

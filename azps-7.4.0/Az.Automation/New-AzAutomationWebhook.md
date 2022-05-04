@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationWebhook.md
-ms.openlocfilehash: ee419e0837763c685a01dce4cde70c7ad0395758
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3bb7df373ccb658a8039755b12d77768b8c9d13
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751050"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611384"
 ---
 # New-AzAutomationWebhook
 
 ## SYNOPSIS
-Membuat webhook untuk runbook Otomatisasi.
+Membuat webhook untuk runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationwebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzAutomationWebhook [-Name] <String> [-RunbookName] <String> [-IsEnabled] <B
 
 ## DESCRIPTION
 Cmdlet **New-AzAutomationWebhook** membuat webhook untuk runbook Azure Automation.
-Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet ini, karena cmdlet ini tidak dapat diambil kembali.
+Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet ini, karena tidak dapat diambil lagi.
 
 ## EXAMPLES
 
@@ -43,8 +46,8 @@ Perintah menyimpan webhook dalam variabel $Webhook.
 Webhook diaktifkan.
 Webhook kedaluwarsa pada waktu yang ditentukan.
 Perintah ini tidak menyediakan nilai apa pun untuk parameter webhook.
-Perintah ini menentukan parameter *Paksa* .
-Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
+Perintah ini menentukan parameter *Force* .
+Oleh karena itu, ini tidak meminta Anda untuk konfirmasi.
 
 ### Contoh 2: Membuat webhook dengan parameter
 ```
@@ -59,7 +62,7 @@ Perintah menetapkan parameter dalam $Params ke webhook.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini membuat webhook.
+Menentukan nama akun Automation tempat cmdlet ini membuat webhook.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -ExpiryTime
 Menentukan waktu kedaluwarsa untuk webhook sebagai objek **DateTimeOffset** .
-Anda dapat menentukan string atau **DateTime** yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
+Anda dapat menentukan string atau **DateTime** yang dapat dikonversi ke **DateTimeOffset** yang valid.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -104,7 +107,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 ps_force
 
 ```yaml
@@ -134,7 +137,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama untuk webhook.
 
 ```yaml
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 Menentukan kamus pasangan kunci/nilai.
 Kuncinya adalah nama parameter runbook.
 Nilainya adalah nilai parameter runbook.
-Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini dikirimkan ke runbook.
+Ketika runbook dimulai sebagai respons terhadap webhook, parameter ini diteruskan ke runbook.
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook yang akan dikaitkan ke webhook.
+Menentukan nama runbook yang akan dikaitkan dengan webhook.
 
 ```yaml
 Type: System.String
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunOn
-Nama opsional grup pekerja hibrid yang harus menjalankan runbook
+Nama opsional grup hybrid worker yang harus menjalankan runbook
 
 ```yaml
 Type: System.String
@@ -212,8 +215,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleSet.md
-ms.openlocfilehash: 5adcd3bc5471a03d10c2ba781692cb64878c4eac
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4bb8b552c25c899de7198ea29c927fb9f4ad7beb
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142805446"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615542"
 ---
 # New-AzApplicationGatewayFirewallPolicyManagedRuleSet
 
 ## SYNOPSIS
 Membuat ManagedRuleSet untuk firewallPolicy
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicymanagedruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $managedRuleSet = New-AzApplicationGatewayFirewallPolicyManagedRuleSet -RuleSetT
 -RuleSetVersion $ruleSetVersion -RuleGroupOverrides $ruleGroupOverride1, $ruleGroupOverride2
 ```
 
-Membuat ManagedRuleSet dengan ruleSetType sebagai $ruleSetType, ruleSetVersion sebagai $ruleSetVersion dan RuleGroupOverrides sebagai daftar dengan seluruh $ruleGroupOverride 1, $ruleGroupOverride 2 ManagedRuleSet baru ditetapkan ke $managedRuleSet
+Membuat ManagedRuleSet dengan ruleSetType sebagai $ruleSetType, ruleSetVersion sebagai $ruleSetVersion dan RuleGroupOverrides sebagai daftar dengan seluruhnya sebagai $ruleGroupOverride 1, $ruleGroupOverride 2 ManagedRuleSet baru ditetapkan ke $managedRuleSet
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupOverride
-Pengesampingan Grup Aturan.
+Penimpaan Grup Aturan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyManagedRuleGroupOverride[]
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetType
-Menentukan RuleSetType dalam managedRuleSet
+Tentukan RuleSetType dalam managedRuleSet
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetVersion
-Menentukan RuleSetVersion dalam managedRuleSet
+Tentukan RuleSetVersion dalam managedRuleSet
 
 ```yaml
 Type: System.String
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

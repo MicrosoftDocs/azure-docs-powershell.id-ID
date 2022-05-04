@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Start-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Start-AzJitNetworkAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Start-AzJitNetworkAccessPolicy.md
-ms.openlocfilehash: dc0ce224beb12291fb01705330f18a23c74e8165
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 91194e28b624af2d42f545e867c53958da978e16
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143274311"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643794"
 ---
-# Start-AzJitNetworkAccessPolicy
+# Mulai-AzJitNetworkAccessPolicy
 
 ## SYNOPSIS
 Memanggil permintaan akses jaringan sementara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/start-azjitnetworkaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Start-AzJitNetworkAccessPolicy -InputObject <PSSecurityJitNetworkAccessPolicyIni
 ## DESCRIPTION
 Memanggil permintaan akses jaringan sementara.
 Permintaan divalidasi terhadap kebijakan akses jaringan JIT yang dikonfigurasi dan jika diizinkan, membuka koneksi jaringan sesuai dengan permintaan pengguna.
-Permintaan akan dicatat dalam kebijakan untuk peninjauan nanti dan akan dihentikan ketika durasi yang ditentukan akan melebihi.
+Permintaan akan dicatat dalam kebijakan untuk ditinjau nanti dan akan dihentikan ketika durasi yang ditentukan akan terlampaui.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ Start-AzJitNetworkAccessPolicy -ResourceGroupName $($MyResource.ResourceGroupNam
 
 ```
 
-Membuka koneksi jaringan selama 1 jam melalui port 22 dari IP publik saya (tidak diperlihatkan).
+Membuka koneksi jaringan selama 1 jam melalui port 22 dari IP publik saya (tidak ditampilkan).
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachine
-Penyediaan Otomatis.
+Provisi Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Security.Models.JitNetworkAccessPolicies.PSSecurityJitNetworkAccessPolicyInitiateVirtualMachine[]
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

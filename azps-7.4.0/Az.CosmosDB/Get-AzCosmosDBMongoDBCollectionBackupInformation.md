@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollectionBackupInformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollectionBackupInformation.md
-ms.openlocfilehash: ad2215f7344fe32c6be62a44ecb2518831f7c08f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 278a26fbefcf8e8aee0ccc85a7e9f85fae52099e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004365"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625476"
 ---
 # Get-AzCosmosDBMongoDBCollectionBackupInformation
 
 ## SYNOPSIS
-Mengambil stempel waktu terbaru yang dapat dipulihkan untuk koleksi mongodb.
+Mengambil tanda waktu terbaru yang dapat dipulihkan untuk koleksi mongodb.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbcollectionbackupinformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzCosmosDBMongoDBCollectionBackupInformation -ResourceGroupName <String> -Ac
 ```
 
 ## DESCRIPTION
-Mengambil stempel waktu terbaru yang dapat dipulihkan untuk koleksi mongodb. Ini adalah upto stempel waktu terbaru yang berhasil dipulihkan oleh pengguna untuk koleksi ini.
+Mengambil tanda waktu terbaru yang dapat dipulihkan untuk koleksi mongodb. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ LatestRestorableTimestamp
 1623042210
 ```
 
-Mengambil stempel waktu terbaru yang dapat dipulihkan untuk koleksi mongodb. Ini adalah upto stempel waktu terbaru yang berhasil dipulihkan oleh pengguna untuk koleksi ini.
+Mengambil tanda waktu terbaru yang dapat dipulihkan untuk koleksi mongodb. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koleksi.
 
 ```yaml
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

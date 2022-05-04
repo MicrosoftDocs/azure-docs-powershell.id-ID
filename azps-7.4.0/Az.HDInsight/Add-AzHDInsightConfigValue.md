@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightConfigValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightConfigValue.md
-ms.openlocfilehash: 7bfa34e8be20c16b724c45904a87c190675eb19e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c9c90e314d52bf725f6b3304bf0f5feb99f560f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142747810"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661824"
 ---
 # Add-AzHDInsightConfigValue
 
 ## SYNOPSIS
-Menambahkan kustomisasi nilai konfigurasi Hadoop dan/atau kustomisasi pustaka bersama Hive ke objek konfigurasi kluster.
+Menambahkan kustomisasi nilai konfigurasi Hadoop dan/atau kustomisasi pustaka bersama Apache Hive ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightconfigvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Add-AzHDInsightConfigValue [-Config] <AzureHDInsightConfig> [-Core <Hashtable>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzHDInsightConfigValue** menambahkan kustomisasi nilai konfigurasi Hadoop, seperti core-site.xml atau hive-site.xml, dan/atau kustomisasi pustaka bersama Hive ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
+Cmdlet **Add-AzHDInsightConfigValue** menambahkan kustomisasi nilai konfigurasi Hadoop, seperti core-site.xml atau hive-site.xml, dan/atau kustomisasi pustaka bersama Apache Hive ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ## EXAMPLES
 
@@ -79,8 +82,8 @@ Perintah ini menambahkan nilai konfigurasi Hadoop ke kluster bernama your-hadoop
 
 ## PARAMETERS
 
-### -Config
-Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+### -Konfigurasi
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -HiveEnv
-Menentukan konfigurasi Hive Env dari kluster HDInsight ini.
+Menentukan konfigurasi Apache Hive Env dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -185,8 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -HiveSite
-Menentukan konfigurasi Situs Sarang dari kluster HDInsight ini.
+### -Apache HiveSite
+Menentukan konfigurasi Situs Apache Hive dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -200,8 +203,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dipetakan
-Menentukan konfigurasi MapRed Site dari kluster HDInsight ini.
+### -MapRed
+Menentukan konfigurasi Situs MapRed dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkDefaults
-Menentukan konfigurasi Spark Defaults dari kluster HDInsight ini.
+Menentukan konfigurasi Default Spark dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -320,8 +323,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Badai
-Menentukan konfigurasi Storm Site dari kluster HDInsight ini.
+### -Storm
+Menentukan konfigurasi Situs Storm dari kluster HDInsight ini.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -381,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: 5f67ab4c031238bfbaca95c1a9f0a61c163c2b5d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d2216f50e4a9f17cd973cae32c2ab0a448fa7f6a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863694"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616370"
 ---
 # Update-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
-Memperbarui fungsi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
-Hal ini dapat digunakan untuk memperbarui sebagian (yaitu.
-memperbarui satu atau dua properti) fungsi tanpa memengaruhi sisa pekerjaan atau definisi fungsi.
+Memperbarui fungsi yang ada di bawah pekerjaan streaming yang ada.
+Ini dapat digunakan untuk memperbarui sebagian (yaitu.
+memperbarui satu atau dua properti) fungsi tanpa memengaruhi sisa definisi pekerjaan atau fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,13 +38,13 @@ Update-AzStreamAnalyticsFunction -File <String> -InputObject <IStreamAnalyticsId
 ```
 
 ## DESCRIPTION
-Memperbarui fungsi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
-Hal ini dapat digunakan untuk memperbarui sebagian (yaitu.
-memperbarui satu atau dua properti) fungsi tanpa memengaruhi sisa pekerjaan atau definisi fungsi.
+Memperbarui fungsi yang ada di bawah pekerjaan streaming yang ada.
+Ini dapat digunakan untuk memperbarui sebagian (yaitu.
+memperbarui satu atau dua properti) fungsi tanpa memengaruhi sisa definisi pekerjaan atau fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui fungsi Stream Analytics
+### Contoh 1: Memperbarui fungsi Azure Stream Analytics
 ```powershell
 Update-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name function-01 -File .\test\template-json\Function_JavascriptUdf.json
 ```
@@ -53,7 +56,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions 3206c07f-ed77-4e24
 
 Perintah ini memperbarui fungsi dari file Function_JavascriptUdf.json.
 
-### Contoh 2: Memperbarui fungsi Stream Analytics menurut pipeline
+### Contoh 2: Memperbarui fungsi Azure Stream Analytics menurut alur
 ```powershell
 Get-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name function-01 | Update-AzStreamAnalyticsFunction -File .\test\template-json\MachineLearningServices.json
 ```
@@ -63,7 +66,7 @@ Name        Type                                              ETag
 function-01 Microsoft.StreamAnalytics/streamingjobs/functions 3206c07f-ed77-4e24-b101-7aa2ac1f3cef
 ```
 
-Perintah ini memperbarui fungsi dari file MachineLearningServices.json menurut pipeline.
+Perintah ini memperbarui fungsi dari file MachineLearningServices.json menurut alur.
 
 ## PARAMETERS
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 
 ### -File
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag fungsi.
 Hilangkan nilai ini untuk selalu menimpa fungsi saat ini.
-Tentukan nilai ETag yang terakhir terlihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama fungsi.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -191,8 +194,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -247,10 +250,10 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
-  - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[JobName <String>]`: Nama dari pekerjaan streaming.
+  - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

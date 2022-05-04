@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzDiskAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzDiskAccess.md
-ms.openlocfilehash: 807db66c471e69c3348ff8b97bf8ce3c2e6b81d4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3ac32cf0b46de0a3177d96d1a6c8545942d504f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127827"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674602"
 ---
 # Remove-AzDiskAccess
 
 ## SYNOPSIS
 Menghapus sumber daya akses disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azdiskaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,40 +44,40 @@ Cmdlet **Remove-AzDiskAccess** menghapus sumber daya akses disk.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Akses Disk menggunakan Kumpulan Parameter Default
+### Contoh 1: Menghapus Akses Disk menggunakan Set Parameter Default
 ```powershell
 Remove-AzDiskAccess -ResourceGroupName "ResourceGroup01" -Name "DiskAccess01"
 ```
 
 Perintah ini menghapus akses disk bernama "DiskAccess01" dalam grup sumber daya "ResourceGroup01"
 
-### Contoh 2: Hapus Akses Disk menggunakan ID Sumber Daya
+### Contoh 2: Menghapus Akses Disk menggunakan ID Sumber Daya
 ```powershell
 $myDiskAccess = Get-AzDiskAccess -ResourceGroupName "ResourceGroup01" -Name "DiskAccess01"
 Remove-AzDiskAccess -ResourceId $myDiskAccess.id
 ```
 
-Perintah ini menghapus akses disk menurut ID Sumber Daya
+Perintah ini menghapus akses disk berdasarkan ID Sumber Daya
 
-### Contoh 3: Hapus Akses Disk menggunakan Objek Input
+### Contoh 3: Menghapus Akses Disk menggunakan Objek Input
 ```powershell
 $myDiskAccess = Get-AzDiskAccess -ResourceGroupName "ResourceGroup01" -Name "DiskAccess01"
 Remove-AzDiskAccess -InputObject $myDiskAccess
 ```
 
-Perintah ini menghapus akses disk dengan InputObject
+Perintah ini menghapus akses disk oleh InputObject
 
 ### Contoh 4: Hapus Akses Disk dengan mempipa Objek Input
 ```powershell
 Get-AzDiskAccess -ResourceGroupName "ResourceGroup01" -Name "DiskAccess01" | Remove-AzDiskAccess 
 ```
 
-Perintah ini menghapus akses disk dengan memipakan InputObject
+Perintah ini menghapus akses disk dengan mempipa InputObject
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama akses disk.
 
 ```yaml
@@ -163,8 +166,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: d3985a6389bbffb1efc2a6d74305c81edd8756aa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a3e3b353ff5239c3b29130365ce2c546c366ecb8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142679968"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623982"
 ---
 # Add-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi IP ujung depan ke penyeimbang beban.
+Menambahkan konfigurasi IP front-end ke load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azloadbalancerfrontendipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,47 +66,47 @@ Add-AzLoadBalancerFrontendIpConfig -LoadBalancer <PSLoadBalancer> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzLoadBalancerFrontendIpConfig** menambahkan konfigurasi IP ujung depan ke penyeimbang muatan Azure.
+Cmdlet **Add-AzLoadBalancerFrontendIpConfig** menambahkan konfigurasi IP front-end ke load balancer Azure.
 
 ## EXAMPLES
 
-### Contoh 1 Menambahkan konfigurasi IP ujung depan dengan alamat IP dinamis
+### Contoh 1 Menambahkan konfigurasi IP front-end dengan alamat IP dinamis
 ```powershell
 $Subnet = Get-AzVirtualNetwork -Name "MyVnet" -ResourceGroupName "MyRg" | Get-AzVirtualNetworkSubnetConfig -Name "MySubnet"
 Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -Subnet $Subnet | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan meneruskan hasilnya menggunakan pipeline ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
-Perintah kemudian menyimpan hasil dalam variabel bernama $Subnet.
-Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP privat dinamis dari subnet yang disimpan dalam variabel bernama $MySubnet.
+Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan meneruskan hasilnya menggunakan alur ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
+Perintah kemudian menyimpan hasilnya dalam variabel bernama $Subnet.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP privat dinamis dari subnet yang disimpan dalam variabel bernama $MySubnet.
 
-### Contoh 2 Tambahkan konfigurasi IP ujung depan dengan alamat IP statis
+### Contoh 2 Menambahkan konfigurasi IP front-end dengan alamat IP statis
 ```powershell
 $Subnet = Get-AzVirtualNetwork -Name "MyVnet" -ResourceGroupName "RG001" | Get-AzVirtualNetworkSubnetConfig -Name "MySubnet"
 Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -Subnet $Subnet -PrivateIpAddress "10.0.1.6" | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan meneruskan hasilnya menggunakan pipeline ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
-Perintah kemudian menyimpan hasil dalam variabel bernama $Subnet.
-Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung depan ke load balancer dengan alamat IP pribadi statis dari subnet yang disimpan dalam variabel bernama $Subnet.
+Perintah pertama mendapatkan jaringan virtual Azure bernama MyVnet dan meneruskan hasilnya menggunakan alur ke cmdlet **Get-AzVirtualNetworkSubnetConfig** untuk mendapatkan subnet bernama MySubnet.
+Perintah kemudian menyimpan hasilnya dalam variabel bernama $Subnet.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP privat statis dari subnet yang disimpan dalam variabel bernama $Subnet.
 
-### Contoh 3 Menambahkan konfigurasi IP ujung depan dengan alamat IP publik
+### Contoh 3 Menambahkan konfigurasi IP front-end dengan alamat IP publik
 ```powershell
 $PublicIp = Get-AzPublicIpAddress -ResourceGroupName "myRG" -Name "MyPub"
 Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -PublicIpAddress $PublicIp | Set-AzLoadBalancer
 ```
 
 Perintah pertama mendapatkan alamat IP publik Azure bernama MyPub dan menyimpan hasilnya dalam variabel bernama $PublicIp.
-Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP publik yang disimpan dalam variabel bernama $PublicIp.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan alamat IP publik yang disimpan dalam variabel bernama $PublicIp.
 
-### Contoh 4 Menambahkan konfigurasi IP ujung depan dengan prefiks IP publik
+### Contoh 4 Menambahkan konfigurasi IP front-end dengan awalan IP publik
 ```powershell
 $PublicIpPrefix = Get-AzPublicIpPrefix -ResourceGroupName "myRG" -Name "MyPubPrefix"
 Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -PublicIpAddressPrefix $PublicIpPrefix | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan prefiks IP publik Azure bernama MyPubPrefix dan menyimpan hasilnya dalam variabel bernama $PublicIpPrefix.
-Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasil ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung-depan ke penyeimbang muatan dengan prefiks IP publik yang disimpan dalam variabel bernama $PublicIpPrefix.
+Perintah pertama mendapatkan awalan IP publik Azure bernama MyPubPrefix dan menyimpan hasilnya dalam variabel bernama $PublicIpPrefix.
+Perintah kedua mendapatkan load balancer bernama MyLB dan meneruskan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP front-end ke load balancer dengan awalan IP publik yang disimpan dalam variabel bernama $PublicIpPrefix.
 
 ## PARAMETERS
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -LoadBalancer
 Menentukan objek **LoadBalancer** .
-Cmdlet ini menambahkan konfigurasi IP ujung depan ke load balancer yang ditentukan parameter ini.
+Cmdlet ini menambahkan konfigurasi IP front-end ke load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -138,8 +141,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama konfigurasi IP ujung-depan untuk ditambahkan.
+### -Name
+Menentukan nama konfigurasi IP front-end yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddressVersion
-Versi alamat IP pribadi dari konfigurasi IP.
+Versi alamat IP privat dari konfigurasi IP.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan alamat IP publik untuk dikaitkan dengan konfigurasi IP ujung depan.
+Menentukan alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Menentukan ID alamat IP publik untuk menambahkan konfigurasi IP ujung-depan.
+Menentukan ID alamat IP publik untuk menambahkan konfigurasi IP front-end.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressPrefix
-Menentukan objek prefiks alamat ip publik untuk dikaitkan dengan konfigurasi IP ujung depan.
+Menentukan objek prefiks alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressPrefixId
-Menentukan ID objek prefiks alamat ip publik untuk dikaitkan dengan konfigurasi IP ujung depan.
+Menentukan ID objek prefiks alamat IP publik untuk dikaitkan dengan konfigurasi IP front-end.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek subnet untuk menambahkan konfigurasi IP ujung-depan.
+Menentukan objek subnet untuk menambahkan konfigurasi IP front-end.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Menentukan ID subnet untuk menambahkan konfigurasi IP ujung-depan.
+Menentukan ID subnet untuk menambahkan konfigurasi IP front-end.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+Daftar zona ketersediaan yang menunjukkan IP yang dialokasikan untuk kebutuhan sumber daya.
 
 ```yaml
 Type: System.String[]
@@ -289,8 +292,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -344,7 +347,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzLoadBalancerFrontendIpConfig](./Get-AzLoadBalancerFrontendIpConfig.md)
 
-[Get-AzVirtualNetwork](./Get-AzVirtualNetwork.md)
+[Pulihkan-AzSqlDatabase](./Get-AzVirtualNetwork.md)
 
 [Get-AzVirtualNetworkSubnetConfig](./Get-AzVirtualNetworkSubnetConfig.md)
 

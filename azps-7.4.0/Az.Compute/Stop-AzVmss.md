@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVmss.md
-ms.openlocfilehash: 0dd50df538560ed57449212f2965a6a2f0fd3ea2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2e72e27b55683b2309c4c99ef6761299745aa3ae
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143065439"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144674566"
 ---
 # Stop-AzVmss
 
 ## SYNOPSIS
-Menghentikan VMSS atau sekumpulan mesin virtual dalam VMSS.
+Menghentikan VMSS atau sekumpulan komputer virtual dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/stop-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,29 +37,29 @@ Stop-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Instance
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzVms** menghentikan semua mesin virtual dalam Rangkaian Skala Mesin Virtual (VMSS) atau sekumpulan mesin virtual.
-Anda dapat menggunakan parameter *InstanceId* untuk memilih sekumpulan mesin virtual.
+Cmdlet **Stop-AzVmss** menghentikan semua komputer virtual dalam Virtual Machine Scale Set (VMSS) atau satu set komputer virtual.
+Anda dapat menggunakan parameter *InstanceId* untuk memilih sekumpulan komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Hentikan semua mesin virtual dalam VMSS
+### Contoh 1: Hentikan semua komputer virtual dalam VMSS
 ```powershell
 Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 ```
 
-Perintah ini menghentikan semua mesin virtual milik VMSS bernama ContosoVMSS.
+Perintah ini menghentikan semua komputer virtual milik VMSS bernama ContosoVMSS.
 
-### Contoh 2: Menghentikan sekumpulan mesin virtual tertentu dalam VMSS
+### Contoh 2: Hentikan sekumpulan komputer virtual tertentu dalam VMSS
 ```powershell
 Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS" -InstanceId "3","5"
 ```
 
-Perintah ini menghentikan sekumpulan mesin virtual tertentu yang ditentukan oleh array string ID instans yang termasuk dalam VMSS bernama ContosoVMSS.
+Perintah ini menghentikan sekumpulan komputer virtual tertentu yang ditentukan oleh array string ID instans milik VMSS bernama ContosoVMSS.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceId
-Menentukan, sebagai array string, ID atau ID instans mesin virtual yang cmdlet ini berhenti.
+Menentukan, sebagai array string, ID atau ID instans komputer virtual yang dihentikan cmdlet ini.
 Misalnya: `-InstanceId "0", "3"`.
 
 ```yaml
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipShutdown
-Untuk meminta penonaktifan VM yang tidak anggun
+Untuk meminta penonaktifan VM yang tidak baik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -StayProvisioned
-Jika ditentukan, mesin virtual akan memasuki status berhenti. Jika tidak ditentukan, mesin virtual akan memasuki status stop-deallocated. Pengguna masih dikenai biaya untuk VM dalam status berhenti tetapi tidak untuk VM dalam status berhenti ditangani.
+Jika ditentukan, komputer virtual akan memasuki status berhenti. Jika tidak ditentukan, komputer virtual akan memasuki status dihentikan-dibatalkan alokasinya. Pengguna masih dikenakan biaya untuk VM dalam status berhenti tetapi tidak untuk VM dalam status berhenti-dibatalkan alokasinya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetName
-Menentukan nama VMSS tempat cmdlet ini menghentikan mesin virtual.
+Menentukan nama VMSS yang cmdlet ini menghentikan komputer virtual.
 
 ```yaml
 Type: System.String
@@ -176,8 +179,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -223,18 +226,18 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzVmss](./Get-AzVmss.md)
+[Dapatkan-AzVmss](./Get-AzVmss.md)
 
-[New-AzVmss](./New-AzVmss.md)
+[Baru-AzVmss](./New-AzVmss.md)
 
-[Hapus-AzVms](./Remove-AzVmss.md)
+[Hapus-AzVmss](./Remove-AzVmss.md)
 
-[Mulai ulang-AzVms](./Restart-AzVmss.md)
+[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
 
-[Set-AzVms](./Set-AzVmss.md)
+[Set-AzVmss](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
-[Pembaruan-AzVms](./Update-AzVmss.md)
+[Update-AzVmss](./Update-AzVmss.md)
 
 

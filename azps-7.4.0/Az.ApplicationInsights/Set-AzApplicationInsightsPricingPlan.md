@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsPricingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Set-AzApplicationInsightsPricingPlan.md
-ms.openlocfilehash: 69645b4f4e3171595799807f6fd4300a2e58de21
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e7a755f253c6fc3b01477c9ef31afe76567d5f6a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233469"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611420"
 ---
 # Set-AzApplicationInsightsPricingPlan
 
 ## SYNOPSIS
 Mengatur paket harga dan informasi volume data harian untuk sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/set-azapplicationinsightspricingplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ Set-AzApplicationInsightsPricingPlan [-ResourceId] <String> [-PricingPlan <Strin
 
 ## DESCRIPTION
 Atur paket harga dan informasi volume data harian untuk sumber daya wawasan aplikasi.
-Paket harga wawasan aplikasi yang dibuat setelah April 2018 tidak dapat diatur oleh cmdlet ini: https://docs.microsoft.com/azure/azure-monitor/app/pricing#legacy-enterprise-per-node-pricing-tier
+Paket harga wawasan aplikasi yang dibuat setelah April 2018 tidak dapat ditetapkan oleh cmdlet ini: https://docs.microsoft.com/azure/azure-monitor/app/pricing#legacy-enterprise-per-node-pricing-tier
 
 ## EXAMPLES
 
-### Contoh 1 Mengatur paket harga dan informasi volume data harian untuk sumber daya wawasan aplikasi
+### Contoh 1 Mengatur paket harga dan informasi volume data harian untuk sumber daya application insights
 ```powershell
 Set-AzApplicationInsightsPricingPlan -ResourceGroupName "testgroup" -Name "test" -PricingPlan "Basic" -DailyCapGB 400
 ```
@@ -56,7 +59,7 @@ Set-AzApplicationInsightsPricingPlan -ResourceGroupName "testgroup" -Name "test"
 400         0                           False Basic
 ```
 
-Atur paket harga ke "Dasar", atur batas volume data harian ke 400GB per hari dan hentikan pengiriman pemberitahuan saat hit cap untuk sumber daya "uji" dalam grup sumber daya "grup uji"
+Atur paket harga ke "Dasar", atur batas volume data harian ke 400GB per hari dan hentikan pengiriman pemberitahuan saat batas hit untuk sumber daya "pengujian" di grup sumber daya "grup uji"
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailyCapGB
-Topi harian.
+Batas Harian.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableNotificationWhenHitCap
-Hentikan pengiriman pemberitahuan saat menekan kapital.
+Hentikan kirim pemberitahuan saat tekan batas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen Insights Aplikasi.
 
 ```yaml
@@ -181,8 +184,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

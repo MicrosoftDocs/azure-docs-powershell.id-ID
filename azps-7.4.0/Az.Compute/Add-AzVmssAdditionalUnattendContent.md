@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssAdditionalUnattendContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssAdditionalUnattendContent.md
-ms.openlocfilehash: 7c2c7e3207c9c532c78bad8145cd3aafcf0d42a7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8abb711a8831c30294a82bbd1dba0afd7dcba65b
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143172377"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144633553"
 ---
 # Add-AzVmssAdditionalUnattendContent
 
 ## SYNOPSIS
-Menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
+Menambahkan informasi ke file jawaban Penyetelan Windows yang tidak dijaga.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssadditionalunattendcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,22 +30,22 @@ Add-AzVmssAdditionalUnattendContent [-VirtualMachineScaleSet] <PSVirtualMachineS
 ```
 
 ## DESCRIPTION
-**Cmdlet Add-AzVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban penyiapan Windows tanpa pengawasan.
+**Cmdlet Add-AzVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban Penyiapan Windows tanpa pengawasan.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan informasi ke file jawaban penyiapan Windows tanpa pengamanan
+### Contoh 1: Menambahkan informasi ke file jawaban penyiapan Windows yang tidak dijaga
 ```powershell
 Add-AzVmssAdditionalUnattendContent -VirtualMachineScaleSet $VMSS -ComponentName  $AUCComponentName -Content  $AUCContent -PassName $AUCPassName -SettingName  $AUCSetting
 ```
 
-Perintah ini menambahkan informasi ke file jawaban penyetelan Windows tanpa pengawas.
+Perintah ini menambahkan informasi ke file jawaban penyetelan Windows yang tidak dijaga.
 
 ## PARAMETERS
 
 ### -ComponentName
-Menentukan nama komponen untuk dikonfigurasi dengan konten yang ditambahkan.
-Satu-satunya nilai yang diperbolehkan adalah Microsoft-Windows-Shell-Setup.
+Menentukan nama komponen yang akan dikonfigurasi dengan konten yang ditambahkan.
+Satu-satunya nilai yang diizinkan adalah Microsoft-Windows-Shell-Setup.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.ComponentNames]
@@ -57,8 +60,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konten
-Menentukan konten berformat XML yang ditambahkan ke file unattend.xml untuk jalur dan komponen tertentu.
+### -Isi
+Menentukan konten berformat XML yang ditambahkan ke file unattend.xml untuk jalur dan komponen yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassName
-Menentukan nama pass yang diterapkan konten.
+Menentukan nama pass yang berlaku untuk konten.
 Satu-satunya nilai yang diperbolehkan adalah oobeSystem.
 
 ```yaml
@@ -124,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineScaleSet
-Tentukan objek **Kumpulan Skala** mesin virtual.
-Anda dapat menggunakan cmdlet [New-AzVmsConfig](./New-AzVmssConfig.md) untuk membuat objek.
+Tentukan objek **Set Skala** komputer virtual.
+Anda dapat menggunakan cmdlet [New-AzVmssConfig](./New-AzVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -139,8 +142,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,17 +173,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.PassNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.PassNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.ComponentNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.SettingNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.SettingNames, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String
 

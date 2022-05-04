@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerCommunicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerCommunicationLink.md
-ms.openlocfilehash: 7bfb54fd9dc25ef16bf6b21f2019ff7de4f3803a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9e752597d3d7d331eb6d58a2d6fa2d8a8b800870
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142738090"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144635408"
 ---
 # New-AzSqlServerCommunicationLink
 
 ## SYNOPSIS
 Membuat tautan komunikasi untuk transaksi database elastis antara dua server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlservercommunicationlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,10 +30,10 @@ New-AzSqlServerCommunicationLink -LinkName <String> -PartnerServer <String> [-As
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlServerCommunicationLink** membuat tautan komunikasi untuk transaksi database elastis antara dua server logika di Azure SQL Database.
+Cmdlet **New-AzSqlServerCommunicationLink** membuat tautan komunikasi untuk transaksi database elastis antara dua server logis di Azure SQL Database.
 Transaksi database elastis dapat mencakup database di salah satu server yang dipasangkan.
-Anda bisa membuat lebih dari satu link di server.
-Oleh karena itu, transaksi database elastis dapat mencakup sejumlah besar server.
+Anda dapat membuat lebih dari satu tautan di server.
+Oleh karena itu, transaksi database elastis dapat menjangkau sejumlah besar server.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ Perintah ini membuat tautan bernama Link01 antara ContosoServer17 dan ContosoSer
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkName
-Menentukan nama link komunikasi server yang dibuat cmdlet ini.
+Menentukan nama tautan komunikasi server yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat server ditentukan oleh parameter *ServerName* .
+Menentukan nama grup sumber daya tempat server yang ditentukan oleh parameter *ServerName* berada.
 
 ```yaml
 Type: System.String
@@ -133,8 +136,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -176,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.ServerCommunicationLink.Model.AzureSqlServerCommunicationLinkModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS
 

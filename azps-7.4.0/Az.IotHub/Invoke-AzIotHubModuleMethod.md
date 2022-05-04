@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubModuleMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubModuleMethod.md
-ms.openlocfilehash: cb1bd6d6487dc2812b8ade2466edd3a6290f1e34
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b4dbffaef526df82d0dbca3cc46a1417c760e0b9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143121671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144661734"
 ---
 # Invoke-AzIotHubModuleMethod
 
 ## SYNOPSIS
-Memanggil metode modul Edge.
+Panggil metode modul Azure Stack Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubmodulemethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Invoke-AzIotHubModuleMethod [-ResourceId] <String> [-DeviceId] <String> [-Module
 ```
 
 ## DESCRIPTION
-Memanggil metode modul Edge. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi selengkapnya.
+Panggil metode modul Azure Stack Edge. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Memanggil metode modul Edge. Lihat https://docs.microsoft.com/azure/iot-hub/iot-
 Invoke-AzIotHubModuleMethod -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -ModuleId "myModule1" -Name "methodName" -Payload "method-input" -ResponseTimeOut 20 -ConnectionTimeOut 15
 ```
 
-Memanggil metode modul Edge.
+Panggil metode modul Azure Stack Edge.
 
 ## PARAMETERS
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubName
-Nama Hub Iot
+Nama Iot Hub
 
 ```yaml
 Type: System.String
@@ -146,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama metode yang akan dipangkatkan pada modul perangkat ini.
+### -Name
+Nama metode yang akan dipanggil pada modul perangkat ini.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Payload untuk metode untuk memanggil pada modul perangkat ini.
+Payload untuk metode yang akan dipanggil pada modul perangkat ini.
 
 ```yaml
 Type: System.String
@@ -222,8 +225,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

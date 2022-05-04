@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: 529822b1d13e01f459c078e820946df167fb7561
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 05b3494700b3a1eff076fd77b5943021f425651a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143269397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144632040"
 ---
 # Set-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapseintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -117,12 +120,12 @@ Set-AzSynapseIntegrationRuntime -WorkspaceName ContosoWorkspace -Name 'test-self
                                         -SharedIntegrationRuntimeResourceId '/subscriptions/b3ee3a7f-7614-4644-ad07-afa832620b4b/resourceGroups/rg-test-dfv2/providers/Microsoft.DataFactory/factories/test-df-eu2/integrationruntimes/test-selfhost-ir' -Type "SelfHosted"
 ```
 
-Cmdlet menambahkan ruang kerja untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` parameter, parameter `-Type` juga harus disertakan. Perhatikan bahwa ruang kerja perlu diberi izin untuk menggunakan cmdlet integrasi sebelum menjalankan cmdlet.
+Cmdlet menambahkan ruang kerja untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` parameter, `-Type` juga harus disertakan. Perhatikan bahwa ruang kerja perlu diberikan izin untuk menggunakan runtime integrasi sebelum menjalankan cmdlet.
 
 ## PARAMETERS
 
 ### -AuthKey
-Kunci autentikasi runtime integrasi yang dihosting sendiri.
+Kunci autentikasi runtime integrasi yang dihost sendiri.
 
 ```yaml
 Type: System.Security.SecureString
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogAdminCredential
-Kredensial administrator database katalog runtime integrasi.
+Info masuk administrator database katalog dari runtime integrasi.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogPricingTier
-Tingkat harga database katalog runtime integrasi.
+Tingkat harga database katalog dari runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogServerEndpoint
-Titik akhir server database katalog runtime integrasi.
+Titik akhir server database katalog dari runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataFlowComputeType
-Tipe komputasi dari kluster aliran data yang akan menjalankan pekerjaan alur data.
+Jenis komputasi kluster aliran data yang akan menjalankan pekerjaan aliran data.
 
 ```yaml
 Type: System.String
@@ -196,8 +199,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DataFlowCoreCoreCount
-Hitungan inti dari kluster aliran data yang akan menjalankan pekerjaan alur data.
+### -DataFlowCoreCount
+Jumlah inti kluster aliran data yang akan menjalankan pekerjaan aliran data.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataFlowTimeToLive
-Pengaturan waktu untuk hidup (dalam menit) dari kluster aliran data yang akan menjalankan pekerjaan alur data.
+Pengaturan time to live (dalam menit) dari kluster aliran data yang akan menjalankan pekerjaan aliran data.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataProxyStagingLinkedServiceName
-Nama Layanan tertaut Azure Blob Storage yang mereferensikan penyimpanan data pementasan untuk digunakan saat memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtime.
+Nama Layanan Tertaut Azure Blob Storage yang mereferensikan penyimpanan data penahapan yang akan digunakan saat memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtime.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataProxyStagingPath
-Jalur dalam penyimpanan data pementasan yang akan digunakan saat memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtimes, kontainer default akan digunakan jika tidak ditentukan.
+Jalur dalam penyimpanan data penahapan yang akan digunakan saat memindahkan data antara Self-Hosted dan Integration Runtime Azure-SSIS, kontainer default akan digunakan jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Edisi
-Edisi untuk runtime integrasi SSIS yang dapat berupa Standard atau Enterprise, defaultnya adalah Standar jika tidak ditentukan.
+Edisi untuk runtime integrasi SSIS yang dapat berupa Standar atau Perusahaan, defaultnya adalah Standar jika tidak ditentukan.
 
 ```yaml
 Type: System.String
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressCustomSetup
-Penyiapan kustom ekspres untuk runtime integrasi SSIS yang dapat digunakan untuk menyiapkan konfigurasi dan komponen pihak ketiga tanpa skrip penyetelan kustom.
+Penyiapan kustom ekspres untuk runtime integrasi SSIS yang dapat digunakan untuk menyiapkan konfigurasi dan komponen pihak ke-3 tanpa skrip penyiapan kustom.
 
 ```yaml
 Type: System.Collections.ArrayList
@@ -332,7 +335,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -363,10 +366,10 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi yang ingin Anda pilih untuk IR SSIS.
-Ada dua tipe: LicenseIncluded atau BasePrice.
-Jika anda memenuhi syarat untuk harga Azure Hybrid Use Benefit (AHUB), silakan pilih BasePrice.
-Jika tidak, silakan pilih LicenseIncluded.
+Jenis lisensi yang ingin Anda pilih untuk runtime integrasi SSIS.
+Ada dua jenis: LicenseIncluded atau BasePrice.
+Jika Anda memenuhi syarat untuk harga Azure Hybrid Use Benefit (AHUB), pilih BasePrice.
+Jika tidak, pilih LicenseIncluded.
 
 ```yaml
 Type: System.String
@@ -397,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxParallelExecutionsPerNode
-Jumlah eksekusi paralel maksimum per node untuk runtime integrasi khusus terkelola.
+Jumlah eksekusi paralel maksimum per simpul untuk runtime integrasi khusus terkelola.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -411,7 +414,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama runtime integrasi.
 
 ```yaml
@@ -427,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Hitungan simpul target runtime integrasi.
+Jumlah simpul target dari runtime integrasi.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -502,7 +505,7 @@ Accept wildcard characters: False
 ```
 
 ### -SetupScriptContainerSasUri
-SAS URI dari kontainer blob Azure yang berisi skrip penyetelan kustom.
+URI SAS dari kontainer blob Azure yang berisi skrip penyiapan kustom.
 
 ```yaml
 Type: System.String
@@ -517,7 +520,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedIntegrationRuntimeResourceId
-Id sumber daya runtime integrasi yang dihosting sendiri bersama.
+Id sumber daya dari runtime integrasi bersama yang dihost sendiri.
 
 ```yaml
 Type: System.String
@@ -532,7 +535,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Nama subnet dalam VNet.
+Nama subnet di VNet.
 
 ```yaml
 Type: System.String
@@ -546,8 +549,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
-Tipe runtime integrasi.
+### -Type
+Jenis runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -563,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### -VNetId
-ID VNet tempat runtime integrasi akan bergabung.
+ID VNet yang akan bergabung dengan runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -577,7 +580,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -593,7 +596,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -607,8 +610,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -623,7 +626,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -639,7 +642,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewKeyVaultConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewKeyVaultConnection.md
-ms.openlocfilehash: 3e5a876d5384b20e51fe47e979f9cbb452eab8d0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 32b43777a9839d495a940ef642446d4ec87a4865
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142936496"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675304"
 ---
 # Remove-AzPurviewKeyVaultConnection
 
 ## SYNOPSIS
 Menghapus koneksi brankas kunci yang terkait dengan akun
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewkeyvaultconnection) untuk informasi terbaru.
 
 ## SYNTAX
 

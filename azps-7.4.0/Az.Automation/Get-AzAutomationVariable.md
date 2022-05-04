@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationVariable.md
-ms.openlocfilehash: e497dc02747d75616aedeab6cab6c260951bdc6e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cb496892c6ba9138b646cdb171baa97debaddf9a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144625746"
 ---
 # Get-AzAutomationVariable
 
 ## SYNOPSIS
-Mendapatkan variabel Otomatisasi.
+Mendapatkan variabel Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationvariable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ Untuk mendapatkan variabel tertentu, tentukan namanya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan variabel
+### Contoh 1: Mendapatkan variabel
 ```
 PS C:\>$Variable = Get-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "Variable06" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Value = $Variable.value
 ```
 
-Perintah pertama mendapatkan variabel Otomatisasi bernama Variable06 dalam akun bernama Contoso17.
+Perintah pertama mendapatkan variabel Automation bernama Variable06 di akun bernama Contoso17.
 Perintah menyimpan objek tersebut dalam variabel $Variable.
 Perintah kedua menggunakan notasi titik standar untuk merujuk ke properti **nilai** $Variable.
 Perintah menyimpan nilai dalam variabel $value.
@@ -52,7 +55,7 @@ Perintah menyimpan nilai dalam variabel $value.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi variabel yang didapat cmdlet ini.
+Menentukan nama akun Automation yang berisi variabel yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -81,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama variabel yang didapat cmdlet ini.
 
 ```yaml
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya di mana cmdlet ini mendapatkan variabel.
+Menentukan grup sumber daya yang cmdlet ini mendapatkan variabel.
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

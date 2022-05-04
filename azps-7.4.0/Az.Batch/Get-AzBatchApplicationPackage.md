@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchApplicationPackage.md
-ms.openlocfilehash: a10d0a49743a97cb528618fa1fac0fbbc24027be
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0b6c75625a5b07db296a00a7d016c3a814b2101e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143067041"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144631486"
 ---
 # Get-AzBatchApplicationPackage
 
 ## SYNOPSIS
-Mendapatkan informasi tentang paket aplikasi dalam akun Batch.
+Mendapatkan informasi tentang paket aplikasi di akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchapplicationpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchApplicationPackage** mendapatkan informasi tentang paket aplikasi dalam akun Azure Batch.
+Cmdlet **Get-AzBatchApplicationPackage** mendapatkan informasi tentang paket aplikasi di akun Azure Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan detail paket aplikasi dalam akun Batch
+### Contoh 1: Mendapatkan detail paket aplikasi di akun Batch
 ```powershell
 Get-AzBatchApplicationPackage -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationName "Litware" -ApplicationVersion "1.0"
 ```
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -139,16 +142,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
+[Get-AzBatchApplication](./Get-AzBatchApplication.md)
 
-[New-AzBatchAplikasi](./New-AzBatchApplication.md)
+[New-AzBatchApplication](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
+[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 
-[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
+[Set-AzBatchApplication](./Set-AzBatchApplication.md)
 
 

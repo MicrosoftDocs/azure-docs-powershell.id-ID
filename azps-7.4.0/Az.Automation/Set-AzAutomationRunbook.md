@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationRunbook.md
-ms.openlocfilehash: 89e1f219816dd32bfef40d1150d91443b456cf41
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48cb7fcbbd06d8beb0ad743e18d54cdfd3aa3346
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233073"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144611348"
 ---
 # Set-AzAutomationRunbook
 
 ## SYNOPSIS
-Mengubah runbook.
+Memodifikasi runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,21 +30,21 @@ Set-AzAutomationRunbook [-Name] <String> [-Description <String>] [-Tag <IDiction
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationRunbook** mengubah konfigurasi runbook Azure Automation di APS.
+Cmdlet **Set-AzAutomationRunbook** memodifikasi konfigurasi runbook Azure Automation di APS.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan pembuatan log verbose untuk runbook
+### Contoh 1: Mengaktifkan pengelogan verbose untuk runbook
 ```
 PS C:\>Set-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbook02" -LogVerbose $True -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini memungkinkan pembuatan log verbose untuk pekerjaan runbook tertentu di akun Azure Automation bernama Contoso17.
+Perintah ini memungkinkan pengelogan verbose untuk pekerjaan runbook yang ditentukan di akun Azure Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah runbook.
+Menentukan nama akun Automation tempat cmdlet ini memodifikasi runbook.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogProgress
-Menentukan apakah kemajuan log runbook.
+Menentukan apakah runbook mencatat kemajuan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah pembuatan log menyertakan informasi mendetail.
+Menentukan apakah pengelogan menyertakan informasi terperinci.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama runbook yang diubah cmdlet ini.
+### -Name
+Menentukan nama runbook yang dimodifikasi cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mengubah runbook.
+Menentukan nama grup sumber daya yang cmdlet ini memodifikasi runbook.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Get-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Get-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: c28dfc4a30b2b12ace95a168845d8f963c01c366
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a99d1e65f9dda4e724d07c2e6b0046c11377c9fa
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872910"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673684"
 ---
 # Get-AzMonitorLogAnalyticsSolution
 
 ## SYNOPSIS
 Mengambil solusi pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitoringsolutions/get-azmonitorloganalyticssolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMonitorLogAnalyticsSolution [-SubscriptionId <String[]>] [-DefaultProfile 
  [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzMonitorLogAnalyticsSolution -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -48,7 +51,7 @@ Mengambil solusi pengguna.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan solusi analitik log monitor berdasarkan nama
+### Contoh 1: Mendapatkan solusi analitik log monitor berdasarkan nama
 ```powershell
 Get-AzMonitorLogAnalyticsSolution -ResourceGroupName azureps-monitor -Name 'Containers(azureps-monitor)'
 ```
@@ -61,7 +64,7 @@ Containers(azureps-monitor) Microsoft.OperationsManagement/solutions West US 2
 
 Perintah ini mendapatkan solusi analitik log monitor berdasarkan nama.
 
-### Contoh 2: Dapatkan solusi analitik log monitor menurut id sumber daya
+### Contoh 2: Mendapatkan solusi analitik log monitor menurut id sumber daya
 ```powershell
 @{Id = "/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourcegroups/azureps-manual-test/providers/Microsoft.OperationsManagement/solutions/Containers(monitoringworkspace-t01)"} | Get-AzMonitorLogAnalyticsSolution
 ```
@@ -72,9 +75,9 @@ Name                                Type                                     Loc
 Containers(monitoringworkspace-t01) Microsoft.OperationsManagement/solutions East US
 ```
 
-Perintah ini mendapatkan solusi analitik log monitor menurut id sumber daya.
+Perintah ini mendapatkan solusi analitik log monitor berdasarkan id sumber daya.
 
-### Contoh 3: Mendapatkan solusi analitik log monitor menurut objek
+### Contoh 3: Mendapatkan solusi analitik log monitor berdasarkan objek
 ```powershell
 $monitor = New-AzMonitorLogAnalyticsSolution -ResourceGroupName azureps-monitor -Name 'Containers(azureps-monitor)'
 Get-AzMonitorLogAnalyticsSolution -InputObject $monitor
@@ -88,7 +91,7 @@ Containers(azureps-monitor) Microsoft.OperationsManagement/solutions West US 2
 
 Perintah ini mendapatkan solusi analitik log monitor berdasarkan objek.
 
-### Contoh 4: Dapatkan semua solusi analitik log monitor di bawah grup sumber daya
+### Contoh 4: Mendapatkan semua solusi analitik log monitor di bawah grup sumber daya
 ```powershell
 Get-AzMonitorLogAnalyticsSolution -ResourceGroupName azureps-monitor
 ```
@@ -101,7 +104,7 @@ Containers(azureps-monitor) Microsoft.OperationsManagement/solutions West US 2
 
 Perintah ini mendapatkan semua solusi analitik log monitor di bawah grup sumber daya.
 
-### Contoh 5: Dapatkan semua solusi analitik log monitor di bawah langganan
+### Contoh 5: Mendapatkan semua solusi analitik log monitor di bawah langganan
 ```powershell
 Get-AzMonitorLogAnalyticsSolution 
 ```
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MonitoringSolutions.Models.IMonitoringSolutionsIdentity
@@ -147,7 +150,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Solusi Pengguna.
 
 ```yaml
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang akan didapatkan.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -179,8 +182,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -216,14 +219,14 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ManagementAssociationName <String>]`: User ManagementAssociation Name.
+  - `[ManagementAssociationName <String>]`: Nama Manajemen PenggunaAssosiasi.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.
   - `[ProviderName <String>]`: Nama penyedia untuk sumber daya induk.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama ini tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya induk.
-  - `[ResourceType <String>]`: Tipe sumber daya untuk sumber daya induk
+  - `[ResourceType <String>]`: Jenis sumber daya untuk sumber daya induk
   - `[SolutionName <String>]`: Nama Solusi Pengguna.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

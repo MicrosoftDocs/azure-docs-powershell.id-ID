@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
-ms.openlocfilehash: ab152328b5d082ae7d02310b5b608642a91184d1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 26bedc78f95004b8089f0188f1219f13d1b033a3
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142807048"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604490"
 ---
 # Get-AzDiagnosticSetting
 
 ## SYNOPSIS
-Mendapatkan kategori dan biji-bijian waktu yang dicatat.
+Mendapatkan kategori yang dicatat dan butir waktu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdiagnosticsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ Get-AzDiagnosticSetting [-Name <String>] [-SubscriptionId] <String> [-DefaultPro
 
 ## DESCRIPTION
 Cmdlet **Get-AzDiagnosticSetting** mendapatkan kategori dan butir waktu yang dicatat untuk sumber daya.
-Gandum waktu adalah interval agregasi metrik.
+Butir waktu adalah interval agregasi metrik.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status kategori pembuatan log dan biji-bijian waktu
+### Contoh 1: Mendapatkan status kategori pengelogan dan butir waktu
 ```powershell
 Get-AzDiagnosticSetting -ResourceId "/subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault"
 ```
@@ -72,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama pengaturan diagnostik. Jika tidak memberikan panggilan default ke "layanan" seperti dalam API sebelumnya.
+### -Name
+Nama pengaturan diagnostik. Jika tidak diberikan panggilan default ke "layanan" seperti di API sebelumnya.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

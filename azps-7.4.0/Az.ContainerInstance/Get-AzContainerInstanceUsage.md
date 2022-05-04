@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceUsage.md
-ms.openlocfilehash: 5ad84f11578fdc6e16e092e732f6eb003a5f6d43
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: da2dc63e131bda9a8e3c1bd88637e39928101e89
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143289251"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144615956"
 ---
 # Get-AzContainerInstanceUsage
 
 ## SYNOPSIS
-Dapatkan penggunaan untuk langganan
+Mendapatkan penggunaan untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstanceusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzContainerInstanceUsage -Location <String> [-SubscriptionId <String[]>] [-D
 ```
 
 ## DESCRIPTION
-Dapatkan penggunaan untuk langganan
+Mendapatkan penggunaan untuk langganan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan penggunaan lokasi
+### Contoh 1: Mendapatkan penggunaan lokasi
 ```powershell
 Get-AzContainerInstanceUsage -Location eastus
 ```
@@ -46,7 +49,7 @@ CurrentValue Limit Unit
 0            3000  Count
 ```
 
-Dapatkan penggunaan untuk langganan saat ini di kawasan `eastus`.
+Dapatkan penggunaan untuk langganan saat ini di wilayah `eastus`.
 
 ## PARAMETERS
 
@@ -81,8 +84,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

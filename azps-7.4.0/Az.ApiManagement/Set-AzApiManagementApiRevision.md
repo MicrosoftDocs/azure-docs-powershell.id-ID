@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
-ms.openlocfilehash: 7d19a7254efab3c2a3f53eebefc4bf52214ad161
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 428c97a8e98607b0e5e541716975c03346c6fdaf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129771"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144662706"
 ---
 # Set-AzApiManagementApiRevision
 
 ## SYNOPSIS
-Mengubah Revisi API
+Memodifikasi Revisi API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapirevision) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,11 +43,11 @@ Set-AzApiManagementApiRevision -InputObject <PsApiManagementApi> [-Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApiRevision** mengubah Revisi API Azure API Management.
+Cmdlet **Set-AzApiManagementApiRevision memodifikasi** Azure API Management API Revisi.
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi Revisi API
+### Contoh 1: Mengubah Revisi API
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Set-AzApiManagementApiRevision -Context $ApiMgmtContext -ApiId "echo-api" -ApiRevision "2" -Name "EchoApi" -ServiceUrl "https://contoso.com/apis/echo" -Protocols @('https') -Description "Responds with what was sent" -Path "echo"
@@ -55,7 +58,7 @@ Cmdlet memperbarui `2` revisi API `echo-api` dengan deskripsi, protokol, dan jal
 ## PARAMETERS
 
 ### -ApiId
-Pengidentifikasi API yang sudah ada.
+Pengidentifikasi API yang ada.
 Parameter ini diperlukan.
 
 ```yaml
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API yang sudah ada. Parameter ini diperlukan.
+Pengidentifikasi Revisi API yang ada. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -86,9 +89,9 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationScope
-Lingkup operasi OAuth.
+Cakupan operasi OAuth.
 Parameter ini bersifat opsional.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String
@@ -103,9 +106,9 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationServerId
-Pengidentifikasi server oauth otorisasi.
+Pengidentifikasi server otorisasi OAuth.
 Parameter ini bersifat opsional.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 Harus ditentukan jika AuthorizationScope ditentukan.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId di mana token akses dikirimkan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId di mana token akses diteruskan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4. Parameter ini bersifat opsional. Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -135,8 +138,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementApi. Parameter ini diperlukan.
+Instans PsApiManagementApi. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi
@@ -197,9 +200,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama API Web.
-Nama publik API seperti yang akan muncul di portal admin dan pengembang.
+Nama publik API seperti yang akan muncul di portal pengembang dan admin.
 Parameter ini diperlukan.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdProviderId
-Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai default adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
+Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai defaultnya adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi tipe mewakili API yang ditetapkan.
+Jika ditentukan, contoh jenis Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApi mewakili API set.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,11 +249,11 @@ Accept wildcard characters: False
 
 ### -Jalur
 Jalur API Web.
-Bagian terakhir URL publik API.
+Bagian terakhir dari URL publik API.
 URL ini akan digunakan oleh konsumen API untuk mengirim permintaan ke layanan web.
 Panjangnya harus 1 hingga 400 karakter.
 Parameter ini bersifat opsional.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String
@@ -266,9 +269,9 @@ Accept wildcard characters: False
 
 ### -Protokol
 Protokol API Web (http, https).
-Protokol di mana API tersedia.
+Protokol tempat API tersedia.
 Parameter ini diperlukan.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementSchema[]
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 
 ### -ServiceUrl
 URL layanan web yang mengekspos API.
-URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan diumumkan ke publik.
+URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan di publikasikan.
 Panjangnya harus 1 hingga 2000 karakter.
 Parameter ini diperlukan.
 
@@ -302,9 +305,9 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionKeyHeaderName
-Nama header tombol langganan.
+Nama header kunci langganan.
 Parameter ini bersifat opsional.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ### -SubscriptionKeyQueryParamName
 Nama parameter string kueri kunci langganan.
 Parameter ini bersifat opsional.
-Nilai default adalah $null.
+Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Bendera untuk memberlakukan LanggananPerlukan permintaan ke Api. Parameter ini bersifat opsional.
+Bendera untuk memberlakukan SubscriptionRequired untuk permintaan ke Api. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,8 +353,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

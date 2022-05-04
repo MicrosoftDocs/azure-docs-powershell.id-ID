@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOperation.md
-ms.openlocfilehash: f1bd877dc111cba3f24887bed96ccefd634eac1b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 865c8f00f6204a1c3308a6947ec4fd05fcc3f24c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142751734"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144692806"
 ---
 # Set-AzApiManagementOperation
 
 ## SYNOPSIS
 Mengatur detail operasi API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Set-AzApiManagementOperation -Context <PsApiManagementContext> -ApiId <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementOperation** mengatur detail operasi API.
+Cmdlet **Set-AzApiManagementOperation** menetapkan detail operasi API.
 
 ## EXAMPLES
 
@@ -39,11 +42,11 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 New-AzApiManagementOperation -Context $apimContext -ApiId $APIID -OperationId $OperationId -Name "Get Resource" -Method GET -UrlTemplate "/newresource" -Description "Use this operation to get newresource"
 ```
 
-Perintah ini mengatur detail operasi untuk manajemen API.
+Perintah ini menetapkan detail operasi untuk manajemen API.
 
 ### Contoh 2
 
-Mengatur detail operasi API. (autogenerasi)
+Mengatur detail operasi API. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan diperbarui dalam revisi api aktif saat ini.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, operasi akan diperbarui dalam revisi api yang saat ini aktif.
 
 ```yaml
 Type: System.String
@@ -82,8 +85,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh **PsApiManagementContext**.
+### -Context
+Menentukan **instans PsApiManagementContext**.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -142,7 +145,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama tampilan operasi baru.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-Menentukan pengidentifikasi operasi yang sudah ada.
+Menentukan pengidentifikasi operasi yang ada.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Request
+### -Permintaan
 Menentukan detail permintaan operasi.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Respons
-Menentukan larik kemungkinan respons operasi.
+Menentukan array kemungkinan respons operasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementResponse[]
@@ -218,9 +221,9 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameters
-Menentukan array atau parameter yang ditentukan dalam *UrlTemplate* parameter.
+Menentukan array atau parameter yang ditentukan dalam parameter *UrlTemplate*.
 Jika Anda tidak menentukan nilai, nilai default akan dihasilkan berdasarkan UrlTemplate.
-Gunakan parameter untuk memberikan detail selengkapnya tentang parameter seperti deskripsi, tipe, dan nilai lain yang memungkinkan.
+Gunakan parameter untuk memberikan detail selengkapnya tentang parameter seperti deskripsi, jenis, dan nilai lain yang mungkin.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementParameter[]
@@ -250,8 +253,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

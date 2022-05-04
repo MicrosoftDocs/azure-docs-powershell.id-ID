@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityRecommendation.md
-ms.openlocfilehash: af42b87bc11a6825b45082d07fcb9ac6a341b7cd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b672aad2d83c9142e37035e0e9a79a82baf6f227
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142863190"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144616281"
 ---
 # Get-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
-Mendapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom di kumpulan SQL.
+Mendapatkan jenis informasi yang direkomendasikan dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolsensitivityrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzSynapseSqlPoolSensitivityRecommendation [-ResourceGroupName] <String> [-Wo
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSynapseSqlPoolSensitivityRecommendation mengembalikan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam kumpulan SQL.
+Cmdlet Get-AzSynapseSqlPoolSensitivityRecommendation mengembalikan jenis informasi yang direkomendasikan dan label sensitivitas kolom di kumpulan SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kumpulan SQL Azure Synapse.
+### Contoh 1: Dapatkan jenis informasi yang direkomendasikan dan label sensitivitas kumpulan Azure Synapse SQL.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool
 ```
@@ -66,7 +69,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kumpulan SQL Azure Synapse menggunakan Piping.
+### Contoh 2: Dapatkan jenis informasi yang direkomendasikan dan label sensitivitas kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Get-AzSynapseSqlPoolSensitivityRecommendation
 ```
@@ -99,7 +102,7 @@ SensitivityLabels : {{
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama Synapse SQL pool.
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-Objek input pool SQL, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -173,7 +176,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

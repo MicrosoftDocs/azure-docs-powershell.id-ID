@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
-ms.openlocfilehash: 64a9f89aca5d0d713c8f2a2fb6aec6a3dd4cd6cf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ff87e731dad27eb5267c0de8a079e1c194c72ba0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142998209"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627204"
 ---
 # Start-AzMigrateTestMigration
 
 ## SYNOPSIS
-Memulai migrasi uji untuk server replikasi.
+Memulai migrasi pengujian untuk server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/start-azmigratetestmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Start-AzMigrateTestMigration -InputObject <IMigrationItem> -TestNetworkID <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzMigrateTestMigration memulai migrasi uji untuk server replikasi.
+Cmdlet Start-AzMigrateTestMigration memulai migrasi pengujian untuk server replikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menurut id mesin.
+### Contoh 1: Menurut id komputer.
 ```powershell
 Start-AzMigrateTestMigration -TargetObjectID '/Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.RecoveryServices/vaults/AzMigrateTestProjectPWSH02aarsvault/replicationFabrics/AzMigratePWSHTc8d1replicationfabric/replicationProtectionContainers/AzMigratePWSHTc8d1replicationcontainer/replicationMigrationItems/bcdr-vcenter-fareast-corp-micro-cfcc5a24-a40e-56b9-a6af-e206c9ca4f93_50063baa-9806-d6d6-7e09-c0ae87309b4f' -TestNetworkId '/subscriptions/xxx-xxx-xxx/resourceGroups/AzMigratePWSHtargetRG/providers/Microsoft.Network/virtualNetworks/AzMigrateTargetNetwork'
 ```
@@ -65,9 +68,9 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Dengan id mesin.
+Berdasarkan id komputer.
 
-### Contoh 2: Menurut objek input
+### Contoh 2: Berdasarkan objek input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID $env.srsMachineId -SubscriptionId $env.srsSubscriptionId
 Start-AzMigrateTestMigration -InputObject $obj -TestNetworkId '/subscriptions/xxx-xxx-xxx/resourceGroups/AzMigratePWSHtargetRG/providers/Microsoft.Network/virtualNetworks/AzMigrateTargetNetwork'
@@ -97,7 +100,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Menurut objek input.
+Dengan objek input.
 
 ## PARAMETERS
 
@@ -117,9 +120,9 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan server replikasi di mana migrasi uji perlu dimulai.
+Menentukan server replikasi yang migrasi pengujiannya perlu dimulai.
 Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectID
-Menentukan server replikasi di mana migrasi uji perlu dimulai.
+Menentukan server replikasi yang migrasi pengujiannya perlu dimulai.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestNetworkID
-Memperbarui id Virtual Network dalam langganan Azure tujuan yang akan digunakan untuk menguji migrasi.
+Memperbarui id Virtual Network dalam langganan Azure tujuan yang akan digunakan untuk migrasi pengujian.
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -197,7 +200,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi di mana migrasi pengujian perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

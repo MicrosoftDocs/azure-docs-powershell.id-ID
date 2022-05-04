@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementVirtualNetwork.md
-ms.openlocfilehash: 6fcedc7712b948f93c625232a3f9275c6699de85
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9352f54867e1e9eaf60c092f06892e07398d9c8a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944479"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144659933"
 ---
 # New-AzApiManagementVirtualNetwork
 
 ## SYNOPSIS
-Membuat contoh PsApiManagementVirtualNetwork.
+Membuat instans PsApiManagementVirtualNetwork.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementvirtualnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ New-AzApiManagementVirtualNetwork -SubnetResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementVirtualNetwork** adalah perintah helper untuk membuat instance **PsApiManagementVirtualNetwork**.
+Cmdlet **New-AzApiManagementVirtualNetwork** adalah perintah pembantu untuk membuat **instans PsApiManagementVirtualNetwork**.
 Perintah ini digunakan dengan **cmdlet Set-AzApiManagement** dan **New-AzApiManagement** .
 
 ## EXAMPLES
 
-### Contoh 1: Buat jaringan virtual dan Perbarui layanan APIM yang sudah ada ke VNET
+### Contoh 1: Membuat jaringan virtual dan Memperbarui layanan APIM yang ada ke VNET
 ```powershell
 $virtualNetwork = New-AzApiManagementVirtualNetwork -SubnetResourceId "/subscriptions/a8ff56dc-3bc7-4174-a1e8-3726ab15d0e2/resourceGroups/Api-Default-WestUS/providers/Microsoft.Network/virtualNetworks/dfVirtualNetwork/subnets/backendSubnet"
 $apim = Get-AzApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
@@ -48,7 +51,7 @@ $virtualNetwork = New-AzApiManagementVirtualNetwork -SubnetResourceId "/subscrip
 New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US" -Name "ContosoApi" -Organization Contoso -AdminEmail admin@contoso.com -VirtualNetwork $virtualNetwork -VpnType "External" -Sku "Premium"
 ```
 
-Contoh ini membuat layanan APIM baru menjadi Virtual Network dalam `External` mode
+Contoh ini membuat layanan APIM baru ke dalam Virtual Network dalam `External` mode
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetResourceId
-Menentukan ID sumber daya subnet dari jaringan maya.
+Menentukan ID sumber daya subnet dari jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -83,11 +86,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationType.md
-ms.openlocfilehash: ed596ee5fd1fe892a5649f7ebab2e5b937572504
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 24b80267dd87ffef5183535f9c522c91ff0c90be
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143308637"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593656"
 ---
 # Get-AzServiceFabricManagedClusterApplicationType
 
 ## SYNOPSIS
-Dapatkan detail tipe aplikasi terkelola Service Fabric. Hanya mendukung ARM tipe aplikasi yang digunakan.
+Dapatkan detail jenis aplikasi terkelola Service Fabric. Hanya mendukung jenis aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplicationtype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzServiceFabricManagedClusterApplicationType -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Gunakan cmdlet ini untuk mendapatkan detail tipe aplikasi yang dikelola dalam grup dan kluster sumber daya yang ditentukan.
+Gunakan cmdlet ini untuk mendapatkan detail jenis aplikasi terkelola dalam grup sumber daya dan kluster yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ $appTypeName = "testAppType"
 Get-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $appTypeName
 ```
 
-Contoh ini akan mendapatkan detail tipe aplikasi terkelola dengan parameter yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini akan mendapatkan detail jenis aplikasi terkelola dengan parameter yang ditentukan, jika tidak menemukan sumber daya, itu akan memberikan pengecualian.
 
 ### Contoh 2
 ```powershell
@@ -59,7 +62,7 @@ $clusterName = "testCluster"
 Get-AzServiceFabricManagedClusterApplicationType -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-Contoh ini akan mendapatkan daftar tipe aplikasi yang dikelola yang ditentukan di bawah kluster yang ditentukan.
+Contoh ini akan mendapatkan daftar jenis aplikasi terkelola yang ditentukan di bawah kluster yang ditentukan.
 
 ### Contoh 3
 ```powershell
@@ -67,7 +70,7 @@ $resourceId = "/subscriptions/13ad2c84-84fa-4798-ad71-e70c07af873f/resourcegroup
 Get-AzServiceFabricManagedClusterApplicationType -ResourceId $resourceId
 ```
 
-Contoh ini akan mendapatkan detail tipe aplikasi yang dikelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dikecualikan.
+Contoh ini akan mendapatkan detail jenis aplikasi terkelola dengan ID Sumber Daya ARM yang ditentukan, jika tidak menemukan sumber daya yang akan dilemparkan pengecualian.
 
 ## PARAMETERS
 
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe aplikasi yang dikelola
+### -Name
+Tentukan nama jenis aplikasi terkelola
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId dari tipe aplikasi yang dikelola.
+Arm ResourceId dari jenis aplikasi terkelola.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

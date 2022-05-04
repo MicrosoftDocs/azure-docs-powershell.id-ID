@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApi.md
-ms.openlocfilehash: f56e77d87ce61bcc5853f44ce203a684711be864
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 0f16bea7c55ae57374fd6a32294ef869815cb429
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142752112"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663461"
 ---
 # New-AzApiManagementApi
 
 ## SYNOPSIS
 Membuat API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] -Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementApi** membuat API Azure API Management.
+Cmdlet **New-AzApiManagementApi** membuat AZURE API Management API.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ New-AzApiManagementApi -Context $ApiMgmtContext -Name "Echo api" -ServiceUrl "ht
 
 Perintah ini membuat API bernama EchoApi dengan URL yang ditentukan.
 
-### Contoh 2: Buat API dengan menyalin semua operasi, Tag, Produk dan Kebijakan dari echo-api dan ke ApiVersionSet
+### Contoh 2: Buat API dengan menyalin semua operasi, Tag, Produk, dan Kebijakan dari echo-api dan ke apiVersionSet
 ```powershell
 $context = New-AzApiManagementContext -ResourceId /subscriptions/subid/resourceGroups/Api-Default-West-US/providers/Microsoft.ApiManagement/service/contoso
 $versionSet = Get-AzApiManagementApiVersionSet -Context $context -ApiVersionSetId "xmsVersionSet"
@@ -77,11 +80,11 @@ ResourceGroupName             : Api-Default-West-US
 ServiceName                   : contoso
 ```
 
-Perintah ini membuat API `echoapiv3` di ApiVersionSet `xmsVersionSet` dan menyalin semua operasi, Tag dan Kebijakan dari Api `echo-api`sumber. Ini menimpa LanggananPerlukan, ServiceUrl, Jalur, Protokol
+Perintah ini membuat API `echoapiv3` di ApiVersionSet `xmsVersionSet` dan menyalin semua operasi, Tag, dan Kebijakan dari Api `echo-api`sumber . Ini mengambil alih SubscriptionRequired, ServiceUrl, Path, Protocols
 
 ### Contoh 3
 
-Membuat API. (autogenerasi)
+Membuat API. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example -->
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersion
-Api Version of the Api to create. Parameter ini bersifat opsional.
+Versi Api dari Api yang akan dibuat. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersionSetId
-Pengidentifikasi sumber daya untuk Kumpulan Versi Api terkait. Parameter ini bersifat opsional.
+Pengidentifikasi sumber daya untuk Set Versi Api terkait. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationScope
-Menentukan lingkup operasi OAuth.
+Menentukan cakupan operasi OAuth.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId di mana token akses dikirimkan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId tempat token akses diteruskan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4. Parameter ini bersifat opsional. Nilai defaultnya adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -199,7 +202,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 
 ```yaml
@@ -244,9 +247,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama API web.
-Ini adalah nama publik API seperti yang muncul di portal admin dan pengembang.
+Ini adalah nama publik API seperti yang muncul di portal pengembang dan admin.
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdProviderId
-Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai default adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
+Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai defaultnya adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
 
 ```yaml
 Type: System.String
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur API web, yang merupakan bagian terakhir dari URL publik API dan terkait dengan bidang akhiran URL API Web di portal admin.
+Menentukan jalur API web, yang merupakan bagian terakhir dari URL publik API dan sesuai dengan bidang akhiran URL API Web di portal admin.
 URL ini digunakan oleh konsumen API untuk mengirim permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
 Nilai defaultnya adalah $Null.
 
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ### -Protokol
 Menentukan array protokol API web.
 Nilai yang valid adalah http, https.
-Ini adalah protokol web di mana API disediakan.
+Ini adalah protokol web tempat API tersedia.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -328,8 +331,8 @@ Accept wildcard characters: False
 
 ### -ServiceUrl
 Menentukan URL layanan web yang mengekspos API.
-URL ini hanya digunakan oleh Azure API Management, dan tidak diumumkan ke publik.
-URL harus panjangnya satu hingga 2000 karakter.
+URL ini hanya digunakan oleh Azure API Management, dan tidak dibuat publik.
+PANJANG URL harus satu hingga 2000 karakter.
 
 ```yaml
 Type: System.String
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceApiId
-Api identifier dari API sumber. Parameter ini bersifat opsional.
+Pengidentifikasi api dari API sumber. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceApiRevision
-Api Revisi API sumber. Parameter ini bersifat opsional.
+Revisi Api dari API sumber. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -406,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Bendera untuk memberlakukan LanggananPerlukan permintaan ke Api. Parameter ini bersifat opsional.
+Bendera untuk memberlakukan SubscriptionRequired untuk permintaan ke Api. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -445,7 +448,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzApiManagementApi](./Get-AzApiManagementApi.md)
 
-[Impor-AzApiManagementApi](./Import-AzApiManagementApi.md)
+[Import-AzApiManagementApi](./Import-AzApiManagementApi.md)
 
 [Remove-AzApiManagementApi](./Remove-AzApiManagementApi.md)
 

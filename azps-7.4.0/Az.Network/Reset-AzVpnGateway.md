@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnGateway.md
-ms.openlocfilehash: 33e33dfb8befd2804e8fd1c967d6d47394a83381
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d7c3b646acf815f4532488995a80244110454e9c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142677106"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144604166"
 ---
 # Reset-AzVpnGateway
 
 ## SYNOPSIS
-Mereset gateway VPN yang dapat diskalakan.
+Mengatur ulang gateway VPN yang dapat diskalakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/reset-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Reset-AzVpnGateway -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Mereset VpnGateway
+Mengatur ulang VpnGateway
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Reset-AzVpnGateway -VpnGateway $Gateway
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,6 +119,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVpnGateway](./New-AzVpnGateway.md)
 
-[Hapus-AzVpnGateway](./Remove-AzVpnGateway.md)
+[Remove-AzVpnGateway](./Remove-AzVpnGateway.md)
 
 [Update-AzVpnGateway](./Update-AzVpnGateway.md)

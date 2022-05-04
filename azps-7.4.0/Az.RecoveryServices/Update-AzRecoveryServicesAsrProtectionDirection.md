@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionDirection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionDirection.md
-ms.openlocfilehash: da058c66036ec3546425af468029313076bf3f1c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9e046542537ce049e29dc3d506c9194f4731efee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310293"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144610394"
 ---
 # Update-AzRecoveryServicesAsrProtectionDirection
 
 ## SYNOPSIS
-Memperbarui arah replikasi untuk item yang diproteksi replikasi tertentu atau rencana pemulihan. Digunakan untuk melindungi/membalikkan replikasi gagal melalui item replikasi atau rencana pemulihan.
+Memperbarui arah replikasi untuk item yang dilindungi replikasi atau rencana pemulihan yang ditentukan. Digunakan untuk melindungi kembali/membalikkan replikasi item yang direplikasi atau rencana pemulihan yang gagal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrprotectiondirection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzRecoveryServicesAsrProtectionDirection [-VMwareToAzure] -Account <ASRRu
  -Direction <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplicateAzureToVMware
+### ReplikasiAzureToVMware
 ```
 Update-AzRecoveryServicesAsrProtectionDirection [-ReplicateAzureToVMware]
  -ProtectionContainerMapping <ASRProtectionContainerMapping> -DataStoreName <String> -ApplianceName <String>
@@ -114,7 +117,7 @@ Update-AzRecoveryServicesAsrProtectionDirection -Direction <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRecoveryServicesAsrProtectionDirection** memperbarui arah replikasi untuk objek Azure Site Recovery yang ditentukan setelah penyelesaian operasi commit failover.
+Cmdlet **Update-AzRecoveryServicesAsrProtectionDirection** memperbarui arah replikasi untuk objek Azure Site Recovery yang ditentukan setelah penyelesaian operasi penerapan failover.
 
 ## EXAMPLES
 
@@ -123,7 +126,7 @@ Cmdlet **Update-AzRecoveryServicesAsrProtectionDirection** memperbarui arah repl
 $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -RecoveryPlan $RP -Direction PrimaryToRecovery
 ```
 
-Mulai operasi arah pembaruan untuk rencana pemulihan yang ditentukan dan mengembalikan objek pekerjaan ASR yang digunakan untuk melacak operasi.
+Mulai operasi arah pembaruan untuk rencana pemulihan yang ditentukan dan kembalikan objek pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ### Contoh 2
 ```powershell
@@ -131,7 +134,7 @@ $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -Pro
  -ReplicationProtectedItem $rpi
 ```
 
-Mulai operasi arah pembaruan untuk item yang diproteksi replikasi tertentu di wilayah azure target yang ditentukan oleh pemetaan wadah proteksi dan menggunakan penyimpanan cache (di kawasan yang sama dengan VM).
+Mulai operasi arah pembaruan untuk item yang dilindungi replikasi yang ditentukan di wilayah azure target yang ditentukan oleh pemetaan kontainer perlindungan dan menggunakan penyimpanan cache (di wilayah yang sama dengan VM).
 
 ### Contoh 3
 ```powershell
@@ -139,7 +142,7 @@ $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -Pro
  -AzureToAzureDiskReplicationConfiguration $disk1,$disk2 -ReplicationProtectedItem  $rpi
 ```
 
-Mulai operasi arah pembaruan untuk item yang diproteksi replikasi tertentu di wilayah azure target yang ditentukan oleh pemetaan wadah proteksi dan konfigurasi replikasi disk yang disediakan.
+Mulai operasi arah pembaruan untuk item yang dilindungi replikasi yang ditentukan di wilayah azure target yang ditentukan oleh pemetaan kontainer perlindungan dan konfigurasi replikasi disk yang disediakan.
 
 ### Contoh 4
 ```powershell
@@ -150,7 +153,7 @@ $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -Pro
 ```
 
     
-Mulai operasi arah pembaruan untuk item yang diproteksi replikasi terenkripsi tertentu di wilayah azure target yang ditentukan oleh pemetaan kontainer proteksi dan menyediakan konfigurasi replikasi disk.
+Mulai operasi arah pembaruan untuk item yang dilindungi replikasi terenkripsi yang ditentukan di wilayah azure target yang ditentukan oleh pemetaan kontainer perlindungan dan konfigurasi replikasi disk yang disediakan.
 
 ### Contoh 5
 ```powershell
@@ -158,7 +161,7 @@ $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -Pro
  -ReplicationProtectedItem $rpi -RecoveryProximityPlacementGroupId $ppg
 ```
 
-Mulai operasi arah pembaruan untuk item yang diproteksi replikasi tertentu di wilayah azure target yang ditentukan oleh pemetaan wadah proteksi dan menggunakan penyimpanan singgahan (di kawasan yang sama dengan VM) dan grup penempatan kedekatan.
+Mulai operasi arah pembaruan untuk item yang dilindungi replikasi yang ditentukan di wilayah azure target yang ditentukan oleh pemetaan kontainer perlindungan dan menggunakan penyimpanan cache (di wilayah yang sama dengan VM) dan grup penempatan kedekatan.
 
 ### Contoh 6
 ```powershell
@@ -166,12 +169,12 @@ $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -Pro
  -ReplicationProtectedItem $rpi -RecoveryVirtualMachineScaleSetId $vmss
 ```
 
-Mulai operasi arah pembaruan untuk item yang diproteksi replikasi tertentu di wilayah azure target yang ditentukan oleh pemetaan wadah proteksi dan menggunakan penyimpanan cache (di kawasan yang sama dengan VM) dan kumpulan skala mesin virtual.
+Mulai operasi arah pembaruan untuk item yang dilindungi replikasi yang ditentukan di wilayah azure target yang ditentukan oleh pemetaan kontainer perlindungan dan menggunakan penyimpanan cache (di wilayah yang sama dengan VM) dan set skala komputer virtual.
 
 ## PARAMETERS
 
 ### -Akun
-Jalankan sebagai akun yang akan digunakan untuk mendorong penginstalan layanan Mobilitas jika diperlukan. Harus salah satu dari daftar berjalan sebagai akun dalam kain ASR.
+Akun jalankan sebagai yang akan digunakan untuk mendorong penginstalan layanan Mobilitas jika diperlukan. Harus salah satu dari daftar jalankan sebagai akun dalam fabric ASR.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRunAsAccount
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplianceName
-Menentukan nama alat yang akan digunakan untuk mereplikasi mesin ini.
+Menentukan nama appliance yang akan digunakan untuk mereplikasi komputer ini.
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureToVMware
-Menentukan skenario switch azure ke vMWare.
+Menentukan skenario beralih azure ke vMWare.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -CredentialsToAccessVm
-Menentukan nama kredensial yang akan digunakan untuk mendorong penginstalan layanan Mobilitas pada mesin sumber jika diperlukan.
+Menentukan nama kredensial yang akan digunakan untuk mendorong penginstalan layanan Mobilitas pada komputer sumber jika diperlukan.
 
 ```yaml
 Type: System.String
@@ -323,7 +326,7 @@ Menentukan arah yang akan digunakan untuk operasi pembaruan pasca failover.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - PrimaryToRecovery
-- PemulihanToPrimary
+- RecoveryToPrimary
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSecretUrl
-Menentukan URL rahasia enkripsi disk dengan versi(Enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
+Menentukan URL rahasia enkripsi disk dengan versi (Enkripsi disk Azure) yang akan digunakan untuk memulihkan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionVaultId
-Menentukan ID vault rahasia enkripsi disk(enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
+Menentukan ID brankas rahasia enkripsi disk (enkripsi disk Azure) yang akan digunakan untuk memulihkan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperVToAzure
-Memproteksi ulang mesin virtual Hyper-V setelah failback.
+Lindungi ulang komputer virtual Hyper-V setelah failback.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKeyUrl
-Menentukan URL kunci enkripsi disk(Enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
+Menentukan URL kunci enkripsi disk (enkripsi disk Azure) yang akan digunakan untuk memulihkan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -414,7 +417,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionVaultId
-Menentukan kunci enkripsi disk KeyVault ID(Enkripsi disk Azure) untuk digunakan sebagai pemulihan VM setelah failover.
+Menentukan ID keyVault kunci enkripsi disk (enkripsi disk Azure) yang akan digunakan untuk memulihkan VM setelah failover.
 
 ```yaml
 Type: System.String
@@ -486,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerMapping
-Wadah perlindunganMemapping yang akan digunakan untuk replikasi.
+Kontainer perlindunganMapping yang akan digunakan untuk replikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainerMapping
@@ -501,7 +504,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAvailabilitySetId
-Set ketersediaan yang harus dibuat mesin virtual saat failover
+Set ketersediaan tempat komputer virtual harus dibuat saat failover
 
 ```yaml
 Type: System.String
@@ -516,7 +519,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAzureStorageAccountId
-Menentukan ID akun penyimpanan Azure untuk direplikasi.
+Menentukan ID akun penyimpanan Azure yang akan direplikasi.
 
 ```yaml
 Type: System.String
@@ -531,7 +534,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryBootDiagStorageAccountId
-Menentukan akun penyimpanan untuk diagnostik boot untuk pemulihan Azure VM.
+Menentukan akun penyimpanan untuk diagnostik boot untuk pemulihan azure VM.
 
 ```yaml
 Type: System.String
@@ -561,7 +564,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryCloudServiceId
-ID sumber daya layanan cloud pemulihan untuk gagalover mesin virtual ini.
+ID sumber daya layanan cloud pemulihan untuk failover komputer virtual ini.
 
 ```yaml
 Type: System.String
@@ -591,7 +594,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryProximityPlacementGroupId
-ID sumber daya dari grup penempatan kedekatan pemulihan untuk gagalover mesin virtual ini ke.
+ID sumber daya dari grup penempatan kedekatan pemulihan untuk failover komputer virtual ini.
 
 ```yaml
 Type: System.String
@@ -606,7 +609,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryResourceGroupId
-Sumber daya pemulihan Id grup untuk Vm yang dilindungi.
+Memulihkan id resourceGroup untuk Vm yang dilindungi.
 
 ```yaml
 Type: System.String
@@ -621,7 +624,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryVirtualMachineScaleSetId
-Menentukan id set skala mesin virtual reccovery.
+Menentukan id set skala komputer virtual reccovery.
 
 ```yaml
 Type: System.String
@@ -636,7 +639,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicateAzureToVMware
-Beralih parameter yang menentukan Azure ke skenario replikasi VMware.
+Beralih parameter yang menentukan skenario replikasi Azure ke VMware..
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -651,7 +654,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicateVMwareToAzure
-Beralih parameter yang menentukan VMware ke skenario replikasi Azure.
+Beralih parameter yang menentukan skenario replikasi VMware ke Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -666,7 +669,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan item yang diproteksi replikasi ASR.
+Menentukan item yang dilindungi replikasi ASR.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -681,7 +684,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionVolume
-Volume Penyimpanan pada server target master yang akan digunakan.
+Volume Retensi pada server target master yang akan digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRetentionVolume
@@ -697,7 +700,7 @@ Accept wildcard characters: False
 
 ### -SiteId
 Menentukan Id situs VMware tempat item yang dapat dilindungi ditemukan.
-Gunakan Site Id dari detail khusus kain dalam kain ASR untuk menentukannya.
+Gunakan ID situs dari detail spesifik fabric dalam fabric ASR untuk menentukannya.
 
 ```yaml
 Type: System.String
@@ -712,7 +715,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmmToVmm
-Perbarui arah replikasi untuk mesin virtual Hyper-V yang gagal yang dilindungi antara dua situs Hyper-V yang dikelola VMM.
+Perbarui arah replikasi untuk komputer virtual Hyper-V yang gagal yang dilindungi antara dua situs Hyper-V yang dikelola VMM.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -741,8 +744,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -757,7 +760,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -772,7 +775,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

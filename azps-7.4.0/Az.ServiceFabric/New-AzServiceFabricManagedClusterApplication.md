@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: c43f8e4d54c1bc42de7c6659888828b5835e8ec4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8b492559ff926f913d52a25e2153a0f47a7aa037
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142671886"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595850"
 ---
 # New-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
-Buat aplikasi terkelola kain layanan baru di bawah kelompok dan kluster sumber daya yang ditentukan.
+Buat aplikasi terkelola service fabric baru di bawah grup sumber daya dan kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedclusterapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzServiceFabricManagedClusterApplication [-ResourceGroupName] <String> [-Clu
 ```
 
 ## DESCRIPTION
-Cmdlet ini membuat aplikasi terkelola kain layanan baru di bawah grup sumber daya dan kluster yang ditentukan. Parameter -PackageUrl dapat digunakan untuk membuat versi tipe, Jika versi tipe sudah keluar tetapi dalam status 'Gagal' cmdlet akan menanyakan apakah pengguna ingin membuat ulang versi tipe. Jika berlanjut dalam status 'Gagal', perintah akan menghentikan proses dan mengeluarkan pengecualian.
+Cmdlet ini membuat aplikasi terkelola service fabric baru di bawah grup sumber daya dan kluster yang ditentukan. Parameter -PackageUrl dapat digunakan untuk membuat versi jenis, Jika versi jenis sudah keluar tetapi dalam status 'Gagal' cmdlet akan bertanya apakah pengguna ingin membuat ulang versi jenis. Jika berlanjut dalam status 'Gagal', perintah akan menghentikan proses dan melemparkan pengecualian.
 
 ## EXAMPLES
 
@@ -51,9 +54,9 @@ $appParameters =  @{key0="value0";key1=$null;key2="value2"}
 New-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeName $appTypeName -ApplicationTypeVersion $appTypeVersion -Name $appName -ApplicationParameter $appParameters
 ```
 
-Contoh ini membuat aplikasi terkelola "testApp" di bawah grup sumber daya "testRG" dan kluster "testCluster". Tipe aplikasi terkelola "TestAppType" versi "v1" seharusnya sudah ada di kluster, dan parameter aplikasi harus ditentukan dalam manifes aplikasi jika tidak cmdlet akan gagal.
+Contoh ini membuat aplikasi terkelola "testApp" di bawah grup sumber daya "testRG" dan kluster "testCluster". Jenis aplikasi terkelola "TestAppType" versi "v1" harus sudah ada di kluster, dan parameter aplikasi harus ditentukan dalam manifes aplikasi jika tidak cmdlet akan gagal.
 
-### Contoh 2: Tentukan -PackageUrl untuk membuat versi tipe aplikasi sebelum membuat aplikasi.
+### Contoh 2: Tentukan -PackageUrl untuk membuat versi jenis aplikasi sebelum membuat aplikasi.
 ```powershell
 $resourceGroupName = "testRG"
 $clusterName = "testCluster"
@@ -65,7 +68,7 @@ $packageUrlV1 = "https://sftestapp.blob.core.windows.net/sftestapp/testApp_1.0.s
 New-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeName $appTypeName -ApplicationTypeVersion $appTypeVersion -Name $appName -PackageUrl $packageUrlV1 -ApplicationParameter $appParameters
 ```
 
-Contoh ini membuat tipe aplikasi terkelola "testAppType" versi "v1" menggunakan url paket yang disediakan. Setelah ini, akan melanjutkan proses normal untuk membuat aplikasi. Jika versi tipe aplikasi terkelola sudah keluar dan status penyediaannya dalam 'Gagal' akan diminta untuk memutuskan apakah pengguna ingin membuat ulang versi tipe.
+Contoh ini membuat jenis aplikasi terkelola "testAppType" versi "v1" menggunakan url paket yang disediakan. Setelah ini, ia akan melanjutkan proses normal untuk membuat aplikasi. Jika versi jenis aplikasi terkelola sudah keluar dan status provisinya di 'Gagal' akan diminta untuk memutuskan apakah pengguna ingin membuat ulang versi jenis.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationTypeName
-Tentukan nama tipe aplikasi yang dikelola
+Tentukan nama jenis aplikasi terkelola
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationTypeVersion
-Menentukan versi tipe aplikasi yang dikelola
+Tentukan versi jenis aplikasi terkelola
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Lanjutkan tanpa perintah
 
 ```yaml
@@ -175,8 +178,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama aplikasi yang dikelola
+### -Name
+Tentukan nama aplikasi terkelola
 
 ```yaml
 Type: System.String
@@ -235,8 +238,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

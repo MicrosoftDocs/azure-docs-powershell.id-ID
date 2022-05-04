@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: aa1dc0ef42e3d8f169a63beb4942226ada5996bc
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4e66f87a1089ca453fe33f1373ee65ab0f59af48
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143060579"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144642210"
 ---
 # Get-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Mendapatkan detail Kapasitas Tersemat PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiembeddedcapacity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet Get-AzPowerBIEmbeddedCapacity mendapatkan detail Kapasitas Tersemat Power
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kapasitas grup sumber daya
+### Contoh 1: Mendapatkan kapasitas grup sumber daya
 ```powershell
 Get-AzPowerBIEmbeddedCapacity -ResourceGroupName "testRG"
 ```
@@ -68,7 +71,7 @@ Tag                    : {}
 
 Perintah ini mendapatkan semua Kapasitas Tersemat Azure PowerBI dalam grup sumber daya bernama testRG
 
-### Contoh 2: Dapatkan kapasitas
+### Contoh 2: Mendapatkan kapasitas
 ```powershell
 Get-AzPowerBIEmbeddedCapacity -ResourceGroupName "testRG" -Name "testcapacity"
 ```
@@ -86,7 +89,7 @@ Tier                   : PBIE_Azure
 Tag                    : {}
 ```
 
-Perintah ini mendapatkan Kapasitas Tersemat Azure PowerBI bernama testcapacity dalam grup sumber daya yang bernama testRG.
+Perintah ini mendapatkan Kapasitas Tersemat Azure PowerBI bernama testcapacity dalam grup sumber daya bernama testRG.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Kapasitas Tersemat PowerBI
 
 ```yaml
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecTrafficSelectorPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecTrafficSelectorPolicy.md
-ms.openlocfilehash: d339b751101e26a0bc781fa85da030e49b6a21e5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 68425f755092c83dca3102bf3d08a84a3ffedc90
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143281331"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144673522"
 ---
 # New-AzIpsecTrafficSelectorPolicy
 
 ## SYNOPSIS
 Membuat kebijakan pemilih lalu lintas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipsectrafficselectorpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

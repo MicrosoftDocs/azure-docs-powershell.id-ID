@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/publi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Publish-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Publish-AzAutomationRunbook.md
-ms.openlocfilehash: c2520ee1dee8297c5e7a2604f6c5aa461dc60cc3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e5aa6be749d4252ff455924fb6bd4e2dc8b79ed7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143007425"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144595383"
 ---
 # Publish-AzAutomationRunbook
 
 ## SYNOPSIS
 Menerbitkan runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/publish-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Publish-AzAutomationRunbook [-Name] <String> [-ResourceGroupName] <String> [-Aut
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzAutomationRunbook** menerbitkan runbook untuk digunakan dalam lingkungan produksi Azure Automation.
+Cmdlet **Publish-AzAutomationRunbook** menerbitkan runbook untuk digunakan di lingkungan produksi Azure Automation.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Perintah ini menerbitkan runbook bernama Runbk01 di akun Azure Automation bernam
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini menerbitkan runbook.
+Menentukan nama akun Automation tempat cmdlet ini menerbitkan runbook.
 
 ```yaml
 Type: System.String
@@ -69,7 +72,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama runbook yang diterbitkan cmdlet ini.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/set-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Set-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Set-AzContext.md
-ms.openlocfilehash: b07fc2c71f280f04e435a2cbda27cbca925b1eb2
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2f5b49215bdd73726c696230c45a070f2f8699ca
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688806"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144593387"
 ---
 # Set-AzContext
 
 ## SYNOPSIS
-Mengatur penyewa, langganan, dan lingkungan untuk cmdlet yang digunakan dalam sesi saat ini.
+Mengatur penyewa, langganan, dan lingkungan untuk cmdlet yang akan digunakan dalam sesi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/set-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Set-AzContext [-SubscriptionObject] <PSAzureSubscription>
  [<CommonParameters>]
 ```
 
-### Berlangganan
+### Langganan
 ```
 Set-AzContext [-Tenant <String>] [-Subscription] <String>
  [-ExtendedProperty <System.Collections.Generic.IDictionary`2[System.String,System.String]>] [-Name <String>]
@@ -60,8 +63,8 @@ Set-AzContext -Tenant <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzContext mengatur informasi autentikasi untuk cmdlet yang Anda jalankan dalam sesi saat ini.
-Konteksnya mencakup penyewa, langganan, dan informasi lingkungan.
+Cmdlet Set-AzContext mengatur informasi autentikasi untuk cmdlet yang Anda jalankan di sesi saat ini.
+Konteksnya mencakup informasi penyewa, langganan, dan lingkungan.
 
 ## EXAMPLES
 
@@ -76,11 +79,11 @@ Name    Account             SubscriptionName    Environment         TenantId
 Work    test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Perintah ini mengatur konteks untuk menggunakan langganan tertentu.
+Perintah ini mengatur konteks untuk menggunakan langganan yang ditentukan.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan konteks untuk sesi saat ini.
 
 ```yaml
@@ -125,8 +128,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Timpa konteks yang sudah ada dengan nama yang sama, jika ada.
+### -Force
+Timpa konteks yang ada dengan nama yang sama, jika ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konteks
 
 ```yaml
@@ -155,8 +158,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
+### -Cakupan
+Menentukan cakupan perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Langganan
-Nama atau id langganan tempat konteks harus diatur. Parameter ini memiliki alias ke -SubscriptionName dan -SubscriptionId, jadi, untuk kejelasan, salah satu dari parameter ini dapat digunakan sebagai ganti -Subscription ketika menentukan nama dan id, secara beruruan.
+Nama atau id langganan tempat konteks harus diatur. Parameter ini memiliki alias ke -SubscriptionName dan -SubscriptionId, jadi, untuk kejelasan, salah satu dari ini dapat digunakan alih-alih -Langganan saat menentukan nama dan id, masing-masing.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantObject
-Objek penyewa
+Objek Penyewa
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Models.PSAzureTenant
@@ -243,8 +246,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

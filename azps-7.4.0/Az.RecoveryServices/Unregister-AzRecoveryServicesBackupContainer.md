@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupContainer.md
-ms.openlocfilehash: 5e95910b02671f2d30806dc56cb7310c02b22176
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 83a34775d0853eae4ce6596aac0825023d4babac
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142935911"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144646078"
 ---
 # Unregister-AzRecoveryServicesBackupContainer
 
 ## SYNOPSIS
-Membatalkan pendaftaran server Windows atau wadah lain dari kubah.
+Membatalkan pendaftaran server Windows atau kontainer lain dari vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/unregister-azrecoveryservicesbackupcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,25 +29,25 @@ Unregister-AzRecoveryServicesBackupContainer [-Container] <ContainerBase> [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Unregister-AzRecoveryServicesBackupContainer** membatalkan pendaftaran server Windows atau kontainer Cadangan lainnya dari kubah.
-Cmdlet ini menghapus referensi ke wadah dari kubah.
-Sebelum dapat membatalkan pendaftaran wadah, Anda harus menghapus semua data yang diproteksi yang terkait dengan wadah tersebut.
-Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Unregister-AzRecoveryServicesBackupContainer** membatalkan pendaftaran server Windows atau kontainer Cadangan lainnya dari vault.
+Cmdlet ini menghapus referensi ke kontainer dari vault.
+Sebelum dapat membatalkan pendaftaran kontainer, Anda harus menghapus data terlindungi yang terkait dengan kontainer tersebut.
+Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Batalkan pendaftaran Server Windows dari kubah
+### Contoh 1: Membatalkan pendaftaran Server Windows dari vault
 ```powershell
 $Cont = Get-AzRecoveryServicesBackupContainer -ContainerType "Windows" -BackupManagementType MAB -Name "server01.contoso.com"
 Unregister-AzRecoveryServicesBackupContainer -Container $Cont
 ```
 
-Perintah pertama mendapatkan wadah Windows bernama server01.contoso.com yang terdaftar dalam kubah, lalu menyimpannya dalam variabel $Cont.
-Perintah kedua membatalkan pendaftaran Server Windows yang ditentukan dari kubah Azure Backup.
+Perintah pertama mendapatkan kontainer Windows bernama server01.contoso.com yang terdaftar di vault, lalu menyimpannya dalam variabel $Cont.
+Perintah kedua membatalkan pendaftaran server Windows yang ditentukan dari vault Azure Backup.
 
 ### Contoh 2
 
-Membatalkan pendaftaran server Windows atau wadah lain dari kubah. (autogenerasi)
+Membatalkan pendaftaran server Windows atau kontainer lain dari vault. (dibuat otomatis)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -54,7 +57,7 @@ Unregister-AzRecoveryServicesBackupContainer -Container $Cont -VaultId $vault.ID
 ## PARAMETERS
 
 ### -Kontainer
-Menentukan objek Kontainer Cadangan untuk membatalkan pendaftaran.
+Menentukan objek kontainer Cadangan untuk membatalkan pendaftaran.
 Untuk mendapatkan objek **BackupContainer** , gunakan cmdlet Get-AzRecoveryServicesBackupContainer.
 
 ```yaml
@@ -84,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa penampung tidak terdaftar (mencegah dialog konfirmasi). Parameter ini bersifat opsional.
+### -Force
+Paksa membatalkan pendaftaran kontainer (mencegah dialog konfirmasi). Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan wadah yang akan dihapus.
+Mengembalikan kontainer yang akan dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ARM ID dari Vault Layanan Pemulihan.
+ID ARM dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -129,8 +132,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

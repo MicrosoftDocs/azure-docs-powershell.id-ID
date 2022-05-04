@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTrigger.md
-ms.openlocfilehash: f2ccd0381a5bb8736e2f1f60a130af0757cd8cc5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 233022655aa7e14be367603ec066d947ef95a959
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143277281"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643974"
 ---
 # New-AzPurviewTrigger
 
 ## SYNOPSIS
 Membuat instans pemicu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewtrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

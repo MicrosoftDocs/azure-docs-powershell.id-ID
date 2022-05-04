@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValue.md
-ms.openlocfilehash: dde639836fd118b86a9680233b428d6411afd9f5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eca0d90b5865dd73992933a59f6196abf62b1701
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320697"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144626322"
 ---
 # Get-AzApiManagementNamedValue
 
 ## SYNOPSIS
 Mendapatkan daftar atau Nilai Bernama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ Get-AzApiManagementNamedValue -Context <PsApiManagementContext> [-Tag <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzApiManagementNamedValue** mendapatkan daftar atau nilai bernama tertentu.
-Nilai tidak akan disertakan ke dalam detail hasil jika nilai bernama yang ditandai sebagai rahasia. Untuk mendapatkan nilai rahasia, gunakan **Get-AzApiManagementNamedValueSecretValue**.
+Nilai tidak akan disertakan ke dalam detail hasil jika nilai bernama ditandai sebagai rahasia. Untuk mendapatkan nilai rahasia, gunakan **Get-AzApiManagementNamedValueSecretValue**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Nilai Bernama menurut nama
+### Contoh 1: Dapatkan Nilai Bernama berdasarkan nama
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementNamedValue -Context $apimContext -Name "sql-connectionstring"
@@ -59,8 +62,8 @@ Perintah ini mendapatkan detail nilai bernama yang diberi nama nilai bernama.
 
 ## PARAMETERS
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menemukan nilai bernama dengan nama yang berisi nama string.
+### -Name
+Menemukan nilai bernama dengan nama yang berisi Nama string.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NameValueId
+### -NamedValueId
 Pengidentifikasi nilai bernama.
 Jika ditentukan akan mencoba menemukan nilai bernama oleh pengidentifikasi.
 Parameter ini bersifat opsional.
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

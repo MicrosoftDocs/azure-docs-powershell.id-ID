@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzWcfRelay.md
-ms.openlocfilehash: 272a6400b4c975e4b41e3440ad860b82a18e82da
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1eb34654256d7faef0aab34931d7f9861873d4e1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143276201"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144643956"
 ---
 # New-AzWcfRelay
 
 ## SYNOPSIS
-Membuat WcfRelay dalam ruang nama Relay yang ditentukan.
+Membuat WcfRelay di namespace Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.relay/new-azwcfrelay) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzWcfRelay membuat WcfRelay dalam ruang nama Relay yang ditentukan.
+Cmdlet New-AzWcfRelay membuat WcfRelay di namespace Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Name                        : TestWCFRelay2
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Membuat WcfRelay \`TestWCFRelay2\` baru dalam Ruang \`nama Relay yang ditentukan TestNameSpace-Relay\`.
+Membuat WcfRelay \`TestWCFRelay2\` baru di namespace \`Relay yang ditentukan TestNameSpace-Relay\`.
 
 ### Contoh 2 - Properti
 ```powershell
@@ -84,7 +87,7 @@ Name                        : TestWCFRelay
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Membuat WcfRelay \`TestWCFRelay\` baru dalam Ruang \`nama Relay yang ditentukan TestNameSpace-Relay1\`.
+Membuat WcfRelay \`TestWCFRelay\` baru di namespace \`Relay yang ditentukan TestNameSpace-Relay1\`.
 
 ## PARAMETERS
 
@@ -118,7 +121,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WcfRelay.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Ruang Nama.
+Nama Namespace.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresClientAuthorization
-true jika otorisasi klien diperlukan untuk relai ini; jika tidak, false
+true jika otorisasi klien diperlukan untuk relai ini; jika tidak, salah
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresTransportSecurity
-true jika keamanan transportasi diperlukan untuk relay ini; jika tidak, false
+true jika keamanan transportasi diperlukan untuk relai ini; jika tidak, salah
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserMetadata
-Gets or sets usermetadata is a placeholder to store user-defined string data for the HybridConnection endpoint.e.g. ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
+Mendapatkan atau mengatur usermetadata adalah tempat penampung untuk menyimpan data string yang ditentukan pengguna untuk titik akhir HybridConnection. misalnya ini dapat digunakan untuk menyimpan data deskriptif, seperti daftar tim dan informasi kontak mereka juga pengaturan konfigurasi yang ditentukan pengguna dapat disimpan.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -WcfRelayType
-Tipe WcfRelay.
+Jenis WcfRelay.
 Nilai yang mungkin termasuk: 'NetTcp' atau 'Http'
 
 ```yaml
@@ -225,8 +228,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

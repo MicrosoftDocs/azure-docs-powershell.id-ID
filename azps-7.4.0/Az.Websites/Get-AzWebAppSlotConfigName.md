@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
-ms.openlocfilehash: 949e8e5a60b1106a18572b86ae7a15723a91de6a
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 21a33048e8823dbcb7913cd4d0cbefc4f9c909e2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143170001"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144603464"
 ---
 # Get-AzWebAppSlotConfigName
 
 ## SYNOPSIS
-Dapatkan daftar nama Web App Slot Config
+Mendapatkan daftar nama Konfigurasi Slot Aplikasi Web
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotconfigname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzWebAppSlotConfigName [-WebApp] <PSSite> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar nama Pengaturan Aplikasi dan String Koneksi yang saat ini ditandai sebagai pengaturan slot
+Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar Nama Pengaturan Aplikasi dan String Koneksi yang saat ini ditandai sebagai pengaturan slot
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar nama Pengaturan Aplikasi 
 Get-AzWebAppSlotConfigName -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini mendapatkan string Aplikasi Pengaturan dan Koneksi yang berkaitan dengan Aplikasi Web bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini mendapatkan string App Pengaturan dan Koneksi yang berkaitan dengan Aplikasi Web bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
@@ -60,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama WebApp
 
 ```yaml
@@ -106,13 +109,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
 ### System.String
 
-### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 

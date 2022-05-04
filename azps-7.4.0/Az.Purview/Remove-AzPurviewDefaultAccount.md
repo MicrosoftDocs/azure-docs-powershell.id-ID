@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewDefaultAccount.md
-ms.openlocfilehash: 66ecfc0d07577daf3d9126141ca35c5bc49c98bd
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5aa571acc79fd2a464e34b8766fd3bb83107dfc9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310905"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144694892"
 ---
 # Remove-AzPurviewDefaultAccount
 
 ## SYNOPSIS
-Menghapus akun default dari lingkup.
+Menghapus akun default dari cakupan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/remove-azpurviewdefaultaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Remove-AzPurviewDefaultAccount -ScopeTenantId <String> -ScopeType <ScopeType> [-
 ```
 
 ## DESCRIPTION
-Menghapus akun default dari lingkup.
+Menghapus akun default dari cakupan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus akun default dari lingkup
+### Contoh 1: Menghapus akun default dari cakupan
 ```powershell
 Remove-AzPurviewDefaultAccount -ScopeTenantId xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a -ScopeType Tenant
 ```
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -68,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Id objek lingkup, misalnya jika lingkupnya adalah "Langganan" maka id langganan tersebut adalah ID.
+### -Cakupan
+Id objek cakupan, misalnya jika cakupannya adalah "Langganan" maka itu adalah ID langganan tersebut.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeType
-Lingkup untuk akun default.
+Cakupan untuk akun default.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Support.ScopeType
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

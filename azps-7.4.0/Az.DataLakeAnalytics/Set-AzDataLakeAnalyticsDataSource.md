@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: d1a2e373a7413fa3f88443adb2d94e1a5a6a415c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d27824bc8fbbc792bbf41b176fa886dedbba80f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288585"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144592344"
 ---
 # Set-AzDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
-Mengubah detail sumber data akun Data Lake Analytics.
+Memodifikasi detail sumber data akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzDataLakeAnalyticsDataSource [-Account] <String> [-Blob] <String> [-AccessK
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeAnalyticsDataSource** mengubah detail sumber data akun azure Data Lake Analytics.
+Cmdlet **Set-AzDataLakeAnalyticsDataSource** memodifikasi detail sumber data akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ Perintah ini mengubah kunci akses yang disimpan untuk sumber data Azure Blob Sto
 ## PARAMETERS
 
 ### -AccessKey
-Menentukan kunci akses baru sumber data Azure Blob Storage.
+Menentukan kunci akses baru dari sumber data Azure Blob Storage.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

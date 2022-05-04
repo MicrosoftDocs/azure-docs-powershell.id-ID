@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
-ms.openlocfilehash: c397d3780465b598e2010eaaa0bb7d45b216a17c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e74d27c6e6d0d83cb9e36872c6a4035f9e94efd0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143006039"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144627744"
 ---
 # Get-AzVMDiagnosticsExtension
 
 ## SYNOPSIS
-Mendapatkan pengaturan ekstensi Diagnostik di mesin virtual.
+Mendapatkan pengaturan ekstensi Diagnostik pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmdiagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,20 +29,20 @@ Get-AzVMDiagnosticsExtension [-ResourceGroupName] <String> [-VMName] <String> [[
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Diagnostik Azure pada mesin virtual.
+Cmdlet **Get-AzVMDiagnosticsExtension** mendapatkan pengaturan ekstensi Azure Diagnostics pada komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ekstensi diagnostik yang diterapkan ke mesin virtual
+### Contoh 1: Dapatkan ekstensi diagnostik yang diterapkan ke komputer virtual
 ```powershell
 Get-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM22"
 ```
 
-Perintah ini akan menerapkan ekstensi diagnostik ke mesin virtual bernama ContosoVM22.
+Perintah ini mendapatkan ekstensi diagnostik yang diterapkan ke komputer virtual bernama ContosoVM22.
 
 ### Contoh 2
 
-Mendapatkan pengaturan ekstensi Diagnostik di mesin virtual. (autogenerasi)
+Mendapatkan pengaturan ekstensi Diagnostik pada komputer virtual. (dibuat otomatis)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Get-AzVMDiagnosticsExtension -Name 'AgentPool01' -ResourceGroupName 'ResourceGroup11' -Status -VMName 'ContosoVM22'
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama ekstensi Diagnostik di mana cmdlet ini mendapatkan pengaturan.
+### -Name
+Menentukan nama ekstensi Diagnostik tempat cmdlet ini mendapatkan pengaturan.
 
 ```yaml
 Type: System.String
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual tempat cmdlet ini mendapatkan ekstensi Diagnostik.
+Menentukan nama komputer virtual tempat cmdlet ini mendapatkan ekstensi Diagnostik.
 
 ```yaml
 Type: System.String
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
