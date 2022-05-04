@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
-ms.openlocfilehash: bdb8479f1a540585d86d77f58db7698361248f36
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: adb2a56a3fd5b4285bd73a1b2d8917dd916e049c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143312777"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144738550"
 ---
 # Set-AzNetworkInterface
 
 ## SYNOPSIS
 Memperbarui antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ $nic.EnableIPForwarding = 1
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, tetapi pastikan untuk mengubah perintah kedua menjadi "$nic. EnableIPForwarding = 0".
+Perintah pertama mendapatkan antarmuka jaringan yang ada yang disebut NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh sampel, tetapi pastikan untuk mengubah perintah kedua menjadi "$nic. EnableIPForwarding = 0".
 
 ### Contoh 4: Mengubah subnet antarmuka jaringan
 ```powershell
@@ -75,11 +78,11 @@ $nic | Set-AzNetworkInterface
 
 Perintah pertama mendapatkan antarmuka jaringan NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mendapatkan jaringan virtual yang terkait dengan subnet yang akan dikaitkan dengan antarmuka jaringan. Perintah kedua mendapatkan subnet dan menyimpannya dalam variabel $subnet 2. Perintah ketiga mengaitkan alamat IP privat utama antarmuka jaringan dengan subnet baru. Akhirnya perintah terakhir menerapkan perubahan ini pada antarmuka jaringan.
 >[!NOTE] 
->Konfigurasi IP harus dinamis sebelum Anda bisa mengubah subnet. Jika Anda memiliki konfigurasi IP statis, ubah ke dinamis sebelum melanjutkan. 
+>Konfigurasi IP harus dinamis sebelum Anda dapat mengubah subnet. Jika Anda memiliki konfigurasi IP statis, ubah ke dinamis sebelum melanjutkan. 
 >[!NOTE]
->Jika antarmuka jaringan memiliki beberapa konfigurasi IP, perintah keempat harus dilakukan untuk semua konfigurasi IP ini sebelum perintah akhir Set-AzNetworkInterface dijalankan. Hal ini dapat dilakukan seperti dalam perintah keempat tetapi dengan mengganti "0" dengan angka yang sesuai. Jika antarmuka jaringan memiliki konfigurasi N IP, maka N-1 dari perintah ini harus ada.
+>Jika antarmuka jaringan memiliki beberapa konfigurasi IP, perintah keempat harus dilakukan untuk semua konfigurasi IP ini sebelum perintah Set-AzNetworkInterface akhir dijalankan. Ini dapat dilakukan seperti pada perintah keempat tetapi dengan mengganti "0" dengan angka yang sesuai. Jika antarmuka jaringan memiliki konfigurasi N IP, maka N-1 dari perintah ini harus ada.
 
-### Contoh 5: Mengaitkan/Mengaitkan Grup Keamanan Jaringan ke antarmuka jaringan
+### Contoh 5: Mengaitkan/Memisahkan Kelompok Keamanan Jaringan ke antarmuka jaringan
 ```powershell
 $nic = Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -Name "NetworkInterface1"
 $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName "ResourceGroup1" -Name "MyNSG"
@@ -87,12 +90,12 @@ $nic.NetworkSecurityGroup = $nsg
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya dalam variabel $nsg. Perintah ketiga menetapkan $nsg ke $nic. Terakhir, perintah keempat menerapkan perubahan pada antarmuka Jaringan. Untuk memisahkan grup keamanan jaringan dari antarmuka jaringan, ganti sederhana $nsg di perintah ketiga dengan $null.
+Perintah pertama mendapatkan antarmuka jaringan yang ada yang disebut NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mendapatkan grup keamanan jaringan yang ada yang disebut MyNSG dan menyimpannya dalam variabel $nsg. Perintah ketiga menetapkan $nsg ke $nic. Terakhir, perintah keempat menerapkan perubahan pada antarmuka Jaringan. Untuk memisahkan grup keamanan jaringan dari antarmuka jaringan, ganti $nsg sederhana di perintah ketiga dengan $null.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan objek antarmuka jaringan yang mewakili status di mana antarmuka jaringan harus disetel.
+Menentukan objek antarmuka jaringan yang mewakili status di mana antarmuka jaringan harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

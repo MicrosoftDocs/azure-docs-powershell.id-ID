@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMCustomScriptExtension.md
-ms.openlocfilehash: 14478cc9cafcc70dee513a70ab7afac74a154bcf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b03f02b27f0783f71d6b4bf475df8f63f9466c03
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143231201"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144639187"
 ---
 # Get-AzVMCustomScriptExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi skrip kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmcustomscriptextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,23 +29,23 @@ Get-AzVMCustomScriptExtension [-ResourceGroupName] <String> [-VMName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMCustomScriptExtension** mendapatkan informasi tentang skrip kustom Ekstensi Mesin Virtual pada mesin virtual.
+Cmdlet **Get-AzVMCustomScriptExtension** mendapatkan informasi tentang skrip kustom Ekstensi Komputer Virtual pada komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ekstensi skrip kustom
+### Contoh 1: Mendapatkan ekstensi skrip kustom
 ```powershell
 $VMCustomScriptExtension = Get-AzVMCustomScriptExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoCustomScript"
 ```
 
-Perintah ini mendapatkan ekstensi skrip kustom bernama ContosoCustomScript untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan ekstensi skrip kustom bernama ContosoCustomScript untuk komputer virtual bernama VirtualMachine07.
 
 ### Contoh 2: Mendapatkan tampilan instans ekstensi skrip kustom
 ```powershell
 $VMCustomScriptExtension = Get-AzVMCustomScriptExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoCustomScript" -Status
 ```
 
-Perintah ini mendapatkan tampilan instans ekstensi skrip kustom bernama ContosoCustomScript untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan tampilan instans ekstensi skrip kustom bernama ContosoCustomScript untuk komputer virtual bernama VirtualMachine07.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama ekstensi skrip kustom tempat cmdlet ini mendapatkan informasi.
 
 ```yaml
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya mesin virtual.
+Menentukan nama grup sumber daya komputer virtual.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMName
-Menentukan nama mesin virtual di mana cmdlet ini mendapatkan ekstensi skrip kustom.
+Menentukan nama komputer virtual yang cmdlet ini mendapatkan ekstensi skrip kustom.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

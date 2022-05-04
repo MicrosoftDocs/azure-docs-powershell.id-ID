@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Copy-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Copy-AzRecoveryServicesVault.md
-ms.openlocfilehash: 17b58b1955d2cb8d6fc197b477b0051da781777d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a7da59c96cb740fbaf93ae4a49d5a40a95738a78
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143117621"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144725328"
 ---
 # Copy-AzRecoveryServicesVault
 
 ## SYNOPSIS
-Menyalin data dari kubah di satu kawasan ke kubah di kawasan lain.
+Menyalin data dari vault di satu wilayah ke vault di wilayah lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/copy-azrecoveryservicesvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Copy-AzRecoveryServicesVault [-Force] -CorrelationIdForDataMove <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Copy-AzRecoveryServicesVault** menyalin data dari kubah di satu kawasan ke kubah di wilayah lain. Saat ini kami hanya mendukung perpindahan data tingkat kubah.
+Cmdlet **Copy-AzRecoveryServicesVault** menyalin data dari vault di satu wilayah ke vault di wilayah lain. Saat ini kami hanya mendukung pemindahan data tingkat vault.
 
 ## EXAMPLES
 
-### Contoh 1: Salin data dari vault1 ke vault2
+### Contoh 1: Menyalin data dari vault1 ke vault2
 
 ```powershell
 $sourceVault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName1" -Name "vault1"
@@ -45,9 +48,9 @@ $targetVault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName2" -Name "v
 Copy-AzRecoveryServicesVault -SourceVault $sourceVault -TargetVault $targetVault
 ```
 
-Dua cmdlet pertama mengambil Vault Layanan Pemulihan - vault1 dan vault2. Perintah kedua memicu perpindahan data lengkap dari vault1 ke vault2. $sourceVault dan $targetVault juga dapat tergabung dalam langganan yang berbeda dalam satu kesatuan yang sama, dapat dilakukan dengan mengatur konteks langganan yang berbeda.
+Dua cmdlet pertama mengambil Vault Layanan Pemulihan - vault1 dan vault2 masing-masing. Perintah kedua memicu pemindahan data lengkap dari vault1 ke vault2. $sourceVault dan $targetVault juga dapat menjadi milik langganan yang berbeda dalam tanent yang sama, dapat diambil dengan mengatur konteks langganan yang berbeda.
 
-### Contoh 2: Salin data dari vault1 ke vault2 hanya dengan item yang gagal
+### Contoh 2: Menyalin data dari vault1 ke vault2 hanya dengan item yang gagal
 
 ```powershell
 $sourceVault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName1" -Name "vault1"
@@ -55,14 +58,14 @@ $targetVault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName2" -Name "v
 Copy-AzRecoveryServicesVault -SourceVault $sourceVault -TargetVault $targetVault -RetryOnlyFailed
 ```
 
-Dua cmdlet pertama mengambil Vault Layanan Pemulihan - vault1 dan vault2.
-Perintah kedua memicu perpindahan sebagian data dari vault1 ke vault2 hanya dengan item yang gagal dalam operasi perpindahan sebelumnya.
-$sourceVault dan $targetVault juga dapat tergabung dalam langganan yang berbeda dalam satu kesatuan yang sama, dapat dilakukan dengan mengatur konteks langganan yang berbeda.
+Dua cmdlet pertama mengambil Vault Layanan Pemulihan - vault1 dan vault2 masing-masing.
+Perintah kedua memicu pemindahan data parsial dari vault1 ke vault2 hanya dengan item yang gagal dalam operasi pemindahan sebelumnya.
+$sourceVault dan $targetVault juga dapat menjadi milik langganan yang berbeda dalam tanent yang sama, dapat diambil dengan mengatur konteks langganan yang berbeda.
 
 ## PARAMETERS
 
 ### -CorrelationIdForDataMove
-Id Korlasi untuk memicu Pemindahan DS.
+Id Korelasi untuk memicu Pemindahan DS.
 
 ```yaml
 Type: System.String
@@ -91,8 +94,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
-Memaksa operasi pemindahan data (mencegah dialog konfirmasi) tanpa meminta konfirmasi untuk tipe redundansi penyimpanan kubah target. Parameter ini bersifat opsional. 
+### -Force
+Memaksa operasi pemindahan data (mencegah dialog konfirmasi) tanpa meminta konfirmasi untuk jenis redundansi penyimpanan vault target. Parameter ini bersifat opsional. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetryOnlyFailed
-Alihkan parameter untuk mencoba pemindahan data hanya untuk kontainer dalam kubah sumber yang belum dipindahkan.
+Alihkan parameter untuk mencoba pemindahan data hanya untuk kontainer di vault sumber yang belum dipindahkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVault
-Objek kubah sumber yang akan dipindahkan.
+Objek vault sumber yang akan dipindahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetVault
-Objek kubah target tempat data harus dipindahkan.
+Objek vault target tempat data harus dipindahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -151,8 +154,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

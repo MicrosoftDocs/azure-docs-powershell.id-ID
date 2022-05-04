@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/resto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restore-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restore-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 35f3ac11dcfa291b203b5bf1b5df6fd42648bc9c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: acac5c846c76a66b1c774c7b8752e3a0a24d8ac1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142675252"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638144"
 ---
 # Restore-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
-Memulihkan server dari cadangan yang sudah ada
+Memulihkan server dari cadangan yang ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/restore-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Restore-AzPostgreSqlFlexibleServer -Name <String> -ResourceGroupName <String> -S
 ```
 
 ## DESCRIPTION
-Memulihkan server dari cadangan yang sudah ada
+Memulihkan server dari cadangan yang ada
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan server PostgreSql menggunakan PointInTime Restore
+### Contoh 1: Memulihkan server PostgreSql menggunakan Pemulihan PointInTime
 ```powershell
 $restorePointInTime = (Get-Date).AddMinutes(-10)
 Restore-AzPostgreSqlFlexibleServer -Name pg-restore -ResourceGroupName PowershellPostgreSqlTest -SourceServerName postgresql-test -Location eastus -RestorePointInTime $restorePointInTime 
@@ -42,9 +45,9 @@ Name           Location  SkuName         SkuTier        AdministratorLogin Stora
 pg-restore     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 ```
 
-Cmdlet ini memulihkan server PostgreSql menggunakan PointInTime Restore.
+Cmdlet ini memulihkan server PostgreSql menggunakan Pemulihan PointInTime.
 
-### Contoh 1: Pulihkan server PostgreSql menggunakan PointInTime Restore dengan sumber daya jaringan yang berbeda
+### Contoh 1: Memulihkan server PostgreSql menggunakan Pemulihan PointInTime dengan sumber daya jaringan yang berbeda
 ```powershell
 
 $Subnet = '/subscriptions/00000000-0000-0000-0000-0000000000/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.Network/virtualNetworks/vnetname/subnets/subnetname'
@@ -59,7 +62,7 @@ Name           Location  SkuName         SkuTier        AdministratorLogin Stora
 pg-restore     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 ```
 
-Cmdlet ini memulihkan server PostgreSql menggunakan PointInTime Restore.
+Cmdlet ini memulihkan server PostgreSql menggunakan Pemulihan PointInTime.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama server.
 
 ```yaml
@@ -124,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateDnsZone
-Id zona dns pribadi yang sudah ada.
-Anda bisa menggunakan zona dns pribadi dari grup sumber daya yang sama, grup sumber daya yang berbeda, atau langganan yang berbeda.
+Id zona dns privat yang sudah ada.
+Anda bisa menggunakan zona dns privat dari grup sumber daya yang sama, grup sumber daya yang berbeda, atau langganan yang berbeda.
 Akhiran zona dns harus sama dengan domain server yang sepenuhnya memenuhi syarat.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointInTime
-Titik dalam waktu untuk memulihkan dari (format ISO8601), misalnya, 2017-04-26T02:10:00+08:00.
+Titik waktu untuk memulihkan dari (format ISO8601), misalnya, 2017-04-26T02:10:00+08:00.
 
 ```yaml
 Type: System.DateTime
@@ -186,9 +189,9 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Id Subnet yang sudah ada tempat server akses privat akan dibuat.
-Harap diperhatikan bahwa subnet akan didelegasikan ke Microsoft.DBforPostgreSQL/flexibleServers.
-Setelah delegasi, subnet ini tidak dapat digunakan untuk tipe sumber daya Azure lainnya.
+Id Subnet yang ada yang akan dibuat oleh server akses privat.
+Harap dicatat bahwa subnet akan didelegasikan ke Microsoft.DBforPostgreSQL/flexibleServers.
+Setelah delegasi, subnet ini tidak dapat digunakan untuk jenis sumber daya Azure lainnya.
 
 ```yaml
 Type: System.String
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Zona ketersediaan tempat penyediaan sumber daya.
+Zona ketersediaan untuk menyediakan sumber daya.
 
 ```yaml
 Type: System.String
@@ -232,8 +235,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

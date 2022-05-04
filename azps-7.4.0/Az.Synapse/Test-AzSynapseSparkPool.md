@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSparkPool.md
-ms.openlocfilehash: 5e8b5e051006c59c8173c37687bebd62fb6fa455
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 3da031bbe2e0a64605dfe7f4aa3e369f7193f363
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931411"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144623526"
 ---
 # Test-AzSynapseSparkPool
 
 ## SYNOPSIS
-Memeriksa keberadaan kumpulan Synapse Analytics Spark.
+Memeriksa keberadaan kumpulan Spark Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/test-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Test-AzSynapseSparkPool -Name <String> -WorkspaceObject <PSSynapseWorkspace>
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzSynapseSparkPool** memeriksa keberadaan kumpulan Spark Analitik Synapse.
+Cmdlet **Test-AzSynapseSparkPool** memeriksa keberadaan kumpulan Spark Synapse Analytics.
 
 ## EXAMPLES
 
@@ -60,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama kolam renang Synapse Spark.
+### -Name
+Nama kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

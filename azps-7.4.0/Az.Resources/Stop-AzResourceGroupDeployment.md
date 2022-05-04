@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzResourceGroupDeployment.md
-ms.openlocfilehash: 72506991c338f56bc4af244afd9de02f6dafe50d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 4adef00b09441cbb1f08096a61c7645580919e48
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142673236"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676870"
 ---
 # Stop-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Membatalkan penyebaran grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/stop-azresourcegroupdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,16 +36,16 @@ Stop-AzResourceGroupDeployment -Id <String> [-Pre] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzResourceGroupDeployment** membatalkan penyebaran grup sumber daya Azure yang telah dimulai tetapi belum selesai.
-Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status yang diselesaikan, seperti Provisioned atau Failed.
+Cmdlet **Stop-AzResourceGroupDeployment** membatalkan penyebaran grup sumber daya Azure yang telah dimulai tetapi tidak selesai.
+Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Provisi, dan bukan status selesai, seperti Disediakan atau Gagal.
 Sumber daya Azure adalah entitas yang dikelola pengguna, seperti situs web, database, atau server database.
-Grup sumber daya adalah kumpulan sumber daya yang digunakan sebagai unit.
+Grup sumber daya adalah kumpulan sumber daya yang disebarkan sebagai unit.
 Untuk menyebarkan grup sumber daya, gunakan cmdlet New-AzResourceGroupDeployment.
 Cmdlet New-AzResource membuat sumber daya baru, tetapi tidak memicu operasi penyebaran grup sumber daya yang dapat dihentikan cmdlet ini.
-Cmdlet ini hanya menghentikan satu penyebaran yang berjalan.
+Cmdlet ini hanya menghentikan satu penyebaran yang sedang berjalan.
 Gunakan parameter *Nama* untuk menghentikan penyebaran tertentu.
-Jika Anda menghilangkan parameter *Nama* , **Stop-AzResourceGroupDeployment** mencari penyebaran yang berjalan dan menghentikannya.
-Jika cmdlet menemukan lebih dari satu penyebaran yang berjalan, perintah gagal.
+Jika Anda menghilangkan parameter *Nama* , **Stop-AzResourceGroupDeployment** mencari penyebaran yang sedang berjalan dan menghentikannya.
+Jika cmdlet menemukan lebih dari satu penyebaran yang sedang berjalan, perintah gagal.
 
 ## EXAMPLES
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID penyebaran grup sumber daya untuk berhenti.
+Menentukan ID penyebaran grup sumber daya untuk dihentikan.
 
 ```yaml
 Type: System.String
@@ -97,10 +100,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama penyebaran grup sumber daya untuk berhenti.
-Jika Anda tidak menentukan parameter ini, cmdlet ini mencari penyebaran yang berjalan dalam grup sumber daya dan menghentikannya.
-Jika menemukan lebih dari satu penyebaran yang berjalan, perintah akan gagal.
+### -Name
+Menentukan nama penyebaran grup sumber daya untuk dihentikan.
+Jika Anda tidak menentukan parameter ini, cmdlet ini mencari penyebaran yang sedang berjalan di grup sumber daya dan menghentikannya.
+Jika menemukan lebih dari satu penyebaran yang sedang berjalan, perintah gagal.
 Untuk mendapatkan nama penyebaran, gunakan cmdlet Get-AzResourceGroupDeployment.
 
 ```yaml
@@ -115,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pra
-Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
+### -Pre
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API pra-rilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,8 +149,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -196,7 +199,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzResource](./New-AzResource.md)
 
-[AzResourceGroup baru](./New-AzResourceGroup.md)
+[Baru-AzResourceGroup](./New-AzResourceGroup.md)
 
 [New-AzResourceGroupDeployment](./New-AzResourceGroupDeployment.md)
 

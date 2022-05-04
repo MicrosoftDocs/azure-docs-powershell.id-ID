@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 4fe2a98b8310c98f629421242c2f91a4dee9ff49
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f14ed63605b6548f32b0e0ada4a1b10628c25d4e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143061203"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144710914"
 ---
 # Set-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Memperbarui gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -Asn 1337
 ```
 
 Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual yang disimpan dalam variabel $Gateway.
-Perintah juga mengatur ASN ke 1337.
+Perintah ini juga mengatur ASN ke 1337.
 
 ### Contoh 2: Menambahkan kebijakan IPsec ke gateway jaringan virtual
 ```powershell
@@ -75,9 +78,9 @@ $vpnclientipsecpolicy = New-AzVpnClientIpsecPolicy -IpsecEncryption AES256 -Ipse
 $gateway = Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -VpnClientIpsecPolicy $vpnclientipsecpolicy
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua membuat objek kebijakan ipsec Vpn sesuai parameter ipsec tertentu.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua membuat objek kebijakan Ipsec Vpn sesuai parameter ipsec yang ditentukan.
 Perintah ketiga memperbarui gateway jaringan virtual yang disimpan dalam variabel $Gateway.
-Perintah ini juga mengatur kebijakan ipsec vpn kustom yang ditentukan dalam objek $vpnclientipsecpolicy di gateway jaringan virtual.
+Perintah ini juga mengatur kebijakan ipsec vpn kustom yang ditentukan dalam objek $vpnclientipsecpolicy di Gateway jaringan virtual.
 
 ### Contoh 3: Menambahkan/Memperbarui Tag ke gateway jaringan virtual yang sudah ada
 ```powershell
@@ -131,9 +134,9 @@ BgpSettings            : {
                          }
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual Gateway01 dengan tag @{ testtagKey="SomeTagKey"; testtagValue="SomeKeyValue" }.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual Gateway01 dengan tag @{ testtagKey="SomeTagKey"; testtagValue="SomeKeyValue" }.
 
-### Contoh 4: Tambahkan/Perbarui konfigurasi autentikasi AAD untuk VpnClient gateway jaringan virtual yang sudah ada
+### Contoh 4: Menambahkan/Memperbarui konfigurasi autentikasi AAD untuk VpnClient dari gateway jaringan virtual yang ada
 ```powershell
 $Gateway = Get-AzVirtualNetworkGateway -ResourceGroupName "ResourceGroup001" -Name "Gateway001"
 Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -AadTenantUri "https://login.microsoftonline.com/0ab2c4f4-81e6-44cc-a0b2-b3a47a1443f4" -AadIssuerUri "https://sts.windows.net/0ab2c4f4-81e6-44cc-a0b2-b3a47a1443f4/" -AadAudienceId "a21fce82-76af-45e6-8583-a08cb3b956f9"
@@ -203,10 +206,10 @@ BgpSettings            : {
 Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -VpnClientRootCertificates $rootCert -RemoveAadAuthentication
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual Gateway01 dengan param konfigurasi autentikasi AAD:aadTenantUri, aadAudienceId, aadIssuerUri untuk VpnClient.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual Gateway01 dengan parameter konfigurasi autentikasi AAD:aadTenantUri, aadAudienceId, aadIssuerUri untuk VpnClient.
 Perintah ketiga menghapus konfigurasi autentikasi AAD dari VpnClient gateway jaringan virtual.
 
-### Contoh 5: Add/Update IpConfigurationBgpPeeringAddresses ke gateway jaringan virtual yang sudah ada
+### Contoh 5: Menambahkan/Memperbarui IpConfigurationBgpPeeringAddresses ke gateway jaringan virtual yang ada
 ```powershell
 $Gateway = Get-AzVirtualNetworkGateway -ResourceGroupName "ResourceGroup001" -Name "Gateway001"
 $ipconfigurationId1 = '/subscriptions/59ac12a6-f2b7-46d4-af3d-98ba9d9dbd92/resourceGroups/ResourceGroup001/providers/Microsoft.Network/virtualNetworkGateways/Gateway001/ipConfigurations/default'
@@ -270,12 +273,12 @@ BgpSettings            : {
                          }
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua menetapkan nilai gateway jaringan virtual Gateway01 IpConfiguration Id ke dalam variabel ipconfigurationId1.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua menetapkan nilai gateway jaringan virtual Gateway01 IpConfiguration Id ke dalam variabel ipconfigurationId1.
 Perintah ketiga menetapkan daftar alamat ke dalam daftar alamat1.
 Perintah keempat membuat objek PSIpConfigurationBgpPeeringAddress.
-Perintah kelima mengatur PSIpConfigurationBgpPeeringAddress baru ini ke IpConfigurationBgpPeeringAddresses dan memperbarui gateway.
+Perintah kelima mengatur PSIpConfigurationBgpPeeringAddress yang baru dibuat ini ke IpConfigurationBgpPeeringAddresses dan memperbarui gateway.
 
-### Contoh 6: Tambahkan/Perbarui NatRules ke gateway jaringan virtual yang sudah ada
+### Contoh 6: Menambahkan/Memperbarui NatRules ke gateway jaringan virtual yang ada
 ```powershell
 $Gateway = Get-AzVirtualNetworkGateway -ResourceGroupName "ResourceGroup001" -Name "Gateway001"
 $vngNatRules = $Gateway.NatRules
@@ -360,12 +363,12 @@ NatRules                        : [
 EnableBgpRouteTranslationForNat : True
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua menetapkan natrule yang sudah ada ke dalam variabel vngNatRules.
-Perintah ketiga menetapkan nilai yang baru dibuat PSVirtualNetworkGatewayNatRule object natrule ke dalam variable natRule.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua menetapkan natrule yang ada ke dalam variabel vngNatRules.
+Perintah ketiga menetapkan nilai objek PSVirtualNetworkGatewayNatRule yang baru dibuat ke dalam variabel natRule.
 Perintah keempat menambahkan objek PSVirtualNetworkGatewayNatRule ini ke dalam daftar vngNatRules.
-Perintah kelima mengatur PSVirtualNetworkGatewayNatRule baru ini ke NatRules gateway dan memperbarui gateway.
+Perintah kelima mengatur PSVirtualNetworkGatewayNatRule yang baru dibuat ini ke NatRules gateway dan perbarui gateway.
 
-### Contoh 7: Hapus beberapa VpnClientRootCertificates gateway jaringan virtual yang sudah ada
+### Contoh 7: Menghapus beberapa VpnClientRootCertificates yang kedaluwarsa dari gateway jaringan virtual yang ada
 ```powershell
 $Gateway=Get-Azvirtualnetworkgateway -ResourceGroupName "ResourceGroup001" -Name "Gateway001"
 
@@ -380,13 +383,13 @@ $Gateway1 = Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -VpnClie
 
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 milik grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua mendapatkan semua sertifikat akar di VirtualNetworkGateway dan menyimpannya ke variabel lain $rootCerts Perintah ketiga memperlihatkan total sert akar yang sudah ada di VirtualNetworkGateway. Perintah kelima & kelima mencetak sertifikat akar pada indeks terkait tersebut bagi pelanggan untuk melihat mana yang ingin mereka hapus.
-Perintah keenam menghapus sertifikat akar kedaluwarsa dengan menggunakan indeks tersebut misalnya di sini 1. Ulangi langkah yang sama untuk menghapus beberapa sertifikat yang kedaluwarsa dari variabel: $rootCerts Perintah ketujuh memperbarui VirtualNetworkGateway untuk mengatur sertifikat akar yang valid yaitu sertifikat yang ada dalam variabel: $rootCerts
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang termasuk dalam grup sumber daya ResourceGroup001 dan menyimpannya ke variabel bernama $Gateway Perintah kedua mendapatkan semua sertifikat akar di VirtualNetworkGateway dan menyimpannya ke variabel lain $rootCerts Perintah ketiga menunjukkan total sertifikat akar yang ada di VirtualNetworkGateway. Perintah kelima & kelima mencetak sertifikat akar pada indeks yang sesuai bagi pelanggan untuk melihat mana yang ingin mereka hapus.
+Perintah keenam menghapus sertifikat akar yang kedaluwarsa dengan menggunakan indeks tersebut misalnya di sini 1. Ulangi langkah yang sama untuk menghapus beberapa sertifikat kedaluwarsa dari variabel: $rootCerts Perintah ketujuh memperbarui VirtualNetworkGateway untuk mengatur sertifikat akar yang valid yaitu sertifikat yang ada dalam variabel: $rootCerts
 
 ## PARAMETERS
 
 ### -AadAudienceId
-Opsi autentikasi AAD P2S:AadAudienceId.
+P2S AAD opsi autentikasi:AadAudienceId.
 
 ```yaml
 Type: System.String
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -476,7 +479,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomRoute
-Rute kustom AddressPool yang ditentukan oleh pelanggan
+AddressPool rute kustom yang ditentukan oleh pelanggan
 
 ```yaml
 Type: System.String[]
@@ -506,7 +509,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableActiveActiveFeature
-Benderai untuk menonaktifkan fitur Aktif Aktif di gateway jaringan virtual
+Bendera untuk menonaktifkan fitur Aktif Aktif di gateway jaringan virtual
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -521,7 +524,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableActiveActiveFeature
-Benderai untuk mengaktifkan fitur Aktif Aktif di gateway jaringan virtual
+Bendera untuk mengaktifkan fitur Aktif Aktif pada gateway jaringan virtual
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -536,7 +539,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePrivateIpAddress
-Benderai untuk mengaktifkan fitur Aktif Aktif di gateway jaringan virtual
+Bendera untuk mengaktifkan fitur Aktif Aktif pada gateway jaringan virtual
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -551,7 +554,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayDefaultSite
-Situs default yang digunakan untuk membuat terowongan paksa.
+Situs default yang digunakan untuk penerowongan paksa.
 Jika situs default ditentukan, semua lalu lintas internet dari vnet gateway dirutekan ke situs tersebut.
 
 ```yaml
@@ -566,7 +569,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Gatewaysku
+### -GatewaySku
 SKU gateway jaringan virtual
 
 ```yaml
@@ -583,7 +586,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfigurationBgpPeeringAddresses
-BgpPeeringAddresses untuk gateway jaringan virtual bgpsettings.
+BgpPeeringAddresses untuk bgpsettings gateway jaringan virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpConfigurationBgpPeeringAddress[]
@@ -598,7 +601,7 @@ Accept wildcard characters: False
 ```
 
 ### -NatRule
-NatRules untuk gateway jaringan virtual.
+NatRules untuk Gateway jaringan virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayNatRule[]
@@ -613,7 +616,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerWeight
-Bobot ditambahkan ke rute yang dipelajari melalui BGP dari gateway jaringan virtual ini
+Bobot yang ditambahkan ke rute yang dipelajari melalui BGP dari gateway jaringan virtual ini
 
 ```yaml
 Type: System.Int32
@@ -703,7 +706,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGateway
-Objek gateway jaringan virtual ke modifikasi dasar nonaktif.
+Objek gateway jaringan virtual untuk modifikasi dasar nonaktif.
 Ini dapat diambil menggunakan Get-AzVirtualNetworkGateway
 
 ```yaml
@@ -719,7 +722,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnAuthenticationType
-Daftar tipe autentikasi klien P2S VPN.
+Daftar jenis autentikasi klien P2S VPN.
 
 ```yaml
 Type: System.String[]
@@ -735,7 +738,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientAddressPool
-Ruang alamat untuk mengalokasikan alamat IP klien VPN dari.
+Ruang alamat untuk mengalokasikan alamat IP klien VPN.
 Ini tidak boleh tumpang tindih dengan jaringan virtual atau rentang lokal.
 
 ```yaml
@@ -751,7 +754,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientIpsecPolicy
-Daftar kebijakan IPSec untuk protokol tunneling klien P2S VPN.
+Daftar kebijakan IPSec untuk protokol penerowongan klien P2S VPN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy[]
@@ -766,7 +769,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientProtocol
-Daftar protokol tunneling klien P2S VPN
+Daftar protokol penerowongan klien P2S VPN
 
 ```yaml
 Type: System.String[]
@@ -783,7 +786,7 @@ Accept wildcard characters: False
 
 ### -VpnClientRevokedCertificates
 Daftar sertifikat klien VPN yang dicabut.
-Klien VPN yang menyajikan sertifikat yang cocok dengan salah satu hal ini akan disuruh untuk pergi.
+Klien VPN yang menyajikan sertifikat yang cocok dengan salah satu dari ini akan diberitahu untuk pergi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate[]
@@ -798,8 +801,8 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRootCertificates
-Daftar sertifikat akar klien VPN untuk digunakan untuk autentikasi klien VPN.
-Menghubungkan klien VPN harus menyajikan sertifikat yang dihasilkan dari salah satu sertifikat akar ini.
+Daftar sertifikat akar klien VPN yang akan digunakan untuk autentikasi klien VPN.
+Menghubungkan klien VPN harus menunjukkan sertifikat yang dihasilkan dari salah satu sertifikat akar ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate[]
@@ -813,8 +816,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -829,7 +832,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -845,7 +848,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

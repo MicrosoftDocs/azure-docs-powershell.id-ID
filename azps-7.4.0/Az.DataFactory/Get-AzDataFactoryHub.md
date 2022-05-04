@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryHub.md
-ms.openlocfilehash: 0e5273252ed053148852d97a78e9fc795e06e0f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e49ed10289a3a65e072739e22e9737fc0c679071
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749502"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144641022"
 ---
 # Get-AzDataFactoryHub
 
 ## SYNOPSIS
 Mendapatkan informasi tentang hub di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,24 +37,24 @@ Get-AzDataFactoryHub [[-Name] <String>] [-DataFactory] <PSDataFactory>
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataFactoryHub** mendapatkan informasi tentang hub di Azure Data Factory.
-Jika Anda menentukan nama hub, cmdlet ini akan mendapatkan informasi tentang hub tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua hub dalam pabrik data.
+Jika Anda menentukan nama hub, cmdlet ini mendapatkan informasi tentang hub tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua hub di pabrik data.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua hub data
+### Contoh 1: Mendapatkan semua hub data
 ```powershell
 Get-AzDataFactoryHub -ResourceGroupName "ADFResourceGroup" -DataFactoryName "ADFDataFactory"
 ```
 
-Perintah ini mendapatkan semua hub data dalam grup sumber daya Azure bernama ADFResourceGroup dan pabrik data bernama ADFDataFactory.
+Perintah ini mendapatkan semua hub data di grup sumber daya Azure bernama ADFResourceGroup dan pabrik data bernama ADFDataFactory.
 
 ### Contoh 2: Mendapatkan hub data tertentu
 ```powershell
 Get-AzDataFactoryHub -ResourceGroupName "ADFResourceGroup" -DataFactoryName "ADFDataFactory" -Name "MyDataHub"
 ```
 
-Perintah ini mendapatkan informasi tentang hub bernama MyDataHub dalam grup sumber daya Azure bernama ADFResourceGroup dan pabrik data bernama ADFDataFactory.
+Perintah ini mendapatkan informasi tentang hub bernama MyDataHub di grup sumber daya Azure bernama ADFResourceGroup dan pabrik data bernama ADFDataFactory.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama hub yang akan mendapatkan informasi.
 
 ```yaml
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -147,7 +150,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSHub
 
 ## NOTES
-* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
+* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

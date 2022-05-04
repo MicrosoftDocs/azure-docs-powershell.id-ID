@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayIPConfiguration.md
-ms.openlocfilehash: c0f83997b09cafbc35ba2c9aa95b4cce15a78414
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b7aadf9704e71ad865b0de8c17e746f3ef6b63ed
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142870696"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638234"
 ---
 # Set-AzApplicationGatewayIPConfiguration
 
 ## SYNOPSIS
-Mengubah konfigurasi IP untuk gateway aplikasi.
+Memodifikasi konfigurasi IP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Set-AzApplicationGatewayIPConfiguration -ApplicationGateway <PSApplicationGatewa
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayIPConfiguration** mengubah konfigurasi IP.
-Konfigurasi IP berisi subnet tempat gateway aplikasi digunakan.
+Cmdlet **Set-AzApplicationGatewayIPConfiguration memodifikasi** konfigurasi IP.
+Konfigurasi IP berisi subnet tempat gateway aplikasi disebarkan.
 
 ## EXAMPLES
 
@@ -49,12 +52,12 @@ $AppGw = Set-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw -Nam
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $VNet.
 Perintah kedua mendapatkan konfigurasi subnet bernama Subnet01 menggunakan $VNet dan menyimpannya dalam variabel $Subnet.
 Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah keempat mengatur konfigurasi IP gateway aplikasi yang disimpan di $AppGw ke konfigurasi subnet yang disimpan di $Subnet.
+Perintah forth mengatur konfigurasi IP gateway aplikasi yang disimpan di $AppGw ke konfigurasi subnet yang disimpan di $Subnet.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi tempat cmdlet ini mengaitkan konfigurasi IP.
+Menentukan objek gateway aplikasi yang cmdlet ini mengaitkan konfigurasi IP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama konfigurasi IP.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -Subnet
 Menentukan subnet.
-Ini adalah subnet tempat gateway aplikasi digunakan.
+Ini adalah subnet tempat gateway aplikasi disebarkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -SubnetId
 Menentukan ID subnet.
-Ini adalah subnet tempat gateway aplikasi digunakan.
+Ini adalah subnet tempat gateway aplikasi disebarkan.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

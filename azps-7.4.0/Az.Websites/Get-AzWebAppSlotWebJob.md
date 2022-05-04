@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotWebJob.md
-ms.openlocfilehash: afa3d3a58cf7c35a6de07272301192caa94839bf
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 066bb5997065731d0a04651c96d98668fdf690a7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143169929"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726766"
 ---
 # Get-AzWebAppSlotWebJob
 
 ## SYNOPSIS
-Daftar webjobs untuk slot penyebaran.
+Mencantumkan webjobs untuk slot penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappslotwebjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzWebAppSlotWebJob -AppName <String> -ResourceGroupName <String> -SlotName <
 ```
 
 ## DESCRIPTION
-Daftar webjobs untuk slot penyebaran.
+Mencantumkan webjobs untuk slot penyebaran.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar webjobs untuk slot penyebaran
+### Contoh 1: Mencantumkan webjobs untuk slot penyebaran
 ```powershell
 PS C:\> Get-AzWebAppSlotWebJob -ResourceGroupName webjob-rg-test -AppName appService-test01 -SlotName slot01
 
@@ -41,7 +44,7 @@ appService-test01/slot01/slotcontinuousjob-03                 webjob-rg-test
 appService-test01/slot01/slotcontinuousjob-04                 webjob-rg-test
 ```
 
-Perintah ini mencantumkan webjob untuk slot penyebaran.
+Perintah ini mencantumkan webjobs untuk slot penyebaran.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String[]
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

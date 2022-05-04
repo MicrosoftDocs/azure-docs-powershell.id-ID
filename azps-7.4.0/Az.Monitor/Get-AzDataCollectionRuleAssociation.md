@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: ce4de6db2876362db44ae4c51a2baee0d95c0d65
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e3f9d24d7f92778aa833355619eac4d7eeaed968
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142940159"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144638594"
 ---
 # Get-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
-Mendapatkan kaitan aturan pengumpulan data.
+Mendapatkan asosiasi aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdatacollectionruleassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,11 +59,11 @@ Get-AzDataCollectionRuleAssociation
 ## DESCRIPTION
 Cmdlet **Get-AzDataCollectionRuleAssociation** mendapatkan satu atau beberapa asosiasi aturan pengumpulan data (DCRA).
 
-Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki hubungan dengan beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan sekumpulan DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya ke mesin virtual tempatnya diterapkan. Berikut adalah [artikel "Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
+Untuk menerapkan DCR ke komputer virtual, Anda membuat asosiasi untuk komputer virtual. Komputer virtual mungkin memiliki asosiasi ke beberapa DCR, dan DCR mungkin memiliki beberapa komputer virtual yang terkait dengannya. Ini memungkinkan Anda untuk mendefinisikan satu set DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya untuk komputer virtual yang menerapkannya. Berikut adalah artikel ["Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kaitan aturan pengumpulan data menurut ID sumber daya target (mesin virtual terkait)
+### Contoh 1: Mendapatkan asosiasi aturan pengumpulan data berdasarkan ID sumber daya target (komputer virtual terkait)
 ```powershell
 $vm = Get-AzVM -ResourceGroupName $rg -Name $vmName
 Get-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id
@@ -78,9 +81,9 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan semua aturan pengumpulan data untuk ID sumber daya target (mesin virtual) tertentu.
+Perintah ini mencantumkan semua aturan pengumpulan data untuk ID sumber daya target (komputer virtual) yang diberikan.
 
-### Contoh 2: Dapatkan kaitan aturan pengumpulan data menurut aturan (DCR)
+### Contoh 2: Mendapatkan asosiasi aturan pengumpulan data berdasarkan aturan (DCR)
 ```powershell
 Get-AzDataCollectionRuleAssociation -ResourceGroup $rg -RuleName $dcrName
 ```
@@ -97,9 +100,9 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan kaitan aturan pengumpulan data untuk grup dan aturan sumber daya (DCR) tertentu.
+Perintah ini mencantumkan asosiasi aturan pengumpulan data untuk grup sumber daya dan aturan (DCR) yang diberikan.
 
-### Contoh 3: Dapatkan kaitan aturan pengumpulan data menurut objek input (PSDataCollectionRuleResource)
+### Contoh 3: Mendapatkan asosiasi aturan pengumpulan data berdasarkan objek input (PSDataCollectionRuleResource)
 ```powershell
 $dcr = Get-AzDataCollectionRule -ResourceGroupName $rg -RuleName $dcrName
 $dcr | Get-AzDataCollectionRuleAssociation
@@ -117,9 +120,9 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan kaitan aturan pengumpulan data untuk objek input tertentu.
+Perintah ini mencantumkan asosiasi aturan pengumpulan data untuk objek input yang diberikan.
 
-### Contoh 4: Dapatkan kaitan aturan pengumpulan data menurut ID sumber daya target (mesin virtual terkait) dan nama asosiasi
+### Contoh 4: Mendapatkan asosiasi aturan pengumpulan data berdasarkan ID sumber daya target (komputer virtual terkait) dan nama asosiasi
 ```powershell
 Get-AzDataCollectionRuleAssociation -TargetResourceId $vm.Id -AssociationName $assocName
 ```
@@ -136,7 +139,7 @@ Name                 : {assocName}
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini mencantumkan satu (daftar dengan satu elemen) kaitan aturan pengumpulan data.
+Perintah ini mencantumkan satu (daftar dengan satu elemen) asosiasi aturan pengumpulan data.
 
 ## PARAMETERS
 
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

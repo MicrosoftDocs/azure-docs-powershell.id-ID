@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAlert.md
-ms.openlocfilehash: f89772e1ff1b6948243ca3c2259582c64250305f
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 64db763955cc8449d81eb9017ed1de7057fc9c9f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143309231"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144711418"
 ---
 # Get-AzSecurityAlert
 
 ## SYNOPSIS
 Mendapatkan pemberitahuan keamanan yang terdeteksi oleh Azure Security Center
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityalert) untuk informasi terbaru.
 
 ## SYNTAX
 

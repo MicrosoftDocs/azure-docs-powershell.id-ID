@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorLoadBalancingSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorLoadBalancingSettingObject.md
-ms.openlocfilehash: 2ff0adf68f06aeac47582d5ddc94d2d4664e786b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: fd9a39f8a16000018e4cf5eebabb84649af60f8a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142683928"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144726029"
 ---
 # New-AzFrontDoorLoadBalancingSettingObject
 
 ## SYNOPSIS
-Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
+Membuat objek PSLoadBalancingSetting untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorloadbalancingsettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzFrontDoorLoadBalancingSettingObject -Name <String> [-SampleSize <Int32>]
 ```
 
 ## DESCRIPTION
-Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
+Membuat objek PSLoadBalancingSetting untuk pembuatan Front Door
 
 ## EXAMPLES
 
@@ -45,12 +48,12 @@ Name                          : loadbalancingsetting1
 Type                          :
 ```
 
-Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
+Membuat objek PSLoadBalancingSetting untuk pembuatan Front Door
 
 ## PARAMETERS
 
 ### -AdditionalLatencyInMilliseconds
-Latensi tambahan dalam milidetik untuk probe jatuh ke dalam ember latensi terendah. Nilai defaultnya adalah 0
+Latensi tambahan dalam milidetik untuk pemeriksaan jatuh ke dalam wadah latensi terendah. Nilai defaultnya adalah 0
 
 ```yaml
 Type: System.Int32
@@ -79,7 +82,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 nama pengaturan pemeriksaan kesehatan.
 
 ```yaml
@@ -126,11 +129,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

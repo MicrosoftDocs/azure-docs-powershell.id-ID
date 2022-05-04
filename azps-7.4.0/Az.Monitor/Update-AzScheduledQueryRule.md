@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzScheduledQueryRule.md
-ms.openlocfilehash: 607a887a5d5ef05cfec3b2c13cc39f902150dbd3
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f64f2688ce9870e74d3759394a183f9304aa4ab7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143283239"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675718"
 ---
 # Update-AzScheduledQueryRule
 
 ## SYNOPSIS
 Memperbarui aturan Pemberitahuan Log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/update-azscheduledqueryrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 2: Perbarui menurut objek input
+### Contoh 2: Memperbarui menurut objek input
 ```powershell
 Update-AzScheduledQueryRule -InputObject $sqr -Enabled $false
 ```
