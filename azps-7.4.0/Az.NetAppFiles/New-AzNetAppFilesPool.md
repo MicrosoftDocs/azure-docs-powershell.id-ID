@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesPool.md
-ms.openlocfilehash: c142d456218369ccea4d858f7f7987f20aa721fa
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7d6d4dcdac283304e78af4a4d9ceb5dc6910ffe8
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142872568"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704172"
 ---
 # New-AzNetAppFilesPool
 
 ## SYNOPSIS
 Membuat kumpulan Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzNetAppFilesPool -Name <String> -PoolSize <Int64> -ServiceLevel <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNetAppFilesPool** membuat kolam renang ANF.
+Cmdlet **New-AzNetAppFilesPool** membuat kumpulan ANF.
 
 ## EXAMPLES
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Akun untuk objek pool baru
+Akun untuk objek kumpulan baru
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -CoolAccess
-Jika diaktifkan (true) kumpulan dapat berisi volume keren yang diaktifkan Access.
+Jika diaktifkan (true) kumpulan dapat berisi volume yang diaktifkan Access dingin.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionType
-Tipe enkripsi kumpulan kapasitas (Tunggal, Ganda), atur tipe enkripsi untuk data saat disimpan untuk kumpulan ini dan semua volume di dalamnya. Nilai ini hanya dapat diatur saat membuat kumpulan baru.
+Jenis enkripsi kumpulan kapasitas (Tunggal, Ganda), atur jenis enkripsi untuk data tidak aktif untuk kumpulan ini dan semua volume di dalamnya. Nilai ini hanya dapat diatur saat membuat kumpulan baru.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan ANF
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -QosType
-Jenis qos kolam renang. Nilai yang memungkinkan termasuk: 'Otomatis', 'Manual'
+Jenis qos kumpulan. Nilai yang mungkin termasuk: 'Otomatis', 'Manual'
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya
+Hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -242,8 +245,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

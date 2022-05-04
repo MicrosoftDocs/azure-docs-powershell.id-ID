@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Get-AzPolicyRemediation.md
-ms.openlocfilehash: 35ba29bf620f709e8d73d16980b25b7f2c86f926
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6fa3375129f455efc8267704582d104da1340ab2
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311679"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687662"
 ---
 # Get-AzPolicyRemediation
 
 ## SYNOPSIS
-Mendapatkan perbaikan kebijakan.
+Mendapatkan remediasi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.policyinsights/get-azpolicyremediation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,31 +60,31 @@ Get-AzPolicyRemediation -ResourceId <String> [-Top <Int32>] [-IncludeDetail]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPolicyRemediation** mendapatkan semua perbaikan kebijakan dalam lingkup atau perbaikan tertentu.
+Cmdlet **Get-AzPolicyRemediation** mendapatkan semua remediasi kebijakan dalam cakupan atau remediasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua perbaikan kebijakan dalam langganan saat ini
+### Contoh 1: Mendapatkan semua remediasi kebijakan dalam langganan saat ini
 ```powershell
 Select-AzSubscription -Subscription "My Subscription"
 Get-AzPolicyRemediation
 ```
 
-Perintah ini mendapatkan semua perbaikan yang dibuat di atau di bawah langganan bernama 'Langganan Saya'.
+Perintah ini mendapatkan semua remediasi yang dibuat di atau di bawah langganan bernama 'Langganan Saya'.
 
-### Contoh 2: Mendapatkan perbaikan kebijakan tertentu dan detail penyebaran
+### Contoh 2: Mendapatkan remediasi kebijakan tertentu dan detail penyebaran
 ```powershell
 Get-AzPolicyRemediation -ResourceGroupName "myResourceGroup" -Name "remediation1" -IncludeDetail
 ```
 
-Perintah ini mendapatkan perbaikan bernama 'remediation1' dari grup sumber daya 'myResourceGroup'. Detail sumber daya yang sedang dipulihkan akan disertakan.
+Perintah ini mendapatkan remediasi bernama 'remediation1' dari grup sumber daya 'myResourceGroup'. Detail sumber daya yang sedang diremadiasi akan disertakan.
 
-### Contoh 3: Dapatkan 10 perbaikan kebijakan dalam grup manajemen dengan filter opsional
+### Contoh 3: Mendapatkan 10 remediasi kebijakan dalam grup manajemen dengan filter opsional
 ```powershell
 Get-AzPolicyRemediation -ManagementGroupName "mg1" -Top 10 -Filter "PolicyAssignmentId eq '/providers/Microsoft.Management/managementGroups/mg1/providers/Microsoft.Authorization/policyAssignments/pa1'"
 ```
 
-Perintah ini mendapatkan maksimal 10 perbaikan kebijakan dari grup manajemen bernama 'mg1'. Hanya perbaikan kebijakan untuk penetapan kebijakan tertentu yang akan diambil.
+Perintah ini mendapatkan maksimal 10 remediasi kebijakan dari grup manajemen bernama 'mg1'. Hanya remediasi kebijakan untuk penetapan kebijakan yang diberikan yang akan diambil.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Memfilter ekspresi menggunakan notasi OData.
+Filter ekspresi menggunakan notasi OData.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDetail
-Sertakan detail penyebaran yang dibuat oleh perbaikan.
+Sertakan detail penyebaran yang dibuat oleh remediasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -214,8 +217,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Lingkup
-Lingkup sumber daya. Misalnya, '/subscriptions/{subscriptionId}/resourceGroups/{rgName}'.
+### -Cakupan
+Cakupan sumber daya. Misalnya, '/subscriptions/{subscriptionId}/resourceGroups/{rgName}'.
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Top
+### -Atas
 Jumlah maksimum rekaman yang akan dikembalikan.
 
 ```yaml
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicy.md
-ms.openlocfilehash: c05e7a6fc30a08a31a8ec1d29bc732d438c71b45
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 85e66500033b80ce6e72a40def29971556c49372
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142938881"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695054"
 ---
 # New-AzFirewallPolicy
 
 ## SYNOPSIS
 Membuat Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzFirewallPolicy -Name <String> -ResourceGroupName <String> -Location <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicy** menciptakan Kebijakan Azure Firewall.
+Cmdlet **New-AzFirewallPolicy** membuat Kebijakan Azure Firewall.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ New-AzFirewallPolicy -Name fp1 -ResourceGroupName TestRg
 
 Contoh ini membuat kebijakan firewall azure
 
-### Contoh 2: Membuat kebijakan kosong dengan ThreatIntel Mode
+### Contoh 2: Membuat kebijakan kosong dengan Mode ThreatIntel
 ```powershell
 New-AzFirewallPolicy -Name fp1 -ResourceGroupName TestRg -ThreatIntelMode "Deny"
 ```
 
 Contoh ini membuat kebijakan firewall azure dengan mode intel ancaman
 
-### Contoh 3: Buat kebijakan kosong dengan ThreatIntel Whitelist
+### Contoh 3: Membuat kebijakan kosong dengan Daftar Putih ThreatIntel
 ```powershell
 $threatIntelWhitelist = New-AzFirewallPolicyThreatIntelWhitelist -IpAddress 23.46.72.91,192.79.236.79 -FQDN microsoft.com
 New-AzFirewallPolicy -Name fp1 -ResourceGroupName TestRg -ThreatIntelWhitelist $threatIntelWhitelist
@@ -56,7 +59,7 @@ New-AzFirewallPolicy -Name fp1 -ResourceGroupName TestRg -ThreatIntelWhitelist $
 
 Contoh ini membuat kebijakan firewall azure dengan daftar putih intel ancaman
 
-### Contoh 4: Membuat kebijakan dengan deteksi intrusi, identitas dan keamanan transportasi
+### Contoh 4: Membuat kebijakan dengan deteksi intrusi, identitas, dan keamanan transportasi
 ```powershell
 $bypass = New-AzFirewallPolicyIntrusionDetectionBypassTraffic -Name "bypass-setting" -Protocol "TCP" -DestinationPort "80" -SourceAddress "10.0.0.0" -DestinationAddress
 $signatureOverride = New-AzFirewallPolicyIntrusionDetectionSignatureOverride -Id "123456798" -Mode "Deny"
@@ -65,19 +68,19 @@ $userAssignedIdentity = '/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/res
 New-AzFirewallPolicy -Name fp1 -Location "westus2" -ResourceGroup TestRg -SkuTier "Premium" -IntrusionDetection $intrusionDetection -TransportSecurityName tsName -TransportSecurityKeyVaultSecretId "https://<keyvaultname>.vault.azure.net/secrets/cacert"  -UserAssignedIdentityId $userAssignedIdentity
 ```
 
-Contoh ini membuat kebijakan firewall azure dengan deteksi intrusi dalam pemberitahuan mode, identitas yang ditetapkan pengguna dan keamanan transportasi
+Contoh ini membuat kebijakan firewall azure dengan deteksi intrusi dalam pemberitahuan mode, identitas yang ditetapkan pengguna, dan keamanan transportasi
 
-### Contoh 5: Membuat Kebijakan Firewall kosong dengan penyetelan rentang privat yang dikustomisasi
+### Contoh 5: Membuat Kebijakan Firewall kosong dengan penyiapan rentang privat yang disesuaikan
 ```powershell
 New-AzFirewallPolicy -Name fp1 -ResourceGroupName TestRg -PrivateRange @("99.99.99.0/24", "66.66.0.0/16")
 ```
 
-Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip pribadi dan tidak akan menyaring lalu lintas ke alamat tersebut
+Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip privat dan tidak akan menaikkan lalu lintas ke alamat tersebut
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -BasePolicy
-Kebijakan dasar untuk mewarisi
+Kebijakan dasar untuk mewarisi dari
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Identitas
-Identitas Kebijakan Firewall untuk ditetapkan ke Kebijakan Firewall.
+Identitas Kebijakan Firewall yang akan ditetapkan ke Kebijakan Firewall.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSManagedServiceIdentity
@@ -196,7 +199,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateRange
-Rentang IP pribadi tempat lalu lintas tidak akan di-SNAT'ed
+Rentang IP privat tempat lalu lintas tidak akan diberi SNAT
 
 ```yaml
 Type: System.String[]
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlSetting
-Pengaturan SQL terkait
+Pengaturan terkait SQL
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicySqlSetting
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Sebuah hashtable yang mewakili tag sumber daya.
+Hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatIntelMode
-Mode operasi untuk Threat Intelligence.
+Mode operasi untuk Inteligensi Ancaman.
 
 ```yaml
 Type: System.String
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThreatIntelWhitelist
-Daftar putih untuk Threat Intelligence
+Daftar putih untuk Inteligensi Ancaman
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyThreatIntelWhitelist
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -TransportSecurityKeyVaultSecretId
-Secret Id of (base-64 encoded unencrypted pfx) 'Secret' atau 'Certificate' object stored in KeyVault
+Id Rahasia (base-64 encoded unencrypted pfx) 'Secret' atau objek 'Certificate' yang disimpan di KeyVault
 
 ```yaml
 Type: System.String
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentityId
-ResourceId dari identitas pengguna yang ditetapkan untuk ditetapkan ke Kebijakan Firewall.
+ResourceId dari identitas yang ditetapkan pengguna untuk ditetapkan ke Kebijakan Firewall.
 
 ```yaml
 Type: System.String
@@ -363,8 +366,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -379,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -395,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

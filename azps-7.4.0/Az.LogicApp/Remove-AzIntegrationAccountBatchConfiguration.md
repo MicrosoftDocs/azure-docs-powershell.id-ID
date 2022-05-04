@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountBatchConfiguration.md
-ms.openlocfilehash: f80335926b1a43e9fc2108f66990763a0d17bb13
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36a639a0a6ba2c997aac4efac157c46763572e22
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808002"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704298"
 ---
 # Remove-AzIntegrationAccountBatchConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi kumpulan akun integrasi.
+Menghapus konfigurasi batch akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountbatchconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,16 +41,16 @@ Remove-AzIntegrationAccountBatchConfiguration -ResourceId <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzIntegrationAccountBatchConfiguration** menghapus konfigurasi kumpulan dari akun integrasi.
+Cmdlet **Remove-AzIntegrationAccountBatchConfiguration** menghapus konfigurasi batch dari akun integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi kumpulan menurut parameter
+### Contoh 1: Menghapus konfigurasi batch menurut parameter
 ```powershell
 Remove-AzIntegrationAccountBatchConfiguration -ResourceGroupName "sampleResourceGroup" -IntegrationAccountName "sampleIntegrationAccount" -BatchConfigurationName "sampleBatchConfig"
 ```
 
-Menghapus konfigurasi kumpulan bernama "sampleBatchConfig" yang terletak di akun integrasi "sampleIntegrationAccount".
+Menghapus konfigurasi batch bernama "sampleBatchConfig" yang terletak di akun integrasi "sampleIntegrationAccount".
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Konfigurasi kumpulan akun integrasi.
+Konfigurasi batch akun integrasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.LogicApp.Models.PSIntegrationAccountBatchConfiguration
@@ -81,8 +84,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama konfigurasi kumpulan akun integrasi.
+### -Name
+Nama konfigurasi batch akun integrasi.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya konfigurasi kumpulan akun integrasi.
+Id sumber daya konfigurasi batch akun integrasi.
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

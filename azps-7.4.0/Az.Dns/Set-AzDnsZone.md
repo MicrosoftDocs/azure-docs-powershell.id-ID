@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/set-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsZone.md
-ms.openlocfilehash: 4145d505d12a9529025c0ebd9f0ff5c8e021a8c9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 75cba47fb16acf0daad34df9cdc2002cb9f04c82
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142809100"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664846"
 ---
 # Set-AzDnsZone
 
 ## SYNOPSIS
 Memperbarui properti zona DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/set-azdnszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,11 +46,11 @@ Set-AzDnsZone -Zone <DnsZone> [-Overwrite] [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDnsZone** memperbarui zona DNS tertentu di layanan DNS Azure.
-Cmdlet ini tidak memperbarui kumpulan catatan dalam zona.
-Anda bisa melewati objek **DnsZone** sebagai parameter atau dengan menggunakan operator pipeline, atau anda bisa menentukan parameter *ZoneName* dan *ResourceGroupName* .
-Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
-Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui pipeline), zona DNS tidak diperbarui jika telah diubah di AZURE DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
+Cmdlet **Set-AzDnsZone** memperbarui zona DNS yang ditentukan di layanan Azure DNS.
+Cmdlet ini tidak memperbarui kumpulan catatan di zona tersebut.
+Anda dapat meneruskan objek **DnsZone** sebagai parameter atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter *ZoneName* dan *ResourceGroupName* .
+Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui alur), zona tersebut tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Set-AzDnsZone -Zone $Zone
 
 Perintah pertama mendapatkan zona bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone.
 Perintah kedua memperbarui tag untuk $Zone.
-Perintah terakhir melakukan perubahan.
+Perintah akhir melakukan perubahan.
 
 ### Contoh 2: Memperbarui tag untuk zona
 ```powershell
@@ -69,21 +72,21 @@ Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myzone.com" -Tag @(@{"
 
 Perintah ini memperbarui tag untuk zona bernama myzone.com tanpa terlebih dahulu secara eksplisit mendapatkan zona.
 
-### Contoh 3: Mengasosiasikan zona privat dengan jaringan virtual dengan menentukan ID-nya
+### Contoh 3: Mengaitkan zona privat dengan jaringan virtual dengan menentukan ID-nya
 ```powershell
 $vnet = Get-AzVirtualNetwork -ResourceGroupName "MyResourceGroup" -Name "myvnet"
 Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myprivatezone.com" -RegistrationVirtualNetworkId @($vnet.Id)
 ```
 
-Perintah ini mengaitkan zona DNS Pribadi myprivatezone.com dengan myvnet jaringan virtual sebagai jaringan registrasi dengan menentukan ID-nya.
+Perintah ini mengaitkan zona DNS Privat myprivatezone.com dengan jaringan virtual myvnet sebagai jaringan pendaftaran dengan menentukan ID-nya.
 
-### Contoh 4: Mengasosiasikan zona privat dengan jaringan virtual dengan menentukan objek jaringan.
+### Contoh 4: Mengaitkan zona privat dengan jaringan virtual dengan menentukan objek jaringan.
 ```powershell
 $vnet = Get-AzVirtualNetwork -ResourceGroupName "MyResourceGroup" -Name "myvnet"
 Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myprivatezone.com" -RegistrationVirtualNetwork @($vnet)
 ```
 
-Perintah ini mengaitkan zona DNS Pribadi myprivatezone.com dengan myvnet jaringan virtual sebagai jaringan registrasi dengan meneruskan objek jaringan virtual yang diwakili oleh variabel $vnet ke cmdlet Set-AzDnsZone.
+Perintah ini mengaitkan zona DNS Privat myprivatezone.com dengan jaringan virtual myvnet sebagai jaringan pendaftaran dengan meneruskan objek jaringan virtual yang diwakili oleh variabel $vnet ke cmdlet Set-AzDnsZone.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama zona DNS yang akan diperbarui.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui pipeline), zona DNS tidak diperbarui jika telah diubah di AZURE DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
+Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui alur), zona tersebut tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationVirtualNetwork
-Daftar jaringan virtual yang akan mendaftarkan catatan hostname mesin virtual di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar jaringan virtual yang akan mendaftarkan catatan nama host komputer virtual di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference]
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationVirtualNetworkId
-Daftar ID jaringan virtual yang akan mendaftarkan catatan nama host mesin virtual di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar ID jaringan virtual yang akan mendaftarkan catatan nama host komputer virtual di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetwork
-Daftar jaringan virtual yang bisa mengatasi catatan di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar jaringan virtual dapat menyelesaikan rekaman di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference]
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetworkId
-Daftar ID jaringan virtual dapat mengatasi catatan di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar ID jaringan virtual dapat mengatasi rekaman di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -193,9 +196,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi zona untuk diperbarui.
+Menentukan nama grup sumber daya yang berisi zona yang akan diperbarui.
 Anda juga harus menentukan parameter ZoneName.
-Atau, Anda dapat menentukan zona menggunakan objek DnsZone dengan parameter *Zona* atau pipeline.
+Atau, Anda dapat menentukan zona menggunakan objek DnsZone dengan parameter *Zona* atau alur.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+Pasangan kunci-nilai dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Menentukan zona DNS untuk diperbarui.
+Menentukan zona DNS yang akan diperbarui.
 Atau, Anda dapat menentukan zona menggunakan parameter *ZoneName* dan *ResourceGroupName* .
 
 ```yaml
@@ -240,8 +243,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan. Menunjukkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -290,10 +293,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Dns.DnsZone
 
 ## NOTES
-Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet meminta Konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
-Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
+Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi kepada Anda.
+Secara default, cmdlet meminta konfirmasi kepada Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Jika Anda menentukan *Confirm:$False*, cmdlet tidak meminta konfirmasi kepada Anda.
 
 ## RELATED LINKS
 

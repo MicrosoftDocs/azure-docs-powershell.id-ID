@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningService.md
-ms.openlocfilehash: 44bb410702e59e6e1b194e866fc31dc2436c057d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5f0acfbe2cc567c31c8920bf4099e4134fcd6fd4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143123507"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695504"
 ---
 # Remove-AzIoTDeviceProvisioningService
 
 ## SYNOPSIS
-Menghapus layanan penyediaan perangkat Azure IoT Hub.
+Menghapus layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/remove-aziotdeviceprovisioningservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzIoTDeviceProvisioningService [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Device Provisioning Service, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -51,14 +54,14 @@ Remove-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup" -Name
 True
 ```
 
-Hapus layanan penyediaan perangkat Azure IoT Hub 'myiotdps'.
+Hapus layanan provisi perangkat Azure IoT Hub 'myiotdps'.
 
 ### Contoh 2
 ```powershell
 Get-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup" -Name "myiotdps" | Remove-AzIoTDeviceProvisioningService
 ```
 
-Hapus layanan penyediaan perangkat Azure IoT Hub 'myiotdps' menggunakan pipeline.
+Menghapus layanan provisi perangkat Azure IoT Hub 'myiotdps' menggunakan alur.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Layanan Penyediaan Perangkat IoT
+Objek IoT Device Provisioning Service
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
@@ -92,8 +95,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Penyediaan Perangkat IoT
+### -Name
+Nama IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat IoT
+Id Sumber Daya IoT Device Provisioning Service
 
 ```yaml
 Type: System.String
@@ -152,8 +155,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

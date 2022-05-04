@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpPrefix.md
-ms.openlocfilehash: 4f46812bb5283ff9c43e7214d5186d6dc31c80ef
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: eaacdb0b5b99116760fe77a37eae10c11fe0c2ec
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142804168"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665782"
 ---
 # Set-AzPublicIpPrefix
 
 ## SYNOPSIS
 Mengatur Tag untuk PublicIpPrefix yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azpublicipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzPublicIpPrefix -PublicIpPrefix <PSPublicIpPrefix> [-AsJob] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzPublicIpPrefix** mengatur Tag untuk prefiks IP publik.
+Cmdlet **Set-AzPublicIpPrefix** mengatur Tag untuk awalan IP publik.
 
 ## EXAMPLES
 
@@ -38,12 +41,12 @@ $publicIpPrefix.Tags = "TestTag"
 Set-AzPublicIpPrefix -PublicIpPrefix $publicIpPrefix
 ```
 
-Perintah pertama mendapatkan Prefiks IP publik yang sudah ada, perintah kedua mengatur Properti Tag dan perintah ketiga memperbarui objek yang sudah ada.
+Perintah pertama mendapatkan Awalan IP publik yang ada, perintah kedua mengatur Properti Tag dan perintah ketiga memperbarui objek yang ada.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,8 +90,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

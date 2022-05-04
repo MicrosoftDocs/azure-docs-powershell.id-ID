@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoor.md
-ms.openlocfilehash: 6b9ca975116b5af4ee528619dc58465fd7e7cb35
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 41d15fd3d5ac3c9df1fcddca83a506ea186ddd42
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142684018"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144688004"
 ---
 # New-AzFrontDoor
 
 ## SYNOPSIS
-Membuat penyeimbang muat Azure Front Door baru
+Membuat load balancer Azure Front Door baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,11 +41,11 @@ New-AzFrontDoor -ResourceGroupName <String> -Name <String> -RoutingRule <PSRouti
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFrontDoor** membuat penyeimbang muatan Azure Front Door baru dalam grup sumber daya tertentu di bawah langganan saat ini
+Cmdlet **New-AzFrontDoor** membuat load balancer Azure Front Door baru di grup sumber daya yang ditentukan di bawah langganan saat ini
 
 ## EXAMPLES
 
-### Contoh 1: Buat Pintu Depan berdasarkan parameter tertentu.
+### Contoh 1: Buat Front Door berdasarkan parameter tertentu.
 ```powershell
 New-AzFrontDoor -Name "frontDoor1" -ResourceGroupName "rg1" -RoutingRule $routingrule1 -BackendPool $backendpool1 -FrontendEndpoint $frontendEndpoint1 -LoadBalancingSetting $loadBalancingSetting1 -HealthProbeSetting $healthProbeSetting1 -BackendPoolsSetting $backendPoolsSetting1
 ```
@@ -66,7 +69,7 @@ Name                        : frontdoor1
 Type                        : Microsoft.Network/frontdoors
 ```
 
-Buat Pintu Depan berdasarkan parameter tertentu.
+Buat Front Door berdasarkan parameter yang diberikan.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolsSetting
-Pengaturan untuk semua backendPool
+Pengaturan untuk semua backendPools
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackendPoolsSetting
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableCertificateNameCheck
-Apakah menonaktifkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend. Tidak berpengaruh pada permintaan non-HTTPS.
+Apakah akan menonaktifkan pemeriksaan nama sertifikat pada permintaan HTTPS ke semua kumpulan backend. Tidak berpengaruh pada permintaan non-HTTPS.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-EnabledState dari penyeimbang muat Pintu Depan.
+EnabledState dari load balancer Front Door.
 Nilai default diaktifkan
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeSetting
-Pengaturan pemeriksaan kesehatan yang terkait dengan instans Pintu Depan ini.
+Pengaturan pemeriksaan kesehatan yang terkait dengan instans Front Door ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSHealthProbeSetting[]
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSetting
-Pengaturan keseimbangan muat yang terkait dengan instans Pintu Depan ini.
+Pengaturan penyeimbangan beban yang terkait dengan instans Front Door ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSLoadBalancingSetting[]
@@ -192,8 +195,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Pintu Depan.
+### -Name
+Nama Front Door.
 
 ```yaml
 Type: System.String
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat Pintu Depan akan dibuat.
+Nama grup sumber daya tempat Front Door akan dibuat.
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PeruteanRule
+### -RoutingRule
 Aturan perutean yang terkait dengan FrontDoor ini
 
 ```yaml
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag terkait dengan FrontDoor.
+Tag yang terkait dengan FrontDoor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -252,8 +255,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -284,11 +287,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor

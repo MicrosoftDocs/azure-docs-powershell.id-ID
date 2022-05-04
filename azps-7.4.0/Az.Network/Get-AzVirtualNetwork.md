@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetwork.md
-ms.openlocfilehash: 798162257f009b92cbfcbb87d1ffdbbe811aaf27
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 285db016040a5fc9df2733d7e25882be8429a917
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142939223"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703992"
 ---
-# Get-AzVirtualNetwork
+# Pulihkan-AzSqlDatabase
 
 ## SYNOPSIS
 Mendapatkan jaringan virtual dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzVirtualNetwork [-Name <String>] [-ResourceGroupName <String>] [-DefaultPro
  [<CommonParameters>]
 ```
 
-### Memperluas
+### Perluas
 ```
 Get-AzVirtualNetwork -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -65,7 +68,7 @@ EnableDdosProtection   : false
 DdosProtectionPlan     : null
 ```
 
-Perintah ini mendapatkan jaringan virtual bernama MyVirtualNetwork dalam grup sumber daya TestResourceGroup
+Perintah ini mendapatkan jaringan virtual bernama MyVirtualNetwork di grup sumber daya TestResourceGroup
 
 ### Contoh 2: Mencantumkan jaringan virtual menggunakan filter
 ```powershell
@@ -127,7 +130,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama jaringan virtual yang didapat cmdlet ini.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat jaringan maya berada.
+Menentukan nama grup sumber daya tempat jaringan virtual berada.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

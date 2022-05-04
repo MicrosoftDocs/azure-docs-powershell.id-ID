@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdWorkspace.md
-ms.openlocfilehash: 2f32a3232942cbf46b476345e50dc95717e92c30
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8a4922fe7a591b294e20747068a47261a91ea9de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143002475"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713002"
 ---
 # Get-AzWvdWorkspace
 
 ## SYNOPSIS
 Dapatkan ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Dapatkan ruang kerja.
 Get-AzWvdWorkspace [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Mendapatkan
+### Dapatkan
 ```
 Get-AzWvdWorkspace -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -47,7 +50,7 @@ Dapatkan ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Windows Ruang Kerja Desktop Virtual berdasarkan nama
+### Contoh 1: Mendapatkan Windows Virtual Desktop Workspace berdasarkan nama
 ```powershell
 Get-AzWvdWorkspace -ResourceGroupName ResourceGroupName -Name WorkspaceName
 ```
@@ -58,9 +61,9 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini mendapatkan Windows Ruang Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini mendapatkan Windows Virtual Desktop Workspace dalam Grup Sumber Daya.
 
-### Contoh 2: Daftar Windows Ruang Kerja Desktop Virtual
+### Contoh 2: Mencantumkan Windows Ruang Kerja Virtual Desktop
 ```powershell
 Get-AzWvdWorkspace -ResourceGroupName ResourceGroupName
 ```
@@ -72,7 +75,7 @@ eastus     WorkspaceName1 Microsoft.DesktopVirtualization/workspaces
 eastus     WorkspaceName2 Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini mencantumkan Windows Ruang Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini mencantumkan Windows Virtual Desktop Workspaces dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama ruang kerja
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -178,9 +181,9 @@ INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
-  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan

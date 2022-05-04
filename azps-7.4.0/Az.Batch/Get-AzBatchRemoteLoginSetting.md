@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteLoginSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteLoginSetting.md
-ms.openlocfilehash: c91222f5e1dede1658a9817baaa50daf536d979e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 535d65bfeaa01c0c992ecdcc8370b377a12b1bee
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142750690"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680558"
 ---
 # Get-AzBatchRemoteLoginSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan masuk jarak jauh untuk simpul komputasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchremoteloginsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Get-AzBatchRemoteLoginSetting [[-ComputeNode] <PSComputeNode>] -BatchContext <Ba
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchRemoteLoginSetting** mendapatkan pengaturan masuk jarak jauh untuk simpul komputasi di kumpulan berbasis infrastruktur mesin virtual.
+Cmdlet **Get-AzBatchRemoteLoginSetting** mendapatkan pengaturan masuk jarak jauh untuk simpul komputasi di kumpulan berbasis infrastruktur komputer virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan masuk jarak jauh untuk semua node dalam kumpulan
+### Contoh 1: Mendapatkan pengaturan masuk jarak jauh untuk semua simpul dalam kumpulan
 ```powershell
 $Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
 Get-AzBatchComputeNode -PoolId "ContosoPool" -BatchContext $Context | Get-AzBatchRemoteLoginSetting -BatchContext $Context
@@ -51,13 +54,13 @@ IPAddress       Port
 10.214.75.221   50000
 ```
 
-Perintah pertama mendapatkan konteks akun kumpulan yang berisi kunci akses untuk langganan Anda menggunakan **Get-AzBatchAccountKey**.
+Perintah pertama mendapatkan konteks akun batch yang berisi kunci akses untuk langganan Anda dengan menggunakan **Get-AzBatchAccountKey**.
 Perintah menyimpan konteks dalam variabel $Context untuk digunakan dalam perintah berikutnya.
-Perintah kedua mendapatkan setiap node komputasi di pool yang memiliki ID ContosoPool menggunakan **Get-AzBatchComputeNode**.
-Perintah melewati setiap simpul komputer ke cmdlet saat ini menggunakan operator pipeline.
+Perintah kedua mendapatkan setiap simpul komputasi di kumpulan yang memiliki ID ContosoPool dengan menggunakan **Get-AzBatchComputeNode**.
+Perintah meneruskan setiap simpul komputer ke cmdlet saat ini dengan menggunakan operator alur.
 Perintah mendapatkan pengaturan masuk jarak jauh untuk setiap simpul komputasi.
 
-### Contoh 2: Dapatkan pengaturan masuk jarak jauh untuk simpul
+### Contoh 2: Mendapatkan pengaturan masuk jarak jauh untuk simpul
 ```powershell
 $Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
 Get-AzBatchRemoteLoginSetting -PoolId "ContosoPool" -ComputeNodeId "tvm-1900272697_1-20150330t205553z" -BatchContext $Context
@@ -69,8 +72,8 @@ IPAddress       Port
 10.214.75.221   50000
 ```
 
-Perintah pertama mendapatkan konteks akun kumpulan yang berisi kunci akses untuk langganan Anda, lalu menyimpannya dalam variabel $Context.
-Perintah kedua mendapatkan pengaturan masuk jarak jauh untuk simpul komputasi yang memiliki ID tertentu dalam kumpulan yang memiliki ID ContosoPool.
+Perintah pertama mendapatkan konteks akun batch yang berisi kunci akses untuk langganan Anda, lalu menyimpannya dalam variabel $Context.
+Perintah kedua mendapatkan pengaturan masuk jarak jauh untuk simpul komputasi yang memiliki ID yang ditentukan di kumpulan yang memiliki ID ContosoPool.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 
 ### -ComputeNode
 Menentukan simpul komputasi, sebagai objek **PSComputeNode** , di mana cmdlet ini mendapatkan pengaturan masuk jarak jauh.
-Untuk mendapatkan objek node komputasi, gunakan cmdlet Get-AzBatchComputeNode.
+Untuk mendapatkan objek simpul komputasi, gunakan cmdlet Get-AzBatchComputeNode.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ComputeNodeId
 Menentukan ID simpul komputasi untuk mendapatkan pengaturan masuk jarak jauh.
-di mana cmdlet ini mendapatkan pengaturan masuk jarak jauh.
+yang cmdlet ini mendapatkan pengaturan masuk jarak jauh.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID kumpulan yang berisi mesin virtual.
+Menentukan ID kumpulan yang berisi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

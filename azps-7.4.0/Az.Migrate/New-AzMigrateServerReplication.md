@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
-ms.openlocfilehash: daf685fdea91253cd0b1f8da4b7fd9d741c2eece
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f384eb6b02cf622d5102578bc0b4f29d49484e6d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142681210"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667540"
 ---
 # New-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memulai replikasi untuk server yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/new-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,11 +76,11 @@ New-AzMigrateServerReplication -DiskToInclude <IVMwareCbtDiskInput[]> -InputObje
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzMigrateServerReplication memulai replikasi untuk server tertentu yang ditemukan di proyek Migrasi Azure.
+Cmdlet New-AzMigrateServerReplication memulai replikasi untuk server tertentu yang ditemukan dalam proyek Azure Migrate.
 
 ## EXAMPLES
 
-### Contoh 1: Bila hanya ada disk OS
+### Contoh 1: Ketika hanya ada disk OS
 ```powershell
 New-AzMigrateServerReplication -MachineId "/subscriptions/xxx-xxx-xxx4/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.OffAzure/VMwareSites/AzMigratePWSHTc8d1site/machines/bcdr-vcenter-fareast-corp-micro-cfcc5a24-a40e-56b9-a6af-e206c9ca4f93_50063baa-9806-d6d6-7e09-c0ae87309b4f" -LicenseType NoLicenseType -TargetResourceGroupId "/subscriptions/xxx-xxx-xxx/resourceGroups/AzMigratePWSHtargetRG" -TargetNetworkId  "/subscriptions/xxx-xxx-xxx/resourceGroups/AzMigratePWSHtargetRG/providers/Microsoft.Network/virtualNetworks/AzMigrateTargetNetwork" -TargetSubnetName default -TargetVMName "prsadhu-TestVM" -DiskType "Standard_LRS" -OSDiskID "6000C299-343d-7bcd-c05e-a94bd63316dd"
 ```
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetID
-Menentukan set ensipsi diska yang akan digunakan.
+Menentukan set ensipsi disk yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -174,8 +177,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskTag
-Menentukan tag yang akan digunakan untuk pembuatan diska.
-Untuk membangun, lihat bagian CATATAN untuk properti DISKTAG dan membuat tabel hash.
+Menentukan tag yang akan digunakan untuk pembuatan disk.
+Untuk membuat, lihat bagian CATATAN untuk properti DISKTAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetDiskTags
@@ -190,8 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiskToInclude
-Menentukan diska pada server sumber yang akan disertakan untuk replikasi.
-Untuk membangun, lihat bagian CATATAN untuk properti DISKTOINCLUDE dan membuat tabel hash.
+Menentukan disk pada server sumber yang akan disertakan untuk replikasi.
+Untuk membuat, lihat bagian CATATAN untuk properti DISKTOINCLUDE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtDiskInput[]
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskType
-Menentukan tipe disk yang akan digunakan untuk Azure VM.
+Menentukan jenis disk yang akan digunakan untuk Azure VM.
 
 ```yaml
 Type: System.String
@@ -221,9 +224,9 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan server yang ditemukan untuk dimigrasikan.
+Menentukan server yang ditemukan yang akan dimigrasikan.
 Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
-Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api202001.IVMwareMachine
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -MachineId
-Menentukan ID mesin dari server yang ditemukan untuk dimigrasikan.
+Menentukan ID komputer dari server yang ditemukan yang akan dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 
 ### -NicTag
 Menentukan tag yang akan digunakan untuk pembuatan NIC.
-Untuk membangun, lihat bagian CATATAN untuk properti NICTAG dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti NICTAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetNicTags
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformAutoResync
-Menentukan apakah replikasi diperbaiki secara otomatis dalam pelacakan perubahan kasus hilang untuk server sumber di bawah replikasi.
+Menentukan apakah replikasi diperbaiki secara otomatis jika pelacakan perubahan hilang untuk server sumber yang sedang direplikasi.
 
 ```yaml
 Type: System.String
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerLicenseType
-Menentukan apakah manfaat Azure Hybrid untuk SQL Server berlaku bagi server yang akan dimigrasikan.
+Menentukan apakah manfaat Azure Hybrid untuk SQL Server berlaku untuk server yang akan dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAvailabilitySet
-Menentukan Kumpulan Ketersediaan yang akan digunakan untuk pembuatan VMSpecifies Set Ketersediaan yang akan digunakan untuk pembuatan VM.
+Menentukan Set Ketersediaan yang akan digunakan untuk pembuatan VMSpesifikasi Set Ketersediaan yang akan digunakan untuk pembuatan VM.
 
 ```yaml
 Type: System.String
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAvailabilityZone
-Menentukan Availability Zone yang akan digunakan untuk pembuatan VM.
+Menentukan Zona Ketersediaan yang akan digunakan untuk pembuatan VM.
 
 ```yaml
 Type: System.String
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroupId
-Menentukan id Grup Sumber Daya di dalam langganan Azure tujuan tempat server perlu dimigrasikan.
+Menentukan id Grup Sumber Daya dalam langganan Azure tujuan tempat server perlu dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetSubnetName
-Menentukan nama Subnet di dalam tujuan Virtual Netowk tempat server perlu dimigrasikan.
+Menentukan nama Subnet dalam tujuan Virtual Netowk tempat server perlu dimigrasikan.
 
 ```yaml
 Type: System.String
@@ -480,7 +483,7 @@ Accept wildcard characters: False
 
 ### -VMTag
 Menentukan tag yang akan digunakan untuk pembuatan VM.
-Untuk membangun, lihat bagian CATATAN untuk properti VMTAG dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti VMTAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IVMwareCbtEnableMigrationInputTargetVmtags
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -533,12 +536,12 @@ DISKTAG <IVMwareCbtEnableMigrationInputTargetDiskTags>: Menentukan tag yang akan
 DISKTOINCLUDE <IVMwareCbtDiskInput[]>: Menentukan disk pada server sumber yang akan disertakan untuk replikasi.
   - `DiskId <String>`: Id disk.
   - `IsOSDisk <String>`: Nilai yang menunjukkan apakah disk adalah disk OS.
-  - `LogStorageAccountId <String>`: Log storage account ARM Id.
-  - `LogStorageAccountSasSecretName <String>`: Nama rahasia kunci kubah akun penyimpanan log.
-  - `[DiskEncryptionSetId <String>]`: DiskEncryptionSet ARM Id.
-  - `[DiskType <DiskAccountType?>]`: Tipe disk.
+  - `LogStorageAccountId <String>`: Id ARM akun penyimpanan log.
+  - `LogStorageAccountSasSecretName <String>`: Nama rahasia brankas kunci dari akun penyimpanan log.
+  - `[DiskEncryptionSetId <String>]`: Id ARM DiskEncryptionSet.
+  - `[DiskType <DiskAccountType?>]`: Jenis disk.
 
-INPUTOBJECT <IVMwareMachine>: Menentukan server yang ditemukan untuk dimigrasikan. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
+INPUTOBJECT <IVMwareMachine>: Menentukan server yang ditemukan yang akan dimigrasikan. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
   - `[GuestOSDetailOstype <String>]`: Jenis sistem operasi.
 
 NICTAG <IVMwareCbtEnableMigrationInputTargetNicTags>: Menentukan tag yang akan digunakan untuk pembuatan NIC.

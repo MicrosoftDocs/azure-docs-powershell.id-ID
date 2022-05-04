@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageDeleteRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Enable-AzStorageDeleteRetentionPolicy.md
-ms.openlocfilehash: 8c648fec95a1bdc077f5983f849469d1e11cdca7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 95492f00ed142d97c9334d11c764e010b2cebe57
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142932779"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663802"
 ---
 # Enable-AzStorageDeleteRetentionPolicy
 
 ## SYNOPSIS
-Aktifkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
+Aktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/enable-azstoragedeleteretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,20 +28,20 @@ Enable-AzStorageDeleteRetentionPolicy [-RetentionDays] <Int32> [-PassThru] [-Con
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzStorageDeleteRetentionPolicy** memungkinkan kebijakan penghapusan penyimpanan untuk layanan Azure Storage Blob.
+Cmdlet **Enable-AzStorageDeleteRetentionPolicy** memungkinkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob service.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan kebijakan penyimpanan penghapusan untuk layanan Blob
+### Contoh 1: Mengaktifkan kebijakan penyimpanan penghapusan untuk Blob service
 ```
 C:\PS>Enable-AzStorageDeleteRetentionPolicy -RetentionDays 3
 ```
 
-Perintah ini memungkinkan kebijakan penghapusan penyimpanan untuk layanan Blob, dan mengatur hari penyimpanan blob yang dihapus ke 3.
+Perintah ini memungkinkan kebijakan penyimpanan penghapusan untuk layanan Blob, dan mengatur hari retensi blob yang dihapus ke 3.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Objek Konteks Azure Storage
 
 ```yaml
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionDays
-Mengatur jumlah hari penyimpanan untuk DeleteRetentionPolicy.
+Mengatur jumlah hari retensi untuk DeleteRetentionPolicy.
 
 ```yaml
 Type: System.Int32
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

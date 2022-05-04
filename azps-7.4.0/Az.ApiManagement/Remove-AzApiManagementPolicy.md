@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementPolicy.md
-ms.openlocfilehash: f1f0b180d05769499439a1a9cbbf52e8c4708aa9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 5f2f7057c5135cb9908bf45f5b59bc02d11ce754
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320391"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144656912"
 ---
 # Remove-AzApiManagementPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan API Management dari lingkup tertentu.
+Menghapus kebijakan API Management dari cakupan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ProductId <Strin
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### HapusApiLevel
+### RemoveApiLevel
 ```
 Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ApiId <String> [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +48,7 @@ Remove-AzApiManagementPolicy -Context <PsApiManagementContext> -ApiId <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementPolicy** menghapus kebijakan API Management dari lingkup yang ditentukan.
+Cmdlet **Remove-AzApiManagementPolicy** menghapus kebijakan API Management dari cakupan yang ditentukan.
 
 ## EXAMPLES
 
@@ -57,35 +60,35 @@ Remove-AzApiManagementPolicy -Context $apimContext
 
 Perintah ini menghapus kebijakan tingkat penyewa dari API Management.
 
-### Contoh 2: Menghapus kebijakan lingkup produk
+### Contoh 2: Menghapus kebijakan cakupan produk
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Remove-AzApiManagementPolicy -Context $apimContext -ProductId "0123456789"
 ```
 
-Perintah ini menghapus kebijakan lingkup produk dari API Management.
+Perintah ini menghapus kebijakan cakupan produk dari API Management.
 
-### Contoh 3: Menghapus kebijakan lingkup API
+### Contoh 3: Menghapus kebijakan cakupan API
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Remove-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210"
 ```
 
-Perintah ini menghapus kebijakan lingkup API dari API Management.
+Perintah ini menghapus kebijakan cakupan API dari API Management.
 
-### Contoh 4: Menghapus kebijakan lingkup operasi
+### Contoh 4: Menghapus kebijakan cakupan operasi
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Remove-AzApiManagementPolicy -Context $apimContext -ApiId "9876543210" -OperationId "777"
 ```
 
-Perintah ini menghapus kebijakan lingkup operasi dari API Management.
+Perintah ini menghapus kebijakan cakupan operasi dari API Management.
 
 ## PARAMETERS
 
 ### -ApiId
-Menentukan pengidentifikasi API yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan menghapus kebijakan lingkup API.
+Menentukan pengidentifikasi API yang ada.
+Jika Anda menentukan parameter ini, cmdlet akan menghapus kebijakan cakupan API.
 
 ```yaml
 Type: System.String
@@ -99,8 +102,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Menentukan contoh objek **PsApiManagementContext** .
+### -Context
+Menentukan **instans objek PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -130,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperationId
-Menentukan pengidentifikasi operasi yang sudah ada.
-Jika Anda menentukan parameter ini dengan parameter *ApiId* , cmdlet ini akan menghapus kebijakan lingkup operasi.
+Menentukan pengidentifikasi operasi yang ada.
+Jika Anda menentukan parameter ini dengan parameter *ApiId* , cmdlet ini akan menghapus kebijakan cakupan operasi.
 
 ```yaml
 Type: System.String
@@ -161,8 +164,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProductId
-Menentukan pengidentifikasi produk yang sudah ada.
-Jika Anda menentukan parameter ini, cmdlet akan menghapus kebijakan lingkup produk.
+Menentukan pengidentifikasi produk yang ada.
+Jika Anda menentukan parameter ini, cmdlet akan menghapus kebijakan cakupan produk.
 
 ```yaml
 Type: System.String
@@ -176,8 +179,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

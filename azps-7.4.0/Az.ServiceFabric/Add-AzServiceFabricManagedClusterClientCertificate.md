@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedClusterClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedClusterClientCertificate.md
-ms.openlocfilehash: 91acb9bc78296169f8ff91bd6ee8783b96e24502
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1314d8242a4b6d3696363938356d3bfd2810c8a5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142800370"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718886"
 ---
 # Add-AzServiceFabricManagedClusterClientCertificate
 
 ## SYNOPSIS
-Tambahkan nama umum sertifikat atau sidik jari ke kluster. Ini akan mendaftarkan sertifikat lagi kluster untuk tujuan autentikasi klien.
+Tambahkan nama umum sertifikat atau thumbprint ke kluster. Ini akan mendaftarkan sertifikat lagi kluster untuk tujuan autentikasi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagedclusterclientcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Add-AzServiceFabricManagedClusterClientCertificate [-InputObject] <PSManagedClus
 ```
 
 ## DESCRIPTION
-Tambahkan nama umum sertifikat atau sidik jari ke kluster. Ini akan mendaftarkan sertifikat lagi kluster untuk tujuan autentikasi klien.
+Tambahkan nama umum sertifikat atau thumbprint ke kluster. Ini akan mendaftarkan sertifikat lagi kluster untuk tujuan autentikasi klien.
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ $clusterName = "testCluster"
 Add-AzServiceFabricManagedClusterClientCertificate -ResourceGroupName $rgName -ClusterName $clusterName -Thumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A -Admin
 ```
 
-Perintah ini akan menambahkan sertifikat dengan sidik jari '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' ke kluster, sehingga klien dapat menggunakan sertifikat sebagai admin untuk berkomunikasi dengan kluster.
+Perintah ini akan menambahkan sertifikat dengan thumbprint '5F3660C715EBBDA31DB1FFDCF508302348DE8E7A' ke kluster, sehingga klien dapat menggunakan sertifikat sebagai admin untuk berkomunikasi dengan kluster.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +71,7 @@ $clusterName = "testCluster"
 Add-AzServiceFabricManagedClusterClientCertificate -ResourceGroupName $rgName -ClusterName $clusterName -CommonName 'Contoso.com' -IssuerThumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A, 5F3660C715EBBDA31DB1FFDCF508302348DE8E7B
 ```
 
-Perintah ini akan menambahkan sertifikat klien baca saja dengan nama umum 'Contoso.com' dan 2 penerbit.
+Perintah ini akan menambahkan sertifikat klien baca-saja dengan nama umum 'Contoso.com' dan 2 penerbit.
 
 ### Contoh 3
 ```powershell
@@ -78,7 +81,7 @@ $cluster = Get-AzServiceFabricManagedCluster -ResourceGroupName $rgName -Name $c
 $cluster | Add-AzServiceFabricManagedClusterClientCertificate -CommonName 'Contoso.com' -IssuerThumbprint 5F3660C715EBBDA31DB1FFDCF508302348DE8E7A, 5F3660C715EBBDA31DB1FFDCF508302348DE8E7B
 ```
 
-Perintah ini akan menambahkan sertifikat klien baca saja dengan nama umum 'Contoso.com' dan 2 penerbit, dengan pipa.
+Perintah ini akan menambahkan sertifikat klien baca-saja dengan nama umum 'Contoso.com' dan 2 penerbit, dengan pipa.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -IssuerThumbprint
-Daftar sidik jari Penerbit untuk sertifikat klien.
+Daftar thumbprint Penerbit untuk sertifikat klien.
 Hanya gunakan dalam kombinasi dengan CommonName.
 
 ```yaml
@@ -173,7 +176,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Tentukan nama kluster.
 
 ```yaml
@@ -203,8 +206,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Sidik jari
-Sidik jari sertifikat klien.
+### -Thumbprint
+Thumbprint sertifikat klien.
 
 ```yaml
 Type: System.String
@@ -218,8 +221,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

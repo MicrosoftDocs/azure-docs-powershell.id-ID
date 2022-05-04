@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncCloudEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncCloudEndpoint.md
-ms.openlocfilehash: fa3ee49c6a1db8b2fd640fabd47808f275a24b41
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2981b4d67c7fc222b74fac8b0c397b1c77fea0f1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142994357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665332"
 ---
 # Get-AzStorageSyncCloudEndpoint
 
 ## SYNOPSIS
-Perintah ini mencantumkan semua titik akhir awan dalam grup sinkronisasi tertentu.
+Perintah ini mencantumkan semua titik akhir cloud dalam grup sinkronisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/get-azstoragesynccloudendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzStorageSyncCloudEndpoint [-ParentResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Perintah ini mencantumkan semua titik akhir awan dalam grup sinkronisasi tertentu. Fitur ini juga dapat digunakan untuk mencantumkan atribut setiap titik akhir awan.
+Perintah ini mencantumkan semua titik akhir cloud dalam grup sinkronisasi tertentu. Ini dapat digunakan untuk juga mencantumkan atribut setiap titik akhir cloud.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Perintah ini mencantumkan semua titik akhir awan dalam grup sinkronisasi tertent
 Get-AzStorageSyncCloudEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName"
 ```
 
-Perintah ini mendapatkan semua titik akhir awan yang terdapat dalam grup sinkronisasi yang ditentukan. Tentukan -CloudEndpointName untuk mengembalikan yang spesifik.
+Perintah ini mendapatkan semua titik akhir cloud yang terkandung dalam grup sinkronisasi yang ditentukan. Tentukan -CloudEndpointName untuk mengembalikan yang tertentu.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama CloudEndpoint.
 
 ```yaml
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-StorageSyncService Object, biasanya melewati parameter.
+StorageSyncService Object, biasanya melewati parameter .
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronkan.
+Nama SyncGroup.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

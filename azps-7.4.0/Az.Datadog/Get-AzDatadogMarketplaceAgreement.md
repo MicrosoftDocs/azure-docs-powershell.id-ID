@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMarketplaceAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMarketplaceAgreement.md
-ms.openlocfilehash: bd3424ddf68bd05f715756566f8acf63adde1a8b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c05e7e92bad7784923d1c49e2067fda0e18fe8c1
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143288063"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144664882"
 ---
 # Get-AzDatadogMarketplaceAgreement
 
 ## SYNOPSIS
-Cantumkan perjanjian marketplace Datadog dalam langganan.
+Mencantumkan perjanjian marketplace Datadog dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogmarketplaceagreement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzDatadogMarketplaceAgreement [-SubscriptionId <String[]>] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cantumkan perjanjian marketplace Datadog dalam langganan.
+Mencantumkan perjanjian marketplace Datadog dalam langganan.
 
 ## EXAMPLES
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

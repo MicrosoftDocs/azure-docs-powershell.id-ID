@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestation.md
-ms.openlocfilehash: 1986e0a95ae7945a2198b3623de69b777564dc59
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: cad4dd6fc332d4886e81202ace4076d974dc1505
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129627"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681061"
 ---
 # Remove-AzAttestation
 
 ## SYNOPSIS
-Menghapus penetapan.
+Menghapus pengesahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.attestation/remove-azattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzAttestation [-InputObject] <PSAttestation> [-PassThru] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzAttestation menghapus penetapan yang ditentukan.
+Cmdlet Remove-AzAttestation menghapus pengesahan yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet Remove-AzAttestation menghapus penetapan yang ditentukan.
 Remove-AzAttestation -Name pshtest3 -ResourceGroupName psh-test-rg
 ```
 
-Hapus Penyedia Pengesahan bernama *pshtest3* dalam grup sumber daya bernama *psh-test-rg* dari langganan saat ini.
+Hapus Penyedia Pengesahan bernama *pshtest3* di grup sumber daya bernama *psh-test-rg* dari langganan saat ini.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek attesasi yang akan dihapus.
+Objek pengesahan yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Attestation.Models.PSAttestation
@@ -81,8 +84,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama dari atestation yang akan dihapus.
+### -Name
+Menentukan nama pengesahan yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk pengesahan Azure untuk dihapus.
+Menentukan nama grup sumber daya untuk pengesahan Azure yang akan dihapus.
 
 ```yaml
 Type: System.String
@@ -142,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

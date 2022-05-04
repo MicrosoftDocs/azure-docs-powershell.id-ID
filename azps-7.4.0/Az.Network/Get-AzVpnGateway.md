@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGateway.md
-ms.openlocfilehash: 3576209a56d353088bd9147d4a9510098fab418d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 9f171627544c4df5ef869066c5939ae604e2ec9e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678978"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703902"
 ---
 # Get-AzVpnGateway
 
 ## SYNOPSIS
-Mendapatkan sumber daya VpnGateway menggunakan ResourceGroupName dan GatewayName OR mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+Mendapatkan sumber daya VpnGateway menggunakan ResourceGroupName dan GatewayName ATAU mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzVpnGateway [-ResourceGroupName <String>] [-Name <String>] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Mendapatkan sumber daya VpnGateway menggunakan ResourceGroupName dan GatewayName OR mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+Mendapatkan sumber daya VpnGateway menggunakan ResourceGroupName dan GatewayName ATAU mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ ProvisioningState   : Succeeded
 
 Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Kemudian VpnGateway menggunakan resourceGroupName dan nama gateway.
+Kemudian mendapatkan VpnGateway menggunakan resourceGroupName dan nama gatewaynya.
 
 ### Contoh 2
 
@@ -111,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -142,11 +145,11 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -158,6 +161,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVpnGateway](./New-AzVpnGateway.md)
 
-[Hapus-AzVpnGateway](./Remove-AzVpnGateway.md)
+[Remove-AzVpnGateway](./Remove-AzVpnGateway.md)
 
 [Update-AzVpnGateway](./Update-AzVpnGateway.md)

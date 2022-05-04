@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 8c59c6d571000333fc2a281498c03eb6071ad203
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 65879e0f3955bf88cd2b38088cd7d008f54d5b59
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142744228"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665818"
 ---
 # Get-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung-belakang.
+Mendapatkan konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayconnectiondraining) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApplicationGatewayConnectionDraining -BackendHttpSettings <PSApplicationGa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayConnectionDraining** mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung belakang.
+Cmdlet **Get-AzApplicationGatewayConnectionDraining** mendapatkan konfigurasi pengurasan koneksi dari objek pengaturan HTTP back-end.
 
 ## EXAMPLES
 
@@ -37,8 +40,8 @@ $ConnectionDraining = Get-AzApplicationGatewayConnectionDraining -BackendHttpSet
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
-Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
-Perintah terakhir mendapatkan konfigurasi pengurasan koneksi dari pengaturan HTTP ujung-belakang $Pengaturan dan menyimpannya dalam variabel $ConnectionDraining.
+Perintah kedua mendapatkan pengaturan HTTP back-end bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
+Perintah terakhir mendapatkan konfigurasi pengurasan koneksi dari pengaturan HTTP back-end $Pengaturan dan menyimpannya dalam variabel $ConnectionDraining.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

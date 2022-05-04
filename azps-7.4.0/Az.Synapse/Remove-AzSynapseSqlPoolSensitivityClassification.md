@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: f2f367c98032f9f8c72c1a3a9f345b5d38139aa4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 619e86b85cca5d08ec5cb12f774f82e87c40de44
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142931501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666574"
 ---
 # Remove-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
-Menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan SQL.
+Menghapus jenis informasi dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
-### KlasifikasiObjectParameterSet (Default)
+### ClassificationObjectParameterSet (Default)
 ```
 Remove-AzSynapseSqlPoolSensitivityClassification -ClassificationObject <SqlPoolSensitivityClassificationModel>
  [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -40,21 +43,21 @@ Remove-AzSynapseSqlPoolSensitivityClassification -SqlPoolObject <PSSynapseSqlPoo
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan SQL.
+Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus jenis informasi dan label sensitivitas kolom di kumpulan SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
+### Contoh 1: Menghapus jenis informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL.
 ```powershell
 Remove-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Hapus tipe informasi saat ini dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 2: Hapus jenis informasi saat ini dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification
 ```
 
-### Contoh 3: Menghapus tipe informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 3: Menghapus jenis informasi dan label sensitivitas kolom di kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification -SchemaName schema -TableName table -ColumnName column
 ```
@@ -62,7 +65,7 @@ Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName Cont
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama Synapse SQL pool.
+Nama kumpulan SQL Synapse.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolObject
-SQL objek input pool, biasanya melewati pipeline.
+SQL objek input kumpulan, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -212,7 +215,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -227,8 +230,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

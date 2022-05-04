@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 757129ec7ed813506e054146b582b729fd1f8857
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 036f0ef0b9c8c600b0bf45e2c96e2a87fc956b8e
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143129483"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680630"
 ---
 # Get-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
-Mendapatkan runbook otomatisasi dan jadwal terkait.
+Mendapatkan runbook Automation dan jadwal terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationscheduledrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,27 +54,27 @@ Get-AzAutomationScheduledRunbook -ScheduleName <String> [-ResourceGroupName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationScheduledRunbook** mendapatkan satu atau beberapa Azure Automation runbook dan jadwal terkait.
+Cmdlet **Get-AzAutomationScheduledRunbook** mendapatkan satu atau beberapa runbook Azure Automation dan jadwal terkait.
 Secara default, cmdlet ini mendapatkan semua runbook terjadwal.
 Tentukan nama runbook atau jadwal atau keduanya untuk melihat jadwal runbook tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua runbook terjadwal
+### Contoh 1: Mendapatkan semua runbook terjadwal
 ```
 PS C:\>Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
 ```
 
 Perintah ini mendapatkan semua runbook terjadwal di akun Azure Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan semua jadwal yang terkait dengan runbook
+### Contoh 2: Mendapatkan semua jadwal yang terkait dengan runbook
 ```
 PS C:\>Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -RunbookName "Runbk01"
 ```
 
 Perintah ini mendapatkan semua runbook terjadwal untuk runbook Runbk01 di akun Azure Automation bernama Contoso17.
 
-### Contoh 3: Dapatkan semua runbook yang terkait dengan jadwal
+### Contoh 3: Mendapatkan semua runbook yang terkait dengan jadwal
 ```
 PS C:\>Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -ScheduleName "Schedule01"
 ```
@@ -81,7 +84,7 @@ Perintah ini mendapatkan semua runbook terjadwal untuk jadwal Schedule01 di akun
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan akun Otomatisasi untuk runbook tempat cmdlet ini beroperasi.
+Menentukan akun Automation untuk runbook tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobScheduleId
-Menentukan ID pekerjaan terjadwal yang didapat cmdlet ini.
+Menentukan ID pekerjaan terjadwal yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk runbook terjadwal yang didapat cmdlet ini.
+Menentukan nama grup sumber daya untuk runbook terjadwal yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook di mana cmdlet ini mendapatkan runbook terjadwal.
+Menentukan nama runbook yang cmdlet ini mendapatkan runbook terjadwal.
 
 ```yaml
 Type: System.String
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleName
-Menentukan nama jadwal cmdlet ini mendapatkan runbook terjadwal.
+Menentukan nama jadwal di mana cmdlet ini mendapatkan runbook terjadwal.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

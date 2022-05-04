@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/new-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyRule.md
-ms.openlocfilehash: 5b0761dbe0c87ebed992718a4cac08cfbedc90c9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 48ff435e502ba897e90fdcb9aa50c00499771593
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142797994"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687248"
 ---
-# New-AzStorageAccountManagementPolicyRule
+# Baru-AzStorageAccountManagementPolicyRule
 
 ## SYNOPSIS
-Membuat objek aturan ManagementPolicy, yang dapat digunakan dalam Set-AzStorageAccountManagementPolicy.
+Membuat objek aturan ManagementPolicy, yang dapat digunakan di Set-AzStorageAccountManagementPolicy.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccountmanagementpolicyrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **New-AzStorageAccountManagementPolicyRule** membuat objek aturan Managem
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek aturan ManagementPolicy, lalu diatur ke Akun Storage
+### Contoh 1: Membuat objek aturan ManagementPolicy, lalu mengatur ke Akun Storage
 ```
 PS C:\>$action = Add-AzStorageAccountManagementPolicyAction -BaseBlobAction Delete -daysAfterModificationGreaterThan 100
 PS C:\>$action = Add-AzStorageAccountManagementPolicyAction -BaseBlobAction TierToArchive -daysAfterModificationGreaterThan 50  -InputObject $action
@@ -81,7 +84,7 @@ Perintah ini membuat objek aturan ManagementPolicy, dengan objek grup tindakan M
 ## PARAMETERS
 
 ### -Tindakan
-Objek yang menentukan kumpulan tindakan.
+Objek yang menentukan set tindakan.
 Dapatkan Objek dengan cmdlet Add-AzureStorageAccountManagementPolicyAction
 
 ```yaml
@@ -111,7 +114,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nonaktif
+### -Dinonaktifkan
 Aturan dinonaktifkan jika diatur.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Objek yang menentukan kumpulan filter.
+Objek yang menentukan set filter.
 Dapatkan Objek dengan cmdlet New-AzureStorageAccountManagementPolicyFilter
 
 ```yaml
@@ -142,10 +145,10 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama aturan bisa berisi kombinasi karakter alfa numerik apa pun.
-Nama aturan peka huruf besar/kecil.
-Ini harus unik dalam kebijakan.
+### -Name
+Nama aturan dapat berisi kombinasi karakter alfa numerik apa pun.
+Nama aturannya peka huruf besar/kecil.
+Itu harus unik dalam sebuah kebijakan.
 
 ```yaml
 Type: System.String
@@ -160,11 +163,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

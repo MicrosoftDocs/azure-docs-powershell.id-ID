@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/restore-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Restore-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Restore-AzSqlInstanceDatabase.md
-ms.openlocfilehash: cfd0228baf59a41db586ea3eb3c4831129ff88f7
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2b113cbbe4d8d2f858c61b80093ae4adb632259c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142864792"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695918"
 ---
 # Restore-AzSqlInstanceDatabase
 
 ## SYNOPSIS
 Memulihkan database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/restore-azsqlinstancedatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Restore-AzSqlInstanceDatabase [-FromPointInTimeBackup] [-SubscriptionId <String>
  [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PointInTimeSameInstanceRestoreInstanceDatabaseFromAzureSqlManagedDatabaseModelInstanceDefinisi
+### PointInTimeSameInstanceRestoreInstanceDatabaseFromAzureSqlManagedDatabaseModelInstanceDefinition
 ```
 Restore-AzSqlInstanceDatabase [-FromPointInTimeBackup] [-InputObject] <AzureSqlManagedDatabaseBaseModel>
  -PointInTime <DateTime> -TargetInstanceDatabaseName <String> [-AsJob]
@@ -109,19 +112,19 @@ Restore-AzSqlInstanceDatabase [-FromLongTermRetentionBackup] [-SubscriptionId <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzSqlInstanceDatabase** memulihkan database instans dari cadangan geo-redundan, titik waktu dalam database langsung, atau cadangan penyimpanan jangka panjang.
+Cmdlet **Restore-AzSqlInstanceDatabase** memulihkan database instans dari cadangan geo-redundan, titik waktu dalam database langsung, atau cadangan retensi jangka panjang.
 Database yang dipulihkan dibuat sebagai database instans baru.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan database instans dari satu titik waktu
+### Contoh 1: Memulihkan database instans dari titik waktu tertentu
 ```powershell
 Restore-AzSqlinstanceDatabase -Name "Database01" -InstanceName "managedInstance1" -ResourceGroupName "ResourceGroup01" -PointInTime UTCDateTime -TargetInstanceDatabaseName "Database01_restored"
 ```
 
-Perintah memulihkan database instans01 dari cadangan point-in-time yang ditentukan ke database instans yang bernama Database01_restored.
+Perintah memulihkan database instans Database01 dari cadangan point-in-time yang ditentukan ke database instans bernama Database01_restored.
 
-### Contoh 2: Memulihkan database instans dari satu titik waktu ke instans lain pada grup sumber daya yang berbeda
+### Contoh 2: Memulihkan database instans dari titik waktu ke instans lain pada grup sumber daya yang berbeda
 ```powershell
 Restore-AzSqlInstanceDatabase -Name "Database01" -InstanceName "managedInstance1" -ResourceGroupName "ResourceGroup01" -PointInTime UTCDateTime -TargetInstanceDatabaseName "Database01_restored" -TargetInstanceName "managedInstance1" -TargetResourceGroupName "ResourceGroup02"
 ```
@@ -135,9 +138,9 @@ $GeoBackup | Restore-AzSqlInstanceDatabase -FromGeoBackup -TargetInstanceDatabas
 ```
 
 Perintah pertama mendapatkan cadangan geo-redundan untuk database bernama Database01, lalu menyimpannya dalam variabel $GeoBackup.
-Perintah kedua memulihkan cadangan di $GeoBackup ke database instans bernama Database01_restored.
+Perintah kedua memulihkan cadangan dalam $GeoBackup ke database instans bernama Database01_restored.
 
-### Contoh 4: Memulihkan database instans yang dihapus dari titik waktu
+### Contoh 4: Memulihkan database instans yang dihapus dari titik waktu tertentu
 ```powershell
 $deletedDatabase = Get-AzSqlDeletedInstanceDatabaseBackup -ResourceGroupName "ResourceGroup01" -InstanceName "managedInstance1" -DatabaseName "DB1"
 Restore-AzSqlinstanceDatabase -FromPointInTimeBackup -Name $deletedDatabase.Name -InstanceName $deletedDatabase.ManagedInstanceName -ResourceGroupName $deletedDatabase.ResourceGroupName -DeletionDate $deletedDatabase.DeletionDate -PointInTime UTCDateTime -TargetInstanceDatabaseName "Database01_restored"
@@ -146,7 +149,7 @@ Restore-AzSqlinstanceDatabase -FromPointInTimeBackup -Name $deletedDatabase.Name
 Perintah pertama mendapatkan database instans yang dihapus bernama 'DB1' pada Instans 'managedInstance1'.
 Perintah kedua memulihkan database yang diambil, dari cadangan point-in-time yang ditentukan ke database instans bernama Database01_restored.
 
-### Contoh 5: Memulihkan database instans yang dihapus dari titik waktu
+### Contoh 5: Memulihkan database instans yang dihapus dari titik waktu tertentu
 ```powershell
 $deletedDatabase = Get-AzSqlDeletedInstanceDatabaseBackup -ResourceGroupName "ResourceGroup01" -InstanceName "managedInstance1" -DatabaseName "DB1"
 Restore-AzSqlinstanceDatabase -FromPointInTimeBackup -InputObject $deletedDatabase[0] -PointInTime UTCDateTime -TargetInstanceDatabaseName "Database01_restored"
@@ -184,12 +187,12 @@ EarliestRestorePoint              : 3/4/2020 8:14:29 AM
 Id                                : /subscriptions/f46521f3-5bb0-4eea-a3c2-c2d5987df96b/resourceGroups/testResourceGroup/providers/Microsoft.Sql/managedInstances/testInstance/databases/restoreTarget
 ```
 
-Memulihkan cadangan LTR dengan ID sumber daya tertentu (yang dapat ditemukan dengan menjalankan Get-AzSqlInstanceDatabaseLongTermRetentionBackup).
+Memulihkan cadangan LTR dengan ID sumber daya yang diberikan (yang dapat ditemukan dengan menjalankan Get-AzSqlInstanceDatabaseLongTermRetentionBackup).
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PenghapusanDate
+### -DeletionDate
 Tanggal penghapusan database yang dihapus.
 
 ```yaml
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromGeoBackup
-Pulihkan dari cadangan geo.
+Pulihkan dari cadangan geografis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromLongTermRetentionBackup
-Pulihkan dari cadangan Penyimpanan Jangka Panjang.
+Pulihkan dari cadangan Retensi Jangka Panjang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama contoh.
+Nama instans.
 
 ```yaml
 Type: System.String
@@ -323,7 +326,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama database instans untuk dipulihkan.
 
 ```yaml
@@ -443,7 +446,7 @@ Accept wildcard characters: False
 
 ### -TargetResourceGroupName
 Nama grup sumber daya target untuk dipulihkan.
-Jika tidak ditentukan, grup sumber daya target sama dengan grup sumber daya.
+Jika tidak ditentukan, grup sumber daya target sama dengan grup sumber daya sumber.
 
 ```yaml
 Type: System.String
@@ -457,8 +460,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -473,7 +476,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -488,7 +491,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMConfig.md
-ms.openlocfilehash: c95423c3c9ebc6931a2880c91c64f524be508dc4
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 1651b03900161e79656c44ea951ea8410df08953
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142798876"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695774"
 ---
 # New-AzSqlVMConfig
 
 ## SYNOPSIS
-Membuat konfigurasi baru untuk mesin virtual sql.
+Membuat konfigurasi baru untuk komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSqlVMConfig [-LicenseType] <String> [-Offer <String>] [-Sku <String>] [-Sq
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzSqlVMConfig membuat objek konfigurasi baru untuk mesin virtual sql.
+Cmdlet New-AzSqlVMConfig membuat objek konfigurasi baru untuk komputer virtual sql.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Name ResourceGroupName  LicenseType Sku       Offer          SqlManagementType
 vm   ResourceGroup01    PAYG        Developer SQL2017-WS2016 Full
 ```
 
-Membuat objek lokal yang dapat dikonfigurasi dari mesin virtual sql yang dapat digunakan untuk membuat mesin virtual Azure sql.
+Membuat objek komputer virtual sql yang dapat dikonfigurasi lokal yang dapat digunakan untuk membuat komputer virtual Azure sql.
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-SQL tipe lisensi mesin virtual.
+SQL jenis lisensi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penawaran
-SQL penawaran mesin virtual.
+SQL penawaran komputer virtual.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL tipe edisi mesin virtual.
+SQL jenis edisi komputer virtual.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlManagementType
-SQL tipe manajemen mesin virtual.
+SQL jenis manajemen komputer virtual.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag yang akan dikaitkan dengan mesin virtual SQL
+Tag yang akan dikaitkan dengan komputer virtual SQL
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

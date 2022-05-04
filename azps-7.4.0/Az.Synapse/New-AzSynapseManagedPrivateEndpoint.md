@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedPrivateEndpoint.md
-ms.openlocfilehash: 68e53157d86d525c90bd5ef6e0594c75394ffd27
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bd77547af606126c20459c58c8a7bde50bc7af17
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143222795"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695720"
 ---
 # New-AzSynapseManagedPrivateEndpoint
 
 ## SYNOPSIS
-Membuat atau memperbarui titik akhir privat terkelola dalam ruang kerja.
+Membuat atau memperbarui titik akhir privat terkelola di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsemanagedprivateendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzSynapseManagedPrivateEndpoint -WorkspaceObject <PSSynapseWorkspace> -Name 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseManagedPrivateEndpoint** membuat atau memperbarui titik akhir privat terkelola dalam ruang kerja.
+Cmdlet **New-AzSynapseManagedPrivateEndpoint** membuat atau memperbarui titik akhir privat terkelola di ruang kerja.
 
 ## EXAMPLES
 
@@ -51,12 +54,12 @@ $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | New-AzSynapseManagedPrivateEndpoint -Name ContosoManagedPrivateEndpoint -DefinitionFile "C:\\endpoint.json"
 ```
 
-Perintah ini membuat atau memperbarui titik akhir privat terkelola dari file json di ruang kerja bernama ContosoWorkspace melalui pipeline.
+Perintah ini membuat atau memperbarui titik akhir privat terkelola dari file json di ruang kerja bernama ContosoWorkspace melalui alur.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,8 +103,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Titik Akhir Pribadi yang Dikelola Synapse.
+### -Name
+Nama Titik Akhir Privat Terkelola Synapse.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama Virtual Network terkelola adalah default.
+Nama Virtual Network Terkelola adalah default.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Ruang Kerja
+### -WorkspaceName
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceObject
-objek input ruang kerja, biasanya melewati saluran.
+objek input ruang kerja, biasanya melewati alur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
@@ -160,8 +163,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

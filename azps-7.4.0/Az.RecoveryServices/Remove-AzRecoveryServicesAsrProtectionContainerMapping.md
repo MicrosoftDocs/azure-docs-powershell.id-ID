@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrProtectionContainerMapping.md
-ms.openlocfilehash: 22b62fadb482900a41e48dce82f93369b5921ad6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e47e988f6db53e154a06285b9cfd0e2988f24376
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143310545"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679748"
 ---
 # Remove-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
 Menghapus pemetaan kontainer perlindungan Azure Site Recovery yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 

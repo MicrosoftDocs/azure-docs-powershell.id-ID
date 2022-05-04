@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
-ms.openlocfilehash: 0d9731da7a5706c202dcab77d3a0ef36f0865ba9
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: bff7b677c6c15ba8206fdef5e3a9d84df59054ba
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142678258"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144675538"
 ---
 # New-AzIpsecPolicy
 
 ## SYNOPSIS
 Membuat Kebijakan IPSec.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azipsecpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzIpsecPolicy [-SALifeTimeSeconds <Int32>] [-SADataSizeKilobytes <Int32>] -I
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzIpsecPolicy membuat proposal kebijakan IPSec untuk digunakan dalam koneksi gateway jaringan virtual.
+Cmdlet New-AzIpsecPolicy membuat proposal kebijakan IPSec yang akan digunakan dalam koneksi gateway jaringan virtual.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-Grup DH yang digunakan dalam IKE Fase 1 untuk awal SA
+Grup DH yang digunakan dalam IKE Fase 1 untuk SA awal
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeEncryption
-Algoritma enkripsi IKE (Tahap 1 IKE)
+Algoritma enkripsi IKE (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeIntegrity
-Algoritma integritas IKE (Fase 1 IKE)
+Algoritma integritas IKE (IKE Fase 1)
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas IPSec (Fase 2 IKE)
+Algoritma integritas IPSec (IKE Fase 2)
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup DH yang digunakan dalam IKE Fase 2 untuk anak baru SA
+Grup DH yang digunakan dalam IKE Fase 2 untuk SA anak baru
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSizeKilobytes
-Ukuran muatan Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+Ukuran payload Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: System.Int32
@@ -182,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

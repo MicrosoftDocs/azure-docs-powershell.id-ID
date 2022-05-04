@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryRepository.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryRepository.md
-ms.openlocfilehash: 788f1cbde31feba07bf8e6e7c0272fad918fcb1d
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 77bb2d119a53892b71194245300d3a10722e63de
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143127053"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676078"
 ---
 # Get-AzContainerRegistryRepository
 
 ## SYNOPSIS
-Dapatkan atau cantumkan repositories ACR.
+Mendapatkan atau mencantumkan repositori ACR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistryrepository) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Get-AzContainerRegistryRepository -Name <String> -RegistryName <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan repositories ACR.
-Daftar hanya mengembalikan nama penyimpanan.
+Mendapatkan atau mencantumkan repositori ACR.
+Daftar hanya mengembalikan nama repositori.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ test/busybox1
 test/busybox10
 ```
 
-Cantumkan semua repositori dalam registri.
+Mencantumkan semua repositori dalam registri.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ test/busybox0
 test/busybox1
 ```
 
-Daftar 3 repositori pertama dalam registri.
+Mencantumkan 3 repositori pertama dalam registri.
 
 ### Contoh 3
 ```powershell
@@ -79,7 +82,7 @@ TagCount             : 1
 ChangeableAttributes : Microsoft.Azure.Commands.ContainerRegistry.Models.PSChangeableAttribute
 ```
 
-Dapatkan repository alpine di bawah registri.
+Dapatkan repositori alpine di bawah registri.
 
 ## PARAMETERS
 
@@ -98,8 +101,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Penyimpanan.
+### -Name
+Nama Repositori.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Pertama
+### -First
 Hasil n pertama.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

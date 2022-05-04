@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJob.md
-ms.openlocfilehash: d2daa0724e38a56e1ba086b449d5d3e696860670
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f6ee58e78f27f26a485cdf77e3ae8f811b312db9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143233181"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680738"
 ---
 # Get-AzAutomationJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan runbook otomatisasi.
+Mendapatkan pekerjaan runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,31 +48,31 @@ Cmdlet **Get-AzAutomationJob** mendapatkan pekerjaan runbook di Azure Automation
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pekerjaan runbook tertentu
+### Contoh 1: Mendapatkan pekerjaan runbook tertentu
 ```
 PS C:\>Get-AzAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b647
 ```
 
 Perintah ini mendapatkan pekerjaan yang memiliki GUID yang ditentukan.
 
-### Contoh 2: Dapatkan semua pekerjaan untuk runbook
+### Contoh 2: Mendapatkan semua pekerjaan untuk runbook
 ```
 PS C:\>Get-AzAutomationJob -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -RunbookName "Runbook02"
 ```
 
 Perintah ini mendapatkan semua pekerjaan yang terkait dengan runbook bernama Runbook02.
 
-### Contoh 3: Dapatkan semua pekerjaan yang berjalan
+### Contoh 3: Mendapatkan semua pekerjaan yang sedang berjalan
 ```
 PS C:\>Get-AzAutomationJob -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -Status "Running"
 ```
 
-Perintah ini mendapatkan semua pekerjaan yang berjalan di akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua pekerjaan yang berjalan di akun Automation bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan pekerjaan.
+Menentukan nama akun Automation yang cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -EndTime
 Menentukan waktu akhir untuk pekerjaan sebagai objek **DateTimeOffset** .
-Anda dapat menentukan string yang dapat dikonversi menjadi **DateTimeOffset** yang valid.
+Anda dapat menentukan string yang dapat dikonversi ke **DateTimeOffset** yang valid.
 Cmdlet ini mendapatkan pekerjaan yang memiliki waktu akhir pada atau sebelum nilai yang ditentukan parameter ini.
 
 ```yaml
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook tempat cmdlet ini mendapatkan pekerjaan.
+Menentukan nama runbook yang cmdlet ini mendapatkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -183,11 +186,11 @@ Nilai yang valid adalah:
 - Mengaktifkan
 - Selesai
 - Gagal
-- Antri
+- Dalam antrean
 - Melanjutkan
 - Menjalankan
-- Mulai
-- Berhenti
+- Memulai
+- Stopped
 - Menghentikan
 - Ditangguhkan
 - Menangguhkan
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

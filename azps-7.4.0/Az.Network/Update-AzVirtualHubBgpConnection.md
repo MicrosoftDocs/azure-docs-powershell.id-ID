@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubBgpConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubBgpConnection.md
-ms.openlocfilehash: 678b6ca758985e52e1eea9d2a4ce91f6e4f0d32e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 74e38925ed6ca04d6010ac0af1fcc2f45400df29
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143279603"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144703784"
 ---
 # Update-AzVirtualHubBgpConnection
 
 ## SYNOPSIS
-Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Virtual WAN Hub BGP Connection).
+Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang ada (Virtual WAN Koneksi Hub BGP).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualhubbgpconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Update-AzVirtualHubBgpConnection [-PeerIp <String>] [-PeerAsn <UInt32>]
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang sudah ada (Virtual WAN Hub BGP Connection).
+Cmdlet Update-AzVirtualHubBgpConnection memperbarui sumber daya HubBgpConnection yang ada (Virtual WAN Koneksi Hub BGP).
 
 ## EXAMPLES
 
@@ -109,12 +112,12 @@ PeerAsn                     : 20000
 PeerIp                      : 192.168.1.6
 ```
 
-Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di AS Barat dan menyambungkan Virtual Network ke hub Virtual WAN dalam grup sumber daya tersebut di Azure. Koneksi BGP Hub Virtual WAN akan dibuat setelahnya yang akan mengintip Hub Virtual WAN dengan peralatan jaringan yang digunakan di Virtual Network. Koneksi BGP Hub Virtual WAN ini kemudian diperbarui agar memiliki IP Peer yang berbeda.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual WAN Hub di US Barat dan menyambungkan Virtual Network ke hub Virtual WAN di grup sumber daya tersebut di Azure. Koneksi BGP hub Virtual WAN akan dibuat setelahnya yang akan mengintip hub Virtual WAN dengan appliance jaringan yang disebarkan di Virtual Network. Koneksi BGP hub Virtual WAN ini kemudian diperbarui untuk memiliki IP Serekan yang berbeda.
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan cmdlet di latar belakang
+Jalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +161,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama sumber daya.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerAsn
-ASN rekan.
+ASN serekan.
 
 ```yaml
 Type: System.UInt32
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeerIp
-IP rekan.
+IP serekan.
 
 ```yaml
 Type: System.String
@@ -341,8 +344,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -393,8 +396,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzVirtualHubBgpConnection](./Update-AzVirtualHubBgpConnection.md)
+[New-AzVirtualHubgpConnection](./Update-AzVirtualHubBgpConnection.md)
 
-[Get-AzVirtualHubBgpConnection](./Get-AzVirtualHubBgpConnection.md)
+[Get-AzVirtualHubgpConnection](./Get-AzVirtualHubBgpConnection.md)
 
-[Remove-AzVirtualHubBgpConnection](./Remove-AzVirtualHubBgpConnection.md)
+[Remove-AzVirtualHubgpConnection](./Remove-AzVirtualHubBgpConnection.md)

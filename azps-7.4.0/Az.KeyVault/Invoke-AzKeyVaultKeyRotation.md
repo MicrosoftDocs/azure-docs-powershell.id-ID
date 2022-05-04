@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyRotation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Invoke-AzKeyVaultKeyRotation.md
-ms.openlocfilehash: ebd5c1121d6228e5fba1ae0e3eb39adb50d99845
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 63de7406a5bcb395997cfe0940113a6c7f12936f
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143285291"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712822"
 ---
 # Invoke-AzKeyVaultKeyRotation
 
 ## SYNOPSIS
 Membuat versi kunci baru di Key Vault, menyimpannya, lalu mengembalikan kunci baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/invoke-azkeyvaultkeyrotation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Invoke-AzKeyVaultKeyRotation [-InputObject] <PSKeyVaultKeyIdentityItem>
 ```
 
 ## DESCRIPTION
-Cmdlet akan memutar kunci berdasarkan kebijakan utama. Memerlukan izin tombol/putar. Ini akan mengembalikan versi baru dari tombol putar.
+Cmdlet akan memutar kunci berdasarkan kebijakan kunci. Ini memerlukan izin kunci/putar. Ini akan mengembalikan versi baru dari kunci putar.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Recovery Level : Recoverable+Purgeable
 Tags           :
 ```
 
-Cmdlet ini membuat versi kunci baru untuk test-key.
+Cmdlet ini membuat versi kunci baru untuk kunci uji.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kunci.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama kubah.
+Nama vault.
 
 ```yaml
 Type: System.String
@@ -122,8 +125,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

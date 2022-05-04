@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLedgerDigestUpload.md
-ms.openlocfilehash: 4a9f1e27eebe0b9a65f0f74676f1aead4083780e
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: d35ed9ac30ebf9555a48ae76b504172c1385111d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142933949"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144687518"
 ---
 # Get-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
-Mendapatkan pengaturan pengunggahan ledger digest database Azure SQL.
+Mendapatkan pengaturan unggahan hash ledger dari database Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlDatabaseLedgerDigestUpload [-ResourceId] <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlDatabaseLedgerDigestUpload mendapatkan pengaturan unggahan pencernaan buku besar dari database Azure SQL yang ditentukan.
+Cmdlet Get-AzSqlDatabaseLedgerDigestUpload mendapatkan pengaturan unggahan hash ledger dari database Azure SQL yang ditentukan.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ ResourceGroup01   Server01   Database01   Enabled https://mystorage.blob.core.wi
 ## PARAMETERS
 
 ### -DatabaseName
-SQL Database nama.
+nama SQL Database.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database untuk menonaktifkan unggahan digest.
+Objek database untuk menonaktifkan unggahan hash.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya database untuk menonaktifkan unggahan digest.
+Id sumber daya database untuk menonaktifkan unggahan hash.
 
 ```yaml
 Type: System.String
@@ -144,8 +147,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

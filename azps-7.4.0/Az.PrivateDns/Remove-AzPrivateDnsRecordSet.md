@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: e530d7f17ac2b00f45d713c7fb680daa2999e893
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7a3414b0eced04f0569c8a9afda7df57b564c763
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143311481"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144667150"
 ---
 # Remove-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
-Menghapus kumpulan catatan dari zona DNS Pribadi.
+Menghapus kumpulan catatan dari zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzPrivateDnsRecordSet -ResourceId <String> [-PassThru] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan rekaman yang ditentukan dari zona yang ditentukan. Anda tidak dapat menghapus rekaman SOA yang dibuat secara otomatis di apex zona privat. Anda dapat mengirimkan objek RecordSet ke cmdlet ini menggunakan operator pipeline atau sebagai parameter atau sebagai ResourceId. Untuk mengidentifikasi data yang diatur menurut nama dan mengetik tanpa menggunakan objek RecordSet, Anda harus melewati zona sebagai objek PSPrivateDnsZone ke cmdlet ini dengan menggunakan operator pipeline atau sebagai parameter, atau anda bisa menentukan parameter ZoneName dan ResourceGroupName. Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Saat menentukan kumpulan catatan menggunakan objek RecordSet, kumpulan catatan tidak dihapus jika telah diubah di Azure Private DNS sejak objek RecordSet lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda bisa menyembunyikan ini dengan menggunakan parameter Timpa, yang menghapus kumpulan rekaman terlepas dari perubahan bersamaan.
+Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan catatan yang ditentukan dari zona yang ditentukan. Anda tidak dapat menghapus rekaman SOA yang secara otomatis dibuat di puncak zona privat. Anda dapat meneruskan objek RecordSet ke cmdlet ini dengan menggunakan operator alur atau sebagai parameter atau sebagai ResourceId. Untuk mengidentifikasi kumpulan catatan menurut nama dan jenis tanpa menggunakan objek RecordSet, Anda harus meneruskan zona sebagai objek PSPrivateDnsZone ke cmdlet ini dengan menggunakan operator alur atau sebagai parameter, atau atau Anda dapat menentukan parameter ZoneName dan ResourceGroupName. Anda dapat menggunakan parameter Konfirmasi dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Saat menentukan kumpulan catatan menggunakan objek RecordSet, kumpulan catatan tidak dihapus jika telah diubah di Azure Private DNS sejak objek RecordSet lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan ini dengan menggunakan parameter Timpa, yang menghapus kumpulan catatan terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -55,9 +58,9 @@ Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan rekaman yang ditentukan d
  Remove-AzPrivateDnsRecordSet -RecordSet $RecordSet
 ```
 
-Perintah pertama mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua menghapus kumpulan catatan dalam $RecordSet.
+Perintah pertama mendapatkan kumpulan catatan yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua menghapus kumpulan catatan di $RecordSet.
 
-### Contoh 2: Menghapus kumpulan rekaman dan menyembunyikan semua konfirmasi
+### Contoh 2: Menghapus kumpulan catatan dan menyembunyikan semua konfirmasi
 ```powershell
  $RecordSet = Get-AzPrivateDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup"
  Remove-AzPrivateDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Overwrite
@@ -69,7 +72,7 @@ Perintah pertama mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya
  Remove-AzPrivateDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup" -Confirm:$False
 ```
 
-Perintah pertama akan mendapatkan kumpulan rekaman yang ditentukan. Perintah kedua menghapus kumpulan catatan, bahkan jika telah berubah sementara itu. Perintah konfirmasi disempurnakan.
+Perintah pertama mendapatkan kumpulan catatan yang ditentukan. Perintah kedua menghapus kumpulan catatan, meskipun telah berubah sementara itu. Perintah konfirmasi ditekan.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama rekaman dalam kumpulan catatan (relatif terhadap nama zona dan tanpa titik penghentian).
 
 ```yaml
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Jangan gunakan bidang ETag parameter RecordSet untuk pemeriksaan konkurensi optimis.
+Jangan gunakan bidang ETag dari parameter RecordSet untuk pemeriksaan konkurensi optimis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Digunakan untuk melewati hasil (boolean) operasi menghapus zona privat lebih jauh ke bawah saluran.
+Digunakan untuk meneruskan hasil (boolean) dari operasi hapus zona privat lebih jauh ke bawah alur.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordType
-Tipe catatan DNS Pribadi dalam kumpulan catatan.
+Tipe catatan DNS Privat dalam kumpulan catatan.
 
 ```yaml
 Type: Microsoft.Azure.Management.PrivateDns.Models.RecordType
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya Kumpulan Catatan DNS Pribadi.
+ResourceID Kumpulan Catatan DNS Privat.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Objek PrivateDnsZone mewakili zona untuk membuat kumpulan rekaman.
+Objek PrivateDnsZone yang mewakili zona untuk membuat kumpulan catatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsZone
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Zona di mana kumpulan rekaman ada (tanpa titik penghentian).
+Zona tempat kumpulan catatan ada (tanpa titik yang mengakhiri).
 
 ```yaml
 Type: System.String
@@ -224,8 +227,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

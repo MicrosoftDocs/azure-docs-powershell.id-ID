@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerBackupInformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerBackupInformation.md
-ms.openlocfilehash: b82740d9dcee712c61d96bcf39d776e7cc59a1a5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c46d28493385cfa11d960933ab19e7e6dace42d9
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143004329"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144665008"
 ---
 # Get-AzCosmosDBSqlContainerBackupInformation
 
 ## SYNOPSIS
-Mengambil stempel waktu terbaru yang dapat disembuhkan untuk wadah sql.
+Mengambil tanda waktu terbaru yang dapat di-restorable untuk kontainer sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlcontainerbackupinformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzCosmosDBSqlContainerBackupInformation -ResourceGroupName <String> -Account
 ```
 
 ## DESCRIPTION
-Mengambil stempel waktu terbaru yang dapat disembuhkan untuk wadah sql. Ini adalah upto stempel waktu terbaru yang dapat berhasil dipulihkan oleh pengguna dalam wadah ini.
+Mengambil tanda waktu terbaru yang dapat di-restorable untuk kontainer sql. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna kontainer ini.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ LatestRestorableTimestamp
 1623042210
 ```
 
-Mengambil stempel waktu terbaru yang dapat disembuhkan untuk wadah sql. Ini adalah upto stempel waktu terbaru yang dapat berhasil dipulihkan oleh pengguna dalam wadah ini.
+Mengambil tanda waktu terbaru yang dapat di-restorable untuk kontainer sql. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna kontainer ini.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kontainer.
 
 ```yaml
@@ -136,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
-ms.openlocfilehash: cfcd543de49bce5a75e5bcd124b29d1b75eea4be
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e5d887e061d2f839f8edc40af713bd812d062d7
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142688932"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144676402"
 ---
 # Get-AzContext
 
 ## SYNOPSIS
-Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
+Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzContext [-ListAvailable] [-RefreshContextFromTokenCache] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
+Cmdlet Get-AzContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
 Cmdlet ini mendapatkan akun Direktori Aktif, penyewa Direktori Aktif, langganan Azure, dan lingkungan Azure yang ditargetkan.
 Cmdlet Azure Resource Manager menggunakan pengaturan ini secara default saat membuat permintaan Azure Resource Manager. Ketika jumlah langganan yang tersedia melebihi batas default 25, beberapa langganan mungkin tidak muncul dalam hasil `Get-AzContext -ListAvailable`. Silakan jalankan `Connect-AzAccount -MaxContextPopulation <int>` untuk mendapatkan lebih banyak konteks.
 
@@ -49,7 +52,7 @@ Name                                     Account             SubscriptionName   
 Subscription1 (xxxxxxxx-xxxx-xxxx-xxx... test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Dalam contoh ini, kami masuk ke akun kami dengan langganan Azure menggunakan Koneksi-AzAccount, lalu kami mendapatkan konteks sesi saat ini dengan menghubungi Get-AzContext.
+Dalam contoh ini kita masuk ke akun kita dengan langganan Azure menggunakan Koneksi-AzAccount, dan kemudian kita mendapatkan konteks sesi saat ini dengan memanggil Get-AzContext.
 
 ### Contoh 2: Mencantumkan semua konteks yang tersedia
 ```powershell
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListAvailable
-Mencantumkan semua konteks yang tersedia dalam sesi saat ini.
+Cantumkan semua konteks yang tersedia dalam sesi saat ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama konteks
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshContextFromTokenCache
-Refresh konteks dari singgahan token
+Refresh konteks dari cache token
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 
@@ -145,4 +148,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzContext](./Set-AzContext.md)
 
-[Koneksi-AzAccount](./Connect-AzAccount.md)
+[Connect-AzAccount](./Connect-AzAccount.md)

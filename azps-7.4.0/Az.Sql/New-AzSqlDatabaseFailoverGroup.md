@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: e02a4acdd77524a2818dfa3924bbd758c6388994
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6772bc67ceb3c9172275017b5071e4f05d6a5f08
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143307305"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144704532"
 ---
-# New-AzSqlDatabaseFailoverGroup
+# Baru-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
-Perintah ini membuat Grup failover Azure SQL Database baru.
+Perintah ini membuat Grup Failover Azure SQL Database baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ New-AzSqlDatabaseFailoverGroup [-ServerName] <String> -FailoverGroupName <String
 ```
 
 ## DESCRIPTION
-Membuat Grup Azure SQL Database Failover baru untuk server yang ditentukan.
-Dua titik akhir TDS Azure SQL Database dibuat di FailoverGroupName.SqlDatabaseDnsSuffix (misalnya, FailoverGroupName.database.windows.net) dan FailoverGroupName.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke server utama dan sekunder di Grup Failover. Jika server utama terpengaruh oleh pemadaman, kegagalan otomatis titik akhir dan database akan dipicu sebagai dikte oleh kebijakan failover grup Failover dan masa tenggang.
+Membuat Grup Failover Azure SQL Database baru untuk server yang ditentukan.
+Dua titik akhir TDS Azure SQL Database dibuat di FailoverGroupName.SqlDatabaseDnsSuffix (misalnya, FailoverGroupName.database.windows.net) dan FailoverGroupName.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke server utama dan sekunder di Grup Failover, masing-masing. Jika server utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu seperti yang ditentukan oleh kebijakan failover dan masa tenggang Grup Failover.
 Grup Failover yang baru dibuat tidak berisi database apa pun. Untuk mengontrol kumpulan database dalam Grup Failover, gunakan cmdlet 'Add-AzSqlDatabaseToFailoverGroup' dan 'Remove-AzSqlDatabaseFromFailoverGroup'.
 Hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
@@ -46,12 +49,12 @@ Perintah ini membuat Grup Failover baru dengan kebijakan failover 'Otomatis' unt
 $failoverGroup = New-AzSqlDatabaseFailoverGroup -ResourceGroupName rg1 -ServerName primaryserver -PartnerResourceGroupName rg2 -PartnerServerName secondaryserver1 -FailoverGroupName fg -FailoverPolicy Manual
 ```
 
-Perintah ini membuat Grup Failover baru dengan kebijakan failover 'Manual' untuk dua server dalam grup sumber daya yang berbeda.
+Perintah ini membuat Grup Failover baru dengan kebijakan failover 'Manual' untuk dua server di grup sumber daya yang berbeda.
 
 ## PARAMETERS
 
 ### -AllowReadOnlyFailoverToPrimary
-Apakah pemadaman di server sekunder harus memicu failover otomatis titik akhir baca-saja.
+Apakah pemadaman pada server sekunder harus memicu failover otomatis dari titik akhir baca-saja.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.FailoverGroup.Model.AllowReadOnlyFailoverToPrimary
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama Grup failover Azure SQL Database untuk dibuat.
+Nama Grup Failover Azure SQL Database yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover grup Azure SQL Database Failover.
+Kebijakan failover grup failover Azure SQL Database.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.FailoverGroup.Model.FailoverPolicy
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -GracePeriodWithDataLossHours
-Interval sebelum failover otomatis dimulai jika terjadi pemadaman pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
+Interval sebelum failover otomatis dimulai jika pemadaman terjadi pada server utama dan failover tidak dapat diselesaikan tanpa kehilangan data.
 
 ```yaml
 Type: System.Int32
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerResourceGroupName
-Nama grup sumber daya sekunder grup Azure SQL Database Failover.
+Nama grup sumber daya sekunder dari Grup Failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Nama server sekunder grup failover Azure SQL Database.
+Nama server sekunder dari Grup Failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL Database utama Grup Failover.
+Nama server Azure SQL Database utama Grup Failover.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -204,13 +207,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlDatabaseFailoverGroup](./Set-AzSqlDatabaseFailoverGroup.md)
 
-[Get-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
+[Dapatkan-AzSqlDatabaseFailoverGroup](./Get-AzSqlDatabaseFailoverGroup.md)
 
-[Add-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
+[Tambahkan-AzSqlDatabaseToFailoverGroup](./Add-AzSqlDatabaseToFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFromFailoverGroup](./Remove-AzSqlDatabaseFromFailoverGroup.md)
 
-[Switch-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
+[Alihkan-AzSqlDatabaseFailoverGroup](./Switch-AzSqlDatabaseFailoverGroup.md)
 
 [Remove-AzSqlDatabaseFailoverGroup](./Remove-AzSqlDatabaseFailoverGroup.md)
 

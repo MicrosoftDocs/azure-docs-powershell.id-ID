@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: c742e783cf747f344ed593e07bb960eb2b40ec09
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b2a006b2c4ee18aeea063b7147beebe1100b967d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142812286"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144681187"
 ---
 # New-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
-Membuat kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+Membuat kunci api wawasan aplikasi untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Permissions : {ReadTelemetry, WriteAnnotations}
 Description : testapiKey
 ```
 
-Buat deskripsi kunci api wawasan aplikasi sebagai "testapiKey" dengan izin "ReadTelemetry", "WriteAnnotations" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
+Buat deskripsi kunci api application insights sebagai "testapiKey" dengan izin "ReadTelemetry", "WriteAnnotations" untuk "pengujian" sumber daya dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama Komponen.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Izin yang diperbolehkan oleh kunci API untuk dilakukan oleh aplikasi.
+Izin yang memungkinkan kunci API untuk dilakukan aplikasi.
 
 ```yaml
 Type: System.String[]
@@ -167,8 +170,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

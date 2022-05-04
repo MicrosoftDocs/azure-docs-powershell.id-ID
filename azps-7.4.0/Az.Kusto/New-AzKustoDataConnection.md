@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDataConnection.md
-ms.openlocfilehash: 796e0130946cb958b4cf3548270519dd6d3f2dc0
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 8587b975d650ab0258e2737cb5b8308565d1ff9d
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143120591"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695378"
 ---
 # New-AzKustoDataConnection
 
 ## SYNOPSIS
 Membuat atau memperbarui koneksi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustodataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Kind     Location Name                                             Type
 EventHub East US  testnewkustocluster/mykustodatabase/myeventhubdc Microsoft.Kusto/Clusters/Databases/DataConnections
 ```
 
-Perintah di atas membuat koneksi data EventHub baru bernama "myeventhubdc" untuk database "mykustodatabase" dalam kluster "testnewkustocluster".
+Perintah di atas membuat koneksi data EventHub baru bernama "myeventhubdc" untuk database "mykustodatabase" di kluster "testnewkustocluster".
 
 ### Contoh 2: Membuat koneksi data EventGrid baru
 ```powershell
@@ -95,7 +98,7 @@ Kind      Location Name                                              Type
 EventGrid East US  testnewkustocluster/mykustodatabase/myeventgriddc Microsoft.Kusto/Clusters/Databases/DataConnections
 ```
 
-Perintah di atas membuat koneksi data EventGrid baru bernama "myeventgriddc" untuk database "mykustodatabase" dalam kluster "testnewkustocluster".
+Perintah di atas membuat koneksi data EventGrid baru bernama "myeventgriddc" untuk database "mykustodatabase" di kluster "testnewkustocluster".
 
 ### Contoh 3: Membuat koneksi data IotHub baru
 ```powershell
@@ -108,12 +111,12 @@ Kind      Location Name                                        Type
 IotHub East US  testnewkustocluster/mykustodatabase/myiothubdc Microsoft.Kusto/Clusters/Databases/DataConnections
 ```
 
-Perintah di atas membuat koneksi data IotHub baru bernama "myiothubdc" untuk database "mykustodatabase" dalam kluster "testnewkustocluster".
+Perintah di atas membuat koneksi data IotHub baru bernama "myiothubdc" untuk database "mykustodatabase" di kluster "testnewkustocluster".
 
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BlobstorageEventType
-Nama tipe kejadian penyimpanan blob untuk diproses.
+### -BlobStorageEventType
+Nama jenis peristiwa penyimpanan blob yang akan diproses.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.BlobStorageEventType
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama klaster Kusto.
+Nama kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kompresi
-Tipe pemadatan pesan hub kejadian.
+Jenis kompresi pesan pusat aktivitas.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.Compression
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConsumerGroup
-Grup konsumen acara/iot hub.
+Grup konsumen event/iot hub.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam klaster Kusto.
+Nama database di kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -DataFormat
 Format data pesan.
-Secara opsional, format data bisa ditambahkan ke setiap pesan.
+Secara opsional, format data dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.EventGridDataFormat
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubResourceId
-ID sumber daya hub kejadian yang akan digunakan untuk membuat koneksi data / kisi kejadian dikonfigurasi untuk mengirim kejadian.
+ID sumber daya pusat aktivitas yang akan digunakan untuk membuat koneksi data/kisi peristiwa dikonfigurasi untuk mengirim peristiwa.
 
 ```yaml
 Type: System.String
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventSystemProperty
-Properti sistem hub acara/iot.
+Properti sistem dari hub peristiwa/iot.
 
 ```yaml
 Type: System.String[]
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreFirstRecord
-Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama setiap file.
+Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan catatan pertama setiap file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,8 +327,8 @@ Accept wildcard characters: False
 ```
 
 ### -MappingRuleName
-Aturan pemetaan yang akan digunakan untuk mencerna data.
-Secara opsional, informasi pemetaan bisa ditambahkan ke setiap pesan.
+Aturan pemetaan yang akan digunakan untuk menyerap data.
+Secara opsional, informasi pemetaan dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama koneksi data.
 
 ```yaml
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi klaster Kusto.
+Nama grup sumber daya yang berisi kluster Kusto.
 
 ```yaml
 Type: System.String
@@ -415,8 +418,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -431,8 +434,8 @@ Accept wildcard characters: False
 ```
 
 ### -TableName
-Tabel tempat data harus dicerna.
-Secara opsional, informasi tabel bisa ditambahkan ke setiap pesan.
+Tabel tempat data harus diserap.
+Secara opsional informasi tabel dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -446,8 +449,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -462,7 +465,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -478,7 +481,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

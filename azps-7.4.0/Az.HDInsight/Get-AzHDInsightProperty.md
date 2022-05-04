@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightProperty.md
-ms.openlocfilehash: 3f53685091619091dd43568ace1e4651b78b66f6
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: edd040fbe4da667774abc40aadae7ca75784739a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143316197"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680090"
 ---
 # Get-AzHDInsightProperty
 
 ## SYNOPSIS
 Mendapatkan properti tentang layanan HDInsight, seperti lokasi dan kapasitas yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +32,12 @@ Cmdlet **Get-AzHDInsightProperty** mendapatkan properti khusus untuk Azure HDIns
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan properti cluster Azure HDInsight
+### Contoh 1: Mendapatkan properti kluster Azure HDInsight
 ```powershell
 Get-AzHDInsightProperty -Location "East US 2"
 ```
 
-Perintah ini mendapatkan properti dari layanan HDInsight dari lokasi East US 2.
+Perintah ini mendapatkan properti dari layanan HDInsight dari lokasi US Timur 2.
 
 ## PARAMETERS
 
@@ -69,11 +72,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.HDInsight.Models.AzureHDInsightCapabilities

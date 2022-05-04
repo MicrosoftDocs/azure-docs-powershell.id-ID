@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Add-AzADGroupMember.md
-ms.openlocfilehash: 777de8ccd923bca8348e21cdb42997fe70222bb5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: f08a28e968419977f60d7c5e7681a78d89f778bf
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142801954"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144719066"
 ---
 # Add-AzADGroupMember
 
@@ -18,6 +18,9 @@ ms.locfileid: "142801954"
 Menambahkan anggota ke grup.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.resources/add-azadgroupmember) untuk informasi terbaru.
 
 ## SYNTAX
 

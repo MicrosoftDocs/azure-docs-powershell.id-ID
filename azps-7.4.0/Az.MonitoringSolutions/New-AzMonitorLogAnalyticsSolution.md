@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/New-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/New-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: 42636f839a9e9c526dc60fddb236bf108a89eb2b
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 747026a9c10886de6f8edb07937bca421600f747
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142745254"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695180"
 ---
 # New-AzMonitorLogAnalyticsSolution
 
 ## SYNOPSIS
 Membuat solusi analitik log.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitoringsolutions/new-azmonitorloganalyticssolution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,25 +47,25 @@ Containers(monitoringworkspace-2vob7n) Microsoft.OperationsManagement/solutions 
 
 Perintah ini membuat solusi analitik log monitor untuk ruang kerja analitik log.
 
-Tipe yang umum digunakan adalah:
+Jenis yang umum digunakan adalah:
 
 | Jenis | Deskripsi |
 | :-----| :----- |
 | SecurityCenterFree |  Azure Security Center – Edisi Gratis |
 | Keamanan | Azure Security Center |
-| Update | Manajemen Pembaruan |
+| Pembaruan | Manajemen Pembaruan |
 | ContainerInsights | Azure Monitor untuk Kontainer |
-| ServiceMap | Peta Layanan |
+| ServiceMap | Service Map |
 | AzureActivity | Analitik log aktivitas |
-| ChangeTracking | Pelacakan dan inventori perubahan |
+| ChangeTracking | Ubah Pelacakan dan inventaris |
 | VMInsights | Azure Monitor untuk VM |
 | SecurityInsights | Azure Sentinel |
-| NetworkMonitoring | Monitor Kinerja Jaringan |
+| NetworkMonitoring | Pemantau Performa Jaringan |
 | SQLVulnerabilityAssessment | Penilaian Kerentanan SQL |
-| SQLAdvancedThreatProtection | SQL Advanced Threat Protection |
-| Antimalware | Penilaian Antimalware |
-| AzureAutomation | Pekerja Hibrid Otomatisasi |
-| LogicAppsManagement | Manajemen Aplikasi Logika |
+| SQLAdvancedThreatProtection | Perlindungan Ancaman Tingkat Lanjut SQL |
+| AntiMalware | Penilaian Antimalware |
+| AzureAutomation | Automation Hybrid Worker |
+| LogicAppsManagement | Manajemen Logic Apps |
 | SQLDataClassification | Klasifikasi & Penemuan Data SQL |
 
 ## PARAMETERS
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang akan didapatkan.
-Nama ini tidak peka huruf besar kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -115,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tipe
+### -Type
 Jenis solusi yang akan dibuat.
 Misalnya "Kontainer".
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceResourceId
-ID sumber daya Azure untuk ruang kerja tempat solusi akan digunakan/diaktifkan.
+ID sumber daya Azure untuk ruang kerja tempat solusi akan disebarkan/diaktifkan.
 
 ```yaml
 Type: System.String
@@ -176,8 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

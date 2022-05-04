@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Remove-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Remove-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: 23ff8213a00a3127a4240943e11fbb37b29908f1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 36e37727af52fba0775a6c8825744702874caf9a
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143055449"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679316"
 ---
 # Remove-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
-Menghapus Layanan Perangkat IoT Windows.
+Menghapus IoT Device Service Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.windowsiotservices/remove-azwindowsiotservicesdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,26 +35,26 @@ Remove-AzWindowsIotServicesDevice -InputObject <IWindowsIotServicesIdentity> [-D
 ```
 
 ## DESCRIPTION
-Menghapus Layanan Perangkat IoT Windows.
+Menghapus IoT Device Service Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus layanan IoT Windows menurut nama
+### Contoh 1: Menghapus layanan IoT Windows berdasarkan nama
 ```powershell
 Remove-AzWindowsIotServicesDevice -Name wsi-t03 -ResourceGroupName azure-rg-test
 
 ```
 
-Perintah ini menghapus layanan IoT Windows menurut nama.
+Perintah ini menghapus layanan IoT Windows berdasarkan nama.
 
-### Contoh 2: Menghapus layanan IoT Windows menurut saluran
+### Contoh 2: Menghapus layanan IoT Windows menurut alur
 ```powershell
 Get-AzWindowsIotServicesDevice -ResourceGroupName azure-rg-test -Name wsi-t01 | Remove-AzWindowsIotServicesDevice
 
 
 ```
 
-Perintah ini menghapus layanan IoT Windows menurut saluran.
+Perintah ini menghapus layanan IoT Windows menurut alur.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.IWindowsIotServicesIdentity
@@ -85,8 +88,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Layanan Perangkat IoT Windows.
+### -Name
+Nama Windows IoT Device Service.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi Windows Layanan Perangkat IoT.
+Nama grup sumber daya yang berisi Windows IoT Device Service.
 
 ```yaml
 Type: System.String
@@ -130,8 +133,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -182,9 +185,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
-  - `[DeviceName <String>]`: Nama Layanan Perangkat IoT Windows.
+  - `[DeviceName <String>]`: Nama Windows IoT Device Service.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows Layanan Perangkat IoT.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows IoT Device Service.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.
 
 ## RELATED LINKS

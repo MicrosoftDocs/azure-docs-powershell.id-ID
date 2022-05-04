@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/get-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountManagementPolicy.md
-ms.openlocfilehash: 2b5b9b20b13e7288e0985741af5c90539f5ca652
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 14ead654fe0ee123b1b0484f09153ccbd2c8383c
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143057717"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712444"
 ---
 # Get-AzStorageAccountManagementPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan manajemen akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageaccountmanagementpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-objek akun Storage
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-id sumber daya akun Storage.
+Storage Id Sumber Daya Akun.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

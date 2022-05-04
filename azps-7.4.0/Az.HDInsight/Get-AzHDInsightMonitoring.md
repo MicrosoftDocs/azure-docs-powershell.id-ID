@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightMonitoring.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightMonitoring.md
-ms.openlocfilehash: d83c24be25661fc9df133b1d3dbe703c87db4458
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 6423e14c47e9091318b697d6c3a8aa370c3e6511
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142808632"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712858"
 ---
 # Get-AzHDInsightMonitoring
 
 ## SYNOPSIS
-Mendapatkan status integrasi log Azure Monitor Klasik di kluster HDInsight.
+Mendapatkan status integrasi log Azure Monitor Klasik pada kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightmonitoring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzHDInsightMonitoring [-Name] <String> [-ResourceGroupName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzHDInsightMonitoring** mendapatkan status integrasi log Azure Monitor Klasik pada kluster HDInsight. Jika pemantauan diaktifkan, maka juga akan mengembalikan id ruang kerja analitik log.
+Cmdlet **Get-AzHDInsightMonitoring** mendapatkan status integrasi log Azure Monitor Klasik pada kluster HDInsight. Jika pemantauan diaktifkan, maka ia juga akan mengembalikan id ruang kerja analitik log.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Get-AzHDInsightMonitoring -Name testcluster
 {'ClusterMonitoringEnabled':'true', 'workspaceId':'1d364e89-bb71-4503-aa3d-a23535aea7bd'}
 ```
 
-Pemantauan diaktifkan pada kluster karena properti ClusterMonitoringEnabled adalah true. Id ruang kerja pemantauan tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
+Pemantauan diaktifkan pada kluster karena properti ClusterMonitoringEnabled benar. Id ruang kerja pemantauan tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ Get-AzHDInsightMonitoring -Name testcluster -ResourceGroupName testrg
 {'ClusterMonitoringEnabled':'true', 'workspaceId':'1d364e89-bb71-4503-aa3d-a23535aea7bd'}
 ```
 
-Pemantauan diaktifkan pada kluster karena properti ClusterMonitoringEnabled adalah true. Id ruang kerja pemantauan tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
+Pemantauan diaktifkan pada kluster karena properti ClusterMonitoringEnabled benar. Id ruang kerja pemantauan tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
 
 ### Contoh 3
 ```powershell
@@ -60,7 +63,7 @@ Get-AzHDInsightMonitoring -Name testcluster
 {'ClusterMonitoringEnabled':'false', 'workspaceId': null}
 ```
 
-Pemantauan dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled false.
+Pemantauan dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled salah.
 
 ### Contoh 4
 ```powershell
@@ -71,7 +74,7 @@ Get-AzHDInsightMonitoring -Name testcluster -ResourceGroupName testrg
 {'ClusterMonitoringEnabled':'false', 'workspaceId': null}
 ```
 
-Pemantauan dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled false.
+Pemantauan dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled salah.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kluster untuk mendapatkan status pemantauan.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiVersionSet.md
-ms.openlocfilehash: c84cd91d7cac77b11811c9a6f710ae7d70fb9dae
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee68440338c1d59cd422601157a361225e148a57
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142944461"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663138"
 ---
 # Remove-AzApiManagementApiVersionSet
 
 ## SYNOPSIS
 Menghapus Set Versi Api tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapiversionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,22 +42,22 @@ Remove-AzApiManagementApiVersionSet -ResourceId <String> [-PassThru] [-DefaultPr
 
 ## DESCRIPTION
 
-Cmdlet **Remove-AzAzureRmApiManagementApiVersionSet** menghapus SET Versi API yang sudah ada.
+Cmdlet **Remove-AzAzureRmApiManagementApiVersionSet** menghapus Set Versi API yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan Versi API
+### Contoh 1: Menghapus set Versi API
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Remove-AzApiManagementApiVersionSet -Context $apimContext -ApiVersionSetId "query-param-set"
 ```
 
-Perintah ini menghapus SET Versi API dengan ApiVersionSetId yang ditentukan.
+Perintah ini menghapus Api Version Set dengan ApiVersionSetId yang ditentukan.
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-Pengidentifikasi Kumpulan Versi API.
+Pengidentifikasi Set Versi API.
 Parameter ini diperlukan.
 
 ```yaml
@@ -69,8 +72,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konteks
-Contoh PsApiManagementContext.
+### -Context
+Instans PsApiManagementContext.
 Parameter ini diperlukan.
 
 ```yaml
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Contoh PsApiManagementApiVersionSet. Parameter ini diperlukan.
+Instans PsApiManagementApiVersionSet. Parameter ini diperlukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiVersionSet
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menulis true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true jika operasi berhasil.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -146,8 +149,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

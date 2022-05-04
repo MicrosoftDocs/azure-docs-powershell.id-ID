@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Stop-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Stop-AzDeploymentManagerRollout.md
-ms.openlocfilehash: dcf0f3c0f270fca33129adfdb79eabd244673322
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: e661e741579d444af5a84b647c01b15e22440991
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143124065"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718652"
 ---
 # Stop-AzDeploymentManagerRollout
 
 ## SYNOPSIS
 Menghentikan peluncuran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/stop-azdeploymentmanagerrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Stop-AzDeploymentManagerRollout [-InputObject] <PSRollout> [-Force] [-DefaultPro
 
 ## DESCRIPTION
 Cmdlet **Stop-AzDeploymentManagerRollout** menghentikan peluncuran yang sedang berlangsung dan mengembalikan objek yang mewakili status peluncuran saat ini.
-Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
+Tentukan peluncuran berdasarkan nama dan nama grup sumber dayanya. Secara bergantian, Anda dapat menyediakan objek Peluncuran atau ResourceId.
 
 Perhatikan bahwa setelah peluncuran dihentikan, peluncuran tidak dapat dilanjutkan atau dimulai ulang. Anda hanya dapat membuat peluncuran baru.
 
@@ -59,12 +62,12 @@ Restart-AzDeploymentManagerRollout -ResourceId "/subscriptions/subscriptionId/re
 
 Perintah ini menghentikan peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Menghentikan peluncuran menggunakan objek peluncuran.
+### Contoh 3: Hentikan peluncuran menggunakan objek peluncuran.
 ```powershell
 Get-AzDeploymentManagerRollout -InputObject $rolloutObject
 ```
 
-Perintah ini menghentikan peluncuran yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $rolloutObject.
+Perintah ini menghentikan peluncuran yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName dari $rolloutObject.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Paksa
+### -Force
 Jangan meminta konfirmasi.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama peluncuran.
 
 ```yaml
@@ -158,8 +161,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

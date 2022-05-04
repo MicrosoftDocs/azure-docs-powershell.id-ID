@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDelegation.md
-ms.openlocfilehash: 881e50b397f31e5d89da280ce8d9c48c82a8f262
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b1e50b3b8e8a20fb69d702f342c522a554194363
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143280485"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144712678"
 ---
 # Remove-AzDelegation
 
 ## SYNOPSIS
 Menghapus delegasi layanan dari subnet yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azdelegation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzDelegation -Name <String> -Subnet <PSSubnet> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDelegation** menggunakan Subnet dengan delegasi dan menghapus delegasi bernama dari subnet tersebut.
+Cmdlet **Remove-AzDelegation** mengambil Subnet dengan delegasi dan menghapus delegasi bernama dari subnet tersebut.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ $subnet = Remove-AzDelegation -Name "myDelegation" -Subnet $subnet
 Set-AzVirtualNetwork $vnet
 ```
 
-Dalam contoh ini, paruh pertama (ditemukan di bawah _"Tambahkan delegasi ke subnet yang sudah ada"_) identik dengan [Add-AzDelegation](./Add-AzDelegation.md). Di paruh kedua, dua cmdlet pertama mengambil subnet yang menarik, merefresh salinan lokal dengan apa yang ada di server. Cmdlet ketiga menghapus delegasi yang dibuat pada paruh pertama dari _mySubnet_ dan menyimpan subnet yang diperbarui di _$subnet_. Cmdlet terakhir memperbarui server dengan delegasi yang dihapus.
+Dalam contoh ini, paruh pertama (ditemukan di bawah _"Tambahkan delegasi ke subnet yang ada"_) identik dengan [Add-AzDelegation](./Add-AzDelegation.md). Pada paruh kedua, dua cmdlet pertama mengambil subnet yang menarik, menyegarkan salinan lokal dengan apa yang ada di server. Cmdlet ketiga menghapus delegasi yang dibuat pada paruh pertama dari _mySubnet_ dan menyimpan subnet yang diperbarui di _$subnet_. Cmdlet akhir memperbarui server dengan delegasi yang dihapus.
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama delegasi
 
 ```yaml
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Subnet tempat untuk menghapus delegasi
+Subnet tempat menghapus delegasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 96af5256f2f60e74d41885c5c6c7fa7c0ad48817
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 31ba3639afc0ec0f4d950f36eeb542c279cde3d4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142806526"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144695198"
 ---
 # Add-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Menambahkan pemeriksaan kesehatan ke Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ $Probe = Add-AzApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "
 ```
 
 Perintah ini menambahkan pemeriksaan kesehatan bernama Probe01 untuk gateway aplikasi bernama Gateway.
-Perintah ini juga mengatur ambang batas tidak sehat menjadi 8 kali percobaan dan waktu keluar setelah 120 detik.
+Perintah ini juga menetapkan ambang tidak sehat menjadi 8 percobaan ulang dan waktu habis setelah 120 detik.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menambahkan probe.
+Menentukan gateway aplikasi tempat cmdlet ini menambahkan pemeriksaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host tempat cmdlet ini mengirim probe.
+Menentukan nama host tempat cmdlet ini mengirim pemeriksaan.
 
 ```yaml
 Type: System.String
@@ -88,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval probe dalam detik.
-Ini adalah interval waktu antara dua probe berturut-turut.
+Menentukan interval pemeriksaan dalam hitungan detik.
+Nilai ini adalah jeda waktu antara dua pemeriksaan berturutan.
 Nilai ini antara 1 detik dan 86400 detik.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cocok
-Tubuh yang harus dikandung dalam respons kesehatan.
+Tubuh yang harus terkandung dalam respons kesehatan.
 Nilai default kosong
 
 ```yaml
@@ -136,7 +139,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama probe.
 
 ```yaml
@@ -152,9 +155,9 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur relatif probe.
+Menentukan jalur relatif pemeriksaan.
 Jalur yang valid dimulai dengan karakter garis miring (/).
-Probe dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
+Pemeriksaan dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 
 ### -PickHostNameFromBackendHttpSettings
 Apakah header host harus dipilih dari pengaturan http backend.
-Nilai default adalah false
+Nilai defaultnya adalah false
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan protokol yang digunakan untuk mengirim probe.
+Menentukan protokol yang digunakan untuk mengirim pemeriksaan.
 Cmdlet ini hanya mendukung HTTP.
 
 ```yaml
@@ -202,8 +205,8 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu habis
-Menentukan waktu probe habis dalam detik.
-Cmdlet ini menandai pemeriksaan gagal jika respons valid tidak diterima dengan periode waktu habis ini.
+Menentukan batas waktu pemeriksaan dalam detik.
+Cmdlet ini menandai pemeriksaan sebagai gagal jika respons yang valid tidak diterima dengan periode batas waktu ini.
 Nilai yang valid adalah antara 1 detik dan 86400 detik.
 
 ```yaml
@@ -219,8 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -UnhealthyThreshold
-Menentukan jumlah percobaan ulang probe.
-Server backend ditandai turun setelah jumlah kegagalan penyelidikan berturut-turut mencapai ambang batas yang tidak sehat.
+Menentukan jumlah coba lagi pemeriksaan.
+Server backend ditandai ke bawah setelah jumlah kegagalan pemeriksaan berturut-turut mencapai ambang tidak sehat.
 Nilai yang valid adalah antara 1 detik dan 20 detik.
 
 ```yaml
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -250,7 +253,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Menambahkan probe ke gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#add-a-probe-to-an-existing-application-gateway)
+[Menambahkan pemeriksaan ke gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#add-a-probe-to-an-existing-application-gateway)
 
 [Get-AzApplicationGatewayProbeConfig](./Get-AzApplicationGatewayProbeConfig.md)
 

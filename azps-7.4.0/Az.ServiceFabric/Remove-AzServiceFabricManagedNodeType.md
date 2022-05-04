@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 62e7d4747242dbada7176b9b60ada56da2b6e75c
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 2db27c83eaf1c7f9f68ef532422e2e3d53ed9cc0
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143308511"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144679496"
 ---
 # Remove-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
-Hapus tipe node atau node tertentu dalam tipe simpul.
+Hapus jenis node atau node tertentu dalam jenis node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Remove-AzServiceFabricManagedNodeType [-ResourceId] <String> -NodeName <String[]
 ```
 
 ## DESCRIPTION
-Hapus tipe node atau node tertentu dalam tipe simpul. Jika paremter -NodeName digunakan, maka hanya node yang ditentukan yang akan dihapus.
+Hapus jenis node atau node tertentu dalam jenis node. Jika paremter -NodeName digunakan maka hanya simpul yang ditentukan yang akan dihapus.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ $NodeTypeName = "nt2"
 Remove-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName  -Name $NodeTypeName
 ```
 
-Hapus tipe simpul.
+Hapus jenis node.
 
 ### Contoh 2
 ```powershell
@@ -82,7 +85,7 @@ $nodeType = Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -Clust
 $nodeType | Remove-AzServiceFabricManagedNodeType
 ```
 
-Hapus tipe simpul, dengan pipa.
+Hapus jenis node, dengan pipa.
 
 ### Contoh 3
 ```powershell
@@ -92,7 +95,7 @@ $NodeTypeName = "nt1"
 Remove-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName  -Name $NodeTypeName -NodeName nt1_0, nt1_3
 ```
 
-Hapus 2 node dari tipe simpul.
+Hapus 2 simpul dari jenis node.
 
 ### Contoh 4
 ```powershell
@@ -104,12 +107,12 @@ $nodeType = Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -Clust
 $nodeType | Remove-AzServiceFabricManagedNodeType -NodeName nt1_0, nt1_3
 ```
 
-Hapus 2 node dari tipe simpul, dengan pipa.
+Hapus 2 simpul dari jenis node, dengan pipa.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRemoveNode
-Menggunakan bendera ini akan memaksa penghapusan meskipun kain servis tidak dapat menonaktifkan simpul.
-Gunakan dengan hati-hati karena ini dapat menyebabkan hilangnya data jika beban kerja yang dinyatakan berjalan di simpul, atau mungkin menurunkan kluster jika tidak ada cukup node biji setelah opearion.
+Menggunakan bendera ini akan memaksa penghapusan meskipun service fabric tidak dapat menonaktifkan node.
+Gunakan dengan hati-hati karena ini dapat menyebabkan kehilangan data jika beban kerja stateful berjalan pada node, atau mungkin menurunkan kluster jika tidak ada cukup node seed setelah opearion.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya tipe simpul
+Sumber daya jenis node
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSManagedNodeType
@@ -184,8 +187,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
-Tentukan nama tipe simpul.
+### -Name
+Tentukan nama jenis node.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeName
-Daftar nama simpul untuk operasi tersebut.
+Daftar nama simpul untuk operasi.
 
 ```yaml
 Type: System.String[]
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya tipe simpul
+Id sumber daya jenis node
 
 ```yaml
 Type: System.String
@@ -259,8 +262,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

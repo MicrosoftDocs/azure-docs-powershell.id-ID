@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUserSsoUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUserSsoUrl.md
-ms.openlocfilehash: d25a415922c714a26ea87a84c2f0d2ecd8e92e13
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: deb750d372cc0506d324b64c77fc447f6da0de00
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142879804"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144663497"
 ---
 # Get-AzApiManagementUserSsoUrl
 
 ## SYNOPSIS
 Menghasilkan URL SSO untuk pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementuserssourl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzApiManagementUserSsoUrl -Context <PsApiManagementContext> -UserId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementUserSsoUrl** menghasilkan URL masuk tunggal (SSO) untuk pengguna.
+Cmdlet **Get-AzApiManagementUserSsoUrl menghasilkan URL akses menyeluruh** (SSO) untuk pengguna.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan URL SSO pengguna
+### Contoh 1: Mendapatkan URL SSO pengguna
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementUserSsoUrl -Context $apimContext -UserId "0123456789"
@@ -40,7 +43,7 @@ Perintah ini mendapatkan URL SSO pengguna.
 
 ## PARAMETERS
 
-### -Konteks
+### -Context
 Menentukan objek **PsApiManagementContext** .
 Parameter ini diperlukan.
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 

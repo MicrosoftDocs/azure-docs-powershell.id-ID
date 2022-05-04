@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePool.md
-ms.openlocfilehash: d738bc498858051f16b49a2e1b7da0958e29fd81
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: b9e778af25f64cf5524067bc1ed5cb3cdd7457a4
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142865188"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144713398"
 ---
 # Get-AzSqlInstancePool
 
 ## SYNOPSIS
 Mengembalikan informasi tentang kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Tentukan nama kumpulan instans untuk melihat informasi hanya untuk kumpulan inst
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kumpulan instans di seluruh langganan pelanggan
+### Contoh 1: Mendapatkan semua kumpulan instans di seluruh langganan pelanggan
 ```powershell
 Get-AzSqlInstancePool
 ```
@@ -77,7 +80,7 @@ LicenseType       : LicenseIncluded
 
 Perintah ini mendapatkan informasi tentang semua kumpulan instans dalam langganan pelanggan.
 
-### Contoh 2: Dapatkan semua kumpulan instans di seluruh grup sumber daya
+### Contoh 2: Mendapatkan semua kumpulan instans di seluruh grup sumber daya
 ```powershell
 Get-AzSqlInstancePool -ResourceGroupName resourcegroup01
 ```
@@ -99,7 +102,7 @@ LicenseType       : LicenseIncluded
 
 Perintah ini mendapatkan informasi tentang semua kumpulan instans dalam grup sumber daya resourcegroup01.
 
-### Contoh 3: Dapatkan informasi tentang kumpulan instans
+### Contoh 3: Mendapatkan informasi tentang kumpulan instans
 ```powershell
 Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancePool0
 ```
@@ -119,9 +122,9 @@ Location          : canadacentral
 LicenseType       : LicenseIncluded
 ```
 
-Perintah ini mendapatkan informasi tentang instance pool instancePool0.
+Perintah ini mendapatkan informasi tentang instans kumpulan instansPool0.
 
-### Contoh 4: Dapatkan informasi tentang kumpulan instans menggunakan id sumber daya kumpulan instans
+### Contoh 4: Mendapatkan informasi tentang kumpulan instans menggunakan id sumber daya kumpulan instans
 ```powershell
 Get-AzSqlInstancePool -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 ```
@@ -160,7 +163,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama kumpulan instans.
 
 ```yaml
@@ -218,11 +221,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 
 ## OUTPUTS
 

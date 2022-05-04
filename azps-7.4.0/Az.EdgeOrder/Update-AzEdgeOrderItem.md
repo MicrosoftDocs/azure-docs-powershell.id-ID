@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderItem.md
-ms.openlocfilehash: 1db6df607f231c9ff823aa9f8842fbb6bc075947
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: c40e844fc78bb3561eb2483d4c9dab4e7e24c821
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142748314"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144718814"
 ---
 # Update-AzEdgeOrderItem
 
 ## SYNOPSIS
 Memperbarui properti item pesanan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/update-azedgeorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Memperbarui properti item pesanan yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui orderItem
+### Contoh 1: Memperbarui orderItem
 ```powershell
 $contactDetail = New-AzEdgeOrderContactDetailsObject -ContactName "ContactName2" -EmailList @("emailId") -Phone Phone
 $DebugPreference = "Continue"
@@ -73,7 +76,7 @@ Perbarui detail orderItem.
 ## PARAMETERS
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan
+Jalankan perintah sebagai pekerjaan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardAddressContactDetail
-Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSCONTACTDETAIL dan membuat tabel hash.
+Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSCONTACTDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IContactDetails
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardAddressShippingAddress
-Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSSHIPPINGADDRESS dan membuat tabel hash.
+Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSSHIPPINGADDRESS dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.IEdgeOrderIdentity
@@ -147,7 +150,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama item pesanan
 
 ```yaml
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -Preferensi
 Preferensi pelanggan.
-Untuk membuat, lihat bagian CATATAN untuk properti PREFERENCE dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti PREFERENSI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IPreferences
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -255,8 +258,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)
 
 ## INPUTS
 
@@ -310,40 +313,40 @@ FORWARDADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
-  - `[Mobile <String>]`: Nomor ponsel orang yang dihubungi.
+  - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
 FORWARDADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
-  - `StreetAddress1 <String>`: Baris Alamat Jalan 1.
+  - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.
   - `[City <String>]`: Nama Kota.
   - `[CompanyName <String>]`: Nama perusahaan.
   - `[PostalCode <String>]`: Kode pos.
   - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
-  - `[StreetAddress2 <String>]`: Baris Alamat Jalan 2.
-  - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
-  - `[ZipExtendedCode <String>]`: Kode Pos Diperpanjang.
+  - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+  - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
+  - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
 INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Nama kawasan Azure.
+  - `[Location <String>]`: Nama wilayah Azure.
   - `[OrderItemName <String>]`: Nama item pesanan
   - `[OrderName <String>]`: Nama pesanan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 PREFERENSI <IPreferences>: Preferensi pelanggan.
   - `[EncryptionPreference <IEncryptionPreferences>]`: Preferensi yang terkait dengan Enkripsi.
-    - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Diwajibkan untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
+    - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Wajib untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
   - `[ManagementResourcePreference <IManagementResourcePreferences>]`: Preferensi yang terkait dengan sumber daya Manajemen.
     - `[PreferredManagementResourceId <String>]`: ID ARM sumber daya Manajemen pilihan pelanggan
   - `[NotificationPreference <INotificationPreference[]>]`: Preferensi pemberitahuan.
     - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
     - `StageName <NotificationStageName>`: Nama panggung.
   - `[TransportPreference <ITransportPreferences>]`: Preferensi yang terkait dengan logistik pengiriman pesanan.
-    - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang lebih disukai pelanggan.
+    - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
 ## RELATED LINKS
 

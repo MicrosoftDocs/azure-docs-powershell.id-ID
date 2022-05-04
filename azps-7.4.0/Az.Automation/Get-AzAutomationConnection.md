@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationConnection.md
-ms.openlocfilehash: 644a7fffb8f97f36523151c781fcacb9728542ea
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 7e9b234be692166e4d8403f723a0ef4334d56c45
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143320121"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144680918"
 ---
 # Get-AzAutomationConnection
 
 ## SYNOPSIS
-Mendapatkan koneksi Otomatisasi.
+Mendapatkan koneksi Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Get-AzAutomationConnection [-ConnectionTypeName] <String> [-ResourceGroupName] <
 Cmdlet **Get-AzAutomationConnection** mendapatkan satu atau beberapa koneksi Azure Automation.
 Secara default, cmdlet ini mengambil semua koneksi.
 Tentukan nama koneksi untuk mendapatkan koneksi tertentu.
-Tentukan nama tipe koneksi untuk mendapatkan semua koneksi tipe tertentu.
+Tentukan nama tipe koneksi untuk mendapatkan semua koneksi dengan tipe tertentu.
 
 ## EXAMPLES
 
@@ -51,17 +54,17 @@ Tentukan nama tipe koneksi untuk mendapatkan semua koneksi tipe tertentu.
 PS C:\>Get-AzAutomationConnection -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua koneksi dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua koneksi di akun Automation bernama Contoso17.
 
-### Contoh 2: Dapatkan semua koneksi tipe
+### Contoh 2: Mendapatkan semua koneksi jenis
 ```
 PS C:\>Get-AzAutomationConnection -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17" -ConnectionTypeName "SqlServer"
 ```
 
-Perintah ini mendapatkan metadata untuk koneksi dalam akun Otomatisasi bernama Contoso17.
-Perintah ini mendapatkan koneksi tipe SqlServer.
+Perintah ini mendapatkan metadata untuk koneksi di akun Automation bernama Contoso17.
+Perintah ini mendapatkan koneksi jenis SqlServer.
 
-### Contoh 3: Dapatkan koneksi
+### Contoh 3: Mendapatkan koneksi
 ```
 PS C:\>Get-AzAutomationConnection -ResourceGroupName "ResourceGroup01" -AutomationAccountName "Contoso17" -Name "ContosoConnection"
 ```
@@ -71,7 +74,7 @@ Perintah ini mendapatkan metadata untuk koneksi bernama ContosoConnection.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan koneksi.
+Menentukan nama akun Automation tempat cmdlet ini mendapatkan koneksi.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionTypeName
-Menentukan nama tipe koneksi tempat cmdlet ini mengambil koneksi.
+Menentukan nama jenis koneksi yang cmdlet ini mengambil koneksi.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama koneksi yang diambil cmdlet ini.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan koneksi.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan koneksi.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

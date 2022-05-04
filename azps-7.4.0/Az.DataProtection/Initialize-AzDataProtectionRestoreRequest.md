@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionRestoreRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionRestoreRequest.md
-ms.openlocfilehash: e0bb3c4244f54a5a1f0fb6b746d60cfda2f319f1
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a142efbe507a53075a1223189292e783a8f50dd5
+ms.sourcegitcommit: e32efb81b37827496f5fe4e57cd9a67004b5a271
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142749017"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144666196"
 ---
 # Initialize-AzDataProtectionRestoreRequest
 
 ## SYNOPSIS
 Menginisialisasi objek Permintaan Pemulihan untuk memicu pemulihan pada instans cadangan yang dilindungi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/initialize-azdataprotectionrestorerequest) untuk informasi terbaru.
 
 ## SYNTAX
 
